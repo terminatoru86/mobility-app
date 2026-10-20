@@ -5,6 +5,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
 import '../data/app_state.dart';
+import '../data/osm.dart';
 import '../data/places.dart';
 import '../theme.dart';
 import '../widgets/cluster.dart';
@@ -30,6 +31,10 @@ class _MapScreenState extends State<MapScreen> {
   bool _showGuide = false;
   bool _weatherFace = false;
   Timer? _flip;
+  Timer? _pinClock;
+  Timer? _debounce;
+  final _osm = OsmService();
+  bool _loading = false;
 
   final _kSearch = GlobalKey();
   final _kFilters = GlobalKey();
@@ -45,6 +50,13 @@ class _MapScreenState extends State<MapScreen> {
     _flip = Timer.periodic(const Duration(seconds: 50), (_) {
       if (mounted) setState(() => _weatherFace = !_weatherFace);
     });
+    // one clock for all pins (glyph <-> age)
+    _pinClock = Timer.periodic(const Duration(seconds: 4), (_) => pinShowsAge.value = !pinShowsAge.value);
+    // real places: first the ones saved on the phone (instant), then the visible area from OpenStreetMap
+    _osm.loadCache().then((_) {
+      if (mounted) setState(() {});
+      _loadVisible();
+    });
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!widget.state.guideDone) {
         setState(() => _showGuide = true);
@@ -58,11 +70,36 @@ class _MapScreenState extends State<MapScreen> {
   @override
   void dispose() {
     _flip?.cancel();
+    _pinClock?.cancel();
+    _debounce?.cancel();
     super.dispose();
   }
 
-  List<Place> get _visible =>
-      _filter == null ? demoPlaces : demoPlaces.where((p) => p.type.group == _filter).toList();
+  /// Real places from OpenStreetMap; the demo places only until those arrive.
+  List<Place> get _all => _osm.places.isEmpty ? demoPlaces : _osm.places.values.toList();
+
+  List<Place> get _visible {
+    final all = _all;
+    return _filter == null ? all : all.where((p) => p.type.group == _filter).toList();
+  }
+
+  Future<void> _loadVisible() async {
+    if (!mounted || _loading) return;
+    MapCamera? cam;
+    try {
+      cam = _map.camera;
+    } catch (_) {
+      cam = null; // map not ready yet
+    }
+    if (cam == null) return;
+    if (cam.zoom < 12) return; // too far out: we show what we already have
+    final b = cam.visibleBounds;
+    setState(() => _loading = true);
+    final changed = await _osm.loadArea(b.south, b.west, b.north, b.east);
+    if (!mounted) return;
+    setState(() => _loading = false);
+    if (changed) setState(() {});
+  }
 
   Future<void> _openPlace(Place p) async {
     setState(() => _selected = p.id);
@@ -130,7 +167,7 @@ class _MapScreenState extends State<MapScreen> {
 
   List<Marker> _markers() {
     final pins = _visible;
-    if (_zoom < 13.5) {
+    if (_zoom < 15) {
       return clusterPlaces(pins, _zoom).map((c) {
         if (c.places.length == 1) return _pinMarker(c.places.first);
         return Marker(
@@ -154,7 +191,7 @@ class _MapScreenState extends State<MapScreen> {
         alignment: Alignment.topCenter,
         child: GestureDetector(
           onTap: () => _openPlace(p),
-          child: PlacePin(place: p, selected: _selected == p.id, small: _zoom < 14.5),
+          child: PlacePin(place: p, selected: _selected == p.id, small: _zoom < 16),
         ),
       );
 
@@ -170,13 +207,22 @@ class _MapScreenState extends State<MapScreen> {
           minZoom: 10,
           maxZoom: 19,
           onPositionChanged: (camera, hasGesture) {
-            if ((camera.zoom - _zoom).abs() > 0.05) setState(() => _zoom = camera.zoom);
+            // rebuild the pins only when the zoom crosses a half step, not on every frame
+            final bucket = (camera.zoom * 2).floor() / 2;
+            if (bucket != _zoom) setState(() => _zoom = bucket);
+            _debounce?.cancel();
+            _debounce = Timer(const Duration(milliseconds: 700), _loadVisible);
           },
         ),
         children: [
+          // Light CARTO basemap (OpenStreetMap data): small tiles, fast servers.
           TileLayer(
-            urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+            urlTemplate: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+            subdomains: const ['a', 'b', 'c', 'd'],
             userAgentPackageName: 'com.mobility.app',
+            maxNativeZoom: 19,
+            keepBuffer: 4,
+            tileDisplay: const TileDisplay.instantaneous(),
           ),
           MarkerLayer(markers: [
             const Marker(point: kUserPos, width: 34, height: 34, child: UserDot()),
@@ -194,6 +240,17 @@ class _MapScreenState extends State<MapScreen> {
           _searchBar(),
           const SizedBox(height: 8),
           _filters(),
+          if (_loading)
+            Container(
+              margin: const EdgeInsets.only(top: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(14)),
+              child: const Row(mainAxisSize: MainAxisSize.min, children: [
+                SizedBox(width: 12, height: 12, child: CircularProgressIndicator(strokeWidth: 2)),
+                SizedBox(width: 6),
+                Text('Loading places…', style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700)),
+              ]),
+            ),
         ]),
       ),
       Positioned(
@@ -225,7 +282,7 @@ class _MapScreenState extends State<MapScreen> {
       const Positioned(
         right: 4,
         bottom: 2,
-        child: Text('© OpenStreetMap contributors', style: TextStyle(fontSize: 9, color: AppColors.soft)),
+        child: Text('© OpenStreetMap contributors © CARTO', style: TextStyle(fontSize: 9, color: AppColors.soft)),
       ),
       if (_showGuide)
         Positioned.fill(

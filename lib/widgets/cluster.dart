@@ -71,7 +71,9 @@ class _CompassPainter extends CustomPainter {
       canvas.drawCircle(center + Offset(math.cos(a), math.sin(a)) * (r * 0.62), 0.7, dot);
     }
     // one arc per place, in its direction from the cluster center
-    for (final p in c.places) {
+    final step = math.max(1, (c.places.length / 24).ceil()); // at most ~24 arcs
+    for (int k = 0; k < c.places.length; k += step) {
+      final p = c.places[k];
       final dx = p.pos.longitude - c.center.longitude;
       final dy = p.pos.latitude - c.center.latitude;
       final bearing = (dx == 0 && dy == 0) ? -math.pi / 2 : math.atan2(-dy, dx); // screen angle, north up

@@ -161,6 +161,9 @@ class Place {
   final String? priceNow;
   final String? operatorName;
   final String? operatorPrice;
+  final bool osm; // real place from OpenStreetMap (no live status yet)
+  final List<String> facts; // e.g. "Capacity 12", "Covered", "Free"
+  final String? website;
 
   const Place({
     required this.id,
@@ -186,6 +189,9 @@ class Place {
     this.priceNow,
     this.operatorName,
     this.operatorPrice,
+    this.osm = false,
+    this.facts = const [],
+    this.website,
   });
 
   Status get shownStatus => type.isNeutral ? Status.neutral : status;

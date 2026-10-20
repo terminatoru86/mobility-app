@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -22,10 +20,14 @@ class Glyph extends StatelessWidget {
       );
 }
 
+/// One shared clock for all pins: glyph and age take turns every 4 s.
+/// (One timer for the whole map instead of one per pin keeps the map fast.)
+final ValueNotifier<bool> pinShowsAge = ValueNotifier(false);
+
 /// Map pin: tinted teardrop with a marked border, the glyph inside
 /// (alternating with the age of the status), the number top-right
-/// (no number when the place is full) and a pulsing base dot.
-class PlacePin extends StatefulWidget {
+/// (no number when the place is full). Only the selected pin pulses.
+class PlacePin extends StatelessWidget {
   final Place place;
   final bool selected;
   final bool small;
@@ -35,39 +37,14 @@ class PlacePin extends StatefulWidget {
   static const double height = 76;
 
   @override
-  State<PlacePin> createState() => _PlacePinState();
-}
-
-class _PlacePinState extends State<PlacePin> with SingleTickerProviderStateMixin {
-  late final AnimationController _pulse =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 2400))..repeat();
-  Timer? _swap;
-  bool _showAge = false;
-
-  @override
-  void initState() {
-    super.initState();
-    if (!widget.place.type.isNeutral) {
-      _swap = Timer.periodic(const Duration(seconds: 4), (_) {
-        if (mounted) setState(() => _showAge = !_showAge);
-      });
-    }
-  }
-
-  @override
-  void dispose() {
-    _swap?.cancel();
-    _pulse.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final p = widget.place;
+    final p = place;
     final c = colorsFor(p.shownStatus);
-    final scale = widget.selected ? 1.18 : (widget.small ? 0.78 : 1.0);
+    final scale = selected ? 1.18 : (small ? 0.78 : 1.0);
     final showCount = p.count != null && p.shownStatus != Status.full && !p.type.isNeutral;
+    final swaps = !p.type.isNeutral && p.age.isNotEmpty;
     const drop = 38.0;
+    final glyph = Glyph(p.type, key: const ValueKey('g'), size: 19, color: c.dark);
 
     return SizedBox(
       width: PlacePin.width,
@@ -79,39 +56,8 @@ class _PlacePinState extends State<PlacePin> with SingleTickerProviderStateMixin
           clipBehavior: Clip.none,
           alignment: Alignment.topCenter,
           children: [
-            // pulsing base
-            Positioned(
-              bottom: 0,
-              child: AnimatedBuilder(
-                animation: _pulse,
-                builder: (_, __) {
-                  final t = _pulse.value;
-                  return SizedBox(
-                    width: 40,
-                    height: 16,
-                    child: Stack(alignment: Alignment.center, children: [
-                      Container(
-                        width: 14 + 24 * t,
-                        height: 6 + 8 * t,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: c.main.withValues(alpha: 0.35 * (1 - t)),
-                        ),
-                      ),
-                      Container(
-                        width: 9,
-                        height: 9,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: c.dark,
-                          border: Border.all(color: Colors.white, width: 1.5),
-                        ),
-                      ),
-                    ]),
-                  );
-                },
-              ),
-            ),
+            // base dot (pulses only when selected)
+            Positioned(bottom: 0, child: selected ? _Pulse(color: c) : _BaseDot(c)),
             // teardrop
             Positioned(
               top: 8,
@@ -132,21 +78,24 @@ class _PlacePinState extends State<PlacePin> with SingleTickerProviderStateMixin
                           topRight: Radius.circular(40),
                           bottomRight: Radius.circular(40),
                         ),
-                        boxShadow: [
-                          BoxShadow(color: c.dark.withValues(alpha: 0.25), blurRadius: 6, offset: const Offset(0, 3)),
-                        ],
                       ),
                     ),
                   ),
-                  AnimatedSwitcher(
-                    duration: const Duration(milliseconds: 400),
-                    child: _showAge
-                        ? Text(p.age.replaceAll(' ', '\n'),
-                            key: const ValueKey('age'),
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 8.5, height: 1.0, fontWeight: FontWeight.w900, color: c.dark))
-                        : Glyph(p.type, key: const ValueKey('g'), size: 19, color: c.dark),
-                  ),
+                  if (!swaps)
+                    glyph
+                  else
+                    ValueListenableBuilder<bool>(
+                      valueListenable: pinShowsAge,
+                      builder: (_, showAge, __) => AnimatedSwitcher(
+                        duration: const Duration(milliseconds: 300),
+                        child: showAge
+                            ? Text(p.age.replaceAll(' ', '\n'),
+                                key: const ValueKey('age'),
+                                textAlign: TextAlign.center,
+                                style: TextStyle(fontSize: 8.5, height: 1.0, fontWeight: FontWeight.w900, color: c.dark))
+                            : glyph,
+                      ),
+                    ),
                 ]),
               ),
             ),
@@ -163,7 +112,7 @@ class _PlacePinState extends State<PlacePin> with SingleTickerProviderStateMixin
                       shadows: const [Shadow(color: Colors.white, blurRadius: 3), Shadow(color: Colors.white, blurRadius: 3)],
                     )),
               ),
-            if (p.type.isNeutral)
+            if (p.type.isNeutral && p.reviewCount > 0)
               Positioned(
                 top: 0,
                 right: 0,
@@ -181,6 +130,72 @@ class _PlacePinState extends State<PlacePin> with SingleTickerProviderStateMixin
           ],
         ),
       ),
+    );
+  }
+}
+
+class _BaseDot extends StatelessWidget {
+  final StatusColors c;
+  const _BaseDot(this.c);
+  @override
+  Widget build(BuildContext context) => SizedBox(
+        width: 40,
+        height: 16,
+        child: Center(
+          child: Container(
+            width: 9,
+            height: 9,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: c.dark,
+              border: Border.all(color: Colors.white, width: 1.5),
+            ),
+          ),
+        ),
+      );
+}
+
+class _Pulse extends StatefulWidget {
+  final StatusColors color;
+  const _Pulse({required this.color});
+  @override
+  State<_Pulse> createState() => _PulseState();
+}
+
+class _PulseState extends State<_Pulse> with SingleTickerProviderStateMixin {
+  late final AnimationController _a =
+      AnimationController(vsync: this, duration: const Duration(milliseconds: 2400))..repeat();
+
+  @override
+  void dispose() {
+    _a.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final c = widget.color;
+    return AnimatedBuilder(
+      animation: _a,
+      builder: (_, child) {
+        final t = _a.value;
+        return SizedBox(
+          width: 40,
+          height: 16,
+          child: Stack(alignment: Alignment.center, children: [
+            Container(
+              width: 14 + 24 * t,
+              height: 6 + 8 * t,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: c.main.withValues(alpha: 0.35 * (1 - t)),
+              ),
+            ),
+            child!,
+          ]),
+        );
+      },
+      child: _BaseDot(c),
     );
   }
 }

@@ -14,3 +14,9 @@ vehicle tile, the 8-step guide and the account invite. Demo data, no Firebase ye
 6. Dacă apar erori roșii, copiază-le și trimite-le în chat.
 
 Test: Profile → „Reset demo” ca să vezi din nou ghidul; invitația de cont apare la a 3-a pornire.
+
+## Hartă rapidă
+- În modul debug (▶ normal) harta e mult mai lentă, mai ales în Chrome. Pentru viteza reală:
+  `flutter run -d chrome --release` sau pe telefon `flutter run --release`.
+- Locurile reale vin din OpenStreetMap (Overpass API) pentru zona pe care o vezi și se salvează
+  pe telefon, deci la următoarea pornire apar instant.

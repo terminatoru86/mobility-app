@@ -66,14 +66,17 @@ class _PlaceSheetState extends State<PlaceSheet> {
         Expanded(flex: 2, child: FactTile(p.distance, 'distance')),
       ]),
       gap,
-      ..._specific(p, c),
+      ...(p.osm ? _osmFacts(p) : _specific(p, c)),
       if (p.hours != null || p.phone != null) ...[gap, _hoursRow(p)],
       if (p.security != null) ...[gap, SecurityRow(p.security!)],
-      gap,
-      ReviewsCarousel(p),
-      gap,
-      _photo(),
+      if (p.reviews.isNotEmpty) ...[gap, ReviewsCarousel(p)],
+      if (!p.osm) ...[gap, _photo()],
       if (p.qa.isNotEmpty) ...[gap, QaCard(p.qa)],
+      if (p.osm) ...[
+        gap,
+        const Text('Place data © OpenStreetMap contributors. Live status comes from riders’ reports.',
+            style: TextStyle(fontSize: 11, color: AppColors.soft)),
+      ],
       const SizedBox(height: 24),
     ];
 
@@ -114,7 +117,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
                 else
                   Glyph(p.type, size: 24, color: c.dark),
                 const SizedBox(width: 8),
-                if (!p.type.isNeutral)
+                if (!p.type.isNeutral && p.age.isNotEmpty)
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                     decoration: BoxDecoration(
@@ -194,6 +197,33 @@ class _PlaceSheetState extends State<PlaceSheet> {
       default:
         return [];
     }
+  }
+
+  // Real places from OpenStreetMap: what the map knows about the place.
+  List<Widget> _osmFacts(Place p) {
+    final chips = [
+      for (final f in p.facts)
+        f == 'Free'
+            ? _chip('★ Free', AppColors.greenTint, AppColors.greenDark, AppColors.green)
+            : _chip(f, AppColors.paper, AppColors.primary, AppColors.slate),
+    ];
+    return [
+      Align(
+        alignment: Alignment.centerLeft,
+        child: Text(p.type.title, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+      ),
+      if (chips.isNotEmpty) ...[
+        const SizedBox(height: 8),
+        Align(alignment: Alignment.centerLeft, child: Wrap(spacing: 6, runSpacing: 6, children: chips)),
+      ],
+      if (p.website != null) ...[
+        const SizedBox(height: 8),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Text(p.website!, style: const TextStyle(fontSize: 12, color: AppColors.blue)),
+        ),
+      ],
+    ];
   }
 
   Widget _hoursRow(Place p) => Row(children: [
