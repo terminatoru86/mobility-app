@@ -90,6 +90,13 @@ class OsmService {
     return {'id': '${el['type']}/${el['id']}', 'lat': lat, 'lon': lon, 'tags': el['tags'] ?? {}};
   }
 
+  /// Recalculates distances and arrival times after the GPS position changed.
+  void refreshDistances() {
+    for (final e in _raw.values.toList()) {
+      _add(e);
+    }
+  }
+
   void _add(Map<String, dynamic> e) {
     final p = placeFromOsm(e);
     if (p == null) return;
@@ -157,7 +164,7 @@ Place? placeFromOsm(Map<String, dynamic> e) {
   if (type == null) return null;
 
   final pos = LatLng(lat, lon);
-  final meters = _dist(kUserPos, pos);
+  final meters = _dist(userPos, pos);
   final street = [tag('addr:housenumber'), tag('addr:street')].whereType<String>().join(' ');
   final name = tag('name');
   final address = name ?? (street.isNotEmpty ? street : type.title);

@@ -200,6 +200,9 @@ class Place {
 /// Demo data around the Chicago Loop. Real data comes later (Firestore + GBFS).
 const LatLng kUserPos = LatLng(41.8840, -87.6290);
 
+/// The rider's position: Chicago until the GPS answers, then anywhere in the US.
+LatLng userPos = kUserPos;
+
 const _rv = [
   Review(4, 'Always a free spot in the morning.', '2 days ago'),
   Review(5, 'Well lit, close to the train.', '4 days ago'),

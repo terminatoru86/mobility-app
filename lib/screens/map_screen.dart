@@ -5,6 +5,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
 import '../data/app_state.dart';
+import '../data/location.dart';
 import '../data/osm.dart';
 import '../data/places.dart';
 import '../theme.dart';
@@ -58,6 +59,7 @@ class _MapScreenState extends State<MapScreen> {
       _loadVisible();
     });
     WidgetsBinding.instance.addPostFrameCallback((_) async {
+      _locate(); // start where the rider is, anywhere in the US
       if (!widget.state.guideDone) {
         setState(() => _showGuide = true);
       } else if (widget.state.shouldInvite) {
@@ -81,6 +83,32 @@ class _MapScreenState extends State<MapScreen> {
   List<Place> get _visible {
     final all = _all;
     return _filter == null ? all : all.where((p) => p.type.group == _filter).toList();
+  }
+
+  /// GPS: move the map to the rider. Without GPS the map stays where it is.
+  Future<void> _locate() async {
+    final pos = await currentPosition();
+    if (!mounted) return;
+    if (pos == null) {
+      _map.move(userPos, 15);
+      return;
+    }
+    userPos = pos;
+    _osm.refreshDistances();
+    setState(() {});
+    _map.move(pos, 15);
+  }
+
+  /// Search any address or city in the US and jump there.
+  Future<void> _openSearch() async {
+    final picked = await showModalBottomSheet<GeoResult>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.white,
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
+      builder: (_) => const _SearchSheet(),
+    );
+    if (picked != null && mounted) _map.move(picked.pos, 15);
   }
 
   Future<void> _loadVisible() async {
@@ -202,9 +230,9 @@ class _MapScreenState extends State<MapScreen> {
       FlutterMap(
         mapController: _map,
         options: MapOptions(
-          initialCenter: kUserPos,
+          initialCenter: userPos,
           initialZoom: 15,
-          minZoom: 10,
+          minZoom: 3,
           maxZoom: 19,
           onPositionChanged: (camera, hasGesture) {
             // rebuild the pins only when the zoom crosses a half step, not on every frame
@@ -225,7 +253,7 @@ class _MapScreenState extends State<MapScreen> {
             tileDisplay: const TileDisplay.instantaneous(),
           ),
           MarkerLayer(markers: [
-            const Marker(point: kUserPos, width: 34, height: 34, child: UserDot()),
+            Marker(point: userPos, width: 34, height: 34, child: const UserDot()),
             ..._markers(),
           ]),
         ],
@@ -257,7 +285,7 @@ class _MapScreenState extends State<MapScreen> {
         right: 14,
         bottom: 24,
         child: Column(children: [
-          _roundBtn(_kLocate, Icons.my_location, Colors.white, AppColors.ink, () => _map.move(kUserPos, 15)),
+          _roundBtn(_kLocate, Icons.my_location, Colors.white, AppColors.ink, _locate),
           const SizedBox(height: 12),
           _roundBtn(_kReport, Icons.add, AppColors.primary, Colors.white, () {}),
         ]),
@@ -308,7 +336,9 @@ class _MapScreenState extends State<MapScreen> {
     ]);
   }
 
-  Widget _searchBar() => Container(
+  Widget _searchBar() => GestureDetector(
+      onTap: _openSearch,
+      child: Container(
         key: _kSearch,
         height: 54,
         padding: const EdgeInsets.symmetric(horizontal: 6),
@@ -344,9 +374,9 @@ class _MapScreenState extends State<MapScreen> {
             ),
           ),
           const SizedBox(width: 10),
-          const Expanded(child: Text('Search address', style: TextStyle(color: AppColors.soft, fontSize: 16))),
+          const Expanded(child: Text('Search address or city', style: TextStyle(color: AppColors.soft, fontSize: 16))),
         ]),
-      );
+      ));
 
   Widget _filters() => SingleChildScrollView(
         key: _kFilters,
@@ -396,4 +426,75 @@ class _MapScreenState extends State<MapScreen> {
 
   // Used so the import of latlong2 stays explicit for readers.
   LatLng get center => _map.camera.center;
+}
+
+class _SearchSheet extends StatefulWidget {
+  const _SearchSheet();
+  @override
+  State<_SearchSheet> createState() => _SearchSheetState();
+}
+
+class _SearchSheetState extends State<_SearchSheet> {
+  Timer? _wait;
+  List<GeoResult> _results = [];
+  bool _busy = false;
+
+  @override
+  void dispose() {
+    _wait?.cancel();
+    super.dispose();
+  }
+
+  void _changed(String q) {
+    _wait?.cancel();
+    // the free OpenStreetMap search allows about one request per second
+    _wait = Timer(const Duration(milliseconds: 800), () async {
+      setState(() => _busy = true);
+      final r = await searchUs(q);
+      if (mounted) setState(() {
+            _results = r;
+            _busy = false;
+          });
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.fromLTRB(16, 14, 16, MediaQuery.of(context).viewInsets.bottom + 16),
+      child: Column(mainAxisSize: MainAxisSize.min, children: [
+        TextField(
+          autofocus: true,
+          onChanged: _changed,
+          decoration: InputDecoration(
+            hintText: 'Address or city in the US',
+            prefixIcon: const Icon(Icons.search),
+            suffixIcon: _busy
+                ? const Padding(
+                    padding: EdgeInsets.all(14),
+                    child: SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2)),
+                  )
+                : null,
+            filled: true,
+            fillColor: AppColors.paper,
+            border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(16)), borderSide: BorderSide.none),
+          ),
+        ),
+        const SizedBox(height: 8),
+        ConstrainedBox(
+          constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.45),
+          child: ListView(shrinkWrap: true, children: [
+            for (final r in _results)
+              ListTile(
+                leading: const Icon(Icons.place_outlined),
+                title: Text(r.title, style: const TextStyle(fontWeight: FontWeight.w700)),
+                subtitle: Text(r.subtitle, maxLines: 1, overflow: TextOverflow.ellipsis),
+                onTap: () => Navigator.pop(context, r),
+              ),
+          ]),
+        ),
+        const Text('Search © OpenStreetMap Nominatim', style: TextStyle(fontSize: 10, color: AppColors.soft)),
+      ]),
+    );
+  }
 }
