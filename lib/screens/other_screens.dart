@@ -74,13 +74,8 @@ class ProfileScreen extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.lightbulb_outline),
             title: const Text('Help · Replay the guide'),
-            onTap: () async {
-              await state.replayGuide();
-              if (context.mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('The guide starts the next time you open the Map tab.')));
-              }
-            },
+            subtitle: state.guideDone ? null : const Text('Starts when you open the Map tab'),
+            onTap: state.replayGuide,
           ),
           const Divider(),
           ListTile(

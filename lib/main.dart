@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'data/app_state.dart';
+import 'screens/community_screen.dart';
+import 'screens/health_screen.dart';
 import 'screens/map_screen.dart';
 import 'screens/other_screens.dart';
 import 'theme.dart';
@@ -42,8 +44,8 @@ class _ShellState extends State<Shell> {
     final pages = [
       MapScreen(key: ValueKey(_mapVersion), state: widget.state, navKey: _navKey),
       const ComingSoon(title: 'Routes', icon: Icons.route, text: 'Plan, Explore and Saved routes come in milestone M2.'),
-      const ComingSoon(title: 'Health', icon: Icons.monitor_heart_outlined, text: 'Ride history comes in milestone M6.'),
-      const ComingSoon(title: 'Community', icon: Icons.groups_outlined, text: 'Marketplace, Ride with Friends and BMX come in milestone M5.'),
+      const HealthScreen(),
+      CommunityScreen(state: widget.state),
       ProfileScreen(state: widget.state),
     ];
     return Scaffold(
