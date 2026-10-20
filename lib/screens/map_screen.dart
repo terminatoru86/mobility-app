@@ -244,7 +244,7 @@ class _MapScreenState extends State<MapScreen> {
           },
         ),
         children: [
-          // Light CARTO basemap (OpenStreetMap data), OpenStreetMap as fallback.
+          // OpenStreetMap basemap
           baseTiles(),
           MarkerLayer(markers: [
             Marker(point: userPos, width: 34, height: 34, child: const UserDot()),
@@ -304,7 +304,7 @@ class _MapScreenState extends State<MapScreen> {
       const Positioned(
         right: 4,
         bottom: 2,
-        child: Text('© OpenStreetMap contributors © CARTO', style: TextStyle(fontSize: 9, color: AppColors.soft)),
+        child: Text('© OpenStreetMap contributors', style: TextStyle(fontSize: 9, color: AppColors.soft)),
       ),
       if (_showGuide)
         Positioned.fill(
