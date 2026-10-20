@@ -451,10 +451,12 @@ class _SearchSheetState extends State<_SearchSheet> {
     _wait = Timer(const Duration(milliseconds: 800), () async {
       setState(() => _busy = true);
       final r = await searchUs(q);
-      if (mounted) setState(() {
-            _results = r;
-            _busy = false;
-          });
+      if (mounted) {
+        setState(() {
+          _results = r;
+          _busy = false;
+        });
+      }
     });
   }
 

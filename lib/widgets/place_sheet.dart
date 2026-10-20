@@ -66,7 +66,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
         Expanded(flex: 2, child: FactTile(p.distance, 'distance')),
       ]),
       gap,
-      ...(p.osm ? _osmFacts(p) : _specific(p, c)),
+      ...(p.osm ? [..._osmFacts(p), const SizedBox(height: 12), ..._specific(p, c)] : _specific(p, c)),
       if (p.hours != null || p.phone != null) ...[gap, _hoursRow(p)],
       if (p.security != null) ...[gap, SecurityRow(p.security!)],
       if (p.reviews.isNotEmpty) ...[gap, ReviewsCarousel(p)],
@@ -74,7 +74,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
       if (p.qa.isNotEmpty) ...[gap, QaCard(p.qa)],
       if (p.osm) ...[
         gap,
-        const Text('Place data © OpenStreetMap contributors. Live status comes from riders’ reports.',
+        const Text('Place data © OpenStreetMap contributors. Status, spots and ratings are test data for now.',
             style: TextStyle(fontSize: 11, color: AppColors.soft)),
       ],
       const SizedBox(height: 24),

@@ -190,20 +190,31 @@ Place? placeFromOsm(Map<String, dynamic> e) {
     _ => const [Vehicle.bike, Vehicle.ebike, Vehicle.scooter],
   };
 
+  // TEST DATA: until riders report, every real place gets a believable
+  // status, free spots, ratings and reviews (always the same for the same place).
+  final t0 = _TestData(e['id'].toString(), int.tryParse(tag('capacity') ?? ''), type);
+
   return Place(
     id: e['id'].toString(),
     type: type,
     address: address,
     pos: pos,
-    status: type.isNeutral ? Status.neutral : Status.unknown,
-    age: '',
+    status: type.isNeutral ? Status.neutral : t0.status,
+    count: t0.count,
+    age: t0.age,
+    busy: t0.busy,
+    reviews: t0.reviews,
+    qa: t0.qa,
+    tag: type == PlaceType.charging ? '⚡ Type 2' : (type == PlaceType.wash ? 'Automatic' : null),
+    priceNow: type == PlaceType.parkPrivate ? '\$${(1 + t0.n % 3)}/h' : null,
+    operatorPrice: type == PlaceType.sharing ? '\$1 unlock · \$0.${17 + t0.n % 20}/min' : null,
     accepts: accepts,
     distance: meters < 1000 ? '${(meters / 10).round() * 10} m' : '${(meters / 1000).toStringAsFixed(1)} km',
     etaMin: {for (final v in accepts) v: etaMinutes(meters, v)},
     hours: tag('opening_hours'),
     phone: tag('phone') ?? tag('contact:phone'),
-    rating: 0,
-    reviewCount: 0,
+    rating: t0.rating,
+    reviewCount: t0.reviewCount,
     security: (type == PlaceType.parkCovered || type == PlaceType.parkPrivate)
         ? Security(
             cameras: (tag('surveillance') ?? 'no') != 'no',
@@ -211,12 +222,89 @@ Place? placeFromOsm(Map<String, dynamic> e) {
             access: tag('access') == 'customers' || tag('access') == 'private',
           )
         : null,
-    tools: facts,
     operatorName: operatorName,
     osm: true,
     facts: facts,
     website: tag('website') ?? tag('contact:website'),
   );
+}
+
+/// Turn on/off the test statuses and ratings on real places.
+const bool kTestData = true;
+
+class _TestData {
+  late final int n;
+  late final Status status;
+  late final String? count;
+  late final String age;
+  late final double rating;
+  late final int reviewCount;
+  late final List<Review> reviews;
+  late final List<QA> qa;
+  late final List<int> busy;
+
+  static const _ages = ['<5 min', '12 min', '25 min', '40 min', '1 h', '2 h'];
+  static const _texts = [
+    'Always a free spot in the morning.',
+    'Well lit, close to the train.',
+    'Busy after 5 pm.',
+    'Solid racks, felt safe leaving my bike.',
+    'Easy to find, right by the entrance.',
+    'Gets full on weekends.',
+    'Friendly staff, quick fix.',
+    'Clean and well kept.',
+  ];
+  static const _whens = ['today', 'yesterday', '3 days ago', '1 week ago', '2 weeks ago'];
+
+  _TestData(String id, int? capacity, PlaceType type) {
+    // FNV-1a hash: the same place always gets the same test values
+    var h = 0x811c9dc5;
+    for (final c in id.codeUnits) {
+      h = ((h ^ c) * 0x01000193) & 0x7fffffff;
+    }
+    n = h;
+    if (!kTestData) {
+      status = Status.unknown;
+      count = null;
+      age = '';
+      rating = 0;
+      reviewCount = 0;
+      reviews = const [];
+      qa = const [];
+      busy = const [];
+      return;
+    }
+    final roll = h % 100;
+    status = roll < 55
+        ? Status.free
+        : roll < 78
+            ? Status.almost
+            : roll < 90
+                ? Status.full
+                : Status.unknown;
+    final cap = (capacity != null && capacity > 0) ? capacity : 4 + h % 14;
+    count = switch (status) {
+      Status.free => '${math.max(2, (cap * (0.4 + (h >> 3) % 50 / 100)).round())}',
+      Status.almost => '${1 + (h >> 4) % 2}',
+      _ => null,
+    };
+    age = status == Status.unknown ? '4 h' : _ages[(h >> 5) % 4];
+    rating = 3.6 + ((h >> 6) % 14) / 10; // 3.6 - 4.9
+    reviewCount = 3 + (h >> 7) % 120;
+    reviews = [
+      for (int k = 0; k < 3; k++)
+        Review(rating >= 4.3 ? 5 - k % 2 : 4 - k % 2, _texts[((h >> (8 + k)) + k * 3) % _texts.length],
+            _whens[(k + (h >> 9)) % _whens.length]),
+    ];
+    qa = const [
+      QA('Can I leave my bike overnight?', 'Yes, riders say it is fine and well lit.'),
+      QA('Is there room for cargo bikes?', 'Only at the end of the row.'),
+    ];
+    final peak = 8 + (h >> 10) % 4; // busiest slot
+    busy = [
+      for (int i = 0; i < 12; i++) math.max(8, 95 - (i - peak).abs() * 14 - (h >> (i % 8)) % 10),
+    ];
+  }
 }
 
 /// Rough minutes to get there, by vehicle (straight line + 30 % for streets).
