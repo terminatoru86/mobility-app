@@ -14,6 +14,7 @@ import '../widgets/guide.dart';
 import '../widgets/pin.dart';
 import '../widgets/place_sheet.dart';
 import '../widgets/signup.dart';
+import '../widgets/tiles.dart';
 
 class MapScreen extends StatefulWidget {
   final AppState state;
@@ -243,15 +244,8 @@ class _MapScreenState extends State<MapScreen> {
           },
         ),
         children: [
-          // Light CARTO basemap (OpenStreetMap data): small tiles, fast servers.
-          TileLayer(
-            urlTemplate: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
-            subdomains: const ['a', 'b', 'c', 'd'],
-            userAgentPackageName: 'com.mobility.app',
-            maxNativeZoom: 19,
-            keepBuffer: 4,
-            tileDisplay: const TileDisplay.instantaneous(),
-          ),
+          // Light CARTO basemap (OpenStreetMap data), OpenStreetMap as fallback.
+          baseTiles(),
           MarkerLayer(markers: [
             Marker(point: userPos, width: 34, height: 34, child: const UserDot()),
             ..._markers(),

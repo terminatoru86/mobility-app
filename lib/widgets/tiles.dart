@@ -4,6 +4,8 @@ import 'package:flutter_map/flutter_map.dart';
 TileLayer baseTiles() => TileLayer(
       urlTemplate: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
       subdomains: const ['a', 'b', 'c', 'd'],
+      // if a CARTO tile fails, the same tile comes from OpenStreetMap
+      fallbackUrl: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
       userAgentPackageName: 'com.mobility.app',
       maxNativeZoom: 19,
       keepBuffer: 4,
