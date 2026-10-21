@@ -229,6 +229,71 @@ def fetch_city(src):
     return out
 
 
+# ───────── transit and other open APIs ─────────
+
+def fetch_mbta():
+    """MBTA (Boston) 'Pedal & Park' cages and bike racks at stations, from the MBTA V3 API (no key needed)."""
+    out = []
+    j = json.loads(http('https://api-v3.mbta.com/facilities?filter%5Btype%5D=BIKE_STORAGE&page%5Blimit%5D=2000'))
+    for f in j.get('data', []):
+        a = f.get('attributes') or {}
+        lat, lon = a.get('latitude'), a.get('longitude')
+        if lat is None or lon is None:
+            continue
+        props = {p.get('name'): p.get('value') for p in a.get('properties') or []}
+        tags = {'amenity': 'bicycle_parking', 'source': 'MBTA · station bike parking', 'fee': 'no',
+                'name': a.get('long_name') or a.get('short_name') or 'MBTA bike parking'}
+        cap = props.get('capacity')
+        if cap:
+            tags['capacity'] = str(cap)
+        if props.get('enclosed') in (1, '1', True) or 'Pedal' in (a.get('long_name') or ''):
+            tags.update({'covered': 'yes', 'bicycle_parking': 'shed', 'access': 'customers'})
+        else:
+            tags['bicycle_parking'] = 'stands'
+        out.append([f"mbta/{f.get('id')}", round(float(lat), 6), round(float(lon), 6), tags])
+    return out
+
+
+def fetch_overture():
+    """Bike shops, repair and rentals from Overture Maps places (CDLA-Permissive-2.0), via DuckDB on the public S3."""
+    try:
+        import duckdb  # installed by the workflow (pip install duckdb)
+    except ImportError:
+        print('Overture skipped: duckdb not installed', flush=True)
+        return []
+    cat = json.loads(http('https://stac.overturemaps.org/catalog.json'))
+    release = cat.get('latest') or sorted(l['href'].split('/')[1] for l in cat['links'] if l.get('rel') == 'child')[-1]
+    release = release.strip('./').split('/')[0]
+    con = duckdb.connect()
+    con.execute('INSTALL httpfs; LOAD httpfs; SET s3_region=\'us-west-2\';')
+    q = f"""
+      SELECT id, names.primary AS name, categories.primary AS cat,
+             (bbox.ymin + bbox.ymax) / 2 AS lat, (bbox.xmin + bbox.xmax) / 2 AS lon, websites[1] AS web, phones[1] AS phone,
+             addresses[1].freeform AS street
+      FROM read_parquet('s3://overturemaps-us-west-2/release/{release}/theme=places/type=place/*', hive_partitioning=1)
+      WHERE bbox.xmin BETWEEN -170 AND -65 AND bbox.ymin BETWEEN 17 AND 72
+        AND addresses[1].country = 'US'
+        AND (categories.primary ILIKE '%bicycle%' OR categories.primary ILIKE '%bike%')
+        AND confidence >= 0.6
+    """
+    out = []
+    for oid, name, c, lat, lon, web, phone, street in con.execute(q).fetchall():
+        c = (c or '').lower()
+        if 'rent' in c or 'sharing' in c:
+            tags = {'amenity': 'bicycle_rental'}
+        elif 'repair' in c:
+            tags = {'shop': 'bicycle', 'service:bicycle:repair': 'yes'}
+        elif 'shop' in c or 'store' in c or 'dealer' in c:
+            tags = {'shop': 'bicycle'}
+        else:
+            continue  # bike paths, clubs, tours... not places for the map
+        tags.update({k: v for k, v in {'name': name, 'website': web, 'phone': phone, 'addr:street': street}.items() if v})
+        tags['source'] = 'Overture Maps'
+        out.append([f'ovt/{oid}', round(lat, 6), round(lon, 6), tags])
+    print(f'Overture {release}: {len(out)}', flush=True)
+    return out
+
+
 def main():
     if '--export-cities' in sys.argv:
         json.dump(city_sources(), open(sys.argv[-1], 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
@@ -240,6 +305,14 @@ def main():
     for box in boxes:
         collect_osm(box, tiles)
     cities = []
+    # other open sources: one list each, added to the tiles (the app removes doubles near OpenStreetMap ones)
+    for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture)):
+        try:
+            for x in fn():
+                if not args or (boxes[0][0] <= x[1] < boxes[0][2] and boxes[0][1] <= x[2] < boxes[0][3]):
+                    tiles.setdefault((math.floor(x[1]), math.floor(x[2])), {})[x[0]] = x
+        except Exception as err:
+            print(f'{name} failed: {err}', flush=True)
     for src in city_sources():
         try:
             els = fetch_city(src)
