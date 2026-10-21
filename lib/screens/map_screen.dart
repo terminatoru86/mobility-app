@@ -922,6 +922,13 @@ class MapScreenState extends State<MapScreen> {
               _pill(Icons.refresh, 'Places not loaded · retry', AppColors.redTint, AppColors.redDark, _loadVisible),
             if (_noGps)
               _pill(Icons.location_disabled, 'Turn on location', Colors.white, AppColors.ink, _locate),
+            // the region (100 miles) still filling in, piece by piece
+            ValueListenableBuilder<(int, int)?>(
+              valueListenable: _osm.regionProgress,
+              builder: (_, p, __) => p == null
+                  ? const SizedBox.shrink()
+                  : _pill(null, 'Area ${(p.$1 * 100 / p.$2).round()}% · ${p.$1}/${p.$2}', Colors.white, AppColors.ink, null),
+            ),
           ]),
         ]),
       ),

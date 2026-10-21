@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart' show compute, debugPrint;
+import 'package:flutter/foundation.dart' show ValueNotifier, compute, debugPrint;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart';
@@ -223,6 +223,9 @@ class OsmService {
   final Set<String> _regionsDone = {};
   bool regionBusy = false;
 
+  /// Progress of the region load (pieces done / all), shown as a small pill on the map.
+  final ValueNotifier<(int, int)?> regionProgress = ValueNotifier(null);
+
   /// Loads every rider place within [miles] of [c]: nearest pieces first, each piece saved on the phone
   /// for 2 weeks. [onPiece] is called after each piece (to redraw the map).
   Future<void> loadRegion(LatLng c, double miles, void Function() onPiece) async {
@@ -248,6 +251,12 @@ class OsmService {
       }
       tiles.sort((a, b) => a.$3.compareTo(b.$3));
       final prefs = await SharedPreferences.getInstance();
+      void progress() {
+        final done = tiles.where((t) => _tilesDone.contains('${t.$1}:${t.$2}')).length;
+        regionProgress.value = done >= tiles.length ? null : (done, tiles.length);
+      }
+
+      progress();
       for (final (i, j, _) in tiles) {
         final key = '$i:$j';
         if (_tilesDone.contains(key)) continue;
@@ -274,6 +283,7 @@ class OsmService {
           _done.add([s, w, s + _tile, w + _tile]);
           onPiece();
         }
+        progress();
       }
       // pieces the servers refused (busy): try them again, slowly
       for (int pass = 0; pass < 3; pass++) {
@@ -288,11 +298,13 @@ class OsmService {
             _done.add([s, w, s + _tile, w + _tile]);
             onPiece();
           }
+          progress();
         }
       }
       if (tiles.every((t) => _tilesDone.contains('${t.$1}:${t.$2}'))) _regionsDone.add(rk);
     } finally {
       regionBusy = false;
+      if (regionProgress.value != null && regionProgress.value!.$1 >= regionProgress.value!.$2) regionProgress.value = null;
     }
   }
 
