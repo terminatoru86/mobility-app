@@ -147,9 +147,10 @@ class MiniLegend extends StatelessWidget {
               width: 14,
               height: 14,
               decoration: BoxDecoration(
-                color: colorsFor(s).tint,
+                color: colorsFor(s).main,
                 shape: BoxShape.circle,
-                border: Border.all(color: colorsFor(s).main, width: 2),
+                border: Border.all(color: Colors.white, width: 2),
+                boxShadow: const [BoxShadow(color: Color(0x40000000), blurRadius: 2)],
               ),
             ),
             const SizedBox(width: 8),

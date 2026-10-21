@@ -24,7 +24,8 @@ class Glyph extends StatelessWidget {
 /// (One timer for the whole map instead of one per pin keeps the map fast.)
 final ValueNotifier<bool> pinShowsAge = ValueNotifier(false);
 
-/// Map pin: tinted teardrop with a marked border, the glyph inside
+/// Map pin: solid teardrop in the status colour with a white edge and a shadow
+/// (easy to see on the grey map), the white glyph inside
 /// (alternating with the age of the status), the number top-right
 /// (no number when the place is full). Only the selected pin pulses.
 class PlacePin extends StatelessWidget {
@@ -40,11 +41,13 @@ class PlacePin extends StatelessWidget {
   Widget build(BuildContext context) {
     final p = place;
     final c = colorsFor(p.shownStatus);
-    final scale = selected ? 1.18 : (small ? 0.78 : 1.0);
+    final scale = selected ? 1.2 : (small ? 0.9 : 1.05);
     final showCount = p.count != null && p.shownStatus != Status.full && !p.type.isNeutral;
     final swaps = !p.type.isNeutral && p.age.isNotEmpty;
-    const drop = 38.0;
-    final glyph = Glyph(p.type, key: const ValueKey('g'), size: 19, color: c.dark);
+    const drop = 40.0;
+    // white on green / red / grey; dark brown on yellow so it stays readable
+    final ink = p.shownStatus == Status.almost ? const Color(0xFF3A2A00) : Colors.white;
+    final glyph = Glyph(p.type, key: const ValueKey('g'), size: 20, color: ink);
 
     return SizedBox(
       width: PlacePin.width,
@@ -71,13 +74,21 @@ class PlacePin extends StatelessWidget {
                       width: drop - 6,
                       height: drop - 6,
                       decoration: BoxDecoration(
-                        color: c.tint,
-                        border: Border.all(color: c.main, width: 2.5),
+                        gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [Color.lerp(c.main, Colors.white, 0.18)!, c.main, Color.lerp(c.main, c.dark, 0.35)!],
+                        ),
+                        border: Border.all(color: Colors.white, width: 2.5),
                         borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(40),
                           topRight: Radius.circular(40),
                           bottomRight: Radius.circular(40),
                         ),
+                        boxShadow: [
+                          BoxShadow(color: c.dark.withValues(alpha: 0.45), blurRadius: 6, offset: const Offset(-2, 3)),
+                          const BoxShadow(color: Color(0x33000000), blurRadius: 1.5, spreadRadius: 0.5),
+                        ],
                       ),
                     ),
                   ),
@@ -92,7 +103,7 @@ class PlacePin extends StatelessWidget {
                             ? Text(p.age.replaceAll(' ', '\n'),
                                 key: const ValueKey('age'),
                                 textAlign: TextAlign.center,
-                                style: TextStyle(fontSize: 8.5, height: 1.0, fontWeight: FontWeight.w900, color: c.dark))
+                                style: TextStyle(fontSize: 9, height: 1.0, fontWeight: FontWeight.w900, color: ink))
                             : glyph,
                       ),
                     ),
@@ -103,14 +114,20 @@ class PlacePin extends StatelessWidget {
             if (showCount)
               Positioned(
                 top: 0,
-                right: 4,
-                child: Text(p.count!,
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w900,
-                      color: c.dark,
-                      shadows: const [Shadow(color: Colors.white, blurRadius: 3), Shadow(color: Colors.white, blurRadius: 3)],
-                    )),
+                right: 2,
+                child: Container(
+                  constraints: const BoxConstraints(minWidth: 22),
+                  padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(11),
+                    border: Border.all(color: c.main, width: 2),
+                    boxShadow: const [BoxShadow(color: Color(0x40000000), blurRadius: 3, offset: Offset(0, 1))],
+                  ),
+                  child: Text(p.count!,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 13, fontWeight: FontWeight.w900, color: c.dark, height: 1.2)),
+                ),
               ),
             if (p.type.isNeutral && p.reviewCount > 0)
               Positioned(
@@ -143,12 +160,13 @@ class _BaseDot extends StatelessWidget {
         height: 16,
         child: Center(
           child: Container(
-            width: 9,
-            height: 9,
+            width: 11,
+            height: 11,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: c.dark,
-              border: Border.all(color: Colors.white, width: 1.5),
+              color: c.main,
+              border: Border.all(color: Colors.white, width: 2),
+              boxShadow: const [BoxShadow(color: Color(0x40000000), blurRadius: 2)],
             ),
           ),
         ),

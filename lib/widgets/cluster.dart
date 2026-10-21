@@ -81,7 +81,7 @@ class _CompassPainter extends CustomPainter {
       final arc = Paint()
         ..color = col
         ..style = PaintingStyle.stroke
-        ..strokeWidth = 3.4
+        ..strokeWidth = 4.6
         ..strokeCap = StrokeCap.round;
       canvas.drawArc(Rect.fromCircle(center: center, radius: r * 0.82), bearing - 0.28, 0.56, false, arc);
     }

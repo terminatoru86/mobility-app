@@ -25,9 +25,9 @@ const _nightMatrix = <double>[
 Widget baseTiles() => ColorFiltered(
       colorFilter: _night ? const ColorFilter.matrix(_nightMatrix) : const ColorFilter.matrix(<double>[
         // grey scale, then lighter and softer
-        0.20, 0.45, 0.08, 0, 70, //
-        0.20, 0.45, 0.08, 0, 72, //
-        0.20, 0.45, 0.08, 0, 76, //
+        0.17, 0.38, 0.07, 0, 92, //
+        0.17, 0.38, 0.07, 0, 94, //
+        0.17, 0.38, 0.07, 0, 98, //
         0, 0, 0, 1, 0,
       ]),
       child: TileLayer(
