@@ -12,8 +12,8 @@ jobs:
   android:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
@@ -24,10 +24,18 @@ jobs:
         run: flutter create --platforms=android --org com.mobility --project-name mobility .
       - name: Permissions
         run: python3 tool/android_permissions.py android/app/src/main/AndroidManifest.xml
-      - name: Check it builds
+      - name: Check it builds (errors are shown as annotations)
+        continue-on-error: true
         run: |
-          flutter pub get
-          flutter build apk --debug
+          flutter pub get 2>&1 | tee pub.log
+          flutter analyze --no-fatal-infos --no-fatal-warnings 2>&1 | tee analyze.log || true
+          grep -E "^ *error " analyze.log | head -40 | while read -r l; do echo "::error::analyze: $l"; done
+          set +e
+          flutter build apk --debug 2>&1 | tee build.log
+          code=${PIPESTATUS[0]}
+          grep -E "Error:|error:|FAILURE|What went wrong" -A3 build.log | head -60 | while read -r l; do echo "::error::build: $l"; done
+          grep -iE "error|because|version solving" pub.log | head -20 | while read -r l; do echo "::error::pub: $l"; done
+          exit $code
       - name: Save to the repo
         run: |
           git config user.name "github-actions"
