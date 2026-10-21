@@ -179,7 +179,7 @@ class OsmService {
   static const _tile = 0.5; // degrees (~55 x 40 km)
   static const _tileDays = 14;
   static const _keep = {
-    'amenity', 'bicycle_parking', 'capacity', 'covered', 'fee', 'access', 'lit', 'surveillance', 'name', 'brand',
+    'amenity', 'bicycle_parking', 'capacity', 'covered', 'fee', 'access', 'lit', 'surveillance', 'name', 'brand', 'manufacturer',
     'network', 'operator', 'shop', 'bicycle', 'bicycle_rental', 'opening_hours', 'phone', 'contact:phone', 'website',
     'contact:website', 'addr:housenumber', 'addr:street', 'service:bicycle:repair', 'service:bicycle:pump',
     'service:bicycle:tools', 'service:bicycle:stand', 'service:bicycle:chain_tool', 'service:bicycle:rental',
@@ -529,6 +529,7 @@ Place? placeFromOsm(Map<String, dynamic> e) {
           : (yes('covered') ? PlaceType.parkCovered : PlaceType.parkOutdoor);
     case 'bicycle_repair_station':
       type = PlaceType.selfService;
+      operatorName = tag('brand') ?? tag('manufacturer'); // the maker: picks its help guide
     case 'compressed_air':
       type = PlaceType.pump;
     case 'bicycle_wash':

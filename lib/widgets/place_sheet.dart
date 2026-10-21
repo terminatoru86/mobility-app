@@ -7,6 +7,7 @@ import '../data/app_state.dart';
 import '../data/mapillary.dart';
 import '../data/places.dart';
 import '../data/store.dart';
+import '../screens/fixit_screens.dart';
 import '../screens/place_actions.dart';
 import '../theme.dart';
 import 'pin.dart';
@@ -309,7 +310,14 @@ class _PlaceSheetState extends State<PlaceSheet> {
           Wrap(spacing: 6, runSpacing: 6, children: [
             for (final t in p.tools) _chip(t, AppColors.paper, AppColors.primary, AppColors.slate),
             _chip('★ Free', AppColors.greenTint, AppColors.greenDark, AppColors.green),
-          ])
+          ]),
+          const SizedBox(height: 12),
+          // scan the QR on the stand: the maker's instructions open inside the app
+          FilledButton.icon(
+            onPressed: () => _push(FixitScanScreen(brand: p.operatorName)),
+            icon: const Icon(Icons.qr_code_scanner, size: 18),
+            label: const Text('Fixit help · scan the QR'),
+          ),
         ];
       case PlaceType.service:
         return [

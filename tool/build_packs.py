@@ -34,7 +34,7 @@ OVERPASS = [
 # lower 48, Alaska, Hawaii, Puerto Rico
 REGIONS = [(24, -125, 50, -66), (51, -170, 72, -129), (18, -161, 23, -154), (17, -68, 19, -65)]
 KEEP = {
-    'amenity', 'bicycle_parking', 'capacity', 'covered', 'fee', 'access', 'lit', 'surveillance', 'name', 'brand',
+    'amenity', 'bicycle_parking', 'capacity', 'covered', 'fee', 'access', 'lit', 'surveillance', 'name', 'brand', 'manufacturer',
     'network', 'operator', 'shop', 'bicycle', 'bicycle_rental', 'motorcycle', 'scooter', 'small_electric_vehicle',
     'service:vehicle:repair', 'motorcycle:repair', 'opening_hours', 'phone', 'contact:phone', 'website',
     'contact:website', 'addr:housenumber', 'addr:street', 'service:bicycle:repair', 'service:bicycle:pump',
