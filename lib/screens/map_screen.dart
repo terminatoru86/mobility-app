@@ -54,8 +54,9 @@ class _MapScreenState extends State<MapScreen> {
     });
     // one clock for all pins (glyph <-> age)
     _pinClock = Timer.periodic(const Duration(seconds: 4), (_) => pinShowsAge.value = !pinShowsAge.value);
-    // real places: first the ones saved on the phone (instant), then the visible area from OpenStreetMap
-    _osm.loadCache().then((_) {
+    // real places: the cities shipped with the app and the ones saved on the phone (instant),
+    // then the visible area from OpenStreetMap
+    _osm.loadBundled().then((_) => _osm.loadCache()).then((_) {
       if (mounted) setState(() {});
       _loadVisible();
     });
@@ -272,6 +273,21 @@ class _MapScreenState extends State<MapScreen> {
                 SizedBox(width: 6),
                 Text('Loading places…', style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700)),
               ]),
+            )
+          else if (_osm.lastError != null)
+            GestureDetector(
+              onTap: _loadVisible,
+              child: Container(
+                margin: const EdgeInsets.only(top: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                decoration: BoxDecoration(
+                  color: AppColors.redTint,
+                  borderRadius: BorderRadius.circular(14),
+                  border: Border.all(color: AppColors.red),
+                ),
+                child: Text('Places not loaded: ${_osm.lastError} · tap to retry',
+                    style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: AppColors.redDark)),
+              ),
             ),
         ]),
       ),

@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'dart:math' as math;
 
+import 'package:flutter/foundation.dart' show debugPrint;
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -13,7 +15,13 @@ import 'places.dart';
 class OsmService {
   static const _endpoints = [
     'https://overpass-api.de/api/interpreter',
-    'https://overpass.kumi.systems/api/interpreter',
+    'https://overpass.private.coffee/api/interpreter',
+    'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
+  ];
+
+  /// Cities shipped inside the app (made with tool/fetch_osm.dart): [file, s, w, n, e].
+  static const _bundled = [
+    ('assets/osm/chicago.json', 41.64, -87.94, 42.03, -87.52),
   ];
   static const _cacheKey = 'osm_cache_v1';
   static const _grid = 0.02; // ~2 km, areas are loaded in blocks of this size
@@ -23,6 +31,27 @@ class OsmService {
   final Map<String, Map<String, dynamic>> _raw = {}; // osm id -> element
   final Map<String, Place> places = {};
   final List<List<double>> _done = []; // loaded areas [s, w, n, e]
+
+  /// Why the last live load failed (shown on the map), null when all is fine.
+  String? lastError;
+
+  /// Cities shipped with the app: thousands of places, no internet needed.
+  Future<void> loadBundled() async {
+    for (final (file, s, w, n, e) in _bundled) {
+      try {
+        final list = (jsonDecode(await rootBundle.loadString(file)) as List).cast<Map<String, dynamic>>();
+        if (list.isEmpty) continue;
+        for (final el in list) {
+          final p = placeFromOsm(el);
+          if (p != null) places[p.id] = p;
+        }
+        _done.add([s, w, n, e]); // no need to ask the server inside this city
+        debugPrint('OSM: ${list.length} places from $file');
+      } catch (err) {
+        debugPrint('OSM: could not read $file: $err');
+      }
+    }
+  }
 
   /// Places saved on the phone from earlier runs (instant).
   Future<void> loadCache() async {
@@ -68,16 +97,23 @@ class OsmService {
         final r = await http
             .post(Uri.parse(url), body: {'data': query})
             .timeout(const Duration(seconds: 30));
-        if (r.statusCode != 200) continue;
+        if (r.statusCode != 200) {
+          lastError = 'server busy (${r.statusCode})';
+          debugPrint('OSM: $url answered ${r.statusCode}');
+          continue;
+        }
         final els = (jsonDecode(utf8.decode(r.bodyBytes))['elements'] as List).cast<Map<String, dynamic>>();
         for (final el in els) {
           _add(_slim(el));
         }
         _done.add([s, w, n, e]);
         _save();
+        lastError = null;
+        debugPrint('OSM: ${els.length} places from $url');
         return true;
-      } catch (_) {
-        // try the next server
+      } catch (err) {
+        lastError = 'no connection to OpenStreetMap';
+        debugPrint('OSM: $url failed: $err');
       }
     }
     return false;

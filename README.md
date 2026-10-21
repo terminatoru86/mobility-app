@@ -20,3 +20,7 @@ Test: Profile → „Reset demo” ca să vezi din nou ghidul; invitația de con
   `flutter run -d chrome --release` sau pe telefon `flutter run --release`.
 - Locurile reale vin din OpenStreetMap (Overpass API) pentru zona pe care o vezi și se salvează
   pe telefon, deci la următoarea pornire apar instant.
+
+## Toate locurile dintr-un oraș, instant
+`dart run tool/fetch_osm.dart` descarcă din OpenStreetMap toate locurile din Chicago în
+`assets/osm/chicago.json`. Aplicația le citește la pornire, fără internet. Apoi Commit and Push.
