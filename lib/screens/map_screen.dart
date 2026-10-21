@@ -45,6 +45,7 @@ class MapScreenState extends State<MapScreen> {
   bool _noGps = false;
   Timer? _flip;
   Timer? _pinClock;
+  Timer? _chipClock;
   Timer? _debounce;
   Timer? _sosHold;
   double _sosProgress = 0;
@@ -78,6 +79,7 @@ class MapScreenState extends State<MapScreen> {
     });
     // one clock for all pins (glyph <-> age)
     _pinClock = Timer.periodic(const Duration(seconds: 4), (_) => pinShowsAge.value = !pinShowsAge.value);
+    _chipClock = Timer.periodic(const Duration(seconds: 2), (_) => chipTick.value++);
     // real places: the cities shipped with the app and the ones saved on the phone (instant),
     // then the visible area from OpenStreetMap
     _osm.loadBundled().then((_) => _osm.loadCache()).then((_) {
@@ -187,6 +189,7 @@ class MapScreenState extends State<MapScreen> {
     _areaTimer?.cancel();
     _flip?.cancel();
     _pinClock?.cancel();
+    _chipClock?.cancel();
     _debounce?.cancel();
     _sosHold?.cancel();
     super.dispose();
@@ -1212,11 +1215,22 @@ class MapScreenState extends State<MapScreen> {
                     boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 2))],
                   ),
                   child: Row(children: [
-                    // every drawing of the group, side by side
-                    for (final (i, t) in f.$2.indexed) ...[
-                      if (i > 0) const SizedBox(width: 2),
-                      Glyph(t, size: 16, color: AppColors.primary),
-                    ],
+                    // groups with several drawings show them in turn, every 2 seconds
+                    if (f.$2.length == 1)
+                      Glyph(f.$2.first, size: 16, color: AppColors.primary)
+                    else
+                      ValueListenableBuilder<int>(
+                        valueListenable: chipTick,
+                        builder: (_, t, __) => AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 350),
+                          transitionBuilder: (c, a) => FadeTransition(
+                            opacity: a,
+                            child: ScaleTransition(scale: Tween(begin: .7, end: 1.0).animate(a), child: c),
+                          ),
+                          child: Glyph(f.$2[t % f.$2.length],
+                              key: ValueKey(f.$2[t % f.$2.length]), size: 16, color: AppColors.primary),
+                        ),
+                      ),
                     const SizedBox(width: 6),
                     Text(f.$1, style: const TextStyle(fontWeight: FontWeight.w700)),
                   ]),
@@ -1239,6 +1253,9 @@ class MapScreenState extends State<MapScreen> {
       );
 }
 
+/// Ticks every 2 s: the filter chips with several drawings show the next one (only the chip redraws).
+final ValueNotifier<int> chipTick = ValueNotifier(0);
+
 /// The quick filters at the top of the map, in this order; each shows all the drawings of its group.
 const kFilterChips = <(String, List<PlaceType>)>[
   ('Rack', [PlaceType.rack]),
@@ -1247,7 +1264,6 @@ const kFilterChips = <(String, List<PlaceType>)>[
   ('Service', [PlaceType.service, PlaceType.pump, PlaceType.selfService]),
   ('Sharing', [PlaceType.sharing, PlaceType.rent]),
   ('Wash', [PlaceType.wash]),
-  ('BMX', [PlaceType.bmx]),
   ('Shop', [PlaceType.shop]),
 ];
 
