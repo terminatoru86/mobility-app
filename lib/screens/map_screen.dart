@@ -48,8 +48,8 @@ class MapScreenState extends State<MapScreen> {
   Timer? _sosHold;
   double _sosProgress = 0;
   final _osm = OsmService();
-  final _open = OpenDataService(); // City of Chicago racks + Divvy live
-  Timer? _divvyTimer;
+  final _open = OpenDataService(); // city halls' bike racks + bikeshare/scooters live, around the map
+  Timer? _shareTimer;
   List<Place>? _merged; // all sources together, rebuilt only when one of them changes
   List<Place>? _allCache; // + riders' confirmations and the map settings
   LatLngBounds? _area; // the visible map plus a margin: only pins in here are drawn
@@ -83,15 +83,11 @@ class MapScreenState extends State<MapScreen> {
       if (mounted) setState(() => _merged = _allCache = null);
       _loadVisible();
     });
-    // City of Chicago racks (Data Portal) and Divvy stations live, refreshed every 90 s
-    // (a moment after the map is on screen, so the first view is not slowed down)
-    Future.delayed(const Duration(milliseconds: 1500), () async {
-      if (!mounted) return;
-      await _open.loadCityRacks();
-      if (mounted) setState(() => _merged = _allCache = null);
-      _refreshDivvy();
+    // city halls' racks and live bikeshare around the map (a moment after the map is on screen)
+    Future.delayed(const Duration(milliseconds: 1500), () => _loadOpenData(userPos));
+    _shareTimer = Timer.periodic(const Duration(seconds: 90), (_) async {
+      if (await _open.refreshSharing() && mounted) setState(() => _merged = _allCache = null);
     });
-    _divvyTimer = Timer.periodic(const Duration(seconds: 90), (_) => _refreshDivvy());
     _loadWeather();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       _locate(); // start where the rider is, anywhere in the US
@@ -128,7 +124,7 @@ class MapScreenState extends State<MapScreen> {
   @override
   void dispose() {
     Store.i.removeListener(_storeChanged);
-    _divvyTimer?.cancel();
+    _shareTimer?.cancel();
     _areaTimer?.cancel();
     _flip?.cancel();
     _pinClock?.cancel();
@@ -143,22 +139,32 @@ class MapScreenState extends State<MapScreen> {
   }
 
   /// Real places (OpenStreetMap), with what riders confirmed in Stats; demo places only until they arrive.
-  Future<void> _refreshDivvy() async {
-    final ok = await _open.loadDivvy();
-    if (ok && mounted) setState(() => _merged = _allCache = null);
+  bool _openBusy = false;
+
+  /// Official racks of the city around [at] and the share systems of that city.
+  Future<void> _loadOpenData(LatLng at) async {
+    if (_openBusy || !mounted) return;
+    _openBusy = true;
+    try {
+      final a = await _open.loadCitiesAround(at);
+      final b = await _open.chooseSystemsAround(at);
+      if ((a || b) && mounted) setState(() => _merged = _allCache = null);
+    } finally {
+      _openBusy = false;
+    }
   }
 
-  /// OpenStreetMap + City of Chicago racks (not where OSM already has one, ~15 m) + Divvy live
-  /// (instead of the Divvy stations copied in OSM).
+  /// OpenStreetMap + city halls' racks (not where OSM already has one, ~15 m) + live bikeshare
+  /// (instead of the copies of the same operators in OSM).
   List<Place> get _sources {
     final m = _merged;
     if (m != null) return m;
     final cell = <String>{};
     String key(LatLng p, int dy, int dx) => '${(p.latitude * 6000).round() + dy}:${(p.longitude * 6000).round() + dx}';
     final out = <Place>[];
-    final liveDivvy = _open.divvy.isNotEmpty;
+    final live = _open.liveOperators;
     for (final p in _osm.places.values) {
-      if (liveDivvy && p.type == PlaceType.sharing && (p.operatorName ?? '').toLowerCase().contains('divvy')) continue;
+      if (p.type == PlaceType.sharing && live.any((o) => (p.operatorName ?? p.address).toLowerCase().contains(o))) continue;
       out.add(p);
       if (p.type.group == 'Parking') cell.add(key(p.pos, 0, 0));
     }
@@ -171,7 +177,7 @@ class MapScreenState extends State<MapScreen> {
       }
       if (!dup) out.add(p);
     }
-    out.addAll(_open.divvy.values);
+    out.addAll(_open.sharing.values);
     return _merged = out;
   }
 
@@ -212,7 +218,7 @@ class MapScreenState extends State<MapScreen> {
     userPos = pos;
     _osm.refreshDistances();
     _open.refreshDistances();
-    _refreshDivvy();
+    _loadOpenData(pos);
     setState(() {
       _noGps = false;
       _merged = _allCache = null;
@@ -357,6 +363,7 @@ class MapScreenState extends State<MapScreen> {
     if (cam.zoom < 12) return; // too far out: we show what we already have
     final b = cam.visibleBounds;
     setState(() => _loading = true);
+    _loadOpenData(cam.center);
     final changed = await _osm.loadArea(b.south, b.west, b.north, b.east);
     if (!mounted) return;
     setState(() => _loading = false);
