@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // the phones' areas are written only by the zoneLedger function (admin), never by the app directly
+    match /devices/{id} {
+      allow read, write: if false;
+    }
+  }
+}

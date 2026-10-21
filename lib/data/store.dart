@@ -1,11 +1,13 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:math' as math;
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'device_ledger.dart';
 import 'places.dart';
 import 'zones.dart';
 
@@ -133,6 +135,12 @@ class Store extends ChangeNotifier {
   final List<MapZone> zones = [];
   DateTime? lastMove;
 
+  /// Free areas this PHONE has ever taken (moving one does not count). Kept with the phone's id,
+  /// so uninstalling / a new account does not give new free areas.
+  int freeEver = 0;
+  final Completer<void> _ledgerReady = Completer<void>();
+  Future<void> get ledgerReady => _ledgerReady.future;
+
   Future<void> load() async {
     _p = await SharedPreferences.getInstance();
     final p = _p!;
@@ -150,6 +158,8 @@ class Store extends ChangeNotifier {
     }
     final lm = p.getInt('lastMove');
     if (lm != null) lastMove = DateTime.fromMillisecondsSinceEpoch(lm);
+    freeEver = p.getInt('freeEver') ?? zones.where((z) => !z.paid).length;
+    _restoreLedger(); // the phone's record (survives a reinstall): checked in the background
     satellite = p.getBool('satellite') ?? false;
     bikeMap = p.getBool('bikeMap') ?? false;
     parkNearDest = p.getBool('parkNearDest') ?? true;
@@ -343,18 +353,53 @@ class Store extends ChangeNotifier {
   bool unlockedAt(LatLng p) => zones.any((z) => z.covers(p));
   MapZone? zoneAt(LatLng p) => zones.where((z) => z.covers(p)).firstOrNull;
 
-  void _saveZones() {
+  void _saveZones({bool sync = true}) {
     zones.removeWhere((z) => z.paid && !z.active && DateTime.now().difference(z.until!).inDays > 60);
     _p?.setStringList('zones', [for (final z in zones) jsonEncode(z.toJson())]);
     if (lastMove != null) _p?.setInt('lastMove', lastMove!.millisecondsSinceEpoch);
+    _p?.setInt('freeEver', freeEver);
     notifyListeners();
+    if (sync) _syncLedger();
   }
 
+  /// After a reinstall: the phone's areas come back (free ones stay free, paid passes keep their days),
+  /// and the count of free areas ever taken comes back too.
+  Future<void> _restoreLedger() async {
+    try {
+      final r = await DeviceLedger.i.read();
+      if (r != null) _takeRecord(r);
+    } catch (_) {}
+    if (!_ledgerReady.isCompleted) _ledgerReady.complete();
+  }
+
+  void _takeRecord(LedgerRecord r) {
+    // the phone's record wins; areas only this install has (bought offline) are kept too
+    final key = {for (final z in r.zones) '${z.center.latitude},${z.center.longitude},${z.paid}'};
+    final extra = zones.where((z) => !key.contains('${z.center.latitude},${z.center.longitude},${z.paid}')).toList();
+    zones
+      ..clear()
+      ..addAll(r.zones)
+      ..addAll(extra.where((z) => z.paid));
+    freeEver = math.max(freeEver, r.freeEver);
+    if (r.lastMove != null && (lastMove == null || r.lastMove!.isAfter(lastMove!))) lastMove = r.lastMove;
+    _saveZones(sync: extra.any((z) => z.paid));
+  }
+
+  Future<void> _syncLedger() async {
+    final server = await DeviceLedger.i.write(LedgerRecord(List.of(zones), lastMove, freeEver));
+    if (server != null) _takeRecord(server); // the server may refuse a free area this phone already used
+  }
+
+  /// Free areas this phone can still take (2 for the life of the phone; moving one is separate).
+  bool get canClaimFree => freeEver < MapZone.maxFree && freeZones.length < MapZone.maxFree;
+
   /// Where the rider really is (GPS): the first two places become the free areas, by themselves.
-  /// Returns true when a new free area was added.
+  /// Returns true when a new free area was added. A third place always asks for the payment,
+  /// even after uninstalling the app or with a new account.
   bool claimFreeZone(LatLng gps, String name) {
-    if (unlockedAt(gps) || freeZones.length >= MapZone.maxFree) return false;
+    if (unlockedAt(gps) || !canClaimFree) return false;
     zones.add(MapZone(name, gps, added: DateTime.now()));
+    freeEver++;
     _saveZones();
     return true;
   }

@@ -137,7 +137,8 @@ class MapScreenState extends State<MapScreen> {
   /// The first two places where the rider really is become the free areas.
   Future<void> _claimZone(LatLng gps) async {
     final st = Store.i;
-    if (st.unlockedAt(gps) || st.freeZones.length >= MapZone.maxFree) return;
+    await st.ledgerReady.timeout(const Duration(seconds: 12), onTimeout: () {}); // the phone's record first
+    if (st.unlockedAt(gps) || !st.canClaimFree) return;
     final n = await cityName(gps) ?? 'My area';
     if (st.claimFreeZone(gps, n) && mounted) {
       setState(() => _merged = _allCache = null);
