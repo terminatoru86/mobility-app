@@ -242,6 +242,31 @@ class UserDot extends StatelessWidget {
 
 String _hex(Color c) => '#${(c.toARGB32() & 0xFFFFFF).toRadixString(16).padLeft(6, '0')}';
 
+/// Map tab icon: a folded map with a location pin standing on it.
+class MapTabIcon extends StatelessWidget {
+  final Color color;
+  final double size;
+  const MapTabIcon({super.key, this.color = const Color(0xFF55666F), this.size = 26});
+
+  @override
+  Widget build(BuildContext context) {
+    final c = _hex(color);
+    return SvgPicture.string(
+      '<svg viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">'
+      // folded map: three panels, the middle one lighter
+      '<path d="M2 15.6 8.4 13.4 8.4 23.6 2 25.8Z" fill="$c"/>'
+      '<path d="M9.4 13.4 16.6 15.6 16.6 25.8 9.4 23.6Z" fill="$c" fill-opacity=".55"/>'
+      '<path d="M17.6 15.6 24 13.4 24 23.6 17.6 25.8Z" fill="$c"/>'
+      // the pin, with a white ring to stand out from the map
+      '<path d="M15.6 1.2a6.2 6.2 0 0 0-6.2 6.2c0 4.6 6.2 11 6.2 11s6.2-6.4 6.2-11a6.2 6.2 0 0 0-6.2-6.2Z" '
+      'fill="$c" stroke="#fff" stroke-width="1.6"/>'
+      '<circle cx="15.6" cy="7.4" r="2.3" fill="#fff"/></svg>',
+      width: size,
+      height: size,
+    );
+  }
+}
+
 /// Small road with a dashed middle line: "there is bike road on this route".
 class BikeRoadIcon extends StatelessWidget {
   final double size;

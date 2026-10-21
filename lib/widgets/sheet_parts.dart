@@ -85,6 +85,7 @@ class _VehicleTileState extends State<VehicleTile> {
     final selectedBorder = _fixed || _mine;
     return Container(
       height: 74,
+      clipBehavior: Clip.antiAlias, // the picture never leaves the tile
       decoration: BoxDecoration(
         color: selectedBorder ? Colors.white : AppColors.paper,
         borderRadius: BorderRadius.circular(14),
@@ -104,15 +105,15 @@ class _VehicleTileState extends State<VehicleTile> {
                 widget.onSelected?.call(v);
               },
               child: Padding(
-                padding: const EdgeInsets.only(left: 6, right: 10),
+                padding: const EdgeInsets.only(left: 8, right: 10),
                 child: Row(children: [
-                  // bigger picture: the cut-out image overflows its box a little
+                  // big picture, but always inside its own box (never under the minutes)
                   SizedBox(
-                    width: 74,
-                    height: 62,
-                    child: Transform.scale(scale: 1.3, child: Image.asset(v.asset, fit: BoxFit.contain)),
+                    width: 76,
+                    height: 60,
+                    child: Image.asset(v.asset, fit: BoxFit.contain, alignment: Alignment.center),
                   ),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -503,6 +504,7 @@ class RentVehicleRow extends StatelessWidget {
               child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 2.5),
                 height: 64,
+                clipBehavior: Clip.antiAlias,
                 decoration: BoxDecoration(
                   color: selected == e.key ? const Color(0xFFEAF0FB) : const Color(0xFFE9EEF1),
                   borderRadius: BorderRadius.circular(14),
@@ -512,7 +514,7 @@ class RentVehicleRow extends StatelessWidget {
                   Positioned.fill(
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(4, 8, 4, 2),
-                      child: Transform.scale(scale: 1.25, child: Image.asset(e.key.asset, fit: BoxFit.contain)),
+                      child: Image.asset(e.key.asset, fit: BoxFit.contain),
                     ),
                   ),
                   Positioned(

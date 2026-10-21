@@ -460,8 +460,8 @@ class MapScreenState extends State<MapScreen> {
     if (mounted) setState(() => _selected = null);
   }
 
-  /// Radius of the ring around the rider: inside it pins and groups, outside light dots.
-  static const kRingMiles = 22.0;
+  /// Radius of the ring in the middle of the map: inside it our pins (and groups where they overlap), outside light dots.
+  static const kRingMiles = 7.0;
 
   /// The ring follows the middle of the map: what comes in on one side becomes pins/groups,
   /// what leaves on the other side turns into dots.
@@ -494,8 +494,6 @@ class MapScreenState extends State<MapScreen> {
   static const kPinZoom = 15.5;
 
   /// Pins are real widgets (heavy); dots are painted in one go (light).
-  /// Full pins only for the nearest [_maxPins] places when zoomed in; everything else is a dot.
-  static const _maxPins = 90;
   List<CircleMarker> _dotCache = const [];
   List<Place> _dotPlaces = const [];
 
@@ -529,7 +527,7 @@ class MapScreenState extends State<MapScreen> {
     final markers = <Marker>[];
     final dots = <Place>[];
 
-    // the ring: 22 miles around the rider. Inside: pins up close, groups when zoomed out.
+    // the ring: 7 miles around the middle of the map. Inside: our pins (groups where they overlap).
     // Outside: light dots only.
     final rc = _ringCenter ?? userPos;
     final kx = 111.2 * math.cos(rc.latitude * math.pi / 180);
@@ -544,41 +542,38 @@ class MapScreenState extends State<MapScreen> {
       (km2(p.pos) <= ringKm * ringKm ? inside : dots).add(p);
     }
 
-    if (_zoom >= kPinZoom) {
-      // street view: real pins for the closest ones, dots for the rest
-      LatLng c;
-      try {
-        c = _map.camera.center;
-      } catch (_) {
-        c = userPos;
+    // inside the ring: our real pins with their info; where pins would sit on top of each other,
+    // one group instead (about one pin wide). Never more than ~160 at once.
+    final mPerPx = 156543.03 * math.cos(rc.latitude * math.pi / 180) / math.pow(2, _zoom);
+    var cellPx = 42.0;
+    Map<String, List<Place>> cells = {};
+    for (int round = 0; round < 6; round++) {
+      final cellLat = cellPx * mPerPx / 111200;
+      final cellLng = cellLat / math.max(0.2, math.cos(rc.latitude * math.pi / 180));
+      cells = {};
+      for (final p in inside) {
+        cells.putIfAbsent('${(p.pos.latitude / cellLat).floor()}:${(p.pos.longitude / cellLng).floor()}', () => []).add(p);
       }
-      final cx = 111.2 * math.cos(c.latitude * math.pi / 180);
-      double near(Place p) {
-        final dy = (p.pos.latitude - c.latitude) * 111.2, dx = (p.pos.longitude - c.longitude) * cx;
-        return dx * dx + dy * dy;
+      if (cells.length <= 160) break;
+      cellPx *= 1.5;
+    }
+    for (final group in cells.values) {
+      if (group.length == 1) {
+        markers.add(_pinMarker(group.first));
+        continue;
       }
-
-      inside.sort((x, y) => near(x).compareTo(near(y)));
-      markers.addAll(inside.take(_maxPins).map(_pinMarker));
-      dots.addAll(inside.skip(_maxPins));
-    } else {
-      // zoomed out: groups with a colour ring (share of free / almost full / full)
-      for (final c in clusterPlaces(inside, math.max(_zoom, 9))) {
-        if (c.places.length == 1) {
-          dots.add(c.places.first);
-          continue;
-        }
-        final size = (30 + 14 * math.log(c.places.length) / math.ln10).clamp(32.0, 54.0).toDouble();
-        markers.add(Marker(
-          point: c.center,
-          width: size,
-          height: size,
-          child: GestureDetector(
-            onTap: () => _map.move(c.center, math.min(kPinZoom, math.max(_map.camera.zoom + 2, 13))),
-            child: DonutCluster(places: c.places, size: size),
-          ),
-        ));
-      }
+      final lat = group.map((p) => p.pos.latitude).reduce((x, y) => x + y) / group.length;
+      final lng = group.map((p) => p.pos.longitude).reduce((x, y) => x + y) / group.length;
+      final size = (30 + 14 * math.log(group.length) / math.ln10).clamp(32.0, 54.0).toDouble();
+      markers.add(Marker(
+        point: LatLng(lat, lng),
+        width: size,
+        height: size,
+        child: GestureDetector(
+          onTap: () => _openGroup(group),
+          child: DonutCluster(places: group, size: size),
+        ),
+      ));
     }
     final sel = _selected;
     if (sel != null) {
@@ -601,6 +596,21 @@ class MapScreenState extends State<MapScreen> {
         ),
     ];
     _markerCache = markers;
+  }
+
+  /// Tap on a group: fly to exactly those places, close enough to see each pin with its info.
+  void _openGroup(List<Place> group) {
+    final pts = group.map((p) => p.pos).toList();
+    final b = LatLngBounds.fromPoints(pts);
+    final tiny = (b.north - b.south).abs() < 0.0003 && (b.east - b.west).abs() < 0.0003;
+    try {
+      if (tiny) {
+        _map.move(b.center, 19);
+      } else {
+        _map.fitCamera(CameraFit.bounds(bounds: b, padding: const EdgeInsets.fromLTRB(60, 190, 60, 140), maxZoom: 19));
+        if (_map.camera.zoom < kPinZoom) _map.move(b.center, kPinZoom);
+      }
+    } catch (_) {}
   }
 
   /// A tap on the map opens the dot under the finger (within ~22 px).
@@ -633,7 +643,7 @@ class MapScreenState extends State<MapScreen> {
         alignment: Alignment.topCenter,
         child: GestureDetector(
           onTap: () => _openPlace(p),
-          child: PlacePin(place: p, selected: _selected == p.id, small: _zoom < 16),
+          child: PlacePin(place: p, selected: _selected == p.id, small: _zoom < 15),
         ),
       );
 
@@ -734,7 +744,7 @@ class MapScreenState extends State<MapScreen> {
                 pattern: const StrokePattern.dotted(spacingFactor: 2),
               ),
             ]),
-          // the 22-mile ring around the rider
+          // the 7-mile ring in the middle of the map
           CircleLayer(circles: [
             CircleMarker(
               point: _ringCenter ?? userPos,
@@ -752,13 +762,13 @@ class MapScreenState extends State<MapScreen> {
               pattern: const StrokePattern.dotted(spacingFactor: 2.2),
             ),
           ]),
-          if (_zoom < kPinZoom - 2)
+          if (_zoom < 14)
             MarkerLayer(markers: [
               Marker(
                 point: LatLng((_ringCenter ?? userPos).latitude + kRingMiles * 1.609 / 111.2, (_ringCenter ?? userPos).longitude),
                 width: 70,
                 height: 24,
-                child: const RingLabel(text: '22 mi'),
+                child: const RingLabel(text: '7 mi'),
               ),
             ]),
           if (_zoom < 9)

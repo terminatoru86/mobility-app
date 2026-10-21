@@ -9,6 +9,7 @@ import 'screens/map_screen.dart';
 import 'screens/other_screens.dart';
 import 'screens/routes_screen.dart';
 import 'theme.dart';
+import 'widgets/pin.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -77,7 +78,8 @@ class _ShellState extends State<Shell> {
           _tab = i;
         }),
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.map_outlined), selectedIcon: Icon(Icons.map), label: 'Map'),
+          NavigationDestination(
+              icon: MapTabIcon(), selectedIcon: MapTabIcon(color: Color(0xFF2F6FDC)), label: 'Map'),
           NavigationDestination(icon: Icon(Icons.route_outlined), selectedIcon: Icon(Icons.route), label: 'Routes'),
           NavigationDestination(icon: Icon(Icons.monitor_heart_outlined), label: 'Health'),
           NavigationDestination(icon: Icon(Icons.groups_outlined), label: 'Community'),
