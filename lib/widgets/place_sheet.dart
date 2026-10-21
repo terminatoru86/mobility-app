@@ -405,7 +405,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
           const Text('Accepted vehicles', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
           const SizedBox(height: 4),
           const Text(
-            'Only the vehicles accepted here appear below, one every 20 seconds, each with its time and arrival. '
+            'Only the vehicles accepted here appear below, one every 4 seconds, each with its time and arrival. '
             'If yours is missing, this place has no room for it. With an account the sheet starts from your vehicle; swipe to see the others.',
             style: TextStyle(fontSize: 12.5, color: AppColors.soft),
           ),

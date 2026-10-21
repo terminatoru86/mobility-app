@@ -18,21 +18,21 @@ class FactTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Container(
-        height: 64,
+        height: 74,
         padding: const EdgeInsets.symmetric(horizontal: 12),
         decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(value, maxLines: 1, style: const TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
+            Text(value, maxLines: 1, style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w800)),
             Text(label, style: const TextStyle(fontSize: 11, color: AppColors.soft)),
           ],
         ),
       );
 }
 
-/// Accepted vehicles, one at a time. Rotates every 20 s (guests);
+/// Accepted vehicles, one at a time. Rotates every 4 s (guests);
 /// tapping fixes the vehicle. If the user saved a vehicle, it starts there
 /// and does not rotate - other vehicles only by swiping.
 class VehicleTile extends StatefulWidget {
@@ -64,7 +64,7 @@ class _VehicleTileState extends State<VehicleTile> {
     }
     _pc = PageController(initialPage: _index);
     if (!_mine && _list.length > 1) {
-      _timer = Timer.periodic(const Duration(seconds: 20), (_) {
+      _timer = Timer.periodic(const Duration(seconds: 4), (_) {
         if (!_fixed && mounted && _pc.hasClients) {
           _pc.animateToPage((_index + 1) % _list.length,
               duration: const Duration(milliseconds: 450), curve: Curves.easeInOut);
@@ -85,7 +85,7 @@ class _VehicleTileState extends State<VehicleTile> {
     final selectedBorder = _fixed || _mine;
     return Column(children: [
       Container(
-        height: 64,
+        height: 74,
         decoration: BoxDecoration(
           color: selectedBorder ? Colors.white : AppColors.paper,
           borderRadius: BorderRadius.circular(14),
@@ -106,14 +106,14 @@ class _VehicleTileState extends State<VehicleTile> {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: Row(children: [
-                  SizedBox(width: 56, height: 44, child: Image.asset(v.asset, fit: BoxFit.contain)),
+                  SizedBox(width: 66, height: 54, child: Image.asset(v.asset, fit: BoxFit.contain)),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('$eta min', style: const TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
+                        Text('$eta min', style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w800)),
                         Text(arrivalTime(eta), style: const TextStyle(fontSize: 11, color: AppColors.soft)),
                       ],
                     ),

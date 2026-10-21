@@ -8,6 +8,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:latlong2/latlong.dart';
 
+import '../data/location.dart';
 import '../data/places.dart';
 import '../data/routing.dart';
 import '../data/store.dart';
@@ -57,6 +58,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
   bool _loading = true;
   bool _ready = false;
   Weather? _wx;
+  final List<(String, LatLng)> _via = []; // stops added with the ≡+ button
   // Destination is an address (not one of our parking places): suggest a rack 300 m or closer.
   Place? _rack;
   List<LatLng> _walk = const [];
@@ -89,7 +91,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
 
   Future<void> _calc() async {
     setState(() => _loading = true);
-    final r = await bikeRoutes([_from, _to]);
+    final r = await bikeRoutes([_from, for (final v in _via) v.$2, _to]);
     if (!mounted) return;
     setState(() {
       _routes = r;
@@ -126,23 +128,34 @@ class _RoutePlannerState extends State<RoutePlanner> {
     final r = _r;
     return Scaffold(
       backgroundColor: AppColors.paper,
-      appBar: AppBar(backgroundColor: Colors.white, title: const Text('Choose the route')),
-      body: ListView(padding: const EdgeInsets.fromLTRB(12, 10, 12, 110), children: [
-        // Start / End
-        Container(
-          padding: const EdgeInsets.fromLTRB(12, 8, 4, 8),
-          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(18)),
-          child: Row(children: [
-            Expanded(
-              child: Column(children: [
-                _endRow(Icons.my_location, AppColors.blue, 'Start', _fromName),
-                const Divider(height: 10),
-                _endRow(Icons.place, AppColors.red, 'End', _toName),
-              ]),
-            ),
-            IconButton(onPressed: _swap, icon: const Icon(Icons.swap_vert)),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        automaticallyImplyLeading: false,
+        title: const Text('Choose the route'),
+        // ✕ stops the route and goes back to the map, with the address still in the search bar
+        actions: [IconButton(onPressed: () => Navigator.of(context).pop(), icon: const Icon(Icons.close))],
+      ),
+      body: ListView(padding: const EdgeInsets.fromLTRB(8, 8, 8, 110), children: [
+        // from / to: two boxes you tap to type again; swap and add-a-stop stacked on the right
+        Row(children: [
+          Expanded(
+            child: Column(children: [
+              _field(Icons.my_location, AppColors.blue, _fromName, () => _edit(true)),
+              for (final (i, v) in _via.indexed) ...[
+                const SizedBox(height: 5),
+                _field(Icons.more_vert, AppColors.soft, v.$1, () => _editVia(i)),
+              ],
+              const SizedBox(height: 5),
+              _field(Icons.flag_rounded, AppColors.red, _toName, () => _edit(false)),
+            ]),
+          ),
+          const SizedBox(width: 5),
+          Column(children: [
+            _square(Icons.swap_vert, _swap),
+            const SizedBox(height: 5),
+            _square(Icons.playlist_add, _addStop),
           ]),
-        ),
+        ]),
         const SizedBox(height: 10),
         if (_wx != null && r != null) _windChip(r),
         const SizedBox(height: 8),
@@ -219,17 +232,17 @@ class _RoutePlannerState extends State<RoutePlanner> {
             for (final label in const ['Fast', 'Balanced', 'Quiet'])
               Expanded(child: _modeTile(label)),
           ]),
-          const SizedBox(height: 10),
+          const SizedBox(height: 6),
           Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Expanded(
-              flex: 3,
+              flex: 7,
               child: VehicleTile(
                 place: _tripPlace(r),
                 myVehicle: widget.myVehicle,
               ),
             ),
-            const SizedBox(width: 8),
-            Expanded(flex: 2, child: FactTile(r.distance, 'distance')),
+            const SizedBox(width: 5),
+            Expanded(flex: 4, child: FactTile(r.distance, 'distance')),
           ]),
           const SizedBox(height: 4),
           Text('↗ ${r.climb} m climb · ↘ ${(r.climb * 0.9).round()} m descent',
@@ -335,14 +348,94 @@ class _RoutePlannerState extends State<RoutePlanner> {
         },
       );
 
-  Widget _endRow(IconData i, Color c, String label, String text) => Row(children: [
-        Icon(i, color: c, size: 18),
-        const SizedBox(width: 8),
-        SizedBox(width: 40, child: Text(label, style: const TextStyle(color: AppColors.soft, fontSize: 12))),
-        Expanded(
-          child: Text(text, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800)),
+  Widget _field(IconData i, Color c, String text, VoidCallback onTap) => Material(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(12),
+          onTap: onTap,
+          child: Container(
+            height: 48,
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: AppColors.line, width: 1.5),
+            ),
+            child: Row(children: [
+              Icon(i, color: c, size: 19),
+              const SizedBox(width: 9),
+              Expanded(
+                child: Text(text,
+                    maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+              ),
+              const Icon(Icons.edit_outlined, size: 16, color: AppColors.soft),
+            ]),
+          ),
         ),
-      ]);
+      );
+
+  Widget _square(IconData i, VoidCallback onTap) => Material(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(12),
+          onTap: onTap,
+          child: Container(
+            width: 48,
+            height: 48,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: AppColors.line, width: 1.5),
+            ),
+            child: Icon(i, color: AppColors.ink),
+          ),
+        ),
+      );
+
+  // Tap a box: type the place again (or pick "My location").
+  Future<(String, LatLng)?> _pick(String hint, {bool allowMine = false}) => showModalBottomSheet<(String, LatLng)>(
+        context: context,
+        isScrollControlled: true,
+        backgroundColor: Colors.white,
+        shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
+        builder: (_) => _PlacePicker(hint: hint, allowMine: allowMine),
+      );
+
+  Future<void> _edit(bool from) async {
+    final r = await _pick(from ? 'Where from?' : 'Where to?', allowMine: true);
+    if (r == null || !mounted) return;
+    setState(() {
+      if (from) {
+        _fromName = r.$1;
+        _from = r.$2;
+      } else {
+        _toName = r.$1;
+        _to = r.$2;
+      }
+    });
+    if (!from) _findRack();
+    _calc();
+  }
+
+  Future<void> _addStop() async {
+    final r = await _pick('Add a stop');
+    if (r == null || !mounted) return;
+    setState(() => _via.add(r));
+    _calc();
+  }
+
+  Future<void> _editVia(int i) async {
+    final r = await _pick('Change the stop (empty = remove)');
+    if (!mounted) return;
+    setState(() {
+      if (r == null) {
+        _via.removeAt(i);
+      } else {
+        _via[i] = r;
+      }
+    });
+    _calc();
+  }
 
   Widget _modeTile(String label) {
     final i = _routes.indexWhere((x) => x.label == label);
@@ -358,8 +451,8 @@ class _RoutePlannerState extends State<RoutePlanner> {
       child: Opacity(
         opacity: x == null ? 0.4 : 1,
         child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 3),
-          padding: const EdgeInsets.symmetric(vertical: 8),
+          margin: const EdgeInsets.symmetric(horizontal: 2),
+          padding: const EdgeInsets.symmetric(vertical: 11),
           decoration: BoxDecoration(
             color: on ? const Color(0xFFE6EEFB) : Colors.white,
             borderRadius: BorderRadius.circular(14),
@@ -1109,6 +1202,91 @@ class _StatsOverlayState extends State<_StatsOverlay> {
           _ball(Status.full, const Color(0xFFFF8A8D), AppColors.red, const Color(0xFFA82328)),
         ]),
       ),
+    );
+  }
+}
+
+
+/// Small search used by the route boxes.
+class _PlacePicker extends StatefulWidget {
+  final String hint;
+  final bool allowMine;
+  const _PlacePicker({required this.hint, required this.allowMine});
+  @override
+  State<_PlacePicker> createState() => _PlacePickerState();
+}
+
+class _PlacePickerState extends State<_PlacePicker> {
+  Timer? _wait;
+  List<GeoResult> _results = [];
+  String _q = '';
+
+  @override
+  void dispose() {
+    _wait?.cancel();
+    super.dispose();
+  }
+
+  void _changed(String q) {
+    _q = q.trim();
+    _wait?.cancel();
+    _wait = Timer(const Duration(milliseconds: 350), () async {
+      if (_q.length < 3) return;
+      final asked = _q;
+      final r = await searchUs(asked, near: userPos);
+      if (mounted && asked == _q) setState(() => _results = r);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final ours = _q.length < 2
+        ? <Place>[]
+        : knownPlaces.where((p) => p.address.toLowerCase().contains(_q.toLowerCase())).take(4).toList();
+    return Padding(
+      padding: EdgeInsets.fromLTRB(16, 14, 16, MediaQuery.of(context).viewInsets.bottom + 16),
+      child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+        TextField(
+          autofocus: true,
+          onChanged: _changed,
+          onSubmitted: (_) {
+            if (_results.isNotEmpty) Navigator.pop(context, (_results.first.title, _results.first.pos));
+          },
+          decoration: InputDecoration(
+            hintText: widget.hint,
+            prefixIcon: const Icon(Icons.search),
+            filled: true,
+            fillColor: AppColors.paper,
+            border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(14)), borderSide: BorderSide.none),
+          ),
+        ),
+        ConstrainedBox(
+          constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.45),
+          child: ListView(shrinkWrap: true, children: [
+            if (widget.allowMine)
+              ListTile(
+                leading: const Icon(Icons.my_location, color: AppColors.blue),
+                title: const Text('My location', style: TextStyle(fontWeight: FontWeight.w700)),
+                onTap: () => Navigator.pop(context, ('My location', userPos)),
+              ),
+            for (final p in ours)
+              ListTile(
+                leading: Glyph(p.type, size: 22, color: colorsFor(p.shownStatus).dark),
+                title: Text(p.address),
+                subtitle: Text(p.type.title),
+                onTap: () => Navigator.pop(context, (p.address, p.pos)),
+              ),
+            for (final g in _results)
+              ListTile(
+                leading: const Icon(Icons.place_outlined),
+                title: Text(g.title, style: const TextStyle(fontWeight: FontWeight.w700)),
+                subtitle: Text('${fmtDistance(const Distance()(userPos, g.pos))} · ${g.subtitle}',
+                    maxLines: 1, overflow: TextOverflow.ellipsis),
+                onTap: () => Navigator.pop(context, (g.title, g.pos)),
+              ),
+          ]),
+        ),
+      ]),
     );
   }
 }
