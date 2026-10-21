@@ -5,6 +5,7 @@ import 'screens/community_screen.dart';
 import 'screens/health_screen.dart';
 import 'screens/map_screen.dart';
 import 'screens/other_screens.dart';
+import 'screens/routes_screen.dart';
 import 'theme.dart';
 
 Future<void> main() async {
@@ -43,7 +44,7 @@ class _ShellState extends State<Shell> {
   Widget build(BuildContext context) {
     final pages = [
       MapScreen(key: ValueKey(_mapVersion), state: widget.state, navKey: _navKey),
-      const ComingSoon(title: 'Routes', icon: Icons.route, text: 'Plan, Explore and Saved routes come in milestone M2.'),
+      const RoutesScreen(),
       const HealthScreen(),
       CommunityScreen(state: widget.state),
       ProfileScreen(state: widget.state),

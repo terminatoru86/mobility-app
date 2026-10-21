@@ -8,7 +8,7 @@ import 'sheet_parts.dart';
 
 /// Opens the sheet of a place over the map.
 Future<void> showPlaceSheet(BuildContext context, Place place,
-    {Vehicle? myVehicle, bool showVehicleTip = false, VoidCallback? onTipSeen}) {
+    {Vehicle? myVehicle, bool showVehicleTip = false, VoidCallback? onTipSeen, VoidCallback? onTrip}) {
   return showModalBottomSheet(
     context: context,
     isScrollControlled: true,
@@ -24,6 +24,7 @@ Future<void> showPlaceSheet(BuildContext context, Place place,
         myVehicle: myVehicle,
         showVehicleTip: showVehicleTip,
         onTipSeen: onTipSeen,
+        onTrip: onTrip,
       ),
     ),
   );
@@ -35,6 +36,7 @@ class PlaceSheet extends StatefulWidget {
   final Vehicle? myVehicle;
   final bool showVehicleTip;
   final VoidCallback? onTipSeen;
+  final VoidCallback? onTrip;
   const PlaceSheet({
     super.key,
     required this.place,
@@ -42,6 +44,7 @@ class PlaceSheet extends StatefulWidget {
     this.myVehicle,
     this.showVehicleTip = false,
     this.onTipSeen,
+    this.onTrip,
   });
 
   @override
@@ -144,7 +147,10 @@ class _PlaceSheetState extends State<PlaceSheet> {
             ]),
           ),
           FilledButton.icon(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+              widget.onTrip?.call();
+            },
             icon: const Icon(Icons.navigation_rounded, size: 18),
             label: const Text('Trip'),
             style: FilledButton.styleFrom(

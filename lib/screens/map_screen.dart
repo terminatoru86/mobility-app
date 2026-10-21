@@ -7,9 +7,11 @@ import 'package:latlong2/latlong.dart';
 import '../data/app_state.dart';
 import '../data/location.dart';
 import '../data/osm.dart';
+import '../data/routing.dart';
 import '../data/places.dart';
 import '../theme.dart';
 import '../widgets/cluster.dart';
+import '../widgets/directions.dart';
 import '../widgets/guide.dart';
 import '../widgets/pin.dart';
 import '../widgets/place_sheet.dart';
@@ -37,6 +39,11 @@ class _MapScreenState extends State<MapScreen> {
   Timer? _debounce;
   final _osm = OsmService();
   bool _loading = false;
+
+  // Trip: route from the rider to the chosen place
+  Place? _tripTo;
+  RouteResult? _route;
+  bool _routing = false;
 
   final _kSearch = GlobalKey();
   final _kFilters = GlobalKey();
@@ -101,6 +108,27 @@ class _MapScreenState extends State<MapScreen> {
     _map.move(pos, 15);
   }
 
+  /// Trip button: bike route from where you are to the place, drawn in blue.
+  Future<void> _trip(Place p) async {
+    setState(() {
+      _tripTo = p;
+      _route = null;
+      _routing = true;
+    });
+    final r = await bikeRoute([userPos, p.pos]);
+    if (!mounted || _tripTo != p) return;
+    setState(() {
+      _route = r;
+      _routing = false;
+    });
+    if (r != null && r.points.length > 1) {
+      _map.fitCamera(CameraFit.bounds(
+        bounds: LatLngBounds.fromPoints(r.points),
+        padding: const EdgeInsets.fromLTRB(40, 160, 40, 200),
+      ));
+    }
+  }
+
   /// Search any address or city in the US and jump there.
   Future<void> _openSearch() async {
     final picked = await showModalBottomSheet<GeoResult>(
@@ -143,6 +171,7 @@ class _MapScreenState extends State<MapScreen> {
       myVehicle: widget.state.myVehicle,
       showVehicleTip: !widget.state.sheetTipDone,
       onTipSeen: widget.state.setSheetTipDone,
+      onTrip: () => _trip(p),
     );
     if (mounted) setState(() => _selected = null);
   }
@@ -247,6 +276,7 @@ class _MapScreenState extends State<MapScreen> {
         children: [
           // OpenStreetMap basemap
           baseTiles(),
+          if (_route != null) routeLayer(_route!.points),
           MarkerLayer(markers: [
             Marker(point: userPos, width: 34, height: 34, child: const UserDot()),
             ..._markers(),
@@ -293,7 +323,7 @@ class _MapScreenState extends State<MapScreen> {
       ),
       Positioned(
         right: 14,
-        bottom: 24,
+        bottom: _tripTo != null ? 110 : 24,
         child: Column(children: [
           _roundBtn(_kLocate, Icons.my_location, Colors.white, AppColors.ink, _locate),
           const SizedBox(height: 12),
@@ -302,7 +332,7 @@ class _MapScreenState extends State<MapScreen> {
       ),
       Positioned(
         left: 14,
-        bottom: 30,
+        bottom: _tripTo != null ? 116 : 30,
         child: GestureDetector(
           key: _kSos,
           onLongPress: () {},
@@ -322,6 +352,24 @@ class _MapScreenState extends State<MapScreen> {
         bottom: 2,
         child: Text('© OpenStreetMap contributors', style: TextStyle(fontSize: 9, color: AppColors.soft)),
       ),
+      if (_tripTo != null)
+        Positioned(
+          left: 12,
+          right: 12,
+          bottom: 18,
+          child: RoutePanel(
+            title: _tripTo!.address,
+            route: _route,
+            loading: _routing,
+            failed: !_routing && _route == null,
+            onRetry: () => _trip(_tripTo!),
+            onGo: () => showDirections(context, _route!, _tripTo!.address),
+            onClose: () => setState(() {
+              _tripTo = null;
+              _route = null;
+            }),
+          ),
+        ),
       if (_showGuide)
         Positioned.fill(
           child: GuideOverlay(
