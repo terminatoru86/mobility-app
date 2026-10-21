@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math' as math;
 
+import 'package:archive/archive.dart' show GZipDecoder;
 import 'package:flutter/foundation.dart' show ValueNotifier, compute, debugPrint;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
@@ -14,6 +15,22 @@ import 'places.dart';
 final Set<String> packedCities = {};
 
 List<dynamic> _decodeList(String s) => jsonDecode(s) as List<dynamic>;
+
+/// A compressed piece (.json.gz) back to text.
+String _gunzip(List<int> bytes) => utf8.decode(GZipDecoder().decodeBytes(bytes));
+
+/// A shipped piece: compressed (new packs) or plain (older packs).
+Future<String?> _shippedPiece(String key) async {
+  try {
+    final b = await rootBundle.load('assets/osm/tiles/t_$key.json.gz');
+    return compute(_gunzip, b.buffer.asUint8List(b.offsetInBytes, b.lengthInBytes).toList());
+  } catch (_) {}
+  try {
+    return await rootBundle.loadString('assets/osm/tiles/t_$key.json');
+  } catch (_) {
+    return null;
+  }
+}
 
 /// The free OpenStreetMap servers allow very few requests at once from one phone:
 /// all our requests wait in one line, and a "too many requests" answer waits and tries again.
@@ -240,9 +257,7 @@ class OsmService {
       if (_packTilesDone.contains(key)) continue;
       String? text = await db.read(key); // updated online
       if (text == null && have.containsKey(key)) {
-        try {
-          text = await rootBundle.loadString('assets/osm/tiles/t_$key.json'); // shipped with the app
-        } catch (_) {}
+        text = await _shippedPiece(key); // shipped with the app
       }
       // a partial build only covers some boxes: outside them we know nothing yet
       final boxes = idx?['boxes'] as List?;
@@ -284,9 +299,9 @@ class OsmService {
         if (v == null) continue;
         final hash = v is List && v.length > 1 ? '${v[1]}' : 'c$v';
         if (hash == (db.hashOf(key) ?? _shippedHash(key))) continue; // already have this version
-        final t = await http.get(Uri.parse('${PlaceDb.site}t_$key.json')).timeout(const Duration(seconds: 40));
+        final t = await http.get(Uri.parse('${PlaceDb.site}t_$key.json.gz')).timeout(const Duration(seconds: 40));
         if (t.statusCode != 200) continue;
-        final text = utf8.decode(t.bodyBytes);
+        final text = await compute(_gunzip, t.bodyBytes.toList());
         await db.write(key, text, hash);
         _putPiece(key, await compute(_decodeList, text));
         _packTilesDone.add(key);

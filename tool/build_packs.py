@@ -11,6 +11,7 @@ Runs on GitHub Actions (.github/workflows/data-packs.yml) twice a month; can als
     python3 tool/build_packs.py 41 -89 43 -87   # only this box (south west north east)
 Only the Python standard library is used.
 """
+import gzip
 import hashlib
 import json
 import math
@@ -386,13 +387,23 @@ def main():
     args = [float(a) for a in sys.argv[1:] if not a.startswith('--')][:4]
     boxes = [tuple(int(math.floor(v)) if k < 2 else int(math.ceil(v)) for k, v in enumerate(args))] if args else REGIONS
     tiles = {}
-    if '--extra-only' in sys.argv:
+    osm_files = [a.split('=', 1)[1] for a in sys.argv if a.startswith('--osm-json=')]
+    if osm_files:
+        # fast path: places already taken out of the Geofabrik extracts (tool/osm_extract.py)
+        for fpath in osm_files:
+            for r in json.load(open(fpath, encoding='utf-8')):
+                tiles.setdefault((math.floor(r[1]), math.floor(r[2])), {})[r[0]] = r
+        print(f'OpenStreetMap from {len(osm_files)} extracts: {sum(len(d) for d in tiles.values())} places', flush=True)
+    elif '--extra-only' in sys.argv:
         # keep the OpenStreetMap places already built; only (re)add the other sources
         for name in os.listdir(OUT) if os.path.isdir(OUT) else []:
-            m = re.match(r't_(-?\d+)_(-?\d+)\.json$', name)
-            if m:
-                rows = json.load(open(os.path.join(OUT, name), encoding='utf-8'))
-                tiles[(int(m.group(1)), int(m.group(2)))] = {r[0]: r for r in rows if not r[0].startswith(('city/', 'mbta/', 'ovt/'))}
+            m = re.match(r't_(-?\d+)_(-?\d+)\.json(\.gz)?$', name)
+            if not m:
+                continue
+            raw = open(os.path.join(OUT, name), 'rb').read()
+            rows = json.loads(gzip.decompress(raw) if m.group(3) else raw)
+            tiles[(int(m.group(1)), int(m.group(2)))] = {
+                r[0]: r for r in rows if not r[0].startswith(('city/', 'mbta/', 'ovt/', 'ago-', 'soc-'))}
         print(f'Kept OpenStreetMap places of {len(tiles)} tiles', flush=True)
     else:
         for box in boxes:
@@ -447,8 +458,12 @@ def main():
     for (a, b), d in sorted(tiles.items()):
         rows = sorted(d.values(), key=lambda x: x[0])
         text = json.dumps(rows, separators=(',', ':'), ensure_ascii=False)
-        with open(os.path.join(OUT, f't_{a}_{b}.json'), 'w', encoding='utf-8') as f:
-            f.write(text)
+        # compressed (about 5 times smaller); the app unpacks it in a few milliseconds
+        with open(os.path.join(OUT, f't_{a}_{b}.json.gz'), 'wb') as f:
+            f.write(gzip.compress(text.encode('utf-8'), compresslevel=9, mtime=0))
+        old = os.path.join(OUT, f't_{a}_{b}.json')
+        if os.path.exists(old):
+            os.remove(old)
         # [places, version]: the app downloads a piece again only when its version changed
         counts[f'{a}_{b}'] = [len(rows), hashlib.md5(text.encode('utf-8')).hexdigest()[:12]]
     index = {

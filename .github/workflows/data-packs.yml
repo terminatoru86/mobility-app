@@ -1,39 +1,79 @@
-name: Data packs (build here, by hand only)
+name: Data packs (whole US, fast)
 
-# The packs are normally built in the public repository terminatoru86/mobility-data
-# (free minutes, published on its site) and copied here by sync-packs.yml.
-# This one stays for building them here by hand if ever needed.
+# OpenStreetMap from the Geofabrik extracts (5 US regions + Puerto Rico, in parallel, ~20-40 min),
+# then the city halls, the automatic discovery (ArcGIS Online + Socrata), MBTA and Overture.
+# Packs are gzip-compressed 1° pieces in assets/osm/tiles.
 on:
   workflow_dispatch:
     inputs:
-      box:
-        description: 'Only this box: south west north east (empty = whole US; --extra-only = keep OSM, redo the other sources)'
+      mode:
+        description: 'full = everything again; extra = keep OpenStreetMap, redo the other sources'
         required: false
-        default: ''
+        default: 'full'
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  osm:
+    if: github.event.inputs.mode != 'extra'
     runs-on: ubuntu-latest
-    timeout-minutes: 340
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        region: [us-midwest, us-northeast, us-pacific, us-south, us-west, us/puerto-rico]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq osmium-tool
+          pip install osmium
+      - name: Download the extract
+        run: curl -fsSL "https://download.geofabrik.de/north-america/${{ matrix.region }}-latest.osm.pbf" -o region.osm.pbf
+      - name: Keep only the rider places
+        run: |
+          osmium tags-filter region.osm.pbf \
+            nwr/amenity=bicycle_parking,bicycle_repair_station,compressed_air,bicycle_wash,bicycle_rental,charging_station \
+            nwr/shop=bicycle -o filtered.osm.pbf
+          rm region.osm.pbf
+          python3 tool/osm_extract.py filtered.osm.pbf osm.json
+      - name: Name the result
+        run: echo "NAME=$(echo '${{ matrix.region }}' | tr '/' '-')" >> $GITHUB_ENV
+      - uses: actions/upload-artifact@v4
+        with:
+          name: osm-${{ env.NAME }}
+          path: osm.json
+          retention-days: 2
+
+  build:
+    needs: osm
+    if: always() && (needs.osm.result == 'success' || github.event.inputs.mode == 'extra')
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Build the packs (OpenStreetMap + city halls, whole US)
+      - uses: actions/download-artifact@v4
+        if: github.event.inputs.mode != 'extra'
+        with:
+          path: osm
+      - name: Build the packs
         run: |
           pip install duckdb
-          python3 tool/build_packs.py ${{ github.event.inputs.box }}
+          if [ "${{ github.event.inputs.mode }}" = "extra" ]; then
+            python3 tool/build_packs.py --extra-only
+          else
+            python3 tool/build_packs.py $(for f in osm/*/osm.json; do echo "--osm-json=$f"; done)
+          fi
       - name: Save them in the repository
         run: |
           git config user.name "mobility-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add assets/osm/tiles
+          git add -A assets/osm/tiles
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Data packs $(date -u +%Y-%m-%d)"
-          # if the repository moved meanwhile, keep our freshly built packs
-          git pull --rebase -X theirs || { git checkout --theirs assets/osm/tiles; git add assets/osm/tiles; GIT_EDITOR=true git rebase --continue; }
+          git pull --rebase -X theirs || { git checkout --theirs assets/osm/tiles; git add -A assets/osm/tiles; GIT_EDITOR=true git rebase --continue; }
           git push

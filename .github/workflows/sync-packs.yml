@@ -25,12 +25,12 @@ jobs:
           site = 'https://terminatoru86.github.io/mobility-data/tiles/'
           idx = json.load(open('/tmp/tiles/index.json'))
           for key in idx['tiles']:
-              data = urllib.request.urlopen(site + f't_{key}.json', timeout=120).read()
-              open(f'/tmp/tiles/t_{key}.json', 'wb').write(data)
+              data = urllib.request.urlopen(site + f't_{key}.json.gz', timeout=120).read()
+              open(f'/tmp/tiles/t_{key}.json.gz', 'wb').write(data)
           print(len(idx['tiles']), 'pieces')
           PY
-          rm -f assets/osm/tiles/*.json
-          cp /tmp/tiles/*.json assets/osm/tiles/
+          rm -f assets/osm/tiles/*.json assets/osm/tiles/*.gz
+          cp /tmp/tiles/* assets/osm/tiles/
       - name: Save them in the repository
         run: |
           git config user.name "mobility-data-bot"
