@@ -19,8 +19,8 @@ PolylineLayer routeLayer(List<LatLng> points) => PolylineLayer(polylines: [
 IconData stepIcon(String text) {
   final t = text.toLowerCase();
   if (t.startsWith('you have arrived')) return Icons.flag_rounded;
-  if (t.contains('slight left')) return Icons.turn_slight_left;
-  if (t.contains('slight right')) return Icons.turn_slight_right;
+  if (t.contains('slight left') || t.contains('bear left') || t.contains('keep left')) return Icons.turn_slight_left;
+  if (t.contains('slight right') || t.contains('bear right') || t.contains('keep right')) return Icons.turn_slight_right;
   if (t.contains('sharp left') || t.contains('turn left')) return Icons.turn_left;
   if (t.contains('sharp right') || t.contains('turn right')) return Icons.turn_right;
   if (t.contains('u-turn')) return Icons.u_turn_left;

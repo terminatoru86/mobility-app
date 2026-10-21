@@ -39,6 +39,10 @@ KEEP = {
     'contact:website', 'addr:housenumber', 'addr:street', 'service:bicycle:repair', 'service:bicycle:pump',
     'service:bicycle:tools', 'service:bicycle:stand', 'service:bicycle:chain_tool', 'service:bicycle:rental',
     'service:bicycle:second_hand',
+    # photos, freshness and details
+    'image', 'image:0', 'image:1', 'wikimedia_commons', 'mapillary', 'panoramax', 'check_date', 'survey:date',
+    'cargo_bike', 'capacity:cargo_bike', 'supervised', 'maxstay', 'charge', 'valves', 'manometer', 'level', 'location',
+    'description',
 }
 
 
@@ -78,7 +82,7 @@ def slim(el):
     lon = el.get('lon') or (el.get('center') or {}).get('lon')
     if lat is None or lon is None:
         return None
-    tags = {k: v for k, v in (el.get('tags') or {}).items() if k in KEEP or k.startswith('service:bicycle:')}
+    tags = {k: v for k, v in (el.get('tags') or {}).items() if k in KEEP or (k.startswith('service:bicycle:') or k.startswith('socket:'))}
     return [f"{el['type']}/{el['id']}", round(lat, 6), round(lon, 6), tags]
 
 

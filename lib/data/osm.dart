@@ -181,6 +181,8 @@ class OsmService {
     'contact:website', 'addr:housenumber', 'addr:street', 'service:bicycle:repair', 'service:bicycle:pump',
     'service:bicycle:tools', 'service:bicycle:stand', 'service:bicycle:chain_tool', 'service:bicycle:rental',
     'service:bicycle:second_hand',
+    // photos, freshness and details
+    'image', 'image:0', 'image:1', 'wikimedia_commons', 'mapillary', 'panoramax', 'check_date', 'survey:date', 'cargo_bike', 'capacity:cargo_bike', 'supervised', 'maxstay', 'charge', 'valves', 'manometer', 'level', 'location', 'description',
   };
   final Set<String> _tilesDone = {};
 
@@ -441,7 +443,7 @@ class OsmService {
         for (final el in els) {
           final e = _slim(el);
           if (e['lat'] == null) continue;
-          final tags = Map<String, dynamic>.from(e['tags'] as Map)..removeWhere((k, _) => !_keep.contains(k));
+          final tags = Map<String, dynamic>.from(e['tags'] as Map)..removeWhere((k, _) => !_keep.contains(k) && !k.startsWith('socket:'));
           _add({'id': e['id'], 'lat': e['lat'], 'lon': e['lon'], 'tags': tags});
           compact.add([e['id'], e['lat'], e['lon'], tags]);
         }
@@ -504,7 +506,7 @@ Place? placeFromOsm(Map<String, dynamic> e) {
       final kind = tag('bicycle_parking') ?? '';
       if (tag('access') == 'private' || tag('access') == 'customers' || yes('fee')) {
         type = PlaceType.parkPrivate;
-      } else if (yes('covered') || kind == 'building' || kind == 'shed') {
+      } else if (yes('covered') || const ['building', 'shed', 'lockers', 'garage'].contains(kind)) {
         type = PlaceType.parkCovered;
       } else if (const ['stands', 'wall_loops', 'rack', 'bollard', 'wide_stands', 'ground_slots'].contains(kind)) {
         type = PlaceType.rack;
@@ -578,7 +580,7 @@ Place? placeFromOsm(Map<String, dynamic> e) {
     busy: t0.busy,
     reviews: t0.reviews,
     qa: t0.qa,
-    tag: type == PlaceType.charging ? '⚡ Type 2' : (type == PlaceType.wash ? 'Automatic' : null),
+    tag: type == PlaceType.charging ? _sockets(t) : (type == PlaceType.wash ? 'Automatic' : null),
     priceNow: type == PlaceType.parkPrivate ? '\$${(1 + t0.n % 3)}/h' : null,
     operatorPrice: type == PlaceType.sharing ? '\$1 unlock · \$0.${17 + t0.n % 20}/min' : null,
     accepts: accepts,
@@ -599,7 +601,47 @@ Place? placeFromOsm(Map<String, dynamic> e) {
     osm: true,
     facts: facts,
     website: tag('website') ?? tag('contact:website'),
+    photos: _photos(t),
   );
+}
+
+/// The plugs of a charging station, from OpenStreetMap (socket:*=n).
+String _sockets(Map<String, dynamic> t) {
+  const names = {
+    'type2': 'Type 2', 'schuko': 'Schuko', 'typee': 'Type E', 'typef': 'Type F', 'nema_5_15': 'Outlet',
+    'nema_5_20': 'Outlet', 'usb': 'USB', 'bosch_5pin': 'Bosch', 'bosch_3pin': 'Bosch', 'shimano_steps_5pin': 'Shimano',
+    'panasonic_8pin': 'Panasonic', 'domestic': 'Outlet',
+  };
+  final found = <String>[];
+  for (final e in t.entries) {
+    if (!e.key.startsWith('socket:') || e.key.split(':').length != 2) continue;
+    final v = '${e.value}';
+    if (v == 'no' || v == '0') continue;
+    found.add(names[e.key.substring(7)] ?? e.key.substring(7));
+  }
+  return found.isEmpty ? '⚡ Charging' : '⚡ ${found.toSet().take(2).join(' · ')}';
+}
+
+/// Photos linked to a place in OpenStreetMap: a direct image, a Wikimedia Commons file, a Panoramax picture.
+List<String> _photos(Map<String, dynamic> t) {
+  final out = <String>[];
+  for (final k in const ['image', 'image:0', 'image:1']) {
+    final v = t[k]?.toString();
+    if (v != null && v.startsWith('http') && RegExp(r'\.(jpe?g|png|webp)(\?|$)', caseSensitive: false).hasMatch(v)) {
+      out.add(v);
+    }
+  }
+  for (final k in const ['wikimedia_commons', 'image']) {
+    final v = t[k]?.toString();
+    if (v != null && v.startsWith('File:')) {
+      out.add('https://commons.wikimedia.org/wiki/Special:FilePath/${Uri.encodeComponent(v.substring(5))}?width=800');
+    }
+  }
+  final pano = t['panoramax']?.toString();
+  if (pano != null && RegExp(r'^[0-9a-f-]{36}$').hasMatch(pano)) {
+    out.add('https://api.panoramax.xyz/api/pictures/$pano/sd.jpg');
+  }
+  return out.toSet().toList();
 }
 
 /// Turn on/off the test statuses and ratings on real places.

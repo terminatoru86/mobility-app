@@ -149,8 +149,91 @@ Future<RouteResult?> bikeRoute(List<LatLng> via) async {
   return all.isEmpty ? null : all.first;
 }
 
-/// Up to three choices: Fast, Balanced and Quiet.
+/// Fast, Balanced and Quiet as three real bike routes from Valhalla (OpenStreetMap data, FOSSGIS server):
+/// Fast takes roads when they are quicker, Quiet keeps to bike paths and calm streets, Balanced in between.
+Future<List<RouteResult>> _valhallaRoutes(List<LatLng> via) async {
+  const modes = {'Fast': (0.75, 0.3), 'Balanced': (0.4, 0.5), 'Quiet': (0.05, 0.25)}; // (use_roads, use_hills)
+  final out = <RouteResult>[];
+  await Future.wait(modes.entries.map((m) async {
+    final body = jsonEncode({
+      'locations': [for (final p in via) {'lat': p.latitude, 'lon': p.longitude}],
+      'costing': 'bicycle',
+      'costing_options': {
+        'bicycle': {'bicycle_type': 'Hybrid', 'use_roads': m.value.$1, 'use_hills': m.value.$2, 'cycling_speed': 16},
+      },
+      'directions_options': {'units': 'kilometers', 'language': 'en-US'},
+    });
+    try {
+      final r = await http
+          .post(Uri.parse('https://valhalla1.openstreetmap.de/route'), headers: {'Content-Type': 'application/json'}, body: body)
+          .timeout(const Duration(seconds: 20));
+      if (r.statusCode != 200) return;
+      final trip = (jsonDecode(utf8.decode(r.bodyBytes)) as Map<String, dynamic>)['trip'] as Map<String, dynamic>;
+      final pts = <LatLng>[];
+      final steps = <RouteStep>[];
+      for (final leg in (trip['legs'] as List).cast<Map<String, dynamic>>()) {
+        final shape = _decodePolyline6(leg['shape'] as String);
+        final base = pts.length;
+        pts.addAll(shape);
+        for (final mv in (leg['maneuvers'] as List).cast<Map<String, dynamic>>()) {
+          final idx = (mv['begin_shape_index'] as num).toInt();
+          final names = (mv['street_names'] as List?)?.cast<String>() ?? const [];
+          steps.add(RouteStep(
+            '${mv['instruction'] ?? ''}'.replaceAll(RegExp(r'\.$'), ''),
+            names.isEmpty ? '' : names.first,
+            ((mv['length'] as num?) ?? 0) * 1000,
+            shape[idx.clamp(0, shape.length - 1)],
+          ));
+        }
+        if (base > 0 && pts.length > base) pts.removeAt(base); // the joint point is in both legs
+      }
+      final sum = trip['summary'] as Map<String, dynamic>;
+      out.add(RouteResult(pts, (sum['length'] as num).toDouble() * 1000, (sum['time'] as num).toDouble(), steps,
+          label: m.key));
+    } catch (e) {
+      debugPrint('Valhalla ${m.key} failed: $e');
+    }
+  }));
+  // keep Fast / Balanced / Quiet order; drop a route identical to another one
+  const order = ['Fast', 'Balanced', 'Quiet'];
+  out.sort((a, b) => order.indexOf(a.label).compareTo(order.indexOf(b.label)));
+  final uniq = <RouteResult>[];
+  for (final r in out) {
+    if (uniq.any((u) => (u.meters - r.meters).abs() < 30 && (u.seconds - r.seconds).abs() < 20)) continue;
+    uniq.add(r);
+  }
+  return uniq;
+}
+
+List<LatLng> _decodePolyline6(String s) {
+  final out = <LatLng>[];
+  int i = 0, lat = 0, lng = 0;
+  while (i < s.length) {
+    for (int k = 0; k < 2; k++) {
+      int shift = 0, result = 0, b;
+      do {
+        b = s.codeUnitAt(i++) - 63;
+        result |= (b & 0x1f) << shift;
+        shift += 5;
+      } while (b >= 0x20);
+      final d = (result & 1) != 0 ? ~(result >> 1) : (result >> 1);
+      if (k == 0) {
+        lat += d;
+      } else {
+        lng += d;
+      }
+    }
+    out.add(LatLng(lat / 1e6, lng / 1e6));
+  }
+  return out;
+}
+
+/// Up to three choices: Fast, Balanced and Quiet (Valhalla first, the OSRM bike router if it does not answer).
 Future<List<RouteResult>> bikeRoutes(List<LatLng> via, {bool alternatives = true}) async {
+  if (alternatives) {
+    final v = await _valhallaRoutes(via);
+    if (v.isNotEmpty) return v;
+  }
   final coords = via.map((p) => '${p.longitude.toStringAsFixed(6)},${p.latitude.toStringAsFixed(6)}').join(';');
   final alt = alternatives && via.length == 2 ? '&alternatives=3' : '';
   final uri = Uri.parse('$_router$coords?overview=full&geometries=geojson&steps=true$alt');

@@ -176,6 +176,7 @@ class Place {
   final bool osm; // real place from OpenStreetMap (no live status yet)
   final List<String> facts; // e.g. "Capacity 12", "Covered", "Free"
   final String? website;
+  final List<String> photos; // real photos (OpenStreetMap image / Wikimedia Commons / Panoramax)
 
   const Place({
     required this.id,
@@ -204,6 +205,7 @@ class Place {
     this.osm = false,
     this.facts = const [],
     this.website,
+    this.photos = const [],
   });
 
   Status get shownStatus => type.isNeutral ? Status.neutral : status;
@@ -215,7 +217,7 @@ class Place {
         age: newAge, accepts: accepts, distance: distance, etaMin: etaMin, hours: hours, phone: phone,
         rating: rating, reviewCount: reviewCount, reviews: reviews, security: security, qa: qa, tag: tag,
         tools: tools, busy: busy, priceNow: priceNow, operatorName: operatorName, operatorPrice: operatorPrice,
-        osm: osm, facts: facts, website: website,
+        osm: osm, facts: facts, website: website, photos: photos,
       );
 }
 
