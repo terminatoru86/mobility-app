@@ -21,7 +21,7 @@ class Cameras {
   static Future<void> _load() => _loading ??= () async {
         try {
           final bytes = await rootBundle.load('assets/osm/cameras.json.gz');
-          final text = utf8.decode(const GZipDecoder().decodeBytes(bytes.buffer.asUint8List()));
+          final text = utf8.decode(GZipDecoder().decodeBytes(bytes.buffer.asUint8List()));
           _rows = (jsonDecode(text) as List).cast<List<dynamic>>();
         } catch (e) {
           debugPrint('Cameras not loaded: $e');

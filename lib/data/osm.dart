@@ -180,7 +180,7 @@ class OsmService {
   static const _tileDays = 14;
   static const _keep = {
     'amenity', 'bicycle_parking', 'capacity', 'covered', 'fee', 'access', 'lit', 'surveillance', 'name', 'brand', 'manufacturer',
-    'surveillance:type', 'supervised', 'maxstay', 'self_service', 'automated', 'rental', 'sport',
+    'surveillance:type', 'self_service', 'automated', 'rental', 'sport',
     'network', 'operator', 'shop', 'bicycle', 'bicycle_rental', 'opening_hours', 'phone', 'contact:phone', 'website',
     'contact:website', 'addr:housenumber', 'addr:street', 'service:bicycle:repair', 'service:bicycle:pump',
     'service:bicycle:tools', 'service:bicycle:stand', 'service:bicycle:chain_tool', 'service:bicycle:rental',
