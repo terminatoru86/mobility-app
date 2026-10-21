@@ -14,6 +14,27 @@ final Set<String> packedCities = {};
 
 List<dynamic> _decodeList(String s) => jsonDecode(s) as List<dynamic>;
 
+/// The free OpenStreetMap servers allow very few requests at once from one phone:
+/// all our requests wait in one line, and a "too many requests" answer waits and tries again.
+Future<void> _line = Future.value();
+
+Future<http.Response> _overpass(String url, String query, Duration timeout, {bool queue = true}) {
+  Future<http.Response> run() async {
+    for (int attempt = 0; attempt < 3; attempt++) {
+      final r = await http.post(Uri.parse(url), body: {'data': query}).timeout(timeout);
+      if (r.statusCode != 429 && r.statusCode != 504) return r;
+      debugPrint('Overpass busy (${r.statusCode}), waiting…');
+      await Future.delayed(Duration(seconds: 6 * (attempt + 1)));
+    }
+    return http.Response('busy', 429);
+  }
+
+  if (!queue) return run(); // what is on the screen does not wait behind the region pieces
+  final job = _line.then((_) => run());
+  _line = job.then((_) {}, onError: (_) {});
+  return job;
+}
+
 /// Real places for riders from OpenStreetMap, loaded through the free
 /// Overpass API for the part of the map you are looking at.
 /// Everything loaded is also saved on the phone, so the next start is instant.
@@ -87,7 +108,7 @@ class OsmService {
     }
 
     final bbox = '${s.toStringAsFixed(4)},${w.toStringAsFixed(4)},${n.toStringAsFixed(4)},${e.toStringAsFixed(4)}';
-    final query = '[out:json][timeout:25];('
+    final query = '[out:json][timeout:60];('
         'nwr["amenity"="bicycle_parking"]($bbox);'
         'nwr["amenity"="bicycle_repair_station"]($bbox);'
         'nwr["amenity"="compressed_air"]($bbox);'
@@ -95,13 +116,11 @@ class OsmService {
         'nwr["amenity"="bicycle_rental"]($bbox);'
         'nwr["shop"="bicycle"]($bbox);'
         'nwr["amenity"="charging_station"]["bicycle"="yes"]($bbox);'
-        ');out center tags 3000;';
+        ');out center tags;';
 
     for (final url in _endpoints) {
       try {
-        final r = await http
-            .post(Uri.parse(url), body: {'data': query})
-            .timeout(const Duration(seconds: 30));
+        final r = await _overpass(url, query, const Duration(seconds: 60), queue: false); // the screen goes first
         if (r.statusCode != 200) {
           lastError = 'server busy (${r.statusCode})';
           debugPrint('OSM: $url answered ${r.statusCode}');
@@ -256,6 +275,21 @@ class OsmService {
           onPiece();
         }
       }
+      // pieces the servers refused (busy): try them again, slowly
+      for (int pass = 0; pass < 3; pass++) {
+        final left = tiles.where((t) => !_tilesDone.contains('${t.$1}:${t.$2}')).toList();
+        if (left.isEmpty) break;
+        await Future.delayed(Duration(seconds: 20 * (pass + 1)));
+        for (final (i, j, _) in left) {
+          final key = '$i:$j';
+          if (await _fetchTile(i, j, key, prefs)) {
+            _tilesDone.add(key);
+            final s = i * _tile, w = j * _tile;
+            _done.add([s, w, s + _tile, w + _tile]);
+            onPiece();
+          }
+        }
+      }
       if (tiles.every((t) => _tilesDone.contains('${t.$1}:${t.$2}'))) _regionsDone.add(rk);
     } finally {
       regionBusy = false;
@@ -276,7 +310,7 @@ class OsmService {
         ');out center tags;';
     for (final url in _endpoints) {
       try {
-        final r = await http.post(Uri.parse(url), body: {'data': query}).timeout(const Duration(seconds: 100));
+        final r = await _overpass(url, query, const Duration(seconds: 100));
         if (r.statusCode != 200) {
           await Future.delayed(const Duration(seconds: 2));
           continue;
