@@ -3,7 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../data/app_state.dart';
 import '../data/places.dart';
+import '../data/location.dart';
 import '../data/store.dart';
+import '../data/zones.dart';
 import '../theme.dart';
 import '../widgets/pin.dart';
 import '../widgets/place_sheet.dart' show openLink;
@@ -68,6 +70,8 @@ class ProfileScreen extends StatelessWidget {
               _row(Icons.favorite_border, 'Saved places', () => _push(context, SavedPlacesScreen(onOpen: onOpenPlace)),
                   trailing: '${s.savedPlaces.length}'),
               _row(Icons.route, 'Saved routes', onOpenRoutes, trailing: '${s.savedRoutes.length}'),
+              _row(Icons.public, 'My map areas', () => _push(context, const MyAreasScreen()),
+                  trailing: '${s.zones.where((z) => z.active).length}'),
               _row(Icons.layers_outlined, 'What appears on the map', () => _push(context, const MapSettingsScreen())),
               _row(Icons.sync_alt, 'Sharing · ${s.operators.join(', ')}', () => chooseOperators(context)),
             ]),
@@ -636,6 +640,89 @@ class _AntiTheftScreenState extends State<AntiTheftScreen> {
         Icon(icon, size: 20, color: on ? c : AppColors.soft),
         const SizedBox(width: 4),
         Text('${count + (on ? 1 : 0)}', style: TextStyle(fontWeight: FontWeight.w800, color: on ? c : AppColors.ink)),
+      ]),
+    );
+  }
+}
+
+
+// ───────────────────────── My map areas ─────────────────────────
+
+/// 2 free areas (100 miles each) where the rider lives, studies or works; others \$1 for 30 days.
+class MyAreasScreen extends StatelessWidget {
+  const MyAreasScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) => ListenableBuilder(
+        listenable: Store.i,
+        builder: (context, _) {
+          final s = Store.i;
+          final free = s.freeZones;
+          final paid = s.zones.where((z) => z.paid).toList();
+          return Scaffold(
+            backgroundColor: AppColors.paper,
+            appBar: AppBar(backgroundColor: AppColors.paper, title: const Text('My map areas')),
+            body: ListView(padding: const EdgeInsets.all(16), children: [
+              Text('Free · ${free.length} of ${MapZone.maxFree}',
+                  style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
+              const SizedBox(height: 4),
+              const Text('They come by themselves where you are with GPS: home, school, work. '
+                  '${MapZone.radiusMiles} miles around each, everything included.',
+                  style: TextStyle(color: AppColors.soft, fontSize: 12.5)),
+              const SizedBox(height: 8),
+              for (final z in free) _card(context, z),
+              if (free.length < MapZone.maxFree)
+                _hint('Open the map where you live or work: the next free area is added there.'),
+              const SizedBox(height: 18),
+              const Text('Unlocked with ${MapZone.price}', style: TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
+              const SizedBox(height: 4),
+              const Text('A trip or a holiday: ${MapZone.radiusMiles} miles for ${MapZone.passDays} days. '
+                  'Move the map there and tap Unlock.',
+                  style: TextStyle(color: AppColors.soft, fontSize: 12.5)),
+              const SizedBox(height: 8),
+              if (paid.isEmpty) _hint('None yet.'),
+              for (final z in paid) _card(context, z),
+            ]),
+          );
+        },
+      );
+
+  Widget _hint(String t) => Container(
+        padding: const EdgeInsets.all(12),
+        margin: const EdgeInsets.only(bottom: 8),
+        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(14)),
+        child: Text(t, style: const TextStyle(color: AppColors.soft)),
+      );
+
+  Widget _card(BuildContext context, MapZone z) {
+    final s = Store.i;
+    final sub = z.paid
+        ? (z.active ? '${z.daysLeft} days left' : 'ended')
+        : 'free · since ${z.added.month}/${z.added.day}/${z.added.year}';
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.fromLTRB(12, 10, 8, 10),
+      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(14)),
+      child: Row(children: [
+        Icon(z.paid ? Icons.confirmation_number_outlined : Icons.home_outlined,
+            color: z.paid ? AppColors.yellowDark : AppColors.blue),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text(z.name, style: const TextStyle(fontWeight: FontWeight.w800)),
+            Text('${MapZone.radiusMiles} miles · $sub', style: const TextStyle(fontSize: 12, color: AppColors.soft)),
+          ]),
+        ),
+        if (!z.paid)
+          TextButton(
+            onPressed: s.canMove
+                ? () async {
+                    final n = await cityName(userPos) ?? 'My area';
+                    s.moveFreeZone(z, userPos, n);
+                  }
+                : null,
+            child: Text(s.canMove ? 'I moved here' : 'Move later'),
+          ),
       ]),
     );
   }

@@ -27,10 +27,93 @@ class RouteResult {
   String get arrival => arrivalAt(seconds);
 
   /// Rough climb in metres (no elevation service yet): about 6 m per km on Chicago's flat streets.
-  /// Quieter routes avoid the bridges and overpasses a little more.
+  /// Real climb / descent from the elevation service (null until it answers).
+  int? realClimb, realDescent;
+
+  /// Share of each kind of road from the map data (null until it answers).
+  Map<String, double>? roadMix;
+
+  /// Estimate while the services answer: quieter routes avoid bridges a little more.
   double get _hill => switch (label) { 'Quiet' => 0.75, 'Balanced' => 0.88, _ => 1.0 };
-  int get climb => (meters / 1000 * 6 * _hill).round();
-  int get descent => (meters / 1000 * 5.4 * _hill).round();
+  int get climb => realClimb ?? (meters / 1000 * 6 * _hill).round();
+  int get descent => realDescent ?? (meters / 1000 * 5.4 * _hill).round();
+}
+
+/// Up to [n] points spread evenly along the route.
+List<LatLng> _sample(List<LatLng> pts, int n) {
+  if (pts.length <= n) return pts;
+  final step = (pts.length - 1) / (n - 1);
+  return [for (int i = 0; i < n; i++) pts[(i * step).round()]];
+}
+
+/// Real climb and descent: heights of up to 100 points from Open-Meteo (free, no key).
+Future<void> addElevation(RouteResult r) async {
+  if (r.realClimb != null || r.points.length < 2) return;
+  final pts = _sample(r.points, 100);
+  final uri = Uri.https('api.open-meteo.com', '/v1/elevation', {
+    'latitude': pts.map((p) => p.latitude.toStringAsFixed(5)).join(','),
+    'longitude': pts.map((p) => p.longitude.toStringAsFixed(5)).join(','),
+  });
+  try {
+    final res = await http.get(uri).timeout(const Duration(seconds: 12));
+    if (res.statusCode != 200) return;
+    final h = [for (final v in (jsonDecode(res.body)['elevation'] as List)) (v as num).toDouble()];
+    var up = 0.0, down = 0.0;
+    for (int i = 1; i < h.length; i++) {
+      final d = h[i] - h[i - 1];
+      if (d > 0.5) up += d; // ignore tiny noise
+      if (d < -0.5) down -= d;
+    }
+    r.realClimb = up.round();
+    r.realDescent = down.round();
+  } catch (e) {
+    debugPrint('Elevation failed: $e');
+  }
+}
+
+/// Real road types along the route, from the OpenStreetMap data of the free Valhalla server (FOSSGIS):
+/// protected lanes / quiet streets / bike lanes / shared roads / main roads.
+Future<void> addRoadMix(RouteResult r) async {
+  if (r.roadMix != null || r.points.length < 2) return;
+  final pts = _sample(r.points, 400);
+  final body = jsonEncode({
+    'shape': [for (final p in pts) {'lat': p.latitude, 'lon': p.longitude}],
+    'costing': 'bicycle',
+    'shape_match': 'map_snap',
+    'filters': {
+      'attributes': ['edge.use', 'edge.road_class', 'edge.cycle_lane', 'edge.length'],
+      'action': 'include',
+    },
+  });
+  try {
+    final res = await http
+        .post(Uri.parse('https://valhalla1.openstreetmap.de/trace_attributes'),
+            headers: {'Content-Type': 'application/json'}, body: body)
+        .timeout(const Duration(seconds: 20));
+    if (res.statusCode != 200) return;
+    final edges = (jsonDecode(utf8.decode(res.bodyBytes))['edges'] as List? ?? []).cast<Map<String, dynamic>>();
+    final m = {'Protected lanes': 0.0, 'Quiet streets': 0.0, 'Bike lanes': 0.0, 'Shared roads': 0.0, 'Main roads': 0.0};
+    for (final e in edges) {
+      final len = (e['length'] as num?)?.toDouble() ?? 0;
+      final use = '${e['use'] ?? ''}';
+      final lane = '${e['cycle_lane'] ?? 'none'}';
+      final cls = '${e['road_class'] ?? ''}';
+      final k = (const ['cycleway', 'path', 'footway', 'mountain_bike', 'pedestrian'].contains(use) || lane == 'separated')
+          ? 'Protected lanes'
+          : lane == 'dedicated'
+              ? 'Bike lanes'
+              : lane == 'shared'
+                  ? 'Shared roads'
+                  : const ['motorway', 'trunk', 'primary', 'secondary'].contains(cls)
+                      ? 'Main roads'
+                      : 'Quiet streets';
+      m[k] = m[k]! + len;
+    }
+    final total = m.values.fold<double>(0, (a, b) => a + b);
+    if (total > 0) r.roadMix = {for (final e in m.entries) e.key: e.value / total};
+  } catch (e) {
+    debugPrint('Road types failed: $e');
+  }
 }
 
 String fmtDistance(double m) => m < 1000 ? '${(m / 10).round() * 10} m' : '${(m / 1000).toStringAsFixed(1)} km';

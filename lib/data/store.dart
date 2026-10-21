@@ -7,6 +7,7 @@ import 'package:latlong2/latlong.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'places.dart';
+import 'zones.dart';
 
 /// An SOS from another rider, shown as a note on the map.
 class IncomingSos {
@@ -128,6 +129,10 @@ class Store extends ChangeNotifier {
   SosHelper? sosHelper;
   Timer? _helperTimer;
 
+  // Map areas: 2 free (100 miles each), others unlocked with \$1 for 30 days.
+  final List<MapZone> zones = [];
+  DateTime? lastMove;
+
   Future<void> load() async {
     _p = await SharedPreferences.getInstance();
     final p = _p!;
@@ -138,6 +143,13 @@ class Store extends ChangeNotifier {
       } catch (_) {}
     }
     recentSearches.addAll(p.getStringList('recent') ?? const []);
+    for (final z in p.getStringList('zones') ?? const <String>[]) {
+      try {
+        zones.add(MapZone.fromJson(jsonDecode(z) as Map<String, dynamic>));
+      } catch (_) {}
+    }
+    final lm = p.getInt('lastMove');
+    if (lm != null) lastMove = DateTime.fromMillisecondsSinceEpoch(lm);
     satellite = p.getBool('satellite') ?? false;
     bikeMap = p.getBool('bikeMap') ?? false;
     parkNearDest = p.getBool('parkNearDest') ?? true;
@@ -324,4 +336,46 @@ class Store extends ChangeNotifier {
   }
 
   void changed() => notifyListeners();
+
+  // ───────── map areas ─────────
+
+  List<MapZone> get freeZones => zones.where((z) => !z.paid).toList();
+  bool unlockedAt(LatLng p) => zones.any((z) => z.covers(p));
+  MapZone? zoneAt(LatLng p) => zones.where((z) => z.covers(p)).firstOrNull;
+
+  void _saveZones() {
+    zones.removeWhere((z) => z.paid && !z.active && DateTime.now().difference(z.until!).inDays > 60);
+    _p?.setStringList('zones', [for (final z in zones) jsonEncode(z.toJson())]);
+    if (lastMove != null) _p?.setInt('lastMove', lastMove!.millisecondsSinceEpoch);
+    notifyListeners();
+  }
+
+  /// Where the rider really is (GPS): the first two places become the free areas, by themselves.
+  /// Returns true when a new free area was added.
+  bool claimFreeZone(LatLng gps, String name) {
+    if (unlockedAt(gps) || freeZones.length >= MapZone.maxFree) return false;
+    zones.add(MapZone(name, gps, added: DateTime.now()));
+    _saveZones();
+    return true;
+  }
+
+  /// \$1: 100 miles around [center] for 30 days (a holiday, a trip). Payment is a demo for now.
+  void buyZone(LatLng center, String name) {
+    zones.add(MapZone(name, center,
+        paid: true, added: DateTime.now(), until: DateTime.now().add(const Duration(days: MapZone.passDays))));
+    _saveZones();
+  }
+
+  bool get canMove => lastMove == null || DateTime.now().difference(lastMove!).inDays >= MapZone.moveEveryDays;
+
+  /// "I moved here": a free area moves to where the rider lives now (once every 90 days).
+  bool moveFreeZone(MapZone old, LatLng gps, String name) {
+    if (!canMove || old.paid) return false;
+    final i = zones.indexOf(old);
+    if (i < 0) return false;
+    zones[i] = MapZone(name, gps, added: DateTime.now());
+    lastMove = DateTime.now();
+    _saveZones();
+    return true;
+  }
 }

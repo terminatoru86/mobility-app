@@ -13,6 +13,7 @@ import '../data/places.dart';
 import '../data/routing.dart';
 import '../data/store.dart';
 import '../data/weather.dart';
+import '../data/zones.dart';
 import '../theme.dart';
 import '../widgets/cluster.dart';
 import '../widgets/guide.dart';
@@ -106,7 +107,61 @@ class MapScreenState extends State<MapScreen> {
 
   /// Called while the map moves: the pins are recalculated only when the view
   /// leaves the area already prepared (the visible map plus half of it on each side).
+  // ── map areas: outside the rider's areas the map is locked ──
+  bool _locked = false;
+  String? _lockName;
+  LatLng? _lockAt;
+  Timer? _lockTimer;
+
+  void _checkLock(LatLng center) {
+    final st = Store.i;
+    final locked = st.zones.isNotEmpty && !st.unlockedAt(center);
+    if (locked == _locked && (!locked || _lockAt != null && const Distance()(_lockAt!, center) < 30000)) return;
+    setState(() {
+      _locked = locked;
+      _lockAt = locked ? center : null;
+      if (!locked) _lockName = null;
+    });
+    if (locked) {
+      _lockTimer?.cancel();
+      _lockTimer = Timer(const Duration(milliseconds: 600), () async {
+        final n = await cityName(center);
+        if (mounted && _lockAt == center) setState(() => _lockName = n);
+      });
+    }
+  }
+
+  /// The first two places where the rider really is become the free areas.
+  Future<void> _claimZone(LatLng gps) async {
+    final st = Store.i;
+    if (st.unlockedAt(gps) || st.freeZones.length >= MapZone.maxFree) return;
+    final n = await cityName(gps) ?? 'My area';
+    if (st.claimFreeZone(gps, n) && mounted) {
+      setState(() => _merged = _allCache = null);
+      try {
+        _checkLock(_map.camera.center);
+      } catch (_) {}
+    }
+  }
+
+  Future<void> _unlockHere(LatLng at, String? name) async {
+    final n = name ?? await cityName(at) ?? 'This area';
+    if (!mounted) return;
+    final ok = await showUnlockSheet(context, n);
+    if (ok == true) {
+      Store.i.buyZone(at, n);
+      setState(() {
+        _locked = false;
+        _lockAt = null;
+        _merged = _allCache = null;
+      });
+      _loadOpenData(at);
+      _loadVisible();
+    }
+  }
+
   void _watchArea(MapCamera cam) {
+    _checkLock(cam.center);
     final v = cam.visibleBounds;
     final a = _area;
     if (a != null && a.contains(v.southWest) && a.contains(v.northEast)) return;
@@ -125,6 +180,7 @@ class MapScreenState extends State<MapScreen> {
   void dispose() {
     Store.i.removeListener(_storeChanged);
     _shareTimer?.cancel();
+    _lockTimer?.cancel();
     _areaTimer?.cancel();
     _flip?.cancel();
     _pinClock?.cancel();
@@ -144,6 +200,7 @@ class MapScreenState extends State<MapScreen> {
   /// Official racks of the city around [at] and the share systems of that city.
   Future<void> _loadOpenData(LatLng at) async {
     if (_openBusy || !mounted) return;
+    if (Store.i.zones.isNotEmpty && !Store.i.unlockedAt(at)) return; // locked area: nothing is loaded
     _openBusy = true;
     try {
       final a = await _open.loadCitiesAround(at);
@@ -218,9 +275,11 @@ class MapScreenState extends State<MapScreen> {
     if (pos == null) {
       setState(() => _noGps = true);
       _map.move(userPos, 15);
+      _claimZone(userPos); // no GPS: the area where the map opens
       return;
     }
     userPos = pos;
+    _claimZone(pos);
     _osm.refreshDistances();
     _open.refreshDistances();
     _loadOpenData(pos);
@@ -234,6 +293,7 @@ class MapScreenState extends State<MapScreen> {
 
   /// Trip: choose the route, then GO for the GPS guidance.
   Future<void> _trip(Place p) async {
+    if (Store.i.zones.isNotEmpty && !Store.i.unlockedAt(p.pos)) return _unlockHere(p.pos, null);
     await startTrip(
       context,
       to: p.pos,
@@ -290,6 +350,7 @@ class MapScreenState extends State<MapScreen> {
 
   Future<void> _tripToDest() async {
     final d = _dest!;
+    if (Store.i.zones.isNotEmpty && !Store.i.unlockedAt(d.pos)) return _unlockHere(d.pos, null);
     await startTrip(
       context,
       to: d.pos,
@@ -366,6 +427,7 @@ class MapScreenState extends State<MapScreen> {
     }
     if (cam == null) return;
     if (cam.zoom < 12) return; // too far out: we show what we already have
+    if (Store.i.zones.isNotEmpty && !Store.i.unlockedAt(cam.center)) return; // locked area
     final b = cam.visibleBounds;
     setState(() => _loading = true);
     _loadOpenData(cam.center);
@@ -396,37 +458,116 @@ class MapScreenState extends State<MapScreen> {
     if (mounted) setState(() => _selected = null);
   }
 
-  /// Most pins drawn one by one; above this they are grouped, so the map stays smooth.
-  static const _maxPins = 250;
+  /// Pins are real widgets (heavy); dots are painted in one go (light).
+  /// Full pins only for the nearest [_maxPins] places when zoomed in; everything else is a dot.
+  static const _maxPins = 90;
+  List<CircleMarker> _dotCache = const [];
+  List<Place> _dotPlaces = const [];
 
   List<Marker> _markers() {
     final all = _all;
-    final key = (identityHashCode(all), _filter, _selected, _zoom, _area);
+    final key = (identityHashCode(all), _filter, _selected, _zoom, _area, Store.i.zones.length);
     if (_markerCache != null && key == _markerKey) return _markerCache!;
     _markerKey = key;
-    return _markerCache = _buildMarkers();
+    _buildLayers();
+    return _markerCache!;
   }
 
-  List<Marker> _buildMarkers() {
+  void _buildLayers() {
     final a = _area;
-    final pins = a == null ? _visible : _visible.where((p) => a.contains(p.pos)).toList();
-    if (_zoom < 15 || pins.length > _maxPins) {
-      // zoomed in but too many pins: group them in small cells (still one pin where a cell has one place)
-      final z = _zoom < 15 ? _zoom : math.max(_zoom, 16.5);
-      return clusterPlaces(pins, z).map((c) {
-        if (c.places.length == 1) return _pinMarker(c.places.first);
-        return Marker(
+    final st = Store.i;
+    // quick flat-earth test against the rider's areas (thousands of places, a few areas)
+    final zs = [for (final z in st.zones.where((z) => z.active)) z.center];
+    bool inZone(LatLng p) {
+      for (final c in zs) {
+        final dy = (p.latitude - c.latitude) * 111.2;
+        final dx = (p.longitude - c.longitude) * 111.2 * math.cos(c.latitude * math.pi / 180);
+        if (dx * dx + dy * dy <= 160.9 * 160.9) return true;
+      }
+      return false;
+    }
+
+    final pins = _visible
+        .where((p) => (a == null || a.contains(p.pos)) && (st.zones.isEmpty || inZone(p.pos)))
+        .toList();
+    final markers = <Marker>[];
+    var dots = <Place>[];
+    if (_zoom < 12.5) {
+      // far out: groups with the count
+      for (final c in clusterPlaces(pins, _zoom)) {
+        if (c.places.length == 1) {
+          dots.add(c.places.first);
+          continue;
+        }
+        markers.add(Marker(
           point: c.center,
           width: 48,
           height: 48,
           child: GestureDetector(
-            onTap: () => _map.move(c.center, math.max(_map.camera.zoom + 2, 15)),
+            onTap: () => _map.move(c.center, math.max(_map.camera.zoom + 2, 13)),
             child: ClusterBadge(cluster: c),
           ),
-        );
-      }).toList();
+        ));
+      }
+    } else if (_zoom < 16) {
+      dots = List.of(pins); // city view: one coloured dot per place
+    } else {
+      // street view: pins for the closest ones, dots for the rest
+      LatLng c;
+      try {
+        c = _map.camera.center;
+      } catch (_) {
+        c = userPos;
+      }
+      const d = Distance();
+      final sorted = List.of(pins)..sort((x, y) => d(c, x.pos).compareTo(d(c, y.pos)));
+      markers.addAll(sorted.take(_maxPins).map(_pinMarker));
+      dots = sorted.skip(_maxPins).toList();
     }
-    return pins.map(_pinMarker).toList();
+    final sel = _selected;
+    if (sel != null) {
+      final s = dots.where((p) => p.id == sel).firstOrNull;
+      if (s != null) {
+        dots.remove(s);
+        markers.add(_pinMarker(s));
+      }
+    }
+    _dotPlaces = dots;
+    final r = _zoom < 14 ? 3.5 : 5.0;
+    _dotCache = [
+      for (final p in dots)
+        CircleMarker(
+          point: p.pos,
+          radius: r,
+          color: colorsFor(p.shownStatus == Status.neutral ? Status.unknown : p.shownStatus).main,
+          borderColor: Colors.white,
+          borderStrokeWidth: 1.5,
+        ),
+    ];
+    _markerCache = markers;
+  }
+
+  /// A tap on the map opens the dot under the finger (within ~22 px).
+  void _tapDot(LatLng at) {
+    if (_dotPlaces.isEmpty) return;
+    double zoom;
+    try {
+      zoom = _map.camera.zoom;
+    } catch (_) {
+      return;
+    }
+    final mPerPx = 156543.03 * math.cos(at.latitude * math.pi / 180) / math.pow(2, zoom);
+    const d = Distance();
+    Place? best;
+    var bestM = 22 * mPerPx;
+    for (final p in _dotPlaces) {
+      final m = d(at, p.pos);
+      if (m < bestM) {
+        bestM = m;
+        best = p;
+      }
+    }
+    if (best != null) _openPlace(best);
   }
 
   Marker _pinMarker(Place p) => Marker(
@@ -479,6 +620,7 @@ class MapScreenState extends State<MapScreen> {
           minZoom: 3,
           maxZoom: 19,
           onMapReady: () => _watchArea(_map.camera),
+          onTap: (_, at) => _tapDot(at),
           onPositionChanged: (camera, hasGesture) {
             // rebuild the pins only when the zoom crosses a half step, not on every frame
             final bucket = (camera.zoom * 2).floor() / 2;
@@ -535,6 +677,22 @@ class MapScreenState extends State<MapScreen> {
                 pattern: const StrokePattern.dotted(spacingFactor: 2),
               ),
             ]),
+          if (_zoom < 9)
+            CircleLayer(circles: [
+              for (final z in store.zones.where((z) => z.active))
+                CircleMarker(
+                  point: z.center,
+                  radius: MapZone.radiusMeters,
+                  useRadiusInMeter: true,
+                  color: (z.paid ? AppColors.yellow : AppColors.blue).withValues(alpha: 0.07),
+                  borderColor: z.paid ? AppColors.yellowDark : AppColors.blue,
+                  borderStrokeWidth: 1.5,
+                ),
+            ]),
+          Builder(builder: (_) {
+            _markers(); // makes sure the dots are up to date
+            return CircleLayer(circles: _dotCache);
+          }),
           MarkerLayer(markers: [
             if (_dest != null)
               Marker(
@@ -619,6 +777,17 @@ class MapScreenState extends State<MapScreen> {
           ]),
         ),
       Positioned(left: 14, bottom: _dest != null ? (_destRack != null ? 166 : 118) : 30, child: _sosButton()),
+      if (_locked && !_list)
+        Positioned(
+          left: 12,
+          right: 12,
+          bottom: 92,
+          child: LockedAreaCard(
+            name: _lockName,
+            freeNames: [for (final z in store.zones.where((z) => z.active)) z.name],
+            onUnlock: () => _unlockHere(_lockAt ?? userPos, _lockName),
+          ),
+        ),
       if (store.incomingSos != null && _dest == null)
         Positioned(
           left: 12,

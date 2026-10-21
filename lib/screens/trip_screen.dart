@@ -101,6 +101,12 @@ class _RoutePlannerState extends State<RoutePlanner> {
       _loading = false;
     });
     _fit();
+    // real climb and road types arrive a moment later
+    for (final x in r) {
+      Future.wait([addElevation(x), addRoadMix(x)]).then((_) {
+        if (mounted && _routes.contains(x)) setState(() {});
+      });
+    }
   }
 
   void _fit() {
@@ -737,6 +743,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
 
   // Share of each kind of road, guessed from the street names on the route.
   Map<String, double> _roadMix(RouteResult r) {
+    if (r.roadMix != null) return r.roadMix!;
     final m = {'Protected lanes': 0.0, 'Quiet streets': 0.0, 'Bike lanes': 0.0, 'Shared roads': 0.0, 'Main roads': 0.0};
     for (final s in r.steps) {
       final n = s.street.toLowerCase();
@@ -783,7 +790,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
           Text('On the route: 🚦 about $lights traffic lights · ⛔ ${math.max(0, lights ~/ 3)} stops',
               style: const TextStyle(fontWeight: FontWeight.w700)),
           const SizedBox(height: 12),
-          const Text('Road types are estimated from street names until our map data covers them.',
+          Text(r.roadMix != null ? 'Road types from OpenStreetMap (Valhalla) · heights from Open-Meteo.' : 'Road types are estimated from street names until the map data answers.',
               style: TextStyle(fontSize: 11, color: AppColors.soft)),
         ]),
       ),

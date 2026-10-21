@@ -117,3 +117,39 @@ Future<List<GeoResult>> _nominatim(String q, LatLng c, {required bool bounded}) 
     return [];
   }
 }
+
+/// City name for a point ("Madison, WI"), from OpenStreetMap (Nominatim). Null if it does not answer.
+Future<String?> cityName(LatLng p) async {
+  final uri = Uri.https('nominatim.openstreetmap.org', '/reverse', {
+    'lat': p.latitude.toStringAsFixed(4),
+    'lon': p.longitude.toStringAsFixed(4),
+    'format': 'jsonv2',
+    'zoom': '10',
+    'addressdetails': '1',
+  });
+  try {
+    final r = await http
+        .get(uri, headers: kIsWeb ? null : {'User-Agent': 'MOBIlity/0.1 (com.mobility.app)'})
+        .timeout(const Duration(seconds: 10));
+    if (r.statusCode != 200) return null;
+    final a = (jsonDecode(utf8.decode(r.bodyBytes))['address'] as Map?) ?? {};
+    final city = a['city'] ?? a['town'] ?? a['village'] ?? a['county'];
+    const states = {
+      'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR', 'California': 'CA', 'Colorado': 'CO',
+      'Connecticut': 'CT', 'Delaware': 'DE', 'District of Columbia': 'DC', 'Florida': 'FL', 'Georgia': 'GA',
+      'Hawaii': 'HI', 'Idaho': 'ID', 'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA', 'Kansas': 'KS',
+      'Kentucky': 'KY', 'Louisiana': 'LA', 'Maine': 'ME', 'Maryland': 'MD', 'Massachusetts': 'MA',
+      'Michigan': 'MI', 'Minnesota': 'MN', 'Mississippi': 'MS', 'Missouri': 'MO', 'Montana': 'MT',
+      'Nebraska': 'NE', 'Nevada': 'NV', 'New Hampshire': 'NH', 'New Jersey': 'NJ', 'New Mexico': 'NM',
+      'New York': 'NY', 'North Carolina': 'NC', 'North Dakota': 'ND', 'Ohio': 'OH', 'Oklahoma': 'OK',
+      'Oregon': 'OR', 'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC', 'South Dakota': 'SD',
+      'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT', 'Vermont': 'VT', 'Virginia': 'VA', 'Washington': 'WA',
+      'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY',
+    };
+    final st = states[a['state']] ?? a['state'];
+    if (city == null) return st?.toString();
+    return st == null ? '$city' : '$city, $st';
+  } catch (_) {
+    return null;
+  }
+}

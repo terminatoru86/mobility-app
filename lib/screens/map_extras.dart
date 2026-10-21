@@ -9,6 +9,7 @@ import 'package:latlong2/latlong.dart';
 import '../data/places.dart';
 import '../data/store.dart';
 import '../data/weather.dart';
+import '../data/zones.dart';
 import '../theme.dart';
 import '../widgets/pin.dart';
 
@@ -804,3 +805,96 @@ class _PlacesListState extends State<PlacesList> {
         ]),
       );
 }
+
+// ───────────────────────── Map areas: locked area, $1 unlock ─────────────────────────
+
+/// Shown over the map outside the rider's areas: pins, search results and GPS stay off here.
+class LockedAreaCard extends StatelessWidget {
+  final String? name;
+  final List<String> freeNames;
+  final VoidCallback onUnlock;
+  const LockedAreaCard({super.key, required this.name, required this.freeNames, required this.onUnlock});
+
+  @override
+  Widget build(BuildContext context) => Container(
+        padding: const EdgeInsets.fromLTRB(14, 12, 12, 12),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(18),
+          boxShadow: const [BoxShadow(color: Color(0x26000000), blurRadius: 14, offset: Offset(0, 3))],
+        ),
+        child: Row(children: [
+          Container(
+            width: 38,
+            height: 38,
+            decoration: const BoxDecoration(color: AppColors.paper, shape: BoxShape.circle),
+            child: const Icon(Icons.lock_outline_rounded, color: AppColors.ink, size: 20),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisSize: MainAxisSize.min, children: [
+              Text(name == null ? 'This area is locked' : '$name is locked',
+                  maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
+              Text(
+                freeNames.isEmpty ? 'Your areas: none yet' : 'Your areas: ${freeNames.join(' · ')}',
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontSize: 11.5, color: AppColors.soft),
+              ),
+            ]),
+          ),
+          const SizedBox(width: 8),
+          FilledButton(
+            onPressed: onUnlock,
+            style: FilledButton.styleFrom(
+              backgroundColor: AppColors.blue,
+              minimumSize: const Size(0, 40),
+              padding: const EdgeInsets.symmetric(horizontal: 14),
+              shape: const StadiumBorder(),
+            ),
+            child: Text('Unlock ${MapZone.price}', style: const TextStyle(fontWeight: FontWeight.w900)),
+          ),
+        ]),
+      );
+}
+
+/// "Unlock Las Vegas, NV · 100 miles · 30 days · $1". Returns true when paid.
+/// For now the payment is a demo (no money is taken): the stores need their accounts first.
+Future<bool?> showUnlockSheet(BuildContext context, String name) => showModalBottomSheet<bool>(
+      context: context,
+      backgroundColor: Colors.white,
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
+      builder: (c) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(18, 16, 18, 14),
+          child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+            Text('Unlock $name', style: const TextStyle(fontSize: 19, fontWeight: FontWeight.w900)),
+            const SizedBox(height: 4),
+            Text(
+              '${MapZone.radiusMiles} miles around · ${MapZone.passDays} days · map, places, routes and GPS',
+              style: const TextStyle(color: AppColors.soft),
+            ),
+            const SizedBox(height: 12),
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
+              child: Text(
+                'Your ${MapZone.maxFree} free areas come by themselves where you live, study or work. '
+                'Moved? Profile → My map areas → I moved here (once every ${MapZone.moveEveryDays} days).',
+                style: const TextStyle(fontSize: 12.5),
+              ),
+            ),
+            const SizedBox(height: 14),
+            FilledButton(
+              onPressed: () => Navigator.pop(c, true),
+              style: FilledButton.styleFrom(
+                  backgroundColor: AppColors.blue, minimumSize: const Size.fromHeight(48), shape: const StadiumBorder()),
+              child: Text('Pay ${MapZone.price}', style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900)),
+            ),
+            const SizedBox(height: 6),
+            const Text('Test version: no money is taken yet.',
+                textAlign: TextAlign.center, style: TextStyle(fontSize: 11, color: AppColors.soft)),
+          ]),
+        ),
+      ),
+    );
