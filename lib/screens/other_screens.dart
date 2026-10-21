@@ -400,6 +400,17 @@ class MapSettingsScreen extends StatelessWidget {
               showSelectedIcon: false,
               onSelectionChanged: (v) => s.setTheme(v.first),
             ),
+            const SizedBox(height: 8),
+            Container(
+              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(18)),
+              child: SwitchListTile(
+                value: s.parkNearDest,
+                onChanged: s.setParkNearDest,
+                secondary: const Icon(Icons.local_parking),
+                title: const Text('Parking near a searched address'),
+                subtitle: const Text('After you pick an address, show where you can leave the bike'),
+              ),
+            ),
             const SizedBox(height: 18),
             const Text('Points of interest', style: TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
             const SizedBox(height: 6),

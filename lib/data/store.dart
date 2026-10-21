@@ -84,6 +84,7 @@ class Store extends ChangeNotifier {
   final List<String> recentSearches = [];
 
   bool satellite = false;
+  bool parkNearDest = true; // after an address search, show the parking around it
   ThemeMode theme = ThemeMode.light;
   final Map<PlaceType, bool> showOnMap = {for (final t in PlaceType.values) t: true};
   final Map<String, bool> notifications = {
@@ -113,6 +114,7 @@ class Store extends ChangeNotifier {
     }
     recentSearches.addAll(p.getStringList('recent') ?? const []);
     satellite = p.getBool('satellite') ?? false;
+    parkNearDest = p.getBool('parkNearDest') ?? true;
     theme = ThemeMode.values[(p.getInt('theme') ?? 1).clamp(0, 2)];
     sosFirstUseShown = p.getBool('sosFirst') ?? false;
     final ops = p.getStringList('operators');
@@ -178,6 +180,12 @@ class Store extends ChangeNotifier {
   void setSatellite(bool v) {
     satellite = v;
     _p?.setBool('satellite', v);
+    notifyListeners();
+  }
+
+  void setParkNearDest(bool v) {
+    parkNearDest = v;
+    _p?.setBool('parkNearDest', v);
     notifyListeners();
   }
 

@@ -6,6 +6,7 @@ import 'package:latlong2/latlong.dart';
 
 import '../data/app_state.dart';
 import '../data/location.dart';
+import '../data/places.dart';
 import '../data/routing.dart';
 import '../data/store.dart';
 import '../theme.dart';
@@ -147,9 +148,9 @@ class _PlanViewState extends State<PlanView> {
 
   void _changed(String q) {
     _wait?.cancel();
-    _wait = Timer(const Duration(milliseconds: 800), () async {
+    _wait = Timer(const Duration(milliseconds: 350), () async {
       setState(() => _busy = true);
-      final r = await searchUs(q);
+      final r = await searchUs(q, near: userPos);
       if (mounted) {
         setState(() {
           _results = r;

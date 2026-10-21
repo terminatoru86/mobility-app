@@ -46,6 +46,7 @@ class MapScreenState extends State<MapScreen> {
   final _osm = OsmService();
   bool _loading = false;
   Weather? _wx;
+  GeoResult? _dest; // address picked in search: we show the parking around it
 
   final _kSearch = GlobalKey();
   final _kFilters = GlobalKey();
@@ -166,10 +167,123 @@ class MapScreenState extends State<MapScreen> {
       _map.move(picked.pos, 17);
       _openPlace(picked);
     } else if (picked is GeoResult) {
-      _map.move(picked.pos, 15);
+      _showDestination(picked);
     } else if (picked is String) {
       setState(() => _filter = picked);
     }
+  }
+
+  // ── Parking near a searched address ──
+  static const _walk = Distance();
+
+  void _showDestination(GeoResult g) {
+    if (!Store.i.parkNearDest) {
+      setState(() => _dest = null);
+      _map.move(g.pos, 16);
+      return;
+    }
+    setState(() => _dest = g);
+    _map.move(g.pos, 16.3);
+  }
+
+  void _clearDestination() => setState(() => _dest = null);
+
+  /// Parking within 500 m of the address (1 km if there is none), nearest first.
+  (List<Place>, double) _destParking() {
+    final d = _dest;
+    if (d == null) return (const [], 0);
+    final parking = _all.where((p) => p.type.group == 'Parking').toList();
+    for (final radius in const [500.0, 1000.0]) {
+      final near = parking.where((p) => _walk(d.pos, p.pos) <= radius).toList()
+        ..sort((a, b) => _walk(d.pos, a.pos).compareTo(_walk(d.pos, b.pos)));
+      if (near.isNotEmpty) return (near, radius);
+    }
+    return (const [], 1000);
+  }
+
+  Widget _destCard(List<Place> list, double radius) {
+    final d = _dest!;
+    return Material(
+      color: Colors.white,
+      elevation: 8,
+      borderRadius: BorderRadius.circular(22),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(14, 10, 6, 12),
+        child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Row(children: [
+            const Icon(Icons.local_parking, color: AppColors.primary, size: 20),
+            const SizedBox(width: 6),
+            Expanded(
+              child: Text('Parking near ${d.title}',
+                  maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w900)),
+            ),
+            TextButton.icon(
+              onPressed: () => _trip(Place(
+                id: 'dest',
+                type: PlaceType.shop,
+                address: d.title,
+                pos: d.pos,
+                status: Status.neutral,
+                distance: '',
+                etaMin: const {},
+              )),
+              icon: const Icon(Icons.navigation_rounded, size: 16),
+              label: const Text('Trip'),
+            ),
+            IconButton(onPressed: _clearDestination, icon: const Icon(Icons.close), tooltip: 'Hide'),
+          ]),
+          if (list.isEmpty)
+            const Padding(
+              padding: EdgeInsets.fromLTRB(0, 4, 8, 4),
+              child: Text('No bike parking known within 1 km. Loading the area… or report a new place with +.',
+                  style: TextStyle(color: AppColors.soft)),
+            )
+          else ...[
+            Text('${list.length} within ${radius.round()} m · nearest first',
+                style: const TextStyle(fontSize: 12, color: AppColors.soft)),
+            const SizedBox(height: 8),
+            SizedBox(
+              height: 84,
+              child: ListView(scrollDirection: Axis.horizontal, children: [
+                for (final p in list.take(12)) _destTile(p),
+              ]),
+            ),
+          ],
+        ]),
+      ),
+    );
+  }
+
+  Widget _destTile(Place p) {
+    final c = colorsFor(p.shownStatus);
+    final m = _walk(_dest!.pos, p.pos);
+    return GestureDetector(
+      onTap: () => _openPlace(p),
+      child: Container(
+        width: 190,
+        margin: const EdgeInsets.only(right: 8),
+        padding: const EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          color: c.tint,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: c.main, width: 1.5),
+        ),
+        child: Row(children: [
+          Glyph(p.type, size: 26, color: c.dark),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.center, children: [
+              Text(p.address, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800)),
+              Text(
+                p.shownStatus == Status.full ? 'full · ${p.age}' : '${p.count ?? '—'} free · ${p.age.isEmpty ? 'no data' : p.age}',
+                style: TextStyle(fontSize: 11.5, fontWeight: FontWeight.w700, color: c.dark),
+              ),
+              Text('${m.round()} m · ${(m / 80).ceil()} min walk', style: const TextStyle(fontSize: 11, color: AppColors.soft)),
+            ]),
+          ),
+        ]),
+      ),
+    );
   }
 
   Future<void> _loadVisible() async {
@@ -212,7 +326,7 @@ class MapScreenState extends State<MapScreen> {
   }
 
   List<Marker> _markers() {
-    final pins = _visible;
+    final pins = _dest != null ? _destParking().$1 : _visible;
     if (_zoom < 15) {
       return clusterPlaces(pins, _zoom).map((c) {
         if (c.places.length == 1) return _pinMarker(c.places.first);
@@ -299,7 +413,26 @@ class MapScreenState extends State<MapScreen> {
                 borderStrokeWidth: 2,
               ),
             ]),
+          if (_dest != null)
+            CircleLayer(circles: [
+              CircleMarker(
+                point: _dest!.pos,
+                radius: _destParking().$2,
+                useRadiusInMeter: true,
+                color: AppColors.blue.withValues(alpha: 0.07),
+                borderColor: AppColors.blue,
+                borderStrokeWidth: 1.5,
+              ),
+            ]),
           MarkerLayer(markers: [
+            if (_dest != null)
+              Marker(
+                point: _dest!.pos,
+                width: 36,
+                height: 36,
+                alignment: Alignment.topCenter,
+                child: const Icon(Icons.flag_rounded, color: AppColors.red, size: 34),
+              ),
             for (final r in store.reports.where((r) => r.onMap))
               Marker(
                 point: r.pos,
@@ -351,10 +484,20 @@ class MapScreenState extends State<MapScreen> {
           ]),
         ]),
       ),
+      if (_dest != null && !_list)
+        Positioned(
+          left: 10,
+          right: 10,
+          bottom: 14,
+          child: Builder(builder: (_) {
+            final (list, radius) = _destParking();
+            return _destCard(list, radius);
+          }),
+        ),
       if (!_list)
         Positioned(
           right: 14,
-          bottom: 24,
+          bottom: _dest != null ? 170 : 24,
           child: Column(children: [
             GestureDetector(
               key: _kLocate,
@@ -367,7 +510,7 @@ class MapScreenState extends State<MapScreen> {
             }, key: _kReport),
           ]),
         ),
-      Positioned(left: 14, bottom: 30, child: _sosButton()),
+      Positioned(left: 14, bottom: _dest != null ? 176 : 30, child: _sosButton()),
       const Positioned(
         right: 4,
         bottom: 2,
@@ -536,7 +679,17 @@ class MapScreenState extends State<MapScreen> {
               ),
             ),
             const SizedBox(width: 10),
-            const Expanded(child: Text('Search address or place', style: TextStyle(color: AppColors.soft, fontSize: 16))),
+            Expanded(
+              child: Text(_dest?.title ?? 'Search address or place',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: _dest == null ? AppColors.soft : AppColors.ink,
+                    fontSize: 16,
+                    fontWeight: _dest == null ? FontWeight.w400 : FontWeight.w800,
+                  )),
+            ),
+            if (_dest != null) IconButton(onPressed: _clearDestination, icon: const Icon(Icons.close)),
           ]),
         ),
       );
@@ -683,18 +836,36 @@ class _SearchSheetState extends State<_SearchSheet> {
           : widget.places.where((p) => p.address.toLowerCase().contains(low) || p.type.title.toLowerCase().contains(low)).take(6).toList();
     });
     _wait?.cancel();
-    // the free OpenStreetMap search allows about one request per second
-    _wait = Timer(const Duration(milliseconds: 800), () async {
+    // search as you type, a moment after the last key
+    _wait = Timer(const Duration(milliseconds: 350), () async {
       if (_q.length < 3) return;
+      final asked = _q;
       setState(() => _busy = true);
-      final r = await searchUs(_q);
-      if (mounted) {
+      final r = await searchUs(asked, near: userPos);
+      if (mounted && asked == _q) {
         setState(() {
           _results = r;
           _busy = false;
         });
       }
     });
+  }
+
+  // Enter: take the first result right away.
+  Future<void> _submit(String q) async {
+    Store.i.addRecent(q.trim());
+    if (_ours.isNotEmpty) {
+      Navigator.pop(context, _ours.first);
+      return;
+    }
+    var r = _results;
+    if (r.isEmpty) {
+      setState(() => _busy = true);
+      r = await searchUs(q, near: userPos);
+      if (!mounted) return;
+      setState(() => _busy = false);
+    }
+    if (r.isNotEmpty && mounted) Navigator.pop(context, r.first);
   }
 
   @override
@@ -707,7 +878,7 @@ class _SearchSheetState extends State<_SearchSheet> {
         TextField(
           autofocus: true,
           onChanged: _changed,
-          onSubmitted: (s) => store.addRecent(s),
+          onSubmitted: _submit,
           decoration: InputDecoration(
             hintText: 'Address, place or city in the US',
             prefixIcon: const Icon(Icons.search),
