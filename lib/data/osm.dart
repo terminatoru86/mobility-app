@@ -218,6 +218,8 @@ Place? placeFromOsm(Map<String, dynamic> e) {
     if (yes('service:bicycle:repair')) 'Repairs',
     if (yes('service:bicycle:rental')) 'Rental',
     if (yes('service:bicycle:second_hand')) 'Second hand',
+    if (tag('installed') != null) 'Installed ${tag('installed')}',
+    if (tag('source') != null) tag('source')!,
   ];
 
   final accepts = switch (type) {

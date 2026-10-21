@@ -6,6 +6,7 @@ import 'package:latlong2/latlong.dart';
 
 import '../data/app_state.dart';
 import '../data/location.dart';
+import '../data/open_data.dart';
 import '../data/osm.dart';
 import '../data/places.dart';
 import '../data/routing.dart';
@@ -46,6 +47,9 @@ class MapScreenState extends State<MapScreen> {
   Timer? _sosHold;
   double _sosProgress = 0;
   final _osm = OsmService();
+  final _open = OpenDataService(); // City of Chicago racks + Divvy live
+  Timer? _divvyTimer;
+  List<Place>? _merged; // all sources together, rebuilt only when one of them changes
   bool _loading = false;
   Weather? _wx;
   GeoResult? _dest; // address picked in search: we show the parking around it
@@ -70,9 +74,15 @@ class MapScreenState extends State<MapScreen> {
     // real places: the cities shipped with the app and the ones saved on the phone (instant),
     // then the visible area from OpenStreetMap
     _osm.loadBundled().then((_) => _osm.loadCache()).then((_) {
-      if (mounted) setState(() {});
+      if (mounted) setState(() => _merged = null);
       _loadVisible();
     });
+    // City of Chicago racks (Data Portal) and Divvy stations live, refreshed every 90 s
+    _open.loadCityRacks().then((_) {
+      if (mounted) setState(() => _merged = null);
+    });
+    _refreshDivvy();
+    _divvyTimer = Timer.periodic(const Duration(seconds: 90), (_) => _refreshDivvy());
     _loadWeather();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       _locate(); // start where the rider is, anywhere in the US
@@ -92,6 +102,7 @@ class MapScreenState extends State<MapScreen> {
   @override
   void dispose() {
     Store.i.removeListener(_storeChanged);
+    _divvyTimer?.cancel();
     _flip?.cancel();
     _pinClock?.cancel();
     _debounce?.cancel();
@@ -105,8 +116,41 @@ class MapScreenState extends State<MapScreen> {
   }
 
   /// Real places (OpenStreetMap), with what riders confirmed in Stats; demo places only until they arrive.
+  Future<void> _refreshDivvy() async {
+    final ok = await _open.loadDivvy();
+    if (ok && mounted) setState(() => _merged = null);
+  }
+
+  /// OpenStreetMap + City of Chicago racks (not where OSM already has one, ~15 m) + Divvy live
+  /// (instead of the Divvy stations copied in OSM).
+  List<Place> get _sources {
+    final m = _merged;
+    if (m != null) return m;
+    final cell = <String>{};
+    String key(LatLng p, int dy, int dx) => '${(p.latitude * 6000).round() + dy}:${(p.longitude * 6000).round() + dx}';
+    final out = <Place>[];
+    final liveDivvy = _open.divvy.isNotEmpty;
+    for (final p in _osm.places.values) {
+      if (liveDivvy && p.type == PlaceType.sharing && (p.operatorName ?? '').toLowerCase().contains('divvy')) continue;
+      out.add(p);
+      if (p.type.group == 'Parking') cell.add(key(p.pos, 0, 0));
+    }
+    for (final p in _open.cityRacks.values) {
+      var dup = false;
+      for (final dy in const [-1, 0, 1]) {
+        for (final dx in const [-1, 0, 1]) {
+          if (cell.contains(key(p.pos, dy, dx))) dup = true;
+        }
+      }
+      if (!dup) out.add(p);
+    }
+    out.addAll(_open.divvy.values);
+    return _merged = out;
+  }
+
   List<Place> get _all {
-    final base = _osm.places.isEmpty ? demoPlaces : _osm.places.values;
+    final src = _sources;
+    final base = src.isEmpty ? demoPlaces : src;
     final conf = Store.i.confirmations;
     return [
       for (final p in base)
@@ -138,7 +182,12 @@ class MapScreenState extends State<MapScreen> {
     }
     userPos = pos;
     _osm.refreshDistances();
-    setState(() => _noGps = false);
+    _open.refreshDistances();
+    _refreshDivvy();
+    setState(() {
+      _noGps = false;
+      _merged = null;
+    });
     _map.move(pos, 15);
     _loadWeather();
   }
@@ -282,7 +331,7 @@ class MapScreenState extends State<MapScreen> {
     final changed = await _osm.loadArea(b.south, b.west, b.north, b.east);
     if (!mounted) return;
     setState(() => _loading = false);
-    if (changed) setState(() {});
+    if (changed) setState(() => _merged = null);
   }
 
   Future<void> openPlace(Place p) => _openPlace(p);
