@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'data/app_state.dart';
+import 'data/places.dart';
+import 'data/store.dart';
 import 'screens/community_screen.dart';
 import 'screens/health_screen.dart';
 import 'screens/map_screen.dart';
@@ -12,6 +14,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final state = AppState();
   await state.load();
+  await Store.i.load();
   runApp(MobilityApp(state: state));
 }
 
@@ -39,15 +42,25 @@ class _ShellState extends State<Shell> {
   int _tab = 0;
   final _navKey = GlobalKey();
   int _mapVersion = 0; // rebuilds the map tab (e.g. to replay the guide)
+  var _mapKey = GlobalKey<MapScreenState>();
+
+  void _openPlaceOnMap(Place p) {
+    setState(() => _tab = 0);
+    WidgetsBinding.instance.addPostFrameCallback((_) => _mapKey.currentState?.openPlace(p));
+  }
 
   @override
   Widget build(BuildContext context) {
     final pages = [
-      MapScreen(key: ValueKey(_mapVersion), state: widget.state, navKey: _navKey),
-      const RoutesScreen(),
+      MapScreen(key: _mapKey, state: widget.state, navKey: _navKey),
+      RoutesScreen(state: widget.state),
       const HealthScreen(),
       CommunityScreen(state: widget.state),
-      ProfileScreen(state: widget.state),
+      ProfileScreen(
+        state: widget.state,
+        onOpenPlace: _openPlaceOnMap,
+        onOpenRoutes: () => setState(() => _tab = 1),
+      ),
     ];
     return Scaffold(
       body: IndexedStack(index: _tab, children: pages),
@@ -57,7 +70,10 @@ class _ShellState extends State<Shell> {
         backgroundColor: Colors.white,
         indicatorColor: AppColors.slateTint,
         onDestinationSelected: (i) => setState(() {
-          if (i == 0 && _tab != 0 && !widget.state.guideDone) _mapVersion++;
+          if (i == 0 && _tab != 0 && !widget.state.guideDone) {
+            _mapVersion++;
+            _mapKey = GlobalKey<MapScreenState>(debugLabel: 'map$_mapVersion');
+          }
           _tab = i;
         }),
         destinations: const [

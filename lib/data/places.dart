@@ -195,6 +195,16 @@ class Place {
   });
 
   Status get shownStatus => type.isNeutral ? Status.neutral : status;
+
+  /// Same place with a new status (after a rider confirms it in Stats).
+  Place withStatus(Status s, String newAge) => Place(
+        id: id, type: type, address: address, pos: pos, status: s,
+        count: s == Status.full ? null : (s == Status.almost ? '1' : (count ?? '4')),
+        age: newAge, accepts: accepts, distance: distance, etaMin: etaMin, hours: hours, phone: phone,
+        rating: rating, reviewCount: reviewCount, reviews: reviews, security: security, qa: qa, tag: tag,
+        tools: tools, busy: busy, priceNow: priceNow, operatorName: operatorName, operatorPrice: operatorPrice,
+        osm: osm, facts: facts, website: website,
+      );
 }
 
 /// Demo data around the Chicago Loop. Real data comes later (Firestore + GBFS).

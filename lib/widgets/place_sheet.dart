@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'package:url_launcher/url_launcher.dart';
+
+import '../data/app_state.dart';
 import '../data/places.dart';
+import '../data/store.dart';
+import '../screens/place_actions.dart';
 import '../theme.dart';
 import 'pin.dart';
 import 'sheet_parts.dart';
 
 /// Opens the sheet of a place over the map.
 Future<void> showPlaceSheet(BuildContext context, Place place,
-    {Vehicle? myVehicle, bool showVehicleTip = false, VoidCallback? onTipSeen, VoidCallback? onTrip}) {
+    {Vehicle? myVehicle,
+    bool showVehicleTip = false,
+    VoidCallback? onTipSeen,
+    VoidCallback? onTrip,
+    AppState? state}) {
   return showModalBottomSheet(
     context: context,
     isScrollControlled: true,
@@ -25,9 +34,17 @@ Future<void> showPlaceSheet(BuildContext context, Place place,
         showVehicleTip: showVehicleTip,
         onTipSeen: onTipSeen,
         onTrip: onTrip,
+        state: state,
       ),
     ),
   );
+}
+
+/// Opens a phone number or a web page outside the app.
+Future<void> openLink(String url) async {
+  try {
+    await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+  } catch (_) {}
 }
 
 class PlaceSheet extends StatefulWidget {
@@ -37,6 +54,7 @@ class PlaceSheet extends StatefulWidget {
   final bool showVehicleTip;
   final VoidCallback? onTipSeen;
   final VoidCallback? onTrip;
+  final AppState? state;
   const PlaceSheet({
     super.key,
     required this.place,
@@ -45,6 +63,7 @@ class PlaceSheet extends StatefulWidget {
     this.showVehicleTip = false,
     this.onTipSeen,
     this.onTrip,
+    this.state,
   });
 
   @override
@@ -54,6 +73,58 @@ class PlaceSheet extends StatefulWidget {
 class _PlaceSheetState extends State<PlaceSheet> {
   late bool _tip = widget.showVehicleTip;
   String? _opening;
+  bool _copied = false;
+  AppLifecycleListener? _back;
+
+  @override
+  void dispose() {
+    _back?.dispose();
+    super.dispose();
+  }
+
+  void _push(Widget w) => Navigator.of(context).push(MaterialPageRoute(builder: (_) => w));
+
+  // Sharing: open the operator's app; when the rider comes back, ask if the ride started.
+  Future<void> _openOperator(Place p) async {
+    final name = (p.operatorName ?? '').toLowerCase();
+    final url = name.contains('divvy')
+        ? 'https://divvybikes.com/how-it-works/get-the-app'
+        : name.contains('lime')
+            ? 'https://www.li.me/'
+            : name.contains('bird')
+                ? 'https://www.bird.co/'
+                : 'https://www.google.com/search?q=${Uri.encodeComponent(p.operatorName ?? 'bike share')}';
+    setState(() => _opening = 'Opening ${p.operatorName}…');
+    _back?.dispose();
+    _back = AppLifecycleListener(onResume: () {
+      _back?.dispose();
+      _back = null;
+      if (mounted) _askStarted(p);
+    });
+    await openLink(url);
+  }
+
+  Future<void> _askStarted(Place p) async {
+    await showDialog<void>(
+      context: context,
+      builder: (c) => AlertDialog(
+        title: const Text('Welcome back!'),
+        content: Text('You opened ${p.operatorName}. Did you start your ride?'),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(c), child: const Text('Not yet')),
+          FilledButton(
+            onPressed: () {
+              Navigator.pop(c);
+              Navigator.pop(context);
+            },
+            style: FilledButton.styleFrom(minimumSize: const Size(0, 44)),
+            child: const Text('Yes'),
+          ),
+        ],
+      ),
+    );
+    if (mounted) setState(() => _opening = null);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -72,9 +143,21 @@ class _PlaceSheetState extends State<PlaceSheet> {
       ...(p.osm ? [..._osmFacts(p), const SizedBox(height: 12), ..._specific(p, c)] : _specific(p, c)),
       if (p.hours != null || p.phone != null) ...[gap, _hoursRow(p)],
       if (p.security != null) ...[gap, SecurityRow(p.security!)],
-      if (p.reviews.isNotEmpty) ...[gap, ReviewsCarousel(p)],
+      if (p.reviews.isNotEmpty)
+        ...[gap, ReviewsCarousel(p, onOpen: () => _push(ReviewsScreen(place: p, state: widget.state)))]
+      else if (!p.type.isNeutral || p.osm)
+        ...[gap, Align(
+          alignment: Alignment.centerLeft,
+          child: TextButton.icon(
+            onPressed: () => _push(ReviewsScreen(place: p, state: widget.state)),
+            icon: const Icon(Icons.rate_review_outlined),
+            label: const Text('Write the first review'),
+          ),
+        )],
       if (!p.osm) ...[gap, _photo()],
-      if (p.qa.isNotEmpty) ...[gap, QaCard(p.qa)],
+      if (p.qa.isNotEmpty || (Store.i.myQuestions[p.id]?.isNotEmpty ?? false))
+        if (p.type == PlaceType.parkPrivate || p.type == PlaceType.service || p.type == PlaceType.rent)
+          ...[gap, QaCard([...?Store.i.myQuestions[p.id], ...p.qa], onAsk: (q) => setState(() => Store.i.ask(p.id, q)))],
       if (p.osm) ...[
         gap,
         const Text('Place data © OpenStreetMap contributors. Status, spots and ratings are test data for now.',
@@ -140,8 +223,18 @@ class _PlaceSheetState extends State<PlaceSheet> {
                 IconButton(
                   visualDensity: VisualDensity.compact,
                   iconSize: 16,
-                  icon: Icon(Icons.copy_rounded, color: c.dark),
-                  onPressed: () => Clipboard.setData(ClipboardData(text: p.address)),
+                  icon: Icon(_copied ? Icons.check_rounded : Icons.copy_rounded, color: c.dark),
+                  onPressed: () async {
+                    await Clipboard.setData(ClipboardData(text: p.address));
+                    setState(() => _copied = true);
+                  },
+                ),
+                IconButton(
+                  visualDensity: VisualDensity.compact,
+                  iconSize: 18,
+                  icon: Icon(Store.i.isSaved(p) ? Icons.favorite : Icons.favorite_border,
+                      color: Store.i.isSaved(p) ? AppColors.red : c.dark),
+                  onPressed: () => setState(() => Store.i.toggleSaved(p)),
                 ),
               ]),
             ]),
@@ -166,13 +259,25 @@ class _PlaceSheetState extends State<PlaceSheet> {
   List<Widget> _specific(Place p, StatusColors c) {
     switch (p.type) {
       case PlaceType.parkPrivate:
-        return [BusyChart(values: p.busy, color: AppColors.red, title: 'Price today · now ${p.priceNow}')];
+        if (p.busy.isEmpty) return [];
+        return [
+          BusyChart(
+            values: p.busy,
+            color: AppColors.red,
+            title: 'Price today · now ${p.priceNow}',
+            onHistory: () => _push(HistoryScreen(place: p, price: true)),
+          ),
+        ];
       case PlaceType.parkOutdoor:
       case PlaceType.parkCovered:
-        return [BusyChart(values: p.busy, color: c.main)];
+        if (p.busy.isEmpty) return [];
+        return [BusyChart(values: p.busy, color: c.main, onHistory: () => _push(HistoryScreen(place: p)))];
       case PlaceType.wash:
       case PlaceType.charging:
-        return [BusyChart(values: p.busy, color: c.main, tag: p.tag)];
+        if (p.busy.isEmpty) return [];
+        return [
+          BusyChart(values: p.busy, color: c.main, tag: p.tag, onHistory: () => _push(HistoryScreen(place: p))),
+        ];
       case PlaceType.selfService:
         return [
           Wrap(spacing: 6, runSpacing: 6, children: [
@@ -188,16 +293,19 @@ class _PlaceSheetState extends State<PlaceSheet> {
             _chip('Charging', AppColors.yellowTint, AppColors.yellowDark, AppColors.yellow),
           ]),
           const SizedBox(height: 12),
-          FilledButton(onPressed: () {}, child: const Text('Book a service')),
+          FilledButton(
+            onPressed: () => _push(ServiceRequestScreen(place: p, state: widget.state)),
+            child: const Text('Book a service'),
+          ),
         ];
       case PlaceType.rent:
-        return [FilledButton(onPressed: () {}, child: const Text('Reserve / Rent'))];
+        return [FilledButton(onPressed: () => _push(RentScreen(place: p)), child: const Text('Reserve / Rent'))];
       case PlaceType.sharing:
         return [
           SwipeButton(
             title: _opening ?? 'Open ${p.operatorName}',
             subtitle: p.operatorPrice,
-            onDone: () => setState(() => _opening = 'Opening ${p.operatorName}…'),
+            onDone: () => _openOperator(p),
           ),
         ];
       default:
@@ -226,7 +334,10 @@ class _PlaceSheetState extends State<PlaceSheet> {
         const SizedBox(height: 8),
         Align(
           alignment: Alignment.centerLeft,
-          child: Text(p.website!, style: const TextStyle(fontSize: 12, color: AppColors.blue)),
+          child: GestureDetector(
+            onTap: () => openLink(p.website!),
+            child: Text(p.website!, style: const TextStyle(fontSize: 12, color: AppColors.blue)),
+          ),
         ),
       ],
     ];
@@ -241,7 +352,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
         const Spacer(),
         if (p.phone != null)
           OutlinedButton.icon(
-            onPressed: () {},
+            onPressed: () => openLink('tel:${p.phone!.replaceAll(RegExp(r'[^0-9+]'), '')}'),
             icon: const Icon(Icons.phone_outlined, size: 16),
             label: Text(p.phone!),
             style: OutlinedButton.styleFrom(foregroundColor: AppColors.ink, shape: const StadiumBorder()),

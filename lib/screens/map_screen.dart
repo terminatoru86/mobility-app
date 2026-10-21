@@ -7,16 +7,18 @@ import 'package:latlong2/latlong.dart';
 import '../data/app_state.dart';
 import '../data/location.dart';
 import '../data/osm.dart';
-import '../data/routing.dart';
 import '../data/places.dart';
+import '../data/store.dart';
+import '../data/weather.dart';
 import '../theme.dart';
 import '../widgets/cluster.dart';
-import '../widgets/directions.dart';
 import '../widgets/guide.dart';
 import '../widgets/pin.dart';
 import '../widgets/place_sheet.dart';
 import '../widgets/signup.dart';
 import '../widgets/tiles.dart';
+import 'map_extras.dart';
+import 'trip_screen.dart';
 
 class MapScreen extends StatefulWidget {
   final AppState state;
@@ -24,26 +26,26 @@ class MapScreen extends StatefulWidget {
   const MapScreen({super.key, required this.state, required this.navKey});
 
   @override
-  State<MapScreen> createState() => _MapScreenState();
+  State<MapScreen> createState() => MapScreenState();
 }
 
-class _MapScreenState extends State<MapScreen> {
+class MapScreenState extends State<MapScreen> {
   final _map = MapController();
   double _zoom = 15;
   String? _filter;
   String? _selected;
   bool _showGuide = false;
   bool _weatherFace = false;
+  bool _list = false;
+  bool _noGps = false;
   Timer? _flip;
   Timer? _pinClock;
   Timer? _debounce;
+  Timer? _sosHold;
+  double _sosProgress = 0;
   final _osm = OsmService();
   bool _loading = false;
-
-  // Trip: route from the rider to the chosen place
-  Place? _tripTo;
-  RouteResult? _route;
-  bool _routing = false;
+  Weather? _wx;
 
   final _kSearch = GlobalKey();
   final _kFilters = GlobalKey();
@@ -55,6 +57,7 @@ class _MapScreenState extends State<MapScreen> {
   @override
   void initState() {
     super.initState();
+    Store.i.addListener(_storeChanged);
     // The circle in the search bar shows your vehicle, then the weather, every 50 s.
     _flip = Timer.periodic(const Duration(seconds: 50), (_) {
       if (mounted) setState(() => _weatherFace = !_weatherFace);
@@ -67,6 +70,7 @@ class _MapScreenState extends State<MapScreen> {
       if (mounted) setState(() {});
       _loadVisible();
     });
+    _loadWeather();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       _locate(); // start where the rider is, anywhere in the US
       if (!widget.state.guideDone) {
@@ -78,67 +82,94 @@ class _MapScreenState extends State<MapScreen> {
     });
   }
 
+  void _storeChanged() {
+    if (mounted) setState(() {});
+  }
+
   @override
   void dispose() {
+    Store.i.removeListener(_storeChanged);
     _flip?.cancel();
     _pinClock?.cancel();
     _debounce?.cancel();
+    _sosHold?.cancel();
     super.dispose();
   }
 
-  /// Real places from OpenStreetMap; the demo places only until those arrive.
-  List<Place> get _all => _osm.places.isEmpty ? demoPlaces : _osm.places.values.toList();
+  Future<void> _loadWeather() async {
+    final w = await fetchWeather(userPos);
+    if (mounted && w != null) setState(() => _wx = w);
+  }
+
+  /// Real places (OpenStreetMap), with what riders confirmed in Stats; demo places only until they arrive.
+  List<Place> get _all {
+    final base = _osm.places.isEmpty ? demoPlaces : _osm.places.values;
+    final conf = Store.i.confirmations;
+    return [
+      for (final p in base)
+        if (Store.i.showOnMap[p.type] ?? true)
+          conf.containsKey(p.id) ? p.withStatus(conf[p.id]!.status, '<5 min') : p,
+    ];
+  }
 
   List<Place> get _visible {
     final all = _all;
     return _filter == null ? all : all.where((p) => p.type.group == _filter).toList();
   }
 
-  /// GPS: move the map to the rider. Without GPS the map stays where it is.
+  List<Place> _near(LatLng c, double meters) {
+    const d = Distance();
+    final out = _all.where((p) => d(c, p.pos) < meters).toList()
+      ..sort((a, b) => d(c, a.pos).compareTo(d(c, b.pos)));
+    return out;
+  }
+
+  /// GPS: move the map to the rider. Without GPS the map stays on Chicago.
   Future<void> _locate() async {
     final pos = await currentPosition();
     if (!mounted) return;
     if (pos == null) {
+      setState(() => _noGps = true);
       _map.move(userPos, 15);
       return;
     }
     userPos = pos;
     _osm.refreshDistances();
-    setState(() {});
+    setState(() => _noGps = false);
     _map.move(pos, 15);
+    _loadWeather();
   }
 
-  /// Trip button: bike route from where you are to the place, drawn in blue.
+  /// Trip: choose the route, then GO for the GPS guidance.
   Future<void> _trip(Place p) async {
-    setState(() {
-      _tripTo = p;
-      _route = null;
-      _routing = true;
-    });
-    final r = await bikeRoute([userPos, p.pos]);
-    if (!mounted || _tripTo != p) return;
-    setState(() {
-      _route = r;
-      _routing = false;
-    });
-    if (r != null && r.points.length > 1) {
-      _map.fitCamera(CameraFit.bounds(
-        bounds: LatLngBounds.fromPoints(r.points),
-        padding: const EdgeInsets.fromLTRB(40, 160, 40, 200),
-      ));
-    }
+    await startTrip(
+      context,
+      to: p.pos,
+      toName: p.address,
+      place: p,
+      nearby: _near(p.pos, 2500).take(80).toList(),
+      myVehicle: widget.state.myVehicle,
+    );
+    if (mounted) setState(() {});
   }
 
-  /// Search any address or city in the US and jump there.
   Future<void> _openSearch() async {
-    final picked = await showModalBottomSheet<GeoResult>(
+    final picked = await showModalBottomSheet<Object>(
       context: context,
       isScrollControlled: true,
       backgroundColor: Colors.white,
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
-      builder: (_) => const _SearchSheet(),
+      builder: (_) => _SearchSheet(places: _all),
     );
-    if (picked != null && mounted) _map.move(picked.pos, 15);
+    if (!mounted || picked == null) return;
+    if (picked is Place) {
+      _map.move(picked.pos, 17);
+      _openPlace(picked);
+    } else if (picked is GeoResult) {
+      _map.move(picked.pos, 15);
+    } else if (picked is String) {
+      setState(() => _filter = picked);
+    }
   }
 
   Future<void> _loadVisible() async {
@@ -159,10 +190,13 @@ class _MapScreenState extends State<MapScreen> {
     if (changed) setState(() {});
   }
 
+  Future<void> openPlace(Place p) => _openPlace(p);
+
   Future<void> _openPlace(Place p) async {
     setState(() => _selected = p.id);
     if (p.type == PlaceType.sharing && !widget.state.sharingChosen) {
-      await _chooseOperators();
+      await chooseOperators(context);
+      await widget.state.setSharingChosen();
       if (!mounted) return;
     }
     await showPlaceSheet(
@@ -172,56 +206,9 @@ class _MapScreenState extends State<MapScreen> {
       showVehicleTip: !widget.state.sheetTipDone,
       onTipSeen: widget.state.setSheetTipDone,
       onTrip: () => _trip(p),
+      state: widget.state,
     );
     if (mounted) setState(() => _selected = null);
-  }
-
-  // First tap on a sharing pin: pick the operators to show (filtered by GPS).
-  Future<void> _chooseOperators() async {
-    final chosen = {for (final o in demoOperators) o.name: o.inArea};
-    String priceFilter = 'All';
-    await showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.white,
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
-      builder: (ctx) => StatefulBuilder(
-        builder: (ctx, set) => Padding(
-          padding: const EdgeInsets.fromLTRB(18, 14, 18, 18),
-          child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
-            const Text('Which sharing on the map?', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800)),
-            const Text.rich(TextSpan(children: [
-              TextSpan(text: 'Near you: Chicago', style: TextStyle(fontWeight: FontWeight.w800)),
-              TextSpan(text: ' (GPS) · tick what you want on the map'),
-            ]), style: TextStyle(fontSize: 12, color: AppColors.soft)),
-            const SizedBox(height: 10),
-            Wrap(spacing: 6, children: [
-              for (final f in ['All', '≤ \$0.35/min', 'Cheapest first'])
-                ChoiceChip(label: Text(f), selected: priceFilter == f, onSelected: (_) => set(() => priceFilter = f)),
-            ]),
-            const SizedBox(height: 6),
-            for (final o in demoOperators)
-              CheckboxListTile(
-                contentPadding: EdgeInsets.zero,
-                value: chosen[o.name],
-                onChanged: (v) => set(() => chosen[o.name] = v ?? false),
-                title: Text(o.name, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 17)),
-                subtitle: Text(o.price, style: const TextStyle(fontWeight: FontWeight.w700)),
-              ),
-            const Center(
-              child: Text('All operators in the US (70+) ›',
-                  style: TextStyle(fontWeight: FontWeight.w800, fontSize: 12)),
-            ),
-            const SizedBox(height: 10),
-            FilledButton(
-              onPressed: () => Navigator.pop(ctx),
-              child: Text('Done · ${chosen.values.where((v) => v).length} operators'),
-            ),
-          ]),
-        ),
-      ),
-    );
-    await widget.state.setSharingChosen();
   }
 
   List<Marker> _markers() {
@@ -254,9 +241,35 @@ class _MapScreenState extends State<MapScreen> {
         ),
       );
 
+  // SOS: hold 3 seconds.
+  void _sosDown() {
+    if (Store.i.sosActive) return;
+    _sosHold?.cancel();
+    setState(() => _sosProgress = 0);
+    _sosHold = Timer.periodic(const Duration(milliseconds: 50), (t) {
+      if (!mounted) {
+        t.cancel();
+        return;
+      }
+      setState(() => _sosProgress = t.tick * 50 / 3000);
+      if (_sosProgress >= 1) {
+        t.cancel();
+        setState(() => _sosProgress = 0);
+        showSosComposer(context);
+      }
+    });
+  }
+
+  void _sosUp() {
+    _sosHold?.cancel();
+    if (mounted && _sosProgress > 0) setState(() => _sosProgress = 0);
+  }
+
   @override
   Widget build(BuildContext context) {
     final top = MediaQuery.of(context).padding.top;
+    final store = Store.i;
+    final rainIn = _wx?.rainInMinutes;
     return Stack(children: [
       FlutterMap(
         mapController: _map,
@@ -274,15 +287,46 @@ class _MapScreenState extends State<MapScreen> {
           },
         ),
         children: [
-          // OpenStreetMap basemap
-          baseTiles(),
-          if (_route != null) routeLayer(_route!.points),
+          if (store.satellite) satelliteTiles() else baseTiles(),
+          if (store.sosActive)
+            CircleLayer(circles: [
+              CircleMarker(
+                point: userPos,
+                radius: 3219, // 2 miles
+                useRadiusInMeter: true,
+                color: AppColors.red.withValues(alpha: 0.10),
+                borderColor: AppColors.red,
+                borderStrokeWidth: 2,
+              ),
+            ]),
           MarkerLayer(markers: [
+            for (final r in store.reports.where((r) => r.onMap))
+              Marker(
+                point: r.pos,
+                width: 30,
+                height: 30,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: r.kind == 'I like this lane' ? AppColors.greenTint : AppColors.yellow,
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: Icon(r.icon, size: 16, color: AppColors.ink),
+                ),
+              ),
             Marker(point: userPos, width: 34, height: 34, child: const UserDot()),
             ..._markers(),
           ]),
         ],
       ),
+      if (_list)
+        Positioned.fill(
+          child: Container(
+            color: AppColors.paper,
+            padding: EdgeInsets.only(top: top + 112),
+            child: PlacesList(places: _near(userPos, 1500).take(60).toList(), onOpen: _openPlace),
+          ),
+        ),
       // spotlight target for the "how to read pins" step
       Positioned(left: 20, top: top + 160, child: SizedBox(key: _kPins, width: 70, height: 80)),
       Positioned(
@@ -293,90 +337,49 @@ class _MapScreenState extends State<MapScreen> {
           _searchBar(),
           const SizedBox(height: 8),
           _filters(),
-          if (_loading)
-            Container(
-              margin: const EdgeInsets.only(top: 8),
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(14)),
-              child: const Row(mainAxisSize: MainAxisSize.min, children: [
-                SizedBox(width: 12, height: 12, child: CircularProgressIndicator(strokeWidth: 2)),
-                SizedBox(width: 6),
-                Text('Loading places…', style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700)),
-              ]),
-            )
-          else if (_osm.lastError != null)
+          const SizedBox(height: 8),
+          Wrap(spacing: 6, runSpacing: 6, children: [
+            _mapListToggle(),
+            if (rainIn != null)
+              _pill(Icons.umbrella, 'Rain in $rainIn min', AppColors.blue, Colors.white, () => showWeather(context, _wx!)),
+            if (_loading)
+              _pill(null, 'Loading places…', Colors.white, AppColors.ink, null)
+            else if (_osm.lastError != null)
+              _pill(Icons.refresh, 'Places not loaded · retry', AppColors.redTint, AppColors.redDark, _loadVisible),
+            if (_noGps)
+              _pill(Icons.location_disabled, 'Turn on location', Colors.white, AppColors.ink, _locate),
+          ]),
+        ]),
+      ),
+      if (!_list)
+        Positioned(
+          right: 14,
+          bottom: 24,
+          child: Column(children: [
             GestureDetector(
-              onTap: _loadVisible,
-              child: Container(
-                margin: const EdgeInsets.only(top: 8),
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                decoration: BoxDecoration(
-                  color: AppColors.redTint,
-                  borderRadius: BorderRadius.circular(14),
-                  border: Border.all(color: AppColors.red),
-                ),
-                child: Text('Places not loaded: ${_osm.lastError} · tap to retry',
-                    style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: AppColors.redDark)),
-              ),
+              key: _kLocate,
+              onDoubleTap: () => store.setSatellite(!store.satellite),
+              child: _roundBtn(Icons.my_location, Colors.white, AppColors.ink, _locate),
             ),
-        ]),
-      ),
-      Positioned(
-        right: 14,
-        bottom: _tripTo != null ? 110 : 24,
-        child: Column(children: [
-          _roundBtn(_kLocate, Icons.my_location, Colors.white, AppColors.ink, _locate),
-          const SizedBox(height: 12),
-          _roundBtn(_kReport, Icons.add, AppColors.primary, Colors.white, () {}),
-        ]),
-      ),
-      Positioned(
-        left: 14,
-        bottom: _tripTo != null ? 116 : 30,
-        child: GestureDetector(
-          key: _kSos,
-          onLongPress: () {},
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 12),
-            decoration: BoxDecoration(
-              color: AppColors.red,
-              borderRadius: BorderRadius.circular(26),
-              boxShadow: const [BoxShadow(color: Color(0x40E0484D), blurRadius: 12, offset: Offset(0, 4))],
-            ),
-            child: const Text('SOS', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900, letterSpacing: 1.5)),
-          ),
+            const SizedBox(height: 12),
+            _roundBtn(Icons.add, AppColors.primary, Colors.white, () async {
+              await Navigator.of(context).push(MaterialPageRoute(builder: (_) => ReportMenu(pos: userPos)));
+            }, key: _kReport),
+          ]),
         ),
-      ),
+      Positioned(left: 14, bottom: 30, child: _sosButton()),
       const Positioned(
         right: 4,
         bottom: 2,
         child: Text('© OpenStreetMap contributors', style: TextStyle(fontSize: 9, color: AppColors.soft)),
       ),
-      if (_tripTo != null)
-        Positioned(
-          left: 12,
-          right: 12,
-          bottom: 18,
-          child: RoutePanel(
-            title: _tripTo!.address,
-            route: _route,
-            loading: _routing,
-            failed: !_routing && _route == null,
-            onRetry: () => _trip(_tripTo!),
-            onGo: () => showDirections(context, _route!, _tripTo!.address),
-            onClose: () => setState(() {
-              _tripTo = null;
-              _route = null;
-            }),
-          ),
-        ),
       if (_showGuide)
         Positioned.fill(
           child: GuideOverlay(
             total: 8,
             steps: [
               GuideStep(_kSearch, 'Search, vehicle and weather',
-                  'Type an address or a place. The circle on the left turns: once your vehicle, once the weather.'),
+                  'Type an address or a place. The circle on the left turns: once your vehicle, once the weather. Tap it for rain and wind.'),
               GuideStep(_kFilters, 'Quick filters', 'Tap a filter to see only parking, charging, service or shops. Tap again to see everything.'),
               GuideStep(_kPins, 'How to read the pins', 'The colour is the status. Inside the pin, the drawing and the time since the last update take turns.',
                   extra: const MiniLegend()),
@@ -394,47 +397,160 @@ class _MapScreenState extends State<MapScreen> {
     ]);
   }
 
-  Widget _searchBar() => GestureDetector(
-      onTap: _openSearch,
-      child: Container(
-        key: _kSearch,
-        height: 54,
-        padding: const EdgeInsets.symmetric(horizontal: 6),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(27),
-          boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 3))],
+  Widget _sosButton() {
+    final active = Store.i.sosActive;
+    return Listener(
+      key: _kSos,
+      onPointerDown: (_) => _sosDown(),
+      onPointerUp: (_) => _sosUp(),
+      onPointerCancel: (_) => _sosUp(),
+      child: GestureDetector(
+      onTap: active ? Store.i.cancelSos : null,
+      child: Stack(alignment: Alignment.center, children: [
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 12),
+          decoration: BoxDecoration(
+            color: AppColors.red,
+            borderRadius: BorderRadius.circular(26),
+            boxShadow: [
+              BoxShadow(color: AppColors.red.withValues(alpha: 0.25 + _sosProgress * 0.5), blurRadius: 12 + _sosProgress * 16),
+            ],
+          ),
+          child: Row(mainAxisSize: MainAxisSize.min, children: [
+            const Text('SOS', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900, letterSpacing: 1.5)),
+            if (active) ...[
+              const SizedBox(width: 8),
+              const Icon(Icons.close, color: Colors.white, size: 18),
+            ],
+          ]),
         ),
-        child: Row(children: [
-          AnimatedSwitcher(
-            duration: const Duration(milliseconds: 600),
-            transitionBuilder: (c, a) => ScaleTransition(scale: a, child: c),
-            child: Container(
-              key: ValueKey(_weatherFace),
-              width: 64,
-              height: 42,
-              decoration: BoxDecoration(
-                color: AppColors.paper,
-                borderRadius: BorderRadius.circular(21),
-                border: Border.all(color: AppColors.slate, width: 1.5),
-              ),
-              alignment: Alignment.center,
-              child: _weatherFace
-                  ? const Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                      Icon(Icons.wb_cloudy_outlined, size: 18),
-                      SizedBox(width: 3),
-                      Text('21°', style: TextStyle(fontWeight: FontWeight.w800)),
-                    ])
-                  : Padding(
-                      padding: const EdgeInsets.all(4),
-                      child: Image.asset((widget.state.myVehicle ?? Vehicle.bike).asset),
-                    ),
+        if (_sosProgress > 0)
+          Positioned(
+            left: 4,
+            right: 4,
+            bottom: 3,
+            child: LinearProgressIndicator(
+              value: _sosProgress,
+              minHeight: 3,
+              color: Colors.white,
+              backgroundColor: Colors.white24,
             ),
           ),
-          const SizedBox(width: 10),
-          const Expanded(child: Text('Search address or city', style: TextStyle(color: AppColors.soft, fontSize: 16))),
+      ]),
+      ),
+    );
+  }
+
+  Widget _pill(IconData? icon, String text, Color bg, Color fg, VoidCallback? onTap) => GestureDetector(
+        onTap: onTap,
+        child: Container(
+          height: 30,
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          decoration: BoxDecoration(
+            color: bg,
+            borderRadius: BorderRadius.circular(15),
+            boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 2))],
+          ),
+          child: Row(mainAxisSize: MainAxisSize.min, children: [
+            if (icon != null) ...[Icon(icon, size: 15, color: fg), const SizedBox(width: 5)] else ...[
+              SizedBox(width: 12, height: 12, child: CircularProgressIndicator(strokeWidth: 2, color: fg)),
+              const SizedBox(width: 6),
+            ],
+            Text(text, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: fg)),
+          ]),
+        ),
+      );
+
+  Widget _mapListToggle() => Container(
+        height: 30,
+        padding: const EdgeInsets.all(3),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(15),
+          boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 2))],
+        ),
+        child: Row(mainAxisSize: MainAxisSize.min, children: [
+          for (final (label, isList) in const [('Map', false), ('List', true)])
+            GestureDetector(
+              onTap: () => setState(() => _list = isList),
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: _list == isList ? AppColors.primary : Colors.transparent,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(label,
+                    style: TextStyle(
+                        fontSize: 12, fontWeight: FontWeight.w800, color: _list == isList ? Colors.white : AppColors.soft)),
+              ),
+            ),
         ]),
-      ));
+      );
+
+  Widget _searchBar() => GestureDetector(
+        onTap: _openSearch,
+        child: Container(
+          key: _kSearch,
+          height: 54,
+          padding: const EdgeInsets.symmetric(horizontal: 6),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(27),
+            boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 3))],
+          ),
+          child: Row(children: [
+            GestureDetector(
+              onTap: () {
+                if (_wx != null) {
+                  showWeather(context, _wx!);
+                } else {
+                  _loadWeather();
+                }
+              },
+              child: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 600),
+                transitionBuilder: (c, a) => ScaleTransition(scale: a, child: c),
+                child: Container(
+                  key: ValueKey(_weatherFace),
+                  width: 64,
+                  height: 42,
+                  decoration: BoxDecoration(
+                    color: _weatherFace ? const Color(0xFFE6EEFB) : AppColors.paper,
+                    borderRadius: BorderRadius.circular(21),
+                    border: Border.all(color: _weatherFace ? AppColors.blue : AppColors.slate, width: 1.5),
+                  ),
+                  alignment: Alignment.center,
+                  child: _weatherFace
+                      ? Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                          Icon(_wxIcon(), size: 18, color: AppColors.blue),
+                          const SizedBox(width: 3),
+                          Text(_wx == null ? '--°' : '${_wx!.temp.round()}°',
+                              style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.blue)),
+                        ])
+                      : Padding(
+                          padding: const EdgeInsets.all(4),
+                          child: Image.asset((widget.state.myVehicle ?? Vehicle.bike).asset),
+                        ),
+                ),
+              ),
+            ),
+            const SizedBox(width: 10),
+            const Expanded(child: Text('Search address or place', style: TextStyle(color: AppColors.soft, fontSize: 16))),
+          ]),
+        ),
+      );
+
+  IconData _wxIcon() {
+    final s = _wx?.sky ?? 'Cloudy';
+    return switch (s) {
+      'Clear' => Icons.wb_sunny_outlined,
+      'Rain' || 'Showers' => Icons.umbrella_outlined,
+      'Snow' => Icons.ac_unit,
+      'Storm' => Icons.thunderstorm_outlined,
+      _ => Icons.wb_cloudy_outlined,
+    };
+  }
 
   Widget _filters() => SingleChildScrollView(
         key: _kFilters,
@@ -470,7 +586,7 @@ class _MapScreenState extends State<MapScreen> {
         ]),
       );
 
-  Widget _roundBtn(Key key, IconData i, Color bg, Color fg, VoidCallback onTap) => Material(
+  Widget _roundBtn(IconData i, Color bg, Color fg, VoidCallback onTap, {Key? key}) => Material(
         key: key,
         color: bg,
         shape: const CircleBorder(),
@@ -481,13 +597,66 @@ class _MapScreenState extends State<MapScreen> {
           child: SizedBox(width: 52, height: 52, child: Icon(i, color: fg)),
         ),
       );
-
-  // Used so the import of latlong2 stays explicit for readers.
-  LatLng get center => _map.camera.center;
 }
 
+/// First tap on a sharing pin (and Profile → Sharing): pick the operators to show, filtered by GPS.
+Future<void> chooseOperators(BuildContext context) async {
+  final chosen = {for (final o in demoOperators) o.name: Store.i.operators.contains(o.name)};
+  String priceFilter = 'All';
+  await showModalBottomSheet(
+    context: context,
+    isScrollControlled: true,
+    backgroundColor: Colors.white,
+    shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
+    builder: (ctx) => StatefulBuilder(
+      builder: (ctx, set) {
+        var ops = demoOperators.toList();
+        if (priceFilter == '≤ \$0.35/min') ops = ops.where((o) => o.price.contains('0.19') || o.price.contains('0.3')).toList();
+        if (priceFilter == 'Cheapest first') ops.sort((a, b) => a.price.compareTo(b.price));
+        return Padding(
+          padding: const EdgeInsets.fromLTRB(18, 14, 18, 18),
+          child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
+            const Text('Which sharing on the map?', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800)),
+            const Text.rich(TextSpan(children: [
+              TextSpan(text: 'Near you: Chicago', style: TextStyle(fontWeight: FontWeight.w800)),
+              TextSpan(text: ' (GPS) · tick what you want on the map'),
+            ]), style: TextStyle(fontSize: 12, color: AppColors.soft)),
+            const SizedBox(height: 10),
+            Wrap(spacing: 6, children: [
+              for (final f in ['All', '≤ \$0.35/min', 'Cheapest first'])
+                ChoiceChip(label: Text(f), selected: priceFilter == f, onSelected: (_) => set(() => priceFilter = f)),
+            ]),
+            const SizedBox(height: 6),
+            for (final o in ops)
+              CheckboxListTile(
+                contentPadding: EdgeInsets.zero,
+                value: chosen[o.name],
+                onChanged: (v) => set(() => chosen[o.name] = v ?? false),
+                title: Text(o.name, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 17)),
+                subtitle: Text(o.price, style: const TextStyle(fontWeight: FontWeight.w700)),
+              ),
+            const Center(
+              child: Text('All operators in the US (70+) ›', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 12)),
+            ),
+            const SizedBox(height: 10),
+            FilledButton(
+              onPressed: () {
+                Store.i.setOperators({for (final e in chosen.entries) if (e.value) e.key});
+                Navigator.pop(ctx);
+              },
+              child: Text('Done · ${chosen.values.where((v) => v).length} operators'),
+            ),
+          ]),
+        );
+      },
+    ),
+  );
+}
+
+/// Search: recent, saved and categories; while typing, our places first, then US addresses.
 class _SearchSheet extends StatefulWidget {
-  const _SearchSheet();
+  final List<Place> places;
+  const _SearchSheet({required this.places});
   @override
   State<_SearchSheet> createState() => _SearchSheetState();
 }
@@ -495,6 +664,8 @@ class _SearchSheet extends StatefulWidget {
 class _SearchSheetState extends State<_SearchSheet> {
   Timer? _wait;
   List<GeoResult> _results = [];
+  List<Place> _ours = [];
+  String _q = '';
   bool _busy = false;
 
   @override
@@ -504,11 +675,19 @@ class _SearchSheetState extends State<_SearchSheet> {
   }
 
   void _changed(String q) {
+    _q = q.trim();
+    final low = _q.toLowerCase();
+    setState(() {
+      _ours = low.length < 2
+          ? []
+          : widget.places.where((p) => p.address.toLowerCase().contains(low) || p.type.title.toLowerCase().contains(low)).take(6).toList();
+    });
     _wait?.cancel();
     // the free OpenStreetMap search allows about one request per second
     _wait = Timer(const Duration(milliseconds: 800), () async {
+      if (_q.length < 3) return;
       setState(() => _busy = true);
-      final r = await searchUs(q);
+      final r = await searchUs(_q);
       if (mounted) {
         setState(() {
           _results = r;
@@ -520,14 +699,17 @@ class _SearchSheetState extends State<_SearchSheet> {
 
   @override
   Widget build(BuildContext context) {
+    final store = Store.i;
+    final saved = store.savedPlaceData.values.toList();
     return Padding(
       padding: EdgeInsets.fromLTRB(16, 14, 16, MediaQuery.of(context).viewInsets.bottom + 16),
-      child: Column(mainAxisSize: MainAxisSize.min, children: [
+      child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
         TextField(
           autofocus: true,
           onChanged: _changed,
+          onSubmitted: (s) => store.addRecent(s),
           decoration: InputDecoration(
-            hintText: 'Address or city in the US',
+            hintText: 'Address, place or city in the US',
             prefixIcon: const Icon(Icons.search),
             suffixIcon: _busy
                 ? const Padding(
@@ -542,14 +724,52 @@ class _SearchSheetState extends State<_SearchSheet> {
         ),
         const SizedBox(height: 8),
         ConstrainedBox(
-          constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.45),
+          constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.5),
           child: ListView(shrinkWrap: true, children: [
+            if (_q.isEmpty) ...[
+              Wrap(spacing: 6, runSpacing: 6, children: [
+                for (final c in const ['Parking', 'Charging', 'Service', 'Shop', 'Sharing'])
+                  ActionChip(label: Text(c), onPressed: () => Navigator.pop(context, c)),
+              ]),
+              if (store.recentSearches.isNotEmpty) _head('Recent'),
+              for (final r in store.recentSearches)
+                ListTile(
+                  dense: true,
+                  leading: const Icon(Icons.history),
+                  title: Text(r),
+                  onTap: () => _changed(r),
+                ),
+              if (saved.isNotEmpty) _head('Saved places'),
+              for (final p in saved)
+                ListTile(
+                  dense: true,
+                  leading: const Icon(Icons.favorite, color: AppColors.red),
+                  title: Text(p.address),
+                  subtitle: Text(p.type.title),
+                  onTap: () => Navigator.pop(context, p),
+                ),
+            ],
+            if (_ours.isNotEmpty) _head('Our places'),
+            for (final p in _ours)
+              ListTile(
+                leading: Glyph(p.type, size: 22, color: colorsFor(p.shownStatus).dark),
+                title: Text(p.address, style: const TextStyle(fontWeight: FontWeight.w700)),
+                subtitle: Text('${p.type.title} · ${p.distance}'),
+                onTap: () {
+                  store.addRecent(_q);
+                  Navigator.pop(context, p);
+                },
+              ),
+            if (_results.isNotEmpty) _head('Addresses'),
             for (final r in _results)
               ListTile(
                 leading: const Icon(Icons.place_outlined),
                 title: Text(r.title, style: const TextStyle(fontWeight: FontWeight.w700)),
                 subtitle: Text(r.subtitle, maxLines: 1, overflow: TextOverflow.ellipsis),
-                onTap: () => Navigator.pop(context, r),
+                onTap: () {
+                  store.addRecent(_q);
+                  Navigator.pop(context, r);
+                },
               ),
           ]),
         ),
@@ -557,4 +777,9 @@ class _SearchSheetState extends State<_SearchSheet> {
       ]),
     );
   }
+
+  Widget _head(String t) => Padding(
+        padding: const EdgeInsets.only(top: 10, bottom: 2),
+        child: Text(t, style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.soft)),
+      );
 }

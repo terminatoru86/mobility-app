@@ -161,7 +161,9 @@ class BusyChart extends StatelessWidget {
   final Color color;
   final String title;
   final String? tag;
-  const BusyChart({super.key, required this.values, required this.color, this.title = 'Busy today', this.tag});
+  final VoidCallback? onHistory;
+  const BusyChart(
+      {super.key, required this.values, required this.color, this.title = 'Busy today', this.tag, this.onHistory});
 
   @override
   Widget build(BuildContext context) {
@@ -181,7 +183,7 @@ class BusyChart extends StatelessWidget {
             child: Text(tag!, style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.greenDark)),
           ),
         OutlinedButton.icon(
-          onPressed: () {},
+          onPressed: onHistory,
           icon: const Icon(Icons.schedule, size: 14),
           label: const Text('History', style: TextStyle(fontSize: 11, fontWeight: FontWeight.w800)),
           style: OutlinedButton.styleFrom(
@@ -269,7 +271,8 @@ class SecurityRow extends StatelessWidget {
 /// Reviews: stars, age on the right, one line of text, dots; swipe for more.
 class ReviewsCarousel extends StatefulWidget {
   final Place place;
-  const ReviewsCarousel(this.place, {super.key});
+  final VoidCallback? onOpen;
+  const ReviewsCarousel(this.place, {super.key, this.onOpen});
   @override
   State<ReviewsCarousel> createState() => _ReviewsCarouselState();
 }
@@ -280,7 +283,9 @@ class _ReviewsCarouselState extends State<ReviewsCarousel> {
   Widget build(BuildContext context) {
     final rs = widget.place.reviews;
     if (rs.isEmpty) return const SizedBox.shrink();
-    return Container(
+    return GestureDetector(
+      onTap: widget.onOpen,
+      child: Container(
       decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(12)),
       padding: const EdgeInsets.fromLTRB(10, 6, 10, 6),
       child: Column(children: [
@@ -323,6 +328,7 @@ class _ReviewsCarouselState extends State<ReviewsCarousel> {
           ),
         ),
       ]),
+      ),
     );
   }
 }
@@ -331,13 +337,22 @@ class _ReviewsCarouselState extends State<ReviewsCarousel> {
 /// the chevron opens three.
 class QaCard extends StatefulWidget {
   final List<QA> qa;
-  const QaCard(this.qa, {super.key});
+  final ValueChanged<String>? onAsk;
+  const QaCard(this.qa, {super.key, this.onAsk});
   @override
   State<QaCard> createState() => _QaCardState();
 }
 
 class _QaCardState extends State<QaCard> {
   bool _open = false;
+  final _ask = TextEditingController();
+
+  @override
+  void dispose() {
+    _ask.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final shown = _open ? widget.qa.take(3).toList() : widget.qa.take(1).toList();
@@ -362,8 +377,16 @@ class _QaCardState extends State<QaCard> {
           _row('A', q.a, false),
         ],
         const SizedBox(height: 8),
-        const TextField(
-          decoration: InputDecoration(
+        TextField(
+          controller: _ask,
+          textInputAction: TextInputAction.send,
+          onSubmitted: (t) {
+            if (t.trim().isEmpty) return;
+            widget.onAsk?.call(t.trim());
+            _ask.clear();
+            setState(() => _open = true);
+          },
+          decoration: const InputDecoration(
             hintText: 'Ask a question…',
             isDense: true,
             filled: true,

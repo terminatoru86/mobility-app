@@ -13,6 +13,7 @@ import '../data/places.dart';
 import '../theme.dart';
 import '../widgets/signup.dart';
 import '../widgets/tiles.dart';
+import 'trip_screen.dart';
 
 /// Community: Marketplace · Ride with Friends · BMX.
 class CommunityScreen extends StatefulWidget {
@@ -889,7 +890,7 @@ class _BmxSheetState extends State<BmxSheet> {
               ]),
             ),
             FilledButton.icon(
-              onPressed: () {},
+              onPressed: () => startTrip(context, to: b.pos, toName: b.name),
               icon: const Icon(Icons.navigation_rounded, size: 18),
               label: const Text('Trip'),
               style: FilledButton.styleFrom(minimumSize: const Size(96, 44)),
