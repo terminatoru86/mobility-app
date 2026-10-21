@@ -35,17 +35,22 @@ class ProfileScreen extends StatelessWidget {
               // the round vehicle button opens My vehicle
               GestureDetector(
                 onTap: () => _push(context, MyVehicleScreen(state: state)),
-                child: Container(
-                  width: 58,
-                  height: 58,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    shape: BoxShape.circle,
-                    border: Border.all(color: AppColors.primary, width: 2),
+                child: Column(children: [
+                  Container(
+                    width: 58,
+                    height: 58,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                      border: Border.all(color: AppColors.ink, width: 2),
+                    ),
+                    padding: const EdgeInsets.all(8),
+                    child: Image.asset((state.myVehicle ?? Vehicle.bike).asset),
                   ),
-                  padding: const EdgeInsets.all(8),
-                  child: Image.asset((state.myVehicle ?? Vehicle.bike).asset),
-                ),
+                  const SizedBox(height: 2),
+                  Text('${(state.myVehicle ?? Vehicle.bike).label} ›',
+                      style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800)),
+                ]),
               ),
             ]),
             const SizedBox(height: 6),
@@ -190,17 +195,31 @@ class MyVehicleScreen extends StatefulWidget {
 }
 
 class _MyVehicleScreenState extends State<MyVehicleScreen> {
-  late Vehicle _v = widget.state.myVehicle ?? Vehicle.bike;
+  // E-bike is an option of the bicycle, so the row shows four vehicles
+  late Vehicle _v = widget.state.myVehicle == Vehicle.ebike ? Vehicle.bike : (widget.state.myVehicle ?? Vehicle.bike);
   late final _model = TextEditingController(text: widget.state.model);
   final _serial = TextEditingController();
-  final Set<String> _opts = {};
+  late final Set<String> _opts = {if (widget.state.myVehicle == Vehicle.ebike) 'E-bike'};
 
-  static const _options = {
-    Vehicle.bike: ['E-bike', 'Cargo 2 seats', 'Cargo delivery', 'Cargo box', 'Trailer'],
-    Vehicle.ebike: ['Cargo 2 seats', 'Cargo delivery', 'Cargo box', 'Trailer'],
-    Vehicle.scooter: ['Cargo · basket'],
-    Vehicle.moped: ['Cargo · delivery'],
-    Vehicle.moto: ['Top box', 'Side bags'],
+  // option → picture (from the manual)
+  static const _options = <Vehicle, List<(String, String)>>{
+    Vehicle.bike: [
+      ('E-bike', 'assets/vehicles/opt_e.jpg'),
+      ('Cargo 2 seats', 'assets/vehicles/opt_c2.jpg'),
+      ('Cargo delivery', 'assets/vehicles/opt_cd.jpg'),
+      ('Cargo box', 'assets/vehicles/opt_cb.jpg'),
+      ('Trailer', 'assets/vehicles/opt_tr.jpg'),
+    ],
+    Vehicle.scooter: [('Cargo · basket', 'assets/vehicles/opt_sc.jpg')],
+    Vehicle.moped: [('Cargo · delivery', 'assets/vehicles/opt_cm.jpg')],
+    Vehicle.moto: [('Top box & side bags', 'assets/vehicles/opt_mc.jpg')],
+  };
+
+  static const _forName = {
+    Vehicle.bike: 'bicycle',
+    Vehicle.scooter: 'scooter',
+    Vehicle.moped: 'moped',
+    Vehicle.moto: 'motorcycle',
   };
 
   @override
@@ -210,15 +229,34 @@ class _MyVehicleScreenState extends State<MyVehicleScreen> {
     super.dispose();
   }
 
+  Future<void> _save() async {
+    final v = _v == Vehicle.bike && _opts.contains('E-bike') ? Vehicle.ebike : _v;
+    await widget.state.saveVehicle(v, _model.text.trim());
+    if (mounted) Navigator.pop(context);
+  }
+
+  InputDecoration _deco(String h) => InputDecoration(
+        hintText: h,
+        isDense: true,
+        filled: true,
+        fillColor: AppColors.paper,
+        border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12)), borderSide: BorderSide.none),
+      );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.paper,
-      appBar: AppBar(backgroundColor: AppColors.paper, title: const Text('My vehicle')),
-      body: ListView(padding: const EdgeInsets.all(16), children: [
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: const Text('My vehicle', style: TextStyle(fontWeight: FontWeight.w800)),
+        actions: [TextButton(onPressed: _save, child: const Text('Save', style: TextStyle(fontWeight: FontWeight.w800)))],
+      ),
+      body: ListView(padding: const EdgeInsets.fromLTRB(16, 4, 16, 24), children: [
         const Text('Choose what you ride. The circle appears in Profile.', style: TextStyle(color: AppColors.soft)),
-        const SizedBox(height: 12),
-        Row(children: [
+        const SizedBox(height: 14),
+        // four vehicles in a row: the chosen one framed, the others faded
+        Row(crossAxisAlignment: CrossAxisAlignment.end, children: [
           for (final v in const [Vehicle.bike, Vehicle.scooter, Vehicle.moped, Vehicle.moto])
             Expanded(
               child: GestureDetector(
@@ -226,69 +264,76 @@ class _MyVehicleScreenState extends State<MyVehicleScreen> {
                   _v = v;
                   _opts.clear();
                 }),
-                child: Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 3),
-                  padding: const EdgeInsets.symmetric(vertical: 8),
-                  decoration: BoxDecoration(
-                    color: _v == v ? AppColors.slateTint : Colors.white,
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: _v == v ? AppColors.primary : Colors.transparent, width: 2),
+                child: AnimatedOpacity(
+                  duration: const Duration(milliseconds: 200),
+                  opacity: _v == v ? 1 : 0.32,
+                  child: Container(
+                    margin: const EdgeInsets.symmetric(horizontal: 3),
+                    padding: const EdgeInsets.symmetric(vertical: 6),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: _v == v ? AppColors.ink : Colors.transparent, width: 1.5),
+                    ),
+                    child: Column(children: [
+                      SizedBox(height: 46, child: Image.asset(v.asset, fit: BoxFit.contain)),
+                      const SizedBox(height: 4),
+                      Text(v.label, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700)),
+                    ]),
                   ),
-                  child: Column(children: [
-                    SizedBox(height: 44, child: Image.asset(v.asset)),
-                    const SizedBox(height: 4),
-                    Text(v.label, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800)),
-                  ]),
                 ),
               ),
             ),
         ]),
-        const SizedBox(height: 12),
-        TextField(
-          controller: _model,
-          decoration: const InputDecoration(
-            hintText: 'Model, e.g. Trek FX 2',
-            filled: true,
-            fillColor: Colors.white,
-            border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(14)), borderSide: BorderSide.none),
-          ),
-        ),
-        const SizedBox(height: 8),
-        TextField(
-          controller: _serial,
-          decoration: const InputDecoration(
-            hintText: 'Serial number',
-            filled: true,
-            fillColor: Colors.white,
-            border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(14)), borderSide: BorderSide.none),
-          ),
-        ),
-        const SizedBox(height: 12),
-        Text('For the ${_v.label.toLowerCase()}', style: const TextStyle(fontWeight: FontWeight.w800)),
-        const SizedBox(height: 6),
-        Wrap(spacing: 6, runSpacing: 6, children: [
-          for (final o in _options[_v]!)
-            FilterChip(
-              label: Text(o),
-              selected: _opts.contains(o),
-              onSelected: (on) => setState(() {
-                if (on) {
-                  _opts.add(o);
-                } else {
-                  _opts.remove(o);
-                }
-              }),
-            ),
+        const SizedBox(height: 14),
+        // model and serial on one row
+        Row(children: [
+          Expanded(flex: 8, child: TextField(controller: _model, decoration: _deco('e.g. Trek FX 2'))),
+          const SizedBox(width: 6),
+          Expanded(flex: 5, child: TextField(controller: _serial, decoration: _deco('Serial no.'))),
         ]),
-        const SizedBox(height: 18),
-        FilledButton(
-          onPressed: () async {
-            final v = _v == Vehicle.bike && _opts.contains('E-bike') ? Vehicle.ebike : _v;
-            await widget.state.saveVehicle(v, _model.text.trim());
-            if (context.mounted) Navigator.pop(context);
-          },
-          child: const Text('Save'),
+        const SizedBox(height: 16),
+        Text('For the ${_forName[_v]}',
+            style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.soft)),
+        const SizedBox(height: 8),
+        // only the options of the chosen vehicle, with pictures, three per row
+        GridView.count(
+          crossAxisCount: 3,
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          mainAxisSpacing: 8,
+          crossAxisSpacing: 8,
+          childAspectRatio: 0.95,
+          children: [
+            for (final (name, img) in _options[_v]!)
+              GestureDetector(
+                onTap: () => setState(() {
+                  if (!_opts.remove(name)) _opts.add(name);
+                }),
+                child: Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                    color: _opts.contains(name) ? AppColors.slateTint : AppColors.paper,
+                    borderRadius: BorderRadius.circular(14),
+                    border: Border.all(color: _opts.contains(name) ? AppColors.ink : Colors.transparent, width: 1.5),
+                  ),
+                  child: Column(children: [
+                    Expanded(child: Image.asset(img, fit: BoxFit.contain)),
+                    const SizedBox(height: 4),
+                    Text(name,
+                        textAlign: TextAlign.center,
+                        maxLines: 2,
+                        style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700, height: 1.1)),
+                  ]),
+                ),
+              ),
+          ],
         ),
+        const SizedBox(height: 10),
+        const Text('Scooter: Cargo · basket. Moped: Cargo · delivery. Motorcycle: top box and side bags. '
+            'Only the options of the chosen vehicle are shown.',
+            style: TextStyle(fontSize: 11, color: AppColors.soft)),
+        const SizedBox(height: 16),
+        FilledButton(onPressed: _save, child: const Text('Save')),
       ]),
     );
   }

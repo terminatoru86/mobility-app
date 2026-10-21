@@ -22,19 +22,34 @@ const _nightMatrix = <double>[
   0, 0, 0, 1, 0,
 ];
 
-Widget baseTiles() => ColorFiltered(
-      colorFilter: _night ? const ColorFilter.matrix(_nightMatrix) : const ColorFilter.matrix(<double>[
-        // grey scale, then lighter and softer
-        0.17, 0.38, 0.07, 0, 92, //
-        0.17, 0.38, 0.07, 0, 94, //
-        0.17, 0.38, 0.07, 0, 98, //
-        0, 0, 0, 1, 0,
-      ]),
+/// [street]: the GPS guidance look, closer to real colours so streets, parks and
+/// buildings are easy to read at high zoom.
+Widget baseTiles({bool street = false}) => ColorFiltered(
+      colorFilter: _night
+          ? const ColorFilter.matrix(_nightMatrix)
+          : street
+              ? const ColorFilter.matrix(<double>[
+                  // 60 % colour, same brightness
+                  0.685, 0.286, 0.029, 0, 0, //
+                  0.085, 0.886, 0.029, 0, 0, //
+                  0.085, 0.286, 0.629, 0, 0, //
+                  0, 0, 0, 1, 0,
+                ])
+              : const ColorFilter.matrix(<double>[
+                  // soft grey: streets, parks and water still readable, pins stand out
+                  0.26, 0.55, 0.09, 0, 38, //
+                  0.25, 0.56, 0.09, 0, 40, //
+                  0.24, 0.53, 0.13, 0, 46, //
+                  0, 0, 0, 1, 0,
+                ]),
       child: TileLayer(
         urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+        // if a tile does not come, the same tile from the German OpenStreetMap mirror
+        fallbackUrl: 'https://tile.openstreetmap.de/{z}/{x}/{y}.png',
         userAgentPackageName: 'com.mobility.app',
         maxNativeZoom: 19,
-        keepBuffer: 4,
+        keepBuffer: 6,
+        panBuffer: 2,
         tileDisplay: const TileDisplay.instantaneous(),
       ),
     );

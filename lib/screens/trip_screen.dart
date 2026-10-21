@@ -3,6 +3,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:latlong2/latlong.dart';
@@ -521,6 +522,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
   late Place? _place = widget.place;
   List<LatLng> _walk = const []; // dotted walking line to the suggested rack
   bool _showRackCard = false;
+  Place? _statsPlace; // shown selected behind the Stats veil
   static const _zoom = 18.4; // close to the street, but not all the way in
   late LatLng _pos = userPos;
   double _heading = 0;
@@ -645,7 +647,12 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
     var stats = (_place != null && !_place!.type.isNeutral) ? _place : null;
     stats ??= _nearestOurs(_pos, 40);
     if (stats != null) {
-      await Navigator.of(context).push(MaterialPageRoute(builder: (_) => StatsScreen(place: stats!)));
+      // keep the map underneath: the place pin is shown big behind the veil
+      setState(() => _statsPlace = stats);
+      try {
+        _map.move(stats.pos, _zoom);
+      } catch (_) {}
+      await showStats(context, stats);
       if (mounted) Navigator.of(context).pop();
       return;
     }
@@ -799,7 +806,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
             },
           ),
           children: [
-            baseTiles(),
+            baseTiles(street: true),
             routeLayer(_route.points),
             if (done.length > 1)
               PolylineLayer(polylines: [Polyline(points: done, strokeWidth: 6, color: const Color(0xFF9AA6AC))]),
@@ -820,6 +827,14 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
                   height: PlacePin.height,
                   alignment: Alignment.topCenter,
                   child: PlacePin(place: p, small: true),
+                ),
+              if (_statsPlace != null)
+                Marker(
+                  point: _statsPlace!.pos,
+                  width: PlacePin.width,
+                  height: PlacePin.height,
+                  alignment: Alignment.topCenter,
+                  child: PlacePin(place: _statsPlace!, selected: true),
                 ),
               for (final h in hazards)
                 Marker(
@@ -1023,49 +1038,75 @@ List<LatLng> pointsUpTo(List<LatLng> pts, double meters) {
 
 // ───────────────────────── 3.4 Stats, after you arrive ─────────────────────────
 
-class StatsScreen extends StatelessWidget {
+/// Stats: over the map, a light dark veil and three big 3D buttons
+/// (green, yellow, red) one under the other. No text, no confirmation:
+/// tap one, it presses down, the place takes that colour.
+Future<void> showStats(BuildContext context, Place place) {
+  HapticFeedback.mediumImpact(); // the phone vibrates when it appears
+  return showGeneralDialog<void>(
+    context: context,
+    barrierDismissible: true,
+    barrierLabel: 'Later',
+    barrierColor: const Color(0x660F1E24),
+    transitionDuration: const Duration(milliseconds: 220),
+    pageBuilder: (ctx, _, __) => _StatsOverlay(place: place),
+    transitionBuilder: (ctx, a, _, child) => FadeTransition(
+      opacity: a,
+      child: ScaleTransition(scale: Tween(begin: 0.92, end: 1.0).animate(a), child: child),
+    ),
+  );
+}
+
+class _StatsOverlay extends StatefulWidget {
   final Place place;
-  const StatsScreen({super.key, required this.place});
+  const _StatsOverlay({required this.place});
+  @override
+  State<_StatsOverlay> createState() => _StatsOverlayState();
+}
+
+class _StatsOverlayState extends State<_StatsOverlay> {
+  Status? _pressed;
+
+  Future<void> _pick(Status s) async {
+    setState(() => _pressed = s);
+    HapticFeedback.lightImpact();
+    await Future.delayed(const Duration(milliseconds: 260));
+    Store.i.confirm(widget.place.id, s);
+    if (mounted) Navigator.of(context).pop();
+  }
+
+  Widget _ball(Status s, Color c1, Color c2, Color dd) {
+    final down = _pressed == s;
+    return GestureDetector(
+      onTap: _pressed == null ? () => _pick(s) : null,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 140),
+        width: 104,
+        height: 104,
+        margin: EdgeInsets.only(top: down ? 8 : 0, bottom: down ? 0 : 8),
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          gradient: RadialGradient(center: const Alignment(-0.3, -0.4), radius: 0.9, colors: [c1, c2]),
+          boxShadow: [
+            BoxShadow(color: dd, offset: Offset(0, down ? 1 : 9)),
+            BoxShadow(color: const Color(0x55000000), offset: Offset(0, down ? 3 : 14), blurRadius: down ? 6 : 16),
+          ],
+        ),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
-    Widget ball(Status s, Color c1, Color c2, Color dd) => GestureDetector(
-          onTap: () {
-            Store.i.confirm(place.id, s);
-            Navigator.of(context).pop();
-          },
-          child: Container(
-            width: 84,
-            height: 84,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: RadialGradient(center: const Alignment(-0.3, -0.4), colors: [c1, c2]),
-              boxShadow: [
-                BoxShadow(color: dd, offset: const Offset(0, 6)),
-                const BoxShadow(color: Color(0x40000000), offset: Offset(0, 10), blurRadius: 12),
-              ],
-            ),
-          ),
-        );
-    return Scaffold(
-      backgroundColor: AppColors.paper,
-      appBar: AppBar(backgroundColor: AppColors.paper, title: Text(place.type.title)),
-      body: SafeArea(
-        child: Column(children: [
-          const SizedBox(height: 20),
-          Glyph(place.type, size: 56, color: AppColors.primary),
-          const SizedBox(height: 8),
-          Text(place.address,
-              textAlign: TextAlign.center, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800)),
-          const Spacer(),
-          Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-            ball(Status.free, const Color(0xFF93C96E), AppColors.green, const Color(0xFF3B7420)),
-            ball(Status.almost, const Color(0xFFFFD866), AppColors.yellow, const Color(0xFFB07F00)),
-            ball(Status.full, const Color(0xFFFF8A8D), AppColors.red, const Color(0xFFA82328)),
-          ]),
-          const Spacer(),
-          TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('Later')),
-          const SizedBox(height: 16),
+    return Material(
+      type: MaterialType.transparency,
+      child: Center(
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+          _ball(Status.free, const Color(0xFF93C96E), AppColors.green, const Color(0xFF3B7420)),
+          const SizedBox(height: 22),
+          _ball(Status.almost, const Color(0xFFFFD866), AppColors.yellow, const Color(0xFFB07F00)),
+          const SizedBox(height: 22),
+          _ball(Status.full, const Color(0xFFFF8A8D), AppColors.red, const Color(0xFFA82328)),
         ]),
       ),
     );

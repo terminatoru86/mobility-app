@@ -111,23 +111,24 @@ class PlacePin extends StatelessWidget {
               ),
             ),
             // number top-right (no circle) or rating badge for neutral places
+            // the number alone, no circle: dark status colour with a white outline
             if (showCount)
               Positioned(
-                top: 0,
-                right: 2,
-                child: Container(
-                  constraints: const BoxConstraints(minWidth: 22),
-                  padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(11),
-                    border: Border.all(color: c.main, width: 2),
-                    boxShadow: const [BoxShadow(color: Color(0x40000000), blurRadius: 3, offset: Offset(0, 1))],
-                  ),
-                  child: Text(p.count!,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 13, fontWeight: FontWeight.w900, color: c.dark, height: 1.2)),
-                ),
+                top: -2,
+                right: 3,
+                child: Text(p.count!,
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w900,
+                      color: c.dark,
+                      shadows: const [
+                        Shadow(color: Colors.white, offset: Offset(1.2, 0)),
+                        Shadow(color: Colors.white, offset: Offset(-1.2, 0)),
+                        Shadow(color: Colors.white, offset: Offset(0, 1.2)),
+                        Shadow(color: Colors.white, offset: Offset(0, -1.2)),
+                        Shadow(color: Colors.white, blurRadius: 3),
+                      ],
+                    )),
               ),
             if (p.type.isNeutral && p.reviewCount > 0)
               Positioned(

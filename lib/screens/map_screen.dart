@@ -19,6 +19,7 @@ import '../widgets/place_sheet.dart';
 import '../widgets/signup.dart';
 import '../widgets/tiles.dart';
 import 'map_extras.dart';
+import 'other_screens.dart' show MyVehicleScreen;
 import 'trip_screen.dart';
 
 class MapScreen extends StatefulWidget {
@@ -620,8 +621,13 @@ class MapScreenState extends State<MapScreen> {
           ),
           child: Row(children: [
             GestureDetector(
-              onTap: () {
-                if (_wx != null) {
+              // vehicle side → My vehicle; weather side → rain and wind
+              onTap: () async {
+                if (!_weatherFace) {
+                  await Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MyVehicleScreen(state: widget.state)));
+                  if (mounted) setState(() {});
+                } else if (_wx != null) {
                   showWeather(context, _wx!);
                 } else {
                   _loadWeather();
@@ -912,7 +918,8 @@ class _SearchSheetState extends State<_SearchSheet> {
               ListTile(
                 leading: const Icon(Icons.place_outlined),
                 title: Text(r.title, style: const TextStyle(fontWeight: FontWeight.w700)),
-                subtitle: Text(r.subtitle, maxLines: 1, overflow: TextOverflow.ellipsis),
+                subtitle: Text('${fmtDistance(const Distance()(userPos, r.pos))} · ${r.subtitle}',
+                    maxLines: 1, overflow: TextOverflow.ellipsis),
                 onTap: () {
                   store.addRecent(_q);
                   Navigator.pop(context, r);
