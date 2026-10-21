@@ -676,21 +676,25 @@ class MapScreenState extends State<MapScreen> {
     thinOut(others, 3, 1500);
     _dotPlaces = [...dots, ...others];
     final r = _zoom < 11 ? 2.6 : (_zoom < 14 ? 3.4 : 4.6);
-    final small = r * 0.5;
+    // a bit smaller than the dots outside the ring, but solid and clearly visible on the calm map
+    final small = math.max(2.8, r * 0.75);
+    // shops, service, rent have no live status: dark slate (light grey would vanish on the grey map)
+    Color dotColor(Place p) =>
+        p.shownStatus == Status.neutral || p.shownStatus == Status.unknown ? AppColors.slate : colorsFor(p.shownStatus).main;
     _dotCache = [
       for (final p in others)
         CircleMarker(
           point: p.pos,
           radius: small,
-          color: colorsFor(p.shownStatus == Status.neutral ? Status.unknown : p.shownStatus).main.withValues(alpha: 0.75),
+          color: dotColor(p),
           borderColor: Colors.white,
-          borderStrokeWidth: 0.6,
+          borderStrokeWidth: 1.2,
         ),
       for (final p in dots)
         CircleMarker(
           point: p.pos,
           radius: r,
-          color: colorsFor(p.shownStatus == Status.neutral ? Status.unknown : p.shownStatus).main.withValues(alpha: 0.9),
+          color: dotColor(p).withValues(alpha: 0.95),
           borderColor: Colors.white,
           borderStrokeWidth: _zoom < 11 ? 0.8 : 1.4,
         ),
