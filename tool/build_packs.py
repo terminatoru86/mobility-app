@@ -443,12 +443,26 @@ def fetch_overture():
       FROM read_parquet('s3://overturemaps-us-west-2/release/{release}/theme=places/type=place/*', hive_partitioning=1)
       WHERE bbox.xmin BETWEEN -170 AND -65 AND bbox.ymin BETWEEN 17 AND 72
         AND addresses[1].country = 'US'
-        AND (categories.primary ILIKE '%bicycle%' OR categories.primary ILIKE '%bike%')
+        AND (categories.primary ILIKE '%bicycle%' OR categories.primary ILIKE '%bike%'
+             OR categories.primary ILIKE '%motorcycle%' OR categories.primary ILIKE '%scooter%' OR categories.primary ILIKE '%moped%')
         AND confidence >= 0.6
     """
     out = []
     for oid, name, c, lat, lon, web, phone, street in con.execute(q).fetchall():
         c = (c or '').lower()
+        if 'motorcycle' in c or 'moped' in c or 'scooter' in c:
+            kind = 'motorcycle' if ('motorcycle' in c or 'moped' in c) else 'scooter'
+            if 'repair' in c:
+                tags = {'shop': 'motorcycle_repair'}
+            elif 'rent' in c:
+                tags = {'amenity': 'motorcycle_rental'}
+                continue  # no rental type for mopeds yet
+            else:
+                tags = {'shop': kind}
+            tags.update({k: v for k, v in {'name': name, 'website': web, 'phone': phone, 'addr:street': street}.items() if v})
+            tags['source'] = 'Overture Maps'
+            out.append([f'ovt/{oid}', round(lat, 6), round(lon, 6), tags])
+            continue
         if 'rent' in c or 'sharing' in c:
             tags = {'amenity': 'bicycle_rental'}
         elif 'repair' in c:

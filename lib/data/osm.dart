@@ -581,7 +581,9 @@ Place? placeFromOsm(Map<String, dynamic> e) {
   // which vehicles the place is for (bike, e-bike, e-scooter, moped, motorcycle)
   final moto = amenity == 'motorcycle_parking' || const ['motorcycle', 'scooter', 'motorcycle_repair'].contains(tag('shop'));
   final small = const ['small_electric_vehicle_parking', 'kick-scooter_parking'].contains(amenity);
-  final accepts = moto
+  final shopSells = _shopSells(t);
+  final accepts = shopSells ??
+      (moto
       ? [Vehicle.moped, Vehicle.moto, if (yes('bicycle')) Vehicle.bike]
       : small
           ? const [Vehicle.scooter, Vehicle.ebike]
@@ -598,7 +600,7 @@ Place? placeFromOsm(Map<String, dynamic> e) {
                   Vehicle.scooter,
                   if (yes('motorcycle')) ...[Vehicle.moped, Vehicle.moto],
                 ],
-            };
+            });
 
   // TEST DATA: until riders report, every real place gets a believable
   // status, free spots, ratings and reviews (always the same for the same place).
@@ -638,6 +640,36 @@ Place? placeFromOsm(Map<String, dynamic> e) {
     website: tag('website') ?? tag('contact:website'),
     photos: _photos(t),
   );
+}
+
+/// What a shop (or repair shop) sells / fixes: only bikes for a bike-only shop, several when it has more.
+/// Null for places that are not shops.
+List<Vehicle>? _shopSells(Map<String, dynamic> t) {
+  final shop = t['shop']?.toString();
+  if (shop == null) return null;
+  final text = '${t['name'] ?? ''} ${t['brand'] ?? ''} ${t['description'] ?? ''}'.toLowerCase();
+  bool yesTag(String k) => t[k]?.toString() == 'yes';
+  final scooterWord = RegExp(r'scooter|e-?scoot|kick ?scoot|segway|ninebot|unagi').hasMatch(text);
+  final ebikeWord = RegExp(r'e-?bike|electric|ebike|pedego|rad ?power').hasMatch(text);
+  final motoWord = RegExp(r'moto|harley|honda|yamaha|kawasaki|suzuki|ducati|bmw motorrad|triumph|ktm|vespa|piaggio').hasMatch(text);
+  switch (shop) {
+    case 'bicycle':
+      final l = [
+        if (!RegExp(r'e-?bike only|electric bikes? only').hasMatch(text)) Vehicle.bike,
+        if (ebikeWord || yesTag('service:bicycle:electric') || yesTag('electric_bicycle')) Vehicle.ebike,
+        if (scooterWord || yesTag('scooter')) Vehicle.scooter,
+      ];
+      return l.isEmpty ? const [Vehicle.bike] : l;
+    case 'scooter':
+      // shop=scooter: e-scooters if the name says so, otherwise motor scooters / mopeds
+      return RegExp(r'electric|e-?scoot|kick|segway|ninebot').hasMatch(text)
+          ? const [Vehicle.scooter]
+          : const [Vehicle.moped, Vehicle.scooter];
+    case 'motorcycle' || 'motorcycle_repair':
+      return [Vehicle.moto, if (!RegExp(r'harley|ducati|triumph').hasMatch(text) || text.contains('vespa')) Vehicle.moped,
+        if (motoWord && scooterWord) Vehicle.scooter];
+  }
+  return null;
 }
 
 /// The plugs of a charging station, from OpenStreetMap (socket:*=n).

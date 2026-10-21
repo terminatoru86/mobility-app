@@ -140,7 +140,17 @@ class _PlaceSheetState extends State<PlaceSheet> {
         const SizedBox(height: 8),
       ],
       Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Expanded(flex: 3, child: VehicleTile(place: p, myVehicle: widget.myVehicle)),
+        Expanded(
+          flex: 3,
+          child: VehicleTile(
+            place: p,
+            myVehicle: widget.myVehicle,
+            // shops and service: only what they sell / fix, turning every 2 s when there is more than one
+            rotateEvery: (p.type == PlaceType.shop || p.type == PlaceType.service)
+                ? const Duration(seconds: 2)
+                : const Duration(seconds: 4),
+          ),
+        ),
         const SizedBox(width: 8),
         Expanded(flex: 2, child: FactTile(p.distance, 'distance')),
       ]),

@@ -39,7 +39,9 @@ class VehicleTile extends StatefulWidget {
   final Place place;
   final Vehicle? myVehicle;
   final ValueChanged<Vehicle>? onSelected;
-  const VehicleTile({super.key, required this.place, this.myVehicle, this.onSelected});
+  final Duration rotateEvery; // shops: what they sell turns every 2 s, like the filters
+  const VehicleTile(
+      {super.key, required this.place, this.myVehicle, this.onSelected, this.rotateEvery = const Duration(seconds: 4)});
 
   @override
   State<VehicleTile> createState() => _VehicleTileState();
@@ -64,7 +66,7 @@ class _VehicleTileState extends State<VehicleTile> {
     }
     _pc = PageController(initialPage: _index);
     if (!_mine && _list.length > 1) {
-      _timer = Timer.periodic(const Duration(seconds: 4), (_) {
+      _timer = Timer.periodic(widget.rotateEvery, (_) {
         if (!_fixed && mounted && _pc.hasClients) {
           _pc.animateToPage((_index + 1) % _list.length,
               duration: const Duration(milliseconds: 450), curve: Curves.easeInOut);
