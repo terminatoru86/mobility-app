@@ -1,9 +1,10 @@
-name: Data packs (offline places for the app)
+name: Data packs (build here, by hand only)
 
+# The packs are normally built in the public repository terminatoru86/mobility-data
+# (free minutes, published on its site) and copied here by sync-packs.yml.
+# This one stays for building them here by hand if ever needed.
 on:
-  workflow_dispatch: # run by hand from the Actions tab
-  schedule:
-    - cron: '17 7 1,15 * *' # twice a month
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -26,4 +27,5 @@ jobs:
           git add assets/osm/tiles
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Data packs $(date -u +%Y-%m-%d)"
+          git pull --rebase
           git push

@@ -1,0 +1,42 @@
+name: Sync data packs into the app
+
+# Copies the latest packs from our public data site into assets/osm/tiles,
+# so every new build of the app ships with the newest places (offline).
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 9 3,17 * *' # two days after each build in mobility-data
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the packs
+        run: |
+          SITE=https://terminatoru86.github.io/mobility-data/tiles
+          mkdir -p /tmp/tiles
+          curl -fsSL "$SITE/index.json" -o /tmp/tiles/index.json || { echo "Data site not ready yet"; exit 0; }
+          python3 - <<'PY'
+          import json, urllib.request
+          site = 'https://terminatoru86.github.io/mobility-data/tiles/'
+          idx = json.load(open('/tmp/tiles/index.json'))
+          for key in idx['tiles']:
+              data = urllib.request.urlopen(site + f't_{key}.json', timeout=120).read()
+              open(f'/tmp/tiles/t_{key}.json', 'wb').write(data)
+          print(len(idx['tiles']), 'pieces')
+          PY
+          rm -f assets/osm/tiles/*.json
+          cp /tmp/tiles/*.json assets/osm/tiles/
+      - name: Save them in the repository
+        run: |
+          git config user.name "mobility-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A assets/osm/tiles
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Data packs from mobility-data $(date -u +%Y-%m-%d)"
+          git pull --rebase
+          git push

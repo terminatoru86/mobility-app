@@ -11,6 +11,7 @@ Runs on GitHub Actions (.github/workflows/data-packs.yml) twice a month; can als
     python3 tool/build_packs.py 41 -89 43 -87   # only this box (south west north east)
 Only the Python standard library is used.
 """
+import hashlib
 import json
 import math
 import os
@@ -22,7 +23,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, 'assets', 'osm', 'tiles')
+OUT = os.environ.get('PACKS_OUT') or os.path.join(ROOT, 'assets', 'osm', 'tiles')
 UA = {'User-Agent': 'MOBIlity data packs (github.com/terminatoru86/mobility-app)'}
 OVERPASS = [
     'https://overpass-api.de/api/interpreter',
@@ -113,6 +114,10 @@ def add(tiles, els):
 # ───────── city halls (read from lib/data/open_data.dart, so the list lives in one place) ─────────
 
 def city_sources():
+    # in the data repository the list comes as city_sources.json (exported from the app with --export-cities)
+    js = os.path.join(ROOT, 'city_sources.json')
+    if os.path.exists(js):
+        return json.load(open(js, encoding='utf-8'))
     src = open(os.path.join(ROOT, 'lib', 'data', 'open_data.dart'), encoding='utf-8').read()
     out = []
     for m in re.finditer(r"CitySource\('([^']+)',\s*'([^']+)',\s*'([^']+)',\s*([-\d.]+),\s*([-\d.]+),\s*([-\d.]+),\s*([-\d.]+),(.*?)\),\n", src, re.S):
@@ -225,6 +230,10 @@ def fetch_city(src):
 
 
 def main():
+    if '--export-cities' in sys.argv:
+        json.dump(city_sources(), open(sys.argv[-1], 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+        print('exported', sys.argv[-1])
+        return
     args = [float(a) for a in sys.argv[1:5]]
     boxes = [tuple(int(math.floor(v)) if k < 2 else int(math.ceil(v)) for k, v in enumerate(args))] if args else REGIONS
     tiles = {}
@@ -253,14 +262,16 @@ def main():
     counts = index.get('tiles', {}) if args else {}
     for (a, b), d in sorted(tiles.items()):
         rows = sorted(d.values(), key=lambda x: x[0])
+        text = json.dumps(rows, separators=(',', ':'), ensure_ascii=False)
         with open(os.path.join(OUT, f't_{a}_{b}.json'), 'w', encoding='utf-8') as f:
-            json.dump(rows, f, separators=(',', ':'), ensure_ascii=False)
-        counts[f'{a}_{b}'] = len(rows)
+            f.write(text)
+        # [places, version]: the app downloads a piece again only when its version changed
+        counts[f'{a}_{b}'] = [len(rows), hashlib.md5(text.encode('utf-8')).hexdigest()[:12]]
     index = {
         'at': datetime.now(timezone.utc).strftime('%Y-%m-%d'),
         'tiles': dict(sorted(counts.items())),
         'cities': sorted(set(cities) | (set(index.get('cities', [])) if args else set())),
-        'total': sum(counts.values()),
+        'total': sum(v[0] if isinstance(v, list) else v for v in counts.values()),
     }
     with open(index_path, 'w') as f:
         json.dump(index, f, separators=(',', ':'))

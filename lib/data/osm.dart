@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'place_db.dart';
 import 'places.dart';
 
 /// City-hall lists already inside the offline packs (no need to download them again).
@@ -188,11 +189,29 @@ class OsmService {
     return at != null && DateTime.now().difference(at).inDays < _packFreshDays;
   }
 
-  /// Instant: every place within [miles] from the files inside the app, nearest 1° piece first.
-  Future<void> _loadPacks(LatLng c, double miles, void Function() onPiece) async {
-    final idx = await packIndex();
-    if (idx == null) return;
-    final have = (idx['tiles'] as Map).cast<String, dynamic>();
+  /// Version (hash) of a shipped piece, from the index (older indexes only have the count).
+  String? _shippedHash(String key) {
+    final v = (_packIndex?['tiles'] as Map?)?[key];
+    return v is List && v.length > 1 ? '${v[1]}' : (v == null ? null : 'c$v');
+  }
+
+  final Map<String, Set<String>> _tileIds = {}; // piece -> its place ids (to replace a piece cleanly)
+
+  void _putPiece(String key, List<dynamic> rows) {
+    for (final id in _tileIds[key] ?? const <String>{}) {
+      _raw.remove(id);
+      places.remove(id);
+    }
+    final ids = <String>{};
+    for (final r in rows) {
+      final l = r as List;
+      _add({'id': l[0], 'lat': l[1], 'lon': l[2], 'tags': l[3]});
+      ids.add('${l[0]}');
+    }
+    _tileIds[key] = ids;
+  }
+
+  List<(int, int, double)> _degreePieces(LatLng c, double miles) {
     final rLat = miles * 1.609 / 111.2;
     final rLng = rLat / math.cos(c.latitude * math.pi / 180);
     final list = <(int, int, double)>[];
@@ -202,24 +221,74 @@ class OsmService {
       }
     }
     list.sort((x, y) => x.$3.compareTo(y.$3));
-    for (final (a, b, _) in list) {
+    return list;
+  }
+
+  /// Instant: every place within [miles], nearest 1° piece first — from our database on the phone
+  /// (pieces updated online) or else from the files shipped inside the app.
+  Future<bool> _loadPacks(LatLng c, double miles, void Function() onPiece) async {
+    final idx = await packIndex();
+    final db = PlaceDb.i;
+    await db.open();
+    final have = ((idx?['tiles'] as Map?) ?? const {}).cast<String, dynamic>();
+    var any = false;
+    for (final (a, b, _) in _degreePieces(c, miles)) {
       final key = '${a}_$b';
       if (_packTilesDone.contains(key)) continue;
+      String? text = await db.read(key); // updated online
+      if (text == null && have.containsKey(key)) {
+        try {
+          text = await rootBundle.loadString('assets/osm/tiles/t_$key.json'); // shipped with the app
+        } catch (_) {}
+      }
+      if (text == null && idx == null && db.hashOf(key) == null) continue; // nothing known here yet
       _packTilesDone.add(key);
       _done.add([a.toDouble(), b.toDouble(), a + 1.0, b + 1.0]); // the live map does not ask again here
-      if (!have.containsKey(key)) continue; // nothing for riders in this piece
+      any = true;
+      if (text == null) continue; // nothing for riders in this piece
       try {
-        final rows = await compute(_decodeList, await rootBundle.loadString('assets/osm/tiles/t_$key.json'));
-        for (final r in rows) {
-          final l = r as List;
-          _add({'id': l[0], 'lat': l[1], 'lon': l[2], 'tags': l[3]});
-        }
+        _putPiece(key, await compute(_decodeList, text));
         onPiece();
       } catch (err) {
         debugPrint('Pack $key failed: $err');
       }
     }
+    return any;
   }
+
+  /// Once a week: ask our data site which pieces changed and download only those (rider's area).
+  Future<bool> _updateOnline(LatLng c, double miles, void Function() onPiece) async {
+    final db = PlaceDb.i;
+    await db.open();
+    if (!db.checkDue) return true;
+    try {
+      final r = await http.get(Uri.parse('${PlaceDb.site}index.json')).timeout(const Duration(seconds: 15));
+      if (r.statusCode != 200) return false;
+      final remote = ((jsonDecode(r.body) as Map<String, dynamic>)['tiles'] as Map).cast<String, dynamic>();
+      for (final (a, b, _) in _degreePieces(c, miles)) {
+        final key = '${a}_$b';
+        final v = remote[key];
+        if (v == null) continue;
+        final hash = v is List && v.length > 1 ? '${v[1]}' : 'c$v';
+        if (hash == (db.hashOf(key) ?? _shippedHash(key))) continue; // already have this version
+        final t = await http.get(Uri.parse('${PlaceDb.site}t_$key.json')).timeout(const Duration(seconds: 40));
+        if (t.statusCode != 200) continue;
+        final text = utf8.decode(t.bodyBytes);
+        await db.write(key, text, hash);
+        _putPiece(key, await compute(_decodeList, text));
+        _packTilesDone.add(key);
+        _done.add([a.toDouble(), b.toDouble(), a + 1.0, b + 1.0]);
+        onPiece();
+        debugPrint('Updated piece $key');
+      }
+      await db.checked();
+      return true;
+    } catch (e) {
+      debugPrint('Online update failed: $e');
+      return false;
+    }
+  }
+
   final Set<String> _regionsDone = {};
   bool regionBusy = false;
 
@@ -233,13 +302,15 @@ class OsmService {
     if (regionBusy || _regionsDone.contains(rk)) return;
     regionBusy = true;
     try {
-      // 1) the packs inside the app: instant, no internet
-      await _loadPacks(c, miles, onPiece);
-      if (_packIndex != null && packsFresh) {
+      // 1) our database: on the phone / shipped inside the app — instant, no internet
+      final local = await _loadPacks(c, miles, onPiece);
+      // 2) once a week: only the pieces that changed, from our data site
+      final online = await _updateOnline(c, miles, onPiece);
+      if (local || online) {
         _regionsDone.add(rk);
-        return; // fresh enough: no need to ask the servers
+        return; // our database covers it: the free OpenStreetMap servers are not needed
       }
-      // 2) no packs yet (or old): ask OpenStreetMap piece by piece (saved on the phone 2 weeks)
+      // 3) no database yet: ask OpenStreetMap piece by piece (saved on the phone 2 weeks)
       final rLat = miles * 1.609 / 111.2;
       final rLng = rLat / math.cos(c.latitude * math.pi / 180);
       final tiles = <(int, int, double)>[];
