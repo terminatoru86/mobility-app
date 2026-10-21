@@ -715,7 +715,16 @@ def main():
             fetch_cameras()
         except Exception as err:
             print(f'Cameras failed: {err}', flush=True)
+    # only the US (some sources have places abroad or broken coordinates)
+    for k in [k for k in tiles if not (17 <= k[0] < 72 and -180 <= k[1] < -64)]:
+        tiles.pop(k)
     os.makedirs(OUT, exist_ok=True)
+    if not args and '--extra-only' not in sys.argv:
+        # full build: pieces that no longer have places are removed
+        keep = {f't_{a}_{b}.json.gz' for (a, b) in tiles}
+        for name in os.listdir(OUT):
+            if re.match(r't_-?\d+_-?\d+\.json(\.gz)?$', name) and name not in keep:
+                os.remove(os.path.join(OUT, name))
     index_path = os.path.join(OUT, 'index.json')
     try:
         index = json.load(open(index_path))
