@@ -56,14 +56,34 @@ class _RoutePlannerState extends State<RoutePlanner> {
   bool _loading = true;
   bool _ready = false;
   Weather? _wx;
+  // Destination is an address (not one of our parking places): suggest a rack 300 m or closer.
+  Place? _rack;
+  List<LatLng> _walk = const [];
 
   @override
   void initState() {
     super.initState();
+    _findRack();
     _calc();
     fetchWeather(userPos).then((w) {
       if (mounted) setState(() => _wx = w);
     });
+  }
+
+  Future<void> _findRack() async {
+    final p = widget.place;
+    if (p != null && p.type.group == 'Parking') {
+      _rack = null;
+      _walk = const [];
+      return;
+    }
+    final rack = parkingNear(_to);
+    _rack = rack;
+    _walk = rack == null ? const [] : [_to, rack.pos];
+    if (rack != null) {
+      final w = await footPath(_to, rack.pos);
+      if (mounted && _rack == rack) setState(() => _walk = w);
+    }
   }
 
   Future<void> _calc() async {
@@ -147,7 +167,24 @@ class _RoutePlannerState extends State<RoutePlanner> {
                       Polyline(points: _routes[i].points, strokeWidth: 5, color: const Color(0xFF9DB6E8)),
                 ]),
                 if (r != null) routeLayer(r.points),
+                if (_walk.length > 1)
+                  PolylineLayer(polylines: [
+                    Polyline(
+                      points: _walk,
+                      strokeWidth: 5,
+                      color: AppColors.blue,
+                      pattern: const StrokePattern.dotted(spacingFactor: 2),
+                    ),
+                  ]),
                 MarkerLayer(markers: [
+                  if (_rack != null)
+                    Marker(
+                      point: _rack!.pos,
+                      width: PlacePin.width,
+                      height: PlacePin.height,
+                      alignment: Alignment.topCenter,
+                      child: PlacePin(place: _rack!, small: true),
+                    ),
                   Marker(point: _from, width: 34, height: 34, child: const UserDot()),
                   Marker(
                     point: _to,
@@ -196,6 +233,10 @@ class _RoutePlannerState extends State<RoutePlanner> {
           const SizedBox(height: 4),
           Text('↗ ${r.climb} m climb · ↘ ${(r.climb * 0.9).round()} m descent',
               style: const TextStyle(fontSize: 12, color: AppColors.soft, fontWeight: FontWeight.w600)),
+          if (_rack != null) ...[
+            const SizedBox(height: 10),
+            _rackSuggestion(),
+          ],
           const SizedBox(height: 12),
           _safety(r),
         ],
@@ -236,6 +277,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
                           toName: _toName,
                           place: widget.place,
                           nearby: widget.nearby,
+                          suggestRack: _rack,
                         ),
                       )),
                       style: FilledButton.styleFrom(backgroundColor: AppColors.blue),
@@ -245,6 +287,34 @@ class _RoutePlannerState extends State<RoutePlanner> {
                 ]),
               ),
             ),
+    );
+  }
+
+  Widget _rackSuggestion() {
+    final rack = _rack!;
+    final m = const Distance()(_to, rack.pos);
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppColors.blue, width: 1.5),
+      ),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        Row(children: [
+          Glyph(rack.type, size: 22, color: colorsFor(rack.shownStatus).dark),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              '${rack.type.title} ${m.round()} m from your destination · ${(m / 80).ceil()} min walk',
+              style: const TextStyle(fontWeight: FontWeight.w800),
+            ),
+          ),
+        ]),
+        const SizedBox(height: 4),
+        const Text('Suggestion only: the GPS still takes you to the address. We show the walk again when you arrive.',
+            style: TextStyle(fontSize: 12, color: AppColors.soft)),
+      ]),
     );
   }
 
@@ -428,6 +498,7 @@ class GuidanceScreen extends StatefulWidget {
   final String toName;
   final Place? place;
   final List<Place> nearby;
+  final Place? suggestRack; // a rack near an address destination (shown again on arrival)
   const GuidanceScreen({
     super.key,
     required this.route,
@@ -435,6 +506,7 @@ class GuidanceScreen extends StatefulWidget {
     required this.toName,
     this.place,
     this.nearby = const [],
+    this.suggestRack,
   });
 
   @override
@@ -444,6 +516,12 @@ class GuidanceScreen extends StatefulWidget {
 class _GuidanceScreenState extends State<GuidanceScreen> {
   final _map = MapController();
   late RouteResult _route = widget.route;
+  late LatLng _to = widget.to;
+  late String _toName = widget.toName;
+  late Place? _place = widget.place;
+  List<LatLng> _walk = const []; // dotted walking line to the suggested rack
+  bool _showRackCard = false;
+  static const _zoom = 18.4; // close to the street, but not all the way in
   late LatLng _pos = userPos;
   double _heading = 0;
   double _speed = 0; // km/h
@@ -467,6 +545,13 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
       if (mounted) setState(() {});
     });
     _startGps();
+    final rack = widget.suggestRack;
+    if (rack != null) {
+      _walk = [widget.to, rack.pos];
+      footPath(widget.to, rack.pos).then((w) {
+        if (mounted) setState(() => _walk = w);
+      });
+    }
     // On a computer the position does not move: start the ride simulator so the guidance can be tried.
     if (kIsWeb) {
       Future.delayed(const Duration(milliseconds: 800), () {
@@ -516,12 +601,12 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
     });
     if (_follow) {
       try {
-        _map.move(p, math.max(_map.camera.zoom, 16.5));
+        _map.move(p, math.max(_map.camera.zoom, _zoom));
       } catch (_) {}
     }
 
     final remaining = _route.meters - along;
-    if (remaining < 25 || const Distance()(p, widget.to) < 25) {
+    if (remaining < 25 || const Distance()(p, _to) < 25) {
       _arrive();
       return;
     }
@@ -536,7 +621,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
 
   Future<void> _recalculate() async {
     setState(() => _recalc = true);
-    final r = await bikeRoute([_pos, widget.to]);
+    final r = await bikeRoute([_pos, _to]);
     if (!mounted) return;
     setState(() {
       if (r != null) {
@@ -552,21 +637,123 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
     if (_arrived) return;
     _arrived = true;
     _sim?.cancel();
+    _simulating = false;
     await _gps?.cancel();
     if (!mounted) return;
-    if (widget.place != null && !widget.place!.type.isNeutral) {
-      await Navigator.of(context).push(MaterialPageRoute(builder: (_) => StatsScreen(place: widget.place!)));
-    } else {
-      await showDialog<void>(
-        context: context,
-        builder: (c) => AlertDialog(
-          title: const Text('You have arrived'),
-          content: Text(widget.toName),
-          actions: [FilledButton(onPressed: () => Navigator.pop(c), child: const Text('Done'))],
-        ),
-      );
+
+    // 1) Arrived at one of our places (or right next to one): confirm its status with the 3 colours.
+    var stats = (_place != null && !_place!.type.isNeutral) ? _place : null;
+    stats ??= _nearestOurs(_pos, 40);
+    if (stats != null) {
+      await Navigator.of(context).push(MaterialPageRoute(builder: (_) => StatsScreen(place: stats!)));
+      if (mounted) Navigator.of(context).pop();
+      return;
     }
+
+    // 2) Arrived at an address with a rack nearby: show the dotted walk again, like a walking route.
+    if (widget.suggestRack != null && _place == null) {
+      setState(() => _showRackCard = true);
+      try {
+        _map.fitCamera(CameraFit.bounds(
+          bounds: LatLngBounds.fromPoints([_pos, ..._walk]),
+          padding: const EdgeInsets.fromLTRB(60, 180, 60, 260),
+          maxZoom: 18.5,
+        ));
+      } catch (_) {}
+      return;
+    }
+
+    // 3) Anything else.
+    await showDialog<void>(
+      context: context,
+      builder: (c) => AlertDialog(
+        title: const Text('You have arrived'),
+        content: Text(_toName),
+        actions: [FilledButton(onPressed: () => Navigator.pop(c), child: const Text('Done'))],
+      ),
+    );
     if (mounted) Navigator.of(context).pop();
+  }
+
+  Place? _nearestOurs(LatLng at, double max) {
+    const d = Distance();
+    Place? best;
+    var bestM = max;
+    for (final p in [...widget.nearby, ...knownPlaces]) {
+      if (p.type.isNeutral) continue;
+      final m = d(at, p.pos);
+      if (m <= bestM) {
+        bestM = m;
+        best = p;
+      }
+    }
+    return best;
+  }
+
+  // From the address, ride the last metres to the suggested rack (Stats appear there).
+  Future<void> _rideToRack() async {
+    final rack = widget.suggestRack!;
+    final r = await bikeRoute([_pos, rack.pos]);
+    if (!mounted) return;
+    setState(() {
+      _showRackCard = false;
+      _place = rack;
+      _to = rack.pos;
+      _toName = rack.address;
+      if (r != null) _route = r;
+      _along = 0;
+      _arrived = false;
+      _follow = true;
+    });
+    _startGps();
+    if (kIsWeb) _toggleSim();
+  }
+
+  Widget _rackCard() {
+    final rack = widget.suggestRack!;
+    final m = const Distance()(_pos, rack.pos);
+    return Material(
+      color: Colors.white,
+      elevation: 10,
+      borderRadius: BorderRadius.circular(24),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
+        child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+          Text('You have arrived · $_toName',
+              maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
+          const SizedBox(height: 6),
+          Row(children: [
+            Glyph(rack.type, size: 24, color: colorsFor(rack.shownStatus).dark),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text('${rack.type.title} ${m.round()} m away · ${(m / 80).ceil()} min walk',
+                  style: const TextStyle(fontWeight: FontWeight.w700)),
+            ),
+          ]),
+          const SizedBox(height: 4),
+          const Text('Follow the dotted line to leave your bike there.', style: TextStyle(fontSize: 12, color: AppColors.soft)),
+          const SizedBox(height: 10),
+          Row(children: [
+            Expanded(
+              child: OutlinedButton(
+                onPressed: () => Navigator.of(context).pop(),
+                style: OutlinedButton.styleFrom(minimumSize: const Size(0, 46), shape: const StadiumBorder()),
+                child: const Text('Done'),
+              ),
+            ),
+            const SizedBox(width: 8),
+            Expanded(
+              flex: 2,
+              child: FilledButton(
+                onPressed: _rideToRack,
+                style: FilledButton.styleFrom(backgroundColor: AppColors.blue),
+                child: const Text('Go to the rack'),
+              ),
+            ),
+          ]),
+        ]),
+      ),
+    );
   }
 
   @override
@@ -580,7 +767,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
   // the next maneuver after the current position
   (RouteStep, double, RouteStep?) _next() {
     final steps = _route.steps;
-    if (steps.isEmpty) return (RouteStep('Ride to ${widget.toName}', '', 0, widget.to), math.max(0.0, _route.meters - _along), null);
+    if (steps.isEmpty) return (RouteStep('Ride to $_toName', '', 0, _to), math.max(0.0, _route.meters - _along), null);
     for (int i = 0; i < steps.length; i++) {
       final (_, at) = projectOnRoute(steps[i].at, _route.points);
       if (at > _along + 5) {
@@ -606,7 +793,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
           mapController: _map,
           options: MapOptions(
             initialCenter: _pos,
-            initialZoom: 17,
+            initialZoom: _zoom,
             onPositionChanged: (_, gesture) {
               if (gesture && _follow) setState(() => _follow = false);
             },
@@ -616,6 +803,15 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
             routeLayer(_route.points),
             if (done.length > 1)
               PolylineLayer(polylines: [Polyline(points: done, strokeWidth: 6, color: const Color(0xFF9AA6AC))]),
+            if (_walk.length > 1)
+              PolylineLayer(polylines: [
+                Polyline(
+                  points: _walk,
+                  strokeWidth: 5,
+                  color: AppColors.blue,
+                  pattern: const StrokePattern.dotted(spacingFactor: 2),
+                ),
+              ]),
             MarkerLayer(markers: [
               for (final p in widget.nearby)
                 Marker(
@@ -635,8 +831,16 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
                     child: Icon(h.icon, size: 18, color: AppColors.ink),
                   ),
                 ),
+              if (widget.suggestRack != null && !widget.nearby.contains(widget.suggestRack))
+                Marker(
+                  point: widget.suggestRack!.pos,
+                  width: PlacePin.width,
+                  height: PlacePin.height,
+                  alignment: Alignment.topCenter,
+                  child: PlacePin(place: widget.suggestRack!, selected: _showRackCard),
+                ),
               Marker(
-                point: widget.to,
+                point: _to,
                 width: 34,
                 height: 34,
                 child: const Icon(Icons.flag_rounded, color: AppColors.red, size: 32),
@@ -672,7 +876,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
               borderRadius: BorderRadius.circular(20),
               child: InkWell(
                 borderRadius: BorderRadius.circular(20),
-                onTap: () => showDirections(context, _route, widget.toName),
+                onTap: () => showDirections(context, _route, _toName),
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
                   child: Row(children: [
@@ -755,7 +959,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
                 backgroundColor: Colors.white,
                 onPressed: () {
                   setState(() => _follow = true);
-                  _map.move(_pos, 17);
+                  _map.move(_pos, _zoom);
                 },
                 child: const Icon(Icons.navigation_outlined, color: AppColors.blue),
               ),
@@ -788,6 +992,8 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
             ]),
           ),
         ),
+        if (_showRackCard)
+          Positioned(left: 10, right: 10, bottom: 14, child: SafeArea(top: false, child: _rackCard())),
       ]),
     );
   }

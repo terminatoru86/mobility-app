@@ -8,6 +8,7 @@ import '../data/app_state.dart';
 import '../data/location.dart';
 import '../data/osm.dart';
 import '../data/places.dart';
+import '../data/routing.dart';
 import '../data/store.dart';
 import '../data/weather.dart';
 import '../theme.dart';
@@ -173,36 +174,46 @@ class MapScreenState extends State<MapScreen> {
     }
   }
 
-  // ── Parking near a searched address ──
-  static const _walk = Distance();
+  // ── Searched address: normal destination, plus a suggestion if a rack is 300 m or closer ──
+  Place? _destRack;
+  List<LatLng> _destWalk = const [];
 
-  void _showDestination(GeoResult g) {
-    if (!Store.i.parkNearDest) {
-      setState(() => _dest = null);
-      _map.move(g.pos, 16);
-      return;
+  Future<void> _showDestination(GeoResult g) async {
+    final rack = Store.i.parkNearDest ? parkingNear(g.pos) : null;
+    setState(() {
+      _dest = g;
+      _destRack = rack;
+      _destWalk = rack == null ? const [] : [g.pos, rack.pos];
+    });
+    _map.move(g.pos, 16.5);
+    if (rack != null) {
+      final path = await footPath(g.pos, rack.pos);
+      if (mounted && _destRack == rack) setState(() => _destWalk = path);
     }
-    setState(() => _dest = g);
-    _map.move(g.pos, 16.3);
   }
 
-  void _clearDestination() => setState(() => _dest = null);
+  void _clearDestination() => setState(() {
+        _dest = null;
+        _destRack = null;
+        _destWalk = const [];
+      });
 
-  /// Parking within 500 m of the address (1 km if there is none), nearest first.
-  (List<Place>, double) _destParking() {
-    final d = _dest;
-    if (d == null) return (const [], 0);
-    final parking = _all.where((p) => p.type.group == 'Parking').toList();
-    for (final radius in const [500.0, 1000.0]) {
-      final near = parking.where((p) => _walk(d.pos, p.pos) <= radius).toList()
-        ..sort((a, b) => _walk(d.pos, a.pos).compareTo(_walk(d.pos, b.pos)));
-      if (near.isNotEmpty) return (near, radius);
-    }
-    return (const [], 1000);
-  }
-
-  Widget _destCard(List<Place> list, double radius) {
+  Future<void> _tripToDest() async {
     final d = _dest!;
+    await startTrip(
+      context,
+      to: d.pos,
+      toName: d.title,
+      nearby: _near(d.pos, 2500).take(80).toList(),
+      myVehicle: widget.state.myVehicle,
+    );
+    if (mounted) setState(() {});
+  }
+
+  Widget _destCard() {
+    final d = _dest!;
+    final rack = _destRack;
+    final m = rack == null ? 0.0 : const Distance()(d.pos, rack.pos);
     return Material(
       color: Colors.white,
       elevation: 8,
@@ -211,76 +222,45 @@ class MapScreenState extends State<MapScreen> {
         padding: const EdgeInsets.fromLTRB(14, 10, 6, 12),
         child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
           Row(children: [
-            const Icon(Icons.local_parking, color: AppColors.primary, size: 20),
+            const Icon(Icons.flag_rounded, color: AppColors.red, size: 20),
             const SizedBox(width: 6),
             Expanded(
-              child: Text('Parking near ${d.title}',
-                  maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w900)),
-            ),
-            TextButton.icon(
-              onPressed: () => _trip(Place(
-                id: 'dest',
-                type: PlaceType.shop,
-                address: d.title,
-                pos: d.pos,
-                status: Status.neutral,
-                distance: '',
-                etaMin: const {},
-              )),
-              icon: const Icon(Icons.navigation_rounded, size: 16),
-              label: const Text('Trip'),
-            ),
-            IconButton(onPressed: _clearDestination, icon: const Icon(Icons.close), tooltip: 'Hide'),
-          ]),
-          if (list.isEmpty)
-            const Padding(
-              padding: EdgeInsets.fromLTRB(0, 4, 8, 4),
-              child: Text('No bike parking known within 1 km. Loading the area… or report a new place with +.',
-                  style: TextStyle(color: AppColors.soft)),
-            )
-          else ...[
-            Text('${list.length} within ${radius.round()} m · nearest first',
-                style: const TextStyle(fontSize: 12, color: AppColors.soft)),
-            const SizedBox(height: 8),
-            SizedBox(
-              height: 84,
-              child: ListView(scrollDirection: Axis.horizontal, children: [
-                for (final p in list.take(12)) _destTile(p),
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                Text(d.title, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w900)),
+                if (d.subtitle.isNotEmpty)
+                  Text(d.subtitle, maxLines: 1, overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(fontSize: 12, color: AppColors.soft)),
               ]),
             ),
-          ],
-        ]),
-      ),
-    );
-  }
-
-  Widget _destTile(Place p) {
-    final c = colorsFor(p.shownStatus);
-    final m = _walk(_dest!.pos, p.pos);
-    return GestureDetector(
-      onTap: () => _openPlace(p),
-      child: Container(
-        width: 190,
-        margin: const EdgeInsets.only(right: 8),
-        padding: const EdgeInsets.all(8),
-        decoration: BoxDecoration(
-          color: c.tint,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: c.main, width: 1.5),
-        ),
-        child: Row(children: [
-          Glyph(p.type, size: 26, color: c.dark),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.center, children: [
-              Text(p.address, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800)),
-              Text(
-                p.shownStatus == Status.full ? 'full · ${p.age}' : '${p.count ?? '—'} free · ${p.age.isEmpty ? 'no data' : p.age}',
-                style: TextStyle(fontSize: 11.5, fontWeight: FontWeight.w700, color: c.dark),
+            FilledButton.icon(
+              onPressed: _tripToDest,
+              icon: const Icon(Icons.navigation_rounded, size: 18),
+              label: const Text('Trip'),
+              style: FilledButton.styleFrom(minimumSize: const Size(90, 42)),
+            ),
+            IconButton(onPressed: _clearDestination, icon: const Icon(Icons.close)),
+          ]),
+          if (rack != null) ...[
+            const SizedBox(height: 6),
+            GestureDetector(
+              onTap: () => _openPlace(rack),
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+                decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
+                child: Row(children: [
+                  Glyph(rack.type, size: 20, color: colorsFor(rack.shownStatus).dark),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'Suggestion: ${rack.type.title.toLowerCase()} ${m.round()} m away · ${(m / 80).ceil()} min walk',
+                      style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w700),
+                    ),
+                  ),
+                  const Icon(Icons.chevron_right, color: AppColors.soft),
+                ]),
               ),
-              Text('${m.round()} m · ${(m / 80).ceil()} min walk', style: const TextStyle(fontSize: 11, color: AppColors.soft)),
-            ]),
-          ),
+            ),
+          ],
         ]),
       ),
     );
@@ -326,7 +306,7 @@ class MapScreenState extends State<MapScreen> {
   }
 
   List<Marker> _markers() {
-    final pins = _dest != null ? _destParking().$1 : _visible;
+    final pins = _visible;
     if (_zoom < 15) {
       return clusterPlaces(pins, _zoom).map((c) {
         if (c.places.length == 1) return _pinMarker(c.places.first);
@@ -384,6 +364,7 @@ class MapScreenState extends State<MapScreen> {
     final top = MediaQuery.of(context).padding.top;
     final store = Store.i;
     final rainIn = _wx?.rainInMinutes;
+    knownPlaces = _all;
     return Stack(children: [
       FlutterMap(
         mapController: _map,
@@ -413,15 +394,13 @@ class MapScreenState extends State<MapScreen> {
                 borderStrokeWidth: 2,
               ),
             ]),
-          if (_dest != null)
-            CircleLayer(circles: [
-              CircleMarker(
-                point: _dest!.pos,
-                radius: _destParking().$2,
-                useRadiusInMeter: true,
-                color: AppColors.blue.withValues(alpha: 0.07),
-                borderColor: AppColors.blue,
-                borderStrokeWidth: 1.5,
+          if (_destWalk.length > 1)
+            PolylineLayer(polylines: [
+              Polyline(
+                points: _destWalk,
+                strokeWidth: 5,
+                color: AppColors.blue,
+                pattern: const StrokePattern.dotted(spacingFactor: 2),
               ),
             ]),
           MarkerLayer(markers: [
@@ -489,15 +468,12 @@ class MapScreenState extends State<MapScreen> {
           left: 10,
           right: 10,
           bottom: 14,
-          child: Builder(builder: (_) {
-            final (list, radius) = _destParking();
-            return _destCard(list, radius);
-          }),
+          child: _destCard(),
         ),
       if (!_list)
         Positioned(
           right: 14,
-          bottom: _dest != null ? 170 : 24,
+          bottom: _dest != null ? (_destRack != null ? 160 : 112) : 24,
           child: Column(children: [
             GestureDetector(
               key: _kLocate,
@@ -510,7 +486,7 @@ class MapScreenState extends State<MapScreen> {
             }, key: _kReport),
           ]),
         ),
-      Positioned(left: 14, bottom: _dest != null ? 176 : 30, child: _sosButton()),
+      Positioned(left: 14, bottom: _dest != null ? (_destRack != null ? 166 : 118) : 30, child: _sosButton()),
       const Positioned(
         right: 4,
         bottom: 2,

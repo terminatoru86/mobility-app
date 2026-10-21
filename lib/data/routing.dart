@@ -185,5 +185,26 @@ LatLng pointAlong(List<LatLng> pts, double meters) {
   return pts.last;
 }
 
+/// Walking path between two points (for the dotted line to a bike rack).
+/// Falls back to a straight line if the foot router does not answer.
+Future<List<LatLng>> footPath(LatLng a, LatLng b) async {
+  final uri = Uri.parse('https://routing.openstreetmap.de/routed-foot/route/v1/driving/'
+      '${a.longitude.toStringAsFixed(6)},${a.latitude.toStringAsFixed(6)};'
+      '${b.longitude.toStringAsFixed(6)},${b.latitude.toStringAsFixed(6)}?overview=full&geometries=geojson');
+  try {
+    final r = await http.get(uri).timeout(const Duration(seconds: 10));
+    if (r.statusCode == 200) {
+      final routes = (jsonDecode(r.body)['routes'] as List?) ?? [];
+      if (routes.isNotEmpty) {
+        return [
+          for (final c in (routes.first['geometry']['coordinates'] as List))
+            LatLng((c[1] as num).toDouble(), (c[0] as num).toDouble()),
+        ];
+      }
+    }
+  } catch (_) {}
+  return [a, b];
+}
+
 /// Compass bearing in degrees from a to b.
 double bearing(LatLng a, LatLng b) => _d.bearing(a, b);

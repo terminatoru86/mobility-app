@@ -213,6 +213,26 @@ const LatLng kUserPos = LatLng(41.8840, -87.6290);
 /// The rider's position: Chicago until the GPS answers, then anywhere in the US.
 LatLng userPos = kUserPos;
 
+/// All places currently known on the map (kept up to date by the map screen).
+List<Place> knownPlaces = const [];
+
+/// The nearest bike parking (rack or parking) within [max] metres of [at], or null.
+/// Used to suggest where to leave the bike when the destination is an address.
+Place? parkingNear(LatLng at, {double max = 300}) {
+  const d = Distance();
+  Place? best;
+  var bestM = max;
+  for (final p in knownPlaces) {
+    if (p.type.group != 'Parking' || p.shownStatus == Status.full) continue;
+    final m = d(at, p.pos);
+    if (m <= bestM) {
+      bestM = m;
+      best = p;
+    }
+  }
+  return best;
+}
+
 const _rv = [
   Review(4, 'Always a free spot in the morning.', '2 days ago'),
   Review(5, 'Well lit, close to the train.', '4 days ago'),
