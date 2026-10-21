@@ -90,3 +90,107 @@ class _CompassPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant _CompassPainter old) => old.c != c;
 }
+
+/// Modern group: white disc, a thin ring split by status (free / almost / full / no data), the count inside.
+class DonutCluster extends StatelessWidget {
+  final List<Place> places;
+  final double size;
+  const DonutCluster({super.key, required this.places, this.size = 44});
+
+  @override
+  Widget build(BuildContext context) {
+    final n = places.length;
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(color: AppColors.ink.withValues(alpha: 0.18), blurRadius: 10, offset: const Offset(0, 3)),
+        ],
+      ),
+      child: CustomPaint(
+        painter: _DonutPainter(places),
+        child: Center(
+          child: Text(
+            n >= 1000 ? '${(n / 1000).toStringAsFixed(n >= 10000 ? 0 : 1)}k' : '$n',
+            style: TextStyle(
+              fontWeight: FontWeight.w900,
+              fontSize: size < 40 ? 11.5 : 13.5,
+              color: AppColors.ink,
+              letterSpacing: -0.3,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _DonutPainter extends CustomPainter {
+  final List<Place> places;
+  _DonutPainter(this.places);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final counts = <Status, int>{};
+    for (final p in places) {
+      final s = p.shownStatus == Status.neutral ? Status.unknown : p.shownStatus;
+      counts[s] = (counts[s] ?? 0) + 1;
+    }
+    final total = places.length.toDouble();
+    final rect = Rect.fromCircle(center: size.center(Offset.zero), radius: size.width / 2 - 4);
+    const gap = 0.07; // small gap between colours
+    var start = -math.pi / 2;
+    final order = [Status.free, Status.almost, Status.full, Status.unknown];
+    final present = order.where((s) => (counts[s] ?? 0) > 0).length;
+    for (final s in order) {
+      final c = counts[s] ?? 0;
+      if (c == 0) continue;
+      final sweep = 2 * math.pi * c / total;
+      final paint = Paint()
+        ..color = colorsFor(s).main
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 3.6
+        ..strokeCap = StrokeCap.round;
+      final g = present > 1 ? gap : 0.0;
+      canvas.drawArc(rect, start + g / 2, math.max(0.02, sweep - g), false, paint);
+      start += sweep;
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _DonutPainter old) => old.places != places;
+}
+
+/// Small frosted label on the ring ("22 mi around you").
+class RingLabel extends StatelessWidget {
+  final String text;
+  const RingLabel({super.key, required this.text});
+
+  @override
+  Widget build(BuildContext context) => Center(
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 3),
+          decoration: BoxDecoration(
+            color: Colors.white.withValues(alpha: 0.92),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(color: AppColors.blue.withValues(alpha: 0.35)),
+            boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 2))],
+          ),
+          child: Text(text,
+              style: const TextStyle(fontSize: 10.5, fontWeight: FontWeight.w800, color: AppColors.blue, letterSpacing: .1)),
+        ),
+      );
+}
+
+/// Points of a circle on the map (for a dotted ring line).
+List<LatLng> ringPoints(LatLng c, double meters, [int n = 120]) {
+  final dLat = meters / 111200;
+  final dLng = meters / (111200 * math.cos(c.latitude * math.pi / 180));
+  return [
+    for (int i = 0; i <= n; i++)
+      LatLng(c.latitude + dLat * math.sin(2 * math.pi * i / n), c.longitude + dLng * math.cos(2 * math.pi * i / n)),
+  ];
+}
