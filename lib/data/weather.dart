@@ -14,7 +14,9 @@ class Weather {
   final List<DateTime> times; // next hours, every 15 min
   final List<double> rain; // mm per 15 min
   final List<int> rainChance; // % per hour for the next hours
-  const Weather(this.temp, this.code, this.wind, this.gusts, this.windDir, this.times, this.rain, this.rainChance);
+  final int? humidity; // %
+  const Weather(this.temp, this.code, this.wind, this.gusts, this.windDir, this.times, this.rain, this.rainChance,
+      {this.humidity});
 
   /// Minutes until rain starts in the next 2 h (null = no rain coming).
   int? get rainInMinutes {
@@ -51,7 +53,7 @@ Future<Weather?> fetchWeather(LatLng p) async {
   final uri = Uri.https('api.open-meteo.com', '/v1/forecast', {
     'latitude': p.latitude.toStringAsFixed(3),
     'longitude': p.longitude.toStringAsFixed(3),
-    'current': 'temperature_2m,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m',
+    'current': 'temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m',
     'minutely_15': 'precipitation',
     'hourly': 'precipitation_probability',
     'forecast_hours': '3',
@@ -74,6 +76,7 @@ Future<Weather?> fetchWeather(LatLng p) async {
       [for (final t in (m['time'] as List? ?? [])) DateTime.parse(t as String)],
       [for (final v in (m['precipitation'] as List? ?? [])) (v as num? ?? 0).toDouble()],
       [for (final v in (h['precipitation_probability'] as List? ?? [])) (v as num? ?? 0).toInt()],
+      humidity: (c['relative_humidity_2m'] as num?)?.toInt(),
     );
   } catch (e) {
     debugPrint('Weather failed: $e');

@@ -126,271 +126,528 @@ class _RoutePlannerState extends State<RoutePlanner> {
   @override
   Widget build(BuildContext context) {
     final r = _r;
+    final h = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: AppColors.paper,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        automaticallyImplyLeading: false,
-        title: const Text('Choose the route'),
-        // ✕ stops the route and goes back to the map, with the address still in the search bar
-        actions: [IconButton(onPressed: () => Navigator.of(context).pop(), icon: const Icon(Icons.close))],
-      ),
-      body: ListView(padding: const EdgeInsets.fromLTRB(8, 8, 8, 110), children: [
-        // from / to: two boxes you tap to type again; swap and add-a-stop stacked on the right
-        Row(children: [
-          Expanded(
-            child: Column(children: [
-              _field(Icons.my_location, AppColors.blue, _fromName, () => _edit(true)),
-              for (final (i, v) in _via.indexed) ...[
-                const SizedBox(height: 5),
-                _field(Icons.more_vert, AppColors.soft, v.$1, () => _editVia(i)),
-              ],
-              const SizedBox(height: 5),
-              _field(Icons.flag_rounded, AppColors.red, _toName, () => _edit(false)),
-            ]),
-          ),
-          const SizedBox(width: 5),
-          Column(children: [
-            _square(Icons.swap_vert, _swap),
-            const SizedBox(height: 5),
-            _square(Icons.playlist_add, _addStop),
-          ]),
-        ]),
-        const SizedBox(height: 10),
-        if (_wx != null && r != null) _windChip(r),
-        const SizedBox(height: 8),
-        SizedBox(
-          height: 220,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(18),
-            child: FlutterMap(
-              mapController: _map,
-              options: MapOptions(
-                initialCenter: _to,
-                initialZoom: 13,
-                onMapReady: () {
-                  _ready = true;
-                  _fit();
-                },
-              ),
-              children: [
-                baseTiles(),
+      backgroundColor: Colors.white,
+      body: Stack(children: [
+        // the map on top, the panel slides over its lower part
+        Positioned(
+          left: 0,
+          right: 0,
+          top: 0,
+          height: h * 0.42,
+          child: FlutterMap(
+            mapController: _map,
+            options: MapOptions(
+              initialCenter: _to,
+              initialZoom: 13,
+              onMapReady: () {
+                _ready = true;
+                _fit();
+              },
+            ),
+            children: [
+              baseTiles(),
+              PolylineLayer(polylines: [
+                for (int i = 0; i < _routes.length; i++)
+                  if (i != _sel) Polyline(points: _routes[i].points, strokeWidth: 5, color: const Color(0xFF9DB6E8)),
+              ]),
+              if (r != null) routeLayer(r.points),
+              if (_walk.length > 1)
                 PolylineLayer(polylines: [
-                  for (int i = 0; i < _routes.length; i++)
-                    if (i != _sel)
-                      Polyline(points: _routes[i].points, strokeWidth: 5, color: const Color(0xFF9DB6E8)),
-                ]),
-                if (r != null) routeLayer(r.points),
-                if (_walk.length > 1)
-                  PolylineLayer(polylines: [
-                    Polyline(
-                      points: _walk,
-                      strokeWidth: 5,
-                      color: AppColors.blue,
-                      pattern: const StrokePattern.dotted(spacingFactor: 2),
-                    ),
-                  ]),
-                MarkerLayer(markers: [
-                  if (_rack != null)
-                    Marker(
-                      point: _rack!.pos,
-                      width: PlacePin.width,
-                      height: PlacePin.height,
-                      alignment: Alignment.topCenter,
-                      child: PlacePin(place: _rack!, small: true),
-                    ),
-                  Marker(point: _from, width: 34, height: 34, child: const UserDot()),
-                  Marker(
-                    point: _to,
-                    width: 30,
-                    height: 30,
-                    child: const Icon(Icons.flag_rounded, color: AppColors.red, size: 30),
+                  Polyline(
+                    points: _walk,
+                    strokeWidth: 5,
+                    color: AppColors.blue,
+                    pattern: const StrokePattern.dotted(spacingFactor: 2),
                   ),
                 ]),
-              ],
-            ),
+              MarkerLayer(markers: [
+                for (final p in _nearDest)
+                  Marker(
+                    point: p.pos,
+                    width: PlacePin.width,
+                    height: PlacePin.height,
+                    alignment: Alignment.topCenter,
+                    child: PlacePin(place: p, small: true),
+                  ),
+                Marker(point: _from, width: 34, height: 34, child: const UserDot()),
+                Marker(
+                  point: _to,
+                  width: 30,
+                  height: 30,
+                  child: const Icon(Icons.flag_rounded, color: AppColors.red, size: 30),
+                ),
+              ]),
+            ],
           ),
         ),
-        const SizedBox(height: 10),
-        if (_loading)
-          const Padding(
-            padding: EdgeInsets.all(24),
-            child: Center(child: CircularProgressIndicator()),
-          )
-        else if (r == null)
-          Container(
-            padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(18)),
-            child: Column(children: [
-              const Text('No bike route found right now.', style: TextStyle(fontWeight: FontWeight.w800)),
-              TextButton(onPressed: _calc, child: const Text('Try again')),
-            ]),
-          )
-        else ...[
-          // Fast / Balanced / Quiet
-          Row(children: [
-            for (final label in const ['Fast', 'Balanced', 'Quiet'])
-              Expanded(child: _modeTile(label)),
-          ]),
-          const SizedBox(height: 6),
-          Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Expanded(
-              flex: 7,
-              child: VehicleTile(
-                place: _tripPlace(r),
-                myVehicle: widget.myVehicle,
-              ),
-            ),
-            const SizedBox(width: 5),
-            Expanded(flex: 4, child: FactTile(r.distance, 'distance')),
-          ]),
-          const SizedBox(height: 4),
-          Text('↗ ${r.climb} m climb · ↘ ${(r.climb * 0.9).round()} m descent',
-              style: const TextStyle(fontSize: 12, color: AppColors.soft, fontWeight: FontWeight.w600)),
-          if (_rack != null) ...[
-            const SizedBox(height: 10),
-            _rackSuggestion(),
-          ],
-          const SizedBox(height: 12),
-          _safety(r),
-        ],
-      ]),
-      bottomSheet: r == null
-          ? null
-          : Container(
+        if (_wx != null && r != null)
+          Positioned(right: 12, top: MediaQuery.of(context).padding.top + 10, child: _windChip(r)),
+        Positioned(
+          left: 0,
+          right: 0,
+          bottom: 0,
+          top: h * 0.42 - 26,
+          child: Container(
+            decoration: const BoxDecoration(
               color: Colors.white,
-              padding: const EdgeInsets.fromLTRB(12, 10, 12, 16),
-              child: SafeArea(
-                top: false,
-                child: Row(children: [
-                  OutlinedButton(
-                    onPressed: () => _moreInfo(r),
-                    style: OutlinedButton.styleFrom(shape: const StadiumBorder(), minimumSize: const Size(0, 48)),
-                    child: const Text('More info'),
-                  ),
-                  const SizedBox(width: 8),
-                  IconButton.outlined(
-                    onPressed: () {
-                      Store.i.saveRoute(SavedRoute('$_fromName → $_toName', _from, _to, r.meters, r.seconds));
-                      setState(() {});
-                    },
-                    icon: Icon(
-                      Store.i.savedRoutes.any((s) => s.name == '$_fromName → $_toName')
-                          ? Icons.favorite
-                          : Icons.favorite_border,
-                      color: AppColors.red,
+              borderRadius: BorderRadius.vertical(top: Radius.circular(26)),
+              boxShadow: [BoxShadow(color: Color(0x29000000), blurRadius: 24, offset: Offset(0, -6))],
+            ),
+            child: Column(children: [
+              Expanded(
+                child: ListView(padding: const EdgeInsets.fromLTRB(12, 8, 12, 12), children: [
+                  Center(
+                    child: Container(
+                      width: 36,
+                      height: 4,
+                      decoration: BoxDecoration(color: const Color(0xFFD3DCDD), borderRadius: BorderRadius.circular(2)),
                     ),
                   ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: FilledButton(
-                      onPressed: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (_) => GuidanceScreen(
-                          route: r,
-                          to: _to,
-                          toName: _toName,
-                          place: widget.place,
-                          nearby: widget.nearby,
-                          suggestRack: _rack,
-                        ),
-                      )),
-                      style: FilledButton.styleFrom(backgroundColor: AppColors.blue),
-                      child: const Text('GO', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
-                    ),
+                  const SizedBox(height: 8),
+                  _titleRow(r),
+                  const SizedBox(height: 8),
+                  _odCard(),
+                  const SizedBox(height: 8),
+                  if (_loading)
+                    const Padding(padding: EdgeInsets.all(24), child: Center(child: CircularProgressIndicator()))
+                  else if (r == null)
+                    _softCard(child: Column(children: [
+                      const Text('No bike route found right now.', style: TextStyle(fontWeight: FontWeight.w800)),
+                      TextButton(onPressed: _calc, child: const Text('Try again')),
+                    ]))
+                  else ...[
+                    _vehicleBar(r),
+                    const SizedBox(height: 6),
+                    Row(children: [for (final l in const ['Fast', 'Balanced', 'Quiet']) Expanded(child: _modeTile(l))]),
+                    const SizedBox(height: 8),
+                    _nearCard(),
+                    const SizedBox(height: 8),
+                    _summaryCard(r),
+                  ],
+                ]),
+              ),
+              if (r != null)
+                SafeArea(
+                  top: false,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(12, 4, 12, 10),
+                    child: Row(children: [
+                      _roundBtn(Icons.format_list_bulleted, () => _moreInfo(r)),
+                      const SizedBox(width: 8),
+                      _roundBtn(_isSaved ? Icons.favorite : Icons.favorite_border, () {
+                        Store.i.saveRoute(SavedRoute('$_fromName → $_toName', _from, _to, r.meters, r.seconds));
+                        setState(() {});
+                      }, color: _isSaved ? AppColors.red : AppColors.ink),
+                      const SizedBox(width: 8),
+                      Expanded(child: _goButton(r)),
+                    ]),
                   ),
+                ),
+            ]),
+          ),
+        ),
+      ]),
+    );
+  }
+
+  bool get _isSaved => Store.i.savedRoutes.any((s) => s.name == '$_fromName → $_toName');
+
+  // ── pieces of the panel ──
+
+  Widget _softCard({required Widget child, EdgeInsets padding = const EdgeInsets.fromLTRB(12, 9, 10, 10)}) => Container(
+        padding: padding,
+        decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(18)),
+        child: child,
+      );
+
+  Widget _titleRow(RouteResult? r) => Row(children: [
+        Expanded(
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text(_toName,
+                maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w900)),
+            Text(r == null ? 'Calculating…' : '${_timeFor(r, _vehicle)} · ${r.distance} · arrive ${_arriveFor(r, _vehicle)}',
+                style: const TextStyle(color: AppColors.soft, fontWeight: FontWeight.w600)),
+          ]),
+        ),
+        // ✕ stops the route and goes back to the map, with the address still in the search bar
+        Material(
+          color: const Color(0xFFEEF2F4),
+          shape: const CircleBorder(),
+          child: InkWell(
+            customBorder: const CircleBorder(),
+            onTap: () => Navigator.of(context).pop(),
+            child: const SizedBox(width: 38, height: 38, child: Icon(Icons.close, size: 20)),
+          ),
+        ),
+      ]);
+
+  // from / to with a dotted connector; tap a line to type again. ⇅ and + stacked on the right.
+  Widget _odCard() {
+    Widget line(String text, VoidCallback onTap) => InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(10),
+          child: SizedBox(
+            height: 40,
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text(text,
+                  maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+            ),
+          ),
+        );
+    Widget dot(Color c) => Container(
+          width: 12,
+          height: 12,
+          decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, border: Border.all(color: c, width: 3)),
+        );
+    Widget link() => Column(children: [
+          for (int i = 0; i < 3; i++)
+            Container(
+              width: 3,
+              height: 3,
+              margin: const EdgeInsets.symmetric(vertical: 2),
+              decoration: const BoxDecoration(color: Color(0xFFAAB6BB), shape: BoxShape.circle),
+            ),
+        ]);
+    final rows = <(Widget, Widget)>[
+      (dot(AppColors.blue), line(_fromName, () => _edit(true))),
+      for (final (i, v) in _via.indexed) (dot(AppColors.soft), line(v.$1, () => _editVia(i))),
+      (const Icon(Icons.flag_rounded, color: AppColors.red, size: 18), line(_toName, () => _edit(false))),
+    ];
+    return _softCard(
+      padding: const EdgeInsets.fromLTRB(12, 4, 8, 4),
+      child: Row(children: [
+        Expanded(
+          child: Column(children: [
+            for (int i = 0; i < rows.length; i++) ...[
+              Row(children: [SizedBox(width: 20, child: Center(child: rows[i].$1)), const SizedBox(width: 10), Expanded(child: rows[i].$2)]),
+              if (i < rows.length - 1)
+                Row(children: [
+                  SizedBox(width: 20, child: Center(child: link())),
+                  const SizedBox(width: 10),
+                  const Expanded(child: Divider(height: 1, color: Color(0xFFE1E7E9))),
+                ]),
+            ],
+          ]),
+        ),
+        const SizedBox(width: 6),
+        Column(mainAxisSize: MainAxisSize.min, children: [
+          _miniRound(Icons.swap_vert, _swap),
+          const SizedBox(height: 8),
+          _miniRound(Icons.add, _addStop),
+        ]),
+      ]),
+    );
+  }
+
+  Widget _miniRound(IconData i, VoidCallback onTap) => Material(
+        color: Colors.white,
+        shape: const CircleBorder(),
+        elevation: 1.5,
+        shadowColor: const Color(0x33000000),
+        child: InkWell(
+          customBorder: const CircleBorder(),
+          onTap: onTap,
+          child: SizedBox(width: 34, height: 34, child: Icon(i, size: 19, color: AppColors.ink)),
+        ),
+      );
+
+  // ── vehicles ──
+  late Vehicle _vehicle = switch (widget.myVehicle) {
+    Vehicle.scooter => Vehicle.scooter,
+    Vehicle.moped => Vehicle.moped,
+    Vehicle.moto => Vehicle.moto,
+    _ => Vehicle.bike,
+  };
+
+  double _secs(RouteResult r, Vehicle v) => switch (v) {
+        Vehicle.bike || Vehicle.ebike => r.seconds,
+        Vehicle.scooter => secondsFor(r.meters, 'scooter'),
+        Vehicle.moped => secondsFor(r.meters, 'moped'),
+        Vehicle.moto => secondsFor(r.meters, 'moto'),
+      };
+  String _timeFor(RouteResult r, Vehicle v) => fmtMinutes(_secs(r, v) / 60);
+  String _arriveFor(RouteResult r, Vehicle v) => arrivalAt(_secs(r, v));
+
+  Widget _vehicleBar(RouteResult r) => Row(children: [
+        for (final v in const [Vehicle.bike, Vehicle.scooter, Vehicle.moped, Vehicle.moto])
+          Expanded(
+            child: GestureDetector(
+              onTap: () => setState(() => _vehicle = v),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 180),
+                margin: const EdgeInsets.symmetric(horizontal: 2),
+                padding: const EdgeInsets.symmetric(vertical: 6),
+                decoration: BoxDecoration(
+                  color: _vehicle == v ? Colors.white : AppColors.paper,
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: _vehicle == v ? AppColors.ink : Colors.transparent, width: 1.8),
+                ),
+                child: Column(children: [
+                  SizedBox(height: 30, child: Image.asset(v.asset, fit: BoxFit.contain)),
+                  const SizedBox(height: 2),
+                  Text(_timeFor(r, v), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
+                  Text('arrive ${_arriveFor(r, v)}', style: const TextStyle(fontSize: 10, color: AppColors.soft, fontWeight: FontWeight.w700)),
                 ]),
               ),
             ),
+          ),
+      ]);
+
+  // ── Fast / Balanced / Quiet: narrow pills with climb and descent ──
+  Widget _modeTile(String label) {
+    final i = _routes.indexWhere((x) => x.label == label);
+    final on = i == _sel && i >= 0;
+    final x = i >= 0 ? _routes[i] : null;
+    return GestureDetector(
+      onTap: x == null
+          ? null
+          : () {
+              setState(() => _sel = i);
+              _fit();
+            },
+      child: Opacity(
+        opacity: x == null ? 0.4 : 1,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 180),
+          margin: const EdgeInsets.symmetric(horizontal: 2),
+          padding: const EdgeInsets.symmetric(vertical: 5),
+          decoration: BoxDecoration(
+            color: on ? const Color(0xFFE6EEFB) : AppColors.paper,
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(color: on ? AppColors.blue : Colors.transparent, width: 1.8),
+          ),
+          child: Column(children: [
+            Text(label, style: TextStyle(fontWeight: FontWeight.w800, fontSize: 13, color: on ? AppColors.blue : AppColors.ink)),
+            Text(x == null ? '—' : '↗ ${x.climb} · ↘ ${(x.climb * 0.9).round()} m',
+                style: const TextStyle(fontSize: 10.5, color: AppColors.soft, fontWeight: FontWeight.w700)),
+          ]),
+        ),
+      ),
     );
   }
 
-  Widget _rackSuggestion() {
-    final rack = _rack!;
-    final m = const Distance()(_to, rack.pos);
-    return Container(
-      padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: AppColors.blue, width: 1.5),
-      ),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Row(children: [
-          Glyph(rack.type, size: 22, color: colorsFor(rack.shownStatus).dark),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Text(
-              '${rack.type.title} ${m.round()} m from your destination · ${(m / 80).ceil()} min walk',
-              style: const TextStyle(fontWeight: FontWeight.w800),
-            ),
+  // ── Parking near the destination (expandable) ──
+  bool _nearOpen = false;
+  bool _sumOpen = false;
+
+  List<Place> get _nearDest {
+    const d = Distance();
+    final list = knownPlaces
+        .where((p) => p.type.group == 'Parking' && d(_to, p.pos) <= 300 && (widget.place == null || p.id != widget.place!.id))
+        .toList()
+      ..sort((a, b) => d(_to, a.pos).compareTo(d(_to, b.pos)));
+    return list.take(8).toList();
+  }
+
+  Widget _cardHead(IconData icon, String title, bool open, VoidCallback onTap, {String? count}) => InkWell(
+        onTap: onTap,
+        child: Row(children: [
+          Icon(icon, size: 17, color: AppColors.soft),
+          const SizedBox(width: 6),
+          Text(title, style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.soft)),
+          if (count != null) Text('  ($count)', style: const TextStyle(color: AppColors.soft)),
+          const Spacer(),
+          AnimatedRotation(
+            turns: open ? 0.5 : 0,
+            duration: const Duration(milliseconds: 200),
+            child: const Icon(Icons.keyboard_arrow_down_rounded, color: AppColors.ink),
           ),
         ]),
-        const SizedBox(height: 4),
-        const Text('Suggestion only: the GPS still takes you to the address. We show the walk again when you arrive.',
-            style: TextStyle(fontSize: 12, color: AppColors.soft)),
-      ]),
-    );
-  }
-
-  Place _tripPlace(RouteResult r) => Place(
-        id: 'trip',
-        type: PlaceType.rack,
-        address: '',
-        pos: _to,
-        status: Status.free,
-        distance: r.distance,
-        accepts: const [Vehicle.bike, Vehicle.ebike, Vehicle.scooter, Vehicle.moped],
-        etaMin: {
-          Vehicle.bike: (r.seconds / 60).round(),
-          Vehicle.ebike: (secondsFor(r.meters, 'ebike') / 60).round(),
-          Vehicle.scooter: (secondsFor(r.meters, 'scooter') / 60).round(),
-          Vehicle.moped: (secondsFor(r.meters, 'moped') / 60).round(),
-        },
       );
 
-  Widget _field(IconData i, Color c, String text, VoidCallback onTap) => Material(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(12),
-          onTap: onTap,
+  Widget _nearCard() {
+    final near = _nearDest;
+    const d = Distance();
+    Widget dotted() => Expanded(
           child: Container(
-            height: 48,
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: AppColors.line, width: 1.5),
+            height: 2,
+            margin: const EdgeInsets.symmetric(horizontal: 4),
+            decoration: const BoxDecoration(
+              border: Border(top: BorderSide(color: Color(0xFFAAB6BB), width: 2, style: BorderStyle.solid)),
             ),
             child: Row(children: [
-              Icon(i, color: c, size: 19),
-              const SizedBox(width: 9),
-              Expanded(
-                child: Text(text,
-                    maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
-              ),
-              const Icon(Icons.edit_outlined, size: 16, color: AppColors.soft),
+              for (int i = 0; i < 12; i++) Expanded(child: Container(color: i.isEven ? Colors.transparent : AppColors.paper)),
             ]),
           ),
+        );
+    Widget sq(Widget child, Color bg) => Container(
+          width: 30,
+          height: 30,
+          margin: const EdgeInsets.symmetric(horizontal: 2),
+          decoration: BoxDecoration(
+            color: bg,
+            borderRadius: BorderRadius.circular(9),
+            border: Border.all(color: Colors.white, width: 1.5),
+            boxShadow: const [BoxShadow(color: Color(0x33000000), blurRadius: 3, offset: Offset(0, 1))],
+          ),
+          child: Center(child: child),
+        );
+    return _softCard(
+      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        _cardHead(Icons.local_parking_rounded, 'Parking near destination', _nearOpen,
+            () => setState(() => _nearOpen = !_nearOpen),
+            count: '${near.length}'),
+        const SizedBox(height: 8),
+        if (!_nearOpen)
+          Row(children: [
+            sq(const Icon(Icons.route, size: 17, color: AppColors.soft), const Color(0xFFE3E8EA)),
+            dotted(),
+            for (final p in near.take(5))
+              sq(Glyph(p.type, size: 17, color: Colors.white), colorsFor(p.shownStatus).main),
+            if (near.isNotEmpty) dotted(),
+            sq(const Icon(Icons.flag_rounded, size: 17, color: AppColors.red), AppColors.redTint),
+          ])
+        else if (near.isEmpty)
+          const Text('No bike parking within 300 m of the destination.', style: TextStyle(color: AppColors.soft))
+        else
+          for (final p in near)
+            InkWell(
+              onTap: () {
+                setState(() {
+                  _to = p.pos;
+                  _toName = p.address;
+                });
+                _calc();
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: Row(children: [
+                  sq(Glyph(p.type, size: 17, color: Colors.white), colorsFor(p.shownStatus).main),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                      Text(p.address,
+                          maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800)),
+                      Text(
+                        '${d(_to, p.pos).round()} m · ${p.shownStatus == Status.full ? 'full' : '${p.count ?? '—'} free'}'
+                        '${p.age.isEmpty ? '' : ' · ${p.age}'}',
+                        style: const TextStyle(fontSize: 12, color: AppColors.blue, fontWeight: FontWeight.w700),
+                      ),
+                    ]),
+                  ),
+                  const Icon(Icons.chevron_right, color: AppColors.soft),
+                ]),
+              ),
+            ),
+      ]),
+    );
+  }
+
+  // ── Trip summary (expandable): time, road types and the weather on the way ──
+  Widget _summaryCard(RouteResult r) {
+    final mix = _roadMix(r);
+    const colors = {
+      'Protected lanes': AppColors.green,
+      'Quiet streets': Color(0xFF8CC063),
+      'Bike lanes': AppColors.yellow,
+      'Shared roads': Color(0xFFF08A3C),
+      'Main roads': AppColors.red,
+    };
+    final w = _wx;
+    return _softCard(
+      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        _cardHead(Icons.schedule, 'Trip summary', _sumOpen, () => setState(() => _sumOpen = !_sumOpen)),
+        const SizedBox(height: 6),
+        Row(crossAxisAlignment: CrossAxisAlignment.baseline, textBaseline: TextBaseline.alphabetic, children: [
+          Text(_timeFor(r, _vehicle), style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w900)),
+          const SizedBox(width: 8),
+          Text('arrive ${_arriveFor(r, _vehicle)}', style: const TextStyle(color: AppColors.soft, fontWeight: FontWeight.w700)),
+        ]),
+        Text('${r.distance} with your ${_vehicle.label.toLowerCase()}',
+            style: const TextStyle(color: AppColors.soft, fontWeight: FontWeight.w600)),
+        if (_sumOpen) ...[
+          const SizedBox(height: 10),
+          for (final e in mix.entries)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 2.5),
+              child: Row(children: [
+                SizedBox(width: 118, child: Text(e.key, style: const TextStyle(fontSize: 12.5))),
+                Expanded(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(4),
+                    child: LinearProgressIndicator(
+                      value: e.value,
+                      minHeight: 6,
+                      backgroundColor: const Color(0xFFE3E8EA),
+                      color: colors[e.key],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 40,
+                  child: Text('${(e.value * 100).round()}%',
+                      textAlign: TextAlign.right, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 12.5)),
+                ),
+              ]),
+            ),
+          if (w != null) ...[
+            const SizedBox(height: 8),
+            Wrap(spacing: 14, runSpacing: 4, children: [
+              _wxItem(_skyIcon(w), w.sky),
+              _wxItem(Icons.thermostat, '${w.temp.round()}°'),
+              _wxItem(Icons.air, '${w.wind.round()} km/h ${w.windFrom}'),
+              if (w.humidity != null) _wxItem(Icons.water_drop_outlined, '${w.humidity}%'),
+            ]),
+          ],
+        ],
+      ]),
+    );
+  }
+
+  Widget _wxItem(IconData i, String t) => Row(mainAxisSize: MainAxisSize.min, children: [
+        Icon(i, size: 16, color: AppColors.soft),
+        const SizedBox(width: 4),
+        Text(t, style: const TextStyle(fontWeight: FontWeight.w700)),
+      ]);
+
+  IconData _skyIcon(Weather w) => switch (w.sky) {
+        'Clear' => Icons.wb_sunny_outlined,
+        'Rain' || 'Showers' => Icons.umbrella_outlined,
+        'Snow' => Icons.ac_unit,
+        'Storm' => Icons.thunderstorm_outlined,
+        _ => Icons.wb_cloudy_outlined,
+      };
+
+  // ── bottom buttons: small round ones + GO ──
+  Widget _roundBtn(IconData i, VoidCallback onTap, {Color color = AppColors.ink}) => Material(
+        color: Colors.white,
+        shape: const CircleBorder(side: BorderSide(color: Color(0xFFD5DDDF), width: 1.5)),
+        child: InkWell(
+          customBorder: const CircleBorder(),
+          onTap: onTap,
+          child: SizedBox(width: 46, height: 46, child: Icon(i, size: 21, color: color)),
         ),
       );
 
-  Widget _square(IconData i, VoidCallback onTap) => Material(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(12),
-          onTap: onTap,
-          child: Container(
-            width: 48,
-            height: 48,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: AppColors.line, width: 1.5),
+  Widget _goButton(RouteResult r) => DecoratedBox(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(23),
+          boxShadow: [BoxShadow(color: AppColors.blue.withValues(alpha: 0.35), blurRadius: 12, offset: const Offset(0, 4))],
+        ),
+        child: FilledButton.icon(
+          onPressed: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (_) => GuidanceScreen(
+              route: r,
+              to: _to,
+              toName: _toName,
+              place: widget.place,
+              nearby: widget.nearby,
+              suggestRack: _rack,
             ),
-            child: Icon(i, color: AppColors.ink),
+          )),
+          style: FilledButton.styleFrom(
+            backgroundColor: AppColors.blue,
+            minimumSize: const Size.fromHeight(46),
+            shape: const StadiumBorder(),
           ),
+          icon: const Icon(Icons.navigation_rounded, size: 20),
+          label: const Text('GO', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900, letterSpacing: 1)),
         ),
       );
+
 
   // Tap a box: type the place again (or pick "My location").
   Future<(String, LatLng)?> _pick(String hint, {bool allowMine = false}) => showModalBottomSheet<(String, LatLng)>(
@@ -437,38 +694,6 @@ class _RoutePlannerState extends State<RoutePlanner> {
     _calc();
   }
 
-  Widget _modeTile(String label) {
-    final i = _routes.indexWhere((x) => x.label == label);
-    final on = i == _sel && i >= 0;
-    final x = i >= 0 ? _routes[i] : null;
-    return GestureDetector(
-      onTap: x == null
-          ? null
-          : () {
-              setState(() => _sel = i);
-              _fit();
-            },
-      child: Opacity(
-        opacity: x == null ? 0.4 : 1,
-        child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 2),
-          padding: const EdgeInsets.symmetric(vertical: 11),
-          decoration: BoxDecoration(
-            color: on ? const Color(0xFFE6EEFB) : Colors.white,
-            borderRadius: BorderRadius.circular(14),
-            border: Border.all(color: on ? AppColors.blue : AppColors.line, width: on ? 2 : 1),
-          ),
-          child: Column(children: [
-            Text(label, style: TextStyle(fontWeight: FontWeight.w800, color: on ? AppColors.blue : AppColors.ink)),
-            Text(x == null ? '—' : x.duration, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900)),
-            Text(x == null ? 'not available' : 'arrive ${x.arrival}',
-                style: const TextStyle(fontSize: 10.5, color: AppColors.soft)),
-          ]),
-        ),
-      ),
-    );
-  }
-
   // Share of each kind of road, guessed from the street names on the route.
   Map<String, double> _roadMix(RouteResult r) {
     final m = {'Protected lanes': 0.0, 'Quiet streets': 0.0, 'Bike lanes': 0.0, 'Shared roads': 0.0, 'Main roads': 0.0};
@@ -490,46 +715,6 @@ class _RoutePlannerState extends State<RoutePlanner> {
     return {for (final e in m.entries) e.key: e.value / total};
   }
 
-  Widget _safety(RouteResult r) {
-    final mix = _roadMix(r);
-    const colors = {
-      'Protected lanes': AppColors.green,
-      'Quiet streets': Color(0xFF8CC063),
-      'Bike lanes': AppColors.yellow,
-      'Shared roads': Color(0xFFF08A3C),
-      'Main roads': AppColors.red,
-    };
-    return Container(
-      padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(18)),
-      child: Column(children: [
-        for (final e in mix.entries)
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 3),
-            child: Row(children: [
-              SizedBox(width: 110, child: Text(e.key, style: const TextStyle(fontSize: 12))),
-              Expanded(
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(4),
-                  child: LinearProgressIndicator(
-                    value: e.value,
-                    minHeight: 7,
-                    backgroundColor: const Color(0xFFE3E8EA),
-                    color: colors[e.key],
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: 40,
-                child: Text('${(e.value * 100).round()}%',
-                    textAlign: TextAlign.right, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 12)),
-              ),
-            ]),
-          ),
-      ]),
-    );
-  }
-
   Widget _windChip(RouteResult r) {
     final w = _wx!;
     final dir = bearing(r.points.first, r.points.last);
@@ -542,10 +727,15 @@ class _RoutePlannerState extends State<RoutePlanner> {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
         color: head ? AppColors.yellowTint : AppColors.greenTint,
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 6, offset: Offset(0, 2))],
       ),
-      child: Text('$txt · ${w.wind.round()} km/h from ${w.windFrom} · ${w.temp.round()}° ${w.sky}',
-          style: TextStyle(fontWeight: FontWeight.w800, color: head ? AppColors.yellowDark : AppColors.greenDark)),
+      child: Row(mainAxisSize: MainAxisSize.min, children: [
+        Icon(Icons.air, size: 16, color: head ? AppColors.yellowDark : AppColors.greenDark),
+        const SizedBox(width: 5),
+        Text('$txt · ${w.wind.round()} km/h',
+            style: TextStyle(fontWeight: FontWeight.w800, color: head ? AppColors.yellowDark : AppColors.greenDark)),
+      ]),
     );
   }
 
