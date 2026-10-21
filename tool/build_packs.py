@@ -345,6 +345,8 @@ def main():
         'tiles': dict(sorted(counts.items())),
         'cities': sorted(set(cities) | (set(index.get('cities', [])) if args else set())),
         'total': sum(v[0] if isinstance(v, list) else v for v in counts.values()),
+        # partial builds: which boxes are covered (the app asks OpenStreetMap live outside them)
+        **({'boxes': (index.get('boxes', []) + [list(boxes[0])])} if args else {}),
     }
     with open(index_path, 'w') as f:
         json.dump(index, f, separators=(',', ':'))

@@ -5,6 +5,11 @@ name: Data packs (build here, by hand only)
 # This one stays for building them here by hand if ever needed.
 on:
   workflow_dispatch:
+    inputs:
+      box:
+        description: 'Only this box: south west north east (empty = whole US)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -21,7 +26,7 @@ jobs:
       - name: Build the packs (OpenStreetMap + city halls, whole US)
         run: |
           pip install duckdb
-          python3 tool/build_packs.py
+          python3 tool/build_packs.py ${{ github.event.inputs.box }}
       - name: Save them in the repository
         run: |
           git config user.name "mobility-data-bot"
@@ -29,5 +34,6 @@ jobs:
           git add assets/osm/tiles
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Data packs $(date -u +%Y-%m-%d)"
-          git pull --rebase
+          # if the repository moved meanwhile, keep our freshly built packs
+          git pull --rebase -X theirs || { git checkout --theirs assets/osm/tiles; git add assets/osm/tiles; GIT_EDITOR=true git rebase --continue; }
           git push

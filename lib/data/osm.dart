@@ -17,7 +17,8 @@ List<dynamic> _decodeList(String s) => jsonDecode(s) as List<dynamic>;
 
 /// The free OpenStreetMap servers allow very few requests at once from one phone:
 /// all our requests wait in one line, and a "too many requests" answer waits and tries again.
-Future<void> _line = Future.value();
+final List<Future<void>> _lines = [Future.value(), Future.value()]; // two at a time
+int _lane = 0;
 
 Future<http.Response> _overpass(String url, String query, Duration timeout, {bool queue = true}) {
   Future<http.Response> run() async {
@@ -31,8 +32,10 @@ Future<http.Response> _overpass(String url, String query, Duration timeout, {boo
   }
 
   if (!queue) return run(); // what is on the screen does not wait behind the region pieces
-  final job = _line.then((_) => run());
-  _line = job.then((_) {}, onError: (_) {});
+  final lane = _lane;
+  _lane = 1 - _lane;
+  final job = _lines[lane].then((_) => run());
+  _lines[lane] = job.then((_) {}, onError: (_) {});
   return job;
 }
 
@@ -231,7 +234,7 @@ class OsmService {
     final db = PlaceDb.i;
     await db.open();
     final have = ((idx?['tiles'] as Map?) ?? const {}).cast<String, dynamic>();
-    var any = false;
+    var all = true;
     for (final (a, b, _) in _degreePieces(c, miles)) {
       final key = '${a}_$b';
       if (_packTilesDone.contains(key)) continue;
@@ -241,10 +244,20 @@ class OsmService {
           text = await rootBundle.loadString('assets/osm/tiles/t_$key.json'); // shipped with the app
         } catch (_) {}
       }
-      if (text == null && idx == null && db.hashOf(key) == null) continue; // nothing known here yet
+      // a partial build only covers some boxes: outside them we know nothing yet
+      final boxes = idx?['boxes'] as List?;
+      final covered = idx != null &&
+          (boxes == null ||
+              boxes.any((bx) {
+                final l = (bx as List).map((e) => (e as num).toDouble()).toList();
+                return a >= l[0] && a < l[2] && b >= l[1] && b < l[3];
+              }));
+      if (text == null && !covered && db.hashOf(key) == null) {
+        all = false; // nothing known here yet: OpenStreetMap will be asked for this piece
+        continue;
+      }
       _packTilesDone.add(key);
       _done.add([a.toDouble(), b.toDouble(), a + 1.0, b + 1.0]); // the live map does not ask again here
-      any = true;
       if (text == null) continue; // nothing for riders in this piece
       try {
         _putPiece(key, await compute(_decodeList, text));
@@ -253,7 +266,7 @@ class OsmService {
         debugPrint('Pack $key failed: $err');
       }
     }
-    return any;
+    return all;
   }
 
   /// Once a week: ask our data site which pieces changed and download only those (rider's area).
@@ -306,9 +319,9 @@ class OsmService {
       final local = await _loadPacks(c, miles, onPiece);
       // 2) once a week: only the pieces that changed, from our data site
       final online = await _updateOnline(c, miles, onPiece);
-      if (local || online) {
+      if (local || (online && _packIndex != null)) {
         _regionsDone.add(rk);
-        return; // our database covers it: the free OpenStreetMap servers are not needed
+        return; // our database covers it all: the free OpenStreetMap servers are not needed
       }
       // 3) no database yet: ask OpenStreetMap piece by piece (saved on the phone 2 weeks)
       final rLat = miles * 1.609 / 111.2;
@@ -317,7 +330,9 @@ class OsmService {
       for (int i = ((c.latitude - rLat) / _tile).floor(); i <= ((c.latitude + rLat) / _tile).floor(); i++) {
         for (int j = ((c.longitude - rLng) / _tile).floor(); j <= ((c.longitude + rLng) / _tile).floor(); j++) {
           final d = _dist(c, LatLng((i + 0.5) * _tile, (j + 0.5) * _tile)) / 1609;
-          if (d <= miles + 25) tiles.add((i, j, d));
+          // already in our database (shipped / updated pack): no need to ask the servers
+          final inPack = _packTilesDone.contains('${(i * _tile).floor()}_${(j * _tile).floor()}');
+          if (d <= miles + 25 && !inPack) tiles.add((i, j, d));
         }
       }
       tiles.sort((a, b) => a.$3.compareTo(b.$3));
@@ -328,9 +343,9 @@ class OsmService {
       }
 
       progress();
-      for (final (i, j, _) in tiles) {
+      Future<void> one(int i, int j) async {
         final key = '$i:$j';
-        if (_tilesDone.contains(key)) continue;
+        if (_tilesDone.contains(key)) return;
         // 1) saved on the phone and fresh
         var ok = false;
         try {
@@ -355,6 +370,14 @@ class OsmService {
           onPiece();
         }
         progress();
+      }
+
+      // two pieces at a time (what the free servers allow), nearest first
+      for (int k = 0; k < tiles.length; k += 2) {
+        await Future.wait([
+          one(tiles[k].$1, tiles[k].$2),
+          if (k + 1 < tiles.length) one(tiles[k + 1].$1, tiles[k + 1].$2),
+        ]);
       }
       // pieces the servers refused (busy): try them again, slowly
       for (int pass = 0; pass < 3; pass++) {
