@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -50,6 +51,11 @@ class MapScreenState extends State<MapScreen> {
   final _open = OpenDataService(); // City of Chicago racks + Divvy live
   Timer? _divvyTimer;
   List<Place>? _merged; // all sources together, rebuilt only when one of them changes
+  List<Place>? _allCache; // + riders' confirmations and the map settings
+  LatLngBounds? _area; // the visible map plus a margin: only pins in here are drawn
+  Timer? _areaTimer;
+  List<Marker>? _markerCache;
+  Object? _markerKey;
   bool _loading = false;
   Weather? _wx;
   GeoResult? _dest; // address picked in search: we show the parking around it
@@ -74,14 +80,17 @@ class MapScreenState extends State<MapScreen> {
     // real places: the cities shipped with the app and the ones saved on the phone (instant),
     // then the visible area from OpenStreetMap
     _osm.loadBundled().then((_) => _osm.loadCache()).then((_) {
-      if (mounted) setState(() => _merged = null);
+      if (mounted) setState(() => _merged = _allCache = null);
       _loadVisible();
     });
     // City of Chicago racks (Data Portal) and Divvy stations live, refreshed every 90 s
-    _open.loadCityRacks().then((_) {
-      if (mounted) setState(() => _merged = null);
+    // (a moment after the map is on screen, so the first view is not slowed down)
+    Future.delayed(const Duration(milliseconds: 1500), () async {
+      if (!mounted) return;
+      await _open.loadCityRacks();
+      if (mounted) setState(() => _merged = _allCache = null);
+      _refreshDivvy();
     });
-    _refreshDivvy();
     _divvyTimer = Timer.periodic(const Duration(seconds: 90), (_) => _refreshDivvy());
     _loadWeather();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
@@ -96,13 +105,31 @@ class MapScreenState extends State<MapScreen> {
   }
 
   void _storeChanged() {
-    if (mounted) setState(() {});
+    if (mounted) setState(() => _allCache = null);
+  }
+
+  /// Called while the map moves: the pins are recalculated only when the view
+  /// leaves the area already prepared (the visible map plus half of it on each side).
+  void _watchArea(MapCamera cam) {
+    final v = cam.visibleBounds;
+    final a = _area;
+    if (a != null && a.contains(v.southWest) && a.contains(v.northEast)) return;
+    _areaTimer?.cancel();
+    _areaTimer = Timer(const Duration(milliseconds: 120), () {
+      if (!mounted) return;
+      final dLat = (v.north - v.south) * 0.5, dLng = (v.east - v.west) * 0.5;
+      setState(() => _area = LatLngBounds(
+            LatLng(v.south - dLat, v.west - dLng),
+            LatLng(v.north + dLat, v.east + dLng),
+          ));
+    });
   }
 
   @override
   void dispose() {
     Store.i.removeListener(_storeChanged);
     _divvyTimer?.cancel();
+    _areaTimer?.cancel();
     _flip?.cancel();
     _pinClock?.cancel();
     _debounce?.cancel();
@@ -118,7 +145,7 @@ class MapScreenState extends State<MapScreen> {
   /// Real places (OpenStreetMap), with what riders confirmed in Stats; demo places only until they arrive.
   Future<void> _refreshDivvy() async {
     final ok = await _open.loadDivvy();
-    if (ok && mounted) setState(() => _merged = null);
+    if (ok && mounted) setState(() => _merged = _allCache = null);
   }
 
   /// OpenStreetMap + City of Chicago racks (not where OSM already has one, ~15 m) + Divvy live
@@ -149,10 +176,12 @@ class MapScreenState extends State<MapScreen> {
   }
 
   List<Place> get _all {
+    final c = _allCache;
+    if (c != null && _merged != null) return c;
     final src = _sources;
     final base = src.isEmpty ? demoPlaces : src;
     final conf = Store.i.confirmations;
-    return [
+    return _allCache = [
       for (final p in base)
         if (Store.i.showOnMap[p.type] ?? true)
           conf.containsKey(p.id) ? p.withStatus(conf[p.id]!.status, '<5 min') : p,
@@ -186,7 +215,7 @@ class MapScreenState extends State<MapScreen> {
     _refreshDivvy();
     setState(() {
       _noGps = false;
-      _merged = null;
+      _merged = _allCache = null;
     });
     _map.move(pos, 15);
     _loadWeather();
@@ -331,7 +360,7 @@ class MapScreenState extends State<MapScreen> {
     final changed = await _osm.loadArea(b.south, b.west, b.north, b.east);
     if (!mounted) return;
     setState(() => _loading = false);
-    if (changed) setState(() => _merged = null);
+    if (changed) setState(() => _merged = _allCache = null);
   }
 
   Future<void> openPlace(Place p) => _openPlace(p);
@@ -355,17 +384,31 @@ class MapScreenState extends State<MapScreen> {
     if (mounted) setState(() => _selected = null);
   }
 
+  /// Most pins drawn one by one; above this they are grouped, so the map stays smooth.
+  static const _maxPins = 250;
+
   List<Marker> _markers() {
-    final pins = _visible;
-    if (_zoom < 15) {
-      return clusterPlaces(pins, _zoom).map((c) {
+    final all = _all;
+    final key = (identityHashCode(all), _filter, _selected, _zoom, _area);
+    if (_markerCache != null && key == _markerKey) return _markerCache!;
+    _markerKey = key;
+    return _markerCache = _buildMarkers();
+  }
+
+  List<Marker> _buildMarkers() {
+    final a = _area;
+    final pins = a == null ? _visible : _visible.where((p) => a.contains(p.pos)).toList();
+    if (_zoom < 15 || pins.length > _maxPins) {
+      // zoomed in but too many pins: group them in small cells (still one pin where a cell has one place)
+      final z = _zoom < 15 ? _zoom : math.max(_zoom, 16.5);
+      return clusterPlaces(pins, z).map((c) {
         if (c.places.length == 1) return _pinMarker(c.places.first);
         return Marker(
           point: c.center,
           width: 48,
           height: 48,
           child: GestureDetector(
-            onTap: () => _map.move(c.center, 15),
+            onTap: () => _map.move(c.center, math.max(_map.camera.zoom + 2, 15)),
             child: ClusterBadge(cluster: c),
           ),
         );
@@ -423,10 +466,12 @@ class MapScreenState extends State<MapScreen> {
           initialZoom: 15,
           minZoom: 3,
           maxZoom: 19,
+          onMapReady: () => _watchArea(_map.camera),
           onPositionChanged: (camera, hasGesture) {
             // rebuild the pins only when the zoom crosses a half step, not on every frame
             final bucket = (camera.zoom * 2).floor() / 2;
             if (bucket != _zoom) setState(() => _zoom = bucket);
+            _watchArea(camera);
             _debounce?.cancel();
             _debounce = Timer(const Duration(milliseconds: 700), _loadVisible);
           },
