@@ -157,8 +157,8 @@ class _PlaceSheetState extends State<PlaceSheet> {
       ]),
       gap,
       ..._specific(p, c),
-      if (p.hours != null || p.phone != null) ...[gap, _hoursRow(p)],
-      if (p.security != null) ...[gap, SecurityRow(p.security!)],
+      if (p.hours != null || p.phone != null || p.website != null) ...[gap, _hoursRow(p)],
+      if (p.type.group == 'Parking') _securitySection(p),
       if (p.reviews.isNotEmpty)
         ...[gap, ReviewsCarousel(p, onOpen: () => _push(ReviewsScreen(place: p, state: widget.state)))]
       else if (!p.type.isNeutral || p.osm)
@@ -300,6 +300,13 @@ class _PlaceSheetState extends State<PlaceSheet> {
         if (p.busy.isEmpty) return [];
         return [BusyChart(values: p.busy, color: c.main, onHistory: () => _push(HistoryScreen(place: p)))];
       case PlaceType.wash:
+        return [
+          // who washes: a machine, the staff, or the rider
+          if (p.offers.isNotEmpty) OffersRow(p.offers),
+          if (p.offers.isNotEmpty && p.busy.isNotEmpty) const SizedBox(height: 12),
+          if (p.busy.isNotEmpty)
+            BusyChart(values: p.busy, color: c.main, tag: p.tag, onHistory: () => _push(HistoryScreen(place: p))),
+        ];
       case PlaceType.charging:
         if (p.busy.isEmpty) return [];
         return [
@@ -321,11 +328,15 @@ class _PlaceSheetState extends State<PlaceSheet> {
         ];
       case PlaceType.service:
         return [
-          Wrap(spacing: 6, children: [
-            _chip('Open Service', AppColors.paper, AppColors.primary, AppColors.slate),
-            _chip('Road Service', AppColors.paper, AppColors.primary, AppColors.slate),
-            _chip('Charging', AppColors.yellowTint, AppColors.yellowDark, AppColors.yellow),
-          ]),
+          if (p.osm)
+            // real place: only what the map data says it does
+            if (p.offers.isNotEmpty) OffersRow(p.offers, title: 'What they do') else const SizedBox.shrink()
+          else
+            Wrap(spacing: 6, children: [
+              _chip('Open Service', AppColors.paper, AppColors.primary, AppColors.slate),
+              _chip('Road Service', AppColors.paper, AppColors.primary, AppColors.slate),
+              _chip('Charging', AppColors.yellowTint, AppColors.yellowDark, AppColors.yellow),
+            ]),
           const SizedBox(height: 12),
           FilledButton(
             onPressed: () => _push(ServiceRequestScreen(place: p, state: widget.state)),
@@ -333,7 +344,13 @@ class _PlaceSheetState extends State<PlaceSheet> {
           ),
         ];
       case PlaceType.rent:
-        return [FilledButton(onPressed: () => _push(RentScreen(place: p)), child: const Text('Reserve / Rent'))];
+        return [
+          if (p.offers.isNotEmpty) ...[OffersRow(p.offers, title: 'For rent'), const SizedBox(height: 12)],
+          FilledButton(onPressed: () => _push(RentScreen(place: p)), child: const Text('Reserve / Rent')),
+        ];
+      case PlaceType.shop:
+      case PlaceType.bmx:
+        return p.offers.isEmpty ? [] : [OffersRow(p.offers, title: p.type == PlaceType.shop ? 'What they offer' : 'Track')];
       case PlaceType.sharing:
         return [
           SwipeButton(
@@ -347,21 +364,49 @@ class _PlaceSheetState extends State<PlaceSheet> {
     }
   }
 
-  Widget _hoursRow(Place p) => Row(children: [
-        if (p.hours != null) ...[
+  Widget _hoursRow(Place p) {
+    final web = p.website == null ? null : Uri.tryParse(p.website!.startsWith('http') ? p.website! : 'https://${p.website}');
+    final pill = OutlinedButton.styleFrom(
+      foregroundColor: AppColors.ink,
+      shape: const StadiumBorder(),
+      visualDensity: VisualDensity.compact,
+    );
+    return Wrap(spacing: 8, runSpacing: 8, crossAxisAlignment: WrapCrossAlignment.center, children: [
+      if (p.hours != null)
+        Row(mainAxisSize: MainAxisSize.min, children: [
           const Icon(Icons.lock_open_rounded, size: 18, color: AppColors.green),
           const SizedBox(width: 6),
           Text(p.hours!, style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.greenDark)),
-        ],
-        const Spacer(),
-        if (p.phone != null)
-          OutlinedButton.icon(
-            onPressed: () => openLink('tel:${p.phone!.replaceAll(RegExp(r'[^0-9+]'), '')}'),
-            icon: const Icon(Icons.phone_outlined, size: 16),
-            label: Text(p.phone!),
-            style: OutlinedButton.styleFrom(foregroundColor: AppColors.ink, shape: const StadiumBorder()),
-          ),
-      ]);
+        ]),
+      if (p.phone != null)
+        OutlinedButton.icon(
+          onPressed: () => openLink('tel:${p.phone!.replaceAll(RegExp(r'[^0-9+]'), '')}'),
+          icon: const Icon(Icons.phone_outlined, size: 16),
+          label: Text(p.phone!),
+          style: pill,
+        ),
+      if (web != null && web.host.isNotEmpty)
+        OutlinedButton.icon(
+          onPressed: () => openLink(web.toString()),
+          icon: const Icon(Icons.language, size: 16),
+          label: Text(web.host.replaceFirst('www.', '')),
+          style: pill,
+        ),
+    ]);
+  }
+
+  /// Parking security: map data, plus cameras and street lights seen in Mapillary street photos.
+  Widget _securitySection(Place p) {
+    final base = p.security ?? const Security(cameras: null, lighting: null, guard: null, access: null, overnight: null);
+    return FutureBuilder<Set<String>>(
+      future: p.osm ? mapillarySecurity(p.pos) : Future.value(const <String>{}),
+      builder: (_, snap) {
+        final s = base.withPhotos(snap.data ?? const {});
+        if (!s.anyKnown) return const SizedBox.shrink();
+        return Padding(padding: const EdgeInsets.only(top: 12), child: SecurityRow(s));
+      },
+    );
+  }
 
   /// Real photos of the place (from OpenStreetMap / Wikimedia Commons / Panoramax), swipe through them.
   Widget _realPhotos(List<String> urls, {String? credit}) => SizedBox(

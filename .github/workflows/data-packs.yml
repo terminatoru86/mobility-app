@@ -36,7 +36,8 @@ jobs:
           osmium tags-filter region.osm.pbf \
             nwr/amenity=bicycle_parking,bicycle_repair_station,compressed_air,bicycle_wash,bicycle_rental,charging_station \
             nwr/amenity=motorcycle_parking,small_electric_vehicle_parking,kick-scooter_parking,mobility_hub \
-            nwr/shop=bicycle,motorcycle,scooter,motorcycle_repair -o filtered.osm.pbf
+            nwr/shop=bicycle,motorcycle,scooter,motorcycle_repair \
+            nwr/sport=bmx -o filtered.osm.pbf
           rm region.osm.pbf
           python3 tool/osm_extract.py filtered.osm.pbf osm.json
       - name: Name the result
@@ -73,8 +74,8 @@ jobs:
         run: |
           git config user.name "mobility-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A assets/osm/tiles
+          git add -A assets/osm/tiles data/contacts
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Data packs $(date -u +%Y-%m-%d)"
-          git pull --rebase -X theirs || { git checkout --theirs assets/osm/tiles; git add -A assets/osm/tiles; GIT_EDITOR=true git rebase --continue; }
+          git pull --rebase -X theirs || { git checkout --theirs assets/osm/tiles data/contacts; git add -A assets/osm/tiles data/contacts; GIT_EDITOR=true git rebase --continue; }
           git push

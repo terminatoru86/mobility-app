@@ -21,6 +21,8 @@ KEEP = {
     'service:vehicle:repair', 'motorcycle:repair',
     # photos, freshness and details
     'image', 'image:0', 'image:1', 'wikimedia_commons', 'mapillary', 'panoramax', 'check_date', 'survey:date', 'cargo_bike', 'capacity:cargo_bike', 'supervised', 'maxstay', 'charge', 'valves', 'manometer', 'level', 'location', 'description',
+    'surveillance:type', 'self_service', 'automated', 'rental', 'sport', 'surface', 'email', 'contact:email',
+    'manufacturer',
 }
 
 
@@ -28,11 +30,13 @@ def wanted(tags):
     a = tags.get('amenity')
     if a in KEEP_AMENITY or tags.get('shop') in ('bicycle', 'motorcycle', 'scooter', 'motorcycle_repair'):
         return True
+    if tags.get('sport') == 'bmx':
+        return True
     return a == 'charging_station' and 'yes' in (tags.get('bicycle'), tags.get('scooter'), tags.get('motorcycle'))
 
 
 def slim(tags):
-    return {k: v for k, v in tags.items() if k in KEEP or (k.startswith('service:bicycle:') or k.startswith('socket:'))}
+    return {k: v for k, v in tags.items() if k in KEEP or k.startswith(('service:', 'socket:', 'motorcycle:'))}
 
 
 class H(osmium.SimpleHandler):

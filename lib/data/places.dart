@@ -130,8 +130,12 @@ class QA {
 }
 
 class Security {
-  final bool cameras, lighting, guard, access, overnight;
+  /// true = yes, false = no, null = not known yet (no map data and nothing seen in street photos).
+  final bool? cameras, lighting, guard, access, overnight;
   final bool codeAccess;
+
+  /// What was found in street photos (Mapillary detections), e.g. {'cameras', 'lighting'}.
+  final Set<String> fromPhotos;
   const Security({
     this.cameras = false,
     this.lighting = false,
@@ -139,7 +143,25 @@ class Security {
     this.access = false,
     this.overnight = false,
     this.codeAccess = false,
+    this.fromPhotos = const {},
   });
+
+  bool get anyKnown =>
+      cameras != null || lighting != null || guard != null || access != null || overnight != null || codeAccess;
+
+  /// Fill the unknowns with what street photos show (only ever turns "unknown" into "yes").
+  Security withPhotos(Set<String> seen) => Security(
+        cameras: cameras ?? (seen.contains('cameras') ? true : null),
+        lighting: lighting ?? (seen.contains('lighting') ? true : null),
+        guard: guard,
+        access: access,
+        overnight: overnight,
+        codeAccess: codeAccess,
+        fromPhotos: {
+          if (cameras == null && seen.contains('cameras')) 'cameras',
+          if (lighting == null && seen.contains('lighting')) 'lighting',
+        },
+      );
 }
 
 class Operator {
@@ -177,6 +199,7 @@ class Place {
   final List<String> facts; // e.g. "Capacity 12", "Covered", "Free"
   final String? website;
   final List<String> photos; // real photos (OpenStreetMap image / Wikimedia Commons / Panoramax)
+  final List<String> offers; // what a service / shop / rent / wash / BMX place does, from the map data
 
   const Place({
     required this.id,
@@ -206,6 +229,7 @@ class Place {
     this.facts = const [],
     this.website,
     this.photos = const [],
+    this.offers = const [],
   });
 
   Status get shownStatus => type.isNeutral ? Status.neutral : status;

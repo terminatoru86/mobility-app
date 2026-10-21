@@ -246,12 +246,12 @@ class SecurityRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final items = <(IconData, String, bool)>[
-      (Icons.videocam_outlined, 'Cameras', s.cameras),
-      (Icons.lightbulb_outline, 'Lighting', s.lighting),
-      (Icons.shield_outlined, 'Guard', s.guard),
-      if (s.codeAccess) (Icons.lock_outline, 'Code', true) else (Icons.key_outlined, 'Access', s.access),
-      (Icons.nightlight_outlined, 'Overnight', s.overnight),
+    final items = <(IconData, String, bool?, bool)>[
+      (Icons.videocam_outlined, 'Cameras', s.cameras, s.fromPhotos.contains('cameras')),
+      (Icons.lightbulb_outline, 'Lighting', s.lighting, s.fromPhotos.contains('lighting')),
+      (Icons.shield_outlined, 'Guard', s.guard, false),
+      if (s.codeAccess) (Icons.lock_outline, 'Code', true, false) else (Icons.key_outlined, 'Limited', s.access, false),
+      (Icons.nightlight_outlined, 'Overnight', s.overnight, false),
     ];
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       const Text('Security', style: TextStyle(fontWeight: FontWeight.w700, fontSize: 13, color: AppColors.soft)),
@@ -259,18 +259,40 @@ class SecurityRow extends StatelessWidget {
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: items.map((e) {
-          final ok = e.$3;
+          final ok = e.$3 == true;
+          final unknown = e.$3 == null;
           return Column(children: [
-            Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                color: ok ? AppColors.greenTint : AppColors.greyTint,
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: ok ? AppColors.green : const Color(0xFFC9D1D5), width: 1.5),
+            Stack(clipBehavior: Clip.none, children: [
+              Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  color: ok ? AppColors.greenTint : (unknown ? Colors.white : AppColors.greyTint),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: ok ? AppColors.green : const Color(0xFFC9D1D5), width: 1.5),
+                ),
+                child: Icon(e.$1, size: 20, color: ok ? AppColors.greenDark : const Color(0xFFB4BEC3)),
               ),
-              child: Icon(e.$1, size: 20, color: ok ? AppColors.greenDark : AppColors.grey),
-            ),
+              // "?" = not known yet; camera badge = seen in street photos
+              if (unknown || e.$4)
+                Positioned(
+                  right: -4,
+                  top: -4,
+                  child: Container(
+                    width: 15,
+                    height: 15,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: e.$4 ? AppColors.blue : AppColors.grey,
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.white, width: 1.5),
+                    ),
+                    child: e.$4
+                        ? const Icon(Icons.photo_camera, size: 8, color: Colors.white)
+                        : const Text('?', style: TextStyle(fontSize: 9, height: 1, color: Colors.white, fontWeight: FontWeight.w800)),
+                  ),
+                ),
+            ]),
             const SizedBox(height: 3),
             Text(e.$2,
                 style: TextStyle(
@@ -278,8 +300,41 @@ class SecurityRow extends StatelessWidget {
           ]);
         }).toList(),
       ),
+      if (s.fromPhotos.isNotEmpty)
+        const Padding(
+          padding: EdgeInsets.only(top: 6),
+          child: Text('Blue mark: seen in street photos (Mapillary).',
+              style: TextStyle(fontSize: 10.5, color: AppColors.soft)),
+        ),
     ]);
   }
+}
+
+/// Small chips: what a place does (repairs, sales, what it rents, wash type...).
+class OffersRow extends StatelessWidget {
+  final List<String> offers;
+  final String? title;
+  const OffersRow(this.offers, {super.key, this.title});
+
+  @override
+  Widget build(BuildContext context) => Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        if (title != null) ...[
+          Text(title!, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13, color: AppColors.soft)),
+          const SizedBox(height: 6),
+        ],
+        Wrap(spacing: 6, runSpacing: 6, children: [
+          for (final o in offers)
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              decoration: BoxDecoration(
+                color: AppColors.paper,
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: AppColors.line),
+              ),
+              child: Text(o, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: AppColors.primary)),
+            ),
+        ]),
+      ]);
 }
 
 /// Reviews: stars, age on the right, one line of text, dots; swipe for more.

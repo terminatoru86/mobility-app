@@ -44,6 +44,7 @@ KEEP = {
     'image', 'image:0', 'image:1', 'wikimedia_commons', 'mapillary', 'panoramax', 'check_date', 'survey:date',
     'cargo_bike', 'capacity:cargo_bike', 'supervised', 'maxstay', 'charge', 'valves', 'manometer', 'level', 'location',
     'description',
+    'surveillance:type', 'self_service', 'automated', 'rental', 'sport', 'surface', 'email', 'contact:email',
 }
 
 
@@ -87,7 +88,7 @@ def slim(el):
     lon = el.get('lon') or (el.get('center') or {}).get('lon')
     if lat is None or lon is None:
         return None
-    tags = {k: v for k, v in (el.get('tags') or {}).items() if k in KEEP or (k.startswith('service:bicycle:') or k.startswith('socket:'))}
+    tags = {k: v for k, v in (el.get('tags') or {}).items() if k in KEEP or k.startswith(('service:', 'socket:', 'motorcycle:'))}
     return [f"{el['type']}/{el['id']}", round(lat, 6), round(lon, 6), tags]
 
 
@@ -438,7 +439,7 @@ def fetch_overture():
     con.execute('INSTALL httpfs; LOAD httpfs; SET s3_region=\'us-west-2\';')
     q = f"""
       SELECT id, names.primary AS name, categories.primary AS cat,
-             (bbox.ymin + bbox.ymax) / 2 AS lat, (bbox.xmin + bbox.xmax) / 2 AS lon, websites[1] AS web, phones[1] AS phone,
+             (bbox.ymin + bbox.ymax) / 2 AS lat, (bbox.xmin + bbox.xmax) / 2 AS lon, websites[1] AS web, phones[1] AS phone, emails[1] AS email,
              addresses[1].freeform AS street
       FROM read_parquet('s3://overturemaps-us-west-2/release/{release}/theme=places/type=place/*', hive_partitioning=1)
       WHERE bbox.xmin BETWEEN -170 AND -65 AND bbox.ymin BETWEEN 17 AND 72
@@ -448,7 +449,7 @@ def fetch_overture():
         AND confidence >= 0.6
     """
     out = []
-    for oid, name, c, lat, lon, web, phone, street in con.execute(q).fetchall():
+    for oid, name, c, lat, lon, web, phone, email, street in con.execute(q).fetchall():
         c = (c or '').lower()
         if 'motorcycle' in c or 'moped' in c or 'scooter' in c:
             kind = 'motorcycle' if ('motorcycle' in c or 'moped' in c) else 'scooter'
@@ -459,7 +460,7 @@ def fetch_overture():
                 continue  # no rental type for mopeds yet
             else:
                 tags = {'shop': kind}
-            tags.update({k: v for k, v in {'name': name, 'website': web, 'phone': phone, 'addr:street': street}.items() if v})
+            tags.update({k: v for k, v in {'name': name, 'website': web, 'phone': phone, 'email': email, 'addr:street': street}.items() if v})
             tags['source'] = 'Overture Maps'
             out.append([f'ovt/{oid}', round(lat, 6), round(lon, 6), tags])
             continue
@@ -471,11 +472,64 @@ def fetch_overture():
             tags = {'shop': 'bicycle'}
         else:
             continue  # bike paths, clubs, tours... not places for the map
-        tags.update({k: v for k, v in {'name': name, 'website': web, 'phone': phone, 'addr:street': street}.items() if v})
+        tags.update({k: v for k, v in {'name': name, 'website': web, 'phone': phone, 'email': email, 'addr:street': street}.items() if v})
         tags['source'] = 'Overture Maps'
         out.append([f'ovt/{oid}', round(lat, 6), round(lon, 6), tags])
     print(f'Overture {release}: {len(out)}', flush=True)
     return out
+
+
+CONTACTS = os.environ.get('CONTACTS_OUT') or os.path.join(ROOT, 'data', 'contacts', 'business_contacts.csv')
+
+
+def contact_kind(t):
+    """Which businesses go on our own contact list (not shown in the app)."""
+    a, shop = t.get('amenity'), t.get('shop')
+    if shop in ('bicycle', 'motorcycle', 'scooter', 'motorcycle_repair'):
+        return 'service' if (t.get('service:bicycle:repair') == 'yes' or shop == 'motorcycle_repair') else 'shop'
+    if a == 'bicycle_wash':
+        return 'wash'
+    if a == 'bicycle_rental' and t.get('bicycle_rental') != 'docking_station':
+        return 'rent'
+    if a in ('bicycle_parking', 'motorcycle_parking') and (t.get('access') in ('private', 'customers') or t.get('fee') == 'yes'):
+        return 'private parking'
+    if t.get('sport') == 'bmx':
+        return 'bmx'
+    return None
+
+
+def write_contacts(tiles, save=True):
+    """Emails of service hubs, shops, BMX, washes, private parking and rentals: a separate list for us.
+    The emails are taken out of the app data (riders do not need them); BMX places stay off the map."""
+    import csv
+    rows = {}
+    for d in tiles.values():
+        for pid in list(d):
+            row = d[pid]
+            t = row[3]
+            email = (t.pop('email', None) or t.pop('contact:email', None) or '').strip()
+            t.pop('contact:email', None)
+            kind = contact_kind(t)
+            if t.get('sport') == 'bmx' and t.get('amenity') is None and t.get('shop') is None:
+                d.pop(pid)  # BMX tracks: contacts only (no BMX filter on the map)
+            if not kind or not email:
+                continue
+            for e in re.split(r'[;,\s]+', email):
+                if '@' in e:
+                    rows[(e.lower(), t.get('name', ''))] = [
+                        e.lower(), kind, t.get('name', ''), t.get('website') or t.get('contact:website', ''),
+                        t.get('phone') or t.get('contact:phone', ''),
+                        ' '.join(x for x in (t.get('addr:housenumber'), t.get('addr:street')) if x),
+                        row[1], row[2], pid, t.get('source', 'OpenStreetMap')]
+    if not save:
+        return  # partial build: keep the full list from the last full build
+    os.makedirs(os.path.dirname(CONTACTS), exist_ok=True)
+    with open(CONTACTS, 'w', newline='', encoding='utf-8') as f:
+        w = csv.writer(f)
+        w.writerow(['email', 'kind', 'name', 'website', 'phone', 'street', 'lat', 'lon', 'id', 'source'])
+        for r in sorted(rows.values(), key=lambda r: (r[1], r[2])):
+            w.writerow(r)
+    print(f'Contacts: {len(rows)} emails -> {CONTACTS}', flush=True)
 
 
 def main():
@@ -548,6 +602,7 @@ def main():
             print(f"City {src['key']}: {add_city}", flush=True)
         except Exception as err:
             print(f"City {src['key']} failed: {err}", flush=True)
+    write_contacts(tiles, save=not args and '--extra-only' not in sys.argv)
     os.makedirs(OUT, exist_ok=True)
     index_path = os.path.join(OUT, 'index.json')
     try:

@@ -180,6 +180,7 @@ class OsmService {
   static const _tileDays = 14;
   static const _keep = {
     'amenity', 'bicycle_parking', 'capacity', 'covered', 'fee', 'access', 'lit', 'surveillance', 'name', 'brand', 'manufacturer',
+    'surveillance:type', 'supervised', 'maxstay', 'self_service', 'automated', 'rental', 'sport',
     'network', 'operator', 'shop', 'bicycle', 'bicycle_rental', 'opening_hours', 'phone', 'contact:phone', 'website',
     'contact:website', 'addr:housenumber', 'addr:street', 'service:bicycle:repair', 'service:bicycle:pump',
     'service:bicycle:tools', 'service:bicycle:stand', 'service:bicycle:chain_tool', 'service:bicycle:rental',
@@ -450,7 +451,7 @@ class OsmService {
         for (final el in els) {
           final e = _slim(el);
           if (e['lat'] == null) continue;
-          final tags = Map<String, dynamic>.from(e['tags'] as Map)..removeWhere((k, _) => !_keep.contains(k) && !k.startsWith('socket:'));
+          final tags = Map<String, dynamic>.from(e['tags'] as Map)..removeWhere((k, _) => !_keep.contains(k) && !k.startsWith('socket:') && !k.startsWith('service:') && !k.startsWith('motorcycle:'));
           _add({'id': e['id'], 'lat': e['lat'], 'lon': e['lon'], 'tags': tags});
           compact.add([e['id'], e['lat'], e['lon'], tags]);
         }
@@ -618,7 +619,7 @@ Place? placeFromOsm(Map<String, dynamic> e) {
     busy: t0.busy,
     reviews: t0.reviews,
     qa: t0.qa,
-    tag: type == PlaceType.charging ? _sockets(t) : (type == PlaceType.wash ? 'Automatic' : null),
+    tag: type == PlaceType.charging ? _sockets(t) : (type == PlaceType.wash ? _washMode(t) : null),
     priceNow: type == PlaceType.parkPrivate ? '\$${(1 + t0.n % 3)}/h' : null,
     operatorPrice: type == PlaceType.sharing ? '\$1 unlock · \$0.${17 + t0.n % 20}/min' : null,
     accepts: accepts,
@@ -628,18 +629,13 @@ Place? placeFromOsm(Map<String, dynamic> e) {
     phone: tag('phone') ?? tag('contact:phone'),
     rating: t0.rating,
     reviewCount: t0.reviewCount,
-    security: (type == PlaceType.parkCovered || type == PlaceType.parkPrivate)
-        ? Security(
-            cameras: (tag('surveillance') ?? 'no') != 'no',
-            lighting: yes('lit'),
-            access: tag('access') == 'customers' || tag('access') == 'private',
-          )
-        : null,
+    security: type.group == 'Parking' ? _security(t) : null,
     operatorName: operatorName,
     osm: true,
     facts: facts,
     website: tag('website') ?? tag('contact:website'),
     photos: _photos(t),
+    offers: _offers(t, type),
   );
 }
 
@@ -800,4 +796,108 @@ int etaMinutes(double meters, Vehicle v) {
     Vehicle.moto => 35.0,
   };
   return math.max(1, (meters * 1.3 / 1000 / kmh * 60).round());
+}
+
+
+/// Parking security from the map data. null = not known (shown as "?"; street photos may fill cameras and lights).
+Security? _security(Map<String, dynamic> t) {
+  String? tag(String k) => t[k]?.toString().toLowerCase();
+  bool? tri(String? v) => v == null ? null : (v == 'no' || v == 'none' ? false : true);
+  final surv = tag('surveillance');
+  final cameras = surv == null ? (tag('surveillance:type') != null ? true : null) : surv != 'no';
+  final acc = tag('access');
+  final limited = acc == null
+      ? null
+      : const ['private', 'customers', 'permit', 'members', 'destination', 'delivery', 'residents'].contains(acc)
+          ? true
+          : (const ['yes', 'public', 'permissive'].contains(acc) ? false : null);
+  // overnight: open around the clock and no short stay limit
+  bool? overnight;
+  final oh = tag('opening_hours');
+  final stay = tag('maxstay');
+  if (stay != null) {
+    final h = double.tryParse(RegExp(r'[0-9.]+').firstMatch(stay)?.group(0) ?? '');
+    final days = stay.contains('day') || stay.contains('week') || stay.contains('month');
+    overnight = days || (h != null && stay.contains('h') && h >= 12) || stay == 'unlimited' || stay == 'no';
+  } else if (oh != null) {
+    overnight = oh == '24/7';
+  }
+  final s = Security(
+    cameras: cameras,
+    lighting: tri(tag('lit')),
+    guard: tri(tag('supervised')),
+    access: limited,
+    overnight: overnight,
+    codeAccess: tag('bicycle_parking') == 'lockers' || tag('bicycle_parking') == 'building' && limited == true,
+  );
+  return s;
+}
+
+/// Bike wash: machine, staff, or the rider washes it.
+String? _washMode(Map<String, dynamic> t) {
+  final auto = t['automated']?.toString();
+  final self = t['self_service']?.toString();
+  if (auto == 'yes') return 'Automatic';
+  if (self == 'yes') return 'Self-wash';
+  if (self == 'no') return 'Staff wash';
+  return null;
+}
+
+/// What a place does, from the map data: repairs, sales, rentals, what it rents...
+List<String> _offers(Map<String, dynamic> t, PlaceType type) {
+  bool yes(String k) {
+    final v = t[k]?.toString();
+    return v != null && v != 'no';
+  }
+
+  const bike = {
+    'repair': 'Repairs', 'electric': 'E-bike service', 'retail': 'Sells bikes', 'second_hand': 'Used bikes',
+    'rental': 'Rentals', 'parts': 'Parts', 'accessories': 'Accessories', 'clothes': 'Clothing', 'diy': 'DIY workshop',
+    'cleaning': 'Cleaning', 'pump': 'Free pump', 'charging': 'Charging', 'tools': 'Tools', 'stand': 'Repair stand',
+    'chain_tool': 'Chain tool', 'repair:emergency': 'Emergency repair',
+  };
+  const moto = {
+    'motorcycle:repair': 'Repairs', 'service:vehicle:repair': 'Repairs', 'service:vehicle:tyres': 'Tires',
+    'motorcycle:sales': 'Sales', 'motorcycle:rental': 'Rentals', 'motorcycle:parts': 'Parts',
+    'motorcycle:clothes': 'Rider gear', 'service:vehicle:inspection': 'Inspection',
+  };
+  const rental = {
+    'city_bike': 'City bikes', 'ebike': 'E-bikes', 'e-bike': 'E-bikes', 'electric_bicycle': 'E-bikes',
+    'mtb': 'Mountain bikes', 'mountain_bike': 'Mountain bikes', 'road_bike': 'Road bikes', 'kids_bike': 'Kids bikes',
+    'tandem': 'Tandems', 'cargo_bike': 'Cargo bikes', 'bmx': 'BMX', 'scooter': 'Scooters', 'kick_scooter': 'Scooters',
+    'e-scooter': 'E-scooters', 'moped': 'Mopeds', 'motorcycle': 'Motorcycles', 'trike': 'Trikes', 'fatbike': 'Fat bikes',
+  };
+  final out = <String>[];
+  void add(String x) {
+    if (!out.contains(x)) out.add(x);
+  }
+
+  switch (type) {
+    case PlaceType.service || PlaceType.shop:
+      for (final e in bike.entries) {
+        if (yes('service:bicycle:${e.key}')) add(e.value);
+      }
+      for (final e in moto.entries) {
+        if (yes(e.key)) add(e.value);
+      }
+    case PlaceType.rent || PlaceType.sharing:
+      for (final v in (t['rental']?.toString() ?? '').split(';')) {
+        final k = v.trim().toLowerCase();
+        if (k.isEmpty) continue;
+        add(rental[k] ?? '${k[0].toUpperCase()}${k.substring(1).replaceAll('_', ' ')}');
+      }
+      if (yes('cargo_bike')) add('Cargo bikes');
+      if (yes('service:bicycle:repair')) add('Repairs');
+    case PlaceType.wash:
+      final m = _washMode(t);
+      if (m != null) add(m);
+      if (t['fee'] == 'no') add('Free');
+    case PlaceType.bmx:
+      if (yes('lit')) add('Lit at night');
+      if (t['surface'] != null) add('${t['surface']}'.replaceAll('_', ' '));
+      if (t['fee'] == 'no') add('Free');
+    default:
+      break;
+  }
+  return out;
 }

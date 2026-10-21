@@ -48,3 +48,37 @@ Future<List<String>> mapillaryPhotos(LatLng p, {int max = 4}) async {
     return const [];
   }
 }
+
+final Map<String, Set<String>> _seenCache = {};
+
+/// Security seen in street photos within ~40 m: Mapillary finds CCTV cameras and street lights in its pictures.
+/// Returns e.g. {'cameras', 'lighting'} (empty if nothing was seen or there are no photos there).
+Future<Set<String>> mapillarySecurity(LatLng p) async {
+  final key = '${p.latitude.toStringAsFixed(5)},${p.longitude.toStringAsFixed(5)}';
+  final c = _seenCache[key];
+  if (c != null) return c;
+  const dLat = 0.00036; // ~40 m
+  final dLng = dLat / 0.75;
+  final uri = Uri.https('graph.mapillary.com', '/map_features', {
+    'access_token': kMapillaryToken,
+    'fields': 'id,object_value',
+    'object_values': 'object--cctv-camera,object--street-light',
+    'bbox': '${p.longitude - dLng},${p.latitude - dLat},${p.longitude + dLng},${p.latitude + dLat}',
+    'limit': '50',
+  });
+  try {
+    final r = await http.get(uri).timeout(const Duration(seconds: 12));
+    if (r.statusCode != 200) return _seenCache[key] = const {};
+    final data = ((jsonDecode(r.body) as Map<String, dynamic>)['data'] as List? ?? []).cast<Map<String, dynamic>>();
+    final seen = <String>{};
+    for (final e in data) {
+      final v = '${e['object_value']}';
+      if (v == 'object--cctv-camera') seen.add('cameras');
+      if (v == 'object--street-light') seen.add('lighting');
+    }
+    return _seenCache[key] = seen;
+  } catch (e) {
+    debugPrint('Mapillary security failed: $e');
+    return const {};
+  }
+}
