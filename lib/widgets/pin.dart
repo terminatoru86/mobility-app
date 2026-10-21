@@ -242,6 +242,30 @@ class UserDot extends StatelessWidget {
 
 String _hex(Color c) => '#${(c.toARGB32() & 0xFFFFFF).toRadixString(16).padLeft(6, '0')}';
 
+/// Traffic light, stop sign or give-way sign (drawn, so they look the same everywhere).
+class TrafficControlIcon extends StatelessWidget {
+  final String kind; // 'signals', 'stop', 'give_way'
+  final double size;
+  const TrafficControlIcon({super.key, required this.kind, this.size = 28});
+
+  @override
+  Widget build(BuildContext context) {
+    final svg = switch (kind) {
+      'stop' => '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">'
+          '<path d="M7.6 1.5h8.8l6.1 6.1v8.8l-6.1 6.1H7.6l-6.1-6.1V7.6Z" fill="#D7262E" stroke="#fff" stroke-width="1.2"/>'
+          '<text x="12" y="14.6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" '
+          'font-size="6.6" fill="#fff">STOP</text></svg>',
+      'give_way' => '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">'
+          '<path d="M2 3.5h20L12 21.5Z" fill="#fff" stroke="#D7262E" stroke-width="2.6" stroke-linejoin="round"/></svg>',
+      _ => '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">'
+          '<rect x="7" y="1" width="10" height="22" rx="3.2" fill="#13212B"/>'
+          '<circle cx="12" cy="5.6" r="2.4" fill="#E0484D"/><circle cx="12" cy="12" r="2.4" fill="#E9A800"/>'
+          '<circle cx="12" cy="18.4" r="2.4" fill="#5D9A30"/></svg>',
+    };
+    return SvgPicture.string(svg, width: size, height: size);
+  }
+}
+
 /// Map tab icon: a folded map with a location pin standing on it.
 class MapTabIcon extends StatelessWidget {
   final Color color;

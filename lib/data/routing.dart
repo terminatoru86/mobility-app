@@ -294,3 +294,52 @@ Future<List<LatLng>> footPath(LatLng a, LatLng b) async {
 
 /// Compass bearing in degrees from a to b.
 double bearing(LatLng a, LatLng b) => _d.bearing(a, b);
+
+
+/// A traffic light, stop sign or give-way sign on the route (from OpenStreetMap).
+class RouteControl {
+  final LatLng at;
+  final String kind; // 'signals', 'stop', 'give_way'
+  double along = 0; // metres from the start of the route
+  RouteControl(this.at, this.kind);
+}
+
+/// Traffic lights, stop and give-way signs within ~12 m of the route (Overpass, free).
+Future<List<RouteControl>> routeControls(List<LatLng> pts) async {
+  if (pts.length < 2) return [];
+  final step = math.max(1, (pts.length / 180).ceil());
+  final line = <String>[];
+  for (int i = 0; i < pts.length; i += step) {
+    line.add('${pts[i].latitude.toStringAsFixed(5)},${pts[i].longitude.toStringAsFixed(5)}');
+  }
+  line.add('${pts.last.latitude.toStringAsFixed(5)},${pts.last.longitude.toStringAsFixed(5)}');
+  final q = '[out:json][timeout:25];node(around:12,${line.join(',')})'
+      '["highway"~"^(traffic_signals|stop|give_way)\$"];out;';
+  for (final url in const ['https://overpass-api.de/api/interpreter', 'https://overpass.private.coffee/api/interpreter']) {
+    try {
+      final r = await http.post(Uri.parse(url), body: {'data': q}).timeout(const Duration(seconds: 25));
+      if (r.statusCode != 200) continue;
+      final els = (jsonDecode(utf8.decode(r.bodyBytes))['elements'] as List).cast<Map<String, dynamic>>();
+      final out = <RouteControl>[];
+      for (final e in els) {
+        final h = '${(e['tags'] as Map?)?['highway']}';
+        out.add(RouteControl(LatLng((e['lat'] as num).toDouble(), (e['lon'] as num).toDouble()),
+            h == 'traffic_signals' ? 'signals' : h));
+      }
+      // order along the route; lights a few metres apart on one crossing count once
+      for (final c in out) {
+        c.along = projectOnRoute(c.at, pts).$2;
+      }
+      out.sort((a, b) => a.along.compareTo(b.along));
+      final merged = <RouteControl>[];
+      for (final c in out) {
+        if (merged.isNotEmpty && merged.last.kind == c.kind && c.along - merged.last.along < 35) continue;
+        merged.add(c);
+      }
+      return merged;
+    } catch (e) {
+      debugPrint('Route controls failed at $url: $e');
+    }
+  }
+  return [];
+}

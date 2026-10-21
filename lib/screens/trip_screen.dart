@@ -831,7 +831,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
   late Place? _place = widget.place;
   List<LatLng> _walk = const []; // dotted walking line to the suggested rack
   bool _showRackCard = false;
-  bool _nearHidden = false; // the rider swiped the parking card away
+  List<RouteControl> _controls = const []; // traffic lights and stop signs on the route
   Place? _statsPlace; // shown selected behind the Stats veil
   static const _zoom = 18.4; // close to the street, but not all the way in
   late LatLng _pos = userPos;
@@ -857,6 +857,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
       if (mounted) setState(() {});
     });
     _startGps();
+    _loadControls();
     final rack = widget.suggestRack;
     if (rack != null) {
       _walk = [widget.to, rack.pos];
@@ -931,6 +932,45 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
     }
   }
 
+  Future<void> _loadControls() async {
+    final route = _route;
+    final c = await routeControls(route.points);
+    if (mounted && identical(route, _route)) setState(() => _controls = c);
+  }
+
+  /// The next traffic light / stop sign ahead, with how far it is.
+  (RouteControl, double, int)? _nextControl() {
+    final ahead = _controls.where((c) => c.along > _along + 4).toList();
+    if (ahead.isEmpty) return null;
+    return (ahead.first, ahead.first.along - _along, ahead.length);
+  }
+
+  Widget _controlButton() {
+    final n = _nextControl();
+    if (n == null) return const SizedBox.shrink();
+    final (c, m, left) = n;
+    return Column(mainAxisSize: MainAxisSize.min, children: [
+      Container(
+        width: 56,
+        height: 56,
+        decoration: const BoxDecoration(
+          color: Colors.white,
+          shape: BoxShape.circle,
+          boxShadow: [BoxShadow(color: Color(0x33000000), blurRadius: 8, offset: Offset(0, 2))],
+        ),
+        alignment: Alignment.center,
+        child: TrafficControlIcon(kind: c.kind, size: 34),
+      ),
+      const SizedBox(height: 4),
+      Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(10)),
+        child: Text(left > 1 ? '${fmtDistance(m)} · +${left - 1}' : fmtDistance(m),
+            style: const TextStyle(fontSize: 11.5, fontWeight: FontWeight.w900)),
+      ),
+    ]);
+  }
+
   Future<void> _recalculate() async {
     setState(() => _recalc = true);
     final r = await bikeRoute([_pos, _to]);
@@ -942,7 +982,9 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
       }
       _recalc = false;
       _offCount = 0;
+      _controls = const [];
     });
+    _loadControls();
   }
 
   Future<void> _arrive() async {
@@ -1024,92 +1066,10 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
       _along = 0;
       _arrived = false;
       _follow = true;
-      _nearHidden = true;
       _simulating = false;
     });
     if (wasArrived) _startGps();
     if (kIsWeb) _toggleSim();
-  }
-
-  // ── parking near the destination: appears when about 500 m are left ──
-  Widget _nearCard(double remaining) {
-    final list = widget.destParking;
-    Widget dotted() => Expanded(
-          child: LayoutBuilder(builder: (_, c) {
-            final n = (c.maxWidth / 6).floor().clamp(1, 40);
-            return Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-              for (int i = 0; i < n; i++)
-                Container(width: 2.5, height: 2.5, decoration: const BoxDecoration(color: Color(0xFFAAB6BB), shape: BoxShape.circle)),
-            ]);
-          }),
-        );
-    return Dismissible(
-      key: const ValueKey('nearDest'),
-      direction: DismissDirection.down,
-      onDismissed: (_) => setState(() => _nearHidden = true),
-      child: Material(
-        color: Colors.white,
-        elevation: 6,
-        shadowColor: const Color(0x33000000),
-        borderRadius: BorderRadius.circular(16),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(16),
-          onTap: () => _pickParking(list),
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(10, 9, 10, 9),
-            child: Row(children: [
-              Container(
-                width: 24,
-                height: 24,
-                decoration: BoxDecoration(color: const Color(0xFFE3E8EA), borderRadius: BorderRadius.circular(7)),
-                child: const Icon(Icons.route, size: 15, color: AppColors.soft),
-              ),
-              dotted(),
-              for (final p in list.take(4))
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 3),
-                  child: Glyph(p.type, size: 22, color: colorsFor(p.shownStatus).main),
-                ),
-              dotted(),
-              const DestinationPinIcon(size: 22),
-              const SizedBox(width: 8),
-              Text(fmtDistance(remaining), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 14)),
-              const SizedBox(width: 6),
-              const BikeRoadIcon(size: 18),
-            ]),
-          ),
-        ),
-      ),
-    );
-  }
-
-  void _pickParking(List<Place> list) {
-    const d = Distance();
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: Colors.white,
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
-      builder: (c) => SafeArea(
-        child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
-          const Padding(
-            padding: EdgeInsets.fromLTRB(18, 16, 18, 6),
-            child: Text('Parking near destination', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900)),
-          ),
-          for (final p in list)
-            ListTile(
-              leading: Glyph(p.type, size: 26, color: colorsFor(p.shownStatus).main),
-              title: Text(p.address, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800)),
-              subtitle: Text('${d(widget.to, p.pos).round()} m from the destination · '
-                  '${p.shownStatus == Status.full ? 'full' : '${p.count ?? '—'} free'}'),
-              onTap: () {
-                Navigator.pop(c);
-                _rideTo(p);
-              },
-            ),
-          const SizedBox(height: 8),
-        ]),
-      ),
-    );
   }
 
   Widget _rackCard() {
@@ -1232,6 +1192,22 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
                   alignment: Alignment.topCenter,
                   child: PlacePin(place: _statsPlace!, selected: true),
                 ),
+              // traffic lights and stop signs still ahead on the route
+              for (final c in _controls.where((c) => c.along > _along + 4))
+                Marker(
+                  point: c.at,
+                  width: 22,
+                  height: 22,
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                      boxShadow: [BoxShadow(color: Color(0x33000000), blurRadius: 4)],
+                    ),
+                    alignment: Alignment.center,
+                    child: TrafficControlIcon(kind: c.kind, size: 15),
+                  ),
+                ),
               for (final h in hazards)
                 Marker(
                   point: h.pos,
@@ -1330,6 +1306,8 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
               ),
           ]),
         ),
+        // next traffic light / stop sign, under the turn banner on the right
+        Positioned(right: 12, top: top + 112, child: _controlButton()),
         // recording card + recenter + simulate
         Positioned(
           left: 10,
@@ -1403,8 +1381,6 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
             ]),
           ),
         ),
-        if (!_arrived && !_nearHidden && widget.destParking.isNotEmpty && remaining <= 500)
-          Positioned(left: 10, right: 10, bottom: 158, child: _nearCard(remaining)),
         if (_showRackCard)
           Positioned(left: 10, right: 10, bottom: 14, child: SafeArea(top: false, child: _rackCard())),
       ]),
