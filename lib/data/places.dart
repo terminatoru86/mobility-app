@@ -77,7 +77,19 @@ extension PlaceTypeX on PlaceType {
   bool get isNeutral =>
       this == PlaceType.service || this == PlaceType.shop || this == PlaceType.rent || this == PlaceType.bmx;
 
-  /// Filter group used by the quick filter chips.
+  /// Quick filter chip at the top of the map (order: Rack, Parking, Charging, Service, Sharing, Wash, BMX, Shop).
+  String get chip => switch (this) {
+        PlaceType.rack => 'Rack',
+        PlaceType.parkOutdoor || PlaceType.parkCovered || PlaceType.parkPrivate => 'Parking',
+        PlaceType.charging => 'Charging',
+        PlaceType.service || PlaceType.pump || PlaceType.selfService => 'Service',
+        PlaceType.sharing || PlaceType.rent => 'Sharing',
+        PlaceType.wash => 'Wash',
+        PlaceType.bmx => 'BMX',
+        PlaceType.shop => 'Shop',
+      };
+
+  /// Group used for parking logic (racks count as parking).
   String get group => switch (this) {
         PlaceType.rack ||
         PlaceType.parkOutdoor ||

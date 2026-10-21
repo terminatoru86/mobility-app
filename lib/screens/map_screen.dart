@@ -181,6 +181,7 @@ class MapScreenState extends State<MapScreen> {
     Store.i.removeListener(_storeChanged);
     _shareTimer?.cancel();
     _lockTimer?.cancel();
+    _ringTimer?.cancel();
     _areaTimer?.cancel();
     _flip?.cancel();
     _pinClock?.cancel();
@@ -258,7 +259,7 @@ class MapScreenState extends State<MapScreen> {
 
   List<Place> get _visible {
     final all = _all;
-    return _filter == null ? all : all.where((p) => p.type.group == _filter).toList();
+    return _filter == null ? all : all.where((p) => p.type.chip == _filter).toList();
   }
 
   List<Place> _near(LatLng c, double meters) {
@@ -279,6 +280,7 @@ class MapScreenState extends State<MapScreen> {
       return;
     }
     userPos = pos;
+    _ringCenter = pos;
     _claimZone(pos);
     _osm.refreshDistances();
     _open.refreshDistances();
@@ -461,6 +463,33 @@ class MapScreenState extends State<MapScreen> {
   /// Radius of the ring around the rider: inside it pins and groups, outside light dots.
   static const kRingMiles = 22.0;
 
+  /// The ring follows the middle of the map: what comes in on one side becomes pins/groups,
+  /// what leaves on the other side turns into dots.
+  LatLng? _ringCenter;
+  DateTime _ringMoved = DateTime(2000);
+  Timer? _ringTimer;
+
+  void _moveRing(LatLng c, double zoom) {
+    final rc = _ringCenter ?? userPos;
+    // how far the middle moved, compared with what is on screen
+    final mPerPx = 156543.03 * math.cos(c.latitude * math.pi / 180) / math.pow(2, zoom);
+    final moved = const Distance()(rc, c) / mPerPx; // pixels
+    if (moved < 40) return;
+    void apply() {
+      if (!mounted) return;
+      setState(() => _ringCenter = c);
+      _ringMoved = DateTime.now();
+    }
+
+    _ringTimer?.cancel();
+    // while dragging: at most ~4 updates a second; the last one when the map stops
+    if (DateTime.now().difference(_ringMoved).inMilliseconds > 250) {
+      apply();
+    } else {
+      _ringTimer = Timer(const Duration(milliseconds: 160), apply);
+    }
+  }
+
   /// From this zoom the real pins appear (the map opens here).
   static const kPinZoom = 15.5;
 
@@ -473,7 +502,7 @@ class MapScreenState extends State<MapScreen> {
   List<Marker> _markers() {
     final all = _all;
     final key = (identityHashCode(all), _filter, _selected, _zoom, _area, Store.i.zones.length,
-        (userPos.latitude * 100).round(), (userPos.longitude * 100).round());
+        _ringCenter ?? userPos);
     if (_markerCache != null && key == _markerKey) return _markerCache!;
     _markerKey = key;
     _buildLayers();
@@ -502,7 +531,7 @@ class MapScreenState extends State<MapScreen> {
 
     // the ring: 22 miles around the rider. Inside: pins up close, groups when zoomed out.
     // Outside: light dots only.
-    final rc = userPos;
+    final rc = _ringCenter ?? userPos;
     final kx = 111.2 * math.cos(rc.latitude * math.pi / 180);
     double km2(LatLng p) {
       final dy = (p.latitude - rc.latitude) * 111.2, dx = (p.longitude - rc.longitude) * kx;
@@ -653,6 +682,7 @@ class MapScreenState extends State<MapScreen> {
             final bucket = (camera.zoom * 2).floor() / 2;
             if (bucket != _zoom) setState(() => _zoom = bucket);
             _watchArea(camera);
+            _moveRing(camera.center, camera.zoom);
             _debounce?.cancel();
             _debounce = Timer(const Duration(milliseconds: 700), _loadVisible);
           },
@@ -707,7 +737,7 @@ class MapScreenState extends State<MapScreen> {
           // the 22-mile ring around the rider
           CircleLayer(circles: [
             CircleMarker(
-              point: userPos,
+              point: _ringCenter ?? userPos,
               radius: kRingMiles * 1609.34,
               useRadiusInMeter: true,
               color: AppColors.blue.withValues(alpha: 0.035),
@@ -716,7 +746,7 @@ class MapScreenState extends State<MapScreen> {
           ]),
           PolylineLayer(polylines: [
             Polyline(
-              points: ringPoints(userPos, kRingMiles * 1609.34),
+              points: ringPoints(_ringCenter ?? userPos, kRingMiles * 1609.34),
               strokeWidth: 2,
               color: AppColors.blue.withValues(alpha: 0.55),
               pattern: const StrokePattern.dotted(spacingFactor: 2.2),
@@ -725,10 +755,10 @@ class MapScreenState extends State<MapScreen> {
           if (_zoom < kPinZoom - 2)
             MarkerLayer(markers: [
               Marker(
-                point: LatLng(userPos.latitude + kRingMiles * 1.609 / 111.2, userPos.longitude),
-                width: 110,
+                point: LatLng((_ringCenter ?? userPos).latitude + kRingMiles * 1.609 / 111.2, (_ringCenter ?? userPos).longitude),
+                width: 70,
                 height: 24,
-                child: const RingLabel(text: '22 mi around you'),
+                child: const RingLabel(text: '22 mi'),
               ),
             ]),
           if (_zoom < 9)
@@ -1083,13 +1113,7 @@ class MapScreenState extends State<MapScreen> {
         key: _kFilters,
         scrollDirection: Axis.horizontal,
         child: Row(children: [
-          for (final f in const [
-            ('Parking', PlaceType.parkOutdoor),
-            ('Charging', PlaceType.charging),
-            ('Service', PlaceType.service),
-            ('Shop', PlaceType.shop),
-            ('Sharing', PlaceType.sharing),
-          ])
+          for (final f in kFilterChips)
             Padding(
               padding: const EdgeInsets.only(right: 6),
               child: GestureDetector(
@@ -1103,7 +1127,11 @@ class MapScreenState extends State<MapScreen> {
                     boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 2))],
                   ),
                   child: Row(children: [
-                    Glyph(f.$2, size: 16, color: AppColors.primary),
+                    // every drawing of the group, side by side
+                    for (final (i, t) in f.$2.indexed) ...[
+                      if (i > 0) const SizedBox(width: 2),
+                      Glyph(t, size: 16, color: AppColors.primary),
+                    ],
                     const SizedBox(width: 6),
                     Text(f.$1, style: const TextStyle(fontWeight: FontWeight.w700)),
                   ]),
@@ -1125,6 +1153,18 @@ class MapScreenState extends State<MapScreen> {
         ),
       );
 }
+
+/// The quick filters at the top of the map, in this order; each shows all the drawings of its group.
+const kFilterChips = <(String, List<PlaceType>)>[
+  ('Rack', [PlaceType.rack]),
+  ('Parking', [PlaceType.parkOutdoor, PlaceType.parkCovered, PlaceType.parkPrivate]),
+  ('Charging', [PlaceType.charging]),
+  ('Service', [PlaceType.service, PlaceType.pump, PlaceType.selfService]),
+  ('Sharing', [PlaceType.sharing, PlaceType.rent]),
+  ('Wash', [PlaceType.wash]),
+  ('BMX', [PlaceType.bmx]),
+  ('Shop', [PlaceType.shop]),
+];
 
 /// First tap on a sharing pin (and Profile → Sharing): pick the operators to show, filtered by GPS.
 Future<void> chooseOperators(BuildContext context) async {
@@ -1273,8 +1313,8 @@ class _SearchSheetState extends State<_SearchSheet> {
           child: ListView(shrinkWrap: true, children: [
             if (_q.isEmpty) ...[
               Wrap(spacing: 6, runSpacing: 6, children: [
-                for (final c in const ['Parking', 'Charging', 'Service', 'Shop', 'Sharing'])
-                  ActionChip(label: Text(c), onPressed: () => Navigator.pop(context, c)),
+                for (final c in kFilterChips)
+                  ActionChip(label: Text(c.$1), onPressed: () => Navigator.pop(context, c.$1)),
               ]),
               if (store.recentSearches.isNotEmpty) _head('Recent'),
               for (final r in store.recentSearches)
