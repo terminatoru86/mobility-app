@@ -137,6 +137,9 @@ class OsmService {
         'nwr["amenity"="bicycle_rental"]($bbox);'
         'nwr["shop"="bicycle"]($bbox);'
         'nwr["amenity"="charging_station"]["bicycle"="yes"]($bbox);'
+        'nwr["amenity"="charging_station"]["scooter"="yes"]($bbox);'
+        'nwr["amenity"~"^(motorcycle_parking|small_electric_vehicle_parking|kick-scooter_parking)\$"]($bbox);'
+        'nwr["shop"~"^(motorcycle|scooter|motorcycle_repair)\$"]($bbox);'
         ');out center tags;';
 
     for (final url in _endpoints) {
@@ -180,7 +183,8 @@ class OsmService {
     'network', 'operator', 'shop', 'bicycle', 'bicycle_rental', 'opening_hours', 'phone', 'contact:phone', 'website',
     'contact:website', 'addr:housenumber', 'addr:street', 'service:bicycle:repair', 'service:bicycle:pump',
     'service:bicycle:tools', 'service:bicycle:stand', 'service:bicycle:chain_tool', 'service:bicycle:rental',
-    'service:bicycle:second_hand',
+    'service:bicycle:second_hand', 'motorcycle', 'scooter', 'small_electric_vehicle', 'service:vehicle:repair',
+    'motorcycle:repair',
     // photos, freshness and details
     'image', 'image:0', 'image:1', 'wikimedia_commons', 'mapillary', 'panoramax', 'check_date', 'survey:date', 'cargo_bike', 'capacity:cargo_bike', 'supervised', 'maxstay', 'charge', 'valves', 'manometer', 'level', 'location', 'description',
   };
@@ -430,6 +434,9 @@ class OsmService {
         'nwr["amenity"="bicycle_rental"]($bbox);'
         'nwr["shop"="bicycle"]($bbox);'
         'nwr["amenity"="charging_station"]["bicycle"="yes"]($bbox);'
+        'nwr["amenity"="charging_station"]["scooter"="yes"]($bbox);'
+        'nwr["amenity"~"^(motorcycle_parking|small_electric_vehicle_parking|kick-scooter_parking)\$"]($bbox);'
+        'nwr["shop"~"^(motorcycle|scooter|motorcycle_repair)\$"]($bbox);'
         ');out center tags;';
     for (final url in _endpoints) {
       try {
@@ -513,6 +520,13 @@ Place? placeFromOsm(Map<String, dynamic> e) {
       } else {
         type = PlaceType.parkOutdoor;
       }
+    // parking for e-scooters / small electric vehicles, and for mopeds and motorcycles
+    case 'small_electric_vehicle_parking' || 'kick-scooter_parking' || 'mobility_hub':
+      type = yes('covered') ? PlaceType.parkCovered : PlaceType.parkOutdoor;
+    case 'motorcycle_parking':
+      type = (tag('access') == 'private' || tag('access') == 'customers' || yes('fee'))
+          ? PlaceType.parkPrivate
+          : (yes('covered') ? PlaceType.parkCovered : PlaceType.parkOutdoor);
     case 'bicycle_repair_station':
       type = PlaceType.selfService;
     case 'compressed_air':
@@ -534,6 +548,11 @@ Place? placeFromOsm(Map<String, dynamic> e) {
   if (type == null && tag('shop') == 'bicycle') {
     type = yes('service:bicycle:repair') ? PlaceType.service : PlaceType.shop;
   }
+  // moped and motorcycle shops and repair
+  if (type == null && (tag('shop') == 'motorcycle' || tag('shop') == 'scooter')) {
+    type = (tag('service:vehicle:repair') == 'yes' || tag('motorcycle:repair') == 'yes') ? PlaceType.service : PlaceType.shop;
+  }
+  if (type == null && tag('shop') == 'motorcycle_repair') type = PlaceType.service;
   if (type == null) return null;
 
   final pos = LatLng(lat, lon);
@@ -559,11 +578,27 @@ Place? placeFromOsm(Map<String, dynamic> e) {
     if (tag('source') != null) tag('source')!,
   ];
 
-  final accepts = switch (type) {
-    PlaceType.charging => const [Vehicle.ebike, Vehicle.scooter],
-    PlaceType.sharing => const [Vehicle.bike, Vehicle.ebike, Vehicle.scooter],
-    _ => const [Vehicle.bike, Vehicle.ebike, Vehicle.scooter],
-  };
+  // which vehicles the place is for (bike, e-bike, e-scooter, moped, motorcycle)
+  final moto = amenity == 'motorcycle_parking' || const ['motorcycle', 'scooter', 'motorcycle_repair'].contains(tag('shop'));
+  final small = const ['small_electric_vehicle_parking', 'kick-scooter_parking'].contains(amenity);
+  final accepts = moto
+      ? [Vehicle.moped, Vehicle.moto, if (yes('bicycle')) Vehicle.bike]
+      : small
+          ? const [Vehicle.scooter, Vehicle.ebike]
+          : switch (type) {
+              PlaceType.charging => [
+                  Vehicle.ebike,
+                  Vehicle.scooter,
+                  if (yes('motorcycle') || yes('scooter')) ...[Vehicle.moped, Vehicle.moto],
+                ],
+              PlaceType.sharing => const [Vehicle.bike, Vehicle.ebike, Vehicle.scooter],
+              _ => [
+                  Vehicle.bike,
+                  Vehicle.ebike,
+                  Vehicle.scooter,
+                  if (yes('motorcycle')) ...[Vehicle.moped, Vehicle.moto],
+                ],
+            };
 
   // TEST DATA: until riders report, every real place gets a believable
   // status, free spots, ratings and reviews (always the same for the same place).

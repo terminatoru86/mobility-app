@@ -12,11 +12,13 @@ import sys
 
 import osmium
 
-KEEP_AMENITY = {'bicycle_parking', 'bicycle_repair_station', 'compressed_air', 'bicycle_wash', 'bicycle_rental'}
+KEEP_AMENITY = {'bicycle_parking', 'bicycle_repair_station', 'compressed_air', 'bicycle_wash', 'bicycle_rental',
+                'motorcycle_parking', 'small_electric_vehicle_parking', 'kick-scooter_parking', 'mobility_hub'}
 KEEP = {
     'amenity', 'bicycle_parking', 'capacity', 'covered', 'fee', 'access', 'lit', 'surveillance', 'name', 'brand',
     'network', 'operator', 'shop', 'bicycle', 'bicycle_rental', 'opening_hours', 'phone', 'contact:phone', 'website',
-    'contact:website', 'addr:housenumber', 'addr:street',
+    'contact:website', 'addr:housenumber', 'addr:street', 'motorcycle', 'scooter', 'small_electric_vehicle',
+    'service:vehicle:repair', 'motorcycle:repair',
     # photos, freshness and details
     'image', 'image:0', 'image:1', 'wikimedia_commons', 'mapillary', 'panoramax', 'check_date', 'survey:date', 'cargo_bike', 'capacity:cargo_bike', 'supervised', 'maxstay', 'charge', 'valves', 'manometer', 'level', 'location', 'description',
 }
@@ -24,9 +26,9 @@ KEEP = {
 
 def wanted(tags):
     a = tags.get('amenity')
-    if a in KEEP_AMENITY or tags.get('shop') == 'bicycle':
+    if a in KEEP_AMENITY or tags.get('shop') in ('bicycle', 'motorcycle', 'scooter', 'motorcycle_repair'):
         return True
-    return a == 'charging_station' and tags.get('bicycle') == 'yes'
+    return a == 'charging_station' and 'yes' in (tags.get('bicycle'), tags.get('scooter'), tags.get('motorcycle'))
 
 
 def slim(tags):

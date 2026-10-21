@@ -60,7 +60,8 @@ class _RoutePlannerState extends State<RoutePlanner> {
   bool _loading = true;
   bool _ready = false;
   Weather? _wx;
-  final List<(String, LatLng)> _via = []; // stops added with the ≡+ button
+  final List<(String, LatLng)> _via = [];
+  late Vehicle _rv = widget.myVehicle ?? Vehicle.bike; // the routes are made for this vehicle // stops added with the ≡+ button
   // Destination is an address (not one of our parking places): suggest a rack 300 m or closer.
   Place? _rack;
   List<LatLng> _walk = const [];
@@ -93,7 +94,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
 
   Future<void> _calc() async {
     setState(() => _loading = true);
-    final r = await bikeRoutes([_from, for (final v in _via) v.$2, _to]);
+    final r = await bikeRoutes([_from, for (final v in _via) v.$2, _to], vehicle: _rv.name);
     if (!mounted) return;
     setState(() {
       _routes = r;
@@ -243,7 +244,19 @@ class _RoutePlannerState extends State<RoutePlanner> {
                     else ...[
                       // the same vehicle tile as in the place sheets + distance
                       Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                        Expanded(flex: 3, child: VehicleTile(place: _tripPlace(r), myVehicle: widget.myVehicle)),
+                        Expanded(
+                          flex: 3,
+                          child: VehicleTile(
+                            place: _tripPlace(r),
+                            myVehicle: widget.myVehicle,
+                            // tap a vehicle: the routes are made again for it (moped and motorcycle use roads)
+                            onSelected: (v) {
+                              if (v == _rv) return;
+                              setState(() => _rv = v);
+                              _calc();
+                            },
+                          ),
+                        ),
                         const SizedBox(width: 8),
                         Expanded(flex: 2, child: FactTile(r.distance, 'distance')),
                       ]),
@@ -411,8 +424,11 @@ class _RoutePlannerState extends State<RoutePlanner> {
       );
 
   // ── vehicles (same tile as the sheets) ──
-  double _secs(RouteResult r, Vehicle v) => switch (v) {
-        Vehicle.bike || Vehicle.ebike => r.seconds,
+  double _secs(RouteResult r, Vehicle v) => v == _rv
+      ? r.seconds // the route was made for this vehicle: its own time
+      : switch (v) {
+        Vehicle.bike => secondsFor(r.meters, 'bike'),
+        Vehicle.ebike => secondsFor(r.meters, 'ebike'),
         Vehicle.scooter => secondsFor(r.meters, 'scooter'),
         Vehicle.moped => secondsFor(r.meters, 'moped'),
         Vehicle.moto => secondsFor(r.meters, 'moto'),
@@ -695,6 +711,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
               nearby: widget.nearby,
               suggestRack: _rack,
               destParking: _nearDest,
+              vehicle: _rv.name,
             ),
           )),
           style: FilledButton.styleFrom(
@@ -819,6 +836,7 @@ class GuidanceScreen extends StatefulWidget {
   final List<Place> nearby;
   final Place? suggestRack; // a rack near an address destination (shown again on arrival)
   final List<Place> destParking; // parking around the destination, shown when 500 m are left
+  final String vehicle; // 'bike', 'ebike', 'scooter', 'moped', 'moto' (for recalculations)
   const GuidanceScreen({
     super.key,
     required this.route,
@@ -828,6 +846,7 @@ class GuidanceScreen extends StatefulWidget {
     this.nearby = const [],
     this.suggestRack,
     this.destParking = const [],
+    this.vehicle = 'bike',
   });
 
   @override
@@ -984,7 +1003,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
 
   Future<void> _recalculate() async {
     setState(() => _recalc = true);
-    final r = await bikeRoute([_pos, _to]);
+    final r = await bikeRoute([_pos, _to], vehicle: widget.vehicle);
     if (!mounted) return;
     setState(() {
       if (r != null) {
@@ -1066,7 +1085,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
   Future<void> _rideTo(Place rack) async {
     final wasArrived = _arrived;
     _sim?.cancel();
-    final r = await bikeRoute([_pos, rack.pos]);
+    final r = await bikeRoute([_pos, rack.pos], vehicle: widget.vehicle);
     if (!mounted) return;
     setState(() {
       _showRackCard = false;

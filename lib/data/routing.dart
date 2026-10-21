@@ -144,23 +144,41 @@ const _router = 'https://routing.openstreetmap.de/routed-bike/route/v1/driving/'
 
 /// Bike route through [via] (2 or more points), on streets and bike paths.
 /// Uses the free OSRM bike router of the OpenStreetMap community (FOSSGIS).
-Future<RouteResult?> bikeRoute(List<LatLng> via) async {
+Future<RouteResult?> bikeRoute(List<LatLng> via, {String vehicle = 'bike'}) async {
+  if (vehicle != 'bike') {
+    final v = await _valhallaRoutes(via, vehicle);
+    if (v.isNotEmpty) return v.firstWhere((r) => r.label == 'Balanced', orElse: () => v.first);
+  }
   final all = await bikeRoutes(via, alternatives: false);
   return all.isEmpty ? null : all.first;
 }
 
 /// Fast, Balanced and Quiet as three real bike routes from Valhalla (OpenStreetMap data, FOSSGIS server):
 /// Fast takes roads when they are quicker, Quiet keeps to bike paths and calm streets, Balanced in between.
-Future<List<RouteResult>> _valhallaRoutes(List<LatLng> via) async {
-  const modes = {'Fast': (0.75, 0.3), 'Balanced': (0.4, 0.5), 'Quiet': (0.05, 0.25)}; // (use_roads, use_hills)
+/// Each vehicle has its own way: bike and e-bike on bike paths, e-scooter like a slow city bike,
+/// moped on smaller roads (no highways, max ~45 km/h), motorcycle on all roads.
+/// [vehicle]: 'bike', 'ebike', 'scooter', 'moped', 'moto'.
+(String, Map<String, dynamic>) _costing(String vehicle, String mode) {
+  final q = switch (mode) { 'Fast' => 0.0, 'Balanced' => 0.5, _ => 1.0 }; // 1 = calmest
+  return switch (vehicle) {
+    'moto' => ('motorcycle', {'use_highways': 1.0 - q, 'use_trails': 0.0, 'use_tolls': 0.5}),
+    'moped' => ('motor_scooter', {'top_speed': 45, 'use_primary': 0.9 - 0.8 * q, 'use_hills': 0.5}),
+    'scooter' => ('bicycle', {'bicycle_type': 'City', 'cycling_speed': 18, 'use_roads': 0.6 - 0.55 * q, 'use_hills': 0.2}),
+    'ebike' => ('bicycle', {'bicycle_type': 'Hybrid', 'cycling_speed': 22, 'use_roads': 0.75 - 0.7 * q, 'use_hills': 0.7}),
+    _ => ('bicycle', {'bicycle_type': 'Hybrid', 'cycling_speed': 16, 'use_roads': 0.75 - 0.7 * q, 'use_hills': 0.3 + 0.2 * (1 - q)}),
+  };
+}
+
+Future<List<RouteResult>> _valhallaRoutes(List<LatLng> via, String vehicle) async {
+  const modes = ['Fast', 'Balanced', 'Quiet'];
   final out = <RouteResult>[];
-  await Future.wait(modes.entries.map((m) async {
+  await Future.wait(modes.map((mode) async {
+    final (costing, opts) = _costing(vehicle, mode);
+    final m = (key: mode);
     final body = jsonEncode({
       'locations': [for (final p in via) {'lat': p.latitude, 'lon': p.longitude}],
-      'costing': 'bicycle',
-      'costing_options': {
-        'bicycle': {'bicycle_type': 'Hybrid', 'use_roads': m.value.$1, 'use_hills': m.value.$2, 'cycling_speed': 16},
-      },
+      'costing': costing,
+      'costing_options': {costing: opts},
       'directions_options': {'units': 'kilometers', 'language': 'en-US'},
     });
     try {
@@ -229,9 +247,9 @@ List<LatLng> _decodePolyline6(String s) {
 }
 
 /// Up to three choices: Fast, Balanced and Quiet (Valhalla first, the OSRM bike router if it does not answer).
-Future<List<RouteResult>> bikeRoutes(List<LatLng> via, {bool alternatives = true}) async {
-  if (alternatives) {
-    final v = await _valhallaRoutes(via);
+Future<List<RouteResult>> bikeRoutes(List<LatLng> via, {bool alternatives = true, String vehicle = 'bike'}) async {
+  if (alternatives || vehicle != 'bike') {
+    final v = await _valhallaRoutes(via, vehicle);
     if (v.isNotEmpty) return v;
   }
   final coords = via.map((p) => '${p.longitude.toStringAsFixed(6)},${p.latitude.toStringAsFixed(6)}').join(';');

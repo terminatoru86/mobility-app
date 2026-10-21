@@ -35,7 +35,8 @@ jobs:
         run: |
           osmium tags-filter region.osm.pbf \
             nwr/amenity=bicycle_parking,bicycle_repair_station,compressed_air,bicycle_wash,bicycle_rental,charging_station \
-            nwr/shop=bicycle -o filtered.osm.pbf
+            nwr/amenity=motorcycle_parking,small_electric_vehicle_parking,kick-scooter_parking,mobility_hub \
+            nwr/shop=bicycle,motorcycle,scooter,motorcycle_repair -o filtered.osm.pbf
           rm region.osm.pbf
           python3 tool/osm_extract.py filtered.osm.pbf osm.json
       - name: Name the result

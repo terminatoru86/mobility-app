@@ -35,7 +35,8 @@ OVERPASS = [
 REGIONS = [(24, -125, 50, -66), (51, -170, 72, -129), (18, -161, 23, -154), (17, -68, 19, -65)]
 KEEP = {
     'amenity', 'bicycle_parking', 'capacity', 'covered', 'fee', 'access', 'lit', 'surveillance', 'name', 'brand',
-    'network', 'operator', 'shop', 'bicycle', 'bicycle_rental', 'opening_hours', 'phone', 'contact:phone', 'website',
+    'network', 'operator', 'shop', 'bicycle', 'bicycle_rental', 'motorcycle', 'scooter', 'small_electric_vehicle',
+    'service:vehicle:repair', 'motorcycle:repair', 'opening_hours', 'phone', 'contact:phone', 'website',
     'contact:website', 'addr:housenumber', 'addr:street', 'service:bicycle:repair', 'service:bicycle:pump',
     'service:bicycle:tools', 'service:bicycle:stand', 'service:bicycle:chain_tool', 'service:bicycle:rental',
     'service:bicycle:second_hand',
@@ -63,6 +64,10 @@ def overpass(s, w, n, e):
          f'nwr["amenity"="bicycle_rental"]({bbox});'
          f'nwr["shop"="bicycle"]({bbox});'
          f'nwr["amenity"="charging_station"]["bicycle"="yes"]({bbox});'
+         f'nwr["amenity"="charging_station"]["scooter"="yes"]({bbox});'
+         f'nwr["amenity"="charging_station"]["motorcycle"="yes"]({bbox});'
+         f'nwr["amenity"~"^(motorcycle_parking|small_electric_vehicle_parking|kick-scooter_parking|mobility_hub)$"]({bbox});'
+         f'nwr["shop"~"^(motorcycle|scooter|motorcycle_repair)$"]({bbox});'
          ');out center tags;')
     for attempt in range(4):
         url = OVERPASS[attempt % len(OVERPASS)]
