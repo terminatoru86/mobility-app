@@ -1,0 +1,41 @@
+name: Firebase server (deploy)
+
+# Publishes the server part (server/: zoneLedger function + Firestore rules).
+# Needs, once, in GitHub → Settings → Secrets and variables → Actions:
+#   FIREBASE_SERVICE_ACCOUNT  = the JSON key of a service account of the Firebase project
+#   FIREBASE_PROJECT_ID       = the project id (e.g. mobility-12345)
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths: ['server/**']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check the secrets are there
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          PID: ${{ secrets.FIREBASE_PROJECT_ID }}
+        run: |
+          if [ -z "$SA" ] || [ -z "$PID" ]; then
+            echo "::warning::Firebase secrets not set yet: nothing deployed."
+            echo "SKIP=1" >> $GITHUB_ENV
+          fi
+      - name: Deploy
+        if: env.SKIP != '1'
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          PID: ${{ secrets.FIREBASE_PROJECT_ID }}
+        run: |
+          echo "$SA" > $RUNNER_TEMP/sa.json
+          export GOOGLE_APPLICATION_CREDENTIALS=$RUNNER_TEMP/sa.json
+          npm install -g firebase-tools
+          cd server/functions && npm install && cd ..
+          firebase deploy --only functions,firestore --project "$PID" --non-interactive --force
+          echo "Function URL: https://us-central1-$PID.cloudfunctions.net/zoneLedger"
