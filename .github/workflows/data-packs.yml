@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       box:
-        description: 'Only this box: south west north east (empty = whole US)'
+        description: 'Only this box: south west north east (empty = whole US; --extra-only = keep OSM, redo the other sources)'
         required: false
         default: ''
 

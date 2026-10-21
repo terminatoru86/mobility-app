@@ -229,6 +229,90 @@ def fetch_city(src):
     return out
 
 
+# ───────── automatic discovery: every public bike-parking layer in the US ─────────
+# Thousands of cities, counties, campuses, transit agencies and park districts publish on ArcGIS Online
+# or Socrata. Instead of finding them one by one, we search both catalogues at every build.
+
+WANT = re.compile(r'bike\s*rack|bicycle\s*rack|bike\s*parking|bicycle\s*parking|bike\s*corral|bicycle\s*corral|'
+                  r'micromobility\s*(parking|corral)|scooter\s*corral|bike\s*repair|bicycle\s*repair|fix-?it|'
+                  r'repair\s*station|bike\s*locker|bicycle\s*locker|bike\s*station', re.I)
+SKIP = re.compile(r'propos|request|survey|count|demand|plan(ned|ning)?\b|candidate|suitab|crash|collision|'
+                  r'heat\s*map|lane|route|trail|path|network|stress|study|draft|test|copy|sample|training|demo', re.I)
+
+
+def discover_arcgis(known):
+    """Public point layers about bike parking / repair on ArcGIS Online, inside the US."""
+    layers, seen = [], set()
+    terms = ['"bike rack"', '"bike racks"', '"bicycle racks"', '"bicycle parking"', '"bike parking"',
+             '"bike corral"', '"micromobility parking"', '"bike repair"', '"fix-it station"', '"bike lockers"']
+    for t in terms:
+        for start in range(1, 1000, 100):
+            q = urllib.parse.urlencode({
+                'q': f'{t} AND (type:"Feature Service" OR type:"Map Service")', 'num': 100, 'start': start,
+                'bbox': '-170,17,-65,72', 'f': 'json', 'sortField': 'numviews', 'sortOrder': 'desc'})
+            try:
+                j = json.loads(http(f'https://www.arcgis.com/sharing/rest/search?{q}', timeout=60))
+            except Exception as err:
+                print(f'  search {t} failed: {err}', flush=True)
+                break
+            for it in j.get('results', []):
+                url = (it.get('url') or '').rstrip('/')
+                title = it.get('title') or ''
+                if not url or url in seen or SKIP.search(title):
+                    continue
+                seen.add(url)
+                try:
+                    info = json.loads(http(f'{url}?f=json', timeout=40))
+                except Exception:
+                    continue
+                for ly in info.get('layers') or []:
+                    name = ly.get('name') or ''
+                    if ly.get('geometryType') not in (None, 'esriGeometryPoint', 'esriGeometryMultipoint'):
+                        continue
+                    if SKIP.search(name) or not (WANT.search(name) or (WANT.search(title) and len(info['layers']) == 1)):
+                        continue
+                    lurl = f"{url}/{ly['id']}"
+                    if lurl in known:
+                        continue
+                    layers.append({'key': 'ago-' + hashlib.md5(lurl.encode()).hexdigest()[:10], 'arcgis': lurl,
+                                   'socrata': None, 'hubItem': None, 'layer': 0, 'where': None,
+                                   'amenity': 'bicycle_repair_station' if re.search(r'repair|fix', name + title, re.I)
+                                   else 'bicycle_parking',
+                                   'label': f"{title} · {it.get('owner', '')}".strip(' ·')[:90]})
+            if len(j.get('results', [])) < 100:
+                break
+            time.sleep(1)
+    print(f'ArcGIS Online: {len(layers)} layers found', flush=True)
+    return layers
+
+
+def discover_socrata(known):
+    """Bike-parking datasets on every Socrata portal (Discovery API), with a point column."""
+    found, seen = [], set()
+    for t in ['bike racks', 'bicycle parking', 'bike parking', 'bicycle racks', 'bike corrals', 'bike repair']:
+        q = urllib.parse.urlencode({'q': t, 'only': 'dataset', 'limit': 100})
+        try:
+            j = json.loads(http(f'https://api.us.socrata.com/api/catalog/v1?{q}', timeout=60))
+        except Exception as err:
+            print(f'  socrata {t} failed: {err}', flush=True)
+            continue
+        for r in j.get('results', []):
+            res, meta = r.get('resource') or {}, r.get('metadata') or {}
+            name, dom, rid = res.get('name') or '', meta.get('domain') or '', res.get('id') or ''
+            key = f'{dom}/{rid}'
+            if not rid or key in seen or key in known or SKIP.search(name) or not WANT.search(name):
+                continue
+            types = res.get('columns_datatype') or []
+            if not any(x in ('point', 'location', 'multipoint') for x in [str(x).lower() for x in types]):
+                continue
+            seen.add(key)
+            found.append({'key': 'soc-' + rid, 'socrata': key, 'arcgis': None, 'hubItem': None, 'layer': 0,
+                          'where': None, 'label': f'{name} · {dom}'[:90],
+                          'amenity': 'bicycle_repair_station' if re.search(r'repair|fix', name, re.I) else 'bicycle_parking'})
+    print(f'Socrata: {len(found)} datasets found', flush=True)
+    return found
+
+
 # ───────── transit and other open APIs ─────────
 
 def fetch_mbta():
@@ -299,11 +383,20 @@ def main():
         json.dump(city_sources(), open(sys.argv[-1], 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
         print('exported', sys.argv[-1])
         return
-    args = [float(a) for a in sys.argv[1:5]]
+    args = [float(a) for a in sys.argv[1:] if not a.startswith('--')][:4]
     boxes = [tuple(int(math.floor(v)) if k < 2 else int(math.ceil(v)) for k, v in enumerate(args))] if args else REGIONS
     tiles = {}
-    for box in boxes:
-        collect_osm(box, tiles)
+    if '--extra-only' in sys.argv:
+        # keep the OpenStreetMap places already built; only (re)add the other sources
+        for name in os.listdir(OUT) if os.path.isdir(OUT) else []:
+            m = re.match(r't_(-?\d+)_(-?\d+)\.json$', name)
+            if m:
+                rows = json.load(open(os.path.join(OUT, name), encoding='utf-8'))
+                tiles[(int(m.group(1)), int(m.group(2)))] = {r[0]: r for r in rows if not r[0].startswith(('city/', 'mbta/', 'ovt/'))}
+        print(f'Kept OpenStreetMap places of {len(tiles)} tiles', flush=True)
+    else:
+        for box in boxes:
+            collect_osm(box, tiles)
     cities = []
     # other open sources: one list each, added to the tiles (the app removes doubles near OpenStreetMap ones)
     for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture)):
@@ -313,9 +406,24 @@ def main():
                     tiles.setdefault((math.floor(x[1]), math.floor(x[2])), {})[x[0]] = x
         except Exception as err:
             print(f'{name} failed: {err}', flush=True)
-    for src in city_sources():
+    known_srcs = city_sources()
+    known = {s.get('arcgis') for s in known_srcs if s.get('arcgis')} | {s.get('socrata') for s in known_srcs if s.get('socrata')}
+    discovered = []
+    try:
+        discovered += discover_arcgis(known)
+    except Exception as err:
+        print(f'ArcGIS discovery failed: {err}', flush=True)
+    try:
+        discovered += discover_socrata(known)
+    except Exception as err:
+        print(f'Socrata discovery failed: {err}', flush=True)
+    found_log = []
+    for src in known_srcs + discovered:
         try:
             els = fetch_city(src)
+            if len(els) > 150000:
+                print(f"Skip {src['key']}: {len(els)} rows, not a rack list", flush=True)
+                continue
             add_city = 0
             for x in els:
                 if not args or (boxes[0][0] <= x[1] < boxes[0][2] and boxes[0][1] <= x[2] < boxes[0][3]):
@@ -323,6 +431,9 @@ def main():
                     add_city += 1
             if add_city:
                 cities.append(src['key'])
+                if src['key'].startswith(('ago-', 'soc-')):
+                    found_log.append({'key': src['key'], 'label': src['label'], 'url': src.get('arcgis') or src.get('socrata'),
+                                      'places': add_city})
             print(f"City {src['key']}: {add_city}", flush=True)
         except Exception as err:
             print(f"City {src['key']} failed: {err}", flush=True)
@@ -350,6 +461,9 @@ def main():
     }
     with open(index_path, 'w') as f:
         json.dump(index, f, separators=(',', ':'))
+    # list of the automatically found sources (for the manual / checking)
+    with open(os.path.join(OUT, 'sources.json'), 'w', encoding='utf-8') as f:
+        json.dump(sorted(found_log, key=lambda x: -x['places']), f, indent=1, ensure_ascii=False)
     print(f"Done: {index['total']} places in {len(counts)} tiles, cities: {index['cities']}")
 
 
