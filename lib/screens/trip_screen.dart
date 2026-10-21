@@ -117,6 +117,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
     ));
   }
 
+  /// ⇅: the whole trip the other way round (start ↔ destination, stops in reverse order).
   void _swap() {
     setState(() {
       final p = _from;
@@ -125,7 +126,12 @@ class _RoutePlannerState extends State<RoutePlanner> {
       final n = _fromName;
       _fromName = _toName;
       _toName = n;
+      final rev = _via.reversed.toList();
+      _via
+        ..clear()
+        ..addAll(rev);
     });
+    _findRack();
     _calc();
   }
 
@@ -326,15 +332,16 @@ class _RoutePlannerState extends State<RoutePlanner> {
               // stops, if any
               for (final (i, v) in _via.indexed)
                 _destRow(Icons.more_vert, AppColors.soft, v.$1, '', () => _editVia(i), plus: false),
-              _destRow(Icons.flag_rounded, AppColors.red, _toName, _toSub, () => _edit(false), plus: true),
+              // + sits on the last row only once there are 3 points (with 2, it is the round button on the edge)
+              _destRow(Icons.flag_rounded, AppColors.red, _toName, _toSub, () => _edit(false), plus: _via.isNotEmpty),
             ]),
           ),
         ),
       ),
-      // ⇅ on the edge of the card
+      // on the edge of the card: + (add a stop) with 2 points; ⇅ (turn the order around) from 3 points
       Positioned(
         right: -6,
-        top: 26,
+        top: 26 + _via.length * 29.0,
         child: Material(
           color: Colors.white,
           shape: const CircleBorder(),
@@ -342,8 +349,12 @@ class _RoutePlannerState extends State<RoutePlanner> {
           shadowColor: const Color(0x55000000),
           child: InkWell(
             customBorder: const CircleBorder(),
-            onTap: _swap,
-            child: const SizedBox(width: 36, height: 36, child: Icon(Icons.swap_vert, size: 20, color: AppColors.ink)),
+            onTap: _via.isEmpty ? _addStop : _swap,
+            child: SizedBox(
+              width: 36,
+              height: 36,
+              child: Icon(_via.isEmpty ? Icons.add : Icons.swap_vert, size: 20, color: AppColors.ink),
+            ),
           ),
         ),
       ),
