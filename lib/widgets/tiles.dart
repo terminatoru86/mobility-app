@@ -36,10 +36,11 @@ Widget baseTiles({bool street = false}) => ColorFiltered(
                   0, 0, 0, 1, 0,
                 ])
               : const ColorFilter.matrix(<double>[
-                  // soft grey: streets, parks and water still readable, pins stand out
-                  0.26, 0.55, 0.09, 0, 38, //
-                  0.25, 0.56, 0.09, 0, 40, //
-                  0.24, 0.53, 0.13, 0, 46, //
+                  // washed-out grey (lighter, less contrast): streets, parks and water still readable,
+                  // our coloured pins and dots stand out clearly
+                  0.21, 0.45, 0.07, 0, 66, //
+                  0.20, 0.46, 0.07, 0, 68, //
+                  0.19, 0.43, 0.11, 0, 74, //
                   0, 0, 0, 1, 0,
                 ]),
       child: TileLayer(
@@ -56,7 +57,15 @@ Widget baseTiles({bool street = false}) => ColorFiltered(
 
 /// CyclOSM: the OpenStreetMap map drawn for cyclists (bike lanes, racks, repair stations, shops).
 /// Free, run by OpenStreetMap France on donations; credit OpenStreetMap and CyclOSM.
-Widget bikeTiles() => TileLayer(
+Widget bikeTiles() => ColorFiltered(
+      // half the colour and a little lighter, so our pins and dots stay easy to tell apart
+      colorFilter: const ColorFilter.matrix(<double>[
+        0.55, 0.36, 0.04, 0, 22, //
+        0.11, 0.80, 0.04, 0, 22, //
+        0.11, 0.36, 0.48, 0, 22, //
+        0, 0, 0, 1, 0,
+      ]),
+      child: TileLayer(
       urlTemplate: 'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
       subdomains: const ['a', 'b', 'c'],
       fallbackUrl: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -65,6 +74,7 @@ Widget bikeTiles() => TileLayer(
       keepBuffer: 6,
       panBuffer: 2,
       tileDisplay: const TileDisplay.instantaneous(),
+      ),
     );
 
 /// Satellite photos (Esri World Imagery), switched with two taps on ◎.

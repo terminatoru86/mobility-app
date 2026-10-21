@@ -647,23 +647,44 @@ class MapScreenState extends State<MapScreen> {
         markers.add(_pinMarker(s));
       }
     }
-    // far out there can be tens of thousands of dots: keep one per ~4 px (the map stays fluid)
-    if (dots.length > 2500) {
-      final cell = 4 * mPerPx / 111200;
+    // far out there can be tens of thousands of dots: keep one per few px (the map stays fluid)
+    void thinOut(List<Place> list, double px, int above) {
+      if (list.length <= above) return;
+      final cell = px * mPerPx / 111200;
       final cellLng = cell / math.max(0.2, math.cos(rc.latitude * math.pi / 180));
       final seen = <int>{};
       final thin = <Place>[];
-      for (final p in dots) {
+      for (final p in list) {
         final k = (p.pos.latitude / cell).floor() * 1000003 + (p.pos.longitude / cellLng).floor();
         if (seen.add(k)) thin.add(p);
       }
-      dots
+      list
         ..clear()
         ..addAll(thin);
     }
-    _dotPlaces = dots;
+
+    thinOut(dots, 4, 2500);
+    // a filter is on (e.g. Rack): the other places stay on the map as tiny coloured dots,
+    // smaller than the dots outside the ring, so the chosen kind stands out
+    final others = _filter == null
+        ? <Place>[]
+        : _all
+            .where((p) =>
+                p.type.chip != _filter && (a == null || a.contains(p.pos)) && (st.zones.isEmpty || inZone(p.pos)))
+            .toList();
+    thinOut(others, 3, 1500);
+    _dotPlaces = [...dots, ...others];
     final r = _zoom < 11 ? 2.6 : (_zoom < 14 ? 3.4 : 4.6);
+    final small = r * 0.5;
     _dotCache = [
+      for (final p in others)
+        CircleMarker(
+          point: p.pos,
+          radius: small,
+          color: colorsFor(p.shownStatus == Status.neutral ? Status.unknown : p.shownStatus).main.withValues(alpha: 0.75),
+          borderColor: Colors.white,
+          borderStrokeWidth: 0.6,
+        ),
       for (final p in dots)
         CircleMarker(
           point: p.pos,
