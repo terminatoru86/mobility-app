@@ -1,0 +1,29 @@
+name: Data packs (offline places for the app)
+
+on:
+  workflow_dispatch: # run by hand from the Actions tab
+  schedule:
+    - cron: '17 7 1,15 * *' # twice a month
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build the packs (OpenStreetMap + city halls, whole US)
+        run: python3 tool/build_packs.py
+      - name: Save them in the repository
+        run: |
+          git config user.name "mobility-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add assets/osm/tiles
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Data packs $(date -u +%Y-%m-%d)"
+          git push

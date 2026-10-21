@@ -86,7 +86,7 @@ class MapScreenState extends State<MapScreen> {
     });
     // city halls' racks and live bikeshare around the map (a moment after the map is on screen)
     Future.delayed(const Duration(milliseconds: 1500), () => _loadOpenData(userPos));
-    Future.delayed(const Duration(milliseconds: 3000), _loadRegion);
+    Future.delayed(const Duration(milliseconds: 300), _loadRegion); // packs inside the app: instant
     _shareTimer = Timer.periodic(const Duration(seconds: 90), (_) async {
       if (await _open.refreshSharing() && mounted) setState(() => _merged = _allCache = null);
     });
@@ -232,6 +232,7 @@ class MapScreenState extends State<MapScreen> {
     if (Store.i.zones.isNotEmpty && !Store.i.unlockedAt(at)) return; // locked area: nothing is loaded
     _openBusy = true;
     try {
+      await _osm.packIndex(); // city lists already in the packs are not downloaded again
       final a = await _open.loadCitiesAround(at);
       final b = await _open.chooseSystemsAround(at);
       if ((a || b) && mounted) setState(() => _merged = _allCache = null);
@@ -313,7 +314,7 @@ class MapScreenState extends State<MapScreen> {
     _osm.refreshDistances();
     _open.refreshDistances();
     _loadOpenData(pos);
-    Future.delayed(const Duration(seconds: 2), _loadRegion);
+    _loadRegion();
     setState(() {
       _noGps = false;
       _merged = _allCache = null;

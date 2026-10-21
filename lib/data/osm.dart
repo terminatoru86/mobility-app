@@ -1,13 +1,18 @@
 import 'dart:convert';
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart' show debugPrint;
+import 'package:flutter/foundation.dart' show compute, debugPrint;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'places.dart';
+
+/// City-hall lists already inside the offline packs (no need to download them again).
+final Set<String> packedCities = {};
+
+List<dynamic> _decodeList(String s) => jsonDecode(s) as List<dynamic>;
 
 /// Real places for riders from OpenStreetMap, loaded through the free
 /// Overpass API for the part of the map you are looking at.
@@ -138,6 +143,64 @@ class OsmService {
     'service:bicycle:second_hand',
   };
   final Set<String> _tilesDone = {};
+
+  // ── offline packs shipped with the app (assets/osm/tiles, built by tool/build_packs.py) ──
+  Map<String, dynamic>? _packIndex;
+  Future<Map<String, dynamic>?>? _packLoad;
+  final Set<String> _packTilesDone = {};
+  static const _packFreshDays = 30;
+
+  /// The list of packs inside the app (null until the packs have been built once).
+  Future<Map<String, dynamic>?> packIndex() => _packLoad ??= () async {
+        try {
+          final j = jsonDecode(await rootBundle.loadString('assets/osm/tiles/index.json')) as Map<String, dynamic>;
+          if (j['at'] == null) return null;
+          _packIndex = j;
+          packedCities.addAll(((j['cities'] as List?) ?? const []).map((e) => '$e'));
+          debugPrint('Packs: ${j['total']} places, ${(j['tiles'] as Map).length} tiles, from ${j['at']}');
+          return j;
+        } catch (_) {
+          return null;
+        }
+      }();
+
+  bool get packsFresh {
+    final at = DateTime.tryParse('${_packIndex?['at']}');
+    return at != null && DateTime.now().difference(at).inDays < _packFreshDays;
+  }
+
+  /// Instant: every place within [miles] from the files inside the app, nearest 1° piece first.
+  Future<void> _loadPacks(LatLng c, double miles, void Function() onPiece) async {
+    final idx = await packIndex();
+    if (idx == null) return;
+    final have = (idx['tiles'] as Map).cast<String, dynamic>();
+    final rLat = miles * 1.609 / 111.2;
+    final rLng = rLat / math.cos(c.latitude * math.pi / 180);
+    final list = <(int, int, double)>[];
+    for (int a = (c.latitude - rLat).floor(); a <= (c.latitude + rLat).floor(); a++) {
+      for (int b = (c.longitude - rLng).floor(); b <= (c.longitude + rLng).floor(); b++) {
+        list.add((a, b, _dist(c, LatLng(a + 0.5, b + 0.5))));
+      }
+    }
+    list.sort((x, y) => x.$3.compareTo(y.$3));
+    for (final (a, b, _) in list) {
+      final key = '${a}_$b';
+      if (_packTilesDone.contains(key)) continue;
+      _packTilesDone.add(key);
+      _done.add([a.toDouble(), b.toDouble(), a + 1.0, b + 1.0]); // the live map does not ask again here
+      if (!have.containsKey(key)) continue; // nothing for riders in this piece
+      try {
+        final rows = await compute(_decodeList, await rootBundle.loadString('assets/osm/tiles/t_$key.json'));
+        for (final r in rows) {
+          final l = r as List;
+          _add({'id': l[0], 'lat': l[1], 'lon': l[2], 'tags': l[3]});
+        }
+        onPiece();
+      } catch (err) {
+        debugPrint('Pack $key failed: $err');
+      }
+    }
+  }
   final Set<String> _regionsDone = {};
   bool regionBusy = false;
 
@@ -148,6 +211,13 @@ class OsmService {
     if (regionBusy || _regionsDone.contains(rk)) return;
     regionBusy = true;
     try {
+      // 1) the packs inside the app: instant, no internet
+      await _loadPacks(c, miles, onPiece);
+      if (_packIndex != null && packsFresh) {
+        _regionsDone.add(rk);
+        return; // fresh enough: no need to ask the servers
+      }
+      // 2) no packs yet (or old): ask OpenStreetMap piece by piece (saved on the phone 2 weeks)
       final rLat = miles * 1.609 / 111.2;
       final rLng = rLat / math.cos(c.latitude * math.pi / 180);
       final tiles = <(int, int, double)>[];

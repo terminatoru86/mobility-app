@@ -144,7 +144,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
         Expanded(flex: 2, child: FactTile(p.distance, 'distance')),
       ]),
       gap,
-      ...(p.osm ? [..._osmFacts(p), const SizedBox(height: 12), ..._specific(p, c)] : _specific(p, c)),
+      ..._specific(p, c),
       if (p.hours != null || p.phone != null) ...[gap, _hoursRow(p)],
       if (p.security != null) ...[gap, SecurityRow(p.security!)],
       if (p.reviews.isNotEmpty)
@@ -315,36 +315,6 @@ class _PlaceSheetState extends State<PlaceSheet> {
       default:
         return [];
     }
-  }
-
-  // Real places from OpenStreetMap: what the map knows about the place.
-  List<Widget> _osmFacts(Place p) {
-    final chips = [
-      for (final f in p.facts)
-        f == 'Free'
-            ? _chip('★ Free', AppColors.greenTint, AppColors.greenDark, AppColors.green)
-            : _chip(f, AppColors.paper, AppColors.primary, AppColors.slate),
-    ];
-    return [
-      Align(
-        alignment: Alignment.centerLeft,
-        child: Text(p.type.title, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
-      ),
-      if (chips.isNotEmpty) ...[
-        const SizedBox(height: 8),
-        Align(alignment: Alignment.centerLeft, child: Wrap(spacing: 6, runSpacing: 6, children: chips)),
-      ],
-      if (p.website != null) ...[
-        const SizedBox(height: 8),
-        Align(
-          alignment: Alignment.centerLeft,
-          child: GestureDetector(
-            onTap: () => openLink(p.website!),
-            child: Text(p.website!, style: const TextStyle(fontSize: 12, color: AppColors.blue)),
-          ),
-        ),
-      ],
-    ];
   }
 
   Widget _hoursRow(Place p) => Row(children: [

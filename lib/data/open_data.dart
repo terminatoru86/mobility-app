@@ -142,6 +142,7 @@ class OpenDataService {
     var changed = false;
     for (final src in kCitySources) {
       if (!src.near(at)) continue;
+      if (packedCities.contains(src.key)) continue; // already inside the offline packs
       // national lists: one piece of ~45 x 45 km around the map at a time
       final cell = src.national ? '@${(at.latitude / 0.4).floor()}:${(at.longitude / 0.4).floor()}' : '';
       final key = '${src.key}$cell';
