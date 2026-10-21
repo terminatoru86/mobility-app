@@ -1,0 +1,39 @@
+name: Android project (create / update)
+
+# Creates the android/ folder with Flutter's own template and our permissions,
+# and saves it in the repo. After it runs: pull in Android Studio and press Run.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Create android/ (keeps anything already there)
+        run: flutter create --platforms=android --org com.mobility --project-name mobility .
+      - name: Permissions
+        run: python3 tool/android_permissions.py android/app/src/main/AndroidManifest.xml
+      - name: Check it builds
+        run: |
+          flutter pub get
+          flutter build apk --debug
+      - name: Save to the repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A android
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Android project (flutter create + permissions)"
+          git pull --rebase
+          git push
