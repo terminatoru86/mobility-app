@@ -126,6 +126,115 @@ class OsmService {
     return {'id': '${el['type']}/${el['id']}', 'lat': lat, 'lon': lon, 'tags': el['tags'] ?? {}};
   }
 
+  // ───────── the whole region: every place within 100 miles, piece by piece ─────────
+
+  static const _tile = 0.5; // degrees (~55 x 40 km)
+  static const _tileDays = 14;
+  static const _keep = {
+    'amenity', 'bicycle_parking', 'capacity', 'covered', 'fee', 'access', 'lit', 'surveillance', 'name', 'brand',
+    'network', 'operator', 'shop', 'bicycle', 'bicycle_rental', 'opening_hours', 'phone', 'contact:phone', 'website',
+    'contact:website', 'addr:housenumber', 'addr:street', 'service:bicycle:repair', 'service:bicycle:pump',
+    'service:bicycle:tools', 'service:bicycle:stand', 'service:bicycle:chain_tool', 'service:bicycle:rental',
+    'service:bicycle:second_hand',
+  };
+  final Set<String> _tilesDone = {};
+  final Set<String> _regionsDone = {};
+  bool regionBusy = false;
+
+  /// Loads every rider place within [miles] of [c]: nearest pieces first, each piece saved on the phone
+  /// for 2 weeks. [onPiece] is called after each piece (to redraw the map).
+  Future<void> loadRegion(LatLng c, double miles, void Function() onPiece) async {
+    final rk = '${(c.latitude * 4).round()}:${(c.longitude * 4).round()}';
+    if (regionBusy || _regionsDone.contains(rk)) return;
+    regionBusy = true;
+    try {
+      final rLat = miles * 1.609 / 111.2;
+      final rLng = rLat / math.cos(c.latitude * math.pi / 180);
+      final tiles = <(int, int, double)>[];
+      for (int i = ((c.latitude - rLat) / _tile).floor(); i <= ((c.latitude + rLat) / _tile).floor(); i++) {
+        for (int j = ((c.longitude - rLng) / _tile).floor(); j <= ((c.longitude + rLng) / _tile).floor(); j++) {
+          final d = _dist(c, LatLng((i + 0.5) * _tile, (j + 0.5) * _tile)) / 1609;
+          if (d <= miles + 25) tiles.add((i, j, d));
+        }
+      }
+      tiles.sort((a, b) => a.$3.compareTo(b.$3));
+      final prefs = await SharedPreferences.getInstance();
+      for (final (i, j, _) in tiles) {
+        final key = '$i:$j';
+        if (_tilesDone.contains(key)) continue;
+        // 1) saved on the phone and fresh
+        var ok = false;
+        try {
+          final saved = prefs.getString('osmt_$key');
+          if (saved != null) {
+            final js = jsonDecode(saved) as Map<String, dynamic>;
+            if (DateTime.now().difference(DateTime.fromMillisecondsSinceEpoch(js['at'] as int)).inDays < _tileDays) {
+              for (final e in (js['e'] as List)) {
+                final l = e as List;
+                _add({'id': l[0], 'lat': l[1], 'lon': l[2], 'tags': l[3]});
+              }
+              ok = true;
+            }
+          }
+        } catch (_) {}
+        // 2) from OpenStreetMap
+        if (!ok) ok = await _fetchTile(i, j, key, prefs);
+        if (ok) {
+          _tilesDone.add(key);
+          final s = i * _tile, w = j * _tile;
+          _done.add([s, w, s + _tile, w + _tile]);
+          onPiece();
+        }
+      }
+      if (tiles.every((t) => _tilesDone.contains('${t.$1}:${t.$2}'))) _regionsDone.add(rk);
+    } finally {
+      regionBusy = false;
+    }
+  }
+
+  Future<bool> _fetchTile(int i, int j, String key, SharedPreferences prefs) async {
+    final s = i * _tile, w = j * _tile;
+    final bbox = '${s.toStringAsFixed(3)},${w.toStringAsFixed(3)},${(s + _tile).toStringAsFixed(3)},${(w + _tile).toStringAsFixed(3)}';
+    final query = '[out:json][timeout:90];('
+        'nwr["amenity"="bicycle_parking"]($bbox);'
+        'nwr["amenity"="bicycle_repair_station"]($bbox);'
+        'nwr["amenity"="compressed_air"]($bbox);'
+        'nwr["amenity"="bicycle_wash"]($bbox);'
+        'nwr["amenity"="bicycle_rental"]($bbox);'
+        'nwr["shop"="bicycle"]($bbox);'
+        'nwr["amenity"="charging_station"]["bicycle"="yes"]($bbox);'
+        ');out center tags;';
+    for (final url in _endpoints) {
+      try {
+        final r = await http.post(Uri.parse(url), body: {'data': query}).timeout(const Duration(seconds: 100));
+        if (r.statusCode != 200) {
+          await Future.delayed(const Duration(seconds: 2));
+          continue;
+        }
+        final els = (jsonDecode(utf8.decode(r.bodyBytes))['elements'] as List).cast<Map<String, dynamic>>();
+        final compact = <List<dynamic>>[];
+        for (final el in els) {
+          final e = _slim(el);
+          if (e['lat'] == null) continue;
+          final tags = Map<String, dynamic>.from(e['tags'] as Map)..removeWhere((k, _) => !_keep.contains(k));
+          _add({'id': e['id'], 'lat': e['lat'], 'lon': e['lon'], 'tags': tags});
+          compact.add([e['id'], e['lat'], e['lon'], tags]);
+        }
+        try {
+          await prefs.setString('osmt_$key', jsonEncode({'at': DateTime.now().millisecondsSinceEpoch, 'e': compact}));
+        } catch (_) {
+          // phone storage full (web): the piece is simply asked again next time
+        }
+        debugPrint('OSM region piece $key: ${els.length}');
+        await Future.delayed(const Duration(milliseconds: 600)); // be gentle with the free servers
+        return true;
+      } catch (err) {
+        debugPrint('OSM region piece $key failed at $url: $err');
+      }
+    }
+    return false;
+  }
+
   /// Recalculates distances and arrival times after the GPS position changed.
   void refreshDistances() {
     for (final e in _raw.values.toList()) {
@@ -141,6 +250,7 @@ class OsmService {
   }
 
   Future<void> _save() async {
+    if (_tilesDone.isNotEmpty) return; // the region pieces are saved on their own
     try {
       final p = await SharedPreferences.getInstance();
       final list = _raw.values.toList();
@@ -149,7 +259,7 @@ class OsmService {
   }
 }
 
-const _dist = Distance();
+const _dist = Distance(calculator: Haversine()); // fast enough for tens of thousands of places
 
 /// Turns an OpenStreetMap element into a MOBIlity place.
 Place? placeFromOsm(Map<String, dynamic> e) {

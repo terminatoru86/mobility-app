@@ -86,6 +86,7 @@ class MapScreenState extends State<MapScreen> {
     });
     // city halls' racks and live bikeshare around the map (a moment after the map is on screen)
     Future.delayed(const Duration(milliseconds: 1500), () => _loadOpenData(userPos));
+    Future.delayed(const Duration(milliseconds: 3000), _loadRegion);
     _shareTimer = Timer.periodic(const Duration(seconds: 90), (_) async {
       if (await _open.refreshSharing() && mounted) setState(() => _merged = _allCache = null);
     });
@@ -180,6 +181,7 @@ class MapScreenState extends State<MapScreen> {
   void dispose() {
     Store.i.removeListener(_storeChanged);
     _shareTimer?.cancel();
+    _pieceTimer?.cancel();
     _lockTimer?.cancel();
     _ringTimer?.cancel();
     _areaTimer?.cancel();
@@ -197,6 +199,32 @@ class MapScreenState extends State<MapScreen> {
 
   /// Real places (OpenStreetMap), with what riders confirmed in Stats; demo places only until they arrive.
   bool _openBusy = false;
+  DateTime _lastPiece = DateTime(2000);
+  Timer? _pieceTimer;
+
+  /// Every place within 100 miles (the rider's areas): loaded quietly, piece by piece, nearest first.
+  Future<void> _loadRegion() async {
+    final st = Store.i;
+    final centers = st.zones.where((z) => z.active).map((z) => z.center).toList();
+    if (centers.isEmpty) centers.add(userPos);
+    const d = Distance();
+    centers.sort((a, b) => d(userPos, a).compareTo(d(userPos, b)));
+    for (final c in centers) {
+      if (!mounted) return;
+      await _osm.loadRegion(c, MapZone.radiusMiles.toDouble(), () {
+        // redraw at most every 2.5 s while pieces arrive
+        if (!mounted) return;
+        final since = DateTime.now().difference(_lastPiece).inMilliseconds;
+        _pieceTimer?.cancel();
+        _pieceTimer = Timer(Duration(milliseconds: since > 2500 ? 0 : 2500 - since), () {
+          if (!mounted) return;
+          _lastPiece = DateTime.now();
+          setState(() => _merged = _allCache = null);
+        });
+      });
+    }
+  }
+
 
   /// Official racks of the city around [at] and the share systems of that city.
   Future<void> _loadOpenData(LatLng at) async {
@@ -285,6 +313,7 @@ class MapScreenState extends State<MapScreen> {
     _osm.refreshDistances();
     _open.refreshDistances();
     _loadOpenData(pos);
+    Future.delayed(const Duration(seconds: 2), _loadRegion);
     setState(() {
       _noGps = false;
       _merged = _allCache = null;
@@ -493,7 +522,7 @@ class MapScreenState extends State<MapScreen> {
     // how far the middle moved, compared with what is on screen
     final mPerPx = 156543.03 * math.cos(c.latitude * math.pi / 180) / math.pow(2, zoom);
     final moved = const Distance()(rc, c) / mPerPx; // pixels
-    if (moved < 40) return;
+    if (moved < 110) return;
     void apply() {
       if (!mounted) return;
       setState(() => _ringCenter = c);
@@ -502,10 +531,10 @@ class MapScreenState extends State<MapScreen> {
 
     _ringTimer?.cancel();
     // while dragging: at most ~4 updates a second; the last one when the map stops
-    if (DateTime.now().difference(_ringMoved).inMilliseconds > 250) {
+    if (DateTime.now().difference(_ringMoved).inMilliseconds > 450) {
       apply();
     } else {
-      _ringTimer = Timer(const Duration(milliseconds: 160), apply);
+      _ringTimer = Timer(const Duration(milliseconds: 220), apply);
     }
   }
 
@@ -613,6 +642,20 @@ class MapScreenState extends State<MapScreen> {
         dots.remove(s);
         markers.add(_pinMarker(s));
       }
+    }
+    // far out there can be tens of thousands of dots: keep one per ~4 px (the map stays fluid)
+    if (dots.length > 2500) {
+      final cell = 4 * mPerPx / 111200;
+      final cellLng = cell / math.max(0.2, math.cos(rc.latitude * math.pi / 180));
+      final seen = <int>{};
+      final thin = <Place>[];
+      for (final p in dots) {
+        final k = (p.pos.latitude / cell).floor() * 1000003 + (p.pos.longitude / cellLng).floor();
+        if (seen.add(k)) thin.add(p);
+      }
+      dots
+        ..clear()
+        ..addAll(thin);
     }
     _dotPlaces = dots;
     final r = _zoom < 11 ? 2.6 : (_zoom < 14 ? 3.4 : 4.6);
