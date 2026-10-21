@@ -433,12 +433,12 @@ class MapSettingsScreen extends StatelessWidget {
             SegmentedButton<String>(
               segments: const [
                 ButtonSegment(value: 'Road', label: Text('Road')),
+                ButtonSegment(value: 'Bike', label: Text('Bike map')),
                 ButtonSegment(value: 'Satellite', label: Text('Satellite')),
-                ButtonSegment(value: 'Traffic', label: Text('Traffic'), enabled: false),
               ],
-              selected: {s.satellite ? 'Satellite' : 'Road'},
+              selected: {s.mapStyle},
               showSelectedIcon: false,
-              onSelectionChanged: (v) => s.setSatellite(v.first == 'Satellite'),
+              onSelectionChanged: (v) => s.setMapStyle(v.first),
             ),
             const SizedBox(height: 8),
             SegmentedButton<ThemeMode>(

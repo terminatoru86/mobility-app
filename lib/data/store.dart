@@ -104,6 +104,7 @@ class Store extends ChangeNotifier {
   final List<String> recentSearches = [];
 
   bool satellite = false;
+  bool bikeMap = false; // CyclOSM: the OpenStreetMap map drawn for cyclists
   bool parkNearDest = true; // after an address search, show the parking around it
   ThemeMode theme = ThemeMode.light;
   final Map<PlaceType, bool> showOnMap = {for (final t in PlaceType.values) t: true};
@@ -138,6 +139,7 @@ class Store extends ChangeNotifier {
     }
     recentSearches.addAll(p.getStringList('recent') ?? const []);
     satellite = p.getBool('satellite') ?? false;
+    bikeMap = p.getBool('bikeMap') ?? false;
     parkNearDest = p.getBool('parkNearDest') ?? true;
     theme = ThemeMode.values[(p.getInt('theme') ?? 1).clamp(0, 2)];
     sosFirstUseShown = p.getBool('sosFirst') ?? false;
@@ -203,9 +205,25 @@ class Store extends ChangeNotifier {
 
   void setSatellite(bool v) {
     satellite = v;
+    if (v) bikeMap = false;
     _p?.setBool('satellite', v);
+    _p?.setBool('bikeMap', bikeMap);
     notifyListeners();
   }
+
+  /// 'Road', 'Bike' (CyclOSM) or 'Satellite'.
+  String get mapStyle => satellite ? 'Satellite' : (bikeMap ? 'Bike' : 'Road');
+
+  void setMapStyle(String v) {
+    satellite = v == 'Satellite';
+    bikeMap = v == 'Bike';
+    _p?.setBool('satellite', satellite);
+    _p?.setBool('bikeMap', bikeMap);
+    notifyListeners();
+  }
+
+  /// Two taps on ◎: Road → Bike → Satellite → Road.
+  void nextMapStyle() => setMapStyle(switch (mapStyle) { 'Road' => 'Bike', 'Bike' => 'Satellite', _ => 'Road' });
 
   void setParkNearDest(bool v) {
     parkNearDest = v;

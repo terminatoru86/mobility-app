@@ -54,6 +54,19 @@ Widget baseTiles({bool street = false}) => ColorFiltered(
       ),
     );
 
+/// CyclOSM: the OpenStreetMap map drawn for cyclists (bike lanes, racks, repair stations, shops).
+/// Free, run by OpenStreetMap France on donations; credit OpenStreetMap and CyclOSM.
+Widget bikeTiles() => TileLayer(
+      urlTemplate: 'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
+      subdomains: const ['a', 'b', 'c'],
+      fallbackUrl: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+      userAgentPackageName: 'com.mobility.app',
+      maxNativeZoom: 19,
+      keepBuffer: 6,
+      panBuffer: 2,
+      tileDisplay: const TileDisplay.instantaneous(),
+    );
+
 /// Satellite photos (Esri World Imagery), switched with two taps on ◎.
 Widget satelliteTiles() => TileLayer(
       urlTemplate: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',

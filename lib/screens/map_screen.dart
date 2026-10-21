@@ -170,6 +170,10 @@ class MapScreenState extends State<MapScreen> {
     }
     for (final p in _open.cityRacks.values) {
       var dup = false;
+      if (p.type.group != 'Parking') {
+        out.add(p);
+        continue;
+      }
       for (final dy in const [-1, 0, 1]) {
         for (final dx in const [-1, 0, 1]) {
           if (cell.contains(key(p.pos, dy, dx))) dup = true;
@@ -484,7 +488,7 @@ class MapScreenState extends State<MapScreen> {
           },
         ),
         children: [
-          if (store.satellite) satelliteTiles() else baseTiles(),
+          if (store.satellite) satelliteTiles() else if (store.bikeMap) bikeTiles() else baseTiles(),
           if (store.sosActive)
             CircleLayer(circles: [
               CircleMarker(
@@ -604,7 +608,7 @@ class MapScreenState extends State<MapScreen> {
           child: Column(children: [
             GestureDetector(
               key: _kLocate,
-              onDoubleTap: () => store.setSatellite(!store.satellite),
+              onDoubleTap: store.nextMapStyle,
               child: _roundBtn(Icons.my_location, Colors.white, AppColors.ink, _locate),
             ),
             const SizedBox(height: 12),
@@ -630,10 +634,16 @@ class MapScreenState extends State<MapScreen> {
         ),
       if (store.sosActive && store.sosHelper != null && _dest == null)
         Positioned(left: 12, right: 12, bottom: 140, child: SosHelperCard(helper: store.sosHelper!)),
-      const Positioned(
+      Positioned(
         right: 4,
         bottom: 2,
-        child: Text('© OpenStreetMap contributors', style: TextStyle(fontSize: 9, color: AppColors.soft)),
+        child: Text(
+            store.satellite
+                ? '© Esri World Imagery'
+                : store.bikeMap
+                    ? '© OpenStreetMap contributors · CyclOSM'
+                    : '© OpenStreetMap contributors',
+            style: const TextStyle(fontSize: 9, color: AppColors.soft)),
       ),
       if (_showGuide)
         Positioned.fill(
@@ -645,7 +655,7 @@ class MapScreenState extends State<MapScreen> {
               GuideStep(_kFilters, 'Quick filters', 'Tap a filter to see only parking, charging, service or shops. Tap again to see everything.'),
               GuideStep(_kPins, 'How to read the pins', 'The colour is the status. Inside the pin, the drawing and the time since the last update take turns.',
                   extra: const MiniLegend()),
-              GuideStep(_kLocate, 'Where you are', 'One tap brings you back. Two taps switch between map and satellite.'),
+              GuideStep(_kLocate, 'Where you are', 'One tap brings you back. Two taps switch the map: road, bike map, satellite.'),
               GuideStep(_kReport, 'Report', 'Saw a pothole, a new place or a broken pump? Press + and tell the community.'),
               GuideStep(_kSos, 'SOS', 'Hold for 3 seconds to ask riders nearby for help. Works without an account.'),
               GuideStep(widget.navKey, 'Bottom menu', 'Routes, Health, Community and Profile. Replay this guide any time from Profile → Help.'),

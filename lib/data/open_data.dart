@@ -19,8 +19,9 @@ class CitySource {
   final String? socrata; // "domain/datasetId"
   final String? arcgis; // FeatureServer / MapServer layer URL
   final String? where; // ArcGIS filter (falls back to all rows if the server refuses it)
+  final String amenity; // what the list holds, as in OpenStreetMap
   const CitySource(this.key, this.city, this.label, this.s, this.w, this.n, this.e,
-      {this.socrata, this.arcgis, this.where});
+      {this.socrata, this.arcgis, this.where, this.amenity = 'bicycle_parking'});
 
   bool near(LatLng p, [double margin = 0.25]) =>
       p.latitude >= s - margin && p.latitude <= n + margin && p.longitude >= w - margin && p.longitude <= e + margin;
@@ -54,6 +55,8 @@ const kCitySources = [
       arcgis: 'https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Transportation_Layers/MapServer/2'),
   CitySource('hnl', 'Honolulu', 'City of Honolulu · bike racks', 21.25, -158.30, 21.72, -157.64,
       socrata: 'data.honolulu.gov/ab7c-s2jr'),
+  CitySource('atx-fixit', 'Austin', 'City of Austin · Bike Fix-It stations', 30.10, -97.94, 30.52, -97.56,
+      socrata: 'data.austintexas.gov/cvnz-fq2z', amenity: 'bicycle_repair_station'),
   CitySource('carmel', 'Carmel IN', 'City of Carmel · bike racks', 39.92, -86.24, 40.03, -86.04,
       arcgis: 'https://carmelgis.carmel.in.gov/arcserver/rest/services/DOCS/Bike_Racks/FeatureServer/0'),
 ];
@@ -260,12 +263,13 @@ class OpenDataService {
       'lat': lat,
       'lon': lon,
       'tags': {
-        'amenity': 'bicycle_parking',
-        'bicycle_parking': 'stands',
-        if (cap != null && cap > 0) 'capacity': '$cap',
+        'amenity': src.amenity,
+        if (src.amenity == 'bicycle_parking') 'bicycle_parking': 'stands',
+        if (src.amenity == 'bicycle_repair_station') ...{'service:bicycle:pump': 'yes', 'service:bicycle:tools': 'yes'},
+        if (cap != null && cap > 0 && src.amenity == 'bicycle_parking') 'capacity': '$cap',
         if (address != null) 'addr:street': _title(address),
         if (covered == 'yes' || covered == 'y' || covered == 'true') 'covered': 'yes',
-        'fee': 'no',
+        if (src.amenity == 'bicycle_parking') 'fee': 'no',
         'source': src.label,
         if (year != null && RegExp(r'^(19|20)\d\d').hasMatch(year)) 'installed': year.substring(0, 4),
       },
