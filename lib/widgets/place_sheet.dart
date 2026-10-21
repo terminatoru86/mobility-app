@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../data/app_state.dart';
+import '../data/mapillary.dart';
 import '../data/places.dart';
 import '../data/store.dart';
 import '../screens/place_actions.dart';
@@ -158,7 +159,18 @@ class _PlaceSheetState extends State<PlaceSheet> {
             label: const Text('Write the first review'),
           ),
         )],
-      if (p.photos.isNotEmpty) ...[gap, _realPhotos(p.photos)] else if (!p.osm) ...[gap, _photo()],
+      if (p.photos.isNotEmpty)
+        ...[gap, _realPhotos(p.photos)]
+      else if (p.osm)
+        // no photo in the map data: the nearest street photos from Mapillary (if any)
+        FutureBuilder<List<String>>(
+          future: mapillaryPhotos(p.pos),
+          builder: (_, snap) => (snap.data ?? const []).isEmpty
+              ? const SizedBox.shrink()
+              : Padding(padding: const EdgeInsets.only(top: 12), child: _realPhotos(snap.data!, credit: 'Mapillary')),
+        )
+      else
+        ...[gap, _photo()],
       if (p.qa.isNotEmpty || (Store.i.myQuestions[p.id]?.isNotEmpty ?? false))
         if (p.type == PlaceType.parkPrivate || p.type == PlaceType.service || p.type == PlaceType.rent)
           ...[gap, QaCard([...?Store.i.myQuestions[p.id], ...p.qa], onAsk: (q) => setState(() => Store.i.ask(p.id, q)))],
@@ -334,7 +346,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
       ]);
 
   /// Real photos of the place (from OpenStreetMap / Wikimedia Commons / Panoramax), swipe through them.
-  Widget _realPhotos(List<String> urls) => SizedBox(
+  Widget _realPhotos(List<String> urls, {String? credit}) => SizedBox(
         height: 170,
         child: ClipRRect(
           borderRadius: BorderRadius.circular(14),
@@ -358,7 +370,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                   decoration: BoxDecoration(color: Colors.black54, borderRadius: BorderRadius.circular(8)),
-                  child: Text('Photo · ${i + 1}/${urls.length}',
+                  child: Text('Photo · ${i + 1}/${urls.length}${credit == null ? '' : ' · $credit'}',
                       style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w700)),
                 ),
               ),

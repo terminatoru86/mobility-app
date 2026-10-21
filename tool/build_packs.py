@@ -318,6 +318,82 @@ def discover_socrata(known):
     return found
 
 
+# ───────── Mapillary: bike racks detected automatically in street photos ─────────
+
+METROS = {  # the larger US metro areas and college towns (center lat, lon)
+    'New York': (40.73, -73.95), 'Los Angeles': (34.05, -118.25), 'Chicago': (41.88, -87.70), 'Dallas': (32.80, -96.90),
+    'Houston': (29.76, -95.37), 'Washington': (38.90, -77.04), 'Philadelphia': (39.95, -75.17), 'Miami': (25.78, -80.21),
+    'Atlanta': (33.75, -84.39), 'Boston': (42.36, -71.08), 'Phoenix': (33.45, -112.05), 'San Francisco': (37.78, -122.30),
+    'Riverside': (33.95, -117.40), 'Detroit': (42.35, -83.10), 'Seattle': (47.61, -122.30), 'Minneapolis': (44.97, -93.20),
+    'San Diego': (32.75, -117.15), 'Tampa': (27.95, -82.50), 'Denver': (39.74, -104.98), 'Baltimore': (39.29, -76.61),
+    'St. Louis': (38.63, -90.25), 'Orlando': (28.54, -81.38), 'Charlotte': (35.23, -80.84), 'San Antonio': (29.42, -98.49),
+    'Portland': (45.52, -122.65), 'Sacramento': (38.58, -121.45), 'Pittsburgh': (40.44, -79.99), 'Austin': (30.27, -97.74),
+    'Las Vegas': (36.15, -115.17), 'Cincinnati': (39.10, -84.51), 'Kansas City': (39.10, -94.58), 'Columbus': (39.96, -83.00),
+    'Indianapolis': (39.77, -86.16), 'Cleveland': (41.48, -81.69), 'San Jose': (37.34, -121.89), 'Nashville': (36.16, -86.78),
+    'Virginia Beach': (36.85, -76.20), 'Providence': (41.82, -71.41), 'Jacksonville': (30.33, -81.66), 'Milwaukee': (43.04, -87.91),
+    'Raleigh': (35.85, -78.75), 'Oklahoma City': (35.47, -97.52), 'Memphis': (35.15, -90.05), 'Richmond': (37.54, -77.44),
+    'Louisville': (38.25, -85.76), 'New Orleans': (29.95, -90.07), 'Salt Lake City': (40.73, -111.90), 'Hartford': (41.76, -72.68),
+    'Buffalo': (42.89, -78.85), 'Birmingham': (33.52, -86.80), 'Rochester': (43.16, -77.61), 'Grand Rapids': (42.96, -85.67),
+    'Tucson': (32.22, -110.95), 'Honolulu': (21.31, -157.86), 'Tulsa': (36.15, -95.99), 'Fresno': (36.74, -119.79),
+    'Omaha': (41.26, -96.01), 'Albuquerque': (35.09, -106.63), 'Boise': (43.62, -116.20), 'Madison': (43.07, -89.40),
+    'Ann Arbor': (42.28, -83.74), 'Boulder': (40.02, -105.27), 'Eugene': (44.05, -123.09), 'Gainesville': (29.65, -82.33),
+    'Champaign': (40.11, -88.23), 'Bloomington IN': (39.17, -86.53), 'Davis': (38.54, -121.74), 'Fort Collins': (40.58, -105.08),
+    'Ithaca': (42.44, -76.50), 'State College': (40.79, -77.86), 'Lincoln': (40.81, -96.70), 'Spokane': (47.66, -117.42),
+    'Burlington VT': (44.48, -73.21), 'Santa Barbara': (34.42, -119.70), 'Tallahassee': (30.44, -84.28), 'Knoxville': (35.96, -83.92),
+    'Lexington': (38.04, -84.50), 'Des Moines': (41.59, -93.62), 'El Paso': (31.76, -106.49), 'Anchorage': (61.22, -149.90),
+}
+
+
+def mapillary_token():
+    t = os.environ.get('MAPILLARY_TOKEN')
+    if t:
+        return t
+    try:
+        src = open(os.path.join(ROOT, 'lib', 'data', 'mapillary.dart'), encoding='utf-8').read()
+        return re.search(r"kMapillaryToken = '([^']+)'", src).group(1)
+    except Exception:
+        return None
+
+
+def fetch_mapillary(boxes=None):
+    """Bike racks Mapillary found in street photos, in 0.1° cells around each metro (about 55 x 40 km)."""
+    token = mapillary_token()
+    if not token:
+        print('Mapillary skipped: no token', flush=True)
+        return []
+    out, seen = [], set()
+    for name, (la, lo) in METROS.items():
+        n0 = len(out)
+        for i in range(-3, 3):
+            for j in range(-4, 4):
+                s, w = round(la + i * 0.1, 3), round(lo + j * 0.1, 3)
+                if boxes and not any(b[0] <= s < b[2] and b[1] <= w < b[3] for b in boxes):
+                    continue
+                q = urllib.parse.urlencode({
+                    'access_token': token, 'fields': 'id,object_value,geometry,last_seen_at',
+                    'bbox': f'{w},{s},{w + 0.1},{s + 0.1}', 'object_values': 'object--bike-rack', 'limit': 2000})
+                try:
+                    j2 = json.loads(http(f'https://graph.mapillary.com/map_features?{q}', timeout=60))
+                except Exception as err:
+                    print(f'  mapillary {name} {s},{w}: {err}', flush=True)
+                    time.sleep(2)
+                    continue
+                for f in j2.get('data', []):
+                    c = (f.get('geometry') or {}).get('coordinates')
+                    if not c or f['id'] in seen:
+                        continue
+                    seen.add(f['id'])
+                    tags = {'amenity': 'bicycle_parking', 'bicycle_parking': 'stands',
+                            'source': 'Mapillary · seen in street photos'}
+                    ls = f.get('last_seen_at')
+                    if isinstance(ls, (int, float)):
+                        tags['check_date'] = datetime.fromtimestamp(ls / 1000, timezone.utc).strftime('%Y-%m-%d')
+                    out.append([f"mly/{f['id']}", round(c[1], 6), round(c[0], 6), tags])
+                time.sleep(0.15)
+        print(f'Mapillary {name}: {len(out) - n0}', flush=True)
+    return out
+
+
 # ───────── transit and other open APIs ─────────
 
 def fetch_mbta():
@@ -407,14 +483,15 @@ def main():
             raw = open(os.path.join(OUT, name), 'rb').read()
             rows = json.loads(gzip.decompress(raw) if m.group(3) else raw)
             tiles[(int(m.group(1)), int(m.group(2)))] = {
-                r[0]: r for r in rows if not r[0].startswith(('city/', 'mbta/', 'ovt/', 'ago-', 'soc-'))}
+                r[0]: r for r in rows if not r[0].startswith(('city/', 'mbta/', 'ovt/', 'mly/'))}
         print(f'Kept OpenStreetMap places of {len(tiles)} tiles', flush=True)
     else:
         for box in boxes:
             collect_osm(box, tiles)
     cities = []
     # other open sources: one list each, added to the tiles (the app removes doubles near OpenStreetMap ones)
-    for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture)):
+    for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture),
+                     ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
         try:
             for x in fn():
                 if not args or (boxes[0][0] <= x[1] < boxes[0][2] and boxes[0][1] <= x[2] < boxes[0][3]):
