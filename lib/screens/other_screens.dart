@@ -107,6 +107,12 @@ class ProfileScreen extends StatelessWidget {
                 subtitle: Text('App opens counted: ${state.opens}'),
                 onTap: state.resetDemo,
               ),
+              ListTile(
+                leading: const Icon(Icons.sos_outlined, color: AppColors.red),
+                title: const Text('Test: an SOS from a rider nearby'),
+                subtitle: const Text('Then open the Map tab'),
+                onTap: () => Store.i.simulateIncomingSos(userPos),
+              ),
             ]),
           ]),
         );
@@ -204,15 +210,15 @@ class _MyVehicleScreenState extends State<MyVehicleScreen> {
   // option → picture (from the manual)
   static const _options = <Vehicle, List<(String, String)>>{
     Vehicle.bike: [
-      ('E-bike', 'assets/vehicles/opt_e.jpg'),
-      ('Cargo 2 seats', 'assets/vehicles/opt_c2.jpg'),
-      ('Cargo delivery', 'assets/vehicles/opt_cd.jpg'),
-      ('Cargo box', 'assets/vehicles/opt_cb.jpg'),
-      ('Trailer', 'assets/vehicles/opt_tr.jpg'),
+      ('E-bike', 'assets/vehicles/opt_e.png'),
+      ('Cargo 2 seats', 'assets/vehicles/opt_c2.png'),
+      ('Cargo delivery', 'assets/vehicles/opt_cd.png'),
+      ('Cargo box', 'assets/vehicles/opt_cb.png'),
+      ('Trailer', 'assets/vehicles/opt_tr.png'),
     ],
-    Vehicle.scooter: [('Cargo · basket', 'assets/vehicles/opt_sc.jpg')],
-    Vehicle.moped: [('Cargo · delivery', 'assets/vehicles/opt_cm.jpg')],
-    Vehicle.moto: [('Top box & side bags', 'assets/vehicles/opt_mc.jpg')],
+    Vehicle.scooter: [('Cargo · basket', 'assets/vehicles/opt_sc.png')],
+    Vehicle.moped: [('Cargo · delivery', 'assets/vehicles/opt_cm.png')],
+    Vehicle.moto: [('Top box & side bags', 'assets/vehicles/opt_mc.png')],
   };
 
   static const _forName = {

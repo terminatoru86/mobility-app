@@ -1,4 +1,9 @@
+import 'dart:math' as math;
+import 'dart:typed_data';
+import 'dart:ui' show ImageFilter;
+
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:latlong2/latlong.dart';
 
 import '../data/places.dart';
@@ -132,24 +137,24 @@ class _WeatherSheetState extends State<_WeatherSheet> {
 
 // ───────────────────────── 3.6 SOS ─────────────────────────
 
-/// Opened after holding SOS for 3 seconds: text, optional photo, send.
-Future<void> showSosComposer(BuildContext context) => showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.white,
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
-      builder: (_) => const _SosComposer(),
-    );
+/// Opened after holding SOS for 3 seconds: the camera first (photo optional),
+/// with one note line over it: X outside on the left, the send arrow in a red bubble.
+Future<void> showSosComposer(BuildContext context) => Navigator.of(context).push(PageRouteBuilder(
+      opaque: true,
+      transitionDuration: const Duration(milliseconds: 220),
+      pageBuilder: (_, __, ___) => const _SosCamera(),
+      transitionsBuilder: (_, a, __, child) => FadeTransition(opacity: a, child: child),
+    ));
 
-class _SosComposer extends StatefulWidget {
-  const _SosComposer();
+class _SosCamera extends StatefulWidget {
+  const _SosCamera();
   @override
-  State<_SosComposer> createState() => _SosComposerState();
+  State<_SosCamera> createState() => _SosCameraState();
 }
 
-class _SosComposerState extends State<_SosComposer> {
+class _SosCameraState extends State<_SosCamera> {
   final _t = TextEditingController();
-  bool _photo = false;
+  Uint8List? _photo;
 
   @override
   void dispose() {
@@ -157,62 +162,293 @@ class _SosComposerState extends State<_SosComposer> {
     super.dispose();
   }
 
+  Future<void> _shoot() async {
+    try {
+      final x = await ImagePicker().pickImage(source: ImageSource.camera, maxWidth: 1280, imageQuality: 80);
+      if (x == null) return;
+      final b = await x.readAsBytes();
+      if (mounted) setState(() => _photo = b);
+    } catch (_) {}
+  }
+
+  void _send() {
+    Store.i.startSos(_t.text.trim().isEmpty ? 'Need help' : _t.text.trim(), photo: _photo, at: userPos);
+    Navigator.pop(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     final first = !Store.i.sosFirstUseShown;
-    return Padding(
-      padding: EdgeInsets.fromLTRB(16, 14, 16, MediaQuery.of(context).viewInsets.bottom + 16),
-      child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-        Row(children: [
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-            decoration: BoxDecoration(color: AppColors.red, borderRadius: BorderRadius.circular(16)),
+    final pad = MediaQuery.of(context).padding;
+    final kb = MediaQuery.of(context).viewInsets.bottom;
+    return Scaffold(
+      backgroundColor: const Color(0xFF0E1215),
+      resizeToAvoidBottomInset: false,
+      body: Stack(children: [
+        // viewfinder / the photo just taken
+        Positioned.fill(
+          child: _photo != null
+              ? Image.memory(_photo!, fit: BoxFit.cover)
+              : const DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: RadialGradient(colors: [Color(0xFF2A3238), Color(0xFF0E1215)], radius: 0.9),
+                  ),
+                ),
+        ),
+        // SOS tag, top-left
+        Positioned(
+          left: 14,
+          top: pad.top + 10,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+            decoration: BoxDecoration(color: AppColors.red, borderRadius: BorderRadius.circular(14)),
             child: const Text('SOS', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900, letterSpacing: 1.5)),
           ),
-          const Spacer(),
-          IconButton(onPressed: () => Navigator.pop(context), icon: const Icon(Icons.close)),
-        ]),
+        ),
+        if (_photo == null)
+          Positioned(
+            left: 0,
+            right: 0,
+            top: pad.top + 60,
+            child: const Text('Take a photo (optional)',
+                textAlign: TextAlign.center, style: TextStyle(color: Colors.white70, fontWeight: FontWeight.w700)),
+          ),
         if (first)
-          Container(
-            margin: const EdgeInsets.only(top: 6, bottom: 4),
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(color: AppColors.redTint, borderRadius: BorderRadius.circular(12)),
-            child: const Text(
-              'Riders within 2 miles with the app open will see your alert. In danger? Call 911.',
-              style: TextStyle(color: AppColors.redDark, fontWeight: FontWeight.w700),
+          Positioned(
+            left: 16,
+            right: 16,
+            top: pad.top + 90,
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(color: Colors.black54, borderRadius: BorderRadius.circular(12)),
+              child: const Text('Riders within 2 miles with the app open will see your alert. In danger? Call 911.',
+                  textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 12.5)),
             ),
           ),
+        // the note line, then the shutter
+        Positioned(
+          left: 12,
+          right: 12,
+          bottom: (kb > 0 ? kb + 10 : pad.bottom + 24),
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            Row(children: [
+              GestureDetector(
+                onTap: () => Navigator.pop(context),
+                child: const Padding(
+                  padding: EdgeInsets.all(6),
+                  child: Icon(Icons.close, color: Colors.white, size: 24),
+                ),
+              ),
+              const SizedBox(width: 4),
+              Expanded(
+                child: Container(
+                  height: 46,
+                  padding: const EdgeInsets.only(left: 14, right: 4),
+                  decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(23)),
+                  child: Row(children: [
+                    Expanded(
+                      child: TextField(
+                        controller: _t,
+                        maxLength: 300,
+                        maxLines: 1,
+                        textInputAction: TextInputAction.send,
+                        onSubmitted: (_) => _send(),
+                        decoration: const InputDecoration(
+                          hintText: 'What happened?',
+                          counterText: '',
+                          border: InputBorder.none,
+                          isDense: true,
+                        ),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: _send,
+                      child: Container(
+                        width: 38,
+                        height: 38,
+                        decoration: const BoxDecoration(color: AppColors.red, shape: BoxShape.circle),
+                        child: const Icon(Icons.arrow_upward_rounded, color: Colors.white, size: 22),
+                      ),
+                    ),
+                  ]),
+                ),
+              ),
+            ]),
+            if (kb == 0) ...[
+              const SizedBox(height: 22),
+              GestureDetector(
+                onTap: _shoot,
+                child: Container(
+                  width: 72,
+                  height: 72,
+                  decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.white, width: 4)),
+                  padding: const EdgeInsets.all(4),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: _photo == null ? Colors.white : AppColors.green,
+                    ),
+                    child: _photo == null ? null : const Icon(Icons.refresh, color: Colors.white),
+                  ),
+                ),
+              ),
+            ],
+          ]),
+        ),
+      ]),
+    );
+  }
+}
+
+// ── SOS received: a note at the bottom, with the photo only behind the note ──
+
+class SosNote extends StatelessWidget {
+  final IncomingSos sos;
+  final VoidCallback onHelp;
+  const SosNote({super.key, required this.sos, required this.onHelp});
+
+  Widget _photo(IncomingSos s) => s.photo != null
+      ? Image.memory(s.photo!, fit: BoxFit.cover)
+      : Container(
+          color: const Color(0xFF3A4249),
+          alignment: Alignment.center,
+          child: s.photoAsset == null ? null : Image.asset(s.photoAsset!, fit: BoxFit.contain),
+        );
+
+  @override
+  Widget build(BuildContext context) {
+    final km = const Distance()(userPos, sos.pos) / 1000;
+    final ago = DateTime.now().difference(sos.at).inMinutes;
+    final hasPhoto = sos.photo != null || sos.photoAsset != null;
+    return Dismissible(
+      key: ValueKey(sos.at),
+      direction: DismissDirection.startToEnd,
+      onDismissed: (_) => Store.i.dismissIncomingSos(),
+      child: Column(mainAxisSize: MainAxisSize.min, children: [
+        GestureDetector(
+          onTap: hasPhoto ? () => _enlarge(context) : null,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(18),
+            child: Stack(children: [
+              if (hasPhoto)
+                Positioned.fill(
+                  child: ImageFiltered(imageFilter: ImageFilter.blur(sigmaX: 3, sigmaY: 3), child: _photo(sos)),
+                ),
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+                decoration: BoxDecoration(
+                  color: hasPhoto ? Colors.black.withValues(alpha: 0.45) : const Color(0xFFFFF4C9),
+                  border: Border(left: BorderSide(color: AppColors.red, width: 4)),
+                ),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text('“${sos.text}”',
+                      style: TextStyle(
+                          fontWeight: FontWeight.w800, fontSize: 15, color: hasPhoto ? Colors.white : AppColors.ink)),
+                  const SizedBox(height: 4),
+                  Row(children: [
+                    Expanded(
+                      child: Text(
+                        '${km.toStringAsFixed(1)} km · ${ago <= 0 ? 'now' : '$ago min ago'} · approximate area',
+                        style: TextStyle(fontSize: 11.5, color: hasPhoto ? Colors.white70 : AppColors.soft),
+                      ),
+                    ),
+                    Text('›››', style: TextStyle(color: hasPhoto ? Colors.white54 : AppColors.soft, letterSpacing: 1)),
+                  ]),
+                ]),
+              ),
+            ]),
+          ),
+        ),
         const SizedBox(height: 8),
         Row(children: [
           Expanded(
-            child: TextField(
-              controller: _t,
-              autofocus: true,
-              maxLength: 300,
-              decoration: const InputDecoration(
-                hintText: 'What happened?',
-                counterText: '',
-                filled: true,
-                fillColor: AppColors.paper,
-                border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(14)), borderSide: BorderSide.none),
+            child: FilledButton(
+              onPressed: onHelp,
+              style: FilledButton.styleFrom(backgroundColor: AppColors.red, minimumSize: const Size(0, 44), shape: const StadiumBorder()),
+              child: const Text('I can help', style: TextStyle(fontWeight: FontWeight.w900)),
+            ),
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: OutlinedButton(
+              onPressed: Store.i.dismissIncomingSos,
+              style: OutlinedButton.styleFrom(
+                backgroundColor: Colors.white,
+                minimumSize: const Size(0, 44),
+                shape: const StadiumBorder(),
+              ),
+              child: const Text("Can't", style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.ink)),
+            ),
+          ),
+        ]),
+      ]),
+    );
+  }
+
+  // the photo, bigger, in a card in the middle (not full screen); tap again to close
+  void _enlarge(BuildContext context) => showDialog<void>(
+        context: context,
+        barrierColor: Colors.black38,
+        builder: (c) => GestureDetector(
+          onTap: () => Navigator.pop(c),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6),
+            child: Center(
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 28),
+                constraints: const BoxConstraints(maxWidth: 420),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: const [BoxShadow(color: Color(0x44000000), blurRadius: 24)],
+                ),
+                clipBehavior: Clip.antiAlias,
+                child: Column(mainAxisSize: MainAxisSize.min, children: [
+                  AspectRatio(aspectRatio: 4 / 3, child: _photo(sos)),
+                  Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Text('“${sos.text}”',
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w800, fontSize: 14, color: AppColors.ink, decoration: TextDecoration.none)),
+                  ),
+                ]),
               ),
             ),
           ),
-          const SizedBox(width: 6),
-          IconButton(
-            onPressed: () => setState(() => _photo = !_photo),
-            icon: Icon(_photo ? Icons.check_circle : Icons.photo_camera_outlined,
-                color: _photo ? AppColors.green : AppColors.ink),
-          ),
-          IconButton.filled(
-            style: IconButton.styleFrom(backgroundColor: AppColors.red),
-            onPressed: () {
-              Store.i.startSos(_t.text.trim().isEmpty ? 'Need help' : _t.text.trim());
-              Navigator.pop(context);
-            },
-            icon: const Icon(Icons.send_rounded, color: Colors.white),
-          ),
-        ]),
+        ),
+      );
+}
+
+/// On my phone after my SOS: someone is coming.
+class SosHelperCard extends StatelessWidget {
+  final SosHelper helper;
+  const SosHelperCard({super.key, required this.helper});
+
+  @override
+  Widget build(BuildContext context) {
+    final min = math.max(1, (helper.meters / 1000 / 18 * 60).round());
+    return Container(
+      padding: const EdgeInsets.fromLTRB(10, 10, 14, 10),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        boxShadow: const [BoxShadow(color: Color(0x26000000), blurRadius: 14, offset: Offset(0, 3))],
+      ),
+      child: Row(children: [
+        CircleAvatar(
+          radius: 18,
+          backgroundColor: AppColors.green,
+          child: Text(helper.name[0], style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w900)),
+        ),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text('${helper.name} is coming to you', style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
+            Text('$min min · ${(helper.meters / 1000).toStringAsFixed(1)} km · alert removed for the others',
+                style: const TextStyle(fontSize: 11.5, color: AppColors.soft)),
+          ]),
+        ),
       ]),
     );
   }

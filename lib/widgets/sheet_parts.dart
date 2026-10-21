@@ -83,15 +83,15 @@ class _VehicleTileState extends State<VehicleTile> {
   @override
   Widget build(BuildContext context) {
     final selectedBorder = _fixed || _mine;
-    return Column(children: [
-      Container(
-        height: 74,
-        decoration: BoxDecoration(
-          color: selectedBorder ? Colors.white : AppColors.paper,
-          borderRadius: BorderRadius.circular(14),
-          border: selectedBorder ? Border.all(color: AppColors.ink, width: 1.5) : null,
-        ),
-        child: PageView.builder(
+    return Container(
+      height: 74,
+      decoration: BoxDecoration(
+        color: selectedBorder ? Colors.white : AppColors.paper,
+        borderRadius: BorderRadius.circular(14),
+        border: selectedBorder ? Border.all(color: AppColors.ink, width: 1.5) : null,
+      ),
+      child: Stack(children: [
+        PageView.builder(
           controller: _pc,
           itemCount: _list.length,
           onPageChanged: (i) => setState(() => _index = i),
@@ -104,9 +104,14 @@ class _VehicleTileState extends State<VehicleTile> {
                 widget.onSelected?.call(v);
               },
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
+                padding: const EdgeInsets.only(left: 6, right: 10),
                 child: Row(children: [
-                  SizedBox(width: 66, height: 54, child: Image.asset(v.asset, fit: BoxFit.contain)),
+                  // bigger picture: the cut-out image overflows its box a little
+                  SizedBox(
+                    width: 74,
+                    height: 62,
+                    child: Transform.scale(scale: 1.3, child: Image.asset(v.asset, fit: BoxFit.contain)),
+                  ),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Column(
@@ -127,25 +132,31 @@ class _VehicleTileState extends State<VehicleTile> {
             );
           },
         ),
-      ),
-      const SizedBox(height: 4),
-      if (_list.length > 1)
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: List.generate(
-            _list.length,
-            (i) => Container(
-              width: 4,
-              height: 4,
-              margin: const EdgeInsets.symmetric(horizontal: 1.5),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: i == _index ? AppColors.primary : const Color(0xFFC9D1D5),
+        // tiny dots, bottom-right inside the tile
+        if (_list.length > 1)
+          Positioned(
+            right: 9,
+            bottom: 7,
+            child: IgnorePointer(
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: List.generate(
+                  _list.length,
+                  (i) => Container(
+                    width: 2.5,
+                    height: 2.5,
+                    margin: const EdgeInsets.symmetric(horizontal: 1),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: i == _index ? AppColors.ink : const Color(0x8C9AA6AB),
+                    ),
+                  ),
+                ),
               ),
             ),
           ),
-        ),
-    ]);
+      ]),
+    );
   }
 
   Widget _chip(String t) => Container(
@@ -474,4 +485,52 @@ class _SwipeButtonState extends State<SwipeButton> {
       );
     });
   }
+}
+
+/// Rent: one grey tile per vehicle, big cut-out picture, free count top-right.
+class RentVehicleRow extends StatelessWidget {
+  final Map<Vehicle, int> free;
+  final Vehicle? selected;
+  final ValueChanged<Vehicle>? onTap;
+  const RentVehicleRow({super.key, required this.free, this.selected, this.onTap});
+
+  @override
+  Widget build(BuildContext context) => Row(children: [
+        for (final e in free.entries)
+          Expanded(
+            child: GestureDetector(
+              onTap: onTap == null ? null : () => onTap!(e.key),
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 2.5),
+                height: 64,
+                decoration: BoxDecoration(
+                  color: selected == e.key ? const Color(0xFFEAF0FB) : const Color(0xFFE9EEF1),
+                  borderRadius: BorderRadius.circular(14),
+                  border: Border.all(color: selected == e.key ? AppColors.blue : Colors.transparent, width: 1.5),
+                ),
+                child: Stack(children: [
+                  Positioned.fill(
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(4, 8, 4, 2),
+                      child: Transform.scale(scale: 1.25, child: Image.asset(e.key.asset, fit: BoxFit.contain)),
+                    ),
+                  ),
+                  Positioned(
+                    right: 4,
+                    top: 4,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
+                      decoration: BoxDecoration(
+                        color: e.value > 0 ? AppColors.green : AppColors.red,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text('${e.value}',
+                          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 11)),
+                    ),
+                  ),
+                ]),
+              ),
+            ),
+          ),
+      ]);
 }

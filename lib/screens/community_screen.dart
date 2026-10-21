@@ -75,18 +75,18 @@ class Listing {
 final List<Listing> _listings = [
   const Listing('Trek FX 2 hybrid, size M', 'Light hybrid, new tires, serviced last month.', '\$450', 'Alex', '3 h ago',
       '1.2 km', 'Bikes',
-      image: 'assets/vehicles/bike.jpg'),
+      image: 'assets/vehicles/bike.png'),
   const Listing('Urban helmet M', 'Worn twice, with rear light.', '\$35', 'Maria', '5 h ago', '0.8 km', 'Gear',
       icon: Icons.sports_motorsports_outlined),
   const Listing('Electric scooter 25 km range', 'Charger included. Small scratch on the deck.', '\$220', 'Dan',
       '1 day ago', '3.4 km', 'Scooters',
-      image: 'assets/vehicles/scooter.jpg'),
+      image: 'assets/vehicles/scooter.png'),
   const Listing('U-lock + cable', 'Kryptonite, two keys.', '\$25', 'Ioana', '1 day ago', '2.1 km', 'Gear',
       icon: Icons.lock_outline),
   const Listing('E-bike, 500 Wh battery', 'Commuter e-bike, 1,800 km.', '\$1,150', 'Sam', '2 days ago', '4.0 km', 'Bikes',
-      image: 'assets/vehicles/ebike.jpg'),
+      image: 'assets/vehicles/ebike.png'),
   const Listing('Moped 50cc', 'Runs great, papers in order.', '\$1,900', 'Chris', '3 days ago', '6.2 km', 'Mopeds',
-      image: 'assets/vehicles/moped.jpg'),
+      image: 'assets/vehicles/moped.png'),
   const Listing('Kids bike 16"', 'Free to a good home.', null, 'Lena', '4 days ago', '1.9 km', 'Bikes',
       icon: Icons.child_care),
 ];
@@ -286,7 +286,7 @@ class _PostListingState extends State<PostListing> {
             ),
             alignment: Alignment.center,
             child: _photo
-                ? Image.asset('assets/vehicles/bike.jpg', height: 110)
+                ? Image.asset('assets/vehicles/bike.png', height: 110)
                 : const Column(mainAxisSize: MainAxisSize.min, children: [
                     Icon(Icons.add_a_photo_outlined, size: 34, color: AppColors.slate),
                     SizedBox(height: 6),
@@ -322,7 +322,7 @@ class _PostListingState extends State<PostListing> {
                       'just now',
                       '0 km',
                       _cat,
-                      image: 'assets/vehicles/bike.jpg',
+                      image: 'assets/vehicles/bike.png',
                     ),
                   )
               : null,

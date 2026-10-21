@@ -134,6 +134,10 @@ class _PlaceSheetState extends State<PlaceSheet> {
 
     final children = <Widget>[
       if (_tip) _vehicleTip(),
+      if (p.type == PlaceType.rent) ...[
+        const RentVehicleRow(free: {Vehicle.bike: 6, Vehicle.scooter: 3, Vehicle.moped: 2, Vehicle.moto: 1}),
+        const SizedBox(height: 8),
+      ],
       Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Expanded(flex: 3, child: VehicleTile(place: p, myVehicle: widget.myVehicle)),
         const SizedBox(width: 8),

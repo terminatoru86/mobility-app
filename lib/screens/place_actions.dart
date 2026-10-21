@@ -6,6 +6,7 @@ import '../data/app_state.dart';
 import '../data/places.dart';
 import '../data/store.dart';
 import '../theme.dart';
+import '../widgets/sheet_parts.dart';
 import '../widgets/signup.dart';
 
 const _months = [
@@ -576,27 +577,7 @@ class _RentScreenState extends State<RentScreen> {
           ),
         _field(
           'Vehicle',
-          Row(children: [
-            for (final e in _free.entries)
-              Expanded(
-                child: GestureDetector(
-                  onTap: () => setState(() => _v = e.key),
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 3),
-                    padding: const EdgeInsets.symmetric(vertical: 6),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(14),
-                      border: Border.all(color: _v == e.key ? AppColors.ink : Colors.transparent, width: 1.5),
-                    ),
-                    child: Column(children: [
-                      SizedBox(height: 40, child: Image.asset(e.key.asset)),
-                      Text('${e.value}', style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.greenDark)),
-                    ]),
-                  ),
-                ),
-              ),
-          ]),
+          RentVehicleRow(free: _free, selected: _v, onTap: (v) => setState(() => _v = v)),
         ),
         _field(
           'Date and time',

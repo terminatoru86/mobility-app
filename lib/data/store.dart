@@ -1,10 +1,30 @@
+import 'dart:async';
 import 'dart:convert';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'places.dart';
+
+/// An SOS from another rider, shown as a note on the map.
+class IncomingSos {
+  final String text;
+  final LatLng pos; // approximate area
+  final Uint8List? photo;
+  final String? photoAsset; // demo photo
+  final DateTime at;
+  IncomingSos(this.text, this.pos, {this.photo, this.photoAsset, DateTime? at}) : at = at ?? DateTime.now();
+}
+
+/// Someone pressed "I can help" on my SOS.
+class SosHelper {
+  final String name;
+  LatLng pos;
+  double meters;
+  SosHelper(this.name, this.pos, this.meters);
+}
 
 /// A saved route ("Home → Office").
 class SavedRoute {
@@ -102,6 +122,10 @@ class Store extends ChangeNotifier {
   bool sosActive = false;
   String sosText = '';
   bool sosFirstUseShown = false;
+  Uint8List? sosPhoto;
+  IncomingSos? incomingSos;
+  SosHelper? sosHelper;
+  Timer? _helperTimer;
 
   Future<void> load() async {
     _p = await SharedPreferences.getInstance();
@@ -220,18 +244,64 @@ class Store extends ChangeNotifier {
     notifyListeners();
   }
 
-  void startSos(String text) {
+  void startSos(String text, {Uint8List? photo, LatLng? at}) {
     sosActive = true;
     sosText = text;
+    sosPhoto = photo;
     if (!sosFirstUseShown) {
       sosFirstUseShown = true;
       _p?.setBool('sosFirst', true);
     }
     notifyListeners();
+    if (at != null) _demoHelper(at);
   }
 
   void cancelSos() {
     sosActive = false;
+    sosPhoto = null;
+    sosHelper = null;
+    _helperTimer?.cancel();
+    notifyListeners();
+  }
+
+  /// Demo until the server exists: 6 s after the SOS, "Andrei" presses I can help
+  /// and comes from 1.2 km away; his green dot moves towards me.
+  void _demoHelper(LatLng me) {
+    _helperTimer?.cancel();
+    final start = LatLng(me.latitude + 0.0085, me.longitude - 0.0075);
+    _helperTimer = Timer(const Duration(seconds: 6), () {
+      if (!sosActive) return;
+      sosHelper = SosHelper('Andrei', start, const Distance()(start, me));
+      notifyListeners();
+      var k = 0;
+      _helperTimer = Timer.periodic(const Duration(seconds: 1), (t) {
+        if (!sosActive || sosHelper == null) {
+          t.cancel();
+          return;
+        }
+        k++;
+        final f = (k / 240).clamp(0.0, 0.97); // about 4 minutes
+        final h = sosHelper!;
+        h.pos = LatLng(start.latitude + (me.latitude - start.latitude) * f, start.longitude + (me.longitude - start.longitude) * f);
+        h.meters = const Distance()(h.pos, me);
+        notifyListeners();
+      });
+    });
+  }
+
+  /// Demo: an SOS from a rider about 1.2 km away (Profile → Test).
+  void simulateIncomingSos(LatLng me) {
+    incomingSos = IncomingSos(
+      'My chain broke and I fell. My knee hurts.',
+      LatLng(me.latitude - 0.0079, me.longitude + 0.0098),
+      photoAsset: 'assets/vehicles/bike.png',
+      at: DateTime.now().subtract(const Duration(minutes: 1)),
+    );
+    notifyListeners();
+  }
+
+  void dismissIncomingSos() {
+    incomingSos = null;
     notifyListeners();
   }
 

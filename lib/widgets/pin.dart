@@ -239,3 +239,44 @@ class UserDot extends StatelessWidget {
         ),
       );
 }
+
+String _hex(Color c) => '#${(c.toARGB32() & 0xFFFFFF).toRadixString(16).padLeft(6, '0')}';
+
+/// Small road with a dashed middle line: "there is bike road on this route".
+class BikeRoadIcon extends StatelessWidget {
+  final double size;
+  final Color color;
+  const BikeRoadIcon({super.key, this.size = 18, this.color = const Color(0xFF7C8A91)});
+
+  @override
+  Widget build(BuildContext context) {
+    final c = _hex(color);
+    return SvgPicture.string(
+      '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">'
+      '<path d="M8.6 4.5 5.4 20M15.4 4.5 18.6 20" stroke="$c" stroke-width="2.3" stroke-linecap="round" fill="none"/>'
+      '<path d="M12 5v2M12 11v2M12 17v2.4" stroke="$c" stroke-width="2.3" stroke-linecap="round" fill="none"/></svg>',
+      width: size,
+      height: size,
+    );
+  }
+}
+
+/// Grey map pin standing on a ring: the destination.
+class DestinationPinIcon extends StatelessWidget {
+  final double size;
+  final Color color;
+  const DestinationPinIcon({super.key, this.size = 22, this.color = const Color(0xFF7C8A91)});
+
+  @override
+  Widget build(BuildContext context) {
+    final c = _hex(color);
+    return SvgPicture.string(
+      '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">'
+      '<circle cx="12" cy="6.2" r="3.9" fill="$c"/><circle cx="12" cy="5.6" r="1.15" fill="#fff"/>'
+      '<rect x="11" y="9.6" width="2" height="7.6" rx="1" fill="$c"/>'
+      '<ellipse cx="12" cy="19.4" rx="6.3" ry="2.5" fill="none" stroke="$c" stroke-width="1.9"/></svg>',
+      width: size,
+      height: size,
+    );
+  }
+}

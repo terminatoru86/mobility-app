@@ -2,6 +2,8 @@ import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'dart:ui' show ImageFilter;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -126,16 +128,12 @@ class _RoutePlannerState extends State<RoutePlanner> {
   @override
   Widget build(BuildContext context) {
     final r = _r;
-    final h = MediaQuery.of(context).size.height;
+    final top = MediaQuery.of(context).padding.top;
     return Scaffold(
       backgroundColor: Colors.white,
       body: Stack(children: [
-        // the map on top, the panel slides over its lower part
-        Positioned(
-          left: 0,
-          right: 0,
-          top: 0,
-          height: h * 0.42,
+        // the map fills the screen; the panel sits over its lower part
+        Positioned.fill(
           child: FlutterMap(
             mapController: _map,
             options: MapOptions(
@@ -182,57 +180,73 @@ class _RoutePlannerState extends State<RoutePlanner> {
             ],
           ),
         ),
-        if (_wx != null && r != null)
-          Positioned(right: 12, top: MediaQuery.of(context).padding.top + 10, child: _windChip(r)),
+        // ── glass card on top: thin blue "My location" strip, destination row, + and ⇅ ──
+        Positioned(left: 10, right: 10, top: top + 8, child: _glassTop()),
+        // ── panel ──
         Positioned(
           left: 0,
           right: 0,
           bottom: 0,
-          top: h * 0.42 - 26,
           child: Container(
+            constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.62),
             decoration: const BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.vertical(top: Radius.circular(26)),
-              boxShadow: [BoxShadow(color: Color(0x29000000), blurRadius: 24, offset: Offset(0, -6))],
+              borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+              boxShadow: [BoxShadow(color: Color(0x24000000), blurRadius: 20, offset: Offset(0, -5))],
             ),
-            child: Column(children: [
-              Expanded(
-                child: ListView(padding: const EdgeInsets.fromLTRB(12, 8, 12, 12), children: [
-                  Center(
-                    child: Container(
-                      width: 36,
-                      height: 4,
-                      decoration: BoxDecoration(color: const Color(0xFFD3DCDD), borderRadius: BorderRadius.circular(2)),
+            child: SafeArea(
+              top: false,
+              child: Column(mainAxisSize: MainAxisSize.min, children: [
+                // handle in the middle, thin chevron (cancel) at the right, on the same line
+                SizedBox(
+                  height: 22,
+                  child: Stack(children: [
+                    Center(
+                      child: Container(
+                        width: 34,
+                        height: 4,
+                        decoration: BoxDecoration(color: const Color(0xFFD3DCDD), borderRadius: BorderRadius.circular(2)),
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 8),
-                  _titleRow(r),
-                  const SizedBox(height: 8),
-                  _odCard(),
-                  const SizedBox(height: 8),
-                  if (_loading)
-                    const Padding(padding: EdgeInsets.all(24), child: Center(child: CircularProgressIndicator()))
-                  else if (r == null)
-                    _softCard(child: Column(children: [
-                      const Text('No bike route found right now.', style: TextStyle(fontWeight: FontWeight.w800)),
-                      TextButton(onPressed: _calc, child: const Text('Try again')),
-                    ]))
-                  else ...[
-                    _vehicleBar(r),
-                    const SizedBox(height: 6),
-                    Row(children: [for (final l in const ['Fast', 'Balanced', 'Quiet']) Expanded(child: _modeTile(l))]),
-                    const SizedBox(height: 8),
-                    _nearCard(),
-                    const SizedBox(height: 8),
-                    _summaryCard(r),
-                  ],
-                ]),
-              ),
-              if (r != null)
-                SafeArea(
-                  top: false,
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(12, 4, 12, 10),
+                    Positioned(
+                      right: 14,
+                      top: 0,
+                      bottom: 0,
+                      child: GestureDetector(
+                        onTap: () => Navigator.of(context).pop(),
+                        child: const Icon(Icons.keyboard_arrow_down_rounded, size: 24, color: Color(0xFF7C8A91), weight: 300),
+                      ),
+                    ),
+                  ]),
+                ),
+                Flexible(
+                  child: ListView(shrinkWrap: true, padding: const EdgeInsets.fromLTRB(12, 0, 12, 8), children: [
+                    if (_loading)
+                      const Padding(padding: EdgeInsets.all(24), child: Center(child: CircularProgressIndicator()))
+                    else if (r == null)
+                      _softCard(child: Column(children: [
+                        const Text('No bike route found right now.', style: TextStyle(fontWeight: FontWeight.w800)),
+                        TextButton(onPressed: _calc, child: const Text('Try again')),
+                      ]))
+                    else ...[
+                      // the same vehicle tile as in the place sheets + distance
+                      Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                        Expanded(flex: 3, child: VehicleTile(place: _tripPlace(r), myVehicle: widget.myVehicle)),
+                        const SizedBox(width: 8),
+                        Expanded(flex: 2, child: FactTile(r.distance, 'distance')),
+                      ]),
+                      const SizedBox(height: 8),
+                      _segmented(),
+                      const SizedBox(height: 8),
+                      _nearCard(r),
+                      const SizedBox(height: 8),
+                      _summaryCard(r),
+                    ],
+                  ]),
+                ),
+                if (r != null)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(12, 2, 12, 10),
                     child: Row(children: [
                       _roundBtn(Icons.format_list_bulleted, () => _moreInfo(r)),
                       const SizedBox(width: 8),
@@ -244,8 +258,8 @@ class _RoutePlannerState extends State<RoutePlanner> {
                       Expanded(child: _goButton(r)),
                     ]),
                   ),
-                ),
-            ]),
+              ]),
+            ),
           ),
         ),
       ]),
@@ -254,182 +268,192 @@ class _RoutePlannerState extends State<RoutePlanner> {
 
   bool get _isSaved => Store.i.savedRoutes.any((s) => s.name == '$_fromName → $_toName');
 
-  // ── pieces of the panel ──
-
   Widget _softCard({required Widget child, EdgeInsets padding = const EdgeInsets.fromLTRB(12, 9, 10, 10)}) => Container(
         padding: padding,
-        decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(18)),
+        decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(16)),
         child: child,
       );
 
-  Widget _titleRow(RouteResult? r) => Row(children: [
-        Expanded(
-          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text(_toName,
-                maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w900)),
-            Text(r == null ? 'Calculating…' : '${_timeFor(r, _vehicle)} · ${r.distance} · arrive ${_arriveFor(r, _vehicle)}',
-                style: const TextStyle(color: AppColors.soft, fontWeight: FontWeight.w600)),
-          ]),
+  // ── top card ──
+  Widget _glassTop() {
+    return Stack(clipBehavior: Clip.none, children: [
+      ClipRRect(
+        borderRadius: BorderRadius.circular(18),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
+          child: Container(
+            margin: const EdgeInsets.only(right: 0),
+            decoration: BoxDecoration(
+              color: Colors.white.withValues(alpha: 0.80),
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(color: Colors.white.withValues(alpha: 0.7)),
+            ),
+            child: Column(mainAxisSize: MainAxisSize.min, children: [
+              // thin blue strip, edge to edge, with the start coordinates
+              GestureDetector(
+                onTap: () => _edit(true),
+                child: Container(
+                  height: 24,
+                  padding: const EdgeInsets.only(left: 12, right: 46),
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(colors: [Color(0xFF2F6FDC), Color(0xFF3F7DE6), Color(0xFF6A9EF2)]),
+                  ),
+                  child: Row(children: [
+                    Container(
+                      width: 8,
+                      height: 8,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: const Color(0xFFCFE0FB), width: 2),
+                      ),
+                    ),
+                    const SizedBox(width: 7),
+                    Text(_fromName.toUpperCase(),
+                        style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w800, letterSpacing: .3)),
+                    const Spacer(),
+                    Text('${_from.latitude.toStringAsFixed(4)}, ${_from.longitude.toStringAsFixed(4)}',
+                        style: TextStyle(color: Colors.white.withValues(alpha: .9), fontSize: 11, fontWeight: FontWeight.w600)),
+                  ]),
+                ),
+              ),
+              // stops, if any
+              for (final (i, v) in _via.indexed)
+                _destRow(Icons.more_vert, AppColors.soft, v.$1, '', () => _editVia(i), plus: false),
+              _destRow(Icons.flag_rounded, AppColors.red, _toName, _toSub, () => _edit(false), plus: true),
+            ]),
+          ),
         ),
-        // ✕ stops the route and goes back to the map, with the address still in the search bar
-        Material(
-          color: const Color(0xFFEEF2F4),
+      ),
+      // ⇅ on the edge of the card
+      Positioned(
+        right: -6,
+        top: 26,
+        child: Material(
+          color: Colors.white,
           shape: const CircleBorder(),
+          elevation: 3,
+          shadowColor: const Color(0x55000000),
           child: InkWell(
             customBorder: const CircleBorder(),
-            onTap: () => Navigator.of(context).pop(),
-            child: const SizedBox(width: 38, height: 38, child: Icon(Icons.close, size: 20)),
+            onTap: _swap,
+            child: const SizedBox(width: 36, height: 36, child: Icon(Icons.swap_vert, size: 20, color: AppColors.ink)),
           ),
         ),
-      ]);
-
-  // from / to with a dotted connector; tap a line to type again. ⇅ and + stacked on the right.
-  Widget _odCard() {
-    Widget line(String text, VoidCallback onTap) => InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(10),
-          child: SizedBox(
-            height: 40,
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: Text(text,
-                  maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
-            ),
-          ),
-        );
-    Widget dot(Color c) => Container(
-          width: 12,
-          height: 12,
-          decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, border: Border.all(color: c, width: 3)),
-        );
-    Widget link() => Column(children: [
-          for (int i = 0; i < 3; i++)
-            Container(
-              width: 3,
-              height: 3,
-              margin: const EdgeInsets.symmetric(vertical: 2),
-              decoration: const BoxDecoration(color: Color(0xFFAAB6BB), shape: BoxShape.circle),
-            ),
-        ]);
-    final rows = <(Widget, Widget)>[
-      (dot(AppColors.blue), line(_fromName, () => _edit(true))),
-      for (final (i, v) in _via.indexed) (dot(AppColors.soft), line(v.$1, () => _editVia(i))),
-      (const Icon(Icons.flag_rounded, color: AppColors.red, size: 18), line(_toName, () => _edit(false))),
-    ];
-    return _softCard(
-      padding: const EdgeInsets.fromLTRB(12, 4, 8, 4),
-      child: Row(children: [
-        Expanded(
-          child: Column(children: [
-            for (int i = 0; i < rows.length; i++) ...[
-              Row(children: [SizedBox(width: 20, child: Center(child: rows[i].$1)), const SizedBox(width: 10), Expanded(child: rows[i].$2)]),
-              if (i < rows.length - 1)
-                Row(children: [
-                  SizedBox(width: 20, child: Center(child: link())),
-                  const SizedBox(width: 10),
-                  const Expanded(child: Divider(height: 1, color: Color(0xFFE1E7E9))),
-                ]),
-            ],
-          ]),
-        ),
-        const SizedBox(width: 6),
-        Column(mainAxisSize: MainAxisSize.min, children: [
-          _miniRound(Icons.swap_vert, _swap),
-          const SizedBox(height: 8),
-          _miniRound(Icons.add, _addStop),
-        ]),
-      ]),
-    );
+      ),
+    ]);
   }
 
-  Widget _miniRound(IconData i, VoidCallback onTap) => Material(
-        color: Colors.white,
-        shape: const CircleBorder(),
-        elevation: 1.5,
-        shadowColor: const Color(0x33000000),
-        child: InkWell(
-          customBorder: const CircleBorder(),
-          onTap: onTap,
-          child: SizedBox(width: 34, height: 34, child: Icon(i, size: 19, color: AppColors.ink)),
+  String get _toSub {
+    final p = widget.place;
+    if (p != null && p.address != _toName) return p.address;
+    return '${_to.latitude.toStringAsFixed(4)}, ${_to.longitude.toStringAsFixed(4)}';
+  }
+
+  Widget _destRow(IconData icon, Color c, String title, String sub, VoidCallback onTap, {required bool plus}) => Padding(
+        padding: const EdgeInsets.fromLTRB(6, 6, 46, 6),
+        child: Material(
+          color: Colors.white.withValues(alpha: .88),
+          borderRadius: BorderRadius.circular(12),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(12),
+            onTap: onTap,
+            child: Container(
+              height: 46,
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: const Color(0x12131F2B)),
+              ),
+              child: Row(children: [
+                Icon(icon, color: c, size: 20),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Column(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.start, children: [
+                    Text(title,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16, letterSpacing: -.2)),
+                    if (sub.isNotEmpty)
+                      Text(sub,
+                          maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 11.5, color: AppColors.soft)),
+                  ]),
+                ),
+                if (plus)
+                  GestureDetector(
+                    onTap: _addStop,
+                    child: const Padding(
+                      padding: EdgeInsets.all(4),
+                      child: Icon(Icons.add, size: 22, color: AppColors.soft),
+                    ),
+                  ),
+              ]),
+            ),
+          ),
         ),
       );
 
-  // ── vehicles ──
-  late Vehicle _vehicle = switch (widget.myVehicle) {
-    Vehicle.scooter => Vehicle.scooter,
-    Vehicle.moped => Vehicle.moped,
-    Vehicle.moto => Vehicle.moto,
-    _ => Vehicle.bike,
-  };
-
+  // ── vehicles (same tile as the sheets) ──
   double _secs(RouteResult r, Vehicle v) => switch (v) {
         Vehicle.bike || Vehicle.ebike => r.seconds,
         Vehicle.scooter => secondsFor(r.meters, 'scooter'),
         Vehicle.moped => secondsFor(r.meters, 'moped'),
         Vehicle.moto => secondsFor(r.meters, 'moto'),
       };
-  String _timeFor(RouteResult r, Vehicle v) => fmtMinutes(_secs(r, v) / 60);
-  String _arriveFor(RouteResult r, Vehicle v) => arrivalAt(_secs(r, v));
 
-  Widget _vehicleBar(RouteResult r) => Row(children: [
-        for (final v in const [Vehicle.bike, Vehicle.scooter, Vehicle.moped, Vehicle.moto])
-          Expanded(
-            child: GestureDetector(
-              onTap: () => setState(() => _vehicle = v),
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 180),
-                margin: const EdgeInsets.symmetric(horizontal: 2),
-                padding: const EdgeInsets.symmetric(vertical: 6),
-                decoration: BoxDecoration(
-                  color: _vehicle == v ? Colors.white : AppColors.paper,
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: _vehicle == v ? AppColors.ink : Colors.transparent, width: 1.8),
-                ),
-                child: Column(children: [
-                  SizedBox(height: 30, child: Image.asset(v.asset, fit: BoxFit.contain)),
-                  const SizedBox(height: 2),
-                  Text(_timeFor(r, v), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
-                  Text('arrive ${_arriveFor(r, v)}', style: const TextStyle(fontSize: 10, color: AppColors.soft, fontWeight: FontWeight.w700)),
-                ]),
-              ),
+  Place _tripPlace(RouteResult r) => Place(
+        id: 'trip',
+        type: PlaceType.rack,
+        address: '',
+        pos: _to,
+        status: Status.free,
+        distance: r.distance,
+        accepts: const [Vehicle.bike, Vehicle.scooter, Vehicle.moped, Vehicle.moto],
+        etaMin: {
+          for (final v in const [Vehicle.bike, Vehicle.scooter, Vehicle.moped, Vehicle.moto])
+            v: math.max(1, (_secs(r, v) / 60).round()),
+        },
+      );
+
+  // ── Fast / Balanced / Quiet: thin segmented control ──
+  Widget _segmented() => Container(
+        height: 36,
+        padding: const EdgeInsets.all(3),
+        decoration: BoxDecoration(color: const Color(0xFFEDF1F3), borderRadius: BorderRadius.circular(12)),
+        child: Row(children: [
+          for (final label in const ['Fast', 'Balanced', 'Quiet'])
+            Expanded(
+              child: Builder(builder: (_) {
+                final i = _routes.indexWhere((x) => x.label == label);
+                final on = i == _sel && i >= 0;
+                return GestureDetector(
+                  onTap: i < 0
+                      ? null
+                      : () {
+                          setState(() => _sel = i);
+                          _fit();
+                        },
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 180),
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: on ? Colors.white : Colors.transparent,
+                      borderRadius: BorderRadius.circular(9),
+                      boxShadow: on ? const [BoxShadow(color: Color(0x24131F2B), blurRadius: 4, offset: Offset(0, 1))] : null,
+                    ),
+                    child: Text(label,
+                        style: TextStyle(
+                            fontSize: 13.5,
+                            fontWeight: on ? FontWeight.w800 : FontWeight.w600,
+                            color: i < 0 ? const Color(0xFFB4BEC2) : (on ? AppColors.ink : AppColors.soft))),
+                  ),
+                );
+              }),
             ),
-          ),
-      ]);
+        ]),
+      );
 
-  // ── Fast / Balanced / Quiet: narrow pills with climb and descent ──
-  Widget _modeTile(String label) {
-    final i = _routes.indexWhere((x) => x.label == label);
-    final on = i == _sel && i >= 0;
-    final x = i >= 0 ? _routes[i] : null;
-    return GestureDetector(
-      onTap: x == null
-          ? null
-          : () {
-              setState(() => _sel = i);
-              _fit();
-            },
-      child: Opacity(
-        opacity: x == null ? 0.4 : 1,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 180),
-          margin: const EdgeInsets.symmetric(horizontal: 2),
-          padding: const EdgeInsets.symmetric(vertical: 5),
-          decoration: BoxDecoration(
-            color: on ? const Color(0xFFE6EEFB) : AppColors.paper,
-            borderRadius: BorderRadius.circular(14),
-            border: Border.all(color: on ? AppColors.blue : Colors.transparent, width: 1.8),
-          ),
-          child: Column(children: [
-            Text(label, style: TextStyle(fontWeight: FontWeight.w800, fontSize: 13, color: on ? AppColors.blue : AppColors.ink)),
-            Text(x == null ? '—' : '↗ ${x.climb} · ↘ ${(x.climb * 0.9).round()} m',
-                style: const TextStyle(fontSize: 10.5, color: AppColors.soft, fontWeight: FontWeight.w700)),
-          ]),
-        ),
-      ),
-    );
-  }
-
-  // ── Parking near the destination (expandable) ──
+  // ── Parking near the destination ──
   bool _nearOpen = false;
   bool _sumOpen = false;
 
@@ -442,14 +466,13 @@ class _RoutePlannerState extends State<RoutePlanner> {
     return list.take(8).toList();
   }
 
-  Widget _cardHead(IconData icon, String title, bool open, VoidCallback onTap, {String? count}) => InkWell(
+  bool _hasBikeRoad(RouteResult r) => (_roadMix(r)['Protected lanes'] ?? 0) + (_roadMix(r)['Bike lanes'] ?? 0) > 0.05;
+
+  Widget _cardHead(Widget left, bool open, VoidCallback onTap, {Widget? extra}) => InkWell(
         onTap: onTap,
         child: Row(children: [
-          Icon(icon, size: 17, color: AppColors.soft),
-          const SizedBox(width: 6),
-          Text(title, style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.soft)),
-          if (count != null) Text('  ($count)', style: const TextStyle(color: AppColors.soft)),
-          const Spacer(),
+          Expanded(child: left),
+          if (extra != null) ...[extra, const SizedBox(width: 6)],
           AnimatedRotation(
             turns: open ? 0.5 : 0,
             duration: const Duration(milliseconds: 200),
@@ -458,47 +481,51 @@ class _RoutePlannerState extends State<RoutePlanner> {
         ]),
       );
 
-  Widget _nearCard() {
+  Widget _nearCard(RouteResult r) {
     final near = _nearDest;
     const d = Distance();
     Widget dotted() => Expanded(
-          child: Container(
-            height: 2,
-            margin: const EdgeInsets.symmetric(horizontal: 4),
-            decoration: const BoxDecoration(
-              border: Border(top: BorderSide(color: Color(0xFFAAB6BB), width: 2, style: BorderStyle.solid)),
-            ),
-            child: Row(children: [
-              for (int i = 0; i < 12; i++) Expanded(child: Container(color: i.isEven ? Colors.transparent : AppColors.paper)),
-            ]),
-          ),
-        );
-    Widget sq(Widget child, Color bg) => Container(
-          width: 30,
-          height: 30,
-          margin: const EdgeInsets.symmetric(horizontal: 2),
-          decoration: BoxDecoration(
-            color: bg,
-            borderRadius: BorderRadius.circular(9),
-            border: Border.all(color: Colors.white, width: 1.5),
-            boxShadow: const [BoxShadow(color: Color(0x33000000), blurRadius: 3, offset: Offset(0, 1))],
-          ),
-          child: Center(child: child),
+          child: LayoutBuilder(builder: (_, c) {
+            final n = (c.maxWidth / 6).floor().clamp(1, 60);
+            return Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              for (int i = 0; i < n; i++)
+                Container(width: 2.5, height: 2.5, decoration: const BoxDecoration(color: Color(0xFFAAB6BB), shape: BoxShape.circle)),
+            ]);
+          }),
         );
     return _softCard(
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        _cardHead(Icons.local_parking_rounded, 'Parking near destination', _nearOpen,
-            () => setState(() => _nearOpen = !_nearOpen),
-            count: '${near.length}'),
+        _cardHead(
+          Row(children: [
+            const Icon(Icons.local_parking_rounded, size: 16, color: AppColors.soft),
+            const SizedBox(width: 6),
+            Flexible(
+              child: Text('Parking near destination (${near.length})',
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.soft, fontSize: 13)),
+            ),
+          ]),
+          _nearOpen,
+          () => setState(() => _nearOpen = !_nearOpen),
+          extra: _hasBikeRoad(r) ? const BikeRoadIcon(size: 18) : null,
+        ),
         const SizedBox(height: 8),
         if (!_nearOpen)
           Row(children: [
-            sq(const Icon(Icons.route, size: 17, color: AppColors.soft), const Color(0xFFE3E8EA)),
+            Container(
+              width: 24,
+              height: 24,
+              decoration: BoxDecoration(color: const Color(0xFFE3E8EA), borderRadius: BorderRadius.circular(7)),
+              child: const Icon(Icons.route, size: 15, color: AppColors.soft),
+            ),
             dotted(),
             for (final p in near.take(5))
-              sq(Glyph(p.type, size: 17, color: Colors.white), colorsFor(p.shownStatus).main),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 3),
+                child: Glyph(p.type, size: 22, color: colorsFor(p.shownStatus).main),
+              ),
             if (near.isNotEmpty) dotted(),
-            sq(const Icon(Icons.flag_rounded, size: 17, color: AppColors.red), AppColors.redTint),
+            const DestinationPinIcon(size: 22),
           ])
         else if (near.isEmpty)
           const Text('No bike parking within 300 m of the destination.', style: TextStyle(color: AppColors.soft))
@@ -515,8 +542,8 @@ class _RoutePlannerState extends State<RoutePlanner> {
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 4),
                 child: Row(children: [
-                  sq(Glyph(p.type, size: 17, color: Colors.white), colorsFor(p.shownStatus).main),
-                  const SizedBox(width: 8),
+                  Glyph(p.type, size: 24, color: colorsFor(p.shownStatus).main),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                       Text(p.address,
@@ -528,7 +555,6 @@ class _RoutePlannerState extends State<RoutePlanner> {
                       ),
                     ]),
                   ),
-                  const Icon(Icons.chevron_right, color: AppColors.soft),
                 ]),
               ),
             ),
@@ -536,30 +562,49 @@ class _RoutePlannerState extends State<RoutePlanner> {
     );
   }
 
-  // ── Trip summary (expandable): time, road types and the weather on the way ──
+  // ── Trip summary: weather on top, the colour band, then "Trip summary · ↗ climb · ↘ descent" ──
+  static const _mixColors = {
+    'Protected lanes': AppColors.green,
+    'Quiet streets': Color(0xFF8CC063),
+    'Bike lanes': AppColors.yellow,
+    'Shared roads': Color(0xFFF08A3C),
+    'Main roads': AppColors.red,
+  };
+
   Widget _summaryCard(RouteResult r) {
     final mix = _roadMix(r);
-    const colors = {
-      'Protected lanes': AppColors.green,
-      'Quiet streets': Color(0xFF8CC063),
-      'Bike lanes': AppColors.yellow,
-      'Shared roads': Color(0xFFF08A3C),
-      'Main roads': AppColors.red,
-    };
     final w = _wx;
     return _softCard(
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        _cardHead(Icons.schedule, 'Trip summary', _sumOpen, () => setState(() => _sumOpen = !_sumOpen)),
-        const SizedBox(height: 6),
-        Row(crossAxisAlignment: CrossAxisAlignment.baseline, textBaseline: TextBaseline.alphabetic, children: [
-          Text(_timeFor(r, _vehicle), style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w900)),
-          const SizedBox(width: 8),
-          Text('arrive ${_arriveFor(r, _vehicle)}', style: const TextStyle(color: AppColors.soft, fontWeight: FontWeight.w700)),
-        ]),
-        Text('${r.distance} with your ${_vehicle.label.toLowerCase()}',
-            style: const TextStyle(color: AppColors.soft, fontWeight: FontWeight.w600)),
-        if (_sumOpen) ...[
-          const SizedBox(height: 10),
+        _cardHead(
+          w == null
+              ? const Text('Weather loading…', style: TextStyle(color: AppColors.soft, fontSize: 12.5))
+              : Wrap(spacing: 10, children: [
+                  _wxItem(_skyIcon(w), w.sky),
+                  _wxItem(null, '${w.temp.round()}°C'),
+                  _wxItem(Icons.air, '${w.wind.round()} km/h'),
+                  if (w.humidity != null) _wxItem(Icons.water_drop_outlined, '${w.humidity}%'),
+                ]),
+          _sumOpen,
+          () => setState(() => _sumOpen = !_sumOpen),
+        ),
+        const SizedBox(height: 8),
+        if (!_sumOpen)
+          ClipRRect(
+            borderRadius: BorderRadius.circular(4),
+            child: SizedBox(
+              height: 8,
+              child: Row(children: [
+                for (final e in mix.entries)
+                  if (e.value > 0)
+                    Expanded(
+                      flex: math.max(1, (e.value * 1000).round()),
+                      child: AnimatedContainer(duration: const Duration(milliseconds: 400), color: _mixColors[e.key]),
+                    ),
+              ]),
+            ),
+          )
+        else
           for (final e in mix.entries)
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 2.5),
@@ -572,7 +617,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
                       value: e.value,
                       minHeight: 6,
                       backgroundColor: const Color(0xFFE3E8EA),
-                      color: colors[e.key],
+                      color: _mixColors[e.key],
                     ),
                   ),
                 ),
@@ -583,24 +628,20 @@ class _RoutePlannerState extends State<RoutePlanner> {
                 ),
               ]),
             ),
-          if (w != null) ...[
-            const SizedBox(height: 8),
-            Wrap(spacing: 14, runSpacing: 4, children: [
-              _wxItem(_skyIcon(w), w.sky),
-              _wxItem(Icons.thermostat, '${w.temp.round()}°'),
-              _wxItem(Icons.air, '${w.wind.round()} km/h ${w.windFrom}'),
-              if (w.humidity != null) _wxItem(Icons.water_drop_outlined, '${w.humidity}%'),
-            ]),
-          ],
-        ],
+        const SizedBox(height: 8),
+        Row(children: [
+          const Icon(Icons.route, size: 15, color: AppColors.soft),
+          const SizedBox(width: 6),
+          const Text('Trip summary · ', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.soft, fontSize: 13)),
+          Text('↗ ${r.climb} m · ↘ ${r.descent} m', style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 13)),
+        ]),
       ]),
     );
   }
 
-  Widget _wxItem(IconData i, String t) => Row(mainAxisSize: MainAxisSize.min, children: [
-        Icon(i, size: 16, color: AppColors.soft),
-        const SizedBox(width: 4),
-        Text(t, style: const TextStyle(fontWeight: FontWeight.w700)),
+  Widget _wxItem(IconData? i, String t) => Row(mainAxisSize: MainAxisSize.min, children: [
+        if (i != null) ...[Icon(i, size: 15, color: AppColors.soft), const SizedBox(width: 3)],
+        Text(t, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 12.5)),
       ]);
 
   IconData _skyIcon(Weather w) => switch (w.sky) {
@@ -611,21 +652,21 @@ class _RoutePlannerState extends State<RoutePlanner> {
         _ => Icons.wb_cloudy_outlined,
       };
 
-  // ── bottom buttons: small round ones + GO ──
+  // ── bottom buttons ──
   Widget _roundBtn(IconData i, VoidCallback onTap, {Color color = AppColors.ink}) => Material(
         color: Colors.white,
         shape: const CircleBorder(side: BorderSide(color: Color(0xFFD5DDDF), width: 1.5)),
         child: InkWell(
           customBorder: const CircleBorder(),
           onTap: onTap,
-          child: SizedBox(width: 46, height: 46, child: Icon(i, size: 21, color: color)),
+          child: SizedBox(width: 44, height: 44, child: Icon(i, size: 20, color: color)),
         ),
       );
 
   Widget _goButton(RouteResult r) => DecoratedBox(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(23),
-          boxShadow: [BoxShadow(color: AppColors.blue.withValues(alpha: 0.35), blurRadius: 12, offset: const Offset(0, 4))],
+          borderRadius: BorderRadius.circular(22),
+          boxShadow: [BoxShadow(color: AppColors.blue.withValues(alpha: 0.3), blurRadius: 10, offset: const Offset(0, 3))],
         ),
         child: FilledButton.icon(
           onPressed: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
@@ -636,18 +677,18 @@ class _RoutePlannerState extends State<RoutePlanner> {
               place: widget.place,
               nearby: widget.nearby,
               suggestRack: _rack,
+              destParking: _nearDest,
             ),
           )),
           style: FilledButton.styleFrom(
             backgroundColor: AppColors.blue,
-            minimumSize: const Size.fromHeight(46),
+            minimumSize: const Size.fromHeight(44),
             shape: const StadiumBorder(),
           ),
-          icon: const Icon(Icons.navigation_rounded, size: 20),
-          label: const Text('GO', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900, letterSpacing: 1)),
+          icon: const Icon(Icons.navigation_rounded, size: 18),
+          label: const Text('GO', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900, letterSpacing: 1)),
         ),
       );
-
 
   // Tap a box: type the place again (or pick "My location").
   Future<(String, LatLng)?> _pick(String hint, {bool allowMine = false}) => showModalBottomSheet<(String, LatLng)>(
@@ -715,30 +756,6 @@ class _RoutePlannerState extends State<RoutePlanner> {
     return {for (final e in m.entries) e.key: e.value / total};
   }
 
-  Widget _windChip(RouteResult r) {
-    final w = _wx!;
-    final dir = bearing(r.points.first, r.points.last);
-    // wind blows FROM windDir; riding towards dir: head wind if they point the same way
-    final diff = ((w.windDir - dir + 540) % 360) - 180;
-    final head = diff.abs() < 60;
-    final tail = diff.abs() > 120;
-    final txt = head ? 'Head wind' : (tail ? 'Tail wind' : 'Side wind');
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      decoration: BoxDecoration(
-        color: head ? AppColors.yellowTint : AppColors.greenTint,
-        borderRadius: BorderRadius.circular(16),
-        boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 6, offset: Offset(0, 2))],
-      ),
-      child: Row(mainAxisSize: MainAxisSize.min, children: [
-        Icon(Icons.air, size: 16, color: head ? AppColors.yellowDark : AppColors.greenDark),
-        const SizedBox(width: 5),
-        Text('$txt · ${w.wind.round()} km/h',
-            style: TextStyle(fontWeight: FontWeight.w800, color: head ? AppColors.yellowDark : AppColors.greenDark)),
-      ]),
-    );
-  }
-
   void _moreInfo(RouteResult r) {
     final mix = _roadMix(r);
     final lights = r.steps.where((s) => s.text.startsWith('Turn')).length;
@@ -783,6 +800,7 @@ class GuidanceScreen extends StatefulWidget {
   final Place? place;
   final List<Place> nearby;
   final Place? suggestRack; // a rack near an address destination (shown again on arrival)
+  final List<Place> destParking; // parking around the destination, shown when 500 m are left
   const GuidanceScreen({
     super.key,
     required this.route,
@@ -791,6 +809,7 @@ class GuidanceScreen extends StatefulWidget {
     this.place,
     this.nearby = const [],
     this.suggestRack,
+    this.destParking = const [],
   });
 
   @override
@@ -805,6 +824,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
   late Place? _place = widget.place;
   List<LatLng> _walk = const []; // dotted walking line to the suggested rack
   bool _showRackCard = false;
+  bool _nearHidden = false; // the rider swiped the parking card away
   Place? _statsPlace; // shown selected behind the Stats veil
   static const _zoom = 18.4; // close to the street, but not all the way in
   late LatLng _pos = userPos;
@@ -981,8 +1001,11 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
   }
 
   // From the address, ride the last metres to the suggested rack (Stats appear there).
-  Future<void> _rideToRack() async {
-    final rack = widget.suggestRack!;
+  Future<void> _rideToRack() => _rideTo(widget.suggestRack!);
+
+  Future<void> _rideTo(Place rack) async {
+    final wasArrived = _arrived;
+    _sim?.cancel();
     final r = await bikeRoute([_pos, rack.pos]);
     if (!mounted) return;
     setState(() {
@@ -994,9 +1017,92 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
       _along = 0;
       _arrived = false;
       _follow = true;
+      _nearHidden = true;
+      _simulating = false;
     });
-    _startGps();
+    if (wasArrived) _startGps();
     if (kIsWeb) _toggleSim();
+  }
+
+  // ── parking near the destination: appears when about 500 m are left ──
+  Widget _nearCard(double remaining) {
+    final list = widget.destParking;
+    Widget dotted() => Expanded(
+          child: LayoutBuilder(builder: (_, c) {
+            final n = (c.maxWidth / 6).floor().clamp(1, 40);
+            return Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              for (int i = 0; i < n; i++)
+                Container(width: 2.5, height: 2.5, decoration: const BoxDecoration(color: Color(0xFFAAB6BB), shape: BoxShape.circle)),
+            ]);
+          }),
+        );
+    return Dismissible(
+      key: const ValueKey('nearDest'),
+      direction: DismissDirection.down,
+      onDismissed: (_) => setState(() => _nearHidden = true),
+      child: Material(
+        color: Colors.white,
+        elevation: 6,
+        shadowColor: const Color(0x33000000),
+        borderRadius: BorderRadius.circular(16),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap: () => _pickParking(list),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(10, 9, 10, 9),
+            child: Row(children: [
+              Container(
+                width: 24,
+                height: 24,
+                decoration: BoxDecoration(color: const Color(0xFFE3E8EA), borderRadius: BorderRadius.circular(7)),
+                child: const Icon(Icons.route, size: 15, color: AppColors.soft),
+              ),
+              dotted(),
+              for (final p in list.take(4))
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 3),
+                  child: Glyph(p.type, size: 22, color: colorsFor(p.shownStatus).main),
+                ),
+              dotted(),
+              const DestinationPinIcon(size: 22),
+              const SizedBox(width: 8),
+              Text(fmtDistance(remaining), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 14)),
+              const SizedBox(width: 6),
+              const BikeRoadIcon(size: 18),
+            ]),
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _pickParking(List<Place> list) {
+    const d = Distance();
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.white,
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
+      builder: (c) => SafeArea(
+        child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
+          const Padding(
+            padding: EdgeInsets.fromLTRB(18, 16, 18, 6),
+            child: Text('Parking near destination', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900)),
+          ),
+          for (final p in list)
+            ListTile(
+              leading: Glyph(p.type, size: 26, color: colorsFor(p.shownStatus).main),
+              title: Text(p.address, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w800)),
+              subtitle: Text('${d(widget.to, p.pos).round()} m from the destination · '
+                  '${p.shownStatus == Status.full ? 'full' : '${p.count ?? '—'} free'}'),
+              onTap: () {
+                Navigator.pop(c);
+                _rideTo(p);
+              },
+            ),
+          const SizedBox(height: 8),
+        ]),
+      ),
+    );
   }
 
   Widget _rackCard() {
@@ -1290,6 +1396,8 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
             ]),
           ),
         ),
+        if (!_arrived && !_nearHidden && widget.destParking.isNotEmpty && remaining <= 500)
+          Positioned(left: 10, right: 10, bottom: 158, child: _nearCard(remaining)),
         if (_showRackCard)
           Positioned(left: 10, right: 10, bottom: 14, child: SafeArea(top: false, child: _rackCard())),
       ]),

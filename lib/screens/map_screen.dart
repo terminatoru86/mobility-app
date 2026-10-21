@@ -395,6 +395,31 @@ class MapScreenState extends State<MapScreen> {
                 borderStrokeWidth: 2,
               ),
             ]),
+          if (store.incomingSos != null)
+            CircleLayer(circles: [
+              CircleMarker(
+                point: store.incomingSos!.pos,
+                radius: 220, // approximate area
+                useRadiusInMeter: true,
+                color: AppColors.red.withValues(alpha: 0.14),
+                borderColor: AppColors.red.withValues(alpha: 0.6),
+                borderStrokeWidth: 1.5,
+              ),
+              CircleMarker(point: store.incomingSos!.pos, radius: 7, color: AppColors.red, borderColor: Colors.white, borderStrokeWidth: 2.5),
+            ]),
+          if (store.sosActive && store.sosHelper != null) ...[
+            PolylineLayer(polylines: [
+              Polyline(
+                points: [store.sosHelper!.pos, userPos],
+                strokeWidth: 4,
+                color: AppColors.green,
+                pattern: const StrokePattern.dotted(spacingFactor: 2),
+              ),
+            ]),
+            CircleLayer(circles: [
+              CircleMarker(point: store.sosHelper!.pos, radius: 8, color: AppColors.green, borderColor: Colors.white, borderStrokeWidth: 3),
+            ]),
+          ],
           if (_destWalk.length > 1)
             PolylineLayer(polylines: [
               Polyline(
@@ -488,6 +513,22 @@ class MapScreenState extends State<MapScreen> {
           ]),
         ),
       Positioned(left: 14, bottom: _dest != null ? (_destRack != null ? 166 : 118) : 30, child: _sosButton()),
+      if (store.incomingSos != null && _dest == null)
+        Positioned(
+          left: 12,
+          right: 12,
+          bottom: 140,
+          child: SosNote(
+            sos: store.incomingSos!,
+            onHelp: () {
+              final s = store.incomingSos!;
+              store.dismissIncomingSos();
+              startTrip(context, to: s.pos, toName: 'SOS · rider in need', myVehicle: widget.state.myVehicle);
+            },
+          ),
+        ),
+      if (store.sosActive && store.sosHelper != null && _dest == null)
+        Positioned(left: 12, right: 12, bottom: 140, child: SosHelperCard(helper: store.sosHelper!)),
       const Positioned(
         right: 4,
         bottom: 2,
@@ -526,7 +567,7 @@ class MapScreenState extends State<MapScreen> {
       onPointerCancel: (_) => _sosUp(),
       child: GestureDetector(
       onTap: active ? Store.i.cancelSos : null,
-      child: Stack(alignment: Alignment.center, children: [
+      child: Stack(clipBehavior: Clip.none, alignment: Alignment.center, children: [
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 12),
           decoration: BoxDecoration(
@@ -544,6 +585,22 @@ class MapScreenState extends State<MapScreen> {
             ],
           ]),
         ),
+        if (Store.i.incomingSos != null && !active)
+          Positioned(
+            right: -4,
+            top: -6,
+            child: Container(
+              width: 20,
+              height: 20,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle,
+                border: Border.all(color: AppColors.red, width: 2),
+              ),
+              child: const Text('1', style: TextStyle(color: AppColors.red, fontWeight: FontWeight.w900, fontSize: 11)),
+            ),
+          ),
         if (_sosProgress > 0)
           Positioned(
             left: 4,

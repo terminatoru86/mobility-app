@@ -25,11 +25,11 @@ enum Vehicle { bike, ebike, scooter, moped, moto }
 
 extension VehicleX on Vehicle {
   String get asset => switch (this) {
-        Vehicle.bike => 'assets/vehicles/bike.jpg',
-        Vehicle.ebike => 'assets/vehicles/ebike.jpg',
-        Vehicle.scooter => 'assets/vehicles/scooter.jpg',
-        Vehicle.moped => 'assets/vehicles/moped.jpg',
-        Vehicle.moto => 'assets/vehicles/moto.jpg',
+        Vehicle.bike => 'assets/vehicles/bike.png',
+        Vehicle.ebike => 'assets/vehicles/ebike.png',
+        Vehicle.scooter => 'assets/vehicles/scooter.png',
+        Vehicle.moped => 'assets/vehicles/moped.png',
+        Vehicle.moto => 'assets/vehicles/moto.png',
       };
   String get label => switch (this) {
         Vehicle.bike => 'Bike',

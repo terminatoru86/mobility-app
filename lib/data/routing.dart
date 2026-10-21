@@ -27,7 +27,10 @@ class RouteResult {
   String get arrival => arrivalAt(seconds);
 
   /// Rough climb in metres (no elevation service yet): about 6 m per km on Chicago's flat streets.
-  int get climb => (meters / 1000 * 6).round();
+  /// Quieter routes avoid the bridges and overpasses a little more.
+  double get _hill => switch (label) { 'Quiet' => 0.75, 'Balanced' => 0.88, _ => 1.0 };
+  int get climb => (meters / 1000 * 6 * _hill).round();
+  int get descent => (meters / 1000 * 5.4 * _hill).round();
 }
 
 String fmtDistance(double m) => m < 1000 ? '${(m / 10).round() * 10} m' : '${(m / 1000).toStringAsFixed(1)} km';
