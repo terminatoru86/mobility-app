@@ -186,8 +186,8 @@ Place? placeFromOsm(Map<String, dynamic> e) {
       type = PlaceType.charging;
     case 'bicycle_rental':
       final b = (brand ?? '').toLowerCase();
-      if (const ['divvy', 'lime', 'bird', 'veo', 'spin', 'citi', 'bay wheels', 'capital bikeshare']
-          .any(b.contains)) {
+      if (tag('bicycle_rental') == 'docking_station' ||
+          const ['divvy', 'lime', 'bird', 'veo', 'spin', 'citi', 'bay wheels', 'capital bikeshare'].any(b.contains)) {
         type = PlaceType.sharing;
         operatorName = brand;
       } else {

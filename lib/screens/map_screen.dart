@@ -171,7 +171,8 @@ class MapScreenState extends State<MapScreen> {
     for (final p in _open.cityRacks.values) {
       var dup = false;
       if (p.type.group != 'Parking') {
-        out.add(p);
+        // national bikeshare list only where no live feed is loaded
+        if (p.type != PlaceType.sharing || _open.sharing.isEmpty) out.add(p);
         continue;
       }
       for (final dy in const [-1, 0, 1]) {

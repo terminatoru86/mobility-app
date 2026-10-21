@@ -20,10 +20,22 @@ class CitySource {
   final String? arcgis; // FeatureServer / MapServer layer URL
   final String? where; // ArcGIS filter (falls back to all rows if the server refuses it)
   final String amenity; // what the list holds, as in OpenStreetMap
+  final String? hubItem; // ArcGIS Online item id: its service address is looked up when needed
+  final int layer; // layer of that item's service
+  final bool national; // covers the whole US: only the part around the map is asked for
+  final String level; // 'city', 'county', 'campus', 'region', 'state', 'national'
   const CitySource(this.key, this.city, this.label, this.s, this.w, this.n, this.e,
-      {this.socrata, this.arcgis, this.where, this.amenity = 'bicycle_parking'});
+      {this.socrata,
+      this.arcgis,
+      this.where,
+      this.amenity = 'bicycle_parking',
+      this.hubItem,
+      this.layer = 0,
+      this.national = false,
+      this.level = 'city'});
 
   bool near(LatLng p, [double margin = 0.25]) =>
+      national ||
       p.latitude >= s - margin && p.latitude <= n + margin && p.longitude >= w - margin && p.longitude <= e + margin;
 }
 
@@ -57,6 +69,33 @@ const kCitySources = [
       socrata: 'data.honolulu.gov/ab7c-s2jr'),
   CitySource('atx-fixit', 'Austin', 'City of Austin · Bike Fix-It stations', 30.10, -97.94, 30.52, -97.56,
       socrata: 'data.austintexas.gov/cvnz-fq2z', amenity: 'bicycle_repair_station'),
+  // ── added Oct 21 2026: more cities, counties, campuses, national ──
+  CitySource('la', 'Los Angeles', 'City of Los Angeles · bike racks', 33.70, -118.67, 34.34, -118.15,
+      hubItem: '3b022cced9704108af157d3d5eedb268', layer: 2),
+  CitySource('det', 'Detroit', 'City of Detroit · bike parking (Detroit Greenways Coalition)', 42.25, -83.29, 42.45, -82.91,
+      hubItem: '88f5f270fbf64e818dc391e143cd96ab'),
+  CitySource('det-fix', 'Detroit', 'Detroit Greenways Coalition · bike repair stations', 42.25, -83.29, 42.45, -82.91,
+      hubItem: '3e586ac317bc4c4a829bc789ea599c36', layer: 1, amenity: 'bicycle_repair_station'),
+  CitySource('lnk', 'Lincoln NE', 'City of Lincoln · bike racks', 40.71, -96.82, 40.90, -96.58,
+      hubItem: '642f7cf1c3cd45b4979992de6d4bfa7c'),
+  CitySource('livermore', 'Livermore CA', 'City of Livermore · public bike racks', 37.64, -121.84, 37.73, -121.69,
+      hubItem: '6fbac05278b9406e921932d6724803d7'),
+  CitySource('gso', 'Greensboro NC', 'Greensboro DOT · bike racks', 35.98, -79.95, 36.17, -79.67,
+      arcgis: 'https://gis.greensboro-nc.gov/arcgis/rest/services/Transportation/BIPed_Inventory_MS/MapServer/1'),
+  CitySource('mono', 'Mono County CA', 'Mono County · bike racks', 37.46, -119.65, 38.71, -117.83,
+      arcgis: 'https://gis.mono.ca.gov/webgis/rest/services/OpenData/FacilitiesInfrastructure/MapServer/3', level: 'county'),
+  CitySource('ufl', 'Gainesville FL', 'University of Florida · bike racks', 29.62, -82.38, 29.66, -82.33,
+      arcgis: 'https://gis.ufl.edu/campusserver/rest/services/Bike_Rack_Locations/MapServer/0', level: 'campus'),
+  CitySource('ncsu', 'Raleigh NC', 'NC State University · bike racks', 35.76, -78.70, 35.80, -78.65,
+      arcgis: 'https://gismaps.oit.ncsu.edu/arcgis/rest/services/Transportation/Transportation_BikeRacks/MapServer/0',
+      level: 'campus'),
+  CitySource('cornell', 'Ithaca NY', 'Cornell University · bike racks', 42.43, -76.50, 42.46, -76.46,
+      arcgis: 'https://gis.fcs.cornell.edu/arcgis/rest/services/Production/Landscape_Features/MapServer/2', level: 'campus'),
+  CitySource('usu', 'Logan UT', 'Utah State University · bike racks', 41.73, -111.83, 41.76, -111.80,
+      arcgis: 'https://facpdcws.aggies.usu.edu/server/rest/services/Bikes/Bike_Racks/MapServer/0', level: 'campus'),
+  CitySource('ntad-bikeshare', 'USA', 'USDOT BTS · bikeshare docking stations (NTAD)', 24, -125, 50, -66,
+      arcgis: 'https://geo.dot.gov/server/rest/services/Hosted/Bikeshare_DS/FeatureServer/0',
+      amenity: 'bicycle_rental', national: true, level: 'national'),
   CitySource('carmel', 'Carmel IN', 'City of Carmel · bike racks', 39.92, -86.24, 40.03, -86.04,
       arcgis: 'https://carmelgis.carmel.in.gov/arcserver/rest/services/DOCS/Bike_Racks/FeatureServer/0'),
 ];
@@ -102,11 +141,15 @@ class OpenDataService {
   Future<bool> loadCitiesAround(LatLng at) async {
     var changed = false;
     for (final src in kCitySources) {
-      if (!src.near(at) || _tried.contains(src.key)) continue;
-      _tried.add(src.key);
-      final els = await _cached(src) ?? await _download(src);
+      if (!src.near(at)) continue;
+      // national lists: one piece of ~45 x 45 km around the map at a time
+      final cell = src.national ? '@${(at.latitude / 0.4).floor()}:${(at.longitude / 0.4).floor()}' : '';
+      final key = '${src.key}$cell';
+      if (_tried.contains(key)) continue;
+      _tried.add(key);
+      final els = await _cached(key) ?? await _download(src, key, src.national ? at : null);
       if (els == null || els.isEmpty) continue;
-      _raw[src.key] = els;
+      _raw[key] = els;
       _addCity(els);
       changed = true;
       debugPrint('City data ${src.key}: ${els.length} racks');
@@ -134,10 +177,10 @@ class OpenDataService {
     }
   }
 
-  Future<List<Map<String, dynamic>>?> _cached(CitySource src) async {
+  Future<List<Map<String, dynamic>>?> _cached(String key) async {
     try {
       final p = await SharedPreferences.getInstance();
-      final s = p.getString('city_${src.key}');
+      final s = p.getString('city_$key');
       if (s == null) return null;
       final j = jsonDecode(s) as Map<String, dynamic>;
       final at = DateTime.fromMillisecondsSinceEpoch(j['at'] as int);
@@ -148,10 +191,15 @@ class OpenDataService {
     }
   }
 
-  Future<List<Map<String, dynamic>>?> _download(CitySource src) async {
+  Future<List<Map<String, dynamic>>?> _download(CitySource src, String key, LatLng? around) async {
     List<Map<String, dynamic>>? els;
     try {
-      els = src.socrata != null ? await _socrata(src) : await _arcgis(src);
+      if (src.socrata != null) {
+        els = await _socrata(src);
+      } else {
+        final url = src.arcgis ?? await _itemService(src);
+        if (url != null) els = await _arcgis(src, url, around);
+      }
     } catch (err) {
       lastError = 'no connection to ${src.city} open data';
       debugPrint('City data ${src.key} failed: $err');
@@ -159,7 +207,7 @@ class OpenDataService {
     if (els == null || els.isEmpty) return els;
     try {
       final s = jsonEncode({'at': DateTime.now().millisecondsSinceEpoch, 'els': els});
-      if (s.length <= _maxCache) await (await SharedPreferences.getInstance()).setString('city_${src.key}', s);
+      if (s.length <= _maxCache) await (await SharedPreferences.getInstance()).setString('city_$key', s);
     } catch (_) {}
     return els;
   }
@@ -187,13 +235,32 @@ class OpenDataService {
     return out;
   }
 
+  /// The service address of an ArcGIS Online item (public items only).
+  Future<String?> _itemService(CitySource src) async {
+    if (src.hubItem == null) return null;
+    final r = await http
+        .get(Uri.parse('https://www.arcgis.com/sharing/rest/content/items/${src.hubItem}?f=json'))
+        .timeout(const Duration(seconds: 20));
+    final url = (jsonDecode(r.body) as Map<String, dynamic>)['url'] as String?;
+    if (url == null || url.isEmpty) return null;
+    final u = url.replaceAll(RegExp(r'/+$'), '');
+    return RegExp(r'(FeatureServer|MapServer)$').hasMatch(u) ? '$u/${src.layer}' : u;
+  }
+
   /// ArcGIS REST (FeatureServer or MapServer): plain JSON in WGS84, page by page.
-  Future<List<Map<String, dynamic>>> _arcgis(CitySource src) async {
+  /// [around]: for national layers, only a box of about 45 x 45 km around that point.
+  Future<List<Map<String, dynamic>>> _arcgis(CitySource src, String url, LatLng? around) async {
     final out = <Map<String, dynamic>>[];
     var where = src.where ?? '1=1';
     var offset = 0, n = 0;
     for (int page = 0; page < 60; page++) {
-      final uri = Uri.parse('${src.arcgis}/query').replace(queryParameters: {
+      final uri = Uri.parse('$url/query').replace(queryParameters: {
+        if (around != null) ...{
+          'geometry': '${around.longitude - 0.25},${around.latitude - 0.2},${around.longitude + 0.25},${around.latitude + 0.2}',
+          'geometryType': 'esriGeometryEnvelope',
+          'inSR': '4326',
+          'spatialRel': 'esriSpatialRelIntersects',
+        },
         'where': where,
         'outFields': '*',
         'outSR': '4326',
@@ -270,6 +337,8 @@ class OpenDataService {
         if (address != null) 'addr:street': _title(address),
         if (covered == 'yes' || covered == 'y' || covered == 'true') 'covered': 'yes',
         if (src.amenity == 'bicycle_parking') 'fee': 'no',
+        if (src.amenity == 'bicycle_rental') 'bicycle_rental': 'docking_station',
+        if (src.amenity == 'bicycle_rental') 'network': pick((k) => k.contains('system') || k.contains('network') || k.contains('operator')) ?? 'Bikeshare',
         'source': src.label,
         if (year != null && RegExp(r'^(19|20)\d\d').hasMatch(year)) 'installed': year.substring(0, 4),
       },
