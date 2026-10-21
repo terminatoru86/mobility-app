@@ -168,7 +168,7 @@ class MapScreenState extends State<MapScreen> {
     _areaTimer?.cancel();
     _areaTimer = Timer(const Duration(milliseconds: 120), () {
       if (!mounted) return;
-      final dLat = (v.north - v.south) * 0.5, dLng = (v.east - v.west) * 0.5;
+      final dLat = (v.north - v.south) * 0.3, dLng = (v.east - v.west) * 0.3;
       setState(() => _area = LatLngBounds(
             LatLng(v.south - dLat, v.west - dLng),
             LatLng(v.north + dLat, v.east + dLng),
@@ -419,8 +419,14 @@ class MapScreenState extends State<MapScreen> {
     );
   }
 
+  bool _loadAgain = false; // the map moved while loading: load the new place right after
+
   Future<void> _loadVisible() async {
-    if (!mounted || _loading) return;
+    if (!mounted) return;
+    if (_loading) {
+      _loadAgain = true;
+      return;
+    }
     MapCamera? cam;
     try {
       cam = _map.camera;
@@ -428,15 +434,28 @@ class MapScreenState extends State<MapScreen> {
       cam = null; // map not ready yet
     }
     if (cam == null) return;
-    if (cam.zoom < 12) return; // too far out: we show what we already have
     if (Store.i.zones.isNotEmpty && !Store.i.unlockedAt(cam.center)) return; // locked area
-    final b = cam.visibleBounds;
+    // always the whole ring (so every place inside it is there), plus the screen when zoomed in
+    final rc = _ringCenter ?? cam.center;
+    final rLat = kRingMiles * 1.609 / 111.2, rLng = rLat / math.cos(rc.latitude * math.pi / 180);
+    var s0 = rc.latitude - rLat, w0 = rc.longitude - rLng, n0 = rc.latitude + rLat, e0 = rc.longitude + rLng;
+    if (cam.zoom >= 12) {
+      final v = cam.visibleBounds;
+      s0 = math.min(s0, v.south);
+      w0 = math.min(w0, v.west);
+      n0 = math.max(n0, v.north);
+      e0 = math.max(e0, v.east);
+    }
     setState(() => _loading = true);
     _loadOpenData(cam.center);
-    final changed = await _osm.loadArea(b.south, b.west, b.north, b.east);
+    final changed = await _osm.loadArea(s0, w0, n0, e0);
     if (!mounted) return;
     setState(() => _loading = false);
     if (changed) setState(() => _merged = _allCache = null);
+    if (_loadAgain) {
+      _loadAgain = false;
+      _loadVisible();
+    }
   }
 
   Future<void> openPlace(Place p) => _openPlace(p);
@@ -461,7 +480,7 @@ class MapScreenState extends State<MapScreen> {
   }
 
   /// Radius of the ring in the middle of the map: inside it our pins (and groups where they overlap), outside light dots.
-  static const kRingMiles = 7.0;
+  static const kRingMiles = 3.0; // 6 miles across
 
   /// The ring follows the middle of the map: what comes in on one side becomes pins/groups,
   /// what leaves on the other side turns into dots.
@@ -492,6 +511,12 @@ class MapScreenState extends State<MapScreen> {
 
   /// From this zoom the real pins appear (the map opens here).
   static const kPinZoom = 15.5;
+
+  /// From this zoom up: every place is its own pin, never grouped.
+  static const kAllPinsZoom = 15.0;
+
+  /// Below [kAllPinsZoom], groups start only when more than this many pins would be on the map.
+  static const kGroupAbove = 120;
 
   /// Pins are real widgets (heavy); dots are painted in one go (light).
   List<CircleMarker> _dotCache = const [];
@@ -527,7 +552,7 @@ class MapScreenState extends State<MapScreen> {
     final markers = <Marker>[];
     final dots = <Place>[];
 
-    // the ring: 7 miles around the middle of the map. Inside: our pins (groups where they overlap).
+    // the ring: 6 miles across, in the middle of the map. Inside: our pins (groups where they overlap).
     // Outside: light dots only.
     final rc = _ringCenter ?? userPos;
     final kx = 111.2 * math.cos(rc.latitude * math.pi / 180);
@@ -542,20 +567,26 @@ class MapScreenState extends State<MapScreen> {
       (km2(p.pos) <= ringKm * ringKm ? inside : dots).add(p);
     }
 
-    // inside the ring: our real pins with their info; where pins would sit on top of each other,
-    // one group instead (about one pin wide). Never more than ~160 at once.
+    // inside the ring: our real pins with their info. Zoomed in (15+) they are never grouped.
+    // Zoomed out, and only when there are too many, pins that would sit on each other become a group.
     final mPerPx = 156543.03 * math.cos(rc.latitude * math.pi / 180) / math.pow(2, _zoom);
-    var cellPx = 42.0;
     Map<String, List<Place>> cells = {};
-    for (int round = 0; round < 6; round++) {
-      final cellLat = cellPx * mPerPx / 111200;
-      final cellLng = cellLat / math.max(0.2, math.cos(rc.latitude * math.pi / 180));
-      cells = {};
+    if (_zoom >= kAllPinsZoom || inside.length <= kGroupAbove) {
       for (final p in inside) {
-        cells.putIfAbsent('${(p.pos.latitude / cellLat).floor()}:${(p.pos.longitude / cellLng).floor()}', () => []).add(p);
+        cells[p.id] = [p];
       }
-      if (cells.length <= 160) break;
-      cellPx *= 1.5;
+    } else {
+      var cellPx = 42.0;
+      for (int round = 0; round < 6; round++) {
+        final cellLat = cellPx * mPerPx / 111200;
+        final cellLng = cellLat / math.max(0.2, math.cos(rc.latitude * math.pi / 180));
+        cells = {};
+        for (final p in inside) {
+          cells.putIfAbsent('${(p.pos.latitude / cellLat).floor()}:${(p.pos.longitude / cellLng).floor()}', () => []).add(p);
+        }
+        if (cells.length <= 160) break;
+        cellPx *= 1.5;
+      }
     }
     for (final group in cells.values) {
       if (group.length == 1) {
@@ -608,7 +639,7 @@ class MapScreenState extends State<MapScreen> {
         _map.move(b.center, 19);
       } else {
         _map.fitCamera(CameraFit.bounds(bounds: b, padding: const EdgeInsets.fromLTRB(60, 190, 60, 140), maxZoom: 19));
-        if (_map.camera.zoom < kPinZoom) _map.move(b.center, kPinZoom);
+        if (_map.camera.zoom < kAllPinsZoom) _map.move(b.center, kAllPinsZoom); // close enough: no groups
       }
     } catch (_) {}
   }
@@ -744,7 +775,7 @@ class MapScreenState extends State<MapScreen> {
                 pattern: const StrokePattern.dotted(spacingFactor: 2),
               ),
             ]),
-          // the 7-mile ring in the middle of the map
+          // the ring (6 miles across) in the middle of the map
           CircleLayer(circles: [
             CircleMarker(
               point: _ringCenter ?? userPos,
@@ -768,7 +799,7 @@ class MapScreenState extends State<MapScreen> {
                 point: LatLng((_ringCenter ?? userPos).latitude + kRingMiles * 1.609 / 111.2, (_ringCenter ?? userPos).longitude),
                 width: 70,
                 height: 24,
-                child: const RingLabel(text: '7 mi'),
+                child: const RingLabel(text: '6 mi'),
               ),
             ]),
           if (_zoom < 9)
