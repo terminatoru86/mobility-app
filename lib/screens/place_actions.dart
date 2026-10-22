@@ -225,6 +225,16 @@ class _HistoryScreenState extends State<HistoryScreen> {
         ),
       ]),
       const SizedBox(height: 10),
+      // days of the week on top, then the month starting under the right weekday
+      Row(children: [
+        for (final w in const ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'])
+          Expanded(
+            child: Text(w,
+                textAlign: TextAlign.center,
+                style: const TextStyle(fontSize: 10.5, fontWeight: FontWeight.w700, color: AppColors.soft)),
+          ),
+      ]),
+      const SizedBox(height: 6),
       GridView.count(
         crossAxisCount: 7,
         shrinkWrap: true,
@@ -232,15 +242,13 @@ class _HistoryScreenState extends State<HistoryScreen> {
         mainAxisSpacing: 6,
         crossAxisSpacing: 6,
         children: [
+          for (int i = 1; i < DateTime(now.year, now.month, 1).weekday; i++) const SizedBox.shrink(),
           for (int d = 1; d <= days; d++)
-            Column(children: [
-              Expanded(child: CustomPaint(size: Size.infinite, painter: _ClockPainter(p, d, _pm))),
-              Text('$d', style: TextStyle(fontSize: 10, fontWeight: d == now.day ? FontWeight.w900 : FontWeight.w600)),
-            ]),
+            CustomPaint(size: Size.infinite, painter: _ClockPainter(p, d, _pm, today: d == now.day)),
         ],
       ),
       const SizedBox(height: 8),
-      const Text('Each day is a clock: the coloured arcs sit at the hours riders confirmed (12 top, 3 right).',
+      const Text('Each day is a clock with its date in the middle: the coloured arcs sit at the hours riders confirmed (12 top, 3 right). Today has a dark ring.',
           style: TextStyle(fontSize: 12, color: AppColors.soft)),
     ];
   }
@@ -250,7 +258,8 @@ class _ClockPainter extends CustomPainter {
   final Place p;
   final int day;
   final bool pm;
-  _ClockPainter(this.p, this.day, this.pm);
+  final bool today;
+  _ClockPainter(this.p, this.day, this.pm, {this.today = false});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -261,8 +270,22 @@ class _ClockPainter extends CustomPainter {
         c,
         r,
         Paint()
-          ..color = AppColors.line
-          ..style = PaintingStyle.stroke);
+          ..color = today ? AppColors.ink : AppColors.line
+          ..style = PaintingStyle.stroke
+          ..strokeWidth = today ? 2 : 1);
+    // the date in the middle of the clock
+    final tp = TextPainter(
+      text: TextSpan(
+        text: '$day',
+        style: TextStyle(
+          fontSize: math.max(9, r * 0.62),
+          fontWeight: today ? FontWeight.w900 : FontWeight.w700,
+          color: today ? AppColors.ink : AppColors.primary,
+        ),
+      ),
+      textDirection: TextDirection.ltr,
+    )..layout();
+    tp.paint(canvas, c - Offset(tp.width / 2, tp.height / 2));
     for (int k = 0; k < 3; k++) {
       final hour = (day * 3 + k * 4) % 12;
       final v = _val(p, day % 7, hour + (pm ? 12 : 0));
@@ -282,7 +305,7 @@ class _ClockPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant _ClockPainter o) => o.pm != pm || o.day != day;
+  bool shouldRepaint(covariant _ClockPainter o) => o.pm != pm || o.day != day || o.today != today;
 }
 
 // ───────────────────────── 3.4 Reviews ─────────────────────────
