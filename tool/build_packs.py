@@ -467,7 +467,7 @@ def mvt_points(raw, layer_name):
     return out
 
 
-def fetch_mapillary(boxes=None, budget_min=35):
+def fetch_mapillary(boxes=None, budget_min=75):
     """Bike racks Mapillary found in street photos, from its map-feature vector tiles (zoom 14, ~2.4 km),
     about 33 x 33 km around each metro. Tiles come from a cache, so this is fast; 16 at a time, with a time budget."""
     from concurrent.futures import ThreadPoolExecutor
