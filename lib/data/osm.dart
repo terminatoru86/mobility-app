@@ -84,6 +84,11 @@ class OsmService {
 
   /// Cities shipped with the app: thousands of places, no internet needed.
   Future<void> loadBundled() async {
+    // the packs inside the app already have every place: the old city files are not read (faster start)
+    if (await packIndex() != null) {
+      _cleanOldCache();
+      return;
+    }
     for (final (file, s, w, n, e) in _bundled) {
       try {
         final list = (jsonDecode(await rootBundle.loadString(file)) as List).cast<Map<String, dynamic>>();
@@ -100,8 +105,22 @@ class OsmService {
     }
   }
 
+  /// Before the packs, places were saved in the browser / phone settings (osmt_*, osm_cache_v1):
+  /// megabytes read at every start. The packs replace them, so they are removed once.
+  Future<void> _cleanOldCache() async {
+    try {
+      final p = await SharedPreferences.getInstance();
+      final old = p.getKeys().where((k) => k.startsWith('osmt_') || k == _cacheKey).toList();
+      for (final k in old) {
+        await p.remove(k);
+      }
+      if (old.isNotEmpty) debugPrint('Removed ${old.length} old cached pieces');
+    } catch (_) {}
+  }
+
   /// Places saved on the phone from earlier runs (instant).
   Future<void> loadCache() async {
+    if (_packIndex != null) return; // the packs cover it
     try {
       final p = await SharedPreferences.getInstance();
       final s = p.getString(_cacheKey);
@@ -287,6 +306,8 @@ class OsmService {
       } catch (err) {
         debugPrint('Pack $key failed: $err');
       }
+      // let the map draw between pieces (in the browser everything runs on one thread)
+      await Future.delayed(const Duration(milliseconds: 40));
     }
     return all;
   }

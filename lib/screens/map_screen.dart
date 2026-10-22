@@ -78,7 +78,7 @@ class MapScreenState extends State<MapScreen> {
       if (mounted) setState(() => _weatherFace = !_weatherFace);
     });
     // one clock for all pins (glyph <-> age)
-    _pinClock = Timer.periodic(const Duration(seconds: 4), (_) => pinShowsAge.value = !pinShowsAge.value);
+    _pinClock = Timer.periodic(const Duration(seconds: 8), (_) => pinShowsAge.value = !pinShowsAge.value);
     _chipClock = Timer.periodic(const Duration(seconds: 2), (_) => chipTick.value++);
     // real places: the cities shipped with the app and the ones saved on the phone (instant),
     // then the visible area from OpenStreetMap
@@ -87,7 +87,7 @@ class MapScreenState extends State<MapScreen> {
       _loadVisible();
     });
     // city halls' racks and live bikeshare around the map (a moment after the map is on screen)
-    Future.delayed(const Duration(milliseconds: 1500), () => _loadOpenData(userPos));
+    Future.delayed(const Duration(seconds: 4), () => _loadOpenData(userPos)); // after the map and pins are up
     Future.delayed(const Duration(milliseconds: 300), _loadRegion); // packs inside the app: instant
     _shareTimer = Timer.periodic(const Duration(seconds: 90), (_) async {
       if (await _open.refreshSharing() && mounted) setState(() => _merged = _allCache = null);
@@ -567,6 +567,11 @@ class MapScreenState extends State<MapScreen> {
   }
 
   void _buildLayers() {
+    try {
+      _screen = _map.camera.visibleBounds;
+    } catch (_) {
+      _screen = null;
+    }
     final a = _area;
     final st = Store.i;
     // quick flat-earth test against the rider's areas (thousands of places, a few areas)
@@ -740,6 +745,10 @@ class MapScreenState extends State<MapScreen> {
     if (best != null) _openPlace(best);
   }
 
+  /// What the rider sees right now (pins outside it do not take turns).
+  LatLngBounds? _screen;
+  bool _onScreen(LatLng p) => _screen == null || _screen!.contains(p);
+
   Marker _pinMarker(Place p) => Marker(
         point: p.pos,
         width: PlacePin.width,
@@ -747,7 +756,7 @@ class MapScreenState extends State<MapScreen> {
         alignment: Alignment.topCenter,
         child: GestureDetector(
           onTap: () => _openPlace(p),
-          child: PlacePin(place: p, selected: _selected == p.id, small: _zoom < 15),
+          child: PlacePin(place: p, selected: _selected == p.id, small: _zoom < 15, animate: _onScreen(p.pos)),
         ),
       );
 

@@ -20,7 +20,7 @@ class Glyph extends StatelessWidget {
       );
 }
 
-/// One shared clock for all pins: glyph and age take turns every 4 s.
+/// One shared clock for all pins: glyph and age take turns every 8 s (only pins on screen, only coloured ones).
 /// (One timer for the whole map instead of one per pin keeps the map fast.)
 final ValueNotifier<bool> pinShowsAge = ValueNotifier(false);
 
@@ -32,7 +32,10 @@ class PlacePin extends StatelessWidget {
   final Place place;
   final bool selected;
   final bool small;
-  const PlacePin({super.key, required this.place, this.selected = false, this.small = false});
+
+  /// false: the pin is outside the screen, it does not take turns (keeps the map light)
+  final bool animate;
+  const PlacePin({super.key, required this.place, this.selected = false, this.small = false, this.animate = true});
 
   static const double width = 64;
   static const double height = 76;
@@ -43,7 +46,9 @@ class PlacePin extends StatelessWidget {
     final c = colorsFor(p.shownStatus);
     final scale = selected ? 1.2 : (small ? 0.9 : 1.05);
     final showCount = p.count != null && p.shownStatus != Status.full && !p.type.isNeutral;
-    final swaps = !p.type.isNeutral && p.age.isNotEmpty;
+    // grey pins (no status yet, shops, service) show only the glyph: no time, nothing turning
+    final grey = p.shownStatus == Status.unknown || p.shownStatus == Status.neutral;
+    final swaps = animate && !grey && !p.type.isNeutral && p.age.isNotEmpty;
     const drop = 40.0;
     // white on green / red / grey; dark brown on yellow so it stays readable
     final ink = p.shownStatus == Status.almost ? const Color(0xFF3A2A00) : Colors.white;
