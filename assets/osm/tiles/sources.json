@@ -2250,12 +2250,6 @@
   "places": 69
  },
  {
-  "key": "ago-519396d7ee",
-  "label": "Bike Repair Station Abby B · behailu@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Abby_B/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-201747ae5d",
   "label": "Bike Repair · rimoss@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair/FeatureServer/0",
@@ -2265,6 +2259,12 @@
   "key": "ago-0a6a9b5d96",
   "label": "Bike Repair Madison · eilundin@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Madison/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-519396d7ee",
+  "label": "Bike Repair Station Abby B · behailu@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Abby_B/FeatureServer/0",
   "places": 69
  },
  {
@@ -3996,12 +3996,6 @@
   "places": 11
  },
  {
-  "key": "ago-85f357ac39",
-  "label": "Bike Parking_BrandonGravett · gravettb_etsu",
-  "url": "https://services5.arcgis.com/ZYK688A64hFRZ5yX/arcgis/rest/services/Bike_Parking_BrandonGravett/FeatureServer/0",
-  "places": 11
- },
- {
   "key": "ago-6182652fbb",
   "label": "Bike Repair Stands · awitherspoon_lawrenceks",
   "url": "https://services.arcgis.com/8O9UlSTnqjKptoda/arcgis/rest/services/Bike_Repair_Stands/FeatureServer/0",
@@ -4581,6 +4575,12 @@
   "key": "ago-764de150a4",
   "label": "Bike Parking_Masia Thakhani · MThakhani_YouthSA",
   "url": "https://services8.arcgis.com/oTalEaSXAuyNT7xf/arcgis/rest/services/Bike_Parking_Masia_Thakhani/FeatureServer/0",
+  "places": 5
+ },
+ {
+  "key": "ago-f683b6ace4",
+  "label": "Bike Parking_MLapointe · MALAP1@ulaval.ca_ulaval",
+  "url": "https://services2.arcgis.com/RkhyeW7cqOfSjlQG/arcgis/rest/services/Bike_Parking_MLapointe/FeatureServer/0",
   "places": 5
  },
  {
