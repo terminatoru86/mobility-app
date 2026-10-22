@@ -485,17 +485,21 @@ def fetch_mapillary(boxes=None, budget_min=75):
         r = math.radians(lat)
         return int((1 - math.log(math.tan(r) + 1 / math.cos(r)) / math.pi) / 2 * n2)
 
-    tiles_xy = set()
+    # metro by metro, in the order of METROS (Chicago first), so a time limit never skips our home area
+    tiles_xy = []
+    seen_t = set()
     for name, (la, lo) in METROS.items():
         for x in range(tx(lo - 0.2), tx(lo + 0.2) + 1):
             for y in range(ty(la + 0.15), ty(la - 0.15) + 1):
-                tiles_xy.add((x, y))
+                if (x, y) not in seen_t:
+                    seen_t.add((x, y))
+                    tiles_xy.append((x, y))
     if boxes:
         def inside(x, y):
             lon = x / n2 * 360 - 180
             lat = math.degrees(math.atan(math.sinh(math.pi * (1 - 2 * y / n2))))
             return any(b[0] - 0.05 <= lat < b[2] + 0.05 and b[1] - 0.05 <= lon < b[3] + 0.05 for b in boxes)
-        tiles_xy = {t for t in tiles_xy if inside(*t)}
+        tiles_xy = [t for t in tiles_xy if inside(*t)]
     end = time.time() + budget_min * 60
     errors = []
 
@@ -538,7 +542,7 @@ def fetch_mapillary(boxes=None, budget_min=75):
 
     out, seen, done = [], set(), 0
     with ThreadPoolExecutor(8) as ex:
-        for got in ex.map(one, sorted(tiles_xy)):
+        for got in ex.map(one, tiles_xy):
             if got is None:
                 continue
             done += 1
