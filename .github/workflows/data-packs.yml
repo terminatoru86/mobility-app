@@ -52,7 +52,7 @@ jobs:
     needs: osm
     if: always() && (needs.osm.result == 'success' || github.event.inputs.mode == 'extra')
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

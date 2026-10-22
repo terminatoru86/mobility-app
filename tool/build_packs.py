@@ -251,9 +251,10 @@ SKIP = re.compile(r'propos|request|survey|count|demand|plan(ned|ning)?\b|candida
                   r'heat\s*map|lane|route|trail|path|network|stress|study|draft|test|copy|sample|training|demo', re.I)
 
 
-def discover_arcgis(known):
+def discover_arcgis(known, budget_min=25):
     """Public point layers about bike parking / repair on ArcGIS Online, inside the US."""
     layers, seen = [], set()
+    end = time.time() + budget_min * 60
     terms = ['"bike rack"', '"bike racks"', '"bicycle racks"', '"bicycle parking"', '"bike parking"',
              '"bike corral"', '"micromobility parking"', '"bike repair"', '"fix-it station"', '"bike lockers"']
     for t in terms:
@@ -269,6 +270,8 @@ def discover_arcgis(known):
             for it in j.get('results', []):
                 url = (it.get('url') or '').rstrip('/')
                 title = it.get('title') or ''
+                if time.time() > end:
+                    break
                 if not url or url in seen or SKIP.search(title):
                     continue
                 seen.add(url)
@@ -361,42 +364,55 @@ def mapillary_token():
         return None
 
 
-def fetch_mapillary(boxes=None):
-    """Bike racks Mapillary found in street photos, in 0.1° cells around each metro (about 55 x 40 km)."""
+def fetch_mapillary(boxes=None, budget_min=35):
+    """Bike racks Mapillary found in street photos, in 0.1° cells around each metro (about 55 x 40 km).
+    8 requests at a time and a time budget, so the build always finishes."""
+    from concurrent.futures import ThreadPoolExecutor
     token = mapillary_token()
     if not token:
         print('Mapillary skipped: no token', flush=True)
         return []
-    out, seen = [], set()
+    cells = []
     for name, (la, lo) in METROS.items():
-        n0 = len(out)
         for i in range(-3, 3):
             for j in range(-4, 4):
                 s, w = round(la + i * 0.1, 3), round(lo + j * 0.1, 3)
                 if boxes and not any(b[0] <= s < b[2] and b[1] <= w < b[3] for b in boxes):
                     continue
-                q = urllib.parse.urlencode({
-                    'access_token': token, 'fields': 'id,object_value,geometry,last_seen_at',
-                    'bbox': f'{w},{s},{w + 0.1},{s + 0.1}', 'object_values': 'object--bike-rack', 'limit': 2000})
-                try:
-                    j2 = json.loads(http(f'https://graph.mapillary.com/map_features?{q}', timeout=60))
-                except Exception as err:
-                    print(f'  mapillary {name} {s},{w}: {err}', flush=True)
-                    time.sleep(2)
+                cells.append((name, s, w))
+    end = time.time() + budget_min * 60
+    out, seen = [], set()
+
+    def one(cell):
+        name, s, w = cell
+        if time.time() > end:
+            return None
+        q = urllib.parse.urlencode({
+            'access_token': token, 'fields': 'id,object_value,geometry,last_seen_at',
+            'bbox': f'{w},{s},{w + 0.1},{s + 0.1}', 'object_values': 'object--bike-rack', 'limit': 2000})
+        try:
+            return json.loads(http(f'https://graph.mapillary.com/map_features?{q}', timeout=25)).get('data', [])
+        except Exception:
+            return []
+
+    done = 0
+    with ThreadPoolExecutor(8) as ex:
+        for data in ex.map(one, cells):
+            if data is None:
+                continue
+            done += 1
+            for f in data:
+                c = (f.get('geometry') or {}).get('coordinates')
+                if not c or f['id'] in seen:
                     continue
-                for f in j2.get('data', []):
-                    c = (f.get('geometry') or {}).get('coordinates')
-                    if not c or f['id'] in seen:
-                        continue
-                    seen.add(f['id'])
-                    tags = {'amenity': 'bicycle_parking', 'bicycle_parking': 'stands',
-                            'source': 'Mapillary · seen in street photos'}
-                    ls = f.get('last_seen_at')
-                    if isinstance(ls, (int, float)):
-                        tags['check_date'] = datetime.fromtimestamp(ls / 1000, timezone.utc).strftime('%Y-%m-%d')
-                    out.append([f"mly/{f['id']}", round(c[1], 6), round(c[0], 6), tags])
-                time.sleep(0.15)
-        print(f'Mapillary {name}: {len(out) - n0}', flush=True)
+                seen.add(f['id'])
+                tags = {'amenity': 'bicycle_parking', 'bicycle_parking': 'stands',
+                        'source': 'Mapillary · seen in street photos'}
+                ls = f.get('last_seen_at')
+                if isinstance(ls, (int, float)):
+                    tags['check_date'] = datetime.fromtimestamp(ls / 1000, timezone.utc).strftime('%Y-%m-%d')
+                out.append([f"mly/{f['id']}", round(c[1], 6), round(c[0], 6), tags])
+    print(f'Mapillary: {len(out)} racks from {done}/{len(cells)} cells', flush=True)
     return out
 
 
@@ -535,6 +551,7 @@ def fetch_cameras():
             print(f"Cameras {c['source']} failed: {err}", flush=True)
     # other public camera layers on ArcGIS Online (state DOTs, cities): kept only when they carry image links
     seen = set()
+    end = time.time() + 20 * 60
     for start in range(1, 500, 100):
         q = urllib.parse.urlencode({'q': '("traffic camera" OR "traffic cameras" OR "CCTV cameras") AND type:"Feature Service"',
                                     'num': 100, 'start': start, 'bbox': '-170,17,-65,72', 'f': 'json'})
@@ -545,6 +562,8 @@ def fetch_cameras():
             break
         for it in j.get('results', []):
             url = (it.get('url') or '').rstrip('/')
+            if time.time() > end:
+                break
             if not url or url in seen or it.get('id') in {c['item'] for c in CAMERA_LAYERS}:
                 continue
             seen.add(url)
@@ -553,7 +572,7 @@ def fetch_cameras():
                 for ly in (info.get('layers') or [])[:3]:
                     if ly.get('geometryType') != 'esriGeometryPoint':
                         continue
-                    pts = arcgis_points(f"{url}/{ly['id']}", cap=20000)
+                    pts = arcgis_points(f"{url}/{ly['id']}", cap=5000)
                     got = camera_rows(pts, (it.get('owner') or it.get('title') or 'ArcGIS')[:40])
                     if pts and len(got) >= 0.3 * len(pts):
                         print(f"Cameras {it.get('title')}: {len(got)}", flush=True)
@@ -699,7 +718,10 @@ def main():
         print(f'Socrata discovery failed: {err}', flush=True)
     stage(f'3/6 discovery done: {len(discovered)} new public layers')
     found_log = []
+    city_end = time.time() + 45 * 60  # found-by-search layers get 45 min; our own list always runs
     for src in known_srcs + discovered:
+        if src['key'].startswith(('ago-', 'soc-')) and time.time() > city_end:
+            continue
         try:
             els = fetch_city(src)
             if len(els) > 150000:
