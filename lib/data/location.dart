@@ -1,26 +1,52 @@
 import 'dart:convert';
 
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show debugPrint, kIsWeb;
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart';
 
 import 'places.dart';
 
+/// Why the last GPS request gave nothing (shown to the rider): null when it worked.
+String? gpsProblem;
+
 /// Where the rider is right now (null if GPS is off or not allowed).
+/// A computer has no GPS chip: the browser finds it from Wi-Fi, which is slower and less exact,
+/// so a quick precise fix is tried first, then a slower approximate one.
 Future<LatLng?> currentPosition() async {
+  gpsProblem = null;
   try {
-    if (!await Geolocator.isLocationServiceEnabled()) return null;
+    if (!await Geolocator.isLocationServiceEnabled()) {
+      gpsProblem = 'Location is off on this device';
+      return null;
+    }
     var perm = await Geolocator.checkPermission();
     if (perm == LocationPermission.denied) perm = await Geolocator.requestPermission();
-    if (perm == LocationPermission.denied || perm == LocationPermission.deniedForever) return null;
-    final p = await Geolocator.getCurrentPosition(
-      locationSettings: const LocationSettings(accuracy: LocationAccuracy.high, timeLimit: Duration(seconds: 15)),
-    );
-    return LatLng(p.latitude, p.longitude);
-  } catch (_) {
-    return null;
+    if (perm == LocationPermission.denied || perm == LocationPermission.deniedForever) {
+      gpsProblem = kIsWeb ? 'Location blocked: allow it in the address bar (🔒 → Location)' : 'Location not allowed';
+      return null;
+    }
+  } catch (e) {
+    debugPrint('GPS permission failed: $e');
   }
+  for (final (acc, secs) in const [(LocationAccuracy.high, 10), (LocationAccuracy.low, 25)]) {
+    try {
+      final p = await Geolocator.getCurrentPosition(
+        locationSettings: LocationSettings(accuracy: acc, timeLimit: Duration(seconds: secs)),
+      );
+      return LatLng(p.latitude, p.longitude);
+    } catch (e) {
+      debugPrint('GPS ($acc) failed: $e');
+    }
+  }
+  if (!kIsWeb) {
+    try {
+      final last = await Geolocator.getLastKnownPosition();
+      if (last != null) return LatLng(last.latitude, last.longitude);
+    } catch (_) {}
+  }
+  gpsProblem = 'Could not find your location';
+  return null;
 }
 
 class GeoResult {
