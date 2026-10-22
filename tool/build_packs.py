@@ -509,7 +509,18 @@ def fetch_mapillary(boxes=None, budget_min=35):
         except Exception as err:
             errors.append(str(err)[:150])
             return []
-        if not raw:
+        for attempt in range(3):
+            if raw and raw[:1] in (b'<', b'{'):  # an error page instead of a tile (busy server): wait and ask again
+                if attempt == 0:
+                    errors.append('busy: ' + raw[:80].decode('utf-8', 'replace'))
+                time.sleep(2 + attempt * 4)
+                try:
+                    raw = http(url, timeout=30)
+                except Exception:
+                    raw = b''
+            else:
+                break
+        if not raw or raw[:1] in (b'<', b'{'):
             return []
         try:
             pts = mvt_points(raw, 'point')
@@ -526,7 +537,7 @@ def fetch_mapillary(boxes=None, budget_min=35):
         return got
 
     out, seen, done = [], set(), 0
-    with ThreadPoolExecutor(16) as ex:
+    with ThreadPoolExecutor(8) as ex:
         for got in ex.map(one, sorted(tiles_xy)):
             if got is None:
                 continue
@@ -599,7 +610,7 @@ def fetch_overture():
     for expr in ("coalesce(taxonomy.primary, basic_category)", "basic_category", "categories.primary"):
         try:
             rows = con.execute(q.replace('CAT_EXPR', expr)).fetchall()
-            stage(f'Overture category field: {expr}')
+            print(f'Overture category field: {expr}', flush=True)
             break
         except Exception as err:
             last = err
@@ -631,7 +642,7 @@ def fetch_overture():
         tags.update({k: v for k, v in {'name': name, 'website': web, 'phone': phone, 'email': email, 'addr:street': street}.items() if v})
         tags['source'] = 'Overture Maps'
         out.append([f'ovt/{oid}', round(lat, 6), round(lon, 6), tags])
-    stage(f'Overture {release}: {len(out)}')
+    print(f'Overture {release}: {len(out)}', flush=True)
     return out
 
 
@@ -742,7 +753,8 @@ def fetch_cameras():
     path = os.path.join(os.path.dirname(OUT), 'cameras.json.gz')
     with open(path, 'wb') as f:
         f.write(gzip.compress(json.dumps(rows, separators=(',', ':'), ensure_ascii=False).encode('utf-8'), 9, mtime=0))
-    stage(f'cameras: {len(rows)}')
+    print(f'cameras: {len(rows)}', flush=True)
+    return len(rows)
 
 
 CONTACTS = os.environ.get('CONTACTS_OUT') or os.path.join(ROOT, 'data', 'contacts', 'business_contacts.csv')
@@ -795,7 +807,8 @@ def write_contacts(tiles, save=True):
         w.writerow(['email', 'kind', 'name', 'website', 'phone', 'street', 'lat', 'lon', 'id', 'source'])
         for r in sorted(rows.values(), key=lambda r: (r[1], r[2])):
             w.writerow(r)
-    stage(f'contacts: {len(rows)} emails')
+    print(f'contacts: {len(rows)} emails', flush=True)
+    return len(rows)
 
 
 def stage(msg):
@@ -836,6 +849,7 @@ def main():
     stage(f'1/6 OpenStreetMap ready: {sum(len(d) for d in tiles.values())} places')
     cities = []
     # other open sources: one list each, added to the tiles (the app removes doubles near OpenStreetMap ones)
+    counts_src = {}
     for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
         try:
@@ -843,10 +857,10 @@ def main():
             for x in got:
                 if not args or (boxes[0][0] <= x[1] < boxes[0][2] and boxes[0][1] <= x[2] < boxes[0][3]):
                     tiles.setdefault((math.floor(x[1]), math.floor(x[2])), {})[x[0]] = x
-            stage(f'{name}: {len(got)}')
+            counts_src[name] = len(got)
         except Exception as err:
-            stage(f'{name} failed: {str(err)[:180]}')
-    stage(f'2/6 MBTA, Overture, Mapillary added: {sum(len(d) for d in tiles.values())} places')
+            counts_src[name] = f'failed: {str(err)[:150]}'
+    stage(f'2/6 sources {counts_src} · {sum(len(d) for d in tiles.values())} places')
     known_srcs = city_sources()
     known = {s.get('arcgis') for s in known_srcs if s.get('arcgis')} | {s.get('socrata') for s in known_srcs if s.get('socrata')}
     discovered = []
@@ -883,13 +897,14 @@ def main():
         except Exception as err:
             print(f"City {src['key']} failed: {err}", flush=True)
     stage(f'4/6 city sources added: {sum(len(d) for d in tiles.values())} places')
-    write_contacts(tiles, save=not args and '--extra-only' not in sys.argv)
+    n_mail = write_contacts(tiles, save=not args and '--extra-only' not in sys.argv)
+    n_cam = None
     if not args:
         try:
-            fetch_cameras()
+            n_cam = fetch_cameras()
         except Exception as err:
-            print(f'Cameras failed: {err}', flush=True)
-    stage('5/6 cameras and contacts done')
+            n_cam = f'failed: {str(err)[:100]}'
+    stage(f'5/6 emails: {n_mail} · cameras: {n_cam}')
     # the same place from several sources (e.g. copies of a city's rack list re-uploaded by students):
     # keep one per ~5 m. OpenStreetMap first, then our own city list, then everything else.
     def rank(r):
@@ -905,7 +920,7 @@ def main():
                 dropped += 1
             else:
                 seen.add(g)
-    stage(f'duplicates removed: {dropped}')
+    print(f'duplicates removed: {dropped}', flush=True)
     # only the US (some sources have places abroad or broken coordinates)
     for k in [k for k in tiles if not (17 <= k[0] < 72 and -180 <= k[1] < -64)]:
         tiles.pop(k)
@@ -946,7 +961,7 @@ def main():
     # list of the automatically found sources (for the manual / checking)
     with open(os.path.join(OUT, 'sources.json'), 'w', encoding='utf-8') as f:
         json.dump(sorted(found_log, key=lambda x: -x['places']), f, indent=1, ensure_ascii=False)
-    stage(f"6/6 done: {index['total']} places in {len(counts)} tiles")
+    stage(f"6/6 done: {index['total']} places in {len(counts)} tiles · duplicates removed: {dropped}")
 
 
 if __name__ == '__main__':
