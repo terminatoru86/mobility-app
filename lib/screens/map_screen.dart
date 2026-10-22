@@ -504,8 +504,15 @@ class MapScreenState extends State<MapScreen> {
       n0 = math.max(n0, v.north);
       e0 = math.max(e0, v.east);
     }
-    setState(() => _loading = true);
     _loadOpenData(cam.center);
+    // our packs cover the US: read the pieces under the view quietly (no pill, no internet)
+    final fromPacks = await _osm.loadFromPacks(s0, w0, n0, e0);
+    if (fromPacks != null) {
+      if (!mounted) return;
+      if (fromPacks) setState(() => _merged = _allCache = null);
+      return;
+    }
+    setState(() => _loading = true);
     final changed = await _osm.loadArea(s0, w0, n0, e0);
     if (!mounted) return;
     setState(() => _loading = false);

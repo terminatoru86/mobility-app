@@ -134,6 +134,36 @@ class OsmService {
   }
 
   /// Loads the area around the visible map. Returns true if something new came in.
+  /// The visible area from our packs (no internet, no "Loading places…"): when the packs cover the whole US,
+  /// the pieces under the view are read from the phone / the app. Returns null when the packs do not
+  /// cover it (then the live servers are asked), else whether new places were added.
+  Future<bool?> loadFromPacks(double south, double west, double north, double east) async {
+    final idx = await packIndex();
+    if (idx == null || idx['boxes'] != null) return null; // partial build: not sure it is covered
+    final have = ((idx['tiles'] as Map?) ?? const {}).cast<String, dynamic>();
+    final db = PlaceDb.i;
+    await db.open();
+    var changed = false;
+    for (int a = south.floor(); a <= north.floor(); a++) {
+      for (int b = west.floor(); b <= east.floor(); b++) {
+        final key = '${a}_$b';
+        if (_packTilesDone.contains(key)) continue;
+        _packTilesDone.add(key);
+        _done.add([a.toDouble(), b.toDouble(), a + 1.0, b + 1.0]);
+        String? text = await db.read(key);
+        if (text == null && have.containsKey(key)) text = await _shippedPiece(key);
+        if (text == null) continue; // nothing for riders in this piece
+        try {
+          _putPiece(key, await compute(_decodeList, text));
+          changed = true;
+        } catch (err) {
+          debugPrint('Pack $key failed: $err');
+        }
+      }
+    }
+    return changed;
+  }
+
   Future<bool> loadArea(double south, double west, double north, double east) async {
     // keep the request small: centre it and cap its size
     final cLat = (south + north) / 2, cLng = (west + east) / 2;
