@@ -382,6 +382,7 @@ def fetch_mapillary(boxes=None, budget_min=35):
                 cells.append((name, s, w))
     end = time.time() + budget_min * 60
     out, seen = [], set()
+    errors = []
 
     def one(cell):
         name, s, w = cell
@@ -392,7 +393,8 @@ def fetch_mapillary(boxes=None, budget_min=35):
             'bbox': f'{w},{s},{w + 0.1},{s + 0.1}', 'object_values': 'object--bike-rack', 'limit': 2000})
         try:
             return json.loads(http(f'https://graph.mapillary.com/map_features?{q}', timeout=25)).get('data', [])
-        except Exception:
+        except Exception as err:
+            errors.append(str(err)[:150])
             return []
 
     done = 0
@@ -412,7 +414,7 @@ def fetch_mapillary(boxes=None, budget_min=35):
                 if isinstance(ls, (int, float)):
                     tags['check_date'] = datetime.fromtimestamp(ls / 1000, timezone.utc).strftime('%Y-%m-%d')
                 out.append([f"mly/{f['id']}", round(c[1], 6), round(c[0], 6), tags])
-    print(f'Mapillary: {len(out)} racks from {done}/{len(cells)} cells', flush=True)
+    stage(f'Mapillary: {len(out)} racks from {done}/{len(cells)} cells, {len(errors)} errors' + (f' (first: {errors[0]})' if errors else ''))
     return out
 
 
@@ -491,7 +493,7 @@ def fetch_overture():
         tags.update({k: v for k, v in {'name': name, 'website': web, 'phone': phone, 'email': email, 'addr:street': street}.items() if v})
         tags['source'] = 'Overture Maps'
         out.append([f'ovt/{oid}', round(lat, 6), round(lon, 6), tags])
-    print(f'Overture {release}: {len(out)}', flush=True)
+    stage(f'Overture {release}: {len(out)}')
     return out
 
 
@@ -699,11 +701,13 @@ def main():
     for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
         try:
-            for x in fn():
+            got = fn()
+            for x in got:
                 if not args or (boxes[0][0] <= x[1] < boxes[0][2] and boxes[0][1] <= x[2] < boxes[0][3]):
                     tiles.setdefault((math.floor(x[1]), math.floor(x[2])), {})[x[0]] = x
+            stage(f'{name}: {len(got)}')
         except Exception as err:
-            print(f'{name} failed: {err}', flush=True)
+            stage(f'{name} failed: {str(err)[:180]}')
     stage(f'2/6 MBTA, Overture, Mapillary added: {sum(len(d) for d in tiles.values())} places')
     known_srcs = city_sources()
     known = {s.get('arcgis') for s in known_srcs if s.get('arcgis')} | {s.get('socrata') for s in known_srcs if s.get('socrata')}
