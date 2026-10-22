@@ -124,8 +124,11 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 
-  Widget _group(List<Widget> rows) => Container(
-        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(18)),
+  // a white card that list rows can paint their tap effect on (Material, not a plain box)
+  Widget _group(List<Widget> rows) => Material(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        clipBehavior: Clip.antiAlias,
         child: Column(children: rows),
       );
 
@@ -456,8 +459,10 @@ class MapSettingsScreen extends StatelessWidget {
               onSelectionChanged: (v) => s.setTheme(v.first),
             ),
             const SizedBox(height: 8),
-            Container(
-              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(18)),
+            Material(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(18),
+              clipBehavior: Clip.antiAlias,
               child: SwitchListTile(
                 value: s.parkNearDest,
                 onChanged: s.setParkNearDest,
@@ -513,7 +518,10 @@ class NotificationsScreen extends StatelessWidget {
             const SizedBox(height: 6),
             Container(
               margin: const EdgeInsets.only(bottom: 14),
-              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(18)),
+              child: Material(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(18),
+              clipBehavior: Clip.antiAlias,
               child: Column(children: [
                 for (final k in g.value)
                   SwitchListTile(
@@ -522,6 +530,7 @@ class NotificationsScreen extends StatelessWidget {
                     title: Text(k),
                   ),
               ]),
+              ),
             ),
           ],
         ]),

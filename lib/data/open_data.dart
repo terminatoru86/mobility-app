@@ -110,9 +110,7 @@ const kCitySources = [
       arcgis: 'https://services3.arcgis.com/58WV6GqBWodG9Kll/ArcGIS/rest/services/Bike_Racks_Nashville/FeatureServer/0'),
   CitySource('phl', 'Philadelphia', 'City of Philadelphia · bike racks (2012, via PASDA)', 39.87, -75.28, 40.14, -74.96,
       arcgis: 'https://maps.pasda.psu.edu/arcgis/rest/services/pasda/CityPhilly/MapServer/23'),
-  CitySource('ntad-bikeshare', 'USA', 'USDOT BTS · bikeshare docking stations (NTAD)', 24, -125, 50, -66,
-      arcgis: 'https://geo.dot.gov/server/rest/services/Hosted/Bikeshare_DS/FeatureServer/0',
-      amenity: 'bicycle_rental', national: true, level: 'national'),
+  // USDOT NTAD bikeshare layer: now asks for a token (Oct 2026), removed; live GBFS covers the docks.
   CitySource('carmel', 'Carmel IN', 'City of Carmel · bike racks', 39.92, -86.24, 40.03, -86.04,
       arcgis: 'https://carmelgis.carmel.in.gov/arcserver/rest/services/DOCS/Bike_Racks/FeatureServer/0'),
 ];
@@ -396,6 +394,8 @@ class OpenDataService {
   }
 
   /// Bikes, docks and scooters right now, for the systems around. Call again every minute or two.
+  final Set<String> _dead = {};
+
   Future<bool> refreshSharing() async {
     if (_active.isEmpty) {
       final had = sharing.isNotEmpty;
@@ -405,12 +405,14 @@ class OpenDataService {
     }
     final next = <String, Place>{};
     final ops = <String>{};
-    await Future.wait(_active.map((s) async {
+    await Future.wait(_active.where((s) => !_dead.contains(s.name)).map((s) async {
       try {
         final got = await _loadSystem(s);
         next.addAll(got);
         if (got.isNotEmpty) ops.add(s.operator.toLowerCase());
       } catch (err) {
+        // blocked in the browser (no CORS) or offline: do not ask again every 90 s this session
+        _dead.add(s.name);
         debugPrint('GBFS ${s.name} failed: $err');
       }
     }));
