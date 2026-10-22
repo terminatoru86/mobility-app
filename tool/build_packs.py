@@ -900,6 +900,16 @@ def main():
     stage(f'1/6 OpenStreetMap ready: {sum(len(d) for d in tiles.values())} places')
     cities = []
     # other open sources: one list each, added to the tiles (the app removes doubles near OpenStreetMap ones)
+    # Mapillary racks from the last build: kept, so a slow Mapillary day (time limit) does not lose cities
+    old_mly = []
+    if os.path.isdir(OUT):
+        for name in os.listdir(OUT):
+            if re.match(r't_-?\d+_-?\d+\.json\.gz$', name):
+                try:
+                    old_mly += [r for r in json.loads(gzip.decompress(open(os.path.join(OUT, name), 'rb').read()))
+                                if r[0].startswith('mly/')]
+                except Exception:
+                    pass
     counts_src = {}
     for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
@@ -908,6 +918,12 @@ def main():
             for x in got:
                 if not args or (boxes[0][0] <= x[1] < boxes[0][2] and boxes[0][1] <= x[2] < boxes[0][3]):
                     tiles.setdefault((math.floor(x[1]), math.floor(x[2])), {})[x[0]] = x
+            if name == 'mapillary':
+                new_ids = {x[0] for x in got}
+                kept = [r for r in old_mly if r[0] not in new_ids]
+                for x in kept:
+                    tiles.setdefault((math.floor(x[1]), math.floor(x[2])), {})[x[0]] = x
+                got = got + kept
             counts_src[name] = len(got)
         except Exception as err:
             counts_src[name] = f'failed: {str(err)[:150]}'
