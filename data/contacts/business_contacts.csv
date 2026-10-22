@@ -1,0 +1,626 @@
+email,kind,name,website,phone,street,lat,lon,id,source
+info@ridebhm.com,bmx,RideBHM,https://ridebhm.com/,+1 833-263-4056,2800 Portifino Drive,33.428513,-86.899967,way/1409922793,OpenStreetMap
+slabtownbmx@gmail.com,bmx,Slabtown BMX,https://slabtownbmx.com/,+1 541 649 2544,,43.790007,-123.026365,way/1391323994,OpenStreetMap
+ucommute@uw.edu,private parking,,,+1-206-221-3701,,47.656303,-122.3069,node/8948540149,OpenStreetMap
+bicycles@soundtransit.org,private parking,,,,,47.702831,-122.32832,node/9719196710,OpenStreetMap
+support@bikelink.org,private parking,,BikeLink.org,+1-888-540-0546,,47.67158,-122.117939,node/12826884720,OpenStreetMap
+point2point@ltd.org,private parking,,,+1-541-682-6213,,43.799176,-123.040589,node/9576703798,OpenStreetMap
+support@bikelink.org,private parking,Auburn East,https://bikelink.org/,,,47.306659,-122.231969,way/1353842037,OpenStreetMap
+support@bikelink.org,private parking,Issaquah Highlands Park & Ride,https://bikelink.org/,,,47.545952,-122.020038,node/12106749426,OpenStreetMap
+support@bikelink.org,private parking,Mount Baker North,https://bikelink.org/,,,47.577101,-122.297952,node/5695323059,OpenStreetMap
+support@bikelink.org,private parking,Mount Baker South,https://bikelink.org/,,,47.576253,-122.297316,node/2672075659,OpenStreetMap
+support@bikelink.org,private parking,Othello North,https://bikelink.org/,,,47.539229,-122.281886,node/9930954537,OpenStreetMap
+support@bikelink.org,private parking,Othello South,https://bikelink.org/,,,47.537257,-122.280844,node/2672087022,OpenStreetMap
+support@bikelink.org,private parking,Puyallup East,https://bikelink.org/,,,47.192471,-122.295039,node/13461524401,OpenStreetMap
+info@bublrbikes.org,rent,,https://bublrbikes.org/,+1-414-931-1121,,43.026486,-87.918041,way/917215662,OpenStreetMap
+info@centralparktours.net,rent,,https://www.centralparktours.net/,+1-347-746-8687,870 7th Avenue,40.764645,-73.981211,node/5971361193,OpenStreetMap
+coastprovincetown@gmail.com,rent,,https://www.coastprovincetown.com,,,42.061685,-70.162147,node/11079340538,OpenStreetMap
+info@allspeed.com,rent,,https://www.allspeed.com/articles/carrabassett-valley-bike-rentals-pg178.htm,+1 207 779 3951,,45.078021,-70.295948,node/11179770897,OpenStreetMap
+raysrentalsmissionbeach@gmail.com,rent,,https://rays-rentals.com/mission-beach/,+1 858-488-7297,3221 Mission Boulevard,32.772574,-117.251114,node/11263902437,OpenStreetMap
+support@bikeshare.rtcsnv.com,rent,4th & Charleston Bike Share,https://rtcbikeshare.bcycle.com,+1-844-641-7823,333 East Charleston Boulevard,36.15912,-115.148943,way/1020191183,OpenStreetMap
+support@bikeshare.rtcsnv.com,rent,Arts District Bike Share,https://rtcbikeshare.bcycle.com,+1-844-641-7823,1041 South Main Street,36.159712,-115.152992,node/4993173144,OpenStreetMap
+astrabikenyc@gmail.com,rent,Astra Bike Rentals NYC,https://astrabikerentalsnyc.com/,+1-917-838-9824,873 7th Avenue,40.764195,-73.980592,node/13979950716,OpenStreetMap
+info@bikelnk.com,rent,BCycle,https://bikelnk.bcycle.com/,+1-402-807-2005,2200 L Street,40.810294,-96.691092,node/5487427982,OpenStreetMap
+info@sanantoniobikeshare.org,rent,BCycle,https://sanantonio.bcycle.com,+1-210-281-0101,200 Labor Street,29.415242,-98.483868,way/549246267,OpenStreetMap
+information@bigdaddysbikes.com,rent,Big Daddy’s Bike Shop,https://www.bigdaddysbikeshop.com/,+1 850-622-1165,2217 W County Hwy 30A,30.340166,-86.203569,node/1107902562,OpenStreetMap
+miami@bikeandroll.com,rent,Bike & Roll,https://bikeandroll.com/miami/,+1-305-604-0001,210 10th Street,25.780541,-80.132028,node/13537701898,OpenStreetMap
+info@bikelnk.com,rent,BikeLNK 14th & Avery Ave.,https://bikelnk.com,+1-402-807-2005,,40.82415,-96.701454,node/5487427989,OpenStreetMap
+info@bikelnk.com,rent,BikeLNK Dairy Store Dr. & E Campus Loop,https://bikelnk.bcycle.com/,+1-402-807-2005,114 East Campus Loop South,40.828628,-96.667031,node/5487427986,OpenStreetMap
+info@bikelnk.com,rent,BikeLNK N 35th & Center St.,https://bikelnk.bcycle.com/,+1-402-807-2005,1717 North 35th Street,40.830845,-96.66984,node/5487427987,OpenStreetMap
+info@bublrbikes.org,rent,Bublr Bikes,https://bublrbikes.org,,,43.042706,-87.905722,way/1433378876,OpenStreetMap
+support@bikeshare.rtcsnv.com,rent,Container Park Bike Share,https://rtcbikeshare.bcycle.com,+1-844-641-7823,723 Fremont Street,36.167898,-115.137672,node/4993034736,OpenStreetMap
+cycleparknyc@gmail.com,rent,Cycle Park NYC,https://cyclepark.nyc/,+1 929 483 7420,240 West 56th Street,40.765685,-73.982811,node/12326940250,OpenStreetMap
+info@dukefarms.org,rent,Duke Farms,https://dukefarms.org/,+1 908-722-3700,,40.550498,-74.619812,node/5775153882,OpenStreetMap
+support@bikeshare.rtcsnv.com,rent,Huntridge Plaza Bike Share,https://rtcbikeshare.bcycle.com,+1-844-641-7823,1125 South Maryland Parkway,36.158156,-115.137163,node/4993141946,OpenStreetMap
+info@lovelandbikerental.com,rent,Loveland Bike Rental,http://www.lovelandbikerental.com/,+1 513 683 0468,206 Railroad Avenue,39.269148,-84.257551,way/26695650,OpenStreetMap
+info@mauisunriders.com,rent,Maui Sunriders Bike Co.,https://mauisunriders.com,+1-808-579-8970,71 Baldwin Avenue,20.915232,-156.379026,node/6852785185,OpenStreetMap
+mojobicycles@gmail.com,rent,Mojo Rentals,https://www.mojocycling.com/,+14792717201,1301 North Walton Boulevard,36.388129,-94.221737,node/9571769643,OpenStreetMap
+info@opuaadventures.com,rent,Opua Adventures,,+1 941-599-1234,2163 Siesta Drive,27.30331,-82.526796,node/12696328910,OpenStreetMap
+info@patagoniabikesaz.com,rent,Patagonia Bikes,https://www.patagoniabikesaz.com/,+1-520-394-0256,299 McKeown Avenue,31.540774,-110.751369,node/11115926783,OpenStreetMap
+rich@sweepcrew.com,rent,Sweep,https://www.sweepsb.com/,+1 650-208-7479,16 Helena Avenue,34.413221,-119.688922,node/13251221806,OpenStreetMap
+brian@thetrolleybike.com,rent,The Trolley Bike,https://thetrolleybike.com,+1-417-200-4415,606 West McDaniel Street,37.207726,-93.297266,node/5013863892,OpenStreetMap
+info@transcascadiaexcursions.com,rent,Trans Cascadia Excursions,,+1 541 313 8712,,43.758364,-122.49469,way/1118817277,OpenStreetMap
+customerservice@tugobikeshare.com,rent,Tyndall Ave & 1st St SMART,https://tugobikeshare.com/,,,32.234225,-110.958154,node/6521236013,OpenStreetMap
+info@urbanadventours.com,rent,Urban AdvenTours,http://urbancycles.com/,+1-617-670-0637,103 Atlantic Avenue,42.361581,-71.052426,node/4191860646,OpenStreetMap
+info@wheelfunrentalssb.com,rent,Wheel Fun,https://wheelfunrentals.com/ca/santa-barbara/mason/,+1-805-966-2282,24 East Mason Street,34.413616,-119.689596,node/5738074623,OpenStreetMap
+info@wheelfunrentals.com,rent,Wheel Fun Rentals,https://wheelfunrentals.com/ca/ventura/ventura-state-beach-picnic-area/rentals/,+1 805-765-5795;+1 805-650-7770,850 East Harbor Boulevard,34.275889,-119.28987,node/8209020489,OpenStreetMap
+support@bikeshare.rtcsnv.com,rent,Zappos Bike Share,https://rtcbikeshare.bcycle.com,+1-844-641-7823,400 East Stewart Avenue,36.171775,-115.139363,node/4992971821,OpenStreetMap
+info@harborsidecycle.com,service,,https://www.harborsidecycle.com/,+1-989-354-4999,119 North 2nd Avenue,45.062949,-83.433146,node/11503837196,OpenStreetMap
+beaufortbicycle@gmail.com,service,,https://www.crystalcoastnc.org/listing/beaufort-bicycle/14661/,+1-252-728-1203,127 Briar Patch Drive,34.716288,-76.647639,node/14018844468,OpenStreetMap
+info@cabarruscyclingco.com,service,,https://www.cabarruscyclingco.com/,+1-704-938-8735,113 West Avenue,35.497765,-80.625302,node/14042090024,OpenStreetMap
+wedgwood@mendbicycles.com,service,(mend)bicycles,https://www.mendbicycles.com/,+1-206-787-0670,7500 1/2 35th Avenue Northeast,47.683207,-122.290201,node/5129214036,OpenStreetMap
+info@12speedgj.com,service,12 Speed,https://12speedgj.com/,+1-970-314-9085,1025 Main Street,39.067069,-108.555244,way/1392257424,OpenStreetMap
+info@atownbikes.net,service,ATown Bikes,https://atownbikes.net/,+1 530 8203375,943 Lincoln Way,38.898706,-121.070157,node/2409369370,OpenStreetMap
+support@wheelworks.com,service,Ace Wheelworks,https://www.wheelworks.com/,+1-617-776-2100,145 Elm Street,42.39133,-71.118585,way/29635533,OpenStreetMap
+info@adammillertoys.com,service,Adam Miller Toy & Bicycle,https://www.adammillertoys.com/,+1-585-343-0548,8 Center Street,42.99688,-78.18234,node/14170888150,OpenStreetMap
+adisbikeworld@hotmail.com,service,Adis Bike World,http://www.adisbikeworld.net/,+1-617-325-2453,1754 Centre Street,42.287227,-71.150855,node/3293574535,OpenStreetMap
+adventurebicyclesmedford@gmail.com,service,Adventure Bicycles,https://www.adventurebicyclesmedford.com/,+1-458-226-2061,1340 Biddle Road,42.343484,-122.871675,way/1487129641,OpenStreetMap
+alexsbikesnola@gmail.com,service,Alex's Bikes,http://alexsbikes.com/,+1 504 327 9248,607 Marigny Street,29.963964,-90.055036,node/10647118475,OpenStreetMap
+info@amped-adventure.com,service,Amped Adventure,https://www.amped-adventure.com/,+1-206-385-2453,17191 Bothell Way Northeast,47.753931,-122.278154,node/9925253585,OpenStreetMap
+angletech@me.com,service,Angletech Cycles,https://cycledifferent.com/,+1-719-687-7475,1483 Garden of the Gods Road,38.895388,-104.85551,way/208958165,OpenStreetMap
+annapolisvelo@gmail.com,service,Annapolis Velo,https://www.annapolisvelo.com/,+1-667-225-4482,436 Chinquapin Round Road,38.974645,-76.52531,way/436419210,OpenStreetMap
+info@ashevillebikecompany.com,service,Asheville Bicycle Company,https://www.ashevillebikecompany.com/,+1-828-774-5215,1000 Merrimon Avenue,35.631513,-82.554504,node/5759121250,OpenStreetMap
+bikeshop@as.ucsb.edu,service,Associated Students Bike Shop,https://bikeshop.as.ucsb.edu/,+1-805-893-3610,Ocean Road,34.416029,-119.847885,way/1387368823,OpenStreetMap
+info@acbcmobile.com,service,Azalea City Bicycle Company,https://www.acbcmobile.com/,+1-251-880-7508,107 Dauphin Street,30.691968,-88.041214,node/13961411304,OpenStreetMap
+info@brysoncityoutdoors.com,service,BCOutdoors Cherokee Bike Shop,https://www.brysoncityoutdoors.com/cherokee-bike-shop,+1-828-750-4196,516 Tsali Boulevard,35.48358,-83.316088,node/14042090041,OpenStreetMap
+bikes@bu.edu,service,BU Cycle Kitchen,https://www.bu.edu/transportation/bicycling/buck/,+1-617-353-2825,1019 Commonwealth Avenue,42.352203,-71.121381,node/9150317996,OpenStreetMap
+doug@baddcustomcycle.com,service,Baad Custom Cycle,https://baddcustomcycle.com/,+1-860-845-5976,272 Main Street,41.68036,-73.015855,node/6668069756,OpenStreetMap
+backyard.air.suspension@gmail.com,service,Backyard Air Suspension & Innovations,https://backyardairsuspension.com,+1-954-247-1392,1411 Southwest 30th Avenue,26.212089,-80.164548,node/13606820241,OpenStreetMap
+sales@baerwheels.com,service,Baer Wheels,https://baerwheels.com/,+1-614-267-7178,3510 North High Street,40.033815,-83.016151,way/374583148,OpenStreetMap
+baker@bakersbikes.com,service,Baker's Bikes,https://www.bakersbikesshop.com/,+1 217 3650318,1003 South Lynn Street,40.104295,-88.19823,node/2458643659,OpenStreetMap
+basiccyclescville@gmail.com,service,Basic Cycles,https://www.basiccyclescville.com/,+1 434 249 0013,,38.024636,-78.468371,node/8446345305,OpenStreetMap
+shop@bayareabicyclescctx.com,service,Bay Area Cycles,https://bayareabicyclescctx.com,+1-361-993-7000,6020 South Padre Island Drive,27.704545,-97.361443,node/8805713473,OpenStreetMap
+info@bayoubicycles.com,service,Bayou Bicycles,https://www.bayoubicycles.com/,+1 504 4881946,3530 Toulouse Street,29.974439,-90.092348,node/412845380,OpenStreetMap
+info@bearvalleybicycles.com,service,Bear Valley Bicycles,https://www.bearvalleybicycles.com/,+1-209-897-0326,,38.255196,-120.352387,node/12244357570,OpenStreetMap
+bearscycleshop@gmail.com,service,Bear’s Cycle & Restoration,https://bearscycleshop.com/,+16082149803,212 Sunset Drive,42.474393,-89.642153,way/1296182916,OpenStreetMap
+hello@belllapcycleworks.com,service,Bell Lap Cycleworks,https://belllapcycleworks.com/creedmoor-road/,+1 919 417 1102,6300 Creedmoor Road,35.871268,-78.678367,node/14042090053,OpenStreetMap
+bensbikes@gmail.com,service,Ben's Bikes,http://bensbikesathens.com/,+1-706-351-7433,670 West Broad Street,33.9563,-83.383702,node/7686127830,OpenStreetMap
+info@ridebespoke.com,service,Bespoke Cyclery,https://www.ridebespoke.com/,+1-336-528-4011,6275 Shallowford Rd,36.100387,-80.413868,node/12136755878,OpenStreetMap
+info@bicyclexperience.com,service,Bicycle Experience,https://www.bicyclexperience.com/,+1-719-473-1015,1601 South Tejon Street,38.811372,-104.824854,way/641657670,OpenStreetMap
+info@bikegarage.com,service,Bicycle Garage,https://www.bikegarage.com/,+1-812-339-3457,1112 South Morton Street,39.154733,-86.536705,node/13944053537,OpenStreetMap
+info@bicyclemichaels.com,service,Bicycle Michael's,https://bicyclemichaels.com/,+1 504 945 9505,622 Frenchmen Street,29.964052,-90.057901,node/386851318,OpenStreetMap
+gjbikes1@gmail.com,service,Bicycle Outfitters,https://www.gjbikes.com/,+1-970-245-2699,537 North 1st Street,39.072092,-108.571253,way/422031496,OpenStreetMap
+bicyclestop@gmail.com,service,Bicycle Stop,http://www.bicyclestop.com/,+1-937-342-4780,1355 West 1st Street,39.940366,-83.833228,node/4725164899,OpenStreetMap
+info@bicycletherapy.com,service,Bicycle Therapy,https://www.bicycletherapy.com/,+1-215-735-7849,2211 South Street,39.9454,-75.1791,node/1491913852,OpenStreetMap
+info@bicycleworkshop.com,service,Bicycle Workshiop,https://www.bicycleworkshop.com/,+1-201-568-9372,175 County Road,40.930514,-73.96101,node/14183444540,OpenStreetMap
+info@bicycleworldla.com,service,Bicycle World,https://www.bicycleworldla.com/,+1 504 828 1862,701 Jefferson Highway,29.965658,-90.137598,node/440598037,OpenStreetMap
+contact@bicyclespacedc.com,service,BicycleSPACE - Ivy City,http://www.BicycleSPACEdc.com,+1 202-853-0123,1512 Okie Street Northeast,38.9156,-76.981971,node/5435339721,OpenStreetMap
+info@bicycleseast.com,service,Bicycles East,https://www.bicycleseast.com,+1 860 659 0114,331 New London Turnpike,41.709688,-72.60294,node/8013825358,OpenStreetMap
+info@bicyclesnyc.com,service,Bicycles NYC,https://www.bicyclesnyc.com,+1 212-794-2929,1400 3rd Avenue,40.774851,-73.957228,node/7041755311,OpenStreetMap
+jacob@bikedr.com,service,Bicycloe Doctor Nordic Ski Shop,,,105 North Main Street,43.014432,-88.473205,node/5253087187,OpenStreetMap
+robby@bikeandhikeeffingham.com,service,Bike & Hike,https://bikeandhikeeffingham.com/,+1-217-342-2453,300 West Jefferson Avenue,39.121533,-88.544266,node/11253750544,OpenStreetMap
+store@bikeboom.net,service,Bike Boom,https://bikeboom.net/,+1-617-627-9801,389 Highland Avenue,42.395531,-71.11979,node/3281407761,OpenStreetMap
+bikecoop@gmail.com,service,Bike Co-op,https://sites.google.com/view/ucscbikecoop/home,,,36.997618,-122.056076,node/1363148219,OpenStreetMap
+sruck@bikedoctor.com,service,Bike Doctor,https://bikedoctor.com,+1-410-544-3532,953 Richie Highway,39.055286,-76.524685,node/2981991654,OpenStreetMap
+mediabelair@bikedoctor.com,service,Bike Doctor,https://www.bikedoctor.com/,+1-410-569-8833,2108 Emmorton Road,39.498466,-76.327035,node/6446580264,OpenStreetMap
+advoutoffice@csuchico.edu,service,Bike Hub,https://as.csuchico.edu/adventure-outings/bike-hub,+1-530-898-5034,,39.730731,-121.845312,way/1106265307,OpenStreetMap
+info@thebikehub.com,service,Bike Hub,https://thebikehub.com/,+1-509-443-4005,12505 East Sprague Avenue,47.657641,-117.236768,way/360972598,OpenStreetMap
+teambikeohio@gmail.com,service,Bike Ohio,https://bikeoh.com,+1 440-543-1155,8576 Washington Street,41.411966,-81.336474,node/11359318042,OpenStreetMap
+bikeshopdenver@gmail.com,service,Bike Shop Denver,https://bikeshopdenver.wpcomstaging.com/,+1-720-486-4330,925 West 21st Street,39.751746,-104.988378,node/13529992959,OpenStreetMap
+bikeshopjoes@gmail.com,service,Bike Shop Joe's,https://bikeshopjoes.com/,+14797092242,1206 Moberly Lane,36.358635,-94.183968,node/12256395620,OpenStreetMap
+bk@biketothesea.org,service,Bike to the Sea Bike Kitchen,https://biketothesea.org/bk/,,158 Canal Street,42.420759,-71.072149,node/11228804762,OpenStreetMap
+mail@bikesnotbombs.org,service,Bikes Not Bombs - Hub and Bike Shop,https://bikesnotbombs.org,+1-617-522-0222,284 Amory Street,42.314921,-71.104045,node/6429086234,OpenStreetMap
+shop@bikesforkidswi.org,service,Bikes for Kids WIsconsin,https://bikesforkidswi.org/services/,,354 Coyier Lane,43.040874,-89.372213,node/13313498629,OpenStreetMap
+birchbaybikeshop@gmail.com,service,Birch Bay Bike Shop,https://www.birchbaybikeshop.com/,+1-360-922-2447,4823 Alderson Road,48.917316,-122.743979,node/13767411899,OpenStreetMap
+info@blackmountainbicycles.com,service,Black Mountain Bicycles,https://www.blackmountainbicycles.com/,+1-858-566-0710,9860 Hibert Street,32.914444,-117.115183,way/761929458,OpenStreetMap
+blazingsaddlecycle@gmail.com,service,Blazing Saddle Cycle,https://www.blazingsaddlecycle.com/,+1-216-218-1811,7427 Detroit Avenue,41.482332,-81.736383,node/2689184460,OpenStreetMap
+bloomingtoncycle@gmail.com,service,Bloomington Cycle and Fitness,https://www.bloomingtoncycleandfitness.com/,+1 309 820 8036,915 East Washington Street,40.479555,-88.981268,node/6668996528,OpenStreetMap
+info@bluecatmotorcycle.com,service,Blue Cat Motorcycle Repair,https://www.bluecatmotorcycle.com/,+1-651-645-1172,460 North Prior Avenue,44.95523,-93.181909,way/137068684,OpenStreetMap
+boostbikeshop@gmail.com,service,Boost Bike Shop,https://www.boost-exp.com/bike-shop-home-page.html/,+1-704-419-9923,125 West Marion Street,35.291831,-81.541478,node/14042090026,OpenStreetMap
+contact@breakawaybike.com,service,Breakaway Bike and Fitness Shop Inc.,https://www.breakawaybike.com/,+1 765 473 3848,,40.75393,-86.067683,way/843365199,OpenStreetMap
+info@brimstonebicycles.com,service,Brimstone Bicycles,https://brimstonebicycles.com/,+1-330-970-0911,133 Canal Street South,40.889118,-81.597548,node/6283694614,OpenStreetMap
+broadway@broadwaybicycleschool.com,service,Broadway Bicycle School,https://broadwaybicycleschool.com/,+1-617-868-3392,351 Broadway,42.370433,-71.103537,node/387040863,OpenStreetMap
+bullseyebicycle@gmail.com,service,Bullseye Bicycle,https://bullseyebicycle.com/,+1-919-438-3883,102 Morris Street,35.997173,-78.903751,node/2824997593,OpenStreetMap
+bushwickbicycleshopinc@gmail.com,service,"Bushwick Bicycle Shop, Inc.",https://bushwickbicycles.webs.com/,+1-718-366-2804,308 Irving Avenue,40.698808,-73.914269,node/6341505675,OpenStreetMap
+bushwickcyclesinc@gmail.com,service,"Bushwick Cycles, Inc.",,+1-347-227-8058,61-03 Fresh Pond Road,40.71451,-73.900946,node/5753835777,OpenStreetMap
+candobicycle@gmail.com,service,C&O Bicycle,https://www.candobicycle.com/,+1-301-678-6665,9 South Pennsylvania Avenue,39.698448,-78.182343,node/10666073814,OpenStreetMap
+cat@lvcat.org,service,CAT-Coalition for Appropriate Transportation,https://lvcat.org/,+1 610 954 5744,33 West Walnut Street,40.621476,-75.380303,node/2716428459,OpenStreetMap
+ccbikeco77@gmail.com,service,CC Bike Co.,https://ccbikecompany.com/,+1 316 874 3101,1120 North Main Street,37.830323,-96.848662,node/13351327115,OpenStreetMap
+cccyclerynyc@gmail.com,service,CC Cyclery,,+1 646-602-6944,530 East 13th Street,40.72899,-73.979435,node/5794692160,OpenStreetMap
+info@camasbikes.com,service,Camas Bike & Sport,https://www.camasbikes.com/,+1-360-210-5160,303 Northeast 6th Avenue,45.586843,-122.406168,node/10776660992,OpenStreetMap
+cambridge.bicycle@gmail.com,service,Cambridge Bicycle,http://cambridgebicycle.com/,+1-617-876-6555,259 Massachusetts Avenue,42.361827,-71.097336,node/365947120,OpenStreetMap
+info@campuscyclery.com,service,Campus Cyclery,https://campuscyclery.com/,+1-513-721-6628,241 West McMillan Avenue,39.127748,-84.520982,way/67142828,OpenStreetMap
+ejohnson@campuswheelworks.com,service,Campus Wheelworks,https://www.campuswheelworks.com/,+17168813613;+17162482372,1330 Niagara St,42.920248,-78.8989,node/293302295,OpenStreetMap
+2wheel.trouble@gmail.com,service,Canyon Creek Bicycles,https://canyoncreekbikes.com/,+1-541-492-1690,645 Southeast Jackson Street,43.208174,-123.344433,node/2585406715,OpenStreetMap
+bikes@carytownbikes.com,service,Carytown Bicycle Co.,https://www.incycle.com/pages/carytown-bikes,+1 804-440-2453,3112 West Cary Street,37.553252,-77.480605,node/3075570058,OpenStreetMap
+cedarbluffcycles@knology.net,service,Cedar Bluff Cycles,https://cedarbluffcycles.net/,+1-865-692-1010,9282 Kingston Pike,35.910464,-84.088161,node/13530072763,OpenStreetMap
+cennascycles@icloud.com,service,Cenna Custom Bicycles,https://cennascycles.com,+1 303 834 9511,,40.135578,-105.103117,node/11203707957,OpenStreetMap
+support@coastalempiremoto.com,service,Coastal Empire Moto,https://www.coastalempiremoto.com/,+1-912-662-6134,3917 Bull Street,32.041933,-81.106315,node/13427399000,OpenStreetMap
+coloradoebikes@gmail.com,service,Colorado Electric Bikes,https://coloradoebikes.com/,+1-970-242-3126,2751 Riverside Parkway,39.062614,-108.542723,way/1197258607,OpenStreetMap
+csbikeco@gmail.com,service,Colorado Springs Bike Shop,https://www.coloradospringsbikeshop.com/,+1-719-634-4915,622 West Colorado Avenue,38.833125,-104.837047,way/235506202,OpenStreetMap
+info@bikeconcord.org,service,Concord Community Bike Kitchen,https://bikeconcord.org,,2730 Salvio Street,37.980301,-122.026725,node/13053603799,OpenStreetMap
+john@conradsbikeshop.com,service,Conrad's Bike Shop,https://conradsbikeshop.com/,+1 212-697-6966,25 Tudor City Place,40.748448,-73.970721,node/3830979066,OpenStreetMap
+service@coolvalleycycles.com,service,Cool Valley Cycles LLC,https://coolvalleycycles.com,+1-724-514-6521,619 South Central Avenue,40.249545,-80.185595,way/262068021,OpenStreetMap
+shop@corvalliscycleryinc.com,service,Corvallis Cyclery,http://www.corvalliscyclery.com/,+1 541 752 5952,344 Southwest 2nd Street,44.561318,-123.261508,node/979733514,OpenStreetMap
+info@crazylennysebikes.com,service,Crazy Lenny's E-Bikes,https://www.crazylennysebikes.com,+1 608 276 5921,6017 Odana Road,43.052723,-89.485372,way/37783822,OpenStreetMap
+criteriumbikes@gmail.com,service,Criterium Bike Shop,https://www.criterium.com/,+1-719-599-0149,6150 Corporate Drive,38.91844,-104.817486,way/193809697,OpenStreetMap
+hello@cutlassvelo.com,service,Cutlass Velo,https://cutlassvelo.com/,+1-443-478-3511,2031 Clipper Park Road,39.331495,-76.645736,node/13062867071,OpenStreetMap
+gen_mgr@cyclecraft.com,service,Cycle Craft Parsippany,https://www.cyclecraft.com/,+1-973-227-4462,99 US 46,40.857631,-74.351057,way/958897152,OpenStreetMap
+info@athenscyclepath.com,service,Cycle Path Bicycles,https://athenscyclepath.com/,+1-740-593-8482,104 West Union Street,39.329255,-82.105043,way/555030535,OpenStreetMap
+cyclesanjuans@gmail.com,service,Cycle San Juan,https://cyclesanjuan.com/,+1-360-797-5787,845 Argyle Avenue,48.526283,-123.01818,node/13120382674,OpenStreetMap
+info@roguecycle.com,service,Cycle Sport,https://www.roguecycle.com/storelocator/,+1-541-857-0819,940 North Phoenix Road,42.315336,-122.815909,way/953572713,OpenStreetMap
+info@cycleworksusa.com,service,Cycle Works,https://www.cycleworksusa.com/,+1-402-475-2453,720 North 27th Street,40.820401,-96.681998,way/70484204,OpenStreetMap
+cyclerysolutions@gmail.com,service,Cyclery Solutions,,+1 570-594-8103,350 Mill Street,40.960915,-76.618313,node/13300685181,OpenStreetMap
+cyclesdeoro@gmail.com,service,Cycles de ORO,http://www.cyclesdeoro.com/,+1 336-274-5959,701 Hill Street,36.081227,-79.800372,node/12103119270,OpenStreetMap
+shopcyclewerks@gmail.com,service,Cycleworks,https://www.shopcyclewerks.com/whitehouse,+1-419-877-1000,6760 Providence Street,41.51757,-83.803044,node/5620970921,OpenStreetMap
+cyclinnutz2019@gmail.com,service,Cyclin' Nutz,http://freemason48.wixsite.com/cyclinnutz-1,+1-434-608-2461,508 Pittsylvania Avenue,37.109989,-79.286643,way/1216366725,OpenStreetMap
+info@cyclotherapy.com,service,Cyclotherapy,https://cyclotherapy.com/,+1-937-717-5173,40 West High Street,39.92352,-83.811789,node/9791022489,OpenStreetMap
+ride@cykelworx.com,service,CykelWorx,https://www.cykelworx.com/,+1-828-556-0330,72 South Broad Street,35.232867,-82.735106,node/14042090016,OpenStreetMap
+dashingstaff@gmail.com,service,Dashing Bicycles,http://www.dashingnola.com/,+1 504 264 3343,1927 Sophie Wright Place,29.931579,-90.074661,node/10315693642,OpenStreetMap
+delandcyclery@gmail.com,service,DeLand Cyclery,,+1-386-822-9422,360 West Michigan Avenue,29.03329,-81.310453,node/12827569191,OpenStreetMap
+info@diamondcycle.com,service,Diamond Cycle,https://www.diamondcycle.com/,+1 973-509-0233,409 Bloomfield Avenue,40.813069,-74.216243,node/4837099828,OpenStreetMap
+service@diazmotorcycles.com,service,Diaz Motorcycles & Service,https://www.diazmotorcycles.com/,+1-470-460-9883,847 Barnes Mill Road Northeast,33.961275,-84.527753,way/332077955,OpenStreetMap
+dirtyriverbikes@gmail.com,service,Dirty River Bicycle Works,https://www.dirtyriver.bike,+1-330-990-9300,55 Glendale Avenue,41.085882,-81.521394,way/1239152205,OpenStreetMap
+service@dogspeedcycles.com,service,Dogspeed Cycles,http://dogspeedcycles.com,+15129022486,1619 East Cesar Chavez Street,30.257777,-97.727169,node/7112798561,OpenStreetMap
+durhambike@gmail.com,service,Durham Bike,https://www.durhambike.com/,+1-603-397-5140,22A North Main Street,43.085943,-70.934601,node/7067954420,OpenStreetMap
+acrossthetracks85@gmail.com,service,E Bike Sales And Repairs,,+1 659 268 5865,2831 Searchwood Drive,30.352949,-81.594601,node/13715917506,OpenStreetMap
+sales@earthmountainbicycle.com,service,Earth Mountain Bicycle,https://earthmountainbicycle.com/,+1-828-862-5111,66 East Main Street,35.23315,-82.733323,node/11128672679,OpenStreetMap
+venny@edgeandspoke.com,service,Edge & Spoke,https://www.edgeandspoke.com/,+1-425-883-7544,7875 Leary Way Northeast,47.674068,-122.1232,way/90045101,OpenStreetMap
+elitebicycles@att.net,service,Elite Bicycles,http://elitebicyclestyler.com/,+1-903-534-9998,2251 Three Lakes Parkway,32.271235,-95.341653,node/9634250809,OpenStreetMap
+gkdexter56@gmail.com,service,Elkin E-Bikes,https://elkinebikes.com/,+1-336-902-1339,679 Martin Byrd Road,36.292527,-80.870856,node/14042090031,OpenStreetMap
+bikeindobbs@gmail.com,service,Endless Trail Bikeworx,https://www.endlesstrailbw.com,+1 914-674-8567,56 Main Street,41.013431,-73.876467,node/10012251975,OpenStreetMap
+contact@eugeneelectricbicycles.com,service,Eugene Electric Bicycles,https://www.eugeneelectricbicycles.com,+1 541-735-3137,675 River Road,44.072238,-123.117963,node/14244595128,OpenStreetMap
+sales@exaltedebikes.com,service,Exalted E-Bikes,https://exaltedebikes.com/,+1-336-899-7576,1325 North Main Street,35.97229,-80.017262,node/10882102267,OpenStreetMap
+bikedoc@excelbikenorwalk.com,service,Excel Bike,https://www.excelbikenorwalk.com/,+1-419-668-3027,44 East Main Street,41.242957,-82.613777,node/9656514432,OpenStreetMap
+excitebiikesllc@gmail.com,service,Excite Bikes,https://www.excitebikes.com/,+1-704-781-5737,108 West Main Street,35.260225,-80.425921,node/9174258807,OpenStreetMap
+team@fairmountbicycles.com,service,Fairmount Bicycles,https://www.fairmountbicycles.com,+1-267-507-9370,2015 Fairmount Avenue,39.967485,-75.170818,way/1017023115,OpenStreetMap
+fccbikeworks@gmail.com,service,Falls City Community BikeWorks,https://www.fccbikeworks.org/,,716 Logan Street,38.243925,-85.738489,node/13719728048,OpenStreetMap
+info@ferriswheelsbikeshop.com,service,Ferris Wheels Bike Shop,https://ferriswheelsbikeshop.com/,+1-617-524-2453,66 South Street,42.307504,-71.115325,node/3287096161,OpenStreetMap
+info@fitnesscentralinc.com,service,Fitness Central,https://www.fitnesscentralinc.com/,+1-610-769-7300,4337 PA 309,40.663787,-75.604191,way/1208586531,OpenStreetMap
+info@fitzharrismn.com,service,Fitzharris Bike and Sport,https://fitzharrismn.com,+1 320 251 2844,105 7th Avenue South,45.558742,-94.159736,way/222405728,OpenStreetMap
+flythesbikeshop@gmail.com,service,Flythe's Bike Shop,https://flythebikeshop.com/index.html,+1-252-638-1544,2411 Trent Road,35.099599,-77.078265,node/1161336582,OpenStreetMap
+foothillsbike@gmail.com,service,Foothills Cycling,,+1 336-789-5851,526 W Lebanon St,36.51548,-80.61392,node/11530838684,OpenStreetMap
+freeridebikeco@gmail.com,service,Free Ride Bike Co.,http://freeridebikeco.com/,+1-480-988-2121,3143 East Williams Field Road,33.306451,-111.722114,node/4739034373,OpenStreetMap
+bloomington@freewheelbike.com,service,Freewheel Bike,https://www.freewheelbike.com/about/bloomington-pg1102.htm,+1 952-888-1427,6415 Lake Road Terrace,44.913878,-92.977407,way/839524050,OpenStreetMap
+j@fullcirclebikeshop.com,service,Full Circle Bike Shop,https://www.fullcirclebikeshop.com,+1-413-585-8700,131 Main Street,42.335607,-72.671685,node/4517199892,OpenStreetMap
+gustin789@yahoo.com,service,G3 Motorsports,,+1 817 980 1481,506 South Main Street,32.34324,-97.385896,way/712913543,OpenStreetMap
+contact@galacticbikes.com,service,Galactic Bikes,https://www.galacticbikes.com/,+1-336-558-3229,2925 Battleground Avenue,36.11324,-79.834126,node/11967167197,OpenStreetMap
+gardencitycycles706@outlook.com,service,Garden City Cycles,,+1-706-834-4877,2002 Gordon Highway,33.451975,-82.051573,node/13535046339,OpenStreetMap
+jason@gearheadcyclehouse.com,service,Gearhead Cycle House,http://www.gearheadcyclehouse.com,+1 870-910-5569,,35.841007,-90.70511,node/2708358915,OpenStreetMap
+info@geminibikes.com,service,Gemini Bicycle & Ski Center,https://www.geminibikes.com/,+1-330-499-5900,4936 Everhard Road Northwest,40.850838,-81.44021,node/3423880042,OpenStreetMap
+info@glenviewcycle.com,service,Glenview Cycle,http://glenviewcycle.com/,+1-847-998-5900,1011 Harlem Avenue,42.07316,-87.80536,node/8174117001,OpenStreetMap
+goodkarma@goodkarmabikes.org,service,Good Karma Bikes,https://www.goodkarmabikes.org/,+1-408-291-0501,82 South Montgomery Street,37.329529,-121.900816,node/7616349853,OpenStreetMap
+hello@goodweatherinseattle.com,service,Good Weather Bicycle,https://goodweatherinseattle.com/,+1-206-552-9864,1423 10th Avenue,47.613669,-122.319753,node/9014368542,OpenStreetMap
+gravelcityks@gmail.com,service,Gravel City Adventure & Supply,http://GravelCityAdventure.com,+1-620-208-7680,716 Commercial Street,38.406817,-96.179945,node/2702320881,OpenStreetMap
+info@gravelo-workshop.com,service,Gravelo Workshop Bicycle & Coffee,https://www.gravelo-workshop.com/,+1-828-209-8798,793 Merrimon Avenue,35.625887,-82.553627,node/5759121260,OpenStreetMap
+info@greatwesternebikes.com,service,Great Western E-Bikes,https://www.greatwesternebikes.com/,+1 801-494-9898,358 West 500 South,40.884633,-111.888714,node/12854479677,OpenStreetMap
+shop@greenfleetbikes.com,service,Green Fleet Bicycle Shop,https://greenfleetbikes.com/,+1-615-379-8687,934 Jefferson Street,36.172739,-86.794416,way/474905525,OpenStreetMap
+greenlinecycles@gmail.com,service,Greenline Cycles,https://www.greenlinecycles.com/,+1-530-894-7885,515 Main Street,39.728142,-121.837609,node/14127240077,OpenStreetMap
+admin@gsobikeshop.org,service,Greensboro Community Bike Shop,https://www.gsobikeshop.org/,+1-336-270-9151,720 West Market Street,36.073167,-79.799145,node/8558459713,OpenStreetMap
+gvlbikeco@gmail.com,service,Greenville Bicycle Company,,+1-252-373-2020,802 South Clark Street,35.609005,-77.378365,way/1425941479,OpenStreetMap
+info@guildjourneyman.com,service,Guild + Journeyman,https://www.guildjourneyman.com/,+1-404-291-8486,115 Clairemont Avenue,33.776124,-84.296378,node/554816544,OpenStreetMap
+info@guthriebike.com,service,Guthrie Bicycle,https://www.guthriebike.com/,+1-801-484-0404,803 East 2100 South,40.725655,-111.867975,way/574677869,OpenStreetMap
+heathwb@yahoo.com,service,HWB Cycling,https://www.hwbcycling.com/,+1 740-453-5618,2790 Maple Avenue,39.974549,-82.0111,node/9595730543,OpenStreetMap
+gildnershd@yahoo.com,service,Harley-Davidson,https://www.gildnershd.com/,+1-989-345-1330,2723 South M-76,44.255211,-84.210361,node/11417817140,OpenStreetMap
+bike.hearns@gmail.com,service,Hearn's Cycling & Fitness,https://hearnscycling.com/,+1-828-253-4800,28 Asheland Avenue,35.593507,-82.556087,way/380248567,OpenStreetMap
+info-highdesertbicycleseast@specialized.com,service,High Desert Bicycles,,+1-505-842-8260,8110 Louisiana Boulevard Northeast,35.175545,-106.568594,node/11503446700,OpenStreetMap
+highlanderbike@msn.com,service,Highlander Bike,https://www.highlanderbikeshop.com/,+1-801-487-3508,3333 South Highland Drive,40.699204,-111.850008,way/518133144,OpenStreetMap
+hubcity301@gmail.com,service,Hub City Cycles,https://www.hubcitycycles.com/,+1-301-797-9877,13148 Pennsylvania Avenue,39.675271,-77.720246,node/10666057761,OpenStreetMap
+info@igordoesmybike.com,service,Igor Does My Bike,https://www.igordoesmybike.com/,+1 773 968 2453,,41.981585,-87.660258,node/12239804354,OpenStreetMap
+info@intownbicycles.com,service,Intown Bicycles,,+1-404-872-1736,1035 Monroe Drive Northeast,33.782909,-84.36811,node/2421385675,OpenStreetMap
+sales@islandbicyclesnc.com,service,Island Bicycles,www.islandbicyclesNC.com,+1-910-454-0479,5533 Rob Gandy Boulevard,33.941199,-78.019468,node/14018727050,OpenStreetMap
+jlpowersports21@gmail.com,service,J&L Powersports,,+1- 575-586-2417,2431 NM 522,36.703013,-105.595912,node/10227987187,OpenStreetMap
+progomez.racing@gmail.com,service,JRG Motorcycle Repair,,+1-469-359-3392,1921 Curtiss Street,32.748235,-96.976153,node/13674790411,OpenStreetMap
+info.jacksbicyclecenter@gmail.com,service,Jack's Bicycle Center,https://www.jacksbicyclecenter.com/,+1-360-733-1955,1907 Iowa Street,48.756753,-122.449107,node/5336395963,OpenStreetMap
+sales@jayscyclecenter.com,service,Jay's Cycle Center,https://www.jayscyclecenter.com/,+1 908-232-3250,227 North Avenue East,40.650931,-74.344081,node/13265476443,OpenStreetMap
+info@jayscycles.com,service,Jay's Cycles,https://www.jayscycles.com/,+1-609-924-7233,249 Nassau Street,40.352013,-74.651287,way/490578602,OpenStreetMap
+inquire@jimsbicycleshop.com,service,Jim’s Bicycle Shop,https://www.jimsbicycleshop.com/,+1-513-793-1163,8015 Plainfield Road,39.207963,-84.399478,way/80319641,OpenStreetMap
+info@joesbikeshop.com,service,Joe's Bike Shop,https://joesbikeshop.com/,+1 443-869-3435,723 South Broadway,39.282905,-76.593037,node/2123366892,OpenStreetMap
+jonnyrockbikes@gmail.com,service,Jonny Rock Bikes,,+1-952-303-4371,9150 Old Cedar Avenue South,44.837794,-93.249521,node/10830063340,OpenStreetMap
+rlstitely@embarqmail.com,service,Kessler's Bike Shop,,+1-717-632-9157,129 Baltimore Street,39.79862,-76.981463,node/4722627004,OpenStreetMap
+kimsbikeshop@gmail.com,service,Kim's Bike Shop,https://www.kimsbikes.com/,+1 732 846 3880,111 French Street,40.493485,-74.45214,way/991916122,OpenStreetMap
+info@klinkcycles.com,service,Klink Cycles,https://www.klinkcycles.com/,+1 541 221 9961,385 West 2nd Avenue,44.057843,-123.098333,node/10977405841,OpenStreetMap
+sales@kozy.com,service,Kozy's Cyclery,https://www.kozy.com/,+1 773 281 2263,3712 North Halsted Street,41.949714,-87.649741,node/7943259927,OpenStreetMap
+ldcyclescorp@gmail.com,service,L&D Cycles Corp,https://ldcycles.weebly.com/,+1-347-662-6003,7310 13th Avenue,40.621311,-74.006592,node/7075619132,OpenStreetMap
+braintree@landrys.com,service,Landry's Bicycles,https://www.landrys.com/,+1-781-519-6306,44 Granite Street,42.226295,-71.031445,node/3293620482,OpenStreetMap
+natick@landrys.com,service,Landry's Bicycles,https://www.landrys.com/,+1-508-655-1990,790 Worcester Street,42.299909,-71.356834,node/3293620483,OpenStreetMap
+boston@landrys.com,service,Landry's Bicycles,https://www.landrys.com/locations/landrys-charlestown,+1-617-644-7400,100 Hood Park Drive,42.379641,-71.073225,node/12800490801,OpenStreetMap
+norwood@landrys.com,service,Landry's Bicycles,https://www.landrys.com/,+1-781-440-0310,1583 Boston-Providence Turnpike,42.15953,-71.201743,way/214917466,OpenStreetMap
+info@larrysfreewheeling.com,service,Larry's Freewheeling,https://larrysfreewheeling.com/,+1-212-280-7800,301 Cathedral Parkway,40.801116,-73.958971,node/2583212036,OpenStreetMap
+david@loosenutscycles.com,service,Loose Nuts Cycles,http://www.loosenutscycles.com,+1-404-228-5555,452A Cherokee Avenue Southeast,33.742208,-84.373289,node/2626402978,OpenStreetMap
+makeshiftbikes@protonmail.com,service,Makeshift Bikes,https://makeshiftbikes.com/,+1-412-586-5410,431 East Ohio Street,40.453385,-80.000607,node/12344386115,OpenStreetMap
+sales@mellowjohnnys.com,service,Mellow Johnny's Bike Shop,https://www.mellowjohnnys.com/,+1-512-473-0222,115 Sandra Muraida Way,30.267628,-97.755067,node/11364449473,OpenStreetMap
+metalkandycustoms@gmail.com,service,Metal Kandy Customs,https://metalkandycustoms.com/,+1 850-291-7198,6842 AL-54,31.064158,-86.191029,node/9082925180,OpenStreetMap
+rideyourbike@methowcyclesport.com,service,Methow Cycle and Sport,https://www.methowcyclesport.com/,+1-509-996-3645,29 Highway 20,48.477566,-120.191224,way/243498806,OpenStreetMap
+info@mojocyclery.com,service,Mojo Cyclery,https://www.mojocyclery.com,+1-509-828-3061,1405 North Argonne Road,47.670039,-117.283382,node/13596305397,OpenStreetMap
+mojobicycles@gmail.com,service,Mojo Cycling,https://www.mojocycling.com/,+14792717201,1100 North Walton Boulevard,36.384594,-94.220613,node/1127585939,OpenStreetMap
+bikes@molehillbikes.com,service,Mole Hill Bikes,https://www.molehillbikes.com/,+1-540-879-2011,440 Main Street,38.420207,-78.932192,way/1301870428,OpenStreetMap
+neil@montlakebike.com,service,Montlake Bicycle Shop,https://www.montlakebike.com/,+1-206-329-7333,2223 24th Avenue East,47.639393,-122.302295,node/463013463,OpenStreetMap
+hello@motionmakers.com,service,Motion Makers Bicycle Shop,https://motionmakers.com/pages/motion-maker-sylva-bike-shop,+1-828-586-6925,36 Allen Street,35.374453,-83.222835,node/7489402004,OpenStreetMap
+mail@motoguild.com,service,Moto Guild,https://www.motoguild-sf.com/,+1-415-624-3795,849 13th Street,37.829896,-122.369155,node/11643281998,OpenStreetMap
+info@motoluciasf.com,service,Moto Lucia,https://www.motoluciasf.com/,+1-628-867-3066,1177 Howard Street,37.776585,-122.410938,node/4358193990,OpenStreetMap
+info@bike123.com,service,Mt. Airy Bicycle Company,http://bike123.com,+1-301-831-5151,4540 Old National Pike,39.35935,-77.160761,node/11064698874,OpenStreetMap
+george@mthoodbicycle.com,service,Mt. Hood Bicycle,https://mthoodbicycle.com/,+1-503-564-9086,68220 Mount Hood Highway,45.346832,-121.962873,node/6505139607,OpenStreetMap
+info@myrtlebeachelectricbikes.com,service,Myrtle Beach Electric Bikes,https://myrtlebeachelectricbikes.com/,+1 843 231 8500,4559 Highway 17,33.680158,-78.963139,node/13322020690,OpenStreetMap
+info@nycvelo.com,service,NYC Velo,https://nycvelo.com,+1 212-582-7949,590 West 45th Street,40.762543,-73.996725,node/3911498229,OpenStreetMap
+info@narrowpathcycles.com,service,Narrow Path Cycles,https://narrowpathcycles.com,+1-678-894-2684,980 Rowland Street,33.807978,-84.239668,node/12864786388,OpenStreetMap
+info@niwotwheelworks.com,service,Niwot Wheel Works,https://www.niwotwheelworks.com/,+1 720 340 2979,124 2nd Avenue,40.103426,-105.172867,node/6162919839,OpenStreetMap
+nokomiscycle@yahoo.com,service,Nokomis Cycle,https://www.nokomiscycle.com/,+1-612-721-2959,4553 Bloomington Avenue,44.919928,-93.252167,node/1776204474,OpenStreetMap
+info@northportlandbikeworks.com,service,North Portland Bike Works,http://northportlandbikeworks.com/,+1-503-287-1098,700 North Killingsworth Street,45.562554,-122.674151,node/11946866941,OpenStreetMap
+sales@nscycles.com,service,North Shore Cycle,https://www.nscycles.com/,+1-781-581-2700,251 Western Avenue,42.477136,-70.949497,node/11103903344,OpenStreetMap
+squirrely@oakcitycycling.com,service,Oak City Cycling,https://www.oakcitycycling.com/,+1-919-436-0527,707 North Person Street,35.789375,-78.634573,node/11283746284,OpenStreetMap
+fenwickbikes@comcast.net,service,Ocean Cycles,https://www.facebook.com/OceanCyclesBethanyBeach,+1 302-537-1522,33016 Coastal Highway,38.52873,-75.058905,node/3659586112,OpenStreetMap
+info@oldfortbikeshop.com,service,Old Fort Bike Shop,https://www.oldfortbikeshop.com/,+1-678-653-3678,276 Catawba Avenue,35.625105,-82.181335,node/14042090034,OpenStreetMap
+info@oldstationcycle.com,service,Old Station Cycle,https://www.oldstationcycle.com/,+14408381988,12417 Chippewa Road,41.323261,-81.597108,node/10082297026,OpenStreetMap
+oldsteelbicyclery@gmail.com,service,Old Steel - Bicycle Repair and Recyclery,,+1-607-379-5099,101 East State Street,42.439351,-76.498843,node/8796637014,OpenStreetMap
+bikes@oldtownbikeshop.com,service,Old Town Bike Shop,https://www.oldtownbikeshop.com/,+1-719-475-8589,426 South Tejon Street,38.827222,-104.824315,way/311730045,OpenStreetMap
+infojh@fitzgeraldsbicycles.com,service,Open Range Cycles - Jackson,https://www.fitzgeraldsbicycles.com,+1-307-201-5453,500 US 89,43.470082,-110.791074,node/6680643735,OpenStreetMap
+info@optibike.com,service,Optibike Electric Bicycles,https://optibike.com,+1-303-443-0932,41404 Stewart Mesa Road,38.845327,-107.589468,node/7392669767,OpenStreetMap
+hello@orangepeelbikes.com,service,Orange Peel Bikes,https://www.orangepeelbikes.com/,+1-970-879-2957,1901 Curve Plaza,40.500944,-106.856482,node/12101468379,OpenStreetMap
+info@outback-bikes.com,service,Outback Bikes,https://www.outback-bikes.com/,+1 404-688-4878,484 Moreland Avenue Northeast,33.767732,-84.349341,node/1237714064,OpenStreetMap
+freewheelers@uml.edu,service,Outdoor Center and Bike Shop,https://uml.edu/bikeshop,+1-978-934-6797,5 Lawrence Drive,42.652329,-71.316418,node/6938603130,OpenStreetMap
+overmountaincycles@gmail.com,service,Overmountain Cycles,https://www.overmountaincycles.com/,+1-828-413-1357,355 Sanford Drive,35.748445,-81.704963,node/14042090030,OpenStreetMap
+admin@pedegopiedmonttriad.com,service,Pedago Electric Bicycle Shop,https://dealers.pedegoelectricbikes.com/pages/dealers/winston-salem,+1-336-727-3555,176 YWCA Way,36.07808,-80.241796,node/14042090021,OpenStreetMap
+pedal2petal@gmail.com,service,Pedal 2 Petal,,+1-919-615-0102,122 East Main Street,35.706414,-78.604504,node/14042090047,OpenStreetMap
+info@pegasusbicycleworks.com,service,Pegasus Bicycle Works,http://www.pegasusbicycleworks.com,+1-925-362-2220,721 Castro Street,38.016599,-122.137088,node/5777592953,OpenStreetMap
+spike_m@phattirebikeshop.com,service,Phat Tire Bike Shop,https://www.phattirebikeshop.com/,+1 479 966 4308,,36.120087,-94.151308,node/6200071540,OpenStreetMap
+cat_o@phattirebikeshop.com,service,Phat Tire Bike Shop,https://www.phattirebikeshop.com/contact/springdale-ar-pg315.htm,+1-479-717-2073,281 East Meadow Avenue,36.183849,-94.129653,way/775582853,OpenStreetMap
+info@pineappleexpress.bike,service,Pineapple Express Bike Shop,https://pineappleexpress.bike/,+1 541-655-0233,832 Oregon Street,42.745681,-124.497155,node/10179080201,OpenStreetMap
+info@pittsboroebikes.com,service,Pittsboro eBikes,https://pittsboroebikes.com/,,213 Lorax Lane,35.710076,-79.156312,node/14042090050,OpenStreetMap
+planet_bike@comcast.net,service,Planet Bike,https://www.facebook.com/planetbikeltd/,+1 814 371 2555,,41.11922,-78.760999,node/6173049826,OpenStreetMap
+ponymotors@yahoo.com,service,Pony Motors,https://ponymotorsllc.com/,+1-507-313-0084,1126 East Broadway Street,44.04212,-91.608941,way/649759875,OpenStreetMap
+porcupinebikes@gmail.com,service,Porcupine Bikes,http://porcupinebikes.com/,+1-802-884-8429,144 Main Street,43.517223,-73.235715,node/14000453309,OpenStreetMap
+premieratvandcyclerepair@gmail.com,service,Premier ATV and Cycle Repair,https://premieratvcycles.com/,+1-601-277-8959,118 J C Drive,32.204727,-90.106634,node/13915799012,OpenStreetMap
+support@incycle.com,service,ProCycling,https://www.incycle.com/pages/retailer/procycling-warehouse,+1-719-266-4047,415 West Pikes Peak Avenue,38.833963,-104.833069,node/4328100193,OpenStreetMap
+info@quadbikes.org,service,Quad Bikes,https://www.quadbikes.org/,+1-617-496-5955,51 Shepard Street,42.381033,-71.123434,node/3281522438,OpenStreetMap
+info@quickcyclesatx.com,service,Quick Cycles,https://quickcyclesatx.com/,+1-512-608-4596,624 Canion Street,30.333947,-97.717825,node/14091320301,OpenStreetMap
+service@quickservicecycle.com,service,Quick Service Bicycle Shop,https://www.quickservicecycle.com/,+1-740-635-3700,701 North Lincoln Avenue,40.082798,-80.73789,node/9806686311,OpenStreetMap
+info@rodbikes.com,service,R & E Cycles,https://www.rodbikes.com,+1-206-527-4822,5627 University Way Northeast,47.670323,-122.313252,node/2323857992,OpenStreetMap
+info@rideyourbike.com,service,Rat City Bikes,http://www.rideyourbike.com,+1-206-938-9795,9614 16th Avenue Southwest,47.516948,-122.354969,node/1970908874,OpenStreetMap
+rvarecycles@gmail.com,service,ReCycles Bicycle Shop,https://www.riderecycles.com/,+1 804-355-0166,,37.550901,-77.474723,node/7690715489,OpenStreetMap
+rabshop@bike.nyc,service,Recycle-A-Bicycle,https://recycleabicycle.nyc,+1-347-799-1023,450 Grand Avenue,40.682769,-73.961966,node/14253146887,OpenStreetMap
+recyclesgso@gmail.com,service,Recycles Bike Shop,http://recyclesbikeshop.com/,+1-336-370-9099,908 Spring Garden Street,36.066683,-79.803149,node/8447290359,OpenStreetMap
+info@reidsvilleveloworks.com,service,Reidsville Velo Works,https://www.reidsvilleveloworks.com/,+1-336-347-0672,1731 Freeway Drive,36.356468,-79.692008,node/14042090048,OpenStreetMap
+info@rhoddiebicycleoutfitters.com,service,Rhoddie Bicycle Outfitters,https://www.rhoddiebicycleoutfitters.com/,+1-828-414-9800,7593 Valley Boulevard,36.136329,-81.670486,node/14042090033,OpenStreetMap
+info@richcityrides.org,service,Rich City Rides,https://www.richcityrides.org/,+1 510 288 0944,1500 Macdonald Avenue,37.9355,-122.355053,way/481786514,OpenStreetMap
+sylvanpark@ride615.com,service,Ride 615 Bicycle Shop - Sylvan Park,,+1-615-922-6511,4511 Charlotte Avenue,36.152048,-86.841904,node/12160361162,OpenStreetMap
+info@ride914.com,service,Ride of Pleasantville,https://www.ride914.com/,+1-914-495-3666,351 Manville Road,41.135418,-73.791198,node/4715519036,OpenStreetMap
+info@rideabike.com,service,Ride-A-Bike Bicycle Shop,https://rideabike.com/,+1-877-574-0656,140 East Main Street,35.263953,-81.181154,node/14042090027,OpenStreetMap
+ridethsbk@gmail.com,service,RideTHISBike,https://ridethisbike.com/,+1 504-324-2492,231 Dauphine Street,29.955942,-90.069646,node/3196484966,OpenStreetMap
+info@riograndebikes.com,service,Rio Grande Bicycle Service,https://www.riograndebikes.com/,+1-719-850-3101,500 Columbia Avenue,37.679582,-106.354378,node/12133189933,OpenStreetMap
+info@rivermillcycles.com,service,River Mill Cycles,https://www.rivermillcycles.com/,+1-919-298-2901,615 Hampton Pointe Boulevard,36.054803,-79.083234,node/13897798001,OpenStreetMap
+riversidebicycle@gmail.com,service,Riverside Bicycle Shop,https://www.riversidebicycleshop.com/,+1 931-647-9996,101 North Riverside Drive,36.527033,-87.363215,way/386424871,OpenStreetMap
+rockvillebikehub@gmail.com,service,Rockville Bike Hub,https://www.rockvillebikehub.org/,,2277 Lewis Avenue,39.065006,-77.123255,node/13265849101,OpenStreetMap
+info@rogueelectricaz.com,service,Rogue Electric Cyclery,https://rogueelectricaz.com/,+1-480-772-5750,5450 East High Street,33.675562,-111.963663,node/13004192963,OpenStreetMap
+bexley@rollbicycles.com,service,Roll,https://www.roll.shop/about/roll-bexley-pg194.htm#,+1 614 858 0390,2468 East Main Street,39.957275,-82.932894,node/3784073344,OpenStreetMap
+kicks@route66bicycles.com,service,Route 66 Bicycles,https://www.route66bicycles.com/,+1-573-368-3001,509 West 5th Street,37.947609,-91.775453,node/12564020834,OpenStreetMap
+help@roysbikes.com,service,Roy's Sheepshead Cycles,https://www.roysbikes.com,+1-718-648-1440,2679 Coney Island Avenue,40.591215,-73.960256,way/285137982,OpenStreetMap
+service@rubycanyoncycles.com,service,Ruby Canyon Cycles,https://rubycanyoncycles.com/,+1-970-241-0141,301 Main Street,39.066962,-108.567614,way/297740021,OpenStreetMap
+info@rudysbikes.com,service,Rudy's Cycle and Fitness,https://www.rudysbikes.com/,+1 773 736 4395,5711 West Irving Park Road,41.952951,-87.769981,node/5287162921,OpenStreetMap
+questions4rusty@gmail.com,service,Rusty Spokes Bicycle Shop,https://www.rsbikeco.com/,+1 740-951-0033,360 East Broad Street,40.006437,-82.66336,way/1347817101,OpenStreetMap
+info@sierraebike.com,service,SIERRA E-BIKE,https://sierraebike.com,+1-530-503-9000,11282 Pleasant Valley Road,39.223086,-121.204388,node/14190258134,OpenStreetMap
+info@smtwheels.com,service,SMT Wheels,https://www.smtwheels.com/,+1 855-943-1393,6015 North 57th Drive,33.524787,-112.182733,node/11303111252,OpenStreetMap
+aaron@speedmountain.com,service,SPEEDMountain,https://speedmountain.com/,+1 435-535-1113,437 North 100 West,41.739863,-111.83797,node/11918268345,OpenStreetMap
+sales@familycycling.com,service,San Mateo Cycle Sport,https://cyclesport.com/pages/san-mateo-store-location,+1-650-393-5031,66 East 4th Avenue,37.563051,-122.323605,node/11492560590,OpenStreetMap
+info@smbikecenter.com,service,Santa Monica Bike Center,,+1-310-656-8500,1555 2nd Street,34.012497,-118.493886,node/2976424584,OpenStreetMap
+info@smbikecenter.com,service,Santa Monica Bike Center: Satellite Location,,+1-310-656-8500,1502 4th Street,34.014799,-118.493573,node/2976424585,OpenStreetMap
+saturdaycycles@gmail.com,service,Saturday Cycles,https://www.saturdaycycles.com/,+1-801-935-4605,230 South 500 West,40.764144,-111.906232,node/11447369540,OpenStreetMap
+reservations@sebastopolbike.com,service,Sebastopol Bike Center,http://SebastopolBike.com,+1-707-829-2688,6731 Sebastopol Avenue,38.402549,-122.81926,node/7297380385,OpenStreetMap
+info@shenandoahbicycle.com,service,Shenandoah Bicycle Company,https://www.shenandoahbicycle.com/,+1-540-437-9000,135 South Main Street,38.448031,-78.869611,way/468368435,OpenStreetMap
+info@shorelineebikes.com,service,Shoreline Ebikes,https://shorelineebikes.com,+1-941-259-8350,3240 Southgate Circle,27.304738,-82.514585,way/1138177038,OpenStreetMap
+info@sinisterwheel.com,service,Sinister,https://sinisterwheel.com/,+1 209 664 0207,,37.490512,-120.839463,node/13127047100,OpenStreetMap
+berto@sixthcitycycles.com,service,Sixth City Cycles,https://www.sixthcitycycles.com/,+1-216-282-7794,4272 Pearl Road,41.439385,-81.706881,node/4868045306,OpenStreetMap
+skullmotoshop@gmail.com,service,Skull Moto Shop,https://www.skullmotoshop.com,+1-818-428-7844,10000 Canoga Avenue,34.251581,-118.597062,node/13545930637,OpenStreetMap
+info@slowrollcycles.com,service,Slow Roll Cycles,https://www.slowrollcycles.com/,+1 608 286 1176,4118 Monona Drive,43.078797,-89.324039,node/5473218355,OpenStreetMap
+info@smallshopchicago.com,service,Small Shop Cycles & Service,https://smallshopchicago.com/,+1-773-688-8449,4250 South Cottage Grove Avenue,41.817121,-87.606921,node/11123597867,OpenStreetMap
+smittysbikelock@gmail.com,service,Smitty's Bicycle & Locksmith Service,https://www.smittyspiqua.com/,+1-937-773-0747,1032 Covington Avenue,40.144076,-84.257175,way/1078945094,OpenStreetMap
+sales@soflovtwin.com,service,SoFlo V-twin LLC,https://soflovtwin.com/,+1-772-285-6150,6701 S US Highway 1,27.342968,-80.32642,node/13861391883,OpenStreetMap
+josh@socialcyclelc.com,service,Social Cycle Bike Shop,,+1 909 800 6127,121 East Depot Street,35.791046,-84.26492,node/13265952246,OpenStreetMap
+staff@somervillebikekitchen.org,service,Somerville Bike Kitchen,https://somervillebikekitchen.org/,,15 Properzi Way,42.382403,-71.105482,node/11970705158,OpenStreetMap
+info@sopobikes.org,service,Sopo Bike Co-op,https://sopobikes.org,+1 404-425-9989,680 Murphy Avenue Southwest,33.737715,-84.410508,node/10741818428,OpenStreetMap
+bikeshop@unidetroit.org,service,Southwest Rides,https://swridesdetroit.wordpress.com/,+1 313-315-2360,2026 Lawndale Street,42.307974,-83.131202,node/10009086181,OpenStreetMap
+info@spokebicyclecafe.com,service,Spoke Bicycle Cafe,https://www.spokebicyclecafe.com/,+1-323-622-4686,3050 North Coolidge Avenue,34.105087,-118.243595,node/14024927243,OpenStreetMap
+spokesbicycles@outlook.com,service,Spokes Bicycle Company,,+1-336-312-0963,747 East Davis Street,36.085957,-79.43018,node/14042090049,OpenStreetMap
+sales@spokesmanbicycles.com,service,Spokesman Bicycles,https://www.spokesmanbicycles.com/,+1-831-429-6062,231 Cathcart Street,36.971368,-122.026456,node/412317757,OpenStreetMap
+mhernandez@bicyclecollective.org,service,St. George Bicycle Collective,,+1 435-429-2666,,37.107547,-113.592761,node/12143288173,OpenStreetMap
+stevesrepairshop@gmail.com,service,Steve's Repair,,+1-989-356-9222,1208 US 23 North,45.092086,-83.457125,way/1235224726,OpenStreetMap
+info@strictlycyclingcollective.com,service,Strictly Cycling Collective,https://www.strictlycyclingcollective.com/,+1 332-246-0275,525 West 30th Street,40.752811,-74.002357,node/9423683697,OpenStreetMap
+daniel@studio-moto.com,service,Studio Moto,https://www.studio-moto.com/,+1-206-895-1180,1421 North 34th Street,47.647952,-122.33984,way/405358106,OpenStreetMap
+info@sycamorecycles.com,service,Sycamore Cycles,https://www.sycamorecycles.com/,+1-828-552-5211,743 Locust Street,35.321267,-82.458489,node/2490820985,OpenStreetMap
+pisgah@sycamorecycles.com,service,Sycamore Cycles,https://www.sycamorecycles.com/pages/sycamore-cycles-pisgah-forest-brevard-nc,+1-828-693-1776,112 Hendersonville Highway,35.273917,-82.70239,node/5797323158,OpenStreetMap
+info@taylorsbikeshop.com,service,Taylor's Bike Shop,https://www.taylorsbikeshop.com/,+1 801-377-8044,1520 North Freedom Boulevard,40.254204,-111.661602,node/369643382,OpenStreetMap
+apexsales@thebicyclechain.com,service,The Bicycle Chain,http://thebicyclechain.com/about/bicycle-chain-apex-pg611.htm,+1 919 362 4900,1791 West Williams Street,35.760438,-78.878178,node/2273147020,OpenStreetMap
+raleighsales@thebicyclechain.com,service,The Bicycle Chain,http://thebicyclechain.com/about/bicycle-chain-raleigh-pg609.htm,+1-919-782-1000,9000 Glenwood Avenue,35.893073,-78.752525,way/47969211,OpenStreetMap
+info-thebicycleshop@specialized.com,service,The Bicycle Shop,https://www.thebicycleshopinc.com/,+1-814-238-9422,441 West College Avenue,40.791011,-77.866384,node/7982548562,OpenStreetMap
+sales@thebicycle.com,service,The Bicycle Shop,https://www.thebicycle.com/,+1-910-455-1011,909 North Marine Boulevard,34.763253,-77.412554,node/1161345363,OpenStreetMap
+info@bikeconnector.org,service,The Bike Connector,https://www.bikeconnector.org/,,47 Lee Street,42.646119,-71.309558,node/11915310798,OpenStreetMap
+bikeguyonthegreenway@gmail.com,service,The Bike Guy,https://www.thebikeguyonthegreenway.com/,+1-919-977-5164,9745 Foneville Road,35.93959,-78.579975,node/11813095283,OpenStreetMap
+info@thebikelibrary.com,service,The Bike Library,https://thebikelibrary.com/,+1-919-322-2991,,35.775393,-78.648209,node/14042090054,OpenStreetMap
+doug@bikeroutenaples.com,service,The Bike Route,https://www.bikeroutenaples.com/,+1-239-262-8373,655 9th Street North,26.155014,-81.797041,node/12913429299,OpenStreetMap
+aiea@bikeshophawaii.com,service,The Bike Shop,https://www.bikeshophawaii.com/,+1 808-487-3615,98-019 Kamehameha Highway,21.385121,-157.950902,node/5241632055,OpenStreetMap
+jayson@thebikestoponline.com,service,The Bike Stop,https://www.thebikestoponline.com/,+1-940-322-7301,2708 Southwest Parkway,33.858666,-98.531507,node/5261155719,OpenStreetMap
+info@thebikery.org,service,The Bikery,https://www.thebikery.org/,,855 Hiawatha Place South,47.594512,-122.309389,node/2374136274,OpenStreetMap
+josh@thebreakbikeshop.com,service,The Break Bike Shop,https://thebreakbikeshop.com/,+1-978-300-7909,872 Main Street,42.585813,-71.805424,node/12848079267,OpenStreetMap
+cafehandlebar@gmail.com,service,The Handlebar,https://www.handlebarashland.com/,+1-541-646-4353,120 East Main Street,42.196348,-122.713727,way/956222779,OpenStreetMap
+hello@thehayesvillebikeshop.com,service,The Hayesville Bike Shop,https://thehayesvillebikeshop.com/,+1-828-371-0623,74 Sanderson Street,35.045676,-83.81722,node/14042090042,OpenStreetMap
+thehubofdetroit@gmail.com,service,The Hub,http://thehubofdetroit.org/,+1-313-833-0813,3611 Cass Avenue,42.346341,-83.061358,node/5110336552,OpenStreetMap
+bentonville.bikes@themeteorcafe.com,service,The Meteor Bike Shop,https://themeteor.cafe/bike,+14792684747,401 Southeast D Street,36.368146,-94.204029,node/12256334840,OpenStreetMap
+info@theokobojicyclist.com,service,The Okoboji Cyclist,,+1-712-332-9001,922 Okoboji Avenue,43.324736,-95.149755,node/4852494016,OpenStreetMap
+jsunandstars@cs.com,service,The Pedal Shop,,+1-740-374-8584,404 3rd Street,39.418686,-81.455436,node/8908209661,OpenStreetMap
+info@thepolkadotjersey.com,service,The Polka Dot Jersey,https://www.thepolkadotjersey.com/,+1-206-328-5400,120 Lakeside Avenue,47.602368,-122.284814,node/5762448967,OpenStreetMap
+bikes@recyclery.org,service,The ReCYCLEry,https://www.recyclery.org,,1120 Hillsborough Road,35.926121,-79.091489,node/10309630450,OpenStreetMap
+hello@theridecafe.com,service,The Ride Cafe,https://theridecafe.com/,+1-617-644-0212,368 Main Street,42.452596,-71.067047,node/11073418666,OpenStreetMap
+tsbs360@outlook.com,service,Three Sixty Bike Shop,https://threesixtybikes.com/,+1 740-297-8580,503 Brighton Boulevard,39.932563,-82.022699,way/1077515948,OpenStreetMap
+tinycornerbikeshop@gmail.com,service,Tiny Corner Bike Shop,https://www.thetinycornerbikeshop.com/,+1 301-756-5080,103 Town Park Lane,39.408172,-79.409685,way/1146142982,OpenStreetMap
+info@topgearbicycleshop.com,service,Top Gear Bicycle Shop,https://www.topgearbicycleshop.com/,+1 801-292-0453,544 West 750 South,40.882149,-111.89345,node/13241680875,OpenStreetMap
+trailsidecycle@hotmail.com,service,Trailside Cycle,https://www.trailsidecycle.com/,,,43.010143,-88.127702,node/4146629886,OpenStreetMap
+info@treadbikeshop.com,service,Tread Bike Shop,https://treadbikeshop.com/,+1-212-544-7055,250 Dyckman Street,40.86633,-73.928557,node/2070984272,OpenStreetMap
+info@trekstorealaska.com,service,Trek,https://trekstorealaska.com/,+1 907-743-6000,530 East Benson Boulevard,61.192468,-149.874117,node/7724781517,OpenStreetMap
+clearlake@bikebarn.com,service,Trek,https://www.trekbikes.com/us/en_US/retail/clear_lake/,+1-281-480-9100,2422 Bay Area Boulevard,29.574366,-95.107146,node/3902225731,OpenStreetMap
+trikesbyrodney@roadrunner.com,service,Trikes by Rodney,https://www.trikesbyrodney.com/,+1 740-819-1987,393 Mound Road,39.878999,-81.913662,way/1205174048,OpenStreetMap
+service@triumphofseattle.com,service,Triumph of Seattle Service,https://www.triumphofseattle.com/we-repair-your-motorcycle-or-scooter-in-seattle-wa--service,+1-206-783-2323,7409 Aurora Avenue North,47.682896,-122.344861,node/7634153552,OpenStreetMap
+tunedbyten@gmail.com,service,Tuned By Ten,https://www.tunedbyten.com/,+1 808-630-9450,99-899 Iwaena Street,21.373918,-157.912323,node/14288045044,OpenStreetMap
+twistedcog.ed@gmail.com,service,Twisted Cog,,+1 610-933-0700,167 Bridge Street,40.134187,-75.514957,node/4758528725,OpenStreetMap
+bikes@twobrosbikeco.com,service,Two Brothers Bicycle Company,https://www.twobrosbikeco.com/,+1-717-437-4252,309 South Logan Boulevard,40.626162,-77.564072,node/13374936734,OpenStreetMap
+bicycles@twowheeldrive.com,service,Two Wheel Drive,http://www.twowheeldrive.com,+1-505-243-8443,4001 Central Avenue Northeast,35.079408,-106.599763,node/13539882453,OpenStreetMap
+outdoor.recreation@ua.edu,service,UA Outdoor Recreation,https://urec.sa.ua.edu/outdoor-recreation-news/bikes/,+1 205-348-7045,,33.212437,-87.531232,node/11033277776,OpenStreetMap
+crystal@urbanridesllc.com,service,Urban E-Rides,https://urbaneridesllc.com,+1 321-615-1328,629 South Apollo Boulevard,28.099137,-80.620983,node/13747042840,OpenStreetMap
+info@velopasadena.com,service,Velo Pasadena Shop & Repair,https://www.velopasadena.com/,+1 626 304 0064,,34.145906,-118.097589,node/6887692888,OpenStreetMap
+virtuouscycles@gmail.com,service,Virtuous Cycles,http://virtuouscycles.us,+1 765 807 6557,215 N 10th St,40.419659,-86.885637,way/965754852,OpenStreetMap
+volthouse1@gmail.com,service,Volt House,https://www.volthouseoc.net/,+1 949-408-4299,24344 Muirlands Boulevard,33.627311,-117.704146,node/14160257301,OpenStreetMap
+spokeperson@velocitycoop.org,service,VéloCity Bicycle Cooperative,https://velocitycoop.org/,+1 703-549-1108,2111 Mount Vernon Avenue,38.825343,-77.058254,way/179129561,OpenStreetMap
+info@westendbikes.com,service,West End Bicycles,https://www.westendbikes.com/,+1 713 861 2271,5427 Blossom Street,29.767222,-95.417464,way/183911327,OpenStreetMap
+penny@westervillebikeshop.com,service,Westerville Bike Shop,https://westervillebikeshop.com/,+1-614-891-5654,29 Main Street,40.126442,-82.932905,way/374587150,OpenStreetMap
+salesandinfo@wheatonscycle.com,service,Wheaton's Cycle,https://www.wheatonscycle.com/,+1 406 257-5808,,48.196151,-114.314815,node/11126283697,OpenStreetMap
+wheeliefunbikeshop@gmail.com,service,Wheelie Fun Bike Shop,https://wheeliefunbikes.com/,+1-614-553-7700,3907 West Powell Road,40.161243,-83.092112,node/9164762687,OpenStreetMap
+workhorsebicycles@gmail.com,service,Work Horse Bicycles,https://www.workhorsebicycles.com/,+1-831-375-2144,486 Washington Street,36.598073,-121.893146,node/12479955701,OpenStreetMap
+message@2020cycle.com,shop,20/20 Cycle,https://2020cycle.com/,+1-206-568-3090,2020 East Union Street,47.613062,-122.305248,node/2375132257,OpenStreetMap
+info@816bike.org,shop,816 Bike Collective,https://816bike.org/,+1-816-343-8518,518 East 31st Street,39.070951,-94.577917,way/306149051,OpenStreetMap
+apexbikes@gmail.com,shop,APEX Mobility,https://apex-cycles.com/,+1-530-475-2739,231 G Street,38.544551,-121.739418,node/13905414713,OpenStreetMap
+flagstaff@absolutebikes.net,shop,Absolute Bikes,https://www.absolutebikes.net/,+1 928 779 5969,,35.196994,-111.646764,node/2127045336,OpenStreetMap
+actioncy@bellsouth.net,shop,Action Cycles,https://www.actioncyclestn.com/,+1 931-648-1151,1174 Fort Campbell Boulevard,36.55617,-87.397122,way/373849852,OpenStreetMap
+alansbicyclecenter@gmail.com,shop,Alan's Bicycle Center,https://www.alansbicyclecenter.com/,+1-772-562-2453,2020 Commerce Avenue,27.638406,-80.396477,way/699457131,OpenStreetMap
+asestore23@gmail.com,shop,All Seasons EStore,https://www.allseasonsestore.com/,+1 541 653 8185,2862 Willamette Street,44.027582,-123.093255,node/5404898837,OpenStreetMap
+info@allegrocyclery.com,shop,Allegro Cyclery,https://www.allegrocyclery.com/,+1-509-525-4949,200 East Main Street,46.068792,-118.336054,node/2582585650,OpenStreetMap
+alleycatoutfitters@gmail.com,shop,Alley Cat Outfitters,https://alleycatoutfitters.com/,+1-260-560-4144,100 Berry Street,40.792938,-85.819312,node/13608691801,OpenStreetMap
+info@a2scooter.com,shop,Ann Arbor Scooter Company,https://www.a2scooter.com/,+1-734-431-2992,402 Maynard Street,42.2776,-83.742145,node/9147204431,OpenStreetMap
+ride@appbikes.com,shop,Appalachian E-Bikes,https://www.appbikes.com/,+1-828-307-3696,848 North Main Street,35.497227,-82.979122,node/14042090040,OpenStreetMap
+welcome@arrivingbybike.com,shop,Arriving By Bike,,+1 541 484 5410,2705 Willamette Street,44.028839,-123.090424,way/1348165748,OpenStreetMap
+atlanticcyclesrentals@gmail.com,shop,Atlantic Cycles,https://www.atlanticcycles.com/,+1 302-226-2543,18 Wilmington Avenue,38.715443,-75.077726,node/11146714159,OpenStreetMap
+geebs56@gmail.com,shop,Attitude Alley Motorcycle Co LLC,https://www.attitudealley.com/,+1 717 6267112,929 Lititz Pike,40.135058,-76.303478,node/4129786097,OpenStreetMap
+info@austintricyclist.com,shop,Austin Tri Cyclist,https://www.austintricyclist.com/,+1-512-494-9252,923 Barton Springs Road,30.259603,-97.754585,node/436639712,OpenStreetMap
+info@buzznola.com,shop,BUZZ nola,https://www.buzznola.com/,+1 504-533-9688,223 Dauphine Street,29.955787,-90.069757,node/3354874205,OpenStreetMap
+info@backinactionbikes.com,shop,Back In Action Bikes,https://backinactionbikes.com,+1-617-505-6555,1018 Beacon Street,42.346193,-71.107726,node/10650438182,OpenStreetMap
+pete@backdoorsports.com,shop,Backdoor Sports,https://www.backdoorsports.com/,+1 970 879 6249,841 Yampa Street,40.48562,-106.836623,way/234301636,OpenStreetMap
+info@baldeaglehd.com,shop,Bald Eagle Harley-Davidson,https://baldeaglehd.com,+1 906 228 5330,2080 U.S. 41 West,46.548275,-87.431422,way/538127600,OpenStreetMap
+infobhd@barnettharley.com,shop,Barnett Harley Davidson,https://www.barnettharley.com,+1-800-453-1513,8272 Gateway Boulevard East,31.742031,-106.330153,node/4483167091,OpenStreetMap
+barnettslchd@barnettharley.com,shop,Barnett's Las Cruces Harley-Davidson,https://www.barnettslascruceshd.com,+1-575-541-1440,Avenida de Mesilla,32.288717,-106.792587,node/976458228,OpenStreetMap
+basecampadventureoutfitters@gmail.com,shop,Basecamp Adventure Outfitters,,+1 580 574 8955,206 East Lake Drive,34.727106,-98.499039,node/5292459262,OpenStreetMap
+info@beachrosebicycles.com,shop,Beach Rose Bicycles,https://www.beachrosebicycles.com/,+1 401 466 5925,,41.166609,-71.556141,node/7941487812,OpenStreetMap
+bikeandtrail@gmail.com,shop,Bearden Bike & Trail,https://www.beardenbikeandtrail.com/pages/bearden-bike-and-trail,+1-865-200-8710,126 North Forest Park Boulevard,35.942172,-83.981627,node/13574818917,OpenStreetMap
+befittingbicycles@gmail.com,shop,Befitting Bicycles,https://www.befittingbicycles.com/,+1-603-738-8872,118 East Lancaster Avenue,40.043859,-75.387091,node/13574229119,OpenStreetMap
+sales@bellsbikeshop.com,shop,Bell's Bike Shop,https://bellsbikeshop.com/,+1-215-543-6000,1320 East Passyunk Avenue,39.932723,-75.160128,node/14160398209,OpenStreetMap
+bellittebicycles@yahoo.com,shop,Bellite Bicycles,https://www.bellbikes.com/,+1-718-739- 3795,169-20 Jamaica Avenue,40.706942,-73.789994,node/4696391291,OpenStreetMap
+don@spoke-n-wheel.com,shop,Bicycle Barn,,+1 508 366 1770,123 Turnpike Road,42.285213,-71.603885,node/4441935946,OpenStreetMap
+bicyclebelleboston@gmail.com,shop,Bicycle Belle,http://bicyclebelleboston.com/,+1-617-661-0969,368 Beacon Street,42.385961,-71.116032,node/3281441148,OpenStreetMap
+info@bikex.org,shop,Bicycle Exchange - Silicon Valley,https://bikex.org/,+1 650-691-5989,3961 East Bayshore Road,37.430432,-122.102728,node/7034429446,OpenStreetMap
+bicyclerack@msn.com,shop,Bicycle Rack,https://www.njbicyclerack.com,+1-609-448-2928,683 Mercer Street,40.260298,-74.542027,way/1224000635,OpenStreetMap
+info@bicycletripcapitola.com,shop,Bicycle Trip,http://www.bicycletripcapitola.com,+1-831-226-5050,3555 Clares Street,36.978777,-121.968867,node/4890223749,OpenStreetMap
+info@bigalsbicycleheaven.com,shop,Big Al's Bicycle Heaven,https://bigalsbicycleheaven.com/,+1-970-349-0515,207 Elk Avenue,38.869869,-106.987134,node/6001421247,OpenStreetMap
+bikeandtrikeoutlet@gmail.com,shop,Bike & Trike Outlet of Omaha,https://biketrikeomaha.com,+1-531-999-8197,634 South 72nd Street,41.255171,-96.02504,node/13638781013,OpenStreetMap
+champions@bikebarn.com,shop,Bike Barn,,+1-281-320-0399,6935 Cypresswood Drive,30.010523,-95.513716,way/386865185,OpenStreetMap
+bayourental@bikebarn.com,shop,Bike Barn (Bayou Rental),,+1-713-955-4455,105 Sabine Street,29.762258,-95.376056,node/3902184058,OpenStreetMap
+bikefarm@bikefarm.org,shop,Bike Farm,https://bikefarm.org/,,1810 Northeast 1st Avenue,45.53599,-122.664496,node/4740935126,OpenStreetMap
+info@mybikehub.com,shop,Bike Hub,https://mybikehub.com,+1-567-279-2945,503 East Market Street,40.549234,-84.563829,way/1289528302,OpenStreetMap
+nir@bike-improve.com,shop,Bike Improve,https://bike-improve.com/,+1-310-400-0363,10927 Santa Monica Boulevard,34.049429,-118.439058,node/9172387396,OpenStreetMap
+bikenewbritain@gmail.com,shop,Bike New Britain,https://www.bikenb.org/,+1-860-249-3990,39 Bank Street,41.667538,-72.780264,node/10982675686,OpenStreetMap
+info@bikepeddler.net,shop,Bike Peddler,https://www.bikepeddler.com/,+1 503-399-7741,174 Commercial Street Northeast,44.941119,-123.039869,node/2113494983,OpenStreetMap
+bikeplantnyc@gmail.com,shop,Bike Plant,https://www.bikeplant.net/,+13472402466,,40.693245,-73.945722,node/2567981715,OpenStreetMap
+info@bikeswift.com,shop,Bike Swift,https://www.bikeswift.com/,+1-206-588-6546,603 Eastlake Avenue East,47.624447,-122.329362,node/3006165159,OpenStreetMap
+biketekmhk@gmail.com,shop,Bike Tek,https://biketekusa.com/manhattan/,+1-785-775-1620,1620 Fort Riley Boulevard,39.174669,-96.582739,node/6318870859,OpenStreetMap
+sales@biketiresdirect.com,shop,BikeTiresDirect,https://www.biketiresdirect.com/visit-store,+1 503-917-0156,5741 Northeast 87th Avenue,45.564547,-122.573712,node/13945982634,OpenStreetMap
+sales@bikersedgeaz.com,shop,Bikers Edge Cycle & Fitness,https://www.bikersedgeaz.com/,+1-623-486-8565,10545 N 83rd Ave,33.580308,-112.237402,node/10601897419,OpenStreetMap
+info@bikestoyou.com,shop,Bikes to You,https://www.bikestoyou.com/,+1-641-236-8600,921 Broad Street,41.743993,-92.724356,node/3001002506,OpenStreetMap
+info@bikesatvienna.com,shop,Bikes@Vienna,https://www.bikesatvienna.com/,+1-703-938-8900,128 Church Street Northwest,38.901285,-77.266928,node/661422757,OpenStreetMap
+jeff@bildabike.com,shop,BildaBike,https://www.bildabike.com,+1-843-789-3281,677 King Street,32.796192,-79.94408,node/13645902366,OpenStreetMap
+thomasseabrook1964@gmail.com,shop,Black Diamond Ski & Cycles,https://www.blackdiamondskiandcycles.com/,+1-720-768-3582,1540 Argentine Street,39.716064,-105.694711,node/3006470484,OpenStreetMap
+info@bluestonebikerun.com,shop,Bluestone Bike & Run,https://bluestonebikerun.com/,+1-540-434-5151,1570 S. Main St,38.429663,-78.883564,way/584895809,OpenStreetMap
+bobstrikeshop@gmail.com,shop,Bob's Trike Shop,https://bobstrikeshop.com/,+1-531-500-0190,3711 Adams Street,40.842385,-96.667616,way/1370967932,OpenStreetMap
+info@bostonsquare.org,shop,Boston Square Community Bikes,https://www.bostonsquare.org/,+1-616-248-2848,1260 Kalamazoo Avenue Southeast,42.940038,-85.643198,node/5182261821,OpenStreetMap
+info@brandscycle.com,shop,Brands Cycle & Fitness,https://www.brandscycle.com/,+1-516-781-6100,1966 Wantagh Avenue,40.672323,-73.510602,node/4991484722,OpenStreetMap
+brewstercycle@gmail.com,shop,Brewster Cycling Center,https://www.brewsterbike.com,,442 Underpass Road,41.754256,-70.069226,way/212196185,OpenStreetMap
+bringabicycle@gmail.com,shop,Bring A Bicycle,,,14 Aldinger Drive,44.488394,-72.965844,node/5621907093,OpenStreetMap
+jay@bustedknucklebikes.com,shop,Busted Knuckle Bicycle Shop,,+1-617-942-2900,159 Belgrade Avenue,42.286395,-71.137143,node/11114880664,OpenStreetMap
+craig@ckbikes.com,shop,CK Bikes,https://ckbikes.com/,+1 978-339-5260,320 Great Road,42.545508,-71.471751,node/8863867130,OpenStreetMap
+info@camdenbicycles.com,shop,Camden Cycles,https://www.camdenbicycles.com/home,,1420 North Dowling Avenue,45.02421,-93.297856,way/140637394,OpenStreetMap
+hola@casabikes.com,shop,Casa Bikes Amped!,https://casabikes.com/,+1-617-249-4737,183 Morgan Avenue,42.371946,-71.076297,node/13143804959,OpenStreetMap
+cajbikeco@aol.com,shop,Charles A. James Bicycle,,+1-210-226-7812,,29.427901,-98.493985,node/5117142484,OpenStreetMap
+info@cheboygancycleworks.com,shop,Cheboygan Cycle Works,https://cheboygancycleworks.com/,+1-231-333-8176,810 Court Street,45.640197,-84.486293,way/1216573150,OpenStreetMap
+citybicycles@gmail.com,shop,City Bicycles NYC,https://citybicyclesnyc.com/,+1 212-563-3373,307 West 38th Street,40.755059,-73.992148,node/5720999459,OpenStreetMap
+info@clintonbicycleshopllc.com,shop,Clinton Bicycle Shop LLC,https://clintonbicycleshopllc.com/,+1-908-735-5451,51 Main Street,40.635997,-74.911549,node/12945444875,OpenStreetMap
+info@clubhaus.bike,shop,Clubhaus x The Cyclery,https://www.clubhaus.bike/,+1-518-964-2251,608;606 Willow Grove Road,41.220852,-74.047252,node/8788968099,OpenStreetMap
+info@coastercycles.com,shop,Coaster Cycles,https://www.coastercycles.com/,+1-406-203-4422,9257 Bonner Mill Road,46.87441,-113.869114,node/7027859188,OpenStreetMap
+raceparts@motocd.com,shop,Cogent Dynamics,,+1-828-628-9025,33 Meadowbrook Drive,35.512025,-82.434682,node/5857390797,OpenStreetMap
+info@colonelsbikes.com,shop,Colonel's Bicycles,https://www.colonelsbikes.com/,+1-817-924-1333,851 Foch Street,32.749838,-97.356346,node/4926892465,OpenStreetMap
+info@commoncycle.org,shop,Common Cycle,https://commoncycle.org/,,416 West Huron Street,42.281922,-83.752903,node/10176126666,OpenStreetMap
+w.ullrich@contebikes.com,shop,Conte's Bike Shop,https://www.contebikes.com/about/lexington-ma-pg502.htm,+1-339-970-0678,1684 Massachusetts Avenue,42.446726,-71.226164,node/1931584642,OpenStreetMap
+coopersbikes@gmail.com,shop,Cooper's Bicycle Center,https://coopersbikes.com/,+1-405-372-2525,220 South Main Street,36.119942,-97.059056,way/260052309,OpenStreetMap
+ridebikes@cornspokesbikeco.com,shop,Corn Spokes Bike Co.,https://cornspokesbikeco.com,+1-641-629-0094,,41.522534,-93.102762,node/13717569648,OpenStreetMap
+info@crosscountrycycle.com,shop,Cross Country Cycle,https://www.crosscountrycycle.com/,+1-616-396-7491,345 Douglas Avenue,42.798238,-86.123664,way/1411190726,OpenStreetMap
+brian@crossroadbikes.com,shop,Crossroads Bikes,https://www.crossroadbikes.com/,+1-210-492-7677,14510 Northwest Military Highway,29.575793,-98.544725,node/6034238791,OpenStreetMap
+info@currentebikes.com,shop,Current eBikes,https://currentebikes.com,+1-831-621-2309,585 Pacific Avenue,36.967328,-122.024671,node/6284610762,OpenStreetMap
+info@cusosbikes.com,shop,Cuso's Bikes,https://cusosbikes.com/,+1 585-690-2898,609 State Street,34.417913,-119.697332,node/14074924133,OpenStreetMap
+cyclevolution@gmail.com,shop,Cyclevolution,https://www.cyclevolution.com,+1-561-376-2544,2512 Federal Highway,26.489125,-80.064378,node/13454778155,OpenStreetMap
+annarborstore@ddbikes.com,shop,D&D Bicycles,https://www.ddbicyclesandhockey.com/about/dd-bicycles-ann-arbor-pg249.htm,+15177896724,3780 Jackson Road,42.28552,-83.805306,node/5878406585,OpenStreetMap
+sales@dsharley.com,shop,D&S Harley-Davidson,https://www.dsharley.com,+1-541-535-5515,3846 South Pacific Highway,42.283203,-122.828573,way/1553113201,OpenStreetMap
+info@dshondasales.com,shop,D's Honda Sales & Service,https://www.dshondasales.com/,+1-989-356-6317,2516 M-32 West,45.062054,-83.502195,node/11540654879,OpenStreetMap
+freedom@desperadohd.com,shop,Desperado Harley-Davidson,https://desperadohd.com,+1 956 687 4646,1201 South Bentsen Road,26.198034,-98.270196,way/715091781,OpenStreetMap
+td@destinationcyclery.com,shop,Destination Cyclery,https://destinationcyclery.com,,3219 Broad Street,42.339094,-83.888739,node/13968417101,OpenStreetMap
+sales@detroitmopedworks.com,shop,Detroit Moped Works,https://detroitmopedworks.com,+1-313-502-8198,5407 Michigan Avenue,42.330869,-83.10966,node/5878989685,OpenStreetMap
+dick@dicksbicyclerepairshop.com,shop,Dick's Bicycle Repair Shop,,+1-704-889-0006,107 Dover Street,35.085396,-80.891501,node/11992900305,OpenStreetMap
+doctorcycles@yahoo.com,shop,Dr. Cycles,http://doctorcycles.com,+1-215-823-6780,3601 Lancaster Avenue,39.958847,-75.193752,way/1311778862,OpenStreetMap
+info@eluxbikes.com,shop,E-LUX Electric Bikes,https://eluxbikes.com/,+1 949-440-1967,18475 Bandilier Circle,33.694606,-117.941077,way/981866877,OpenStreetMap
+info@ebikeconnections.com,shop,EBike Connections,https://www.ebikeconnections.com,+1-703-295-2045,151 Spring Street,38.9584,-77.374158,node/12974309167,OpenStreetMap
+ecbales@gmail.com,shop,East Coast Bicycle Academy,https://www.angelfire.com/va3/ecba/,+1-540-433-3013,1010 Greystone Street,38.463497,-78.878156,way/1301869883,OpenStreetMap
+info@ebikesnw.com,shop,Electric & Folding Bikes Northwest,https://www.electricvehiclesnw.com/,+1-206-547-4621,4810 17th Avenue Northwest,47.664088,-122.378535,way/217511553,OpenStreetMap
+encinacycles@yahoo.com,shop,Encina Bicycle Center,https://www.encinabicyclecenters.com/contact/encina-bicycle-center-pg355.htm,+1-925-944-9200,2901 Ygnacio Valley Road,37.925477,-122.016415,node/2131722716,OpenStreetMap
+info@evolvebikes.com,shop,Evolve Bicycles,https://www.evolvebikes.com/,+1-321-939-2453,13 Blake Boulevard,28.331883,-81.52602,node/12601615957,OpenStreetMap
+sales@fastridemoto.com,shop,Fast Ride Moto,https://www.fastridemoto.com,+1-619-361-2842,6919 North Avenue,32.742858,-117.048385,way/1374544795,OpenStreetMap
+dlfastrack@gmail.com,shop,Fastrack Bicycles,https://www.fastrackbicycles.com/,+1 805-884-0210,118 West Canon Perdido Street,34.419071,-119.702371,node/14028177385,OpenStreetMap
+purchasing@fattirecycles.com,shop,Fat Tire Cycles,https://fattirecycles.com,+1-505-345-9005,421 Montaño Road Northeast,35.136763,-106.626025,way/179893501,OpenStreetMap
+marketing@faymyers.com,shop,Fay Myers Motorcycle World,https://faymyers.com,+1-303-744-6632,9700 East Arapahoe Road,39.594414,-104.875315,node/1955981999,OpenStreetMap
+fayettevillescooter@gmail.com,shop,Fayetteville Scooter ATV Wholesale,https://www.facebook.com/FayettevilleScooter/,+1 479 856 6665,,36.127571,-94.147548,node/6432130400,OpenStreetMap
+finksharleydavidson@yahoo.com,shop,Fink's Harley Davidson,https://www.finkshd.com/,+1 740-454-0010,2650 Maysville Pike,39.897453,-82.035196,way/566778691,OpenStreetMap
+info@flambeauxtours.com,shop,Flambeaux Bicycle Tours,https://flambeauxtours.com/,+1 504 321 1505,626 North Rampart Street,29.96007,-90.0686,node/6564952987,OpenStreetMap
+info@flyebike.com,shop,Fly E-Bike,https://www.flyebike.com/,+1-347-944-4883,913 Columbus Avenue,40.798309,-73.963306,node/9780496331,OpenStreetMap
+frankscyclery@gmail.com,shop,Franks Cyclery,https://www.frankscyclery.com/,+1-919-786-6771,517 Pylon Dr,35.897297,-78.724599,node/4584393291,OpenStreetMap
+volunteer@fb4katl.org,shop,Free Bikes 4 Kidz,https://fb4katl.org/,,680 Murphy Avenue Southwest,33.737359,-84.410519,node/10801403273,OpenStreetMap
+freemansbridgesportsinc@gmail.com,shop,Freemans Bridge Sports,,+1-518-382-0593,38 Freemans Bridge Road,42.835029,-73.931867,way/704052650,OpenStreetMap
+saintpaul@freewheelbike.com,shop,Freewheel Bike,https://www.freewheelbike.com/about/saint-paul-pg1194.htm,+1 651 5059091,799 Grand Avenue,44.940122,-93.133682,node/1000471055,OpenStreetMap
+info@freewheelbikes.org,shop,Freewheel Community Bike Shop,https://freewheelbikes.org/,+1-608-698-9205,31 South Mills Street,43.066613,-89.403746,node/13704809301,OpenStreetMap
+frontyardbikes@gmail.com,shop,Front Yard Bikes,https://www.frontyardbikes.com/,,700 Terrace Avenue,30.436447,-91.183225,way/549173664,OpenStreetMap
+galaxybicyclessmtx@gmail.com,shop,Galaxy Bicycles,https://galaxy.bike/,+1-512-392-3320,500 South Guadalupe Street,29.875258,-97.940533,way/1046354030,OpenStreetMap
+gtbikeology@gmail.com,shop,Georgetown Bikeology,https://gtbikeology.net/,+1-512-931-3027,1209 Leander Road,30.619118,-97.694073,node/11767528606,OpenStreetMap
+info@gettysburgbicycle.com,shop,Gettysburg Bicycle,https://gettysburgbicycle.com/,+1-717-334-7791,307 York Street,39.831666,-77.225084,node/13910516727,OpenStreetMap
+sales@gilroymotorcyclecenter.com,shop,Gilroy Motorcycle Center,https://www.gilroymotorcyclecenter.com/,+1-408-842-9955,303 East 10th Street,37.002353,-121.563384,way/28051234,OpenStreetMap
+keith@greenvillemotorsports.com,shop,Greenville Motor Sports,https://www.greenvillemotorsports.com/,+1-662-378-3479,3802 US-82,33.401244,-90.983823,node/7801312991,OpenStreetMap
+info@ktmnorthwest.com,shop,Gresham Powersports,https://greshampowersports.com,+1 503 667 3970,540 Northeast 2nd Street,45.498789,-122.425077,node/6499570689,OpenStreetMap
+grumpysbikeshop@gmail.com,shop,Grumpy's Bike Shop,,+1-828-980-2884,193 West Main Street,35.358174,-81.933375,way/759886151,OpenStreetMap
+contactus@guysbicycles.com,shop,Guy's Bicycles,https://www.guysbicycles.com/,+1-215-355-1166,326 Street Road,40.146282,-74.993777,way/570793076,OpenStreetMap
+handlebarcb@gmail.com,shop,Handlebar Bike & Board,,+1-970-251-9169,720 Third Street,38.86679,-106.985589,node/14020935357,OpenStreetMap
+support@happy-trail.com,shop,Happy Trails Motorcycle Products,https://www.happy-trail.com,+1 800 4448770,7577 West Lemhi Street,43.583346,-116.276439,way/690709399,OpenStreetMap
+havencyclesnyc@gmail.com,shop,Haven Cycles,https://www.havencyclesnyc.com/,+1-347-529-4621,1581 DeKalb Avenue,40.703481,-73.920288,node/13790345303,OpenStreetMap
+heliosbicycle@gmail.com,shop,Helios Bicycle Service,https://heliosbicycleservice.com/,+1-719-344-1130,2201 North Weber Street,38.864372,-104.818009,node/9523344717,OpenStreetMap
+info@ridehighgear.com,shop,High Gear Cyclery,https://www.ridehighgear.com/,+1-620-342-4977,520 Commercial Street,38.404574,-96.179969,node/2701038234,OpenStreetMap
+info-hilltopmadison@specialized.com,shop,Hilltop Bicycles,https://www.incycle.com/pages/retailer/hilltop-bicycles-nj,+1-973-822-2453,14 A Kings Road,40.759625,-74.417531,node/9249594530,OpenStreetMap
+martha@hogalley.net,shop,Hog Alley,https://www.hogalley.net/,+1-512-930-5475,1525 North Interstate 35,30.668472,-97.669018,way/1216135884,OpenStreetMap
+hokie.spokes3@gmail.com,shop,Hokie Spokes,https://hokiespokes.com,+1-540-552-7765,1282 North Main Street,37.243747,-80.416299,node/937008560,OpenStreetMap
+info@hollywoodelectrics.com,shop,Hollywood Electrics,https://hollywoodelectrics.com,+1 323 6548271,901 North Fairfax Avenue,34.087382,-118.361723,node/5202522611,OpenStreetMap
+info@homegrown.bike,shop,HomeGrown Cycles,https://hgc.bike/,+1 248 457 5182,724 Kenyon Drive,42.540261,-83.124683,node/12668859633,OpenStreetMap
+sales@ifbikes.com,shop,Independent Fabrication,https://ifbikes.com/,+1-603-292-5673,271 Western Avenue,42.476593,-70.950792,node/12069936314,OpenStreetMap
+info@bikelibrary.org,shop,Iowa City Bike Library,https://www.icbikelibrary.org/,,122 South Gilbert Court,41.64683,-91.529391,node/2684082398,OpenStreetMap
+thebikeguyiv@gmail.com,shop,Isla Vista Community Bike Center,https://bikeiv.com/,+1-805-364-1771,6584 Madrid Road,34.412652,-119.857658,node/13370800160,OpenStreetMap
+jacbikejc@gmail.com,shop,JC Bicycle,,+1-718-467-2052,4 Buffalo Avenue,40.678708,-73.924486,node/4478120889,OpenStreetMap
+info@jracycles.com,shop,JRA Cycles,https://www.jracycles.com/,+1-781-391-3636,229 Salem Street,42.420052,-71.100356,node/4181822438,OpenStreetMap
+cyclethreeoaks@gmail.com,shop,Jackson Family Bicycle,,+1 269-612-7511,110 North Elm Street,41.802445,-86.610223,node/13298484877,OpenStreetMap
+contact@janusmotorcycles.com,shop,Janus Motorcycles,,+1-574-538-1350,211 South 5th Street,41.584507,-85.833299,way/343337898,OpenStreetMap
+customerservice@juliesrentals.com,shop,Julie's Rentals,https://juliesrentals.com/,+1-910-579-1211,424 Sunset Boulevard South,33.869467,-78.507678,node/14042090044,OpenStreetMap
+info@junctionbikecompany.com,shop,Junction Bike Company and Rentals,https://junctionbikecompany.com/,+1 480 380 0811,10908 East Apache Trail,33.415682,-111.595558,node/2948739302,OpenStreetMap
+info@justridela.com,shop,Just Ride LA,https://www.justridela.com/,+1 213 745 6783,1626 South Hill Street,34.033994,-118.264874,node/2956626162,OpenStreetMap
+orders@ktmtwins.com,shop,KTMTwins,https://ktmtwins.com,+1 800 610 4804,3241 Monument Way,37.961238,-122.030859,node/6480735754,OpenStreetMap
+kentcycle@gmail.com,shop,Kent Cycle,https://kentcycle.com/,+1-330-677-0600,115 Lake Street,41.159297,-81.357515,way/249401161,OpenStreetMap
+toddskitchen@keycitybike.org,shop,Key City Bike,https://www.keycitybike.org,,204 East Vine Street,44.173357,-93.994728,node/6210372949,OpenStreetMap
+lbccycle@gmail.com,shop,LBC Bicycle Supply,https://www.lbc.bike,+1-562-330-1415,8737 Alondra Boulevard,33.889513,-118.145889,way/450393100,OpenStreetMap
+email@lccpowersports.com,shop,LCC Powersports + Liberty Bicycle Center,https://www.lccpowersports.com/,+1 816 781 6880,321 N 291 Hwy,39.250568,-94.448042,way/248960143,OpenStreetMap
+info@lvhd.com,shop,Las Vegas Harley-Davidson,https://lasvegasharleydavidson.com,+1 888 218 0744,5191 South Las Vegas Boulevard,36.083175,-115.171625,way/674358786,OpenStreetMap
+ruelasmotors@gmail.com,shop,Las Vegas Motorcycles & Co,https://lasvegasmotorcyclesco.com/,+1 702-490-1037;+1 702-268-8988,2797 South Maryland Parkway,36.138605,-115.13801,way/1395114609,OpenStreetMap
+eric@leadingedgecyclery.com,shop,Leading Edge Cyclery,https://www.leadingedgecyclery.com/,+1-717-492-7933,80 West Main Street,40.279598,-76.440785,node/14185312188,OpenStreetMap
+parts@lifecyclemotorcycles.com,shop,Life Cycle,https://www.lifecyclemotorcycles.com/,,3103 Lake Street,42.279415,-85.541308,node/13951325202,OpenStreetMap
+info@lincolnbikekitchen.org,shop,Lincoln Bike Kitchen,https://lincolnbikekitchen.org/,,308 South 21st Street,40.811306,-96.688842,way/606157735,OpenStreetMap
+localmotioncyclery@gmail.com,shop,Local Motion Cyclery,https://www.localmotiontn.com/,+1-423-328-9049,100 Van Brocklin Way,36.314856,-82.337511,node/10044861428,OpenStreetMap
+infoloweriders@gmail.com,shop,Lowe Riders Bikes and Boards,https://www.loweriders.com,+1 610-518-1622,300 East Lancaster Avenue,40.007588,-75.699544,way/554091118,OpenStreetMap
+freedom@madboarhd.com,shop,Mad Boar Harley-Davidson,https://madboarhd.com,+1 956 399 4244,3515 West Expressway 83,26.146537,-97.664456,way/715089928,OpenStreetMap
+mainebikeworks@gmail.com,shop,Maine Bike Works,http://www.mainebikeworks.com/,+1 207-590-8903,885 Portland Road,43.541144,-70.416779,node/9528397149,OpenStreetMap
+msvlbikeshop@gmail.com,shop,Marysville Bike Shop,https://www.msvlbikeshop.com/,+1-360-548-3311,1511 Grove Street,48.061415,-122.1761,node/5862390166,OpenStreetMap
+jason@masonracingcycles.com,shop,Mason Racing Cycles,https://www.masonracingcycles.com/,+1-603-448-5400,354 Mascoma Street,43.644886,-72.278763,node/12737823049,OpenStreetMap
+midstate@midstatecycles.com,shop,Mid-State Cycles,http://www.midstatecycles.com/,+1-217-359-4869,801 Bloomington Road,40.130546,-88.25498,way/255941296,OpenStreetMap
+mikescyclesupply@bellsouth.net,shop,Mike's Cycle Supply,http://www.mikescyclektm.com,+1 800 3675209,5751 Evangeline Street,30.493579,-91.133005,node/5658420744,OpenStreetMap
+doc@mischiefbicycles.com,shop,Mischief Handbuilt Bicycles,https://mischiefbicycles.com,+1-206-328-5400,3425 Stone Way North,47.649331,-122.343025,way/115681584,OpenStreetMap
+waylonmckenzie@yahoo.com,shop,Mobile Ducati Service,https://mobileducatiservice.com,+1-281-433-6500,2399 Meadow Road,30.196143,-95.46715,node/14011108911,OpenStreetMap
+sales@mod-bikes.com,shop,Mod Bikes,https://mod-bikes.com/,+1- 512- 518-3445,415 East Saint Elmo Road,30.214105,-97.762732,node/11807988392,OpenStreetMap
+tualatin@mokwheelstore.com,shop,Mokwheel Factory Store,https://mokwheelstore.com/pages/portland,+1-541-948-1848,18041 Southwest Lower Boones Ferry Road,45.391564,-122.751453,way/617002640,OpenStreetMap
+andrew@moramoto.com,shop,Moramoto of Tampa Bay,https://www.moramoto.com/,+1-813-512-6888,7807 N Dale Mabry Hwy,28.018437,-82.504349,node/12143816288,OpenStreetMap
+andrew@moramoto.com,shop,Moramoto of Zephyrhills,https://www.moramoto.com/,+1-813-788-1779,8820 Gall Blvd,28.285836,-82.187228,node/12143729062,OpenStreetMap
+sales@mortonsbmw.com,shop,Morton's BMW Motorcycles,https://www.mortonsbmw.com/,+1 540-891-9844,10766 Patriot Hwy,38.254564,-77.500837,node/11181832460,OpenStreetMap
+info@motoquest.com,shop,MotoQuest,https://www.motoquest.com/,+1-800-756-1990,,33.807543,-118.165112,node/5502672521,OpenStreetMap
+motoxotica@att.net,shop,MotoXotica,http://www.motoxotica.com/,+1-707-446-4282,357 Merchant Street,38.355666,-121.988805,way/743195280,OpenStreetMap
+moxmultisport@gmail.com,shop,Mox Multisport,https://www.moxmultisport.com,+1-312-466-9111,648 West Randolph Street,41.884676,-87.644722,node/13103819428,OpenStreetMap
+info@mmrbstore.com,shop,Mr. Michael Recycles Bicycles,https://mmrbstore.com/,+1-651-641-1037,520 North Prior Avenue,44.95684,-93.182168,node/7196597416,OpenStreetMap
+larsonsmudslingers@gmail.com,shop,Mudslingers Bike Shop,,+1-630-552-7433,325 East Main Street,41.664028,-88.532961,node/9130953250,OpenStreetMap
+mybuddysbikeshop@gmail.com,shop,My Buddy's Bike Shop,https://mybuddysbikeshop.com/,+1-925-583-5454,1601 Railroad Avenue,37.680819,-121.776509,node/7043027953,OpenStreetMap
+info@nationalpowersports.net,shop,National Power Sports,https://www.nationalpowersports.net/indexNational.cshtml,+1-603-410-4120,319 Commerce Way,43.18748,-71.480354,way/851317900,OpenStreetMap
+info@neffcycleservice.com,shop,Neff Cycle Service,https://neffcycleservice.com/,+1-608-514-5393,1490 Martin Street,43.043502,-89.405682,way/371433855,OpenStreetMap
+hello@nicebikesmoto.com,shop,Nice Bikes Motorcycle Company,https://www.nicebikesmoto.com/,+1-412-626-7689,4202 Main Street,40.464921,-79.954366,node/6058075683,OpenStreetMap
+kevin@whaley.biz,shop,OZ Bike Fit,https://ozbike.fit/,+1 479 619 6775,6028 Stoney Brook Road,36.316812,-94.19782,node/1127459902,OpenStreetMap
+outspokenebikerentals@gmail.com,shop,Outspoken Ebikes,https://outspokenebikes.com/,+1-216-465-1102,6477 Pearl Road,41.384651,-81.771154,node/14057158101,OpenStreetMap
+pacificavecycles@live.com,shop,Pacific Ave Cycles,http://pacificavecycles.com,+1-831-471-2453,320 Pacific Avenue,36.965232,-122.025592,node/6284631802,OpenStreetMap
+info@pacificpowersports.com,shop,Pacific Powersports,https://pacificpowersports.com,+1 951 7193663,42345 Avenida Alvarado,33.509261,-117.170637,way/640907996,OpenStreetMap
+info@palmettomotorsports.com,shop,Palmetto Motorsports,https://palmettomotorsports.com/,+1-888-565-2555,6400 West 20th Avenue,25.880824,-80.32449,node/4243846689,OpenStreetMap
+bill@papamonkeybikes.com,shop,Papa Monkey Custom Bikes,,+1-419-852-3455,419 South Main Street,40.544937,-84.571032,node/11526157415,OpenStreetMap
+pedalhouse@gmail.com,shop,Pedal House,https://www.pedalhouse.com/,+1 307-742-5533,207 South 1st Street,41.311776,-105.595848,way/238572346,OpenStreetMap
+saleswilli@pedalpowerct.com,shop,Pedal Power,https://www.pedalpowerct.com,+1-860-347-3776 x5,1171 Main Street,41.713928,-72.224231,node/8949314557,OpenStreetMap
+clark@pedaltownbicycle.com,shop,Pedaltown Bicycle Company,https://www.pedaltownbicycle.com/,+1-901-435-6789,2547 Broad Avenue,35.147514,-89.968828,node/5612857762,OpenStreetMap
+coker@pedegoaiken.com,shop,Pedego Electric Bikes,https://pedegoelectricbikes.com/dealers/aiken/,+1-803-226-9007,4019 Pavillion Pass,33.49288,-81.748289,node/10930603108,OpenStreetMap
+info@pedegocarmel.com,shop,Pedego Electric Bikes Carmel,https://pedegoelectricbikes.com/dealers/carmel/,+1 317-708-1070,254 Veterans Way,39.976214,-86.12919,node/5349479990,OpenStreetMap
+tom@pedegograndrapids.com,shop,Pedego Electric Bikes Grand Rapids,https://pedegoelectricbikes.com/pages/dealers/grand-rapids,+1-616-214-8565,6744 Cascade Road Southeast,42.916283,-85.502673,node/13372200980,OpenStreetMap
+info@perraroelectricbike.com,shop,Perraro Electric Bike,https://www.perraroelectricbike.com/,+1 949-414-8003,2229 South Wright Street,33.716324,-117.846783,node/12099636094,OpenStreetMap
+rockwall@playtri.com,shop,Playtri,https://playtristore.com/pages/rockwall-texas-store,+1 972 771 8297,975 East Interstate 30,32.902578,-96.452773,node/12136560029,OpenStreetMap
+polaris@polarisofruston.com,shop,Polaris of Ruston,https://www.polarisofruston.com/,+1-318-251-1399,1716 Celebrity Drive,32.543283,-92.61602,way/1187593100,OpenStreetMap
+info@hondaofjackson.com,shop,Pony Powersports,https://www.hondasuzukiofjackson.com/,+1 740-286-4956,2223 Clary Road,39.013787,-82.572221,way/256931100,OpenStreetMap
+david.quinn@powermotorcyclesusa.com,shop,Power BMW Motorcycles of Palm Bay,https://www.bmwmcofpalmbay.com,+1 321-215-2065,190 Interstate Court Southeast,27.995112,-80.627394,node/5077506572,OpenStreetMap
+powersportsofvallejo@powersportsofvallejo.com,shop,Powersports of Vallejo. Kawasaki - Suzuki,https://www.powersportsvallejo.com/,+1-707-644-3756,111 Tennessee Street,38.109995,-122.261196,node/5526140822,OpenStreetMap
+hello@propelbikes.com,shop,Propel Electric Bikes,https://propelbikes.com,+1-646-736-7716,134 Flushing Avenue,40.697739,-73.971337,node/5721048381,OpenStreetMap
+info@racetech.com,shop,Racetech,https://www.racetech.com/,+1 951-279-6655,1501 Pomona Road,33.884111,-117.59399,node/5970879685,OpenStreetMap
+jerry@rareoffroad.com,shop,Rare Motorsports,http://www.rareoffroad.com,+1-254-435-9898,414 West Morgan,31.917592,-97.663982,way/746180165,OpenStreetMap
+tyler@re-cycledbicycle.com,shop,Re-Cycled,https://re-cycledbicycle.com,+1-402-499-8248,,40.791841,-96.680958,node/4233204839,OpenStreetMap
+gaelan@redwoodcyclehouse.com,shop,Redwood Cycle House,https://www.redwoodcyclehouse.com/contact,+1-510-214-6216,3052 Castro Valley Boulevard,37.696191,-122.081541,node/12564028826,OpenStreetMap
+renoktm@hotmail.com,shop,Reno KTM,http://www.nevadaktm.com,+1 775 3584388,540 South Rock Boulevard,39.528956,-119.766001,way/463804440,OpenStreetMap
+charlote@renteboards.com,shop,Rent E Boards,https://charlotte.renteboards.com/,+1-704-315-5837,1701 North Graham St,35.244973,-80.832162,node/10136200547,OpenStreetMap
+info@revolvekc.org,shop,Revolve,https://www.revolvekc.org/,+1-816-599-6544,5509 Troost Avenue,39.026741,-94.573665,node/11446252008,OpenStreetMap
+chris@ride-on-motorcyclrs.com,shop,Ride On Motorcycles,https://ride-on-motorcycles.com/,+1 707-647-7433,1416 Sonoma Boulevard,38.098762,-122.25469,way/403511876,OpenStreetMap
+teamrbm@rightbalancemotorsports.com,shop,Right Balance Motorsports,https://www.rightbalancemotorsports.com/,+1-217-689-1034,1108 North Cunningham Avenue,40.124247,-88.200395,way/331562812,OpenStreetMap
+info@rocktownbicycles.com,shop,Rocktown Bicycles,https://www.rocktownbicycles.com/,+1-540-689-0070,50 South Mason Street,38.448622,-78.866455,way/545340259,OpenStreetMap
+johnkear@royalenfield.com,shop,Royal Enfield,http://royalenfieldofmilwaukee.com,+1 414 502 1204,,43.033097,-87.909025,node/4519239765,OpenStreetMap
+sales@snmotorsports.com,shop,S&N Motorsports,https://www.snmotorsports.com/,+1-855-905-7433,1188 Enterprise Drive,27.012932,-82.152927,node/6422043762,OpenStreetMap
+taylor@slcpowersports.com,shop,SLC PowerSports,https://www.slcpowersports.com/,+1-385-290-1450,4964 South Redwood Road,40.661167,-111.94013,way/768211178,OpenStreetMap
+info@sacbikekitchen.org,shop,Sacramento Bicycle Kitchen,https://www.sacbikekitchen.org/,+1-916-442-3177,1915 I Street,38.578348,-121.479957,node/4305611606,OpenStreetMap
+slc@bicyclecollective.org,shop,Salt Lake Bicycle Collective,https://bicyclecollective.org/salt-lake-city,+1-801-328-2453,325 West 900 South,40.749479,-111.900701,way/1419297947,OpenStreetMap
+saltydogcycle@gmail.com,shop,Salty Dog Cyclery,https://www.saltydogcyclery.com/,+1-402-464-2453,1640 O Street,40.813788,-96.697161,node/11691861339,OpenStreetMap
+info@sandiegoharley.com,shop,San Diego Harley-Davidson,https://www.sandiegoharley.com,+1 858 616 6999,4645 Morena Boulevard,32.822732,-117.226806,node/597009292,OpenStreetMap
+sanjosebicycles@gmail.com,shop,San Jose Bicycles,http://sjbikeshop.com/,+1-408-964-8640,565 Tully Road,37.307375,-121.849204,node/3033924237,OpenStreetMap
+scenicroutessf@gmail.com,shop,Scenic Routes Community Bicycle Center,https://www.scenicroutessf.com/,+1-415-669-0958,521 Fulton Street,37.77709,-122.4645,node/6836023082,OpenStreetMap
+sales@whatsthebuzzcoffee.com,shop,Scoots,aggielandscoots.com,+1-979-446-0900,1600 Texas Avenue South,30.615282,-96.319747,node/9170481041,OpenStreetMap
+scotts@scottscycle.com,shop,Scott's Cycle,https://www.scottscycle.com/,+1 503-363-4516,,44.940088,-123.041278,way/201318654,OpenStreetMap
+scottsdalebikeco@gmail.com,shop,Scottsdale Bike Co,,+1-480-945-3349,2902 N 68th St,33.480579,-111.935154,node/10602625503,OpenStreetMap
+info@shiftcc.org,shop,Shift Community Cycles,https://www.shiftcc.org/,+15417282453,,44.053452,-123.105297,node/12213416301,OpenStreetMap
+info@shopmothership.com,shop,Shop Mothership,https://www.shopmothership.com/,+1-425-903-4440,7529 Beverly Boulevard,47.929324,-122.211684,node/3303649642,OpenStreetMap
+info@sparkcycleworks.com,shop,Spark Cycleworks,https://www.sparkcycleworks.com/,+1 800-557-9598,8 Commerce Drive,41.324417,-72.77436,node/13464990918,OpenStreetMap
+jason@speedlifemotorsport.com,shop,Speedlife Motorsport,https://www.speedlifemotorsport.com/,+1-978-494-4104,79 6th Avenue,42.78259,-71.084901,way/530444993,OpenStreetMap
+info@spicypedals.bike,shop,Spicy Pedals,,+1-541-753-2912,582 Southwest Adams Avenue,44.561892,-123.265585,node/12564202193,OpenStreetMap
+spincitycyclenyc@gmail.com,shop,Spin City Cycle,https://www.spincitycycle.com/,+1-718-896-8850,102-30 Queens Boulevard,40.72508,-73.85095,node/9345041771,OpenStreetMap
+spokeland@gmail.com,shop,Spokeland,https://spokeland.square.site/,+1-510-852-9253,813 37th Street,37.826666,-122.272314,node/9948284572,OpenStreetMap
+online@starthaus.com,shop,Start Haus Bike and Ski,,+1-530-582-5781,11351 Highway 89,39.318704,-120.207365,node/13057322961,OpenStreetMap
+karla@stationcraft.com,shop,Station Craft Brewery + Kitchen,https://stationcraft.com/,+1 949-264-8288,34150 Pacific Coast Highway,33.466925,-117.700785,node/764082263,OpenStreetMap
+strategicfittingllc@gmail.com,shop,Strategic Fitting,https://strategicfitting.com/,+1-720-737-2920,791 Southpark Drive,39.569,-104.997673,node/13393610786,OpenStreetMap
+sales@trybikeshop.com,shop,TRY Bike Shop,http://trybikeshop.com/,+1 770-485-0865,2309 Shallowford Road Northeast,34.042504,-84.483481,node/12161206754,OpenStreetMap
+bikefit@taotri.com,shop,TaoTri MultiSport Solutions,https://taotri.com/,+1-973-574-3534,18 Main Street,40.725273,-74.307638,node/14058679435,OpenStreetMap
+info@shoptarnish.com,shop,Tarnish,https://shoptarnish.com/,+1-773-227-7290,1948 West Chicago Avenue,41.89651,-87.676786,node/14148951968,OpenStreetMap
+coolbikes@texas87cycles.com,shop,Texas 87 Cycles,https://www.texas87cycles.com,+1-409-354-2876,1106 39th Street,29.294099,-94.809823,node/14066989770,OpenStreetMap
+kitchen@bicyclekitchen.com,shop,The Bicycle Kitchen/La Bicicocina,https://bicyclekitchen.org/,+1 323 662 2776,4429 Fountain Avenue,34.095934,-118.286227,node/670108857,OpenStreetMap
+thebicyclethriftshop@gmail.com,shop,The Bicycle Thrift Shop,https://thebicyclethriftshop.org/,,49 Glendale Avenue,35.571925,-82.52482,node/14042090038,OpenStreetMap
+info@thebikebarn.com,shop,The Bike Barn,https://www.thebikebarn.com/,+1-800-645-2981,Northwest 6th Street,42.042734,-94.035063,way/392116335,OpenStreetMap
+thebikeproject@gmail.com,shop,The Bike Project,https://thebikeproject.org/,+1-217-469-5126,,40.111327,-88.206906,node/2488267017,OpenStreetMap
+thebikeroutenwa@gmail.com,shop,The Bike Route,http://www.thebikeroutenwa.com,+1 479 966 4050,3660 North Front Street,36.117813,-94.143778,way/483573915,OpenStreetMap
+sales@bikestationstore.com,shop,The Bike Station Store,https://bikestationstore.com,+1-915-307-4050,8387 Alameda Avenue,31.711374,-106.347296,node/13963613446,OpenStreetMap
+vanysbikes@gmail.com,shop,The Bikeshop,,+1-786-930-0988,1895 Drew Street,27.967597,-82.759005,node/12105234001,OpenStreetMap
+info@thecargobikeshop.com,shop,The Cargo Bike Shop,https://www.thecargobikeshop.com/,+16082475847,1592 Selby Avenue,44.946412,-93.167732,way/170151056,OpenStreetMap
+chainlinkbikes@gmail.com,shop,The Chain Link,https://www.chainlinkbikes.com/,+1-830-629-6000,139 North Castell Avenue,29.702316,-98.126434,node/1956969018,OpenStreetMap
+dave@startingline.com,shop,The Starting Line Speed & Custom,http://startingline.com/,+1-207-873-2191,70 College Avenue,44.561639,-69.626936,node/3678173144,OpenStreetMap
+sales@thundermountainharley.com,shop,Thunder Mountain Harley-Davidson,http://www.thundermountainharley.com,+1-970-292-0400,4250 Byrd Drive,40.437976,-104.994016,way/57966297,OpenStreetMap
+info@tinshedsports.com,shop,Tin Shed Sports,https://www.tinshedsports.com/,+1-303-258-3509,112 East 2nd Street,39.96249,-105.508507,node/4634134272,OpenStreetMap
+info@bikeshop.com,shop,Tour America Bike Shop,,+1-989-734-3946,268 North Second Street,45.421904,-83.816222,way/1174387199,OpenStreetMap
+matt@tractionsupply.bike,shop,Traction Supply Co.,https://www.tractionsupply.bike/,+1-828-820-5069,290 Catawba Avenue,35.624902,-82.181476,node/6760972641,OpenStreetMap
+info@trailblazersbikebarn.com,shop,Trailblazer's Bike Barn,https://trailblazersbikebarn.com/,+1-219-940-3477,11 North Hobart Road,41.536674,-87.239457,node/13276742113,OpenStreetMap
+info@tumbleweed.cc,shop,Tumbleweed Bicycle Co,https://tumbleweed.cc,+1 510 985 9858,121 East 38th Street,43.626992,-116.242267,node/14173137797,OpenStreetMap
+info@tcharley.com,shop,Twin Cities Harley-Davidson,https://tcharley.com/,+1-763-786-9079,1355 98th Avenue Northeast,45.148399,-93.236406,way/1475628702,OpenStreetMap
+bikecenter@recreation.ucla.edu,shop,UCLA Bike Shop,https://www.recreation.ucla.edu/bikeshop,+1-310-206-7219,,34.071974,-118.445928,node/2467158070,OpenStreetMap
+umassbikecoop@umass.edu,shop,UMass Bike Coop,,,,42.391114,-72.52768,node/12708997728,OpenStreetMap
+sales@uniqueridesco.com,shop,Unique Rides,http://www.uniqueridesco.com/,+1-970-416-5986,3321 East Mulberry Street,40.580631,-105.013983,way/319512551,OpenStreetMap
+bikeshop@urbanadventours.com,shop,Urban Cycles,http://urbancycles.com/,+1-617-670-0637,109 Atlantic Avenue,42.361465,-71.052534,node/4191860647,OpenStreetMap
+greg@vagabondcycles.net,shop,Vagabond Cycles,https://vagabondcycles.net/,+1-941-877-2453,982 South River Road,26.966657,-82.331949,node/13973227162,OpenStreetMap
+vancouvercyclery@gmail.com,shop,Vancouver Cyclery,https://www.vancouvercyclery.com/,+1-360-574-5717,10108 Northeast Highway 99,45.694732,-122.656407,way/364588192,OpenStreetMap
+ben@velomine.com,shop,Velo Mine,https://velomine.com,+1-217-679-2356,301 West Madison Street,39.804405,-89.657733,node/14173630614,OpenStreetMap
+info@velopro.com,shop,Velo Pro Cyclery,https://www.velopro.com/,+1-805-964-8355,5887 Hollister Avenue,34.435644,-119.828728,node/13380343296,OpenStreetMap
+info@vespaportland.com,shop,Vespa Portland,https://vespaportland.com/,+1 503 2223779,205 Southeast Martin Luther King Junior Boulevard,45.521314,-122.662101,way/260721096,OpenStreetMap
+sales@volturaebikes.com,shop,Voltura eBikes,https://www.volturaebikes.com,+1-971-526-8838,3450 North Williams Avenue,45.547887,-122.666526,node/14103781863,OpenStreetMap
+mcbp.inc@gmail.com,shop,Vulture Space,http://www.vulturespace.org,+1-414-301-1661,651 North Plankinton Avenue,43.038193,-87.91137,node/5476697546,OpenStreetMap
+webersportsindiana@gmail.com,shop,Weber Sports,https://weber-sports.com/,+1-812-926-1200,238 Main Street,39.055469,-84.900435,way/1453951821,OpenStreetMap
+info@wheatridgecyclery.com,shop,Wheat Ridge Cyclery,https://wheatridgecyclery.com/,+1-888-743-3972,7085 West 38th Avenue,39.769587,-105.075935,node/4308179589,OpenStreetMap
+northshore@wheelandsprocket.net,shop,Wheel & Sprocket,https://www.wheelandsprocket.com/,+1-414-247-8100,6940 North Santa Monica Boulevard,43.143308,-87.902135,node/2641096845,OpenStreetMap
+wildcatwheels@gmail.com,shop,Wildcat Wheels,https://www.uky.edu/transportation/bike/wildcatwheels,+1-859-257-2494,326 S. Martin Luther King Boulevard,38.040924,-84.502255,node/1439623572,OpenStreetMap
+winooskiwheels@gmail.com,shop,Winooski Wheels,https://winooskiwheels.com,,12 West Canal Street,44.490101,-73.187058,node/3247889351,OpenStreetMap
+info@xion.bike,shop,Xion Bike,https://xionmotors.com,,2141 Newton Avenue,32.69691,-117.142092,way/1443336306,OpenStreetMap
+info@youthempowermentproject.org,shop,YEP Bike Works,https://www.youthempowermentproject.org/yepworks,+1 504 264 7090,1604 Oretha Castle Haley Boulevard,29.940247,-90.079625,node/10602791749,OpenStreetMap
+austinyellowbike@gmail.com,shop,Yellow Bike Project,https://austinyellowbike.org/,+1-512-524-5299,1216 Webberville Road,30.278932,-97.684452,node/6786826186,OpenStreetMap
+info@allspeed.com,shop,allspeed,https://www.allspeed.com/,+1 207-878-8741,,43.66217,-70.263007,node/7888508768,OpenStreetMap
+contact@ascentcycling.net,shop,ascent cycling,https://www.ascentcycling.net/,+1-719-597-8181,6472 Templeton Gap Road,38.927009,-104.722918,way/847297709,OpenStreetMap

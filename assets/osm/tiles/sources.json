@@ -2250,9 +2250,9 @@
   "places": 69
  },
  {
-  "key": "ago-0a6a9b5d96",
-  "label": "Bike Repair Madison · eilundin@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Madison/FeatureServer/0",
+  "key": "ago-519396d7ee",
+  "label": "Bike Repair Station Abby B · behailu@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Abby_B/FeatureServer/0",
   "places": 69
  },
  {
@@ -2262,9 +2262,9 @@
   "places": 69
  },
  {
-  "key": "ago-519396d7ee",
-  "label": "Bike Repair Station Abby B · behailu@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Abby_B/FeatureServer/0",
+  "key": "ago-0a6a9b5d96",
+  "label": "Bike Repair Madison · eilundin@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Madison/FeatureServer/0",
   "places": 69
  },
  {
@@ -2955,6 +2955,12 @@
   "key": "ago-db2fef9519",
   "label": "Park Bike Racks · MHArcGISOnline",
   "url": "https://services3.arcgis.com/2gQ2Dv4Fb016qFVU/arcgis/rest/services/Park_Bike_Racks/FeatureServer/9",
+  "places": 38
+ },
+ {
+  "key": "ago-eeb006f919",
+  "label": "QBMap Bike Racks View · gis@qualicumbeach.com",
+  "url": "https://services3.arcgis.com/S2bHIiELmdxPOi8a/arcgis/rest/services/QBMap_Bike_Racks_View/FeatureServer/1",
   "places": 38
  },
  {
@@ -4785,6 +4791,12 @@
   "key": "ago-42febc644b",
   "label": "Bike Parking_Connor Lehr · connorlehr",
   "url": "https://services2.arcgis.com/4aUxCaDLaSFPHO9o/arcgis/rest/services/Bike_Parking_Connor_Lehr/FeatureServer/0",
+  "places": 3
+ },
+ {
+  "key": "ago-1f79397244",
+  "label": "Bike Parking_Iyyussuu Ethiopia · jscook_UMN",
+  "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/Bike_Parking_Iyyussuu_Ethiopia/FeatureServer/0",
   "places": 3
  },
  {
