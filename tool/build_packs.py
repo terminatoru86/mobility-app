@@ -364,57 +364,184 @@ def mapillary_token():
         return None
 
 
+# ───────── tiny Mapbox Vector Tile reader (only what Mapillary point tiles need; no extra packages) ─────────
+
+def _varint(b, i):
+    r = shift = 0
+    while True:
+        c = b[i]
+        i += 1
+        r |= (c & 0x7F) << shift
+        if c < 0x80:
+            return r, i
+        shift += 7
+
+
+def _fields(b):
+    """(field number, wire type, value) for each field of a protobuf message."""
+    i = 0
+    while i < len(b):
+        key, i = _varint(b, i)
+        f, w = key >> 3, key & 7
+        if w == 0:
+            v, i = _varint(b, i)
+        elif w == 2:
+            n, i = _varint(b, i)
+            v, i = b[i:i + n], i + n
+        elif w == 1:
+            v, i = b[i:i + 8], i + 8
+        elif w == 5:
+            v, i = b[i:i + 4], i + 4
+        else:
+            raise ValueError(f'wire type {w}')
+        yield f, w, v
+
+
+def _packed(b):
+    out, i = [], 0
+    while i < len(b):
+        v, i = _varint(b, i)
+        out.append(v)
+    return out
+
+
+def _value(b):
+    import struct
+    for f, w, v in _fields(b):
+        if f == 1:
+            return v.decode('utf-8', 'replace')
+        if f == 2:
+            return struct.unpack('<f', v)[0]
+        if f == 3:
+            return struct.unpack('<d', v)[0]
+        if f in (4, 5):
+            return v
+        if f == 6:
+            return (v >> 1) ^ -(v & 1)
+        if f == 7:
+            return bool(v)
+    return None
+
+
+def mvt_points(raw, layer_name):
+    """[(x, y, properties)] of the point features of one layer (x, y in tile units, y down)."""
+    out = []
+    for f, w, layer in _fields(raw):
+        if f != 3:
+            continue
+        name, keys, values, feats, extent = None, [], [], [], 4096
+        for lf, lw, lv in _fields(layer):
+            if lf == 1:
+                name = lv.decode()
+            elif lf == 2:
+                feats.append(lv)
+            elif lf == 3:
+                keys.append(lv.decode())
+            elif lf == 4:
+                values.append(_value(lv))
+            elif lf == 5:
+                extent = lv
+        if name != layer_name:
+            continue
+        for ft in feats:
+            tags, geom = [], []
+            for ff, fw, fv in _fields(ft):
+                if ff == 2:
+                    tags = _packed(fv)
+                elif ff == 4:
+                    geom = _packed(fv)
+            props = {keys[tags[k]]: values[tags[k + 1]] for k in range(0, len(tags) - 1, 2)}
+            x = y = 0
+            i = 0
+            while i < len(geom):
+                cmd, cnt = geom[i] & 7, geom[i] >> 3
+                i += 1
+                for _ in range(cnt):
+                    if cmd in (1, 2):
+                        dx, dy = geom[i], geom[i + 1]
+                        i += 2
+                        x += (dx >> 1) ^ -(dx & 1)
+                        y += (dy >> 1) ^ -(dy & 1)
+                        if cmd == 1:
+                            out.append((x / extent, y / extent, props))
+    return out
+
+
 def fetch_mapillary(boxes=None, budget_min=35):
-    """Bike racks Mapillary found in street photos, in 0.1° cells around each metro (about 55 x 40 km).
-    8 requests at a time and a time budget, so the build always finishes."""
+    """Bike racks Mapillary found in street photos, from its map-feature vector tiles (zoom 14, ~2.4 km),
+    about 33 x 33 km around each metro. Tiles come from a cache, so this is fast; 16 at a time, with a time budget."""
     from concurrent.futures import ThreadPoolExecutor
     token = mapillary_token()
     if not token:
-        print('Mapillary skipped: no token', flush=True)
+        stage('Mapillary skipped: no token')
         return []
-    cells = []
+    Z = 14
+    n2 = 2 ** Z
+
+    def tx(lon):
+        return int((lon + 180) / 360 * n2)
+
+    def ty(lat):
+        r = math.radians(lat)
+        return int((1 - math.log(math.tan(r) + 1 / math.cos(r)) / math.pi) / 2 * n2)
+
+    tiles_xy = set()
     for name, (la, lo) in METROS.items():
-        for i in range(-3, 3):
-            for j in range(-4, 4):
-                s, w = round(la + i * 0.1, 3), round(lo + j * 0.1, 3)
-                if boxes and not any(b[0] <= s < b[2] and b[1] <= w < b[3] for b in boxes):
-                    continue
-                cells.append((name, s, w))
+        for x in range(tx(lo - 0.2), tx(lo + 0.2) + 1):
+            for y in range(ty(la + 0.15), ty(la - 0.15) + 1):
+                tiles_xy.add((x, y))
+    if boxes:
+        def inside(x, y):
+            lon = x / n2 * 360 - 180
+            lat = math.degrees(math.atan(math.sinh(math.pi * (1 - 2 * y / n2))))
+            return any(b[0] - 0.05 <= lat < b[2] + 0.05 and b[1] - 0.05 <= lon < b[3] + 0.05 for b in boxes)
+        tiles_xy = {t for t in tiles_xy if inside(*t)}
     end = time.time() + budget_min * 60
-    out, seen = [], set()
     errors = []
 
-    def one(cell):
-        name, s, w = cell
+    def one(t):
         if time.time() > end:
             return None
-        q = urllib.parse.urlencode({
-            'access_token': token, 'fields': 'id,object_value,geometry,last_seen_at',
-            'bbox': f'{w},{s},{w + 0.1},{s + 0.1}', 'object_values': 'object--bike-rack', 'limit': 2000})
+        x, y = t
+        url = f'https://tiles.mapillary.com/maps/vtp/mly_map_feature_point/2/{Z}/{x}/{y}?access_token={token}'
         try:
-            return json.loads(http(f'https://graph.mapillary.com/map_features?{q}', timeout=25)).get('data', [])
+            raw = http(url, timeout=30)
         except Exception as err:
             errors.append(str(err)[:150])
             return []
+        if not raw:
+            return []
+        try:
+            pts = mvt_points(raw, 'point')
+        except Exception as err:
+            errors.append(f'decode: {str(err)[:120]}')
+            return []
+        got = []
+        for fx, fy, pr in pts:
+            if pr.get('value') != 'object--bike-rack':
+                continue
+            lon = (x + fx) / n2 * 360 - 180
+            lat = math.degrees(math.atan(math.sinh(math.pi * (1 - 2 * (y + fy) / n2))))
+            got.append((str(pr.get('id')), lat, lon, pr.get('last_seen_at')))
+        return got
 
-    done = 0
-    with ThreadPoolExecutor(8) as ex:
-        for data in ex.map(one, cells):
-            if data is None:
+    out, seen, done = [], set(), 0
+    with ThreadPoolExecutor(16) as ex:
+        for got in ex.map(one, sorted(tiles_xy)):
+            if got is None:
                 continue
             done += 1
-            for f in data:
-                c = (f.get('geometry') or {}).get('coordinates')
-                if not c or f['id'] in seen:
+            for fid, lat, lon, ls in got:
+                if fid in seen:
                     continue
-                seen.add(f['id'])
+                seen.add(fid)
                 tags = {'amenity': 'bicycle_parking', 'bicycle_parking': 'stands',
                         'source': 'Mapillary · seen in street photos'}
-                ls = f.get('last_seen_at')
                 if isinstance(ls, (int, float)):
                     tags['check_date'] = datetime.fromtimestamp(ls / 1000, timezone.utc).strftime('%Y-%m-%d')
-                out.append([f"mly/{f['id']}", round(c[1], 6), round(c[0], 6), tags])
-    stage(f'Mapillary: {len(out)} racks from {done}/{len(cells)} cells, {len(errors)} errors' + (f' (first: {errors[0]})' if errors else ''))
+                out.append([f'mly/{fid}', round(lat, 6), round(lon, 6), tags])
+    stage(f'Mapillary: {len(out)} racks from {done}/{len(tiles_xy)} tiles, {len(errors)} errors'
+          + (f' (first: {errors[0]})' if errors else ''))
     return out
 
 
@@ -456,18 +583,29 @@ def fetch_overture():
     con = duckdb.connect()
     con.execute('INSTALL httpfs; LOAD httpfs; SET s3_region=\'us-west-2\';')
     q = f"""
-      SELECT id, names.primary AS name, categories.primary AS cat,
+      SELECT id, names.primary AS name, CAT_EXPR AS cat,
              (bbox.ymin + bbox.ymax) / 2 AS lat, (bbox.xmin + bbox.xmax) / 2 AS lon, websites[1] AS web, phones[1] AS phone, emails[1] AS email,
              addresses[1].freeform AS street
       FROM read_parquet('s3://overturemaps-us-west-2/release/{release}/theme=places/type=place/*', hive_partitioning=1)
       WHERE bbox.xmin BETWEEN -170 AND -65 AND bbox.ymin BETWEEN 17 AND 72
         AND addresses[1].country = 'US'
-        AND (categories.primary ILIKE '%bicycle%' OR categories.primary ILIKE '%bike%'
-             OR categories.primary ILIKE '%motorcycle%' OR categories.primary ILIKE '%scooter%' OR categories.primary ILIKE '%moped%')
+        AND (CAT_EXPR ILIKE '%bicycle%' OR CAT_EXPR ILIKE '%bike%' OR CAT_EXPR ILIKE '%cycl%'
+             OR CAT_EXPR ILIKE '%motorcycle%' OR CAT_EXPR ILIKE '%scooter%' OR CAT_EXPR ILIKE '%moped%')
         AND confidence >= 0.6
     """
     out = []
-    for oid, name, c, lat, lon, web, phone, email, street in con.execute(q).fetchall():
+    # Overture renamed the category field in 2026 (categories -> taxonomy / basic_category): try the new one first
+    rows = None
+    for expr in ("coalesce(taxonomy.primary, basic_category)", "basic_category", "categories.primary"):
+        try:
+            rows = con.execute(q.replace('CAT_EXPR', expr)).fetchall()
+            stage(f'Overture category field: {expr}')
+            break
+        except Exception as err:
+            last = err
+    if rows is None:
+        raise last
+    for oid, name, c, lat, lon, web, phone, email, street in rows:
         c = (c or '').lower()
         if 'motorcycle' in c or 'moped' in c or 'scooter' in c:
             kind = 'motorcycle' if ('motorcycle' in c or 'moped' in c) else 'scooter'
