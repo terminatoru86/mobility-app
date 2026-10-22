@@ -966,6 +966,12 @@
   "places": 281
  },
  {
+  "key": "ago-cebc501ffa",
+  "label": "Parking_Transportation · USF_CFRE_GIS",
+  "url": "https://gis.usf.edu/fmserver/rest/services/Campus_Transportation/Parking_Transportation/MapServer/18",
+  "places": 275
+ },
+ {
   "key": "ago-de406af214",
   "label": "MIT Bike Infrastructure · nrburns",
   "url": "https://services5.arcgis.com/FXrk7QY7CN707pF1/arcgis/rest/services/Bike_Infrastructure/FeatureServer/1",
@@ -2112,15 +2118,15 @@
   "places": 69
  },
  {
-  "key": "ago-efdda51168",
-  "label": "Bike Repair Station222 · xchen2268@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station222/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-dc5de75a52",
   "label": "Bike Repair Station Madison 2 · asnow4@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Madison_2/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-efdda51168",
+  "label": "Bike Repair Station222 · xchen2268@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station222/FeatureServer/0",
   "places": 69
  },
  {
@@ -2250,15 +2256,15 @@
   "places": 69
  },
  {
-  "key": "ago-201747ae5d",
-  "label": "Bike Repair · rimoss@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-0a6a9b5d96",
   "label": "Bike Repair Madison · eilundin@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Madison/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-201747ae5d",
+  "label": "Bike Repair · rimoss@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair/FeatureServer/0",
   "places": 69
  },
  {
@@ -2592,12 +2598,6 @@
   "places": 54
  },
  {
-  "key": "ago-95b51d8325",
-  "label": "Bike Racks · gcoutu",
-  "url": "https://services1.arcgis.com/xnOV358bj0tLwxji/arcgis/rest/services/Sustainability_WFL1/FeatureServer/8",
-  "places": 54
- },
- {
   "key": "ago-74cec2487f",
   "label": "BikeRacks · NSapone1994",
   "url": "https://services1.arcgis.com/xnOV358bj0tLwxji/arcgis/rest/services/BikeRacks/FeatureServer/0",
@@ -2643,12 +2643,6 @@
   "key": "ago-aeb92ae469",
   "label": "Bike Racks Collector · CityofFerndale",
   "url": "https://services6.arcgis.com/2TPYEzbyXSiAqSUs/arcgis/rest/services/Bike_Racks_Collector/FeatureServer/0",
-  "places": 51
- },
- {
-  "key": "ago-6ae58462ec",
-  "label": "v2_MVTCID_Infrastructure_FM_WFL1 · ianb@gwu.edu_gwu",
-  "url": "https://services9.arcgis.com/3Uashgo1dIULEkdu/arcgis/rest/services/v2_MVTCID_Infrastructure_FM_WFL1/FeatureServer/7",
   "places": 51
  },
  {
@@ -3517,7 +3511,7 @@
  },
  {
   "key": "ago-be06347451",
-  "label": "SusqueCycle Rack locations_WFL1 · abomberger_dauphinco",
+  "label": "SusqueCycle Rack locations_WFL1 · tstroup_dauphinco",
   "url": "https://services2.arcgis.com/EEtiX55QzkHKYQKY/arcgis/rest/services/SusqueCycle_Rack_locations_WFL1/FeatureServer/56",
   "places": 19
  },
@@ -3990,12 +3984,6 @@
   "places": 11
  },
  {
-  "key": "ago-85f357ac39",
-  "label": "Bike Parking_BrandonGravett · gravettb_etsu",
-  "url": "https://services5.arcgis.com/ZYK688A64hFRZ5yX/arcgis/rest/services/Bike_Parking_BrandonGravett/FeatureServer/0",
-  "places": 11
- },
- {
   "key": "ago-6182652fbb",
   "label": "Bike Repair Stands · awitherspoon_lawrenceks",
   "url": "https://services.arcgis.com/8O9UlSTnqjKptoda/arcgis/rest/services/Bike_Repair_Stands/FeatureServer/0",
@@ -4425,12 +4413,6 @@
   "key": "ago-c52a690d31",
   "label": "Bike Racks · KCC_FS",
   "url": "https://services5.arcgis.com/GiVLls1khopQzkoU/arcgis/rest/services/Bike_Racks/FeatureServer/0",
-  "places": 6
- },
- {
-  "key": "ago-168e4d30d7",
-  "label": "Bike Rack Recommendations 8Dec1630 · wmarti37_GISandData",
-  "url": "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/Bike_Rack_Recommendations_8Dec1630/FeatureServer/0",
   "places": 6
  },
  {
@@ -5098,12 +5080,6 @@
   "label": "Bike Lockers · rolandrc",
   "url": "https://services7.arcgis.com/HiJTKvDQwtoAF6l9/arcgis/rest/services/Bike_Lockers/FeatureServer/0",
   "places": 2
- },
- {
-  "key": "ago-3f87a40aac",
-  "label": "Bike Racks · gcoutu",
-  "url": "https://services1.arcgis.com/xnOV358bj0tLwxji/arcgis/rest/services/Sustainability_WFL1/FeatureServer/2",
-  "places": 1
  },
  {
   "key": "ago-946329edd6",
