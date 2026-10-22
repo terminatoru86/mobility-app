@@ -583,7 +583,7 @@ def fetch_cameras():
     path = os.path.join(os.path.dirname(OUT), 'cameras.json.gz')
     with open(path, 'wb') as f:
         f.write(gzip.compress(json.dumps(rows, separators=(',', ':'), ensure_ascii=False).encode('utf-8'), 9, mtime=0))
-    print(f'Cameras: {len(rows)} -> {path}', flush=True)
+    stage(f'cameras: {len(rows)}')
 
 
 CONTACTS = os.environ.get('CONTACTS_OUT') or os.path.join(ROOT, 'data', 'contacts', 'business_contacts.csv')
@@ -636,7 +636,13 @@ def write_contacts(tiles, save=True):
         w.writerow(['email', 'kind', 'name', 'website', 'phone', 'street', 'lat', 'lon', 'id', 'source'])
         for r in sorted(rows.values(), key=lambda r: (r[1], r[2])):
             w.writerow(r)
-    print(f'Contacts: {len(rows)} emails -> {CONTACTS}', flush=True)
+    stage(f'contacts: {len(rows)} emails')
+
+
+def stage(msg):
+    """A progress line GitHub shows on the run page (readable even when the full log is not)."""
+    line = f'{datetime.now(timezone.utc).strftime("%H:%M")}Z {msg}'
+    print(f'::notice title=Progress::{line}' if os.environ.get('GITHUB_ACTIONS') else line, flush=True)
 
 
 def main():
@@ -668,6 +674,7 @@ def main():
     else:
         for box in boxes:
             collect_osm(box, tiles)
+    stage(f'1/6 OpenStreetMap ready: {sum(len(d) for d in tiles.values())} places')
     cities = []
     # other open sources: one list each, added to the tiles (the app removes doubles near OpenStreetMap ones)
     for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture),
@@ -678,6 +685,7 @@ def main():
                     tiles.setdefault((math.floor(x[1]), math.floor(x[2])), {})[x[0]] = x
         except Exception as err:
             print(f'{name} failed: {err}', flush=True)
+    stage(f'2/6 MBTA, Overture, Mapillary added: {sum(len(d) for d in tiles.values())} places')
     known_srcs = city_sources()
     known = {s.get('arcgis') for s in known_srcs if s.get('arcgis')} | {s.get('socrata') for s in known_srcs if s.get('socrata')}
     discovered = []
@@ -689,6 +697,7 @@ def main():
         discovered += discover_socrata(known)
     except Exception as err:
         print(f'Socrata discovery failed: {err}', flush=True)
+    stage(f'3/6 discovery done: {len(discovered)} new public layers')
     found_log = []
     for src in known_srcs + discovered:
         try:
@@ -709,12 +718,14 @@ def main():
             print(f"City {src['key']}: {add_city}", flush=True)
         except Exception as err:
             print(f"City {src['key']} failed: {err}", flush=True)
+    stage(f'4/6 city sources added: {sum(len(d) for d in tiles.values())} places')
     write_contacts(tiles, save=not args and '--extra-only' not in sys.argv)
     if not args:
         try:
             fetch_cameras()
         except Exception as err:
             print(f'Cameras failed: {err}', flush=True)
+    stage('5/6 cameras and contacts done')
     # only the US (some sources have places abroad or broken coordinates)
     for k in [k for k in tiles if not (17 <= k[0] < 72 and -180 <= k[1] < -64)]:
         tiles.pop(k)
@@ -755,7 +766,7 @@ def main():
     # list of the automatically found sources (for the manual / checking)
     with open(os.path.join(OUT, 'sources.json'), 'w', encoding='utf-8') as f:
         json.dump(sorted(found_log, key=lambda x: -x['places']), f, indent=1, ensure_ascii=False)
-    print(f"Done: {index['total']} places in {len(counts)} tiles, cities: {index['cities']}")
+    stage(f"6/6 done: {index['total']} places in {len(counts)} tiles")
 
 
 if __name__ == '__main__':
