@@ -37,7 +37,28 @@ class MapScreen extends StatefulWidget {
 class MapScreenState extends State<MapScreen> {
   final _map = MapController();
   double _zoom = 15;
-  String? _filter;
+  /// Quick filters under search: one or more can be on at once; none = everything.
+  /// Start: Rack, Parking and Charging (a rider with a plain bike: Rack and Parking).
+  final Set<String> _filters = {};
+  String get _filterKey => (_filters.toList()..sort()).join(',');
+
+  bool _filtersTouched = false; // the rider changed them: keep their choice
+  Vehicle? _filtersFor;
+
+  void _defaultFilters() {
+    final v = widget.state.myVehicle;
+    _filtersFor = v;
+    _filters
+      ..clear()
+      ..addAll(v == Vehicle.bike ? const ['Rack', 'Parking'] : const ['Rack', 'Parking', 'Charging']);
+  }
+
+  void _toggleFilter(String f) {
+    _filtersTouched = true;
+    if (!_filters.remove(f)) _filters.add(f);
+    // all of them on is the same as none: show everything
+    if (_filters.length == kFilterChips.length) _filters.clear();
+  }
   String? _selected;
   bool _showGuide = false;
   bool _weatherFace = false;
@@ -72,6 +93,7 @@ class MapScreenState extends State<MapScreen> {
   @override
   void initState() {
     super.initState();
+    _defaultFilters();
     Store.i.addListener(_storeChanged);
     // The circle in the search bar shows your vehicle, then the weather, every 50 s.
     _flip = Timer.periodic(const Duration(seconds: 50), (_) {
@@ -292,7 +314,7 @@ class MapScreenState extends State<MapScreen> {
 
   List<Place> get _visible {
     final all = _all;
-    return _filter == null ? all : all.where((p) => p.type.chip == _filter).toList();
+    return _filters.isEmpty ? all : all.where((p) => _filters.contains(p.type.chip)).toList();
   }
 
   List<Place> _near(LatLng c, double meters) {
@@ -356,7 +378,9 @@ class MapScreenState extends State<MapScreen> {
     } else if (picked is GeoResult) {
       _showDestination(picked);
     } else if (picked is String) {
-      setState(() => _filter = picked);
+      setState(() => _filters
+        ..clear()
+        ..add(picked));
     }
   }
 
@@ -558,7 +582,9 @@ class MapScreenState extends State<MapScreen> {
 
   List<Marker> _markers() {
     final all = _all;
-    final key = (identityHashCode(all), _filter, _selected, _zoom, _area, Store.i.zones.length,
+    // signed in / vehicle chosen later (e.g. a bike): the start filters follow, until the rider changes them
+    if (!_filtersTouched && widget.state.myVehicle != _filtersFor) _defaultFilters();
+    final key = (identityHashCode(all), _filterKey, _selected, _zoom, _area, Store.i.zones.length,
         _ringCenter ?? userPos);
     if (_markerCache != null && key == _markerKey) return _markerCache!;
     _markerKey = key;
@@ -601,9 +627,26 @@ class MapScreenState extends State<MapScreen> {
     }
 
     const ringKm = kRingMiles * 1.609;
+    // pins only in the middle of the screen (an oval): near the edges and in the corners, dots
+    LatLng? camC;
+    double zoomNow = _zoom;
+    try {
+      camC = _map.camera.center;
+      zoomNow = _map.camera.zoom;
+    } catch (_) {}
+    final scr = MediaQuery.sizeOf(context);
+    final pxM = 156543.03 * math.cos((camC ?? rc).latitude * math.pi / 180) / math.pow(2, zoomNow);
+    final ax = scr.width * 0.5 * 0.92, ay = scr.height * 0.5 * 0.80;
+    bool inOval(LatLng p) {
+      if (camC == null) return true;
+      final dx = (p.longitude - camC.longitude) * 111320 * math.cos(camC.latitude * math.pi / 180) / pxM;
+      final dy = (p.latitude - camC.latitude) * 110540 / pxM;
+      return (dx * dx) / (ax * ax) + (dy * dy) / (ay * ay) <= 1;
+    }
+
     final inside = <Place>[];
     for (final p in pins) {
-      (km2(p.pos) <= ringKm * ringKm ? inside : dots).add(p);
+      (km2(p.pos) <= ringKm * ringKm && (inOval(p.pos) || p.id == _selected) ? inside : dots).add(p);
     }
 
     // inside the ring: our real pins with their info. Zoomed in (15+) they are never grouped.
@@ -672,11 +715,11 @@ class MapScreenState extends State<MapScreen> {
     thinOut(dots, 4, 2500);
     // a filter is on (e.g. Rack): the other places stay on the map as tiny coloured dots,
     // smaller than the dots outside the ring, so the chosen kind stands out
-    final others = _filter == null
+    final others = _filters.isEmpty
         ? <Place>[]
         : _all
             .where((p) =>
-                p.type.chip != _filter && (a == null || a.contains(p.pos)) && (st.zones.isEmpty || inZone(p.pos)))
+                !_filters.contains(p.type.chip) && (a == null || a.contains(p.pos)) && (st.zones.isEmpty || inZone(p.pos)))
             .toList();
     thinOut(others, 3, 1500);
     _dotPlaces = [...dots, ...others];
@@ -1036,7 +1079,8 @@ class MapScreenState extends State<MapScreen> {
             steps: [
               GuideStep(_kSearch, 'Search, vehicle and weather',
                   'Type an address or a place. The circle on the left turns: once your vehicle, once the weather. Tap it for rain and wind.'),
-              GuideStep(_kFilters, 'Quick filters', 'Tap a filter to see only parking, charging, service or shops. Tap again to see everything.'),
+              GuideStep(_kFilters, 'Quick filters',
+                  'Pick one or more: Rack, Parking, Charging, Service, Sharing, Wash, Shop. The map opens with Rack, Parking and Charging on (with a bike: Rack and Parking). The others stay as small dots. Turn all off to see everything.'),
               GuideStep(_kPins, 'How to read the pins', 'The colour is the status. Inside the pin, the drawing and the time since the last update take turns.',
                   extra: const MiniLegend()),
               GuideStep(_kLocate, 'Where you are', 'One tap brings you back. Two taps switch the map: road, bike map, satellite.'),
@@ -1247,13 +1291,13 @@ class MapScreenState extends State<MapScreen> {
             Padding(
               padding: const EdgeInsets.only(right: 6),
               child: GestureDetector(
-                onTap: () => setState(() => _filter = _filter == f.$1 ? null : f.$1),
+                onTap: () => setState(() => _toggleFilter(f.$1)),
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   decoration: BoxDecoration(
-                    color: _filter == f.$1 ? AppColors.slateTint : Colors.white,
+                    color: _filters.contains(f.$1) ? AppColors.slateTint : Colors.white,
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: _filter == f.$1 ? AppColors.primary : Colors.transparent, width: 1.5),
+                    border: Border.all(color: _filters.contains(f.$1) ? AppColors.primary : Colors.transparent, width: 1.5),
                     boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 2))],
                   ),
                   child: Row(children: [
