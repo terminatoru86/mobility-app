@@ -39,8 +39,8 @@ class MapScreenState extends State<MapScreen> {
   double _zoom = 15;
   /// Quick filters under search: one or more can be on at once; none = everything.
   /// Start: Rack, Parking and Charging (a rider with a plain bike: Rack and Parking).
-  final Set<String> _filters = {};
-  String get _filterKey => (_filters.toList()..sort()).join(',');
+  final Set<String> _picked = {};
+  String get _filterKey => (_picked.toList()..sort()).join(',');
 
   bool _filtersTouched = false; // the rider changed them: keep their choice
   Vehicle? _filtersFor;
@@ -48,16 +48,16 @@ class MapScreenState extends State<MapScreen> {
   void _defaultFilters() {
     final v = widget.state.myVehicle;
     _filtersFor = v;
-    _filters
+    _picked
       ..clear()
       ..addAll(v == Vehicle.bike ? const ['Rack', 'Parking'] : const ['Rack', 'Parking', 'Charging']);
   }
 
   void _toggleFilter(String f) {
     _filtersTouched = true;
-    if (!_filters.remove(f)) _filters.add(f);
+    if (!_picked.remove(f)) _picked.add(f);
     // all of them on is the same as none: show everything
-    if (_filters.length == kFilterChips.length) _filters.clear();
+    if (_picked.length == kFilterChips.length) _picked.clear();
   }
   String? _selected;
   bool _showGuide = false;
@@ -314,7 +314,7 @@ class MapScreenState extends State<MapScreen> {
 
   List<Place> get _visible {
     final all = _all;
-    return _filters.isEmpty ? all : all.where((p) => _filters.contains(p.type.chip)).toList();
+    return _picked.isEmpty ? all : all.where((p) => _picked.contains(p.type.chip)).toList();
   }
 
   List<Place> _near(LatLng c, double meters) {
@@ -378,7 +378,7 @@ class MapScreenState extends State<MapScreen> {
     } else if (picked is GeoResult) {
       _showDestination(picked);
     } else if (picked is String) {
-      setState(() => _filters
+      setState(() => _picked
         ..clear()
         ..add(picked));
     }
@@ -715,11 +715,11 @@ class MapScreenState extends State<MapScreen> {
     thinOut(dots, 4, 2500);
     // a filter is on (e.g. Rack): the other places stay on the map as tiny coloured dots,
     // smaller than the dots outside the ring, so the chosen kind stands out
-    final others = _filters.isEmpty
+    final others = _picked.isEmpty
         ? <Place>[]
         : _all
             .where((p) =>
-                !_filters.contains(p.type.chip) && (a == null || a.contains(p.pos)) && (st.zones.isEmpty || inZone(p.pos)))
+                !_picked.contains(p.type.chip) && (a == null || a.contains(p.pos)) && (st.zones.isEmpty || inZone(p.pos)))
             .toList();
     thinOut(others, 3, 1500);
     _dotPlaces = [...dots, ...others];
@@ -1295,9 +1295,9 @@ class MapScreenState extends State<MapScreen> {
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   decoration: BoxDecoration(
-                    color: _filters.contains(f.$1) ? AppColors.slateTint : Colors.white,
+                    color: _picked.contains(f.$1) ? AppColors.slateTint : Colors.white,
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: _filters.contains(f.$1) ? AppColors.primary : Colors.transparent, width: 1.5),
+                    border: Border.all(color: _picked.contains(f.$1) ? AppColors.primary : Colors.transparent, width: 1.5),
                     boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 2))],
                   ),
                   child: Row(children: [
