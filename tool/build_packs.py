@@ -748,6 +748,22 @@ def main():
         except Exception as err:
             print(f'Cameras failed: {err}', flush=True)
     stage('5/6 cameras and contacts done')
+    # the same place from several sources (e.g. copies of a city's rack list re-uploaded by students):
+    # keep one per ~5 m. OpenStreetMap first, then our own city list, then everything else.
+    def rank(r):
+        k = r[0]
+        return 0 if k.startswith(('node/', 'way/', 'relation/')) else 1 if k.startswith('city/') and not k.split('/')[1].startswith(('ago-', 'soc-')) else 2
+    dropped = 0
+    for key, d in tiles.items():
+        seen = set()
+        for r in sorted(d.values(), key=lambda r: (rank(r), r[0])):
+            g = (round(r[1] / 0.00005), round(r[2] / 0.00005), r[3].get('amenity') or r[3].get('shop'))
+            if g in seen and rank(r) > 0:
+                d.pop(r[0])
+                dropped += 1
+            else:
+                seen.add(g)
+    stage(f'duplicates removed: {dropped}')
     # only the US (some sources have places abroad or broken coordinates)
     for k in [k for k in tiles if not (17 <= k[0] < 72 and -180 <= k[1] < -64)]:
         tiles.pop(k)
