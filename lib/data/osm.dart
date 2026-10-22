@@ -533,7 +533,7 @@ Place? placeFromOsm(Map<String, dynamic> e) {
   switch (amenity) {
     case 'bicycle_parking':
       final kind = tag('bicycle_parking') ?? '';
-      if (tag('access') == 'private' || tag('access') == 'customers' || yes('fee')) {
+      if (const ['private', 'customers', 'residents', 'permit'].contains(tag('access')) || yes('fee')) {
         type = PlaceType.parkPrivate;
       } else if (yes('covered') || const ['building', 'shed', 'lockers', 'garage'].contains(kind)) {
         type = PlaceType.parkCovered;
@@ -546,7 +546,7 @@ Place? placeFromOsm(Map<String, dynamic> e) {
     case 'small_electric_vehicle_parking' || 'kick-scooter_parking' || 'mobility_hub':
       type = yes('covered') ? PlaceType.parkCovered : PlaceType.parkOutdoor;
     case 'motorcycle_parking':
-      type = (tag('access') == 'private' || tag('access') == 'customers' || yes('fee'))
+      type = (const ['private', 'customers', 'residents', 'permit'].contains(tag('access')) || yes('fee'))
           ? PlaceType.parkPrivate
           : (yes('covered') ? PlaceType.parkCovered : PlaceType.parkOutdoor);
     case 'bicycle_repair_station':
@@ -641,7 +641,8 @@ Place? placeFromOsm(Map<String, dynamic> e) {
     reviews: t0.reviews,
     qa: t0.qa,
     tag: type == PlaceType.charging ? _sockets(t) : (type == PlaceType.wash ? _washMode(t) : null),
-    priceNow: type == PlaceType.parkPrivate ? '\$${(1 + t0.n % 3)}/h' : null,
+    // a price only where the parking really charges (fee=yes); a rack on private property is free but private
+    priceNow: type == PlaceType.parkPrivate && yes('fee') ? '\$${(1 + t0.n % 3)}/h' : null,
     operatorPrice: type == PlaceType.sharing ? '\$1 unlock · \$0.${17 + t0.n % 20}/min' : null,
     accepts: accepts,
     distance: meters < 1000 ? '${(meters / 10).round() * 10} m' : '${(meters / 1000).toStringAsFixed(1)} km',
@@ -909,6 +910,19 @@ List<String> _offers(Map<String, dynamic> t, PlaceType type) {
       }
       if (yes('cargo_bike')) add('Cargo bikes');
       if (yes('service:bicycle:repair')) add('Repairs');
+    case PlaceType.parkPrivate || PlaceType.parkCovered || PlaceType.parkOutdoor || PlaceType.rack:
+      // on private property (inside a private lot, residential complex, office, mall)
+      final acc = t['access']?.toString();
+      if (t['private_area'] != null || acc == 'private' || acc == 'customers' || acc == 'residents') {
+        add('Private property');
+        add(switch (acc) {
+          'customers' => 'Customers only',
+          'residents' => 'Residents only',
+          'permit' => 'Permit needed',
+          _ => 'Residents / staff only',
+        });
+      }
+      if (t['fee'] == 'yes') add('Paid');
     case PlaceType.wash:
       final m = _washMode(t);
       if (m != null) add(m);

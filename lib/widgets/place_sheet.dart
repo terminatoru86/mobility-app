@@ -295,14 +295,18 @@ class _PlaceSheetState extends State<PlaceSheet> {
   List<Widget> _specific(Place p, StatusColors c) {
     switch (p.type) {
       case PlaceType.parkPrivate:
-        if (p.busy.isEmpty) return [];
         return [
-          BusyChart(
-            values: p.busy,
-            color: AppColors.red,
-            title: 'Price today · now ${p.priceNow}',
-            onHistory: () => _push(HistoryScreen(place: p, price: true)),
-          ),
+          // who may use it (on private property: residents, staff, customers)
+          if (p.offers.isNotEmpty) ...[OffersRow(p.offers), const SizedBox(height: 12)],
+          if (p.busy.isNotEmpty)
+            p.priceNow == null
+                ? BusyChart(values: p.busy, color: c.main, onHistory: () => _push(HistoryScreen(place: p)))
+                : BusyChart(
+                    values: p.busy,
+                    color: AppColors.red,
+                    title: 'Price today · now ${p.priceNow}',
+                    onHistory: () => _push(HistoryScreen(place: p, price: true)),
+                  ),
         ];
       case PlaceType.parkOutdoor:
       case PlaceType.parkCovered:

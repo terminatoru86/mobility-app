@@ -44,7 +44,7 @@ KEEP = {
     'image', 'image:0', 'image:1', 'wikimedia_commons', 'mapillary', 'panoramax', 'check_date', 'survey:date',
     'cargo_bike', 'capacity:cargo_bike', 'supervised', 'maxstay', 'charge', 'valves', 'manometer', 'level', 'location',
     'description',
-    'surveillance:type', 'self_service', 'automated', 'rental', 'sport', 'surface', 'email', 'contact:email',
+    'surveillance:type', 'private_area', 'self_service', 'automated', 'rental', 'sport', 'surface', 'email', 'contact:email',
 }
 
 
@@ -815,6 +815,53 @@ def write_contacts(tiles, save=True):
     return len(rows)
 
 
+def mark_private(tiles, files):
+    """Racks and parking inside a private / customers-only area (parking lot of a building, residential complex,
+    office, mall...) are on private property: they get access=private (or customers) and show as private parking."""
+    G = 0.01  # grid of ~1 km for a fast lookup
+    grid = {}
+    n_areas = 0
+    for fpath in files:
+        try:
+            for a in json.load(open(fpath, encoding='utf-8')):
+                n_areas += 1
+                for i in range(math.floor(a[0] / G), math.floor(a[2] / G) + 1):
+                    for j in range(math.floor(a[1] / G), math.floor(a[3] / G) + 1):
+                        grid.setdefault((i, j), []).append(a)
+        except Exception as err:
+            print(f'private areas {fpath}: {err}', flush=True)
+
+    def inside(lat, lon, flat):
+        # ray casting on the outer ring
+        n = len(flat) // 2
+        hit = False
+        j = n - 1
+        for i in range(n):
+            yi, xi, yj, xj = flat[2 * i], flat[2 * i + 1], flat[2 * j], flat[2 * j + 1]
+            if (yi > lat) != (yj > lat) and lon < (xj - xi) * (lat - yi) / ((yj - yi) or 1e-12) + xi:
+                hit = not hit
+            j = i
+        return hit
+
+    marked = 0
+    for d in tiles.values():
+        for r in d.values():
+            t = r[3]
+            if t.get('amenity') not in ('bicycle_parking', 'motorcycle_parking', 'small_electric_vehicle_parking'):
+                continue
+            if t.get('access') not in (None, '', 'yes', 'public', 'permissive'):
+                continue  # already says who may use it
+            if t.get('access') in ('yes', 'public'):
+                continue  # explicitly public, even inside a private lot
+            for a in grid.get((math.floor(r[1] / G), math.floor(r[2] / G)), ()):
+                if a[0] <= r[1] <= a[2] and a[1] <= r[2] <= a[3] and inside(r[1], r[2], a[6]):
+                    t['access'] = 'customers' if a[4] == 'customers' else 'private'
+                    t['private_area'] = a[5]
+                    marked += 1
+                    break
+    return n_areas, marked
+
+
 def stage(msg):
     """A progress line GitHub shows on the run page (readable even when the full log is not)."""
     line = f'{datetime.now(timezone.utc).strftime("%H:%M")}Z {msg}'
@@ -901,6 +948,9 @@ def main():
         except Exception as err:
             print(f"City {src['key']} failed: {err}", flush=True)
     stage(f'4/6 city sources added: {sum(len(d) for d in tiles.values())} places')
+    priv_files = [x.split('=', 1)[1] for x in sys.argv if x.startswith('--private-json=')]
+    n_areas, n_priv = mark_private(tiles, priv_files) if priv_files else (0, 0)
+    print(f'private areas: {n_areas}, racks on private property: {n_priv}', flush=True)
     n_mail = write_contacts(tiles, save=not args and '--extra-only' not in sys.argv)
     n_cam = None
     if not args:
@@ -908,7 +958,7 @@ def main():
             n_cam = fetch_cameras()
         except Exception as err:
             n_cam = f'failed: {str(err)[:100]}'
-    stage(f'5/6 emails: {n_mail} · cameras: {n_cam}')
+    stage(f'5/6 emails: {n_mail} · cameras: {n_cam} · private areas: {n_areas}, racks made private: {n_priv}')
     # the same place from several sources (e.g. copies of a city's rack list re-uploaded by students):
     # keep one per ~5 m. OpenStreetMap first, then our own city list, then everything else.
     def rank(r):

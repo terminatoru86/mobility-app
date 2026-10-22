@@ -38,14 +38,21 @@ jobs:
             nwr/amenity=motorcycle_parking,small_electric_vehicle_parking,kick-scooter_parking,mobility_hub \
             nwr/shop=bicycle,motorcycle,scooter,motorcycle_repair \
             nwr/sport=bmx -o filtered.osm.pbf
+          # private / customers-only areas: a rack inside one is on private property
+          osmium tags-filter region.osm.pbf a/access=private,customers,permit,residents -o priv.pbf
           rm region.osm.pbf
           python3 tool/osm_extract.py filtered.osm.pbf osm.json
+          osmium export priv.pbf -f geojsonseq --geometry-types=polygon -o priv.geojsonseq
+          python3 tool/private_areas.py priv.geojsonseq private.json
+          rm -f priv.pbf priv.geojsonseq
       - name: Name the result
         run: echo "NAME=$(echo '${{ matrix.region }}' | tr '/' '-')" >> $GITHUB_ENV
       - uses: actions/upload-artifact@v4
         with:
           name: osm-${{ env.NAME }}
-          path: osm.json
+          path: |
+            osm.json
+            private.json
           retention-days: 2
 
   build:
@@ -68,7 +75,7 @@ jobs:
           if [ "${{ github.event.inputs.mode }}" = "extra" ]; then
             python3 tool/build_packs.py --extra-only
           else
-            python3 tool/build_packs.py $(for f in osm/*/osm.json; do echo "--osm-json=$f"; done)
+            python3 tool/build_packs.py $(for f in osm/*/osm.json; do echo "--osm-json=$f"; done) $(for f in osm/*/private.json; do echo "--private-json=$f"; done)
           fi
       - name: Save them in the repository
         run: |
