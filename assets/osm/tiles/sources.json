@@ -1554,6 +1554,12 @@
   "places": 140
  },
  {
+  "key": "ago-e365f1cb78",
+  "label": "Transportation Layers · arlgis",
+  "url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Transportation_Layers/FeatureServer/2",
+  "places": 138
+ },
+ {
   "key": "ago-62889198c0",
   "label": "Bike Racks · blanderson8@liberty.edu_LibertyU",
   "url": "https://services2.arcgis.com/gFkswwhe7kA4VZgg/arcgis/rest/services/Bike_Racks/FeatureServer/0",
@@ -2106,15 +2112,15 @@
   "places": 69
  },
  {
-  "key": "ago-dc5de75a52",
-  "label": "Bike Repair Station Madison 2 · asnow4@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Madison_2/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-efdda51168",
   "label": "Bike Repair Station222 · xchen2268@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station222/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-dc5de75a52",
+  "label": "Bike Repair Station Madison 2 · asnow4@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Madison_2/FeatureServer/0",
   "places": 69
  },
  {
@@ -2208,15 +2214,15 @@
   "places": 69
  },
  {
-  "key": "ago-2dd69d495a",
-  "label": "Bike Repair Staton UW Madison · jackroyd@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Staton_UW_Madison/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-4d067d839b",
   "label": "Bike Repair Station 277 · umohammed2@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_277/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-2dd69d495a",
+  "label": "Bike Repair Staton UW Madison · jackroyd@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Staton_UW_Madison/FeatureServer/0",
   "places": 69
  },
  {
@@ -2238,6 +2244,12 @@
   "places": 69
  },
  {
+  "key": "ago-519396d7ee",
+  "label": "Bike Repair Station Abby B · behailu@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Abby_B/FeatureServer/0",
+  "places": 69
+ },
+ {
   "key": "ago-201747ae5d",
   "label": "Bike Repair · rimoss@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair/FeatureServer/0",
@@ -2247,12 +2259,6 @@
   "key": "ago-0a6a9b5d96",
   "label": "Bike Repair Madison · eilundin@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Madison/FeatureServer/0",
-  "places": 69
- },
- {
-  "key": "ago-519396d7ee",
-  "label": "Bike Repair Station Abby B · behailu@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Abby_B/FeatureServer/0",
   "places": 69
  },
  {
@@ -3984,6 +3990,12 @@
   "places": 11
  },
  {
+  "key": "ago-85f357ac39",
+  "label": "Bike Parking_BrandonGravett · gravettb_etsu",
+  "url": "https://services5.arcgis.com/ZYK688A64hFRZ5yX/arcgis/rest/services/Bike_Parking_BrandonGravett/FeatureServer/0",
+  "places": 11
+ },
+ {
   "key": "ago-6182652fbb",
   "label": "Bike Repair Stands · awitherspoon_lawrenceks",
   "url": "https://services.arcgis.com/8O9UlSTnqjKptoda/arcgis/rest/services/Bike_Repair_Stands/FeatureServer/0",
@@ -4566,12 +4578,6 @@
   "places": 5
  },
  {
-  "key": "ago-f683b6ace4",
-  "label": "Bike Parking_MLapointe · MALAP1@ulaval.ca_ulaval",
-  "url": "https://services2.arcgis.com/RkhyeW7cqOfSjlQG/arcgis/rest/services/Bike_Parking_MLapointe/FeatureServer/0",
-  "places": 5
- },
- {
   "key": "ago-d923917005",
   "label": "Bicycle Repair · welchparker",
   "url": "https://services3.arcgis.com/21H3muniXm83m5hZ/arcgis/rest/services/BicycleRepair/FeatureServer/0",
@@ -4779,6 +4785,12 @@
   "key": "ago-42febc644b",
   "label": "Bike Parking_Connor Lehr · connorlehr",
   "url": "https://services2.arcgis.com/4aUxCaDLaSFPHO9o/arcgis/rest/services/Bike_Parking_Connor_Lehr/FeatureServer/0",
+  "places": 3
+ },
+ {
+  "key": "ago-1f79397244",
+  "label": "Bike Parking_Iyyussuu Ethiopia · jscook_UMN",
+  "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/Bike_Parking_Iyyussuu_Ethiopia/FeatureServer/0",
   "places": 3
  },
  {
