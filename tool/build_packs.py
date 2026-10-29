@@ -48,9 +48,15 @@ KEEP = {
 }
 
 
-def http(url, data=None, timeout=200):
+def http(url, data=None, timeout=200, headers=None):
     body = urllib.parse.urlencode(data).encode() if data else None
-    req = urllib.request.Request(url, data=body, headers=UA)
+    h = dict(UA)
+    # Socrata (city portals): with our free app token the servers let us read more, faster
+    tok = os.environ.get('SOCRATA_APP_TOKEN')
+    if tok and ('/resource/' in url or 'api.us.socrata.com' in url or '/api/views/' in url):
+        h['X-App-Token'] = tok
+    h.update(headers or {})
+    req = urllib.request.Request(url, data=body, headers=h)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
@@ -585,6 +591,50 @@ def fetch_mbta():
     return out
 
 
+def fetch_foursquare():
+    """Foursquare Open Source Places (Apache 2.0, monthly): bike / moped / motorcycle / scooter shops,
+    repair and rentals in the US, open places only. Read from Hugging Face with our token (HF_TOKEN)."""
+    token = os.environ.get('HF_TOKEN')
+    if not token:
+        print('Foursquare skipped: no HF_TOKEN', flush=True)
+        return []
+    import duckdb
+    auth = {'Authorization': f'Bearer {token}'}
+    tree = json.loads(http('https://huggingface.co/api/datasets/foursquare/fsq-os-places/tree/main/release', headers=auth, timeout=60))
+    rel = sorted(t['path'] for t in tree if t.get('type') == 'directory' and 'dt=' in t.get('path', ''))[-1]
+    con = duckdb.connect()
+    con.execute("INSTALL httpfs; LOAD httpfs;")
+    con.execute(f"CREATE SECRET hf (TYPE huggingface, TOKEN '{token}');")
+    q = f"""
+      SELECT fsq_place_id, name, latitude, longitude, address, locality, region, tel, website, email,
+             date_refreshed, array_to_string(fsq_category_labels, ' | ') AS cats
+      FROM read_parquet('hf://datasets/foursquare/fsq-os-places/{rel}/places/parquet/*.parquet')
+      WHERE country = 'US' AND date_closed IS NULL AND latitude IS NOT NULL
+        AND regexp_matches(lower(array_to_string(fsq_category_labels, ' | ')), 'bicycle|bike|motorcycle|scooter|moped|cycling')
+    """
+    out = []
+    for fid, name, lat, lon, addr, city, region, tel, web, email, refreshed, cats in con.execute(q).fetchall():
+        c = (cats or '').lower()
+        if 'motorcycle' in c or 'moped' in c:
+            tags = {'shop': 'motorcycle_repair'} if 'repair' in c else {'shop': 'motorcycle'}
+        elif 'scooter' in c and 'bike' not in c and 'bicycle' not in c:
+            tags = {'shop': 'scooter'}
+        elif 'rental' in c or 'share' in c:
+            tags = {'amenity': 'bicycle_rental'}
+        elif 'bicycle' in c or 'bike' in c:
+            tags = {'shop': 'bicycle'}
+            if 'repair' in c:
+                tags['service:bicycle:repair'] = 'yes'
+        else:
+            continue  # cycling studios, clubs, trails... not places for the map
+        tags.update({k: v for k, v in {'name': name, 'website': web, 'phone': tel, 'email': email,
+                                        'addr:street': addr, 'check_date': (refreshed or '')[:10] or None}.items() if v})
+        tags['source'] = 'Foursquare OS Places'
+        out.append([f'fsq/{fid}', round(lat, 6), round(lon, 6), tags])
+    print(f'Foursquare {rel}: {len(out)}', flush=True)
+    return out
+
+
 def fetch_overture():
     """Bike shops, repair and rentals from Overture Maps places (CDLA-Permissive-2.0), via DuckDB on the public S3."""
     try:
@@ -911,7 +961,7 @@ def main():
                 except Exception:
                     pass
     counts_src = {}
-    for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture),
+    for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture), ('foursquare', fetch_foursquare),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
         try:
             got = fn()
@@ -990,6 +1040,26 @@ def main():
                 dropped += 1
             else:
                 seen.add(g)
+    # the same shop / rental from OpenStreetMap, Overture and Foursquare: same name within ~150 m, kept once
+    import unicodedata
+    def norm(n):
+        n = unicodedata.normalize('NFKD', n or '').encode('ascii', 'ignore').decode().lower()
+        return re.sub(r'[^a-z0-9]+', '', re.sub(r'\b(the|inc|llc|co|shop|store|bikes?|bicycles?|cycles?)\b', '', n))
+    for key, d in tiles.items():
+        seen = set()
+        for r in sorted(d.values(), key=lambda r: (rank(r), 0 if r[0].startswith('ovt/') else 1, r[0])):
+            t = r[3]
+            if not (t.get('shop') or t.get('amenity') == 'bicycle_rental') or not t.get('name'):
+                continue
+            n = norm(t['name'])
+            if not n:
+                continue
+            cells = {(n, round(r[1] / 0.0015) + i, round(r[2] / 0.002) + j) for i in (-1, 0, 1) for j in (-1, 0, 1)}
+            if any(c in seen for c in cells) and rank(r) > 0:
+                d.pop(r[0])
+                dropped += 1
+            else:
+                seen.add((n, round(r[1] / 0.0015), round(r[2] / 0.002)))
     print(f'duplicates removed: {dropped}', flush=True)
     # only the US (some sources have places abroad or broken coordinates)
     for k in [k for k in tiles if not (17 <= k[0] < 72 and -180 <= k[1] < -64)]:

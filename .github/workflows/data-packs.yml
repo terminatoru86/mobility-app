@@ -4,6 +4,9 @@ name: Data packs (whole US, fast)
 # then the city halls, the automatic discovery (ArcGIS Online + Socrata), MBTA and Overture.
 # Packs are gzip-compressed 1° pieces in assets/osm/tiles.
 on:
+  # every Sunday early morning (Chicago): the newest data from every source
+  schedule:
+    - cron: '17 8 * * 0'
   workflow_dispatch:
     inputs:
       mode:
@@ -70,6 +73,9 @@ jobs:
         with:
           path: osm
       - name: Build the packs
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
         run: |
           pip install duckdb
           if [ "${{ github.event.inputs.mode }}" = "extra" ]; then
