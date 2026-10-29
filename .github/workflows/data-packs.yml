@@ -76,6 +76,11 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+          KEY_WSDOT: ${{ secrets.KEY_WSDOT }}
+          KEY_511WI: ${{ secrets.KEY_511WI }}
+          KEY_511NY: ${{ secrets.KEY_511NY }}
+          KEY_511GA: ${{ secrets.KEY_511GA }}
+          KEY_AZ511: ${{ secrets.KEY_AZ511 }}
         run: |
           pip install duckdb
           if [ "${{ github.event.inputs.mode }}" = "extra" ]; then

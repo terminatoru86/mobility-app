@@ -741,6 +741,24 @@ def camera_rows(points, source):
     return rows
 
 
+def cameras_wsdot():
+    """Washington State DOT highway cameras (Traveler Information API, free access code in KEY_WSDOT)."""
+    code = os.environ.get('KEY_WSDOT')
+    if not code:
+        return []
+    url = ('https://wsdot.wa.gov/Traffic/api/HighwayCameras/HighwayCamerasREST.svc/GetCamerasAsJson?AccessCode='
+           + urllib.parse.quote(code))
+    out = []
+    for c in json.loads(http(url, timeout=90)):
+        loc = c.get('CameraLocation') or {}
+        lat, lon, img = loc.get('Latitude'), loc.get('Longitude'), c.get('ImageURL')
+        if not (lat and lon and img) or c.get('IsActive') is False:
+            continue
+        name = c.get('Title') or loc.get('Description') or loc.get('RoadName') or ''
+        out.append([round(float(lat), 5), round(float(lon), 5), str(name)[:80], img, 'WSDOT'])
+    return out
+
+
 def fetch_cameras():
     cams = []
     for c in CAMERA_LAYERS:
@@ -786,6 +804,14 @@ def fetch_cameras():
                 continue
         if len(j.get('results', [])) < 100:
             break
+    # state 511 / DOT services that need a free key (kept as GitHub secrets)
+    for name, fn in (('WSDOT', cameras_wsdot),):
+        try:
+            got = fn()
+            print(f'Cameras {name}: {len(got)}', flush=True)
+            cams += got
+        except Exception as err:
+            print(f'Cameras {name} failed: {str(err)[:150]}', flush=True)
     # OpenTrafficCamMap (MIT): crowdsourced list with image links
     try:
         d = json.loads(http('https://raw.githubusercontent.com/AidanWelch/OpenTrafficCamMap/master/cameras/USA.json'))
