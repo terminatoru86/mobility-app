@@ -76,11 +76,6 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
-          KEY_WSDOT: ${{ secrets.KEY_WSDOT }}
-          KEY_511WI: ${{ secrets.KEY_511WI }}
-          KEY_511NY: ${{ secrets.KEY_511NY }}
-          KEY_511GA: ${{ secrets.KEY_511GA }}
-          KEY_AZ511: ${{ secrets.KEY_AZ511 }}
         run: |
           pip install duckdb
           if [ "${{ github.event.inputs.mode }}" = "extra" ]; then
@@ -92,8 +87,8 @@ jobs:
         run: |
           git config user.name "mobility-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A assets/osm/tiles assets/osm/cameras.json.gz data/contacts
+          git add -A assets/osm/tiles data/contacts
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Data packs $(date -u +%Y-%m-%d)"
-          git pull --rebase -X theirs || { git checkout --theirs assets/osm/tiles assets/osm/cameras.json.gz data/contacts; git add -A assets/osm/tiles assets/osm/cameras.json.gz data/contacts; GIT_EDITOR=true git rebase --continue; }
+          git pull --rebase -X theirs || { git checkout --theirs assets/osm/tiles data/contacts; git add -A assets/osm/tiles data/contacts; GIT_EDITOR=true git rebase --continue; }
           git push

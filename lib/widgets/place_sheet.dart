@@ -4,14 +4,12 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../data/app_state.dart';
-import '../data/cameras.dart';
 import '../data/mapillary.dart';
 import '../data/places.dart';
 import '../data/store.dart';
 import '../screens/fixit_screens.dart';
 import '../screens/place_actions.dart';
 import '../theme.dart';
-import 'camera_card.dart';
 import 'pin.dart';
 import 'sheet_parts.dart';
 
@@ -161,13 +159,6 @@ class _PlaceSheetState extends State<PlaceSheet> {
       ..._specific(p, c),
       if (p.hours != null || p.phone != null || p.website != null) ...[gap, _hoursRow(p)],
       if (p.type.group == 'Parking') _securitySection(p),
-      if (p.type.group == 'Parking')
-        FutureBuilder<TrafficCamera?>(
-          future: Cameras.nearest(p.pos),
-          builder: (_, snap) => snap.data == null
-              ? const SizedBox.shrink()
-              : Padding(padding: const EdgeInsets.only(top: 12), child: CameraCard(snap.data!)),
-        ),
       if (p.reviews.isNotEmpty)
         ...[gap, ReviewsCarousel(p, onOpen: () => _push(ReviewsScreen(place: p, state: widget.state)))]
       else if (!p.type.isNeutral || p.osm)
