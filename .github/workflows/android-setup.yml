@@ -31,6 +31,9 @@ jobs:
         run: |
           flutter pub get 2>&1 | tee pub.log
           flutter analyze --no-fatal-infos --no-fatal-warnings 2>&1 | tee analyze.log || true
+          flutter test 2>&1 | tee test.log; tcode=${PIPESTATUS[0]}
+          grep -E "\[E\]|Expected:|Actual:|Error:|Some tests failed" test.log | head -40 | while read -r l; do echo "::error::test: $l"; done
+          grep -E "All tests passed" test.log && echo "::notice title=Tests::$(grep -E 'All tests passed' test.log | tail -1)"
           grep -E "^ *error " analyze.log | head -40 | while read -r l; do echo "::error::analyze: $l"; done
           set +e
           flutter build apk --debug 2>&1 | tee build.log
@@ -42,7 +45,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          rm -f pub.log analyze.log build.log
+          rm -f pub.log analyze.log build.log test.log
           git add -A android
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Android project (flutter create + permissions)"
