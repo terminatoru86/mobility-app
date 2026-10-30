@@ -1,6 +1,10 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
+import 'package:vector_map_tiles/vector_map_tiles.dart';
+import 'package:vector_map_tiles_pmtiles/vector_map_tiles_pmtiles.dart' show ProtomapsThemes;
 
+import '../data/basemap.dart';
 import '../data/store.dart';
 
 /// Calm, light-grey version of the OpenStreetMap map, so our coloured pins
@@ -24,7 +28,25 @@ const _nightMatrix = <double>[
 
 /// [street]: the GPS guidance look, closer to real colours so streets, parks and
 /// buildings are easy to read at high zoom.
-Widget baseTiles({bool street = false}) => ColorFiltered(
+///
+/// Where our map is on the phone (100 miles around the rider, see [Basemap]) it is drawn from
+/// the phone, without internet; elsewhere the online OpenStreetMap map.
+Widget baseTiles({bool street = false}) => ListenableBuilder(
+      listenable: Basemap.i,
+      builder: (context, _) => _BaseLayer(street: street),
+    );
+
+final _vectorTheme = ProtomapsThemes.lightV4();
+
+class _BaseLayer extends StatelessWidget {
+  final bool street;
+  const _BaseLayer({required this.street});
+
+  @override
+  Widget build(BuildContext context) {
+    final cam = MapCamera.maybeOf(context);
+    final local = !kIsWeb && Basemap.i.ready && (cam == null || Basemap.i.covers(cam.center));
+    return ColorFiltered(
       colorFilter: _night
           ? const ColorFilter.matrix(_nightMatrix)
           : street
@@ -43,17 +65,25 @@ Widget baseTiles({bool street = false}) => ColorFiltered(
                   0.19, 0.43, 0.11, 0, 74, //
                   0, 0, 0, 1, 0,
                 ]),
-      child: TileLayer(
-        urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-        // if a tile does not come, the same tile from the German OpenStreetMap mirror
-        fallbackUrl: 'https://tile.openstreetmap.de/{z}/{x}/{y}.png',
-        userAgentPackageName: 'com.mobility.app',
-        maxNativeZoom: 19,
-        keepBuffer: 6,
-        panBuffer: 2,
-        tileDisplay: const TileDisplay.instantaneous(),
-      ),
+      child: local
+          ? VectorTileLayer(
+              tileProviders: TileProviders({'protomaps': Basemap.i.provider}),
+              theme: _vectorTheme,
+              maximumZoom: 22,
+            )
+          : TileLayer(
+              urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+              // if a tile does not come, the same tile from the German OpenStreetMap mirror
+              fallbackUrl: 'https://tile.openstreetmap.de/{z}/{x}/{y}.png',
+              userAgentPackageName: 'com.mobility.app',
+              maxNativeZoom: 19,
+              keepBuffer: 6,
+              panBuffer: 2,
+              tileDisplay: const TileDisplay.instantaneous(),
+            ),
     );
+  }
+}
 
 /// CyclOSM: the OpenStreetMap map drawn for cyclists (bike lanes, racks, repair stations, shops).
 /// Free, run by OpenStreetMap France on donations; credit OpenStreetMap and CyclOSM.

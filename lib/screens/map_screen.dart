@@ -6,6 +6,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
 import '../data/app_state.dart';
+import '../data/basemap.dart';
 import '../data/location.dart';
 import '../data/open_data.dart';
 import '../data/osm.dart';
@@ -94,6 +95,7 @@ class MapScreenState extends State<MapScreen> {
   void initState() {
     super.initState();
     _defaultFilters();
+    Basemap.i.start(); // the street map already on the phone: no internet needed
     Store.i.addListener(_storeChanged);
     // The circle in the search bar shows your vehicle, then the weather, every 50 s.
     _flip = Timer.periodic(const Duration(seconds: 50), (_) {
@@ -237,6 +239,7 @@ class MapScreenState extends State<MapScreen> {
     centers.sort((a, b) => d(userPos, a).compareTo(d(userPos, b)));
     for (final c in centers) {
       if (!mounted) return;
+      Basemap.i.ensure(c); // each of the rider's areas gets its offline street map
       await _osm.loadRegion(c, MapZone.radiusMiles.toDouble(), () {
         // redraw at most every 2.5 s while pieces arrive
         if (!mounted) return;
@@ -331,12 +334,14 @@ class MapScreenState extends State<MapScreen> {
     if (pos == null) {
       setState(() => _noGps = true);
       _map.move(userPos, 16.2);
+      Basemap.i.ensure(userPos); // no GPS: the map of the area where the map opens
       _claimZone(userPos); // no GPS: the area where the map opens
       return;
     }
     userPos = pos;
     _ringCenter = pos;
     _claimZone(pos);
+    Basemap.i.ensure(pos); // first time after install: our street map, 100 miles around, kept on the phone
     _osm.refreshDistances().then((_) {
       if (mounted) setState(() => _merged = _allCache = null);
     });
@@ -1057,6 +1062,16 @@ class MapScreenState extends State<MapScreen> {
               builder: (_, p, __) => p == null
                   ? const SizedBox.shrink()
                   : _pill(null, 'Area ${(p.$1 * 100 / p.$2).round()}% · ${p.$1}/${p.$2}', Colors.white, AppColors.ink, null),
+            ),
+            // our offline street map (100 miles), downloaded once after install, then weekly updates
+            ListenableBuilder(
+              listenable: Basemap.i,
+              builder: (_, __) {
+                final p = Basemap.i.progress;
+                return p == null
+                    ? const SizedBox.shrink()
+                    : _pill(Icons.download_rounded, 'Offline map ${p.$1}/${p.$2}', Colors.white, AppColors.ink, null);
+              },
             ),
           ]),
         ]),

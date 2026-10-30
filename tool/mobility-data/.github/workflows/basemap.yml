@@ -1,0 +1,72 @@
+# Our offline street map for the MOBIlity app.
+# Cuts the US into 1° x 1° pieces from the latest Protomaps build (OpenStreetMap data, ODbL)
+# and publishes them as release files: map-<lat>/m_<lat>_<lon>.pmtiles, plus map-index/map_index.json.
+# The app downloads the pieces within 100 miles of the rider once, then only what changed (weekly).
+name: Offline map pieces
+
+on:
+  schedule:
+    - cron: '41 9 * * 0' # every Sunday
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pieces:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+      - name: Tools (pmtiles)
+        run: |
+          go install github.com/protomaps/go-pmtiles@v1.31.2
+          sudo cp "$(go env GOPATH)/bin/go-pmtiles" /usr/local/bin/pmtiles
+          pmtiles --help | head -3
+
+      - name: Latest Protomaps build
+        run: |
+          B=$(curl -sSL --retry 5 https://build-metadata.protomaps.dev/builds.json | jq -r 'map(.key) | map(select(endswith(".pmtiles"))) | sort | last' 2>/dev/null || true)
+          if [ -z "$B" ] || [ "$B" = null ]; then
+            # the list did not answer: the newest daily build of the last 10 days
+            for d in $(seq 0 10); do
+              c="$(date -u -d "-$d day" +%Y%m%d).pmtiles"
+              if curl -sfI "https://build.protomaps.com/$c" >/dev/null; then B=$c; break; fi
+            done
+          fi
+          echo "Build: $B"
+          test -n "$B" && echo "BUILD=$B" >> "$GITHUB_ENV"
+
+      - name: Cut and publish, one latitude band at a time
+        run: |
+          mkdir -p out
+          echo '{}' > sizes.json
+          for lat in $(cut -d' ' -f1 cells.txt | sort -un); do
+            rel="map-$lat"
+            gh release view "$rel" >/dev/null 2>&1 || gh release create "$rel" -t "Map $lat°N" -n "Offline map pieces, latitude $lat" >/dev/null
+            grep "^$lat " cells.txt | while read a b; do echo "$a $b"; done | \
+              xargs -P 8 -L 1 bash -c 'a=$0; b=$1; f=out/m_${a}_${b}.pmtiles;
+                for t in 1 2 3; do
+                  pmtiles extract "https://build.protomaps.com/$BUILD" "$f" --bbox="$b,$a,$((b+1)),$((a+1))" --maxzoom=14 --download-threads=4 >/dev/null 2>&1 && break
+                  rm -f "$f"; sleep 10
+                done; true'
+            ls out/*.pmtiles >/dev/null 2>&1 || continue
+            for f in out/*.pmtiles; do
+              k=$(basename "$f" .pmtiles); k=${k#m_}
+              h=$(sha256sum "$f" | cut -c1-12); s=$(stat -c%s "$f")
+              jq --arg k "$k" --argjson s "$s" --arg h "$h" '.[$k]=[$s,$h]' sizes.json > t.json && mv t.json sizes.json
+            done
+            gh release upload "$rel" out/*.pmtiles --clobber
+            echo "::notice::band $lat: $(ls out/*.pmtiles | wc -l) pieces, $(du -sh out | cut -f1)"
+            rm -f out/*.pmtiles
+          done
+          jq --arg v "$BUILD" '{version:$v, release_prefix:"map-", pieces:.}' sizes.json > map_index.json
+          gh release view map-index >/dev/null 2>&1 || gh release create map-index -t "Map index" -n "Which offline map pieces exist (size, version)" >/dev/null
+          gh release upload map-index map_index.json --clobber
+          echo "::notice::$(jq '.pieces|length' map_index.json) pieces, $(jq '[.pieces[][0]]|add/1e9' map_index.json) GB"
