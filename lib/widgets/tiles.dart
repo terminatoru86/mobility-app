@@ -2,10 +2,10 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:vector_map_tiles/vector_map_tiles.dart';
-import 'package:vector_map_tiles_pmtiles/vector_map_tiles_pmtiles.dart' show ProtomapsThemes;
 
 import '../data/basemap.dart';
 import '../data/store.dart';
+import 'map_theme.dart';
 
 /// Calm, light-grey version of the OpenStreetMap map, so our coloured pins
 /// and the blue routes stand out. (Before launch: a provider with our own key.)
@@ -36,7 +36,7 @@ Widget baseTiles({bool street = false}) => ListenableBuilder(
       builder: (context, _) => _BaseLayer(street: street),
     );
 
-final _vectorTheme = ProtomapsThemes.lightV4();
+final _vectorTheme = protomapsLight();
 
 class _BaseLayer extends StatelessWidget {
   final bool street;
