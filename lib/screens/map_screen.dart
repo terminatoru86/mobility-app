@@ -312,14 +312,14 @@ class MapScreenState extends State<MapScreen> {
     ];
   }
 
-  List<Place> get _visible {
-    final all = _all;
-    return _picked.isEmpty ? all : all.where((p) => _picked.contains(p.type.chip)).toList();
-  }
-
   List<Place> _near(LatLng c, double meters) {
     const d = Distance();
-    final out = _all.where((p) => d(c, p.pos) < meters).toList()
+    // a quick box first (cheap), the exact distance only for the few inside it
+    final dLat = meters / 111000, dLng = dLat / math.max(0.2, math.cos(c.latitude * math.pi / 180));
+    final out = _all
+        .where((p) => (p.pos.latitude - c.latitude).abs() < dLat && (p.pos.longitude - c.longitude).abs() < dLng)
+        .where((p) => d(c, p.pos) < meters)
+        .toList()
       ..sort((a, b) => d(c, a.pos).compareTo(d(c, b.pos)));
     return out;
   }
@@ -337,7 +337,9 @@ class MapScreenState extends State<MapScreen> {
     userPos = pos;
     _ringCenter = pos;
     _claimZone(pos);
-    _osm.refreshDistances();
+    _osm.refreshDistances().then((_) {
+      if (mounted) setState(() => _merged = _allCache = null);
+    });
     _open.refreshDistances();
     _loadOpenData(pos);
     _loadRegion();
@@ -599,6 +601,43 @@ class MapScreenState extends State<MapScreen> {
     return _markerCache!;
   }
 
+  /// The places in a grid of ~5 km squares, so a redraw looks only at the squares on the screen.
+  Map<int, List<Place>> _grid = const {};
+  List<Place>? _gridOf;
+  static const _gCell = 0.05;
+  static int _gKey(int a, int b) => (a + 4000) * 20000 + (b + 8000);
+
+  List<Place> _inView() {
+    final all = _all;
+    if (!identical(_gridOf, all)) {
+      _gridOf = all;
+      final g = <int, List<Place>>{};
+      for (final p in all) {
+        g.putIfAbsent(_gKey((p.pos.latitude / _gCell).floor(), (p.pos.longitude / _gCell).floor()), () => []).add(p);
+      }
+      _grid = g;
+    }
+    final s = _screen;
+    if (s == null) return all;
+    final padLat = (s.north - s.south) * 0.3, padLng = (s.east - s.west) * 0.3;
+    final a0 = ((s.south - padLat) / _gCell).floor(), a1 = ((s.north + padLat) / _gCell).floor();
+    final b0 = ((s.west - padLng) / _gCell).floor(), b1 = ((s.east + padLng) / _gCell).floor();
+    if ((a1 - a0 + 1) * (b1 - b0 + 1) > 6000) return all; // far out: everything (thinned below)
+    final out = <Place>[];
+    for (int a = a0; a <= a1; a++) {
+      for (int b = b0; b <= b1; b++) {
+        final c = _grid[_gKey(a, b)];
+        if (c != null) out.addAll(c);
+      }
+    }
+    final sel = _selected;
+    if (sel != null && !out.any((p) => p.id == sel)) {
+      final p = all.where((p) => p.id == sel).firstOrNull;
+      if (p != null) out.add(p);
+    }
+    return out;
+  }
+
   void _buildLayers() {
     try {
       _screen = _map.camera.visibleBounds;
@@ -618,8 +657,13 @@ class MapScreenState extends State<MapScreen> {
       return false;
     }
 
-    final pins = _visible
-        .where((p) => (a == null || a.contains(p.pos)) && (st.zones.isEmpty || inZone(p.pos)))
+    // only what is on the screen (and a margin around it): not the whole 100 miles every time
+    final view = _inView();
+    final pins = view
+        .where((p) =>
+            (_picked.isEmpty || _picked.contains(p.type.chip)) &&
+            (a == null || a.contains(p.pos)) &&
+            (st.zones.isEmpty || inZone(p.pos)))
         .toList();
     final markers = <Marker>[];
     final dots = <Place>[];
@@ -724,7 +768,7 @@ class MapScreenState extends State<MapScreen> {
     // smaller than the dots outside the ring, so the chosen kind stands out
     final others = _picked.isEmpty
         ? <Place>[]
-        : _all
+        : view
             .where((p) =>
                 !_picked.contains(p.type.chip) && (a == null || a.contains(p.pos)) && (st.zones.isEmpty || inZone(p.pos)))
             .toList();

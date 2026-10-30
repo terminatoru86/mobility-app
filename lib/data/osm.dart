@@ -14,7 +14,33 @@ import 'places.dart';
 /// City-hall lists already inside the offline packs (no need to download them again).
 final Set<String> packedCities = {};
 
-List<dynamic> _decodeList(String s) => jsonDecode(s) as List<dynamic>;
+/// Off the main thread: a pack piece (text) straight to ready places, with their distance from [from].
+/// On the phone the screen keeps drawing while thousands of places are built.
+(List<Map<String, dynamic>>, List<Place>) _buildPiece((String, double, double) a) {
+  final from = LatLng(a.$2, a.$3);
+  final raws = <Map<String, dynamic>>[];
+  final out = <Place>[];
+  for (final r in jsonDecode(a.$1) as List) {
+    final l = r as List;
+    final e = <String, dynamic>{'id': l[0], 'lat': l[1], 'lon': l[2], 'tags': l[3]};
+    final p = placeFromOsm(e, from: from);
+    if (p == null) continue;
+    raws.add(e);
+    out.add(p);
+  }
+  return (raws, out);
+}
+
+/// Off the main thread: the same places again, with distances from a new GPS position.
+List<Place> _rebuildPlaces((List<Map<String, dynamic>>, double, double) a) {
+  final from = LatLng(a.$2, a.$3);
+  final out = <Place>[];
+  for (final e in a.$1) {
+    final p = placeFromOsm(e, from: from);
+    if (p != null) out.add(p);
+  }
+  return out;
+}
 
 /// A compressed piece (.json.gz) back to text.
 String _gunzip(List<int> bytes) => utf8.decode(GZipDecoder().decodeBytes(bytes));
@@ -154,7 +180,7 @@ class OsmService {
         if (text == null && have.containsKey(key)) text = await _shippedPiece(key);
         if (text == null) continue; // nothing for riders in this piece
         try {
-          _putPiece(key, await compute(_decodeList, text));
+          await _putText(key, text);
           changed = true;
         } catch (err) {
           debugPrint('Pack $key failed: $err');
@@ -273,16 +299,21 @@ class OsmService {
 
   final Map<String, Set<String>> _tileIds = {}; // piece -> its place ids (to replace a piece cleanly)
 
-  void _putPiece(String key, List<dynamic> rows) {
+  Future<void> _putText(String key, String text) async {
+    final (raws, ps) = await compute(_buildPiece, (text, userPos.latitude, userPos.longitude));
+    _putPiece(key, raws, ps);
+  }
+
+  void _putPiece(String key, List<Map<String, dynamic>> raws, List<Place> ps) {
     for (final id in _tileIds[key] ?? const <String>{}) {
       _raw.remove(id);
       places.remove(id);
     }
     final ids = <String>{};
-    for (final r in rows) {
-      final l = r as List;
-      _add({'id': l[0], 'lat': l[1], 'lon': l[2], 'tags': l[3]});
-      ids.add('${l[0]}');
+    for (var i = 0; i < ps.length; i++) {
+      _raw[ps[i].id] = raws[i];
+      places[ps[i].id] = ps[i];
+      ids.add(ps[i].id);
     }
     _tileIds[key] = ids;
   }
@@ -331,7 +362,7 @@ class OsmService {
       _done.add([a.toDouble(), b.toDouble(), a + 1.0, b + 1.0]); // the live map does not ask again here
       if (text == null) continue; // nothing for riders in this piece
       try {
-        _putPiece(key, await compute(_decodeList, text));
+        await _putText(key, text);
         onPiece();
       } catch (err) {
         debugPrint('Pack $key failed: $err');
@@ -361,7 +392,7 @@ class OsmService {
         if (t.statusCode != 200) continue;
         final text = await compute(_gunzip, t.bodyBytes.toList());
         await db.write(key, text, hash);
-        _putPiece(key, await compute(_decodeList, text));
+        await _putText(key, text);
         _packTilesDone.add(key);
         _done.add([a.toDouble(), b.toDouble(), a + 1.0, b + 1.0]);
         onPiece();
@@ -521,10 +552,21 @@ class OsmService {
     return false;
   }
 
-  /// Recalculates distances and arrival times after the GPS position changed.
-  void refreshDistances() {
-    for (final e in _raw.values.toList()) {
-      _add(e);
+  /// Recalculates distances and arrival times after the GPS position changed:
+  /// off the main thread, a few thousand places at a time (the map keeps moving).
+  LatLng? _distFrom;
+  Future<void> refreshDistances() async {
+    final from = userPos;
+    if (_distFrom != null && _dist(_distFrom!, from) < 500) return; // moved too little to matter
+    _distFrom = from;
+    final all = _raw.values.toList();
+    for (var i = 0; i < all.length; i += 5000) {
+      final chunk = all.sublist(i, math.min(all.length, i + 5000));
+      final ps = await compute(_rebuildPlaces, (chunk, from.latitude, from.longitude));
+      if (!identical(userPos, from)) return; // a newer position: that one recalculates
+      for (final p in ps) {
+        if (places.containsKey(p.id)) places[p.id] = p;
+      }
     }
   }
 
@@ -548,7 +590,7 @@ class OsmService {
 const _dist = Distance(calculator: Haversine()); // fast enough for tens of thousands of places
 
 /// Turns an OpenStreetMap element into a MOBIlity place.
-Place? placeFromOsm(Map<String, dynamic> e) {
+Place? placeFromOsm(Map<String, dynamic> e, {LatLng? from}) {
   final lat = (e['lat'] as num?)?.toDouble();
   final lon = (e['lon'] as num?)?.toDouble();
   if (lat == null || lon == null) return null;
@@ -609,7 +651,7 @@ Place? placeFromOsm(Map<String, dynamic> e) {
   if (type == null) return null;
 
   final pos = LatLng(lat, lon);
-  final meters = _dist(userPos, pos);
+  final meters = _dist(from ?? userPos, pos);
   final street = [tag('addr:housenumber'), tag('addr:street')].whereType<String>().join(' ');
   final name = tag('name');
   final address = name ?? (street.isNotEmpty ? street : type.title);
