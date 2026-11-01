@@ -1,16 +1,19 @@
 email,kind,name,website,phone,street,lat,lon,id,source
 info@ridebhm.com,bmx,RideBHM,https://ridebhm.com/,+1 833-263-4056,2800 Portifino Drive,33.428513,-86.899967,way/1409922793,OpenStreetMap
 slabtownbmx@gmail.com,bmx,Slabtown BMX,https://slabtownbmx.com/,+1 541 649 2544,,43.790007,-123.026365,way/1391323994,OpenStreetMap
+caltrain@bikehub.com,private parking,,https://www.bikehub.com/articles/bikehub-secure-parking-rooms-pg1215.htm,+1 888 659 2291,,37.485837,-122.231731,way/566877261,OpenStreetMap
 ucommute@uw.edu,private parking,,,+1-206-221-3701,,47.656303,-122.3069,node/8948540149,OpenStreetMap
 bicycles@soundtransit.org,private parking,,,,,47.702831,-122.32832,node/9719196710,OpenStreetMap
 support@bikelink.org,private parking,,BikeLink.org,+1-888-540-0546,,47.67158,-122.117939,node/12826884720,OpenStreetMap
 point2point@ltd.org,private parking,,,+1-541-682-6213,,43.799176,-123.040589,node/9576703798,OpenStreetMap
 support@bikelink.org,private parking,Auburn East,https://bikelink.org/,,,47.306659,-122.231969,way/1353842037,OpenStreetMap
+caltrain@bikehub.com,private parking,Caltrain Bike Locker,https://www.bikehub.com/articles/bikehub-secure-parking-rooms-pg1215.htm,+1 888 659 2291,,37.454208,-122.181945,way/111834753,OpenStreetMap
 support@bikelink.org,private parking,Issaquah Highlands Park & Ride,https://bikelink.org/,,,47.545952,-122.020038,node/12106749426,OpenStreetMap
 support@bikelink.org,private parking,Mount Baker North,https://bikelink.org/,,,47.577101,-122.297952,node/5695323059,OpenStreetMap
 support@bikelink.org,private parking,Mount Baker South,https://bikelink.org/,,,47.576253,-122.297316,node/2672075659,OpenStreetMap
 support@bikelink.org,private parking,Othello North,https://bikelink.org/,,,47.539229,-122.281886,node/9930954537,OpenStreetMap
 support@bikelink.org,private parking,Othello South,https://bikelink.org/,,,47.537257,-122.280844,node/2672087022,OpenStreetMap
+caltrainpa@bikehub.com,private parking,Palo Alto Caltrain BikeHub,https://www.bikehub.com/articles/bikehub-secure-parking-rooms-pg1215.htm,+1 888 659 2291,,37.443599,-122.165404,node/12790892763,OpenStreetMap
 support@bikelink.org,private parking,Puyallup East,https://bikelink.org/,,,47.192471,-122.295039,node/13461524401,OpenStreetMap
 info@bublrbikes.org,rent,,https://bublrbikes.org/,+1-414-931-1121,,43.026486,-87.918041,way/917215662,OpenStreetMap
 info@centralparktours.net,rent,,https://www.centralparktours.net/,+1-347-746-8687,870 7th Avenue,40.764645,-73.981211,node/5971361193,OpenStreetMap
@@ -875,7 +878,7 @@ indianharleykawi@yahoo.com,service,Angela at Indian motorcycle of Fort Hood,http
 angletech@me.com,service,Angletech Cycles,https://cycledifferent.com/,+1-719-687-7475,1483 Garden of the Gods Road,38.895388,-104.85551,way/208958165,OpenStreetMap
 angolapowersports@yahoo.com,service,Angola's Powersports,https://www.youtube.com/watch?v=AWfI-62EO-s,+12606687400,1067 N 177 W,41.658298,-85.025955,ovt/6a8a14d3-1e43-413a-941d-88eaa0cf140c,Overture Maps
 angrystuntz@gmail.com,service,Angry Stuntz,http://www.AngryStuntz.com/,+14089151559,,37.085131,-120.826347,ovt/49e2d4e9-43d6-49d4-82ab-b7f103b7427f,Overture Maps
-annapolisvelo@gmail.com,service,Annapolis Velo,https://www.annapolisvelo.com/,+1-667-225-4482,436 Chinquapin Round Road,38.974645,-76.52531,way/436419210,OpenStreetMap
+annapolisvelo@gmail.com,service,Annapolis Velo,https://www.annapolisvelo.com/,+1-667-225-4482,436 Chinquapin Round Road,38.97465,-76.525249,way/436419210,OpenStreetMap
 nwanstett@gmail.com,service,Anstett's Cycle Shop LLC,,+12606226459,4504 E County Road 500 N,40.903662,-85.365147,ovt/03a1d1bb-40d0-43e6-8ec0-ea0227ac2e19,Overture Maps
 anthonybridges2023@gmail.com,service,Anthony Bridges' Engine Shop,,+13082065224,115 E 27th St,40.702188,-99.079506,ovt/f184cbc8-30c3-47e4-9b59-45b82dc0cc19,Overture Maps
 anthracitecycleservice@gmail.com,service,Anthracite Cycle Service,http://Www.anthracitecycleservice.com/,+15702356747,57 New Frederick St,41.227417,-75.889118,ovt/e9af0186-e678-47de-8e09-01f8df510694,Overture Maps
@@ -2149,7 +2152,7 @@ thealligator8her@yahoo.com,service,Gator's Cycles,,+17048675777,1160 W Franklin 
 gav@gavthemechanic.com,service,Gav The Mechanic,https://www.gavthemechanic.com/#!,+17203100554,2752 47th St,40.026632,-105.243469,ovt/07553745-b2c2-45cc-b295-94c50e932402,Overture Maps
 geardrivenperformance@gmail.com,service,Gear Driven Performance,http://www.geardrivenperformance.com,+16088476400,N3843 WI-58,43.78001,-90.077156,ovt/35e07f9b-bc31-4a78-a15b-1dda2468e381,Overture Maps
 gearfixllc@gmail.com,service,GearFix,http://Gearfix.io/,+17208161349,142 Keystone Trail,39.94643,-105.073784,ovt/d2e2b8c3-7e7f-4ff2-9786-8e5248f76285,Overture Maps
-jason@gearheadcyclehouse.com,service,Gearhead Cycle House,http://www.gearheadcyclehouse.com,+1 870-910-5569,,35.841007,-90.70511,node/2708358915,OpenStreetMap
+jason@gearheadcyclehouse.com,service,Gearhead Cycle House,http://www.gearheadcyclehouse.com,+1 870-910-5569,,35.840977,-90.705062,node/2708358915,OpenStreetMap
 ratbag688@gmail.com,service,Gearhead Cycles,,+16073162697,8747 NY-12,42.714706,-75.500618,ovt/006bd1e7-22de-40d2-8795-ce37c117af48,Overture Maps
 gearheadsmcrs@gmail.com,service,Gearheadsmcrs,,+12192103085,,41.609543,-86.721394,ovt/73834e2d-0af5-4f36-befc-3eb84a220960,Overture Maps
 gee.pee.enterprises.llc@gmail.com,service,Gee Pee Enterprises,,+15407425970,241 Fort Valley Rd,38.705633,-78.501778,ovt/e3619734-72e3-44a1-9241-4be45352c3b7,Overture Maps
@@ -15143,6 +15146,7 @@ sales@twistedcog.com,shop,Twisted Cog Bike Shop,http://www.twistedcog.com/,+1610
 twistedcustomspaint@gmail.com,shop,Twisted Customs Paint ,,+19545959152,7795 Industrial Rd,28.098042,-80.679161,ovt/986e24f6-c231-493f-af2f-b29abf56c945,Overture Maps
 sales@twistedcycles.net,shop,Twisted Cycles,http://twistedcycles.net/,+16036226032,5 Eastpoint Dr #28,43.016449,-71.39716,ovt/38ab994b-8046-4061-8f2e-bcbde2a5f801,Overture Maps
 tanner.comey@twisted-cycles.com,shop,Twisted Cycles of North Dallas,https://www.twisted-cycles.com,(214) 937-5959,7700 S Interstate 35 E,33.132261,-97.043037,ovt/d71834de-11f1-4a2d-8f2b-e4d1b79125a3,Overture Maps
+admin@twistedmotorcycle.com,shop,Twisted Motorcycle Co,https://www.twistedmotorcycle.com,+1-865-443-5773,1036 West Highway 25 70,35.97331,-83.241589,node/14319613269,OpenStreetMap
 salesinfo@twisted-technology.com,shop,Twisted Technology,http://www.twisted-technology.com/,+18177688725,5940 Kroger Dr Ste 110,32.911032,-97.258392,ovt/632ce1d1-c709-43b1-a970-e42c77f65dad,Overture Maps
 amurray@p4auto.com,shop,Twisted Torch Harley-Davidson,https://www.twistedtorchhd.com/,+18125263485,3250 N Market Place Dr,39.312891,-85.961987,ovt/ef3be8d2-f6b7-47f8-9cd1-570de2b1d2d8,Overture Maps
 marketing@twistercityhd.com,shop,Twister City Harley-Davidson,https://www.twistercityhd.com/,+13164405700,5427 N Chuzy Dr,37.782238,-97.323662,ovt/04bd3650-9b8e-40c8-942d-19e68555920d,Overture Maps
