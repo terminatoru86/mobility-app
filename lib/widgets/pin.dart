@@ -24,6 +24,13 @@ class Glyph extends StatelessWidget {
 /// (One timer for the whole map instead of one per pin keeps the map fast.)
 final ValueNotifier<bool> pinShowsAge = ValueNotifier(false);
 
+/// How much a pin shows, by zoom (see map_screen `_detail`):
+///  full  – zoomed in, street names readable: glyph and age take turns; shops/service/rent/BMX show their rating
+///  glyph – a bit further out: only the glyph (nothing turns, no rating)
+///  count – further out: only the coloured pin with the number of free places (no glyph)
+/// (further out still, pins that touch become groups)
+enum PinDetail { full, glyph, count }
+
 /// Map pin: solid teardrop in the status colour with a white edge and a shadow
 /// (easy to see on the grey map), the white glyph inside
 /// (alternating with the age of the status), the number top-right
@@ -35,7 +42,18 @@ class PlacePin extends StatelessWidget {
 
   /// false: the pin is outside the screen, it does not take turns (keeps the map light)
   final bool animate;
-  const PlacePin({super.key, required this.place, this.selected = false, this.small = false, this.animate = true});
+  final PinDetail detail;
+  const PlacePin(
+      {super.key,
+      required this.place,
+      this.selected = false,
+      this.small = false,
+      this.animate = true,
+      this.detail = PinDetail.full,
+      this.showRating = true});
+
+  /// the rating badge (shops, service, rent, BMX): only close in, where street names are readable
+  final bool showRating;
 
   static const double width = 64;
   static const double height = 76;
@@ -45,10 +63,13 @@ class PlacePin extends StatelessWidget {
     final p = place;
     final c = colorsFor(p.shownStatus);
     final scale = selected ? 1.2 : (small ? 0.9 : 1.05);
-    final showCount = p.count != null && p.shownStatus != Status.full && !p.type.isNeutral;
+    final hasCount = p.count != null && p.shownStatus != Status.full && !p.type.isNeutral;
+    final countOnly = detail == PinDetail.count && !selected;
+    final showCount = hasCount && !countOnly;
     // grey pins (no status yet, shops, service) show only the glyph: no time, nothing turning
     final grey = p.shownStatus == Status.unknown || p.shownStatus == Status.neutral;
-    final swaps = animate && !grey && !p.type.isNeutral && p.age.isNotEmpty;
+    final full = detail == PinDetail.full || selected;
+    final swaps = full && animate && !grey && !p.type.isNeutral && p.age.isNotEmpty;
     const drop = 40.0;
     // white on green / red / grey; dark brown on yellow so it stays readable
     final ink = p.shownStatus == Status.almost ? const Color(0xFF3A2A00) : Colors.white;
@@ -97,7 +118,12 @@ class PlacePin extends StatelessWidget {
                       ),
                     ),
                   ),
-                  if (!swaps)
+                  if (countOnly)
+                    hasCount
+                        ? Text(p.count!,
+                            style: TextStyle(fontSize: 14, height: 1.0, fontWeight: FontWeight.w900, color: ink))
+                        : const SizedBox.shrink()
+                  else if (!swaps)
                     glyph
                   else
                     ValueListenableBuilder<bool>(
@@ -135,7 +161,7 @@ class PlacePin extends StatelessWidget {
                       ],
                     )),
               ),
-            if (p.type.isNeutral && p.reviewCount > 0)
+            if (full && showRating && p.type.isNeutral && p.reviewCount > 0)
               Positioned(
                 top: 0,
                 right: 0,

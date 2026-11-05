@@ -39,7 +39,7 @@ class MapScreenState extends State<MapScreen> {
   final _map = MapController();
   double _zoom = 15;
   /// Quick filters under search: one or more can be on at once; none = everything.
-  /// Start: Rack, Parking and Charging (a rider with a plain bike: Rack and Parking).
+  /// Start: Rack and Parking (for every vehicle).
   final Set<String> _picked = {};
   String get _filterKey => (_picked.toList()..sort()).join(',');
 
@@ -51,7 +51,7 @@ class MapScreenState extends State<MapScreen> {
     _filtersFor = v;
     _picked
       ..clear()
-      ..addAll(v == Vehicle.bike ? const ['Rack', 'Parking'] : const ['Rack', 'Parking', 'Charging']);
+      ..addAll(const ['Rack', 'Parking']);
   }
 
   void _toggleFilter(String f) {
@@ -587,8 +587,8 @@ class MapScreenState extends State<MapScreen> {
   /// From this zoom up: every place is its own pin, never grouped.
   static const kAllPinsZoom = 15.0;
 
-  /// Below [kAllPinsZoom], groups start only when more than this many pins would be on the map.
-  static const kGroupAbove = 120;
+  /// Under this zoom (seeing a big part of the city) pins that touch become groups.
+  static const kGroupBelow = 13.0;
 
   /// Pins are real widgets (heavy); dots are painted in one go (light).
   List<CircleMarker> _dotCache = const [];
@@ -709,7 +709,7 @@ class MapScreenState extends State<MapScreen> {
     // Zoomed out, and only when there are too many, pins that would sit on each other become a group.
     final mPerPx = 156543.03 * math.cos(rc.latitude * math.pi / 180) / math.pow(2, _zoom);
     Map<String, List<Place>> cells = {};
-    if (_zoom >= kAllPinsZoom || inside.length <= kGroupAbove) {
+    if (_zoom >= kGroupBelow) {
       for (final p in inside) {
         cells[p.id] = [p];
       }
@@ -846,6 +846,10 @@ class MapScreenState extends State<MapScreen> {
 
   /// What the rider sees right now (pins outside it do not take turns).
   LatLngBounds? _screen;
+
+  /// What the pins show at this zoom: street names readable (15+) → glyph and time (rating from 16);
+  /// 14–15 → only the glyph; 13–14 → only the colour and the free places; under 13 → groups.
+  PinDetail get _detail => _zoom >= 15 ? PinDetail.full : (_zoom >= 14 ? PinDetail.glyph : PinDetail.count);
   bool _onScreen(LatLng p) => _screen == null || _screen!.contains(p);
 
   Marker _pinMarker(Place p) => Marker(
@@ -855,7 +859,8 @@ class MapScreenState extends State<MapScreen> {
         alignment: Alignment.topCenter,
         child: GestureDetector(
           onTap: () => _openPlace(p),
-          child: PlacePin(place: p, selected: _selected == p.id, small: _zoom < 15, animate: _onScreen(p.pos)),
+          child: PlacePin(
+              place: p, selected: _selected == p.id, small: _zoom < 15, animate: _onScreen(p.pos), detail: _detail, showRating: _zoom >= 16),
         ),
       );
 
@@ -1146,7 +1151,7 @@ class MapScreenState extends State<MapScreen> {
               GuideStep(_kSearch, 'Search, vehicle and weather',
                   'Type an address or a place. The circle on the left turns: once your vehicle, once the weather. Tap it for rain and wind.'),
               GuideStep(_kFilters, 'Quick filters',
-                  'Pick one or more: Rack, Parking, Charging, Service, Sharing, Wash, Shop. The map opens with Rack, Parking and Charging on (with a bike: Rack and Parking). The others stay as small dots. Turn all off to see everything.'),
+                  'Pick one or more: Rack, Parking, Charging, Service, Sharing, Wash, Shop. The map opens with Rack and Parking on. The others stay as small dots. Turn all off to see everything. Zoomed in, pins show their sign and time; further out only the sign, then only the colour with the free places, then groups.'),
               GuideStep(_kPins, 'How to read the pins', 'The colour is the status. Inside the pin, the drawing and the time since the last update take turns.',
                   extra: const MiniLegend()),
               GuideStep(_kLocate, 'Where you are', 'One tap brings you back. Two taps switch the map: road, bike map, satellite.'),
