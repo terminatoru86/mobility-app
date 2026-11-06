@@ -21,6 +21,12 @@ jobs:
       - run: flutter pub get
       - run: flutter analyze --no-fatal-infos --no-fatal-warnings || true
       - run: flutter build apk --release
+      - name: Check the APK (which settings plugin is inside)
+        run: |
+          echo "::notice::$(flutter pub deps --style=compact | grep -E '^- shared_preferences_android ' | cut -d' ' -f2,3)"
+          mkdir -p chk && cd chk && unzip -qo ../build/app/outputs/flutter-apk/app-release.apk 'classes*.dex'
+          n=$(cat classes*.dex | strings | grep -c 'SharedPreferencesApiRegistrar' || true)
+          echo "::notice::SharedPreferencesApiRegistrar (2.5 JNI, crashes) found: $n"
       - uses: actions/upload-artifact@v4
         with:
           name: MOBIlity-apk
