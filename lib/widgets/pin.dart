@@ -149,9 +149,10 @@ class PlacePin extends StatelessWidget {
             // the number alone, no circle: dark status colour with a white outline
             if (showCount)
               // stuck to the top-right edge of the pin (manual: just outside the corner)
+              // anchored at its left side on the pin edge: every number touches the line, like "2/4" at charging
               Positioned(
-                top: 3,
-                right: 9,
+                top: 2,
+                left: 39,
                 child: Text(p.count!,
                     style: TextStyle(
                       fontSize: 15,
