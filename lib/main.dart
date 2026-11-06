@@ -1,3 +1,4 @@
+import 'widgets/status_scale.dart';
 import 'package:flutter/material.dart';
 
 import 'data/app_state.dart';
@@ -65,7 +66,10 @@ class _ShellState extends State<Shell> {
     ];
     return Scaffold(
       body: IndexedStack(index: _tab, children: pages),
-      bottomNavigationBar: NavigationBar(
+      bottomNavigationBar: Column(mainAxisSize: MainAxisSize.min, children: [
+        // the colour scale (status filter) sits right above the menu, on the map only
+        if (_tab == 0) const StatusScale(),
+        NavigationBar(
         key: _navKey,
         selectedIndex: _tab,
         backgroundColor: Colors.white,
@@ -85,7 +89,8 @@ class _ShellState extends State<Shell> {
           NavigationDestination(icon: Icon(Icons.groups_outlined), label: 'Community'),
           NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: 'Profile'),
         ],
-      ),
+        ),
+      ]),
     );
   }
 }

@@ -87,7 +87,7 @@ class PlacePin extends StatelessWidget {
           alignment: Alignment.topCenter,
           children: [
             // base dot (pulses only when selected)
-            Positioned(bottom: 0, child: selected ? _Pulse(color: c) : _BaseDot(c)),
+            Positioned(bottom: 0, child: _BaseDot(c)), // a small round ball under the tip: no waves
             // teardrop
             Positioned(
               top: 8,
@@ -192,80 +192,28 @@ class PlacePin extends StatelessWidget {
 class _BaseDot extends StatelessWidget {
   final StatusColors c;
   const _BaseDot(this.c);
-  // manual design: a soft ellipse in the status colour on the ground, a small dark dot with a white light
+  // manual design: a small ball in the status colour (white light top-left, darker below), no ring, no waves
   @override
   Widget build(BuildContext context) => SizedBox(
         width: 40,
         height: 16,
-        child: Stack(alignment: Alignment.center, children: [
-          Container(
-            width: 26,
-            height: 10,
+        child: Center(
+          child: Container(
+            width: 11,
+            height: 11,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(13),
-              color: Color.lerp(c.main, Colors.white, 0.45),
-            ),
-          ),
-          Container(
-            width: 10,
-            height: 7,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(5),
+              shape: BoxShape.circle,
               gradient: RadialGradient(
-                center: const Alignment(0, -0.3),
-                radius: 0.6,
-                colors: [Colors.white, c.dark],
-                stops: const [0.18, 0.6],
+                center: const Alignment(-0.35, -0.4),
+                radius: 0.85,
+                colors: [Color.lerp(c.main, Colors.white, 0.7)!, c.main, c.dark],
+                stops: const [0, 0.55, 1],
               ),
+              boxShadow: const [BoxShadow(color: Color(0x33000000), blurRadius: 2, offset: Offset(0, 1))],
             ),
           ),
-        ]),
+        ),
       );
-}
-
-class _Pulse extends StatefulWidget {
-  final StatusColors color;
-  const _Pulse({required this.color});
-  @override
-  State<_Pulse> createState() => _PulseState();
-}
-
-class _PulseState extends State<_Pulse> with SingleTickerProviderStateMixin {
-  late final AnimationController _a =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 2400))..repeat();
-
-  @override
-  void dispose() {
-    _a.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final c = widget.color;
-    return AnimatedBuilder(
-      animation: _a,
-      builder: (_, child) {
-        final t = _a.value;
-        return SizedBox(
-          width: 40,
-          height: 16,
-          child: Stack(alignment: Alignment.center, children: [
-            Container(
-              width: 14 + 24 * t,
-              height: 6 + 8 * t,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: c.main.withValues(alpha: 0.35 * (1 - t)),
-              ),
-            ),
-            child!,
-          ]),
-        );
-      },
-      child: _BaseDot(c),
-    );
-  }
 }
 
 /// Small coloured "you are here" dot.

@@ -18,6 +18,7 @@ import '../data/zones.dart';
 import '../theme.dart';
 import '../widgets/cluster.dart';
 import '../widgets/guide.dart';
+import '../widgets/status_scale.dart';
 import '../widgets/pin.dart';
 import '../widgets/place_sheet.dart';
 import '../widgets/signup.dart';
@@ -45,6 +46,10 @@ class MapScreenState extends State<MapScreen> {
 
   bool _filtersTouched = false; // the rider changed them: keep their choice
   Vehicle? _filtersFor;
+
+  void _statusChanged() {
+    if (mounted) setState(() {});
+  }
 
   void _defaultFilters() {
     final v = widget.state.myVehicle;
@@ -97,6 +102,7 @@ class MapScreenState extends State<MapScreen> {
     _defaultFilters();
     Basemap.i.start(); // the street map already on the phone: no internet needed
     Store.i.addListener(_storeChanged);
+    statusFilter.addListener(_statusChanged);
     // The circle in the search bar shows your vehicle, then the weather, every 50 s.
     _flip = Timer.periodic(const Duration(seconds: 50), (_) {
       if (mounted) setState(() => _weatherFace = !_weatherFace);
@@ -207,6 +213,7 @@ class MapScreenState extends State<MapScreen> {
   @override
   void dispose() {
     Store.i.removeListener(_storeChanged);
+    statusFilter.removeListener(_statusChanged);
     _shareTimer?.cancel();
     _pieceTimer?.cancel();
     _lockTimer?.cancel();
@@ -553,7 +560,7 @@ class MapScreenState extends State<MapScreen> {
   }
 
   /// Radius of the ring in the middle of the map: inside it our pins (and groups where they overlap), outside light dots.
-  static const kRingMiles = 3.0; // 6 miles across
+  static const kRingMiles = 6.0; // 6 miles around the middle (12 across)
 
   /// The ring follows the middle of the map: what comes in on one side becomes pins/groups,
   /// what leaves on the other side turns into dots.
@@ -602,7 +609,7 @@ class MapScreenState extends State<MapScreen> {
     final all = _all;
     // signed in / vehicle chosen later (e.g. a bike): the start filters follow, until the rider changes them
     if (!_filtersTouched && widget.state.myVehicle != _filtersFor) _defaultFilters();
-    final key = (identityHashCode(all), _filterKey, _selected, _zoom, _area, Store.i.zones.length,
+    final key = (identityHashCode(all), _filterKey, statusFilter.value, _selected, _zoom, _area, Store.i.zones.length,
         _ringCenter ?? userPos);
     if (_markerCache != null && key == _markerKey) return _markerCache!;
     _markerKey = key;
@@ -679,6 +686,7 @@ class MapScreenState extends State<MapScreen> {
     final pins = view
         .where((p) =>
             (_picked.isEmpty || _picked.contains(p.type.chip)) &&
+            (statusFilter.value == null || p.shownStatus == statusFilter.value || p.id == _selected) &&
             (a == null || a.contains(p.pos)) &&
             (st.zones.isEmpty || inZone(p.pos)))
         .toList();
@@ -798,11 +806,14 @@ class MapScreenState extends State<MapScreen> {
     thinOut(dots, 6, 900); // a cheaper phone draws every dot on every move: keep the map light
     // a filter is on (e.g. Rack): the other places stay on the map as tiny coloured dots,
     // smaller than the dots outside the ring, so the chosen kind stands out
-    final others = _picked.isEmpty
+    final others = _picked.isEmpty && statusFilter.value == null
         ? <Place>[]
         : view
             .where((p) =>
-                !_picked.contains(p.type.chip) && (a == null || a.contains(p.pos)) && (st.zones.isEmpty || inZone(p.pos)))
+                (!_picked.contains(p.type.chip) ||
+                    (statusFilter.value != null && p.shownStatus != statusFilter.value && p.id != _selected)) &&
+                (a == null || a.contains(p.pos)) &&
+                (st.zones.isEmpty || inZone(p.pos)))
             .toList();
     thinOut(others, 5, 600);
     _dotPlaces = [...dots, ...others];
