@@ -644,6 +644,14 @@ class MapScreenState extends State<MapScreen> {
   }
 
   void _buildLayers() {
+    final w = Stopwatch()..start();
+    _buildLayersNow();
+    if (w.elapsedMilliseconds > 40) {
+      debugPrint('⏱ pins: ${w.elapsedMilliseconds}ms, ${_markerCache?.length} pins, ${_dotCache.length} dots, ${_all.length} places, zoom $_zoom');
+    }
+  }
+
+  void _buildLayersNow() {
     try {
       _screen = _map.camera.visibleBounds;
     } catch (_) {

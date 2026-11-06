@@ -300,8 +300,11 @@ class OsmService {
   final Map<String, Set<String>> _tileIds = {}; // piece -> its place ids (to replace a piece cleanly)
 
   Future<void> _putText(String key, String text) async {
+    final w = Stopwatch()..start();
     final (raws, ps) = await compute(_buildPiece, (text, userPos.latitude, userPos.longitude));
+    final bg = w.elapsedMilliseconds;
     _putPiece(key, raws, ps);
+    debugPrint('⏱ piece $key: ${ps.length} places, background ${bg}ms, screen ${w.elapsedMilliseconds - bg}ms');
   }
 
   void _putPiece(String key, List<Map<String, dynamic>> raws, List<Place> ps) {
