@@ -718,7 +718,9 @@ class MapScreenState extends State<MapScreen> {
     }
     // each pin is a real widget: at most [kMaxPins], the ones nearest the middle of the screen;
     // the rest are dots until the rider moves closer (keeps a cheaper phone fluid)
-    if (inside.length > kMaxPins) {
+    // zoomed out the pins are lighter (no drawing that turns): more of them, so the whole 6-mile ring fills
+    final maxPins = _zoom >= 15 ? kMaxPins : (_zoom >= 14 ? 160 : 260);
+    if (inside.length > maxPins) {
       final c = _map.camera.center;
       double d2(Place p) {
         final dy = p.pos.latitude - c.latitude, dx = p.pos.longitude - c.longitude;
@@ -726,8 +728,8 @@ class MapScreenState extends State<MapScreen> {
       }
 
       inside.sort((x, y) => x.id == _selected ? -1 : (y.id == _selected ? 1 : d2(x).compareTo(d2(y))));
-      dots.addAll(inside.sublist(kMaxPins));
-      inside.removeRange(kMaxPins, inside.length);
+      dots.addAll(inside.sublist(maxPins));
+      inside.removeRange(maxPins, inside.length);
     }
 
     // inside the ring: our real pins with their info. Zoomed in (15+) they are never grouped.
@@ -812,21 +814,22 @@ class MapScreenState extends State<MapScreen> {
     Color dotColor(Place p) =>
         p.shownStatus == Status.neutral || p.shownStatus == Status.unknown ? AppColors.slate : colorsFor(p.shownStatus).main;
     _dotCache = [
+      // like the pins (manual): edge in the status colour, a lighter tint of it inside
       for (final p in others)
         CircleMarker(
           point: p.pos,
           radius: small,
-          color: dotColor(p),
-          borderColor: Colors.white,
-          borderStrokeWidth: 1.2,
+          color: Color.lerp(dotColor(p), Colors.white, 0.45)!,
+          borderColor: dotColor(p),
+          borderStrokeWidth: 1.3,
         ),
       for (final p in dots)
         CircleMarker(
           point: p.pos,
           radius: r,
-          color: dotColor(p).withValues(alpha: 0.95),
-          borderColor: Colors.white,
-          borderStrokeWidth: _zoom < 11 ? 0.8 : 1.4,
+          color: Color.lerp(dotColor(p), Colors.white, 0.45)!,
+          borderColor: dotColor(p),
+          borderStrokeWidth: _zoom < 11 ? 1.0 : 1.6,
         ),
     ];
     _markerCache = markers;

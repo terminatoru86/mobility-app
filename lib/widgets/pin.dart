@@ -72,8 +72,8 @@ class PlacePin extends StatelessWidget {
     final full = detail == PinDetail.full || selected;
     final swaps = full && animate && !grey && !p.type.isNeutral && p.age.isNotEmpty;
     const drop = 40.0;
-    // white on green / red / grey; dark brown on yellow so it stays readable
-    final ink = p.shownStatus == Status.almost ? const Color(0xFF3A2A00) : Colors.white;
+    // manual design: drawing and time in the dark tone of the status, on the tinted inside
+    final ink = c.dark;
     final glyph = Glyph(p.type, key: const ValueKey('g'), size: 20, color: ink);
 
     return SizedBox(
@@ -100,13 +100,16 @@ class PlacePin extends StatelessWidget {
                     child: Container(
                       width: drop - 6,
                       height: drop - 6,
+                      // manual design (Pinii): edge in the status colour, light tinted inside
+                      // (white highlight top-right, the status tint, a touch of the colour at the edge)
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topRight,
-                          end: Alignment.bottomLeft,
-                          colors: [Color.lerp(c.main, Colors.white, 0.18)!, c.main, Color.lerp(c.main, c.dark, 0.35)!],
+                        gradient: RadialGradient(
+                          center: const Alignment(0.4, -0.44),
+                          radius: 0.95,
+                          colors: [Colors.white, c.tint, Color.lerp(c.tint, c.main, 0.2)!],
+                          stops: const [0, 0.58, 1],
                         ),
-                        border: Border.all(color: Colors.white, width: 2.5),
+                        border: Border.all(color: c.main, width: 2.5),
                         borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(40),
                           topRight: Radius.circular(40),
@@ -114,7 +117,7 @@ class PlacePin extends StatelessWidget {
                         ),
                         // one small shadow (blur is costly on cheaper phones when many pins are drawn)
                         boxShadow: [
-                          BoxShadow(color: c.dark.withValues(alpha: 0.45), blurRadius: 3, offset: const Offset(-1.5, 2.5)),
+                          BoxShadow(color: c.dark.withValues(alpha: 0.35), blurRadius: 4, offset: const Offset(-1.5, 3)),
                         ],
                       ),
                     ),
@@ -145,9 +148,10 @@ class PlacePin extends StatelessWidget {
             // number top-right (no circle) or rating badge for neutral places
             // the number alone, no circle: dark status colour with a white outline
             if (showCount)
+              // stuck to the top-right edge of the pin (manual: just outside the corner)
               Positioned(
-                top: -2,
-                right: 3,
+                top: 3,
+                right: 9,
                 child: Text(p.count!,
                     style: TextStyle(
                       fontSize: 15,
@@ -187,22 +191,34 @@ class PlacePin extends StatelessWidget {
 class _BaseDot extends StatelessWidget {
   final StatusColors c;
   const _BaseDot(this.c);
+  // manual design: a soft ellipse in the status colour on the ground, a small dark dot with a white light
   @override
   Widget build(BuildContext context) => SizedBox(
         width: 40,
         height: 16,
-        child: Center(
-          child: Container(
-            width: 11,
-            height: 11,
+        child: Stack(alignment: Alignment.center, children: [
+          Container(
+            width: 26,
+            height: 10,
             decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: c.main,
-              border: Border.all(color: Colors.white, width: 2),
-              boxShadow: const [BoxShadow(color: Color(0x40000000), blurRadius: 2)],
+              borderRadius: BorderRadius.circular(13),
+              color: Color.lerp(c.main, Colors.white, 0.45),
             ),
           ),
-        ),
+          Container(
+            width: 10,
+            height: 7,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(5),
+              gradient: RadialGradient(
+                center: const Alignment(0, -0.3),
+                radius: 0.6,
+                colors: [Colors.white, c.dark],
+                stops: const [0.18, 0.6],
+              ),
+            ),
+          ),
+        ]),
       );
 }
 
