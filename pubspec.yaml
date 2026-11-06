@@ -35,6 +35,13 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
 
+
+# shared_preferences_android 2.5.x (Pigeon JNI) crashes at startup in Android release builds:
+# NoSuchMethodError SharedPreferencesApiRegistrar.getAll -> the app stays on the Flutter logo.
+# 2.4.x talks to Android the classic way and works.
+dependency_overrides:
+  shared_preferences_android: '>=2.4.0 <2.5.0'
+
 flutter:
   uses-material-design: true
   assets:
