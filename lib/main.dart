@@ -1,4 +1,3 @@
-import 'widgets/status_scale.dart';
 import 'package:flutter/material.dart';
 
 import 'data/app_state.dart';
@@ -66,8 +65,7 @@ class _ShellState extends State<Shell> {
     ];
     return Scaffold(
       body: IndexedStack(index: _tab, children: pages),
-      bottomNavigationBar: Stack(clipBehavior: Clip.none, children: [
-        NavigationBar(
+      bottomNavigationBar: NavigationBar(
         key: _navKey,
         selectedIndex: _tab,
         backgroundColor: Colors.white,
@@ -87,10 +85,7 @@ class _ShellState extends State<Shell> {
           NavigationDestination(icon: Icon(Icons.groups_outlined), label: 'Community'),
           NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: 'Profile'),
         ],
-        ),
-        // the colour scale (status filter) is the top edge of the menu, on the map only
-        if (_tab == 0) const Positioned(left: 0, right: 0, top: 0, child: StatusScale()),
-      ]),
+      ),
     );
   }
 }

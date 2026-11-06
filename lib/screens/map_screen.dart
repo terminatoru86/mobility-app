@@ -1125,13 +1125,13 @@ class MapScreenState extends State<MapScreen> {
         Positioned(
           left: 10,
           right: 10,
-          bottom: 14,
+          bottom: 14 + StatusScale.height,
           child: _destCard(),
         ),
       if (!_list)
         Positioned(
           right: 14,
-          bottom: _dest != null ? (_destRack != null ? 160 : 112) : 24,
+          bottom: (_dest != null ? (_destRack != null ? 160 : 112) : 24) + StatusScale.height,
           child: Column(children: [
             GestureDetector(
               key: _kLocate,
@@ -1144,7 +1144,10 @@ class MapScreenState extends State<MapScreen> {
             }, key: _kReport),
           ]),
         ),
-      Positioned(left: 14, bottom: _dest != null ? (_destRack != null ? 166 : 118) : 30, child: _sosButton()),
+      Positioned(
+          left: 14,
+          bottom: (_dest != null ? (_destRack != null ? 166 : 118) : 30) + StatusScale.height,
+          child: _sosButton()),
       if (_locked && !_list)
         Positioned(
           left: 12,
@@ -1172,9 +1175,11 @@ class MapScreenState extends State<MapScreen> {
         ),
       if (store.sosActive && store.sosHelper != null && _dest == null)
         Positioned(left: 12, right: 12, bottom: 140, child: SosHelperCard(helper: store.sosHelper!)),
+      // the colour scale: on the map's bottom edge, i.e. right on top of the main menu
+      if (!_list) const Positioned(left: 0, right: 0, bottom: 0, child: StatusScale()),
       Positioned(
         right: 4,
-        bottom: 2,
+        bottom: _list ? 2 : StatusScale.height + 2,
         child: Text(
             store.satellite
                 ? '© Esri World Imagery'
