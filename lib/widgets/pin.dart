@@ -65,7 +65,8 @@ class PlacePin extends StatelessWidget {
     final scale = selected ? 1.2 : (small ? 0.9 : 1.05);
     final hasCount = p.count != null && p.shownStatus != Status.full && !p.type.isNeutral;
     final countOnly = detail == PinDetail.count && !selected;
-    final showCount = hasCount && !countOnly;
+    // the number top-right only close in, together with the time; further out it sits inside the pin
+    final showCount = hasCount && (detail == PinDetail.full || selected);
     // grey pins (no status yet, shops, service) show only the glyph: no time, nothing turning
     final grey = p.shownStatus == Status.unknown || p.shownStatus == Status.neutral;
     final full = detail == PinDetail.full || selected;
@@ -111,9 +112,9 @@ class PlacePin extends StatelessWidget {
                           topRight: Radius.circular(40),
                           bottomRight: Radius.circular(40),
                         ),
+                        // one small shadow (blur is costly on cheaper phones when many pins are drawn)
                         boxShadow: [
-                          BoxShadow(color: c.dark.withValues(alpha: 0.45), blurRadius: 6, offset: const Offset(-2, 3)),
-                          const BoxShadow(color: Color(0x33000000), blurRadius: 1.5, spreadRadius: 0.5),
+                          BoxShadow(color: c.dark.withValues(alpha: 0.45), blurRadius: 3, offset: const Offset(-1.5, 2.5)),
                         ],
                       ),
                     ),

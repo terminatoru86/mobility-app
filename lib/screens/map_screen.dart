@@ -275,8 +275,9 @@ class MapScreenState extends State<MapScreen> {
   List<Place> get _sources {
     final m = _merged;
     if (m != null) return m;
-    final cell = <String>{};
-    String key(LatLng p, int dy, int dx) => '${(p.latitude * 6000).round() + dy}:${(p.longitude * 6000).round() + dx}';
+    final cell = <int>{}; // numbers, not text: tens of thousands of places, no text made for each
+    int key(LatLng p, int dy, int dx) =>
+        ((p.latitude * 6000).round() + dy) * 4000000 + ((p.longitude * 6000).round() + dx);
     final out = <Place>[];
     final live = _open.liveOperators;
     for (final p in _osm.places.values) {
@@ -590,6 +591,9 @@ class MapScreenState extends State<MapScreen> {
   /// Under this zoom (seeing a big part of the city) pins that touch become groups.
   static const kGroupBelow = 13.0;
 
+  /// Most pins on the screen at once (each pin is a widget; the others stay dots).
+  static const kMaxPins = 80;
+
   /// Pins are real widgets (heavy); dots are painted in one go (light).
   List<CircleMarker> _dotCache = const [];
   List<Place> _dotPlaces = const [];
@@ -712,6 +716,19 @@ class MapScreenState extends State<MapScreen> {
     for (final p in pins) {
       (km2(p.pos) <= ringKm * ringKm && (inOval(p.pos) || p.id == _selected) ? inside : dots).add(p);
     }
+    // each pin is a real widget: at most [kMaxPins], the ones nearest the middle of the screen;
+    // the rest are dots until the rider moves closer (keeps a cheaper phone fluid)
+    if (inside.length > kMaxPins) {
+      final c = _map.camera.center;
+      double d2(Place p) {
+        final dy = p.pos.latitude - c.latitude, dx = p.pos.longitude - c.longitude;
+        return dx * dx + dy * dy;
+      }
+
+      inside.sort((x, y) => x.id == _selected ? -1 : (y.id == _selected ? 1 : d2(x).compareTo(d2(y))));
+      dots.addAll(inside.sublist(kMaxPins));
+      inside.removeRange(kMaxPins, inside.length);
+    }
 
     // inside the ring: our real pins with their info. Zoomed in (15+) they are never grouped.
     // Zoomed out, and only when there are too many, pins that would sit on each other become a group.
@@ -776,7 +793,7 @@ class MapScreenState extends State<MapScreen> {
         ..addAll(thin);
     }
 
-    thinOut(dots, 4, 2500);
+    thinOut(dots, 6, 900); // a cheaper phone draws every dot on every move: keep the map light
     // a filter is on (e.g. Rack): the other places stay on the map as tiny coloured dots,
     // smaller than the dots outside the ring, so the chosen kind stands out
     final others = _picked.isEmpty
@@ -785,11 +802,12 @@ class MapScreenState extends State<MapScreen> {
             .where((p) =>
                 !_picked.contains(p.type.chip) && (a == null || a.contains(p.pos)) && (st.zones.isEmpty || inZone(p.pos)))
             .toList();
-    thinOut(others, 3, 1500);
+    thinOut(others, 5, 600);
     _dotPlaces = [...dots, ...others];
     final r = _zoom < 11 ? 2.6 : (_zoom < 14 ? 3.4 : 4.6);
     // a bit smaller than the dots outside the ring, but solid and clearly visible on the calm map
-    final small = math.max(2.8, r * 0.75);
+    // the kinds not picked under the search bar: 20 % smaller still (normal size again when picked)
+    final small = math.max(2.2, r * 0.75 * 0.8);
     // shops, service, rent have no live status: dark slate (light grey would vanish on the grey map)
     Color dotColor(Place p) =>
         p.shownStatus == Status.neutral || p.shownStatus == Status.unknown ? AppColors.slate : colorsFor(p.shownStatus).main;

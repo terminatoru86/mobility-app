@@ -49,7 +49,7 @@ String _gunzip(List<int> bytes) => utf8.decode(GZipDecoder().decodeBytes(bytes))
 Future<String?> _shippedPiece(String key) async {
   try {
     final b = await rootBundle.load('assets/osm/tiles/t_$key.json.gz');
-    return compute(_gunzip, b.buffer.asUint8List(b.offsetInBytes, b.lengthInBytes).toList());
+    return compute(_gunzip, b.buffer.asUint8List(b.offsetInBytes, b.lengthInBytes)); // bytes as they are: no copy into a list
   } catch (_) {}
   try {
     return await rootBundle.loadString('assets/osm/tiles/t_$key.json');
@@ -393,7 +393,7 @@ class OsmService {
         if (hash == (db.hashOf(key) ?? _shippedHash(key))) continue; // already have this version
         final t = await http.get(Uri.parse('${PlaceDb.site}t_$key.json.gz')).timeout(const Duration(seconds: 40));
         if (t.statusCode != 200) continue;
-        final text = await compute(_gunzip, t.bodyBytes.toList());
+        final text = await compute(_gunzip, t.bodyBytes);
         await db.write(key, text, hash);
         await _putText(key, text);
         _packTilesDone.add(key);
