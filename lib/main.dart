@@ -66,9 +66,7 @@ class _ShellState extends State<Shell> {
     ];
     return Scaffold(
       body: IndexedStack(index: _tab, children: pages),
-      bottomNavigationBar: Column(mainAxisSize: MainAxisSize.min, children: [
-        // the colour scale (status filter) sits right above the menu, on the map only
-        if (_tab == 0) const StatusScale(),
+      bottomNavigationBar: Stack(clipBehavior: Clip.none, children: [
         NavigationBar(
         key: _navKey,
         selectedIndex: _tab,
@@ -90,6 +88,8 @@ class _ShellState extends State<Shell> {
           NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: 'Profile'),
         ],
         ),
+        // the colour scale (status filter) is the top edge of the menu, on the map only
+        if (_tab == 0) const Positioned(left: 0, right: 0, top: 0, child: StatusScale()),
       ]),
     );
   }
