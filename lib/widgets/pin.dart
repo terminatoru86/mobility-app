@@ -58,7 +58,7 @@ class PlacePin extends StatelessWidget {
   final bool showRating;
 
   static const double width = 64;
-  static const double height = 62; // the bottom is the map point (centre of the ball); ~5 px between tip and ball
+  static const double height = 60; // the bottom is the map point (centre of the ball); ~3 px between tip and ball
 
   @override
   Widget build(BuildContext context) {

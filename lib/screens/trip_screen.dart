@@ -16,6 +16,7 @@ import '../data/routing.dart';
 import '../data/store.dart';
 import '../data/weather.dart';
 import '../theme.dart';
+import '../widgets/compass.dart';
 import '../widgets/directions.dart';
 import '../widgets/pin.dart';
 import '../widgets/sheet_parts.dart';
@@ -879,10 +880,14 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
   Timer? _sim;
   Timer? _clock;
   LatLng? _last;
+  Weather? _wx; // for the compass's wind side
 
   @override
   void initState() {
     super.initState();
+    fetchWeather(_pos).then((w) {
+      if (mounted) setState(() => _wx = w);
+    });
     _clock = Timer.periodic(const Duration(seconds: 1), (_) {
       if (mounted) setState(() {});
     });
@@ -1336,8 +1341,17 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
               ),
           ]),
         ),
-        // next traffic light / stop sign, under the turn banner on the right
-        Positioned(right: 12, top: top + 112, child: _controlButton()),
+        // next traffic light / stop sign, under the turn banner on the right; the compass under it
+        // (tap the compass: wind instead of our direction, tap again: back)
+        Positioned(
+          right: 12,
+          top: top + 112,
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            _controlButton(),
+            if (_nextControl() != null) const SizedBox(height: 10),
+            RideCompass(heading: _heading, windKmh: _wx?.wind, windFrom: _wx?.windDir, size: 70),
+          ]),
+        ),
         // recording card + recenter + simulate
         Positioned(
           left: 10,
