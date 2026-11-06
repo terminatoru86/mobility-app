@@ -91,7 +91,9 @@ class _CompassPainter extends CustomPainter {
   bool shouldRepaint(covariant _CompassPainter old) => old.c != c;
 }
 
-/// Modern group: white disc, a thin ring split by status (free / almost / full / no data), the count inside.
+/// Group of places (zoomed out), in the pin style: a light disc tinted with the main status,
+/// a thin ring split by status with small gaps (round ends), the number in the dark tone of
+/// the main status. A second disc peeks out behind it: "more than one place here".
 class DonutCluster extends StatelessWidget {
   final List<Place> places;
   final double size;
@@ -100,68 +102,103 @@ class DonutCluster extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final n = places.length;
-    return Container(
+    final counts = _counts(places);
+    final main = counts.entries.reduce((a, b) => a.value >= b.value ? a : b).key;
+    final c = colorsFor(main);
+    return SizedBox(
       width: size,
       height: size,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: Colors.white,
-        boxShadow: [
-          BoxShadow(color: AppColors.ink.withValues(alpha: 0.18), blurRadius: 10, offset: const Offset(0, 3)),
-        ],
-      ),
-      child: CustomPaint(
-        painter: _DonutPainter(places),
-        child: Center(
-          child: Text(
-            n >= 1000 ? '${(n / 1000).toStringAsFixed(n >= 10000 ? 0 : 1)}k' : '$n',
-            style: TextStyle(
-              fontWeight: FontWeight.w900,
-              fontSize: size < 40 ? 11.5 : 13.5,
-              color: AppColors.ink,
-              letterSpacing: -0.3,
+      child: Stack(clipBehavior: Clip.none, children: [
+        // the disc behind (a stack of places)
+        Positioned(
+          left: 3,
+          top: -2,
+          right: -3,
+          bottom: 2,
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Color.lerp(c.tint, Colors.white, 0.3),
+              border: Border.all(color: c.main.withValues(alpha: 0.45), width: 1.2),
             ),
           ),
         ),
-      ),
+        Positioned.fill(
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              gradient: RadialGradient(
+                center: const Alignment(0.35, -0.45),
+                radius: 0.95,
+                colors: [Colors.white, c.tint],
+                stops: const [0, 0.7],
+              ),
+              boxShadow: [BoxShadow(color: c.dark.withValues(alpha: 0.28), blurRadius: 5, offset: const Offset(0, 2))],
+            ),
+            child: CustomPaint(
+              painter: _DonutPainter(counts, n),
+              child: Center(
+                child: Text(
+                  n >= 1000 ? '${(n / 1000).toStringAsFixed(n >= 10000 ? 0 : 1)}k' : '$n',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w900,
+                    fontSize: size < 38 ? 11.5 : 13,
+                    color: c.dark,
+                    letterSpacing: -0.3,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ]),
     );
   }
-}
 
-class _DonutPainter extends CustomPainter {
-  final List<Place> places;
-  _DonutPainter(this.places);
-
-  @override
-  void paint(Canvas canvas, Size size) {
+  static Map<Status, int> _counts(List<Place> places) {
     final counts = <Status, int>{};
     for (final p in places) {
       final s = p.shownStatus == Status.neutral ? Status.unknown : p.shownStatus;
       counts[s] = (counts[s] ?? 0) + 1;
     }
-    final total = places.length.toDouble();
-    final rect = Rect.fromCircle(center: size.center(Offset.zero), radius: size.width / 2 - 4);
-    const gap = 0.07; // small gap between colours
-    var start = -math.pi / 2;
-    final order = [Status.free, Status.almost, Status.full, Status.unknown];
+    return counts;
+  }
+}
+
+class _DonutPainter extends CustomPainter {
+  final Map<Status, int> counts;
+  final int total;
+  _DonutPainter(this.counts, this.total);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final rect = Rect.fromCircle(center: size.center(Offset.zero), radius: size.width / 2 - 2.2);
+    const order = [Status.free, Status.almost, Status.full, Status.unknown];
     final present = order.where((s) => (counts[s] ?? 0) > 0).length;
+    const gap = 0.26; // room for the round ends
+    var start = -math.pi / 2;
     for (final s in order) {
-      final c = counts[s] ?? 0;
-      if (c == 0) continue;
-      final sweep = 2 * math.pi * c / total;
-      final paint = Paint()
-        ..color = colorsFor(s).main
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 3.6
-        ..strokeCap = StrokeCap.round;
+      final n = counts[s] ?? 0;
+      if (n == 0) continue;
+      final sweep = 2 * math.pi * n / total;
       final g = present > 1 ? gap : 0.0;
-      canvas.drawArc(rect, start + g / 2, math.max(0.02, sweep - g), false, paint);
+      canvas.drawArc(
+        rect,
+        start + g / 2,
+        math.max(0.01, sweep - g),
+        false,
+        Paint()
+          ..color = colorsFor(s).main
+          ..style = PaintingStyle.stroke
+          ..strokeWidth = 2.6
+          ..strokeCap = present > 1 ? StrokeCap.round : StrokeCap.butt,
+      );
       start += sweep;
     }
   }
 
   @override
-  bool shouldRepaint(covariant _DonutPainter old) => old.places != places;
+  bool shouldRepaint(covariant _DonutPainter old) => old.total != total || old.counts != counts;
 }
 
 /// Small frosted label on the ring ("22 mi around you").

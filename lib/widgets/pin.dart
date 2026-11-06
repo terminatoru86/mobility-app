@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -56,7 +58,7 @@ class PlacePin extends StatelessWidget {
   final bool showRating;
 
   static const double width = 64;
-  static const double height = 76;
+  static const double height = 58; // the bottom is the map point (centre of the ball)
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +73,6 @@ class PlacePin extends StatelessWidget {
     final grey = p.shownStatus == Status.unknown || p.shownStatus == Status.neutral;
     final full = detail == PinDetail.full || selected;
     final swaps = full && animate && !grey && !p.type.isNeutral && p.age.isNotEmpty;
-    const drop = 40.0;
     // manual design: drawing and time in the dark tone of the status, on the tinted inside
     final ink = c.dark;
     final glyph = Glyph(p.type, key: const ValueKey('g'), size: 20, color: ink);
@@ -86,62 +87,44 @@ class PlacePin extends StatelessWidget {
           clipBehavior: Clip.none,
           alignment: Alignment.topCenter,
           children: [
-            // base dot (pulses only when selected)
-            Positioned(bottom: 0, child: _BaseDot(c)), // a small round ball under the tip: no waves
-            // teardrop
+            // the ball on the map point: small, right under the tip
+            Positioned(bottom: -3.5, child: _BaseDot(c)),
+            // the pin: round head, sharp point down to the ball
             Positioned(
-              top: 8,
+              top: 4,
               child: SizedBox(
-                width: drop,
-                height: drop,
-                child: Stack(alignment: Alignment.center, children: [
-                  Transform.rotate(
-                    angle: -0.785398, // -45°
-                    child: Container(
-                      width: drop - 6,
-                      height: drop - 6,
-                      // manual design (Pinii): edge in the status colour, light tinted inside
-                      // (white highlight top-right, the status tint, a touch of the colour at the edge)
-                      decoration: BoxDecoration(
-                        gradient: RadialGradient(
-                          center: const Alignment(0.4, -0.44),
-                          radius: 0.95,
-                          colors: [Colors.white, c.tint, Color.lerp(c.tint, c.main, 0.2)!],
-                          stops: const [0, 0.58, 1],
-                        ),
-                        border: Border.all(color: c.main, width: 2.5),
-                        borderRadius: const BorderRadius.only(
-                          topLeft: Radius.circular(40),
-                          topRight: Radius.circular(40),
-                          bottomRight: Radius.circular(40),
-                        ),
-                        // one small shadow (blur is costly on cheaper phones when many pins are drawn)
-                        boxShadow: [
-                          BoxShadow(color: c.dark.withValues(alpha: 0.35), blurRadius: 4, offset: const Offset(-1.5, 3)),
-                        ],
-                      ),
+                width: _PinShape.w,
+                height: _PinShape.h,
+                child: Stack(alignment: Alignment.topCenter, children: [
+                  Positioned.fill(child: CustomPaint(painter: _PinShape(c))),
+                  Positioned(
+                    top: _PinShape.cy - 13,
+                    height: 26,
+                    left: 0,
+                    right: 0,
+                    child: Center(
+                      child: countOnly
+                          ? (hasCount
+                              ? Text(p.count!,
+                                  style: TextStyle(fontSize: 14, height: 1.0, fontWeight: FontWeight.w900, color: ink))
+                              : const SizedBox.shrink())
+                          : !swaps
+                              ? glyph
+                              : ValueListenableBuilder<bool>(
+                                  valueListenable: pinShowsAge,
+                                  builder: (_, showAge, __) => AnimatedSwitcher(
+                                    duration: const Duration(milliseconds: 300),
+                                    child: showAge
+                                        ? Text(p.age.replaceAll(' ', '\n'),
+                                            key: const ValueKey('age'),
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                                fontSize: 9, height: 1.0, fontWeight: FontWeight.w900, color: ink))
+                                        : glyph,
+                                  ),
+                                ),
                     ),
                   ),
-                  if (countOnly)
-                    hasCount
-                        ? Text(p.count!,
-                            style: TextStyle(fontSize: 14, height: 1.0, fontWeight: FontWeight.w900, color: ink))
-                        : const SizedBox.shrink()
-                  else if (!swaps)
-                    glyph
-                  else
-                    ValueListenableBuilder<bool>(
-                      valueListenable: pinShowsAge,
-                      builder: (_, showAge, __) => AnimatedSwitcher(
-                        duration: const Duration(milliseconds: 300),
-                        child: showAge
-                            ? Text(p.age.replaceAll(' ', '\n'),
-                                key: const ValueKey('age'),
-                                textAlign: TextAlign.center,
-                                style: TextStyle(fontSize: 9, height: 1.0, fontWeight: FontWeight.w900, color: ink))
-                            : glyph,
-                      ),
-                    ),
                 ]),
               ),
             ),
@@ -151,8 +134,8 @@ class PlacePin extends StatelessWidget {
               // stuck to the top-right edge of the pin (manual: just outside the corner)
               // anchored at its left side on the pin edge: every number touches the line, like "2/4" at charging
               Positioned(
-                top: 2,
-                left: 39,
+                top: 0,
+                left: 44,
                 child: Text(p.count!,
                     style: TextStyle(
                       fontSize: 15,
@@ -192,28 +175,70 @@ class PlacePin extends StatelessWidget {
 class _BaseDot extends StatelessWidget {
   final StatusColors c;
   const _BaseDot(this.c);
-  // manual design: a small ball in the status colour (white light top-left, darker below), no ring, no waves
+  // a small ball in the status colour (white light top-left, darker below) exactly on the map point
   @override
-  Widget build(BuildContext context) => SizedBox(
-        width: 40,
-        height: 16,
-        child: Center(
-          child: Container(
-            width: 11,
-            height: 11,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: RadialGradient(
-                center: const Alignment(-0.35, -0.4),
-                radius: 0.85,
-                colors: [Color.lerp(c.main, Colors.white, 0.7)!, c.main, c.dark],
-                stops: const [0, 0.55, 1],
-              ),
-              boxShadow: const [BoxShadow(color: Color(0x33000000), blurRadius: 2, offset: Offset(0, 1))],
-            ),
+  Widget build(BuildContext context) => Container(
+        width: 7,
+        height: 7,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          gradient: RadialGradient(
+            center: const Alignment(-0.35, -0.4),
+            radius: 0.85,
+            colors: [Color.lerp(c.main, Colors.white, 0.65)!, c.main, c.dark],
+            stops: const [0, 0.5, 1],
           ),
         ),
       );
+}
+
+/// The pin outline: a round head and a sharp point (tangent lines to the tip).
+/// Inside: white light top-right, the status tint; edge in the status colour; a soft shadow.
+class _PinShape extends CustomPainter {
+  final StatusColors c;
+  _PinShape(this.c);
+  static const double w = 38, h = 50, r = 16.5, cy = 18;
+
+  static Path _path() {
+    const cx = w / 2, tipY = h - 1;
+    final d = tipY - cy; // centre to tip
+    final a = math.asin(r / d); // half-angle of the point
+    final t = math.pi / 2 - a; // tangent point angle from the downward axis
+    final path = Path()
+      ..moveTo(cx, tipY)
+      ..lineTo(cx - r * math.sin(t), cy + r * math.cos(t))
+      ..arcTo(Rect.fromCircle(center: const Offset(cx, cy), radius: r), math.pi / 2 + t, 2 * (math.pi - t), false)
+      ..close();
+    return path;
+  }
+
+  static final Path _shape = _path();
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    canvas.drawShadow(_shape, c.dark.withValues(alpha: 0.6), 2.5, false);
+    canvas.drawPath(
+      _shape,
+      Paint()
+        ..shader = RadialGradient(
+          center: const Alignment(0.4, -0.55),
+          radius: 0.9,
+          colors: [Colors.white, c.tint, Color.lerp(c.tint, c.main, 0.2)!],
+          stops: const [0, 0.55, 1],
+        ).createShader(const Rect.fromLTWH(0, 0, w, h)),
+    );
+    canvas.drawPath(
+      _shape,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 2.5
+        ..strokeJoin = StrokeJoin.round
+        ..color = c.main,
+    );
+  }
+
+  @override
+  bool shouldRepaint(covariant _PinShape old) => old.c != c;
 }
 
 /// Small coloured "you are here" dot.

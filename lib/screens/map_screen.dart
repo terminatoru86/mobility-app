@@ -212,6 +212,9 @@ class MapScreenState extends State<MapScreen> {
 
   @override
   void dispose() {
+    _sWait?.cancel();
+    _sCtrl.dispose();
+    _sFocus.dispose();
     Store.i.removeListener(_storeChanged);
     statusFilter.removeListener(_statusChanged);
     _shareTimer?.cancel();
@@ -378,25 +381,122 @@ class MapScreenState extends State<MapScreen> {
     if (mounted) setState(() {});
   }
 
-  Future<void> _openSearch() async {
-    final picked = await showModalBottomSheet<Object>(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.white,
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24))),
-      builder: (_) => _SearchSheet(places: _all),
-    );
-    if (!mounted || picked == null) return;
+  // ── Search: typing happens in the bar itself; under it only the keyboard (and results while typing) ──
+  bool _searching = false;
+  final _sCtrl = TextEditingController();
+  final _sFocus = FocusNode();
+  Timer? _sWait;
+  List<GeoResult> _sResults = [];
+  List<Place> _sOurs = [];
+  String _sQ = '';
+  bool _sBusy = false;
+
+  void _startSearch() {
+    setState(() => _searching = true);
+    _sFocus.requestFocus();
+  }
+
+  void _endSearch() {
+    _sWait?.cancel();
+    _sFocus.unfocus();
+    setState(() {
+      _searching = false;
+      _sCtrl.clear();
+      _sQ = '';
+      _sResults = [];
+      _sOurs = [];
+      _sBusy = false;
+    });
+  }
+
+  void _sChanged(String q) {
+    _sQ = q.trim();
+    final low = _sQ.toLowerCase();
+    setState(() {
+      _sOurs = low.length < 2
+          ? []
+          : _all
+              .where((p) => p.address.toLowerCase().contains(low) || p.type.title.toLowerCase().contains(low))
+              .take(5)
+              .toList();
+      if (_sQ.length < 3) _sResults = [];
+    });
+    _sWait?.cancel();
+    _sWait = Timer(const Duration(milliseconds: 350), () async {
+      if (_sQ.length < 3) return;
+      final asked = _sQ;
+      setState(() => _sBusy = true);
+      final r = await searchUs(asked, near: userPos);
+      if (mounted && asked == _sQ) {
+        setState(() {
+          _sResults = r;
+          _sBusy = false;
+        });
+      }
+    });
+  }
+
+  // Enter on the keyboard: the first result right away.
+  Future<void> _sSubmit(String q) async {
+    if (q.trim().isEmpty) return _endSearch();
+    Store.i.addRecent(q.trim());
+    if (_sOurs.isNotEmpty) return _usePick(_sOurs.first);
+    var r = _sResults;
+    if (r.isEmpty) {
+      setState(() => _sBusy = true);
+      r = await searchUs(q, near: userPos);
+      if (!mounted) return;
+      setState(() => _sBusy = false);
+    }
+    if (r.isNotEmpty) _usePick(r.first);
+  }
+
+  void _usePick(Object picked) {
+    if (_sQ.isNotEmpty) Store.i.addRecent(_sQ);
+    _endSearch();
     if (picked is Place) {
       _map.move(picked.pos, 17);
       _openPlace(picked);
     } else if (picked is GeoResult) {
       _showDestination(picked);
-    } else if (picked is String) {
-      setState(() => _picked
-        ..clear()
-        ..add(picked));
     }
+  }
+
+  /// Results while typing: a small card right under the bar (nothing else).
+  Widget _searchResults() {
+    if (_sOurs.isEmpty && _sResults.isEmpty) return const SizedBox.shrink();
+    return Container(
+      margin: const EdgeInsets.only(top: 6),
+      constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.34),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 3))],
+      ),
+      child: ListView(padding: const EdgeInsets.symmetric(vertical: 4), shrinkWrap: true, children: [
+        for (final p in _sOurs)
+          ListTile(
+            dense: true,
+            leading: Glyph(p.type, size: 20, color: colorsFor(p.shownStatus).dark),
+            title: Text(p.address, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w700)),
+            subtitle: Text('${p.type.title} · ${p.distance}'),
+            onTap: () => _usePick(p),
+          ),
+        for (final r in _sResults)
+          ListTile(
+            dense: true,
+            leading: const Icon(Icons.place_outlined, size: 20),
+            title: Text(r.title, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w700)),
+            subtitle: Text('${fmtDistance(const Distance()(userPos, r.pos))} · ${r.subtitle}',
+                maxLines: 1, overflow: TextOverflow.ellipsis),
+            onTap: () => _usePick(r),
+          ),
+        const Padding(
+          padding: EdgeInsets.fromLTRB(16, 2, 16, 6),
+          child: Text('Search © OpenStreetMap Nominatim', style: TextStyle(fontSize: 10, color: AppColors.soft)),
+        ),
+      ]),
+    );
   }
 
   // ── Searched address: normal destination, plus a suggestion if a rack is 300 m or closer ──
@@ -722,22 +822,48 @@ class MapScreenState extends State<MapScreen> {
 
     final inside = <Place>[];
     for (final p in pins) {
-      (km2(p.pos) <= ringKm * ringKm && (inOval(p.pos) || p.id == _selected) ? inside : dots).add(p);
+      // close in: the 6-mile ring; zoomed out (under 15) the whole oval of the screen, almost to its edges
+      final inRing = zoomNow < 15 || km2(p.pos) <= ringKm * ringKm;
+      (inRing && (inOval(p.pos) || p.id == _selected) ? inside : dots).add(p);
     }
-    // each pin is a real widget: at most [kMaxPins], the ones nearest the middle of the screen;
-    // the rest are dots until the rider moves closer (keeps a cheaper phone fluid)
-    // zoomed out the pins are lighter (no drawing that turns): more of them, so the whole 6-mile ring fills
+    // pins must not sit on each other: from the middle outwards, a pin only where there is room
+    // (about one pin width); the others stay dots. So pins spread over the whole oval, never a heap.
+    // Each pin is a real widget: at most [kMaxPins] close in, more when zoomed out (lighter pins).
     final maxPins = _zoom >= 15 ? kMaxPins : (_zoom >= 14 ? 160 : 260);
-    if (inside.length > maxPins) {
-      final c = _map.camera.center;
+    if (_zoom >= kGroupBelow && inside.isNotEmpty) {
+      final c = camC ?? rc;
       double d2(Place p) {
         final dy = p.pos.latitude - c.latitude, dx = p.pos.longitude - c.longitude;
         return dx * dx + dy * dy;
       }
 
       inside.sort((x, y) => x.id == _selected ? -1 : (y.id == _selected ? 1 : d2(x).compareTo(d2(y))));
-      dots.addAll(inside.sublist(maxPins));
-      inside.removeRange(maxPins, inside.length);
+      const gapPx = 30.0;
+      final cellLat = gapPx * pxM / 110540;
+      final cellLng = gapPx * pxM / (111320 * math.cos(c.latitude * math.pi / 180));
+      final taken = <int>{};
+      final keep = <Place>[];
+      for (final p in inside) {
+        final a = (p.pos.latitude / cellLat).floor(), b = (p.pos.longitude / cellLng).floor();
+        var free = true;
+        for (var i = -1; i <= 1 && free; i++) {
+          for (var j = -1; j <= 1; j++) {
+            if (taken.contains((a + i) * 100000007 + (b + j))) {
+              free = false;
+              break;
+            }
+          }
+        }
+        if ((free || p.id == _selected) && keep.length < maxPins) {
+          keep.add(p);
+          taken.add(a * 100000007 + b);
+        } else {
+          dots.add(p);
+        }
+      }
+      inside
+        ..clear()
+        ..addAll(keep);
     }
 
     // inside the ring: our real pins with their info. Zoomed in (15+) they are never grouped.
@@ -768,7 +894,7 @@ class MapScreenState extends State<MapScreen> {
       }
       final lat = group.map((p) => p.pos.latitude).reduce((x, y) => x + y) / group.length;
       final lng = group.map((p) => p.pos.longitude).reduce((x, y) => x + y) / group.length;
-      final size = (30 + 14 * math.log(group.length) / math.ln10).clamp(32.0, 54.0).toDouble();
+      final size = (28 + 12 * math.log(group.length) / math.ln10).clamp(30.0, 48.0).toDouble();
       markers.add(Marker(
         point: LatLng(lat, lng),
         width: size,
@@ -817,10 +943,11 @@ class MapScreenState extends State<MapScreen> {
             .toList();
     thinOut(others, 5, 600);
     _dotPlaces = [...dots, ...others];
-    final r = _zoom < 11 ? 2.6 : (_zoom < 14 ? 3.4 : 4.6);
+    // the dots shrink as the map zooms out (at the group zooms they are really small)
+    final r = (4.4 * math.pow(0.62, math.max(0.0, 14.5 - _zoom))).clamp(1.1, 4.4).toDouble();
     // a bit smaller than the dots outside the ring, but solid and clearly visible on the calm map
     // the kinds not picked under the search bar: 20 % smaller still (normal size again when picked)
-    final small = math.max(2.2, r * 0.75 * 0.8);
+    final small = math.max(1.0, r * 0.75 * 0.8);
     // shops, service, rent have no live status: dark slate (light grey would vanish on the grey map)
     Color dotColor(Place p) =>
         p.shownStatus == Status.neutral || p.shownStatus == Status.unknown ? AppColors.slate : colorsFor(p.shownStatus).main;
@@ -832,7 +959,7 @@ class MapScreenState extends State<MapScreen> {
           radius: small,
           color: Color.lerp(dotColor(p), Colors.white, 0.45)!,
           borderColor: dotColor(p),
-          borderStrokeWidth: 1.3,
+          borderStrokeWidth: math.min(1.3, small * 0.45),
         ),
       for (final p in dots)
         CircleMarker(
@@ -840,7 +967,7 @@ class MapScreenState extends State<MapScreen> {
           radius: r,
           color: Color.lerp(dotColor(p), Colors.white, 0.45)!,
           borderColor: dotColor(p),
-          borderStrokeWidth: _zoom < 11 ? 1.0 : 1.6,
+          borderStrokeWidth: math.min(1.6, r * 0.4),
         ),
     ];
     _markerCache = markers;
@@ -943,7 +1070,7 @@ class MapScreenState extends State<MapScreen> {
           minZoom: 3,
           maxZoom: 19,
           onMapReady: () => _watchArea(_map.camera),
-          onTap: (_, at) => _tapDot(at),
+          onTap: (_, at) => _searching ? _endSearch() : _tapDot(at),
           onPositionChanged: (camera, hasGesture) {
             // rebuild the pins only when the zoom crosses a half step, not on every frame
             final bucket = (camera.zoom * 2).floor() / 2;
@@ -1088,6 +1215,8 @@ class MapScreenState extends State<MapScreen> {
         top: top + 8,
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           _searchBar(),
+          if (_searching) _searchResults(),
+          if (!_searching) ...[
           const SizedBox(height: 8),
           _filters(),
           const SizedBox(height: 8),
@@ -1119,6 +1248,7 @@ class MapScreenState extends State<MapScreen> {
               },
             ),
           ]),
+          ],
         ]),
       ),
       if (_dest != null && !_list)
@@ -1321,7 +1451,7 @@ class MapScreenState extends State<MapScreen> {
       );
 
   Widget _searchBar() => GestureDetector(
-        onTap: _openSearch,
+        onTap: _searching ? null : _startSearch,
         child: Container(
           key: _kSearch,
           height: 54,
@@ -1331,7 +1461,36 @@ class MapScreenState extends State<MapScreen> {
             borderRadius: BorderRadius.circular(27),
             boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 3))],
           ),
-          child: Row(children: [
+          child: _searching
+              // typing: only the field (the bike / weather button steps aside for more room)
+              ? Row(children: [
+                  const SizedBox(width: 10),
+                  const Icon(Icons.search, color: AppColors.soft),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: TextField(
+                      controller: _sCtrl,
+                      focusNode: _sFocus,
+                      autofocus: true,
+                      textInputAction: TextInputAction.search,
+                      onChanged: _sChanged,
+                      onSubmitted: _sSubmit,
+                      style: const TextStyle(fontSize: 16, color: AppColors.ink),
+                      decoration: const InputDecoration(
+                        hintText: 'Address, place or city',
+                        border: InputBorder.none,
+                        isCollapsed: true,
+                      ),
+                    ),
+                  ),
+                  if (_sBusy)
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 8),
+                      child: SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2)),
+                    ),
+                  IconButton(onPressed: _endSearch, icon: const Icon(Icons.close)),
+                ])
+              : Row(children: [
             GestureDetector(
               // vehicle side → My vehicle; weather side → rain and wind
               onTap: () async {
@@ -1523,152 +1682,3 @@ Future<void> chooseOperators(BuildContext context) async {
   );
 }
 
-/// Search: recent, saved and categories; while typing, our places first, then US addresses.
-class _SearchSheet extends StatefulWidget {
-  final List<Place> places;
-  const _SearchSheet({required this.places});
-  @override
-  State<_SearchSheet> createState() => _SearchSheetState();
-}
-
-class _SearchSheetState extends State<_SearchSheet> {
-  Timer? _wait;
-  List<GeoResult> _results = [];
-  List<Place> _ours = [];
-  String _q = '';
-  bool _busy = false;
-
-  @override
-  void dispose() {
-    _wait?.cancel();
-    super.dispose();
-  }
-
-  void _changed(String q) {
-    _q = q.trim();
-    final low = _q.toLowerCase();
-    setState(() {
-      _ours = low.length < 2
-          ? []
-          : widget.places.where((p) => p.address.toLowerCase().contains(low) || p.type.title.toLowerCase().contains(low)).take(6).toList();
-    });
-    _wait?.cancel();
-    // search as you type, a moment after the last key
-    _wait = Timer(const Duration(milliseconds: 350), () async {
-      if (_q.length < 3) return;
-      final asked = _q;
-      setState(() => _busy = true);
-      final r = await searchUs(asked, near: userPos);
-      if (mounted && asked == _q) {
-        setState(() {
-          _results = r;
-          _busy = false;
-        });
-      }
-    });
-  }
-
-  // Enter: take the first result right away.
-  Future<void> _submit(String q) async {
-    Store.i.addRecent(q.trim());
-    if (_ours.isNotEmpty) {
-      Navigator.pop(context, _ours.first);
-      return;
-    }
-    var r = _results;
-    if (r.isEmpty) {
-      setState(() => _busy = true);
-      r = await searchUs(q, near: userPos);
-      if (!mounted) return;
-      setState(() => _busy = false);
-    }
-    if (r.isNotEmpty && mounted) Navigator.pop(context, r.first);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final store = Store.i;
-    final saved = store.savedPlaceData.values.toList();
-    return Padding(
-      padding: EdgeInsets.fromLTRB(16, 14, 16, MediaQuery.of(context).viewInsets.bottom + 16),
-      child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
-        TextField(
-          autofocus: true,
-          onChanged: _changed,
-          onSubmitted: _submit,
-          decoration: InputDecoration(
-            hintText: 'Address, place or city in the US',
-            prefixIcon: const Icon(Icons.search),
-            suffixIcon: _busy
-                ? const Padding(
-                    padding: EdgeInsets.all(14),
-                    child: SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2)),
-                  )
-                : null,
-            filled: true,
-            fillColor: AppColors.paper,
-            border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(16)), borderSide: BorderSide.none),
-          ),
-        ),
-        const SizedBox(height: 8),
-        ConstrainedBox(
-          constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.5),
-          child: ListView(shrinkWrap: true, children: [
-            if (_q.isEmpty) ...[
-              Wrap(spacing: 6, runSpacing: 6, children: [
-                for (final c in kFilterChips)
-                  ActionChip(label: Text(c.$1), onPressed: () => Navigator.pop(context, c.$1)),
-              ]),
-              if (store.recentSearches.isNotEmpty) _head('Recent'),
-              for (final r in store.recentSearches)
-                ListTile(
-                  dense: true,
-                  leading: const Icon(Icons.history),
-                  title: Text(r),
-                  onTap: () => _changed(r),
-                ),
-              if (saved.isNotEmpty) _head('Saved places'),
-              for (final p in saved)
-                ListTile(
-                  dense: true,
-                  leading: const Icon(Icons.favorite, color: AppColors.red),
-                  title: Text(p.address),
-                  subtitle: Text(p.type.title),
-                  onTap: () => Navigator.pop(context, p),
-                ),
-            ],
-            if (_ours.isNotEmpty) _head('Our places'),
-            for (final p in _ours)
-              ListTile(
-                leading: Glyph(p.type, size: 22, color: colorsFor(p.shownStatus).dark),
-                title: Text(p.address, style: const TextStyle(fontWeight: FontWeight.w700)),
-                subtitle: Text('${p.type.title} · ${p.distance}'),
-                onTap: () {
-                  store.addRecent(_q);
-                  Navigator.pop(context, p);
-                },
-              ),
-            if (_results.isNotEmpty) _head('Addresses'),
-            for (final r in _results)
-              ListTile(
-                leading: const Icon(Icons.place_outlined),
-                title: Text(r.title, style: const TextStyle(fontWeight: FontWeight.w700)),
-                subtitle: Text('${fmtDistance(const Distance()(userPos, r.pos))} · ${r.subtitle}',
-                    maxLines: 1, overflow: TextOverflow.ellipsis),
-                onTap: () {
-                  store.addRecent(_q);
-                  Navigator.pop(context, r);
-                },
-              ),
-          ]),
-        ),
-        const Text('Search © OpenStreetMap Nominatim', style: TextStyle(fontSize: 10, color: AppColors.soft)),
-      ]),
-    );
-  }
-
-  Widget _head(String t) => Padding(
-        padding: const EdgeInsets.only(top: 10, bottom: 2),
-        child: Text(t, style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.soft)),
-      );
-}
