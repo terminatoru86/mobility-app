@@ -53,8 +53,9 @@ class StatusScale extends StatelessWidget {
                     Expanded(
                       child: DecoratedBox(
                         decoration: BoxDecoration(
-                          color: s.$1 == cur ? s.$2 : s.$3,
-                          border: Border(top: BorderSide(color: s.$2, width: 1.5)),
+                          // like the pins: colour edge on top, a stronger tint of the colour inside
+                          color: s.$1 == cur ? s.$2 : (s.$1 == null ? Colors.white : Color.lerp(s.$3, s.$2, 0.4)),
+                          border: Border(top: BorderSide(color: s.$2, width: 2)),
                         ),
                         child: s.$1 == cur
                             // the small arrow, inside the chosen colour (it does not stick out)
