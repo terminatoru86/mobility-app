@@ -19,6 +19,7 @@ import '../theme.dart';
 import '../widgets/compass.dart';
 import '../widgets/directions.dart';
 import '../widgets/pin.dart';
+import '../widgets/road_line.dart';
 import '../widgets/sheet_parts.dart';
 import '../widgets/tiles.dart';
 
@@ -893,6 +894,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
     });
     _startGps();
     _loadControls();
+    _loadRoadData();
     final rack = widget.suggestRack;
     if (rack != null) {
       _walk = [widget.to, rack.pos];
@@ -980,30 +982,73 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
     return (ahead.first, ahead.first.along - _along, ahead.length);
   }
 
-  Widget _controlButton() {
+  Widget _controlInBanner() {
     final n = _nextControl();
-    if (n == null) return const SizedBox.shrink();
-    final (c, m, left) = n;
-    return Column(mainAxisSize: MainAxisSize.min, children: [
-      Container(
-        width: 56,
-        height: 56,
-        decoration: const BoxDecoration(
-          color: Colors.white,
-          shape: BoxShape.circle,
-          boxShadow: [BoxShadow(color: Color(0x33000000), blurRadius: 8, offset: Offset(0, 2))],
+    if (n == null || n.$2 > 150) return const SizedBox.shrink();
+    final (c, m, _) = n;
+    return Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: Column(mainAxisSize: MainAxisSize.min, children: [
+        Container(
+          width: 40,
+          height: 40,
+          decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+          alignment: Alignment.center,
+          child: TrafficControlIcon(kind: c.kind, size: 26),
         ),
-        alignment: Alignment.center,
-        child: TrafficControlIcon(kind: c.kind, size: 34),
-      ),
-      const SizedBox(height: 4),
-      Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(10)),
-        child: Text(left > 1 ? '${fmtDistance(m)} · +${left - 1}' : fmtDistance(m),
-            style: const TextStyle(fontSize: 11.5, fontWeight: FontWeight.w900)),
-      ),
-    ]);
+        const SizedBox(height: 2),
+        Text(fmtDistance(m), style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w900)),
+      ]),
+    );
+  }
+
+  /// The kind of road we are on now (from the map data), '' while it loads.
+  String _roadNow() {
+    final segs = _route.roadSegs;
+    if (segs == null || segs.isEmpty) return '';
+    for (final s in segs) {
+      if (s.$1 > _along) return s.$2;
+    }
+    return segs.last.$2;
+  }
+
+  /// The next hill, downhill or bridge ahead: (what, metres to it).
+  (String, double)? _nextRelief() {
+    String? what;
+    double? best;
+    for (final b in _route.bridges ?? const <(double, double)>[]) {
+      if (b.$2 > _along) {
+        best = math.max(0, b.$1 - _along);
+        what = 'bridge';
+        break;
+      }
+    }
+    final e = _route.elev;
+    if (e != null) {
+      for (int i = 1; i < e.length; i++) {
+        final a = e[i - 1], b = e[i];
+        if (b.$1 <= _along) continue;
+        final dx = b.$1 - a.$1;
+        if (dx <= 0) continue;
+        final g = (b.$2 - a.$2) / dx; // 3 % or more counts
+        if (g.abs() >= 0.03) {
+          final d = math.max(0.0, a.$1 - _along);
+          if (best == null || d < best) {
+            best = d;
+            what = g > 0 ? 'hill' : 'downhill';
+          }
+          break;
+        }
+      }
+    }
+    return best == null ? null : (what!, best);
+  }
+
+  void _loadRoadData() {
+    final r = _route;
+    Future.wait([addRoadMix(r), addElevation(r)]).then((_) {
+      if (mounted) setState(() {});
+    });
   }
 
   Future<void> _recalculate() async {
@@ -1020,6 +1065,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
       _controls = const [];
     });
     _loadControls();
+    _loadRoadData();
   }
 
   Future<void> _arrive() async {
@@ -1314,6 +1360,8 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
                             style: const TextStyle(color: Colors.white, fontSize: 14)),
                       ]),
                     ),
+                    // the next traffic light / stop sign: only in the last 150 m before it
+                    _controlInBanner(),
                     const Icon(Icons.format_list_bulleted, color: Colors.white),
                   ]),
                 ),
@@ -1333,16 +1381,13 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
         Positioned(
           right: 12,
           top: top + 112,
-          child: Column(mainAxisSize: MainAxisSize.min, children: [
-            _controlButton(),
-            if (_nextControl() != null) const SizedBox(height: 10),
-            RideCompass(heading: _heading, windKmh: _wx?.wind, windFrom: _wx?.windDir, size: 70),
-          ]),
+          child: RideCompass(heading: _heading, windKmh: _wx?.wind, windFrom: _wx?.windDir, size: 70),
         ),
-        // recording card + recenter + simulate
+        // ride card, right under the banner: the road we are on (sign + live line), speed, time,
+        // and how far the next hill / downhill / bridge is
         Positioned(
           left: 10,
-          bottom: 104,
+          top: top + 112,
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
             decoration: BoxDecoration(
@@ -1350,14 +1395,31 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
               borderRadius: BorderRadius.circular(16),
               boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 8)],
             ),
-            child: Row(children: [
-              const Icon(Icons.fiber_manual_record, color: AppColors.red, size: 12),
-              const SizedBox(width: 6),
-              _val(_speed.toStringAsFixed(1), 'km/h'),
-              const SizedBox(width: 12),
-              _val('${elapsed.inMinutes}:${(elapsed.inSeconds % 60).toString().padLeft(2, '0')}', 'min:sec'),
-              const SizedBox(width: 12),
-              _val((_ridden / 1000).toStringAsFixed(1), 'km'),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisSize: MainAxisSize.min, children: [
+              Row(mainAxisSize: MainAxisSize.min, children: [
+                Container(
+                  width: 22,
+                  height: 22,
+                  decoration: BoxDecoration(color: const Color(0xFFE3E8EA), borderRadius: BorderRadius.circular(6)),
+                  child: const Icon(Icons.route, size: 14, color: AppColors.soft),
+                ),
+                const SizedBox(width: 6),
+                RoadLine(kind: _roadNow(), width: 52),
+                const SizedBox(width: 6),
+                Text(_roadNow().isEmpty ? '…' : _roadNow(),
+                    style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w800, color: AppColors.soft)),
+              ]),
+              const SizedBox(height: 4),
+              Row(mainAxisSize: MainAxisSize.min, children: [
+                _val(_speed.toStringAsFixed(1), 'km/h'),
+                const SizedBox(width: 12),
+                _val('${elapsed.inMinutes}:${(elapsed.inSeconds % 60).toString().padLeft(2, '0')}', 'min:sec'),
+                const SizedBox(width: 12),
+                Builder(builder: (_) {
+                  final r = _nextRelief();
+                  return r == null ? _val('—', 'flat') : _val(fmtDistance(r.$2), r.$1);
+                }),
+              ]),
             ]),
           ),
         ),

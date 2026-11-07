@@ -33,10 +33,35 @@ class RouteResult {
   /// Share of each kind of road from the map data (null until it answers).
   Map<String, double>? roadMix;
 
+  /// Along the route, in order: where each kind of road ends (metres from the start) and its kind
+  /// (same names as [roadMix]); bridges as (start, end) metres. Null until the map data answers.
+  List<(double, String)>? roadSegs;
+  List<(double, double)>? bridges;
+
+  /// Heights along the route: (metres from the start, height in m). Null until the service answers.
+  List<(double, double)>? elev;
+
   /// Estimate while the services answer: quieter routes avoid bridges a little more.
   double get _hill => switch (label) { 'Quiet' => 0.75, 'Balanced' => 0.88, _ => 1.0 };
   int get climb => realClimb ?? (meters / 1000 * 6 * _hill).round();
   int get descent => realDescent ?? (meters / 1000 * 5.4 * _hill).round();
+}
+
+/// Indexes of up to [n] points spread evenly along the route.
+List<int> _sampleIdx(int len, int n) {
+  if (len <= n) return [for (int i = 0; i < len; i++) i];
+  final step = (len - 1) / (n - 1);
+  return [for (int i = 0; i < n; i++) (i * step).round()];
+}
+
+/// Metres from the start at every point of the route.
+List<double> _cumulative(List<LatLng> pts) {
+  const d = Distance();
+  final out = <double>[0];
+  for (int i = 1; i < pts.length; i++) {
+    out.add(out.last + d(pts[i - 1], pts[i]));
+  }
+  return out;
 }
 
 /// Up to [n] points spread evenly along the route.
@@ -49,7 +74,8 @@ List<LatLng> _sample(List<LatLng> pts, int n) {
 /// Real climb and descent: heights of up to 100 points from Open-Meteo (free, no key).
 Future<void> addElevation(RouteResult r) async {
   if (r.realClimb != null || r.points.length < 2) return;
-  final pts = _sample(r.points, 100);
+  final idx = _sampleIdx(r.points.length, 100);
+  final pts = [for (final i in idx) r.points[i]];
   final uri = Uri.https('api.open-meteo.com', '/v1/elevation', {
     'latitude': pts.map((p) => p.latitude.toStringAsFixed(5)).join(','),
     'longitude': pts.map((p) => p.longitude.toStringAsFixed(5)).join(','),
@@ -66,6 +92,8 @@ Future<void> addElevation(RouteResult r) async {
     }
     r.realClimb = up.round();
     r.realDescent = down.round();
+    final along = _cumulative(r.points);
+    r.elev = [for (int k = 0; k < h.length && k < idx.length; k++) (along[idx[k]], h[k])];
   } catch (e) {
     debugPrint('Elevation failed: $e');
   }
@@ -81,7 +109,7 @@ Future<void> addRoadMix(RouteResult r) async {
     'costing': 'bicycle',
     'shape_match': 'map_snap',
     'filters': {
-      'attributes': ['edge.use', 'edge.road_class', 'edge.cycle_lane', 'edge.length'],
+      'attributes': ['edge.use', 'edge.road_class', 'edge.cycle_lane', 'edge.length', 'edge.bridge'],
       'action': 'include',
     },
   });
@@ -93,6 +121,9 @@ Future<void> addRoadMix(RouteResult r) async {
     if (res.statusCode != 200) return;
     final edges = (jsonDecode(utf8.decode(res.bodyBytes))['edges'] as List? ?? []).cast<Map<String, dynamic>>();
     final m = {'Protected lanes': 0.0, 'Quiet streets': 0.0, 'Bike lanes': 0.0, 'Shared roads': 0.0, 'Main roads': 0.0};
+    final segs = <(double, String)>[];
+    final bridges = <(double, double)>[];
+    var at = 0.0;
     for (final e in edges) {
       final len = (e['length'] as num?)?.toDouble() ?? 0;
       final use = '${e['use'] ?? ''}';
@@ -108,6 +139,20 @@ Future<void> addRoadMix(RouteResult r) async {
                       ? 'Main roads'
                       : 'Quiet streets';
       m[k] = m[k]! + len;
+      final start = at;
+      at += len * 1000; // Valhalla gives kilometres
+      if (segs.isNotEmpty && segs.last.$2 == k) {
+        segs[segs.length - 1] = (at, k);
+      } else {
+        segs.add((at, k));
+      }
+      if (e['bridge'] == true) bridges.add((start, at));
+    }
+    // the matched length differs a little from the route's: scale to the route's metres
+    if (at > 0) {
+      final f = r.meters / at;
+      r.roadSegs = [for (final s in segs) (s.$1 * f, s.$2)];
+      r.bridges = [for (final b in bridges) (b.$1 * f, b.$2 * f)];
     }
     final total = m.values.fold<double>(0, (a, b) => a + b);
     if (total > 0) r.roadMix = {for (final e in m.entries) e.key: e.value / total};
