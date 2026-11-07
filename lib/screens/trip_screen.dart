@@ -1177,7 +1177,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final (step, dist, then) = _next();
+    final (step, dist, _) = _next();
     final remaining = math.max(0.0, _route.meters - _along);
     final secLeft = remaining / 1000 / 15 * 3600;
     final elapsed = DateTime.now().difference(_start);
@@ -1319,19 +1319,6 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
                 ),
               ),
             ),
-            if (then != null)
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Container(
-                  margin: const EdgeInsets.only(top: 6),
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                  decoration: BoxDecoration(color: const Color(0xFF1F57B8), borderRadius: BorderRadius.circular(12)),
-                  child: Row(mainAxisSize: MainAxisSize.min, children: [
-                    const Text('Then ', style: TextStyle(color: Colors.white70, fontSize: 12)),
-                    Icon(stepIcon(then.text), color: Colors.white, size: 16),
-                  ]),
-                ),
-              ),
             if (_recalc)
               Container(
                 margin: const EdgeInsets.only(top: 6),
