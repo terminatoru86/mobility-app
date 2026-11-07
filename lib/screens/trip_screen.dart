@@ -7,6 +7,7 @@ import 'dart:ui' show ImageFilter;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_map/flutter_map.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:latlong2/latlong.dart';
 
@@ -883,9 +884,19 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
   LatLng? _last;
   Weather? _wx; // for the compass's wind side
 
+  // spoken directions (turn left / right …); the speaker button mutes them
+  final _tts = FlutterTts();
+  bool _muted = false;
+  final Set<String> _said = {};
+
+  // the whole route from above, with the road kinds (tap again: back to the normal guidance)
+  bool _overview = false;
+
   @override
   void initState() {
     super.initState();
+    _tts.setLanguage('en-US').catchError((_) => null);
+    _tts.setSpeechRate(0.5).catchError((_) => null);
     fetchWeather(_pos).then((w) {
       if (mounted) setState(() => _wx = w);
     });
@@ -949,12 +960,13 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
       if (!heading.isNaN && heading != 0) _heading = heading;
       _along = along;
     });
-    if (_follow) {
+    if (_follow && !_overview) {
       try {
         _map.move(p, math.max(_map.camera.zoom, _zoom));
       } catch (_) {}
     }
 
+    _announce();
     final remaining = _route.meters - along;
     if (remaining < 25 || const Distance()(p, _to) < 25) {
       _arrive();
@@ -981,6 +993,111 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
     if (ahead.isEmpty) return null;
     return (ahead.first, ahead.first.along - _along, ahead.length);
   }
+
+  /// Says the next turn twice: about 200 m before it and right at it.
+  void _announce() {
+    if (_muted || _route.steps.isEmpty) return;
+    final (step, dist, _) = _next();
+    final street = step.street.isEmpty ? '' : ' onto ${step.street}';
+    final key = '${step.at.latitude},${step.at.longitude}';
+    if (dist <= 220 && dist > 60 && _said.add('far$key')) {
+      _say('In ${(dist / 10).round() * 10} meters, ${step.text.toLowerCase()}$street');
+    } else if (dist <= 30 && _said.add('now$key')) {
+      _say('${step.text}$street');
+    }
+  }
+
+  void _say(String t) {
+    try {
+      _tts.speak(t);
+    } catch (_) {}
+  }
+
+  void _toggleMute() {
+    setState(() => _muted = !_muted);
+    if (_muted) {
+      _tts.stop().catchError((_) => null);
+    } else {
+      _say('Voice on');
+    }
+  }
+
+  void _toggleOverview() {
+    setState(() => _overview = !_overview);
+    if (_overview) {
+      _follow = false;
+      try {
+        _map.fitCamera(CameraFit.coordinates(
+          coordinates: _route.points,
+          padding: const EdgeInsets.fromLTRB(40, 190, 40, 200),
+        ));
+      } catch (_) {}
+    } else {
+      _follow = true;
+      _map.move(_pos, _zoom);
+    }
+  }
+
+  /// The route drawn by road kind: solid on bike lanes, · · · shared with cars, _ _ _ no markings.
+  List<Polyline> _roadPolylines() => [
+        for (final (pts, kind) in splitByRoad(_route))
+          Polyline(
+            points: pts,
+            strokeWidth: 6,
+            color: RoadLine.colors[kind] ?? AppColors.blue,
+            pattern: kind == 'Protected lanes' || kind == 'Bike lanes'
+                ? const StrokePattern.solid()
+                : kind == 'Shared roads'
+                    ? const StrokePattern.dotted(spacingFactor: 1.6)
+                    : StrokePattern.dashed(segments: const [14, 9]),
+          ),
+      ];
+
+  Widget _roundBtn(IconData icon, VoidCallback onTap, {bool on = false, String? tip}) => Padding(
+        padding: const EdgeInsets.only(top: 8),
+        child: Material(
+          color: on ? AppColors.blue : Colors.white,
+          shape: const CircleBorder(),
+          elevation: 3,
+          child: InkWell(
+            customBorder: const CircleBorder(),
+            onTap: onTap,
+            child: SizedBox(
+              width: 48,
+              height: 48,
+              child: Icon(icon, color: on ? Colors.white : AppColors.ink, semanticLabel: tip),
+            ),
+          ),
+        ),
+      );
+
+  Widget _legend() => Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(14),
+          boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 8)],
+        ),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisSize: MainAxisSize.min, children: [
+          for (final k in const ['Protected lanes', 'Bike lanes', 'Shared roads', 'Quiet streets', 'Main roads'])
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 1.5),
+              child: Row(mainAxisSize: MainAxisSize.min, children: [
+                RoadLine(kind: k, width: 30),
+                const SizedBox(width: 6),
+                Text(
+                    switch (k) {
+                      'Protected lanes' => 'protected lane',
+                      'Bike lanes' => 'bike lane',
+                      'Shared roads' => 'shared with cars',
+                      'Quiet streets' => 'no markings',
+                      _ => 'main road, no markings',
+                    },
+                    style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700)),
+              ]),
+            ),
+        ]),
+      );
 
   Widget _controlInBanner() {
     final n = _nextControl();
@@ -1249,6 +1366,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
   void dispose() {
     _gps?.cancel();
     _sim?.cancel();
+    _tts.stop().catchError((_) => null);
     _clock?.cancel();
     super.dispose();
   }
@@ -1289,7 +1407,10 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
           ),
           children: [
             baseTiles(street: true),
-            routeLayer(_route.points),
+            if (_overview && _route.roadSegs != null)
+              PolylineLayer(polylines: _roadPolylines())
+            else
+              routeLayer(_route.points),
             if (done.length > 1)
               PolylineLayer(polylines: [Polyline(points: done, strokeWidth: 6, color: const Color(0xFF9AA6AC))]),
             if (_walk.length > 1)
@@ -1434,6 +1555,13 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
           right: 10,
           bottom: 104,
           child: Column(children: [
+            // the whole route from above with the road kinds; tap again: back to the normal guidance
+            _roundBtn(_overview ? Icons.navigation_rounded : Icons.alt_route, _toggleOverview,
+                on: _overview, tip: 'Whole route'),
+            // spoken directions on / off
+            _roundBtn(_muted ? Icons.volume_off_rounded : Icons.volume_up_rounded, _toggleMute,
+                on: _muted, tip: 'Voice'),
+            const SizedBox(height: 8),
             FloatingActionButton.small(
               heroTag: 'sim',
               backgroundColor: _simulating ? AppColors.blue : Colors.white,
@@ -1442,7 +1570,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
               onPressed: _toggleSim,
               child: Icon(_simulating ? Icons.pause : Icons.play_arrow),
             ),
-            if (!_follow)
+            if (!_follow && !_overview)
               FloatingActionButton.small(
                 heroTag: 'follow',
                 backgroundColor: Colors.white,
@@ -1454,6 +1582,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
               ),
           ]),
         ),
+        if (_overview) Positioned(left: 10, bottom: 104, child: _legend()),
         // arrival bar
         Positioned(
           left: 0,

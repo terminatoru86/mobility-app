@@ -489,3 +489,39 @@ Future<List<RouteControl>> routeControls(List<LatLng> pts) async {
   }
   return [];
 }
+
+
+/// The route cut into pieces by road kind (from [RouteResult.roadSegs]): (points, kind).
+/// Empty while the map data has not answered.
+List<(List<LatLng>, String)> splitByRoad(RouteResult r) {
+  final segs = r.roadSegs;
+  if (segs == null || segs.isEmpty || r.points.length < 2) return const [];
+  final along = _cumulative(r.points);
+  final out = <(List<LatLng>, String)>[];
+  var i = 0;
+  var start = 0.0;
+  for (final s in segs) {
+    final pts = <LatLng>[_pointAt(r.points, along, start)];
+    while (i < r.points.length && along[i] < s.$1) {
+      if (along[i] > start) pts.add(r.points[i]);
+      i++;
+    }
+    pts.add(_pointAt(r.points, along, s.$1));
+    if (pts.length > 1) out.add((pts, s.$2));
+    start = s.$1;
+  }
+  return out;
+}
+
+LatLng _pointAt(List<LatLng> pts, List<double> along, double m) {
+  if (m <= 0) return pts.first;
+  for (int i = 1; i < pts.length; i++) {
+    if (along[i] >= m) {
+      final seg = along[i] - along[i - 1];
+      final t = seg <= 0 ? 0.0 : (m - along[i - 1]) / seg;
+      return LatLng(pts[i - 1].latitude + (pts[i].latitude - pts[i - 1].latitude) * t,
+          pts[i - 1].longitude + (pts[i].longitude - pts[i - 1].longitude) * t);
+    }
+  }
+  return pts.last;
+}
