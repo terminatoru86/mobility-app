@@ -26,6 +26,7 @@ class RoadLine extends StatelessWidget {
           painter: _LinePainter(
             colors[kind] ?? AppColors.line,
             solid: kind == 'Protected lanes' || kind == 'Bike lanes',
+            dots: kind == 'Shared roads', // · · · shared with cars
           ),
         ),
       );
@@ -33,8 +34,8 @@ class RoadLine extends StatelessWidget {
 
 class _LinePainter extends CustomPainter {
   final Color c;
-  final bool solid;
-  _LinePainter(this.c, {required this.solid});
+  final bool solid, dots;
+  _LinePainter(this.c, {required this.solid, this.dots = false});
 
   @override
   void paint(Canvas canvas, Size s) {
@@ -45,6 +46,10 @@ class _LinePainter extends CustomPainter {
     final y = s.height / 2;
     if (solid) {
       canvas.drawLine(Offset(3, y), Offset(s.width - 3, y), p);
+    } else if (dots) {
+      for (double x = 3; x <= s.width - 3; x += 7) {
+        canvas.drawCircle(Offset(x, y), 2.4, Paint()..color = c);
+      }
     } else {
       for (double x = 3; x < s.width - 3; x += 11) {
         canvas.drawLine(Offset(x, y), Offset((x + 5).clamp(0, s.width - 3), y), p);
@@ -53,5 +58,5 @@ class _LinePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant _LinePainter o) => o.c != c || o.solid != solid;
+  bool shouldRepaint(covariant _LinePainter o) => o.c != c || o.solid != solid || o.dots != dots;
 }
