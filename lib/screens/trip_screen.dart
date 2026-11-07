@@ -65,6 +65,8 @@ class _RoutePlannerState extends State<RoutePlanner> {
   Weather? _wx;
   final List<(String, LatLng)> _via = [];
   late Vehicle _rv = widget.myVehicle ?? Vehicle.bike; // the routes are made for this vehicle // stops added with the ≡+ button
+  String _variant = 'standard'; // standard / shared / passenger / cargo (chips under the destination card)
+  bool _marked = false; // "Only bike marked": only marked, paved bike ways
   // Destination is an address (not one of our parking places): suggest a rack 300 m or closer.
   Place? _rack;
   List<LatLng> _walk = const [];
@@ -97,7 +99,8 @@ class _RoutePlannerState extends State<RoutePlanner> {
 
   Future<void> _calc() async {
     setState(() => _loading = true);
-    final r = await bikeRoutes([_from, for (final v in _via) v.$2, _to], vehicle: _rv.name);
+    final r = await bikeRoutes([_from, for (final v in _via) v.$2, _to],
+        vehicle: _rv.name, variant: _variant, markedOnly: _marked && _bikeLike);
     if (!mounted) return;
     setState(() {
       _routes = r;
@@ -197,7 +200,16 @@ class _RoutePlannerState extends State<RoutePlanner> {
           ),
         ),
         // ── glass card on top: thin blue "My location" strip, destination row, + and ⇅ ──
-        Positioned(left: 10, right: 10, top: top + 8, child: _glassTop()),
+        Positioned(
+          left: 10,
+          right: 10,
+          top: top + 8,
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            _glassTop(),
+            const SizedBox(height: 8),
+            _variantChips(),
+          ]),
+        ),
         // ── panel ──
         Positioned(
           left: 0,
@@ -255,7 +267,11 @@ class _RoutePlannerState extends State<RoutePlanner> {
                             // tap a vehicle: the routes are made again for it (moped and motorcycle use roads)
                             onSelected: (v) {
                               if (v == _rv) return;
-                              setState(() => _rv = v);
+                              setState(() {
+                                _rv = v;
+                                _variant = 'standard';
+                                if (!_bikeLike) _marked = false;
+                              });
                               _calc();
                             },
                           ),
@@ -263,12 +279,11 @@ class _RoutePlannerState extends State<RoutePlanner> {
                         const SizedBox(width: 8),
                         Expanded(flex: 2, child: FactTile(r.distance, 'distance')),
                       ]),
-                      const SizedBox(height: 8),
-                      _segmented(),
+                      // "Only bike marked": one route on marked bike ways, no Fast/Balanced/Quiet, no summary
+                      if (!_marked) ...[const SizedBox(height: 8), _segmented()],
                       const SizedBox(height: 8),
                       _nearCard(r),
-                      const SizedBox(height: 8),
-                      _summaryCard(r),
+                      if (!_marked) ...[const SizedBox(height: 8), _summaryCard(r)],
                     ],
                   ]),
                 ),
@@ -452,18 +467,22 @@ class _RoutePlannerState extends State<RoutePlanner> {
       );
 
   // ── Fast / Balanced / Quiet: thin segmented control ──
-  Widget _segmented() => Container(
-        height: 36,
-        padding: const EdgeInsets.all(3),
-        decoration: BoxDecoration(color: const Color(0xFFEDF1F3), borderRadius: BorderRadius.circular(12)),
-        child: Row(children: [
-          for (final label in const ['Fast', 'Balanced', 'Quiet'])
-            Expanded(
-              child: Builder(builder: (_) {
-                final i = _routes.indexWhere((x) => x.label == label);
-                final on = i == _sel && i >= 0;
-                return GestureDetector(
-                  onTap: i < 0
+  /// Fast / Balanced / Quiet: three small pills side by side (not the whole width).
+  Widget _segmented() => Center(
+        child: Row(mainAxisSize: MainAxisSize.min, children: [
+          for (final (label, icon) in const [
+            ('Fast', Icons.bolt_rounded),
+            ('Balanced', Icons.balance_rounded),
+            ('Quiet', Icons.spa_outlined),
+          ])
+            Builder(builder: (_) {
+              final i = _routes.indexWhere((x) => x.label == label);
+              final on = i == _sel && i >= 0;
+              final off = i < 0;
+              return Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 3),
+                child: GestureDetector(
+                  onTap: off
                       ? null
                       : () {
                           setState(() => _sel = i);
@@ -471,23 +490,85 @@ class _RoutePlannerState extends State<RoutePlanner> {
                         },
                   child: AnimatedContainer(
                     duration: const Duration(milliseconds: 180),
-                    alignment: Alignment.center,
+                    height: 30,
+                    padding: const EdgeInsets.symmetric(horizontal: 11),
                     decoration: BoxDecoration(
-                      color: on ? Colors.white : Colors.transparent,
-                      borderRadius: BorderRadius.circular(9),
-                      boxShadow: on ? const [BoxShadow(color: Color(0x24131F2B), blurRadius: 4, offset: Offset(0, 1))] : null,
+                      color: on ? AppColors.ink : Colors.white,
+                      borderRadius: BorderRadius.circular(15),
+                      border: Border.all(color: on ? AppColors.ink : AppColors.line, width: 1.2),
                     ),
-                    child: Text(label,
-                        style: TextStyle(
-                            fontSize: 13.5,
-                            fontWeight: on ? FontWeight.w800 : FontWeight.w600,
-                            color: i < 0 ? const Color(0xFFB4BEC2) : (on ? AppColors.ink : AppColors.soft))),
+                    child: Row(mainAxisSize: MainAxisSize.min, children: [
+                      Icon(icon, size: 15, color: off ? AppColors.line : (on ? Colors.white : AppColors.soft)),
+                      const SizedBox(width: 4),
+                      Text(label,
+                          style: TextStyle(
+                              fontSize: 12.5,
+                              fontWeight: on ? FontWeight.w800 : FontWeight.w600,
+                              color: off ? const Color(0xFFB4BEC2) : (on ? Colors.white : AppColors.ink))),
+                    ]),
                   ),
-                );
-              }),
-            ),
+                ),
+              );
+            }),
         ]),
       );
+
+  bool get _bikeLike => _rv == Vehicle.bike || _rv == Vehicle.ebike || _rv == Vehicle.scooter;
+
+  static const _variantLook = {
+    'standard': ('Standard', Icons.pedal_bike_rounded),
+    'shared': ('Shared', Icons.swap_horiz_rounded),
+    'passenger': ('Passenger', Icons.person_add_alt_1_rounded),
+    'cargo': ('Cargo / trailer', Icons.local_shipping_outlined),
+  };
+
+  /// Under the destination card, like the map chips: "Only bike marked" (bike ways only) and the
+  /// variants of the chosen vehicle (standard, shared, with a passenger, cargo bike / trailer) for safe routes.
+  Widget _variantChips() {
+    Widget chip(String text, Widget icon, bool on, VoidCallback onTap, {Color? accent, Color? tint}) => Padding(
+          padding: const EdgeInsets.only(right: 6),
+          child: GestureDetector(
+            onTap: onTap,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 7),
+              decoration: BoxDecoration(
+                color: on ? (tint ?? AppColors.slateTint) : Colors.white,
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: on ? (accent ?? AppColors.primary) : Colors.transparent, width: 1.5),
+                boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 2))],
+              ),
+              child: Row(mainAxisSize: MainAxisSize.min, children: [
+                icon,
+                const SizedBox(width: 5),
+                Text(text, style: TextStyle(fontWeight: FontWeight.w700, fontSize: 13, color: on ? (accent ?? AppColors.ink) : AppColors.ink)),
+              ]),
+            ),
+          ),
+        );
+    final variants = routeVariants[_rv.name] ?? const ['standard'];
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(children: [
+        if (_bikeLike)
+          chip('Only bike marked', const BikeRoadIcon(size: 16), _marked, () {
+            setState(() => _marked = !_marked);
+            _calc();
+          }, accent: AppColors.greenDark, tint: AppColors.greenTint),
+        for (final v in variants)
+          chip(
+            _variantLook[v]!.$1,
+            Icon(v == 'standard' && !_bikeLike ? Icons.two_wheeler_rounded : _variantLook[v]!.$2,
+                size: 16, color: AppColors.primary),
+            _variant == v,
+            () {
+              if (_variant == v) return;
+              setState(() => _variant = v);
+              _calc();
+            },
+          ),
+      ]),
+    );
+  }
 
   // ── Parking near the destination ──
   bool _nearOpen = false;

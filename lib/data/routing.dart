@@ -203,7 +203,56 @@ Future<RouteResult?> bikeRoute(List<LatLng> via, {String vehicle = 'bike'}) asyn
 /// Each vehicle has its own way: bike and e-bike on bike paths, e-scooter like a slow city bike,
 /// moped on smaller roads (no highways, max ~45 km/h), motorcycle on all roads.
 /// [vehicle]: 'bike', 'ebike', 'scooter', 'moped', 'moto'.
-(String, Map<String, dynamic>) _costing(String vehicle, String mode) {
+/// Route variants, chosen under the destination card (safe routes for what the rider carries).
+const routeVariants = {
+  'bike': ['standard', 'shared', 'passenger', 'cargo'],
+  'ebike': ['standard', 'shared', 'passenger', 'cargo'],
+  'scooter': ['standard', 'shared'],
+  'moped': ['standard', 'shared', 'passenger'],
+  'moto': ['standard', 'passenger'],
+};
+
+(String, Map<String, dynamic>) _costing(String vehicle, String mode, {String variant = 'standard'}) {
+  // only marked, paved bike ways (bike lanes, cycleways): as few roads as possible, no bad surfaces
+  if (mode == 'Marked') {
+    return ('bicycle', {
+      'bicycle_type': 'Road',
+      'cycling_speed': vehicle == 'scooter' ? 18 : 16,
+      'use_roads': 0.0,
+      'use_living_streets': 0.1,
+      'avoid_bad_surfaces': 1.0,
+      'use_hills': 0.3,
+    });
+  }
+  final (c, o) = _baseCosting(vehicle, mode);
+  final opts = Map<String, dynamic>.from(o);
+  if (c == 'bicycle') {
+    switch (variant) {
+      case 'shared': // heavier share bike / share scooter: city bike, a bit slower
+        opts['bicycle_type'] = 'City';
+        opts['cycling_speed'] = 15;
+      case 'passenger': // child seat or passenger: calm streets, smooth surface, few hills
+        opts['use_roads'] = math.min((opts['use_roads'] as num).toDouble(), 0.25);
+        opts['avoid_bad_surfaces'] = 0.8;
+        opts['use_hills'] = 0.15;
+        opts['cycling_speed'] = 14;
+      case 'cargo': // cargo bike / trailer: wide, smooth, flat; avoids rough paths
+        opts['bicycle_type'] = 'City';
+        opts['use_roads'] = math.min((opts['use_roads'] as num).toDouble(), 0.35);
+        opts['avoid_bad_surfaces'] = 0.9;
+        opts['use_hills'] = 0.1;
+        opts['cycling_speed'] = 13;
+    }
+  } else if (variant == 'passenger') {
+    if (c == 'motorcycle') opts['use_highways'] = (opts['use_highways'] as num).toDouble() * 0.7;
+    if (c == 'motor_scooter') opts['use_hills'] = 0.3;
+  } else if (variant == 'shared' && c == 'motor_scooter') {
+    opts['top_speed'] = 40;
+  }
+  return (c, opts);
+}
+
+(String, Map<String, dynamic>) _baseCosting(String vehicle, String mode) {
   final q = switch (mode) { 'Fast' => 0.0, 'Balanced' => 0.5, _ => 1.0 }; // 1 = calmest
   return switch (vehicle) {
     'moto' => ('motorcycle', {'use_highways': 1.0 - q, 'use_trails': 0.0, 'use_tolls': 0.5}),
@@ -214,11 +263,12 @@ Future<RouteResult?> bikeRoute(List<LatLng> via, {String vehicle = 'bike'}) asyn
   };
 }
 
-Future<List<RouteResult>> _valhallaRoutes(List<LatLng> via, String vehicle) async {
-  const modes = ['Fast', 'Balanced', 'Quiet'];
+Future<List<RouteResult>> _valhallaRoutes(List<LatLng> via, String vehicle,
+    {String variant = 'standard', bool markedOnly = false}) async {
+  final modes = markedOnly ? const ['Marked'] : const ['Fast', 'Balanced', 'Quiet'];
   final out = <RouteResult>[];
   await Future.wait(modes.map((mode) async {
-    final (costing, opts) = _costing(vehicle, mode);
+    final (costing, opts) = _costing(vehicle, mode, variant: variant);
     final m = (key: mode);
     final body = jsonEncode({
       'locations': [for (final p in via) {'lat': p.latitude, 'lon': p.longitude}],
@@ -258,7 +308,7 @@ Future<List<RouteResult>> _valhallaRoutes(List<LatLng> via, String vehicle) asyn
     }
   }));
   // keep Fast / Balanced / Quiet order; drop a route identical to another one
-  const order = ['Fast', 'Balanced', 'Quiet'];
+  const order = ['Marked', 'Fast', 'Balanced', 'Quiet'];
   out.sort((a, b) => order.indexOf(a.label).compareTo(order.indexOf(b.label)));
   final uniq = <RouteResult>[];
   for (final r in out) {
@@ -292,9 +342,10 @@ List<LatLng> _decodePolyline6(String s) {
 }
 
 /// Up to three choices: Fast, Balanced and Quiet (Valhalla first, the OSRM bike router if it does not answer).
-Future<List<RouteResult>> bikeRoutes(List<LatLng> via, {bool alternatives = true, String vehicle = 'bike'}) async {
-  if (alternatives || vehicle != 'bike') {
-    final v = await _valhallaRoutes(via, vehicle);
+Future<List<RouteResult>> bikeRoutes(List<LatLng> via,
+    {bool alternatives = true, String vehicle = 'bike', String variant = 'standard', bool markedOnly = false}) async {
+  if (alternatives || vehicle != 'bike' || variant != 'standard' || markedOnly) {
+    final v = await _valhallaRoutes(via, vehicle, variant: variant, markedOnly: markedOnly);
     if (v.isNotEmpty) return v;
   }
   final coords = via.map((p) => '${p.longitude.toStringAsFixed(6)},${p.latitude.toStringAsFixed(6)}').join(';');
