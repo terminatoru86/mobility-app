@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../theme.dart';
 
@@ -13,9 +14,11 @@ import '../theme.dart';
 /// 2. our pins appear (red 0, yellow 1, green) and riders on bike, scooter, moped, moto
 /// 3. your blue route lights up along the streets (you are the blue bubble)
 /// 4. you arrive: the big green pin (4) pulses, the full ones fade
-/// 5. the city fades into the app icon, "MOBIlity", the line under it and the four vehicles.
+/// 5. the last screen comes on top of that same map: our "m" logo (no tile, the map shows
+///    through), "MOBIlity", the line under it and the four vehicles.
 ///
-/// No text over the city; text only on the last screen.
+/// The map is tilted in 3D (a camera above the city that drifts a little).
+/// No text over the city until the last screen.
 class CitySplash extends StatefulWidget {
   final Duration show;
   const CitySplash({super.key, this.show = const Duration(milliseconds: 3200)});
@@ -62,18 +65,41 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
             animation: _a,
             builder: (context, _) {
               final t = _a.value;
-              final cityOut = Curves.easeIn.transform(_seg(t, 0.74, 0.90));
-              final endIn = Curves.easeOutCubic.transform(_seg(t, 0.80, 1.0));
+              final endIn = Curves.easeOutCubic.transform(_seg(t, 0.78, 1.0));
               return Stack(fit: StackFit.expand, children: [
-                if (cityOut < 1)
-                  Opacity(
-                    opacity: 1 - cityOut,
-                    child: RepaintBoundary(child: CustomPaint(painter: _CityPainter(t))),
+                LayoutBuilder(builder: (context, box) {
+                  final w = box.maxWidth, h = box.maxHeight;
+                  // a camera above the city: perspective + tilt, drifting slightly
+                  final tilt = 0.60 + 0.08 * Curves.easeInOut.transform(t);
+                  final zoom = 1.40 + 0.08 * Curves.easeInOut.transform(t);
+                  final po = Offset(w / 2, h * 0.30), to = Offset(w / 2, h * 0.55);
+                  final m = Matrix4.identity()
+                    ..translate(po.dx, po.dy)
+                    ..multiply(Matrix4.identity()..setEntry(3, 2, -1 / (2.53 * w)))
+                    ..translate(to.dx - po.dx, to.dy - po.dy)
+                    ..rotateX(tilt)
+                    ..scale(zoom, zoom, 1)
+                    ..translate(-to.dx, -to.dy);
+                  return Transform(
+                    transform: m,
+                    child: RepaintBoundary(child: CustomPaint(size: Size(w, h), painter: _CityPainter(t))),
+                  );
+                }),
+                // soft white at the top and bottom edges
+                const DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [Colors.white, Color(0x00FFFFFF), Color(0x00FFFFFF), Colors.white],
+                      stops: [0, .22, .80, .95],
+                    ),
                   ),
+                ),
                 if (endIn > 0)
                   Opacity(
                     opacity: endIn,
-                    child: Transform.scale(scale: 0.94 + 0.06 * endIn, child: const _EndCard()),
+                    child: Transform.scale(scale: 0.96 + 0.04 * endIn, child: const _EndCard()),
                   ),
               ]);
             },
@@ -84,37 +110,47 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
   }
 }
 
-/// The last screen: the icon, MOBIlity, the line under it, the four vehicles, Powered by.
+/// The last screen, on top of the map: a soft white glow, our "m" logo (transparent, the map
+/// shows around it), MOBIlity, the line under it, the four vehicles and Powered by.
 class _EndCard extends StatelessWidget {
   const _EndCard();
   @override
   Widget build(BuildContext context) {
     final bottom = MediaQuery.of(context).padding.bottom;
-    return Stack(children: [
-      Align(
-        alignment: const Alignment(0, -0.12),
-        child: Column(mainAxisSize: MainAxisSize.min, children: [
-          Container(
-            width: 104,
-            height: 104,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(24),
-              boxShadow: const [BoxShadow(color: Color(0x2213212B), blurRadius: 22, offset: Offset(0, 10))],
-            ),
-            child: Image.asset('assets/brand/app_icon.png', filterQuality: FilterQuality.medium),
+    return Stack(fit: StackFit.expand, children: [
+      const DecoratedBox(
+        decoration: BoxDecoration(
+          gradient: RadialGradient(
+            center: Alignment(0, -0.2),
+            radius: 0.75,
+            colors: [Color(0xE6FFFFFF), Color(0xB3FFFFFF), Color(0x00FFFFFF)],
+            stops: [0, .45, 1],
           ),
-          const SizedBox(height: 20),
+        ),
+      ),
+      Align(
+        alignment: const Alignment(0, -0.24),
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+          SvgPicture.asset('assets/brand/logo_m.svg', width: 96, height: 96),
+          const SizedBox(height: 6),
           const Text('MOBIlity',
-              style: TextStyle(fontSize: 32, fontWeight: FontWeight.w800, color: AppColors.ink, letterSpacing: -0.6)),
+              style: TextStyle(fontSize: 38, fontWeight: FontWeight.w800, color: AppColors.ink, letterSpacing: -0.8)),
           const SizedBox(height: 4),
-          const Text('Your city. Your ride. A free spot.',
-              style: TextStyle(fontSize: 13, color: Color(0xFF7E8D96))),
-          const SizedBox(height: 18),
+          const Text('Your city. Your ride. A free spot.', style: TextStyle(fontSize: 14, color: AppColors.soft)),
+          const SizedBox(height: 16),
           Row(mainAxisSize: MainAxisSize.min, children: [
             for (final v in _Veh.values)
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: CustomPaint(size: const Size(24, 24), painter: _VehPainter(v, const Color(0xFF8C9AA3), 1.6)),
+              Container(
+                width: 38,
+                height: 38,
+                margin: const EdgeInsets.symmetric(horizontal: 5),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                  border: Border.all(color: const Color(0xFFDCE3E8)),
+                ),
+                alignment: Alignment.center,
+                child: CustomPaint(size: const Size(24, 24), painter: _VehPainter(v, AppColors.soft, 1.6)),
               ),
           ]),
         ]),
@@ -124,7 +160,7 @@ class _EndCard extends StatelessWidget {
         right: 0,
         bottom: 22 + bottom,
         child: const Text('Powered by MOBIlity',
-            textAlign: TextAlign.center, style: TextStyle(fontSize: 11.5, color: Color(0xFFB0BCC3))),
+            textAlign: TextAlign.center, style: TextStyle(fontSize: 11.5, color: Color(0xFF97A3A9))),
       ),
     ]);
   }
@@ -374,7 +410,7 @@ class _CityPainter extends CustomPainter {
             Paint()..color = const Color(0xFFE6F0FC));
         continue;
       }
-      final x0 = b.x0, y0 = b.y0, x1 = b.x0 + b.w, y1 = b.y0 + b.d, z = b.h * rise;
+      final x0 = b.x0, y0 = b.y0, x1 = b.x0 + b.w, y1 = b.y0 + b.d, z = b.h * rise * 1.7;
       items.add((x1 + y1, () {
         void face(List<Offset> ps, Color c) {
           final path = Path()..addPolygon(ps, true);
@@ -383,7 +419,7 @@ class _CityPainter extends CustomPainter {
         }
 
         face([P(x0, y1), P(x1, y1), P(x1, y1, z), P(x0, y1, z)], const Color(0xFFF7F9FA));
-        face([P(x1, y0), P(x1, y1), P(x1, y1, z), P(x1, y0, z)], const Color(0xFFEDF1F4));
+        face([P(x1, y0), P(x1, y1), P(x1, y1, z), P(x1, y0, z)], const Color(0xFFE2E8EC));
         face([P(x0, y0, z), P(x1, y0, z), P(x1, y1, z), P(x0, y1, z)], Colors.white);
       }));
     }
@@ -412,20 +448,6 @@ class _CityPainter extends CustomPainter {
         Paint()
           ..shader = ui.Gradient.radial(Offset(w / 2, h * .45), h * .62, [const Color(0x00FFFFFF), Colors.white],
               const [.55, 1]));
-    canvas.drawRect(
-        rect,
-        Paint()
-          ..shader = ui.Gradient.linear(Offset.zero, Offset(0, h), const [
-            Colors.white,
-            Color(0x00FFFFFF),
-            Color(0x00FFFFFF),
-            Colors.white,
-          ], const [
-            0,
-            .2,
-            .78,
-            .92
-          ]));
   }
 
   // our pin, small: white inside, colour edge, a dot (or the number on the big one)
