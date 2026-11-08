@@ -472,16 +472,17 @@ class _RoutePlannerState extends State<RoutePlanner> {
       );
 
   // ── Fast / Balanced / Quiet: thin segmented control ──
-  /// Fast / Balanced / Quiet: three thin pills side by side, text only.
-  Widget _segmented() => Center(
-        child: Row(mainAxisSize: MainAxisSize.min, children: [
-          for (final label in const ['Fast', 'Balanced', 'Quiet'])
-            Builder(builder: (_) {
+  /// Fast / Balanced / Quiet: three tiles across the panel, in the style of the tiles above
+  /// (grey-paper, rounded 14): the name and the route's time; the chosen one with a dark edge.
+  Widget _segmented() => Row(children: [
+        for (final label in const ['Fast', 'Balanced', 'Quiet'])
+          Expanded(
+            child: Builder(builder: (_) {
               final i = _routes.indexWhere((x) => x.label == label);
               final on = i == _sel && i >= 0;
               final off = i < 0;
               return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 3),
+                padding: EdgeInsets.only(right: label == 'Quiet' ? 0 : 8),
                 child: GestureDetector(
                   onTap: off
                       ? null
@@ -489,30 +490,34 @@ class _RoutePlannerState extends State<RoutePlanner> {
                           setState(() => _sel = i);
                           _fit();
                         },
-                  // the same look as the map chips (Rack, Parking…), only thinner
                   child: AnimatedContainer(
                     duration: const Duration(milliseconds: 180),
-                    height: 26,
-                    alignment: Alignment.center,
-                    padding: const EdgeInsets.symmetric(horizontal: 14),
+                    height: 50,
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
                     decoration: BoxDecoration(
-                      color: on ? AppColors.slateTint : Colors.white,
-                      borderRadius: BorderRadius.circular(13),
-                      border: Border.all(color: on ? AppColors.primary : Colors.transparent, width: 1.3),
-                      boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 5, offset: Offset(0, 1))],
+                      color: on ? Colors.white : AppColors.paper,
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(color: on ? AppColors.ink : Colors.transparent, width: 1.6),
                     ),
-                    child: Text(label,
-                        style: TextStyle(
-                            fontSize: 12.5,
-                            height: 1,
-                            fontWeight: FontWeight.w700,
-                            color: off ? const Color(0xFFB4BEC2) : AppColors.ink)),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(label,
+                            style: TextStyle(
+                                fontSize: 14.5,
+                                fontWeight: FontWeight.w800,
+                                color: off ? const Color(0xFFB4BEC2) : AppColors.ink)),
+                        Text(off ? '—' : _routes[i].duration,
+                            style: const TextStyle(fontSize: 11, color: AppColors.soft)),
+                      ],
+                    ),
                   ),
                 ),
               );
             }),
-        ]),
-      );
+          ),
+      ]);
 
   bool get _bikeLike => _rv == Vehicle.bike || _rv == Vehicle.ebike || _rv == Vehicle.scooter;
 
