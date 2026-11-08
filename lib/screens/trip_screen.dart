@@ -66,7 +66,8 @@ class _RoutePlannerState extends State<RoutePlanner> {
   final List<(String, LatLng)> _via = [];
   late Vehicle _rv = widget.myVehicle ?? Vehicle.bike; // the routes are made for this vehicle // stops added with the ≡+ button
   String _variant = 'standard'; // standard / shared / passenger / cargo (chips under the destination card)
-  bool _marked = false; // "Only bike marked": only marked, paved bike ways
+  bool _marked = false; // "Bike line": only marked, paved bike ways
+  bool _vehiclePicked = false; // the vehicle chips appear only after a vehicle is tapped below
   // Destination is an address (not one of our parking places): suggest a rack 300 m or closer.
   Place? _rack;
   List<LatLng> _walk = const [];
@@ -266,8 +267,12 @@ class _RoutePlannerState extends State<RoutePlanner> {
                             myVehicle: widget.myVehicle,
                             // tap a vehicle: the routes are made again for it (moped and motorcycle use roads)
                             onSelected: (v) {
-                              if (v == _rv) return;
+                              if (v == _rv) {
+                                if (!_vehiclePicked) setState(() => _vehiclePicked = true);
+                                return;
+                              }
                               setState(() {
+                                _vehiclePicked = true;
                                 _rv = v;
                                 _variant = 'standard';
                                 if (!_bikeLike) _marked = false;
@@ -484,22 +489,24 @@ class _RoutePlannerState extends State<RoutePlanner> {
                           setState(() => _sel = i);
                           _fit();
                         },
+                  // the same look as the map chips (Rack, Parking…), only thinner
                   child: AnimatedContainer(
                     duration: const Duration(milliseconds: 180),
-                    height: 24,
+                    height: 26,
                     alignment: Alignment.center,
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    padding: const EdgeInsets.symmetric(horizontal: 14),
                     decoration: BoxDecoration(
-                      color: on ? AppColors.ink : Colors.white,
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: on ? AppColors.ink : AppColors.line, width: 1),
+                      color: on ? AppColors.slateTint : Colors.white,
+                      borderRadius: BorderRadius.circular(13),
+                      border: Border.all(color: on ? AppColors.primary : Colors.transparent, width: 1.3),
+                      boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 5, offset: Offset(0, 1))],
                     ),
                     child: Text(label,
                         style: TextStyle(
-                            fontSize: 12,
+                            fontSize: 12.5,
                             height: 1,
-                            fontWeight: on ? FontWeight.w700 : FontWeight.w500,
-                            color: off ? const Color(0xFFB4BEC2) : (on ? Colors.white : AppColors.ink))),
+                            fontWeight: FontWeight.w700,
+                            color: off ? const Color(0xFFB4BEC2) : AppColors.ink)),
                   ),
                 ),
               );
@@ -520,6 +527,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
         ('trailer', _) => ('Trailer', 'assets/vehicles/opt_tr.png'),
         ('cargo', Vehicle.scooter) => ('Cargo basket', 'assets/vehicles/opt_sc.png'),
         ('cargo', Vehicle.moped) => ('Cargo delivery', 'assets/vehicles/opt_cm.png'),
+        ('cargo', Vehicle.moto) => ('Top box & bags', 'assets/vehicles/opt_mc.png'),
         _ => ('Cargo box', 'assets/vehicles/opt_cb.png'),
       };
 
@@ -552,7 +560,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
     Widget look(String v) => Image.asset(_variantLook(v).$2,
         height: 18, errorBuilder: (_, __, ___) => const Icon(Icons.pedal_bike, size: 16));
 
-    final variants = routeVariants[_rv.name] ?? const <String>[];
+    final variants = _vehiclePicked ? (routeVariants[_rv.name] ?? const <String>[]) : const <String>[];
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(children: [
@@ -561,7 +569,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
             setState(() => _variant = _variant == v ? 'standard' : v);
             _calc();
           }),
-        if (_bikeLike)
+        if (_bikeLike || !_vehiclePicked)
           chip('Bike line', const BikeRoadIcon(size: 16), _marked, () {
             setState(() => _marked = !_marked);
             _calc();

@@ -210,7 +210,7 @@ const routeVariants = {
   'ebike': ['two', 'delivery', 'cargo', 'trailer'],
   'scooter': ['cargo'],
   'moped': ['cargo'],
-  'moto': <String>[],
+  'moto': ['cargo'],
 };
 
 (String, Map<String, dynamic>) _costing(String vehicle, String mode, {String variant = 'standard'}) {
@@ -254,6 +254,10 @@ const routeVariants = {
         opts['use_hills'] = 0.05;
         opts['cycling_speed'] = 12;
     }
+  } else if (c == 'motorcycle' && variant == 'cargo') {
+    // top box & side bags: wider, heavier: fewer highways, calmer roads
+    opts['use_highways'] = (opts['use_highways'] as num).toDouble() * 0.6;
+    opts['use_trails'] = 0.0;
   } else if (c == 'motor_scooter' && variant == 'cargo') {
     opts['use_primary'] = 0.1;
     opts['use_hills'] = 0.2;
