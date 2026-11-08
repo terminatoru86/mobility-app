@@ -203,13 +203,14 @@ Future<RouteResult?> bikeRoute(List<LatLng> via, {String vehicle = 'bike'}) asyn
 /// Each vehicle has its own way: bike and e-bike on bike paths, e-scooter like a slow city bike,
 /// moped on smaller roads (no highways, max ~45 km/h), motorcycle on all roads.
 /// [vehicle]: 'bike', 'ebike', 'scooter', 'moped', 'moto'.
-/// Route variants, chosen under the destination card (safe routes for what the rider carries).
+/// Route variants, chosen under the destination card (what the rider rides / carries).
+/// No chip chosen = 'standard' (Fast / Balanced / Quiet). A chosen chip gives one route, the safest for it.
 const routeVariants = {
-  'bike': ['standard', 'shared', 'passenger', 'cargo'],
-  'ebike': ['standard', 'shared', 'passenger', 'cargo'],
-  'scooter': ['standard', 'shared'],
-  'moped': ['standard', 'shared', 'passenger'],
-  'moto': ['standard', 'passenger'],
+  'bike': ['ebike', 'two', 'delivery', 'cargo', 'trailer'],
+  'ebike': ['two', 'delivery', 'cargo', 'trailer'],
+  'scooter': ['cargo'],
+  'moped': ['cargo'],
+  'moto': <String>[],
 };
 
 (String, Map<String, dynamic>) _costing(String vehicle, String mode, {String variant = 'standard'}) {
@@ -217,36 +218,45 @@ const routeVariants = {
   if (mode == 'Marked') {
     return ('bicycle', {
       'bicycle_type': 'Road',
-      'cycling_speed': vehicle == 'scooter' ? 18 : 16,
+      'cycling_speed': variant == 'ebike' || vehicle == 'ebike' ? 22 : (vehicle == 'scooter' ? 18 : 16),
       'use_roads': 0.0,
       'use_living_streets': 0.1,
       'avoid_bad_surfaces': 1.0,
       'use_hills': 0.3,
     });
   }
-  final (c, o) = _baseCosting(vehicle, mode);
+  // an e-bike chosen under a bike: the e-bike's speed and hills
+  final v = variant == 'ebike' ? 'ebike' : vehicle;
+  final (c, o) = _baseCosting(v, mode);
   final opts = Map<String, dynamic>.from(o);
+  double roads(double max) => math.min((opts['use_roads'] as num? ?? max).toDouble(), max);
   if (c == 'bicycle') {
     switch (variant) {
-      case 'shared': // heavier share bike / share scooter: city bike, a bit slower
-        opts['bicycle_type'] = 'City';
-        opts['cycling_speed'] = 15;
-      case 'passenger': // child seat or passenger: calm streets, smooth surface, few hills
-        opts['use_roads'] = math.min((opts['use_roads'] as num).toDouble(), 0.25);
+      case 'two': // two people (child seat, tandem): calm streets, smooth, few hills
+        opts['use_roads'] = roads(0.2);
         opts['avoid_bad_surfaces'] = 0.8;
         opts['use_hills'] = 0.15;
         opts['cycling_speed'] = 14;
-      case 'cargo': // cargo bike / trailer: wide, smooth, flat; avoids rough paths
+      case 'delivery': // delivery rider: steady and safe, not the slowest
+        opts['use_roads'] = roads(0.35);
+        opts['avoid_bad_surfaces'] = 0.6;
+        opts['cycling_speed'] = 17;
+      case 'cargo': // cargo bike / scooter with a load: wide, smooth, flat
         opts['bicycle_type'] = 'City';
-        opts['use_roads'] = math.min((opts['use_roads'] as num).toDouble(), 0.35);
+        opts['use_roads'] = roads(0.3);
         opts['avoid_bad_surfaces'] = 0.9;
         opts['use_hills'] = 0.1;
-        opts['cycling_speed'] = 13;
+        opts['cycling_speed'] = vehicle == 'scooter' ? 15 : 13;
+      case 'trailer': // trailer behind: the flattest and smoothest, no rough paths
+        opts['bicycle_type'] = 'City';
+        opts['use_roads'] = roads(0.25);
+        opts['avoid_bad_surfaces'] = 1.0;
+        opts['use_hills'] = 0.05;
+        opts['cycling_speed'] = 12;
     }
-  } else if (variant == 'passenger') {
-    if (c == 'motorcycle') opts['use_highways'] = (opts['use_highways'] as num).toDouble() * 0.7;
-    if (c == 'motor_scooter') opts['use_hills'] = 0.3;
-  } else if (variant == 'shared' && c == 'motor_scooter') {
+  } else if (c == 'motor_scooter' && variant == 'cargo') {
+    opts['use_primary'] = 0.1;
+    opts['use_hills'] = 0.2;
     opts['top_speed'] = 40;
   }
   return (c, opts);
@@ -265,7 +275,12 @@ const routeVariants = {
 
 Future<List<RouteResult>> _valhallaRoutes(List<LatLng> via, String vehicle,
     {String variant = 'standard', bool markedOnly = false}) async {
-  final modes = markedOnly ? const ['Marked'] : const ['Fast', 'Balanced', 'Quiet'];
+  // a chip chosen: one route, the safest ('Safe' = calmest settings); none: Fast / Balanced / Quiet
+  final modes = markedOnly
+      ? const ['Marked']
+      : variant != 'standard'
+          ? const ['Safe']
+          : const ['Fast', 'Balanced', 'Quiet'];
   final out = <RouteResult>[];
   await Future.wait(modes.map((mode) async {
     final (costing, opts) = _costing(vehicle, mode, variant: variant);
@@ -308,7 +323,7 @@ Future<List<RouteResult>> _valhallaRoutes(List<LatLng> via, String vehicle,
     }
   }));
   // keep Fast / Balanced / Quiet order; drop a route identical to another one
-  const order = ['Marked', 'Fast', 'Balanced', 'Quiet'];
+  const order = ['Marked', 'Safe', 'Fast', 'Balanced', 'Quiet'];
   out.sort((a, b) => order.indexOf(a.label).compareTo(order.indexOf(b.label)));
   final uniq = <RouteResult>[];
   for (final r in out) {

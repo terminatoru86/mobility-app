@@ -280,10 +280,10 @@ class _RoutePlannerState extends State<RoutePlanner> {
                         Expanded(flex: 2, child: FactTile(r.distance, 'distance')),
                       ]),
                       // "Only bike marked": one route on marked bike ways, no Fast/Balanced/Quiet, no summary
-                      if (!_marked) ...[const SizedBox(height: 8), _segmented()],
+                      if (!_oneRoute) ...[const SizedBox(height: 8), _segmented()],
                       const SizedBox(height: 8),
                       _nearCard(r),
-                      if (!_marked) ...[const SizedBox(height: 8), _summaryCard(r)],
+                      if (!_oneRoute) ...[const SizedBox(height: 8), _summaryCard(r)],
                     ],
                   ]),
                 ),
@@ -467,14 +467,10 @@ class _RoutePlannerState extends State<RoutePlanner> {
       );
 
   // ── Fast / Balanced / Quiet: thin segmented control ──
-  /// Fast / Balanced / Quiet: three small pills side by side (not the whole width).
+  /// Fast / Balanced / Quiet: three thin pills side by side, text only.
   Widget _segmented() => Center(
         child: Row(mainAxisSize: MainAxisSize.min, children: [
-          for (final (label, icon) in const [
-            ('Fast', Icons.bolt_rounded),
-            ('Balanced', Icons.balance_rounded),
-            ('Quiet', Icons.spa_outlined),
-          ])
+          for (final label in const ['Fast', 'Balanced', 'Quiet'])
             Builder(builder: (_) {
               final i = _routes.indexWhere((x) => x.label == label);
               final on = i == _sel && i >= 0;
@@ -490,22 +486,20 @@ class _RoutePlannerState extends State<RoutePlanner> {
                         },
                   child: AnimatedContainer(
                     duration: const Duration(milliseconds: 180),
-                    height: 30,
-                    padding: const EdgeInsets.symmetric(horizontal: 11),
+                    height: 24,
+                    alignment: Alignment.center,
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
                     decoration: BoxDecoration(
                       color: on ? AppColors.ink : Colors.white,
-                      borderRadius: BorderRadius.circular(15),
-                      border: Border.all(color: on ? AppColors.ink : AppColors.line, width: 1.2),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: on ? AppColors.ink : AppColors.line, width: 1),
                     ),
-                    child: Row(mainAxisSize: MainAxisSize.min, children: [
-                      Icon(icon, size: 15, color: off ? AppColors.line : (on ? Colors.white : AppColors.soft)),
-                      const SizedBox(width: 4),
-                      Text(label,
-                          style: TextStyle(
-                              fontSize: 12.5,
-                              fontWeight: on ? FontWeight.w800 : FontWeight.w600,
-                              color: off ? const Color(0xFFB4BEC2) : (on ? Colors.white : AppColors.ink))),
-                    ]),
+                    child: Text(label,
+                        style: TextStyle(
+                            fontSize: 12,
+                            height: 1,
+                            fontWeight: on ? FontWeight.w700 : FontWeight.w500,
+                            color: off ? const Color(0xFFB4BEC2) : (on ? Colors.white : AppColors.ink))),
                   ),
                 ),
               );
@@ -515,57 +509,66 @@ class _RoutePlannerState extends State<RoutePlanner> {
 
   bool get _bikeLike => _rv == Vehicle.bike || _rv == Vehicle.ebike || _rv == Vehicle.scooter;
 
+  /// One route only (no Fast / Balanced / Quiet, no trip summary): Bike line or a chip chosen.
+  bool get _oneRoute => _marked || _variant != 'standard';
+
   static const _variantLook = {
-    'standard': ('Standard', Icons.pedal_bike_rounded),
-    'shared': ('Shared', Icons.swap_horiz_rounded),
-    'passenger': ('Passenger', Icons.person_add_alt_1_rounded),
-    'cargo': ('Cargo / trailer', Icons.local_shipping_outlined),
+    'ebike': ('E-bike', null),
+    'two': ('2 people', Icons.people_alt_outlined),
+    'delivery': ('Delivery', Icons.delivery_dining_outlined),
+    'cargo': ('Cargo', Icons.inventory_2_outlined),
+    'trailer': ('Trailer', Icons.rv_hookup_outlined),
   };
 
-  /// Under the destination card, like the map chips: "Only bike marked" (bike ways only) and the
-  /// variants of the chosen vehicle (standard, shared, with a passenger, cargo bike / trailer) for safe routes.
+  /// Under the destination card, like the map chips, for the vehicle chosen below:
+  /// bike: E-bike · 2 people · Delivery · Cargo · Trailer; scooter: Cargo; moped: Cargo; and last, Bike line.
+  /// A chip chosen gives one route, the safest for it. Tap it again: back to Fast / Balanced / Quiet.
   Widget _variantChips() {
     Widget chip(String text, Widget icon, bool on, VoidCallback onTap, {Color? accent, Color? tint}) => Padding(
           padding: const EdgeInsets.only(right: 6),
           child: GestureDetector(
             onTap: onTap,
             child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 7),
+              height: 30,
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               decoration: BoxDecoration(
                 color: on ? (tint ?? AppColors.slateTint) : Colors.white,
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: on ? (accent ?? AppColors.primary) : Colors.transparent, width: 1.5),
-                boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 2))],
+                borderRadius: BorderRadius.circular(15),
+                border: Border.all(color: on ? (accent ?? AppColors.primary) : Colors.transparent, width: 1.3),
+                boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 5, offset: Offset(0, 1))],
               ),
               child: Row(mainAxisSize: MainAxisSize.min, children: [
                 icon,
                 const SizedBox(width: 5),
-                Text(text, style: TextStyle(fontWeight: FontWeight.w700, fontSize: 13, color: on ? (accent ?? AppColors.ink) : AppColors.ink)),
+                Text(text, style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12.5, color: on ? (accent ?? AppColors.ink) : AppColors.ink)),
               ]),
             ),
           ),
         );
-    final variants = routeVariants[_rv.name] ?? const ['standard'];
+    // the vehicle as in the profile (its picture), with a small sign for what it carries
+    Widget look(String v) {
+      final base = v == 'ebike' ? Vehicle.ebike : _rv;
+      final sign = _variantLook[v]!.$2;
+      return Row(mainAxisSize: MainAxisSize.min, children: [
+        Image.asset(base.asset, height: 16, errorBuilder: (_, __, ___) => const Icon(Icons.pedal_bike, size: 16)),
+        if (sign != null) ...[const SizedBox(width: 2), Icon(sign, size: 14, color: AppColors.primary)],
+      ]);
+    }
+
+    final variants = routeVariants[_rv.name] ?? const <String>[];
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(children: [
+        for (final v in variants)
+          chip(_variantLook[v]!.$1, look(v), _variant == v, () {
+            setState(() => _variant = _variant == v ? 'standard' : v);
+            _calc();
+          }),
         if (_bikeLike)
-          chip('Only bike marked', const BikeRoadIcon(size: 16), _marked, () {
+          chip('Bike line', const BikeRoadIcon(size: 16), _marked, () {
             setState(() => _marked = !_marked);
             _calc();
           }, accent: AppColors.greenDark, tint: AppColors.greenTint),
-        for (final v in variants)
-          chip(
-            _variantLook[v]!.$1,
-            Icon(v == 'standard' && !_bikeLike ? Icons.two_wheeler_rounded : _variantLook[v]!.$2,
-                size: 16, color: AppColors.primary),
-            _variant == v,
-            () {
-              if (_variant == v) return;
-              setState(() => _variant = v);
-              _calc();
-            },
-          ),
       ]),
     );
   }
