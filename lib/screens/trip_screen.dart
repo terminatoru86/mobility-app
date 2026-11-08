@@ -512,13 +512,16 @@ class _RoutePlannerState extends State<RoutePlanner> {
   /// One route only (no Fast / Balanced / Quiet, no trip summary): Bike line or a chip chosen.
   bool get _oneRoute => _marked || _variant != 'standard';
 
-  static const _variantLook = {
-    'ebike': ('E-bike', null),
-    'two': ('2 people', Icons.people_alt_outlined),
-    'delivery': ('Delivery', Icons.delivery_dining_outlined),
-    'cargo': ('Cargo', Icons.inventory_2_outlined),
-    'trailer': ('Trailer', Icons.rv_hookup_outlined),
-  };
+  /// The pictures and names from the profile (My vehicle options).
+  (String, String) _variantLook(String v) => switch ((v, _rv)) {
+        ('ebike', _) => ('E-bike', 'assets/vehicles/opt_e.png'),
+        ('two', _) => ('2 seats', 'assets/vehicles/opt_c2.png'),
+        ('delivery', _) => ('Delivery', 'assets/vehicles/opt_cd.png'),
+        ('trailer', _) => ('Trailer', 'assets/vehicles/opt_tr.png'),
+        ('cargo', Vehicle.scooter) => ('Cargo basket', 'assets/vehicles/opt_sc.png'),
+        ('cargo', Vehicle.moped) => ('Cargo delivery', 'assets/vehicles/opt_cm.png'),
+        _ => ('Cargo box', 'assets/vehicles/opt_cb.png'),
+      };
 
   /// Under the destination card, like the map chips, for the vehicle chosen below:
   /// bike: E-bike · 2 people · Delivery · Cargo · Trailer; scooter: Cargo; moped: Cargo; and last, Bike line.
@@ -545,22 +548,16 @@ class _RoutePlannerState extends State<RoutePlanner> {
             ),
           ),
         );
-    // the vehicle as in the profile (its picture), with a small sign for what it carries
-    Widget look(String v) {
-      final base = v == 'ebike' ? Vehicle.ebike : _rv;
-      final sign = _variantLook[v]!.$2;
-      return Row(mainAxisSize: MainAxisSize.min, children: [
-        Image.asset(base.asset, height: 16, errorBuilder: (_, __, ___) => const Icon(Icons.pedal_bike, size: 16)),
-        if (sign != null) ...[const SizedBox(width: 2), Icon(sign, size: 14, color: AppColors.primary)],
-      ]);
-    }
+    // the vehicle picture from the profile
+    Widget look(String v) => Image.asset(_variantLook(v).$2,
+        height: 18, errorBuilder: (_, __, ___) => const Icon(Icons.pedal_bike, size: 16));
 
     final variants = routeVariants[_rv.name] ?? const <String>[];
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(children: [
         for (final v in variants)
-          chip(_variantLook[v]!.$1, look(v), _variant == v, () {
+          chip(_variantLook(v).$1, look(v), _variant == v, () {
             setState(() => _variant = _variant == v ? 'standard' : v);
             _calc();
           }),
