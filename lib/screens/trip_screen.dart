@@ -101,7 +101,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
   Future<void> _calc() async {
     setState(() => _loading = true);
     final r = await bikeRoutes([_from, for (final v in _via) v.$2, _to],
-        vehicle: _rv.name, variant: _variant, markedOnly: _marked && _bikeLike);
+        vehicle: _rv.name, variant: _variant, markedOnly: _marked && (_bikeLike || !_vehiclePicked));
     if (!mounted) return;
     setState(() {
       _routes = r;
