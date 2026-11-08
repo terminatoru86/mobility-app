@@ -37,6 +37,8 @@ jobs:
           ffmpeg -y -loglevel error -ss "${{ inputs.start }}" -i in.mp4 -t 3 -an \
             -vf "scale=-2:1280,crop=720:1280,fps=30" -c:v libx264 -profile:v main -pix_fmt yuv420p \
             -crf 27 -preset slow -movflags +faststart "assets/splash/${{ inputs.city }}.mp4"
+          # its first picture: shown instantly at start, before the video plays
+          ffmpeg -y -loglevel error -i "assets/splash/${{ inputs.city }}.mp4" -frames:v 1 -q:v 4 "assets/splash/${{ inputs.city }}.jpg"
           ls -la assets/splash/
       - name: Add the city
         run: |

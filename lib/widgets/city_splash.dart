@@ -19,36 +19,47 @@ const kSplashCities = <String, LatLng>{
 
 class CitySplash extends StatefulWidget {
   final Duration show;
-  const CitySplash({super.key, this.show = const Duration(milliseconds: 2600)});
+  const CitySplash({super.key, this.show = const Duration(milliseconds: 3000)});
   @override
   State<CitySplash> createState() => _CitySplashState();
 }
 
 class _CitySplashState extends State<CitySplash> {
   VideoPlayerController? _video;
+  String? _poster; // the video's first picture: shown at once, before the video starts
   bool _fading = false;
   bool _gone = false;
 
   @override
   void initState() {
     super.initState();
+    _poster = _cityFor(userPos);
+    if (_poster != null) _poster = 'assets/splash/$_poster.jpg';
     _start();
-    Timer(widget.show, () {
-      if (mounted) setState(() => _fading = true);
-    });
+    // the clock starts when the picture is on screen; at most 4 s in all, even if the video is slow
+    Timer(widget.show, _fade);
   }
 
-  Future<void> _start() async {
+  void _fade() {
+    if (mounted && !_fading) setState(() => _fading = true);
+  }
+
+  static String? _cityFor(LatLng p) {
     const d = Distance();
     String? best;
     double bestKm = 60;
     for (final e in kSplashCities.entries) {
-      final km = d(userPos, e.value) / 1000;
+      final km = d(p, e.value) / 1000;
       if (km < bestKm) {
         bestKm = km;
         best = e.key;
       }
     }
+    return best;
+  }
+
+  Future<void> _start() async {
+    final best = _cityFor(userPos);
     if (best == null) return;
     final asset = 'assets/splash/$best.mp4';
     try {
@@ -96,6 +107,9 @@ class _CitySplashState extends State<CitySplash> {
               ),
             ),
           ),
+          // the first picture of the video, at once (no waiting)
+          if (_poster != null)
+            Image.asset(_poster!, fit: BoxFit.cover, gaplessPlayback: true, errorBuilder: (_, __, ___) => const SizedBox()),
           if (v != null && v.value.isInitialized)
             FittedBox(
               fit: BoxFit.cover,
