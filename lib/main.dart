@@ -29,10 +29,12 @@ class MobilityApp extends StatelessWidget {
         title: 'MOBIlity',
         debugShowCheckedModeBanner: false,
         theme: buildTheme(),
-        // the app starts loading right away; the city video sits on top for 2–3 s, then fades
+        // Signed in: straight to the working map. Not signed in: the app loads behind the
+        // start screen (the city, ~3.5 s), which ends with the sign-in panel.
         home: Stack(children: [
           Shell(state: state),
-          const Positioned.fill(child: Material(type: MaterialType.transparency, child: CitySplash())),
+          if (!state.hasAccount)
+            Positioned.fill(child: Material(type: MaterialType.transparency, child: CitySplash(state: state))),
         ]),
       );
 }

@@ -28,6 +28,13 @@ Future<void> showSignupInvite(BuildContext context, AppState state) async {
   }
 }
 
+/// After signing in from the start screen: which vehicle do you ride?
+Future<void> showVehicleStep(BuildContext context, AppState state) => showDialog<void>(
+      context: context,
+      barrierColor: const Color(0x660F1E24),
+      builder: (_) => _VehicleStep(state: state),
+    );
+
 class _Card extends StatelessWidget {
   final Widget badge;
   final List<Widget> children;
