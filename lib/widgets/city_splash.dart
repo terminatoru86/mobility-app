@@ -15,7 +15,7 @@ import '../theme.dart';
 /// 3. your blue route lights up along the streets (you are the blue bubble)
 /// 4. you arrive: the big green pin (4) pulses, the full ones fade
 /// 5. the last screen comes on top of that same map: our "m" logo (no tile, the map shows
-///    through), "MOBIlity", the line under it and the four vehicles.
+///    through) and "MOBIlity" in the centre; at the bottom the line and the four vehicles.
 ///
 /// The map is tilted in 3D (a camera above the city that drifts a little).
 /// No text over the city until the last screen.
@@ -92,7 +92,7 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [Colors.white, Color(0x00FFFFFF), Color(0x00FFFFFF), Colors.white],
-                      stops: [0, .22, .80, .95],
+                      stops: [0, .22, .74, .90],
                     ),
                   ),
                 ),
@@ -110,8 +110,9 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
   }
 }
 
-/// The last screen, on top of the map: a soft white glow, our "m" logo (transparent, the map
-/// shows around it), MOBIlity, the line under it, the four vehicles and Powered by.
+/// The last screen, on top of the map: a soft white glow, in the centre only our "m" logo
+/// (transparent, the map shows around it) and MOBIlity; at the bottom "A city. A ride. A free spot."
+/// and our four vehicles.
 class _EndCard extends StatelessWidget {
   const _EndCard();
   @override
@@ -128,39 +129,34 @@ class _EndCard extends StatelessWidget {
           ),
         ),
       ),
+      // in the centre: only the logo and MOBIlity
       Align(
-        alignment: const Alignment(0, -0.24),
+        alignment: const Alignment(0, -0.2),
         child: Column(mainAxisSize: MainAxisSize.min, children: [
           SvgPicture.asset('assets/brand/logo_m.svg', width: 96, height: 96),
           const SizedBox(height: 6),
           const Text('MOBIlity',
               style: TextStyle(fontSize: 38, fontWeight: FontWeight.w800, color: AppColors.ink, letterSpacing: -0.8)),
-          const SizedBox(height: 4),
-          const Text('Your city. Your ride. A free spot.', style: TextStyle(fontSize: 14, color: AppColors.soft)),
-          const SizedBox(height: 16),
-          Row(mainAxisSize: MainAxisSize.min, children: [
-            for (final v in _Veh.values)
-              Container(
-                width: 38,
-                height: 38,
-                margin: const EdgeInsets.symmetric(horizontal: 5),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  shape: BoxShape.circle,
-                  border: Border.all(color: const Color(0xFFDCE3E8)),
-                ),
-                alignment: Alignment.center,
-                child: CustomPaint(size: const Size(24, 24), painter: _VehPainter(v, AppColors.soft, 1.6)),
-              ),
-          ]),
         ]),
       ),
+      // at the bottom: the line, then our four vehicles
       Positioned(
         left: 0,
         right: 0,
-        bottom: 22 + bottom,
-        child: const Text('Powered by MOBIlity',
-            textAlign: TextAlign.center, style: TextStyle(fontSize: 11.5, color: Color(0xFF97A3A9))),
+        bottom: 26 + bottom,
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+          const Text('A city. A ride. A free spot.',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: AppColors.soft, letterSpacing: 0.2)),
+          const SizedBox(height: 14),
+          Row(mainAxisSize: MainAxisSize.min, children: [
+            for (final v in _Veh.values)
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: CustomPaint(size: const Size(34, 34), painter: _VehPainter(v, AppColors.soft, 1.5)),
+              ),
+          ]),
+        ]),
       ),
     ]);
   }
@@ -168,73 +164,108 @@ class _EndCard extends StatelessWidget {
 
 enum _Veh { bike, scooter, moped, moto }
 
-/// Our small vehicle line icons (24 x 24 units).
+/// Our vehicle line icons (24 x 24 units): bike, kick scooter, moped (Vespa style), motorcycle.
 Path _vehPath(_Veh v) {
   final p = Path();
   void c(double x, double y, double r) => p.addOval(Rect.fromCircle(center: Offset(x, y), radius: r));
   switch (v) {
     case _Veh.bike:
-      c(5.5, 16, 3.8);
-      c(18.5, 16, 3.8);
+      c(5, 17, 4);
+      c(19, 17, 4);
+      c(12, 17, 1);
       p
-        ..moveTo(5.5, 16)
-        ..lineTo(9.5, 9)
-        ..lineTo(15.5, 9)
-        ..lineTo(18.5, 16)
-        ..moveTo(9.5, 9)
-        ..lineTo(12, 16)
-        ..lineTo(15.5, 9)
-        ..moveTo(8, 6.5)
-        ..lineTo(11, 6.5)
-        ..moveTo(14.5, 6)
-        ..lineTo(15.5, 9);
+        ..moveTo(5, 17)
+        ..lineTo(10, 10.5)
+        ..lineTo(12, 17)
+        ..close()
+        ..moveTo(10, 10.5)
+        ..lineTo(16.2, 10.5)
+        ..lineTo(12, 17)
+        ..moveTo(16.2, 10.5)
+        ..lineTo(19, 17)
+        ..moveTo(16.2, 10.5)
+        ..lineTo(15.4, 7.4)
+        ..lineTo(18, 7.4)
+        ..moveTo(10, 10.5)
+        ..lineTo(9.4, 8)
+        ..moveTo(7.9, 8)
+        ..lineTo(11, 8);
     case _Veh.scooter:
-      c(5, 18, 2.6);
-      c(19, 18, 2.6);
+      c(5, 18.5, 2.6);
+      c(19, 18.5, 2.6);
       p
-        ..moveTo(5, 18)
-        ..lineTo(15.5, 18)
-        ..lineTo(18, 4.5)
-        ..moveTo(16, 4.5)
-        ..lineTo(20, 4.5);
+        ..moveTo(5.5, 16.2)
+        ..lineTo(14.5, 16.2)
+        ..quadraticBezierTo(16, 16.2, 16.8, 14.8)
+        ..moveTo(19, 18.5)
+        ..lineTo(16.2, 5)
+        ..moveTo(14.6, 5)
+        ..lineTo(18, 5);
     case _Veh.moped:
-      c(6, 17.5, 3);
-      c(18, 17.5, 3);
+      c(5.6, 18, 2.9);
+      c(18.6, 18, 2.9);
       p
-        ..moveTo(3, 15)
-        ..cubicTo(3, 11, 8, 10.5, 10.5, 12.5)
-        ..lineTo(14.5, 12.5)
-        ..lineTo(17, 6)
-        ..moveTo(15.5, 6)
-        ..lineTo(19.5, 6)
-        ..moveTo(17, 6)
-        ..lineTo(19.5, 14.5)
-        ..moveTo(5, 10)
-        ..lineTo(10.5, 10);
+        ..addPath(_vehFill(v)!, Offset.zero)
+        ..moveTo(10.4, 15.8)
+        ..lineTo(14.4, 15.8)
+        ..lineTo(16.4, 9)
+        ..cubicTo(17.8, 11.5, 18.5, 13.5, 18.6, 15)
+        ..moveTo(4.8, 10.4)
+        ..quadraticBezierTo(7.2, 9.4, 9.8, 10.4)
+        ..moveTo(16.4, 9)
+        ..lineTo(16.9, 6)
+        ..moveTo(15.3, 6)
+        ..lineTo(18.6, 6);
     case _Veh.moto:
-      c(5, 16.5, 3.6);
-      c(19, 16.5, 3.6);
+      c(5, 17, 3.8);
+      c(19, 17, 3.8);
       p
-        ..moveTo(5, 16.5)
-        ..lineTo(9, 10)
-        ..lineTo(15.5, 10)
-        ..lineTo(19, 16.5)
-        ..moveTo(9, 10)
-        ..lineTo(7, 8)
-        ..lineTo(11.5, 8)
-        ..moveTo(15.5, 10)
-        ..lineTo(17, 6.5)
-        ..lineTo(19.5, 6.5)
-        ..moveTo(10.5, 13.5)
-        ..lineTo(14, 13.5);
+        ..addPath(_vehFill(v)!, Offset.zero)
+        ..moveTo(4.4, 10.4)
+        ..lineTo(8.6, 11.2)
+        ..moveTo(5, 17)
+        ..lineTo(8.6, 11.2)
+        ..moveTo(15.2, 11.2)
+        ..lineTo(16.4, 8.4)
+        ..lineTo(19, 17)
+        ..moveTo(16.4, 8.4)
+        ..lineTo(16, 6.4)
+        ..moveTo(15.2, 6.6)
+        ..lineTo(18.2, 6)
+        ..moveTo(6.4, 14.8)
+        ..lineTo(10.4, 14.8);
   }
   return p;
+}
+
+/// The lightly filled parts: the moped's rear body, the motorcycle's tank and engine.
+Path? _vehFill(_Veh v) {
+  switch (v) {
+    case _Veh.moped:
+      return Path()
+        ..moveTo(2.8, 15.8)
+        ..cubicTo(2.8, 12.4, 5.4, 11, 9, 11.6)
+        ..lineTo(10.4, 15.8)
+        ..close();
+    case _Veh.moto:
+      return Path()
+        ..moveTo(8.6, 11.2)
+        ..lineTo(10, 8.8)
+        ..lineTo(14, 8.8)
+        ..lineTo(15.2, 11.2)
+        ..close()
+        ..addRect(const Rect.fromLTRB(10.4, 12.4, 13.8, 15.2));
+    default:
+      return null;
+  }
 }
 
 void _drawVeh(Canvas canvas, _Veh v, Offset center, double size, Color color, double stroke) {
   canvas.save();
   canvas.translate(center.dx - size / 2, center.dy - size / 2);
   canvas.scale(size / 24);
+  final fill = _vehFill(v);
+  if (fill != null) canvas.drawPath(fill, Paint()..color = color.withValues(alpha: .18));
   canvas.drawPath(
     _vehPath(v),
     Paint()
@@ -281,9 +312,9 @@ class _CityPainter extends CustomPainter {
           out.add(_Block(x0, y0, 1.5, 1.5, 0, kind: 2));
           continue;
         }
-        out.add(_Block(x0, y0, 1.4, .75, .3 + rnd() * .9));
-        out.add(_Block(x0, y0 + .9, .6, .5, .2 + rnd() * .4));
-        out.add(_Block(x0 + .8, y0 + .95, .6, .45, .15 + rnd() * .3));
+        out.add(_Block(x0 + .15, y0 + .15, 1.1, .6, .3 + rnd() * .9));
+        out.add(_Block(x0 + .15, y0 + 1.0, .45, .4, .2 + rnd() * .4));
+        out.add(_Block(x0 + .85, y0 + 1.0, .4, .35, .15 + rnd() * .3));
       }
     }
     out.sort((a, b) => (a.x0 + a.w + a.y0 + a.d).compareTo(b.x0 + b.w + b.y0 + b.d));
@@ -298,6 +329,16 @@ class _CityPainter extends CustomPainter {
     (9, 7.5, AppColors.green, '2', false),
     (4.5, 9, AppColors.red, '0', false),
     (-1.5, 6, AppColors.green, '3', false),
+    (3, 7.5, AppColors.green, '1', false),
+    (7.5, 6, AppColors.yellow, '1', false),
+    (0, 3.8, AppColors.green, '2', false),
+    (9, 1.6, AppColors.red, '0', false),
+    (10.5, 9, AppColors.green, '5', false),
+    (-3, 1.5, AppColors.yellow, '1', false),
+    (6, 10.5, AppColors.green, '2', false),
+    (1.5, 12, AppColors.yellow, '1', false),
+    (12, 4.5, AppColors.green, '3', false),
+    (4.5, 0, AppColors.green, '2', false),
     (6, 1.5, AppColors.green, '4', true),
   ];
   // the other riders: vehicle, from, to
@@ -324,7 +365,7 @@ class _CityPainter extends CustomPainter {
     // streets: soft grey bands
     final street = Paint()
       ..color = const Color(0xFFEEF2F4)
-      ..strokeWidth = s * .9;
+      ..strokeWidth = s * 1.15;
     for (var k = -9; k <= 24; k += 3) {
       canvas.drawLine(P(k.toDouble(), -12), P(k.toDouble(), 30), street);
       canvas.drawLine(P(-12, k.toDouble()), P(30, k.toDouble()), street);
