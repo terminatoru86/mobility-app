@@ -490,27 +490,31 @@ class _RoutePlannerState extends State<RoutePlanner> {
                           setState(() => _sel = i);
                           _fit();
                         },
+                  // slim: one line (name · time), same grey-paper look as the tiles above
                   child: AnimatedContainer(
                     duration: const Duration(milliseconds: 180),
-                    height: 50,
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    height: 32,
+                    alignment: Alignment.center,
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
                     decoration: BoxDecoration(
                       color: on ? Colors.white : AppColors.paper,
-                      borderRadius: BorderRadius.circular(14),
-                      border: Border.all(color: on ? AppColors.ink : Colors.transparent, width: 1.6),
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: on ? AppColors.ink : Colors.transparent, width: 1.4),
                     ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(label,
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text.rich(TextSpan(children: [
+                        TextSpan(
+                            text: label,
                             style: TextStyle(
-                                fontSize: 14.5,
+                                fontSize: 13,
                                 fontWeight: FontWeight.w800,
                                 color: off ? const Color(0xFFB4BEC2) : AppColors.ink)),
-                        Text(off ? '—' : _routes[i].duration,
-                            style: const TextStyle(fontSize: 11, color: AppColors.soft)),
-                      ],
+                        if (!off)
+                          TextSpan(
+                              text: '  ${_routes[i].duration}',
+                              style: const TextStyle(fontSize: 11.5, color: AppColors.soft)),
+                      ])),
                     ),
                   ),
                 ),
