@@ -9,6 +9,7 @@ import 'screens/map_screen.dart';
 import 'screens/other_screens.dart';
 import 'screens/routes_screen.dart';
 import 'theme.dart';
+import 'widgets/city_splash.dart';
 import 'widgets/pin.dart';
 
 Future<void> main() async {
@@ -28,7 +29,11 @@ class MobilityApp extends StatelessWidget {
         title: 'MOBIlity',
         debugShowCheckedModeBanner: false,
         theme: buildTheme(),
-        home: Shell(state: state),
+        // the app starts loading right away; the city video sits on top for 2–3 s, then fades
+        home: Stack(children: [
+          Shell(state: state),
+          const Positioned.fill(child: Material(type: MaterialType.transparency, child: CitySplash())),
+        ]),
       );
 }
 

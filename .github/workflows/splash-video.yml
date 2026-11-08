@@ -1,0 +1,56 @@
+# Adds a start-screen video for a city: downloads it, keeps 3 seconds, makes it 720x1280 without sound
+# (small, about 1 MB) and saves it as assets/splash/<city>.mp4, then adds the city to lib/widgets/city_splash.dart.
+# Use only videos we may put in an app (own footage, or a licence like Pexels / Pixabay that allows it).
+name: Splash video
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Direct link to the video file (.mp4)'
+        required: true
+      city:
+        description: 'City name, lower case, no spaces (e.g. chicago, new_york)'
+        required: true
+      lat:
+        description: 'City latitude (e.g. 41.8781)'
+        required: true
+      lon:
+        description: 'City longitude (e.g. -87.6298)'
+        required: true
+      start:
+        description: 'Start at second'
+        default: '0'
+
+permissions:
+  contents: write
+
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Download and cut
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          curl -sSL --retry 3 -A "Mozilla/5.0" -o in.mp4 "${{ inputs.url }}"
+          ffmpeg -y -loglevel error -ss "${{ inputs.start }}" -i in.mp4 -t 3 -an \
+            -vf "scale=-2:1280,crop=720:1280,fps=30" -c:v libx264 -profile:v main -pix_fmt yuv420p \
+            -crf 27 -preset slow -movflags +faststart "assets/splash/${{ inputs.city }}.mp4"
+          ls -la assets/splash/
+      - name: Add the city
+        run: |
+          f=lib/widgets/city_splash.dart
+          c="${{ inputs.city }}"
+          if ! grep -q "'$c':" $f; then
+            sed -i "s|^  'chicago': LatLng(41.8781, -87.6298),|&\n  '$c': LatLng(${{ inputs.lat }}, ${{ inputs.lon }}),|" $f
+            [ "$c" = chicago ] && true
+          fi
+          grep -n "LatLng(" $f
+      - name: Save
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add assets/splash lib/widgets/city_splash.dart
+          git commit -m "Splash video for ${{ inputs.city }}" || exit 0
+          git pull --rebase && git push

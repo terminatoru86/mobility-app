@@ -17,6 +17,7 @@ dependencies:
   geolocator: ^13.0.2
   qr_flutter: ^4.1.0
   url_launcher: ^6.3.1
+  video_player: ^2.9.2
   flutter_tts: ^4.2.0
   image_picker: ^1.1.2
   path_provider: ^2.1.4
@@ -49,5 +50,6 @@ flutter:
     - assets/glyphs/
     - assets/vehicles/
     - assets/brand/
+    - assets/splash/
     - assets/osm/
     - assets/osm/tiles/
