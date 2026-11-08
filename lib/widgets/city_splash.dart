@@ -28,7 +28,7 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
     (0.22, 0.24, AppColors.green),
     (0.74, 0.20, AppColors.yellow),
     (0.16, 0.70, AppColors.red),
-    (0.80, 0.66, AppColors.green),
+    (0.84, 0.76, AppColors.green),
     (0.58, 0.82, AppColors.yellow),
     (0.36, 0.86, AppColors.green),
   ];
