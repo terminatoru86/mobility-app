@@ -26,7 +26,7 @@ import 'pin.dart';
 /// No text over the city until the last screen.
 class CitySplash extends StatefulWidget {
   final Duration show;
-  const CitySplash({super.key, this.show = const Duration(milliseconds: 3200)});
+  const CitySplash({super.key, this.show = const Duration(milliseconds: 5500)});
   @override
   State<CitySplash> createState() => _CitySplashState();
 }
@@ -86,30 +86,54 @@ const _riders = <(_Veh, Offset, Offset)>[
 ];
 
 class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateMixin {
+  // one slow, continuous take (like a short video): ~5 s, then it fades into the app
   late final AnimationController _a =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 2700))..forward();
+      AnimationController(vsync: this, duration: const Duration(milliseconds: 5200));
   bool _fading = false;
   bool _gone = false;
 
+  /// The city drawn once into a picture (an image), so every frame only moves the image:
+  /// that keeps the camera move smooth.
+  ui.Image? _city;
+  Size? _citySize;
+  bool _preparing = false;
+
   @override
-  void initState() {
-    super.initState();
+  void dispose() {
+    _a.dispose();
+    _city?.dispose();
+    super.dispose();
+  }
+
+  Future<void> _prepare(_Geo g, Size size, double dpr) async {
+    if (_preparing) return;
+    _preparing = true;
+    final rec = ui.PictureRecorder();
+    final canvas = Canvas(rec)..scale(dpr);
+    _CityPainter(g).drawCity(canvas, size);
+    final pic = rec.endRecording();
+    final img = await pic.toImage((size.width * dpr).round(), (size.height * dpr).round());
+    pic.dispose();
+    if (!mounted) {
+      img.dispose();
+      return;
+    }
+    setState(() {
+      _city = img;
+      _citySize = size;
+    });
+    _a.forward();
     Timer(widget.show, () {
       if (mounted) setState(() => _fading = true);
     });
   }
 
-  @override
-  void dispose() {
-    _a.dispose();
-    super.dispose();
-  }
-
-  /// The 3D camera: perspective and tilt over the flat city, drifting slightly with time.
+  /// The 3D camera: perspective and tilt over the flat city. It glides slowly the whole time,
+  /// from a little higher and closer down to the final view.
   static Matrix4 _camera(double w, double h, double t) {
-    final e = Curves.easeInOut.transform(t);
-    final tilt = 0.60 + 0.08 * e;
-    final zoom = 1.40 + 0.08 * e;
+    final e = Curves.easeInOutSine.transform(t);
+    final tilt = 0.74 - 0.12 * e;
+    final zoom = 1.62 - 0.18 * e;
     final po = Offset(w / 2, h * 0.30), to = Offset(w / 2, h * 0.55);
     return Matrix4.identity()
       ..translate(po.dx, po.dy)
@@ -123,11 +147,13 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     if (_gone) return const SizedBox.shrink();
+    final dpr = MediaQuery.of(context).devicePixelRatio;
     return IgnorePointer(
       ignoring: _fading,
       child: AnimatedOpacity(
         opacity: _fading ? 0 : 1,
-        duration: const Duration(milliseconds: 450),
+        duration: const Duration(milliseconds: 700),
+        curve: Curves.easeInOut,
         onEnd: () {
           if (_fading && mounted) setState(() => _gone = true);
         },
@@ -135,20 +161,26 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
           color: Colors.white,
           child: LayoutBuilder(builder: (context, box) {
             final w = box.maxWidth, h = box.maxHeight;
+            final size = Size(w, h);
             final g = _Geo(w, h);
+            if (_city == null || _citySize != size) {
+              // plain white while the city is drawn once (a fraction of a second)
+              WidgetsBinding.instance.addPostFrameCallback((_) => _prepare(g, size, dpr));
+              return const SizedBox.expand();
+            }
             return AnimatedBuilder(
               animation: _a,
               builder: (context, _) {
                 final t = _a.value;
                 final m = _camera(w, h, t);
                 Offset screen(double x, double y) => MatrixUtils.transformPoint(m, g.p(x, y));
-                final cityIn = Curves.easeOut.transform(_seg(t, 0, 0.16));
-                final pinsIn = _seg(t, 0.12, 0.40);
-                final routeF = Curves.easeInOut.transform(_seg(t, 0.30, 0.68));
-                final arrive = _seg(t, 0.66, 0.80);
-                final endIn = Curves.easeOutCubic.transform(_seg(t, 0.78, 1.0));
+                // timeline (0..1 of ~5.2 s)
+                final cityIn = Curves.easeInOutSine.transform(_seg(t, 0.0, 0.22)); // from white, slowly
+                final pinsIn = _seg(t, 0.14, 0.42);
+                final routeF = Curves.easeInOutSine.transform(_seg(t, 0.32, 0.78));
+                final arrive = _seg(t, 0.76, 0.92);
+                final ride = Curves.easeInOutSine.transform(_seg(t, 0.10, 1.0));
 
-                // the pins, upright on the tilted map, back to front
                 final pins = <(Offset, int)>[
                   for (var i = 0; i < _pins.length; i++) (screen(_pins[i].$1, _pins[i].$2), i),
                 ]..sort((a, b) => a.$1.dy.compareTo(b.$1.dy));
@@ -158,44 +190,47 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
                     opacity: cityIn,
                     child: Transform(
                       transform: m,
+                      filterQuality: FilterQuality.medium,
                       child: Stack(fit: StackFit.expand, children: [
-                        RepaintBoundary(child: CustomPaint(painter: _CityPainter(g))),
+                        RawImage(image: _city, fit: BoxFit.fill, filterQuality: FilterQuality.medium),
                         CustomPaint(painter: _RoutePainter(g, routeF, arrive)),
                       ]),
                     ),
                   ),
-                  // pins: the same pins as on the app map (each pops in shortly after the one before)
+                  // pins: the same pins as on the app map, coming in gently one after another
                   for (final (pt, i) in pins)
                     Builder(builder: (_) {
-                      final k = Curves.easeOutBack.transform(_seg(pinsIn, i / _pins.length * 0.6, i / _pins.length * 0.6 + 0.4));
+                      final start = i / _pins.length * 0.55;
+                      final k = Curves.easeOutCubic.transform(_seg(pinsIn, start, start + 0.45));
                       if (k <= 0) return const SizedBox.shrink();
                       final place = _pins[i].$3;
                       final depth = (0.48 + 0.34 * (pt.dy / h)).clamp(0.45, 0.85);
-                      final dim = i != _arriveAt && arrive > 0 ? 1 - 0.55 * arrive : 1.0;
-                      final full = place.status == Status.full && routeF > .3 ? .55 : 1.0;
+                      final dim = i != _arriveAt && arrive > 0 ? 1 - 0.5 * arrive : 1.0;
+                      final full = place.status == Status.full ? 1 - 0.45 * _seg(routeF, .2, .5) : 1.0;
+                      final pulse = i == _arriveAt ? 1 + 0.16 * math.sin(arrive * math.pi) : 1.0;
                       return Positioned(
                         left: pt.dx - PlacePin.width / 2,
                         top: pt.dy - PlacePin.height,
                         child: Opacity(
-                          opacity: (dim * full).clamp(0.0, 1.0),
+                          opacity: (k * dim * full).clamp(0.0, 1.0),
                           child: Transform.scale(
-                            scale: depth * k * (i == _arriveAt ? 1 + 0.18 * math.sin(arrive * math.pi) : 1),
+                            scale: depth * (0.7 + 0.3 * k) * pulse,
                             alignment: Alignment.bottomCenter,
                             child: PlacePin(place: place, animate: false, detail: PinDetail.full, showRating: false),
                           ),
                         ),
                       );
                     }),
-                  // the riders and you
+                  // the riders (moving the whole time) and you, on your route
                   CustomPaint(
                     painter: _RiderPainter(
                       t: t,
-                      show: _seg(t, 0.14, 0.30),
+                      show: Curves.easeOut.transform(_seg(t, 0.16, 0.34)),
                       me: _routePoint(routeF, screen),
                       others: [
                         for (final (v, a, b) in _riders)
                           (v, () {
-                            final q = Offset.lerp(a, b, Curves.easeInOut.transform(_seg(t, 0.22, 0.74)))!;
+                            final q = Offset.lerp(a, b, ride)!;
                             return screen(q.dx, q.dy);
                           }()),
                       ],
@@ -214,11 +249,8 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
                       ),
                     ),
                   ),
-                  if (endIn > 0)
-                    Opacity(
-                      opacity: endIn,
-                      child: Transform.scale(scale: 0.96 + 0.04 * endIn, child: const _EndCard()),
-                    ),
+                  // the logo and MOBIlity: they come in while your route is drawn, letter by letter
+                  _Title(t: t),
                 ]);
               },
             );
@@ -239,53 +271,93 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
   }
 }
 
-/// The last screen, on top of the map: a soft white glow, in the centre only our "m" logo
-/// (transparent, the map shows around it) and MOBIlity; at the bottom one short line and
-/// our four vehicles.
-class _EndCard extends StatelessWidget {
-  const _EndCard();
+/// On top of the map: a soft white glow, in the centre only our "m" logo (transparent, the
+/// map shows around it) and MOBIlity, whose letters appear one by one while the blue route
+/// is being drawn; at the bottom one short line and our four vehicles.
+class _Title extends StatelessWidget {
+  final double t;
+  const _Title({required this.t});
+
+  static const _word = 'MOBIlity';
+
   @override
   Widget build(BuildContext context) {
     final bottom = MediaQuery.of(context).padding.bottom;
-    return Stack(fit: StackFit.expand, children: [
-      const DecoratedBox(
-        decoration: BoxDecoration(
-          gradient: RadialGradient(
-            center: Alignment(0, -0.2),
-            radius: 0.75,
-            colors: [Color(0xE6FFFFFF), Color(0xB3FFFFFF), Color(0x00FFFFFF)],
-            stops: [0, .45, 1],
+    final glow = Curves.easeInOutSine.transform(_seg(t, 0.30, 0.55));
+    final logo = Curves.easeOutCubic.transform(_seg(t, 0.32, 0.50));
+    final foot = Curves.easeOutCubic.transform(_seg(t, 0.72, 0.90));
+    return IgnorePointer(
+      child: Stack(fit: StackFit.expand, children: [
+        Opacity(
+          opacity: glow,
+          child: const DecoratedBox(
+            decoration: BoxDecoration(
+              gradient: RadialGradient(
+                center: Alignment(0, -0.2),
+                radius: 0.75,
+                colors: [Color(0xE6FFFFFF), Color(0xB3FFFFFF), Color(0x00FFFFFF)],
+                stops: [0, .45, 1],
+              ),
+            ),
           ),
         ),
-      ),
-      Align(
-        alignment: const Alignment(0, -0.2),
-        child: Column(mainAxisSize: MainAxisSize.min, children: [
-          SvgPicture.asset('assets/brand/logo_m.svg', width: 96, height: 96),
-          const SizedBox(height: 6),
-          const Text('MOBIlity',
-              style: TextStyle(fontSize: 38, fontWeight: FontWeight.w800, color: AppColors.ink, letterSpacing: -0.8)),
-        ]),
-      ),
-      Positioned(
-        left: 0,
-        right: 0,
-        bottom: 26 + bottom,
-        child: Column(mainAxisSize: MainAxisSize.min, children: [
-          const Text(kSplashLine,
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: AppColors.soft, letterSpacing: 0.2)),
-          const SizedBox(height: 14),
-          Row(mainAxisSize: MainAxisSize.min, children: [
-            for (final v in _Veh.values)
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
-                child: CustomPaint(size: const Size(34, 34), painter: _VehPainter(v, AppColors.soft, 1.5)),
+        Align(
+          alignment: const Alignment(0, -0.2),
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            Opacity(
+              opacity: logo,
+              child: Transform.translate(
+                offset: Offset(0, 10 * (1 - logo)),
+                child: SvgPicture.asset('assets/brand/logo_m.svg', width: 96, height: 96),
               ),
+            ),
+            const SizedBox(height: 6),
+            Row(mainAxisSize: MainAxisSize.min, children: [
+              for (var i = 0; i < _word.length; i++)
+                Builder(builder: (_) {
+                  // letter i appears while the route is drawn (0.36 .. 0.74)
+                  final start = 0.36 + i * 0.045;
+                  final k = Curves.easeOutCubic.transform(_seg(t, start, start + 0.08));
+                  return Opacity(
+                    opacity: k,
+                    child: Transform.translate(
+                      offset: Offset(0, 12 * (1 - k)),
+                      child: Text(_word[i],
+                          style: const TextStyle(
+                              fontSize: 38, fontWeight: FontWeight.w800, color: AppColors.ink, letterSpacing: -0.8)),
+                    ),
+                  );
+                }),
+            ]),
           ]),
-        ]),
-      ),
-    ]);
+        ),
+        Positioned(
+          left: 0,
+          right: 0,
+          bottom: 26 + bottom,
+          child: Opacity(
+            opacity: foot,
+            child: Transform.translate(
+              offset: Offset(0, 10 * (1 - foot)),
+              child: Column(mainAxisSize: MainAxisSize.min, children: [
+                const Text(kSplashLine,
+                    textAlign: TextAlign.center,
+                    style:
+                        TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: AppColors.soft, letterSpacing: 0.2)),
+                const SizedBox(height: 14),
+                Row(mainAxisSize: MainAxisSize.min, children: [
+                  for (final v in _Veh.values)
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: CustomPaint(size: const Size(34, 34), painter: _VehPainter(v, AppColors.soft, 1.5)),
+                    ),
+                ]),
+              ]),
+            ),
+          ),
+        ),
+      ]),
+    );
   }
 }
 
@@ -424,23 +496,13 @@ class _VehPainter extends CustomPainter {
 
 /// The city itself (streets, buildings with windows, park, lake). It does not move, so it is
 /// drawn once into a picture and reused on every frame.
-class _CityPainter extends CustomPainter {
+/// The city itself (streets, buildings with windows, park, lake). It does not move: the start
+/// screen draws it once into an image ([drawCity]) and only moves that image.
+class _CityPainter {
   final _Geo g;
   _CityPainter(this.g);
 
-  static ui.Picture? _pic;
-  static Size? _picSize;
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    if (_pic == null || _picSize != size) {
-      final rec = ui.PictureRecorder();
-      _draw(Canvas(rec), size);
-      _pic = rec.endRecording();
-      _picSize = size;
-    }
-    canvas.drawPicture(_pic!);
-  }
+  void drawCity(Canvas canvas, Size size) => _draw(canvas, size);
 
   void _draw(Canvas canvas, Size size) {
     final s = g.s;
@@ -564,8 +626,6 @@ class _CityPainter extends CustomPainter {
               [const Color(0x00FFFFFF), Colors.white], const [.55, 1]));
   }
 
-  @override
-  bool shouldRepaint(covariant _CityPainter o) => false;
 }
 
 /// Your route on the ground: grey dots ahead, blue behind you; the green spot pulses at the end.
