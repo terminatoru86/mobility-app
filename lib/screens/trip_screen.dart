@@ -650,21 +650,41 @@ class _RoutePlannerState extends State<RoutePlanner> {
     // once an option is chosen the whole row goes away; tap the vehicle below to bring it back
     if (_oneRoute) return const SizedBox.shrink();
     final variants = _vehiclePicked ? (routeVariants[_rv.name] ?? const <String>[]) : const <String>[];
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(children: [
-        for (final v in variants)
-          chip(_variantLook(v).$1, look(v), _variant == v, () {
-              setState(() => _variant = _variant == v ? 'standard' : v);
-              _calc();
-            }),
-        if (_bikeLike || !_vehiclePicked)
-          chip('Bike line', const BikeRoadIcon(size: 16), _marked, () {
-            setState(() => _marked = !_marked);
-            _calc();
-          }, accent: AppColors.greenDark, tint: AppColors.greenTint),
-      ]),
-    );
+    // a small round handle with » at the start shows that the row can be pushed away to the right
+    // (drag it, or the row, to the right; a tap on it does the same). The chips scroll on their own.
+    return Row(children: [
+      GestureDetector(
+        onTap: () => setState(() => _chipsAway = true),
+        child: Container(
+          width: 30,
+          height: 30,
+          margin: const EdgeInsets.only(right: 6),
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            shape: BoxShape.circle,
+            boxShadow: [BoxShadow(color: Color(0x1A000000), blurRadius: 5, offset: Offset(0, 1))],
+          ),
+          child: const Icon(Icons.keyboard_double_arrow_right_rounded, size: 18, color: AppColors.soft),
+        ),
+      ),
+      Expanded(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(children: [
+            for (final v in variants)
+              chip(_variantLook(v).$1, look(v), _variant == v, () {
+                setState(() => _variant = _variant == v ? 'standard' : v);
+                _calc();
+              }),
+            if (_bikeLike || !_vehiclePicked)
+              chip('Bike line', const BikeRoadIcon(size: 16), _marked, () {
+                setState(() => _marked = !_marked);
+                _calc();
+              }, accent: AppColors.greenDark, tint: AppColors.greenTint),
+          ]),
+        ),
+      ),
+    ]);
   }
 
   // ── Parking near the destination ──
