@@ -1186,7 +1186,7 @@ class MapScreenState extends State<MapScreen> {
                 height: 30,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: r.kind == 'I like this lane' ? AppColors.greenTint : AppColors.yellow,
+                    color: r.likesLane ? AppColors.greenTint : AppColors.yellow,
                     shape: BoxShape.circle,
                     border: Border.all(color: Colors.white, width: 2),
                   ),

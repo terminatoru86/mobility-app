@@ -54,14 +54,20 @@ class SavedRoute {
 
 /// Something a rider reported with the + button.
 class Report {
-  final String kind; // New place, Blocked road, Risk zone, ...
+  final String kind; // New place, Road problem, Map correction, Abandoned vehicle, Feedback
   final String detail; // e.g. "Potholes"
   final String text;
   final LatLng pos;
   final DateTime at;
   const Report(this.kind, this.detail, this.text, this.pos, this.at);
 
+  bool get likesLane => kind == 'I like this lane' || (kind == 'Feedback' && detail.contains('like'));
+
   IconData get icon => switch (kind) {
+        'Road problem' => detail.contains('Construction') || detail.contains('closed') || detail.contains('Accident') || detail.contains('Festival')
+            ? Icons.block
+            : Icons.warning_amber_rounded,
+        'Feedback' => likesLane ? Icons.favorite : Icons.lightbulb_outline,
         'Blocked road' => Icons.block,
         'Risk zone' => Icons.warning_amber_rounded,
         'Map correction' => Icons.signpost_outlined,
@@ -72,7 +78,7 @@ class Report {
       };
 
   /// Only these appear on the map for everyone.
-  bool get onMap => kind == 'Blocked road' || kind == 'Risk zone' || kind == 'I like this lane';
+  bool get onMap => kind == 'Road problem' || kind == 'Blocked road' || kind == 'Risk zone' || likesLane;
 }
 
 /// What riders confirmed in Stats (overrides the shown status).

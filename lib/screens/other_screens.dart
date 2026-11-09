@@ -46,37 +46,11 @@ class ProfileScreen extends StatelessWidget {
               _row(Icons.route, 'Saved routes', onOpenRoutes, trailing: '${s.savedRoutes.length}'),
               _row(Icons.public, 'My map areas', () => _push(context, const MyAreasScreen()),
                   trailing: '${s.zones.where((z) => z.active).length}'),
-              _row(Icons.layers_outlined, 'What appears on the map', () => _push(context, const MapSettingsScreen())),
-              _row(Icons.sync_alt, 'Sharing · ${s.operators.join(', ')}', () => chooseOperators(context)),
-            ]),
-            const SizedBox(height: 12),
-            _group([
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
-                child: Row(children: [
-                  const Icon(Icons.brightness_6_outlined),
-                  const SizedBox(width: 16),
-                  const Expanded(child: Text('Appearance')),
-                  SegmentedButton<ThemeMode>(
-                    segments: const [
-                      ButtonSegment(value: ThemeMode.light, label: Text('Day')),
-                      ButtonSegment(value: ThemeMode.dark, label: Text('Night')),
-                      ButtonSegment(value: ThemeMode.system, label: Text('Auto')),
-                    ],
-                    selected: {s.theme},
-                    showSelectedIcon: false,
-                    style: const ButtonStyle(visualDensity: VisualDensity.compact),
-                    onSelectionChanged: (v) => s.setTheme(v.first),
-                  ),
-                ]),
-              ),
-              _row(Icons.notifications_none, 'Notifications', () => _push(context, const NotificationsScreen())),
-              _row(Icons.shield_outlined, 'Anti-theft & Insurance', () => _push(context, const AntiTheftScreen())),
+              _row(Icons.settings_outlined, 'Settings', () => _push(context, const SettingsScreen())),
               _row(Icons.lightbulb_outline, 'Help · Replay the guide', state.replayGuide,
                   trailing: state.guideDone ? null : 'on the Map tab'),
+              _row(Icons.volunteer_activism_outlined, 'Donate', () => showDonate(context)),
             ]),
-            const SizedBox(height: 12),
-            const _DonateCard(),
             const SizedBox(height: 12),
             _group([
               ListTile(
@@ -116,6 +90,17 @@ class ProfileScreen extends StatelessWidget {
         onTap: onTap,
       );
 }
+
+/// Donate: a small sheet from the last row of Profile.
+Future<void> showDonate(BuildContext context) => showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (c) => Padding(
+        padding: EdgeInsets.fromLTRB(12, 0, 12, 12 + MediaQuery.of(c).viewInsets.bottom),
+        child: const _DonateCard(),
+      ),
+    );
 
 class _DonateCard extends StatefulWidget {
   const _DonateCard();
@@ -168,6 +153,67 @@ class _DonateCardState extends State<_DonateCard> {
             ),
           ]),
       ]),
+    );
+  }
+}
+
+// ───────────────────────── Settings ─────────────────────────
+
+class SettingsScreen extends StatelessWidget {
+  const SettingsScreen({super.key});
+
+  void _push(BuildContext c, Widget w) => Navigator.of(c).push(MaterialPageRoute(builder: (_) => w));
+
+  Widget _row(IconData i, String t, VoidCallback onTap) => ListTile(
+        leading: Icon(i),
+        title: Text(t, maxLines: 1, overflow: TextOverflow.ellipsis),
+        trailing: const Icon(Icons.chevron_right),
+        onTap: onTap,
+      );
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: Store.i,
+      builder: (context, _) {
+        final s = Store.i;
+        return Scaffold(
+          backgroundColor: AppColors.paper,
+          appBar: AppBar(backgroundColor: AppColors.paper, title: const Text('Settings')),
+          body: ListView(padding: const EdgeInsets.all(16), children: [
+            Material(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(18),
+              clipBehavior: Clip.antiAlias,
+              child: Column(children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
+                  child: Row(children: [
+                    const Icon(Icons.brightness_6_outlined),
+                    const SizedBox(width: 16),
+                    const Expanded(child: Text('Appearance')),
+                    SegmentedButton<ThemeMode>(
+                      segments: const [
+                        ButtonSegment(value: ThemeMode.light, label: Text('Day')),
+                        ButtonSegment(value: ThemeMode.dark, label: Text('Night')),
+                        ButtonSegment(value: ThemeMode.system, label: Text('Auto')),
+                      ],
+                      selected: {s.theme},
+                      showSelectedIcon: false,
+                      style: const ButtonStyle(visualDensity: VisualDensity.compact),
+                      onSelectionChanged: (v) => s.setTheme(v.first),
+                    ),
+                  ]),
+                ),
+                _row(Icons.notifications_none, 'Notifications', () => _push(context, const NotificationsScreen())),
+                _row(Icons.layers_outlined, 'What appears on the map', () => _push(context, const MapSettingsScreen())),
+                _row(Icons.sync_alt, 'Sharing · ${s.operators.join(', ')}', () => chooseOperators(context)),
+                _row(Icons.shield_outlined, 'Anti-theft & Insurance', () => _push(context, const AntiTheftScreen())),
+              ]),
+            ),
+          ]),
+        );
+      },
     );
   }
 }

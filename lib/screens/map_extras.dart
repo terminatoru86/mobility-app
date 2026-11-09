@@ -457,20 +457,23 @@ class SosHelperCard extends StatelessWidget {
 
 // ───────────────────────── 3.7 Report ─────────────────────────
 
+// five kinds: "Road problem" joins the old Blocked road and Risk zone,
+// "Feedback" joins Suggestion and I like this lane
 const _kinds = [
   ('New place', Icons.add_location_alt_outlined, AppColors.green),
-  ('Abandoned vehicle', Icons.no_transfer, AppColors.slate),
-  ('Blocked road', Icons.block, AppColors.red),
-  ('Risk zone', Icons.warning_amber_rounded, AppColors.yellow),
+  ('Road problem', Icons.warning_amber_rounded, AppColors.yellow),
   ('Map correction', Icons.signpost_outlined, AppColors.blue),
-  ('Suggestion', Icons.lightbulb_outline, AppColors.primary),
-  ('I like this lane', Icons.favorite, AppColors.red),
+  ('Abandoned vehicle', Icons.no_transfer, AppColors.slate),
+  ('Feedback', Icons.lightbulb_outline, AppColors.primary),
 ];
 
 const _choices = {
   'New place': ['Rack', 'Parking', 'Pump', 'Wash', 'Charging', 'Self-service', 'Service', 'Shop'],
-  'Blocked road': ['Construction', 'Festival', 'Parade', 'Accident', 'Road closed'],
-  'Risk zone': ['🕳️ Potholes', '🪨 Rough gravel', '🌊 Flooding', '🐕 Dogs'],
+  'Road problem': [
+    '🚧 Construction', '🚨 Accident', '⛔ Road closed', '🎪 Festival / parade', //
+    '🕳️ Potholes', '🪨 Rough gravel', '🌊 Flooding', '🐕 Dogs',
+  ],
+  'Feedback': ['♥ I like this lane', '💡 Suggestion'],
   'Map correction': [
     '🛑 Stop', '🚦 Light', '⛔ No entry', '⚠️ Caution', '🚸 Pedestrians', '🔻 Yield', //
     '🚲 Bike lane', '🅿️ Parking', '🚧 Works', '🚳 No bikes', '➡️ One way', '➕ Other',
@@ -541,7 +544,7 @@ class _ReportFormState extends State<ReportForm> {
   bool _photo = false;
   final _text = TextEditingController();
 
-  bool get _photoNeeded => widget.kind != 'Suggestion';
+  bool get _photoNeeded => widget.kind != 'Feedback';
   bool get _ok => (!_photoNeeded || _photo) && (_choices[widget.kind] == null || _pick != null);
 
   @override
@@ -561,8 +564,8 @@ class _ReportFormState extends State<ReportForm> {
           Text(
             switch (widget.kind) {
               'New place' => 'Type of place',
-              'Blocked road' => 'What is happening',
-              'Risk zone' => 'What you saw',
+              'Road problem' => 'What is on the road',
+              'Feedback' => 'What you want to tell us',
               _ => 'Choose the sign on the map',
             },
             style: const TextStyle(fontWeight: FontWeight.w800),
