@@ -396,7 +396,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
         width: iconX,
         height: iconY,
         child: IgnorePointer(
-          child: CustomPaint(painter: _WavyWire(from: Offset(7, 18), to: Offset(iconX - 10, iconY))),
+          child: CustomPaint(painter: _WavyWire(from: Offset(7 + 5, 18), to: Offset(iconX - 10, iconY))),
         ),
       ),
       // my location: first a small white pill "My location", which then pulls into the blue dot;
@@ -1981,33 +1981,53 @@ class _PlacePickerState extends State<_PlacePicker> {
 }
 
 
-/// The wire between my location and the destination: a narrow wave, blue at the start, red at the end
-/// (the colours of the dot and the flag); it turns into the icon at the end with a small curve.
+/// The road between my location and the destination, drawn like the Routes sign in the bottom menu:
+/// it leaves the dot to the right, makes one hairpin back to the left, goes down and turns right into the
+/// icon at the end. Blue at the start, red at the end, with a thin white edge like the route on the map.
+/// When [from] and [to] are in one column (between a stop and the flag) it is a short straight piece.
 class _WavyWire extends CustomPainter {
   final Offset from, to;
   const _WavyWire({required this.from, required this.to});
 
   @override
   void paint(Canvas canvas, Size size) {
-    const amp = 2.2, wave = 6.0;
-    final turn = (to.dx - from.dx).abs() > 1;
-    final downTo = turn ? to.dy - 9 : to.dy;
-    final path = Path()..moveTo(from.dx, from.dy);
-    for (double y = from.dy; y <= downTo; y += 0.5) {
-      path.lineTo(from.dx + amp * math.sin((y - from.dy) / wave * 2 * math.pi), y);
+    final path = Path();
+    if ((to.dx - from.dx).abs() < 1) {
+      path
+        ..moveTo(from.dx, from.dy)
+        ..lineTo(to.dx, to.dy);
+    } else {
+      const r = 5.0;
+      final x0 = from.dx, y0 = from.dy - 7; // the middle of the dot
+      final left = x0 - r; // the vertical part, a little left of the dot
+      path
+        ..moveTo(x0, y0)
+        ..lineTo(x0 + r + 2, y0)
+        ..arcToPoint(Offset(x0 + r + 2, y0 + 2 * r), radius: const Radius.circular(r)) // hairpin to the left
+        ..lineTo(x0, y0 + 2 * r)
+        ..arcToPoint(Offset(left, y0 + 3 * r), radius: const Radius.circular(r), clockwise: false)
+        ..lineTo(left, to.dy - r)
+        ..arcToPoint(Offset(left + r, to.dy), radius: const Radius.circular(r), clockwise: false)
+        ..lineTo(to.dx, to.dy);
     }
-    if (turn) path.quadraticBezierTo(from.dx, to.dy, to.dx, to.dy);
-    final paint = Paint()
+    final edge = Paint()
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 2
+      ..strokeWidth = 4.6
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
-      ..shader = LinearGradient(
+      ..color = Colors.white;
+    final road = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2.2
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round
+      ..shader = const LinearGradient(
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
-        colors: const [AppColors.blue, AppColors.red],
-      ).createShader(Rect.fromPoints(from, to));
-    canvas.drawPath(path, paint);
+        colors: [AppColors.blue, AppColors.red],
+      ).createShader(Rect.fromLTRB(0, from.dy - 7, 1, to.dy));
+    canvas.drawPath(path, edge);
+    canvas.drawPath(path, road);
   }
 
   @override
