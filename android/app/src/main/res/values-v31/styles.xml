@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Android 12+: its own start screen is only a colour (Android allows no full picture there):
-         the light grey of our start picture, with no icon and no logo -->
+    <!-- Android 12+: Android's own start allows only a colour and a round icon (no full picture).
+         Like Lyft or Uber, we make it our brand: the light colour of our start picture and our big "m",
+         whose dots light up red, yellow, green. The start picture then appears around the same logo. -->
     <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
         <item name="android:windowBackground">@drawable/launch_background</item>
         <item name="android:windowSplashScreenBackground">#EEF2F2</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_empty</item>
-        <item name="android:windowSplashScreenIconBackgroundColor">#EEF2F2</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_logo_anim</item>
+        <item name="android:windowSplashScreenAnimationDuration">900</item>
     </style>
     <!-- while Flutter starts: the start picture itself -->
     <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
