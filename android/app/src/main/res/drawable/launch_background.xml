@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- the first instant while Android starts the app: plain white (the start screen fades in from white) -->
+<!-- the first instant while Android starts the app: white with our "m" logo in the middle
+     (the start picture then comes with the same logo in the same place) -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@android:color/white" />
+    <item android:drawable="@drawable/splash_logo" android:gravity="center" />
 </layer-list>

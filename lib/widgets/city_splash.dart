@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:math' as math;
 import 'dart:ui' as ui;
 
@@ -6,35 +5,28 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:latlong2/latlong.dart' show LatLng;
 
-import '../data/app_state.dart';
 import '../data/places.dart';
 import '../theme.dart';
 import 'pin.dart';
-import 'signup.dart';
 
 /// The start screen, only for people without an account (once signed in, the app opens
-/// straight on the working map). About 3.5 s, one smooth take:
-///
-/// 1. the city is there at once, in 3D, under a white haze that lifts from the middle out
-///    (soft edges at the top and bottom, no hard border anywhere)
-/// 2. our real map pins come in, and other riders on bike, scooter, moped, motorcycle
-/// 3. your blue route is drawn; with it the "m" logo and MOBI appear in the middle
-/// 4. you arrive: the green pin pulses
-/// 5. the sign-in panel slides up over the map (Apple, Google, or continue as guest).
+/// straight on the working map). One still picture, no motion: the city with our pins, the
+/// riders and your blue route to the green pin; in the middle the "m" logo (the same one, in the
+/// same place, as Android's own start, so nothing jumps) and MOBIlity under it; at the bottom one
+/// short line and our vehicles. The city fades in under the logo the moment it is drawn.
+/// When it ends (main.dart) it fades out over the working map and the sign-in pop-up comes.
 class CitySplash extends StatefulWidget {
-  /// The app state, ready when Firebase and the saved data have loaded (while the city plays).
-  final Future<AppState> state;
-  /// Called when the city has played: the map can be built behind it.
-  final VoidCallback? onEnding;
-  const CitySplash({super.key, required this.state, this.onEnding});
+  const CitySplash({super.key});
   @override
   State<CitySplash> createState() => _CitySplashState();
 }
 
-/// The line on the last screen, above the vehicles.
+/// The line on the start screen, above the vehicles.
 const String kSplashLine = 'Ride in. Park easy.';
 
-double _seg(double t, double a, double b) => ((t - a) / (b - a)).clamp(0.0, 1.0);
+/// The logo's size on the start screen (Android's own start draws it the same size, in the middle).
+const double kSplashLogo = 92;
+
 
 /// Map units → screen (before the 3D camera): an isometric grid, 3 units per block.
 class _Geo {
@@ -85,89 +77,23 @@ const _riders = <(_Veh, Offset, Offset)>[
   (_Veh.bike, Offset(-1.5, 2.6), Offset(-1.5, 7.4)),
 ];
 
-class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateMixin {
-  late final AnimationController _a = AnimationController(vsync: this, duration: const Duration(milliseconds: 3500))
-    ..addStatusListener((st) {
-      if (st == AnimationStatus.completed && mounted) _askSignIn();
-    });
+class _CitySplashState extends State<CitySplash> {
+  bool _city = false; // the first frame shows only the logo (instant); the city comes right after
 
   @override
   void initState() {
     super.initState();
-    // start moving with the first frame on screen (not while the app is still starting)
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) _a.forward();
+      if (mounted) setState(() => _city = true);
     });
-  }
-  bool _signIn = false; // our sign-in pop-up is open
-  bool _fading = false;
-  bool _gone = false;
-
-  // The city is drawn once. First as a picture (on screen at once), then turned into an image
-  // in the background; from then on every frame only moves the image (smooth).
-  ui.Picture? _pic;
-  ui.Image? _img;
-  Size? _forSize;
-
-  @override
-  void dispose() {
-    _a.dispose();
-    _pic?.dispose();
-    _img?.dispose();
-    super.dispose();
   }
 
   /// The drawn area: bigger than the screen, so the tilted map never shows an edge.
   static Rect _area(double w, double h) => Rect.fromLTRB(-0.6 * w, -1.5 * h, 1.6 * w, 1.3 * h);
 
-  void _draw(_Geo g, Size size, double dpr) {
-    _pic?.dispose();
-    _img?.dispose();
-    _img = null;
-    final area = _area(size.width, size.height);
-    final rec = ui.PictureRecorder();
-    _CityPainter(g).drawCity(Canvas(rec)..translate(-area.left, -area.top), area);
-    _pic = rec.endRecording();
-    _forSize = size;
-    // the image, a moment later
-    final r = math.min(dpr, 1.3);
-    WidgetsBinding.instance.addPostFrameCallback((_) async {
-      final rec2 = ui.PictureRecorder();
-      _CityPainter(g).drawCity(
-          Canvas(rec2)
-            ..scale(r)
-            ..translate(-area.left, -area.top),
-          area);
-      final pic2 = rec2.endRecording();
-      final img = await pic2.toImage((area.width * r).round(), (area.height * r).round());
-      pic2.dispose();
-      if (!mounted || _forSize != size) {
-        img.dispose();
-        return;
-      }
-      setState(() => _img = img);
-    });
-  }
-
-  /// The start screen ends: our sign-in pop-up over the map.
-  Future<void> _askSignIn() async {
-    if (_signIn) return;
-    final st = await widget.state; // normally ready long before the city has played
-    if (!mounted) return;
-    widget.onEnding?.call();
-    setState(() => _signIn = true);
-    final ok = await showSignIn(context, st);
-    if (!mounted) return;
-    setState(() => _fading = true);
-    // signed in: which vehicle do you ride? (cannot be skipped)
-    if (ok) await showVehicleStep(context, st);
-  }
-
-  /// The 3D camera: perspective and tilt over the flat city, gliding down slowly.
-  static Matrix4 _camera(double w, double h, double t) {
-    final e = Curves.easeInOutSine.transform(t);
-    final tilt = 0.74 - 0.16 * e;
-    final zoom = 1.66 - 0.26 * e;
+  /// The 3D camera: perspective and tilt over the flat city (the last view of the old film).
+  static Matrix4 _camera(double w, double h) {
+    const tilt = 0.58, zoom = 1.40;
     final po = Offset(w / 2, h * 0.30), to = Offset(w / 2, h * 0.55);
     return Matrix4.identity()
       ..translate(po.dx, po.dy)
@@ -180,43 +106,26 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
-    if (_gone) return const SizedBox.shrink();
-    final dpr = MediaQuery.of(context).devicePixelRatio;
-    return IgnorePointer(
-      ignoring: _fading,
-      child: AnimatedOpacity(
-        opacity: _fading ? 0 : 1,
-        duration: const Duration(milliseconds: 550),
-        curve: Curves.easeInOut,
-        onEnd: () {
-          if (_fading && mounted) setState(() => _gone = true);
-        },
-        child: ColoredBox(
-          color: Colors.white,
-          child: LayoutBuilder(builder: (context, box) {
-            final w = box.maxWidth, h = box.maxHeight;
-            final size = Size(w, h);
-            final g = _Geo(w, h);
-            if (_pic == null || _forSize != size) _draw(g, size, dpr);
-            final area = _area(w, h);
-            return AnimatedBuilder(
-              animation: _a,
-              builder: (context, _) {
-                final t = _a.value;
-                final m = _camera(w, h, t);
-                Offset screen(double x, double y) => MatrixUtils.transformPoint(m, g.p(x, y));
-                // timeline (0..1 of 3.5 s)
-                final clear = Curves.easeOutCubic.transform(_seg(t, 0.0, 0.28)); // a thin haze lifts
-                final pinsIn = _seg(t, 0.10, 0.40);
-                final routeF = Curves.easeInOutSine.transform(_seg(t, 0.24, 0.80));
-                final arrive = _seg(t, 0.78, 0.96);
-                final ride = Curves.easeInOutSine.transform(_seg(t, 0.0, 1.0));
-
-                final pins = <(Offset, int)>[
-                  for (var i = 0; i < _pins.length; i++) (screen(_pins[i].$1, _pins[i].$2), i),
-                ]..sort((a, b) => a.$1.dy.compareTo(b.$1.dy));
-
-                return Stack(fit: StackFit.expand, children: [
+    return ColoredBox(
+      color: Colors.white,
+      child: LayoutBuilder(builder: (context, box) {
+        final w = box.maxWidth, h = box.maxHeight;
+        final g = _Geo(w, h);
+        final m = _camera(w, h);
+        final area = _area(w, h);
+        Offset screen(double x, double y) => MatrixUtils.transformPoint(m, g.p(x, y));
+        final pins = <(Offset, int)>[
+          for (var i = 0; i < _pins.length; i++) (screen(_pins[i].$1, _pins[i].$2), i),
+        ]..sort((a, b) => a.$1.dy.compareTo(b.$1.dy));
+        return Stack(fit: StackFit.expand, children: [
+          if (_city)
+            TweenAnimationBuilder<double>(
+              tween: Tween(begin: 0, end: 1),
+              duration: const Duration(milliseconds: 380),
+              curve: Curves.easeOut,
+              builder: (context, k, child) => Opacity(opacity: k, child: child),
+              child: RepaintBoundary(
+                child: Stack(fit: StackFit.expand, children: [
                   Transform(
                     transform: m,
                     filterQuality: FilterQuality.medium,
@@ -226,50 +135,38 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
                         top: area.top,
                         width: area.width,
                         height: area.height,
-                        child: _img != null
-                            ? RawImage(image: _img, fit: BoxFit.fill, filterQuality: FilterQuality.medium)
-                            : CustomPaint(painter: _PicturePainter(_pic!)),
+                        child: CustomPaint(painter: _CityOnce(g, area)),
                       ),
-                      CustomPaint(painter: _RoutePainter(g, routeF, arrive)),
+                      CustomPaint(painter: _RoutePainter(g, 1, 1)),
                     ]),
                   ),
-                  // pins: the same pins as on the app map, coming in gently one after another
+                  // the same pins as on the app map; the one you ride to stays bright
                   for (final (pt, i) in pins)
                     Builder(builder: (_) {
-                      final start = i / _pins.length * 0.55;
-                      final k = Curves.easeOutCubic.transform(_seg(pinsIn, start, start + 0.45));
-                      if (k <= 0) return const SizedBox.shrink();
                       final place = _pins[i].$3;
                       final depth = (0.48 + 0.34 * (pt.dy / h)).clamp(0.45, 0.85);
-                      final dim = i != _arriveAt && arrive > 0 ? 1 - 0.5 * arrive : 1.0;
-                      final full = place.status == Status.full ? 1 - 0.45 * _seg(routeF, .2, .5) : 1.0;
-                      final pulse = i == _arriveAt ? 1 + 0.16 * math.sin(arrive * math.pi) : 1.0;
+                      final dim = i != _arriveAt ? 0.5 : 1.0;
+                      final full = place.status == Status.full ? 0.55 : 1.0;
                       return Positioned(
                         left: pt.dx - PlacePin.width / 2,
                         top: pt.dy - PlacePin.height,
                         child: Opacity(
-                          opacity: (k * dim * full).clamp(0.0, 1.0),
+                          opacity: dim * full,
                           child: Transform.scale(
-                            scale: depth * (0.7 + 0.3 * k) * pulse,
+                            scale: depth,
                             alignment: Alignment.bottomCenter,
                             child: PlacePin(place: place, animate: false, detail: PinDetail.full, showRating: false),
                           ),
                         ),
                       );
                     }),
-                  // the riders (moving the whole time) and you, on your route
+                  // the riders, and you at the end of your route
                   CustomPaint(
                     painter: _RiderPainter(
-                      t: t,
-                      show: Curves.easeOut.transform(_seg(t, 0.12, 0.30)),
-                      me: _routePoint(routeF, screen),
-                      others: [
-                        for (final (v, a, b) in _riders)
-                          (v, () {
-                            final q = Offset.lerp(a, b, ride)!;
-                            return screen(q.dx, q.dy);
-                          }()),
-                      ],
+                      t: 1,
+                      show: 1,
+                      me: _routePoint(1, screen),
+                      others: [for (final (v, _, b) in _riders) (v, screen(b.dx, b.dy))],
                     ),
                   ),
                   // the map melts into white all round, in a soft oval (no straight edge anywhere)
@@ -293,31 +190,12 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
                       ),
                     ),
                   ),
-                  // a thin white haze that lifts from the middle out
-                  if (clear < 1)
-                    IgnorePointer(
-                      child: Opacity(
-                        opacity: 0.85 * (1 - clear),
-                        child: DecoratedBox(
-                          decoration: BoxDecoration(
-                            gradient: RadialGradient(
-                              center: const Alignment(0, -0.05),
-                              radius: 0.25 + 0.9 * clear,
-                              transform: _Oval(h / w),
-                              colors: const [Color(0x00FFFFFF), Color(0x99FFFFFF), Colors.white],
-                              stops: const [0, .6, 1],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  _Title(t: t, signIn: _signIn),
-                ]);
-              },
-            );
-          }),
-        ),
-      ),
+                ]),
+              ),
+            ),
+          _Title(h: h),
+        ]);
+      }),
     );
   }
 
@@ -331,6 +209,7 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
     return pts.first;
   }
 }
+
 
 /// Stretches a round gradient into an oval that fits the tall screen.
 class _Oval extends GradientTransform {
@@ -346,121 +225,78 @@ class _Oval extends GradientTransform {
   }
 }
 
-class _PicturePainter extends CustomPainter {
-  final ui.Picture pic;
-  _PicturePainter(this.pic);
+/// The city, painted once (it does not move).
+class _CityOnce extends CustomPainter {
+  final _Geo g;
+  final Rect area;
+  _CityOnce(this.g, this.area);
   @override
-  void paint(Canvas canvas, Size size) => canvas.drawPicture(pic);
+  void paint(Canvas canvas, Size size) {
+    canvas.save();
+    canvas.translate(-area.left, -area.top);
+    _CityPainter(g).drawCity(canvas, area);
+    canvas.restore();
+  }
+
   @override
-  bool shouldRepaint(covariant _PicturePainter o) => o.pic != pic;
+  bool shouldRepaint(covariant _CityOnce o) => o.area != area;
 }
 
-/// On top of the map: a soft white glow, in the middle the "m" logo and MOBI (they come in
-/// with the route); bottom-right a small "Powered by MOBIlity"; at the bottom one short line
-/// and our four vehicles (they make room when the sign-in panel comes up).
+/// On top of the map: a soft white glow; exactly in the middle the "m" logo and MOBIlity under
+/// it; at the bottom one short line and our four vehicles.
 class _Title extends StatelessWidget {
-  final double t;
-  final bool signIn;
-  const _Title({required this.t, required this.signIn});
-
-  static const _word = 'MOBI';
+  final double h;
+  const _Title({required this.h});
 
   @override
   Widget build(BuildContext context) {
     final bottom = MediaQuery.of(context).padding.bottom;
-    final glow = Curves.easeInOutSine.transform(_seg(t, 0.22, 0.45));
-    final logo = Curves.easeOutCubic.transform(_seg(t, 0.24, 0.40));
-    final foot = Curves.easeOutCubic.transform(_seg(t, 0.55, 0.75));
-    final by = Curves.easeOut.transform(_seg(t, 0.40, 0.60));
     return IgnorePointer(
       child: Stack(fit: StackFit.expand, children: [
-        Opacity(
-          opacity: glow,
-          child: const DecoratedBox(
-            decoration: BoxDecoration(
-              gradient: RadialGradient(
-                center: Alignment(0, -0.28),
-                radius: 0.62,
-                colors: [Color(0xE6FFFFFF), Color(0xA6FFFFFF), Color(0x00FFFFFF)],
-                stops: [0, .45, 1],
-              ),
+        const DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: RadialGradient(
+              center: Alignment(0, 0.04),
+              radius: 0.62,
+              colors: [Color(0xE6FFFFFF), Color(0xA6FFFFFF), Color(0x00FFFFFF)],
+              stops: [0, .45, 1],
             ),
           ),
         ),
-        Align(
-          alignment: const Alignment(0, -0.3),
+        Positioned(
+          left: 0,
+          right: 0,
+          top: h / 2 - kSplashLogo / 2,
           child: Column(mainAxisSize: MainAxisSize.min, children: [
-            Opacity(
-              opacity: logo,
-              child: Transform.translate(
-                offset: Offset(0, 10 * (1 - logo)),
-                child: SvgPicture.asset('assets/brand/logo_m.svg', width: 92, height: 92),
-              ),
-            ),
+            SvgPicture.asset('assets/brand/logo_m.svg', width: kSplashLogo, height: kSplashLogo),
             const SizedBox(height: 4),
-            Row(mainAxisSize: MainAxisSize.min, children: [
-              for (var i = 0; i < _word.length; i++)
-                Builder(builder: (_) {
-                  final start = 0.28 + i * 0.05;
-                  final k = Curves.easeOutCubic.transform(_seg(t, start, start + 0.10));
-                  return Opacity(
-                    opacity: k,
-                    child: Transform.translate(
-                      offset: Offset(0, 12 * (1 - k)),
-                      child: Text(_word[i],
-                          style: const TextStyle(
-                              fontSize: 42, fontWeight: FontWeight.w900, color: AppColors.ink, letterSpacing: 1)),
-                    ),
-                  );
-                }),
-            ]),
+            const Text('MOBIlity',
+                style: TextStyle(fontSize: 40, fontWeight: FontWeight.w900, color: AppColors.ink, letterSpacing: 0.5)),
           ]),
         ),
-        // the line and the vehicles; they step aside when the sign-in panel comes up
-        AnimatedOpacity(
-          opacity: signIn ? 0 : 1,
-          duration: const Duration(milliseconds: 250),
-          child: Stack(fit: StackFit.expand, children: [
-            Positioned(
-              left: 0,
-              right: 0,
-              bottom: 46 + bottom,
-              child: Opacity(
-                opacity: foot,
-                child: Transform.translate(
-                  offset: Offset(0, 10 * (1 - foot)),
-                  child: Column(mainAxisSize: MainAxisSize.min, children: [
-                    const Text(kSplashLine,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            fontSize: 14, fontWeight: FontWeight.w600, color: AppColors.soft, letterSpacing: 0.2)),
-                    const SizedBox(height: 12),
-                    Row(mainAxisSize: MainAxisSize.min, children: [
-                      for (final v in _Veh.values)
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 12),
-                          child: CustomPaint(size: const Size(32, 32), painter: _VehPainter(v, AppColors.soft, 1.5)),
-                        ),
-                    ]),
-                  ]),
+        Positioned(
+          left: 0,
+          right: 0,
+          bottom: 46 + bottom,
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            const Text(kSplashLine,
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: AppColors.soft, letterSpacing: 0.2)),
+            const SizedBox(height: 12),
+            Row(mainAxisSize: MainAxisSize.min, children: [
+              for (final v in _Veh.values)
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  child: CustomPaint(size: const Size(32, 32), painter: _VehPainter(v, AppColors.soft, 1.5)),
                 ),
-              ),
-            ),
-            Positioned(
-              right: 16,
-              bottom: 14 + bottom,
-              child: Opacity(
-                opacity: by * 0.9,
-                child: const Text('Powered by MOBIlity',
-                    style: TextStyle(fontSize: 10, color: Color(0xFF97A3A9), letterSpacing: 0.2)),
-              ),
-            ),
+            ]),
           ]),
         ),
       ]),
     );
   }
 }
+
 
 enum _Veh { bike, scooter, moped, moto }
 

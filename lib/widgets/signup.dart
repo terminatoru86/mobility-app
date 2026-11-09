@@ -15,6 +15,11 @@ const _barrier = Color(0x550F1E24);
 /// Used at the end of the start screen, from Profile and as the invite after a few opens.
 /// Returns true when the user signed in (the account is then marked as created).
 Future<bool> showSignIn(BuildContext context, AppState state, {String guestLabel = 'Continue as guest'}) async {
+  // already signed in (e.g. the link in the email opened the app): nothing to ask
+  if (Auth.i.ready && Auth.i.user != null) {
+    await state.createAccount();
+    return true;
+  }
   final ok = await showDialog<bool>(
     context: context,
     barrierColor: _barrier,
@@ -136,7 +141,6 @@ class _SignInCardState extends State<SignInCard> {
   bool _busy = false;
   String? _problem;
   final _email = TextEditingController();
-  final _link = TextEditingController();
   final _phone = TextEditingController(text: '+1 ');
   final _code = TextEditingController();
   String? _verificationId;
@@ -156,7 +160,6 @@ class _SignInCardState extends State<SignInCard> {
   void dispose() {
     Auth.i.emailSignIns.removeListener(_linked);
     _email.dispose();
-    _link.dispose();
     _phone.dispose();
     _code.dispose();
     super.dispose();
@@ -189,10 +192,6 @@ class _SignInCardState extends State<SignInCard> {
         if (!e.contains('@') || !e.contains('.')) throw const AuthProblem('Type your email address.');
         await Auth.i.sendEmailLink(e);
         if (mounted) setState(() => _mode = _Mode.emailSent);
-      });
-
-  void _pasted() => _run(() async {
-        if (await Auth.i.signInWithPastedLink(_link.text) != null) _done();
       });
 
   void _sendSms() => _run(() async {
@@ -292,10 +291,7 @@ class _SignInCardState extends State<SignInCard> {
       case _Mode.emailSent:
         return [
           _title('Check your email',
-              'We sent a sign-in link to ${_email.text.trim()}.\nTap it on this phone, or copy it and paste it here.\nNot there? Look in Spam / Bulk.'),
-          _input(_link, 'Paste the link from the email', TextInputType.url, onDone: _pasted, lines: 3),
-          const SizedBox(height: 10),
-          _pill('Sign in', AppColors.ink, Colors.white, _busy ? null : _pasted),
+              'We sent a sign-in link to ${_email.text.trim()}.\nOpen the email on this phone and tap the link: MOBIlity opens and you are in.\nNot there? Look in Spam / Bulk.'),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
             TextButton(
               onPressed: _busy ? null : _sendEmail,

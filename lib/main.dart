@@ -13,11 +13,12 @@ import 'screens/routes_screen.dart';
 import 'theme.dart';
 import 'widgets/city_splash.dart';
 import 'widgets/pin.dart';
+import 'widgets/signup.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // Only the quick local note "has an account" is read before the first frame, so the start
-  // screen (or the map) shows at once. Firebase and the saved data load while it plays.
+  // picture (or the map) shows at once. Firebase and the saved data load behind it.
   final prefs = await SharedPreferences.getInstance();
   final splash = !(prefs.getBool('hasAccount') ?? false);
   runApp(MobilityApp(splash: splash));
@@ -44,9 +45,9 @@ class MobilityApp extends StatelessWidget {
       );
 }
 
-/// Signed in: straight to the working map. Not signed in: the start screen (the city, ~3.5 s)
-/// plays at once; the map is built behind it only when it ends (so the city moves smoothly),
-/// then the sign-in pop-up comes.
+/// Signed in: straight to the working map. Not signed in: the start picture (still, shown at
+/// once), the map is built behind it; then the picture fades out and our sign-in pop-up comes
+/// over the working map, then the vehicle. The map's guide waits until that is done.
 class _Boot extends StatefulWidget {
   final bool splash;
   const _Boot({required this.splash});
@@ -56,33 +57,61 @@ class _Boot extends StatefulWidget {
 
 class _BootState extends State<_Boot> {
   late final Future<AppState> _ready = _boot();
+  final _shown = Stopwatch()..start();
   AppState? _state;
   late bool _splash = widget.splash;
-  bool _mapNow = false;
+  bool _fade = false;
 
   @override
   void initState() {
     super.initState();
-    _ready.then((st) {
+    splashOn.value = _splash;
+    startFlow.value = _splash;
+    _ready.then((st) async {
       if (!mounted) return;
-      setState(() {
-        _state = st;
-        // the note said "no account", but Firebase knows better (signed in on this phone)
-        if (st.hasAccount) _splash = false;
-      });
+      setState(() => _state = st);
+      // the note said "no account", but Firebase knows better (signed in on this phone)
+      if (st.hasAccount || !_splash) {
+        _end();
+        return;
+      }
+      // the picture stays a short moment; the map loads behind it meanwhile
+      final left = 1800 - _shown.elapsedMilliseconds;
+      if (left > 0) await Future.delayed(Duration(milliseconds: left));
+      if (!mounted) return;
+      setState(() => _fade = true);
+      await Future.delayed(const Duration(milliseconds: 420));
+      if (!mounted) return;
+      setState(() => _splash = false);
+      splashOn.value = false;
+      // over the working map: sign in, then the vehicle (cannot be skipped once signed in)
+      final ok = await showSignIn(context, st);
+      if (ok && mounted) await showVehicleStep(context, st);
+      _end();
     });
+  }
+
+  void _end() {
+    if (mounted && _splash) setState(() => _splash = false);
+    splashOn.value = false;
+    startFlow.value = false;
   }
 
   @override
   Widget build(BuildContext context) {
     final st = _state;
     return Stack(children: [
-      if (st != null && (!_splash || _mapNow)) Shell(state: st) else const ColoredBox(color: Colors.white, child: SizedBox.expand()),
+      if (st != null) Shell(state: st) else const ColoredBox(color: Colors.white, child: SizedBox.expand()),
       if (_splash)
         Positioned.fill(
-          child: Material(
-            type: MaterialType.transparency,
-            child: CitySplash(state: _ready, onEnding: () => setState(() => _mapNow = true)),
+          child: IgnorePointer(
+            ignoring: _fade,
+            child: AnimatedOpacity(
+              opacity: _fade ? 0 : 1,
+              duration: const Duration(milliseconds: 400),
+              curve: Curves.easeInOut,
+              child: const Material(type: MaterialType.transparency, child: CitySplash()),
+            ),
           ),
         ),
     ]);

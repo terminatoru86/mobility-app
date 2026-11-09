@@ -123,7 +123,11 @@ class MapScreenState extends State<MapScreen> {
     });
     _loadWeather();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await whenOff(splashOn); // first start: the map is built behind the start picture
+      if (!mounted) return;
       _locate(); // start where the rider is, anywhere in the US
+      await whenOff(startFlow); // first start: sign-in and vehicle come before the guide
+      if (!mounted) return;
       if (!widget.state.guideDone) {
         setState(() => _showGuide = true);
       } else if (widget.state.shouldInvite) {

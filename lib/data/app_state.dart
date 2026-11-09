@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -5,6 +7,27 @@ import 'places.dart';
 import 'auth.dart';
 
 /// Small persisted app state (local only for now; Firebase comes in M2).
+/// The first start without an account: true while the start picture is on screen.
+final ValueNotifier<bool> splashOn = ValueNotifier(false);
+
+/// True while the first start runs (start picture, sign-in, vehicle). The map's guide waits for it.
+final ValueNotifier<bool> startFlow = ValueNotifier(false);
+
+/// Completes when [n] is false.
+Future<void> whenOff(ValueNotifier<bool> n) {
+  if (!n.value) return Future.value();
+  final c = Completer<void>();
+  void l() {
+    if (!n.value) {
+      n.removeListener(l);
+      if (!c.isCompleted) c.complete();
+    }
+  }
+
+  n.addListener(l);
+  return c.future;
+}
+
 class AppState extends ChangeNotifier {
   late SharedPreferences _p;
 
