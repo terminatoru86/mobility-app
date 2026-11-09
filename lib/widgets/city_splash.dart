@@ -56,7 +56,7 @@ class SplashArt extends StatefulWidget {
 const String kSplashLine = 'Ride in. Park easy.';
 
 /// The logo's size on the start screen (Android's own start draws it the same size, in the middle).
-const double kSplashLogo = 92;
+const double kSplashLogo = 170;
 
 
 /// Map units → screen (before the 3D camera): an isometric grid, 3 units per block.
@@ -253,8 +253,8 @@ class _Title extends StatelessWidget {
         const DecoratedBox(
           decoration: BoxDecoration(
             gradient: RadialGradient(
-              center: Alignment(0, 0.04),
-              radius: 0.5,
+              center: Alignment(0, 0.06),
+              radius: 0.62,
               colors: [Color(0xE6FFFFFF), Color(0x99FFFFFF), Color(0x00FFFFFF)],
               stops: [0, .45, 1],
             ),
@@ -277,9 +277,9 @@ class _Title extends StatelessWidget {
           top: h / 2 - kSplashLogo / 2,
           child: Column(mainAxisSize: MainAxisSize.min, children: [
             SvgPicture.asset('assets/brand/logo_m.svg', width: kSplashLogo, height: kSplashLogo),
-            const SizedBox(height: 4),
+            const SizedBox(height: 2),
             const Text('MOBIlity',
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.w900, color: AppColors.ink, letterSpacing: 0.5)),
+                style: TextStyle(fontSize: 46, fontWeight: FontWeight.w900, color: AppColors.ink, letterSpacing: 0.5)),
           ]),
         ),
         Positioned(
