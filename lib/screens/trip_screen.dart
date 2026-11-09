@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'dart:ui' as ui show Path;
 import 'dart:ui' show ImageFilter;
 
 import 'package:flutter/material.dart';
@@ -2011,7 +2012,7 @@ class _WavyWire extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final path = Path();
+    final path = ui.Path();
     if ((to.dx - from.dx).abs() < 1) {
       path
         ..moveTo(from.dx, from.dy)
