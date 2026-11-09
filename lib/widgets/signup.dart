@@ -359,14 +359,21 @@ class _VehicleStep extends StatefulWidget {
   State<_VehicleStep> createState() => _VehicleStepState();
 }
 
-class _VehicleStepState extends State<_VehicleStep> {
+class _VehicleStepState extends State<_VehicleStep> with SingleTickerProviderStateMixin {
   static bool _hasModel(Vehicle v) => v != Vehicle.bike;
 
   /// front first
   final List<Vehicle> _order = [Vehicle.bike, Vehicle.ebike, Vehicle.scooter, Vehicle.moped, Vehicle.moto];
   final _model = TextEditingController();
   final _focus = FocusNode();
-  Timer? _t;
+  /// one turn of the deck (1.8 s); its progress fills the active dot under the pictures
+  late final AnimationController _turn = AnimationController(vsync: this, duration: const Duration(milliseconds: 1800))
+    ..addStatusListener((st) {
+      if (st == AnimationStatus.completed && mounted && _chosen == null) {
+        _next();
+      }
+    });
+  static const _all = [Vehicle.bike, Vehicle.ebike, Vehicle.scooter, Vehicle.moped, Vehicle.moto];
   Vehicle? _chosen;
   bool _why = false;
 
@@ -382,26 +389,36 @@ class _VehicleStepState extends State<_VehicleStep> {
       _chosen = saved;
       _model.text = widget.state.model;
     }
-    _t = Timer.periodic(const Duration(milliseconds: 2600), (_) {
-      if (_chosen == null) _next();
-    });
+    if (_chosen == null) _turn.forward();
     _model.addListener(() => setState(() {}));
   }
 
   @override
   void dispose() {
-    _t?.cancel();
+    _turn.dispose();
     _model.dispose();
     _focus.dispose();
     super.dispose();
   }
 
   /// the front picture goes behind the last one
-  void _next() => setState(() => _order.add(_order.removeAt(0)));
-  void _prev() => setState(() => _order.insert(0, _order.removeLast()));
+  void _next() {
+    setState(() => _order.add(_order.removeAt(0)));
+    _restart();
+  }
+
+  void _prev() {
+    setState(() => _order.insert(0, _order.removeLast()));
+    _restart();
+  }
+
+  void _restart() {
+    if (_chosen == null) _turn.forward(from: 0);
+  }
 
   void _pick() {
     final v = _order.first;
+    _turn.stop();
     setState(() {
       _chosen = v;
       _why = false;
@@ -416,6 +433,21 @@ class _VehicleStepState extends State<_VehicleStep> {
     await widget.state.saveVehicle(v, _hasModel(v) ? _model.text.trim() : '');
     if (mounted) Navigator.pop(context);
   }
+
+  Widget _arrow(IconData icon, VoidCallback onTap) => Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 2),
+        child: Material(
+          color: Colors.white,
+          shape: const CircleBorder(),
+          elevation: 2,
+          shadowColor: const Color(0x330F1E24),
+          child: InkWell(
+            customBorder: const CircleBorder(),
+            onTap: onTap,
+            child: SizedBox(width: 30, height: 30, child: Icon(icon, size: 22, color: AppColors.ink)),
+          ),
+        ),
+      );
 
   static String _example(Vehicle v) => switch (v) {
         Vehicle.ebike => 'e.g. Rad Power RadCity',
@@ -438,7 +470,7 @@ class _VehicleStepState extends State<_VehicleStep> {
   @override
   Widget build(BuildContext context) {
     final chosen = _chosen;
-    const cardW = 210.0, cardH = 200.0, step = 14.0;
+    const cardW = 184.0, cardH = 176.0, step = 12.0;
     return _Card(
       badge: SvgPicture.asset('assets/brand/logo_m.svg', width: 40, height: 40),
       children: [
@@ -446,6 +478,21 @@ class _VehicleStepState extends State<_VehicleStep> {
         const SizedBox(height: 12),
         // the deck: pictures one over the other, the front one slides behind the last.
         // Picked: the picture stays as it is, with a check mark; the others go away.
+        Container(
+          padding: const EdgeInsets.fromLTRB(6, 12, 6, 8),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(24),
+            gradient: chosen == null
+                ? const LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [Color(0xFFF4F7F9), Color(0xFFE6EEF8)],
+                  )
+                : null,
+          ),
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+        Row(mainAxisSize: MainAxisSize.min, children: [
+          if (chosen == null) _arrow(Icons.chevron_left_rounded, _prev),
         SizedBox(
           height: chosen == null ? cardH + 4 * step * 0.85 : cardH,
           width: cardW + 4 * step,
@@ -472,11 +519,14 @@ class _VehicleStepState extends State<_VehicleStep> {
                       onTap: k == 0
                           ? (chosen == null
                               ? _pick
-                              : () => setState(() {
+                              : () {
+                                  setState(() {
                                     _chosen = null;
                                     _why = false;
                                     _focus.unfocus();
-                                  }))
+                                  });
+                                  _restart();
+                                })
                           : null,
                       onHorizontalDragEnd: k == 0 && chosen == null
                           ? (d) {
@@ -526,6 +576,41 @@ class _VehicleStepState extends State<_VehicleStep> {
                   ),
                 ),
               ),
+          ]),
+        ),
+          if (chosen == null) _arrow(Icons.chevron_right_rounded, _next),
+        ]),
+        // dots: one per picture; the one in front fills up until the next picture comes
+        if (chosen == null) ...[
+          const SizedBox(height: 10),
+          AnimatedBuilder(
+            animation: _turn,
+            builder: (_, __) => Row(mainAxisSize: MainAxisSize.min, children: [
+              for (final v in _all)
+                AnimatedContainer(
+                  duration: const Duration(milliseconds: 250),
+                  margin: const EdgeInsets.symmetric(horizontal: 3),
+                  width: v == _order.first ? 22 : 7,
+                  height: 7,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFCBD5DA),
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  alignment: Alignment.centerLeft,
+                  child: v == _order.first
+                      ? FractionallySizedBox(
+                          widthFactor: _turn.value.clamp(0.0, 1.0),
+                          heightFactor: 1,
+                          child: const ColoredBox(color: AppColors.blue),
+                        )
+                      : null,
+                ),
+            ]),
+          ),
+          const SizedBox(height: 6),
+          const Text('Tap the picture to choose', style: TextStyle(fontSize: 11.5, color: AppColors.soft)),
+        ],
           ]),
         ),
         // picked: the model and the i under it (not for a bike)

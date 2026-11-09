@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'data/app_state.dart';
 import 'data/auth.dart';
@@ -15,30 +16,77 @@ import 'widgets/pin.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // Only the quick local note "has an account" is read before the first frame, so the start
+  // screen (or the map) shows at once. Firebase and the saved data load while it plays.
+  final prefs = await SharedPreferences.getInstance();
+  final splash = !(prefs.getBool('hasAccount') ?? false);
+  runApp(MobilityApp(splash: splash));
+}
+
+Future<AppState> _boot() async {
   await Auth.i.init(); // Firebase sign-in (if this build has the config)
   final state = AppState();
   await state.load();
   await Store.i.load();
-  runApp(MobilityApp(state: state));
+  return state;
 }
 
 class MobilityApp extends StatelessWidget {
-  final AppState state;
-  const MobilityApp({super.key, required this.state});
+  final bool splash;
+  const MobilityApp({super.key, required this.splash});
 
   @override
   Widget build(BuildContext context) => MaterialApp(
         title: 'MOBIlity',
         debugShowCheckedModeBanner: false,
         theme: buildTheme(),
-        // Signed in: straight to the working map. Not signed in: the app loads behind the
-        // start screen (the city, ~3.5 s), which ends with the sign-in panel.
-        home: Stack(children: [
-          Shell(state: state),
-          if (!state.hasAccount)
-            Positioned.fill(child: Material(type: MaterialType.transparency, child: CitySplash(state: state))),
-        ]),
+        home: _Boot(splash: splash),
       );
+}
+
+/// Signed in: straight to the working map. Not signed in: the start screen (the city, ~3.5 s)
+/// plays at once; the map is built behind it only when it ends (so the city moves smoothly),
+/// then the sign-in pop-up comes.
+class _Boot extends StatefulWidget {
+  final bool splash;
+  const _Boot({required this.splash});
+  @override
+  State<_Boot> createState() => _BootState();
+}
+
+class _BootState extends State<_Boot> {
+  late final Future<AppState> _ready = _boot();
+  AppState? _state;
+  late bool _splash = widget.splash;
+  bool _mapNow = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _ready.then((st) {
+      if (!mounted) return;
+      setState(() {
+        _state = st;
+        // the note said "no account", but Firebase knows better (signed in on this phone)
+        if (st.hasAccount) _splash = false;
+      });
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final st = _state;
+    return Stack(children: [
+      if (st != null && (!_splash || _mapNow)) Shell(state: st) else const ColoredBox(color: Colors.white, child: SizedBox.expand()),
+      if (_splash)
+        Positioned.fill(
+          child: Material(
+            type: MaterialType.transparency,
+            child: CitySplash(state: _ready, onEnding: () => setState(() => _mapNow = true)),
+          ),
+        ),
+    ]);
+  }
 }
 
 class Shell extends StatefulWidget {

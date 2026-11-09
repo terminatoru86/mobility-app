@@ -22,8 +22,11 @@ import 'signup.dart';
 /// 4. you arrive: the green pin pulses
 /// 5. the sign-in panel slides up over the map (Apple, Google, or continue as guest).
 class CitySplash extends StatefulWidget {
-  final AppState state;
-  const CitySplash({super.key, required this.state});
+  /// The app state, ready when Firebase and the saved data have loaded (while the city plays).
+  final Future<AppState> state;
+  /// Called when the city has played: the map can be built behind it.
+  final VoidCallback? onEnding;
+  const CitySplash({super.key, required this.state, this.onEnding});
   @override
   State<CitySplash> createState() => _CitySplashState();
 }
@@ -86,8 +89,16 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
   late final AnimationController _a = AnimationController(vsync: this, duration: const Duration(milliseconds: 3500))
     ..addStatusListener((st) {
       if (st == AnimationStatus.completed && mounted) _askSignIn();
-    })
-    ..forward();
+    });
+
+  @override
+  void initState() {
+    super.initState();
+    // start moving with the first frame on screen (not while the app is still starting)
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _a.forward();
+    });
+  }
   bool _signIn = false; // our sign-in pop-up is open
   bool _fading = false;
   bool _gone = false;
@@ -141,19 +152,22 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
   /// The start screen ends: our sign-in pop-up over the map.
   Future<void> _askSignIn() async {
     if (_signIn) return;
+    final st = await widget.state; // normally ready long before the city has played
+    if (!mounted) return;
+    widget.onEnding?.call();
     setState(() => _signIn = true);
-    final ok = await showSignIn(context, widget.state);
+    final ok = await showSignIn(context, st);
     if (!mounted) return;
     setState(() => _fading = true);
     // signed in: which vehicle do you ride? (cannot be skipped)
-    if (ok) await showVehicleStep(context, widget.state);
+    if (ok) await showVehicleStep(context, st);
   }
 
   /// The 3D camera: perspective and tilt over the flat city, gliding down slowly.
   static Matrix4 _camera(double w, double h, double t) {
     final e = Curves.easeInOutSine.transform(t);
-    final tilt = 0.72 - 0.10 * e;
-    final zoom = 1.58 - 0.14 * e;
+    final tilt = 0.74 - 0.16 * e;
+    final zoom = 1.66 - 0.26 * e;
     final po = Offset(w / 2, h * 0.30), to = Offset(w / 2, h * 0.55);
     return Matrix4.identity()
       ..translate(po.dx, po.dy)
@@ -192,7 +206,7 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
                 final m = _camera(w, h, t);
                 Offset screen(double x, double y) => MatrixUtils.transformPoint(m, g.p(x, y));
                 // timeline (0..1 of 3.5 s)
-                final clear = Curves.easeOutCubic.transform(_seg(t, 0.0, 0.18)); // a thin haze lifts quickly
+                final clear = Curves.easeOutCubic.transform(_seg(t, 0.0, 0.28)); // a thin haze lifts
                 final pinsIn = _seg(t, 0.10, 0.40);
                 final routeF = Curves.easeInOutSine.transform(_seg(t, 0.24, 0.80));
                 final arrive = _seg(t, 0.78, 0.96);
