@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -345,11 +346,11 @@ class _SignInCardState extends State<SignInCard> {
   }
 }
 
-/// Which vehicle do you ride? A full page in the style of a product card deck:
-/// big title, one big card (more cards stacked behind it), the picture filling the top and
-/// changing by itself (swipe works too), the name and one line under it, an outlined
-/// "Choose" button in the card, "‹ 1/5 ›" under the card, then the model (not for a bike)
-/// and a big blue Continue at the bottom. No Skip.
+/// Which vehicle do you ride? A full page with a deck of pictures, one over the other:
+/// every few seconds the front one slides to the back (swipe does the same). No names,
+/// no arrows, no counters: just the vehicles. Tap yours: the deck stops, your vehicle goes
+/// small into the corner (tap it to change), then only the model field with an "i" (not for a
+/// bike) and Finish at the bottom, which lights up once the model is typed. No Skip.
 class _VehicleStep extends StatefulWidget {
   final AppState state;
   const _VehicleStep({required this.state});
@@ -358,25 +359,21 @@ class _VehicleStep extends StatefulWidget {
 }
 
 class _VehicleStepState extends State<_VehicleStep> {
-  static const _vehicles = [Vehicle.bike, Vehicle.ebike, Vehicle.scooter, Vehicle.moped, Vehicle.moto];
   static bool _hasModel(Vehicle v) => v != Vehicle.bike;
 
-  final _pc = PageController();
+  /// front first
+  final List<Vehicle> _order = [Vehicle.bike, Vehicle.ebike, Vehicle.scooter, Vehicle.moped, Vehicle.moto];
   final _model = TextEditingController();
+  final _focus = FocusNode();
   Timer? _t;
-  int _i = 0;
-  bool _touched = false;
   Vehicle? _chosen;
   bool _why = false;
 
   @override
   void initState() {
     super.initState();
-    _t = Timer.periodic(const Duration(milliseconds: 2800), (_) {
-      if (!_touched && _chosen == null && _pc.hasClients) {
-        _pc.animateToPage((_i + 1) % _vehicles.length,
-            duration: const Duration(milliseconds: 450), curve: Curves.easeInOut);
-      }
+    _t = Timer.periodic(const Duration(milliseconds: 2600), (_) {
+      if (_chosen == null) _next();
     });
     _model.addListener(() => setState(() {}));
   }
@@ -384,245 +381,261 @@ class _VehicleStepState extends State<_VehicleStep> {
   @override
   void dispose() {
     _t?.cancel();
-    _pc.dispose();
     _model.dispose();
+    _focus.dispose();
     super.dispose();
   }
 
-  void _go(int d) {
-    _touched = true;
-    final n = _i + d;
-    if (n < 0 || n >= _vehicles.length) return;
-    _pc.animateToPage(n, duration: const Duration(milliseconds: 300), curve: Curves.easeOut);
+  /// the front picture goes behind the last one
+  void _next() => setState(() => _order.add(_order.removeAt(0)));
+  void _prev() => setState(() => _order.insert(0, _order.removeLast()));
+
+  void _pick() {
+    final v = _order.first;
+    setState(() {
+      _chosen = v;
+      _why = false;
+    });
+    if (_hasModel(v)) _focus.requestFocus();
   }
 
-  Future<void> _continue() async {
-    final v = _chosen;
-    if (v == null) return;
+  bool get _ready => _chosen != null && (!_hasModel(_chosen!) || _model.text.trim().isNotEmpty);
+
+  Future<void> _finish() async {
+    final v = _chosen!;
     await widget.state.saveVehicle(v, _hasModel(v) ? _model.text.trim() : '');
     if (mounted) Navigator.pop(context);
   }
 
-  static String _line(Vehicle v) => switch (v) {
-        Vehicle.bike => 'No model needed',
-        Vehicle.ebike => 'Add the model for the right charger',
-        Vehicle.scooter => 'Add the model for the right charger',
-        Vehicle.moped => 'Add the model for service and parts',
-        Vehicle.moto => 'Add the model for service and parts',
-      };
-
   static String _example(Vehicle v) => switch (v) {
-        Vehicle.ebike => 'Rad Power RadCity',
-        Vehicle.scooter => 'Segway Ninebot Max',
-        Vehicle.moped => 'Vespa Primavera',
-        Vehicle.moto => 'Honda CB500',
+        Vehicle.ebike => 'e.g. Rad Power RadCity',
+        Vehicle.scooter => 'e.g. Segway Ninebot Max',
+        Vehicle.moped => 'e.g. Vespa Primavera',
+        Vehicle.moto => 'e.g. Honda CB500',
         Vehicle.bike => '',
       };
 
+  Widget _picture(Vehicle v) => DecoratedBox(
+        decoration: const BoxDecoration(
+          gradient: RadialGradient(radius: 0.9, colors: [Colors.white, Color(0xFFEEF1F3)]),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(22),
+          child: Center(child: Image.asset(v.asset, fit: BoxFit.contain)),
+        ),
+      );
+
   @override
   Widget build(BuildContext context) {
-    final v = _vehicles[_i];
     final chosen = _chosen;
-    final selectedHere = chosen == v;
-    final needsModel = chosen != null && _hasModel(chosen);
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(children: [
           Expanded(
-            child: ListView(padding: const EdgeInsets.fromLTRB(22, 18, 22, 12), children: [
-              const Text('What do you ride?',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w800, letterSpacing: -0.5, height: 1.1)),
-              const SizedBox(height: 8),
-              const Text('Pick your vehicle. We use it for parking, chargers and routes that fit it.',
-                  style: TextStyle(fontSize: 16, color: AppColors.ink, height: 1.3)),
-              const SizedBox(height: 22),
-              // the deck: two cards peeking out behind on the right, the big card in front
-              SizedBox(
-                height: 420,
-                child: Stack(clipBehavior: Clip.none, children: [
-                  Positioned(
-                    right: -6,
-                    top: 70,
-                    bottom: 70,
-                    width: 60,
-                    child: Container(
-                      decoration: BoxDecoration(color: const Color(0xFFB9C2C7), borderRadius: BorderRadius.circular(26)),
-                    ),
-                  ),
-                  Positioned(
-                    right: 10,
-                    top: 36,
-                    bottom: 36,
-                    width: 60,
-                    child: Container(
-                      decoration: BoxDecoration(color: const Color(0xFFDCE2E5), borderRadius: BorderRadius.circular(28)),
-                    ),
-                  ),
-                  Positioned.fill(
-                    right: 30,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(30),
-                        border: Border.all(
-                            color: selectedHere ? AppColors.blue : const Color(0xFFE3E8EA),
-                            width: selectedHere ? 2 : 1.2),
-                      ),
-                      clipBehavior: Clip.antiAlias,
-                      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                        // the picture, filling the top
-                        Expanded(
-                          child: DecoratedBox(
-                            decoration: const BoxDecoration(
-                              gradient: RadialGradient(
-                                radius: 0.9,
-                                colors: [Colors.white, Color(0xFFF0F2F3)],
-                              ),
-                            ),
-                            child: Listener(
-                              onPointerDown: (_) => _touched = true,
-                              child: PageView.builder(
-                                controller: _pc,
-                                itemCount: _vehicles.length,
-                                onPageChanged: (i) => setState(() {
-                                  _i = i;
-                                  _why = false;
-                                }),
-                                itemBuilder: (_, i) => Padding(
-                                  padding: const EdgeInsets.fromLTRB(18, 22, 18, 10),
-                                  child: Image.asset(_vehicles[i].asset, fit: BoxFit.contain),
+            child: LayoutBuilder(builder: (context, box) {
+              final w = box.maxWidth - 44;
+              final cardW = w - 48, cardH = math.min(cardW * 1.15, box.maxHeight * 0.62);
+              return Stack(children: [
+                // the deck, one picture over the other (back ones step right and down)
+                AnimatedOpacity(
+                  opacity: chosen == null ? 1 : 0,
+                  duration: const Duration(milliseconds: 300),
+                  child: IgnorePointer(
+                    ignoring: chosen != null,
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(22, 30, 22, 0),
+                      child: SizedBox(
+                        height: cardH + 4 * 12,
+                        child: Stack(clipBehavior: Clip.none, children: [
+                          for (var k = _order.length - 1; k >= 0; k--)
+                            AnimatedPositioned(
+                              key: ValueKey(_order[k]),
+                              duration: const Duration(milliseconds: 650),
+                              curve: Curves.easeInOutCubic,
+                              left: k * 12.0,
+                              top: k * 12.0,
+                              width: cardW,
+                              height: cardH,
+                              child: AnimatedScale(
+                                scale: 1 - k * 0.045,
+                                alignment: Alignment.topLeft,
+                                duration: const Duration(milliseconds: 650),
+                                curve: Curves.easeInOutCubic,
+                                child: AnimatedOpacity(
+                                  opacity: k > 3 ? 0.0 : 1 - k * 0.12,
+                                  duration: const Duration(milliseconds: 650),
+                                  child: GestureDetector(
+                                    onTap: k == 0 ? _pick : null,
+                                    onHorizontalDragEnd: k == 0
+                                        ? (d) {
+                                            if ((d.primaryVelocity ?? 0) < 0) {
+                                              _next();
+                                            } else {
+                                              _prev();
+                                            }
+                                          }
+                                        : null,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(30),
+                                        border: Border.all(color: const Color(0xFFE3E8EA), width: 1.2),
+                                        boxShadow: [
+                                          if (k == 0)
+                                            const BoxShadow(
+                                                color: Color(0x1A0F1E24), blurRadius: 22, offset: Offset(0, 10)),
+                                        ],
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      child: _picture(_order[k]),
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
+                        ]),
+                      ),
+                    ),
+                  ),
+                ),
+                // chosen: the deck stops, your vehicle sits small in the corner (tap to change)
+                if (chosen != null)
+                  Positioned(
+                    right: 22,
+                    top: 22,
+                    child: GestureDetector(
+                      onTap: () => setState(() {
+                        _chosen = null;
+                        _why = false;
+                        _focus.unfocus();
+                      }),
+                      child: Stack(clipBehavior: Clip.none, children: [
+                        Container(
+                          width: 104,
+                          height: 104,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(24),
+                            border: Border.all(color: AppColors.blue, width: 2),
+                            boxShadow: const [BoxShadow(color: Color(0x1A0F1E24), blurRadius: 14, offset: Offset(0, 6))],
                           ),
+                          clipBehavior: Clip.antiAlias,
+                          child: _picture(chosen),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 14, 20, 18),
-                          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                            Text(v.label, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w500)),
-                            const SizedBox(height: 4),
-                            Text(_line(v), style: const TextStyle(fontSize: 16, color: AppColors.soft)),
-                            const SizedBox(height: 16),
-                            SizedBox(
-                              width: double.infinity,
-                              height: 50,
-                              child: selectedHere
-                                  ? FilledButton.icon(
-                                      onPressed: null,
-                                      icon: const Icon(Icons.check_rounded),
-                                      label: Text('${v.label} chosen'),
-                                      style: FilledButton.styleFrom(
-                                        disabledBackgroundColor: const Color(0xFFE6EEFB),
-                                        disabledForegroundColor: AppColors.blue,
-                                        shape: const StadiumBorder(),
-                                        textStyle: const TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
-                                      ),
-                                    )
-                                  : OutlinedButton(
-                                      onPressed: () => setState(() {
-                                        _touched = true;
-                                        _chosen = v;
-                                      }),
-                                      style: OutlinedButton.styleFrom(
-                                        foregroundColor: AppColors.blue,
-                                        side: const BorderSide(color: AppColors.blue, width: 1.6),
-                                        shape: const StadiumBorder(),
-                                        textStyle: const TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
-                                      ),
-                                      child: const Text('Choose'),
-                                    ),
-                            ),
-                          ]),
+                        Positioned(
+                          right: -6,
+                          top: -6,
+                          child: Container(
+                            width: 26,
+                            height: 26,
+                            decoration: const BoxDecoration(color: AppColors.blue, shape: BoxShape.circle),
+                            child: const Icon(Icons.check_rounded, color: Colors.white, size: 18),
+                          ),
                         ),
                       ]),
                     ),
                   ),
-                ]),
-              ),
-              // ‹ 1/5 ›
-              Padding(
-                padding: const EdgeInsets.only(top: 8, right: 30),
-                child: Row(children: [
-                  IconButton(
-                    onPressed: _i == 0 ? null : () => _go(-1),
-                    icon: const Icon(Icons.chevron_left_rounded, size: 34),
-                    color: AppColors.ink,
-                    disabledColor: const Color(0xFFC3CBCF),
-                  ),
-                  Expanded(
-                    child: Text('${_i + 1}/${_vehicles.length}',
-                        textAlign: TextAlign.center, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w500)),
-                  ),
-                  IconButton(
-                    onPressed: _i == _vehicles.length - 1 ? null : () => _go(1),
-                    icon: const Icon(Icons.chevron_right_rounded, size: 34),
-                    color: AppColors.ink,
-                    disabledColor: const Color(0xFFC3CBCF),
-                  ),
-                ]),
-              ),
-              // the model: e-bike, scooter, moped, motorcycle
-              if (needsModel) ...[
-                const SizedBox(height: 10),
-                Text('${chosen.label} model', style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800)),
-                const SizedBox(height: 8),
-                Row(children: [
-                  Expanded(child: _input(_model, 'e.g. ${_example(chosen)}', TextInputType.text)),
-                  if (_model.text.trim().isEmpty) ...[
-                    const SizedBox(width: 10),
-                    InkWell(
-                      customBorder: const CircleBorder(),
-                      onTap: () => setState(() => _why = !_why),
-                      child: Container(
-                        width: 34,
-                        height: 34,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(color: AppColors.blue, width: 1.8),
-                          color: _why ? AppColors.blue : Colors.white,
+                // the model field with the i, nothing else
+                if (chosen != null && _hasModel(chosen))
+                  Positioned(
+                    left: 22,
+                    right: 22,
+                    top: 150,
+                    child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+                      Row(children: [
+                        Expanded(
+                          child: TextField(
+                            controller: _model,
+                            focusNode: _focus,
+                            textInputAction: TextInputAction.done,
+                            onSubmitted: (_) {
+                              if (_ready) _finish();
+                            },
+                            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                            decoration: InputDecoration(
+                              hintText: _example(chosen),
+                              filled: true,
+                              fillColor: AppColors.paper,
+                              contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(18), borderSide: BorderSide.none),
+                            ),
+                          ),
                         ),
-                        alignment: Alignment.center,
-                        child: Text('i',
-                            style: TextStyle(
-                                fontSize: 17,
-                                fontWeight: FontWeight.w800,
-                                fontStyle: FontStyle.italic,
-                                color: _why ? Colors.white : AppColors.blue)),
+                        const SizedBox(width: 10),
+                        InkWell(
+                          customBorder: const CircleBorder(),
+                          onTap: () => setState(() => _why = !_why),
+                          child: Container(
+                            width: 38,
+                            height: 38,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(color: AppColors.blue, width: 1.8),
+                              color: _why ? AppColors.blue : Colors.white,
+                            ),
+                            alignment: Alignment.center,
+                            child: Text('i',
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w800,
+                                    fontStyle: FontStyle.italic,
+                                    color: _why ? Colors.white : AppColors.blue)),
+                          ),
+                        ),
+                      ]),
+                      // the note, on the blue hatched area
+                      AnimatedSize(
+                        duration: const Duration(milliseconds: 220),
+                        curve: Curves.easeOutCubic,
+                        child: _why
+                            ? Container(
+                                margin: const EdgeInsets.only(top: 12),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFEAF1FD),
+                                  borderRadius: BorderRadius.circular(16),
+                                  border: Border.all(color: const Color(0xFFC9DAF8)),
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                child: CustomPaint(
+                                  painter: _Hatch(),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(14),
+                                    child: Text(
+                                      'The model helps us show the right charging plugs, GPS settings and service '
+                                      'suggestions, and connect you better with the shops and services in your city.',
+                                      style: TextStyle(fontSize: 14, color: AppColors.primary, height: 1.4),
+                                    ),
+                                  ),
+                                ),
+                              )
+                            : const SizedBox(width: double.infinity),
                       ),
-                    ),
-                  ],
-                ]),
-                if (_why && _model.text.trim().isEmpty)
-                  Container(
-                    margin: const EdgeInsets.only(top: 10),
-                    padding: const EdgeInsets.all(12),
-                    decoration: BoxDecoration(color: const Color(0xFFEAF1FD), borderRadius: BorderRadius.circular(14)),
-                    child: const Text(
-                      'The model helps us show the right charging plugs, GPS settings and service suggestions, '
-                      'and connect you better with the shops and services in your city.',
-                      style: TextStyle(fontSize: 13.5, color: AppColors.primary, height: 1.35),
-                    ),
+                    ]),
                   ),
-              ],
-            ]),
+              ]);
+            }),
           ),
-          // the big blue button at the bottom
+          // Finish: lights up once the model is typed (a bike needs none)
           Padding(
             padding: const EdgeInsets.fromLTRB(22, 4, 22, 14),
-            child: SizedBox(
-              width: double.infinity,
-              height: 58,
-              child: FilledButton(
-                onPressed: chosen == null ? null : _continue,
-                style: FilledButton.styleFrom(
-                  backgroundColor: AppColors.blue,
-                  disabledBackgroundColor: const Color(0xFFBFD0F2),
-                  disabledForegroundColor: Colors.white,
-                  shape: const StadiumBorder(),
-                  textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+            child: AnimatedOpacity(
+              opacity: chosen == null ? 0 : 1,
+              duration: const Duration(milliseconds: 250),
+              child: SizedBox(
+                width: double.infinity,
+                height: 58,
+                child: FilledButton(
+                  onPressed: _ready ? _finish : null,
+                  style: FilledButton.styleFrom(
+                    backgroundColor: AppColors.blue,
+                    disabledBackgroundColor: const Color(0xFFD5E0F5),
+                    disabledForegroundColor: Colors.white,
+                    shape: const StadiumBorder(),
+                    textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+                  ),
+                  child: const Text('Finish'),
                 ),
-                child: Text(chosen == null ? 'Choose your vehicle' : 'Continue with ${chosen.label.toLowerCase()}'),
               ),
             ),
           ),
@@ -630,6 +643,22 @@ class _VehicleStepState extends State<_VehicleStep> {
       ),
     );
   }
+}
+
+/// Fine diagonal lines on the blue note.
+class _Hatch extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final p = Paint()
+      ..color = const Color(0x142F6FDC)
+      ..strokeWidth = 1;
+    for (double x = -size.height; x < size.width; x += 9) {
+      canvas.drawLine(Offset(x, size.height), Offset(x + size.height, 0), p);
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
 
 /// The Google "G" in its four colours (drawn, no image file).
