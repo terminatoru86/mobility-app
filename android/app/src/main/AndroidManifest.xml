@@ -34,6 +34,8 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="https" android:host="mobility-d0e54.firebaseapp.com" android:pathPrefix="/__/auth/links"/>
+                <!-- the link in the email itself (before Firebase redirects): opens the app straight away -->
+                <data android:scheme="https" android:host="mobility-d0e54.firebaseapp.com" android:pathPrefix="/__/auth/action"/>
             </intent-filter>
             <!-- links are read by our code (app_links), not by Flutter's page router -->
             <meta-data android:name="flutter_deeplinking_enabled" android:value="false" />
