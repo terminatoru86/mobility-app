@@ -5,7 +5,8 @@ class AppColors {
   static const ink = Color(0xFF13212B);
   static const primary = Color(0xFF24333C);
   static const soft = Color(0xFF55666F);
-  static const paper = Color(0xFFF1F4F5);
+  /// The light grey of every page (the same as the start picture); cards and rows stay white.
+  static const paper = Color(0xFFEEF2F2);
   static const line = Color(0xFFD6DEE2);
   static const blue = Color(0xFF2F6FDC);
 
@@ -29,10 +30,11 @@ ThemeData buildTheme() {
   final base = ThemeData(
     useMaterial3: true,
     colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary, brightness: Brightness.light),
-    scaffoldBackgroundColor: const Color(0xFFF3F5F6),
+    scaffoldBackgroundColor: AppColors.paper,
   );
   return base.copyWith(
     textTheme: base.textTheme.apply(bodyColor: AppColors.ink, displayColor: AppColors.ink),
+    appBarTheme: const AppBarTheme(backgroundColor: AppColors.paper, surfaceTintColor: Colors.transparent),
     filledButtonTheme: FilledButtonThemeData(
       style: FilledButton.styleFrom(
         backgroundColor: AppColors.primary,

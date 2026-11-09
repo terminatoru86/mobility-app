@@ -226,7 +226,7 @@ class _DayScreenState extends State<DayScreen> {
     final rides = _days[_day] ?? const <Ride>[];
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.paper,
         title: Text(_dayNames[_day], style: const TextStyle(fontWeight: FontWeight.w800)),
         actions: [
           IconButton(onPressed: () => _go(-1), icon: const Icon(Icons.chevron_left)),

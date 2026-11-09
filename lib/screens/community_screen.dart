@@ -215,7 +215,7 @@ class _ListingDetailState extends State<ListingDetail> {
   Widget build(BuildContext context) {
     final l = widget.listing;
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.white),
+      appBar: AppBar(backgroundColor: AppColors.paper),
       body: ListView(padding: const EdgeInsets.all(16), children: [
         SizedBox(height: 230, child: _listingImage(l, radius: 20)),
         const SizedBox(height: 14),
@@ -273,7 +273,7 @@ class _PostListingState extends State<PostListing> {
           border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(14)), borderSide: BorderSide.none),
         );
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.white, title: const Text('New listing')),
+      appBar: AppBar(backgroundColor: AppColors.paper, title: const Text('New listing')),
       body: ListView(padding: const EdgeInsets.all(16), children: [
         GestureDetector(
           onTap: () => setState(() => _photo = !_photo),
@@ -487,7 +487,7 @@ class _RideLobbyState extends State<RideLobby> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.white, title: const Text('Saturday in the park')),
+      appBar: AppBar(backgroundColor: AppColors.paper, title: const Text('Saturday in the park')),
       body: ListView(padding: const EdgeInsets.all(16), children: [
         Center(
           child: Container(
@@ -656,7 +656,7 @@ class _RideLiveState extends State<RideLive> {
     final behind = [for (int i = 0; i < _t.length; i++) if (lead - _t[i] > 0.05) i];
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.paper,
         title: Text('Group · ${widget.riders.length}'),
         actions: [TextButton(onPressed: _end, child: const Text('End', style: TextStyle(color: AppColors.red)))],
       ),

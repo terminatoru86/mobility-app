@@ -107,7 +107,7 @@ class _BootState extends State<_Boot> {
   Widget build(BuildContext context) {
     final st = _state;
     return Stack(children: [
-      if (st != null) Shell(state: st) else const ColoredBox(color: Colors.white, child: SizedBox.expand()),
+      if (st != null) Shell(state: st) else const ColoredBox(color: AppColors.paper, child: SizedBox.expand()),
       if (_splash)
         Positioned.fill(
           child: IgnorePointer(
