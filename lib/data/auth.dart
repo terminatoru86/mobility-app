@@ -35,12 +35,50 @@ class Auth {
     return null;
   }
 
+  /// How the user signed in: Google, Email or Phone.
+  String? get provider {
+    final u = user;
+    if (u == null) return null;
+    final ids = u.providerData.map((p) => p.providerId).toSet();
+    if (ids.contains('google.com')) return 'Google';
+    if (ids.contains('phone')) return 'Phone';
+    return 'Email';
+  }
+
+  String? get photoUrl => user?.photoURL;
+
+  /// Bumps when the email link signs someone in (the sign-in card listens and closes).
+  final ValueNotifier<int> emailSignIns = ValueNotifier(0);
+
   Future<void> init() async {
     try {
       await Firebase.initializeApp();
       ready = true;
+      listenForEmailLink((_) => emailSignIns.value++);
     } catch (e) {
       debugPrint('Sign-in not set up (no Firebase config in this build): $e');
+    }
+  }
+
+  /// The link from the email, pasted into the app (when tapping it does not open the app).
+  Future<User?> signInWithPastedLink(String text) async {
+    if (!ready) throw const AuthProblem("Sign-in isn't set up in this build yet.");
+    final m = RegExp(r'https?://\S+').firstMatch(text.trim());
+    final link = m?.group(0) ?? text.trim();
+    if (!FirebaseAuth.instance.isSignInWithEmailLink(link)) {
+      throw const AuthProblem('Paste the whole link from the email.');
+    }
+    final prefs = await SharedPreferences.getInstance();
+    final email = prefs.getString(_emailKey);
+    if (email == null) throw const AuthProblem('Send the email again from this phone.');
+    try {
+      final u = (await FirebaseAuth.instance.signInWithEmailLink(email: email, emailLink: link)).user;
+      await prefs.remove(_emailKey);
+      return u;
+    } on FirebaseAuthException catch (e) {
+      throw AuthProblem(e.code == 'invalid-action-code'
+          ? 'This link was used already or is too old. Send a new one.'
+          : (e.message ?? e.code));
     }
   }
 

@@ -57,18 +57,7 @@ class ProfileScreen extends StatelessWidget {
               ),
             ]),
             const SizedBox(height: 6),
-            Row(children: [
-              Flexible(
-                child: Text(state.hasAccount ? (Auth.i.name ?? 'Your account') : 'Guest mode',
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w800)),
-              ),
-              const SizedBox(width: 8),
-              if (!state.hasAccount)
-                TextButton(onPressed: () => showSignupInvite(context, state), child: const Text('Create account')),
-              if (state.hasAccount)
-                TextButton(onPressed: state.signOut, child: const Text('Sign out')),
-            ]),
+            _AccountCard(state: state),
             const SizedBox(height: 8),
             _group([
               _row(Icons.pedal_bike, state.myVehicle == null ? 'My vehicle' : '${state.myVehicle!.label}${state.model.isEmpty ? '' : ' · ${state.model}'}',
@@ -742,3 +731,131 @@ class MyAreasScreen extends StatelessWidget {
     );
   }
 }
+
+/// Your account at the top of Profile: who you are and how you signed in, with Sign out;
+/// as a guest, a Sign in button that opens our sign-in pop-up.
+class _AccountCard extends StatelessWidget {
+  final AppState state;
+  const _AccountCard({required this.state});
+
+  Future<void> _signOut(BuildContext context) async {
+    final ok = await showDialog<bool>(
+      context: context,
+      barrierColor: const Color(0x550F1E24),
+      builder: (c) => Dialog(
+        backgroundColor: Colors.white,
+        insetPadding: const EdgeInsets.symmetric(horizontal: 36),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 22, 20, 10),
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            const Icon(Icons.logout_rounded, color: AppColors.red, size: 30),
+            const SizedBox(height: 8),
+            const Text('Sign out?', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800)),
+            const SizedBox(height: 4),
+            const Text('Your places, routes and vehicle stay saved in your account.',
+                textAlign: TextAlign.center, style: TextStyle(fontSize: 12.5, color: AppColors.soft)),
+            const SizedBox(height: 14),
+            SizedBox(
+              width: double.infinity,
+              height: 46,
+              child: TextButton(
+                onPressed: () => Navigator.pop(c, true),
+                style: TextButton.styleFrom(
+                  backgroundColor: AppColors.red,
+                  foregroundColor: Colors.white,
+                  shape: const StadiumBorder(),
+                  textStyle: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14),
+                ),
+                child: const Text('Sign out'),
+              ),
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(c, false),
+              child: const Text('Cancel', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.slate)),
+            ),
+          ]),
+        ),
+      ),
+    );
+    if (ok == true) await state.signOut();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final signedIn = state.hasAccount;
+    final name = Auth.i.name;
+    final email = Auth.i.user?.email ?? Auth.i.user?.phoneNumber;
+    final photo = Auth.i.photoUrl;
+    final initial = (name ?? 'M').trim().isEmpty ? 'M' : (name ?? 'M').trim()[0].toUpperCase();
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20)),
+      child: Column(children: [
+        Row(children: [
+          Container(
+            width: 48,
+            height: 48,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: signedIn ? AppColors.ink : AppColors.paper,
+              image: signedIn && photo != null ? DecorationImage(image: NetworkImage(photo), fit: BoxFit.cover) : null,
+            ),
+            alignment: Alignment.center,
+            child: signedIn
+                ? (photo == null
+                    ? Text(initial, style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w800))
+                    : null)
+                : const Icon(Icons.person_outline, color: AppColors.soft),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(signedIn ? (name ?? 'Your account') : 'Guest',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w800)),
+              const SizedBox(height: 2),
+              Text(
+                signedIn
+                    ? [if (email != null && email != name) email, if (Auth.i.provider != null) 'via ${Auth.i.provider}']
+                        .join(' · ')
+                    : 'Sign in to keep your places, routes and vehicle on any phone.',
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontSize: 12, color: AppColors.soft),
+              ),
+            ]),
+          ),
+        ]),
+        const SizedBox(height: 12),
+        SizedBox(
+          width: double.infinity,
+          height: 42,
+          child: signedIn
+              ? OutlinedButton.icon(
+                  onPressed: () => _signOut(context),
+                  icon: const Icon(Icons.logout_rounded, size: 18),
+                  label: const Text('Sign out'),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: AppColors.red,
+                    side: const BorderSide(color: Color(0xFFF1B4B6), width: 1.5),
+                    shape: const StadiumBorder(),
+                    textStyle: const TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                )
+              : FilledButton(
+                  onPressed: () => showSignupInvite(context, state),
+                  style: FilledButton.styleFrom(
+                    backgroundColor: AppColors.ink,
+                    shape: const StadiumBorder(),
+                    textStyle: const TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                  child: const Text('Sign in'),
+                ),
+        ),
+      ]),
+    );
+  }
+}
+
