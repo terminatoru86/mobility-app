@@ -22,7 +22,7 @@ Future<void> main() async {
   final prefs = await SharedPreferences.getInstance();
   final splash = !(prefs.getBool('hasAccount') ?? false);
   // the city picture of the start screen is read before the first frame
-  if (splash) await loadStartPicture();
+  if (splash) loadStartPicture(); // in the background: the first frame comes at once
   runApp(MobilityApp(splash: splash));
 }
 

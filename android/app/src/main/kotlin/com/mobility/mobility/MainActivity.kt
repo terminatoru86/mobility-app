@@ -11,7 +11,7 @@ class MainActivity : FlutterActivity() {
         // which has the same logo in the same place, so nothing jumps.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             splashScreen.setOnExitAnimationListener { view ->
-                view.animate().alpha(0f).setDuration(350L).withEndAction { view.remove() }.start()
+                view.animate().alpha(0f).setDuration(200L).withEndAction { view.remove() }.start()
             }
         }
     }

@@ -13,11 +13,12 @@ import 'pin.dart';
 /// The start screen, only for people without an account (once signed in, the app opens
 /// straight on the working map). One smooth take, like a short film:
 ///
-/// 1. our big "m" in the middle on a darker grey (the same as Android's own start, so nothing
-///    jumps), our four vehicles come in under it
-/// 2. they part: the logo glides up (MOBIlity appears under it), the vehicles glide down to the
-///    bottom, the grey opens up to the light grey and the city with our pins and your route comes in
-/// 3. "Get started" comes up; tapping it opens the map (main.dart), then the sign-in pop-up.
+/// 1. our big "m" in the middle on a grey (the same as Android's own start, so nothing jumps); it
+///    starts rising gently from the very first frame, with no pause
+/// 2. while it rises (MOBIlity appears under it), the grey opens up to the light grey and the city
+///    with our pins and your route comes in
+/// 3. "Get started" and our four vehicles come up at the bottom; tapping it opens the map
+///    (main.dart), then the sign-in pop-up.
 class CitySplash extends StatefulWidget {
   /// "Get started" was tapped.
   final VoidCallback? onStart;
@@ -29,22 +30,26 @@ class CitySplash extends StatefulWidget {
 double _seg(double t, double a, double b) => ((t - a) / (b - a)).clamp(0.0, 1.0);
 
 class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin {
-  late final AnimationController _a = AnimationController(vsync: this, duration: const Duration(milliseconds: 2600));
+  late final AnimationController _a = AnimationController(vsync: this, duration: const Duration(milliseconds: 2200));
 
   @override
   void initState() {
     super.initState();
-    // the logo first stands still where Android's own start left it (that one fades out over it),
-    // then the film plays
+    // the film plays from the very first frame, with no pause (the logo starts rising gently,
+    // right where Android's own start left it)
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Future.delayed(const Duration(milliseconds: 300), () {
-        if (mounted) _a.forward();
-      });
+      if (mounted) _a.forward();
     });
+    _cityReady.addListener(_cityCame);
+  }
+
+  void _cityCame() {
+    if (mounted) setState(() {});
   }
 
   @override
   void dispose() {
+    _cityReady.removeListener(_cityCame);
     _a.dispose();
     super.dispose();
   }
@@ -58,20 +63,20 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
         final city = RepaintBoundary(
           child: img != null
               ? RawImage(image: img, fit: BoxFit.cover, filterQuality: FilterQuality.medium)
-              : const SplashArt(showTitle: false),
+              : _cityReady.value
+                  ? const SplashArt(showTitle: false) // the file could not be read: draw it
+                  : const SizedBox.expand(), // still reading (a moment): nothing heavy meanwhile
         );
         return AnimatedBuilder(
           animation: _a,
           builder: (context, _) {
             final t = _a.value;
-            final by = Curves.easeOut.transform(_seg(t, 0.0, 0.18)); // the vehicles come in
-            final sp = Curves.easeInOutCubic.transform(_seg(t, 0.36, 0.80)); // they part
-            final bg = Curves.easeInOut.transform(_seg(t, 0.40, 0.84)); // the city comes in
-            final name = Curves.easeOut.transform(_seg(t, 0.62, 0.88)); // MOBIlity under the logo
-            final btn = Curves.easeOutCubic.transform(_seg(t, 0.78, 1.0)); // Get started
+            final sp = Curves.easeInOutCubic.transform(_seg(t, 0.0, 0.58)); // the logo rises
+            final bg = Curves.easeInOut.transform(_seg(t, 0.10, 0.64)); // the city comes in
+            final name = Curves.easeOut.transform(_seg(t, 0.36, 0.68)); // MOBIlity under the logo
+            final btn = Curves.easeOutCubic.transform(_seg(t, 0.58, 0.90)); // Get started and the vehicles
             final logo = ui.lerpDouble(kSplashLogo, 116, sp)!;
             final logoY = ui.lerpDouble(h / 2, h * 0.25, sp)!; // centre of the logo
-            final byTop = ui.lerpDouble(h / 2 + kSplashLogo / 2 + 10, h - pad.bottom - 46, sp)!;
             return Stack(fit: StackFit.expand, children: [
               // a darker grey at first (Android's own start is the same); it opens up to the light
               // grey of the app while the logo goes up
@@ -157,13 +162,13 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
                   ),
                 ),
               ),
-              // our four vehicles: under the logo, then down to the bottom
+              // our four vehicles at the bottom, with the button
               Positioned(
                 left: 0,
                 right: 0,
-                top: byTop,
+                bottom: pad.bottom + 18 - 16 * (1 - btn),
                 child: Opacity(
-                  opacity: by,
+                  opacity: btn,
                   child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                     for (final v in _Veh.values)
                       Padding(
@@ -216,14 +221,16 @@ class LogoPainter extends CustomPainter {
 /// The city behind the start screen as a file (made from [SplashArt] on GitHub, see preview/).
 const String kCityPicture = 'assets/splash/city.jpg';
 ui.Image? _cityImage;
+final ValueNotifier<bool> _cityReady = ValueNotifier(false);
 
-/// Reads the city picture before the first frame (only when the start screen will show).
+/// Reads the city picture in the background (the logo moves meanwhile; the city comes in later).
 Future<void> loadStartPicture() async {
   try {
     final data = await rootBundle.load(kCityPicture);
     final codec = await ui.instantiateImageCodec(data.buffer.asUint8List());
     _cityImage = (await codec.getNextFrame()).image;
   } catch (_) {}
+  _cityReady.value = true;
 }
 
 /// The start picture, drawn: the city, pins, riders, route, the logo and MOBIlity, the line and
