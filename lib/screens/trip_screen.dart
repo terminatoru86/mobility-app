@@ -268,7 +268,16 @@ class _RoutePlannerState extends State<RoutePlanner> {
                             // tap a vehicle: the routes are made again for it (moped and motorcycle use roads)
                             onSelected: (v) {
                               if (v == _rv) {
-                                if (!_vehiclePicked) setState(() => _vehiclePicked = true);
+                                if (_oneRoute) {
+                                  // an option was chosen and its row went away: tapping the vehicle brings it back
+                                  setState(() {
+                                    _variant = 'standard';
+                                    _marked = false;
+                                  });
+                                  _calc();
+                                } else if (!_vehiclePicked) {
+                                  setState(() => _vehiclePicked = true);
+                                }
                                 return;
                               }
                               setState(() {
@@ -569,18 +578,18 @@ class _RoutePlannerState extends State<RoutePlanner> {
     Widget look(String v) => Image.asset(_variantLook(v).$2,
         height: 18, errorBuilder: (_, __, ___) => const Icon(Icons.pedal_bike, size: 16));
 
+    // once an option is chosen the whole row goes away; tap the vehicle below to bring it back
+    if (_oneRoute) return const SizedBox.shrink();
     final variants = _vehiclePicked ? (routeVariants[_rv.name] ?? const <String>[]) : const <String>[];
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(children: [
-        // once one is chosen, only that one stays (tap it again: all come back)
         for (final v in variants)
-          if (!_oneRoute || _variant == v)
-            chip(_variantLook(v).$1, look(v), _variant == v, () {
+          chip(_variantLook(v).$1, look(v), _variant == v, () {
               setState(() => _variant = _variant == v ? 'standard' : v);
               _calc();
             }),
-        if ((_bikeLike || !_vehiclePicked) && (!_oneRoute || _marked))
+        if (_bikeLike || !_vehiclePicked)
           chip('Bike line', const BikeRoadIcon(size: 16), _marked, () {
             setState(() => _marked = !_marked);
             _calc();
