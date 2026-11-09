@@ -69,6 +69,15 @@ class _RoutePlannerState extends State<RoutePlanner> {
   bool _vehiclePicked = false; // the vehicle chips appear only after a vehicle is tapped below
   /// swiped away to the right: hidden until the app starts again
   static bool _chipsAway = false;
+  /// "My location" shows as a small pill first, then pulls into the dot
+  bool _meOpen = true;
+  Timer? _meTimer;
+  void _closeMeLater() {
+    _meTimer?.cancel();
+    _meTimer = Timer(const Duration(milliseconds: 1800), () {
+      if (mounted) setState(() => _meOpen = false);
+    });
+  }
   // Destination is an address (not one of our parking places): suggest a rack 300 m or closer.
   Place? _rack;
   List<LatLng> _walk = const [];
@@ -78,6 +87,13 @@ class _RoutePlannerState extends State<RoutePlanner> {
     super.initState();
     _findRack();
     _calc();
+    _closeMeLater();
+  }
+
+  @override
+  void dispose() {
+    _meTimer?.cancel();
+    super.dispose();
   }
 
   Future<void> _findRack() async {
@@ -351,7 +367,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
   Widget _glassTop() {
     // the dot of my location floats above the card, over the map; a "cable" of small dots
     // goes down from it into the card, to the first icon (a stop, or the destination flag)
-    const air = 22.0; // space above the card where the dot floats
+    const air = 26.0; // space above the card where the dot floats
     final rows = <Widget>[
       for (final (i, v) in _via.indexed) ...[
         _destRow(Icons.circle_outlined, AppColors.soft, v.$1, '', () => _editVia(i), plus: false, small: true),
@@ -378,38 +394,61 @@ class _RoutePlannerState extends State<RoutePlanner> {
           ),
         ),
       ),
-      // my location: the dot in the air and the cable (tap the dot: change the start)
+      // my location: first a small white pill "My location", which then pulls into the blue dot;
+      // a cable of small dots joins it to the flag. Tap the dot: the pill opens again; tap the pill: change the start.
       Positioned(
         left: 6,
         top: 0,
-        child: GestureDetector(
-          onTap: () => _edit(true),
-          behavior: HitTestBehavior.opaque,
-          child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Column(children: [
-              Container(
-                width: 14,
-                height: 14,
-                margin: const EdgeInsets.symmetric(horizontal: 4),
-                decoration: BoxDecoration(
-                  color: AppColors.blue,
-                  shape: BoxShape.circle,
-                  border: Border.all(color: Colors.white, width: 3),
-                  boxShadow: const [BoxShadow(color: Color(0x662F6FDC), blurRadius: 5)],
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          GestureDetector(
+            behavior: HitTestBehavior.opaque,
+            onTap: () {
+              if (_meOpen) {
+                _edit(true);
+              } else {
+                setState(() => _meOpen = true);
+                _closeMeLater();
+              }
+            },
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 450),
+              curve: Curves.easeInOutCubic,
+              height: 22,
+              padding: EdgeInsets.only(right: _meOpen ? 10 : 0),
+              decoration: BoxDecoration(
+                color: _meOpen ? Colors.white : Colors.white.withValues(alpha: 0),
+                borderRadius: BorderRadius.circular(11),
+                boxShadow: _meOpen ? const [BoxShadow(color: Color(0x290F1E24), blurRadius: 8, offset: Offset(0, 2))] : const [],
+              ),
+              child: Row(mainAxisSize: MainAxisSize.min, children: [
+                SizedBox(
+                  width: 22,
+                  child: Center(
+                    child: Container(
+                      width: 14,
+                      height: 14,
+                      decoration: BoxDecoration(
+                        color: AppColors.blue,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.white, width: 3),
+                        boxShadow: const [BoxShadow(color: Color(0x662F6FDC), blurRadius: 5)],
+                      ),
+                    ),
+                  ),
                 ),
-              ),
-              _vDots(air + 5 + (_rowH - 19) / 2 - 14),
-            ]),
-            // a start other than my location keeps its name, small, next to the dot
-            if (_fromName != 'My location')
-              Padding(
-                padding: const EdgeInsets.only(top: 1),
-                child: Text(_fromName,
-                    style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.ink,
-                        shadows: [Shadow(color: Colors.white, blurRadius: 4)])),
-              ),
-          ]),
-        ),
+                AnimatedSize(
+                  duration: const Duration(milliseconds: 450),
+                  curve: Curves.easeInOutCubic,
+                  child: _meOpen
+                      ? Text(_fromName,
+                          style: const TextStyle(fontSize: 11.5, fontWeight: FontWeight.w800, color: AppColors.ink))
+                      : const SizedBox(height: 22),
+                ),
+              ]),
+            ),
+          ),
+          _vDots(air + 5 + (_rowH - 19) / 2 - 22),
+        ]),
       ),
       // on the edge of the card: + (add a stop) with 2 points; ⇅ (turn the order around) from 3 points
       Positioned(
