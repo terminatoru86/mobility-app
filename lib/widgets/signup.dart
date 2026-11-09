@@ -34,12 +34,13 @@ Future<void> showSignupInvite(BuildContext context, AppState state) async {
   if (ok && context.mounted) await showVehicleStep(context, state);
 }
 
-/// After signing in: which vehicle do you ride? Our pop-up card; it cannot be skipped.
-Future<void> showVehicleStep(BuildContext context, AppState state) => showDialog<void>(
+/// Which vehicle do you ride? Our pop-up card. After signing in it cannot be skipped;
+/// from Profile and the map ([canClose]) it starts on the saved vehicle and closes with a tap outside.
+Future<void> showVehicleStep(BuildContext context, AppState state, {bool canClose = false}) => showDialog<void>(
       context: context,
       barrierColor: _barrier,
-      barrierDismissible: false,
-      builder: (_) => PopScope(canPop: false, child: _VehicleStep(state: state)),
+      barrierDismissible: canClose,
+      builder: (_) => PopScope(canPop: canClose, child: _VehicleStep(state: state, startOnSaved: canClose)),
     );
 
 class _Card extends StatelessWidget {
@@ -352,7 +353,8 @@ class _SignInCardState extends State<SignInCard> {
 /// bike) and Finish at the bottom, which lights up once the model is typed. No Skip.
 class _VehicleStep extends StatefulWidget {
   final AppState state;
-  const _VehicleStep({required this.state});
+  final bool startOnSaved;
+  const _VehicleStep({required this.state, this.startOnSaved = false});
   @override
   State<_VehicleStep> createState() => _VehicleStepState();
 }
@@ -371,6 +373,15 @@ class _VehicleStepState extends State<_VehicleStep> {
   @override
   void initState() {
     super.initState();
+    final saved = widget.state.myVehicle;
+    if (widget.startOnSaved && saved != null) {
+      // the saved vehicle in front, already picked, with its model
+      while (_order.first != saved) {
+        _order.add(_order.removeAt(0));
+      }
+      _chosen = saved;
+      _model.text = widget.state.model;
+    }
     _t = Timer.periodic(const Duration(milliseconds: 2600), (_) {
       if (_chosen == null) _next();
     });

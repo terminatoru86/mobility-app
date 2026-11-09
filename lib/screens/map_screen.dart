@@ -24,7 +24,6 @@ import '../widgets/place_sheet.dart';
 import '../widgets/signup.dart';
 import '../widgets/tiles.dart';
 import 'map_extras.dart';
-import 'other_screens.dart' show MyVehicleScreen;
 import 'trip_screen.dart';
 
 class MapScreen extends StatefulWidget {
@@ -651,7 +650,7 @@ class MapScreenState extends State<MapScreen> {
       context,
       p,
       myVehicle: widget.state.myVehicle,
-      showVehicleTip: !widget.state.sheetTipDone,
+      showVehicleTip: false, // the guide has 3 steps now; no extra step on the first sheet
       onTipSeen: widget.state.setSheetTipDone,
       onTrip: () => _trip(p),
       state: widget.state,
@@ -1321,18 +1320,14 @@ class MapScreenState extends State<MapScreen> {
       if (_showGuide)
         Positioned.fill(
           child: GuideOverlay(
-            total: 8,
+            total: 3,
             steps: [
-              GuideStep(_kSearch, 'Search, vehicle and weather',
-                  'Type an address or a place. The circle on the left turns: once your vehicle, once the weather. Tap it for rain and wind.'),
-              GuideStep(_kFilters, 'Quick filters',
-                  'Pick one or more: Rack, Parking, Charging, Service, Sharing, Wash, Shop. The map opens with Rack and Parking on. The others stay as small dots. Turn all off to see everything. Zoomed in, pins show their sign and time; further out only the sign, then only the colour with the free places, then groups.'),
-              GuideStep(_kPins, 'How to read the pins', 'The colour is the status. Inside the pin, the drawing and the time since the last update take turns.',
+              GuideStep(_kPins, 'How to read the pins',
+                  'The colour is the status. The number is the free places. Tap a pin to see the place.',
                   extra: const MiniLegend()),
-              GuideStep(_kLocate, 'Where you are', 'One tap brings you back. Two taps switch the map: road, bike map, satellite.'),
               GuideStep(_kReport, 'Report', 'Saw a pothole, a new place or a broken pump? Press + and tell the community.'),
-              GuideStep(_kSos, 'SOS', 'Hold for 3 seconds to ask riders nearby for help. Works without an account.'),
-              GuideStep(widget.navKey, 'Bottom menu', 'Routes, Health, Community and Profile. Replay this guide any time from Profile → Help.'),
+              GuideStep(_kSos, 'SOS',
+                  'Hold for 3 seconds to ask riders nearby for help. Replay this guide any time from Profile → Help.'),
             ],
             onFinish: () async {
               setState(() => _showGuide = false);
@@ -1495,8 +1490,7 @@ class MapScreenState extends State<MapScreen> {
               // vehicle side → My vehicle; weather side → rain and wind
               onTap: () async {
                 if (!_weatherFace) {
-                  await Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => MyVehicleScreen(state: widget.state)));
+                  await showVehicleStep(context, widget.state, canClose: true);
                   if (mounted) setState(() {});
                 } else if (_wx != null) {
                   showWeather(context, _wx!);
