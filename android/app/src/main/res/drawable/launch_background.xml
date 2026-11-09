@@ -2,6 +2,6 @@
 <!-- while Android starts the app: the light grey with our big "m" in the middle, exactly like the
      first frame of the start screen (which then plays: Powered by MOBIlity, the city, Get started) -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item><color android:color="#EEF2F2" /></item>
+    <item><color android:color="#D3DADE" /></item>
     <item android:drawable="@drawable/splash_logo" android:gravity="center" />
 </layer-list>

@@ -13,10 +13,10 @@ import 'pin.dart';
 /// The start screen, only for people without an account (once signed in, the app opens
 /// straight on the working map). One smooth take, like a short film:
 ///
-/// 1. our big "m" in the middle on the light grey (the same as Android's own start, so nothing
-///    jumps), "Powered by MOBIlity" comes in under it
-/// 2. they part: the logo glides up (MOBIlity appears under it), the line glides down to the
-///    bottom, and the city with our pins and your route comes in behind them
+/// 1. our big "m" in the middle on a darker grey (the same as Android's own start, so nothing
+///    jumps), our four vehicles come in under it
+/// 2. they part: the logo glides up (MOBIlity appears under it), the vehicles glide down to the
+///    bottom, the grey opens up to the light grey and the city with our pins and your route comes in
 /// 3. "Get started" comes up; tapping it opens the map (main.dart), then the sign-in pop-up.
 class CitySplash extends StatefulWidget {
   /// "Get started" was tapped.
@@ -49,9 +49,7 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
   @override
   Widget build(BuildContext context) {
     final pad = MediaQuery.of(context).padding;
-    return ColoredBox(
-      color: AppColors.paper,
-      child: LayoutBuilder(builder: (context, box) {
+    return LayoutBuilder(builder: (context, box) {
         final w = box.maxWidth, h = box.maxHeight;
         final img = _cityImage;
         final city = RepaintBoundary(
@@ -63,15 +61,18 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
           animation: _a,
           builder: (context, _) {
             final t = _a.value;
-            final by = Curves.easeOut.transform(_seg(t, 0.0, 0.22)); // "Powered by" comes in
+            final by = Curves.easeOut.transform(_seg(t, 0.0, 0.22)); // the vehicles come in
             final sp = Curves.easeInOutCubic.transform(_seg(t, 0.30, 0.78)); // they part
             final bg = Curves.easeInOut.transform(_seg(t, 0.34, 0.82)); // the city comes in
             final name = Curves.easeOut.transform(_seg(t, 0.58, 0.86)); // MOBIlity under the logo
             final btn = Curves.easeOutCubic.transform(_seg(t, 0.74, 1.0)); // Get started
             final logo = ui.lerpDouble(kSplashLogo, 116, sp)!;
             final logoY = ui.lerpDouble(h / 2, h * 0.25, sp)!; // centre of the logo
-            final byTop = ui.lerpDouble(h / 2 + kSplashLogo / 2 + 14, h - pad.bottom - 34, sp)!;
+            final byTop = ui.lerpDouble(h / 2 + kSplashLogo / 2 + 10, h - pad.bottom - 46, sp)!;
             return Stack(fit: StackFit.expand, children: [
+              // a darker grey at first (Android's own start is the same); it opens up to the light
+              // grey of the app while the logo goes up
+              ColoredBox(color: Color.lerp(kStartGrey, AppColors.paper, bg)!),
               Opacity(opacity: bg, child: city),
               // soft light behind the logo and at the bottom, so they read well on the city
               Opacity(
@@ -127,7 +128,7 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
               Positioned(
                 left: 24,
                 right: 24,
-                bottom: pad.bottom + 64,
+                bottom: pad.bottom + 74,
                 child: IgnorePointer(
                   ignoring: btn < 0.5,
                   child: Opacity(
@@ -151,23 +152,26 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
                   ),
                 ),
               ),
-              // Powered by MOBIlity: under the logo, then down to the bottom
+              // our four vehicles: under the logo, then down to the bottom
               Positioned(
                 left: 0,
                 right: 0,
                 top: byTop,
                 child: Opacity(
                   opacity: by,
-                  child: const Text('Powered by MOBIlity',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: AppColors.soft, letterSpacing: 0.3)),
+                  child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                    for (final v in _Veh.values)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        child: CustomPaint(size: const Size(32, 32), painter: _VehPainter(v, AppColors.soft, 1.5)),
+                      ),
+                  ]),
                 ),
               ),
             ]);
           },
         );
-      }),
-    );
+      });
   }
 }
 
@@ -232,6 +236,9 @@ const String kSplashLine = 'Ride in. Park easy.';
 
 /// The logo's size on the start screen (Android's own start draws it the same size, in the middle).
 const double kSplashLogo = 170;
+
+/// The darker grey of the very first moment (Android's own start uses the same).
+const Color kStartGrey = Color(0xFFD3DADE);
 
 
 /// Map units → screen (before the 3D camera): an isometric grid, 3 units per block.
