@@ -136,7 +136,7 @@ class SignInCard extends StatefulWidget {
   State<SignInCard> createState() => _SignInCardState();
 }
 
-class _SignInCardState extends State<SignInCard> {
+class _SignInCardState extends State<SignInCard> with WidgetsBindingObserver {
   _Mode _mode = _Mode.choose;
   bool _busy = false;
   String? _problem;
@@ -150,15 +150,36 @@ class _SignInCardState extends State<SignInCard> {
     super.initState();
     // tapping the link in the email opens the app and signs in: close with "signed in"
     Auth.i.emailSignIns.addListener(_linked);
+    Auth.i.emailLinkProblem.addListener(_linkProblem);
+    WidgetsBinding.instance.addObserver(this);
   }
 
+  bool _closed = false;
   void _linked() {
-    if (mounted) Navigator.pop(context, true);
+    if (!mounted || _closed) return;
+    _closed = true;
+    Navigator.pop(context, true);
+  }
+
+  void _linkProblem() {
+    final p = Auth.i.emailLinkProblem.value;
+    if (mounted && p != null) setState(() => _problem = p);
+  }
+
+  /// Back from the email app: check whether the link signed us in (and try it if it was missed).
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state != AppLifecycleState.resumed || _mode != _Mode.emailSent) return;
+    Future.delayed(const Duration(milliseconds: 800), () {
+      if (mounted && !_closed) Auth.i.checkEmailLinkNow(email: _email.text.trim());
+    });
   }
 
   @override
   void dispose() {
     Auth.i.emailSignIns.removeListener(_linked);
+    Auth.i.emailLinkProblem.removeListener(_linkProblem);
+    WidgetsBinding.instance.removeObserver(this);
     _email.dispose();
     _phone.dispose();
     _code.dispose();

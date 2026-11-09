@@ -99,27 +99,69 @@ class Auth {
       throw AuthProblem(e.code == 'invalid-email' ? 'That email address looks wrong.' : (e.message ?? e.code));
     }
     (await SharedPreferences.getInstance()).setString(_emailKey, email);
+    emailLinkProblem.value = null;
   }
 
   StreamSubscription<Uri>? _links;
+  String? _lastLink;
+
+  /// A problem with the link from the email, shown inside the sign-in card (no pop-ups).
+  final ValueNotifier<String?> emailLinkProblem = ValueNotifier(null);
 
   /// Waits for the link from the email (it opens the app); signs in when it comes.
   void listenForEmailLink(void Function(User user) onSignedIn) {
     if (!ready || _links != null) return;
-    _links = AppLinks().uriLinkStream.listen((uri) async {
-      final link = uri.toString();
-      if (!FirebaseAuth.instance.isSignInWithEmailLink(link)) return;
-      final prefs = await SharedPreferences.getInstance();
-      final email = prefs.getString(_emailKey);
-      if (email == null) return; // the link was opened on another phone
-      try {
-        final u = (await FirebaseAuth.instance.signInWithEmailLink(email: email, emailLink: link)).user;
-        await prefs.remove(_emailKey);
-        if (u != null) onSignedIn(u);
-      } catch (e) {
-        debugPrint('Email link sign-in failed: $e');
-      }
-    });
+    _links = AppLinks().uriLinkStream.listen((uri) => handleEmailLink(uri.toString()));
+  }
+
+  /// Signs in with the link from the email. [email]: the address typed in the card, used when
+  /// the phone lost the saved one. True when signed in.
+  Future<bool> handleEmailLink(String link, {String? email}) async {
+    if (!ready || !FirebaseAuth.instance.isSignInWithEmailLink(link)) return false;
+    if (user != null) {
+      emailSignIns.value++;
+      return true;
+    }
+    if (link == _lastLink) return false; // this link was already tried
+    _lastLink = link;
+    final prefs = await SharedPreferences.getInstance();
+    final e = prefs.getString(_emailKey) ?? ((email ?? '').contains('@') ? email : null);
+    if (e == null) {
+      emailLinkProblem.value = 'Type your email and send a new link from this phone.';
+      return false;
+    }
+    try {
+      final u = (await FirebaseAuth.instance.signInWithEmailLink(email: e, emailLink: link)).user;
+      await prefs.remove(_emailKey);
+      if (u == null) return false;
+      emailLinkProblem.value = null;
+      emailSignIns.value++;
+      return true;
+    } on FirebaseAuthException catch (x) {
+      emailLinkProblem.value = x.code == 'invalid-action-code' || x.code == 'expired-action-code'
+          ? 'This link was used already or is too old. Tap Send again.'
+          : x.code == 'invalid-email'
+              ? 'The link is for another email. Send it again to this address.'
+              : (x.message ?? x.code);
+    } catch (x) {
+      emailLinkProblem.value = 'Sign-in failed. Tap Send again.';
+      debugPrint('Email link sign-in failed: $x');
+    }
+    return false;
+  }
+
+  /// The app comes back to the front (e.g. after tapping the link): if signed in meanwhile,
+  /// say so; otherwise try the last link Android gave the app (in case it was missed).
+  Future<void> checkEmailLinkNow({String? email}) async {
+    if (!ready) return;
+    if (user != null) {
+      emailSignIns.value++;
+      return;
+    }
+    try {
+      final uri = await AppLinks().getLatestLink();
+      if (uri != null) await handleEmailLink(uri.toString(), email: email);
+    } catch (_) {}
   }
 
   // ---- phone (SMS code); used only when [kPhoneSignIn] is on

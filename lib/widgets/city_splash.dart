@@ -11,9 +11,9 @@ import 'pin.dart';
 
 /// The start screen, only for people without an account (once signed in, the app opens
 /// straight on the working map). One still picture, no motion: the city with our pins, the
-/// riders and your blue route to the green pin; in the middle the "m" logo (the same one, in the
+/// riders and your blue route to the green pin, over the whole screen; in the middle the "m" logo (the same one, in the
 /// same place, as Android's own start, so nothing jumps) and MOBIlity under it; at the bottom one
-/// short line and our vehicles. The city fades in under the logo the moment it is drawn.
+/// short line and our vehicles. It is drawn in the very first frame (Android's logo stays until then).
 /// When it ends (main.dart) it fades out over the working map and the sign-in pop-up comes.
 class CitySplash extends StatefulWidget {
   const CitySplash({super.key});
@@ -55,6 +55,16 @@ final List<(double, double, Place)> _pins = [
   (3, 10.5, _place('j', PlaceType.parkCovered, Status.free, '2')),
   (10.5, 4.5, _place('k', PlaceType.rack, Status.free, '3')),
   (-1.5, 9, _place('l', PlaceType.rack, Status.almost, '1')),
+  // more pins all over the picture: at the top and in the corners
+  (-3, -1.5, _place('m', PlaceType.rack, Status.free, '5')),
+  (-1.5, -3, _place('n', PlaceType.parkOutdoor, Status.almost, '2')),
+  (1.5, -3, _place('o', PlaceType.charging, Status.free, '3')),
+  (-1.5, 0, _place('p', PlaceType.rack, Status.free, '6')),
+  (3, -1.5, _place('q', PlaceType.rack, Status.full, '0')),
+  (10.5, 6, _place('r', PlaceType.rack, Status.free, '2')),
+  (10.5, 12, _place('s', PlaceType.parkOutdoor, Status.free, '4')),
+  (13.5, 9, _place('t', PlaceType.parkCovered, Status.free, '3')),
+  (15, 10.5, _place('u', PlaceType.charging, Status.almost, '1')),
 ];
 const _arriveAt = 2; // index of the green pin you ride to
 
@@ -78,15 +88,6 @@ const _riders = <(_Veh, Offset, Offset)>[
 ];
 
 class _CitySplashState extends State<CitySplash> {
-  bool _city = false; // the first frame shows only the logo (instant); the city comes right after
-
-  @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) setState(() => _city = true);
-    });
-  }
 
   /// The drawn area: bigger than the screen, so the tilted map never shows an edge.
   static Rect _area(double w, double h) => Rect.fromLTRB(-0.6 * w, -1.5 * h, 1.6 * w, 1.3 * h);
@@ -118,13 +119,8 @@ class _CitySplashState extends State<CitySplash> {
           for (var i = 0; i < _pins.length; i++) (screen(_pins[i].$1, _pins[i].$2), i),
         ]..sort((a, b) => a.$1.dy.compareTo(b.$1.dy));
         return Stack(fit: StackFit.expand, children: [
-          if (_city)
-            TweenAnimationBuilder<double>(
-              tween: Tween(begin: 0, end: 1),
-              duration: const Duration(milliseconds: 380),
-              curve: Curves.easeOut,
-              builder: (context, k, child) => Opacity(opacity: k, child: child),
-              child: RepaintBoundary(
+          // the whole screen is the city (drawn in the very first frame, Android's logo stays until then)
+          RepaintBoundary(
                 child: Stack(fit: StackFit.expand, children: [
                   // the city a little to the left, so the route and the green pin sit well inside
                   Transform.translate(
@@ -149,8 +145,8 @@ class _CitySplashState extends State<CitySplash> {
                     Builder(builder: (_) {
                       final place = _pins[i].$3;
                       final depth = (0.48 + 0.34 * (pt.dy / h)).clamp(0.45, 0.85);
-                      final dim = i != _arriveAt ? 0.5 : 1.0;
-                      final full = place.status == Status.full ? 0.55 : 1.0;
+                      final dim = i != _arriveAt ? 0.8 : 1.0;
+                      final full = place.status == Status.full ? 0.7 : 1.0;
                       return Positioned(
                         left: pt.dx - PlacePin.width / 2,
                         top: pt.dy - PlacePin.height,
@@ -175,30 +171,8 @@ class _CitySplashState extends State<CitySplash> {
                   ),
                     ]),
                   ),
-                  // the map melts into white all round, in a soft oval (no straight edge anywhere)
-                  IgnorePointer(
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: RadialGradient(
-                          center: const Alignment(0, -0.08),
-                          radius: 0.62,
-                          transform: _Oval(h / w),
-                          colors: const [
-                            Color(0x00FFFFFF),
-                            Color(0x00FFFFFF),
-                            Color(0x33FFFFFF),
-                            Color(0x99FFFFFF),
-                            Color(0xE6FFFFFF),
-                            Colors.white,
-                          ],
-                          stops: const [0, .55, .70, .84, .94, 1],
-                        ),
-                      ),
-                    ),
-                  ),
                 ]),
               ),
-            ),
           _Title(h: h),
         ]);
       }),
@@ -216,20 +190,6 @@ class _CitySplashState extends State<CitySplash> {
   }
 }
 
-
-/// Stretches a round gradient into an oval that fits the tall screen.
-class _Oval extends GradientTransform {
-  final double k; // height / width
-  const _Oval(this.k);
-  @override
-  Matrix4 transform(Rect bounds, {TextDirection? textDirection}) {
-    final c = bounds.center;
-    return Matrix4.identity()
-      ..translate(c.dx, c.dy)
-      ..scale(1.0, k * bounds.width / bounds.shortestSide)
-      ..translate(-c.dx, -c.dy);
-  }
-}
 
 /// The city, painted once (it does not move).
 class _CityOnce extends CustomPainter {
@@ -263,9 +223,20 @@ class _Title extends StatelessWidget {
           decoration: BoxDecoration(
             gradient: RadialGradient(
               center: Alignment(0, 0.04),
-              radius: 0.62,
-              colors: [Color(0xE6FFFFFF), Color(0xA6FFFFFF), Color(0x00FFFFFF)],
+              radius: 0.5,
+              colors: [Color(0xE6FFFFFF), Color(0x99FFFFFF), Color(0x00FFFFFF)],
               stops: [0, .45, 1],
+            ),
+          ),
+        ),
+        // a soft white behind the line and the vehicles at the bottom
+        const DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Color(0x00FFFFFF), Color(0x00FFFFFF), Color(0xCCFFFFFF)],
+              stops: [0, .76, .93],
             ),
           ),
         ),
