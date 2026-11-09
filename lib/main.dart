@@ -49,8 +49,8 @@ class MobilityApp extends StatelessWidget {
 }
 
 /// Signed in: straight to the working map. Not signed in: the start picture (still, shown at
-/// once), the map is built behind it; then the picture fades out and our sign-in pop-up comes
-/// over the working map, then the vehicle. The map's guide waits until that is done.
+/// once), the map is built behind it; then the picture fades out, the map loads for 2 seconds and
+/// our sign-in pop-up comes over it, then the vehicle. The map's guide waits until that is done.
 class _Boot extends StatefulWidget {
   final bool splash;
   const _Boot({required this.splash});
@@ -87,6 +87,9 @@ class _BootState extends State<_Boot> {
       if (!mounted) return;
       setState(() => _splash = false);
       splashOn.value = false;
+      // the map loads for a moment on its own, then the sign-in pop-up comes over it
+      await Future.delayed(const Duration(seconds: 2));
+      if (!mounted) return;
       // over the working map: sign in, then the vehicle (cannot be skipped once signed in)
       final ok = await showSignIn(context, st);
       if (ok && mounted) await showVehicleStep(context, st);
