@@ -240,7 +240,7 @@ const String kSplashLine = 'Ride in. Park easy.';
 const double kSplashLogo = 170;
 
 /// The darker grey of the very first moment (Android's own start uses the same).
-const Color kStartGrey = Color(0xFFE0E6E9);
+const Color kStartGrey = Color(0xFFE8EDEF);
 
 
 /// Map units → screen (before the 3D camera): an isometric grid, 3 units per block.
