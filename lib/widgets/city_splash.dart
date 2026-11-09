@@ -126,6 +126,10 @@ class _CitySplashState extends State<CitySplash> {
               builder: (context, k, child) => Opacity(opacity: k, child: child),
               child: RepaintBoundary(
                 child: Stack(fit: StackFit.expand, children: [
+                  // the city a little to the left, so the route and the green pin sit well inside
+                  Transform.translate(
+                    offset: Offset(-0.13 * w, 0.02 * h),
+                    child: Stack(fit: StackFit.expand, children: [
                   Transform(
                     transform: m,
                     filterQuality: FilterQuality.medium,
@@ -168,6 +172,8 @@ class _CitySplashState extends State<CitySplash> {
                       me: _routePoint(1, screen),
                       others: [for (final (v, _, b) in _riders) (v, screen(b.dx, b.dy))],
                     ),
+                  ),
+                    ]),
                   ),
                   // the map melts into white all round, in a soft oval (no straight edge anywhere)
                   IgnorePointer(
