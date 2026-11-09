@@ -480,11 +480,11 @@ class _RoutePlannerState extends State<RoutePlanner> {
         },
       );
 
-  // ── Fast / Balanced / Quiet: one soft track; the chosen route sits on a white thumb ──
+  // ── Fast / Balanced / Quiet: a thin track, names only; the chosen one on a white thumb ──
   Widget _segmented() => Container(
-        height: 44,
-        padding: const EdgeInsets.all(3),
-        decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
+        height: 30,
+        padding: const EdgeInsets.all(2),
+        decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(10)),
         child: Row(children: [
           for (final label in const ['Fast', 'Balanced', 'Quiet'])
             Expanded(
@@ -506,26 +506,16 @@ class _RoutePlannerState extends State<RoutePlanner> {
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: on ? Colors.white : Colors.transparent,
-                      borderRadius: BorderRadius.circular(11),
+                      borderRadius: BorderRadius.circular(8),
                       boxShadow: on
-                          ? const [BoxShadow(color: Color(0x1F0F1E24), blurRadius: 6, offset: Offset(0, 2))]
+                          ? const [BoxShadow(color: Color(0x1A0F1E24), blurRadius: 4, offset: Offset(0, 1))]
                           : const [],
                     ),
-                    child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                      Text(label,
-                          style: TextStyle(
-                              fontSize: 12.5,
-                              height: 1.1,
-                              fontWeight: on ? FontWeight.w900 : FontWeight.w700,
-                              color: off ? const Color(0xFFB4BEC2) : (on ? AppColors.ink : AppColors.soft))),
-                      if (!off)
-                        Text(_routes[i].duration,
-                            style: TextStyle(
-                                fontSize: 10.5,
-                                height: 1.15,
-                                fontWeight: FontWeight.w600,
-                                color: on ? AppColors.blue : const Color(0xFF8C9BA5))),
-                    ]),
+                    child: Text(label,
+                        style: TextStyle(
+                            fontSize: 12.5,
+                            fontWeight: on ? FontWeight.w800 : FontWeight.w600,
+                            color: off ? const Color(0xFFB4BEC2) : (on ? AppColors.ink : AppColors.soft))),
                   ),
                 );
               }),
