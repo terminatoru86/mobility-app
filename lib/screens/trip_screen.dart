@@ -62,12 +62,13 @@ class _RoutePlannerState extends State<RoutePlanner> {
   int _sel = 0;
   bool _loading = true;
   bool _ready = false;
-  Weather? _wx;
   final List<(String, LatLng)> _via = [];
   late Vehicle _rv = widget.myVehicle ?? Vehicle.bike; // the routes are made for this vehicle // stops added with the ≡+ button
   String _variant = 'standard'; // standard / shared / passenger / cargo (chips under the destination card)
   bool _marked = false; // "Bike line": only marked, paved bike ways
   bool _vehiclePicked = false; // the vehicle chips appear only after a vehicle is tapped below
+  /// swiped away to the right: hidden until the app starts again
+  static bool _chipsAway = false;
   // Destination is an address (not one of our parking places): suggest a rack 300 m or closer.
   Place? _rack;
   List<LatLng> _walk = const [];
@@ -77,9 +78,6 @@ class _RoutePlannerState extends State<RoutePlanner> {
     super.initState();
     _findRack();
     _calc();
-    fetchWeather(userPos).then((w) {
-      if (mounted) setState(() => _wx = w);
-    });
   }
 
   Future<void> _findRack() async {
@@ -208,7 +206,13 @@ class _RoutePlannerState extends State<RoutePlanner> {
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             _glassTop(),
             const SizedBox(height: 8),
-            _variantChips(),
+            if (!_chipsAway)
+              Dismissible(
+                key: const ValueKey('variant-chips'),
+                direction: DismissDirection.startToEnd,
+                onDismissed: (_) => setState(() => _chipsAway = true),
+                child: _variantChips(),
+              ),
           ]),
         ),
         // ── panel ──
@@ -307,10 +311,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
                     child: Row(children: [
                       _roundBtn(Icons.format_list_bulleted, () => _moreInfo(r)),
                       const SizedBox(width: 8),
-                      _roundBtn(_isSaved ? Icons.favorite : Icons.favorite_border, () {
-                        Store.i.saveRoute(SavedRoute('$_fromName → $_toName', _from, _to, r.meters, r.seconds));
-                        setState(() {});
-                      }, color: _isSaved ? AppColors.red : AppColors.ink),
+                      _cancelButton(),
                       const SizedBox(width: 8),
                       Expanded(child: _goButton(r)),
                     ]),
@@ -323,7 +324,6 @@ class _RoutePlannerState extends State<RoutePlanner> {
     );
   }
 
-  bool get _isSaved => Store.i.savedRoutes.any((s) => s.name == '$_fromName → $_toName');
 
   Widget _softCard({required Widget child, EdgeInsets padding = const EdgeInsets.fromLTRB(12, 9, 10, 10)}) => Container(
         padding: padding,
@@ -480,57 +480,58 @@ class _RoutePlannerState extends State<RoutePlanner> {
         },
       );
 
-  // ── Fast / Balanced / Quiet: thin segmented control ──
-  /// Fast / Balanced / Quiet: three tiles across the panel, in the style of the tiles above
-  /// (grey-paper, rounded 14): the name and the route's time; the chosen one with a dark edge.
-  Widget _segmented() => Row(children: [
-        for (final label in const ['Fast', 'Balanced', 'Quiet'])
-          Expanded(
-            child: Builder(builder: (_) {
-              final i = _routes.indexWhere((x) => x.label == label);
-              final on = i == _sel && i >= 0;
-              final off = i < 0;
-              return Padding(
-                padding: EdgeInsets.only(right: label == 'Quiet' ? 0 : 8),
-                child: GestureDetector(
+  // ── Fast / Balanced / Quiet: one soft track; the chosen route sits on a white thumb ──
+  Widget _segmented() => Container(
+        height: 44,
+        padding: const EdgeInsets.all(3),
+        decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
+        child: Row(children: [
+          for (final label in const ['Fast', 'Balanced', 'Quiet'])
+            Expanded(
+              child: Builder(builder: (_) {
+                final i = _routes.indexWhere((x) => x.label == label);
+                final on = i == _sel && i >= 0;
+                final off = i < 0;
+                return GestureDetector(
+                  behavior: HitTestBehavior.opaque,
                   onTap: off
                       ? null
                       : () {
                           setState(() => _sel = i);
                           _fit();
                         },
-                  // slim: one line (name · time), same grey-paper look as the tiles above
                   child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 180),
-                    height: 32,
+                    duration: const Duration(milliseconds: 200),
+                    curve: Curves.easeOut,
                     alignment: Alignment.center,
-                    padding: const EdgeInsets.symmetric(horizontal: 8),
                     decoration: BoxDecoration(
-                      color: on ? Colors.white : AppColors.paper,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: on ? AppColors.ink : Colors.transparent, width: 1.4),
+                      color: on ? Colors.white : Colors.transparent,
+                      borderRadius: BorderRadius.circular(11),
+                      boxShadow: on
+                          ? const [BoxShadow(color: Color(0x1F0F1E24), blurRadius: 6, offset: Offset(0, 2))]
+                          : const [],
                     ),
-                    child: FittedBox(
-                      fit: BoxFit.scaleDown,
-                      child: Text.rich(TextSpan(children: [
-                        TextSpan(
-                            text: label,
+                    child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+                      Text(label,
+                          style: TextStyle(
+                              fontSize: 12.5,
+                              height: 1.1,
+                              fontWeight: on ? FontWeight.w900 : FontWeight.w700,
+                              color: off ? const Color(0xFFB4BEC2) : (on ? AppColors.ink : AppColors.soft))),
+                      if (!off)
+                        Text(_routes[i].duration,
                             style: TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w800,
-                                color: off ? const Color(0xFFB4BEC2) : AppColors.ink)),
-                        if (!off)
-                          TextSpan(
-                              text: '  ${_routes[i].duration}',
-                              style: const TextStyle(fontSize: 11.5, color: AppColors.soft)),
-                      ])),
-                    ),
+                                fontSize: 10.5,
+                                height: 1.15,
+                                fontWeight: FontWeight.w600,
+                                color: on ? AppColors.blue : const Color(0xFF8C9BA5))),
+                    ]),
                   ),
-                ),
-              );
-            }),
-          ),
-      ]);
+                );
+              }),
+            ),
+        ]),
+      );
 
   bool get _bikeLike => _rv == Vehicle.bike || _rv == Vehicle.ebike || _rv == Vehicle.scooter;
 
@@ -600,7 +601,6 @@ class _RoutePlannerState extends State<RoutePlanner> {
 
   // ── Parking near the destination ──
   bool _nearOpen = false;
-  bool _sumOpen = false;
 
   List<Place> get _nearDest {
     const d = Distance();
@@ -718,27 +718,14 @@ class _RoutePlannerState extends State<RoutePlanner> {
 
   Widget _summaryCard(RouteResult r) {
     final mix = _roadMix(r);
-    final w = _wx;
-    return _softCard(
-      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        _cardHead(
-          w == null
-              ? const Text('Weather loading…', style: TextStyle(color: AppColors.soft, fontSize: 12.5))
-              : Wrap(spacing: 10, children: [
-                  _wxItem(_skyIcon(w), w.sky),
-                  _wxItem(null, '${w.temp.round()}°C'),
-                  _wxItem(Icons.air, '${w.wind.round()} km/h'),
-                  if (w.humidity != null) _wxItem(Icons.water_drop_outlined, '${w.humidity}%'),
-                ]),
-          _sumOpen,
-          () => setState(() => _sumOpen = !_sumOpen),
-        ),
-        const SizedBox(height: 8),
-        if (!_sumOpen)
-          ClipRRect(
-            borderRadius: BorderRadius.circular(4),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 4),
+      child: Row(children: [
+        Expanded(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(3),
             child: SizedBox(
-              height: 8,
+              height: 6,
               child: Row(children: [
                 for (final e in mix.entries)
                   if (e.value > 0)
@@ -748,56 +735,35 @@ class _RoutePlannerState extends State<RoutePlanner> {
                     ),
               ]),
             ),
-          )
-        else
-          for (final e in mix.entries)
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 2.5),
-              child: Row(children: [
-                SizedBox(width: 118, child: Text(e.key, style: const TextStyle(fontSize: 12.5))),
-                Expanded(
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(4),
-                    child: LinearProgressIndicator(
-                      value: e.value,
-                      minHeight: 6,
-                      backgroundColor: const Color(0xFFE3E8EA),
-                      color: _mixColors[e.key],
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  width: 40,
-                  child: Text('${(e.value * 100).round()}%',
-                      textAlign: TextAlign.right, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 12.5)),
-                ),
-              ]),
-            ),
-        const SizedBox(height: 8),
-        Row(children: [
-          const Icon(Icons.route, size: 15, color: AppColors.soft),
-          const SizedBox(width: 6),
-          const Text('Trip summary · ', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.soft, fontSize: 13)),
-          Text('↗ ${r.climb} m · ↘ ${r.descent} m', style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 13)),
-        ]),
+          ),
+        ),
+        const SizedBox(width: 10),
+        Text('↗ ${r.climb} m  ↘ ${r.descent} m',
+            style: const TextStyle(fontSize: 11.5, fontWeight: FontWeight.w700, color: AppColors.soft)),
       ]),
     );
   }
 
-  Widget _wxItem(IconData? i, String t) => Row(mainAxisSize: MainAxisSize.min, children: [
-        if (i != null) ...[Icon(i, size: 15, color: AppColors.soft), const SizedBox(width: 3)],
-        Text(t, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 12.5)),
-      ]);
-
-  IconData _skyIcon(Weather w) => switch (w.sky) {
-        'Clear' => Icons.wb_sunny_outlined,
-        'Rain' || 'Showers' => Icons.umbrella_outlined,
-        'Snow' => Icons.ac_unit,
-        'Storm' => Icons.thunderstorm_outlined,
-        _ => Icons.wb_cloudy_outlined,
-      };
-
   // ── bottom buttons ──
+  /// ✕: leave this route and go back to search for something else; dark pill, same height as GO.
+  Widget _cancelButton() => DecoratedBox(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(22),
+          boxShadow: const [BoxShadow(color: Color(0x330F1E24), blurRadius: 10, offset: Offset(0, 3))],
+        ),
+        child: Material(
+          shape: const StadiumBorder(),
+          clipBehavior: Clip.antiAlias,
+          child: Ink(
+            decoration: const BoxDecoration(gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Color(0xFF34474F), Color(0xFF24333C)])),
+            child: InkWell(
+              onTap: () => Navigator.of(context).pop(),
+              child: const SizedBox(width: 64, height: 44, child: Icon(Icons.close_rounded, color: Colors.white, size: 22)),
+            ),
+          ),
+        ),
+      );
+
   Widget _roundBtn(IconData i, VoidCallback onTap, {Color color = AppColors.ink}) => Material(
         color: Colors.white,
         shape: const CircleBorder(side: BorderSide(color: Color(0xFFD5DDDF), width: 1.5)),
@@ -930,6 +896,42 @@ class _RoutePlannerState extends State<RoutePlanner> {
           Text('On the route: 🚦 about $lights traffic lights · ⛔ ${math.max(0, lights ~/ 3)} stops',
               style: const TextStyle(fontWeight: FontWeight.w700)),
           const SizedBox(height: 12),
+          // the road types (they were under the arrow of the trip summary)
+          for (final e in mix.entries)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 2.5),
+              child: Row(children: [
+                SizedBox(width: 118, child: Text(e.key, style: const TextStyle(fontSize: 12.5))),
+                Expanded(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(4),
+                    child: LinearProgressIndicator(
+                        value: e.value, minHeight: 6, backgroundColor: const Color(0xFFE3E8EA), color: _mixColors[e.key]),
+                  ),
+                ),
+                SizedBox(
+                  width: 40,
+                  child: Text('${(e.value * 100).round()}%',
+                      textAlign: TextAlign.right, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 12.5)),
+                ),
+              ]),
+            ),
+          const SizedBox(height: 12),
+          // saving the route moved here from the old ♡ next to GO
+          StatefulBuilder(builder: (c, set) {
+            final saved = Store.i.savedRoutes.any((s) => s.name == '$_fromName → $_toName');
+            return OutlinedButton.icon(
+              onPressed: saved
+                  ? null
+                  : () {
+                      Store.i.saveRoute(SavedRoute('$_fromName → $_toName', _from, _to, r.meters, r.seconds));
+                      set(() {});
+                    },
+              icon: Icon(saved ? Icons.favorite : Icons.favorite_border, color: AppColors.red, size: 18),
+              label: Text(saved ? 'Saved' : 'Save route'),
+            );
+          }),
+          const SizedBox(height: 8),
           Text(r.roadMix != null ? 'Road types from OpenStreetMap (Valhalla) · heights from Open-Meteo.' : 'Road types are estimated from street names until the map data answers.',
               style: TextStyle(fontSize: 11, color: AppColors.soft)),
         ]),
