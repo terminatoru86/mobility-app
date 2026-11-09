@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'places.dart';
+import 'auth.dart';
 
 /// Small persisted app state (local only for now; Firebase comes in M2).
 class AppState extends ChangeNotifier {
@@ -23,6 +24,8 @@ class AppState extends ChangeNotifier {
     sheetTipDone = _p.getBool('sheetTipDone') ?? false;
     sharingChosen = _p.getBool('sharingChosen') ?? false;
     hasAccount = _p.getBool('hasAccount') ?? false;
+    // with Firebase set up, the signed-in user decides
+    if (Auth.i.ready) hasAccount = Auth.i.user != null;
     final v = _p.getString('myVehicle');
     myVehicle = v == null ? null : Vehicle.values.where((e) => e.name == v).firstOrNull;
     model = _p.getString('model') ?? '';
@@ -55,6 +58,13 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
+  Future<void> signOut() async {
+    await Auth.i.signOut();
+    hasAccount = false;
+    await _p.setBool('hasAccount', false);
+    notifyListeners();
+  }
+
   Future<void> saveVehicle(Vehicle? v, String m) async {
     myVehicle = v;
     model = m;
@@ -69,6 +79,7 @@ class AppState extends ChangeNotifier {
 
   /// For testing on the phone: start over as a new user.
   Future<void> resetDemo() async {
+    await Auth.i.signOut();
     await _p.clear();
     opens = 1;
     await _p.setInt('opens', 1);

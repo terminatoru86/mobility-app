@@ -11,6 +11,7 @@ import '../widgets/pin.dart';
 import '../widgets/place_sheet.dart' show openLink;
 import '../widgets/signup.dart';
 import 'map_screen.dart' show chooseOperators;
+import '../data/auth.dart';
 
 /// 3.10 Profile: account and settings, no side menu.
 class ProfileScreen extends StatelessWidget {
@@ -57,11 +58,16 @@ class ProfileScreen extends StatelessWidget {
             ]),
             const SizedBox(height: 6),
             Row(children: [
-              Text(state.hasAccount ? 'Your account' : 'Guest mode',
-                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w800)),
+              Flexible(
+                child: Text(state.hasAccount ? (Auth.i.name ?? 'Your account') : 'Guest mode',
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w800)),
+              ),
               const SizedBox(width: 8),
               if (!state.hasAccount)
                 TextButton(onPressed: () => showSignupInvite(context, state), child: const Text('Create account')),
+              if (state.hasAccount)
+                TextButton(onPressed: state.signOut, child: const Text('Sign out')),
             ]),
             const SizedBox(height: 8),
             _group([

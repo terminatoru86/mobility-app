@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'data/app_state.dart';
+import 'data/auth.dart';
 import 'data/places.dart';
 import 'data/store.dart';
 import 'screens/community_screen.dart';
@@ -14,6 +15,7 @@ import 'widgets/pin.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Auth.i.init(); // Firebase sign-in (if this build has the config)
   final state = AppState();
   await state.load();
   await Store.i.load();

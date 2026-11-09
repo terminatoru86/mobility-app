@@ -12,3 +12,6 @@ GeneratedPluginRegistrant.java
 key.properties
 **/*.keystore
 **/*.jks
+
+# Firebase config: private, never in git (GitHub secret GOOGLE_SERVICES_JSON)
+app/google-services.json

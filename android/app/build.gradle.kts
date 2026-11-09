@@ -4,6 +4,13 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+// Firebase (sign-in): google-services.json is private, kept out of git. On the laptop it sits in
+// android/app/; the GitHub check writes it from the GOOGLE_SERVICES_JSON secret. Without it the
+// app still builds, sign-in just says it is not set up yet.
+if (file("google-services.json").exists()) {
+    apply(plugin = "com.google.gms.google-services")
+}
+
 android {
     namespace = "com.mobility.mobility"
     compileSdk = flutter.compileSdkVersion

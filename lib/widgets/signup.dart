@@ -4,11 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../data/app_state.dart';
+import '../data/auth.dart';
 import '../data/places.dart';
 import '../theme.dart';
 
 /// Account invite (variant A): small card in the middle.
-/// Only Apple or Google. "Skip" closes it.
+/// Google sign-in (Firebase). "Skip" closes it.
 Future<void> showSignupInvite(BuildContext context, AppState state) async {
   final created = await showDialog<bool>(
     context: context,
@@ -16,7 +17,12 @@ Future<void> showSignupInvite(BuildContext context, AppState state) async {
     builder: (_) => const _InviteCard(),
   );
   if (created == true && context.mounted) {
-    // Real Apple / Google sign-in comes with Firebase (M2). For now we mark the account as created.
+    // the real Google sign-in (Firebase); nothing happens if it is cancelled or fails
+    try {
+      if (await Auth.i.google() == null) return;
+    } catch (_) {
+      return;
+    }
     await state.createAccount();
     if (context.mounted) {
       await showDialog<void>(
@@ -96,8 +102,6 @@ class _InviteCard extends StatelessWidget {
           benefit(Icons.pedal_bike, 'Vehicle'),
         ]),
         const SizedBox(height: 14),
-        _ssoButton('Continue with Apple', Colors.black, Colors.white, () => Navigator.pop(context, true)),
-        const SizedBox(height: 8),
         _ssoButton('Continue with Google', Colors.white, AppColors.ink, () => Navigator.pop(context, true),
             border: true),
         TextButton(

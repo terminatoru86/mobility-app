@@ -7,6 +7,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:latlong2/latlong.dart' show LatLng;
 
 import '../data/app_state.dart';
+import '../data/auth.dart';
 import '../data/places.dart';
 import '../theme.dart';
 import 'pin.dart';
@@ -99,6 +100,15 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
   Size? _forSize;
 
   @override
+  void initState() {
+    super.initState();
+    // the link from the sign-in email opens the app: sign in and go on
+    Auth.i.listenForEmailLink((_) {
+      if (mounted && !_fading) _close(signedIn: true);
+    });
+  }
+
+  @override
   void dispose() {
     _a.dispose();
     _pic?.dispose();
@@ -142,7 +152,7 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
     if (signedIn) await widget.state.createAccount();
     if (!mounted) return;
     setState(() => _fading = true);
-    // Real Apple / Google sign-in comes with Firebase (M2); then: which vehicle do you ride?
+    // signed in: which vehicle do you ride?
     if (signedIn) await showVehicleStep(context, widget.state);
   }
 
@@ -297,8 +307,7 @@ class _CitySplashState extends State<CitySplash> with SingleTickerProviderStateM
                   _Title(t: t, signIn: _signIn),
                   _SignInPanel(
                     up: _signIn,
-                    onApple: () => _close(signedIn: true),
-                    onGoogle: () => _close(signedIn: true),
+                    onSignedIn: () => _close(signedIn: true),
                     onGuest: () => _close(signedIn: false),
                   ),
                 ]);
@@ -438,67 +447,282 @@ class _Title extends StatelessWidget {
 }
 
 /// The sign-in panel: slides up over the map when the start screen ends.
-/// Apple or Google (the real sign-in comes with Firebase), or carry on as a guest.
-class _SignInPanel extends StatelessWidget {
+/// Google, a link by email, the phone number (when [kPhoneSignIn] is on), or as a guest.
+/// Problems are shown as a short line inside the panel (no pop-ups).
+class _SignInPanel extends StatefulWidget {
   final bool up;
-  final VoidCallback onApple, onGoogle, onGuest;
-  const _SignInPanel({required this.up, required this.onApple, required this.onGoogle, required this.onGuest});
+  final VoidCallback onSignedIn, onGuest;
+  const _SignInPanel({required this.up, required this.onSignedIn, required this.onGuest});
+  @override
+  State<_SignInPanel> createState() => _SignInPanelState();
+}
+
+enum _Mode { choose, email, emailSent, phone, phoneCode }
+
+class _SignInPanelState extends State<_SignInPanel> {
+  _Mode _mode = _Mode.choose;
+  bool _busy = false;
+  String? _problem;
+  final _email = TextEditingController();
+  final _phone = TextEditingController(text: '+1 ');
+  final _code = TextEditingController();
+  String? _verificationId;
+
+  @override
+  void dispose() {
+    _email.dispose();
+    _phone.dispose();
+    _code.dispose();
+    super.dispose();
+  }
+
+  Future<void> _run(Future<void> Function() job) async {
+    setState(() {
+      _busy = true;
+      _problem = null;
+    });
+    try {
+      await job();
+    } catch (e) {
+      if (mounted) setState(() => _problem = e is AuthProblem ? e.message : 'Something went wrong. Try again.');
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  void _google() => _run(() async {
+        final u = await Auth.i.google();
+        if (u != null) widget.onSignedIn();
+      });
+
+  void _sendEmail() => _run(() async {
+        final e = _email.text.trim();
+        if (!e.contains('@') || !e.contains('.')) throw const AuthProblem('Type your email address.');
+        await Auth.i.sendEmailLink(e);
+        if (mounted) setState(() => _mode = _Mode.emailSent);
+      });
+
+  void _sendSms() => _run(() async {
+        final n = _phone.text.replaceAll(RegExp(r'[^0-9+]'), '');
+        if (n.length < 10) throw const AuthProblem('Type your phone number.');
+        final failed = Completer<String?>();
+        await Auth.i.phoneStart(n,
+            codeSent: (id) {
+              _verificationId = id;
+              if (mounted) setState(() => _mode = _Mode.phoneCode);
+              if (!failed.isCompleted) failed.complete(null);
+            },
+            done: (_) => widget.onSignedIn(),
+            failed: (m) {
+              if (!failed.isCompleted) failed.complete(m);
+            });
+        final m = await failed.future;
+        if (m != null) throw AuthProblem(m);
+      });
+
+  void _checkCode() => _run(() async {
+        final id = _verificationId;
+        if (id == null) return;
+        try {
+          final u = await Auth.i.phoneCode(id, _code.text.trim());
+          if (u != null) widget.onSignedIn();
+        } catch (_) {
+          throw const AuthProblem('That code is not right.');
+        }
+      });
+
+  Widget _btn(String text, Color bg, Color fg, VoidCallback? onTap, {bool border = false, Widget? icon}) => SizedBox(
+        width: double.infinity,
+        height: 50,
+        child: TextButton(
+          onPressed: _busy ? null : onTap,
+          style: TextButton.styleFrom(
+            backgroundColor: bg,
+            foregroundColor: fg,
+            disabledForegroundColor: fg.withValues(alpha: .5),
+            shape: StadiumBorder(side: border ? const BorderSide(color: AppColors.line, width: 1.5) : BorderSide.none),
+            textStyle: const TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
+          ),
+          child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            if (icon != null) ...[icon, const SizedBox(width: 10)],
+            Text(text),
+          ]),
+        ),
+      );
+
+  Widget _field(TextEditingController c, String hint, TextInputType type, {VoidCallback? onDone}) => TextField(
+        controller: c,
+        keyboardType: type,
+        autofocus: true,
+        onSubmitted: (_) => onDone?.call(),
+        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+        decoration: InputDecoration(
+          hintText: hint,
+          filled: true,
+          fillColor: AppColors.paper,
+          contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(25), borderSide: BorderSide.none),
+        ),
+      );
+
+  Widget _back() => TextButton(
+        onPressed: _busy
+            ? null
+            : () => setState(() {
+                  _mode = _Mode.choose;
+                  _problem = null;
+                }),
+        child: const Text('Back', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.slate)),
+      );
+
+  List<Widget> _body() {
+    switch (_mode) {
+      case _Mode.choose:
+        return [
+          const Text('Welcome to MOBIlity',
+              style: TextStyle(fontSize: 21, fontWeight: FontWeight.w800, color: AppColors.ink)),
+          const SizedBox(height: 4),
+          const Text('Sign in to keep your places, routes and vehicle on any phone.',
+              textAlign: TextAlign.center, style: TextStyle(fontSize: 13, color: AppColors.soft, height: 1.3)),
+          const SizedBox(height: 16),
+          _btn('Continue with Google', Colors.white, AppColors.ink, _google,
+              border: true, icon: const _GoogleG()),
+          const SizedBox(height: 10),
+          _btn('Continue with email', AppColors.ink, Colors.white, () => setState(() => _mode = _Mode.email),
+              icon: const Icon(Icons.mail_outline, size: 20)),
+          if (kPhoneSignIn) ...[
+            const SizedBox(height: 10),
+            _btn('Continue with phone', Colors.white, AppColors.ink, () => setState(() => _mode = _Mode.phone),
+                border: true, icon: const Icon(Icons.phone_iphone, size: 20)),
+          ],
+          const SizedBox(height: 4),
+          TextButton(
+            onPressed: _busy ? null : widget.onGuest,
+            child: const Text('Continue as guest',
+                style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.slate, fontSize: 13.5)),
+          ),
+        ];
+      case _Mode.email:
+        return [
+          const Text('Sign in with email', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
+          const SizedBox(height: 4),
+          const Text("We'll email you a link. Open it on this phone and you're in. No password.",
+              textAlign: TextAlign.center, style: TextStyle(fontSize: 13, color: AppColors.soft, height: 1.3)),
+          const SizedBox(height: 14),
+          _field(_email, 'you@example.com', TextInputType.emailAddress, onDone: _sendEmail),
+          const SizedBox(height: 10),
+          _btn('Send the link', AppColors.ink, Colors.white, _sendEmail),
+          _back(),
+        ];
+      case _Mode.emailSent:
+        return [
+          const Icon(Icons.mark_email_read_outlined, size: 36, color: AppColors.green),
+          const SizedBox(height: 6),
+          const Text('Check your inbox', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
+          const SizedBox(height: 4),
+          Text('We sent a sign-in link to ${_email.text.trim()}.\nOpen it on this phone.',
+              textAlign: TextAlign.center, style: const TextStyle(fontSize: 13, color: AppColors.soft, height: 1.3)),
+          const SizedBox(height: 6),
+          _back(),
+        ];
+      case _Mode.phone:
+        return [
+          const Text('Sign in with your phone', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
+          const SizedBox(height: 4),
+          const Text("We'll text you a 6-digit code.",
+              textAlign: TextAlign.center, style: TextStyle(fontSize: 13, color: AppColors.soft)),
+          const SizedBox(height: 14),
+          _field(_phone, '+1 312 555 0100', TextInputType.phone, onDone: _sendSms),
+          const SizedBox(height: 10),
+          _btn('Send the code', AppColors.ink, Colors.white, _sendSms),
+          _back(),
+        ];
+      case _Mode.phoneCode:
+        return [
+          const Text('Type the code', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
+          const SizedBox(height: 4),
+          Text('Sent to ${_phone.text.trim()}',
+              textAlign: TextAlign.center, style: const TextStyle(fontSize: 13, color: AppColors.soft)),
+          const SizedBox(height: 14),
+          _field(_code, '123456', TextInputType.number, onDone: _checkCode),
+          const SizedBox(height: 10),
+          _btn('Sign in', AppColors.ink, Colors.white, _checkCode),
+          _back(),
+        ];
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     final bottom = MediaQuery.of(context).padding.bottom;
-    Widget btn(String text, Color bg, Color fg, VoidCallback onTap, {bool border = false, IconData? icon}) => SizedBox(
-          width: double.infinity,
-          height: 50,
-          child: TextButton(
-            onPressed: onTap,
-            style: TextButton.styleFrom(
-              backgroundColor: bg,
-              foregroundColor: fg,
-              shape: StadiumBorder(side: border ? const BorderSide(color: AppColors.line, width: 1.5) : BorderSide.none),
-              textStyle: const TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
-            ),
-            child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              if (icon != null) ...[Icon(icon, size: 20), const SizedBox(width: 8)],
-              Text(text),
-            ]),
-          ),
-        );
+    final keyboard = MediaQuery.of(context).viewInsets.bottom;
     return Align(
       alignment: Alignment.bottomCenter,
       child: AnimatedSlide(
-        offset: up ? Offset.zero : const Offset(0, 1.1),
+        offset: widget.up ? Offset.zero : const Offset(0, 1.1),
         duration: const Duration(milliseconds: 480),
         curve: Curves.easeOutCubic,
         child: Container(
           width: double.infinity,
-          padding: EdgeInsets.fromLTRB(22, 22, 22, 10 + bottom),
+          padding: EdgeInsets.fromLTRB(22, 22, 22, 10 + (keyboard > 0 ? keyboard : bottom)),
           decoration: const BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
             boxShadow: [BoxShadow(color: Color(0x2213212B), blurRadius: 24, offset: Offset(0, -6))],
           ),
-          child: Column(mainAxisSize: MainAxisSize.min, children: [
-            const Text('Welcome to MOBIlity',
-                style: TextStyle(fontSize: 21, fontWeight: FontWeight.w800, color: AppColors.ink)),
-            const SizedBox(height: 4),
-            const Text('Sign in to keep your places, routes and vehicle on any phone.',
-                textAlign: TextAlign.center, style: TextStyle(fontSize: 13, color: AppColors.soft, height: 1.3)),
-            const SizedBox(height: 16),
-            btn('Continue with Apple', Colors.black, Colors.white, onApple, icon: Icons.apple),
-            const SizedBox(height: 10),
-            btn('Continue with Google', Colors.white, AppColors.ink, onGoogle, border: true, icon: Icons.g_mobiledata),
-            const SizedBox(height: 4),
-            TextButton(
-              onPressed: onGuest,
-              child: const Text('Continue as guest',
-                  style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.slate, fontSize: 13.5)),
-            ),
-          ]),
+          child: AnimatedSize(
+            duration: const Duration(milliseconds: 220),
+            curve: Curves.easeOutCubic,
+            child: Column(mainAxisSize: MainAxisSize.min, children: [
+              ..._body(),
+              if (_busy)
+                const Padding(
+                  padding: EdgeInsets.only(top: 4),
+                  child: SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2)),
+                ),
+              if (_problem != null)
+                Padding(
+                  padding: const EdgeInsets.only(top: 6),
+                  child: Text(_problem!,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(fontSize: 12.5, color: AppColors.red, fontWeight: FontWeight.w600)),
+                ),
+            ]),
+          ),
         ),
       ),
     );
   }
+}
+
+/// The Google "G" in its four colours (drawn, no image file).
+class _GoogleG extends StatelessWidget {
+  const _GoogleG();
+  @override
+  Widget build(BuildContext context) => CustomPaint(size: const Size(20, 20), painter: _GPainter());
+}
+
+class _GPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final r = size.width / 2, c = size.center(Offset.zero);
+    final w = size.width * 0.2;
+    final rect = Rect.fromCircle(center: c, radius: r - w / 2);
+    Paint p(Color col) => Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = w
+      ..color = col;
+    const d = math.pi / 180;
+    canvas.drawArc(rect, -40 * d, -50 * d, false, p(const Color(0xFFEA4335))); // red, top
+    canvas.drawArc(rect, -90 * d, -90 * d, false, p(const Color(0xFFEA4335)));
+    canvas.drawArc(rect, 180 * d, -60 * d, false, p(const Color(0xFFFBBC05))); // yellow, left
+    canvas.drawArc(rect, 120 * d, -75 * d, false, p(const Color(0xFF34A853))); // green, bottom
+    canvas.drawArc(rect, 45 * d, -45 * d, false, p(const Color(0xFF4285F4))); // blue, right
+    canvas.drawRect(Rect.fromLTWH(c.dx, c.dy - w / 2, r, w), Paint()..color = const Color(0xFF4285F4));
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
 
 enum _Veh { bike, scooter, moped, moto }

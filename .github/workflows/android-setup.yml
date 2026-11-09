@@ -26,6 +26,11 @@ jobs:
         run: flutter create --platforms=android --org com.mobility --project-name mobility .
       - name: Permissions
         run: python3 tool/android_permissions.py android/app/src/main/AndroidManifest.xml
+      - name: Firebase config (from the GOOGLE_SERVICES_JSON secret, if set)
+        env:
+          GSJ: ${{ secrets.GOOGLE_SERVICES_JSON }}
+        run: |
+          if [ -n "$GSJ" ]; then printf '%s' "$GSJ" > android/app/google-services.json; echo "::notice::Firebase config: yes"; else echo "::notice::Firebase config: not set (sign-in off in this build)"; fi
       - name: Unit tests
         run: |
           flutter pub get
@@ -51,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          rm -f pub.log analyze.log build.log test.log
+          rm -f pub.log analyze.log build.log test.log android/app/google-services.json
           git add -A android
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Android project (flutter create + permissions)"
