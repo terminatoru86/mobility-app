@@ -332,61 +332,84 @@ class _RoutePlannerState extends State<RoutePlanner> {
       );
 
   // ── top card ──
+  /// "My location" is only a white dot with blue at the left; the same small dots as the route sign
+  /// in the panel join it to the destination flag, like a route. The destination is one thin bar.
+  static const _rowH = 38.0, _gap = 12.0, _dotH = 16.0;
+
+  Widget _vDots(double h) => SizedBox(
+        width: 22,
+        height: h,
+        child: LayoutBuilder(builder: (_, c) {
+          final n = (c.maxHeight / 5).floor().clamp(1, 40);
+          return Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+            for (int i = 0; i < n; i++)
+              Container(width: 2.5, height: 2.5, decoration: const BoxDecoration(color: Color(0xFFAAB6BB), shape: BoxShape.circle)),
+          ]);
+        }),
+      );
+
   Widget _glassTop() {
+    final rows = <Widget>[
+      // my location: the dot (tap: change the start)
+      GestureDetector(
+        onTap: () => _edit(true),
+        behavior: HitTestBehavior.opaque,
+        child: SizedBox(
+          height: _dotH,
+          child: Row(children: [
+            SizedBox(
+              width: 22,
+              child: Center(
+                child: Container(
+                  width: 14,
+                  height: 14,
+                  decoration: BoxDecoration(
+                    color: AppColors.blue,
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.white, width: 3),
+                    boxShadow: const [BoxShadow(color: Color(0x552F6FDC), blurRadius: 4)],
+                  ),
+                ),
+              ),
+            ),
+            // a start other than my location keeps its name, small, next to the dot
+            if (_fromName != 'My location')
+              Expanded(
+                child: Text(_fromName,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: AppColors.soft)),
+              ),
+          ]),
+        ),
+      ),
+      _vDots(_gap),
+      for (final (i, v) in _via.indexed) ...[
+        _destRow(Icons.circle_outlined, AppColors.soft, v.$1, '', () => _editVia(i), plus: false, small: true),
+        _vDots(_gap),
+      ],
+      _destRow(Icons.flag_rounded, AppColors.red, _toName, _toSub, () => _edit(false), plus: _via.isNotEmpty),
+    ];
     return Stack(clipBehavior: Clip.none, children: [
       ClipRRect(
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(16),
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
           child: Container(
-            margin: const EdgeInsets.only(right: 0),
+            padding: const EdgeInsets.fromLTRB(6, 7, 46, 6),
             decoration: BoxDecoration(
               color: Colors.white.withValues(alpha: 0.80),
-              borderRadius: BorderRadius.circular(18),
+              borderRadius: BorderRadius.circular(16),
               border: Border.all(color: Colors.white.withValues(alpha: 0.7)),
             ),
-            child: Column(mainAxisSize: MainAxisSize.min, children: [
-              // thin blue strip, edge to edge, with the start coordinates
-              GestureDetector(
-                onTap: () => _edit(true),
-                child: Container(
-                  height: 24,
-                  padding: const EdgeInsets.only(left: 12, right: 46),
-                  decoration: const BoxDecoration(
-                    gradient: LinearGradient(colors: [Color(0xFF2F6FDC), Color(0xFF3F7DE6), Color(0xFF6A9EF2)]),
-                  ),
-                  child: Row(children: [
-                    Container(
-                      width: 8,
-                      height: 8,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        shape: BoxShape.circle,
-                        border: Border.all(color: const Color(0xFFCFE0FB), width: 2),
-                      ),
-                    ),
-                    const SizedBox(width: 7),
-                    Text(_fromName.toUpperCase(),
-                        style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w800, letterSpacing: .3)),
-                    const Spacer(),
-                    Text('${_from.latitude.toStringAsFixed(4)}, ${_from.longitude.toStringAsFixed(4)}',
-                        style: TextStyle(color: Colors.white.withValues(alpha: .9), fontSize: 11, fontWeight: FontWeight.w600)),
-                  ]),
-                ),
-              ),
-              // stops, if any
-              for (final (i, v) in _via.indexed)
-                _destRow(Icons.more_vert, AppColors.soft, v.$1, '', () => _editVia(i), plus: false),
-              // + sits on the last row only once there are 3 points (with 2, it is the round button on the edge)
-              _destRow(Icons.flag_rounded, AppColors.red, _toName, _toSub, () => _edit(false), plus: _via.isNotEmpty),
-            ]),
+            child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: rows),
           ),
         ),
       ),
       // on the edge of the card: + (add a stop) with 2 points; ⇅ (turn the order around) from 3 points
       Positioned(
         right: -6,
-        top: 26 + _via.length * 29.0,
+        top: 7 + _dotH + _gap + _via.length * (_rowH + _gap) + (_rowH - 34) / 2,
         child: Material(
           color: Colors.white,
           shape: const CircleBorder(),
@@ -396,9 +419,9 @@ class _RoutePlannerState extends State<RoutePlanner> {
             customBorder: const CircleBorder(),
             onTap: _via.isEmpty ? _addStop : _swap,
             child: SizedBox(
-              width: 36,
-              height: 36,
-              child: Icon(_via.isEmpty ? Icons.add : Icons.swap_vert, size: 20, color: AppColors.ink),
+              width: 34,
+              height: 34,
+              child: Icon(_via.isEmpty ? Icons.add : Icons.swap_vert, size: 19, color: AppColors.ink),
             ),
           ),
         ),
@@ -412,47 +435,54 @@ class _RoutePlannerState extends State<RoutePlanner> {
     return '${_to.latitude.toStringAsFixed(4)}, ${_to.longitude.toStringAsFixed(4)}';
   }
 
-  Widget _destRow(IconData icon, Color c, String title, String sub, VoidCallback onTap, {required bool plus}) => Padding(
-        padding: const EdgeInsets.fromLTRB(6, 6, 46, 6),
-        child: Material(
-          color: Colors.white.withValues(alpha: .88),
-          borderRadius: BorderRadius.circular(12),
-          child: InkWell(
-            borderRadius: BorderRadius.circular(12),
-            onTap: onTap,
-            child: Container(
-              height: 46,
-              padding: const EdgeInsets.symmetric(horizontal: 8),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: const Color(0x12131F2B)),
-              ),
-              child: Row(children: [
-                Icon(icon, color: c, size: 20),
-                const SizedBox(width: 8),
-                Expanded(
-                  child: Column(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Text(title,
+  Widget _destRow(IconData icon, Color c, String title, String sub, VoidCallback onTap,
+          {required bool plus, bool small = false}) =>
+      SizedBox(
+        height: _rowH,
+        child: Row(children: [
+          SizedBox(width: 22, child: Center(child: Icon(icon, color: c, size: small ? 13 : 19))),
+          const SizedBox(width: 4),
+          Expanded(
+            child: Material(
+              color: Colors.white.withValues(alpha: .9),
+              borderRadius: BorderRadius.circular(11),
+              child: InkWell(
+                borderRadius: BorderRadius.circular(11),
+                onTap: onTap,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(11),
+                    border: Border.all(color: const Color(0x12131F2B)),
+                  ),
+                  child: Row(children: [
+                    Expanded(
+                      child: Text.rich(
+                        TextSpan(children: [
+                          TextSpan(
+                              text: title,
+                              style: TextStyle(fontWeight: FontWeight.w800, fontSize: small ? 13 : 14.5, letterSpacing: -.2)),
+                          if (sub.isNotEmpty)
+                            TextSpan(text: '  $sub', style: const TextStyle(fontSize: 11, color: AppColors.soft)),
+                        ]),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16, letterSpacing: -.2)),
-                    if (sub.isNotEmpty)
-                      Text(sub,
-                          maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 11.5, color: AppColors.soft)),
+                      ),
+                    ),
+                    if (plus)
+                      GestureDetector(
+                        onTap: _addStop,
+                        child: const Padding(
+                          padding: EdgeInsets.all(2),
+                          child: Icon(Icons.add, size: 20, color: AppColors.soft),
+                        ),
+                      ),
                   ]),
                 ),
-                if (plus)
-                  GestureDetector(
-                    onTap: _addStop,
-                    child: const Padding(
-                      padding: EdgeInsets.all(4),
-                      child: Icon(Icons.add, size: 22, color: AppColors.soft),
-                    ),
-                  ),
-              ]),
+              ),
             ),
           ),
-        ),
+        ]),
       );
 
   // ── vehicles (same tile as the sheets) ──
