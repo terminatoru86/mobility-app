@@ -433,166 +433,157 @@ class _VehicleStepState extends State<_VehicleStep> {
       children: [
         const Text('What do you ride?', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
         const SizedBox(height: 12),
-        AnimatedSize(
-          duration: const Duration(milliseconds: 260),
-          curve: Curves.easeOutCubic,
-          child: chosen == null
-              // the deck: pictures one over the other, the front one slides behind the last
-              ? SizedBox(
-                  height: cardH + 4 * step,
-                  width: cardW + 4 * step,
-                  child: Stack(clipBehavior: Clip.none, children: [
-                    for (var k = _order.length - 1; k >= 0; k--)
-                      AnimatedPositioned(
-                        key: ValueKey(_order[k]),
-                        duration: const Duration(milliseconds: 650),
-                        curve: Curves.easeInOutCubic,
-                        left: k * step,
-                        top: k * step * 0.85,
-                        width: cardW,
-                        height: cardH,
-                        child: AnimatedScale(
-                          scale: 1 - k * 0.035,
-                          alignment: Alignment.topLeft,
-                          duration: const Duration(milliseconds: 650),
-                          curve: Curves.easeInOutCubic,
-                          child: AnimatedOpacity(
-                            opacity: k > 3 ? 0.0 : 1 - k * 0.07,
-                            duration: const Duration(milliseconds: 650),
-                            child: GestureDetector(
-                              onTap: k == 0 ? _pick : null,
-                              onHorizontalDragEnd: k == 0
-                                  ? (d) {
-                                      if ((d.primaryVelocity ?? 0) < 0) {
-                                        _next();
-                                      } else {
-                                        _prev();
-                                      }
-                                    }
-                                  : null,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(22),
-                                  border: Border.all(color: const Color(0xFFE3E8EA), width: 1.2),
-                                  boxShadow: [
-                                    if (k == 0)
-                                      const BoxShadow(color: Color(0x1A0F1E24), blurRadius: 16, offset: Offset(0, 8)),
-                                  ],
-                                ),
-                                clipBehavior: Clip.antiAlias,
-                                child: _picture(_order[k]),
+        // the deck: pictures one over the other, the front one slides behind the last.
+        // Picked: the picture stays as it is, with a check mark; the others go away.
+        SizedBox(
+          height: chosen == null ? cardH + 4 * step * 0.85 : cardH,
+          width: cardW + 4 * step,
+          child: Stack(clipBehavior: Clip.none, children: [
+            for (var k = _order.length - 1; k >= 0; k--)
+              AnimatedPositioned(
+                key: ValueKey(_order[k]),
+                duration: const Duration(milliseconds: 650),
+                curve: Curves.easeInOutCubic,
+                left: chosen != null ? 2 * step : k * step,
+                top: chosen != null ? 0 : k * step * 0.85,
+                width: cardW,
+                height: cardH,
+                child: AnimatedScale(
+                  scale: chosen != null ? 1 : 1 - k * 0.035,
+                  alignment: Alignment.topLeft,
+                  duration: const Duration(milliseconds: 650),
+                  curve: Curves.easeInOutCubic,
+                  child: AnimatedOpacity(
+                    opacity: chosen != null ? (k == 0 ? 1 : 0) : (k > 3 ? 0.0 : 1 - k * 0.07),
+                    duration: const Duration(milliseconds: 400),
+                    child: GestureDetector(
+                      // tap the front one to pick it; tap it again to pick another
+                      onTap: k == 0
+                          ? (chosen == null
+                              ? _pick
+                              : () => setState(() {
+                                    _chosen = null;
+                                    _why = false;
+                                    _focus.unfocus();
+                                  }))
+                          : null,
+                      onHorizontalDragEnd: k == 0 && chosen == null
+                          ? (d) {
+                              if ((d.primaryVelocity ?? 0) < 0) {
+                                _next();
+                              } else {
+                                _prev();
+                              }
+                            }
+                          : null,
+                      child: Stack(clipBehavior: Clip.none, children: [
+                        Positioned.fill(
+                          child: AnimatedContainer(
+                            duration: const Duration(milliseconds: 250),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(22),
+                              border: Border.all(
+                                  color: chosen != null && k == 0 ? AppColors.blue : const Color(0xFFE3E8EA),
+                                  width: chosen != null && k == 0 ? 2 : 1.2),
+                              boxShadow: [
+                                if (k == 0)
+                                  const BoxShadow(color: Color(0x1A0F1E24), blurRadius: 16, offset: Offset(0, 8)),
+                              ],
+                            ),
+                            clipBehavior: Clip.antiAlias,
+                            child: _picture(_order[k]),
+                          ),
+                        ),
+                        if (chosen != null && k == 0)
+                          Positioned(
+                            right: -8,
+                            top: -8,
+                            child: Container(
+                              width: 30,
+                              height: 30,
+                              decoration: BoxDecoration(
+                                color: AppColors.blue,
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.white, width: 2.5),
                               ),
+                              child: const Icon(Icons.check_rounded, color: Colors.white, size: 18),
                             ),
                           ),
-                        ),
-                      ),
-                  ]),
-                )
-              // chosen: it sits small in the corner (tap to change); the model and the i under it
-              : Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: GestureDetector(
-                      onTap: () => setState(() {
-                        _chosen = null;
-                        _why = false;
-                        _focus.unfocus();
-                      }),
-                      child: Stack(clipBehavior: Clip.none, children: [
-                        Container(
-                          width: 86,
-                          height: 86,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(20),
-                            border: Border.all(color: AppColors.blue, width: 2),
-                          ),
-                          clipBehavior: Clip.antiAlias,
-                          child: _picture(chosen),
-                        ),
-                        Positioned(
-                          right: -6,
-                          top: -6,
-                          child: Container(
-                            width: 24,
-                            height: 24,
-                            decoration: const BoxDecoration(color: AppColors.blue, shape: BoxShape.circle),
-                            child: const Icon(Icons.check_rounded, color: Colors.white, size: 16),
-                          ),
-                        ),
                       ]),
                     ),
                   ),
-                  if (_hasModel(chosen)) ...[
-                    const SizedBox(height: 12),
-                    Row(children: [
-                      Expanded(
-                        child: TextField(
-                          controller: _model,
-                          focusNode: _focus,
-                          textInputAction: TextInputAction.done,
-                          onSubmitted: (_) {
-                            if (_ready) _finish();
-                          },
-                          style: const TextStyle(fontSize: 14.5, fontWeight: FontWeight.w600),
-                          decoration: InputDecoration(
-                            hintText: _example(chosen),
-                            isDense: true,
-                            filled: true,
-                            fillColor: AppColors.paper,
-                            contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
-                            border:
-                                OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      InkWell(
-                        customBorder: const CircleBorder(),
-                        onTap: () => setState(() => _why = !_why),
-                        child: Container(
-                          width: 32,
-                          height: 32,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(color: AppColors.blue, width: 1.6),
-                            color: _why ? AppColors.blue : Colors.white,
-                          ),
-                          alignment: Alignment.center,
-                          child: Text('i',
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w800,
-                                  fontStyle: FontStyle.italic,
-                                  color: _why ? Colors.white : AppColors.blue)),
-                        ),
-                      ),
-                    ]),
-                    if (_why)
-                      Container(
-                        margin: const EdgeInsets.only(top: 10),
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFEAF1FD),
-                          borderRadius: BorderRadius.circular(14),
-                          border: Border.all(color: const Color(0xFFC9DAF8)),
-                        ),
-                        clipBehavior: Clip.antiAlias,
-                        child: CustomPaint(
-                          painter: _Hatch(),
-                          child: const Padding(
-                            padding: EdgeInsets.all(12),
-                            child: Text(
-                              'The model helps us show the right charging plugs, GPS settings and service '
-                              'suggestions, and connect you better with the shops and services in your city.',
-                              style: TextStyle(fontSize: 12.5, color: AppColors.primary, height: 1.4),
-                            ),
-                          ),
-                        ),
-                      ),
-                  ],
-                ]),
+                ),
+              ),
+          ]),
         ),
+        // picked: the model and the i under it (not for a bike)
+        if (chosen != null && _hasModel(chosen)) ...[
+          const SizedBox(height: 14),
+          Row(children: [
+            Expanded(
+              child: TextField(
+                controller: _model,
+                focusNode: _focus,
+                textInputAction: TextInputAction.done,
+                onSubmitted: (_) {
+                  if (_ready) _finish();
+                },
+                style: const TextStyle(fontSize: 14.5, fontWeight: FontWeight.w600),
+                decoration: InputDecoration(
+                  hintText: _example(chosen),
+                  isDense: true,
+                  filled: true,
+                  fillColor: AppColors.paper,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
+            InkWell(
+              customBorder: const CircleBorder(),
+              onTap: () => setState(() => _why = !_why),
+              child: Container(
+                width: 32,
+                height: 32,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: AppColors.blue, width: 1.6),
+                  color: _why ? AppColors.blue : Colors.white,
+                ),
+                alignment: Alignment.center,
+                child: Text('i',
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w800,
+                        fontStyle: FontStyle.italic,
+                        color: _why ? Colors.white : AppColors.blue)),
+              ),
+            ),
+          ]),
+          if (_why)
+            Container(
+              margin: const EdgeInsets.only(top: 10),
+              decoration: BoxDecoration(
+                color: const Color(0xFFEAF1FD),
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: const Color(0xFFC9DAF8)),
+              ),
+              clipBehavior: Clip.antiAlias,
+              child: CustomPaint(
+                painter: _Hatch(),
+                child: const Padding(
+                  padding: EdgeInsets.all(12),
+                  child: Text(
+                    'The model helps us show the right charging plugs, GPS settings and service '
+                    'suggestions, and connect you better with the shops and services in your city.',
+                    style: TextStyle(fontSize: 12.5, color: AppColors.primary, height: 1.4),
+                  ),
+                ),
+              ),
+            ),
+        ],
         const SizedBox(height: 14),
         // Finish: lights up once the model is typed (a bike needs none)
         if (chosen != null) _pill('Finish', _ready ? AppColors.blue : const Color(0xFFD5E0F5), Colors.white, _ready ? _finish : null),
