@@ -446,24 +446,24 @@ class _VehicleStepState extends State<_VehicleStep> {
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(22, 30, 22, 0),
                       child: SizedBox(
-                        height: cardH + 4 * 12,
+                        height: cardH + 4 * 16,
                         child: Stack(clipBehavior: Clip.none, children: [
                           for (var k = _order.length - 1; k >= 0; k--)
                             AnimatedPositioned(
                               key: ValueKey(_order[k]),
                               duration: const Duration(milliseconds: 650),
                               curve: Curves.easeInOutCubic,
-                              left: k * 12.0,
-                              top: k * 12.0,
+                              left: k * 18.0,
+                              top: k * 16.0,
                               width: cardW,
                               height: cardH,
                               child: AnimatedScale(
-                                scale: 1 - k * 0.045,
+                                scale: 1 - k * 0.035,
                                 alignment: Alignment.topLeft,
                                 duration: const Duration(milliseconds: 650),
                                 curve: Curves.easeInOutCubic,
                                 child: AnimatedOpacity(
-                                  opacity: k > 3 ? 0.0 : 1 - k * 0.12,
+                                  opacity: k > 3 ? 0.0 : 1 - k * 0.07,
                                   duration: const Duration(milliseconds: 650),
                                   child: GestureDetector(
                                     onTap: k == 0 ? _pick : null,
