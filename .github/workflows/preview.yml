@@ -1,8 +1,12 @@
 name: Preview pictures
 
 # Draws app screens as pictures (preview/*_test.dart) so the design can be checked without a phone.
+# The pictures go to the "previews" branch (not into the app).
 on:
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   preview:
@@ -14,7 +18,13 @@ jobs:
           channel: stable
       - run: flutter pub get
       - run: flutter test preview --update-goldens
-      - uses: actions/upload-artifact@v4
-        with:
-          name: preview
-          path: preview/out/*.png
+      - name: Save to the previews branch
+        run: |
+          mkdir -p /tmp/out && cp preview/out/*.png /tmp/out/
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git checkout --orphan previews
+          git rm -rf -q . && git clean -fdq
+          cp /tmp/out/*.png .
+          git add *.png && git commit -q -m "Preview pictures ($GITHUB_SHA)"
+          git push -f origin previews
