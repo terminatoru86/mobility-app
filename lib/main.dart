@@ -49,7 +49,7 @@ class MobilityApp extends StatelessWidget {
 }
 
 /// Signed in: straight to the working map. Not signed in: the start picture (still, shown at
-/// once), the map is built behind it; then the picture fades out, the map loads for 2 seconds and
+/// once), the map is built behind it; then the picture fades out, the map loads for 1 second and
 /// our sign-in pop-up comes over it, then the vehicle. The map's guide waits until that is done.
 class _Boot extends StatefulWidget {
   final bool splash;
@@ -79,16 +79,16 @@ class _BootState extends State<_Boot> {
         return;
       }
       // the picture stays a short moment; the map loads behind it meanwhile
-      final left = 1800 - _shown.elapsedMilliseconds;
+      final left = 1000 - _shown.elapsedMilliseconds;
       if (left > 0) await Future.delayed(Duration(milliseconds: left));
       if (!mounted) return;
       setState(() => _fade = true);
-      await Future.delayed(const Duration(milliseconds: 420));
+      await Future.delayed(const Duration(milliseconds: 320));
       if (!mounted) return;
       setState(() => _splash = false);
       splashOn.value = false;
       // the map loads for a moment on its own, then the sign-in pop-up comes over it
-      await Future.delayed(const Duration(seconds: 2));
+      await Future.delayed(const Duration(seconds: 1));
       if (!mounted) return;
       // over the working map: sign in, then the vehicle (cannot be skipped once signed in)
       final ok = await showSignIn(context, st);
@@ -114,7 +114,7 @@ class _BootState extends State<_Boot> {
             ignoring: _fade,
             child: AnimatedOpacity(
               opacity: _fade ? 0 : 1,
-              duration: const Duration(milliseconds: 400),
+              duration: const Duration(milliseconds: 300),
               curve: Curves.easeInOut,
               child: const Material(type: MaterialType.transparency, child: CitySplash()),
             ),
