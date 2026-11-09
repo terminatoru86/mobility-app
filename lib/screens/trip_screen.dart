@@ -573,12 +573,14 @@ class _RoutePlannerState extends State<RoutePlanner> {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(children: [
+        // once one is chosen, only that one stays (tap it again: all come back)
         for (final v in variants)
-          chip(_variantLook(v).$1, look(v), _variant == v, () {
-            setState(() => _variant = _variant == v ? 'standard' : v);
-            _calc();
-          }),
-        if (_bikeLike || !_vehiclePicked)
+          if (!_oneRoute || _variant == v)
+            chip(_variantLook(v).$1, look(v), _variant == v, () {
+              setState(() => _variant = _variant == v ? 'standard' : v);
+              _calc();
+            }),
+        if ((_bikeLike || !_vehiclePicked) && (!_oneRoute || _marked))
           chip('Bike line', const BikeRoadIcon(size: 16), _marked, () {
             setState(() => _marked = !_marked);
             _calc();
