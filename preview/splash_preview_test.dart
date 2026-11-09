@@ -23,42 +23,64 @@ Future<void> _fonts() async {
   await l.load();
 }
 
-void main() {
-  testWidgets('start picture', (t) async {
-    await t.runAsync(_fonts);
-    // drawn at the phone's size in points (1080 x 2400 px at 2.625), saved at full pixels
-    const dpr = 2.625;
-    t.view.physicalSize = const Size(1080, 2400);
-    t.view.devicePixelRatio = 1;
-    await t.pumpWidget(MaterialApp(
+Widget _phone(Widget child) => MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: buildTheme().copyWith(textTheme: buildTheme().textTheme.apply(fontFamily: 'Roboto')),
       home: DefaultTextStyle(
         style: const TextStyle(fontFamily: 'Roboto'),
         child: RepaintBoundary(
-          key: const ValueKey('start'),
+          key: const ValueKey('shot'),
           child: Material(
-          child: Transform.scale(
-            scale: dpr,
-            alignment: Alignment.topLeft,
-            child: const OverflowBox(
+            child: Transform.scale(
+              scale: _dpr,
               alignment: Alignment.topLeft,
-              minWidth: 1080 / dpr,
-              maxWidth: 1080 / dpr,
-              minHeight: 2400 / dpr,
-              maxHeight: 2400 / dpr,
-              child: MediaQuery(data: MediaQueryData(size: Size(1080 / dpr, 2400 / dpr), padding: EdgeInsets.only(bottom: 16)), child: SplashArt()),
+              child: OverflowBox(
+                alignment: Alignment.topLeft,
+                minWidth: 1080 / _dpr,
+                maxWidth: 1080 / _dpr,
+                minHeight: 2400 / _dpr,
+                maxHeight: 2400 / _dpr,
+                child: MediaQuery(
+                    data: const MediaQueryData(size: Size(1080 / _dpr, 2400 / _dpr), padding: EdgeInsets.only(top: 24, bottom: 16)),
+                    child: child),
+              ),
             ),
-          ),
           ),
         ),
       ),
-    ));
+    );
+
+// drawn at the phone's size in points (1080 x 2400 px at 2.625), saved at full pixels
+const _dpr = 2.625;
+
+Future<void> _settle(WidgetTester t) async {
+  for (var i = 0; i < 4; i++) {
+    await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
+    await t.pump(const Duration(milliseconds: 1));
+  }
+}
+
+void main() {
+  testWidgets('city picture (behind the start screen)', (t) async {
+    await t.runAsync(_fonts);
+    t.view.physicalSize = const Size(1080, 2400);
+    t.view.devicePixelRatio = 1;
+    await t.pumpWidget(_phone(const SplashArt(showTitle: false)));
+    await _settle(t);
+    await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/city.png'));
+  });
+
+  testWidgets('start screen, three moments', (t) async {
+    await t.runAsync(_fonts);
+    await t.runAsync(loadStartPicture);
+    t.view.physicalSize = const Size(1080, 2400);
+    t.view.devicePixelRatio = 1;
+    await t.pumpWidget(_phone(const CitySplash()));
     await t.pump();
-    for (var i = 0; i < 4; i++) {
-      await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
-      await t.pump(const Duration(milliseconds: 300));
-    }
-    await expectLater(find.byKey(const ValueKey('start')), matchesGoldenFile('out/start.png'));
+    await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start1.png'));
+    await t.pump(const Duration(milliseconds: 1250));
+    await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start2.png'));
+    await t.pump(const Duration(milliseconds: 1200));
+    await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start3.png'));
   });
 }

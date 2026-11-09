@@ -21,8 +21,7 @@ Future<void> main() async {
   // picture (or the map) shows at once. Firebase and the saved data load behind it.
   final prefs = await SharedPreferences.getInstance();
   final splash = !(prefs.getBool('hasAccount') ?? false);
-  // the start picture is read before the first frame, so it is there at once (Android shows the
-  // same picture while the app starts)
+  // the city picture of the start screen is read before the first frame
   if (splash) await loadStartPicture();
   runApp(MobilityApp(splash: splash));
 }
@@ -48,9 +47,10 @@ class MobilityApp extends StatelessWidget {
       );
 }
 
-/// Signed in: straight to the working map. Not signed in: the start picture (still, shown at
-/// once), the map is built behind it; then the picture fades out, the map loads for 1 second and
-/// our sign-in pop-up comes over it, then the vehicle. The map's guide waits until that is done.
+/// Signed in: straight to the working map. Not signed in: the start screen (logo, "Powered by
+/// MOBIlity", they part, the city comes in, "Get started"); the map is built behind it. Tapping
+/// "Get started" fades it out over the map; 1 second later our sign-in pop-up comes, then the
+/// vehicle. The map's guide waits until that is done.
 class _Boot extends StatefulWidget {
   final bool splash;
   const _Boot({required this.splash});
@@ -60,41 +60,46 @@ class _Boot extends StatefulWidget {
 
 class _BootState extends State<_Boot> {
   late final Future<AppState> _ready = _boot();
-  final _shown = Stopwatch()..start();
   AppState? _state;
   late bool _splash = widget.splash;
   bool _fade = false;
+  bool _started = false;
 
   @override
   void initState() {
     super.initState();
     splashOn.value = _splash;
     startFlow.value = _splash;
-    _ready.then((st) async {
+    _ready.then((st) {
       if (!mounted) return;
       setState(() => _state = st);
       // the note said "no account", but Firebase knows better (signed in on this phone)
-      if (st.hasAccount || !_splash) {
-        _end();
-        return;
-      }
-      // the picture stays a short moment; the map loads behind it meanwhile
-      final left = 1000 - _shown.elapsedMilliseconds;
-      if (left > 0) await Future.delayed(Duration(milliseconds: left));
-      if (!mounted) return;
-      setState(() => _fade = true);
-      await Future.delayed(const Duration(milliseconds: 320));
-      if (!mounted) return;
-      setState(() => _splash = false);
-      splashOn.value = false;
-      // the map loads for a moment on its own, then the sign-in pop-up comes over it
-      await Future.delayed(const Duration(seconds: 1));
-      if (!mounted) return;
-      // over the working map: sign in, then the vehicle (cannot be skipped once signed in)
-      final ok = await showSignIn(context, st);
-      if (ok && mounted) await showVehicleStep(context, st);
-      _end();
+      if (st.hasAccount || !_splash) _end();
     });
+  }
+
+  /// "Get started": the start screen fades out over the map, then sign in and the vehicle.
+  Future<void> _start() async {
+    if (_started) return;
+    _started = true;
+    final st = await _ready;
+    if (!mounted) return;
+    setState(() => _fade = true);
+    await Future.delayed(const Duration(milliseconds: 320));
+    if (!mounted) return;
+    setState(() => _splash = false);
+    splashOn.value = false;
+    if (st.hasAccount) {
+      _end();
+      return;
+    }
+    // the map loads for a moment on its own, then the sign-in pop-up comes over it
+    await Future.delayed(const Duration(seconds: 1));
+    if (!mounted) return;
+    // over the working map: sign in, then the vehicle (cannot be skipped once signed in)
+    final ok = await showSignIn(context, st);
+    if (ok && mounted) await showVehicleStep(context, st);
+    _end();
   }
 
   void _end() {
@@ -116,7 +121,7 @@ class _BootState extends State<_Boot> {
               opacity: _fade ? 0 : 1,
               duration: const Duration(milliseconds: 300),
               curve: Curves.easeInOut,
-              child: const Material(type: MaterialType.transparency, child: CitySplash()),
+              child: Material(type: MaterialType.transparency, child: CitySplash(onStart: _start)),
             ),
           ),
         ),

@@ -11,43 +11,218 @@ import '../theme.dart';
 import 'pin.dart';
 
 /// The start screen, only for people without an account (once signed in, the app opens
-/// straight on the working map). One still picture, no motion: the city with our pins, the
-/// riders and your blue route to the green pin, over the whole screen; in the middle the "m" logo (the same one, in the
-/// same place, as Android's own start, so nothing jumps) and MOBIlity under it; at the bottom one
-/// short line and our vehicles. It is drawn in the very first frame (Android's logo stays until then).
-/// When it ends (main.dart) it fades out over the working map and the sign-in pop-up comes.
-class CitySplash extends StatelessWidget {
-  const CitySplash({super.key});
+/// straight on the working map). One smooth take, like a short film:
+///
+/// 1. our big "m" in the middle on the light grey (the same as Android's own start, so nothing
+///    jumps), "Powered by MOBIlity" comes in under it
+/// 2. they part: the logo glides up (MOBIlity appears under it), the line glides down to the
+///    bottom, and the city with our pins and your route comes in behind them
+/// 3. "Get started" comes up; tapping it opens the map (main.dart), then the sign-in pop-up.
+class CitySplash extends StatefulWidget {
+  /// "Get started" was tapped.
+  final VoidCallback? onStart;
+  const CitySplash({super.key, this.onStart});
+  @override
+  State<CitySplash> createState() => _StartState();
+}
+
+double _seg(double t, double a, double b) => ((t - a) / (b - a)).clamp(0.0, 1.0);
+
+class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin {
+  late final AnimationController _a = AnimationController(vsync: this, duration: const Duration(milliseconds: 2100));
+
+  @override
+  void initState() {
+    super.initState();
+    // the film starts with the first frame on screen
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _a.forward();
+    });
+  }
+
+  @override
+  void dispose() {
+    _a.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    final img = _startImage;
-    if (img == null) return const SplashArt(); // the picture file could not be read: draw it
+    final pad = MediaQuery.of(context).padding;
     return ColoredBox(
-      color: const Color(0xFFF1F4F6),
-      child: SizedBox.expand(child: RawImage(image: img, fit: BoxFit.cover, filterQuality: FilterQuality.medium)),
+      color: AppColors.paper,
+      child: LayoutBuilder(builder: (context, box) {
+        final w = box.maxWidth, h = box.maxHeight;
+        final img = _cityImage;
+        final city = RepaintBoundary(
+          child: img != null
+              ? RawImage(image: img, fit: BoxFit.cover, filterQuality: FilterQuality.medium)
+              : const SplashArt(showTitle: false),
+        );
+        return AnimatedBuilder(
+          animation: _a,
+          builder: (context, _) {
+            final t = _a.value;
+            final by = Curves.easeOut.transform(_seg(t, 0.0, 0.22)); // "Powered by" comes in
+            final sp = Curves.easeInOutCubic.transform(_seg(t, 0.30, 0.78)); // they part
+            final bg = Curves.easeInOut.transform(_seg(t, 0.34, 0.82)); // the city comes in
+            final name = Curves.easeOut.transform(_seg(t, 0.58, 0.86)); // MOBIlity under the logo
+            final btn = Curves.easeOutCubic.transform(_seg(t, 0.74, 1.0)); // Get started
+            final logo = ui.lerpDouble(kSplashLogo, 116, sp)!;
+            final logoY = ui.lerpDouble(h / 2, h * 0.25, sp)!; // centre of the logo
+            final byTop = ui.lerpDouble(h / 2 + kSplashLogo / 2 + 14, h - pad.bottom - 34, sp)!;
+            return Stack(fit: StackFit.expand, children: [
+              Opacity(opacity: bg, child: city),
+              // soft light behind the logo and at the bottom, so they read well on the city
+              Opacity(
+                opacity: bg,
+                child: const DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: RadialGradient(
+                      center: Alignment(0, -0.48),
+                      radius: 0.55,
+                      colors: [Color(0xF2EEF2F2), Color(0xB3EEF2F2), Color(0x00EEF2F2)],
+                      stops: [0, .5, 1],
+                    ),
+                  ),
+                ),
+              ),
+              Opacity(
+                opacity: bg,
+                child: const DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [Color(0x00EEF2F2), Color(0x00EEF2F2), Color(0xE6EEF2F2)],
+                      stops: [0, .62, .86],
+                    ),
+                  ),
+                ),
+              ),
+              // the logo
+              Positioned(
+                left: (w - logo) / 2,
+                top: logoY - logo / 2,
+                width: logo,
+                height: logo,
+                child: const CustomPaint(painter: LogoPainter()),
+              ),
+              // MOBIlity under it
+              Positioned(
+                left: 0,
+                right: 0,
+                top: logoY + logo / 2 + 4,
+                child: Opacity(
+                  opacity: name,
+                  child: Transform.translate(
+                    offset: Offset(0, 10 * (1 - name)),
+                    child: const Text('MOBIlity',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 40, fontWeight: FontWeight.w900, color: AppColors.ink, letterSpacing: 0.5)),
+                  ),
+                ),
+              ),
+              // Get started
+              Positioned(
+                left: 24,
+                right: 24,
+                bottom: pad.bottom + 64,
+                child: IgnorePointer(
+                  ignoring: btn < 0.5,
+                  child: Opacity(
+                    opacity: btn,
+                    child: Transform.translate(
+                      offset: Offset(0, 24 * (1 - btn)),
+                      child: SizedBox(
+                        height: 54,
+                        child: TextButton(
+                          onPressed: widget.onStart,
+                          style: TextButton.styleFrom(
+                            backgroundColor: AppColors.primary,
+                            foregroundColor: Colors.white,
+                            shape: const StadiumBorder(),
+                            textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w800, letterSpacing: 0.2),
+                          ),
+                          child: const Text('Get started'),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              // Powered by MOBIlity: under the logo, then down to the bottom
+              Positioned(
+                left: 0,
+                right: 0,
+                top: byTop,
+                child: Opacity(
+                  opacity: by,
+                  child: const Text('Powered by MOBIlity',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: AppColors.soft, letterSpacing: 0.3)),
+                ),
+              ),
+            ]);
+          },
+        );
+      }),
     );
   }
 }
 
-/// The start picture as a file (made from [SplashArt] on GitHub, see preview/). The same picture
-/// is Android's own start background, so it shows at once and nothing changes when Flutter starts.
-const String kStartPicture = 'assets/splash/start.jpg';
-ui.Image? _startImage;
+/// Our "m" with the three status dots, drawn directly (it is there in the very first frame).
+class LogoPainter extends CustomPainter {
+  const LogoPainter();
+  @override
+  void paint(Canvas canvas, Size size) {
+    canvas.save();
+    canvas.scale(size.width / 64);
+    final m = Path()
+      ..moveTo(14, 44)
+      ..lineTo(14, 28)
+      ..arcToPoint(const Offset(32, 28), radius: const Radius.circular(9))
+      ..lineTo(32, 44)
+      ..moveTo(32, 28)
+      ..arcToPoint(const Offset(50, 28), radius: const Radius.circular(9))
+      ..lineTo(50, 44);
+    canvas.drawPath(
+        m,
+        Paint()
+          ..style = PaintingStyle.stroke
+          ..strokeWidth = 7.5
+          ..strokeCap = StrokeCap.round
+          ..strokeJoin = StrokeJoin.round
+          ..color = const Color(0xFF24333C));
+    canvas.drawCircle(const Offset(14, 54), 4.6, Paint()..color = const Color(0xFFE0484D));
+    canvas.drawCircle(const Offset(32, 54), 4.6, Paint()..color = const Color(0xFFE9A800));
+    canvas.drawCircle(const Offset(50, 54), 4.6, Paint()..color = const Color(0xFF5D9A30));
+    canvas.restore();
+  }
 
-/// Reads the start picture before the first frame (only when the start screen will show).
+  @override
+  bool shouldRepaint(covariant LogoPainter oldDelegate) => false;
+}
+
+/// The city behind the start screen as a file (made from [SplashArt] on GitHub, see preview/).
+const String kCityPicture = 'assets/splash/city.jpg';
+ui.Image? _cityImage;
+
+/// Reads the city picture before the first frame (only when the start screen will show).
 Future<void> loadStartPicture() async {
   try {
-    final data = await rootBundle.load(kStartPicture);
+    final data = await rootBundle.load(kCityPicture);
     final codec = await ui.instantiateImageCodec(data.buffer.asUint8List());
-    _startImage = (await codec.getNextFrame()).image;
+    _cityImage = (await codec.getNextFrame()).image;
   } catch (_) {}
 }
 
 /// The start picture, drawn: the city, pins, riders, route, the logo and MOBIlity, the line and
-/// the vehicles. Used to make [kStartPicture] (and if that file is missing).
+/// the vehicles. Used to make [kCityPicture] (and if that file is missing).
 class SplashArt extends StatefulWidget {
-  const SplashArt({super.key});
+  /// With the logo, MOBIlity, the line and the vehicles (false: only the city).
+  final bool showTitle;
+  const SplashArt({super.key, this.showTitle = true});
   @override
   State<SplashArt> createState() => _CitySplashState();
 }
@@ -204,7 +379,7 @@ class _CitySplashState extends State<SplashArt> {
                   ),
                 ]),
               ),
-          _Title(h: h),
+          if (widget.showTitle) _Title(h: h),
         ]);
       }),
     );
