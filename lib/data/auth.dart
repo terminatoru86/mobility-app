@@ -96,7 +96,11 @@ class Auth {
     try {
       await FirebaseAuth.instance.sendSignInLinkToEmail(email: email, actionCodeSettings: acs);
     } on FirebaseAuthException catch (e) {
-      throw AuthProblem(e.code == 'invalid-email' ? 'That email address looks wrong.' : (e.message ?? e.code));
+      throw AuthProblem(e.code == 'invalid-email'
+          ? 'That email address looks wrong.'
+          : e.code == 'too-many-requests' || e.code == 'quota-exceeded'
+              ? 'Too many sign-in emails today. Try again tomorrow, or continue with Google.'
+              : (e.message ?? e.code));
     }
     (await SharedPreferences.getInstance()).setString(_emailKey, email);
     emailLinkProblem.value = null;
