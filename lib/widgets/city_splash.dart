@@ -129,7 +129,7 @@ class _CitySplashState extends State<CitySplash> {
                   // the city a little to the left, so the route and the green pin sit well inside
                   Transform.translate(
                     offset: Offset(-0.13 * w, 0.02 * h),
-                    child: Stack(fit: StackFit.expand, children: [
+                    child: Stack(fit: StackFit.expand, clipBehavior: Clip.none, children: [
                   Transform(
                     transform: m,
                     filterQuality: FilterQuality.medium,
