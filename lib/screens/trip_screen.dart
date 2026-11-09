@@ -334,7 +334,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
   // ── top card ──
   /// "My location" is only a white dot with blue at the left; the same small dots as the route sign
   /// in the panel join it to the destination flag, like a route. The destination is one thin bar.
-  static const _rowH = 38.0, _gap = 12.0, _dotH = 16.0;
+  static const _rowH = 38.0, _gap = 12.0;
 
   Widget _vDots(double h) => SizedBox(
         width: 22,
@@ -349,41 +349,10 @@ class _RoutePlannerState extends State<RoutePlanner> {
       );
 
   Widget _glassTop() {
+    // the dot of my location floats above the card, over the map; a "cable" of small dots
+    // goes down from it into the card, to the first icon (a stop, or the destination flag)
+    const air = 22.0; // space above the card where the dot floats
     final rows = <Widget>[
-      // my location: the dot (tap: change the start)
-      GestureDetector(
-        onTap: () => _edit(true),
-        behavior: HitTestBehavior.opaque,
-        child: SizedBox(
-          height: _dotH,
-          child: Row(children: [
-            SizedBox(
-              width: 22,
-              child: Center(
-                child: Container(
-                  width: 14,
-                  height: 14,
-                  decoration: BoxDecoration(
-                    color: AppColors.blue,
-                    shape: BoxShape.circle,
-                    border: Border.all(color: Colors.white, width: 3),
-                    boxShadow: const [BoxShadow(color: Color(0x552F6FDC), blurRadius: 4)],
-                  ),
-                ),
-              ),
-            ),
-            // a start other than my location keeps its name, small, next to the dot
-            if (_fromName != 'My location')
-              Expanded(
-                child: Text(_fromName,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: AppColors.soft)),
-              ),
-          ]),
-        ),
-      ),
-      _vDots(_gap),
       for (final (i, v) in _via.indexed) ...[
         _destRow(Icons.circle_outlined, AppColors.soft, v.$1, '', () => _editVia(i), plus: false, small: true),
         _vDots(_gap),
@@ -391,25 +360,61 @@ class _RoutePlannerState extends State<RoutePlanner> {
       _destRow(Icons.flag_rounded, AppColors.red, _toName, _toSub, () => _edit(false), plus: _via.isNotEmpty),
     ];
     return Stack(clipBehavior: Clip.none, children: [
-      ClipRRect(
-        borderRadius: BorderRadius.circular(16),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
-          child: Container(
-            padding: const EdgeInsets.fromLTRB(6, 7, 46, 6),
-            decoration: BoxDecoration(
-              color: Colors.white.withValues(alpha: 0.80),
-              borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: Colors.white.withValues(alpha: 0.7)),
+      Padding(
+        padding: const EdgeInsets.only(top: air),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(14),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
+            child: Container(
+              padding: const EdgeInsets.fromLTRB(6, 5, 44, 5),
+              decoration: BoxDecoration(
+                color: Colors.white.withValues(alpha: 0.80),
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: Colors.white.withValues(alpha: 0.7)),
+              ),
+              child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: rows),
             ),
-            child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: rows),
           ),
+        ),
+      ),
+      // my location: the dot in the air and the cable (tap the dot: change the start)
+      Positioned(
+        left: 6,
+        top: 0,
+        child: GestureDetector(
+          onTap: () => _edit(true),
+          behavior: HitTestBehavior.opaque,
+          child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Column(children: [
+              Container(
+                width: 14,
+                height: 14,
+                margin: const EdgeInsets.symmetric(horizontal: 4),
+                decoration: BoxDecoration(
+                  color: AppColors.blue,
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white, width: 3),
+                  boxShadow: const [BoxShadow(color: Color(0x662F6FDC), blurRadius: 5)],
+                ),
+              ),
+              _vDots(air + 5 + (_rowH - 19) / 2 - 14),
+            ]),
+            // a start other than my location keeps its name, small, next to the dot
+            if (_fromName != 'My location')
+              Padding(
+                padding: const EdgeInsets.only(top: 1),
+                child: Text(_fromName,
+                    style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.ink,
+                        shadows: [Shadow(color: Colors.white, blurRadius: 4)])),
+              ),
+          ]),
         ),
       ),
       // on the edge of the card: + (add a stop) with 2 points; ⇅ (turn the order around) from 3 points
       Positioned(
         right: -6,
-        top: 7 + _dotH + _gap + _via.length * (_rowH + _gap) + (_rowH - 34) / 2,
+        top: air + 5 + _via.length * (_rowH + _gap) + (_rowH - 34) / 2,
         child: Material(
           color: Colors.white,
           shape: const CircleBorder(),
