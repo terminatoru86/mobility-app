@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mobility.mobility",
+      "sha256_cert_fingerprints": [
+        "CF:C4:43:76:5A:F1:5C:F7:9A:D5:2C:4E:AF:54:9B:2A:8B:DE:30:CE:36:D9:A1:C9:E8:3F:A8:69:DB:C6:48:76"
+      ]
+    }
+  }
+]
