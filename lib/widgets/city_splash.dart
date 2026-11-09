@@ -2,6 +2,7 @@ import 'dart:math' as math;
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:latlong2/latlong.dart' show LatLng;
 
@@ -15,10 +16,40 @@ import 'pin.dart';
 /// same place, as Android's own start, so nothing jumps) and MOBIlity under it; at the bottom one
 /// short line and our vehicles. It is drawn in the very first frame (Android's logo stays until then).
 /// When it ends (main.dart) it fades out over the working map and the sign-in pop-up comes.
-class CitySplash extends StatefulWidget {
+class CitySplash extends StatelessWidget {
   const CitySplash({super.key});
+
   @override
-  State<CitySplash> createState() => _CitySplashState();
+  Widget build(BuildContext context) {
+    final img = _startImage;
+    if (img == null) return const SplashArt(); // the picture file could not be read: draw it
+    return ColoredBox(
+      color: const Color(0xFFF1F4F6),
+      child: SizedBox.expand(child: RawImage(image: img, fit: BoxFit.cover, filterQuality: FilterQuality.medium)),
+    );
+  }
+}
+
+/// The start picture as a file (made from [SplashArt] on GitHub, see preview/). The same picture
+/// is Android's own start background, so it shows at once and nothing changes when Flutter starts.
+const String kStartPicture = 'assets/splash/start.jpg';
+ui.Image? _startImage;
+
+/// Reads the start picture before the first frame (only when the start screen will show).
+Future<void> loadStartPicture() async {
+  try {
+    final data = await rootBundle.load(kStartPicture);
+    final codec = await ui.instantiateImageCodec(data.buffer.asUint8List());
+    _startImage = (await codec.getNextFrame()).image;
+  } catch (_) {}
+}
+
+/// The start picture, drawn: the city, pins, riders, route, the logo and MOBIlity, the line and
+/// the vehicles. Used to make [kStartPicture] (and if that file is missing).
+class SplashArt extends StatefulWidget {
+  const SplashArt({super.key});
+  @override
+  State<SplashArt> createState() => _CitySplashState();
 }
 
 /// The line on the start screen, above the vehicles.
@@ -87,7 +118,7 @@ const _riders = <(_Veh, Offset, Offset)>[
   (_Veh.bike, Offset(-1.5, 2.6), Offset(-1.5, 7.4)),
 ];
 
-class _CitySplashState extends State<CitySplash> {
+class _CitySplashState extends State<SplashArt> {
 
   /// The drawn area: bigger than the screen, so the tilted map never shows an edge.
   static Rect _area(double w, double h) => Rect.fromLTRB(-0.6 * w, -1.5 * h, 1.6 * w, 1.3 * h);

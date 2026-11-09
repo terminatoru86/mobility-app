@@ -21,6 +21,9 @@ Future<void> main() async {
   // picture (or the map) shows at once. Firebase and the saved data load behind it.
   final prefs = await SharedPreferences.getInstance();
   final splash = !(prefs.getBool('hasAccount') ?? false);
+  // the start picture is read before the first frame, so it is there at once (Android shows the
+  // same picture while the app starts)
+  if (splash) await loadStartPicture();
   runApp(MobilityApp(splash: splash));
 }
 
