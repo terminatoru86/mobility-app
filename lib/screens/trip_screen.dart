@@ -352,18 +352,6 @@ class _RoutePlannerState extends State<RoutePlanner> {
   /// in the panel join it to the destination flag, like a route. The destination is one thin bar.
   static const _rowH = 38.0, _gap = 12.0;
 
-  Widget _vDots(double h) => SizedBox(
-        width: 22,
-        height: h,
-        child: LayoutBuilder(builder: (_, c) {
-          final n = (c.maxHeight / 5).floor().clamp(1, 40);
-          return Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-            for (int i = 0; i < n; i++)
-              Container(width: 2.5, height: 2.5, decoration: const BoxDecoration(color: Color(0xFFAAB6BB), shape: BoxShape.circle)),
-          ]);
-        }),
-      );
-
   Widget _glassTop() {
     // the dot of my location floats above the card, over the map; a "cable" of small dots
     // goes down from it into the card, to the first icon (a stop, or the destination flag)
@@ -371,13 +359,20 @@ class _RoutePlannerState extends State<RoutePlanner> {
     final rows = <Widget>[
       for (final (i, v) in _via.indexed) ...[
         _destRow(Icons.circle_outlined, AppColors.soft, v.$1, '', () => _editVia(i), plus: false, small: true),
-        _vDots(_gap),
+        const SizedBox(
+          width: 22,
+          height: _gap,
+          child: CustomPaint(painter: _WavyWire(from: Offset(11, -2), to: Offset(11, _gap + 2))),
+        ),
       ],
       _destRow(Icons.flag_rounded, AppColors.red, _toName, _toSub, () => _edit(false), plus: _via.isNotEmpty),
     ];
+    const cardLeft = 18.0; // narrow lane at the left for the dot and the wire
+    const iconX = cardLeft + 6 + 11; // centre of the first icon (stop or flag) in the card
+    const iconY = air + 5 + _rowH / 2;
     return Stack(clipBehavior: Clip.none, children: [
       Padding(
-        padding: const EdgeInsets.only(top: air),
+        padding: const EdgeInsets.only(top: air, left: cardLeft),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(14),
           child: BackdropFilter(
@@ -394,10 +389,20 @@ class _RoutePlannerState extends State<RoutePlanner> {
           ),
         ),
       ),
+      // the wire: it waves down from the dot, blue to red, and turns into the first icon
+      const Positioned(
+        left: 0,
+        top: 0,
+        width: iconX,
+        height: iconY,
+        child: IgnorePointer(
+          child: CustomPaint(painter: _WavyWire(from: Offset(7, 18), to: Offset(iconX - 10, iconY))),
+        ),
+      ),
       // my location: first a small white pill "My location", which then pulls into the blue dot;
-      // a cable of small dots joins it to the flag. Tap the dot: the pill opens again; tap the pill: change the start.
+      // the wavy wire joins it to the flag. Tap the dot: the pill opens again; tap the pill: change the start.
       Positioned(
-        left: 6,
+        left: 0,
         top: 0,
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           GestureDetector(
@@ -422,7 +427,7 @@ class _RoutePlannerState extends State<RoutePlanner> {
               ),
               child: Row(mainAxisSize: MainAxisSize.min, children: [
                 SizedBox(
-                  width: 22,
+                  width: 14,
                   child: Center(
                     child: Container(
                       width: 14,
@@ -440,14 +445,13 @@ class _RoutePlannerState extends State<RoutePlanner> {
                   duration: const Duration(milliseconds: 450),
                   curve: Curves.easeInOutCubic,
                   child: _meOpen
-                      ? Text(_fromName,
-                          style: const TextStyle(fontSize: 11.5, fontWeight: FontWeight.w800, color: AppColors.ink))
+                      ? Padding(padding: const EdgeInsets.only(left: 5), child: Text(_fromName,
+                          style: const TextStyle(fontSize: 11.5, fontWeight: FontWeight.w800, color: AppColors.ink)))
                       : const SizedBox(height: 22),
                 ),
               ]),
             ),
           ),
-          _vDots(air + 5 + (_rowH - 19) / 2 - 22),
         ]),
       ),
       // on the edge of the card: + (add a stop) with 2 points; ⇅ (turn the order around) from 3 points
@@ -1974,4 +1978,38 @@ class _PlacePickerState extends State<_PlacePicker> {
       ]),
     );
   }
+}
+
+
+/// The wire between my location and the destination: a narrow wave, blue at the start, red at the end
+/// (the colours of the dot and the flag); it turns into the icon at the end with a small curve.
+class _WavyWire extends CustomPainter {
+  final Offset from, to;
+  const _WavyWire({required this.from, required this.to});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    const amp = 2.2, wave = 6.0;
+    final turn = (to.dx - from.dx).abs() > 1;
+    final downTo = turn ? to.dy - 9 : to.dy;
+    final path = Path()..moveTo(from.dx, from.dy);
+    for (double y = from.dy; y <= downTo; y += 0.5) {
+      path.lineTo(from.dx + amp * math.sin((y - from.dy) / wave * 2 * math.pi), y);
+    }
+    if (turn) path.quadraticBezierTo(from.dx, to.dy, to.dx, to.dy);
+    final paint = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round
+      ..shader = LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: const [AppColors.blue, AppColors.red],
+      ).createShader(Rect.fromPoints(from, to));
+    canvas.drawPath(path, paint);
+  }
+
+  @override
+  bool shouldRepaint(_WavyWire old) => old.from != from || old.to != to;
 }
