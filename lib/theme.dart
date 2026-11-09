@@ -6,7 +6,7 @@ class AppColors {
   static const primary = Color(0xFF24333C);
   static const soft = Color(0xFF55666F);
   /// The light grey of every page (the same as the start picture); cards and rows stay white.
-  static const paper = Color(0xFFEEF2F2);
+  static const paper = Color(0xFFF5F7F7);
   static const line = Color(0xFFD6DEE2);
   static const blue = Color(0xFF2F6FDC);
 

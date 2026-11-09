@@ -74,6 +74,8 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
               // grey of the app while the logo goes up
               ColoredBox(color: Color.lerp(kStartGrey, AppColors.paper, bg)!),
               Opacity(opacity: bg, child: city),
+              // a touch of white over the city: the last moment is almost white
+              IgnorePointer(child: ColoredBox(color: Colors.white.withValues(alpha: 0.28 * bg))),
               // soft light behind the logo and at the bottom, so they read well on the city
               Opacity(
                 opacity: bg,
@@ -82,7 +84,7 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
                     gradient: RadialGradient(
                       center: Alignment(0, -0.48),
                       radius: 0.55,
-                      colors: [Color(0xF2EEF2F2), Color(0xB3EEF2F2), Color(0x00EEF2F2)],
+                      colors: [Color(0xF2F5F7F7), Color(0xB3F5F7F7), Color(0x00F5F7F7)],
                       stops: [0, .5, 1],
                     ),
                   ),
@@ -95,7 +97,7 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
                     gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
-                      colors: [Color(0x00EEF2F2), Color(0x00EEF2F2), Color(0xE6EEF2F2)],
+                      colors: [Color(0x00F5F7F7), Color(0x00F5F7F7), Color(0xE6F5F7F7)],
                       stops: [0, .62, .86],
                     ),
                   ),
@@ -238,7 +240,7 @@ const String kSplashLine = 'Ride in. Park easy.';
 const double kSplashLogo = 170;
 
 /// The darker grey of the very first moment (Android's own start uses the same).
-const Color kStartGrey = Color(0xFFD3DADE);
+const Color kStartGrey = Color(0xFFE0E6E9);
 
 
 /// Map units → screen (before the 3D camera): an isometric grid, 3 units per block.
