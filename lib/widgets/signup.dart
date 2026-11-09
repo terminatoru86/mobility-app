@@ -34,12 +34,12 @@ Future<void> showSignupInvite(BuildContext context, AppState state) async {
   if (ok && context.mounted) await showVehicleStep(context, state);
 }
 
-/// After signing in: which vehicle do you ride? It cannot be skipped.
-Future<void> showVehicleStep(BuildContext context, AppState state) => showDialog<void>(
-      context: context,
-      barrierColor: _barrier,
-      barrierDismissible: false,
-      builder: (_) => PopScope(canPop: false, child: _VehicleStep(state: state)),
+/// After signing in: which vehicle do you ride? A full page; it cannot be skipped.
+Future<void> showVehicleStep(BuildContext context, AppState state) => Navigator.of(context).push<void>(
+      MaterialPageRoute(
+        fullscreenDialog: true,
+        builder: (_) => PopScope(canPop: false, child: _VehicleStep(state: state)),
+      ),
     );
 
 class _Card extends StatelessWidget {
@@ -345,9 +345,11 @@ class _SignInCardState extends State<SignInCard> {
   }
 }
 
-/// Which vehicle do you ride? Like a product card: a big picture that changes by itself
-/// (and can be swiped), "1/4" with arrows under it, the Choose button, then the model
-/// (not for a bike: bikes have no model). No Skip.
+/// Which vehicle do you ride? A full page in the style of a product card deck:
+/// big title, one big card (more cards stacked behind it), the picture filling the top and
+/// changing by itself (swipe works too), the name and one line under it, an outlined
+/// "Choose" button in the card, "‹ 1/5 ›" under the card, then the model (not for a bike)
+/// and a big blue Continue at the bottom. No Skip.
 class _VehicleStep extends StatefulWidget {
   final AppState state;
   const _VehicleStep({required this.state});
@@ -389,153 +391,25 @@ class _VehicleStepState extends State<_VehicleStep> {
 
   void _go(int d) {
     _touched = true;
-    _pc.animateToPage((_i + d) % _vehicles.length, duration: const Duration(milliseconds: 300), curve: Curves.easeOut);
+    final n = _i + d;
+    if (n < 0 || n >= _vehicles.length) return;
+    _pc.animateToPage(n, duration: const Duration(milliseconds: 300), curve: Curves.easeOut);
   }
 
-  Future<void> _save(Vehicle v) async {
+  Future<void> _continue() async {
+    final v = _chosen;
+    if (v == null) return;
     await widget.state.saveVehicle(v, _hasModel(v) ? _model.text.trim() : '');
     if (mounted) Navigator.pop(context);
   }
 
-  void _choose() {
-    final v = _vehicles[_i];
-    _touched = true;
-    if (!_hasModel(v)) {
-      _save(v);
-      return;
-    }
-    setState(() => _chosen = v);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final v = _vehicles[_i];
-    final chosen = _chosen;
-    return _Card(
-      badge: const Icon(Icons.check_rounded, color: AppColors.greenDark, size: 30),
-      children: [
-        const Text('What do you ride?', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
-        const SizedBox(height: 12),
-        // the product card
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(22),
-            border: Border.all(color: chosen != null ? AppColors.ink : AppColors.line, width: chosen != null ? 2 : 1.2),
-          ),
-          clipBehavior: Clip.antiAlias,
-          child: Column(children: [
-            Container(
-              height: 150,
-              color: AppColors.paper,
-              child: Listener(
-                onPointerDown: (_) => _touched = true,
-                child: PageView.builder(
-                  controller: _pc,
-                  physics: chosen != null ? const NeverScrollableScrollPhysics() : null,
-                  itemCount: _vehicles.length,
-                  onPageChanged: (i) => setState(() => _i = i),
-                  itemBuilder: (_, i) => Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Image.asset(_vehicles[i].asset, fit: BoxFit.contain),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(14, 10, 14, 12),
-              child: Row(children: [
-                Expanded(
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Text(v.label, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800)),
-                    Text(_hasModel(v) ? 'Add the model after you choose' : 'No model needed',
-                        style: const TextStyle(fontSize: 12, color: AppColors.soft)),
-                  ]),
-                ),
-                if (chosen != null) const Icon(Icons.check_circle, color: AppColors.green),
-              ]),
-            ),
-          ]),
-        ),
-        // 1/5 with arrows
-        if (chosen == null)
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 4),
-            child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              IconButton(
-                onPressed: () => _go(-1),
-                icon: const Icon(Icons.chevron_left_rounded, size: 30),
-                color: AppColors.ink,
-              ),
-              SizedBox(
-                width: 48,
-                child: Text('${_i + 1}/${_vehicles.length}',
-                    textAlign: TextAlign.center, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600)),
-              ),
-              IconButton(
-                onPressed: () => _go(1),
-                icon: const Icon(Icons.chevron_right_rounded, size: 30),
-                color: AppColors.ink,
-              ),
-            ]),
-          )
-        else
-          const SizedBox(height: 12),
-        if (chosen == null) ...[
-          _pill('Choose ${v.label.toLowerCase()}', AppColors.blue, Colors.white, _choose),
-          const SizedBox(height: 10),
-        ] else ...[
-          // the model (scooter, moped, motorcycle, e-bike)
-          Row(children: [
-            Expanded(child: _input(_model, 'Model, e.g. ${_example(chosen)}', TextInputType.text)),
-            if (_model.text.trim().isEmpty) ...[
-              const SizedBox(width: 8),
-              InkWell(
-                customBorder: const CircleBorder(),
-                onTap: () => setState(() => _why = !_why),
-                child: Container(
-                  width: 30,
-                  height: 30,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(color: AppColors.blue, width: 1.6),
-                    color: _why ? AppColors.blue : Colors.white,
-                  ),
-                  alignment: Alignment.center,
-                  child: Text('i',
-                      style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w800,
-                          fontStyle: FontStyle.italic,
-                          color: _why ? Colors.white : AppColors.blue)),
-                ),
-              ),
-            ],
-          ]),
-          if (_why && _model.text.trim().isEmpty)
-            Container(
-              margin: const EdgeInsets.only(top: 8),
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(color: const Color(0xFFEAF1FD), borderRadius: BorderRadius.circular(12)),
-              child: const Text(
-                'The model helps us show the right charging plugs, GPS settings and service suggestions, '
-                'and connect you better with the shops and services in your city.',
-                style: TextStyle(fontSize: 12, color: AppColors.primary, height: 1.35),
-              ),
-            ),
-          const SizedBox(height: 10),
-          _pill('Done', AppColors.ink, Colors.white, () => _save(chosen)),
-          TextButton(
-            onPressed: () => setState(() {
-              _chosen = null;
-              _why = false;
-            }),
-            child: const Text('Pick another', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.slate)),
-          ),
-        ],
-      ],
-    );
-  }
+  static String _line(Vehicle v) => switch (v) {
+        Vehicle.bike => 'No model needed',
+        Vehicle.ebike => 'Add the model for the right charger',
+        Vehicle.scooter => 'Add the model for the right charger',
+        Vehicle.moped => 'Add the model for service and parts',
+        Vehicle.moto => 'Add the model for service and parts',
+      };
 
   static String _example(Vehicle v) => switch (v) {
         Vehicle.ebike => 'Rad Power RadCity',
@@ -544,6 +418,218 @@ class _VehicleStepState extends State<_VehicleStep> {
         Vehicle.moto => 'Honda CB500',
         Vehicle.bike => '',
       };
+
+  @override
+  Widget build(BuildContext context) {
+    final v = _vehicles[_i];
+    final chosen = _chosen;
+    final selectedHere = chosen == v;
+    final needsModel = chosen != null && _hasModel(chosen);
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Column(children: [
+          Expanded(
+            child: ListView(padding: const EdgeInsets.fromLTRB(22, 18, 22, 12), children: [
+              const Text('What do you ride?',
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w800, letterSpacing: -0.5, height: 1.1)),
+              const SizedBox(height: 8),
+              const Text('Pick your vehicle. We use it for parking, chargers and routes that fit it.',
+                  style: TextStyle(fontSize: 16, color: AppColors.ink, height: 1.3)),
+              const SizedBox(height: 22),
+              // the deck: two cards peeking out behind on the right, the big card in front
+              SizedBox(
+                height: 420,
+                child: Stack(clipBehavior: Clip.none, children: [
+                  Positioned(
+                    right: -6,
+                    top: 70,
+                    bottom: 70,
+                    width: 60,
+                    child: Container(
+                      decoration: BoxDecoration(color: const Color(0xFFB9C2C7), borderRadius: BorderRadius.circular(26)),
+                    ),
+                  ),
+                  Positioned(
+                    right: 10,
+                    top: 36,
+                    bottom: 36,
+                    width: 60,
+                    child: Container(
+                      decoration: BoxDecoration(color: const Color(0xFFDCE2E5), borderRadius: BorderRadius.circular(28)),
+                    ),
+                  ),
+                  Positioned.fill(
+                    right: 30,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30),
+                        border: Border.all(
+                            color: selectedHere ? AppColors.blue : const Color(0xFFE3E8EA),
+                            width: selectedHere ? 2 : 1.2),
+                      ),
+                      clipBehavior: Clip.antiAlias,
+                      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                        // the picture, filling the top
+                        Expanded(
+                          child: DecoratedBox(
+                            decoration: const BoxDecoration(
+                              gradient: RadialGradient(
+                                radius: 0.9,
+                                colors: [Colors.white, Color(0xFFF0F2F3)],
+                              ),
+                            ),
+                            child: Listener(
+                              onPointerDown: (_) => _touched = true,
+                              child: PageView.builder(
+                                controller: _pc,
+                                itemCount: _vehicles.length,
+                                onPageChanged: (i) => setState(() {
+                                  _i = i;
+                                  _why = false;
+                                }),
+                                itemBuilder: (_, i) => Padding(
+                                  padding: const EdgeInsets.fromLTRB(18, 22, 18, 10),
+                                  child: Image.asset(_vehicles[i].asset, fit: BoxFit.contain),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 14, 20, 18),
+                          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                            Text(v.label, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w500)),
+                            const SizedBox(height: 4),
+                            Text(_line(v), style: const TextStyle(fontSize: 16, color: AppColors.soft)),
+                            const SizedBox(height: 16),
+                            SizedBox(
+                              width: double.infinity,
+                              height: 50,
+                              child: selectedHere
+                                  ? FilledButton.icon(
+                                      onPressed: null,
+                                      icon: const Icon(Icons.check_rounded),
+                                      label: Text('${v.label} chosen'),
+                                      style: FilledButton.styleFrom(
+                                        disabledBackgroundColor: const Color(0xFFE6EEFB),
+                                        disabledForegroundColor: AppColors.blue,
+                                        shape: const StadiumBorder(),
+                                        textStyle: const TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
+                                      ),
+                                    )
+                                  : OutlinedButton(
+                                      onPressed: () => setState(() {
+                                        _touched = true;
+                                        _chosen = v;
+                                      }),
+                                      style: OutlinedButton.styleFrom(
+                                        foregroundColor: AppColors.blue,
+                                        side: const BorderSide(color: AppColors.blue, width: 1.6),
+                                        shape: const StadiumBorder(),
+                                        textStyle: const TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
+                                      ),
+                                      child: const Text('Choose'),
+                                    ),
+                            ),
+                          ]),
+                        ),
+                      ]),
+                    ),
+                  ),
+                ]),
+              ),
+              // ‹ 1/5 ›
+              Padding(
+                padding: const EdgeInsets.only(top: 8, right: 30),
+                child: Row(children: [
+                  IconButton(
+                    onPressed: _i == 0 ? null : () => _go(-1),
+                    icon: const Icon(Icons.chevron_left_rounded, size: 34),
+                    color: AppColors.ink,
+                    disabledColor: const Color(0xFFC3CBCF),
+                  ),
+                  Expanded(
+                    child: Text('${_i + 1}/${_vehicles.length}',
+                        textAlign: TextAlign.center, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w500)),
+                  ),
+                  IconButton(
+                    onPressed: _i == _vehicles.length - 1 ? null : () => _go(1),
+                    icon: const Icon(Icons.chevron_right_rounded, size: 34),
+                    color: AppColors.ink,
+                    disabledColor: const Color(0xFFC3CBCF),
+                  ),
+                ]),
+              ),
+              // the model: e-bike, scooter, moped, motorcycle
+              if (needsModel) ...[
+                const SizedBox(height: 10),
+                Text('${chosen.label} model', style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800)),
+                const SizedBox(height: 8),
+                Row(children: [
+                  Expanded(child: _input(_model, 'e.g. ${_example(chosen)}', TextInputType.text)),
+                  if (_model.text.trim().isEmpty) ...[
+                    const SizedBox(width: 10),
+                    InkWell(
+                      customBorder: const CircleBorder(),
+                      onTap: () => setState(() => _why = !_why),
+                      child: Container(
+                        width: 34,
+                        height: 34,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(color: AppColors.blue, width: 1.8),
+                          color: _why ? AppColors.blue : Colors.white,
+                        ),
+                        alignment: Alignment.center,
+                        child: Text('i',
+                            style: TextStyle(
+                                fontSize: 17,
+                                fontWeight: FontWeight.w800,
+                                fontStyle: FontStyle.italic,
+                                color: _why ? Colors.white : AppColors.blue)),
+                      ),
+                    ),
+                  ],
+                ]),
+                if (_why && _model.text.trim().isEmpty)
+                  Container(
+                    margin: const EdgeInsets.only(top: 10),
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(color: const Color(0xFFEAF1FD), borderRadius: BorderRadius.circular(14)),
+                    child: const Text(
+                      'The model helps us show the right charging plugs, GPS settings and service suggestions, '
+                      'and connect you better with the shops and services in your city.',
+                      style: TextStyle(fontSize: 13.5, color: AppColors.primary, height: 1.35),
+                    ),
+                  ),
+              ],
+            ]),
+          ),
+          // the big blue button at the bottom
+          Padding(
+            padding: const EdgeInsets.fromLTRB(22, 4, 22, 14),
+            child: SizedBox(
+              width: double.infinity,
+              height: 58,
+              child: FilledButton(
+                onPressed: chosen == null ? null : _continue,
+                style: FilledButton.styleFrom(
+                  backgroundColor: AppColors.blue,
+                  disabledBackgroundColor: const Color(0xFFBFD0F2),
+                  disabledForegroundColor: Colors.white,
+                  shape: const StadiumBorder(),
+                  textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+                ),
+                child: Text(chosen == null ? 'Choose your vehicle' : 'Continue with ${chosen.label.toLowerCase()}'),
+              ),
+            ),
+          ),
+        ]),
+      ),
+    );
+  }
 }
 
 /// The Google "G" in its four colours (drawn, no image file).
