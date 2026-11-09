@@ -29,14 +29,17 @@ class CitySplash extends StatefulWidget {
 double _seg(double t, double a, double b) => ((t - a) / (b - a)).clamp(0.0, 1.0);
 
 class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin {
-  late final AnimationController _a = AnimationController(vsync: this, duration: const Duration(milliseconds: 2100));
+  late final AnimationController _a = AnimationController(vsync: this, duration: const Duration(milliseconds: 2600));
 
   @override
   void initState() {
     super.initState();
-    // the film starts with the first frame on screen
+    // the logo first stands still where Android's own start left it (that one fades out over it),
+    // then the film plays
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) _a.forward();
+      Future.delayed(const Duration(milliseconds: 300), () {
+        if (mounted) _a.forward();
+      });
     });
   }
 
@@ -61,11 +64,11 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
           animation: _a,
           builder: (context, _) {
             final t = _a.value;
-            final by = Curves.easeOut.transform(_seg(t, 0.0, 0.22)); // the vehicles come in
-            final sp = Curves.easeInOutCubic.transform(_seg(t, 0.30, 0.78)); // they part
-            final bg = Curves.easeInOut.transform(_seg(t, 0.34, 0.82)); // the city comes in
-            final name = Curves.easeOut.transform(_seg(t, 0.58, 0.86)); // MOBIlity under the logo
-            final btn = Curves.easeOutCubic.transform(_seg(t, 0.74, 1.0)); // Get started
+            final by = Curves.easeOut.transform(_seg(t, 0.0, 0.18)); // the vehicles come in
+            final sp = Curves.easeInOutCubic.transform(_seg(t, 0.36, 0.80)); // they part
+            final bg = Curves.easeInOut.transform(_seg(t, 0.40, 0.84)); // the city comes in
+            final name = Curves.easeOut.transform(_seg(t, 0.62, 0.88)); // MOBIlity under the logo
+            final btn = Curves.easeOutCubic.transform(_seg(t, 0.78, 1.0)); // Get started
             final logo = ui.lerpDouble(kSplashLogo, 116, sp)!;
             final logoY = ui.lerpDouble(h / 2, h * 0.25, sp)!; // centre of the logo
             final byTop = ui.lerpDouble(h / 2 + kSplashLogo / 2 + 10, h - pad.bottom - 46, sp)!;
