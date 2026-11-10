@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -59,7 +61,10 @@ class _Boot extends StatefulWidget {
 }
 
 class _BootState extends State<_Boot> {
-  late final Future<AppState> _ready = _boot();
+  // first start: the heavy loading (and the map) begins only when the start film is over, so the
+  // film never stutters
+  final Completer<void> _filmOver = Completer<void>();
+  late final Future<AppState> _ready = widget.splash ? _filmOver.future.then((_) => _boot()) : _boot();
   AppState? _state;
   late bool _splash = widget.splash;
   bool _fade = false;
@@ -121,7 +126,15 @@ class _BootState extends State<_Boot> {
               opacity: _fade ? 0 : 1,
               duration: const Duration(milliseconds: 300),
               curve: Curves.easeInOut,
-              child: Material(type: MaterialType.transparency, child: CitySplash(onStart: _start)),
+              child: Material(
+                type: MaterialType.transparency,
+                child: CitySplash(
+                  onStart: _start,
+                  onShown: () {
+                    if (!_filmOver.isCompleted) _filmOver.complete();
+                  },
+                ),
+              ),
             ),
           ),
         ),

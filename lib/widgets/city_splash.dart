@@ -11,34 +11,49 @@ import '../theme.dart';
 import 'pin.dart';
 
 /// The start screen, only for people without an account (once signed in, the app opens
-/// straight on the working map). One smooth take, like a short film:
+/// straight on the working map). One smooth take, like a short film, all of it played by the
+/// app on one clock (so nothing jumps):
 ///
-/// 1. our big "m" in the middle on a grey (the same as Android's own start, so nothing jumps); it
-///    starts rising gently from the very first frame, with no pause
-/// 2. while it rises (MOBIlity appears under it), the grey opens up to the light grey and the city
-///    with our pins and your route comes in
-/// 3. "Get started" and our four vehicles come up at the bottom; tapping it opens the map
+/// 1. our big "m" in the middle on a grey, exactly like Android's own start (which fades out over
+///    it); its three dots light up one after another: red, yellow, green
+/// 2. from the second dot on the grey slowly opens up and the city with our pins comes through
+/// 3. after the last dot the logo rises gently and MOBIlity appears under it
+/// 4. "Get started" and our four vehicles come up at the bottom; tapping it opens the map
 ///    (main.dart), then the sign-in pop-up.
+///
+/// The heavy work (the map) starts only when the film is over ([onShown]), so the film never
+/// stutters.
 class CitySplash extends StatefulWidget {
   /// "Get started" was tapped.
   final VoidCallback? onStart;
-  const CitySplash({super.key, this.onStart});
+
+  /// The film is over (the button is on screen).
+  final VoidCallback? onShown;
+  const CitySplash({super.key, this.onStart, this.onShown});
   @override
   State<CitySplash> createState() => _StartState();
 }
 
-double _seg(double t, double a, double b) => ((t - a) / (b - a)).clamp(0.0, 1.0);
+/// [t] in milliseconds on the film's clock, 0..1 between [a] and [b].
+double _ms(double t, double a, double b) => ((t - a) / (b - a)).clamp(0.0, 1.0);
 
 class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin {
-  late final AnimationController _a = AnimationController(vsync: this, duration: const Duration(milliseconds: 2200));
+  static const _len = 3200.0; // the film, in milliseconds
+  late final AnimationController _a =
+      AnimationController(vsync: this, duration: const Duration(milliseconds: 3200));
 
   @override
   void initState() {
     super.initState();
-    // the film plays from the very first frame, with no pause (the logo starts rising gently,
-    // right where Android's own start left it)
+    _a.addStatusListener((st) {
+      if (st == AnimationStatus.completed) widget.onShown?.call();
+    });
+    // the first frames stand still (the same picture as Android's own start, which fades out
+    // over them); then the film plays
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) _a.forward();
+      Future.delayed(const Duration(milliseconds: 250), () {
+        if (mounted) _a.forward();
+      });
     });
     _cityReady.addListener(_cityCame);
   }
@@ -60,64 +75,65 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
     return LayoutBuilder(builder: (context, box) {
         final w = box.maxWidth, h = box.maxHeight;
         final img = _cityImage;
+        // the finished background, painted from the first frame on (under the grey), so nothing
+        // has to be prepared in the middle of the film
         final city = RepaintBoundary(
-          child: img != null
-              ? RawImage(image: img, fit: BoxFit.cover, filterQuality: FilterQuality.medium)
-              : _cityReady.value
-                  ? const SplashArt(showTitle: false) // the file could not be read: draw it
-                  : const SizedBox.expand(), // still reading (a moment): nothing heavy meanwhile
+          child: Stack(fit: StackFit.expand, children: [
+            const ColoredBox(color: AppColors.paper),
+            if (img != null)
+              RawImage(image: img, fit: BoxFit.cover, filterQuality: FilterQuality.medium)
+            else if (_cityReady.value)
+              const SplashArt(showTitle: false), // the file could not be read: draw it
+            // a touch of white over the city
+            const ColoredBox(color: Color(0x2EFFFFFF)),
+            // soft light behind the logo and at the bottom, so they read well on the city
+            const DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: RadialGradient(
+                  center: Alignment(0, -0.48),
+                  radius: 0.55,
+                  colors: [Color(0xF2F5F7F7), Color(0xB3F5F7F7), Color(0x00F5F7F7)],
+                  stops: [0, .5, 1],
+                ),
+              ),
+            ),
+            const DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Color(0x00F5F7F7), Color(0x00F5F7F7), Color(0xE6F5F7F7)],
+                  stops: [0, .62, .86],
+                ),
+              ),
+            ),
+          ]),
         );
         return AnimatedBuilder(
           animation: _a,
           builder: (context, _) {
-            final t = _a.value;
-            final sp = Curves.easeInOutCubic.transform(_seg(t, 0.0, 0.58)); // the logo rises
-            final bg = Curves.easeInOut.transform(_seg(t, 0.10, 0.64)); // the city comes in
-            final name = Curves.easeOut.transform(_seg(t, 0.36, 0.68)); // MOBIlity under the logo
-            final btn = Curves.easeOutCubic.transform(_seg(t, 0.58, 0.90)); // Get started and the vehicles
+            final t = _a.value * _len;
+            final d1 = Curves.easeOut.transform(_ms(t, 0, 280)); // red dot
+            final d2 = Curves.easeOut.transform(_ms(t, 300, 580)); // yellow dot
+            final d3 = Curves.easeOut.transform(_ms(t, 600, 880)); // green dot
+            final bg = Curves.easeInOutSine.transform(_ms(t, 330, 2400)); // the grey opens, the city comes
+            final sp = Curves.easeInOutCubic.transform(_ms(t, 880, 2400)); // the logo rises
+            final name = Curves.easeOut.transform(_ms(t, 1500, 2400)); // MOBIlity under the logo
+            final btn = Curves.easeOutCubic.transform(_ms(t, 2300, 3200)); // Get started and the vehicles
             final logo = ui.lerpDouble(kSplashLogo, 116, sp)!;
             final logoY = ui.lerpDouble(h / 2, h * 0.25, sp)!; // centre of the logo
             return Stack(fit: StackFit.expand, children: [
-              // a darker grey at first (Android's own start is the same); it opens up to the light
-              // grey of the app while the logo goes up
-              ColoredBox(color: Color.lerp(kStartGrey, AppColors.paper, bg)!),
-              Opacity(opacity: bg, child: city),
-              // a touch of white over the city: the last moment is almost white
-              IgnorePointer(child: ColoredBox(color: Colors.white.withValues(alpha: 0.28 * bg))),
-              // soft light behind the logo and at the bottom, so they read well on the city
-              Opacity(
-                opacity: bg,
-                child: const DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: RadialGradient(
-                      center: Alignment(0, -0.48),
-                      radius: 0.55,
-                      colors: [Color(0xF2F5F7F7), Color(0xB3F5F7F7), Color(0x00F5F7F7)],
-                      stops: [0, .5, 1],
-                    ),
-                  ),
-                ),
-              ),
-              Opacity(
-                opacity: bg,
-                child: const DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Color(0x00F5F7F7), Color(0x00F5F7F7), Color(0xE6F5F7F7)],
-                      stops: [0, .62, .86],
-                    ),
-                  ),
-                ),
-              ),
+              city,
+              // the grey of the first moment (Android's own start is the same) lies over it and
+              // slowly clears
+              IgnorePointer(child: ColoredBox(color: kStartGrey.withValues(alpha: 1 - bg))),
               // the logo
               Positioned(
                 left: (w - logo) / 2,
                 top: logoY - logo / 2,
                 width: logo,
                 height: logo,
-                child: const CustomPaint(painter: LogoPainter()),
+                child: CustomPaint(painter: LogoPainter(red: d1, yellow: d2, green: d3)),
               ),
               // MOBIlity under it
               Positioned(
@@ -187,7 +203,9 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
 
 /// Our "m" with the three status dots, drawn directly (it is there in the very first frame).
 class LogoPainter extends CustomPainter {
-  const LogoPainter();
+  /// How much each dot is lit, 0..1.
+  final double red, yellow, green;
+  const LogoPainter({this.red = 1, this.yellow = 1, this.green = 1});
   @override
   void paint(Canvas canvas, Size size) {
     canvas.save();
@@ -208,14 +226,14 @@ class LogoPainter extends CustomPainter {
           ..strokeCap = StrokeCap.round
           ..strokeJoin = StrokeJoin.round
           ..color = const Color(0xFF24333C));
-    canvas.drawCircle(const Offset(14, 54), 4.6, Paint()..color = const Color(0xFFE0484D));
-    canvas.drawCircle(const Offset(32, 54), 4.6, Paint()..color = const Color(0xFFE9A800));
-    canvas.drawCircle(const Offset(50, 54), 4.6, Paint()..color = const Color(0xFF5D9A30));
+    canvas.drawCircle(const Offset(14, 54), 4.6, Paint()..color = const Color(0xFFE0484D).withValues(alpha: red));
+    canvas.drawCircle(const Offset(32, 54), 4.6, Paint()..color = const Color(0xFFE9A800).withValues(alpha: yellow));
+    canvas.drawCircle(const Offset(50, 54), 4.6, Paint()..color = const Color(0xFF5D9A30).withValues(alpha: green));
     canvas.restore();
   }
 
   @override
-  bool shouldRepaint(covariant LogoPainter oldDelegate) => false;
+  bool shouldRepaint(covariant LogoPainter o) => o.red != red || o.yellow != yellow || o.green != green;
 }
 
 /// The city behind the start screen as a file (made from [SplashArt] on GitHub, see preview/).
@@ -369,9 +387,9 @@ class _CitySplashState extends State<SplashArt> {
                   for (final (pt, i) in pins)
                     Builder(builder: (_) {
                       final place = _pins[i].$3;
-                      final depth = (0.48 + 0.34 * (pt.dy / h)).clamp(0.45, 0.85);
-                      final dim = i != _arriveAt ? 0.8 : 1.0;
-                      final full = place.status == Status.full ? 0.7 : 1.0;
+                      final depth = (0.56 + 0.36 * (pt.dy / h)).clamp(0.55, 0.95);
+                      const dim = 1.0;
+                      final full = place.status == Status.full ? 0.85 : 1.0;
                       return Positioned(
                         left: pt.dx - PlacePin.width / 2,
                         top: pt.dy - PlacePin.height,

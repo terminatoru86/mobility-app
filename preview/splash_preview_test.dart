@@ -70,7 +70,7 @@ void main() {
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/city.png'));
   });
 
-  testWidgets('start screen, three moments', (t) async {
+  testWidgets('start screen, the film in five moments', (t) async {
     await t.runAsync(_fonts);
     await t.runAsync(loadStartPicture);
     t.view.physicalSize = const Size(1080, 2400);
@@ -78,9 +78,14 @@ void main() {
     await t.pumpWidget(_phone(const CitySplash()));
     await t.pump();
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start1.png'));
-    await t.pump(const Duration(milliseconds: 1250));
+    await t.pump(const Duration(milliseconds: 251)); // the film starts
+    await t.pump(const Duration(milliseconds: 600)); // two dots lit, the city begins
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start2.png'));
-    await t.pump(const Duration(milliseconds: 1200));
+    await t.pump(const Duration(milliseconds: 700)); // all dots, the logo starts rising
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start3.png'));
+    await t.pump(const Duration(milliseconds: 700)); // rising, MOBIlity appears
+    await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start4.png'));
+    await t.pump(const Duration(milliseconds: 1400)); // the end
+    await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start5.png'));
   });
 }
