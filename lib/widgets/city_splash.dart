@@ -38,9 +38,9 @@ class CitySplash extends StatefulWidget {
 double _ms(double t, double a, double b) => ((t - a) / (b - a)).clamp(0.0, 1.0);
 
 class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin {
-  static const _len = 3000.0; // the film, in milliseconds
+  static const _len = 3300.0; // the film, in milliseconds
   late final AnimationController _a =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 3000));
+      AnimationController(vsync: this, duration: const Duration(milliseconds: 3300));
 
   @override
   void initState() {
@@ -110,14 +110,15 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
           animation: _a,
           builder: (context, _) {
             final t = _a.value * _len;
-            final d1 = Curves.easeOut.transform(_ms(t, 0, 300)); // red dot
-            final d2 = Curves.easeOut.transform(_ms(t, 230, 530)); // yellow dot
-            final d3 = Curves.easeOut.transform(_ms(t, 460, 760)); // green dot
-            final draw = Curves.easeInOutSine.transform(_ms(t, 60, 800)); // the "m" draws itself
-            final bg = Curves.easeInOutSine.transform(_ms(t, 300, 2350)); // the grey opens, the city comes
-            final sp = Curves.easeInOutSine.transform(_ms(t, 680, 2300)); // the logo rises
-            final name = Curves.easeOut.transform(_ms(t, 1300, 2250)); // MOBIlity under the logo
-            final btn = Curves.easeOutCubic.transform(_ms(t, 1900, 3000)); // Get started and the vehicles
+            // a short breath on the grey, then the first dot; the "m" draws itself unhurriedly
+            final d1 = Curves.easeOut.transform(_ms(t, 150, 480)); // red dot
+            final d2 = Curves.easeOut.transform(_ms(t, 500, 830)); // yellow dot
+            final d3 = Curves.easeOut.transform(_ms(t, 820, 1150)); // green dot
+            final draw = Curves.easeInOutSine.transform(_ms(t, 220, 1200)); // the "m" draws itself
+            final bg = Curves.easeInOutSine.transform(_ms(t, 600, 2650)); // the grey opens, the city comes
+            final sp = Curves.easeInOutSine.transform(_ms(t, 1000, 2600)); // the logo rises
+            final name = Curves.easeOut.transform(_ms(t, 1600, 2550)); // MOBIlity under the logo
+            final btn = Curves.easeOutCubic.transform(_ms(t, 2200, 3300)); // Get started and the vehicles
             final logo = ui.lerpDouble(kSplashLogo, 116, sp)!;
             final logoY = ui.lerpDouble(h / 2, h * 0.25, sp)!; // centre of the logo
             return Stack(fit: StackFit.expand, children: [
@@ -273,8 +274,8 @@ class LogoPainter extends CustomPainter {
 }
 
 /// The loading screen for a signed-in rider, on the plain grey of Android's own start (nothing
-/// there, so nothing can jump): our "m" draws itself, and a route through the three dots fills
-/// from left to right like a game's loading bar: red, yellow, and green when the map is ready.
+/// there, so nothing can jump): our "m" stands still, and only the route through the three dots
+/// moves, from left to right like a game's loading bar: red, yellow, and green when the map is ready.
 /// Then the screen fades out over the working map. Quick and smooth.
 class LoadingLogo extends StatefulWidget {
   /// Loads the app; completes when the map is on screen (under this screen).
@@ -332,25 +333,19 @@ class _LoadingLogoState extends State<LoadingLogo> with SingleTickerProviderStat
             child: SizedBox(
               width: kSplashLogo,
               height: kSplashLogo,
-              child: TweenAnimationBuilder<double>(
-                tween: Tween(begin: 0, end: 1),
-                duration: const Duration(milliseconds: 380),
-                curve: Curves.easeInOutSine,
-                builder: (context, draw, _) => AnimatedBuilder(
-                  animation: _a,
-                  builder: (context, _) {
-                    final p = _a.value;
-                    return CustomPaint(
-                      painter: LogoPainter(
-                        route: p,
-                        draw: draw,
-                        red: Curves.easeOut.transform(_ms(p, 0, 0.12)),
-                        yellow: Curves.easeOut.transform(_ms(p, 0.42, 0.56)),
-                        green: Curves.easeOut.transform(_ms(p, 0.9, 1)),
-                      ),
-                    );
-                  },
-                ),
+              child: AnimatedBuilder(
+                animation: _a,
+                builder: (context, _) {
+                  final p = _a.value;
+                  return CustomPaint(
+                    painter: LogoPainter(
+                      route: p,
+                      red: Curves.easeOut.transform(_ms(p, 0, 0.12)),
+                      yellow: Curves.easeOut.transform(_ms(p, 0.42, 0.56)),
+                      green: Curves.easeOut.transform(_ms(p, 0.9, 1)),
+                    ),
+                  );
+                },
               ),
             ),
           ),
