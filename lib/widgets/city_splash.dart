@@ -14,8 +14,8 @@ import 'pin.dart';
 /// straight on the working map). One smooth take, like a short film, all of it played by the
 /// app on one clock (so nothing jumps):
 ///
-/// 1. our big "m" in the middle on a grey, exactly like Android's own start (which fades out over
-///    it); its three dots light up one after another: red, yellow, green
+/// 1. the plain grey of Android's own start (nothing on it, so nothing can jump); the first dot
+///    lights up, then the "m" draws itself over the dots as they light: red, yellow, green
 /// 2. from the second dot on the grey slowly opens up and the city with our pins comes through
 /// 3. after the last dot the logo rises gently and MOBIlity appears under it
 /// 4. "Get started" and our four vehicles come up at the bottom; tapping it opens the map
@@ -48,12 +48,9 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
     _a.addStatusListener((st) {
       if (st == AnimationStatus.completed) widget.onShown?.call();
     });
-    // the first frames stand still (the same picture as Android's own start, which fades out
-    // over them); then the film plays
+    // the first frame is the plain grey (the same as Android's own start); the film plays at once
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Future.delayed(const Duration(milliseconds: 80), () {
-        if (mounted) _a.forward();
-      });
+      if (mounted) _a.forward();
     });
     _cityReady.addListener(_cityCame);
   }
@@ -113,13 +110,14 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
           animation: _a,
           builder: (context, _) {
             final t = _a.value * _len;
-            final d1 = Curves.easeOut.transform(_ms(t, 0, 320)); // red dot
-            final d2 = Curves.easeOut.transform(_ms(t, 240, 560)); // yellow dot
-            final d3 = Curves.easeOut.transform(_ms(t, 480, 800)); // green dot
-            final bg = Curves.easeInOutSine.transform(_ms(t, 260, 2300)); // the grey opens, the city comes
-            final sp = Curves.easeInOutSine.transform(_ms(t, 620, 2250)); // the logo rises (starts while the last dot lights)
-            final name = Curves.easeOut.transform(_ms(t, 1250, 2200)); // MOBIlity under the logo
-            final btn = Curves.easeOutCubic.transform(_ms(t, 1850, 3000)); // Get started and the vehicles
+            final d1 = Curves.easeOut.transform(_ms(t, 0, 300)); // red dot
+            final d2 = Curves.easeOut.transform(_ms(t, 230, 530)); // yellow dot
+            final d3 = Curves.easeOut.transform(_ms(t, 460, 760)); // green dot
+            final draw = Curves.easeInOutSine.transform(_ms(t, 60, 800)); // the "m" draws itself
+            final bg = Curves.easeInOutSine.transform(_ms(t, 300, 2350)); // the grey opens, the city comes
+            final sp = Curves.easeInOutSine.transform(_ms(t, 680, 2300)); // the logo rises
+            final name = Curves.easeOut.transform(_ms(t, 1300, 2250)); // MOBIlity under the logo
+            final btn = Curves.easeOutCubic.transform(_ms(t, 1900, 3000)); // Get started and the vehicles
             final logo = ui.lerpDouble(kSplashLogo, 116, sp)!;
             final logoY = ui.lerpDouble(h / 2, h * 0.25, sp)!; // centre of the logo
             return Stack(fit: StackFit.expand, children: [
@@ -133,7 +131,7 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
                 top: logoY - logo / 2,
                 width: logo,
                 height: logo,
-                child: CustomPaint(painter: LogoPainter(red: d1, yellow: d2, green: d3)),
+                child: CustomPaint(painter: LogoPainter(red: d1, yellow: d2, green: d3, draw: draw)),
               ),
               // MOBIlity under it
               Positioned(
@@ -206,10 +204,13 @@ class LogoPainter extends CustomPainter {
   /// How much each dot is lit, 0..1.
   final double red, yellow, green;
 
-  /// Loading: a route through the dots that fills from the green dot to the red one, 0..1
-  /// (the dots light as it reaches them). Null: no route.
+  /// Loading: a route through the dots that fills from the red dot to the green one, left to
+  /// right like a loading bar, 0..1 (the dots light as it reaches them). Null: no route.
   final double? route;
-  const LogoPainter({this.red = 1, this.yellow = 1, this.green = 1, this.route});
+
+  /// How much of the "m" is drawn, 0..1 (it draws itself from left to right).
+  final double draw;
+  const LogoPainter({this.red = 1, this.yellow = 1, this.green = 1, this.route, this.draw = 1});
   @override
   void paint(Canvas canvas, Size size) {
     canvas.save();
@@ -222,14 +223,24 @@ class LogoPainter extends CustomPainter {
       ..moveTo(32, 28)
       ..arcToPoint(const Offset(50, 28), radius: const Radius.circular(9))
       ..lineTo(50, 44);
-    canvas.drawPath(
-        m,
-        Paint()
-          ..style = PaintingStyle.stroke
-          ..strokeWidth = 7.5
-          ..strokeCap = StrokeCap.round
-          ..strokeJoin = StrokeJoin.round
-          ..color = const Color(0xFF24333C));
+    final ink = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 7.5
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round
+      ..color = const Color(0xFF24333C);
+    if (draw >= 1) {
+      canvas.drawPath(m, ink);
+    } else if (draw > 0) {
+      final parts = m.computeMetrics().toList();
+      final total = parts.fold<double>(0, (a, e) => a + e.length);
+      var left = total * draw;
+      for (final e in parts) {
+        if (left <= 0) break;
+        canvas.drawPath(e.extractPath(0, left.clamp(0.0, e.length)), ink);
+        left -= e.length;
+      }
+    }
     final r = route;
     if (r != null) {
       const off = Color(0xFFC3CCD1);
@@ -241,8 +252,8 @@ class LogoPainter extends CustomPainter {
       canvas.drawLine(const Offset(14, 54), const Offset(50, 54), line..color = off);
       if (r > 0) {
         canvas.drawLine(
-            const Offset(50, 54),
-            Offset(50 - 36 * r, 54),
+            const Offset(14, 54),
+            Offset(14 + 36 * r, 54),
             line
               ..shader = const LinearGradient(colors: [Color(0xFFE0484D), Color(0xFFE9A800), Color(0xFF5D9A30)])
                   .createShader(const Rect.fromLTRB(14, 50, 50, 58)));
@@ -258,13 +269,13 @@ class LogoPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant LogoPainter o) => o.red != red || o.yellow != yellow || o.green != green || o.route != route;
+  bool shouldRepaint(covariant LogoPainter o) => o.red != red || o.yellow != yellow || o.green != green || o.route != route || o.draw != draw;
 }
 
-/// The loading screen for a signed-in rider: our "m" in the middle on the grey (exactly like
-/// Android's own start, so it simply continues), with a route through the three dots that fills
-/// from the green dot to the red one while the app loads. Reaching red = the map is ready: the
-/// screen fades out over the working map.
+/// The loading screen for a signed-in rider, on the plain grey of Android's own start (nothing
+/// there, so nothing can jump): our "m" draws itself, and a route through the three dots fills
+/// from left to right like a game's loading bar: red, yellow, and green when the map is ready.
+/// Then the screen fades out over the working map. Quick and smooth.
 class LoadingLogo extends StatefulWidget {
   /// Loads the app; completes when the map is on screen (under this screen).
   final Future<void> Function() prepare;
@@ -287,17 +298,17 @@ class _LoadingLogoState extends State<LoadingLogo> with SingleTickerProviderStat
   }
 
   Future<void> _run() async {
-    // green, then on to yellow and a little further while the app loads...
+    // red, then on to yellow and a little further while the app loads...
     await Future.wait([
-      _a.animateTo(0.72, duration: const Duration(milliseconds: 700), curve: Curves.easeOutCubic).orCancel.catchError((_) {}),
+      _a.animateTo(0.72, duration: const Duration(milliseconds: 520), curve: Curves.easeOutCubic).orCancel.catchError((_) {}),
       widget.prepare(),
     ]);
     if (!mounted) return;
-    // ...the map is ready: the route reaches red, and the screen clears
-    await _a.animateTo(1, duration: const Duration(milliseconds: 320), curve: Curves.easeInOut).orCancel.catchError((_) {});
+    // ...the map is ready: the route reaches green, and the screen clears
+    await _a.animateTo(1, duration: const Duration(milliseconds: 220), curve: Curves.easeInOut).orCancel.catchError((_) {});
     if (!mounted) return;
     setState(() => _out = true);
-    await Future.delayed(const Duration(milliseconds: 300));
+    await Future.delayed(const Duration(milliseconds: 240));
     if (mounted) widget.onDone();
   }
 
@@ -313,7 +324,7 @@ class _LoadingLogoState extends State<LoadingLogo> with SingleTickerProviderStat
       ignoring: _out,
       child: AnimatedOpacity(
         opacity: _out ? 0 : 1,
-        duration: const Duration(milliseconds: 280),
+        duration: const Duration(milliseconds: 220),
         curve: Curves.easeInOut,
         child: ColoredBox(
           color: kStartGrey,
@@ -321,19 +332,25 @@ class _LoadingLogoState extends State<LoadingLogo> with SingleTickerProviderStat
             child: SizedBox(
               width: kSplashLogo,
               height: kSplashLogo,
-              child: AnimatedBuilder(
-                animation: _a,
-                builder: (context, _) {
-                  final p = _a.value;
-                  return CustomPaint(
-                    painter: LogoPainter(
-                      route: p,
-                      green: Curves.easeOut.transform(_ms(p, 0, 0.12)),
-                      yellow: Curves.easeOut.transform(_ms(p, 0.42, 0.56)),
-                      red: Curves.easeOut.transform(_ms(p, 0.9, 1)),
-                    ),
-                  );
-                },
+              child: TweenAnimationBuilder<double>(
+                tween: Tween(begin: 0, end: 1),
+                duration: const Duration(milliseconds: 380),
+                curve: Curves.easeInOutSine,
+                builder: (context, draw, _) => AnimatedBuilder(
+                  animation: _a,
+                  builder: (context, _) {
+                    final p = _a.value;
+                    return CustomPaint(
+                      painter: LogoPainter(
+                        route: p,
+                        draw: draw,
+                        red: Curves.easeOut.transform(_ms(p, 0, 0.12)),
+                        yellow: Curves.easeOut.transform(_ms(p, 0.42, 0.56)),
+                        green: Curves.easeOut.transform(_ms(p, 0.9, 1)),
+                      ),
+                    );
+                  },
+                ),
               ),
             ),
           ),
@@ -431,6 +448,15 @@ final List<(double, double, Place)> _pins = [
 ];
 const _arriveAt = 2; // index of the green pin you ride to
 
+/// Where pin [i] stands: on its street, slid a little along it (each one differently), so the pins
+/// do not line up in rows.
+Offset _pinAt(int i) {
+  final x = _pins[i].$1, y = _pins[i].$2;
+  if (i == _arriveAt) return Offset(x, y); // the end of your route stays put
+  final j = ((i * 37 + 11) % 17) / 17 * 1.5 - 0.75;
+  return x % 3 == 0 ? Offset(x, y + j) : Offset(x + j, y);
+}
+
 Place _place(String id, PlaceType type, Status status, String count) => Place(
       id: 'splash_$id',
       type: type,
@@ -479,7 +505,7 @@ class _CitySplashState extends State<SplashArt> {
         final area = _area(w, h);
         Offset screen(double x, double y) => MatrixUtils.transformPoint(m, g.p(x, y));
         final pins = <(Offset, int)>[
-          for (var i = 0; i < _pins.length; i++) (screen(_pins[i].$1, _pins[i].$2), i),
+          for (var i = 0; i < _pins.length; i++) (screen(_pinAt(i).dx, _pinAt(i).dy), i),
         ]..sort((a, b) => a.$1.dy.compareTo(b.$1.dy));
         return Stack(fit: StackFit.expand, children: [
           // the whole screen is the city (drawn in the very first frame, Android's logo stays until then)
@@ -789,8 +815,8 @@ class _CityPainter {
 
     // streets: light grey bands with a fine dashed white middle line
     final street = Paint()
-      ..color = const Color(0xFFEEF2F4)
-      ..strokeWidth = s * 1.15;
+      ..color = const Color(0xFFE3E9ED)
+      ..strokeWidth = s * 1.0;
     final mid = Paint()
       ..color = Colors.white
       ..strokeWidth = 1.1;
@@ -835,6 +861,7 @@ class _CityPainter {
     var seed = 7;
     double rnd() => (seed = (seed * 9301 + 49297) % 233280) / 233280;
     final blocks = <_Block>[];
+    final pads = <Offset>[]; // the pavement under each block of buildings
     for (var i = -14; i < 16; i++) {
       for (var j = -14; j < 16; j++) {
         final x0 = i * 3 + .8, y0 = j * 3 + .8;
@@ -846,12 +873,47 @@ class _CityPainter {
           blocks.add(_Block(x0, y0, 1.5, 1.5, 0, kind: 2));
           continue;
         }
-        blocks.add(_Block(x0 + .15, y0 + .15, 1.1, .6, .5 + rnd() * 1.4));
-        blocks.add(_Block(x0 + .15, y0 + 1.0, .45, .4, .35 + rnd() * .6));
-        blocks.add(_Block(x0 + .85, y0 + 1.0, .4, .35, .3 + rnd() * .5));
+        pads.add(Offset(x0, y0));
+        // every block of the city is built differently: a tower, slabs, houses, a courtyard...
+        final kind = (rnd() * 6).floor();
+        switch (kind) {
+          case 0: // a tall tower with a low annex
+            blocks.add(_Block(x0 + .1, y0 + .1, .8, .8, 1.9 + rnd() * 1.1));
+            blocks.add(_Block(x0 + 1.0, y0 + .75, .45, .6, .35 + rnd() * .4));
+          case 1: // two long slabs
+            blocks.add(_Block(x0 + .05, y0 + .05, 1.35, .5, .9 + rnd() * .8));
+            blocks.add(_Block(x0 + .05, y0 + .85, 1.35, .5, .5 + rnd() * .5));
+          case 2: // small houses
+            blocks.add(_Block(x0 + .05, y0 + .1, .55, .5, .35 + rnd() * .35));
+            blocks.add(_Block(x0 + .8, y0 + .05, .55, .55, .4 + rnd() * .4));
+            blocks.add(_Block(x0 + .1, y0 + .85, .5, .5, .3 + rnd() * .35));
+            blocks.add(_Block(x0 + .8, y0 + .85, .6, .5, .45 + rnd() * .5));
+          case 3: // a wide block with a tower at its corner
+            blocks.add(_Block(x0 + .05, y0 + .05, 1.35, .7, .8 + rnd() * .6));
+            blocks.add(_Block(x0 + .75, y0 + .85, .6, .55, 1.6 + rnd() * .9));
+          case 4: // one big wide building
+            blocks.add(_Block(x0 + .05, y0 + .15, 1.4, 1.1, .6 + rnd() * .7));
+          default: // a slim high-rise and a mid one
+            blocks.add(_Block(x0 + .1, y0 + .1, .55, .55, 2.2 + rnd() * 1.0));
+            blocks.add(_Block(x0 + .8, y0 + .15, .6, 1.1, .9 + rnd() * .7));
+        }
       }
     }
     blocks.sort((a, b) => (a.x0 + a.w + a.y0 + a.d).compareTo(b.x0 + b.w + b.y0 + b.d));
+
+    // pavements: a white pad with a fine edge under every block, so the streets read as streets
+    final padEdge = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = .7
+      ..color = const Color(0xFFD3DBE1);
+    for (final o in pads) {
+      final c = P(o.dx + .75, o.dy + .75);
+      if (c.dx < area.left - 3 * s || c.dx > area.right + 3 * s || c.dy < area.top - 3 * s || c.dy > area.bottom + 4 * s) continue;
+      final pad = Path()
+        ..addPolygon([P(o.dx - .12, o.dy - .12), P(o.dx + 1.62, o.dy - .12), P(o.dx + 1.62, o.dy + 1.62), P(o.dx - .12, o.dy + 1.62)], true);
+      canvas.drawPath(pad, Paint()..color = const Color(0xFFFBFCFC));
+      canvas.drawPath(pad, padEdge);
+    }
 
     final park = Paint()..color = const Color(0xFFD7EACB);
     final tree = Paint()..color = const Color(0xFFC4E0B0);

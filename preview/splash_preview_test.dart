@@ -78,15 +78,16 @@ void main() {
     t.view.devicePixelRatio = 1;
     await t.pumpWidget(_phone(const CitySplash()));
     await t.pump();
+    await t.pump(const Duration(milliseconds: 1));
+    await t.pump(const Duration(milliseconds: 330)); // the first dot, the m is drawing
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start1.png'));
-    await t.pump(const Duration(milliseconds: 251)); // the film starts
-    await t.pump(const Duration(milliseconds: 600)); // two dots lit, the city begins
+    await t.pump(const Duration(milliseconds: 470)); // all dots, the m is done
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start2.png'));
-    await t.pump(const Duration(milliseconds: 700)); // all dots, the logo starts rising
+    await t.pump(const Duration(milliseconds: 700)); // the city comes, the logo rises
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start3.png'));
-    await t.pump(const Duration(milliseconds: 700)); // rising, MOBIlity appears
+    await t.pump(const Duration(milliseconds: 700));
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start4.png'));
-    await t.pump(const Duration(milliseconds: 1400)); // the end
+    await t.pump(const Duration(milliseconds: 1000)); // the end
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start5.png'));
   });
 
@@ -97,9 +98,9 @@ void main() {
     await t.pumpWidget(_phone(LoadingLogo(prepare: () => never.future, onDone: () {})));
     await t.pump();
     await t.pump(const Duration(milliseconds: 1));
-    await t.pump(const Duration(milliseconds: 330));
+    await t.pump(const Duration(milliseconds: 160));
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/loading1.png'));
-    await t.pump(const Duration(milliseconds: 400));
+    await t.pump(const Duration(milliseconds: 500));
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/loading2.png'));
   });
 }

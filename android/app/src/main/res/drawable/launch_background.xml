@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- while Android starts the app: the light grey with our big "m" in the middle, exactly like the
-     first frame of the start screen (which then plays: Powered by MOBIlity, the city, Get started) -->
+<!-- while Android starts the app: the plain grey of our start (nothing on it, so nothing can jump
+     when the app takes over and plays the start film: a dot, the "m", the city) -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item><color android:color="#E8EDEF" /></item>
-    <item android:drawable="@drawable/splash_logo" android:gravity="center" />
 </layer-list>
