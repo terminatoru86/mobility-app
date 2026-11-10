@@ -1,5 +1,6 @@
 // A picture of the start screen, made on GitHub (workflow "Preview pictures"), to check the
 // design without a phone. Not part of the normal tests.
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -87,5 +88,18 @@ void main() {
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start4.png'));
     await t.pump(const Duration(milliseconds: 1400)); // the end
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/start5.png'));
+  });
+
+  testWidgets('loading logo (signed in)', (t) async {
+    t.view.physicalSize = const Size(1080, 2400);
+    t.view.devicePixelRatio = 1;
+    final never = Completer<void>();
+    await t.pumpWidget(_phone(LoadingLogo(prepare: () => never.future, onDone: () {})));
+    await t.pump();
+    await t.pump(const Duration(milliseconds: 1));
+    await t.pump(const Duration(milliseconds: 330));
+    await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/loading1.png'));
+    await t.pump(const Duration(milliseconds: 400));
+    await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/loading2.png'));
   });
 }

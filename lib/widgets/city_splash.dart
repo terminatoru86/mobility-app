@@ -38,9 +38,9 @@ class CitySplash extends StatefulWidget {
 double _ms(double t, double a, double b) => ((t - a) / (b - a)).clamp(0.0, 1.0);
 
 class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin {
-  static const _len = 3200.0; // the film, in milliseconds
+  static const _len = 3000.0; // the film, in milliseconds
   late final AnimationController _a =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 3200));
+      AnimationController(vsync: this, duration: const Duration(milliseconds: 3000));
 
   @override
   void initState() {
@@ -51,7 +51,7 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
     // the first frames stand still (the same picture as Android's own start, which fades out
     // over them); then the film plays
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Future.delayed(const Duration(milliseconds: 250), () {
+      Future.delayed(const Duration(milliseconds: 80), () {
         if (mounted) _a.forward();
       });
     });
@@ -113,13 +113,13 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
           animation: _a,
           builder: (context, _) {
             final t = _a.value * _len;
-            final d1 = Curves.easeOut.transform(_ms(t, 0, 280)); // red dot
-            final d2 = Curves.easeOut.transform(_ms(t, 300, 580)); // yellow dot
-            final d3 = Curves.easeOut.transform(_ms(t, 600, 880)); // green dot
-            final bg = Curves.easeInOutSine.transform(_ms(t, 330, 2400)); // the grey opens, the city comes
-            final sp = Curves.easeInOutCubic.transform(_ms(t, 880, 2400)); // the logo rises
-            final name = Curves.easeOut.transform(_ms(t, 1500, 2400)); // MOBIlity under the logo
-            final btn = Curves.easeOutCubic.transform(_ms(t, 2300, 3200)); // Get started and the vehicles
+            final d1 = Curves.easeOut.transform(_ms(t, 0, 320)); // red dot
+            final d2 = Curves.easeOut.transform(_ms(t, 240, 560)); // yellow dot
+            final d3 = Curves.easeOut.transform(_ms(t, 480, 800)); // green dot
+            final bg = Curves.easeInOutSine.transform(_ms(t, 260, 2300)); // the grey opens, the city comes
+            final sp = Curves.easeInOutSine.transform(_ms(t, 620, 2250)); // the logo rises (starts while the last dot lights)
+            final name = Curves.easeOut.transform(_ms(t, 1250, 2200)); // MOBIlity under the logo
+            final btn = Curves.easeOutCubic.transform(_ms(t, 1850, 3000)); // Get started and the vehicles
             final logo = ui.lerpDouble(kSplashLogo, 116, sp)!;
             final logoY = ui.lerpDouble(h / 2, h * 0.25, sp)!; // centre of the logo
             return Stack(fit: StackFit.expand, children: [
@@ -205,7 +205,11 @@ class _StartState extends State<CitySplash> with SingleTickerProviderStateMixin 
 class LogoPainter extends CustomPainter {
   /// How much each dot is lit, 0..1.
   final double red, yellow, green;
-  const LogoPainter({this.red = 1, this.yellow = 1, this.green = 1});
+
+  /// Loading: a route through the dots that fills from the green dot to the red one, 0..1
+  /// (the dots light as it reaches them). Null: no route.
+  final double? route;
+  const LogoPainter({this.red = 1, this.yellow = 1, this.green = 1, this.route});
   @override
   void paint(Canvas canvas, Size size) {
     canvas.save();
@@ -226,6 +230,27 @@ class LogoPainter extends CustomPainter {
           ..strokeCap = StrokeCap.round
           ..strokeJoin = StrokeJoin.round
           ..color = const Color(0xFF24333C));
+    final r = route;
+    if (r != null) {
+      const off = Color(0xFFC3CCD1);
+      final line = Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 2.4
+        ..strokeCap = StrokeCap.round;
+      // the road still to do, then the part done (green, yellow, red as it goes)
+      canvas.drawLine(const Offset(14, 54), const Offset(50, 54), line..color = off);
+      if (r > 0) {
+        canvas.drawLine(
+            const Offset(50, 54),
+            Offset(50 - 36 * r, 54),
+            line
+              ..shader = const LinearGradient(colors: [Color(0xFFE0484D), Color(0xFFE9A800), Color(0xFF5D9A30)])
+                  .createShader(const Rect.fromLTRB(14, 50, 50, 58)));
+      }
+      for (final x in const [14.0, 32.0, 50.0]) {
+        canvas.drawCircle(Offset(x, 54), 4.6, Paint()..color = off);
+      }
+    }
     canvas.drawCircle(const Offset(14, 54), 4.6, Paint()..color = const Color(0xFFE0484D).withValues(alpha: red));
     canvas.drawCircle(const Offset(32, 54), 4.6, Paint()..color = const Color(0xFFE9A800).withValues(alpha: yellow));
     canvas.drawCircle(const Offset(50, 54), 4.6, Paint()..color = const Color(0xFF5D9A30).withValues(alpha: green));
@@ -233,7 +258,89 @@ class LogoPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant LogoPainter o) => o.red != red || o.yellow != yellow || o.green != green;
+  bool shouldRepaint(covariant LogoPainter o) => o.red != red || o.yellow != yellow || o.green != green || o.route != route;
+}
+
+/// The loading screen for a signed-in rider: our "m" in the middle on the grey (exactly like
+/// Android's own start, so it simply continues), with a route through the three dots that fills
+/// from the green dot to the red one while the app loads. Reaching red = the map is ready: the
+/// screen fades out over the working map.
+class LoadingLogo extends StatefulWidget {
+  /// Loads the app; completes when the map is on screen (under this screen).
+  final Future<void> Function() prepare;
+
+  /// The screen has faded out.
+  final VoidCallback onDone;
+  const LoadingLogo({super.key, required this.prepare, required this.onDone});
+  @override
+  State<LoadingLogo> createState() => _LoadingLogoState();
+}
+
+class _LoadingLogoState extends State<LoadingLogo> with SingleTickerProviderStateMixin {
+  late final AnimationController _a = AnimationController(vsync: this);
+  bool _out = false;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _run());
+  }
+
+  Future<void> _run() async {
+    // green, then on to yellow and a little further while the app loads...
+    await Future.wait([
+      _a.animateTo(0.72, duration: const Duration(milliseconds: 700), curve: Curves.easeOutCubic).orCancel.catchError((_) {}),
+      widget.prepare(),
+    ]);
+    if (!mounted) return;
+    // ...the map is ready: the route reaches red, and the screen clears
+    await _a.animateTo(1, duration: const Duration(milliseconds: 320), curve: Curves.easeInOut).orCancel.catchError((_) {});
+    if (!mounted) return;
+    setState(() => _out = true);
+    await Future.delayed(const Duration(milliseconds: 300));
+    if (mounted) widget.onDone();
+  }
+
+  @override
+  void dispose() {
+    _a.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return IgnorePointer(
+      ignoring: _out,
+      child: AnimatedOpacity(
+        opacity: _out ? 0 : 1,
+        duration: const Duration(milliseconds: 280),
+        curve: Curves.easeInOut,
+        child: ColoredBox(
+          color: kStartGrey,
+          child: Center(
+            child: SizedBox(
+              width: kSplashLogo,
+              height: kSplashLogo,
+              child: AnimatedBuilder(
+                animation: _a,
+                builder: (context, _) {
+                  final p = _a.value;
+                  return CustomPaint(
+                    painter: LogoPainter(
+                      route: p,
+                      green: Curves.easeOut.transform(_ms(p, 0, 0.12)),
+                      yellow: Curves.easeOut.transform(_ms(p, 0.42, 0.56)),
+                      red: Curves.easeOut.transform(_ms(p, 0.9, 1)),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
 }
 
 /// The city behind the start screen as a file (made from [SplashArt] on GitHub, see preview/).
@@ -308,6 +415,19 @@ final List<(double, double, Place)> _pins = [
   (10.5, 12, _place('s', PlaceType.parkOutdoor, Status.free, '4')),
   (13.5, 9, _place('t', PlaceType.parkCovered, Status.free, '3')),
   (15, 10.5, _place('u', PlaceType.charging, Status.almost, '1')),
+  // and more between them, so the whole picture is alive
+  (4.5, 0, _place('v', PlaceType.rack, Status.free, '4')),
+  (3, 4.5, _place('w', PlaceType.rack, Status.almost, '1')),
+  (7.5, 3, _place('x', PlaceType.parkOutdoor, Status.free, '6')),
+  (0, 7.5, _place('y', PlaceType.rack, Status.free, '3')),
+  (7.5, 6, _place('z', PlaceType.charging, Status.free, '2')),
+  (1.5, 9, _place('a2', PlaceType.rack, Status.full, '0')),
+  (12, 7.5, _place('b2', PlaceType.rack, Status.free, '5')),
+  (6, 10.5, _place('c2', PlaceType.parkCovered, Status.almost, '1')),
+  (9, 10.5, _place('d2', PlaceType.rack, Status.free, '2')),
+  (0, 4.5, _place('e2', PlaceType.parkOutdoor, Status.free, '7')),
+  (12, 4.5, _place('f2', PlaceType.rack, Status.almost, '1')),
+  (12, 10.5, _place('g2', PlaceType.rack, Status.free, '3')),
 ];
 const _arriveAt = 2; // index of the green pin you ride to
 

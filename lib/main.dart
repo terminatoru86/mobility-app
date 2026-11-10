@@ -69,6 +69,7 @@ class _BootState extends State<_Boot> {
   late bool _splash = widget.splash;
   bool _fade = false;
   bool _started = false;
+  late bool _loading = !widget.splash; // signed in: the loading logo until the map is on screen
 
   @override
   void initState() {
@@ -117,7 +118,20 @@ class _BootState extends State<_Boot> {
   Widget build(BuildContext context) {
     final st = _state;
     return Stack(children: [
-      if (st != null) Shell(state: st) else const ColoredBox(color: AppColors.paper, child: SizedBox.expand()),
+      if (st != null) Shell(state: st) else const ColoredBox(color: kStartGrey, child: SizedBox.expand()),
+      if (_loading)
+        Positioned.fill(
+          child: LoadingLogo(
+            prepare: () async {
+              await _ready; // (the map is put on screen by the listener in initState)
+              await WidgetsBinding.instance.endOfFrame;
+              await WidgetsBinding.instance.endOfFrame;
+            },
+            onDone: () {
+              if (mounted) setState(() => _loading = false);
+            },
+          ),
+        ),
       if (_splash)
         Positioned.fill(
           child: IgnorePointer(
