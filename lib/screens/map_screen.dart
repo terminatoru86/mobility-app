@@ -120,8 +120,9 @@ class MapScreenState extends State<MapScreen> {
     Basemap.i.start(); // the street map already on the phone: no internet needed
     Store.i.addListener(_storeChanged);
     statusFilter.addListener(_statusChanged);
-    // The circle in the search bar shows your vehicle, then the weather, every 50 s.
-    _flip = Timer.periodic(const Duration(seconds: 50), (_) {
+    // The round button next to the search bar shows your vehicle, then the weather, turning by itself every 8 s
+    // (a swipe on it turns it at once).
+    _flip = Timer.periodic(const Duration(seconds: 8), (_) {
       if (mounted) setState(() => _weatherFace = !_weatherFace);
     });
     // one clock for all pins (glyph <-> age)

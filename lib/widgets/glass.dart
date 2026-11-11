@@ -2,10 +2,10 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 
-/// White glass: about half white with the map blurred behind it, a hairline of light on the edge
+/// White glass: a little over a third white with the map blurred behind it, a hairline of light on the edge
 /// and a soft shadow. What sits under it shows as a blur of colour, never through it.
 /// One material for the search bar, the weather button, the GPS button and the place sheet.
-const kGlass = Color(0x85FFFFFF); // white at 52 %: the colour of a pin underneath comes through
+const kGlass = Color(0x61FFFFFF); // white at 38 %: the colour of a pin underneath comes through clearly
 
 /// The map behind the glass: blurred, with its colours made stronger so a pin shows as a clear
 /// blur of its own colour.

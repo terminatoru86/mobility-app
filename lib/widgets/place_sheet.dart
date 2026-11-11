@@ -256,18 +256,9 @@ class _PlaceSheetState extends State<PlaceSheet> {
             label: const Text('Write the first review'),
           ),
         )],
-      if (p.photos.isNotEmpty)
-        ...[gap, _realPhotos(p.photos)]
-      else if (p.osm)
-        // no photo in the map data: the nearest street photos from Mapillary (if any)
-        FutureBuilder<List<String>>(
-          future: mapillaryPhotos(p.pos),
-          builder: (_, snap) => (snap.data ?? const []).isEmpty
-              ? const SizedBox.shrink()
-              : Padding(padding: const EdgeInsets.only(top: 12), child: _realPhotos(snap.data!, credit: 'Mapillary')),
-        )
-      else
-        ...[gap, _photo()],
+      // photos: only real photos of this very place (set on the place itself in the map data).
+      // No street views from nearby and no stand-in picture: a photo that is not of the place misleads.
+      if (p.photos.isNotEmpty) ...[gap, _realPhotos(p.photos)],
       if (p.qa.isNotEmpty || (Store.i.myQuestions[p.id]?.isNotEmpty ?? false))
         if (p.type == PlaceType.parkPrivate || p.type == PlaceType.service || p.type == PlaceType.rent)
           ...[gap, QaCard([...?Store.i.myQuestions[p.id], ...p.qa], onAsk: (q) => setState(() => Store.i.ask(p.id, q)))],
@@ -541,26 +532,6 @@ class _PlaceSheetState extends State<PlaceSheet> {
               ),
             ]),
           ),
-        ),
-      );
-
-  Widget _photo() => Container(
-        height: 110,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(14),
-          gradient: const LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [Color(0xFFD5E3EA), Color(0xFFD5E3EA), Color(0xFFA1B2A0), Color(0xFFA1B2A0)],
-            stops: [0, 0.55, 0.55, 1],
-          ),
-        ),
-        alignment: Alignment.bottomLeft,
-        padding: const EdgeInsets.all(8),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-          decoration: BoxDecoration(color: Colors.black54, borderRadius: BorderRadius.circular(8)),
-          child: const Text('Photo · 1/3', style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w700)),
         ),
       );
 
