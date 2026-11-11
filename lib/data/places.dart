@@ -235,6 +235,7 @@ class Place {
   final List<String> photos; // real photos (OpenStreetMap image / Wikimedia Commons / Panoramax)
   final List<String> offers; // what a service / shop / rent / wash / BMX place does, from the map data
   final ShareInfo? share; // ride share, live: what a station holds, or one vehicle on the street
+  final String? street; // number and street, when [address] holds the name of the place
 
   const Place({
     required this.id,
@@ -266,6 +267,7 @@ class Place {
     this.photos = const [],
     this.offers = const [],
     this.share,
+    this.street,
   });
 
   Status get shownStatus => type.isNeutral ? Status.neutral : status;
@@ -277,7 +279,7 @@ class Place {
         age: newAge, accepts: accepts, distance: distance, etaMin: etaMin, hours: hours, phone: phone,
         rating: rating, reviewCount: reviewCount, reviews: reviews, security: security, qa: qa, tag: tag,
         tools: tools, busy: busy, priceNow: priceNow, operatorName: operatorName, operatorPrice: operatorPrice,
-        osm: osm, facts: facts, website: website, photos: photos, share: share,
+        osm: osm, facts: facts, website: website, photos: photos, offers: offers, share: share, street: street,
       );
 
   /// Several racks standing side by side, shown as one pin: the status and free places of all of them.
@@ -287,7 +289,7 @@ class Place {
         rating: rating, reviewCount: reviewCount, reviews: reviews, security: security, qa: qa, tag: tag,
         tools: tools, busy: busy, priceNow: priceNow, operatorName: operatorName, operatorPrice: operatorPrice,
         osm: osm, facts: ['$racks racks side by side', ...facts], website: website, photos: photos, offers: offers,
-        share: share,
+        share: share, street: street,
       );
 }
 

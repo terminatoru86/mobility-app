@@ -183,6 +183,13 @@ class PlaceSheet extends StatefulWidget {
 }
 
 class _PlaceSheetState extends State<PlaceSheet> {
+  /// text buttons in the sheet: low, so the parts stay close together
+  static final _lowButton = TextButton.styleFrom(
+      minimumSize: const Size(0, 34),
+      padding: const EdgeInsets.symmetric(horizontal: 6),
+      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      visualDensity: VisualDensity.compact);
+
   late bool _tip = widget.showVehicleTip;
   String? _opening;
   bool _copied = false;
@@ -277,13 +284,13 @@ class _PlaceSheetState extends State<PlaceSheet> {
     final p = widget.place;
     // a shared vehicle on the street takes the colour of its battery
     final c = colorsFor(p.share?.street == true ? p.share!.charge : p.shownStatus);
-    const gap = SizedBox(height: 12);
+    const gap = SizedBox(height: 8); // the parts sit close together, as in the manual
 
     final children = <Widget>[
       if (_tip) _vehicleTip(),
       if (p.type == PlaceType.rent) ...[
         const RentVehicleRow(free: {Vehicle.bike: 6, Vehicle.scooter: 3, Vehicle.moped: 2, Vehicle.moto: 1}),
-        const SizedBox(height: 8),
+        const SizedBox(height: 6),
       ],
       if (p.share != null)
         // live ride share: a station shows its four numbers and the walk; one vehicle shows its
@@ -334,7 +341,8 @@ class _PlaceSheetState extends State<PlaceSheet> {
           alignment: Alignment.centerLeft,
           child: TextButton.icon(
             onPressed: () => _push(ReviewsScreen(place: p, state: widget.state)),
-            icon: const Icon(Icons.rate_review_outlined),
+            style: _lowButton,
+            icon: const Icon(Icons.rate_review_outlined, size: 18),
             label: const Text('Write the first review'),
           ),
         )],
@@ -343,10 +351,11 @@ class _PlaceSheetState extends State<PlaceSheet> {
       // Never a view of the street next to it, never a stand-in picture.
       if (_photos.isNotEmpty) ...[gap, _realPhotos(_photos)],
       if (!kIsWeb) ...[
-        const SizedBox(height: 8),
+        const SizedBox(height: 2),
         Align(
           alignment: Alignment.centerLeft,
           child: TextButton.icon(
+            style: _lowButton,
             onPressed: () => MyPhotos.i.take(p.id),
             icon: const Icon(Icons.add_a_photo_outlined, size: 18),
             label: Text(_photos.isEmpty ? 'Add the first photo' : 'Add a photo'),
@@ -387,7 +396,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
               children: [
                 Column(key: _contentKey, mainAxisSize: MainAxisSize.min, children: [
                   _band(p, c),
-                  Padding(padding: const EdgeInsets.fromLTRB(14, 4, 14, 0), child: Column(children: children)),
+                  Padding(padding: const EdgeInsets.fromLTRB(14, 0, 14, 0), child: Column(children: children)),
                 ]),
               ],
             ),
@@ -399,12 +408,16 @@ class _PlaceSheetState extends State<PlaceSheet> {
 
   // Coloured band: glyph (or operator name), age, address + copy, Trip.
   Widget _band(Place p, StatusColors c) {
+    // the name of the place goes on top; under it the street (when the map data has it)
+    final named = p.operatorName == null && (p.street != null || (p.osm && p.type.isNeutral));
+    final line = named ? (p.street ?? '') : p.address;
     return Container(
-      padding: const EdgeInsets.fromLTRB(14, 8, 10, 8),
+      padding: const EdgeInsets.fromLTRB(14, 6, 10, 6),
       child: Column(children: [
         Container(width: 36, height: 4, decoration: BoxDecoration(color: c.main.withValues(alpha: 0.5), borderRadius: BorderRadius.circular(2))),
-        const SizedBox(height: 8),
-        Row(children: [
+        const SizedBox(height: 6),
+        // Trip sits at the top, level with the name
+        Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Expanded(
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Row(children: [
@@ -413,6 +426,17 @@ class _PlaceSheetState extends State<PlaceSheet> {
                 else
                   Glyph(p.type, size: 24, color: c.dark),
                 const SizedBox(width: 8),
+                // a place with a name (a shop, a workshop, a park): the name, in bold, beside its drawing
+                if (named)
+                  Flexible(
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 8),
+                      child: Text(p.address,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(fontWeight: FontWeight.w900, fontSize: 16, color: c.dark)),
+                    ),
+                  ),
                 if (!p.type.isNeutral && p.age.isNotEmpty)
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
@@ -424,23 +448,26 @@ class _PlaceSheetState extends State<PlaceSheet> {
                     child: Text(p.age, style: TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: c.dark)),
                   ),
               ]),
-              const SizedBox(height: 4),
+              const SizedBox(height: 2),
               Row(children: [
-                Flexible(
-                  child: Text(p.address,
-                      maxLines: 1, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: 12.5, color: c.dark)),
-                ),
+                if (line.isNotEmpty)
+                  Flexible(
+                    child: Text(line,
+                        maxLines: 1, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: 12.5, color: c.dark)),
+                  ),
                 IconButton(
-                  visualDensity: VisualDensity.compact,
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints.tightFor(width: 30, height: 28),
                   iconSize: 16,
                   icon: Icon(_copied ? Icons.check_rounded : Icons.copy_rounded, color: c.dark),
                   onPressed: () async {
-                    await Clipboard.setData(ClipboardData(text: p.address));
+                    await Clipboard.setData(ClipboardData(text: p.street == null ? p.address : '${p.address}, ${p.street}'));
                     setState(() => _copied = true);
                   },
                 ),
                 IconButton(
-                  visualDensity: VisualDensity.compact,
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints.tightFor(width: 30, height: 28),
                   iconSize: 18,
                   icon: Icon(Store.i.isSaved(p) ? Icons.favorite : Icons.favorite_border,
                       color: Store.i.isSaved(p) ? AppColors.red : c.dark),
@@ -458,7 +485,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
             label: const Text('Trip'),
             style: FilledButton.styleFrom(
               backgroundColor: c.dark,
-              minimumSize: const Size(96, 44),
+              minimumSize: const Size(92, 40),
             ),
           ),
         ]),
@@ -600,7 +627,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
       builder: (_, snap) {
         final s = base.withPhotos(snap.data ?? const {});
         if (!s.anyKnown) return const SizedBox.shrink();
-        return Padding(padding: const EdgeInsets.only(top: 12), child: SecurityRow(s));
+        return Padding(padding: const EdgeInsets.only(top: 8), child: SecurityRow(s));
       },
     );
   }

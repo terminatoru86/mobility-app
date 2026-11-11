@@ -718,6 +718,7 @@ Place? placeFromOsm(Map<String, dynamic> e, {LatLng? from}) {
     tag: type == PlaceType.charging ? _sockets(t) : (type == PlaceType.wash ? _washMode(t) : null),
     // a price only where the parking really charges (fee=yes); a rack on private property is free but private
     priceNow: type == PlaceType.parkPrivate && yes('fee') ? '\$${(1 + t0.n % 3)}/h' : null,
+    street: name != null && street.isNotEmpty ? street : null,
     operatorPrice: type == PlaceType.sharing ? '\$1 unlock · \$0.${17 + t0.n % 20}/min' : null,
     accepts: accepts,
     distance: meters < 1000 ? '${(meters / 10).round() * 10} m' : '${(meters / 1000).toStringAsFixed(1)} km',
