@@ -50,7 +50,8 @@ class _ClassNote extends StatelessWidget {
             const SizedBox(height: 12),
             Text(c.note, style: const TextStyle(fontSize: 14, height: 1.35, color: AppColors.ink)),
             const SizedBox(height: 6),
-            const Text('Dates and sign-up are on their page.', style: TextStyle(fontSize: 12, color: AppColors.soft)),
+            Text('Seen running in ${c.seen}. Dates and sign-up are on their page.',
+                style: const TextStyle(fontSize: 12, color: AppColors.soft)),
             const SizedBox(height: 12),
             FilledButton.icon(
               onPressed: () => openLink(c.url),
