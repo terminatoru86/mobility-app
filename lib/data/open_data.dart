@@ -147,6 +147,8 @@ class OpenDataService {
   final Set<String> liveOperators = {};
   List<ShareSystem>? _systems;
   final Map<String, (String?, String?, String?)> _feeds = {}; // system url -> (info, status, vehicles)
+  final Map<String, String?> _typesUrl = {}; // system url -> vehicle_types feed
+  final Map<String, Map<String, (double?, String)>> _types = {}; // system url -> type id -> (full range in metres, form)
   List<ShareSystem> _active = [];
   String? lastError;
 
@@ -449,6 +451,7 @@ class OpenDataService {
           .firstOrNull;
       f = (url('station_information'), url('station_status'), url('vehicle_status') ?? url('free_bike_status'));
       _feeds[s.url] = f;
+      _typesUrl[s.url] = url('vehicle_types');
     }
     final (infoUrl, statusUrl, vehUrl) = f;
     final out = <String, Place>{};
@@ -511,6 +514,20 @@ class OpenDataService {
     }
 
     if (vehUrl != null) {
+      // the kinds of vehicle of this operator, read once: how far each goes on a full battery
+      // (the battery percent is worked out from it when the feed gives only the range left)
+      var types = _types[s.url];
+      if (types == null && _typesUrl[s.url] != null) {
+        types = {};
+        try {
+          final tr = await http.get(Uri.parse(_typesUrl[s.url]!)).timeout(const Duration(seconds: 15));
+          final tl = (jsonDecode(utf8.decode(tr.bodyBytes))['data']['vehicle_types'] as List).cast<Map<String, dynamic>>();
+          for (final t in tl) {
+            types['${t['vehicle_type_id']}'] = ((t['max_range_meters'] as num?)?.toDouble(), '${t['form_factor'] ?? ''}');
+          }
+        } catch (_) {}
+        _types[s.url] = types;
+      }
       final r = await http.get(Uri.parse(vehUrl)).timeout(const Duration(seconds: 20));
       final data = jsonDecode(utf8.decode(r.bodyBytes))['data'] as Map<String, dynamic>;
       final list = ((data['vehicles'] ?? data['bikes']) as List? ?? []).cast<Map<String, dynamic>>();
@@ -518,12 +535,18 @@ class OpenDataService {
         final lat = (v['lat'] as num?)?.toDouble(), lon = (v['lon'] as num?)?.toDouble();
         if (lat == null || lon == null) continue; // docked vehicles have no position of their own
         if (v['is_disabled'] == true || v['is_disabled'] == 1 || v['is_reserved'] == true || v['is_reserved'] == 1) continue;
-        final type = '${v['vehicle_type_id'] ?? ''}'.toLowerCase();
-        final scooter = type.contains('scooter') || op == 'Bird' || (op == 'Lime' && !type.contains('bike'));
+        final kind = types?['${v['vehicle_type_id']}'];
+        final type = '${v['vehicle_type_id'] ?? ''} ${kind?.$2 ?? ''}'.toLowerCase();
+        final scooter = type.contains('scooter') ||
+            (!type.contains('bic') && !type.contains('bike') && (op == 'Bird' || op == 'Lime' || op == 'Spin'));
         final vehicle = scooter ? Vehicle.scooter : Vehicle.ebike;
         final pos = LatLng(lat, lon);
         final m = d(userPos, pos);
-        final batt = (v['current_fuel_percent'] as num?)?.toDouble();
+        final range = (v['current_range_meters'] as num?)?.toDouble();
+        var batt = (v['current_fuel_percent'] as num?)?.toDouble();
+        if (batt != null && batt <= 1) batt *= 100;
+        // no percent in the feed: the range left out of the range on a full battery
+        if (batt == null && range != null && (kind?.$1 ?? 0) > 0) batt = (range / kind!.$1! * 100).clamp(1, 100);
         out['veh/${s.url}/${v['vehicle_id'] ?? v['bike_id']}'] = Place(
           id: 'gbfs/${s.name}/${v['vehicle_id'] ?? v['bike_id']}',
           type: PlaceType.sharing,
@@ -542,12 +565,12 @@ class OpenDataService {
             street: true,
             ebikes: scooter ? 0 : 1,
             scooters: scooter ? 1 : 0,
-            battery: batt == null ? null : (batt <= 1 ? batt * 100 : batt).round(),
-            rangeM: (v['current_range_meters'] as num?)?.toDouble(),
+            battery: batt?.round(),
+            rangeM: range,
             code: _code(v['vehicle_id'] ?? v['bike_id']),
           ),
           facts: [
-            if (batt != null) 'Battery ${(batt <= 1 ? batt * 100 : batt).round()}%',
+            if (batt != null) 'Battery ${batt.round()}%',
             'Live · ${s.name}',
           ],
         );

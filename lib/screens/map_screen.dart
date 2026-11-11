@@ -1299,11 +1299,11 @@ class MapScreenState extends State<MapScreen> {
         ],
       ),
       // spotlight target for the "how to read pins" step
-      Positioned(left: 20, top: top + 160, child: SizedBox(key: _kPins, width: 70, height: 80)),
+      Positioned(left: 20, top: top + 174, child: SizedBox(key: _kPins, width: 70, height: 80)),
       Positioned(
         left: kEdge,
         right: kEdge,
-        top: top + 8,
+        top: top + 22, // a little lower: clear of the status bar
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           _searchBar(),
           if (_searching) _searchResults(),
@@ -1581,27 +1581,36 @@ class MapScreenState extends State<MapScreen> {
                 _loadWeather();
               }
             },
+            // a swipe left or right turns it to the other side (vehicle <-> weather)
+            onHorizontalDragEnd: (_) => setState(() => _weatherFace = !_weatherFace),
             child: Stack(clipBehavior: Clip.none, children: [
-              Glass(
-                width: kCtl,
-                height: kCtl,
-                child: AnimatedSwitcher(
-                  duration: const Duration(milliseconds: 600),
-                  transitionBuilder: (c, a) => ScaleTransition(scale: a, child: c),
-                  child: _weatherFace
-                      ? Column(key: const ValueKey(true), mainAxisAlignment: MainAxisAlignment.center, children: [
-                          Icon(_wxIcon(), size: 19, color: AppColors.blue),
-                          Text(_wx == null ? '--°' : '${_wx!.temp.round()}°',
-                              style: const TextStyle(
-                                  fontSize: 12, height: 1.05, fontWeight: FontWeight.w800, color: AppColors.blue)),
-                        ])
-                      : Padding(
-                          key: const ValueKey(false),
-                          padding: const EdgeInsets.all(7),
-                          child: Image.asset((widget.state.myVehicle ?? Vehicle.bike).asset),
-                        ),
-                ),
-              ),
+              Builder(builder: (_) {
+                // the weather side takes the colour of the weather: red rain, yellow drizzle,
+                // green clear, blue clouds
+                final wc = _wxColors();
+                return Glass(
+                  width: kCtl,
+                  height: kCtl,
+                  color: _weatherFace ? wc.tint.withValues(alpha: 0.62) : kGlass,
+                  line: _weatherFace ? wc.main : kGlassLine,
+                  lineWidth: _weatherFace ? 1.5 : 0.6,
+                  child: AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 450),
+                    transitionBuilder: (c, a) => ScaleTransition(scale: a, child: c),
+                    child: _weatherFace
+                        ? Column(key: const ValueKey(true), mainAxisAlignment: MainAxisAlignment.center, children: [
+                            Icon(_wxIcon(), size: 19, color: wc.dark),
+                            Text(_wx == null ? '--°' : '${_wx!.temp.round()}°',
+                                style: TextStyle(fontSize: 12, height: 1.05, fontWeight: FontWeight.w800, color: wc.dark)),
+                          ])
+                        : Padding(
+                            key: const ValueKey(false),
+                            padding: const EdgeInsets.all(7),
+                            child: Image.asset((widget.state.myVehicle ?? Vehicle.bike).asset),
+                          ),
+                  ),
+                );
+              }),
               // the blue dot: rain is on its way
               if (_wx?.rainInMinutes != null)
                 Positioned(
@@ -1618,6 +1627,15 @@ class MapScreenState extends State<MapScreen> {
           ),
         ],
       ]);
+
+  /// The colour of the weather: our red for rain, our yellow for drizzle, our green for clear
+  /// sky, our blue for clouds (and while the weather is still loading).
+  StatusColors _wxColors() => switch (_wx?.tone) {
+        'rain' => colorsFor(Status.full),
+        'drizzle' => colorsFor(Status.almost),
+        'clear' => colorsFor(Status.free),
+        _ => const StatusColors(AppColors.blue, Color(0xFFE6EEFB), Color(0xFF1F4FA8)),
+      };
 
   IconData _wxIcon() {
     final s = _wx?.sky ?? 'Cloudy';
@@ -1639,19 +1657,14 @@ class MapScreenState extends State<MapScreen> {
               padding: const EdgeInsets.only(right: 6),
               child: GestureDetector(
                 onTap: () => setState(() => _toggleFilter(f.$1)),
-                child: Container(
+                child: Glass(
                   height: 38,
+                  radius: 19,
                   padding: const EdgeInsets.symmetric(horizontal: 12),
-                  decoration: BoxDecoration(
-                    // a step lower than the search bar; the same glass (a little more solid, no blur:
-                    // seven of them side by side would be heavy to draw)
-                    color: _picked.contains(f.$1) ? AppColors.slateTint : const Color(0xD9FFFFFF),
-                    borderRadius: BorderRadius.circular(19),
-                    border: _picked.contains(f.$1)
-                        ? Border.all(color: AppColors.primary, width: 1.5)
-                        : Border.all(color: kGlassLine, width: 0.6),
-                    boxShadow: kGlassShadow,
-                  ),
+                  // a step lower than the search bar, the same glass; picked: tinted, with a dark edge
+                  color: _picked.contains(f.$1) ? AppColors.slateTint.withValues(alpha: 0.82) : kGlass,
+                  line: _picked.contains(f.$1) ? AppColors.primary : kGlassLine,
+                  lineWidth: _picked.contains(f.$1) ? 1.5 : 0.6,
                   child: Row(children: [
                     // groups with several drawings show them in turn, every 2 seconds
                     if (f.$2.length == 1)

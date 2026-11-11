@@ -36,6 +36,18 @@ class Weather {
     return names[((windDir % 360) / 45).round() % 8];
   }
 
+  /// How the weather feels for a ride, for the colour of the weather button:
+  /// 'rain' (rain, showers, storm), 'drizzle' (light, slow rain), 'clear', 'cloud' (the rest).
+  String get tone => switch (code) {
+        0 || 1 => 'clear',
+        >= 51 && <= 57 => 'drizzle',
+        61 || 66 || 80 => 'drizzle',
+        >= 62 && <= 67 => 'rain',
+        81 || 82 => 'rain',
+        >= 95 => 'rain',
+        _ => 'cloud',
+      };
+
   String get sky => switch (code) {
         0 => 'Clear',
         1 || 2 => 'Partly cloudy',

@@ -159,18 +159,15 @@ class ShareVehicleRow extends StatelessWidget {
           const SizedBox(width: 10),
           Expanded(
             child: Column(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.start, children: [
-              if (s.battery != null)
-                Row(children: [
-                  Icon(Icons.bolt_rounded, size: 20, color: c),
-                  Text('${s.battery}%', style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w800)),
-                ])
-              else if (range != null)
-                Row(children: [
-                  Icon(Icons.bolt_rounded, size: 20, color: c),
-                  Text(range.replaceAll(' left', ''), style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w800)),
-                ])
-              else
-                Text(s.vehicle.label, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800)),
+              // the battery, big; under it how far it still goes
+              Row(children: [
+                Icon(Icons.bolt_rounded, size: 20, color: c),
+                Text(
+                    s.battery != null
+                        ? '${s.battery}%'
+                        : (range != null ? range.replaceAll(' left', '') : '—'),
+                    style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w800)),
+              ]),
               Text(
                   s.battery != null
                       ? (range ?? 'battery')

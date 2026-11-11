@@ -1,5 +1,3 @@
-import 'dart:ui' as ui;
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -12,6 +10,7 @@ import '../data/store.dart';
 import '../screens/fixit_screens.dart';
 import '../screens/place_actions.dart';
 import '../theme.dart';
+import 'glass.dart';
 import 'pin.dart';
 import 'share_sheet.dart';
 import 'sheet_parts.dart';
@@ -37,15 +36,11 @@ Future<void> showPlaceSheet(BuildContext context, Place place,
     AppState? state,
     ScaffoldState? host}) {
   // opens low, about a fifth of the screen (the status band, then your vehicle with time and
-  // distance); drag up for all of it, drag down or tap the map to close
-  Widget sheet(BuildContext _) => DraggableScrollableSheet(
-        initialChildSize: place.share != null && !place.share!.street ? 0.34 : 0.24,
-        minChildSize: 0.2,
-        maxChildSize: 0.92,
-        snap: true,
-        snapSizes: [place.share != null && !place.share!.street ? 0.34 : 0.24, 0.92],
-        expand: false,
-        builder: (ctx, scroll) => PlaceSheet(
+  // distance); drag up and it rises only as far as it has something to show; drag down or tap
+  // the map to close
+  Widget sheet(BuildContext _) => _FitSheet(
+        start: place.share != null && !place.share!.street ? 0.34 : 0.24,
+        builder: (scroll, onHeight) => PlaceSheet(
           place: place,
           scroll: scroll,
           myVehicle: myVehicle,
@@ -53,6 +48,7 @@ Future<void> showPlaceSheet(BuildContext context, Place place,
           onTipSeen: onTipSeen,
           onTrip: onTrip,
           state: state,
+          onHeight: onHeight,
         ),
       );
   if (host != null) {
@@ -79,6 +75,42 @@ Future<void> showPlaceSheet(BuildContext context, Place place,
   );
 }
 
+/// The draggable sheet, as tall as its content at most: it never rises into empty space.
+class _FitSheet extends StatefulWidget {
+  final double start;
+  final Widget Function(ScrollController scroll, ValueChanged<double> onHeight) builder;
+  const _FitSheet({required this.start, required this.builder});
+
+  @override
+  State<_FitSheet> createState() => _FitSheetState();
+}
+
+class _FitSheetState extends State<_FitSheet> {
+  double? _content; // height of everything in the sheet, in pixels
+
+  void _onHeight(double h) {
+    if (!mounted || (_content != null && (h - _content!).abs() < 2)) return;
+    setState(() => _content = h);
+  }
+
+  @override
+  Widget build(BuildContext context) => LayoutBuilder(builder: (context, box) {
+        final room = box.maxHeight.isFinite ? box.maxHeight : MediaQuery.sizeOf(context).height;
+        final start = widget.start;
+        // until the content is measured: the opening height only
+        final top = _content == null ? start : (_content! / room).clamp(start, 0.92).toDouble();
+        return DraggableScrollableSheet(
+          initialChildSize: start,
+          minChildSize: 0.2,
+          maxChildSize: top,
+          snap: true,
+          snapSizes: top - start > 0.02 ? [start] : null,
+          expand: false,
+          builder: (ctx, scroll) => widget.builder(scroll, _onHeight),
+        );
+      });
+}
+
 /// Opens a phone number or a web page outside the app.
 Future<void> openLink(String url) async {
   try {
@@ -94,6 +126,9 @@ class PlaceSheet extends StatefulWidget {
   final VoidCallback? onTipSeen;
   final VoidCallback? onTrip;
   final AppState? state;
+
+  /// tells the sheet how tall the whole content is, so it rises that far and no further
+  final ValueChanged<double>? onHeight;
   const PlaceSheet({
     super.key,
     required this.place,
@@ -103,6 +138,7 @@ class PlaceSheet extends StatefulWidget {
     this.onTipSeen,
     this.onTrip,
     this.state,
+    this.onHeight,
   });
 
   @override
@@ -114,6 +150,13 @@ class _PlaceSheetState extends State<PlaceSheet> {
   String? _opening;
   bool _copied = false;
   AppLifecycleListener? _back;
+  final _contentKey = GlobalKey();
+
+  void _reportHeight() {
+    final box = _contentKey.currentContext?.findRenderObject() as RenderBox?;
+    // + the line around the sheet and the gap under it
+    if (box != null && box.hasSize) widget.onHeight?.call(box.size.height + 10);
+  }
 
   @override
   void dispose() {
@@ -233,9 +276,11 @@ class _PlaceSheetState extends State<PlaceSheet> {
         const Text('Place data © OpenStreetMap contributors. Status, spots and ratings are test data for now.',
             style: TextStyle(fontSize: 11, color: AppColors.soft)),
       ],
-      const SizedBox(height: 24),
+      const SizedBox(height: 12),
     ];
 
+    // after every layout: how tall the content is now (photos and reviews arrive later)
+    WidgetsBinding.instance.addPostFrameCallback((_) => _reportHeight());
     // The whole sheet in the colour of its pin (a light tone of it), a little see-through and
     // frosted: pins behind it show as a blur of colour, never through it. One line in the status
     // colour all around, round corners at the bottom too, where it meets the main menu.
@@ -244,10 +289,10 @@ class _PlaceSheetState extends State<PlaceSheet> {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(22),
         child: BackdropFilter(
-          filter: ui.ImageFilter.blur(sigmaX: 9, sigmaY: 9),
+          filter: glassFilter(),
           child: Container(
             decoration: BoxDecoration(
-              color: Color.lerp(c.tint, Colors.white, 0.5)!.withValues(alpha: 0.78),
+              color: Color.lerp(c.tint, Colors.white, 0.5)!.withValues(alpha: 0.6),
               borderRadius: BorderRadius.circular(22),
               border: Border.all(color: c.main, width: 2),
             ),
@@ -255,8 +300,10 @@ class _PlaceSheetState extends State<PlaceSheet> {
               controller: widget.scroll,
               padding: EdgeInsets.zero,
               children: [
-                _band(p, c),
-                Padding(padding: const EdgeInsets.fromLTRB(14, 4, 14, 0), child: Column(children: children)),
+                Column(key: _contentKey, mainAxisSize: MainAxisSize.min, children: [
+                  _band(p, c),
+                  Padding(padding: const EdgeInsets.fromLTRB(14, 4, 14, 0), child: Column(children: children)),
+                ]),
               ],
             ),
           ),
