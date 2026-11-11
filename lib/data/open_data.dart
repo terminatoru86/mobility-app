@@ -527,7 +527,8 @@ class OpenDataService {
         out['veh/${s.url}/${v['vehicle_id'] ?? v['bike_id']}'] = Place(
           id: 'gbfs/${s.name}/${v['vehicle_id'] ?? v['bike_id']}',
           type: PlaceType.sharing,
-          address: '$op ${scooter ? 'scooter' : 'e-bike'}',
+          address: '$op ${scooter ? 'scooter' : 'e-bike'}'
+              '${_code(v['vehicle_id'] ?? v['bike_id']) == null ? '' : ' · No. ${_code(v['vehicle_id'] ?? v['bike_id'])}'}',
           pos: pos,
           status: Status.free,
           count: '1',

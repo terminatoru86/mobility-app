@@ -14,7 +14,7 @@ import '../widgets/share_pin.dart';
 import '../widgets/share_sheet.dart';
 import '../widgets/tiles.dart';
 
-/// Walking to a shared bike or scooter: no turn-by-turn. A dotted line on the map,
+/// Walking to a shared bike or scooter: no turn-by-turn. A dashed line on the map,
 /// the minutes on it, and one short message at the bottom that changes as you get close.
 class WalkScreen extends StatefulWidget {
   final Place place;
@@ -106,7 +106,7 @@ class _WalkScreenState extends State<WalkScreen> {
     if (m < 25) return ('You are here', 'Unlock it in the $op app.');
     if (m < 90) return ('Almost there', 'Look for $what on this block.');
     final dir = _compass[(((bearing(_pos, p.pos) + 360) % 360) / 45).round() % 8];
-    return ('${walkMinutes(m)} min walk', '${fmtDistance(m)} · head $dir, follow the dotted line.');
+    return ('${walkMinutes(m)} min walk', '${fmtDistance(m)} · head $dir, follow the dashed line.');
   }
 
   @override
@@ -132,40 +132,26 @@ class _WalkScreenState extends State<WalkScreen> {
             PolylineLayer(polylines: [
               Polyline(
                 points: _path,
-                strokeWidth: 5,
-                color: AppColors.blue,
-                pattern: const StrokePattern.dotted(spacingFactor: 2),
+                strokeWidth: 4,
+                color: AppColors.soft,
+                pattern: StrokePattern.dashed(segments: const [10, 7]),
               ),
             ]),
             MarkerLayer(markers: [
               Marker(point: _pos, width: 34, height: 34, child: const UserDot()),
               Marker(
                 point: p.pos,
-                width: SharePin.widthFor(p),
+                width: SharePin.widthFor(p, open: true),
                 height: SharePin.height,
                 alignment: Alignment.topCenter,
-                child: SharePin(place: p, selected: true),
+                child: SharePin(place: p, selected: true, open: true),
               ),
               if (!here && _path.length > 1)
                 Marker(
                   point: _middle,
-                  width: 84,
-                  height: 30,
-                  child: Container(
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: AppColors.blue,
-                      borderRadius: BorderRadius.circular(15),
-                      border: Border.all(color: Colors.white, width: 2),
-                      boxShadow: const [BoxShadow(color: Color(0x33000000), blurRadius: 5, offset: Offset(0, 2))],
-                    ),
-                    child: Row(mainAxisSize: MainAxisSize.min, children: [
-                      const Icon(Icons.directions_walk_rounded, size: 15, color: Colors.white),
-                      const SizedBox(width: 2),
-                      Text('${walkMinutes(left)} min',
-                          style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: Colors.white)),
-                    ]),
-                  ),
+                  width: WalkBubble.width,
+                  height: WalkBubble.height,
+                  child: WalkBubble(walkMinutes(left)),
                 ),
             ]),
           ],
@@ -198,13 +184,15 @@ class _WalkScreenState extends State<WalkScreen> {
               boxShadow: const [BoxShadow(color: Color(0x260F1E24), blurRadius: 18, offset: Offset(0, 6))],
             ),
             child: Row(children: [
-              Container(
-                width: 42,
-                height: 42,
-                decoration: BoxDecoration(color: here ? AppColors.greenTint : AppColors.slateTint, shape: BoxShape.circle),
-                child: Icon(here ? Icons.check_rounded : Icons.directions_walk_rounded,
-                    color: here ? AppColors.greenDark : AppColors.primary),
-              ),
+              if (here)
+                Container(
+                  width: 42,
+                  height: 42,
+                  decoration: const BoxDecoration(color: AppColors.greenTint, shape: BoxShape.circle),
+                  child: const Icon(Icons.check_rounded, color: AppColors.greenDark),
+                )
+              else
+                const WalkerDot(size: 42),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisSize: MainAxisSize.min, children: [

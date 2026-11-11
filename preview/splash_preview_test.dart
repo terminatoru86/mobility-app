@@ -10,6 +10,7 @@ import 'package:mobility/theme.dart';
 import 'package:mobility/widgets/city_splash.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:mobility/data/places.dart';
+import 'package:mobility/widgets/place_sheet.dart';
 import 'package:mobility/widgets/share_pin.dart';
 import 'package:mobility/widgets/share_sheet.dart';
 import 'package:mobility/widgets/signup.dart';
@@ -140,30 +141,61 @@ void main() {
     t.view.physicalSize = const Size(1080, 2400);
     t.view.devicePixelRatio = 1;
     final hub = share('Clark St & Lake St', const ShareInfo(ebikes: 4, classic: 7, scooters: 2, docks: 6));
+    final bike = share('Divvy e-bike · No. 4471', const ShareInfo(street: true, ebikes: 1, battery: 82, rangeM: 35000, code: '4471'));
     final pins = [
       hub,
       share('b', const ShareInfo(ebikes: 3, classic: 5, docks: 2)),
-      share('c', const ShareInfo(classic: 9, docks: 2)),
+      share('c', const ShareInfo(classic: 2, docks: 2), st: Status.almost),
       share('d', const ShareInfo(docks: 15), st: Status.full),
-      share('Divvy e-bike', const ShareInfo(street: true, ebikes: 1, battery: 82, rangeM: 21000, code: '4471')),
+      bike,
       share('f', const ShareInfo(street: true, scooters: 1, battery: 35)),
       share('g', const ShareInfo(street: true, scooters: 1, battery: 9)),
     ];
+    final sc = ScrollController();
     await t.pumpWidget(_phone(ColoredBox(
       color: const Color(0xFFDDE5E9),
       child: Column(children: [
         const SizedBox(height: 60),
-        Wrap(spacing: 14, runSpacing: 20, alignment: WrapAlignment.center, children: [
+        Wrap(spacing: 14, runSpacing: 16, alignment: WrapAlignment.center, crossAxisAlignment: WrapCrossAlignment.end, children: [
           for (final p in pins) SharePin(place: p),
-          SharePin(place: hub, compact: true),
+          SharePin(place: hub, open: true),
+          SharePin(place: hub, open: true, selected: true),
+          SharePin(place: bike, selected: true),
+          const WalkBubble(4),
         ]),
         const Spacer(),
-        ShareSheetCard(place: pins[4], onWalk: () {}),
+        SizedBox(height: 200, child: PlaceSheet(place: bike, scroll: sc)),
         const SizedBox(height: 16),
-        ShareSheetCard(place: hub, onWalk: () {}),
+        SizedBox(height: 270, child: PlaceSheet(place: hub, scroll: ScrollController())),
       ]),
     )));
     await t.pump(const Duration(milliseconds: 400));
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/share.png'));
+  });
+
+  testWidgets('place sheet above the main menu', (t) async {
+    await t.runAsync(_fonts);
+    t.view.physicalSize = const Size(1080, 2400);
+    t.view.devicePixelRatio = 1;
+    final hub = share('Clark St & Lake St', const ShareInfo(ebikes: 4, classic: 1, scooters: 0, docks: 6));
+    final key = GlobalKey<ScaffoldState>();
+    await t.pumpWidget(_phone(Scaffold(
+      key: key,
+      backgroundColor: const Color(0xFFDDE5E9),
+      body: const Center(child: Text('map')),
+      bottomNavigationBar: NavigationBar(destinations: const [
+        NavigationDestination(icon: Icon(Icons.map_outlined), label: 'Map'),
+        NavigationDestination(icon: Icon(Icons.route_outlined), label: 'Routes'),
+        NavigationDestination(icon: Icon(Icons.person_outline), label: 'Profile'),
+      ]),
+    )));
+    showPlaceSheet(key.currentContext!, hub, host: key.currentState);
+    await t.pump();
+    await t.pump(const Duration(milliseconds: 600));
+    await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/share_host.png'));
+    closePlaceSheet();
+    await t.pump();
+    await t.pump(const Duration(milliseconds: 600));
+    expect(find.byType(PlaceSheet), findsNothing);
   });
 }

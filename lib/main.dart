@@ -12,6 +12,7 @@ import 'screens/health_screen.dart';
 import 'screens/map_screen.dart';
 import 'screens/other_screens.dart';
 import 'screens/routes_screen.dart';
+import 'widgets/place_sheet.dart' show closePlaceSheet;
 import 'theme.dart';
 import 'widgets/city_splash.dart';
 import 'widgets/pin.dart';
@@ -195,6 +196,7 @@ class _ShellState extends State<Shell> {
         backgroundColor: Colors.white,
         indicatorColor: AppColors.slateTint,
         onDestinationSelected: (i) => setState(() {
+          if (i != _tab) closePlaceSheet(); // the place sheet belongs to the map
           if (i == 0 && _tab != 0 && !widget.state.guideDone) {
             _mapVersion++;
             _mapKey = GlobalKey<MapScreenState>(debugLabel: 'map$_mapVersion');

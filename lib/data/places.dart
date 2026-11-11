@@ -194,6 +194,10 @@ class ShareInfo {
 
   int get total => ebikes + classic + scooters;
 
+  /// the colour of a street vehicle: its battery (green charged, yellow half, red low)
+  Status get charge =>
+      battery == null || battery! >= 50 ? Status.free : (battery! >= 20 ? Status.almost : Status.full);
+
   /// what a street vehicle is
   Vehicle get vehicle => scooters > 0 ? Vehicle.scooter : (ebikes > 0 ? Vehicle.ebike : Vehicle.bike);
 }

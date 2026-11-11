@@ -11,39 +11,69 @@ import '../screens/fixit_screens.dart';
 import '../screens/place_actions.dart';
 import '../theme.dart';
 import 'pin.dart';
+import 'share_sheet.dart';
 import 'sheet_parts.dart';
 
 /// Opens the sheet of a place over the map.
+/// The sheet that is open inside the app's main screen (see [showPlaceSheet] with a host).
+PersistentBottomSheetController? _openSheet;
+
+/// Closes the place sheet that sits above the main menu (a tap on the map, another tab).
+void closePlaceSheet() {
+  final c = _openSheet;
+  _openSheet = null;
+  try {
+    c?.close();
+  } catch (_) {}
+}
+
 Future<void> showPlaceSheet(BuildContext context, Place place,
     {Vehicle? myVehicle,
     bool showVehicleTip = false,
     VoidCallback? onTipSeen,
     VoidCallback? onTrip,
-    AppState? state}) {
+    AppState? state,
+    ScaffoldState? host}) {
+  // opens low, about a fifth of the screen (the status band, then your vehicle with time and
+  // distance); drag up for all of it, drag down or tap the map to close
+  Widget sheet(BuildContext _) => DraggableScrollableSheet(
+        initialChildSize: place.share != null && !place.share!.street ? 0.34 : 0.24,
+        minChildSize: 0.2,
+        maxChildSize: 0.92,
+        snap: true,
+        snapSizes: [place.share != null && !place.share!.street ? 0.34 : 0.24, 0.92],
+        expand: false,
+        builder: (ctx, scroll) => PlaceSheet(
+          place: place,
+          scroll: scroll,
+          myVehicle: myVehicle,
+          showVehicleTip: showVehicleTip,
+          onTipSeen: onTipSeen,
+          onTrip: onTrip,
+          state: state,
+        ),
+      );
+  if (host != null) {
+    // on the map: the sheet sits above the main menu (Map, Routes, Health, Community, Profile),
+    // which stays in view and in use; the map behind it stays in use too
+    closePlaceSheet();
+    final c = host.showBottomSheet(
+      sheet,
+      backgroundColor: Colors.transparent,
+      elevation: 0,
+      enableDrag: false,
+    );
+    _openSheet = c;
+    return c.closed.then((_) {
+      if (identical(_openSheet, c)) _openSheet = null;
+    });
+  }
   return showModalBottomSheet(
     context: context,
     isScrollControlled: true,
     backgroundColor: Colors.transparent,
     barrierColor: const Color(0x14000000), // the map stays in view behind the low sheet
-    // opens low, about a fifth of the screen (the status band, then your vehicle with time and
-    // distance); drag up for all of it, drag down or tap the map to close
-    builder: (_) => DraggableScrollableSheet(
-      initialChildSize: 0.24,
-      minChildSize: 0.2,
-      maxChildSize: 0.92,
-      snap: true,
-      snapSizes: const [0.24, 0.92],
-      expand: false,
-      builder: (ctx, scroll) => PlaceSheet(
-        place: place,
-        scroll: scroll,
-        myVehicle: myVehicle,
-        showVehicleTip: showVehicleTip,
-        onTipSeen: onTipSeen,
-        onTrip: onTrip,
-        state: state,
-      ),
-    ),
+    builder: sheet,
   );
 }
 
@@ -136,7 +166,8 @@ class _PlaceSheetState extends State<PlaceSheet> {
   @override
   Widget build(BuildContext context) {
     final p = widget.place;
-    final c = colorsFor(p.shownStatus);
+    // a shared vehicle on the street takes the colour of its battery
+    final c = colorsFor(p.share?.street == true ? p.share!.charge : p.shownStatus);
     const gap = SizedBox(height: 12);
 
     final children = <Widget>[
@@ -145,6 +176,11 @@ class _PlaceSheetState extends State<PlaceSheet> {
         const RentVehicleRow(free: {Vehicle.bike: 6, Vehicle.scooter: 3, Vehicle.moped: 2, Vehicle.moto: 1}),
         const SizedBox(height: 8),
       ],
+      if (p.share != null)
+        // live ride share: a station shows its four numbers and the walk; one vehicle shows its
+        // picture with the battery, and the walking time where the distance is
+        p.share!.street ? ShareVehicleRow(p) : ShareCounts(p)
+      else
       Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Expanded(
           flex: 3,
@@ -202,6 +238,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
       decoration: const BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.vertical(top: Radius.circular(22)),
+        boxShadow: [BoxShadow(color: Color(0x290F1E24), blurRadius: 24, offset: Offset(0, -8))],
       ),
       child: ListView(
         controller: widget.scroll,

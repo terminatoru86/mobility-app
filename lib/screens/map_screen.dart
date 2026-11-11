@@ -670,22 +670,45 @@ class MapScreenState extends State<MapScreen> {
       await widget.state.setSharingChosen();
       if (!mounted) return;
     }
-    if (p.share != null) {
-      // live ride share: its own low sheet (what is available), then a simple walk there
-      await showShareSheet(context, p, onWalk: () => _walkTo(p));
-      if (mounted) setState(() => _selected = null);
-      return;
-    }
+    final share = p.share != null;
+    if (share) _showWalk(p);
     await showPlaceSheet(
       context,
       p,
       myVehicle: widget.state.myVehicle,
       showVehicleTip: false, // the guide has 3 steps now; no extra step on the first sheet
       onTipSeen: widget.state.setSheetTipDone,
-      onTrip: () => _trip(p),
+      // to a shared bike or scooter you walk: the simple walking screen
+      onTrip: () => share ? _walkTo(p) : _trip(p),
       state: widget.state,
+      host: Scaffold.maybeOf(context), // above the main menu, which stays in view
     );
-    if (mounted) setState(() => _selected = null);
+    // another pin may have been opened meanwhile: only clear what is still ours
+    if (mounted && _selected == p.id) {
+      setState(() {
+        _selected = null;
+        _walkPath = const [];
+      });
+    }
+  }
+
+  /// The walk from me to the picked share pin, drawn on the map with its minutes.
+  List<LatLng> _walkPath = const [];
+
+  void _showWalk(Place p) {
+    setState(() => _walkPath = [userPos, p.pos]);
+    footPath(userPos, p.pos).then((w) {
+      if (mounted && _selected == p.id) setState(() => _walkPath = w);
+    });
+  }
+
+  double get _walkMeters {
+    const d = Distance();
+    var m = 0.0;
+    for (var i = 0; i < _walkPath.length - 1; i++) {
+      m += d(_walkPath[i], _walkPath[i + 1]);
+    }
+    return m;
   }
 
   /// Radius of the ring in the middle of the map: inside it our pins (and groups where they overlap), outside light dots.
@@ -1051,15 +1074,17 @@ class MapScreenState extends State<MapScreen> {
   Marker _pinMarker(Place p) => _shareOnly && p.share != null ? _shareMarker(p) : _plainMarker(p);
 
   Marker _shareMarker(Place p) {
-    final compact = _zoom < 15.5;
+    // from far the hub is strung together (total only); tapped, or zoomed right in, it opens
+    final sel = _selected == p.id;
+    final open = sel || _zoom >= 17;
     return Marker(
       point: p.pos,
-      width: SharePin.widthFor(p, compact: compact),
+      width: SharePin.widthFor(p, open: open),
       height: SharePin.height,
       alignment: Alignment.topCenter,
       child: GestureDetector(
         onTap: () => _openPlace(p),
-        child: SharePin(place: p, selected: _selected == p.id, compact: compact),
+        child: SharePin(place: p, selected: sel, open: open),
       ),
     );
   }
@@ -1115,7 +1140,10 @@ class MapScreenState extends State<MapScreen> {
           minZoom: 3,
           maxZoom: 19,
           onMapReady: () => _watchArea(_map.camera),
-          onTap: (_, at) => _searching ? _endSearch() : _tapDot(at),
+          onTap: (_, at) {
+            closePlaceSheet(); // a tap on the map puts the place sheet away
+            _searching ? _endSearch() : _tapDot(at);
+          },
           onPositionChanged: (camera, hasGesture) {
             // rebuild the pins only when the zoom crosses a half step, not on every frame
             final bucket = (camera.zoom * 2).floor() / 2;
@@ -1216,6 +1244,16 @@ class MapScreenState extends State<MapScreen> {
             _markers(); // makes sure the dots are up to date
             return CircleLayer(circles: _dotCache);
           }),
+          // the walk to the picked share pin: a dashed line, under the pins
+          if (_walkPath.length > 1)
+            PolylineLayer(polylines: [
+              Polyline(
+                points: _walkPath,
+                strokeWidth: 4,
+                color: AppColors.soft,
+                pattern: StrokePattern.dashed(segments: const [10, 7]),
+              ),
+            ]),
           MarkerLayer(markers: [
             if (_dest != null)
               Marker(
@@ -1241,6 +1279,14 @@ class MapScreenState extends State<MapScreen> {
               ),
             Marker(point: userPos, width: 34, height: 34, child: const UserDot()),
             ..._markers(),
+            // the minutes of the walk, on the middle of the dashed line
+            if (_walkPath.length > 1)
+              Marker(
+                point: pointAlong(_walkPath, _walkMeters / 2),
+                width: WalkBubble.width,
+                height: WalkBubble.height,
+                child: IgnorePointer(child: WalkBubble(walkMinutes(_walkMeters))),
+              ),
           ]),
         ],
       ),

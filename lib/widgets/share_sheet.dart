@@ -4,7 +4,6 @@ import 'package:latlong2/latlong.dart';
 import '../data/places.dart';
 import '../data/routing.dart';
 import '../theme.dart';
-import 'place_sheet.dart' show openLink;
 import 'share_pin.dart';
 
 /// Walking: about 80 metres a minute, paths are longer than the straight line.
@@ -26,153 +25,190 @@ String operatorUrl(Place p) {
                   : 'https://www.google.com/search?q=${Uri.encodeComponent(p.operatorName ?? 'bike share')}';
 }
 
-/// The low sheet of a ride-share pin: the map stays in view.
-///  · a station: what is available now, each kind with its number, and the open docks
-///  · a vehicle on the street: what it is, battery, range
-/// One button: walk there.
-Future<void> showShareSheet(BuildContext context, Place p, {required VoidCallback onWalk}) => showModalBottomSheet<void>(
-      context: context,
-      backgroundColor: Colors.transparent,
-      barrierColor: const Color(0x14000000),
-      builder: (c) => ShareSheetCard(place: p, onWalk: onWalk),
-    );
+/// green from 3 up, yellow 1–2, red 0: the same rule on the pin and in the sheet
+Status countStatus(int n) => n == 0 ? Status.full : (n <= 2 ? Status.almost : Status.free);
 
-class ShareSheetCard extends StatelessWidget {
+/// A station in the place sheet: the four numbers (e-bikes, classic, scooters, open docks),
+/// each in its own colour, then one slim line with the walk there.
+class ShareCounts extends StatelessWidget {
   final Place place;
-  final VoidCallback onWalk;
-  const ShareSheetCard({required this.place, required this.onWalk});
+  const ShareCounts(this.place, {super.key});
 
   @override
   Widget build(BuildContext context) {
-    final p = place, s = p.share!;
-    final m = metersTo(p);
-    final op = p.operatorName ?? 'Ride share';
-    return Container(
-      decoration: const BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-        boxShadow: [BoxShadow(color: Color(0x260F1E24), blurRadius: 24, offset: Offset(0, -8))],
-      ),
-      child: SafeArea(
-        top: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
-          child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Center(
-              child: Container(
-                  width: 36,
-                  height: 4,
-                  decoration: BoxDecoration(color: AppColors.line, borderRadius: BorderRadius.circular(2))),
-            ),
-            const SizedBox(height: 10),
-            Row(children: [
-              if (s.street) ...[
-                Image.asset(s.vehicle.asset, width: 46, height: 40, fit: BoxFit.contain),
-                const SizedBox(width: 10),
-              ],
-              Expanded(
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text(p.address,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w800, color: AppColors.ink)),
-                  const SizedBox(height: 2),
-                  Text(
-                      [
-                        if (!s.street) op,
-                        if (s.street && s.code != null) 'No. ${s.code}',
-                        '${fmtDistance(m)} · ${walkMinutes(m)} min walk',
-                      ].join(' · '),
-                      style: const TextStyle(fontSize: 12.5, color: AppColors.soft)),
-                ]),
-              ),
-              GestureDetector(
-                onTap: () => openLink(operatorUrl(p)),
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 8, top: 4, bottom: 4),
-                  child: Text('$op ›',
-                      style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.blue)),
-                ),
-              ),
+    final s = place.share!;
+    Widget tile(IconData icon, int n, String label, {bool dock = false}) {
+      final c = colorsFor(dock ? Status.neutral : countStatus(n));
+      return Expanded(
+        child: Container(
+          margin: const EdgeInsets.symmetric(horizontal: 3),
+          padding: const EdgeInsets.symmetric(vertical: 7),
+          decoration: BoxDecoration(color: c.tint, borderRadius: BorderRadius.circular(12)),
+          child: Column(children: [
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Icon(icon, size: 18, color: c.dark),
+              const SizedBox(width: 4),
+              Text('$n', style: TextStyle(fontSize: 18, height: 1.1, fontWeight: FontWeight.w900, color: c.dark)),
             ]),
-            const SizedBox(height: 12),
-            if (s.street) _battery(s) else _counts(s),
-            if (p.operatorPrice != null) ...[
-              const SizedBox(height: 8),
-              Text(p.operatorPrice!, style: const TextStyle(fontSize: 12.5, color: AppColors.soft)),
-            ],
-            const SizedBox(height: 12),
-            FilledButton.icon(
-              onPressed: () {
-                Navigator.pop(context);
-                onWalk();
-              },
-              icon: const Icon(Icons.directions_walk_rounded, size: 20),
-              label: Text('Walk there · ${walkMinutes(m)} min'),
-            ),
+            const SizedBox(height: 2),
+            Text(label, maxLines: 1, style: const TextStyle(fontSize: 11, color: AppColors.soft)),
           ]),
         ),
-      ),
-    );
+      );
+    }
+
+    return Column(children: [
+      Row(children: [
+        tile(Icons.electric_bike_rounded, s.ebikes, 'E-bikes'),
+        tile(Icons.pedal_bike_rounded, s.classic, 'Classic'),
+        tile(Icons.electric_scooter_rounded, s.scooters, 'Scooters'),
+        tile(Icons.local_parking_rounded, s.docks ?? 0, 'Open docks', dock: true),
+      ]),
+      const SizedBox(height: 8),
+      Padding(padding: const EdgeInsets.symmetric(horizontal: 3), child: WalkLine(metersTo(place))),
+    ]);
+  }
+}
+
+/// One slim line: the walker in a dark circle, the minutes, a dashed line, the distance.
+class WalkLine extends StatelessWidget {
+  final double meters;
+  const WalkLine(this.meters, {super.key});
+
+  @override
+  Widget build(BuildContext context) => Container(
+        height: 36,
+        padding: const EdgeInsets.only(left: 4, right: 14),
+        decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(18)),
+        child: Row(children: [
+          const WalkerDot(),
+          const SizedBox(width: 8),
+          Text('${walkMinutes(meters)} min',
+              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800, color: AppColors.ink)),
+          const SizedBox(width: 5),
+          const Text('walk', style: TextStyle(fontSize: 12, color: AppColors.soft)),
+          const SizedBox(width: 8),
+          const Expanded(child: CustomPaint(size: Size(double.infinity, 2), painter: _Dashes())),
+          const SizedBox(width: 8),
+          Text(fmtDistance(meters), style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800, color: AppColors.ink)),
+        ]),
+      );
+}
+
+/// The walker, white on a dark circle (also in the minutes bubble on the map).
+class WalkerDot extends StatelessWidget {
+  final double size;
+  const WalkerDot({super.key, this.size = 28});
+  @override
+  Widget build(BuildContext context) => Container(
+        width: size,
+        height: size,
+        decoration: const BoxDecoration(color: AppColors.primary, shape: BoxShape.circle),
+        child: Icon(Icons.directions_walk_rounded, size: size * .64, color: Colors.white),
+      );
+}
+
+class _Dashes extends CustomPainter {
+  const _Dashes();
+  @override
+  void paint(Canvas canvas, Size size) {
+    final p = Paint()
+      ..color = AppColors.grey
+      ..strokeWidth = 2
+      ..strokeCap = StrokeCap.round;
+    for (var x = 0.0; x < size.width; x += 9) {
+      canvas.drawLine(Offset(x, size.height / 2), Offset(x + 4, size.height / 2), p);
+    }
   }
 
-  /// A station: one tile for each kind, the number big; nothing available shows in grey.
-  Widget _counts(ShareInfo s) {
-    Widget tile(IconData icon, int n, String label, {bool dock = false}) => Expanded(
+  @override
+  bool shouldRepaint(_Dashes old) => false;
+}
+
+/// One vehicle on the street, in the place sheet: its picture with the battery and how far
+/// it still goes (in place of minutes and arrival time), then the walking time (in place of distance).
+class ShareVehicleRow extends StatelessWidget {
+  final Place place;
+  const ShareVehicleRow(this.place, {super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final s = place.share!;
+    final m = metersTo(place);
+    final miles = s.rangeM == null ? null : s.rangeM! / 1609.34;
+    final range = miles == null ? null : '${miles < 10 ? miles.toStringAsFixed(1) : miles.round()} mi left';
+    final c = chargeColor(s.battery);
+    Widget box(Widget child, {int flex = 1}) => Expanded(
+          flex: flex,
           child: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 3),
-            padding: const EdgeInsets.symmetric(vertical: 8),
-            decoration: BoxDecoration(
-              color: n == 0 ? AppColors.greyTint : (dock ? AppColors.slateTint : AppColors.greenTint),
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Column(children: [
-              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                Icon(icon, size: 18, color: n == 0 ? AppColors.grey : (dock ? AppColors.primary : AppColors.greenDark)),
-                const SizedBox(width: 4),
-                Text('$n',
-                    style: TextStyle(
-                        fontSize: 18, fontWeight: FontWeight.w900, color: n == 0 ? AppColors.greyDark : AppColors.ink)),
-              ]),
-              const SizedBox(height: 2),
-              Text(label, style: const TextStyle(fontSize: 11, color: AppColors.soft)),
-            ]),
+            height: 74,
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
+            child: child,
           ),
         );
     return Row(children: [
-      tile(Icons.electric_bike_rounded, s.ebikes, 'E-bikes'),
-      tile(Icons.pedal_bike_rounded, s.classic, 'Classic'),
-      if (s.scooters > 0) tile(Icons.electric_scooter_rounded, s.scooters, 'Scooters'),
-      if (s.docks != null) tile(Icons.local_parking_rounded, s.docks!, 'Open docks', dock: true),
-    ]);
-  }
-
-  /// A street vehicle: the battery as a bar in its colour, and how far it still goes.
-  Widget _battery(ShareInfo s) {
-    final pct = s.battery;
-    final c = chargeColor(pct);
-    final miles = s.rangeM == null ? null : s.rangeM! / 1609.34;
-    return Row(children: [
-      Icon(Icons.bolt_rounded, size: 20, color: c),
-      const SizedBox(width: 4),
-      Expanded(
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(5),
-          child: LinearProgressIndicator(
-            value: pct == null ? null : pct / 100,
-            minHeight: 9,
-            color: c,
-            backgroundColor: AppColors.greyTint,
+      box(
+        flex: 3,
+        Row(children: [
+          SizedBox(width: 76, height: 60, child: Image.asset(s.vehicle.asset, fit: BoxFit.contain)),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.start, children: [
+              if (s.battery != null)
+                Row(children: [
+                  Icon(Icons.bolt_rounded, size: 20, color: c),
+                  Text('${s.battery}%', style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w800)),
+                ])
+              else if (range != null)
+                Row(children: [
+                  Icon(Icons.bolt_rounded, size: 20, color: c),
+                  Text(range.replaceAll(' left', ''), style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w800)),
+                ])
+              else
+                Text(s.vehicle.label, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800)),
+              Text(
+                  s.battery != null
+                      ? (range ?? 'battery')
+                      : (range != null ? 'left' : 'battery not shared'),
+                  style: const TextStyle(fontSize: 11, color: AppColors.soft)),
+            ]),
           ),
-        ),
+        ]),
       ),
-      const SizedBox(width: 10),
-      Text(
-          [
-            if (pct != null) '$pct%',
-            if (miles != null) '${miles < 10 ? miles.toStringAsFixed(1) : miles.round()} mi',
-          ].join(' · '),
-          style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: AppColors.ink)),
+      const SizedBox(width: 8),
+      box(
+        flex: 2,
+        Column(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text('${walkMinutes(m)} min', maxLines: 1, style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w800)),
+          Text('walk · ${fmtDistance(m)}', maxLines: 1, style: const TextStyle(fontSize: 11, color: AppColors.soft)),
+        ]),
+      ),
     ]);
   }
+}
+
+/// The minutes on the walking line: a white bubble with the walker.
+class WalkBubble extends StatelessWidget {
+  final int minutes;
+  const WalkBubble(this.minutes, {super.key});
+  static const double width = 92, height = 32;
+
+  @override
+  Widget build(BuildContext context) => Center(
+        child: Container(
+          padding: const EdgeInsets.fromLTRB(3, 3, 11, 3),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: const [BoxShadow(color: Color(0x40000000), blurRadius: 6, offset: Offset(0, 2))],
+          ),
+          child: Row(mainAxisSize: MainAxisSize.min, children: [
+            const WalkerDot(size: 24),
+            const SizedBox(width: 6),
+            Text('$minutes min',
+                style: const TextStyle(fontSize: 13, height: 1, fontWeight: FontWeight.w800, color: AppColors.ink)),
+          ]),
+        ),
+      );
 }
