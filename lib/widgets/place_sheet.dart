@@ -10,6 +10,7 @@ import '../data/app_state.dart';
 import '../data/mapillary.dart';
 import '../data/place_photos.dart';
 import '../data/places.dart';
+import '../data/site_hours.dart';
 import '../data/store.dart';
 import '../screens/fixit_screens.dart';
 import '../screens/place_actions.dart';
@@ -44,7 +45,7 @@ Future<void> showPlaceSheet(BuildContext context, Place place,
   // the map to close
   Widget sheet(BuildContext _) => _FitSheet(
         start: place.share != null && !place.share!.street ? 0.34 : 0.24,
-        builder: (scroll, onHeight) => PlaceSheet(
+        builder: (scroll, onHeight, onPeek) => PlaceSheet(
           place: place,
           scroll: scroll,
           myVehicle: myVehicle,
@@ -53,6 +54,7 @@ Future<void> showPlaceSheet(BuildContext context, Place place,
           onTrip: onTrip,
           state: state,
           onHeight: onHeight,
+          onPeek: onPeek,
         ),
       );
   if (host != null) {
@@ -82,7 +84,7 @@ Future<void> showPlaceSheet(BuildContext context, Place place,
 /// The draggable sheet, as tall as its content at most: it never rises into empty space.
 class _FitSheet extends StatefulWidget {
   final double start;
-  final Widget Function(ScrollController scroll, ValueChanged<double> onHeight) builder;
+  final Widget Function(ScrollController scroll, ValueChanged<double> onHeight, ValueChanged<double> onPeek) builder;
   const _FitSheet({required this.start, required this.builder});
 
   @override
@@ -97,20 +99,46 @@ class _FitSheetState extends State<_FitSheet> {
     setState(() => _content = h);
   }
 
+  final _ctrl = DraggableScrollableController();
+  double? _peek; // where the sheet rests when it opens, in pixels (when the content asks for it)
+  double _room = 0;
+
+  /// The content says how much of it must be in view when the sheet opens (a rental shop: down
+  /// to your vehicle, time and distance). The sheet moves there, unless the rider already moved it.
+  void _onPeek(double h) {
+    if (!mounted || _room <= 0 || (_peek != null && (h - _peek!).abs() < 2)) return;
+    final before = (_peek == null ? widget.start : (_peek! / _room).clamp(widget.start, 0.92)).toDouble();
+    final untouched = !_ctrl.isAttached || (_ctrl.size - before).abs() < 0.02;
+    setState(() => _peek = h);
+    if (untouched) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted && _ctrl.isAttached) _ctrl.jumpTo((h / _room).clamp(widget.start, 0.92).toDouble());
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) => LayoutBuilder(builder: (context, box) {
         final room = box.maxHeight.isFinite ? box.maxHeight : MediaQuery.sizeOf(context).height;
-        final start = widget.start;
+        _room = room;
+        final start = _peek == null ? widget.start : (_peek! / room).clamp(widget.start, 0.92).toDouble();
         // until the content is measured: the opening height only
         final top = _content == null ? start : (_content! / room).clamp(start, 0.92).toDouble();
         return DraggableScrollableSheet(
-          initialChildSize: start,
+          controller: _ctrl,
+          initialChildSize: widget.start,
           minChildSize: 0.2,
           maxChildSize: top,
           snap: true,
           snapSizes: top - start > 0.02 ? [start] : null,
           expand: false,
-          builder: (ctx, scroll) => widget.builder(scroll, _onHeight),
+          builder: (ctx, scroll) => widget.builder(scroll, _onHeight, _onPeek),
         );
       });
 }
@@ -133,6 +161,9 @@ class PlaceSheet extends StatefulWidget {
 
   /// tells the sheet how tall the whole content is, so it rises that far and no further
   final ValueChanged<double>? onHeight;
+
+  /// tells the sheet how much of the content must be in view when it opens
+  final ValueChanged<double>? onPeek;
   const PlaceSheet({
     super.key,
     required this.place,
@@ -143,6 +174,7 @@ class PlaceSheet extends StatefulWidget {
     this.onTrip,
     this.state,
     this.onHeight,
+    this.onPeek,
   });
 
   @override
@@ -167,7 +199,16 @@ class _PlaceSheetState extends State<PlaceSheet> {
     final box = _contentKey.currentContext?.findRenderObject() as RenderBox?;
     // + the line around the sheet and the gap under it
     if (box != null && box.hasSize) widget.onHeight?.call(box.size.height + 10);
+    // a rental shop opens down to the row with your vehicle, the time and the distance
+    final row = _firstRowKey.currentContext?.findRenderObject() as RenderBox?;
+    if (box != null && row != null && row.hasSize && widget.place.type == PlaceType.rent) {
+      final bottom = row.localToGlobal(Offset(0, row.size.height)).dy - box.localToGlobal(Offset.zero).dy;
+      widget.onPeek?.call(bottom + 12);
+    }
   }
+
+  final _firstRowKey = GlobalKey();
+  SiteInfo? _site; // hours and phone read from the place's own website, when the map has none
 
   List<PlacePhoto> _mine = const [], _online = const [];
 
@@ -188,6 +229,12 @@ class _PlaceSheetState extends State<PlaceSheet> {
     MyPhotos.i.addListener(_loadMine);
     _loadMine();
     // real places only: open street photos that look at this place
+    final pl = widget.place;
+    if (pl.osm && pl.website != null && (pl.hours == null || pl.phone == null) && pl.type.isNeutral) {
+      siteInfo(pl.website!).then((i) {
+        if (mounted && !i.isEmpty) setState(() => _site = i);
+      });
+    }
     if (widget.place.osm) {
       photosLookingAt(widget.place).then((l) {
         if (mounted && l.isNotEmpty) setState(() => _online = l);
@@ -282,7 +329,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
           ]);
         }),
       ] else
-      Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      Row(key: _firstRowKey, crossAxisAlignment: CrossAxisAlignment.start, children: [
         Expanded(
           flex: 3,
           child: VehicleTile(
@@ -554,12 +601,15 @@ class _PlaceSheetState extends State<PlaceSheet> {
       shape: const StadiumBorder(),
       visualDensity: VisualDensity.compact,
     );
+    // what the map data lacks comes from the place's own website
+    final hours = p.hours ?? _site?.hours;
+    final phone = p.phone ?? _site?.phone;
     return Wrap(spacing: 8, runSpacing: 8, crossAxisAlignment: WrapCrossAlignment.center, children: [
-      if (p.hours != null)
+      if (hours != null)
         Row(mainAxisSize: MainAxisSize.min, children: [
           const Icon(Icons.lock_open_rounded, size: 18, color: AppColors.green),
           const SizedBox(width: 6),
-          Text(p.hours!, style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.greenDark)),
+          Flexible(child: Text(hours, style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.greenDark))),
         ]),
       if (web != null && web.host.isNotEmpty)
         Tooltip(
@@ -576,11 +626,11 @@ class _PlaceSheetState extends State<PlaceSheet> {
             child: const Icon(Icons.language, size: 20),
           ),
         ),
-      if (p.phone != null)
+      if (phone != null)
         OutlinedButton.icon(
-          onPressed: () => openLink('tel:${p.phone!.replaceAll(RegExp(r'[^0-9+]'), '')}'),
+          onPressed: () => openLink('tel:${phone.replaceAll(RegExp(r'[^0-9+]'), '')}'),
           icon: const Icon(Icons.phone_outlined, size: 16),
-          label: Text(p.phone!),
+          label: Text(phone),
           style: pill,
         ),
     ]);

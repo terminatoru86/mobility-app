@@ -3,6 +3,7 @@ import 'package:mobility/data/device_ledger.dart';
 import 'package:mobility/data/fixit_help.dart';
 import 'package:mobility/data/osm.dart';
 import 'package:mobility/data/places.dart';
+import 'package:mobility/data/site_hours.dart';
 import 'package:mobility/data/zones.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -121,6 +122,19 @@ void main() {
       expect(out.first.status, Status.free);
       expect(out.first.facts.first, '3 racks side by side');
       expect(out.last.count, '6');
+    });
+  });
+  group('Hours from a shop website', () {
+    test('reads the structured hours and phone; leaves a page with several stores alone', () {
+      const one = '<html><script type="application/ld+json">{"@type":"BikeStore","telephone":"+1 773-555-0100",'
+          '"openingHoursSpecification":[{"dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"18:00"},'
+          '{"dayOfWeek":"https://schema.org/Saturday","opens":"10:00:00","closes":"17:00:00"}]}</script></html>';
+      final i = parseSiteInfo(one);
+      expect(i.hours, 'Mo-Fr 10:00-18:00; Sa 10:00-17:00');
+      expect(i.phone, '+1 773-555-0100');
+      const two = '<script type="application/ld+json">[{"openingHours":"Mo-Fr 09:00-17:00"},{"openingHours":"Mo-Su 11:00-19:00"}]</script>';
+      expect(parseSiteInfo(two).hours, isNull);
+      expect(parseSiteInfo('<html>Open 9 to 5</html>').isEmpty, isTrue);
     });
   });
 }
