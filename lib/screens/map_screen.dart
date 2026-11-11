@@ -81,6 +81,18 @@ class MapScreenState extends State<MapScreen> {
     if (_picked.length == kFilterChips.length) _picked.clear();
   }
 
+  void _sheetMoved() {
+    if (mounted) setState(() {});
+  }
+
+  /// How far GPS, + and SOS rise so the open place sheet never covers them (at most 60 % of the
+  /// screen: a sheet pulled higher than that covers them for a moment).
+  double _lift(double normal) {
+    final h = placeSheetHeight.value;
+    if (h <= 0) return normal;
+    return math.max(normal, math.min(h, MediaQuery.sizeOf(context).height * 0.6) + kEdge);
+  }
+
   /// kinds that stay off the map until the rider picks their filter
   static bool _onDemand(PlaceType t) =>
       t == PlaceType.sharing || t == PlaceType.rent || t == PlaceType.shop || t == PlaceType.service;
@@ -122,6 +134,7 @@ class MapScreenState extends State<MapScreen> {
     Basemap.i.start(); // the street map already on the phone: no internet needed
     Store.i.addListener(_storeChanged);
     statusFilter.addListener(_statusChanged);
+    placeSheetHeight.addListener(_sheetMoved);
     // The round button next to the search bar shows your vehicle, then the weather, turning by itself every 8 s
     // (a swipe on it turns it at once).
     // one clock for all pins (glyph <-> age)
@@ -237,6 +250,7 @@ class MapScreenState extends State<MapScreen> {
     _sCtrl.dispose();
     _sFocus.dispose();
     Store.i.removeListener(_storeChanged);
+    placeSheetHeight.removeListener(_sheetMoved);
     statusFilter.removeListener(_statusChanged);
     _shareTimer?.cancel();
     _pieceTimer?.cancel();
@@ -1536,7 +1550,7 @@ class MapScreenState extends State<MapScreen> {
         ),
       Positioned(
           right: kEdge,
-          bottom: (_dest != null ? (_destRack != null ? 160 : 112) : 16) + StatusScale.height,
+          bottom: _lift((_dest != null ? (_destRack != null ? 160 : 112) : 16) + StatusScale.height),
           child: Column(children: [
             GestureDetector(
               key: _kLocate,
@@ -1553,7 +1567,7 @@ class MapScreenState extends State<MapScreen> {
         ),
       Positioned(
           left: kEdge,
-          bottom: (_dest != null ? (_destRack != null ? 160 : 112) : 16) + StatusScale.height,
+          bottom: _lift((_dest != null ? (_destRack != null ? 160 : 112) : 16) + StatusScale.height),
           child: _sosButton()),
       if (_locked)
         Positioned(
@@ -1834,9 +1848,9 @@ const kFilterChips = <(String, List<PlaceType>)>[
   ('Parking', [PlaceType.parkOutdoor, PlaceType.parkCovered, PlaceType.parkPrivate]),
   ('Charging', [PlaceType.charging]),
   ('Service', [PlaceType.service, PlaceType.pump, PlaceType.selfService]),
-  ('Sharing', [PlaceType.sharing, PlaceType.rent]),
+  ('Sharing', [PlaceType.sharing]),
   ('Wash', [PlaceType.wash]),
-  ('Shop', [PlaceType.shop]),
+  ('Shop', [PlaceType.shop, PlaceType.rent]),
 ];
 
 /// First tap on a sharing pin (and Profile → Sharing): pick the operators to show, filtered by GPS.

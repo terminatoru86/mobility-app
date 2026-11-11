@@ -85,10 +85,11 @@ extension PlaceTypeX on PlaceType {
         PlaceType.parkOutdoor || PlaceType.parkCovered || PlaceType.parkPrivate => 'Parking',
         PlaceType.charging => 'Charging',
         PlaceType.service || PlaceType.pump || PlaceType.selfService => 'Service',
-        PlaceType.sharing || PlaceType.rent => 'Sharing',
+        PlaceType.sharing => 'Sharing',
         PlaceType.wash => 'Wash',
         PlaceType.bmx => 'BMX',
-        PlaceType.shop => 'Shop',
+        // a rental shop is a shop, not ride share: it shows with the Shop filter
+        PlaceType.shop || PlaceType.rent => 'Shop',
       };
 
   /// Group used for parking logic (racks count as parking).
