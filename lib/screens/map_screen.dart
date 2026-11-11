@@ -76,6 +76,10 @@ class MapScreenState extends State<MapScreen> {
     if (_picked.length == kFilterChips.length) _picked.clear();
   }
 
+  /// kinds that stay off the map until the rider picks their filter
+  static bool _onDemand(PlaceType t) =>
+      t == PlaceType.sharing || t == PlaceType.rent || t == PlaceType.shop || t == PlaceType.service;
+
   /// only ride share on the map: its own pins (hubs with numbers, street vehicles with their battery)
   bool get _shareOnly => _picked.length == 1 && _picked.contains('Sharing');
   String? _selected;
@@ -988,6 +992,9 @@ class MapScreenState extends State<MapScreen> {
         ? <Place>[]
         : view
             .where((p) =>
+                // sharing, rent, shops and service workshops never show as dots: only when their
+                // own filter is picked (pumps and self-service stations stay, they help on the way)
+                !(_onDemand(p.type) && !_picked.contains(p.type.chip)) &&
                 (!_picked.contains(p.type.chip) ||
                     (statusFilter.value != null && p.shownStatus != statusFilter.value && p.id != _selected)) &&
                 (a == null || a.contains(p.pos)) &&

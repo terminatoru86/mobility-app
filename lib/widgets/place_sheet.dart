@@ -1,3 +1,5 @@
+import 'dart:ui' as ui;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -234,19 +236,31 @@ class _PlaceSheetState extends State<PlaceSheet> {
       const SizedBox(height: 24),
     ];
 
-    return Container(
-      decoration: const BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.vertical(top: Radius.circular(22)),
-        boxShadow: [BoxShadow(color: Color(0x290F1E24), blurRadius: 24, offset: Offset(0, -8))],
-      ),
-      child: ListView(
-        controller: widget.scroll,
-        padding: EdgeInsets.zero,
-        children: [
-          _band(p, c),
-          Padding(padding: const EdgeInsets.fromLTRB(16, 12, 16, 0), child: Column(children: children)),
-        ],
+    // The whole sheet in the colour of its pin (a light tone of it), a little see-through and
+    // frosted: pins behind it show as a blur of colour, never through it. One line in the status
+    // colour all around, round corners at the bottom too, where it meets the main menu.
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(4, 0, 4, 4),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(22),
+        child: BackdropFilter(
+          filter: ui.ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Color.lerp(c.tint, Colors.white, 0.5)!.withValues(alpha: 0.84),
+              borderRadius: BorderRadius.circular(22),
+              border: Border.all(color: c.main, width: 2),
+            ),
+            child: ListView(
+              controller: widget.scroll,
+              padding: EdgeInsets.zero,
+              children: [
+                _band(p, c),
+                Padding(padding: const EdgeInsets.fromLTRB(14, 4, 14, 0), child: Column(children: children)),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
@@ -254,12 +268,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
   // Coloured band: glyph (or operator name), age, address + copy, Trip.
   Widget _band(Place p, StatusColors c) {
     return Container(
-      decoration: BoxDecoration(
-        color: c.tint,
-        borderRadius: const BorderRadius.vertical(top: Radius.circular(22)),
-        border: Border(top: BorderSide(color: c.main, width: 2), left: BorderSide(color: c.main, width: 2), right: BorderSide(color: c.main, width: 2)),
-      ),
-      padding: const EdgeInsets.fromLTRB(16, 8, 12, 12),
+      padding: const EdgeInsets.fromLTRB(14, 8, 10, 8),
       child: Column(children: [
         Container(width: 36, height: 4, decoration: BoxDecoration(color: c.main.withValues(alpha: 0.5), borderRadius: BorderRadius.circular(2))),
         const SizedBox(height: 8),

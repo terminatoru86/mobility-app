@@ -25,6 +25,9 @@ String operatorUrl(Place p) {
                   : 'https://www.google.com/search?q=${Uri.encodeComponent(p.operatorName ?? 'bike share')}';
 }
 
+/// The boxes inside the tinted place sheet: white, a little see-through.
+const kFrost = Color(0xB8FFFFFF);
+
 /// green from 3 up, yellow 1–2, red 0: the same rule on the pin and in the sheet
 Status countStatus(int n) => n == 0 ? Status.full : (n <= 2 ? Status.almost : Status.free);
 
@@ -43,7 +46,8 @@ class ShareCounts extends StatelessWidget {
         child: Container(
           margin: const EdgeInsets.symmetric(horizontal: 3),
           padding: const EdgeInsets.symmetric(vertical: 7),
-          decoration: BoxDecoration(color: c.tint, borderRadius: BorderRadius.circular(12)),
+          // frosted white on the tinted sheet; the colour stays on the number
+          decoration: BoxDecoration(color: kFrost, borderRadius: BorderRadius.circular(12)),
           child: Column(children: [
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Icon(icon, size: 18, color: c.dark),
@@ -79,7 +83,7 @@ class WalkLine extends StatelessWidget {
   Widget build(BuildContext context) => Container(
         height: 36,
         padding: const EdgeInsets.only(left: 4, right: 14),
-        decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(18)),
+        decoration: BoxDecoration(color: kFrost, borderRadius: BorderRadius.circular(18)),
         child: Row(children: [
           const WalkerDot(),
           const SizedBox(width: 8),
@@ -143,7 +147,7 @@ class ShareVehicleRow extends StatelessWidget {
           child: Container(
             height: 74,
             padding: const EdgeInsets.symmetric(horizontal: 10),
-            decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
+            decoration: BoxDecoration(color: kFrost, borderRadius: BorderRadius.circular(14)),
             child: child,
           ),
         );
