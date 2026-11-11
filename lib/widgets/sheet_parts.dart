@@ -593,3 +593,41 @@ class RentVehicleRow extends StatelessWidget {
           ),
       ]);
 }
+
+/// A shop: what it sells, four equal tiles (bike, scooter, moped, accessories).
+/// What the map data does not list for this shop is shown faded.
+class ShopSellsRow extends StatelessWidget {
+  final Place place;
+  const ShopSellsRow(this.place, {super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = place.accepts, o = place.offers;
+    final bike = a.contains(Vehicle.bike) || a.contains(Vehicle.ebike);
+    final scooter = a.contains(Vehicle.scooter);
+    final moped = a.contains(Vehicle.moped) || a.contains(Vehicle.moto);
+    // listed for this shop, or nothing listed at all (every shop keeps the small things)
+    final extras = o.isEmpty || o.any((x) => const ['Accessories', 'Parts', 'Clothing', 'Rider gear', 'Tires'].contains(x));
+    Widget tile(Widget picture, String label, bool on) => Expanded(
+          child: Opacity(
+            opacity: on ? 1 : 0.28,
+            child: Container(
+              height: 64,
+              margin: const EdgeInsets.symmetric(horizontal: 3),
+              decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
+              child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+                SizedBox(height: 32, child: picture),
+                const SizedBox(height: 2),
+                Text(label, maxLines: 1, style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: AppColors.primary)),
+              ]),
+            ),
+          ),
+        );
+    return Row(children: [
+      tile(Image.asset(Vehicle.bike.asset, fit: BoxFit.contain), 'Bikes', bike),
+      tile(Image.asset(Vehicle.scooter.asset, fit: BoxFit.contain), 'Scooters', scooter),
+      tile(Image.asset(Vehicle.moped.asset, fit: BoxFit.contain), 'Mopeds', moped),
+      tile(const Icon(Icons.home_repair_service_outlined, size: 28, color: AppColors.primary), 'Accessories', extras),
+    ]);
+  }
+}

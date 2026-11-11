@@ -256,7 +256,25 @@ class _PlaceSheetState extends State<PlaceSheet> {
         // live ride share: a station shows its four numbers and the walk; one vehicle shows its
         // picture with the battery, and the walking time where the distance is
         p.share!.street ? ShareVehicleRow(p) : ShareCounts(p)
-      else
+      else if (p.type == PlaceType.shop) ...[
+        // a shop: what it sells (bike, scooter, moped, accessories), then distance, time and rating
+        ShopSellsRow(p),
+        const SizedBox(height: 8),
+        Builder(builder: (_) {
+          final eta = p.etaMin[widget.myVehicle ?? Vehicle.bike] ?? (p.etaMin.isEmpty ? null : p.etaMin.values.first);
+          return Row(children: [
+            Expanded(child: FactTile(p.distance, 'distance')),
+            const SizedBox(width: 8),
+            Expanded(child: FactTile(eta == null ? '—' : '$eta min', eta == null ? 'time' : arrivalTime(eta))),
+            const SizedBox(width: 8),
+            Expanded(
+              child: p.reviews.isEmpty
+                  ? const FactTile('—', 'no reviews yet')
+                  : FactTile('${p.rating.toStringAsFixed(1)} ★', '${p.reviewCount} reviews'),
+            ),
+          ]);
+        }),
+      ] else
       Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Expanded(
           flex: 3,
@@ -485,8 +503,9 @@ class _PlaceSheetState extends State<PlaceSheet> {
           FilledButton(onPressed: () => _push(RentScreen(place: p)), child: const Text('Reserve / Rent')),
         ];
       case PlaceType.shop:
+        return []; // what a shop sells is the first row of its sheet
       case PlaceType.bmx:
-        return p.offers.isEmpty ? [] : [OffersRow(p.offers, title: p.type == PlaceType.shop ? 'What they offer' : 'Track')];
+        return p.offers.isEmpty ? [] : [OffersRow(p.offers, title: 'Track')];
       case PlaceType.sharing:
         return [
           SwipeButton(
@@ -500,6 +519,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
     }
   }
 
+  /// One line: the hours, then the website (a globe), then the phone.
   Widget _hoursRow(Place p) {
     final web = p.website == null ? null : Uri.tryParse(p.website!.startsWith('http') ? p.website! : 'https://${p.website}');
     final pill = OutlinedButton.styleFrom(
@@ -514,18 +534,26 @@ class _PlaceSheetState extends State<PlaceSheet> {
           const SizedBox(width: 6),
           Text(p.hours!, style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.greenDark)),
         ]),
+      if (web != null && web.host.isNotEmpty)
+        Tooltip(
+          message: web.host.replaceFirst('www.', ''),
+          child: OutlinedButton(
+            onPressed: () => openLink(web.toString()),
+            style: OutlinedButton.styleFrom(
+              foregroundColor: AppColors.blue,
+              shape: const CircleBorder(),
+              minimumSize: const Size(38, 38),
+              padding: EdgeInsets.zero,
+              visualDensity: VisualDensity.compact,
+            ),
+            child: const Icon(Icons.language, size: 20),
+          ),
+        ),
       if (p.phone != null)
         OutlinedButton.icon(
           onPressed: () => openLink('tel:${p.phone!.replaceAll(RegExp(r'[^0-9+]'), '')}'),
           icon: const Icon(Icons.phone_outlined, size: 16),
           label: Text(p.phone!),
-          style: pill,
-        ),
-      if (web != null && web.host.isNotEmpty)
-        OutlinedButton.icon(
-          onPressed: () => openLink(web.toString()),
-          icon: const Icon(Icons.language, size: 16),
-          label: Text(web.host.replaceFirst('www.', '')),
           style: pill,
         ),
     ]);
@@ -562,7 +590,9 @@ class _PlaceSheetState extends State<PlaceSheet> {
                 if (ph.local)
                   Image.file(File(ph.url), fit: BoxFit.cover, errorBuilder: (_, __, ___) => missing())
                 else
-                  Image.network(
+                  RotatedBox(
+                    quarterTurns: ph.turns,
+                    child: Image.network(
                     ph.url,
                     fit: BoxFit.cover,
                     loadingBuilder: (_, child, prog) => prog == null
@@ -572,6 +602,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
                             alignment: Alignment.center,
                             child: const CircularProgressIndicator(strokeWidth: 2)),
                     errorBuilder: (_, __, ___) => missing(),
+                  ),
                   ),
                 Positioned(
                   left: 8,

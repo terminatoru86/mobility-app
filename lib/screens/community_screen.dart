@@ -1002,12 +1002,15 @@ class _BmxSheetState extends State<BmxSheet> {
                     itemBuilder: (_, i) => Stack(fit: StackFit.expand, children: [
                       photos[i].local
                           ? Image.file(File(photos[i].url), fit: BoxFit.cover)
-                          : Image.network(photos[i].url,
-                              fit: BoxFit.cover,
-                              errorBuilder: (_, __, ___) => Container(
-                                  color: AppColors.paper,
-                                  alignment: Alignment.center,
-                                  child: const Icon(Icons.image_not_supported_outlined, color: AppColors.soft))),
+                          : RotatedBox(
+                              quarterTurns: photos[i].turns,
+                              child: Image.network(photos[i].url,
+                                  fit: BoxFit.cover,
+                                  errorBuilder: (_, __, ___) => Container(
+                                      color: AppColors.paper,
+                                      alignment: Alignment.center,
+                                      child: const Icon(Icons.image_not_supported_outlined, color: AppColors.soft))),
+                            ),
                       Positioned(
                         left: 8,
                         bottom: 8,

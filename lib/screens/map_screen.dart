@@ -29,6 +29,7 @@ import '../widgets/share_sheet.dart';
 import 'walk_screen.dart';
 import '../widgets/signup.dart';
 import '../widgets/tiles.dart';
+import '../widgets/wx_button.dart';
 import 'map_extras.dart';
 import 'trip_screen.dart';
 
@@ -87,9 +88,7 @@ class MapScreenState extends State<MapScreen> {
   bool get _shareOnly => _picked.length == 1 && _picked.contains('Sharing');
   String? _selected;
   bool _showGuide = false;
-  bool _weatherFace = false;
   bool _noGps = false;
-  Timer? _flip;
   Timer? _pinClock;
   Timer? _chipClock;
   Timer? _debounce;
@@ -124,9 +123,6 @@ class MapScreenState extends State<MapScreen> {
     statusFilter.addListener(_statusChanged);
     // The round button next to the search bar shows your vehicle, then the weather, turning by itself every 8 s
     // (a swipe on it turns it at once).
-    _flip = Timer.periodic(const Duration(seconds: 8), (_) {
-      if (mounted) setState(() => _weatherFace = !_weatherFace);
-    });
     // one clock for all pins (glyph <-> age)
     _pinClock = Timer.periodic(const Duration(seconds: 8), (_) => pinShowsAge.value = !pinShowsAge.value);
     _chipClock = Timer.periodic(const Duration(seconds: 2), (_) => chipTick.value++);
@@ -246,7 +242,6 @@ class MapScreenState extends State<MapScreen> {
     _lockTimer?.cancel();
     _ringTimer?.cancel();
     _areaTimer?.cancel();
-    _flip?.cancel();
     _pinClock?.cancel();
     _chipClock?.cancel();
     _debounce?.cancel();
@@ -395,7 +390,19 @@ class MapScreenState extends State<MapScreen> {
   /// To a shared bike or scooter you walk: a simple screen, no turn-by-turn.
   Future<void> _walkTo(Place p) async {
     if (Store.i.zones.isNotEmpty && !Store.i.unlockedAt(p.pos)) return _unlockHere(p.pos, null);
-    await Navigator.of(context).push(MaterialPageRoute(builder: (_) => WalkScreen(place: p)));
+    const d = Distance();
+    final around = [
+      for (final o in _all)
+        if (o.share != null && o.id != p.id && d(o.pos, p.pos) < 2500) o,
+    ]..sort((a, b) => d(a.pos, p.pos).compareTo(d(b.pos, p.pos)));
+    if (!mounted) return;
+    await Navigator.of(context).push(MaterialPageRoute(
+        builder: (_) => WalkScreen(
+              place: p,
+              others: around.take(80).toList(),
+              wx: _wx,
+              vehicle: widget.state.myVehicle ?? Vehicle.bike,
+            )));
     if (mounted) setState(() {});
   }
 
@@ -1312,11 +1319,11 @@ class MapScreenState extends State<MapScreen> {
         ],
       ),
       // spotlight target for the "how to read pins" step
-      Positioned(left: 20, top: top + 174, child: SizedBox(key: _kPins, width: 70, height: 80)),
+      Positioned(left: 20, top: top + 196, child: SizedBox(key: _kPins, width: 70, height: 80)),
       Positioned(
         left: kEdge,
         right: kEdge,
-        top: top + 22, // a little lower: clear of the status bar
+        top: top + 44, // well clear of the status bar
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           _searchBar(),
           if (_searching) _searchResults(),
@@ -1582,84 +1589,19 @@ class MapScreenState extends State<MapScreen> {
         ),
         if (!_searching) ...[
           const SizedBox(width: kEdge),
-          GestureDetector(
+          WxVehicleButton(
+            wx: _wx,
+            vehicle: widget.state.myVehicle ?? Vehicle.bike,
             // vehicle side → My vehicle; weather side → rain and wind
-            onTap: () async {
-              if (!_weatherFace) {
-                await showVehicleStep(context, widget.state, canClose: true);
-                if (mounted) setState(() {});
-              } else if (_wx != null) {
-                showWeather(context, _wx!);
-              } else {
-                _loadWeather();
-              }
+            onVehicle: () async {
+              await showVehicleStep(context, widget.state, canClose: true);
+              if (mounted) setState(() {});
             },
-            // a swipe left or right turns it to the other side (vehicle <-> weather)
-            onHorizontalDragEnd: (_) => setState(() => _weatherFace = !_weatherFace),
-            child: Stack(clipBehavior: Clip.none, children: [
-              Builder(builder: (_) {
-                // the weather side takes the colour of the weather: red rain, yellow drizzle,
-                // green clear, blue clouds
-                final wc = _wxColors();
-                return Glass(
-                  width: kCtl,
-                  height: kCtl,
-                  color: _weatherFace ? wc.tint.withValues(alpha: 0.62) : kGlass,
-                  line: _weatherFace ? wc.main : kGlassLine,
-                  lineWidth: _weatherFace ? 1.5 : 0.6,
-                  child: AnimatedSwitcher(
-                    duration: const Duration(milliseconds: 450),
-                    transitionBuilder: (c, a) => ScaleTransition(scale: a, child: c),
-                    child: _weatherFace
-                        ? Column(key: const ValueKey(true), mainAxisAlignment: MainAxisAlignment.center, children: [
-                            Icon(_wxIcon(), size: 19, color: wc.dark),
-                            Text(_wx == null ? '--°' : '${_wx!.temp.round()}°',
-                                style: TextStyle(fontSize: 12, height: 1.05, fontWeight: FontWeight.w800, color: wc.dark)),
-                          ])
-                        : Padding(
-                            key: const ValueKey(false),
-                            padding: const EdgeInsets.all(7),
-                            child: Image.asset((widget.state.myVehicle ?? Vehicle.bike).asset),
-                          ),
-                  ),
-                );
-              }),
-              // the blue dot: rain is on its way
-              if (_wx?.rainInMinutes != null)
-                Positioned(
-                  right: 2,
-                  top: 2,
-                  child: Container(
-                    width: 10,
-                    height: 10,
-                    decoration: BoxDecoration(
-                        color: AppColors.blue, shape: BoxShape.circle, border: Border.all(color: Colors.white, width: 2)),
-                  ),
-                ),
-            ]),
+            onWeather: () => _wx != null ? showWeather(context, _wx!) : _loadWeather(),
           ),
         ],
       ]);
 
-  /// The colour of the weather: our red for rain, our yellow for drizzle, our green for clear
-  /// sky, our blue for clouds (and while the weather is still loading).
-  StatusColors _wxColors() => switch (_wx?.tone) {
-        'rain' => colorsFor(Status.full),
-        'drizzle' => colorsFor(Status.almost),
-        'clear' => colorsFor(Status.free),
-        _ => const StatusColors(AppColors.blue, Color(0xFFE6EEFB), Color(0xFF1F4FA8)),
-      };
-
-  IconData _wxIcon() {
-    final s = _wx?.sky ?? 'Cloudy';
-    return switch (s) {
-      'Clear' => Icons.wb_sunny_outlined,
-      'Rain' || 'Showers' => Icons.umbrella_outlined,
-      'Snow' => Icons.ac_unit,
-      'Storm' => Icons.thunderstorm_outlined,
-      _ => Icons.wb_cloudy_outlined,
-    };
-  }
 
   Widget _filters() => SingleChildScrollView(
         key: _kFilters,
