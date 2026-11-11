@@ -24,10 +24,15 @@ Future<void> showPlaceSheet(BuildContext context, Place place,
     context: context,
     isScrollControlled: true,
     backgroundColor: Colors.transparent,
+    barrierColor: const Color(0x14000000), // the map stays in view behind the low sheet
+    // opens low, about a fifth of the screen (the status band, then your vehicle with time and
+    // distance); drag up for all of it, drag down or tap the map to close
     builder: (_) => DraggableScrollableSheet(
-      initialChildSize: 0.52,
-      minChildSize: 0.3,
+      initialChildSize: 0.24,
+      minChildSize: 0.2,
       maxChildSize: 0.92,
+      snap: true,
+      snapSizes: const [0.24, 0.92],
       expand: false,
       builder: (ctx, scroll) => PlaceSheet(
         place: place,

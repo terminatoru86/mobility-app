@@ -67,7 +67,6 @@ class MapScreenState extends State<MapScreen> {
   String? _selected;
   bool _showGuide = false;
   bool _weatherFace = false;
-  bool _list = false;
   bool _noGps = false;
   Timer? _flip;
   Timer? _pinClock;
@@ -1202,14 +1201,6 @@ class MapScreenState extends State<MapScreen> {
           ]),
         ],
       ),
-      if (_list)
-        Positioned.fill(
-          child: Container(
-            color: AppColors.paper,
-            padding: EdgeInsets.only(top: top + 112),
-            child: PlacesList(places: _near(userPos, 1500).take(60).toList(), onOpen: _openPlace),
-          ),
-        ),
       // spotlight target for the "how to read pins" step
       Positioned(left: 20, top: top + 160, child: SizedBox(key: _kPins, width: 70, height: 80)),
       Positioned(
@@ -1224,7 +1215,6 @@ class MapScreenState extends State<MapScreen> {
           _filters(),
           const SizedBox(height: 8),
           Wrap(spacing: 6, runSpacing: 6, children: [
-            _mapListToggle(),
             if (rainIn != null)
               _pill(Icons.umbrella, 'Rain in $rainIn min', AppColors.blue, Colors.white, () => showWeather(context, _wx!)),
             if (_loading)
@@ -1254,15 +1244,14 @@ class MapScreenState extends State<MapScreen> {
           ],
         ]),
       ),
-      if (_dest != null && !_list)
+      if (_dest != null)
         Positioned(
           left: 10,
           right: 10,
           bottom: 14 + StatusScale.height,
           child: _destCard(),
         ),
-      if (!_list)
-        Positioned(
+      Positioned(
           right: 14,
           bottom: (_dest != null ? (_destRack != null ? 160 : 112) : 24) + StatusScale.height,
           child: Column(children: [
@@ -1281,7 +1270,7 @@ class MapScreenState extends State<MapScreen> {
           left: 14,
           bottom: (_dest != null ? (_destRack != null ? 166 : 118) : 30) + StatusScale.height,
           child: _sosButton()),
-      if (_locked && !_list)
+      if (_locked)
         Positioned(
           left: 12,
           right: 12,
@@ -1309,10 +1298,10 @@ class MapScreenState extends State<MapScreen> {
       if (store.sosActive && store.sosHelper != null && _dest == null)
         Positioned(left: 12, right: 12, bottom: 140, child: SosHelperCard(helper: store.sosHelper!)),
       // the colour scale: on the map's bottom edge, i.e. right on top of the main menu
-      if (!_list) const Positioned(left: 0, right: 0, bottom: 0, child: StatusScale()),
+      const Positioned(left: 0, right: 0, bottom: 0, child: StatusScale()),
       Positioned(
         right: 4,
-        bottom: _list ? 2 : StatusScale.height + 2,
+        bottom: StatusScale.height + 2,
         child: Text(
             store.satellite
                 ? '© Esri World Imagery'
@@ -1420,33 +1409,6 @@ class MapScreenState extends State<MapScreen> {
             Text(text, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: fg)),
           ]),
         ),
-      );
-
-  Widget _mapListToggle() => Container(
-        height: 30,
-        padding: const EdgeInsets.all(3),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(15),
-          boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 2))],
-        ),
-        child: Row(mainAxisSize: MainAxisSize.min, children: [
-          for (final (label, isList) in const [('Map', false), ('List', true)])
-            GestureDetector(
-              onTap: () => setState(() => _list = isList),
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: _list == isList ? AppColors.primary : Colors.transparent,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Text(label,
-                    style: TextStyle(
-                        fontSize: 12, fontWeight: FontWeight.w800, color: _list == isList ? Colors.white : AppColors.soft)),
-              ),
-            ),
-        ]),
       );
 
   Widget _searchBar() => GestureDetector(

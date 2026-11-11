@@ -1092,6 +1092,58 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
   // the whole route from above, with the road kinds (tap again: back to the normal guidance)
   bool _overview = false;
 
+  // The ride strip (road now, speed, time, next hill) hides a few seconds after you leave. It comes
+  // down from the blue banner by itself only when it matters (a hill or downhill is near, the bike
+  // lane ends or begins), then hides again. Pull the small handle down to see it any time.
+  DateTime? _stripUntil; // pulled down by hand: stays until then
+  bool _stripOff = false; // pushed up by hand during an event: hidden until that event is over
+  String _stripRoad = '';
+  DateTime? _roadChangedAt;
+
+  /// The next change of road kind ahead: (the new kind, metres to it).
+  (String, double)? _nextRoadChange() {
+    final segs = _route.roadSegs;
+    if (segs == null || segs.isEmpty) return null;
+    var i = 0;
+    while (i < segs.length && segs[i].$1 <= _along) {
+      i++;
+    }
+    if (i >= segs.length) return null;
+    final now = segs[i].$2;
+    for (var j = i; j < segs.length - 1; j++) {
+      if (segs[j + 1].$2 != now) return (segs[j + 1].$2, math.max(0.0, segs[j].$1 - _along));
+    }
+    return null;
+  }
+
+  /// Something worth showing right now: a hill, downhill or bridge within 300 m, the road kind
+  /// changes within 200 m, or it changed a moment ago.
+  bool _stripEvent() {
+    final rel = _nextRelief();
+    if (rel != null && rel.$2 <= 300) return true;
+    final ch = _nextRoadChange();
+    if (ch != null && ch.$2 <= 200) return true;
+    final at = _roadChangedAt;
+    return at != null && DateTime.now().difference(at).inSeconds < 6;
+  }
+
+  bool _stripShown(Duration elapsed) {
+    final road = _roadNow();
+    if (road.isNotEmpty && road != _stripRoad) {
+      if (_stripRoad.isNotEmpty) _roadChangedAt = DateTime.now();
+      _stripRoad = road;
+    }
+    final event = _stripEvent();
+    if (!event) _stripOff = false;
+    final pulled = _stripUntil != null && DateTime.now().isBefore(_stripUntil!);
+    return elapsed.inSeconds < 6 || pulled || (event && !_stripOff);
+  }
+
+  void _pullStrip() => setState(() {
+        _stripOff = false;
+        _stripUntil = DateTime.now().add(const Duration(seconds: 10));
+      });
+
   @override
   void initState() {
     super.initState();
@@ -1338,6 +1390,13 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
                 ? AppColors.blue
                 : AppColors.slate;
     final relIcon = rel == null ? '' : (rel.$1 == 'hill' ? '↗ ' : rel.$1 == 'downhill' ? '↘ ' : '⌒ ');
+    // the road kind is about to change: say it ("bike lane ends in 200 m", "main road in 150 m")
+    final ch = _nextRoadChange();
+    final soon = ch != null && ch.$2 <= 200;
+    final lane = road == 'Bike lanes' || road == 'Protected lanes';
+    final roadText = soon
+        ? '${lane ? '${_roadShort[road]} ends' : (_roadShort[ch.$1] ?? 'road changes')} in ${fmtDistance(ch.$2)}'
+        : (_roadShort[road] ?? '…');
     return Container(
       padding: const EdgeInsets.fromLTRB(12, 7, 12, 8),
       decoration: const BoxDecoration(
@@ -1348,15 +1407,27 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
       child: Row(children: [
         RoadLine(kind: road, width: 30),
         const SizedBox(width: 4),
-        Text(_roadShort[road] ?? '…',
-            style: TextStyle(
-                fontSize: 11, fontWeight: FontWeight.w800, color: road == 'Bike lanes' ? AppColors.yellowDark : (RoadLine.colors[road] ?? AppColors.soft))),
+        Flexible(
+          child: Text(roadText,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w800,
+                  color: soon && lane
+                      ? AppColors.redDark
+                      : road == 'Bike lanes'
+                          ? AppColors.yellowDark
+                          : (RoadLine.colors[road] ?? AppColors.soft))),
+        ),
         const SizedBox(width: 12),
         Text(_speed.toStringAsFixed(1), style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900)),
         const Text(' km/h', style: TextStyle(fontSize: 11, color: AppColors.soft)),
-        const SizedBox(width: 12),
-        Text('${elapsed.inMinutes}:${(elapsed.inSeconds % 60).toString().padLeft(2, '0')}',
-            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900)),
+        if (!soon) ...[
+          const SizedBox(width: 12),
+          Text('${elapsed.inMinutes}:${(elapsed.inSeconds % 60).toString().padLeft(2, '0')}',
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900)),
+        ],
         const Spacer(),
         Text(rel == null ? '— flat' : '$relIcon${fmtDistance(rel.$2)}',
             style: TextStyle(fontSize: 13, fontWeight: FontWeight.w900, color: relColor)),
@@ -1590,6 +1661,7 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
     final remaining = math.max(0.0, _route.meters - _along);
     final secLeft = remaining / 1000 / 15 * 3600;
     final elapsed = DateTime.now().difference(_start);
+    final strip = _stripShown(elapsed); // the ride strip under the banner: in view or tucked away
     final done = pointsUpTo(_route.points, _along);
     final hazards = Store.i.reports.where((r) => r.onMap).toList();
     final top = MediaQuery.of(context).padding.top;
@@ -1707,9 +1779,9 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
           child: Column(children: [
             Material(
               color: AppColors.blue,
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+              borderRadius: strip ? const BorderRadius.vertical(top: Radius.circular(20)) : BorderRadius.circular(20),
               child: InkWell(
-                borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+                borderRadius: strip ? const BorderRadius.vertical(top: Radius.circular(20)) : BorderRadius.circular(20),
                 onTap: () => showDirections(context, _route, _toName),
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
@@ -1733,8 +1805,48 @@ class _GuidanceScreenState extends State<GuidanceScreen> {
                 ),
               ),
             ),
-            // the ride strip, glued under the banner: road now (live line), speed, time, next hill/bridge
-            _rideStrip(elapsed),
+            // the ride strip slides out from under the banner only when it matters (see _stripShown);
+            // swipe it up to send it back
+            ClipRect(
+              child: AnimatedAlign(
+                alignment: Alignment.bottomCenter,
+                heightFactor: strip ? 1 : 0,
+                duration: const Duration(milliseconds: 320),
+                curve: Curves.easeOutCubic,
+                child: GestureDetector(
+                  onVerticalDragEnd: (d) {
+                    if ((d.primaryVelocity ?? 0) < 0) {
+                      setState(() {
+                        _stripUntil = null;
+                        _stripOff = true;
+                      });
+                    }
+                  },
+                  child: _rideStrip(elapsed),
+                ),
+              ),
+            ),
+            // hidden: a small handle under the banner; pull it down (or tap it) to see the details
+            if (!strip)
+              GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: _pullStrip,
+                onVerticalDragEnd: (d) {
+                  if ((d.primaryVelocity ?? 0) > 0) _pullStrip();
+                },
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(48, 5, 48, 12),
+                  child: Container(
+                    width: 38,
+                    height: 5,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(3),
+                      boxShadow: const [BoxShadow(color: Color(0x40000000), blurRadius: 5, offset: Offset(0, 2))],
+                    ),
+                  ),
+                ),
+              ),
             if (_recalc)
               Container(
                 margin: const EdgeInsets.only(top: 6),

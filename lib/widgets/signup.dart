@@ -8,24 +8,20 @@ import '../data/auth.dart';
 import '../data/places.dart';
 import '../theme.dart';
 
-const _barrier = Color(0x550F1E24);
+const _barrier = Color(0x380F1E24);
 
-/// Our sign-in pop-up (the small card in the middle with the logo on top): Google, a link by
-/// email, the phone (when it is switched on), or carry on as a guest.
-/// Used at the end of the start screen, from Profile and as the invite after a few opens.
+/// Our sign-in sheet: a low sheet that comes up from the bottom, so the map stays in view.
+/// Google and Email on one row, "Guest" in the corner; a link by email (and the phone, when it is
+/// switched on) are typed in the same sheet.
+/// Used after the start screen, from Profile and as the invite after a few opens.
 /// Returns true when the user signed in (the account is then marked as created).
-Future<bool> showSignIn(BuildContext context, AppState state, {String guestLabel = 'Continue as guest'}) async {
+Future<bool> showSignIn(BuildContext context, AppState state, {String guestLabel = 'Guest ›'}) async {
   // already signed in (e.g. the link in the email opened the app): nothing to ask
   if (Auth.i.ready && Auth.i.user != null) {
     await state.createAccount();
     return true;
   }
-  final ok = await showDialog<bool>(
-    context: context,
-    barrierColor: _barrier,
-    barrierDismissible: false,
-    builder: (_) => SignInCard(guestLabel: guestLabel),
-  );
+  final ok = await _sheet<bool>(context, SignInCard(guestLabel: guestLabel));
   if (ok == true) {
     await state.createAccount();
     return true;
@@ -39,58 +35,64 @@ Future<void> showSignupInvite(BuildContext context, AppState state) async {
   if (ok && context.mounted) await showVehicleStep(context, state);
 }
 
-/// Which vehicle do you ride? Our pop-up card. After signing in it cannot be skipped;
+/// Which vehicle do you ride? The same low sheet. After signing in it cannot be skipped;
 /// from Profile and the map ([canClose]) it starts on the saved vehicle and closes with a tap outside.
-Future<void> showVehicleStep(BuildContext context, AppState state, {bool canClose = false}) => showDialog<void>(
+Future<void> showVehicleStep(BuildContext context, AppState state, {bool canClose = false}) =>
+    _sheet<void>(context, _VehicleStep(state: state, startOnSaved: canClose), canClose: canClose);
+
+Future<T?> _sheet<T>(BuildContext context, Widget child, {bool canClose = false}) => showModalBottomSheet<T>(
       context: context,
+      isScrollControlled: true, // rises with the keyboard
+      isDismissible: canClose,
+      enableDrag: canClose,
       barrierColor: _barrier,
-      barrierDismissible: canClose,
-      builder: (_) => PopScope(canPop: canClose, child: _VehicleStep(state: state, startOnSaved: canClose)),
+      backgroundColor: Colors.transparent,
+      builder: (_) => PopScope(canPop: canClose, child: child),
     );
 
+/// The low white sheet: a grabber, then the content.
 class _Card extends StatelessWidget {
-  final Widget badge;
   final List<Widget> children;
-  const _Card({required this.badge, required this.children});
+  const _Card({required this.children});
 
   @override
   Widget build(BuildContext context) {
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      insetPadding: const EdgeInsets.symmetric(horizontal: 22, vertical: 24),
-      child: Stack(clipBehavior: Clip.none, alignment: Alignment.topCenter, children: [
-        Container(
-          margin: const EdgeInsets.only(top: 28),
-          padding: const EdgeInsets.fromLTRB(18, 40, 18, 8),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(26),
-            boxShadow: const [BoxShadow(color: Color(0x220F1E24), blurRadius: 24, offset: Offset(0, 10))],
-          ),
-          child: AnimatedSize(
-            duration: const Duration(milliseconds: 220),
-            curve: Curves.easeOutCubic,
-            child: Column(mainAxisSize: MainAxisSize.min, children: children),
+    return Padding(
+      padding: EdgeInsets.only(bottom: MediaQuery.viewInsetsOf(context).bottom),
+      child: Container(
+        decoration: const BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+          boxShadow: [BoxShadow(color: Color(0x260F1E24), blurRadius: 24, offset: Offset(0, -8))],
+        ),
+        child: SafeArea(
+          top: false,
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 14),
+            child: AnimatedSize(
+              duration: const Duration(milliseconds: 200),
+              curve: Curves.easeOutCubic,
+              alignment: Alignment.topCenter,
+              child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+                Center(
+                  child: Container(
+                    width: 36,
+                    height: 4,
+                    margin: const EdgeInsets.only(bottom: 10),
+                    decoration: BoxDecoration(color: const Color(0xFFD6DEE2), borderRadius: BorderRadius.circular(2)),
+                  ),
+                ),
+                ...children,
+              ]),
+            ),
           ),
         ),
-        Container(
-          width: 60,
-          height: 60,
-          decoration: const BoxDecoration(
-            color: Colors.white,
-            shape: BoxShape.circle,
-            boxShadow: [BoxShadow(color: Color(0x2A0F1E24), blurRadius: 14, offset: Offset(0, 5))],
-          ),
-          alignment: Alignment.center,
-          child: badge,
-        ),
-      ]),
+      ),
     );
   }
 }
 
 Widget _pill(String t, Color bg, Color fg, VoidCallback? onTap, {bool border = false, Widget? icon}) => SizedBox(
-      width: double.infinity,
       height: 46,
       child: TextButton(
         onPressed: onTap,
@@ -98,22 +100,23 @@ Widget _pill(String t, Color bg, Color fg, VoidCallback? onTap, {bool border = f
           backgroundColor: bg,
           foregroundColor: fg,
           disabledForegroundColor: fg.withValues(alpha: .45),
+          padding: const EdgeInsets.symmetric(horizontal: 18),
           shape: StadiumBorder(side: border ? const BorderSide(color: AppColors.line, width: 1.5) : BorderSide.none),
           textStyle: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14),
         ),
-        child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-          if (icon != null) ...[icon, const SizedBox(width: 9)],
+        child: Row(mainAxisAlignment: MainAxisAlignment.center, mainAxisSize: MainAxisSize.min, children: [
+          if (icon != null) ...[icon, const SizedBox(width: 8)],
           Text(t),
         ]),
       ),
     );
 
-Widget _input(TextEditingController c, String hint, TextInputType type, {VoidCallback? onDone, int lines = 1}) =>
+Widget _input(TextEditingController c, String hint, TextInputType type, {VoidCallback? onDone, FocusNode? focus}) =>
     TextField(
       controller: c,
+      focusNode: focus,
       keyboardType: type,
-      minLines: 1,
-      maxLines: lines,
+      textInputAction: TextInputAction.done,
       onSubmitted: (_) => onDone?.call(),
       style: const TextStyle(fontSize: 14.5, fontWeight: FontWeight.w600),
       decoration: InputDecoration(
@@ -124,6 +127,25 @@ Widget _input(TextEditingController c, String hint, TextInputType type, {VoidCal
         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
       ),
+    );
+
+/// The head of a sheet: the logo, a title with one line under it, and a small action in the corner.
+Widget _head(String title, String sub, {Widget? action}) => Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Row(children: [
+        SvgPicture.asset('assets/brand/logo_m.svg', width: 32, height: 32),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text(title, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, height: 1.15)),
+            Text(sub,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontSize: 12, color: AppColors.soft, height: 1.3)),
+          ]),
+        ),
+        if (action != null) action,
+      ]),
     );
 
 enum _Mode { choose, email, emailSent, phone, phoneCode }
@@ -243,99 +265,78 @@ class _SignInCardState extends State<SignInCard> with WidgetsBindingObserver {
         }
       });
 
-  Widget _back() => TextButton(
-        onPressed: _busy
-            ? null
-            : () => setState(() {
-                  _mode = _Mode.choose;
-                  _problem = null;
-                }),
-        child: const Text('Back', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.slate)),
+  Widget _corner(String t, VoidCallback onTap) => TextButton(
+        onPressed: _busy ? null : onTap,
+        style: TextButton.styleFrom(
+            padding: const EdgeInsets.symmetric(horizontal: 8), minimumSize: const Size(0, 36), visualDensity: VisualDensity.compact),
+        child: Text(t, style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.blue, fontSize: 13)),
       );
 
-  Widget _title(String t, String sub) => Column(children: [
-        Text(t, style: const TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
-        const SizedBox(height: 4),
-        Text(sub, textAlign: TextAlign.center, style: const TextStyle(fontSize: 12.5, color: AppColors.soft, height: 1.3)),
-        const SizedBox(height: 14),
+  Widget _back() => _corner('‹ Back', () => setState(() {
+        _mode = _Mode.choose;
+        _problem = null;
+      }));
+
+  /// A field and its button on one row.
+  Widget _row(Widget field, String button, VoidCallback onTap) => Row(children: [
+        Expanded(child: field),
+        const SizedBox(width: 8),
+        _pill(button, AppColors.ink, Colors.white, _busy ? null : onTap),
       ]);
 
   List<Widget> _body() {
-    Widget benefit(IconData i, String t) => Container(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-          decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(10)),
-          child: Row(mainAxisSize: MainAxisSize.min, children: [
-            Icon(i, size: 13, color: AppColors.primary),
-            const SizedBox(width: 4),
-            Text(t, style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700)),
-          ]),
-        );
     switch (_mode) {
       case _Mode.choose:
         return [
-          const Text('Save your rides', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
-          const SizedBox(height: 4),
-          const Text('Your places, routes and vehicle on any phone.',
-              textAlign: TextAlign.center, style: TextStyle(fontSize: 12.5, color: AppColors.soft)),
-          const SizedBox(height: 10),
-          Wrap(spacing: 6, children: [
-            benefit(Icons.favorite, 'Places'),
-            benefit(Icons.route, 'Routes'),
-            benefit(Icons.pedal_bike, 'Vehicle'),
+          _head('Sign in', 'Keep your places and routes',
+              action: _corner(widget.guestLabel, () => Navigator.pop(context, false))),
+          Row(children: [
+            Expanded(
+                child: _pill('Google', Colors.white, AppColors.ink, _busy ? null : _google,
+                    border: true, icon: const GoogleG())),
+            const SizedBox(width: 8),
+            Expanded(
+                child: _pill('Email', AppColors.ink, Colors.white,
+                    _busy ? null : () => setState(() => _mode = _Mode.email),
+                    icon: const Icon(Icons.mail_outline, size: 18))),
           ]),
-          const SizedBox(height: 14),
-          _pill('Continue with Google', Colors.white, AppColors.ink, _busy ? null : _google,
-              border: true, icon: const GoogleG()),
-          const SizedBox(height: 8),
-          _pill('Continue with email', AppColors.ink, Colors.white,
-              _busy ? null : () => setState(() => _mode = _Mode.email),
-              icon: const Icon(Icons.mail_outline, size: 19)),
           if (kPhoneSignIn) ...[
             const SizedBox(height: 8),
-            _pill('Continue with phone', Colors.white, AppColors.ink,
-                _busy ? null : () => setState(() => _mode = _Mode.phone),
-                border: true, icon: const Icon(Icons.phone_iphone, size: 19)),
+            _pill('Phone', Colors.white, AppColors.ink, _busy ? null : () => setState(() => _mode = _Mode.phone),
+                border: true, icon: const Icon(Icons.phone_iphone, size: 18)),
           ],
-          TextButton(
-            onPressed: _busy ? null : () => Navigator.pop(context, false),
-            child: Text(widget.guestLabel, style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.slate)),
-          ),
         ];
       case _Mode.email:
         return [
-          _title('Sign in with email', "We'll email you a sign-in link. No password."),
-          _input(_email, 'you@example.com', TextInputType.emailAddress, onDone: _sendEmail),
-          const SizedBox(height: 10),
-          _pill('Send', AppColors.ink, Colors.white, _busy ? null : _sendEmail),
-          _back(),
+          _head('Sign in', 'We email you a link. No password.', action: _back()),
+          _row(_input(_email, 'you@example.com', TextInputType.emailAddress, onDone: _sendEmail), 'Send', _sendEmail),
         ];
       case _Mode.emailSent:
         return [
-          _title('Check your email',
-              'We sent a sign-in link to ${_email.text.trim()}.\nOpen the email on this phone and tap the link: MOBIlity opens and you are in.\nNot there? Look in Spam / Bulk.'),
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            TextButton(
-              onPressed: _busy ? null : _sendEmail,
-              child: const Text('Send again', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.blue)),
-            ),
-            _back(),
-          ]),
+          _head('Check your email', '${_email.text.trim()} · tap the link on this phone', action: _back()),
+          Container(
+            padding: const EdgeInsets.fromLTRB(12, 4, 4, 4),
+            decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
+            child: Row(children: [
+              const SizedBox(width: 14, height: 14, child: CircularProgressIndicator(strokeWidth: 2)),
+              const SizedBox(width: 10),
+              const Expanded(
+                child: Text('Waiting for you to tap the link…',
+                    style: TextStyle(fontSize: 12.5, fontWeight: FontWeight.w700, color: AppColors.soft)),
+              ),
+              _corner('Send again', _sendEmail),
+            ]),
+          ),
         ];
       case _Mode.phone:
         return [
-          _title('Sign in with your phone', "We'll text you a 6-digit code."),
-          _input(_phone, '+1 312 555 0100', TextInputType.phone, onDone: _sendSms),
-          const SizedBox(height: 10),
-          _pill('Send the code', AppColors.ink, Colors.white, _busy ? null : _sendSms),
-          _back(),
+          _head('Sign in', 'We text you a 6-digit code.', action: _back()),
+          _row(_input(_phone, '+1 312 555 0100', TextInputType.phone, onDone: _sendSms), 'Send', _sendSms),
         ];
       case _Mode.phoneCode:
         return [
-          _title('Type the code', 'Sent to ${_phone.text.trim()}'),
-          _input(_code, '123456', TextInputType.number, onDone: _checkCode),
-          const SizedBox(height: 10),
-          _pill('Sign in', AppColors.ink, Colors.white, _busy ? null : _checkCode),
-          _back(),
+          _head('Type the code', 'Sent to ${_phone.text.trim()}', action: _back()),
+          _row(_input(_code, '123456', TextInputType.number, onDone: _checkCode), 'Sign in', _checkCode),
         ];
     }
   }
@@ -343,17 +344,12 @@ class _SignInCardState extends State<SignInCard> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     return _Card(
-      badge: SvgPicture.asset('assets/brand/logo_m.svg', width: 40, height: 40),
       children: [
         ..._body(),
-        if (_busy)
-          const Padding(
-            padding: EdgeInsets.only(bottom: 6),
-            child: SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2)),
-          ),
+        if (_busy && _mode != _Mode.emailSent) const Padding(padding: EdgeInsets.only(top: 10), child: LinearProgressIndicator(minHeight: 2)),
         if (_problem != null)
           Padding(
-            padding: const EdgeInsets.only(bottom: 8),
+            padding: const EdgeInsets.only(top: 10),
             child: Text(_problem!,
                 textAlign: TextAlign.center,
                 style: const TextStyle(fontSize: 12.5, color: AppColors.red, fontWeight: FontWeight.w600)),
@@ -363,11 +359,10 @@ class _SignInCardState extends State<SignInCard> with WidgetsBindingObserver {
   }
 }
 
-/// Which vehicle do you ride? A full page with a deck of pictures, one over the other:
-/// every few seconds the front one slides to the back (swipe does the same). No names,
-/// no arrows, no counters: just the vehicles. Tap yours: the deck stops, your vehicle goes
-/// small into the corner (tap it to change), then only the model field with an "i" (not for a
-/// bike) and Finish at the bottom, which lights up once the model is typed. No Skip.
+/// Which vehicle do you ride? A low sheet: the five vehicles on one row, each with its picture and
+/// name, all in view at once. Tap yours: it gets a blue edge; under the row, on one line, the
+/// model (not for a bike) and Finish, which lights up once the model is typed. Tap another vehicle
+/// to change. No Skip.
 class _VehicleStep extends StatefulWidget {
   final AppState state;
   final bool startOnSaved;
@@ -376,71 +371,38 @@ class _VehicleStep extends StatefulWidget {
   State<_VehicleStep> createState() => _VehicleStepState();
 }
 
-class _VehicleStepState extends State<_VehicleStep> with SingleTickerProviderStateMixin {
+class _VehicleStepState extends State<_VehicleStep> {
   static bool _hasModel(Vehicle v) => v != Vehicle.bike;
-
-  /// front first
-  final List<Vehicle> _order = [Vehicle.bike, Vehicle.ebike, Vehicle.scooter, Vehicle.moped, Vehicle.moto];
+  static const _all = [Vehicle.bike, Vehicle.ebike, Vehicle.scooter, Vehicle.moped, Vehicle.moto];
   final _model = TextEditingController();
   final _focus = FocusNode();
-  /// one turn of the deck (1.8 s); its progress fills the active dot under the pictures
-  late final AnimationController _turn = AnimationController(vsync: this, duration: const Duration(milliseconds: 1800))
-    ..addStatusListener((st) {
-      if (st == AnimationStatus.completed && mounted && _chosen == null) {
-        _next();
-      }
-    });
-  static const _all = [Vehicle.bike, Vehicle.ebike, Vehicle.scooter, Vehicle.moped, Vehicle.moto];
   Vehicle? _chosen;
-  bool _why = false;
 
   @override
   void initState() {
     super.initState();
     final saved = widget.state.myVehicle;
     if (widget.startOnSaved && saved != null) {
-      // the saved vehicle in front, already picked, with its model
-      while (_order.first != saved) {
-        _order.add(_order.removeAt(0));
-      }
       _chosen = saved;
       _model.text = widget.state.model;
     }
-    if (_chosen == null) _turn.forward();
     _model.addListener(() => setState(() {}));
   }
 
   @override
   void dispose() {
-    _turn.dispose();
     _model.dispose();
     _focus.dispose();
     super.dispose();
   }
 
-  /// the front picture goes behind the last one
-  void _next() {
-    setState(() => _order.add(_order.removeAt(0)));
-    _restart();
-  }
-
-  void _prev() {
-    setState(() => _order.insert(0, _order.removeLast()));
-    _restart();
-  }
-
-  void _restart() {
-    if (_chosen == null) _turn.forward(from: 0);
-  }
-
-  void _pick() {
-    final v = _order.first;
-    _turn.stop();
-    setState(() {
-      _chosen = v;
-      _why = false;
-    });
-    if (_hasModel(v)) _focus.requestFocus();
+  void _pick(Vehicle v) {
+    setState(() => _chosen = v);
+    if (_hasModel(v)) {
+      _focus.requestFocus();
+    } else {
+      _focus.unfocus();
+    }
   }
 
   bool get _ready => _chosen != null && (!_hasModel(_chosen!) || _model.text.trim().isNotEmpty);
@@ -451,275 +413,78 @@ class _VehicleStepState extends State<_VehicleStep> with SingleTickerProviderSta
     if (mounted) Navigator.pop(context);
   }
 
-  Widget _arrow(IconData icon, VoidCallback onTap) => Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 2),
-        child: Material(
-          color: Colors.white,
-          shape: const CircleBorder(),
-          elevation: 2,
-          shadowColor: const Color(0x330F1E24),
-          child: InkWell(
-            customBorder: const CircleBorder(),
-            onTap: onTap,
-            child: SizedBox(width: 30, height: 30, child: Icon(icon, size: 22, color: AppColors.ink)),
-          ),
-        ),
-      );
-
   static String _example(Vehicle v) => switch (v) {
-        Vehicle.ebike => 'e.g. Rad Power RadCity',
-        Vehicle.scooter => 'e.g. Segway Ninebot Max',
-        Vehicle.moped => 'e.g. Vespa Primavera',
-        Vehicle.moto => 'e.g. Honda CB500',
+        Vehicle.ebike => 'Model, e.g. RadCity',
+        Vehicle.scooter => 'Model, e.g. Ninebot Max',
+        Vehicle.moped => 'Model, e.g. Vespa',
+        Vehicle.moto => 'Model, e.g. Honda CB500',
         Vehicle.bike => '',
       };
 
-  Widget _picture(Vehicle v) => DecoratedBox(
-        decoration: const BoxDecoration(
-          gradient: RadialGradient(radius: 0.9, colors: [Colors.white, Color(0xFFEEF1F3)]),
+  static String _short(Vehicle v) => v == Vehicle.moto ? 'Moto' : v.label;
+
+  Widget _tile(Vehicle v) {
+    final on = v == _chosen;
+    return Expanded(
+      child: GestureDetector(
+        onTap: () => _pick(v),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 180),
+          margin: const EdgeInsets.symmetric(horizontal: 2.5),
+          padding: const EdgeInsets.fromLTRB(2, 8, 2, 6),
+          decoration: BoxDecoration(
+            color: on ? Colors.white : AppColors.paper,
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(color: on ? AppColors.blue : Colors.transparent, width: 2),
+            boxShadow: [if (on) const BoxShadow(color: Color(0x2E2F6FDC), blurRadius: 12, offset: Offset(0, 4))],
+          ),
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            SizedBox(height: 40, child: Image.asset(v.asset, fit: BoxFit.contain)),
+            const SizedBox(height: 4),
+            Text(_short(v),
+                maxLines: 1,
+                overflow: TextOverflow.fade,
+                softWrap: false,
+                style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800)),
+          ]),
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(22),
-          child: Center(child: Image.asset(v.asset, fit: BoxFit.contain)),
-        ),
-      );
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     final chosen = _chosen;
-    const cardW = 184.0, cardH = 176.0, step = 12.0;
+    final finish = _pill('Finish', _ready ? AppColors.blue : const Color(0xFFD5E0F5), Colors.white, _ready ? _finish : null);
     return _Card(
-      badge: SvgPicture.asset('assets/brand/logo_m.svg', width: 40, height: 40),
       children: [
-        const Text('What do you ride?', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
-        const SizedBox(height: 12),
-        // the deck: pictures one over the other, the front one slides behind the last.
-        // Picked: the picture stays as it is, with a check mark; the others go away.
-        Container(
-          padding: const EdgeInsets.fromLTRB(6, 12, 6, 8),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(24),
-            gradient: chosen == null
-                ? const LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [Color(0xFFF4F7F9), Color(0xFFE6EEF8)],
-                  )
-                : null,
-          ),
-          child: Column(mainAxisSize: MainAxisSize.min, children: [
-        Row(mainAxisSize: MainAxisSize.min, children: [
-          if (chosen == null) _arrow(Icons.chevron_left_rounded, _prev),
-        SizedBox(
-          height: chosen == null ? cardH + 4 * step * 0.85 : cardH,
-          width: cardW + 4 * step,
-          child: Stack(clipBehavior: Clip.none, children: [
-            for (var k = _order.length - 1; k >= 0; k--)
-              AnimatedPositioned(
-                key: ValueKey(_order[k]),
-                duration: const Duration(milliseconds: 650),
-                curve: Curves.easeInOutCubic,
-                left: chosen != null ? 2 * step : k * step,
-                top: chosen != null ? 0 : k * step * 0.85,
-                width: cardW,
-                height: cardH,
-                child: AnimatedScale(
-                  scale: chosen != null ? 1 : 1 - k * 0.035,
-                  alignment: Alignment.topLeft,
-                  duration: const Duration(milliseconds: 650),
-                  curve: Curves.easeInOutCubic,
-                  child: AnimatedOpacity(
-                    opacity: chosen != null ? (k == 0 ? 1 : 0) : (k > 3 ? 0.0 : 1 - k * 0.07),
-                    duration: const Duration(milliseconds: 400),
-                    child: GestureDetector(
-                      // tap the front one to pick it; tap it again to pick another
-                      onTap: k == 0
-                          ? (chosen == null
-                              ? _pick
-                              : () {
-                                  setState(() {
-                                    _chosen = null;
-                                    _why = false;
-                                    _focus.unfocus();
-                                  });
-                                  _restart();
-                                })
-                          : null,
-                      onHorizontalDragEnd: k == 0 && chosen == null
-                          ? (d) {
-                              if ((d.primaryVelocity ?? 0) < 0) {
-                                _next();
-                              } else {
-                                _prev();
-                              }
-                            }
-                          : null,
-                      child: Stack(clipBehavior: Clip.none, children: [
-                        Positioned.fill(
-                          child: AnimatedContainer(
-                            duration: const Duration(milliseconds: 250),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(22),
-                              border: Border.all(
-                                  color: chosen != null && k == 0 ? AppColors.blue : const Color(0xFFE3E8EA),
-                                  width: chosen != null && k == 0 ? 2 : 1.2),
-                              boxShadow: [
-                                if (k == 0)
-                                  const BoxShadow(color: Color(0x1A0F1E24), blurRadius: 16, offset: Offset(0, 8)),
-                              ],
-                            ),
-                            clipBehavior: Clip.antiAlias,
-                            child: _picture(_order[k]),
-                          ),
-                        ),
-                        if (chosen != null && k == 0)
-                          Positioned(
-                            right: -8,
-                            top: -8,
-                            child: Container(
-                              width: 30,
-                              height: 30,
-                              decoration: BoxDecoration(
-                                color: AppColors.blue,
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.white, width: 2.5),
-                              ),
-                              child: const Icon(Icons.check_rounded, color: Colors.white, size: 18),
-                            ),
-                          ),
-                      ]),
-                    ),
-                  ),
-                ),
-              ),
-          ]),
+        const Padding(
+          padding: EdgeInsets.only(bottom: 10),
+          child: Text('What do you ride?', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w800)),
         ),
-          if (chosen == null) _arrow(Icons.chevron_right_rounded, _next),
-        ]),
-        // dots: one per picture; the one in front fills up until the next picture comes
-        if (chosen == null) ...[
-          const SizedBox(height: 10),
-          AnimatedBuilder(
-            animation: _turn,
-            builder: (_, __) => Row(mainAxisSize: MainAxisSize.min, children: [
-              for (final v in _all)
-                AnimatedContainer(
-                  duration: const Duration(milliseconds: 250),
-                  margin: const EdgeInsets.symmetric(horizontal: 3),
-                  width: v == _order.first ? 22 : 7,
-                  height: 7,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFCBD5DA),
-                    borderRadius: BorderRadius.circular(4),
-                  ),
-                  clipBehavior: Clip.antiAlias,
-                  alignment: Alignment.centerLeft,
-                  child: v == _order.first
-                      ? FractionallySizedBox(
-                          widthFactor: _turn.value.clamp(0.0, 1.0),
-                          heightFactor: 1,
-                          child: const ColoredBox(color: AppColors.blue),
-                        )
-                      : null,
-                ),
-            ]),
-          ),
-          const SizedBox(height: 6),
-          const Text('Tap the picture to choose', style: TextStyle(fontSize: 11.5, color: AppColors.soft)),
-        ],
-          ]),
-        ),
-        // picked: the model and the i under it (not for a bike)
-        if (chosen != null && _hasModel(chosen)) ...[
-          const SizedBox(height: 14),
+        Row(children: [for (final v in _all) _tile(v)]),
+        const SizedBox(height: 10),
+        if (chosen == null)
+          const Padding(
+            padding: EdgeInsets.symmetric(vertical: 6),
+            child: Text('Tap your vehicle',
+                textAlign: TextAlign.center, style: TextStyle(fontSize: 12, color: AppColors.soft, fontWeight: FontWeight.w600)),
+          )
+        else if (_hasModel(chosen))
+          // the model helps us show the right plugs and services; Finish lights up once it is typed
           Row(children: [
             Expanded(
-              child: TextField(
-                controller: _model,
-                focusNode: _focus,
-                textInputAction: TextInputAction.done,
-                onSubmitted: (_) {
-                  if (_ready) _finish();
-                },
-                style: const TextStyle(fontSize: 14.5, fontWeight: FontWeight.w600),
-                decoration: InputDecoration(
-                  hintText: _example(chosen),
-                  isDense: true,
-                  filled: true,
-                  fillColor: AppColors.paper,
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
-                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
-                ),
-              ),
-            ),
+                child: _input(_model, _example(chosen), TextInputType.text, focus: _focus, onDone: () {
+              if (_ready) _finish();
+            })),
             const SizedBox(width: 8),
-            InkWell(
-              customBorder: const CircleBorder(),
-              onTap: () => setState(() => _why = !_why),
-              child: Container(
-                width: 32,
-                height: 32,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(color: AppColors.blue, width: 1.6),
-                  color: _why ? AppColors.blue : Colors.white,
-                ),
-                alignment: Alignment.center,
-                child: Text('i',
-                    style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w800,
-                        fontStyle: FontStyle.italic,
-                        color: _why ? Colors.white : AppColors.blue)),
-              ),
-            ),
-          ]),
-          if (_why)
-            Container(
-              margin: const EdgeInsets.only(top: 10),
-              decoration: BoxDecoration(
-                color: const Color(0xFFEAF1FD),
-                borderRadius: BorderRadius.circular(14),
-                border: Border.all(color: const Color(0xFFC9DAF8)),
-              ),
-              clipBehavior: Clip.antiAlias,
-              child: CustomPaint(
-                painter: _Hatch(),
-                child: const Padding(
-                  padding: EdgeInsets.all(12),
-                  child: Text(
-                    'The model helps us show the right charging plugs, GPS settings and service '
-                    'suggestions, and connect you better with the shops and services in your city.',
-                    style: TextStyle(fontSize: 12.5, color: AppColors.primary, height: 1.4),
-                  ),
-                ),
-              ),
-            ),
-        ],
-        const SizedBox(height: 14),
-        // Finish: lights up once the model is typed (a bike needs none)
-        if (chosen != null) _pill('Finish', _ready ? AppColors.blue : const Color(0xFFD5E0F5), Colors.white, _ready ? _finish : null),
-        const SizedBox(height: 10),
+            finish,
+          ])
+        else
+          finish,
       ],
     );
   }
-}
-
-/// Fine diagonal lines on the blue note.
-class _Hatch extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    final p = Paint()
-      ..color = const Color(0x142F6FDC)
-      ..strokeWidth = 1;
-    for (double x = -size.height; x < size.width; x += 9) {
-      canvas.drawLine(Offset(x, size.height), Offset(x + size.height, 0), p);
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
 
 /// The Google "G" in its four colours (drawn, no image file).

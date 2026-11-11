@@ -8,6 +8,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mobility/theme.dart';
 import 'package:mobility/widgets/city_splash.dart';
+import 'package:mobility/widgets/signup.dart';
 
 Future<void> _fonts() async {
   final root = Platform.environment['FLUTTER_ROOT'] ?? '';
@@ -102,5 +103,15 @@ void main() {
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/loading1.png'));
     await t.pump(const Duration(milliseconds: 500));
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/loading2.png'));
+  });
+
+  testWidgets('sign-in sheet', (t) async {
+    await t.runAsync(_fonts);
+    t.view.physicalSize = const Size(1080, 2400);
+    t.view.devicePixelRatio = 1;
+    await t.pumpWidget(_phone(const ColoredBox(
+        color: Color(0xFFDDE5E9), child: Align(alignment: Alignment.bottomCenter, child: SignInCard()))));
+    await t.pump(const Duration(milliseconds: 400));
+    await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/signin.png'));
   });
 }
