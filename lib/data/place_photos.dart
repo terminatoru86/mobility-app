@@ -21,45 +21,66 @@ class PlacePhoto {
 
 final Map<String, Future<List<PlacePhoto>>> _found = {};
 
-/// Open street photos in which the place itself is in view (not just the street next to it):
+/// Open, free photos in which the place itself is in view (not just the street next to it):
 ///  1. Mapillary photos in which a bike rack was recognised right there (racks and parking);
-///  2. Mapillary photos taken 4–40 m away with the camera turned towards the place;
+///  2. Mapillary and Panoramax street photos taken 4–40 m away with the camera turned towards the place;
 ///  3. photos on Wikimedia Commons taken within 30 m.
-/// Faces and number plates in Mapillary photos are blurred by Mapillary. Empty when nothing looks at the place.
+/// Shops, service, rent and BMX places change often: for them only photos from 2024 on.
+/// For every kind the newer photo wins. Faces and number plates in street photos are blurred by
+/// their source. Empty when nothing looks at the place.
 Future<List<PlacePhoto>> photosLookingAt(Place p) => _found[p.id] ??= _look(p);
 
 const _d = Distance();
+
+/// Kinds of place whose look changes often: only photos from 2024 on.
+bool _wantsRecent(PlaceType t) =>
+    t == PlaceType.shop || t == PlaceType.service || t == PlaceType.rent || t == PlaceType.bmx;
+
+final _y2024 = DateTime.utc(2024);
 
 Future<List<PlacePhoto>> _look(Place p) async {
   final out = <PlacePhoto>[];
   try {
     final rackish = p.type.group == 'Parking';
+    final since = _wantsRecent(p.type) ? _y2024 : null;
     final res = await Future.wait([
-      _near(p.pos),
+      _near(p.pos, since),
       rackish ? _rackImages(p.pos) : Future.value(const <String>{}),
-      _commons(p.pos),
+      _commons(p.pos, since),
+      _panoramax(p.pos, since),
     ]);
     var imgs = res[0] as List<Map<String, dynamic>>;
     final rackIds = res[1] as Set<String>;
     final missing = rackIds.difference({for (final e in imgs) '${e['id']}'});
     if (missing.isNotEmpty) imgs = [...imgs, ...await _byIds(missing.take(12))];
 
-    final scored = <(double, LatLng, String)>[];
+    // every street photo as: where the camera stood, where it looked, when, the picture
+    final shots = <(LatLng, double, DateTime?, String, String, bool)>[
+      ...res[3] as List<(LatLng, double, DateTime?, String, String, bool)>,
+    ];
     for (final e in imgs) {
       final url = e['thumb_1024_url'];
       final g = (e['computed_geometry'] as Map?)?['coordinates'] as List?;
       final head = ((e['computed_compass_angle'] ?? e['compass_angle']) as num?)?.toDouble();
       if (url == null || g == null || g.length < 2 || head == null) continue;
       if (e['is_pano'] == true) continue; // a flattened 360° picture shows the place bent
-      final cam = LatLng((g[1] as num).toDouble(), (g[0] as num).toDouble());
+      final at = e['captured_at'] is num ? DateTime.fromMillisecondsSinceEpoch((e['captured_at'] as num).toInt(), isUtc: true) : null;
+      shots.add((LatLng((g[1] as num).toDouble(), (g[0] as num).toDouble()), head, at, '$url', 'Mapillary',
+          rackIds.contains('${e['id']}')));
+    }
+
+    final now = DateTime.now().toUtc();
+    final scored = <(double, LatLng, String, String)>[];
+    for (final (cam, head, at, url, credit, rack) in shots) {
+      if (since != null && (at == null || at.isBefore(since))) continue;
       final m = _d(cam, p.pos);
       // how far the camera is turned away from the place
       var off = ((_d.bearing(cam, p.pos) - head) % 360).abs();
       if (off > 180) off = 360 - off;
-      final rack = rackIds.contains('${e['id']}');
       if (m < 4 || m > (rack ? 45 : 40) || off > (rack ? 45 : 30)) continue;
-      // best: looking straight at it from about 12 m; a recognised rack counts for a lot
-      scored.add((off + (m - 12).abs() * 1.2 - (rack ? 25 : 0), cam, '$url'));
+      // best: looking straight at it from about 12 m; a recognised rack counts for a lot; newer wins
+      final years = at == null ? 6.0 : now.difference(at).inDays / 365;
+      scored.add((off + (m - 12).abs() * 1.2 - (rack ? 25 : 0) + years * 4, cam, url, credit));
     }
     scored.sort((a, b) => a.$1.compareTo(b.$1));
     final kept = <LatLng>[];
@@ -67,7 +88,7 @@ Future<List<PlacePhoto>> _look(Place p) async {
       if (kept.length >= 3) break;
       if (kept.any((k) => _d(k, s.$2) < 5)) continue; // not the same view twice
       kept.add(s.$2);
-      out.add(PlacePhoto(s.$3, 'Mapillary'));
+      out.add(PlacePhoto(s.$3, s.$4));
     }
     out.addAll(res[2] as List<PlacePhoto>);
   } catch (e) {
@@ -91,9 +112,14 @@ Future<List<Map<String, dynamic>>> _get(Map<String, String> q, String path) asyn
   return ((jsonDecode(r.body) as Map<String, dynamic>)['data'] as List? ?? []).cast<Map<String, dynamic>>();
 }
 
-Future<List<Map<String, dynamic>>> _near(LatLng p) async {
+Future<List<Map<String, dynamic>>> _near(LatLng p, DateTime? since) async {
   try {
-    return await _get({'fields': _fields, 'bbox': _bbox(p, 45), 'limit': '80'}, '/images');
+    return await _get({
+      'fields': _fields,
+      'bbox': _bbox(p, 45),
+      'limit': '80',
+      if (since != null) 'start_captured_at': since.toIso8601String(),
+    }, '/images');
   } catch (_) {
     return const [];
   }
@@ -128,7 +154,8 @@ Future<Set<String>> _rackImages(LatLng p) async {
 }
 
 /// Photos on Wikimedia Commons taken within 30 m (free licences; the author is on the photo's page).
-Future<List<PlacePhoto>> _commons(LatLng p) async {
+/// With [since]: only photos taken (or, when the date is missing, uploaded) from then on. Newest first.
+Future<List<PlacePhoto>> _commons(LatLng p, DateTime? since) async {
   try {
     final r = await http
         .get(Uri.https('commons.wikimedia.org', '/w/api.php', {
@@ -139,21 +166,59 @@ Future<List<PlacePhoto>> _commons(LatLng p) async {
           'ggscoord': '${p.latitude}|${p.longitude}',
           'ggsradius': '30',
           'ggsnamespace': '6',
-          'ggslimit': '6',
+          'ggslimit': '10',
           'prop': 'imageinfo',
-          'iiprop': 'url|mime',
+          'iiprop': 'url|mime|timestamp|extmetadata',
+          'iiextmetadatafilter': 'DateTimeOriginal',
           'iiurlwidth': '800',
         }))
         .timeout(const Duration(seconds: 12));
     if (r.statusCode != 200) return const [];
     final pages = ((jsonDecode(r.body) as Map<String, dynamic>)['query'] as Map?)?['pages'] as Map? ?? const {};
-    return [
-      for (final pg in pages.values)
-        if (pg is Map && pg['imageinfo'] is List && (pg['imageinfo'] as List).isNotEmpty)
-          if ('${(pg['imageinfo'] as List).first['mime']}' == 'image/jpeg' &&
-              (pg['imageinfo'] as List).first['thumburl'] != null)
-            PlacePhoto('${(pg['imageinfo'] as List).first['thumburl']}', 'Wikimedia Commons'),
-    ].take(2).toList();
+    final found = <(DateTime, String)>[];
+    for (final pg in pages.values) {
+      if (pg is! Map || pg['imageinfo'] is! List || (pg['imageinfo'] as List).isEmpty) continue;
+      final ii = (pg['imageinfo'] as List).first as Map;
+      if ('${ii['mime']}' != 'image/jpeg' || ii['thumburl'] == null) continue;
+      final taken = '${((ii['extmetadata'] as Map?)?['DateTimeOriginal'] as Map?)?['value'] ?? ''}';
+      final year = RegExp(r'(19|20)\d\d').firstMatch(taken)?.group(0);
+      final at = year != null
+          ? DateTime.utc(int.parse(year), 12, 31)
+          : (DateTime.tryParse('${ii['timestamp'] ?? ''}') ?? DateTime.utc(2000));
+      if (since != null && at.isBefore(since)) continue;
+      found.add((at, '${ii['thumburl']}'));
+    }
+    found.sort((a, b) => b.$1.compareTo(a.$1));
+    return [for (final f in found.take(2)) PlacePhoto(f.$2, 'Wikimedia Commons')];
+  } catch (_) {
+    return const [];
+  }
+}
+
+/// Street photos on Panoramax (the open, free street-photo commons) around the place:
+/// where the camera stood, where it looked, when, the picture.
+Future<List<(LatLng, double, DateTime?, String, String, bool)>> _panoramax(LatLng p, DateTime? since) async {
+  try {
+    final r = await http
+        .get(Uri.https('api.panoramax.xyz', '/api/search', {'bbox': _bbox(p, 45), 'limit': '40'}))
+        .timeout(const Duration(seconds: 12));
+    if (r.statusCode != 200) return const [];
+    final feats = ((jsonDecode(utf8.decode(r.bodyBytes)) as Map<String, dynamic>)['features'] as List? ?? const []);
+    final out = <(LatLng, double, DateTime?, String, String, bool)>[];
+    for (final f in feats.whereType<Map>()) {
+      final g = (f['geometry'] as Map?)?['coordinates'] as List?;
+      final pr = f['properties'] as Map? ?? const {};
+      final head = (pr['view:azimuth'] as num?)?.toDouble();
+      final fov = (pr['pers:interior_orientation'] as Map?)?['field_of_view'] as num?;
+      final assets = f['assets'] as Map? ?? const {};
+      final url = ((assets['sd'] ?? assets['thumb']) as Map?)?['href'];
+      if (g == null || g.length < 2 || head == null || url == null) continue;
+      if (fov != null && fov >= 300) continue; // 360° pictures
+      final at = DateTime.tryParse('${pr['datetime'] ?? ''}');
+      if (since != null && (at == null || at.isBefore(since))) continue;
+      out.add((LatLng((g[1] as num).toDouble(), (g[0] as num).toDouble()), head, at?.toUtc(), '$url', 'Panoramax', false));
+    }
+    return out;
   } catch (_) {
     return const [];
   }
