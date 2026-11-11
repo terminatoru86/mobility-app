@@ -476,6 +476,14 @@ class OpenDataService {
         final renting = x == null || x['is_renting'] == null || x['is_renting'] == 1 || x['is_renting'] == true;
         final pos = LatLng(lat, lon);
         final m = d(userPos, pos);
+        // scooters parked at the station: their own number, or counted from the list by vehicle type
+        var scooters = (x?['num_scooters_available'] as num?)?.toInt() ?? 0;
+        if (scooters == 0 && x?['vehicle_types_available'] is List) {
+          for (final t in (x!['vehicle_types_available'] as List).whereType<Map>()) {
+            if ('${t['vehicle_type_id']}'.toLowerCase().contains('scooter')) scooters += (t['count'] as num?)?.toInt() ?? 0;
+          }
+        }
+        final classic = math.max(0, bikes - ebikes);
         final accepts = ebikes > 0 ? const [Vehicle.bike, Vehicle.ebike] : const [Vehicle.bike];
         out['sta/${s.url}/$id'] = Place(
           id: 'gbfs/${s.name}/$id',
@@ -490,6 +498,7 @@ class OpenDataService {
           etaMin: {for (final v in accepts) v: etaMinutes(m, v)},
           operatorName: op,
           osm: true,
+          share: ShareInfo(ebikes: ebikes, classic: classic, scooters: scooters, docks: docks),
           facts: [
             '$bikes available now',
             if (ebikes > 0) '$ebikes e-bikes',
@@ -528,6 +537,14 @@ class OpenDataService {
           etaMin: {vehicle: etaMinutes(m, vehicle)},
           operatorName: op,
           osm: true,
+          share: ShareInfo(
+            street: true,
+            ebikes: scooter ? 0 : 1,
+            scooters: scooter ? 1 : 0,
+            battery: batt == null ? null : (batt <= 1 ? batt * 100 : batt).round(),
+            rangeM: (v['current_range_meters'] as num?)?.toDouble(),
+            code: _code(v['vehicle_id'] ?? v['bike_id']),
+          ),
           facts: [
             if (batt != null) 'Battery ${(batt <= 1 ? batt * 100 : batt).round()}%',
             'Live · ${s.name}',
@@ -536,6 +553,12 @@ class OpenDataService {
       }
     }
     return out;
+  }
+
+  /// A short id people can match with the one printed on the vehicle; long random ids are not shown.
+  static String? _code(dynamic id) {
+    final t = '${id ?? ''}';
+    return t.isEmpty || t.length > 10 ? null : t;
   }
 
   static String? _text(dynamic n) {

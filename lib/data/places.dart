@@ -171,6 +171,33 @@ class Operator {
   const Operator(this.name, this.price, this.inArea);
 }
 
+/// Live ride-share numbers of a place.
+/// A station (hub): how many of each kind it holds and how many docks are open.
+/// One vehicle left on the street ([street]): what it is, its battery and range.
+class ShareInfo {
+  final bool street;
+  final int ebikes, classic, scooters;
+  final int? docks;
+  final int? battery; // percent, street vehicles
+  final double? rangeM; // metres it can still ride
+  final String? code; // the vehicle's short id, as printed on it
+  const ShareInfo({
+    this.street = false,
+    this.ebikes = 0,
+    this.classic = 0,
+    this.scooters = 0,
+    this.docks,
+    this.battery,
+    this.rangeM,
+    this.code,
+  });
+
+  int get total => ebikes + classic + scooters;
+
+  /// what a street vehicle is
+  Vehicle get vehicle => scooters > 0 ? Vehicle.scooter : (ebikes > 0 ? Vehicle.ebike : Vehicle.bike);
+}
+
 class Place {
   final String id;
   final PlaceType type;
@@ -200,6 +227,7 @@ class Place {
   final String? website;
   final List<String> photos; // real photos (OpenStreetMap image / Wikimedia Commons / Panoramax)
   final List<String> offers; // what a service / shop / rent / wash / BMX place does, from the map data
+  final ShareInfo? share; // ride share, live: what a station holds, or one vehicle on the street
 
   const Place({
     required this.id,
@@ -230,6 +258,7 @@ class Place {
     this.website,
     this.photos = const [],
     this.offers = const [],
+    this.share,
   });
 
   Status get shownStatus => type.isNeutral ? Status.neutral : status;
@@ -241,7 +270,7 @@ class Place {
         age: newAge, accepts: accepts, distance: distance, etaMin: etaMin, hours: hours, phone: phone,
         rating: rating, reviewCount: reviewCount, reviews: reviews, security: security, qa: qa, tag: tag,
         tools: tools, busy: busy, priceNow: priceNow, operatorName: operatorName, operatorPrice: operatorPrice,
-        osm: osm, facts: facts, website: website, photos: photos,
+        osm: osm, facts: facts, website: website, photos: photos, share: share,
       );
 }
 

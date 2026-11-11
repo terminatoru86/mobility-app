@@ -21,6 +21,9 @@ import '../widgets/guide.dart';
 import '../widgets/status_scale.dart';
 import '../widgets/pin.dart';
 import '../widgets/place_sheet.dart';
+import '../widgets/share_pin.dart';
+import '../widgets/share_sheet.dart';
+import 'walk_screen.dart';
 import '../widgets/signup.dart';
 import '../widgets/tiles.dart';
 import 'map_extras.dart';
@@ -60,10 +63,21 @@ class MapScreenState extends State<MapScreen> {
 
   void _toggleFilter(String f) {
     _filtersTouched = true;
+    // Sharing stands alone: picking it switches the others off, picking another one switches it off
+    if (f == 'Sharing') {
+      final on = _shareOnly;
+      _picked.clear();
+      if (!on) _picked.add(f);
+      return;
+    }
+    _picked.remove('Sharing');
     if (!_picked.remove(f)) _picked.add(f);
     // all of them on is the same as none: show everything
     if (_picked.length == kFilterChips.length) _picked.clear();
   }
+
+  /// only ride share on the map: its own pins (hubs with numbers, street vehicles with their battery)
+  bool get _shareOnly => _picked.length == 1 && _picked.contains('Sharing');
   String? _selected;
   bool _showGuide = false;
   bool _weatherFace = false;
@@ -370,6 +384,13 @@ class MapScreenState extends State<MapScreen> {
   }
 
   /// Trip: choose the route, then GO for the GPS guidance.
+  /// To a shared bike or scooter you walk: a simple screen, no turn-by-turn.
+  Future<void> _walkTo(Place p) async {
+    if (Store.i.zones.isNotEmpty && !Store.i.unlockedAt(p.pos)) return _unlockHere(p.pos, null);
+    await Navigator.of(context).push(MaterialPageRoute(builder: (_) => WalkScreen(place: p)));
+    if (mounted) setState(() {});
+  }
+
   Future<void> _trip(Place p) async {
     if (Store.i.zones.isNotEmpty && !Store.i.unlockedAt(p.pos)) return _unlockHere(p.pos, null);
     await startTrip(
@@ -649,6 +670,12 @@ class MapScreenState extends State<MapScreen> {
       await widget.state.setSharingChosen();
       if (!mounted) return;
     }
+    if (p.share != null) {
+      // live ride share: its own low sheet (what is available), then a simple walk there
+      await showShareSheet(context, p, onWalk: () => _walkTo(p));
+      if (mounted) setState(() => _selected = null);
+      return;
+    }
     await showPlaceSheet(
       context,
       p,
@@ -840,7 +867,7 @@ class MapScreenState extends State<MapScreen> {
       }
 
       inside.sort((x, y) => x.id == _selected ? -1 : (y.id == _selected ? 1 : d2(x).compareTo(d2(y))));
-      const gapPx = 30.0;
+      final gapPx = _shareOnly ? 44.0 : 30.0; // the share pills are wider than a pin
       final cellLat = gapPx * pxM / 110540;
       final cellLng = gapPx * pxM / (111320 * math.cos(c.latitude * math.pi / 180));
       final taken = <int>{};
@@ -1021,7 +1048,23 @@ class MapScreenState extends State<MapScreen> {
   PinDetail get _detail => _zoom >= 15 ? PinDetail.full : (_zoom >= 14 ? PinDetail.glyph : PinDetail.count);
   bool _onScreen(LatLng p) => _screen == null || _screen!.contains(p);
 
-  Marker _pinMarker(Place p) => Marker(
+  Marker _pinMarker(Place p) => _shareOnly && p.share != null ? _shareMarker(p) : _plainMarker(p);
+
+  Marker _shareMarker(Place p) {
+    final compact = _zoom < 15.5;
+    return Marker(
+      point: p.pos,
+      width: SharePin.widthFor(p, compact: compact),
+      height: SharePin.height,
+      alignment: Alignment.topCenter,
+      child: GestureDetector(
+        onTap: () => _openPlace(p),
+        child: SharePin(place: p, selected: _selected == p.id, compact: compact),
+      ),
+    );
+  }
+
+  Marker _plainMarker(Place p) => Marker(
         point: p.pos,
         width: PlacePin.width,
         height: PlacePin.height,

@@ -8,6 +8,10 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mobility/theme.dart';
 import 'package:mobility/widgets/city_splash.dart';
+import 'package:latlong2/latlong.dart';
+import 'package:mobility/data/places.dart';
+import 'package:mobility/widgets/share_pin.dart';
+import 'package:mobility/widgets/share_sheet.dart';
 import 'package:mobility/widgets/signup.dart';
 
 Future<void> _fonts() async {
@@ -23,6 +27,11 @@ Future<void> _fonts() async {
     }
   }
   await l.load();
+  final icons = File('${dir.path}/MaterialIcons-Regular.otf');
+  if (icons.existsSync()) {
+    final b = icons.readAsBytesSync();
+    await (FontLoader('MaterialIcons')..addFont(Future.value(ByteData.view(b.buffer)))).load();
+  }
 }
 
 Widget _phone(Widget child) => MaterialApp(
@@ -113,5 +122,48 @@ void main() {
         color: Color(0xFFDDE5E9), child: Align(alignment: Alignment.bottomCenter, child: SignInCard()))));
     await t.pump(const Duration(milliseconds: 400));
     await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/signin.png'));
+  });
+
+  Place share(String name, ShareInfo i, {Status st = Status.free}) => Place(
+      id: name,
+      type: PlaceType.sharing,
+      address: name,
+      pos: const LatLng(41.885, -87.63),
+      status: st,
+      distance: '300 m',
+      etaMin: const {},
+      operatorName: 'Divvy',
+      share: i);
+
+  testWidgets('ride share: pins and the two sheets', (t) async {
+    await t.runAsync(_fonts);
+    t.view.physicalSize = const Size(1080, 2400);
+    t.view.devicePixelRatio = 1;
+    final hub = share('Clark St & Lake St', const ShareInfo(ebikes: 4, classic: 7, scooters: 2, docks: 6));
+    final pins = [
+      hub,
+      share('b', const ShareInfo(ebikes: 3, classic: 5, docks: 2)),
+      share('c', const ShareInfo(classic: 9, docks: 2)),
+      share('d', const ShareInfo(docks: 15), st: Status.full),
+      share('Divvy e-bike', const ShareInfo(street: true, ebikes: 1, battery: 82, rangeM: 21000, code: '4471')),
+      share('f', const ShareInfo(street: true, scooters: 1, battery: 35)),
+      share('g', const ShareInfo(street: true, scooters: 1, battery: 9)),
+    ];
+    await t.pumpWidget(_phone(ColoredBox(
+      color: const Color(0xFFDDE5E9),
+      child: Column(children: [
+        const SizedBox(height: 60),
+        Wrap(spacing: 14, runSpacing: 20, alignment: WrapAlignment.center, children: [
+          for (final p in pins) SharePin(place: p),
+          SharePin(place: hub, compact: true),
+        ]),
+        const Spacer(),
+        ShareSheetCard(place: pins[4], onWalk: () {}),
+        const SizedBox(height: 16),
+        ShareSheetCard(place: hub, onWalk: () {}),
+      ]),
+    )));
+    await t.pump(const Duration(milliseconds: 400));
+    await expectLater(find.byKey(const ValueKey('shot')), matchesGoldenFile('out/share.png'));
   });
 }
