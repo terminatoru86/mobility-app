@@ -244,10 +244,10 @@ class _PlaceSheetState extends State<PlaceSheet> {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(22),
         child: BackdropFilter(
-          filter: ui.ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+          filter: ui.ImageFilter.blur(sigmaX: 9, sigmaY: 9),
           child: Container(
             decoration: BoxDecoration(
-              color: Color.lerp(c.tint, Colors.white, 0.5)!.withValues(alpha: 0.84),
+              color: Color.lerp(c.tint, Colors.white, 0.5)!.withValues(alpha: 0.78),
               borderRadius: BorderRadius.circular(22),
               border: Border.all(color: c.main, width: 2),
             ),

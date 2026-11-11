@@ -17,6 +17,7 @@ import '../data/weather.dart';
 import '../data/zones.dart';
 import '../theme.dart';
 import '../widgets/cluster.dart';
+import '../widgets/glass.dart';
 import '../widgets/guide.dart';
 import '../widgets/status_scale.dart';
 import '../widgets/pin.dart';
@@ -1300,8 +1301,8 @@ class MapScreenState extends State<MapScreen> {
       // spotlight target for the "how to read pins" step
       Positioned(left: 20, top: top + 160, child: SizedBox(key: _kPins, width: 70, height: 80)),
       Positioned(
-        left: 12,
-        right: 12,
+        left: kEdge,
+        right: kEdge,
         top: top + 8,
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           _searchBar(),
@@ -1348,23 +1349,25 @@ class MapScreenState extends State<MapScreen> {
           child: _destCard(),
         ),
       Positioned(
-          right: 14,
-          bottom: (_dest != null ? (_destRack != null ? 160 : 112) : 24) + StatusScale.height,
+          right: kEdge,
+          bottom: (_dest != null ? (_destRack != null ? 160 : 112) : 16) + StatusScale.height,
           child: Column(children: [
             GestureDetector(
               key: _kLocate,
               onDoubleTap: store.nextMapStyle,
-              child: _roundBtn(Icons.my_location, Colors.white, AppColors.ink, _locate),
+              onTap: _locate,
+              child: const Glass(
+                  width: kCtl, height: kCtl, child: Icon(Icons.my_location, size: 22, color: AppColors.ink)),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: kEdge),
             _roundBtn(Icons.add, AppColors.primary, Colors.white, () async {
               await Navigator.of(context).push(MaterialPageRoute(builder: (_) => ReportMenu(pos: userPos)));
             }, key: _kReport),
           ]),
         ),
       Positioned(
-          left: 14,
-          bottom: (_dest != null ? (_destRack != null ? 166 : 118) : 30) + StatusScale.height,
+          left: kEdge,
+          bottom: (_dest != null ? (_destRack != null ? 160 : 112) : 16) + StatusScale.height,
           child: _sosButton()),
       if (_locked)
         Positioned(
@@ -1438,10 +1441,11 @@ class MapScreenState extends State<MapScreen> {
       onTap: active ? Store.i.cancelSos : null,
       child: Stack(clipBehavior: Clip.none, alignment: Alignment.center, children: [
         Container(
-          padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 12),
+          height: kCtl,
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           decoration: BoxDecoration(
             color: AppColors.red,
-            borderRadius: BorderRadius.circular(26),
+            borderRadius: BorderRadius.circular(kCtl / 2),
             boxShadow: [
               BoxShadow(color: AppColors.red.withValues(alpha: 0.25 + _sosProgress * 0.5), blurRadius: 12 + _sosProgress * 16),
             ],
@@ -1507,23 +1511,23 @@ class MapScreenState extends State<MapScreen> {
         ),
       );
 
-  Widget _searchBar() => GestureDetector(
-        onTap: _searching ? null : _startSearch,
-        child: Container(
-          key: _kSearch,
-          height: 54,
-          padding: const EdgeInsets.symmetric(horizontal: 6),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(27),
-            boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 3))],
-          ),
-          child: _searching
-              // typing: only the field (the bike / weather button steps aside for more room)
-              ? Row(children: [
-                  const SizedBox(width: 10),
-                  const Icon(Icons.search, color: AppColors.soft),
-                  const SizedBox(width: 8),
+  /// The search bar: long and slim, glass. Next to it, in its own round button of the same
+  /// height, the weather and your vehicle (they take turns). While typing, the bar takes the
+  /// whole row.
+  Widget _searchBar() => Row(children: [
+        Expanded(
+          child: GestureDetector(
+            onTap: _searching ? null : _startSearch,
+            child: Glass(
+              key: _kSearch,
+              height: kCtl,
+              // typing: nearly solid, so the text is easy to read
+              color: _searching ? const Color(0xF2FFFFFF) : kGlass,
+              padding: const EdgeInsets.only(left: 14, right: 4),
+              child: Row(children: [
+                const Icon(Icons.search, size: 22, color: AppColors.soft),
+                const SizedBox(width: 10),
+                if (_searching) ...[
                   Expanded(
                     child: TextField(
                       controller: _sCtrl,
@@ -1546,62 +1550,74 @@ class MapScreenState extends State<MapScreen> {
                       child: SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2)),
                     ),
                   IconButton(onPressed: _endSearch, icon: const Icon(Icons.close)),
-                ])
-              : Row(children: [
-            GestureDetector(
-              // vehicle side → My vehicle; weather side → rain and wind
-              onTap: () async {
-                if (!_weatherFace) {
-                  await showVehicleStep(context, widget.state, canClose: true);
-                  if (mounted) setState(() {});
-                } else if (_wx != null) {
-                  showWeather(context, _wx!);
-                } else {
-                  _loadWeather();
-                }
-              },
-              child: AnimatedSwitcher(
-                duration: const Duration(milliseconds: 600),
-                transitionBuilder: (c, a) => ScaleTransition(scale: a, child: c),
-                child: Container(
-                  key: ValueKey(_weatherFace),
-                  width: 64,
-                  height: 42,
-                  decoration: BoxDecoration(
-                    color: _weatherFace ? const Color(0xFFE6EEFB) : AppColors.paper,
-                    borderRadius: BorderRadius.circular(21),
-                    border: Border.all(color: _weatherFace ? AppColors.blue : AppColors.slate, width: 1.5),
+                ] else ...[
+                  Expanded(
+                    child: Text(_dest?.title ?? 'Search address or place',
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          color: _dest == null ? AppColors.soft : AppColors.ink,
+                          fontSize: 16,
+                          fontWeight: _dest == null ? FontWeight.w400 : FontWeight.w800,
+                        )),
                   ),
-                  alignment: Alignment.center,
+                  if (_dest != null) IconButton(onPressed: _clearDestination, icon: const Icon(Icons.close)),
+                ],
+              ]),
+            ),
+          ),
+        ),
+        if (!_searching) ...[
+          const SizedBox(width: kEdge),
+          GestureDetector(
+            // vehicle side → My vehicle; weather side → rain and wind
+            onTap: () async {
+              if (!_weatherFace) {
+                await showVehicleStep(context, widget.state, canClose: true);
+                if (mounted) setState(() {});
+              } else if (_wx != null) {
+                showWeather(context, _wx!);
+              } else {
+                _loadWeather();
+              }
+            },
+            child: Stack(clipBehavior: Clip.none, children: [
+              Glass(
+                width: kCtl,
+                height: kCtl,
+                child: AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 600),
+                  transitionBuilder: (c, a) => ScaleTransition(scale: a, child: c),
                   child: _weatherFace
-                      ? Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                          Icon(_wxIcon(), size: 18, color: AppColors.blue),
-                          const SizedBox(width: 3),
+                      ? Column(key: const ValueKey(true), mainAxisAlignment: MainAxisAlignment.center, children: [
+                          Icon(_wxIcon(), size: 19, color: AppColors.blue),
                           Text(_wx == null ? '--°' : '${_wx!.temp.round()}°',
-                              style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.blue)),
+                              style: const TextStyle(
+                                  fontSize: 12, height: 1.05, fontWeight: FontWeight.w800, color: AppColors.blue)),
                         ])
                       : Padding(
-                          padding: const EdgeInsets.all(4),
+                          key: const ValueKey(false),
+                          padding: const EdgeInsets.all(7),
                           child: Image.asset((widget.state.myVehicle ?? Vehicle.bike).asset),
                         ),
                 ),
               ),
-            ),
-            const SizedBox(width: 10),
-            Expanded(
-              child: Text(_dest?.title ?? 'Search address or place',
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    color: _dest == null ? AppColors.soft : AppColors.ink,
-                    fontSize: 16,
-                    fontWeight: _dest == null ? FontWeight.w400 : FontWeight.w800,
-                  )),
-            ),
-            if (_dest != null) IconButton(onPressed: _clearDestination, icon: const Icon(Icons.close)),
-          ]),
-        ),
-      );
+              // the blue dot: rain is on its way
+              if (_wx?.rainInMinutes != null)
+                Positioned(
+                  right: 2,
+                  top: 2,
+                  child: Container(
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                        color: AppColors.blue, shape: BoxShape.circle, border: Border.all(color: Colors.white, width: 2)),
+                  ),
+                ),
+            ]),
+          ),
+        ],
+      ]);
 
   IconData _wxIcon() {
     final s = _wx?.sky ?? 'Cloudy';
@@ -1624,12 +1640,17 @@ class MapScreenState extends State<MapScreen> {
               child: GestureDetector(
                 onTap: () => setState(() => _toggleFilter(f.$1)),
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  height: 38,
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
                   decoration: BoxDecoration(
-                    color: _picked.contains(f.$1) ? AppColors.slateTint : Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: _picked.contains(f.$1) ? AppColors.primary : Colors.transparent, width: 1.5),
-                    boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 2))],
+                    // a step lower than the search bar; the same glass (a little more solid, no blur:
+                    // seven of them side by side would be heavy to draw)
+                    color: _picked.contains(f.$1) ? AppColors.slateTint : const Color(0xD9FFFFFF),
+                    borderRadius: BorderRadius.circular(19),
+                    border: _picked.contains(f.$1)
+                        ? Border.all(color: AppColors.primary, width: 1.5)
+                        : Border.all(color: kGlassLine, width: 0.6),
+                    boxShadow: kGlassShadow,
                   ),
                   child: Row(children: [
                     // groups with several drawings show them in turn, every 2 seconds
@@ -1649,7 +1670,7 @@ class MapScreenState extends State<MapScreen> {
                         ),
                       ),
                     const SizedBox(width: 6),
-                    Text(f.$1, style: const TextStyle(fontWeight: FontWeight.w700)),
+                    Text(f.$1, style: const TextStyle(fontSize: 13.5, fontWeight: FontWeight.w700)),
                   ]),
                 ),
               ),
@@ -1661,11 +1682,11 @@ class MapScreenState extends State<MapScreen> {
         key: key,
         color: bg,
         shape: const CircleBorder(),
-        elevation: 4,
+        elevation: 2,
         child: InkWell(
           customBorder: const CircleBorder(),
           onTap: onTap,
-          child: SizedBox(width: 52, height: 52, child: Icon(i, color: fg)),
+          child: SizedBox(width: kCtl, height: kCtl, child: Icon(i, size: 22, color: fg)),
         ),
       );
 }

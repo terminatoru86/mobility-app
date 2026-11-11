@@ -190,11 +190,15 @@ class _ShellState extends State<Shell> {
     ];
     return Scaffold(
       body: IndexedStack(index: _tab, children: pages),
+      // the main menu: low, icons only, no frame; the page you are on has a small dark pill
       bottomNavigationBar: NavigationBar(
         key: _navKey,
         selectedIndex: _tab,
+        height: 58,
+        labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
         backgroundColor: Colors.white,
-        indicatorColor: AppColors.slateTint,
+        indicatorColor: AppColors.ink,
+        indicatorShape: const StadiumBorder(),
         onDestinationSelected: (i) => setState(() {
           if (i != _tab) closePlaceSheet(); // the place sheet belongs to the map
           if (i == 0 && _tab != 0 && !widget.state.guideDone) {
@@ -204,12 +208,17 @@ class _ShellState extends State<Shell> {
           _tab = i;
         }),
         destinations: const [
+          NavigationDestination(icon: MapTabIcon(), selectedIcon: MapTabIcon(color: Colors.white), label: 'Map'),
           NavigationDestination(
-              icon: MapTabIcon(), selectedIcon: MapTabIcon(color: Color(0xFF2F6FDC)), label: 'Map'),
-          NavigationDestination(icon: Icon(Icons.route_outlined), selectedIcon: Icon(Icons.route), label: 'Routes'),
-          NavigationDestination(icon: Icon(Icons.monitor_heart_outlined), label: 'Health'),
-          NavigationDestination(icon: Icon(Icons.groups_outlined), label: 'Community'),
-          NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: 'Profile'),
+              icon: Icon(Icons.route_outlined), selectedIcon: Icon(Icons.route, color: Colors.white), label: 'Routes'),
+          NavigationDestination(
+              icon: Icon(Icons.monitor_heart_outlined),
+              selectedIcon: Icon(Icons.monitor_heart, color: Colors.white),
+              label: 'Health'),
+          NavigationDestination(
+              icon: Icon(Icons.groups_outlined), selectedIcon: Icon(Icons.groups, color: Colors.white), label: 'Community'),
+          NavigationDestination(
+              icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person, color: Colors.white), label: 'Profile'),
         ],
       ),
     );
