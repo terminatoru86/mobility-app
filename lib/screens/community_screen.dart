@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io' show File;
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -9,8 +10,12 @@ import 'package:qr_flutter/qr_flutter.dart';
 
 import '../data/app_state.dart';
 import '../data/osm.dart' show etaMinutes;
+import '../data/place_photos.dart';
 import '../data/places.dart';
+import '../data/ride_parks.dart';
 import '../theme.dart';
+import '../widgets/pin.dart' show UserDot;
+import '../widgets/place_sheet.dart' show openLink;
 import '../widgets/signup.dart';
 import '../widgets/tiles.dart';
 import 'trip_screen.dart';
@@ -748,58 +753,79 @@ class _RideLiveState extends State<RideLive> {
 
 // ───────────────────────── BMX: kids & family spaces ─────────────────────────
 
-class BmxPlace {
-  final String name, address, hours, phone, tagline;
-  final LatLng pos;
-  final bool open;
-  int likes, dislikes;
-  int vote = 0; // 1 like, -1 dislike
-  BmxPlace(this.name, this.address, this.pos, this.hours, this.open, this.phone, this.tagline, this.likes, this.dislikes);
-}
-
-final _bmx = [
-  BmxPlace('Little Wheels Bike Park', '2045 N Clybourn Ave', const LatLng(41.9180, -87.6560), '8:00–20:00', true,
-      '(312) 555-0141', 'Bike training classes', 125, 6),
-  BmxPlace('Family Pump Track', '1400 W 16th St', const LatLng(41.8597, -87.6600), '9:00–19:00', true, '(312) 555-0172',
-      'Pump track for all ages', 88, 4),
-  BmxPlace('Kids Ride Academy', '3300 N Western Ave', const LatLng(41.9420, -87.6880), '10:00–18:00', false,
-      '(773) 555-0119', 'Learn to ride in a weekend', 61, 2),
-  BmxPlace('Ramp & Roll Indoor Park', '2100 S Wabash Ave', const LatLng(41.8540, -87.6250), '12:00–22:00', true,
-      '(312) 555-0188', 'Indoor ramps, rentals on site', 143, 11),
-];
-
-class BmxMap extends StatelessWidget {
+/// The BMX page: every real BMX track, pump track, bike park and skatepark within 25 miles
+/// (from OpenStreetMap), on a map centred on the rider.
+class BmxMap extends StatefulWidget {
   const BmxMap({super.key});
 
   @override
+  State<BmxMap> createState() => _BmxMapState();
+}
+
+class _BmxMapState extends State<BmxMap> {
+  List<RidePark>? _parks; // null: still looking
+
+  @override
+  void initState() {
+    super.initState();
+    rideParks(userPos).then((l) {
+      if (mounted) setState(() => _parks = l);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final parks = _parks ?? const <RidePark>[];
     return ClipRRect(
       borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
-      child: FlutterMap(
-        options: const MapOptions(initialCenter: LatLng(41.8950, -87.6550), initialZoom: 11.6),
-        children: [
-          baseTiles(),
-          MarkerLayer(markers: [
-            for (final b in _bmx)
-              Marker(
-                point: b.pos,
-                width: 44,
-                height: 52,
-                alignment: Alignment.topCenter,
-                child: GestureDetector(
-                  onTap: () => showModalBottomSheet(
-                    context: context,
-                    isScrollControlled: true,
-                    backgroundColor: Colors.white,
-                    shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(22))),
-                    builder: (_) => BmxSheet(place: b),
+      child: Stack(children: [
+        FlutterMap(
+          options: MapOptions(initialCenter: userPos, initialZoom: 11.2),
+          children: [
+            baseTiles(),
+            MarkerLayer(markers: [
+              Marker(point: userPos, width: 34, height: 34, child: const UserDot()),
+              for (final b in parks)
+                Marker(
+                  point: b.pos,
+                  width: 44,
+                  height: 52,
+                  alignment: Alignment.topCenter,
+                  child: GestureDetector(
+                    onTap: () => showModalBottomSheet(
+                      context: context,
+                      isScrollControlled: true,
+                      backgroundColor: Colors.white,
+                      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(22))),
+                      builder: (_) => BmxSheet(place: b),
+                    ),
+                    child: const _BmxPin(),
                   ),
-                  child: const _BmxPin(),
                 ),
-              ),
-          ]),
-        ],
-      ),
+            ]),
+          ],
+        ),
+        // one quiet line at the top: how many, or that we are still looking
+        Positioned(
+          top: 10,
+          left: 10,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(16),
+              boxShadow: const [BoxShadow(color: Color(0x1F000000), blurRadius: 8, offset: Offset(0, 2))],
+            ),
+            child: Text(
+                _parks == null
+                    ? 'Looking for parks near you…'
+                    : parks.isEmpty
+                        ? 'No parks found within 25 miles yet'
+                        : '${parks.length} parks within 25 miles',
+                style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w700, color: AppColors.primary)),
+          ),
+        ),
+      ]),
     );
   }
 }
@@ -832,13 +858,47 @@ class _BmxPin extends StatelessWidget {
 }
 
 class BmxSheet extends StatefulWidget {
-  final BmxPlace place;
+  final RidePark place;
   const BmxSheet({super.key, required this.place});
   @override
   State<BmxSheet> createState() => _BmxSheetState();
 }
 
 class _BmxSheetState extends State<BmxSheet> {
+  List<PlacePhoto> _mine = const [], _online = const [];
+
+  /// the park as a place, for the photo search (photos from 2024 on that look at it)
+  late final Place _asPlace = Place(
+    id: 'park/${widget.place.id}',
+    type: PlaceType.bmx,
+    address: widget.place.name,
+    pos: widget.place.pos,
+    status: Status.neutral,
+    distance: '',
+    etaMin: const {},
+    osm: true,
+  );
+
+  void _loadMine() => MyPhotos.i.of(_asPlace.id).then((l) {
+        if (mounted) setState(() => _mine = l);
+      });
+
+  @override
+  void initState() {
+    super.initState();
+    MyPhotos.i.addListener(_loadMine);
+    _loadMine();
+    photosLookingAt(_asPlace).then((l) {
+      if (mounted && l.isNotEmpty) setState(() => _online = l);
+    });
+  }
+
+  @override
+  void dispose() {
+    MyPhotos.i.removeListener(_loadMine);
+    super.dispose();
+  }
+
   void _vote(int v) => setState(() {
         final b = widget.place;
         if (b.vote == 1) b.likes--;
@@ -852,16 +912,8 @@ class _BmxSheetState extends State<BmxSheet> {
   Widget build(BuildContext context) {
     final b = widget.place;
     final m = const Distance()(userPos, b.pos);
-    final km = (m / 1000).toStringAsFixed(1);
-    Widget photo(int i) => Expanded(
-          child: GestureDetector(
-            onTap: () => showDialog<void>(
-              context: context,
-              builder: (_) => Dialog(child: _photoBox(i, 300)),
-            ),
-            child: _photoBox(i, 110),
-          ),
-        );
+    final miles = (m / 1609.34).toStringAsFixed(1);
+    final photos = [..._mine, for (final u in b.photos) PlacePhoto(u, 'map'), ..._online];
     Widget voteBtn(IconData icon, int count, int v, Color on) => OutlinedButton.icon(
           onPressed: () => _vote(v),
           icon: Icon(icon, size: 18, color: b.vote == v ? Colors.white : on),
@@ -885,8 +937,9 @@ class _BmxSheetState extends State<BmxSheet> {
           child: Row(children: [
             Expanded(
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Text(b.name, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18)),
-                Text(b.address, style: const TextStyle(color: AppColors.soft, fontSize: 12.5)),
+                Text(b.name, maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18)),
+                Text([b.kind, if (b.address != null) b.address!].join(' · '),
+                    maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(color: AppColors.soft, fontSize: 12.5)),
               ]),
             ),
             FilledButton.icon(
@@ -900,57 +953,108 @@ class _BmxSheetState extends State<BmxSheet> {
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            const Text('Kids & family cycling space', style: TextStyle(fontSize: 12, color: AppColors.soft)),
-            const SizedBox(height: 8),
+            // who it is for: bikes named in the map data, or a skatepark where the sign decides
             Row(children: [
-              Icon(b.open ? Icons.lock_open_rounded : Icons.lock_rounded,
-                  size: 18, color: b.open ? AppColors.green : AppColors.red),
+              Icon(b.bikes == true ? Icons.pedal_bike_rounded : Icons.info_outline_rounded,
+                  size: 18, color: b.bikes == true ? AppColors.greenDark : AppColors.yellowDark),
               const SizedBox(width: 6),
-              Text(b.hours,
-                  style: TextStyle(fontWeight: FontWeight.w800, color: b.open ? AppColors.greenDark : AppColors.redDark)),
-              const SizedBox(width: 10),
               Expanded(
-                child: Text(b.tagline,
-                    maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w600)),
+                child: Text(b.forWhom,
+                    style: TextStyle(
+                        fontWeight: FontWeight.w800, color: b.bikes == true ? AppColors.greenDark : AppColors.yellowDark)),
               ),
             ]),
-            const SizedBox(height: 10),
-            Row(children: [photo(0), const SizedBox(width: 8), photo(1)]),
-            const SizedBox(height: 10),
+            if (b.facts.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              Wrap(spacing: 6, runSpacing: 6, children: [
+                for (final f in b.facts)
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
+                    child: Text(f, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: AppColors.primary)),
+                  ),
+              ]),
+            ],
+            if (b.hours != null) ...[
+              const SizedBox(height: 8),
+              Row(children: [
+                const Icon(Icons.schedule_rounded, size: 18, color: AppColors.soft),
+                const SizedBox(width: 6),
+                Expanded(child: Text(b.hours!, style: const TextStyle(fontWeight: FontWeight.w700))),
+              ]),
+            ],
+            if (photos.isNotEmpty) ...[
+              const SizedBox(height: 10),
+              SizedBox(
+                height: 150,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(14),
+                  child: PageView.builder(
+                    itemCount: photos.length,
+                    itemBuilder: (_, i) => Stack(fit: StackFit.expand, children: [
+                      photos[i].local
+                          ? Image.file(File(photos[i].url), fit: BoxFit.cover)
+                          : Image.network(photos[i].url,
+                              fit: BoxFit.cover,
+                              errorBuilder: (_, __, ___) => Container(
+                                  color: AppColors.paper,
+                                  alignment: Alignment.center,
+                                  child: const Icon(Icons.image_not_supported_outlined, color: AppColors.soft))),
+                      Positioned(
+                        left: 8,
+                        bottom: 8,
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                          decoration: BoxDecoration(color: Colors.black54, borderRadius: BorderRadius.circular(8)),
+                          child: Text(
+                              'Photo · ${i + 1}/${photos.length}${photos[i].credit == 'map' ? '' : ' · ${photos[i].credit}'}',
+                              style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w700)),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+              ),
+            ],
+            const SizedBox(height: 6),
             Row(children: [
-              OutlinedButton.icon(
-                onPressed: () {},
-                icon: const Icon(Icons.phone_outlined, size: 16),
-                label: Text(b.phone),
-                style: OutlinedButton.styleFrom(foregroundColor: AppColors.ink, shape: const StadiumBorder()),
+              TextButton.icon(
+                onPressed: () => MyPhotos.i.take(_asPlace.id),
+                icon: const Icon(Icons.add_a_photo_outlined, size: 18),
+                label: Text(photos.isEmpty ? 'Add the first photo' : 'Add a photo'),
               ),
               const Spacer(),
               voteBtn(Icons.thumb_up_alt_outlined, b.likes, 1, AppColors.green),
               const SizedBox(width: 6),
               voteBtn(Icons.thumb_down_alt_outlined, b.dislikes, -1, AppColors.red),
             ]),
-            const SizedBox(height: 12),
-            Text('$km km away · ${etaMinutes(m, Vehicle.bike)} min by bike',
+            if (b.phone != null || b.website != null) ...[
+              const SizedBox(height: 6),
+              Wrap(spacing: 8, children: [
+                if (b.phone != null)
+                  OutlinedButton.icon(
+                    onPressed: () => openLink('tel:${b.phone!.replaceAll(RegExp(r'[^0-9+]'), '')}'),
+                    icon: const Icon(Icons.phone_outlined, size: 16),
+                    label: Text(b.phone!),
+                    style: OutlinedButton.styleFrom(foregroundColor: AppColors.ink, shape: const StadiumBorder()),
+                  ),
+                if (b.website != null)
+                  OutlinedButton.icon(
+                    onPressed: () => openLink(b.website!.startsWith('http') ? b.website! : 'https://${b.website}'),
+                    icon: const Icon(Icons.public, size: 16),
+                    label: const Text('Website'),
+                    style: OutlinedButton.styleFrom(foregroundColor: AppColors.ink, shape: const StadiumBorder()),
+                  ),
+              ]),
+            ],
+            const SizedBox(height: 10),
+            Text('$miles mi away · ${etaMinutes(m, Vehicle.bike)} min by bike',
                 style: const TextStyle(fontWeight: FontWeight.w800)),
+            const SizedBox(height: 4),
+            const Text('Place data © OpenStreetMap contributors.', style: TextStyle(fontSize: 11, color: AppColors.soft)),
           ]),
         ),
       ]),
     );
   }
-
-  Widget _photoBox(int i, double h) => Container(
-        height: h,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(14),
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: i == 0
-                ? const [Color(0xFFCFE3F0), Color(0xFFA8C99A)]
-                : const [Color(0xFFF3E2C4), Color(0xFFC9B48E)],
-          ),
-        ),
-        alignment: Alignment.center,
-        child: Icon(i == 0 ? Icons.pedal_bike : Icons.terrain, size: h * 0.35, color: Colors.white),
-      );
 }
