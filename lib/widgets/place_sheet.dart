@@ -1,3 +1,6 @@
+import 'dart:io' show File;
+
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -5,6 +8,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../data/app_state.dart';
 import '../data/mapillary.dart';
+import '../data/place_photos.dart';
 import '../data/places.dart';
 import '../data/store.dart';
 import '../screens/fixit_screens.dart';
@@ -158,8 +162,35 @@ class _PlaceSheetState extends State<PlaceSheet> {
     if (box != null && box.hasSize) widget.onHeight?.call(box.size.height + 10);
   }
 
+  List<PlacePhoto> _mine = const [], _online = const [];
+
+  /// every photo of the place, in the order they are shown
+  List<PlacePhoto> get _photos => [
+        ..._mine,
+        for (final u in widget.place.photos) PlacePhoto(u, 'map'),
+        ..._online,
+      ];
+
+  void _loadMine() => MyPhotos.i.of(widget.place.id).then((l) {
+        if (mounted) setState(() => _mine = l);
+      });
+
+  @override
+  void initState() {
+    super.initState();
+    MyPhotos.i.addListener(_loadMine);
+    _loadMine();
+    // real places only: open street photos that look at this place
+    if (widget.place.osm) {
+      photosLookingAt(widget.place).then((l) {
+        if (mounted && l.isNotEmpty) setState(() => _online = l);
+      });
+    }
+  }
+
   @override
   void dispose() {
+    MyPhotos.i.removeListener(_loadMine);
     _back?.dispose();
     super.dispose();
   }
@@ -256,9 +287,21 @@ class _PlaceSheetState extends State<PlaceSheet> {
             label: const Text('Write the first review'),
           ),
         )],
-      // photos: only real photos of this very place (set on the place itself in the map data).
-      // No street views from nearby and no stand-in picture: a photo that is not of the place misleads.
-      if (p.photos.isNotEmpty) ...[gap, _realPhotos(p.photos)],
+      // photos in which the place itself is in view: the rider's own first, then the ones set on
+      // the place in the map data, then open street photos with the camera turned towards it.
+      // Never a view of the street next to it, never a stand-in picture.
+      if (_photos.isNotEmpty) ...[gap, _realPhotos(_photos)],
+      if (!kIsWeb) ...[
+        const SizedBox(height: 8),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: TextButton.icon(
+            onPressed: () => MyPhotos.i.take(p.id),
+            icon: const Icon(Icons.add_a_photo_outlined, size: 18),
+            label: Text(_photos.isEmpty ? 'Add the first photo' : 'Add a photo'),
+          ),
+        ),
+      ],
       if (p.qa.isNotEmpty || (Store.i.myQuestions[p.id]?.isNotEmpty ?? false))
         if (p.type == PlaceType.parkPrivate || p.type == PlaceType.service || p.type == PlaceType.rent)
           ...[gap, QaCard([...?Store.i.myQuestions[p.id], ...p.qa], onAsk: (q) => setState(() => Store.i.ask(p.id, q)))],
@@ -502,35 +545,46 @@ class _PlaceSheetState extends State<PlaceSheet> {
   }
 
   /// Real photos of the place (from OpenStreetMap / Wikimedia Commons / Panoramax), swipe through them.
-  Widget _realPhotos(List<String> urls, {String? credit}) => SizedBox(
+  Widget _realPhotos(List<PlacePhoto> photos) => SizedBox(
         height: 170,
         child: ClipRRect(
           borderRadius: BorderRadius.circular(14),
           child: PageView.builder(
-            itemCount: urls.length,
-            itemBuilder: (_, i) => Stack(fit: StackFit.expand, children: [
-              Image.network(
-                urls[i],
-                fit: BoxFit.cover,
-                loadingBuilder: (_, child, prog) =>
-                    prog == null ? child : Container(color: AppColors.paper, alignment: Alignment.center, child: const CircularProgressIndicator(strokeWidth: 2)),
-                errorBuilder: (_, __, ___) => Container(
-                  color: AppColors.paper,
-                  alignment: Alignment.center,
-                  child: const Icon(Icons.image_not_supported_outlined, color: AppColors.soft),
+            itemCount: photos.length,
+            itemBuilder: (_, i) {
+              final ph = photos[i];
+              Widget missing() => Container(
+                    color: AppColors.paper,
+                    alignment: Alignment.center,
+                    child: const Icon(Icons.image_not_supported_outlined, color: AppColors.soft),
+                  );
+              return Stack(fit: StackFit.expand, children: [
+                if (ph.local)
+                  Image.file(File(ph.url), fit: BoxFit.cover, errorBuilder: (_, __, ___) => missing())
+                else
+                  Image.network(
+                    ph.url,
+                    fit: BoxFit.cover,
+                    loadingBuilder: (_, child, prog) => prog == null
+                        ? child
+                        : Container(
+                            color: AppColors.paper,
+                            alignment: Alignment.center,
+                            child: const CircularProgressIndicator(strokeWidth: 2)),
+                    errorBuilder: (_, __, ___) => missing(),
+                  ),
+                Positioned(
+                  left: 8,
+                  bottom: 8,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                    decoration: BoxDecoration(color: Colors.black54, borderRadius: BorderRadius.circular(8)),
+                    child: Text('Photo · ${i + 1}/${photos.length}${ph.credit == 'map' ? '' : ' · ${ph.credit}'}',
+                        style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w700)),
+                  ),
                 ),
-              ),
-              Positioned(
-                left: 8,
-                bottom: 8,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                  decoration: BoxDecoration(color: Colors.black54, borderRadius: BorderRadius.circular(8)),
-                  child: Text('Photo · ${i + 1}/${urls.length}${credit == null ? '' : ' · $credit'}',
-                      style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w700)),
-                ),
-              ),
-            ]),
+              ]);
+            },
           ),
         ),
       );
