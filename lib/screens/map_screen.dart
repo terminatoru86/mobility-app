@@ -8,6 +8,7 @@ import 'package:latlong2/latlong.dart';
 import '../data/app_state.dart';
 import '../data/basemap.dart';
 import '../data/location.dart';
+import '../data/my_places.dart';
 import '../data/open_data.dart';
 import '../data/osm.dart';
 import '../data/places.dart';
@@ -439,6 +440,8 @@ class MapScreenState extends State<MapScreen> {
     _sFocus.unfocus();
     setState(() {
       _searching = false;
+      _setting = null;
+      _moreOpen = false;
       _sCtrl.clear();
       _sQ = '';
       _sResults = [];
@@ -489,8 +492,28 @@ class MapScreenState extends State<MapScreen> {
     if (r.isNotEmpty) _usePick(r.first);
   }
 
+  /// 'home' or 'work' while the rider is choosing that address; the next pick is saved as it
+  String? _setting;
+  bool _moreOpen = false; // the favourites list is open in the search panel
+
   void _usePick(Object picked) {
     if (_sQ.isNotEmpty) Store.i.addRecent(_sQ);
+    final kept = picked is Place
+        ? KeptPlace(picked.address, picked.type.title, picked.pos)
+        : (picked is GeoResult ? KeptPlace(picked.title, picked.subtitle, picked.pos) : null);
+    if (kept != null && _setting != null) {
+      // choosing Home or Work: keep the address and stay in the panel, no trip started
+      _setting == 'home' ? MyPlaces.i.setHome(kept) : MyPlaces.i.setWork(kept);
+      setState(() {
+        _setting = null;
+        _sCtrl.clear();
+        _sQ = '';
+        _sResults = [];
+        _sOurs = [];
+      });
+      return;
+    }
+    if (kept != null) MyPlaces.i.addRecent(kept);
     _endSearch();
     if (picked is Place) {
       _map.move(picked.pos, 17);
@@ -500,9 +523,127 @@ class MapScreenState extends State<MapScreen> {
     }
   }
 
+  void _goKept(KeptPlace k) => _usePick(GeoResult(k.title, k.subtitle, k.pos));
+
+  /// Before typing: Home, Work and More (your favourites), then the places searched lately.
+  Widget _searchPanel() {
+    final my = MyPlaces.i;
+    Widget shortcut(IconData icon, String name, KeptPlace? k, String which) => Expanded(
+          child: InkWell(
+            borderRadius: BorderRadius.circular(14),
+            onTap: () {
+              if (k != null) return _goKept(k);
+              setState(() => _setting = which); // type the address; the pick is saved
+              _sFocus.requestFocus();
+            },
+            // hold to change the address
+            onLongPress: () {
+              setState(() => _setting = which);
+              _sFocus.requestFocus();
+            },
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+              child: Row(children: [
+                Container(
+                  width: 34,
+                  height: 34,
+                  decoration: const BoxDecoration(color: AppColors.slateTint, shape: BoxShape.circle),
+                  child: Icon(icon, size: 18, color: AppColors.primary),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                    Text(name, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14)),
+                    Text(
+                        _setting == which ? 'Type the address…' : (k?.title ?? 'Set location'),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(fontSize: 11.5, color: _setting == which ? AppColors.blue : AppColors.soft)),
+                  ]),
+                ),
+              ]),
+            ),
+          ),
+        );
+    Widget row(KeptPlace k, IconData icon, {VoidCallback? onRemove}) => ListTile(
+          dense: true,
+          leading: Container(
+            width: 32,
+            height: 32,
+            decoration: const BoxDecoration(color: AppColors.paper, shape: BoxShape.circle),
+            child: Icon(icon, size: 17, color: AppColors.primary),
+          ),
+          title: Text(k.title, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w700)),
+          subtitle: k.subtitle.isEmpty ? null : Text(k.subtitle, maxLines: 1, overflow: TextOverflow.ellipsis),
+          trailing: onRemove == null
+              ? null
+              : IconButton(icon: const Icon(Icons.star_rounded, color: AppColors.yellow), onPressed: onRemove),
+          onTap: () => _goKept(k),
+        );
+    final list = _moreOpen ? my.favourites : my.recent;
+    return Container(
+      margin: const EdgeInsets.only(top: 6),
+      constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.5),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 3))],
+      ),
+      child: ListView(padding: const EdgeInsets.fromLTRB(4, 4, 4, 6), shrinkWrap: true, children: [
+        Row(children: [
+          shortcut(Icons.home_rounded, 'Home', my.home, 'home'),
+          Container(width: 1, height: 30, color: AppColors.line),
+          shortcut(Icons.work_rounded, 'Work', my.work, 'work'),
+          Container(width: 1, height: 30, color: AppColors.line),
+          // More: your favourite places
+          InkWell(
+            borderRadius: BorderRadius.circular(14),
+            onTap: () => setState(() => _moreOpen = !_moreOpen),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+              child: Row(children: [
+                Container(
+                  width: 34,
+                  height: 34,
+                  decoration: BoxDecoration(
+                      color: _moreOpen ? AppColors.primary : Colors.white,
+                      shape: BoxShape.circle,
+                      border: Border.all(color: _moreOpen ? AppColors.primary : AppColors.line)),
+                  child: Icon(_moreOpen ? Icons.star_rounded : Icons.more_horiz_rounded,
+                      size: 18, color: _moreOpen ? Colors.white : AppColors.primary),
+                ),
+                const SizedBox(width: 6),
+                const Text('More', style: TextStyle(fontWeight: FontWeight.w700, fontSize: 13.5, color: AppColors.soft)),
+              ]),
+            ),
+          ),
+        ]),
+        const Divider(height: 10),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(14, 4, 14, 2),
+          child: Text(_moreOpen ? 'Favourite places' : 'Recent',
+              style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w800, color: AppColors.primary)),
+        ),
+        if (list.isEmpty)
+          Padding(
+            padding: const EdgeInsets.fromLTRB(14, 6, 14, 10),
+            child: Text(
+                _moreOpen
+                    ? 'Nothing saved yet. Tap the star on a searched address, or Save in a place.'
+                    : 'The places you search for will show here.',
+                style: const TextStyle(fontSize: 12.5, color: AppColors.soft)),
+          ),
+        for (final k in list)
+          _moreOpen
+              ? row(k, Icons.star_outline_rounded, onRemove: () => setState(() => my.toggleFavourite(k)))
+              : row(k, Icons.schedule_rounded),
+      ]),
+    );
+  }
+
   /// Results while typing: a small card right under the bar (nothing else).
   Widget _searchResults() {
-    if (_sOurs.isEmpty && _sResults.isEmpty) return const SizedBox.shrink();
+    if (_sOurs.isEmpty && _sResults.isEmpty) return _sQ.trim().isEmpty ? _searchPanel() : const SizedBox.shrink();
     return Container(
       margin: const EdgeInsets.only(top: 6),
       constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.34),
@@ -595,6 +736,16 @@ class MapScreenState extends State<MapScreen> {
                   Text(d.subtitle, maxLines: 1, overflow: TextOverflow.ellipsis,
                       style: const TextStyle(fontSize: 12, color: AppColors.soft)),
               ]),
+            ),
+            // keep it as a favourite (shows under More in the search panel)
+            IconButton(
+              onPressed: () => setState(() => MyPlaces.i.toggleFavourite(KeptPlace(d.title, d.subtitle, d.pos))),
+              icon: Icon(
+                  MyPlaces.i.isFavourite(KeptPlace(d.title, d.subtitle, d.pos))
+                      ? Icons.star_rounded
+                      : Icons.star_outline_rounded,
+                  color: AppColors.yellow),
+              tooltip: 'Favourite',
             ),
             FilledButton.icon(
               onPressed: _tripToDest,
@@ -1557,8 +1708,8 @@ class MapScreenState extends State<MapScreen> {
                       onChanged: _sChanged,
                       onSubmitted: _sSubmit,
                       style: const TextStyle(fontSize: 16, color: AppColors.ink),
-                      decoration: const InputDecoration(
-                        hintText: 'Address, place or city',
+                      decoration: InputDecoration(
+                        hintText: _setting == null ? 'Address, place or city' : 'Type your ${_setting!} address',
                         border: InputBorder.none,
                         isCollapsed: true,
                       ),

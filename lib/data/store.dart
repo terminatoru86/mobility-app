@@ -8,6 +8,7 @@ import 'package:latlong2/latlong.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'device_ledger.dart';
+import 'my_places.dart';
 import 'places.dart';
 import 'zones.dart';
 
@@ -180,6 +181,9 @@ class Store extends ChangeNotifier {
   }
 
   void toggleSaved(Place p) {
+    // a saved place is also a favourite in the search panel (More)
+    final kept = KeptPlace(p.address, p.type.title, p.pos);
+    if (savedPlaces.contains(p.id) == MyPlaces.i.isFavourite(kept)) MyPlaces.i.toggleFavourite(kept);
     if (savedPlaces.remove(p.id)) {
       savedPlaceData.remove(p.id);
     } else {

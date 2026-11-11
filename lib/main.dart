@@ -13,6 +13,7 @@ import 'screens/map_screen.dart';
 import 'screens/other_screens.dart';
 import 'screens/routes_screen.dart';
 import 'widgets/place_sheet.dart' show closePlaceSheet;
+import 'data/my_places.dart';
 import 'theme.dart';
 import 'widgets/city_splash.dart';
 import 'widgets/pin.dart';
@@ -34,6 +35,7 @@ Future<AppState> _boot() async {
   final state = AppState();
   await state.load();
   await Store.i.load();
+  await MyPlaces.i.load(); // Home, Work, favourites and recent places
   return state;
 }
 
