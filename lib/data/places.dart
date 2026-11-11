@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart';
 
@@ -276,6 +278,76 @@ class Place {
         tools: tools, busy: busy, priceNow: priceNow, operatorName: operatorName, operatorPrice: operatorPrice,
         osm: osm, facts: facts, website: website, photos: photos, share: share,
       );
+
+  /// Several racks standing side by side, shown as one pin: the status and free places of all of them.
+  Place together(Status s, String? n, int racks) => Place(
+        id: id, type: type, address: address, pos: pos, status: s, count: n,
+        age: age, accepts: accepts, distance: distance, etaMin: etaMin, hours: hours, phone: phone,
+        rating: rating, reviewCount: reviewCount, reviews: reviews, security: security, qa: qa, tag: tag,
+        tools: tools, busy: busy, priceNow: priceNow, operatorName: operatorName, operatorPrice: operatorPrice,
+        osm: osm, facts: ['$racks racks side by side', ...facts], website: website, photos: photos, offers: offers,
+        share: share,
+      );
+}
+
+/// Racks (or parkings) a few steps from each other become one place: the first one met stands for
+/// all within [meters] of it, with the free places added up. Other kinds of places pass through.
+List<Place> joinSideBySide(List<Place> all, {double meters = 8}) {
+  final cellLat = meters / 111320;
+  final out = <Place>[];
+  final lead = <int, List<int>>{}; // map square → the groups (index in [groups]) that start there
+  final groups = <List<Place>>[];
+  final slot = <int>[]; // where each group sits in [out]
+  for (final p in all) {
+    if (p.type.group != 'Parking') {
+      out.add(p);
+      continue;
+    }
+    final kx = math.max(0.2, math.cos(p.pos.latitude * math.pi / 180));
+    final cellLng = cellLat / kx;
+    final a = (p.pos.latitude / cellLat).floor(), b = (p.pos.longitude / cellLng).floor();
+    int? found;
+    for (var i = -1; i <= 1 && found == null; i++) {
+      for (var j = -1; j <= 1 && found == null; j++) {
+        final l = lead[(a + i) * 40000003 + (b + j)];
+        if (l == null) continue;
+        for (final g in l) {
+          final q = groups[g].first;
+          if (q.type != p.type) continue;
+          final dy = (q.pos.latitude - p.pos.latitude) * 111320, dx = (q.pos.longitude - p.pos.longitude) * 111320 * kx;
+          if (dx * dx + dy * dy <= meters * meters) {
+            found = g;
+            break;
+          }
+        }
+      }
+    }
+    if (found != null) {
+      groups[found].add(p);
+    } else {
+      lead.putIfAbsent(a * 40000003 + b, () => []).add(groups.length);
+      groups.add([p]);
+      slot.add(out.length);
+      out.add(p);
+    }
+  }
+  for (var g = 0; g < groups.length; g++) {
+    final m = groups[g];
+    if (m.length < 2) continue;
+    var n = 0;
+    var best = Status.unknown;
+    for (final p in m) {
+      final s = p.status;
+      if (s == Status.free || s == Status.almost) n += int.tryParse(p.count ?? '') ?? 1;
+      if (s == Status.free || (s == Status.almost && best != Status.free) || (s == Status.full && best == Status.unknown)) {
+        best = s;
+      }
+    }
+    // one or two free places in all: still "almost full", whatever each rack said
+    if (best == Status.free && n <= 2) best = Status.almost;
+    out[slot[g]] = m.first.together(best, best == Status.free || best == Status.almost ? '$n' : null, m.length);
+  }
+  return out;
 }
 
 /// Demo data around the Chicago Loop. Real data comes later (Firestore + GBFS).

@@ -333,7 +333,22 @@ class MapScreenState extends State<MapScreen> {
     return _merged = out;
   }
 
+  /// From this zoom in (the houses' numbers fill the screen) every rack is its own pin; further
+  /// out, racks standing side by side are one pin with their free places added up.
+  static const kEachRackZoom = 18.5;
+  List<Place>? _joinedCache;
+  List<Place>? _joinedOf;
+
   List<Place> get _all {
+    final each = _each;
+    if (_zoom >= kEachRackZoom) return each;
+    if (_joinedCache != null && identical(_joinedOf, each)) return _joinedCache!;
+    _joinedOf = each;
+    return _joinedCache = joinSideBySide(each);
+  }
+
+  /// Every place on its own (racks not joined).
+  List<Place> get _each {
     final c = _allCache;
     if (c != null && _merged != null) return c;
     final src = _sources;

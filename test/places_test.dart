@@ -106,4 +106,21 @@ void main() {
       expect(back.lastMove, DateTime(2026, 10, 1));
     });
   });
+  group('Racks side by side', () {
+    Place rack(String id, double lat, double lng, Status st, String? n) => Place(
+        id: id, type: PlaceType.rack, address: 'x', pos: LatLng(lat, lng), status: st, count: n, distance: '', etaMin: const {});
+    test('racks a few steps apart are one place with the free places added up; far ones stay apart', () {
+      final out = joinSideBySide([
+        rack('a', 41.92200, -87.71200, Status.almost, '2'),
+        rack('b', 41.92200, -87.71206, Status.free, '2'), // 5 m west of a
+        rack('c', 41.92203, -87.71200, Status.full, null), // 3 m north of a
+        rack('d', 41.92230, -87.71200, Status.free, '6'), // 33 m away
+      ]);
+      expect(out.map((p) => p.id), ['a', 'd']);
+      expect(out.first.count, '4');
+      expect(out.first.status, Status.free);
+      expect(out.first.facts.first, '3 racks side by side');
+      expect(out.last.count, '6');
+    });
+  });
 }
