@@ -11,11 +11,13 @@ import '../data/location.dart';
 import '../data/open_data.dart';
 import '../data/osm.dart';
 import '../data/places.dart';
+import '../data/ride_classes.dart';
 import '../data/routing.dart';
 import '../data/store.dart';
 import '../data/weather.dart';
 import '../data/zones.dart';
 import '../theme.dart';
+import '../widgets/class_note.dart';
 import '../widgets/cluster.dart';
 import '../widgets/glass.dart';
 import '../widgets/guide.dart';
@@ -1286,6 +1288,16 @@ class MapScreenState extends State<MapScreen> {
                   child: Icon(r.icon, size: 16, color: AppColors.ink),
                 ),
               ),
+            // zoomed out: a note on every city, school district or organisation that teaches
+            // children to ride (a tap reads our note, then the link to their page)
+            if (_zoom < 11.5)
+              for (final c in kRideClasses)
+                Marker(
+                  point: c.pos,
+                  width: 34,
+                  height: 34,
+                  child: GestureDetector(onTap: () => showClassNote(context, c), child: const ClassBadge(size: 30)),
+                ),
             Marker(point: userPos, width: 34, height: 34, child: const UserDot()),
             ..._markers(),
             // the minutes of the walk, on the middle of the dashed line

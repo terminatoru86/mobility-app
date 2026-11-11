@@ -6,6 +6,8 @@ import '../data/places.dart';
 import '../data/location.dart';
 import '../data/store.dart';
 import '../data/zones.dart';
+import '../data/ride_classes.dart';
+import '../widgets/class_note.dart';
 import '../theme.dart';
 import '../widgets/pin.dart';
 import '../widgets/place_sheet.dart' show openLink;
@@ -39,6 +41,8 @@ class ProfileScreen extends StatelessWidget {
             _AccountCard(state: state),
             const SizedBox(height: 8),
             _group([
+              // first: what the city (or the schools) where the rider is offers children
+              _row(Icons.child_care_rounded, classNear(userPos).label, () => showClassNote(context, classNear(userPos))),
               _row(Icons.pedal_bike, state.myVehicle == null ? 'My vehicle' : '${state.myVehicle!.label}${state.model.isEmpty ? '' : ' · ${state.model}'}',
                   () => showVehicleStep(context, state, canClose: true)),
               _row(Icons.favorite_border, 'Saved places', () => _push(context, SavedPlacesScreen(onOpen: onOpenPlace)),

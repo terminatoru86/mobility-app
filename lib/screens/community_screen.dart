@@ -12,8 +12,10 @@ import '../data/app_state.dart';
 import '../data/osm.dart' show etaMinutes;
 import '../data/place_photos.dart';
 import '../data/places.dart';
+import '../data/ride_classes.dart';
 import '../data/ride_parks.dart';
 import '../theme.dart';
+import '../widgets/class_note.dart';
 import '../widgets/pin.dart' show UserDot;
 import '../widgets/place_sheet.dart' show openLink;
 import '../widgets/signup.dart';
@@ -809,7 +811,12 @@ class _BmxMapState extends State<BmxMap> {
         Positioned(
           top: 10,
           left: 10,
-          child: Container(
+          right: 10,
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            // our note: free classes for children where the rider is; a tap reads it, then the link
+            ClassPill(classNear(userPos)),
+            const SizedBox(height: 6),
+            Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
             decoration: BoxDecoration(
               color: Colors.white,
@@ -823,7 +830,8 @@ class _BmxMapState extends State<BmxMap> {
                         ? 'No parks found within 25 miles yet'
                         : '${parks.length} parks within 25 miles',
                 style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w700, color: AppColors.primary)),
-          ),
+            ),
+          ]),
         ),
       ]),
     );
