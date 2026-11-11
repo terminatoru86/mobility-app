@@ -153,7 +153,7 @@ enum _Mode { choose, email, emailSent, phone, phoneCode }
 /// The sign-in card. Problems show as a short red line inside the card (no pop-ups).
 class SignInCard extends StatefulWidget {
   final String guestLabel;
-  const SignInCard({super.key, this.guestLabel = 'Continue as guest'});
+  const SignInCard({super.key, this.guestLabel = 'Guest ›'});
   @override
   State<SignInCard> createState() => _SignInCardState();
 }
