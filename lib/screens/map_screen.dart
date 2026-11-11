@@ -81,18 +81,6 @@ class MapScreenState extends State<MapScreen> {
     if (_picked.length == kFilterChips.length) _picked.clear();
   }
 
-  void _sheetMoved() {
-    if (mounted) setState(() {});
-  }
-
-  /// How far GPS, + and SOS rise so the open place sheet never covers them (at most 60 % of the
-  /// screen: a sheet pulled higher than that covers them for a moment).
-  double _lift(double normal) {
-    final h = placeSheetHeight.value;
-    if (h <= 0) return normal;
-    return math.max(normal, math.min(h, MediaQuery.sizeOf(context).height * 0.6) + kEdge);
-  }
-
   /// kinds that stay off the map until the rider picks their filter
   static bool _onDemand(PlaceType t) =>
       t == PlaceType.sharing || t == PlaceType.rent || t == PlaceType.shop || t == PlaceType.service;
@@ -134,7 +122,6 @@ class MapScreenState extends State<MapScreen> {
     Basemap.i.start(); // the street map already on the phone: no internet needed
     Store.i.addListener(_storeChanged);
     statusFilter.addListener(_statusChanged);
-    placeSheetHeight.addListener(_sheetMoved);
     // The round button next to the search bar shows your vehicle, then the weather, turning by itself every 8 s
     // (a swipe on it turns it at once).
     // one clock for all pins (glyph <-> age)
@@ -250,7 +237,6 @@ class MapScreenState extends State<MapScreen> {
     _sCtrl.dispose();
     _sFocus.dispose();
     Store.i.removeListener(_storeChanged);
-    placeSheetHeight.removeListener(_sheetMoved);
     statusFilter.removeListener(_statusChanged);
     _shareTimer?.cancel();
     _pieceTimer?.cancel();
@@ -1548,9 +1534,12 @@ class MapScreenState extends State<MapScreen> {
           bottom: 14 + StatusScale.height,
           child: _destCard(),
         ),
-      Positioned(
+      // GPS, + and SOS: one column at the top right, under the filters, all the same size. Up there
+      // the sheet of a place never covers them. Away while searching (the results take that room).
+      if (!_searching)
+        Positioned(
           right: kEdge,
-          bottom: _lift((_dest != null ? (_destRack != null ? 160 : 112) : 16) + StatusScale.height),
+          top: top + 44 + kCtl + kEdge + 38 + kEdge,
           child: Column(children: [
             GestureDetector(
               key: _kLocate,
@@ -1563,12 +1552,10 @@ class MapScreenState extends State<MapScreen> {
             _roundBtn(Icons.add, AppColors.primary, Colors.white, () async {
               await Navigator.of(context).push(MaterialPageRoute(builder: (_) => ReportMenu(pos: userPos)));
             }, key: _kReport),
+            const SizedBox(height: kEdge),
+            _sosButton(),
           ]),
         ),
-      Positioned(
-          left: kEdge,
-          bottom: _lift((_dest != null ? (_destRack != null ? 160 : 112) : 16) + StatusScale.height),
-          child: _sosButton()),
       if (_locked)
         Positioned(
           left: 12,
@@ -1640,23 +1627,24 @@ class MapScreenState extends State<MapScreen> {
       child: GestureDetector(
       onTap: active ? Store.i.cancelSos : null,
       child: Stack(clipBehavior: Clip.none, alignment: Alignment.center, children: [
+        // round, the size of the buttons above it: red, with a thin white ring
         Container(
+          width: kCtl,
           height: kCtl,
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          alignment: Alignment.center,
           decoration: BoxDecoration(
             color: AppColors.red,
-            borderRadius: BorderRadius.circular(kCtl / 2),
+            shape: BoxShape.circle,
+            border: Border.all(color: Colors.white, width: 2),
             boxShadow: [
               BoxShadow(color: AppColors.red.withValues(alpha: 0.25 + _sosProgress * 0.5), blurRadius: 12 + _sosProgress * 16),
             ],
           ),
-          child: Row(mainAxisSize: MainAxisSize.min, children: [
-            const Text('SOS', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900, letterSpacing: 1.5)),
-            if (active) ...[
-              const SizedBox(width: 8),
-              const Icon(Icons.close, color: Colors.white, size: 18),
-            ],
-          ]),
+          // while a call for help is out: an X, tap to cancel
+          child: active
+              ? const Icon(Icons.close, color: Colors.white, size: 22)
+              : const Text('SOS',
+                  style: TextStyle(color: Colors.white, fontSize: 13, height: 1, fontWeight: FontWeight.w900, letterSpacing: 0.5)),
         ),
         if (Store.i.incomingSos != null && !active)
           Positioned(

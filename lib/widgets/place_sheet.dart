@@ -2,7 +2,6 @@ import 'dart:io' show File;
 
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 
 import 'package:url_launcher/url_launcher.dart';
@@ -23,21 +22,6 @@ import 'sheet_parts.dart';
 /// Opens the sheet of a place over the map.
 /// The sheet that is open inside the app's main screen (see [showPlaceSheet] with a host).
 PersistentBottomSheetController? _openSheet;
-bool _hosted = false; // the sheet being built now sits above the main menu
-
-/// Height in pixels of the place sheet open above the main menu (0 when closed): the map lifts its
-/// GPS, + and SOS buttons above it.
-final ValueNotifier<double> placeSheetHeight = ValueNotifier(0);
-
-void _setSheetHeight(double h) {
-  if ((placeSheetHeight.value - h).abs() < 1) return;
-  // never during a build or layout: the map redraws when this changes
-  if (SchedulerBinding.instance.schedulerPhase == SchedulerPhase.idle) {
-    placeSheetHeight.value = h;
-  } else {
-    SchedulerBinding.instance.addPostFrameCallback((_) => placeSheetHeight.value = h);
-  }
-}
 
 /// Closes the place sheet that sits above the main menu (a tap on the map, another tab).
 void closePlaceSheet() {
@@ -46,7 +30,6 @@ void closePlaceSheet() {
   try {
     c?.close();
   } catch (_) {}
-  _setSheetHeight(0);
 }
 
 Future<void> showPlaceSheet(BuildContext context, Place place,
@@ -83,15 +66,10 @@ Future<void> showPlaceSheet(BuildContext context, Place place,
       enableDrag: false,
     );
     _openSheet = c;
-    _hosted = true;
     return c.closed.then((_) {
-      if (identical(_openSheet, c)) {
-        _openSheet = null;
-        _setSheetHeight(0);
-      }
+      if (identical(_openSheet, c)) _openSheet = null;
     });
   }
-  _hosted = false;
   return showModalBottomSheet(
     context: context,
     isScrollControlled: true,
@@ -113,8 +91,6 @@ class _FitSheet extends StatefulWidget {
 
 class _FitSheetState extends State<_FitSheet> {
   double? _content; // height of everything in the sheet, in pixels
-  bool _told = false;
-  late final bool _report = _hosted; // only the sheet over the map moves the map's buttons
 
   void _onHeight(double h) {
     if (!mounted || (_content != null && (h - _content!).abs() < 2)) return;
@@ -127,16 +103,7 @@ class _FitSheetState extends State<_FitSheet> {
         final start = widget.start;
         // until the content is measured: the opening height only
         final top = _content == null ? start : (_content! / room).clamp(start, 0.92).toDouble();
-        if (_report && !_told) {
-          _told = true;
-          _setSheetHeight(start * room);
-        }
-        return NotificationListener<DraggableScrollableNotification>(
-          onNotification: (n) {
-            if (_report && _openSheet != null) _setSheetHeight(n.extent * room);
-            return false;
-          },
-          child: DraggableScrollableSheet(
+        return DraggableScrollableSheet(
           initialChildSize: start,
           minChildSize: 0.2,
           maxChildSize: top,
@@ -144,7 +111,7 @@ class _FitSheetState extends State<_FitSheet> {
           snapSizes: top - start > 0.02 ? [start] : null,
           expand: false,
           builder: (ctx, scroll) => widget.builder(scroll, _onHeight),
-        ));
+        );
       });
 }
 
