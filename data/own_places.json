@@ -1,0 +1,113 @@
+{
+ "about": "Places the owner of the app added by hand. Hours and phone are not kept here: the website reader takes them from the place's own website.",
+ "places": [
+  {
+   "type": "Service hub",
+   "vehicle": "Scooter",
+   "name": "ELECTRIC LANE - Escooter & Ebike repair shop",
+   "address": "3137 W Montrose Ave, Chicago, IL 60618",
+   "lat": 41.9611,
+   "lon": -87.7073,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Service hub",
+   "vehicle": "Bicycle",
+   "name": "Craft E-Bikes Service & Repair",
+   "address": "4221 N Elston Ave, Chicago, IL 60618",
+   "website": "https://craftebikes.com/",
+   "lat": 41.9581,
+   "lon": -87.7248,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Service hub",
+   "vehicle": "Scooter",
+   "name": "ELECTRIC SCOOTER CHICAGO LLC",
+   "address": "5600 N Western Ave, Chicago, IL 60659",
+   "lat": 41.9834,
+   "lon": -87.6897,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Rent",
+   "vehicle": "Bicycle",
+   "name": "Whizz – E-bikes Rental in Chicago",
+   "address": "641 W Grand Ave, Chicago, IL 60654",
+   "website": "https://www.getwhizz.com/",
+   "lat": 41.8913,
+   "lon": -87.6448,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Service hub",
+   "vehicle": "Motorcycle",
+   "name": "EPM Motorsports: Motorcycle, ATV, and Powersports Repair - Chicago",
+   "address": "5590 N Northwest Hwy, Chicago, IL 60630",
+   "website": "https://epmmotorsports.com/",
+   "lat": 41.983,
+   "lon": -87.7865,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Service hub",
+   "vehicle": "Motorcycle",
+   "name": "NS Cycles Chicago",
+   "address": "Chicago, IL 60618",
+   "website": "http://www.nscycleschicago.com/",
+   "lat": 41.9467,
+   "lon": -87.7037,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Shop",
+   "vehicle": "Scooter",
+   "name": "Queen City Scooters",
+   "address": "312 N Myers St Unit 115, Charlotte, NC 28202",
+   "website": "https://queencityscooters.com/",
+   "lat": 35.2255,
+   "lon": -80.834,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Rent",
+   "vehicle": "Scooter",
+   "name": "REB Charlotte",
+   "address": "1701 N Graham St #114, Charlotte, NC 28206",
+   "website": "https://clt.renteboards.com/",
+   "lat": 35.2422,
+   "lon": -80.8315,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Shop",
+   "vehicle": "Motorcycle",
+   "name": "NC Scooter & Powersports",
+   "address": "1749 Trinity Church Rd, Concord, NC 28027",
+   "website": "http://www.ncscooter.com/",
+   "lat": 35.4098,
+   "lon": -80.6621,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Rent",
+   "vehicle": "Scooter",
+   "name": "Charlotte Mobility - Scooter Sales & Rentals",
+   "address": "852 Gold Hill Rd #102, Fort Mill, SC 29708",
+   "website": "http://www.charlottemobilityscooterrentals.com/",
+   "lat": 35.0681,
+   "lon": -80.9333,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Service hub",
+   "vehicle": "Scooter",
+   "name": "E-Bike -n- Scooter Fix",
+   "address": "1050 Aubrey Ln, Fort Mill, SC 29708",
+   "website": "https://ebikescooterfix.com/",
+   "lat": 35.0558,
+   "lon": -80.9412,
+   "added": "2026-11-12"
+  }
+ ]
+}

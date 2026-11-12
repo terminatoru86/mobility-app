@@ -773,6 +773,26 @@ def fetch_alltheplaces():
     return out
 
 
+def fetch_own():
+    """Places added by hand by the owner of the app (data/own_places.json)."""
+    out = []
+    for i, p in enumerate(json.load(open(os.path.join(ROOT, 'data', 'own_places.json'), encoding='utf-8'))['places']):
+        veh = {'Bicycle': 'bicycle', 'Scooter': 'scooter'}.get(p.get('vehicle'), 'motorcycle')
+        if p['type'] == 'Rent':
+            tags = {'amenity': 'bicycle_rental'}
+        elif p['type'] == 'Service hub':
+            tags = {'shop': 'motorcycle_repair'} if veh == 'motorcycle' else {'shop': veh, 'service:bicycle:repair': 'yes'}
+        else:
+            tags = {'shop': veh}
+        tags.update({k: v for k, v in {'name': p['name'], 'addr:street': (lambda a: a if re.match(r'\d', a) else '')((p.get('address') or '').split(',')[0]),
+                                       'website': p.get('website')}.items() if v})
+        tags['source'] = 'MOBIlity'
+        slug = re.sub(r'[^a-z0-9]+', '-', p['name'].lower())[:40].strip('-')
+        out.append([f'own/{slug}', round(p['lat'], 6), round(p['lon'], 6), tags])
+    print(f'Own places: {len(out)}', flush=True)
+    return out
+
+
 CONTACTS = os.environ.get('CONTACTS_OUT') or os.path.join(ROOT, 'data', 'contacts', 'business_contacts.csv')
 
 
@@ -934,7 +954,7 @@ def main():
                     pass
     counts_src = {}
     for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture), ('foursquare', fetch_foursquare),
-                     ('alltheplaces', fetch_alltheplaces),
+                     ('alltheplaces', fetch_alltheplaces), ('own', fetch_own),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
         if refresh and name not in refresh:
             continue
@@ -942,7 +962,7 @@ def main():
             got = fn()
             # read again and answered: the old rows of this source go, so a place the source
             # (or our filter) no longer has does not stay on the map
-            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/'}.get(name)
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/'}.get(name)
             if old and got:
                 for d in tiles.values():
                     for k in [k for k in d if str(k).startswith(old)]:

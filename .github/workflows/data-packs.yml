@@ -81,7 +81,7 @@ jobs:
           if [ "${{ github.event.inputs.mode }}" = "extra" ]; then
             python3 tool/build_packs.py --extra-only
           elif [ "${{ github.event.inputs.mode }}" = "places" ]; then
-            python3 tool/build_packs.py --refresh=overture,foursquare,alltheplaces
+            python3 tool/build_packs.py --refresh=overture,foursquare,alltheplaces,own
           else
             python3 tool/build_packs.py $(for f in osm/*/osm.json; do echo "--osm-json=$f"; done) $(for f in osm/*/private.json; do echo "--private-json=$f"; done)
           fi
