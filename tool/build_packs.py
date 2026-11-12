@@ -722,7 +722,8 @@ def fetch_alltheplaces():
                 break
             f.write(chunk)
     out, spiders, with_hours = [], set(), 0
-    keys = (b'"bicycle"', b'"motorcycle"', b'"scooter"', b'"motorcycle_repair"')
+    keys = (b'bicycle', b'motorcycle', b'scooter')
+    seen_all = {}  # every candidate by store list and country, to see what the filter leaves out
     with zipfile.ZipFile(path) as z:
         for name in z.namelist():
             if not name.endswith('.geojson'):
@@ -738,13 +739,17 @@ def fetch_alltheplaces():
                         continue
                     p = feat.get('properties') or {}
                     g = feat.get('geometry') or {}
-                    if p.get('shop') not in ATP_SHOPS or g.get('type') != 'Point' or p.get('end_date'):
+                    rental = p.get('amenity') == 'bicycle_rental' and p.get('bicycle_rental') != 'docking_station'
+                    if not (p.get('shop') in ATP_SHOPS or rental) or g.get('type') != 'Point' or p.get('end_date'):
                         continue
                     country = (p.get('addr:country') or '').upper()
-                    if country not in ('US', 'USA', 'PR') and not (not country and spider.endswith('_us')):
-                        continue
                     lon, lat = g['coordinates'][:2]
-                    tags = {'shop': p['shop']}
+                    seen_all[(spider, country)] = seen_all.get((spider, country), 0) + 1
+                    # the US by the country written, or, when none is written, by where the point is
+                    inside = any(a <= lat < c and b <= lon < d for a, b, c, d in REGIONS)
+                    if not (country in ('US', 'USA', 'PR', 'UNITED STATES') or (not country and inside)) or not inside:
+                        continue
+                    tags = {'shop': p['shop']} if p.get('shop') in ATP_SHOPS else {'amenity': 'bicycle_rental'}
                     street = p.get('addr:street_address') or ' '.join(x for x in (p.get('addr:housenumber'), p.get('addr:street')) if x) or p.get('addr:full')
                     tags.update({k: v for k, v in {
                         'name': p.get('name') or p.get('brand'), 'brand': p.get('brand'), 'website': p.get('website'),
@@ -759,6 +764,8 @@ def fetch_alltheplaces():
                     out.append([f'atp/{spider}-{ref}', round(lat, 6), round(lon, 6), tags])
                     spiders.add(spider)
     os.remove(path)
+    top = sorted(seen_all.items(), key=lambda x: -x[1])[:40]
+    print('All The Places candidates (list, country): ' + ', '.join(f'{k[0]}/{k[1] or "?"}:{v}' for k, v in top), flush=True)
     print(f"All The Places {info.get('run_id')}: {len(out)} shops from {len(spiders)} store lists, {with_hours} with hours", flush=True)
     return out
 

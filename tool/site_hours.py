@@ -263,6 +263,30 @@ def read_archive(url):
     return None
 
 
+READER = 2  # raised when the reader learns to find more: sites without hours are then read again
+
+
+def inner_links(page, url):
+    """Pages of the same site that the home page links to as hours, contact, visit or location."""
+    host = urllib.parse.urlsplit(url).netloc.lower().removeprefix('www.')
+    out = []
+    for m in re.finditer(r'<a\b[^>]*href\s*=\s*["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', page, re.S | re.I):
+        href, label = m.group(1).strip(), re.sub(r'<[^>]+>', ' ', m.group(2))
+        if not re.search(r'hours|contact|visit|location|find[\s_-]*us|directions|store[\s_-]*info', href + ' ' + label, re.I):
+            continue
+        full = urllib.parse.urljoin(url, href)
+        parts = urllib.parse.urlsplit(full)
+        if parts.scheme not in ('http', 'https') or parts.netloc.lower().removeprefix('www.') != host:
+            continue
+        if re.search(r'\.(pdf|jpe?g|png|gif|zip)$', parts.path, re.I) or full.rstrip('/') == url.rstrip('/'):
+            continue
+        if full not in out:
+            out.append(full)
+        if len(out) == 3:
+            break
+    return out
+
+
 def read_site(url):
     """{'h': hours or '', 'p': phone or '', 't': day checked} or None when the site did not answer."""
     try:
@@ -280,11 +304,12 @@ def read_site(url):
         today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
         if not rp.can_fetch(AGENT, url):
             return {'h': '', 'p': '', 't': today, 'no': 1}  # the site asks robots to stay out: we do
-        hours, phone = parse_page(_get(url))
+        home = _get(url)
+        hours, phone = parse_page(home)
         if not hours:
-            # many shops keep the hours on their contact page
-            for path in ('/contact', '/contact-us', '/hours'):
-                extra = base + path
+            # many shops keep the hours on another page: first the pages the home page itself links
+            # to as hours / contact / visit / location, then the usual addresses
+            for extra in (inner_links(home, url) + [base + x for x in ('/contact', '/contact-us', '/hours')])[:5]:
                 if not rp.can_fetch(AGENT, extra):
                     continue
                 try:
@@ -294,7 +319,7 @@ def read_site(url):
                 hours, phone = h2, phone or p2
                 if hours:
                     break
-        return {'h': hours or '', 'p': phone or '', 't': today}
+        return {'h': hours or '', 'p': phone or '', 't': today, 'v': READER}
     except Exception as err:
         code = getattr(err, 'code', None)
         why = f'http {code}' if code else type(getattr(err, 'reason', err)).__name__
@@ -397,6 +422,8 @@ def main():
                 continue
             e = known.get(u)
             age = (today - datetime.strptime(e['t'], '%Y-%m-%d').replace(tzinfo=timezone.utc)).days if e else 10 ** 6
+            if e and not e.get('h') and not e.get('no') and not e.get('x') and e.get('v', 1) < READER:
+                age = 10 ** 5  # read before the reader learned the inner pages: once more now
             if age >= RECHECK_DAYS:
                 due.append((age, u))
         due = [u for _, u in sorted(set(due), reverse=True)]  # never read first, then the oldest
