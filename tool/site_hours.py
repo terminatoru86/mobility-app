@@ -61,6 +61,40 @@ def _join(by_day):
     return '; '.join(parts)
 
 
+_D2 = '(?:Mo|Tu|We|Th|Fr|Sa|Su)'
+_R2 = r'\d{1,2}:\d{2}(?::\d{2})?\s*-\s*\d{1,2}:\d{2}(?::\d{2})?'
+_PART = re.compile(rf'({_D2}(?:\s*-\s*{_D2})?(?:\s*,\s*{_D2}(?:\s*-\s*{_D2})?)*)\s+(off|closed|{_R2}(?:\s*,\s*{_R2})*)', re.I)
+
+
+def tidy(text):
+    """Hours a site wrote its own way ("Mo 10:00:00-19:00:00, Tu ...") -> our one form, or None when
+    they contradict themselves (a day with two different hours) or nothing readable is there."""
+    by_day = {}
+    for m in _PART.finditer(text or ''):
+        val = m.group(2).lower()
+        if val in ('off', 'closed'):
+            val = 'off'
+        else:
+            rs = []
+            for o, c in re.findall(r'(\d{1,2}:\d{2})(?::\d{2})?\s*-\s*(\d{1,2}:\d{2})(?::\d{2})?', val):
+                o, c = _hhmm(o), _hhmm(c)
+                if o == c:
+                    continue
+                rs.append(f'{o}-{c}')
+            val = ','.join(rs) or 'off'
+        days = []
+        for piece in re.split(r'\s*,\s*', m.group(1)):
+            ab = [DAYS.index(x.capitalize()) for x in re.split(r'\s*-\s*', piece)]
+            days += [ab[0]] if len(ab) == 1 else (list(range(ab[0], ab[1] + 1)) if ab[1] >= ab[0] else list(range(ab[0], 7)) + list(range(0, ab[1] + 1)))
+        for d in days:
+            if by_day.get(d, val) != val:
+                return None
+            by_day[d] = val
+    if not by_day or all(v == 'off' for v in by_day.values()):
+        return None
+    return _join(by_day)
+
+
 def _from_spec(spec):
     by_day = {}
     for s in spec if isinstance(spec, list) else [spec]:
@@ -91,7 +125,8 @@ def _walk(node, hours, phones):
         else:
             oh = node.get('openingHours')
             text = ('; '.join(map(str, oh)) if isinstance(oh, list) else str(oh or '')).strip()
-            if re.search(r'\d{1,2}:\d{2}', text) and len(text) < 160:
+            text = tidy(text) if len(text) < 400 else None
+            if text:
                 hours.add(text)
         tel = node.get('telephone')
         if isinstance(tel, str) and re.search(r'\d{3}', tel) and len(tel) < 30:
@@ -293,6 +328,9 @@ def main():
     every = [r for rows in tiles.values() for r in rows]
     known = load_list()
     shared = shared_sites(every)
+    for e in known.values():
+        if e.get('h'):
+            e['h'] = tidy(e['h']) or ''  # everything in one form; what cannot be read is dropped
     if '--apply' not in sys.argv:
         today = datetime.now(timezone.utc)
         due = []
@@ -330,6 +368,8 @@ def main():
         os.makedirs(os.path.dirname(LIST), exist_ok=True)
         with open(LIST, 'w', encoding='utf-8') as f:
             json.dump(dict(sorted(known.items())), f, indent=0, ensure_ascii=False, sort_keys=True)
+    with open(LIST, 'w', encoding='utf-8') as f:
+        json.dump(dict(sorted(known.items())), f, indent=0, ensure_ascii=False, sort_keys=True)
     n = apply(every, known, shared)
     index_path = os.path.join(OUT, 'index.json')
     index = json.load(open(index_path))
