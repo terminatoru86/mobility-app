@@ -739,7 +739,10 @@ def fetch_alltheplaces():
                         continue
                     p = feat.get('properties') or {}
                     g = feat.get('geometry') or {}
-                    rental = p.get('amenity') == 'bicycle_rental' and p.get('bicycle_rental') != 'docking_station'
+                    # a rental SHOP: has its own page or phone. The share feeds (gbfs) are stations, which we already
+                    # have live from the operators, so they are left out here
+                    rental = (p.get('amenity') == 'bicycle_rental' and p.get('bicycle_rental') != 'docking_station'
+                              and spider != 'gbfs' and bool(p.get('website') or p.get('phone')))
                     if not (p.get('shop') in ATP_SHOPS or rental) or g.get('type') != 'Point' or p.get('end_date'):
                         continue
                     country = (p.get('addr:country') or '').upper()

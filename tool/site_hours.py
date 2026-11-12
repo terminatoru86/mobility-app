@@ -221,12 +221,16 @@ _crawls = []
 def crawl_ids():
     """The newest Common Crawl collections (a public archive of the web, crawled with the sites' consent)."""
     if not _crawls:
-        try:
-            req = urllib.request.Request('https://index.commoncrawl.org/collinfo.json', headers=UA)
-            with urllib.request.urlopen(req, timeout=30) as r:
-                _crawls.extend(c['id'] for c in json.loads(r.read())[:3])
-        except Exception as err:
-            print(f'Common Crawl list failed: {err}', flush=True)
+        for wait in (0, 20, 60, 120):  # the index is often busy for a moment
+            time.sleep(wait)
+            try:
+                req = urllib.request.Request('https://index.commoncrawl.org/collinfo.json', headers=UA)
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    _crawls.extend(c['id'] for c in json.loads(r.read())[:3])
+                break
+            except Exception as err:
+                print(f'Common Crawl list failed: {err}', flush=True)
+        else:
             _crawls.append(None)
     return [c for c in _crawls if c]
 
