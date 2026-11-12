@@ -944,6 +944,14 @@ def main():
             else:
                 seen.add((n, round(r[1] / 0.0015), round(r[2] / 0.002)))
     print(f'duplicates removed: {dropped}', flush=True)
+    # hours and phone read from the shops' own websites (our list, data/site_hours.json; tool/site_hours.py)
+    try:
+        import site_hours
+        every = [r for d in tiles.values() for r in d.values()]
+        n_hours = site_hours.apply(every, site_hours.load_list(), site_hours.shared_sites(every))
+        print(f'hours from websites: {n_hours} places', flush=True)
+    except Exception as err:
+        print(f'hours from websites failed: {err}', flush=True)
     # only the US (some sources have places abroad or broken coordinates)
     for k in [k for k in tiles if not (17 <= k[0] < 72 and -180 <= k[1] < -64)]:
         tiles.pop(k)

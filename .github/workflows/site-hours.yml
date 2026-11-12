@@ -1,0 +1,36 @@
+name: Hours from the shops' websites
+
+# Reads the opening hours and phone from the own website of every shop, workshop and rental that
+# has none on the map, keeps them in our list (data/site_hours.json) and writes them into the data
+# packs, so every rider gets them. Each website is read again about once a month.
+on:
+  # every Wednesday early morning (Chicago)
+  schedule:
+    - cron: '23 9 * * 3'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  hours:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read the websites
+        env:
+          HOURS_MINUTES: '60'
+        run: python3 tool/site_hours.py
+      - name: Save in the repository
+        run: |
+          git config user.name "mobility-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A assets/osm/tiles data/site_hours.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Hours from websites $(date -u +%Y-%m-%d)"
+          git pull --rebase -X theirs
+          git push
