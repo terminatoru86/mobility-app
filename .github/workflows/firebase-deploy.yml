@@ -37,5 +37,7 @@ jobs:
           export GOOGLE_APPLICATION_CREDENTIALS=$RUNNER_TEMP/sa.json
           npm install -g firebase-tools
           cd server/functions && npm install && cd ..
-          firebase deploy --only functions,firestore --project "$PID" --non-interactive --force
+          # the rules first: they work on the free plan; the function needs the Blaze plan
+          firebase deploy --only firestore:rules --project "$PID" --non-interactive --force
+          firebase deploy --only functions --project "$PID" --non-interactive --force || echo "::warning::Function not deployed (needs the Blaze plan). The Firestore rules are live."
           echo "Function URL: https://us-central1-$PID.cloudfunctions.net/zoneLedger"

@@ -199,9 +199,10 @@ class _PlaceSheetState extends State<PlaceSheet> {
     final box = _contentKey.currentContext?.findRenderObject() as RenderBox?;
     // + the line around the sheet and the gap under it
     if (box != null && box.hasSize) widget.onHeight?.call(box.size.height + 10);
-    // a rental shop opens down to the row with your vehicle, the time and the distance
+    // a rental shop or a shop opens down to the row with the distance and the time
     final row = _firstRowKey.currentContext?.findRenderObject() as RenderBox?;
-    if (box != null && row != null && row.hasSize && widget.place.type == PlaceType.rent) {
+    final t = widget.place.type;
+    if (box != null && row != null && row.hasSize && (t == PlaceType.rent || t == PlaceType.shop)) {
       final bottom = row.localToGlobal(Offset(0, row.size.height)).dy - box.localToGlobal(Offset.zero).dy;
       widget.onPeek?.call(bottom + 12);
     }
@@ -316,7 +317,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
         const SizedBox(height: 8),
         Builder(builder: (_) {
           final eta = p.etaMin[widget.myVehicle ?? Vehicle.bike] ?? (p.etaMin.isEmpty ? null : p.etaMin.values.first);
-          return Row(children: [
+          return Row(key: _firstRowKey, children: [
             Expanded(child: FactTile(p.distance, 'distance')),
             const SizedBox(width: 8),
             Expanded(child: FactTile(eta == null ? '—' : '$eta min', eta == null ? 'time' : arrivalTime(eta))),
