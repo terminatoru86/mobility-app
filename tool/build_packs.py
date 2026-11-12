@@ -940,6 +940,13 @@ def main():
             continue
         try:
             got = fn()
+            # read again and answered: the old rows of this source go, so a place the source
+            # (or our filter) no longer has does not stay on the map
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/'}.get(name)
+            if old and got:
+                for d in tiles.values():
+                    for k in [k for k in d if str(k).startswith(old)]:
+                        del d[k]
             for x in got:
                 if not args or (boxes[0][0] <= x[1] < boxes[0][2] and boxes[0][1] <= x[2] < boxes[0][3]):
                     tiles.setdefault((math.floor(x[1]), math.floor(x[2])), {})[x[0]] = x
