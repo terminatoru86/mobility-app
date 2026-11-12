@@ -373,6 +373,15 @@ def shared_sites(rows_iter):
     return shared
 
 
+def afternoon(hours):
+    """A shop that opens in the morning and "closes" before 9 wrote its closing hour without pm
+    ("10-6"): 10:00-06:00 is 10:00-18:00."""
+    def fix(m):
+        o, c = int(m.group(1)), int(m.group(3))
+        return f'{m.group(1)}:{m.group(2)}-{c + 12:02d}:{m.group(4)}' if 6 <= o <= 12 and c <= 9 and c < o else m.group(0)
+    return re.sub(r'(\d\d):(\d\d)-(\d\d):(\d\d)', fix, hours)
+
+
 def apply(rows_iter, known, shared):
     """Writes the hours and phone we hold into the places that lack them. Returns how many got hours."""
     n = 0
@@ -390,7 +399,7 @@ def apply(rows_iter, known, shared):
         if not e:
             continue
         if e.get('h') and (ours or not t.get('opening_hours')):
-            t['opening_hours'] = e['h']
+            t['opening_hours'] = afternoon(e['h'])
             t['hours:source'] = 'website'
             n += 1
         if e.get('p') and not (t.get('phone') or t.get('contact:phone')):
