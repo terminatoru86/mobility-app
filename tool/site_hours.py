@@ -215,6 +215,54 @@ def _get(url, timeout=10):
         return r.read(2_500_000).decode('utf-8', 'replace')
 
 
+_crawls = []
+
+
+def crawl_ids():
+    """The newest Common Crawl collections (a public archive of the web, crawled with the sites' consent)."""
+    if not _crawls:
+        try:
+            req = urllib.request.Request('https://index.commoncrawl.org/collinfo.json', headers=UA)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                _crawls.extend(c['id'] for c in json.loads(r.read())[:3])
+        except Exception as err:
+            print(f'Common Crawl list failed: {err}', flush=True)
+            _crawls.append(None)
+    return [c for c in _crawls if c]
+
+
+def read_archive(url):
+    """The page as Common Crawl saved it in its last crawls, for a site that does not answer us.
+    Returns an entry like read_site, or None when the archive does not have the page."""
+    for crawl in crawl_ids():
+        try:
+            q = urllib.parse.urlencode({'url': url, 'output': 'json', 'limit': '3', 'filter': 'status:200'})
+            req = urllib.request.Request(f'https://index.commoncrawl.org/{crawl}-index?{q}', headers=UA)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                lines = [json.loads(x) for x in r.read().decode().splitlines() if x.startswith('{')]
+        except Exception:
+            continue  # not in this crawl (the index answers 404), or busy
+        for rec in lines:
+            if 'html' not in rec.get('mime', 'html'):
+                continue
+            try:
+                a, n = int(rec['offset']), int(rec['length'])
+                req = urllib.request.Request('https://data.commoncrawl.org/' + rec['filename'],
+                                             headers={**UA, 'Range': f'bytes={a}-{a + n - 1}'})
+                with urllib.request.urlopen(req, timeout=40) as r:
+                    raw = gzip.decompress(r.read())
+                page = raw.split(b'\r\n\r\n', 2)[-1].decode('utf-8', 'replace')
+                hours, phone = parse_page(page)
+                # the day of the saved copy: hours older than a year are not used
+                day = f"{rec['timestamp'][:4]}-{rec['timestamp'][4:6]}-{rec['timestamp'][6:8]}"
+                if (datetime.now(timezone.utc) - datetime.strptime(day, '%Y-%m-%d').replace(tzinfo=timezone.utc)).days > 365:
+                    hours = None
+                return {'h': hours or '', 'p': phone or '', 't': datetime.now(timezone.utc).strftime('%Y-%m-%d'), 'cc': day}
+            except Exception:
+                continue
+    return None
+
+
 def read_site(url):
     """{'h': hours or '', 'p': phone or '', 't': day checked} or None when the site did not answer."""
     try:
@@ -235,7 +283,7 @@ def read_site(url):
         hours, phone = parse_page(_get(url))
         if not hours:
             # many shops keep the hours on their contact page
-            for path in ('/contact', '/hours'):
+            for path in ('/contact', '/contact-us', '/hours'):
                 extra = base + path
                 if not rp.can_fetch(AGENT, extra):
                     continue
@@ -247,8 +295,14 @@ def read_site(url):
                 if hours:
                     break
         return {'h': hours or '', 'p': phone or '', 't': today}
-    except Exception:
+    except Exception as err:
+        code = getattr(err, 'code', None)
+        why = f'http {code}' if code else type(getattr(err, 'reason', err)).__name__
+        _why[why] = _why.get(why, 0) + 1
         return None
+
+
+_why = {}
 
 
 def norm_url(u):
@@ -363,6 +417,27 @@ def main():
                     failed += 1  # no answer: asked again next time
                 else:
                     known[u] = e
+        print(f'no answer, by reason: {dict(sorted(_why.items(), key=lambda x: -x[1])[:8])}', flush=True)
+        # the sites that did not answer us: the copy a public web archive (Common Crawl) holds
+        silent = [u for u in due if u not in known]
+        end2 = time.time() + float(os.environ.get('ARCHIVE_MINUTES', '40')) * 60
+        got = hit = 0
+
+        def two(u):
+            return (u, read_archive(u)) if time.time() < end2 else (u, 'late')
+
+        with ThreadPoolExecutor(max_workers=6) as pool:  # the archive index asks for few requests at a time
+            for u, e in pool.map(two, silent):
+                if e == 'late':
+                    continue
+                got += 1
+                today_s = today.strftime('%Y-%m-%d')
+                if e is None:
+                    known[u] = {'h': '', 'p': '', 't': today_s, 'x': 1}  # no answer anywhere: asked again in a month
+                else:
+                    known[u] = e
+                    hit += 1 if e.get('h') else 0
+        print(f'from the web archive: asked {got} of {len(silent)}, hours found for {hit}', flush=True)
         with_h = sum(1 for e in known.values() if e.get('h'))
         print(f'read now: {done} (no answer: {failed}) · in our list: {len(known)} websites, {with_h} with hours', flush=True)
         os.makedirs(os.path.dirname(LIST), exist_ok=True)

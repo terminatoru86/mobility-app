@@ -700,6 +700,69 @@ def fetch_overture():
     return out
 
 
+ATP_SHOPS = {'bicycle', 'motorcycle', 'scooter', 'motorcycle_repair'}
+
+
+def fetch_alltheplaces():
+    """All The Places (data CC0, weekly): the store lists that chains and brands publish on their own
+    websites (Trek, Harley-Davidson, Cycle Gear, dealers of the motorcycle makers...). The one open
+    source that carries OPENING HOURS, with phone and the page of each store."""
+    import tempfile
+    import zipfile
+    info = json.loads(http('https://data.alltheplaces.xyz/runs/latest.json', timeout=60))
+    url = info.get('output_url')
+    if not url:
+        raise RuntimeError(f'no output_url in latest.json: {list(info)[:8]}')
+    path = os.path.join(tempfile.gettempdir(), 'atp.zip')
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=600) as r, open(path, 'wb') as f:
+        while True:
+            chunk = r.read(1 << 20)
+            if not chunk:
+                break
+            f.write(chunk)
+    out, spiders, with_hours = [], set(), 0
+    keys = (b'"bicycle"', b'"motorcycle"', b'"scooter"', b'"motorcycle_repair"')
+    with zipfile.ZipFile(path) as z:
+        for name in z.namelist():
+            if not name.endswith('.geojson'):
+                continue
+            spider = os.path.basename(name)[:-8]
+            with z.open(name) as f:
+                for line in f:  # one place per line
+                    if not any(k in line for k in keys):
+                        continue
+                    try:
+                        feat = json.loads(line.strip().rstrip(b','))
+                    except Exception:
+                        continue
+                    p = feat.get('properties') or {}
+                    g = feat.get('geometry') or {}
+                    if p.get('shop') not in ATP_SHOPS or g.get('type') != 'Point' or p.get('end_date'):
+                        continue
+                    country = (p.get('addr:country') or '').upper()
+                    if country not in ('US', 'USA', 'PR') and not (not country and spider.endswith('_us')):
+                        continue
+                    lon, lat = g['coordinates'][:2]
+                    tags = {'shop': p['shop']}
+                    street = p.get('addr:street_address') or ' '.join(x for x in (p.get('addr:housenumber'), p.get('addr:street')) if x) or p.get('addr:full')
+                    tags.update({k: v for k, v in {
+                        'name': p.get('name') or p.get('brand'), 'brand': p.get('brand'), 'website': p.get('website'),
+                        'phone': p.get('phone'), 'email': p.get('email'), 'opening_hours': p.get('opening_hours'),
+                        'addr:street': street}.items() if v and isinstance(v, str)})
+                    if not tags.get('name'):
+                        continue
+                    if tags.get('opening_hours'):
+                        with_hours += 1
+                    tags['source'] = 'All The Places'
+                    ref = re.sub(r'[^A-Za-z0-9_.-]+', '-', str(p.get('ref') or f'{lat:.5f},{lon:.5f}'))[:60]
+                    out.append([f'atp/{spider}-{ref}', round(lat, 6), round(lon, 6), tags])
+                    spiders.add(spider)
+    os.remove(path)
+    print(f"All The Places {info.get('run_id')}: {len(out)} shops from {len(spiders)} store lists, {with_hours} with hours", flush=True)
+    return out
+
+
 CONTACTS = os.environ.get('CONTACTS_OUT') or os.path.join(ROOT, 'data', 'contacts', 'business_contacts.csv')
 
 
@@ -815,6 +878,8 @@ def main():
     args = [float(a) for a in sys.argv[1:] if not a.startswith('--')][:4]
     boxes = [tuple(int(math.floor(v)) if k < 2 else int(math.ceil(v)) for k, v in enumerate(args))] if args else REGIONS
     tiles = {}
+    # --refresh=overture,foursquare,alltheplaces : only these sources again, everything else kept
+    refresh = {x for a in sys.argv if a.startswith('--refresh=') for x in a.split('=', 1)[1].split(',') if x}
     osm_files = [a.split('=', 1)[1] for a in sys.argv if a.startswith('--osm-json=')]
     if osm_files:
         # fast path: places already taken out of the Geofabrik extracts (tool/osm_extract.py)
@@ -822,6 +887,14 @@ def main():
             for r in json.load(open(fpath, encoding='utf-8')):
                 tiles.setdefault((math.floor(r[1]), math.floor(r[2])), {})[r[0]] = r
         print(f'OpenStreetMap from {len(osm_files)} extracts: {sum(len(d) for d in tiles.values())} places', flush=True)
+    elif refresh:
+        # light run: keep every place already built; read again only the named sources
+        for name in os.listdir(OUT) if os.path.isdir(OUT) else []:
+            m = re.match(r't_(-?\d+)_(-?\d+)\.json\.gz$', name)
+            if m:
+                rows = json.loads(gzip.decompress(open(os.path.join(OUT, name), 'rb').read()))
+                tiles[(int(m.group(1)), int(m.group(2)))] = {r[0]: r for r in rows}
+        print(f'Kept all places of {len(tiles)} tiles; reading again: {sorted(refresh)}', flush=True)
     elif '--extra-only' in sys.argv:
         # keep the OpenStreetMap places already built; only (re)add the other sources
         for name in os.listdir(OUT) if os.path.isdir(OUT) else []:
@@ -851,7 +924,10 @@ def main():
                     pass
     counts_src = {}
     for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture), ('foursquare', fetch_foursquare),
+                     ('alltheplaces', fetch_alltheplaces),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
+        if refresh and name not in refresh:
+            continue
         try:
             got = fn()
             for x in got:
@@ -867,17 +943,18 @@ def main():
         except Exception as err:
             counts_src[name] = f'failed: {str(err)[:150]}'
     stage(f'2/6 sources {counts_src} · {sum(len(d) for d in tiles.values())} places')
-    known_srcs = city_sources()
+    known_srcs = [] if refresh else city_sources()
     known = {s.get('arcgis') for s in known_srcs if s.get('arcgis')} | {s.get('socrata') for s in known_srcs if s.get('socrata')}
     discovered = []
-    try:
-        discovered += discover_arcgis(known)
-    except Exception as err:
-        print(f'ArcGIS discovery failed: {err}', flush=True)
-    try:
-        discovered += discover_socrata(known)
-    except Exception as err:
-        print(f'Socrata discovery failed: {err}', flush=True)
+    if not refresh:
+        try:
+            discovered += discover_arcgis(known)
+        except Exception as err:
+            print(f'ArcGIS discovery failed: {err}', flush=True)
+        try:
+            discovered += discover_socrata(known)
+        except Exception as err:
+            print(f'Socrata discovery failed: {err}', flush=True)
     stage(f'3/6 discovery done: {len(discovered)} new public layers')
     found_log = []
     city_end = time.time() + 45 * 60  # found-by-search layers get 45 min; our own list always runs
@@ -906,7 +983,7 @@ def main():
     priv_files = [x.split('=', 1)[1] for x in sys.argv if x.startswith('--private-json=')]
     n_areas, n_priv = mark_private(tiles, priv_files) if priv_files else (0, 0)
     print(f'private areas: {n_areas}, racks on private property: {n_priv}', flush=True)
-    n_mail = write_contacts(tiles, save=not args and '--extra-only' not in sys.argv)
+    n_mail = write_contacts(tiles, save=not args and '--extra-only' not in sys.argv and not refresh)
     stage(f'5/6 emails: {n_mail} · private areas: {n_areas}, racks made private: {n_priv}')
     # the same place from several sources (e.g. copies of a city's rack list re-uploaded by students):
     # keep one per ~5 m. OpenStreetMap first, then our own city list, then everything else.
@@ -928,22 +1005,34 @@ def main():
     def norm(n):
         n = unicodedata.normalize('NFKD', n or '').encode('ascii', 'ignore').decode().lower()
         return re.sub(r'[^a-z0-9]+', '', re.sub(r'\b(the|inc|llc|co|shop|store|bikes?|bicycles?|cycles?)\b', '', n))
+    merged = {}
     for key, d in tiles.items():
-        seen = set()
-        for r in sorted(d.values(), key=lambda r: (rank(r), 0 if r[0].startswith('ovt/') else 1, r[0])):
+        seen = {}
+        # All The Places first among the others: it is the stores' own list, with hours
+        for r in sorted(d.values(), key=lambda r: (rank(r), 0 if r[0].startswith('atp/') else 1 if r[0].startswith('ovt/') else 2, r[0])):
             t = r[3]
             if not (t.get('shop') or t.get('amenity') == 'bicycle_rental') or not t.get('name'):
                 continue
-            n = norm(t['name'])
-            if not n:
+            # by name, and by brand too ("Trek Bicycle Lincoln Park" and "Trek Bicycle Store" are one shop)
+            ns = [x for x in dict.fromkeys([norm(t['name']), norm(t.get('brand', ''))]) if x]
+            if not ns:
                 continue
-            cells = {(n, round(r[1] / 0.0015) + i, round(r[2] / 0.002) + j) for i in (-1, 0, 1) for j in (-1, 0, 1)}
-            if any(c in seen for c in cells) and rank(r) > 0:
+            cells = [(n, round(r[1] / 0.0015) + i, round(r[2] / 0.002) + j) for n in ns for i in (-1, 0, 1) for j in (-1, 0, 1)]
+            first = next((seen[c] for c in cells if c in seen), None)
+            if first is not None and rank(r) > 0:
+                # the copy goes, but what it knows and the kept one lacks stays: website, phone, hours, email
+                kt = first[3]
+                for k in ('website', 'phone', 'opening_hours', 'email', 'brand'):
+                    alt = {'website': 'contact:website', 'phone': 'contact:phone', 'email': 'contact:email'}.get(k)
+                    if t.get(k) and not kt.get(k) and not (alt and kt.get(alt)):
+                        kt[k] = t[k]
+                        merged[k] = merged.get(k, 0) + 1
                 d.pop(r[0])
                 dropped += 1
             else:
-                seen.add((n, round(r[1] / 0.0015), round(r[2] / 0.002)))
-    print(f'duplicates removed: {dropped}', flush=True)
+                for n in ns:
+                    seen[(n, round(r[1] / 0.0015), round(r[2] / 0.002))] = r
+    print(f'duplicates removed: {dropped} · filled from the copies: {merged}', flush=True)
     # hours and phone read from the shops' own websites (our list, data/site_hours.json; tool/site_hours.py)
     try:
         import site_hours
@@ -956,7 +1045,7 @@ def main():
     for k in [k for k in tiles if not (17 <= k[0] < 72 and -180 <= k[1] < -64)]:
         tiles.pop(k)
     os.makedirs(OUT, exist_ok=True)
-    if not args and '--extra-only' not in sys.argv:
+    if not args and '--extra-only' not in sys.argv and not refresh:
         # full build: pieces that no longer have places are removed
         keep = {f't_{a}_{b}.json.gz' for (a, b) in tiles}
         for name in os.listdir(OUT):
@@ -982,7 +1071,7 @@ def main():
     index = {
         'at': datetime.now(timezone.utc).strftime('%Y-%m-%d'),
         'tiles': dict(sorted(counts.items())),
-        'cities': sorted(set(cities) | (set(index.get('cities', [])) if args else set())),
+        'cities': sorted(set(cities) | (set(index.get('cities', [])) if args or refresh else set())),
         'total': sum(v[0] if isinstance(v, list) else v for v in counts.values()),
         # partial builds: which boxes are covered (the app asks OpenStreetMap live outside them)
         **({'boxes': (index.get('boxes', []) + [list(boxes[0])])} if args else {}),
@@ -990,8 +1079,9 @@ def main():
     with open(index_path, 'w') as f:
         json.dump(index, f, separators=(',', ':'))
     # list of the automatically found sources (for the manual / checking)
-    with open(os.path.join(OUT, 'sources.json'), 'w', encoding='utf-8') as f:
-        json.dump(sorted(found_log, key=lambda x: -x['places']), f, indent=1, ensure_ascii=False)
+    if not refresh:
+        with open(os.path.join(OUT, 'sources.json'), 'w', encoding='utf-8') as f:
+            json.dump(sorted(found_log, key=lambda x: -x['places']), f, indent=1, ensure_ascii=False)
     stage(f"6/6 done: {index['total']} places in {len(counts)} tiles · duplicates removed: {dropped}")
 
 

@@ -15,7 +15,7 @@ permissions:
 jobs:
   hours:
     runs-on: ubuntu-latest
-    timeout-minutes: 100
+    timeout-minutes: 140
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -24,6 +24,7 @@ jobs:
       - name: Read the websites
         env:
           HOURS_MINUTES: '60'
+          ARCHIVE_MINUTES: '45'
         run: python3 tool/site_hours.py
       - name: Save in the repository
         run: |

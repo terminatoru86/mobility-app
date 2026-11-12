@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'full = everything again; extra = keep OpenStreetMap, redo the other sources'
+        description: 'full = everything again; extra = keep OpenStreetMap, redo the other sources; places = only shops again (Overture, Foursquare, All The Places)'
         required: false
         default: 'full'
 
@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   osm:
-    if: github.event.inputs.mode != 'extra'
+    if: github.event.inputs.mode != 'extra' && github.event.inputs.mode != 'places'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     strategy:
@@ -60,7 +60,7 @@ jobs:
 
   build:
     needs: osm
-    if: always() && (needs.osm.result == 'success' || github.event.inputs.mode == 'extra')
+    if: always() && (needs.osm.result == 'success' || github.event.inputs.mode == 'extra' || github.event.inputs.mode == 'places')
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
@@ -69,7 +69,7 @@ jobs:
         with:
           python-version: '3.12'
       - uses: actions/download-artifact@v4
-        if: github.event.inputs.mode != 'extra'
+        if: github.event.inputs.mode != 'extra' && github.event.inputs.mode != 'places'
         with:
           path: osm
       - name: Build the packs
@@ -80,6 +80,8 @@ jobs:
           pip install duckdb
           if [ "${{ github.event.inputs.mode }}" = "extra" ]; then
             python3 tool/build_packs.py --extra-only
+          elif [ "${{ github.event.inputs.mode }}" = "places" ]; then
+            python3 tool/build_packs.py --refresh=overture,foursquare,alltheplaces
           else
             python3 tool/build_packs.py $(for f in osm/*/osm.json; do echo "--osm-json=$f"; done) $(for f in osm/*/private.json; do echo "--private-json=$f"; done)
           fi
@@ -87,7 +89,7 @@ jobs:
         run: |
           git config user.name "mobility-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A assets/osm/tiles data/contacts
+          git add -A assets/osm/tiles data/contacts data/site_hours.json
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Data packs $(date -u +%Y-%m-%d)"
           git pull --rebase -X theirs || { git checkout --theirs assets/osm/tiles data/contacts; git add -A assets/osm/tiles data/contacts; GIT_EDITOR=true git rebase --continue; }
