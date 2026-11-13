@@ -158,6 +158,8 @@ def _kv_wait():
 
 
 def kartaview(p):
+    if os.environ.get('PHOTO_KARTAVIEW') != '1':
+        return []  # off: it says "too many requests" to almost everything and slowed the whole run for 11 photos
     if (KV['host'] is None and KV['fails'] >= 120) or KV['busy'] >= 40:
         return []  # it does not answer today (or keeps saying "too many"): not asked 30,000 times
     _kv_wait()
