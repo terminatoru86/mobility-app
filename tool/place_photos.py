@@ -7,9 +7,14 @@ For every named shop, service hub and rental in the data packs it looks for stre
   - with the camera turned towards the place (at most 25 degrees off),
 in Mapillary, Panoramax and KartaView (all open licences; faces and number plates are blurred
 by the source). 360-degree pictures are left out (flattened, they show the place bent).
+It also reads the place's own website (robots.txt respected, like the hours reader) and keeps the
+pictures the shop itself describes as its storefront / exterior / building (by the picture's
+description or file name; logos, products and inside views are left out; a picture known to be
+older than 2024 is left out). Websites shared by several places and social networks are not read.
 The best ones (straight at the place, from about 12 m, newest) are kept in data/place_photos.json:
 
   { place id: { "t": day checked, "p": [[source, photo id or address, "YYYY-MM", metres, degrees off], ...] } }
+  (for a picture from the website: ["website", address, "YYYY-MM" or "", 0, 0])
 
 Only where a photo is, not the picture itself: the app shows it from its source, with the credit.
 A place is looked up again after RECHECK_DAYS. Nothing else is read: no private cameras, no
@@ -23,7 +28,9 @@ import re
 import sys
 import time
 import urllib.parse
+import html as htmllib
 import urllib.request
+import urllib.robotparser
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
@@ -145,6 +152,131 @@ def kartaview(p):
     return out
 
 
+# ───────── the shop's own website: pictures it describes as its storefront ─────────
+FRONT = re.compile(r'store[\s_-]*front|shop[\s_-]*front|exterior|outside|fa[cç]ade|building|street[\s_-]*view|entrance'
+                   r'|front[\s_-]*(of|door|view)|our[\s_-]*(shop|store|location|building)|(shop|store)[\s_-]*(photo|exterior|outside|building)', re.I)
+NOT_FRONT = re.compile(r'logo|icon|sprite|avatar|badge|favicon|placeholder|product|interior|inside|map|payment|banner[\s_-]*ad'
+                       r'|\.svg|\.gif|data:', re.I)
+SOCIAL = re.compile(r'(^|\.)(facebook|instagram|yelp|google|goo|linktr|twitter|x|tiktok|youtube|linkedin)\.(com|gl|ee)$', re.I)
+WEB_UA = {'User-Agent': 'MOBIlityBot/1.0 (storefront photo for a cycling map; github.com/terminatoru86/mobility-app)',
+          'Accept': 'text/html,*/*;q=0.5'}
+
+
+def _page(url, timeout=10):
+    req = urllib.request.Request(url, headers=WEB_UA)
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        if 'html' not in (r.headers.get('Content-Type') or 'html'):
+            return ''
+        return r.read(2_000_000).decode('utf-8', 'replace')
+
+
+def front_pictures(page, url):
+    """Addresses of the pictures on the page that the site itself describes as the storefront."""
+    out = []
+    for m in re.finditer(r'<img\b[^>]*>', page, re.I):
+        tag = m.group(0)
+        at = {k.lower(): htmllib.unescape(v) for k, _, v in re.findall(r'([\w:-]+)\s*=\s*(["\'])(.*?)\2', tag, re.S)}
+        src = at.get('src') or at.get('data-src') or at.get('data-lazy-src') or ''
+        if not src or src.startswith('data:'):
+            src = (at.get('srcset') or at.get('data-srcset') or '').split(',')[-1].strip().split(' ')[0]
+        if not src:
+            continue
+        name = urllib.parse.unquote(urllib.parse.urlsplit(src).path.rsplit('/', 1)[-1])
+        said = ' '.join([at.get('alt', ''), at.get('title', ''), name])
+        if not FRONT.search(said) or NOT_FRONT.search(said + ' ' + at.get('class', '')):
+            continue
+        try:  # tiny pictures are thumbnails or decorations
+            if int(at.get('width', '9999')) < 300 or int(at.get('height', '9999')) < 200:
+                continue
+        except ValueError:
+            pass
+        full = urllib.parse.urljoin(url, src)
+        if full.startswith('http') and full not in out:
+            out.append(full)
+    return out
+
+
+def picture_date(url):
+    """(still there and a picture, 'YYYY-MM' or ''): from the address (/2023/05/) or the server's own date."""
+    when = ''
+    m = re.search(r'/(20[0-2]\d)/(0[1-9]|1[0-2])/', url)
+    if m:
+        when = f'{m.group(1)}-{m.group(2)}'
+    for method in ('HEAD', 'GET'):
+        try:
+            req = urllib.request.Request(url, headers={**WEB_UA, 'Accept': 'image/*'}, method=method)
+            with urllib.request.urlopen(req, timeout=8) as r:
+                if not (r.headers.get('Content-Type') or '').startswith('image/'):
+                    return False, when
+                size = r.headers.get('Content-Length')
+                if size and size.isdigit() and int(size) < 15000:
+                    return False, when  # a thumbnail
+                lm = r.headers.get('Last-Modified')
+                if lm and not when:
+                    try:
+                        from email.utils import parsedate_to_datetime
+                        when = parsedate_to_datetime(lm).strftime('%Y-%m')
+                    except Exception:
+                        pass
+                return True, when
+        except Exception:
+            continue
+    return False, when
+
+
+def website(url):
+    """Storefront pictures from the place's own website: rows ['website', address, 'YYYY-MM' or '', 0, 0]."""
+    parts = urllib.parse.urlsplit(url)
+    host = parts.netloc.lower().removeprefix('www.')
+    if parts.scheme not in ('http', 'https') or not host or SOCIAL.search(host):
+        return []
+    base = f'{parts.scheme}://{parts.netloc}'
+    rp = urllib.robotparser.RobotFileParser()
+    try:
+        req = urllib.request.Request(base + '/robots.txt', headers=WEB_UA)
+        with urllib.request.urlopen(req, timeout=8) as r:
+            rp.parse(r.read(200_000).decode('utf-8', 'replace').splitlines())
+    except Exception:
+        rp.parse([])
+    if not rp.can_fetch('MOBIlityBot', url):
+        return []  # the site asks robots to stay out: we do
+    home = _page(url)
+    found = front_pictures(home, url)
+    if not found:
+        # the picture of the shop is often on the about / contact / location page
+        seen = []
+        for m in re.finditer(r'<a\b[^>]*href\s*=\s*["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', home, re.S | re.I):
+            if not re.search(r'about|contact|visit|location|find[\s_-]*us|our[\s_-]*(shop|store)', m.group(1) + ' ' + re.sub(r'<[^>]+>', ' ', m.group(2)), re.I):
+                continue
+            full = urllib.parse.urljoin(url, m.group(1).strip())
+            fp = urllib.parse.urlsplit(full)
+            if fp.scheme not in ('http', 'https') or fp.netloc.lower().removeprefix('www.') != host:
+                continue
+            if full.rstrip('/') == url.rstrip('/') or full in seen or re.search(r'\.(pdf|jpe?g|png|gif|zip)$', fp.path, re.I):
+                continue
+            seen.append(full)
+            if len(seen) == 2:
+                break
+        for extra in seen:
+            if not rp.can_fetch('MOBIlityBot', extra):
+                continue
+            try:
+                found = front_pictures(_page(extra, timeout=8), extra)
+            except Exception:
+                continue
+            if found:
+                break
+    out = []
+    for pic in found[:4]:
+        ok, when = picture_date(pic)
+        if not ok or (when and when < '2024-01'):
+            continue  # gone, not a picture, or known to be older than 2024
+        out.append(['website', pic, when, 0, 0])
+        if len(out) == 2:
+            break
+    return out
+
+
 def best(p, shots, now=None):
     """The photos that look at the place: straight at it, from close, new. At most 3 different views."""
     now = now or datetime.now(timezone.utc)
@@ -171,7 +303,7 @@ def best(p, shots, now=None):
     return out
 
 
-def look(p, token):
+def look(p, token, site=None):
     shots, failed = [], []
     for name, fn in (('mapillary', lambda: mapillary(p, token)), ('panoramax', lambda: panoramax(p)),
                      ('kartaview', lambda: kartaview(p))):
@@ -179,19 +311,35 @@ def look(p, token):
             shots += fn()
         except Exception as e:
             failed.append(f'{name}: {type(e).__name__}{" " + str(getattr(e, "code", "")) if getattr(e, "code", None) else ""}')
-    return best(p, shots), failed
+    got = best(p, shots)
+    if site:
+        try:
+            got += website(site)
+        except Exception as e:
+            _web[0] += 1
+    return got, failed
+
+
+_web = [0]  # websites that did not answer
 
 
 def load_places():
-    out = {}
+    out, sites = {}, {}
     for name in sorted(os.listdir(OUT)):
         if not re.match(r't_(-?\d+)_(-?\d+)\.json\.gz$', name):
             continue
         for r in json.loads(gzip.decompress(open(os.path.join(OUT, name), 'rb').read())):
             k = kind(r[3])
             if k and r[3].get('name'):
-                out[str(r[0])] = (k, (float(r[1]), float(r[2])))
-    return out
+                u = (r[3].get('website') or r[3].get('contact:website') or '').strip().split('#')[0]
+                if u and not re.match(r'https?://', u, re.I):
+                    u = 'https://' + u
+                out[str(r[0])] = (k, (float(r[1]), float(r[2])), u or None)
+                if u:
+                    sites.setdefault(u, set()).add((round(float(r[1]), 3), round(float(r[2]), 3)))
+    # a website used by several places (a chain's page) shows no particular shop: not read
+    shared = {u for u, where in sites.items() if len(where) > 1}
+    return {k: (kd, pos, None if u in shared else u) for k, (kd, pos, u) in out.items()}
 
 
 def self_test():
@@ -208,6 +356,12 @@ def self_test():
     got = [r[1] for r in best(p, shots, now=datetime(2026, 1, 1, tzinfo=timezone.utc))]
     assert got == ['front'], got
     assert 11 < meters(south, p) < 13 and bearing(south, p) < 1
+    page = ('<img src="/img/logo.png" alt="Store logo"><img src="/wp-content/uploads/2025/03/storefront.jpg" alt="x">'
+            '<img data-src="a.jpg" alt="Our shop exterior on Main St"><img src="bike.jpg" alt="Trek product">'
+            '<img src="in.jpg" alt="Inside our store"><img src="s.jpg" alt="storefront" width="80">')
+    got = front_pictures(page, 'https://shop.example/')
+    assert got == ['https://shop.example/wp-content/uploads/2025/03/storefront.jpg', 'https://shop.example/a.jpg'], got
+    assert SOCIAL.search('instagram.com') and not SOCIAL.search('craftebikes.com')
     print('self-test ok')
 
 
@@ -241,10 +395,10 @@ def main():
     def one(k):
         if time.time() > end:
             return k, None, []
-        got, failed = look(places[k][1], token)
+        got, failed = look(places[k][1], token, places[k][2])
         return k, got, failed
 
-    with ThreadPoolExecutor(max_workers=int(os.environ.get('PHOTO_THREADS', '16'))) as ex:
+    with ThreadPoolExecutor(max_workers=int(os.environ.get('PHOTO_THREADS', '32'))) as ex:
         for k, got, failed in ex.map(one, todo):
             if got is None:
                 continue
@@ -268,7 +422,8 @@ def main():
         for row in e['p']:
             src[row[0]] = src.get(row[0], 0) + 1
     with_photo = sum(1 for e in known.values() if e['p'])
-    print(f'looked up now: {done} of {len(todo)} · sources that did not answer: {fails}')
+    print(f'looked up now: {done} of {len(todo)} · sources that did not answer: {fails} · websites that did not answer: {_web[0]}')
+    print(f'places with a website of their own: {sum(1 for v in places.values() if v[2])}')
     print(f'by kind (checked, with a front photo): {by}')
     print(f'photos kept, by source: {src}')
     print(f'::notice::front photos (2024+) for {with_photo} of {len(known)} checked places ({len(places)} in all)')
