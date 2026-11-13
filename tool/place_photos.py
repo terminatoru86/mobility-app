@@ -6,15 +6,21 @@ For every named shop, service hub and rental in the data packs it looks for stre
   - 4-30 m away from the place,
   - with the camera turned towards the place (at most 25 degrees off),
 in Mapillary, Panoramax and KartaView (all open licences; faces and number plates are blurred
-by the source). 360-degree pictures are left out (flattened, they show the place bent).
+by the source). 360-degree pictures taken 4-30 m away are kept too, marked "pano", with the direction
+of the place inside the picture (the app has to cut that part out; flattened whole, they look bent).
+Photos that mappers themselves linked to the place (image, mapillary, panoramax tags) come first.
 It also reads the place's own website (robots.txt respected, like the hours reader) and keeps the
 pictures the shop itself describes as its storefront / exterior / building (by the picture's
 description or file name; logos, products and inside views are left out; a picture known to be
 older than 2024 is left out). Websites shared by several places and social networks are not read.
+When the site describes no picture as its storefront, the larger pictures of the page (and the one
+it offers for link previews) are kept as candidates ("c"); tool/storefront_vision.py then looks at
+them with an open image model and keeps the one that really shows a shop from the street.
 The best ones (straight at the place, from about 12 m, newest) are kept in data/place_photos.json:
 
   { place id: { "t": day checked, "p": [[source, photo id or address, "YYYY-MM", metres, degrees off], ...] } }
-  (for a picture from the website: ["website", address, "YYYY-MM" or "", 0, 0])
+  (for a picture from the website: ["website", address, "YYYY-MM" or "", 0, 0];
+   for a 360-degree picture a sixth value "pano", and degrees = where the place is, -180..180, from the picture's middle)
 
 Only where a photo is, not the picture itself: the app shows it from its source, with the credit.
 A place is looked up again after RECHECK_DAYS. Nothing else is read: no private cameras, no
@@ -39,6 +45,7 @@ OUT = os.path.join(ROOT, 'assets', 'osm', 'tiles')
 LIST = os.path.join(ROOT, 'data', 'place_photos.json')
 SINCE = datetime(2024, 1, 1, tzinfo=timezone.utc)
 RECHECK_DAYS = 60
+READER = 2  # raised when the rules change: every place is looked up again
 UA = 'MOBIlityBot/1.0 (cycling app; front photos of bike shops from open street-photo collections)'
 
 
@@ -115,9 +122,9 @@ def mapillary(p, token):
     for e in get_json('https://graph.mapillary.com/images?' + q).get('data') or []:
         g = ((e.get('computed_geometry') or e.get('geometry') or {}).get('coordinates')) or []
         head = e.get('computed_compass_angle', e.get('compass_angle'))
-        if len(g) < 2 or head is None or e.get('is_pano'):
+        if len(g) < 2 or head is None:
             continue
-        out.append(((g[1], g[0]), float(head), _date(e.get('captured_at')), 'mapillary', str(e['id'])))
+        out.append(((g[1], g[0]), float(head), _date(e.get('captured_at')), 'mapillary', str(e['id']), bool(e.get('is_pano'))))
     return out
 
 
@@ -130,14 +137,31 @@ def panoramax(p):
         fov = (pr.get('pers:interior_orientation') or {}).get('field_of_view')
         assets = f.get('assets') or {}
         url = (assets.get('sd') or assets.get('thumb') or {}).get('href')
-        if len(g) < 2 or head is None or not url or (fov is not None and fov >= 300):
+        if len(g) < 2 or head is None or not url:
             continue
-        out.append(((g[1], g[0]), float(head), _date(pr.get('datetime')), 'panoramax', url))
+        out.append(((g[1], g[0]), float(head), _date(pr.get('datetime')), 'panoramax', url, fov is not None and fov >= 300))
     return out
 
 
+KV = {'host': None, 'fails': 0}  # KartaView moved its addresses in 2026: the first one that answers is used
+
+
 def kartaview(p):
-    d = get_json(f'https://api.openstreetcam.org/2.0/photo/?lat={p[0]:.6f}&lng={p[1]:.6f}&radius=45&itemsPerPage=60')
+    if KV['host'] is None and KV['fails'] >= 120:
+        return []  # it does not answer today: not asked 30,000 times
+    d = None
+    for host in ([KV['host']] if KV['host'] else ['api.kartaview.org', 'api.openstreetcam.org']):
+        try:
+            d = get_json(f'https://{host}/2.0/photo/?lat={p[0]:.6f}&lng={p[1]:.6f}&radius=45&itemsPerPage=60', timeout=10)
+            KV['host'] = host
+            break
+        except Exception:
+            if KV['host'] is None:
+                KV['fails'] += 1
+                continue
+            raise
+    if d is None:
+        raise OSError('no KartaView address answers')
     out = []
     for e in ((d.get('result') or {}).get('data')) or []:
         try:
@@ -146,9 +170,10 @@ def kartaview(p):
         except Exception:
             continue
         url = e.get('fileurlProc') or e.get('fileurlLTh') or e.get('fileurl')
-        if not url or str(e.get('projection') or 'PLANE').upper() not in ('PLANE', ''):
+        if not url:
             continue
-        out.append((cam, head, _date(e.get('shotDate') or e.get('dateAdded')), 'kartaview', str(url)))
+        out.append((cam, head, _date(e.get('shotDate') or e.get('dateAdded')), 'kartaview', str(url),
+                    str(e.get('projection') or 'PLANE').upper() not in ('PLANE', '')))
     return out
 
 
@@ -196,6 +221,47 @@ def front_pictures(page, url):
     return out
 
 
+def candidate_pictures(page, url):
+    """Pictures that may show the shop, though the site does not say so: the one offered for link
+    previews, the one in the business description, and the larger pictures of the page."""
+    out = []
+
+    def add(src):
+        src = htmllib.unescape((src or '').strip())
+        if not src or src.startswith('data:'):
+            return
+        full = urllib.parse.urljoin(url, src)
+        name = urllib.parse.unquote(urllib.parse.urlsplit(full).path.rsplit('/', 1)[-1])
+        if full.startswith('http') and full not in out and not NOT_FRONT.search(name):
+            out.append(full)
+
+    for m in re.finditer(r'<meta\b[^>]*>', page, re.I):
+        tag = m.group(0)
+        if re.search(r'(property|name)\s*=\s*["\'](og:image|og:image:secure_url|twitter:image)["\']', tag, re.I):
+            c = re.search(r'content\s*=\s*(["\'])(.*?)\1', tag, re.S)
+            if c:
+                add(c.group(2))
+    for m in re.finditer(r'"(?:image|photo)"\s*:\s*(?:\[\s*)?"(https?:[^"]+)"', page):
+        add(m.group(1).replace('\\/', '/'))
+    for m in re.finditer(r'<img\b[^>]*>', page, re.I):
+        if len(out) >= 6:
+            break
+        tag = m.group(0)
+        at = {k.lower(): htmllib.unescape(v) for k, _, v in re.findall(r'([\w:-]+)\s*=\s*(["\'])(.*?)\2', tag, re.S)}
+        if NOT_FRONT.search(at.get('alt', '') + ' ' + at.get('class', '')):
+            continue
+        try:
+            if int(at.get('width', '9999')) < 400 or int(at.get('height', '9999')) < 250:
+                continue
+        except ValueError:
+            pass
+        src = at.get('src') or at.get('data-src') or at.get('data-lazy-src') or ''
+        if not src or src.startswith('data:'):
+            src = (at.get('srcset') or at.get('data-srcset') or '').split(',')[-1].strip().split(' ')[0]
+        add(src)
+    return out[:6]
+
+
 def picture_date(url):
     """(still there and a picture, 'YYYY-MM' or ''): from the address (/2023/05/) or the server's own date."""
     when = ''
@@ -225,11 +291,12 @@ def picture_date(url):
 
 
 def website(url):
-    """Storefront pictures from the place's own website: rows ['website', address, 'YYYY-MM' or '', 0, 0]."""
+    """Storefront pictures from the place's own website: (rows ['website', address, 'YYYY-MM' or '', 0, 0],
+    candidates to be looked at when the site describes none as its storefront)."""
     parts = urllib.parse.urlsplit(url)
     host = parts.netloc.lower().removeprefix('www.')
     if parts.scheme not in ('http', 'https') or not host or SOCIAL.search(host):
-        return []
+        return [], []
     base = f'{parts.scheme}://{parts.netloc}'
     rp = urllib.robotparser.RobotFileParser()
     try:
@@ -239,9 +306,10 @@ def website(url):
     except Exception:
         rp.parse([])
     if not rp.can_fetch('MOBIlityBot', url):
-        return []  # the site asks robots to stay out: we do
+        return [], []  # the site asks robots to stay out: we do
     home = _page(url)
     found = front_pictures(home, url)
+    maybe = candidate_pictures(home, url)
     if not found:
         # the picture of the shop is often on the about / contact / location page
         seen = []
@@ -261,9 +329,11 @@ def website(url):
             if not rp.can_fetch('MOBIlityBot', extra):
                 continue
             try:
-                found = front_pictures(_page(extra, timeout=8), extra)
+                inner = _page(extra, timeout=8)
             except Exception:
                 continue
+            found = front_pictures(inner, extra)
+            maybe += [c for c in candidate_pictures(inner, extra) if c not in maybe]
             if found:
                 break
     out = []
@@ -274,22 +344,35 @@ def website(url):
         out.append(['website', pic, when, 0, 0])
         if len(out) == 2:
             break
-    return out
+    cands = []
+    if not out:
+        for pic in maybe[:8]:
+            m = re.search(r'/(20[0-2]\d)/(0[1-9]|1[0-2])/', pic)
+            if m and f'{m.group(1)}-{m.group(2)}' < '2024-01':
+                continue  # the address itself says it is older than 2024
+            cands.append(['website', pic, f'{m.group(1)}-{m.group(2)}' if m else ''])
+    return out, cands[:6]
 
 
 def best(p, shots, now=None):
     """The photos that look at the place: straight at it, from close, new. At most 3 different views."""
     now = now or datetime.now(timezone.utc)
     scored = []
-    for cam, head, at, src, ref in shots:
+    for cam, head, at, src, ref, pano in shots:
         if at is None or at < SINCE:
             continue
         m = meters(cam, p)
-        off = abs((bearing(cam, p) - head) % 360)
-        off = 360 - off if off > 180 else off
+        rel = (bearing(cam, p) - head + 180) % 360 - 180  # where the place is, from the picture's middle
+        off = abs(rel)
+        years = (now - at).days / 365
+        if pano:
+            # a 360-degree picture sees the place whichever way it was driven: only the distance counts
+            if m < 4 or m > 30:
+                continue
+            scored.append((12 + abs(m - 12) * 1.2 + years * 4, cam, [src, ref, at.strftime('%Y-%m'), round(m), round(rel), 'pano']))
+            continue
         if m < 4 or m > 30 or off > 25:
             continue
-        years = (now - at).days / 365
         scored.append((off + abs(m - 12) * 1.2 + years * 4, cam, [src, ref, at.strftime('%Y-%m'), round(m), round(off)]))
     scored.sort(key=lambda s: s[0])
     kept, out = [], []
@@ -303,7 +386,7 @@ def best(p, shots, now=None):
     return out
 
 
-def look(p, token, site=None):
+def look(p, token, site=None, tags=None):
     shots, failed = [], []
     for name, fn in (('mapillary', lambda: mapillary(p, token)), ('panoramax', lambda: panoramax(p)),
                      ('kartaview', lambda: kartaview(p))):
@@ -311,13 +394,29 @@ def look(p, token, site=None):
             shots += fn()
         except Exception as e:
             failed.append(f'{name}: {type(e).__name__}{" " + str(getattr(e, "code", "")) if getattr(e, "code", None) else ""}')
-    got = best(p, shots)
+    got = list(tags or []) + best(p, shots)
+    cands = []
     if site:
         try:
-            got += website(site)
-        except Exception as e:
+            rows, cands = website(site)
+            got += rows
+        except Exception:
             _web[0] += 1
-    return got, failed
+    return got, failed, cands
+
+
+def linked(t):
+    """Photos a mapper linked to this very place on the map."""
+    out = []
+    for k in ('mapillary', 'panoramax'):
+        v = str(t.get(k) or '').split(';')[0].strip()
+        if re.fullmatch(r'[0-9a-f-]{8,40}', v):
+            out.append([k, v if k == 'mapillary' else f'https://api.panoramax.xyz/api/pictures/{v}/sd.jpg', '', 0, 0, 'linked'])
+    for k in ('image', 'image:0'):
+        v = str(t.get(k) or '').strip()
+        if re.match(r'https?://\S+\.(jpe?g|png|webp)$', v, re.I):
+            out.append(['mapper', v, '', 0, 0, 'linked'])
+    return out[:2]
 
 
 _web = [0]  # websites that did not answer
@@ -334,12 +433,12 @@ def load_places():
                 u = (r[3].get('website') or r[3].get('contact:website') or '').strip().split('#')[0]
                 if u and not re.match(r'https?://', u, re.I):
                     u = 'https://' + u
-                out[str(r[0])] = (k, (float(r[1]), float(r[2])), u or None)
+                out[str(r[0])] = (k, (float(r[1]), float(r[2])), u or None, linked(r[3]))
                 if u:
                     sites.setdefault(u, set()).add((round(float(r[1]), 3), round(float(r[2]), 3)))
     # a website used by several places (a chain's page) shows no particular shop: not read
     shared = {u for u, where in sites.items() if len(where) > 1}
-    return {k: (kd, pos, None if u in shared else u) for k, (kd, pos, u) in out.items()}
+    return {k: (kd, pos, None if u in shared else u, ln) for k, (kd, pos, u, ln) in out.items()}
 
 
 def self_test():
@@ -347,14 +446,20 @@ def self_test():
     new, old = datetime(2025, 6, 1, tzinfo=timezone.utc), datetime(2022, 6, 1, tzinfo=timezone.utc)
     south = (p[0] - 12 / 111200, p[1])  # 12 m south of the place
     shots = [
-        (south, 0.0, new, 'a', 'front'),        # looks north, straight at it: kept
-        (south, 180.0, new, 'a', 'back'),       # looks away
-        (south, 0.0, old, 'a', 'old'),          # before 2024
-        ((p[0] - 60 / 111200, p[1]), 0.0, new, 'a', 'far'),
-        ((p[0] - 13 / 111200, p[1]), 5.0, new, 'a', 'same view'),
+        (south, 0.0, new, 'a', 'front', False),        # looks north, straight at it: kept
+        (south, 180.0, new, 'a', 'back', False),       # looks away
+        (south, 0.0, old, 'a', 'old', False),          # before 2024
+        ((p[0] - 60 / 111200, p[1]), 0.0, new, 'a', 'far', False),
+        ((p[0] - 13 / 111200, p[1]), 5.0, new, 'a', 'same view', False),
+        ((p[0], p[1] + 20 / 83000), 180.0, new, 'a', 'round', True),  # 360-degree, 20 m east, driven south
     ]
-    got = [r[1] for r in best(p, shots, now=datetime(2026, 1, 1, tzinfo=timezone.utc))]
-    assert got == ['front'], got
+    rows = best(p, shots, now=datetime(2026, 1, 1, tzinfo=timezone.utc))
+    assert [r[1] for r in rows] == ['front', 'round'], rows
+    assert rows[1][5] == 'pano' and 85 <= rows[1][4] <= 95, rows[1]  # the place is to the right of the driving direction
+    cand = candidate_pictures('<meta property="og:image" content="/share.jpg"><img src="/logo.png"><img src="/big.jpg" width="900">'
+                              '<script>{"@type":"BikeStore","image":"https:\\/\\/x.example\\/shop.jpg"}</script>', 'https://shop.example/')
+    assert cand == ['https://shop.example/share.jpg', 'https://x.example/shop.jpg', 'https://shop.example/big.jpg'], cand
+    assert linked({'mapillary': '951395492878525', 'image': 'https://a.example/x.jpg'})[0][:2] == ['mapillary', '951395492878525']
     assert 11 < meters(south, p) < 13 and bearing(south, p) < 1
     page = ('<img src="/img/logo.png" alt="Store logo"><img src="/wp-content/uploads/2025/03/storefront.jpg" alt="x">'
             '<img data-src="a.jpg" alt="Our shop exterior on Main St"><img src="bike.jpg" alt="Trek product">'
@@ -381,6 +486,8 @@ def main():
         e = known.get(k)
         if not e:
             return True
+        if e.get('v') != READER:
+            return True
         try:
             return (today - datetime.strptime(e['t'], '%Y-%m-%d').replace(tzinfo=timezone.utc)).days >= RECHECK_DAYS
         except Exception:
@@ -394,12 +501,12 @@ def main():
 
     def one(k):
         if time.time() > end:
-            return k, None, []
-        got, failed = look(places[k][1], token, places[k][2])
-        return k, got, failed
+            return k, None, [], []
+        got, failed, cands = look(places[k][1], token, places[k][2], places[k][3])
+        return k, got, failed, cands
 
     with ThreadPoolExecutor(max_workers=int(os.environ.get('PHOTO_THREADS', '32'))) as ex:
-        for k, got, failed in ex.map(one, todo):
+        for k, got, failed, cands in ex.map(one, todo):
             if got is None:
                 continue
             done += 1
@@ -407,7 +514,9 @@ def main():
                 fails[f] = fails.get(f, 0) + 1
             # all three sources failed: not counted as "no photo", tried again next time
             if len(failed) < 3:
-                known[k] = {'t': day, 'p': got}
+                known[k] = {'t': day, 'v': READER, 'p': got}
+                if cands:
+                    known[k]['c'] = cands
             if done % 2000 == 0:
                 print(f'  {done}/{len(todo)} · with a photo so far: {sum(1 for e in known.values() if e["p"])}', flush=True)
 
@@ -420,7 +529,10 @@ def main():
     src = {}
     for e in known.values():
         for row in e['p']:
-            src[row[0]] = src.get(row[0], 0) + 1
+            name = row[0] + (' 360' if len(row) > 5 and row[5] == 'pano' else '')
+            src[name] = src.get(name, 0) + 1
+    print(f'KartaView address in use: {KV["host"]} · places with website pictures still to be looked at: '
+          f'{sum(1 for e in known.values() if e.get("c"))}')
     with_photo = sum(1 for e in known.values() if e['p'])
     print(f'looked up now: {done} of {len(todo)} · sources that did not answer: {fails} · websites that did not answer: {_web[0]}')
     print(f'places with a website of their own: {sum(1 for v in places.values() if v[2])}')

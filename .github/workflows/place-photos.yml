@@ -1,8 +1,9 @@
 name: Front photos of the shops
 
-# Looks for street photos (2024 on) that face each named shop, service hub and rental, in the open
+# Looks for street photos (2024 on, also 360-degree ones) that face each named shop, service hub and rental, in the open
 # street-photo collections (Mapillary, Panoramax, KartaView), and keeps where the best ones are
-# in data/place_photos.json. Each place is looked up again about every two months.
+# in data/place_photos.json; it also reads the shops' own websites and looks at their pictures
+# with an open image model, keeping the ones that show the shop from outside. Each place is looked up again about every two months.
 on:
   # every Friday early morning (Chicago)
   schedule:
@@ -15,7 +16,7 @@ permissions:
 jobs:
   photos:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,6 +29,23 @@ jobs:
         run: |
           python3 tool/place_photos.py --test
           python3 tool/place_photos.py
+      - name: Save the list so far
+        run: |
+          git config user.name "mobility-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/place_photos.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Front photos of the shops $(date -u +%Y-%m-%d)"
+          git pull --rebase -X theirs
+          git push
+      - name: Look at the website pictures (open image model, on this machine)
+        env:
+          VISION_MINUTES: '100'
+        run: |
+          pip install -q torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install -q open_clip_torch pillow
+          python3 tool/storefront_vision.py --test
+          python3 tool/storefront_vision.py
       - name: Save in the repository
         run: |
           git config user.name "mobility-data-bot"
