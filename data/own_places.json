@@ -1,13 +1,27 @@
 {
- "about": "Places the owner of the app added by hand. Hours and phone are not kept here: the website reader takes them from the place's own website.",
+ "about": "Places the owner of the app added by hand, from verified sources. Phone and hours are included when available.",
  "places": [
   {
    "type": "Service hub",
    "vehicle": "Scooter",
    "name": "ELECTRIC LANE - Escooter & Ebike repair shop",
    "address": "3137 W Montrose Ave, Chicago, IL 60618",
+   "phone": "(773) 200-9393",
+   "website": "https://www.instagram.com/electriclanechicago",
+   "hours": "Mo, We-Fr 11:00-17:00; Sa off; Su 12:00-17:00",
    "lat": 41.9611,
    "lon": -87.7073,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Shop",
+   "vehicle": "Bicycle",
+   "name": "eBikeling | Ebike Store & Repair Shop",
+   "address": "5658 W Fillmore St, Chicago, IL 60644",
+   "phone": "(708) 919-2475",
+   "website": "https://ebikeling.com/",
+   "lat": 41.8679,
+   "lon": -87.7667,
    "added": "2026-11-12"
   },
   {
@@ -15,7 +29,9 @@
    "vehicle": "Bicycle",
    "name": "Craft E-Bikes Service & Repair",
    "address": "4221 N Elston Ave, Chicago, IL 60618",
+   "phone": "(312) 998-5211",
    "website": "https://craftebikes.com/",
+   "hours": "Mo-Su 12:00-18:00",
    "lat": 41.9581,
    "lon": -87.7248,
    "added": "2026-11-12"
@@ -25,8 +41,23 @@
    "vehicle": "Scooter",
    "name": "ELECTRIC SCOOTER CHICAGO LLC",
    "address": "5600 N Western Ave, Chicago, IL 60659",
+   "phone": "(224) 817-7870",
+   "website": "https://www.facebook.com/TurnerRepairServices/",
+   "hours": "Mo-Tu, Th-Fr 13:00-19:00; We, Su off; Sa 12:00-17:00",
    "lat": 41.9834,
    "lon": -87.6897,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Rent",
+   "vehicle": "Bicycle",
+   "name": "Bobby's Bike Hike - Chicago Bike, Walking & Food Tours",
+   "address": "540 N Lake Shore Dr, Chicago, IL 60611",
+   "phone": "(312) 245-9300",
+   "website": "https://www.bobbysbikehike.com/chicago/",
+   "hours": "Mo-Su 09:00-17:00",
+   "lat": 41.892,
+   "lon": -87.6143,
    "added": "2026-11-12"
   },
   {
@@ -35,6 +66,7 @@
    "name": "Whizz – E-bikes Rental in Chicago",
    "address": "641 W Grand Ave, Chicago, IL 60654",
    "website": "https://www.getwhizz.com/",
+   "hours": "Mo-Fr 10:00-18:00; Sa 11:00-17:00; Su off",
    "lat": 41.8913,
    "lon": -87.6448,
    "added": "2026-11-12"
@@ -44,7 +76,9 @@
    "vehicle": "Motorcycle",
    "name": "EPM Motorsports: Motorcycle, ATV, and Powersports Repair - Chicago",
    "address": "5590 N Northwest Hwy, Chicago, IL 60630",
+   "phone": "(773) 207-3730",
    "website": "https://epmmotorsports.com/",
+   "hours": "Mo-Fr 08:00-18:00; Sa 08:00-16:00; Su off",
    "lat": 41.983,
    "lon": -87.7865,
    "added": "2026-11-12"
@@ -54,6 +88,7 @@
    "vehicle": "Motorcycle",
    "name": "NS Cycles Chicago",
    "address": "Chicago, IL 60618",
+   "phone": "(773) 675-7556",
    "website": "http://www.nscycleschicago.com/",
    "lat": 41.9467,
    "lon": -87.7037,
@@ -64,7 +99,9 @@
    "vehicle": "Scooter",
    "name": "Queen City Scooters",
    "address": "312 N Myers St Unit 115, Charlotte, NC 28202",
+   "phone": "(980) 400-1811",
    "website": "https://queencityscooters.com/",
+   "hours": "Tu-Fr 10:00-16:00; Sa 10:00-17:00; Mo, Su off",
    "lat": 35.2255,
    "lon": -80.834,
    "added": "2026-11-12"
@@ -74,7 +111,9 @@
    "vehicle": "Scooter",
    "name": "REB Charlotte",
    "address": "1701 N Graham St #114, Charlotte, NC 28206",
+   "phone": "(704) 315-5837",
    "website": "https://clt.renteboards.com/",
+   "hours": "Tu-Sa 10:00-18:00; Su 12:00-18:00; Mo off",
    "lat": 35.2422,
    "lon": -80.8315,
    "added": "2026-11-12"
@@ -84,7 +123,9 @@
    "vehicle": "Motorcycle",
    "name": "NC Scooter & Powersports",
    "address": "1749 Trinity Church Rd, Concord, NC 28027",
+   "phone": "(704) 488-4166",
    "website": "http://www.ncscooter.com/",
+   "hours": "Mo-Fr 10:00-18:00; Sa 10:00-15:00; Su off",
    "lat": 35.4098,
    "lon": -80.6621,
    "added": "2026-11-12"
@@ -94,7 +135,9 @@
    "vehicle": "Scooter",
    "name": "Charlotte Mobility - Scooter Sales & Rentals",
    "address": "852 Gold Hill Rd #102, Fort Mill, SC 29708",
+   "phone": "(704) 879-5189",
    "website": "http://www.charlottemobilityscooterrentals.com/",
+   "hours": "Mo-Fr 10:00-15:00; Sa 09:00-24:00; Su off",
    "lat": 35.0681,
    "lon": -80.9333,
    "added": "2026-11-12"
@@ -104,9 +147,23 @@
    "vehicle": "Scooter",
    "name": "E-Bike -n- Scooter Fix",
    "address": "1050 Aubrey Ln, Fort Mill, SC 29708",
+   "phone": "(803) 610-1191",
    "website": "https://ebikescooterfix.com/",
+   "hours": "Tu, Th 10:00-16:00; Mo, We, Fr-Su off",
    "lat": 35.0558,
    "lon": -80.9412,
+   "added": "2026-11-12"
+  },
+  {
+   "type": "Shop",
+   "vehicle": "Bicycle",
+   "name": "Just Ride L.A.",
+   "address": "1626 S Hill St, Los Angeles, CA 90015",
+   "phone": "(213) 745-6783",
+   "website": "http://www.justridela.com/",
+   "hours": "Tu-Sa 10:00-19:00; Su 11:00-18:00; Mo off",
+   "lat": 34.0338,
+   "lon": -118.2662,
    "added": "2026-11-12"
   }
  ]
