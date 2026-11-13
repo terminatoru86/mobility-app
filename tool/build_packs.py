@@ -613,13 +613,34 @@ def fetch_foursquare():
         AND regexp_matches(lower(array_to_string(fsq_category_labels, ' | ')), 'bicycle|bike|motorcycle|scooter|moped|cycling')
     """
     out = []
+    left, labels = {}, {}
     for fid, name, lat, lon, addr, city, region, tel, web, email, refreshed, cats in con.execute(q).fetchall():
-        c = (cats or '').lower()
+        # only the labels that are about bikes, and only businesses: a "Bike Trail", a cycling studio,
+        # a club or a bike-share dock is not a shop
+        ours = [x.strip() for x in (cats or '').lower().split('|')
+                if re.search(r'bicycle|bike|motorcycle|scooter|moped', x)]
+        ours = [x for x in ours if re.search(r'store|shop|dealer|repair|rental|retail|service', x.split('>')[-1])
+                and not re.search(r'trail|park|studio|club|lane|path|rack|track|share|station', x.split('>')[-1])]
+        why = None
+        if not ours:
+            why = 'not a shop, repair or rental'
+        elif (refreshed or '')[:10] < '2023-01-01':
+            why = 'not confirmed since 2023'  # long unconfirmed places are often closed
+        elif re.search(r'\b(divvy|hubway|citi ?bike|blue ?bikes|bikeshare|bike share|b-?cycle|biketown|bay wheels|indego|'
+                       r'capital bikeshare|metro bike|lime|bird|station|dock|kiosk)\b', (name or '').lower()):
+            why = 'bike-share dock'
+        elif not (name or '').strip():
+            why = 'no name'
+        if why:
+            left[why] = left.get(why, 0) + 1
+            continue
+        c = ' | '.join(ours)
+        labels[ours[0].split('>')[-1].strip()] = labels.get(ours[0].split('>')[-1].strip(), 0) + 1
         if 'motorcycle' in c or 'moped' in c:
             tags = {'shop': 'motorcycle_repair'} if 'repair' in c else {'shop': 'motorcycle'}
         elif 'scooter' in c and 'bike' not in c and 'bicycle' not in c:
             tags = {'shop': 'scooter'}
-        elif 'rental' in c or 'share' in c:
+        elif 'rental' in c:
             tags = {'amenity': 'bicycle_rental'}
         elif 'bicycle' in c or 'bike' in c:
             tags = {'shop': 'bicycle'}
@@ -631,7 +652,8 @@ def fetch_foursquare():
                                         'addr:street': addr, 'check_date': (refreshed or '')[:10] or None}.items() if v})
         tags['source'] = 'Foursquare OS Places'
         out.append([f'fsq/{fid}', round(lat, 6), round(lon, 6), tags])
-    print(f'Foursquare {rel}: {len(out)}', flush=True)
+    print(f'Foursquare {rel}: {len(out)} · left out: {left}', flush=True)
+    print(f'Foursquare kinds kept: {dict(sorted(labels.items(), key=lambda kv: -kv[1])[:15])}', flush=True)
     return out
 
 
