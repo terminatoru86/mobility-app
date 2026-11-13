@@ -143,19 +143,36 @@ def panoramax(p):
     return out
 
 
-KV = {'host': None, 'fails': 0}  # KartaView moved its addresses in 2026: the first one that answers is used
+KV = {'host': None, 'fails': 0, 'next': 0.0, 'busy': 0}  # KartaView moved its addresses in 2026: the first one that answers is used
+_kv_lock = __import__('threading').Lock()
+
+
+def _kv_wait():
+    """KartaView answers "too many requests" quickly: at most 3 questions a second, one at a time."""
+    with _kv_lock:
+        now = time.time()
+        wait = KV['next'] - now
+        KV['next'] = max(now, KV['next']) + 0.34
+    if wait > 0:
+        time.sleep(wait)
 
 
 def kartaview(p):
-    if KV['host'] is None and KV['fails'] >= 120:
-        return []  # it does not answer today: not asked 30,000 times
+    if (KV['host'] is None and KV['fails'] >= 120) or KV['busy'] >= 40:
+        return []  # it does not answer today (or keeps saying "too many"): not asked 30,000 times
+    _kv_wait()
     d = None
     for host in ([KV['host']] if KV['host'] else ['api.kartaview.org', 'api.openstreetcam.org']):
         try:
             d = get_json(f'https://{host}/2.0/photo/?lat={p[0]:.6f}&lng={p[1]:.6f}&radius=45&itemsPerPage=60', timeout=10)
             KV['host'] = host
+            KV['busy'] = 0
             break
-        except Exception:
+        except Exception as err:
+            if getattr(err, 'code', None) == 429:
+                KV['busy'] += 1
+                with _kv_lock:
+                    KV['next'] = max(KV['next'], time.time()) + 20  # asked to slow down: a pause for everyone
             if KV['host'] is None:
                 KV['fails'] += 1
                 continue
