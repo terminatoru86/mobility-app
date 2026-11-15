@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MOBIlity</title>
+<meta name="description" content="MOBIlity: the map of bike places with live status, routes, SOS and group rides. Free download for Android.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<style>
+/* Layout: one calm column on the app's own paper colour; the three status dots of the logo
+   (red, yellow, green) are the only decoration and always mean what they mean in the app. */
+:root{
+  --bg:#F5F7F7; --card:#FFFFFF; --ink:#13212B; --soft:#55666F; --line:#D6DEE2;
+  --btn:#24333C; --btn-ink:#FFFFFF; --blue:#2F6FDC;
+  --green:#5D9A30; --yellow:#E9A800; --red:#E0484D;
+  --head:"Plus Jakarta Sans","Inter",system-ui,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#10181D; --card:#18232A; --ink:#EEF2F3; --soft:#A3B0B6; --line:#2C3A42;
+  --btn:#EEF2F3; --btn-ink:#13212B; --blue:#7FA8F0; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#10181D; --card:#18232A; --ink:#EEF2F3; --soft:#A3B0B6; --line:#2C3A42;
+  --btn:#EEF2F3; --btn-ink:#13212B; --blue:#7FA8F0; color-scheme:dark }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body)}
+a{color:var(--blue)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--head);text-wrap:balance;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,6vw,3.4rem);line-height:1.08;font-weight:800}
+h2{font-size:clamp(1.5rem,3.6vw,2rem);line-height:1.2;font-weight:700}
+h3{font-size:1.05rem;font-weight:700}
+p{margin:0}
+.soft{color:var(--soft)}
+.label{font:600 .75rem/1 var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--soft)}
+
+header .wrap{display:flex;align-items:center;gap:16px;padding-block:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font:800 1.25rem/1 var(--head);color:var(--ink);text-decoration:none}
+.brand svg{width:34px;height:34px}
+.brand svg path{stroke:var(--ink)}
+nav{margin-left:auto;display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{text-decoration:underline}
+
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--btn);color:var(--btn-ink);text-decoration:none;
+  font:600 1rem/1 var(--body);padding:15px 22px;border-radius:999px}
+.btn:hover{opacity:.9}
+.btn svg{width:18px;height:18px}
+
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-block:36px 56px}
+.hero-text{display:flex;flex-direction:column;gap:20px;min-width:0}
+.hero-text p.lead{font-size:1.15rem;max-width:34em;color:var(--soft)}
+.cta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.dot{width:12px;height:12px;border-radius:50%;display:inline-block;flex:none}
+.dot.g{background:var(--green)}.dot.y{background:var(--yellow)}.dot.r{background:var(--red)}
+.phone{justify-self:center;width:min(280px,100%);aspect-ratio:9/18;border-radius:36px;border:8px solid var(--btn);
+  overflow:hidden;background:var(--card);box-shadow:0 24px 50px -24px rgba(19,33,43,.45)}
+.phone img{width:100%;height:100%;object-fit:cover;display:block}
+
+section .wrap{padding-block:52px}
+.band{border-top:1px solid var(--line)}
+.head{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;max-width:40em}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 32px}
+.features div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.features p{color:var(--soft);font-size:.97rem}
+
+.get{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:start}
+.qr{background:#fff;padding:14px;border-radius:18px;border:1px solid var(--line);width:192px}
+.qr #qrcode{width:162px;height:162px;overflow-wrap:anywhere;font-size:.8rem;color:#13212B}
+.qr #qrcode img,.qr #qrcode canvas{width:100%;height:100%;display:block}
+.qr p{font-size:.8rem;color:#55666F;text-align:center;margin-top:8px}
+.get-text{display:flex;flex-direction:column;gap:18px;min-width:0}
+.steps{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:8px}
+.note{font-size:.9rem;color:var(--soft);border-left:3px solid var(--yellow);padding-left:12px}
+.addr{font:500 .9rem/1.4 ui-monospace,Menlo,Consolas,monospace;overflow-wrap:anywhere}
+
+.guide{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+.guide article{padding-block:20px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px;min-width:0}
+.guide ul{margin:0;padding-left:1.2em;color:var(--soft);font-size:.97rem;display:flex;flex-direction:column;gap:4px}
+.guide b{color:var(--ink);font-weight:600}
+
+footer .wrap{padding-block:28px 40px;border-top:1px solid var(--line);display:flex;gap:10px 24px;flex-wrap:wrap;font-size:.88rem;color:var(--soft)}
+
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr;padding-block:20px 40px}
+  .features{grid-template-columns:1fr}
+  .get{grid-template-columns:1fr}
+  .guide{grid-template-columns:1fr}
+  nav{margin-left:0;width:100%}
+}
+@media (min-width:761px) and (max-width:960px){ .features{grid-template-columns:repeat(2,1fr)} }
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }
+</style>
+
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="#top" id="top">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 44 V28 A9 9 0 0 1 32 28 V44 M32 28 A9 9 0 0 1 50 28 V44" fill="none" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="54" r="4.6" fill="#E0484D"/><circle cx="32" cy="54" r="4.6" fill="#E9A800"/><circle cx="50" cy="54" r="4.6" fill="#5D9A30"/></svg>
+    MOBIlity
+  </a>
+  <nav aria-label="Sections">
+    <a href="#features">What it does</a>
+    <a href="#download">Download</a>
+    <a href="#guide">User guide</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <div class="hero-text">
+    <h1>Know before you ride.</h1>
+    <p class="lead">MOBIlity is the map of bike places: racks, repair stations, shops, rentals and shared bikes and scooters. See which ones are free right now, get a route that fits how you ride, and call for help if you need it.</p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/terminatoru86/mobility-app/releases/latest/download/MOBIlity.apk">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+        Download for Android
+      </a>
+      <span class="soft">Free · Android 8 or newer</span>
+    </div>
+    <div class="legend" aria-label="What the pin colours mean">
+      <span><i class="dot g"></i>Free</span>
+      <span><i class="dot y"></i>Almost full</span>
+      <span><i class="dot r"></i>Full</span>
+    </div>
+  </div>
+  <div class="phone"><img src="img/city.jpg" alt="The MOBIlity map: a city with green, yellow and red pins and a blue route" width="540" height="1080"></div>
+</div></section>
+
+<section id="features" class="band"><div class="wrap">
+  <div class="head">
+    <p class="label">What it does</p>
+    <h2>Everything a rider looks for, on one map</h2>
+  </div>
+  <div class="features">
+    <div><h3>Places with live status</h3><p>Every rack and station shows green, yellow or red, and how many minutes ago a rider confirmed it.</p></div>
+    <div><h3>Routes that fit you</h3><p>Pick Fast, Balanced or Quiet. Tell it if you ride an e-bike, carry cargo or have a passenger.</p></div>
+    <div><h3>SOS to riders nearby</h3><p>Hold the SOS button for a few seconds and riders within 2–3 miles see that you need help.</p></div>
+    <div><h3>Ride with Friends</h3><p>One rider hosts and shows a QR code. Everyone who scans it sees the group on the map.</p></div>
+    <div><h3>Shops, service and rentals</h3><p>Opening hours, phone and a Navigate button for bike, scooter and moped places across the US.</p></div>
+    <div><h3>Your riding, counted</h3><p>The Health tab adds up your rides by day, week and month.</p></div>
+  </div>
+</div></section>
+
+<section id="download" class="band"><div class="wrap">
+  <div class="head">
+    <p class="label">Download</p>
+    <h2>Get MOBIlity on your phone</h2>
+  </div>
+  <div class="get">
+    <div class="qr">
+      <div id="qrcode" role="img" aria-label="QR code that opens this page"></div>
+      <p>Scan with the phone camera</p>
+    </div>
+    <div class="get-text">
+      <p>On the phone, scan the code or open <span class="addr" id="siteaddr">terminatoru86.github.io/mobility-app</span>, then tap Download.</p>
+      <div class="cta">
+        <a class="btn" href="https://github.com/terminatoru86/mobility-app/releases/latest/download/MOBIlity.apk">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+          Download MOBIlity.apk
+        </a>
+        <span class="soft">Version 0.1 · test build</span>
+      </div>
+      <ol class="steps">
+        <li>Tap <b>Download</b> and wait for the file MOBIlity.apk.</li>
+        <li>Open the file. The phone asks if your browser may install apps: tap <b>Settings</b> and switch on <b>Allow from this source</b>.</li>
+        <li>Go back and tap <b>Install</b>.</li>
+        <li>Open MOBIlity and allow location, so the map can start where you are.</li>
+      </ol>
+      <p class="note">This is a test build. To install a newer one, remove the old app first. Android only for now; the iPhone version comes later.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="guide" class="band"><div class="wrap">
+  <div class="head">
+    <p class="label">User guide</p>
+    <h2>How to use the app</h2>
+    <p class="soft">The five buttons at the bottom are always there: Map, Routes, Health, Community and Profile.</p>
+  </div>
+  <div class="guide">
+    <article><h3>Start and sign in</h3><ul>
+      <li>Tap <b>Get started</b>, then sign in with Google or with a link sent to your e-mail.</li>
+      <li>Or tap <b>Guest</b> to look around first. Signing in keeps your places and routes.</li>
+    </ul></article>
+    <article><h3>The map</h3><ul>
+      <li>Each pin is a real place. <b>Green</b> is free, <b>yellow</b> is almost full, <b>red</b> is full.</li>
+      <li>Use the search bar and the filters under it to show only what you need.</li>
+      <li>Shops, service and sharing show up when you pick their filter.</li>
+    </ul></article>
+    <article><h3>A place</h3><ul>
+      <li>Tap a pin. A small sheet opens; swipe it up for more, down to close.</li>
+      <li>You see the status, distance, opening hours, phone and <b>Navigate</b>.</li>
+      <li>When you arrive, the app asks how it looks: Free, Almost full or Full. Your answer helps the next rider.</li>
+    </ul></article>
+    <article><h3>Routes and guidance</h3><ul>
+      <li>Open <b>Routes</b>, choose where to go and pick <b>Fast</b>, <b>Balanced</b> or <b>Quiet</b>.</li>
+      <li>Set your vehicle: e-bike, two seats, delivery or cargo.</li>
+      <li><b>More info</b> shows the kinds of road on the way. <b>Save route</b> keeps it in your profile.</li>
+      <li>While you ride, the top banner tells you the next turn.</li>
+    </ul></article>
+    <article><h3>SOS</h3><ul>
+      <li>Hold the <b>SOS</b> button for 3–4 seconds. Riders using the app within 2–3 miles are told.</li>
+      <li>Sent by mistake? Tap the small badge on the SOS button to cancel.</li>
+      <li>SOS reaches other riders, not the emergency services. In an emergency call 911.</li>
+    </ul></article>
+    <article><h3>Report</h3><ul>
+      <li>Tell us about a new place, a road problem, a map correction or an abandoned vehicle.</li>
+      <li>The same button takes your feedback about the app.</li>
+    </ul></article>
+    <article><h3>Community</h3><ul>
+      <li><b>Ride with Friends</b>: the host shows a QR code, the others scan it, and the group sees each other on the map.</li>
+      <li><b>Marketplace</b>: buy and sell between riders.</li>
+      <li><b>BMX</b>: tracks, parks and places for kids and families.</li>
+    </ul></article>
+    <article><h3>Health and Profile</h3><ul>
+      <li><b>Health</b> shows your rides by day, week and month.</li>
+      <li><b>Profile</b> holds your vehicle, saved places and routes, your map areas and the settings.</li>
+    </ul></article>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>MOBIlity · made in Chicago</span>
+  <span>Map data © OpenStreetMap contributors</span>
+  <a href="https://github.com/terminatoru86/mobility-app">Source on GitHub</a>
+</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  // The code always opens the public website, wherever this page is viewed from.
+  var SITE = 'https://terminatoru86.github.io/mobility-app/';
+  try {
+    new QRCode(document.getElementById('qrcode'), { text: SITE, width: 324, height: 324,
+      colorDark: '#13212B', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M });
+  } catch (e) {
+    document.getElementById('qrcode').textContent = SITE;
+  }
+</script>
+</body>
+</html>

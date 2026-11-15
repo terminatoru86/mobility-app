@@ -1,0 +1,43 @@
+name: Download file for the website (APK)
+
+# Builds the installable Android file and puts it where the website's Download button points:
+# https://github.com/terminatoru86/mobility-app/releases/latest/download/MOBIlity.apk
+# For now it is signed with a test key (a newer build cannot be installed over an older one).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Free disk space (the runner is nearly full)
+        run: sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost /usr/local/lib/node_modules /opt/hostedtoolcache/CodeQL "$AGENT_TOOLSDIRECTORY" || true
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Firebase config (from the GOOGLE_SERVICES_JSON secret, if set)
+        env:
+          GSJ: ${{ secrets.GOOGLE_SERVICES_JSON }}
+        run: |
+          if [ -n "$GSJ" ]; then printf '%s' "$GSJ" > android/app/google-services.json; fi
+      - run: flutter pub get
+      - run: flutter build apk --release
+      - name: Publish as the latest download
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp build/app/outputs/flutter-apk/app-release.apk MOBIlity.apk
+          ls -la MOBIlity.apk
+          V=$(grep '^version:' pubspec.yaml | cut -d' ' -f2 | cut -d+ -f1)
+          TAG="v$V-${{ github.run_number }}"
+          gh release create "$TAG" MOBIlity.apk --title "MOBIlity $V (test build ${{ github.run_number }})" \
+            --notes "Test build for Android from commit ${GITHUB_SHA::7}. Signed with a test key: remove the older app before installing a newer build." --latest
+          echo "::notice::Download: https://github.com/${{ github.repository }}/releases/latest/download/MOBIlity.apk · $(du -h MOBIlity.apk | cut -f1)"
