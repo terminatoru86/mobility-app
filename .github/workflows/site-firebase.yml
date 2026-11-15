@@ -1,0 +1,31 @@
+name: Website (mobiliti.web.app)
+
+# Publishes the site/ folder at https://mobiliti.web.app (Firebase Hosting, the site named "mobiliti").
+# Needs, once, in GitHub → Settings → Secrets and variables → Actions:
+#   FIREBASE_SERVICE_ACCOUNT  = the JSON key of a service account of the Firebase project
+#   FIREBASE_PROJECT_ID       = the project id
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths: ['site/**', 'firebase.site.json']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Publish
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          PID: ${{ secrets.FIREBASE_PROJECT_ID }}
+        run: |
+          if [ -z "$SA" ] || [ -z "$PID" ]; then echo "::warning::Firebase secrets not set yet: nothing published."; exit 0; fi
+          echo "$SA" > "$RUNNER_TEMP/sa.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/sa.json"
+          npm install -g firebase-tools
+          firebase deploy --only hosting:mobiliti --config firebase.site.json --project "$PID" --non-interactive
+          echo "::notice::Published: https://mobiliti.web.app"
