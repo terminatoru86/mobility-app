@@ -14,6 +14,7 @@ import '../widgets/place_sheet.dart' show openLink;
 import '../widgets/signup.dart';
 import 'map_screen.dart' show chooseOperators;
 import '../data/auth.dart';
+import 'shop_owner_screen.dart';
 
 /// 3.10 Profile: account and settings, no side menu.
 class ProfileScreen extends StatelessWidget {
@@ -53,6 +54,8 @@ class ProfileScreen extends StatelessWidget {
               _row(Icons.settings_outlined, 'Settings', () => _push(context, const SettingsScreen())),
               _row(Icons.lightbulb_outline, 'Help · Replay the guide', state.replayGuide,
                   trailing: state.guideDone ? null : 'on the Map tab'),
+              _row(Icons.storefront_outlined, 'Shop owner', () => _push(context, const ShopOwnerScreen())),
+              _row(Icons.card_giftcard, 'Messages from shops', () => _push(context, const ShopInboxScreen())),
               _row(Icons.volunteer_activism_outlined, 'Donate', () => showDonate(context)),
             ]),
             const SizedBox(height: 12),

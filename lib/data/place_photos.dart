@@ -19,7 +19,7 @@ class PlacePhoto {
   /// quarter turns clockwise to stand the picture upright (the camera was held sideways or upside down)
   final int turns;
   const PlacePhoto(this.url, this.credit, {this.turns = 0});
-  bool get local => !url.startsWith('http');
+  bool get local => !url.startsWith('http') && !url.startsWith('data:');
 }
 
 final Map<String, Future<List<PlacePhoto>>> _found = {};

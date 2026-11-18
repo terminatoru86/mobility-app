@@ -3,6 +3,7 @@ import 'package:mobility/data/device_ledger.dart';
 import 'package:mobility/data/fixit_help.dart';
 import 'package:mobility/data/osm.dart';
 import 'package:mobility/data/places.dart';
+import 'package:mobility/data/shop_owner.dart';
 import 'package:mobility/data/site_hours.dart';
 import 'package:mobility/data/zones.dart';
 import 'package:latlong2/latlong.dart';
@@ -12,6 +13,44 @@ Place? osm(Map<String, dynamic> tags) => placeFromOsm({'id': 'node/9', 'lat': 41
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+  group('Shops: what they sell, the owner page', () {
+    test('a shop with sells chosen by hand shows exactly that; a bike shop fits an e-bike rider', () {
+      final p = osm({'shop': 'bicycle', 'name': 'Wheel Works', 'mobility:sells': 'bike;moped'})!;
+      expect(p.accepts, containsAll([Vehicle.bike, Vehicle.moped]));
+      expect(p.fitsVehicle(Vehicle.moped), isTrue);
+      expect(p.fitsVehicle(Vehicle.ebike), isTrue); // a bike shop serves e-bikes too
+      expect(p.fitsVehicle(Vehicle.moto), isFalse);
+      expect(p.fitsVehicle(null), isTrue);
+    });
+    test('the Excel list gives the main kind, the name adds the rest', () {
+      final m = osm({'shop': 'motorcycle', 'name': 'City Scooter & Moto', 'mobility:sells': 'moto'})!;
+      expect(m.accepts, containsAll([Vehicle.moto, Vehicle.moped, Vehicle.scooter]));
+      final b = osm({'shop': 'bicycle', 'name': 'Plain Bikes', 'mobility:sells': 'bike'})!;
+      expect(b.fitsVehicle(Vehicle.moto), isFalse);
+    });
+    test('only shops are filtered by vehicle', () {
+      final r = osm({'amenity': 'bicycle_parking'})!;
+      expect(r.fitsVehicle(Vehicle.moto), isTrue);
+    });
+    test('the discount line says how much and on what', () {
+      const p = ShopPage(id: 'a', owner: 'u', discount: true, discountText: '15% off', discountOn: ['New bikes', 'Other'], discountOther: 'helmets');
+      expect(p.discountLine, '15% off · New bikes, helmets');
+      expect(p.copy(discount: false).discountLine, '');
+    });
+    test('a page survives the trip to Firestore and back', () {
+      const p = ShopPage(id: 'a', owner: 'u', name: 'X', email: 'a@b.c', sells: ['bike', 'moped'], discount: true, discountOn: ['Other']);
+      final q = ShopPage.fromFields('a', p.toFields())!;
+      expect(q.sells, ['bike', 'moped']);
+      expect(q.discount, isTrue);
+      expect(q.email, 'a@b.c');
+      expect(q.verified, isFalse);
+    });
+    test('the month id counts in UTC', () {
+      expect(monthId(DateTime.utc(2026, 11, 30, 23)), 202611);
+      expect(shopKey('node/12'), 'node_12');
+    });
+  });
+
   group('Racks and parking', () {
     test('a rack inside a private area is private parking, with who may use it and no invented price', () {
       final p = osm({'amenity': 'bicycle_parking', 'bicycle_parking': 'stands', 'access': 'private', 'private_area': 'parking'})!;

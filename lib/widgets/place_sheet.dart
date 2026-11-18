@@ -1,3 +1,4 @@
+import 'dart:convert' show base64Decode;
 import 'dart:io' show File;
 
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -9,6 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../data/app_state.dart';
 import '../data/mapillary.dart';
 import '../data/place_photos.dart';
+import '../data/shop_owner.dart';
 import '../data/places.dart';
 import '../data/site_hours.dart';
 import '../data/store.dart';
@@ -212,10 +214,27 @@ class _PlaceSheetState extends State<PlaceSheet> {
   SiteInfo? _site; // hours and phone read from the place's own website, when the map has none
 
   List<PlacePhoto> _mine = const [], _online = const [];
+  ShopPage? _page; // what the owner of the shop wrote on its page (once checked by us)
+  bool _visited = false, _checking = false;
+
+  bool get _shopLike =>
+      widget.place.osm && (widget.place.type == PlaceType.shop || widget.place.type == PlaceType.service || widget.place.type == PlaceType.rent);
+
+  void _loadPage() {
+    if (!_shopLike) return;
+    ShopPages.i.of(widget.place.id).then((pg) async {
+      final v = pg == null ? false : await ShopPages.i.visited(widget.place.id);
+      if (mounted) setState(() {
+        _page = pg;
+        _visited = v;
+      });
+    });
+  }
 
   /// every photo of the place, in the order they are shown
   List<PlacePhoto> get _photos => [
         ..._mine,
+        for (final b in _page?.photos ?? const <String>[]) PlacePhoto('data:image/jpeg;base64,$b', 'shop'),
         for (final u in widget.place.photos) PlacePhoto(u, 'map'),
         ..._online,
       ];
@@ -229,6 +248,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
     super.initState();
     MyPhotos.i.addListener(_loadMine);
     _loadMine();
+    _loadPage();
     // real places only: open street photos that look at this place
     final pl = widget.place;
     if (pl.osm && pl.website != null && (pl.hours == null || pl.phone == null) && pl.type.isNeutral) {
@@ -296,9 +316,18 @@ class _PlaceSheetState extends State<PlaceSheet> {
 
   @override
   Widget build(BuildContext context) {
-    final p = widget.place;
-    // a shared vehicle on the street takes the colour of its battery
-    final c = colorsFor(p.share?.street == true ? p.share!.charge : p.shownStatus);
+    final pg = _page;
+    final p = pg == null
+        ? widget.place
+        : widget.place.withShop(
+            hours: pg.hours.trim().isEmpty ? null : pg.hours.trim(),
+            phone: pg.phone.trim().isEmpty ? null : pg.phone.trim(),
+            sells: pg.sellsVehicles);
+    // a shared vehicle on the street takes the colour of its battery; a shop with a discount, violet
+    final deal = pg != null && pg.discount && pg.discountLine.isNotEmpty;
+    final c = deal
+        ? const StatusColors(Color(0xFF7B4FD0), Color(0xFFEDE3FA), Color(0xFF4A2A8A))
+        : colorsFor(p.share?.street == true ? p.share!.charge : p.shownStatus);
     const gap = SizedBox(height: 8); // the parts sit close together, as in the manual
 
     final children = <Widget>[
@@ -347,7 +376,8 @@ class _PlaceSheetState extends State<PlaceSheet> {
       ]),
       gap,
       ..._specific(p, c),
-      if (p.hours != null || p.phone != null || p.website != null) ...[gap, _hoursRow(p)],
+      if (p.hours != null || p.phone != null || p.website != null || (pg?.email.isNotEmpty ?? false)) ...[gap, _hoursRow(p)],
+      if (pg != null && !_visited && ShopPages.i.isSignedIn) ...[gap, _checkInButton(p, pg)],
       if (p.type.group == 'Parking') _securitySection(p),
       if (p.reviews.isNotEmpty)
         ...[gap, ReviewsCarousel(p, onOpen: () => _push(ReviewsScreen(place: p, state: widget.state)))]
@@ -410,7 +440,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
               padding: EdgeInsets.zero,
               children: [
                 Column(key: _contentKey, mainAxisSize: MainAxisSize.min, children: [
-                  _band(p, c),
+                  _band(p, c, deal ? pg.discountLine : ''),
                   Padding(padding: const EdgeInsets.fromLTRB(14, 0, 14, 0), child: Column(children: children)),
                 ]),
               ],
@@ -422,7 +452,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
   }
 
   // Coloured band: glyph (or operator name), age, address + copy, Trip.
-  Widget _band(Place p, StatusColors c) {
+  Widget _band(Place p, StatusColors c, [String deal = '']) {
     // the name of the place goes on top; under it the street (when the map data has it)
     final named = p.operatorName == null && (p.street != null || (p.osm && p.type.isNeutral));
     final line = named ? (p.street ?? '') : p.address;
@@ -464,6 +494,20 @@ class _PlaceSheetState extends State<PlaceSheet> {
                   ),
               ]),
               const SizedBox(height: 2),
+              if (deal.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 2),
+                  child: Row(children: [
+                    Icon(Icons.sell_rounded, size: 14, color: c.dark),
+                    const SizedBox(width: 4),
+                    Flexible(
+                      child: Text(deal,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(fontSize: 12.5, fontWeight: FontWeight.w900, color: c.dark)),
+                    ),
+                  ]),
+                ),
               Row(children: [
                 if (line.isNotEmpty)
                   Flexible(
@@ -591,6 +635,32 @@ class _PlaceSheetState extends State<PlaceSheet> {
   }
 
   /// One line: the hours, then the website (a globe), then the phone.
+  /// "I was here": counts a visit when the rider is at the door, so the shop can send a message once a month.
+  Widget _checkInButton(Place p, ShopPage pg) => Align(
+        alignment: Alignment.centerLeft,
+        child: OutlinedButton.icon(
+          onPressed: _checking
+              ? null
+              : () async {
+                  setState(() => _checking = true);
+                  final ok = await ShopPages.i.checkIn(p, pg, userPos);
+                  if (!mounted) return;
+                  setState(() {
+                    _checking = false;
+                    _visited = ok;
+                  });
+                  ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
+                      content: Text(ok
+                          ? 'Thanks! ${pg.name.isEmpty ? 'The shop' : pg.name} can now send you a message, once a month at most.'
+                          : 'You need to be at the shop (within ${ShopPages.doorMeters.round()} m) to check in.')));
+                },
+          icon: const Icon(Icons.storefront_outlined, size: 18),
+          label: const Text('I was here'),
+          style: OutlinedButton.styleFrom(
+              foregroundColor: AppColors.ink, shape: const StadiumBorder(), visualDensity: VisualDensity.compact),
+        ),
+      );
+
   Widget _hoursRow(Place p) {
     final web = p.website == null ? null : Uri.tryParse(p.website!.startsWith('http') ? p.website! : 'https://${p.website}');
     final pill = OutlinedButton.styleFrom(
@@ -622,6 +692,13 @@ class _PlaceSheetState extends State<PlaceSheet> {
             ),
             child: const Icon(Icons.language, size: 20),
           ),
+        ),
+      if (_page != null && _page!.email.trim().isNotEmpty)
+        OutlinedButton.icon(
+          onPressed: () => openLink('mailto:${_page!.email.trim()}'),
+          icon: const Icon(Icons.mail_outline, size: 16),
+          label: Text(_page!.email.trim(), overflow: TextOverflow.ellipsis),
+          style: pill,
         ),
       if (phone != null)
         OutlinedButton.icon(
@@ -661,7 +738,9 @@ class _PlaceSheetState extends State<PlaceSheet> {
                     child: const Icon(Icons.image_not_supported_outlined, color: AppColors.soft),
                   );
               return Stack(fit: StackFit.expand, children: [
-                if (ph.local)
+                if (ph.url.startsWith('data:'))
+                  Image.memory(base64Decode(ph.url.split(',').last), fit: BoxFit.cover, errorBuilder: (_, __, ___) => missing())
+                else if (ph.local)
                   Image.file(File(ph.url), fit: BoxFit.cover, errorBuilder: (_, __, ___) => missing())
                 else
                   RotatedBox(

@@ -6,6 +6,49 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
+    // the page of a shop, kept by its owner. Anyone reads. The first signed-in rider to claim a place
+    // creates it (never already verified); only that owner changes it, and nobody can verify it from the app:
+    // the MOBIlity team sets verified = true in the console after checking the shop is theirs.
+    match /shops/{shop} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.resource.data.owner == request.auth.uid
+        && request.resource.data.verified == false
+        && request.resource.data.keys().hasOnly(['owner', 'verified', 'name', 'email', 'phone', 'hours', 'sells', 'photos',
+                                                 'discount', 'discountText', 'discountOn', 'discountOther'])
+        && request.resource.data.photos.size() <= 3;
+      allow update: if request.auth != null
+        && resource.data.owner == request.auth.uid
+        && request.resource.data.owner == resource.data.owner
+        && request.resource.data.verified == resource.data.verified
+        && request.resource.data.keys().hasOnly(['owner', 'verified', 'name', 'email', 'phone', 'hours', 'sells', 'photos',
+                                                 'discount', 'discountText', 'discountOn', 'discountOther'])
+        && request.resource.data.photos.size() <= 3;
+
+      // "I was here": a rider adds himself once; only the shop owner can read the list (a count, no names shown)
+      match /visits/{uid} {
+        allow create: if request.auth != null && request.auth.uid == uid
+          && request.resource.data.keys().hasOnly(['at']) && request.resource.data.at is int;
+        allow read: if request.auth != null
+          && get(/databases/$(database)/documents/shops/$(shop)).data.owner == request.auth.uid;
+      }
+
+      // one message per month: the document is named after the month (UTC), written once, by the owner
+      // of a verified shop. Riders who checked in read them.
+      match /rewards/{month} {
+        allow create: if request.auth != null
+          && get(/databases/$(database)/documents/shops/$(shop)).data.owner == request.auth.uid
+          && get(/databases/$(database)/documents/shops/$(shop)).data.verified == true
+          && month == string(request.time.year() * 100 + request.time.month())
+          && request.resource.data.keys().hasOnly(['text', 'shop', 'at'])
+          && request.resource.data.text is string && request.resource.data.text.size() <= 200
+          && request.resource.data.shop is string && request.resource.data.shop.size() < 120;
+        allow read: if request.auth != null
+          && (exists(/databases/$(database)/documents/shops/$(shop)/visits/$(request.auth.uid))
+              || get(/databases/$(database)/documents/shops/$(shop)).data.owner == request.auth.uid);
+      }
+    }
+
     // opening hours and phone read by the app from a place's own website, shared by all riders:
     // anyone reads; only a signed-in rider adds or refreshes an entry, short texts only; no deleting
     match /site_info/{id} {

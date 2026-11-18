@@ -272,6 +272,24 @@ class Place {
 
   Status get shownStatus => type.isNeutral ? Status.neutral : status;
 
+  /// A shop shows up for a rider only when it sells for the rider's vehicle (a bike shop is also fine
+  /// for an e-bike). Other kinds of places, and riders with no vehicle chosen, see everything.
+  bool fitsVehicle(Vehicle? v, [List<Vehicle>? sells]) {
+    if (v == null || type != PlaceType.shop) return true;
+    final a = sells ?? accepts;
+    return a.contains(v) || (v == Vehicle.ebike && a.contains(Vehicle.bike));
+  }
+
+  /// The same place with what its owner wrote on its page: contact, hours, what it sells, photos.
+  Place withShop({String? hours, String? phone, List<Vehicle>? sells, List<String>? photos}) => Place(
+        id: id, type: type, address: address, pos: pos, status: status, count: count,
+        age: age, accepts: sells == null || sells.isEmpty ? accepts : sells, distance: distance,
+        etaMin: etaMin, hours: hours ?? this.hours, phone: phone ?? this.phone,
+        rating: rating, reviewCount: reviewCount, reviews: reviews, security: security, qa: qa, tag: tag,
+        tools: tools, busy: busy, priceNow: priceNow, operatorName: operatorName, operatorPrice: operatorPrice,
+        osm: osm, facts: facts, website: website, photos: photos ?? this.photos, offers: offers, share: share, street: street,
+      );
+
   /// Same place with a new status (after a rider confirms it in Stats).
   Place withStatus(Status s, String newAge) => Place(
         id: id, type: type, address: address, pos: pos, status: s,

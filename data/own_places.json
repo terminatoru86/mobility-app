@@ -11,7 +11,11 @@
       "hours": "Mo, We-Fr 11:00-17:00; Sa off; Su 12:00-17:00",
       "lat": 41.9611,
       "lon": -87.7073,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "ebike",
+        "scooter"
+      ]
     },
     {
       "type": "Shop",
@@ -22,7 +26,10 @@
       "website": "https://ebikeling.com/",
       "lat": 41.8679,
       "lon": -87.7667,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "ebike"
+      ]
     },
     {
       "type": "Service hub",
@@ -34,7 +41,10 @@
       "hours": "Mo-Su 12:00-18:00",
       "lat": 41.9581,
       "lon": -87.7248,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "ebike"
+      ]
     },
     {
       "type": "Service hub",
@@ -46,7 +56,10 @@
       "hours": "Mo-Tu, Th-Fr 13:00-19:00; We, Su off; Sa 12:00-17:00",
       "lat": 41.9834,
       "lon": -87.6897,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "scooter"
+      ]
     },
     {
       "type": "Rent",
@@ -58,7 +71,10 @@
       "hours": "Mo-Su 09:00-17:00",
       "lat": 41.892,
       "lon": -87.6143,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "bike"
+      ]
     },
     {
       "type": "Rent",
@@ -69,7 +85,10 @@
       "hours": "Mo-Fr 10:00-18:00; Sa 11:00-17:00; Su off",
       "lat": 41.8913,
       "lon": -87.6448,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "ebike"
+      ]
     },
     {
       "type": "Service hub",
@@ -81,7 +100,10 @@
       "hours": "Mo-Fr 08:00-18:00; Sa 08:00-16:00; Su off",
       "lat": 41.983,
       "lon": -87.7865,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "moto"
+      ]
     },
     {
       "type": "Service hub",
@@ -92,7 +114,10 @@
       "website": "http://www.nscycleschicago.com/",
       "lat": 41.9467,
       "lon": -87.7037,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "moto"
+      ]
     },
     {
       "type": "Shop",
@@ -104,7 +129,11 @@
       "hours": "Tu-Fr 10:00-16:00; Sa 10:00-17:00; Mo, Su off",
       "lat": 35.2255,
       "lon": -80.834,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "moped",
+        "scooter"
+      ]
     },
     {
       "type": "Rent",
@@ -116,7 +145,10 @@
       "hours": "Tu-Sa 10:00-18:00; Su 12:00-18:00; Mo off",
       "lat": 35.2422,
       "lon": -80.8315,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "scooter"
+      ]
     },
     {
       "type": "Shop",
@@ -128,7 +160,12 @@
       "hours": "Mo-Fr 10:00-18:00; Sa 10:00-15:00; Su off",
       "lat": 35.4098,
       "lon": -80.6621,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "moto",
+        "moped",
+        "scooter"
+      ]
     },
     {
       "type": "Rent",
@@ -140,7 +177,10 @@
       "hours": "Mo-Fr 10:00-15:00; Sa 09:00-24:00; Su off",
       "lat": 35.0681,
       "lon": -80.9333,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "scooter"
+      ]
     },
     {
       "type": "Service hub",
@@ -152,7 +192,11 @@
       "hours": "Tu, Th 10:00-16:00; Mo, We, Fr-Su off",
       "lat": 35.0558,
       "lon": -80.9412,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "ebike",
+        "scooter"
+      ]
     },
     {
       "type": "Shop",
@@ -164,7 +208,10 @@
       "hours": "Tu-Sa 10:00-19:00; Su 11:00-18:00; Mo off",
       "lat": 34.0338,
       "lon": -118.2662,
-      "added": "2026-11-12"
+      "added": "2026-11-12",
+      "sells": [
+        "bike"
+      ]
     },
     {
       "type": "Shop",
@@ -176,7 +223,10 @@
       "hours": null,
       "lat": 41.851043,
       "lon": -87.779315,
-      "added": "2026-11-18"
+      "added": "2026-11-18",
+      "sells": [
+        "bike"
+      ]
     }
   ]
 }

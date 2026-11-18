@@ -14,6 +14,7 @@ import '../data/osm.dart';
 import '../data/places.dart';
 import '../data/ride_classes.dart';
 import '../data/routing.dart';
+import '../data/shop_owner.dart';
 import '../data/store.dart';
 import '../data/weather.dart';
 import '../data/zones.dart';
@@ -472,7 +473,9 @@ class MapScreenState extends State<MapScreen> {
       _sOurs = low.length < 2
           ? []
           : _all
-              .where((p) => p.address.toLowerCase().contains(low) || p.type.title.toLowerCase().contains(low))
+              .where((p) =>
+                  (p.address.toLowerCase().contains(low) || p.type.title.toLowerCase().contains(low)) &&
+                  p.fitsVehicle(widget.state.myVehicle, ShopPages.i.cached(p.id)?.sellsVehicles))
               .take(5)
               .toList();
       if (_sQ.length < 3) _sResults = [];
@@ -1019,6 +1022,7 @@ class MapScreenState extends State<MapScreen> {
     final pins = view
         .where((p) =>
             (_picked.isEmpty || _picked.contains(p.type.chip)) &&
+            p.fitsVehicle(widget.state.myVehicle, ShopPages.i.cached(p.id)?.sellsVehicles) &&
             (statusFilter.value == null || p.shownStatus == statusFilter.value || p.id == _selected) &&
             (a == null || a.contains(p.pos)) &&
             (st.zones.isEmpty || inZone(p.pos)))

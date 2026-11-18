@@ -747,6 +747,18 @@ List<Vehicle>? _shopSells(Map<String, dynamic> t) {
   final scooterWord = RegExp(r'scooter|e-?scoot|kick ?scoot|segway|ninebot|unagi').hasMatch(text);
   final ebikeWord = RegExp(r'e-?bike|electric|ebike|pedego|rad ?power').hasMatch(text);
   final motoWord = RegExp(r'moto|harley|honda|yamaha|kawasaki|suzuki|ducati|bmw motorrad|triumph|ktm|vespa|piaggio').hasMatch(text);
+  // chosen by hand (our own list, the owner's Excel list, or the shop owner in the app): bike;ebike;scooter;moped;moto
+  final chosen = t['mobility:sells']?.toString();
+  if (chosen != null && chosen.isNotEmpty) {
+    final l = <Vehicle>{
+      for (final w in chosen.split(';')) ...Vehicle.values.where((v) => v.name == w.trim()),
+    };
+    // the Excel list says only the main kind; the name adds what else the shop sells
+    if (l.contains(Vehicle.moto) && RegExp(r'scooter|moped|vespa|piaggio|kymco|honda|yamaha|powersports').hasMatch(text)) l.add(Vehicle.moped);
+    if (l.contains(Vehicle.moto) && scooterWord) l.add(Vehicle.scooter);
+    if (l.contains(Vehicle.bike) && ebikeWord) l.add(Vehicle.ebike);
+    if (l.isNotEmpty) return l.toList();
+  }
   switch (shop) {
     case 'bicycle':
       final l = [

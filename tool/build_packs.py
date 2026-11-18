@@ -896,6 +896,8 @@ def fetch_own():
         tags.update({k: v for k, v in {'name': p['name'], 'addr:street': (lambda a: a if re.match(r'\d', a) else '')((p.get('address') or '').split(',')[0]),
                                        'website': p.get('website'), 'phone': p.get('phone'),
                                        'opening_hours': p.get('hours')}.items() if v})
+        if p.get('sells'):
+            tags['mobility:sells'] = ';'.join(p['sells'])  # what the shop sells, chosen by hand
         tags['source'] = 'MOBIlity'
         slug = re.sub(r'[^a-z0-9]+', '-', p['name'].lower())[:40].strip('-')
         out.append([f'own/{slug}', round(p['lat'], 6), round(p['lon'], 6), tags])
