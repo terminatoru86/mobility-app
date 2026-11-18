@@ -195,8 +195,8 @@ def element(src, props, lat, lon, i):
     tags = {'amenity': src['amenity'], 'source': src['label']}
     if src['amenity'] == 'bicycle_parking':
         tags.update({'bicycle_parking': 'stands', 'fee': 'no'})
-        if cap and cap > 0:
-            tags['capacity'] = str(cap)
+    if src['amenity'] in ('bicycle_parking', 'motorcycle_parking', 'small_electric_vehicle_parking') and cap and cap > 0:
+        tags['capacity'] = str(cap)
     if src['amenity'] == 'bicycle_repair_station':
         tags.update({'service:bicycle:pump': 'yes', 'service:bicycle:tools': 'yes'})
     if address:
@@ -215,6 +215,19 @@ def fetch_city(src):
                 c = c[0]
             ok = isinstance(c, list) and len(c) >= 2
             x = element(src, f.get('properties') or {}, c[1] if ok else None, c[0] if ok else None, i)
+            if x:
+                out.append(x)
+        return out
+    if src.get('geojson'):
+        j = json.loads(http(src['geojson'], timeout=300))
+        for i, f in enumerate(j.get('features', []) if isinstance(j, dict) else []):
+            g = f.get('geometry') or {}
+            c = g.get('coordinates')
+            if g.get('type') not in ('Point', 'MultiPoint'):
+                continue
+            if g.get('type') == 'MultiPoint' and c:
+                c = c[0]
+            x = element(src, f.get('properties') or {}, c[1] if c and len(c) > 1 else None, c[0] if c else None, i)
             if x:
                 out.append(x)
         return out
@@ -252,9 +265,23 @@ def fetch_city(src):
 
 WANT = re.compile(r'bike\s*rack|bicycle\s*rack|bike\s*parking|bicycle\s*parking|bike\s*corral|bicycle\s*corral|'
                   r'micromobility\s*(parking|corral)|scooter\s*corral|bike\s*repair|bicycle\s*repair|fix-?it|'
-                  r'repair\s*station|bike\s*locker|bicycle\s*locker|bike\s*station', re.I)
-SKIP = re.compile(r'propos|request|survey|count|demand|plan(ned|ning)?\b|candidate|suitab|crash|collision|'
-                  r'heat\s*map|lane|route|trail|path|network|stress|study|draft|test|copy|sample|training|demo', re.I)
+                  r'repair\s*station|bike\s*locker|bicycle\s*locker|bike\s*station|'
+                  r'motorcycle\s*(parking|corral|stall|space|zone)|motorbike\s*parking|moped\s*(parking|corral|stall|zone)|'
+                  r'(e-?)?scooter\s*(parking|corral|stall|zone)|two-?wheel(er|ed)?\s*parking|small\s*electric\s*vehicle', re.I)
+
+
+def amenity_for(text):
+    """Which OpenStreetMap kind a found layer is, from its name."""
+    if re.search(r'repair|fix', text, re.I):
+        return 'bicycle_repair_station'
+    bike = re.search(r'bi(cycle|ke)', text, re.I)
+    if re.search(r'motorcycle|motorbike|moped|two-?wheel', text, re.I) and not bike:
+        return 'motorcycle_parking'
+    if re.search(r'scooter|micromobility|small\s*electric', text, re.I) and not bike:
+        return 'small_electric_vehicle_parking'
+    return 'bicycle_parking'
+SKIP = re.compile(r'propos|request|survey|counts?\b|counters?\b|demand|plan(ned|ning)?\b|candidate|suitab|crash|collision|'
+                  r'heat\s*map|lane|route|trail|path|network|stress|study|draft|\btests?\b|copy|sample|training|demo', re.I)
 
 
 def discover_arcgis(known, budget_min=25):
@@ -262,7 +289,9 @@ def discover_arcgis(known, budget_min=25):
     layers, seen = [], set()
     end = time.time() + budget_min * 60
     terms = ['"bike rack"', '"bike racks"', '"bicycle racks"', '"bicycle parking"', '"bike parking"',
-             '"bike corral"', '"micromobility parking"', '"bike repair"', '"fix-it station"', '"bike lockers"']
+             '"bike corral"', '"micromobility parking"', '"bike repair"', '"fix-it station"', '"bike lockers"',
+             '"motorcycle parking"', '"motorcycle corral"', '"motorcycle spaces"', '"moped parking"',
+             '"scooter parking"', '"scooter corral"', '"e-scooter parking"', '"micromobility corral"']
     for t in terms:
         for start in range(1, 1000, 100):
             q = urllib.parse.urlencode({
@@ -296,8 +325,7 @@ def discover_arcgis(known, budget_min=25):
                         continue
                     layers.append({'key': 'ago-' + hashlib.md5(lurl.encode()).hexdigest()[:10], 'arcgis': lurl,
                                    'socrata': None, 'hubItem': None, 'layer': 0, 'where': None,
-                                   'amenity': 'bicycle_repair_station' if re.search(r'repair|fix', name + title, re.I)
-                                   else 'bicycle_parking',
+                                   'amenity': amenity_for(name + ' ' + title),
                                    'label': f"{title} · {it.get('owner', '')}".strip(' ·')[:90]})
             if len(j.get('results', [])) < 100:
                 break
@@ -309,7 +337,8 @@ def discover_arcgis(known, budget_min=25):
 def discover_socrata(known):
     """Bike-parking datasets on every Socrata portal (Discovery API), with a point column."""
     found, seen = [], set()
-    for t in ['bike racks', 'bicycle parking', 'bike parking', 'bicycle racks', 'bike corrals', 'bike repair']:
+    for t in ['bike racks', 'bicycle parking', 'bike parking', 'bicycle racks', 'bike corrals', 'bike repair',
+              'motorcycle parking', 'moped parking', 'scooter parking', 'scooter corral', 'micromobility parking']:
         q = urllib.parse.urlencode({'q': t, 'only': 'dataset', 'limit': 100})
         try:
             j = json.loads(http(f'https://api.us.socrata.com/api/catalog/v1?{q}', timeout=60))
@@ -328,8 +357,66 @@ def discover_socrata(known):
             seen.add(key)
             found.append({'key': 'soc-' + rid, 'socrata': key, 'arcgis': None, 'hubItem': None, 'layer': 0,
                           'where': None, 'label': f'{name} · {dom}'[:90],
-                          'amenity': 'bicycle_repair_station' if re.search(r'repair|fix', name, re.I) else 'bicycle_parking'})
+                          'amenity': amenity_for(name)})
     print(f'Socrata: {len(found)} datasets found', flush=True)
+    return found
+
+
+def discover_ckan(known, budget_min=20):
+    """The U.S. open-data catalogue (data.gov): GeoJSON files and ArcGIS services that city halls, counties,
+    states and agencies list there, about bike / motorcycle / scooter parking."""
+    found, seen = [], set()
+    end = time.time() + budget_min * 60
+    terms = ['bike racks', 'bicycle parking', 'bike parking', 'bike corral', 'bike lockers', 'motorcycle parking',
+             'moped parking', 'scooter parking', 'scooter corral', 'micromobility parking']
+    for t in terms:
+        for start in range(0, 600, 100):
+            if time.time() > end:
+                break
+            q = urllib.parse.urlencode({'q': t, 'rows': 100, 'start': start,
+                                        'fq': 'res_format:("GeoJSON" OR "ArcGIS GeoServices REST API")'})
+            try:
+                j = json.loads(http(f'https://catalog.data.gov/api/3/action/package_search?{q}', timeout=60))
+            except Exception as err:
+                print(f'  data.gov {t} failed: {str(err)[:120]}', flush=True)
+                break
+            res = (j.get('result') or {}).get('results') or []
+            for pk in res:
+                title = pk.get('title') or ''
+                org = (pk.get('organization') or {}).get('title') or ''
+                for rs in pk.get('resources') or []:
+                    url = (rs.get('url') or '').strip()
+                    fmt = (rs.get('format') or '').lower()
+                    if not url or url in seen or url in known or SKIP.search(title) or not WANT.search(title + ' ' + (rs.get('name') or '')):
+                        continue
+                    seen.add(url)
+                    label = f'{title} · {org}'.strip(' ·')[:90]
+                    key = 'ckn-' + hashlib.md5(url.encode()).hexdigest()[:10]
+                    if fmt == 'geojson':
+                        found.append({'key': key, 'geojson': url, 'arcgis': None, 'socrata': None, 'hubItem': None,
+                                      'layer': 0, 'where': None, 'label': label, 'amenity': amenity_for(title)})
+                    elif 'arcgis' in fmt and re.search(r'/(FeatureServer|MapServer)(/\d+)?/?$', url):
+                        base = url.rstrip('/')
+                        if re.search(r'/\d+$', base):
+                            layers = [(base, title)]
+                        else:
+                            try:
+                                info = json.loads(http(f'{base}?f=json', timeout=40))
+                            except Exception:
+                                continue
+                            layers = [(f"{base}/{ly['id']}", ly.get('name') or '') for ly in info.get('layers') or []
+                                      if ly.get('geometryType') in (None, 'esriGeometryPoint', 'esriGeometryMultipoint')
+                                      and WANT.search((ly.get('name') or '') + ' ' + title) and not SKIP.search(ly.get('name') or '')]
+                        for lurl, lname in layers:
+                            if lurl in known:
+                                continue
+                            found.append({'key': 'ckn-' + hashlib.md5(lurl.encode()).hexdigest()[:10], 'arcgis': lurl,
+                                          'socrata': None, 'hubItem': None, 'layer': 0, 'where': None, 'label': label,
+                                          'amenity': amenity_for(lname + ' ' + title)})
+            if len(res) < 100:
+                break
+            time.sleep(1)
+    print(f'data.gov: {len(found)} files / layers found', flush=True)
     return found
 
 
@@ -1015,11 +1102,15 @@ def main():
             discovered += discover_socrata(known)
         except Exception as err:
             print(f'Socrata discovery failed: {err}', flush=True)
+        try:
+            discovered += discover_ckan(known)
+        except Exception as err:
+            print(f'data.gov discovery failed: {err}', flush=True)
     stage(f'3/6 discovery done: {len(discovered)} new public layers')
     found_log = []
-    city_end = time.time() + 45 * 60  # found-by-search layers get 45 min; our own list always runs
+    city_end = time.time() + 90 * 60  # found-by-search layers get 90 min; our own list always runs
     for src in known_srcs + discovered:
-        if src['key'].startswith(('ago-', 'soc-')) and time.time() > city_end:
+        if src['key'].startswith(('ago-', 'soc-', 'ckn-')) and time.time() > city_end:
             continue
         try:
             els = fetch_city(src)
@@ -1033,8 +1124,8 @@ def main():
                     add_city += 1
             if add_city:
                 cities.append(src['key'])
-                if src['key'].startswith(('ago-', 'soc-')):
-                    found_log.append({'key': src['key'], 'label': src['label'], 'url': src.get('arcgis') or src.get('socrata'),
+                if src['key'].startswith(('ago-', 'soc-', 'ckn-')):
+                    found_log.append({'key': src['key'], 'label': src['label'], 'url': src.get('arcgis') or src.get('socrata') or src.get('geojson'),
                                       'places': add_city})
             print(f"City {src['key']}: {add_city}", flush=True)
         except Exception as err:
@@ -1049,7 +1140,7 @@ def main():
     # keep one per ~5 m. OpenStreetMap first, then our own city list, then everything else.
     def rank(r):
         k = r[0]
-        return 0 if k.startswith(('node/', 'way/', 'relation/')) else 1 if k.startswith('city/') and not k.split('/')[1].startswith(('ago-', 'soc-')) else 2
+        return 0 if k.startswith(('node/', 'way/', 'relation/')) else 1 if k.startswith('city/') and not k.split('/')[1].startswith(('ago-', 'soc-', 'ckn-')) else 2
     dropped = 0
     for key, d in tiles.items():
         seen = set()
