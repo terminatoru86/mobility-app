@@ -17,18 +17,22 @@ import urllib.parse
 import urllib.request
 
 sys.path.insert(0, __import__('os').path.dirname(__import__('os').path.abspath(__file__)))
-from osm_routes import hav, join, simplify  # noqa: E402
+from osm_routes import MAX_KM, hav, join, simplify  # noqa: E402
 
 UA = {'User-Agent': 'MOBIlityBot/1.0 (bike routes for a cycling map; github.com/terminatoru86/mobility-app)'}
 TERMS = ['"national park" trails', '"national forest" trails', 'NPS trails', 'forest service trails', 'state park trails',
          '"bike trails"', '"bicycle trails"', '"mountain bike trails"', 'greenway', '"shared use path"', '"multi-use trail"',
-         '"rail trail"', '"bike paths"', '"park trails"', '"county trails"', 'trails open data']
-LAYER_OK = re.compile(r'trail|greenway|bikeway|bike\s*path|shared[\s-]*use|multi-?use|rail[\s-]*trail|cycle|bicycle|mtb', re.I)
+         '"rail trail"', '"bike paths"', '"park trails"', '"county trails"', 'trails open data',
+         '"motorcycle routes"', '"motorcycle trails"', '"scenic byways"', '"off highway motorcycle"', '"OHV trails"']
+LAYER_OK = re.compile(r'trail|greenway|bikeway|bike\s*path|shared[\s-]*use|multi-?use|rail[\s-]*trail|cycle|bicycle|mtb|'
+                      r'motorcycle|motorbike|dirt\s*bike|ohv|off-?highway|scenic\s*byway', re.I)
 LAYER_BAD = re.compile(r'propos|planned|plan\b|future|closed|abandon|survey|count|demand|crash|heat|study|draft|\btests?\b|copy|'
                        r'sample|training|demo|trailhead|parking|sign|bridge|access\s*point|restroom|campground|history|historic|'
                        r'horse|equestrian|ski|snow|water|paddle|canoe', re.I)
-BIKE_LAYER = re.compile(r'bike|bicycle|cycl|mtb|multi-?use|shared[\s-]*use|greenway|rail[\s-]*trail', re.I)
-BIKE_FIELD = re.compile(r'bike|bicycle|cycl|mtb|biking', re.I)
+BIKE_LAYER = re.compile(r'(?<!motor)(?<!dirt )(?<!dirt)(?:bike|bicycle|cycl)|mtb|multi-?use|shared[\s-]*use|greenway|rail[\s-]*trail', re.I)
+BIKE_FIELD = re.compile(r'(?<!motor)(?<!dirt)(?:bike|bicycle|cycl|biking)|mtb', re.I)
+MOTO_LAYER = re.compile(r'motorcycle|motorbike|dirt\s*bike|scenic\s*byway|off-?highway\s*motorcycle', re.I)
+MOTO_FIELD = re.compile(r'motorcycle|motorbike|dirt\s*bike', re.I)
 YES = {'y', 'yes', 'true', '1', 'open', 'allowed', 'managed', 'permitted', 'designated', 'accepted'}
 NAME_FIELDS = ('trail_name', 'trailname', 'trlname', 'trail_nm', 'name', 'trail', 'label', 'route_name', 'pathname')
 
@@ -38,12 +42,26 @@ def http(url, timeout=90):
         return r.read()
 
 
-def keeps(fields, props, layer_text):
-    """Does this trail piece allow bikes? A bike column decides; without one, the layer itself has to be about bike paths."""
-    cols = [f for f in props if BIKE_FIELD.search(f)]
-    if cols:
-        return any(str(props.get(c)).strip().lower() in YES or str(props.get(c)).strip().lower().startswith('yes') for c in cols)
-    return bool(BIKE_LAYER.search(layer_text))
+def _yes(v):
+    v = str(v).strip().lower()
+    return v in YES or v.startswith('yes')
+
+
+def kinds_of(props, layer_text):
+    """Which vehicles this trail piece is for: 'bicycle' and / or 'motorcycle'. A column saying yes decides; without a
+    column, the layer itself has to be about bike paths (or motorcycle routes)."""
+    out = set()
+    for f in props:
+        if BIKE_FIELD.search(f) and _yes(props.get(f)):
+            out.add('bicycle')
+        if MOTO_FIELD.search(f) and _yes(props.get(f)):
+            out.add('motorcycle')
+    if not any(BIKE_FIELD.search(f) or MOTO_FIELD.search(f) for f in props):
+        if BIKE_LAYER.search(layer_text):
+            out.add('bicycle')
+        if MOTO_LAYER.search(layer_text):
+            out.add('motorcycle')
+    return out
 
 
 def name_of(props):
@@ -60,15 +78,16 @@ def routes_from(features, layer_text, source, url, owner=''):
     by = {}
     for props, paths in features:
         n = name_of(props)
-        if n and keeps(None, props, layer_text):
-            by.setdefault(n.title() if n.isupper() else n, []).extend(paths)
+        if n:
+            for kd in kinds_of(props, layer_text):
+                by.setdefault((n.title() if n.isupper() else n, kd), []).extend(paths)
     out = []
-    for n, ways in by.items():
+    for (n, kd), ways in by.items():
         lines = [simplify(l) for l in join([list(w) for w in ways])]
         km = sum(hav(l[i], l[i + 1]) for l in lines for i in range(len(l) - 1))
-        if km < 1:
+        if km < 1 or km >= MAX_KM:
             continue
-        out.append({'id': 'a/' + hashlib.md5((url + n).encode()).hexdigest()[:12], 'name': n, 'ref': None, 'kind': 'bicycle',
+        out.append({'id': 'a/' + hashlib.md5((url + n + kd).encode()).hexdigest()[:12], 'name': n, 'ref': None, 'kind': kd,
                     'network': None, 'operator': owner or source, 'km': round(km, 1), 'tags': {}, 'source': source, 'url': url,
                     'lines': [[round(c, 5) for p in l for c in p] for l in lines]})
     return out
@@ -143,10 +162,15 @@ def selftest():
     feats = [({'TRAIL_NAME': 'LAKE LOOP', 'BIKE': 'Yes'}, [A[:4], A[3:]]), ({'TRAIL_NAME': 'Hiker Only', 'BIKE': 'No'}, [A]),
              ({'NAME': 'No column', 'x': 1}, [A])]
     r = routes_from(feats, 'Park trails', 'Test', 'http://x/0')
-    assert [x['name'] for x in r] == ['Lake Loop'], r          # bike column decides; layer without one is not bike-only
+    assert [(x['name'], x['kind']) for x in r] == [('Lake Loop', 'bicycle')], r          # bike column decides; layer without one is not bike-only
     assert r[0]['km'] > 1.4 and len(r[0]['lines']) == 1
     r2 = routes_from([({'NAME': 'Greenway A'}, [A])], 'Greenway', 'Test', 'http://x/1')
     assert len(r2) == 1                                          # no column, but the layer is a greenway layer
+    far = [(41.0 + i * 0.01, -87.0) for i in range(8)]  # 7.7 km
+    m = routes_from([({'NAME': 'Dirt Loop', 'MOTORCYCLE': 'Yes', 'BIKE': 'No'}, [far])], 'Forest trails', 'T', 'http://x/2')
+    assert [(x['name'], x['kind']) for x in m] == [('Dirt Loop', 'motorcycle')], m
+    long_ = [(41.0 + i * 0.1, -87.0) for i in range(8)]  # 78 km: city to city, left out
+    assert not routes_from([({'NAME': 'Long', 'BIKE': 'Yes'}, [long_])], 'Trails', 'T', 'http://x/3')
     assert not LAYER_OK.search('Parking lots') and LAYER_BAD.search('Proposed trails') and LAYER_BAD.search('Trailheads')
     print('self-test ok')
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Bicycle and mountain-bike route relations (with their lines) from a Geofabrik OpenStreetMap extract.
+"""Bicycle, mountain-bike and motorcycle route relations (under 50 km) (with their lines) from a Geofabrik OpenStreetMap extract.
 
-    osmium tags-filter region.osm.pbf r/route=bicycle,mtb -o routes.osm.pbf     (done by the workflow)
+    osmium tags-filter region.osm.pbf r/route=bicycle,mtb,motorcycle -o routes.osm.pbf     (done by the workflow)
     python3 tool/osm_routes.py routes.osm.pbf out.json
 
 Writes [{id, name, ref, kind, network, operator, km, tags:{...}, lines:[[lat,lon,lat,lon,...], ...]}, ...]
@@ -12,6 +12,7 @@ import json
 import math
 import sys
 
+MAX_KM = 50  # a route that goes from one town to another (50 km or more) is not wanted
 KEEP = ('name', 'ref', 'network', 'operator', 'distance', 'description', 'website', 'surface', 'from', 'to',
         'wikipedia', 'wikidata', 'colour', 'symbol', 'ascent', 'cycle_network', 'complete', 'state', 'ele')
 
@@ -84,7 +85,7 @@ def build(tags, ways):
     """One route: its tags and the geometry of its ways -> the record, or None when it is too small."""
     lines = [simplify(l) for l in join([list(w) for w in ways])]
     km = sum(hav(l[i], l[i + 1]) for l in lines for i in range(len(l) - 1))
-    if km < 1 or not (tags.get('name') or tags.get('ref')):
+    if km < 1 or km >= MAX_KM or not (tags.get('name') or tags.get('ref')):
         return None
     t = {k: v for k, v in tags.items() if k in KEEP}
     return {'name': tags.get('name') or tags.get('ref'), 'ref': tags.get('ref'), 'kind': tags.get('route'),
@@ -102,7 +103,7 @@ def main(src, dst):
 
         def relation(self, r):
             t = dict(r.tags)
-            if t.get('route') in ('bicycle', 'mtb') and t.get('type') == 'route':
+            if t.get('route') in ('bicycle', 'mtb', 'motorcycle') and t.get('type') == 'route':
                 self.rels[r.id] = (t, [m.ref for m in r.members if m.type == 'w'])
 
     class Ways(osmium.SimpleHandler):
@@ -138,6 +139,8 @@ def selftest():
     assert r and 4.3 < r['km'] < 4.6, r
     assert build({'route': 'bicycle', 'name': 'Tiny'}, [[(41.0, -87.0), (41.0001, -87.0)]]) is None
     assert build({'route': 'bicycle'}, [w1, w2]) is None  # no name or ref
+    assert build({'route': 'motorcycle', 'name': 'Long'}, [[(41.0, -87.0), (41.5, -87.0), (42.0, -87.0)]]) is None  # 111 km
+    assert build({'route': 'motorcycle', 'name': 'Scenic'}, [[(41.0, -87.0), (41.1, -87.0), (41.2, -87.0)]])['kind'] == 'motorcycle'
     zig = [(41.0 + i * 0.0001, -87.0 + (0.000001 if i % 2 else 0)) for i in range(2000)]
     assert len(simplify(zig)) < 5
     print('self-test ok')

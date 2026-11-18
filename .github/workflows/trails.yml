@@ -1,7 +1,7 @@
 name: Bike routes (trails)
 
 # Collects named bicycle / mountain-bike routes with their lines:
-#  1. OpenStreetMap route relations from the Geofabrik extracts (national, regional, local routes, park and forest routes)
+#  1. OpenStreetMap route relations (bicycle, mountain bike, motorcycle) from the Geofabrik extracts, under 50 km
 #  2. Trails that national parks, forests, states, counties and cities publish as open data (ArcGIS Online)
 # Result: data/trails/trails.json.gz and data/trails/REPORT.md. Run by hand; the app does not read it yet.
 on:
@@ -30,7 +30,7 @@ jobs:
         run: curl -fsSL --retry 6 --retry-delay 20 --retry-all-errors -C - "https://download.geofabrik.de/north-america/${{ matrix.region }}-latest.osm.pbf" -o region.osm.pbf
       - name: Routes of this region
         run: |
-          osmium tags-filter region.osm.pbf r/route=bicycle,mtb -o routes.osm.pbf
+          osmium tags-filter region.osm.pbf r/route=bicycle,mtb,motorcycle -o routes.osm.pbf
           rm region.osm.pbf
           python3 tool/osm_routes.py routes.osm.pbf routes.json
       - name: Name the result
