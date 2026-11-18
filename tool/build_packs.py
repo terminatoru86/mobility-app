@@ -1184,6 +1184,24 @@ def main():
                 for n in ns:
                     seen[(n, round(r[1] / 0.0015), round(r[2] / 0.002))] = r
     print(f'duplicates removed: {dropped} · filled from the copies: {merged}', flush=True)
+    # phone / website / hours the owner's own consolidated list (Excel) has and the sources lack: data/excel_fill.json
+    try:
+        fill = json.load(open(os.path.join(ROOT, 'data', 'excel_fill.json'), encoding='utf-8'))
+        byid = {r[0]: r for d in tiles.values() for r in d.values()}
+        n_fill = 0
+        for pid, add in fill.items():
+            row = byid.get(pid)
+            if not row:
+                continue
+            t = row[3]
+            for k, v in add.items():
+                alt = {'website': 'contact:website', 'phone': 'contact:phone'}.get(k)
+                if not t.get(k) and not (alt and t.get(alt)):
+                    t[k] = v
+                    n_fill += 1
+        print(f'filled from the owner list: {n_fill} values', flush=True)
+    except Exception as err:
+        print(f'owner list fill failed: {err}', flush=True)
     # hours and phone read from the shops' own websites (our list, data/site_hours.json; tool/site_hours.py)
     try:
         import site_hours
