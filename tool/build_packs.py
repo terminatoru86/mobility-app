@@ -903,6 +903,34 @@ def fetch_own():
     return out
 
 
+# What a repair place offers, from its NAME (the websites are read by tool/site_hours.py): an open shop
+# (do-it-yourself workshop, community bike shop, bike kitchen) and a road service (mobile repair, roadside).
+HUB_OPEN = re.compile(r'bike\s*kitchen|community\s+(bike|bicycle|cycle)|(bike|bicycle|cycle)s?\s*co-?op\b|co-?operative|'
+                      r'recycle[- ]?a[- ]?bike|earn[- ]?a[- ]?bike|bike\s+project|bicycle\s+(project|collective)|'
+                      r'open\s+(shop|workshop)|\bdiy\b|do[- ]it[- ]yourself|self[- ]?serve', re.I)
+HUB_ROAD = re.compile(r'(?<!t-)\bmobile\b(?!\s*(home|phone|al\b))|on[- ]?site|roadside|road\s*service|house\s*calls?|'
+                      r'we\s+come\s+to\s+you|to\s+your\s+door', re.I)
+
+
+def is_hub(t):
+    return t.get('service:bicycle:repair') == 'yes' or t.get('shop') == 'motorcycle_repair' or t.get('motorcycle:repair') == 'yes'
+
+
+def service_flags(rows):
+    """Writes mobility:open_shop / mobility:road_service = yes on repair places whose name says so."""
+    n = 0
+    for r in rows:
+        t = r[3]
+        if not is_hub(t):
+            continue
+        name = t.get('name') or ''
+        for rx, key in ((HUB_OPEN, 'mobility:open_shop'), (HUB_ROAD, 'mobility:road_service')):
+            if rx.search(name) and not t.get(key):
+                t[key] = 'yes'
+                n += 1
+    return n
+
+
 CONTACTS = os.environ.get('CONTACTS_OUT') or os.path.join(ROOT, 'data', 'contacts', 'business_contacts.csv')
 
 
@@ -1184,6 +1212,7 @@ def main():
                 for n in ns:
                     seen[(n, round(r[1] / 0.0015), round(r[2] / 0.002))] = r
     print(f'duplicates removed: {dropped} · filled from the copies: {merged}', flush=True)
+    print(f'open shop / road service from names: {service_flags(r for d in tiles.values() for r in d.values())}', flush=True)
     # phone / website / hours the owner's own consolidated list (Excel) has and the sources lack: data/excel_fill.json
     try:
         fill = json.load(open(os.path.join(ROOT, 'data', 'excel_fill.json'), encoding='utf-8'))

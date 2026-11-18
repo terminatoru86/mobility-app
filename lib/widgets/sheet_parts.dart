@@ -337,6 +337,41 @@ class OffersRow extends StatelessWidget {
       ]);
 }
 
+/// A repair place: Open shop · Road service · Charging, always on ONE line. The ones it offers are filled and ticked.
+class ServiceFlags extends StatelessWidget {
+  final Set<String> on;
+  const ServiceFlags(this.on, {super.key});
+  static const labels = ['Open shop', 'Road service', 'Charging'];
+
+  @override
+  Widget build(BuildContext context) => Row(children: [
+        for (var i = 0; i < labels.length; i++) ...[
+          if (i > 0) const SizedBox(width: 6),
+          Expanded(child: _flag(labels[i], on.contains(labels[i]))),
+        ],
+      ]);
+
+  Widget _flag(String text, bool yes) => Container(
+        height: 30,
+        alignment: Alignment.center,
+        padding: const EdgeInsets.symmetric(horizontal: 6),
+        decoration: BoxDecoration(
+          color: yes ? AppColors.greenTint : AppColors.paper,
+          borderRadius: BorderRadius.circular(15),
+          border: Border.all(color: yes ? AppColors.green : AppColors.line, width: yes ? 1.5 : 1),
+        ),
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Row(mainAxisSize: MainAxisSize.min, children: [
+            Icon(yes ? Icons.check_rounded : Icons.remove_rounded, size: 14, color: yes ? AppColors.greenDark : AppColors.soft),
+            const SizedBox(width: 3),
+            Text(text,
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: yes ? AppColors.greenDark : AppColors.soft)),
+          ]),
+        ),
+      );
+}
+
 /// Reviews: stars, age on the right, one line of text, dots; swipe for more.
 class ReviewsCarousel extends StatefulWidget {
   final Place place;

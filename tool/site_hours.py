@@ -215,6 +215,28 @@ def _get(url, timeout=10):
         return r.read(2_500_000).decode('utf-8', 'replace')
 
 
+# What a repair place says it offers on its own site: an open shop (do-it-yourself bench), a road service
+# (mobile / roadside repair) and charging for e-bikes, scooters and batteries. Only clear phrases count.
+FLAG_RX = {
+    'open': re.compile(r'open\s+(shop|workshop)\b|\bdiy\s+(repair|workshop|night|shop|bench|hours)|do[- ]it[- ]yourself\s+(repair|workshop|bench)|'
+                       r'bike\s+kitchen|self[- ]?service\s+(bike\s+|bicycle\s+)?(repair|workshop|shop|bench)|use\s+our\s+(tools|workstands?|bench)|'
+                       r'work\s*stands?\s+and\s+tools|community\s+(bike\s+)?workshop', re.I),
+    'road': re.compile(r'mobile\s+(bike\s+|bicycle\s+|motorcycle\s+|scooter\s+|e-?bike\s+)?(repair|mechanic|service|tune)|'
+                       r'we\s+(come|travel|ride)\s+to\s+you|on[- ]?site\s+(repair|service)|roadside\s+(assistance|service|repair|rescue)|'
+                       r'road\s*service|house\s*calls?\b|(repairs?|service)\s+at\s+your\s+(home|door|office|location)', re.I),
+    'charge': re.compile(r'(e-?bike|electric\s+bike|scooter|battery|batteries)\s+(charging|charge\s+station)|'
+                         r'charg(e|ing)\s+(your\s+)?(e-?bike|electric\s+bike|scooter|battery|batteries)|'
+                         r'(free|public)\s+(e-?bike\s+)?charging|charging\s+station\s+for\s+(e-?bikes?|scooters?)', re.I),
+}
+
+
+def flags_of(page):
+    """'open,road,charge' (the ones the page states, in this order) from the visible text of a page."""
+    text = re.sub(r'(?is)<(script|style|noscript)\b.*?</\1>|<[^>]+>', ' ', page or '')
+    text = re.sub(r'\s+', ' ', htmllib.unescape(text))
+    return ','.join(k for k, rx in FLAG_RX.items() if rx.search(text))
+
+
 _crawls = []
 
 
@@ -310,6 +332,7 @@ def read_site(url):
             return {'h': '', 'p': '', 't': today, 'no': 1}  # the site asks robots to stay out: we do
         home = _get(url)
         hours, phone = parse_page(home)
+        seen_flags = set(filter(None, flags_of(home).split(',')))
         if not hours:
             # many shops keep the hours on another page: first the pages the home page itself links
             # to as hours / contact / visit / location, then the usual addresses
@@ -317,13 +340,15 @@ def read_site(url):
                 if not rp.can_fetch(AGENT, extra):
                     continue
                 try:
-                    h2, p2 = parse_page(_get(extra, timeout=8))
+                    pg = _get(extra, timeout=8)
+                    h2, p2 = parse_page(pg)
+                    seen_flags |= set(filter(None, flags_of(pg).split(',')))
                 except Exception:
                     continue
                 hours, phone = h2, phone or p2
                 if hours:
                     break
-        return {'h': hours or '', 'p': phone or '', 't': today, 'v': READER}
+        return {'h': hours or '', 'p': phone or '', 't': today, 'v': READER, 'f': ','.join(k for k in FLAG_RX if k in seen_flags)}
     except Exception as err:
         code = getattr(err, 'code', None)
         why = f'http {code}' if code else type(getattr(err, 'reason', err)).__name__
@@ -382,6 +407,31 @@ def afternoon(hours):
     return re.sub(r'(\d\d):(\d\d)-(\d\d):(\d\d)', fix, hours)
 
 
+def is_hub(t):
+    return t.get('service:bicycle:repair') == 'yes' or t.get('shop') == 'motorcycle_repair' or t.get('motorcycle:repair') == 'yes'
+
+
+FLAG_TAG = {'open': 'mobility:open_shop', 'road': 'mobility:road_service', 'charge': 'mobility:charging'}
+
+
+def apply_flags(t, e):
+    """What the place's own website says it offers -> tags (only on repair places). A flag we wrote earlier that
+    the site no longer states goes away; a tag from the map data or from the name is never touched."""
+    wrote = set(filter(None, (t.get('svc:site') or '').split(',')))
+    want = set(filter(None, ((e or {}).get('f') or '').split(','))) if e and 'f' in e else wrote
+    for k, tag in FLAG_TAG.items():
+        if k in want and not t.get(tag):
+            t[tag] = 'yes'
+            wrote.add(k)
+        elif k in wrote and k not in want and t.get(tag) == 'yes':
+            t.pop(tag, None)
+            wrote.discard(k)
+    if wrote:
+        t['svc:site'] = ','.join(k for k in FLAG_TAG if k in wrote)
+    else:
+        t.pop('svc:site', None)
+
+
 def apply(rows_iter, known, shared):
     """Writes the hours and phone we hold into the places that lack them. Returns how many got hours."""
     n = 0
@@ -391,6 +441,8 @@ def apply(rows_iter, known, shared):
             continue
         u = site_of(t)
         e = known.get(u) if u and u not in shared else None
+        if is_hub(t):
+            apply_flags(t, e)
         ours = t.get('hours:source') == 'website'
         if ours and not (e and e.get('h')):
             # we wrote these hours earlier and the site no longer states them
@@ -428,15 +480,18 @@ def main():
         due = []
         for r in every:
             t = r[3]
-            if not wants_hours(t) or (t.get('opening_hours') and t.get('hours:source') != 'website'):
-                continue
             u = site_of(t)
+            e = known.get(u) if u else None
+            no_flags = is_hub(t) and not (e and 'f' in e)  # repair place, site read before the flags existed
+            if not wants_hours(t) or (t.get('opening_hours') and t.get('hours:source') != 'website' and not no_flags):
+                continue
             if not u or u in shared:
                 continue
-            e = known.get(u)
             age = (today - datetime.strptime(e['t'], '%Y-%m-%d').replace(tzinfo=timezone.utc)).days if e else 10 ** 6
             if e and not e.get('h') and not e.get('no') and not e.get('x') and e.get('v', 1) < READER:
                 age = 10 ** 5  # read before the reader learned the inner pages: once more now
+            if no_flags and e and not e.get('no') and not e.get('x'):
+                age = max(age, RECHECK_DAYS)  # read again once for the flags
             if age >= RECHECK_DAYS:
                 due.append((age, u))
         due = [u for _, u in sorted(set(due), reverse=True)]  # never read first, then the oldest

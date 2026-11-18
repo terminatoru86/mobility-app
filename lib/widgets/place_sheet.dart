@@ -556,16 +556,12 @@ class _PlaceSheetState extends State<PlaceSheet> {
           ),
         ];
       case PlaceType.service:
+        // Open shop · Road service · Charging on one line (ticked when the place offers it); then the rest it does
+        final flags = p.osm ? {for (final f in ServiceFlags.labels) if (p.offers.contains(f)) f} : {...ServiceFlags.labels};
+        final rest = p.offers.where((o) => !ServiceFlags.labels.contains(o)).toList();
         return [
-          if (p.osm)
-            // real place: only what the map data says it does
-            if (p.offers.isNotEmpty) OffersRow(p.offers, title: 'What they do') else const SizedBox.shrink()
-          else
-            Wrap(spacing: 6, children: [
-              _chip('Open Service', AppColors.paper, AppColors.primary, AppColors.slate),
-              _chip('Road Service', AppColors.paper, AppColors.primary, AppColors.slate),
-              _chip('Charging', AppColors.yellowTint, AppColors.yellowDark, AppColors.yellow),
-            ]),
+          ServiceFlags(flags),
+          if (p.osm && rest.isNotEmpty) ...[const SizedBox(height: 10), OffersRow(rest, title: 'What they do')],
           const SizedBox(height: 12),
           FilledButton(
             onPressed: () => _push(ServiceRequestScreen(place: p, state: widget.state)),

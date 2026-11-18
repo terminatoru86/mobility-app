@@ -950,7 +950,7 @@ List<String> _offers(Map<String, dynamic> t, PlaceType type) {
 
   const bike = {
     'repair': 'Repairs', 'electric': 'E-bike service', 'retail': 'Sells bikes', 'second_hand': 'Used bikes',
-    'rental': 'Rentals', 'parts': 'Parts', 'accessories': 'Accessories', 'clothes': 'Clothing', 'diy': 'DIY workshop',
+    'rental': 'Rentals', 'parts': 'Parts', 'accessories': 'Accessories', 'clothes': 'Clothing', 'diy': 'Open shop',
     'cleaning': 'Cleaning', 'pump': 'Free pump', 'charging': 'Charging', 'tools': 'Tools', 'stand': 'Repair stand',
     'chain_tool': 'Chain tool', 'repair:emergency': 'Emergency repair',
   };
@@ -977,6 +977,12 @@ List<String> _offers(Map<String, dynamic> t, PlaceType type) {
       }
       for (final e in moto.entries) {
         if (yes(e.key)) add(e.value);
+      }
+      // the three things a repair place can offer on top (shown on one line of its sheet)
+      if (type == PlaceType.service) {
+        if (yes('mobility:open_shop')) add('Open shop');
+        if (yes('mobility:road_service')) add('Road service');
+        if (yes('mobility:charging')) add('Charging');
       }
     case PlaceType.rent || PlaceType.sharing:
       for (final v in (t['rental']?.toString() ?? '').split(';')) {
