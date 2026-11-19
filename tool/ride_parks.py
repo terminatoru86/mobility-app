@@ -97,8 +97,8 @@ def overpass_box(s, w, n, e, q_for, depth=0):
         except Exception as err:
             print(f'  Overpass {bb} on {url}: {err}', flush=True)
             time.sleep(15 + 15 * attempt)
-    if depth >= 2:
-        return None
+    if depth >= 2 or (n - s) * (e - w) < 20:
+        return None  # small boxes (Hawaii, Puerto Rico...) are not cut again
     ms, mw = (s + n) / 2, (w + e) / 2
     parts = [overpass_box(*b, q_for, depth + 1) for b in ((s, w, ms, mw), (s, mw, ms, e), (ms, w, n, mw), (ms, mw, n, e))]
     if any(p is None for p in parts):
@@ -310,13 +310,18 @@ def main():
     test()
     if '--test' in sys.argv:
         return
-    parts = []
-    for name, fn in (('osm', fetch_osm), ('overture', fetch_overture), ('foursquare', fetch_foursquare)):
+    # the three sources at the same time: a slow Overpass does not hold up the other two
+    from concurrent.futures import ThreadPoolExecutor
+
+    def run(item):
+        name, fn = item
         try:
-            parts.append(fn())
+            return fn()
         except Exception as err:
             print(f'{name} failed: {err}', flush=True)
-            parts.append([])
+            return []
+    with ThreadPoolExecutor(3) as ex:
+        parts = list(ex.map(run, (('osm', fetch_osm), ('overture', fetch_overture), ('foursquare', fetch_foursquare))))
     allp = merge(parts)
     allp.sort(key=lambda p: (p[1], p[2]))
     out = os.path.join(ROOT, 'assets', 'ride', 'ride_parks.json.gz')
