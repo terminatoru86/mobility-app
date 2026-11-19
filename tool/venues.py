@@ -132,7 +132,7 @@ GROUP = {'school': 'campus', 'college': 'campus', 'university': 'campus', 'mall'
          'hostel': 'lodging',
          'guest_house': 'lodging',
          'coach': 'transit'}
-MAX_SITES = 40000
+MAX_SITES = 100000
 MORE_KINDS = ('cafe', 'bar', 'fast_food', 'restaurant', 'canteen', 'nightclub', 'supermarket', 'shop', 'pharmacy', 'laundromat',
               'fuel', 'truck_stop', 'car_wash', 'car_repair', 'car_dealer', 'towing', 'car_rental', 'aquarium', 'botanical_garden',
               'planetarium', 'theatre', 'cinema', 'arts_centre', 'exhibition', 'music_venue', 'events_venue', 'zoo', 'worship', 'gym',
@@ -532,7 +532,7 @@ def main_group(group, parts):
             sites.setdefault(host_path(w), {'url': w if '://' in w else 'https://' + w, 'dest': []})['dest'].append(d)
     keys = sorted(sites, key=lambda k: (len(sites[k]['dest']) > 20, -min(len(sites[k]['dest']), 20)))[:MAX_SITES]
     print(f'{group}: {len(dest)} places, {len(sites)} websites, reading {len(keys)}', flush=True)
-    with ThreadPoolExecutor(max_workers=96) as pool:
+    with ThreadPoolExecutor(max_workers=128) as pool:
         got = dict(zip(keys, pool.map(lambda k: wf.read_site(sites[k]['url']), keys)))
     grid = wf.packs_parking()
     added, said, done = [], {k: 0 for k in wf.SAYS}, set()
