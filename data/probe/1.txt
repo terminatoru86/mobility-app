@@ -5,38 +5,50 @@
   <meta name="view-transition" content="same-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>Bikeep Developer Guides</title>
+  <title>Real-Time Bike Parking Availability API — Maps &amp; Dashboards | Bikeep Developer Guides</title>
   
-  <meta name="description" content="Bikeep smart bike parking API — integrate IoT lockers, bike docks, and bike room access control. Guides for authentication, device commands, RFID allowlists, and real-time availability.">
-  <link rel="canonical" href="https://docs.bikeep.com/">
-  <meta property="og:title" content="Bikeep Developer Guides">
-  <meta property="og:description" content="Bikeep smart bike parking API — integrate IoT lockers, bike docks, and bike room access control. Guides for authentication, device commands, RFID allowlists, and real-time availability.">
+  <meta name="description" content="Real-time bike parking availability API — show Bikeep device availability on maps, dashboards, or transit apps using the public GeoJSON endpoint. No authentication required.">
+  <link rel="canonical" href="https://docs.bikeep.com/use-cases/availability-display/">
+  <meta property="og:title" content="Availability Display | Bikeep Developer Guides">
+  <meta property="og:description" content="Real-time bike parking availability API — show Bikeep device availability on maps, dashboards, or transit apps using the public GeoJSON endpoint. No authentication required.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://docs.bikeep.com/">
+  <meta property="og:url" content="https://docs.bikeep.com/use-cases/availability-display/">
   <meta property="og:site_name" content="Bikeep Developer Guides">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Bikeep Developer Guides">
-  <meta name="twitter:description" content="Bikeep smart bike parking API — integrate IoT lockers, bike docks, and bike room access control. Guides for authentication, device commands, RFID allowlists, and real-time availability.">
+  <meta name="twitter:title" content="Availability Display | Bikeep Developer Guides">
+  <meta name="twitter:description" content="Real-time bike parking availability API — show Bikeep device availability on maps, dashboards, or transit apps using the public GeoJSON endpoint. No authentication required.">
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/css/guides.css">
   <link rel="stylesheet" href="/assets/css/prism-bikeep.css">
   <link rel="stylesheet" href="/MyFontsWebfontsKit.css">
   <link rel="stylesheet" href="/assets/css/font-display.css">
   
-  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Bikeep Developer Guides",
-    "url": "https://docs.bikeep.com/",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Bikeep",
-      "url": "https://bikeep.com"
-    }
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Guides",
+        "item": "https://docs.bikeep.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Use Cases",
+        "item": "https://docs.bikeep.com/use-cases/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Availability Display"
+      }
+    ]
   }
   </script>
+  
   
   <script>
     // Set theme before paint to prevent flash of wrong theme
@@ -107,7 +119,7 @@
           
             <div class="nav-section">
               
-                <a href="/" class="nav-section-title nav-section-link active">Getting Started</a>
+                <a href="/" class="nav-section-title nav-section-link">Getting Started</a>
               
               <ul>
                 
@@ -156,7 +168,7 @@
                 
                   <li>
                     <a href="/use-cases/availability-display/"
-                       
+                       class="active"
                     >Availability Display</a>
                   </li>
                 
@@ -277,110 +289,280 @@
 
     <main class="content">
       
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        
+          
+            <a href="/">Guides</a>
+            <span class="sep">/</span>
+          
+        
+          
+            <a href="/use-cases/">Use Cases</a>
+            <span class="sep">/</span>
+          
+        
+          
+            <span class="current">Availability Display</span>
+          
+        
+      </nav>
+      
 
       <article class="guide-content">
-        <div class="landing-hero">
-  <h1>Bikeep Developer Guides</h1>
-  <p>Build integrations with Bikeep smart bike parking, IoT locker, and bike room access control hardware. Authenticate, discover devices, send commands, and monitor state — everything you need to go from API credentials to a working integration.</p>
-  <a href="/quickstart/" class="landing-cta">Get Started &rarr;</a>
-</div>
-<div class="card-section-title">Quick Start</div>
-<div class="card-grid">
-  <a href="/quickstart/" class="card">
-    <div class="card-title">Quickstart</div>
-    <div class="card-desc">Get your first API response in under 5 minutes. Authenticate, list locations, and send a device command.</div>
-  </a>
-  <a href="/authentication/" class="card">
-    <div class="card-title">Authentication</div>
-    <div class="card-desc">S2S OAuth2, External Users, and Public Access methods for the Bikeep API.</div>
-  </a>
-</div>
-<div class="card-section-title">What Hardware Are You Integrating?</div>
-<div class="card-grid">
-  <a href="/use-cases/locker-dock-integration/" class="card">
-    <div class="card-title">Lockers or Bike Docks</div>
-    <div class="card-desc">Standalone smart lockers or outdoor bike dock stations — same API, same guide.</div>
-  </a>
-  <a href="/use-cases/dockless-bike-house-integration/" class="card">
-    <div class="card-title">Bike Houses (Dockless)</div>
-    <div class="card-desc">Enclosed bike rooms or hangars with controlled door access — no interior devices.</div>
-  </a>
-  <a href="/use-cases/docked-bike-house-integration/" class="card">
-    <div class="card-title">Bike Houses (with Docks/Lockers)</div>
-    <div class="card-desc">Enclosed bike rooms with door access and interior storage devices (lockers or bike docks).</div>
-  </a>
-  <a href="/use-cases/availability-display/" class="card">
-    <div class="card-title">Availability Data Only</div>
-    <div class="card-desc">Read-only location and availability data for maps, dashboards, or third-party apps. No auth required.</div>
-  </a>
-</div>
-<div class="card-section-title">Concepts</div>
-<div class="card-grid">
-  <a href="/concepts/device-types/" class="card">
-    <div class="card-title">Device Types</div>
-    <div class="card-desc">Lockers, gateways, doors, and docks — understand the hardware.</div>
-  </a>
-  <a href="/concepts/location-types/" class="card">
-    <div class="card-title">Location Types</div>
-    <div class="card-desc">Bike lockers, bike houses, hangars, and docks.</div>
-  </a>
-  <a href="/concepts/state-machines/" class="card">
-    <div class="card-title">State Machines</div>
-    <div class="card-desc">Device states, commands, and transition diagrams for every device type.</div>
-  </a>
-  <a href="/concepts/errors/" class="card">
-    <div class="card-title">Errors & Rate Limits</div>
-    <div class="card-desc">The error envelope, HTTP 429 rate limiting, and command state preconditions.</div>
-  </a>
-  <a href="/concepts/glossary/" class="card">
-    <div class="card-title">Glossary</div>
-    <div class="card-desc">Definitions of all Bikeep API terms — bike docks, lockers, bike houses, whitelists, and more.</div>
-  </a>
-</div>
-<div class="card-section-title">Reference</div>
-<div class="card-grid">
-  <a href="/webhooks/" class="card">
-    <div class="card-title">Webhooks</div>
-    <div class="card-desc">Receive real-time notifications for connectivity and alarm events.</div>
-  </a>
-  <a href="/reference/" class="card">
-    <div class="card-title">API Reference</div>
-    <div class="card-desc">Full OpenAPI specification with all endpoints, request/response schemas.</div>
-  </a>
-</div>
+        <h1 id="availability-display" tabindex="-1"><a class="header-anchor" href="#availability-display">Availability Display</a></h1>
+<p>Show real-time bike parking availability on maps, dashboards, or mobile apps using the bike parking availability API. This guide is for <strong>any consumer of Bikeep availability data</strong> — including municipalities publishing open data portals, transit agencies integrating bike parking into journey planners, campus IT teams embedding availability in campus apps, and third-party mobility platforms. The Bikeep public endpoint returns location data with availability counts in GeoJSON format — <strong>no authentication required</strong>.</p>
+<blockquote>
+<p><strong>Important:</strong> The API provides <strong>data only</strong>, not a pre-built UI. You use the data to build your own display — a map marker, a dashboard widget, a mobile app screen, etc.</p>
+</blockquote>
 <hr>
-<h2 id="what-can-you-build" tabindex="-1"><a class="header-anchor" href="#what-can-you-build">What Can You Build?</a></h2>
-<p><a href="https://bikeep.com">Bikeep</a> provides smart bike parking and IoT access control hardware for cities, campuses, and transit hubs. The API gives you full control:</p>
+<h2 id="the-public-endpoint" tabindex="-1"><a class="header-anchor" href="#the-public-endpoint">The Public Endpoint</a></h2>
+<pre class="language-bash"><code class="language-bash"><span class="token function">curl</span> https://services.bikeep.com/location/v1/public-areas/<span class="token punctuation">{</span>public_area_id<span class="token punctuation">}</span>/locations</code></pre>
+<p>No <code>Authorization</code> header needed. The <code>public_area_id</code> defines a geographic region (e.g., a city, campus, or venue). Public areas are typically created by Bikeep during onboarding, but partner-level integrators can also create and manage their own public areas via the API.</p>
+<p><strong>Response (GeoJSON — <code>application/geo+json</code>):</strong></p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"FeatureCollection"</span><span class="token punctuation">,</span>
+  <span class="token property">"features"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Feature"</span><span class="token punctuation">,</span>
+      <span class="token property">"geometry"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Point"</span><span class="token punctuation">,</span>
+        <span class="token property">"coordinates"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">24.81521</span><span class="token punctuation">,</span> <span class="token number">59.42776</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"properties"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"code"</span><span class="token operator">:</span> <span class="token string">"TLN-1234"</span><span class="token punctuation">,</span>
+        <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"#1234"</span><span class="token punctuation">,</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"#1234 Office Building A"</span><span class="token punctuation">,</span>
+        <span class="token property">"address"</span><span class="token operator">:</span> <span class="token string">"123 Main Street"</span><span class="token punctuation">,</span>
+        <span class="token property">"tags"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"city-center"</span><span class="token punctuation">,</span> <span class="token string">"24h"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">"parking"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"available"</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+          <span class="token property">"online"</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+          <span class="token property">"total"</span><span class="token operator">:</span> <span class="token number">10</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"renting"</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p><strong>Note:</strong> The <code>renting</code> field is a legacy artifact from the deprecated rental system. It appears only on a small number of rental locations in Estonia — most integrators will always see <code>null</code> here.</p>
+</blockquote>
+<h3 id="key-fields-for-display" tabindex="-1"><a class="header-anchor" href="#key-fields-for-display">Key fields for display</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>geometry.coordinates</code></td>
+<td><code>[longitude, latitude]</code> for map marker placement</td>
+</tr>
+<tr>
+<td><code>properties.parking.available</code></td>
+<td>Number of usable devices (available AND online) — the main number to show</td>
+</tr>
+<tr>
+<td><code>properties.parking.total</code></td>
+<td>Total capacity</td>
+</tr>
+<tr>
+<td><code>properties.name</code></td>
+<td>Human-readable station name</td>
+</tr>
+<tr>
+<td><code>properties.tags</code></td>
+<td>Array of public tags — use for filtering or categorization</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="example-map-integration" tabindex="-1"><a class="header-anchor" href="#example-map-integration">Example: Map Integration</a></h2>
+<p>Here is a minimal example using the public endpoint to place markers on a map:</p>
+<h3 id="mapbox-gl-js" tabindex="-1"><a class="header-anchor" href="#mapbox-gl-js">Mapbox GL JS</a></h3>
+<pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.css<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css"> <span class="token selector">#map</span> <span class="token punctuation">{</span> <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span> <span class="token punctuation">}</span> </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>map<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+    mapboxgl<span class="token punctuation">.</span>accessToken <span class="token operator">=</span> <span class="token string">'YOUR_MAPBOX_TOKEN'</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">mapboxgl<span class="token punctuation">.</span>Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">container</span><span class="token operator">:</span> <span class="token string">'map'</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">style</span><span class="token operator">:</span> <span class="token string">'mapbox://styles/mapbox/light-v11'</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">center</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">24.7536</span><span class="token punctuation">,</span> <span class="token number">59.4370</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">zoom</span><span class="token operator">:</span> <span class="token number">12</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'https://services.bikeep.com/location/v1/public-areas/YOUR_PUBLIC_AREA_ID/locations'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">r</span> <span class="token operator">=></span> r<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">geojson</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        geojson<span class="token punctuation">.</span>features<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">feature</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+          <span class="token keyword">const</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> parking <span class="token punctuation">}</span> <span class="token operator">=</span> feature<span class="token punctuation">.</span>properties<span class="token punctuation">;</span>
+          <span class="token keyword">const</span> <span class="token punctuation">[</span>lng<span class="token punctuation">,</span> lat<span class="token punctuation">]</span> <span class="token operator">=</span> feature<span class="token punctuation">.</span>geometry<span class="token punctuation">.</span>coordinates<span class="token punctuation">;</span>
+
+          <span class="token keyword">new</span> <span class="token class-name">mapboxgl<span class="token punctuation">.</span>Marker</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">setLngLat</span><span class="token punctuation">(</span><span class="token punctuation">[</span>lng<span class="token punctuation">,</span> lat<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">setPopup</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">mapboxgl<span class="token punctuation">.</span>Popup</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setHTML</span><span class="token punctuation">(</span>
+              <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;strong></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;/strong>&lt;br></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>parking<span class="token punctuation">.</span>available<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>parking<span class="token punctuation">.</span>total<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> available</span><span class="token template-punctuation string">`</span></span>
+            <span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">addTo</span><span class="token punctuation">(</span>map<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="google-maps" tabindex="-1"><a class="header-anchor" href="#google-maps">Google Maps</a></h3>
+<pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Bikeep Availability — Google Maps<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+    <span class="token selector">#map</span> <span class="token punctuation">{</span> <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>map<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">initMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>Map</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'map'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">center</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">lat</span><span class="token operator">:</span> <span class="token number">59.437</span><span class="token punctuation">,</span> <span class="token literal-property property">lng</span><span class="token operator">:</span> <span class="token number">24.753</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">zoom</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>
+        <span class="token string">'https://services.bikeep.com/location/v1/public-areas/YOUR_PUBLIC_AREA_ID/locations'</span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> geojson <span class="token operator">=</span> <span class="token keyword">await</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      geojson<span class="token punctuation">.</span>features<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">feature</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> parking <span class="token punctuation">}</span> <span class="token operator">=</span> feature<span class="token punctuation">.</span>properties<span class="token punctuation">;</span>
+        <span class="token keyword">const</span> <span class="token punctuation">[</span>lng<span class="token punctuation">,</span> lat<span class="token punctuation">]</span> <span class="token operator">=</span> feature<span class="token punctuation">.</span>geometry<span class="token punctuation">.</span>coordinates<span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> marker <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>Marker</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          <span class="token literal-property property">position</span><span class="token operator">:</span> <span class="token punctuation">{</span> lat<span class="token punctuation">,</span> lng <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          map<span class="token punctuation">,</span>
+          <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> — </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>parking<span class="token punctuation">.</span>available<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>parking<span class="token punctuation">.</span>total<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> infoWindow <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">google<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>InfoWindow</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;strong></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;/strong>&lt;br></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>parking<span class="token punctuation">.</span>available<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>parking<span class="token punctuation">.</span>total<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> available</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        marker<span class="token punctuation">.</span><span class="token function">addListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> infoWindow<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span>map<span class="token punctuation">,</span> marker<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&amp;callback=initMap<span class="token punctuation">"</span></span> <span class="token attr-name">async</span> <span class="token attr-name">defer</span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<hr>
+<h2 id="polling-for-updates" tabindex="-1"><a class="header-anchor" href="#polling-for-updates">Polling for Updates</a></h2>
+<p>The public endpoint returns the current state at the time of the request. To keep your display up-to-date, poll the endpoint periodically.</p>
+<p>Bike parking availability changes slowly — a station might see a handful of events per hour. Polling every <strong>5–10 minutes</strong> is a good fit for most use cases.</p>
+<p><strong>Recommended intervals:</strong></p>
 <ul>
-<li><strong>Bike parking API</strong> — Reserve, lock, and unlock smart lockers and bike docks from your application</li>
-<li><strong>Bike room access control</strong> — Manage RFID allowlists for enclosed bike rooms, hangars, and secure storage</li>
-<li><strong>Availability displays</strong> — Show real-time bike parking availability on campus maps, city dashboards, or mobile apps</li>
-<li><strong>IoT monitoring</strong> — Track device health, connectivity, and alarms across your fleet</li>
+<li><strong>Public display / signage:</strong> Every 5–10 minutes</li>
+<li><strong>Mobile app:</strong> Every 5–10 minutes, or on screen focus</li>
+<li><strong>Dashboard:</strong> Every 5 minutes</li>
 </ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Simple polling example</span>
+<span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>
+    <span class="token string">'https://services.bikeep.com/location/v1/public-areas/YOUR_PUBLIC_AREA_ID/locations'</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> geojson <span class="token operator">=</span> <span class="token keyword">await</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">updateMarkers</span><span class="token punctuation">(</span>geojson<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Your update function</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">300000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 5 minutes</span></code></pre>
 <hr>
-<h2 id="getting-credentials" tabindex="-1"><a class="header-anchor" href="#getting-credentials">Getting Credentials</a></h2>
-<p>To start using the Bikeep API, you need:</p>
-<ol>
-<li><strong>API credentials</strong> — A <code>client_id</code> and <code>client_secret</code> for OAuth2 authentication</li>
-<li><strong>Operator ID</strong> — Your organization’s UUID in the Bikeep system</li>
-</ol>
-<p>Request credentials by emailing <a href="mailto:info@bikeep.com?subject=Bikeep%20API%20credentials">info@bikeep.com</a>.</p>
+<h2 id="authenticated-alternative" tabindex="-1"><a class="header-anchor" href="#authenticated-alternative">Authenticated Alternative</a></h2>
+<p>If you need more detailed device-level data (individual device states, hardware health, booking status), use the authenticated endpoint instead:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">curl</span> https://services.bikeep.com/location/v1/locations <span class="token punctuation">\</span>
+  <span class="token parameter variable">-H</span> <span class="token string">"Authorization: Bearer {token}"</span></code></pre>
+<p>This returns richer location data with device-level detail — individual device states, hardware health, and diagnostic information. See <a href="/authentication/">Authentication</a> for setup.</p>
+<hr>
+<h2 id="what-integrators-have-built" tabindex="-1"><a class="header-anchor" href="#what-integrators-have-built">What Integrators Have Built</a></h2>
+<p>Bikeep’s public API data is used in a variety of displays:</p>
+<ul>
+<li><strong>Campus maps</strong> — University bike parking availability embedded in campus apps</li>
+<li><strong>Smart city dashboards</strong> — City-wide availability heatmaps for urban planning</li>
+<li><strong>Venue apps</strong> — Stadium and arena apps showing nearby bike parking before events</li>
+<li><strong>Digital signage</strong> — Screens near bike stations showing current availability</li>
+<li><strong>Transit apps</strong> — Bike parking availability integrated alongside transit schedules</li>
+</ul>
 
       </article>
 
       
       <nav class="page-nav">
         
+          <a href="/use-cases/docked-bike-house-integration/" class="page-nav-link prev">
+            <span class="page-nav-label">Previous</span>
+            <span class="page-nav-title">Bike House (with Docks/Lockers) Integration</span>
+          </a>
         
-          <a href="/quickstart/" class="page-nav-link next">
+        
+          <a href="/webhooks/" class="page-nav-link next">
             <span class="page-nav-label">Next</span>
-            <span class="page-nav-title">Quickstart</span>
+            <span class="page-nav-title">Webhooks</span>
           </a>
         
       </nav>
       
     </main>
 
+    
+    
+    
+    <aside class="toc-rail" aria-label="On this page">
+      <nav>
+        <div class="toc-rail-title">On this page</div>
+        <ul>
+          
+          <li>
+            <a href="#the-public-endpoint" class="toc-rail-link">The Public Endpoint</a>
+          </li>
+          
+          <li>
+            <a href="#key-fields-for-display" class="toc-rail-link toc-rail-link-h3">Key fields for display</a>
+          </li>
+          
+          <li>
+            <a href="#example-map-integration" class="toc-rail-link">Example: Map Integration</a>
+          </li>
+          
+          <li>
+            <a href="#mapbox-gl-js" class="toc-rail-link toc-rail-link-h3">Mapbox GL JS</a>
+          </li>
+          
+          <li>
+            <a href="#google-maps" class="toc-rail-link toc-rail-link-h3">Google Maps</a>
+          </li>
+          
+          <li>
+            <a href="#polling-for-updates" class="toc-rail-link">Polling for Updates</a>
+          </li>
+          
+          <li>
+            <a href="#authenticated-alternative" class="toc-rail-link">Authenticated Alternative</a>
+          </li>
+          
+          <li>
+            <a href="#what-integrators-have-built" class="toc-rail-link">What Integrators Have Built</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </aside>
+    
     
   </div>
 

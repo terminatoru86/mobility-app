@@ -1,14 +1,14 @@
 HTTP/2 200 
 content-type: text/html
-content-length: 18432
+content-length: 48494
 accept-ranges: bytes
-date: Thu, 19 Nov 2026 21:09:44 GMT
+date: Thu, 19 Nov 2026 21:10:18 GMT
 server: AmazonS3
 last-modified: Tue, 15 Sep 2026 08:50:17 GMT
-etag: "05bedce2a0bd6fa29ebb1c20c856bbbe"
+etag: "371b120959b0e9dd7a128c4df9561104"
 x-amz-server-side-encryption: AES256
 x-cache: Miss from cloudfront
-via: 1.1 2781c4df1d0805ec47a02fbc7d381fd2.cloudfront.net (CloudFront)
+via: 1.1 42f99ef952bccb69579e2ee469837cb4.cloudfront.net (CloudFront)
 x-amz-cf-pop: ORD58-P13
-x-amz-cf-id: E3paTY0NcbJMO6okQAfU6J8Qqn-RJgM93BJhYu99h6WjwpE83xGEZg==
+x-amz-cf-id: zK3InFRMCQkbi7Xh93TLEMQGyQqhvo5mNqWIHawpsmT86yvr5nh-Xg==
 
