@@ -689,10 +689,12 @@ class _VehicleDeckState extends State<VehicleDeck> {
         }
         final size = [h * 0.7, w * 0.44].reduce((a, b) => a < b ? a : b);
         const turn = [-0.16, 0.12, -0.08, 0.18];
+        final span = w < size * 2.5 ? w : size * 2.5; // gathered in the middle, overlapping, not spread over the whole width
+        final x0 = (w - span) / 2;
         return Stack(children: [
           for (var i = 0; i < _shop.length; i++)
             Positioned(
-              left: 4 + (w - size - 8) * i / (_shop.length - 1),
+              left: x0 + (span - size) * i / (_shop.length - 1),
               top: i.isEven ? 1 : h - size - 1,
               child: Transform.rotate(angle: turn[i], child: img(_shop[i], size)),
             ),
