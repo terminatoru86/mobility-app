@@ -1,0 +1,7 @@
+{"about": "Places to ride added by hand, when no open source has them (checked against the manager's own page). Kept first, so the sources fill in around them.",
+ "places": [
+  ["own/big-marsh-pump-track", 41.685374, -87.591318, {"name": "Big Marsh Pump Track", "ride": "Pump track", "in_park": "Big Marsh Park",
+   "street": "11559 S Stony Island Ave", "website": "https://www.chicagoparkdistrict.com/parks-facilities/big-marsh-bike-park",
+   "fee": "no", "hours": "dawn to dusk", "surface": "asphalt", "bikes": "yes", "scooters": "yes",
+   "operator": "Chicago Park District · Friends of Big Marsh", "source": "Chicago Park District"}]
+ ]}

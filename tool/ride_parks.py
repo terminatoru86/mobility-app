@@ -422,7 +422,9 @@ def main():
         osm = fetch_osm
     with ThreadPoolExecutor(3) as ex:
         parts = list(ex.map(run, (('osm', osm), ('overture', fetch_overture), ('foursquare', fetch_foursquare))))
-    allp = merge(parts)
+    own_f = os.path.join(ROOT, 'data', 'ride_parks_own.json')
+    own = json.load(open(own_f))['places'] if os.path.exists(own_f) else []
+    allp = merge([own] + parts)
     allp.sort(key=lambda p: (p[1], p[2]))
     out = os.path.join(ROOT, 'assets', 'ride', 'ride_parks.json.gz')
     os.makedirs(os.path.dirname(out), exist_ok=True)
