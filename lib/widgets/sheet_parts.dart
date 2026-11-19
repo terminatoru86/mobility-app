@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../data/places.dart';
 import '../theme.dart';
@@ -629,40 +630,135 @@ class RentVehicleRow extends StatelessWidget {
       ]);
 }
 
-/// A shop: what it sells, four equal tiles (bike, scooter, moped, accessories).
-/// What the map data does not list for this shop is shown faded.
-class ShopSellsRow extends StatelessWidget {
+/// Which of the four vehicle kinds (bike, scooter, moped, moto) a shop or service hub handles.
+/// An e-bike counts as a bike. Nothing known at all: all four.
+List<Vehicle> deckVehicles(Place p) {
+  final a = p.accepts;
+  final l = <Vehicle>[
+    if (a.contains(Vehicle.bike) || a.contains(Vehicle.ebike)) Vehicle.bike,
+    if (a.contains(Vehicle.scooter)) Vehicle.scooter,
+    if (a.contains(Vehicle.moped)) Vehicle.moped,
+    if (a.contains(Vehicle.moto)) Vehicle.moto,
+  ];
+  return l.isEmpty ? const [Vehicle.bike, Vehicle.scooter, Vehicle.moped, Vehicle.moto] : l;
+}
+
+/// The vehicles of a shop / service hub, gathered like a hand of playing cards: the bike's wheel, a bit of the
+/// scooter, the moped's wheel, and the motorcycle on top. In the space that stays free: the dashboard
+/// warning lights (service hub) or helmet, gloves, frame, oil (shop). A tap opens the cards: only the vehicles
+/// the place really handles (2 take half the row, 1 a quarter), and the small pictograms gather in the rest.
+/// A place that handles all four shows them at once and has no pictograms.
+class VehicleDeck extends StatefulWidget {
   final Place place;
-  const ShopSellsRow(this.place, {super.key});
+  const VehicleDeck(this.place, {super.key});
+
+  @override
+  State<VehicleDeck> createState() => _VehicleDeckState();
+}
+
+class _VehicleDeckState extends State<VehicleDeck> {
+  bool _open = false;
+
+  static const _kinds = [Vehicle.bike, Vehicle.scooter, Vehicle.moped, Vehicle.moto];
+  static const _amber = Color(0xFFF2A100), _red = Color(0xFFE0382F);
+  // the lights of a dashboard
+  static const _service = [('engine', _amber), ('oil', _red), ('wrench', _amber), ('abs', _amber), ('oiltemp', _red)];
+  static const _shop = [('helmet', AppColors.primary), ('gloves', AppColors.primary), ('frame', AppColors.primary), ('oilbottle', AppColors.primary)];
+
+  static String _name(Vehicle v) => switch (v) {
+        Vehicle.bike || Vehicle.ebike => 'Bikes',
+        Vehicle.scooter => 'Scooters',
+        Vehicle.moped => 'Mopeds',
+        Vehicle.moto => 'Motos',
+      };
+
+  Widget _picto((String, Color) x, double size) => x.$1 == 'abs'
+      ? SizedBox(
+          width: size * 1.6,
+          height: size,
+          child: FittedBox(child: Text('(ABS)', style: TextStyle(fontWeight: FontWeight.w900, color: x.$2, height: 1))),
+        )
+      : SvgPicture.asset('assets/glyphs/dash/${x.$1}.svg',
+          width: size, height: size, colorFilter: ColorFilter.mode(x.$2, BlendMode.srcIn));
+
+  Widget _pictos(double size, double gap) {
+    final l = widget.place.type == PlaceType.service ? _service : _shop;
+    return Center(
+      child: Wrap(
+        alignment: WrapAlignment.center,
+        crossAxisAlignment: WrapCrossAlignment.center,
+        spacing: gap,
+        runSpacing: gap,
+        children: [for (final x in l) _picto(x, size)],
+      ),
+    );
+  }
+
+  Widget _tile(Vehicle v) => Expanded(
+        child: Container(
+          height: 64,
+          margin: const EdgeInsets.symmetric(horizontal: 3),
+          decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            SizedBox(height: 32, child: Image.asset(v.asset, fit: BoxFit.contain)),
+            const SizedBox(height: 2),
+            Text(_name(v), maxLines: 1, style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: AppColors.primary)),
+          ]),
+        ),
+      );
+
+  Widget _paper(Widget child) => Container(
+        height: 64,
+        margin: const EdgeInsets.symmetric(horizontal: 3),
+        decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
+        child: child,
+      );
+
+  /// the closed hand: four cards, each one leaving its left part (the wheel) in view
+  Widget _closed() {
+    const cardW = 74.0, step = 26.0;
+    return Row(key: const ValueKey('closed'), children: [
+      SizedBox(
+        width: step * 3 + cardW + 6,
+        height: 64,
+        child: Stack(children: [
+          for (var i = 0; i < _kinds.length; i++)
+            Positioned(
+              left: 3 + i * step,
+              top: 0,
+              child: Container(
+                width: cardW,
+                height: 64,
+                padding: const EdgeInsets.fromLTRB(4, 8, 4, 8),
+                decoration: BoxDecoration(
+                  color: i == _kinds.length - 1 ? Colors.white : AppColors.paper,
+                  borderRadius: BorderRadius.circular(14),
+                  border: Border.all(color: AppColors.line, width: 1),
+                  boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 4, offset: Offset(-2, 0))],
+                ),
+                child: Image.asset(_kinds[i].asset, fit: BoxFit.contain, alignment: Alignment.centerLeft),
+              ),
+            ),
+        ]),
+      ),
+      Expanded(child: _paper(_pictos(24, 7))),
+    ]);
+  }
+
+  /// the open hand: the vehicles the place handles, and the pictograms gathered in what is left
+  Widget _opened(List<Vehicle> v) => Row(key: const ValueKey('open'), children: [
+        for (final x in v) _tile(x),
+        Expanded(flex: 4 - v.length, child: _paper(_pictos(v.length == 3 ? 17 : 20, 5))),
+      ]);
 
   @override
   Widget build(BuildContext context) {
-    final a = place.accepts, o = place.offers;
-    final bike = a.contains(Vehicle.bike) || a.contains(Vehicle.ebike);
-    final scooter = a.contains(Vehicle.scooter);
-    final moped = a.contains(Vehicle.moped) || a.contains(Vehicle.moto);
-    // listed for this shop, or nothing listed at all (every shop keeps the small things)
-    final extras = o.isEmpty || o.any((x) => const ['Accessories', 'Parts', 'Clothing', 'Rider gear', 'Tires'].contains(x));
-    Widget tile(Widget picture, String label, bool on) => Expanded(
-          child: Opacity(
-            opacity: on ? 1 : 0.28,
-            child: Container(
-              height: 64,
-              margin: const EdgeInsets.symmetric(horizontal: 3),
-              decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
-              child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                SizedBox(height: 32, child: picture),
-                const SizedBox(height: 2),
-                Text(label, maxLines: 1, style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: AppColors.primary)),
-              ]),
-            ),
-          ),
-        );
-    return Row(children: [
-      tile(Image.asset(Vehicle.bike.asset, fit: BoxFit.contain), 'Bikes', bike),
-      tile(Image.asset(Vehicle.scooter.asset, fit: BoxFit.contain), 'Scooters', scooter),
-      tile(Image.asset(Vehicle.moped.asset, fit: BoxFit.contain), 'Mopeds', moped),
-      tile(const Icon(Icons.home_repair_service_outlined, size: 28, color: AppColors.primary), 'Accessories', extras),
-    ]);
+    final v = deckVehicles(widget.place);
+    if (v.length >= 4) return Row(children: [for (final x in _kinds) _tile(x)]);
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap: () => setState(() => _open = !_open),
+      child: AnimatedSwitcher(duration: const Duration(milliseconds: 240), child: _open ? _opened(v) : _closed()),
+    );
   }
 }

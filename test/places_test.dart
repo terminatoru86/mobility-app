@@ -6,6 +6,7 @@ import 'package:mobility/data/places.dart';
 import 'package:mobility/data/shop_owner.dart';
 import 'package:mobility/data/site_hours.dart';
 import 'package:mobility/data/zones.dart';
+import 'package:mobility/widgets/sheet_parts.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -204,6 +205,13 @@ void main() {
     expect(svc([Vehicle.scooter]).specialty, Vehicle.scooter);
     expect(svc([Vehicle.bike, Vehicle.ebike]).specialty, isNull);
     expect(Place(id: 'h', type: PlaceType.shop, address: 'x', pos: const LatLng(41.8, -87.6), status: Status.unknown, age: '', accepts: [Vehicle.moto], distance: '', etaMin: const {}).specialty, isNull);
+  });
+  test('Vehicle deck: what a shop or service hub handles', () {
+    Place at(List<Vehicle> a) => Place(id: 's', type: PlaceType.shop, address: 'x', pos: const LatLng(41.8, -87.6), status: Status.unknown, age: '', accepts: a, distance: '', etaMin: const {});
+    expect(deckVehicles(at([Vehicle.ebike])), [Vehicle.bike]);
+    expect(deckVehicles(at([Vehicle.scooter, Vehicle.moto])), [Vehicle.scooter, Vehicle.moto]);
+    expect(deckVehicles(at(Vehicle.values)).length, 4);
+    expect(deckVehicles(at(const [])).length, 4);
   });
 });
 }

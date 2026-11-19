@@ -53,6 +53,7 @@ flutter:
   assets:
     - assets/glyphs/
     - assets/glyphs/svc/
+    - assets/glyphs/dash/
     - assets/vehicles/
     - assets/brand/
     - assets/splash/

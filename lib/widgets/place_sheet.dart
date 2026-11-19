@@ -343,9 +343,9 @@ class _PlaceSheetState extends State<PlaceSheet> {
         // live ride share: a station shows its four numbers and the walk; one vehicle shows its
         // picture with the battery, and the walking time where the distance is
         p.share!.street ? ShareVehicleRow(p) : ShareCounts(p)
-      else if (p.type == PlaceType.shop) ...[
-        // a shop: what it sells (bike, scooter, moped, accessories), then distance, time and rating
-        ShopSellsRow(p),
+      else if (p.type == PlaceType.shop || p.type == PlaceType.service) ...[
+        // a shop or service hub: the vehicles it handles as a hand of cards (opens on a tap), then distance, time and rating
+        VehicleDeck(p),
         const SizedBox(height: 8),
         Builder(builder: (_) {
           final eta = p.etaMin[widget.myVehicle ?? Vehicle.bike] ?? (p.etaMin.isEmpty ? null : p.etaMin.values.first);
