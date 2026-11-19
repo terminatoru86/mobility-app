@@ -160,7 +160,8 @@ def main():
     out_dir = os.path.join(ROOT, 'data', 'trails', 'tiles')
     routes = json.load(gzip.open(src))
     # + the named bike paths along the water (tool/waterfront.py), unless the same route is already there
-    for extra_f in (os.path.join(ROOT, 'data', 'waterfront_paths.json'), os.path.join(ROOT, 'data', 'trails', 'paths.json')):
+    for extra_f in (os.path.join(ROOT, 'data', 'waterfront_paths.json'), os.path.join(ROOT, 'data', 'trails', 'paths.json.gz'),
+                    os.path.join(ROOT, 'data', 'trails', 'city_routes.json')):
         if not os.path.exists(extra_f):
             continue
         have = {}
@@ -168,7 +169,7 @@ def main():
             if r.get('lines') and r.get('name'):
                 have.setdefault(re.sub(r'[^a-z0-9]', '', r['name'].lower()), []).append(r['lines'][0][:2])
         n_extra = 0
-        for r in json.load(open(extra_f)):
+        for r in json.load(gzip.open(extra_f) if extra_f.endswith('.gz') else open(extra_f)):
             starts = have.get(re.sub(r'[^a-z0-9]', '', r['name'].lower()), [])
             p0 = r['lines'][0][:2]
             if any(abs(a - p0[0]) < 0.05 and abs(b - p0[1]) < 0.07 for a, b in starts):

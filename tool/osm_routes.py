@@ -9,12 +9,13 @@ Lines are joined end to end and simplified (about 20 m), coordinates with 5 deci
 Needs: pip install osmium (only to read the file; the geometry part below needs nothing).
 """
 import json
+import re
 import math
 import sys
 
 MAX_KM = 50  # a route that goes from one town to another (50 km or more) is not wanted
 KEEP = ('name', 'ref', 'network', 'operator', 'distance', 'description', 'website', 'surface', 'from', 'to',
-        'wikipedia', 'wikidata', 'colour', 'symbol', 'ascent', 'cycle_network', 'complete', 'state', 'ele')
+        'wikipedia', 'wikidata', 'colour', 'symbol', 'ascent', 'cycle_network', 'complete', 'state', 'ele', 'mobility:historic')
 
 
 def hav(a, b):
@@ -81,6 +82,12 @@ def simplify(pts, tol_km=0.02):
     return [p for p, f in zip(pts, keep) if f]
 
 
+SCENIC = re.compile(r'scenic|byway|historic|heritage|auto\s*tour|tour\s*route|national\s*historic\s*trail|parkway|'
+                    r'trail\s*of\s*tears|lincoln\s*highway|route\s*66', re.I)
+HISTORIC = re.compile(r'histor|heritage|national\s*historic|trail\s*of\s*tears|lincoln\s*highway|route\s*66|civil\s*war|'
+                      r'freedom|underground\s*railroad|pioneer|colonial|revolution', re.I)
+
+
 def build(tags, ways):
     """One route: its tags and the geometry of its ways -> the record, or None when it is too small."""
     lines = [simplify(l) for l in join([list(w) for w in ways])]
@@ -103,8 +110,14 @@ def main(src, dst):
 
         def relation(self, r):
             t = dict(r.tags)
-            if t.get('route') in ('bicycle', 'mtb', 'motorcycle') and t.get('type') == 'route':
+            if t.get('type') != 'route':
+                return
+            if t.get('route') in ('bicycle', 'mtb', 'motorcycle'):
                 self.rels[r.id] = (t, [m.ref for m in r.members if m.type == 'w'])
+            elif t.get('route') == 'road' and SCENIC.search(f"{t.get('name') or ''} {t.get('network') or ''}"):
+                # historic / scenic / heritage roads and auto-tour routes: ridden by motorcycles and mopeds
+                t = {**t, 'route': 'motorcycle', 'mobility:historic': 'yes' if HISTORIC.search(t.get('name') or '') else None}
+                self.rels[r.id] = ({k: v for k, v in t.items() if v}, [m.ref for m in r.members if m.type == 'w'])
 
     class Ways(osmium.SimpleHandler):
         def __init__(self, need):

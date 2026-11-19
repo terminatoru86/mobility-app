@@ -31,7 +31,7 @@ jobs:
         run: bash tool/get_extract.sh "${{ matrix.region }}" region.osm.pbf
       - name: Routes of this region
         run: |
-          osmium tags-filter region.osm.pbf r/route=bicycle,mtb,motorcycle -o routes.osm.pbf
+          osmium tags-filter region.osm.pbf r/route=bicycle,mtb,motorcycle,road -o routes.osm.pbf
           python3 tool/osm_routes.py routes.osm.pbf routes.json
       - name: Named paths for riders (bike / scooter / MTB / motorcycle, no walking-only) and the sights along the way
         run: |
@@ -92,7 +92,7 @@ jobs:
           paths = [r for f in glob.glob('parts/*/paths.json') for r in json.load(open(f))]
           sights = [x for f in glob.glob('parts/*/sights.json') for x in json.load(open(f))]
           if paths:
-              json.dump(paths, open('data/trails/paths.json', 'w'), separators=(',', ':'))
+              open('data/trails/paths.json.gz', 'wb').write(gzip.compress(json.dumps(paths, separators=(',', ':')).encode(), 9, mtime=0))
           if sights:
               open('data/trails/sights.json.gz', 'wb').write(gzip.compress(json.dumps(sights, separators=(',', ':')).encode(), 9, mtime=0))
           print(f'named paths for riders: {len(paths)} · sights: {len(sights)}')

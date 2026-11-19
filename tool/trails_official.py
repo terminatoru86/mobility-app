@@ -23,15 +23,22 @@ UA = {'User-Agent': 'MOBIlityBot/1.0 (bike routes for a cycling map; github.com/
 TERMS = ['"national park" trails', '"national forest" trails', 'NPS trails', 'forest service trails', 'state park trails',
          '"bike trails"', '"bicycle trails"', '"mountain bike trails"', 'greenway', '"shared use path"', '"multi-use trail"',
          '"rail trail"', '"bike paths"', '"park trails"', '"county trails"', 'trails open data',
-         '"motorcycle routes"', '"motorcycle trails"', '"scenic byways"', '"off highway motorcycle"', '"OHV trails"']
-LAYER_OK = re.compile(r'trail|greenway|bikeway|bike\s*path|shared[\s-]*use|multi-?use|rail[\s-]*trail|cycle|bicycle|mtb|'
+         '"motorcycle routes"', '"motorcycle trails"', '"scenic byways"', '"off highway motorcycle"', '"OHV trails"',
+         # historic routes in cities and around landmarks, published by city / county / park administrations
+         '"historic bike route"', '"heritage bike route"', '"history bike tour"', '"historic bike tour"', '"heritage trail"',
+         '"history trail"', '"historic trail"', '"heritage corridor"', '"cultural trail"', '"bike tour"', '"cycling tour"',
+         '"auto tour route"', '"historic route"', '"national historic trail"', '"historic byway"', '"heritage route"']
+LAYER_OK = re.compile(r'trail|greenway|bikeway|bike\s*(path|route|tour|lane|loop|way)|shared[\s-]*use|multi-?use|rail[\s-]*trail|cycle|bicycle|mtb|tour|'
+                      r'heritage|historic\s*(route|byway)|byway|'
                       r'motorcycle|motorbike|dirt\s*bike|ohv|off-?highway|scenic\s*byway', re.I)
 LAYER_BAD = re.compile(r'propos|planned|plan\b|future|closed|abandon|survey|count|demand|crash|heat|study|draft|\btests?\b|copy|'
-                       r'sample|training|demo|trailhead|parking|sign|bridge|access\s*point|restroom|campground|history|historic|'
+                       r'sample|training|demo|trailhead|parking|sign|bridge|access\s*point|restroom|campground|'
+                       r'histor\w*\s*(sites?|districts?|buildings?|landmarks?|propert\w*|markers?|structures?|places?)|'
                        r'horse|equestrian|ski|snow|water|paddle|canoe', re.I)
 BIKE_LAYER = re.compile(r'(?<!motor)(?<!dirt )(?<!dirt)(?:bike|bicycle|cycl)|mtb|multi-?use|shared[\s-]*use|greenway|rail[\s-]*trail', re.I)
 BIKE_FIELD = re.compile(r'(?<!motor)(?<!dirt)(?:bike|bicycle|cycl|biking)|mtb', re.I)
-MOTO_LAYER = re.compile(r'motorcycle|motorbike|dirt\s*bike|scenic\s*byway|off-?highway\s*motorcycle', re.I)
+MOTO_LAYER = re.compile(r'motorcycle|motorbike|dirt\s*bike|scenic\s*byway|off-?highway\s*motorcycle|auto\s*tour|'
+                        r'historic\s*(route|byway|highway)|heritage\s*(route|byway|highway)|national\s*historic\s*trail', re.I)
 MOTO_FIELD = re.compile(r'motorcycle|motorbike|dirt\s*bike', re.I)
 YES = {'y', 'yes', 'true', '1', 'open', 'allowed', 'managed', 'permitted', 'designated', 'accepted'}
 NAME_FIELDS = ('trail_name', 'trailname', 'trlname', 'trail_nm', 'name', 'trail', 'label', 'route_name', 'pathname')

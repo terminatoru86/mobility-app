@@ -573,6 +573,17 @@ def main_group(group, parts):
                 grid.setdefault((round(d[1] / 0.01), round(d[2] / 0.01)), []).append((k, d[1], d[2]))
     os.makedirs(os.path.join(ROOT, 'data', 'venues'), exist_ok=True)
     json.dump(added, open(os.path.join(ROOT, 'data', 'venues', f'{group}.json'), 'w'), separators=(',', ':'), ensure_ascii=False)
+    # route files (GPX / KML) the sites offer: city / park / visitor-center bike tours, historic routes (tool/gpx_routes.py)
+    tracks = []
+    for k_site in keys:
+        r = got.get(k_site) or {}
+        d0 = sites[k_site]['dest'][0]
+        for u, label in r.get('tracks') or []:
+            tracks.append({'url': u, 'label': label, 'site': sites[k_site]['url'], 'place': d0[3]['name'],
+                           'kind': d0[3]['kind'], 'lat': d0[1], 'lon': d0[2]})
+    os.makedirs(os.path.join(ROOT, 'data', 'venues', 'tracks'), exist_ok=True)
+    json.dump(tracks, open(os.path.join(ROOT, 'data', 'venues', 'tracks', f'{group}.json'), 'w'), separators=(',', ':'), ensure_ascii=False)
+    print(f'{group}: {len(tracks)} route files offered by the websites', flush=True)
     kinds, by_added = {}, {}
     for d in dest:
         kinds[d[3]['kind']] = kinds.get(d[3]['kind'], 0) + 1

@@ -295,6 +295,20 @@ def what_page_says(text):
     return out
 
 
+TRACK_FILE = re.compile(r'\.(gpx|kml|kmz)(\?|#|$)', re.I)
+TRACK_WORDS = re.compile(r'bik(e|ing)|bicycl|cycl|ride|tour|route|trail|loop|greenway|scenic|histor|heritage|motorcycle|moped|scooter|byway', re.I)
+
+
+def track_links(page, base):
+    """Route files (GPX / KML / KMZ) a page offers for download: [(url, link text)]."""
+    out = []
+    for m in re.finditer(r'<a\b[^>]*href\s*=\s*["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', page or '', re.S | re.I):
+        href, label = m.group(1).strip(), re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', m.group(2))).strip()
+        if TRACK_FILE.search(href) and TRACK_WORDS.search(href + ' ' + label):
+            out.append((urllib.parse.urljoin(base, href), htmllib.unescape(label)[:120]))
+    return out
+
+
 def _get(url, timeout=10):
     req = urllib.request.Request(url, headers=UA)
     with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -326,7 +340,7 @@ def read_site(url):
         if not rp.can_fetch(AGENT, url):
             return {'no': 1}
         home = _get(url)
-        says, pages = {}, [url]
+        says, pages, tracks = {}, [url], []
         for k, v in what_page_says(visible(home)).items():
             says[k] = {**v, 'page': url}
         host = parts.netloc.lower().removeprefix('www.')
@@ -341,17 +355,22 @@ def read_site(url):
                     and not re.search(r'\.(pdf|jpe?g|png|gif|zip)$', p2.path, re.I) and full.rstrip('/') != url.rstrip('/'):
                 # the parking / getting-here pages first
                 extra.insert(0, full) if re.search(r'park|getting|direction|bike|bicycle', href + label, re.I) else extra.append(full)
+        tracks += track_links(home, url)
         for e in extra[:5]:
             if len(says) == len(SAYS) or not rp.can_fetch(AGENT, e):
                 continue
             try:
-                pg = visible(_get(e, timeout=8))
+                raw = _get(e, timeout=8)
+                tracks += track_links(raw, e)
+                pg = visible(raw)
             except Exception:
                 continue
             pages.append(e)
             for k, v in what_page_says(pg).items():
                 says.setdefault(k, {**v, 'page': e})
-        return {'pages': pages, 'says': says}
+        seen_t = set()
+        tracks = [x for x in tracks if not (x[0] in seen_t or seen_t.add(x[0]))]
+        return {'pages': pages, 'says': says, 'tracks': tracks[:20]}
     except Exception:
         return None
 
