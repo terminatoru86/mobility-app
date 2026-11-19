@@ -1,10 +1,10 @@
-# Paid / private parking for two-wheelers: 171
+# Paid / private parking for two-wheelers: 154
 
-By kind: {'motorcycle_parking': 14, 'motorcycle_parking (in a car park)': 104, 'bicycle_parking (in a car park)': 15, 'bicycle_parking': 36, 'small_electric_vehicle_parking': 2}
+By kind: {'motorcycle_parking (in a car park)': 96, 'motorcycle_parking': 14, 'bicycle_parking (in a car park)': 8, 'bicycle_parking': 34, 'small_electric_vehicle_parking': 2}
 
-By source: {'Foursquare OS Places': 36, 'OpenStreetMap': 125, 'paid / private parking': 125, 'Overture Maps': 12}
+By source: {'OpenStreetMap': 108, 'paid / private parking': 108, 'Foursquare OS Places': 36, 'Overture Maps': 12}
 
-Paid (fee=yes): 32 · with a phone: 17 · with hours: 17
+Paid (fee=yes): 29 · with a phone: 16 · with hours: 15
 
 ## Around Chicago
 - Bike Racks At The Train Station Outbound Side · bicycle_parking · fee=? · Foursquare OS Places
