@@ -31,7 +31,7 @@ jobs:
       - name: Places to ride in this region
         run: |
           osmium tags-filter region.osm.pbf \
-            nwr/leisure=bikepark,track,pitch,sports_centre,park,recreation_ground,skatepark \
+            nwr/leisure=bikepark,track,pitch,sports_centre,park,recreation_ground,skatepark,nature_reserve \
             nwr/cycling=pump_track nwr/sport=bmx,mtb,cycling -o cut.osm.pbf
           rm region.osm.pbf
           python3 tool/ride_parks.py --pbf cut.osm.pbf osm.json

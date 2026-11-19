@@ -30,13 +30,14 @@ UA = {'User-Agent': 'MOBIlity-data/1.0 (github.com/terminatoru86/mobility-app)'}
 
 RIDE = re.compile(
     r'\b(dirt[\s-]*jumps?|dirt[\s-]*(park|track|lot)|pump[\s-]*tracks?|bike[\s-]*parks?|bicycle[\s-]*parks?'
+    r'|skate[\s-]*parks?|skateparks?|skate[\s-]*plazas?'
     r'|bmx|mtb[\s-]*(park|skills?)|mountain[\s-]*bike[\s-]*(park|skills?)|skills?[\s-]*(park|course|area|track|loop)'
     r'|jump[\s-]*(park|lines?|track)s?|velodrome|freeride|bike[\s-]*playground|bike[\s-]*(course|circuit)'
     r'|cyclocross[\s-]*(course|park)|flow[\s-]*trail)\b', re.I)
 NOT_RIDE = re.compile(
     r'\b(shop|store|sales|cycles?\b(?! ?park)|bikes?\s*(&|and)\s*\w+|repair|rental|rentals|tours?|spin|studio|fitness|gym'
     r'|bootcamp|indoor cycling|cyclebar|soulcycle|parking|rack|dealer|motorsports?|powersports|apparel|school bus)\b', re.I)
-CATEGORY = re.compile(r'bmx|bike[ _]park|mountain[ _]bik\w*[ _]park|pump[ _]track|velodrome|dirt[ _]jump|skills[ _]park', re.I)
+CATEGORY = re.compile(r'skate[ _]?park|bmx|bike[ _]park|mountain[ _]bik\w*[ _]park|pump[ _]track|velodrome|dirt[ _]jump|skills[ _]park', re.I)
 
 # The US in boxes Overpass can answer one by one (south, west, north, east)
 BOXES = [(24, -125, 37, -110), (37, -125, 49.5, -110), (24, -110, 37, -95), (37, -110, 49.5, -95),
@@ -67,6 +68,8 @@ def kind_of(name, tags=None, cat=''):
         return 'Velodrome'
     if re.search(r'skills?[\s_-]*(park|course|area|track|loop)', n):
         return 'Skills park'
+    if t.get('leisure') == 'skatepark' or re.search(r'skate[\s_-]*park|skatepark|skate[\s_-]*plaza|skate[\s_-]*spot', n):
+        return 'Skatepark'
     if t.get('leisure') == 'bikepark' or re.search(r'bike[\s_-]*park|bicycle[\s_-]*park|mtb|mountain[\s_-]*bik|freeride|flow[\s_-]*trail'
                                                  r'|bike[\s_-]*(course|circuit|playground)|cyclocross', n):
         return 'Bike park'
@@ -90,8 +93,8 @@ def osm_record(oid, lat, lon, t):
     name = t.get('name', '')
     if is_business_noise(name, t):
         return None
-    if t.get('leisure') == 'skatepark' and 'bmx' not in (t.get('sport') or '') and not RIDE.search(name):
-        return None  # plain skateparks: the app finds them live
+    if t.get('leisure') == 'skatepark' and t.get('bicycle') == 'no' and t.get('kick_scooter') == 'no':
+        return None  # skateboards only, says the sign
     if t.get('leisure') in ('park', 'recreation_ground', 'pitch', 'track', 'sports_centre') and not (
             RIDE.search(name) or t.get('sport') or t.get('cycling')):
         return None
@@ -103,13 +106,17 @@ def osm_record(oid, lat, lon, t):
         'website': t.get('website') or t.get('contact:website'), 'hours': t.get('opening_hours'),
         'street': ' '.join(x for x in (t.get('addr:housenumber'), t.get('addr:street')) if x) or None,
         'operator': t.get('operator'), 'fee': t.get('fee'), 'lit': t.get('lit'), 'surface': t.get('surface'),
-        'access': t.get('access'), 'source': 'OpenStreetMap'})]
+        'access': t.get('access'), 'bikes': 'yes' if (t.get('bicycle') in ('yes', 'designated') or 'bmx' in (t.get('sport') or '')
+                                                      or t.get('leisure') != 'skatepark') else None,
+        'scooters': 'yes' if (t.get('kick_scooter') == 'yes' or 'scooter' in (t.get('sport') or '')) else None,
+        'source': 'OpenStreetMap'})]
 
 
 def osm_from_pbf(pbf, out_json):
-    """From a Geofabrik extract already cut with osmium tags-filter (see ride-parks.yml). Ways: the middle of their nodes."""
+    """From a Geofabrik extract already cut with osmium tags-filter (see ride-parks.yml). Ways: the middle of their nodes.
+    Each place also gets the city / county park it sits in ('in_park'), like Google's "Located within: Clark Park"."""
     import osmium
-    found = []
+    found, parks = [], []
 
     class H(osmium.SimpleHandler):
         def node(self, n):
@@ -128,9 +135,49 @@ def osm_from_pbf(pbf, out_json):
             if r:
                 found.append(r)
 
+        def area(self, a):
+            if a.tags.get('leisure') not in ('park', 'nature_reserve', 'recreation_ground') or not a.tags.get('name'):
+                return
+            try:
+                for ring in a.outer_rings():
+                    pts = [(nd.lat, nd.lon) for nd in ring if nd.location.valid()]
+                    if len(pts) > 3:
+                        la = [p[0] for p in pts]
+                        lo = [p[1] for p in pts]
+                        parks.append((min(la), max(la), min(lo), max(lo), pts, a.tags.get('name')))
+            except Exception:
+                pass
+
     H().apply_file(pbf, locations=True)
+    for r in found:
+        name = in_park(r[1], r[2], parks)
+        if name and name != r[3].get('name'):
+            r[3]['in_park'] = name
     json.dump(found, open(out_json, 'w'))
-    print(f'{pbf}: {len(found)} places to ride', flush=True)
+    print(f'{pbf}: {len(found)} places to ride, {sum(1 for r in found if r[3].get("in_park"))} inside a named park', flush=True)
+
+
+def inside(lat, lon, pts):
+    c = False
+    j = len(pts) - 1
+    for i in range(len(pts)):
+        yi, xi = pts[i]
+        yj, xj = pts[j]
+        if (yi > lat) != (yj > lat) and lon < (xj - xi) * (lat - yi) / ((yj - yi) or 1e-12) + xi:
+            c = not c
+        j = i
+    return c
+
+
+def in_park(lat, lon, parks):
+    """The smallest named park whose outline holds the point."""
+    best = None
+    for s_, n_, w_, e_, pts, name in parks:
+        if s_ <= lat <= n_ and w_ <= lon <= e_ and inside(lat, lon, pts):
+            size = (n_ - s_) * (e_ - w_)
+            if best is None or size < best[0]:
+                best = (size, name)
+    return best[1] if best else None
 
 
 def overpass_box(s, w, n, e, q_for, depth=0):
@@ -208,9 +255,10 @@ def fetch_overture():
              websites[1] AS web, phones[1] AS phone, addresses[1].freeform AS street
       FROM read_parquet('s3://overturemaps-us-west-2/release/{release}/theme=places/type=place/*', hive_partitioning=1)
       WHERE bbox.xmin BETWEEN -180 AND -65 AND bbox.ymin BETWEEN 17 AND 72
-        AND addresses[1].country = 'US' AND confidence >= 0.5
+        AND addresses[1].country = 'US' AND confidence >= 0.3
         AND (regexp_matches(lower(CAT_EXPR), 'bmx|bike_park|mountain_bik|pump_track|velodrome|dirt_jump|cycling|bike|bicycle')
-             OR regexp_matches(lower(names.primary), 'dirt ?jumps?|pump ?track|bike ?park|bmx|skills? (park|course)|velodrome'))
+             OR regexp_matches(lower(CAT_EXPR), 'skate')
+             OR regexp_matches(lower(names.primary), 'dirt ?jumps?|pump ?track|bike ?park|bmx|skills? (park|course)|velodrome|skate ?park'))
     """
     rows = None
     for expr in ("coalesce(taxonomy.primary, basic_category)", "basic_category", "categories.primary"):
@@ -257,8 +305,8 @@ def fetch_foursquare():
              array_to_string(fsq_category_labels, ' | ') AS cats
       FROM read_parquet('hf://datasets/foursquare/fsq-os-places/{rel}/places/parquet/*.parquet')
       WHERE country = 'US' AND date_closed IS NULL AND latitude IS NOT NULL
-        AND (regexp_matches(lower(array_to_string(fsq_category_labels, ' | ')), 'bmx|bike park|velodrome|pump track')
-             OR regexp_matches(lower(name), 'dirt ?jumps?|pump ?track|bike ?park|bmx|skills? (park|course)|velodrome'))
+        AND (regexp_matches(lower(array_to_string(fsq_category_labels, ' | ')), 'bmx|bike park|velodrome|pump track|skate park')
+             OR regexp_matches(lower(name), 'dirt ?jumps?|pump ?track|bike ?park|bmx|skills? (park|course)|velodrome|skate ?park'))
     """
     out = []
     for fid, name, lat, lon, addr, tel, web, refreshed, cats in con.execute(q).fetchall():
@@ -336,6 +384,11 @@ def test():
     for n in bad:
         assert not (RIDE.search(n) and not is_business_noise(n) and kind_of(n)), n
     assert kind_of('The Garden - Chicago Dirt Jumps') == 'Dirt jumps'
+    assert kind_of('Logan Blvd. Skate Park') == 'Skatepark' and kind_of('Big Marsh Pump Track') == 'Pump track'
+    assert kind_of('', None, 'skate_park') == 'Skatepark'
+    sq = [(41.94, -87.70), (41.94, -87.68), (41.95, -87.68), (41.95, -87.70)]
+    assert in_park(41.945, -87.69, [(41.94, 41.95, -87.70, -87.68, sq, 'Clark (Richard) Park')]) == 'Clark (Richard) Park'
+    assert in_park(41.96, -87.69, [(41.94, 41.95, -87.70, -87.68, sq, 'Clark (Richard) Park')]) is None
     a = ['ovt/1', 41.942011, -87.693565, {'name': 'The Garden Chicago Dirt Jumps', 'ride': 'Dirt jumps', 'source': 'A'}]
     b = ['ovt/2', 41.943428, -87.687912, {'name': 'The Garden - Chicago Dirt Jumps', 'ride': 'Dirt jumps', 'website': 'x', 'source': 'B'}]
     c = ['ovt/3', 42.03, -88.28, {'name': 'The Hill BMX Elgin', 'ride': 'BMX track', 'source': 'A'}]
