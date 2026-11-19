@@ -1,0 +1,843 @@
+[
+ {
+  "city": "Houston TX",
+  "site": "houstontx.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Phoenix AZ",
+  "site": "phoenix.gov",
+  "portal": [
+   "https://cityofphoenixaz.govqa.us/WEBAPP/_rs/(S(rqvv0fug202pf55dgdpat5op))/supporthome.aspx",
+   "https://apps-secure.phoenix.gov/PublicRecordsSearch/Home/AdvancedSearchOut",
+   "https://cityofphoenixaz.govqa.us/WEBAPP/_rs/(S(0frackvwbevsgcgb443ijo0l))/supporthome.aspx"
+  ],
+  "email": [
+   "policepublicrecords@phoenix.gov"
+  ],
+  "pages": [
+   "https://www.phoenix.gov/administration/departments/communications/programs/public-records.html",
+   "https://cityofphoenixaz.govqa.us/WEBAPP/_rs/(S(te3wqku1pblws5bdcljmgnp5))/supporthome.aspx",
+   "https://apps-secure.phoenix.gov/PublicRecordsSearch/Home/AdvancedSearchOut"
+  ]
+ },
+ {
+  "city": "Philadelphia PA",
+  "site": "phila.gov",
+  "portal": [],
+  "email": [
+   "righttoknowlaw@phila.gov",
+   "sanitationrtk@phila.gov",
+   "pdph-rtkl@phila.gov"
+  ],
+  "pages": [
+   "https://www.phila.gov/open-records-policy/",
+   "https://www.phila.gov/vi/open-records-policy/",
+   "https://www.phila.gov/ru/open-records-policy/"
+  ]
+ },
+ {
+  "city": "San Antonio TX",
+  "site": "sa.gov",
+  "portal": [
+   "https://sanantonio.govqa.us/webapp/_rs/supporthome.aspx",
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [
+   "openrecords@sanantonio.gov"
+  ],
+  "pages": [
+   "https://www.sa.gov/Directory/Departments/CE/Open-Government-Request",
+   "https://sanantonio.govqa.us/WEBAPP/_rs/(S(dlgpmopy4rcjettbotkldxgi))/FindAnswers.aspx",
+   "https://www.saws.org/openrecords/"
+  ]
+ },
+ {
+  "city": "Jacksonville FL",
+  "site": "jacksonville.gov",
+  "portal": [
+   "https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(p4obydcopsfjojjsjica1fth))/OpenRecordsSummary.aspx",
+   "https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(bcxbkaeu4ucycqbbxgkc3got))/supporthome.aspx",
+   "https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(p4obydcopsfjojjsjica1fth))/SupportHome.aspx?sSessionID="
+  ],
+  "email": [],
+  "pages": [
+   "https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(p4obydcopsfjojjsjica1fth))/supporthome.aspx",
+   "https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(p4obydcopsfjojjsjica1fth))/OpenRecordsSummary.aspx",
+   "https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(xt23vt53iysb1jdjvy2hfmr4))/error.aspx?sSessionID=&err_msg=Issue+Not+Found."
+  ]
+ },
+ {
+  "city": "Fort Worth TX",
+  "site": "fortworthtexas.gov",
+  "portal": [
+   "https://fortworth.govqa.us/WEBAPP/_rs/(S(ynkukr0ktdh2m3tbs2n0e3tc))/SupportHome.aspx?s&amp;lp=3",
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [
+   "publicinfo@fortworthtexas.gov"
+  ],
+  "pages": [
+   "https://www.fortworthtexas.gov/departments/communications/records",
+   "https://www.fortworthtexas.gov/departments/communications/records"
+  ]
+ },
+ {
+  "city": "Columbus OH",
+  "site": "columbus.gov",
+  "portal": [
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Charlotte NC",
+  "site": "charlottenc.gov",
+  "portal": [
+   "https://charlottenc.justfoia.com/publicportal",
+   "https://charlottenc.justfoia.com/publicportal/home/newrequest",
+   "https://granicus.com/product/opencities"
+  ],
+  "email": [
+   "publicrecordsrequest@charlottenc.gov",
+   "cityclerk@charlottenc.gov"
+  ],
+  "pages": [
+   "https://www.charlottenc.gov/Services/Request-a-Public-Record",
+   "https://charlottenc.justfoia.com/publicportal",
+   "https://charlottenc.justfoia.com/publicportal/home/newrequest"
+  ]
+ },
+ {
+  "city": "Indianapolis IN",
+  "site": "indy.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Oklahoma City OK",
+  "site": "okc.gov",
+  "portal": [
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/",
+   "https://oklahomacityok.justfoia.com/Forms/Launch/d705cbd6-1396-49b7-939e-8d86c5a87deb"
+  ],
+  "email": [
+   "cityclerk@okc.gov"
+  ],
+  "pages": [
+   "https://www.okc.gov/Government/Records/Records-Request",
+   "https://www.okc.gov/Government/Records/Records-Request/Public-Records-Fees",
+   "https://www.okc.gov/Government/Records/Records-Request/Open-Records-Act"
+  ]
+ },
+ {
+  "city": "El Paso TX",
+  "site": "elpasotexas.gov",
+  "portal": [
+   "https://elpaso.govqa.us/webapp/_rs/supporthome.aspx"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Las Vegas NV",
+  "site": "lasvegasnevada.gov",
+  "portal": [
+   "https://lasvegasnv.mycusthelp.com/WEBAPP/_rs/(S(1xey0zbsbbtddhfhijsayrxc))/supporthome.aspx",
+   "https://lasvegasnv.mycusthelp.com/WEBAPP/_rs/(S(avzhidlwno345uwyychj0cr5))/supporthome.aspx"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.lasvegasnevada.gov/government/public-records"
+  ]
+ },
+ {
+  "city": "Louisville KY",
+  "site": "louisvilleky.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Albuquerque NM",
+  "site": "cabq.gov",
+  "portal": [
+   "https://cabq.nextrequest.com/",
+   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+   "https://assets.nextrequest.com/manifest.json"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.cabq.gov/clerk/public-records",
+   "https://www.cabq.gov/clerk/public-records/public-records-obtained-online-or-in-person",
+   "https://www.cabq.gov/clerk/public-records"
+  ]
+ },
+ {
+  "city": "Tucson AZ",
+  "site": "tucsonaz.gov",
+  "portal": [
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [
+   "tpdpublicrecords@tucsonaz.gov",
+   "cityclerk@tucsonaz.gov",
+   "tccrecords@courts.az.gov"
+  ],
+  "pages": [
+   "https://www.tucsonaz.gov/Departments/Clerks/Public-Records",
+   "https://www.tucsonaz.gov/Departments/Police/Police-Services/Request-Tucson-Police-Public-Records",
+   "https://www.tucsonaz.gov/Departments/Clerks/Public-Records/Reproduction-Fees"
+  ]
+ },
+ {
+  "city": "Fresno CA",
+  "site": "fresno.gov",
+  "portal": [
+   "https://fresnoca.govqa.us/WEBAPP/_rs/(S(4f2cjl2xisuqjnztcys5f52e))/OpenRecordsSummary.aspx",
+   "https://fresnoca.govqa.us/WEBAPP/_rs/(S(zvgcxugvpjgbolmy2ttaflpd))/supporthome.aspx",
+   "https://fresnoca.govqa.us/WEBAPP/_rs/(S(4f2cjl2xisuqjnztcys5f52e))/AnswerDetail.aspx?sSessionID=&amp;aid=148"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.fresno.gov/fire-25/about-us/divisions/prevention/public-records-act-pra-request/",
+   "https://fresnoca.govqa.us/WEBAPP/_rs/(S(4f2cjl2xisuqjnztcys5f52e))/supporthome.aspx",
+   "https://fresnoca.govqa.us/WEBAPP/_rs/(S(4f2cjl2xisuqjnztcys5f52e))/OpenRecordsSummary.aspx"
+  ]
+ },
+ {
+  "city": "Kansas City MO",
+  "site": "kcmo.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Colorado Springs CO",
+  "site": "coloradosprings.gov",
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://coloradosprings.gov/city-communications/page/colorado-open-records-act-cora"
+  ]
+ },
+ {
+  "city": "Virginia Beach VA",
+  "site": "vbgov.com",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Bakersfield CA",
+  "site": "bakersfieldcity.us",
+  "portal": [
+   "https://bakersfieldca.justfoia.com/publicportal"
+  ],
+  "email": [],
+  "pages": [
+   "https://bakersfieldca.justfoia.com/publicportal/home/track"
+  ]
+ },
+ {
+  "city": "Wichita KS",
+  "site": "wichita.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Arlington TX",
+  "site": "arlingtontx.gov",
+  "portal": [
+   "https://policerecords-arlingtontx.govqa.us/WEBAPP/_rs/SupportHome.aspx?lp=3",
+   "https://agency-arlingtontx.govqa.us/WEBAPP/_rs/SupportHome.aspx?lp=4",
+   "https://arlingtontx.govqa.us/WEBAPP/_rs/(S(412yz3mcenbudxwrp003wqb3))/SupportHome.aspx"
+  ],
+  "email": [],
+  "pages": [
+   "https://arlingtontx.govqa.us/WEBAPP/_rs/(S(nrjjnapjywra52wutzde55re))/SupportHome.aspx",
+   "https://arlingtontx.govqa.us/WEBAPP/_rs/(S(nrjjnapjywra52wutzde55re))/error.aspx?sSessionID=&err_msg=Issue+Not+Found.",
+   "https://www.arlingtontx.gov/City-Services/Public-Safety/Police-Department/Police-Records/File-an-Open-Records-Request"
+  ]
+ },
+ {
+  "city": "Tampa FL",
+  "site": "tampa.gov",
+  "portal": [
+   "https://cityoftampa.govqa.us/WEBAPP/_rs/SupportHome.aspx",
+   "https://cityoftampa.govqa.us/WEBAPP/_rs/(S(ajsi3hn53altp453duyx1mki))/OpenRecordsSummary.aspx",
+   "https://cityoftampa.govqa.us/WEBAPP/_rs/(S(ajsi3hn53altp453duyx1mki))/SupportHome.aspx?sSessionID="
+  ],
+  "email": [
+   "publicrecords@tampagov.net",
+   "cityclerkstaff@tampgov.net",
+   "cityclerkstaff@tampagov.net"
+  ],
+  "pages": [
+   "https://cityoftampa.govqa.us/WEBAPP/_rs/(S(gvpulxrggkh0z1gaieyfrol2))/SupportHome.aspx",
+   "https://cityoftampa.govqa.us/WEBAPP/_rs/(S(gvpulxrggkh0z1gaieyfrol2))/OpenRecordsSummary.aspx",
+   "https://cityoftampa.govqa.us/WEBAPP/_rs/(S(gvpulxrggkh0z1gaieyfrol2))/error.aspx?sSessionID=&err_msg=Issue+Not+Found."
+  ]
+ },
+ {
+  "city": "Anaheim CA",
+  "site": "anaheim.net",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Lexington KY",
+  "site": "lexingtonky.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Stockton CA",
+  "site": "stocktonca.gov",
+  "portal": [],
+  "email": [
+   "city.clerk@stocktonca.gov"
+  ],
+  "pages": []
+ },
+ {
+  "city": "Corpus Christi TX",
+  "site": "corpuschristitx.gov",
+  "portal": [
+   "https://docs.cctexas.com/WebLink/browse.aspx?id=6&amp;dbid=0&amp;repo=PublicRecords",
+   "https://docs.cctexas.com/WebLink/browse.aspx?id=49822&amp;dbid=0&amp;repo=PublicRecords",
+   "https://docs.cctexas.com/WebLink/browse.aspx?id=856&amp;dbid=0&amp;repo=PublicRecords"
+  ],
+  "email": [
+   "acsopenrecords@cctexas.com"
+  ],
+  "pages": [
+   "https://www.corpuschristitx.gov/department-directory/city-secretary/public-records/",
+   "https://www.corpuschristitx.gov/department-directory/animal-care-services/get-help/open-records-request/"
+  ]
+ },
+ {
+  "city": "Henderson NV",
+  "site": "cityofhenderson.com",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Orlando FL",
+  "site": "orlando.gov",
+  "portal": [
+   "https://gxa.granicus.com/chatbot/app/a1d9a415-6314-3ee6-b1a3-b1940fe74632",
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [
+   "records@orlando.gov",
+   "cityclerk@orlando.gov"
+  ],
+  "pages": [
+   "https://www.orlando.gov/Our-Government/Records-and-Documents/Request-a-Public-Record",
+   "https://www.orlando.gov/Our-Government/Records-and-Documents/Request-a-Public-Record?lang_update=639306992772820191",
+   "https://www.orlando.gov/Our-Government/Records-and-Documents/Request-a-Public-Record"
+  ]
+ },
+ {
+  "city": "Anchorage AK",
+  "site": "muni.org",
+  "portal": [
+   "https://anchorageak.justfoia.com/publicportal/home/newrequest",
+   "https://anchorageak.justfoia.com/publicportal/home/search"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Plano TX",
+  "site": "plano.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Durham NC",
+  "site": "durhamnc.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Chandler AZ",
+  "site": "chandleraz.gov",
+  "portal": [],
+  "email": [
+   "cityclerkdivision@chandleraz.gov"
+  ],
+  "pages": [
+   "https://www.chandleraz.gov/government/departments/city-clerks-office/public-records-request",
+   "https://www.chandleraz.gov/government/departments/city-clerks-office/public-records-request/fire-medical-records-request",
+   "https://www.chandleraz.gov/government/departments/city-clerks-office/public-records-request/frequently-asked-questions"
+  ]
+ },
+ {
+  "city": "Toledo OH",
+  "site": "toledo.oh.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Madison WI",
+  "site": "cityofmadison.com",
+  "portal": [
+   "https://cityofmadison.govqa.us/WEBAPP/_rs/supporthome.aspx",
+   "https://cityofmadison.govqa.us/WEBAPP/_rs/AnswerDetail.aspx?sSessionID=&amp;aid=3537"
+  ],
+  "email": [
+   "clerk@cityofmadison.com",
+   "itrecordscustodian@cityofmadison.com",
+   "horecordscustodian@cityofmadison.com"
+  ],
+  "pages": [
+   "https://www.cityofmadison.com/clerk/about/public-records",
+   "https://www.cityofmadison.com/clerk/about/public-records/records-custodians",
+   "https://cityofmadison.govqa.us/WEBAPP/_rs/(S(2opjj5ewyvr4jorvh5uuxyzq))/supporthome.aspx"
+  ]
+ },
+ {
+  "city": "Gilbert AZ",
+  "site": "gilbertaz.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Reno NV",
+  "site": "reno.gov",
+  "portal": [
+   "https://reno.govqa.us/WEBAPP/_rs/(S(oripi1ropojt5r3ycdrpch11))/OpenRecordsSummary.aspx",
+   "https://reno.govqa.us/WEBAPP/_rs/(S(331kzhzxkeqcqd4vxbrr3wgv))/OpenRecordsSummary.aspx",
+   "https://reno.govqa.us/WEBAPP/_rs/(S(oxlsoucmqcfbcknk50vthtr3))/supporthome.aspx"
+  ],
+  "email": [],
+  "pages": [
+   "https://reno.govqa.us/WEBAPP/_rs/(S(xomzqyga22mmu0doplqr3jut))/supporthome.aspx",
+   "https://reno.govqa.us/WEBAPP/_rs/(S(xomzqyga22mmu0doplqr3jut))/OpenRecordsSummary.aspx",
+   "https://reno.govqa.us/WEBAPP/_rs/(S(lhoq02hz0taoabzsd3zwzaos))/supporthome.aspx"
+  ]
+ },
+ {
+  "city": "Fort Wayne IN",
+  "site": "cityoffortwayne.org",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "North Las Vegas NV",
+  "site": "cityofnorthlasvegas.com",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "St. Petersburg FL",
+  "site": "stpete.org",
+  "portal": [
+   "https://stpetefl.mycusthelp.com/WEBAPP/_rs/(S(uijzeh1ff0mpoljg5cqdjbkf))/supporthome.aspx",
+   "https://stpetefl.mycusthelp.com/WEBAPP/_rs/supporthome.aspx"
+  ],
+  "email": [
+   "city.clerk@stpete.org"
+  ],
+  "pages": [
+   "https://www.stpete.org/government/transparency/public_records.php",
+   "https://stpetefl.mycusthelp.com/WEBAPP/_rs/(S(4cdx33bara1y4dru11mbijgl))/supporthome.aspx",
+   "https://stpetefl.mycusthelp.com/WEBAPP/_rs/(S(oee0nm1tzsuvrh0nxrlo3u0d))/supporthome.aspx"
+  ]
+ },
+ {
+  "city": "Lubbock TX",
+  "site": "ci.lubbock.tx.us",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Irving TX",
+  "site": "cityofirving.org",
+  "portal": [
+   "https://irvingtx.justfoia.com/publicportal/home/track",
+   "https://irvingtx.justfoia.com/Forms/Launch/3fb33b45-a9d8-431e-b2c4-95cbfde1675a"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Laredo TX",
+  "site": "cityoflaredo.com",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Winston-Salem NC",
+  "site": "cityofws.org",
+  "portal": [
+   "https://cityofws.nextrequest.com/",
+   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+   "https://assets.nextrequest.com/manifest.json"
+  ],
+  "email": [],
+  "pages": [
+   "https://cityofws.nextrequest.com/"
+  ]
+ },
+ {
+  "city": "Chesapeake VA",
+  "site": "cityofchesapeake.net",
+  "portal": [
+   "http://www.cityofchesapeake.net/FOIAPortal",
+   "http://foiacouncil.dls.virginia.gov/foiacouncil.htm",
+   "https://www.cityofchesapeake.net/206/Virginia-Freedom-of-Information-Act-FOIA"
+  ],
+  "email": [
+   "foia@cityofchesapeake.net",
+   "sherifffoia@cityofchesapeake.net",
+   "ccclerk@cityofchesapeake.net"
+  ],
+  "pages": [
+   "https://www.cityofchesapeake.net/206/FOIA-Virginia-Freedom-of-Information-Act",
+   "https://www.cityofchesapeake.net/206/FOIA-Virginia-Freedom-of-Information-Act",
+   "https://cityofchesapeake.justfoia.com/publicportal/home/newrequest"
+  ]
+ },
+ {
+  "city": "Glendale AZ",
+  "site": "glendaleaz.com",
+  "portal": [
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/",
+   "https://glendaleaz.justfoia.com/publicportal/home/newrequest"
+  ],
+  "email": [
+   "cityclerk@glendaleaz.com"
+  ],
+  "pages": [
+   "https://www.glendaleaz.gov/Government/Open-Government/Legal-Policies",
+   "https://www.glendaleaz.gov/Government/Open-Government/Legal-Policies?lang_update=639306920848704729",
+   "https://www.glendaleaz.gov/Community/City-Services/Police-Department/News/Media-PRR-FOIA"
+  ]
+ },
+ {
+  "city": "Garland TX",
+  "site": "garlandtx.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Boise ID",
+  "site": "cityofboise.org",
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.cityofboise.org/departments/city-clerk/public-records/",
+   "https://www.cityofboise.org/departments/police/police-public-records-request/",
+   "https://www.cityofboise.org/departments/city-clerk/public-records/public-records-access/"
+  ]
+ },
+ {
+  "city": "Fremont CA",
+  "site": "fremont.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Spokane WA",
+  "site": "my.spokanecity.org",
+  "portal": [
+   "https://publicrecords-spokanewa.govqa.us/WEBAPP/_rs/supporthome.aspx",
+   "https://publicrecords-spokanewa.govqa.us/WEBAPP/_rs/(S(3gav5hw00il2tpzimrntcfgk))/supporthome.aspx?sSessionID=198139252FKQVMGTIF%5bYMIXTJCEBTPGAPOCCEKFM"
+  ],
+  "email": [
+   "clerks@spokanecity.org"
+  ],
+  "pages": [
+   "https://my.spokanecity.org/administrative/public-records/",
+   "https://publicdocs.spokanecity.org/cityclerkrecords/",
+   "https://my.spokanecity.org/welcome/?Check=Cookies&Redirect=/administrative/public-records/"
+  ]
+ },
+ {
+  "city": "Santa Clarita CA",
+  "site": "santaclarita.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Baton Rouge LA",
+  "site": "brla.gov",
+  "portal": [
+   "https://brla.govqa.us/WEBAPP/_rs/"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.brla.gov/531/Public-Records",
+   "https://brla.govqa.us/WEBAPP/_rs/(S(mgrbcrg3pl5uf3dhslrglglm))/supporthome.aspx"
+  ]
+ },
+ {
+  "city": "Tacoma WA",
+  "site": "cityoftacoma.org",
+  "portal": [
+   "https://tacoma.mycusthelp.com/WEBAPP/_rs/(S(pktt0ut0vyubph2cxgjpkrwc))/supporthome.aspx"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "San Bernardino CA",
+  "site": "sbcity.org",
+  "portal": [
+   "https://cityofsanbernardinoca.nextrequest.com/"
+  ],
+  "email": [
+   "sbcityclerk@sbcity.org"
+  ],
+  "pages": []
+ },
+ {
+  "city": "Modesto CA",
+  "site": "modestogov.com",
+  "portal": [
+   "https://cityofmodestoca.nextrequest.com/"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.modestogov.com/455/Public-Records-Requests",
+   "https://www.modestogov.com/455/Public-Records-Requests"
+  ]
+ },
+ {
+  "city": "Fontana CA",
+  "site": "fontanaca.gov",
+  "portal": [
+   "https://publicrecords.fontanaca.gov/",
+   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+   "https://assets.nextrequest.com/manifest.json"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.fontanaca.gov/737/Public-Records",
+   "https://fontanaca.nextrequest.com/"
+  ]
+ },
+ {
+  "city": "Des Moines IA",
+  "site": "dsm.city",
+  "portal": [],
+  "email": [
+   "cityclerk@dmgov.org"
+  ],
+  "pages": []
+ },
+ {
+  "city": "Birmingham AL",
+  "site": "birminghamal.gov",
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.birminghamal.gov/government/city-departments/city-clerks-office/public-records-request"
+  ]
+ },
+ {
+  "city": "Salt Lake City UT",
+  "site": "slc.gov",
+  "portal": [
+   "https://saltlakecityut.justfoia.com/publicportal/home/newrequest"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Hartford CT",
+  "site": "hartfordct.gov",
+  "portal": [
+   "https://hartfordct.govqa.us/WEBAPP/_rs/(S(fh5rkryqiow10spubvhnd554))/OpenRecordsSummary.aspx",
+   "https://hartfordct.govqa.us/WEBAPP/_rs/supporthome.aspx",
+   "https://granicus.com/product/opencities"
+  ],
+  "email": [],
+  "pages": [
+   "https://hartfordct.govqa.us/WEBAPP/_rs/(S(fh5rkryqiow10spubvhnd554))/OpenRecordsSummary.aspx"
+  ]
+ },
+ {
+  "city": "Little Rock AR",
+  "site": "littlerock.gov",
+  "portal": [
+   "https://littlerock.justfoia.com/publicportal/home/newrequest",
+   "https://littlerock.gov/wp-content/uploads/2026/01/justfoia.jpeg",
+   "https://littlerock.gov/wp-content/uploads/2026/01/justfoia-150x150.jpeg"
+  ],
+  "email": [],
+  "pages": [
+   "https://littlerock.justfoia.com/publicportal/home/newrequest"
+  ]
+ },
+ {
+  "city": "Savannah GA",
+  "site": "savannahga.gov",
+  "portal": [
+   "https://savannahga.justfoia.com/publicportal"
+  ],
+  "email": [],
+  "pages": [
+   "https://savannahga.justfoia.com/publicportal/home/newrequest"
+  ]
+ },
+ {
+  "city": "Ann Arbor MI",
+  "site": "a2gov.org",
+  "portal": [
+   "https://www.a2gov.org/city-clerk/records-request-foia/",
+   "https://www.a2gov.org/city-clerk/foia-request/",
+   "https://www.a2gov.org/city-clerk/foia-requests/"
+  ],
+  "email": [
+   "cityclerk@a2gov.org",
+   "a2policerecords@a2gov.org"
+  ],
+  "pages": [
+   "https://www.a2gov.org/city-clerk/records-request-foia/",
+   "https://www.a2gov.org/city-clerk/foia-request/",
+   "https://www.a2gov.org/city-clerk/foia-requests/"
+  ]
+ },
+ {
+  "city": "Portland ME",
+  "site": "portlandmaine.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Jackson MS",
+  "site": "jacksonms.gov",
+  "portal": [
+   "https://cityofjacksonms.nextrequest.com/",
+   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+   "https://assets.nextrequest.com/manifest.json"
+  ],
+  "email": [],
+  "pages": [
+   "https://jacksonms.gov/public-records-reque/public-records-report-request-week-of-july-6-10-2026/",
+   "https://jacksonms.gov/government/city-departments/municipal-clerk-department/public-records-reports/",
+   "https://jacksonms.gov/government/city-departments/municipal-clerk-department/public-records-reports/2/"
+  ]
+ },
+ {
+  "city": "Columbia SC",
+  "site": "columbiasc.gov",
+  "portal": [
+   "https://columbiasc.gov/foia/",
+   "https://columbiasc.justfoia.com/publicportal/home/newrequest",
+   "https://columbiasc.justfoia.com/publicportal/home/track"
+  ],
+  "email": [],
+  "pages": [
+   "https://columbiasc.gov/foia/",
+   "https://columbiasc.justfoia.com/publicportal/home/track",
+   "https://columbiasc.justfoia.com/publicportal/home/newrequest"
+  ]
+ },
+ {
+  "city": "Sioux Falls SD",
+  "site": "siouxfalls.gov",
+  "portal": [
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.siouxfalls.gov/government/public-records/public-records-fees",
+   "https://www.siouxfalls.gov/government/public-records/public-records-fees?lang_update=639306956960558639",
+   "https://www.siouxfalls.gov/government/public-records"
+  ]
+ },
+ {
+  "city": "Fargo ND",
+  "site": "fargond.gov",
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.fargond.gov/city-government/open-records-requests"
+  ]
+ },
+ {
+  "city": "Billings MT",
+  "site": "billingsmt.gov",
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.billingsmt.gov/3040/Public-Records-Request---City-Records-an",
+   "https://www.billingsmt.gov/2421/Billings-Municipal-Court-Record-Request",
+   "https://www.billingsmt.gov/2713/Public-Records-Request---Legal-or-Crimin"
+  ]
+ },
+ {
+  "city": "Cheyenne WY",
+  "site": "cheyennecity.org",
+  "portal": [
+   "https://cheyennewy.govqa.us/WEBAPP/_rs/(S(jg0q01psklkr4o4evuot3bho))/OpenRecordsSummary.aspx",
+   "https://cheyennewy.govqa.us/WEBAPP/_rs/(S(au1swinlkobv343ote1belzx))/supporthome.aspx",
+   "https://cheyennewy.govqa.us/WEBAPP/_rs/(S(jg0q01psklkr4o4evuot3bho))/AnswerDetail.aspx?sSessionID=&amp;aid=131"
+  ],
+  "email": [
+   "cityclerk@cheyennecity.org"
+  ],
+  "pages": [
+   "https://cheyennewy.govqa.us/WEBAPP/_rs/(S(jg0q01psklkr4o4evuot3bho))/supporthome.aspx"
+  ]
+ },
+ {
+  "city": "Manchester NH",
+  "site": "manchesternh.gov",
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.manchesternh.gov/government/public-records",
+   "https://www.manchesternh.gov/Employee-Login?returnurl=%2fgovernment%2fpublic-records"
+  ]
+ },
+ {
+  "city": "Wilmington DE",
+  "site": "wilmingtonde.gov",
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Charleston WV",
+  "site": "charlestonwv.gov",
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.charlestonwv.gov/foia"
+  ]
+ }
+]
