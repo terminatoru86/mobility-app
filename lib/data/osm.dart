@@ -671,6 +671,7 @@ Place? placeFromOsm(Map<String, dynamic> e, {LatLng? from}) {
     if (tag('mobility:near') != null) 'At ${tag('mobility:near')}',
     if (tag('mobility:approx') == 'yes') 'Ask on site for the exact spot',
     if (tag('mobility:outlet') == 'standard') 'Wall outlet · bring your charger',
+    if (tag('mobility:at') != null) 'At a ${tag('mobility:at')}',
     if (yes('lit')) 'Lit',
     if (yes('service:bicycle:pump')) 'Pump',
     if (yes('service:bicycle:tools')) 'Tools',

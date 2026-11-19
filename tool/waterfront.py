@@ -246,6 +246,7 @@ SAYS = {
                          r'\b(bike\s+)?repair\s+stands?\b|\bbike\s+tools?\b', re.I),
     'charge': re.compile(r'\b(e-?bike|electric\s+bike|scooter)\s+charging\b|\bcharg(e|ing)\s+(your\s+)?(e-?bikes?|scooters?)\b', re.I),
     'wash': re.compile(r'\b(bike|bicycle)\s+wash(ing)?\s*(stations?|area)?\b', re.I),
+    'mwash': re.compile(r'\bmotorcycles?\s+(wash(es|ing)?|detail(ing)?|clean(ing)?)\b|\bwash\s+(your\s+)?motorcycles?\b', re.I),
 }
 NOT_HERE = re.compile(r'\bno\s+(bikes?|bicycles?|motorcycles?|scooters?|mopeds?|rentals?)\b|not\s+(allowed|permitted|available)|prohibited', re.I)
 PRICE = re.compile(r'\$\s?(\d{1,3}(?:\.\d{2})?)')
@@ -369,6 +370,8 @@ def packs_parking():
                  'bicycle_repair_station': 'repair', 'charging_station': 'charge', 'bicycle_wash': 'wash'}.get(a)
             if sh in ('bicycle', 'scooter') and r[3].get('service:bicycle:rental') == 'yes':
                 k = 'rent'
+            if k == 'wash' and r[3].get('motorcycle') == 'yes':
+                k = 'mwash'
             if k and not r[0].startswith('wtr/'):
                 grid.setdefault((round(r[1] / 0.01), round(r[2] / 0.01)), []).append((k, r[1], r[2]))
     return grid
@@ -406,10 +409,10 @@ def main_join(parts):
     grid = packs_parking()
     added, said = [], {k: 0 for k in SAYS}
     vlabel = {'bike': 'bike parking', 'moto': 'motorcycle parking', 'scooter': 'scooter parking', 'rent': 'bike rental',
-              'pump': 'air pump', 'repair': 'bike repair station', 'charge': 'e-bike charging', 'wash': 'bike wash'}
+              'pump': 'air pump', 'repair': 'bike repair station', 'charge': 'e-bike charging', 'wash': 'bike wash', 'mwash': 'motorcycle wash'}
     amen = {'bike': 'bicycle_parking', 'moto': 'motorcycle_parking', 'scooter': 'small_electric_vehicle_parking',
             'rent': 'bicycle_rental', 'pump': 'compressed_air', 'repair': 'bicycle_repair_station',
-            'charge': 'charging_station', 'wash': 'bicycle_wash'}
+            'charge': 'charging_station', 'wash': 'bicycle_wash', 'mwash': 'bicycle_wash'}
     for url, ds in sites.items():
         r = got.get(url) or {}
         for d in ds:
@@ -427,6 +430,8 @@ def main_join(parts):
                     t['bicycle_parking'] = 'stands'
                 if k == 'charge':
                     t.update({'bicycle': 'yes', 'scooter': 'yes'})
+                if k == 'mwash':
+                    t['motorcycle'] = 'yes'
                 if k == 'rent' and re.search(r'scooter|moped', v['snip'], re.I) and not re.search(r'bike|bicycle', v['snip'], re.I):
                     t['rental'] = 'scooter'
                 added.append([f'wtr/{d[0]}/{k}', d[1], d[2], {x: y for x, y in t.items() if y}])

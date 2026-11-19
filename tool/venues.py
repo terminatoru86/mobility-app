@@ -40,7 +40,48 @@ LABEL = {'school': 'School', 'college': 'College', 'university': 'University', '
          'ferry': 'Ferry terminal', 'attraction': 'Tourist attraction', 'visitor_center': 'Visitor center',
          'resort': 'Resort', 'campground': 'Campground', 'museum': 'Museum', 'police': 'Police station',
          'fire_station': 'Fire station', 'prison': 'Prison', 'vet': 'Veterinarian', 'pet': 'Pet business',
-         'dog_park': 'Dog park'}
+         'dog_park': 'Dog park',
+         'cafe': 'Cafe',
+         'bar': 'Bar',
+         'fast_food': 'Fast food',
+         'restaurant': 'Restaurant',
+         'canteen': 'Canteen',
+         'nightclub': 'Nightclub',
+         'supermarket': 'Supermarket',
+         'shop': 'Shop',
+         'pharmacy': 'Pharmacy',
+         'laundromat': 'Laundromat',
+         'fuel': 'Gas station',
+         'truck_stop': 'Truck stop',
+         'car_wash': 'Car wash',
+         'car_repair': 'Car repair',
+         'car_dealer': 'Car dealer',
+         'towing': 'Towing',
+         'car_rental': 'Car rental',
+         'aquarium': 'Aquarium',
+         'botanical_garden': 'Botanical garden',
+         'planetarium': 'Planetarium',
+         'theatre': 'Theater',
+         'cinema': 'Cinema',
+         'arts_centre': 'Arts center',
+         'exhibition': 'Exhibition center',
+         'music_venue': 'Concert venue',
+         'events_venue': 'Event / festival grounds',
+         'zoo': 'Zoo',
+         'worship': 'Church / place of worship',
+         'gym': 'Gym',
+         'pool': 'Swimming pool',
+         'recreation': 'Recreation area',
+         'fishing': 'Fishing spot',
+         'viewpoint': 'Viewpoint',
+         'island': 'Island',
+         'plaza': 'Plaza',
+         'rest_area': 'Rest area',
+         'picnic': 'Picnic area',
+         'motel': 'Motel',
+         'hostel': 'Hostel',
+         'guest_house': 'Guest house',
+         'coach': 'Coach / minibus'}
 GROUP = {'school': 'campus', 'college': 'campus', 'university': 'campus', 'mall': 'shopping', 'market': 'shopping',
          'industrial': 'work', 'business_park': 'work', 'park': 'parks',
          'station': 'transit', 'park_ride': 'transit', 'library': 'civic', 'townhall': 'civic', 'community': 'civic',
@@ -49,8 +90,54 @@ GROUP = {'school': 'campus', 'college': 'campus', 'university': 'campus', 'mall'
          'post_office': 'government', 'corporate': 'corporate', 'office_building': 'offices', 'coworking': 'offices', 'airport': 'transit',
          'ferry': 'transit', 'attraction': 'travel', 'visitor_center': 'travel', 'resort': 'travel', 'campground': 'travel',
          'museum': 'travel', 'police': 'safety', 'fire_station': 'safety', 'prison': 'safety',
-         'vet': 'pets', 'pet': 'pets', 'dog_park': 'pets'}
-MAX_SITES = 30000
+         'vet': 'pets', 'pet': 'pets', 'dog_park': 'pets',
+         'cafe': 'food',
+         'bar': 'food',
+         'fast_food': 'food',
+         'restaurant': 'food',
+         'canteen': 'food',
+         'nightclub': 'food',
+         'supermarket': 'retail',
+         'shop': 'retail',
+         'pharmacy': 'retail',
+         'laundromat': 'retail',
+         'fuel': 'auto',
+         'truck_stop': 'auto',
+         'car_wash': 'auto',
+         'car_repair': 'auto',
+         'car_dealer': 'auto',
+         'towing': 'auto',
+         'car_rental': 'auto',
+         'aquarium': 'culture',
+         'botanical_garden': 'culture',
+         'planetarium': 'culture',
+         'theatre': 'culture',
+         'cinema': 'culture',
+         'arts_centre': 'culture',
+         'exhibition': 'culture',
+         'music_venue': 'culture',
+         'events_venue': 'culture',
+         'zoo': 'culture',
+         'worship': 'culture',
+         'gym': 'leisure',
+         'pool': 'leisure',
+         'recreation': 'leisure',
+         'fishing': 'leisure',
+         'viewpoint': 'leisure',
+         'island': 'leisure',
+         'plaza': 'leisure',
+         'rest_area': 'leisure',
+         'picnic': 'leisure',
+         'motel': 'lodging',
+         'hostel': 'lodging',
+         'guest_house': 'lodging',
+         'coach': 'transit'}
+MAX_SITES = 40000
+MORE_KINDS = ('cafe', 'bar', 'fast_food', 'restaurant', 'canteen', 'nightclub', 'supermarket', 'shop', 'pharmacy', 'laundromat',
+              'fuel', 'truck_stop', 'car_wash', 'car_repair', 'car_dealer', 'towing', 'car_rental', 'aquarium', 'botanical_garden',
+              'planetarium', 'theatre', 'cinema', 'arts_centre', 'exhibition', 'music_venue', 'events_venue', 'zoo', 'worship', 'gym',
+              'pool', 'recreation', 'fishing', 'viewpoint', 'island', 'plaza', 'rest_area', 'picnic', 'motel', 'hostel', 'guest_house',
+              'coach')
 SSA = re.compile(r'social\s+security|\bssa\b', re.I)
 DMV = re.compile(r'\b(dmv|bmv|mvd|rmv|mva|motor\s+vehicles?|driver\s+(services|license|licensing)|secretary\s+of\s+state\s+(facility|driver)|license\s+(branch|office)|tag\s+office)\b', re.I)
 BIG = re.compile(r'\b(google|alphabet|apple|oracle|microsoft|amazon|meta\s+platforms|facebook|intel|cisco|ibm|salesforce|adobe|nvidia|netflix|'
@@ -143,6 +230,89 @@ def kind_of_osm(t):
         return 'coworking'
     if t.get('building') in ('office', 'commercial') or t.get('office') in ('property_management', 'estate_agent') and False:
         return 'office_building'  # the building's own site: tenants' amenities (bike room, storage, garage)
+    return more_osm(t)
+
+
+def more_osm(t):
+    """Food, shops, auto, culture, leisure, lodging, coaches (the places riders go to every day)."""
+    a, sh, tour, lei = t.get('amenity'), t.get('shop'), t.get('tourism'), t.get('leisure')
+    name = t.get('name') or ''
+    if a == 'cafe' or a == 'ice_cream':
+        return 'cafe'
+    if a in ('bar', 'pub', 'biergarten'):
+        return 'bar'
+    if a == 'fast_food':
+        return 'fast_food'
+    if a == 'restaurant':
+        return 'restaurant'
+    if a in ('canteen', 'food_court'):
+        return 'canteen'
+    if a == 'nightclub':
+        return 'nightclub'
+    if sh == 'supermarket':
+        return 'supermarket'
+    if a == 'pharmacy' or sh == 'chemist':
+        return 'pharmacy'
+    if sh in ('laundry', 'dry_cleaning'):
+        return 'laundromat'
+    if a == 'fuel':
+        return 'truck_stop' if (t.get('hgv') == 'yes' and re.search(r'truck|travel\s*(center|plaza)|pilot|flying\s*j|love\'?s|ta\b|petro', name, re.I)) else 'fuel'
+    if a == 'car_wash':
+        return 'car_wash'
+    if sh in ('car_repair', 'tyres', 'car_parts') or a == 'vehicle_inspection':
+        return 'towing' if re.search(r'tow(ing)?\b|wrecker|recovery', name, re.I) else 'car_repair'
+    if sh == 'car':
+        return 'car_dealer'
+    if a == 'car_rental':
+        return 'car_rental'
+    if tour == 'aquarium':
+        return 'aquarium'
+    if lei == 'garden' and t.get('garden:type') == 'botanical' or re.search(r'botanic', name, re.I) and lei in ('garden', 'park'):
+        return 'botanical_garden'
+    if a == 'planetarium':
+        return 'planetarium'
+    if a == 'theatre':
+        return 'theatre'
+    if a == 'cinema':
+        return 'cinema'
+    if a == 'arts_centre':
+        return 'arts_centre'
+    if a == 'exhibition_centre':
+        return 'exhibition'
+    if a == 'music_venue':
+        return 'music_venue'
+    if a in ('events_venue', 'conference_centre') or t.get('landuse') == 'fairground':
+        return 'events_venue'
+    if tour == 'zoo':
+        return 'zoo'
+    if a == 'place_of_worship':
+        return 'worship'
+    if lei == 'fitness_centre':
+        return 'gym'
+    if lei in ('swimming_pool', 'water_park') and False or lei == 'swimming_pool' or (lei == 'sports_centre' and 'swimming' in (t.get('sport') or '')):
+        return 'pool'
+    if lei == 'recreation_ground':
+        return 'recreation'
+    if lei == 'fishing':
+        return 'fishing'
+    if tour == 'viewpoint':
+        return 'viewpoint'
+    if t.get('place') in ('island', 'islet'):
+        return 'island'
+    if t.get('place') == 'square' or (t.get('highway') == 'pedestrian' and t.get('area') == 'yes'):
+        return 'plaza'
+    if t.get('highway') in ('rest_area', 'services'):
+        return 'rest_area'
+    if tour == 'picnic_site':
+        return 'picnic'
+    if tour == 'motel':
+        return 'motel'
+    if tour == 'hostel':
+        return 'hostel'
+    if tour == 'guest_house':
+        return 'guest_house'
+    if sh:
+        return 'shop'  # toys, department stores, every other shop with a website: small businesses too
     return None
 
 
@@ -158,6 +328,9 @@ def kind_of_cat(cat):
         return 'market'
     if re.search(r'industrial[\s_]*(estate|park|area)|business[\s_]*park|office[\s_]*park|technology[\s_]*park|research[\s_]*park', c):
         return 'business_park'
+    k = more_cat(c)
+    if k:
+        return k
     if re.search(r'veterinar|animal[\s_]*hospital', c):
         return 'vet'
     if re.search(r'dog[\s_]*park', c):
@@ -222,6 +395,36 @@ def kind_of_cat(cat):
     return None
 
 
+MORE_CAT = [
+    ('truck_stop', r'truck[\s_]*stop|travel[\s_]*(center|plaza)'), ('fuel', r'gas[\s_]*station|fuel'),
+    ('car_wash', r'car[\s_]*wash|auto[\s_]*detail'), ('towing', r'towing'), ('car_rental', r'car[\s_]*rental|rent[\s_]*a[\s_]*car'),
+    ('car_dealer', r'car[\s_]*dealer|auto[\s_]*dealer|used[\s_]*car'), ('car_repair', r'auto[\s_]*repair|car[\s_]*repair|tire|mechanic|body[\s_]*shop'),
+    ('cafe', r'\bcafe|coffee|tea[\s_]*room|bakery[\s_]*cafe|ice[\s_]*cream'), ('nightclub', r'night[\s_]*club|dance[\s_]*club|disco'),
+    ('bar', r'\bbar\b|_bar$|^bar_|\bpub\b|brewery|tavern|lounge|wine_bar|beer'), ('fast_food', r'fast[\s_]*food|burger|pizza|taco|sandwich'),
+    ('canteen', r'cafeteria|canteen|food[\s_]*court'), ('restaurant', r'restaurant|diner|eatery|grill|bistro'),
+    ('supermarket', r'supermarket|grocery'), ('pharmacy', r'pharmacy|drugstore'), ('laundromat', r'laundromat|laundry|dry[\s_]*clean'),
+    ('aquarium', r'aquarium'), ('botanical_garden', r'botanical'), ('planetarium', r'planetarium|observatory'),
+    ('theatre', r'theat(er|re)|performing[\s_]*arts|opera'), ('cinema', r'cinema|movie[\s_]*theat'),
+    ('arts_centre', r'arts?[\s_]*cent(er|re)|gallery'), ('exhibition', r'exhibition|convention[\s_]*cent'),
+    ('music_venue', r'music[\s_]*venue|concert|amphitheat'), ('events_venue', r'event[\s_]*venue|fairground|festival|venue_and_event'),
+    ('zoo', r'\bzoo\b|wildlife[\s_]*park'), ('worship', r'church|cathedral|mosque|synagogue|temple|place[\s_]*of[\s_]*worship'),
+    ('pool', r'swimming[\s_]*pool|aquatic'), ('gym', r'\bgym\b|fitness|yoga|crossfit'),
+    ('fishing', r'fishing'), ('viewpoint', r'scenic[\s_]*(lookout|viewpoint)|observation[\s_]*deck|viewpoint'),
+    ('rest_area', r'rest[\s_]*(area|stop)'), ('recreation', r'recreation[\s_]*area'), ('plaza', r'\bplaza\b|public[\s_]*square'),
+    ('motel', r'\bmotel'), ('hostel', r'hostel'), ('guest_house', r'bed[\s_]*and[\s_]*breakfast|guest[\s_]*house|inn\b'),
+    ('coach', r'bus[\s_]*(service|charter|tour|line)|coach|charter[\s_]*bus|shuttle'),
+    ('shop', r'toy|department[\s_]*store|discount[\s_]*store|clothing|shoe|book[\s_]*store|hardware|electronics|furniture|'
+             r'gift|jewel|sporting[\s_]*goods|retail|boutique|convenience|outlet'),
+]
+
+
+def more_cat(c):
+    for k, rx in MORE_CAT:
+        if re.search(rx, c):
+            return k
+    return None
+
+
 def from_pbf(pbf, out_json):
     import osmium
     dest = []
@@ -232,7 +435,7 @@ def from_pbf(pbf, out_json):
         if not k or not name:
             return
         if k in ('industrial', 'business_park', 'park', 'government', 'corporate', 'office_building', 'coworking',
-                 'attraction', 'museum', 'campground', 'resort') and not (t.get('website') or t.get('contact:website') or t.get('operator')):
+                 'attraction', 'museum', 'campground', 'resort') + tuple(MORE_KINDS) and not (t.get('website') or t.get('contact:website') or t.get('operator')):
             return  # thousands of unnamed-on-the-web lots: only the ones with a website or a manager
         dest.append([oid, round(lat, 6), round(lon, 6), {x: v for x, v in {
             'kind': k, 'name': name, 'website': t.get('website') or t.get('contact:website') or t.get('url'),
@@ -263,10 +466,16 @@ def overture(group):
     release = release.strip('./').split('/')[0]
     rx = {'campus': 'school|college|universit', 'shopping': 'mall|shopping_center|market|bazaar',
           'work': 'industrial|business_park|office_park|technology_park|research_park', 'parks': 'park',
-          'transit': 'station|park_and_ride|park_ride|transit|subway|light_rail|bus_terminal|airport|ferry',
+          'transit': 'station|park_and_ride|park_ride|transit|subway|light_rail|bus_terminal|airport|ferry|bus_service|charter|coach|shuttle',
           'travel': 'tourist|attraction|landmark|historic|monument|lighthouse|scenic|visitor|resort|campground|camp_site|rv_park|museum',
           'safety': 'police|fire_station|fire_department|prison|jail|correctional|detention',
-          'pets': 'veterinar|animal|pet|dog|kennel|groom', 'civic': 'librar|city_hall|town_hall|community_center|recreation_center|hospital',
+          'pets': 'veterinar|animal|pet|dog|kennel|groom',
+          'food': 'cafe|coffee|bar|pub|brewery|tavern|lounge|fast_food|burger|pizza|taco|restaurant|diner|eatery|grill|cafeteria|food_court|night_club|ice_cream',
+          'retail': 'supermarket|grocery|pharmacy|drugstore|laundr|dry_clean|toy|department_store|discount|clothing|shoe|book|hardware|electronics|furniture|gift|jewel|sporting_goods|retail|boutique|convenience|outlet|shop|store',
+          'auto': 'gas_station|fuel|truck_stop|travel_center|car_wash|auto_detail|towing|car_rental|car_dealer|auto_dealer|used_car|auto_repair|car_repair|tire|mechanic|body_shop',
+          'culture': 'aquarium|botanical|planetarium|observatory|theat|performing_arts|opera|cinema|movie|arts|gallery|exhibition|convention|music_venue|concert|amphitheat|event|fairground|festival|zoo|church|cathedral|mosque|synagogue|temple|worship',
+          'leisure': 'gym|fitness|yoga|swimming|aquatic|fishing|lookout|viewpoint|observation|rest_area|rest_stop|recreation|plaza|square',
+          'lodging': 'motel|hostel|bed_and_breakfast|guest_house|inn', 'civic': 'librar|city_hall|town_hall|community_center|recreation_center|hospital',
           'sports': 'stadium|arena|sports|athletic', 'hotels': 'hotel|resort',
           'government': 'government|social_security|motor_vehicle|dmv|courthouse|post_office|federal|public_service',
           'corporate': 'corporate|headquarters|office|technology|software|company',
@@ -321,17 +530,17 @@ def main_group(group, parts):
         w = (d[3].get('website') or '').strip()
         if w and not re.search(r'facebook\.com|instagram\.com|yelp\.com|google\.|wikipedia\.org|tripadvisor', w, re.I):
             sites.setdefault(host_path(w), {'url': w if '://' in w else 'https://' + w, 'dest': []})['dest'].append(d)
-    keys = sorted(sites, key=lambda k: -len(sites[k]['dest']))[:MAX_SITES]
+    keys = sorted(sites, key=lambda k: (len(sites[k]['dest']) > 20, -min(len(sites[k]['dest']), 20)))[:MAX_SITES]
     print(f'{group}: {len(dest)} places, {len(sites)} websites, reading {len(keys)}', flush=True)
-    with ThreadPoolExecutor(max_workers=64) as pool:
+    with ThreadPoolExecutor(max_workers=96) as pool:
         got = dict(zip(keys, pool.map(lambda k: wf.read_site(sites[k]['url']), keys)))
     grid = wf.packs_parking()
     added, said, done = [], {k: 0 for k in wf.SAYS}, set()
     vlabel = {'bike': 'bike parking', 'moto': 'motorcycle parking', 'scooter': 'scooter parking', 'rent': 'bike rental',
-              'pump': 'air pump', 'repair': 'bike repair station', 'charge': 'e-bike charging', 'wash': 'bike wash'}
+              'pump': 'air pump', 'repair': 'bike repair station', 'charge': 'e-bike charging', 'wash': 'bike wash', 'mwash': 'motorcycle wash'}
     amen = {'bike': 'bicycle_parking', 'moto': 'motorcycle_parking', 'scooter': 'small_electric_vehicle_parking',
             'rent': 'bicycle_rental', 'pump': 'compressed_air', 'repair': 'bicycle_repair_station',
-            'charge': 'charging_station', 'wash': 'bicycle_wash'}
+            'charge': 'charging_station', 'wash': 'bicycle_wash', 'mwash': 'bicycle_wash'}
     for k_site in keys:
         r = got.get(k_site) or {}
         ds = sites[k_site]['dest']
@@ -358,6 +567,8 @@ def main_group(group, parts):
                     t['bicycle_parking'] = 'stands'
                 if k == 'charge':
                     t.update({'bicycle': 'yes', 'scooter': 'yes'})
+                if k == 'mwash':
+                    t['motorcycle'] = 'yes'
                 added.append([f'wtr/{d[0]}/{k}', d[1], d[2], {x: y for x, y in t.items() if y}])
                 grid.setdefault((round(d[1] / 0.01), round(d[2] / 0.01)), []).append((k, d[1], d[2]))
     os.makedirs(os.path.join(ROOT, 'data', 'venues'), exist_ok=True)
@@ -395,13 +606,20 @@ def test():
     assert 'bike' in s2 and 'repair' in s2 and 'charge' in s2, s2
     assert kind_of_osm({'aeroway': 'aerodrome', 'iata': 'ORD'}) == 'airport' and kind_of_cat('airport') == 'airport'
     assert kind_of_osm({'railway': 'station', 'station': 'subway'}) == 'station'
-    assert kind_of_cat('airport_shuttle') is None
+    assert kind_of_cat('airport_shuttle') == 'coach'
     assert kind_of_osm({'amenity': 'ferry_terminal'}) == 'ferry' and kind_of_osm({'amenity': 'police'}) == 'police'
     assert kind_of_osm({'tourism': 'information', 'information': 'office'}) == 'visitor_center'
     assert kind_of_cat('ferry_service') == 'ferry' and kind_of_cat('tourist_attraction') == 'attraction'
     assert kind_of_cat('fire_department') == 'fire_station' and kind_of_cat('jail_and_prison') == 'prison'
     assert kind_of_osm({'amenity': 'veterinary'}) == 'vet' and kind_of_osm({'shop': 'pet'}) == 'pet'
     assert kind_of_cat('dog_walkers') == 'pet' and kind_of_cat('veterinarian') == 'vet' and kind_of_cat('dog_park') == 'dog_park'
+    assert kind_of_osm({'amenity': 'fuel', 'name': 'Shell'}) == 'fuel' and kind_of_osm({'shop': 'toys'}) == 'shop'
+    assert kind_of_osm({'place': 'island', 'name': 'Northerly Island'}) == 'island' and kind_of_osm({'highway': 'rest_area'}) == 'rest_area'
+    assert kind_of_osm({'shop': 'car_repair', 'name': 'Joe\'s Towing'}) == 'towing' and kind_of_osm({'tourism': 'motel'}) == 'motel'
+    assert kind_of_cat('coffee_shop') == 'cafe' and kind_of_cat('laundromat') == 'laundromat' and kind_of_cat('truck_stop') == 'truck_stop'
+    assert kind_of_cat('planetarium') == 'planetarium' and kind_of_cat('motel') == 'motel' and kind_of_cat('toy_store') == 'shop'
+    s3 = wf.what_page_says('We now wash motorcycles too: our motorcycle wash bay is open daily. Free air for your tires at every pump island.')
+    assert 'mwash' in s3 and 'pump' in s3, s3
     assert kind_of_cat('college_university') == 'university' and kind_of_cat('elementary_school') == 'school'
     s = wf.what_page_says('Campus bike repair stations are located outside the library and the student union. '
                           'E-bike charging is available in Garage B.')

@@ -40,7 +40,7 @@ jobs:
             nwr/amenity=bicycle_parking,bicycle_repair_station,compressed_air,bicycle_wash,bicycle_rental,charging_station \
             nwr/amenity=motorcycle_parking,small_electric_vehicle_parking,kick-scooter_parking,mobility_hub \
             nwr/shop=bicycle,motorcycle,scooter,motorcycle_repair \
-            nwr/sport=bmx -o filtered.osm.pbf
+            nwr/sport=bmx nwr/amenity=fuel,car_wash -o filtered.osm.pbf
           # private / customers-only areas: a rack inside one is on private property
           osmium tags-filter region.osm.pbf a/access=private,customers,permit,residents -o priv.pbf
           rm region.osm.pbf

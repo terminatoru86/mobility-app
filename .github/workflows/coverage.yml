@@ -57,7 +57,13 @@ jobs:
             nwr/public_transport=station nwr/railway=station nwr/park_ride nwr/tourism=hotel \
             nwr/amenity=ferry_terminal,police,fire_station,prison nwr/tourism=attraction,information,resort,camp_site,caravan_site,museum \
             nwr/leisure=resort,dog_park nwr/amenity=veterinary,animal_boarding,animal_shelter,animal_training \
-            nwr/shop=pet,pet_grooming -o ven.osm.pbf
+            nwr/shop=pet,pet_grooming \
+            nwr/amenity=cafe,ice_cream,bar,pub,biergarten,fast_food,restaurant,canteen,food_court,nightclub,pharmacy,fuel,car_wash \
+            nwr/amenity=car_rental,vehicle_inspection,planetarium,theatre,cinema,arts_centre,exhibition_centre,music_venue \
+            nwr/amenity=events_venue,conference_centre,place_of_worship nwr/shop nwr/landuse=fairground \
+            nwr/tourism=aquarium,zoo,viewpoint,motel,hostel,guest_house,picnic_site \
+            nwr/leisure=garden,fitness_centre,swimming_pool,fishing nwr/place=island,islet,square \
+            nwr/highway=rest_area,services w/highway=pedestrian -o ven.osm.pbf
           rm region.osm.pbf
           python3 tool/venues.py --pbf ven.osm.pbf ven.json && rm ven.osm.pbf
       - name: Name the result
@@ -73,7 +79,7 @@ jobs:
 
   paid:
     needs: osm
-    if: ${{ !cancelled() }}
+    if: ${{ !cancelled() && (github.event.inputs.groups == '' || github.event.inputs.groups == 'all' || github.event.inputs.groups == null) }}
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
@@ -100,7 +106,7 @@ jobs:
 
   waterfront:
     needs: osm
-    if: ${{ !cancelled() }}
+    if: ${{ !cancelled() && (github.event.inputs.groups == '' || github.event.inputs.groups == 'all' || github.event.inputs.groups == null) }}
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
@@ -136,7 +142,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        group: [offices, corporate, transit, campus, shopping, work, parks, civic, sports, hotels, government, travel, safety, pets]
+        group: [offices, corporate, transit, campus, shopping, work, parks, civic, sports, hotels, government, travel, safety, pets, food, retail, auto, culture, leisure, lodging]
     steps:
       - name: Wanted this time?
         id: want

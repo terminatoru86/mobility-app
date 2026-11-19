@@ -28,6 +28,10 @@ KEEP = {
 
 def wanted(tags):
     a = tags.get('amenity')
+    if a == 'fuel' and tags.get('compressed_air') == 'yes':
+        return True  # free / paid air at a gas station -> an air pump on the map
+    if a == 'car_wash' and (tags.get('motorcycle') in ('yes', 'designated') or 'motorcycle' in (tags.get('name') or '').lower()):
+        return True  # a car wash that also washes motorcycles
     if a in KEEP_AMENITY or tags.get('shop') in ('bicycle', 'motorcycle', 'scooter', 'motorcycle_repair'):
         return True
     if tags.get('sport') == 'bmx':
@@ -36,7 +40,15 @@ def wanted(tags):
 
 
 def slim(tags):
-    return {k: v for k, v in tags.items() if k in KEEP or k.startswith(('service:', 'socket:', 'motorcycle:'))}
+    out = {k: v for k, v in tags.items() if k in KEEP or k.startswith(('service:', 'socket:', 'motorcycle:'))}
+    if tags.get('amenity') == 'fuel':
+        out.update({'amenity': 'compressed_air', 'mobility:at': 'gas station',
+                    'name': f"Air at {tags.get('brand') or tags.get('name') or 'the gas station'}"})
+        if tags.get('compressed_air:fee'):
+            out['fee'] = tags['compressed_air:fee']
+    if tags.get('amenity') == 'car_wash':
+        out.update({'amenity': 'bicycle_wash', 'motorcycle': 'yes', 'mobility:at': 'car wash'})
+    return out
 
 
 class H(osmium.SimpleHandler):
