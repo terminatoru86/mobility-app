@@ -13,9 +13,10 @@ permissions:
 jobs:
   osm:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
     strategy:
       fail-fast: false
+      max-parallel: 2
       matrix:
         region: [us-midwest, us-northeast, us-pacific, us-south, us-west, us/puerto-rico]
     steps:
@@ -31,14 +32,24 @@ jobs:
       - name: Routes of this region
         run: |
           osmium tags-filter region.osm.pbf r/route=bicycle,mtb,motorcycle -o routes.osm.pbf
-          rm region.osm.pbf
           python3 tool/osm_routes.py routes.osm.pbf routes.json
+      - name: Named paths for riders (bike / scooter / MTB / motorcycle, no walking-only) and the sights along the way
+        run: |
+          osmium tags-filter region.osm.pbf w/highway=cycleway,path,footway,bridleway,pedestrian,track \
+            nwr/tourism=viewpoint,museum,zoo,aquarium,theme_park,attraction,artwork nwr/historic \
+            nwr/natural=valley,gorge,canyon,waterfall,peak,volcano,arch,cliff,rock,stone,cave_entrance,water,beach,bay \
+            nwr/waterway=waterfall nwr/man_made=lighthouse,tower,bridge -o paths.osm.pbf
+          rm region.osm.pbf
+          python3 tool/bike_paths.py paths.osm.pbf paths.json sights.json
       - name: Name the result
         run: echo "NAME=$(echo '${{ matrix.region }}' | tr '/' '-')" >> $GITHUB_ENV
       - uses: actions/upload-artifact@v4
         with:
           name: trails-osm-${{ env.NAME }}
-          path: routes.json
+          path: |
+            routes.json
+            paths.json
+            sights.json
           retention-days: 2
 
   official:
@@ -76,6 +87,16 @@ jobs:
         run: |
           python3 tool/trails_merge.py data/trails $(ls parts/*/routes.json parts/*/official.json 2>/dev/null)
           cp parts/trails-official/official_layers.txt data/trails/official_layers.txt 2>/dev/null || true
+          python3 - <<'PY'
+          import glob, gzip, json
+          paths = [r for f in glob.glob('parts/*/paths.json') for r in json.load(open(f))]
+          sights = [x for f in glob.glob('parts/*/sights.json') for x in json.load(open(f))]
+          if paths:
+              json.dump(paths, open('data/trails/paths.json', 'w'), separators=(',', ':'))
+          if sights:
+              open('data/trails/sights.json.gz', 'wb').write(gzip.compress(json.dumps(sights, separators=(',', ':')).encode(), 9, mtime=0))
+          print(f'named paths for riders: {len(paths)} · sights: {len(sights)}')
+          PY
           python3 tool/trails_tiles.py
           ls -la data/trails
       - name: Save in the repository

@@ -2,9 +2,11 @@
 
   python3 tool/trails_tiles.py            -> data/trails/tiles/t_<lat>_<lon>.json.gz + index.json
 
-Each piece is a list of routes: [id, name, kind, km, operator, from, to, website, lines]
+Each piece is a list of routes: [id, name, kind, km, operator, from, to, website, lines, sights]
   kind  : bicycle / mtb / motorcycle
   lines : the route's pieces in riding order, each a flat [lat, lon, lat, lon, ...] list (simplified to ~30 m)
+  sights: what riders see along the way, [[km from the start, 'L' | 'R' | 'on', name, kind], ...] (canyons, waterfalls,
+          peaks, lakes, bridges, lighthouses, monuments, statues, museums, viewpoints), from tool/bike_paths.py
 The same route published twice (same name, length and start) is kept once; routes named only with a code
 (\"Nfst-2925720\", \"10\") are left out: a rider can't tell what they are.
 """
@@ -19,6 +21,9 @@ from datetime import datetime, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EPS = 0.0003  # ~30 m
 K = 0.75  # longitude squeeze at US latitudes
+# not for riders: canoe / kayak / water trails, horses, snowmobiles, skis, walking-only names
+NOT_RIDE = re.compile(r'\b(canoe|kayak|paddl\w*|water\s*trail|portage|equestrian|bridle|horse\s*(trail|path|camp|loop|mapseg)|horse/|/horse|snowmobile|ski\s*trail|nordic|'
+                      r'snowshoe|nature\s*walk|walking\s*(trail|path|tour)|hiking\s*only|foot\s*path|interpretive\s*walk)\b', re.I)
 CODE = re.compile(r'^(nfst|nfsr|fsr|fs|nf|tr|trail|route|rte)?[\s#._-]*[\d\W]*[a-z]?$', re.I)
 
 
@@ -81,13 +86,73 @@ def order(segs):
     return chain
 
 
+SG = 0.05  # sight grid cell (deg)
+
+
+def load_sights():
+    """Sights from tool/bike_paths.py ([lat, lon, name, kind, seen_from_m]) in a grid."""
+    f = os.path.join(ROOT, 'data', 'trails', 'sights.json.gz')
+    if not os.path.exists(f):
+        return None
+    grid = {}
+    for sgt in json.load(gzip.open(f)):
+        grid.setdefault((math.floor(sgt[0] / SG), math.floor(sgt[1] / SG)), []).append(sgt)
+    print(f'sights: {sum(len(v) for v in grid.values())}')
+    return grid
+
+
+def sights_along(segs, grid, most=12):
+    """What riders see along the route, in riding order (line order): [[km, side, name, kind], ...],
+    side L (left) / R (right) / on (the route passes it), from the nearest piece of the route."""
+    pts = [p for s in segs for p in s]
+    if len(pts) < 2:
+        return []
+    k = math.cos(math.radians(pts[0][0]))
+    xy = [(p[1] * k * 111320, p[0] * 110540) for p in pts]
+    cum = [0.0]
+    for i in range(1, len(xy)):
+        cum.append(cum[-1] + math.hypot(xy[i][0] - xy[i - 1][0], xy[i][1] - xy[i - 1][1]))
+    la = [p[0] for p in pts]
+    lo = [p[1] for p in pts]
+    cand, seen = [], set()
+    for i in range(math.floor((min(la) - 0.05) / SG), math.floor((max(la) + 0.05) / SG) + 1):
+        for j in range(math.floor((min(lo) - 0.06) / SG), math.floor((max(lo) + 0.06) / SG) + 1):
+            cand += grid.get((i, j), [])
+    out = []
+    for lat, lon, name, kind, far in cand:
+        if name in seen:
+            continue
+        px, py = lon * k * 111320, lat * 110540
+        best = None
+        for i in range(1, len(xy)):
+            ax, ay = xy[i - 1]
+            bx, by = xy[i]
+            dx, dy = bx - ax, by - ay
+            ll = dx * dx + dy * dy
+            t = 0.0 if ll == 0 else max(0.0, min(1.0, ((px - ax) * dx + (py - ay) * dy) / ll))
+            d = math.hypot(px - ax - t * dx, py - ay - t * dy)
+            if best is None or d < best[0]:
+                best = (d, i, t, dx * (py - ay) - dy * (px - ax))
+        if best is None or best[0] > far:
+            continue
+        d, i, t, cross = best
+        side = 'on' if d < 40 else ('L' if cross > 0 else 'R')
+        km = (cum[i - 1] + t * (cum[i] - cum[i - 1])) / 1000
+        seen.add(name)
+        out.append((far >= 1500, -d, round(km, 1), side, name, kind))
+    out.sort(key=lambda x: (not x[0], -x[1]))  # far-seen landmarks first, then the nearest
+    keep = sorted(out[:most], key=lambda x: x[2])
+    return [[x[2], x[3], x[4], x[5]] for x in keep]
+
+
 def main():
     src = os.path.join(ROOT, 'data', 'trails', 'trails.json.gz')
     out_dir = os.path.join(ROOT, 'data', 'trails', 'tiles')
     routes = json.load(gzip.open(src))
     # + the named bike paths along the water (tool/waterfront.py), unless the same route is already there
-    extra_f = os.path.join(ROOT, 'data', 'waterfront_paths.json')
-    if os.path.exists(extra_f):
+    for extra_f in (os.path.join(ROOT, 'data', 'waterfront_paths.json'), os.path.join(ROOT, 'data', 'trails', 'paths.json')):
+        if not os.path.exists(extra_f):
+            continue
         have = {}
         for r in routes:
             if r.get('lines') and r.get('name'):
@@ -100,12 +165,16 @@ def main():
                 continue
             routes.append(r)
             n_extra += 1
-        print(f'waterfront paths added: {n_extra}')
+        print(f'{os.path.basename(extra_f)}: {n_extra} routes added')
+    sight_grid = load_sights()
     seen, tiles, left = set(), {}, {'code name': 0, 'twice': 0, 'no line': 0}
     for r in routes:
         name = (r.get('name') or '').strip()
         if not name or CODE.match(name):
             left['code name'] += 1
+            continue
+        if NOT_RIDE.search(name):
+            left['not for riders'] = left.get('not for riders', 0) + 1
             continue
         lines = [l for l in r.get('lines') or [] if len(l) >= 4]
         if not lines:
@@ -121,9 +190,12 @@ def main():
         t = r.get('tags') or {}
         first = segs[0][0]
         tile = f'{math.floor(first[0])}_{math.floor(first[1])}'
+        along = sights_along(segs, sight_grid) if sight_grid else []
+        if along:
+            left['with sights'] = left.get('with sights', 0) + 1
         tiles.setdefault(tile, []).append([
             r['id'], name, r.get('kind') or 'bicycle', r.get('km'), r.get('operator') or None,
-            t.get('from') or None, t.get('to') or None, t.get('website') or t.get('contact:website') or None, flat])
+            t.get('from') or None, t.get('to') or None, t.get('website') or t.get('contact:website') or None, flat, along])
     os.makedirs(out_dir, exist_ok=True)
     for f in os.listdir(out_dir):
         if f.startswith('t_'):

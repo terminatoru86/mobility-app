@@ -16,16 +16,24 @@ class Trail {
   final double km;
   final String? operator, from, to, website;
   final List<List<LatLng>> lines; // in riding order
+  /// What riders see along the way, in line order: (km from the start, 'L' / 'R' / 'on', name, kind).
+  final List<(double, String, String, String)> sights;
 
-  Trail(this.id, this.name, this.kind, this.km, this.operator, this.from, this.to, this.website, this.lines);
+  Trail(this.id, this.name, this.kind, this.km, this.operator, this.from, this.to, this.website, this.lines,
+      [this.sights = const []]);
 
   factory Trail.fromRow(List r) {
     final lines = <List<LatLng>>[
       for (final s in (r[8] as List))
         [for (int i = 0; i + 1 < (s as List).length; i += 2) LatLng((s[i] as num).toDouble(), (s[i + 1] as num).toDouble())],
     ].where((l) => l.length > 1).toList();
+    final sights = <(double, String, String, String)>[
+      if (r.length > 9 && r[9] is List)
+        for (final x in (r[9] as List))
+          if (x is List && x.length >= 4) ((x[0] as num).toDouble(), '${x[1]}', '${x[2]}', '${x[3]}'),
+    ];
     return Trail('${r[0]}', '${r[1]}', '${r[2]}', (r[3] as num?)?.toDouble() ?? 0, r[4] as String?, r[5] as String?,
-        r[6] as String?, r[7] as String?, lines);
+        r[6] as String?, r[7] as String?, lines, sights);
   }
 
   LatLng get start => lines.first.first;
