@@ -704,6 +704,48 @@ def fetch_mbta():
     return out
 
 
+def fetch_bikelink():
+    """BikeLink (eLock): electronic bike lockers, group parking rooms (bike stations) and hangars at transit stations
+    and cities (BART, King County Metro, TriMet, Caltrain...). Their public map page carries every location as JSON."""
+    import html as _html
+    page = http('https://bikelink.org/maps/list', timeout=90).decode('utf-8', 'replace')
+    m = re.search(r'data-maps--list-locations-value="([^"]*)"', page)
+    if not m:
+        raise RuntimeError('BikeLink: no locations on the page')
+    kinds = {'eLocker': 'lockers', 'Group Parking': 'building', 'Bike Hangar': 'shed', 'eRack': 'stands'}
+    out = []
+    for loc in json.loads(_html.unescape(m.group(1))):
+        kind = loc.get('location_friendly_type') or ''
+        lat, lon = loc.get('latitude'), loc.get('longitude')
+        if kind not in kinds or lat is None or lon is None or loc.get('coming_soon'):
+            continue
+        tags = {'amenity': 'bicycle_parking', 'bicycle_parking': kinds[kind], 'operator': 'BikeLink', 'network': 'BikeLink',
+                'name': loc.get('human_name') or 'BikeLink', 'fee': 'yes', 'covered': 'yes',
+                'access': 'yes', 'source': 'BikeLink · bikelink.org', 'website': 'https://bikelink.org/maps'}
+        if kind == 'eRack':
+            tags['covered'] = 'no'
+        if loc.get('num_spaces'):
+            tags['capacity'] = str(loc['num_spaces'])
+        if loc.get('rental_cost_base') and loc['rental_cost_base'] != 'unknown':
+            tags['charge'] = loc['rental_cost_base']
+        if loc.get('max_rental_duration') and loc['max_rental_duration'] != 'unknown':
+            tags['maxstay'] = loc['max_rental_duration']
+        if loc.get('street_address'):
+            tags['addr:street'] = loc['street_address']
+        if loc.get('city'):
+            tags['addr:city'] = loc['city']
+        if loc.get('postal_code'):
+            tags['addr:postcode'] = str(loc['postal_code'])
+        pay = [a.get('name') for a in loc.get('access_device_types') or [] if a.get('name')]
+        if pay:
+            tags['payment'] = ', '.join(pay)
+        if loc.get('map_notes'):
+            tags['description'] = str(loc['map_notes'])[:300]
+        out.append([f"blk/{loc.get('url_id') or loc.get('id')}", round(float(lat), 6), round(float(lon), 6), tags])
+    print(f'BikeLink: {len(out)} locations', flush=True)
+    return out
+
+
 def fetch_foursquare():
     """Foursquare Open Source Places (Apache 2.0, monthly): bike / moped / motorcycle / scooter shops,
     repair and rentals in the US, open places only. Read from Hugging Face with our token (HF_TOKEN)."""
@@ -1176,7 +1218,7 @@ def main():
                 except Exception:
                     pass
     counts_src = {}
-    for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture), ('foursquare', fetch_foursquare),
+    for name, fn in (('mbta', fetch_mbta), ('bikelink', fetch_bikelink), ('overture', fetch_overture), ('foursquare', fetch_foursquare),
                      ('alltheplaces', fetch_alltheplaces), ('own', fetch_own), ('paid', fetch_paid), ('waterfront', fetch_waterfront), ('afdc', fetch_afdc),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
         if refresh and name not in refresh:
@@ -1185,7 +1227,7 @@ def main():
             got = fn()
             # read again and answered: the old rows of this source go, so a place the source
             # (or our filter) no longer has does not stay on the map
-            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'afdc': 'afdc/'}.get(name)
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'afdc': 'afdc/', 'bikelink': 'blk/'}.get(name)
             if old and got:
                 for d in tiles.values():
                     for k in [k for k in d if str(k).startswith(old)]:
