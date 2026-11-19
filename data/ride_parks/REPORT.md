@@ -1,29 +1,167 @@
-# Places to ride (BMX page): 1449
+# Places to ride (BMX page): 12135
 
-By kind: {'Bike park': 546, 'BMX track': 590, 'Pump track': 201, 'Velodrome': 30, 'Dirt jumps': 29, 'Skills park': 53}
+By kind: {'Bike park': 528, 'Skatepark': 10700, 'BMX track': 600, 'Pump track': 198, 'Velodrome': 30, 'Dirt jumps': 27, 'Skills park': 52}
 
-By source: {'OpenStreetMap': 1001, 'Overture Maps': 654, 'Foursquare OS Places': 472}
+By source: {'OpenStreetMap': 2243, 'Overture Maps': 9796, 'Foursquare OS Places': 2649}
 
-With a phone: 556 · with a website: 584
+With a phone: 6569 · with a website: 6904
 
 ## The Garden (check)
-- ["way/206336703", 41.942306, -87.693891, {"name": "The Garden - Chicago Dirt Jumps", "ride": "Dirt jumps", "street": "3400 North Rockwell Street", "lit": "no", "surface": "dirt", "source": "OpenStreetMap · Overture Maps · Foursquare OS Places", "phone": "+17732483966", "website": "https://cambr.org"}]
+- ["way/206336703", 41.942306, -87.693891, {"name": "The Garden - Chicago Dirt Jumps", "ride": "Dirt jumps", "street": "3400 North Rockwell Street", "lit": "no", "surface": "dirt", "bikes": "yes", "source": "OpenStreetMap · Overture Maps · Foursquare OS Places", "in_park": "Richard Clark Park", "phone": "+17732483966", "website": "https://cambr.org"}]
 
 ## Around Chicago
+- William G. Stratton State Park · Skatepark · Overture Maps
+- Gebhard Woods State Park · Skatepark · Overture Maps
+- Heidecke Lake State Fish and Wildlife Area · Skatepark · Overture Maps
+- West Side skate Park · Skatepark · OpenStreetMap
+- Des Plaines State Fish and Wildlife Area · Skatepark · Overture Maps
+- Crown Point Skate Park · Skatepark · Overture Maps
+- Channahon State Park · Skatepark · Overture Maps
+- Indiana Dunes State Park · Skatepark · Overture Maps
+- Country View Skatepark · Skatepark · Overture Maps
+- Flounder & Friends Skatepark · Skatepark · OpenStreetMap
+- Dyer Skatepark · Skatepark · Overture Maps
+- Schererville Skate Park · Skatepark · OpenStreetMap
+- Indiana Dunes State Park · Skatepark · Overture Maps
+- Hobart Skate Park · Skatepark · OpenStreetMap
+- Inwood Skate Park · Skatepark · Overture Maps
+- Frankfort Skate Park · Skatepark · Overture Maps · Foursquare OS Places
 - Steelwheels Indoor BMX · BMX track · OpenStreetMap · Overture Maps · Foursquare OS Places
+- Munster Skate Park · Skatepark · Overture Maps · Foursquare OS Places
+- Krush Skatepark · Skatepark · Foursquare OS Places
+- Homewood Skate Park · Skatepark · Foursquare OS Places
 - Plainfield Bike Park · Bike park · Overture Maps · Foursquare OS Places
-- Imagination Glen BMX · BMX track · OpenStreetMap · Foursquare OS Places
+- Indiana Dunes State Park · Skatepark · Overture Maps
+- Thornton Skate Park · Skatepark · Overture Maps
+- Lansing Skate Park · Skatepark · Overture Maps · Foursquare OS Places
+- Skate Park · Skatepark · OpenStreetMap
+- Hessvile Skatepark · Skatepark · Overture Maps · Foursquare OS Places
+- Extreme Skate Park · Skatepark · Foursquare OS Places
+- Imagination Glen BMX · BMX track · OpenStreetMap · Overture Maps · Foursquare OS Places
+- Plainfield Skate Park · Skatepark · Overture Maps
+- Renwick Community Park Complex · Skatepark · Foursquare OS Places
+- Centennial park skate park · Skatepark · OpenStreetMap · Overture Maps · Foursquare OS Places
+- Indiana Dunes State Park · Skatepark · Overture Maps
+- Romeoville Skatepark · Skatepark · Overture Maps
+- Hammond Skate Park · Skatepark · Overture Maps
+- Pulaski Skatepark · Skatepark · Foursquare OS Places
+- Indiana State Park-Lake Michigan · Skatepark · Overture Maps
+- Indiana Dunes State Park Nature Center · Skatepark · Overture Maps
+- Indiana Dunes State Park Bird Observatory · Skatepark · Overture Maps
+- William W. Powers State Recreation Area · Skatepark · Overture Maps
+- Prairie Point Skatepark · Skatepark · Foursquare OS Places
+- Mary J Lynch Skate Park · Skatepark · OpenStreetMap · Overture Maps · Foursquare OS Places
 - (no name) · BMX track · OpenStreetMap
 - Tot Track · Bike park · OpenStreetMap
 - Big Marsh Bike Park · Bike park · OpenStreetMap
+- Frontier Skatepark · Skatepark · Overture Maps · Foursquare OS Places
+- Indiana Dunes State Park · Skatepark · Overture Maps
+- Indian Boundary Skate Park · Skatepark · OpenStreetMap
+- Michigan City Skate Park · Skatepark · Overture Maps · Foursquare OS Places
+- Wheatlands Skate Park · Skatepark · Overture Maps
+- Kasey Meadow - Hickory Hills Park District · Skatepark · Foursquare OS Places
+- Worthbrook Skate Park · Skatepark · Foursquare OS Places
+- Oak Lawn Skatepark · Skatepark · Overture Maps · Foursquare OS Places
+- Aurora Skate Center · Skatepark · Foursquare OS Places
+- Phillips Park Skate Park · Skatepark · OpenStreetMap · Overture Maps
+- Naperville Skatepark · Skatepark · Foursquare OS Places
+- Bellerive Park Skate Park · Skatepark · OpenStreetMap
+- Twin lakes skate park · Skatepark · Overture Maps
+- Summit Skate Park · Skatepark · Foursquare OS Places
+- Bellerive Park · Skatepark · Overture Maps · Foursquare OS Places
+- Veeck Park Skate Park · Skatepark · OpenStreetMap
+- Memorial Park (LGP) · Skatepark · Foursquare OS Places
+- Skate Park · Skatepark · OpenStreetMap
+- 31st Street Skate Park · Skatepark · OpenStreetMap · Overture Maps
+- Little Village Skate Plaza · Skatepark · OpenStreetMap · Overture Maps · Foursquare OS Places
+- Guillermo Pua Jr. Skate Park · Skatepark · OpenStreetMap
+- Batavia Skate Park · Skatepark · Overture Maps · Foursquare OS Places
+- Clark Island Recreation Area · Skatepark · Foursquare OS Places
 - (no name) · BMX track · OpenStreetMap
+- Phillips Park Skatepark · Skatepark · Overture Maps
+- Kriz Skate Park · Skatepark · Foursquare OS Places
+- Glen Ellyn Skatepark · Skatepark · Overture Maps
+- Clocktower Mini Golf and Skate Park · Skatepark · Overture Maps · Foursquare OS Places
+- Grant Skate Park · Skatepark · OpenStreetMap · Overture Maps · Foursquare OS Places
+- Geneva Skate Park · Skatepark · Foursquare OS Places
+- Forest Park Skatepark · Skatepark · Foursquare OS Places
+- Grant Park Skate Park · Skatepark · Overture Maps
+- York Commons Skate Park · Skatepark · OpenStreetMap · Overture Maps · Foursquare OS Places
 - Ben Allison Bike Park · Bike park · OpenStreetMap
+- Oak Park Skateboard Park · Skatepark · Foursquare OS Places
+- Villa Park Skate Park · Skatepark · OpenStreetMap · Overture Maps · Foursquare OS Places
+- Saint Charles Skate Park · Skatepark · Overture Maps
+- St. Mary's Skate Park · Skatepark · Overture Maps
+- La Bodega · Skatepark · Foursquare OS Places
+- 606 Slappy Curbs · Skatepark · Foursquare OS Places
+- Skate Park and Hockey Rink · Skatepark · OpenStreetMap · Overture Maps · Foursquare OS Places
+- North Park Deming Tunnel · Skatepark · Foursquare OS Places
+- Logan Boulevard Skate Park · Skatepark · OpenStreetMap · Overture Maps · Foursquare OS Places
 - The Garden - Chicago Dirt Jumps · Dirt jumps · OpenStreetMap · Overture Maps · Foursquare OS Places
+- Burnham Skate Park · Skatepark · Overture Maps · Foursquare OS Places
+- Skate Park · Skatepark · Overture Maps
+- Schiller Skatepark · Skatepark · Foursquare OS Places
+- Sk8 Chicago · Skatepark · Foursquare OS Places
+- Little Ripper Skateboarding · Skatepark · Overture Maps
+- Indiana Dunes State Park · Skatepark · Overture Maps
+- Wilson Skate Park · Skatepark · OpenStreetMap · Overture Maps · Foursquare OS Places
+- Tri-County State Park Visitor's Center · Skatepark · Overture Maps
+- Bartlett Skate Park · Skatepark · Overture Maps
+- Roselle Skate Park · Skatepark · Overture Maps · Foursquare OS Places
+- James Pate Philip State Park · Skatepark · Overture Maps
+- Stowell-Peddy Park · Skatepark · Foursquare OS Places
 - Saw Wee Kee Mountain Bike Park · Bike park · Overture Maps
+- Warren Dunes: Michigan State Park · Skatepark · Overture Maps
+- Audubon Skate Park · Skatepark · OpenStreetMap · Overture Maps · Foursquare OS Places
+- Park Ridge skatepark · Skatepark · Overture Maps · Foursquare OS Places
 - The Hill BMX Elgin · BMX track · OpenStreetMap · Overture Maps · Foursquare OS Places
+- Nancy Wroblewski Skate Park · Skatepark · Foursquare OS Places
+- Schaumburg Skatepark · Skatepark · Overture Maps
+- Ridgeville Ramps · Skatepark · Overture Maps
+- Mountain View Adventure Park · Skatepark · Foursquare OS Places
+- Prairie Lakes Community Center · Skatepark · Foursquare OS Places
+- Skate Park · Skatepark · Foursquare OS Places
+- Niles Skatepark · Skatepark · Foursquare OS Places
+- Evanston Skate Park · Skatepark · Foursquare OS Places
+- Swenson Park Skate Park · Skatepark · OpenStreetMap
+- Wilmette Skatepark · Skatepark · Foursquare OS Places
+- GLENVIEW skateboard PARK · Skatepark · Overture Maps · Foursquare OS Places
+- Community Park West Skate Park · Skatepark · OpenStreetMap
+- Cambridge Lakes Skate Park · Skatepark · Foursquare OS Places
+- Skate Park · Skatepark · Foursquare OS Places
+- Euclid Skatepark · Skatepark · Overture Maps
+- Margreth Riemer Reservoir · Skatepark · Foursquare OS Places
+- Northbrook Skatepark · Skatepark · Overture Maps · Foursquare OS Places
+- Northbook Skate Park · Skatepark · OpenStreetMap
 - Northbrook Velodrome · Velodrome · Overture Maps · Foursquare OS Places
 - Andres Bike Park · Bike park · OpenStreetMap · Overture Maps
-- The Pitch Bikepark · Bike park · Foursquare OS Places
-- McHenry Zone Skate & Bike Park · Bike park · Foursquare OS Places
+- Jewett Park · Skatepark · Foursquare OS Places
+- Deerfield Skate Park · Skatepark · Overture Maps
+- Skate Park · Skatepark · OpenStreetMap · Foursquare OS Places
+- Sunset Woods Skatepark · Skatepark · Overture Maps · Foursquare OS Places
+- Skate Park · Skatepark · OpenStreetMap
+- Warp Skatepark · Skatepark · Overture Maps
+- Vernon Hills Skate Park · Skatepark · Overture Maps · Foursquare OS Places
+- Skate Park · Skatepark · OpenStreetMap
+- Pitch Skatepark · Skatepark · Foursquare OS Places
+- Moraine Hills State Park · Skatepark · Overture Maps
+- Asylum Skatepark · Skatepark · Overture Maps · Foursquare OS Places
+- Moraine Hills State Park · Skatepark · Overture Maps
+- McHenry Zone Skate Park · Skatepark · Overture Maps · Foursquare OS Places
+- Morrison Skate Park · Skatepark · OpenStreetMap
+- Asylum Skate Park · Skatepark · Overture Maps
+- Grayslake Skate Park · Skatepark · OpenStreetMap · Overture Maps
+- Warren Township Park · Skatepark · Foursquare OS Places
+- Waukegan Skate Park · Skatepark · OpenStreetMap · Overture Maps · Foursquare OS Places
 - Waukegan BMX Track · BMX track · OpenStreetMap · Overture Maps · Foursquare OS Places
+- Illinois Beach State Park · Skatepark · Overture Maps
+- Glacier Park · Skatepark · Foursquare OS Places
+- Engle Memorial Park · Skatepark · Foursquare OS Places
+- Chain O' Lakes State Park Boat Launch · Skatepark · Overture Maps
 - StateLine BMX · BMX track · Overture Maps · Foursquare OS Places
+- Illinois Beach State Park Camp Logan · Skatepark · Overture Maps
+- Chain O Lakes State Park · Skatepark · Overture Maps
+- Illinois Beach State Park-North Unit · Skatepark · Overture Maps
+- Chain O Lakes State Park Visitor Center · Skatepark · Overture Maps
+- Starlight Skatepark · Skatepark · Overture Maps · Foursquare OS Places
+- Antioch Skate Park · Skatepark · Overture Maps
