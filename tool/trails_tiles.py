@@ -102,45 +102,55 @@ def load_sights():
 
 
 def sights_along(segs, grid, most=12):
-    """What riders see along the route, in riding order (line order): [[km, side, name, kind], ...],
-    side L (left) / R (right) / on (the route passes it), from the nearest piece of the route."""
-    pts = [p for s in segs for p in s]
-    if len(pts) < 2:
+    """What riders see along the route, from its start: [[km, side, name, kind], ...], side L (left) / R (right) /
+    on (the route passes it). Each piece is turned to run away from the start (so left / right are true for a rider
+    going start -> end), and km counts only the ridden pieces, not the jumps between them."""
+    if not segs or len(segs[0]) < 2:
         return []
-    k = math.cos(math.radians(pts[0][0]))
-    xy = [(p[1] * k * 111320, p[0] * 110540) for p in pts]
-    cum = [0.0]
-    for i in range(1, len(xy)):
-        cum.append(cum[-1] + math.hypot(xy[i][0] - xy[i - 1][0], xy[i][1] - xy[i - 1][1]))
-    la = [p[0] for p in pts]
-    lo = [p[1] for p in pts]
-    cand, seen = [], set()
+    k = math.cos(math.radians(segs[0][0][0]))
+    def xy(p):
+        return (p[1] * k * 111320, p[0] * 110540)
+    s0 = xy(segs[0][0])
+    pieces, offset = [], 0.0
+    for gi, sg in enumerate(segs):
+        pts = [xy(p) for p in sg]
+        if gi and math.dist(pts[-1], s0) < math.dist(pts[0], s0):
+            pts = pts[::-1]
+        cum = [0.0]
+        for i in range(1, len(pts)):
+            cum.append(cum[-1] + math.dist(pts[i], pts[i - 1]))
+        pieces.append((pts, cum, offset))
+        offset += cum[-1]
+    allp = [p for sg in segs for p in sg]
+    la = [p[0] for p in allp]
+    lo = [p[1] for p in allp]
+    cand = []
     for i in range(math.floor((min(la) - 0.05) / SG), math.floor((max(la) + 0.05) / SG) + 1):
         for j in range(math.floor((min(lo) - 0.06) / SG), math.floor((max(lo) + 0.06) / SG) + 1):
             cand += grid.get((i, j), [])
-    out = []
+    out, seen = [], set()
     for lat, lon, name, kind, far in cand:
         if name in seen:
             continue
-        px, py = lon * k * 111320, lat * 110540
+        px, py = xy((lat, lon))
         best = None
-        for i in range(1, len(xy)):
-            ax, ay = xy[i - 1]
-            bx, by = xy[i]
-            dx, dy = bx - ax, by - ay
-            ll = dx * dx + dy * dy
-            t = 0.0 if ll == 0 else max(0.0, min(1.0, ((px - ax) * dx + (py - ay) * dy) / ll))
-            d = math.hypot(px - ax - t * dx, py - ay - t * dy)
-            if best is None or d < best[0]:
-                best = (d, i, t, dx * (py - ay) - dy * (px - ax))
+        for pts, cum, off in pieces:
+            for i in range(1, len(pts)):
+                ax, ay = pts[i - 1]
+                bx, by = pts[i]
+                dx, dy = bx - ax, by - ay
+                ll = dx * dx + dy * dy
+                t = 0.0 if ll == 0 else max(0.0, min(1.0, ((px - ax) * dx + (py - ay) * dy) / ll))
+                d = math.hypot(px - ax - t * dx, py - ay - t * dy)
+                if best is None or d < best[0]:
+                    best = (d, off + cum[i - 1] + t * (cum[i] - cum[i - 1]), dx * (py - ay) - dy * (px - ax))
         if best is None or best[0] > far:
             continue
-        d, i, t, cross = best
-        side = 'on' if d < 40 else ('L' if cross > 0 else 'R')
-        km = (cum[i - 1] + t * (cum[i] - cum[i - 1])) / 1000
+        d, m, cross = best
         seen.add(name)
-        out.append((far >= 1500, -d, round(km, 1), side, name, kind))
-    out.sort(key=lambda x: (not x[0], -x[1]))  # far-seen landmarks first, then the nearest
+        side = 'on' if d < 40 else ('L' if cross > 0 else 'R')
+        out.append((far >= 1500, -d, round(m / 1000, 1), side, name, kind))
+    out.sort(key=lambda x: (not x[0], -x[1]))  # landmarks seen from far first, then the nearest
     keep = sorted(out[:most], key=lambda x: x[2])
     return [[x[2], x[3], x[4], x[5]] for x in keep]
 
