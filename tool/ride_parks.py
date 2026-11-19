@@ -83,12 +83,35 @@ def is_business_noise(name, tags=None):
 
 
 # ── 1. OpenStreetMap ──
+def overpass_box(s, w, n, e, q_for, depth=0):
+    """One box; when Overpass times out or refuses it, the box is cut in 4 and asked again (twice at most)."""
+    bb = f'{s},{w},{n},{e}'
+    for attempt in range(3):
+        url = OVERPASS[attempt % len(OVERPASS)]
+        try:
+            got = json.loads(http(url, {'data': q_for(bb)}, timeout=280))
+            remark = got.get('remark') or ''
+            if 'error' in remark.lower():
+                raise RuntimeError(remark[:120])
+            return got
+        except Exception as err:
+            print(f'  Overpass {bb} on {url}: {err}', flush=True)
+            time.sleep(15 + 15 * attempt)
+    if depth >= 2:
+        return None
+    ms, mw = (s + n) / 2, (w + e) / 2
+    parts = [overpass_box(*b, q_for, depth + 1) for b in ((s, w, ms, mw), (s, mw, ms, e), (ms, w, n, mw), (ms, mw, n, e))]
+    if any(p is None for p in parts):
+        print(f'  box {bb}: some pieces failed', flush=True)
+    return {'elements': [x for p in parts if p for x in p.get('elements', [])]}
+
+
 def fetch_osm():
     out = []
     rx = 'dirt ?jump|pump ?track|bike ?park|bmx|skills? (park|course|area)|jump (park|line)|velodrome|freeride'
     for s, w, n, e in BOXES:
         bb = f'{s},{w},{n},{e}'
-        q = ('[out:json][timeout:240];('
+        q_for = lambda bb: ('[out:json][timeout:240];('
              f'nwr["leisure"="bikepark"]({bb});'
              f'nwr["cycling"="pump_track"]({bb});'
              f'nwr["sport"~"(^|;)bmx(;|$)"]({bb});'
@@ -96,15 +119,7 @@ def fetch_osm():
              f'nwr["name"~"{rx}",i]["leisure"]({bb});'
              f'nwr["name"~"{rx}",i]["sport"]({bb});'
              ');out center tags;')
-        got = None
-        for attempt in range(6):
-            url = OVERPASS[attempt % len(OVERPASS)]
-            try:
-                got = json.loads(http(url, {'data': q}, timeout=300))
-                break
-            except Exception as err:
-                print(f'  Overpass {bb} on {url}: {err}', flush=True)
-                time.sleep(20 + 20 * attempt)
+        got = overpass_box(s, w, n, e, q_for)
         if got is None:
             print(f'OSM box {bb}: FAILED', flush=True)
             continue
@@ -172,6 +187,8 @@ def fetch_overture():
     out, cats = [], {}
     for oid, name, c, lat, lon, web, phone, street in rows:
         c = c or ''
+        if re.search(r'store|shop|parking|gym|rental|repair|dealer|fitness', c):
+            continue  # a bike shop or bike parking called "... Bike Park" is not a place to ride
         if not (CATEGORY.search(c) or RIDE.search(name or '')) or is_business_noise(name):
             continue
         k = kind_of(name, None, c)
@@ -207,7 +224,9 @@ def fetch_foursquare():
     """
     out = []
     for fid, name, lat, lon, addr, tel, web, refreshed, cats in con.execute(q).fetchall():
-        if (refreshed or '')[:10] < '2022-01-01' or is_business_noise(name):
+        last = (cats or '').lower().split('|')
+        if (refreshed or '')[:10] < '2022-01-01' or is_business_noise(name) or (
+                last and all(re.search(r'store|shop|parking|gym|rental|repair|fitness|studio', x) for x in last)):
             continue
         if not (CATEGORY.search(cats or '') or RIDE.search(name or '')):
             continue
@@ -224,12 +243,22 @@ def words(n):
     return set(re.findall(r'[a-z0-9]{3,}', (n or '').lower())) - {'the', 'park', 'bike', 'track', 'and', 'trail'}
 
 
+def norm(n):
+    return re.sub(r'[^a-z0-9]', '', (n or '').lower())
+
+
 def same(a, b):
+    """One place: same name within 2 km ("The Garden - Chicago Dirt Jumps" / "The Garden Chicago Dirt Jumps"),
+    a shared name word within 600 m, or one of them has no name and they are within 250 m."""
     d = math.hypot((a[1] - b[1]) * 111000, (a[2] - b[2]) * 111000 * math.cos(math.radians(a[1])))
-    if d > 250:
-        return False
     na, nb = a[3].get('name'), b[3].get('name')
-    return not na or not nb or bool(words(na) & words(nb)) or na.lower() == nb.lower()
+    if na and nb and d < 2000 and (norm(na) == norm(nb) or norm(na).startswith(norm(nb)) or norm(nb).startswith(norm(na))):
+        return True
+    if d > 600:
+        return False
+    if not na or not nb:
+        return d <= 250
+    return bool(words(na) & words(nb))
 
 
 def merge(lists):
@@ -240,8 +269,8 @@ def merge(lists):
         for p in lst:
             cell = (math.floor(p[1] / G), math.floor(p[2] / G))
             hit = None
-            for i in range(cell[0] - 1, cell[0] + 2):
-                for j in range(cell[1] - 1, cell[1] + 2):
+            for i in range(cell[0] - 2, cell[0] + 3):
+                for j in range(cell[1] - 3, cell[1] + 4):
                     for q in grid.get((i, j), []):
                         if same(q, p):
                             hit = q
@@ -269,6 +298,11 @@ def test():
     for n in bad:
         assert not (RIDE.search(n) and not is_business_noise(n) and kind_of(n)), n
     assert kind_of('The Garden - Chicago Dirt Jumps') == 'Dirt jumps'
+    a = ['ovt/1', 41.942011, -87.693565, {'name': 'The Garden Chicago Dirt Jumps', 'ride': 'Dirt jumps', 'source': 'A'}]
+    b = ['ovt/2', 41.943428, -87.687912, {'name': 'The Garden - Chicago Dirt Jumps', 'ride': 'Dirt jumps', 'website': 'x', 'source': 'B'}]
+    c = ['ovt/3', 42.03, -88.28, {'name': 'The Hill BMX Elgin', 'ride': 'BMX track', 'source': 'A'}]
+    dd = ['fsq/4', 42.031, -88.281, {'name': 'The Hill Bmx', 'ride': 'BMX track', 'source': 'B'}]
+    assert len(merge([[a, c], [b, dd]])) == 2
     print('name rules ok')
 
 
