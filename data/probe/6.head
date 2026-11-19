@@ -1,0 +1,22 @@
+HTTP/2 404 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 19710
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline; filename="404"
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com https://eu.i.posthog.com https://*.posthog.com https://k.bikeep.com; style-src 'self' 'unsafe-inline' https://k.bikeep.com https://eu.i.posthog.com https://*.posthog.com; style-src-elem 'self' 'unsafe-inline' https://k.bikeep.com https://eu.i.posthog.com https://*.posthog.com; img-src 'self' data: blob: https://*.strapiapp.com https://bikeep-strapi-production.up.railway.app https://bikeep-strapi.s3.eu-west-1.amazonaws.com https://img.youtube.com https://lh3.googleusercontent.com https://i.pravatar.cc https://tile.openstreetmap.org; connect-src 'self' blob: https://va.vercel-scripts.com https://eu.i.posthog.com https://*.posthog.com https://k.bikeep.com https://eu.posthog.com https://*.strapiapp.com https://bikeep-strapi-production.up.railway.app https://staging.bikeep.com https://services.bikeep.com https://api.mapbox.com https://events.mapbox.com; font-src 'self'; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://heyzine.com; worker-src 'self' blob:; base-uri 'self'; form-action 'self'; object-src 'none'
+content-type: text/html; charset=utf-8
+date: Thu, 19 Nov 2026 21:08:50 GMT
+etag: "6e735686e854dd6b373beaf81e25c677"
+last-modified: Thu, 19 Nov 2026 15:40:20 GMT
+permissions-policy: camera=(), microphone=(), geolocation=(), usb=()
+referrer-policy: strict-origin-when-cross-origin
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-matched-path: /404
+x-vercel-cache: HIT
+x-vercel-id: cle1::srj96-1795122530031-3b4b2716c487
+content-length: 99842
+
