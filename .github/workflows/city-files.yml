@@ -1,0 +1,29 @@
+name: City files
+
+# Crawl the city websites for bike-parking / bikeway files (PDF, Excel, CSV, GIS, SQL) and extract the rows.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4 lxml pdfplumber openpyxl
+      - name: Crawl
+        run: python3 tool/city_files.py
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull -q --rebase || true
+          git add data/city_files
+          git commit -m "City files: published bike data found on city websites" || exit 0
+          git push

@@ -1,0 +1,158 @@
+"""Crawl the city websites (data/foia/contacts.json) for published bike-parking / bikeway data in any format.
+Finds PDF, Excel, CSV, GeoJSON, KML, zip/shapefile and SQL files and open-data portals (ArcGIS Hub, Socrata, CKAN),
+downloads the small ones to data/city_files/<city>/ and writes data/city_files/REPORT.md and index.json.
+Run in GitHub Actions (the shell has no general internet)."""
+import json, os, re, sys, time, hashlib, urllib.parse, concurrent.futures as cf
+import requests
+from bs4 import BeautifulSoup
+
+OUT = 'data/city_files'
+UA = {'User-Agent': 'MOBIlity-data-bot/1.0 (public bike-parking data; contact albis_iulian@yahoo.com)'}
+KEY = re.compile(r'bike|bicycl|cycl|rack|corral|locker|scooter|moped|motorcycle|trail|greenway|bikeway|gis|open.?data|'
+                 r'transportation|mobility|parking|public.?works|map', re.I)
+STRONG = re.compile(r'bike|bicycl|cycl|rack|corral|locker|scooter|moped|bikeway|greenway|trail', re.I)
+FILE = re.compile(r'\.(pdf|xlsx?|csv|geojson|json|kml|kmz|zip|shp|gpx|sql|gdb)(\?|$)', re.I)
+PORTAL = re.compile(r'arcgis\.com|hub\.arcgis|opendata|open-data|data\.[a-z\-]+\.(gov|org|us)|socrata|ckan|gis\.', re.I)
+MAXMB = 40
+
+def get(url, **kw):
+    try:
+        r = requests.get(url, headers=UA, timeout=25, **kw)
+        return r if r.status_code == 200 else None
+    except Exception:
+        return None
+
+def links(url, html):
+    soup = BeautifulSoup(html, 'html.parser')
+    for a in soup.find_all('a', href=True):
+        u = urllib.parse.urljoin(url, a['href']).split('#')[0]
+        yield u, (a.get_text(' ', strip=True) or '')[:120]
+
+def crawl_city(c):
+    site = c['site'].strip().replace('https://', '').replace('http://', '').strip('/')
+    base = 'https://' + site
+    seen, queue, files, portals = set(), [(base, 0)], {}, {}
+    t0 = time.time()
+    # search the site itself too
+    for q in ('bike rack', 'bicycle parking', 'bike map', 'bikeway gis data', 'open data'):
+        queue.append((f'{base}/search?q={urllib.parse.quote(q)}', 1))
+        queue.append((f'{base}/Search?searchPhrase={urllib.parse.quote(q)}', 1))
+    while queue and len(seen) < 70 and time.time() - t0 < 150:
+        url, d = queue.pop(0)
+        if url in seen:
+            continue
+        seen.add(url)
+        host = urllib.parse.urlparse(url).netloc
+        if FILE.search(url):
+            if STRONG.search(url):
+                files[url] = ''
+            continue
+        r = get(url)
+        if not r or 'html' not in r.headers.get('content-type', ''):
+            continue
+        for u, txt in links(url, r.text):
+            lt = u + ' ' + txt
+            if FILE.search(u):
+                if STRONG.search(lt) or d == 0:
+                    if STRONG.search(lt):
+                        files[u] = txt
+            elif PORTAL.search(u) and KEY.search(lt) and len(portals) < 12:
+                portals[u] = txt
+            elif d < 2 and urllib.parse.urlparse(u).netloc.endswith(site.split('.', 1)[-1] if site.count('.') > 1 else site) and KEY.search(lt):
+                queue.append((u, d + 1))
+    return files, portals
+
+def download(city, url):
+    d = os.path.join(OUT, re.sub(r'[^A-Za-z0-9]+', '_', city).strip('_'))
+    os.makedirs(d, exist_ok=True)
+    name = re.sub(r'[^A-Za-z0-9._-]+', '_', os.path.basename(urllib.parse.urlparse(url).path))[:70] or 'file'
+    path = os.path.join(d, hashlib.md5(url.encode()).hexdigest()[:6] + '_' + name)
+    try:
+        r = requests.get(url, headers=UA, timeout=60, stream=True)
+        if r.status_code != 200:
+            return None
+        n = 0
+        with open(path, 'wb') as f:
+            for ch in r.iter_content(1 << 16):
+                n += len(ch)
+                if n > MAXMB << 20:
+                    f.close(); os.remove(path); return None
+                f.write(ch)
+        return path
+    except Exception:
+        return None
+
+ADDR = re.compile(r'\b\d{2,5}\s+[A-Z0-9][A-Za-z0-9 .]+\s(?:St|Street|Ave|Avenue|Blvd|Rd|Road|Dr|Drive|Way|Pl|Place|Ln|Lane|Ct|Court|Pkwy|Hwy)\b\.?')
+
+def extract(path):
+    """Rows found in a file: table rows or address lines that mention bikes. Returns list of dicts."""
+    ext = path.rsplit('.', 1)[-1].lower()
+    rows = []
+    try:
+        if ext == 'pdf':
+            import pdfplumber
+            with pdfplumber.open(path) as pdf:
+                for pg in pdf.pages[:80]:
+                    for tb in pg.extract_tables() or []:
+                        for r in tb:
+                            rows.append({'row': [str(x or '').strip() for x in r]})
+                    for ln in (pg.extract_text() or '').splitlines():
+                        if ADDR.search(ln):
+                            rows.append({'line': ln.strip()})
+        elif ext in ('xlsx', 'xls'):
+            import openpyxl
+            wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+            for ws in wb.worksheets[:6]:
+                for i, r in enumerate(ws.iter_rows(values_only=True)):
+                    if i > 5000: break
+                    rows.append({'sheet': ws.title, 'row': ['' if x is None else str(x) for x in r]})
+        elif ext == 'csv':
+            import csv
+            with open(path, newline='', encoding='utf-8', errors='replace') as f:
+                for i, r in enumerate(csv.reader(f)):
+                    if i > 5000: break
+                    rows.append({'row': r})
+        elif ext in ('geojson', 'json'):
+            d = json.load(open(path, encoding='utf-8', errors='replace'))
+            for ft in (d.get('features') or [])[:5000] if isinstance(d, dict) else []:
+                rows.append({'geometry': ft.get('geometry'), 'props': ft.get('properties')})
+        elif ext in ('kml',):
+            soup = BeautifulSoup(open(path, encoding='utf-8', errors='replace').read(), 'xml')
+            for pm in soup.find_all('Placemark')[:5000]:
+                rows.append({'name': pm.find('name').text if pm.find('name') else '', 'coords': pm.find('coordinates').text.strip() if pm.find('coordinates') else ''})
+        elif ext == 'sql':
+            for ln in open(path, encoding='utf-8', errors='replace'):
+                if ln.upper().startswith('INSERT'):
+                    rows.append({'sql': ln[:400]})
+                    if len(rows) > 5000: break
+    except Exception as e:
+        rows.append({'error': str(e)[:100]})
+    return rows
+
+def main():
+    cities = json.load(open('data/foia/contacts.json'))
+    os.makedirs(OUT, exist_ok=True)
+    index = {}
+    with cf.ThreadPoolExecutor(8) as ex:
+        res = list(ex.map(lambda c: (c, crawl_city(c)), cities))
+    rep = ['# City files found\n', '| City | Files | Portals |', '|---|---|---|']
+    for c, (files, portals) in res:
+        city = c['city']
+        got = []
+        for u, txt in list(files.items())[:25]:
+            p = download(city, u)
+            if not p:
+                continue
+            rows = extract(p)
+            useful = [r for r in rows if STRONG.search(json.dumps(r, ensure_ascii=False))]
+            got.append({'url': u, 'text': txt, 'file': p, 'rows': len(rows), 'bike_rows': len(useful)})
+            if useful:
+                json.dump(useful[:3000], open(p + '.rows.json', 'w'), ensure_ascii=False)
+        index[city] = {'files': got, 'portals': portals}
+        rep.append(f"| {city} | {len(got)} ({sum(g['bike_rows'] for g in got)} bike rows) | {len(portals)} |")
+    json.dump(index, open(f'{OUT}/index.json', 'w'), indent=1, ensure_ascii=False)
+    open(f'{OUT}/REPORT.md', 'w').write('\n'.join(rep) + '\n')
+    print('\n'.join(rep))
+
+if __name__ == '__main__':
+    main()
