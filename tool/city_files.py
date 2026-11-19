@@ -9,8 +9,12 @@ from bs4 import BeautifulSoup
 OUT = 'data/city_files'
 UA = {'User-Agent': 'MOBIlity-data-bot/1.0 (public bike-parking data; contact albis_iulian@yahoo.com)'}
 KEY = re.compile(r'bike|bicycl|cycl|rack|corral|locker|scooter|moped|motorcycle|trail|greenway|bikeway|gis|open.?data|'
-                 r'transportation|mobility|parking|public.?works|map', re.I)
-STRONG = re.compile(r'bike|bicycl|cycl|rack|corral|locker|scooter|moped|bikeway|greenway|trail', re.I)
+                 r'transportation|mobility|parking|garage|public.?works|map|route|historic|waterfront|charging|repair|'
+                 r'micromobility|parks|recreation|data|download|dataset', re.I)
+STRONG = re.compile(r'bike|bicycl|cycl|rack|corral|locker|cage|scooter|e-?scoot|micromobil|moped|motorcycle|motorbike|'
+                    r'bikeway|greenway|trail|path|route|loop|historic|heritage|scenic|waterfront|riverwalk|lakefront|harbor|'
+                    r'repair|fix-?it|pump|charg|outlet|ev-?station|parking|garage|lot|meter|kiosk|bikeshare|bike-?share|divvy|'
+                    r'wayfinding|sharrow|boulevard|park-?and-?ride|transit|map', re.I)
 FILE = re.compile(r'\.(pdf|xlsx?|csv|geojson|json|kml|kmz|zip|shp|gpx|sql|gdb)(\?|$)', re.I)
 PORTAL = re.compile(r'arcgis\.com|hub\.arcgis|opendata|open-data|data\.[a-z\-]+\.(gov|org|us)|socrata|ckan|gis\.', re.I)
 MAXMB = 40
@@ -34,10 +38,10 @@ def crawl_city(c):
     seen, queue, files, portals = set(), [(base, 0)], {}, {}
     t0 = time.time()
     # search the site itself too
-    for q in ('bike rack', 'bicycle parking', 'bike map', 'bikeway gis data', 'open data'):
+    for q in ('bike rack', 'bicycle parking', 'bike locker', 'scooter parking', 'motorcycle parking', 'bike repair station', 'e-bike charging', 'bike map', 'trail map', 'historic route', 'waterfront', 'parking garage rates', 'bikeway gis data', 'open data'):
         queue.append((f'{base}/search?q={urllib.parse.quote(q)}', 1))
         queue.append((f'{base}/Search?searchPhrase={urllib.parse.quote(q)}', 1))
-    while queue and len(seen) < 70 and time.time() - t0 < 150:
+    while queue and len(seen) < 110 and time.time() - t0 < 150:
         url, d = queue.pop(0)
         if url in seen:
             continue
