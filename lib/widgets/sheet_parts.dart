@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../data/places.dart';
 import '../theme.dart';
@@ -660,10 +659,9 @@ class _VehicleDeckState extends State<VehicleDeck> {
   bool _open = false;
 
   static const _kinds = [Vehicle.bike, Vehicle.scooter, Vehicle.moped, Vehicle.moto];
-  static const _amber = Color(0xFFF2A100), _red = Color(0xFFE0382F);
-  // the lights of a dashboard
-  static const _service = [('engine', _amber), ('oil', _red), ('wrench', _amber), ('abs', _amber), ('oiltemp', _red)];
-  static const _shop = [('helmet', AppColors.primary), ('gloves', AppColors.primary), ('frame', AppColors.primary), ('oilbottle', AppColors.primary)];
+  // the lights of a dashboard (check engine, oil, ABS, traction control, water temperature) / what a shop also sells
+  static const _service = ['engine', 'oil', 'abs', 'tc', 'temp'];
+  static const _shop = ['helmet', 'gloves', 'frame', 'oil'];
 
   static String _name(Vehicle v) => switch (v) {
         Vehicle.bike || Vehicle.ebike => 'Bikes',
@@ -671,15 +669,6 @@ class _VehicleDeckState extends State<VehicleDeck> {
         Vehicle.moped => 'Mopeds',
         Vehicle.moto => 'Motos',
       };
-
-  Widget _picto((String, Color) x, double size) => x.$1 == 'abs'
-      ? SizedBox(
-          width: size * 1.6,
-          height: size,
-          child: FittedBox(child: Text('(ABS)', style: TextStyle(fontWeight: FontWeight.w900, color: x.$2, height: 1))),
-        )
-      : SvgPicture.asset('assets/glyphs/dash/${x.$1}.svg',
-          width: size, height: size, colorFilter: ColorFilter.mode(x.$2, BlendMode.srcIn));
 
   Widget _pictos(double size, double gap) {
     final l = widget.place.type == PlaceType.service ? _service : _shop;
@@ -689,7 +678,7 @@ class _VehicleDeckState extends State<VehicleDeck> {
         crossAxisAlignment: WrapCrossAlignment.center,
         spacing: gap,
         runSpacing: gap,
-        children: [for (final x in l) _picto(x, size)],
+        children: [for (final x in l) Image.asset('assets/glyphs/dash/$x.png', width: size, height: size, fit: BoxFit.contain)],
       ),
     );
   }
