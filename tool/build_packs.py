@@ -458,6 +458,17 @@ METROS = {  # the larger US metro areas and college towns (center lat, lon)
     'Ithaca': (42.44, -76.50), 'State College': (40.79, -77.86), 'Lincoln': (40.81, -96.70), 'Spokane': (47.66, -117.42),
     'Burlington VT': (44.48, -73.21), 'Santa Barbara': (34.42, -119.70), 'Tallahassee': (30.44, -84.28), 'Knoxville': (35.96, -83.92),
     'Lexington': (38.04, -84.50), 'Des Moines': (41.59, -93.62), 'El Paso': (31.76, -106.49), 'Anchorage': (61.22, -149.90),
+    # cities that publish no bike-parking data of their own (public-records requests sent): street photos fill the gap
+    'Fort Worth': (32.76, -97.33), 'Arlington TX': (32.74, -97.11), 'Plano': (33.02, -96.70), 'Garland': (32.91, -96.64),
+    'Colorado Springs': (38.83, -104.82), 'Bakersfield': (35.37, -119.02), 'Wichita': (37.69, -97.33),
+    'Anaheim': (33.84, -117.91), 'Stockton': (37.96, -121.29), 'Corpus Christi': (27.80, -97.40), 'Durham': (35.99, -78.90),
+    'Chandler': (33.31, -111.84), 'Gilbert': (33.35, -111.79), 'Toledo': (41.65, -83.54), 'Reno': (39.53, -119.81),
+    'Fort Wayne': (41.08, -85.14), 'Lubbock': (33.58, -101.86), 'Laredo': (27.53, -99.48), 'Winston-Salem': (36.10, -80.24),
+    'Fremont': (37.55, -121.99), 'Santa Clarita': (34.39, -118.54), 'Baton Rouge': (30.45, -91.19), 'Tacoma': (47.25, -122.44),
+    'San Bernardino': (34.11, -117.29), 'Modesto': (37.64, -121.00), 'Fontana': (34.09, -117.44), 'Little Rock': (34.75, -92.29),
+    'Savannah': (32.08, -81.09), 'Portland ME': (43.66, -70.26), 'Jackson MS': (32.30, -90.18), 'Columbia SC': (34.00, -81.03),
+    'Sioux Falls': (43.54, -96.73), 'Fargo': (46.88, -96.79), 'Billings': (45.78, -108.50), 'Cheyenne': (41.14, -104.82),
+    'Manchester NH': (43.00, -71.45), 'Wilmington DE': (39.74, -75.55), 'Charleston WV': (38.35, -81.63),
 }
 
 
