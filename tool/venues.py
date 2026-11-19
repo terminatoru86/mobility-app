@@ -15,7 +15,8 @@ groups: campus (schools, colleges, universities), shopping (malls, markets), wor
         courthouses, post offices, federal / state offices), corporate (campuses of big companies: Google, Apple, Oracle...),
         offices (office buildings and their property managers, coworking: bike rooms, storage, garages for tenants),
         travel (vacation areas like Key West: attractions, visitor centers, resorts, campgrounds, museums),
-        safety (police, fire stations, prisons); transit also has ferry terminals and airports
+        safety (police, fire stations, prisons), pets (veterinarians, pet stores / groomers / boarding, dog walkers,
+        dog parks); transit also has ferry terminals and airports
 """
 import json
 import math
@@ -38,7 +39,8 @@ LABEL = {'school': 'School', 'college': 'College', 'university': 'University', '
          'courthouse': 'Courthouse', 'post_office': 'Post office', 'corporate': 'Company campus', 'office_building': 'Office building', 'coworking': 'Coworking', 'airport': 'Airport',
          'ferry': 'Ferry terminal', 'attraction': 'Tourist attraction', 'visitor_center': 'Visitor center',
          'resort': 'Resort', 'campground': 'Campground', 'museum': 'Museum', 'police': 'Police station',
-         'fire_station': 'Fire station', 'prison': 'Prison'}
+         'fire_station': 'Fire station', 'prison': 'Prison', 'vet': 'Veterinarian', 'pet': 'Pet business',
+         'dog_park': 'Dog park'}
 GROUP = {'school': 'campus', 'college': 'campus', 'university': 'campus', 'mall': 'shopping', 'market': 'shopping',
          'industrial': 'work', 'business_park': 'work', 'park': 'parks',
          'station': 'transit', 'park_ride': 'transit', 'library': 'civic', 'townhall': 'civic', 'community': 'civic',
@@ -46,7 +48,8 @@ GROUP = {'school': 'campus', 'college': 'campus', 'university': 'campus', 'mall'
          'government': 'government', 'ssa': 'government', 'dmv': 'government', 'courthouse': 'government',
          'post_office': 'government', 'corporate': 'corporate', 'office_building': 'offices', 'coworking': 'offices', 'airport': 'transit',
          'ferry': 'transit', 'attraction': 'travel', 'visitor_center': 'travel', 'resort': 'travel', 'campground': 'travel',
-         'museum': 'travel', 'police': 'safety', 'fire_station': 'safety', 'prison': 'safety'}
+         'museum': 'travel', 'police': 'safety', 'fire_station': 'safety', 'prison': 'safety',
+         'vet': 'pets', 'pet': 'pets', 'dog_park': 'pets'}
 MAX_SITES = 30000
 SSA = re.compile(r'social\s+security|\bssa\b', re.I)
 DMV = re.compile(r'\b(dmv|bmv|mvd|rmv|mva|motor\s+vehicles?|driver\s+(services|license|licensing)|secretary\s+of\s+state\s+(facility|driver)|license\s+(branch|office)|tag\s+office)\b', re.I)
@@ -101,6 +104,13 @@ def kind_of_osm(t):
     if t.get('tourism') == 'hotel':
         return 'hotel'
     name = t.get('name') or ''
+    if a == 'veterinary':
+        return 'vet'
+    if t.get('shop') in ('pet', 'pet_grooming') or a in ('animal_boarding', 'animal_shelter', 'animal_training') \
+            or t.get('craft') == 'pet_grooming':
+        return 'pet'
+    if t.get('leisure') == 'dog_park':
+        return 'dog_park'
     if a == 'police':
         return 'police'
     if a == 'fire_station':
@@ -148,6 +158,12 @@ def kind_of_cat(cat):
         return 'market'
     if re.search(r'industrial[\s_]*(estate|park|area)|business[\s_]*park|office[\s_]*park|technology[\s_]*park|research[\s_]*park', c):
         return 'business_park'
+    if re.search(r'veterinar|animal[\s_]*hospital', c):
+        return 'vet'
+    if re.search(r'dog[\s_]*park', c):
+        return 'dog_park'
+    if re.search(r'\bpet|dog[\s_]*(walk|sitter|train|groom|day)|animal[\s_]*(shelter|boarding|training)|kennel|groomer', c):
+        return 'pet'
     if re.search(r'ferry', c) and not re.search(r'rental|charter', c):
         return 'ferry'
     if re.search(r'police', c):
@@ -249,7 +265,8 @@ def overture(group):
           'work': 'industrial|business_park|office_park|technology_park|research_park', 'parks': 'park',
           'transit': 'station|park_and_ride|park_ride|transit|subway|light_rail|bus_terminal|airport|ferry',
           'travel': 'tourist|attraction|landmark|historic|monument|lighthouse|scenic|visitor|resort|campground|camp_site|rv_park|museum',
-          'safety': 'police|fire_station|fire_department|prison|jail|correctional|detention', 'civic': 'librar|city_hall|town_hall|community_center|recreation_center|hospital',
+          'safety': 'police|fire_station|fire_department|prison|jail|correctional|detention',
+          'pets': 'veterinar|animal|pet|dog|kennel|groom', 'civic': 'librar|city_hall|town_hall|community_center|recreation_center|hospital',
           'sports': 'stadium|arena|sports|athletic', 'hotels': 'hotel|resort',
           'government': 'government|social_security|motor_vehicle|dmv|courthouse|post_office|federal|public_service',
           'corporate': 'corporate|headquarters|office|technology|software|company',
@@ -364,7 +381,7 @@ def test():
     assert kind_of_osm({'amenity': 'university'}) == 'university' and kind_of_osm({'shop': 'mall'}) == 'mall'
     assert kind_of_osm({'landuse': 'commercial', 'name': 'Oak Brook Business Park'}) == 'business_park'
     assert kind_of_cat('shopping_mall') == 'mall' and kind_of_cat('farmers_market') == 'market'
-    assert kind_of_cat('park') == 'park' and kind_of_cat('parking') is None and kind_of_cat('dog_park') is None
+    assert kind_of_cat('park') == 'park' and kind_of_cat('parking') is None and kind_of_cat('dog_park') == 'dog_park'
     assert kind_of_osm({'railway': 'station'}) == 'station' and kind_of_osm({'amenity': 'library'}) == 'library'
     assert kind_of_cat('train_station') == 'station' and kind_of_cat('hotel') == 'hotel' and kind_of_cat('stadium_arena') == 'stadium'
     assert kind_of_osm({'office': 'government', 'name': 'Social Security Administration'}) == 'ssa'
@@ -383,6 +400,8 @@ def test():
     assert kind_of_osm({'tourism': 'information', 'information': 'office'}) == 'visitor_center'
     assert kind_of_cat('ferry_service') == 'ferry' and kind_of_cat('tourist_attraction') == 'attraction'
     assert kind_of_cat('fire_department') == 'fire_station' and kind_of_cat('jail_and_prison') == 'prison'
+    assert kind_of_osm({'amenity': 'veterinary'}) == 'vet' and kind_of_osm({'shop': 'pet'}) == 'pet'
+    assert kind_of_cat('dog_walkers') == 'pet' and kind_of_cat('veterinarian') == 'vet' and kind_of_cat('dog_park') == 'dog_park'
     assert kind_of_cat('college_university') == 'university' and kind_of_cat('elementary_school') == 'school'
     s = wf.what_page_says('Campus bike repair stations are located outside the library and the student union. '
                           'E-bike charging is available in Garage B.')

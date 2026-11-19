@@ -56,7 +56,8 @@ jobs:
             nwr/shop=mall nwr/landuse=industrial,commercial,retail nwr/leisure=park,stadium,sports_centre \
             nwr/public_transport=station nwr/railway=station nwr/park_ride nwr/tourism=hotel \
             nwr/amenity=ferry_terminal,police,fire_station,prison nwr/tourism=attraction,information,resort,camp_site,caravan_site,museum \
-            nwr/leisure=resort -o ven.osm.pbf
+            nwr/leisure=resort,dog_park nwr/amenity=veterinary,animal_boarding,animal_shelter,animal_training \
+            nwr/shop=pet,pet_grooming -o ven.osm.pbf
           rm region.osm.pbf
           python3 tool/venues.py --pbf ven.osm.pbf ven.json && rm ven.osm.pbf
       - name: Name the result
@@ -135,7 +136,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        group: [offices, corporate, transit, campus, shopping, work, parks, civic, sports, hotels, government, travel, safety]
+        group: [offices, corporate, transit, campus, shopping, work, parks, civic, sports, hotels, government, travel, safety, pets]
     steps:
       - name: Wanted this time?
         id: want
