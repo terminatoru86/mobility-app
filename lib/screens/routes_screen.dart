@@ -450,7 +450,82 @@ class ExploreDetail extends StatefulWidget {
 class _ExploreDetailState extends State<ExploreDetail> {
   final _map = MapController();
   bool _ready = false, _busy = false;
+  bool _along = false; // "Along the way" open (sheet pulled up)
   String? _problem;
+
+  static const _kindName = {
+    'canyon': 'Canyon', 'waterfall': 'Waterfall', 'peak': 'Peak', 'rock': 'Rock', 'lake': 'Lake', 'beach': 'Beach',
+    'lighthouse': 'Lighthouse', 'tower': 'Tower', 'bridge': 'Bridge', 'monument': 'Monument', 'statue': 'Statue',
+    'viewpoint': 'Viewpoint', 'attraction': 'Attraction',
+  };
+
+  void _showSight(LatLng? p) {
+    if (p == null || !_ready) return;
+    _map.move(p, 15);
+  }
+
+  Widget _alongTheWay(Trail t) {
+    final rows = t.sights;
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onVerticalDragEnd: (e) => setState(() => _along = (e.primaryVelocity ?? 0) < 0 ? true : (e.primaryVelocity ?? 0) > 0 ? false : _along),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+        InkWell(
+          onTap: () => setState(() => _along = !_along),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 6),
+            child: Row(children: [
+              Text('Along the way${_along ? '' : ' · ${rows.length}'}',
+                  style: const TextStyle(color: AppColors.soft, fontWeight: FontWeight.w800, fontSize: 12.5)),
+              const Spacer(),
+              Icon(_along ? Icons.keyboard_arrow_down : Icons.keyboard_arrow_up, size: 20, color: AppColors.soft),
+            ]),
+          ),
+        ),
+        if (_along)
+          ConstrainedBox(
+            constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.36),
+            child: ListView(shrinkWrap: true, padding: EdgeInsets.zero, children: [
+              for (final s in rows)
+                InkWell(
+                  onTap: () => _showSight(s.$5),
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 6),
+                    decoration: const BoxDecoration(border: Border(bottom: BorderSide(color: AppColors.line))),
+                    child: Row(children: [
+                      SizedBox(
+                        width: 50,
+                        child: Text('${(s.$1 / 1.609344).toStringAsFixed(1)} mi',
+                            textAlign: TextAlign.right,
+                            style: const TextStyle(color: AppColors.soft, fontWeight: FontWeight.w800, fontSize: 12)),
+                      ),
+                      const SizedBox(width: 10),
+                      Container(
+                        width: 28,
+                        height: 28,
+                        decoration: const BoxDecoration(color: AppColors.paper, shape: BoxShape.circle),
+                        child: s.$2 == 'on'
+                            ? const Center(child: CircleAvatar(radius: 4, backgroundColor: AppColors.blue))
+                            : Icon(s.$2 == 'L' ? Icons.turn_left : Icons.turn_right, size: 17, color: AppColors.ink),
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                          Text(s.$3, maxLines: 1, overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14)),
+                          Text(
+                              '${s.$2 == 'L' ? 'Left' : s.$2 == 'R' ? 'Right' : 'On the route'} · ${_kindName[s.$4] ?? s.$4}',
+                              style: const TextStyle(color: AppColors.soft, fontSize: 11.5)),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ),
+            ]),
+          ),
+      ]),
+    );
+  }
 
   void _fit() {
     if (!_ready) return;
@@ -562,6 +637,22 @@ class _ExploreDetailState extends State<ExploreDetail> {
                 for (final l in t.lines) Polyline(points: l, strokeWidth: 8, color: Colors.white),
                 for (final l in t.lines) Polyline(points: l, strokeWidth: 5, color: trailColor(t)),
               ]),
+              MarkerLayer(markers: [
+                for (final sg in t.sights)
+                  if (sg.$5 != null)
+                    Marker(
+                      point: sg.$5!,
+                      width: 12,
+                      height: 12,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          shape: BoxShape.circle,
+                          border: Border.all(color: AppColors.ink, width: 2.5),
+                        ),
+                      ),
+                    ),
+              ]),
             ],
           ),
         ),
@@ -611,6 +702,7 @@ class _ExploreDetailState extends State<ExploreDetail> {
                 const SizedBox(height: 4),
                 Text(note.$1, style: TextStyle(color: note.$2, fontWeight: FontWeight.w700, fontSize: 12.5)),
               ],
+              if (t.sights.isNotEmpty) ...[const SizedBox(height: 4), _alongTheWay(t)],
               if (_problem != null) Text(_problem!, style: const TextStyle(color: AppColors.redDark)),
               const SizedBox(height: 10),
               Row(children: [
