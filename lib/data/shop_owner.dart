@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
@@ -137,7 +138,8 @@ class ShopPage {
 /// collection (`shop_claims`): only the rider who sent it and the MOBIlity team can read it, never the
 /// other riders. The team sets `status` to "approved" (or "rejected", with a `note`) in the console.
 class ShopClaim {
-  final String uid, placeKey, placeName, businessName, address, ownerName, phone, ein, status, note;
+  final String uid, placeKey, placeName, businessName, address, ownerName, phone, ein, status, note, code, checks;
+  final double lat, lon;
   const ShopClaim({
     required this.uid,
     required this.placeKey,
@@ -149,7 +151,18 @@ class ShopClaim {
     required this.ein,
     this.status = 'pending',
     this.note = '',
+    this.code = '',
+    this.checks = '',
+    this.lat = 0,
+    this.lon = 0,
   });
+
+  /// A short code the owner can write on the shop's website to prove it is theirs.
+  static String newCode() {
+    const a = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+    final r = Random.secure();
+    return 'MOBI-${List.generate(6, (_) => a[r.nextInt(a.length)]).join()}';
+  }
 
   bool get approved => status == 'approved';
   bool get rejected => status == 'rejected';
@@ -179,6 +192,10 @@ class ShopClaim {
         'ein': ShopPage._s(ein),
         'status': ShopPage._s('pending'),
         'note': ShopPage._s(note),
+        'code': ShopPage._s(code),
+        'checks': ShopPage._s(''),
+        'lat': {'doubleValue': lat},
+        'lon': {'doubleValue': lon},
         'at': {'integerValue': '${DateTime.now().millisecondsSinceEpoch}'},
       };
 
@@ -197,6 +214,8 @@ class ShopClaim {
       ein: s('ein'),
       status: s('status').isEmpty ? 'pending' : s('status'),
       note: s('note'),
+      code: s('code'),
+      checks: s('checks'),
     );
   }
 }

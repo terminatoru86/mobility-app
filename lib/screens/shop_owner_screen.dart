@@ -128,6 +128,9 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
       ownerName: _own.text.trim(),
       phone: tel!,
       ein: ein!,
+      code: ShopClaim.newCode(),
+      lat: p.pos.latitude,
+      lon: p.pos.longitude,
     );
     final ok = await ShopPages.i.submitClaim(c);
     if (!mounted) return;
@@ -240,7 +243,7 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
     final c = _claim!;
     final (color, text, label) = c.rejected
         ? (AppColors.redTint, c.note.isEmpty ? 'We could not confirm this business.' : c.note, 'Not approved')
-        : (AppColors.yellowTint, 'We are checking your details. When we approve them, your menus open here. Come back later and tap Refresh.', 'Waiting for our check');
+        : (AppColors.yellowTint, c.note.isEmpty ? 'Our system is checking your details. It takes a few minutes. Tap Refresh: when everything is confirmed, your menus open here by themselves.' : c.note, 'Waiting for our check');
     Widget line(String k, String v) => Padding(
           padding: const EdgeInsets.only(bottom: 6),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -266,6 +269,7 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
         line('Owner', c.ownerName),
         line('Phone', c.phone),
         line('EIN', c.einHidden),
+        if (c.code.isNotEmpty && !c.rejected) line('Your code', c.code),
       ]),
       FilledButton(
         onPressed: () {

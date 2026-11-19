@@ -188,5 +188,16 @@ void main() {
       expect(parseSiteInfo(two).hours, isNull);
       expect(parseSiteInfo('<html>Open 9 to 5</html>').isEmpty, isTrue);
     });
+    test('Claim: proof code and place coordinates travel with the request', () {
+    final a = ShopClaim.newCode(), b = ShopClaim.newCode();
+    expect(RegExp(r'^MOBI-[A-Z2-9]{6}$').hasMatch(a), isTrue);
+    expect(a == b, isFalse);
+    final c = ShopClaim(uid: 'u', placeKey: 'node_1', placeName: 'x', businessName: 'Shop', address: 'a', ownerName: 'o', phone: '3125550000', ein: '12-3456789', code: a, lat: 41.8, lon: -87.6);
+    final f = c.toFields();
+    expect(f['code']['stringValue'], a);
+    expect(f['lat']['doubleValue'], 41.8);
+    expect(f['status']['stringValue'], 'pending');
+    expect(ShopClaim.fromFields(f)!.code, a);
   });
+});
 }

@@ -7,7 +7,7 @@ service cloud.firestore {
     }
 
     // The request to run a place's page: owner, business and EIN. PRIVATE: only the rider who sent it reads it
-    // (and the MOBIlity team in the console). The team sets status to approved or rejected (+ note) there;
+    // (and our checking job, tool/verify_claims.py, which uses an admin key). It sets status to approved or rejected (+ note);
     // a rider can send it again only while it is pending or rejected, and can never change the status.
     match /shop_claims/{shop} {
       allow read: if request.auth != null && resource.data.uid == request.auth.uid;
@@ -15,7 +15,7 @@ service cloud.firestore {
         && request.resource.data.uid == request.auth.uid
         && request.resource.data.status == 'pending'
         && request.resource.data.keys().hasOnly(['uid', 'placeKey', 'placeName', 'businessName', 'address', 'ownerName',
-                                                 'phone', 'ein', 'status', 'note', 'at'])
+                                                 'phone', 'ein', 'status', 'note', 'at', 'lat', 'lon', 'code', 'checks'])
         && request.resource.data.ein.size() == 11 && request.resource.data.ownerName.size() < 100;
       allow update: if request.auth != null
         && resource.data.uid == request.auth.uid
@@ -23,7 +23,7 @@ service cloud.firestore {
         && request.resource.data.uid == resource.data.uid
         && request.resource.data.status == 'pending'
         && request.resource.data.keys().hasOnly(['uid', 'placeKey', 'placeName', 'businessName', 'address', 'ownerName',
-                                                 'phone', 'ein', 'status', 'note', 'at']);
+                                                 'phone', 'ein', 'status', 'note', 'at', 'lat', 'lon', 'code', 'checks']);
     }
 
     // The page of a place, kept by its owner. Anyone reads. It can be created only by the rider whose request
