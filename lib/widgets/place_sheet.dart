@@ -218,7 +218,10 @@ class _PlaceSheetState extends State<PlaceSheet> {
   bool _visited = false, _checking = false;
 
   bool get _shopLike =>
-      widget.place.osm && (widget.place.type == PlaceType.shop || widget.place.type == PlaceType.service || widget.place.type == PlaceType.rent);
+      widget.place.osm && (widget.place.type == PlaceType.shop ||
+          widget.place.type == PlaceType.service ||
+          widget.place.type == PlaceType.rent ||
+          widget.place.type == PlaceType.bmx);
 
   void _loadPage() {
     if (!_shopLike) return;

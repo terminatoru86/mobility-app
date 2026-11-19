@@ -15,6 +15,8 @@ class ShopOwnerScreen extends StatefulWidget {
   State<ShopOwnerScreen> createState() => _ShopOwnerScreenState();
 }
 
+bool _ownable(PlaceType t) => t == PlaceType.shop || t == PlaceType.service || t == PlaceType.rent || t == PlaceType.bmx;
+
 class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
   ShopPage? _page;
   Place? _place; // the shop on the map (when it is among the places we know)
@@ -67,7 +69,7 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
     return knownPlaces
         .where((p) =>
             p.osm &&
-            (p.type == PlaceType.shop || p.type == PlaceType.service || p.type == PlaceType.rent) &&
+            _ownable(p.type) &&
             '${p.address} ${p.street ?? ''}'.toLowerCase().contains(q))
         .take(8)
         .toList();
@@ -170,9 +172,9 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
   }
 
   Widget _pickShop() => ListView(padding: const EdgeInsets.all(16), children: [
-        const Text('Find your shop', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
+        const Text('Find your place', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
         const SizedBox(height: 6),
-        const Text('Type its name. Only shops, repair shops and rentals on the map are listed. Look around the map first, so the shop is loaded.',
+        const Text('Type its name. Shops, service hubs, rentals and BMX parks on the map are listed. Look around the map first, so your place is loaded.',
             style: TextStyle(color: AppColors.soft)),
         const SizedBox(height: 12),
         TextField(
@@ -195,6 +197,13 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
         if (_search.text.trim().length >= 2 && _found.isEmpty)
           const Padding(padding: EdgeInsets.all(12), child: Text('Not found. Move the map to your shop and try again.')),
       ]);
+
+  String get _sellsTitle => switch (_place?.type) {
+        PlaceType.service => 'What you repair',
+        PlaceType.rent => 'What you rent',
+        PlaceType.bmx => 'Who rides here',
+        _ => 'What the shop sells',
+      };
 
   Widget _chip(String label, bool on, ValueChanged<bool> f) =>
       FilterChip(label: Text(label), selected: on, onSelected: f, selectedColor: AppColors.slateTint, checkmarkColor: AppColors.primary);
@@ -245,7 +254,7 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
         const SizedBox(height: 8),
         TextField(controller: _hours, decoration: _dec('Hours, e.g. Mo-Fr 10:00-18:00; Sa 10:00-16:00', icon: Icons.schedule)),
       ]),
-      _card('What the shop sells', [
+      _card(_sellsTitle, [
         Wrap(spacing: 8, children: [
           for (final e in names.entries)
             _chip(e.value, d.sells.contains(e.key), (on) {
@@ -255,7 +264,7 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
             }),
         ]),
         const SizedBox(height: 6),
-        const Text('Riders with a vehicle registered see the shops that sell for it.', style: TextStyle(fontSize: 12, color: AppColors.soft)),
+        const Text('Riders with a vehicle registered see the places that fit it.', style: TextStyle(fontSize: 12, color: AppColors.soft)),
       ]),
       _card('Photos (up to 3)', [
         Wrap(spacing: 8, runSpacing: 8, children: [
