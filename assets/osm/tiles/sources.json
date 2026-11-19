@@ -12,12 +12,6 @@
   "places": 35697
  },
  {
-  "key": "ago-6c862e63b4",
-  "label": "Bicycle Parking · NorthArrowMYI",
-  "url": "https://services1.arcgis.com/LXbM9ydfDv6vSfJb/arcgis/rest/services/Bicycle_Parking/FeatureServer/0",
-  "places": 31636
- },
- {
   "key": "ago-28dfe41b62",
   "label": "NYC Bicycle Parking · acj2145_IGTLab",
   "url": "https://services.arcgis.com/UnTXoPXBYERF0OH6/arcgis/rest/services/NYC_Bicycle_Parking/FeatureServer/0",
@@ -276,6 +270,12 @@
   "places": 2887
  },
  {
+  "key": "ago-4889155f8e",
+  "label": "UCD_Bike_Parking · nbkalman_cpes",
+  "url": "https://gis.ucdavis.edu/server/rest/services/Taps_Bike_Parking/MapServer/0",
+  "places": 2184
+ },
+ {
   "key": "ago-29c348ded1",
   "label": "Bike Facilities and Projects Summer 2026_WFL1 · pgerard_oakgis",
   "url": "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Bike_Facilities_and_Projects_Summer_2026_WFL1/FeatureServer/5",
@@ -297,7 +297,7 @@
   "key": "ago-3cb6820140",
   "label": "Verified Bike Racks Public Layer · Publisher_SacCity",
   "url": "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/Verified_Bike_Racks_Public_Layer/FeatureServer/0",
-  "places": 1718
+  "places": 1719
  },
  {
   "key": "ago-b54fb7889a",
@@ -646,12 +646,6 @@
   "label": "Bike Parking 2017 · esalas_metra",
   "url": "https://services3.arcgis.com/6LvtIYUSMXW8Tb6o/arcgis/rest/services/BikeParking2017/FeatureServer/0",
   "places": 495
- },
- {
-  "key": "ago-f675bdcdf2",
-  "label": "Bike Racks · COLGISAdmin",
-  "url": "https://services7.arcgis.com/BJisQXdgVScP0JMy/arcgis/rest/services/BikeRacks_Public/FeatureServer/0",
-  "places": 492
  },
  {
   "key": "ago-9657b76fff",
@@ -1140,6 +1134,12 @@
   "places": 235
  },
  {
+  "key": "ago-a3ee6c6d1b",
+  "label": "Thurston County Bike Parking Mapping Tool_results · per_audr",
+  "url": "https://services3.arcgis.com/0IbpLwS460cn4psv/arcgis/rest/services/survey123_b501f5f71a4f415bb7e1f49dad6ca2bb_results/FeatureServer/0",
+  "places": 234
+ },
+ {
   "key": "ago-c22c2699b1",
   "label": "Town of Hilton Head Bike Racks · gisadmin_hhi",
   "url": "https://services1.arcgis.com/t1pOARESVtLutuqb/arcgis/rest/services/Town_of_Hilton_Head_Bike_Racks/FeatureServer/0",
@@ -1270,6 +1270,12 @@
   "label": "Bike Rack Repair Share Locations · michael.slee@oakville.ca_ExploreOakville",
   "url": "https://maps.oakville.ca/oakgis/rest/services/NeoGIS/BikeRackShareRepair/FeatureServer/0",
   "places": 206
+ },
+ {
+  "key": "ago-220da7e7e1",
+  "label": "ScooterCorrals · Multimodal_01",
+  "url": "https://services1.arcgis.com/5ly0cVV70qsN8Soc/arcgis/rest/services/ScooterCorrals1/FeatureServer/0",
+  "places": 205
  },
  {
   "key": "ago-072ad14f57",
@@ -1546,6 +1552,12 @@
   "label": "Bike Racks Public · ijohnson@bismarcknd.gov_Bismarck",
   "url": "https://services1.arcgis.com/XxHmL09eFqJWI0gE/arcgis/rest/services/Bike_Racks_Public/FeatureServer/0",
   "places": 146
+ },
+ {
+  "key": "ago-ea4a0dfce0",
+  "label": "Cycling_Test_WFL1 · oghenetega.ogodo_tyli",
+  "url": "https://services.arcgis.com/G3nmNsarwQblLhip/arcgis/rest/services/Cycling_Test_WFL1/FeatureServer/20",
+  "places": 143
  },
  {
   "key": "ago-fc1be6ade7",
@@ -1920,6 +1932,12 @@
   "places": 86
  },
  {
+  "key": "ago-9de3eb9c01",
+  "label": "Motorcycle Parking (Non-Metered) · City_of_Vancouver",
+  "url": "https://services3.arcgis.com/qrcTTRTwUoS8N47o/arcgis/rest/services/COVMotorcycleParkingNonMetered/FeatureServer/0",
+  "places": 86
+ },
+ {
   "key": "ago-1b106564b4",
   "label": "Bike Rack Point · peck.matthew@uwlax.edu_UWL",
   "url": "https://services3.arcgis.com/uRm5PFNUDV7pDKUv/arcgis/rest/services/Bike_Rack_Point/FeatureServer/0",
@@ -2004,6 +2022,12 @@
   "places": 76
  },
  {
+  "key": "ago-cf3baa0295",
+  "label": "BYU Motorcycle Parking · geospatial_services",
+  "url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/BYU_Motorcycle_Parking/FeatureServer/0",
+  "places": 76
+ },
+ {
   "key": "ago-9b38909929",
   "label": "Bicycle_Parking · mcallovi_CityofKenosha",
   "url": "https://services1.arcgis.com/dEWY7aW7h9zHrSP9/arcgis/rest/services/Bicycle_Parking/FeatureServer/0",
@@ -2055,6 +2079,12 @@
   "key": "ago-96da648a4b",
   "label": "Bicycle Racks · elaferriere@stlawu.edu_StLaw",
   "url": "https://services1.arcgis.com/6mQtfhEoigYsSVnw/arcgis/rest/services/Canton_Bike_Racks_/FeatureServer/0",
+  "places": 71
+ },
+ {
+  "key": "ago-cb05c52774",
+  "label": "Scooter Corrals · philip.johnson_baltimoredot",
+  "url": "https://services3.arcgis.com/ZTvQ9NuONePFYofE/arcgis/rest/services/Scooter_Corrals/FeatureServer/0",
   "places": 71
  },
  {
@@ -2130,15 +2160,15 @@
   "places": 69
  },
  {
-  "key": "ago-efdda51168",
-  "label": "Bike Repair Station222 · xchen2268@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station222/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-dc5de75a52",
   "label": "Bike Repair Station Madison 2 · asnow4@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Madison_2/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-efdda51168",
+  "label": "Bike Repair Station222 · xchen2268@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station222/FeatureServer/0",
   "places": 69
  },
  {
@@ -2226,15 +2256,15 @@
   "places": 69
  },
  {
-  "key": "ago-5cf9d34026",
-  "label": "Bike Repair Station hnjohnson · hnjohnson4@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_hnjohnson/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-4d067d839b",
   "label": "Bike Repair Station 277 · umohammed2@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_277/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-5cf9d34026",
+  "label": "Bike Repair Station hnjohnson · hnjohnson4@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_hnjohnson/FeatureServer/0",
   "places": 69
  },
  {
@@ -2262,6 +2292,12 @@
   "places": 69
  },
  {
+  "key": "ago-519396d7ee",
+  "label": "Bike Repair Station Abby B · behailu@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Abby_B/FeatureServer/0",
+  "places": 69
+ },
+ {
   "key": "ago-201747ae5d",
   "label": "Bike Repair · rimoss@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair/FeatureServer/0",
@@ -2271,12 +2307,6 @@
   "key": "ago-0a6a9b5d96",
   "label": "Bike Repair Madison · eilundin@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Madison/FeatureServer/0",
-  "places": 69
- },
- {
-  "key": "ago-519396d7ee",
-  "label": "Bike Repair Station Abby B · behailu@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Abby_B/FeatureServer/0",
   "places": 69
  },
  {
@@ -2424,12 +2454,6 @@
   "places": 69
  },
  {
-  "key": "ago-9f561fbb72",
-  "label": "Site_Selection_GDB · sjalmeha_asu",
-  "url": "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Site_Selection_GDB/FeatureServer/0",
-  "places": 68
- },
- {
   "key": "ago-609c162853",
   "label": "Campus Bike Racks (Public) · julia_lenhardt_urops",
   "url": "https://services7.arcgis.com/ffy1QvCbgGDG2ZGG/arcgis/rest/services/Campus_Bike_Racks_view/FeatureServer/0",
@@ -2445,6 +2469,12 @@
   "key": "ago-9b324c3779",
   "label": "Bike Racks · baltimoreDOT_plan",
   "url": "https://services3.arcgis.com/ZTvQ9NuONePFYofE/arcgis/rest/services/Bike_Racks_2022/FeatureServer/0",
+  "places": 65
+ },
+ {
+  "key": "ago-19dad1ffe0",
+  "label": "King County Transit Facilities With Bicycle Lockers · KingCounty",
+  "url": "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/BIKE_LOCKERS_POINT_714/FeatureServer/0",
   "places": 65
  },
  {
@@ -2472,6 +2502,18 @@
   "places": 64
  },
  {
+  "key": "ago-c93925b764",
+  "label": "ISRC Map _ Bloomington_WFL1 · tongyoon_IU",
+  "url": "https://services.arcgis.com/tKsJAIiLjd90D5q2/arcgis/rest/services/ISRC_Map___Bloomington_WFL1/FeatureServer/6",
+  "places": 64
+ },
+ {
+  "key": "soc-j9kp-gbih",
+  "label": "E-Scooter Corral · data.bloomington.in.gov",
+  "url": "data.bloomington.in.gov/j9kp-gbih",
+  "places": 64
+ },
+ {
   "key": "ago-973ccd0106",
   "label": "Bike Racks · DelMarGIS",
   "url": "https://services2.arcgis.com/p1lWLKTfdeVg9yCK/arcgis/rest/services/DM_BikeRacks/FeatureServer/1",
@@ -2493,6 +2535,12 @@
   "key": "ago-efc1b6f39a",
   "label": "548G Final Assignment _ FK_WFL1 · fionakko_UBC",
   "url": "https://services2.arcgis.com/NlsizNmbMFiinWw4/arcgis/rest/services/548G_Final_Assignment___FK_WFL1/FeatureServer/19",
+  "places": 62
+ },
+ {
+  "key": "ago-80ee809c9c",
+  "label": "Washington County_WFL1 · ROD106@pitt.edu_Pitt",
+  "url": "https://services7.arcgis.com/arZnhQhtvIXpgVPD/arcgis/rest/services/Washington_County_WFL1/FeatureServer/0",
   "places": 62
  },
  {
@@ -2544,6 +2592,12 @@
   "places": 59
  },
  {
+  "key": "ago-28c3756344",
+  "label": "2025 New Scooter Corrals · zarode@milwaukee.gov_mapMKEonline",
+  "url": "https://services1.arcgis.com/5ly0cVV70qsN8Soc/arcgis/rest/services/2025_New_Scooter_Corrals/FeatureServer/0",
+  "places": 59
+ },
+ {
   "key": "ago-1851dc18c2",
   "label": "BPS Heights Interactive Base Layers · bryano1",
   "url": "https://services2.arcgis.com/jCPZmQjF0kIPAohC/arcgis/rest/services/61612_BPS_Heights_Interactive_Base_Layers/FeatureServer/40",
@@ -2577,6 +2631,12 @@
   "key": "ago-6f9d509a87",
   "label": "Bike_Racks_Central_Campus · bengstj2_wwu",
   "url": "https://services.arcgis.com/qboYD3ru0louQq4F/arcgis/rest/services/Bike_Racks_Central_Campus/FeatureServer/0",
+  "places": 58
+ },
+ {
+  "key": "ago-a6f0d8a554",
+  "label": "OSU Stillwater Scooter Parking (OSU) · okdot_gis_statewide",
+  "url": "https://fm-gis-server.okstate.edu/server/rest/services/LandscapeServices/OsuStwScooterParking/MapServer/0",
   "places": 58
  },
  {
@@ -2709,12 +2769,6 @@
   "key": "ago-ded45a0931",
   "label": "ISU Bike Racks_WFL1 · principles_gis15",
   "url": "https://services1.arcgis.com/z5tlnpYHokW9isdE/arcgis/rest/services/ISU_Bike_Racks_WFL1/FeatureServer/0",
-  "places": 49
- },
- {
-  "key": "ago-b01aab4ef3",
-  "label": "Bike Racks IW · wynteri_wwu",
-  "url": "https://services.arcgis.com/qboYD3ru0louQq4F/arcgis/rest/services/Bike_Racks_IW/FeatureServer/0",
   "places": 49
  },
  {
@@ -2970,9 +3024,27 @@
   "places": 38
  },
  {
+  "key": "ago-6b36e6a870",
+  "label": "Micromobility Corrals · EAust@AtlantaGa.Gov_dpwatl",
+  "url": "https://services2.arcgis.com/zLeajbicrDRLQcny/arcgis/rest/services/Micromobility_Corrals/FeatureServer/1",
+  "places": 38
+ },
+ {
   "key": "ago-2cc9e08cbb",
   "label": "Sync Enabled Bike Rack · sidneygis",
   "url": "https://services5.arcgis.com/MNn7A6yzK94Hggl3/arcgis/rest/services/Sync_Enabled_Bike_Rack/FeatureServer/0",
+  "places": 37
+ },
+ {
+  "key": "ago-a27300e029",
+  "label": "Transportation · maps_umd_gis",
+  "url": "https://services9.arcgis.com/1rOwFRpAwrxe0rBl/arcgis/rest/services/Transportation/FeatureServer/3",
+  "places": 37
+ },
+ {
+  "key": "ago-c0a7d01f93",
+  "label": "Transportation_QA · maps_umd_gis",
+  "url": "https://services9.arcgis.com/1rOwFRpAwrxe0rBl/arcgis/rest/services/Transportation_QA/FeatureServer/3",
   "places": 37
  },
  {
@@ -3108,10 +3180,28 @@
   "places": 33
  },
  {
+  "key": "ago-18debe2241",
+  "label": "Transportation · maps_umd_gis",
+  "url": "https://services9.arcgis.com/1rOwFRpAwrxe0rBl/arcgis/rest/services/Transportation/FeatureServer/11",
+  "places": 32
+ },
+ {
+  "key": "ago-57ab20d40d",
+  "label": "Transportation_QA · maps_umd_gis",
+  "url": "https://services9.arcgis.com/1rOwFRpAwrxe0rBl/arcgis/rest/services/Transportation_QA/FeatureServer/11",
+  "places": 32
+ },
+ {
   "key": "ago-7044df32d1",
   "label": "Bicycle Racks view · sbuzaleski_elgis",
   "url": "https://services7.arcgis.com/833h6XYEsfI2T0wc/arcgis/rest/services/Bicycle_Racks_view/FeatureServer/0",
   "places": 32
+ },
+ {
+  "key": "ago-9165ce2acc",
+  "label": "Parking_Transportation · USF_CFRE_GIS",
+  "url": "https://gis.usf.edu/fmserver/rest/services/Campus_Transportation/Parking_Transportation/MapServer/5",
+  "places": 31
  },
  {
   "key": "ago-235f31ddb7",
@@ -3156,6 +3246,12 @@
   "places": 29
  },
  {
+  "key": "ago-9aaf2b310e",
+  "label": "Cyvl Data · bethanybeach_admin",
+  "url": "https://services3.arcgis.com/89zqHBc7qUEWDZX1/arcgis/rest/services/Cyvl_Data/FeatureServer/12",
+  "places": 29
+ },
+ {
   "key": "ago-e0e0cd0665",
   "label": "Bike Racks · billecj_wwu",
   "url": "https://services.arcgis.com/qboYD3ru0louQq4F/arcgis/rest/services/Bike_Racks_Draft/FeatureServer/0",
@@ -3171,6 +3267,12 @@
   "key": "ago-e5db89a275",
   "label": "Bike Rack 20200818 · may.kao",
   "url": "https://services1.arcgis.com/Ps0xUhK5N3PQT26Q/arcgis/rest/services/Bike_Rack_20200818/FeatureServer/0",
+  "places": 28
+ },
+ {
+  "key": "ago-0a998580be",
+  "label": "CampusTransit · kahenrik_asuadmin",
+  "url": "https://services5.arcgis.com/aYs2RC3pluEvAuE3/arcgis/rest/services/CampusTransit/FeatureServer/24",
   "places": 28
  },
  {
@@ -3219,6 +3321,12 @@
   "key": "ago-be0d2f6f8d",
   "label": "DudeDistrictMapService · dweeden",
   "url": "https://services5.arcgis.com/fui97fnwp2uOvw2J/arcgis/rest/services/DudeDistrictMap/FeatureServer/5",
+  "places": 26
+ },
+ {
+  "key": "ago-4c49bb5b31",
+  "label": "UConn Biking Map_WFL1 · ParkingTranspo_UConn",
+  "url": "https://services1.arcgis.com/6ItOFXGFmdtfeOZb/arcgis/rest/services/UConn_Biking_Map_WFL1/FeatureServer/5",
   "places": 26
  },
  {
@@ -3420,6 +3528,18 @@
   "places": 23
  },
  {
+  "key": "ago-40355bc00f",
+  "label": "Scooter Parking · MASWAIM_uncg",
+  "url": "https://services1.arcgis.com/LHR3xygGZdtJuI79/arcgis/rest/services/Scooter_Parking/FeatureServer/0",
+  "places": 23
+ },
+ {
+  "key": "ago-94ee24c52a",
+  "label": "Transportation · szachary_wustladm",
+  "url": "https://services5.arcgis.com/ye41g2AjcwMwCt9y/arcgis/rest/services/Transportation/FeatureServer/43",
+  "places": 22
+ },
+ {
   "key": "ago-de7c86a477",
   "label": "NAMA Scooter Corrals · ncrgis",
   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NAMA_Scooter_Corrals_Public/FeatureServer/0",
@@ -3429,6 +3549,12 @@
   "key": "ago-507abb9694",
   "label": "Reno_Mulimodal_Data · friedlandere_cityofreno",
   "url": "https://services5.arcgis.com/RjM4BJrv5ZkqP4XC/arcgis/rest/services/Reno_Mulimodal_Data/FeatureServer/0",
+  "places": 22
+ },
+ {
+  "key": "ago-c647888318",
+  "label": "Scooter Parking Locations · szachary_wustladm",
+  "url": "https://services5.arcgis.com/ye41g2AjcwMwCt9y/arcgis/rest/services/ScooterParkingPoints/FeatureServer/0",
   "places": 22
  },
  {
@@ -3453,6 +3579,12 @@
   "key": "ago-d3087fd795",
   "label": "CRP 513 May 8 Data Collection · rgmiller@calpoly.edu_CalPoly",
   "url": "https://services1.arcgis.com/0j6vZbECadDEXdAS/arcgis/rest/services/CRP_513_May_8_Data_Collection/FeatureServer/1",
+  "places": 21
+ },
+ {
+  "key": "ago-563f7671c7",
+  "label": "CarolineCountyParksGreenCityGIS · jbeechey@carolinemd.org_CCMD",
+  "url": "https://services6.arcgis.com/M2dyOQipFC1IggF3/arcgis/rest/services/CarolineCountyParksGreenCityGIS/FeatureServer/2",
   "places": 21
  },
  {
@@ -3660,6 +3792,12 @@
   "places": 17
  },
  {
+  "key": "ago-f31793842e",
+  "label": "Motorcycle Parking · dapeng.li_SDState",
+  "url": "https://services2.arcgis.com/1sM9tpOC8N7GGkbw/arcgis/rest/services/Motorcycle_Parking/FeatureServer/0",
+  "places": 17
+ },
+ {
   "key": "soc-dimy-qyej",
   "label": "Bicycle Parking Shelters · data.cityofnewyork.us",
   "url": "data.cityofnewyork.us/dimy-qyej",
@@ -3711,6 +3849,24 @@
   "key": "ago-0446771d16",
   "label": "TST Bike Repair Stations · GreenUmbrella",
   "url": "https://services2.arcgis.com/QGGwkIa5t2mP1HtC/arcgis/rest/services/TST_Bike_Repair_Stations/FeatureServer/0",
+  "places": 16
+ },
+ {
+  "key": "ago-d5e464b7eb",
+  "label": "Parking and Building Layers · smramer_CalPoly",
+  "url": "https://services1.arcgis.com/0j6vZbECadDEXdAS/arcgis/rest/services/Parking_Map/FeatureServer/7",
+  "places": 16
+ },
+ {
+  "key": "ago-0079253e20",
+  "label": "Moped and Motorcycle Parking · MASWAIM_uncg",
+  "url": "https://services1.arcgis.com/LHR3xygGZdtJuI79/arcgis/rest/services/Moped_and_Motorcycle_Parking/FeatureServer/0",
+  "places": 16
+ },
+ {
+  "key": "ago-87ba29a57c",
+  "label": "Motorcycle Parking Points · jlneal",
+  "url": "https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/Motorcycle_Parking_Points/FeatureServer/1",
   "places": 16
  },
  {
@@ -3804,6 +3960,12 @@
   "places": 14
  },
  {
+  "key": "ago-645c63c5f4",
+  "label": "MotorcycleParking · bartjess.CampusMgmt",
+  "url": "https://services2.arcgis.com/LK3Npbr2SGIhQvrH/arcgis/rest/services/MotorcycleParking/FeatureServer/0",
+  "places": 14
+ },
+ {
   "key": "ago-309a2fbbeb",
   "label": "PlaygroundsInNorthwestBozeman_WFL1 · Gphy357_Examples",
   "url": "https://services.arcgis.com/9ecg2KpMLcsUv1Oh/arcgis/rest/services/PlaygroundsInNorthwestBozeman_WFL1/FeatureServer/11",
@@ -3843,6 +4005,18 @@
   "key": "ago-ecd6a7a41b",
   "label": "Fix_it Stations view · jreyling_csu",
   "url": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/arcgis/rest/services/Fix_it_Stations_view/FeatureServer/0",
+  "places": 13
+ },
+ {
+  "key": "ago-6734de4046",
+  "label": "Motorcycle and Scooter Parking Spots at UVIC · Geog104_202609_38",
+  "url": "https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/Motorcycle_and_Scooter_Parking_Spots_at_UVIC/FeatureServer/0",
+  "places": 13
+ },
+ {
+  "key": "ago-5f3413b3df",
+  "label": "Micromobility Corrals · Anne.Conlon@raleighnc.gov_ral",
+  "url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Micromobility_Corrals/FeatureServer/3",
   "places": 13
  },
  {
@@ -3993,6 +4167,12 @@
   "key": "ago-217283135f",
   "label": "Fixit_Stations · PapioNRD6222",
   "url": "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Fixit_Stations/FeatureServer/0",
+  "places": 11
+ },
+ {
+  "key": "ago-715af9c6fe",
+  "label": "MSUM_Campus_Map · User_Backup_MSUM",
+  "url": "https://services5.arcgis.com/moaA3HxQt4OOoZz7/arcgis/rest/services/MSUM_Campus_Map/FeatureServer/2",
   "places": 11
  },
  {
@@ -4206,6 +4386,12 @@
   "places": 9
  },
  {
+  "key": "ago-f97c67edce",
+  "label": "Flexible_Commuting_Map_TEST_WFL1 · mpg225_Harvard_CGA",
+  "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Flexible_Commuting_Map_TEST_WFL1/FeatureServer/2",
+  "places": 9
+ },
+ {
   "key": "ago-fad009bc41",
   "label": "LADOTBikeRepairStations · vladimir.gallegos_ladot",
   "url": "https://services1.arcgis.com/tp9wqSVX1AitKgjd/arcgis/rest/services/LADOTBikeRepairStations/FeatureServer/0",
@@ -4308,6 +4494,18 @@
   "places": 8
  },
  {
+  "key": "ago-664c3ae2df",
+  "label": "Downtown Motorcycle Parking · maryandrews",
+  "url": "https://services.arcgis.com/yygmGNIVQrHqSELP/arcgis/rest/services/Motorcycle_Parking/FeatureServer/3",
+  "places": 8
+ },
+ {
+  "key": "ago-b808ac0297",
+  "label": "Sidewalk Scooter Parking Corrals · erin.curry@dallascityhall.com_DallasGIS",
+  "url": "https://services2.arcgis.com/rwnOSbfKSwyTBcwN/arcgis/rest/services/Sidewalk_Scooter_Parking_Corrals/FeatureServer/9",
+  "places": 8
+ },
+ {
   "key": "ago-016c7cc7eb",
   "label": "Green Earth Nature Preserves · Green_Earth_Director",
   "url": "https://services6.arcgis.com/uLLic6qa9moCfPLX/arcgis/rest/services/Nature_Preserves/FeatureServer/1",
@@ -4365,6 +4563,12 @@
   "key": "ago-23483fdf7a",
   "label": "Map_WFL1 · grandmontrosedale",
   "url": "https://services8.arcgis.com/e8Pu1YrHHRGHG0yu/arcgis/rest/services/Map_WFL1/FeatureServer/60",
+  "places": 7
+ },
+ {
+  "key": "ago-31e96d3efe",
+  "label": "test_health_map_WFL1 · grandmontrosedale",
+  "url": "https://services8.arcgis.com/e8Pu1YrHHRGHG0yu/arcgis/rest/services/test_health_map_WFL1/FeatureServer/32",
   "places": 7
  },
  {
@@ -4446,6 +4650,12 @@
   "places": 6
  },
  {
+  "key": "ago-7ccef3b146",
+  "label": "Micromobility Results Map · adamm321_UofMD",
+  "url": "https://services1.arcgis.com/qTQ6qYkHpxlu0G82/arcgis/rest/services/Micromobility_Results_Map/FeatureServer/0",
+  "places": 6
+ },
+ {
   "key": "ago-db4a2c0cf7",
   "label": "PublicRacks · tdolan@fallschurchva.gov",
   "url": "https://services1.arcgis.com/2hmXRAz4ofcdQP6p/arcgis/rest/services/PublicRacks/FeatureServer/0",
@@ -4479,12 +4689,6 @@
   "key": "ago-e367d9ddf3",
   "label": "Bike Parking_Leesan Mobarek · mobarek.leesan_ZGIS",
   "url": "https://services.arcgis.com/Sf0q24s0oDKgX14j/arcgis/rest/services/Bike_Parking_Leesan_Mobarek/FeatureServer/0",
-  "places": 6
- },
- {
-  "key": "ago-31e1c902be",
-  "label": "Bike Parking_Alireza Asadi · aasadi_TexasTech",
-  "url": "https://services2.arcgis.com/4aUxCaDLaSFPHO9o/arcgis/rest/services/Bike_Parking_Alireza_Asadi/FeatureServer/0",
   "places": 6
  },
  {
@@ -4656,6 +4860,12 @@
   "places": 5
  },
  {
+  "key": "ago-620470112f",
+  "label": "ECU Motorcycle and Moped Parking · benjaminealy",
+  "url": "https://services2.arcgis.com/sJvSsHKKEOKRemAr/arcgis/rest/services/ECUMotorcycleMopedParking/FeatureServer/0",
+  "places": 5
+ },
+ {
   "key": "ago-ce8b9f9ddb",
   "label": "FINAL_AMEN_MERGED_WFL1 · K_orf_IGTLab",
   "url": "https://services.arcgis.com/UnTXoPXBYERF0OH6/arcgis/rest/services/FINAL_AMEN_MERGED_WFL1/FeatureServer/22",
@@ -4671,6 +4881,12 @@
   "key": "ago-978438c699",
   "label": "Livernois Bike Racks · dmovilla_Ferndale",
   "url": "https://services6.arcgis.com/2TPYEzbyXSiAqSUs/arcgis/rest/services/livernois_bike_racks/FeatureServer/0",
+  "places": 4
+ },
+ {
+  "key": "ago-9f03899733",
+  "label": "test_health_map_WFL1 · grandmontrosedale",
+  "url": "https://services8.arcgis.com/e8Pu1YrHHRGHG0yu/arcgis/rest/services/test_health_map_WFL1/FeatureServer/13",
   "places": 4
  },
  {
@@ -4728,6 +4944,18 @@
   "places": 4
  },
  {
+  "key": "ago-62aaa52b51",
+  "label": "Downtown Parking Map_WFL1 · nick.villarrealCOD",
+  "url": "https://services.arcgis.com/iqrNQm6g4Pj36MWn/arcgis/rest/services/Downtown_Parking_Map_WFL1/FeatureServer/1",
+  "places": 4
+ },
+ {
+  "key": "ago-3c3b60c96f",
+  "label": "Downtown Paved Parking · nick.villarrealCOD",
+  "url": "https://services.arcgis.com/iqrNQm6g4Pj36MWn/arcgis/rest/services/Downtown_Paved_Parking/FeatureServer/1",
+  "places": 4
+ },
+ {
   "key": "ago-5c97de83f6",
   "label": "VERA 00004 Rte 13 Data · amcginley_TPD",
   "url": "https://services9.arcgis.com/izXUvkghw2ajVOfV/arcgis/rest/services/VERA_00004_Rte_13_WFL1/FeatureServer/4",
@@ -4773,6 +5001,12 @@
   "key": "ago-fcedcc6fe0",
   "label": "Campus Parking · KRCSMap",
   "url": "https://services6.arcgis.com/WvV9gsmqe7Fxaz9g/arcgis/rest/services/Campus_Parking/FeatureServer/0",
+  "places": 3
+ },
+ {
+  "key": "ago-968242b0aa",
+  "label": "Flexible_Commuting_Map_TEST_WFL1 · mpg225_Harvard_CGA",
+  "url": "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Flexible_Commuting_Map_TEST_WFL1/FeatureServer/3",
   "places": 3
  },
  {
@@ -5256,15 +5490,15 @@
   "places": 1
  },
  {
-  "key": "ago-ad78c88275",
-  "label": "CUCLibraryfirstfloor · claremontcolleges",
-  "url": "https://services.arcgis.com/hVnyNvwbpFFPDV5j/arcgis/rest/services/CUCLibraryfirstfloor/FeatureServer/2",
-  "places": 1
- },
- {
   "key": "ago-3618400967",
   "label": "P2_AccessibilityAudit_PublicView_CAPL · c_pulidolopez@fanshaweonline.ca_Fanshawe",
   "url": "https://services1.arcgis.com/BcZYUdYklVTk714E/arcgis/rest/services/P2_AccessibilityAudit_PublicView_CAPL/FeatureServer/1",
+  "places": 1
+ },
+ {
+  "key": "ago-ad78c88275",
+  "label": "CUCLibraryfirstfloor · claremontcolleges",
+  "url": "https://services.arcgis.com/hVnyNvwbpFFPDV5j/arcgis/rest/services/CUCLibraryfirstfloor/FeatureServer/2",
   "places": 1
  },
  {
@@ -5439,6 +5673,12 @@
   "key": "ago-868d34ad48",
   "label": "app_bike_facilities_WFL1 · roland_DCR",
   "url": "https://services8.arcgis.com/TNoJFjk1LsD45Juj/arcgis/rest/services/app_bike_facilities_WFL1/FeatureServer/191",
+  "places": 1
+ },
+ {
+  "key": "ago-718bfe6226",
+  "label": "Blowing_Rock_Parking · BRPlanner",
+  "url": "https://services5.arcgis.com/qWbsNTne6eidnUv9/arcgis/rest/services/Blowing_Rock_Parking/FeatureServer/1",
   "places": 1
  }
 ]
