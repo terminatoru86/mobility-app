@@ -1,0 +1,25 @@
+name: FOIA contacts
+
+# Where to send a public-records request in each big city that publishes no bike-parking data.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read the city websites
+        run: python3 tool/foia_contacts.py data/foia
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull -q --rebase || true
+          git add data/foia
+          git commit -m "FOIA contacts for cities without open data" || exit 0
+          git push
