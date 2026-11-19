@@ -1,6 +1,10 @@
 import 'dart:convert';
+import 'dart:typed_data';
+
+import 'package:archive/archive.dart' show GZipDecoder;
 
 import 'package:flutter/foundation.dart' show debugPrint;
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -54,6 +58,12 @@ LatLng? _memAt;
 /// Every BMX track, pump track, bike park and skatepark within 25 miles of [around], nearest first.
 /// Kept on the phone for a week; asked again when the rider has moved more than 10 miles.
 Future<List<RidePark>> rideParks(LatLng around) async {
+  final live = await _liveParks(around);
+  final ours = await _ourParks(around);
+  return _sorted(_join(live, ours), around);
+}
+
+Future<List<RidePark>> _liveParks(LatLng around) async {
   const d = Distance();
   if (_mem != null && _memAt != null && d(_memAt!, around) < 16000) return _sorted(_mem!, around);
   SharedPreferences? prefs;
@@ -164,6 +174,86 @@ List<RidePark> _parse(List<Map<String, dynamic>> el) {
             tag(k)!,
       ],
     ));
+  }
+  return out;
+}
+
+
+// ── our list (tool/ride_parks.py): dirt jumps, pump tracks, bike parks, BMX tracks, also the ones run by a
+// business or a club (with their phone, website and hours), from OpenStreetMap, Overture and Foursquare ──
+List<List>? _ourAll;
+
+Future<List<RidePark>> _ourParks(LatLng around) async {
+  try {
+    if (_ourAll == null) {
+      final b = await rootBundle.load('assets/ride/ride_parks.json.gz');
+      final bytes = Uint8List.view(b.buffer, b.offsetInBytes, b.lengthInBytes);
+      _ourAll = (jsonDecode(utf8.decode(GZipDecoder().decodeBytes(bytes))) as List).cast<List>();
+    }
+  } catch (e) {
+    debugPrint('Our ride parks: $e');
+    _ourAll = const [];
+  }
+  const d = Distance();
+  final out = <RidePark>[];
+  for (final r in _ourAll!) {
+    final pos = LatLng((r[1] as num).toDouble(), (r[2] as num).toDouble());
+    if (d(around, pos) > _radiusM) continue;
+    final t = Map<String, dynamic>.from(r[3] as Map);
+    String? tag(String k) => t[k]?.toString();
+    final kind = tag('ride') ?? 'Bike park';
+    out.add(RidePark(
+      id: '${r[0]}',
+      name: tag('name') ?? kind,
+      kind: kind,
+      pos: pos,
+      bikes: true,
+      scooters: false,
+      facts: [
+        if (tag('operator') != null) 'Run by ${tag('operator')}',
+        if (tag('lit') == 'yes') 'Lit at night',
+        if (tag('surface') != null) tag('surface')!.replaceAll('_', ' '),
+        if (tag('fee') == 'no') 'Free',
+        if (tag('fee') == 'yes') 'Paid',
+      ],
+      hours: tag('hours'),
+      phone: tag('phone'),
+      website: tag('website'),
+      address: tag('street'),
+    ));
+  }
+  return out;
+}
+
+/// The same place from the live map and from our list: kept once (our list fills the phone, website, hours).
+List<RidePark> _join(List<RidePark> live, List<RidePark> ours) {
+  const d = Distance();
+  Set<String> w(String n) =>
+      RegExp(r'[a-z0-9]{3,}').allMatches(n.toLowerCase()).map((m) => m[0]!).toSet()..removeAll(const {'the', 'park', 'bike', 'track', 'and'});
+  final out = [...live];
+  for (final o in ours) {
+    final i = out.indexWhere((l) =>
+        l.id == o.id ||
+        (d(l.pos, o.pos) < 250 && (l.name == l.kind || o.name == o.kind || w(l.name).intersection(w(o.name)).isNotEmpty)));
+    if (i < 0) {
+      out.add(o);
+      continue;
+    }
+    final l = out[i];
+    out[i] = RidePark(
+      id: l.id,
+      name: l.name == l.kind ? o.name : l.name,
+      kind: l.kind == 'Skatepark' ? o.kind : l.kind,
+      pos: l.pos,
+      bikes: true,
+      scooters: l.scooters,
+      facts: {...l.facts, ...o.facts}.toList(),
+      hours: l.hours ?? o.hours,
+      phone: l.phone ?? o.phone,
+      website: l.website ?? o.website,
+      address: l.address ?? o.address,
+      photos: l.photos,
+    );
   }
   return out;
 }

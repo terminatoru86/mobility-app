@@ -3,7 +3,7 @@ name: Bike routes (trails)
 # Collects named bicycle / mountain-bike routes with their lines:
 #  1. OpenStreetMap route relations (bicycle, mountain bike, motorcycle) from the Geofabrik extracts, under 50 km
 #  2. Trails that national parks, forests, states, counties and cities publish as open data (ArcGIS Online)
-# Result: data/trails/trails.json.gz and data/trails/REPORT.md. Run by hand; the app does not read it yet.
+# Result: data/trails/trails.json.gz, data/trails/REPORT.md and the pieces the app downloads (data/trails/tiles).
 on:
   workflow_dispatch:
 
@@ -76,6 +76,7 @@ jobs:
         run: |
           python3 tool/trails_merge.py data/trails $(ls parts/*/routes.json parts/*/official.json 2>/dev/null)
           cp parts/trails-official/official_layers.txt data/trails/official_layers.txt 2>/dev/null || true
+          python3 tool/trails_tiles.py
           ls -la data/trails
       - name: Save in the repository
         run: |

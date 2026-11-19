@@ -1,0 +1,37 @@
+name: Places to ride (BMX)
+
+# Dirt jumps, pump tracks, bike parks, BMX tracks, skills parks and velodromes across the US, public or run by a
+# business / club, from OpenStreetMap, Overture and Foursquare. Result: assets/ride/ride_parks.json.gz (in the app,
+# BMX page) and data/ride_parks/REPORT.md.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 10 1 * *' # first day of every month
+
+permissions:
+  contents: write
+
+jobs:
+  parks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install duckdb
+      - name: Find the places
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 tool/ride_parks.py
+      - name: Save in the repository
+        run: |
+          cat data/ride_parks/REPORT.md | head -40
+          git config user.name "mobility-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A assets/ride data/ride_parks
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Places to ride (BMX) $(date -u +%Y-%m-%d)"
+          git pull --rebase -X theirs
+          git push
