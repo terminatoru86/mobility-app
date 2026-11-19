@@ -1,0 +1,75 @@
+name: Paid / private parking (bikes, mopeds, motorcycles, scooters)
+
+# Car parks and garages that also take two-wheelers, and parking businesses for bikes / motorcycles / scooters
+# (bike stations, lockers, motorcycle lots), from OpenStreetMap (Geofabrik extracts), Overture and Foursquare.
+# Result: data/paid_parking.json + data/paid_parking/REPORT.md; then the map packs are rebuilt (data-packs, places).
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 9 2 * *' # second day of every month
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  osm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        region: [us-midwest, us-northeast, us-pacific, us-south, us-west, us/puerto-rico]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq osmium-tool
+          pip install osmium
+      - name: Download the extract
+        run: curl -fsSL --retry 6 --retry-delay 20 --retry-all-errors -C - "https://download.geofabrik.de/north-america/${{ matrix.region }}-latest.osm.pbf" -o region.osm.pbf
+      - name: Car parks that take two-wheelers
+        run: |
+          osmium tags-filter region.osm.pbf nwr/amenity=parking -o cut.osm.pbf
+          rm region.osm.pbf
+          python3 tool/paid_parking.py --pbf cut.osm.pbf osm.json
+      - name: Name the result
+        run: echo "NAME=$(echo '${{ matrix.region }}' | tr '/' '-')" >> $GITHUB_ENV
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pay-osm-${{ env.NAME }}
+          path: osm.json
+          retention-days: 2
+
+  join:
+    needs: osm
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install duckdb
+      - uses: actions/download-artifact@v4
+        with:
+          path: parts
+      - name: Join OSM, Overture and Foursquare
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 tool/paid_parking.py $(ls parts/*/osm.json)
+      - name: Save in the repository
+        run: |
+          cat data/paid_parking/REPORT.md | head -60
+          git config user.name "mobility-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A data/paid_parking.json data/paid_parking
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Paid / private two-wheeler parking $(date -u +%Y-%m-%d)"
+          git pull --rebase -X theirs
+          git push
+      - name: Rebuild the map packs with them
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run data-packs.yml -f mode=places

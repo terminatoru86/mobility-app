@@ -619,7 +619,9 @@ Place? placeFromOsm(Map<String, dynamic> e, {LatLng? from}) {
       }
     // parking for e-scooters / small electric vehicles, and for mopeds and motorcycles
     case 'small_electric_vehicle_parking' || 'kick-scooter_parking' || 'mobility_hub':
-      type = yes('covered') ? PlaceType.parkCovered : PlaceType.parkOutdoor;
+      type = (const ['private', 'customers', 'residents', 'permit'].contains(tag('access')) || yes('fee'))
+          ? PlaceType.parkPrivate
+          : (yes('covered') ? PlaceType.parkCovered : PlaceType.parkOutdoor);
     case 'motorcycle_parking':
       type = (const ['private', 'customers', 'residents', 'permit'].contains(tag('access')) || yes('fee'))
           ? PlaceType.parkPrivate
@@ -664,6 +666,7 @@ Place? placeFromOsm(Map<String, dynamic> e, {LatLng? from}) {
     if (yes('covered')) 'Covered',
     if (tag('fee') == 'no') 'Free',
     if (yes('fee')) 'Paid',
+    if (tag('mobility:in_car_park') == 'yes') 'In a car park',
     if (yes('lit')) 'Lit',
     if (yes('service:bicycle:pump')) 'Pump',
     if (yes('service:bicycle:tools')) 'Tools',
@@ -717,7 +720,8 @@ Place? placeFromOsm(Map<String, dynamic> e, {LatLng? from}) {
     qa: t0.qa,
     tag: type == PlaceType.charging ? _sockets(t) : (type == PlaceType.wash ? _washMode(t) : null),
     // a price only where the parking really charges (fee=yes); a rack on private property is free but private
-    priceNow: type == PlaceType.parkPrivate && yes('fee') ? '\$${(1 + t0.n % 3)}/h' : null,
+    // the real price when the source has it (charge=*), otherwise a test price
+    priceNow: type == PlaceType.parkPrivate && yes('fee') ? (tag('charge') ?? '\$${(1 + t0.n % 3)}/h') : null,
     street: name != null && street.isNotEmpty ? street : null,
     operatorPrice: type == PlaceType.sharing ? '\$1 unlock · \$0.${17 + t0.n % 20}/min' : null,
     accepts: accepts,

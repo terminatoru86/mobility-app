@@ -882,6 +882,16 @@ def fetch_alltheplaces():
     return out
 
 
+def fetch_paid():
+    """Paid / private parking for bikes, mopeds, motorcycles and scooters (data/paid_parking.json, tool/paid_parking.py)."""
+    f = os.path.join(ROOT, 'data', 'paid_parking.json')
+    if not os.path.exists(f):
+        return []
+    out = json.load(open(f, encoding='utf-8'))
+    print(f'Paid / private two-wheeler parking: {len(out)}', flush=True)
+    return out
+
+
 def fetch_own():
     """Places added by hand by the owner of the app (data/own_places.json)."""
     out = []
@@ -1094,7 +1104,7 @@ def main():
                     pass
     counts_src = {}
     for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture), ('foursquare', fetch_foursquare),
-                     ('alltheplaces', fetch_alltheplaces), ('own', fetch_own),
+                     ('alltheplaces', fetch_alltheplaces), ('own', fetch_own), ('paid', fetch_paid),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
         if refresh and name not in refresh:
             continue
@@ -1102,7 +1112,7 @@ def main():
             got = fn()
             # read again and answered: the old rows of this source go, so a place the source
             # (or our filter) no longer has does not stay on the map
-            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/'}.get(name)
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/'}.get(name)
             if old and got:
                 for d in tiles.values():
                     for k in [k for k in d if str(k).startswith(old)]:
@@ -1214,6 +1224,32 @@ def main():
                 for n in ns:
                     seen[(n, round(r[1] / 0.0015), round(r[2] / 0.002))] = r
     print(f'duplicates removed: {dropped} · filled from the copies: {merged}', flush=True)
+    # paid / private two-wheeler parking (pay/...): when the map already has that parking (same kind within ~30 m,
+    # or the same name within ~150 m), the one already there stays and gets the fee, phone, hours, operator
+    n_pay = 0
+    for key, d in tiles.items():
+        near = {}
+        for r in d.values():
+            if not r[0].startswith('pay/') and r[3].get('amenity') in ('bicycle_parking', 'motorcycle_parking', 'small_electric_vehicle_parking'):
+                near.setdefault((round(r[1] / 0.0003), round(r[2] / 0.0004)), []).append(r)
+        for r in [r for r in d.values() if r[0].startswith('pay/')]:
+            gy, gx = round(r[1] / 0.0003), round(r[2] / 0.0004)
+            n = norm(r[3].get('name'))
+            hit = None
+            for i in range(-5, 6):
+                for j in range(-5, 6):
+                    for q in near.get((gy + i, gx + j), []):
+                        dm = math.hypot((q[1] - r[1]) * 111000, (q[2] - r[2]) * 111000 * math.cos(math.radians(r[1])))
+                        if (dm < 30 and q[3].get('amenity') == r[3]['amenity']) or (n and dm < 150 and norm(q[3].get('name')) == n):
+                            hit = q
+            if hit:
+                for k in ('fee', 'charge', 'phone', 'website', 'opening_hours', 'operator', 'access', 'covered'):
+                    if r[3].get(k) and not hit[3].get(k):
+                        hit[3][k] = r[3][k]
+                d.pop(r[0])
+                n_pay += 1
+    print(f'paid parking already on the map (merged): {n_pay}', flush=True)
+
     print(f'open shop / road service from names: {service_flags(r for d in tiles.values() for r in d.values())}', flush=True)
     # phone / website / hours the owner's own consolidated list (Excel) has and the sources lack: data/excel_fill.json
     try:
