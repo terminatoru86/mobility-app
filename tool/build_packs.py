@@ -267,12 +267,16 @@ WANT = re.compile(r'bike\s*rack|bicycle\s*rack|bike\s*parking|bicycle\s*parking|
                   r'micromobility\s*(parking|corral)|scooter\s*corral|bike\s*repair|bicycle\s*repair|fix-?it|'
                   r'repair\s*station|bike\s*locker|bicycle\s*locker|bike\s*station|'
                   r'motorcycle\s*(parking|corral|stall|space|zone)|motorbike\s*parking|moped\s*(parking|corral|stall|zone)|'
-                  r'(e-?)?scooter\s*(parking|corral|stall|zone)|two-?wheel(er|ed)?\s*parking|small\s*electric\s*vehicle', re.I)
+                  r'(e-?)?scooter\s*(parking|corral|stall|zone)|two-?wheel(er|ed)?\s*parking|small\s*electric\s*vehicle|'
+                  r'(e-?bike|ebike|electric\s*bike|scooter|micromobility)\s*charg|bike\s*fix|fixit|repair\s*stand|'
+                  r'bike\s*(maintenance|tool)\s*station|bicycle\s*(maintenance|tool)\s*station|bike\s*amenit|bicycle\s*amenit', re.I)
 
 
 def amenity_for(text):
     """Which OpenStreetMap kind a found layer is, from its name."""
-    if re.search(r'repair|fix', text, re.I):
+    if re.search(r'charg', text, re.I):
+        return 'charging_station'
+    if re.search(r'repair|fix|maintenance\s*station|tool\s*station', text, re.I):
         return 'bicycle_repair_station'
     bike = re.search(r'bi(cycle|ke)', text, re.I)
     if re.search(r'motorcycle|motorbike|moped|two-?wheel', text, re.I) and not bike:
@@ -291,7 +295,11 @@ def discover_arcgis(known, budget_min=25):
     terms = ['"bike rack"', '"bike racks"', '"bicycle racks"', '"bicycle parking"', '"bike parking"',
              '"bike corral"', '"micromobility parking"', '"bike repair"', '"fix-it station"', '"bike lockers"',
              '"motorcycle parking"', '"motorcycle corral"', '"motorcycle spaces"', '"moped parking"',
-             '"scooter parking"', '"scooter corral"', '"e-scooter parking"', '"micromobility corral"']
+             '"scooter parking"', '"scooter corral"', '"e-scooter parking"', '"micromobility corral"',
+             # charging for e-bikes / scooters, repair stands (parks, campuses), campus bike maps
+             '"e-bike charging"', '"ebike charging"', '"scooter charging"', '"micromobility charging"',
+             '"bike repair station"', '"bicycle repair station"', '"repair stand"', '"bike fixit"', '"fixit station"',
+             '"bike maintenance station"', '"bike amenities"', '"bicycle amenities"', '"campus bike"', '"bike facilities"']
     for t in terms:
         for start in range(1, 1000, 100):
             q = urllib.parse.urlencode({
@@ -894,11 +902,48 @@ def fetch_paid():
 
 def fetch_waterfront():
     """What theme parks, marinas and beaches say on their own websites (data/waterfront.json, tool/waterfront.py)."""
-    f = os.path.join(ROOT, 'data', 'waterfront.json')
-    if not os.path.exists(f):
-        return []
-    out = json.load(open(f, encoding='utf-8'))
-    print(f'Theme parks, marinas and beaches (their websites): {len(out)}', flush=True)
+    # + schools, malls, markets, work zones, parks, stations, civic places, sports, hotels (tool/venues.py)
+    files = [os.path.join(ROOT, 'data', 'waterfront.json')]
+    vdir = os.path.join(ROOT, 'data', 'venues')
+    if os.path.isdir(vdir):
+        files += [os.path.join(vdir, f) for f in sorted(os.listdir(vdir)) if f.endswith('.json')]
+    out, seen = [], set()
+    for f in files:
+        if os.path.exists(f):
+            for r in json.load(open(f, encoding='utf-8')):
+                if r[0] not in seen:
+                    seen.add(r[0])
+                    out.append(r)
+    print(f'From the websites of parks, marinas, beaches, schools, malls, stations...: {len(out)}', flush=True)
+    return out
+
+
+def fetch_afdc():
+    """Charging with an ordinary wall outlet (NEMA 5-15 / 5-20), where an e-bike or a scooter charges with its own
+    charger: the US Department of Energy station list (NREL Alternative Fuels Data Center, public domain).
+    NREL_API_KEY if set, else the public DEMO_KEY (enough for this one request)."""
+    key = os.environ.get('NREL_API_KEY') or 'DEMO_KEY'
+    q = urllib.parse.urlencode({'api_key': key, 'fuel_type': 'ELEC', 'ev_connector_type': 'NEMA515,NEMA520',
+                                'status': 'E', 'access': 'public', 'limit': 'all', 'country': 'US'})
+    j = json.loads(http(f'https://developer.nrel.gov/api/alt-fuel-stations/v1.json?{q}', timeout=180))
+    out = []
+    for st in j.get('fuel_stations') or []:
+        lat, lon = st.get('latitude'), st.get('longitude')
+        con = st.get('ev_connector_types') or []
+        if lat is None or lon is None or not ({'NEMA515', 'NEMA520'} & set(con)):
+            continue
+        sockets = {'socket:nema_5_15': 'yes'} if 'NEMA515' in con else {}
+        if 'NEMA520' in con:
+            sockets['socket:nema_5_20'] = 'yes'
+        tags = {'amenity': 'charging_station', 'bicycle': 'yes', 'scooter': 'yes', **sockets,
+                'name': st.get('station_name'), 'operator': st.get('ev_network') if st.get('ev_network') not in (None, 'Non-Networked') else None,
+                'phone': st.get('station_phone'), 'addr:street': st.get('street_address'),
+                'description': 'Wall outlet: bring your own e-bike / scooter charger. ' + (st.get('access_days_time') or ''),
+                'fee': 'no' if re.search(r'\bfree\b', st.get('ev_pricing') or '', re.I) else None,
+                'charge': (st.get('ev_pricing') or None), 'mobility:outlet': 'standard',
+                'source': 'US DOE · Alternative Fuels Data Center'}
+        out.append([f"afdc/{st.get('id')}", round(float(lat), 6), round(float(lon), 6), {k: v for k, v in tags.items() if v}])
+    print(f'AFDC wall-outlet charging: {len(out)}', flush=True)
     return out
 
 
@@ -1114,7 +1159,7 @@ def main():
                     pass
     counts_src = {}
     for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture), ('foursquare', fetch_foursquare),
-                     ('alltheplaces', fetch_alltheplaces), ('own', fetch_own), ('paid', fetch_paid), ('waterfront', fetch_waterfront),
+                     ('alltheplaces', fetch_alltheplaces), ('own', fetch_own), ('paid', fetch_paid), ('waterfront', fetch_waterfront), ('afdc', fetch_afdc),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
         if refresh and name not in refresh:
             continue
@@ -1122,7 +1167,7 @@ def main():
             got = fn()
             # read again and answered: the old rows of this source go, so a place the source
             # (or our filter) no longer has does not stay on the map
-            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/'}.get(name)
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'afdc': 'afdc/'}.get(name)
             if old and got:
                 for d in tiles.values():
                     for k in [k for k in d if str(k).startswith(old)]:
