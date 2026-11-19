@@ -1,0 +1,39 @@
+name: Probe
+
+# Saves the first part of a few web pages / APIs so their format can be read before writing a fetcher.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'space-separated URLs'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch
+        env:
+          URLS: ${{ inputs.urls }}
+        run: |
+          mkdir -p data/probe
+          i=0
+          for u in $URLS; do
+            i=$((i+1))
+            curl -sSL -m 60 -A 'Mozilla/5.0 (compatible; MOBIlityBot/1.0)' -D data/probe/$i.head "$u" -o data/probe/$i.body || true
+            echo "$u" > data/probe/$i.url
+            head -c 60000 data/probe/$i.body > data/probe/$i.txt; rm -f data/probe/$i.body
+          done
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull -q --rebase || true
+          git add data/probe
+          git commit -m "probe" || exit 0
+          git push
