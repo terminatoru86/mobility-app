@@ -13,7 +13,9 @@ groups: campus (schools, colleges, universities), shopping (malls, markets), wor
         parks (city / county parks), transit (train / bus stations, park & ride), civic (libraries, city halls,
         community centers, hospitals), sports (stadiums, sports centers), hotels, government (Social Security, DMV,
         courthouses, post offices, federal / state offices), corporate (campuses of big companies: Google, Apple, Oracle...),
-        offices (office buildings and their property managers, coworking: bike rooms, storage, garages for tenants)
+        offices (office buildings and their property managers, coworking: bike rooms, storage, garages for tenants),
+        travel (vacation areas like Key West: attractions, visitor centers, resorts, campgrounds, museums),
+        safety (police, fire stations, prisons); transit also has ferry terminals and airports
 """
 import json
 import math
@@ -33,13 +35,18 @@ LABEL = {'school': 'School', 'college': 'College', 'university': 'University', '
          'station': 'Station', 'park_ride': 'Park & Ride', 'library': 'Library', 'townhall': 'City hall',
          'community': 'Community center', 'hospital': 'Hospital', 'stadium': 'Stadium', 'sports': 'Sports center',
          'hotel': 'Hotel', 'government': 'Government office', 'ssa': 'Social Security office', 'dmv': 'DMV',
-         'courthouse': 'Courthouse', 'post_office': 'Post office', 'corporate': 'Company campus', 'office_building': 'Office building', 'coworking': 'Coworking', 'airport': 'Airport'}
+         'courthouse': 'Courthouse', 'post_office': 'Post office', 'corporate': 'Company campus', 'office_building': 'Office building', 'coworking': 'Coworking', 'airport': 'Airport',
+         'ferry': 'Ferry terminal', 'attraction': 'Tourist attraction', 'visitor_center': 'Visitor center',
+         'resort': 'Resort', 'campground': 'Campground', 'museum': 'Museum', 'police': 'Police station',
+         'fire_station': 'Fire station', 'prison': 'Prison'}
 GROUP = {'school': 'campus', 'college': 'campus', 'university': 'campus', 'mall': 'shopping', 'market': 'shopping',
          'industrial': 'work', 'business_park': 'work', 'park': 'parks',
          'station': 'transit', 'park_ride': 'transit', 'library': 'civic', 'townhall': 'civic', 'community': 'civic',
          'hospital': 'civic', 'stadium': 'sports', 'sports': 'sports', 'hotel': 'hotels',
          'government': 'government', 'ssa': 'government', 'dmv': 'government', 'courthouse': 'government',
-         'post_office': 'government', 'corporate': 'corporate', 'office_building': 'offices', 'coworking': 'offices', 'airport': 'transit'}
+         'post_office': 'government', 'corporate': 'corporate', 'office_building': 'offices', 'coworking': 'offices', 'airport': 'transit',
+         'ferry': 'transit', 'attraction': 'travel', 'visitor_center': 'travel', 'resort': 'travel', 'campground': 'travel',
+         'museum': 'travel', 'police': 'safety', 'fire_station': 'safety', 'prison': 'safety'}
 MAX_SITES = 30000
 SSA = re.compile(r'social\s+security|\bssa\b', re.I)
 DMV = re.compile(r'\b(dmv|bmv|mvd|rmv|mva|motor\s+vehicles?|driver\s+(services|license|licensing)|secretary\s+of\s+state\s+(facility|driver)|license\s+(branch|office)|tag\s+office)\b', re.I)
@@ -73,6 +80,8 @@ def kind_of_osm(t):
     if t.get('public_transport') == 'station' or t.get('railway') in ('station', 'halt') or a == 'bus_station' \
             or t.get('station') in ('subway', 'light_rail', 'train'):
         return 'station'
+    if a == 'ferry_terminal' or (t.get('public_transport') == 'station' and t.get('ferry') == 'yes'):
+        return 'ferry'
     if t.get('aeroway') in ('aerodrome', 'terminal') and (t.get('iata') or t.get('website') or t.get('aeroway') == 'terminal'):
         return 'airport'
     if t.get('park_ride') in ('yes', 'bus', 'train') or (a == 'parking' and re.search(r'park\s*(&|and|n)\s*ride', t.get('name') or '', re.I)):
@@ -92,6 +101,23 @@ def kind_of_osm(t):
     if t.get('tourism') == 'hotel':
         return 'hotel'
     name = t.get('name') or ''
+    if a == 'police':
+        return 'police'
+    if a == 'fire_station':
+        return 'fire_station'
+    if a == 'prison':
+        return 'prison'
+    tour = t.get('tourism')
+    if tour == 'attraction' or tour == 'theme_park' and False:
+        return 'attraction'
+    if tour == 'information' and t.get('information') in ('office', 'visitor_centre'):
+        return 'visitor_center'
+    if tour in ('resort',) or t.get('leisure') == 'resort':
+        return 'resort'
+    if tour in ('camp_site', 'caravan_site'):
+        return 'campground'
+    if tour == 'museum':
+        return 'museum'
     if a == 'courthouse':
         return 'courthouse'
     if a == 'post_office':
@@ -122,6 +148,22 @@ def kind_of_cat(cat):
         return 'market'
     if re.search(r'industrial[\s_]*(estate|park|area)|business[\s_]*park|office[\s_]*park|technology[\s_]*park|research[\s_]*park', c):
         return 'business_park'
+    if re.search(r'ferry', c) and not re.search(r'rental|charter', c):
+        return 'ferry'
+    if re.search(r'police', c):
+        return 'police'
+    if re.search(r'fire[\s_]*(station|department)', c):
+        return 'fire_station'
+    if re.search(r'prison|jail|correctional|detention', c):
+        return 'prison'
+    if re.search(r'visitor[\s_]*(center|centre|information)|tourist[\s_]*information', c):
+        return 'visitor_center'
+    if re.search(r'tourist[\s_]*attraction|landmark|historic[\s_]*site|monument|lighthouse|scenic[\s_]*(point|lookout)', c):
+        return 'attraction'
+    if re.search(r'campground|camp[\s_]*site|rv[\s_]*park', c):
+        return 'campground'
+    if re.search(r'\bmuseum', c):
+        return 'museum'
     if re.search(r'\bairport|airport[\s_]*terminal', c) and not re.search(r'shuttle|parking|rental|lounge|hotel', c):
         return 'airport'
     if re.search(r'train[\s_]*station|bus[\s_]*station|transit[\s_]*station|metro[\s_]*station|subway|light[\s_]*rail|railway[\s_]*station|bus[\s_]*terminal', c):
@@ -173,7 +215,8 @@ def from_pbf(pbf, out_json):
         name = t.get('name')
         if not k or not name:
             return
-        if k in ('industrial', 'business_park', 'park', 'government', 'corporate', 'office_building', 'coworking') and not (t.get('website') or t.get('contact:website') or t.get('operator')):
+        if k in ('industrial', 'business_park', 'park', 'government', 'corporate', 'office_building', 'coworking',
+                 'attraction', 'museum', 'campground', 'resort') and not (t.get('website') or t.get('contact:website') or t.get('operator')):
             return  # thousands of unnamed-on-the-web lots: only the ones with a website or a manager
         dest.append([oid, round(lat, 6), round(lon, 6), {x: v for x, v in {
             'kind': k, 'name': name, 'website': t.get('website') or t.get('contact:website') or t.get('url'),
@@ -204,7 +247,9 @@ def overture(group):
     release = release.strip('./').split('/')[0]
     rx = {'campus': 'school|college|universit', 'shopping': 'mall|shopping_center|market|bazaar',
           'work': 'industrial|business_park|office_park|technology_park|research_park', 'parks': 'park',
-          'transit': 'station|park_and_ride|park_ride|transit|subway|light_rail|bus_terminal|airport', 'civic': 'librar|city_hall|town_hall|community_center|recreation_center|hospital',
+          'transit': 'station|park_and_ride|park_ride|transit|subway|light_rail|bus_terminal|airport|ferry',
+          'travel': 'tourist|attraction|landmark|historic|monument|lighthouse|scenic|visitor|resort|campground|camp_site|rv_park|museum',
+          'safety': 'police|fire_station|fire_department|prison|jail|correctional|detention', 'civic': 'librar|city_hall|town_hall|community_center|recreation_center|hospital',
           'sports': 'stadium|arena|sports|athletic', 'hotels': 'hotel|resort',
           'government': 'government|social_security|motor_vehicle|dmv|courthouse|post_office|federal|public_service',
           'corporate': 'corporate|headquarters|office|technology|software|company',
@@ -334,6 +379,10 @@ def test():
     assert kind_of_osm({'aeroway': 'aerodrome', 'iata': 'ORD'}) == 'airport' and kind_of_cat('airport') == 'airport'
     assert kind_of_osm({'railway': 'station', 'station': 'subway'}) == 'station'
     assert kind_of_cat('airport_shuttle') is None
+    assert kind_of_osm({'amenity': 'ferry_terminal'}) == 'ferry' and kind_of_osm({'amenity': 'police'}) == 'police'
+    assert kind_of_osm({'tourism': 'information', 'information': 'office'}) == 'visitor_center'
+    assert kind_of_cat('ferry_service') == 'ferry' and kind_of_cat('tourist_attraction') == 'attraction'
+    assert kind_of_cat('fire_department') == 'fire_station' and kind_of_cat('jail_and_prison') == 'prison'
     assert kind_of_cat('college_university') == 'university' and kind_of_cat('elementary_school') == 'school'
     s = wf.what_page_says('Campus bike repair stations are located outside the library and the student union. '
                           'E-bike charging is available in Garage B.')

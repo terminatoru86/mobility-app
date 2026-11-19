@@ -54,7 +54,9 @@ jobs:
             nwr/amenity=courthouse,post_office,public_building,coworking_space nwr/office=government,company,coworking nwr/government \
             nwr/building=office,commercial nwr/aeroway=aerodrome,terminal nwr/railway=halt \
             nwr/shop=mall nwr/landuse=industrial,commercial,retail nwr/leisure=park,stadium,sports_centre \
-            nwr/public_transport=station nwr/railway=station nwr/park_ride nwr/tourism=hotel -o ven.osm.pbf
+            nwr/public_transport=station nwr/railway=station nwr/park_ride nwr/tourism=hotel \
+            nwr/amenity=ferry_terminal,police,fire_station,prison nwr/tourism=attraction,information,resort,camp_site,caravan_site,museum \
+            nwr/leisure=resort -o ven.osm.pbf
           rm region.osm.pbf
           python3 tool/venues.py --pbf ven.osm.pbf ven.json && rm ven.osm.pbf
       - name: Name the result
@@ -133,7 +135,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        group: [offices, corporate, transit, campus, shopping, work, parks, civic, sports, hotels, government]
+        group: [offices, corporate, transit, campus, shopping, work, parks, civic, sports, hotels, government, travel, safety]
     steps:
       - name: Wanted this time?
         id: want
