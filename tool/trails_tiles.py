@@ -5,7 +5,7 @@
 Each piece is a list of routes: [id, name, kind, km, operator, from, to, website, lines, sights]
   kind  : bicycle / mtb / motorcycle
   lines : the route's pieces in riding order, each a flat [lat, lon, lat, lon, ...] list (simplified to ~30 m)
-  sights: what riders see along the way, [[km from the start, 'L' | 'R' | 'on', name, kind], ...] (canyons, waterfalls,
+  sights: what riders see along the way, [[km from the start, 'L' | 'R' | 'on', name, kind, lat, lon], ...] (canyons, waterfalls,
           peaks, lakes, bridges, lighthouses, monuments, statues, museums, viewpoints), from tool/bike_paths.py
 The same route published twice (same name, length and start) is kept once; routes named only with a code
 (\"Nfst-2925720\", \"10\") are left out: a rider can't tell what they are.
@@ -149,10 +149,10 @@ def sights_along(segs, grid, most=12):
         d, m, cross = best
         seen.add(name)
         side = 'on' if d < 40 else ('L' if cross > 0 else 'R')
-        out.append((far >= 1500, -d, round(m / 1000, 1), side, name, kind))
+        out.append((far >= 1500, -d, round(m / 1000, 1), side, name, kind, lat, lon))
     out.sort(key=lambda x: (not x[0], -x[1]))  # landmarks seen from far first, then the nearest
     keep = sorted(out[:most], key=lambda x: x[2])
-    return [[x[2], x[3], x[4], x[5]] for x in keep]
+    return [[x[2], x[3], x[4], x[5], x[6], x[7]] for x in keep]
 
 
 def main():
