@@ -11,7 +11,8 @@ A website shared by many places (a school district, a park district, a mall comp
   python3 tool/venues.py --group campus part1.json part2.json   one group -> data/venues/<group>.json + REPORT
 groups: campus (schools, colleges, universities), shopping (malls, markets), work (industrial zones, business parks),
         parks (city / county parks), transit (train / bus stations, park & ride), civic (libraries, city halls,
-        community centers, hospitals), sports (stadiums, sports centers), hotels
+        community centers, hospitals), sports (stadiums, sports centers), hotels, government (Social Security, DMV,
+        courthouses, post offices, federal / state offices), corporate (campuses of big companies: Google, Apple, Oracle...)
 """
 import json
 import math
@@ -30,12 +31,27 @@ LABEL = {'school': 'School', 'college': 'College', 'university': 'University', '
          'industrial': 'Industrial zone', 'business_park': 'Business park', 'park': 'Park',
          'station': 'Station', 'park_ride': 'Park & Ride', 'library': 'Library', 'townhall': 'City hall',
          'community': 'Community center', 'hospital': 'Hospital', 'stadium': 'Stadium', 'sports': 'Sports center',
-         'hotel': 'Hotel'}
+         'hotel': 'Hotel', 'government': 'Government office', 'ssa': 'Social Security office', 'dmv': 'DMV',
+         'courthouse': 'Courthouse', 'post_office': 'Post office', 'corporate': 'Company campus'}
 GROUP = {'school': 'campus', 'college': 'campus', 'university': 'campus', 'mall': 'shopping', 'market': 'shopping',
          'industrial': 'work', 'business_park': 'work', 'park': 'parks',
          'station': 'transit', 'park_ride': 'transit', 'library': 'civic', 'townhall': 'civic', 'community': 'civic',
-         'hospital': 'civic', 'stadium': 'sports', 'sports': 'sports', 'hotel': 'hotels'}
-MAX_SITES = 30000  # per group, so one run stays within the time limit
+         'hospital': 'civic', 'stadium': 'sports', 'sports': 'sports', 'hotel': 'hotels',
+         'government': 'government', 'ssa': 'government', 'dmv': 'government', 'courthouse': 'government',
+         'post_office': 'government', 'corporate': 'corporate'}
+MAX_SITES = 30000
+SSA = re.compile(r'social\s+security|\bssa\b', re.I)
+DMV = re.compile(r'\b(dmv|bmv|mvd|rmv|mva|motor\s+vehicles?|driver\s+(services|license|licensing)|secretary\s+of\s+state\s+(facility|driver)|license\s+(branch|office)|tag\s+office)\b', re.I)
+BIG = re.compile(r'\b(google|alphabet|apple|oracle|microsoft|amazon|meta\s+platforms|facebook|intel|cisco|ibm|salesforce|adobe|nvidia|netflix|'
+                 r'tesla|boeing|lockheed|northrop|raytheon|general\s+motors|ford\s+motor|general\s+electric|ge\s+(aerospace|healthcare|vernova)|'
+                 r'jpmorgan|bank\s+of\s+america|wells\s+fargo|citi(group|bank)?|goldman|morgan\s+stanley|state\s+farm|allstate|'
+                 r'walmart|target\s+corp|nike|starbucks|mcdonald|boeing|caterpillar|deere|abbott|abbvie|pfizer|merck|johnson\s*&\s*johnson|'
+                 r'medtronic|qualcomm|amd|hp\s+inc|hewlett|dell|vmware|broadcom|paypal|ebay|uber|lyft|airbnb|linkedin|yahoo|'
+                 r'servicenow|workday|intuit|autodesk|zoom|dropbox|twitter|snap|pinterest|expedia|t-mobile|verizon|at&t|comcast|'
+                 r'disney|warner|paramount|sony|samsung|toyota|honda|nissan|hyundai|bmw|mercedes|volkswagen|siemens|bosch|'
+                 r'united\s+airlines|american\s+airlines|delta\s+air|fedex|ups|kraft|mondelez|pepsico|coca-?cola|procter|3m|'
+                 r'motorola|zebra|grainger|discover|exelon|accenture|deloitte|kpmg|pwc|ernst|mckinsey|capital\s+one|visa|mastercard|'
+                 r'american\s+express|humana|cigna|unitedhealth|cvs|walgreens|kaiser|genentech|amgen|gilead|biogen|moderna)\b', re.I)  # per group, so one run stays within the time limit
 
 
 def kind_of_osm(t):
@@ -71,6 +87,18 @@ def kind_of_osm(t):
         return 'sports'
     if t.get('tourism') == 'hotel':
         return 'hotel'
+    name = t.get('name') or ''
+    if a == 'courthouse':
+        return 'courthouse'
+    if a == 'post_office':
+        return 'post_office'
+    if t.get('office') == 'government' or t.get('government'):
+        return 'ssa' if SSA.search(name) else 'dmv' if DMV.search(name) else 'government'
+    if DMV.search(name) and (t.get('office') or a == 'public_building'):
+        return 'dmv'
+    if t.get('office') in ('company', 'corporate') or t.get('landuse') == 'commercial' or t.get('building') in ('office', 'commercial'):
+        if BIG.search(name) or BIG.search(t.get('operator') or '') or re.search(r'\b(campus|headquarters|hq|corporate\s+(center|campus|park))\b', name, re.I):
+            return 'corporate'
     return None
 
 
@@ -104,6 +132,18 @@ def kind_of_cat(cat):
         return 'sports'
     if re.search(r'\bhotel\b|\bresort\b', c):
         return 'hotel'
+    if re.search(r'social[\s_]*security', c):
+        return 'ssa'
+    if re.search(r'motor[\s_]*vehicle|dmv|driver[\s_]*licens', c):
+        return 'dmv'
+    if re.search(r'courthouse|court[\s_]*house', c):
+        return 'courthouse'
+    if re.search(r'post[\s_]*office', c):
+        return 'post_office'
+    if re.search(r'government|federal|public[\s_]*service', c):
+        return 'government'
+    if re.search(r'corporate[\s_]*(office|campus)|headquarters', c):
+        return 'corporate'
     if re.search(r'(^|[>|_\s])park($|[\s_|])|city[\s_]*park|national[\s_]*park|state[\s_]*park|county[\s_]*park', c) \
             and not re.search(r'parking|amusement|water[\s_]*park|theme|rv[\s_]*park|dog[\s_]*park|skate|trailer|mobile[\s_]*home', c):
         return 'park'
@@ -119,7 +159,7 @@ def from_pbf(pbf, out_json):
         name = t.get('name')
         if not k or not name:
             return
-        if k in ('industrial', 'business_park', 'park') and not (t.get('website') or t.get('contact:website') or t.get('operator')):
+        if k in ('industrial', 'business_park', 'park', 'government', 'corporate') and not (t.get('website') or t.get('contact:website') or t.get('operator')):
             return  # thousands of unnamed-on-the-web lots: only the ones with a website or a manager
         dest.append([oid, round(lat, 6), round(lon, 6), {x: v for x, v in {
             'kind': k, 'name': name, 'website': t.get('website') or t.get('contact:website') or t.get('url'),
@@ -151,7 +191,9 @@ def overture(group):
     rx = {'campus': 'school|college|universit', 'shopping': 'mall|shopping_center|market|bazaar',
           'work': 'industrial|business_park|office_park|technology_park|research_park', 'parks': 'park',
           'transit': 'station|park_and_ride|park_ride|transit', 'civic': 'librar|city_hall|town_hall|community_center|recreation_center|hospital',
-          'sports': 'stadium|arena|sports|athletic', 'hotels': 'hotel|resort'}[group]
+          'sports': 'stadium|arena|sports|athletic', 'hotels': 'hotel|resort',
+          'government': 'government|social_security|motor_vehicle|dmv|courthouse|post_office|federal|public_service',
+          'corporate': 'corporate|headquarters|office|technology|software|company'}[group]
     con = duckdb.connect()
     con.execute("INSTALL httpfs; LOAD httpfs; SET s3_region='us-west-2';")
     q = f"""
@@ -172,6 +214,10 @@ def overture(group):
     out = []
     for i, n, c, la, lo, w, ph in rows:
         k = kind_of_cat(c)
+        if group == 'government' and n:
+            k = 'ssa' if SSA.search(n) else 'dmv' if DMV.search(n) else k
+        if group == 'corporate':
+            k = 'corporate' if n and (BIG.search(n) or re.search(r'\b(campus|headquarters|hq)\b', n, re.I)) else None
         if k and n and GROUP[k] == group:
             out.append([f'ovt/{i}', round(la, 6), round(lo, 6), {x: v for x, v in {
                 'kind': k, 'name': n, 'website': w, 'phone': ph, 'source': 'Overture Maps'}.items() if v}])
@@ -256,6 +302,10 @@ def test():
     assert kind_of_cat('park') == 'park' and kind_of_cat('parking') is None and kind_of_cat('dog_park') is None
     assert kind_of_osm({'railway': 'station'}) == 'station' and kind_of_osm({'amenity': 'library'}) == 'library'
     assert kind_of_cat('train_station') == 'station' and kind_of_cat('hotel') == 'hotel' and kind_of_cat('stadium_arena') == 'stadium'
+    assert kind_of_osm({'office': 'government', 'name': 'Social Security Administration'}) == 'ssa'
+    assert kind_of_osm({'office': 'government', 'name': 'Illinois Secretary of State Driver Services Facility'}) == 'dmv'
+    assert kind_of_osm({'office': 'company', 'name': 'Google Chicago'}) == 'corporate'
+    assert kind_of_osm({'office': 'company', 'name': 'Joe Plumbing LLC'}) is None
     assert kind_of_cat('college_university') == 'university' and kind_of_cat('elementary_school') == 'school'
     s = wf.what_page_says('Campus bike repair stations are located outside the library and the student union. '
                           'E-bike charging is available in Garage B.')

@@ -8,6 +8,11 @@ name: Schools, malls, markets, work zones, parks, stations
 # layers and the wall-outlet charging list).
 on:
   workflow_dispatch:
+    inputs:
+      groups:
+        description: 'which groups (comma list), or all'
+        required: false
+        default: 'all'
   schedule:
     - cron: '27 7 4 * *' # fourth day of every month
 
@@ -37,6 +42,7 @@ jobs:
         run: |
           osmium tags-filter region.osm.pbf \
             nwr/amenity=school,college,university,marketplace,library,townhall,community_centre,hospital,bus_station \
+            nwr/amenity=courthouse,post_office,public_building nwr/office=government,company nwr/government \
             nwr/shop=mall nwr/landuse=industrial,commercial,retail nwr/leisure=park,stadium,sports_centre \
             nwr/public_transport=station nwr/railway=station nwr/park_ride nwr/tourism=hotel -o cut.osm.pbf
           rm region.osm.pbf
@@ -57,20 +63,31 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        group: [campus, shopping, work, parks, transit, civic, sports, hotels]
+        group: [campus, shopping, work, parks, transit, civic, sports, hotels, government, corporate]
     steps:
+      - name: Wanted this time?
+        id: want
+        run: |
+          g="${{ github.event.inputs.groups || 'all' }}"
+          if [ "$g" = "all" ] || echo ",$g," | grep -q ",${{ matrix.group }},"; then echo "go=1" >> $GITHUB_OUTPUT; fi
       - uses: actions/checkout@v4
+        if: steps.want.outputs.go
       - uses: actions/setup-python@v5
+        if: steps.want.outputs.go
         with:
           python-version: '3.12'
       - run: pip install duckdb
+        if: steps.want.outputs.go
       - uses: actions/download-artifact@v4
+        if: steps.want.outputs.go
         with:
           pattern: ven-osm-*
           path: parts
       - name: Read the websites
+        if: steps.want.outputs.go
         run: python3 tool/venues.py --group ${{ matrix.group }} $(ls parts/*/part.json)
       - uses: actions/upload-artifact@v4
+        if: steps.want.outputs.go
         with:
           name: ven-${{ matrix.group }}
           path: data/venues/

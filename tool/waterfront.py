@@ -283,7 +283,8 @@ def _get(url, timeout=10):
 
 
 LINKS = re.compile(r'park(ing)?|getting[\s_-]*here|directions|plan[\s_-]*(your[\s_-]*)?visit|visit|transport|amenit|faq|'
-                   r'bike|bicycle|access|hours|marina[\s_-]*info|facilities|guest[\s_-]*info', re.I)
+                   r'bike|bicycle|access|hours|marina[\s_-]*info|facilities|guest[\s_-]*info|commut|sustainab|campus|'
+                   r'bike[\s_-]*to[\s_-]*work|office[\s_-]*(info|locations?)|locations?|visitor', re.I)
 
 
 def read_site(url):
