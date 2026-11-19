@@ -3,6 +3,8 @@ skills parks and velodromes, public or run by a business / club (like "The Garde
 
   python3 tool/ride_parks.py            -> assets/ride/ride_parks.json.gz + data/ride_parks/REPORT.md
   python3 tool/ride_parks.py --test     -> only checks the name rules
+  python3 tool/ride_parks.py --pbf cut.osm.pbf part.json   -> OSM places of one Geofabrik extract
+  python3 tool/ride_parks.py part1.json part2.json ...      -> the list, with OSM from those parts (no Overpass)
 
 Sources (open data):
   1. OpenStreetMap (Overpass): leisure=bikepark, cycling=pump_track, sport=bmx, mtb / cycling tracks,
@@ -83,6 +85,54 @@ def is_business_noise(name, tags=None):
 
 
 # ── 1. OpenStreetMap ──
+def osm_record(oid, lat, lon, t):
+    """One OSM element (tags t) as a place to ride, or None."""
+    name = t.get('name', '')
+    if is_business_noise(name, t):
+        return None
+    if t.get('leisure') == 'skatepark' and 'bmx' not in (t.get('sport') or '') and not RIDE.search(name):
+        return None  # plain skateparks: the app finds them live
+    if t.get('leisure') in ('park', 'recreation_ground', 'pitch', 'track', 'sports_centre') and not (
+            RIDE.search(name) or t.get('sport') or t.get('cycling')):
+        return None
+    k = kind_of(name, t)
+    if not k:
+        return None
+    return [oid, round(lat, 6), round(lon, 6), clean({
+        'name': name or None, 'ride': k, 'phone': t.get('phone') or t.get('contact:phone'),
+        'website': t.get('website') or t.get('contact:website'), 'hours': t.get('opening_hours'),
+        'street': ' '.join(x for x in (t.get('addr:housenumber'), t.get('addr:street')) if x) or None,
+        'operator': t.get('operator'), 'fee': t.get('fee'), 'lit': t.get('lit'), 'surface': t.get('surface'),
+        'access': t.get('access'), 'source': 'OpenStreetMap'})]
+
+
+def osm_from_pbf(pbf, out_json):
+    """From a Geofabrik extract already cut with osmium tags-filter (see ride-parks.yml). Ways: the middle of their nodes."""
+    import osmium
+    found = []
+
+    class H(osmium.SimpleHandler):
+        def node(self, n):
+            if n.tags and n.location.valid():
+                r = osm_record(f'node/{n.id}', n.location.lat, n.location.lon, dict(n.tags))
+                if r:
+                    found.append(r)
+
+        def way(self, w):
+            if not w.tags:
+                return
+            pts = [(nd.lat, nd.lon) for nd in w.nodes if nd.location.valid()]
+            if not pts:
+                return
+            r = osm_record(f'way/{w.id}', sum(p[0] for p in pts) / len(pts), sum(p[1] for p in pts) / len(pts), dict(w.tags))
+            if r:
+                found.append(r)
+
+    H().apply_file(pbf, locations=True)
+    json.dump(found, open(out_json, 'w'))
+    print(f'{pbf}: {len(found)} places to ride', flush=True)
+
+
 def overpass_box(s, w, n, e, q_for, depth=0):
     """One box; when Overpass times out or refuses it, the box is cut in 4 and asked again (twice at most)."""
     bb = f'{s},{w},{n},{e}'
@@ -128,22 +178,10 @@ def fetch_osm():
             t = el.get('tags') or {}
             lat = el.get('lat') or (el.get('center') or {}).get('lat')
             lon = el.get('lon') or (el.get('center') or {}).get('lon')
-            if lat is None or lon is None:
-                continue
-            name = t.get('name', '')
-            if is_business_noise(name, t):
-                continue
-            if t.get('leisure') == 'skatepark' and 'bmx' not in (t.get('sport') or '') and not RIDE.search(name):
-                continue  # plain skateparks: the app finds them live
-            k = kind_of(name, t)
-            if not k:
-                continue
-            out.append([f'{el["type"]}/{el["id"]}', round(lat, 6), round(lon, 6), clean({
-                'name': name or None, 'ride': k, 'phone': t.get('phone') or t.get('contact:phone'),
-                'website': t.get('website') or t.get('contact:website'), 'hours': t.get('opening_hours'),
-                'street': ' '.join(x for x in (t.get('addr:housenumber'), t.get('addr:street')) if x) or None,
-                'operator': t.get('operator'), 'fee': t.get('fee'), 'lit': t.get('lit'), 'surface': t.get('surface'),
-                'access': t.get('access'), 'source': 'OpenStreetMap'})])
+            if lat is not None and lon is not None:
+                r = osm_record(f'{el["type"]}/{el["id"]}', lat, lon, t)
+                if r:
+                    out.append(r)
         print(f'OSM box {bb}: {len(out) - n0}', flush=True)
     return out
 
@@ -310,6 +348,10 @@ def main():
     test()
     if '--test' in sys.argv:
         return
+    if '--pbf' in sys.argv:
+        i = sys.argv.index('--pbf')
+        osm_from_pbf(sys.argv[i + 1], sys.argv[i + 2])
+        return
     # the three sources at the same time: a slow Overpass does not hold up the other two
     from concurrent.futures import ThreadPoolExecutor
 
@@ -320,8 +362,13 @@ def main():
         except Exception as err:
             print(f'{name} failed: {err}', flush=True)
             return []
+    osm_files = [a for a in sys.argv[1:] if a.endswith('.json')]
+    if osm_files:  # OSM already read from the Geofabrik extracts: no Overpass
+        osm = lambda: [r for f in osm_files for r in json.load(open(f))]
+    else:
+        osm = fetch_osm
     with ThreadPoolExecutor(3) as ex:
-        parts = list(ex.map(run, (('osm', fetch_osm), ('overture', fetch_overture), ('foursquare', fetch_foursquare))))
+        parts = list(ex.map(run, (('osm', osm), ('overture', fetch_overture), ('foursquare', fetch_foursquare))))
     allp = merge(parts)
     allp.sort(key=lambda p: (p[1], p[2]))
     out = os.path.join(ROOT, 'assets', 'ride', 'ride_parks.json.gz')

@@ -1,8 +1,9 @@
 name: Places to ride (BMX)
 
 # Dirt jumps, pump tracks, bike parks, BMX tracks, skills parks and velodromes across the US, public or run by a
-# business / club, from OpenStreetMap, Overture and Foursquare. Result: assets/ride/ride_parks.json.gz (in the app,
-# BMX page) and data/ride_parks/REPORT.md.
+# business / club. OpenStreetMap is read from the Geofabrik extracts (one job per region, no Overpass), then joined
+# with Overture and Foursquare. Result: assets/ride/ride_parks.json.gz (in the app, BMX page) and
+# data/ride_parks/REPORT.md.
 on:
   workflow_dispatch:
   schedule:
@@ -12,19 +13,54 @@ permissions:
   contents: write
 
 jobs:
-  parks:
+  osm:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        region: [us-midwest, us-northeast, us-pacific, us-south, us-west, us/puerto-rico]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq osmium-tool
+          pip install osmium
+      - name: Download the extract
+        run: curl -fsSL --retry 6 --retry-delay 20 --retry-all-errors -C - "https://download.geofabrik.de/north-america/${{ matrix.region }}-latest.osm.pbf" -o region.osm.pbf
+      - name: Places to ride in this region
+        run: |
+          osmium tags-filter region.osm.pbf \
+            nwr/leisure=bikepark,track,pitch,sports_centre,park,recreation_ground,skatepark \
+            nwr/cycling=pump_track nwr/sport=bmx,mtb,cycling -o cut.osm.pbf
+          rm region.osm.pbf
+          python3 tool/ride_parks.py --pbf cut.osm.pbf osm.json
+      - name: Name the result
+        run: echo "NAME=$(echo '${{ matrix.region }}' | tr '/' '-')" >> $GITHUB_ENV
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ride-osm-${{ env.NAME }}
+          path: osm.json
+          retention-days: 2
+
+  parks:
+    needs: osm
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install duckdb
-      - name: Find the places
+      - uses: actions/download-artifact@v4
+        with:
+          path: parts
+      - name: Join OSM, Overture and Foursquare
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: python3 tool/ride_parks.py
+        run: python3 tool/ride_parks.py $(ls parts/*/osm.json)
       - name: Save in the repository
         run: |
           cat data/ride_parks/REPORT.md | head -40
