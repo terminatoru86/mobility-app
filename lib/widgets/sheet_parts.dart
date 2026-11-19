@@ -659,9 +659,9 @@ class _VehicleDeckState extends State<VehicleDeck> {
   bool _open = false;
 
   static const _kinds = [Vehicle.bike, Vehicle.scooter, Vehicle.moped, Vehicle.moto];
-  // the lights of a dashboard (check engine, oil, ABS, traction control, water temperature) / what a shop also sells
-  static const _service = ['engine', 'oil', 'abs', 'tc', 'temp'];
-  static const _shop = ['helmet', 'gloves', 'frame', 'oil'];
+  // the lights of a dashboard (ABS, check engine, oil, water temperature, brakes, key) / what a shop also sells
+  static const _service = ['abs', 'engine', 'oil', 'temp', 'brake', 'key'];
+  static const _shop = ['helmet', 'oilbottle', 'gloves', 'frame'];
 
   static String _name(Vehicle v) => switch (v) {
         Vehicle.bike || Vehicle.ebike => 'Bikes',
@@ -670,18 +670,34 @@ class _VehicleDeckState extends State<VehicleDeck> {
         Vehicle.moto => 'Motos',
       };
 
-  Widget _pictos(double size, double gap) {
-    final l = widget.place.type == PlaceType.service ? _service : _shop;
-    return Center(
-      child: Wrap(
-        alignment: WrapAlignment.center,
-        crossAxisAlignment: WrapCrossAlignment.center,
-        spacing: gap,
-        runSpacing: gap,
-        children: [for (final x in l) Image.asset('assets/glyphs/dash/$x.png', width: size, height: size, fit: BoxFit.contain)],
-      ),
-    );
-  }
+  /// The little pictograms in the free space. Service: two rows, one over the other. Shop: mixed together,
+  /// a little turned and overlapping, like things thrown on a counter.
+  Widget _pictos() => LayoutBuilder(builder: (_, c) {
+        final w = c.maxWidth, h = 64.0;
+        Widget img(String x, double size) => Image.asset('assets/glyphs/dash/$x.png', width: size, height: size, fit: BoxFit.contain);
+        if (widget.place.type == PlaceType.service) {
+          final per = (_service.length + 1) ~/ 2;
+          final size = [26.0, (w - 8 - 4.0 * (per - 1)) / per, (h - 4) / 2].reduce((a, b) => a < b ? a : b);
+          Widget row(List<String> l) => Row(mainAxisSize: MainAxisSize.min, children: [
+                for (var i = 0; i < l.length; i++) ...[if (i > 0) const SizedBox(width: 4), img(l[i], size)],
+              ]);
+          return Center(child: Column(mainAxisSize: MainAxisSize.min, children: [
+            row(_service.sublist(0, per)),
+            const SizedBox(height: 4),
+            row(_service.sublist(per)),
+          ]));
+        }
+        final size = [h * 0.7, w * 0.44].reduce((a, b) => a < b ? a : b);
+        const turn = [-0.16, 0.12, -0.08, 0.18];
+        return Stack(children: [
+          for (var i = 0; i < _shop.length; i++)
+            Positioned(
+              left: 4 + (w - size - 8) * i / (_shop.length - 1),
+              top: i.isEven ? 1 : h - size - 1,
+              child: Transform.rotate(angle: turn[i], child: img(_shop[i], size)),
+            ),
+        ]);
+      });
 
   Widget _tile(Vehicle v) => Expanded(
         child: Container(
@@ -705,7 +721,7 @@ class _VehicleDeckState extends State<VehicleDeck> {
 
   /// the closed hand: four cards, each one leaving its left part (the wheel) in view
   Widget _closed() {
-    const cardW = 74.0, step = 26.0;
+    const cardW = 80.0, step = 36.0;
     return Row(key: const ValueKey('closed'), children: [
       SizedBox(
         width: step * 3 + cardW + 6,
@@ -718,7 +734,7 @@ class _VehicleDeckState extends State<VehicleDeck> {
               child: Container(
                 width: cardW,
                 height: 64,
-                padding: const EdgeInsets.fromLTRB(4, 8, 4, 8),
+                padding: const EdgeInsets.fromLTRB(3, 6, 3, 6),
                 decoration: BoxDecoration(
                   color: i == _kinds.length - 1 ? Colors.white : AppColors.paper,
                   borderRadius: BorderRadius.circular(14),
@@ -730,14 +746,14 @@ class _VehicleDeckState extends State<VehicleDeck> {
             ),
         ]),
       ),
-      Expanded(child: _paper(_pictos(24, 7))),
+      Expanded(child: _paper(_pictos())),
     ]);
   }
 
   /// the open hand: the vehicles the place handles, and the pictograms gathered in what is left
   Widget _opened(List<Vehicle> v) => Row(key: const ValueKey('open'), children: [
         for (final x in v) _tile(x),
-        Expanded(flex: 4 - v.length, child: _paper(_pictos(v.length == 3 ? 17 : 20, 5))),
+        Expanded(flex: 4 - v.length, child: _paper(_pictos())),
       ]);
 
   @override
