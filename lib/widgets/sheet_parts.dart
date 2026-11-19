@@ -644,9 +644,9 @@ List<Vehicle> deckVehicles(Place p) {
 
 /// The vehicles of a shop / service hub, gathered like a hand of playing cards: the bike's wheel, a bit of the
 /// scooter, the moped's wheel, and the motorcycle on top. In the space that stays free: the dashboard
-/// warning lights (service hub) or helmet, gloves, frame, oil (shop). A tap opens the cards: only the vehicles
-/// the place really handles (2 take half the row, 1 a quarter), and the small pictograms gather in the rest.
-/// A place that handles all four shows them at once and has no pictograms.
+/// warning lights, two rows (service hub), or, for a shop, 30% of the row for the accessories (helmet, frame,
+/// gloves, oil, mixed together) with a red "ACCESSORIES" bar on the right. A tap opens the cards: only the
+/// vehicles the place really handles. A shop that handles all four shows them at once and keeps the red bar.
 class VehicleDeck extends StatefulWidget {
   final Place place;
   const VehicleDeck(this.place, {super.key});
@@ -661,7 +661,10 @@ class _VehicleDeckState extends State<VehicleDeck> {
   static const _kinds = [Vehicle.bike, Vehicle.scooter, Vehicle.moped, Vehicle.moto];
   // the lights of a dashboard (ABS, check engine, oil, water temperature, brakes, key) / what a shop also sells
   static const _service = ['abs', 'engine', 'oil', 'temp', 'brake', 'key'];
-  static const _shop = ['helmet', 'oilbottle', 'gloves', 'frame'];
+  static const _shop = ['frame', 'helmet', 'gloves', 'oilbottle'];
+
+  bool get _isShop => widget.place.type == PlaceType.shop;
+  double get _h => _isShop ? 76 : 64;
 
   static String _name(Vehicle v) => switch (v) {
         Vehicle.bike || Vehicle.ebike => 'Bikes',
@@ -670,44 +673,62 @@ class _VehicleDeckState extends State<VehicleDeck> {
         Vehicle.moto => 'Motos',
       };
 
-  /// The little pictograms in the free space. Service: two rows, one over the other. Shop: mixed together,
-  /// a little turned and overlapping, like things thrown on a counter.
-  Widget _pictos() => LayoutBuilder(builder: (_, c) {
-        final w = c.maxWidth, h = 64.0;
-        Widget img(String x, double size) => Image.asset('assets/glyphs/dash/$x.png', width: size, height: size, fit: BoxFit.contain);
-        if (widget.place.type == PlaceType.service) {
-          final per = (_service.length + 1) ~/ 2;
-          final size = [26.0, (w - 8 - 4.0 * (per - 1)) / per, (h - 4) / 2].reduce((a, b) => a < b ? a : b);
-          Widget row(List<String> l) => Row(mainAxisSize: MainAxisSize.min, children: [
-                for (var i = 0; i < l.length; i++) ...[if (i > 0) const SizedBox(width: 4), img(l[i], size)],
-              ]);
-          return Center(child: Column(mainAxisSize: MainAxisSize.min, children: [
-            row(_service.sublist(0, per)),
-            const SizedBox(height: 4),
-            row(_service.sublist(per)),
-          ]));
-        }
-        final size = [h * 0.7, w * 0.44].reduce((a, b) => a < b ? a : b);
-        const turn = [-0.16, 0.12, -0.08, 0.18];
-        final span = w < size * 2.5 ? w : size * 2.5; // gathered in the middle, overlapping, not spread over the whole width
-        final x0 = (w - span) / 2;
+  Widget _img(String x, double size) => Image.asset('assets/glyphs/dash/$x.png', width: size, height: size, fit: BoxFit.contain);
+
+  /// Service hub: the dashboard lights, two rows, one over the other.
+  Widget _lights() => LayoutBuilder(builder: (_, c) {
+        final per = (_service.length + 1) ~/ 2;
+        final size = [26.0, (c.maxWidth - 8 - 4.0 * (per - 1)) / per, (_h - 4) / 2].reduce((a, b) => a < b ? a : b);
+        Widget row(List<String> l) => Row(mainAxisSize: MainAxisSize.min, children: [
+              for (var i = 0; i < l.length; i++) ...[if (i > 0) const SizedBox(width: 4), _img(l[i], size)],
+            ]);
+        return Center(
+          child: Column(mainAxisSize: MainAxisSize.min, children: [row(_service.sublist(0, per)), const SizedBox(height: 4), row(_service.sublist(per))]),
+        );
+      });
+
+  /// Shop: all black, in perspective: the frame and the helmet big at the back, the gloves and the oil a little
+  /// smaller in front, overlapping, filling the space.
+  Widget _things() => LayoutBuilder(builder: (_, c) {
+        final w = c.maxWidth, h = _h;
+        final big = [h * 0.66, w * 0.66].reduce((a, b) => a < b ? a : b);
+        final small = big * 0.76;
+        Widget at(String x, double size, double left, double top, double turn) =>
+            Positioned(left: left, top: top, child: Transform.rotate(angle: turn, child: _img(x, size)));
         return Stack(children: [
-          for (var i = 0; i < _shop.length; i++)
-            Positioned(
-              left: x0 + (span - size) * i / (_shop.length - 1),
-              top: i.isEven ? 1 : h - size - 1,
-              child: Transform.rotate(angle: turn[i], child: img(_shop[i], size)),
-            ),
+          at('frame', big, 1, 2, -0.05),
+          at('helmet', big, w - big - 1, 0, 0.04),
+          at('gloves', small, w * 0.06, h - small - 1, -0.1),
+          at('oilbottle', small, w - small - w * 0.04, h - small - 1, 0.08),
         ]);
       });
 
+  /// The red bar on the right of a shop: ACCESSORIES, the first letter at the top.
+  Widget _bar() => Container(
+        width: 24,
+        height: _h,
+        decoration: BoxDecoration(color: const Color(0xFFD32F2F), borderRadius: BorderRadius.circular(12)),
+        child: RotatedBox(
+          quarterTurns: 1,
+          child: Center(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 6),
+                child: Text('ACCESSORIES', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w800, fontSize: 9, letterSpacing: 1.2)),
+              ),
+            ),
+          ),
+        ),
+      );
+
   Widget _tile(Vehicle v) => Expanded(
         child: Container(
-          height: 64,
+          height: _h,
           margin: const EdgeInsets.symmetric(horizontal: 3),
           decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            SizedBox(height: 32, child: Image.asset(v.asset, fit: BoxFit.contain)),
+            SizedBox(height: _isShop ? 44 : 38, child: Image.asset(v.asset, fit: BoxFit.contain)),
             const SizedBox(height: 2),
             Text(_name(v), maxLines: 1, style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: AppColors.primary)),
           ]),
@@ -715,57 +736,78 @@ class _VehicleDeckState extends State<VehicleDeck> {
       );
 
   Widget _paper(Widget child) => Container(
-        height: 64,
+        height: _h,
         margin: const EdgeInsets.symmetric(horizontal: 3),
         decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
         child: child,
       );
 
-  /// the closed hand: four cards, each one leaving its left part (the wheel) in view
-  Widget _closed() {
-    const cardW = 80.0, step = 36.0;
-    return Row(key: const ValueKey('closed'), children: [
-      SizedBox(
-        width: step * 3 + cardW + 6,
-        height: 64,
-        child: Stack(children: [
-          for (var i = 0; i < _kinds.length; i++)
-            Positioned(
-              left: 3 + i * step,
-              top: 0,
-              child: Container(
-                width: cardW,
-                height: 64,
-                padding: const EdgeInsets.fromLTRB(3, 6, 3, 6),
-                decoration: BoxDecoration(
-                  color: i == _kinds.length - 1 ? Colors.white : AppColors.paper,
-                  borderRadius: BorderRadius.circular(14),
-                  border: Border.all(color: AppColors.line, width: 1),
-                  boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 4, offset: Offset(-2, 0))],
-                ),
-                child: Image.asset(_kinds[i].asset, fit: BoxFit.contain, alignment: Alignment.centerLeft),
+  /// the closed hand: four cards, each one leaving its left part (the wheel) in view; the vehicles as big as they can be
+  Widget _hand(double w) {
+    const cardW = 84.0;
+    final step = ((w - cardW - 6) / 3).clamp(22.0, 38.0);
+    return SizedBox(
+      key: const ValueKey('hand'),
+      width: w,
+      height: _h,
+      child: Stack(children: [
+        for (var i = 0; i < _kinds.length; i++)
+          Positioned(
+            left: 3 + i * step,
+            top: 0,
+            child: Container(
+              width: cardW,
+              height: _h,
+              padding: const EdgeInsets.fromLTRB(2, 4, 2, 4),
+              decoration: BoxDecoration(
+                color: i == _kinds.length - 1 ? Colors.white : AppColors.paper,
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: AppColors.line, width: 1),
+                boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 4, offset: Offset(-2, 0))],
               ),
+              child: Image.asset(_kinds[i].asset, fit: BoxFit.contain, alignment: Alignment.centerLeft),
             ),
-        ]),
-      ),
-      Expanded(child: _paper(_pictos())),
-    ]);
+          ),
+      ]),
+    );
   }
 
-  /// the open hand: the vehicles the place handles, and the pictograms gathered in what is left
-  Widget _opened(List<Vehicle> v) => Row(key: const ValueKey('open'), children: [
-        for (final x in v) _tile(x),
-        Expanded(flex: 4 - v.length, child: _paper(_pictos())),
-      ]);
+  Widget _tiles(List<Vehicle> v) => Row(key: const ValueKey('tiles'), children: [for (final x in v) _tile(x)]);
 
   @override
   Widget build(BuildContext context) {
     final v = deckVehicles(widget.place);
-    if (v.length >= 4) return Row(children: [for (final x in _kinds) _tile(x)]);
+    final all = v.length >= 4;
+    if (_isShop) {
+      // shop: 70% the vehicles, 30% the accessories (with the red bar); all four vehicles: the bar stays
+      if (all) return Row(children: [Expanded(child: _tiles(_kinds)), const SizedBox(width: 3), _bar()]);
+      return Row(children: [
+        Expanded(
+          flex: 7,
+          child: LayoutBuilder(
+            builder: (_, c) => GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: () => setState(() => _open = !_open),
+              child: AnimatedSwitcher(duration: const Duration(milliseconds: 240), child: _open ? _tiles(v) : _hand(c.maxWidth)),
+            ),
+          ),
+        ),
+        Expanded(flex: 3, child: Row(children: [Expanded(child: _paper(_things())), _bar()])),
+      ]);
+    }
+    if (all) return Row(children: [for (final x in _kinds) _tile(x)]);
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
       onTap: () => setState(() => _open = !_open),
-      child: AnimatedSwitcher(duration: const Duration(milliseconds: 240), child: _open ? _opened(v) : _closed()),
+      child: AnimatedSwitcher(
+        duration: const Duration(milliseconds: 240),
+        child: _open
+            ? Row(key: const ValueKey('open'), children: [for (final x in v) _tile(x), Expanded(flex: 4 - v.length, child: _paper(_lights()))])
+            : Row(key: const ValueKey('closed'), children: [
+                SizedBox(width: 198, child: _hand(198)),
+                Expanded(child: _paper(_lights())),
+              ]),
+      ),
     );
   }
 }
