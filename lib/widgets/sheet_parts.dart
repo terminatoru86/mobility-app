@@ -666,13 +666,6 @@ class _VehicleDeckState extends State<VehicleDeck> {
   bool get _isShop => widget.place.type == PlaceType.shop;
   double get _h => _isShop ? 76 : 64;
 
-  static String _name(Vehicle v) => switch (v) {
-        Vehicle.bike || Vehicle.ebike => 'Bikes',
-        Vehicle.scooter => 'Scooters',
-        Vehicle.moped => 'Mopeds',
-        Vehicle.moto => 'Motos',
-      };
-
   Widget _img(String x, double size) => Image.asset('assets/glyphs/dash/$x.png', width: size, height: size, fit: BoxFit.contain);
 
   /// Service hub: the dashboard lights, two rows, one over the other.
@@ -722,16 +715,14 @@ class _VehicleDeckState extends State<VehicleDeck> {
         ),
       );
 
+  /// an opened card: only the picture, as big as it was on the closed card, no writing
   Widget _tile(Vehicle v) => Expanded(
         child: Container(
           height: _h,
           margin: const EdgeInsets.symmetric(horizontal: 3),
+          padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 4),
           decoration: BoxDecoration(color: AppColors.paper, borderRadius: BorderRadius.circular(14)),
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            SizedBox(height: _isShop ? 44 : 38, child: Image.asset(v.asset, fit: BoxFit.contain)),
-            const SizedBox(height: 2),
-            Text(_name(v), maxLines: 1, style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: AppColors.primary)),
-          ]),
+          child: Image.asset(v.asset, fit: BoxFit.contain),
         ),
       );
 
@@ -743,7 +734,7 @@ class _VehicleDeckState extends State<VehicleDeck> {
       );
 
   /// the closed hand: four cards, each one leaving its left part (the wheel) in view; the vehicles as big as they can be
-  Widget _hand(double w) {
+  Widget _hand(double w, List<Vehicle> has) {
     const cardW = 84.0;
     final step = ((w - cardW - 6) / 3).clamp(22.0, 38.0);
     return SizedBox(
@@ -765,7 +756,11 @@ class _VehicleDeckState extends State<VehicleDeck> {
                 border: Border.all(color: AppColors.line, width: 1),
                 boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 4, offset: Offset(-2, 0))],
               ),
-              child: Image.asset(_kinds[i].asset, fit: BoxFit.contain, alignment: Alignment.centerLeft),
+              // the vehicle this place does not handle stays in the hand, in shadow
+              child: Opacity(
+                opacity: has.contains(_kinds[i]) ? 1 : 0.28,
+                child: Image.asset(_kinds[i].asset, fit: BoxFit.contain, alignment: Alignment.centerLeft),
+              ),
             ),
           ),
       ]),
@@ -788,7 +783,7 @@ class _VehicleDeckState extends State<VehicleDeck> {
             builder: (_, c) => GestureDetector(
               behavior: HitTestBehavior.opaque,
               onTap: () => setState(() => _open = !_open),
-              child: AnimatedSwitcher(duration: const Duration(milliseconds: 240), child: _open ? _tiles(v) : _hand(c.maxWidth)),
+              child: AnimatedSwitcher(duration: const Duration(milliseconds: 240), child: _open ? _tiles(v) : _hand(c.maxWidth, v)),
             ),
           ),
         ),
@@ -804,7 +799,7 @@ class _VehicleDeckState extends State<VehicleDeck> {
         child: _open
             ? Row(key: const ValueKey('open'), children: [for (final x in v) _tile(x), Expanded(flex: 4 - v.length, child: _paper(_lights()))])
             : Row(key: const ValueKey('closed'), children: [
-                SizedBox(width: 198, child: _hand(198)),
+                SizedBox(width: 198, child: _hand(198, v)),
                 Expanded(child: _paper(_lights())),
               ]),
       ),
