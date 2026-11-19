@@ -42,7 +42,8 @@ jobs:
         run: |
           osmium tags-filter region.osm.pbf \
             nwr/amenity=school,college,university,marketplace,library,townhall,community_centre,hospital,bus_station \
-            nwr/amenity=courthouse,post_office,public_building nwr/office=government,company nwr/government \
+            nwr/amenity=courthouse,post_office,public_building,coworking_space nwr/office=government,company,coworking nwr/government \
+            nwr/building=office,commercial nwr/aeroway=aerodrome,terminal nwr/railway=halt \
             nwr/shop=mall nwr/landuse=industrial,commercial,retail nwr/leisure=park,stadium,sports_centre \
             nwr/public_transport=station nwr/railway=station nwr/park_ride nwr/tourism=hotel -o cut.osm.pbf
           rm region.osm.pbf
@@ -63,7 +64,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        group: [campus, shopping, work, parks, transit, civic, sports, hotels, government, corporate]
+        group: [offices, corporate, campus, shopping, work, parks, transit, civic, sports, hotels, government]
     steps:
       - name: Wanted this time?
         id: want

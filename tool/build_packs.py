@@ -269,7 +269,8 @@ WANT = re.compile(r'bike\s*rack|bicycle\s*rack|bike\s*parking|bicycle\s*parking|
                   r'motorcycle\s*(parking|corral|stall|space|zone)|motorbike\s*parking|moped\s*(parking|corral|stall|zone)|'
                   r'(e-?)?scooter\s*(parking|corral|stall|zone)|two-?wheel(er|ed)?\s*parking|small\s*electric\s*vehicle|'
                   r'(e-?bike|ebike|electric\s*bike|scooter|micromobility)\s*charg|bike\s*fix|fixit|repair\s*stand|'
-                  r'bike\s*(maintenance|tool)\s*station|bicycle\s*(maintenance|tool)\s*station|bike\s*amenit|bicycle\s*amenit', re.I)
+                  r'bike\s*(maintenance|tool)\s*station|bicycle\s*(maintenance|tool)\s*station|bike\s*amenit|bicycle\s*amenit|'
+                  r'bike\s*rooms?|bicycle\s*rooms?|bike\s*storage|bicycle\s*storage|garage.*bi(ke|cycle)|bi(ke|cycle).*garage', re.I)
 
 
 def amenity_for(text):
@@ -299,7 +300,13 @@ def discover_arcgis(known, budget_min=25):
              # charging for e-bikes / scooters, repair stands (parks, campuses), campus bike maps
              '"e-bike charging"', '"ebike charging"', '"scooter charging"', '"micromobility charging"',
              '"bike repair station"', '"bicycle repair station"', '"repair stand"', '"bike fixit"', '"fixit station"',
-             '"bike maintenance station"', '"bike amenities"', '"bicycle amenities"', '"campus bike"', '"bike facilities"']
+             '"bike maintenance station"', '"bike amenities"', '"bicycle amenities"', '"campus bike"', '"bike facilities"',
+             # commuters: bike rooms in office buildings, bike parking in public garages
+             '"bike room"', '"bicycle storage"', '"bike storage"', '"bicycle parking in garages"', '"garage bike parking"',
+             '"bicycle access"', '"bike friendly building"', '"bike commuter"',
+             # transit: bike parking at stations (Metra, subway, bus, train, airports)
+             '"bike and ride"', '"bike & ride"', '"station bike parking"', '"transit bike parking"', '"bike parking at stations"',
+             '"airport bike parking"', '"airport motorcycle parking"']
     for t in terms:
         for start in range(1, 1000, 100):
             q = urllib.parse.urlencode({

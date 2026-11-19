@@ -12,7 +12,8 @@ A website shared by many places (a school district, a park district, a mall comp
 groups: campus (schools, colleges, universities), shopping (malls, markets), work (industrial zones, business parks),
         parks (city / county parks), transit (train / bus stations, park & ride), civic (libraries, city halls,
         community centers, hospitals), sports (stadiums, sports centers), hotels, government (Social Security, DMV,
-        courthouses, post offices, federal / state offices), corporate (campuses of big companies: Google, Apple, Oracle...)
+        courthouses, post offices, federal / state offices), corporate (campuses of big companies: Google, Apple, Oracle...),
+        offices (office buildings and their property managers, coworking: bike rooms, storage, garages for tenants)
 """
 import json
 import math
@@ -32,13 +33,13 @@ LABEL = {'school': 'School', 'college': 'College', 'university': 'University', '
          'station': 'Station', 'park_ride': 'Park & Ride', 'library': 'Library', 'townhall': 'City hall',
          'community': 'Community center', 'hospital': 'Hospital', 'stadium': 'Stadium', 'sports': 'Sports center',
          'hotel': 'Hotel', 'government': 'Government office', 'ssa': 'Social Security office', 'dmv': 'DMV',
-         'courthouse': 'Courthouse', 'post_office': 'Post office', 'corporate': 'Company campus'}
+         'courthouse': 'Courthouse', 'post_office': 'Post office', 'corporate': 'Company campus', 'office_building': 'Office building', 'coworking': 'Coworking', 'airport': 'Airport'}
 GROUP = {'school': 'campus', 'college': 'campus', 'university': 'campus', 'mall': 'shopping', 'market': 'shopping',
          'industrial': 'work', 'business_park': 'work', 'park': 'parks',
          'station': 'transit', 'park_ride': 'transit', 'library': 'civic', 'townhall': 'civic', 'community': 'civic',
          'hospital': 'civic', 'stadium': 'sports', 'sports': 'sports', 'hotel': 'hotels',
          'government': 'government', 'ssa': 'government', 'dmv': 'government', 'courthouse': 'government',
-         'post_office': 'government', 'corporate': 'corporate'}
+         'post_office': 'government', 'corporate': 'corporate', 'office_building': 'offices', 'coworking': 'offices', 'airport': 'transit'}
 MAX_SITES = 30000
 SSA = re.compile(r'social\s+security|\bssa\b', re.I)
 DMV = re.compile(r'\b(dmv|bmv|mvd|rmv|mva|motor\s+vehicles?|driver\s+(services|license|licensing)|secretary\s+of\s+state\s+(facility|driver)|license\s+(branch|office)|tag\s+office)\b', re.I)
@@ -69,8 +70,11 @@ def kind_of_osm(t):
         return 'business_park'
     if t.get('leisure') == 'park':
         return 'park'
-    if t.get('public_transport') == 'station' or t.get('railway') == 'station' or a == 'bus_station':
+    if t.get('public_transport') == 'station' or t.get('railway') in ('station', 'halt') or a == 'bus_station' \
+            or t.get('station') in ('subway', 'light_rail', 'train'):
         return 'station'
+    if t.get('aeroway') in ('aerodrome', 'terminal') and (t.get('iata') or t.get('website') or t.get('aeroway') == 'terminal'):
+        return 'airport'
     if t.get('park_ride') in ('yes', 'bus', 'train') or (a == 'parking' and re.search(r'park\s*(&|and|n)\s*ride', t.get('name') or '', re.I)):
         return 'park_ride'
     if a == 'library':
@@ -99,6 +103,10 @@ def kind_of_osm(t):
     if t.get('office') in ('company', 'corporate') or t.get('landuse') == 'commercial' or t.get('building') in ('office', 'commercial'):
         if BIG.search(name) or BIG.search(t.get('operator') or '') or re.search(r'\b(campus|headquarters|hq|corporate\s+(center|campus|park))\b', name, re.I):
             return 'corporate'
+    if t.get('office') == 'coworking' or t.get('amenity') == 'coworking_space':
+        return 'coworking'
+    if t.get('building') in ('office', 'commercial') or t.get('office') in ('property_management', 'estate_agent') and False:
+        return 'office_building'  # the building's own site: tenants' amenities (bike room, storage, garage)
     return None
 
 
@@ -114,7 +122,9 @@ def kind_of_cat(cat):
         return 'market'
     if re.search(r'industrial[\s_]*(estate|park|area)|business[\s_]*park|office[\s_]*park|technology[\s_]*park|research[\s_]*park', c):
         return 'business_park'
-    if re.search(r'train[\s_]*station|bus[\s_]*station|transit[\s_]*station|metro[\s_]*station|light[\s_]*rail', c):
+    if re.search(r'\bairport|airport[\s_]*terminal', c) and not re.search(r'shuttle|parking|rental|lounge|hotel', c):
+        return 'airport'
+    if re.search(r'train[\s_]*station|bus[\s_]*station|transit[\s_]*station|metro[\s_]*station|subway|light[\s_]*rail|railway[\s_]*station|bus[\s_]*terminal', c):
         return 'station'
     if re.search(r'park[\s_]*(and|&|n)[\s_]*ride', c):
         return 'park_ride'
@@ -144,6 +154,10 @@ def kind_of_cat(cat):
         return 'government'
     if re.search(r'corporate[\s_]*(office|campus)|headquarters', c):
         return 'corporate'
+    if re.search(r'coworking|shared[\s_]*office|business[\s_]*center', c):
+        return 'coworking'
+    if re.search(r'office[\s_]*building|commercial[\s_]*real[\s_]*estate|property[\s_]*management|office[\s_]*space', c):
+        return 'office_building'
     if re.search(r'(^|[>|_\s])park($|[\s_|])|city[\s_]*park|national[\s_]*park|state[\s_]*park|county[\s_]*park', c) \
             and not re.search(r'parking|amusement|water[\s_]*park|theme|rv[\s_]*park|dog[\s_]*park|skate|trailer|mobile[\s_]*home', c):
         return 'park'
@@ -159,7 +173,7 @@ def from_pbf(pbf, out_json):
         name = t.get('name')
         if not k or not name:
             return
-        if k in ('industrial', 'business_park', 'park', 'government', 'corporate') and not (t.get('website') or t.get('contact:website') or t.get('operator')):
+        if k in ('industrial', 'business_park', 'park', 'government', 'corporate', 'office_building', 'coworking') and not (t.get('website') or t.get('contact:website') or t.get('operator')):
             return  # thousands of unnamed-on-the-web lots: only the ones with a website or a manager
         dest.append([oid, round(lat, 6), round(lon, 6), {x: v for x, v in {
             'kind': k, 'name': name, 'website': t.get('website') or t.get('contact:website') or t.get('url'),
@@ -190,10 +204,11 @@ def overture(group):
     release = release.strip('./').split('/')[0]
     rx = {'campus': 'school|college|universit', 'shopping': 'mall|shopping_center|market|bazaar',
           'work': 'industrial|business_park|office_park|technology_park|research_park', 'parks': 'park',
-          'transit': 'station|park_and_ride|park_ride|transit', 'civic': 'librar|city_hall|town_hall|community_center|recreation_center|hospital',
+          'transit': 'station|park_and_ride|park_ride|transit|subway|light_rail|bus_terminal|airport', 'civic': 'librar|city_hall|town_hall|community_center|recreation_center|hospital',
           'sports': 'stadium|arena|sports|athletic', 'hotels': 'hotel|resort',
           'government': 'government|social_security|motor_vehicle|dmv|courthouse|post_office|federal|public_service',
-          'corporate': 'corporate|headquarters|office|technology|software|company'}[group]
+          'corporate': 'corporate|headquarters|office|technology|software|company',
+          'offices': 'coworking|shared_office|business_center|office_building|commercial_real_estate|property_management|office_space'}[group]
     con = duckdb.connect()
     con.execute("INSTALL httpfs; LOAD httpfs; SET s3_region='us-west-2';")
     q = f"""
@@ -306,6 +321,14 @@ def test():
     assert kind_of_osm({'office': 'government', 'name': 'Illinois Secretary of State Driver Services Facility'}) == 'dmv'
     assert kind_of_osm({'office': 'company', 'name': 'Google Chicago'}) == 'corporate'
     assert kind_of_osm({'office': 'company', 'name': 'Joe Plumbing LLC'}) is None
+    assert kind_of_osm({'building': 'office', 'name': '150 North Riverside'}) == 'office_building'
+    assert kind_of_osm({'office': 'coworking', 'name': 'WeWork'}) == 'coworking'
+    assert kind_of_cat('coworking_space') == 'coworking' and kind_of_cat('commercial_real_estate') == 'office_building'
+    s2 = wf.what_page_says('Amenities: fitness center, secure bike room with repair stand, EV and e-bike charging in the garage.')
+    assert 'bike' in s2 and 'repair' in s2 and 'charge' in s2, s2
+    assert kind_of_osm({'aeroway': 'aerodrome', 'iata': 'ORD'}) == 'airport' and kind_of_cat('airport') == 'airport'
+    assert kind_of_osm({'railway': 'station', 'station': 'subway'}) == 'station'
+    assert kind_of_cat('airport_shuttle') is None
     assert kind_of_cat('college_university') == 'university' and kind_of_cat('elementary_school') == 'school'
     s = wf.what_page_says('Campus bike repair stations are located outside the library and the student union. '
                           'E-bike charging is available in Garage B.')

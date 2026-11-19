@@ -235,13 +235,15 @@ def dist(a, b):
 
 # ───────── 3. what the websites say ─────────
 SAYS = {
-    'bike': re.compile(r'\b(bike|bicycle)\s*(racks?|parking|lockers?|corrals?|valet|storage)\b|\bpark\s+(your\s+)?(bike|bicycle)s?\b', re.I),
+    'bike': re.compile(r'\b(bike|bicycle)\s*(racks?|parking|lockers?|corrals?|valet|storage|rooms?|cages?|garages?|vaults?)\b|'
+                       r'\bpark\s+(your\s+)?(bike|bicycle)s?\b|\bsecure\s+(bike|bicycle)\b|\b(indoor|covered)\s+(bike|bicycle)\b', re.I),
     'moto': re.compile(r'\bmotorcycles?\s*(parking|spaces?|stalls?|lot|area|corral)\b|\bpark\s+(your\s+)?motorcycles?\b', re.I),
     'scooter': re.compile(r'\b(scooter|moped)s?\s*(parking|corrals?|spaces?)\b', re.I),
     'rent': re.compile(r'\b(rent|rental|rentals|hire)\s+(a\s+)?(e-?bikes?|bikes?|bicycles?|surreys?|tandems?|cruisers?|scooters?|mopeds?)\b|'
                        r'\b(e-?bikes?|bikes?|bicycles?|surreys?|cruisers?|scooters?|mopeds?)\s+(rentals?|for\s+rent|hire)\b', re.I),
     'pump': re.compile(r'\b(air\s+pumps?|bike\s+pumps?|tire\s+(pumps?|inflation)|free\s+air)\b', re.I),
-    'repair': re.compile(r'\b(bike|bicycle)\s+(repair|fix-?it|tool)\s+(stations?|stands?)\b|\bfix-?it\s+stations?\b', re.I),
+    'repair': re.compile(r'\b(bike|bicycle)\s+(repair|fix-?it|tool|maintenance)\s+(stations?|stands?)\b|\bfix-?it\s+stations?\b|'
+                         r'\b(bike\s+)?repair\s+stands?\b|\bbike\s+tools?\b', re.I),
     'charge': re.compile(r'\b(e-?bike|electric\s+bike|scooter)\s+charging\b|\bcharg(e|ing)\s+(your\s+)?(e-?bikes?|scooters?)\b', re.I),
     'wash': re.compile(r'\b(bike|bicycle)\s+wash(ing)?\s*(stations?|area)?\b', re.I),
 }
@@ -284,7 +286,8 @@ def _get(url, timeout=10):
 
 LINKS = re.compile(r'park(ing)?|getting[\s_-]*here|directions|plan[\s_-]*(your[\s_-]*)?visit|visit|transport|amenit|faq|'
                    r'bike|bicycle|access|hours|marina[\s_-]*info|facilities|guest[\s_-]*info|commut|sustainab|campus|'
-                   r'bike[\s_-]*to[\s_-]*work|office[\s_-]*(info|locations?)|locations?|visitor', re.I)
+                   r'bike[\s_-]*to[\s_-]*work|office[\s_-]*(info|locations?)|locations?|visitor|amenit|features|building|tenant|leasing|'
+                   r'available[\s_-]*space|property|wellness|fitness|stations?|amenities|rates|ground[\s_-]*transport', re.I)
 
 
 def read_site(url):

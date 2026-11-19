@@ -27,7 +27,10 @@ TWO = re.compile(r'\b(bikes?|bicycles?|cycles?|cycling|velo|motorcycles?|motorbi
                  r'|oonee|bikeep|bikelink|bikestation|bike\s*station|propark\s*bike|cycle\s*cent(er|re)|bike\s*hub)\b', re.I)
 NOT_PARK = re.compile(r'\b(shop|store|sales|dealer|repair|rental|rentals|tours?|club|school|museum|trail|park\s*&\s*ride'
                       r'|racing|race|speedway|show|insurance|towing|tow|storage\s*units?|self\s*storage)\b', re.I)
-NETWORK = re.compile(r'\b(oonee|bikeep|bikelink|bikestation|propark\s*bike|cycle\s*cent(er|re))\b', re.I)
+NETWORK = re.compile(r'\b(oonee|bikeep|bikelink|bikestation|propark\s*bike)\b', re.I)
+# a name that says it is a place to leave the vehicle (not a shop called "... Cycle Center")
+LEAVE = re.compile(r'\b(parking|park\s*&\s*lock|garage|lockers?|station|valet|corral|cage|lot|storage\s*room|commuter|hub)\b', re.I)
+PAYING = re.compile(r'\b(garage|lockers?|valet|cage|oonee|bikeep|bikelink|bikestation|propark|cent(er|re)|station\b(?!.*rack)|commuter)\b', re.I)
 PARK_CAT = re.compile(r'parking|garage', re.I)
 
 
@@ -128,8 +131,8 @@ def business_record(oid, lat, lon, name, cat, phone, web, street, src):
     n = name or ''
     if not n or NOT_PARK.search(n):
         return None
-    if not (PARK_CAT.search(cat or '') or NETWORK.search(n) or re.search(r'\bparking\b', n, re.I)):
-        return None
+    if not (NETWORK.search(n) or (PARK_CAT.search(cat or '') and LEAVE.search(n)) or re.search(r'\bparking\b', n, re.I)):
+        return None  # "Performance Cycle Center" (a shop) is not a parking
     if not TWO.search(n) and not re.search(r'bicycle|motorcycle', cat or '', re.I):
         return None
     if re.search(r'motorcycle|motorbike|moto\b|moped', n + ' ' + (cat or ''), re.I):
@@ -139,7 +142,8 @@ def business_record(oid, lat, lon, name, cat, phone, web, street, src):
     else:
         a = {'amenity': 'bicycle_parking', 'bicycle_parking': 'building' if re.search(r'station|garage|cent(er|re)|hub|room|cage|vault', n, re.I)
              else ('lockers' if re.search(r'locker|bikelink|oonee|bikeep|pod', n, re.I) else None)}
-    tags = {**a, 'name': n, 'fee': 'yes', 'phone': phone, 'website': web, 'addr:street': street, 'source': src}
+    paid = bool(PAYING.search(n)) and not re.search(r'\bracks?\b|\bfree\b', n, re.I)
+    tags = {**a, 'name': n, 'fee': 'yes' if paid else None, 'access': None if paid else 'yes', 'phone': phone, 'website': web, 'addr:street': street, 'source': src}
     return [f'pay/{oid}', round(lat, 6), round(lon, 6), clean(tags)]
 
 
@@ -239,11 +243,14 @@ def test():
     assert osm_record('way/2', 41.88, -87.63, {'amenity': 'parking', 'fee': 'yes'}) is None  # cars only
     assert osm_record('node/3', 41.88, -87.63, {'amenity': 'bicycle_parking', 'bicycle_parking': 'stands'}) is None  # a free rack
     assert osm_record('node/4', 41.88, -87.63, {'amenity': 'bicycle_parking', 'fee': 'yes', 'name': 'Bike garage'})
-    b = business_record('ovt/1', 41.88, -87.62, 'McDonald\'s Cycle Center', 'parking', None, None, None, 'Overture Maps')
-    assert b and b[3]['amenity'] == 'bicycle_parking' and b[3]['bicycle_parking'] == 'building', b
+    b = business_record('ovt/1', 41.88, -87.62, '2 N Riverside Bike Garage', 'parking', None, None, None, 'Overture Maps')
+    assert b and b[3]['amenity'] == 'bicycle_parking' and b[3]['bicycle_parking'] == 'building' and b[3]['fee'] == 'yes', b
+    r = business_record('fsq/3', 41.88, -87.62, 'Bike Racks At The Train Station Outbound Side', 'Parking', None, None, None, 'F')
+    assert r and 'fee' not in r[3], r
     m = business_record('fsq/2', 40.7, -74.0, 'Downtown Motorcycle Parking', 'Parking Lot', None, None, None, 'Foursquare')
     assert m and m[3]['amenity'] == 'motorcycle_parking', m
-    for n in ('Harley-Davidson of Chicago', 'Joe\'s Bike Shop', 'Main St Parking Garage', 'Lake Bike Trail Parking'):
+    for n in ('Harley-Davidson of Chicago', 'Joe\'s Bike Shop', 'Main St Parking Garage', 'Lake Bike Trail Parking',
+              'Performance Cycle Center', 'Markham Cycle Center', 'Village Cycle Center'):
         assert business_record('x', 1, 1, n, 'parking', None, None, None, 's') is None, n
     print('rules ok')
 
