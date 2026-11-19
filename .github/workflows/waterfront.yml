@@ -1,0 +1,82 @@
+name: Theme parks, marinas and beaches
+
+# Theme / water parks, marinas and harbors, and beaches (ocean, lakes, rivers) across the US, from OpenStreetMap
+# (Geofabrik extracts), Overture and Foursquare. Their own websites are read for what riders need there (bike racks,
+# motorcycle / scooter parking, rentals, air, repair stations, charging, washes); what the map lacks is added
+# (data/waterfront.json -> map packs). Named bike paths along the water go to Explore (data/waterfront_paths.json).
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 8 3 * *' # third day of every month
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  osm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        region: [us-midwest, us-northeast, us-pacific, us-south, us-west, us/puerto-rico]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tool
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq osmium-tool
+          pip install osmium
+      - name: Download the extract
+        run: curl -fsSL --retry 20 --retry-delay 60 --retry-all-errors -C - "https://download.geofabrik.de/north-america/${{ matrix.region }}-latest.osm.pbf" -o region.osm.pbf
+      - name: Parks, marinas, beaches and paths along the water
+        run: |
+          osmium tags-filter region.osm.pbf \
+            nwr/leisure=marina,water_park,beach_resort nwr/tourism=theme_park nwr/natural=beach \
+            nwr/harbour nwr/seamark:type=harbour w/highway=cycleway,path,footway,pedestrian -o cut.osm.pbf
+          rm region.osm.pbf
+          python3 tool/waterfront.py --pbf cut.osm.pbf part.json
+      - name: Name the result
+        run: echo "NAME=$(echo '${{ matrix.region }}' | tr '/' '-')" >> $GITHUB_ENV
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wtr-osm-${{ env.NAME }}
+          path: part.json
+          retention-days: 2
+
+  join:
+    needs: osm
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install duckdb
+      - uses: actions/download-artifact@v4
+        with:
+          path: parts
+      - name: Join, read the websites, add what is missing
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 tool/waterfront.py $(ls parts/*/part.json)
+      - name: Paths along the water into Explore
+        run: python3 tool/trails_tiles.py
+      - name: Save in the repository
+        run: |
+          cat data/waterfront/REPORT.md | head -80
+          git config user.name "mobility-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A data/waterfront.json data/waterfront_paths.json data/waterfront data/trails/tiles
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Theme parks, marinas and beaches $(date -u +%Y-%m-%d)"
+          git pull --rebase -X theirs
+          git push
+      - name: Rebuild the map packs with them
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run data-packs.yml -f mode=places

@@ -892,6 +892,16 @@ def fetch_paid():
     return out
 
 
+def fetch_waterfront():
+    """What theme parks, marinas and beaches say on their own websites (data/waterfront.json, tool/waterfront.py)."""
+    f = os.path.join(ROOT, 'data', 'waterfront.json')
+    if not os.path.exists(f):
+        return []
+    out = json.load(open(f, encoding='utf-8'))
+    print(f'Theme parks, marinas and beaches (their websites): {len(out)}', flush=True)
+    return out
+
+
 def fetch_own():
     """Places added by hand by the owner of the app (data/own_places.json)."""
     out = []
@@ -1104,7 +1114,7 @@ def main():
                     pass
     counts_src = {}
     for name, fn in (('mbta', fetch_mbta), ('overture', fetch_overture), ('foursquare', fetch_foursquare),
-                     ('alltheplaces', fetch_alltheplaces), ('own', fetch_own), ('paid', fetch_paid),
+                     ('alltheplaces', fetch_alltheplaces), ('own', fetch_own), ('paid', fetch_paid), ('waterfront', fetch_waterfront),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
         if refresh and name not in refresh:
             continue
@@ -1112,7 +1122,7 @@ def main():
             got = fn()
             # read again and answered: the old rows of this source go, so a place the source
             # (or our filter) no longer has does not stay on the map
-            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/'}.get(name)
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/'}.get(name)
             if old and got:
                 for d in tiles.values():
                     for k in [k for k in d if str(k).startswith(old)]:

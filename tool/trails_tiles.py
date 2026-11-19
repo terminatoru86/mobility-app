@@ -85,6 +85,22 @@ def main():
     src = os.path.join(ROOT, 'data', 'trails', 'trails.json.gz')
     out_dir = os.path.join(ROOT, 'data', 'trails', 'tiles')
     routes = json.load(gzip.open(src))
+    # + the named bike paths along the water (tool/waterfront.py), unless the same route is already there
+    extra_f = os.path.join(ROOT, 'data', 'waterfront_paths.json')
+    if os.path.exists(extra_f):
+        have = {}
+        for r in routes:
+            if r.get('lines') and r.get('name'):
+                have.setdefault(re.sub(r'[^a-z0-9]', '', r['name'].lower()), []).append(r['lines'][0][:2])
+        n_extra = 0
+        for r in json.load(open(extra_f)):
+            starts = have.get(re.sub(r'[^a-z0-9]', '', r['name'].lower()), [])
+            p0 = r['lines'][0][:2]
+            if any(abs(a - p0[0]) < 0.05 and abs(b - p0[1]) < 0.07 for a, b in starts):
+                continue
+            routes.append(r)
+            n_extra += 1
+        print(f'waterfront paths added: {n_extra}')
     seen, tiles, left = set(), {}, {'code name': 0, 'twice': 0, 'no line': 0}
     for r in routes:
         name = (r.get('name') or '').strip()

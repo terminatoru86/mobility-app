@@ -667,6 +667,9 @@ Place? placeFromOsm(Map<String, dynamic> e, {LatLng? from}) {
     if (tag('fee') == 'no') 'Free',
     if (yes('fee')) 'Paid',
     if (tag('mobility:in_car_park') == 'yes') 'In a car park',
+    // from the website of a theme park, marina or beach (tool/waterfront.py): placed at that place, not at the exact spot
+    if (tag('mobility:near') != null) 'At ${tag('mobility:near')}',
+    if (tag('mobility:approx') == 'yes') 'Ask on site for the exact spot',
     if (yes('lit')) 'Lit',
     if (yes('service:bicycle:pump')) 'Pump',
     if (yes('service:bicycle:tools')) 'Tools',
