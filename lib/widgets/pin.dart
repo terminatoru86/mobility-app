@@ -21,13 +21,18 @@ class Glyph extends StatelessWidget {
 
   final Vehicle? vehicle;
 
+  /// One drawing per kind of vehicle (the e-bike shares the bike's).
+  static String _svc(Vehicle v) => 'assets/glyphs/svc/${v == Vehicle.ebike ? 'bike' : v.name}.png';
+
   @override
-  Widget build(BuildContext context) => SvgPicture.asset(
-        vehicle != null ? 'assets/glyphs/svc_${vehicle!.name}.svg' : type.glyph,
-        width: size,
-        height: size,
-        colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
-      );
+  Widget build(BuildContext context) => vehicle != null
+      ? Image.asset(_svc(vehicle!), width: size, height: size, color: color, colorBlendMode: BlendMode.srcIn, filterQuality: FilterQuality.medium)
+      : SvgPicture.asset(
+          type.glyph,
+          width: size,
+          height: size,
+          colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
+        );
 }
 
 /// One shared clock for all pins: glyph and age take turns every 8 s (only pins on screen, only coloured ones).
