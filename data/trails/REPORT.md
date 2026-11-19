@@ -1,36 +1,36 @@
-# Bike routes found (154929 routes, 899,194 km, file 39.2 MB)
+# Bike routes found (157199 routes, 916,436 km, file 39.7 MB)
 
-By source: {'Official layers': 147692, 'OpenStreetMap': 7237}
-By kind: {'bicycle': 90112, 'motorcycle': 63400, 'mtb': 1417}
-OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 148720, 'lcn': 5164, 'rcn': 954, 'ncn': 51, 'lwn': 11, 'mtb': 9, 'CC Summer': 7, 'Days River Pathway': 5}
-Longer than 10 km: 23196 · longer than 50 km: 4
+By source: {'Official layers': 147692, 'OpenStreetMap': 9507}
+By kind: {'bicycle': 91990, 'motorcycle': 63400, 'mtb': 1809}
+OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 148989, 'lcn': 6807, 'rcn': 1264, 'ncn': 78, 'lwn': 14, 'US:KY:Scenic': 11, 'mtb': 9, 'CC Summer': 7}
+Longer than 10 km: 23721 · longer than 50 km: 4
 
 ## Operators with the most routes
 - NFGMobile_Publisher: 96809
 - vwgeiser: 40131
 - kyraprasad14@ucla.edu_gisucla: 9468
-- -: 6528
+- -: 8449
 - hhaper_biohabitats: 857
 - mart6306@esri.com_EPN: 214
-- United States Forest Service: 90
+- United States Forest Service: 95
 - City of Iowa City: 69
 - OSMP_Boulder: 62
+- City of Plano: 41
 - en:natfoot: 34
 - eespey@clemson.edu_Clemson: 33
+- City of Winston Salem: 28
+- City of Norman: 28
 - City of Fitchburg: 23
 - REDW_Python: 22
+- Baltimore City Department of Public Works: 20
 - ebdn0_ahsgis: 19
 - Okanogan-Wenatchee National Forest: 19
+- City of Stillwater: 17
 - Boise_GIS: 16
 - ACarney@nps.gov_nps: 15
 - MORC: 15
+- US Forest Service: 15
 - Forest Preserve District of Cook County: 15
-- Johnson County: 15
-- City of Coralville: 14
-- Los Alamos County: 14
-- City of North Liberty: 14
-- rpierce_JCWVGIS: 11
-- Bernalillo County: 11
 
 ## Longest routes
 - Honker Divide Canoe Route · 50.0 km · NFGMobile_Publisher · a/56c6b0cbfd35
