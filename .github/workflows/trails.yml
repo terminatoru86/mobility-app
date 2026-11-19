@@ -27,7 +27,7 @@ jobs:
       - name: Self-test
         run: python3 tool/osm_routes.py
       - name: Download the extract
-        run: curl -fsSL --retry 20 --retry-delay 60 --retry-all-errors -C - "https://download.geofabrik.de/north-america/${{ matrix.region }}-latest.osm.pbf" -o region.osm.pbf
+        run: bash tool/get_extract.sh "${{ matrix.region }}" region.osm.pbf
       - name: Routes of this region
         run: |
           osmium tags-filter region.osm.pbf r/route=bicycle,mtb,motorcycle -o routes.osm.pbf
