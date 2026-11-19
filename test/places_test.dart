@@ -45,6 +45,19 @@ void main() {
       expect(q.email, 'a@b.c');
       expect(q.verified, isFalse);
     });
+    test('the owner request: EIN has nine digits, phone enough digits, EIN not shown again', () {
+      expect(ShopClaim.einClean('12-3456789'), '12-3456789');
+      expect(ShopClaim.einClean('123456789'), '12-3456789');
+      expect(ShopClaim.einClean('12-345'), isNull);
+      expect(ShopClaim.phoneClean('(312) 555-0188'), '(312) 555-0188');
+      expect(ShopClaim.phoneClean('555'), isNull);
+      const c = ShopClaim(uid: 'u', placeKey: 'node_1', placeName: 'X', businessName: 'X LLC', address: 'a', ownerName: 'A B', phone: '3125550188', ein: '12-3456789');
+      expect(c.einHidden, '••-•••6789');
+      expect(c.approved, isFalse);
+      final back = ShopClaim.fromFields(c.toFields())!;
+      expect(back.ein, '12-3456789');
+      expect(back.status, 'pending');
+    });
     test('the month id counts in UTC', () {
       expect(monthId(DateTime.utc(2026, 11, 30, 23)), 202611);
       expect(shopKey('node/12'), 'node_12');

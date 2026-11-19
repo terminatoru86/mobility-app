@@ -19,12 +19,16 @@ bool _ownable(PlaceType t) => t == PlaceType.shop || t == PlaceType.service || t
 
 class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
   ShopPage? _page;
+  ShopClaim? _claim; // the request sent to us (pending, approved, refused)
   Place? _place; // the shop on the map (when it is among the places we know)
+  bool _forming = false, _sure = false, _sending = false;
   bool _loading = true, _saving = false, _sent = false;
   int _visits = 0;
   final _search = TextEditingController();
   final _email = TextEditingController(), _phone = TextEditingController(), _hours = TextEditingController();
   final _dText = TextEditingController(), _dOther = TextEditingController(), _msg = TextEditingController();
+  final _biz = TextEditingController(), _addr = TextEditingController(), _own = TextEditingController();
+  final _ph2 = TextEditingController(), _ein = TextEditingController();
   late ShopPage _draft;
 
   @override
@@ -35,7 +39,7 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
 
   @override
   void dispose() {
-    for (final c in [_search, _email, _phone, _hours, _dText, _dOther, _msg]) {
+    for (final c in [_search, _email, _phone, _hours, _dText, _dOther, _msg, _biz, _addr, _own, _ph2, _ein]) {
       c.dispose();
     }
     super.dispose();
@@ -48,6 +52,15 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
       _use(mine.first);
       _visits = await ShopPages.i.visitCount(mine.first.id);
       _sent = await ShopPages.i.sentThisMonth(mine.first.id);
+    } else {
+      // no page yet: has a request been sent, and did we approve it?
+      final c = await ShopPages.i.myClaim();
+      if (!mounted) return;
+      _claim = c;
+      final uid = Auth.i.user?.uid;
+      if (c != null && c.approved && uid != null) {
+        _use(ShopPage(id: c.placeKey, owner: uid, verified: true, name: c.placeName, phone: c.phone));
+      }
     }
     if (mounted) setState(() => _loading = false);
   }
@@ -75,13 +88,60 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
         .toList();
   }
 
-  void _pick(Place p) {
-    final uid = Auth.i.user?.uid;
-    if (uid == null) return;
+  void _pick(Place p) => setState(() {
+        _place = p;
+        _forming = true;
+        _biz.text = p.address;
+        _addr.text = [p.street, ].whereType<String>().join(', ');
+      });
+
+  Future<void> _sendClaim() async {
+    final p = _place, uid = Auth.i.user?.uid;
+    final ein = ShopClaim.einClean(_ein.text), tel = ShopClaim.phoneClean(_ph2.text);
+    String? problem;
+    if (p == null || uid == null) {
+      problem = 'Pick your place first.';
+    } else if (_biz.text.trim().length < 2) {
+      problem = 'Write the name of the business.';
+    } else if (_addr.text.trim().length < 5) {
+      problem = 'Write the address of the place.';
+    } else if (_own.text.trim().split(RegExp(r'\s+')).length < 2) {
+      problem = 'Write your full name (first and last).';
+    } else if (tel == null) {
+      problem = 'Write a phone number we can call.';
+    } else if (ein == null) {
+      problem = 'The EIN has 9 digits, like 12-3456789.';
+    } else if (!_sure) {
+      problem = 'Please confirm you own or manage this business.';
+    }
+    if (problem != null) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(problem)));
+      return;
+    }
+    setState(() => _sending = true);
+    final c = ShopClaim(
+      uid: uid!,
+      placeKey: shopKey(p!.id),
+      placeName: p.address,
+      businessName: _biz.text.trim(),
+      address: _addr.text.trim(),
+      ownerName: _own.text.trim(),
+      phone: tel!,
+      ein: ein!,
+    );
+    final ok = await ShopPages.i.submitClaim(c);
+    if (!mounted) return;
     setState(() {
-      _use(ShopPage(id: shopKey(p.id), owner: uid, name: p.address, phone: p.phone ?? '', hours: p.hours ?? '', sells: [for (final v in p.accepts) v.name]));
-      _place = p;
+      _sending = false;
+      if (ok) {
+        _claim = c;
+        _forming = false;
+      }
     });
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(ok
+            ? 'Request sent. We will check it and you will see your menus here.'
+            : 'Could not send. Someone may already have asked for this place; write to us if it is yours.')));
   }
 
   ShopPage _collect() => _draft.copy(
@@ -164,12 +224,122 @@ class _ShopOwnerScreenState extends State<ShopOwnerScreen> {
                     padding: EdgeInsets.all(24),
                     child: Text('Sign in first (the account card at the top of Profile). Your shop page is tied to your account.',
                         style: TextStyle(fontSize: 15)))
-                : _page == null
-                    ? _pickShop()
-                    : _editor(),
+                : _page != null
+                    ? _editor()
+                    : (_claim != null && !_forming)
+                        ? _claimStatus()
+                        : (_place != null && _forming)
+                            ? _claimForm()
+                            : _pickShop(),
       ),
     );
   }
+
+  /// What we asked, and where the request stands. The EIN is not shown again.
+  Widget _claimStatus() {
+    final c = _claim!;
+    final (color, text, label) = c.rejected
+        ? (AppColors.redTint, c.note.isEmpty ? 'We could not confirm this business.' : c.note, 'Not approved')
+        : (AppColors.yellowTint, 'We are checking your details. When we approve them, your menus open here. Come back later and tap Refresh.', 'Waiting for our check');
+    Widget line(String k, String v) => Padding(
+          padding: const EdgeInsets.only(bottom: 6),
+          child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            SizedBox(width: 96, child: Text(k, style: const TextStyle(color: AppColors.soft, fontSize: 13))),
+            Expanded(child: Text(v, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13))),
+          ]),
+        );
+    return ListView(padding: const EdgeInsets.all(16), children: [
+      Container(
+        padding: const EdgeInsets.all(14),
+        decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(14)),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text(label, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 16)),
+          const SizedBox(height: 4),
+          Text(text),
+        ]),
+      ),
+      const SizedBox(height: 12),
+      _card('Your request', [
+        line('Place', c.placeName),
+        line('Business', c.businessName),
+        line('Address', c.address),
+        line('Owner', c.ownerName),
+        line('Phone', c.phone),
+        line('EIN', c.einHidden),
+      ]),
+      FilledButton(
+        onPressed: () {
+          setState(() => _loading = true);
+          _load();
+        },
+        style: FilledButton.styleFrom(minimumSize: const Size.fromHeight(48)),
+        child: const Text('Refresh'),
+      ),
+      if (c.rejected) ...[
+        const SizedBox(height: 8),
+        OutlinedButton(
+          onPressed: () => setState(() {
+            _biz.text = c.businessName;
+            _addr.text = c.address;
+            _own.text = c.ownerName;
+            _ph2.text = c.phone;
+            _ein.text = c.ein;
+            _place = knownPlaces.where((x) => shopKey(x.id) == c.placeKey).firstOrNull;
+            _forming = _place != null;
+            if (_place == null) _claim = null;
+          }),
+          style: OutlinedButton.styleFrom(minimumSize: const Size.fromHeight(46)),
+          child: const Text('Fix the details and send again'),
+        ),
+      ],
+    ]);
+  }
+
+  /// The form we need before the menus open: the business, the place, the owner and the EIN.
+  Widget _claimForm() => ListView(padding: const EdgeInsets.all(16), children: [
+        const Text('Ask to run this page', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
+        const SizedBox(height: 6),
+        const Text('We check these details before your menus open. Only the MOBIlity team sees them; riders never do.',
+            style: TextStyle(color: AppColors.soft)),
+        const SizedBox(height: 12),
+        _card('The place', [
+          Row(children: [
+            const Icon(Icons.storefront_outlined),
+            const SizedBox(width: 8),
+            Expanded(child: Text('${_place!.address}${_place!.street == null ? '' : '\n${_place!.street}'}', style: const TextStyle(fontWeight: FontWeight.w700))),
+            TextButton(onPressed: () => setState(() => _forming = false), child: const Text('Change')),
+          ]),
+        ]),
+        _card('The business', [
+          TextField(controller: _biz, textCapitalization: TextCapitalization.words, decoration: _dec('Business name, as registered', icon: Icons.business_outlined)),
+          const SizedBox(height: 8),
+          TextField(controller: _addr, textCapitalization: TextCapitalization.words, decoration: _dec('Address of this location', icon: Icons.place_outlined)),
+          const SizedBox(height: 8),
+          TextField(
+              controller: _ein,
+              keyboardType: TextInputType.number,
+              decoration: _dec('EIN (Employer Identification Number), e.g. 12-3456789', icon: Icons.badge_outlined)),
+          const SizedBox(height: 4),
+          const Text('The EIN is used only to check the business. It is not shown to riders.', style: TextStyle(fontSize: 12, color: AppColors.soft)),
+        ]),
+        _card('The owner', [
+          TextField(controller: _own, textCapitalization: TextCapitalization.words, decoration: _dec('Your full name', icon: Icons.person_outline)),
+          const SizedBox(height: 8),
+          TextField(controller: _ph2, keyboardType: TextInputType.phone, decoration: _dec('Your phone number', icon: Icons.phone_outlined)),
+        ]),
+        CheckboxListTile(
+          contentPadding: EdgeInsets.zero,
+          controlAffinity: ListTileControlAffinity.leading,
+          value: _sure,
+          onChanged: (v) => setState(() => _sure = v ?? false),
+          title: const Text('I own or manage this business and the details are true.', style: TextStyle(fontSize: 13)),
+        ),
+        FilledButton(
+          onPressed: _sending ? null : _sendClaim,
+          style: FilledButton.styleFrom(minimumSize: const Size.fromHeight(48)),
+          child: Text(_sending ? 'Sending…' : 'Send the request'),
+        ),
+      ]);
 
   Widget _pickShop() => ListView(padding: const EdgeInsets.all(16), children: [
         const Text('Find your place', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),

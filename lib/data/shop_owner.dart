@@ -133,6 +133,74 @@ class ShopPage {
       };
 }
 
+/// The request to run a place's page: who the owner is and which business it is. Kept in a private
+/// collection (`shop_claims`): only the rider who sent it and the MOBIlity team can read it, never the
+/// other riders. The team sets `status` to "approved" (or "rejected", with a `note`) in the console.
+class ShopClaim {
+  final String uid, placeKey, placeName, businessName, address, ownerName, phone, ein, status, note;
+  const ShopClaim({
+    required this.uid,
+    required this.placeKey,
+    required this.placeName,
+    required this.businessName,
+    required this.address,
+    required this.ownerName,
+    required this.phone,
+    required this.ein,
+    this.status = 'pending',
+    this.note = '',
+  });
+
+  bool get approved => status == 'approved';
+  bool get rejected => status == 'rejected';
+
+  /// 12-3456789 → "••-•••6789" (the number is not shown again on screen)
+  String get einHidden => ein.length < 4 ? '•••' : '••-•••${ein.substring(ein.length - 4)}';
+
+  /// An EIN is nine digits, written 12-3456789.
+  static String? einClean(String v) {
+    final d = v.replaceAll(RegExp(r'\D'), '');
+    return d.length == 9 ? '${d.substring(0, 2)}-${d.substring(2)}' : null;
+  }
+
+  static String? phoneClean(String v) {
+    final d = v.replaceAll(RegExp(r'\D'), '');
+    return d.length >= 10 && d.length <= 15 ? v.trim() : null;
+  }
+
+  Map<String, dynamic> toFields() => {
+        'uid': ShopPage._s(uid),
+        'placeKey': ShopPage._s(placeKey),
+        'placeName': ShopPage._s(placeName),
+        'businessName': ShopPage._s(businessName),
+        'address': ShopPage._s(address),
+        'ownerName': ShopPage._s(ownerName),
+        'phone': ShopPage._s(phone),
+        'ein': ShopPage._s(ein),
+        'status': ShopPage._s('pending'),
+        'note': ShopPage._s(note),
+        'at': {'integerValue': '${DateTime.now().millisecondsSinceEpoch}'},
+      };
+
+  static ShopClaim? fromFields(Map? f) {
+    if (f == null) return null;
+    String s(String k) => ((f[k] as Map?)?['stringValue'] as String?) ?? '';
+    if (s('uid').isEmpty) return null;
+    return ShopClaim(
+      uid: s('uid'),
+      placeKey: s('placeKey'),
+      placeName: s('placeName'),
+      businessName: s('businessName'),
+      address: s('address'),
+      ownerName: s('ownerName'),
+      phone: s('phone'),
+      ein: s('ein'),
+      status: s('status').isEmpty ? 'pending' : s('status'),
+      note: s('note'),
+    );
+  }
+}
+
 /// A message from a shop to the riders who came in.
 class ShopMessage {
   final String shop, text;
@@ -201,6 +269,55 @@ class ShopPages extends ChangeNotifier {
   ShopPage? cached(String placeId) {
     final c = _cache[shopKey(placeId)];
     return c == null ? null : _visible(c.$1);
+  }
+
+  /// The signed-in rider's request, or null when none was sent yet.
+  Future<ShopClaim?> myClaim() async {
+    final uid = Auth.i.user?.uid;
+    final u = _uri(':runQuery');
+    final h = await _auth();
+    if (uid == null || u == null || h == null) return null;
+    try {
+      final r = await http
+          .post(u,
+              headers: h,
+              body: jsonEncode({
+                'structuredQuery': {
+                  'from': [
+                    {'collectionId': 'shop_claims'}
+                  ],
+                  'where': {
+                    'fieldFilter': {
+                      'field': {'fieldPath': 'uid'},
+                      'op': 'EQUAL',
+                      'value': {'stringValue': uid}
+                    }
+                  },
+                  'limit': 1,
+                }
+              }))
+          .timeout(const Duration(seconds: 8));
+      if (r.statusCode != 200) return null;
+      for (final row in jsonDecode(r.body) as List) {
+        final d = (row as Map)['document'] as Map?;
+        if (d != null) return ShopClaim.fromFields(d['fields'] as Map?);
+      }
+    } catch (_) {}
+    return null;
+  }
+
+  /// Sends (or sends again, after a refusal) the request for a place. False when the place was already
+  /// asked for by someone else.
+  Future<bool> submitClaim(ShopClaim c) async {
+    final u = _uri('/shop_claims/${c.placeKey}');
+    final h = await _auth();
+    if (u == null || h == null) return false;
+    try {
+      final r = await http.patch(u, headers: h, body: jsonEncode({'fields': c.toFields()})).timeout(const Duration(seconds: 10));
+      return r.statusCode == 200;
+    } catch (_) {
+      return false;
+    }
   }
 
   /// The shops of the signed-in rider (usually one).

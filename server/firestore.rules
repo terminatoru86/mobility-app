@@ -6,14 +6,35 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
-    // the page of a shop, kept by its owner. Anyone reads. The first signed-in rider to claim a place
-    // creates it (never already verified); only that owner changes it, and nobody can verify it from the app:
-    // the MOBIlity team sets verified = true in the console after checking the shop is theirs.
+    // The request to run a place's page: owner, business and EIN. PRIVATE: only the rider who sent it reads it
+    // (and the MOBIlity team in the console). The team sets status to approved or rejected (+ note) there;
+    // a rider can send it again only while it is pending or rejected, and can never change the status.
+    match /shop_claims/{shop} {
+      allow read: if request.auth != null && resource.data.uid == request.auth.uid;
+      allow create: if request.auth != null
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.keys().hasOnly(['uid', 'placeKey', 'placeName', 'businessName', 'address', 'ownerName',
+                                                 'phone', 'ein', 'status', 'note', 'at'])
+        && request.resource.data.ein.size() == 11 && request.resource.data.ownerName.size() < 100;
+      allow update: if request.auth != null
+        && resource.data.uid == request.auth.uid
+        && resource.data.status in ['pending', 'rejected']
+        && request.resource.data.uid == resource.data.uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.keys().hasOnly(['uid', 'placeKey', 'placeName', 'businessName', 'address', 'ownerName',
+                                                 'phone', 'ein', 'status', 'note', 'at']);
+    }
+
+    // The page of a place, kept by its owner. Anyone reads. It can be created only by the rider whose request
+    // (shop_claims, same id) we approved; only that owner changes it, and nobody can change `verified` from the app.
     match /shops/{shop} {
       allow read: if true;
       allow create: if request.auth != null
         && request.resource.data.owner == request.auth.uid
-        && request.resource.data.verified == false
+        && get(/databases/$(database)/documents/shop_claims/$(shop)).data.uid == request.auth.uid
+        && get(/databases/$(database)/documents/shop_claims/$(shop)).data.status == 'approved'
+        && request.resource.data.verified == true
         && request.resource.data.keys().hasOnly(['owner', 'verified', 'name', 'email', 'phone', 'hours', 'sells', 'photos',
                                                  'discount', 'discountText', 'discountOn', 'discountOther'])
         && request.resource.data.photos.size() <= 3;
