@@ -6,7 +6,7 @@
 | Phoenix AZ | https://cityofphoenixaz.govqa.us/WEBAPP/_rs/(S(rqvv0fug202pf55dgdpat5op))/supporthome.aspx <br>https://apps-secure.phoenix.gov/PublicRecordsSearch/Home/AdvancedSearchOut | policepublicrecords@phoenix.gov | https://www.phoenix.gov/administration/departments/communications/programs/public-records.html |
 | Philadelphia PA | – | righttoknowlaw@phila.gov <br>sanitationrtk@phila.gov | https://www.phila.gov/open-records-policy/ |
 | San Antonio TX | https://sanantonio.govqa.us/webapp/_rs/supporthome.aspx <br>https://granicus.com/product/opencities | openrecords@sanantonio.gov | https://www.sa.gov/Directory/Departments/CE/Open-Government-Request |
-| Jacksonville FL | https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(p4obydcopsfjojjsjica1fth))/OpenRecordsSummary.aspx <br>https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(bcxbkaeu4ucycqbbxgkc3got))/supporthome.aspx | – | https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(p4obydcopsfjojjsjica1fth))/supporthome.aspx |
+| Jacksonville FL | https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(4snpvkh4c42hbc5gr3fakad5))/OpenRecordsSummary.aspx <br>https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(bcxbkaeu4ucycqbbxgkc3got))/supporthome.aspx | – | https://jacksonvillefl.govqa.us/WEBAPP/_rs/(S(4snpvkh4c42hbc5gr3fakad5))/supporthome.aspx |
 | Fort Worth TX | https://fortworth.govqa.us/WEBAPP/_rs/(S(ynkukr0ktdh2m3tbs2n0e3tc))/SupportHome.aspx?s&amp;lp=3 <br>https://granicus.com/product/opencities | publicinfo@fortworthtexas.gov | https://www.fortworthtexas.gov/departments/communications/records |
 | Columbus OH | https://granicus.com/product/opencities <br>https://granicus.com/solution/govaccess/opencities/ | – | – |
 | Charlotte NC | https://charlottenc.justfoia.com/publicportal <br>https://charlottenc.justfoia.com/publicportal/home/newrequest | publicrecordsrequest@charlottenc.gov <br>cityclerk@charlottenc.gov | https://www.charlottenc.gov/Services/Request-a-Public-Record |
@@ -17,14 +17,14 @@
 | Louisville KY | – | – | – |
 | Albuquerque NM | https://cabq.nextrequest.com/ <br>https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico | – | https://www.cabq.gov/clerk/public-records |
 | Tucson AZ | https://granicus.com/product/opencities <br>https://granicus.com/solution/govaccess/opencities/ | tpdpublicrecords@tucsonaz.gov <br>cityclerk@tucsonaz.gov | https://www.tucsonaz.gov/Departments/Clerks/Public-Records |
-| Fresno CA | https://fresnoca.govqa.us/WEBAPP/_rs/(S(4f2cjl2xisuqjnztcys5f52e))/OpenRecordsSummary.aspx <br>https://fresnoca.govqa.us/WEBAPP/_rs/(S(zvgcxugvpjgbolmy2ttaflpd))/supporthome.aspx | – | https://www.fresno.gov/fire-25/about-us/divisions/prevention/public-records-act-pra-request/ |
+| Fresno CA | https://fresnoca.govqa.us/WEBAPP/_rs/(S(l502ii0sveebx5avd2e2mzp1))/OpenRecordsSummary.aspx <br>https://fresnoca.govqa.us/WEBAPP/_rs/(S(zvgcxugvpjgbolmy2ttaflpd))/supporthome.aspx | – | https://www.fresno.gov/fire-25/about-us/divisions/prevention/public-records-act-pra-request/ |
 | Kansas City MO | – | – | – |
 | Colorado Springs CO | – | – | https://coloradosprings.gov/city-communications/page/colorado-open-records-act-cora |
 | Virginia Beach VA | – | – | – |
 | Bakersfield CA | https://bakersfieldca.justfoia.com/publicportal | – | https://bakersfieldca.justfoia.com/publicportal/home/track |
 | Wichita KS | – | – | – |
-| Arlington TX | https://policerecords-arlingtontx.govqa.us/WEBAPP/_rs/SupportHome.aspx?lp=3 <br>https://agency-arlingtontx.govqa.us/WEBAPP/_rs/SupportHome.aspx?lp=4 | – | https://arlingtontx.govqa.us/WEBAPP/_rs/(S(nrjjnapjywra52wutzde55re))/SupportHome.aspx |
-| Tampa FL | https://cityoftampa.govqa.us/WEBAPP/_rs/SupportHome.aspx <br>https://cityoftampa.govqa.us/WEBAPP/_rs/(S(ajsi3hn53altp453duyx1mki))/OpenRecordsSummary.aspx | publicrecords@tampagov.net <br>cityclerkstaff@tampgov.net | https://cityoftampa.govqa.us/WEBAPP/_rs/(S(gvpulxrggkh0z1gaieyfrol2))/SupportHome.aspx |
+| Arlington TX | https://policerecords-arlingtontx.govqa.us/WEBAPP/_rs/SupportHome.aspx?lp=3 <br>https://agency-arlingtontx.govqa.us/WEBAPP/_rs/SupportHome.aspx?lp=4 | – | https://arlingtontx.govqa.us/WEBAPP/_rs/(S(bedhkg00vcx12mipn1scspqx))/SupportHome.aspx |
+| Tampa FL | https://cityoftampa.govqa.us/WEBAPP/_rs/(S(ebyqlaj2ccup203ezbeuq3p4))/OpenRecordsSummary.aspx <br>https://cityoftampa.govqa.us/WEBAPP/_rs/SupportHome.aspx | publicrecords@tampagov.net <br>cityclerkstaff@tampgov.net | https://cityoftampa.govqa.us/WEBAPP/_rs/(S(sxwidry02pwwoqnjdfm5q2nm))/SupportHome.aspx |
 | Anaheim CA | – | – | – |
 | Lexington KY | – | – | – |
 | Stockton CA | – | city.clerk@stocktonca.gov | – |
@@ -38,7 +38,7 @@
 | Toledo OH | – | – | – |
 | Madison WI | https://cityofmadison.govqa.us/WEBAPP/_rs/supporthome.aspx <br>https://cityofmadison.govqa.us/WEBAPP/_rs/AnswerDetail.aspx?sSessionID=&amp;aid=3537 | clerk@cityofmadison.com <br>itrecordscustodian@cityofmadison.com | https://www.cityofmadison.com/clerk/about/public-records |
 | Gilbert AZ | – | – | – |
-| Reno NV | https://reno.govqa.us/WEBAPP/_rs/(S(oripi1ropojt5r3ycdrpch11))/OpenRecordsSummary.aspx <br>https://reno.govqa.us/WEBAPP/_rs/(S(331kzhzxkeqcqd4vxbrr3wgv))/OpenRecordsSummary.aspx | – | https://reno.govqa.us/WEBAPP/_rs/(S(xomzqyga22mmu0doplqr3jut))/supporthome.aspx |
+| Reno NV | https://reno.govqa.us/WEBAPP/_rs/(S(pcxkvsxjfnethq4jh405qdmc))/OpenRecordsSummary.aspx <br>https://reno.govqa.us/WEBAPP/_rs/(S(igbxz5azhjrwgydw24j5tgdj))/OpenRecordsSummary.aspx | – | https://reno.govqa.us/WEBAPP/_rs/(S(j3dh0fv3q5pxmbqbkspdrbou))/supporthome.aspx |
 | Fort Wayne IN | – | – | – |
 | North Las Vegas NV | – | – | – |
 | St. Petersburg FL | https://stpetefl.mycusthelp.com/WEBAPP/_rs/(S(uijzeh1ff0mpoljg5cqdjbkf))/supporthome.aspx <br>https://stpetefl.mycusthelp.com/WEBAPP/_rs/supporthome.aspx | city.clerk@stpete.org | https://www.stpete.org/government/transparency/public_records.php |
@@ -61,7 +61,7 @@
 | Des Moines IA | – | cityclerk@dmgov.org | – |
 | Birmingham AL | – | – | https://www.birminghamal.gov/government/city-departments/city-clerks-office/public-records-request |
 | Salt Lake City UT | https://saltlakecityut.justfoia.com/publicportal/home/newrequest | – | – |
-| Hartford CT | https://hartfordct.govqa.us/WEBAPP/_rs/(S(fh5rkryqiow10spubvhnd554))/OpenRecordsSummary.aspx <br>https://hartfordct.govqa.us/WEBAPP/_rs/supporthome.aspx | – | https://hartfordct.govqa.us/WEBAPP/_rs/(S(fh5rkryqiow10spubvhnd554))/OpenRecordsSummary.aspx |
+| Hartford CT | https://hartfordct.govqa.us/WEBAPP/_rs/(S(iyhbmm10f4gmvt5oaysmpmzq))/OpenRecordsSummary.aspx <br>https://hartfordct.govqa.us/WEBAPP/_rs/supporthome.aspx | – | https://hartfordct.govqa.us/WEBAPP/_rs/(S(iyhbmm10f4gmvt5oaysmpmzq))/OpenRecordsSummary.aspx |
 | Little Rock AR | https://littlerock.justfoia.com/publicportal/home/newrequest <br>https://littlerock.gov/wp-content/uploads/2026/01/justfoia.jpeg | – | https://littlerock.justfoia.com/publicportal/home/newrequest |
 | Savannah GA | https://savannahga.justfoia.com/publicportal | – | https://savannahga.justfoia.com/publicportal/home/newrequest |
 | Ann Arbor MI | https://www.a2gov.org/city-clerk/records-request-foia/ <br>https://www.a2gov.org/city-clerk/foia-request/ | cityclerk@a2gov.org <br>a2policerecords@a2gov.org | https://www.a2gov.org/city-clerk/records-request-foia/ |
@@ -71,7 +71,7 @@
 | Sioux Falls SD | https://granicus.com/product/opencities <br>https://granicus.com/solution/govaccess/opencities/ | – | https://www.siouxfalls.gov/government/public-records/public-records-fees |
 | Fargo ND | – | – | https://www.fargond.gov/city-government/open-records-requests |
 | Billings MT | – | – | https://www.billingsmt.gov/3040/Public-Records-Request---City-Records-an |
-| Cheyenne WY | https://cheyennewy.govqa.us/WEBAPP/_rs/(S(jg0q01psklkr4o4evuot3bho))/OpenRecordsSummary.aspx <br>https://cheyennewy.govqa.us/WEBAPP/_rs/(S(au1swinlkobv343ote1belzx))/supporthome.aspx | cityclerk@cheyennecity.org | https://cheyennewy.govqa.us/WEBAPP/_rs/(S(jg0q01psklkr4o4evuot3bho))/supporthome.aspx |
+| Cheyenne WY | https://cheyennewy.govqa.us/WEBAPP/_rs/(S(au1swinlkobv343ote1belzx))/supporthome.aspx <br>https://granicus.com/product/opencities | cityclerk@cheyennecity.org | – |
 | Manchester NH | – | – | https://www.manchesternh.gov/government/public-records |
 | Wilmington DE | – | – | – |
 | Charleston WV | – | – | https://www.charlestonwv.gov/foia |
