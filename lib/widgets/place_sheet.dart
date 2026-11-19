@@ -472,7 +472,7 @@ class _PlaceSheetState extends State<PlaceSheet> {
                 if (p.operatorName != null)
                   Text(p.operatorName!, style: TextStyle(fontWeight: FontWeight.w900, fontSize: 18, color: c.dark))
                 else
-                  Glyph(p.type, size: 24, color: c.dark),
+                  Glyph.place(p, size: 24, color: c.dark),
                 const SizedBox(width: 8),
                 // a place with a name (a shop, a workshop, a park): the name, in bold, beside its drawing
                 if (named)

@@ -199,5 +199,11 @@ void main() {
     expect(f['status']['stringValue'], 'pending');
     expect(ShopClaim.fromFields(f)!.code, a);
   });
+  test('Service hub: one vehicle only gets its own pin icon', () {
+    Place svc(List<Vehicle> a) => Place(id: 's', type: PlaceType.service, address: 'x', pos: const LatLng(41.8, -87.6), status: Status.unknown, age: '', accepts: a, distance: '', etaMin: const {});
+    expect(svc([Vehicle.scooter]).specialty, Vehicle.scooter);
+    expect(svc([Vehicle.bike, Vehicle.ebike]).specialty, isNull);
+    expect(Place(id: 'h', type: PlaceType.shop, address: 'x', pos: const LatLng(41.8, -87.6), status: Status.unknown, age: '', accepts: [Vehicle.moto], distance: '', etaMin: const {}).specialty, isNull);
+  });
 });
 }

@@ -11,11 +11,19 @@ class Glyph extends StatelessWidget {
   final PlaceType type;
   final double size;
   final Color color;
-  const Glyph(this.type, {super.key, this.size = 22, this.color = AppColors.ink});
+  const Glyph(this.type, {super.key, this.size = 22, this.color = AppColors.ink}) : vehicle = null;
+
+  /// The glyph of a place: a service hub that repairs only one vehicle gets that vehicle's icon
+  /// (a half gear over the vehicle) instead of the wrench.
+  Glyph.place(Place p, {super.key, this.size = 22, this.color = AppColors.ink})
+      : type = p.type,
+        vehicle = p.specialty;
+
+  final Vehicle? vehicle;
 
   @override
   Widget build(BuildContext context) => SvgPicture.asset(
-        type.glyph,
+        vehicle != null ? 'assets/glyphs/svc_${vehicle!.name}.svg' : type.glyph,
         width: size,
         height: size,
         colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
@@ -75,7 +83,7 @@ class PlacePin extends StatelessWidget {
     final swaps = full && animate && !grey && !p.type.isNeutral && p.age.isNotEmpty;
     // manual design: drawing and time in the dark tone of the status, on the tinted inside
     final ink = c.dark;
-    final glyph = Glyph(p.type, key: const ValueKey('g'), size: 20, color: ink);
+    final glyph = Glyph.place(p, key: const ValueKey('g'), size: 20, color: ink);
 
     return SizedBox(
       width: PlacePin.width,

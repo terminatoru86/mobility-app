@@ -674,7 +674,7 @@ class MapScreenState extends State<MapScreen> {
         for (final p in _sOurs)
           ListTile(
             dense: true,
-            leading: Glyph(p.type, size: 20, color: colorsFor(p.shownStatus).dark),
+            leading: Glyph.place(p, size: 20, color: colorsFor(p.shownStatus).dark),
             title: Text(p.address, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontWeight: FontWeight.w700)),
             subtitle: Text('${p.type.title} · ${p.distance}'),
             onTap: () => _usePick(p),

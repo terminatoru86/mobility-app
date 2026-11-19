@@ -272,6 +272,9 @@ class Place {
 
   Status get shownStatus => type.isNeutral ? Status.neutral : status;
 
+  /// A service hub that repairs ONE kind of vehicle only: its pin shows that vehicle's own icon instead of the wrench.
+  Vehicle? get specialty => type == PlaceType.service && accepts.length == 1 ? accepts.first : null;
+
   /// A shop shows up for a rider only when it sells for the rider's vehicle (a bike shop is also fine
   /// for an e-bike). Other kinds of places, and riders with no vehicle chosen, see everything.
   bool fitsVehicle(Vehicle? v, [List<Vehicle>? sells]) {
