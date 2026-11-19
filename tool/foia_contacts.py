@@ -101,6 +101,7 @@ def city(name, domain):
 
 
 def main(out_dir):
+    import os; os.makedirs(out_dir, exist_ok=True)
     with cf.ThreadPoolExecutor(16) as ex:
         rows = list(ex.map(lambda kv: city(*kv), CITIES.items()))
     json.dump(rows, open(f'{out_dir}/contacts.json', 'w'), indent=1)
