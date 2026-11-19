@@ -691,15 +691,15 @@ class _VehicleDeckState extends State<VehicleDeck> {
   /// smaller in front, overlapping, filling the space.
   Widget _things() => LayoutBuilder(builder: (_, c) {
         final w = c.maxWidth, h = _h;
-        final big = [h * 0.66, w * 0.66].reduce((a, b) => a < b ? a : b);
-        final small = big * 0.76;
+        final big = [h * 0.6, w * 0.54].reduce((a, b) => a < b ? a : b);
+        final small = big * 0.78;
         Widget at(String x, double size, double left, double top, double turn) =>
             Positioned(left: left, top: top, child: Transform.rotate(angle: turn, child: _img(x, size)));
         return Stack(children: [
-          at('frame', big, 1, 2, -0.05),
-          at('helmet', big, w - big - 1, 0, 0.04),
-          at('gloves', small, w * 0.06, h - small - 1, -0.1),
-          at('oilbottle', small, w - small - w * 0.04, h - small - 1, 0.08),
+          at('frame', big, 2, 3, -0.05),
+          at('helmet', big, w - big - 2, 1, 0.04),
+          at('gloves', small, w * 0.1, h - small - 3, -0.1),
+          at('oilbottle', small, w - small - w * 0.08, h - small - 3, 0.08),
         ]);
       });
 
