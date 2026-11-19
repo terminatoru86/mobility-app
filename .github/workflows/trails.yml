@@ -62,7 +62,7 @@ jobs:
 
   merge:
     needs: [osm, official]
-    if: always() && (needs.osm.result == 'success' || needs.official.result == 'success')
+    if: ${{ !cancelled() && (needs.osm.result == 'success' || needs.official.result == 'success') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

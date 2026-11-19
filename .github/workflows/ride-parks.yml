@@ -45,7 +45,7 @@ jobs:
 
   parks:
     needs: osm
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:

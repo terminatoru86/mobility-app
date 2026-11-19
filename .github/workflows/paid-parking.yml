@@ -5,8 +5,6 @@ name: Paid / private parking (bikes, mopeds, motorcycles, scooters)
 # Result: data/paid_parking.json + data/paid_parking/REPORT.md; then the map packs are rebuilt (data-packs, places).
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '17 9 2 * *' # second day of every month
 
 permissions:
   contents: write
@@ -43,7 +41,7 @@ jobs:
 
   join:
     needs: osm
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
@@ -72,4 +70,4 @@ jobs:
       - name: Rebuild the map packs with them
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run data-packs.yml -f mode=places
+        run: echo 'Map packs are rebuilt by coverage.yml or by hand'

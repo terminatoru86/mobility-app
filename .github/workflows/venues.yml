@@ -13,8 +13,6 @@ on:
         description: 'which groups (comma list), or all'
         required: false
         default: 'all'
-  schedule:
-    - cron: '27 7 4 * *' # fourth day of every month
 
 permissions:
   contents: write
@@ -58,7 +56,7 @@ jobs:
 
   group:
     needs: osm
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 300
     strategy:
@@ -96,7 +94,7 @@ jobs:
 
   save:
     needs: group
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -120,4 +118,4 @@ jobs:
       - name: Rebuild the map packs (in full)
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run data-packs.yml -f mode=full
+        run: echo 'Map packs are rebuilt by coverage.yml or by hand'

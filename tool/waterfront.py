@@ -249,6 +249,21 @@ SAYS = {
 }
 NOT_HERE = re.compile(r'\bno\s+(bikes?|bicycles?|motorcycles?|scooters?|mopeds?|rentals?)\b|not\s+(allowed|permitted|available)|prohibited', re.I)
 PRICE = re.compile(r'\$\s?(\d{1,3}(?:\.\d{2})?)')
+# racks ON a bus / train ("Bikes on Buses") are not parking at the place
+ON_VEHICLE = re.compile(r'\b(on|onto|aboard)\s+(the\s+|all\s+|our\s+)?(bus|buses|trains?|rail\s*cars?|ferr(y|ies)|shuttles?|front\s+of)\b|'
+                        r'bikes?\s+on\s+(buses|trains)|bike\s+racks?\s+(on|in)\s+(the\s+)?(front|bus|train)', re.I)
+SMALL = {'is', 'are', 'a', 'an', 'the', 'at', 'in', 'on', 'near', 'by', 'and', 'or', 'of', 'for', 'to', 'with', 'we', 'you', 'our',
+         'your', 'can', 'will', 'has', 'have', 'available', 'located', 'provided', 'offer', 'offers', 'there', 'free', 'from'}
+
+
+def prose(sent, m):
+    """The words around the match read as a sentence, not as a menu of buttons ("HOME EVENTS BIKE RENTALS CONTACT")."""
+    words = re.findall(r"[A-Za-z][A-Za-z'&-]*", sent[max(0, m.start() - 160):m.end() + 160])
+    if len(words) < 6:
+        return False
+    small = sum(1 for w in words if w.lower() in SMALL and w.islower())
+    caps = sum(1 for w in words if w[0].isupper())
+    return small >= 2 and caps / len(words) < 0.6
 
 
 def visible(page):
@@ -264,7 +279,10 @@ def what_page_says(text):
     for k, rx in SAYS.items():
         for i, sent in enumerate(sentences):
             m = rx.search(sent)
-            if not m or NOT_HERE.search(sent):
+            if not m or NOT_HERE.search(sent) or ON_VEHICLE.search(sent):
+                continue
+            ctx = ' '.join(sentences[max(0, i - 1):i + 2])
+            if not prose(ctx, rx.search(ctx)):
                 continue
             snip = ' '.join(sentences[max(0, i - 1):i + 2]).strip()
             fee = 'no' if re.search(r'\bfree\b|no\s+charge|complimentary', sent, re.I) else None
@@ -441,6 +459,8 @@ def main_join(parts):
 
 
 def test():
+    assert not what_page_says('HOME YOUR PARK EVENTS FACILITIES CONTACTS SPONSORS OUR AMENITIES BANQUET HALLS BIKE RENTALS GOLF')
+    assert 'bike' not in what_page_says('Bike racks located in specified train cars are provided free of charge on all trains.')
     s = what_page_says('Parking: Bike racks are available free of charge near the main gate. Motorcycle parking is $10 per day. '
                        'Rent a bike at the beach house. Free air pumps at the pier.')
     assert s['bike']['fee'] == 'no' and s['moto']['fee'] == 'yes' and s['moto']['charge'] == '$10', s

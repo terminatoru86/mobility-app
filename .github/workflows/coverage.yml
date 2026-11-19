@@ -1,0 +1,202 @@
+name: Coverage (paid parking, waterfront, venues)
+
+# One download of each Geofabrik extract feeds all three sources (paid / private two-wheeler parking; theme parks,
+# marinas and beaches; schools, offices, transit, malls, parks, government, companies...), so Geofabrik is asked once
+# per region. Each source then reads Overture / Foursquare / the websites; everything is saved in one commit and the
+# map packs are rebuilt in full.
+on:
+  workflow_dispatch:
+    inputs:
+      groups:
+        description: 'venue groups (comma list), or all'
+        required: false
+        default: 'all'
+  schedule:
+    - cron: '27 7 4 * *' # fourth day of every month
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  osm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        region: [us-midwest, us-northeast, us-pacific, us-south, us-west, us/puerto-rico]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tool
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq osmium-tool
+          pip install osmium
+      - name: Download the extract
+        run: bash tool/get_extract.sh "${{ matrix.region }}" region.osm.pbf
+      - name: Paid / private parking
+        run: |
+          osmium tags-filter region.osm.pbf nwr/amenity=parking -o pay.osm.pbf
+          python3 tool/paid_parking.py --pbf pay.osm.pbf pay.json && rm pay.osm.pbf
+      - name: Theme parks, marinas, beaches, paths along the water
+        run: |
+          osmium tags-filter region.osm.pbf \
+            nwr/leisure=marina,water_park,beach_resort nwr/tourism=theme_park nwr/natural=beach \
+            nwr/harbour nwr/seamark:type=harbour w/highway=cycleway,path,footway,pedestrian -o wtr.osm.pbf
+          python3 tool/waterfront.py --pbf wtr.osm.pbf wtr.json && rm wtr.osm.pbf
+      - name: Schools, offices, transit, malls, parks, government, companies...
+        run: |
+          osmium tags-filter region.osm.pbf \
+            nwr/amenity=school,college,university,marketplace,library,townhall,community_centre,hospital,bus_station \
+            nwr/amenity=courthouse,post_office,public_building,coworking_space nwr/office=government,company,coworking nwr/government \
+            nwr/building=office,commercial nwr/aeroway=aerodrome,terminal nwr/railway=halt \
+            nwr/shop=mall nwr/landuse=industrial,commercial,retail nwr/leisure=park,stadium,sports_centre \
+            nwr/public_transport=station nwr/railway=station nwr/park_ride nwr/tourism=hotel -o ven.osm.pbf
+          rm region.osm.pbf
+          python3 tool/venues.py --pbf ven.osm.pbf ven.json && rm ven.osm.pbf
+      - name: Name the result
+        run: echo "NAME=$(echo '${{ matrix.region }}' | tr '/' '-')" >> $GITHUB_ENV
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cov-osm-${{ env.NAME }}
+          path: |
+            pay.json
+            wtr.json
+            ven.json
+          retention-days: 3
+
+  paid:
+    needs: osm
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install duckdb
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: cov-osm-*
+          path: parts
+      - name: Join OSM, Overture and Foursquare
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 tool/paid_parking.py $(ls parts/*/pay.json)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: out-paid
+          path: |
+            data/paid_parking.json
+            data/paid_parking/
+          retention-days: 3
+
+  waterfront:
+    needs: osm
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install duckdb
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: cov-osm-*
+          path: parts
+      - name: Join, read the websites, add what is missing
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          for f in parts/*/wtr.json; do cp "$f" "$(dirname $f)/part.json"; done
+          python3 tool/waterfront.py $(ls parts/*/part.json)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: out-waterfront
+          path: |
+            data/waterfront.json
+            data/waterfront_paths.json
+            data/waterfront/
+          retention-days: 3
+
+  venues:
+    needs: osm
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        group: [offices, corporate, transit, campus, shopping, work, parks, civic, sports, hotels, government]
+    steps:
+      - name: Wanted this time?
+        id: want
+        run: |
+          g="${{ github.event.inputs.groups || 'all' }}"
+          if [ "$g" = "all" ] || echo ",$g," | grep -q ",${{ matrix.group }},"; then echo "go=1" >> $GITHUB_OUTPUT; fi
+      - uses: actions/checkout@v4
+        if: steps.want.outputs.go
+      - uses: actions/setup-python@v5
+        if: steps.want.outputs.go
+        with:
+          python-version: '3.12'
+      - run: pip install duckdb
+        if: steps.want.outputs.go
+      - uses: actions/download-artifact@v4
+        if: steps.want.outputs.go
+        with:
+          pattern: cov-osm-*
+          path: parts
+      - name: Read the websites
+        if: steps.want.outputs.go
+        run: python3 tool/venues.py --group ${{ matrix.group }} $(ls parts/*/ven.json)
+      - uses: actions/upload-artifact@v4
+        if: steps.want.outputs.go
+        with:
+          name: out-venues-${{ matrix.group }}
+          path: data/venues/
+          retention-days: 3
+
+  save:
+    needs: [paid, waterfront, venues]
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: out-*
+          path: got
+      - name: Put the results in place
+        run: |
+          mkdir -p data/venues data/paid_parking data/waterfront
+          [ -f got/out-paid/paid_parking.json ] && cp got/out-paid/paid_parking.json data/ && cp -r got/out-paid/paid_parking/. data/paid_parking/ || true
+          if [ -f got/out-waterfront/waterfront.json ]; then
+            cp got/out-waterfront/waterfront.json got/out-waterfront/waterfront_paths.json data/
+            cp -r got/out-waterfront/waterfront/. data/waterfront/
+          fi
+          for d in got/out-venues-*; do [ -d "$d" ] && cp "$d"/* data/venues/; done
+          python3 tool/trails_tiles.py
+          for f in data/paid_parking/REPORT.md data/waterfront/REPORT.md data/venues/REPORT_*.md; do [ -f "$f" ] && head -12 "$f" && echo; done
+      - name: Save in the repository
+        run: |
+          git config user.name "mobility-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A data/paid_parking.json data/paid_parking data/waterfront.json data/waterfront_paths.json data/waterfront data/venues data/trails/tiles
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Coverage: paid parking, waterfront, venues $(date -u +%Y-%m-%d)"
+          git pull --rebase -X theirs
+          git push
+      - name: Rebuild the map packs (in full)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run data-packs.yml -f mode=full

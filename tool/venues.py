@@ -264,7 +264,7 @@ def main_group(group, parts):
     with ThreadPoolExecutor(max_workers=64) as pool:
         got = dict(zip(keys, pool.map(lambda k: wf.read_site(sites[k]['url']), keys)))
     grid = wf.packs_parking()
-    added, said = [], {k: 0 for k in wf.SAYS}
+    added, said, done = [], {k: 0 for k in wf.SAYS}, set()
     vlabel = {'bike': 'bike parking', 'moto': 'motorcycle parking', 'scooter': 'scooter parking', 'rent': 'bike rental',
               'pump': 'air pump', 'repair': 'bike repair station', 'charge': 'e-bike charging', 'wash': 'bike wash'}
     amen = {'bike': 'bicycle_parking', 'moto': 'motorcycle_parking', 'scooter': 'small_electric_vehicle_parking',
@@ -278,9 +278,14 @@ def main_group(group, parts):
             said[k] += 1
             for d in ds:
                 # a district / park-district site that lists one thing does not mean every school / park has it:
-                # a shared site counts only for the place its page names
-                if shared and wf.norm(d[3]['name'])[:12] not in wf.norm(v['snip']) and len(ds) > 3:
+                # a site shared by several places counts only for the place its page names (in the text or the address)
+                key = wf.norm(d[3]['name'])[:12]
+                if shared and key not in wf.norm(v['snip']) and key not in wf.norm(v['page']):
                     continue
+                twin = (wf.norm(d[3]['name']), k, round(d[1], 2), round(d[2], 2))
+                if twin in done:
+                    continue  # the same college / mall twice (two map objects with one name)
+                done.add(twin)
                 if wf.has_near(grid, k, d[1], d[2]):
                     continue
                 t = {'amenity': amen[k], 'name': f'{d[3]["name"]} · {vlabel[k]}', 'fee': v.get('fee'), 'charge': v.get('charge'),

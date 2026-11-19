@@ -6,8 +6,6 @@ name: Theme parks, marinas and beaches
 # (data/waterfront.json -> map packs). Named bike paths along the water go to Explore (data/waterfront_paths.json).
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '47 8 3 * *' # third day of every month
 
 permissions:
   contents: write
@@ -48,7 +46,7 @@ jobs:
 
   join:
     needs: osm
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
@@ -79,4 +77,4 @@ jobs:
       - name: Rebuild the map packs with them
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run data-packs.yml -f mode=places
+        run: echo 'Map packs are rebuilt by coverage.yml or by hand'
