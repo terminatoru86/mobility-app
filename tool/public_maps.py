@@ -12,7 +12,58 @@ SOURCES = [
      'name': 'site_name', 'cap': 'stall'},
     # Durham NC: city bike parking map (Google My Maps on durhamnc.gov/1033)
     {'id': 'durham', 'city': 'Durham NC', 'kind': 'mymaps', 'mid': '1DHI3dY9fgIBKUqkieifCrc-pUlU'},
+    # Dero (maker of the Fixit public repair stand): its world map of installed Fixits (~2,600, ~2,400 in the US)
+    {'id': 'dero', 'city': 'Dero Fixit map', 'kind': 'dero', 'url': 'https://www.dero.com/fixitmap/fixitmap.html'},
 ]
+
+
+_STATES = None
+def in_us(lat, lon):
+    """Inside a US state, or within ~3 km of one (the state shapes are simplified: coasts, piers)."""
+    return any(_in_us(lat + a, lon + b) for a, b in ((0, 0), (0.03, 0), (-0.03, 0), (0, 0.03), (0, -0.03)))
+
+
+def _in_us(lat, lon):
+    """Point inside one of the US states (data/us_states.json), so Canada / Mexico points stay out."""
+    global _STATES
+    if _STATES is None:
+        g = json.load(open(os.path.join(ROOT, 'data', 'us_states.json')))
+        _STATES = []
+        for f in g['features']:
+            geom = f['geometry']
+            polys = geom['coordinates'] if geom['type'] == 'MultiPolygon' else [geom['coordinates']]
+            for poly in polys:
+                ring = poly[0]
+                xs, ys = [p[0] for p in ring], [p[1] for p in ring]
+                _STATES.append((min(xs), min(ys), max(xs), max(ys), ring))
+    for x0, y0, x1, y1, ring in _STATES:
+        if not (x0 <= lon <= x1 and y0 <= lat <= y1):
+            continue
+        inside, j = False, len(ring) - 1
+        for i in range(len(ring)):
+            xi, yi = ring[i][0], ring[i][1]
+            xj, yj = ring[j][0], ring[j][1]
+            if (yi > lat) != (yj > lat) and lon < (xj - xi) * (lat - yi) / (yj - yi) + xi:
+                inside = not inside
+            j = i
+        if inside:
+            return True
+    return False
+
+
+def dero(s):
+    html = requests.get(s['url'], headers=UA, timeout=120).text
+    out = []
+    for i, m in enumerate(re.finditer(r'L\.marker\(\[\s*(-?\d+\.\d+)\s*,\s*(-?\d+\.\d+)\s*\][^)]*\)\.bindPopup\("((?:[^"\\]|\\.)*)"\)', html)):
+        lat, lon, name = float(m.group(1)), float(m.group(2)), re.sub(r'<[^>]+>', ' ', m.group(3)).strip()
+        if not in_us(lat, lon):
+            continue
+        t = {'amenity': 'bicycle_repair_station', 'brand': 'Dero Fixit', 'manufacturer': 'Dero'}
+        if name:
+            t['name'] = name[:80]
+        t['source'] = 'Maker map: Dero Fixit'
+        out.append([f"pm/dero-{i}", round(lat, 6), round(lon, 6), t])
+    return out
 
 
 def arcgis(s):
@@ -110,7 +161,7 @@ def main():
     allp, rep = [], []
     for s in SOURCES:
         try:
-            got = arcgis(s) if s['kind'] == 'arcgis' else mymaps(s)
+            got = arcgis(s) if s['kind'] == 'arcgis' else dero(s) if s['kind'] == 'dero' else mymaps(s)
         except Exception as e:
             got = []
             print(s['id'], 'ERROR', e)
