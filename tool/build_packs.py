@@ -978,6 +978,15 @@ def fetch_waterfront():
     return out
 
 
+def fetch_cityfiles():
+    """Racks, lockers, repair stations, scooter / motorcycle parking found in the files that cities and states
+    publish on their own websites (data/city_pts.json, made by tool/city_rows.py from tool/city_files.py)."""
+    f = os.path.join(ROOT, 'data', 'city_pts.json')
+    out = json.load(open(f, encoding='utf-8')) if os.path.exists(f) else []
+    print(f'From city and state files: {len(out)}', flush=True)
+    return out
+
+
 def fetch_afdc():
     """Charging with an ordinary wall outlet (NEMA 5-15 / 5-20), where an e-bike or a scooter charges with its own
     charger: the US Department of Energy station list (NREL Alternative Fuels Data Center, public domain).
@@ -1219,7 +1228,7 @@ def main():
                     pass
     counts_src = {}
     for name, fn in (('mbta', fetch_mbta), ('bikelink', fetch_bikelink), ('overture', fetch_overture), ('foursquare', fetch_foursquare),
-                     ('alltheplaces', fetch_alltheplaces), ('own', fetch_own), ('paid', fetch_paid), ('waterfront', fetch_waterfront), ('afdc', fetch_afdc),
+                     ('alltheplaces', fetch_alltheplaces), ('own', fetch_own), ('paid', fetch_paid), ('waterfront', fetch_waterfront), ('cityfiles', fetch_cityfiles), ('afdc', fetch_afdc),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
         if refresh and name not in refresh:
             continue
@@ -1227,7 +1236,7 @@ def main():
             got = fn()
             # read again and answered: the old rows of this source go, so a place the source
             # (or our filter) no longer has does not stay on the map
-            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'afdc': 'afdc/', 'bikelink': 'blk/'}.get(name)
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'cityfiles': 'cty/', 'afdc': 'afdc/', 'bikelink': 'blk/'}.get(name)
             if old and got:
                 for d in tiles.values():
                     for k in [k for k in d if str(k).startswith(old)]:

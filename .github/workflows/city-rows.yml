@@ -1,0 +1,30 @@
+name: City rows to map points
+
+# Rows found in city / state files -> map points (data/city_pts.json): keep our categories with coordinates or a
+# street address (geocoded by the US Census), drop budgets / minutes / plans. Then a data-packs run puts them on the map.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rows:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Rows to points
+        run: python3 tool/city_rows.py
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/city_pts.json data/city_pts_REPORT.md
+          git commit -qm "City files: map points from city / state files" || exit 0
+          for i in $(seq 1 20); do git pull -q --rebase -X theirs && git push -q && exit 0; sleep 20; done
+          exit 1
