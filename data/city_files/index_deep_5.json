@@ -1,0 +1,1810 @@
+{
+ "Fort Worth TX": {
+  "files": [
+   {
+    "url": "https://fortworthtexas.gov/files/assets/public/v/1/tpw/parking_faqs-updated.pdf",
+    "text": "Parking FAQs (PDF, 855KB)",
+    "file": "data/city_files/Fort_Worth_TX/92456c_parking_faqs-updated.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/3/environmental-services/solid-waste/documents/envd-solid-waste-holiday-schedule-2026-ada.pdf",
+    "text": "Holiday Schedule for Garbage and Recycling Collection (PDF, 2MB)",
+    "file": "data/city_files/Fort_Worth_TX/946fd8_envd-solid-waste-holiday-schedule-2026-ada.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/development-services/documents/all-preservation-and-design/historic/guide-info/how-to-apply-for-a-cofa-hclc.pdf",
+    "text": "How to Apply Online",
+    "file": "data/city_files/Fort_Worth_TX/ca44ec_how-to-apply-for-a-cofa-hclc.pdf",
+    "rows": 16,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/guide-info/how-to-apply-for-a-coa-hclc.pdf",
+    "text": "How to Apply (PDF, 1MB)",
+    "file": "data/city_files/Fort_Worth_TX/9e7ebc_how-to-apply-for-a-coa-hclc.pdf",
+    "rows": 16,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/applications-calendars-hclc/2026/2026-hclc-calendar-for-landmark-commission-hearings-final.pdf",
+    "text": "HCLC Calendar 2026",
+    "file": "data/city_files/Fort_Worth_TX/e5decd_2026-hclc-calendar-for-landmark-commission-hearings-final.pdf",
+    "rows": 48,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2026/1.-1-12-2026-hclc-minutes.pdf",
+    "text": "January 12, 2026 (PDF, 235KB)",
+    "file": "data/city_files/Fort_Worth_TX/d6ede4_1.-1-12-2026-hclc-minutes.pdf",
+    "rows": 32,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2026/2.-2-9-2026-hclc-minutes.pdf",
+    "text": "February 9, 2026 (PDF, 239KB)",
+    "file": "data/city_files/Fort_Worth_TX/1b357c_2.-2-9-2026-hclc-minutes.pdf",
+    "rows": 36,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2026/3.-3-9-2026-hclc-minutes.pdf",
+    "text": "March 9, 2026 (PDF, 252KB)",
+    "file": "data/city_files/Fort_Worth_TX/b056c2_3.-3-9-2026-hclc-minutes.pdf",
+    "rows": 43,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2026/4.-4-13-2026-hclc-minutes.pdf",
+    "text": "April 13, 2026 (PDF, 247KB)",
+    "file": "data/city_files/Fort_Worth_TX/2f061d_4.-4-13-2026-hclc-minutes.pdf",
+    "rows": 44,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2026/5.-5-11-2026-hclc-minutes.pdf",
+    "text": "May 11, 2026 (PDF, 262KB)",
+    "file": "data/city_files/Fort_Worth_TX/dd9ba1_5.-5-11-2026-hclc-minutes.pdf",
+    "rows": 62,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2026/6.-6-8-2026-hclc-minutes.pdf",
+    "text": "June 8, 2026 (PDF, 236KB)",
+    "file": "data/city_files/Fort_Worth_TX/60eb10_6.-6-8-2026-hclc-minutes.pdf",
+    "rows": 24,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2017-hclc-decisions.pdf",
+    "text": "2017 Minutes (PDF, 1MB)",
+    "file": "data/city_files/Fort_Worth_TX/12674a_2017-hclc-decisions.pdf",
+    "rows": 496,
+    "bike_rows": 46
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2018-hclc-decisions.pdf",
+    "text": "2018 Minutes (PDF, 634KB)",
+    "file": "data/city_files/Fort_Worth_TX/eeb586_2018-hclc-decisions.pdf",
+    "rows": 686,
+    "bike_rows": 51
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2019-hclc-decisions.pdf",
+    "text": "2019 Minutes (PDF, 1MB)",
+    "file": "data/city_files/Fort_Worth_TX/ee77f1_2019-hclc-decisions.pdf",
+    "rows": 465,
+    "bike_rows": 50
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2020-hclc-decisions.pdf",
+    "text": "2020 Minutes (PDF, 2MB)",
+    "file": "data/city_files/Fort_Worth_TX/1a50c6_2020-hclc-decisions.pdf",
+    "rows": 461,
+    "bike_rows": 55
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2021-hclc-decisions.pdf",
+    "text": "2021 Minutes (PDF, 845KB)",
+    "file": "data/city_files/Fort_Worth_TX/1e26d1_2021-hclc-decisions.pdf",
+    "rows": 496,
+    "bike_rows": 56
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2022-hclc-decisions.pdf",
+    "text": "2022 Minutes (PDF, 967KB)",
+    "file": "data/city_files/Fort_Worth_TX/b84d42_2022-hclc-decisions.pdf",
+    "rows": 536,
+    "bike_rows": 72
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2023-hclc-decisions.pdf",
+    "text": "2023 Minutes (PDF, 1MB)",
+    "file": "data/city_files/Fort_Worth_TX/2db15f_2023-hclc-decisions.pdf",
+    "rows": 520,
+    "bike_rows": 65
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2024/2024-meeting-minutes-combined.pdf",
+    "text": "2024 Minutes (PDF, 961KB)",
+    "file": "data/city_files/Fort_Worth_TX/ae9441_2024-meeting-minutes-combined.pdf",
+    "rows": 610,
+    "bike_rows": 98
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/agenda-annotated-agendas/annotated-agendas/2025/2025-minutes-combined.pdf",
+    "text": "2025 Minutes (PDF, 1MB)",
+    "file": "data/city_files/Fort_Worth_TX/925768_2025-minutes-combined.pdf",
+    "rows": 543,
+    "bike_rows": 42
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/development-services/documents/historic/treatment-guidelines-2017.pdf",
+    "text": "Secretary of the Interior’s Standards for the Treatment of Historic Properties",
+    "file": "data/city_files/Fort_Worth_TX/19ca3e_treatment-guidelines-2017.pdf",
+    "rows": 108,
+    "bike_rows": 68
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/5/development-services/documents/resources-applications-forms-videos/h/2024-designation-of-individual-property-application.pdf",
+    "text": "Historic Designation Application for Individual Sites (PDF, 310KB)",
+    "file": "data/city_files/Fort_Worth_TX/a02659_2024-designation-of-individual-property-application.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/development-services/documents/all-preservation-and-design/historic/hste-eligible-costs.pdf",
+    "text": "HSTE-Eligible-Costs.pdf(PDF, 36KB)",
+    "file": "data/city_files/Fort_Worth_TX/71a171_hste-eligible-costs.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/conservation-districts/como_cd-informational_8.7.25.pdf",
+    "text": "Conservation District Informational Sheet",
+    "file": "data/city_files/Fort_Worth_TX/a71d7c_como_cd-informational_8.7.25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/conservation-districts/como-cd-boundary_transparency.pdf",
+    "text": "Draft Boundary of Como Conservation District",
+    "file": "data/city_files/Fort_Worth_TX/91c3c3_como-cd-boundary_transparency.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/conservation-districts/como_cd-informational_8.7.25.pdf",
+    "text": "August 7, 2025 - Informational at Lake Como Neighborhood Meeting",
+    "file": "data/city_files/Fort_Worth_TX/4ac27c_como_cd-informational_8.7.25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/conservation-districts/fort-worth-conservation-districts-como.pdf",
+    "text": "August 23, 2025 – Conservation District Community Workshop to discuss Draft Guidelines",
+    "file": "data/city_files/Fort_Worth_TX/2548f9_fort-worth-conservation-districts-como.pdf",
+    "rows": 177,
+    "bike_rows": 40
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/conservation-districts/como-cd_feb-5.pdf",
+    "text": "Presentation of Draft Conservation District Design Guidelines",
+    "file": "data/city_files/Fort_Worth_TX/0bc975_como-cd_feb-5.pdf",
+    "rows": 42,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/conservation-districts/fort-worth-conservation-districts-como2.pdf",
+    "text": "Draft Como Conservation District Design Guidelines",
+    "file": "data/city_files/Fort_Worth_TX/c93b4d_fort-worth-conservation-districts-como2.pdf",
+    "rows": 177,
+    "bike_rows": 40
+   },
+   {
+    "url": "http://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/conservation-districts/fort-worth-conservation-districts-como-4.17.26v.pdf",
+    "text": "April 2026 Draft of Como Conservation District Design Guidelines",
+    "file": "data/city_files/Fort_Worth_TX/9da301_fort-worth-conservation-districts-como-4.17.26v.pdf",
+    "rows": 92,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/resources-surveys/fort-worth-historic-schools-survey.pdf",
+    "text": "Historic Schools (PDF, 2MB)",
+    "file": "data/city_files/Fort_Worth_TX/0208a8_fort-worth-historic-schools-survey.pdf",
+    "rows": 63,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/resources-surveys/african-american-historic-churches-fort-worth.pdf",
+    "text": "African-American Churches (PDF, 3MB)",
+    "file": "data/city_files/Fort_Worth_TX/24afb8_african-american-historic-churches-fort-worth.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/resources-surveys/garden_of_eden-resource-survey.pdf",
+    "text": "Garden of Eden Resource Survey (PDF, 15MB)",
+    "file": "data/city_files/Fort_Worth_TX/c87370_garden_of_eden-resource-survey.pdf",
+    "rows": 40,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/2/development-services/documents/all-preservation-and-design/historic/resources-surveys/historic-carver-heights-resource-survey.pdf",
+    "text": "Historic Carver Heights Resource Survey (PDF, 7MB)",
+    "file": "data/city_files/Fort_Worth_TX/248389_historic-carver-heights-resource-survey.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/preservation-plans/preservation-plan-2003.pdf",
+    "text": "Preservation Plan 200 (PDF, 2MB)",
+    "file": "data/city_files/Fort_Worth_TX/973e80_preservation-plan-2003.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/resources-surveys/stockyards-historic-resources-survey-reduced_1.pdf",
+    "text": "Stockyards Historic Resources Survey (PDF, 16MB)",
+    "file": "data/city_files/Fort_Worth_TX/542fcc_stockyards-historic-resources-survey-reduced_1.pdf",
+    "rows": 1407,
+    "bike_rows": 256
+   },
+   {
+    "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/all-preservation-and-design/historic/resources-surveys/terrell-heights.-south-of-hattie-list-of-primary-resources.pdf",
+    "text": "Terrell Heights South of Hattie List of Primary Resources (PDF, 841KB)",
+    "file": "data/city_files/Fort_Worth_TX/24fafa_terrell-heights.-south-of-hattie-list-of-primary-resources.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.fortworthtexas.gov/departments/the-fwlab/Open-Data": "Open Data",
+   "https://data.fortworthtexas.gov/": "Open Data",
+   "https://data.fortworthtexas.gov/?_gl=1*1lcgfda*_ga*MTAyMzE2NTk4LjE2NjA5MDY4NDE.*_ga_R90X60M8G9*MTY2NDE5ODE0My4xNTEuMS4xNjY0MjAwNzQ3LjAuMC4w": "Maps & Apps",
+   "https://experience.arcgis.com/experience/1cd42a00cfed49d0bdc897ff078cb2a8/page/Page/": "Parcel Data Explorer",
+   "https://experience.arcgis.com/experience/2b7094451688482f885abdb66dbc156e?views=View-6": "Park Finder",
+   "https://smart-grant-cfw.hub.arcgis.com/": "Smart Grant",
+   "https://cfw.maps.arcgis.com/apps/webappviewer/index.html?id=5f8c3251d95040268f501336359e14cd": "Proposed FLU Map Changes",
+   "https://cfw.maps.arcgis.com/apps/webappviewer/index.html?id=653d3a58efc848a1ad1e7516ee56c509": "Interactive FLU Map",
+   "https://web.tplgis.org/fortworth-openspace/": "fortworthopenspace.org",
+   "https://cfw.maps.arcgis.com/apps/Shortlist/index.html?appid=2d21bf1999504a26a6f6ab1542fca765": "Map"
+  }
+ },
+ "Glendale AZ": {
+  "files": [
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/parks-rec/documents/discgolfcoursemap.pdf",
+    "text": "Printable Map (PDF, 681KB)",
+    "file": "data/city_files/Glendale_AZ/2345c0_discgolfcoursemap.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/public-transportation/glendale-ada-complaint-procedures_english.pdf",
+    "text": "Glendale Transit ADA Complaint Procedures (PDF, 39KB)",
+    "file": "data/city_files/Glendale_AZ/406e79_glendale-ada-complaint-procedures_english.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/public-transportation/glendale-ada-complaint-procedures_spanish.pdf",
+    "text": "Glendale Transit ADA Complaint Procedures (Spanish (PDF, 41KB)",
+    "file": "data/city_files/Glendale_AZ/e0022d_glendale-ada-complaint-procedures_spanish.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/parks-rec/images/2026/tcp-public-meeting-boards-20250505-final-for-website.pdf",
+    "text": "TRAILHEAD IMPROVEMENTS (PDF, 9MB)",
+    "file": "data/city_files/Glendale_AZ/738eda_tcp-public-meeting-boards-20250505-final-for-website.pdf",
+    "rows": 28,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/parks-rec/documents/parks-trail-map-update-10-24.pdf",
+    "text": "Trail Rating Guide (PDF, 353KB)",
+    "file": "data/city_files/Glendale_AZ/6a4518_parks-trail-map-update-10-24.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transportation-services/missouri-ati-location-map.pdf",
+    "text": "(PDF, 545KB)",
+    "file": "data/city_files/Glendale_AZ/c18a09_missouri-ati-location-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transportation-services/street-light-manual-amp-guidelines/04-10-14-22-appendix-a-the-dot-map.pdf",
+    "text": "10-14-22 Appendix A - The Dot Map (PDF, 2MB)",
+    "file": "data/city_files/Glendale_AZ/95594c_04-10-14-22-appendix-a-the-dot-map.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/code-compliance/documents/code-compliance-brochure-parking-update-2025.pdf",
+    "text": "Parking Brochure (PDF, 2MB)",
+    "file": "data/city_files/Glendale_AZ/fee452_code-compliance-brochure-parking-update-2025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/parks-rec/documents/new-map_april_2025.pdf",
+    "text": "New Glendale Heroes Regional Park Map (PDF, 481KB)",
+    "file": "data/city_files/Glendale_AZ/40515c_new-map_april_2025.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/2/water/documents/water-sewer-amp-trash-billing/forms-and-procedures/understanding-sewer-charges-090326.pdf",
+    "text": "Understanding Your Monthly Sewer Charges (PDF, 139KB)",
+    "file": "data/city_files/Glendale_AZ/fd22f5_understanding-sewer-charges-090326.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/water/documents/water-sewer-amp-trash-billing/solid-waste-residential-and-commercial-rates-and-temporary-fuel-surcharge-2023-2026.pdf",
+    "text": "Solid Waste Residential and Commercial Rates and Temporary Fuel Surcharge 2023 - 2026 (PDF, 52KB)",
+    "file": "data/city_files/Glendale_AZ/a5e1fa_solid-waste-residential-and-commercial-rates-and-temporary-fuel-surcha",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transportation-services/transportation-planning/srts_heritage.pdf",
+    "text": "Heritage Elementary School (PDF, 510KB)",
+    "file": "data/city_files/Glendale_AZ/e9e1a0_srts_heritage.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/court/documents/parking-fee-schedule-court.pdf",
+    "text": "Fee Schedule (PDF, 484KB)",
+    "file": "data/city_files/Glendale_AZ/086aa6_parking-fee-schedule-court.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/development-services/documents/planning-amp-zoning/mapping-and-records-2026.pdf",
+    "text": "Glendale, AZ Quarter Sections / As-Built Request for City Utilities (PDF, 130KB)",
+    "file": "data/city_files/Glendale_AZ/653bb2_mapping-and-records-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transportation-services/historical-counts.pdf",
+    "text": "Historical Counts (PDF, 2MB)",
+    "file": "data/city_files/Glendale_AZ/4a22f7_historical-counts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transportation-services/short-route-23.pdf",
+    "text": "Short Route (PDF, 263KB)",
+    "file": "data/city_files/Glendale_AZ/e4783f_short-route-23.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transportation-services/long-route.pdf",
+    "text": "Long Route (PDF, 285KB)",
+    "file": "data/city_files/Glendale_AZ/efc603_long-route.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transportation-services/extended-route-23.pdf",
+    "text": "Extended Route (PDF, 313KB)",
+    "file": "data/city_files/Glendale_AZ/789971_extended-route-23.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/2/transportation/documents/transit-services/park-and-ride-construction-map.pdf",
+    "text": "Park and Ride Construction Map (PDF, 10MB)",
+    "file": "data/city_files/Glendale_AZ/1cb1d6_park-and-ride-construction-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/public-transportation/gus-map-flyer-all-routes-rev-102219.pdf",
+    "text": "Map (PDF, 209KB)",
+    "file": "data/city_files/Glendale_AZ/2557bf_gus-map-flyer-all-routes-rev-102219.pdf",
+    "rows": 25,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transit-services/gus-1-map-revised-81825-draft3.pdf",
+    "text": "GUS 1 Map (PDF, 313KB)",
+    "file": "data/city_files/Glendale_AZ/40c829_gus-1-map-revised-81825-draft3.pdf",
+    "rows": 27,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transit-services/new-gus-2-map-effective-1526.pdf",
+    "text": "GUS 2 Map (PDF, 236KB)",
+    "file": "data/city_files/Glendale_AZ/a62a9a_new-gus-2-map-effective-1526.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/public-transportation/gus-3-map-revised-102219.pdf",
+    "text": "GUS 3 Map (PDF, 326KB)",
+    "file": "data/city_files/Glendale_AZ/1874d1_gus-3-map-revised-102219.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transit-services/gus-bus-app-flyer.pdf",
+    "text": "(PDF, 411KB)",
+    "file": "data/city_files/Glendale_AZ/1652c7_gus-bus-app-flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transit-services/title_vi-plan-2025.pdf",
+    "text": "Title VI Plan 2025 (PDF, 2MB)",
+    "file": "data/city_files/Glendale_AZ/b64ddc_title_vi-plan-2025.pdf",
+    "rows": 67,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/catlin-court-district-plan-planned-area-development.pdf",
+    "text": "Catlin Court District Plan - Planned Area Development (PDF, 3MB)",
+    "file": "data/city_files/Glendale_AZ/a4969b_catlin-court-district-plan-planned-area-development.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/certificate-no-effect-appropriateness.pdf",
+    "text": "Certificate No Effect Appropriateness (PDF, 32KB)",
+    "file": "data/city_files/Glendale_AZ/13b0a5_certificate-no-effect-appropriateness.pdf",
+    "rows": 31,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/final-hpc-national-register-hp-overlay-memo.pdf",
+    "text": "Final HPC National Register HP Overlay Memo (PDF, 93KB)",
+    "file": "data/city_files/Glendale_AZ/e1301b_final-hpc-national-register-hp-overlay-memo.pdf",
+    "rows": 32,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/glendale-historic-properties-map.pdf",
+    "text": "Glendale Historic Properties Map (PDF, 691KB)",
+    "file": "data/city_files/Glendale_AZ/52a318_glendale-historic-properties-map.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/glendale-street-car-extension.pdf",
+    "text": "Glendale Street Car Extension (PDF, 202KB)",
+    "file": "data/city_files/Glendale_AZ/002d91_glendale-street-car-extension.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/historic-preservation-districts-map.pdf",
+    "text": "Historic Preservation Districts Map (PDF, 721KB)",
+    "file": "data/city_files/Glendale_AZ/c11d80_historic-preservation-districts-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/historic-preservation-annual-report.pdf",
+    "text": "Historic Preservation Annual Report (PDF, 7MB)",
+    "file": "data/city_files/Glendale_AZ/be5713_historic-preservation-annual-report.pdf",
+    "rows": 9,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/historic-preservation-brochure.pdf",
+    "text": "Historic Preservation Brochure (PDF, 1MB)",
+    "file": "data/city_files/Glendale_AZ/1f62c8_historic-preservation-brochure.pdf",
+    "rows": 11,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/historic-preservation-element-action-plan.pdf",
+    "text": "Historic Preservation Element Action Plan (PDF, 231KB)",
+    "file": "data/city_files/Glendale_AZ/28998a_historic-preservation-element-action-plan.pdf",
+    "rows": 34,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/historic-preservation-guide.pdf",
+    "text": "Historic Preservation Guide (PDF, 13MB)",
+    "file": "data/city_files/Glendale_AZ/f0043b_historic-preservation-guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/historic-preservation-plan.pdf",
+    "text": "Historic Preservation Plan (PDF, 17MB)",
+    "file": "data/city_files/Glendale_AZ/520df6_historic-preservation-plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/hpc-memo-neighborhood-guidelines.pdf",
+    "text": "HPC Memo- Neighborhood Guidelines (PDF, 213KB)",
+    "file": "data/city_files/Glendale_AZ/ba638e_hpc-memo-neighborhood-guidelines.pdf",
+    "rows": 27,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/myrtle-entryway-restoration-2012.pdf",
+    "text": "Myrtle Entryway Restoration 2012 (PDF, 136KB)",
+    "file": "data/city_files/Glendale_AZ/3e656e_myrtle-entryway-restoration-2012.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/city-clerk/documents/historic-preservation/national-register-list.pdf",
+    "text": "National Register List (PDF, 50KB)",
+    "file": "data/city_files/Glendale_AZ/2fb95d_national-register-list.pdf",
+    "rows": 51,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.glendaleaz.gov/files/assets/city/v/1/transportation/documents/transportation-services/signs-and-markings-standards/ss-105.pdf",
+    "text": "ADA Parking Sign (R7-8) (PDF, 768KB)",
+    "file": "data/city_files/Glendale_AZ/ffac8c_ss-105.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.glendaleaz.gov/Government/Open-Government/Open-Data": "Open Data",
+   "https://glendaleaz.com/opendata": "Back to top",
+   "https://glendaleaz-cog-gis.hub.arcgis.com/": "open data",
+   "https://cog-gis.maps.arcgis.com/apps/instant/nearby/index.html?appid=207f90cc577740908ec385ae37841ddc": "Interactive Collection Map",
+   "https://cog-gis.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=95ef1d010a014195aff0b6c33971851e": "",
+   "https://survey123.arcgis.com/share/e5e8f6df9a3a46bcbbfd99dc6e41cba9?portalUrl=https://survey123.glendaleaz.gov/portal": "File a motion",
+   "https://gis.maricopa.gov/SurveyPoints/": "Land Survey Points",
+   "https://gis.maricopa.gov/GIO/HistoricalAerial/": "Historical Aerial Photography",
+   "https://survey123.arcgis.com/share/434c96e4057f4f55adbb983b39f6522e?portalUrl=https://gismaps.glendaleaz.com/gisportal": "LINK",
+   "https://experience.arcgis.com/experience/fca09f26589f4a93a643c7a4e45dd34e/page/Public-Art-WebApp/?data_id=dataSource_2-183f75b5df1-layer-2%3A31": "Public Art Map",
+   "https://survey123.arcgis.com/share/c776d587e0134777b3bd0d24aa3d008c?portalUrl=https://survey123.glendaleaz.gov/portal": "Registration Form"
+  }
+ },
+ "La Plata Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Konak": {
+  "files": [],
+  "portals": {}
+ },
+ "Scottsdale": {
+  "files": [
+   {
+    "url": "https://scottsdaleaz.gov/docs/default-source/scottsdaleaz/park---recreation/find-a-park-maps/civic-center-map.pdf?sfvrsn=8bab3e29_8",
+    "text": "Civic Center Map",
+    "file": "data/city_files/Scottsdale/fb9b4d_civic-center-map.pdf",
+    "rows": 13,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/reports-and-studies/functional-street-classification-map.pdf?sfvrsn=91f8e419_5",
+    "text": "Street Classification Map - The Street Classification Map represents the future plans for the street network.",
+    "file": "data/city_files/Scottsdale/d2f491_functional-street-classification-map.pdf",
+    "rows": 17,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---overview-map.pdf?sfvrsn=3e51ed21_1",
+    "text": "Desert Foothills - Overview Map",
+    "file": "data/city_files/Scottsdale/d46525_desert-foothills---overview-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-1-map.pdf?sfvrsn=dfae837b_1",
+    "text": "Desert Foothills - Area 1 Map",
+    "file": "data/city_files/Scottsdale/93dca5_desert-foothills---area-1-map.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-2-map.pdf?sfvrsn=15919cb4_1",
+    "text": "Desert Foothills - Area 2 Map",
+    "file": "data/city_files/Scottsdale/c4d4e7_desert-foothills---area-2-map.pdf",
+    "rows": 19,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-3-map.pdf?sfvrsn=9be1550d_1",
+    "text": "Desert Foothills - Area 3 Map",
+    "file": "data/city_files/Scottsdale/2ba2e5_desert-foothills---area-3-map.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-4a-map.pdf?sfvrsn=91d92f6c_1",
+    "text": "Desert Foothills - Area 4a Map",
+    "file": "data/city_files/Scottsdale/f485bd_desert-foothills---area-4a-map.pdf",
+    "rows": 16,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-4b-map.pdf?sfvrsn=e9917620_1",
+    "text": "Desert Foothills - Area 4b Map",
+    "file": "data/city_files/Scottsdale/d6b6de_desert-foothills---area-4b-map.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-5a-map.pdf?sfvrsn=55303135_2",
+    "text": "Desert Foothills - Area 5a Map",
+    "file": "data/city_files/Scottsdale/9d6f74_desert-foothills---area-5a-map.pdf",
+    "rows": 22,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-5b-map.pdf?sfvrsn=d02ca4f4_1",
+    "text": "Desert Foothills - Area 5b Map",
+    "file": "data/city_files/Scottsdale/7d46ff_desert-foothills---area-5b-map.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-5c-map.pdf?sfvrsn=3183e05a_1",
+    "text": "Desert Foothills - Area 5c Map",
+    "file": "data/city_files/Scottsdale/7b161f_desert-foothills---area-5c-map.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-5d-map.pdf?sfvrsn=8f965ad2_1",
+    "text": "Desert Foothills - Area 5d Map",
+    "file": "data/city_files/Scottsdale/fcfb94_desert-foothills---area-5d-map.pdf",
+    "rows": 19,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-6-map.pdf?sfvrsn=f383e9c1_1",
+    "text": "Desert Foothills - Area 6 Map",
+    "file": "data/city_files/Scottsdale/51616d_desert-foothills---area-6-map.pdf",
+    "rows": 23,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-7-map.pdf?sfvrsn=d61890d2_1",
+    "text": "Desert Foothills - Area 7 Map",
+    "file": "data/city_files/Scottsdale/a2d17d_desert-foothills---area-7-map.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-8a-map.pdf?sfvrsn=433b39d1_1",
+    "text": "Desert Foothills - Area 8a Map",
+    "file": "data/city_files/Scottsdale/ce79e9_desert-foothills---area-8a-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-8b-map.pdf?sfvrsn=dbb12174_1",
+    "text": "Desert Foothills - Area 8b Map",
+    "file": "data/city_files/Scottsdale/c982f0_desert-foothills---area-8b-map.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-9a-map.pdf?sfvrsn=a46af1a8_1",
+    "text": "Desert Foothills - Area 9a Map",
+    "file": "data/city_files/Scottsdale/9fcd73_desert-foothills---area-9a-map.pdf",
+    "rows": 17,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-9b-map.pdf?sfvrsn=be36d68c_1",
+    "text": "Desert Foothills - Area 9b Map",
+    "file": "data/city_files/Scottsdale/a3077a_desert-foothills---area-9b-map.pdf",
+    "rows": 18,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-10-map.pdf?sfvrsn=1efbf6d9_1",
+    "text": "Desert Foothills - Area 10 Map",
+    "file": "data/city_files/Scottsdale/8043db_desert-foothills---area-10-map.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-11-map.pdf?sfvrsn=25fad1fd_1",
+    "text": "Desert Foothills - Area 11 Map",
+    "file": "data/city_files/Scottsdale/e299a9_desert-foothills---area-11-map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-highlands---overview-map.pdf?sfvrsn=2482b6f3_1",
+    "text": "Desert Highlands - Overview Map",
+    "file": "data/city_files/Scottsdale/af1cc7_desert-highlands---overview-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-highlands---area-1a-map.pdf?sfvrsn=5bf0ec28_1",
+    "text": "Desert Highlands - Area 1a Map",
+    "file": "data/city_files/Scottsdale/85c752_desert-highlands---area-1a-map.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-highlands---area-1b-map.pdf?sfvrsn=54e4385a_1",
+    "text": "Desert Highlands - Area 1b Map",
+    "file": "data/city_files/Scottsdale/7e946a_desert-highlands---area-1b-map.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-highlands---area-2-map.pdf?sfvrsn=6337f49f_1",
+    "text": "Desert Highlands - Area 2 Map",
+    "file": "data/city_files/Scottsdale/8a48b9_desert-highlands---area-2-map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-highlands---area-3-map.pdf?sfvrsn=70f0e98b_1",
+    "text": "Desert Highlands - Area 3 Map",
+    "file": "data/city_files/Scottsdale/fa9b2d_desert-highlands---area-3-map.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/dynamite-foothills---overview-map.pdf?sfvrsn=f8d0705a_1",
+    "text": "Dynamite Foothills - Overview Map",
+    "file": "data/city_files/Scottsdale/9f7aee_dynamite-foothills---overview-map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/dynamite-foothills---area-1-map.pdf?sfvrsn=36dadba6_1",
+    "text": "Dynamite Foothills - Area 1 Map",
+    "file": "data/city_files/Scottsdale/f77678_dynamite-foothills---area-1-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/dynamite-foothills---area-2-map.pdf?sfvrsn=5cb6038d_1",
+    "text": "Dynamite Foothills - Area 2 Map",
+    "file": "data/city_files/Scottsdale/7eb3a9_dynamite-foothills---area-2-map.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/dynamite-foothills---area-3-map.pdf?sfvrsn=d2098a2d_1",
+    "text": "Dynamite Foothills - Area 3 Map",
+    "file": "data/city_files/Scottsdale/2cf3de_dynamite-foothills---area-3-map.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/dynamite-foothills---area-4-map.pdf?sfvrsn=e7195a88_1",
+    "text": "Dynamite Foothills - Area 4 Map",
+    "file": "data/city_files/Scottsdale/cd69bc_dynamite-foothills---area-4-map.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/dynamite-foothills---area-5a-map.pdf?sfvrsn=e0eadb47_1",
+    "text": "Dynamite Foothills - Area 5a Map",
+    "file": "data/city_files/Scottsdale/b60ad4_dynamite-foothills---area-5a-map.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/dynamite-foothills---area-5b-map.pdf?sfvrsn=122fb010_1",
+    "text": "Dynamite Foothills - Area 5b Map",
+    "file": "data/city_files/Scottsdale/8bd9dd_dynamite-foothills---area-5b-map.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/dynamite-foothills---area-6-map.pdf?sfvrsn=fdd981f8_1",
+    "text": "Dynamite Foothills - Area 6 Map",
+    "file": "data/city_files/Scottsdale/bc2a9f_dynamite-foothills---area-6-map.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/dynamite-foothills---area-7-map.pdf?sfvrsn=af545e62_1",
+    "text": "Dynamite Foothills - Area 7 Map",
+    "file": "data/city_files/Scottsdale/d36b06_dynamite-foothills---area-7-map.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/east-shea---overview-map.pdf?sfvrsn=d74312eb_1",
+    "text": "East Shea - Overview Map",
+    "file": "data/city_files/Scottsdale/3c1a55_east-shea---overview-map.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/east-shea---area-1-map.pdf?sfvrsn=fc95a20_1",
+    "text": "East Shea - Area 1 Map",
+    "file": "data/city_files/Scottsdale/d72478_east-shea---area-1-map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/east-shea---area-2-map.pdf?sfvrsn=4996e227_1",
+    "text": "East Shea - Area 2 Map",
+    "file": "data/city_files/Scottsdale/f1e06e_east-shea---area-2-map.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/east-shea---area-3-map.pdf?sfvrsn=94dc029f_1",
+    "text": "East Shea - Area 3 Map",
+    "file": "data/city_files/Scottsdale/a2a9aa_east-shea---area-3-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/east-shea---area-4-map.pdf?sfvrsn=a4c589f1_1",
+    "text": "East Shea - Area 4 Map",
+    "file": "data/city_files/Scottsdale/de2bfd_east-shea---area-4-map.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/east-shea---area-5-map.pdf?sfvrsn=a7332854_1",
+    "text": "East Shea - Area 5 Map",
+    "file": "data/city_files/Scottsdale/e2c22d_east-shea---area-5-map.pdf",
+    "rows": 14,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://data.scottsdaleaz.gov": "Open Data Portal",
+   "https://experience.arcgis.com/experience/a67a42f72c5c46b4878a0f7f2553c76a/?draft=true&amp;org=COS-GIS&amp;org=COS-GIS": "Paths & Trails",
+   "https://www.arcgis.com/apps/dashboards/7b6ae4231dba45aea680c8f350fe2048": "View Pavement Preservation Map",
+   "https://storymaps.arcgis.com/stories/b79e70862ca34607a8cd13beee1ba900": "Early Town-Building",
+   "https://experience.arcgis.com/experience/a67a42f72c5c46b4878a0f7f2553c76a/?draft=true&amp;org=COS-GIS%2CCOS-GIS": "View the online map",
+   "https://data-cos-gis.opendata.arcgis.com/": "Datasets Available for Download"
+  }
+ },
+ "San Fernando del Valle de Catamarca": {
+  "files": [],
+  "portals": {}
+ },
+ "Bellevue": {
+  "files": [
+   {
+    "url": "https://chooseyourwaybellevue.org/sites/default/files/inline-images/cycling-safety-and-etiquette-flyer_december-2024%20(2).pdf",
+    "text": "standard bicycle rules of the road",
+    "file": "data/city_files/Bellevue/09f5fd_cycling-safety-and-etiquette-flyer_december-2024_20_2_.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2024/etiquette_flyer_new_skyline_wheel_12_19_24a_smaller-photos.pdf",
+    "text": "Cycling Safety and Etiquette flyer",
+    "file": "data/city_files/Bellevue/ac7896_etiquette_flyer_new_skyline_wheel_12_19_24a_smaller-photos.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2026/trn-26-78117-shared-e-bike-safety-tipsweb_0.pdf",
+    "text": "E-bike & Electric Motorcycle Safety Flyer",
+    "file": "data/city_files/Bellevue/64a4f8_trn-26-78117-shared-e-bike-safety-tipsweb_0.pdf",
+    "rows": 9,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2019-05/EastBellCommCounc_Packet%20Map.pdf",
+    "text": "Boundary Map",
+    "file": "data/city_files/Bellevue/f32a08_EastBellCommCounc_Packet_20Map.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://bellevuewa.gov/sites/default/files/media/pdf_document/2019-05/EastBellCommCounc_Packet%20Map.pdf",
+    "text": "Boundary Map",
+    "file": "data/city_files/Bellevue/1ddfff_EastBellCommCounc_Packet_20Map.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Base/BellevueBasemap_8x11.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/b73757_BellevueBasemap_8x11.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Base/BellevueBasemap_32x48.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/8f1ddd_BellevueBasemap_32x48.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Base/BellevueRightofWay_36x48.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/9090a0_BellevueRightofWay_36x48.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Base/OrthoIndex_11x17.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/46b627_OrthoIndex_11x17.pdf",
+    "rows": 26,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Base/BellevueParcelBoundaries_36x48.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/0705a5_BellevueParcelBoundaries_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Base/Bellevue_School_District_11x17.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/4bff8b_Bellevue_School_District_11x17.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Planning/annex_eb.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/dda818_annex_eb.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Planning/CulturalSpaces_8x11.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/616465_CulturalSpaces_8x11.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Planning/cbd_colorzon_28x40.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/6b672a_cbd_colorzon_28x40.pdf",
+    "rows": 6,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/NeighborhoodAreas_8x11.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/5defde_NeighborhoodAreas_8x11.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Planning/Subareas_8x11.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/75bb49_Subareas_8x11.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2024/zoning_36x52.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/ce4230_zoning_36x52.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Transportation/arterials_11x17.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/31126b_arterials_11x17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2025/aawt2017_11x17.pdf",
+    "text": "this map",
+    "file": "data/city_files/Bellevue/7a00af_aawt2017_11x17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/file/2025/aawt2019_11x17.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/2452d7_aawt2019_11x17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Transportation/BikeMapUpdate_24x34.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/f6511a_BikeMapUpdate_24x34.pdf",
+    "rows": 47,
+    "bike_rows": 24
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/file/2025/pavementprojectsites_11x17.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/52773c_pavementprojectsites_11x17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2025/pavementprojectcandidatespublicweb_11x17.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/604214_pavementprojectcandidatespublicweb_11x17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Transportation/SnowRoute_11x17.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/7a72dc_SnowRoute_11x17.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2025/trenchrestoration_36x48.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/e75114_trenchrestoration_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/gisdownload/PDF/Transportation/DowntownOnStreetParking_8x11.pdf",
+    "text": "Click to View Map",
+    "file": "data/city_files/Bellevue/5e8318_DowntownOnStreetParking_8x11.pdf",
+    "rows": 3,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2025/all-public-street-speed-limits_2025.pdf",
+    "text": "Map of existing speed limits",
+    "file": "data/city_files/Bellevue/34ffc4_all-public-street-speed-limits_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2024/proposed-future-local-speed-limits.pdf",
+    "text": "Map of proposed speed limits",
+    "file": "data/city_files/Bellevue/892fb6_proposed-future-local-speed-limits.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2023/2023%20School%20Zone%20Ped-Bike%20Road%20Safety%20Assessment.pdf",
+    "text": "School Zone Road Safety Assessments",
+    "file": "data/city_files/Bellevue/c8af09_2023_20School_20Zone_20Ped-Bike_20Road_20Safety_20Assessment.pdf",
+    "rows": 527,
+    "bike_rows": 109
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2024/Passive%20Pedestrian%20Detection%20Real-Time%20Safety%20Application%20Phase%20Extension%20Pilot.pdf",
+    "text": "City of Bellevue report",
+    "file": "data/city_files/Bellevue/68f994_Passive_20Pedestrian_20Detection_20Real-Time_20Safety_20Application_20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2025/rsa2_techmemofinal_12292025.pdf",
+    "text": "RSA #2: South Downtown Loop: Main Street, Northeast First Street, Northeast Second Street, 100th Avenue Northeast and 10",
+    "file": "data/city_files/Bellevue/14d84b_rsa2_techmemofinal_12292025.pdf",
+    "rows": 723,
+    "bike_rows": 34
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2020/GuideToParkingLaws.pdf",
+    "text": "A Guide to Bellevue Parking Laws",
+    "file": "data/city_files/Bellevue/d633b3_GuideToParkingLaws.pdf",
+    "rows": 16,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2025/safe-routes-to-school-strategic-plan.pdf",
+    "text": "Safe Routes to School Strategic Plan",
+    "file": "data/city_files/Bellevue/af934c_safe-routes-to-school-strategic-plan.pdf",
+    "rows": 521,
+    "bike_rows": 19
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2026/trn-26-78133-e-scooter-safety-tipsweb.pdf",
+    "text": "E-Scooter Rules and Safety Tips Flyer",
+    "file": "data/city_files/Bellevue/639ad3_trn-26-78133-e-scooter-safety-tipsweb.pdf",
+    "rows": 7,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://bellevuebotanical.org/wp-content/uploads/2023/08/Garden-Map-Entire-Garden-with-Access-Guide-FINAL.pdf",
+    "text": "Font Awesome Icon Title Map & Accessibility Guide Body Download the guide to view accessibility features of each of our ",
+    "file": "data/city_files/Bellevue/dbbf98_Garden-Map-Entire-Garden-with-Access-Guide-FINAL.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2024/pop-up-dog-ola-report-2024.pdf",
+    "text": "2024 Pop-Up OLA Pilot Program Report",
+    "file": "data/city_files/Bellevue/232692_pop-up-dog-ola-report-2024.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/lewis_creek_park_map.pdf",
+    "text": "View Map",
+    "file": "data/city_files/Bellevue/8efe2f_lewis_creek_park_map.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "http://cobgis.maps.arcgis.com/home/gallery.html?view=grid&sortOrder=asc&sortField=title": "Interactive Web Maps",
+   "http://cobgis.maps.arcgis.com/home/gallery.html": "Map Gallery",
+   "https://cobgis.maps.arcgis.com/apps/webappviewer/index.html?id=e1748172d4f34f1eb3710032a351cd57": "Bellevue Map Viewer",
+   "https://cobgis.bellevuewa.gov/Html5Viewer/index.html?viewer=piyn": "Projects in Your Neighborhood",
+   "https://data.bellevuewa.gov/apps/56eb7adc676d4ab5b538c5718c85f021/explore": "Businesses Licensed in Bellevue",
+   "https://data.bellevuewa.gov/": "Bellevue’s Open Data Portal",
+   "https://cobgis.maps.arcgis.com/apps/dashboards/6d5d1e0a714041bd85867c85f06b5c2b": "Capital Projects Dashboard",
+   "https://storymaps.arcgis.com/stories/c38828e85a444928a18f25113545ff41": "visit the interactive map",
+   "http://cobgis.maps.arcgis.com/apps/MapSeries/index.html?appid=9a3fc8b4efbe490d805e7300d5b64258": "interactive map",
+   "https://storymaps.arcgis.com/stories/14093429038345039816d6d72a02df77": "Vision Zero Collision Dashboard",
+   "https://storymaps.arcgis.com/stories/8a5c04e0126c4fb1a2f23fc86f81f183": "Mercer Slough Nature Park - two pipe projects",
+   "http://cobgis.maps.arcgis.com/apps/webappviewer/index.html?id=99595e522118479fae1a462249e8b789": "here"
+  }
+ },
+ "Ödemiş district": {
+  "files": [],
+  "portals": {}
+ },
+ "Río Gallegos": {
+  "files": [],
+  "portals": {}
+ },
+ "Encarnación": {
+  "files": [
+   {
+    "url": "https://encarnacion.gov.py/wp-content/uploads/2025/10/turismo_mapa.pdf",
+    "text": "Descargar mapa",
+    "file": "data/city_files/Encarnaci_n/9c7c54_turismo_mapa.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://encarnacion.gov.py/wp-content/uploads/2022/09/AUTOMOTORES-RETENIDOS-EN-EL-CORRALON-DE-LA-MUNICIPALIDAD-DE-ENCARNACION.pdf",
+    "text": "AUTOMOTORES RETENIDOS EN EL CORRALÓN DE LA MUNICIPALIDAD DE ENCARNACIÓN",
+    "file": "data/city_files/Encarnaci_n/b7072d_AUTOMOTORES-RETENIDOS-EN-EL-CORRALON-DE-LA-MUNICIPALIDAD-DE-ENCARNACIO",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Thalassery Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Westminster": {
+  "files": [],
+  "portals": {}
+ },
+ "Cicero": {
+  "files": [
+   {
+    "url": "https://thetownofcicero.com/wp-content/uploads/2026/08/080426-TownofCiceroPSMaintenanceRepairs-Drawings-Add1.pdf",
+    "text": "TOWN OF CICERO PARKING STRUCTURE MAINTENANCE REPAIRS DRAWINGS-ADDENDUM #1",
+    "file": "data/city_files/Cicero/f5ddd1_080426-TownofCiceroPSMaintenanceRepairs-Drawings-Add1.pdf",
+    "rows": 890,
+    "bike_rows": 90
+   },
+   {
+    "url": "https://thetownofcicero.com/wp-content/uploads/2026/07/072426-TownofCiceroPSMaintenanceRepairs-Drawings-ReleasedForBids.pdf",
+    "text": "TOWN OF CICERO PARKING STRUCTURE MAINTENANCE REPAIRS-Drawings",
+    "file": "data/city_files/Cicero/7522d4_072426-TownofCiceroPSMaintenanceRepairs-Drawings-ReleasedForBids.pdf",
+    "rows": 673,
+    "bike_rows": 47
+   },
+   {
+    "url": "https://thetownofcicero.com/wp-content/uploads/2026/07/072426-TownofCiceroPSMaintenanceRepairs-Specifications-ReleasedForBids.pdf",
+    "text": "TOWN OF CICERO PARKING STRUCTURE MAINTENANCE REPAIRS- Specifications",
+    "file": "data/city_files/Cicero/6d696d_072426-TownofCiceroPSMaintenanceRepairs-Specifications-ReleasedForBids",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Bellflower": {
+  "files": [
+   {
+    "url": "https://bellflower.ca.gov/Document Center/Department/Public Safety/Downtown Parking Lot Changes 03_2025.pdf",
+    "text": "Downtown Parking Map",
+    "file": "data/city_files/Bellflower/01d94b_Downtown_Parking_Lot_Changes_03_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/6a6a058a177440fdac6be881d41d4c2c/": "Air Quality Map (AQMD)"
+  }
+ },
+ "Redlands": {
+  "files": [],
+  "portals": {}
+ },
+ "Noblesville": {
+  "files": [],
+  "portals": {}
+ },
+ "Urla": {
+  "files": [],
+  "portals": {}
+ },
+ "Bossier City": {
+  "files": [],
+  "portals": {
+   "https://bossier-city.maps.arcgis.com/apps/instant/lookup/index.html?appid=b9e658240cad4f35a7eb8d645216022e": "Find Your Councilman",
+   "https://experience.arcgis.com/experience/f45b3bf15e3d4e458b46ef752f781067": "General Reference Map",
+   "https://experience.arcgis.com/experience/fcddb1aca7694c6fb8261e80153a9981": "Bossier City Zoning Lookup",
+   "https://experience.arcgis.com/experience/d581495d2dbd44589141e85a6a174c32": "FEMA Flood Zone Map",
+   "https://experience.arcgis.com/experience/548ae087996043a68944a10ef12413eb": ""
+  }
+ },
+ "Hamburg": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/cdb1b7dfe86c4ca393603debfcb4cfd4": "Eighteenmile Creek Greenway Project.",
+   "https://www.wd-gis.com/Hamburg_Public/UserForms/Hamburg_Shared/Home.aspx": "Geographic Information System (GIS) / Zoning Map"
+  }
+ },
+ "Burlington": {
+  "files": [
+   {
+    "url": "https://mcclibrary.blob.core.usgovcloudapi.net/codecontent/10115/325617/Chapter%2036%20TRAFFIC.pdf",
+    "text": "For full traffic and parking ordinances",
+    "file": "data/city_files/Burlington/da7764_Chapter_2036_20TRAFFIC.pdf",
+    "rows": 19,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://regisnc.maps.arcgis.com/apps/webappviewer/index.html?id=385277b8721d4fe1be1884fe88591e9a": "for an interactive map of our collection schedule."
+  }
+ },
+ "Bentonville": {
+  "files": [],
+  "portals": {
+   "https://bentonvillear.maps.arcgis.com/home/index.html": "Maps / GIS",
+   "https://gis.bentonvillear.com/portal/apps/dashboards/1d2a68f13c03450f9fb74da36f95e4b7": "",
+   "https://bentonvillear.maps.arcgis.com/apps/dashboards/8226cc2cc5e141cda3946828a800a9c6": "",
+   "https://bentonvillear.maps.arcgis.com/apps/webappviewer/index.html?id=8ee7ad48a2194d5f80f39711b7668ce6": "ROAD CLOSURE MAP - NEW",
+   "https://bentonvillear.maps.arcgis.com/apps/dashboards/a1e45f34248644638a3c232416ac7daf": "DOWNTOWN PUBLIC PARKING MAP",
+   "https://gis.bentonvillear.com/portal/apps/storymaps/stories/f9992f1fc3bf4c7098714c15c976d0be": "Interactive Public Art Map"
+  }
+ },
+ "Bitlis": {
+  "files": [],
+  "portals": {}
+ },
+ "Villa Ángela": {
+  "files": [],
+  "portals": {}
+ },
+ "Catriel": {
+  "files": [],
+  "portals": {}
+ },
+ "West Seneca": {
+  "files": [],
+  "portals": {}
+ },
+ "Shakopee": {
+  "files": [],
+  "portals": {}
+ },
+ "Coachella": {
+  "files": [],
+  "portals": {}
+ },
+ "Exaltación de la Cruz Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Calexico": {
+  "files": [
+   {
+    "url": "https://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Garage-Yard_Sale_Permit_Application.pdf",
+    "text": "Garage-Yard_Sale_Permit_Application.pdf",
+    "file": "data/city_files/Calexico/892734_Garage-Yard_Sale_Permit_Application.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/City_of_Calexico_-_Subdivisions_Map-City_Map_-_Street_Names.pdf",
+    "text": "Calexico - City Map - Street Names (2021)",
+    "file": "data/city_files/Calexico/c3436d_City_of_Calexico_-_Subdivisions_Map-City_Map_-_Street_Names.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/CLX_Zoning_Map_2021_Rev._B.pdf",
+    "text": "CLX - Zoning Map - Street Names (2021)",
+    "file": "data/city_files/Calexico/ac85b7_CLX_Zoning_Map_2021_Rev._B.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Calexico_Sewer_Lines.pdf",
+    "text": "Sewer Lines Map",
+    "file": "data/city_files/Calexico/9336c8_Calexico_Sewer_Lines.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Storm_Drains.pdf",
+    "text": "Storm Drains Map",
+    "file": "data/city_files/Calexico/fb0903_Storm_Drains.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/City_of_Calexico_-_Connectivity_Index_Map.pdf",
+    "text": "Street Connectivity Index Map for the City",
+    "file": "data/city_files/Calexico/53fac9_City_of_Calexico_-_Connectivity_Index_Map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Republic_Services_Upcoming_Service_Change_-_Organics_Recycling_Law_AB_1826.pdf",
+    "text": "Republic Services Upcoming Service Change - Organics Recycling Law AB 1826",
+    "file": "data/city_files/Calexico/f70104_Republic_Services_Upcoming_Service_Change_-_Organics_Recycling_Law_AB_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Republic_Services_Recycling_Services_Information.pdf",
+    "text": "Republic Services Recycling Services Information",
+    "file": "data/city_files/Calexico/d87661_Republic_Services_Recycling_Services_Information.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Republic_Services_Recycling_Simple_as_1-2-3.pdf",
+    "text": "Republic Services Recycling Simple as 1-2-3",
+    "file": "data/city_files/Calexico/35cf7e_Republic_Services_Recycling_Simple_as_1-2-3.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Republic_Services_Food_Waste_Recycling.pdf",
+    "text": "Republic Services Food Waste Recycling",
+    "file": "data/city_files/Calexico/423294_Republic_Services_Food_Waste_Recycling.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Republic_Services_Roll-Off_Dumpster_for_Recycling_and_Waste.pdf",
+    "text": "Republic Services Roll-Off Dumpster for Recycling and Waste",
+    "file": "data/city_files/Calexico/74afda_Republic_Services_Roll-Off_Dumpster_for_Recycling_and_Waste.pdf",
+    "rows": 12,
+    "bike_rows": 5
+   },
+   {
+    "url": "http://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Garage-Yard_Sale_Permit_Application.pdf",
+    "text": "Garage-Yard_Sale_Permit_Application.pdf",
+    "file": "data/city_files/Calexico/625473_Garage-Yard_Sale_Permit_Application.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/City_of_Calexico_-_Subdivisions_Map-City_Map_-_Street_Names.pdf",
+    "text": "Calexico - City Map - Street Names (2021)",
+    "file": "data/city_files/Calexico/b5b147_City_of_Calexico_-_Subdivisions_Map-City_Map_-_Street_Names.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/CLX_Zoning_Map_2021_Rev._B.pdf",
+    "text": "CLX - Zoning Map - Street Names (2021)",
+    "file": "data/city_files/Calexico/a70dde_CLX_Zoning_Map_2021_Rev._B.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "http://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Calexico_Sewer_Lines.pdf",
+    "text": "Sewer Lines Map",
+    "file": "data/city_files/Calexico/f104d1_Calexico_Sewer_Lines.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Storm_Drains.pdf",
+    "text": "Storm Drains Map",
+    "file": "data/city_files/Calexico/b4b41d_Storm_Drains.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/City_of_Calexico_-_Connectivity_Index_Map.pdf",
+    "text": "Street Connectivity Index Map for the City",
+    "file": "data/city_files/Calexico/4cc094_City_of_Calexico_-_Connectivity_Index_Map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Republic_Services_Upcoming_Service_Change_-_Organics_Recycling_Law_AB_1826.pdf",
+    "text": "Republic Services Upcoming Service Change - Organics Recycling Law AB 1826",
+    "file": "data/city_files/Calexico/a172f1_Republic_Services_Upcoming_Service_Change_-_Organics_Recycling_Law_AB_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Republic_Services_Recycling_Services_Information.pdf",
+    "text": "Republic Services Recycling Services Information",
+    "file": "data/city_files/Calexico/4918b9_Republic_Services_Recycling_Services_Information.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Republic_Services_Recycling_Simple_as_1-2-3.pdf",
+    "text": "Republic Services Recycling Simple as 1-2-3",
+    "file": "data/city_files/Calexico/b306a3_Republic_Services_Recycling_Simple_as_1-2-3.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Republic_Services_Food_Waste_Recycling.pdf",
+    "text": "Republic Services Food Waste Recycling",
+    "file": "data/city_files/Calexico/9018bb_Republic_Services_Food_Waste_Recycling.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.calexico.ca.gov/vertical/sites/%7B342ED706-1EBB-4FDE-BD1E-9543BAD44C09%7D/uploads/Republic_Services_Roll-Off_Dumpster_for_Recycling_and_Waste.pdf",
+    "text": "Republic Services Roll-Off Dumpster for Recycling and Waste",
+    "file": "data/city_files/Calexico/39447b_Republic_Services_Roll-Off_Dumpster_for_Recycling_and_Waste.pdf",
+    "rows": 12,
+    "bike_rows": 5
+   }
+  ],
+  "portals": {}
+ },
+ "Patagones Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Chelmsford": {
+  "files": [],
+  "portals": {}
+ },
+ "La Porte": {
+  "files": [],
+  "portals": {
+   "https://city-of-la-porte-public-gis-hub-laporte.hub.arcgis.com/": "GIS Hub",
+   "https://public-laporte.hub.arcgis.com/": "City of La Porte Public GIS Hub",
+   "https://internal-laporte.hub.arcgis.com/": "City of La Porte Internal GIS Hub",
+   "https://experience.arcgis.com/experience/218e301aca0949e5953a907660107d03": "City of La Porte Public Web Map",
+   "https://gis.laportetx.gov/portal/apps/experiencebuilder/experience/?id=a00b19d036f242e6824e83dc046017dd": "City of La Porte Internal Web Map",
+   "https://laporte.maps.arcgis.com/apps/webappviewer/index.html?id=c5fd5f52a71e4795b415f912a0e2231f&mobileBreakPoint=300": "view the map"
+  }
+ },
+ "North Providence": {
+  "files": [
+   {
+    "url": "https://northprovidenceri.gov/pdf/gis/North_Providence_Town_Road_Map.pdf",
+    "text": "Town Road Map",
+    "file": "data/city_files/North_Providence/62f1ac_North_Providence_Town_Road_Map.pdf",
+    "rows": 13,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://northprovidenceri.gov/pdf/gis/North_Providence_Fire_District_Map.pdf",
+    "text": "Fire District Map",
+    "file": "data/city_files/North_Providence/6acd32_North_Providence_Fire_District_Map.pdf",
+    "rows": 14,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://northprovidenceri.gov/pdf/gis/North_Providence_Voting_District_Map.pdf",
+    "text": "Voting District Map",
+    "file": "data/city_files/North_Providence/3259b8_North_Providence_Voting_District_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://northprovidenceri.gov/pdf/gis/North_Providence_Townwide_Zoning_Map.pdf",
+    "text": "Townwide Zoning Map",
+    "file": "data/city_files/North_Providence/5dcd3e_North_Providence_Townwide_Zoning_Map.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP1.pdf",
+    "text": "Plat Map 1",
+    "file": "data/city_files/North_Providence/fb9c03_AP1.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP12.pdf",
+    "text": "Plat Map 12",
+    "file": "data/city_files/North_Providence/22f9a2_AP12.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP21B.pdf",
+    "text": "Plat Map 21B",
+    "file": "data/city_files/North_Providence/6e44ac_AP21B.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP24A.pdf",
+    "text": "Plat Map 24A",
+    "file": "data/city_files/North_Providence/0a263e_AP24A.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP2.pdf",
+    "text": "Plat Map 2",
+    "file": "data/city_files/North_Providence/4fe006_AP2.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP13.pdf",
+    "text": "Plat Map 13",
+    "file": "data/city_files/North_Providence/d2b33a_AP13.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP22.pdf",
+    "text": "Plat Map 22",
+    "file": "data/city_files/North_Providence/abf54f_AP22.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP24B.pdf",
+    "text": "Plat Map 24B",
+    "file": "data/city_files/North_Providence/65a2e3_AP24B.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP3.pdf",
+    "text": "Plat Map 3",
+    "file": "data/city_files/North_Providence/d7877d_AP3.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP14.pdf",
+    "text": "Plat Map 14",
+    "file": "data/city_files/North_Providence/c54867_AP14.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP22A.pdf",
+    "text": "Plat Map 22A",
+    "file": "data/city_files/North_Providence/7c0c70_AP22A.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP24C.pdf",
+    "text": "Plat Map 24C",
+    "file": "data/city_files/North_Providence/cd228b_AP24C.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP4.pdf",
+    "text": "Plat Map 4",
+    "file": "data/city_files/North_Providence/cc9769_AP4.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP15.pdf",
+    "text": "Plat Map 15",
+    "file": "data/city_files/North_Providence/cdcfc0_AP15.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP22B.pdf",
+    "text": "Plat Map 22B",
+    "file": "data/city_files/North_Providence/2ae08f_AP22B.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP25.pdf",
+    "text": "Plat Map 25",
+    "file": "data/city_files/North_Providence/5b7bb0_AP25.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP5.pdf",
+    "text": "Plat Map 5",
+    "file": "data/city_files/North_Providence/037414_AP5.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP16.pdf",
+    "text": "Plat Map 16",
+    "file": "data/city_files/North_Providence/5b83c5_AP16.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP22C.pdf",
+    "text": "Plat Map 22C",
+    "file": "data/city_files/North_Providence/9e8e45_AP22C.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP25A.pdf",
+    "text": "Plat Map 25A",
+    "file": "data/city_files/North_Providence/2c013a_AP25A.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP6.pdf",
+    "text": "Plat Map 6",
+    "file": "data/city_files/North_Providence/5f1385_AP6.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP17.pdf",
+    "text": "Plat Map 17",
+    "file": "data/city_files/North_Providence/6f312c_AP17.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP23.pdf",
+    "text": "Plat Map 23",
+    "file": "data/city_files/North_Providence/d3b371_AP23.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP25B.pdf",
+    "text": "Plat Map 25B",
+    "file": "data/city_files/North_Providence/061c31_AP25B.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP7.pdf",
+    "text": "Plat Map 7",
+    "file": "data/city_files/North_Providence/ccba4b_AP7.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP18.pdf",
+    "text": "Plat Map 18",
+    "file": "data/city_files/North_Providence/786f8e_AP18.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP23A.pdf",
+    "text": "Plat Map 23A",
+    "file": "data/city_files/North_Providence/a44a97_AP23A.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP26.pdf",
+    "text": "Plat Map 26",
+    "file": "data/city_files/North_Providence/3c1f42_AP26.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP8.pdf",
+    "text": "Plat Map 8",
+    "file": "data/city_files/North_Providence/a98965_AP8.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP19.pdf",
+    "text": "Plat Map 19",
+    "file": "data/city_files/North_Providence/a141eb_AP19.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP23B.pdf",
+    "text": "Plat Map 23B",
+    "file": "data/city_files/North_Providence/c767e4_AP23B.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP9.pdf",
+    "text": "Plat Map 9",
+    "file": "data/city_files/North_Providence/b61454_AP9.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP20.pdf",
+    "text": "Plat Map 20",
+    "file": "data/city_files/North_Providence/5bc4f1_AP20.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP23C.pdf",
+    "text": "Plat Map 23C",
+    "file": "data/city_files/North_Providence/433b4c_AP23C.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP10.pdf",
+    "text": "Plat Map 10",
+    "file": "data/city_files/North_Providence/37c900_AP10.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.northprovidenceri.gov/pdf/platmaps/AP21.pdf",
+    "text": "Plat Map 21",
+    "file": "data/city_files/North_Providence/6ea42c_AP21.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {}
+ },
+ "Kingman": {
+  "files": [],
+  "portals": {}
+ },
+ "Dania Beach": {
+  "files": [],
+  "portals": {
+   "https://www.arcgis.com/apps/dashboards/4b795ca69c4c473d9b599f66659c86a5": "Interactive Parks Map"
+  }
+ },
+ "Morristown": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/e7899522bfe74869b20d0234f369c9ab": "New Development Map",
+   "https://storymaps.arcgis.com/stories/d83accd2177545c8a05ef4f12b8d2f22": "Capital Projects Storymap",
+   "https://mh-gis.maps.arcgis.com/home/index.html": "Maps of City Services",
+   "https://experience.arcgis.com/experience/105dc20751fc4325a59568d75b85e9ca": "Citizen Concern Reporter",
+   "https://mh-gis.maps.arcgis.com/apps/instant/lookup/index.html?appid=26aae4159a6f4d9e9790bab32ed86616": "Am I in City Limits?",
+   "https://mh-gis.maps.arcgis.com/apps/instant/nearby/index.html?appid=dfa0533134174a45a32ff7c98fc4f049": "Park Locator App",
+   "https://mh-gis.maps.arcgis.com/apps/instant/nearby/index.html?appid=83cd515077d842599dab05a489b730f1&sliderDistance=0.1": "",
+   "https://mh-gis.maps.arcgis.com/apps/instant/lookup/index.html?appid=f052e8e858b74c64a24162e15033a021": ""
+  }
+ },
+ "Central": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/56c48949ba144a68a4f1d856083ea2f5": "Public Input Map",
+   "https://storymaps.arcgis.com/stories/c33c2b4d74904753bc7fe309e497b021": "Infrastructure Projects",
+   "https://ibts.maps.arcgis.com/home/index.html": "GIS Map Portal"
+  }
+ },
+ "Independence": {
+  "files": [],
+  "portals": {}
+ }
+}
