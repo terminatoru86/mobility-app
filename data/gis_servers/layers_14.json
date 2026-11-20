@@ -1,9 +1,128 @@
 [
 {
-"city": "Broomfield County",
-"url": "https://gis.drcog.org/server/rest/services/RDC/BICYCLE_SHARE_STATIONS/MapServer/0",
-"name": "BICYCLE_SHARE_STATIONS",
-"count": 67,
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/1",
+"name": "Bike Share",
+"count": 109,
 "cat": "share"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/3",
+"name": "Bike Box",
+"count": 23,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/5",
+"name": "Bike Elevator at Monona Terrace ",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/6",
+"name": "Bike Repair Station",
+"count": 75,
+"cat": "repair"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/1",
+"name": "Bike Share",
+"count": 109,
+"cat": "share"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/3",
+"name": "Bike Box",
+"count": 23,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/5",
+"name": "Bike Elevator at Monona Terrace ",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/6",
+"name": "Bike Repair Station",
+"count": 75,
+"cat": "repair"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Bike_LTS_Network_Map/MapServer/1",
+"name": "Bike Elevator",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Ped_Facilities/MapServer/8",
+"name": "Bike Elevator at Monona Terrace ",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Story_Bike_Trails/MapServer/21",
+"name": "Bicycle Roundabout",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/2",
+"name": "Bike Share",
+"count": 109,
+"cat": "share"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/3",
+"name": "Bike Box",
+"count": 23,
+"cat": "racks"
+},
+{
+"city": "Memphis",
+"url": "https://gis.memphistn.gov/server/rest/services/Engineering/TrafficEngineering_BikewayNetwork/MapServer/11",
+"name": "Bike Share Stations",
+"count": 34,
+"cat": "share"
+},
+{
+"city": "Memphis",
+"url": "https://gis.memphistn.gov/server/rest/services/Engineering/TrafficEngineering_BikewayNetwork/MapServer/10",
+"name": "Bike Stores",
+"count": 11,
+"cat": "racks"
+},
+{
+"city": "Memphis",
+"url": "https://gis.memphistn.gov/server/rest/services/Engineering/TrafficEngineering_BikewayNetwork/MapServer/8",
+"name": "Bike Repair Stands",
+"count": 18,
+"cat": "repair"
+},
+{
+"city": "Memphis",
+"url": "https://gis.memphistn.gov/server/rest/services/Engineering/TrafficEngineering_BikewayNetwork/MapServer/14",
+"name": "Bike Rack Locations",
+"count": 80,
+"cat": "racks"
+},
+{
+"city": "Galveston",
+"url": "https://gis.galvestontx.gov/server/rest/services/Galveston_Bicycle_Routes_MIL1/MapServer/1",
+"name": "Bicycle Points",
+"count": 677,
+"cat": "racks"
 }
 ]
