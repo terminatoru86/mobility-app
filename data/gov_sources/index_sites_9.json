@@ -1,0 +1,2653 @@
+{
+ "state:dot.ga.gov": {
+  "files": [
+   {
+    "url": "http://www.dot.ga.gov:80/DriveSmart/Data/Documents/CemeteryLocator/GA_CemeteryLocator_AllCemeteries.zip",
+    "text": "Download Spreadsheet",
+    "file": "data/gov_sources/state_dot_ga_gov/ce9b08_GA_CemeteryLocator_AllCemeteries.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.dot.ga.gov:80/DriveSmart/MapsData/Documents/DataIndex.pdf",
+    "text": "View Index",
+    "file": "data/gov_sources/state_dot_ga_gov/70282f_DataIndex.pdf",
+    "rows": 41,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.dot.ga.gov/SRTS/Documents/SRTS-GDOT-Bike-Train-Tip-Sheet.pdf",
+    "text": "Bicycle Train",
+    "file": "data/gov_sources/state_dot_ga_gov/8e0502_SRTS-GDOT-Bike-Train-Tip-Sheet.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ga.gov/SRTS/Documents/SRTS-GDOT-Identify-Routes-Tip-Sheet.pdf",
+    "text": "Identifying Safe Walking & Biking Routes to School",
+    "file": "data/gov_sources/state_dot_ga_gov/f6837a_SRTS-GDOT-Identify-Routes-Tip-Sheet.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ga.gov/SRTS/Documents/SRTS-GDOT-Plan-Your-Event-Tip-Sheet.pdf",
+    "text": "Plan & Promote Your Walk or Bike to School Event",
+    "file": "data/gov_sources/state_dot_ga_gov/9f7247_SRTS-GDOT-Plan-Your-Event-Tip-Sheet.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.dot.ga.gov:80/DriveSmart/Travel/BikePed/Vulnerable_Roadway_User_Safety_Assessment.pdf",
+    "text": "View Report",
+    "file": "data/gov_sources/state_dot_ga_gov/871cd1_Vulnerable_Roadway_User_Safety_Assessment.pdf",
+    "rows": 142,
+    "bike_rows": 18
+   },
+   {
+    "url": "http://www.dot.ga.gov:80/DriveSmart/Travel/BikePed/English-fullversion.pdf",
+    "text": "Georgia Bike Sense (English)",
+    "file": "data/gov_sources/state_dot_ga_gov/70b84a_English-fullversion.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.dot.ga.gov:80/DriveSmart/Travel/BikePed/Spanish-fullversion.pdf",
+    "text": "Georgia Bike Sense (Spanish)",
+    "file": "data/gov_sources/state_dot_ga_gov/1a1336_Spanish-fullversion.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.dot.ga.gov:80/DriveSmart/Travel/BikePed/PSG.pdf",
+    "text": "View Guide",
+    "file": "data/gov_sources/state_dot_ga_gov/614e4a_PSG.pdf",
+    "rows": 720,
+    "bike_rows": 74
+   },
+   {
+    "url": "http://www.dot.ga.gov/DriveSmart/Travel/BikePed/Georgia_bicycle_and_pedestrian_plan.pdf",
+    "text": "Georgia Bicycle & Pedestrian Plan",
+    "file": "data/gov_sources/state_dot_ga_gov/d315c0_Georgia_bicycle_and_pedestrian_plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ga.gov/DriveSmart/Travel/BikePed/PSG.pdf",
+    "text": "Georgia Pedestrian & Streetscape Guide",
+    "file": "data/gov_sources/state_dot_ga_gov/1bfee8_PSG.pdf",
+    "rows": 720,
+    "bike_rows": 74
+   },
+   {
+    "url": "http://www.dot.ga.gov/DriveSmart/Travel/BikePed/ga_ped_guide.pdf",
+    "text": "Guidebook for Pedestrian Planning",
+    "file": "data/gov_sources/state_dot_ga_gov/e0370a_ga_ped_guide.pdf",
+    "rows": 201,
+    "bike_rows": 26
+   },
+   {
+    "url": "http://www.dot.ga.gov:80/DriveSmart/Travel/BikePed/5201%20ga%20bikes%20BSAP%20report_3.pdf",
+    "text": "Bicycle Safety Action Plan",
+    "file": "data/gov_sources/state_dot_ga_gov/347b2f_5201_20ga_20bikes_20BSAP_20report_3.pdf",
+    "rows": 116,
+    "bike_rows": 32
+   },
+   {
+    "url": "http://www.dot.ga.gov:80/DriveSmart/Travel/BikePed/BikePedSAP.pdf",
+    "text": "Pedestrian Safety Action Plan",
+    "file": "data/gov_sources/state_dot_ga_gov/cfca2b_BikePedSAP.pdf",
+    "rows": 358,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.dot.ga.gov/DriveSmart/Travel/BikePed/Vulnerable_Roadway_User_Safety_Assessment.pdf",
+    "text": "View Report",
+    "file": "data/gov_sources/state_dot_ga_gov/7c93f7_Vulnerable_Roadway_User_Safety_Assessment.pdf",
+    "rows": 142,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.dot.ga.gov/DriveSmart/Travel/BikePed/English-fullversion.pdf",
+    "text": "Georgia Bike Sense (English)",
+    "file": "data/gov_sources/state_dot_ga_gov/e414b0_English-fullversion.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dot.ga.gov/DriveSmart/Travel/BikePed/Spanish-fullversion.pdf",
+    "text": "Georgia Bike Sense (Spanish)",
+    "file": "data/gov_sources/state_dot_ga_gov/20cb08_Spanish-fullversion.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/a7e74c13e7ac425ea1c620fc49c46991": "Access Application",
+   "https://experience.arcgis.com/experience/9db77d01361b4247bd15daded40c9045": "Access Application",
+   "https://nevi-gdot.hub.arcgis.com/": "National Electric Vehicle Infrastructure Deployment (NEVI)",
+   "https://transit-development-plan-tdp-guidebook-gdot.hub.arcgis.com/": "Transit Development Plan (TDP) Guidebook",
+   "https://imagery-gagio.hub.arcgis.com/": "Program Resources, FAQs, and Trainings",
+   "https://employment-gdot.hub.arcgis.com/": "Employment at GDOT"
+  }
+ },
+ "state:mdot.maryland.gov": {
+  "files": [
+   {
+    "url": "https://mdot.maryland.gov/OPCP/MD_Bicycle_Safety_Task_Force_Final_Report.pdf",
+    "text": "Bike Safety Task Force Report (2017)",
+    "file": "data/gov_sources/state_mdot_maryland_gov/c50788_MD_Bicycle_Safety_Task_Force_Final_Report.pdf",
+    "rows": 105,
+    "bike_rows": 32
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Maryland%20Statewide%20Vision%20Trails.pdf",
+    "text": "2009 Trails Plan",
+    "file": "data/gov_sources/state_mdot_maryland_gov/6ed987_Maryland_20Statewide_20Vision_20Trails.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.mdot.maryland.gov/OPCP/MD_Bicycle_Safety_Task_Force_Final_Report.pdf",
+    "text": "Bike Safety Task Force Report (2017)",
+    "file": "data/gov_sources/state_mdot_maryland_gov/798cf9_MD_Bicycle_Safety_Task_Force_Final_Report.pdf",
+    "rows": 105,
+    "bike_rows": 32
+   },
+   {
+    "url": "https://www.mdot.maryland.gov/OPCP/Maryland%20Statewide%20Vision%20Trails.pdf",
+    "text": "2009 Trails Plan",
+    "file": "data/gov_sources/state_mdot_maryland_gov/0e4dd3_Maryland_20Statewide_20Vision_20Trails.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/CTP_2027/Bicycle_and_Pedestrian_Related_Projects.pdf",
+    "text": "Bicycle and Pedestrian Related Projects",
+    "file": "data/gov_sources/state_mdot_maryland_gov/c331f1_Bicycle_and_Pedestrian_Related_Projects.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/CTP_2027/MDOT_Maryland_Transit_Administration.pdf",
+    "text": "Maryland Transit Administration",
+    "file": "data/gov_sources/state_mdot_maryland_gov/f38c2e_MDOT_Maryland_Transit_Administration.pdf",
+    "rows": 636,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/CTP_2027/Washington_Metropolitan_Area_Transit_Authority.pdf",
+    "text": "Washington Metropolitan Area Transit Authority",
+    "file": "data/gov_sources/state_mdot_maryland_gov/30d759_Washington_Metropolitan_Area_Transit_Authority.pdf",
+    "rows": 40,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY-2027-Bikeways-Awards.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/cdd249_FY-2027-Bikeways-Awards.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/MDOT%20Kim%20Lamphier%20Bikeways%20Network%20Program%20Annual%20Report%202025.pdf",
+    "text": "Read our 2025 Bikeways Annual Report",
+    "file": "data/gov_sources/state_mdot_maryland_gov/c011d5_MDOT_20Kim_20Lamphier_20Bikeways_20Network_20Program_20Annual_20Report",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Bikeways-Program-Overview.pdf",
+    "text": "Program Overview - Updated January 2025",
+    "file": "data/gov_sources/state_mdot_maryland_gov/0a431a_Bikeways-Program-Overview.pdf",
+    "rows": 152,
+    "bike_rows": 36
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Bikeways_Program_Overview_2022.pdf",
+    "text": "Program Overview for Previously Awarded Projects - Archived",
+    "file": "data/gov_sources/state_mdot_maryland_gov/1879d2_Bikeways_Program_Overview_2022.pdf",
+    "rows": 126,
+    "bike_rows": 30
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Bikeways_Procedures_and_Guidelines.pdf",
+    "text": "Bikeways  Program Procedures and Guidelines",
+    "file": "data/gov_sources/state_mdot_maryland_gov/558799_Bikeways_Procedures_and_Guidelines.pdf",
+    "rows": 38,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Bike_Ped/MDOT_Bikeways_Complete_Streets_Objective_Statement_Guidance.pdf",
+    "text": "Bikeways Complete Streets Objective Statement Guidance",
+    "file": "data/gov_sources/state_mdot_maryland_gov/4054af_MDOT_Bikeways_Complete_Streets_Objective_Statement_Guidance.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Bike_Ped/Bikeways_Application_Recommendations.pdf",
+    "text": "Bikeways Application Recommendations and Project Deliverables - Updated January 2025",
+    "file": "data/gov_sources/state_mdot_maryland_gov/01d692_Bikeways_Application_Recommendations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Bike_Ped/Bike-Ped-Implementation-Bikeways-Reference-Guide_Aug_2026.pdf",
+    "text": "NEW Bicycle and Pedestrian Projects: Design & Implementation Reference Guide (2026)",
+    "file": "data/gov_sources/state_mdot_maryland_gov/0fe92e_Bike-Ped-Implementation-Bikeways-Reference-Guide_Aug_2026.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Bikeways_Project_Cost_Estimator.xlsx",
+    "text": "NEW Bikeways Project Cost Estimator (2026)",
+    "file": "data/gov_sources/state_mdot_maryland_gov/a8f322_Bikeways_Project_Cost_Estimator.xlsx",
+    "rows": 223,
+    "bike_rows": 75
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Bikeways_Design_Planning_Cost_Estimator.xlsx",
+    "text": "NEW Bikeways Design & Planning Cost Estimator (2026)",
+    "file": "data/gov_sources/state_mdot_maryland_gov/475e79_Bikeways_Design_Planning_Cost_Estimator.xlsx",
+    "rows": 132,
+    "bike_rows": 58
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Bikeways_Quarterly_Report.pdf",
+    "text": "Bikeways Workplan and Quarterly Update Form",
+    "file": "data/gov_sources/state_mdot_maryland_gov/befed7_Bikeways_Quarterly_Report.pdf",
+    "rows": 36,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Bikeways_Grant_Reimbursement_Claim_Form.xlsx",
+    "text": "Reimbursement  Request Template",
+    "file": "data/gov_sources/state_mdot_maryland_gov/eff646_Bikeways_Grant_Reimbursement_Claim_Form.xlsx",
+    "rows": 90,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/MDOT_Kim_Lamphier_Bikeways_Network_Program_Annual_Report_2025.pdf",
+    "text": "2025 Bikeways Annual Report",
+    "file": "data/gov_sources/state_mdot_maryland_gov/6f0f61_MDOT_Kim_Lamphier_Bikeways_Network_Program_Annual_Report_2025.pdf",
+    "rows": 90,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/MDOTKimLamphierBikewaysNetworkProgramAnnualReport2024.pdf",
+    "text": "2024 Bikeways Annual Report",
+    "file": "data/gov_sources/state_mdot_maryland_gov/142ca0_MDOTKimLamphierBikewaysNetworkProgramAnnualReport2024.pdf",
+    "rows": 46,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/MDOT_Kim_Lamphier_Bikeways_Network_Program_Annual_Report_2023.pdf",
+    "text": "2023 Bikeways Annual Report",
+    "file": "data/gov_sources/state_mdot_maryland_gov/db0579_MDOT_Kim_Lamphier_Bikeways_Network_Program_Annual_Report_2023.pdf",
+    "rows": 38,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/Bikeways_Annual_Report_2022.pdf",
+    "text": "2022 Bikeways Annual Report",
+    "file": "data/gov_sources/state_mdot_maryland_gov/a5e5dd_Bikeways_Annual_Report_2022.pdf",
+    "rows": 34,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/MDOT_Kim_Lamphier_Bikeways_Network_Program_Annual_Report_2021.pdf",
+    "text": "2021 Bikeways Annual Report",
+    "file": "data/gov_sources/state_mdot_maryland_gov/8447d1_MDOT_Kim_Lamphier_Bikeways_Network_Program_Annual_Report_2021.pdf",
+    "rows": 65,
+    "bike_rows": 32
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/MDOT_KimLamphierBikewaysNetworkProgramAnnualReport.pdf",
+    "text": "2020 Bikeways Annual Report",
+    "file": "data/gov_sources/state_mdot_maryland_gov/2b9242_MDOT_KimLamphierBikewaysNetworkProgramAnnualReport.pdf",
+    "rows": 68,
+    "bike_rows": 33
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY2026-Bikeways-Awards.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/9ddd1b_FY2026-Bikeways-Awards.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY2025_Bikeways_grant_awards.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/7a7421_FY2025_Bikeways_grant_awards.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY23_Bikeways_Award_List.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/7993c7_FY23_Bikeways_Award_List.pdf",
+    "rows": 24,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY2022_BikewaysAwardList.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/831f31_FY2022_BikewaysAwardList.pdf",
+    "rows": 18,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY2020_Bikeways_Grant_Award_List.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/55459a_FY2020_Bikeways_Grant_Award_List.pdf",
+    "rows": 13,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY19_Bikeways.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/687c2d_FY19_Bikeways.pdf",
+    "rows": 10,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY18_Bikeways_Awards_List.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/56be21_FY18_Bikeways_Awards_List.pdf",
+    "rows": 12,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY17_Bikeways_Awardees_List.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/f589b3_FY17_Bikeways_Awardees_List.pdf",
+    "rows": 19,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY16BikePedGrantsList.pdf",
+    "text": "Project  List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/869342_FY16BikePedGrantsList.pdf",
+    "rows": 65,
+    "bike_rows": 56
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY15BikewaysGrantsList.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/5f9a02_FY15BikewaysGrantsList.pdf",
+    "rows": 25,
+    "bike_rows": 24
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY14BikewaysGrantsList.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/8e1df1_FY14BikewaysGrantsList.pdf",
+    "rows": 24,
+    "bike_rows": 23
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY13BikewaysGrantsList.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/4a21db_FY13BikewaysGrantsList.pdf",
+    "rows": 29,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://mdot.maryland.gov/OPCP/FY12BikewaysGrantsList.pdf",
+    "text": "Project List",
+    "file": "data/gov_sources/state_mdot_maryland_gov/b25ce0_FY12BikewaysGrantsList.pdf",
+    "rows": 23,
+    "bike_rows": 21
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/7b422376455d4b86bbfd43121083b81f/": "Here",
+   "https://experience.arcgis.com/experience/8f01552b8ff745d8902476a7c569f64c/": "Maryland's Bicycle Level of Traffic Stress Map Application",
+   "https://maryland.maps.arcgis.com/apps/MapJournal/index.html?appid=6437e0474d5f435399c17625f49d1ea6": "Maryland’s Road-Separated Bike Routes Application",
+   "https://maryland.maps.arcgis.com/apps/MapJournal/index.html?appid=ee0ae05d4ba649feac79ff5ff404df75": "Maryland’s Road-Separated Bike Routes Application",
+   "https://maryland.maps.arcgis.com/apps/MapSeries/index.html?appid=61dad6442ec04217ac95713c70907c6a": "Maryland Bikeways Program Interactive Map",
+   "https://experience.arcgis.com/experience/ad84c74c270f4a018a8da81d7e16e917/?data_id=0ced71a127604e59b36907e373f1046e-1853c00b27a-layer-6-1853bf87ef8-layer-4%3A1315": "The MDOT Bicycle Accessibility Map Application",
+   "https://maryland.maps.arcgis.com/apps/webappviewer/index.html?id=2caf92df364e4d4baae0b5ec2e4c5079": "MDOT SHA Bike Spine",
+   "https://maryland.maps.arcgis.com/apps/webappviewer/index.html?id=abf43e0c899d4246880c8878a9c37177": "View interactive FINAL FY 26 – FY 31 CTP map",
+   "https://experience.arcgis.com/experience/adb6663bb39e4c5f92dad8bf7b60a35a": "Projects Map",
+   "https://experience.arcgis.com/experience/adb6663bb39e4c5f92dad8bf7b60a35a/page/Awardees-by-Year/": "interactive  project map",
+   "https://bike-salisbury.hub.arcgis.com/": "Program information",
+   "https://experience.arcgis.com/experience/769bd85416ff4e46bf3cb78a67ed4640": "Context Driven Toolkit",
+   "https://mdot-sha-project-portal-maryland.hub.arcgis.com/": "Project Portal",
+   "https://geodata.md.gov/recreationatlas/": "Places to Go Biking and Hiking",
+   "https://data-maryland.opendata.arcgis.com/pages/mdot": "Maps and GIS",
+   "https://data-maryland.opendata.arcgis.com/pages/mdot-printed-maps-docs": "Printed Maps & Docs",
+   "https://data-maryland.opendata.arcgis.com/pages/mdot-interactive-maps": "Interactive Mapping Apps",
+   "https://maryland.maps.arcgis.com/apps/webappviewer/index.html?id=063bc92489094dbc8d34c9c2001a38a4": "STORM",
+   "https://data-maryland.opendata.arcgis.com/pages/mdot-dashboards-storymaps": "Dashboards & Story Maps",
+   "https://data-maryland.opendata.arcgis.com/pages/mdot-data": "Open Datasets",
+   "https://maryland.maps.arcgis.com/apps/webappviewer/index.html?id=346cc9c1f3b949b5a5104e0303129a95": "Park-and-Ride",
+   "https://data-maryland.opendata.arcgis.com/datasets/maryland::state-welcome-visitor-center-facilities/about": "Welcome Centers and Rest Areas",
+   "https://mdot-sha-field-guides-maryland.hub.arcgis.com/": "​Traffi​c Barrier Resources for Field Workers​",
+   "https://mdot-sha-highway-programs-maryland.hub.arcgis.com/pages/adopt-a-highway": "Adopt-A-Highway Program (AAH)",
+   "https://maryland.hub.arcgis.com/pages/anti-litter-campaign": "Litter Removal",
+   "https://maryland.maps.arcgis.com/apps/webappviewer/index.html?id=1ed8006565214604a76f69009bb822a1": "View map in full screen or on mobile device",
+   "https://experience.arcgis.com/experience/c53297fe3d0e41b7842a901686dd4436": "View map in full screen or on mobile device",
+   "https://www.marylandcomptroller.gov/reports/open-data/data-sets/cannabis-tax.html": "Comptroller of Maryland Tax administration and business tax resources.",
+   "https://experience.arcgis.com/experience/3476e680584c49e48303fe6d52ceeda9": "Context Driven: Access and Mobility for All Users",
+   "http://maryland.maps.arcgis.com/apps/webappviewer/index.html?id=9c824917259a4dda8bf4d993f46cc5bb": "View map in full screen or on Mobile device"
+  }
+ },
+ "state:nj.gov/transportation": {
+  "files": [
+   {
+    "url": "https://nj.gov/transportation/refdata/gis/maps/RailRoadlines.pdf",
+    "text": "NJ Rail Lines (PDF)",
+    "file": "data/gov_sources/state_nj_gov_transportation/af6dd1_RailRoadlines.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nj.gov/transportation/refdata/gis/maps/pol_subdiv_w_roads.pdf",
+    "text": "NJ Highway System (PDF)",
+    "file": "data/gov_sources/state_nj_gov_transportation/6173b3_pol_subdiv_w_roads.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nj.gov/transportation/refdata/gis/maps/aviationfacilitymap.pdf",
+    "text": "Airports & Heliports (PDF)",
+    "file": "data/gov_sources/state_nj_gov_transportation/a3f5d8_aviationfacilitymap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nj.gov/mvc/pdf/license/EbikeManual.pdf",
+    "text": "Download PDF",
+    "file": "data/gov_sources/state_nj_gov_transportation/6aed78_EbikeManual.pdf",
+    "rows": 13,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.nj.gov/mvc/pdf/vehicles/hints2002.pdf",
+    "text": "Motorcycle program hints",
+    "file": "data/gov_sources/state_nj_gov_transportation/b36f2f_hints2002.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nj.gov/transportation/commuter/bike/pdf/Micromobility_Guide.pdf",
+    "text": "New Jersey Micromobility Guide",
+    "file": "data/gov_sources/state_nj_gov_transportation/15b3dc_Micromobility_Guide.pdf",
+    "rows": 326,
+    "bike_rows": 92
+   },
+   {
+    "url": "https://www.nj.gov/transportation/commuter/bike/pdf/njbicyclemapnorthern.pdf",
+    "text": "northern\r\n                   map",
+    "file": "data/gov_sources/state_nj_gov_transportation/873138_njbicyclemapnorthern.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.nj.gov/transportation/commuter/bike/pdf/njbicyclemapandguidenewark.pdf",
+    "text": "Resource\r\n                Guide",
+    "file": "data/gov_sources/state_nj_gov_transportation/547ec9_njbicyclemapandguidenewark.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nj.gov/transportation/commuter/bike/pdf/njbicyclemapsouthern.pdf",
+    "text": "southern\r\n                  map",
+    "file": "data/gov_sources/state_nj_gov_transportation/7c17cd_njbicyclemapsouthern.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.nj.gov/transportation/commuter/bike/pdf/njbicyclemapandguidecamden.pdf",
+    "text": "Resource\r\n                  Guide",
+    "file": "data/gov_sources/state_nj_gov_transportation/4c9d77_njbicyclemapandguidecamden.pdf",
+    "rows": 21,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.nj.gov/transportation/commuter/bike/pdf/bikepedmasterplan2016.pdf",
+    "text": "2016 New Jersey Bicycle and Pedestrian Master Plan",
+    "file": "data/gov_sources/state_nj_gov_transportation/4ede7f_bikepedmasterplan2016.pdf",
+    "rows": 181,
+    "bike_rows": 34
+   },
+   {
+    "url": "https://www.nj.gov/transportation/commuter/bike/pdf/bikepedmasterplanexecsumm2016.pdf",
+    "text": "2016 New Jersey Bicycle and Pedestrian Master Plan Executive Summary",
+    "file": "data/gov_sources/state_nj_gov_transportation/8a9f91_bikepedmasterplanexecsumm2016.pdf",
+    "rows": 53,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.nj.gov/transportation/commuter/bike/pdf/bikepedmasterplanphase2.pdf",
+    "text": "2004 New Jersey Bicycle and Pedestrian Master Plan",
+    "file": "data/gov_sources/state_nj_gov_transportation/10b383_bikepedmasterplanphase2.pdf",
+    "rows": 394,
+    "bike_rows": 63
+   },
+   {
+    "url": "https://www.nj.gov/transportation/commuter/bike/pdf/NJDOT_Statewide Bike-Ped_Master_Plan-Jun1995-Reduced.pdf",
+    "text": "1995 New Jersey Bicycle and Pedestrian Master Plan",
+    "file": "data/gov_sources/state_nj_gov_transportation/1f7a05_NJDOT_Statewide_Bike-Ped_Master_Plan-Jun1995-Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nj.gov/transportation/commuter/bike/pdf/BPPA_Application_Guidance.pdf",
+    "text": "Bicycle and Pedestrian Planning Assistance Program (BPPA)",
+    "file": "data/gov_sources/state_nj_gov_transportation/8f831b_BPPA_Application_Guidance.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nj.gov/transportation/freight/rail/pdf/NewJerseyStatewideFreightRailStrategicPlanJune2014.pdf",
+    "text": "Freight Rail Strategic Plan",
+    "file": "data/gov_sources/state_nj_gov_transportation/699297_NewJerseyStatewideFreightRailStrategicPlanJune2014.pdf",
+    "rows": 31,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://data.nj.gov/": "Data.NJ.Gov >",
+   "https://data.nj.gov/Transportation/Vehicle-Inspection-Facility-Locations-Map/a7mk-8suc?fac=deic": "Check the inspection facility map"
+  }
+ },
+ "state:scdot.org": {
+  "files": [
+   {
+    "url": "https://www.scdot.org/projects/pdf/Bike_Ped/bike_resolution.pdf",
+    "text": "resolution",
+    "file": "data/gov_sources/state_scdot_org/6dc20d_bike_resolution.pdf",
+    "rows": 106,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scdot.org/projects/pdf/SC%20Pedestrian%20and%20Bicycle%20Safety%20Action%20Plan.pdf",
+    "text": "Pedestrian and Bicycle Safety Action Plan (PBSAP)",
+    "file": "data/gov_sources/state_scdot_org/d105ad_SC_20Pedestrian_20and_20Bicycle_20Safety_20Action_20Plan.pdf",
+    "rows": 916,
+    "bike_rows": 158
+   },
+   {
+    "url": "https://www.scdot.org/projects/pdf/Bike_Ped/bike_laws.pdf",
+    "text": "Laws in South Carolina pertaining to bicycling",
+    "file": "data/gov_sources/state_scdot_org/099667_bike_laws.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scdot.org/projects/pdf/Bike_Ped/safety_tips.pdf",
+    "text": "Safety Tips for Cyclists and Pedestrians",
+    "file": "data/gov_sources/state_scdot_org/8e2999_safety_tips.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Abbeville_County.pdf",
+    "text": "Abbeville_County",
+    "file": "data/gov_sources/state_scdot_org/a2981e_Abbeville_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Aiken_County.pdf",
+    "text": "Aiken_County",
+    "file": "data/gov_sources/state_scdot_org/9dc19c_Aiken_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Allendale_County.pdf",
+    "text": "Allendale_County",
+    "file": "data/gov_sources/state_scdot_org/46641d_Allendale_County.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Anderson_County.pdf",
+    "text": "Anderson_County",
+    "file": "data/gov_sources/state_scdot_org/67abbe_Anderson_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Bamberg_County.pdf",
+    "text": "Bamberg_County",
+    "file": "data/gov_sources/state_scdot_org/cef09b_Bamberg_County.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Barnwell_County.pdf",
+    "text": "Barnwell_County",
+    "file": "data/gov_sources/state_scdot_org/f7e72c_Barnwell_County.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Cherokee_County.pdf",
+    "text": "Cherokee_County",
+    "file": "data/gov_sources/state_scdot_org/0c1a0b_Cherokee_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Chester_County.pdf",
+    "text": "Chester_County",
+    "file": "data/gov_sources/state_scdot_org/fcfc11_Chester_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Dorchester_County.pdf",
+    "text": "Dorchester_County",
+    "file": "data/gov_sources/state_scdot_org/e77dce_Dorchester_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Edgefield_County.pdf",
+    "text": "Edgefield_County",
+    "file": "data/gov_sources/state_scdot_org/1f5c1d_Edgefield_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Fairfield_County.pdf",
+    "text": "Fairfield_County",
+    "file": "data/gov_sources/state_scdot_org/221060_Fairfield_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Florence_County.pdf",
+    "text": "Florence_County",
+    "file": "data/gov_sources/state_scdot_org/1b5b55_Florence_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Greenville_County.pdf",
+    "text": "Greenville_County",
+    "file": "data/gov_sources/state_scdot_org/c441d6_Greenville_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Greenwood_County.pdf",
+    "text": "Greenwood_County",
+    "file": "data/gov_sources/state_scdot_org/d1f561_Greenwood_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Hampton_County.pdf",
+    "text": "Hampton_County",
+    "file": "data/gov_sources/state_scdot_org/1c8f8b_Hampton_County.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Lee_County.pdf",
+    "text": "Lee_County",
+    "file": "data/gov_sources/state_scdot_org/7662f3_Lee_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Lexington_County.pdf",
+    "text": "Lexington_County",
+    "file": "data/gov_sources/state_scdot_org/94602c_Lexington_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Mccormick_County.pdf",
+    "text": "Mccormick_County",
+    "file": "data/gov_sources/state_scdot_org/931fcb_Mccormick_County.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Newberry_County.pdf",
+    "text": "Newberry_County",
+    "file": "data/gov_sources/state_scdot_org/fae1e9_Newberry_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Saluda_County.pdf",
+    "text": "Saluda_County",
+    "file": "data/gov_sources/state_scdot_org/d2f828_Saluda_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Spartanburg_County.pdf",
+    "text": "Spartanburg_County",
+    "file": "data/gov_sources/state_scdot_org/315122_Spartanburg_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Sumter_County.pdf",
+    "text": "Sumter_County",
+    "file": "data/gov_sources/state_scdot_org/5566d1_Sumter_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Union_County.pdf",
+    "text": "Union_County",
+    "file": "data/gov_sources/state_scdot_org/155022_Union_County.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/York_County.pdf",
+    "text": "York_County",
+    "file": "data/gov_sources/state_scdot_org/aaf9f0_York_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Due_West_TrafficFlow.pdf",
+    "text": "Due_West_TrafficFlow",
+    "file": "data/gov_sources/state_scdot_org/080b82_Due_West_TrafficFlow.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Columbia_Metro_Index.pdf",
+    "text": "Columbia_Metro_Index",
+    "file": "data/gov_sources/state_scdot_org/0a627a_Columbia_Metro_Index.pdf",
+    "rows": 19,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/2011_Statewide_Traffic_Points_Warehouse.zip",
+    "text": "2011_Statewide_Traffic_Points_Warehouse",
+    "file": "data/gov_sources/state_scdot_org/eb576b_2011_Statewide_Traffic_Points_Warehouse.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Calhoun_2000.pdf",
+    "text": "Calhoun_2000",
+    "file": "data/gov_sources/state_scdot_org/d7d284_Calhoun_2000.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Cherokee_2000.pdf",
+    "text": "Cherokee_2000",
+    "file": "data/gov_sources/state_scdot_org/3fd8b4_Cherokee_2000.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/Lee_2000.pdf",
+    "text": "Lee_2000",
+    "file": "data/gov_sources/state_scdot_org/22b173_Lee_2000.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/2009_Statewide_Traffic_Warehouse.zip",
+    "text": "2009_Statewide_Traffic_Warehouse",
+    "file": "data/gov_sources/state_scdot_org/26f640_2009_Statewide_Traffic_Warehouse.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/2010_Statewide_Traffic_Warehouse.zip",
+    "text": "2010_Statewide_Traffic_Warehouse",
+    "file": "data/gov_sources/state_scdot_org/e45faf_2010_Statewide_Traffic_Warehouse.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/2012_Traffic_Lines_Warehouse.zip",
+    "text": "2012_Traffic_Lines_Warehouse",
+    "file": "data/gov_sources/state_scdot_org/1899f8_2012_Traffic_Lines_Warehouse.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://info2.scdot.org/GISMapping/GISMapdl/2012_Traffic_Points_Warehouse.zip",
+    "text": "2012_Traffic_Points_Warehouse",
+    "file": "data/gov_sources/state_scdot_org/891a0c_2012_Traffic_Points_Warehouse.zip",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://clrb-emergency-package-32-scdot.hub.arcgis.com/": "project website",
+   "https://scdotgis.online/D3-P5": "Visit the project website to submit a comment",
+   "https://scdot.maps.arcgis.com/apps/MapSeries/index.html?appid=ca1cd69fc88945f4bb465e16765d761c": "Project Viewer",
+   "https://www.scdot.org/travel/travel-mappinggis.html": "GIS Mapping",
+   "http://scdot.maps.arcgis.com/home/index.html": "Go to ArcGIS Site",
+   "http://info2.scdot.org/GISMapping/Pages/GIS.aspx": "GIS",
+   "https://www.scdot.org/travel/travel-mappinggis.aspx": "Return to GIS/Mapping Home",
+   "https://info2.scdot.org/GISMapping/Pages/GIS.aspx": "GIS"
+  }
+ },
+ "state:dot.state.wy.us": {
+  "files": [],
+  "portals": {}
+ },
+ "region:psrc.org": {
+  "files": [
+   {
+    "url": "https://www.psrc.org/sites/default/files/2023-07/hip-parking.pdf",
+    "text": "Housing Innovations Program (HIP): Parking Reductions [PDF/714KB]",
+    "file": "data/gov_sources/region_psrc_org/42ee0a_hip-parking.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/t2040_map_november.pdf",
+    "text": "t2040_map_november.pdf [PDF/766KB]",
+    "file": "data/gov_sources/region_psrc_org/56c37e_t2040_map_november.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/t2040updateappendixn-maps.pdf",
+    "text": "t2040updateappendixn-maps.pdf [PDF/8.8MB]",
+    "file": "data/gov_sources/region_psrc_org/146a4a_t2040updateappendixn-maps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/atpattachmenta-regionalbikenetworkmapsgaplist_0.pdf",
+    "text": "ATP Appendix A Regional Bicycle Network Maps and Gap List [PDF/12MB]",
+    "file": "data/gov_sources/region_psrc_org/4bac84_atpattachmenta-regionalbikenetworkmapsgaplist_0.pdf",
+    "rows": 662,
+    "bike_rows": 551
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/atpattachmentd2010regionalbikecount.pdf",
+    "text": "ATP 2010 Regional Bicycle and Pedestrian Count Report [PDF/2.4MB]",
+    "file": "data/gov_sources/region_psrc_org/2fc6e4_atpattachmentd2010regionalbikecount.pdf",
+    "rows": 141,
+    "bike_rows": 23
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/2014_fta_security_memo_psrc-ver2.pdf",
+    "text": "Memo: PSRC Urbanized Area Procedures for the Federal Transit Administration Requirement Related to Public Transportation",
+    "file": "data/gov_sources/region_psrc_org/6ca28a_2014_fta_security_memo_psrc-ver2.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/atpattachmentd2010regionalbikecount_0.pdf",
+    "text": "atpattachmentd2010regionalbikecount_0.pdf [PDF/2.4MB]",
+    "file": "data/gov_sources/region_psrc_org/e85d16_atpattachmentd2010regionalbikecount_0.pdf",
+    "rows": 141,
+    "bike_rows": 23
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/udp_bicycle_studio_final_20110111.pdf",
+    "text": "udp_bicycle_studio_final_20110111.pdf [PDF/4.7MB]",
+    "file": "data/gov_sources/region_psrc_org/74a9f2_udp_bicycle_studio_final_20110111.pdf",
+    "rows": 130,
+    "bike_rows": 39
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2023-07/centers-types-2023.pdf",
+    "text": "Map of Regional Growth Centers and Manufacturing/Industrial Centers (2023) [PDF/2.1MB]",
+    "file": "data/gov_sources/region_psrc_org/b90a5d_centers-types-2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/opportunity_mapping.pdf",
+    "text": "opportunity_mapping.pdf [PDF/681KB]",
+    "file": "data/gov_sources/region_psrc_org/7053e0_opportunity_mapping.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/parking_management.pdf",
+    "text": "parking_management.pdf [PDF/389KB]",
+    "file": "data/gov_sources/region_psrc_org/a35738_parking_management.pdf",
+    "rows": 18,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/safe_routes_to_school.pdf",
+    "text": "safe_routes_to_school.pdf [PDF/334KB]",
+    "file": "data/gov_sources/region_psrc_org/35cb80_safe_routes_to_school.pdf",
+    "rows": 23,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/bikefacillities.zip",
+    "text": "bikefacillities.zip [ZIP/1.1MB]",
+    "file": "data/gov_sources/region_psrc_org/ff3f89_bikefacillities.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/typology-bike-facilities.pdf",
+    "text": "typology-bike-facilities.pdf [PDF/75KB]",
+    "file": "data/gov_sources/region_psrc_org/b025b6_typology-bike-facilities.pdf",
+    "rows": 7,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/16-historic_and_cultural_resources.pdf",
+    "text": "Chapter 16: Historic and Cultural Resources [PDF/1MB]",
+    "file": "data/gov_sources/region_psrc_org/1331e0_16-historic_and_cultural_resources.pdf",
+    "rows": 7,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2023-03/2018bikepedfacilitytypology.pdf",
+    "text": "Active Transportation Facilities Best Practices [PDF/714KB]",
+    "file": "data/gov_sources/region_psrc_org/40fdb6_2018bikepedfacilitytypology.pdf",
+    "rows": 17,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/final_transit_integration_and_parking_management_phase_2_east_corridor.pdf",
+    "text": "final_transit_integration_and_parking_management_phase_2_east_corridor.pdf [PDF/13.5MB]",
+    "file": "data/gov_sources/region_psrc_org/70943a_final_transit_integration_and_parking_management_phase_2_east_corridor",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/pedestrian_and_bicycle_connectivity_ec_phase_2.pdf",
+    "text": "pedestrian_and_bicycle_connectivity_ec_phase_2.pdf [PDF/7.7MB]",
+    "file": "data/gov_sources/region_psrc_org/c7fe43_pedestrian_and_bicycle_connectivity_ec_phase_2.pdf",
+    "rows": 425,
+    "bike_rows": 107
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2025-07/maplevalley-compplan-2024-certification.pdf",
+    "text": "Certification Report: City of Maple Valley 2024 Comprehensive Plan [PDF/174KB]",
+    "file": "data/gov_sources/region_psrc_org/0aafb3_maplevalley-compplan-2024-certification.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/regionalbikenetwork-faqs.pdf",
+    "text": "regionalbikenetwork-faqs.pdf [PDF/510KB]",
+    "file": "data/gov_sources/region_psrc_org/46a3d6_regionalbikenetwork-faqs.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/opportunitymap.pdf",
+    "text": "opportunitymap.pdf [PDF/306KB]",
+    "file": "data/gov_sources/region_psrc_org/48dd83_opportunitymap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/king_county_wa_opportunity_mapping_apr_2010.pdf",
+    "text": "king_county_wa_opportunity_mapping_apr_2010.pdf [PDF/8MB]",
+    "file": "data/gov_sources/region_psrc_org/f28263_king_county_wa_opportunity_mapping_apr_2010.pdf",
+    "rows": 177,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/nonmappable.pdf",
+    "text": "nonmappable.pdf [PDF/390KB]",
+    "file": "data/gov_sources/region_psrc_org/3be092_nonmappable.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/att3-conformmap_0.pdf",
+    "text": "att3-conformmap_0.pdf [PDF/181KB]",
+    "file": "data/gov_sources/region_psrc_org/75c004_att3-conformmap_0.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/08tip-map_of_federal_urban-rural_boundaries_0.pdf",
+    "text": "08tip-map_of_federal_urban-rural_boundaries_0.pdf [PDF/0.9MB]",
+    "file": "data/gov_sources/region_psrc_org/aae476_08tip-map_of_federal_urban-rural_boundaries_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/parking_map_5-12-16.pdf",
+    "text": "parking_map_5-12-16.pdf [PDF/154KB]",
+    "file": "data/gov_sources/region_psrc_org/425e35_parking_map_5-12-16.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/03tip-2022mapofareaseligibleforcmaqfundsdec2021.pdf",
+    "text": "Current Central Puget Sound Region Designated Maintenance and Nonattainment Areas December 2021 [PDF/196KB]",
+    "file": "data/gov_sources/region_psrc_org/ee8684_03tip-2022mapofareaseligibleforcmaqfundsdec2021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/04tip_2022final2022projecttrackingpolicies.pdf",
+    "text": "Project Tracking Policies for PSRC’s Federal Funds [PDF/286KB]",
+    "file": "data/gov_sources/region_psrc_org/509ed2_04tip_2022final2022projecttrackingpolicies.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/08tip-2022mapoffederalurbanruralboundaries.pdf",
+    "text": "Federal Urban/Urbanized and Rural Areas as of October 2013 [PDF/2MB]",
+    "file": "data/gov_sources/region_psrc_org/6722ee_08tip-2022mapoffederalurbanruralboundaries.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/03tip-map_of_areas_eligible_for_cmaq_funds_0.pdf",
+    "text": "Current Central Puget Sound Region Designated Maintenance and Nonattainment Areas November 2017 [PDF/233KB]",
+    "file": "data/gov_sources/region_psrc_org/6cc79d_03tip-map_of_areas_eligible_for_cmaq_funds_0.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/rtp2018-comment-cascadebicycleclub.pdf",
+    "text": "rtp2018-comment-cascadebicycleclub.pdf [PDF/688KB]",
+    "file": "data/gov_sources/region_psrc_org/c39621_rtp2018-comment-cascadebicycleclub.pdf",
+    "rows": 52,
+    "bike_rows": 19
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/navigating_the_rbn_webmap.pdf",
+    "text": "navigating_the_rbn_webmap.pdf [PDF/1.2MB]",
+    "file": "data/gov_sources/region_psrc_org/d7a208_navigating_the_rbn_webmap.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/travel-survey-story-2017-bike-walk.pdf",
+    "text": "travel-survey-story-2017-bike-walk.pdf [PDF/1.2MB]",
+    "file": "data/gov_sources/region_psrc_org/0c9b96_travel-survey-story-2017-bike-walk.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/rtcc2019appl-royyelmprairielinetrailphase3.pdf",
+    "text": "rtcc2019appl-royyelmprairielinetrailphase3.pdf [PDF/1.5MB]",
+    "file": "data/gov_sources/region_psrc_org/a86094_rtcc2019appl-royyelmprairielinetrailphase3.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/v2050-youthevent-bellevue-map.pdf",
+    "text": "v2050-youthevent-bellevue-map.pdf [PDF/4.7MB]",
+    "file": "data/gov_sources/region_psrc_org/c282ed_v2050-youthevent-bellevue-map.pdf",
+    "rows": 23,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-02/opportunitymapping.pdf",
+    "text": "opportunitymapping.pdf [PDF/3.1MB]",
+    "file": "data/gov_sources/region_psrc_org/88b4a3_opportunitymapping.pdf",
+    "rows": 31,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/map-v2050-opportunity-access_0.pdf",
+    "text": "map-v2050-opportunity-access_0.pdf [PDF/1.5MB]",
+    "file": "data/gov_sources/region_psrc_org/ddea66_map-v2050-opportunity-access_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/draft-vision2050-tracked-changes.pdf",
+    "text": "draft-vision2050-tracked-changes.pdf [PDF/16.2MB]",
+    "file": "data/gov_sources/region_psrc_org/af4973_draft-vision2050-tracked-changes.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.psrc.org/sites/default/files/2022-03/tiptcc2020-pccallforprojects-centersmap_final.pdf",
+    "text": "tiptcc2020-pccallforprojects-centersmap_final.pdf [PDF/558KB]",
+    "file": "data/gov_sources/region_psrc_org/792a17_tiptcc2020-pccallforprojects-centersmap_final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://psrc-psregcncl.hub.arcgis.com/": "Data Portal",
+   "https://psrc-psregcncl.hub.arcgis.com/search?groupIds=acfa746d62734c8e9240f21520fb5fdc": "Data Portal - Economy",
+   "https://psrc-psregcncl.hub.arcgis.com/search?q=employment": "Data Portal - Employment",
+   "https://psrc-psregcncl.hub.arcgis.com/search?groupIds=3b1364ae7ac7468eadc2a7b6f39890a0": "Data Portal - Equity",
+   "https://psrc-psregcncl.hub.arcgis.com/search?groupIds=52da73b8ef9c47e4ae419be544b7b7db": "Data Portal - Forecasts and Projections",
+   "https://psrc-psregcncl.hub.arcgis.com/documents/building-permits-2019/about": "Building Permits Database",
+   "https://psrc-psregcncl.hub.arcgis.com/search?groupIds=f3783a41aa504ae1ba05fcdd71ba1ffb": "Data Portal - Housing",
+   "https://psrc-psregcncl.hub.arcgis.com/search?groupIds=3c5434d2cb014412bcfc6393f8ba5ac5": "Data Portal - Land Use",
+   "https://psrc-psregcncl.hub.arcgis.com/search?groupIds=2a77a5c1e23a49a0953b8cf03187becf": "Data Portal - Census and Demographics",
+   "https://psrc-psregcncl.hub.arcgis.com/search?groupIds=78f16f9b7e4743c78dde2cd2fe45da13": "Data Portal - Transportation Data",
+   "https://experience.arcgis.com/experience/cf77f20a0e1042f9b2d1e329fff01837/page/Home%2FUser-Guide": "Transportation Visualization tool",
+   "https://experience.arcgis.com/experience/d8b2796b87724ccea2b4cf1d68f97f96": "PSRC’s Transportation System Visualization Tool",
+   "https://gis.psrc.org/portal/apps/storymaps/stories/fc920d71a70b4280960b256795745c1f": "Freight Story Map",
+   "https://gis.psrc.org/portal/apps/instant/portfolio/index.html?appid=937acc867cab4682b2968d3ae0c74fa5": "Puget Sound Regional Hazards Web Map",
+   "https://psregcncl.maps.arcgis.com/apps/webappviewer/index.html?id=4e1f07c343534e499d70f1686171d843": "Displacement Risk Mapping: Interactive Map",
+   "https://psregcncl.maps.arcgis.com/apps/MapSeries/index.html?appid=1769d732e3de4905ba0bf5ffaf75f602": "Displacement Risk Mapping: Interactive Report",
+   "https://psrc-psregcncl.hub.arcgis.com/datasets/displacement-risk-data/explore?location=47.507099%2C-121.980146%2C9.75": "PSRC Data Portal: Displacement Risk Data",
+   "https://psregcncl.maps.arcgis.com/apps/webappviewer/index.html?id=04178e4d496d4cd0ae87bb5182bdc94d": "Opportunity Mapping: Interactive Map",
+   "https://psrc-psregcncl.hub.arcgis.com/datasets/opportunity-index-equity-tracts/explore?location=47.507099%2C-121.980146%2C9.75": "PSRC Data Portal: Opportunity Index Equity Tracts",
+   "https://psrc-psregcncl.hub.arcgis.com/datasets/PSREGCNCL::income-restricted-housing-database-2021-by-county/explore": "county",
+   "https://psrc-psregcncl.hub.arcgis.com/datasets/PSREGCNCL::income-restricted-housing-database-2021-by-jurisdiction/explore": "jurisdiction",
+   "https://experience.arcgis.com/experience/faf7024f77b941d5923517b4e72d6e4e": "Project Map"
+  }
+ },
+ "region:hrtpo.org": {
+  "files": [],
+  "portals": {}
+ },
+ "region:metrocouncil.org": {
+  "files": [
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/MPOSCDistricts.pdf",
+    "text": "Metropolitan Parks and Open Space Commission Districts Map",
+    "file": "data/gov_sources/region_metrocouncil_org/ca91f5_MPOSCDistricts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/Council_Districts_8x11-2013.pdf",
+    "text": "2013 map of all Council districts (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/3555bc_Council_Districts_8x11-2013.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2001.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/f69e51_2023_20Council_20District_2001.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2001.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/793fa5_2013_20Council_20District_2001.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2002.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/66f1b7_2023_20Council_20District_2002.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2002.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/dbdc29_2013_20Council_20District_2002.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2003.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/610f1b_2023_20Council_20District_2003.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2003.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/948798_2013_20Council_20District_2003.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2004.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/09b588_2023_20Council_20District_2004.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2004.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/b917f6_2013_20Council_20District_2004.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2005.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/8ce54e_2023_20Council_20District_2005.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2005.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/95582c_2013_20Council_20District_2005.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2006.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/013496_2023_20Council_20District_2006.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2006.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/19972a_2013_20Council_20District_2006.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2007.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/8b1ec8_2023_20Council_20District_2007.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2007.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/532f8f_2013_20Council_20District_2007.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2008.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/883ecc_2023_20Council_20District_2008.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2008.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/065803_2013_20Council_20District_2008.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2009.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/766ef0_2023_20Council_20District_2009.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2009.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/9b95d3_2013_20Council_20District_2009.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2010.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/50c061_2023_20Council_20District_2010.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2010.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/a202dd_2013_20Council_20District_2010.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2011.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/d3edda_2023_20Council_20District_2011.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2011.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/3527ab_2013_20Council_20District_2011.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2012.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/02c6ca_2023_20Council_20District_2012.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2012.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/3ebc20_2013_20Council_20District_2012.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2013.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/b908aa_2023_20Council_20District_2013.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2013.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/8c31d9_2013_20Council_20District_2013.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2014.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/79dd58_2023_20Council_20District_2014.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2014.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/e387f2_2013_20Council_20District_2014.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2015.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/f9e2da_2023_20Council_20District_2015.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2015.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/25d5e8_2013_20Council_20District_2015.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://giswebsite.metc.state.mn.us/mapgallery/pdfs/2023%20Council%20District%2016.pdf",
+    "text": "Print-quality 8.5 x 11 inch map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/c799dc_2023_20Council_20District_2016.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://giswebsite.metc.state.mn.us/mapgallery/pdfs/2013%20Council%20District%2016.pdf",
+    "text": "2013 map (PDF)",
+    "file": "data/gov_sources/region_metrocouncil_org/b956ad_2013_20Council_20District_2016.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://metrocouncil.org/Data-and-Maps/MetroGIS.aspx": "MetroGIS",
+   "https://gisdata.mn.gov/": "Minnesota Geospatial Commons",
+   "https://arcgis.metc.state.mn.us/portal/apps/experiencebuilder/experience/?id=aa3589ccea7c4a0bb11f832df0189403": "View the map and learn more about transportation in the region.",
+   "http://www.metrogis.org": "MetroGIS Website",
+   "https://www.metrogis.org/get-data/geospatial-commons.aspx": "Data Finder Website",
+   "https://gisdata.mn.gov/organization/us-mn-state-metc": "Download GIS Data",
+   "https://arcgis.metc.state.mn.us/portal/apps/experiencebuilder/experience?id=517c32d0528d40e190d55d8a7344ba74": "Development Trends Along Transit",
+   "https://arcgis.metc.state.mn.us/portal/apps/experiencebuilder/experience?id=1875fd16ce62494e8fedf13a8b25b456": "Public Parcels - Metro Communities",
+   "https://arcgis.metc.state.mn.us/portal/apps/experiencebuilder/experience/?id=aba8be3760ff4ba688dbb1d123dabb33": "Regional Solicitations Projects Map",
+   "https://arcgis.metc.state.mn.us/portal/apps/experiencebuilder/experience/?id=c86d09aa00dc435c9f7fff3c74e783ba": "Functional Classification",
+   "https://arcgis.metc.state.mn.us/portal/apps/experiencebuilder/experience/?id=59c7ec91b917458197e318c4a8873e37": "Localized Flooding",
+   "https://arcgis.metc.state.mn.us/portal/apps/experiencebuilder/experience/?id=0e9f54914498477c898a6d1c0b33d5a6": "Extreme Heat Map",
+   "https://storymaps.arcgis.com/collections/ab378e80eba042bb9239d5e1771a7acd": "MCES Interceptor Projects",
+   "https://metrocouncil.maps.arcgis.com/apps/webappviewer/index.html?id=0b0735b3407f49ceb347fc30c9b83bda": "Regional Bicycle transportation network interactive map",
+   "https://metrocouncil.maps.arcgis.com/apps/webappviewer/index.html?id=b71e53bedc4a4309abc707bee02bdab1": "Regional Bicycle Barrier Interactive Map",
+   "https://arcgis.metc.state.mn.us/portal/apps/storymaps/stories/7d10a96a41f64044a513f99b507fc5e0": "Read the story collection about outdoor experiences",
+   "https://gisdata.mn.gov/dataset?q=census+data&organization=us-mn-state-metc&sort=metadata_modified+desc&ext_bbox=&ext_prev_extent=-105.46875%2C39.90973623453719%2C-80.5078125%2C52.05249047600099&page=1": "MN GEOSPATIAL WEBSITE >>",
+   "https://metrocouncil.maps.arcgis.com/apps/webappviewer/index.html?id=100fa3012dcc4e288a74cbf4d95027bf": "Localized Flood Map",
+   "https://mndot.maps.arcgis.com/apps/View/index.html?appid=1cc55aa66d3844a98402c84673f73d14": "MnDOT’s PAWS tool",
+   "https://arcgis.metc.state.mn.us/portal/apps/experiencebuilder/experience/?id=25db6cda755c4a4d9d2719339e42939b": "Transportation Improvement Program interactive map .",
+   "https://arcgis.metc.state.mn.us/portal/apps/experiencebuilder/experience/?id=03cdb8e6a8e74c6eb530965b35208e76": "Data Atlas",
+   "https://arcgis.metc.state.mn.us/portal/apps/dashboards/1a1cf28477b14acd941820a1d4b6e097": "Open the map and explore.",
+   "https://gis.data.mn.gov/maps/1999e79a3252476b8e0419b87b6a3619/about": "Minnesota Geospatial Commons",
+   "https://arcgis.metc.state.mn.us/portal/apps/experiencebuilder/experience/?id=7779371609e44e6697a1c8e40683697e": "GO TO LOCAL HOUSING DATA TOOL >>",
+   "https://gisdata.mn.gov/dataset/us-mn-state-metc-econ-residential-building-permts": "MN GEOSPATIAL WEBSITE >>",
+   "https://gis.data.mn.gov/search?q=land%20use&source=Metropolitan%2520Council": "MN GEOSPATIAL WEBSITE >>",
+   "https://gisdata.mn.gov/dataset/us-mn-state-metc-society-equity-considerations": "MN Geospatial Commons"
+  }
+ },
+ "capital:sacramento.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "capital:dsm.city": {
+  "files": [
+   {
+    "url": "https://maps.dsm.city/docs/maps/citystreetsbig.pdf?pdf=Streets%20(Large)",
+    "text": "34x44",
+    "file": "data/gov_sources/capital_dsm_city/3c8c9f_citystreetsbig.pdf",
+    "rows": 81,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/citystreetsbiglowBW.pdf?pdf=Streets%20(Large%20-%20Black%2FWhite)&t=1650479971623",
+    "text": "34x44 -B/W",
+    "file": "data/gov_sources/capital_dsm_city/7ae6d4_citystreetsbiglowBW.pdf",
+    "rows": 73,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/citystreetssmall.pdf?pdf=Streets%20(Letter%20Size)&t=1650479971623",
+    "text": "8.5x11-City",
+    "file": "data/gov_sources/capital_dsm_city/129aa7_citystreetssmall.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/DesMoinesDowntown.pdf?pdf=Downtown%20(Large)&t=1650545482810",
+    "text": "8.5x11-Downtown",
+    "file": "data/gov_sources/capital_dsm_city/8c994f_DesMoinesDowntown.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/CityStreetMapBook.pdf?pdf=Mapbook&t=1650479971623",
+    "text": "8.5x11-Map Book",
+    "file": "data/gov_sources/capital_dsm_city/227b99_CityStreetMapBook.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/PublicOffices.pdf?pdf=Public%20Offices&t=1655229354411",
+    "text": "8.5x11",
+    "file": "data/gov_sources/capital_dsm_city/f78cde_PublicOffices.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/DesMoinesMetroMap.pdf?pdf=56x42&t=1735190706578",
+    "text": "56x42",
+    "file": "data/gov_sources/capital_dsm_city/3ee86c_DesMoinesMetroMap.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/SnowRoutes.pdf?pdf=Snow%20Routes&t=1655229354411",
+    "text": "34x44",
+    "file": "data/gov_sources/capital_dsm_city/8210b8_SnowRoutes.pdf",
+    "rows": 76,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/DSMTruckRoutes.pdf?pdf=Truck%20Routes&t=1655229354411",
+    "text": "8.5x11-City",
+    "file": "data/gov_sources/capital_dsm_city/138b87_DSMTruckRoutes.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/DSMTruckRoutesDowntown.pdf?pdf=Truck%20Routes&t=1655229354411",
+    "text": "8.5x11-Downtown",
+    "file": "data/gov_sources/capital_dsm_city/1434e4_DSMTruckRoutesDowntown.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/WardsSmall.pdf?pdf=City%20Council%20Wards&t=1655229354412",
+    "text": "8.5x11",
+    "file": "data/gov_sources/capital_dsm_city/c8e697_WardsSmall.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/WardsLarge.pdf?pdf=City%20Council%20Wards%20-%20Large&t=1655229354412",
+    "text": "34x44",
+    "file": "data/gov_sources/capital_dsm_city/589a44_WardsLarge.pdf",
+    "rows": 79,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/PrecinctsSmall.pdf?pdf=Voting%20Precincts&t=1655229354412",
+    "text": "8.5x11",
+    "file": "data/gov_sources/capital_dsm_city/96b17d_PrecinctsSmall.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/ZipCodes.pdf?pdf=Zip%20Codes&t=1650545482810",
+    "text": "8.5x11",
+    "file": "data/gov_sources/capital_dsm_city/ac1262_ZipCodes.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/mobilevendorzones.pdf?pdf=Mobile%20Vendor%20Parking%20Zones&t=1655229354411",
+    "text": "8.5x11",
+    "file": "data/gov_sources/capital_dsm_city/eb242c_mobilevendorzones.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/NBSDOfficersMap.pdf?pdf=34x44&t=1735190706578",
+    "text": "34x44",
+    "file": "data/gov_sources/capital_dsm_city/df366a_NBSDOfficersMap.pdf",
+    "rows": 78,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Neighborhoods.pdf?pdf=Neighborhoods%20-%20Large&t=1655229354412",
+    "text": "34x44",
+    "file": "data/gov_sources/capital_dsm_city/ae5016_Neighborhoods.pdf",
+    "rows": 79,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/NeighborhoodsSmall.pdf?pdf=Neighborhoods&t=1655229354412",
+    "text": "8.5x11",
+    "file": "data/gov_sources/capital_dsm_city/9f8edb_NeighborhoodsSmall.pdf",
+    "rows": 38,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/NIDInspectorsMap.pdf?pdf=Neighborhood%20Inspectors&t=1655229354411",
+    "text": "34x44",
+    "file": "data/gov_sources/capital_dsm_city/7667cd_NIDInspectorsMap.pdf",
+    "rows": 82,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/NID_Inspectors_mapbook.pdf?pdf=Neighborhood%20Inspectors%20-%20Mapbook&t=1650545482810",
+    "text": "8.5x11 Map Book",
+    "file": "data/gov_sources/capital_dsm_city/a39b9a_NID_Inspectors_mapbook.pdf",
+    "rows": 31,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/citystreetssmall_CountySupervisor.pdf?pdf=County%20Supervisor%20Districts&t=1655229354412",
+    "text": "8.5x11",
+    "file": "data/gov_sources/capital_dsm_city/5e4c0c_citystreetssmall_CountySupervisor.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/CDLandUseMap.pdf?pdf=Land%20Use&t=1655229354411",
+    "text": "34x44",
+    "file": "data/gov_sources/capital_dsm_city/303c15_CDLandUseMap.pdf",
+    "rows": 72,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/PlanDSMFutureLandUseLegend.pdf?pdf=Legend&t=1655229354411",
+    "text": "8.5x11 Legend",
+    "file": "data/gov_sources/capital_dsm_city/503b87_PlanDSMFutureLandUseLegend.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/ZoningInspectorsMap.pdf",
+    "text": "34x44",
+    "file": "data/gov_sources/capital_dsm_city/1392c0_ZoningInspectorsMap.pdf",
+    "rows": 72,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/ZoningMap.pdf?pdf=Zoning&t=1655229354411",
+    "text": "34x44",
+    "file": "data/gov_sources/capital_dsm_city/ae77aa_ZoningMap.pdf",
+    "rows": 85,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Glendale_Cemetery.pdf?pdf=Glendale%20Cemetery&t=1650545482810",
+    "text": "Glendale",
+    "file": "data/gov_sources/capital_dsm_city/b9832b_Glendale_Cemetery.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Laurel%20Hill%20Cemetery.pdf?pdf=Laurel%20Hill%20Cemetery&t=1650545482810",
+    "text": "Laurel Hill",
+    "file": "data/gov_sources/capital_dsm_city/892e20_Laurel_20Hill_20Cemetery.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Woodland-St%20Ambrose%20Cemetery.pdf?pdf=Woodland-St%20Ambrose%20Cemetery&t=1650545482810",
+    "text": "Woodland-St Ambrose",
+    "file": "data/gov_sources/capital_dsm_city/3f446b_Woodland-St_20Ambrose_20Cemetery.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/AH%20Blank%20GC.pdf?pdf=Blank%20Golf%20Course&t=1650545482810",
+    "text": "Blank",
+    "file": "data/gov_sources/capital_dsm_city/46cab2_AH_20Blank_20GC.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Grandview%20Golf%20Course.pdf?pdf=Grandview%20Golf%20Course&t=1650545482810",
+    "text": "Grandview",
+    "file": "data/gov_sources/capital_dsm_city/046259_Grandview_20Golf_20Course.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Waveland%20Golf%20Course.pdf?pdf=Waveland%20Golf%20Course&t=1655229354412",
+    "text": "Waveland",
+    "file": "data/gov_sources/capital_dsm_city/82214a_Waveland_20Golf_20Course.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Parks Recreation/Parks/Trails/CDM Bicycle Maintenance Stations_20241031 Update - Hyperlinked.pdf?t=202508221048430",
+    "text": "October 2024 City of Des Moines Bicycle Maintenance Station Map",
+    "file": "data/gov_sources/capital_dsm_city/ddf91d_CDM_Bicycle_Maintenance_Stations_20241031_Update_-_Hyperlinked.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Parks Recreation/Parks/Trails/July 2026 CDM Trail and Sidepath Impact Permit Application.pdf?t=202608071616020",
+    "text": "Trail and Sidepath Closure Permit Application",
+    "file": "data/gov_sources/capital_dsm_city/99d835_July_2026_CDM_Trail_and_Sidepath_Impact_Permit_Application.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Parks Recreation/Parks/Trails/Link 3 bike ped.pdf?t=202508221049010",
+    "text": "Bike Ped Survey Responses",
+    "file": "data/gov_sources/capital_dsm_city/a52227_Link_3_bike_ped.pdf",
+    "rows": 405,
+    "bike_rows": 35
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Development Services/Planning Urban Design/Resources/Architectural Guidelines for Building Rehabiliation.pdf?t=202604061648120",
+    "text": "Architectural Guidelines for Local Historic Districts - Building Rehab",
+    "file": "data/gov_sources/capital_dsm_city/60a9b8_Architectural_Guidelines_for_Building_Rehabiliation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Development Services/Planning Urban Design/Resources/Architectural Guidelines for New Construction.pdf?t=202604061648430",
+    "text": "Architectural Guidelines for Local Historic Districts - New Construction",
+    "file": "data/gov_sources/capital_dsm_city/96dfae_Architectural_Guidelines_for_New_Construction.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Development Services/Planning Urban Design/Resources/Fence Guidelines.pdf?t=202604061649160",
+    "text": "Fence Guidelines for Local Historic Districts",
+    "file": "data/gov_sources/capital_dsm_city/63ba02_Fence_Guidelines.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/City Clerk/Parking Tickets/Notice-ClassActionLawsuit-CVCV053512.pdf?t=202508221049070",
+    "text": "VIEW THE FULL NOTICE",
+    "file": "data/gov_sources/capital_dsm_city/36bc01_Notice-ClassActionLawsuit-CVCV053512.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Parks Recreation/Cemeteries/Cemetery Rules - Updated 2020.pdf?t=202604221034230",
+    "text": "Cemetery Rules",
+    "file": "data/gov_sources/capital_dsm_city/bf41c0_Cemetery_Rules_-_Updated_2020.pdf",
+    "rows": 36,
+    "bike_rows": 9
+   }
+  ],
+  "portals": {
+   "https://www.dsm.city/departments/information_technology/gis.php": "GIS",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=b659da7518264f88bacff015c9cc1750&extent=-93.739,41.4907,-93.4855,41.6177": "ESRI Community Maps",
+   "https://geodata.iowa.gov/": "State of Iowa Open Geospatial Data",
+   "https://dmampo.maps.arcgis.com/apps/webappviewer/index.html?id=c48776f60395490eb3029f5b29fc7b88": "Central Iowa Trail Map",
+   "https://experience.arcgis.com/experience/4941b89f4e7a4a82a93bf273e051465a/page/Crime-Map": "Explore the Map",
+   "https://desmoines.maps.arcgis.com/apps/webappviewer/index.html?id=993a292606d94a44b165e1a46319f7f5": "MAP: Street Improvements Plan and Forecast",
+   "https://www.linkedin.com/sharing/share-offsite/?url=http://www.dsm.city/departments/information_technology/gis.php": "share on linkedin",
+   "https://www.facebook.com/sharer/sharer.php?u=http://www.dsm.city/departments/information_technology/gis.php": "share on facebook",
+   "https://www.twitter.com/intent/tweet?url=http://www.dsm.city/departments/information_technology/gis.php": "share on twitter",
+   "https://www.reddit.com/submit?url=http://www.dsm.city/departments/information_technology/gis.php": "share on reddit",
+   "https://cms2.revize.com/revize/security/index.jsp?webspace=cityofdesmoines&filename=/departments/information_technology/gis.php": "Login",
+   "https://dmmdatahub-letrms.connect.socrata.com/?&redirectToSessionStoreKey=1789656035618": "Law Enforcement Response Map",
+   "https://dmmdatahub-letrms.connect.socrata.com/": "Explore the Map",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https://maps.dsm.city/host/rest/services/Hosted/Climate_and_Economic_Justice_Screening_Tool_View/FeatureServer": "disadvantaged and underserved communities in Des Moines",
+   "http://desmoines.maps.arcgis.com/apps/webappviewer/index.html?id=993a292606d94a44b165e1a46319f7f5": "20-year Street Maintenance Forecast",
+   "https://experience.arcgis.com/experience/5f4d92c0cdc7440289c040991a220006": "neighborhood streets"
+  }
+ },
+ "capital:jeffersoncitymo.gov": {
+  "files": [],
+  "portals": {
+   "https://midmogis-jeffcitymogis.hub.arcgis.com/": "JC DATA Hub",
+   "https://experience.arcgis.com/experience/22e8a240116e4350a3e73dd545a0392e/": "City Road Conditions",
+   "https://www.midmogis.org/portal/apps/View/index.html?appid=ef9ebfb8960a4ccaa8cdff778e5272ad": "Parking Zone Map"
+  }
+ },
+ "capital:columbus.gov": {
+  "files": [
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/biweekly-yard-waste-map-01.11.24.pdf",
+    "text": "Biweekly Yard Waste Map (PDF, 2MB)",
+    "file": "data/gov_sources/capital_columbus_gov/2347dd_biweekly-yard-waste-map-01.11.24.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/public-service/trash-recycling-amp-bulk-collection/find-my-collection-day/2025-rotating-holiday-calendar.pdf",
+    "text": "2025 Rotating Holiday Calendar (PDF, 98KB)",
+    "file": "data/gov_sources/capital_columbus_gov/78bc71_2025-rotating-holiday-calendar.pdf",
+    "rows": 63,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/public-service/trash-recycling-amp-bulk-collection/find-my-collection-day/2025-yard-waste-calendar.pdf",
+    "text": "2025 Yard Waste Calendar (PDF, 109KB)",
+    "file": "data/gov_sources/capital_columbus_gov/72877f_2025-yard-waste-calendar.pdf",
+    "rows": 70,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/find-my-collection-day/2026-rotating-holiday-calendar.pdf",
+    "text": "2026 Rotating Holiday Calendar (PDF, 67KB)",
+    "file": "data/gov_sources/capital_columbus_gov/1e5c3d_2026-rotating-holiday-calendar.pdf",
+    "rows": 63,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/find-my-collection-day/2026-yard-waste-calendar.pdf",
+    "text": "2026 Yard Waste Calendar (PDF, 51KB)",
+    "file": "data/gov_sources/capital_columbus_gov/eeba0d_2026-yard-waste-calendar.pdf",
+    "rows": 68,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/public-service-pdf/weeklyrecyclingfaq_updated-june-2023.docx.pdf",
+    "text": "Fact Sheet (PDF, 332KB)",
+    "file": "data/gov_sources/capital_columbus_gov/ffde51_weeklyrecyclingfaq_updated-june-2023.docx.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/weeklyrecyclingqa.pdf",
+    "text": "Q&A Document (PDF, 423KB)",
+    "file": "data/gov_sources/capital_columbus_gov/b05b18_weeklyrecyclingqa.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/utilities/zip-code-service-boundary.pdf",
+    "text": "Power Service Area Map(PDF, 445KB)",
+    "file": "data/gov_sources/capital_columbus_gov/c1cb7c_zip-code-service-boundary.pdf",
+    "rows": 26,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cota.com/timetables/cota-system-map.pdf",
+    "text": "System Map",
+    "file": "data/gov_sources/capital_columbus_gov/6ffbb3_cota-system-map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/services/residential-district-permit-parking-rules-and-regulations-promulgated-1-22-16.pdf",
+    "text": "Residential Permit Parking Rules and Regulations (PDF, 1MB)",
+    "file": "data/gov_sources/capital_columbus_gov/4ea797_residential-district-permit-parking-rules-and-regulations-promulgated-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/division-of-refuse-collection-rules-and-regulations.pdf",
+    "text": "Division of Refuse Collection Rules and Regulations (PDF, 934KB)",
+    "file": "data/gov_sources/capital_columbus_gov/a9d46b_division-of-refuse-collection-rules-and-regulations.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/resident’s-guide-to-refuse-services-5-26-26.pdf",
+    "text": "Resident's Guide to Collection Services (PDF, 884KB)",
+    "file": "data/gov_sources/capital_columbus_gov/af4b27_resident_s-guide-to-refuse-services-5-26-26.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/title-13-revised-9-16-25.pdf",
+    "text": "Refuse Collection City Code Title 13 (PDF, 239KB)",
+    "file": "data/gov_sources/capital_columbus_gov/9d2a49_title-13-revised-9-16-25.pdf",
+    "rows": 41,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/residentresponsibilities_refuse-v1.pdf",
+    "text": "Resident Responsibilities (PDF, 479KB)",
+    "file": "data/gov_sources/capital_columbus_gov/02a0a7_residentresponsibilities_refuse-v1.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/fact-sheet-illegal-dumping-1yr-anniv-v3.pdf",
+    "text": "Clean Neighborhoods Initiative (PDF, 308KB)",
+    "file": "data/gov_sources/capital_columbus_gov/2a7c02_fact-sheet-illegal-dumping-1yr-anniv-v3.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/history-of-the-division-of-refuse-collection-09-30-11.pdf",
+    "text": "Refuse Collection History (PDF, 2MB)",
+    "file": "data/gov_sources/capital_columbus_gov/7b1346_history-of-the-division-of-refuse-collection-09-30-11.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/right-of-way-permit/how-to-apply-for-a-903-excavation-permit-not-routed.pdf",
+    "text": "Online Permit Application – How to Guide (w/o Plan Submission) (PDF, 3MB)",
+    "file": "data/gov_sources/capital_columbus_gov/02e589_how-to-apply-for-a-903-excavation-permit-not-routed.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/right-of-way-permit/how-to-apply-for-a-903-excavation-permit-routed.pdf",
+    "text": "Online Permit Application – How to Guide (PDF, 3MB)",
+    "file": "data/gov_sources/capital_columbus_gov/8b0121_how-to-apply-for-a-903-excavation-permit-routed.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/right-of-way-permit/on-street-parking-out-of-service-policy-and-procedure-final-8.15.2022-signed.pdf",
+    "text": "On-Street Parking Out of Service Policy (PDF, 246KB)",
+    "file": "data/gov_sources/capital_columbus_gov/ba8166_on-street-parking-out-of-service-policy-and-procedure-final-8.15.2022-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/mobility/cbus-slow-zones-pilot-study-area-accessible.pdf",
+    "text": "Slow Zones Study Area Map (PDF, 1MB)",
+    "file": "data/gov_sources/capital_columbus_gov/3caa6e_cbus-slow-zones-pilot-study-area-accessible.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/mobility/indianola/parking-utilization-memo-accessible.pdf",
+    "text": "Parking Utilization Memo (PDF, 4MB)",
+    "file": "data/gov_sources/capital_columbus_gov/ffe733_parking-utilization-memo-accessible.pdf",
+    "rows": 42,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/mobility/rtmc/rtmc-appendix-d-accessible.pdf",
+    "text": "Appendix D – Transit Routing Data (PDF, 912KB)",
+    "file": "data/gov_sources/capital_columbus_gov/6e2cef_rtmc-appendix-d-accessible.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/mobility/eastmoor/eastmoor-study-area-map-apr-2022.pdf",
+    "text": "(PDF, 1MB)",
+    "file": "data/gov_sources/capital_columbus_gov/790f19_eastmoor-study-area-map-apr-2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/mobility/eastmoor/eastmoor-study-area-map-apr-2022-v-accessible.pdf",
+    "text": "Study Area Map (PDF, 1MB)",
+    "file": "data/gov_sources/capital_columbus_gov/2f309f_eastmoor-study-area-map-apr-2022-v-accessible.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/2025-rotating-holiday-calendar.pdf",
+    "text": "2025 Rotating Holiday Calendar (PDF, 98KB)",
+    "file": "data/gov_sources/capital_columbus_gov/c34e34_2025-rotating-holiday-calendar.pdf",
+    "rows": 63,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/2025-yard-waste-calendar.pdf",
+    "text": "2025 Yard Waste Calendar (PDF, 109KB)",
+    "file": "data/gov_sources/capital_columbus_gov/06dbff_2025-yard-waste-calendar.pdf",
+    "rows": 70,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/public-service/parking-service/paymentplan_3.11.2026.pdf",
+    "text": "payment plans (PDF, 160KB)",
+    "file": "data/gov_sources/capital_columbus_gov/579b38_paymentplan_3.11.2026.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/public-service/parking-service/rules_chapter2150_3.26.2026.pdf",
+    "text": "2150 (PDF, 4MB)",
+    "file": "data/gov_sources/capital_columbus_gov/713337_rules_chapter2150_3.26.2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/4/public-service/parking-service/program_downtown_discountparking-info.pdf",
+    "text": "CLICK HERE FOR INFORMATION (PDF, 135KB)",
+    "file": "data/gov_sources/capital_columbus_gov/75593a_program_downtown_discountparking-info.pdf",
+    "rows": 4,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/celebrateone/c1-zip-code-maps.pdf",
+    "text": "Map of CelebrateOne priority ZIP codes (PDF, 51KB)",
+    "file": "data/gov_sources/capital_columbus_gov/2368b5_c1-zip-code-maps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/bzs/boards-and-commissions/planning-boards-and-commissions/final-historic-staff-approval-list.pdf",
+    "text": "Staff Approval List (PDF, 164KB)",
+    "file": "data/gov_sources/capital_columbus_gov/1d91ad_final-historic-staff-approval-list.pdf",
+    "rows": 61,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/utilities/history/watershedmap-with-roads.pdf",
+    "text": "Map of the Central Ohio Watershed (PDF, 2MB)",
+    "file": "data/gov_sources/capital_columbus_gov/7fe2c7_watershedmap-with-roads.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_ch_3.10.2026.pdf",
+    "text": "CH Permit Zone (PDF, 56KB)",
+    "file": "data/gov_sources/capital_columbus_gov/ea63c8_permit_ch_3.10.2026.pdf",
+    "rows": 17,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_ef_3.10.2026.pdf",
+    "text": "EF Permit Zone (PDF, 22KB)",
+    "file": "data/gov_sources/capital_columbus_gov/bfdc83_permit_ef_3.10.2026.pdf",
+    "rows": 17,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_lp_3.10.2026.pdf",
+    "text": "LP Permit Zone (PDF, 19KB)",
+    "file": "data/gov_sources/capital_columbus_gov/d38b4f_permit_lp_3.10.2026.pdf",
+    "rows": 13,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_sn_zones_3.10.2026.pdf",
+    "text": "SNA/SNB/SNC/SND/SNE/VG Permit Zones (PDF, 78KB)",
+    "file": "data/gov_sources/capital_columbus_gov/5f15c6_permit_sn_zones_3.10.2026.pdf",
+    "rows": 22,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_uda_o_h_3.10.2026.pdf",
+    "text": "UDA/O/H Permit Zones (PDF, 22KB)",
+    "file": "data/gov_sources/capital_columbus_gov/15c9a4_permit_uda_o_h_3.10.2026.pdf",
+    "rows": 17,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/4/public-service/parking-service/permit_udb_udc_3.25.2026.pdf",
+    "text": "UDB/UDC Permit Zones (PDF, 77KB)",
+    "file": "data/gov_sources/capital_columbus_gov/c9200f_permit_udb_udc_3.25.2026.pdf",
+    "rows": 20,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_hw_3.10.2026.pdf",
+    "text": "HW Permit Zone (PDF, 77KB)",
+    "file": "data/gov_sources/capital_columbus_gov/c0636d_permit_hw_3.10.2026.pdf",
+    "rows": 21,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/public-service/parking-service/permit_gv_3.10.2026.pdf",
+    "text": "GV Permit Zone (PDF, 77KB)",
+    "file": "data/gov_sources/capital_columbus_gov/3e198e_permit_gv_3.10.2026.pdf",
+    "rows": 21,
+    "bike_rows": 4
+   }
+  ],
+  "portals": {
+   "https://opendata.columbus.gov/": "Download GIS Data",
+   "https://columbus.maps.arcgis.com/apps/webappviewer/index.html?id=e9f7276d636f4fe5aeda4742ad8714f4": "Permit Eligibility Map",
+   "https://columbus.maps.arcgis.com/apps/dashboards/2d54927f848e4877b500c5dc21d45094": "Illegal Dumping Collection Dashboard",
+   "https://gis.columbus.gov/PowerOutage/": "Columbus Power Outage Map (gis.columbus.gov/PowerOutage)",
+   "https://columbus.maps.arcgis.com/apps/instant/nearby/index.html?appid=0e1d1f32f1bf44d282be521e13c10984&distance=0": "Power Service Area Searchable Map",
+   "https://zone-in-columbus.hub.arcgis.com/": "Zone In website",
+   "https://columbus.maps.arcgis.com/apps/webappviewer/index.html?id=393274cc411e4dfb89a85edc2f2303d0": "map",
+   "https://columbus.maps.arcgis.com/apps/webappviewer/index.html?id=d00046725fd543e69b81926323f4c18a": "proposed and existing small cell antenna locations",
+   "https://columbus.maps.arcgis.com/apps/webappviewer/index.html?id=6f1e4522780e414d80b8ac63c848b14c": "Columbus corporate boundary",
+   "https://experience.arcgis.com/experience/648adcf8a293489b9ec3f5017e7c9d2b": "On-Street Parking Map",
+   "https://experience.arcgis.com/experience/648adcf8a293489b9ec3f5017e7c9d2b/page/Permit-Eligibility": "Permit Eligibility Map",
+   "https://experience.arcgis.com/experience/648adcf8a293489b9ec3f5017e7c9d2b/page/Page/?views=Parking-and-Mobility": "On-Street Parking Map",
+   "https://healthcare-access-columbus.opendata.arcgis.com/": "",
+   "https://gis.columbus.gov/parkingcalculator/": "Parking Calculator for Lost Meter Revenue",
+   "https://storymaps.arcgis.com/stories/b906b30ad9a34fde99e7571f8a963936": "City of Columbus Art, Monuments and Memorials Collection",
+   "https://urldefense.com/v3/__https://columbus.maps.arcgis.com/apps/mapviewer/index.html?webmap=ae8984e0b9db4a9d88c8bc85b9d37e01__;!!Ibw6q7MDdYV6!W6VW_f_RNdCpqYYIMm-ja-FjA7lK-ENOz2YhmFR2Bq93SJ6M-OY1cxWBkGPhTQwE7jJefWIm0nzKF97jLTXsUQ$": "Amendment Webmap",
+   "https://storymaps.arcgis.com/stories/5a403ce464f049b3a71fa58a28d6934f": "Life Expectancy in Columbus",
+   "https://cfcap-columbus.hub.arcgis.com/pages/community-data-dashboards": "Overdose Surveillance",
+   "https://cfcap-columbus.hub.arcgis.com/pages/1b35bb9bdb914ac8a532c3885340e7c2": "Columbus & Franklin County Addiction Plan",
+   "http://gis.columbus.gov/zoning/": "Online Zoning Map",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Historic1899Plates/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Historic1910Plates/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Historic1920Plates/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery1995/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery1997_Delaware/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2000/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2002_Delaware/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2004/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2007/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2009/MapServer&source=sd": "ArcGIS Online Map Viewer"
+  }
+ },
+ "capital:montpelier-vt.org": {
+  "files": [],
+  "portals": {}
+ },
+ "parks:parks.ca.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "parks:ksoutdoors.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "parks:nhstateparks.org": {
+  "files": [
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Find%20Parks%20and%20Trails/26_NHSP_MapAndGuide_v7-2026.pdf",
+    "text": "Download Our NH State Parks Map & Guide",
+    "file": "data/gov_sources/parks_nhstateparks_org/552a63_26_NHSP_MapAndGuide_v7-2026.pdf",
+    "rows": 64,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Maps/FNSP-New-Falling-Waters-Trail-Map-combined.pdf",
+    "text": "Map of relocation of the Falling Waters Trail on Franconia Ridge.",
+    "file": "data/gov_sources/parks_nhstateparks_org/86a919_FNSP-New-Falling-Waters-Trail-Map-combined.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Historic%20Sites/NH-State-Parks_Historic-Context-Study_1945-1975_1.pdf",
+    "text": "New Hampshire State Parks Mid-Century Modern (1945-1975) Historic Context Study (21 MB)",
+    "file": "data/gov_sources/parks_nhstateparks_org/d1b1c1_NH-State-Parks_Historic-Context-Study_1945-1975_1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Legislation/2025-49-Adopted-Text-Ncr-730.pdf",
+    "text": "Ncr 731.32 Bicycle Use",
+    "file": "data/gov_sources/parks_nhstateparks_org/b9fe8f_2025-49-Adopted-Text-Ncr-730.pdf",
+    "rows": 30,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/Hopkinton-Everett_Trails-Map.pdf",
+    "text": "Hopkinton-Everett Reservoir Trail System",
+    "file": "data/gov_sources/parks_nhstateparks_org/af6d7b_Hopkinton-Everett_Trails-Map.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Historic%20Sites/NH-State-Parks_Historic-Context-Study_1945-1975_1.pdf",
+    "text": "New Hampshire State Parks Mid-Century Modern (1945-1975) Historic Context Study (21 MB)",
+    "file": "data/gov_sources/parks_nhstateparks_org/6f15f0_NH-State-Parks_Historic-Context-Study_1945-1975_1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/getmedia/728b8051-572f-4cff-b0dc-f28e5fa1371b/Groomer-Info-Sheet.pdf",
+    "text": "Trail Grooming Tips",
+    "file": "data/gov_sources/parks_nhstateparks_org/05e838_Groomer-Info-Sheet.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/Landowner-Partnership-Brochure-2023.pdf",
+    "text": "respect landowners’",
+    "file": "data/gov_sources/parks_nhstateparks_org/8c694d_Landowner-Partnership-Brochure-2023.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://nhstateparks.org/getmedia/69e1ff56-15bc-494b-909b-668fabc39db6/NH_Snowmobile-Trail_Signing-Guidelines.pdf",
+    "text": "Trail Signing Guidelines",
+    "file": "data/gov_sources/parks_nhstateparks_org/266bf6_NH_Snowmobile-Trail_Signing-Guidelines.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/OHRV-Trail-Signing-Guidelines.pdf",
+    "text": "Trail Signing Guidelines",
+    "file": "data/gov_sources/parks_nhstateparks_org/9ee5cf_OHRV-Trail-Signing-Guidelines.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Legislation/2025-49-Adopted-Text-Ncr-730.pdf",
+    "text": "Ncr 731.32 Bicycle Use",
+    "file": "data/gov_sources/parks_nhstateparks_org/e73127_2025-49-Adopted-Text-Ncr-730.pdf",
+    "rows": 30,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/Hopkinton-Everett_Trails-Map.pdf",
+    "text": "Hopkinton-Everett Reservoir Trail System",
+    "file": "data/gov_sources/parks_nhstateparks_org/f9d32d_Hopkinton-Everett_Trails-Map.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/OHRV-Trail-Signing-Guidelines.pdf",
+    "text": "Trail Signing Guidelines",
+    "file": "data/gov_sources/parks_nhstateparks_org/fa4f74_OHRV-Trail-Signing-Guidelines.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/SeacoastParkingSeasonPassCombined_2024.pdf",
+    "text": "Seacoast Parking Pass Redemption Instructions & Park Locations",
+    "file": "data/gov_sources/parks_nhstateparks_org/e690eb_SeacoastParkingSeasonPassCombined_2024.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/2023_seacoast_parking_program.pdf",
+    "text": "Download User Info Sheet",
+    "file": "data/gov_sources/parks_nhstateparks_org/fd5463_2023_seacoast_parking_program.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Parking%20Policies/Hampton-Winter-Parking-Public-Policy-v4-11-5-2026.pdf",
+    "text": "Hampton Winter Public Parking Policy",
+    "file": "data/gov_sources/parks_nhstateparks_org/e95dc0_Hampton-Winter-Parking-Public-Policy-v4-11-5-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/employment/Supervisor-of-Construction-Equipment-Operators-Trails-8-2026.pdf",
+    "text": "Full Job Description and Information",
+    "file": "data/gov_sources/parks_nhstateparks_org/3c85f8_Supervisor-of-Construction-Equipment-Operators-Trails-8-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/About%20Us/New-Hampshire-State-Parks,-Historic-Sites,-and-Wayside-Picnic-Areas-1967.pdf",
+    "text": "1967 Report About State Park System",
+    "file": "data/gov_sources/parks_nhstateparks_org/54063e_New-Hampshire-State-Parks_-Historic-Sites_-and-Wayside-Picnic-Areas-19",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/BLANK-P-37-Trail-Maintenance-Agreement-Snowmobile-Club_6-2025.pdf",
+    "text": "BLANK Snowmobile Trails Maintenance Agreement",
+    "file": "data/gov_sources/parks_nhstateparks_org/a9e1f3_BLANK-P-37-Trail-Maintenance-Agreement-Snowmobile-Club_6-2025.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/End-of-Year-Annual-Work-Plan-Form-12-2025.pdf",
+    "text": "End of Year Annual Work Plan Reporting Form",
+    "file": "data/gov_sources/parks_nhstateparks_org/0f3154_End-of-Year-Annual-Work-Plan-Form-12-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/MAP-Trails-Districts-revised-2021-11-8.pdf",
+    "text": "Map of Trails Bureau District Supervisor Coverage",
+    "file": "data/gov_sources/parks_nhstateparks_org/4ee08a_MAP-Trails-Districts-revised-2021-11-8.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/2025-Trails-Bureau-SUP-Flow-Chart.pdf",
+    "text": "SUP Flow Chart.",
+    "file": "data/gov_sources/parks_nhstateparks_org/3d2fbb_2025-Trails-Bureau-SUP-Flow-Chart.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/Rail-Trail-Guidelines-for-Trail-Signing-on-state-owned-rail-trails-Version-1-1-2-2026-sm.pdf",
+    "text": "Rail Trail Guidelines for Trail Signing on State Owned Rail Trails",
+    "file": "data/gov_sources/parks_nhstateparks_org/fde2f3_Rail-Trail-Guidelines-for-Trail-Signing-on-state-owned-rail-trails-Ver",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/2020a-DNCR-Department-Chainsaw-Policy-14.pdf",
+    "text": "DNCR Chainsaw Policy",
+    "file": "data/gov_sources/parks_nhstateparks_org/d09771_2020a-DNCR-Department-Chainsaw-Policy-14.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/Bureau-of-Trails-Chainsaw-Safety-Handout.pdf",
+    "text": "Bureau of Trails Chainsaw Safety Handout",
+    "file": "data/gov_sources/parks_nhstateparks_org/ba05f8_Bureau-of-Trails-Chainsaw-Safety-Handout.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/Chainsaw-Safety-Tips_1.pdf",
+    "text": "Chainsaw Safety Tips",
+    "file": "data/gov_sources/parks_nhstateparks_org/2d8b51_Chainsaw-Safety-Tips_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/OHRV-SM-crossing-and-connector-permit-app-12-2024.pdf",
+    "text": "NH BOT OHRV & Snowmobile Crossing/Connector Application form",
+    "file": "data/gov_sources/parks_nhstateparks_org/2f4d9b_OHRV-SM-crossing-and-connector-permit-app-12-2024.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/2016-OHRV-Typical-Crossing.pdf",
+    "text": "OHRV Crossing typical",
+    "file": "data/gov_sources/parks_nhstateparks_org/1b88ca_2016-OHRV-Typical-Crossing.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/2016-5-5-OHRV-Crossing-Policy.pdf",
+    "text": "OHRV Crossing Policy",
+    "file": "data/gov_sources/parks_nhstateparks_org/e20beb_2016-5-5-OHRV-Crossing-Policy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/1973-SM-crossing-Policy.pdf",
+    "text": "Snowmobile Crossing Policy",
+    "file": "data/gov_sources/parks_nhstateparks_org/26dddb_1973-SM-crossing-Policy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/employment/Supervisor-of-Construction-Equipment-Operators-Trails-8-2026.pdf",
+    "text": "Full Job Description and Information",
+    "file": "data/gov_sources/parks_nhstateparks_org/89f583_Supervisor-of-Construction-Equipment-Operators-Trails-8-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/rail-trails/2022-NH-Rail-Trails-Pamphlet_1.pdf",
+    "text": "Recreational Rail Trail Pamphlet",
+    "file": "data/gov_sources/parks_nhstateparks_org/8f5193_2022-NH-Rail-Trails-Pamphlet_1.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/rail-trails/2022-rail-trails-plan.pdf",
+    "text": "NH DOT Rails Trails Plan from 2022 Archive",
+    "file": "data/gov_sources/parks_nhstateparks_org/96665f_2022-rail-trails-plan.pdf",
+    "rows": 178,
+    "bike_rows": 41
+   },
+   {
+    "url": "https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/employment/Supervisor-of-Construction-Equipment-Operators-Trails-8-2026.pdf",
+    "text": "Full Job Description and Information",
+    "file": "data/gov_sources/parks_nhstateparks_org/8c6e59_Supervisor-of-Construction-Equipment-Operators-Trails-8-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/RFPs/attachment_3_RFB-DNCR-CAP2610.pdf",
+    "text": "Mt. Washington SP Survey Map-2018",
+    "file": "data/gov_sources/parks_nhstateparks_org/0a6370_attachment_3_RFB-DNCR-CAP2610.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/Trails%20Bureau/Addendum-3-for-Bid-DNCR-2026-10-aka-TB-2601-WMNF-Construction.pdf",
+    "text": "Addendum #3 for TB-2601",
+    "file": "data/gov_sources/parks_nhstateparks_org/25e884_Addendum-3-for-Bid-DNCR-2026-10-aka-TB-2601-WMNF-Construction.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/RFPs/OPS2517PawuckawayPumpStationProjectManual.pdf",
+    "text": "OPS-2517 Pawtuckaway Pump Station Project Manual",
+    "file": "data/gov_sources/parks_nhstateparks_org/d19146_OPS2517PawuckawayPumpStationProjectManual.pdf",
+    "rows": 28,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/RFPs/PAWTUCKAWAY-PUMP-STATION-P1.PDF",
+    "text": "OPS-2517 Pawtuckaway Pump Station Specifications I",
+    "file": "data/gov_sources/parks_nhstateparks_org/8ac38b_PAWTUCKAWAY-PUMP-STATION-P1.PDF",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/RFPs/PAWTUCKAWAY-PUMP-STATION-A1.PDF",
+    "text": "OPS-2517 Pawtuckaway Pump Station Specifications IA",
+    "file": "data/gov_sources/parks_nhstateparks_org/5d3a7e_PAWTUCKAWAY-PUMP-STATION-A1.PDF",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/SCA%20Blog%20docs/DPP-Blog_-Franconia-Cannon-Mt-hike_7-10-26.pdf",
+    "text": "An Unforgettable Hike: Cannon Mountain Via Hi-Cannon Trail",
+    "file": "data/gov_sources/parks_nhstateparks_org/4a77a3_DPP-Blog_-Franconia-Cannon-Mt-hike_7-10-26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://nhfg.maps.arcgis.com/apps/webappviewer/index.html?id=2243091f322449819c244c0c3b2f3f43": "Access Sites to Public Waters",
+   "https://www.arcgis.com/apps/dashboards/8d84a6b03acb4efaab571b222c78447b": "Beach Advisories",
+   "https://experience.arcgis.com/experience/180c28fa3a4c4371a9771d999454e8c4/": "Online Beach Advisories Postings Map",
+   "https://experience.arcgis.com/experience/b214976727814959a84f12768747df02": ""
+  }
+ },
+ "parks:southcarolinaparks.com": {
+  "files": [
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/sohstjfuoz/CroftTrailMap.pdf?u=sgt8lu",
+    "text": "Croft Trail Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/725ad5_CroftTrailMap.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/lripm0ydb8/PO_Trail%20Map%2017.pdf?u=sgt8lu",
+    "text": "Trails",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/ae7882_PO_Trail_20Map_2017.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://southcarolinaparks.com/files/State Parks Files/Redcliffe Plantation/RP_SP Garden Booklet.pdf",
+    "text": "historic garden brochure",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/3565e7_RP_SP_Garden_Booklet.pdf",
+    "rows": 7,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/nkrgij5btw/Cemetery%20Brochure%20%202020.pdf?u=sgt8lu",
+    "text": "cemetery self-guided tour",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/4df226_Cemetery_20Brochure_20_202020.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/c6nlulzmbm/24-SCP-4945-Aiken-State-Park-Map-MECH-Hi-Res.pdf?u=sgt8lu",
+    "text": "Aiken State Park Brochure",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/f1d2f1_24-SCP-4945-Aiken-State-Park-Map-MECH-Hi-Res.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/iyjt462b4t/Aiken Trails 2026.pdf?u=sgt8lu",
+    "text": "Aiken Trail Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/3990d8_Aiken_Trails_2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/ronykav9hf/MapBakerCreek.pdf?u=sgt8lu",
+    "text": "Baker Creek State Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/ec39fb_MapBakerCreek.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/cn87hzchqs/25-SCP-5572_Barnwell_Map_.pdf?u=sgt8lu",
+    "text": "Barnwell State Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/529d33_25-SCP-5572_Barnwell_Map_.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/s7siiqpzvr/24-SCP-5209_Rivers_Bridge_Map.pdf?u=sgt8lu",
+    "text": "Rivers Bridge Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/056f01_24-SCP-5209_Rivers_Bridge_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/osgzkviggc/23-SCP-4844-Mountain-Bridge-Wilderness-Trails-Map-Design-MECH (1).pdf?u=sgt8lu",
+    "text": "Trail Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/71db47_23-SCP-4844-Mountain-Bridge-Wilderness-Trails-Map-Design-MECH_1_.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/hsvgetis35/MapCaesarsHead.pdf?u=sgt8lu",
+    "text": "Caesars Head State Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/a26e87_MapCaesarsHead.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/vaoxd5fbzt/19-SCP-2667-Calhoun-Falls-Campground-Map-Hi-Res.pdf?u=sgt8lu",
+    "text": "Calhoun Falls State Park Campground Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/21c1a4_19-SCP-2667-Calhoun-Falls-Campground-Map-Hi-Res.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/kw4vop8cop/Calhoun_Falls_Park_Map.pdf?u=sgt8lu",
+    "text": "Calhoun Falls State Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/aef227_Calhoun_Falls_Park_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/dfdn9wijs8/24-SCP-5339_CTL_Rack_Card_2024_v2-online.pdf?u=sgt8lu",
+    "text": "Charles Towne Landing Rack Card",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/e45fca_24-SCP-5339_CTL_Rack_Card_2024_v2-online.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/g8nf2r7vbj/24-SCP-5339_CTL_Brochure_2024_v2-online.pdf?u=sgt8lu",
+    "text": "Charles Towne Landing Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/fc803b_24-SCP-5339_CTL_Brochure_2024_v2-online.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/lb2nvao8v1/CH Park Map.pdf?u=sgt8lu",
+    "text": "Cheraw Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/e269fc_CH_Park_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/rswh0akixf/CH Campground Map.pdf?u=sgt8lu",
+    "text": "Cheraw Campground Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/42c1e3_CH_Campground_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/lc8qv7enk4/20-SCP-3593-Chester_Disc_Golf_Flyer-Update-withoutcrop-MECH.pdf?u=sgt8lu",
+    "text": "Chester Disc Golf Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/5c673c_20-SCP-3593-Chester_Disc_Golf_Flyer-Update-withoutcrop-MECH.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/kapqkkz80m/Media File Chester SP (1).pdf?u=sgt8lu",
+    "text": "Chester Park and Campground Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/73290d_Media_File_Chester_SP_1_.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/fbycatmvae/CO-cypress-swamp-trail.pdf?u=sgt8lu",
+    "text": "Cypress Swamp Trail Brochure",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/f02412_CO-cypress-swamp-trail.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/5x57wph2qn/24-SCP-5183_Colleton_Kiosk_Map_online.pdf?u=sgt8lu",
+    "text": "Colleton Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/04bd4b_24-SCP-5183_Colleton_Kiosk_Map_online.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/urjuumyszs/CD_Rack Card lo res.pdf?u=sgt8lu",
+    "text": "Colonial Dorchester Park Brochure",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/374cfb_CD_Rack_Card_lo_res.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/nkrgij5btw/Cemetery Brochure  2020.pdf?u=sgt8lu",
+    "text": "Colonial Dorchester Cemetery Self-Guided Tour",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/fd8af0_Cemetery_Brochure_2020.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/1b2dm2dbko/CDMap_2017.pdf?u=sgt8lu",
+    "text": "Colonial Dorchester Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/40d589_CDMap_2017.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/5bp4iv08wp/26-SCP-6026-Devils-Fork-Campground-Map-2026-MECH_DIGITAL.pdf?u=sgt8lu",
+    "text": "Devils Fork Park & Campground Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/4b4e5e_26-SCP-6026-Devils-Fork-Campground-Map-2026-MECH_DIGITAL.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/ndmuuaa2qm/DevilsForkDoubleSpringsMap_2020_Update_Online_SFS.pdf?u=sgt8lu",
+    "text": "Devils Fork Double Springs Boat-In Campground Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/fabdeb_DevilsForkDoubleSpringsMap_2020_Update_Online_SFS.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/mtg4jzznip/21-SCP-3968-Devils-Fork-Villa-Map-Update-2021-Hi-Res.pdf?u=sgt8lu",
+    "text": "Devils Fork Villa Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/d55cff_21-SCP-3968-Devils-Fork-Villa-Map-Update-2021-Hi-Res.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/iqh3f6psqe/2025 Dreher Island Park Map.pdf?u=sgt8lu",
+    "text": "Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/66c693_2025_Dreher_Island_Park_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/5mmbseydcf/Edisto Beach SP Campground map 2026.pdf?u=sgt8lu",
+    "text": "Edisto Beach Campground Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/7d84ab_Edisto_Beach_SP_Campground_map_2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/1jemhelqhb/21-SCP-3975_Edisto_Beach_Park_and_Trail_Map_Update_Full-HiRes.pdf?u=sgt8lu",
+    "text": "Edisto Beach Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/2d0803_21-SCP-3975_Edisto_Beach_Park_and_Trail_Map_Update_Full-HiRes.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/tbu5k38koc/25-SCP-5769-Givhans-Ferry-Park-Half-Page-Map_MECH.pdf?u=sgt8lu",
+    "text": "Givhans Ferry Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/554ef0_25-SCP-5769-Givhans-Ferry-Park-Half-Page-Map_MECH.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/nuiydcpouo/NR_Goodale-canoetrail-brochure-2019.pdf?u=sgt8lu",
+    "text": "Goodale Canoe Trail Brochure",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/705da4_NR_Goodale-canoetrail-brochure-2019.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/rmirdxwmi0/NR_Goodale-NatureTrail-Brochure-2019.pdf?u=sgt8lu",
+    "text": "Goodale Nature Trail Brochure",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/3b11c8_NR_Goodale-NatureTrail-Brochure-2019.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/ss8fbcmutt/MapGoodale.pdf?u=sgt8lu",
+    "text": "Goodale Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/d61a64_MapGoodale.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/cmtxtlns4d/24-SCP-5435-H-Cooper-Black-Jr-Campground-Map.pdf?u=sgt8lu",
+    "text": "H. Cooper Black Jr. Campground Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/5d2d06_24-SCP-5435-H-Cooper-Black-Jr-Campground-Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/xopxuk8tls/24-SCP-5359_H-Cooper-Black-Map.pdf?u=sgt8lu",
+    "text": "H. Cooper Black Jr. Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/1411bc_24-SCP-5359_H-Cooper-Black-Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/5or8zsofpj/24-SCP-5184_Hamilton_Branch_Map.pdf?u=sgt8lu",
+    "text": "Hamilton Branch State Park and Campground Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/7a5e80_24-SCP-5184_Hamilton_Branch_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/4nmisucgmx/Ham Branch - MODOC Trail 2 sided.pdf?u=sgt8lu",
+    "text": "Modoc Trail Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/bfa40c_Ham_Branch_-_MODOC_Trail_2_sided.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/usqsu13o4f/HP Map 2019.pdf?u=sgt8lu",
+    "text": "Hampton Plantation Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/000450_HP_Map_2019.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/scprt/gher0jgt0b/24-SCP-4990-Hickory-Knob-Map-Update-MECH.pdf?u=sgt8lu",
+    "text": "Hickory Knob Park Map",
+    "file": "data/gov_sources/parks_southcarolinaparks_com/71c982_24-SCP-4990-Hickory-Knob-Map-Update-MECH.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/2ef4a7338ea94e018e8469164abbade7": "Women of the State Park Service",
+   "https://storymaps.arcgis.com/stories/230b2dcd436c40fcb820fc060de9453b": "Remembering and Acknowledging the History of Segregation in South Carolina State Parks",
+   "https://storymaps.arcgis.com/stories/85b74461910142908cefb9d4e696d37b": "Virtual Tour of Civil Rights Memory Sites in the South Carolina State Parks",
+   "https://storymaps.arcgis.com/stories/7dd7c6c3f6484b9db11de75fbfaf7c57": "You can explore various partner properties along the network here"
+  }
+ },
+ "parks:wyoparks.wyo.gov": {
+  "files": [],
+  "portals": {
+   "https://wyoparks.wyo.gov/opendata": "",
+   "https://wyoparks.wyo.gov/open-data": ""
+  }
+ },
+ "gis:geoportal.hawaii.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "gis:gisdata.mn.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "gis:nconemap.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "gis:data.tnris.org": {
+  "files": [],
+  "portals": {}
+ }
+}
