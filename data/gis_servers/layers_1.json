@@ -1,0 +1,23 @@
+[
+{
+"city": "Eugene",
+"url": "https://gis.eugene-or.gov/arcgis/rest/services/PWE/Transportation/MapServer/17",
+"name": "Bike Markers",
+"count": 60,
+"cat": "racks"
+},
+{
+"city": "Eugene",
+"url": "https://gis.eugene-or.gov/arcgis/rest/services/PWE/Transportation/MapServer/18",
+"name": "Bike Boxes",
+"count": 8,
+"cat": "racks"
+},
+{
+"city": "Eugene",
+"url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/BikeShareStations/MapServer/0",
+"name": "BikeShareStations",
+"count": 60,
+"cat": "share"
+}
+]
