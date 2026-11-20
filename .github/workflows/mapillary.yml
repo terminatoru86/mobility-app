@@ -37,7 +37,7 @@ jobs:
         env:
           SHARD: ${{ matrix.shard }}
           NSHARDS: '20'
-          THREADS: '6'
+          THREADS: '24'
           PER_MIN: '400'
           STOP_AFTER_MIN: '320'
         run: python3 tool/mapillary_all.py

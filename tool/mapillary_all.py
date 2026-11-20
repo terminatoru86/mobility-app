@@ -66,7 +66,11 @@ class Pace:
 
 
 TOKEN, PACE = None, None
+FAILED = []
 stats = {'calls': 0, 'retries': 0, 'split': 0}
+
+
+MIN_SIDE = 0.0124  # a cell is not cut smaller than this (~1.4 km)
 
 
 def ask(b):
@@ -85,6 +89,14 @@ def ask(b):
             body = e.read()[:200].decode('utf-8', 'replace')
             if e.code == 400 and 'bbox' in body.lower():
                 return None
+            # "unknown error" 500: the box has too much in it for the server -> cut it in four, do not wait
+            if e.code == 500 and (b[2] - b[0]) > MIN_SIDE * 1.5:
+                stats['busy_split'] = stats.get('busy_split', 0) + 1
+                return None
+            if e.code == 500 and wait >= 160:
+                stats['gave_up'] = stats.get('gave_up', 0) + 1
+                FAILED.append(b)
+                return []
             if e.code in (400, 401, 403) and 'limit' not in body.lower():
                 stats['auth'] = stats.get('auth', 0) + 1
                 if stats['auth'] >= 20 and stats['auth'] >= stats['calls'] // 2:
@@ -100,7 +112,7 @@ def ask(b):
 
 def cell(b):
     d = ask(b)
-    if d is None or len(d) >= 2000:
+    if (d is None or len(d) >= 2000) and (b[2] - b[0]) > MIN_SIDE * 1.5:
         stats['split'] += 1
         x0, y0, x1, y1 = b
         mx, my = (x0 + x1) / 2, (y0 + y1) / 2
@@ -109,7 +121,7 @@ def cell(b):
             out += cell(tuple(round(v, 6) for v in s))
         return out
     got = []
-    for f in d:
+    for f in d or []:
         g = f.get('geometry') or {}
         c = g.get('coordinates') or []
         if f.get('object_value') == VALUES and len(c) == 2:
@@ -128,14 +140,22 @@ def main():
     path = os.path.join(OUT, f'racks_{SHARD}.json')
     dpath = os.path.join(OUT, f'done_{SHARD}.json')
     racks = {r[0]: r for r in json.load(open(path))} if os.path.exists(path) else {}
-    done = json.load(open(dpath)).get('done', 0) if os.path.exists(dpath) else 0
+    prev = json.load(open(dpath)) if os.path.exists(dpath) else {}
+    done = prev.get('done', 0)
+    # boxes the server kept failing on last time: asked again first
+    retry = [tuple(x) for x in prev.get('failed') or []]
+    if retry:
+        with ThreadPoolExecutor(THREADS) as ex0:
+            for got in ex0.map(cell, retry):
+                for r in got:
+                    racks[r[0]] = r
     print(f'{len(allc)} US cells, shard {SHARD}/{NSHARDS}: {len(mine)} · already done {done} · racks {len(racks)}', flush=True)
     stop = time.time() + 60 * int(os.environ.get('STOP_AFTER_MIN', 320))
     t0 = time.time()
 
     def save():
         json.dump(list(racks.values()), open(path, 'w'), separators=(',', ':'))
-        json.dump({'done': done, 'of': len(mine), 'complete': done >= len(mine)}, open(dpath, 'w'))
+        json.dump({'done': done, 'of': len(mine), 'complete': done >= len(mine), 'failed': FAILED[-2000:]}, open(dpath, 'w'))
 
     with ThreadPoolExecutor(THREADS) as ex:
         while done < len(mine) and time.time() < stop:
