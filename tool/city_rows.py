@@ -60,6 +60,10 @@ def coords(row):
             lon, lat = num(c[0][0]), num(c[0][1])
             if lat is not None and lon is not None and US(lat, lon):
                 return lat, lon
+    if row.get('lat') is not None and row.get('lon') is not None:  # shapefile points (already WGS84)
+        lat, lon = num(row['lat']), num(row['lon'])
+        if lat is not None and lon is not None and US(lat, lon):
+            return lat, lon
     if row.get('coords'):  # KML lon,lat[,alt]
         p = row['coords'].split()[0].split(',')
         if len(p) >= 2:

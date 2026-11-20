@@ -1,0 +1,129 @@
+name: Vendors and maps of all US municipalities
+
+# 1. list: every US municipality with a website (Wikidata, up to 20,000)
+# 2. scan: 20 shards read the municipal sites for vendors (rack / locker / repair-stand / scooter / parking
+#    companies), links to company sites and embedded maps (tool/vendor_scan.py scan)
+# 3. maps: reads every map found (city maps + the vendors' own location maps) -> data/vendors/points.json
+# 4. refix: opens the KMZ / ZIP files the city crawl downloaded but did not read, then rebuilds data/city_pts.json
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            tool
+            data/foia
+      - run: pip install requests
+      - run: |
+          for i in 1 2 3 4; do python3 tool/city_list.py 20000 && break; sleep 60; done
+          ls -la data/foia
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cities
+          path: data/foia/cities_big.json
+          retention-days: 3
+
+  scan:
+    needs: list
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /tool/
+            /data/us_states.json
+            /data/vendors/
+      - uses: actions/download-artifact@v4
+        with:
+          name: cities
+          path: data/foia
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Scan
+        timeout-minutes: 330
+        env:
+          SHARD: ${{ matrix.shard }}
+          NSHARDS: '20'
+          THREADS: '24'
+          PAGES: '25'
+          SECS: '120'
+        run: python3 tool/vendor_scan.py scan
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/vendors
+          git commit -qm "Vendors scan: shard ${{ matrix.shard }}" || exit 0
+          for i in $(seq 1 40); do git pull -q --rebase -X theirs && git push -q && exit 0; sleep $((RANDOM % 45 + 10)); done
+          exit 1
+
+  maps:
+    needs: scan
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /tool/
+            /data/us_states.json
+            /data/vendors/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - run: git pull -q
+      - run: python3 tool/vendor_scan.py maps
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/vendors
+          git commit -qm "Vendors: map points" || exit 0
+          for i in $(seq 1 40); do git pull -q --rebase -X theirs && git push -q && exit 0; sleep $((RANDOM % 45 + 10)); done
+          exit 1
+
+  refix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /tool/
+            /data/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4 lxml openpyxl pdfplumber pyshp pyproj
+      - run: python3 tool/city_files_refix.py
+      - run: python3 tool/public_maps.py || true
+      - run: python3 tool/city_rows.py
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/city_files data/city_pts.json data/city_pts_REPORT.md data/public_maps.json
+          git commit -qm "City files: KMZ / ZIP read again, city points rebuilt" || exit 0
+          for i in $(seq 1 40); do git pull -q --rebase -X theirs && git push -q && exit 0; sleep $((RANDOM % 45 + 10)); done
+          exit 1

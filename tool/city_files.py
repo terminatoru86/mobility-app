@@ -160,6 +160,55 @@ def extract(path):
             soup = BeautifulSoup(open(path, encoding='utf-8', errors='replace').read(), 'xml')
             for pm in soup.find_all('Placemark')[:5000]:
                 rows.append({'name': pm.find('name').text if pm.find('name') else '', 'coords': pm.find('coordinates').text.strip() if pm.find('coordinates') else ''})
+        elif ext in ('kmz', 'zip'):
+            import zipfile, io
+            z = zipfile.ZipFile(path)
+            names = z.namelist()
+            for n in names:
+                low = n.lower()
+                if low.endswith('.kml'):
+                    soup = BeautifulSoup(z.read(n).decode('utf-8', 'replace'), 'xml')
+                    for pm in soup.find_all('Placemark')[:5000]:
+                        rows.append({'name': pm.find('name').text if pm.find('name') else '',
+                                     'coords': pm.find('coordinates').text.strip() if pm.find('coordinates') else ''})
+                elif low.endswith(('.geojson', '.json')):
+                    d = json.loads(z.read(n).decode('utf-8', 'replace'))
+                    for ft in (d.get('features') or [])[:5000] if isinstance(d, dict) else []:
+                        rows.append({'geometry': ft.get('geometry'), 'props': ft.get('properties')})
+                elif low.endswith('.csv'):
+                    import csv
+                    for i, r in enumerate(csv.reader(io.StringIO(z.read(n).decode('utf-8', 'replace')))):
+                        if i > 5000: break
+                        rows.append({'row': r})
+                elif low.endswith('.shp'):
+                    import shapefile  # pyshp
+                    stem = n[:-4]
+                    get_ = lambda e: io.BytesIO(z.read(next(x for x in names if x.lower() == (stem + e).lower())))
+                    try:
+                        sf = shapefile.Reader(shp=get_('.shp'), dbf=get_('.dbf'), shx=get_('.shx'))
+                    except StopIteration:
+                        continue
+                    prj = ''
+                    try:
+                        prj = get_('.prj').read().decode('utf-8', 'replace')
+                    except StopIteration:
+                        pass
+                    fields = [f[0] for f in sf.fields[1:]]
+                    tr = None
+                    if prj and not prj.lstrip().upper().startswith('GEOGCS'):
+                        try:
+                            from pyproj import CRS, Transformer
+                            tr = Transformer.from_crs(CRS.from_wkt(prj), 'EPSG:4326', always_xy=True)
+                        except Exception:
+                            continue
+                    for i, sr in enumerate(sf.iterShapeRecords()):
+                        if i > 5000: break
+                        pts = sr.shape.points
+                        if sr.shape.shapeType in (1, 11, 21) and pts:
+                            x, y = pts[0][:2]
+                            if tr:
+                                x, y = tr.transform(x, y)
+                            rows.append({'lat': round(y, 6), 'lon': round(x, 6), 'props': dict(zip(fields, [str(v) for v in sr.record]))})
         elif ext == 'sql':
             for ln in open(path, encoding='utf-8', errors='replace'):
                 if ln.upper().startswith('INSERT'):

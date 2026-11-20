@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.join(ROOT, 'tool'))
 from foia_contacts import city as find_contacts  # noqa: E402
 
 MIN_POP = int(os.environ.get('MIN_POP', 75000))
-OFFICIAL = ('city/', 'gs/', 'usr/', 'pm/', 'cty/', 'mbta/', 'blk/', 'afdc/')
+OFFICIAL = ('city/', 'gs/', 'usr/', 'pm/', 'cty/', 'vnd/', 'mbta/', 'blk/', 'afdc/')
 Q = """SELECT ?c ?cLabel ?site ?coord (MAX(?pop) AS ?p) WHERE {
   VALUES ?type { wd:Q1093829 wd:Q15127012 wd:Q3301053 wd:Q15284 wd:Q47168 wd:Q2154459 }
   ?c wdt:P31 ?type ; wdt:P17 wd:Q30 ; wdt:P1082 ?pop ; wdt:P625 ?coord .

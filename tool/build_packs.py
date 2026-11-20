@@ -1007,7 +1007,8 @@ def fetch_cityfiles():
     publish on their own websites (data/city_pts.json, made by tool/city_rows.py from tool/city_files.py)."""
     out = []
     import glob as _glob
-    files = [os.path.join(ROOT, 'data', n) for n in ('city_pts.json', 'public_maps.json', 'user_official.json')]
+    files = [os.path.join(ROOT, 'data', n) for n in ('city_pts.json', 'public_maps.json', 'user_official.json',
+                                                     os.path.join('vendors', 'points.json'))]
     files += sorted(_glob.glob(os.path.join(ROOT, 'data', 'gis_servers', 'pts_*.json')))
     seen = set()
     for f in files:
@@ -1297,7 +1298,7 @@ def main():
             got = fn()
             # read again and answered: the old rows of this source go, so a place the source
             # (or our filter) no longer has does not stay on the map
-            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'cityfiles': ('cty/', 'pm/', 'gs/', 'usr/'), 'afdc': 'afdc/', 'bikelink': 'blk/'}.get(name)
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'cityfiles': ('cty/', 'pm/', 'gs/', 'usr/', 'vnd/'), 'afdc': 'afdc/', 'bikelink': 'blk/'}.get(name)
             if old and got:
                 for d in tiles.values():
                     for k in [k for k in d if str(k).startswith(old)]:
