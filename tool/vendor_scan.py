@@ -91,7 +91,10 @@ def get(url, timeout=25, **kw):
 
 
 def host(u):
-    h = urllib.parse.urlparse(u if '//' in u else '//' + u).netloc.lower()
+    try:
+        h = urllib.parse.urlparse(u if '//' in u else '//' + u).netloc.lower()
+    except ValueError:
+        return ''
     return h[4:] if h.startswith('www.') else h
 
 
@@ -101,6 +104,14 @@ def page_links(base, html):
 
 
 def scan_city(c):
+    try:
+        return _scan_city(c)
+    except Exception as e:  # one broken site must not stop the shard
+        print(f"  {c.get('site')}: {str(e)[:100]}", flush=True)
+        return {'city': c['city'], 'site': c['site'], 'vendors': {}, 'links': {}, 'maps': [], 'pages': [], 'files': {}}
+
+
+def _scan_city(c):
     site = c['site'].strip('/').replace('https://', '').replace('http://', '')
     base = 'https://' + (site if site.count('.') > 1 or site.startswith('www.') else 'www.' + site)
     end = time.time() + SECS
