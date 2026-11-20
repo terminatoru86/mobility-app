@@ -1,0 +1,2190 @@
+{
+ "Chandler AZ": {
+  "files": [
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-City-Limits-Map-2026.pdf",
+    "text": "Chandler City Limits",
+    "file": "data/city_files/Chandler_AZ/a7bf44_City-of-Chandler-City-Limits-Map-2026.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-FMA-Page-Section-Township-Index.pdf",
+    "text": "Township, Range, Section Index Map",
+    "file": "data/city_files/Chandler_AZ/0e5229_City-of-Chandler-FMA-Page-Section-Township-Index.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Block-Numbers-For-Addresses-And-Ranges-Mile-And-Half-Mile-Street-Alignments.pdf",
+    "text": "Chandler Address Block Number Map",
+    "file": "data/city_files/Chandler_AZ/d838b8_City-of-Chandler-Block-Numbers-For-Addresses-And-Ranges-Mile-And-Half-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Maricopa-County-Address-Block-Numbers.pdf",
+    "text": "County Address Block Numbers Map",
+    "file": "data/city_files/Chandler_AZ/9a7cad_City-of-Chandler-Maricopa-County-Address-Block-Numbers.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Zip-Codes-and-Boundaries.pdf",
+    "text": "Chandler Zip Codes Map",
+    "file": "data/city_files/Chandler_AZ/629868_City-of-Chandler-Zip-Codes-and-Boundaries.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/downtown/Downtown%20Parking%20Map.pdf",
+    "text": "find free parking",
+    "file": "data/city_files/Chandler_AZ/8bdc50_Downtown_20Parking_20Map.pdf",
+    "rows": 16,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/transportation/City-of-Chandler-Bike-Map-March-2026.pdf",
+    "text": "Chandler Bike Map",
+    "file": "data/city_files/Chandler_AZ/b9d6ff_City-of-Chandler-Bike-Map-March-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/transportation/City-of-Chandler-Downtown-Bike-Parking-March-2026.pdf",
+    "text": "Downtown Bike Parking",
+    "file": "data/city_files/Chandler_AZ/7300fd_City-of-Chandler-Downtown-Bike-Parking-March-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/transportation/City-of-Chandler-E-Bike-Safety-and-Information-Guide.pdf",
+    "text": "E-Bike Information Guide",
+    "file": "data/city_files/Chandler_AZ/e2ff78_City-of-Chandler-E-Bike-Safety-and-Information-Guide.pdf",
+    "rows": 4,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/transportation/City-of-Chandler-2024-Arizona-Avenue-Shared-Use-Path-and-Sidewalk-Gap-Study-Final-Report-January-2025.pdf",
+    "text": "2024 Arizona Avenue Shared-Use Path Study: Final Report",
+    "file": "data/city_files/Chandler_AZ/7c5963_City-of-Chandler-2024-Arizona-Avenue-Shared-Use-Path-and-Sidewalk-Gap-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/transportation/City-of-Chandler-Protected-Bike-Lane-Feasibility-Final-Report-August.pdf",
+    "text": "2023 Protected Bike Lane Feasibility Study",
+    "file": "data/city_files/Chandler_AZ/ec2b7c_City-of-Chandler-Protected-Bike-Lane-Feasibility-Final-Report-August.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/Price-Road-Flexible-Transit-Study-Final-Report.pdf",
+    "text": "2021 Price Road Flexible Transit Study: Final Report",
+    "file": "data/city_files/Chandler_AZ/a41ef9_Price-Road-Flexible-Transit-Study-Final-Report.pdf",
+    "rows": 178,
+    "bike_rows": 24
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/Fiesta-Downtown-Chandler-Transit-Corridor-Study-May-2017.pdf",
+    "text": "Fiesta-Downtown Chandler Transit Corridor Study",
+    "file": "data/city_files/Chandler_AZ/373900_Fiesta-Downtown-Chandler-Transit-Corridor-Study-May-2017.pdf",
+    "rows": 294,
+    "bike_rows": 30
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/Arizona-Avenue-High-Capacity-Transit-Long-Range-Study-Dec-2022.pdf",
+    "text": "Arizona Avenue High-Capacity Transit Long-Range Study",
+    "file": "data/city_files/Chandler_AZ/83a983_Arizona-Avenue-High-Capacity-Transit-Long-Range-Study-Dec-2022.pdf",
+    "rows": 254,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/parks-and-recreation/Chandler-Parks-Strategic-Master-Plan-Chapter-5.pdf",
+    "text": "Chapter 5: Level of Service and Mapping",
+    "file": "data/city_files/Chandler_AZ/abdb41_Chandler-Parks-Strategic-Master-Plan-Chapter-5.pdf",
+    "rows": 26,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/parks-and-recreation/Snedigar-Parking-Map-2020.pdf",
+    "text": "Snedigar Parking Map",
+    "file": "data/city_files/Chandler_AZ/273d27_Snedigar-Parking-Map-2020.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/parks-and-recreation/Snedigar-Parking-Map-2020.pdf",
+    "text": "Snedigar Parking Map",
+    "file": "data/city_files/Chandler_AZ/dd3757_Snedigar-Parking-Map-2020.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/documents/imported/YellowArrowLocations_Map.pdf",
+    "text": "Map of Flashing Yellow Left Arrows",
+    "file": "data/city_files/Chandler_AZ/0b904e_YellowArrowLocations_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Photo-Enforcement-Camera-Map.pdf",
+    "text": "Photo Enforcement Camera Map",
+    "file": "data/city_files/Chandler_AZ/c7b733_City-of-Chandler-Photo-Enforcement-Camera-Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2026-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "text": "2026 Intersection Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/6f8e40_City-of-Chandler-2026-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2025-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "text": "2025 Intersection Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/bdb454_City-of-Chandler-2025-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2024-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "text": "2024 Intersection Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/caa134_City-of-Chandler-2024-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2023-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "text": "2023 Intersection Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/eac433_City-of-Chandler-2023-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2022-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "text": "2022 Intersection Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/85f8ff_City-of-Chandler-2022-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2026-Segment-Volumes-Map-Archive.pdf",
+    "text": "2026 Road Segment Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/056556_City-of-Chandler-2026-Segment-Volumes-Map-Archive.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2025-Segment-Volumes-Map-Archive.pdf",
+    "text": "2025 Road Segment Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/d6fc81_City-of-Chandler-2025-Segment-Volumes-Map-Archive.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2024-Segment-Volumes-Map-Archive.pdf",
+    "text": "2024 Road Segment Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/4348ef_City-of-Chandler-2024-Segment-Volumes-Map-Archive.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2023-Segment-Volumes-Map-Archive.pdf",
+    "text": "2023 Road Segment Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/93c600_City-of-Chandler-2023-Segment-Volumes-Map-Archive.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2022-Segment-Volumes-Map-Archive.pdf",
+    "text": "2022 Road Segment Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/1d0d83_City-of-Chandler-2022-Segment-Volumes-Map-Archive.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/transportation/City-of-Chandler-Bike-Map-March-2026.pdf",
+    "text": "Chandler Bike Map",
+    "file": "data/city_files/Chandler_AZ/63f676_City-of-Chandler-Bike-Map-March-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-City-Limits-Map-2026.pdf",
+    "text": "Chandler City Limits",
+    "file": "data/city_files/Chandler_AZ/b9f7c3_City-of-Chandler-City-Limits-Map-2026.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-FMA-Page-Section-Township-Index.pdf",
+    "text": "Township, Range, Section Index Map",
+    "file": "data/city_files/Chandler_AZ/a1b53a_City-of-Chandler-FMA-Page-Section-Township-Index.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Block-Numbers-For-Addresses-And-Ranges-Mile-And-Half-Mile-Street-Alignments.pdf",
+    "text": "Chandler Address Block Number Map",
+    "file": "data/city_files/Chandler_AZ/8c029a_City-of-Chandler-Block-Numbers-For-Addresses-And-Ranges-Mile-And-Half-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Maricopa-County-Address-Block-Numbers.pdf",
+    "text": "County Address Block Numbers Map",
+    "file": "data/city_files/Chandler_AZ/fc2cb8_City-of-Chandler-Maricopa-County-Address-Block-Numbers.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://strategic-framework-performance-metrics-current-changis.hub.arcgis.com/": "Performance Dashboards",
+   "https://share-open-data-changis.hub.arcgis.com/": "",
+   "https://gis.chandleraz.gov/infomap/": "",
+   "https://gis.chandleraz.gov/planning/": "",
+   "https://gis.chandleraz.gov/trafficrestrictions/": "",
+   "http://changis.maps.arcgis.com/apps/webappviewer/index.html?id=0aea8d6016154b9b81d207f90866355c": "",
+   "https://gis.chandleraz.gov/portal/apps/experiencebuilder/experience/?id=1203f8f823444e3d8f33e87cca44228a&page=Page": "",
+   "https://storymaps.arcgis.com/stories/401bd02539214594a0a204f6e3cafe9c": "",
+   "https://storymaps.arcgis.com/stories/f8cf870107f2481381ca6a01bdc61a0d": "",
+   "http://gis.maricopa.gov/floodplainviewer/": "Maricopa County Floodplain Viewer",
+   "https://storymaps.arcgis.com/stories/a75251596dfe4e919603f09ed872ab35": "Office Projects Interactive Map",
+   "https://storymaps.arcgis.com/stories/2bd5df50330a452aa2d89c4ecac86514": "Industrial Projects Interactive Map",
+   "https://storymaps.arcgis.com/stories/ea09afde8ff249989cf0a1a93f6c7ba6": "Coworking Spaces Interactive Map",
+   "https://gis.chandleraz.gov/infomap": "InfoMap"
+  }
+ },
+ "Charleston WV": {
+  "files": [
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2023-08/freeParking2023d.pdf",
+    "text": "View Free Parking Location Map (PDF)",
+    "file": "data/city_files/Charleston_WV/40cbcc_freeParking2023d.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2022-05/05-31-2022%20Press%20Release%20-%20Curbside%20Recycling%20Program%20Optimization.pdf",
+    "text": "here",
+    "file": "data/city_files/Charleston_WV/17c9e3_05-31-2022_20Press_20Release_20-_20Curbside_20Recycling_20Program_20Op",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2022-05/Recycling%20Poster%20-%2036x27.pdf",
+    "text": "View here",
+    "file": "data/city_files/Charleston_WV/51e948_Recycling_20Poster_20-_2036x27.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2022-05/Curbside%20Recycling%20FAQ.pdf",
+    "text": "View here",
+    "file": "data/city_files/Charleston_WV/482671_Curbside_20Recycling_20FAQ.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2019-11/recycling.pdf",
+    "text": "recycling.pdf",
+    "file": "data/city_files/Charleston_WV/08c7a3_recycling.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2021-02/2021%20Recycling%20Feasibility%20Study%20-%201.pdf",
+    "text": "2021 Recycling Feasibility Study - 1.pdf",
+    "file": "data/city_files/Charleston_WV/9c4210_2021_20Recycling_20Feasibility_20Study_20-_201.pdf",
+    "rows": 108,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2021-02/2021%20Recycling%20Feasibility%20Study%20-%202.pdf",
+    "text": "2021 Recycling Feasibility Study - 2.pdf",
+    "file": "data/city_files/Charleston_WV/179678_2021_20Recycling_20Feasibility_20Study_20-_202.pdf",
+    "rows": 545,
+    "bike_rows": 60
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2021-02/2021%20Recycling%20Feasibility%20Study%20-%203.pdf",
+    "text": "2021 Recycling Feasibility Study - 3.pdf",
+    "file": "data/city_files/Charleston_WV/a9c0b7_2021_20Recycling_20Feasibility_20Study_20-_203.pdf",
+    "rows": 444,
+    "bike_rows": 51
+   },
+   {
+    "url": "http://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2017-03/BikeTrailMasterPlan%20-%20LowRes.pdf",
+    "text": "Click Here for PDF",
+    "file": "data/city_files/Charleston_WV/edb61a_BikeTrailMasterPlan_20-_20LowRes.pdf",
+    "rows": 74,
+    "bike_rows": 33
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/documents/2020-09/Monthly%20parking%20rates%20in%20garages%20and%20lots.pdf",
+    "text": "📄 Parking Garage Rates and Locations (PDF)",
+    "file": "data/city_files/Charleston_WV/98a811_Monthly_20parking_20rates_20in_20garages_20and_20lots.pdf",
+    "rows": 6,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2023-08/newShort%20Term%20Parking%20Spaces%20-%20updated%2008.07.pdf",
+    "text": "📍 Short-Term Parking Locations (PDF)",
+    "file": "data/city_files/Charleston_WV/6ab549_newShort_20Term_20Parking_20Spaces_20-_20updated_2008.07.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2022-05/Recycling%20Poster%20-%2036x27_0.pdf",
+    "text": "Recycling Poster - 36x27_0.pdf",
+    "file": "data/city_files/Charleston_WV/6f733f_Recycling_20Poster_20-_2036x27_0.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2019-05/2015%20Recycling%20Study.pdf",
+    "text": "2015 Recycling Study.pdf",
+    "file": "data/city_files/Charleston_WV/4934d6_2015_20Recycling_20Study.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/documents/2025-10/Residential%20Parking%20Application%2010-1-2025.pdf",
+    "text": "Residential Parking Application 10-1-2025.pdf",
+    "file": "data/city_files/Charleston_WV/783771_Residential_20Parking_20Application_2010-1-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/documents/2024-08/Monthly%20parking%20rates%20in%20garages%20and%20lots.pdf",
+    "text": "Monthly parking rates in garages and lots.pdf",
+    "file": "data/city_files/Charleston_WV/029109_Monthly_20parking_20rates_20in_20garages_20and_20lots.pdf",
+    "rows": 6,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/documents/2023-11/Monthly%20Parking%20Application.pdf",
+    "text": "Monthly Parking Application.pdf",
+    "file": "data/city_files/Charleston_WV/11e9dc_Monthly_20Parking_20Application.pdf",
+    "rows": 113,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/documents/2019-08/ParkingDisputeform2019.pdf",
+    "text": "ParkingDisputeform2019.pdf",
+    "file": "data/city_files/Charleston_WV/642bfa_ParkingDisputeform2019.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {}
+ },
+ "Oakland": {
+  "files": [
+   {
+    "url": "https://oaklandca.gov/files/assets/city/v/1/transportation/documents/walking-and-biking-in-oakland/bicycle-education-amp-encouragement/bikemap_2026.pdf",
+    "text": "print bikeways map (PDF, 10MB)",
+    "file": "data/city_files/Oakland/f9892b_bikemap_2026.pdf",
+    "rows": 9,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/CWS-Battery-Recycling-Bro-Post.pdf",
+    "text": "Battery Recycling Information (PDF)",
+    "file": "data/city_files/Oakland/3c6be4_CWS-Battery-Recycling-Bro-Post.pdf",
+    "rows": 36,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2025/01/Oakland-FSB-2023-24-English-Handout.pdf",
+    "text": "English",
+    "file": "data/city_files/Oakland/2a6d76_Oakland-FSB-2023-24-English-Handout.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/07/Oakland-FSB-2023-24-Spanish-Handout.pdf",
+    "text": "Español",
+    "file": "data/city_files/Oakland/406b54_Oakland-FSB-2023-24-Spanish-Handout.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/07/Oakland-FSB-2023-24-Chinese-Handout.pdf",
+    "text": "中国人",
+    "file": "data/city_files/Oakland/1593af_Oakland-FSB-2023-24-Chinese-Handout.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/07/Oakland-FSB-2023-24-Vietnamese-Handout.pdf",
+    "text": "Tiếng Việt",
+    "file": "data/city_files/Oakland/5f3314_Oakland-FSB-2023-24-Vietnamese-Handout.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/04/Oakland-SFD-MFD-FSB-2022-MAIL_FARSI.pdf",
+    "text": "فارسی",
+    "file": "data/city_files/Oakland/62adc5_Oakland-SFD-MFD-FSB-2022-MAIL_FARSI.pdf",
+    "rows": 21,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/07/Oakland-SFD-MFD-FSB-Arabic.pdf",
+    "text": "عربي",
+    "file": "data/city_files/Oakland/06b592_Oakland-SFD-MFD-FSB-Arabic.pdf",
+    "rows": 25,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/10/oakland-sfd-oct-24-insert.pdf",
+    "text": "October 2024",
+    "file": "data/city_files/Oakland/63190f_oakland-sfd-oct-24-insert.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/10/sfd-july-2024-bill-insert.pdf",
+    "text": "July 2024",
+    "file": "data/city_files/Oakland/71dd47_sfd-july-2024-bill-insert.pdf",
+    "rows": 11,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/10/oakland-sfd-April-24-insert.pdf",
+    "text": "April 2024",
+    "file": "data/city_files/Oakland/0b7530_oakland-sfd-April-24-insert.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/10/oakland-sfd-Jan-24-insert.pdf",
+    "text": "January 2024",
+    "file": "data/city_files/Oakland/d37313_oakland-sfd-Jan-24-insert.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/06/oakland-sorting-guide_dec2025.pdf",
+    "text": "Printable Sorting Guide",
+    "file": "data/city_files/Oakland/b9935a_oakland-sorting-guide_dec2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_SP.pdf",
+    "text": "Descargar Desechos Voluminosos",
+    "file": "data/city_files/Oakland/59be2d_Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_SP.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_VI.pdf",
+    "text": "Hướng dẫn thu gom rác thải cồng kềnh",
+    "file": "data/city_files/Oakland/90163a_Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_VI.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_TC.pdf",
+    "text": "大件垃圾丟送說明",
+    "file": "data/city_files/Oakland/96e339_Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_TC.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/DSTS-Drop-off-map.pdf",
+    "text": "View Drop-off Map",
+    "file": "data/city_files/Oakland/3c92c0_DSTS-Drop-off-map.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Postcard-MFD-SP.pdf",
+    "text": "Recolección de artículos voluminosos",
+    "file": "data/city_files/Oakland/8607e3_Oakland-Bulky-Confirmation-Instructions-Postcard-MFD-SP.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Postcard-MFD-VI.pdf",
+    "text": "Thu gom rác thải cồng kềnh bên lề đường",
+    "file": "data/city_files/Oakland/1631e1_Oakland-Bulky-Confirmation-Instructions-Postcard-MFD-VI.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Postcard-SFD_TC.pdf",
+    "text": "大件垃圾路邊收集說明",
+    "file": "data/city_files/Oakland/472b2f_Oakland-Bulky-Confirmation-Instructions-Postcard-SFD_TC.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/used-motor-oil-and-filter-recycling-guide.pdf",
+    "text": "Used Motor Oil and Filter Recycling Guide (PDF, 6MB)",
+    "file": "data/city_files/Oakland/9e06b2_used-motor-oil-and-filter-recycling-guide.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/used-motor-oil-and-filter-recycling-guide-spanish.pdf",
+    "text": "Guía De Reciclaje de Aceite de Motor Y Filtro de Aceite Usados (PDF, 5MB)",
+    "file": "data/city_files/Oakland/861b1e_used-motor-oil-and-filter-recycling-guide-spanish.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/used-motor-oil-and-filter-recycling-guide-chinese.pdf",
+    "text": "舊機油和機油濾心回收指南 (PDF, 6MB)",
+    "file": "data/city_files/Oakland/c494d5_used-motor-oil-and-filter-recycling-guide-chinese.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/faq-for-subscription-fees.pdf",
+    "text": "Mandatory Garbage Subscription Fee Frequently Asked Questions (PDF, 174KB)",
+    "file": "data/city_files/Oakland/766fb4_faq-for-subscription-fees.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/administrative-hearing-questionairre-08.13.2024.pdf",
+    "text": "Administrative Hearing Questionnaire - English (PDF, 115KB)",
+    "file": "data/city_files/Oakland/617e70_administrative-hearing-questionairre-08.13.2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/citywide-liens-administrative-hearing-form-en-zh_hant-r-c_tc.pdf",
+    "text": "行政聽證會調查表 - Chinese (PDF, 136KB)",
+    "file": "data/city_files/Oakland/2b72a8_citywide-liens-administrative-hearing-form-en-zh_hant-r-c_tc.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/citywide-liens-administrative-hearing-form-en-es-r-c_sp.pdf",
+    "text": "Cuestionario de audiencia administrativa - Spanish (PDF, 113KB)",
+    "file": "data/city_files/Oakland/3f3569_citywide-liens-administrative-hearing-form-en-es-r-c_sp.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/3/public-works/documents/waste-recycling/residential-self-haul-application.pdf",
+    "text": "Residential Self-Haul Permit Application (PDF, 517KB)",
+    "file": "data/city_files/Oakland/2cebef_residential-self-haul-application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/3/public-works/documents/waste-recycling/business-self-haul-application.pdf",
+    "text": "Business Self-Haul Permit Application (PDF, 493KB)",
+    "file": "data/city_files/Oakland/b554b7_business-self-haul-application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/2/planning-amp-building/documents/sp/pz/oakland-height-areas-11x17-map-series-20241217.pdf",
+    "text": "City of Oakland Height Areas Maps (PDF, 21MB)",
+    "file": "data/city_files/Oakland/12b99e_oakland-height-areas-11x17-map-series-20241217.pdf",
+    "rows": 11,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/parks-amp-rec/documents/park-maintenance-zone-map.pdf",
+    "text": "Park Maintenance Zone Map (PDF, 3MB)",
+    "file": "data/city_files/Oakland/266517_park-maintenance-zone-map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/parks-amp-rec/documents/map-of-designated-bbq-locations.pdf",
+    "text": "Map of Designated BBQ Locations (PDF, 7MB)",
+    "file": "data/city_files/Oakland/7f6fc8_map-of-designated-bbq-locations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://static1.squarespace.com/static/67ecbaa3beedfc4930e15200/t/68a354360098776dee2753a2/1755534390461/Oakland+Parks.pdf",
+    "text": "Recreation Center Map",
+    "file": "data/city_files/Oakland/10b3c1_Oakland_Parks.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/transportation/documents/parking-amp-vehicles/accessible-parking/accessible-on-street-parking-policy.pdf",
+    "text": "Accessible On-Street Parking Policy (PDF, 240KB)",
+    "file": "data/city_files/Oakland/4e4faf_accessible-on-street-parking-policy.pdf",
+    "rows": 25,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/transportation/documents/parking-amp-vehicles/oakpark/transportation-options.pdf",
+    "text": "Transportation Options (PDF, 982KB)",
+    "file": "data/city_files/Oakland/56d340_transportation-options.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/transportation/documents/parking-amp-vehicles/parklet-program/application-for-parklet-permit_20230630_fillable-1.pdf",
+    "text": "Parklet Applications (PDF, 298KB)",
+    "file": "data/city_files/Oakland/ada8dd_application-for-parklet-permit_20230630_fillable-1.pdf",
+    "rows": 99,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/transportation/documents/parking-amp-vehicles/parklet-program/sop-parklet-guidelines-march-2023-signed.pdf",
+    "text": "Parklet Program Guidelines (PDF, 405KB)",
+    "file": "data/city_files/Oakland/741186_sop-parklet-guidelines-march-2023-signed.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/transportation/documents/parking-amp-vehicles/parklet-program/parklet-guidelines-presentation-final-march-2023.pdf",
+    "text": "Parklet Program Guidelines Presentation (PDF, 4MB)",
+    "file": "data/city_files/Oakland/b2a0d6_parklet-guidelines-presentation-final-march-2023.pdf",
+    "rows": 31,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/transportation/documents/parking-amp-vehicles/parklet-program/flex-street-administrative-license-requirements-11.17.23-clean-fnl.pdf",
+    "text": "Flex Streets License Requirements (PDF, 176KB)",
+    "file": "data/city_files/Oakland/ce4be5_flex-street-administrative-license-requirements-11.17.23-clean-fnl.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.oaklandca.gov/": "View More Data",
+   "https://oakgis.maps.arcgis.com/apps/instant/lookup/index.html?appid=da589a352c8641459af8a0f890398d44": "Find Your Council District",
+   "https://experience.arcgis.com/experience/32e8f63fd0bc435f88d73a605c3866cc/?org=oakgis": "Bicycle Facilities and Projects Web Map",
+   "https://survey123.arcgis.com/share/91d2ff4e5d204da6875d1e5532b3ede6": "Volunteer Interest Form",
+   "https://www.arcgis.com/apps/dashboards/ab32f79e83e3435fbf7844b7e6f92575": "Park Lawn Mowing Schedule",
+   "https://www.arcgis.com/apps/dashboards/7b4cc00d79274452895de7084f825d8c": "Median Maintenance Schedule Map",
+   "https://oakland-tree-hub-oakgis.hub.arcgis.com/": "Oakland Street & Park Tree Map",
+   "https://oakgis.maps.arcgis.com/apps/instant/exhibit/index.html?appid=f418c905e1714cfc8a433df174be9af6": "View Water Refill Station Map",
+   "https://oakgis.maps.arcgis.com/apps/View/index.html?appid=25e2591b5f2447c9af13685f646e038c": "visit this map",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=9d9d83b414994227a0410c80f47bccb5&extent=-122.3985,37.7001,-122.0195,37.8921": "map viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=8cd63bb6e50042d994d2e29e8308c950&extent=-122.3566,37.6323,-122.0192,37.9202": "Online Interactive Map",
+   "https://experience.arcgis.com/experience/32e8f63fd0bc435f88d73a605c3866cc/page/Page/?org=oakgis&views=Public-Bike-Parking": "View online map of public bicycle parking in Oakland",
+   "https://experience.arcgis.com/experience/1d123ca0ece24b1ca2080d6b866a6584/page/Page/?views=DOT-CIP-%28Active%2FCompleted%29": "Capital Improvement Projects Map",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=403ecfdc0d074ce2a2d3a35db404ee04&extent=-122.2936,37.7878,-122.2382,37.8153": "Pedestrian and Bicyclist Counts",
+   "https://oakgis.maps.arcgis.com/apps/MapSeries/index.html?appid=ee9faea54aa440649c8d192794481f8e": "2017 Pedestrian Plan High Injury Network Tracking Map",
+   "https://oakgis.maps.arcgis.com/home/webmap/viewer.html?webmap=3b6bfc7372974f64a6e73012b72a8f08": "Oakland Communities of Concern Map",
+   "https://oakgis.maps.arcgis.com/apps/MapJournal/index.html?appid=54350ce0a8f344c0bfda30ea1d74e1a5": "Rectangular Rapid Flashing Beacon Locator Story Map",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=348de192c5e84bd8887bfa962ccda1a5&extent=-122.4278,37.667,-121.9207,37.9241": "Rectangular Rapid Flashing Beacon Locator Map",
+   "https://oakgis.maps.arcgis.com/home/webmap/viewer.html?webmap=7bee56b6e7ae4f028a5bff3135d3af08": "2017 Pedestrian Plan Layers Map",
+   "https://oakgis.maps.arcgis.com/home/item.html?id=0b08dc4e7378499086217359a4483861": "Pedestrian Plan High Injury Intersections Layer",
+   "https://oakgis.maps.arcgis.com/home/item.html?id=8e3829c32bd54aada514fa41b65268a8": "Pedestrian Plan High Injury Corridors Layer",
+   "https://oakgis.maps.arcgis.com/home/item.html?id=9d15b34e073243b1a4f2e5304600557a": "Pedestrian Plan Areas Layer",
+   "https://oakgis.maps.arcgis.com/apps/mapviewer/index.html?webmap=b2a6757880dc4ad08cda58c1469041d6": "Crowd Sourced Car Share Survey and Map",
+   "https://experience.arcgis.com/experience/14b91553288040a782565ba11984bdd2/page/Capital-Projects-Map": "OakDOT Projects Map*",
+   "https://data.oaklandca.gov/dataset/City-of-Oakland-Parking-Meters/wnjv-tz7z/about_data": "Parking Meter Inventory - Visualize and Download Data",
+   "https://data.oaklandca.gov/Public-Services/City-of-Oakland-Residential-Parking-Permit-Zones-M/6wms-4i8c": "Residential Parking Permit Zones - Web Map",
+   "https://data.oaklandca.gov/Public-Services/Residential-Parking-Permit-Zones/su5x-2u99/about_data": "Residential Parking Permit Zones - Visualize and Download Data",
+   "https://data.oaklandca.gov/Public-Safety/Parking-Citations-2012-2016/jjeh-vzgn/about_data": "Parking Citations - 2012-2016",
+   "https://data.oaklandca.gov/dataset/Parking-Citations-2017/8w4i-dkhk/about_data": "Parking Citations - 2017",
+   "https://data.oaklandca.gov/Public-Services/Parking-Citations-2018/whu3-7tcn/about_data": "Parking Citations - 2018"
+  }
+ },
+ "Paraná": {
+  "files": [],
+  "portals": {}
+ },
+ "Tallahassee": {
+  "files": [
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parking/Map - Kleman Plaza Top plus elevators.pdf",
+    "text": "",
+    "file": "data/city_files/Tallahassee/f690e0_Map_-_Kleman_Plaza_Top_plus_elevators.pdf",
+    "rows": 15,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/parks/parkmap.pdf",
+    "text": "Complete List of All City Parks",
+    "file": "data/city_files/Tallahassee/60de75_parkmap.pdf",
+    "rows": 107,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/cascades/cascades_map.pdf",
+    "text": "Download a higher resolution version of this map",
+    "file": "data/city_files/Tallahassee/1335fa_cascades_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/cascades/cascades_parking.pdf",
+    "text": "Download the parking map",
+    "file": "data/city_files/Tallahassee/baf674_cascades_parking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/parks/trails.pdf",
+    "text": "please see the comprehensive trails map",
+    "file": "data/city_files/Tallahassee/19cb8a_trails.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/discgolf/disc-tb.pdf",
+    "text": "Tom Brown Park Disc Golf Course Map",
+    "file": "data/city_files/Tallahassee/8eee4a_disc-tb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/discgolf/disc-mclean.pdf",
+    "text": "Jack McLean Disc Golf Course Map",
+    "file": "data/city_files/Tallahassee/d82f9f_disc-mclean.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/discgolf/disc-pp.pdf",
+    "text": "Paradise Park Disc Golf Course Map",
+    "file": "data/city_files/Tallahassee/13ed1d_disc-pp.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/parks/tombrownpermit.pdf",
+    "text": "Tom Brown Park Map",
+    "file": "data/city_files/Tallahassee/7b15d3_tombrownpermit.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/parks/magnoliatrail.pdf",
+    "text": "Magnolia Trail",
+    "file": "data/city_files/Tallahassee/31c33a_magnoliatrail.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260103/mf-system.pdf",
+    "text": "Weekday Routes",
+    "file": "data/city_files/Tallahassee/627b15_mf-system.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260103/sat-system.pdf",
+    "text": "Saturday Routes",
+    "file": "data/city_files/Tallahassee/53037c_sat-system.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260103/sn-system.pdf",
+    "text": "Night Routes",
+    "file": "data/city_files/Tallahassee/d01752_sn-system.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/mf-system.pdf",
+    "text": "PDF Map",
+    "file": "data/city_files/Tallahassee/4325b0_mf-system.pdf",
+    "rows": 13,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sat-system.pdf",
+    "text": "PDF Map",
+    "file": "data/city_files/Tallahassee/1a7fc8_sat-system.pdf",
+    "rows": 14,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sn-system.pdf",
+    "text": "PDF Map",
+    "file": "data/city_files/Tallahassee/325720_sn-system.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/fsu-heritage.pdf",
+    "text": "Heritage",
+    "file": "data/city_files/Tallahassee/0cf9e0_fsu-heritage.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/cascades/cascades_fitness.pdf",
+    "text": "Download a copy of the Fitness Map",
+    "file": "data/city_files/Tallahassee/cc647c_cascades_fitness.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/uploads/public/documents/airport/historicalreport.pdf",
+    "text": "Historical Reports",
+    "file": "data/city_files/Tallahassee/35d434_historicalreport.pdf",
+    "rows": 28,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/parks/lafheritagemap.pdf",
+    "text": "View the full map of the park",
+    "file": "data/city_files/Tallahassee/c45ffc_lafheritagemap.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sn-2.pdf",
+    "text": "Download Route 2 (Nights) Route PDF Map",
+    "file": "data/city_files/Tallahassee/ba4c94_sn-2.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sn-5.pdf",
+    "text": "Download Route 5 (Nights) Route PDF Map",
+    "file": "data/city_files/Tallahassee/309ddf_sn-5.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://talgov.com/uploads/public/documents/parks/parks/gov_park_map.pdf",
+    "text": "Governor's Park",
+    "file": "data/city_files/Tallahassee/5a0cde_gov_park_map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/uploads/public/documents/parks/parks/ihead-map.pdf",
+    "text": "Indian Head Greenway",
+    "file": "data/city_files/Tallahassee/22d91f_ihead-map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/parks/sanluis_map.pdf",
+    "text": "San Luis Mission Park",
+    "file": "data/city_files/Tallahassee/55e76c_sanluis_map.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://talgov.com/uploads/public/documents/parks/parks/silverlake-map.pdf",
+    "text": "Silver Lake Park",
+    "file": "data/city_files/Tallahassee/047300_silverlake-map.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/parks/parks/ferntrail.pdf",
+    "text": "Fern Trail",
+    "file": "data/city_files/Tallahassee/55dd65_ferntrail.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/place/comp_plan/tlc-cp02-landmobimaps.pdf",
+    "text": "Florida Department of Transportation Roadway Context Classification Maps",
+    "file": "data/city_files/Tallahassee/67a324_tlc-cp02-landmobimaps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/place/mmtd_map.pdf",
+    "text": "Full-size PDF of the MMTD map",
+    "file": "data/city_files/Tallahassee/e959ee_mmtd_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/uploads/public/images/projects/sabalmap_new.pdf",
+    "text": "View a larger version of this map here.",
+    "file": "data/city_files/Tallahassee/2cc879_sabalmap_new.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sat-a.pdf",
+    "text": "Download Azalea Route PDF Map",
+    "file": "data/city_files/Tallahassee/bad839_sat-a.pdf",
+    "rows": 10,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sat-b.pdf",
+    "text": "Download Big Bend Route PDF Map",
+    "file": "data/city_files/Tallahassee/3c7c3b_sat-b.pdf",
+    "rows": 20,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sat-e.pdf",
+    "text": "Download Evergreen Route PDF Map",
+    "file": "data/city_files/Tallahassee/a66409_sat-e.pdf",
+    "rows": 6,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sat-f.pdf",
+    "text": "Download Forest Route PDF Map",
+    "file": "data/city_files/Tallahassee/67e851_sat-f.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sat-g.pdf",
+    "text": "Download Gulf Route PDF Map",
+    "file": "data/city_files/Tallahassee/4c7dfb_sat-g.pdf",
+    "rows": 18,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260103/sat-l.pdf",
+    "text": "Download Live Oak Route PDF Map",
+    "file": "data/city_files/Tallahassee/30e5ba_sat-l.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sat-m.pdf",
+    "text": "Download Moss Route PDF Map",
+    "file": "data/city_files/Tallahassee/7e9199_sat-m.pdf",
+    "rows": 15,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sat-r.pdf",
+    "text": "Download Red Hills Route PDF Map",
+    "file": "data/city_files/Tallahassee/b759d1_sat-r.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talgov.com/Uploads/Public/Documents/starmetro/20260801/sat-t.pdf",
+    "text": "Download Tall Timbers Route PDF Map",
+    "file": "data/city_files/Tallahassee/7c3f8b_sat-t.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.talgov.com/Uploads/Public/Documents/parks/athletics/baseball/ybase_propzones.pdf",
+    "text": "Upper League Baseball All Star Zone Map",
+    "file": "data/city_files/Tallahassee/54774b_ybase_propzones.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/953933ff58694ec7b90b4abbcf80521b/": "Memorial/Commemorative Tree & Bench Locator",
+   "https://tlcgis.leoncountyfl.gov/biketallahassee/": "view a map of existing bike rack locations",
+   "https://experience.arcgis.com/experience/b185d671f3714392b6ad781f27e8b2ec": "Zoning and Land Use Map Viewer",
+   "http://www.tlcgis.org/": "Tallahassee-Leon County GIS",
+   "https://experience.arcgis.com/experience/6603276dcfdf49c5ac2b2f7bbabd606e?org=tlcgis": "This is an excellent all purpose map",
+   "https://experience.arcgis.com/experience/f8a2450e8bda47969d434908825ca194?org=tlcgis": "This map provides one stop shopping",
+   "https://tlcgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=f0806735f59f421696ff19f4ea7ead0a": "multimodal transportation district (MMTD)",
+   "https://tlcgis.maps.arcgis.com/apps/dashboards/c5c144e1e52e45f3b655c0a462690197": "use this tool"
+  }
+ },
+ "Tokat": {
+  "files": [],
+  "portals": {
+   "https://tokat.bel.tr/opendata": "İçeriğe geç",
+   "https://tokat.bel.tr/open-data": "İçeriğe geç"
+  }
+ },
+ "Iğdır": {
+  "files": [],
+  "portals": {}
+ },
+ "Palm Bay": {
+  "files": [],
+  "portals": {}
+ },
+ "Dearborn": {
+  "files": [
+   {
+    "url": "https://dearborn.gov/sites/default/files/2025-09/Recycling_Trash_with_glass_EandA.pdf",
+    "text": "Trash, Recycling & Yard Waste Instructions (English & Arabic)",
+    "file": "data/city_files/Dearborn/58d88b_Recycling_Trash_with_glass_EandA.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2024-06/Collection%20Days%20-%20English.pdf",
+    "text": "Public Service Days Schedule & Map",
+    "file": "data/city_files/Dearborn/d82498_Collection_20Days_20-_20English.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2025-01/New%20Trash%20Order%20Form%202025.pdf",
+    "text": "Application for Extra Trash and/or Recycling Cart",
+    "file": "data/city_files/Dearborn/d15bab_New_20Trash_20Order_20Form_202025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2025-11/ALTERNATIVE%20PARKING%20DURING%20SNOW%20EMERGENCIES_2025.pdf",
+    "text": "Alternative Parking List",
+    "file": "data/city_files/Dearborn/00155b_ALTERNATIVE_20PARKING_20DURING_20SNOW_20EMERGENCIES_2025.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2025-10/Sewer%20Repair%20Permit%20Form_1.pdf",
+    "text": "Sewer Repair Permit Form Learn More",
+    "file": "data/city_files/Dearborn/aa6e6b_Sewer_20Repair_20Permit_20Form_1.pdf",
+    "rows": 26,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-04/BS%26A%20How%20To%20Guide_%20Garage_Estate%20Sales_04162026_Redacted.pdf",
+    "text": "How-to Guide",
+    "file": "data/city_files/Dearborn/f9d800_BS_26A_20How_20To_20Guide__20Garage_Estate_20Sales_04162026_Redacted.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-10/Sample%20Ballot%20English%20-%20House%20District%203%20-%20Pcts%201-32_LENGTH.pdf",
+    "text": "General Election 2026 Sample Ballot House District 3 (Pcts 1-32) - English",
+    "file": "data/city_files/Dearborn/5dbd3f_Sample_20Ballot_20English_20-_20House_20District_203_20-_20Pcts_201-32",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-10/Sample%20Ballot%20Arabic%20-%20House%20District%203%20-%20Pcts%201-32_LENGTH.pdf",
+    "text": "General Election 2026 Sample Ballot House District 3 (Pcts 1-32) - Arabic",
+    "file": "data/city_files/Dearborn/c990b0_Sample_20Ballot_20Arabic_20-_20House_20District_203_20-_20Pcts_201-32_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-10/Sample%20Ballot%20English%20-%20House%20District%2015%20-%20Pcts%2033-50_LENGTH.pdf",
+    "text": "General Election 2026 Sample Ballot House District 15 (Pcts 33-50) - English",
+    "file": "data/city_files/Dearborn/801f3e_Sample_20Ballot_20English_20-_20House_20District_2015_20-_20Pcts_2033-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-10/Sample%20Ballot%20Arabic%20-%20House%20District%2015%20-%20Pcts%2033-50_Length_2_2026.pdf",
+    "text": "General Election 2026 Sample Ballot House District 15 (Pcts 33-50) - Arabic",
+    "file": "data/city_files/Dearborn/d4592b_Sample_20Ballot_20Arabic_20-_20House_20District_2015_20-_20Pcts_2033-5",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-07/Sample%20Ballot%20English%20-%20House%20District%203%20-%20Pcts%201-32_CORRECT.pdf",
+    "text": "2026 Sample Ballot House District 3 (Pcts 1-32) - English",
+    "file": "data/city_files/Dearborn/c08394_Sample_20Ballot_20English_20-_20House_20District_203_20-_20Pcts_201-32",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-07/Sample%20Ballot%20Arabic%20-%20House%20District%203%20-%20Pcts%201-32_HORIZONTAL%202.pdf",
+    "text": "2026 Sample Ballot House District 3 (Pcts 1-32) - Arabic",
+    "file": "data/city_files/Dearborn/b9a53e_Sample_20Ballot_20Arabic_20-_20House_20District_203_20-_20Pcts_201-32_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-07/Sample%20Ballot%20English%20-%20House%20District%2015%20-%20%20Pcts%2033-50_Correct.pdf",
+    "text": "2026 Sample Ballot House District 15 (Pcts 33-50) - English",
+    "file": "data/city_files/Dearborn/c6481b_Sample_20Ballot_20English_20-_20House_20District_2015_20-_20_20Pcts_20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-07/Sample%20Ballot%20Arabic%20-%20House%20District%2015%20-%20Pcts%2033-50_HORIZONTAL.pdf",
+    "text": "2026 Sample Ballot House District 15 (Pcts 33-50) - Arabic",
+    "file": "data/city_files/Dearborn/b4d0cf_Sample_20Ballot_20Arabic_20-_20House_20District_2015_20-_20Pcts_2033-5",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-02/Absent%20Voter%20Ballot%20Application%20Fillable%202026.pdf",
+    "text": "Absentee ballot applications",
+    "file": "data/city_files/Dearborn/1f3bfc_Absent_20Voter_20Ballot_20Application_20Fillable_202026.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2025-08/Absent%20Voter%20Ballot%20Application%20Arabic%20Fillable%20%281%29%20%281%29.pdf",
+    "text": "Absentee ballot applications are also available in Arabic.",
+    "file": "data/city_files/Dearborn/c45cd1_Absent_20Voter_20Ballot_20Application_20Arabic_20Fillable_20_281_29_20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-11/Early_AV_Ballot_Processing_Information_Posting%20Nov%202026%20%282%29.pdf",
+    "text": "Early Absent Voter Ballot Information for the Nov. 3, 2026 General Election",
+    "file": "data/city_files/Dearborn/5e10f1_Early_AV_Ballot_Processing_Information_Posting_20Nov_202026_20_282_29.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-05/2026%20Dearborn%20Precinct%20Map.pdf",
+    "text": "Dearborn Precinct & Polling Place Map",
+    "file": "data/city_files/Dearborn/92c458_2026_20Dearborn_20Precinct_20Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-10/Early_AV_Ballot_Processing_Information_Posting%20Nov%202026.pdf",
+    "text": "Nov. 3, 2026 General Election: Early Absent Voter Ballot Information",
+    "file": "data/city_files/Dearborn/5d2f76_Early_AV_Ballot_Processing_Information_Posting_20Nov_202026.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-08/2026%20Early_AV_Ballot_Processing_Information_Posting%20%281%29.pdf",
+    "text": "2026 Primary Election: Early Absentee Voter Ballot Information",
+    "file": "data/city_files/Dearborn/9e8954_2026_20Early_AV_Ballot_Processing_Information_Posting_20_281_29.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/f40b94e58e4a47fcbb89b3e69c64ec6d": "Lead Service Line Information",
+   "https://experience.arcgis.com/experience/bc8f2fbc19a5496582571a3d818a7035": "Map of Snow Plow Routes",
+   "https://experience.arcgis.com/experience/030c5f93e0194aeeab9149e35485731d/page/Page/": "Map of Current Projects",
+   "https://dbnmi.maps.arcgis.com/apps/instant/reporter/index.html?appid=ed6460b2893e4fd3a4a97a7176771209": "Submit A Request"
+  }
+ },
+ "Lynn": {
+  "files": [],
+  "portals": {}
+ },
+ "Villa Gobernador Gálvez": {
+  "files": [],
+  "portals": {}
+ },
+ "Concepción del Uruguay": {
+  "files": [],
+  "portals": {}
+ },
+ "Parma": {
+  "files": [],
+  "portals": {}
+ },
+ "North Port": {
+  "files": [],
+  "portals": {
+   "https://cityofnorthport.com/opendata": "Back to top",
+   "https://cityofnorthport.com/open-data": "Back to top"
+  }
+ },
+ "Greenville": {
+  "files": [],
+  "portals": {
+   "https://grvlsc.maps.arcgis.com/apps/instant/media/index.html?appid=cc31812fa7ae44a9a46bc24d84d9828f": "View larger map",
+   "https://citygis.greenvillesc.gov/Html5Viewer/index.html?viewer=parksandrecfinder": "Park Finder Interactive Map",
+   "https://grvlsc.maps.arcgis.com/apps/instant/minimalist/index.html?appid=c29d31875d334912ab029a495cf9f259": "Swamp Rabbit Trail Interactive Map",
+   "https://storymaps.arcgis.com/collections/4a3096011985490b971d3f778466c9b4": "Public Art",
+   "https://grvlsc.maps.arcgis.com/apps/instant/lookup/index.html?appid=d6bb05dc9b7f43c6afa17ab9d8090e76": "District Map",
+   "https://grvlsc.maps.arcgis.com/apps/instant/basic/index.html?appid=5c6dcfa438e34b58ba56248107da5c5e": "Upcoming Election Polling Locations",
+   "https://grvlsc.maps.arcgis.com/apps/instant/lookup/index.html?appid=5ed6fd8dcddd4253885e27f01a5c6e63": "Interactive Floodplain Map",
+   "https://gis.greenvillesc.gov/": "GIS & MAPS",
+   "https://citygis.greenvillesc.gov/downtownreborn/index.html": "Downtown Reborn Story Map",
+   "https://storymaps.arcgis.com/stories/43dd9f72b2854708bd61d53b95b49a79": "Historic Locations",
+   "https://grvlsc.maps.arcgis.com/apps/instant/lookup/index.html?appid=9e56d15ad4334a76b730336176894e1e": "City Service Locator Map"
+  }
+ },
+ "Coronel Rosales Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Ocala": {
+  "files": [],
+  "portals": {}
+ },
+ "Meriden": {
+  "files": [],
+  "portals": {}
+ },
+ "Terre Haute": {
+  "files": [
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Transit/Terre Haute Transit Rules.pdf",
+    "text": "Transit System Rules",
+    "file": "data/city_files/Terre_Haute/142fc9_Terre_Haute_Transit_Rules.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Transit/Reasonable Modification policy.pdf",
+    "text": "Reasonable Modification Policy",
+    "file": "data/city_files/Terre_Haute/2cc6b8_Reasonable_Modification_policy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 1.pdf?t=202509161000350",
+    "text": "Kandace Hinton, Councilperson District 1",
+    "file": "data/city_files/Terre_Haute/fb3f5e_2022_City_Council_District_1.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 2.pdf?t=202509161000350",
+    "text": "Amanda Thompson, Councilperson District 2",
+    "file": "data/city_files/Terre_Haute/9dd8f9_2022_City_Council_District_2.pdf",
+    "rows": 24,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 3.pdf?t=202509161000350",
+    "text": "Cheryl Loudermilk, Councilperson District 3",
+    "file": "data/city_files/Terre_Haute/346385_2022_City_Council_District_3.pdf",
+    "rows": 39,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 4.pdf?t=202509161000350",
+    "text": "Todd Nation, Councilperson District 4",
+    "file": "data/city_files/Terre_Haute/78fcec_2022_City_Council_District_4.pdf",
+    "rows": 21,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 5.pdf?t=202509161000350",
+    "text": "James \"Jim\" Chalos, Councilperson District 5",
+    "file": "data/city_files/Terre_Haute/5a0e4b_2022_City_Council_District_5.pdf",
+    "rows": 37,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 6.pdf?t=202509161000350",
+    "text": "Anthony Dinkel, Councilperson District 6",
+    "file": "data/city_files/Terre_Haute/97999c_2022_City_Council_District_6.pdf",
+    "rows": 40,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Cemeteries/Search the Old CEM Database/cemetery-12-11-2012-formatted-for-printing.pdf?t=202509161000390",
+    "text": "Old CEM Database",
+    "file": "data/city_files/Terre_Haute/0d918b_cemetery-12-11-2012-formatted-for-printing.pdf",
+    "rows": 4320,
+    "bike_rows": 45
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Sewage Billing/Recycling/What can be recycled - Republic.pdf?t=202509161000540",
+    "text": "click here",
+    "file": "data/city_files/Terre_Haute/f9c87e_What_can_be_recycled_-_Republic.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Transit/Bus Routes/HoneyCreekMall.pdf?t=202509161000440",
+    "text": "Honey Creek Mall",
+    "file": "data/city_files/Terre_Haute/a526a2_HoneyCreekMall.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Transit/Bus Routes/busbookreaderspreads-7-1.pdf?t=202509161000390",
+    "text": "North 19th/12 Points",
+    "file": "data/city_files/Terre_Haute/05ba7a_busbookreaderspreads-7-1.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Transit/Bus Routes/Plaza North Route Map.pdf?t=202601141523270",
+    "text": "Plaza North",
+    "file": "data/city_files/Terre_Haute/75e8cd_Plaza_North_Route_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Transit/Bus Routes/South7th.pdf?t=202509161000520",
+    "text": "South 7th",
+    "file": "data/city_files/Terre_Haute/4ea1fd_South7th.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Transit/Bus Routes/busbookreaderspreads-6-1.pdf?t=202509161000390",
+    "text": "Southeast/Southside",
+    "file": "data/city_files/Terre_Haute/a526d6_busbookreaderspreads-6-1.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Transit/Bus Routes/northeastevening.pdf?t=202509161000480",
+    "text": "Northeast Evening",
+    "file": "data/city_files/Terre_Haute/0e8b01_northeastevening.pdf",
+    "rows": 36,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Transit/Bus Routes/South7thEvening.pdf?t=202509161000520",
+    "text": "South 7th Evening",
+    "file": "data/city_files/Terre_Haute/1c3ba7_South7thEvening.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://terrehaute.in.gov/Documents/Services/Transit/Bus Routes/ivy-tech-campus-route-updated-2020.pdf?t=202509161000450",
+    "text": "Ivy Tech Campus Route",
+    "file": "data/city_files/Terre_Haute/9e4a54_ivy-tech-campus-route-updated-2020.pdf",
+    "rows": 28,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://terrehaute.in.gov/E_Wabash_E_Locust_Route_Image3.pdf?t=202511071430010",
+    "text": "EWabash/ELocust 11/17/25",
+    "file": "data/city_files/Terre_Haute/36176e_E_Wabash_E_Locust_Route_Image3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://terrehaute.in.gov/ISU Campus ROUTE 08.10.2026.pdf?t=202608101122190",
+    "text": "ISU Campus Route",
+    "file": "data/city_files/Terre_Haute/7ec689_ISU_Campus_ROUTE_08.10.2026.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Transit/Terre Haute Transit Rules.pdf",
+    "text": "Transit System Rules",
+    "file": "data/city_files/Terre_Haute/00d9ad_Terre_Haute_Transit_Rules.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Transit/Reasonable Modification policy.pdf",
+    "text": "Reasonable Modification Policy",
+    "file": "data/city_files/Terre_Haute/80879f_Reasonable_Modification_policy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 1.pdf?t=202509161000350",
+    "text": "Kandace Hinton, Councilperson District 1",
+    "file": "data/city_files/Terre_Haute/a4f1f8_2022_City_Council_District_1.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 2.pdf?t=202509161000350",
+    "text": "Amanda Thompson, Councilperson District 2",
+    "file": "data/city_files/Terre_Haute/7c5b7c_2022_City_Council_District_2.pdf",
+    "rows": 24,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 3.pdf?t=202509161000350",
+    "text": "Cheryl Loudermilk, Councilperson District 3",
+    "file": "data/city_files/Terre_Haute/437d9f_2022_City_Council_District_3.pdf",
+    "rows": 39,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 4.pdf?t=202509161000350",
+    "text": "Todd Nation, Councilperson District 4",
+    "file": "data/city_files/Terre_Haute/0bb7ac_2022_City_Council_District_4.pdf",
+    "rows": 21,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 5.pdf?t=202509161000350",
+    "text": "James \"Jim\" Chalos, Councilperson District 5",
+    "file": "data/city_files/Terre_Haute/b81222_2022_City_Council_District_5.pdf",
+    "rows": 37,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Government/City Council/City Council District Maps/2022 City Council District 6.pdf?t=202509161000350",
+    "text": "Anthony Dinkel, Councilperson District 6",
+    "file": "data/city_files/Terre_Haute/95c010_2022_City_Council_District_6.pdf",
+    "rows": 40,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Cemeteries/Search the Old CEM Database/cemetery-12-11-2012-formatted-for-printing.pdf?t=202509161000390",
+    "text": "Old CEM Database",
+    "file": "data/city_files/Terre_Haute/609afb_cemetery-12-11-2012-formatted-for-printing.pdf",
+    "rows": 4320,
+    "bike_rows": 45
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Sewage Billing/Recycling/What can be recycled - Republic.pdf?t=202509161000540",
+    "text": "click here",
+    "file": "data/city_files/Terre_Haute/5cb269_What_can_be_recycled_-_Republic.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Transit/Bus Routes/HoneyCreekMall.pdf?t=202509161000440",
+    "text": "Honey Creek Mall",
+    "file": "data/city_files/Terre_Haute/677e28_HoneyCreekMall.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Transit/Bus Routes/busbookreaderspreads-7-1.pdf?t=202509161000390",
+    "text": "North 19th/12 Points",
+    "file": "data/city_files/Terre_Haute/7f1774_busbookreaderspreads-7-1.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Transit/Bus Routes/Plaza North Route Map.pdf?t=202601141523270",
+    "text": "Plaza North",
+    "file": "data/city_files/Terre_Haute/4d8f95_Plaza_North_Route_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Transit/Bus Routes/South7th.pdf?t=202509161000520",
+    "text": "South 7th",
+    "file": "data/city_files/Terre_Haute/b60788_South7th.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Transit/Bus Routes/busbookreaderspreads-6-1.pdf?t=202509161000390",
+    "text": "Southeast/Southside",
+    "file": "data/city_files/Terre_Haute/16030a_busbookreaderspreads-6-1.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Transit/Bus Routes/northeastevening.pdf?t=202509161000480",
+    "text": "Northeast Evening",
+    "file": "data/city_files/Terre_Haute/808ddb_northeastevening.pdf",
+    "rows": 36,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Transit/Bus Routes/South7thEvening.pdf?t=202509161000520",
+    "text": "South 7th Evening",
+    "file": "data/city_files/Terre_Haute/200ca9_South7thEvening.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/Documents/Services/Transit/Bus Routes/ivy-tech-campus-route-updated-2020.pdf?t=202509161000450",
+    "text": "Ivy Tech Campus Route",
+    "file": "data/city_files/Terre_Haute/21756e_ivy-tech-campus-route-updated-2020.pdf",
+    "rows": 28,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/E_Wabash_E_Locust_Route_Image3.pdf?t=202511071430010",
+    "text": "EWabash/ELocust 11/17/25",
+    "file": "data/city_files/Terre_Haute/72c1be_E_Wabash_E_Locust_Route_Image3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.terrehaute.in.gov/ISU Campus ROUTE 08.10.2026.pdf?t=202608101122190",
+    "text": "ISU Campus Route",
+    "file": "data/city_files/Terre_Haute/acb6d5_ISU_Campus_ROUTE_08.10.2026.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://terrehaute.in.gov/departments/engineering/gis.php": "Interactive Maps",
+   "https://terrehaute.maps.arcgis.com/apps/webappviewer/index.html?id=e03b22885b7440fe9de839746271219c": "CLICK HERE",
+   "https://www.terrehaute.in.gov/departments/engineering/gis.php": "Interactive Maps"
+  }
+ },
+ "Puerto Iguazú": {
+  "files": [],
+  "portals": {}
+ },
+ "Chacabuco Partido": {
+  "files": [
+   {
+    "url": "https://chacabuco.gob.ar/wp-content/uploads/mapacultural/MAPACULTURAL-RAWSON.pdf",
+    "text": "",
+    "file": "data/city_files/Chacabuco_Partido/726cd7_MAPACULTURAL-RAWSON.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chacabuco.gob.ar/wp-content/uploads/mapacultural/MAPACULTURAL-CASTILLA.pdf",
+    "text": "",
+    "file": "data/city_files/Chacabuco_Partido/430b38_MAPACULTURAL-CASTILLA.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "St. Louis Park": {
+  "files": [],
+  "portals": {}
+ },
+ "Kodungallur Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Thodupuzha Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Wallingford": {
+  "files": [
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/news/PDFs/Route_15_Lane_Closure_Flyer_AUG2026_FINAL.pdf",
+    "text": "IMPORTANT INFORMATION:  Route 15 Lane Closure / Detour Information Beginning at 10:00 p.m. on Sunday, August 23, 2026, l",
+    "file": "data/city_files/Wallingford/bc8555_Route_15_Lane_Closure_Flyer_AUG2026_FINAL.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://town.wallingford.ct.us/customer-content/www/CMS/files/RecycRegsF92711.pdf",
+    "text": "Recycling Regulations (PDF)",
+    "file": "data/city_files/Wallingford/db50ba_RecycRegsF92711.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/-/media/deep/permits_and_licenses/water_discharge_general_permits/ms4gppdf.pdf?rev=421850aa07984de88c7c825e88355341&hash=99644DE204762AF74E214EBADBA561A0",
+    "text": "MS4 General Permit",
+    "file": "data/city_files/Wallingford/2d1568_ms4gppdf.pdf",
+    "rows": 42,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/DPW_Stormwater_and_You/Illicit_Discharges_and_Water_Pollution.pdf",
+    "text": "Illicit Discharges and Water Pollution",
+    "file": "data/city_files/Wallingford/416055_Illicit_Discharges_and_Water_Pollution.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://town.wallingford.ct.us/customer-content/www/CMS/files/Recycle_CT_Flyer_Engl-WhatsIn.pdf",
+    "text": "“What’s In - What’s Out” Poster from DEEP",
+    "file": "data/city_files/Wallingford/cdc3e7_Recycle_CT_Flyer_Engl-WhatsIn.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/THERMOSTAT_RECYCLERS.pdf",
+    "text": "Local vendors that take thermostats (call first)",
+    "file": "data/city_files/Wallingford/cdb3d6_THERMOSTAT_RECYCLERS.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/RDCSrCouponRulesFlyer07232026.pdf",
+    "text": "Recycling, Composting & Waste Disposal for Wallingford Residents",
+    "file": "data/city_files/Wallingford/a13821_RDCSrCouponRulesFlyer07232026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_Cover.pdf",
+    "text": "Cover",
+    "file": "data/city_files/Wallingford/24c20b_2025_Assessors_Maps_Cover.pdf",
+    "rows": 23,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_1.pdf",
+    "text": "Map 1",
+    "file": "data/city_files/Wallingford/9f133f_2025_Assessors_Maps_1.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_2.pdf",
+    "text": "Map 2",
+    "file": "data/city_files/Wallingford/99ef86_2025_Assessors_Maps_2.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_3.pdf",
+    "text": "Map 3",
+    "file": "data/city_files/Wallingford/ddf0ae_2025_Assessors_Maps_3.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_4.pdf",
+    "text": "Map 4",
+    "file": "data/city_files/Wallingford/8abc8a_2025_Assessors_Maps_4.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_5.pdf",
+    "text": "Map 5",
+    "file": "data/city_files/Wallingford/7a2c7f_2025_Assessors_Maps_5.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_6.pdf",
+    "text": "Map 6",
+    "file": "data/city_files/Wallingford/65c60b_2025_Assessors_Maps_6.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_7.pdf",
+    "text": "Map 7",
+    "file": "data/city_files/Wallingford/cd56bd_2025_Assessors_Maps_7.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_8.pdf",
+    "text": "Map 8",
+    "file": "data/city_files/Wallingford/bde0b8_2025_Assessors_Maps_8.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_9.pdf",
+    "text": "Map 9",
+    "file": "data/city_files/Wallingford/643c8a_2025_Assessors_Maps_9.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_10.pdf",
+    "text": "Map 10",
+    "file": "data/city_files/Wallingford/a2c5d2_2025_Assessors_Maps_10.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_11.pdf",
+    "text": "Map 11",
+    "file": "data/city_files/Wallingford/301948_2025_Assessors_Maps_11.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_12.pdf",
+    "text": "Map 12",
+    "file": "data/city_files/Wallingford/16918b_2025_Assessors_Maps_12.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_13.pdf",
+    "text": "Map 13",
+    "file": "data/city_files/Wallingford/1388a1_2025_Assessors_Maps_13.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_14.pdf",
+    "text": "Map 14",
+    "file": "data/city_files/Wallingford/93d7d6_2025_Assessors_Maps_14.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_15.pdf",
+    "text": "Map 15",
+    "file": "data/city_files/Wallingford/650d64_2025_Assessors_Maps_15.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_16.pdf",
+    "text": "Map 16",
+    "file": "data/city_files/Wallingford/955cbc_2025_Assessors_Maps_16.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_17.pdf",
+    "text": "Map 17",
+    "file": "data/city_files/Wallingford/dd84da_2025_Assessors_Maps_17.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_18.pdf",
+    "text": "Map 18",
+    "file": "data/city_files/Wallingford/83414a_2025_Assessors_Maps_18.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_19.pdf",
+    "text": "Map 19",
+    "file": "data/city_files/Wallingford/0706a5_2025_Assessors_Maps_19.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_20.pdf",
+    "text": "Map 20",
+    "file": "data/city_files/Wallingford/a52de8_2025_Assessors_Maps_20.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_21.pdf",
+    "text": "Map 21",
+    "file": "data/city_files/Wallingford/121737_2025_Assessors_Maps_21.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_22.pdf",
+    "text": "Map 22",
+    "file": "data/city_files/Wallingford/5d29dc_2025_Assessors_Maps_22.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_23.pdf",
+    "text": "Map 23",
+    "file": "data/city_files/Wallingford/6757ae_2025_Assessors_Maps_23.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_24.pdf",
+    "text": "Map 24",
+    "file": "data/city_files/Wallingford/d9552f_2025_Assessors_Maps_24.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_25.pdf",
+    "text": "Map 25",
+    "file": "data/city_files/Wallingford/b65ed3_2025_Assessors_Maps_25.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_26.pdf",
+    "text": "Map 26",
+    "file": "data/city_files/Wallingford/31e408_2025_Assessors_Maps_26.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_27.pdf",
+    "text": "Map 27",
+    "file": "data/city_files/Wallingford/b23f52_2025_Assessors_Maps_27.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_28.pdf",
+    "text": "Map 28",
+    "file": "data/city_files/Wallingford/3280af_2025_Assessors_Maps_28.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_29.pdf",
+    "text": "Map 29",
+    "file": "data/city_files/Wallingford/fdd1fa_2025_Assessors_Maps_29.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://town.wallingford.ct.us/Customer-Content/www/CMS/files/assessor/Tax_Maps/2025_Assessors_Maps_30.pdf",
+    "text": "Map 30",
+    "file": "data/city_files/Wallingford/cb1dd0_2025_Assessors_Maps_30.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {}
+ },
+ "Varkala Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Bayındır": {
+  "files": [],
+  "portals": {}
+ },
+ "Braintree": {
+  "files": [],
+  "portals": {
+   "https://maps-braintreema.hub.arcgis.com/": "GIS"
+  }
+ },
+ "Portage": {
+  "files": [],
+  "portals": {}
+ },
+ "Wildomar": {
+  "files": [],
+  "portals": {}
+ },
+ "Wenatchee": {
+  "files": [],
+  "portals": {}
+ },
+ "Lexington": {
+  "files": [
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "text": "有中文版本",
+    "file": "data/city_files/Lexington/9365a3_Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "text": "Có sẵn bằng tiếng Việt",
+    "file": "data/city_files/Lexington/915a27_Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Hindi.pdf",
+    "text": "हिंदी में उपलब्ध है",
+    "file": "data/city_files/Lexington/039bcd_smart-recycling-guide-Hindi.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle_Smart_Infographic-Spanish.pdf",
+    "text": "Disponible en Español",
+    "file": "data/city_files/Lexington/b7116d_Recycle_Smart_Infographic-Spanish.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Smart-Recycling-Guide-Portuguese-1.pdf",
+    "text": "Disponível em português",
+    "file": "data/city_files/Lexington/827cea_Smart-Recycling-Guide-Portuguese-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://passio3.com/lexpress/passioTransit/gtfs/google_transit.zip",
+    "text": "Download our GTFS files.",
+    "file": "data/city_files/Lexington/480e24_google_transit.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://minutemanbikeway.org/Media/AlewifeGreenway.pdf",
+    "text": "map",
+    "file": "data/city_files/Lexington/f45c10_AlewifeGreenway.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.vgsi.com/lexingtonma/": "Assessor's Property Database",
+   "https://townlex.maps.arcgis.com/apps/dashboards/f4a9c9ac048e410b9a539278ebe1ec55": "Current Year Engineering Construction Projects Live GIS",
+   "https://experience.arcgis.com/experience/a1964c9ce9434331869c6ab82c01f379/?data_id=widget_22_output_config_1%3A0": "Simple Interactive GIS Map showing Road Inventory (Ownership)",
+   "https://experience.arcgis.com/experience/d6d03878cdef430daca0864f9cd3c488": "Interactive GIS with direct links to Record Water and Sewer Plans",
+   "https://maps.massgis.digital.mass.gov/MassMapper/MassMapper.html": "MassGIS Mapper app",
+   "https://townlex.maps.arcgis.com/apps/instant/basic/index.html?appid=3813d30f3f1d4e14a0caf9af6a6cfc6d": "Interactive map of Lexington's historical properties, with links to information about each property",
+   "https://townlex.maps.arcgis.com/apps/webappviewer/index.html?id=c3360fe99b414a5e94065e816fe84a5a": "Town Online Map",
+   "https://townlex.maps.arcgis.com/apps/instant/exhibit/index.html?appid=e9efdf65520c41d69845daea1d169249": "Interactive map of historical properties with links to survey forms"
+  }
+ },
+ "Salisbury": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/d1d30fe8cad84e9ea30095882a3a050b": "Report an Issue",
+   "https://salisbury.md/06/15/2021/salisbury-launches-first-open-data-hub-on-the-lower-eastern-shore": "Salisbury Launches First Open Data Hub on the Lower Eastern Shore"
+  }
+ },
+ "Atwater": {
+  "files": [
+   {
+    "url": "http://www.atwater.org/docs/CALocation.PDF",
+    "text": "California Location Map",
+    "file": "data/city_files/Atwater/648d34_CALocation.PDF",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.atwater.org/docs/AtwaterTransportation.PDF",
+    "text": "Atwater Transportation Map",
+    "file": "data/city_files/Atwater/c9a937_AtwaterTransportation.PDF",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.atwater.org/docs/RDA%20Map.pdf",
+    "text": "Atwater Redevelopment Project Area",
+    "file": "data/city_files/Atwater/e4af43_RDA_20Map.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atwater.org/wp-content/uploads/2023/07/Zoning-Map.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Atwater/57bbe8_Zoning-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atwater.org/wp-content/uploads/2026/04/General-Plan-Map-Dec-2025.pdf",
+    "text": "City of Atwater General Plan",
+    "file": "data/city_files/Atwater/a7eb33_General-Plan-Map-Dec-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atwater.org/wp-content/uploads/2020/03/parking-appeal.pdf",
+    "text": "parking-appeal",
+    "file": "data/city_files/Atwater/bcc092_parking-appeal.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atwater.org/wp-content/uploads/2024/02/Project-24-01-Community-Center-Roof-Repairs.pdf",
+    "text": "Project 24-01 Community Center Roof Repairs",
+    "file": "data/city_files/Atwater/10345d_Project-24-01-Community-Center-Roof-Repairs.pdf",
+    "rows": 158,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.atwater.org/wp-content/uploads/2025/03/3308-22-Approves-Budget-Amendment-No.-27-RE-ARPA-Fund-5-YR-CIP-Third-St.-Atwater-Blvd.-Repairs.pdf",
+    "text": "3308-22 Approves Budget Amendment No. 27 RE ARPA Fund & 5-YR CIP, Third St. & Atwater Blvd. Repairs",
+    "file": "data/city_files/Atwater/0ce4da_3308-22-Approves-Budget-Amendment-No.-27-RE-ARPA-Fund-5-YR-CIP-Third-S",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atwater.org/wp-content/uploads/2023/04/map.pdf",
+    "text": "map",
+    "file": "data/city_files/Atwater/163a80_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "LaGrange": {
+  "files": [],
+  "portals": {}
+ },
+ "Atascadero": {
+  "files": [
+   {
+    "url": "https://atascadero.org/sites/default/files/2023-06/Zoning%20%281%29.pdf",
+    "text": "Zoning Map (PDF)",
+    "file": "data/city_files/Atascadero/e75106_Zoning_20_281_29.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://atascadero.org/sites/default/files/2023-06/AtascaderoBikePlanPRC_10_26_10_Draft2.pdf",
+    "text": "Bicycle Transportation Plan (Maps on pages 13, 14, 22, 24, 25 & 31) (PDF)",
+    "file": "data/city_files/Atascadero/9fcefd_AtascaderoBikePlanPRC_10_26_10_Draft2.pdf",
+    "rows": 138,
+    "bike_rows": 58
+   },
+   {
+    "url": "https://atascadero.org/sites/default/files/2023-06/Fire%20Severity%20Zone%20Map%20%281%29.pdf",
+    "text": "Fire Severity Zone Map (updated 02/25/2021) (PDF)",
+    "file": "data/city_files/Atascadero/544689_Fire_20Severity_20Zone_20Map_20_281_29.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://atascadero.org/sites/default/files/2023-06/ContourMap.pdf",
+    "text": "Contour Map (updated 02/12/2009) (PDF)",
+    "file": "data/city_files/Atascadero/ba795d_ContourMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://atascadero.org/sites/default/files/2023-06/AerialPhotoMap.pdf",
+    "text": "Aerial Photo Map (updated 04/01/2009) (PDF)",
+    "file": "data/city_files/Atascadero/c60263_AerialPhotoMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/PD%20-%20PARKING%20CITATION%20APPEALS%20PROCESS.doc_0.pdf",
+    "text": "Parking Citation Appeals Process (PDF)",
+    "file": "data/city_files/Atascadero/9c668c_PD_20-_20PARKING_20CITATION_20APPEALS_20PROCESS.doc_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/Parking%20Citation%20Hearing%20Form.pdf",
+    "text": "Request for Administrative Review Form (PDF)",
+    "file": "data/city_files/Atascadero/f2e7c5_Parking_20Citation_20Hearing_20Form.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/2024%20School%20Drop-Off-%20Pick-Up%20Routes.pdf",
+    "text": "City",
+    "file": "data/city_files/Atascadero/a62e1e_2024_20School_20Drop-Off-_20Pick-Up_20Routes.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/LN%20080525%20-%202025%20Cruise%20Nite%20Route.pdf",
+    "text": "",
+    "file": "data/city_files/Atascadero/6ed9e9_LN_20080525_20-_202025_20Cruise_20Nite_20Route.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/2023-06/Zoning%20%281%29.pdf",
+    "text": "Zoning Map (PDF)",
+    "file": "data/city_files/Atascadero/2129b0_Zoning_20_281_29.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/2023-06/AtascaderoBikePlanPRC_10_26_10_Draft2.pdf",
+    "text": "Bicycle Transportation Plan (Maps on pages 13, 14, 22, 24, 25 & 31) (PDF)",
+    "file": "data/city_files/Atascadero/1853e1_AtascaderoBikePlanPRC_10_26_10_Draft2.pdf",
+    "rows": 138,
+    "bike_rows": 58
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/2023-06/Fire%20Severity%20Zone%20Map%20%281%29.pdf",
+    "text": "Fire Severity Zone Map (updated 02/25/2021) (PDF)",
+    "file": "data/city_files/Atascadero/17ac3b_Fire_20Severity_20Zone_20Map_20_281_29.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/2023-06/ContourMap.pdf",
+    "text": "Contour Map (updated 02/12/2009) (PDF)",
+    "file": "data/city_files/Atascadero/0dcfdc_ContourMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/2023-06/AerialPhotoMap.pdf",
+    "text": "Aerial Photo Map (updated 04/01/2009) (PDF)",
+    "file": "data/city_files/Atascadero/c6a693_AerialPhotoMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/CH-%20Meeting%20Rental%20Pricing%20Historic%20Atascadero%20City%20Hall_0.pdf",
+    "text": "view the City Hall Meeting Reservations information sheet (PDF)",
+    "file": "data/city_files/Atascadero/8d165c_CH-_20Meeting_20Rental_20Pricing_20Historic_20Atascadero_20City_20Hall",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/2023-09/PW_TransitFareZones.pdf",
+    "text": "Zone Fare Map (PDF)",
+    "file": "data/city_files/Atascadero/f5d3ab_PW_TransitFareZones.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://recreation@atascadero.org/sites/default/files/2023-06/Zoning%20%281%29.pdf",
+    "text": "Zoning Map (PDF)",
+    "file": "data/city_files/Atascadero/ac1eb3_Zoning_20_281_29.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://recreation@atascadero.org/sites/default/files/2023-06/AtascaderoBikePlanPRC_10_26_10_Draft2.pdf",
+    "text": "Bicycle Transportation Plan (Maps on pages 13, 14, 22, 24, 25 & 31) (PDF)",
+    "file": "data/city_files/Atascadero/2738ab_AtascaderoBikePlanPRC_10_26_10_Draft2.pdf",
+    "rows": 138,
+    "bike_rows": 58
+   },
+   {
+    "url": "http://recreation@atascadero.org/sites/default/files/2023-06/Fire%20Severity%20Zone%20Map%20%281%29.pdf",
+    "text": "Fire Severity Zone Map (updated 02/25/2021) (PDF)",
+    "file": "data/city_files/Atascadero/7f7b89_Fire_20Severity_20Zone_20Map_20_281_29.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://recreation@atascadero.org/sites/default/files/2023-06/ContourMap.pdf",
+    "text": "Contour Map (updated 02/12/2009) (PDF)",
+    "file": "data/city_files/Atascadero/b186ec_ContourMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://recreation@atascadero.org/sites/default/files/2023-06/AerialPhotoMap.pdf",
+    "text": "Aerial Photo Map (updated 04/01/2009) (PDF)",
+    "file": "data/city_files/Atascadero/3b2ca2_AerialPhotoMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://recreation@atascadero.org/sites/default/files/2023-06/Downtown_Parking_Business_Improvement_Area_Information_Updated_12_2_20.docx.pdf",
+    "text": "Downtown Business Improvement Area (PDF)",
+    "file": "data/city_files/Atascadero/fd489a_Downtown_Parking_Business_Improvement_Area_Information_Updated_12_2_20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/Council%20Historic%20Listing.pdf",
+    "text": "City Council History (PDF)",
+    "file": "data/city_files/Atascadero/a394ec_Council_20Historic_20Listing.pdf",
+    "rows": 38,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.atascadero.org/sites/default/files/2023-07/DRAFT%20ATASCADERO%20ADA%20Transiton%20Plan%20Update%202019%20%281%29.pdf",
+    "text": "ADA Transition Plan Update Draft (PDF)",
+    "file": "data/city_files/Atascadero/f790e4_DRAFT_20ATASCADERO_20ADA_20Transiton_20Plan_20Update_202019_20_281_29.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.atascadero.org/sites/default/files/2023-06/Zoning%20%281%29.pdf",
+    "text": "Zoning Map (PDF)",
+    "file": "data/city_files/Atascadero/7a0511_Zoning_20_281_29.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.atascadero.org/sites/default/files/2023-06/AtascaderoBikePlanPRC_10_26_10_Draft2.pdf",
+    "text": "Bicycle Transportation Plan (Maps on pages 13, 14, 22, 24, 25 & 31) (PDF)",
+    "file": "data/city_files/Atascadero/6af24a_AtascaderoBikePlanPRC_10_26_10_Draft2.pdf",
+    "rows": 138,
+    "bike_rows": 58
+   },
+   {
+    "url": "http://www.atascadero.org/sites/default/files/2023-06/Fire%20Severity%20Zone%20Map%20%281%29.pdf",
+    "text": "Fire Severity Zone Map (updated 02/25/2021) (PDF)",
+    "file": "data/city_files/Atascadero/cd8701_Fire_20Severity_20Zone_20Map_20_281_29.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.atascadero.org/sites/default/files/2023-06/ContourMap.pdf",
+    "text": "Contour Map (updated 02/12/2009) (PDF)",
+    "file": "data/city_files/Atascadero/589822_ContourMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.atascadero.org/sites/default/files/2023-06/AerialPhotoMap.pdf",
+    "text": "Aerial Photo Map (updated 04/01/2009) (PDF)",
+    "file": "data/city_files/Atascadero/21d135_AerialPhotoMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=8ff4ac91b6b44db5a6b839814a56955e": "Interactive Zoning Map (updated as of April 2014)",
+   "https://atascadero.maps.arcgis.com/apps/PanelsLegend/index.html?appid=0b9fbf2116464365bc7f025279417a6d": "City Maintained & Non-Maintained Street Map",
+   "https://atascadero.maps.arcgis.com/apps/mapviewer/index.html?webmap=8ff4ac91b6b44db5a6b839814a56955e": "Land Use & Zoning",
+   "https://storymaps.arcgis.com/stories/4c88e05ff18b4dc28ab27a21fe48d7e7": "City Parks",
+   "https://experience.arcgis.com/experience/c507d689e2104dff97102dd64fe4ff88": "Trail Guide",
+   "https://experience.arcgis.com/experience/ae911cff5b5f493a9113e98e6caccfa8/": "register for the Litter Removal Program online",
+   "https://atascadero.maps.arcgis.com/apps/mapviewer/index.html?webmap=422c99912bc246c5ad13173d16544431": "Interactive F-14 Project Map"
+  }
+ },
+ "Russellville": {
+  "files": [],
+  "portals": {}
+ }
+}
