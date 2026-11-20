@@ -1,1 +1,58 @@
-[]
+[
+{
+"city": "Athens",
+"url": "https://gis.accgov.com/cityworks/rest/services/CityworkMaps/LES_Assets_Bike_Racks/FeatureServer/0",
+"name": "LES_Assets_Bike_Racks",
+"count": 53,
+"cat": "racks"
+},
+{
+"city": "Athens",
+"url": "https://gis.accgov.com/cityworks/rest/services/CityworkMaps/LES_Assets_Bike_Racks/MapServer/0",
+"name": "LES_Assets_Bike_Racks",
+"count": 53,
+"cat": "racks"
+},
+{
+"city": "Sandy",
+"url": "https://gis.sandy.utah.gov/arcgis/rest/services/Parks/Facilities_for_Cityworks/FeatureServer/0",
+"name": "Bike Stand",
+"count": 10,
+"cat": "racks"
+},
+{
+"city": "Sandy",
+"url": "https://gis.sandy.utah.gov/arcgis/rest/services/Parks/Facilities_for_Cityworks/MapServer/0",
+"name": "Bike Stand",
+"count": 10,
+"cat": "racks"
+},
+{
+"city": "Chapel Hill",
+"url": "https://gisweb.townofchapelhill.org/arcgis/rest/services/MapServices/BicycleInfrastructure/MapServer/0",
+"name": "Bike Racks",
+"count": 9,
+"cat": "racks"
+},
+{
+"city": "Chapel Hill",
+"url": "https://gisweb.townofchapelhill.org/arcgis/rest/services/MapServices/BicycleInfrastructure/MapServer/1",
+"name": "Bike Repair Station",
+"count": 1,
+"cat": "repair"
+},
+{
+"city": "Chapel Hill",
+"url": "https://gisweb.townofchapelhill.org/arcgis/rest/services/MapServices/BicycleInfrastructure/MapServer/2",
+"name": "Bicycle Locker",
+"count": 1,
+"cat": "locker"
+},
+{
+"city": "Cedar Rapids",
+"url": "https://crgis.cedar-rapids.org/arcgis/rest/services/Maps/Public_Works/MapServer/78",
+"name": "FixItStations",
+"count": 21,
+"cat": "repair"
+}
+]
