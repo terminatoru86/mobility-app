@@ -1,0 +1,51 @@
+[
+{
+"city": "Scottsdale",
+"url": "https://maps.scottsdaleaz.gov/arcgis/rest/services/Public_Amenities/MapServer/12",
+"name": "Bike Racks",
+"count": 239,
+"cat": "racks"
+},
+{
+"city": "Huntsville",
+"url": "https://maps.huntsvilleal.gov/server/rest/services/Locations/BikeRacks/MapServer/0",
+"name": "Bike Racks",
+"count": 252,
+"cat": "racks"
+},
+{
+"city": "Huntsville",
+"url": "https://maps.huntsvilleal.gov/server/rest/services/Planning/BikeDestinations/MapServer/0",
+"name": "Bike Destinations",
+"count": 28,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/FeatureServer/5",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/MapServer/5",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/FeatureServer/32",
+"name": "PR_Bike_Racks",
+"count": 110,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/MapServer/32",
+"name": "PR_Bike_Racks",
+"count": 110,
+"cat": "racks"
+}
+]
