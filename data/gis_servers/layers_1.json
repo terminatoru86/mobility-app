@@ -1,5 +1,19 @@
 [
 {
+"city": "Oceanside",
+"url": "https://gis.ci.oceanside.ca.us/gis/rest/services/WebService/BicycleTrail_MapService/MapServer/0",
+"name": "BIKE STRUCTURE",
+"count": 17,
+"cat": "racks"
+},
+{
+"city": "Oceanside",
+"url": "https://gis.ci.oceanside.ca.us/gis/rest/services/WebService/BicycleTrail_WebMercator_ArcPro/MapServer/0",
+"name": "BIKE STRUCTURE",
+"count": 17,
+"cat": "racks"
+},
+{
 "city": "St. Petersburg FL",
 "url": "https://egis.stpete.org/arcgis/rest/services/ServicesTPD/TrafficManagementandData/MapServer/45",
 "name": "Scooter Share Corrals",
