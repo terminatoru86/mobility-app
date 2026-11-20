@@ -1,0 +1,1560 @@
+{
+ "Wichita KS": {
+  "files": [],
+  "portals": {}
+ },
+ "Santa Clarita CA": {
+  "files": [],
+  "portals": {}
+ },
+ "Orange County": {
+  "files": [],
+  "portals": {
+   "https://data-ocpw.opendata.arcgis.com/": "GIS Data"
+  }
+ },
+ "Fairfax County": {
+  "files": [
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/Documents/swmp-recycling-and-garbage-disposal-guidelines.pdf",
+    "text": "Recycling and Garbage Disposal Guidelines",
+    "file": "data/city_files/Fairfax_County/ba4eaf_swmp-recycling-and-garbage-disposal-guidelines.pdf",
+    "rows": 25,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fairfaxcounty.gov/transportation/sites/transportation/files/Assets/documents/transportation_plan_map.pdf",
+    "text": "Transportation Plan Map",
+    "file": "data/city_files/Fairfax_County/45494e_transportation_plan_map.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://fairfaxcounty.gov/transportation/sites/transportation/files/assets/documents/transportation_plan_map.pdf",
+    "text": "Transportation Plan Map",
+    "file": "data/city_files/Fairfax_County/580a4c_transportation_plan_map.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://fairfaxcounty.gov/parks/sites/parks/files/assets/documents/plandev/trail-management/trail-development-strategy-plan.pdf",
+    "text": "Trail Development Strategy Plan",
+    "file": "data/city_files/Fairfax_County/0c2a40_trail-development-strategy-plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fairfaxcounty.gov/transportation/sites/transportation/files/Assets/Documents/PDF/bikeprogram/parking/2024%20Fairfax%20County%20Bicycle%20Parking%20Guidelines.pdf",
+    "text": "Bicycle Parking Guidelines (For Developers)",
+    "file": "data/city_files/Fairfax_County/dad91b_2024_20Fairfax_20County_20Bicycle_20Parking_20Guidelines.pdf",
+    "rows": 87,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://fairfaxcounty.gov/transportation/sites/transportation/files/Assets/Documents/PDF/Parking/FCDOT_ParkingProgramsChart.pdf",
+    "text": "View or print the Parking Programs Chart",
+    "file": "data/city_files/Fairfax_County/5dc859_FCDOT_ParkingProgramsChart.pdf",
+    "rows": 3,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://fairfaxcounty.gov/connector/sites/connector/files/Assets/Documents/PDF/2024%20Springfield%20Garage%20Infographic_R3.pdf",
+    "text": "Springfield Garage",
+    "file": "data/city_files/Fairfax_County/f40cb8_2024_20Springfield_20Garage_20Infographic_R3.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/document/mnginv.pdf",
+    "text": "Managing Invasive Plants",
+    "file": "data/city_files/Fairfax_County/56494b_mnginv.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/parks/sites/parks/files/Assets/documents/nature-history/greenspring/green-spring-gardens-brochure.pdf",
+    "text": "Garden Map",
+    "file": "data/city_files/Fairfax_County/563167_green-spring-gardens-brochure.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/documents/pdf/publications/Recycling-Flowchart.pdf",
+    "text": "",
+    "file": "data/city_files/Fairfax_County/c0e176_Recycling-Flowchart.pdf",
+    "rows": 83,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/documents/pdf/publications/always-never-flyer.pdf",
+    "text": "Always and Never Recycle flyer",
+    "file": "data/city_files/Fairfax_County/5189e7_always-never-flyer.pdf",
+    "rows": 10,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/documents/trash-and-recycling-guidelines.pdf",
+    "text": "Trash & Recycling Collection Guidelines",
+    "file": "data/city_files/Fairfax_County/2a7d25_trash-and-recycling-guidelines.pdf",
+    "rows": 21,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/documents/forms/recycling-business-registration-form.pdf",
+    "text": "Recycling Business Registration Form",
+    "file": "data/city_files/Fairfax_County/d1e1be_recycling-business-registration-form.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/documents/forms/recycling-plan-businesses.pdf",
+    "text": "Municipal Solid Waste Management Plan - Non-Residential",
+    "file": "data/city_files/Fairfax_County/deafd5_recycling-plan-businesses.pdf",
+    "rows": 32,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/Documents/PDF/advisories/swa-25-002.pdf",
+    "text": "SWA 25-002 Annual Recycling Report Data Returns Audit",
+    "file": "data/city_files/Fairfax_County/9c177d_swa-25-002.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/Documents/PDF/advisories/SWA-23-002_late-ARR-submittal-penalties.pdf",
+    "text": "SWA 23-002 Penalties for Non-Submittal of Annual Recycling Rate Reports from Companies with Certificates-to-Operate",
+    "file": "data/city_files/Fairfax_County/78bfd7_SWA-23-002_late-ARR-submittal-penalties.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/documents/pdf/advisories/swa-23-001_food-waste-composters-and-recycling-registration.pdf",
+    "text": "SWA 23-001 - Food Waste Composters and Recycling Registration",
+    "file": "data/city_files/Fairfax_County/a58a49_swa-23-001_food-waste-composters-and-recycling-registration.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/documents/PDF/advisories/swa-21-002.pdf",
+    "text": "SWA 21-002 Penalties for Non-Submittal of Annual Recycling Rate Reports from Companies with Certificates–to-Operate",
+    "file": "data/city_files/Fairfax_County/984582_swa-21-002.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/Documents/PDF/advisories/SWA-18-002.pdf",
+    "text": "SWA 18-002 Registering With the Food Waste Composting Pilot Program",
+    "file": "data/city_files/Fairfax_County/9c4ccc_SWA-18-002.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/Documents/PDF/advisories/swa-17-008.pdf",
+    "text": "SWA 17-008 Recycling Services and Collection Fees at Commercial Properties",
+    "file": "data/city_files/Fairfax_County/6f7c4f_swa-17-008.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/Documents/PDF/advisories/swa-17-005.pdf",
+    "text": "SWA 17-005 Recycling Requirements for Non-Residential and Multi-Family Properties",
+    "file": "data/city_files/Fairfax_County/ae8c9a_swa-17-005.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/Documents/PDF/advisories/swa-17-003.pdf",
+    "text": "SWA 17-003 Guidance on Estimating Minimum Recycling System Capacity",
+    "file": "data/city_files/Fairfax_County/76025b_swa-17-003.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fairfaxcounty.gov/publicworks/sites/publicworks/files/Assets/Documents/PDF/advisories/swa-17-001.pdf",
+    "text": "SWA 17-001 Alternative Yard Waste Recycling Systems for Townhouse Communities",
+    "file": "data/city_files/Fairfax_County/2a1769_swa-17-001.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://fcpdgis.maps.arcgis.com/apps/dashboards/8c59b24d09b1439f8586cfedf1a4893c": "Police Calls for Service Dashboard",
+   "https://experience.arcgis.com/experience/091bd90c68c24e24b5d22ccb7b3146a9": "Stormwater Infrastructure Map",
+   "https://fairfaxcountygis.maps.arcgis.com/apps/webappviewer/index.html?id=aff7282578d1454ba5fea6a09f0a3559": "improvement projects",
+   "https://fairfaxcountygis.maps.arcgis.com/apps/webappviewer/index.html?id=765724d1e8f04f5b84406266caead1fa": "infrastructure",
+   "https://fairfaxcountygis.maps.arcgis.com/apps/Viewer/index.html?appid=b6f74baaba14456a8ff42c5bacf0a9b6": "flood hazard areas",
+   "https://experience.arcgis.com/experience/ad6e2630788b4ac89ef468a178e4bb05": "floodplains",
+   "https://fairfaxcountygis.maps.arcgis.com/apps/Viewer/index.html?appid=67ca30a491084ddf92db292337bd87e1": "watersheds",
+   "https://experience.arcgis.com/experience/3f51208efd774e5eb9f11e3cc29a0ffd": "Reporting Map",
+   "http://fairfaxcountygis.maps.arcgis.com/apps/Viewer/index.html?appid=3f9ae81b1fa543d1afe6700e4e9bb214": "View Trail Map",
+   "http://fairfaxcountygis.maps.arcgis.com/apps/Viewer/index.html?appid=8a7ac4884e9c4c9bb37acc69dfb237a4": "View Bike Map",
+   "https://fairfaxcountygis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=39a7aed93d324da8badc02a260d1af3b": "full screen (mobile-friendly)",
+   "https://fairfaxcountygis.maps.arcgis.com/apps/Viewer/index.html?appid=2b13377c6c4640449189df9d06f7ab83": "Department of Public Works and Environmental Services (DPWES) interactive map"
+  }
+ },
+ "Snohomish County": {
+  "files": [
+   {
+    "url": "https://www.communitytransit.org/docs/default-source/mappdfs/bikemaps/2020/bicyclingandtrailmap_2020.pdf",
+    "text": "2020 Community Transit Bicycling and Trail Map",
+    "file": "data/city_files/Snohomish_County/66c492_bicyclingandtrailmap_2020.pdf",
+    "rows": 29,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://www.communitytransit.org/docs/default-source/rider-info/bikes-buses/centennialtrailmap_2020.pdf",
+    "text": "Community Transit Centennial Trail Map",
+    "file": "data/city_files/Snohomish_County/58b380_centennialtrailmap_2020.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.snoco.org/docs/scd/PDF/PDS_Zoning/ZoneQUAD1.pdf",
+    "text": "Quad 1 Zoning Map (PDF)",
+    "file": "data/city_files/Snohomish_County/60826f_ZoneQUAD1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://choosewashingtonstate.com/wp-content/uploads/2012/10/WA_rail-maps.pdf",
+    "text": "Rail Network",
+    "file": "data/city_files/Snohomish_County/6c604f_WA_rail-maps.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://choosewashingtonstate.com/wp-content/uploads/2012/10/WA_ports-maps1.pdf",
+    "text": "Ports & Airports",
+    "file": "data/city_files/Snohomish_County/e3f265_WA_ports-maps1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://choosewashingtonstate.com/wp-content/uploads/2012/10/WA_geography_map11.pdf",
+    "text": "Major Cities",
+    "file": "data/city_files/Snohomish_County/dd0dd4_WA_geography_map11.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://gis.snoco.org/maps/property/index.htm": "Interactive Property Map",
+   "https://snohomishcountywa.gov/6206/GIS-Open-Data": "GIS Open Data",
+   "https://snoco-gis.maps.arcgis.com/apps/instant/imageryviewer/index.html?appid=7d1dc83ce5b94408b6a1b1ffc229a49a": "Aerial Imagery Viewer",
+   "https://storymaps.arcgis.com/collections/28d8e2c49c6a406b875ed20fad52139a": "Natural Hazard Viewer",
+   "https://experience.arcgis.com/experience/0a219ac968ee4ddc833491fc7b7a7ca9/": "Snohomish County Districts and Incumbents",
+   "https://gis.snoco.org/portal/apps/experiencebuilder/experience/?id=10d98a0c1bb7495ca3e0cd6deceef7c3": "Snohomish County Road Atlas",
+   "https://snoco-gis.maps.arcgis.com/apps/webappviewer/index.html?id=15578784822345459c008d66ed1253ab": "Snohomish County Road Closure Map",
+   "https://snohomish-county-open-data-portal-snoco-gis.hub.arcgis.com/": "GIS Data Downloads",
+   "https://storymaps.arcgis.com/stories/48d9c37812474ba7b4b0baf9ab5e7825": "",
+   "https://snohomish-county-open-data-portal-snoco-gis.hub.arcgis.com/search?tags=pds": "Open Data Portal",
+   "https://storymaps.arcgis.com/stories/fc4b35e3e3734b42b82ad074e51cc435": "2024 Annual Report: Engage, Enhance, Innovate",
+   "https://storymaps.arcgis.com/stories/f2c83879eab8428a96bf22071f06ecd8": "2023 Annual Report: Renew, Connect and Improve"
+  }
+ },
+ "Detroit": {
+  "files": [],
+  "portals": {}
+ },
+ "Sacramento": {
+  "files": [
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/it/gis/Maps/District5Map_A_2022.pdf",
+    "text": "Download map",
+    "file": "data/city_files/Sacramento/f42cee_District5Map_A_2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/Marina/Maps/Map-of-Marina-Docks(1).pdf",
+    "text": "Marina map",
+    "file": "data/city_files/Sacramento/280549_Map-of-Marina-Docks_1_.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/Parking/applications/Monthly%20Change%20Order%20PDF%20Fillable-%2006.19.2018.pdf",
+    "text": "Cancel or change account information",
+    "file": "data/city_files/Sacramento/649538_Monthly_20Change_20Order_20PDF_20Fillable-_2006.19.2018.pdf",
+    "rows": 9,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/Parking/applications/Credit%20Card%20Auth%20form%206.18.2018%20FILLABLE.pdf",
+    "text": "Credit card authorization form",
+    "file": "data/city_files/Sacramento/a75aa1_Credit_20Card_20Auth_20form_206.18.2018_20FILLABLE.pdf",
+    "rows": 14,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/Parking/brochures/Resident%20Guide%202025.pdf",
+    "text": "Resident guide",
+    "file": "data/city_files/Sacramento/ad5cc6_Resident_20Guide_202025.pdf",
+    "rows": 3,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/mas/transportation-planning/active-transportation/Sacramento%20Bikeways%20Map.pdf",
+    "text": "Bicycle programs",
+    "file": "data/city_files/Sacramento/52f265_Sacramento_20Bikeways_20Map.pdf",
+    "rows": 43,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/Parking/parking-careers/Parking%20Brochure.pdf",
+    "text": "Parking Services organization",
+    "file": "data/city_files/Sacramento/cb8cf8_Parking_20Brochure.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/ypce/Parks/Skate%20Parks.pdf",
+    "text": "View Map",
+    "file": "data/city_files/Sacramento/ba36c7_Skate_20Parks.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/ypce/Parks/dogparks_Oct2023a.pdf",
+    "text": "Dog Park Map/List",
+    "file": "data/city_files/Sacramento/27e2d5_dogparks_Oct2023a.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/route-review-sort-this-out/route-review-great-job/SacRSW2026_GreatJob_Hanger_v1.2.pdf",
+    "text": "Great Job Tag (Eng/Sp)",
+    "file": "data/city_files/Sacramento/8f9beb_SacRSW2026_GreatJob_Hanger_v1.2.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/route-review-sort-this-out/route-review-great-job/SacRSW_GreatJob_Hanger_v1.2-HMG.pdf",
+    "text": "Great Job Tag (Hmong)",
+    "file": "data/city_files/Sacramento/250a1a_SacRSW_GreatJob_Hanger_v1.2-HMG.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/route-review-sort-this-out/route-review-great-job/SacRSW_GreatJob_Hanger_v1.2-SPA.pdf",
+    "text": "Great Job Tag (Spanish)",
+    "file": "data/city_files/Sacramento/9b16ec_SacRSW_GreatJob_Hanger_v1.2-SPA.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/route-review-sort-this-out/route-review-great-job/SacRSW_GreatJob_Hanger_v1.2-RUS.pdf",
+    "text": "Great Job Tag (Vietnamese)",
+    "file": "data/city_files/Sacramento/96c7cf_SacRSW_GreatJob_Hanger_v1.2-RUS.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/route-review-sort-this-out/route-review-great-job/SacRSW_GreatJob_Hanger_v1.2-SCH.pdf",
+    "text": "Great Job Tag (M. Chinese)",
+    "file": "data/city_files/Sacramento/791e84_SacRSW_GreatJob_Hanger_v1.2-SCH.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/route-review-sort-this-out/route-review-great-job/SacRSW_SortThisOut_Hanger_v1.5.pdf",
+    "text": "Let's Sort This Out Tag",
+    "file": "data/city_files/Sacramento/187860_SacRSW_SortThisOut_Hanger_v1.5.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/route-review-sort-this-out/Sort_This_Out_2026_Translated/SacRSW_SortThisOut_Hanger_v1.5-SCH.pdf",
+    "text": "Let's Sort This Out (Mandarin)",
+    "file": "data/city_files/Sacramento/917c27_SacRSW_SortThisOut_Hanger_v1.5-SCH.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/route-review/SacRSW_SortThisOut_Hanger_v1.1_HMG.pdf",
+    "text": "Let's Sort This Out (Hmong)",
+    "file": "data/city_files/Sacramento/8d8cfe_SacRSW_SortThisOut_Hanger_v1.1_HMG.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/route-review/SacRSW_SortThisOut_Hanger_v1.0_RUS.pdf",
+    "text": "Let's Sort This Out (Russian)",
+    "file": "data/city_files/Sacramento/0751f6_SacRSW_SortThisOut_Hanger_v1.0_RUS.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/route-review-sort-this-out/Sort_This_Out_2026_Translated/SacRSW_SortThisOut_Hanger_v1.5-SPA.pdf",
+    "text": "Let's Sort This Out (Spanish)",
+    "file": "data/city_files/Sacramento/2a4fad_SacRSW_SortThisOut_Hanger_v1.5-SPA.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/route-review-sort-this-out/Sort_This_Out_2026_Translated/SacRSW_SortThisOut_Hanger_v1.5-VIET.pdf",
+    "text": "Let's Sort This Out (Viet)",
+    "file": "data/city_files/Sacramento/9fc0ca_SacRSW_SortThisOut_Hanger_v1.5-VIET.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/pw/Parking/al-fresco/DE-309---App---Revocable-Al-Fresco.pdf",
+    "text": "Al Fresco dining application",
+    "file": "data/city_files/Sacramento/b1c94f_DE-309---App---Revocable-Al-Fresco.pdf",
+    "rows": 32,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsacramento.gov/content/dam/portal/it/ai-strategy/City%20of%20Sacramento%20-%20AI%20Strategy%20and%20Roadmap.pdf",
+    "text": "2025-28 AI strategy & roadmap",
+    "file": "data/city_files/Sacramento/fa7ca8_City_20of_20Sacramento_20-_20AI_20Strategy_20and_20Roadmap.pdf",
+    "rows": 72,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/5e1d1bcc1c7c4cbabc37bf08acc29622": "Explore the great work of the City's GIS Team",
+   "https://saccity.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=c5c67e43b37c42c9ac5ff39da3362d93": "Parking map",
+   "https://experience.arcgis.com/experience/539957e1cf8b488ca8554ce79f15aa3b": "",
+   "https://saccity.maps.arcgis.com/apps/webappviewer/index.html?id=79d3ac71c8ed405087d4511900317fca": "Parking map",
+   "https://saccity.maps.arcgis.com/apps/dashboards/115e82137ada43f9bc94cf64fa5f9a18": "CIP Dashboard",
+   "https://experience.arcgis.com/experience/426bbcca678342c6abf3855df7e0dc1a": "Land Information Lookup App"
+  }
+ },
+ "Solano County": {
+  "files": [],
+  "portals": {}
+ },
+ "Aurora": {
+  "files": [
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Monthly Parking Agreement p2.pdf",
+    "text": "Terms and conditions",
+    "file": "data/city_files/Aurora/4b8a71_Monthly_Parking_Agreement_p2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/EmployeeParking.pdf",
+    "text": "Terms and Conditions",
+    "file": "data/city_files/Aurora/55e7d6_EmployeeParking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Disabled Pkg Signage App - Fillable.pdf",
+    "text": "Accessible Parking Signage Application/Request Form",
+    "file": "data/city_files/Aurora/6471ad_Disabled_Pkg_Signage_App_-_Fillable.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Off-St Pkg Rules & Regs - MASTER FINAL - 7-30-19.pdf",
+    "text": "AMC Off-Street Parking Management Rules and Regulations",
+    "file": "data/city_files/Aurora/ddc2d2_Off-St_Pkg_Rules_Regs_-_MASTER_FINAL_-_7-30-19.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/AMC Campus Visitor map.pdf",
+    "text": "Visitor Parking Map of the AMC campus",
+    "file": "data/city_files/Aurora/05a2fb_AMC_Campus_Visitor_map.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/AMC Campus Employee map.pdf",
+    "text": "campus map of designated employee parking locations",
+    "file": "data/city_files/Aurora/c6a853_AMC_Campus_Employee_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Tips-to-Avoid-Parking-Tickets_Rev03-2024 - FINAL.pdf",
+    "text": "click here",
+    "file": "data/city_files/Aurora/17c3e6_Tips-to-Avoid-Parking-Tickets_Rev03-2024_-_FINAL.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/2010_Model_Traffic_Code.pdf",
+    "text": "View the Model Traffic Code for Colorado.",
+    "file": "data/city_files/Aurora/e6a7a1_2010_Model_Traffic_Code.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/Off-St%20Pkg%20Rules%20&%20Regs%20-%20MASTER%20FINAL%20-%207-30-19.pdf",
+    "text": "View Rules and Regulations Pertaining to the Administration of Off-Street Parking Management for City Owned, Operated, o",
+    "file": "data/city_files/Aurora/7f4129_Off-St_20Pkg_20Rules_20_20Regs_20-_20MASTER_20FINAL_20-_207-30-19.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/AMC%20Off-St%20Pkg%20Rules%20&%20Regs%20-%20Effective%20Aug%202019.pdf",
+    "text": "View the Aurora Municipal Center Off-Street Parking Management Rules & Regulations.",
+    "file": "data/city_files/Aurora/de4c93_AMC_20Off-St_20Pkg_20Rules_20_20Regs_20-_20Effective_20Aug_202019.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/CO%20Driver%20Handbook.pdf",
+    "text": "View the Colorado Driver Handbook.",
+    "file": "data/city_files/Aurora/5ef326_CO_20Driver_20Handbook.pdf",
+    "rows": 59,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/ParkingViolation.pdf",
+    "text": "View the 2024 Parking Violation Schedule",
+    "file": "data/city_files/Aurora/7f78db_ParkingViolation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Accessible Parking Etiquette - FINAL 6-6-19.pdf",
+    "text": "Do’s, Don’ts, and Reminders",
+    "file": "data/city_files/Aurora/f233e2_Accessible_Parking_Etiquette_-_FINAL_6-6-19.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Application Form DR2219.pdf",
+    "text": "Persons With Disabilities Parking Privileges Application (Form DR 2219)",
+    "file": "data/city_files/Aurora/335be4_Application_Form_DR2219.pdf",
+    "rows": 31,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Compliance Standards.pdf",
+    "text": "Compliance Standards for size of parking stalls and quantity required",
+    "file": "data/city_files/Aurora/2b5aaa_Compliance_Standards.pdf",
+    "rows": 19,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Business Services/Planning/Transportation Planning/Learn About Biking in Aurora.pdf",
+    "text": "Learn About Biking in Aurora (printable, with map)",
+    "file": "data/city_files/Aurora/b896e0_Learn_About_Biking_in_Aurora.pdf",
+    "rows": 21,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/SharedMobilitySmallVehiclesLicenseRegulations.pdf",
+    "text": "Shared Mobility Small Devices License Program Rules & Regulations",
+    "file": "data/city_files/Aurora/2ef759_SharedMobilitySmallVehiclesLicenseRegulations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/SharedMobilityLicenseApplication .pdf",
+    "text": "Shared Mobility Small Devices License Application",
+    "file": "data/city_files/Aurora/5c06ae_SharedMobilityLicenseApplication_.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Ordinance changing vehicle impounds - Amended FINAL 9-28-23.pdf",
+    "text": "link",
+    "file": "data/city_files/Aurora/cb8377_Ordinance_changing_vehicle_impounds_-_Amended_FINAL_9-28-23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/PM-Safety-Matters-Flyer.pdf",
+    "text": "5 Ways to protect a child from dying in a HOT PARKED CAR",
+    "file": "data/city_files/Aurora/502ee5_PM-Safety-Matters-Flyer.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Things%20to%20Do/Parks%20Open%20Spaces/Sports%20Park/Aurora%20Sports%20Park%20MAP%202026.pdf",
+    "text": "Aurora Sports Park Map",
+    "file": "data/city_files/Aurora/6f5f24_Aurora_20Sports_20Park_20MAP_202026.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://auroraco.maps.arcgis.com/home/group.html?sortField=numviews&sortOrder=desc&tags=Data+Demographics&id=84b561bb156f427c87d98b8d144c563e": "Data & Demographic Maps",
+   "https://auroraco.maps.arcgis.com/home/index.html": "Click for full Aurora Maps ArcGIS Online Site",
+   "https://data-auroraco.opendata.arcgis.com/": "Aurora Open Data",
+   "https://auroraco.maps.arcgis.com/home/group.html?id=177b5c29d60f45e9bd678cab147aa625&start=1&view=list": "Click Here for PDF Maps",
+   "https://experience.arcgis.com/experience/8c9ba519d701482a93d5bbac843e4afc": "Property Information",
+   "https://storymaps.arcgis.com/stories/a1c484a8dcc944128d1a6f77e43f016f": "Aurora Development Tour",
+   "https://experience.arcgis.com/experience/9af41ebe87d24cf3bc02f66a1580995d": "Survey Control Map",
+   "https://experience.arcgis.com/experience/96cd245fc0d842b084bd4d813625d96f": "Aurora Businesses",
+   "https://experience.arcgis.com/experience/63dbc01f15c949d0ab575cc325347fb0/": "City of Aurora Trails Map",
+   "https://experience.arcgis.com/experience/cb1243760c1f4801be5c4209015f6d9c/": "Aurora Trees",
+   "https://experience.arcgis.com/experience/da859163a727404caacf6ddb602d7e98": "Active Development",
+   "https://experience.arcgis.com/experience/f8fc69063c9f415eb25757777caece2f": "Liquor Licenses Map"
+  }
+ },
+ "Cumberland County": {
+  "files": [],
+  "portals": {}
+ },
+ "Ottawa County": {
+  "files": [],
+  "portals": {}
+ },
+ "Cherokee County": {
+  "files": [
+   {
+    "url": "https://cherokeega.com/GIS/_resources/documents/2022 Street Map.pdf",
+    "text": "Cherokee County Road Map",
+    "file": "data/city_files/Cherokee_County/9223ed_2022_Street_Map.pdf",
+    "rows": 8,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://cherokeega.com/GIS/_resources/documents/2026 Commission Districts.pdf",
+    "text": "Commission District Map",
+    "file": "data/city_files/Cherokee_County/3b6c93_2026_Commission_Districts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cherokeega.com/GIS/_resources/documents/2009FutureDevelopment.pdf",
+    "text": "Future Development Map",
+    "file": "data/city_files/Cherokee_County/61b193_2009FutureDevelopment.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cherokeega.com/GIS/_resources/documents/Voting Precincts.pdf",
+    "text": "Voting Precinct Map",
+    "file": "data/city_files/Cherokee_County/6c8757_Voting_Precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cherokeegis.maps.arcgis.com/apps/MapSeries/index.html?appid=f0bdb6cefa964ebe8792f0d77d3ea1b9": "Capital Projects Update",
+   "http://gis.cherokeecountyga.gov": "GIS Online Map"
+  }
+ },
+ "Saratoga County": {
+  "files": [
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2021/09/PublicWorks-Single-Stream-Recycling-Flyer.pdf",
+    "text": "Recycling Flyer",
+    "file": "data/city_files/Saratoga_County/99bda0_PublicWorks-Single-Stream-Recycling-Flyer.pdf",
+    "rows": 12,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2022/06/PublicWorks-SC-HighwayMap-2022.pdf",
+    "text": "2022 Saratoga County Highway Map",
+    "file": "data/city_files/Saratoga_County/582613_PublicWorks-SC-HighwayMap-2022.pdf",
+    "rows": 65,
+    "bike_rows": 26
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2026/04/BoE-June-Primary-Ballot-Certification-Local-2026.pdf",
+    "text": "2026 Primary Election Ballot Certification – Local Offices",
+    "file": "data/city_files/Saratoga_County/724fa8_BoE-June-Primary-Ballot-Certification-Local-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2026/09/BOE-General-Election-Ballot-Certification-2026.pdf",
+    "text": "2026 General Election Ballot Certification",
+    "file": "data/city_files/Saratoga_County/556108_BOE-General-Election-Ballot-Certification-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2025/06/RealProperty-2025-SubdivisionMapRequiremnts.pdf",
+    "text": "Subdivision Map Filing Requirements",
+    "file": "data/city_files/Saratoga_County/71771d_RealProperty-2025-SubdivisionMapRequiremnts.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/09/BoE-Maps-Ballston.pdf",
+    "text": "Town of Ballston",
+    "file": "data/city_files/Saratoga_County/f8b8c3_BoE-Maps-Ballston.pdf",
+    "rows": 19,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/09/BoE-Maps-Charlton.pdf",
+    "text": "Town of Charlton",
+    "file": "data/city_files/Saratoga_County/146f54_BoE-Maps-Charlton.pdf",
+    "rows": 11,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/09/BoE-Maps-CliftonPark.pdf",
+    "text": "Town of Clifton Park",
+    "file": "data/city_files/Saratoga_County/e1197b_BoE-Maps-CliftonPark.pdf",
+    "rows": 14,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Corinth.pdf",
+    "text": "Town of Corinth",
+    "file": "data/city_files/Saratoga_County/681f00_BoE-Maps-Corinth.pdf",
+    "rows": 22,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Day.pdf",
+    "text": "Town of Day",
+    "file": "data/city_files/Saratoga_County/cb4742_BoE-Maps-Day.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Edinburg.pdf",
+    "text": "Town of Edinburg",
+    "file": "data/city_files/Saratoga_County/6fbb52_BoE-Maps-Edinburg.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Galway.pdf",
+    "text": "Town of Galway",
+    "file": "data/city_files/Saratoga_County/76b0ef_BoE-Maps-Galway.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Greenfield.pdf",
+    "text": "Town of Greenfield",
+    "file": "data/city_files/Saratoga_County/c282a9_BoE-Maps-Greenfield.pdf",
+    "rows": 38,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Hadley.pdf",
+    "text": "Town of Hadley",
+    "file": "data/city_files/Saratoga_County/09f4ec_BoE-Maps-Hadley.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Halfmoon.pdf",
+    "text": "Town of Halfmoon",
+    "file": "data/city_files/Saratoga_County/b2aab1_BoE-Maps-Halfmoon.pdf",
+    "rows": 77,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Malta.pdf",
+    "text": "Town of Malta",
+    "file": "data/city_files/Saratoga_County/1c9dd0_BoE-Maps-Malta.pdf",
+    "rows": 56,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Mechanicville.pdf",
+    "text": "City of Mechanicville",
+    "file": "data/city_files/Saratoga_County/93313a_BoE-Maps-Mechanicville.pdf",
+    "rows": 28,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Milton.pdf",
+    "text": "Town of Milton",
+    "file": "data/city_files/Saratoga_County/a67a84_BoE-Maps-Milton.pdf",
+    "rows": 63,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Moreau.pdf",
+    "text": "Town of Moreau",
+    "file": "data/city_files/Saratoga_County/5ea90f_BoE-Maps-Moreau.pdf",
+    "rows": 57,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Northumberland.pdf",
+    "text": "Town of Northumberland",
+    "file": "data/city_files/Saratoga_County/92759e_BoE-Maps-Northumberland.pdf",
+    "rows": 18,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Providence.pdf",
+    "text": "Town of Providence",
+    "file": "data/city_files/Saratoga_County/bb4b35_BoE-Maps-Providence.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Saratoga.pdf",
+    "text": "Town of Saratoga",
+    "file": "data/city_files/Saratoga_County/6d89d8_BoE-Maps-Saratoga.pdf",
+    "rows": 22,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-SaratogaSprings.pdf",
+    "text": "City of Saratoga Springs",
+    "file": "data/city_files/Saratoga_County/69b707_BoE-Maps-SaratogaSprings.pdf",
+    "rows": 119,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Stillwater.pdf",
+    "text": "Town of Stillwater",
+    "file": "data/city_files/Saratoga_County/313311_BoE-Maps-Stillwater.pdf",
+    "rows": 35,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.saratogacountyny.gov/wp/wp-content/uploads/2024/04/BoE-Maps-Waterford.pdf",
+    "text": "Town of Waterford",
+    "file": "data/city_files/Saratoga_County/fb2378_BoE-Maps-Waterford.pdf",
+    "rows": 37,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://scphs.maps.arcgis.com/apps/webappviewer/index.html?id=79dd16fb6c1c428a888571f92ea98fe3": "trail system map"
+  }
+ },
+ "Huntsville": {
+  "files": [
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2026/11/Meek-Greenway-Map.pdf",
+    "text": "View the map.",
+    "file": "data/city_files/Huntsville/4d0d9b_Meek-Greenway-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2023/03/Go-Huntsville-Transit-Final-Report.pdf",
+    "text": "Huntsville Transit Improvement Plan",
+    "file": "data/city_files/Huntsville/6e3208_Go-Huntsville-Transit-Final-Report.pdf",
+    "rows": 468,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/03/CityofHSV_PublicTransit_Rebrand_Orbit_RiderGuide_R2-v1.pdf",
+    "text": "CLICK TO SEE THE ORBIT BROCHURE",
+    "file": "data/city_files/Huntsville/0a88d7_CityofHSV_PublicTransit_Rebrand_Orbit_RiderGuide_R2-v1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2015/06/bikeplan2006.pdf",
+    "text": "Bikeway Plan 2006",
+    "file": "data/city_files/Huntsville/899e65_bikeplan2006.pdf",
+    "rows": 177,
+    "bike_rows": 62
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2020/07/BikePlan2020_Existing.pdf",
+    "text": "2020 Bike Routes Printable PDF",
+    "file": "data/city_files/Huntsville/93b51e_BikePlan2020_Existing.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/01/DowntownParking_2025.pdf",
+    "text": "Downtown Public Parking Map – PD F",
+    "file": "data/city_files/Huntsville/736d04_DowntownParking_2025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/01/CityHallParking_2025.pdf",
+    "text": "Downtown Public Parking around City Hall",
+    "file": "data/city_files/Huntsville/a62e4b_CityHallParking_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2015/06/Twickenham_HD_NRHP_Finalv8-NPS-FINAL-emailable.pdf",
+    "text": "Twickenham’s National Register of Historic Places Registration Form",
+    "file": "data/city_files/Huntsville/09578a_Twickenham_HD_NRHP_Finalv8-NPS-FINAL-emailable.pdf",
+    "rows": 265,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2015/06/Old-Town-Final-NR.pdf",
+    "text": "Old Town’s National Register of Historic Places Registration Form",
+    "file": "data/city_files/Huntsville/e617c2_Old-Town-Final-NR.pdf",
+    "rows": 320,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2015/06/Madison.FivePointsHD.NRNom_.pdf",
+    "text": "Five Points National Register of Historic Places Registration Form",
+    "file": "data/city_files/Huntsville/2bb7d0_Madison.FivePointsHD.NRNom_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/HaysTrailMap08012016.pdf",
+    "text": "Hays Nature Preserve Map",
+    "file": "data/city_files/Huntsville/f8c2aa_HaysTrailMap08012016.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/HaysOrienteeringMapv2.pdf",
+    "text": "Hays Orienteering Map",
+    "file": "data/city_files/Huntsville/423d8f_HaysOrienteeringMapv2.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/AldridgeCreekGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/c68b7a_AldridgeCreekGnwy.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/AtwoodGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/ced634_AtwoodGnwy.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/BigCoveCreekGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/1621ee_BigCoveCreekGnwy.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/FlintRiverGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/b2a2a9_FlintRiverGnwy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/GatewayGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/0f0914_GatewayGnwy.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/IndianCreekGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/e69272_IndianCreekGnwy.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/LittleCoveGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/d62213_LittleCoveGnwy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/TennesseRiverGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/1e5441_TennesseRiverGnwy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/WadeMtnGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/ec295b_WadeMtnGnwy.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://maps.huntsvilleal.gov/greenways/images/pdfs/Zierdt.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/91a2a1_Zierdt.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/03/CityofHSV_PublicTransit_Rebrand_Access_Pamphlet_R4-v1.pdf",
+    "text": "CLICK TO SEE THE ACCESS BROCHURE",
+    "file": "data/city_files/Huntsville/7c5a03_CityofHSV_PublicTransit_Rebrand_Access_Pamphlet_R4-v1.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2020/07/CityofHSV_PublicTransit_Rebrand_Access_Pamphlet_R4-v1-digital.pdf",
+    "text": "Access Brochure.",
+    "file": "data/city_files/Huntsville/5c6286_CityofHSV_PublicTransit_Rebrand_Access_Pamphlet_R4-v1-digital.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Hawaii County": {
+  "files": [],
+  "portals": {}
+ },
+ "Saginaw County": {
+  "files": [
+   {
+    "url": "https://saginawcounty.com/media/imqfjt3f/ada-transition-plan-update-_-saginaw-county-parks-_-2021.pdf",
+    "text": "here",
+    "file": "data/city_files/Saginaw_County/6f6f23_ada-transition-plan-update-_-saginaw-county-parks-_-2021.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/buoanye1/tri-county-regional-path-study-phase-2-completed.pdf",
+    "text": "Regional Path Study",
+    "file": "data/city_files/Saginaw_County/f9a17d_tri-county-regional-path-study-phase-2-completed.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/wa0lgo5e/exhibit-a-saginaw-county_commision_districts_w_precincts_adopted_10_6_21_e_2-2.pdf",
+    "text": "District Map - County",
+    "file": "data/city_files/Saginaw_County/d248fd_exhibit-a-saginaw-county_commision_districts_w_precincts_adopted_10_6_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/rohhufu5/saginaw-urban-area-county_commision_districts_10_22_24_letter.pdf",
+    "text": "District Map - City of Saginaw Area",
+    "file": "data/city_files/Saginaw_County/445fa7_saginaw-urban-area-county_commision_districts_10_22_24_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/qahdc1f3/imerman-small-map-trailguide.pdf",
+    "text": "Trail Guide (Printable)",
+    "file": "data/city_files/Saginaw_County/9d7280_imerman-small-map-trailguide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/lukl5zj0/price-small-map-trailguide.pdf",
+    "text": "Trail Guide (Printable)",
+    "file": "data/city_files/Saginaw_County/c30375_price-small-map-trailguide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/beglhzce/ringwood-small-map-trailguide.pdf",
+    "text": "Trail Guide (Printable)",
+    "file": "data/city_files/Saginaw_County/872c4c_ringwood-small-map-trailguide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/y0kgcner/haithco-small-map-trail-guide-web-26.pdf",
+    "text": "Trail Guide",
+    "file": "data/city_files/Saginaw_County/4efa97_haithco-small-map-trail-guide-web-26.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/qeejl0y2/rail-trail-brochure-2018.pdf",
+    "text": "SVRT Trail Guide  (Printable)",
+    "file": "data/city_files/Saginaw_County/bf98df_rail-trail-brochure-2018.pdf",
+    "rows": 24,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://saginawcounty.com/media/u15hhvs1/saginaw-valley-rail-trail.pdf",
+    "text": "Saginaw Valley Rail Trail",
+    "file": "data/city_files/Saginaw_County/dd9d8b_saginaw-valley-rail-trail.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/5i2bc4sp/recycle-riley.pdf",
+    "text": "Recycle Riley",
+    "file": "data/city_files/Saginaw_County/9eeb31_recycle-riley.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/bvjd2rvo/c3460-ddm-exhibit_b2-2017-02-20.pdf",
+    "text": "Drainage District Boundary Map",
+    "file": "data/city_files/Saginaw_County/52d66d_c3460-ddm-exhibit_b2-2017-02-20.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/cuebezju/n4800-nbod-2023-03-17.pdf",
+    "text": "New Tamarack Drain Notice of Board of Determination",
+    "file": "data/city_files/Saginaw_County/009fb0_n4800-nbod-2023-03-17.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/5m1nw4si/n4800-biddingdocs-add2-2024-04-26.pdf",
+    "text": "New Tamarack Drain - Addendum No. 2 - April 26, 2024",
+    "file": "data/city_files/Saginaw_County/28ea45_n4800-biddingdocs-add2-2024-04-26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/zurn3z1m/n4800-biddingdocs-add3-2024-04-29.pdf",
+    "text": "New Tamarack Drain - Addendum No. 3 - April 29, 2024",
+    "file": "data/city_files/Saginaw_County/8b7240_n4800-biddingdocs-add3-2024-04-29.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/yehp3xmr/n4800-nol-2024-04-08.pdf",
+    "text": "New Tamarack Drain - Notice of Letting - April 8, 2024",
+    "file": "data/city_files/Saginaw_County/f48be7_n4800-nol-2024-04-08.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/prsdf1kw/n4800-biddingdocs-add1-2024-04-19.pdf",
+    "text": "New Tamarack Drain - Addendum No. 1 - April 19, 2024",
+    "file": "data/city_files/Saginaw_County/8c1e03_n4800-biddingdocs-add1-2024-04-19.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/awtmarol/n4800-biddingdocs-2024-04-11.pdf",
+    "text": "New Tamarack Drain - Bidding Documents",
+    "file": "data/city_files/Saginaw_County/6d8022_n4800-biddingdocs-2024-04-11.pdf",
+    "rows": 31,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://saginawcounty.com/media/minjruma/y5000-ddm-b2-lald-2025-04-09.pdf",
+    "text": "Youngs Intercounty Drain Drainage District Map - Saginaw County Only",
+    "file": "data/city_files/Saginaw_County/b174ff_y5000-ddm-b2-lald-2025-04-09.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/epbiqo4f/youngs-intercounty-drain-drainage-district-map-revised-saginaw-county-only.pdf",
+    "text": "Youngs Intercounty Drain Drainage District Map REVISED Saginaw County Only",
+    "file": "data/city_files/Saginaw_County/8b2840_youngs-intercounty-drain-drainage-district-map-revised-saginaw-county-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/izcdnjkj/h5230-ddm-b1-2026-09-23.pdf",
+    "text": "Hess Drain Drainage District Map",
+    "file": "data/city_files/Saginaw_County/946843_h5230-ddm-b1-2026-09-23.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://saginawcounty.com/media/r4vibvme/q0010-ddm-b1.pdf",
+    "text": "Quanicassee River Intercounty Drain Drainage District Map - Saginaw County Only",
+    "file": "data/city_files/Saginaw_County/615ff7_q0010-ddm-b1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://saginawcounty.com/media/mapjyqup/swift-user-agreement-only-1.pdf",
+    "text": "Download our User Agreement and get started with SWIFT.",
+    "file": "data/city_files/Saginaw_County/9cbfaf_swift-user-agreement-only-1.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.sagagis.org/": "GIS Authority",
+   "https://app.fetchgis.com/?currentMap=saginaw&switchingMaps=false&centerLng=-84.03514404296737&centerLat=43.34872530726979&mapZoom=10&pageSize=letter&pageOrientation=landscape&pageTitle=Saginaw%20GIS&subTitle=&northArrow=1&rptPIN=0&rptLayer=&rptMap=1&rptPic=1&rptTax=1&activeControl=layerControls&activeLayers=baseLayersCheckbox_osmLayerRadio_imageryLayersCheckbox_imagery2025LayerCheckbox_saginawParcelLayerCheckbox_streetsLayerCheckbox_cvtLayerCheckbox_drainCenterlinesLayerCheckbox&partialLayerGroups=undefined&opacity64=&printLegendLayers=": "Drain Map",
+   "https://app.fetchgis.com/?currentMap=saginaw": "SAGA GIS Viewer"
+  }
+ },
+ "Santa Rosa": {
+  "files": [],
+  "portals": {}
+ },
+ "Davidson County": {
+  "files": [],
+  "portals": {
+   "https://davidson-county-hub-for-gis-davidsonco.hub.arcgis.com/": "WEBGIs",
+   "https://survey123.arcgis.com/share/939df95f860647a1b65fd7cb68bb1f17?portalUrl=https://davidsonco.maps.arcgis.com&hide=submit&width=1000": "REAL PROPERTY TAX ESTIMATOR",
+   "https://davidsonco.maps.arcgis.com/apps/instant/lookup/index.html?appid=dfc7ab3fc2584ceaac46e40aa2b49a6b": "interactive map",
+   "https://part-nc.maps.arcgis.com/apps/View/index.html?appid=37db432226c346cabb663688bdec4f8c": "Click here for an interactive map of routes and stops"
+  }
+ },
+ "Martin County": {
+  "files": [],
+  "portals": {
+   "http://mcgov.maps.arcgis.com/apps/webappviewer/index.html?id=1216fece5ef440c388571a44e220143f": "Fire Station Locations"
+  }
+ },
+ "Penobscot County": {
+  "files": [],
+  "portals": {
+   "https://maine.maps.arcgis.com/apps/webappviewer/index.html?id=89f9a143c79f4349a40a3ff77975f17a": "Tax Maps"
+  }
+ },
+ "Jackson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Boone County": {
+  "files": [],
+  "portals": {
+   "https://secure.boonecountygis.com/portal/apps/sites/": "County Street Index"
+  }
+ },
+ "Hunterdon County": {
+  "files": [],
+  "portals": {}
+ },
+ "Saline County": {
+  "files": [],
+  "portals": {}
+ },
+ "West Palm Beach": {
+  "files": [
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/development-services/documents/development-services-forms/planning-amp-zoning-forms/downtown-wpb-mobility-fee-assessment-area-map.pdf",
+    "text": "Downtown WPB Mobility Fee Assessment Area Map A (PDF, 2MB)",
+    "file": "data/city_files/West_Palm_Beach/39ae46_downtown-wpb-mobility-fee-assessment-area-map.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/housing/documents/your-waterfrontyour-way_ap.pdf",
+    "text": "Your Waterfront. Your Way. Meeting Presentations (PDF, 3MB)",
+    "file": "data/city_files/West_Palm_Beach/f29732_your-waterfrontyour-way_ap.pdf",
+    "rows": 119,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/requestforhearingnew72011.pdf",
+    "text": "Download a copy of the Plea of Not Guilty and Request for Hearing Form (PDF, 157KB)",
+    "file": "data/city_files/West_Palm_Beach/142708_requestforhearingnew72011.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/2/parking-amp-mobility/documents/resolution-191-22-remediated.pdf",
+    "text": "Resolution 191-22 (PDF, 229KB)",
+    "file": "data/city_files/West_Palm_Beach/6b53ee_resolution-191-22-remediated.pdf",
+    "rows": 32,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/2027-budget-workshop.pdf",
+    "text": "Strategic Plan & Budget (PDF, 1MB)",
+    "file": "data/city_files/West_Palm_Beach/2dfa69_2027-budget-workshop.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/2050_west_palm_beach_mobility_plan_07-22-2026.pdf",
+    "text": "Mobility Plan (PDF, 21MB)",
+    "file": "data/city_files/West_Palm_Beach/6d52ef_2050_west_palm_beach_mobility_plan_07-22-2026.pdf",
+    "rows": 640,
+    "bike_rows": 149
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/resolution-13-25-wpb-complete-streets-policy-feb25.pdf",
+    "text": "Complete Streets Policy (PDF, 268KB)",
+    "file": "data/city_files/West_Palm_Beach/8ac7d2_resolution-13-25-wpb-complete-streets-policy-feb25.pdf",
+    "rows": 28,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/parking_mobility_siteplan_checklist_updated.pdf",
+    "text": "Parking Mobility Site Plan Checklist (PDF, 127KB)",
+    "file": "data/city_files/West_Palm_Beach/66736c_parking_mobility_siteplan_checklist_updated.pdf",
+    "rows": 22,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/development-services/documents/development-services-forms/planning-amp-zoning-forms/wpb-historic-preservation-board-project-checklist_fillable.pdf",
+    "text": "Historic Preservation Board Project Checklist. (PDF, 324KB)",
+    "file": "data/city_files/West_Palm_Beach/179d74_wpb-historic-preservation-board-project-checklist_fillable.pdf",
+    "rows": 120,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/community-redevelopment-agency/165970-citwpb-bk-historic-northwest-books-significant-people_proof.pdf",
+    "text": "here (PDF, 3MB)",
+    "file": "data/city_files/West_Palm_Beach/4743f6_165970-citwpb-bk-historic-northwest-books-significant-people_proof.pdf",
+    "rows": 283,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/community-redevelopment-agency/165970-citwpb-bk-historic-northwest-books-preservation-initiatives_proof.pdf",
+    "text": "here (PDF, 1MB)",
+    "file": "data/city_files/West_Palm_Beach/a48ccc_165970-citwpb-bk-historic-northwest-books-preservation-initiatives_pro",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/development-services/documents/comprehensive-plan/2026-maps/future-land-use-map-current-through-ordinance-no.-5175-26-july-20-2026.pdf",
+    "text": "Future Land Use Map (PDF, 10MB)",
+    "file": "data/city_files/West_Palm_Beach/bc3175_future-land-use-map-current-through-ordinance-no.-5175-26-july-20-2026",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/development-services/documents/comprehensive-plan/2026-maps/zoning-map-current-through-ordinance-5176-26-july-20-2026.pdf",
+    "text": "Zoning Map (PDF, 9MB)",
+    "file": "data/city_files/West_Palm_Beach/1628bc_zoning-map-current-through-ordinance-5176-26-july-20-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/engineering/documents/24-11-14-wpb-bike-master-plan-steering-committee-meeting-1-presentation.pdf",
+    "text": "Project Steering Committee #1 Presentation (PDF, 5MB)",
+    "file": "data/city_files/West_Palm_Beach/7f495d_24-11-14-wpb-bike-master-plan-steering-committee-meeting-1-presentatio",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/wpb-bmp-steering-committee-meeting-3-notes-final.pdf",
+    "text": "WPB BMP Steering Committee #3 Meeting Notes (PDF, 117KB)",
+    "file": "data/city_files/West_Palm_Beach/7ec816_wpb-bmp-steering-committee-meeting-3-notes-final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/2/parking-amp-mobility/documents/northwood-village-merchants-association-meeting-update.pdf",
+    "text": "please click here (PDF, 308KB)",
+    "file": "data/city_files/West_Palm_Beach/64cf32_northwood-village-merchants-association-meeting-update.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/2/parking-amp-mobility/documents/northwood-parking-community-meeting.pdf",
+    "text": "meeting flyer here (PDF, 1005KB)",
+    "file": "data/city_files/West_Palm_Beach/7e00f0_northwood-parking-community-meeting.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/west-palm-beach-sap-safety-assessment-002.pdf",
+    "text": "",
+    "file": "data/city_files/West_Palm_Beach/022966_west-palm-beach-sap-safety-assessment-002.pdf",
+    "rows": 42,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/valet-permit-instruction-guide.pdf",
+    "text": "Valet Permit Instruction Guide (PDF, 154KB)",
+    "file": "data/city_files/West_Palm_Beach/e5aa04_valet-permit-instruction-guide.pdf",
+    "rows": 19,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/rpp-petitions.pdf",
+    "text": "Residential Parking Petitions (PDF, 155KB)",
+    "file": "data/city_files/West_Palm_Beach/c50cba_rpp-petitions.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/rpp-faq1.pdf",
+    "text": "FAQ's (PDF, 443KB)",
+    "file": "data/city_files/West_Palm_Beach/88d5a8_rpp-faq1.pdf",
+    "rows": 10,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/community-events/documents/2025/gm-25_january_roadclosures.pdf",
+    "text": "See road closure map here. (PDF, 2MB)",
+    "file": "data/city_files/West_Palm_Beach/dde7ac_gm-25_january_roadclosures.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/monthly-parking-application-new-2026_2.pdf",
+    "text": "Monthly Parking Application (PDF, 376KB)",
+    "file": "data/city_files/West_Palm_Beach/1abf62_monthly-parking-application-new-2026_2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/2ea32cd6d60a44be8e4c41c2ef441e2a": "Search",
+   "https://wpbgis.maps.arcgis.com/apps/webappviewer/index.html?id=62618bc161684c66993ba99067411901": "Parking Locations",
+   "https://wpbgis.maps.arcgis.com/apps/mapviewer/index.html?layers=350f6d5157304e5ebb727679608d8651": "Street Light Viewer",
+   "https://experience.arcgis.com/experience/74f086a20d674202ba06e1b9fc095335": "Regular pickup schedule here",
+   "https://map.viewprogis.com/ecp/wpb-fl?widget=95e563c4-5dec-4eb5-8e83-bed85e3304f6": "Historic Property Search (Interactive Web Map)",
+   "https://experience.arcgis.com/experience/874aaf576de9400499141ec424802dde/page/In-Review": "Citywide Projects Web App",
+   "https://www.wpb.org/?splash=https%3a%2f%2fmaps.viewprogis.com%2fecp%2fwpb-fl&____isexternal=true": "Zoning Map Viewer",
+   "https://wpbgis.maps.arcgis.com/apps/webappviewer/index.html?id=e2adea1d82ce42d38fa5a97217e99374": "Interactive GreenMarket Site Map"
+  }
+ },
+ "Broken Arrow": {
+  "files": [],
+  "portals": {}
+ },
+ "West Covina": {
+  "files": [],
+  "portals": {}
+ },
+ "Walworth County": {
+  "files": [],
+  "portals": {}
+ },
+ "Limestone County": {
+  "files": [],
+  "portals": {}
+ },
+ "San Angelo": {
+  "files": [],
+  "portals": {
+   "https://cosa1.maps.arcgis.com/apps/webappviewer/index.html?id=1d4fca5a9f4c419da8d5374880a86b30": "City Council District Map",
+   "https://experience.arcgis.com/experience/f90c578af35f479c9f9e10ff644edc07": "Development map",
+   "https://experience.arcgis.com/experience/b3c8f0b2d62b411ca1fddf8313b95c8e": "Elections map"
+  }
+ },
+ "Yakima": {
+  "files": [],
+  "portals": {}
+ },
+ "Fayetteville": {
+  "files": [],
+  "portals": {}
+ },
+ "Chino": {
+  "files": [],
+  "portals": {}
+ },
+ "Newton": {
+  "files": [],
+  "portals": {}
+ },
+ "Merced": {
+  "files": [],
+  "portals": {}
+ },
+ "Baytown": {
+  "files": [],
+  "portals": {}
+ },
+ "Manitowoc County": {
+  "files": [],
+  "portals": {}
+ },
+ "Clinton County": {
+  "files": [],
+  "portals": {
+   "https://app.fetchgis.com/?currentMap=clinton": "Click here to view the available maps"
+  }
+ },
+ "Flagstaff": {
+  "files": [],
+  "portals": {}
+ },
+ "Raleigh County": {
+  "files": [],
+  "portals": {}
+ },
+ "Turlock": {
+  "files": [
+   {
+    "url": "https://cityofturlock.org/_pdf/files/BroadwayPark.pdf",
+    "text": "Map of picnic areas",
+    "file": "data/city_files/Turlock/4b5b4e_BroadwayPark.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofturlock.org/_pdf/files/CranePark.pdf",
+    "text": "Map of picnic areas",
+    "file": "data/city_files/Turlock/60e751_CranePark.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofturlock.org/_pdf/files/DonnellyPark.pdf",
+    "text": "Map of picnic areas",
+    "file": "data/city_files/Turlock/351ed3_DonnellyPark.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofturlock.org/_pdf/files/PedrettiPark.pdf",
+    "text": "Map of picnic areas",
+    "file": "data/city_files/Turlock/a45ac4_PedrettiPark.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://turlock.maps.arcgis.com/apps/webappviewer/index.html?id=43bf0c8792de44cf93f94d5f1ae72f63": "Click Here for Map of City Parks"
+  }
+ },
+ "Lafayette": {
+  "files": [],
+  "portals": {}
+ },
+ "Greenwood County": {
+  "files": [],
+  "portals": {}
+ },
+ "Walker County": {
+  "files": [],
+  "portals": {}
+ },
+ "Lodi": {
+  "files": [],
+  "portals": {}
+ },
+ "Lorain": {
+  "files": [],
+  "portals": {}
+ },
+ "Lakewood": {
+  "files": [
+   {
+    "url": "https://cityoflakewood.us/wp-content/uploads/2018/12/street_sweeping_routes.pdf",
+    "text": "Pagwawalis sa kalye",
+    "file": "data/city_files/Lakewood/9ad6df_street_sweeping_routes.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityoflakewood.us/wp-content/uploads/2022/03/Historic-Streets-locations.pdf",
+    "text": "here",
+    "file": "data/city_files/Lakewood/3dbec6_Historic-Streets-locations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lakewoodhistorical.org/media/dynamic/docs/fall_2015.pdf",
+    "text": "Boatman-Ainsworth House",
+    "file": "data/city_files/Lakewood/cb54e6_fall_2015.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lakewoodhistorical.org/media/dynamic/docs/historic_driving_tour_of_lakewood.pdf",
+    "text": "Custer School “Little Red Schoolhouse”",
+    "file": "data/city_files/Lakewood/cb76e5_historic_driving_tour_of_lakewood.pdf",
+    "rows": 18,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityoflakewood.us/wp-content/uploads/2018/11/Lakewood-Map-Brochure-2015-PROOF6.pdf",
+    "text": "Historical Touring Map of Lakewood",
+    "file": "data/city_files/Lakewood/ae0b1b_Lakewood-Map-Brochure-2015-PROOF6.pdf",
+    "rows": 35,
+    "bike_rows": 11
+   }
+  ],
+  "portals": {
+   "https://city-of-lakewood-gis-cityoflakewood.hub.arcgis.com/": "GIS Maps"
+  }
+ },
+ "Barry County": {
+  "files": [],
+  "portals": {}
+ },
+ "Euless": {
+  "files": [],
+  "portals": {}
+ },
+ "Bradford County": {
+  "files": [],
+  "portals": {}
+ }
+}
