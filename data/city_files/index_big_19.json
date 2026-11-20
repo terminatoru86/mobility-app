@@ -1,0 +1,1083 @@
+{
+ "Bakersfield CA": {
+  "files": [],
+  "portals": {}
+ },
+ "Spokane WA": {
+  "files": [
+   {
+    "url": "https://www.epa.gov/sites/default/files/2016-12/documents/international_transitioning_to_low-gwp_alternatives_in_commercial_refrigeration.pdf",
+    "text": "Transitioning to Low GWP Alternatives",
+    "file": "data/city_files/Spokane_WA/42326f_international_transitioning_to_low-gwp_alternatives_in_commercial_refr",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://srec911.maps.arcgis.com/apps/instant/lookup/index.html?appid=337af083184c474d9d9181bb44f957b0": "",
+   "https://my.spokanecity.org/opendata/": "OpenData",
+   "https://my.spokanecity.org/opendata/gis/": "Maps",
+   "https://storymaps.arcgis.com/stories/3a4abcd7bc9642408002603847b84566": "Greenhouse Gas Inventory Story Map",
+   "https://srtc.maps.arcgis.com/home/webmap/viewer.html?webmap=a9c8901a015b4aea8c5e23a927a7fc41": "Spokane Regional Bike Map",
+   "https://storymaps.arcgis.com/collections/ca15fbe4b9f64aadb4853ae934ca379c": "",
+   "https://spokane.maps.arcgis.com/apps/webappviewer/index.html?id=8394011f5d53499aa334ad55058b3c3e": "map",
+   "https://experience.arcgis.com/experience/95415981c0404fae97631cc61759261b": "On-street Paid Parking Map"
+  }
+ },
+ "San Diego County": {
+  "files": [],
+  "portals": {}
+ },
+ "Contra Costa County": {
+  "files": [],
+  "portals": {}
+ },
+ "Ventura County": {
+  "files": [],
+  "portals": {}
+ },
+ "Monmouth County": {
+  "files": [
+   {
+    "url": "https://co.monmouth.nj.us/documents/70/2026_Recycling-Guide.pdf",
+    "text": "MONMOUTH COUNTY RECYCLING GUIDE",
+    "file": "data/city_files/Monmouth_County/092194_2026_Recycling-Guide.pdf",
+    "rows": 197,
+    "bike_rows": 32
+   },
+   {
+    "url": "https://www.co.monmouth.nj.us/documents/109/2021MonmothCountyMapGuideMapSide.pdf",
+    "text": "Monmouth County Map",
+    "file": "data/city_files/Monmouth_County/de51a3_2021MonmothCountyMapGuideMapSide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data-monmouthnj.hub.arcgis.com/": "Obtain GIS Maps"
+  }
+ },
+ "Greenville County": {
+  "files": [],
+  "portals": {
+   "https://www.gcgis.org/": "GIS Information",
+   "javascript:popUp('https://www.gcgis.org/apps/voterinfo','AddressWindow')": "Find Elected Officials",
+   "javascript:popUp('https://www.gcgis.org/apps/voterinfonj/','AddressWindow')": "Find Your Representatives",
+   "https://www.gcgis.org/apps/greenvillejs/?MapTheme=County%20Council%20Districts": "Political District Information",
+   "https://www.gcgis.org/apps/magistrateinfonj/": "Magistrate Court Information",
+   "http://www.gcgis.org/": "Geographic Information Systems",
+   "https://experience.arcgis.com/experience/b815fcbc6a8b453ab13ed6bd9f59250a": "",
+   "https://storymaps.arcgis.com/stories/be4557bb69c544659b9c051103d0daba": "Paving Program Overview"
+  }
+ },
+ "York County": {
+  "files": [],
+  "portals": {}
+ },
+ "Mercer County": {
+  "files": [],
+  "portals": {}
+ },
+ "Rockland County": {
+  "files": [],
+  "portals": {}
+ },
+ "Clayton County": {
+  "files": [],
+  "portals": {}
+ },
+ "Webb County": {
+  "files": [],
+  "portals": {}
+ },
+ "Yavapai County": {
+  "files": [
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/development-and-permits/wastewater-amp-solid-waste/documents/recycleflyer.pdf",
+    "text": "Transfer Station Recycling (PDF, 501KB)",
+    "file": "data/city_files/Yavapai_County/2c2d54_recycleflyer.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/2025-brochure.pdf",
+    "text": "How to Read Your Property Tax Notice & Frequently Asked Questions (PDF, 2MB)",
+    "file": "data/city_files/Yavapai_County/ec2551_2025-brochure.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/july-2026.pdf",
+    "text": "July 2026 (PDF, 8MB)",
+    "file": "data/city_files/Yavapai_County/738bc2_july-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/august-2026.pdf",
+    "text": "August 2026 (PDF, 4MB)",
+    "file": "data/city_files/Yavapai_County/2af066_august-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/2026-september.pdf",
+    "text": "September 2026 (PDF, 8MB)",
+    "file": "data/city_files/Yavapai_County/4a8b0d_2026-september.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/october-2026.pdf",
+    "text": "October 2026 (PDF, 8MB)",
+    "file": "data/city_files/Yavapai_County/e45a1a_october-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/fy2026-annual-financial-statement.pdf",
+    "text": "FY2026 Annual Financial Report (PDF, 27MB)",
+    "file": "data/city_files/Yavapai_County/609e70_fy2026-annual-financial-statement.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/2/mapping-and-properties/treasurer/july-2025.pdf",
+    "text": "July 2025 (PDF, 9MB)",
+    "file": "data/city_files/Yavapai_County/e4fc5f_july-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/august-2025.pdf",
+    "text": "August 2025 (PDF, 11MB)",
+    "file": "data/city_files/Yavapai_County/ae4bc8_august-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/september-2025.pdf",
+    "text": "September 2025 (PDF, 10MB)",
+    "file": "data/city_files/Yavapai_County/ff1c39_september-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/2/mapping-and-properties/treasurer/october-2025.pdf",
+    "text": "October 2025 (PDF, 12MB)",
+    "file": "data/city_files/Yavapai_County/62a241_october-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/2/mapping-and-properties/treasurer/november-2025.pdf",
+    "text": "November 2025 (PDF, 10MB)",
+    "file": "data/city_files/Yavapai_County/31296f_november-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/december-2025.pdf",
+    "text": "December 2025 (PDF, 12MB)",
+    "file": "data/city_files/Yavapai_County/978118_december-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/january-2026.pdf",
+    "text": "January 2026 (PDF, 10MB)",
+    "file": "data/city_files/Yavapai_County/90c01c_january-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/february-2026.pdf",
+    "text": "February 2026 (PDF, 10MB)",
+    "file": "data/city_files/Yavapai_County/fb27d0_february-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/march-2026.pdf",
+    "text": "March 2026 (PDF, 10MB)",
+    "file": "data/city_files/Yavapai_County/24c7f1_march-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/april-statement.pdf",
+    "text": "April 2026 (PDF, 7MB)",
+    "file": "data/city_files/Yavapai_County/ab27e0_april-statement.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/may-2026.pdf",
+    "text": "May 2026 (PDF, 8MB)",
+    "file": "data/city_files/Yavapai_County/72fb4c_may-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/june-2026.pdf",
+    "text": "June 2026 (PDF, 11MB)",
+    "file": "data/city_files/Yavapai_County/87bb75_june-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/fy2025-annual-financial-report.pdf",
+    "text": "FY2025 Annual Financial Report (PDF, 23MB)",
+    "file": "data/city_files/Yavapai_County/efe8ef_fy2025-annual-financial-report.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/july-2024.pdf",
+    "text": "July 2024 (PDF, 22MB)",
+    "file": "data/city_files/Yavapai_County/1ee30c_july-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/august-2024.pdf",
+    "text": "August 2024 (PDF, 21MB)",
+    "file": "data/city_files/Yavapai_County/2d4b3f_august-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/september-2024.pdf",
+    "text": "September 2024 (PDF, 22MB)",
+    "file": "data/city_files/Yavapai_County/b596bc_september-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/october-2024.pdf",
+    "text": "October 2024 (PDF, 22MB)",
+    "file": "data/city_files/Yavapai_County/845387_october-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/mapping-and-properties/treasurer/november-2024.pdf",
+    "text": "November 2024 (PDF, 22MB)",
+    "file": "data/city_files/Yavapai_County/722042_november-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://yavgis.maps.arcgis.com/apps/webappviewer/index.html?id=d8727dc0d9c4474f934297c3ad2ab160": "Road Work Interactive Map",
+   "https://gis.yavapaiaz.gov/alert/pgi.aspx": "Precipitation Values",
+   "https://gis.yavapaiaz.gov/alert/PgiWs.aspx": "Precipitation by Watershed",
+   "https://gis.yavapaiaz.gov/alert/WGI.aspx": "Weather Sensor Data",
+   "https://gis.yavapaiaz.gov/alert/SGI.aspx": "Stream / Lake Gauges",
+   "https://www.yavapaiaz.gov/Mapping-and-Properties/GIS-Mapping/GIS-News/GIS-Parcels-OpenData": "GIS Parcels now available on OpenData Published on December 22, 2023 The County GIS Department has setup the County-wide",
+   "https://storymaps.arcgis.com/stories/5449462cb3fa4e9595c7f104c0aa524d": "Census Summarizing Census results from 1990 - 2020 StoryMap",
+   "https://data-yavgis.opendata.arcgis.com/": "OpenData",
+   "https://experience.arcgis.com/experience/0a56d3069744419a8642dfe042f745b7": "*NEW* Interactive Mapping App",
+   "https://data-yavgis.opendata.arcgis.com": "https://data-yavgis.opendata.arcgis.com",
+   "https://experience.arcgis.com/experience/192bcca6c82b443181ebf3daeaa0220b": "Flood Hazard Mapping",
+   "https://experience.arcgis.com/experience/364d7c56c56e46b68f09c9185aa3f3b4": ""
+  }
+ },
+ "Lackawanna County": {
+  "files": [
+   {
+    "url": "https://www.votespa.com/Voting-in-PA/Documents/Absentee_Ballot_Application.pdf",
+    "text": "Application for Absentee Ballot",
+    "file": "data/city_files/Lackawanna_County/60d69f_Absentee_Ballot_Application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.votespa.com/Register-to-Vote/Documents/PADOS_MailInApplication.pdf",
+    "text": "Application for Mail-In Ballot",
+    "file": "data/city_files/Lackawanna_County/039e70_PADOS_MailInApplication.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://www.legis.state.pa.us/": "PA General Assembly"
+  }
+ },
+ "Trumbull County": {
+  "files": [],
+  "portals": {}
+ },
+ "Akron": {
+  "files": [],
+  "portals": {}
+ },
+ "Licking County": {
+  "files": [],
+  "portals": {}
+ },
+ "Kenton County": {
+  "files": [],
+  "portals": {}
+ },
+ "Fairfield County": {
+  "files": [
+   {
+    "url": "https://www.co.fairfield.oh.us/COMMISH/pdf/Fairfield_County_Courthouse_Coronet_Award_Release_FINAL_10.23.26.pdf",
+    "text": "10.23.26 Fairfield County Courthouse Selected to Receive 2026 Coronet Award The Fairfield County Heritage Association re",
+    "file": "data/city_files/Fairfield_County/c897d3_Fairfield_County_Courthouse_Coronet_Award_Release_FINAL_10.23.26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Kings County": {
+  "files": [],
+  "portals": {}
+ },
+ "Lebanon County": {
+  "files": [],
+  "portals": {}
+ },
+ "Clark County": {
+  "files": [
+   {
+    "url": "http://32trash.org/Cleanup%20Trailer/Application%20Form_Trailer.pdf",
+    "text": "Application Form,",
+    "file": "data/city_files/Clark_County/a6ac6b_Application_20Form_Trailer.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://32trash.org/Cleanup%20Trailer/Project%20Coordinator's%20Waiver.pdf",
+    "text": "Project Coordinator’s Waiver,",
+    "file": "data/city_files/Clark_County/eeeb7c_Project_20Coordinator_s_20Waiver.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://32trash.org/Cleanup%20Trailer/Participants%20List.pdf",
+    "text": "Participants List",
+    "file": "data/city_files/Clark_County/31941e_Participants_20List.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://32trash.org/Cleanup%20Trailer/Participants%20Waiver.pdf",
+    "text": "Participants Waiver",
+    "file": "data/city_files/Clark_County/84664d_Participants_20Waiver.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://32trash.org/Cleanup%20Trailer/Cleanup%20Report%20Form.pdf",
+    "text": "Cleanup Report Form",
+    "file": "data/city_files/Clark_County/f05f34_Cleanup_20Report_20Form.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://32trash.org/Cleanup%20Trailer/How%20to%20Get%20Started.pdf",
+    "text": "How to Get Started.",
+    "file": "data/city_files/Clark_County/30f0ea_How_20to_20Get_20Started.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://gis.clarkcountyauditor.org/": "Clark County Auditor GIS website"
+  }
+ },
+ "Wichita County": {
+  "files": [],
+  "portals": {}
+ },
+ "Morgan County": {
+  "files": [],
+  "portals": {}
+ },
+ "Oswego County": {
+  "files": [
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 1 Reduced.pdf?t=202502261501460",
+    "text": "District 1 Map",
+    "file": "data/city_files/Oswego_County/63a686_District_1_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 2 Reduced.pdf?t=202502261503320",
+    "text": "District 2 Map",
+    "file": "data/city_files/Oswego_County/2ef329_District_2_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 4 Reduced.pdf?t=202502261513160",
+    "text": "District 4 Map",
+    "file": "data/city_files/Oswego_County/879af4_District_4_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 7 Reduced.pdf?t=202502261519570",
+    "text": "District 7 Map",
+    "file": "data/city_files/Oswego_County/7110ca_District_7_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 8 Reduced.pdf?t=202502261520500",
+    "text": "District 8 Map",
+    "file": "data/city_files/Oswego_County/078b5e_District_8_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 9 Reduced.pdf?t=202502261522370",
+    "text": "District 9 Map",
+    "file": "data/city_files/Oswego_County/14fb96_District_9_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 10 Reduced.pdf?t=202502261523260",
+    "text": "District 10 Map",
+    "file": "data/city_files/Oswego_County/75d0e9_District_10_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 11 Reduced.pdf?t=202502261524070",
+    "text": "District 11 Map",
+    "file": "data/city_files/Oswego_County/19e734_District_11_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 12 Reduced.pdf?t=202502261525240",
+    "text": "District 12 Map",
+    "file": "data/city_files/Oswego_County/c9e783_District_12_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 13 Reduced.pdf?t=202502261549160",
+    "text": "District 13 Map",
+    "file": "data/city_files/Oswego_County/95d467_District_13_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 14 Reduced.pdf?t=202502261550410",
+    "text": "District 14 Map",
+    "file": "data/city_files/Oswego_County/f72786_District_14_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 15 Reduced.pdf?t=202502261551390",
+    "text": "District 15 Map",
+    "file": "data/city_files/Oswego_County/cfc755_District_15_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 16 Reduced.pdf?t=202502261553520",
+    "text": "District 16 Map",
+    "file": "data/city_files/Oswego_County/aadd1e_District_16_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 17 Reduced.pdf?t=202502261555160",
+    "text": "District 17 Map",
+    "file": "data/city_files/Oswego_County/f10390_District_17_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 18 Reduced.pdf?t=202502261556090",
+    "text": "District 18 Map",
+    "file": "data/city_files/Oswego_County/db1208_District_18_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 19 Reduced.pdf?t=202502261558130",
+    "text": "District 19 Map",
+    "file": "data/city_files/Oswego_County/bcf656_District_19_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 20 Reduced.pdf?t=202502261558510",
+    "text": "District 20 Map",
+    "file": "data/city_files/Oswego_County/67e730_District_20_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 21 Reduced.pdf?t=202502261559400",
+    "text": "District 21 Map",
+    "file": "data/city_files/Oswego_County/947ecb_District_21_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 23 Reduced.pdf?t=202502261602360",
+    "text": "District 23 Map",
+    "file": "data/city_files/Oswego_County/483d09_District_23_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 24 Reduced.pdf?t=202502261603240",
+    "text": "District 24 Map",
+    "file": "data/city_files/Oswego_County/8de2ff_District_24_Reduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oswegocountyny.gov/government/county_legislature/docs/District 25.pdf?t=202502261604120",
+    "text": "District 25 Map",
+    "file": "data/city_files/Oswego_County/b341ea_District_25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://oswegogis.maps.arcgis.com/apps/webappviewer/index.html?id=aa5b5b297c8d4d708799cd322d6c4673": "County Map",
+   "https://oswegogis.maps.arcgis.com/apps/instant/lookup/index.html?appid=e15f50369bd64a0cac2b46803f7c9d90": "new search tool",
+   "https://oswegogis.maps.arcgis.com/apps/MapTour/index.html?appid=9e4afcd5214c4448a3824a6faf0b9770": "Other Public Recreation Parks/Trails",
+   "https://elections-oswegogis.opendata.arcgis.com/datasets/voting-districts/about": "click here",
+   "https://oswegogis.maps.arcgis.com/apps/instant/media/index.html?appid=f4ea371ca1434a0e8c5049c8f7b7912f": "Proposed County Legislative Districts"
+  }
+ },
+ "St. Mary's County": {
+  "files": [],
+  "portals": {}
+ },
+ "Terrebonne Parish": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/c7f87a9f91944870b6e6cccb10734fd4": "GIS Maps"
+  }
+ },
+ "Navajo County": {
+  "files": [],
+  "portals": {}
+ },
+ "Wicomico County": {
+  "files": [],
+  "portals": {}
+ },
+ "Hunt County": {
+  "files": [],
+  "portals": {}
+ },
+ "Sherburne County": {
+  "files": [
+   {
+    "url": "http://sxk.2a3.myftpupload.com/wp-content/uploads/2023/11/Route-3-schedule-1.pdf",
+    "text": "Click for map and schedule.",
+    "file": "data/city_files/Sherburne_County/6ccbd6_Route-3-schedule-1.pdf",
+    "rows": 59,
+    "bike_rows": 5
+   }
+  ],
+  "portals": {
+   "https://gis.co.sherburne.mn.us/constructionmap": "Construction Projects",
+   "https://gis.co.sherburne.mn.us/countyditchmaintenance/": "County Ditch Projects",
+   "https://gis.co.sherburne.mn.us/DaycareFinder/": "Daycare Finder",
+   "https://data-sherburnegis.opendata.arcgis.com/": "Open Data",
+   "https://gis.co.sherburne.mn.us/pwpermits": "ROW & Moving Permits",
+   "https://gis.co.sherburne.mn.us/MailingLabels/": "Public Notifications",
+   "https://gis.co.sherburne.mn.us/SectionCornerHistory/default.htm": "Section Corner History",
+   "https://gis.co.sherburne.mn.us/reportaconcern": "Report a Concern",
+   "https://adopt-a-drain-sherburnegis.hub.arcgis.com/": "Adopt A Storm Drain",
+   "https://gis.co.sherburne.mn.us/reportaconcern/": "Report a Concern We'll Get It Fixed",
+   "https://co.sherburne.mn.us/845/Open-Data": "Open Data",
+   "https://gis.co.sherburne.mn.us/specialeventpermit/": "Special Event"
+  }
+ },
+ "Fall River": {
+  "files": [],
+  "portals": {
+   "https://fallriverma.cdmsmithgis.com/": "GIS"
+  }
+ },
+ "Frederick County": {
+  "files": [],
+  "portals": {}
+ },
+ "Indio": {
+  "files": [],
+  "portals": {}
+ },
+ "Fort Myers": {
+  "files": [],
+  "portals": {}
+ },
+ "Rockingham County": {
+  "files": [
+   {
+    "url": "https://www.vacourts.gov/courts/scv/districting/2021_1224_scv_final_sd_maps.pdf",
+    "text": "State Senate",
+    "file": "data/city_files/Rockingham_County/50be6e_2021_1224_scv_final_sd_maps.pdf",
+    "rows": 120,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.vacourts.gov/courts/scv/districting/2021_1224_scv_final_cd_maps.pdf",
+    "text": "Congressional",
+    "file": "data/city_files/Rockingham_County/71ec3e_2021_1224_scv_final_cd_maps.pdf",
+    "rows": 33,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hrvampo.org/sites/hrvampo.org/files/BikePlanFinalDraft_Comp.pdf",
+    "text": "Central Shenandoah Valley Bicycle Plan",
+    "file": "data/city_files/Rockingham_County/1ea012_BikePlanFinalDraft_Comp.pdf",
+    "rows": 15,
+    "bike_rows": 5
+   }
+  ],
+  "portals": {
+   "https://rockcova.interactivegis.com/login/": "GIS Online"
+  }
+ },
+ "Yuba County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/1726d658e0fc4e788c6abb52008f5660": "Parks, Trails & Recreation Map",
+   "https://data-yubacounty.hub.arcgis.com/": "",
+   "https://gis.data.ca.gov/": "California State Geoportal"
+  }
+ },
+ "Bloomington": {
+  "files": [
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/bloomington/1482_001_41986f4e-a1e6-48f6-a80d-23763c3ad8f4.pdf",
+    "text": "Hoosier Country - Adventure Cyclist",
+    "file": "data/city_files/Bloomington/541235_1482_001_41986f4e-a1e6-48f6-a80d-23763c3ad8f4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/19d143db5dab42d99fb32a63f24aa85c/page/Map": "here"
+  }
+ },
+ "Broomfield County": {
+  "files": [],
+  "portals": {
+   "https://broomfield.org/3786/Assessor-Data-Files-and-Open-Data": "Assessor Data Files and Open Data",
+   "https://broomfield.maps.arcgis.com/apps/webappviewer/index.html?id=c719fb2b705a4a1c86717d8dc8cf06c4": "Find Your Council Member and Ward",
+   "https://experience.gis.broomfield.org/exp/gps-monuments/": "GPS Monuments 2011",
+   "https://broomfield.maps.arcgis.com/apps/webappviewer/index.html?id=9731756c81b7456bb59a848a9cd14037": "Planning Research",
+   "https://opendata.broomfield.org": "GIS Data/Shapefiles",
+   "https://experience.arcgis.com/experience/23b0ca0f2d2e40b287b702e650ba3860/?org=broomfield": "Traffic Counts and Streets Map (includes traffic mitigation updates) - NEW posted 04-24-24",
+   "https://experience.gis.broomfield.org/exp/crash-data/": "Crash Data Dashboard",
+   "https://www.broomfield.org/3786/Assessor-Data-Files-and-Open-Data": "Assessor Data Files and Open Data",
+   "https://opendata.broomfield.org/": "https://opendata.broomfield.org/",
+   "https://experience.gis.broomfield.org/exp/socioeconomic-status/": "SES Maps",
+   "https://gis.drcog.org/bikeroutes/": "DRCOG Interactive Bike Map"
+  }
+ },
+ "Rapid City": {
+  "files": [
+   {
+    "url": "https://gis.rcgov.org/links/RAPIDMAPviewerinstructions.pdf",
+    "text": "here",
+    "file": "data/city_files/Rapid_City/c69341_RAPIDMAPviewerinstructions.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.rcgov.org/links/truckmap.pdf",
+    "text": "Truck and delivery routes",
+    "file": "data/city_files/Rapid_City/da48d8_truckmap.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.rcgov.org/links/GeneralRC.pdf",
+    "text": "General Rapid City planning map",
+    "file": "data/city_files/Rapid_City/c359f0_GeneralRC.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.rcgov.org/Html5Viewer/Index.html?configBase=http://gis.rcgov.org/Geocortex/Essentials/REST/sites/Pennington_Outdoors/viewers/Pennington_Outdoors/virtualdirectory/Resources/Config/Default": "Pennington County Outdoors",
+   "http://rcpc.maps.arcgis.com/apps/Styler/index.html?appid=8f3e09929c0c450286760552e005407c": "",
+   "https://rcpc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=3efe05d48965498ab3db7c481284c649": "Road Construction Map",
+   "https://experience.arcgis.com/experience/22a37f9e458a431b90c3eeefa29aca96": "Click here to launch Snow Event Map",
+   "https://gis.rcgov.org/Html5Viewer/Index.html?configBase=https://gis.rcgov.org/Geocortex/Essentials/REST/sites/PublicRapidMap/viewers/Rapid_Map/virtualdirectory/Resources/Config/Default": "Click here to launch RapidMap",
+   "https://experience.arcgis.com/experience/72b761bcaa2845cfaf9cfe1d9b03b12c": "Click here to launch RTS RapidRide",
+   "https://experience.arcgis.com/experience/ff1c2bb51db5465a89a2acd8e2f319df": "https://experience.arcgis.com/experience/ff1c2bb51db5465a89a2acd8e2f319df",
+   "https://gis.rcgov.org/Html5Viewer/Index.html?configBase=http://gis.rcgov.org/Geocortex/Essentials/REST/sites/1972_Flood_Commemoration/viewers/The_1972_Flood_-_The_Future_Shaped/virtualdirectory/Resources/Config/Default": "Click here to launch 1972 Rapid City Flood site",
+   "https://rcpc.maps.arcgis.com/apps/instant/basic/index.html?appid=df3c58d14f674acfa26b8950a1cf8705": "Click here to launch Rapid City Collection Days site",
+   "https://gis.rcgov.org/Html5Viewer/Index.html?configBase=http://gis.rcgov.org/Geocortex/Essentials/REST/sites/SurveyPoints/viewers/Control_Points/virtualdirectory/Resources/Config/Default": "Click here to launch the Survey Points site",
+   "https://experience.arcgis.com/experience/b03eeb32869e421fa0e92864794728f5": "Click here to launch the voting site"
+  }
+ },
+ "Christian County": {
+  "files": [
+   {
+    "url": "https://storage2.snappages.site/hsxbe61qrr/assets/files/Magisterial-Districts-2023-County.pdf",
+    "text": "Christian County magisterial district map",
+    "file": "data/city_files/Christian_County/be64b9_Magisterial-Districts-2023-County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage2.snappages.site/hsxbe61qrr/assets/files/2023-DISTRICT-1.pdf",
+    "text": "District one map",
+    "file": "data/city_files/Christian_County/9982a3_2023-DISTRICT-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage2.snappages.site/hsxbe61qrr/assets/files/2023-DISTRICT-2.pdf",
+    "text": "District two map",
+    "file": "data/city_files/Christian_County/b4d221_2023-DISTRICT-2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage2.snappages.site/hsxbe61qrr/assets/files/2023-DISTRICT-3.pdf",
+    "text": "District three map",
+    "file": "data/city_files/Christian_County/789f4b_2023-DISTRICT-3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage2.snappages.site/hsxbe61qrr/assets/files/2023-DISTRICT-4.pdf",
+    "text": "District four map",
+    "file": "data/city_files/Christian_County/2c76b8_2023-DISTRICT-4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage2.snappages.site/hsxbe61qrr/assets/files/2023-DISTRICT-5.pdf",
+    "text": "District five map",
+    "file": "data/city_files/Christian_County/d2ae08_2023-DISTRICT-5.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage2.snappages.site/hsxbe61qrr/assets/files/2023-DISTRICT-6.pdf",
+    "text": "District six map",
+    "file": "data/city_files/Christian_County/3ab03a_2023-DISTRICT-6.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage2.snappages.site/hsxbe61qrr/assets/files/2023-DISTRICT-7.pdf",
+    "text": "District seven map",
+    "file": "data/city_files/Christian_County/f74e83_2023-DISTRICT-7.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage2.snappages.site/hsxbe61qrr/assets/files/2023-DISTRICT-8.pdf",
+    "text": "District eight map",
+    "file": "data/city_files/Christian_County/8264b8_2023-DISTRICT-8.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Boone County": {
+  "files": [],
+  "portals": {
+   "https://gis.boonein.com/": "Pictometry GIS",
+   "https://experience.arcgis.com/experience/2ace282b312a4ff1a932517d1b7fe873": "Boone County GIS"
+  }
+ },
+ "Klamath County": {
+  "files": [],
+  "portals": {}
+ },
+ "Carteret County": {
+  "files": [
+   {
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_spoiled_outstanding_20261103.zip",
+    "text": "2026 Nov 03 Election - Outstanding Absentee Ballots (ZIP)",
+    "file": "data/city_files/Carteret_County/2f1afb_absentee_spoiled_outstanding_20261103.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_03_03/absentee_spoiled_outstanding_20260303.zip",
+    "text": "2026 Mar 03 Election - Outstanding Absentee Ballots (ZIP)",
+    "file": "data/city_files/Carteret_County/28f4fa_absentee_spoiled_outstanding_20260303.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2025_11_04/absentee_spoiled_outstanding_20251104.zip",
+    "text": "2025 Nov 04 Election - Outstanding Absentee Ballots (ZIP)",
+    "file": "data/city_files/Carteret_County/4dbb67_absentee_spoiled_outstanding_20251104.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2025_10_07/absentee_spoiled_outstanding_20251007.zip",
+    "text": "2025 Oct 07 Election - Outstanding Absentee Ballots (ZIP)",
+    "file": "data/city_files/Carteret_County/41fd94_absentee_spoiled_outstanding_20251007.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2025_09_09/absentee_spoiled_outstanding_20250909.zip",
+    "text": "2025 Sep 09 Election - Outstanding Absentee Ballots (ZIP)",
+    "file": "data/city_files/Carteret_County/0bbdf2_absentee_spoiled_outstanding_20250909.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_spoiled_outstanding_20241105.zip",
+    "text": "2024 Nov 05 Election - Outstanding Absentee Ballots (ZIP)",
+    "file": "data/city_files/Carteret_County/cca6b3_absentee_spoiled_outstanding_20241105.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/Press/2024%20General/Out_of_County_Ballots_Received.xlsx",
+    "text": "2024 Nov 05 Election - Out-of-County Ballots Received (xlsx)",
+    "file": "data/city_files/Carteret_County/b903e7_Out_of_County_Ballots_Received.xlsx",
+    "rows": 89,
+    "bike_rows": 89
+   },
+   {
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_05_14/absentee_spoiled_outstanding_20240514.zip",
+    "text": "2024 May 14 Election - Outstanding Absentee Ballots (ZIP)",
+    "file": "data/city_files/Carteret_County/fb8e21_absentee_spoiled_outstanding_20240514.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_03_05/absentee_spoiled_outstanding_20240305.zip",
+    "text": "2024 Mar 05 Election - Outstanding Absentee Ballots (ZIP)",
+    "file": "data/city_files/Carteret_County/d3ac63_absentee_spoiled_outstanding_20240305.zip",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://carteretcountync.gov/757/Carteret-County-GIS-Open-Data": "Carteret County GIS Open Data",
+   "https://carteretcountync.gov/759/GIS-Open-Data": "GIS Open Data",
+   "https://cc-gis.maps.arcgis.com/apps/instant/lookup/index.html?appid=812c969e0eff4397a03dc7faa5bc262e": "Precinct Lookup Tool",
+   "https://cc-gis.maps.arcgis.com/apps/instant/lookup/index.html?appid=4661e3cded6b4eb3a6d0b634b3dfdf50": "District & Municipality Lookup Tool",
+   "https://www.arcgis.com/apps/dashboards/5338e10e3f99474789fb613ce7977e1c": "View the Current Year Parcel and 911 Mapping Dashboard",
+   "http://gisdata-cc-gis.opendata.arcgis.com/": "Carteret County GIS Open Data",
+   "https://experience.arcgis.com/experience/41d8d8a2e968485a8af07c0fd5b03da6/": "",
+   "https://gisdata-cc-gis.opendata.arcgis.com/apps/c24e2958c7af49d3a3498523e540a750": "Comparable Sales"
+  }
+ },
+ "Ames": {
+  "files": [
+   {
+    "url": "https://www.cityofames.org/files/assets/city/v/1/parks-amp-recreation/documents/block-party-trailer/block-party-trailer-guidelines.pdf",
+    "text": "Trailer Guidelines (PDF, 120KB)",
+    "file": "data/city_files/Ames/50f010_block-party-trailer-guidelines.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofames.org/files/assets/city/v/1/parks-amp-recreation/documents/block-party-trailer/how-to-throw-a-block-party.pdf",
+    "text": "How to Throw a Block Party (PDF, 183KB)",
+    "file": "data/city_files/Ames/476c1c_how-to-throw-a-block-party.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofames.org/files/assets/city/v/1/parks-amp-recreation/documents/block-party-trailer/block-party-invitation-fillable-form.pdf",
+    "text": "Block Party Invitation Template (PDF, 554KB)",
+    "file": "data/city_files/Ames/9b036d_block-party-invitation-fillable-form.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://d2kbkoa27fdvtw.cloudfront.net/ames/82e8ec86342f03fa70c479621ed5856e0.pdf",
+    "text": "Staff Report on Residential Curbside Recycling (August 12, 2025)",
+    "file": "data/city_files/Ames/66f8e1_82e8ec86342f03fa70c479621ed5856e0.pdf",
+    "rows": 16,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3727556/Attachment_A_-_Curbside_Recycling_Survey_Results.pdf",
+    "text": "Curbside Recycling Survey Results (September 2025)",
+    "file": "data/city_files/Ames/03290a_Attachment_A_-_Curbside_Recycling_Survey_Results.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://d2kbkoa27fdvtw.cloudfront.net/ames/9ba0bf55ec1edf49666f8d730fcf86a80.pdf",
+    "text": "Nov. 18, 2025 Residential Curbside Recycling Council Action Form",
+    "file": "data/city_files/Ames/2a2281_9ba0bf55ec1edf49666f8d730fcf86a80.pdf",
+    "rows": 8,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.cityofames.org/files/content/city/v/30/my-government/departments/public-works/traffic-engineering/street-map.pdf",
+    "text": "Street Map",
+    "file": "data/city_files/Ames/73869a_street-map.pdf",
+    "rows": 203,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.cityofames.org/files/content/city/v/29/my-government/departments/public-works/traffic-engineering/shared_use_bike_path_map_2021_web.pdf",
+    "text": "Shared Use Path Map",
+    "file": "data/city_files/Ames/1f75ba_shared_use_bike_path_map_2021_web.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofames.org/files/assets/city/v/1/public-works/documents/rfqs/2026-27-stormwater-woody-vegeation-removal-rfq.pdf",
+    "text": "RFQ Document & Location Maps (PDF, 4MB)",
+    "file": "data/city_files/Ames/f58265_2026-27-stormwater-woody-vegeation-removal-rfq.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofames.org/files/assets/city/v/1/public-works/documents/traffic/meter-hood-application-101816.pdf",
+    "text": "Meter Hood Permit Application (PDF, 359KB)",
+    "file": "data/city_files/Ames/c3b7fd_meter-hood-application-101816.pdf",
+    "rows": 24,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.cityofames.org/files/assets/city/v/1/public-works/documents/snow-routes-january-2019.pdf",
+    "text": "snow routes (PDF, 2MB)",
+    "file": "data/city_files/Ames/b50281_snow-routes-january-2019.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofames.org/files/assets/city/v/1/parks-amp-recreation/documents/park-info/cross-country-ski-trails-map.pdf",
+    "text": "Cross Country Ski Trails Map(PDF, 484KB)",
+    "file": "data/city_files/Ames/91ed28_cross-country-ski-trails-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofames.org/files/assets/city/v/1/parks-amp-recreation/documents/park-info/shared-use-bike-path-map-2.pdf",
+    "text": "Bike and Recreational Trails Map(PDF, 3MB)",
+    "file": "data/city_files/Ames/1e4456_shared-use-bike-path-map-2.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofames.org/files/assets/city/v/1/resource-recovery/documents/curbside-recycling-chart.pdf",
+    "text": "Click here to download the chart. (PDF, 411KB)",
+    "file": "data/city_files/Ames/855dca_curbside-recycling-chart.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofames.org/files/assets/city/v/1/resource-recovery/documents/resource-recovery-and-recycling-campus-conceptual-design-report.pdf",
+    "text": "Resource Recovery and Recycling Conceptual Design Report.(PDF,15MB) (PDF, 15MB)",
+    "file": "data/city_files/Ames/e45cbf_resource-recovery-and-recycling-campus-conceptual-design-report.pdf",
+    "rows": 497,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://www.cityofames.org/files/content/city/v/22/my-government/departments/resource-recovery-system/residential-curbside-recycling-staff-report-8-12-25.pdf",
+    "text": "Residential Curbside Recycling.(PDF, 80KB)",
+    "file": "data/city_files/Ames/f8476b_residential-curbside-recycling-staff-report-8-12-25.pdf",
+    "rows": 16,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.cityofames.org/files/assets/city/v/1/public-works/documents/airport/terminal-area.pdf",
+    "text": "Terminal Map (PDF, 2MB)",
+    "file": "data/city_files/Ames/9e1957_terminal-area.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cityofames.org/files/content/city/v/20/my-government/departments/public-works/parking/2026-reserved-parking-contract.pdf",
+    "text": "Reserved Parking Form (PDF, 397KB)",
+    "file": "data/city_files/Ames/b70d3c_2026-reserved-parking-contract.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofames.org/files/content/city/v/20/my-government/departments/public-works/parking/downtown-employee-tag-contract.pdf",
+    "text": "Downtown District Employee Parking Form (PDF, 119KB)",
+    "file": "data/city_files/Ames/a58c3b_downtown-employee-tag-contract.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofames.org/files/content/city/v/20/my-government/departments/public-works/parking/park-mobile.pdf",
+    "text": "Park-Mobile Registration (PDF, 9MB)",
+    "file": "data/city_files/Ames/0f5ce2_park-mobile.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofames.org/files/content/city/v/38/my-government/departments/public-works/traffic-engineering/shared_use_bike_path_map_2021_web.pdf",
+    "text": "Shared Use Path Map (PDF, 3MB)",
+    "file": "data/city_files/Ames/7aabee_shared_use_bike_path_map_2021_web.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofames.org/files/content/city/v/38/my-government/departments/public-works/traffic-engineering/street-map.pdf",
+    "text": "Street Map (PDF, 2MB)",
+    "file": "data/city_files/Ames/c535e8_street-map.pdf",
+    "rows": 203,
+    "bike_rows": 12
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/ccfbd09f31ff4cedbe7e64ab7d3db05c/page/Page": "Click Here to Find Your Collection Day",
+   "https://experience.arcgis.com/experience/b4ffb6ae68734a26bc6f333c0947b1fa": "Projects in Design",
+   "https://gis.cityofames.org/images/snow/snowstatus.html": "Snow Plow Location Tracker",
+   "https://survey123.arcgis.com/share/dda2f51ed2db477cb402a2e4f0cab15d": "Street Tree Planting Permit",
+   "https://survey123.arcgis.com/share/ff64db4484b7476bb604f81b389bca7e": "Native Tree Rebate Application",
+   "https://experience.arcgis.com/experience/d5a140851b9a4fabbaf202146bb7ba5a/page/Page": "Current Construction Map",
+   "https://cityofamesgis.maps.arcgis.com/home/index.html": "Map Gallery",
+   "https://ames-public-utility-hub-cityofamesgis.hub.arcgis.com/": "Utility Data HUB",
+   "https://experience.arcgis.com/experience/c223eb3a97464b579784d0e7e34d56ec": "Parking Map",
+   "https://experience.arcgis.com/experience/291d4e2c64cf490a95a6660b1349a088/page/Traffic-Volume": "Volume Count Map",
+   "https://survey123.arcgis.com/share/fe8c28ca3c674e83886d0618ee47fa7c": "Native Landscaping Rebate Application",
+   "https://survey123.arcgis.com/share/93edb6fa0aa04ebe9bb5cdda09eece42": "Rain Barrel Rebate Application"
+  }
+ },
+ "Waltham": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/0a47b5eabfb9436791353dfa9a4e568e": "pick-up Map:",
+   "https://experience.arcgis.com/template/ece3f68eeef24f7e965f6aba12fd5f16": "Recycling",
+   "https://www.arcgis.com/apps/Viewer/index.html?appid=18976219e1844515a1448ef78ea8dff6&extent=-71.3056,42.3574,-71.1572,42.4124": "Off-Street parking map (with pay stations)",
+   "https://experience.arcgis.com/experience/03ab75eb22ad4caab86c75238f62fa12": "Waltham Parking Map",
+   "https://web-gis.city.waltham.ma.us/HistoricalSearch/Default.aspx": "Historical Property Database"
+  }
+ },
+ "Belknap County": {
+  "files": [],
+  "portals": {}
+ },
+ "Athens County": {
+  "files": [],
+  "portals": {}
+ },
+ "Woodland": {
+  "files": [],
+  "portals": {
+   "https://cityofwoodland.maps.arcgis.com/apps/View/index.html?appid=9dddc9a0b49642ef9ce12f45ee869ed2": "Map of City's Trees"
+  }
+ },
+ "Caldwell": {
+  "files": [],
+  "portals": {}
+ }
+}
