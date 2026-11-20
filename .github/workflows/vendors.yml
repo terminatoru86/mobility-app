@@ -4,7 +4,8 @@ name: Vendors and maps of all US municipalities
 # 2. scan: 20 shards read the municipal sites for vendors (rack / locker / repair-stand / scooter / parking
 #    companies), links to company sites and embedded maps (tool/vendor_scan.py scan)
 # 3. maps: reads every map found (city maps + the vendors' own location maps) -> data/vendors/points.json
-# 4. refix: opens the KMZ / ZIP files the city crawl downloaded but did not read, then rebuilds data/city_pts.json
+# 4. files: KMZ / ZIP of the city crawl + files and shared documents (Sheets, Drive, Dropbox...) linked from municipal
+#    pages, read; open-data portals (Socrata / CKAN) searched in step 3; then data/city_pts.json is rebuilt
 on:
   workflow_dispatch:
 
@@ -87,6 +88,7 @@ jobs:
             /tool/
             /data/us_states.json
             /data/vendors/
+            /data/city_files/index_*.json
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -102,9 +104,11 @@ jobs:
           for i in $(seq 1 40); do git pull -q --rebase -X theirs && git push -q && exit 0; sleep $((RANDOM % 45 + 10)); done
           exit 1
 
-  refix:
+  files:
+    needs: maps
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
         with:
@@ -116,14 +120,18 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install requests beautifulsoup4 lxml openpyxl pdfplumber pyshp pyproj
-      - run: python3 tool/city_files_refix.py
+      - run: git pull -q
+      - name: KMZ / ZIP of the city crawl, read again
+        run: python3 tool/city_files_refix.py
+      - name: Files and shared documents linked from municipal pages
+        run: python3 tool/vendor_scan.py files
       - run: python3 tool/public_maps.py || true
       - run: python3 tool/city_rows.py
       - name: Save
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/city_files data/city_pts.json data/city_pts_REPORT.md data/public_maps.json
-          git commit -qm "City files: KMZ / ZIP read again, city points rebuilt" || exit 0
+          git add data/city_files data/city_pts.json data/city_pts_REPORT.md data/public_maps.json data/vendors
+          git commit -qm "City files: KMZ / ZIP and linked documents read, city points rebuilt" || exit 0
           for i in $(seq 1 40); do git pull -q --rebase -X theirs && git push -q && exit 0; sleep $((RANDOM % 45 + 10)); done
           exit 1

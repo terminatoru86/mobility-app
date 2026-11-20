@@ -74,6 +74,10 @@ MAP_RX = re.compile(
 GOOD_MAP = re.compile(r'bike|bicycl|cycl|rack|corral|locker|scooter|micromobil|e-?bike|moped|motorcycle|repair|fix-?it|'
                       r'pump|charg|outlet|parking|valet', re.I)
 BAD_MAP = re.compile(r'lane|route|trail|path|network|crash|count|propos|plan|survey|zoning|parcel|street|hazard|sign', re.I)
+FILE_RX = re.compile(r'\.(xlsx?|csv|geojson|json|kml|kmz|zip|gpx|dbf|xml|txt|docx?|ods)(\?|$)', re.I)
+CLOUD_RX = re.compile(r'docs\.google\.com/spreadsheets/d/[\w-]+|drive\.google\.com/(?:file/d/|open\?id=)[\w-]+|'
+                      r'dropbox\.com/s[hc]?/[^"\'\s<>]+|[\w-]+\.box\.com/s/\w+|1drv\.ms/[^"\'\s<>]+|'
+                      r'[\w-]+\.sharepoint\.com/:[xbt]:/[^"\'\s<>]+', re.I)
 SKIP_HOST = re.compile(r'facebook|twitter|x\.com|instagram|youtube|linkedin|google\.|apple\.com|microsoft|adobe|civicplus|'
                        r'granicus|municode|govdelivery|nextdoor|tiktok|pinterest|flickr|vimeo|\.gov$|\.us$|\.mil$', re.I)
 
@@ -106,7 +110,7 @@ def scan_city(c):
         for u in re.findall(r'<loc>\s*([^<\s]+)\s*</loc>', sm.text)[:5000]:
             if PAGE_KEY.search(u.rsplit('/', 1)[-1]):
                 queue.append(u)
-    seen, vendors, ext, maps, pages = set(), collections.Counter(), collections.Counter(), set(), []
+    seen, vendors, ext, maps, pages, files = set(), collections.Counter(), collections.Counter(), set(), [], {}
     while queue and len(seen) < PAGES and time.time() < end:
         u = queue.pop(0)
         if u in seen:
@@ -133,10 +137,15 @@ def scan_city(c):
                 ext[h] += 1
             if MAP_RX.match(lu):
                 maps.add(lu)
+            if rel and (CLOUD_RX.search(lu) or (FILE_RX.search(lu) and (GOOD_MAP.search(lu + ' ' + text)))):
+                files[lu] = text
+        if rel:
+            for m in CLOUD_RX.finditer(html):
+                files.setdefault(m.group(0), '')
         if rel and u != base + '/':
             pages.append(u)
     return {'city': c['city'], 'site': site, 'vendors': dict(vendors), 'links': dict(ext), 'maps': sorted(maps)[:40],
-            'pages': pages[:15]}
+            'pages': pages[:15], 'files': dict(list(files.items())[:40])}
 
 
 def scan():
@@ -146,7 +155,7 @@ def scan():
     path, out, t0 = os.path.join(OUT, f'scan_{SHARD}.json'), [], time.time()
     with cf.ThreadPoolExecutor(THREADS) as ex:
         for i, r in enumerate(ex.map(scan_city, cities)):
-            if r['vendors'] or r['links'] or r['maps']:
+            if r['vendors'] or r['links'] or r['maps'] or r['files']:
                 out.append(r)
             if i % 200 == 0:
                 json.dump(out, open(path, 'w'), separators=(',', ':'))
@@ -323,6 +332,137 @@ def read_map(url, prefix=''):
     return []
 
 
+PORTAL_Q = ('bike rack', 'bicycle parking', 'bike parking', 'bike locker', 'scooter parking', 'micromobility',
+            'repair station', 'motorcycle parking', 'e-bike charging')
+
+
+def geo_points(j):
+    out = []
+    for f in (j.get('features') or []) if isinstance(j, dict) else []:
+        g = f.get('geometry') or {}
+        c = g.get('coordinates')
+        if g.get('type') == 'Point' and c and len(c) >= 2:
+            p = f.get('properties') or {}
+            nm = next((str(p[k]) for k in p if re.search(r'name|location|site|address', k, re.I) and p[k]), '')
+            out.append((float(c[1]), float(c[0]), nm[:80]))
+    return out
+
+
+def portal_points(dom):
+    """Socrata and CKAN open-data portals: datasets about our kinds of place, as points."""
+    out, seen = [], set()
+    for q in PORTAL_Q:
+        r = get(f'https://api.us.socrata.com/api/catalog/v1', timeout=40, params={'domains': dom, 'q': q, 'limit': 20})
+        for it in (r.json().get('results') or []) if r is not None else []:
+            res = it.get('resource') or {}
+            rid, name = res.get('id'), res.get('name') or ''
+            if not rid or rid in seen or not kind_of(name):
+                continue
+            seen.add(rid)
+            g = get(f'https://{dom}/resource/{rid}.geojson', timeout=90, params={'$limit': 50000})
+            if g is not None:
+                try:
+                    out.append((name, geo_points(g.json())))
+                except Exception:
+                    pass
+        r = get(f'https://{dom}/api/3/action/package_search', timeout=40, params={'q': q, 'rows': 20})
+        try:
+            pk = r.json()['result']['results'] if r is not None else []
+        except Exception:
+            pk = []
+        for p in pk:
+            for res in p.get('resources') or []:
+                u, name = res.get('url') or '', (p.get('title') or '') + ' ' + (res.get('name') or '')
+                if u in seen or not kind_of(name):
+                    continue
+                seen.add(u)
+                fmt = (res.get('format') or '').lower()
+                if 'geojson' in fmt or u.lower().endswith('.geojson'):
+                    g = get(u, timeout=90)
+                    if g is not None:
+                        try:
+                            out.append((name, geo_points(g.json())))
+                        except Exception:
+                            pass
+                elif 'kml' in fmt or re.search(r'\.km[lz](\?|$)', u, re.I):
+                    g = get(u, timeout=90)
+                    if g is not None:
+                        try:
+                            out.append((name, kml_points(g.content)))
+                        except Exception:
+                            pass
+                elif re.search(r'(Feature|Map)Server', u):
+                    out += read_map(u, name + ' ')
+    return out
+
+
+def direct(u):
+    m = re.search(r'docs\.google\.com/spreadsheets/d/([\w-]+)', u)
+    if m:
+        return f'https://docs.google.com/spreadsheets/d/{m.group(1)}/export?format=xlsx', 'xlsx'
+    m = re.search(r'drive\.google\.com/(?:file/d/|open\?id=)([\w-]+)', u)
+    if m:
+        return f'https://drive.google.com/uc?export=download&id={m.group(1)}', None
+    if 'dropbox.com' in u:
+        return re.sub(r'([?&])dl=0', r'\1dl=1', u) + ('' if 'dl=1' in u else ('&' if '?' in u else '?') + 'dl=1'), None
+    return u, None
+
+
+def files():
+    """Files and shared documents (Google Sheets / Drive, Dropbox, Box, OneDrive) linked from municipal bike /
+    parking pages: downloaded, read like the city files, rows saved for tool/city_rows.py."""
+    import city_files as cfm
+    import requests as rq
+    os.chdir(ROOT)
+    scans = [r for f in sorted(glob.glob(os.path.join(OUT, 'scan_*.json'))) for r in json.load(open(f))]
+    todo = [(r['city'], u, t) for r in scans for u, t in (r.get('files') or {}).items()]
+    print(f'{len(todo)} files / shared documents', flush=True)
+    kept = rows_n = 0
+
+    def one(item):
+        city, u, text = item
+        url, ext = direct(u)
+        try:
+            resp = rq.get(url, headers=UA, timeout=60, stream=True)
+            if resp.status_code != 200:
+                return city, u, None
+            ct = resp.headers.get('Content-Type') or ''
+            if not ext:
+                cd = resp.headers.get('Content-Disposition') or ''
+                m = re.search(r'filename\*?=(?:UTF-8\'\')?"?([^";]+)', cd)
+                ext = (m.group(1) if m else url.split('?')[0]).rsplit('.', 1)[-1].lower()
+                if 'html' in ct and ext not in ('csv', 'json', 'geojson', 'kml', 'xml', 'txt'):
+                    return city, u, None
+            d = os.path.join(cfm.OUT, re.sub(r'[^A-Za-z0-9]+', '_', city).strip('_'))
+            os.makedirs(d, exist_ok=True)
+            path = os.path.join(d, 'v_' + __import__('hashlib').md5(u.encode()).hexdigest()[:8] + '.' + ext[:8])
+            n = 0
+            with open(path, 'wb') as fh:
+                for ch in resp.iter_content(1 << 16):
+                    n += len(ch)
+                    if n > 40 << 20:
+                        break
+                    fh.write(ch)
+            rows = cfm.extract(path)
+            useful = [r for r in rows if 'error' not in r and (cfm.STRONG.search(json.dumps(r, ensure_ascii=False)) or GOOD_MAP.search(u + ' ' + text))]
+            if useful:
+                json.dump(useful[:5000], open(path + '.rows.json', 'w'), ensure_ascii=False)
+            os.remove(path)
+            return city, u, len(useful)
+        except Exception as e:
+            return city, u, None
+    log = []
+    with cf.ThreadPoolExecutor(12) as ex:
+        for city, u, n in ex.map(one, todo):
+            log.append(f'{n if n is not None else "-":>6}  {city}  {u[:120]}')
+            if n:
+                kept += 1
+                rows_n += n
+    open(os.path.join(OUT, 'FILES.md'), 'w').write(f'# Files linked from municipal pages\n\nRead: {len(todo)} · with rows: {kept} · '
+                                                   f'rows: {rows_n}\n\n```\n' + '\n'.join(log) + '\n```\n')
+    print(f'files with rows: {kept} · rows: {rows_n}', flush=True)
+
+
 def maps():
     scans = [r for f in sorted(glob.glob(os.path.join(OUT, 'scan_*.json'))) for r in json.load(open(f))]
     vend = collections.Counter()
@@ -337,7 +477,19 @@ def maps():
             linked[h] += 1
         for m in r['maps']:
             city_maps.append((r['city'], m))
-    print(f'{len(scans)} municipalities with finds · {len(vend)} vendors · {len(city_maps)} city maps', flush=True)
+    data_portals = set()
+    for f in sorted(glob.glob(os.path.join(ROOT, 'data', 'city_files', 'index_*.json'))):
+        for city, v in json.load(open(f)).items():
+            for u, text in (v.get('portals') or {}).items():
+                text = str(text)
+                if MAP_RX.match(u) and (GOOD_MAP.search(text + ' ' + u)):
+                    city_maps.append((city, u))
+                m = re.match(r'https?://(data\.[\w.-]+|opendata\.[\w.-]+|[\w.-]*data[\w.-]*\.(?:gov|org|us|com))/?$', u.strip())
+                if m:
+                    data_portals.add((city, m.group(1)))
+    city_maps = list(dict.fromkeys(city_maps))
+    print(f'{len(scans)} municipalities with finds · {len(vend)} vendors · {len(city_maps)} city maps · '
+          f'{len(data_portals)} open-data portals', flush=True)
     sites = sorted({VENDORS[v] for v in vend} | {h for h, n in linked.items() if n >= 3 and VENDOR_RX.search(h) is None} |
                    set(VENDORS.values()))
     found, log = {}, []
@@ -367,6 +519,10 @@ def maps():
         for site, res in zip(sites, ex.map(vendor_maps, sites)):
             for title, pts in res:
                 take(f'{site} map', title, pts)
+    with cf.ThreadPoolExecutor(16) as ex:
+        for (city, dom), res in zip(sorted(data_portals), ex.map(lambda cd: portal_points(cd[1]), sorted(data_portals))):
+            for title, pts in res:
+                take(f'{city} open data', title, pts)
     pts = list(found.values())
     json.dump(pts, open(os.path.join(OUT, 'points.json'), 'w'), separators=(',', ':'))
     lines = [f'# Vendors and maps of US municipalities', '',
@@ -381,4 +537,4 @@ def maps():
 
 
 if __name__ == '__main__':
-    {'scan': scan, 'maps': maps}[sys.argv[1] if len(sys.argv) > 1 else 'scan']()
+    {'scan': scan, 'maps': maps, 'files': files}[sys.argv[1] if len(sys.argv) > 1 else 'scan']()
