@@ -1,0 +1,1165 @@
+<!doctype html> <html lang="en" class="no-js"> <!-- Content Copyright National Park Service -->
+<!-- JavaScript & DHTML Code Copyright &copy; 1998-2025, PaperThin, Inc. All Rights Reserved. --> <head> <meta content="IE=edge" http-equiv="X-UA-Compatible"> <title>Technical Preservation Services (U.S. National Park Service)</title> <script>
+var jsDlgLoader = '/orgs/1739/loader.cfm';
+var jsSiteResourceLoader = '/cs-resources.cfm?r=';
+var jsSiteResourceSettings = {canCombine: false, canMinify: false};
+</script>
+<!-- beg (1) PrimaryResources -->
+<script src="/ADF/thirdParty/jquery/jquery-3.6.js"></script><script src="/ADF/thirdParty/jquery/migrate/jquery-migrate-3.4.js"></script><script src="/commonspot/javascript/browser-all.js"></script>
+<!-- end (1) PrimaryResources -->
+<!-- beg (2) SecondaryResources -->
+<!-- end (2) SecondaryResources -->
+<!-- beg (3) StyleTags -->
+<link rel="stylesheet" href="/common/commonspot/templates/assets/css/commonspotRTE.css" type="text/css" />
+<!-- end (3) StyleTags -->
+<!-- beg (4) JavaScript -->
+<script>
+<!--
+var gMenuControlID = 0;
+var menus_included = 0;
+var jsSiteID = 1;
+var jsSubSiteID = 30659;
+var js_gvPageID = 5423395;
+var jsPageID = 5423395;
+var jsPageSetID = 0;
+var jsPageType = 0;
+var jsSiteSecurityCreateControls = 0;
+var jsShowRejectForApprover = 1;
+// -->
+</script><script>
+var jsDlgLoader = '/orgs/1739/loader.cfm';
+var jsSiteResourceLoader = '/cs-resources.cfm?r=';
+var jsSiteResourceSettings = {canCombine: false, canMinify: false};
+</script>
+<!-- end (4) JavaScript -->
+<!-- beg (5) CustomHead -->
+<!-- override OrgSite from Organization Home Page-->
+<meta charset="utf-8">
+<link href="/common/commonspot/templates/images/icons/favicon.ico" rel="shortcut icon">
+<meta name="description" content="Technical Preservation Services">
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if gt IE 8]>
+<script src="/common/commonspot/templates/assets/js/app.early.min.js?v=20230112"></script>
+<link href="/common/commonspot/templates/assets/css/split-css/main.min.css?v=2rpz-n03cpj" media="screen, print" rel="stylesheet">
+<link href="/common/commonspot/templates/assets/css/split-css/main-min-blessed1.css" media="screen, print" rel="stylesheet">
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="/common/commonspot/templates/assets/js/app.early.min.js?v=20230112"></script>
+<link href="/common/commonspot/templates/assets/css/split-css/main.min.css?v=2rpz-n03cpj" media="screen, print" rel="stylesheet">
+<link href="/common/commonspot/templates/assets/css/split-css/main-min-blessed1.css" media="screen, print" rel="stylesheet">
+<![endif]-->
+<!--[if !IE]> -->
+<script src="/common/commonspot/templates/assets/js/app.early.min.js?v=20230112"></script>
+<link href="/common/commonspot/templates/assets/css/main.min.css?v=20230112" media="screen, print" rel="stylesheet">
+<!-- <![endif]-->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:700,600,400|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
+<meta name="apple-itunes-app" content="app-id=1549226484, app-argument=https://apps.apple.com/us/app/national-park-service/id1549226484">
+<style>
+table#cs_idLayout2,
+table#cs_idLayout2 > tbody,
+table#cs_idLayout2 > tbody > tr,
+table#cs_idLayout2 > tbody > tr >  td
+{
+display: block;
+border-collapse:separate;
+}
+</style>
+<script src='/common/commonspot/templates/js/federated-analytics-uav1.js?ver=true&agency=DOI&subagency=NPS&exts=rtf,odt,ods,odp,brf&dclink=true&enhlink=true' id='_fed_an_ua_tag'></script>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Technical Preservation Services (U.S. National Park Service)" />
+<meta property="og:url" content="https://www.nps.gov/orgs/1739/index.htm" />
+<meta property="og:description" content="Technical Preservation Services" />
+<!-- end (5) CustomHead -->
+<!-- beg (6) TertiaryResources -->
+<meta property="og:image" content="https&#x3a;&#x2f;&#x2f;www.nps.gov&#x2f;common&#x2f;uploads&#x2f;banner_image&#x2f;nri&#x2f;homepage&#x2f;9E34805E-FA21-41C3-E905938D38E9F444.jpg" /><meta property="og:image:height" content="700" /><meta property="og:image:width" content="2400" /><meta property="og:image:alt" content="Photo&#x20;of&#x20;a&#x20;former&#x20;Coca-Cola&#x20;bottling&#x20;plant" />
+<!-- end (6) TertiaryResources -->
+<!-- beg (7) authormode_inlinestyles -->
+<link rel="stylesheet" type="text/css" href="/commonspot/commonspot.css" id="cs_maincss">
+<!-- end (7) authormode_inlinestyles -->
+</head><body class="OrgSite"><span role="navigation" aria-label="Top of page" id="__topdoc__"></span>
+<section
+class="usa-banner"
+aria-label="Official website of the United States government"
+>
+<div class="usa-accordion">
+<header class="usa-banner__header">
+<div class="usa-banner__inner">
+<div class="grid-col-auto">
+<img
+aria-hidden="true"
+class="usa-banner__header-flag"
+src="/common/commonspot/templates/assets/icon/us_flag_small.png"
+alt=""
+/>
+</div>
+<div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+<p class="usa-banner__header-text">
+An official website of the United States government
+</p>
+<p class="usa-banner__header-action">Here's how you know</p>
+</div>
+<button
+type="button"
+class="usa-accordion__button usa-banner__button"
+aria-expanded="false"
+aria-controls="gov-banner-default"
+>
+<span class="usa-banner__button-text">Here's how you know</span>
+</button>
+</div>
+</header>
+<div
+class="usa-banner__content usa-accordion__content"
+id="gov-banner-default"
+>
+<div class="grid-row grid-gap-lg">
+<div class="usa-banner__guidance tablet:grid-col-6">
+<img
+class="usa-banner__icon usa-media-block__img"
+src="/common/commonspot/templates/assets/icon/icon-dot-gov.svg"
+role="img"
+alt=""
+aria-hidden="true"
+/>
+<div class="usa-media-block__body">
+<p>
+<strong>Official websites use .gov</strong><br />A
+<strong>.gov</strong> website belongs to an official government
+organization in the United States.
+</p>
+</div>
+</div>
+<div class="usa-banner__guidance tablet:grid-col-6">
+<img
+class="usa-banner__icon usa-media-block__img"
+src="/common/commonspot/templates/assets/icon/icon-https.svg"
+role="img"
+alt=""
+aria-hidden="true"
+/>
+<div class="usa-media-block__body">
+<p>
+<strong>Secure .gov websites use HTTPS</strong><br />A
+<strong>lock</strong> (
+<span class="icon-lock"
+><svg
+xmlns="http://www.w3.org/2000/svg"
+width="52"
+height="64"
+viewBox="0 0 52 64"
+class="usa-banner__lock-image"
+role="img"
+aria-labelledby="banner-lock-description-default"
+focusable="false"
+>
+<title id="banner-lock-title-default">Lock</title>
+<desc id="banner-lock-description-default">Locked padlock icon</desc>
+<path
+fill="#000000"
+fill-rule="evenodd"
+d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"
+/>
+</svg> </span
+>) or <strong>https://</strong> means you've safely connected to
+the .gov website. Share sensitive information only on official,
+secure websites.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--googleoff: index-->
+<div tabindex="-1" id="beforeSkipLinks" ></div>
+<div class="skip-links" aria-label="short-cut links" role="navigation">
+<ul>
+<li><a href="#GlobalNav-toggle" aria-label="Skip to global NPS navigation">Skip to global NPS navigation</a></li>
+<li><a href="#main" aria-label="Skip to the main content">Skip to the main content</a></li>
+<li><a href="#GlobalFooter" aria-label="Skip to the footer section">Skip to the footer section</a></li>
+</ul>
+</div>
+<!--googleon: index-->
+<!--googleoff: index-->
+<div class="PromoBanner"></div>
+<!--googleon: index-->
+<!--googleoff: index-->
+<div class="GlobalHeader usaGlobalHeader" role="banner">
+<div class="GlobalHeader__Navbar container ">
+<a class="GlobalHeader__Branding link-white" href="/">
+<img src="/theme/assets/dist/images/branding/logo.png"
+alt=""
+width="80"
+height="106"
+class="GlobalHeader__Branding__Arrowhead img-fluid">
+<span class="GlobalHeader__Branding__Text">
+National Park Service
+</span>
+</a>
+<a href="#GlobalFooterSearchInput"
+class="GlobalHeader__FooterSearchLink js-scrollTo link-white">
+<svg class="usa-icon"
+role="presentation"
+focusable="false">
+<use href="/theme/assets/vendor/npsds/packages/icons/dist/sprite.svg#search" />
+</svg>
+<span class="visually-hidden">Search</span>
+</a>
+<form id="GlobalHeaderSearch"
+class="GlobalHeader__Search"
+action="/search/"
+method="GET"
+role="search">
+<button type="button"
+data-bs-toggle="collapse"
+data-bs-target="#GlobalHeaderSearchCollapse"
+aria-expanded="false"
+aria-controls="GlobalHeaderSearchCollapse">
+<svg class="usa-icon"
+role="presentation"
+focusable="false">
+<use href="/theme/assets/vendor/npsds/packages/icons/dist/sprite.svg#search" />
+</svg>
+Search
+</button>
+<div id="GlobalHeaderSearchCollapse"
+class="collapse collapse-horizontal"
+role="presentation">
+<div>
+<input class="form-control me-2"
+type="text"
+autocomplete="off"
+name="query"
+placeholder="Keyword Search"
+required
+aria-label="Search text">
+<div class="GlobalSearch-suggestions"></div>
+<button class="usa-button usa-button--outline usa-button--inverse me-2" data-scope="site" type="submit">
+This Site
+</button>
+<button class="usa-button usa-button--outline usa-button--inverse" data-scope="all" type="submit">
+All NPS
+</button>
+</div>
+</div>
+<input type="hidden"
+name="sitelimit"
+value="www.nps.gov/orgs/1739">
+<input type="hidden" name="affiliate" value="nps">
+</form>
+</div>
+<nav id="GlobalNav" class="GlobalNav usaGlobalNav">
+<div id="GlobalNavButtonContainer" class="usaGlobalNavButtonContainer">
+<button type="button"
+id="GlobalNav-toggle"
+class="usa-button usa-button--inverse-fill"
+data-bs-toggle="collapse"
+data-bs-target="#GlobalNavCollapse"
+aria-controls="GlobalNavCollapse"
+aria-expanded="false"
+aria-label="Open Menu">
+<span class="GlobalNav__Toggle__Text GlobalNav__Toggle__Text--closed">
+<svg class="usa-icon"
+role="presentation"
+focusable="false">
+<use href="/theme/assets/vendor/npsds/packages/icons/dist/sprite.svg#menu" />
+</svg>
+<span class="visually-hidden">Open</span>
+Menu
+</span>
+<span class="GlobalNav__Toggle__Text GlobalNav__Toggle__Text--open">
+<svg class="usa-icon"
+role="presentation"
+focusable="false">
+<use href="/theme/assets/vendor/npsds/packages/icons/dist/sprite.svg#close" />
+</svg>
+Close
+<span class="visually-hidden">Menu</span>
+</span>
+</button>
+</div>
+<div id="GlobalNavCollapse" class="collapse">
+<div class="container">
+<p class="GlobalNav__LanguageInfo">
+</p>
+<h2 class="GlobalNav__SectionHeading GlobalNav__SectionHeading--green" hidden>
+Explore This Park
+</h2>
+<ul id="GlobalNavListLocal" class="GlobalNav__List" hidden></ul>
+<h2 class="GlobalNav__SectionHeading GlobalNav__SectionHeading--blue">
+Explore the National Park Service
+</h2>
+<ul id="GlobalNavList" class="GlobalNav__List"></ul>
+</div>
+</div>
+</nav>
+</div>
+<!--googleon: index-->
+<div id="myModal" class="modal refreshableModal" tabindex="-1" aria-labelledby="exitModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h2 class="modal-title visually-hidden" id="exitModalLabel">Exiting nps.gov</h2>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body"></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+</div>
+</div>
+</div>
+</div>
+<div id="cs_control_4199662" class="cs_control CS_Element_Schedule"><div  title="" id="CS_Element_OrgBannerContainer"><div id="gridRow_1_1_4199662" class="cs_GridRow"><div id="gridCol_1_1_1_1_4199662" class="cs_GridColumn"><div id="cs_control_824549" class="cs_control CS_Element_CustomCF"><div id="CS_CCF_5423395_824549">
+<script>
+window.addEventListener('load', (event) => {
+NPS.utility.updateBannerImageFromJSON( "1739" );
+});
+</script>
+<header id="HERO" class="Hero Hero--Ribbon -primary">
+<div id="HeroBanner" class="HeroBanner HeroBanner--long">
+<div class="HeroBanner__TitleContainer">
+<div class="container">
+<h1>
+<a href="&#x2f;orgs&#x2f;1739&#x2f;"
+class="HeroBanner__Title"
+>Technical Preservation Services</a>
+</h1>
+</div>
+</div>
+<div class="picturefill-background"
+role="img"
+style="background-image: url('/common/uploads/banner_image/nri/homepage/9E34805E-FA21-41C3-E905938D38E9F444.jpg?mode=crop&quality=90&width=1024&height=300');" aria-label="Photo of a former Coca-Cola bottling plant">
+<span data-src="/common/uploads/banner_image/nri/homepage/9E34805E-FA21-41C3-E905938D38E9F444.jpg?mode=crop&quality=90&width=1200&height=350"
+data-media="(min-width: 1024px)"></span>
+<span data-src="/common/uploads/banner_image/nri/homepage/9E34805E-FA21-41C3-E905938D38E9F444.jpg?mode=crop&quality=90&width=2400&height=700"
+data-media="(min-width: 1024px) and (min-resolution: 144dppx)"></span>
+<span data-src="/common/uploads/banner_image/nri/homepage/9E34805E-FA21-41C3-E905938D38E9F444.jpg?mode=crop&quality=90&width=2400&height=700"
+data-media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5)"></span>
+<span data-src="/common/uploads/banner_image/nri/homepage/9E34805E-FA21-41C3-E905938D38E9F444.jpg?mode=crop&quality=90&width=2400&height=700"
+data-media="(min-width: 1440px)"></span>
+</div>
+</div>
+</header>
+</div></div></div></div></div></div>
+<div id="Subject-header">
+<div class="container">
+<div class="pull-left">
+<!--googleoff: index-->
+<nav id="LocalNav-desktop-nav" role="navigation">
+<div id="cs_control_699042" class="cs_control CS_Element_CustomCF"><div id="CS_CCF_5423395_699042"><div id="cs_control_481717" class="cs_control CS_Element_Custom"><!-- _CSDPFID=5423395|5423395=_CSDPFID -->
+<style type="text/css">
+div.ColumnMain #npsNav h2 { display:none }
+</style>
+<!-- nav -->
+<!--googleoff: index-->
+<div id="npsNav" class="403694C5-0681-34C8-4C11A0C3B5EC96EB">
+<ul id="LocalNav" class="sm sm-nps"></ul>
+</div>
+<!--googleon: index-->
+<script>
+jQuery(document).ready(function() {
+NPS.display.outputNav('/orgs/1739','/orgs/1739/index.htm','read');
+});
+</script>
+</div></div></div>
+</nav>
+<!--googleon: index-->
+<script>
+(function ($) {
+// Hide park home
+$("#LocalNav-desktop-nav ul li a:contains('Park Home')")
+.parent()
+.hide();
+// Hide park home
+$("li#LocalNav-mobile ul li a:contains('Park Home')")
+.parent()
+.hide();
+$("ul#LocalNav > li > a")
+.wrap("<div class='top-lvl-item-container'>")
+.wrap("<div class='top-lvl-item'>");
+})(jQuery);
+</script>
+</div>
+</div>
+</div>
+<script language="javascript">
+jQuery.getJSON( '/1739/1739_linked_data.json', function( data ) {
+var ld = {};
+// remove physical address
+for ( var ad = 0; ad < data.address.length; ad++ ) {
+if ( data.address[ ad ].name = 'Physical Address' ) {
+data.address.splice( ad, 1 );
+}
+}
+ld["@context"]="http://schema.org/";
+ld["@type"]="Place";
+ld["name"] = data.name;
+ld["branchCode"] = data.branchCode;
+ld["description"] = data.description;
+ld["url"] = data.url;
+ld["address"] = data.address;
+ld["telephone"] = data.telephone;
+ld_code = JSON.stringify( ld  );
+jQuery('<script />', { type:'application/ld+json' } ).html( ld_code ).appendTo('head');
+});
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+setTimeout( function() {
+NPS.display.showAdminTools( 0 );
+} ,10);
+});
+</script>
+<div id="main" role="main" class="MainContent">
+<style>
+#modal-contact-us .modal-body { padding-top: 0px; }
+.modal-header { border:none; }
+</style>
+<div class="modal fade" id="modal-contact-us" tabindex="-1" aria-labelledby="modal-contact-us-label">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title visually-hidden" id="modal-contact-us-label">Contact Us</h4>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<iframe frameborder="0" id="modal-contact-us-iframe" width="100%" height="100%" title="Contact Us"></iframe>
+</div>
+</div>
+</div>
+</div>
+<div id="adminTools"></div>
+<div class="container">
+<div class="ColumnGrid row">
+<div class="ColumnMain col-sm-12">
+<div class="row">
+<div class="col-sm-12">
+<div id="cs_control_4199669" class="cs_control CS_Element_Custom">
+<div class="Component text-content-size text-content-style">
+<p><h3 dir="ltr">Preserving our nation's historic buildings</h3>
+<p dir="ltr">Technical Preservation Services develops historic preservation standards and guidance on preserving and rehabilitating historic buildings, administers the Federal <a href="https://www.nps.gov/subjects/taxincentives/index.htm" id="https://www.nps.gov/subjects/taxincentives/index.htm|">Historic Preservation Tax Incentives program</a> for rehabilitating historic buildings, and sets the <a href="https://www.nps.gov/orgs/1739/secretary-standards-treatment-historic-properties.htm" id="https://www.nps.gov/orgs/1739/secretary-standards-treatment-historic-properties.htm|">Secretary of the Interior's Standards for the Treatment of Historic Properties</a>.  </p>
+ 
+<p><em>Banner photo: The Bottleworks, Indianapolis, Indiana, Susan Fleck; Courtesy RATIO Design and Hendricks Commericial Properties</em></p></p>
+</div>
+</div><div id="cs_control_4199665" class="cs_control CS_Element_Schedule"><div  title="" id="CS_Element_OrgFeatureContainer"><div id="gridRow_1_1_4199665" class="cs_GridRow"><div id="gridCol_1_1_1_1_4199665" class="cs_GridColumn"><div id="cs_control_899733" class="cs_control CS_Element_Custom">
+<div class="Component nps-feature-grid">
+<div class="usa-card-group">
+<div class="usa-card usa-card--link usa-card--bg-none tablet:grid-col-4">
+<div class="usa-card__container">
+<div class="usa-card__header">
+<div class="usa-card__heading h3">
+<a href="&#x2f;orgs&#x2f;1739&#x2f;contactus.htm"
+onclick="gas('send', 'event', 'Feature Grid - Prioritized', document.location.href, '&#x2f;orgs&#x2f;1739&#x2f;contactus.htm', 1, true)">
+Contact Us
+</a>
+</div>
+</div>
+<div class="usa-card__media">
+<div class="usa-card__img usa-card__img--ratio-16x9">
+<img src="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;D10083A2-D89B-7ED8-83C7C28DBC08DA30.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp"
+sizes="&#x28;min-width&#x3a;&#x20;1380px&#x29;&#x20;420px,&#x20;&#x28;min-width&#x3a;&#x20;1200px&#x29;&#x20;360px,&#x20;&#x28;min-width&#x3a;&#x20;576px&#x29;&#x20;33vw,&#x20;100vw"
+srcset="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;D10083A2-D89B-7ED8-83C7C28DBC08DA30.jpg&#x3f;width&#x3d;420&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;420w,&#x20;&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;D10083A2-D89B-7ED8-83C7C28DBC08DA30.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;640w"
+alt="photo&#x20;of&#x20;the&#x20;interior&#x20;of&#x20;a&#x20;factory">
+</div>
+</div>
+<div class="usa-card__body" id="fg_body_7A8292A6-FCFF-FDB5-BC028366C4D4AFD5">
+Contact the TPS office and staff
+</div>
+</div>
+</div>
+<div class="usa-card usa-card--link usa-card--bg-none tablet:grid-col-4">
+<div class="usa-card__container">
+<div class="usa-card__header">
+<div class="usa-card__heading h3">
+<a href="&#x2f;orgs&#x2f;1739&#x2f;keep-in-touch-with-tps.htm"
+onclick="gas('send', 'event', 'Feature Grid - Prioritized', document.location.href, '&#x2f;orgs&#x2f;1739&#x2f;keep-in-touch-with-tps.htm', 1, true)">
+Keep in touch with TPS
+</a>
+</div>
+</div>
+<div class="usa-card__media">
+<div class="usa-card__img usa-card__img--ratio-16x9">
+<img src="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;6DF6FF96-FAFE-EF4B-9648E6F347E7EFBF.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp"
+sizes="&#x28;min-width&#x3a;&#x20;1380px&#x29;&#x20;420px,&#x20;&#x28;min-width&#x3a;&#x20;1200px&#x29;&#x20;360px,&#x20;&#x28;min-width&#x3a;&#x20;576px&#x29;&#x20;33vw,&#x20;100vw"
+srcset="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;6DF6FF96-FAFE-EF4B-9648E6F347E7EFBF.jpg&#x3f;width&#x3d;420&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;420w,&#x20;&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;6DF6FF96-FAFE-EF4B-9648E6F347E7EFBF.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;640w"
+alt="photo&#x20;of&#x20;a&#x20;building">
+</div>
+</div>
+<div class="usa-card__body" id="fg_body_7A8292A8-FE32-A4D2-AF9A1B6A7B42C183">
+Subscribe to  news and updates from TPS
+</div>
+</div>
+</div>
+<div class="usa-card usa-card--link usa-card--bg-none tablet:grid-col-4">
+<div class="usa-card__container">
+<div class="usa-card__header">
+<div class="usa-card__heading h3">
+<a href="&#x2f;orgs&#x2f;1739&#x2f;news.htm"
+onclick="gas('send', 'event', 'Feature Grid - Prioritized', document.location.href, '&#x2f;orgs&#x2f;1739&#x2f;news.htm', 1, true)">
+Latest News
+</a>
+</div>
+</div>
+<div class="usa-card__media">
+<div class="usa-card__img usa-card__img--ratio-16x9">
+<img src="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;640D1D0E-A5C3-350F-E1A4E0166372A2B4.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp"
+sizes="&#x28;min-width&#x3a;&#x20;1380px&#x29;&#x20;420px,&#x20;&#x28;min-width&#x3a;&#x20;1200px&#x29;&#x20;360px,&#x20;&#x28;min-width&#x3a;&#x20;576px&#x29;&#x20;33vw,&#x20;100vw"
+srcset="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;640D1D0E-A5C3-350F-E1A4E0166372A2B4.jpg&#x3f;width&#x3d;420&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;420w,&#x20;&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;640D1D0E-A5C3-350F-E1A4E0166372A2B4.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;640w"
+alt="photo&#x20;of&#x20;a&#x20;parking&#x20;garage">
+</div>
+</div>
+<div class="usa-card__body" id="fg_body_7A8292AA-EBD3-5BD9-8EE20BCE1BC8BDDD">
+Get the latest TPS news
+</div>
+</div>
+</div>
+</div>
+<div class="usa-card-group">
+<div class="usa-card usa-card--link usa-card--bg-none tablet:grid-col-4">
+<div class="usa-card__container">
+<div class="usa-card__header">
+<div class="usa-card__heading h3">
+<a href="&#x2f;subjects&#x2f;taxincentives&#x2f;index.htm"
+onclick="gas('send', 'event', 'Feature Grid - Prioritized', document.location.href, '&#x2f;subjects&#x2f;taxincentives&#x2f;index.htm', 1, true)">
+Historic Preservation Tax Incentives
+</a>
+</div>
+</div>
+<div class="usa-card__media">
+<div class="usa-card__img usa-card__img--ratio-16x9">
+<img src="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;CFD3AC88-0DB4-CA67-019015E4460A2DC9.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp"
+sizes="&#x28;min-width&#x3a;&#x20;1380px&#x29;&#x20;420px,&#x20;&#x28;min-width&#x3a;&#x20;1200px&#x29;&#x20;360px,&#x20;&#x28;min-width&#x3a;&#x20;576px&#x29;&#x20;33vw,&#x20;100vw"
+srcset="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;CFD3AC88-0DB4-CA67-019015E4460A2DC9.jpg&#x3f;width&#x3d;420&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;420w,&#x20;&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;CFD3AC88-0DB4-CA67-019015E4460A2DC9.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;640w"
+alt="photo&#x20;of&#x20;a&#x20;decorative&#x20;porch">
+</div>
+</div>
+<div class="usa-card__body" id="fg_body_7A8292AB-AA2B-2188-6CF37DEDCC745819">
+Find program guidance, download the Historic Preservation Certification Application, and more
+</div>
+</div>
+</div>
+<div class="usa-card usa-card--link usa-card--bg-none tablet:grid-col-4">
+<div class="usa-card__container">
+<div class="usa-card__header">
+<div class="usa-card__heading h3">
+<a href="&#x2f;orgs&#x2f;1739&#x2f;secretary-standards-treatment-historic-properties.htm"
+onclick="gas('send', 'event', 'Feature Grid - Prioritized', document.location.href, '&#x2f;orgs&#x2f;1739&#x2f;secretary-standards-treatment-historic-properties.htm', 1, true)">
+Secretary of the Interior's Standards
+</a>
+</div>
+</div>
+<div class="usa-card__media">
+<div class="usa-card__img usa-card__img--ratio-16x9">
+<img src="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;D1C0CB66-BAD0-E382-363A9651C3028D15.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp"
+sizes="&#x28;min-width&#x3a;&#x20;1380px&#x29;&#x20;420px,&#x20;&#x28;min-width&#x3a;&#x20;1200px&#x29;&#x20;360px,&#x20;&#x28;min-width&#x3a;&#x20;576px&#x29;&#x20;33vw,&#x20;100vw"
+srcset="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;D1C0CB66-BAD0-E382-363A9651C3028D15.jpg&#x3f;width&#x3d;420&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;420w,&#x20;&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;D1C0CB66-BAD0-E382-363A9651C3028D15.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;640w"
+alt="photo&#x20;of&#x20;a&#x20;factory&#x20;building">
+</div>
+</div>
+<div class="usa-card__body" id="fg_body_7A8292AD-07FF-822A-98AE1D394EA35A05">
+Explore the Secretary of the Interior's Standards and Guidelines
+</div>
+</div>
+</div>
+<div class="usa-card usa-card--link usa-card--bg-none tablet:grid-col-4">
+<div class="usa-card__container">
+<div class="usa-card__header">
+<div class="usa-card__heading h3">
+<a href="&#x2f;orgs&#x2f;1739&#x2f;tps-publications.htm"
+onclick="gas('send', 'event', 'Feature Grid - Prioritized', document.location.href, '&#x2f;orgs&#x2f;1739&#x2f;tps-publications.htm', 1, true)">
+TPS Publications
+</a>
+</div>
+</div>
+<div class="usa-card__media">
+<div class="usa-card__img usa-card__img--ratio-16x9">
+<img src="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;9FB6D0BA-09EE-BC37-68DC5D0A992D4FE8.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp"
+sizes="&#x28;min-width&#x3a;&#x20;1380px&#x29;&#x20;420px,&#x20;&#x28;min-width&#x3a;&#x20;1200px&#x29;&#x20;360px,&#x20;&#x28;min-width&#x3a;&#x20;576px&#x29;&#x20;33vw,&#x20;100vw"
+srcset="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;9FB6D0BA-09EE-BC37-68DC5D0A992D4FE8.jpg&#x3f;width&#x3d;420&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;420w,&#x20;&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;9FB6D0BA-09EE-BC37-68DC5D0A992D4FE8.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;640w"
+alt="Photo&#x20;of&#x20;Georgianna&#x20;Plantation,&#x20;Mississippi">
+</div>
+</div>
+<div class="usa-card__body" id="fg_body_7A8292AE-B4EA-ED93-BADD3C931A619037">
+Read the Preservation Briefs and more
+</div>
+</div>
+</div>
+</div>
+<div class="usa-card-group">
+<div class="usa-card usa-card--link usa-card--bg-none tablet:grid-col-4">
+<div class="usa-card__container">
+<div class="usa-card__header">
+<div class="usa-card__heading h3">
+<a href="&#x2f;orgs&#x2f;1739&#x2f;online-training.htm"
+onclick="gas('send', 'event', 'Feature Grid - Prioritized', document.location.href, '&#x2f;orgs&#x2f;1739&#x2f;online-training.htm', 1, true)">
+On-Demand Training
+</a>
+</div>
+</div>
+<div class="usa-card__media">
+<div class="usa-card__img usa-card__img--ratio-16x9">
+<img src="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;49F4407B-CD92-6235-C19D7D8195DAF26B.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp"
+sizes="&#x28;min-width&#x3a;&#x20;1380px&#x29;&#x20;420px,&#x20;&#x28;min-width&#x3a;&#x20;1200px&#x29;&#x20;360px,&#x20;&#x28;min-width&#x3a;&#x20;576px&#x29;&#x20;33vw,&#x20;100vw"
+srcset="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;49F4407B-CD92-6235-C19D7D8195DAF26B.jpg&#x3f;width&#x3d;420&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;420w,&#x20;&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;49F4407B-CD92-6235-C19D7D8195DAF26B.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;640w"
+alt="a&#x20;woman&#x20;stands&#x20;at&#x20;a&#x20;podium&#x20;in&#x20;front&#x20;of&#x20;a&#x20;projection&#x20;screen&#x20;in&#x20;an&#x20;auditorium&#x20;filled&#x20;with&#x20;an&#x20;audience">
+</div>
+</div>
+<div class="usa-card__body" id="fg_body_7A8292AF-CF47-4CBD-D14AE332997156B3">
+Training on technical topics for historic buildings, the tax incentives program, and the Rehab Standards.
+</div>
+</div>
+</div>
+<div class="usa-card usa-card--link usa-card--bg-none tablet:grid-col-4">
+<div class="usa-card__container">
+<div class="usa-card__header">
+<div class="usa-card__heading h3">
+<a href="&#x2f;subjects&#x2f;taxincentives&#x2f;planning-successful-rehabilitation.htm"
+onclick="gas('send', 'event', 'Feature Grid - Prioritized', document.location.href, '&#x2f;subjects&#x2f;taxincentives&#x2f;planning-successful-rehabilitation.htm', 1, true)">
+Planning Successful Rehab Projects
+</a>
+</div>
+</div>
+<div class="usa-card__media">
+<div class="usa-card__img usa-card__img--ratio-16x9">
+<img src="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;3675EB56-0839-23C2-F7B96438280FBC4E.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp"
+sizes="&#x28;min-width&#x3a;&#x20;1380px&#x29;&#x20;420px,&#x20;&#x28;min-width&#x3a;&#x20;1200px&#x29;&#x20;360px,&#x20;&#x28;min-width&#x3a;&#x20;576px&#x29;&#x20;33vw,&#x20;100vw"
+srcset="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;3675EB56-0839-23C2-F7B96438280FBC4E.jpg&#x3f;width&#x3d;420&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;420w,&#x20;&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;3675EB56-0839-23C2-F7B96438280FBC4E.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;640w"
+alt="photo&#x20;of&#x20;Parkside&#x20;Candies">
+</div>
+</div>
+<div class="usa-card__body" id="fg_body_7A8292B0-E275-142E-562FB19B6E6CE4FE">
+Find guidance and other information on interpreting and applying the Rehab Standards
+</div>
+</div>
+</div>
+<div class="usa-card usa-card--link usa-card--bg-none tablet:grid-col-4">
+<div class="usa-card__container">
+<div class="usa-card__header">
+<div class="usa-card__heading h3">
+<a href="&#x2f;orgs&#x2f;1739&#x2f;preservation-by-topic.htm"
+onclick="gas('send', 'event', 'Feature Grid - Prioritized', document.location.href, '&#x2f;orgs&#x2f;1739&#x2f;preservation-by-topic.htm', 1, true)">
+Preservation by Topic Index
+</a>
+</div>
+</div>
+<div class="usa-card__media">
+<div class="usa-card__img usa-card__img--ratio-16x9">
+<img src="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;D1B4C288-AE54-A99B-5A90F467339CDE81.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp"
+sizes="&#x28;min-width&#x3a;&#x20;1380px&#x29;&#x20;420px,&#x20;&#x28;min-width&#x3a;&#x20;1200px&#x29;&#x20;360px,&#x20;&#x28;min-width&#x3a;&#x20;576px&#x29;&#x20;33vw,&#x20;100vw"
+srcset="&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;D1B4C288-AE54-A99B-5A90F467339CDE81.jpg&#x3f;width&#x3d;420&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;420w,&#x20;&#x2f;common&#x2f;uploads&#x2f;grid_builder&#x2f;1739&#x2f;crop16_9&#x2f;D1B4C288-AE54-A99B-5A90F467339CDE81.jpg&#x3f;width&#x3d;640&amp;quality&#x3d;80&amp;mode&#x3d;crop&amp;format&#x3d;webp&#x20;640w"
+alt="photo&#x20;of&#x20;a&#x20;hotel&#x20;entrance">
+</div>
+</div>
+<div class="usa-card__body" id="fg_body_7A8292B1-BE8D-5002-B0CFD118AD773A87">
+Index to Technical Preservation Services guidance and information
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div id="cs_control_899734" class="cs_control CS_Element_CustomCF"><div id="CS_CCF_5423395_899734"> </div></div></div></div></div></div>
+</div><!-- col-sm-12 -->
+</div><!-- row -->
+</div><!-- ColumnMain col-sm-9 -->
+</div><!-- ColumnGrid row -->
+</div><!-- end container -->
+<div class="container">
+<div class="ColumnGrid row">
+<div class="ColumnMain col-sm-12">
+<div class="row">
+<div class="col-sm-12 text-content-size text-content-style">
+<p style="text-align:right;">Last updated: August 6, 2026</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="ParkFooter" class="ParkFooter">
+<div class="container">
+<!--googleoff: index-->
+<script type="text/javascript">
+jQuery(document).ready(function() {
+var subsiteURL = "/orgs/1739/";
+var jsonSrc = "";
+var related_orgs = [];
+var max_display = 3;
+jsonSrc = subsiteURL+"experience_more_1739.json?v="+Date.now();
+jQuery.getJSON( jsonSrc, function( data ) {
+console.log( data );
+var has_related_content = 0;
+var output_related_content = '<div class="ExperienceMoreFooter"><h3 class="ExperienceMoreTitle">Experience More</h3><div class="row">';
+if ( data.RELATED_SUBS.length ) {
+// Subjects
+output_related_content += '<div class="col-sm-4 col-md-4"><div class="ExperienceMoreCategory"><h3>Subjects</h3><ul>';
+var display_total = data.RELATED_SUBS.length;
+if ( display_total > max_display ) {
+display_total = max_display;
+}
+for ( var i = 0; i < display_total; i++ ) {
+output_related_content += `<li class="ExperienceMore item"><a class="more" href="/subjects/${data.RELATED_SUBS[i].site_code}" onclick="gas('send', 'event', 'Experience More', '${document.location.href}', '/subjects/${data.RELATED_SUBS[i].site_code}', 1, true)">${data.RELATED_SUBS[i].name}</a></li>`;
+has_related_content = 1;
+}
+if ( data.RELATED_SUBS.length > max_display ) {
+output_related_content += '<div class="ExperienceMore item"><div>';
+output_related_content += '<a class="all more" href="/experiencemore/related-content.htm?orgID=AC5681B3-93FE-412A-8787-2A7051638D88#subject" id="anch_21">';
+output_related_content += '<svg class="icon" focusable="false" role="img"><use xlink:href="/common/commonspot/templates/assets/sprite.symbol.svg#plus-sign"></use></svg>';
+output_related_content += 'View All Related Subjects</a></div></div>';
+}
+output_related_content += '</ul></div></div>';
+}
+if ( data.RELATED_PARKS.length ) {
+// Parks
+output_related_content += '<div class="col-sm-4 col-md-4"><div class="ExperienceMoreCategory"><h3>Parks</h3><ul>';
+var display_total = data.RELATED_PARKS.length;
+if ( display_total > max_display ) {
+display_total = max_display;
+}
+for ( var i = 0; i < display_total; i++ ) {
+output_related_content += `<li class="ExperienceMore item"><a class="more" href="/${data.RELATED_PARKS[i].site_code}" onclick="gas('send', 'event', 'Experience More', '${document.location.href}', '/${data.RELATED_PARKS[i].site_code}', 1, true)">${data.RELATED_PARKS[i].name}</a></li>`;
+has_related_content = 1;
+}
+if ( data.RELATED_PARKS.length > max_display ) {
+output_related_content += '<div class="ExperienceMore item"><div>';
+output_related_content += '<a class="all more" href="/experiencemore/related-content.htm?orgID=AC5681B3-93FE-412A-8787-2A7051638D88#park" id="anch_21">';
+output_related_content += '<svg class="icon" focusable="false" role="img"><use xlink:href="/common/commonspot/templates/assets/sprite.symbol.svg#plus-sign"></use></svg>';
+output_related_content += 'View All Related Parks</a></div></div>';
+}
+output_related_content += '</ul></div></div>';
+}
+if ( data.RELATED_ORGS.length ) {
+// Organizations
+output_related_content += '<div class="col-sm-4 col-md-4"><div class="ExperienceMoreCategory"><h3>Organizations</h3><ul>';
+var display_total = data.RELATED_ORGS.length;
+if ( display_total > max_display ) {
+display_total = max_display;
+}
+for (var i = 0; i < display_total; i++ ) {
+if ( 'site_code' in data.RELATED_ORGS[i] ) {
+if ( data.RELATED_ORGS[i].site_code.length ) {
+output_related_content += `<li class="ExperienceMore item"><a class="more" href="/orgs/${data.RELATED_ORGS[i].site_code}" onclick="gas('send', 'event', 'Experience More', '${document.location.href}', '/orgs/${data.RELATED_ORGS[i].site_code}', 1, true)">${data.RELATED_ORGS[i].name}</a></li>`;
+}
+else {
+output_related_content += '<li class="item">'+data.RELATED_ORGS[i].name+'</li>';
+}
+}
+else {
+output_related_content += '<li class="item">'+data.RELATED_ORGS[i].name+'</li>';
+}
+has_related_content = 1;
+}
+if ( data.RELATED_ORGS.length > max_display ) {
+output_related_content += '<div class="ExperienceMore item"><div>';
+output_related_content += '<a class="all more" href="/experiencemore/related-content.htm?orgID=AC5681B3-93FE-412A-8787-2A7051638D88#org" id="anch_21">';
+output_related_content += '<svg class="icon" focusable="false" role="img"><use xlink:href="/common/commonspot/templates/assets/sprite.symbol.svg#plus-sign"></use></svg>';
+output_related_content += 'View All Related Organizations</a></div></div>';
+}
+output_related_content += '</ul></div></div>';
+}
+output_related_content += '</div></div>';
+if(has_related_content == 1) {
+jQuery("#related_content_position").replaceWith(output_related_content);
+}
+});
+});
+</script>
+<div id="related_content_position"></div>
+<!--googleon: index-->
+<script type="text/javascript">
+jQuery(document).ready(function() {
+var subsiteURL  = "";
+var jsonSrc     = "";
+var siteCode    = "";
+subsiteURL  = "/orgs/1739/";
+siteCode = subsiteURL.split("/");
+siteCode = siteCode[2];
+if ( subsiteURL.includes("orgs") | subsiteURL.includes("im") | subsiteURL.includes("rlc") ) {
+jsonSrc = subsiteURL+"structured_data_orgs_"+siteCode+".json?v="+Date.now();
+}
+if ( subsiteURL.includes("locations") ) {
+jsonSrc = subsiteURL+"structured_data_locations_"+siteCode+".json?v="+Date.now();
+}
+if ( subsiteURL.includes("subjects") ) {
+jsonSrc = subsiteURL+"structured_data_subjects_"+siteCode+".json?v="+Date.now();
+}
+// Location Site Check //
+urlCheck = window.location.href;
+if (urlCheck.includes("locations")) {
+fileURL = '/locations/1739/structured_data_1739.json';
+}
+jQuery.getJSON(jsonSrc, function( data ) {
+var hasSocialMedia = 0;
+var outputSocialMedia = '<div class="col-sm-6 col-md-4 "><div class="ParkFooter-socialLinks"><h3>Stay Connected</h3><ul class="ParkFooter-socialLinks row">';
+if (data.facebookURL) {
+outputSocialMedia += '<li class="col-2 col-sm-4 col-md-2"><a href="'+data.facebookURL+'"><svg class="icon" focusable="false" role="img" aria-label="Facebook for this org or subject"><use xlink:href="/common/commonspot/templates/assets/sprite.symbol.svg#facebook"></use></svg></a></li>';
+hasSocialMedia = 1;
+}
+if (data.twitterURL) {
+data.twitterURL = data.twitterURL.replace('twitter.com', 'x.com')	// convert old Twitter links into equivalent X links
+outputSocialMedia += '<li class="col-2 col-sm-4 col-md-2"><a href="'+data.twitterURL+'"><svg class="icon" focusable="false" role="img" aria-label="X for this org or subject"><use xlink:href="/common/commonspot/templates/assets/sprite.symbol.svg#x-black"></use></svg></a></li>';
+hasSocialMedia = 1;
+}
+if (data.instagramURL) {
+outputSocialMedia += '<li class="col-2 col-sm-4 col-md-2"><a href="'+data.instagramURL+'"><svg class="icon" focusable="false" role="img" aria-label="Instagram for this org or subject"><use xlink:href="/common/commonspot/templates/assets/sprite.symbol.svg#instagram-dark"></use></svg></a></li>';
+hasSocialMedia = 1;
+}
+if (data.youtubeURL) {
+outputSocialMedia += '<li class="col-2 col-sm-4 col-md-2"><a href="'+data.youtubeURL+'"><svg class="icon" focusable="false" role="img" aria-label="YouTube for this org or subject"><use xlink:href="/common/commonspot/templates/assets/sprite.symbol.svg#youtube"></use></svg></a></li>';
+hasSocialMedia = 1;
+}
+if (data.flickrURL) {
+outputSocialMedia += '<li class="col-2 col-sm-4 col-md-4"><a href="'+data.flickrURL+'"><svg class="icon" focusable="false" role="img" aria-label="Flickr for this org or subject"><use xlink:href="/common/commonspot/templates/assets/sprite.symbol.svg#flickr"></use></svg></a></li>';
+hasSocialMedia = 1;
+}
+if (data.tumblrURL) {
+outputSocialMedia += '<li class="col-2 col-sm-4 col-md-2"><a href="'+data.tumblrURL+'"><svg class="icon" focusable="false" role="img" aria-label="Tumblr for this org or subject"><use xlink:href="/common/commonspot/templates/assets/sprite.symbol.svg#tumblr"></use></svg></a></li>';
+hasSocialMedia = 1;
+}
+if (data.foursquareURL) {
+outputSocialMedia += '<li class="col-2 col-sm-12 col-md-6"><a href="'+data.foursquareURL+'"><svg class="icon" focusable="false" role="img" aria-label="FourSquare for this org or subject"><use xlink:href="/common/commonspot/templates/assets/sprite.symbol.svg#foursquare"></use></svg></a></li>';
+hasSocialMedia = 1;
+}
+if (data.pinterestURL) {
+outputSocialMedia += '<li class="col-2 col-sm-4 col-md-2"><a href="'+data.pinterestURL+'"><svg class="icon" focusable="false" role="img" aria-label="Pinterest for this org or subject"><use xlink:href="/common/commonspot/templates/assets/sprite.symbol.svg#pinterest"></use></svg></a></li>';
+hasSocialMedia = 1;
+}
+outputSocialMedia += '</ul></div></div>';
+if(hasSocialMedia == 1) {
+jQuery("#sml_position").replaceWith(outputSocialMedia);
+}
+});
+});
+</script>
+<!--googleoff: index-->
+<div class="row">
+<div class="col-sm-6 col-md-4">
+<div class="ParkFooter-tools">
+<h3>Tools</h3>
+<ul class="row">
+<li class=" col-6  "><a href="/orgs/1739/siteindex.htm"> Site Index</a></li>
+<li class=" col-6  contact"><a href="/orgs/1739/contactus.htm"><i class="fa fa-envelope-o"></i> Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div id="sml_position"></div>
+</div>
+<!--googleon: index-->
+</div> <!-- container -->
+</div> <!-- ParkFooter -->
+</div><!-- end of <div main> -->
+<!--googleoff: index-->
+<footer id="GlobalFooter" class="usa-footer">
+<div class="usa-footer__primary-section">
+<picture class="usa-footer__primary-section-bg" aria-hidden="true">
+<source
+media="(max-width: 599px)"
+srcset="/common/commonspot/templates/assets/images/app-promo/app-promo-background-square.png?format=webp"
+type="image/webp">
+<img
+class="usa-footer__primary-section-bg__image"
+src="/common/commonspot/templates/assets/images/app-promo/app-promo-background-large.png?format=webp"
+alt=""
+loading="lazy"
+decoding="async">
+</picture>
+<div class="container">
+<form id="GlobalFooterSearch"
+class="GlobalFooter__Search usa-form usa-form--large"
+action="/search/"
+method="GET"
+role="search">
+<div class="position-relative">
+<input class="usa-input"
+id="GlobalFooterSearchInput"
+type="text"
+autocomplete="off"
+name="query"
+placeholder="Keyword Search"
+required
+aria-label="Search">
+<div class="GlobalSearch-suggestions"></div>
+</div>
+<ul class="usa-button-group">
+<li class="usa-button-group__item">
+<button class="usa-button usa-button--outline usa-button--inverse" data-scope="site" type="submit">
+This Site
+</button>
+</li>
+<li class="usa-button-group__item">
+<button class="usa-button usa-button--outline usa-button--inverse" data-scope="all" type="submit">
+All NPS
+</button>
+</li>
+</ul>
+<input type="hidden"
+name="sitelimit"
+value="www.nps.gov/orgs/1739">
+<input type="hidden" name="affiliate" value="nps">
+</form>
+<div class="GlobalFooter-AppPromo">
+<div class="GlobalFooter-AppPromo__Text">
+<div class="GlobalFooter-AppPromo__Heading">Experience Your America.</div>
+<div class="GlobalFooter-AppPromo__Subheading GlobalFooter-AppPromo__BottomGroup">
+<p>Download the NPS app to navigate the parks on the go.</p>
+<p class="GlobalFooter-AppPromo__BadgeLinks">
+<a href="https://apps.apple.com/us/app/national-park-service/id1549226484"
+class="GlobalFooter-AppPromo__BadgeLink" onclick="gas('send', 'event', 'App Promo Footer', 'Apple', document.location.pathname, 1, true);">
+<img alt="Download on the App Store"
+src="/common/commonspot/templates/assets/images/app-promo/app-store-badge.svg"
+width="132"
+height="44">
+</a>
+<a href="https://play.google.com/store/apps/details?id=gov.nps.mobileapp"
+class="GlobalFooter-AppPromo__BadgeLink" onclick="gas('send', 'event', 'App Promo Footer', 'Android', document.location.pathname, 1, true);">
+<img alt="Get it on Google Play"
+src="/common/commonspot/templates/assets/images/app-promo/google-play-badge.svg"
+width="148.5"
+height="44">
+</a>
+</p>
+</div>
+</div>
+<div class="GlobalFooter-AppPromo__ImageContainer">
+<img class="GlobalFooter-AppPromo__Image"
+loading="lazy"
+src="/common/commonspot/templates/assets/images/app-promo/app-promo-phones.png"
+srcset="/common/commonspot/templates/assets/images/app-promo/app-promo-phones.png?format=webp 1x, /common/commonspot/templates/assets/images/app-promo/app-promo-phones@2x.png?format=webp 2x"
+alt="Three smartphones showing different screens within the NPS app."
+width="628"
+height="463">
+</div>
+</div>
+</div>
+</div>
+<div class="usa-footer__secondary-section">
+<div class="container">
+<div class="usa-footer__logo-container">
+<a class="usa-footer__logo" href="https://www.nps.gov/">
+<img class="usa-footer__logo-img print-only"
+src="/common/commonspot/templates/assets/images/branding/lockup-horizontal.svg"
+alt="">
+<img alt="National Park Service U.S. Department of the Interior" width="193" height="124" class="usa-footer__logo-img" src="/common/commonspot/templates/assets/images/branding/lockup-reverse-vertical.svg">
+<img alt="National Park Service U.S. Department of the Interior" width="268" height="80" class="usa-footer__logo-img usa-footer__logo-img--lg" src="/common/commonspot/templates/assets/images/branding/lockup-reverse-horizontal.svg">
+</a>
+</div>
+<div class="usa-footer__contact-links">
+<div class="usa-footer__social-links grid-row grid-gap-1">
+<div class="grid-col-auto">
+<a href="https://www.facebook.com/nationalparkservice" class="usa-social-link">
+<svg class="usa-social-link__icon&#x20;usa-icon"
+aria-label="Facebook"
+role="img"
+focusable="false">
+<use href="/theme/assets/vendor/npsds/packages/icons/dist/sprite.svg#facebook" />
+</svg>
+</a>
+</div>
+<div class="grid-col-auto">
+<a href="https://www.youtube.com/nationalparkservice" class="usa-social-link">
+<svg class="usa-social-link__icon&#x20;usa-icon"
+aria-label="Youtube"
+role="img"
+focusable="false">
+<use href="/theme/assets/vendor/npsds/packages/icons/dist/sprite.svg#youtube" />
+</svg>
+</a>
+</div>
+<div class="grid-col-auto">
+<a href="https://www.x.com/natlparkservice" class="usa-social-link">
+<svg class="usa-social-link__icon&#x20;usa-icon"
+aria-label="X"
+role="img"
+focusable="false">
+<use href="/theme/assets/vendor/npsds/packages/icons/dist/sprite.svg#x" />
+</svg>
+</a>
+</div>
+<div class="grid-col-auto">
+<a href="https://www.instagram.com/nationalparkservice" class="usa-social-link">
+<svg class="usa-social-link__icon&#x20;usa-icon"
+aria-label="Instagram"
+role="img"
+focusable="false">
+<use href="/theme/assets/vendor/npsds/packages/icons/dist/sprite.svg#instagram" />
+</svg>
+</a>
+</div>
+<div class="grid-col-auto">
+<a href="https://www.flickr.com/nationalparkservice" class="usa-social-link">
+<svg class="usa-social-link__icon&#x20;usa-icon"
+aria-label="Flickr"
+role="img"
+focusable="false">
+<use href="/theme/assets/vendor/npsds/packages/icons/dist/sprite.svg#flickr" />
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="usa-identifier">
+<nav class="usa-identifier__section usa-identifier__section--required-links">
+<div class="container">
+<ul class="usa-identifier__required-links-list">
+<li class="usa-identifier__required-links-item">
+<a href="//www.nps.gov/aboutus/accessibility.htm"
+class="usa-identifier__required-link usa-link"
+>
+Accessibility
+</a>
+</li>
+<li class="usa-identifier__required-links-item">
+<a href="//www.nps.gov/aboutus/privacy.htm"
+class="usa-identifier__required-link usa-link"
+>
+Privacy Policy
+</a>
+</li>
+<li class="usa-identifier__required-links-item">
+<a href="//www.nps.gov/aboutus/foia/index.htm"
+class="usa-identifier__required-link usa-link"
+>
+FOIA
+</a>
+</li>
+<li class="usa-identifier__required-links-item">
+<a href="//www.nps.gov/aboutus/notices.htm"
+class="usa-identifier__required-link usa-link"
+>
+Notices
+</a>
+</li>
+<li class="usa-identifier__required-links-item">
+<a href="//www.nps.gov/aboutus/contacts.htm"
+class="usa-identifier__required-link usa-link"
+>
+Contact The National Park Service
+</a>
+</li>
+<li class="usa-identifier__required-links-item">
+<a href="//www.nps.gov/aboutus/faqs.htm"
+class="usa-identifier__required-link usa-link"
+title="National Park Service frequently asked questions"
+>
+NPS FAQ
+</a>
+</li>
+<li class="usa-identifier__required-links-item">
+<a href="//www.doi.gov/pmb/eeo/no-fear-act"
+class="usa-identifier__required-link usa-link"
+>
+No Fear Act
+</a>
+</li>
+<li class="usa-identifier__required-links-item">
+<a href="//www.nps.gov/aboutus/disclaimer.htm"
+class="usa-identifier__required-link usa-link"
+>
+Disclaimer
+</a>
+</li>
+<li class="usa-identifier__required-links-item">
+<a href="//www.nps.gov/aboutus/vulnerability-disclosure-policy.htm"
+class="usa-identifier__required-link usa-link"
+>
+Vulnerability Disclosure Policy
+</a>
+</li>
+<li class="usa-identifier__required-links-item">
+<a href="//www.usa.gov"
+class="usa-identifier__required-link usa-link"
+>
+USA.gov
+</a>
+</li>
+<li class="usa-identifier__required-links-item">
+<a href="//www.doi.gov/pmb/eeo"
+class="usa-identifier__required-link usa-link"
+>
+Office of Civil Rights
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services,">
+<div class="container">
+<div class="usa-identifier__usagov-description">
+Looking for U.S. government information and services?
+</div>
+<a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+</div>
+</section>
+</div>
+</footer>
+<!--googleon: index-->
+<!-- the rest of the scripts are leftovers from before the centennial down and should be pared down where possible -->
+<script src="/common/commonspot/templates/js/global.js?v=20230112"></script>
+<script src="/common/commonspot/templates/assets/libs/jquery.magnific-popup/jquery.magnific-popup.js"></script>
+<script src="/common/commonspot/templates/assets/js/redesign.js?v=20230112"></script>
+<link href="/common/commonspot/templates/assets/libs/colorbox/colorbox.css" rel="stylesheet">
+<script type="text/javascript" src="/common/commonspot/templates/js/libs/jquery.colorbox-min.js"></script>
+<script src="/common/commonspot/templates/js/intercept-include.js?v=20230112"></script>
+<script src="/common/commonspot/templates/assets/libs/image-map-resizer/imageMapResizer.min.js"></script>
+<script src="/common/commonspot/templates/assets/js/app.late.min.js?v=20230112"></script>
+<script src="/common/commonspot/templates/js/uswds/uswds.js"></script>
+<div class="modal fade" id="outdated-browser" tabindex="-1" role="dialog">
+</div>
+</body>
+</html>
+<!-- beg (1) PrimaryResources -->
+<script src="/commonspot/javascript/lightbox/overrides.js"></script><script src="/commonspot/javascript/lightbox/window_ref.js"></script><script src="/commonspot/pagemode/always-include-common.js"></script>
+<!-- end (1) PrimaryResources -->
+<!-- beg (2) SecondaryResources -->
+<script src="/ADF/thirdParty/jquery/cookie/jquery.cookie.js"></script>
+<!-- end (2) SecondaryResources -->
+<!-- beg (3) CustomFoot -->
+<!-- end (3) CustomFoot -->
+<!-- beg (4) TertiaryResources -->
+<!-- end (4) TertiaryResources --><script>
+<!--
+var jsPageContributeMode = 'read';
+var jsPageSessionContributeMode = 'read';
+
+var jsPageAuthorMode = 0;
+var jsPageEditMode = 0;
+
+
+if(!commonspot)
+var commonspot = {};
+commonspot.csPage = {};
+
+
+commonspot.csPage.url = '/orgs/1739/index.htm';
+
+
+commonspot.csPage.id = 5423395;
+
+commonspot.csPage.siteRoot = '/';
+commonspot.csPage.subsiteRoot = '/orgs/1739/';
+
+
+// -->
+</script>
+
+<script>
+<!--
+	if (typeof parent.commonspot == 'undefined' || typeof parent.commonspot.lview == 'undefined' || typeof parent.commonspot.lightbox == 'undefined')
+		loadNonDashboardFiles();
+	else if (parent.commonspot && typeof newWindow == 'undefined')
+	{
+		var arrFiles = [
+					{fileName: '/commonspot/javascript/lightbox/overrides.js', fileType: 'script', fileID: 'cs_overrides'},
+					{fileName: '/commonspot/javascript/lightbox/window_ref.js', fileType: 'script', fileID: 'cs_windowref'}
+					];
+		
+		loadDashboardFiles(arrFiles);
+	}
+//-->
+</script>
+</body></html>

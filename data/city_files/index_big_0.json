@@ -1,0 +1,1106 @@
+{
+ "Houston TX": {
+  "files": [],
+  "portals": {
+   "https://data.houstontx.gov/": "Open Data",
+   "https://data.houstontx.gov/pages/openfinance": "Open\n\t\t\t\t\t\t\t\tFinance",
+   "https://data.houstontx.gov": "Open Data"
+  }
+ },
+ "Plano TX": {
+  "files": [],
+  "portals": {}
+ },
+ "Little Rock AR": {
+  "files": [],
+  "portals": {}
+ },
+ "Broward County": {
+  "files": [],
+  "portals": {}
+ },
+ "Austin": {
+  "files": [
+   {
+    "url": "https://austin.widen.net/view/pdf/ffhqbgdb89/2023_Urban_Trails_Plan_Appendix_A.pdf?t.download=true",
+    "text": "ATX Walk Bike Roll Process Summary",
+    "file": "data/city_files/Austin/d85437_2023_Urban_Trails_Plan_Appendix_A.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://austin.widen.net/view/pdf/ust5et9ysq/2023_Urban_Trails_Plan_Appendix_B.pdf?t.download=true",
+    "text": "Urban Trail Network Field Work Report",
+    "file": "data/city_files/Austin/fac1cd_2023_Urban_Trails_Plan_Appendix_B.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://austin.widen.net/view/pdf/5svni5r1et/2023_Urban_Trails_Plan_Appendix_C.pdf?t.download=true",
+    "text": "Urban Trail Network Maps, Scenarios, and Prioritization",
+    "file": "data/city_files/Austin/8a5309_2023_Urban_Trails_Plan_Appendix_C.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://austin.widen.net/view/pdf/bugc8ujjlv/2023_Urban_Trails_Plan_Appendix_D.pdf?t.download=true",
+    "text": "Urban Trails Design Guidance",
+    "file": "data/city_files/Austin/42d228_2023_Urban_Trails_Plan_Appendix_D.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://austin.widen.net/view/pdf/kfrvhqlbmm/2023_Urban_Trails_Plan_Appendix_E.pdf?t.download=true",
+    "text": "Shared Use Corridors White Paper",
+    "file": "data/city_files/Austin/72d964_2023_Urban_Trails_Plan_Appendix_E.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://austin.widen.net/view/pdf/iwsuny6we2/2023_Urban_Trails_Plan_Appendix_F.pdf?t.download=true",
+    "text": "Feasibility Assessment",
+    "file": "data/city_files/Austin/d545f4_2023_Urban_Trails_Plan_Appendix_F.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://austin.widen.net/view/pdf/fshyvonobd/2023_Urban_Trails_Plan_Appendix_G.pdf?t.download=true",
+    "text": "Maintenance Policy and Processes",
+    "file": "data/city_files/Austin/1050c4_2023_Urban_Trails_Plan_Appendix_G.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://austin.widen.net/view/pdf/cc6znu8kyc/cemetery_rules_regulations04232014.pdf?t.download=true",
+    "text": "cemetery rules (PDF)",
+    "file": "data/city_files/Austin/070189_cemetery_rules_regulations04232014.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://austin.widen.net/view/pdf/kvnoe25ekv/Planning_Area_Table_Maps-optimized.pdf?t.download=true",
+    "text": "Planning Area Maps",
+    "file": "data/city_files/Austin/6ae154_Planning_Area_Table_Maps-optimized.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://austin.widen.net/view/pdf/juo2zvrlvp/REVISION_-_Parking_Non-Liability_Affidavit_-_1.14.25.pdf?t.download=true",
+    "text": "Fill out the parking non-liability affidavit",
+    "file": "data/city_files/Austin/0111fc_REVISION_-_Parking_Non-Liability_Affidavit_-_1.14.25.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://austin.maps.arcgis.com/apps/webappviewer/index.html?id=c7fecf32a2d946fabdf062285d58d40c&extent=3052120.7123%2C10036958.1486%2C3179054.0456%2C10097891.4819%2C102739": "Bike map",
+   "https://data.austintexas.gov/": "Open public data portal",
+   "https://experience.arcgis.com/experience/45149bd4f5874028a43be1574702fb23/": "Parks Viewer",
+   "https://austintexas.gov/3-1-1/open-data-portal": "Open Data Portal",
+   "https://austin-parks-and-recreation-austin.hub.arcgis.com/pages/trails": "Trails",
+   "https://austin-parks-and-recreation-austin.hub.arcgis.com/": "Geospatial Hub",
+   "https://experience.arcgis.com/experience/6cf5048c0d4d46198f1b75ac0bbadc65/": "Austin's Designated Off Leash Area",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.austintexas.gov%2Fdepartment%2Fsummer-camps-0&data=05%7C02%7Ckanya.lyons%40austintexas.gov%7C76acb2e7c8444658663f08dd2c30e0ad%7C5c5e19f6a6ab4b45b1d0be4608a9a67f%7C0%7C0%7C638715310640845167%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=wqiikwIISAc0MBNJAzNj%2Bv3lkIjFxRbOZytwhnTeMmU%3D&reserved=0": "AustinTexas.gov/SummerCamp",
+   "https://storymaps.arcgis.com/stories/4a89b7e6e97c41bca0b8762c8d118774": "Explore recent mobility projects",
+   "https://austin.maps.arcgis.com/apps/webappviewer/index.html?id=2a3c539da76b4f49906a3524ed4a2cc9": "Street Network Map",
+   "https://data.austintexas.gov/Recreation-and-Culture/Long-Range-Plan-Community-Survey/cswk-uqjd": "Open Data Portal here",
+   "https://storymaps.arcgis.com/stories/1ab8fff173584f94b1bcef080f9aa075": "Urban Trails Interactive Web Map."
+  }
+ },
+ "Seattle": {
+  "files": [],
+  "portals": {
+   "https://data.seattle.gov/": "Open Data Portal",
+   "http://seattlecitygis.maps.arcgis.com/apps/MapSeries/index.html?appid=94c31b66facc438b95d95a6cb6a0ff2e": "SPD Data Maps - Calls for Service and Crime Data Maps Calls for Service map shows Police responses to 9-1-1 and the Crim",
+   "http://seattlecitygis.maps.arcgis.com/apps/webappviewer/index.html?id=a24b25c3142c49e194190d6a888d97e3": "Online Bike Map",
+   "http://seattlecitygis.maps.arcgis.com/apps/webappviewer/index.html?id=5e2cdf9d8735428cb6405db64de6ce8e": "Pothole Repair Status Map",
+   "https://seattle.gov/tech/reports-and-data/open-data": "Open Data",
+   "https://seattle.gov/tech/reports-and-data/open-data/about-the-open-data-program": "About the Open Data Program",
+   "https://seattle.gov/tech/reports-and-data/open-data/contact": "Ask an Open Data Question",
+   "https://seattle.gov/tech/data-privacy/tech/reports-and-data/open-data": "Open Data",
+   "https://seattlecitygis.maps.arcgis.com/apps/MapSeries/index.html?appid=5fc6cb313ec34374a3141d4d24b05c5d": "Go To Map",
+   "https://experience.arcgis.com/experience/25325ab47d83420996d144e940da2aab": "Find Parking Find street parking in Downtown Seattle",
+   "https://data.seattle.gov/browse?Department_Department=Seattle+Police+Department&category=Public+Safety&provenance=official": "Data.Seattle.Gov",
+   "https://data.seattle.gov/Public-Safety/Call-Data/33kz-ixgy": "911 Incident Response"
+  }
+ },
+ "Douglas County": {
+  "files": [],
+  "portals": {}
+ },
+ "Atlanta": {
+  "files": [],
+  "portals": {}
+ },
+ "Berks County": {
+  "files": [
+   {
+    "url": "https://co.berks.pa.us/getmedia/8ad001d2-3b7d-4443-bb04-6025f5fd69f0/Christmas-Tree-Recycling.pdf",
+    "text": "Christmas Tree Recycling",
+    "file": "data/city_files/Berks_County/031c70_Christmas-Tree-Recycling.pdf",
+    "rows": 77,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/7dbcced2-22d4-4364-a8a5-e546d80c3612/Guide-to-Recycling_1.pdf",
+    "text": "Recycling Center, 1316 Hill Top Road, Leesport",
+    "file": "data/city_files/Berks_County/d1933d_Guide-to-Recycling_1.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/9ba6b5ae-45c6-4076-8d0b-d4bb2a696f9e/Contamination-in-paper-recycling.pdf",
+    "text": "Contamination in paper recycling (opens in a new window)",
+    "file": "data/city_files/Berks_County/28ebd8_Contamination-in-paper-recycling.pdf",
+    "rows": 23,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/b99346fa-60a6-4816-af34-ce59083c9552/How-to-Prepare-Your-Recycling-Bin-DEP-Fact-Sheet.pdf",
+    "text": "DEP Guide to Proper Recycling (opens in a new window)",
+    "file": "data/city_files/Berks_County/242aaf_How-to-Prepare-Your-Recycling-Bin-DEP-Fact-Sheet.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/173e31e3-035c-4e2c-be40-8b84a62436df/Appliance-Recycling.pdf",
+    "text": "Appliance Recycling (opens in a new window)",
+    "file": "data/city_files/Berks_County/250f46_Appliance-Recycling.pdf",
+    "rows": 15,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/c3b9d5bc-bdbc-43b0-9d7c-01b9a368ff1e/Composting-of-Yard-Waste-Christmas-Trees-2014.pdf",
+    "text": "Christmas Tree Recycling (opens in a new window)",
+    "file": "data/city_files/Berks_County/924042_Composting-of-Yard-Waste-Christmas-Trees-2014.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/57ab3fc3-e79f-4284-bb8c-2286b6000431/Fisher-s-Rental-Topsoil,-concrete,-asphalt-recycling.pdf",
+    "text": "Appliance Drop-off Locations: Asphalt, Concrete, Topsoil, Fill Dirt",
+    "file": "data/city_files/Berks_County/603105_Fisher-s-Rental-Topsoil_-concrete_-asphalt-recycling.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/d776398b-aad0-4ea4-9e60-0e7fed630982/Latex-Paint-Recycling.pdf",
+    "text": "Latex Paint Disposal",
+    "file": "data/city_files/Berks_County/a55d80_Latex-Paint-Recycling.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/528cb04f-27e6-46ce-83ad-cb0694a97795/Mercury_containing_Items_Recycling.pdf",
+    "text": "Mercury Containing Items Recycling",
+    "file": "data/city_files/Berks_County/618b2e_Mercury_containing_Items_Recycling.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/bd449fed-bb4d-42c3-8ed0-cfd97e320726/fm11-commercial-municipal-institutional-compliance-form.pdf",
+    "text": "Reporting Form 11 - Commercial Recycling",
+    "file": "data/city_files/Berks_County/54cd0b_fm11-commercial-municipal-institutional-compliance-form.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/8c2450b4-3ac5-436b-911e-230a8da88d15/fm13-countywide-report-form.pdf",
+    "text": "Reporting Form 13 - County wide Recycling",
+    "file": "data/city_files/Berks_County/3353be_fm13-countywide-report-form.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/c0c8a384-78b3-46ff-9be8-2a92372a0f2c/Downtown_Reading-Berks-Parking.pdf",
+    "text": "Downtown Reading - Parking Garages (opens in a new window)",
+    "file": "data/city_files/Berks_County/175255_Downtown_Reading-Berks-Parking.pdf",
+    "rows": 17,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://elibrary.dcnr.pa.gov/GetDocument?docId=1737669&DocName=FRCR_ParkGuide.pdf",
+    "text": "French Creek State Park Maps",
+    "file": "data/city_files/Berks_County/fce30f_GetDocument",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://elibrary.dcnr.pa.gov/GetDocument?docId=1737444&DocName=NOLD_ParkGuide.pdf",
+    "text": "Nolde Forest EEC Maps",
+    "file": "data/city_files/Berks_County/c9e73a_GetDocument",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/8431c59f-f3db-4548-af55-1971201ab7c6/Union-Canal-Bicycle-and-Walking-Trail-Brochure-Map.pdf",
+    "text": "Union Canal Bicycle & Walking Trail Brochure Map",
+    "file": "data/city_files/Berks_County/a012d3_Union-Canal-Bicycle-and-Walking-Trail-Brochure-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/b7149c7d-62f4-46c3-8915-fba8e4d31343/Union-Canal-Towpath-Trail-Mileage.pdf",
+    "text": "Click here for Towpath Trail Mileage",
+    "file": "data/city_files/Berks_County/abcc79_Union-Canal-Towpath-Trail-Mileage.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/cdbf2324-8f01-41ca-a6fa-39daa1c88a37/Ag-Plastics-Recyclers-Oct-2018.pdf",
+    "text": "Agriculture Plastic",
+    "file": "data/city_files/Berks_County/28c913_Ag-Plastics-Recyclers-Oct-2018.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/36a9465f-63df-4b31-b2ea-e41b7a811fb7/Aluminum-Can-Recycling-2014.pdf",
+    "text": "Aluminum Can Recycling",
+    "file": "data/city_files/Berks_County/807379_Aluminum-Can-Recycling-2014.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/45a5cdc4-6c72-4d9e-9dae-15e694f55616/Appliance-Recycling.pdf",
+    "text": "Appliance Drop-off Locations",
+    "file": "data/city_files/Berks_County/491101_Appliance-Recycling.pdf",
+    "rows": 14,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/b0403ad4-3e61-488d-a105-e3381f2504e0/Brass,-Copper-Lead-Recycling.pdf",
+    "text": "Brass, Copper & Lead",
+    "file": "data/city_files/Berks_County/5302fa_Brass_-Copper-Lead-Recycling.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/345db1ef-4267-4ce9-b4fb-dfe4175bf87e/C-D-Waste-Recycling.pdf",
+    "text": "C&D Waste Recycling",
+    "file": "data/city_files/Berks_County/eef8a1_C-D-Waste-Recycling.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/64bc172e-9db2-4656-aed8-9b1403859087/Car_Battery_Recycling.pdf",
+    "text": "Car Battery Recycling",
+    "file": "data/city_files/Berks_County/3a2f65_Car_Battery_Recycling.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/419f5da0-f3eb-431d-9d62-1f701b1b6f44/Tire-Recycling.pdf",
+    "text": "Car Tire Recycling",
+    "file": "data/city_files/Berks_County/a3b67c_Tire-Recycling.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/c3811de0-3fb0-4de7-afc1-9c0903131943/Drop-off-locations-for-Dehumidifiers.pdf",
+    "text": "Dehumidifier Recycling",
+    "file": "data/city_files/Berks_County/5bcf5c_Drop-off-locations-for-Dehumidifiers.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://co.berks.pa.us/getmedia/2dce910e-bd18-41d6-8d6b-bcaaca092af8/Brochure-for-full-time-E-waste-2025-fee-schedule.pdf",
+    "text": "Electronic Items Recycling",
+    "file": "data/city_files/Berks_County/5ab7f9_Brochure-for-full-time-E-waste-2025-fee-schedule.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://berks.maps.arcgis.com/home/index.html": "Mapping Applications",
+   "https://opendata.berkspa.gov/search?sort=Date%20Created%7Ccreated%7Cdesc&tags=commissioners": "Commissioners' Board Meeting Minutes",
+   "https://opendata.berkspa.gov": "Open Data Hub",
+   "https://opendata.berkspa.gov/": "Learn More",
+   "https://storymaps.arcgis.com/stories/880b2029d4644699962f26778073be3d": "Learn More",
+   "https://www.gis.dcnr.state.pa.us/": "Pennsylvania Department of Conservation and Natural Resources (DCNR) GIS",
+   "https://www.dep.pa.gov/DataandTools/Pages/GIS.aspx": "Pennsylvania Department of Environmental Protection (DEP) GIS",
+   "https://data-pennshare.opendata.arcgis.com/": "Pennsylvania Department of Transportation (PennDOT) PennShare Portal",
+   "https://pasda.maps.arcgis.com/apps/webappviewer/index.html?id=f8b951ee77094a81a0a3d6eaa824ebdd": "Lidar Navigator",
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=d17df63270154864a4fbdec292c5b829": "Penn Pilot",
+   "https://storymaps.arcgis.com/stories/01c8bcae75894dcaa58237ecc47437c1": "Interactive Parks Map",
+   "https://experience.arcgis.com/experience/28dd44c104cb400c9f47fb04387e0ebc": "AOPC Public Locator Map (arcgis.com)"
+  }
+ },
+ "Brazoria County": {
+  "files": [
+   {
+    "url": "https://brazoriacountytx.gov/Documents/Departments/District Clerk/Courthouse  no Parking Exhibit.pdf",
+    "text": "Courthouse Map for Parking",
+    "file": "data/city_files/Brazoria_County/744294_Courthouse_no_Parking_Exhibit.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cgis.glo.texas.gov/Beachwatch/": "For weekly updates on beach conditions"
+  }
+ },
+ "Escambia County": {
+  "files": [
+   {
+    "url": "http://www.nps.gov/tps/tax-incentives/taxdocs/about-tax-incentives-2012.pdf",
+    "text": "Historic Preservation Tax Incentives - National Park Service brochure",
+    "file": "data/city_files/Escambia_County/280dc2_about-tax-incentives-2012.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://myescambia.com/docs/default-source/sharepoint-parks-and-recreation/perdido-guide-to-paddling-trails.pdf?sfvrsn=8409da30_5",
+    "text": "PDF guide Perdido Guide to Paddling Trails Explore paddling routes and access points along the Perdido River. ↗",
+    "file": "data/city_files/Escambia_County/0abd10_perdido-guide-to-paddling-trails.pdf",
+    "rows": 18,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://myescambia.com/docs/default-source/sharepoint-building-services/flood-repair-permitting-packet.pdf?sfvrsn=7a972f6d_2",
+    "text": "Flood Repair Permitting Packet",
+    "file": "data/city_files/Escambia_County/d50898_flood-repair-permitting-packet.pdf",
+    "rows": 53,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://escfl.maps.arcgis.com/apps/instant/basic/index.html?appid=237c033fd6ee41eb9bada15a37f34b4e": "Commission Districts Opens in a new window",
+   "https://escfl.maps.arcgis.com/apps/instant/basic/index.html?appid=c1b34911a1f341abbbd6ba9b4cc2d3b3": "CRA Districts Opens in a new window",
+   "https://escfl.maps.arcgis.com/apps/instant/basic/index.html?appid=39eed0689c414211a74ef40b86aac3b9": "ZIP Code Areas Opens in a new window",
+   "https://escfl.maps.arcgis.com/apps/instant/basic/index.html?appid=5b5daa15286f47fbb2615cc7c64a0df5": "Fire Stations Opens in a new window",
+   "https://www.arcgis.com/apps/dashboards/024e45d4372341f9b6d4b25d5666a33e": "Road Closures and Issues Opens in a new window",
+   "https://escfl.maps.arcgis.com/apps/instant/basic/index.html?appid=24bb4bcc9f5c473eb7b189bb38226f66": "April 2014 Flood Damage Opens in a new window",
+   "https://escfl.maps.arcgis.com/apps/instant/basic/index.html?appid=7bdbc803e34c4fb8884cc2901a03040f": "Athletic Parks Opens in a new window",
+   "https://escfl.maps.arcgis.com/apps/instant/basic/index.html?appid=bad58973ae404ffea9e642de2744fcd0": "Boat Ramps Opens in a new window",
+   "https://escfl.maps.arcgis.com/apps/instant/basic/index.html?appid=4caeb5a578444a46a967d6c854e7a04f": "Dog Parks Opens in a new window",
+   "https://escfl.maps.arcgis.com/apps/instant/basic/index.html?appid=ec81ccb9173f4d889c5ebe4fbfb8673a": "Neighborhood Parks Opens in a new window",
+   "https://escfl.maps.arcgis.com/apps/instant/basic/index.html?appid=153cfd1157ce4bcd8a6531198fa012ca": "Snorkel Reefs Opens in a new window",
+   "https://escfl.maps.arcgis.com/apps/instant/basic/index.html?appid=d67a43c6ea2d488d8ffa3aaf2c47a09d": "Zoning and Future Land Use Opens in a new window"
+  }
+ },
+ "Winnebago County": {
+  "files": [],
+  "portals": {}
+ },
+ "Yakima County": {
+  "files": [
+   {
+    "url": "https://www.fema.gov/pdf/floodplain/nfip_sg_unit_4.pdf",
+    "text": "NFIP Floodplain Management Requirements Unit 4: Using NFIP Studies and Maps - FEMA",
+    "file": "data/city_files/Yakima_County/fd0428_nfip_sg_unit_4.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fema.gov/sites/default/files/documents/fema_riverine-mapping-and-floodplain-guidance.pdf",
+    "text": "Guidance for Flood Risk Analysis and Mapping: Riverine Mapping and Floodplain Boundaries Guidance – FEMA",
+    "file": "data/city_files/Yakima_County/16cca8_fema_riverine-mapping-and-floodplain-guidance.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fema.gov/sites/default/files/documents/fema_firm-graphics-guidance.pdf",
+    "text": "Guidance for Flood Risk Analysis and Mapping: Flood Insurance Rate Map (FIRM) Graphics – FEMA",
+    "file": "data/city_files/Yakima_County/b5b2bb_fema_firm-graphics-guidance.pdf",
+    "rows": 30,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://yakimacounty.maps.arcgis.com/apps/webappviewer/index.html?id=0a394815add14e97b40a1d3cd72d15db": "",
+   "https://yakimacounty.maps.arcgis.com/apps/webappviewer/index.html?id=d26c4bbac22442458488c62ca5619545": "",
+   "https://gis-yakimacounty.opendata.arcgis.com/": "",
+   "https://yakimacounty.maps.arcgis.com/home/index.html ": "",
+   "https://yakimacounty.maps.arcgis.com/apps/webappviewer/index.html?id=1bf3a144659f4a72a140973904f17612": "",
+   "https://yakimacounty.maps.arcgis.com/apps/webappviewer/index.html?id=c9074c51db784c7a9eedcb1cf31c9c89": "",
+   "https://yakimacounty.maps.arcgis.com/apps/MapSeries/index.html?appid=7f94a55efe1c48fbbd5aaa149a35228c": "",
+   "https://yakimacounty.maps.arcgis.com/apps/webappviewer/index.html?id=3d87b08164304382952fb6def22049b5": "",
+   "https://yakimacounty.maps.arcgis.com/apps/webappviewer/index.html?id=07111569c816499986c654f66337b4a3": "",
+   "https://yakimacounty.maps.arcgis.com/apps/MapJournal/index.html?appid=38822ec3bd8f48d296f09a540df16521": "",
+   "https://yakimacounty.maps.arcgis.com/apps/webappviewer/index.html?id=68d77d2997cd49778cb71d7a2ae467fe": "",
+   "https://yakimacounty.maps.arcgis.com/apps/webappviewer/index.html?id=9f40174ff67a492d8cd8ad771a5004e4": ""
+  }
+ },
+ "Spokane": {
+  "files": [],
+  "portals": {}
+ },
+ "Washington County": {
+  "files": [],
+  "portals": {}
+ },
+ "Minnehaha County": {
+  "files": [],
+  "portals": {}
+ },
+ "DeSoto County": {
+  "files": [],
+  "portals": {
+   "https://desotocounty-dcms-gis.hub.arcgis.com/": "GIS Hub",
+   "https://experience.arcgis.com/experience/bb2d799fa36a4f039f5c28b3be9017dd": "",
+   "https://dcms-gis.maps.arcgis.com/apps/instant/lookup/index.html?appid=303929c4fdac4058b18465b0c32912cc": "link",
+   "https://dcms-gis.maps.arcgis.com/apps/webappviewer/index.html?id=7ee7335236fe4c968635e083c143f480": "Voting Information",
+   "http://midsouthgis.org/": "MAGIC",
+   "http://www.gis.ms.gov": "Mississippi Geospatial Clearinghouse"
+  }
+ },
+ "Lee County": {
+  "files": [],
+  "portals": {
+   "https://www.alabamagis.com/Lee/": "Online Maps",
+   "https://leeco.maps.arcgis.com/apps/webappviewer/index.html?id=abe6f230ef404ae395a00dabed2ca7e2": "Find My County Commission District"
+  }
+ },
+ "Ector County": {
+  "files": [],
+  "portals": {
+   "https://ecgis-ectorcounty.hub.arcgis.com/": "Ector County GeoHub",
+   "https://ecud.maps.arcgis.com/apps/webappviewer/index.html?id=fb4d2d6cfb37424ba20a71440ad5d62b": "Ector County Utility District Water System Map",
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=b2c12abbdd9742479432ea4c532d40d1/": "Floodplain Map Page"
+  }
+ },
+ "Columbia County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/2a544ed178534a61ae173ab7e0b418d2": "Development Public Hearings",
+   "https://columbia-county-green-guide-columbiagagis.hub.arcgis.com/": "Green Guide",
+   "https://columbia-county-green-guide-columbiagagis.hub.arcgis.com/pages/recycling": "Recycling Programs",
+   "https://www.arcgis.com/apps/dashboards/3b6d93ec803845219010113a6bc54258": "Interactive Campus Map",
+   "https://splost-2023-outreach-columbiagagis.hub.arcgis.com/": "2023 to 2028 SPLOST Projects"
+  }
+ },
+ "Ramapo": {
+  "files": [],
+  "portals": {}
+ },
+ "Gainesville": {
+  "files": [
+   {
+    "url": "https://www.gainesvillefl.gov/files/content/public/v/29/government-pages/government/departments/public-works/capital-projects/location-map.pdf",
+    "text": "Location-Map.pdf (PDF, 4MB)",
+    "file": "data/city_files/Gainesville/e34ef8_location-map.pdf",
+    "rows": 6,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/public-work/documents/clarkbutlerclosure_detourmap-pdf.pdf",
+    "text": "Detour Map (PDF, 2MB)",
+    "file": "data/city_files/Gainesville/ef56a1_clarkbutlerclosure_detourmap-pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/public-work/documents/new-folder/ne-8th-ave-public-works.pdf",
+    "text": "Project Map",
+    "file": "data/city_files/Gainesville/4adbc9_ne-8th-ave-public-works.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/2/office-of-equity-and-inclusion/documents/ada-transition-plan-2024-update_240314.pdf",
+    "text": "ADA Transition Plan (PDF, 3MB)",
+    "file": "data/city_files/Gainesville/cd1dca_ada-transition-plan-2024-update_240314.pdf",
+    "rows": 36,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/transportation/photos/photos-parking/merchant-validation.pdf",
+    "text": "Business Parking Validation",
+    "file": "data/city_files/Gainesville/3b6bea_merchant-validation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/public-litter-receptacles_approved-samples.pdf",
+    "text": "Sample public litter receptacle labels (PDF, 539KB)",
+    "file": "data/city_files/Gainesville/54f684_public-litter-receptacles_approved-samples.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/approved-mfp-indoor-recycle-storage-containers_5-2-2023.pdf",
+    "text": "List of approved recycle storage containers (PDF, 1MB)",
+    "file": "data/city_files/Gainesville/c848bb_approved-mfp-indoor-recycle-storage-containers_5-2-2023.pdf",
+    "rows": 16,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/ltp_designated-area_updated-12-31-24.pdf",
+    "text": "designated area (PDF, 1MB)",
+    "file": "data/city_files/Gainesville/c85a3a_ltp_designated-area_updated-12-31-24.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/1-13-2025_zwo_mfp_lease-transition-form_fillable-form_protected.pdf",
+    "text": "Multi-Family Property Lease Transition Plan Form (PDF, 581KB)",
+    "file": "data/city_files/Gainesville/36da26_1-13-2025_zwo_mfp_lease-transition-form_fillable-form_protected.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/zwo_mfp_lease-transition-form_fillable-form_secured.pdf",
+    "text": "Lease Transition Plans (PDF, 592KB)",
+    "file": "data/city_files/Gainesville/6d8a11_zwo_mfp_lease-transition-form_fillable-form_secured.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/11-1-2024_redesign-of-mfp-toolkit_protected.pdf",
+    "text": "(PDF, 5MB)",
+    "file": "data/city_files/Gainesville/add3fe_11-1-2024_redesign-of-mfp-toolkit_protected.pdf",
+    "rows": 10,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/20250425-mfp-toolkit_for-website_8x11.pdf",
+    "text": "Zero Waste Toolkit For Multi-Family Property Managers & Owners (PDF, 5MB)",
+    "file": "data/city_files/Gainesville/c9c6a3_20250425-mfp-toolkit_for-website_8x11.pdf",
+    "rows": 11,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/12_9_24_sustainable-events-checklist.pdf",
+    "text": "Sustainable Events Checklist (PDF, 860KB)",
+    "file": "data/city_files/Gainesville/5b978b_12_9_24_sustainable-events-checklist.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/new-folder/solid-waste-article-3_ordinance-final_20220602.pdf",
+    "text": "Solid Waste Division - Article 3 (PDF, 3MB)",
+    "file": "data/city_files/Gainesville/a53133_solid-waste-article-3_ordinance-final_20220602.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/new-folder/food-waste_diversion-6_ordinance-final_20220602.pdf",
+    "text": "Food Waste - Division 6 (PDF, 780KB)",
+    "file": "data/city_files/Gainesville/efb79c_food-waste_diversion-6_ordinance-final_20220602.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/food-diversion_division-7_ordinance-final_20220602.pdf",
+    "text": "Food Diversion - Division 7 (PDF, 196KB)",
+    "file": "data/city_files/Gainesville/cea046_food-diversion_division-7_ordinance-final_20220602.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/zw-checklist_grocery-stores_updated-11-15-2022.pdf",
+    "text": "Grocery Stores & Supermarkets (PDF, 153KB)",
+    "file": "data/city_files/Gainesville/4e52ca_zw-checklist_grocery-stores_updated-11-15-2022.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/zw-checklist_pharmacies_updated-11-15-2022.pdf",
+    "text": "Pharmacies (PDF, 127KB)",
+    "file": "data/city_files/Gainesville/e85313_zw-checklist_pharmacies_updated-11-15-2022.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/zw-checklist_restaurants-and-bars_updated-11-15-2022.pdf",
+    "text": "Restaurants & Bars (PDF, 153KB)",
+    "file": "data/city_files/Gainesville/53b2e3_zw-checklist_restaurants-and-bars_updated-11-15-2022.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/zw-checklist_multi-family-properties_updated-11-15-2022.pdf",
+    "text": "Multi-family Properties (PDF, 141KB)",
+    "file": "data/city_files/Gainesville/1d260e_zw-checklist_multi-family-properties_updated-11-15-2022.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/zw-checklist_convenience-stores_updated-11-15-222.pdf",
+    "text": "Convenience Stores (PDF, 153KB)",
+    "file": "data/city_files/Gainesville/20eb0e_zw-checklist_convenience-stores_updated-11-15-222.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/public-litter-receptacles-best_downloadable-for-printing.pdf.pdf",
+    "text": "(PDF, 955KB)",
+    "file": "data/city_files/Gainesville/bccba4_public-litter-receptacles-best_downloadable-for-printing.pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/v/1/recycling/documents/public-litter-receptacles-acceptable_downloadable-for-printing.pdf.pdf",
+    "text": "(PDF, 102KB)",
+    "file": "data/city_files/Gainesville/1fc36d_public-litter-receptacles-acceptable_downloadable-for-printing.pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/recycling/documents/solid-waste-article-3_ordinance-final_20220602-1.pdf",
+    "text": "Solid Waste Ordinances",
+    "file": "data/city_files/Gainesville/32fd26_solid-waste-article-3_ordinance-final_20220602-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gainesvillefl.gov/files/assets/public/recycling/documents/food-waste_division-6_ordinance-final_20220602.pdf",
+    "text": "Commercial Food Waste Ordinances",
+    "file": "data/city_files/Gainesville/3b3ade_food-waste_division-6_ordinance-final_20220602.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gainesvillefl.maps.arcgis.com/apps/instant/lookup/index.html?appid=0216e8502da54540ab810a133bb0a36e": "New Collection Day Map",
+   "https://experience.arcgis.com/experience/5ed786e70b3e4ff3bd960ac6a9beb565": "Projects (map)",
+   "https://experience.arcgis.com/experience/b8697d71afb7476da4c1efd862aeecb6/": "Parking Areas Map"
+  }
+ },
+ "Calhoun County": {
+  "files": [],
+  "portals": {}
+ },
+ "Caguas": {
+  "files": [],
+  "portals": {}
+ },
+ "Hartford": {
+  "files": [],
+  "portals": {}
+ },
+ "Smithtown": {
+  "files": [],
+  "portals": {}
+ },
+ "Delaware County": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Lawrence County": {
+  "files": [
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A12%20LD12%20and%20EDs%20March%202022.pdf",
+    "text": "District 12 Map",
+    "file": "data/city_files/St_Lawrence_County/827965_A12_20LD12_20and_20EDs_20March_202022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A15%20LD15%20and%20EDs%20March%202022.pdf",
+    "text": "District 15 Map",
+    "file": "data/city_files/St_Lawrence_County/004c47_A15_20LD15_20and_20EDs_20March_202022.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A6%20LD6%20and%20EDs%20March%202022.pdf",
+    "text": "District 6 Map",
+    "file": "data/city_files/St_Lawrence_County/79360e_A6_20LD6_20and_20EDs_20March_202022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A2%20LD2%20and%20EDs%20March%202022.pdf",
+    "text": "District 2 Map",
+    "file": "data/city_files/St_Lawrence_County/093f51_A2_20LD2_20and_20EDs_20March_202022.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A13%20LD13%20and%20EDs%20March%202022.pdf",
+    "text": "District 13 Map",
+    "file": "data/city_files/St_Lawrence_County/1ed550_A13_20LD13_20and_20EDs_20March_202022.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A10%20LD10%20and%20EDs%20March%202022.pdf",
+    "text": "District 10 Map",
+    "file": "data/city_files/St_Lawrence_County/df9c2b_A10_20LD10_20and_20EDs_20March_202022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A9%20LD9%20and%20EDs%20March%202022.pdf",
+    "text": "District 9 Map",
+    "file": "data/city_files/St_Lawrence_County/387c7a_A9_20LD9_20and_20EDs_20March_202022.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A3%20LD3%20and%20EDs%20March%202022.pdf",
+    "text": "District 3 Map",
+    "file": "data/city_files/St_Lawrence_County/97c7fb_A3_20LD3_20and_20EDs_20March_202022.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A7%20LD7%20and%20EDs%20March%202022.pdf",
+    "text": "District 7 Map",
+    "file": "data/city_files/St_Lawrence_County/4e8dde_A7_20LD7_20and_20EDs_20March_202022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A1%20LD1%20and%20EDs%20March%202022.pdf",
+    "text": "District 1 Map",
+    "file": "data/city_files/St_Lawrence_County/18cfd1_A1_20LD1_20and_20EDs_20March_202022.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A8%20LD8%20and%20EDs%20March%202022.pdf",
+    "text": "District 8 Map",
+    "file": "data/city_files/St_Lawrence_County/e1745c_A8_20LD8_20and_20EDs_20March_202022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A4%20LD4%20and%20EDs%20March%202022.pdf",
+    "text": "District 4 Map",
+    "file": "data/city_files/St_Lawrence_County/c7ab79_A4_20LD4_20and_20EDs_20March_202022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A5%20LD5%20and%20EDs%20March%202022.pdf",
+    "text": "District 5 Map",
+    "file": "data/city_files/St_Lawrence_County/6d6211_A5_20LD5_20and_20EDs_20March_202022.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A14%20LD14%20and%20EDs%20March%202022.pdf",
+    "text": "District 14 Map",
+    "file": "data/city_files/St_Lawrence_County/8e74c4_A14_20LD14_20and_20EDs_20March_202022.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/District%20Maps/A11%20LD11%20and%20EDs%20March%202022.pdf",
+    "text": "District 11 Map",
+    "file": "data/city_files/St_Lawrence_County/e93d99_A11_20LD11_20and_20EDs_20March_202022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/2026-04/SLC%20Multi-Use%20Trail%20Map%202026%20Final%20%281%29.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Lawrence_County/0cb78f_SLC_20Multi-Use_20Trail_20Map_202026_20Final_20_281_29.pdf",
+    "rows": 31,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/2026-06/Trail%20Rules%202026.pdf",
+    "text": "Trail Rules and Info",
+    "file": "data/city_files/St_Lawrence_County/9d7f9b_Trail_20Rules_202026.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/Trails/Multi-Use%20Trails%20Local%20Law.pdf",
+    "text": "Local Law",
+    "file": "data/city_files/St_Lawrence_County/e758f6_Multi-Use_20Trails_20Local_20Law.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/Trails/Environmental%20Impact%20Statement.pdf",
+    "text": "Environmental Impact Statement",
+    "file": "data/city_files/St_Lawrence_County/e1add3_Environmental_20Impact_20Statement.pdf",
+    "rows": 116,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/SLCRTAB-BYLAWS09.pdf",
+    "text": "Recreational Trails Advisory Board By-Laws",
+    "file": "data/city_files/St_Lawrence_County/0885f7_SLCRTAB-BYLAWS09.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/Public%20Hearing%20LL3_Wireless%20Communications%20Surcharge%20Newspaper%20Announcement.pdf",
+    "text": "Public Hearing on Proposed Local Law C (No. ) for the Year 2024, \"A Local Law of the County of St. Lawrence Imposing the",
+    "file": "data/city_files/St_Lawrence_County/e1ec68_Public_20Hearing_20LL3_Wireless_20Communications_20Surcharge_20Newspap",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/BoardofLegislators/Resolution%20No.%20138-2021.pdf",
+    "text": "Local Law Re-establishing the St. Lawrence County Multi-Use Trail System and Establishing a Trail Permitting Process",
+    "file": "data/city_files/St_Lawrence_County/72f862_Resolution_20No._20138-2021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/RealProperty/2025%20Tax%20Maps/402000.pdf",
+    "text": "BRASHER",
+    "file": "data/city_files/St_Lawrence_County/befb52_402000.pdf",
+    "rows": 62,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/RealProperty/2025%20Tax%20Maps/404289.pdf",
+    "text": "HAMMOND",
+    "file": "data/city_files/St_Lawrence_County/922392_404289.pdf",
+    "rows": 37,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stlawco.gov/sites/default/files/RealProperty/2025%20Tax%20Maps/406489.pdf",
+    "text": "OSWEGATCHIE",
+    "file": "data/city_files/St_Lawrence_County/58a61c_406489.pdf",
+    "rows": 26,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://maps.dancgis.org/ima/": "Internet Mapping Application (IMA)"
+  }
+ },
+ "San Mateo": {
+  "files": [
+   {
+    "url": "https://www.safekids.org/sites/default/files/documents/bike_safety_tips_2019.pdf",
+    "text": "Bike Safety Tips",
+    "file": "data/city_files/San_Mateo/e7212b_bike_safety_tips_2019.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://members.safekids.org/wp-content/uploads/2022/03/bike_safety_tips-spanish-2019.pdf",
+    "text": "Consejos de seguirdad para ir en bicicleta",
+    "file": "data/city_files/San_Mateo/2c7140_bike_safety_tips-spanish-2019.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://gis.cityofsanmateo.org/mygovernmentservices/": "'mystreet' sweeping",
+   "https://experience.arcgis.com/experience/d36a64e8145c4a369a3f0a2ded240863": "Property Information Lookup",
+   "http://cityofsanmateo.maps.arcgis.com/apps/InformationLookup/index.html?appid=fa74545ec8e8491d88126630699e4ac4": "",
+   "https://experience.arcgis.com/experience/ae95f7040b8e48d699414d727478b8f1": "Neighborhood & Homeowner Associations",
+   "http://cityofsanmateo.maps.arcgis.com/apps/PublicInformation/index.html?appid=f06c069686414111a3e2cc60220def94": "",
+   "https://experience.arcgis.com/experience/1020ee6f469e44baa3c756dd2341b475": "FEMA Flood Information",
+   "https://experience.arcgis.com/experience/954fc54544d9491b8403db718287bc7a": "Street Sweeping Schedule",
+   "https://cityofsanmateo.maps.arcgis.com/apps/MapSeries/index.html?appid=cdafc56412814678ad6a9882d7a799a5": "Traffic & Transportation Improvements",
+   "https://experience.arcgis.com/experience/108de11f8d2a48429341adf232606272": "Calls for Emergency Service",
+   "https://gis.smcgov.org/apps/raster": "County Assessor Property Lookup",
+   "https://www.arcgis.com/sharing/rest/content/items/7f7e038155f94d799d8917c39e21c1a8/data": "Download San Mateo City Council Districts (KML)"
+  }
+ },
+ "Nevada County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/45d30af79b1e45f792844b897a45131a": "parcel Data & Maps",
+   "https://nevadacountyca.gov/2545/Open-Data-Portal": "Open Data Portal",
+   "https://nevadacountyca.gov/2546/Open-Data-Portal": "Open Data Portal",
+   "https://nevadacountyca.gov/604/Open-Data-Portal": "Open Data Portal",
+   "https://experience.arcgis.com/experience/7695ed83c25b439bb061574b27a35591/": "Trail Finder App",
+   "https://nevcounty.maps.arcgis.com/home/gallery.html?view=grid&sortOrder=desc&sortField=numviews": "Nevada County's Map Gallery",
+   "https://storymaps.arcgis.com/stories/c140a2e3c6bf4d979e4c554496522d88": "Interactive Map to Historical Sites: View photographs and access detailed information including the location and a descr",
+   "https://nevcounty.maps.arcgis.com/apps/webappviewer/index.html?id=f10e226a5cb3481686796b5a05367e0e": "interactive map",
+   "https://storymaps.arcgis.com/stories/dd2bff9f8c8a4e82a4696e0cc41a8be4": "Learn more about Recreation & Resiliency Plan and why your input matters.",
+   "https://nevcounty.maps.arcgis.com/apps/instant/basic/index.html?appid=d759e6c22dea4b3b9f2314fbd0d463b0": "State Senate District 4",
+   "http://gis.nevcounty.net/MapGallery/": "GIS Map Gallery",
+   "https://maps-nevcounty.opendata.arcgis.com/": "Get digital data"
+  }
+ },
+ "Albany": {
+  "files": [],
+  "portals": {
+   "https://data.census.gov": "data.census.gov",
+   "https://storymaps.arcgis.com/stories/25a4abce34fd4e2c88abb4cf7331ab88": ""
+  }
+ },
+ "Toms River": {
+  "files": [],
+  "portals": {
+   "https://tomsrivertwp.maps.arcgis.com/apps/webappviewer/index.html?id=3f5c23a9619e42cab9b7b48dd8a65378": ""
+  }
+ },
+ "Santa Monica": {
+  "files": [],
+  "portals": {
+   "https://smgov.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=56607b6926724058aa5822c3d24023eb": "Historic Landmark Viewer",
+   "https://data.santamonica.gov/": "Open Data",
+   "https://gis-smgov.opendata.arcgis.com/": "GIS Data",
+   "https://experience.arcgis.com/template/d2c30238f59f4ec1a88b7e09fbbba150/page/About-The-Application/?views=Add-Data": "GIS Layers"
+  }
+ },
+ "Westminster": {
+  "files": [],
+  "portals": {}
+ },
+ "Arecibo": {
+  "files": [],
+  "portals": {}
+ },
+ "Newport Beach": {
+  "files": [],
+  "portals": {}
+ },
+ "Monroe County": {
+  "files": [
+   {
+    "url": "https://msc.fema.gov/msccontent/Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "text": "Flood\n\t\t\t\t\t\tHazard Mapping Updates Overview Fact Sheet",
+    "file": "data/city_files/Monroe_County/9a4d0e_Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "rows": 52,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://floridadep.gov/sites/default/files/Battery-Fact-Sheet_09Dec15.pdf",
+    "text": "Homeowner's Guide to Battery Recycling  and Disposal",
+    "file": "data/city_files/Monroe_County/bcee76_Battery-Fact-Sheet_09Dec15.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/418410f2400f4d5d91ca82551e54b718/": "Flood Map Comparison Application",
+   "https://monroecounty-fl.maps.arcgis.com/apps/webappviewer/index.html?id=ef2691632ec84bae9d50674a0f393561": "FEMA FIRM PRELIMINARY Mapping tool",
+   "https://www.arcgis.com/home/webmap/viewer.html?useExisting=1&layers=4ffd84bc93ce4862bcd642bdb023668e": "ArcGIS SFWMD Elevation Conversion: NGVD29 to NAVD88 mapping tool",
+   "https://performance-data-integration-space-fdot.hub.arcgis.com/": "Performance",
+   "https://experience.arcgis.com/experience/258386d78ff64749be0acbfdb81d3e85": "GIS Web Application",
+   "http://monroecounty-fl.maps.arcgis.com/apps/PublicGallery/index.html?appid=144a66ae0ae14dae8d742170a33b0a25": "GIS Web App Gallery",
+   "http://monroecounty-fl.maps.arcgis.com/apps/webappviewer/index.html?id=2e52d422378e4b48a471d02959265ecc": "County Flood Map Interactive GIS Web Application"
+  }
+ },
+ "Floyd County": {
+  "files": [],
+  "portals": {}
+ },
+ "Jonesboro": {
+  "files": [],
+  "portals": {}
+ },
+ "Chatham County": {
+  "files": [],
+  "portals": {}
+ },
+ "Scioto County": {
+  "files": [],
+  "portals": {}
+ },
+ "Bowling Green": {
+  "files": [
+   {
+    "url": "https://www.bgky.org/files/WE2QXvoO.pdf",
+    "text": "Greater Downtown Map",
+    "file": "data/city_files/Bowling_Green/33e511_WE2QXvoO.pdf",
+    "rows": 14,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.bgky.org/files/AdyNoekE.pdf",
+    "text": "Fireworks Special Discharge Permit",
+    "file": "data/city_files/Bowling_Green/1f486b_AdyNoekE.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bgky.org/files/JTlIhTSJ.pdf",
+    "text": "Section A (Burial Plots)",
+    "file": "data/city_files/Bowling_Green/1ba00e_JTlIhTSJ.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bgky.org/files/2HUBdgTt.pdf",
+    "text": "Section A (Cremation Plots)",
+    "file": "data/city_files/Bowling_Green/3d52ef_2HUBdgTt.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bgky.org/files/syOoQDz7.pdf",
+    "text": "Snow Removal Routes document",
+    "file": "data/city_files/Bowling_Green/1c8d4c_syOoQDz7.pdf",
+    "rows": 1304,
+    "bike_rows": 51
+   },
+   {
+    "url": "https://www.bgky.org/files/3x4gkYIP.pdf",
+    "text": "On-Street Parking (PDF)",
+    "file": "data/city_files/Bowling_Green/0c6ea2_3x4gkYIP.pdf",
+    "rows": 36,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.bgky.org/files/Ig5FtGGq.pdf",
+    "text": "Maintenance Map (PDF)",
+    "file": "data/city_files/Bowling_Green/9aa756_Ig5FtGGq.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://bgky.maps.arcgis.com/apps/webappviewer/index.html?id=0604a6aa1db8466191e8e47023e8bd35": "View Map",
+   "https://data-bgky.hub.arcgis.com/maps/9da0b68d461f42989748a28ca2036075/explore?location=36.975965%2C-86.418050%2C11": "Map of Snow Routes and Priorities"
+  }
+ },
+ "Blaine": {
+  "files": [],
+  "portals": {}
+ },
+ "Wise County": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/ffb15620dfe140948a696cab1f192aed?portalUrl=https://wisegis.co.wise.tx.us/portal": "Read on...",
+   "https://survey123.arcgis.com/share/d4c2249acece44d1b49f6d539a05569f?portalUrl=https://wisegis.co.wise.tx.us/portal": "Click HERE to register"
+  }
+ },
+ "Jefferson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Marquette County": {
+  "files": [],
+  "portals": {}
+ },
+ "Carbon County": {
+  "files": [
+   {
+    "url": "https://cms5.revize.com/revize/carboncounty/Document%20Center/Service/Parking/Parking%20Ordinance%20updated.pdf",
+    "text": "Proposed Parking Ordinance",
+    "file": "data/city_files/Carbon_County/1d6b55_Parking_20Ordinance_20updated.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://municipality-information-carbongis.hub.arcgis.com/": "County Municipalities",
+   "https://school-information-2-carbongis.hub.arcgis.com/": "School Districts",
+   "https://carbon-county-open-data-portal-carbongis.hub.arcgis.com/": "Property Search: GIS Online",
+   "https://carbongis.maps.arcgis.com/home/index.html": "GIS",
+   "https://carbon-county-property-hub-site-1-carbongis.hub.arcgis.com/": "Property Hub"
+  }
+ },
+ "Dearborn Heights": {
+  "files": [],
+  "portals": {}
+ },
+ "Livingston County": {
+  "files": [],
+  "portals": {
+   "https://gis.livingstoncountyny.gov/portal/home/index.html": "Interactive County Map",
+   "https://gis.livingstoncounty.us/portal/home/": "Interactive County Map",
+   "https://gis.ny.gov/streets-addresses": "NY State GIS Web Page",
+   "https://data.census.gov/cedsci/profile?g=0600000US3605103364": "Avon",
+   "https://data.census.gov/cedsci/profile?g=0600000US3605111715": "Caledonia",
+   "https://data.census.gov/cedsci/profile?g=0600000US3605117618": "Conesus",
+   "https://data.census.gov/cedsci/profile?g=0600000US3605128629": "Geneseo",
+   "https://data.census.gov/cedsci/profile?g=0600000US3605131016": "Groveland",
+   "https://data.census.gov/cedsci/profile?g=0600000US3605141883": "Leicester",
+   "https://data.census.gov/cedsci/profile?g=0600000US3605142334": "Lima",
+   "https://data.census.gov/cedsci/profile?g=0600000US3605142961": "Livonia",
+   "https://data.census.gov/cedsci/profile?g=0600000US3605148956": "Mount Morris"
+  }
+ },
+ "Des Plaines": {
+  "files": [],
+  "portals": {}
+ }
+}
