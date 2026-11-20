@@ -18,6 +18,12 @@ STRONG = re.compile(r'bike|bicycl|cycl|rack|corral|locker|cage|scooter|e-?scoot|
 FILE = re.compile(r'\.(pdf|xlsx?|csv|geojson|json|kml|kmz|zip|shp|gpx|sql|gdb)(\?|$)', re.I)
 PORTAL = re.compile(r'arcgis\.com|hub\.arcgis|opendata|open-data|data\.[a-z\-]+\.(gov|org|us)|socrata|ckan|gis\.', re.I)
 MAXMB = 40
+PAGES = int(os.environ.get('PAGES', 110))
+SECS = int(os.environ.get('SECS', 150))
+SHARD = int(os.environ.get('SHARD', 0))
+NSHARDS = int(os.environ.get('NSHARDS', 1))
+CITIES_FILE = os.environ.get('CITIES_FILE', 'data/foia/contacts.json')
+SUF = os.environ.get('SUFFIX', '')
 
 def get(url, **kw):
     try:
@@ -41,7 +47,7 @@ def crawl_city(c):
     for q in ('bike rack', 'bicycle parking', 'bike locker', 'scooter parking', 'motorcycle parking', 'bike repair station', 'e-bike charging', 'bike map', 'trail map', 'historic route', 'waterfront', 'parking garage rates', 'bikeway gis data', 'open data'):
         queue.append((f'{base}/search?q={urllib.parse.quote(q)}', 1))
         queue.append((f'{base}/Search?searchPhrase={urllib.parse.quote(q)}', 1))
-    while queue and len(seen) < 110 and time.time() - t0 < 150:
+    while queue and len(seen) < PAGES and time.time() - t0 < SECS:
         url, d = queue.pop(0)
         if url in seen:
             continue
@@ -133,17 +139,16 @@ def extract(path):
         rows.append({'error': str(e)[:100]})
     return rows
 
-def main():
-    cities = json.load(open('data/foia/contacts.json'))
-    os.makedirs(OUT, exist_ok=True)
-    index = {}
-    with cf.ThreadPoolExecutor(8) as ex:
-        res = list(ex.map(lambda c: (c, crawl_city(c)), cities))
-    rep = ['# City files found\n', '| City | Files | Portals |', '|---|---|---|']
-    for c, (files, portals) in res:
-        city = c['city']
-        got = []
-        for u, txt in list(files.items())[:25]:
+def process(c):
+    """crawl one city, then download + extract its files; returns (city, entry)."""
+    try:
+        files, portals = crawl_city(c)
+    except Exception as e:
+        return c['city'], {'files': [], 'portals': {}, 'error': str(e)[:100]}
+    city = c['city']
+    got = []
+    for u, txt in list(files.items())[:25]:
+        try:
             p = download(city, u)
             if not p:
                 continue
@@ -152,10 +157,26 @@ def main():
             got.append({'url': u, 'text': txt, 'file': p, 'rows': len(rows), 'bike_rows': len(useful)})
             if useful:
                 json.dump(useful[:3000], open(p + '.rows.json', 'w'), ensure_ascii=False)
-        index[city] = {'files': got, 'portals': portals}
-        rep.append(f"| {city} | {len(got)} ({sum(g['bike_rows'] for g in got)} bike rows) | {len(portals)} |")
-    json.dump(index, open(f'{OUT}/index.json', 'w'), indent=1, ensure_ascii=False)
-    open(f'{OUT}/REPORT.md', 'w').write('\n'.join(rep) + '\n')
+        except Exception:
+            continue
+    return city, {'files': got, 'portals': portals}
+
+def main():
+    cities = json.load(open(CITIES_FILE))
+    cities = [c for i, c in enumerate(cities) if i % NSHARDS == SHARD]
+    os.makedirs(OUT, exist_ok=True)
+    index = {}
+    rep = ['# City files found (shard %d/%d)\n' % (SHARD, NSHARDS), '| City | Files | Portals |', '|---|---|---|']
+    def flush():
+        json.dump(index, open(f'{OUT}/index{SUF}.json', 'w'), indent=1, ensure_ascii=False)
+        open(f'{OUT}/REPORT{SUF}.md', 'w').write('\n'.join(rep) + '\n')
+    with cf.ThreadPoolExecutor(8) as ex:
+        for n, (city, e) in enumerate(ex.map(process, cities), 1):
+            index[city] = e
+            rep.append(f"| {city} | {len(e['files'])} ({sum(g['bike_rows'] for g in e['files'])} bike rows) | {len(e['portals'])} |")
+            if n % 10 == 0:
+                flush()
+    flush()
     print('\n'.join(rep))
 
 if __name__ == '__main__':

@@ -1,0 +1,76 @@
+name: City files (1500 cities)
+
+# Crawl the websites of the 1500 biggest US cities in 30 parallel shards for bike-parking / bikeway files.
+on:
+  workflow_dispatch:
+    inputs:
+      cities:
+        description: number of cities
+        default: '1500'
+      secs:
+        description: seconds per city
+        default: '300'
+      pages:
+        description: max pages per city
+        default: '250'
+
+permissions:
+  contents: write
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - run: python3 tool/city_list.py ${{ inputs.cities }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cities
+          path: data/foia/cities_big.json
+
+  crawl:
+    needs: list
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: cities
+          path: data/foia
+      - run: pip install requests beautifulsoup4 lxml pdfplumber openpyxl
+      - name: Crawl
+        env:
+          CITIES_FILE: data/foia/cities_big.json
+          SHARD: ${{ matrix.shard }}
+          NSHARDS: '30'
+          SECS: ${{ inputs.secs }}
+          PAGES: ${{ inputs.pages }}
+          SUFFIX: _big_${{ matrix.shard }}
+        timeout-minutes: 330
+        run: python3 tool/city_files.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/city_files
+          git commit -m "City files (big): shard ${{ matrix.shard }}" || exit 0
+          for i in 1 2 3 4 5 6; do
+            git pull -q --rebase && git push && exit 0
+            sleep $((RANDOM % 20 + 5))
+          done
+          exit 1
