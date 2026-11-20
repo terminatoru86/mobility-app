@@ -1,0 +1,1449 @@
+{
+ "Louisville KY": {
+  "files": [],
+  "portals": {}
+ },
+ "Laredo TX": {
+  "files": [],
+  "portals": {}
+ },
+ "Charleston WV": {
+  "files": [
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2023-08/freeParking2023d.pdf",
+    "text": "View Free Parking Location Map (PDF)",
+    "file": "data/city_files/Charleston_WV/40cbcc_freeParking2023d.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2022-05/05-31-2022%20Press%20Release%20-%20Curbside%20Recycling%20Program%20Optimization.pdf",
+    "text": "here",
+    "file": "data/city_files/Charleston_WV/17c9e3_05-31-2022_20Press_20Release_20-_20Curbside_20Recycling_20Program_20Op",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2022-05/Recycling%20Poster%20-%2036x27.pdf",
+    "text": "View here",
+    "file": "data/city_files/Charleston_WV/51e948_Recycling_20Poster_20-_2036x27.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2022-05/Curbside%20Recycling%20FAQ.pdf",
+    "text": "View here",
+    "file": "data/city_files/Charleston_WV/482671_Curbside_20Recycling_20FAQ.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2019-11/recycling.pdf",
+    "text": "recycling.pdf",
+    "file": "data/city_files/Charleston_WV/08c7a3_recycling.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2021-02/2021%20Recycling%20Feasibility%20Study%20-%201.pdf",
+    "text": "2021 Recycling Feasibility Study - 1.pdf",
+    "file": "data/city_files/Charleston_WV/9c4210_2021_20Recycling_20Feasibility_20Study_20-_201.pdf",
+    "rows": 108,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2021-02/2021%20Recycling%20Feasibility%20Study%20-%202.pdf",
+    "text": "2021 Recycling Feasibility Study - 2.pdf",
+    "file": "data/city_files/Charleston_WV/179678_2021_20Recycling_20Feasibility_20Study_20-_202.pdf",
+    "rows": 545,
+    "bike_rows": 60
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2021-02/2021%20Recycling%20Feasibility%20Study%20-%203.pdf",
+    "text": "2021 Recycling Feasibility Study - 3.pdf",
+    "file": "data/city_files/Charleston_WV/a9c0b7_2021_20Recycling_20Feasibility_20Study_20-_203.pdf",
+    "rows": 444,
+    "bike_rows": 51
+   },
+   {
+    "url": "http://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2017-03/BikeTrailMasterPlan%20-%20LowRes.pdf",
+    "text": "Click Here for PDF",
+    "file": "data/city_files/Charleston_WV/edb61a_BikeTrailMasterPlan_20-_20LowRes.pdf",
+    "rows": 203,
+    "bike_rows": 86
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/documents/2020-09/Monthly%20parking%20rates%20in%20garages%20and%20lots.pdf",
+    "text": "📄 Parking Garage Rates and Locations (PDF)",
+    "file": "data/city_files/Charleston_WV/98a811_Monthly_20parking_20rates_20in_20garages_20and_20lots.pdf",
+    "rows": 6,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2023-08/newShort%20Term%20Parking%20Spaces%20-%20updated%2008.07.pdf",
+    "text": "📍 Short-Term Parking Locations (PDF)",
+    "file": "data/city_files/Charleston_WV/6ab549_newShort_20Term_20Parking_20Spaces_20-_20updated_2008.07.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2022-05/Recycling%20Poster%20-%2036x27_0.pdf",
+    "text": "Recycling Poster - 36x27_0.pdf",
+    "file": "data/city_files/Charleston_WV/6f733f_Recycling_20Poster_20-_2036x27_0.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/non-departmental-documents/2019-05/2015%20Recycling%20Study.pdf",
+    "text": "2015 Recycling Study.pdf",
+    "file": "data/city_files/Charleston_WV/4934d6_2015_20Recycling_20Study.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/documents/2025-10/Residential%20Parking%20Application%2010-1-2025.pdf",
+    "text": "Residential Parking Application 10-1-2025.pdf",
+    "file": "data/city_files/Charleston_WV/783771_Residential_20Parking_20Application_2010-1-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/documents/2024-08/Monthly%20parking%20rates%20in%20garages%20and%20lots.pdf",
+    "text": "Monthly parking rates in garages and lots.pdf",
+    "file": "data/city_files/Charleston_WV/029109_Monthly_20parking_20rates_20in_20garages_20and_20lots.pdf",
+    "rows": 6,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/documents/2023-11/Monthly%20Parking%20Application.pdf",
+    "text": "Monthly Parking Application.pdf",
+    "file": "data/city_files/Charleston_WV/11e9dc_Monthly_20Parking_20Application.pdf",
+    "rows": 113,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://www.charlestonwv.gov/sites/default/files/documents/2019-08/ParkingDisputeform2019.pdf",
+    "text": "ParkingDisputeform2019.pdf",
+    "file": "data/city_files/Charleston_WV/642bfa_ParkingDisputeform2019.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {}
+ },
+ "Franklin County": {
+  "files": [
+   {
+    "url": "https://www.franklincountyohio.gov/files/assets/public/v/1/aging/documents/home_repair_program_flyer.pdf",
+    "text": "View Minor Home Repair Flyer (PDF, 449KB)",
+    "file": "data/city_files/Franklin_County/c3aab7_home_repair_program_flyer.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {}
+ },
+ "San Francisco": {
+  "files": [],
+  "portals": {}
+ },
+ "Jefferson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Ramsey County": {
+  "files": [
+   {
+    "url": "https://assets.ramseycountymn.gov/files/2026-06/Ramsey_County_Public_Works_ADA_Transition_Plan_August_2025_final.pdf",
+    "text": "Public Works ADA Transition Plan",
+    "file": "data/city_files/Ramsey_County/5edb9a_Ramsey_County_Public_Works_ADA_Transition_Plan_August_2025_final.pdf",
+    "rows": 306,
+    "bike_rows": 37
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/119f4f51455a490b90745d58b598a779": "View park locations map",
+   "https://opendata.ramseycountymn.gov/stories/s/bey2-zv3x": "Golf financial data",
+   "http://opendata.ramseycountymn.gov/stories/s/qk94-4yn9": "Beach water quality data",
+   "https://opendata.ramseycountymn.gov/stories/s/4-3-Road-Conversions/88kz-s7ku/": "View road segments and screening data on Open Ramsey County",
+   "https://ramseygis.maps.arcgis.com/apps/dashboards/e9023063233f470d9ef338000cfa102f": "Interactive Transportation Improvement Program map.",
+   "https://storymaps.arcgis.com/stories/8719ce3e72d541b68c86507dcd739171": "Story maps of existing conditions",
+   "https://urldefense.com/v3/__https:/wsbeng.maps.arcgis.com/apps/instant/basic/index.html?appid=2d6a9cd88bf142e7895ae0aa21df19a8__;!!MUOOm337yvcSaHPc!BDOKaWuq3yk02RsXrAURzYvhoa56ze1tciJvBnE6hm6dInTo-AHtEXurnjIRp32hNzjAw3EcQWsVGg73wuweSK52Aew$": "interactive map of the Ramsey County's right of way"
+  }
+ },
+ "Tulare County": {
+  "files": [],
+  "portals": {}
+ },
+ "Placer County": {
+  "files": [],
+  "portals": {}
+ },
+ "Galveston County": {
+  "files": [],
+  "portals": {}
+ },
+ "Greensboro": {
+  "files": [],
+  "portals": {}
+ },
+ "Frederick County": {
+  "files": [
+   {
+    "url": "https://s3.amazonaws.com/mta-website-staging/mta-website-staging/files/Routes+Schedules/marc_brunswick-washington.pdf",
+    "text": "MARC Train",
+    "file": "data/city_files/Frederick_County/17788d_marc_brunswick-washington.pdf",
+    "rows": 45,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://s3.amazonaws.com/mta-website-staging/mta-website-staging/files/Routes+Schedules/204.pdf",
+    "text": "MTA 204 Commuter Bus (Frederick to College Park)",
+    "file": "data/city_files/Frederick_County/d34fc6_204.pdf",
+    "rows": 32,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://s3.amazonaws.com/mta-website-staging/mta-website-staging/files/Routes+Schedules/505.pdf",
+    "text": "MTA 505 Commuter Bus (Myersville to Shady Grove)",
+    "file": "data/city_files/Frederick_County/cf6c0d_505.pdf",
+    "rows": 44,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://s3.amazonaws.com/mta-website-staging/mta-website-staging/files/Routes+Schedules/515.pdf",
+    "text": "MTA 515 Commuter Bus (Frederick to Shady Grove)",
+    "file": "data/city_files/Frederick_County/504721_515.pdf",
+    "rows": 49,
+    "bike_rows": 4
+   }
+  ],
+  "portals": {
+   "https://gis-fcgmd.opendata.arcgis.com/": "Frederick County GIS Website",
+   "https://gis-fcgmd.opendata.arcgis.com/pages/how-do-i": "FAQ page",
+   "https://gis-fcgmd.opendata.arcgis.com/pages/addressing-road-naming": "Address Request Form",
+   "https://gis-fcgmd.opendata.arcgis.com/pages/download-data": "Download GIS Data",
+   "https://gis-fcgmd.opendata.arcgis.com/pages/map-products": "Download Map Products",
+   "https://gis-fcgmd.opendata.arcgis.com/pages/mapping-applications": "Online Mapping Applications"
+  }
+ },
+ "Henry County": {
+  "files": [],
+  "portals": {}
+ },
+ "Shelby County": {
+  "files": [],
+  "portals": {}
+ },
+ "Port St. Lucie": {
+  "files": [
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/parks-amp-recreation/documents/benefit-districts-area-map.pdf",
+    "text": "Benefit Districts (PDF, 2MB)",
+    "file": "data/city_files/Port_St_Lucie/250658_benefit-districts-area-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-a-copsl-assessment-areas-oct-25.pdf",
+    "text": "Map A: Assessment Areas (PDF, 180KB)",
+    "file": "data/city_files/Port_St_Lucie/39bc4c_map-a-copsl-assessment-areas-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-b-copsl-benefit-districts-oct-25.pdf",
+    "text": "Map B: Benefit Districts (PDF, 173KB)",
+    "file": "data/city_files/Port_St_Lucie/79b116_map-b-copsl-benefit-districts-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-c-copsl-msa-oct-25.pdf",
+    "text": "Map C: Mobility Study Area & Network (PDF, 181KB)",
+    "file": "data/city_files/Port_St_Lucie/36111a_map-c-copsl-msa-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-d-copsl-2050-origin-destination-evaluation-oct-25.pdf",
+    "text": "Map D: 2050 Origin Destination Evaluation (PDF, 133KB)",
+    "file": "data/city_files/Port_St_Lucie/578289_map-d-copsl-2050-origin-destination-evaluation-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-e-copsl-roadway-corridors-stp-oct-25.pdf",
+    "text": "Map E: Roadway Corridors - Short Term Plan (PDF, 260KB)",
+    "file": "data/city_files/Port_St_Lucie/53e541_map-e-copsl-roadway-corridors-stp-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-f-copsl-roadway-corridors-mtp-oct-25.pdf",
+    "text": "Map F: Roadway Corridors - Mid Term Plan (PDF, 257KB)",
+    "file": "data/city_files/Port_St_Lucie/6886b5_map-f-copsl-roadway-corridors-mtp-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-g-copsl-roadway-corridors-ltp-oct-25.pdf",
+    "text": "Map G: Roadway Corridors - Long Term Plan (PDF, 237KB)",
+    "file": "data/city_files/Port_St_Lucie/fb95fb_map-g-copsl-roadway-corridors-ltp-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-h-copsl-roadway-corridor-studies-plan-oct-25.pdf",
+    "text": "Map H: Roadway Corridor Studies (PDF, 244KB)",
+    "file": "data/city_files/Port_St_Lucie/4df2c9_map-h-copsl-roadway-corridor-studies-plan-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-j-copsl-developer-access-roads-oct-25.pdf",
+    "text": "Map J: Developer Access Roads & Developer Improvements (PDF, 267KB)",
+    "file": "data/city_files/Port_St_Lucie/077194_map-j-copsl-developer-access-roads-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-k-copsl-intersections-plan-oct-25.pdf",
+    "text": "Map K: Intersections Plan (PDF, 250KB)",
+    "file": "data/city_files/Port_St_Lucie/d497f1_map-k-copsl-intersections-plan-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-l-copsl-multimodal-plan-oct-25.pdf",
+    "text": "Map L: Multimodal Plan (PDF, 254KB)",
+    "file": "data/city_files/Port_St_Lucie/182900_map-l-copsl-multimodal-plan-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-m-copsl-transit-plan-oct-25.pdf",
+    "text": "Map M: Transit Circulator Plan (PDF, 252KB)",
+    "file": "data/city_files/Port_St_Lucie/67a06a_map-m-copsl-transit-plan-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-n-psl-vmt-by-area-oct-25.pdf",
+    "text": "Map N: Vehicle Miles of Travel By Area (PDF, 2MB)",
+    "file": "data/city_files/Port_St_Lucie/08fe36_map-n-psl-vmt-by-area-oct-25.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-corridors-developer-roads-map.pdf",
+    "text": "Corridors Developer Roads Map (PDF, 993KB)",
+    "file": "data/city_files/Port_St_Lucie/035d83_aug-25-corridors-developer-roads-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-intersections-map.pdf",
+    "text": "Intersections Map (PDF, 984KB)",
+    "file": "data/city_files/Port_St_Lucie/67228c_aug-25-intersections-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-roadway-corridors-long-term-map.pdf",
+    "text": "Long Term Corridors Map (PDF, 924KB)",
+    "file": "data/city_files/Port_St_Lucie/308783_aug-25-roadway-corridors-long-term-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-roadway-corridors-mid-term-map.pdf",
+    "text": "Mid-Term Corridors Map (PDF, 1018KB)",
+    "file": "data/city_files/Port_St_Lucie/a40915_aug-25-roadway-corridors-mid-term-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-multimodal-map.pdf",
+    "text": "Multimodal Map (PDF, 1MB)",
+    "file": "data/city_files/Port_St_Lucie/db1467_aug-25-multimodal-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-multimodal-network-map.pdf",
+    "text": "Multimodal Network Map (PDF, 1MB)",
+    "file": "data/city_files/Port_St_Lucie/ecd08b_aug-25-multimodal-network-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-roadway-corridors-short-term-map.pdf",
+    "text": "Short Term Corridor Map (PDF, 1016KB)",
+    "file": "data/city_files/Port_St_Lucie/69a90b_aug-25-roadway-corridors-short-term-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-transit-map.pdf",
+    "text": "Transit Map (PDF, 1MB)",
+    "file": "data/city_files/Port_St_Lucie/a0597c_aug-25-transit-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-transit-plan.pdf",
+    "text": "Transit Plan (PDF, 44KB)",
+    "file": "data/city_files/Port_St_Lucie/afae92_aug-25-transit-plan.pdf",
+    "rows": 29,
+    "bike_rows": 24
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/3/departments/planning-zoning/documents/mobility/august-04-city-council-workshop/corridors-developer-roads-map.pdf",
+    "text": "Corridors Developer Roads Map (PDF, 871KB)",
+    "file": "data/city_files/Port_St_Lucie/bd279e_corridors-developer-roads-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/planning-zoning/documents/mobility/august-04-city-council-workshop/transit-plan.pdf",
+    "text": "Transit Plan (PDF, 995KB)",
+    "file": "data/city_files/Port_St_Lucie/7e2bda_transit-plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=d837c1c81e3640c585be748ae7a1ebf6": "Find your pickup day",
+   "https://www.cityofpsl.com/Government/Your-City-Government/Departments/Information-Technology/Geographic-Information-Systems-GIS/Open-Data-GIS-Portal": "Open Data GIS Portal",
+   "https://pslgis.maps.arcgis.com/home/index.html": "View ArcGIS Portal",
+   "https://opendata-pslgis.hub.arcgis.com/": "View Open Data GIS Portal",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=225d3d08d6b54070af5c270862adbebc": "Main City Map",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=46176c2b749344159020d597a4b767e3": "City Demographics",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=5c69fa830869439897208022990e7b2c": "City Mapping Tool",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=397887d028a04aaa91e901feca2e6da1": "Council District Finder",
+   "https://pslgis.maps.arcgis.com/apps/dashboards/e9cc18c9b5ec463fac673f6c6f69fec9": "",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=34fdddb78a17441aaa8b134b74200d9d": "Building Permits",
+   "https://survey123.arcgis.com/share/ee543801d8d143ecb89d70d6250d6a2f?portalUrl=https://pslgis.maps.arcgis.com": "Fence Diagram Tool",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=6f81095d57b04f8f873a11ed1532728f": ""
+  }
+ },
+ "El Dorado County": {
+  "files": [
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/health-amp-wellbeing/parks/edt_handout_paved_20230418.pdf",
+    "text": "Map of El Dorado Trail with restrooms, trailheads, and labeled destinations (PDF, 5MB)",
+    "file": "data/city_files/El_Dorado_County/a53bde_edt_handout_paved_20230418.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/required-info-for-renting.pdf",
+    "text": "Required Information for Rentals (PDF, 198KB)",
+    "file": "data/city_files/El_Dorado_County/721753_required-info-for-renting.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/el-dorado-trail-fees-2026.pdf",
+    "text": "El Dorado Trail Fees (PDF, 198KB)",
+    "file": "data/city_files/El_Dorado_County/ba6ce7_el-dorado-trail-fees-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/park-rental-application_revised-2026.pdf",
+    "text": "Facility Rental Application (PDF, 417KB)",
+    "file": "data/city_files/El_Dorado_County/60603b_park-rental-application_revised-2026.pdf",
+    "rows": 23,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/dsp-pr-trail-closure-9.16.26.pdf",
+    "text": "News Release (PDF, 289KB)",
+    "file": "data/city_files/El_Dorado_County/44f54b_dsp-pr-trail-closure-9.16.26.pdf",
+    "rows": 29,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/forebay-park-open-house-flyer-12-5-26-2.pdf",
+    "text": "Download the Forebay Park Open House outreach flyer to help spread the word. (PDF, 2MB)",
+    "file": "data/city_files/El_Dorado_County/59840b_forebay-park-open-house-flyer-12-5-26-2.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/cal-fire-news-release-2.9.26.pdf",
+    "text": "CAL FIRE News Release (PDF, 447KB)",
+    "file": "data/city_files/El_Dorado_County/af4806_cal-fire-news-release-2.9.26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/el-dorado-trail-map.pdf",
+    "text": "El Dorado Trail Map (PDF, 5MB)",
+    "file": "data/city_files/El_Dorado_County/b02d3f_el-dorado-trail-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/approved-parks-2026-effective-12.1.25.pdf",
+    "text": "Fee Schedule (PDF, 440KB)",
+    "file": "data/city_files/El_Dorado_County/bdbe4f_approved-parks-2026-effective-12.1.25.pdf",
+    "rows": 80,
+    "bike_rows": 33
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/edc-park-policy.pdf",
+    "text": "Park Policy (PDF, 2MB)",
+    "file": "data/city_files/El_Dorado_County/9a3151_edc-park-policy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/bradford-park-fees-2026.pdf",
+    "text": "Park Fees (PDF, 200KB)",
+    "file": "data/city_files/El_Dorado_County/ac4f79_bradford-park-fees-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/forebay-park-fees-2026.pdf",
+    "text": "Rental Fees (PDF, 211KB)",
+    "file": "data/city_files/El_Dorado_County/33b580_forebay-park-fees-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/hlp-parking-pass-application-2026-v4.pdf",
+    "text": "2026 Parking Pass Application (PDF, 156KB)",
+    "file": "data/city_files/El_Dorado_County/fa2e98_hlp-parking-pass-application-2026-v4.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/edc-park-rules-regs.pdf",
+    "text": "Park Rules and Regulations (PDF, 376KB)",
+    "file": "data/city_files/El_Dorado_County/f8b7ce_edc-park-rules-regs.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/ball-field-lighting.pdf",
+    "text": "Ball Field Lighting (PDF, 187KB)",
+    "file": "data/city_files/El_Dorado_County/f90de5_ball-field-lighting.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/hlp-fees-2026.pdf",
+    "text": "Rental, Parking, and River Fees (PDF, 231KB)",
+    "file": "data/city_files/El_Dorado_County/d4b7ad_hlp-fees-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/henningsen-lotus-loop.pdf",
+    "text": "Henningsen Lotus Walking Loop (PDF, 186KB)",
+    "file": "data/city_files/El_Dorado_County/0387f0_henningsen-lotus-loop.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/health-amp-wellbeing/parks/hlp_map.pdf",
+    "text": "Henningsen Lotus Park Map (PDF, 306KB)",
+    "file": "data/city_files/El_Dorado_County/9e4550_hlp_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/2/documents/health-amp-wellbeing/parks/goldmap.pdf",
+    "text": "Check Out Our Interpretive Map! (PDF, 866KB)",
+    "file": "data/city_files/El_Dorado_County/85df0e_goldmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/fall-softball-2026.pdf",
+    "text": "Softball Field (PDF, 175KB)",
+    "file": "data/city_files/El_Dorado_County/e30fee_fall-softball-2026.pdf",
+    "rows": 19,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/fall-baseball-2026.pdf",
+    "text": "Baseball Field (PDF, 173KB)",
+    "file": "data/city_files/El_Dorado_County/ae91dc_fall-baseball-2026.pdf",
+    "rows": 19,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/fall-soccer-2026.pdf",
+    "text": "Soccer Field (PDF, 171KB)",
+    "file": "data/city_files/El_Dorado_County/04c5be_fall-soccer-2026.pdf",
+    "rows": 19,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/health-amp-wellbeing/parks/hlp-concept-plan-final-2014-06-30.pdf",
+    "text": "2014 Henningsen Lotus Park Conceptual Master Plan (PDF, 7MB)",
+    "file": "data/city_files/El_Dorado_County/81386f_hlp-concept-plan-final-2014-06-30.pdf",
+    "rows": 366,
+    "bike_rows": 59
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/pioneer-park-fees-2026.pdf",
+    "text": "Rental Fees (PDF, 225KB)",
+    "file": "data/city_files/El_Dorado_County/74ecfd_pioneer-park-fees-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/parks-amp-trails/forebay-park-renovation-update-presentation-8-21-24.pdf",
+    "text": "presentation slide deck (PDF, 4MB)",
+    "file": "data/city_files/El_Dorado_County/b1938f_forebay-park-renovation-update-presentation-8-21-24.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://eldoradocounty.maps.arcgis.com/apps/instant/lookup/index.html?appid=8bbf66326444413fab88441928fab05b": "District Map/Find Your Supervisor"
+  }
+ },
+ "Tempe": {
+  "files": [],
+  "portals": {}
+ },
+ "Pitt County": {
+  "files": [],
+  "portals": {}
+ },
+ "Catawba County": {
+  "files": [
+   {
+    "url": "https://gis.catawbacountync.gov/DataWarehouse/csv/CATCO_Cemeteries.csv",
+    "text": "download",
+    "file": "data/city_files/Catawba_County/e59bc1_CATCO_Cemeteries.csv",
+    "rows": 146,
+    "bike_rows": 124
+   },
+   {
+    "url": "https://gis.catawbacountync.gov/DataWarehouse/shp/catco_cemeteries.zip",
+    "text": "shape file",
+    "file": "data/city_files/Catawba_County/494efd_catco_cemeteries.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://gis.catawbacountync.gov/DataWarehouse/kmz/catco_Cemeteries.kmz",
+    "text": "Google Earth",
+    "file": "data/city_files/Catawba_County/2d7bcd_catco_Cemeteries.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.catawbacountync.gov/DataWarehouse/csv/CATCO_HistoricalSites.csv",
+    "text": "download",
+    "file": "data/city_files/Catawba_County/2ac3f9_CATCO_HistoricalSites.csv",
+    "rows": 42,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://gis.catawbacountync.gov/DataWarehouse/shp/CATCO_HistoricalSites.zip",
+    "text": "shape file",
+    "file": "data/city_files/Catawba_County/f5fc3c_CATCO_HistoricalSites.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.catawbacountync.gov/DataWarehouse/kmz/CATCO_HistoricalSites.kmz",
+    "text": "Google Earth",
+    "file": "data/city_files/Catawba_County/0521ef_CATCO_HistoricalSites.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://catawbacountync.gov/site/assets/files/11831/bakers_mtn_trail_map_brochure_legal_size_feb2025.pdf",
+    "text": "Download Printable PDF Trail Map",
+    "file": "data/city_files/Catawba_County/b07a22_bakers_mtn_trail_map_brochure_legal_size_feb2025.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://catawbacountync.gov/site/assets/files/10606/mcp_trail_map_brochure_legal_size_mar2024.pdf",
+    "text": "Download Printable PDF Map",
+    "file": "data/city_files/Catawba_County/a41e89_mcp_trail_map_brochure_legal_size_mar2024.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://catawbacountync.gov/site/assets/files/10607/riverbend_trail_map_brochure_legal_size_mar2024.pdf",
+    "text": "Download Printable PDF Map",
+    "file": "data/city_files/Catawba_County/7cdb2a_riverbend_trail_map_brochure_legal_size_mar2024.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://catawbacountync.gov/site/assets/files/10407/online_map_file_v2_merge.pdf",
+    "text": "HERE",
+    "file": "data/city_files/Catawba_County/e27c82_online_map_file_v2_merge.pdf",
+    "rows": 130,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://catawbacountync.gov/site/assets/files/11258/st__stephens_trail_map_brochure_8-5x11_jun2025.pdf",
+    "text": "Park Trail Map",
+    "file": "data/city_files/Catawba_County/9d44ba_st__stephens_trail_map_brochure_8-5x11_jun2025.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.catawbacountync.gov/site/assets/files/10606/mcp_trail_map_brochure_legal_size_mar2024.pdf",
+    "text": "Download Printable PDF Map",
+    "file": "data/city_files/Catawba_County/f41d7a_mcp_trail_map_brochure_legal_size_mar2024.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.catawbacountync.gov/site/assets/files/2490/final_map.pdf",
+    "text": "Map",
+    "file": "data/city_files/Catawba_County/604e59_final_map.pdf",
+    "rows": 3,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.catawbacountync.gov/site/assets/files/2490/ferc_recreational_amenities_map.pdf",
+    "text": "Recreational Map",
+    "file": "data/city_files/Catawba_County/867a0f_ferc_recreational_amenities_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://catawbacountync.gov/site/assets/files/11919/recycling_guide_new_2026.pdf",
+    "text": "Residential Recycling/Solidwaste Services Guide",
+    "file": "data/city_files/Catawba_County/ecdce1_recycling_guide_new_2026.pdf",
+    "rows": 17,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://catawbacountync.gov/site/assets/files/5815/commercial_recycling_hard-to-recycle_info.pdf",
+    "text": "Commercial Recycling Directory",
+    "file": "data/city_files/Catawba_County/5d2cc8_commercial_recycling_hard-to-recycle_info.pdf",
+    "rows": 33,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://catawbacountync.gov/site/assets/files/3066/2023_congressional-10th_district.pdf",
+    "text": "NC Map",
+    "file": "data/city_files/Catawba_County/9c847b_2023_congressional-10th_district.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://catawbacountync.gov/site/assets/files/3066/2023_nc_house_map_-_state.pdf",
+    "text": "NC Map",
+    "file": "data/city_files/Catawba_County/56480d_2023_nc_house_map_-_state.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://catawbacountync.gov/site/assets/files/3066/2023_senate_district_45.pdf",
+    "text": "NC Map",
+    "file": "data/city_files/Catawba_County/13a476_2023_senate_district_45.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://gis.catawbacountync.gov/maps/County_Roads_11x17.pdf",
+    "text": "Catawba County",
+    "file": "data/city_files/Catawba_County/e547b1_County_Roads_11x17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://gis.catawbacountync.gov/maps/Fire_Districts_11x17.pdf",
+    "text": "Fire Districts",
+    "file": "data/city_files/Catawba_County/552702_Fire_Districts_11x17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.catawbacountync.gov": "Geospatial Information Services(GIS)",
+   "http://gis.catawbacountync.gov/parcel/": "Real Estate Maps/Reports",
+   "http://gis.catawbacountync.gov/parcel_analysis/": "Real Estate Analysis",
+   "https://gis.catawbacountync.gov/address/": "Regional Address Finder",
+   "https://gis.catawbacountync.gov/parcel/": "Online Parcel Report",
+   "http://gis.catawbacountync.gov": "Catawba County GIS",
+   "http://gis.catawbacountync.gov/misc/precinct_maps.html": "Detailed Precinct Maps",
+   "http://gis.catawbacountync.gov/": "Catawba County GIS department",
+   "http://gis.catawbacountync.gov/nomap/": "Real Estate Reports",
+   "http://gis.catawbacountync.gov/address/": "Address Finder - Regional",
+   "http://gis.catawbacountync.gov/extract/extract_data.html": "Data Extraction and Download",
+   "http://gis.catawbacountync.gov/nomap/deed_to_parcel.html": "Search for Parcels by Deed"
+  }
+ },
+ "Cumberland County": {
+  "files": [],
+  "portals": {}
+ },
+ "Coweta County": {
+  "files": [],
+  "portals": {
+   "https://coweta-county-gis-cowetamaps.hub.arcgis.com/": "Coweta County GIS Hub",
+   "https://cowetamaps.maps.arcgis.com/apps/instant/lookup/index.html?appid=8c53176d556444ab8f94183469007261": "Commission District",
+   "https://experience.arcgis.com/experience/274ef3c2f7c44131987b2aabd33c8135": "Coweta County and City of Newnan Active Projects",
+   "https://experience.arcgis.com/experience/9ea2fbd07236424196d9ca1b2b3ab808/": "Georgia House Districts",
+   "https://experience.arcgis.com/experience/3e6852de016d49e18529af258bb48f34/": "New Developments",
+   "https://experience.arcgis.com/experience/09f565c730bb444897677c6a3e7e694b/": "Voting Precincts",
+   "https://experience.arcgis.com/experience/e8babf121f09469da6b711b18312bbca/": "LDGS / Zoning - Reference Map Land Development Guidance System",
+   "https://experience.arcgis.com/experience/afda19456ddb4238b50ed4822dbe8c5a": "Water and Sewage Authority Map",
+   "https://cowetamaps.maps.arcgis.com/apps/instant/nearby/index.html?appid=b14ad9a7a31f457d90057c5215db418b": "List of Compactor Site Locations & Hours"
+  }
+ },
+ "Elizabeth": {
+  "files": [],
+  "portals": {}
+ },
+ "Black Hawk County": {
+  "files": [],
+  "portals": {}
+ },
+ "Abilene": {
+  "files": [],
+  "portals": {}
+ },
+ "Gallatin County": {
+  "files": [],
+  "portals": {}
+ },
+ "Waterbury": {
+  "files": [],
+  "portals": {
+   "http://gis.waterburyct.org/GIS/index.asp": "GIS Maps"
+  }
+ },
+ "Everett": {
+  "files": [],
+  "portals": {}
+ },
+ "Green Bay": {
+  "files": [],
+  "portals": {}
+ },
+ "Rio Rancho": {
+  "files": [],
+  "portals": {
+   "https://gis.rrnm.gov/riorancho/": "",
+   "https://experience.arcgis.com/experience/cfc3fdca19d74c5ca5d940fadfb86230/": "",
+   "https://storymaps.arcgis.com/stories/edf9926481b740d0af8d4c2b1428184e": "",
+   "https://storymaps.arcgis.com/stories/4cd4eea8e1874a2a8c888b348d1cd7fa": "",
+   "https://experience.arcgis.com/experience/15d3be5a66644cb8aa797b11a914895d": "",
+   "https://experience.arcgis.com/experience/dc9492a2e9b04a9d8f7b82c47326f559": "",
+   "https://experience.arcgis.com/experience/799ae8d625ef4ffeb0f74d418d5647c3/?views=Home-Page": "",
+   "https://experience.arcgis.com/experience/8b7ef7a69df240d8bbc7cc5e0fe19f18/": "",
+   "http://corrgis.maps.arcgis.com/apps/webappviewer/index.html?id=8cb3724f3f59400fbf510b956fff04fd": "",
+   "https://storymaps.arcgis.com/stories/ea112def1d0c4aa7b023eb23a945167a": "",
+   "https://experience.arcgis.com/experience/093a34c3b69d407c9b3f0f1347ea2556/": "",
+   "https://sc-assessor.maps.arcgis.com/apps/webappviewer/index.html?id=328f5631f8ee4aa58537a757c09ae4c1": ""
+  }
+ },
+ "Laramie County": {
+  "files": [],
+  "portals": {}
+ },
+ "Marshall County": {
+  "files": [],
+  "portals": {}
+ },
+ "Lawrence": {
+  "files": [],
+  "portals": {}
+ },
+ "Plantation": {
+  "files": [],
+  "portals": {}
+ },
+ "Guaynabo": {
+  "files": [],
+  "portals": {}
+ },
+ "Clarkstown": {
+  "files": [
+   {
+    "url": "https://www.clarkstown.gov/wp-content/uploads/2021/10/Clarkstown-Official-Map.pdf",
+    "text": "Official Town Map",
+    "file": "data/city_files/Clarkstown/b235cc_Clarkstown-Official-Map.pdf",
+    "rows": 16,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.clarkstown.gov/wp-content/uploads/2022/11/Zoning-Map11102020.pdf",
+    "text": "Town Zoning Map",
+    "file": "data/city_files/Clarkstown/67bee7_Zoning-Map11102020.pdf",
+    "rows": 60,
+    "bike_rows": 15
+   }
+  ],
+  "portals": {}
+ },
+ "Springdale": {
+  "files": [],
+  "portals": {}
+ },
+ "Talladega County": {
+  "files": [
+   {
+    "url": "https://talladegacountyal.org/Government/Commissioners/Talladega CC District map 2024.pdf",
+    "text": "Commission District Map",
+    "file": "data/city_files/Talladega_County/5a813f_Talladega_CC_District_map_2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talladegacountyal.org/Departments/Voter Reg/District Maps New/CountyBOE.pdf?t=202405210953100",
+    "text": "County Board of Education Districts",
+    "file": "data/city_files/Talladega_County/bafd2d_CountyBOE.pdf",
+    "rows": 12,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://talladegacountyal.org/Departments/Voter Reg/District Maps New/Precincts.pdf?t=202405210953120",
+    "text": "Voting Precincts",
+    "file": "data/city_files/Talladega_County/c5ce59_Precincts.pdf",
+    "rows": 17,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://talladegacountyal.org/Departments/Voter Reg/District Maps New/House.pdf?t=202405210953110",
+    "text": "State House Districts",
+    "file": "data/city_files/Talladega_County/116589_House.pdf",
+    "rows": 19,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://talladegacountyal.org/Departments/Voter Reg/District Maps New/Senate.pdf?t=202405210953130",
+    "text": "State Senate Districts",
+    "file": "data/city_files/Talladega_County/ce78d7_Senate.pdf",
+    "rows": 17,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://talladegacountyal.org/Departments/Voter Reg/District Maps New/County_Commission.pdf?t=202405210953100",
+    "text": "County Commission Districts",
+    "file": "data/city_files/Talladega_County/525818_County_Commission.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://talladegacountyal.org/Departments/Voter Reg/District Maps New/StateBOE.pdf?t=202405210953130",
+    "text": "State Board of Education",
+    "file": "data/city_files/Talladega_County/61bf35_StateBOE.pdf",
+    "rows": 19,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://talladegacountyal.org/Departments/Voter Reg/District Maps/Congressional Plan 3.pdf?t=202405210953100",
+    "text": "Congressional Statewide",
+    "file": "data/city_files/Talladega_County/5f2572_Congressional_Plan_3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://talladegacountyal.org/document_center/Revenue/Licensing/MVR-32-6-230.pdf?t=202405210953120",
+    "text": "Application for Disability Access Parking Privileges (Form: MVR 32-6-230)",
+    "file": "data/city_files/Talladega_County/9f49b5_MVR-32-6-230.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://isv.kcsgis.com/al.talladega_revenue/": "GIS Mapping",
+   "https://isv.kcsgis.com/al.talladega_revenue/": "Online Mapping"
+  }
+ },
+ "New Rochelle": {
+  "files": [
+   {
+    "url": "https://dmv.ny.gov/forms/mv6641.pdf",
+    "text": "Handicap Parking Permit Application",
+    "file": "data/city_files/New_Rochelle/7588eb_mv6641.pdf",
+    "rows": 15,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://newrochelleny.com/research/stats/statistics/open-data.htm": "Open data"
+  }
+ },
+ "South Jordan": {
+  "files": [],
+  "portals": {
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=94035f2d08ff4889841b59dfaf8b9d43": "interactive map of South Jordan Trails"
+  }
+ },
+ "Pawtucket": {
+  "files": [],
+  "portals": {}
+ },
+ "Castle Rock": {
+  "files": [],
+  "portals": {}
+ },
+ "Redondo Beach": {
+  "files": [
+   {
+    "url": "https://redondo.org/Police/PARKING/Annual Parking Permit User Guide.pdf?t=202610061814580",
+    "text": "Click Here to Access User Guide",
+    "file": "data/city_files/Redondo_Beach/f176ac_Annual_Parking_Permit_User_Guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Mayor & City Council/Documents/Mayor & City Council/District Maps/AllDistricts.pdf?t=202602191014080",
+    "text": "View the City Council District Map in PDF",
+    "file": "data/city_files/Redondo_Beach/aaccba_AllDistricts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Mayor & City Council/Documents/Mayor & City Council/District Maps/District1.pdf?t=202602191014130",
+    "text": "District 1",
+    "file": "data/city_files/Redondo_Beach/7d8df4_District1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Mayor & City Council/Documents/Mayor & City Council/District Maps/District2.pdf?t=202602191014170",
+    "text": "District 2",
+    "file": "data/city_files/Redondo_Beach/c237db_District2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Mayor & City Council/Documents/Mayor & City Council/District Maps/District3.pdf?t=202602191014200",
+    "text": "District 3",
+    "file": "data/city_files/Redondo_Beach/34746e_District3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Mayor & City Council/Documents/Mayor & City Council/District Maps/District4.pdf?t=202602191014240",
+    "text": "District 4",
+    "file": "data/city_files/Redondo_Beach/a17ea3_District4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Mayor & City Council/Documents/Mayor & City Council/District Maps/District5.pdf?t=202602191014280",
+    "text": "District 5",
+    "file": "data/city_files/Redondo_Beach/623e31_District5.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Waterfront & Economic Development/[WED] Public Amenities Plan for King Harbor.pdf?t=202604301948440",
+    "text": "Click here to learn about the King Harbor Amenities Plan",
+    "file": "data/city_files/Redondo_Beach/ecd8f3__WED_Public_Amenities_Plan_for_King_Harbor.pdf",
+    "rows": 54,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://redondo.org/Public Works/Documents/Public Works/Engineering Services/Traffic Engineering/Biking & Micromobility/LTN Launch Flyer 102026.pdf?t=202610151518260",
+    "text": "Redondo Beach LTN Launch Event Flyer",
+    "file": "data/city_files/Redondo_Beach/f5d054_LTN_Launch_Flyer_102026.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Community Development/Planning/PLANredondo/PLANredondo/Documents And Reference Materials/South Bay Bicycle Master Plan_August 2011.pdf?t=202608281146390",
+    "text": "South Bay Bicycle Master Plan",
+    "file": "data/city_files/Redondo_Beach/aa4976_South_Bay_Bicycle_Master_Plan_August_2011.pdf",
+    "rows": 115,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://redondo.org/Public Works/Documents/Public Works/Engineering Services/Traffic Engineering/Biking & Micromobility/LTN Handout Redondo Beach.pdf?t=202608281311380",
+    "text": "Local Travel Network in Redondo Beach",
+    "file": "data/city_files/Redondo_Beach/dfc7b6_LTN_Handout_Redondo_Beach.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Public Works/Documents/Public Works/Engineering Services/Traffic Engineering/Biking & Micromobility/Redondo Beach LTN Maps.pdf?t=202608281408040",
+    "text": "Redondo Beach LTN Maps",
+    "file": "data/city_files/Redondo_Beach/28495d_Redondo_Beach_LTN_Maps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Public Works/Documents/Public Works/Solid Waste And Recycling/Solid Waste Permit Application/solid_waste_permit_application.pdf",
+    "text": "Solid Waste Permit Application",
+    "file": "data/city_files/Redondo_Beach/c806e9_solid_waste_permit_application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Public Works/Documents/Public Works/Solid Waste And Recycling/Quarterly Tonnage Report/quarterly_tonnage_report.pdf",
+    "text": "Quarterly Tonnage Report",
+    "file": "data/city_files/Redondo_Beach/059fb1_quarterly_tonnage_report.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://redondo.org/Financial Services/Garage Sale Affidavit Fillable.pdf?t=202605051454490",
+    "text": "Garage Sale Affidavit",
+    "file": "data/city_files/Redondo_Beach/ce175a_Garage_Sale_Affidavit_Fillable.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Waterfront & Economic Development/Boater Safety Handout.pdf?t=202606291753460",
+    "text": "Click here to view the Boater Alert Safety Notice",
+    "file": "data/city_files/Redondo_Beach/ce54a2_Boater_Safety_Handout.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.redondo.org/Waterfront & Economic Development/Documents/Waterfront And Economic Development/Waterfront And Economic Development/Economic Development/Opening A Business In Redondo Beach - Navigating The Permit Process/Business License Application with SB 205 Compliance Form.pdf?t=202602181804150",
+    "text": "license",
+    "file": "data/city_files/Redondo_Beach/a89bfc_Business_License_Application_with_SB_205_Compliance_Form.pdf",
+    "rows": 27,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://redondo.org/Police/Documents/Police/Services/Parking Enforcement/Oversized Vehicles/Oversized Vehicle Application Fillable.pdf?t=202602191841040",
+    "text": "Oversized Vehicle Registration Application",
+    "file": "data/city_files/Redondo_Beach/80db5a_Oversized_Vehicle_Application_Fillable.pdf",
+    "rows": 17,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://redondo.org/Police/Documents/Police/Services/Parking Enforcement/Oversized Vehicles/Oversized Vehicle-trailer RESIDENT registration app 05-2016 template.pdf?t=202602191841090",
+    "text": "Oversized Vehicle Registration Application",
+    "file": "data/city_files/Redondo_Beach/3191b3_Oversized_Vehicle-trailer_RESIDENT_registration_app_05-2016_template.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Waterfront & Economic Development/[WED]_2026 Pier Entertainer Permit PACKET 6.25.26.pdf?t=202607101824440",
+    "text": "Click here to view the Pier Entertainer Form",
+    "file": "data/city_files/Redondo_Beach/5e21d6__WED__2026_Pier_Entertainer_Permit_PACKET_6.25.26.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://redondo.org/Waterfront & Economic Development/[WED] 2025-05-05_FINAL Boat Launch Ramp Demand Study.pdf?t=202602191020280",
+    "text": "Click here to view the Boat Launch Demand Study (PDF)",
+    "file": "data/city_files/Redondo_Beach/7906e4__WED_2025-05-05_FINAL_Boat_Launch_Ramp_Demand_Study.pdf",
+    "rows": 108,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://redondo.org/Waterfront & Economic Development/[WED] 2025-05-08_FINAL Redondo Harbor Coastal Hazard Report.pdf?t=202602191020200",
+    "text": "Click here to view the Coastal Criteria and Hazards Analysis (PDF)",
+    "file": "data/city_files/Redondo_Beach/4b8b5b__WED_2025-05-08_FINAL_Redondo_Harbor_Coastal_Hazard_Report.pdf",
+    "rows": 155,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://redondo.org/Waterfront & Economic Development/[WED] STC_RB Boat Launch Report_2025-09-12.pdf?t=202602191015390",
+    "text": "Click here to view the Transportation Impact and Parking Study (PDF) - Revised 9/12/25*",
+    "file": "data/city_files/Redondo_Beach/5fc303__WED_STC_RB_Boat_Launch_Report_2025-09-12.pdf",
+    "rows": 776,
+    "bike_rows": 148
+   },
+   {
+    "url": "https://redondo.org/Waterfront & Economic Development/[WED] 25.07.09_STC_RBBL_VMT Screening Memo.pdf?t=202602191020100",
+    "text": "Click here to view the Vehicle Miles Traveled (VMT) Screening Evaluation Memorandum (PDF)",
+    "file": "data/city_files/Redondo_Beach/c311a4__WED_25.07.09_STC_RBBL_VMT_Screening_Memo.pdf",
+    "rows": 125,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://redondo.org/Waterfront & Economic Development/[WED] 250923_King Harbor_Public Outreach_Presentation Slides_With Survey Result 2.pdf?t=202602191020000",
+    "text": "Click here to view the workshop presentation slides",
+    "file": "data/city_files/Redondo_Beach/f80d94__WED_250923_King_Harbor_Public_Outreach_Presentation_Slides_With_Surve",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://redondobeachgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=fc1ea321c3ec4edbbf77cc02b734f22b": "Interactive Street Sweeping Map.",
+   "https://redondobeachgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=2bac9ed7a8a34fbc8801a51df3ff5232": "View larger map",
+   "https://redondobeachgis.maps.arcgis.com/apps/dashboards/6c1a620190d040168eff642e4aa47789": "Capital Improvement Projects Dashboard",
+   "https://redondobeachgis.maps.arcgis.com/apps/mapviewer/index.html?webmap=26676a0b7e2a48038c1f2eeba05dcc4d": "Check out the Redondo Beach Micromobility Network and Parking Map to see the City's bike lane, LTN/bike route, and bike ",
+   "https://experience.arcgis.com/experience/eaf7bd3e9814439781f1b4d9f0a75d53": "PARKS LOCATOR PAGE",
+   "https://redondobeachgis.maps.arcgis.com/home/index.html": "GIS Mapping Portal",
+   "https://redondobeachgis.maps.arcgis.com/apps/PublicInformation/index.html?appid=56b9e46bf9014bf08684b8e53a4658cb": "zoning map",
+   "https://redondobeachgis.maps.arcgis.com/apps/instant/gallery/index.html?appid=65bd376b022b409b8b33fd46699927ea&sortField=modified&sortOrder=asc&view=grid": "Click here to visit the Planning Apps Page and access our Zoning Viewer"
+  }
+ },
+ "Gaithersburg": {
+  "files": [],
+  "portals": {}
+ },
+ "Ankeny": {
+  "files": [],
+  "portals": {
+   "https://dmmdatahub-transparency.connect.socrata.com/": "View the Law Enforcement Response Map."
+  }
+ },
+ "Delray Beach": {
+  "files": [],
+  "portals": {}
+ },
+ "Kershaw County": {
+  "files": [],
+  "portals": {}
+ },
+ "San Benito County": {
+  "files": [],
+  "portals": {}
+ },
+ "Montebello": {
+  "files": [
+   {
+    "url": "https://cityofmontebello.hosted2.civiclive.com/UserFiles/Servers/Server_58672/File/Departments/Transportation/Maps%20and%20Schedules/9-20-26%20Schedule%20Montebello%20Bus%20Lines.pdf",
+    "text": "Fall/Winter 2026 bus schedule, English and Spanish (PDF)",
+    "file": "data/city_files/Montebello/f2214f_9-20-26_20Schedule_20Montebello_20Bus_20Lines.pdf",
+    "rows": 501,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofmontebello.hosted2.civiclive.com/UserFiles/Servers/Server_58672/File/Departments/Planning%20&%20Comm.%20Dev/Code%20Enforcement%20Division/Adjudication%20Form%20(Parking%20Appeal)%20Blank.pdf",
+    "text": "in writing by mail",
+    "file": "data/city_files/Montebello/11f6bd_Adjudication_20Form_20_Parking_20Appeal_20Blank.pdf",
+    "rows": 32,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmontebello.com/UserFiles/Servers/Server_58672/File/Departments/Planning & Comm. Dev/Code Enforcement Division/Forms and Publications/2024 Oversized Vehicle.Trailer Registration Application.pdf",
+    "text": "",
+    "file": "data/city_files/Montebello/9dd8dd_2024_Oversized_Vehicle.Trailer_Registration_Application.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofmontebello.hosted2.civiclive.com/UserFiles/Servers/Server_58672/File/Departments/Planning%20&%20Comm.%20Dev/Code%20Enforcement%20Division/Forms%20and%20Publications/2024%20Oversized%20Vehicle.Trailer%20Registration%20Application.pdf",
+    "text": "Oversized Vehicle/Trailer Registration Application",
+    "file": "data/city_files/Montebello/2e2107_2024_20Oversized_20Vehicle.Trailer_20Registration_20Application.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofmontebello.hosted2.civiclive.com/UserFiles/Servers/Server_58672/File/Departments/Planning%20&%20Comm.%20Dev/Code%20Enforcement%20Division/Preferential%20Parking%20Permit%20Process%20-%20Single%20Household%20or%20Multi-Dwelling%20Unit.pdf",
+    "text": "click here",
+    "file": "data/city_files/Montebello/33b4d7_Preferential_20Parking_20Permit_20Process_20-_20Single_20Household_20o",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmontebello.hosted2.civiclive.com/UserFiles/Servers/Server_58672/File/Departments/Planning%20&%20Comm.%20Dev/Preferential%20Parking%20Permit%20Process%20-%20Single%20Household%20or%20Multi-Dwelling%20Unit.pdf",
+    "text": "click here.",
+    "file": "data/city_files/Montebello/d7bb80_Preferential_20Parking_20Permit_20Process_20-_20Single_20Household_20o",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmontebello.com/UserFiles/Servers/Server_58672/File/Departments/Transportation/Maps and Schedules/Dial a Taxi/DAT Application Updated 2022.pdf",
+    "text": "DAT Application",
+    "file": "data/city_files/Montebello/949537_DAT_Application_Updated_2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmontebello.com/UserFiles/Servers/Server_58672/File/Departments/Transportation/Maps and Schedules/Dial a Taxi/Physician's Form for Dial-A-Taxi.pdf",
+    "text": "Physician's Form",
+    "file": "data/city_files/Montebello/2c0a80_Physician_s_Form_for_Dial-A-Taxi.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmontebello.com/UserFiles/Servers/Server_58672/File/Departments/Transportation/Maps and Schedules/Montebello Shuttle/Montebello Link Reservation.pdf",
+    "text": "Montebello Link Reservation PDF",
+    "file": "data/city_files/Montebello/6527a5_Montebello_Link_Reservation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Irvington": {
+  "files": [],
+  "portals": {}
+ },
+ "Owensboro": {
+  "files": [
+   {
+    "url": "https://owensboro.org/LeafCollectionZoneMapUpdate_102926v2.pdf?t=202611061424050",
+    "text": "View Full Leaf Collection Zone Map",
+    "file": "data/city_files/Owensboro/44a8d6_LeafCollectionZoneMapUpdate_102926v2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/ Transit/Paratransit Service/GRITS-Application.pdf?t=202506131550410",
+    "text": "GRITS Application",
+    "file": "data/city_files/Owensboro/cb76f6_GRITS-Application.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://owensboro.org/Paratransit Brouchure Redo.pdf?t=202507161141440",
+    "text": "Paratransit Guidelines",
+    "file": "data/city_files/Owensboro/cb98c7_Paratransit_Brouchure_Redo.pdf",
+    "rows": 16,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/Street/2025_2026 City Snow Routes_ALL.pdf?t=202602091300400",
+    "text": "Snow Route Map - All Routes",
+    "file": "data/city_files/Owensboro/70702d_2025_2026_City_Snow_Routes_ALL.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/Street/2025_2026 City Snow Routes_BLUE.pdf?t=202512021159350",
+    "text": "Snow Route Map - Blue Route",
+    "file": "data/city_files/Owensboro/730f14_2025_2026_City_Snow_Routes_BLUE.pdf",
+    "rows": 32,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/Street/2025_2026 CitySnowRoute_GREEN.pdf?t=202512021200110",
+    "text": "Snow Route Map - Green Route",
+    "file": "data/city_files/Owensboro/ed8fbc_2025_2026_CitySnowRoute_GREEN.pdf",
+    "rows": 28,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/Street/2025_2026 CitySnowRoute_ORANGE.pdf?t=202512021200500",
+    "text": "Snow Route Map - Orange Route",
+    "file": "data/city_files/Owensboro/a12537_2025_2026_CitySnowRoute_ORANGE.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/Street/2025_2026 CitySnowRoute_PINK.pdf?t=202512021201260",
+    "text": "Snow Route Map - Pink Route",
+    "file": "data/city_files/Owensboro/0d6d1b_2025_2026_CitySnowRoute_PINK.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/Street/2025_2026 CitySnowRoute_PURPLE.pdf?t=202512021202040",
+    "text": "Snow Route Map - Purple Route",
+    "file": "data/city_files/Owensboro/91cf6e_2025_2026_CitySnowRoute_PURPLE.pdf",
+    "rows": 26,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/Street/2025_2026 CitySnowRoute_YELLOW.pdf?t=202512021202340",
+    "text": "Snow Route Map - Yellow Route",
+    "file": "data/city_files/Owensboro/1057f4_2025_2026_CitySnowRoute_YELLOW.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/Engineering/MS4 Boundary Map.pdf?t=202603270913200",
+    "text": "MS4 Boundary Map",
+    "file": "data/city_files/Owensboro/ee3a17_MS4_Boundary_Map.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/Engineering/KYTC Maintained Routes/37e2647d193791503716a9ee1b623cb4.pdf?t=202503120958540",
+    "text": "KYTC MAINTAINED ROUTES",
+    "file": "data/city_files/Owensboro/b305e7_37e2647d193791503716a9ee1b623cb4.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/Engineering/FAQs/Snow Routes City of Owensboro.pdf?t=202503120958590",
+    "text": "Click here",
+    "file": "data/city_files/Owensboro/c28e29_Snow_Routes_City_of_Owensboro.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/ Transit/Forms and Documents/List of Stops (English).pdf?t=202503271511110",
+    "text": "Bus Schedule",
+    "file": "data/city_files/Owensboro/90028a_List_of_Stops_English_.pdf",
+    "rows": 54,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/ Transit/Forms and Documents/Map Side (English).pdf?t=202503271511470",
+    "text": "Route Map",
+    "file": "data/city_files/Owensboro/91026c_Map_Side_English_.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/ Transit/Forms and Documents/DBE-goal-FY-2020-2022-FINAL.pdf?t=202503120958550",
+    "text": "DBE Global",
+    "file": "data/city_files/Owensboro/6c4684_DBE-goal-FY-2020-2022-FINAL.pdf",
+    "rows": 124,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/ Transit/Forms and Documents/ADA-Complaint-Procedures.pdf?t=202503120958550",
+    "text": "ADA Compliant Procedures",
+    "file": "data/city_files/Owensboro/2709a3_ADA-Complaint-Procedures.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/ Transit/Forms and Documents/ADA-Complaint-Form.pdf?t=202503120958550",
+    "text": "ADA Compliant Form",
+    "file": "data/city_files/Owensboro/8ca5a2_ADA-Complaint-Form.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://owensboro.org/Whole Brochure in Spanish.pdf?t=202503271509340",
+    "text": "Spanish Map",
+    "file": "data/city_files/Owensboro/3d86de_Whole_Brochure_in_Spanish.pdf",
+    "rows": 46,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/ Transit/Forms and Documents/Civil-Rights-Act-Information.pdf?t=202503120958550",
+    "text": "Info About Title VI of the Civil Rights Act",
+    "file": "data/city_files/Owensboro/bcf589_Civil-Rights-Act-Information.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/ Transit/Forms and Documents/SPA-Complaint-Form.pdf?t=202503120958590",
+    "text": "Spanish Title VI Complaint Form",
+    "file": "data/city_files/Owensboro/96f136_SPA-Complaint-Form.pdf",
+    "rows": 43,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/ Transit/Forms and Documents/Title-VI-Public-Notice-REVISED-2022.pdf?t=202503120959000",
+    "text": "Title VI Notice to the Public",
+    "file": "data/city_files/Owensboro/f21576_Title-VI-Public-Notice-REVISED-2022.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://owensboro.org/Documents/Departments/Public Works/ Transit/Forms and Documents/Spanish-Title-VI-Public-Notice.pdf?t=202503120958590",
+    "text": "Spanish Title VI Notice to the Public",
+    "file": "data/city_files/Owensboro/3fadba_Spanish-Title-VI-Public-Notice.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13511/OTSGTFS.zip",
+    "text": "OTS General Transit Feed Specifications",
+    "file": "data/city_files/Owensboro/bdc2e2_OTSGTFS.zip",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ }
+}
