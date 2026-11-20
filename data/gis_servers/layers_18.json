@@ -1,16 +1,23 @@
 [
 {
-"city": "capital:indy.gov",
-"url": "https://gis.indy.gov/server/rest/services/OpenData/OpenData_Transportation/MapServer/2",
-"name": "Bike Share Stations",
-"count": 57,
-"cat": "share"
+"city": "Salt Lake City UT",
+"url": "https://maps.slc.gov/server/rest/services/Hosted/Bike_Racks/FeatureServer/0",
+"name": "Bike Racks",
+"count": 1411,
+"cat": "racks"
 },
 {
-"city": "Pasadena",
-"url": "https://gis.lja.com/arcgis/rest/services/Hosted/Westpark_Near_Term_Projects/FeatureServer/48",
-"name": "Walk & Bike",
-"count": 24,
+"city": "Springville",
+"url": "https://maps.springville.org/server/rest/services/Hosted/Bicycle/FeatureServer/16",
+"name": "Bicycle",
+"count": 90,
 "cat": "racks"
+},
+{
+"city": "Springville",
+"url": "https://maps.springville.org/server/rest/services/Hosted/Motorcycle/FeatureServer/17",
+"name": "Motorcycle",
+"count": 155,
+"cat": "moto"
 }
 ]

@@ -1,8 +1,9 @@
 # GIS servers, shard 18/20
 
-Sites: 35 · layers: 2 · points: 81
+Sites: 105 · layers: 3 · points: 1656
 
 | Place | Layer | Category | Points | URL |
 |---|---|---|---|---|
-| capital:indy.gov | Bike Share Stations | share | 57 | https://gis.indy.gov/server/rest/services/OpenData/OpenData_Transportation/MapServer/2 |
-| Pasadena | Walk & Bike | racks | 24 | https://gis.lja.com/arcgis/rest/services/Hosted/Westpark_Near_Term_Projects/FeatureServer/48 |
+| Salt Lake City UT | Bike Racks | racks | 1411 | https://maps.slc.gov/server/rest/services/Hosted/Bike_Racks/FeatureServer/0 |
+| Springville | Bicycle | racks | 90 | https://maps.springville.org/server/rest/services/Hosted/Bicycle/FeatureServer/16 |
+| Springville | Motorcycle | moto | 155 | https://maps.springville.org/server/rest/services/Hosted/Motorcycle/FeatureServer/17 |
