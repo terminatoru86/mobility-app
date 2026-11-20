@@ -1,44 +1,9 @@
 [
 {
-"city": "Columbus OH",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/42",
-"name": "Scooter Corrals",
-"count": 47,
-"cat": "scooter"
-},
-{
-"city": "Columbus OH",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/41",
+"city": "Humboldt County",
+"url": "https://gis.eurekaca.gov/server/rest/services/MainServiceLayers/Transportation_Services/MapServer/2",
 "name": "Bike Parking",
-"count": 833,
-"cat": "racks"
-},
-{
-"city": "Columbus OH",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/31",
-"name": "COGO Bikeshare Locations",
-"count": 80,
-"cat": "share"
-},
-{
-"city": "Columbus OH",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/3",
-"name": "Scooter Parking Locations",
-"count": 38,
-"cat": "scooter"
-},
-{
-"city": "Fairfield",
-"url": "https://gis.fairfield.ca.gov/server/rest/services/GreenCities/Green_Cities_Public/FeatureServer/3",
-"name": "Bicycle Racks",
-"count": 32,
-"cat": "racks"
-},
-{
-"city": "Fairfield",
-"url": "https://gis.fairfield.ca.gov/server/rest/services/GreenCities/Green_Cities_Public/MapServer/3",
-"name": "Bicycle Racks",
-"count": 32,
+"count": 73,
 "cat": "racks"
 }
 ]
