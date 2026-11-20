@@ -1,0 +1,1803 @@
+{
+ "Philadelphia PA": {
+  "files": [],
+  "portals": {
+   "https://www.phila.gov/programs/open-data-program/": "Open data",
+   "https://www.phila.gov/es/programs/open-data-program/": "Datos abiertos",
+   "https://www.phila.gov/zh/programs/open-data-program/": "æå¼æ°æ®",
+   "https://www.phila.gov/ar/programs/open-data-program/": "Ø§ÙØ¨ÙØ§ÙØ§Øª Ø§ÙÙÙØªÙØ­Ø©",
+   "https://www.phila.gov/ht/programs/open-data-program/": "Louvri done",
+   "https://www.phila.gov/fr/programs/open-data-program/": "DonnÃ©es ouvertes",
+   "https://www.phila.gov/sw/programs/open-data-program/": "Fungua data",
+   "https://www.phila.gov/pt/programs/open-data-program/": "Dados abertos",
+   "https://www.phila.gov/ru/programs/open-data-program/": "ÐÑÐºÑÑÑÑÐµ Ð´Ð°Ð½Ð½ÑÐµ",
+   "https://www.phila.gov/vi/programs/open-data-program/": "Dá»¯ liá»u má»",
+   "https://phl.maps.arcgis.com/apps/instant/basic/index.html?appid=ea2b40452b4c4d7e8dcc424dedef0e44": "Trails Web Map.",
+   "https://www.legis.state.pa.us/cfdocs/Legis/LI/uconsCheck.cfm?txtType=HTM&yr=1988&sessInd=0&smthLwInd=0&act=0101.": "Pennsylvania State Act 101"
+  }
+ },
+ "Chandler AZ": {
+  "files": [
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/downtown/Downtown%20Parking%20Map.pdf",
+    "text": "find free parking",
+    "file": "data/city_files/Chandler_AZ/8bdc50_Downtown_20Parking_20Map.pdf",
+    "rows": 16,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-City-Limits-Map-2026.pdf",
+    "text": "Chandler City Limits",
+    "file": "data/city_files/Chandler_AZ/a7bf44_City-of-Chandler-City-Limits-Map-2026.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-FMA-Page-Section-Township-Index.pdf",
+    "text": "Township, Range, Section Index Map",
+    "file": "data/city_files/Chandler_AZ/0e5229_City-of-Chandler-FMA-Page-Section-Township-Index.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Block-Numbers-For-Addresses-And-Ranges-Mile-And-Half-Mile-Street-Alignments.pdf",
+    "text": "Chandler Address Block Number Map",
+    "file": "data/city_files/Chandler_AZ/d838b8_City-of-Chandler-Block-Numbers-For-Addresses-And-Ranges-Mile-And-Half-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Maricopa-County-Address-Block-Numbers.pdf",
+    "text": "County Address Block Numbers Map",
+    "file": "data/city_files/Chandler_AZ/9a7cad_City-of-Chandler-Maricopa-County-Address-Block-Numbers.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Zip-Codes-and-Boundaries.pdf",
+    "text": "Chandler Zip Codes Map",
+    "file": "data/city_files/Chandler_AZ/629868_City-of-Chandler-Zip-Codes-and-Boundaries.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/parks-and-recreation/Chandler-Parks-Strategic-Master-Plan-Chapter-5.pdf",
+    "text": "Chapter 5: Level of Service and Mapping",
+    "file": "data/city_files/Chandler_AZ/abdb41_Chandler-Parks-Strategic-Master-Plan-Chapter-5.pdf",
+    "rows": 26,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/parks-and-recreation/Snedigar-Parking-Map-2020.pdf",
+    "text": "Snedigar Parking Map",
+    "file": "data/city_files/Chandler_AZ/273d27_Snedigar-Parking-Map-2020.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chandleraz.gov/sites/default/files/departments/parks-and-recreation/Snedigar-Parking-Map-2020.pdf",
+    "text": "Snedigar Parking Map",
+    "file": "data/city_files/Chandler_AZ/dd3757_Snedigar-Parking-Map-2020.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/transportation/City-of-Chandler-Bike-Map-March-2026.pdf",
+    "text": "Chandler Bike Map",
+    "file": "data/city_files/Chandler_AZ/b9d6ff_City-of-Chandler-Bike-Map-March-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/transportation/City-of-Chandler-Downtown-Bike-Parking-March-2026.pdf",
+    "text": "Downtown Bike Parking",
+    "file": "data/city_files/Chandler_AZ/7300fd_City-of-Chandler-Downtown-Bike-Parking-March-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/transportation/City-of-Chandler-E-Bike-Safety-and-Information-Guide.pdf",
+    "text": "E-Bike Information Guide",
+    "file": "data/city_files/Chandler_AZ/e2ff78_City-of-Chandler-E-Bike-Safety-and-Information-Guide.pdf",
+    "rows": 4,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/transportation/City-of-Chandler-2024-Arizona-Avenue-Shared-Use-Path-and-Sidewalk-Gap-Study-Final-Report-January-2025.pdf",
+    "text": "2024 Arizona Avenue Shared-Use Path Study: Final Report",
+    "file": "data/city_files/Chandler_AZ/7c5963_City-of-Chandler-2024-Arizona-Avenue-Shared-Use-Path-and-Sidewalk-Gap-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/transportation/City-of-Chandler-Protected-Bike-Lane-Feasibility-Final-Report-August.pdf",
+    "text": "2023 Protected Bike Lane Feasibility Study",
+    "file": "data/city_files/Chandler_AZ/ec2b7c_City-of-Chandler-Protected-Bike-Lane-Feasibility-Final-Report-August.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/Price-Road-Flexible-Transit-Study-Final-Report.pdf",
+    "text": "2021 Price Road Flexible Transit Study: Final Report",
+    "file": "data/city_files/Chandler_AZ/a41ef9_Price-Road-Flexible-Transit-Study-Final-Report.pdf",
+    "rows": 217,
+    "bike_rows": 33
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/Fiesta-Downtown-Chandler-Transit-Corridor-Study-May-2017.pdf",
+    "text": "2017 Fiesta-Downtown Chandler Transit Corridor Study",
+    "file": "data/city_files/Chandler_AZ/373900_Fiesta-Downtown-Chandler-Transit-Corridor-Study-May-2017.pdf",
+    "rows": 352,
+    "bike_rows": 59
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/Arizona-Avenue-High-Capacity-Transit-Long-Range-Study-Dec-2022.pdf",
+    "text": "2012 Arizona Avenue High Capacity Transit Long-Range Study",
+    "file": "data/city_files/Chandler_AZ/83a983_Arizona-Avenue-High-Capacity-Transit-Long-Range-Study-Dec-2022.pdf",
+    "rows": 254,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/documents/imported/YellowArrowLocations_Map.pdf",
+    "text": "Map of Flashing Yellow Left Arrows",
+    "file": "data/city_files/Chandler_AZ/0b904e_YellowArrowLocations_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-Photo-Enforcement-Camera-Map.pdf",
+    "text": "Photo Enforcement Camera Map",
+    "file": "data/city_files/Chandler_AZ/c7b733_City-of-Chandler-Photo-Enforcement-Camera-Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2026-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "text": "2026 Intersection Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/6f8e40_City-of-Chandler-2026-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2025-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "text": "2025 Intersection Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/bdb454_City-of-Chandler-2025-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/City-of-Chandler-2024-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "text": "2024 Intersection Traffic Volumes",
+    "file": "data/city_files/Chandler_AZ/caa134_City-of-Chandler-2024-Intersection-Traffic-Volumes-Map-Archive.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://strategic-framework-performance-metrics-current-changis.hub.arcgis.com/": "Performance Dashboards",
+   "https://gis.chandleraz.gov/infomap/": "",
+   "https://storymaps.arcgis.com/stories/a75251596dfe4e919603f09ed872ab35": "Office Projects Interactive Map",
+   "https://storymaps.arcgis.com/stories/2bd5df50330a452aa2d89c4ecac86514": "Industrial Projects Interactive Map",
+   "https://storymaps.arcgis.com/stories/ea09afde8ff249989cf0a1a93f6c7ba6": "Coworking Spaces Interactive Map",
+   "https://share-open-data-changis.hub.arcgis.com/": "",
+   "https://gis.chandleraz.gov/planning/": "",
+   "https://gis.chandleraz.gov/trafficrestrictions/": "",
+   "http://changis.maps.arcgis.com/apps/webappviewer/index.html?id=0aea8d6016154b9b81d207f90866355c": "",
+   "https://gis.chandleraz.gov/portal/apps/experiencebuilder/experience/?id=1203f8f823444e3d8f33e87cca44228a&page=Page": "",
+   "https://storymaps.arcgis.com/stories/401bd02539214594a0a204f6e3cafe9c": "",
+   "https://storymaps.arcgis.com/stories/f8cf870107f2481381ca6a01bdc61a0d": ""
+  }
+ },
+ "Ann Arbor MI": {
+  "files": [
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/u2uhdgja/parking-rate-increases-2024-2026.pdf",
+    "text": "Parking Rate Increases 2024-2026",
+    "file": "data/city_files/Ann_Arbor_MI/793518_parking-rate-increases-2024-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/pidhxeza/parking20violations20and20fines202.pdf",
+    "text": "Parking citation fines and associated late fees​",
+    "file": "data/city_files/Ann_Arbor_MI/3f2569_parking20violations20and20fines202.pdf",
+    "rows": 51,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/1lbhxvva/201720parking20citation20refund20policy-5-17-changes20accepted.pdf",
+    "text": "parking overpayment policy",
+    "file": "data/city_files/Ann_Arbor_MI/b41ca9_201720parking20citation20refund20policy-5-17-changes20accepted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/azhdzhq5/um_stadium_area_on-street_parking_restrictions_map-from_parking_web_2025.pdf",
+    "text": "Click here for the on-street parking restrictions map (also pictured above)​",
+    "file": "data/city_files/Ann_Arbor_MI/631ca1_um_stadium_area_on-street_parking_restrictions_map-from_parking_web_20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/zcjbsbfc/2018_parking_violations.pdf",
+    "text": "Parking fines and associated late fees - last changed August 1, 2018 (PDF).",
+    "file": "data/city_files/Ann_Arbor_MI/8c4db4_2018_parking_violations.pdf",
+    "rows": 50,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://regents.umich.edu/uploads/regent_ordinance_09_19-1-.pdf",
+    "text": "U Of M Ordinance to Regulate Parking and Traffic.",
+    "file": "data/city_files/Ann_Arbor_MI/abf0da_regent_ordinance_09_19-1-.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/gubb21xu/2017-parking-citation-refund-policy-5-17-changes-accepted.pdf",
+    "text": "parking overpayment policy",
+    "file": "data/city_files/Ann_Arbor_MI/93bc5f_2017-parking-citation-refund-policy-5-17-changes-accepted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/uxalcft4/rpp-criteria-4-15-19.pdf",
+    "text": "Residential Parking Permit Criteria",
+    "file": "data/city_files/Ann_Arbor_MI/fcde70_rpp-criteria-4-15-19.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/ru5odaps/customerservice_rppparkingtimelimitexemptions.pdf",
+    "text": "Residential Parking Programs Time Limit Exemptions",
+    "file": "data/city_files/Ann_Arbor_MI/47b0d0_customerservice_rppparkingtimelimitexemptions.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/2gkfc3tp/northside20rpp20application.pdf",
+    "text": "Northside Residential Parking Permit Application",
+    "file": "data/city_files/Ann_Arbor_MI/ed2609_northside20rpp20application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/lfml1nqt/petition20to20amend20rpp20area.pdf",
+    "text": "Petition to Amend an Exis​ting Parking Area",
+    "file": "data/city_files/Ann_Arbor_MI/fe0d19_petition20to20amend20rpp20area.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/jzbh51eh/recycling_handout_give.pdf",
+    "text": "recycle",
+    "file": "data/city_files/Ann_Arbor_MI/68d2f2_recycling_handout_give.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/n2mdjhj4/recycle20item20flyer20iiii.pdf",
+    "text": "Recycling guidelines flyer",
+    "file": "data/city_files/Ann_Arbor_MI/a91f68_recycle20item20flyer20iiii.pdf",
+    "rows": 32,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://a2gov.org/media/ganc5kn3/ann-arbor-parks-and-recreation-ada-transition-plan_jan2023.pdf",
+    "text": "ADA Transition Plan",
+    "file": "data/city_files/Ann_Arbor_MI/b78acc_ann-arbor-parks-and-recreation-ada-transition-plan_jan2023.pdf",
+    "rows": 90,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/ganc5kn3/ann-arbor-parks-and-recreation-ada-transition-plan_jan2023.pdf",
+    "text": "ADA Transition Plan Report",
+    "file": "data/city_files/Ann_Arbor_MI/089c3f_ann-arbor-parks-and-recreation-ada-transition-plan_jan2023.pdf",
+    "rows": 90,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/11plvjwa/alternative-mow-pilot-2023.pdf",
+    "text": "Alternative Mow Pilot 2023",
+    "file": "data/city_files/Ann_Arbor_MI/9b6eec_alternative-mow-pilot-2023.pdf",
+    "rows": 26,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/hfnfaqgf/aapublicrglabeled-002.pdf",
+    "text": "Public Rain Garden Map",
+    "file": "data/city_files/Ann_Arbor_MI/97a67d_aapublicrglabeled-002.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/vxrliqtv/recycling_compost_landfill_banner3inddwebpage.pdf",
+    "text": "informational banner",
+    "file": "data/city_files/Ann_Arbor_MI/a43c20_recycling_compost_landfill_banner3inddwebpage.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/3dwhfw0z/argo-parking.pdf",
+    "text": "parking guide",
+    "file": "data/city_files/Ann_Arbor_MI/ef487b_argo-parking.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/4r5l0cxv/gallup-park-rec1_shelters-highlighted.pdf",
+    "text": "map",
+    "file": "data/city_files/Ann_Arbor_MI/abfc03_gallup-park-rec1_shelters-highlighted.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/xnwd5k31/island-park-rec1-2022.pdf",
+    "text": "Island Park map​",
+    "file": "data/city_files/Ann_Arbor_MI/83b3b1_island-park-rec1-2022.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/ia1jiox0/fuller-athletic-field-map.pdf",
+    "text": "Fuller Park",
+    "file": "data/city_files/Ann_Arbor_MI/4648e7_fuller-athletic-field-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/utcbfp2j/olson-park-field-map.pdf",
+    "text": "Olson Park",
+    "file": "data/city_files/Ann_Arbor_MI/742a37_olson-park-field-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/kh0c4kjg/counter-map-2016v2.pdf",
+    "text": "paddle down the Huron River",
+    "file": "data/city_files/Ann_Arbor_MI/30b86c_counter-map-2016v2.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-001-us.cdn.govstack.com/a2gov-002-us/media/35gd0psx/vetsparkingguide.pdf",
+    "text": "parking guide",
+    "file": "data/city_files/Ann_Arbor_MI/581287_vetsparkingguide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://a2-mi.maps.arcgis.com/apps/dashboards/0a58a29b814a471097b79fe5370075e0": "Residential Collection Map",
+   "https://a2-mi.maps.arcgis.com/apps/webappviewer/index.html?id=28c00ac36a5c4bda9830c107cdf8c81d": "interactive map tool",
+   "https://a2-mi.maps.arcgis.com/apps/Solutions/s2.html?appid=0c022dc795cf4a70a26e9a6170b4fd38": "searchable map",
+   "https://waterdata.usgs.gov/usa/nwis/uv?04174500": "USGS a2gov.org/riverflow",
+   "https://a2-mi.maps.arcgis.com/apps/dashboards/4b0ac3a2c6144baa83ecf568ac2f6e6c": "Residential Street Sweeping Map",
+   "https://a2-mi.maps.arcgis.com/apps/dashboards/eebadbc25ef04880b0b5cebfd1ba09e7": "Water Service Line Material Dashboard",
+   "https://a2-mi.maps.arcgis.com/apps/dashboards/65a888e5778e44999123a1ef60ba1980": "graphical map",
+   "https://a2-mi.maps.arcgis.com/apps/instant/basic/index.html?appid=b77961d42d71478cb06ce1ecf6234a4d": "Street exemption map"
+  }
+ },
+ "Wayne County": {
+  "files": [
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/county_commission_districts.zip",
+    "text": "Commission Districts (ZIP, 98KB)",
+    "file": "data/city_files/Wayne_County/63444b_county_commission_districts.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/roads_all.zip",
+    "text": "Roads (ZIP, 14MB)",
+    "file": "data/city_files/Wayne_County/ab9df2_roads_all.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/waynecountyownedparks.zip",
+    "text": "Wayne County Owned Parks (ZIP, 67KB)",
+    "file": "data/city_files/Wayne_County/76b3c9_waynecountyownedparks.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/state_house_districts.zip",
+    "text": "State House Districts (ZIP, 137KB)",
+    "file": "data/city_files/Wayne_County/8f2158_state_house_districts.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/state_senate_districts.zip",
+    "text": "State Senate Districts (ZIP, 125KB)",
+    "file": "data/city_files/Wayne_County/41fbc3_state_senate_districts.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/us_congressional_districts.zip",
+    "text": "U.S. Congressional Districts (ZIP, 83KB)",
+    "file": "data/city_files/Wayne_County/8125b5_us_congressional_districts.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/school_districts.zip",
+    "text": "School Districts (ZIP, 115KB)",
+    "file": "data/city_files/Wayne_County/5b54f2_school_districts.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/zip_codes.zip",
+    "text": "Zip Codes (ZIP, 228KB)",
+    "file": "data/city_files/Wayne_County/4d2f7d_zip_codes.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/municandroads.pdf",
+    "text": "Base Map (PDF, 2MB)",
+    "file": "data/city_files/Wayne_County/422c17_municandroads.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/parks_all.pdf",
+    "text": "Parks (PDF, 519KB)",
+    "file": "data/city_files/Wayne_County/906617_parks_all.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/schooldistricts.pdf",
+    "text": "School Districts (PDF, 329KB)",
+    "file": "data/city_files/Wayne_County/5f7332_schooldistricts.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/2/information-technology/maps-amp-data/documents/state-house-district.pdf",
+    "text": "State House Districts (PDF, 2MB)",
+    "file": "data/city_files/Wayne_County/8a8f4b_state-house-district.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/2/information-technology/maps-amp-data/documents/state-senate-district.pdf",
+    "text": "State Senate Districts (PDF, 588KB)",
+    "file": "data/city_files/Wayne_County/def763_state-senate-district.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/u.s.-house-district.pdf",
+    "text": "U.S. House Districts (PDF, 11MB)",
+    "file": "data/city_files/Wayne_County/92f471_u.s.-house-district.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/district-commissioner-map.pdf",
+    "text": "Commission Districts (PDF, 2MB)",
+    "file": "data/city_files/Wayne_County/cb1eb1_district-commissioner-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/information-technology/maps-amp-data/documents/zipcodes.pdf",
+    "text": "Zip Codes (PDF, 340KB)",
+    "file": "data/city_files/Wayne_County/8d0c5d_zipcodes.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/public-services/parks/bell-creek-area-map.pdf",
+    "text": "Bell-Creek-Area-Map.pdf (PDF, 377KB)",
+    "file": "data/city_files/Wayne_County/9e88dd_bell-creek-area-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/public-services/parks/crosswinds-trail-map-2025.pdf",
+    "text": "Crosswinds-Trail Map (PDF, 1MB)",
+    "file": "data/city_files/Wayne_County/046e76_crosswinds-trail-map-2025.pdf",
+    "rows": 10,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/public-services/parks/hines-park-from-farmington-rd.-to-ford-rd.pdf",
+    "text": "Hines-Park Map-from-Farmington-Rd.-to-Ford-Rd.pdf (PDF, 261KB)",
+    "file": "data/city_files/Wayne_County/2c3d86_hines-park-from-farmington-rd.-to-ford-rd.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/public-services/parks/hines-park-from-seven-mile-to-farmington.pdf",
+    "text": "Hines-Park Map-from-Seven-Mile-to-Farmington.pdf (PDF, 294KB)",
+    "file": "data/city_files/Wayne_County/aa1f7d_hines-park-from-seven-mile-to-farmington.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/public-services/parks/lolavalley.pdf",
+    "text": "View the Lola Valley Park Map (PDF, 80KB)",
+    "file": "data/city_files/Wayne_County/f528f3_lolavalley.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/public-services/roads/documents/roads-jurisdiction.pdf",
+    "text": "Jurisdiction Map (PDF, 18MB)",
+    "file": "data/city_files/Wayne_County/d44189_roads-jurisdiction.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/public-services/roads/documents/truckmap.pdf",
+    "text": "Truckers Map (PDF, 954KB)",
+    "file": "data/city_files/Wayne_County/562287_truckmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waynecountymi.gov/files/assets/mainsite/v/1/public-services/parks/cassbenton.pdf",
+    "text": "View the Cass Benton Map (PDF, 287KB)",
+    "file": "data/city_files/Wayne_County/ec6d53_cassbenton.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.waynecountymi.gov/Government/Departments/Information-Technology/Maps-Data/Open-Data-Portal": "Open Data Portal",
+   "http://wayne.maps.arcgis.com/apps/Viewer/index.html?appid=4e75960fbf28455c9acf115e97a3c7c0": "Wayne County Parcel Map",
+   "https://experience.arcgis.com/experience/2e5379760fb54b549683860d8b07768c?draft=true": "Road Project Construction",
+   "https://experience.arcgis.com/experience/f6cce4d36802431d8c577e97543c6f9c": "Parcel Viewer",
+   "https://wayne.maps.arcgis.com/apps/dashboards/2084b584c8b642bc919535f39edd22e8": "Bridge Condition Dashboard",
+   "https://wayne.maps.arcgis.com/apps/MapJournal/index.html?appid=ded3551fa47e4710832bf6d4363ad0a0": "Parks Map",
+   "https://www.waynecountymi.gov/Government/Departments/Public-Services/Projects-and-Data/Open-Data-Portal": "Open Data Portal",
+   "https://storymaps.arcgis.com/stories/f2f6b1d7988e452a882e279421d9fdb3": "Holliday Nature Preserve",
+   "https://storymaps.arcgis.com/stories/8d4e35ce2dc545bbb4f1a31a609d82f1": "Bennett Arboreteum",
+   "https://storymaps.arcgis.com/stories/3024b2311e594ec4801a0c5afecdf974": "Wayne County Parks Map"
+  }
+ },
+ "Gwinnett County": {
+  "files": [],
+  "portals": {
+   "https://www.gwinnettcounty.com/government/departments/information-technology-services/geographic-systems/open-data-portal?p_l_back_url=%2Fsearch%3Fq%3Dbikeway%2520gis%2520data&p_l_back_url_title=Search": "Open Data Portal",
+   "https://www.gwinnettcounty.com/government/departments/information-technology-services/geographic-systems/open-data-portal?p_l_back_url=%2Fsearch%3Fq%3Dopen%2520data&p_l_back_url_title=Search": "Open Data Portal",
+   "https://gcgis-gwinnettcountyga.hub.arcgis.com/": "Open Data Portal"
+  }
+ },
+ "Norfolk County": {
+  "files": [],
+  "portals": {}
+ },
+ "Bristol County": {
+  "files": [],
+  "portals": {}
+ },
+ "Staten Island": {
+  "files": [
+   {
+    "url": "https://statenislandusa.com/uploads/8/9/8/7/89877849/sibp_topo_bureau_transition_memo.pdf",
+    "text": "click here to read more.",
+    "file": "data/city_files/Staten_Island/7fbfa0_sibp_topo_bureau_transition_memo.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Hillsborough County": {
+  "files": [],
+  "portals": {}
+ },
+ "Hamilton County": {
+  "files": [
+   {
+    "url": "http://recycle.hamiltontn.gov/TireForm.pdf",
+    "text": "click here for the VENDOR/HAULER/DESIGNATION form (HC1707)",
+    "file": "data/city_files/Hamilton_County/d7c19a_TireForm.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "http://recycle.hamiltontn.gov/stay-informed/maps-open-data": "Maps & Open Data"
+  }
+ },
+ "Albany County": {
+  "files": [],
+  "portals": {}
+ },
+ "Benton County": {
+  "files": [],
+  "portals": {}
+ },
+ "Jefferson County": {
+  "files": [
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/Bylaws/Bylaws%20_2015.pdf",
+    "text": "Bylaws",
+    "file": "data/city_files/Jefferson_County/4ec66e_Bylaws_20_2015.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/2027 CALENDAR - Jefferson County Historical Commission.pdf",
+    "text": "2027 Calendar",
+    "file": "data/city_files/Jefferson_County/36a718_2027_CALENDAR_-_Jefferson_County_Historical_Commission.pdf",
+    "rows": 208,
+    "bike_rows": 37
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/agendas/CLG%20Agenda_2016_09_13.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Jefferson_County/199da5_CLG_20Agenda_2016_09_13.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/agendas/CLG%20Agenda_2016_06_07.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Jefferson_County/97c105_CLG_20Agenda_2016_06_07.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/minutes/CLG%20Minutes_2016-04-26.pdf",
+    "text": "Meeting Minutes",
+    "file": "data/city_files/Jefferson_County/75300b_CLG_20Minutes_2016-04-26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/agendas/CLG%20Agenda_2016_04_26.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Jefferson_County/beaf1c_CLG_20Agenda_2016_04_26.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/minutes/CLG%20Minutes_2016-03-08.pdf",
+    "text": "Meeting Minutes",
+    "file": "data/city_files/Jefferson_County/cae50a_CLG_20Minutes_2016-03-08.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/agendas/CLGAgenda_2015_10_05.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Jefferson_County/ae9e80_CLGAgenda_2015_10_05.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/minutes/CLG%20Minutes_2015-08-24.pdf",
+    "text": "Meeting Minutes",
+    "file": "data/city_files/Jefferson_County/06c56d_CLG_20Minutes_2015-08-24.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/agendas/CLGAgenda_2015_08_24.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Jefferson_County/1a82d1_CLGAgenda_2015_08_24.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/minutes/CLG%20Minutes_2015-07-20.pdf",
+    "text": "Meeting Minutes",
+    "file": "data/city_files/Jefferson_County/6d0b11_CLG_20Minutes_2015-07-20.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/agendas/CLGAgenda_2015_07_20.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Jefferson_County/0fa5fe_CLGAgenda_2015_07_20.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/minutes/CLG%20Minutes_2015-06-22.pdf",
+    "text": "Meeting Minutes",
+    "file": "data/city_files/Jefferson_County/e30530_CLG_20Minutes_2015-06-22.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/CLG/agendas/CLGAgenda_2015_06_22.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Jefferson_County/b844c4_CLGAgenda_2015_06_22.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/Early_Courthouse.pdf",
+    "text": "Early Courthouses",
+    "file": "data/city_files/Jefferson_County/3405e9_Early_Courthouse.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/Jefferson%20County%20Courthouse%201854.pdf",
+    "text": "1854 Courthouse",
+    "file": "data/city_files/Jefferson_County/19531c_Jefferson_20County_20Courthouse_201854.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/Jefferson%20County%20Courthouse%201893.pdf",
+    "text": "1893 Courthouse",
+    "file": "data/city_files/Jefferson_County/1d2539_Jefferson_20County_20Courthouse_201893.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/Jefferson%20County%20Courthouse%20%201981%20Annex.pdf",
+    "text": "1981 Courthouse",
+    "file": "data/city_files/Jefferson_County/df4a62_Jefferson_20County_20Courthouse_20_201981_20Annex.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/History/Suggested_Readings.pdf",
+    "text": "Suggested Readings",
+    "file": "data/city_files/Jefferson_County/99b6a0_Suggested_Readings.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/History/Jefferson_County_History_2015-12-03.pdf",
+    "text": "History",
+    "file": "data/city_files/Jefferson_County/002274_Jefferson_County_History_2015-12-03.pdf",
+    "rows": 128,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/Maps/GLO/76795_1835 Texas.pdf",
+    "text": "1835 Texas (76795)",
+    "file": "data/city_files/Jefferson_County/cd4671_76795_1835_Texas.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/Maps/GLO/3726_1840_Jefferson_County.pdf",
+    "text": "1840 Jefferson County (3726)",
+    "file": "data/city_files/Jefferson_County/fb1bdb_3726_1840_Jefferson_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://blobs.jeffersoncountytx.gov/historical_commission/files/Maps/GLO/3727_1862_Jefferson_County.pdf",
+    "text": "1862 Jefferson County (3727)",
+    "file": "data/city_files/Jefferson_County/b9702d_3727_1862_Jefferson_County.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.legis.state.tx.us/": "Representatives",
+   "https://jeffco.maps.arcgis.com/apps/webappviewer/index.html?id=930871ed9b004129a4710fcfacc8046b": "Map of Resources Identified within the Historical Resources Survey"
+  }
+ },
+ "Mahoning County": {
+  "files": [],
+  "portals": {}
+ },
+ "Harrison County": {
+  "files": [],
+  "portals": {
+   "https://gis.harrisoncountywv.com": "GIS Maps (opens in new tab)"
+  }
+ },
+ "Sangamon County": {
+  "files": [],
+  "portals": {
+   "https://sangis.maps.arcgis.com/apps/instant/basic/index.html?appid=a46f90241ab34482bdac78696b7a2654": "District Map",
+   "https://sangis.maps.arcgis.com/apps/webappviewer/index.html?id=11ded2558aac4a1594ba9ccae47cde04": "Polling Locations",
+   "https://gis.co.sangamon.il.us/lp/": "Sangamon County Office Locations",
+   "http://sangis.maps.arcgis.com/apps/TwoPane/main/index.html?appid=331910299ea8448390d3bc9a659e46cf": "SSCRPC Project Locator",
+   "https://sangis.maps.arcgis.com/apps/webappviewer/index.html?id=0817a6986826401ca8c274d14300b3bd": "Winter Road Conditions",
+   "https://sangis.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=de8ebc92135e4df3a4ad359d8c52ce6c": "Interactive Maps",
+   "https://sangis.maps.arcgis.com/apps/MinimalGallery/index.html?appid=5b5caf21fa4c4cc5b3f0b020bc63d451": "Map Gallery",
+   "https://sangis.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=180217802345419a9303c418258ed42f": "Map Gallery",
+   "https://sangis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=ba6ea49f45ca453b85c9c8376ba09f36": "SMART Coverage Map"
+  }
+ },
+ "Cass County": {
+  "files": [],
+  "portals": {}
+ },
+ "Lancaster": {
+  "files": [],
+  "portals": {}
+ },
+ "Yellowstone County": {
+  "files": [],
+  "portals": {}
+ },
+ "Franklin County": {
+  "files": [],
+  "portals": {}
+ },
+ "Orange County": {
+  "files": [
+   {
+    "url": "https://www.nchfa.com/sites/default/files/page_attachments/HTHRehabandRepair.pdf",
+    "text": "How Home Repair and Rehab Programs Improve Health Outcomes",
+    "file": "data/city_files/Orange_County/0cad29_HTHRehabandRepair.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gotriangle.org/brochures/GoTriangle/Route_ODX_WEB.pdf",
+    "text": "ODX (Orange-Durham Express)",
+    "file": "data/city_files/Orange_County/585548_Route_ODX_WEB.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/e5086cfd7e4b499f824667e95de4f202": "Interactive Trails/Greenways map",
+   "https://tocgis.ci.carrboro.nc.us/Carrboro/Parks/": "Parks Locator Map",
+   "https://www.arcgis.com/apps/instant/minimalist/index.html?appid=a75f8c69cb534b39b5ac28b81261edc7": "Parks, Open Space Reserve Areas, Greenways, and Bikeways Map",
+   "https://gis.orangecountync.gov/servicelocator/default.html?ServiceID=61": "Eubanks Rd. Chapel Hill",
+   "https://gis.orangecountync.gov/servicelocator/default.html?LocationID=45": "Walnut Grove Church Rd. Hillsborough",
+   "https://gis.orangecountync.gov/servicelocator/default.html?ServiceID=31": "Bradshaw Quarry Rd. Mebane",
+   "https://gis.orangecountync.gov/servicelocator/default.html?ServiceID=62": "Ferguson Rd. Chapel Hill",
+   "https://gis.orangecountync.gov/servicelocator/default.html?ServiceID=63": "High Rock Rd. Efland",
+   "https://gis.orangecountync.gov/orangencgis/default.htm": "Orange County GIS (Land Records)",
+   "https://gis.orangecountync.gov/orangeNCGIS/zoning.htm": "Zoning",
+   "https://orangecountync.maps.arcgis.com/apps/dashboards/7d69be7b5d7849edbf2d798d215cbc9c": "Click here to view the 2020 Census Dashboard.",
+   "https://data.census.gov/table?g=050XX00US37135,37135$0600000&y=2020&d=DEC+Demographic+Profile": ""
+  }
+ },
+ "West Valley City": {
+  "files": [
+   {
+    "url": "https://www.tbid.gov/Documents/About%20Us/About%20Us/WebMap2025.pdf",
+    "text": "Taylorsville-Bennion Improvement District Service Area",
+    "file": "data/city_files/West_Valley_City/864b8a_WebMap2025.pdf",
+    "rows": 19,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {}
+ },
+ "Harnett County": {
+  "files": [
+   {
+    "url": "https://harnett.org/elections/downloads/2024-abs-request-.pdf",
+    "text": "2024 Absentee Ballot Request Form",
+    "file": "data/city_files/Harnett_County/b3a4e1_2024-abs-request-.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://harnett.org/elections/downloads/fpca2013-1.pdf",
+    "text": "Voter Registration and Absentee Ballot Request (for absent military or overseas citizens)",
+    "file": "data/city_files/Harnett_County/ca9171_fpca2013-1.pdf",
+    "rows": 25,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/USHouseDistricts_36x48.pdf",
+    "text": "US House of Representatives: District 13 Map",
+    "file": "data/city_files/Harnett_County/b0fe6f_USHouseDistricts_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/StateHouseDistricts_36x48.pdf",
+    "text": "NC General Assembly House: Districts 6 and 53 Map",
+    "file": "data/city_files/Harnett_County/de3f14_StateHouseDistricts_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/StateSenateDistricts_36x48.pdf",
+    "text": "NC General Assembly Senate: District 12 Map",
+    "file": "data/city_files/Harnett_County/5cae8e_StateSenateDistricts_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/CountyCommissionersDistricts_36x48.pdf",
+    "text": "County Commissioners Districts map",
+    "file": "data/city_files/Harnett_County/e32c06_CountyCommissionersDistricts_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_FireResponseAreaTrue_36x48.pdf",
+    "text": "Fire Response Area map",
+    "file": "data/city_files/Harnett_County/01f9fd_Harnett_FireResponseAreaTrue_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_CityLimitsTrue_36x48.pdf",
+    "text": "City Limits",
+    "file": "data/city_files/Harnett_County/8f2594_Harnett_CityLimitsTrue_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_CountyTrue_36x48.pdf",
+    "text": "County Map",
+    "file": "data/city_files/Harnett_County/3b7322_Harnett_CountyTrue_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_EMSResponseArea_36x48.pdf",
+    "text": "EMS Response Areas",
+    "file": "data/city_files/Harnett_County/2ed0b0_Harnett_EMSResponseArea_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_FireTaxDistrictsTrue_36x48.pdf",
+    "text": "Fire Tax Districts",
+    "file": "data/city_files/Harnett_County/8ab901_Harnett_FireTaxDistrictsTrue_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_TownshipsTrue_36x48.pdf",
+    "text": "Townships",
+    "file": "data/city_files/Harnett_County/99571d_Harnett_TownshipsTrue_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_LandfillsandConvenienceCentersTrue_36x48.pdf",
+    "text": "Landfills and Convenience Centers",
+    "file": "data/city_files/Harnett_County/fa9615_Harnett_LandfillsandConvenienceCentersTrue_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_ParksTrue_36x48.pdf",
+    "text": "Parks",
+    "file": "data/city_files/Harnett_County/322dba_Harnett_ParksTrue_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_RecyclingCentersTrue_36x48.pdf",
+    "text": "Recycling Centers",
+    "file": "data/city_files/Harnett_County/116622_Harnett_RecyclingCentersTrue_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_VoluntaryAgriculturalDistrictTrue_36x48.pdf",
+    "text": "Voluntary Agricultural Districts",
+    "file": "data/city_files/Harnett_County/15404f_Harnett_VoluntaryAgriculturalDistrictTrue_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_WatershedTrue_36x48.pdf",
+    "text": "Watersheds",
+    "file": "data/city_files/Harnett_County/3cb33c_Harnett_WatershedTrue_36x48.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_ZIPCodesTrue_36x48.pdf",
+    "text": "ZIP Codes",
+    "file": "data/city_files/Harnett_County/ff4798_Harnett_ZIPCodesTrue_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_DevelopmentsTrue_36x48.pdf",
+    "text": "Developments",
+    "file": "data/city_files/Harnett_County/f7c9b0_Harnett_DevelopmentsTrue_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_2025FutureLandUse_36x48.pdf",
+    "text": "Land Use (Harnett Horizons 2040)",
+    "file": "data/city_files/Harnett_County/70ebf8_Harnett_2025FutureLandUse_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/Harnett_OfficialZoningMap_36x48.pdf",
+    "text": "Official Zoning Map",
+    "file": "data/city_files/Harnett_County/4ea545_Harnett_OfficialZoningMap_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/VoterPrecincts_36x48.pdf",
+    "text": "All Precincts",
+    "file": "data/city_files/Harnett_County/4adaf6_VoterPrecincts_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/VoterPrecinct_AndersonCreekFlatBranch_36x48.pdf",
+    "text": "Anderson Creek (Flat Branch) Precinct",
+    "file": "data/city_files/Harnett_County/005825_VoterPrecinct_AndersonCreekFlatBranch_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/VoterPrecinct_AndersonCreekOverhills_36x48.pdf",
+    "text": "Anderson Creek (Overhills) Precinct",
+    "file": "data/city_files/Harnett_County/0198c6_VoterPrecinct_AndersonCreekOverhills_36x48.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.harnett.org/mapgallery/PDF/VoterPrecinct_BarbecueBenhaven_36x48.pdf",
+    "text": "Barbecue (Benhaven) Precinct",
+    "file": "data/city_files/Harnett_County/f1e107_VoterPrecinct_BarbecueBenhaven_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.harnett.org/gisviewer/": "GIS Viewer",
+   "https://storymaps.arcgis.com/stories/8dde3b94131e4412af835b22fec122ba": "Park Locator App",
+   "https://gis.harnett.org/portal/apps/experiencebuilder/experience/?id=1663d85c52cc45f1b31166ef201a26ba": "Polling Places",
+   "https://gis.harnett.org/projects/": "Developments",
+   "https://gis.harnett.org/portal/apps/experiencebuilder/experience/?id=22daf713cc8a44249d2af57d84de30d4": "Emergency Services",
+   "https://chathamncgis.maps.arcgis.com/home/index.html": "Chatham County GIS",
+   "https://raleighnc.gov/apps-maps-and-open-data/services/online-mapping-applications": "City of Raleigh GIS",
+   "https://gis.harnett.org/portal/apps/experiencebuilder/experience/?id=b728dcdc362446828e5abda5c1983f17": "Permit Search App",
+   "https://pedestrian-greenway-plan-harnett.hub.arcgis.com": "https://pedestrian-greenway-plan-harnett.hub.arcgis.com",
+   "https://gis.harnett.org/PollingPlaceLocator/": "",
+   "https://gis.harnett.org/portal/apps/experiencebuilder/experience/?id=bc66852c56b94983a11552059007c2d2": "",
+   "https://gis.harnett.org/LawEnforcement/": ""
+  }
+ },
+ "Topeka": {
+  "files": [],
+  "portals": {}
+ },
+ "College Station": {
+  "files": [
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/uxweyrhi/map-45-proposed-bicycle-plan.pdf",
+    "text": "PDF Map Bicycle Master Plan The Active Transportation Master Plan is an important component of the City’s Comprehensive ",
+    "file": "data/city_files/College_Station/1e205b_map-45-proposed-bicycle-plan.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/dkvcipw3/waste-collection-map-user-guide.pdf",
+    "text": "Waste Collection Map User Guide",
+    "file": "data/city_files/College_Station/5ca2d7_waste-collection-map-user-guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/ktiekfui/interactive-map-user-guide.pdf",
+    "text": "City of College Station's Interactive Map",
+    "file": "data/city_files/College_Station/717fac_interactive-map-user-guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/jv1faeji/parking-removal-policy-11-24-25.pdf",
+    "text": "found here",
+    "file": "data/city_files/College_Station/cf7b3e_parking-removal-policy-11-24-25.pdf",
+    "rows": 16,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/gtppp0xt/adoptagreenwaycleanuptips.pdf",
+    "text": "Cleanup Tips",
+    "file": "data/city_files/College_Station/cffb16_adoptagreenwaycleanuptips.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/qwhakb1v/adoptagreenwaystatement.pdf",
+    "text": "Statement of Understanding",
+    "file": "data/city_files/College_Station/9b40a4_adoptagreenwaystatement.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/cgcnv5a2/adoptagreenwayvolunteerreleaseform.pdf",
+    "text": "Release and Indemnification Form",
+    "file": "data/city_files/College_Station/8ad568_adoptagreenwayvolunteerreleaseform.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/aclhkaal/college-station-cemetery-ordinances-1.pdf?key=4zeVGnG7%2fVnTlqhwNr6tKOAbbzV0l1iWRAa7kgswvDvaaVPU21WoDxSR9XXvYPf9fpFHqwPesdyRdoTZ0Gi%2bCnt%2bBVLX07LhYlBCE7hm33vwY3169YbEd%2bEgz0IH1JIQ%2bGATVSKZD6N%2bFPjBn4jJKQq5YJA89D%2bbnD1PNYPUqjLl%2b3mEB7ZFdnbjliAjtBrkUr7K%2bg%3d%3d",
+    "text": "General Ordinances",
+    "file": "data/city_files/College_Station/f786c8_college-station-cemetery-ordinances-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/g4zohhxs/college-station-cemetery-ordinances.pdf",
+    "text": "College Station Cemetery Ordinances",
+    "file": "data/city_files/College_Station/39d448_college-station-cemetery-ordinances.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/liinjxpz/cemetery-bench-installation-permit-form.pdf",
+    "text": "Cemetery Bench Installation Permit - Form",
+    "file": "data/city_files/College_Station/da5943_cemetery-bench-installation-permit-form.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/xmudg4xp/cs_home_of_tamu-anneboykin.pdf",
+    "text": "A City on the Right Track",
+    "file": "data/city_files/College_Station/c521d9_cs_home_of_tamu-anneboykin.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/qzecqekl/bikeablechecklist.pdf",
+    "text": "Bikeable Checklist",
+    "file": "data/city_files/College_Station/3481e4_bikeablechecklist.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/ztalsnpi/bikemap2024.pdf",
+    "text": "2024 Bike Map",
+    "file": "data/city_files/College_Station/00ed70_bikemap2024.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cstx.gov/media/apqlff4w/ng_district.pdf",
+    "text": "Northgate District Map",
+    "file": "data/city_files/College_Station/333939_ng_district.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cstx.gov/media/cdtagahd/northgate_parking.pdf",
+    "text": "Northgate Parking Asset Locations",
+    "file": "data/city_files/College_Station/6c3a00_northgate_parking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/pebfrfvv/ng_surfacelot.pdf",
+    "text": "View Map",
+    "file": "data/city_files/College_Station/4acfdb_ng_surfacelot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/eo5l50b5/parkmobilezonemap.pdf",
+    "text": "PARKING MAP",
+    "file": "data/city_files/College_Station/ace599_parkmobilezonemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/abzbxobd/ng_loadingzones.pdf",
+    "text": "see map for location",
+    "file": "data/city_files/College_Station/56b0c2_ng_loadingzones.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/5nxfs1on/game-day-traffic-map_final.pdf",
+    "text": "",
+    "file": "data/city_files/College_Station/a77ff4_game-day-traffic-map_final.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/cvbgfoye/lcp-map_85x11.pdf",
+    "text": "Trails Map",
+    "file": "data/city_files/College_Station/b1fa21_lcp-map_85x11.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/lxkdzbt1/lickcreekparkgreenway.pdf",
+    "text": "Click here to view the map",
+    "file": "data/city_files/College_Station/3414f7_lickcreekparkgreenway.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/ruldxlku/cityhallmap.pdf",
+    "text": "Interior Map of City Hall",
+    "file": "data/city_files/College_Station/318338_cityhallmap.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/vrtlpvac/historical-marker-application.pdf",
+    "text": "Historical Marker Program Application Packet",
+    "file": "data/city_files/College_Station/08d524_historical-marker-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/0e8f97be3d544d1ab0045144a9aa968c/": "Parks, Trails and Playgrounds",
+   "https://data.cstx.gov/": "Open Data",
+   "https://data-cstx.opendata.arcgis.com/": "Download GIS Data",
+   "https://experience.arcgis.com/experience/187d1b84bc6d431fb554894c2e57bf26": "Application 1940 Historical Imagery Slider A web experience that allows the user to compare historical College Station i",
+   "https://experience.arcgis.com/experience/c673b79b85fd4e32ab263419bcfd5fd4": "Application Bike Parking Map The Bike Parking Map highlights bike parking locations across College Station, with details",
+   "https://experience.arcgis.com/experience/9468b19d6be24052a055728d7d8d9d63": "Application City of College Station Interactive Map This map contains various features and provides relevant information",
+   "https://experience.arcgis.com/experience/7dbacf53445540cea1274661963d1c94/": "Application Community Services Dashboard This dashboard provides the end user with two interactive maps, one of which di",
+   "https://experience.arcgis.com/experience/55b46648610e44c8bf11fb469d649dfe/page/Main": "Application Economic Development Map The interactive Economic Development Map shows business parks, retail districts, la",
+   "https://experience.arcgis.com/experience/0e8f97be3d544d1ab0045144a9aa968c": "Application Parks Take a look at the parks and amenities College Station has to offer. Tags: parks, recreation, amenitie",
+   "https://cstx.maps.arcgis.com/apps/webappviewer/index.html?id=1b2d3c188cd5479e9dbc61b6448f714b": "Application Planning and Development This map shows the most recent plat, subdivision, zoning, and property information.",
+   "https://experience.arcgis.com/experience/af2324705a1f4ece8645587d3d49f017": "Application Solid Waste Collection Days This app displays an interactive map of the City's collection days for bulk and ",
+   "https://experience.arcgis.com/experience/eec356bd8ec043b3a66b13706eb30e29/": "Application Transportation Infrastructure Maps This web experience displays three interactive maps that allow the end us"
+  }
+ },
+ "Lowell": {
+  "files": [
+   {
+    "url": "https://www.asme.org/wwwasmeorg/media/resourcefiles/aboutasme/who%20we%20are/engineering%20history/landmarks/107-lowell-power-canal-system.pdf",
+    "text": "Lowell Canal System Historic Civil Engineering and Mechanical Engineering Landmark Publication",
+    "file": "data/city_files/Lowell/61efce_107-lowell-power-canal-system.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.axisgis.com/LowellMA": "",
+   "https://lowell-gis-web-applications-lowell.hub.arcgis.com/": "Lowell GIS Hub Page",
+   "https://gis.lowellma.gov/": "City of Lowell Public GIS website",
+   "https://gis.vgsi.com/lowellma/": "City of Lowell Vision online assessment databas",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=3bd05fc60f2f44f08ec5074d4eb8dbea": "Election Wards and Precincts",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=5154b33cfc4849abbbcbbc81cfa421af": "City Department Location Web Map",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=a3dfa6cb0a704c9ca0a5e43de6f80d26": "Open Space",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=cb252110bac24a82abc0dfd640082eac": "Parking Facilities Web Map Application",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=25efe8648d224c64a0b30cce1a0b52f5": "Zoning Web Map",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=85a919537ac940dd9210878b3c778817": "map",
+   "https://lowell-gis-web-applications-lowell.hub.arcgis.com/apps/ec0704ea41dc4d46a982e9af6d4117ec/explore": "areas",
+   "https://www.axisgis.com/lowellma": "Lowell City GIS"
+  }
+ },
+ "Miami Gardens": {
+  "files": [],
+  "portals": {}
+ },
+ "Centennial": {
+  "files": [
+   {
+    "url": "https://www.centennialco.gov/files/sharedassets/public/v/2/documents/public-safety/e-bike-flyer-final-8.20.26-ada.pdf",
+    "text": "Educational Flyer (PDF, 1MB)",
+    "file": "data/city_files/Centennial/e33cad_e-bike-flyer-final-8.20.26-ada.pdf",
+    "rows": 14,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.centennialco.gov/files/sharedassets/public/v/3/documents/public-works/colorado-euclid-report-508-11.08.24.pdf",
+    "text": "Colorado Boulevard and Euclid Avenue Study (PDF, 18MB)",
+    "file": "data/city_files/Centennial/fd5dcd_colorado-euclid-report-508-11.08.24.pdf",
+    "rows": 310,
+    "bike_rows": 35
+   },
+   {
+    "url": "https://www.centennialco.gov/files/sharedassets/public/v/5/documents/public-works/parking-permit-application-rev-ada.pdf",
+    "text": "parking permit application (PDF, 139KB)",
+    "file": "data/city_files/Centennial/52a529_parking-permit-application-rev-ada.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://open-centennial.opendata.arcgis.com/apps/95455f12814d42ecbc972009ad704f43/explore": "Trails and Recreation Tour",
+   "https://centennial.maps.arcgis.com/apps/ZoneLookup/index.html?appid=16384b6aea6046d6826d14e43259ff20": "Property Search",
+   "https://open-centennial.opendata.arcgis.com/": "Maps and Open Data portal",
+   "https://centennial.maps.arcgis.com/apps/Embed/index.html?webmap=b431b5cfe53f4a28a0a14bc3c3fb78ad&extent=-105.1255,39.4991,-104.6184,39.7049&zoom=true&scale=true&search=true&searchextent=false&basemap_toggle=true&alt_basemap=hybrid&disable_scroll=true&theme=light": "View larger map",
+   "https://centennial.maps.arcgis.com/apps/Embed/index.html?webmap=4c59d956e2384bb6898085030d2c347f&extent=-105.0779,39.5002,-104.5708,39.706&zoom=true&scale=true&basemap_toggle=true&alt_basemap=topo&disable_scroll=true&theme=light": "View larger map",
+   "https://open-centennial.opendata.arcgis.com/apps/92826c00f9e44991af371bf0ab11c0a4/explore": "Explore our Interactive Park Map",
+   "https://sspr.maps.arcgis.com/apps/webappviewer/index.html?id=27fb075d4a6346d598dc29b553c3c288&find=David%20A.%20Lorenz%20Regional%20Park": "David Lorenz Regional Park",
+   "https://storymaps.arcgis.com/stories/7f16d9792d10456f8590d3dac8a9840d": "Adopt-a-Street Program Map",
+   "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fcentennial.maps.arcgis.com%2fapps%2finstant%2fbasic%2findex.html%3fappid%3d3ee65ae01a144f5b9e2c1e6c7fae2ab6&c=E,1,gEBFaIooV6g6e-hr_5JhXgDvc2TW2WTPNYkhLfqZL9DOVgR_8CjxEE3KFjYZnxVvndmjiA4fElI-z9Nq9nZsgAIwUzv1DWf_CSi6o10oWy4,&typo=1": "designated truck routes"
+  }
+ },
+ "Carmel": {
+  "files": [
+   {
+    "url": "https://www.carmelclayparks.com/wp-content/uploads/2019/01/8.5X11-Monon-Greenway-Map-2017.pdf",
+    "text": "View Monon Greenway Map",
+    "file": "data/city_files/Carmel/0430ed_8.5X11-Monon-Greenway-Map-2017.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://carmelutilities.com/wp-content/uploads/2021/11/2018_Route_Map.pdf",
+    "text": "Click here",
+    "file": "data/city_files/Carmel/859ff0_2018_Route_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://carmel-gis-cityofcarmel.hub.arcgis.com/": "GIS Mapping",
+   "https://experience.arcgis.com/experience/a26080ed41b8465e84545c62265ade8c/page/General-Viewer/": "Engineering GIS Viewer",
+   "https://experience.arcgis.com/experience/ff9f738d9c3a46c7be420e1323231d6f/": "Access the completed survey here.",
+   "https://experience.arcgis.com/experience/a26080ed41b8465e84545c62265ade8c/page/Public-Hearings/": "Active Public Hearings",
+   "https://carmelgis.carmel.in.gov/maps/apps/experiencebuilder/experience/?id=c63fe8773d854f539b1d3d63ebbfa865": "Residential Street Parking Map",
+   "https://carmelgis.carmel.in.gov/maps/apps/dashboards/7c2fceb6140f4185bb028d1b2d3a47f0": "Carmel Trails"
+  }
+ },
+ "Columbiana County": {
+  "files": [],
+  "portals": {}
+ },
+ "Grant County": {
+  "files": [],
+  "portals": {}
+ },
+ "Greenburgh": {
+  "files": [],
+  "portals": {
+   "https://www.axisgis.com/greenburghny/": "GIS Maps, Assessment and Tax Information",
+   "https://www.axisgis.com/greenburghny": "GIS Maps, Tax and Assessment Information"
+  }
+ },
+ "Tracy": {
+  "files": [],
+  "portals": {}
+ },
+ "Mount Pleasant": {
+  "files": [],
+  "portals": {
+   "https://gis-tomp.hub.arcgis.com/": "",
+   "https://tomp.maps.arcgis.com/apps/webappviewer/index.html?id=786bb2a435e54f479b12fb2db31b473d": "GIS Maps",
+   "https://experience.arcgis.com/experience/9599ea2573524a1c9db78e9041c14fcd/": "Parks Finder",
+   "https://experience.arcgis.com/experience/0ad75fa89d3746ba8b5eab878b6661a4": "Current Board and Commission Applications Map"
+  }
+ },
+ "Burke County": {
+  "files": [],
+  "portals": {
+   "http://burkenc.maps.arcgis.com/apps/webappviewer/index.html?id=537973957640476d99c3301fc1215b1a": "Map of Recycling Centers",
+   "http://gis.burkenc.org/": "Online Map Viewer"
+  }
+ },
+ "Lake Charles": {
+  "files": [],
+  "portals": {}
+ },
+ "Warwick": {
+  "files": [],
+  "portals": {
+   "https://www.axisgis.com/WarwickRI/": "Warwick GIS Mapping",
+   "https://gis.vgsi.com/warwickri/Default.aspx": "Assessor's Online Database",
+   "https://www.axisgis.com/warwickri/": "Web GIS page (link)."
+  }
+ },
+ "Gastonia": {
+  "files": [
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/HDC/Repairing_Old_Windows.pdf",
+    "text": "Repairing Old Windows",
+    "file": "data/city_files/Gastonia/1d7a4c_Repairing_Old_Windows.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gastonianc.gov/images/files/planning/Downtown_Parking/Downtown_Parking_2025.pdf",
+    "text": "",
+    "file": "data/city_files/Gastonia/2c6afd_Downtown_Parking_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/Downtown_Parking/Downtown_Parking_2025.pdf",
+    "text": "",
+    "file": "data/city_files/Gastonia/ed4848_Downtown_Parking_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/Maps/zonemap_E_09-04-2024.pdf",
+    "text": "City Zoning Map",
+    "file": "data/city_files/Gastonia/01d838_zonemap_E_09-04-2024.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/Maps/Updated_WARD_MAP_2026.pdf",
+    "text": "Ward Map",
+    "file": "data/city_files/Gastonia/4a040e_Updated_WARD_MAP_2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/Maps/COG_Developments_2000_Loc_Update_11-17-2025.pdf",
+    "text": "",
+    "file": "data/city_files/Gastonia/c4bb75_COG_Developments_2000_Loc_Update_11-17-2025.pdf",
+    "rows": 110,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/Maps/Developments__Apartments__2019-Proposed_06-2026.pdf",
+    "text": "(2019 to Future Development)",
+    "file": "data/city_files/Gastonia/895a84_Developments__Apartments__2019-Proposed_06-2026.pdf",
+    "rows": 20,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/Maps/Apartments_status_1-5-2022_combined.pdf",
+    "text": "Apartment Projects in Gastonia Map",
+    "file": "data/city_files/Gastonia/4c628c_Apartments_status_1-5-2022_combined.pdf",
+    "rows": 97,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/documents/maps/Comp-Trans-Plan-Map-20141002.pdf",
+    "text": "Comprehensive Transportation Plan",
+    "file": "data/city_files/Gastonia/a663c7_Comp-Trans-Plan-Map-20141002.pdf",
+    "rows": 18,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/documents/maps/greenway_plan.pdf",
+    "text": "Greenway Plan",
+    "file": "data/city_files/Gastonia/cde090_greenway_plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/documents/maps/City-Street-Map-20140930.pdf",
+    "text": "City Street Map",
+    "file": "data/city_files/Gastonia/8a00d7_City-Street-Map-20140930.pdf",
+    "rows": 20,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/Maps/Opportunity_Zones.pdf",
+    "text": "Opportunity Zone Map",
+    "file": "data/city_files/Gastonia/1fda45_Opportunity_Zones.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/documents/maps/OaklandDD09-02-2014.pdf",
+    "text": "Oakland Design District",
+    "file": "data/city_files/Gastonia/7c5c41_OaklandDD09-02-2014.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/documents/maps/Final_MSD_Expansion_5-25_overview_rebuild_PROver.pdf",
+    "text": "Municipal Service District",
+    "file": "data/city_files/Gastonia/54f49d_Final_MSD_Expansion_5-25_overview_rebuild_PROver.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/documents/maps/yorkchesterLHD09-02-2014.pdf",
+    "text": "York-Chester Local Historic District",
+    "file": "data/city_files/Gastonia/e82396_yorkchesterLHD09-02-2014.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/documents/maps/brookwoodLHD09-02-2014.pdf",
+    "text": "Brookwood Local Historic District",
+    "file": "data/city_files/Gastonia/3c2947_brookwoodLHD09-02-2014.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/documents/maps/DowntownNRHD09-02-2014.pdf",
+    "text": "Downtown National Historic Distrct",
+    "file": "data/city_files/Gastonia/13fc8f_DowntownNRHD09-02-2014.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/documents/maps/yorkchesterNRHD09-02-2014.pdf",
+    "text": "York-Chester National Historic Distrct",
+    "file": "data/city_files/Gastonia/0e5d81_yorkchesterNRHD09-02-2014.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.gastonianc.gov/images/files/planning/documents/maps/loraymillNRHD09-02-2014.pdf",
+    "text": "Loray Mill National Historic District",
+    "file": "data/city_files/Gastonia/af9fc4_loraymillNRHD09-02-2014.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gastonianc.gov/images/ADA_OPERATING_POLICY.pdf",
+    "text": "ADA Paratransit Service Operating Policy",
+    "file": "data/city_files/Gastonia/e37d2e_ADA_OPERATING_POLICY.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gastonianc.gov/images/ADA_-_CERTIFICATION_OF_ELIGIBILITY.pdf",
+    "text": "ADA Paratransit Service Application",
+    "file": "data/city_files/Gastonia/e8e5de_ADA_-_CERTIFICATION_OF_ELIGIBILITY.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gastonianc.gov/images/Gastonia_Transit_ADA_Complaint_Policy_2023.pdf",
+    "text": "Gastonia Transit ADA Complaint Policy",
+    "file": "data/city_files/Gastonia/f12084_Gastonia_Transit_ADA_Complaint_Policy_2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gastonianc.gov/images/Gastonia_Transit_ADA_Complaint_Form_2023.pdf",
+    "text": "Gastonia Transit ADA Complaint Form",
+    "file": "data/city_files/Gastonia/ae340e_Gastonia_Transit_ADA_Complaint_Form_2023.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gastonianc.gov/images/Gastonia_Transit_Reasonable_Modification_Policy_2023.pdf",
+    "text": "Gastonia Transit Reasonable Modification Policy",
+    "file": "data/city_files/Gastonia/177adf_Gastonia_Transit_Reasonable_Modification_Policy_2023.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/124b41fac8aa42959265ff9f1eaea3f3": "Address Information Search - Residential",
+   "https://storymaps.arcgis.com/stories/aa37e5dadb604297b42ed6fbc033f798": "Gastonia Great Places",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=119f1f51f7b544e18d2cf0747dd690a5&extent=-81.2011,35.2487,-81.1694,35.2632": "York-Chester",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=f3fd91fa17e24ebeb11e2a28577aecfb&extent=-81.1982,35.2439,-81.1823,35.2511": "Brookwood",
+   "https://gis-data-hub-gastonianc.hub.arcgis.com/": "https://gis-data-hub-gastonianc.hub.arcgis.com/",
+   "https://gastonianc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=e36ae116b79e4e5b8a568fdf3dcd338c": "City Zoning Map",
+   "https://gastonianc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=7098a2125dfd4f83b062fefb5535eecf": "Ward Map",
+   "https://gastonianc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=89acc8ddcbc1406e91afc7489aa87217": "Map of Residential Development",
+   "https://gastonianc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=199e8abdb3af4d5daf2a7616687696a4": "GCLMPO Map"
+  }
+ },
+ "Alameda": {
+  "files": [
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/2/departments/alameda/transportation/parking/rdpz-policy-and-application-2025_05.pdf",
+    "text": "Policy for Residential Disabled Parking Zones and Application (PDF, 412KB)",
+    "file": "data/city_files/Alameda/b1f7e5_rdpz-policy-and-application-2025_05.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://alamedaca.gov/files/sharedassets/public/v/6/public-works/pwpermits/no-parking/no-parking-application.pdf",
+    "text": "temporary no parking application",
+    "file": "data/city_files/Alameda/322577_no-parking-application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/content/public/departments/public-works-department/street-sweeping-signs-policy-2023-03-final.pdf",
+    "text": "Policy for No Parking Street Sweeping Signs",
+    "file": "data/city_files/Alameda/cec77b_street-sweeping-signs-policy-2023-03-final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/departments/alameda/transportation/parking/draft_ferryterminalparkingpricingstrategy_updated12-8-2022.pdf",
+    "text": "Draft Ferry Terminal Parking Pricing Strategy",
+    "file": "data/city_files/Alameda/2d40e9_draft_ferryterminalparkingpricingstrategy_updated12-8-2022.pdf",
+    "rows": 125,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/departments/alameda/transportation/parking/ferryterminalparking_presentation_updated12-8-2022.pdf",
+    "text": "Presentation slides",
+    "file": "data/city_files/Alameda/46f47d_ferryterminalparking_presentation_updated12-8-2022.pdf",
+    "rows": 22,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/transportation/parking/lpr_policy_ccapproved5-5-20-1yeardataretention_1.pdf",
+    "text": "Parking Enforcement Automated License Plate Reader (ALPR) Policy",
+    "file": "data/city_files/Alameda/805e3b_lpr_policy_ccapproved5-5-20-1yeardataretention_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/base-reuse/asset-management-rfps/2026-10-29-appliance-addendum-1-extending-deadline.pdf",
+    "text": "Addendum 1 to Request for Proposals for On-Call Residential Appliance Repair Services (PDF, 185KB)",
+    "file": "data/city_files/Alameda/9d37e8_2026-10-29-appliance-addendum-1-extending-deadline.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/base-reuse/asset-management-rfps/2026-11-09-addendum-2-appliance-repair-rfp.pdf",
+    "text": "Addendum 2 to the RFP for Residential On-Call Appliance Repair Services (PDF, 154KB)",
+    "file": "data/city_files/Alameda/d4f7c2_2026-11-09-addendum-2-appliance-repair-rfp.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/2/departments/alameda/base-reuse/asset-management-rfps/rfp-appliance-repair.pdf",
+    "text": "Request for Proposals: On-Call Residential Appliance Repair Services (PDF, 146KB)",
+    "file": "data/city_files/Alameda/328196_rfp-appliance-repair.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/historical-advisory-board-bylaws-rules-and-procedures-rev-4-6-23.pdf",
+    "text": "HAB Bylaws, Rules & Procedures rev 4/6/23 (PDF, 57KB)",
+    "file": "data/city_files/Alameda/4cbe7e_historical-advisory-board-bylaws-rules-and-procedures-rev-4-6-23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/article-xxviii-historical-advisory-board.pdf",
+    "text": "Article XXVIII (PDF, 12KB)",
+    "file": "data/city_files/Alameda/f0ad6b_article-xxviii-historical-advisory-board.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/hab-resolutions/2015_hab_resos_final.pdf",
+    "text": "2015 Historical Advisory Board Resolutions (PDF, 4MB)",
+    "file": "data/city_files/Alameda/56acb4_2015_hab_resos_final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/hab-resolutions/2016-hab-resos-final.pdf",
+    "text": "2016 Historical Advisory Board Resolutions (PDF, 7MB)",
+    "file": "data/city_files/Alameda/0a1490_2016-hab-resos-final.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/hab-resolutions/2017-resolutions-for-web-site-1-8-18.pdf",
+    "text": "2017 Historical Advisory Board Resolutions (PDF, 4MB)",
+    "file": "data/city_files/Alameda/76f9e2_2017-resolutions-for-web-site-1-8-18.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/hab-resolutions/2018-historical-advisory-board-resolutions.pdf",
+    "text": "2018 Historical Advisory Board Resolutions (PDF, 6MB)",
+    "file": "data/city_files/Alameda/381de8_2018-historical-advisory-board-resolutions.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/hab-resolutions/2019-historical-advisory-board-resolutions.pdf",
+    "text": "2019 Historical Advisory Board Resolutions (PDF, 5MB)",
+    "file": "data/city_files/Alameda/b30199_2019-historical-advisory-board-resolutions.pdf",
+    "rows": 14,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/hab-resolutions/2020-historical-advisory-board-resolutions.pdf",
+    "text": "2020 Historical Advisory Board Resolutions (PDF, 1MB)",
+    "file": "data/city_files/Alameda/b339fc_2020-historical-advisory-board-resolutions.pdf",
+    "rows": 6,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/hab-resolutions/2021-historical-advisory-board-resolutions.pdf",
+    "text": "2021 Historical Advisory Board Resolutions (PDF, 639KB)",
+    "file": "data/city_files/Alameda/dc7535_2021-historical-advisory-board-resolutions.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/hab-resolutions/2022-historical-advisory-board-resolutions.pdf",
+    "text": "2022 Historical Advisory Board Resolutions (PDF, 521KB)",
+    "file": "data/city_files/Alameda/6c1029_2022-historical-advisory-board-resolutions.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/hab-resolutions/2023-hab-final-resos-combined.pdf",
+    "text": "2023 Historical Advisory Board Resolutions (PDF, 421KB)",
+    "file": "data/city_files/Alameda/3758f1_2023-hab-final-resos-combined.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/hab-resolutions/2024-hab-resolutions.pdf",
+    "text": "2024 Historical Advisory Board Resolutions (PDF, 446KB)",
+    "file": "data/city_files/Alameda/a24457_2024-hab-resolutions.pdf",
+    "rows": 51,
+    "bike_rows": 24
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/building-planning-transportation/hab-resolutions/2025-historical-advisory-board-resolutions.pdf",
+    "text": "2025 Historical Advisory Board Resolutions (PDF, 663KB)",
+    "file": "data/city_files/Alameda/bd800a_2025-historical-advisory-board-resolutions.pdf",
+    "rows": 142,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://cao-94612.s3.us-west-2.amazonaws.com/documents/Bikemap_2024-web.pdf",
+    "text": "OakDOT’s bike map",
+    "file": "data/city_files/Alameda/205a9d_Bikemap_2024-web.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/1/departments/alameda/transportation/water-shuttle/2004-ebbc-newsletter-jls-water-taxi.pdf",
+    "text": "Alameda Oakland Bike Ferry service (PDF, 792KB)",
+    "file": "data/city_files/Alameda/4c9377_2004-ebbc-newsletter-jls-water-taxi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alamedaca.gov/files/assets/public/v/2/departments/alameda/building-planning-transportation/building/how-to-search-for-historical-documents.pdf",
+    "text": "Learn how to Search for Historical Documents. (PDF, 224KB)",
+    "file": "data/city_files/Alameda/b7684a_how-to-search-for-historical-documents.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://alamedaca.maps.arcgis.com/apps/instant/sidebar/index.html?id=f0a5bc134046441c9762b75f3072fa1e&appid=f0a5bc134046441c9762b75f3072fa1e": "City of Alameda Paving Moratorium Map (Online Viewer)",
+   "https://alamedaca.maps.arcgis.com/home/item.html?id=5ef56aaca7034f188107642a8b50864c": "Click here"
+  }
+ },
+ "Valencia County": {
+  "files": [
+   {
+    "url": "https://msc.fema.gov/msccontent/Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "text": "Flood\n\t\t\t\t\t\tHazard Mapping Updates Overview Fact Sheet",
+    "file": "data/city_files/Valencia_County/9a4d0e_Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "rows": 52,
+    "bike_rows": 11
+   }
+  ],
+  "portals": {}
+ },
+ "Mount Vernon": {
+  "files": [],
+  "portals": {}
+ },
+ "Waukesha": {
+  "files": [],
+  "portals": {}
+ },
+ "Union City": {
+  "files": [],
+  "portals": {}
+ },
+ "Georgetown": {
+  "files": [],
+  "portals": {}
+ },
+ "Nacogdoches County": {
+  "files": [],
+  "portals": {}
+ },
+ "Brookline": {
+  "files": [],
+  "portals": {}
+ },
+ "Garfield County": {
+  "files": [
+   {
+    "url": "https://www.coloradosos.gov/pubs/newsRoom/pressReleases/2026/20261113GeneralElectionBallotReturn.pdf",
+    "text": "Secretary of State – total ballots returned in Colorado",
+    "file": "data/city_files/Garfield_County/332208_20261113GeneralElectionBallotReturn.pdf",
+    "rows": 95,
+    "bike_rows": 12
+   }
+  ],
+  "portals": {}
+ },
+ "Richland": {
+  "files": [],
+  "portals": {}
+ }
+}
