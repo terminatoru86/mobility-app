@@ -1,0 +1,1442 @@
+{
+ "Arlington TX": {
+  "files": [
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/3/city-council/documents/city-council-districts-map.pdf",
+    "text": "Detailed District Map (PDF, 887KB)",
+    "file": "data/city_files/Arlington_TX/eee41d_city-council-districts-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/2/city-secretary/documents/city-code-of-ordinances/garage-sales-chapter.pdf",
+    "text": "Read the Garage Sales Ordinance (PDF, 2MB)",
+    "file": "data/city_files/Arlington_TX/7aef68_garage-sales-chapter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/1/city-secretary/documents/city-code-of-ordinances/cemetery-chapter.pdf",
+    "text": "Arlington Cemetery Ordinance (PDF, 3MB)",
+    "file": "data/city_files/Arlington_TX/210079_cemetery-chapter.pdf",
+    "rows": 5,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/1/public-works/documents/pavingdrainagewatersewer-details/pavingdrainage/paving/street-trech-repair/permanent-backfill-and-repair.pdf",
+    "text": "Permanent Backfill and Repair (PDF) (PDF, 119KB)",
+    "file": "data/city_files/Arlington_TX/b89e35_permanent-backfill-and-repair.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/1/public-works/documents/pavingdrainagewatersewer-details/pavingdrainage/paving/street-trech-repair/temporary-pavement-repair.pdf",
+    "text": "Temporary Pavement Repair (PDF) (PDF, 47KB)",
+    "file": "data/city_files/Arlington_TX/44ed98_temporary-pavement-repair.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/1/public-works/documents/pavingdrainagewatersewer-details/pavingdrainage/paving/pavement-marking/transition-from-two-lane-undivided-to-four-lane-divided.pdf",
+    "text": "Transition From Two Lane Undivided to Four Lane Divided (PDF) (PDF, 39KB)",
+    "file": "data/city_files/Arlington_TX/64b6d9_transition-from-two-lane-undivided-to-four-lane-divided.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/1/public-works/documents/entertainment-district-sidewalk-map.pdf",
+    "text": "Project Location Map (PDF, 4MB)",
+    "file": "data/city_files/Arlington_TX/fe8d43_entertainment-district-sidewalk-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://arlingtontrolley.com/wp-content/uploads/ATA-Rack-Card-2021.pdf",
+    "text": "Arlington Trolley Brochure",
+    "file": "data/city_files/Arlington_TX/02df98_ATA-Rack-Card-2021.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/1/public-works/documents/mansfield_webb_road_silo_rd_to_collins_street_location_map.pdf",
+    "text": "Mansfield Webb Road (PDF, 393KB)",
+    "file": "data/city_files/Arlington_TX/f0d114_mansfield_webb_road_silo_rd_to_collins_street_location_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/2/public-works/documents/approved-truck-route.pdf",
+    "text": "Approved Truck Route.pdf (PDF, 2MB)",
+    "file": "data/city_files/Arlington_TX/767b66_approved-truck-route.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/3/parks-amp-recreation/documents/parks/sheri-capehart-nature-preserve-trail-map.pdf",
+    "text": "Sheri Capehart Nature Preserve Trail Map (2025) (PDF, 459KB)",
+    "file": "data/city_files/Arlington_TX/3d8706_sheri-capehart-nature-preserve-trail-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/5/public-works/documents/street-condition-map.pdf",
+    "text": "Street Condition Map (PDF, 2MB)",
+    "file": "data/city_files/Arlington_TX/218ba7_street-condition-map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/3/public-works/documents/2025-street-maintenance-projects.pdf",
+    "text": "2025 Street Maintenance Projects Location Map (PDF, 3MB)",
+    "file": "data/city_files/Arlington_TX/6ad686_2025-street-maintenance-projects.pdf",
+    "rows": 115,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/5/public-works/documents/2026-street-maintenance-projects.pdf",
+    "text": "2026 Street Maintenance Projects Location Map (PDF, 7MB)",
+    "file": "data/city_files/Arlington_TX/dc5d2c_2026-street-maintenance-projects.pdf",
+    "rows": 64,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.arlingtontx.gov/Government/Data-Information/Open-Data": "Open Data",
+   "https://www.arlingtontx.gov/Government/Data-Information/Data-Information-Directory/Open-Data": "Open Data",
+   "https://arlingtontx.gov/opendata": "Back to top",
+   "https://www.arlingtontx.gov/Government/Data-Information/Data-Information-Directory/Open-Data?oc_lang=en-US": "English Select this as your preferred language",
+   "https://www.arlingtontx.gov/Government/Data-Information/Data-Information-Directory/Open-Data/Council-Legislative-Documents": "Council & Legislative Documents",
+   "https://www.arlingtontx.gov/Government/Data-Information/Data-Information-Directory/Open-Data/City-Services-Satisfaction-Surveys": "City Services Satisfaction Surveys",
+   "https://www.arlingtontx.gov/Government/Data-Information/Data-Information-Directory/Open-Data/Plat-Search": "Back to top",
+   "https://opendata.arlingtontx.gov/": "Open Data Center",
+   "https://opendata.arlingtontx.gov/pages/interactive-maps": "Web Maps & Apps",
+   "https://arlingtontx.maps.arcgis.com/home/webmap/viewer.html?webmap=12f65dc4422b41a5bed1cbafd5df08d3&": "larger Garage Sale Permit map",
+   "https://experience.arcgis.com/experience/b194e38bd41d41d58acb70b50b327e28": "Project Tracker Map",
+   "https://experience.arcgis.com/experience/dc8b2169f0c346219ee6453e3bfdf256": "Street Interactive Map",
+   "https://experience.arcgis.com/experience/076da977b724420388031223258b6105/page/Bond-Program-Overview/": "Bond Tracker Dashboard",
+   "https://experience.arcgis.com/experience/eb182e20b4c64d8da0d7b9a3e138ab29": "view the Arlington Cemetery Map here",
+   "https://www.arlingtontx.gov/News-Articles/2022/March/Explore-Arlingtons-Datasets-and-Maps-for-Open-Data-Day-2022": "Back to top",
+   "https://www.arlingtontx.gov/News-Articles/2022/March/Explore-Arlingtons-Datasets-and-Maps-for-Open-Data-Day-2022?oc_lang=en-US": "English Select this as your preferred language",
+   "https://opendataday.org/": "Open Data Day",
+   "https://experience.arcgis.com/experience/9739ccfaa0de451a856ee76f5f63b442": "Arlington Development Dashboard",
+   "https://data-arlingtontx.opendata.arcgis.com/datasets/arlingtontx::hotel-inspections/explore?location=32.702900%2C-97.136550%2C12.64": "Hotel Inspection Scores",
+   "https://data-arlingtontx.opendata.arcgis.com/datasets/health-requests-for-service/explore?location=32.712850%2C-97.127200%2C11.98": "Health Requests for Service",
+   "https://experience.arcgis.com/experience/27185db29a394b00a1efc32955c726b6": "CoA TR SSA Dashboard (arcgis.com)",
+   "https://www.arlingtontx.gov/Government/Data-Information/Data-Information-Directory/Open-Data/Plat-Search?oc_lang=en-US": "English Select this as your preferred language",
+   "https://gis.arlingtontx.gov/mapsonline/": "Arlington Maps Online",
+   "https://experience.arcgis.com/experience/a2fceb484bd04e2c9f795e8c9ce78786": "Arlington Traffic Cameras",
+   "https://experience.arcgis.com/experience/bb73ac696f8c4bc49c3f735f19ebbf16": "",
+   "https://gis.arlingtontx.gov/mapsonline/?ParcelId=6902270": "1000 SE Green Oaks Blvd"
+  }
+ },
+ "Savannah GA": {
+  "files": [],
+  "portals": {}
+ },
+ "Buca district": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Louis": {
+  "files": [],
+  "portals": {}
+ },
+ "Oxnard": {
+  "files": [],
+  "portals": {}
+ },
+ "Oceanside": {
+  "files": [],
+  "portals": {}
+ },
+ "McAllen": {
+  "files": [
+   {
+    "url": "https://gismap.mcallen.net/maps/BrushMap2026.pdf",
+    "text": "",
+    "file": "data/city_files/McAllen/b54a1e_BrushMap2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismap.mcallen.net/maps/Facility_Map_Emergency030521.pdf",
+    "text": "",
+    "file": "data/city_files/McAllen/85d4b2_Facility_Map_Emergency030521.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/september-17-2026-approved-minutes.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/0cd783_september-17-2026-approved-minutes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/october-29-2026-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/666954_october-29-2026-packet.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/october-29-2026-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/ce546c_october-29-2026-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/september-17-2026-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/671680_september-17-2026-packet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/september-17-2026-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/ac8db1_september-17-2026-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/august-26-2026-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/37544d_august-26-2026-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/july-30-2026-approved-mins.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/c91fba_july-30-2026-approved-mins.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/august-26-2026-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/67f289_august-26-2026-packet.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/june-30-2026-approved-mins.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/96213d_june-30-2026-approved-mins.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/july-30-2026-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/e4f6d9_july-30-2026-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/july-30-2026-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/c9af46_july-30-2026-packet.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/april-1-2026-approved-mins.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/952099_april-1-2026-approved-mins.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/june-30-2026-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/b0f34b_june-30-2026-packet.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/june-30-2026-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/c48014_june-30-2026-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/june-18-2026-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/f9e9bb_june-18-2026-packet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/june-18-2026-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/a850c9_june-18-2026-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/april-1-2026-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/fd8d0f_april-1-2026-packet.pdf",
+    "rows": 93,
+    "bike_rows": 26
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/april-1-2026-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/b39034_april-1-2026-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/december-4-2025-approved-mins.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/77d42d_december-4-2025-approved-mins.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/september-18-2025-approved-miins.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/93fd05_september-18-2025-approved-miins.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/may-28-2025-approved.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/d74a38_may-28-2025-approved.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/may-21-2025.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/3ce794_may-21-2025.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/december-4-2025-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/8156a1_december-4-2025-packet.pdf",
+    "rows": 100,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/december-4-2025-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/7c372c_december-4-2025-agenda.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/september-24-2025-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/7b0ec1_september-24-2025-packet.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/september-24-2025-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/ae2614_september-24-2025-agenda.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/september-18-2025-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/f671f8_september-18-2025-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/february-19-2025-approved-mins.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/ce469b_february-19-2025-approved-mins.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/february-19-2025-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/599325_february-19-2025-packet.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/february-19-2025-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/cf72f0_february-19-2025-agenda.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/january-29-2025-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/ba13b5_january-29-2025-packet.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/january-29-2025-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/50e727_january-29-2025-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/april-24-2024-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/4f6f04_april-24-2024-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/september-25-2025-approved-mins.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/c1d09f_september-25-2025-approved-mins.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/november-20-2024-agenda.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/26d1d1_november-20-2024-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/november-20-2024-packet.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/068147_november-20-2024-packet.pdf",
+    "rows": 256,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/september-11-2024-approved-mins.pdf?sfvrsn=2",
+    "text": "Download",
+    "file": "data/city_files/McAllen/5c6cbb_september-11-2024-approved-mins.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mcallen.net/docs/default-source/advisory-boards/historical/september-11-2024-approved.pdf?sfvrsn=4",
+    "text": "Download",
+    "file": "data/city_files/McAllen/6cab64_september-11-2024-approved.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://mcallen.maps.arcgis.com/apps/webappviewer/index.html?id=8293e66a04744505ab3cc6c145e764a4": "Garage Sales",
+   "http://www.arcgis.com/apps/webappviewer/index.html?id=7478cd2e370a413f95f790255e6409b2": "Road Closures",
+   "https://mcallen.maps.arcgis.com/apps/webappviewer/index.html?id=7478cd2e370a413f95f790255e6409b2": "Road Closures",
+   "http://mcallen.maps.arcgis.com/apps/webappviewer/index.html?id=7478cd2e370a413f95f790255e6409b2": "Road Closures",
+   "https://mcallen.net/opendata": "Departments",
+   "https://mcallen.net/open-data": "Departments",
+   "https://www.arcgis.com/features/index.html": "ArcGIS Online",
+   "https://experience.arcgis.com/experience/e753da6610774cb3a12047d449198ee8/": "",
+   "https://experience.arcgis.com/experience/ef5664c40e2944948bbe58c532493558/": "",
+   "https://experience.arcgis.com/experience/8f97ef85838f4d5d9f20860f17d2e14f/": "",
+   "https://experience.arcgis.com/experience/f0cf50be58bd47c6a64e1feae94cff5c/": "",
+   "https://experience.arcgis.com/experience/8fec0fdba6ec404ba9c7d5ca1b077b03/": "",
+   "https://experience.arcgis.com/experience/6c9123133a7f413181911a935b61bc9c/": "",
+   "https://experience.arcgis.com/experience/44f78fc93a3b4f89b443d4f7f666f7a9/": "",
+   "https://experience.arcgis.com/experience/9b94a4b29c37452a8a5038ec69e5977c/": "",
+   "https://experience.arcgis.com/experience/b0fe5a22ebdd4615944e2be32d341062/": "",
+   "https://experience.arcgis.com/experience/46453a726b1a40f1b82679705a681146/": "",
+   "https://experience.arcgis.com/experience/ec9c649357264c83a72989111e546010": "",
+   "https://experience.arcgis.com/experience/cc08f93fd75d43679a54be88ba89ce47/": "",
+   "https://mcallen.maps.arcgis.com/apps/webappviewer/index.html?id=ff6c8cf2d6504a9a961f6713c46c6bf0": "",
+   "https://experience.arcgis.com/experience/975dc139c5934d8398ad95298e8f9b30/": "",
+   "https://mcallen.maps.arcgis.com/apps/Shortlist/index.html?appid=4cf9468e506b4761852fb4cd5b6c78d8": "",
+   "https://mcallen.maps.arcgis.com/apps/instant/nearby/index.html?appid=5b7d1303768a456cabe1ae342acf3648&sliderDistance=0.5": "",
+   "https://experience.arcgis.com/experience/58e9ee3ae84a4e8da0ec4858be14f4b5/": "",
+   "https://storymaps.arcgis.com/stories/b9f014e5cd854b56b165b4a194eb638c": "",
+   "https://experience.arcgis.com/experience/86683681390e4107b12f6941912e942b/": "",
+   "https://experience.arcgis.com/experience/76eb1fabbb214ca09819aad68f04fe3d/": "",
+   "https://mcallen.maps.arcgis.com/apps/Embed/index.html?webmap=a52b64ba71fa4098a3188bca54492301&extent=-98.2369,26.1962,-98.2329,26.1981&zoom=false&scale=true&disable_scroll=false&theme=dark&marker=-98.235;26.197;; ;http%3A%2F%2Fgismap.mcallen.net%2FOnline%2Fmcallenstar.jpg;McAllen%20City%20Hall": "View larger map",
+   "http://mcallen.maps.arcgis.com/apps/Embed/index.html?webmap=a52b64ba71fa4098a3188bca54492301&extent=-98.2369,26.1962,-98.2329,26.1981&zoom=false&scale=true&disable_scroll=false&theme=dark&marker=-98.235;26.197;; ;http%3A%2F%2Fgismap.mcallen.net%2FOnline%2Fmcallenstar.jpg;McAllen%20City%20Hall": "View larger map"
+  }
+ },
+ "Fargo": {
+  "files": [],
+  "portals": {}
+ },
+ "Kilis": {
+  "files": [],
+  "portals": {}
+ },
+ "South Bend": {
+  "files": [
+   {
+    "url": "https://bikeleague.org/wp-content/uploads/bfareportcards/bfc/Spring_2023/South_Bend_IN.pdf",
+    "text": "Silver",
+    "file": "data/city_files/South_Bend/35a96f_South_Bend_IN.pdf",
+    "rows": 62,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://docs.southbendin.gov/WebLink/0,0/edoc/393276/South-Bend-Bicycle-Network-2022.07-11.pdf",
+    "text": "a long-term plan for a 135-mile South Bend Bikeway  network",
+    "file": "data/city_files/South_Bend/ee4bd8_South-Bend-Bicycle-Network-2022.07-11.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://docs.southbendin.gov/WebLink/0,0/edoc/393277/South-Bend-Bicycle-Master-Plan-2018-2020-Goals-and-Action-Plan.pdf",
+    "text": "South Bend Bicycle Master Plan (2018)",
+    "file": "data/city_files/South_Bend/0d2c58_South-Bend-Bicycle-Master-Plan-2018-2020-Goals-and-Action-Plan.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://southbendin.gov/wp-content/uploads/2018/07/Lawn-Parking-Permit-Conditutional-Use-Lawn-Parking-2023.pdf",
+    "text": "application",
+    "file": "data/city_files/South_Bend/c782c9_Lawn-Parking-Permit-Conditutional-Use-Lawn-Parking-2023.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://southbendin.gov/wp-content/uploads/2018/05/SBWW_Bill_explanation_0813-2.pdf",
+    "text": "Download a copy of a South Bend Utility Bill with brief explanations of common charges",
+    "file": "data/city_files/South_Bend/049b35_SBWW_Bill_explanation_0813-2.pdf",
+    "rows": 32,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://southbendin.gov/wp-content/uploads/2026/04/2025_WQP.pdf",
+    "text": "View the 2025 Water Quality Parameters",
+    "file": "data/city_files/South_Bend/9aea78_2025_WQP.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://southbendin.gov/wp-content/uploads/2020/02/2019-Wellhead-Protection-Area-Maps.pdf",
+    "text": "View Wellhead Protection Areas",
+    "file": "data/city_files/South_Bend/2770a8_2019-Wellhead-Protection-Area-Maps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://southbendin.gov/open-data": "Explore More",
+   "https://data-southbend.opendata.arcgis.com/": "Open Data Portal",
+   "https://southbend.maps.arcgis.com/apps/instant/basic/index.html?appid=337ae371354c458a8e21888f50c66fe6": "Look up your trash day by address.",
+   "https://southbend.maps.arcgis.com/apps/webappviewer/index.html?id=ff989c7c12fd4eb78a1807b70272066c": "here",
+   "https://gisdata.in.gov/portal/apps/webappviewer/index.html?id=5f2c93ba15a6423b906fec4a2e986b85": "Indiana Buildings, Bridges, and Cemeteries Map",
+   "https://data-southbend.opendata.arcgis.com/search?q=shooting": "View the data on the Open Data Portal",
+   "https://leadsafe-southbend.hub.arcgis.com/": "southbendin.gov/serviceline",
+   "https://experience.arcgis.com/experience/1f46be5cab1d41f8b6bbb8b855bbfe5b": "View the Map Full Screen"
+  }
+ },
+ "Lehi": {
+  "files": [
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/w5bpnuua/2026-wm-1.pdf",
+    "text": "Garbage and Recycling Calendar",
+    "file": "data/city_files/Lehi/2c569a_2026-wm-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lehi-ut.gov/media/cxkokfwq/garbage_pickup_schedule-may2024.pdf",
+    "text": "Click here for a map",
+    "file": "data/city_files/Lehi/405b34_garbage_pickup_schedule-may2024.pdf",
+    "rows": 83,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/bu2han3f/snow_plow_routes.pdf",
+    "text": "snow plow route",
+    "file": "data/city_files/Lehi/0f3427_snow_plow_routes.pdf",
+    "rows": 48,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/hh5p5b0g/willow-park-welcome-message-map-2026.pdf",
+    "text": "Willow Park Campground Rules and Map",
+    "file": "data/city_files/Lehi/624101_willow-park-welcome-message-map-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lehi-ut.gov/media/cxkokfwq/garbage_pickup_schedule-may2024.pdf",
+    "text": "Click here for a map",
+    "file": "data/city_files/Lehi/67d270_garbage_pickup_schedule-may2024.pdf",
+    "rows": 83,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/j0blupmd/2026-youth-track-and-field.pdf",
+    "text": "2026 Youth Track & Field - OLD Flyer",
+    "file": "data/city_files/Lehi/05f980_2026-youth-track-and-field.pdf",
+    "rows": 15,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/m0lp2dfi/dragonfly-map-kiosk-96x48.pdf",
+    "text": "Dragonfly Disc Golf Map",
+    "file": "data/city_files/Lehi/d253e8_dragonfly-map-kiosk-96x48.pdf",
+    "rows": 239,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/htzf2va4/dry-creek-disc-golf-map.pdf",
+    "text": "Dry Creek Disc Golf Map",
+    "file": "data/city_files/Lehi/49c5a3_dry-creek-disc-golf-map.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lehi-ut.gov/media/hh5p5b0g/willow-park-welcome-message-map-2026.pdf",
+    "text": "Willow Park Campground Rules and Map",
+    "file": "data/city_files/Lehi/ec48b5_willow-park-welcome-message-map-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/4cafrj4i/master_storm_drainage_plan-map.pdf",
+    "text": "Storm Drain Master Plan Map",
+    "file": "data/city_files/Lehi/8a0949_master_storm_drainage_plan-map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/qj5j33ut/master_storm_drainage_basin_delineation_and_modeled_trunklines_map.pdf",
+    "text": "and Modeled Trunk Lines Map",
+    "file": "data/city_files/Lehi/7bd48b_master_storm_drainage_basin_delineation_and_modeled_trunklines_map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/hq4m0nu2/parking-lot-maintenance.pdf",
+    "text": "Parking Lot Maintenance",
+    "file": "data/city_files/Lehi/aabc90_parking-lot-maintenance.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/pxkfutur/discharging-swimming-pool-and-hot-tub-water.pdf",
+    "text": "Discharging Swimming Pool and Hot Tub Water",
+    "file": "data/city_files/Lehi/ca46d4_discharging-swimming-pool-and-hot-tub-water.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lehi-ut.gov/media/hh5p5b0g/willow-park-welcome-message-map-2026.pdf",
+    "text": "Willow Park Campground Rules and Map",
+    "file": "data/city_files/Lehi/7df58d_willow-park-welcome-message-map-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://lehi-gis-maps-lehi.hub.arcgis.com/": "Maps",
+   "https://experience.arcgis.com/experience/696445944162449398674b323fb4d9c9": "Lehi City Trails Map",
+   "https://lehi.maps.arcgis.com/apps/webappviewer/index.html?id=1b83295a36824db7b6c8bf911b12c5e4": "Cemetery Map Viewer",
+   "https://lehi.maps.arcgis.com/apps/dashboards/bc82626967c7413e8d2b441688927946": "Lehi Roads Dashboard.",
+   "https://experience.arcgis.com/experience/b809d8096f53410cbb4c1c2839fe5022": "Lehi Parks Amenities Map",
+   "https://lehi.maps.arcgis.com/apps/instant/basic/index.html?appid=dbc3bbf46acd49758df0e21ad874d266": "PI Meters Phases"
+  }
+ },
+ "Champaign": {
+  "files": [],
+  "portals": {
+   "https://gis-cityofchampaign.opendata.arcgis.com/": "City’s Maps webpage",
+   "https://cityofchampaign.maps.arcgis.com/apps/webappviewer/index.html?id=7525441df3664018bebe847837450c6a": "View the parking meter map",
+   "https://gis-cityofchampaign.opendata.arcgis.com": "EXPLORE NOW"
+  }
+ },
+ "Warwick": {
+  "files": [],
+  "portals": {
+   "https://gis.vgsi.com/warwickri/Default.aspx": "Assessor's Online Database",
+   "https://www.axisgis.com/WarwickRI/": "Link to GIS plat maps",
+   "https://www.axisgis.com/warwickri/": "Web GIS page (link)."
+  }
+ },
+ "Rochester Hills": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/e8317c7b4717427f8d1e8c300c684848": "Maps",
+   "https://rochesterhills.maps.arcgis.com/apps/instant/reporter/index.html?appid=fa2a4da97b254606a231c14d7647b79b": "Report a Concern",
+   "https://storymaps.arcgis.com/stories/c3270bc09e2145dc868e7a9d88c9acb1": "Art on Auburn 2",
+   "https://experience.arcgis.com/experience/14e3a79b7ef940ada3f4e33758519cf7": "Green Space properties maps",
+   "http://rochesterhills.maps.arcgis.com/home/webmap/viewer.html?webmap=c094ff9918034faca8545fee542ce0fd": "location map",
+   "http://rochesterhills.maps.arcgis.com/home/webmap/viewer.html?webmap=83838cd3cf394eea958a097065f4cca8": "Park Location Map",
+   "https://experience.arcgis.com/experience/90163d1277c04644b83bd50dbc7f608d/page/Overview": "Blueprint 4 Innovation",
+   "https://city-of-rochester-hills-master-plan-1-rochesterhills.hub.arcgis.com/": "Master Plan Update 2025",
+   "https://experience.arcgis.com/experience/678f7a62f47546f4aa1a7840d41d79b1": "",
+   "https://experience.arcgis.com/experience/03f32d1d6c10496b990903ce55cb2e3d": "",
+   "https://experience.arcgis.com/experience/90f22065da5a4d9c84a8c2a19c27609a": "",
+   "https://experience.arcgis.com/experience/a95ffa9594464ee680df492e9c54ae5e": ""
+  }
+ },
+ "Harlingen": {
+  "files": [],
+  "portals": {}
+ },
+ "Payyannur Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Idaho Falls": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/fb5e74669c664d9fba1127829ba711d1": "Fiber Sign Up Mapping Application",
+   "https://experience.arcgis.com/experience/ccd62ffa249143098838f8730abf9953": "Snow Removal Mapping Application",
+   "https://experience.arcgis.com/experience/f3c24b0f478848ee853f7c3a03e7e7f9": "Construction Projects Mapping Application",
+   "https://experience.arcgis.com/experience/c86217e1d0d045ee84f6c0e8456391a4": "INTERACTIVE MAP of Ski Trails",
+   "https://experience.arcgis.com/experience/67e427936d134b1c8061e39d0b3f3269": "Parks/Greenways/Storm Pond Map",
+   "https://bonnevillecountyid-sheriff-transparency.connect.socrata.com/?&redirectToSessionStoreKey=1721837435983?&redirectToSessionStoreKey=1745005723234": "Public Safety Incident Map",
+   "https://experience.arcgis.com/experience/68be0cc4680c41e4befc5038e8b30ff2": "Street Mapping Application",
+   "https://experience.arcgis.com/experience/596eeafca23948c99abc42104b4921e0": "Sanitation Mapping Application",
+   "https://experience.arcgis.com/experience/186be53f460c42e7a79db05d58cfc379": "Downtown Parking Map",
+   "https://experience.arcgis.com/experience/aa91ab42a7774107a9fd0abdf7942de5": "Leaf Collection Web Mapping Application",
+   "https://ifgis.maps.arcgis.com/": "City of Idaho Falls ArcGIS Online site",
+   "https://experience.arcgis.com/experience/67629e080ea74cd19de61240b8760d55": "Zoning and Development Mapping Application",
+   "https://experience.arcgis.com/experience/67629e080ea74cd19de61240b8760d55/page/Zoning-%26-Development/": "Zoning and Development",
+   "https://experience.arcgis.com/experience/67629e080ea74cd19de61240b8760d55/page/Comprehensive-Plan/": "Comprehensive Plan",
+   "https://experience.arcgis.com/experience/67629e080ea74cd19de61240b8760d55/page/Land-Use/": "Land Use",
+   "https://experience.arcgis.com/experience/67629e080ea74cd19de61240b8760d55/page/Airport-Land-Use/": "Airport Land Use",
+   "https://experience.arcgis.com/experience/67629e080ea74cd19de61240b8760d55/page/Airport-Height-Check/": "Airport Height Check",
+   "https://experience.arcgis.com/experience/67629e080ea74cd19de61240b8760d55/page/Airport-Noise-Contours/": "Airport Noise Contours",
+   "https://experience.arcgis.com/experience/ccd62ffa249143098838f8730abf9953/page/Snow-Removal-Status/": "Snow Removal Status",
+   "https://experience.arcgis.com/experience/ccd62ffa249143098838f8730abf9953/page/Snow-Parking-Restrictions/": "Snow Removal Parking Restrictions",
+   "https://experience.arcgis.com/experience/ccd62ffa249143098838f8730abf9953/page/Snow-Removal-Priority/": "Snow Removal Priority",
+   "https://experience.arcgis.com/experience/ccd62ffa249143098838f8730abf9953/page/Snow-Removal-Method/": "Snow Removal Method",
+   "https://ifgis.maps.arcgis.com/apps/webappviewer/index.html?id=95decb44ee4a4939ac3f9ed070abd932": "Snow Removal Mapping Application",
+   "https://experience.arcgis.com/experience/8be3a4e8ba3246c4ba6556610ed4a387": "Bike Path Mapping Application",
+   "https://ifgis.maps.arcgis.com/apps/MapSeries/index.html?appid=4933c41487ef455eb881bc51bf76307f": "",
+   "https://experience.arcgis.com/experience/f052361b0f3e4056ab003e14dc3250c4": "Street Sweeping Mapping Application",
+   "https://experience.arcgis.com/experience/81666338c558417099161f7de88769c3": "Water Service Line Material Web Mapping Application",
+   "https://experience.arcgis.com/experience/e05292e57a174b42b61bee1df45af77e/": "Utility & Development Web Mapping Application",
+   "https://experience.arcgis.com/experience/b18c6570cd9f4ff08253191789068279": "Current Project Mapping Application",
+   "https://experience.arcgis.com/experience/b18c6570cd9f4ff08253191789068279/page/1-Site-Plans": "Site Plans and PUDs"
+  }
+ },
+ "Perico": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Cloud": {
+  "files": [],
+  "portals": {}
+ },
+ "Korkuteli": {
+  "files": [],
+  "portals": {}
+ },
+ "Río Tercero": {
+  "files": [
+   {
+    "url": "https://datos.riotercero.gob.ar/dataset/d7e4d40f-52dc-4df7-b679-21dd56eea0b7/resource/ba80ad76-8a51-4299-a738-91c1fed663f8/download/dec-1214-2019-bertalot.pdf",
+    "text": "DESCARGAR",
+    "file": "data/city_files/R_o_Tercero/1b438d_dec-1214-2019-bertalot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://datos.riotercero.gob.ar/dataset/d7e4d40f-52dc-4df7-b679-21dd56eea0b7/resource/b9cb90d4-327d-4ae5-a56c-90f244c4ad1c/download/dec-1810-23-raul-bertalot.pdf",
+    "text": "DESCARGAR",
+    "file": "data/city_files/R_o_Tercero/409a8e_dec-1810-23-raul-bertalot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://datos.riotercero.gob.ar/dataset/83d2f0a0-8943-4571-9383-75228d9227e8/resource/315496e7-ae59-4cd7-8495-454dca11343c/download/informe-comapos-electromagneticos-2017.pdf",
+    "text": "DESCARGAR",
+    "file": "data/city_files/R_o_Tercero/560eab_informe-comapos-electromagneticos-2017.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {}
+ },
+ "Palm Desert": {
+  "files": [],
+  "portals": {}
+ },
+ "Portage": {
+  "files": [],
+  "portals": {}
+ },
+ "Winter Garden": {
+  "files": [],
+  "portals": {}
+ },
+ "Palakkad Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Edmonds": {
+  "files": [
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Government/Departments/Mayor's Office/NHHM 2023.pdf",
+    "text": "2023-09-19 National Hispanic Heritage Month",
+    "file": "data/city_files/Edmonds/ec2b2f_NHHM_2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Government/Boards and Commissions/Historic Preservation Commission/P41_-_Historic_Register.pdf",
+    "text": "register of historic places",
+    "file": "data/city_files/Edmonds/065641_P41_-_Historic_Register.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Government/Boards and Commissions/Historic Preservation Commission/2007_EHPC_Brochure_v4.pdf",
+    "text": "Preservation Guide",
+    "file": "data/city_files/Edmonds/9526a7_2007_EHPC_Brochure_v4.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/city_of_edmonds.pdf",
+    "text": "General City Map",
+    "file": "data/city_files/Edmonds/b524cf_city_of_edmonds.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Government/Departments/Planning%20and%20Development/Planning%20Division/Zoning2026_36x56.pdf",
+    "text": "2026 Zoning Map",
+    "file": "data/city_files/Edmonds/90f77c_Zoning2026_36x56.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Government/Departments/Planning%20and%20Development/Planning%20Division/Future_Land_Use_2026_36x56.pdf",
+    "text": "Comprehensive Plan Map (Updated Jan, 2026)",
+    "file": "data/city_files/Edmonds/aff0ef_Future_Land_Use_2026_36x56.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Edmonds_Watersheds.pdf",
+    "text": "Watersheds Map",
+    "file": "data/city_files/Edmonds/8f07af_Edmonds_Watersheds.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Edmonds_Storm.pdf",
+    "text": "Stormwater System",
+    "file": "data/city_files/Edmonds/d87e0d_Edmonds_Storm.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Edmonds_Garbage_Service_36x54.pdf",
+    "text": "Garbage Service Map",
+    "file": "data/city_files/Edmonds/853497_Edmonds_Garbage_Service_36x54.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Edmonds_Utility_Service_Boundary_36x56.pdf",
+    "text": "Water and Sewer Service Area",
+    "file": "data/city_files/Edmonds/0b1481_Edmonds_Utility_Service_Boundary_36x56.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Truck Haul Route Map.pdf",
+    "text": "Truck Haul Route Map",
+    "file": "data/city_files/Edmonds/56ba8d_Truck_Haul_Route_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Edmonds_Historic_Register_Map.pdf",
+    "text": "Edmonds Register of Historic Places",
+    "file": "data/city_files/Edmonds/fe77ad_Edmonds_Historic_Register_Map.pdf",
+    "rows": 19,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps%20&%20GIS/Maps/Central_Waterfront_2007_aerial.pdf",
+    "text": "Aerial photo",
+    "file": "data/city_files/Edmonds/8648ae_Central_Waterfront_2007_aerial.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/I-502_Buffer_2024.pdf",
+    "text": "I-502 Buffer Map",
+    "file": "data/city_files/Edmonds/a1dec9_I-502_Buffer_2024.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/I-502_Buffer_Commercial_2016.pdf",
+    "text": "I-502 Buffers and Commercial Zoning map",
+    "file": "data/city_files/Edmonds/8446a5_I-502_Buffer_Commercial_2016.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/WMU_Zone_Map.pdf",
+    "text": "Westgate Residential Targeted Area for Multi-Family Tax Exemption Program",
+    "file": "data/city_files/Edmonds/bbcdbd_WMU_Zone_Map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/city_of_edmonds.pdf",
+    "text": "General City Map",
+    "file": "data/city_files/Edmonds/2be024_city_of_edmonds.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Edmonds_Watersheds.pdf",
+    "text": "Watersheds Map",
+    "file": "data/city_files/Edmonds/35ce65_Edmonds_Watersheds.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Edmonds_Storm.pdf",
+    "text": "Stormwater System",
+    "file": "data/city_files/Edmonds/e01947_Edmonds_Storm.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Edmonds_Garbage_Service_36x54.pdf",
+    "text": "Garbage Service Map",
+    "file": "data/city_files/Edmonds/bbab56_Edmonds_Garbage_Service_36x54.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Edmonds_Utility_Service_Boundary_36x56.pdf",
+    "text": "Water and Sewer Service Area",
+    "file": "data/city_files/Edmonds/35a248_Edmonds_Utility_Service_Boundary_36x56.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Truck Haul Route Map.pdf",
+    "text": "Truck Haul Route Map",
+    "file": "data/city_files/Edmonds/bac54d_Truck_Haul_Route_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/Edmonds_Historic_Register_Map.pdf",
+    "text": "Edmonds Register of Historic Places",
+    "file": "data/city_files/Edmonds/0f1cf6_Edmonds_Historic_Register_Map.pdf",
+    "rows": 19,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/I-502_Buffer_2024.pdf",
+    "text": "I-502 Buffer Map",
+    "file": "data/city_files/Edmonds/5d1e29_I-502_Buffer_2024.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/I-502_Buffer_Commercial_2016.pdf",
+    "text": "I-502 Buffers and Commercial Zoning map",
+    "file": "data/city_files/Edmonds/890993_I-502_Buffer_Commercial_2016.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Maps & GIS/Maps/WMU_Zone_Map.pdf",
+    "text": "Westgate Residential Targeted Area for Multi-Family Tax Exemption Program",
+    "file": "data/city_files/Edmonds/9e2714_WMU_Zone_Map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Discovery%20Programs/Yost%20Park/Yost_Map_2011.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Edmonds/31529a_Yost_Map_2011.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Government/Departments/Community%20Services/Senior%20Services/City_Park.pdf",
+    "text": "Park Layout Map",
+    "file": "data/city_files/Edmonds/c1af7b_City_Park.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Government/Departments/City Clerk's Office/Employee, Residential, RV and Visitor Parking/Downtown Employee Parking Permit Page 2 Map.pdf",
+    "text": "Click here for PDF",
+    "file": "data/city_files/Edmonds/94a302_Downtown_Employee_Parking_Permit_Page_2_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Government/Departments/City Clerk's Office/Employee, Residential, RV and Visitor Parking/Residential RV Parking Permit Page 2 Map.pdf",
+    "text": "Click here for PDF",
+    "file": "data/city_files/Edmonds/84bb07_Residential_RV_Parking_Permit_Page_2_Map.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Government/Departments/Parks,%20Recreation%20and%20Cultural%20Services/Recreation/Let's%20Move/Bicycle_Facilities.pdf",
+    "text": "Biking Routes",
+    "file": "data/city_files/Edmonds/3f3a3a_Bicycle_Facilities.pdf",
+    "rows": 6,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Government/Departments/Parks,%20Recreation%20and%20Cultural%20Services/Recreation/Let's%20Move/Walkway_System.pdf",
+    "text": "Walkway Routes",
+    "file": "data/city_files/Edmonds/1e8849_Walkway_System.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Discovery Programs/Yost Park/Download Maps & Brochures/Yost Park Map Brochure_rev.2023.pdf",
+    "text": ".",
+    "file": "data/city_files/Edmonds/219690_Yost_Park_Map_Brochure_rev.2023.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Discovery Programs/Download Information/Download Maps & Brochures/Bird Checklist-Complete (rev. 2021).pdf",
+    "text": "Birds of Edmonds Checklist",
+    "file": "data/city_files/Edmonds/4f6572_Bird_Checklist-Complete_rev._2021_.pdf",
+    "rows": 322,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Discovery Programs/Download Information/Download Maps & Brochures/Winter_Ducks_Flier_Final.pdf",
+    "text": "Winter Ducks in Edmonds",
+    "file": "data/city_files/Edmonds/09ae02_Winter_Ducks_Flier_Final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Discovery Programs/Download Information/Download Maps & Brochures/TI_Plant ID Cards.pdf",
+    "text": "Forest Plant Identification Cards",
+    "file": "data/city_files/Edmonds/8877f5_TI_Plant_ID_Cards.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Discovery Programs/Download Information/Download Maps & Brochures/Marine Sanctuary Hero Guide.pdf",
+    "text": "Beach Hero Marine Sanctuary Field Guide",
+    "file": "data/city_files/Edmonds/e3fc79_Marine_Sanctuary_Hero_Guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Discovery Programs/Download Information/Download Maps & Brochures/Beach Etiquette Pledge.pdf",
+    "text": "Beach Etiquette Pledge (English)",
+    "file": "data/city_files/Edmonds/34d616_Beach_Etiquette_Pledge.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.edmondswa.gov/UserFiles/Servers/Server_16494932/File/Services/Discovery Programs/Download Information/Download Maps & Brochures/BeachEtiquettePlEsp.pdf",
+    "text": "Beach Etiquette Pledge (Spanish)",
+    "file": "data/city_files/Edmonds/cfaa9c_BeachEtiquettePlEsp.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://edmondswa.maps.arcgis.com/apps/View/index.html?appid=b6f66936dfe04b5a8cf4daef73e7014e": "2021 Capital Project map",
+   "https://experience.arcgis.com/experience/0a219ac968ee4ddc833491fc7b7a7ca9/": "Find Your District and Elected Officials (interactive map)",
+   "https://snohomish-county-open-data-portal-snoco-gis.hub.arcgis.com/search?tags=Elections": "Access Voting District Data ↗ Download open datasets containing geographic data for Snohomish County voting districts.",
+   "https://snohomish-county-coronavirus-response-snoco-gis.hub.arcgis.com/": "This Snohomish County site is a fantastic clearinghouse",
+   "https://edmondswa.maps.arcgis.com/apps/Shortlist/index.html?appid=73be47330c884b26823854b86b027e37": "Edmonds Art in Public Places",
+   "http://www.arcgis.com/home/webmap/viewer.html?webmap=8cce200b07e143e097f57046610d5534&extent=-122.3593,47.8333,-122.2986,47.853": "View Larger Map",
+   "https://storymaps.arcgis.com/stories/07ccf9a574454732bec4afd1df1cabe3": "The Ballinger-Hall Creek SMAP Storymap can be found here",
+   "https://storymaps.arcgis.com/stories/65fea05cd0444188aa2a31507bc89528": "",
+   "https://www.edmondswa.gov/open-data": "Open Data"
+  }
+ },
+ "Friendswood": {
+  "files": [],
+  "portals": {}
+ },
+ "Bell Gardens": {
+  "files": [],
+  "portals": {}
+ },
+ "Holyoke": {
+  "files": [
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2022/03/2022-Artistic-Bike-Racks-RFP-Local-Artists.pdf",
+    "text": "Download",
+    "file": "data/city_files/Holyoke/f77f2e_2022-Artistic-Bike-Racks-RFP-Local-Artists.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2021/08/August-30_2021_-BikePed-Agenda.pdf",
+    "text": "Download",
+    "file": "data/city_files/Holyoke/5335e5_August-30_2021_-BikePed-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2021/08/BikePed-August-30-2021-Meeting-Minutes.pdf",
+    "text": "Download",
+    "file": "data/city_files/Holyoke/f055f0_BikePed-August-30-2021-Meeting-Minutes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2021/01/February_2021-Bike-Ped-Agenda-stamped.pdf",
+    "text": "February_2021 Bike Ped Agenda stamped",
+    "file": "data/city_files/Holyoke/9e6d3d_February_2021-Bike-Ped-Agenda-stamped.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/2026/07/bicycle-and-pedestrian-committee-agenda-july-8-2026-0c452fe9.pdf",
+    "text": "Bicycle and Pedestrian Committee Agenda July 8, 2026",
+    "file": "data/city_files/Holyoke/f245b3_bicycle-and-pedestrian-committee-agenda-july-8-2026-0c452fe9.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/03/Historic-Inventory-pdf.pdf",
+    "text": "Holyoke Historic Inventory",
+    "file": "data/city_files/Holyoke/b4e173_Historic-Inventory-pdf.pdf",
+    "rows": 1145,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2021/09/Historic-Trees-of-Holyoke-DIGITAL-COPY.pdf",
+    "text": "Historic Trees of Holyoke - Regular Version",
+    "file": "data/city_files/Holyoke/e219a6_Historic-Trees-of-Holyoke-DIGITAL-COPY.pdf",
+    "rows": 24,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2021/09/Historic-Trees-of-Holyoke-Print-Copy.pdf",
+    "text": "Historic Trees of Holyoke - Booklet Printing Version",
+    "file": "data/city_files/Holyoke/42503f_Historic-Trees-of-Holyoke-Print-Copy.pdf",
+    "rows": 24,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/03/Legal-Form-Historic-District-Ordinance1-Fairfield.pdf",
+    "text": "Legal Form Historic District Ordinance -Fairfield",
+    "file": "data/city_files/Holyoke/490fe1_Legal-Form-Historic-District-Ordinance1-Fairfield.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/03/falhd_registry21.pdf",
+    "text": "Fairfield Avenue registry map",
+    "file": "data/city_files/Holyoke/7dedd2_falhd_registry21.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/03/Local-Historic-District-Certificate-Application-2.pdf",
+    "text": "Local Historic District Certificate Application",
+    "file": "data/city_files/Holyoke/b13e18_Local-Historic-District-Certificate-Application-2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2022/06/June-10-2021-Local-Historic-Minutes.pdf",
+    "text": "June 10 2021 Local Historic Minutes",
+    "file": "data/city_files/Holyoke/e3fee4_June-10-2021-Local-Historic-Minutes.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2022/06/July-22-2021-Local-Historic-Minutes.pdf",
+    "text": "July 22 2021 Local Historic Minutes",
+    "file": "data/city_files/Holyoke/55cd07_July-22-2021-Local-Historic-Minutes.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2022/06/August-9-2021-Local-Historic-Minutes.pdf",
+    "text": "August 9 2021 Local Historic Minutes",
+    "file": "data/city_files/Holyoke/3a76a7_August-9-2021-Local-Historic-Minutes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2022/06/September-16-2021-local-Historic-Minutes.pdf",
+    "text": "September 16 2021 Local Historic Minutes",
+    "file": "data/city_files/Holyoke/a0f11b_September-16-2021-local-Historic-Minutes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2022/06/November-23-2021-local-Historic-minutes.pdf",
+    "text": "November 23 2021 Local Historic Minutes",
+    "file": "data/city_files/Holyoke/55cc7f_November-23-2021-local-Historic-minutes.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2022/06/December-16-2021-Local-Historic-Minutes.pdf",
+    "text": "December 16 2021 Local Historic Minutes",
+    "file": "data/city_files/Holyoke/53426c_December-16-2021-Local-Historic-Minutes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/03/State-Register-of-Historic-Places-List-of-Properties-EDITED-Copy.pdf",
+    "text": "State Register Of Historic Places List Of Properties 2022",
+    "file": "data/city_files/Holyoke/b2c8d4_State-Register-of-Historic-Places-List-of-Properties-EDITED-Copy.pdf",
+    "rows": 418,
+    "bike_rows": 288
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/03/INSURANCE-FOR-HISTORIC-HOMES.pdf",
+    "text": "Insurance for Historic Homes",
+    "file": "data/city_files/Holyoke/380f1e_INSURANCE-FOR-HISTORIC-HOMES.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2023/03/Holyoke-Historic-and-Cultural-Tourism-Plan-2022.pdf",
+    "text": "Holyoke Historic And Cultural Tourism Plan 2022",
+    "file": "data/city_files/Holyoke/dc167d_Holyoke-Historic-and-Cultural-Tourism-Plan-2022.pdf",
+    "rows": 106,
+    "bike_rows": 49
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2022/07/Holyoke-Main-St-Corridor-Historic-Survey-Final-Report.pdf",
+    "text": "Holyoke Main St Corridor Historic Survey Final Report",
+    "file": "data/city_files/Holyoke/a7d4c0_Holyoke-Main-St-Corridor-Historic-Survey-Final-Report.pdf",
+    "rows": 408,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/2026/02/5424aed8-2026-recycling-calendar-english-spanish.pdf",
+    "text": "Download",
+    "file": "data/city_files/Holyoke/44a653_5424aed8-2026-recycling-calendar-english-spanish.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/2025/08/Parking-Ticket-Appeal2.pdf",
+    "text": "eal",
+    "file": "data/city_files/Holyoke/501c81_Parking-Ticket-Appeal2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/2026/01/f2761b20-2026-zoning-map.pdf",
+    "text": "2026 Zoning Map",
+    "file": "data/city_files/Holyoke/ab5e98_f2761b20-2026-zoning-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/03/Repair-License-Application1.pdf",
+    "text": "Repair-License-Application(1)",
+    "file": "data/city_files/Holyoke/f2cd97_Repair-License-Application1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/06/12-amendment-to-Chapter-74-Recycling-and-Solid-Waste.pdf",
+    "text": "12 amendment to Chapter 74 (Recycling and Solid Waste)",
+    "file": "data/city_files/Holyoke/0d8dee_12-amendment-to-Chapter-74-Recycling-and-Solid-Waste.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/07/HOlyoke-tree-planting-Map-whole-city.pdf",
+    "text": "HOlyoke tree planting Map - whole city",
+    "file": "data/city_files/Holyoke/b079df_HOlyoke-tree-planting-Map-whole-city.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/07/July-2020-BikePed-Agenda.pdf",
+    "text": "July 2020 BikePed Agenda",
+    "file": "data/city_files/Holyoke/0e5ca2_July-2020-BikePed-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/07/MassDOT-Route-5-Reconstruction-West-Springfield-to-Holyoke-25-Design-Plans-reduced-part-1.pdf",
+    "text": "MassDOT Route 5 Reconstruction West Springfield to Holyoke - 25% Design Plans reduced part 1",
+    "file": "data/city_files/Holyoke/ef88a5_MassDOT-Route-5-Reconstruction-West-Springfield-to-Holyoke-25-Design-P",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/07/MassDOT-Route-5-Reconstruction-West-Springfield-to-Holyoke-25-Design-Plans-reduced-part-2.pdf",
+    "text": "MassDOT Route 5 Reconstruction West Springfield to Holyoke - 25% Design Plans reduced part 2",
+    "file": "data/city_files/Holyoke/64eea0_MassDOT-Route-5-Reconstruction-West-Springfield-to-Holyoke-25-Design-P",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/07/MassDOT-Route-5-Reconstruction-West-Springfield-to-Holyoke-25-Design-Plans-reduced-part-1-1.pdf",
+    "text": "MassDOT Route 5 Reconstruction West Springfield to Holyoke - 25% Design Plans reduced part 1",
+    "file": "data/city_files/Holyoke/ad4521_MassDOT-Route-5-Reconstruction-West-Springfield-to-Holyoke-25-Design-P",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/07/Ward-Map-20150622.pdf",
+    "text": "Ward Map - 20150622",
+    "file": "data/city_files/Holyoke/60b624_Ward-Map-20150622.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/07/August-2020-Bike-Ped-Agenda.pdf",
+    "text": "August 2020 Bike Ped Agenda",
+    "file": "data/city_files/Holyoke/3c2f67_August-2020-Bike-Ped-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/08/Historical-Commisison-agenda-August-10-2020.pdf",
+    "text": "Historical Commisison agenda August 10 2020",
+    "file": "data/city_files/Holyoke/fae9ae_Historical-Commisison-agenda-August-10-2020.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/08/Properly-loading-your-vehicle-for-the-Recycling-Center.pdf",
+    "text": "Properly loading your vehicle for the Recycling Center",
+    "file": "data/city_files/Holyoke/cdf0ed_Properly-loading-your-vehicle-for-the-Recycling-Center.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/08/Properly-loading-your-vehicle-for-the-Recycling-Center-1.pdf",
+    "text": "Properly loading your vehicle for the Recycling Center",
+    "file": "data/city_files/Holyoke/6f2103_Properly-loading-your-vehicle-for-the-Recycling-Center-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/08/HOlyoke-tree-planting-Map-whole-city1.pdf",
+    "text": "HOlyoke tree planting Map - whole city(1)",
+    "file": "data/city_files/Holyoke/18ec7a_HOlyoke-tree-planting-Map-whole-city1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/08/HOlyoke-tree-planting-Map-whole-city2.pdf",
+    "text": "HOlyoke tree planting Map - whole city(2)",
+    "file": "data/city_files/Holyoke/29959e_HOlyoke-tree-planting-Map-whole-city2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/holyokema/uploads/2020/03/HCC-COVID-Test-Site-Map.pdf",
+    "text": "HCC COVID Test Site Map",
+    "file": "data/city_files/Holyoke/9681b6_HCC-COVID-Test-Site-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Lewiston": {
+  "files": [],
+  "portals": {}
+ },
+ "Richmond": {
+  "files": [
+   {
+    "url": "https://www.seattle.gov/Documents/Departments/SDOT/BikeProgram/Protected_Bike_Lanes_Mean_Business.pdf",
+    "text": "recent report",
+    "file": "data/city_files/Richmond/48dff3_Protected_Bike_Lanes_Mean_Business.pdf",
+    "rows": 39,
+    "bike_rows": 7
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/86438372b4c84e23bc36976e364d8f26/": "Planning and Zoning Dashboard",
+   "https://city-of-richmond-maps-wcrgis.hub.arcgis.com/": "",
+   "https://storymaps.arcgis.com/stories/ae20c952e2f34be8ae5effd05d1e7cf3": "here",
+   "http://wcrgis.maps.arcgis.com/apps/Embed/index.html?webmap=e93a832d41a64b7f841af2b3a1232883&extent=-84.9988,39.7698,-84.7453,39.8883&zoom=false&previewImage=false&scale=true&search=true&searchextent=true&details=true&legend=true&active_panel=details&disable_scroll=false&theme=light&show_panel=true%22": "Link to Richmond Zoning Map",
+   "https://experience.arcgis.com/experience/c013c21ea3334d0c97d49709e82a87b0": "View Map",
+   "https://city-of-richmond-maps-wcrgis.hub.arcgis.com/datasets/546a55586ec7445e8d4e4a49edea8864": "Download"
+  }
+ },
+ "Eastchester": {
+  "files": [
+   {
+    "url": "https://www.eastchester.gov/how_do_i/find/docs/Sanitation___Recycling_Sections.pdf?t=201701240644180",
+    "text": "SECTION",
+    "file": "data/city_files/Eastchester/ee1049_Sanitation___Recycling_Sections.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eastchester.gov/how_do_i/find/docs/Town of Eastchester sanitation schedule section 1-2026.pdf?t=202601161505230",
+    "text": "2026 Sanitation & Recycling Schedule - Section 1",
+    "file": "data/city_files/Eastchester/97b66f_Town_of_Eastchester_sanitation_schedule_section_1-2026.pdf",
+    "rows": 96,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eastchester.gov/how_do_i/find/docs/Town of Eastchester sanitation schedule Section 2-2026.pdf?t=202601161505470",
+    "text": "2026 Sanitation & Recycling Schedule - Section 2",
+    "file": "data/city_files/Eastchester/e95c19_Town_of_Eastchester_sanitation_schedule_Section_2-2026.pdf",
+    "rows": 96,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eastchester.gov/how_do_i/find/docs/Town of Eastchester sanitation schedule Section 3-2026.pdf?t=202601161506180",
+    "text": "2026 Sanitation & Recycling Schedule - Section 3",
+    "file": "data/city_files/Eastchester/d1003a_Town_of_Eastchester_sanitation_schedule_Section_3-2026.pdf",
+    "rows": 98,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eastchester.gov/how_do_i/find/docs/Town of Eastchester sanitation schedule section 4-2026.pdf?t=202601161506370",
+    "text": "2026 Sanitation & Recycling Schedule - Section 4",
+    "file": "data/city_files/Eastchester/8f9ec3_Town_of_Eastchester_sanitation_schedule_section_4-2026.pdf",
+    "rows": 98,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.eastchester.gov/how_do_i/find/docs/Town of Eastchester sanitation & Recycling Schedule Common Backer.pdf?t=202601081152010",
+    "text": "General Information & Guidelines",
+    "file": "data/city_files/Eastchester/63d935_Town_of_Eastchester_sanitation_Recycling_Schedule_Common_Backer.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {}
+ },
+ "Chavakkad Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Arrecifes Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Jackson": {
+  "files": [],
+  "portals": {}
+ },
+ "North Paravur Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Stoughton": {
+  "files": [],
+  "portals": {}
+ }
+}
