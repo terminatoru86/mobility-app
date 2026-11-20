@@ -1,0 +1,198 @@
+[
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/0",
+"name": "High School",
+"count": 49,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/1",
+"name": "Middle School",
+"count": 59,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/2",
+"name": "Bicycle Shops",
+"count": 24,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/3",
+"name": "Transit Center",
+"count": 4,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/14",
+"name": "Community Center",
+"count": 60,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/4",
+"name": "Hospitals",
+"count": 26,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/8",
+"name": "Library",
+"count": 32,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/9",
+"name": "CSN Campuses",
+"count": 3,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/10",
+"name": "University",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/11",
+"name": "Bicycle Work Stations",
+"count": 8,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/12",
+"name": "Bicycle Share Locations",
+"count": 38,
+"cat": "share"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/16",
+"name": "Public Bike Rack",
+"count": 1608,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/5",
+"name": "Bicycle Shops",
+"count": 24,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/6",
+"name": "Bicycle Work Stations",
+"count": 8,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/7",
+"name": "Bicycle Share Locations",
+"count": 38,
+"cat": "share"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/16",
+"name": "Public Bike Rack",
+"count": 1608,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/5",
+"name": "Bicycle Shops",
+"count": 24,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/6",
+"name": "Bicycle Work Stations",
+"count": 8,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/7",
+"name": "Bicycle Share Locations",
+"count": 38,
+"cat": "share"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/16",
+"name": "Public Bike Rack",
+"count": 1608,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/5",
+"name": "Bicycle Shops",
+"count": 24,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/6",
+"name": "Bicycle Work Stations",
+"count": 8,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/7",
+"name": "Bicycle Share Locations",
+"count": 38,
+"cat": "share"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/16",
+"name": "Public Bike Rack",
+"count": 1608,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/5",
+"name": "Bicycle Shops",
+"count": 24,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/6",
+"name": "Bicycle Work Stations",
+"count": 8,
+"cat": "racks"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/7",
+"name": "Bicycle Share Locations",
+"count": 38,
+"cat": "share"
+},
+{
+"city": "Las Vegas NV",
+"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/16",
+"name": "Public Bike Rack",
+"count": 1608,
+"cat": "racks"
+}
+]
