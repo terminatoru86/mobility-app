@@ -1,0 +1,1430 @@
+{
+ "Colorado Springs CO": {
+  "files": [
+   {
+    "url": "https://coloradosprings.gov/document/trailwisecos-brochure.pdf",
+    "text": "Download the #TrailWiseCOS Brochure",
+    "file": "data/city_files/Colorado_Springs_CO/af1fc5_trailwisecos-brochure.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coloradosprings.gov/document/colorado-springs-parking-and-curb-management-report2025.pdf",
+    "text": "2025 Parking & Curb Management Plan",
+    "file": "data/city_files/Colorado_Springs_CO/9f7171_colorado-springs-parking-and-curb-management-report2025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coloradosprings.gov/document/parking-lots-and-garage-terms-and-conditionsindividuals.pdf",
+    "text": "Parking Lots and Garages Terms and Conditions - Individuals",
+    "file": "data/city_files/Colorado_Springs_CO/de7a88_parking-lots-and-garage-terms-and-conditionsindividuals.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coloradosprings.gov/document/parking-lots-and-garage-terms-and-conditionsgroup-accounts.pdf",
+    "text": "Parking Lots and Garages Terms and Conditions - Group Accounts",
+    "file": "data/city_files/Colorado_Springs_CO/3ceb3c_parking-lots-and-garage-terms-and-conditionsgroup-accounts.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coloradosprings.gov/document/appendixdmapsurveys.pdf",
+    "text": "Appendix D: Interactive Map and Surveys Summary",
+    "file": "data/city_files/Colorado_Springs_CO/fdef5c_appendixdmapsurveys.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Birmingham AL": {
+  "files": [
+   {
+    "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-04/PEPDOC_HP_ForestParkHistoricPreservationPlanIncludingDesignGuidelines.pdf",
+    "text": "Forest Park",
+    "file": "data/city_files/Birmingham_AL/df40ea_PEPDOC_HP_ForestParkHistoricPreservationPlanIncludingDesignGuidelines.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-04/PEPDOC_HP_HighlandParkHistoricPreservationPlanIncludingDesignGuidelines.pdf",
+    "text": "Highland Park",
+    "file": "data/city_files/Birmingham_AL/479ed4_PEPDOC_HP_HighlandParkHistoricPreservationPlanIncludingDesignGuideline",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-04/PEP_BR_DesignReview_0.pdf",
+    "text": "Design Review in Commercial Revitalization Districts & Historic Districts",
+    "file": "data/city_files/Birmingham_AL/c1ff26_PEP_BR_DesignReview_0.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-04/PEPBR_HIS_DesignReview2021_0.pdf",
+    "text": "Design Review Manual for Properties in Local Historic Districts",
+    "file": "data/city_files/Birmingham_AL/d8bbfe_PEPBR_HIS_DesignReview2021_0.pdf",
+    "rows": 21,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-07/LHD and NR Districts List (1).pdf",
+    "text": "List of Local Historic Districts and National Register Districts",
+    "file": "data/city_files/Birmingham_AL/562b5c_LHD_and_NR_Districts_List_1_.pdf",
+    "rows": 27,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-04/Birmingham-Parking-Ordinance-2024-ADOPTED.pdf",
+    "text": "Birmingham Parking Ordinance 2024",
+    "file": "data/city_files/Birmingham_AL/fd7297_Birmingham-Parking-Ordinance-2024-ADOPTED.pdf",
+    "rows": 118,
+    "bike_rows": 37
+   },
+   {
+    "url": "https://s3.us-east-2.amazonaws.com/assets.birminghamal.gov/s3fs-public/2026-07/LHD%20and%20NR%20Districts%20List%20%281%29.pdf",
+    "text": "Local Historic Districts and National Register District List",
+    "file": "data/city_files/Birmingham_AL/0493b6_LHD_20and_20NR_20Districts_20List_20_281_29.pdf",
+    "rows": 27,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/CityWideColor2022.pdf",
+    "text": "Citywide Map (All Districts)",
+    "file": "data/city_files/Birmingham_AL/565e70_CityWideColor2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/CityWideColor2022Nhood.pdf",
+    "text": "Citywide Map with Neighborhoods (All Districts)",
+    "file": "data/city_files/Birmingham_AL/fb1342_CityWideColor2022Nhood.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/11x17/22DistrictOne11x17.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/2b1d68_22DistrictOne11x17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/ESize/22DistrictOneE.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/c9cd47_22DistrictOneE.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/11x17/22DistrictTwo11x17.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/3a4d19_22DistrictTwo11x17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/ESize/22DistrictTwoE.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/5ce625_22DistrictTwoE.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/11x17/22DistrictThree11x17.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/d887a1_22DistrictThree11x17.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/ESize/22DistrictThreeE.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/e0d556_22DistrictThreeE.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/11x17/22DistrictFour11x17.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/52115b_22DistrictFour11x17.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/ESize/22DistrictFourE.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/cbc0f0_22DistrictFourE.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/11x17/22DistrictFive11x17.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/b04d52_22DistrictFive11x17.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/ESize/22DistrictFiveE.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/bf5733_22DistrictFiveE.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/11x17/22DistrictSix11x17.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/d3a763_22DistrictSix11x17.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/ESize/22DistrictSixE.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/f72a0c_22DistrictSixE.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/11x17/22DistrictSeven11x17.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/0f9e4a_22DistrictSeven11x17.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/ESize/22DistrictSevenE.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/3e4f97_22DistrictSevenE.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/11x17/22DistrictEight11x17.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/1b5f1a_22DistrictEight11x17.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/ESize/22DistrictEightE.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/d0c902_22DistrictEightE.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/11x17/22DistrictNine11x17.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/841941_22DistrictNine11x17.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/CityCouncil/ESize/22DistrictNineE.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/49dd01_22DistrictNineE.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/11x17/Acipco-Finley.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/eb5061_Acipco-Finley.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/ESize/Acipco-Finley.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/ed266e_Acipco-Finley.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/11x17/AirportHighlands.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/3e30f9_AirportHighlands.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/ESize/AirportHighlands.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/c0fcf7_AirportHighlands.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/11x17/AppleValley.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/58149b_AppleValley.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/ESize/AppleValley.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/aa613f_AppleValley.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/11x17/Arlington-WestEnd.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/f9e817_Arlington-WestEnd.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/ESize/Arlington-WestEnd.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/491176_Arlington-WestEnd.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/11x17/BelviewHeights.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/895b2f_BelviewHeights.pdf",
+    "rows": 16,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/ESize/BelviewHeights.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/a0dbf0_BelviewHeights.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/11x17/Bridlewood.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/d45037_Bridlewood.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/ESize/Bridlewood.pdf",
+    "text": "Large Map",
+    "file": "data/city_files/Birmingham_AL/284d74_Bridlewood.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb.birminghamal.gov/StandardMaps/Neighborhoods/11x17/BrownSprings.pdf",
+    "text": "11x17 Map",
+    "file": "data/city_files/Birmingham_AL/36d210_BrownSprings.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://data.birminghamal.gov/": "Open Data",
+   "https://www.vertigis.com/": "VertiGIS (formerly Latitude Geographics)"
+  }
+ },
+ "Merlo Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "San Salvador de Jujuy": {
+  "files": [],
+  "portals": {}
+ },
+ "Worcester": {
+  "files": [
+   {
+    "url": "https://worcesterma.gov/finance/document-center/ticket-appeal.pdf",
+    "text": "Parking Ticket Appeal Form",
+    "file": "data/city_files/Worcester/218013_ticket-appeal.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/streets/document-center/trash-recycling-guide.pdf",
+    "text": "Trash & Recycling Guide",
+    "file": "data/city_files/Worcester/8d8028_trash-recycling-guide.pdf",
+    "rows": 29,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://worcesterma.gov/streets/document-center/trash-recycling-guide-sp.pdf",
+    "text": "Spanish",
+    "file": "data/city_files/Worcester/6f5ea7_trash-recycling-guide-sp.pdf",
+    "rows": 29,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/streets/document-center/trash-recycling-guide-pt.pdf",
+    "text": "Portuguese",
+    "file": "data/city_files/Worcester/8acc0d_trash-recycling-guide-pt.pdf",
+    "rows": 28,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/streets/document-center/trash-recycling-guide-viet.pdf",
+    "text": "Vietnamese",
+    "file": "data/city_files/Worcester/c93f12_trash-recycling-guide-viet.pdf",
+    "rows": 30,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/trash-recycling/green-worcester-corps.pdf",
+    "text": "About Worcester Green Corps",
+    "file": "data/city_files/Worcester/5fddc9_green-worcester-corps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/zoning-map-set.pdf",
+    "text": "Entire Zoning Map Set (Underlying & Overlays) - as Amended Through August 7, 2024",
+    "file": "data/city_files/Worcester/382238_zoning-map-set.pdf",
+    "rows": 8,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/zoning-map.pdf",
+    "text": "Zoning Map (Underlying) - as Amended Through August 7, 2024",
+    "file": "data/city_files/Worcester/1a786a_zoning-map.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/zoning-map-overlays.pdf",
+    "text": "Zoning Map (Overlays) - as Amended Through August 7, 2024",
+    "file": "data/city_files/Worcester/2265c5_zoning-map-overlays.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20260203d.pdf",
+    "text": "Zoning Map Amendment - February 3, 2026 (D)",
+    "file": "data/city_files/Worcester/163394_map-amend-20260203d.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20260203c.pdf",
+    "text": "Zoning Map Amendment - February 3, 2026 (C)",
+    "file": "data/city_files/Worcester/64f515_map-amend-20260203c.pdf",
+    "rows": 9,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20260203b.pdf",
+    "text": "Zoning Map Amendment - February 3, 2026 (B)",
+    "file": "data/city_files/Worcester/3eaf14_map-amend-20260203b.pdf",
+    "rows": 16,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20260203a.pdf",
+    "text": "Zoning Map Amendment - February 3, 2026 (A)",
+    "file": "data/city_files/Worcester/4eb3ae_map-amend-20260203a.pdf",
+    "rows": 11,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20251209d.pdf",
+    "text": "Zoning Map Amendment - December 9, 2025 (D)",
+    "file": "data/city_files/Worcester/391130_map-amend-20251209d.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20251209c.pdf",
+    "text": "Zoning Map Amendment - December 9, 2025 (C)",
+    "file": "data/city_files/Worcester/a10d42_map-amend-20251209c.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20251209b.pdf",
+    "text": "Zoning Map Amendment - December 9, 2025 (B)",
+    "file": "data/city_files/Worcester/85802c_map-amend-20251209b.pdf",
+    "rows": 8,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20251209a.pdf",
+    "text": "Zoning Map Amendment - December 9, 2025 (A)",
+    "file": "data/city_files/Worcester/1b37f8_map-amend-20251209a.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20250909b.pdf",
+    "text": "Zoning Map Amendment - September 9, 2025 (B)",
+    "file": "data/city_files/Worcester/9fedaf_map-amend-20250909b.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20250909a.pdf",
+    "text": "Zoning Map Amendment - September 9, 2025 (A)",
+    "file": "data/city_files/Worcester/e1fc8c_map-amend-20250909a.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20250715.pdf",
+    "text": "Zoning Map Amendment - July 15, 2025",
+    "file": "data/city_files/Worcester/86fd83_map-amend-20250715.pdf",
+    "rows": 8,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20250429.pdf",
+    "text": "Zoning Map Amendment - April 29, 2025",
+    "file": "data/city_files/Worcester/4eceb9_map-amend-20250429.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240716d.pdf",
+    "text": "Zoning Map Amendment - July 16, 2024 (D)",
+    "file": "data/city_files/Worcester/514e4e_map-amend-20240716d.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240716c.pdf",
+    "text": "Zoning Map Amendment - July 16, 2024 (C)",
+    "file": "data/city_files/Worcester/548407_map-amend-20240716c.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240716b.pdf",
+    "text": "Zoning Map Amendment - July 16, 2024 (B)",
+    "file": "data/city_files/Worcester/b8782f_map-amend-20240716b.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240716a.pdf",
+    "text": "Zoning Map Amendment - July 16, 2024 (A)",
+    "file": "data/city_files/Worcester/7eff04_map-amend-20240716a.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240618b.pdf",
+    "text": "Zoning Map Amendment - June 18, 2024 (B)",
+    "file": "data/city_files/Worcester/90c504_map-amend-20240618b.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240618a.pdf",
+    "text": "Zoning Map Amendment - June 18, 2024 (A)",
+    "file": "data/city_files/Worcester/ec176a_map-amend-20240618a.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240409e.pdf",
+    "text": "Zoning Map Amendment - April 9, 2024 (E)",
+    "file": "data/city_files/Worcester/05ecb5_map-amend-20240409e.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240409d.pdf",
+    "text": "Zoning Map Amendment - April 9, 2024 (D)",
+    "file": "data/city_files/Worcester/1f3038_map-amend-20240409d.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240409c.pdf",
+    "text": "Zoning Map Amendment - April 9, 2024 (C)",
+    "file": "data/city_files/Worcester/287bcc_map-amend-20240409c.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240409b.pdf",
+    "text": "Zoning Map Amendment - April 9, 2024 (B)",
+    "file": "data/city_files/Worcester/057766_map-amend-20240409b.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240409a.pdf",
+    "text": "Zoning Map Amendment - April 9, 2024 (A)",
+    "file": "data/city_files/Worcester/348019_map-amend-20240409a.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20241219.pdf",
+    "text": "Zoning Map Amendment - December 19, 2023",
+    "file": "data/city_files/Worcester/9e0d8c_map-amend-20241219.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20230718b.pdf",
+    "text": "Zoning Map Amendment - July 18, 2023 (B)",
+    "file": "data/city_files/Worcester/9c3215_map-amend-20230718b.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20230718a.pdf",
+    "text": "Zoning Map Amendment - July 18, 2023 (A)",
+    "file": "data/city_files/Worcester/7b9c12_map-amend-20230718a.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20230509.pdf",
+    "text": "Zoning Map Amendment - May 09, 2023",
+    "file": "data/city_files/Worcester/620fbc_map-amend-20230509.pdf",
+    "rows": 32,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20230411.pdf",
+    "text": "Zoning Map Amendment - April 11, 2023",
+    "file": "data/city_files/Worcester/c4b962_map-amend-20230411.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20230214.pdf",
+    "text": "Zoning Map Amendment - February 14, 2023",
+    "file": "data/city_files/Worcester/0c1821_map-amend-20230214.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20230110b.pdf",
+    "text": "Zoning Map Amendment - January 10, 2023 (B)",
+    "file": "data/city_files/Worcester/ed91f0_map-amend-20230110b.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20230110a.pdf",
+    "text": "Zoning Map Amendment - January 10, 2023 (A)",
+    "file": "data/city_files/Worcester/21943f_map-amend-20230110a.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://opendata.worcesterma.gov/": "Informing Worcester",
+   "https://www.worcesterma.gov/announcements/worcester-revamps-open-data-portal": "Phone: 311",
+   "https://opendata.worcesterma.gov": "Explore Now",
+   "https://opendata.worcesterma.gov/pages/training": "watch these videos",
+   "https://worcesterma.maps.arcgis.com/apps/instant/reporter/index.html?appid=4e2a33e8a2734d619afe64c5efe2db95": "live on the municipality’s website now.",
+   "https://worcesterma.maps.arcgis.com/apps/Embed/index.html?webmap=e0ef0fe39f7e41298421cf75dd82049e&extent=-71.9628,42.2243,-71.6248,42.3219&zoom=true&scale=true&legend=true&disable_scroll=true&theme=light": "View larger map",
+   "https://worcesterma.maps.arcgis.com/apps/instant/nearby/index.html?appid=5603abbfa14a48798bb4cc48081ea730": "Learn More",
+   "https://worcesterma.maps.arcgis.com/apps/mapviewer/index.html?webmap=10b04f20978b41b7858b299b0d262a78": "View larger map",
+   "https://vernon-connected-cmrpc.hub.arcgis.com/": "Vernon Connected Study",
+   "https://storymaps.arcgis.com/stories/0e1e558f46b94c1fbd024faaf84a7140": "Introducing Worcester Atlas Storymap",
+   "https://experience.arcgis.com/experience/503920c4ab1b4404bee9dce73114538d": "Learn More",
+   "https://storymaps.arcgis.com/stories/e5e1107aab06429796e60663e0ca34ad": "Climate Resilience in Worcester",
+   "https://storymaps.arcgis.com/stories/fc83183192db40139f50b2ef76193294": "A History of Worcester in 10 Maps",
+   "https://storymaps.arcgis.com/stories/a1f56fce58ca4f3fae0dda04bc6eab7d": "New Artwork on Main Street Reflects Worcester's Past",
+   "https://storymaps.arcgis.com/stories/4c24c11f57084c23a5adf3b628540672": "Timeline of WPD Policy and Program Updates in Context of the DOJ Report",
+   "https://storymaps.arcgis.com/stories/d4fb9ec4e64748cc979be9c6024849a6": "The WooBox Art Project",
+   "https://storymaps.arcgis.com/stories/b97eb38d94c74df7a306576f0ebcbe49": "Worcester CoolPockets",
+   "https://opendata.worcesterma.gov/apps/8e242d540dc54601bc4006bb101c8821/explore": "Worcester's Green Infrastructure",
+   "https://storymaps.arcgis.com/stories/0c182724ddf14c6c9fabbacf0d86ada8": "Worcester Miyawaki Forests",
+   "https://storymaps.arcgis.com/stories/ba46a3d293de43c5b615725a2dacd0d3": "Learn More About Vision Zero - StoryMap",
+   "https://opendata.worcesterma.gov/documents/0b1ea670ddb242ac805b875df2fcb63b/about": "Executive Order",
+   "https://worcesterma.maps.arcgis.com/apps/instant/media/index.html?appid=a780c9dfc4bc4551a88faca4d3920351": "View Larger Map",
+   "https://experience.arcgis.com/experience/6ccb45f0c063458fbb5db5e6fceb7146": "View Larger Map",
+   "https://experience.arcgis.com/experience/c3236a1cc0dc460f96eda69a4331326b": "View Larger Map",
+   "https://experience.arcgis.com/experience/651de32003d64e81a56f7aee40be0609": "View Larger Map"
+  }
+ },
+ "Eugene": {
+  "files": [],
+  "portals": {}
+ },
+ "Roseville": {
+  "files": [],
+  "portals": {
+   "https://data-roseville.opendata.arcgis.com/": "Open GIS Data",
+   "https://experience.arcgis.com/experience/4dc29c82a638424e95076e4fea21b79b": "View a larger interactive map.",
+   "https://storymaps.arcgis.com/stories/786a00ca245a4aa99d3ae6048233380e": "10 Minute Walk",
+   "https://experience.arcgis.com/experience/b81233008ebf4427a3b127607d25a65f/page/Interactive-Hazards-Map/": "Interactive Hazard Map",
+   "https://experience.arcgis.com/experience/76e379c77db749f1a3d4354142a476eb": "Simulated Flood Events"
+  }
+ },
+ "Thousand Oaks": {
+  "files": [
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/Handicap Affidavit Fillable_2025_1758326415.pdf",
+    "text": "City of Thousand Oaks' Handicapped Parking Violation Affidavit .",
+    "file": "data/city_files/Thousand_Oaks/cd8532_Handicap_Affidavit_Fillable_2025_1758326415.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/TOAKS_SystemMap_DIGITAL_1765068959.pdf",
+    "text": "click here to download",
+    "file": "data/city_files/Thousand_Oaks/dd2eae_TOAKS_SystemMap_DIGITAL_1765068959.pdf",
+    "rows": 162,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2040_DIGITAL_936.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/fa4d38_TOAKS_Route_2040_DIGITAL_936.pdf",
+    "rows": 34,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2041_DIGITAL_937.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/e12b14_TOAKS_Route_2041_DIGITAL_937.pdf",
+    "rows": 29,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2042_DIGITAL_938.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/577ade_TOAKS_Route_2042_DIGITAL_938.pdf",
+    "rows": 42,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2043_DIGITAL_939.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/869567_TOAKS_Route_2043_DIGITAL_939.pdf",
+    "rows": 35,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2044_DIGITAL_940.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/997770_TOAKS_Route_2044_DIGITAL_940.pdf",
+    "rows": 32,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2045_DIGITAL_941.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/422ea5_TOAKS_Route_2045_DIGITAL_941.pdf",
+    "rows": 33,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://gis.toaks.gov/portal/apps/sites/": "City GIS Mapping"
+  }
+ },
+ "League City": {
+  "files": [],
+  "portals": {
+   "https://leaguecity.maps.arcgis.com/apps/instant/basic/index.html?appid=fcb17b8a7b2d436aa97f5043d622ed47": "",
+   "https://experience.arcgis.com/experience/085f6638741849ed822daf846ff9bbce": "map to locate flood zones in your area",
+   "https://experience.arcgis.com/experience/203f772571cb48b1b8b50fdcc3272e2c": "NOAA's storm surge inundation map",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd&extent=-95.23966549316381,29.428582564655684,-94.94715450683609,29.577984108183294": "FEMA’s National Flood Hazard Layer (NFHL) Viewer",
+   "https://arcgis.leaguecitytx.gov/arcgis/apps/experiencebuilder/experience/?id=40a2f32f65394770a2930d18c3df6806": "",
+   "https://leaguecity.maps.arcgis.com/apps/webappviewer/index.html?id=b0b7db5e88954ff0b6ac963a73745882": "",
+   "https://leaguecity.maps.arcgis.com/apps/instant/basic/index.html?appid=7474917c8ff748638db085dd1620f1e7": "",
+   "https://leaguecity.maps.arcgis.com/apps/webappviewer/index.html?id=efe73c287b7d4f4f92ccf246cf6b1f1a": "",
+   "https://leaguecity.maps.arcgis.com/apps/instant/basic/index.html?appid=e031aa91944a4117a2d8b2f91d6913b9": "",
+   "https://leaguecity.maps.arcgis.com/apps/instant/basic/index.html?appid=b9d0b9936a6c4eafbe61f472d10e86b2": "",
+   "https://storymaps.arcgis.com/stories/76bf0c6209d247e09f6ace529101a236": "Sewer manhole inspections",
+   "https://leaguecity.maps.arcgis.com/apps/mapviewer/index.html?webmap=fa76bca1309f4d448c5b61f6d44c7683": "sanitary sewer manhole inspection interactive map",
+   "https://leaguecity.maps.arcgis.com/apps/webappviewer/index.html?id=b9d2dfc0cec44d2495edd81d14dcbf4e&extent=-95.2422,29.4264,-94.9886,29.5564&bing=true&zoom=true&scale=true&disable_scroll=true&theme=light": "interactive map"
+  }
+ },
+ "Allen": {
+  "files": [
+   {
+    "url": "https://cityofallen.org/Images/Documents/Departments/Parks Recreation/Parks Trails/Trails/Parks and Trails Map-7-8-2025 web.pdf",
+    "text": "Parks & Trails Map",
+    "file": "data/city_files/Allen/8c8774_Parks_and_Trails_Map-7-8-2025_web.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofallen.org/Documents/Departments/Parks Recreation/Parks Trails/Trails/Parks and Trails Map- 3-17-2025 NO BLEED.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Allen/924b30_Parks_and_Trails_Map-_3-17-2025_NO_BLEED.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofallen.org/Images/Documents/Departments/Parks%20Recreation/Parks%20Trails/Trails/Parks%20and%20Trails%20Map-%203-17-2025%20NO%20BLEED.pdf",
+    "text": "Learn More",
+    "file": "data/city_files/Allen/68d0a0_Parks_20and_20Trails_20Map-_203-17-2025_20NO_20BLEED.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofallen.org/Images/Documents/Departments/Parks Recreation/Parks Trails/Trails and Bikeways Master Plan 2019.pdf?t=202504081906090",
+    "text": "Trails and Bikeways Master Plan",
+    "file": "data/city_files/Allen/f3152c_Trails_and_Bikeways_Master_Plan_2019.pdf",
+    "rows": 318,
+    "bike_rows": 35
+   },
+   {
+    "url": "https://cityofallen.org/Documents/Departments/Parks Recreation/Parks Trails/Trails/Parks and Trails Map- 3-17-2025 NO BLEED.pdf?t=202607091544010",
+    "text": "Download our Parks and Trails Map",
+    "file": "data/city_files/Allen/29afb2_Parks_and_Trails_Map-_3-17-2025_NO_BLEED.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofallen.org/Images/Documents/Departments/Parks Recreation/Parks Trails/Parks Trails Map/Parks and Trails Map- 3-17-2025.pdf?t=202504081904060",
+    "text": "",
+    "file": "data/city_files/Allen/04f944_Parks_and_Trails_Map-_3-17-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cms3.revize.com/revize/allentx/Documents/Departments/Community%20Services/Trash%20and%20Recycling/2026%20Trash%20and%20Recycling%20Guidelines.pdf?t=202602201755420&t=202602201755420",
+    "text": "Trash & Recycling Guidelines",
+    "file": "data/city_files/Allen/b04721_2026_20Trash_20and_20Recycling_20Guidelines.pdf",
+    "rows": 175,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://www.cityofallen.org/Documents/Departments/Community Services/Trash and Recycling/2026 Trash and Recycling Guidelines.pdf?t=202603140953210",
+    "text": "2026 Trash and Recycling Guidelines [PDF]",
+    "file": "data/city_files/Allen/1497b6_2026_Trash_and_Recycling_Guidelines.pdf",
+    "rows": 175,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://www.communitywastedisposal.com/wp-content/uploads/2026/04/CWD-Commercial-Trash-and-Recycling-Guidelines.pdf",
+    "text": "Commercial Trash and Recycling Guidelines",
+    "file": "data/city_files/Allen/a15616_CWD-Commercial-Trash-and-Recycling-Guidelines.pdf",
+    "rows": 86,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofallen.org/Images/Documents/Departments/Community Services/Trash and Recycling/Do-It-Yourself Disposal/NTMWD-Waste-Drop-off-03.27.2020-webversion.pdf?t=202504081807100",
+    "text": "How-To Guide for DIY Drop Off",
+    "file": "data/city_files/Allen/c0978c_NTMWD-Waste-Drop-off-03.27.2020-webversion.pdf",
+    "rows": 22,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofallen.org/Images/Documents/Departments/Community Development/Planning & Development/Planning Regulations Signs and Maps/Sign_Fee_Schedule_201503091315144516.pdf",
+    "text": "Sign Fee Schedule",
+    "file": "data/city_files/Allen/6ceb54_Sign_Fee_Schedule_201503091315144516.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofallen.org/Images/Documents/Departments/Community Development/Planning & Development/Planning Regulations Signs and Maps/COA Zoning and Development Map - July 2024_202407231628322227.pdf?t=202504081747400",
+    "text": "Map of all zoning in Allen",
+    "file": "data/city_files/Allen/83b437_COA_Zoning_and_Development_Map_-_July_2024_202407231628322227.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofallen.org/Documents/Departments/Community Enhancement/Neighborhood Enhancement/Home Repair Assistance Programs/Owner-Occupied Housing Rehab Program Summary for Web.pdf?t=202602241241480",
+    "text": "View an overview of allowable projects here (PDF)",
+    "file": "data/city_files/Allen/60fa3e_Owner-Occupied_Housing_Rehab_Program_Summary_for_Web.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofallen.org/Documents/Departments/Community Enhancement/Neighborhood Enhancement/Home Repair Assistance Programs/Vendor Forms Combined 2023 (002).pdf?t=202602241229250",
+    "text": "View the City of Allen's required vendor forms here",
+    "file": "data/city_files/Allen/ba6d95_Vendor_Forms_Combined_2023_002_.pdf",
+    "rows": 35,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://share-open-data-cofa.hub.arcgis.com/": "Interactive Maps",
+   "https://experience.arcgis.com/experience/c7b7671840424b43945634b13e473471/": "Development Project Map",
+   "https://experience.arcgis.com/experience/c09251c67d1244959603ecf746e79491": "Find My Collection Day",
+   "https://experience.arcgis.com/experience/f1b19d5b3b7f4e739db8076de0f46489": "Interactive GIS maps",
+   "https://cofa.maps.arcgis.com/apps/webappviewer/index.html?id=805ab25cf44f4e0888be7e4b8c24c4ea": "Patrol District Map"
+  }
+ },
+ "Yuma": {
+  "files": [],
+  "portals": {}
+ },
+ "Fort Smith": {
+  "files": [],
+  "portals": {}
+ },
+ "Franklin": {
+  "files": [],
+  "portals": {}
+ },
+ "Flagstaff": {
+  "files": [],
+  "portals": {
+   "https://gis.flagstaffaz.gov/portal/apps/sites/": "Maps & Property",
+   "https://flagstaff-regional-plan-2045-flagstaff.hub.arcgis.com/": "Flagstaff Regional Plan 2045",
+   "https://flagstaff.maps.arcgis.com/apps/instant/sidebar/index.html?appid=a53a041956f5473490a93b48d32f8f80": "ATMP planning map",
+   "https://flagstaff.maps.arcgis.com/apps/webappviewer/index.html?id=7bd110d4e99d4c07b00a7eb30a1266a0": "Bikeways Plan",
+   "https://flagstaff.maps.arcgis.com/apps/instant/sidebar/index.html?appid=e8d91c4b5fc04b24a8342c2bd62fe71c": "FUTS Plan",
+   "https://gis.flagstaffaz.gov/portal/apps/storymaps/stories/f0d5989f7b254c93a6a5fac9cf12d690": "",
+   "https://gis.flagstaffaz.gov/portal/apps/experiencebuilder/experience/?id=ed3ab2ae5f3b4f0bb5703a0c17fcd08c": "",
+   "https://gis.flagstaffaz.gov/portal/apps/storymaps/stories/1e165f2a1a4344c8be3603dcda0d058d": "",
+   "https://gis.flagstaffaz.gov/portal/apps/storymaps/stories/0b44c46c66754cb9b5af1285498af583": "",
+   "https://gis.flagstaffaz.gov/portal/apps/storymaps/stories/7a7313ec163c43ecb189ed360e45efd1": "",
+   "https://gis.flagstaffaz.gov/portal/apps/storymaps/stories/e98eb57265e44aa88a7c0d0f716c07fb": "",
+   "https://gis.flagstaffaz.gov/portal/apps/storymaps/stories/bc8e4e819d4d4ed0bd0f8bc9e56dbec6": "",
+   "https://gis.flagstaffaz.gov/portal/apps/storymaps/stories/a83bec1dfbd1425cb1323dc1b69519eb": "",
+   "https://gis.flagstaffaz.gov/portal/apps/dashboards/5c562aceb1c94081ae00a56468f337d7": "Road Repair and Street Safety Dashboard"
+  }
+ },
+ "San Pedro de Jujuy": {
+  "files": [],
+  "portals": {}
+ },
+ "Tulare": {
+  "files": [],
+  "portals": {}
+ },
+ "Waltham": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/0a47b5eabfb9436791353dfa9a4e568e": "pick-up Map:",
+   "https://experience.arcgis.com/template/ece3f68eeef24f7e965f6aba12fd5f16": "Recycling",
+   "https://www.arcgis.com/apps/Viewer/index.html?appid=18976219e1844515a1448ef78ea8dff6&extent=-71.3056,42.3574,-71.1572,42.4124": "Off-Street parking map (with pay stations)",
+   "https://experience.arcgis.com/experience/03ab75eb22ad4caab86c75238f62fa12": "Waltham Parking Map",
+   "https://web-gis.city.waltham.ma.us/HistoricalSearch/Default.aspx": "Historical Property Database"
+  }
+ },
+ "Wellington": {
+  "files": [
+   {
+    "url": "https://www.pbctax.gov/wp-content/uploads/2022/06/83039.pdf",
+    "text": "HSMV 83039 Application for Disabled Person Parking Permit",
+    "file": "data/city_files/Wellington/468604_83039.pdf",
+    "rows": 20,
+    "bike_rows": 4
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/b5154793b4054a8c9ef57a8bffadba26/": "Capital Improvement Project Experience Powered by Esri, this interactive online web application features information abo",
+   "https://experience.arcgis.com/experience/093416b988b04113ace86cc68d3c497e": "View the Map Gallery",
+   "https://wellington.maps.arcgis.com/apps/Embed/index.html?webmap=70e9528f3bd443408a658cd336875da9&extent=-80.315,26.6113,-80.1883,26.6745&home=true&zoom=true&scale=false&search=true&searchextent=true&legendlayers=true&disable_scroll=false&theme=light": "View with an accessibility tool",
+   "https://wellington.maps.arcgis.com/apps/Embed/index.html?webmap=779f29ef48c0430f9e03066b915d4637&extent=-80.3047,26.6262,-80.2035,26.6731&home=true&zoom=true&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=light": "View larger map",
+   "https://wellington.maps.arcgis.com/apps/Embed/index.html?webmap=b9471e5feda64305af450b4dae0c5dc7&extent=-80.3019,26.6237,-80.2008,26.6719&home=true&zoom=true&scale=false&search=true&searchextent=true&legendlayers=true&disable_scroll=false&theme=light": "accessibility tool",
+   "https://experience.arcgis.com/experience/94c32a73837645e8b238d8ea2a1a3ccc": "Click Here to View Map of Equestrian Trails",
+   "https://wellington.maps.arcgis.com/apps/Embed/index.html?webmap=8293002672f74791858ad009ceb242ad&extent=-80.233,26.6333,-80.2278,26.6358&home=true&zoom=true&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=light": "View larger map",
+   "https://wellington.maps.arcgis.com/apps/webappviewer/index.html?id=9d14ff8e0eb74278b804ba8475b19d95": "flood map",
+   "https://storymaps.arcgis.com/stories/4335a7341b7e4ff8825c2bcdd73ffc3b": "Lead Service Line Inventory",
+   "https://experience.arcgis.com/experience/0eeb4128220145818c7351131e66b7e3": "View Existing Bicycle Racks Map Full Screen",
+   "https://survey123.arcgis.com/share/b1d40bdd6cf64c8f938477d2bf3f331a": "Your input",
+   "https://fdot.maps.arcgis.com/apps/webappviewer/index.html?id=324053528c0f49beaab365d0ef6796f8": "Facilities Map",
+   "https://data.fdot.gov/road/projects/": "interactive Project Map",
+   "https://performance-data-integration-space-fdot.hub.arcgis.com/": "Performance"
+  }
+ },
+ "Stonecrest": {
+  "files": [],
+  "portals": {}
+ },
+ "Nedumangad Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Manjeri Municipality": {
+  "files": [
+   {
+    "url": "https://wardmap.ksmart.live/FinalN/map/Map_FinalN_Malappuram_Manjeri.pdf",
+    "text": "തദ്ദേശ സ്ഥാപന ഭുപടം",
+    "file": "data/city_files/Manjeri_Municipality/134fef_Map_FinalN_Malappuram_Manjeri.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Collierville": {
+  "files": [],
+  "portals": {}
+ },
+ "Cedar Hill": {
+  "files": [],
+  "portals": {}
+ },
+ "Henrietta": {
+  "files": [],
+  "portals": {}
+ },
+ "North Lauderdale": {
+  "files": [],
+  "portals": {
+   "https://bcgis.maps.arcgis.com/apps/instant/lookup/index.html?appid=58ccc4e19b9244aeb0b6f5ebb4f1e37c": "Precinct Look-Up",
+   "https://nlauderdale-cnlgis.hub.arcgis.com/": "Coronavirus Watch",
+   "https://experience.arcgis.com/experience/8dfc61c972e148f8b12953ddffe299c9": "https://experience.arcgis.com/experience/8dfc61c972e148f8b12953ddffe299c9",
+   "https://floridadisaster.maps.arcgis.com/apps/instant/lookup/index.html?appid=aa18a2d8737c4d66bb6434a09e17203a": "https://floridadisaster.maps.arcgis.com/apps/instant/lookup/index.html?appid=aa18a2d8737c4d66bb6434a09e17203a"
+  }
+ },
+ "Clermont": {
+  "files": [],
+  "portals": {}
+ },
+ "Pine Bluff": {
+  "files": [],
+  "portals": {}
+ },
+ "Ramallo Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Muskegon": {
+  "files": [
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/06/mc-graft-park-disc-golf-course.pdf",
+    "text": "McGraft Park Frisbee Golf Course Map (pdf)",
+    "file": "data/city_files/Muskegon/67aa15_mc-graft-park-disc-golf-course.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/06/historicdistrictcommissionapplicationform.pdf",
+    "text": "Historic District Commission Application Form",
+    "file": "data/city_files/Muskegon/543393_historicdistrictcommissionapplicationform.pdf",
+    "rows": 14,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/06/HDC-addres-list-for-website.pdf",
+    "text": "Historic District Address List",
+    "file": "data/city_files/Muskegon/be8ac8_HDC-addres-list-for-website.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/historic-preservation-booklet-1.pdf",
+    "text": "Historic Preservation Design Guidebook",
+    "file": "data/city_files/Muskegon/4a47b0_historic-preservation-booklet-1.pdf",
+    "rows": 168,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/06/3081.pdf",
+    "text": "Historic District Ordinance of the City of Muskegon",
+    "file": "data/city_files/Muskegon/9da11c_3081.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/10/waterfront_plan.pdf",
+    "text": "1999 Waterfront Redevelopment Plan",
+    "file": "data/city_files/Muskegon/23a2e8_waterfront_plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/13-Sheet_City-Winter-Parking-Map_2023FINAL.pdf",
+    "text": "business district",
+    "file": "data/city_files/Muskegon/f46995_13-Sheet_City-Winter-Parking-Map_2023FINAL.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/HalfSheet_City-Winter-Parking-Map_2023FINAL.pdf",
+    "text": "Please click here view the Downtown Business Zone map.",
+    "file": "data/city_files/Muskegon/a8c6bf_HalfSheet_City-Winter-Parking-Map_2023FINAL.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/Cemetery-prices-1.pdf",
+    "text": "Cemetery Fees",
+    "file": "data/city_files/Muskegon/b12cd7_Cemetery-prices-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/06/Cemetery-Rules.pdf",
+    "text": "rules",
+    "file": "data/city_files/Muskegon/898e92_Cemetery-Rules.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/Map-All-Cemeteries.pdf",
+    "text": "Cemetery Maps",
+    "file": "data/city_files/Muskegon/f09b79_Map-All-Cemeteries.pdf",
+    "rows": 25,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/06/Cemetery-prices.pdf",
+    "text": "cemetery prices",
+    "file": "data/city_files/Muskegon/60256f_Cemetery-prices.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/Map-Restlawn-Cemetery.pdf",
+    "text": "Restlawn Cemetery",
+    "file": "data/city_files/Muskegon/64e674_Map-Restlawn-Cemetery.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/Map-Lakeside-Cemetery.pdf",
+    "text": "Lakeside Cemetery",
+    "file": "data/city_files/Muskegon/2b2e10_Map-Lakeside-Cemetery.pdf",
+    "rows": 19,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/Map-Oakwood-Cemetery.pdf",
+    "text": "Oakwood Cemetery",
+    "file": "data/city_files/Muskegon/7f0961_Map-Oakwood-Cemetery.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/Map-Evergreen-Cemetery.pdf",
+    "text": "Evergreen Cemetery",
+    "file": "data/city_files/Muskegon/cb7fc2_Map-Evergreen-Cemetery.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/06/CRITERIA-SPECIFICATIONS-FOR-REPARING-SIDEWALKS.pdf",
+    "text": "Criteria Specifications for Repairing Sidewalks",
+    "file": "data/city_files/Muskegon/733d6c_CRITERIA-SPECIFICATIONS-FOR-REPARING-SIDEWALKS.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/Laketon-Lakeshore-Trail-Project.pdf",
+    "text": "Laketon-Lakeshore Trail Connector",
+    "file": "data/city_files/Muskegon/7b3bbb_Laketon-Lakeshore-Trail-Project.pdf",
+    "rows": 146,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2247745600-Beach-Street-FOR-PERMITS.pdf",
+    "text": "Pere Marquette Parking and Path",
+    "file": "data/city_files/Muskegon/2d0020_2247745600-Beach-Street-FOR-PERMITS.pdf",
+    "rows": 362,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/RecyclingCalendar_CityofMuskegon-2026-V3.pdf",
+    "text": "here.",
+    "file": "data/city_files/Muskegon/3b959f_RecyclingCalendar_CityofMuskegon-2026-V3.pdf",
+    "rows": 59,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/10/Garbage-Pickup-Days-Map.-pdf.pdf",
+    "text": "this map",
+    "file": "data/city_files/Muskegon/697267_Garbage-Pickup-Days-Map.-pdf.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/06/Recycling-Quick-Guide.pdf",
+    "text": "Recycling Guide (PDF)",
+    "file": "data/city_files/Muskegon/5007ca_Recycling-Quick-Guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/06/New-Meter-Set-Requirements.pdf",
+    "text": "New Meter Set Requirements (PDF)",
+    "file": "data/city_files/Muskegon/335b48_New-Meter-Set-Requirements.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/06/City-of-Muskegon-Irrigation-Meter-Policy.pdf",
+    "text": "Irrigation Meter Policy (PDF)",
+    "file": "data/city_files/Muskegon/1cbaa2_City-of-Muskegon-Irrigation-Meter-Policy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2022/06/MAP.pdf",
+    "text": "View 2004 Muskegon Area-Wide Plan",
+    "file": "data/city_files/Muskegon/ae4062_MAP.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/City-Owned-Lot-Sale-Policy_2025_Commission-Approved-10-14-25.pdf",
+    "text": "Policy for the Use & Sale of City-Owned Residential Property",
+    "file": "data/city_files/Muskegon/e56da0_City-Owned-Lot-Sale-Policy_2025_Commission-Approved-10-14-25.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2024-04-01_Muskegon-RFP.pdf",
+    "text": "Muskegon Historic District Monument Conservation Project",
+    "file": "data/city_files/Muskegon/d0bbb2_2024-04-01_Muskegon-RFP.pdf",
+    "rows": 32,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2024-09-24_Muskegon-RFP.pdf",
+    "text": "Muskegon Historic District Monument Conservation Project",
+    "file": "data/city_files/Muskegon/2a6174_2024-09-24_Muskegon-RFP.pdf",
+    "rows": 32,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/01-SP92339-City-Parks-Parking-Lots-SPEC-BOOK.pdf",
+    "text": "01 SP92339 City Parks Parking Lots SPEC BOOK",
+    "file": "data/city_files/Muskegon/c05905_01-SP92339-City-Parks-Parking-Lots-SPEC-BOOK.pdf",
+    "rows": 127,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/02-SP-92339-CITY-PARK-PARKING-LOT-IMPROVEMENTS-REVISED-4.28.2025.pdf",
+    "text": "02 SP 92339 CITY PARK PARKING LOT IMPROVEMENTS REVISED 4.28.2025",
+    "file": "data/city_files/Muskegon/5d7a23_02-SP-92339-CITY-PARK-PARKING-LOT-IMPROVEMENTS-REVISED-4.28.2025.pdf",
+    "rows": 118,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/Addendum-No-1-City-of-Muskegon-Beach-Street-Parking-and-Pedestrian-Facility-Improvements.pdf",
+    "text": "April 21, 2026 Addendum",
+    "file": "data/city_files/Muskegon/64da4a_Addendum-No-1-City-of-Muskegon-Beach-Street-Parking-and-Pedestrian-Fac",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/WesternAveResurface-ParkingMap-PhaseII.pdf",
+    "text": "Click here to view the Western Avenue Parking and Access Map (PDF)",
+    "file": "data/city_files/Muskegon/31cdda_WesternAveResurface-ParkingMap-PhaseII.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2023-Spring-Road-Construction-Projects-Map_DPW_2.pdf",
+    "text": "Spring/Summer 2023 Road + Utility Project Map",
+    "file": "data/city_files/Muskegon/4cc13d_2023-Spring-Road-Construction-Projects-Map_DPW_2.pdf",
+    "rows": 9,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://muskegon-mi.gov/cresources/2221100_Sanford-Detour_Phase-I.pdf",
+    "text": "Map Outlining Detour",
+    "file": "data/city_files/Muskegon/f07ecd_2221100_Sanford-Detour_Phase-I.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://maps.muskegoncountygis.com/portal/apps/MapSeries/index.html?appid=9285bd0128484dc0887e325ed40ef8a9": "City of Muskegon Zoning Map",
+   "https://maps.muskegoncountygis.com/portal/apps/webappviewer/index.html?id=7cdb59862b7b44aab85eda6f80347220": "Map not loading correctly? Click here",
+   "https://maps.muskegoncountygis.com/portal/apps/webappviewer/index.html?id=c658adba636c49fbac2e3b984d519734": "Muskegon County Cemeteries (External)",
+   "https://maps.muskegoncountygis.com/portal/apps/dashboards/f28b2f47bf924612b652fcc7bfbffe27": "CLICK HERE TO VIEW THE CITY OF MUSKEGON LEAD SERVICE LINE REPORTING MAP📍",
+   "https://maps.muskegoncountygis.com/portal/apps/webappviewer/index.html?id=50032d7eebd546ecb5c74a37887568dd": "Map not loading correctly? Click here.",
+   "https://links-1.govdelivery.com/CL0/https:%2F%2Fsurvey123.arcgis.com%2Fshare%2Fbdffa5b7458a4573a6d1b0fc9bb1002e/1/0100019c1f6a6765-05e6948c-91c0-467d-9a2c-ee1b2cddfb6e-000000/PWo110m6jMc5iKBSrgXBqd8mEzuzH6NDpt15Z-x9Wbs=442": "survey on transportation safety",
+   "https://links-1.govdelivery.com/CL0/https:%2F%2Fsurvey123.arcgis.com%2Fshare%2Fbdffa5b7458a4573a6d1b0fc9bb1002e/2/0100019c1f6a6765-05e6948c-91c0-467d-9a2c-ee1b2cddfb6e-000000/FakL1uZIujgicnNgfe88uVmoh6647qxF22DDQaA2NDg=442": "Road safety survey"
+  }
+ },
+ "Kaman": {
+  "files": [],
+  "portals": {}
+ },
+ "General José de San Martín": {
+  "files": [],
+  "portals": {}
+ },
+ "College Park": {
+  "files": [],
+  "portals": {
+   "https://collegeparkmd.maps.arcgis.com/apps/webappviewer/index.html?id=baa2abff6b1e441d8652753e1295a4f8": "My Neighborhood",
+   "https://collegeparkmd.maps.arcgis.com/apps/webappviewer/index.html?id=445aeb37369e4fe091c51eec864873b5": "Click here for a map of City trails",
+   "https://collegeparkmd.maps.arcgis.com/apps/webappviewer/index.html?id=c95b808a7a284b68b6a5ab3d42b6da05": "Construction & Projects",
+   "https://storymaps.arcgis.com/stories/e6fc6e784ffd4d8e926255d20111133d": "Storm Drain Murals",
+   "https://storymaps.arcgis.com/stories/6dcf259994054ac1ae668136798d6bb7": "Trees of the Trolley Trail",
+   "https://collegeparkmd.maps.arcgis.com/apps/webappviewer/index.html?id=027823bf810f43e1a5ae7ff2ea4d2318": "Urban Tree Canopy",
+   "https://storymaps.arcgis.com/stories/831a3a2755ab43be80b1008dba26c4ae": "Berwyn",
+   "https://storymaps.arcgis.com/stories/b6583c7bff7c46ddab51a8a7a8520e45": "Lakeland",
+   "https://storymaps.arcgis.com/stories/bbc4d79d042244d18931b6f57ea73fba": "Old Town & Calvert Hills",
+   "https://collegeparkmd.maps.arcgis.com/apps/MapTour/index.html?appid=a3d9d6a0c62d4e51802df8110d958a12": "Lakeland",
+   "https://experience.arcgis.com/experience/443e53c6e9144f9d9d36f92bab348ec0": "https://experience.arcgis.com/experience/443e53c6e9144f9d9d36f92bab348ec0"
+  }
+ },
+ "Frías, Santiago del Estero": {
+  "files": [],
+  "portals": {}
+ },
+ "O'Fallon": {
+  "files": [],
+  "portals": {
+   "https://ofallon.maps.arcgis.com/home/index.html": "Maps",
+   "https://storymaps.arcgis.com/stories/3f141fcb564c4a629b30cf56febfb15a": "Development Map",
+   "https://ofallon.maps.arcgis.com/home/webmap/viewer.html?webmap=e103da66c942466f8288ffd5d489544a": "View an interactive GIS version",
+   "https://ofallon.maps.arcgis.com/home/webmap/viewer.html?webmap=d65abe43f78b46da8fbd00f43280145d": "interactive GIS map",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=fd8ddcfb33eb4b5d86bcac82e861ca75": "Biking",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=4b940eebc80643448587b66d57d724a0": "Birding",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=c73cd9e38dff4cec9c46fa03b5196b3c": "Boating",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=1733095bbf0744cfacbfeaf8abee3a72": "Bring Fido",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=495666b8fea54579955d11039db15cec": "Disc Golf",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=403d688aec6f4afea20648478bd6c756": "Fishing",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=da28ea33b347427d91847ad5cefc15cd": "Golfing",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=6bf29eb20ab34b6fb849f27c215d945a": "Hiking",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=a565adae9c3c4a709241441edc3160b5": "Hunting",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=d95fd932124646ebaca8063aa83aad62": "Ice Skating",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=0e6e795ca77f4d978f61d926f7ca484d": "Paddling",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=58459bc68a6e4f7289244a8017bbb860": "Parks and Play",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=0fa28dfc255c4173b540b5fee1baebbd": "Pickleball",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=8160a7ca96364c3298891ad37a5da8f0": "Recreation Centers",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=4d8f8fcdbb3648b8ab78761b14e08da9": "Running",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=83e448b5182c46058dc641c80d8c228b": "Skate Parks",
+   "https://meprd.maps.arcgis.com/apps/webappviewer/index.html?id=f3732420ad89418e976eaf1ead940f9b": "Swim and Splash",
+   "https://ofallon.maps.arcgis.com/apps/webappviewer/index.html?appid=829cdef9f2064d599704230cae3c8cb1": "Historical Imagery"
+  }
+ },
+ "Cleburne": {
+  "files": [],
+  "portals": {}
+ },
+ "New Smyrna Beach": {
+  "files": [
+   {
+    "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/attachment/2990875/City_Commission_Workshop_Parking_Presentation_11.18.2024.pdf",
+    "text": "presentation of LTG's final report along with 23 action items",
+    "file": "data/city_files/New_Smyrna_Beach/fd6a21_City_Commission_Workshop_Parking_Presentation_11.18.2024.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://nsb.maps.arcgis.com/apps/dashboards/cbfed8aa7c0c4f2db8d83d8482a5958c": "Capital Improvement Projects",
+   "https://experience.arcgis.com/experience/6946ebe8fced4c48b431bc9c4da297f4?draft=true": "Stormwater Feature Map",
+   "https://experience.arcgis.com/experience/b7bc7bc907d042ea923f34869d1597b9/?draft=true": "Parks Map",
+   "https://experience.arcgis.com/experience/a972712f84804e2ca5bd9dcfed0cb777": "City Interactive Map",
+   "https://experience.arcgis.com/experience/3d863ca5488941378b7e8ff336cb47f7/?draft=true": "",
+   "https://experience.arcgis.com/experience/e0b01dc4ef3242e2bfa4eca40edd4d31": "",
+   "https://nsb.maps.arcgis.com/apps/dashboards/f9c51b17cd754f2986d17857ef8af6a7": "",
+   "https://experience.arcgis.com/experience/8f926d042eef4d21a6a6da9e869c0477": "",
+   "https://experience.arcgis.com/experience/307b5c4f2ac942b68752380b3e0897e5": "",
+   "https://experience.arcgis.com/experience/077d84301d7447ca9a34a5023dfd676e": "",
+   "https://experience.arcgis.com/experience/aa826b9ab46f4637a130fb6f3a337efa": "",
+   "https://experience.arcgis.com/experience/b7bc7bc907d042ea923f34869d1597b9": "",
+   "https://fccenvironmental.maps.arcgis.com/apps/instant/lookup/index.html?appid=240a926cb57841218b61e397ddaff4ce": "Version OptionsSolid Was"
+  }
+ },
+ "Seguin": {
+  "files": [
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Walnut%20Springs%20Trail.pdf",
+    "text": "Walnut Springs Bike Trail Map (PDF)",
+    "file": "data/city_files/Seguin/e742d6_Walnut_20Springs_20Trail.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/pdfmaps/Seguin%20Area%20Floodplain.pdf",
+    "text": "Seguin Floodplain",
+    "file": "data/city_files/Seguin/9cb827_Seguin_20Area_20Floodplain.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Citywide%20Park%20System.pdf",
+    "text": "City Parks (PDF)",
+    "file": "data/city_files/Seguin/e2a168_Citywide_20Park_20System.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Park%20West.pdf",
+    "text": "Map of Park West",
+    "file": "data/city_files/Seguin/4da94d_Park_20West.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Park%20West%20Pavilions.pdf",
+    "text": "Map of Park West Pavilions",
+    "file": "data/city_files/Seguin/fe2789_Park_20West_20Pavilions.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Max%20Starcke%20Park.pdf",
+    "text": "Map of Max Starcke Park",
+    "file": "data/city_files/Seguin/ce63ad_Max_20Starcke_20Park.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Max%20Starcke%20Park%20-%20East.pdf",
+    "text": "Map of Max Starcke Park - East",
+    "file": "data/city_files/Seguin/6b538c_Max_20Starcke_20Park_20-_20East.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Max%20Starcke%20East%20Picnic%20Area.pdf",
+    "text": "Map of Max Starcke Park - East Picnic Area & Kid's Kingdom Playscape",
+    "file": "data/city_files/Seguin/81cc97_Max_20Starcke_20East_20Picnic_20Area.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Max%20Starcke%20Park%20-%20West.pdf",
+    "text": "Map of Max Starcke Park - West",
+    "file": "data/city_files/Seguin/bb6bf5_Max_20Starcke_20Park_20-_20West.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Max%20Starcke%20West%20Triangle%20Picnic%20Area.pdf",
+    "text": "Map of Max Starcke Park West Picnic Area - Triangle",
+    "file": "data/city_files/Seguin/217077_Max_20Starcke_20West_20Triangle_20Picnic_20Area.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Max%20Starcke%20West%20Bowl%20Picnic%20Area.pdf",
+    "text": "Map of Max Starcke Park West Picnic Area - Bowl",
+    "file": "data/city_files/Seguin/829d2f_Max_20Starcke_20West_20Bowl_20Picnic_20Area.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Max%20Starcke%20West%20River%20Dr%20Picnic%20Area.pdf",
+    "text": "Map of Max Starcke Park West Picnic Area - River Road",
+    "file": "data/city_files/Seguin/bd512e_Max_20Starcke_20West_20River_20Dr_20Picnic_20Area.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gis.seguintexas.gov/documents/PDFMaps/Manual%20C.%20Castilla%20Park.pdf",
+    "text": "Map of Manuel C. Castilla Park",
+    "file": "data/city_files/Seguin/ac648c_Manual_20C._20Castilla_20Park.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://open-data-seguin-utility.hub.arcgis.com/": "GIS/Maps",
+   "https://seguin-utility.maps.arcgis.com/apps/instant/sidebar/index.html?appid=5045d4c319f3427b843b918a677d0f54": "City Services app",
+   "https://storymaps.arcgis.com/stories/0c1804f71f6c489cbd066b8c74ed590f": "Parks and Rec GIS",
+   "https://seguin-utility.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=6e61e5729e55449c94b2e50464067510": "Low Water Crossings",
+   "https://seguin-utility.maps.arcgis.com/apps/instant/sidebar/index.html?appid=36d021dcdbb846328f975806ac7d6898": "Zoning App",
+   "https://seguin-utility.maps.arcgis.com/apps/instant/sidebar/index.html?appid=f3bf6e65111f4d6a8ef5bea03c9db12c": "Future Land Use Plan (FLUP)",
+   "https://seguin-utility.maps.arcgis.com/apps/instant/sidebar/index.html?appid=ba97e41fded942f798e99fe216db3c45": "Public Reference App",
+   "https://experience.arcgis.com/experience/46e46ea6ce3347fbb719739375663871/": "Proposed Housing Dashboard",
+   "https://seguin-utility.maps.arcgis.com/apps/dashboards/cd2374d8f8a142c4b2fd18ee6ab8d3a4": "",
+   "https://storymaps.arcgis.com/collections/bb1109cec58248fba33e459c4bf9852f?item=1": "here. Version Options Historical Flooding in Seguin Headline 2025 2025",
+   "https://storymaps.arcgis.com/stories/c40a911e8dc0492198c22993fef5ba3e": "Flood Mitigation Projects"
+  }
+ },
+ "Mavelikara Municipality": {
+  "files": [],
+  "portals": {}
+ }
+}
