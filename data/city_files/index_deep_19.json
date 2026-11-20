@@ -1,0 +1,2030 @@
+{
+ "Bakersfield CA": {
+  "files": [],
+  "portals": {
+   "https://bakersfielddatalibrary-cob.opendata.arcgis.com/": "Data Download",
+   "https://cob.maps.arcgis.com/apps/webappviewer/index.html?id=9174f084addc450286ac067a56fdb83f": "Public Works GEOWEB Map",
+   "https://www.arcgis.com/apps/dashboards/ac9806aec3a2475b931695805e91debb": "Street Moratorium Map",
+   "https://makingdowntownbakersfield-4939d-cob.opendata.arcgis.com/": "Making Downtown Bakersfield",
+   "https://cob.maps.arcgis.com/apps/instant/lookup/index.html?appid=d431879e846e411280178a2e14897950": "Your Neighborhood Representatives",
+   "https://survey123.arcgis.com/share/4299663f57844b1795f57bb894cec81b": "Report Illegal Fireworks",
+   "https://survey123.arcgis.com/share/accdc7a93f104cbe90bbb95fdc38bf7e": "Waitlist Form",
+   "https://cob.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=60c19bc5013e4f38976e39001c41071d": "Properties"
+  }
+ },
+ "Hartford CT": {
+  "files": [
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/public-works/public-works-documents/engineering/overview/20230413_public-notice-rr-closure-srtucture-1-hartford-ct.pdf",
+    "text": "Public Notice for RR Closure Structure #1 repair project (PDF, 115KB)",
+    "file": "data/city_files/Hartford_CT/19e42e_20230413_public-notice-rr-closure-srtucture-1-hartford-ct.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/public-works/public-works-documents/flood-division/flood-control-system-map.pdf",
+    "text": "Flood-Control-System-Map.pdf (PDF, 371KB)",
+    "file": "data/city_files/Hartford_CT/b34e33_flood-control-system-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/public-works/public-works-documents/flood-division/flood-zone-map.pdf",
+    "text": "Flood-Zone-Map.pdf (PDF, 950KB)",
+    "file": "data/city_files/Hartford_CT/65fe6f_flood-zone-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/rov/rov-documents/2026-primary-sample-ballots-district-1-24.pdf",
+    "text": "2026-Primary-Sample-Ballots-District-1-24.pdf (PDF, 5MB)",
+    "file": "data/city_files/Hartford_CT/cda897_2026-primary-sample-ballots-district-1-24.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/rov/rov-documents/sample-ballot-11032026.pdf",
+    "text": "sample-ballot-11032026.pdf (PDF, 9MB)",
+    "file": "data/city_files/Hartford_CT/01a442_sample-ballot-11032026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/rov/rov-documents/boe-ballot-11042025.pdf",
+    "text": "BOE-ballot-11042025.pdf (PDF, 332KB)",
+    "file": "data/city_files/Hartford_CT/4ff6a4_boe-ballot-11042025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/rov/rov-documents/updatedsenatorialassemblyandvotingdistrictwithpollinglocations202336x48.pdf",
+    "text": "City maps are now available (PDF, 3MB)",
+    "file": "data/city_files/Hartford_CT/3e0749_updatedsenatorialassemblyandvotingdistrictwithpollinglocations202336x4",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.hartford.gov/images/City%20of%20Hartford%20Neighborhood%20Map24x36.pdf",
+    "text": "24\"x 36\" PDF",
+    "file": "data/city_files/Hartford_CT/a83207_City_20of_20Hartford_20Neighborhood_20Map24x36.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.hartford.gov/images/HartfordTaxMapIndex11x17.pdf",
+    "text": "1 1\" x 17\"  PDF",
+    "file": "data/city_files/Hartford_CT/b36dbc_HartfordTaxMapIndex11x17.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.hartford.gov/images/HartfordAssessorMap_SheetIndex_17x22.pdf",
+    "text": "17\" x 22\" PDF",
+    "file": "data/city_files/Hartford_CT/22fb29_HartfordAssessorMap_SheetIndex_17x22.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.hartford.gov/images/street_map_34x34_2023.pdf",
+    "text": "34\" X 44\" PDF",
+    "file": "data/city_files/Hartford_CT/640c09_street_map_34x34_2023.pdf",
+    "rows": 120,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://gis.hartford.gov/images/ADOPTED_Zoning_Map.pdf",
+    "text": "30\" X 41\" PDF",
+    "file": "data/city_files/Hartford_CT/d804ca_ADOPTED_Zoning_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.hartford.gov/images/Future%20Land%20Use%20Mapfwv.pdf",
+    "text": "30\" X 41\" PDF",
+    "file": "data/city_files/Hartford_CT/13e958_Future_20Land_20Use_20Mapfwv.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/cs-projects/all_sheets.pdf",
+    "text": "South Branch Trail Drawings - Nilan St to Newfield Ave (PDF, 3MB)",
+    "file": "data/city_files/Hartford_CT/9656fd_all_sheets.pdf",
+    "rows": 947,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/cs-projects/south-branch-trail/2001_survey_1.pdf",
+    "text": "2001_survey_1 (PDF, 6MB)",
+    "file": "data/city_files/Hartford_CT/efd9e9_2001_survey_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/cs-projects/south-branch-trail/2001_survey_2.pdf",
+    "text": "2001_survey_2 (PDF, 4MB)",
+    "file": "data/city_files/Hartford_CT/757f37_2001_survey_2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/cs-projects/south-branch-trail/2001_survey_3.pdf",
+    "text": "2001_survey_3 (PDF, 4MB)",
+    "file": "data/city_files/Hartford_CT/3176c0_2001_survey_3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/cs-projects/south-branch-trail/2001_survey_4.pdf",
+    "text": "2001_survey_4 (PDF, 4MB)",
+    "file": "data/city_files/Hartford_CT/fe532b_2001_survey_4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/cs-projects/south-branch-trail/2001_survey_5.pdf",
+    "text": "2001_survey_5 (PDF, 4MB)",
+    "file": "data/city_files/Hartford_CT/6338bb_2001_survey_5.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/cs-projects/south-branch-trail/2001_survey_6.pdf",
+    "text": "2001_survey_6 (PDF, 4MB)",
+    "file": "data/city_files/Hartford_CT/3af8ae_2001_survey_6.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/cs-projects/south-branch-trail/2001_survey_7.pdf",
+    "text": "2001_survey_7 (PDF, 5MB)",
+    "file": "data/city_files/Hartford_CT/faf3b2_2001_survey_7.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/cs-projects/south-branch-trail/2001_survey_8.pdf",
+    "text": "2001_survey_8 (PDF, 4MB)",
+    "file": "data/city_files/Hartford_CT/739653_2001_survey_8.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/cs-projects/south-branch-trail/2001_survey_9.pdf",
+    "text": "2001_survey_9 (PDF, 7MB)",
+    "file": "data/city_files/Hartford_CT/d4899b_2001_survey_9.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/cs-projects/south-branch-trail/2001_survey_10.pdf",
+    "text": "2001_survey_10 (PDF, 4MB)",
+    "file": "data/city_files/Hartford_CT/64efb2_2001_survey_10.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/public-works/public-works-documents/sanitation-division/recycling-101.pdf",
+    "text": "(PDF, 473KB)",
+    "file": "data/city_files/Hartford_CT/5ce230_recycling-101.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/public-works/public-works-documents/permit-division/standard-traffic/0221501-loop-detector-saw-cut.pdf",
+    "text": "0221501-Loop-Detector-Saw-Cut.pdf (PDF, 86KB)",
+    "file": "data/city_files/Hartford_CT/3c1723_0221501-loop-detector-saw-cut.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/public-works/public-works-documents/permit-division/standard-traffic/026040-paint-steel-span-pole-fixture-bracket.pdf",
+    "text": "026040-Paint-Steel-Span-Pole-Fixture-Bracket.pdf (PDF, 79KB)",
+    "file": "data/city_files/Hartford_CT/c25d92_026040-paint-steel-span-pole-fixture-bracket.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/public-works/public-works-documents/permit-division/standard-traffic/026050-paint-galvanized-steel-bracket-span-pole-mast-arm-pole.pdf",
+    "text": "026050-Paint-Galvanized-Steel-Bracket-Span-Pole-Mast-Arm-Pole.pdf (PDF, 92KB)",
+    "file": "data/city_files/Hartford_CT/c85a0f_026050-paint-galvanized-steel-bracket-span-pole-mast-arm-pole.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/public-works/public-works-documents/permit-division/standard-traffic/0270501-camera-bracket.pdf",
+    "text": "0270501-Camera-Bracket.pdf (PDF, 57KB)",
+    "file": "data/city_files/Hartford_CT/86ea87_0270501-camera-bracket.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/public-works/public-works-documents/snow_parking_lots_2025.pdf",
+    "text": "Blue Light Lots (PDF, 444KB)",
+    "file": "data/city_files/Hartford_CT/8bc735_snow_parking_lots_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/historic-preservation/nps-treatment-guidelines-2017-part1-preservation-rehabilitation.pdf",
+    "text": "SOI Standards for Historic Properties - Preservation and Rehabilitation (PDF, 7MB)",
+    "file": "data/city_files/Hartford_CT/7ec9b8_nps-treatment-guidelines-2017-part1-preservation-rehabilitation.pdf",
+    "rows": 108,
+    "bike_rows": 68
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/development-services/planning-zoning/pz-documents/historic-preservation/nps-treatment-guidelines-2017-part2-reconstruction-restoration.pdf",
+    "text": "SOI Standards for Historic Properties - Reconstruction and Restoration (PDF, 5MB)",
+    "file": "data/city_files/Hartford_CT/330977_nps-treatment-guidelines-2017-part2-reconstruction-restoration.pdf",
+    "rows": 253,
+    "bike_rows": 150
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/boards-amp-commissions/article_xii.___historic_preservation_commission.pdf",
+    "text": "Historic Preservation Ordinance (PDF, 224KB)",
+    "file": "data/city_files/Hartford_CT/8d9f8d_article_xii.___historic_preservation_commission.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hartfordct.gov/files/assets/public/v/1/boards-amp-commissions/hartford-preservation-guidelines.pdf",
+    "text": "Historic Preservation Guidelines (PDF, 2MB)",
+    "file": "data/city_files/Hartford_CT/e1d57b_hartford-preservation-guidelines.pdf",
+    "rows": 51,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.hartford.gov/HartfordFoodAccess/index.html": "Find your Food Access Point You can use this website to find information about Food Pantries and Soup Kitchens in the Ci",
+   "https://data.hartford.gov/": "",
+   "https://data.hartford.gov/search?groupIds=bd0fddec8374404797b3f62107616ca4": "GIS Data",
+   "https://ctdeep.maps.arcgis.com/apps/MapSeries/index.html?appid=a386eea9cc334192a5fd25134d5afdda": "https://ctdeep.maps.arcgis.com/apps/MapSeries/index.html?appid=a386eea9cc334192 a5fd25134d5afdda",
+   "https://gis.hartford.gov/Html5Viewer/index.html?viewer=PropertyViewer": "Property Information Viewer",
+   "https://gis.hartford.gov/MailingLabelViewer/index.html": "Abutters List Viewer",
+   "https://gis.hartford.gov/InspectorViewer/index.html": "Inspector Viewer",
+   "https://gis.hartford.gov/Html5Viewer/index.html?viewer=ScannedDocumentViewer": "Scanned Document Viewer",
+   "https://gis.hartford.gov/Html5Viewer/index.html?viewer=BuildingPermitViewer": "Building Permit Viewer",
+   "https://gis.hartford.gov/FEMAMapPanel/index.html": "FEMA Map Panel Index Viewer",
+   "https://gis.hartford.gov/TaxMapViewer/index.html": "Tax Map Viewer",
+   "https://gis.hartford.gov/BuildingVerandaLine/index.html": "Building and Veranda Line Map Viewer",
+   "https://gis.hartford.gov/Html5Viewer/index.html?viewer=AllCitySurvey2019": "City Survey Viewer",
+   "https://gis.hartford.gov/Html5Viewer/index.html?viewer=PlanningViewer": "Planning Viewer",
+   "https://gis.hartford.gov/PublicWorks/Sanitation/index.html": "Find My Trash Day",
+   "https://data.hartford.gov/search?groupIds=4fde695fa783438a8c8fb82a5738280d": "Community",
+   "https://data.hartford.gov/search?groupIds=b9775d04e62a43b18a89393e3c8058d7": "Development",
+   "https://data.hartford.gov/search?groupIds=d4a48275d1804563b2073863f0bf8f68": "Public Safety",
+   "https://data.hartford.gov/search?groupIds=bfbd2948766f4579b84f1192517b1066": "Education",
+   "https://data.hartford.gov/search?groupIds=3bfdaf7eb266485a841f2e79af7efb73": "Public Health",
+   "https://survey123.arcgis.com/share/080074a1ddf247228682588a0560e6dc?portalUrl=https://gisportal.dot.ct.gov/portal": "CLICK HERE",
+   "https://survey123.arcgis.com/share/c229e9962c3844b3ae2a00c3eb4ab5de?code=EiNodHRwczovL2hhcnRmb3JkZ2lzLm1hcHMuYXJjZ2lzLmNvbXoYZmllbGQ6cmVxdHlwZT1QbGFudCBUcmVlehhmaWVsZDppbmNsdWRlY29udGFjdD1ZZXM=": "Sign Up For A Free Tree"
+  }
+ },
+ "Chișinău": {
+  "files": [],
+  "portals": {}
+ },
+ "Santiago del Estero": {
+  "files": [],
+  "portals": {}
+ },
+ "Huntington": {
+  "files": [],
+  "portals": {}
+ },
+ "Cary": {
+  "files": [],
+  "portals": {}
+ },
+ "Surprise": {
+  "files": [],
+  "portals": {}
+ },
+ "Simi Valley": {
+  "files": [],
+  "portals": {}
+ },
+ "Broken Arrow": {
+  "files": [],
+  "portals": {}
+ },
+ "Rio Rancho": {
+  "files": [],
+  "portals": {
+   "https://gis.rrnm.gov/riorancho/": "",
+   "https://experience.arcgis.com/experience/cfc3fdca19d74c5ca5d940fadfb86230/": "",
+   "https://storymaps.arcgis.com/stories/edf9926481b740d0af8d4c2b1428184e": "",
+   "https://storymaps.arcgis.com/stories/4cd4eea8e1874a2a8c888b348d1cd7fa": "",
+   "https://experience.arcgis.com/experience/15d3be5a66644cb8aa797b11a914895d": "",
+   "https://experience.arcgis.com/experience/dc9492a2e9b04a9d8f7b82c47326f559": "",
+   "https://experience.arcgis.com/experience/799ae8d625ef4ffeb0f74d418d5647c3/?views=Home-Page": "",
+   "https://experience.arcgis.com/experience/8b7ef7a69df240d8bbc7cc5e0fe19f18/": "View",
+   "http://corrgis.maps.arcgis.com/apps/webappviewer/index.html?id=8cb3724f3f59400fbf510b956fff04fd": "",
+   "https://storymaps.arcgis.com/stories/ea112def1d0c4aa7b023eb23a945167a": "",
+   "https://experience.arcgis.com/experience/093a34c3b69d407c9b3f0f1347ea2556/": "",
+   "https://sc-assessor.maps.arcgis.com/apps/webappviewer/index.html?id=328f5631f8ee4aa58537a757c09ae4c1": "",
+   "https://experience.arcgis.com/experience/e718efb6c9304818a7fe1950a1a02d32": "",
+   "https://experience.arcgis.com/experience/d4637bc5307446428f43911d9848f5a0/": "",
+   "http://corrgis.maps.arcgis.com/apps/MapJournal/index.html?appid=ac8a5e0e169242abab6037c2ce729390": "Prescription Trails in Rio Rancho",
+   "https://www.arcgis.com/home/webmap/viewer.html?useExisting=1": "ArcGIS Online Map Viewer",
+   "http://rgis.unm.edu/": "RGIS",
+   "http://corrgis.maps.arcgis.com/apps/MapJournal/index.html?appid=f5b6e568d0134219a172fc84fb256ce0": "review a dynamic map of all of the Prescription Trails in Rio Rancho"
+  }
+ },
+ "Burdur": {
+  "files": [],
+  "portals": {}
+ },
+ "Santa Barbara": {
+  "files": [
+   {
+    "url": "https://sbparksandrec.santabarbaraca.gov/sites/default/files/2022-05/Parks%20and%20Rec%20Map.pdf",
+    "text": "View Printable parks Map",
+    "file": "data/city_files/Santa_Barbara/5feaa8_Parks_20and_20Rec_20Map.pdf",
+    "rows": 37,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Harbor%20Main%20Parking%20Lot.pdf",
+    "text": "Harbor Main Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/fb42d2_Harbor_20Main_20Parking_20Lot.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Launch%20Ramp%20Parking%20Area.pdf",
+    "text": "Launch Ramp Parking Area.pdf",
+    "file": "data/city_files/Santa_Barbara/c21e12_Launch_20Ramp_20Parking_20Area.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Cabrillo%20East%20Parking%20Lot.pdf",
+    "text": "Cabrillo East Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/4957e6_Cabrillo_20East_20Parking_20Lot.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Cabrillo%20West%20Parking%20Lot.pdf",
+    "text": "Cabrillo West Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/1be25d_Cabrillo_20West_20Parking_20Lot.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Garden%20Street%20Parking%20Lot.pdf",
+    "text": "Garden Street Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/46f787_Garden_20Street_20Parking_20Lot.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Harbor%20West%20%20Parking%20Lot.pdf",
+    "text": "Harbor West  Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/c307b9_Harbor_20West_20_20Parking_20Lot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Leadbetter%20Parking%20Lot.pdf",
+    "text": "Leadbetter Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/28327b_Leadbetter_20Parking_20Lot.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Palm%20Park%20Parking%20Lot.pdf",
+    "text": "Palm Park Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/c59d8f_Palm_20Park_20Parking_20Lot.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/SBCC%20La%20Playa%20East%20Parking%20Lot.pdf",
+    "text": "SBCC La Playa East Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/94d477_SBCC_20La_20Playa_20East_20Parking_20Lot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/SBCC%20La%20Playa%20West%20Parking%20Lot.pdf",
+    "text": "SBCC La Playa West Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/99897d_SBCC_20La_20Playa_20West_20Parking_20Lot.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Harbor%20Commercial%20Area%20%26%2090-Minute%20Parking.pdf",
+    "text": "Harbor Commercial Area and 90-Minute Parking",
+    "file": "data/city_files/Santa_Barbara/7c7e1e_Harbor_20Commercial_20Area_20_26_2090-Minute_20Parking.pdf",
+    "rows": 8,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2024-03/Automated_License_Plate_Policy_2024.pdf",
+    "text": "Automated License Plate Recognition Policy For City Operated Off-Street Parking Facilities",
+    "file": "data/city_files/Santa_Barbara/a8b481_Automated_License_Plate_Policy_2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2025-08/2025%20Annual%20California%20Harbor%20Survey%20-%20Excel%20File.xlsx",
+    "text": "2025 Annual California Harbor Survey - Excel File",
+    "file": "data/city_files/Santa_Barbara/d5b0bc_2025_20Annual_20California_20Harbor_20Survey_20-_20Excel_20File.xlsx",
+    "rows": 45,
+    "bike_rows": 29
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2024-06/2024%20Annual%20Marina%20Survey%20-%20Excel%20File.xlsx",
+    "text": "2024 Annual California Harbor Survey - Excel File",
+    "file": "data/city_files/Santa_Barbara/7e394c_2024_20Annual_20Marina_20Survey_20-_20Excel_20File.xlsx",
+    "rows": 45,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2025-08/2023%20Annual%20California%20Harbor%20Survey%20-%20Excel%20File.xlsx",
+    "text": "2023 Annual California Harbor Survey - Excel File",
+    "file": "data/city_files/Santa_Barbara/ec95d5_2023_20Annual_20California_20Harbor_20Survey_20-_20Excel_20File.xlsx",
+    "rows": 252,
+    "bike_rows": 110
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2025-08/2022%20Annual%20California%20Harbor%20Survey%20-%20Excel%20File.xlsx",
+    "text": "2022 Annual California Harbor Survey - Excel File",
+    "file": "data/city_files/Santa_Barbara/f67e23_2022_20Annual_20California_20Harbor_20Survey_20-_20Excel_20File.xlsx",
+    "rows": 252,
+    "bike_rows": 111
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2024-01/Boating%20Services%20Map.pdf",
+    "text": "Boating Services Map",
+    "file": "data/city_files/Santa_Barbara/59781e_Boating_20Services_20Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Maps%20%26%20Directories/Directions%20to%20the%20Harbor.pdf",
+    "text": "Directions to the Harbor",
+    "file": "data/city_files/Santa_Barbara/bb33de_Directions_20to_20the_20Harbor.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Maps%20%26%20Directories/Harbor%20Directory%20Map.pdf",
+    "text": "Harbor Directory Map",
+    "file": "data/city_files/Santa_Barbara/9840b3_Harbor_20Directory_20Map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Maps%20%26%20Directories/Waterfront%20Area%20Parking%20Lots%20Map.pdf",
+    "text": "Waterfront Area Parking Lots Map",
+    "file": "data/city_files/Santa_Barbara/fcfe21_Waterfront_20Area_20Parking_20Lots_20Map.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Maps%20%26%20Directories/Wharf%20and%20Harbor%20Map.pdf",
+    "text": "Wharf and Harbor Map",
+    "file": "data/city_files/Santa_Barbara/62842b_Wharf_20and_20Harbor_20Map.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Maps%20%26%20Directories/Wharf%20Directory%20Map.pdf",
+    "text": "Wharf Directory Map",
+    "file": "data/city_files/Santa_Barbara/cd9c43_Wharf_20Directory_20Map.pdf",
+    "rows": 18,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2026-08/FY27%20Waterfront%20Rate%20and%20Fee%20Summary.pdf",
+    "text": "FY27 Waterfront Rate and Fee Summary",
+    "file": "data/city_files/Santa_Barbara/6e68c5_FY27_20Waterfront_20Rate_20and_20Fee_20Summary.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2022-07/2016_01_01_2016_Grand_Jury_Report_-_Harbor_Only_Section.pdf",
+    "text": "2016 Grand Jury Report",
+    "file": "data/city_files/Santa_Barbara/9fc01b_2016_01_01_2016_Grand_Jury_Report_-_Harbor_Only_Section.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2022-07/2020_07_16_2020_Harbor_Commission_Slip_Assignment_Policy_PowerPoint.pdf",
+    "text": "2020 Harbor Commission Slip Assignment Policy PowerPoint",
+    "file": "data/city_files/Santa_Barbara/9aa64e_2020_07_16_2020_Harbor_Commission_Slip_Assignment_Policy_PowerPoint.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2022-07/2020_07_16_2020_Harbor_Commission_Slip_Assignment_Policy_Report.pdf",
+    "text": "2020 Harbor Commission Slip Assignment Policy Report",
+    "file": "data/city_files/Santa_Barbara/4e8928_2020_07_16_2020_Harbor_Commission_Slip_Assignment_Policy_Report.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Projects%20%26%20Programs/Harbor%20Master%20Plan.pdf",
+    "text": "Harbor Master Plan.pdf",
+    "file": "data/city_files/Santa_Barbara/5cd482_Harbor_20Master_20Plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Projects%20%26%20Programs/Marina%20Electric%20Submetering%20Program.pdf",
+    "text": "Marina Electric Submetering Program.pdf",
+    "file": "data/city_files/Santa_Barbara/21b344_Marina_20Electric_20Submetering_20Program.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2022-07/RELEASE_20220421_T113103_Santa_Barbara_Harbor_Patrol_Policy_Manual%20%282%29.pdf",
+    "text": "Harbor Patrol Policies Manual",
+    "file": "data/city_files/Santa_Barbara/c548a8_RELEASE_20220421_T113103_Santa_Barbara_Harbor_Patrol_Policy_Manual_20_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Harbor%20Patrol/Harbor%20Patrol%20Required%20Training.pdf",
+    "text": "Harbor Patrol Required Training",
+    "file": "data/city_files/Santa_Barbara/55386f_Harbor_20Patrol_20Required_20Training.pdf",
+    "rows": 43,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Services/Planning%20%26%20Zoning%20Maps/Coastal%20Zone%20Land%20Use%20Map%2011x17%20May%202018.pdf",
+    "text": "Coastal Zone Land Use",
+    "file": "data/city_files/Santa_Barbara/3cd1d4_Coastal_20Zone_20Land_20Use_20Map_2011x17_20May_202018.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/General%20Plan/Local%20Coastal%20Program/2017%20LCP%20Post-Certification%20Permit%20and%20Appeal%20Jurisdiction%20Map.pdf",
+    "text": "Coastal Zone Permit & Appeal Jurisdiction",
+    "file": "data/city_files/Santa_Barbara/1f0f3c_2017_20LCP_20Post-Certification_20Permit_20and_20Appeal_20Jurisdiction",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Services/Planning%20%26%20Zoning%20Maps/General%20Plan%20Map%20for%20the%20Inland%20Areas.pdf",
+    "text": "General Plan Map for Inland Areas",
+    "file": "data/city_files/Santa_Barbara/e7062a_General_20Plan_20Map_20for_20the_20Inland_20Areas.pdf",
+    "rows": 7,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Services/Planning%20%26%20Zoning%20Maps/Highway%20101%20250-foot%20Area%20and%20Soundwall%20Locations.pdf",
+    "text": "Highway 101 250 foot Area and Soundwall Locations Map",
+    "file": "data/city_files/Santa_Barbara/b322d6_Highway_20101_20250-foot_20Area_20and_20Soundwall_20Locations.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Services/Planning%20%26%20Zoning%20Maps/O-C%20Rezone%20Map.pdf",
+    "text": "O-C Rezone Map",
+    "file": "data/city_files/Santa_Barbara/923fed_O-C_20Rezone_20Map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Services/Planning%20%26%20Zoning%20Maps/Zoning%20Map%2C%20Title%2030%20%28Inland%20Area%29%2C%20Title%2028%20%28Coastal%20Zone%29.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Santa_Barbara/17f41a_Zoning_20Map_2C_20Title_2030_20_28Inland_20Area_29_2C_20Title_2028_20_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2022-06/Accessible%20Parking%20Guide.pdf",
+    "text": "Accessible Parking Guide",
+    "file": "data/city_files/Santa_Barbara/07fc90_Accessible_20Parking_20Guide.pdf",
+    "rows": 8,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2026-02/ParkingBroch_Map_Only_020426.pdf",
+    "text": "Helena Lot and Depot Lot 13",
+    "file": "data/city_files/Santa_Barbara/198c7f_ParkingBroch_Map_Only_020426.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Business/Business/Emergency%20Economic%20Recovery%20Ordinance.pdf",
+    "text": "Economic Recovery Extension and Transition Ordinance",
+    "file": "data/city_files/Santa_Barbara/523cdb_Emergency_20Economic_20Recovery_20Ordinance.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://santabarbara.maps.arcgis.com/apps/webappviewer/index.html?id=93119f9f307b4b11885ecc5279001984": "Historic Properties",
+   "https://santabarbara.maps.arcgis.com/apps/webappviewer/index.html?id=2ed08292964b448495d6554af68e3c07": "Parks",
+   "https://santabarbara.maps.arcgis.com/apps/webappviewer/index.html?id=76fc10d1dae546ab8f9b1d47049c78e4": "Projects",
+   "https://experience.arcgis.com/experience/17474ee60945433f9172c204315dcc5b": "MAJOR PROJECTs MAP",
+   "https://santabarbara.maps.arcgis.com/apps/webappviewer/index.html?id=f259c9e05a554cd6a37435890008f071": "Go to Creeks & Watersheds Map Creeks & Watersheds Map",
+   "https://storymaps.arcgis.com/stories/83628673abb04ec791fd026c69e23608": "Interactive Bike Network Map",
+   "https://storymaps.arcgis.com/stories/d7e74b0a04b6467cabbf64454fc6a3d5": "Downtown Parking Lots",
+   "https://experience.arcgis.com/experience/e7a147fef3d64177b03f1fd652f9179c/": "",
+   "https://survey123.arcgis.com/share/6c6513208e3b4aa6972f1ad524edd89f": "Regístrate",
+   "https://experience.arcgis.com/experience/95ef579891f142849e4dd211094c92cd": "Click Here",
+   "https://experience.arcgis.com/experience/e7a147fef3d64177b03f1fd652f9179c": "",
+   "https://storymaps.arcgis.com/stories/0567a1a297454cfca4a27cebf1894f9c": "SBCAG StoryMap",
+   "https://sbcag-regional-data-platform-sbcag.hub.arcgis.com/apps/00fa5b685f024f07866b7259aa95c73b/explore": "Regional Data Platform.",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=5852ea902db44e55bfce395799315f9c&extent=-120.701,34.399,-119.377,35.166": "FEMA Official Flood Map Changes Viewer",
+   "https://experience.arcgis.com/experience/ed9b139c6fe440268e62dd6429601c69": "Interactive Fire Hazard Mapping Tool"
+  }
+ },
+ "Miami Beach": {
+  "files": [
+   {
+    "url": "https://miamibeachfl.gov/wp-content/uploads/2026/01/zoning-2025.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Miami_Beach/c68cd6_zoning-2025.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://miamibeachfl.gov/wp-content/uploads/2018/05/Historic-Districts-05-17-2018.pdf",
+    "text": "Historic District Maps",
+    "file": "data/city_files/Miami_Beach/f486d9_Historic-Districts-05-17-2018.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2026/01/FLUM-6-27-2025.pdf",
+    "text": "Future Land Use Map",
+    "file": "data/city_files/Miami_Beach/119ec2_FLUM-6-27-2025.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://miamibeachfl.gov/wp-content/uploads/2026/01/Parking-Districts-2025.pdf",
+    "text": "Parking District Maps",
+    "file": "data/city_files/Miami_Beach/0ab740_Parking-Districts-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2023/11/Commercial-Use-Affidavit-Required-Map-with-Links.pdf",
+    "text": "Commercial Use Affidavit Map",
+    "file": "data/city_files/Miami_Beach/1a27d0_Commercial-Use-Affidavit-Required-Map-with-Links.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://miamibeachfl.gov/wp-content/uploads/2017/08/Flyer-BikeLaneFactSheet_2.pdf",
+    "text": "Promotional Banner",
+    "file": "data/city_files/Miami_Beach/b47bae_Flyer-BikeLaneFactSheet_2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://miamibeachfl.gov/wp-content/uploads/2017/08/Dade-Boulevard-Bike-Path-Location-Map.pdf",
+    "text": "Dade Boulevard Bike Path",
+    "file": "data/city_files/Miami_Beach/ec27c2_Dade-Boulevard-Bike-Path-Location-Map.pdf",
+    "rows": 78,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2026/01/Miami-Beach-Bicycle-Network.pdf",
+    "text": "DOWNLOAD BICYCLE NETWORK MAP (PDF)",
+    "file": "data/city_files/Miami_Beach/c61d6b_Miami-Beach-Bicycle-Network.pdf",
+    "rows": 12,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2025/12/Micromobility_EnglishSpanish_Final-3.pdf",
+    "text": "Download PDF Version",
+    "file": "data/city_files/Miami_Beach/50192c_Micromobility_EnglishSpanish_Final-3.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2017/08/Flyer-BikeLaneFactSheet_2.pdf",
+    "text": "Promotional Banner",
+    "file": "data/city_files/Miami_Beach/00c397_Flyer-BikeLaneFactSheet_2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2017/08/Dade-Boulevard-Bike-Path-Location-Map.pdf",
+    "text": "Dade Boulevard Bike Path",
+    "file": "data/city_files/Miami_Beach/8d2a8f_Dade-Boulevard-Bike-Path-Location-Map.pdf",
+    "rows": 78,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2023/12/ParkingWebpageGarageRates.pdf",
+    "text": "Download Parking Garage Rates",
+    "file": "data/city_files/Miami_Beach/80ba3e_ParkingWebpageGarageRates.pdf",
+    "rows": 39,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2025/06/ResidentialParkingForm-2025.pdf",
+    "text": "Download Parking Application Form. Forms also available on site.",
+    "file": "data/city_files/Miami_Beach/408e36_ResidentialParkingForm-2025.pdf",
+    "rows": 20,
+    "bike_rows": 5
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2018/07/Citywide-Parking-Program-Application-03292017.pdf",
+    "text": "completed application",
+    "file": "data/city_files/Miami_Beach/bb48eb_Citywide-Parking-Program-Application-03292017.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2022/06/ParkingResidentialPermitApplication-1.pdf",
+    "text": "Download Residential Parking Permit Application, Complete & Sign",
+    "file": "data/city_files/Miami_Beach/2d0a30_ParkingResidentialPermitApplication-1.pdf",
+    "rows": 17,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2023/02/2023-TPBPFC-Schedule.pdf",
+    "text": "TRANSPORTATION, PARKING & BICYCLE-PEDESTRIAN FACILITIES COMMITTEE 2023 MEETING SCHEDULE",
+    "file": "data/city_files/Miami_Beach/8bb53a_2023-TPBPFC-Schedule.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2026/10/Construction_Parking_And_Traffic_Management_Plan_form-.pdf",
+    "text": "Download The CPMP Application",
+    "file": "data/city_files/Miami_Beach/392271_Construction_Parking_And_Traffic_Management_Plan_form-.pdf",
+    "rows": 35,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2019/07/Construction-Parking-Plan-Affidavit.pdf",
+    "text": "Click Here To Download the Affidavit",
+    "file": "data/city_files/Miami_Beach/79a43f_Construction-Parking-Plan-Affidavit.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2026/11/ArtWeek_Map_2026.pdf",
+    "text": "Download Free Transportation Map",
+    "file": "data/city_files/Miami_Beach/712b76_ArtWeek_Map_2026.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2026/10/NoVacancy_Map_2026_v02.pdf",
+    "text": "Download No Vacancy Map of Participating Hotels, Artists and Exhibits",
+    "file": "data/city_files/Miami_Beach/8d6d0d_NoVacancy_Map_2026_v02.pdf",
+    "rows": 26,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2019/11/23-Final-Layout_Bike-Lanes-Final.pdf",
+    "text": "23 Final Layout_Bike Lanes (Final)",
+    "file": "data/city_files/Miami_Beach/4677a4_23-Final-Layout_Bike-Lanes-Final.pdf",
+    "rows": 20,
+    "bike_rows": 3
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2019/10/North-Beach-Project-Area-Map.pdf",
+    "text": "North Beach Project Area Map",
+    "file": "data/city_files/Miami_Beach/76744d_North-Beach-Project-Area-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2019/10/North-Bay-Road-Project-Map.pdf",
+    "text": "North Bay Road Project Map",
+    "file": "data/city_files/Miami_Beach/094b8a_North-Bay-Road-Project-Map.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2019/10/Bay-Drive-Project-Map.pdf",
+    "text": "Bay Drive Project Map",
+    "file": "data/city_files/Miami_Beach/f4468b_Bay-Drive-Project-Map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2017/08/Walker-Parking-Study-2003.pdf",
+    "text": "Walker Parking Study 2003 â March 14, 2003",
+    "file": "data/city_files/Miami_Beach/ce0018_Walker-Parking-Study-2003.pdf",
+    "rows": 74,
+    "bike_rows": 19
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2017/08/WalkerParking-NorthBeachCombined.pdf",
+    "text": "Walker Parking â North Beach Parking Demand Analysis â Combined Report â October 14, 2014",
+    "file": "data/city_files/Miami_Beach/a92faa_WalkerParking-NorthBeachCombined.pdf",
+    "rows": 366,
+    "bike_rows": 28
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2017/08/Walker-Parking-Study-South-Beach-2014.pdf",
+    "text": "Walker Parking â South Beach Parking Demand Analysis â August 22, 2014",
+    "file": "data/city_files/Miami_Beach/b1362b_Walker-Parking-Study-South-Beach-2014.pdf",
+    "rows": 339,
+    "bike_rows": 26
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2017/08/MB-Supplemental-Report-09.04.15.pdf",
+    "text": "Walker Parking â Supplemental Report -September 4, 2015",
+    "file": "data/city_files/Miami_Beach/1427d9_MB-Supplemental-Report-09.04.15.pdf",
+    "rows": 147,
+    "bike_rows": 27
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2019/10/North-Beach-Regional-Parking-Analysis-FINAL_100719.pdf",
+    "text": "Walker Parking â North Beach Regional Parking Analysis â October 7, 2019",
+    "file": "data/city_files/Miami_Beach/e9d0c8_North-Beach-Regional-Parking-Analysis-FINAL_100719.pdf",
+    "rows": 142,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2023/05/LTC-224-2023-TPBPF-Committee-Motions-%E2%80%93-Transportation-Master-Plan-Quarterly-Report-Alternative-Bicycle-Path-to-the-Beachwalk.pdf",
+    "text": "LTC 224-2023 â Transportation Master Plan Quarterly Report Alternative Bicycle Path to the Beachwalk",
+    "file": "data/city_files/Miami_Beach/bcae2e_LTC-224-2023-TPBPF-Committee-Motions-_E2_80_93-Transportation-Master-P",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miamibeachfl.gov/wp-content/uploads/2022/09/LTC-377-2022-TPBPF-Committee-Motion-Transportation-Department-Bicycle-Pedestrian-Coordinator-Position.pdf",
+    "text": "LTC 377-2022 â Bicycle Pedestrian Coordinator Position",
+    "file": "data/city_files/Miami_Beach/ff61a5_LTC-377-2022-TPBPF-Committee-Motion-Transportation-Department-Bicycle-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2019/10/LTC-551-2019-Electric-Scooters-Better-Bus-Project.pdf",
+    "text": "LTC 551-2019 â Electric Scooters & Better Bus Project",
+    "file": "data/city_files/Miami_Beach/f31525_LTC-551-2019-Electric-Scooters-Better-Bus-Project.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2019/04/LTC-223-2019-Bike-Lanes-Venetian-Bridge-Lockdown.pdf",
+    "text": "LTC 223-2019 â Bike Lanes & Venetian Bridge Lockdown",
+    "file": "data/city_files/Miami_Beach/b0e618_LTC-223-2019-Bike-Lanes-Venetian-Bridge-Lockdown.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2019/02/LTC-084-2019-TPBPFC-Structure-Electric-Bicycle-Sharing.pdf",
+    "text": "LTC 084-2019 â TPBPFC Structure & Electric Bicycle Sharing",
+    "file": "data/city_files/Miami_Beach/46afb1_LTC-084-2019-TPBPFC-Structure-Electric-Bicycle-Sharing.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2019/02/LTC-071-2019-Trolley-Loops-A-B.pdf",
+    "text": "LTC 071-2019 â Trolley Loops A & B",
+    "file": "data/city_files/Miami_Beach/e24a0a_LTC-071-2019-Trolley-Loops-A-B.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamibeachfl.gov/wp-content/uploads/2019/02/LTC-016-2019-CW-Loading-Unloading-Demand-Plan-AltonChase34th-Shared-Use-Path-Proposed-Concept.pdf",
+    "text": "LTC 016-2019 â CW Loading & Unloading Demand Plan & Alton/Chase/34th Shared Use Path Proposed Concept",
+    "file": "data/city_files/Miami_Beach/8fb5c1_LTC-016-2019-CW-Loading-Unloading-Demand-Plan-AltonChase34th-Shared-Us",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://miamibeach.maps.arcgis.com/apps/instant/compare/index.html?appid=9b045d9b57184f0a8c16ebb275dd5227": "active projects map",
+   "https://gis.miamibeachfl.gov/Html5Viewer/index.html?viewer=LCP": "interactive row permit map",
+   "https://gis.miamibeachfl.gov/parking-residential": "(view zones on map)",
+   "https://miamibeach.maps.arcgis.com/apps/instant/basic/index.html?appid=d048c885d08b454f92087df268c51708": "VIEW ONLINE",
+   "https://gis.miamibeachfl.gov/benchmarks": "Survey Benchmarks"
+  }
+ },
+ "Wyoming": {
+  "files": [
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Historical%20C%20BYLAWS.pdf",
+    "text": "Historical Commission Bylaws",
+    "file": "data/city_files/Wyoming/ce94d4_Historical_20C_20BYLAWS.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Monday%20Mens%20Gold%20Tournament_1.pdf",
+    "text": "Monday Men's Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/4a1fde_Fall_20Monday_20Mens_20Gold_20Tournament_1.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Monday%20Mens%20Silver%20Tournament_1.pdf",
+    "text": "Monday Men's Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/c7d300_Fall_20Monday_20Mens_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Tuesday%20Coed%20Gold%20Tournament_1.pdf",
+    "text": "Tuesday Coed Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/429167_Fall_20Tuesday_20Coed_20Gold_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Tuesday%20Coed%20Silver%20Tournament_1.pdf",
+    "text": "Tuesday Coed Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/c7cc43_Fall_20Tuesday_20Coed_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Tuesday%20Mens%20Tournament_1.pdf",
+    "text": "Tuesday Men's Tournament Bracket",
+    "file": "data/city_files/Wyoming/37f849_Fall_20Tuesday_20Mens_20Tournament_1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Wednesday%20Coed%20Tournament_1.pdf",
+    "text": "Wednesday Coed Tournament Bracket",
+    "file": "data/city_files/Wyoming/b2a327_Fall_20Wednesday_20Coed_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Thursday%20Coed%20Gold%20Tournament_1.pdf",
+    "text": "Thursday Coed Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/9536c9_Fall_20Thursday_20Coed_20Gold_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Thursday%20Coed%20Silver%20Tournament_1.pdf",
+    "text": "Thursday Coed Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/93cb97_Fall_20Thursday_20Coed_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Thursday%20Mens%20Gold%20Tournament_1.pdf",
+    "text": "Thursday Men's Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/f263ad_Fall_20Thursday_20Mens_20Gold_20Tournament_1.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Thursday%20Mens%20Silver%20Tournament_1.pdf",
+    "text": "Thursday Men's Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/2de1a8_Fall_20Thursday_20Mens_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Monday%20Mens%20Gold%20Tournament_1.pdf",
+    "text": "Monday Men's Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/ec902b_Monday_20Mens_20Gold_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Monday%20Mens%20Silver%20Tournament_1.pdf",
+    "text": "Monday Men's Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/d0104a_Monday_20Mens_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Tuesday%20COED%20Gold%20Tournament_1.pdf",
+    "text": "Tuesday Coed Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/af3603_Tuesday_20COED_20Gold_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Tuesday%20COED%20Silver%20Tournament_1.pdf",
+    "text": "Tuesday Coed Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/957a50_Tuesday_20COED_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Tuesday%20Mens%20Gold%20Tournament_1.pdf",
+    "text": "Tuesday Men's Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/853a1d_Tuesday_20Mens_20Gold_20Tournament_1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Tuesday%20Mens%20Silver%20Tournament_1.pdf",
+    "text": "Tuesday Men's Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/04ff29_Tuesday_20Mens_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Wednesday%20Coed%20Tournament_1.pdf",
+    "text": "Wednesday Coed Tournament Bracket",
+    "file": "data/city_files/Wyoming/66cde8_Wednesday_20Coed_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Thursday%20Coed%20Gold%20Tournament_1.pdf",
+    "text": "Thursday Coed Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/da5a0d_Thursday_20Coed_20Gold_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Thursday%20Coed%20Silver%20Tournament_1.pdf",
+    "text": "Thursday Coed Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/c18fdf_Thursday_20Coed_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Documents/Departments/Parks%20and%20Recreation/PARKS%20MAP%202020%28COLOR%29%20%283%29.pdf",
+    "text": "Park Location Map",
+    "file": "data/city_files/Wyoming/6547b3_PARKS_20MAP_202020_28COLOR_29_20_283_29.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/2023%20Ideal%20Map.pdf",
+    "text": "Map of Entire Park",
+    "file": "data/city_files/Wyoming/377ba7_2023_20Ideal_20Map.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Documents/Departments/Parks%20and%20Recreation/LAMAR_PARK_PICNIC_AREAS.pdf",
+    "text": "Map of",
+    "file": "data/city_files/Wyoming/a5f5b9_LAMAR_PARK_PICNIC_AREAS.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/2023%20Lamar%20Map.pdf",
+    "text": "Entire Park",
+    "file": "data/city_files/Wyoming/f99f43_2023_20Lamar_20Map.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/2023%20Pinery%20Map.pdf",
+    "text": "Map of Entire Park",
+    "file": "data/city_files/Wyoming/236d4c_2023_20Pinery_20Map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/2023%20Pinery%20Map_1.pdf",
+    "text": "MAP OF PARK",
+    "file": "data/city_files/Wyoming/573118_2023_20Pinery_20Map_1.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/2023%20Ideal%20Map_1.pdf",
+    "text": "MAP OF PARK",
+    "file": "data/city_files/Wyoming/16b64f_2023_20Ideal_20Map_1.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/2023%20Lamar%20Map_1.pdf",
+    "text": "MAP OF PARK",
+    "file": "data/city_files/Wyoming/a6db76_2023_20Lamar_20Map_1.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Ord_%207-24.pdf",
+    "text": "odd-even parking ordinance",
+    "file": "data/city_files/Wyoming/53832f_Ord__207-24.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/NPDES_Permit-FINAL_Wyoming_MS4-Kent%5B1%5D%20%281%29%20%282%29_1.pdf",
+    "text": "National Pollutant Discharge Elimination System (NPDES)",
+    "file": "data/city_files/Wyoming/fe5e60_NPDES_Permit-FINAL_Wyoming_MS4-Kent_5B1_5D_20_281_29_20_282_29_1.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Documents/Departments/Public%20Works/TRAFFIC_signals_2016.pdf",
+    "text": "View the detailed streetlighting map",
+    "file": "data/city_files/Wyoming/622ccd_TRAFFIC_signals_2016.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Documents/Departments/Public%20Works/TRAFFIC_TRUCK_ROUTE.pdf",
+    "text": "truck route map",
+    "file": "data/city_files/Wyoming/8035d8_TRAFFIC_TRUCK_ROUTE.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/2015%20Wyoming%20Bikeway%20Plan%20%28Final%29.pdf",
+    "text": "2015 Wyoming Bikeways Plan",
+    "file": "data/city_files/Wyoming/7aa103_2015_20Wyoming_20Bikeway_20Plan_20_28Final_29.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Nonmotorized%20Map%20-%202025.pdf",
+    "text": "Wyoming Nonmotorized Path Map",
+    "file": "data/city_files/Wyoming/8ea485_Nonmotorized_20Map_20-_202025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Documents/Maps/2014/Orthos/Wyoming.pdf",
+    "text": "Access the",
+    "file": "data/city_files/Wyoming/362fc6_Wyoming.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wyomingmi.gov/Portals/0/Ord_%207-24.pdf",
+    "text": "odd-even parking ordinance",
+    "file": "data/city_files/Wyoming/d82cc5_Ord__207-24.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wyomingmi.gov/Portals/0/Documents/Departments/Public%20Works/TRAFFIC_signals_2016.pdf",
+    "text": "View the detailed streetlighting map",
+    "file": "data/city_files/Wyoming/966fbb_TRAFFIC_signals_2016.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wyomingmi.gov/Portals/0/Documents/Departments/Public%20Works/TRAFFIC_TRUCK_ROUTE.pdf",
+    "text": "truck route map",
+    "file": "data/city_files/Wyoming/a25c2e_TRAFFIC_TRUCK_ROUTE.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Tamarac": {
+  "files": [],
+  "portals": {
+   "https://tamarac.org/opendata": "Track Existing Request",
+   "https://gis.tamarac.org/portal/apps/instant/basic/index.html?appid=5b5a3b328ee749efb35230fad78bed80": "Commission District Map",
+   "https://gis.tamarac.org/portal/apps/webappviewer/index.html?id=3c34d875fe7742fcbeb70894bfc9dacc": "Cellular Facilities in the City",
+   "https://tamarac.org/1515/Open-Data": "Open Data",
+   "https://gis.tamarac.org/portal/apps/webappviewer/index.html?id=a85b1c5c093c4d9d8a862133ecf45c30": "Zoning Map",
+   "https://tamaracfl.maps.arcgis.com/apps/webappviewer/index.html?id=cb53b248c6ef4263aefff19042fa4b82": "Current Development Projects",
+   "https://gis.tamarac.org/portal/apps/webappviewer/index.html?id=c89314fce47e424eb6b64adfc43a244e": "Future Land Use Map",
+   "https://gis.tamarac.org/portal/apps/instant/basic/index.html?appid=f1f9c38e811f48d1abf2d2870f4e499f": "Neighborhood Map Map of restricted neighborhoods"
+  }
+ },
+ "West Des Moines": {
+  "files": [],
+  "portals": {}
+ },
+ "Muncie": {
+  "files": [],
+  "portals": {}
+ },
+ "Hakkâri": {
+  "files": [],
+  "portals": {}
+ },
+ "Grand Forks": {
+  "files": [],
+  "portals": {}
+ },
+ "Port Arthur": {
+  "files": [],
+  "portals": {
+   "https://copa.maps.arcgis.com/apps/webappviewer/index.html?id=b65822ffedba42f98e639d0a65aeb16e": "City Limits & Extra Territorial Jurisdiction",
+   "https://copa.maps.arcgis.com/apps/instant/lookup/index.html?appid=fcfd71c4871c472ebf7e3ec33fda041a&find=77640%252C%2520Port%2520Arthur%252C%2520Texas": "Voting District & Precinct Map-(Updated July 2023)",
+   "https://copa.maps.arcgis.com/apps/instant/3dviewer/index.html?appid=cadbbb3aee804f5fa35630b2cc7c261c": "Downtown Tax Reinvestment Zone (TIRZ #1)",
+   "https://www.arcgis.com/apps/dashboards/a88138fa12bd42c5bacf62f67ddc6e90": "Street Rehabilitation Program Interactive Map",
+   "https://copa.maps.arcgis.com/apps/instant/insets/index.html?appid=33e6b2291da54176bf3054cc13cdee53": "Garbage Pick-Up Schedule Map",
+   "https://copa.maps.arcgis.com/apps/instant/basic/index.html?appid=63846a87505744f8bda9d0f76ac0b7b8": "Public Works Drainage Division Regrading Map",
+   "https://copa.maps.arcgis.com/apps/webappviewer/index.html?id=c3c77451149b4979a60cb068fd1553b2": "Zoning Map"
+  }
+ },
+ "Lacey": {
+  "files": [
+   {
+    "url": "https://cityoflacey.org/wp-content/uploads/sites/3/2022/03/Final-2030-Lacey-Transportation_web.pdf",
+    "text": "ADA – Transportation Transition Plan",
+    "file": "data/city_files/Lacey/bd48e2_Final-2030-Lacey-Transportation_web.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lacey.caimaps.info/Content/documents/CAI.Lacey%20Equity%20Map%20User%20Guide.2025%200324.pdf",
+    "text": "Equity Map User Guide",
+    "file": "data/city_files/Lacey/b67978_CAI.Lacey_20Equity_20Map_20User_20Guide.2025_200324.pdf",
+    "rows": 56,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://cityoflacey.org/wp-content/uploads/sites/3/2024/02/TRANSPORTATION0912_2018_Lacey-Pedestrian-and-Bicycle-Plan-reduced.pdf",
+    "text": "Pedestrian and Bicycle Plan",
+    "file": "data/city_files/Lacey/79eb31_TRANSPORTATION0912_2018_Lacey-Pedestrian-and-Bicycle-Plan-reduced.pdf",
+    "rows": 138,
+    "bike_rows": 53
+   },
+   {
+    "url": "https://cityoflacey.org/wp-content/uploads/sites/3/2022/03/0912_2018_Lacey-Pedestrian-and-Bicycle-Plan-reduced.pdf",
+    "text": "Lacey Pedestrian and Bicycle Plan",
+    "file": "data/city_files/Lacey/581d1a_0912_2018_Lacey-Pedestrian-and-Bicycle-Plan-reduced.pdf",
+    "rows": 138,
+    "bike_rows": 53
+   },
+   {
+    "url": "https://cityoflacey.org/wp-content/uploads/sites/3/2022/04/APPENDIX-G.pdf",
+    "text": "APPENDIX G: LOTT Wastewater Management Partnership Spill Incident Report",
+    "file": "data/city_files/Lacey/50c811_APPENDIX-G.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityoflacey.org/wp-content/uploads/sites/3/2021/09/LPD-Bicycle-Registration.pdf",
+    "text": "Register In Person",
+    "file": "data/city_files/Lacey/becca3_LPD-Bicycle-Registration.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityoflacey.org/wp-content/uploads/sites/3/2022/06/Temporary-Parking-Permit_Policies-Procedures.pdf",
+    "text": "Temporary Parking Permit Policy",
+    "file": "data/city_files/Lacey/5ab75c_Temporary-Parking-Permit_Policies-Procedures.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityoflacey.org/wp-content/uploads/sites/3/2026/07/12-300-Foot-Notification-Map.pdf",
+    "text": "12 - 300 Foot Notification Map",
+    "file": "data/city_files/Lacey/253934_12-300-Foot-Notification-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityoflacey.org/wp-content/uploads/sites/3/2026/07/16-Preliminary-Plat-Map.pdf",
+    "text": "16 - Preliminary Plat Map",
+    "file": "data/city_files/Lacey/6bf75d_16-Preliminary-Plat-Map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://laceywa.maps.arcgis.com/apps/webappviewer/index.html?id=35bfe5cda7d049de90420a37d08456a0": "CityofLacey.org/COL-Map",
+   "https://laceywa.maps.arcgis.com/apps/webappviewer/index.html?id=68c0346fe3454087be10fa0a5ec07515": "Horizontal Control Map",
+   "https://laceywa.maps.arcgis.com/apps/webappviewer/index.html?id=4838b9c8162f4fb8ac5bf1324975fec4": "Vertical Control Map"
+  }
+ },
+ "Covina": {
+  "files": [],
+  "portals": {}
+ },
+ "Balcarce Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "San Justo": {
+  "files": [],
+  "portals": {
+   "https://sanjusto.gov.ar/opendata": "Reclamos",
+   "https://sanjusto.gov.ar/open-data": "Reclamos"
+  }
+ },
+ "Burlington": {
+  "files": [
+   {
+    "url": "https://outside.vermont.gov/dept/sos/Elections_Division/voters/vermont_absentee_ballot_request.pdf?_gl=1*y8zryy*_ga*MTkzMDUxNzQ0Ni4xNzc3NjUyMTk2*_ga_V9WQH77KLW*czE3Nzc2NTIxOTYkbzEkZzEkdDE3Nzc2NTIyMDkkajQ3JGwwJGgw",
+    "text": "Absentee Ballot Request Form",
+    "file": "data/city_files/Burlington/ac9538_vermont_absentee_ballot_request.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://studiesandreports.ccrpcvt.org/wp-content/uploads/2025/07/PlanBTV-Walk-Bike-Safety-Action-Plan-2025-06-16.pdf",
+    "text": "View the final plan here",
+    "file": "data/city_files/Burlington/cbdcc8_PlanBTV-Walk-Bike-Safety-Action-Plan-2025-06-16.pdf",
+    "rows": 93,
+    "bike_rows": 7
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/be10d47875e942b1bc63b81d719fe40b": "Find Parking & Rates",
+   "https://data.burlingtonvt.gov": "OpenData Portal",
+   "https://data.burlingtonvt.gov/": "Open Data Portal",
+   "https://burlingtonvt.gov/845/Public-Records-Open-Data": "Public Records & Open Data",
+   "https://burlingtonvt.gov/392/City-Open-Data-Portal": "City Open Data Portal",
+   "https://burlingtonvt.gov/1101/Open-Data-Portal": "Open Data Portal",
+   "https://city-of-burlington-vt-open-data-burlingtonvt.hub.arcgis.com/": "Open Data Portal",
+   "https://experience.arcgis.com/experience/92f3b017a9a94fed8f91f7c4b278e664/page/Parks/": "Parks & Facilities Finder",
+   "https://experience.arcgis.com/experience/6538df1b4d6744e89da6ae8e9dd45689": "Winter Outdoor Recreation Tracker",
+   "https://experience.arcgis.com/experience/6538df1b4d6744e89da6ae8e9dd45689/page/Greenway-Status": "the Greenway",
+   "https://experience.arcgis.com/experience/6538df1b4d6744e89da6ae8e9dd45689/page/Skating-Rink-Status": "Outdoor Ice Skating Areas",
+   "https://burlingtonvt.maps.arcgis.com/apps/webappviewer/index.html?id=dedff64ccbdb45b194c125d88049f091": "Federal Register of Historic Resources",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=9018b7fbddf344aea7411b3ff4486fe5": "State Register of Historic Resources",
+   "https://data.burlingtonvt.gov/pages/public-safety": "City Open Data Portal",
+   "https://burlingtonvt.maps.arcgis.com/apps/webappviewer/index.html?id=724c74c720c24fb28c72c1eab435956a": "interactive map",
+   "https://burlingtonvt.maps.arcgis.com/apps/instant/basic/index.html?appid=d41b74155839412c891b8576c7e79800&locale=en-US": "Resident Parking Map",
+   "https://burlingtonvt.maps.arcgis.com/apps/webappviewer/index.html?id=b4d8235d17ed423eac82f5da99f415a6": "Current Construction",
+   "https://burlingtonvt.maps.arcgis.com/apps/instant/basic/index.html?appid=81015ab5570941819a1033fa8b9591a2": "Current Planning",
+   "https://www.arcgis.com/apps/dashboards/0d344de88f014a99b05b41a6fb2e109a": "https://www.arcgis.com/apps/dashboards/0d344de88f014a99b05b41a6fb2e109a",
+   "https://burlingtonvt.maps.arcgis.com/apps/webappviewer/index.html?id=5e8d70eb95af4aa3ada27b41a1dc730b": "Sanitary Sewer, Combined Sewer, and Separate Stormwater Collection System",
+   "https://burlingtonvt.maps.arcgis.com/apps/webappviewer/index.html?id=d982d99735df4de6bd99fd3da57cba98": "City Watersheds",
+   "https://burlingtonvt.maps.arcgis.com/apps/webappviewer/index.html?id=bc1d7f229432466ab0cede04b1829a7a": "BTV – Stormwater Billing",
+   "https://www.burlingtonvt.gov/845/Public-Records-Open-Data": "Public Records & Open Data",
+   "https://www.burlingtonvt.gov/392/City-Open-Data-Portal": "City Open Data Portal",
+   "https://www.burlingtonvt.gov/1101/Open-Data-Portal": "Open Data Portal"
+  }
+ },
+ "Coppell": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/d338c5a004604c17b294417228aa9aec": "Veterans Plaza at Town Center",
+   "https://waterdata.usgs.gov/nwis/uv?site_no=08055000": "USGS 08055000 Denton Creek at SH 121",
+   "https://waterdata.usgs.gov/nwis/uv?site_no=08055500": "USGS 08055500 Elm Fork Trinity River at Sandy Lake Road",
+   "https://coppelltx.maps.arcgis.com/apps/Embed/index.html?webmap=d14b83ebb50d48009399b779a967905e&extent=-97.0518%2c32.9336%2c-96.9251%2c32.993&zoom=true&scale=true&legend=true&active_panel=details&show_panel=true&popup_sidepanel=true&disable_scroll=false&theme=dark": "Interactive Online Safe Routes to School Map"
+  }
+ },
+ "Holly Springs": {
+  "files": [
+   {
+    "url": "https://connect.ncdot.gov/resources/safety/Teppl/TEPPL%20All%20Documents%20Library/T22%20-%20Rack%20Card.pdf",
+    "text": "Learn more",
+    "file": "data/city_files/Holly_Springs/c2683e_T22_20-_20Rack_20Card.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.nc.gov/ncdcr/nr/WA0629.pdf",
+    "text": "National Register of Historic Places and Local Historic Landmark",
+    "file": "data/city_files/Holly_Springs/f1fa77_WA0629.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.nc.gov/ncdcr/nr/WA0642.pdf",
+    "text": "National Register of Historic Places",
+    "file": "data/city_files/Holly_Springs/8d5127_WA0642.pdf",
+    "rows": 9,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://files.nc.gov/ncdcr/nr/WA1026.pdf",
+    "text": "National Register of Historic Places and Local Historic Landmark",
+    "file": "data/city_files/Holly_Springs/ca2c48_WA1026.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://gis.ncdcr.gov/hpoweb/default.htm": "North Carolina State Historic Preservation Office Map Service",
+   "https://experience.arcgis.com/experience/120f9bf2f0f24b7ca72a696c093eb676": "Greenway Map",
+   "https://tohs.maps.arcgis.com/apps/instant/basic/index.html?appid=2b7f7b832877422499d87aa343599a15": "Open the map.",
+   "https://gis.hollyspringsnc.us/idm/": "",
+   "https://tohs.maps.arcgis.com/apps/instant/basic/index.html?appid=f06d78f234214b06bf3ab7747e6dd31d": ""
+  }
+ },
+ "San Gabriel": {
+  "files": [],
+  "portals": {
+   "https://sangabrielcity.maps.arcgis.com/apps/instant/reporter/index.html?appid=1e5e8d864cc145c1af8e9f1bff32c02d ": "Report Potholes and Other Issues",
+   "https://experience.arcgis.com/experience/65803b7229344ee89a6637f79c9679d3/": "Public Works Map",
+   "https://sangabrielcity.maps.arcgis.com/apps/instant/reporter/index.html?appid=1e5e8d864cc145c1af8e9f1bff32c02d": "online"
+  }
+ },
+ "Peachtree City": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/3a11922bd8a34dc7897ed7f61583cd90/page/Page?draft=true&views=Home": "ENGAGE PTC",
+   "https://ptcgis.maps.arcgis.com/home/index.html": "Online Mapping System",
+   "https://experience.arcgis.com/experience/44391936dd59492eb4e07219cf076de0": "Peachtree City Interactive Zoning Map",
+   "https://ptcgis.maps.arcgis.com/apps/GeoForm/index.html?appid=12fecd46fd4141baa543a9a2acd48e25": "To register your cameras, click here.",
+   "https://sr-54-sr-74-updates-0013726-gdot.hub.arcgis.com/": "GDOT Project Update Website",
+   "https://www.legis.ga.gov/assets/2025-georgia-fact-book/index.html": "2025-26 Georgia Fact Book",
+   "https://ptcgis.maps.arcgis.com/apps/webappviewer/index.html?id=4e97e56946884309b5d6d04d2d569867": "Current system map"
+  }
+ },
+ "Kothamangalam Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Tooele": {
+  "files": [
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Government/Historic%20Preservation%20Commission/2023/NRHP%20Basics%20Tooele%20HD.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/b0b270_NRHP_20Basics_20Tooele_20HD.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Government/Historic%20Preservation%20Commission/2023/Historic%20Tax%20Credits%202023_Tooele.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/0813cc_Historic_20Tax_20Credits_202023_Tooele.pdf",
+    "rows": 36,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Government/Historic%20Preservation%20Commission/2023/Tooele%20City%20Downtown%20Historic%20District.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/5cf7fd_Tooele_20City_20Downtown_20Historic_20District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Community/Government/Historical%20Preservation%20Commission/2023/041023HPC_Agenda.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/fe9a89_041023HPC_Agenda.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Government/Historic%20Preservation%20Commission/2023/Minutes/041023HPC_Minutes_final.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/1db228_041023HPC_Minutes_final.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Government/Historic%20Preservation%20Commission/2023/011823HPC%20Agenda_Updated.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/dd5802_011823HPC_20Agenda_Updated.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Government/Historic%20Preservation%20Commission/2023/Minutes/011823HPC_Minutes_final.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/06b28a_011823HPC_Minutes_final.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Community/Government/Historical%20Preservation%20Commission/2022/Minutes/010622HPC_draft.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/0a37cd_010622HPC_draft.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Community/Government/Historical%20Preservation%20Commission/2019/Agenda/031319.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/262404_031319.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Community/Government/Historical%20Preservation%20Commission/2018/Agenda/070518.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/a52f6a_070518.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Community/Government/Historical%20Preservation%20Commission/2018/Agenda/032718.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/4f6b0d_032718.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Community/Government/Historical%20Preservation%20Commission/2018/Minutes/032718_final.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/875cb4_032718_final.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document%20Center/Community/Government/Historical%20Preservation%20Commission/2017/Minutes/121917.pdf",
+    "text": "",
+    "file": "data/city_files/Tooele/72f4fd_121917.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Documents/HistoricMainStreetCommission/Resolution 2024-31.pdf?t=202408211155060",
+    "text": "Resolution 2024-31",
+    "file": "data/city_files/Tooele/2ba164_Resolution_2024-31.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Documents/EconomicDevelopment/HistoricLandmarkDesignationForm.pdf?t=202407191242120",
+    "text": "Historic Landmark Nomination Form",
+    "file": "data/city_files/Tooele/376b9f_HistoricLandmarkDesignationForm.pdf",
+    "rows": 21,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Government/Historic Preservation Commission/2023/Historic Tax Credits 2023_Tooele.pdf?t=202304111747010",
+    "text": "Historic Tax Credits",
+    "file": "data/city_files/Tooele/572b6a_Historic_Tax_Credits_2023_Tooele.pdf",
+    "rows": 36,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Government/Historic Preservation Commission/2023/NRHP Basics Tooele HD.pdf?t=202304111746420",
+    "text": "National Register of Historic Places",
+    "file": "data/city_files/Tooele/99ca85_NRHP_Basics_Tooele_HD.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Government/Historic Preservation Commission/2023/Tooele City Downtown Historic District.pdf?t=202304111747200",
+    "text": "Tooele City Downtown Historic District",
+    "file": "data/city_files/Tooele/3b31ab_Tooele_City_Downtown_Historic_District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Documents/Agendas&Minutes/HistoricPreservationCommission/2026/110526HPC_Agenda.pdf?t=202611031531180",
+    "text": "Agenda",
+    "file": "data/city_files/Tooele/648c7e_110526HPC_Agenda.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Documents/Agendas&Minutes/HistoricPreservationCommission/2026/022626HPC_Agenda.pdf?t=202602231905490",
+    "text": "Agenda",
+    "file": "data/city_files/Tooele/a7e73a_022626HPC_Agenda.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Documents/Agendas&Minutes/HistoricPreservationCommission/2025/02.26.2026_HPCMinutes.pdf?t=202611061642370",
+    "text": "Minutes",
+    "file": "data/city_files/Tooele/5221c0_02.26.2026_HPCMinutes.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Documents/Agendas&Minutes/HistoricPreservationCommission/063025HPC_Agenda.pdf?t=202506261832440",
+    "text": "Agenda",
+    "file": "data/city_files/Tooele/00e05f_063025HPC_Agenda.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Documents/Agendas&Minutes/HistoricPreservationCommission/2025/063025HPC_MeetingMinutes_final.pdf?t=202602271108000",
+    "text": "Minutes",
+    "file": "data/city_files/Tooele/398cfa_063025HPC_MeetingMinutes_final.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Agendas & Minutes/Government/Historical Preservation Commission/2024/121024HPC_Agenda.pdf?t=202412061813460",
+    "text": "Agenda",
+    "file": "data/city_files/Tooele/f21862_121024HPC_Agenda.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Documents/Agendas&Minutes/HistoricPreservationCommission/2025/121024HPC_MeetingMinutes_final.pdf?t=202507101506550",
+    "text": "Minutes",
+    "file": "data/city_files/Tooele/e3e091_121024HPC_MeetingMinutes_final.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Agendas & Minutes/Government/Historical Preservation Commission/2024/120623HPC_Agenda.pdf?t=202406051649120",
+    "text": "Agenda",
+    "file": "data/city_files/Tooele/0ca16c_120623HPC_Agenda.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Agendas & Minutes/Government/Historical Preservation Commission/2024/061224HPC_MeetingMinutes_final.pdf?t=202412111304570",
+    "text": "Minutes",
+    "file": "data/city_files/Tooele/e43e97_061224HPC_MeetingMinutes_final.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Agendas & Minutes/Government/Historical Preservation Commission/2023/120623HPC_Agenda.pdf?t=202311281319260",
+    "text": "Agenda",
+    "file": "data/city_files/Tooele/0d9a89_120623HPC_Agenda.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Agendas & Minutes/Government/Historical Preservation Commission/2023/Minutes/120623HPC_Minutes_final.pdf?t=202406141035360",
+    "text": "Minutes",
+    "file": "data/city_files/Tooele/4a3b69_120623HPC_Minutes_final.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Community/Government/Historical Preservation Commission/2023/041023HPC_Agenda.pdf?t=202309081648420",
+    "text": "Agenda",
+    "file": "data/city_files/Tooele/579077_041023HPC_Agenda.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Government/Historic Preservation Commission/2023/Minutes/041023HPC_Minutes_final.pdf?t=202312081203010",
+    "text": "Minutes",
+    "file": "data/city_files/Tooele/8f827c_041023HPC_Minutes_final.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Government/Historic Preservation Commission/2023/011823HPC Agenda_Updated.pdf?t=202301121635340",
+    "text": "Agenda",
+    "file": "data/city_files/Tooele/d00560_011823HPC_Agenda_Updated.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Government/Historic Preservation Commission/2023/Minutes/011823HPC_Minutes_final.pdf?t=202312081204180",
+    "text": "Minutes",
+    "file": "data/city_files/Tooele/7d4c4c_011823HPC_Minutes_final.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Community/Government/Historical Preservation Commission/2022/Minutes/010622HPC_draft.pdf?t=202309081648360",
+    "text": "Minutes",
+    "file": "data/city_files/Tooele/4426c1_010622HPC_draft.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Community/Government/Historical Preservation Commission/2019/Agenda/031319.pdf?t=202309081648320",
+    "text": "Agenda",
+    "file": "data/city_files/Tooele/3db048_031319.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Community/Government/Historical Preservation Commission/2018/Agenda/070518.pdf?t=202309081648220",
+    "text": "Agenda",
+    "file": "data/city_files/Tooele/5db26e_070518.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Community/Government/Historical Preservation Commission/2018/Agenda/032718.pdf?t=202309081648170",
+    "text": "Agenda",
+    "file": "data/city_files/Tooele/3f09de_032718.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tooelecity.gov/Document Center/Community/Government/Historical Preservation Commission/2018/Minutes/032718_final.pdf?t=202309081648260",
+    "text": "Minutes",
+    "file": "data/city_files/Tooele/fe20a7_032718_final.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/7c6c53a0463e4bffb6fe3fbe801d3f5c/": "Report A Streetlight That Is Not Working",
+   "https://webapps.sunrisecloudsmartgis.com/ClientRelated/Utah/TooeleCounty/TooeleCity/TooeleCityCemeteryViewer/": "Interactive Cemetery Map",
+   "https://experience.arcgis.com/experience/2ab8bd62dd7c4128899e9556000ad184": "I understand and accept the disclaimer and wish to continue",
+   "https://lead-service-line-inventory-tooelecitygis.hub.arcgis.com/": "Lead-Safe Community Full Screen Version",
+   "https://storymaps.arcgis.com/stories/e952f8f3fc5743008373f0036b53af70": "Historic Tooele City"
+  }
+ },
+ "Parkland": {
+  "files": [],
+  "portals": {
+   "https://copfl.maps.arcgis.com/apps/webappviewer/index.html?id=367ad8ef677d420fb28d58dae02835b9": "City Atlas",
+   "https://storymaps.arcgis.com/stories/9f495e2581c843db8d7b8cdeecacf1c6": "Historical Portals"
+  }
+ },
+ "Bell": {
+  "files": [],
+  "portals": {
+   "https://lacounty.maps.arcgis.com/apps/instant/nearby/index.html?appid=3bb903aa101c4d28b086cfeb0ed547b2&sliderDistance=5": "View the Food Donation & Pick-Up Locator",
+   "https://experience.arcgis.com/experience/248ee750a8e844d2b330fbbca1452f1d": "Property Information GIS Database"
+  }
+ },
+ "Cibolo": {
+  "files": [
+   {
+    "url": "https://www.cibolotx.gov/Document Center/Economic Development/Services/Bring Your Business/STARTING A BUSINESS IN CIBOLO 2018.pdf",
+    "text": "Bring Your Business",
+    "file": "data/city_files/Cibolo/79df93_STARTING_A_BUSINESS_IN_CIBOLO_2018.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cibolotx.gov/ED/Community Profile 2025.pdf?t=202601271428130",
+    "text": "Cibolo Community Profile 2025",
+    "file": "data/city_files/Cibolo/e0c37b_Community_Profile_2025.pdf",
+    "rows": 163,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cibolotx.gov/Community Summary 2025.pdf?t=202601271429120",
+    "text": "Community Summary 2025",
+    "file": "data/city_files/Cibolo/e45519_Community_Summary_2025.pdf",
+    "rows": 34,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cibolotx.gov/Demographic and Income Profile Report 2025.pdf?t=202601271429520",
+    "text": "Demographic and Income Profile 2025",
+    "file": "data/city_files/Cibolo/cf5273_Demographic_and_Income_Profile_Report_2025.pdf",
+    "rows": 206,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cibolotx.gov/Economic Development Profile 2025.pdf?t=202601271430290",
+    "text": "Economic Development Profile 2025",
+    "file": "data/city_files/Cibolo/f9d25f_Economic_Development_Profile_2025.pdf",
+    "rows": 49,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cibolotx.gov/Population Trends and Key Indicators 2025.pdf?t=202601271431000",
+    "text": "Population Trends and Key Indicators 2025",
+    "file": "data/city_files/Cibolo/19b1ee_Population_Trends_and_Key_Indicators_2025.pdf",
+    "rows": 35,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cibolotx.gov/ED/Health and Beauty Market Potential 2025.pdf?t=202601271451320",
+    "text": "Health and Beauty Market Potential 2025",
+    "file": "data/city_files/Cibolo/b553fb_Health_and_Beauty_Market_Potential_2025.pdf",
+    "rows": 142,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.cibolotx.gov/ED/Market Profile 2025.pdf?t=202601271452130",
+    "text": "Market Profile 2025",
+    "file": "data/city_files/Cibolo/0f76b9_Market_Profile_2025.pdf",
+    "rows": 163,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cibolotx.gov/ED/Pets and Products Market Potential 2025.pdf?t=202601271453070",
+    "text": "Pets and Products Market Potential 2025",
+    "file": "data/city_files/Cibolo/ea48bf_Pets_and_Products_Market_Potential_2025.pdf",
+    "rows": 41,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cibolotx.gov/ED/Restaurant Market Potential 2025.pdf?t=202601271455210",
+    "text": "Restaurant Market Potential 2025",
+    "file": "data/city_files/Cibolo/c6810c_Restaurant_Market_Potential_2025.pdf",
+    "rows": 79,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.cibolotx.gov/ED/Retail Demand by Industry 2025.pdf?t=202601271456000",
+    "text": "Retail Demand by Industry 2025",
+    "file": "data/city_files/Cibolo/d65e3f_Retail_Demand_by_Industry_2025.pdf",
+    "rows": 34,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cibolotx.gov/ED/Retail Demand Outlook 2025.pdf?t=202601271457060",
+    "text": "Retail Demand Outlook 2025",
+    "file": "data/city_files/Cibolo/0ff5f0_Retail_Demand_Outlook_2025.pdf",
+    "rows": 79,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.cibolotx.gov/ED/Retail Market Potential 2025.pdf?t=202601271457440",
+    "text": "Retail Market Potential 2025",
+    "file": "data/city_files/Cibolo/9440c6_Retail_Market_Potential_2025.pdf",
+    "rows": 140,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cibolotx.gov/ED/Sports and Leisure Market Potential 2026.pdf?t=202601271459430",
+    "text": "Sports and Leisure Market Potential 2025",
+    "file": "data/city_files/Cibolo/5de668_Sports_and_Leisure_Market_Potential_2026.pdf",
+    "rows": 214,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.cibolotx.gov/Community_Profile_Cibolo_City_TX_2_2.pdf?t=202501021019010",
+    "text": "Community Profile 2024",
+    "file": "data/city_files/Cibolo/acb45c_Community_Profile_Cibolo_City_TX_2_2.pdf",
+    "rows": 197,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cibolotx.gov/Health_and_Beauty_Market_Potential_Cibolo_City_TX_2.pdf?t=202501101547330",
+    "text": "Health & Beauty Market Potential",
+    "file": "data/city_files/Cibolo/c0380f_Health_and_Beauty_Market_Potential_Cibolo_City_TX_2.pdf",
+    "rows": 90,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cibolotx.gov/Market_Profile_Cibolo_City_TX_2.pdf?t=202501021020050",
+    "text": "Market Profile",
+    "file": "data/city_files/Cibolo/56a94f_Market_Profile_Cibolo_City_TX_2.pdf",
+    "rows": 197,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cibolotx.gov/Pets_and_Products_Market_Potential_Cibolo_City_TX_2.pdf?t=202501101547090",
+    "text": "Pets & Products Market Potential",
+    "file": "data/city_files/Cibolo/08b91d_Pets_and_Products_Market_Potential_Cibolo_City_TX_2.pdf",
+    "rows": 32,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cibolotx.gov/Recreation_Expenditures_Cibolo_City_TX_2.pdf?t=202501101546340",
+    "text": "Recreation Expenditures",
+    "file": "data/city_files/Cibolo/e888be_Recreation_Expenditures_Cibolo_City_TX_2.pdf",
+    "rows": 32,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cibolotx.gov/Restaurant_Market_Potential_Cibolo_City_TX_2.pdf?t=202501101546100",
+    "text": "Restaurant Market Potential",
+    "file": "data/city_files/Cibolo/9ff3f0_Restaurant_Market_Potential_Cibolo_City_TX_2.pdf",
+    "rows": 60,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cibolotx.gov/Retail_Demand_by_Industry_Cibolo_City_TX_2.pdf?t=202501101545260",
+    "text": "Retail Demand",
+    "file": "data/city_files/Cibolo/21641c_Retail_Demand_by_Industry_Cibolo_City_TX_2.pdf",
+    "rows": 25,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cibolotx.gov/ESRI Cibolo Community Profile 2023.pdf?t=202312110919090",
+    "text": "Cibolo Community Profile 2023",
+    "file": "data/city_files/Cibolo/e1d628_ESRI_Cibolo_Community_Profile_2023.pdf",
+    "rows": 193,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cibolotx.gov/Community_Profile_12.21.2022.pdf?t=202305050944570",
+    "text": "Community Profile",
+    "file": "data/city_files/Cibolo/2c36b4_Community_Profile_12.21.2022.pdf",
+    "rows": 193,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cibolotx.gov/Health_and_Beauty_Market_Potential_2023.pdf?t=202305050955480",
+    "text": "Health & Beauty Market Potential",
+    "file": "data/city_files/Cibolo/225b77_Health_and_Beauty_Market_Potential_2023.pdf",
+    "rows": 258,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.cibolotx.gov/Pets_and_Products_Market_Potential_2023.pdf?t=202305050955230",
+    "text": "Pets & Products Market Potential",
+    "file": "data/city_files/Cibolo/acb715_Pets_and_Products_Market_Potential_2023.pdf",
+    "rows": 84,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cibolotx.gov/Recreation_Expenditures_2023.pdf?t=202305050955080",
+    "text": "Recreation Expenditures",
+    "file": "data/city_files/Cibolo/eb7ec2_Recreation_Expenditures_2023.pdf",
+    "rows": 96,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.cibolotx.gov/Restaurant_Market_Potential_2023.pdf?t=202305050954530",
+    "text": "Restaurant Market Potential",
+    "file": "data/city_files/Cibolo/895c3d_Restaurant_Market_Potential_2023.pdf",
+    "rows": 171,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.cibolotx.gov/Retail_Demand_Outlook_2023.pdf?t=202305050951580",
+    "text": "Retail Demand Outlook",
+    "file": "data/city_files/Cibolo/accd87_Retail_Demand_Outlook_2023.pdf",
+    "rows": 165,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cibolotx.gov/Document Center/Economic Development/Demographics/Cibolo Fast Facts 2021/Cibolo TX - Fast Facts_202106110916494858.pdf?t=202303210831580",
+    "text": "Cibolo Fast Facts 2021",
+    "file": "data/city_files/Cibolo/48ae20_Cibolo_TX_-_Fast_Facts_202106110916494858.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cibolotx.gov/Community/Senior Program/NOVEMBER CALENDAR 2026.pdf?t=202611031021220",
+    "text": "View the November 2026 Calendar",
+    "file": "data/city_files/Cibolo/ffd001_NOVEMBER_CALENDAR_2026.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cibolotx.gov/Scroll Menu/Services/Cibolo Map Calendar 2026.pdf?t=202603031643240",
+    "text": "Solid Waste Schedule - included bulk pickup service.",
+    "file": "data/city_files/Cibolo/8e7898_Cibolo_Map_Calendar_2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cibolotx.gov/Scroll%20Menu/Services/Cibolo%20Map%20Calendar%202026.pdf?t=202603031643240",
+    "text": "2026 Brush & Bulk Waste Collection Schedule",
+    "file": "data/city_files/Cibolo/5d70f6_Cibolo_20Map_20Calendar_202026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cibolotx.gov/MOBILE FOOD  FIRE INSPECTION REQUIREMENTS_04.28.25.pdf?t=202507171240260",
+    "text": "Inspection Checklist",
+    "file": "data/city_files/Cibolo/11d899_MOBILE_FOOD_FIRE_INSPECTION_REQUIREMENTS_04.28.25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cibolotx.gov/Document Center/Business/Drainage Department/DRAFT FINAL Stormwater Management Plan 20190718..pdf?t=202502061558090",
+    "text": "Stormwater Management Plan",
+    "file": "data/city_files/Cibolo/a42216_DRAFT_FINAL_Stormwater_Management_Plan_20190718..pdf",
+    "rows": 157,
+    "bike_rows": 33
+   },
+   {
+    "url": "https://www.cibolotx.gov/Document Center/Business/Drainage Department/2025 Annual Report Final.pdf?t=202604081729140",
+    "text": "Municipal Separate Storm System (MS4)",
+    "file": "data/city_files/Cibolo/ce98ff_2025_Annual_Report_Final.pdf",
+    "rows": 280,
+    "bike_rows": 33
+   },
+   {
+    "url": "https://www.cibolotx.gov/Document Center/Business/Drainage Department/TCEQ MS4 NOI.pdf?t=202502051302410",
+    "text": "Notice of Intent",
+    "file": "data/city_files/Cibolo/d8dd83_TCEQ_MS4_NOI.pdf",
+    "rows": 117,
+    "bike_rows": 26
+   },
+   {
+    "url": "https://www.cibolotx.gov/Document Center/Business/Drainage Department/TCEQ Core Data Form 10400.pdf?t=202502051307020",
+    "text": "TCEQ Core Data Form",
+    "file": "data/city_files/Cibolo/66939a_TCEQ_Core_Data_Form_10400.pdf",
+    "rows": 72,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cibolotx.gov/Document Center/Economic Development/Manufacturing/Cibolo TX - Fast Facts.pdf?t=202303210831280",
+    "text": "Cibolo Fast Facts (PDF)",
+    "file": "data/city_files/Cibolo/d340d3_Cibolo_TX_-_Fast_Facts.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cibolotx.gov/Document Center/Economic Development/Retail & Recreation/Cibolo TX - Fast Facts.pdf?t=202303210831280",
+    "text": "Cibolo Fast Facts (PDF)",
+    "file": "data/city_files/Cibolo/af0fde_Cibolo_TX_-_Fast_Facts.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/38884767b16c494fa052965f856cc351": "Capital Projects Tracker",
+   "https://maps-and-gis-cibolotx.hub.arcgis.com/": "Mapping",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd": "FEMA Floodplain Map",
+   "https://data.tnris.org/": "TNRIS Maps & Data",
+   "https://maps-and-gis-cibolotx.hub.arcgis.com/apps/2f68463e81294f37a68c8ef442e85b29/explore": "learn more",
+   "https://maps-and-gis-cibolotx.hub.arcgis.com/apps/5429c5665a6041fc9d3dd339a0c4ee79/explore": "Park Locator",
+   "https://maps-and-gis-cibolotx.hub.arcgis.com/apps/bd30cc5cae19434dbb7f6ac8e62ce7f1/explore": "Flash Flood Zones",
+   "https://maps-and-gis-cibolotx.hub.arcgis.com/apps/e0234407335e42f29a99bf08b7f41689/explore": "City of Cibolo Street Sweeper Schedule*"
+  }
+ },
+ "La Verne": {
+  "files": [],
+  "portals": {
+   "https://ndcresearch.maps.arcgis.com/apps/View/index.html?appid=a3047350f0ed45588be9ea22673d4645": "Interactive District Map"
+  }
+ },
+ "Salem": {
+  "files": [],
+  "portals": {
+   "https://townofsalemnh.org/opendata": "Events",
+   "https://townofsalemnh.org/open-data": "Events"
+  }
+ },
+ "Vestal": {
+  "files": [],
+  "portals": {}
+ },
+ "Hamtramck": {
+  "files": [
+   {
+    "url": "https://hamtramckcity.gov/wp-content/uploads/2024/06/Sentry_Tri-fold_Hamtramck-2_r11-002.pdf",
+    "text": "Parking Information Pamphlet",
+    "file": "data/city_files/Hamtramck/d142ce_Sentry_Tri-fold_Hamtramck-2_r11-002.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://hamtramckcity.gov/wp-content/uploads/2024/06/ANNUAL-PARKING-PERMIT-APPLICATION.pdf",
+    "text": "Annual Parking Permit Application",
+    "file": "data/city_files/Hamtramck/5d6a02_ANNUAL-PARKING-PERMIT-APPLICATION.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ }
+}
