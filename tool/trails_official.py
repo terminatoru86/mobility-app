@@ -41,7 +41,14 @@ MOTO_LAYER = re.compile(r'motorcycle|motorbike|dirt\s*bike|scenic\s*byway|off-?h
                         r'historic\s*(route|byway|highway)|heritage\s*(route|byway|highway)|national\s*historic\s*trail', re.I)
 MOTO_FIELD = re.compile(r'motorcycle|motorbike|dirt\s*bike', re.I)
 YES = {'y', 'yes', 'true', '1', 'open', 'allowed', 'managed', 'permitted', 'designated', 'accepted'}
-NAME_FIELDS = ('trail_name', 'trailname', 'trlname', 'trail_nm', 'name', 'trail', 'label', 'route_name', 'pathname')
+NAME_FIELDS = ('trail_name', 'trailname', 'trlname', 'trail_nm', 'name', 'trail', 'label', 'route_name', 'pathname', 'segment_name', 'full_name')
+# layers the search does not find, added by hand (url, where, layer text, source, owner)
+FIXED = [
+    ('https://services2.arcgis.com/CyVvlIiUfRBmMQuu/arcgis/rest/services/Bikeways_and_Trails/FeatureServer/0', "STATUS='Active'",
+     'Bikeways and Trails', 'Bikeways and Trails · City of Virginia Beach', 'City of Virginia Beach'),
+    ('https://services2.arcgis.com/CyVvlIiUfRBmMQuu/arcgis/rest/services/Bikeways_and_Trail_Facilities/FeatureServer/0', '1=1',
+     'Bikeways and Trail Facilities', 'Bikeways and Trail Facilities · City of Virginia Beach', 'City of Virginia Beach'),
+]
 
 
 def http(url, timeout=90):
@@ -100,10 +107,10 @@ def routes_from(features, layer_text, source, url, owner=''):
     return out
 
 
-def layer_features(url):
+def layer_features(url, where='1=1'):
     feats, offset = [], 0
     for _ in range(60):
-        q = urllib.parse.urlencode({'where': '1=1', 'outFields': '*', 'outSR': '4326', 'returnGeometry': 'true',
+        q = urllib.parse.urlencode({'where': where, 'outFields': '*', 'outSR': '4326', 'returnGeometry': 'true',
                                     'geometryPrecision': 5, 'f': 'json', 'resultOffset': offset})
         j = json.loads(http(f'{url}/query?{q}', timeout=120))
         if j.get('error'):
@@ -122,6 +129,14 @@ def layer_features(url):
 def discover(minutes=60):
     out, seen, log = [], set(), []
     end = time.time() + 60 * minutes
+    for lurl, where, text, source, owner in FIXED:
+        seen.add(lurl.rsplit('/', 1)[0])
+        try:
+            recs = routes_from(layer_features(lurl, where), text, source, lurl, owner)
+            log.append(f'{len(recs):5d} routes  {lurl}  [{source}] (fixed)')
+            out += recs
+        except Exception as err:
+            log.append(f'FAILED {lurl}: {str(err)[:80]}')
     for t in TERMS:
         for start in range(1, 601, 100):
             if time.time() > end:
