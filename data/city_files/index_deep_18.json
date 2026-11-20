@@ -1,0 +1,2242 @@
+{
+ "Virginia Beach VA": {
+  "files": [],
+  "portals": {}
+ },
+ "Salt Lake City UT": {
+  "files": [
+   {
+    "url": "https://www.slcdocs.com/transportation/Parking/pdf/MotorcycleParking.pdf",
+    "text": "designated motorcycle parking spots",
+    "file": "data/city_files/Salt_Lake_City_UT/0f027d_MotorcycleParking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/parks/RAC_Docs/RAC_field_MAP0422.pdf",
+    "text": "Detailed Field Map",
+    "file": "data/city_files/Salt_Lake_City_UT/23a147_RAC_field_MAP0422.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Historic Preservation/New LocalNational map.pdf",
+    "text": "Download – National and Local Historic Districts Map",
+    "file": "data/city_files/Salt_Lake_City_UT/1b006c_New_LocalNational_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Historic%20Preservation/New%20Local%20HD%20map.pdf",
+    "text": "View Map of Local Historic Districts",
+    "file": "data/city_files/Salt_Lake_City_UT/348d5d_New_20Local_20HD_20map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.slcdocs.com/Planning/Historic%20Preservation/New%20National%20map.pdf",
+    "text": "View Map of National Historic Districts",
+    "file": "data/city_files/Salt_Lake_City_UT/6a813b_New_20National_20map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Historic%20Preservation/New%20LocalNational%20map.pdf",
+    "text": "Local & National Historic Districts Map",
+    "file": "data/city_files/Salt_Lake_City_UT/8ad6fa_New_20LocalNational_20map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Applications/Designation.pdf",
+    "text": "HP: Local Historic District or Thematic Designation",
+    "file": "data/city_files/Salt_Lake_City_UT/09b6b7_Designation.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/ResidentialGuidelines.pdf",
+    "text": "Preservation Handbook for Historic Residential Properties & Districts",
+    "file": "data/city_files/Salt_Lake_City_UT/045f16_ResidentialGuidelines.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section1.pdf",
+    "text": "Why Preserve Historic Buildings & Neighborhoods?",
+    "file": "data/city_files/Salt_Lake_City_UT/4170aa_Section1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section2.pdf",
+    "text": "The Preservation Program in Salt Lake City",
+    "file": "data/city_files/Salt_Lake_City_UT/9d8c1f_Section2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section3.pdf",
+    "text": "The Design Guidelines",
+    "file": "data/city_files/Salt_Lake_City_UT/f96cbd_Section3.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section4.pdf",
+    "text": "Historic Context & Architectural Styles",
+    "file": "data/city_files/Salt_Lake_City_UT/5c4686_Section4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch1.pdf",
+    "text": "Site Features",
+    "file": "data/city_files/Salt_Lake_City_UT/13b21f_Ch1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch2.pdf",
+    "text": "Building Materials & Finishes",
+    "file": "data/city_files/Salt_Lake_City_UT/b58274_Ch2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch3.pdf",
+    "text": "Windows",
+    "file": "data/city_files/Salt_Lake_City_UT/30dc46_Ch3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch4.pdf",
+    "text": "Doors",
+    "file": "data/city_files/Salt_Lake_City_UT/016ae2_Ch4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch5.pdf",
+    "text": "Porches",
+    "file": "data/city_files/Salt_Lake_City_UT/c2179d_Ch5.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch6.pdf",
+    "text": "Architectural Details",
+    "file": "data/city_files/Salt_Lake_City_UT/87df3a_Ch6.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch7.pdf",
+    "text": "Roofs",
+    "file": "data/city_files/Salt_Lake_City_UT/7e00a8_Ch7.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch8.pdf",
+    "text": "Additions",
+    "file": "data/city_files/Salt_Lake_City_UT/3ed9b9_Ch8.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch9.pdf",
+    "text": "Accessory Structures",
+    "file": "data/city_files/Salt_Lake_City_UT/457447_Ch9.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch10.pdf",
+    "text": "Seismic Retrofitting",
+    "file": "data/city_files/Salt_Lake_City_UT/efae12_Ch10.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch11.pdf",
+    "text": "General Issues",
+    "file": "data/city_files/Salt_Lake_City_UT/b58c96_Ch11.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch12.pdf",
+    "text": "New Construction",
+    "file": "data/city_files/Salt_Lake_City_UT/ab1f1a_Ch12.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Part3Intro.pdf",
+    "text": "Introduction",
+    "file": "data/city_files/Salt_Lake_City_UT/74bc91_Part3Intro.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch13.pdf",
+    "text": "The Avenues",
+    "file": "data/city_files/Salt_Lake_City_UT/00a226_Ch13.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch14.pdf",
+    "text": "Capitol Hill",
+    "file": "data/city_files/Salt_Lake_City_UT/0d03c2_Ch14.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch15.pdf",
+    "text": "Central City",
+    "file": "data/city_files/Salt_Lake_City_UT/b9e0e9_Ch15.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch16.pdf",
+    "text": "South Temple",
+    "file": "data/city_files/Salt_Lake_City_UT/01b4de_Ch16.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch17.pdf",
+    "text": "University",
+    "file": "data/city_files/Salt_Lake_City_UT/6b0d03_Ch17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch18.pdf",
+    "text": "Westmoreland Place",
+    "file": "data/city_files/Salt_Lake_City_UT/e06f57_Ch18.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/AppA.pdf",
+    "text": "Salt Lake City Historic Design Standards & Secretary of the Interior’s Standards",
+    "file": "data/city_files/Salt_Lake_City_UT/9e9f96_AppA.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/AppB.pdf",
+    "text": "Appendix B",
+    "file": "data/city_files/Salt_Lake_City_UT/a70e6a_AppB.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/AppC.pdf",
+    "text": "Glossary of Terms",
+    "file": "data/city_files/Salt_Lake_City_UT/d882e5_AppC.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/MFDG/P1.pdf",
+    "text": "Why Preserve Historic Buildings & Neighborhoods",
+    "file": "data/city_files/Salt_Lake_City_UT/35ba45_P1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/MFDG/P2.pdf",
+    "text": "The Preservation Program in Salt Lake City – Defining and Managing Historic Buildings and Districts",
+    "file": "data/city_files/Salt_Lake_City_UT/e1dff5_P2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/MFDG/P3.pdf",
+    "text": "The Design Guidelines",
+    "file": "data/city_files/Salt_Lake_City_UT/fe2de0_P3.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/MFDG/P4.pdf",
+    "text": "Historic Context, Architectural Types & Styles",
+    "file": "data/city_files/Salt_Lake_City_UT/7f8654_P4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/MFDG/P5.pdf",
+    "text": "Site Features & Streetscape",
+    "file": "data/city_files/Salt_Lake_City_UT/457b69_P5.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://slcgov.maps.arcgis.com/apps/instant/lookup/index.html?appid=e51eab2f279849739b952e8bea7d7530": "Interactive District Boundaries Map",
+   "https://slcgov.maps.arcgis.com/apps/instant/basic/index.html?appid=ae4eccbc202145daa6059967fb838aee": "Open the parking map full-screen in a new window.",
+   "https://slcgov.maps.arcgis.com/apps/webappviewer/index.html?id=647267057ace455bbc388d7816abfb16": "Click here",
+   "https://slcgov.maps.arcgis.com/apps/instant/sidebar/index.html?appid=fa801b661ce14222a6c1f7d42ce21636": "Open Map in Larger View",
+   "https://ball-park-station-area-plan-slcgov.hub.arcgis.com/": "Ballpark Station Area Plan (2022)",
+   "https://safe-routes-uplan.hub.arcgis.com/": "Utah Safe Routes to School map",
+   "https://gis.udot.utah.gov/AT-Counters": "UDOT Active Transportation Counters",
+   "https://data.slc.gov/": "SLC Open Data",
+   "https://data-uplan.opendata.arcgis.com/": "UDOT Open Data",
+   "https://gis.utah.gov/products/sgid/categories/": "Utah Geospatial Resource Center (UGRC)",
+   "https://storymaps.arcgis.com/stories/0eee08e851244d4ba44fdc09cf8934a5": "Walkable Salt Lake City Interactive mapping tool to visualize and explore the walkability of Salt Lake City neighborhood",
+   "https://slcgov.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=0db2fec93d9140bc8c5768abce5f9ab0&theme=light&legend=true&center=-111.88889997775523,40.7601154304239&scale=72223.819286": "Find your zone on the map",
+   "https://experience.arcgis.com/experience/828574c207454f01808e07f0c71da21e/page/Home/?views=view_8": "300 West",
+   "https://slcparksbond-deagis.hub.arcgis.com/pages/4daed75ac69645018ecc4a02a7473363": "GO Bond Information",
+   "https://slcparksbond-deagis.hub.arcgis.com/pages/499d28a7b5ee42208dbd206352566987": "Reimagine Neighborhood Parks General Obligation bond funding",
+   "https://slcparksbond-deagis.hub.arcgis.com/pages/1d2507df2cf8400aa2ec8b377196688f": "GO Bond Information",
+   "https://storymaps.arcgis.com/stories/42f180e6bd3a465abce675556772aa6b": "Vision online here",
+   "https://slcparksbond-deagis.hub.arcgis.com/pages/reimagining": "GO Bond",
+   "https://slcparksbond-deagis.hub.arcgis.com/pages/libertypark": "GO Bond Information",
+   "https://storymaps.arcgis.com/stories/e73a13bafab34936be9169c7baa5eec3": "Artesian Well Park Improvement Project",
+   "https://storymaps.arcgis.com/stories/f78aaf35aedf4fdfb6e14d11b01e407a": "Lindsey Gardens Concession Improvement Project",
+   "https://storymaps.arcgis.com/stories/5c015c7f17b54e5786441d17804d2668": "Redwood Meadows Playground",
+   "https://storymaps.arcgis.com/stories/3a6f9f1060314fdab74ddf1dbd70ac9a": "Rosewood Dog Park",
+   "https://reimagine-nature-slcgov.hub.arcgis.com/": "City Council Web Page",
+   "http://gis.slcgov.opendata.arcgis.com/datasets/783fc1031b97426d91c063ea8c719b36_9": "map",
+   "http://slcgov.maps.arcgis.com/apps/Viewer/index.html?appid=c23403872ee24079a0c289a2ca5c9da8": "zip code map"
+  }
+ },
+ "Moreno Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Saint Paul": {
+  "files": [
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/parks-recreation/2025-impact-report-right-track.pdf",
+    "text": "",
+    "file": "data/city_files/Saint_Paul/e126d1_2025-impact-report-right-track.pdf",
+    "rows": 65,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/parks-recreation/impact-one-pager-right-track-2025.pdf",
+    "text": "",
+    "file": "data/city_files/Saint_Paul/fd1e45_impact-one-pager-right-track-2025.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/public-works/rowinspectorareamapsept2026.pdf",
+    "text": "ROW Inspector Map",
+    "file": "data/city_files/Saint_Paul/00dcfd_rowinspectorareamapsept2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/2025-10/Policy%20and%20Guidelines%20October%202025.pdf",
+    "text": "Residential Permit Parking Policy & Guidelines",
+    "file": "data/city_files/Saint_Paul/9e2ba4_Policy_20and_20Guidelines_20October_202025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/archive/pw-area-018-11-20.pdf",
+    "text": "1 Map",
+    "file": "data/city_files/Saint_Paul/cc8d71_pw-area-018-11-20.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2002.pdf",
+    "text": "2 Map",
+    "file": "data/city_files/Saint_Paul/37f6c7_Area_2002.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2003%202018.pdf",
+    "text": "3 Map",
+    "file": "data/city_files/Saint_Paul/2c0a72_Area_2003_202018.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2006%202018_0.pdf",
+    "text": "6 Map",
+    "file": "data/city_files/Saint_Paul/af4130_Area_2006_202018_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2007.pdf",
+    "text": "7 Map",
+    "file": "data/city_files/Saint_Paul/57cdbe_Area_2007.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/2025-05/Area%2008_Edited%20-%20LME%202025%20-%2005-27-2025.pdf",
+    "text": "8 Map",
+    "file": "data/city_files/Saint_Paul/ee1f0c_Area_2008_Edited_20-_20LME_202025_20-_2005-27-2025.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2009.pdf",
+    "text": "9 Map",
+    "file": "data/city_files/Saint_Paul/5b8cb2_Area_2009.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2010%202018_0.pdf",
+    "text": "10 Map",
+    "file": "data/city_files/Saint_Paul/f14ea6_Area_2010_202018_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2012%202018_0.pdf",
+    "text": "12 Map",
+    "file": "data/city_files/Saint_Paul/f2a719_Area_2012_202018_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2013.pdf",
+    "text": "13 Map",
+    "file": "data/city_files/Saint_Paul/70272b_Area_2013.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2014%202018.pdf",
+    "text": "14 Map",
+    "file": "data/city_files/Saint_Paul/15e0c0_Area_2014_202018.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2015.pdf",
+    "text": "15 Map",
+    "file": "data/city_files/Saint_Paul/66756d_Area_2015.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2016-17.pdf",
+    "text": "16 & 17 Map",
+    "file": "data/city_files/Saint_Paul/478386_Area_2016-17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/2022-12/Area%2018.pdf",
+    "text": "18 Map",
+    "file": "data/city_files/Saint_Paul/d6f970_Area_2018.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2019_0.pdf",
+    "text": "19 Map",
+    "file": "data/city_files/Saint_Paul/e67dcc_Area_2019_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/2025-05/Area%2020-%20Edited%20-%20LME%20-%202025%20-%2005-12-2025.pdf",
+    "text": "20 Map",
+    "file": "data/city_files/Saint_Paul/2692fd_Area_2020-_20Edited_20-_20LME_20-_202025_20-_2005-12-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2021.pdf",
+    "text": "21 Map",
+    "file": "data/city_files/Saint_Paul/feab53_Area_2021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2022%20Map.pdf",
+    "text": "22 Map",
+    "file": "data/city_files/Saint_Paul/042351_Area_2022_20Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2023.pdf",
+    "text": "23 Map",
+    "file": "data/city_files/Saint_Paul/07d310_Area_2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2024.pdf",
+    "text": "24 Map",
+    "file": "data/city_files/Saint_Paul/da2802_Area_2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/archive/pw-area-258-11-20.pdf",
+    "text": "25 Map",
+    "file": "data/city_files/Saint_Paul/b4da99_pw-area-258-11-20.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2026.pdf",
+    "text": "26 Map",
+    "file": "data/city_files/Saint_Paul/f9dea3_Area_2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2027.pdf",
+    "text": "27 Map",
+    "file": "data/city_files/Saint_Paul/1c1507_Area_2027.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2028%202018.pdf",
+    "text": "28 Map",
+    "file": "data/city_files/Saint_Paul/ed2c93_Area_2028_202018.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2029%202018.pdf",
+    "text": "29 Map",
+    "file": "data/city_files/Saint_Paul/080b1f_Area_2029_202018.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2030%202016.pdf",
+    "text": "30 Map",
+    "file": "data/city_files/Saint_Paul/6c2d86_Area_2030_202016.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/2024-08/Permit%20Parking%20Area%2019%20Petition%20map.pdf",
+    "text": "Area 19",
+    "file": "data/city_files/Saint_Paul/9ccff3_Permit_20Parking_20Area_2019_20Petition_20map.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/2024-08/Permit%20Parking%20Area%2019%20Petition%20draft%20and%20map.pdf",
+    "text": "Area 19 petition form",
+    "file": "data/city_files/Saint_Paul/4bf9fe_Permit_20Parking_20Area_2019_20Petition_20draft_20and_20map.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/2025-01/Area%2023%20RPP%20map%20-%20petition%20to%20add%20block.pdf",
+    "text": "Area 23 expansion",
+    "file": "data/city_files/Saint_Paul/6763f4_Area_2023_20RPP_20map_20-_20petition_20to_20add_20block.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/SRF%20Consulting%20Saint%20Paul%20Residential%20Parking%20Permit%20Review%20June%202017.pdf",
+    "text": "Saint Paul Residential Parking Permit Review",
+    "file": "data/city_files/Saint_Paul/6d7363_SRF_20Consulting_20Saint_20Paul_20Residential_20Parking_20Permit_20Rev",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Residential%20Permit%20Parking%20Recommendations%20Overall%20and%20Area%20Specific%20-%204.27.18.pdf",
+    "text": "Review of each existing permit parking area",
+    "file": "data/city_files/Saint_Paul/5d780a_Residential_20Permit_20Parking_20Recommendations_20Overall_20and_20Are",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/2025-10/Residential%20ADA%20Parking%20Zone%20Application%202025.pdf",
+    "text": "Residential Disability Parking Zone Application",
+    "file": "data/city_files/Saint_Paul/2543ec_Residential_20ADA_20Parking_20Zone_20Application_202025.pdf",
+    "rows": 25,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2002.pdf",
+    "text": "2 Map",
+    "file": "data/city_files/Saint_Paul/846962_Area_2002.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2003%202018.pdf",
+    "text": "3 Map",
+    "file": "data/city_files/Saint_Paul/118b8a_Area_2003_202018.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpaul.gov/sites/default/files/Media%20Root/Public%20Works/Area%2006%202018_0.pdf",
+    "text": "6 Map",
+    "file": "data/city_files/Saint_Paul/ff3328_Area_2006_202018_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://stpaul.maps.arcgis.com/apps/MinimalGallery/index.html?appid=8163a199754d4367b85ee928026b58a1": "Find a Map",
+   "https://stpaul.maps.arcgis.com/apps/instant/basic/index.html?appid=f21feb368c5e40519087b23c3ac191af": "Map of Parks",
+   "https://stpaul.maps.arcgis.com/apps/webappviewer/index.html?id=95361716a5434600b04e07e301c2373e": "Parking Garage Map",
+   "https://stpaul.maps.arcgis.com/apps/webappviewer/index.html?id=366c2a909d3348ecab4a01ed5ede22b8": "bike",
+   "https://stpaul.maps.arcgis.com/apps/instant/lookup/index.html?appid=5b3d5ace287e428596cf18fd025fa6fb": "Find My Collection Day Enter your address in our interactive map to find your collection day.",
+   "https://stpaul.maps.arcgis.com/apps/webappviewer/index.html?id=55b963a97919474fb2b9b8940bffe5cf": "SEE ALL PROJECTS",
+   "https://eproperty.logis.org/stpaul/assessments/search": "Tax Assessment Lookup",
+   "https://stpaul.maps.arcgis.com/apps/instant/basic/index.html?appid=ef6d385a47e14c37b6608c4179a40c43": "map",
+   "https://stpaul.maps.arcgis.com/apps/webappviewer/index.html?id=55b963a97919474fb2b9b8940bffe5cf&find=pw2021evspot": "Project Map",
+   "https://stpaul.maps.arcgis.com/apps/webappviewer/index.html?id=55b963a97919474fb2b9b8940bffe5cf&find=pw2024evgoldlinechargers": "Project Map",
+   "https://stpaul.maps.arcgis.com/apps/webappviewer/index.html?id=55b963a97919474fb2b9b8940bffe5cf&find=pw2024eveastsideexpansion": "Project Map",
+   "https://stpaul.maps.arcgis.com/apps/webappviewer/index.html?id=4a57ff36319a477ca3e5d91bf76661b2": "Right of Way Project and Inspector Map",
+   "https://stpaul.maps.arcgis.com/apps/instant/lookup/index.html?appid=54a2a48754914121b92b62be20558d40": "Full size interactive map",
+   "https://stpaul.maps.arcgis.com/apps/instant/sidebar/index.html?appid=2bc79c429fe7485ab3b4bfe07b5d5006": "Certificate of Occupancy Map",
+   "http://stpaul.maps.arcgis.com/apps/webappviewer/index.html?id=9e043e8d3f5741d5ad9bf4229e0cc61f": "click here.",
+   "https://stpaul.maps.arcgis.com/apps/webappviewer/index.html?id=4553c0b3450e4145a31d597ae7ff6d76": "Click Here to View Project Map",
+   "https://stpaul.maps.arcgis.com/apps/CrowdsourceReporter/index.html?a&appid=74b6b90e185642d7984b97ab7e9e2f5b": "click here",
+   "https://storymaps.arcgis.com/stories/ab2f0ae06c1b48bab28e3b00929d8874": "Interactive StoryMap"
+  }
+ },
+ "Port St. Lucie": {
+  "files": [
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/parks-amp-recreation/documents/benefit-districts-area-map.pdf",
+    "text": "Benefit Districts (PDF, 2MB)",
+    "file": "data/city_files/Port_St_Lucie/250658_benefit-districts-area-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-a-copsl-assessment-areas-oct-25.pdf",
+    "text": "Map A: Assessment Areas (PDF, 180KB)",
+    "file": "data/city_files/Port_St_Lucie/39bc4c_map-a-copsl-assessment-areas-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-b-copsl-benefit-districts-oct-25.pdf",
+    "text": "Map B: Benefit Districts (PDF, 173KB)",
+    "file": "data/city_files/Port_St_Lucie/79b116_map-b-copsl-benefit-districts-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-c-copsl-msa-oct-25.pdf",
+    "text": "Map C: Mobility Study Area & Network (PDF, 181KB)",
+    "file": "data/city_files/Port_St_Lucie/36111a_map-c-copsl-msa-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-d-copsl-2050-origin-destination-evaluation-oct-25.pdf",
+    "text": "Map D: 2050 Origin Destination Evaluation (PDF, 133KB)",
+    "file": "data/city_files/Port_St_Lucie/578289_map-d-copsl-2050-origin-destination-evaluation-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-e-copsl-roadway-corridors-stp-oct-25.pdf",
+    "text": "Map E: Roadway Corridors - Short Term Plan (PDF, 260KB)",
+    "file": "data/city_files/Port_St_Lucie/53e541_map-e-copsl-roadway-corridors-stp-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-f-copsl-roadway-corridors-mtp-oct-25.pdf",
+    "text": "Map F: Roadway Corridors - Mid Term Plan (PDF, 257KB)",
+    "file": "data/city_files/Port_St_Lucie/6886b5_map-f-copsl-roadway-corridors-mtp-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-g-copsl-roadway-corridors-ltp-oct-25.pdf",
+    "text": "Map G: Roadway Corridors - Long Term Plan (PDF, 237KB)",
+    "file": "data/city_files/Port_St_Lucie/fb95fb_map-g-copsl-roadway-corridors-ltp-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-h-copsl-roadway-corridor-studies-plan-oct-25.pdf",
+    "text": "Map H: Roadway Corridor Studies (PDF, 244KB)",
+    "file": "data/city_files/Port_St_Lucie/4df2c9_map-h-copsl-roadway-corridor-studies-plan-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-j-copsl-developer-access-roads-oct-25.pdf",
+    "text": "Map J: Developer Access Roads & Developer Improvements (PDF, 267KB)",
+    "file": "data/city_files/Port_St_Lucie/077194_map-j-copsl-developer-access-roads-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-k-copsl-intersections-plan-oct-25.pdf",
+    "text": "Map K: Intersections Plan (PDF, 250KB)",
+    "file": "data/city_files/Port_St_Lucie/d497f1_map-k-copsl-intersections-plan-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-l-copsl-multimodal-plan-oct-25.pdf",
+    "text": "Map L: Multimodal Plan (PDF, 254KB)",
+    "file": "data/city_files/Port_St_Lucie/182900_map-l-copsl-multimodal-plan-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-m-copsl-transit-plan-oct-25.pdf",
+    "text": "Map M: Transit Circulator Plan (PDF, 252KB)",
+    "file": "data/city_files/Port_St_Lucie/67a06a_map-m-copsl-transit-plan-oct-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/october-2025-meeting/map-n-psl-vmt-by-area-oct-25.pdf",
+    "text": "Map N: Vehicle Miles of Travel By Area (PDF, 2MB)",
+    "file": "data/city_files/Port_St_Lucie/08fe36_map-n-psl-vmt-by-area-oct-25.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-corridors-developer-roads-map.pdf",
+    "text": "Corridors Developer Roads Map (PDF, 993KB)",
+    "file": "data/city_files/Port_St_Lucie/035d83_aug-25-corridors-developer-roads-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-intersections-map.pdf",
+    "text": "Intersections Map (PDF, 984KB)",
+    "file": "data/city_files/Port_St_Lucie/67228c_aug-25-intersections-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-roadway-corridors-long-term-map.pdf",
+    "text": "Long Term Corridors Map (PDF, 924KB)",
+    "file": "data/city_files/Port_St_Lucie/308783_aug-25-roadway-corridors-long-term-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-roadway-corridors-mid-term-map.pdf",
+    "text": "Mid-Term Corridors Map (PDF, 1018KB)",
+    "file": "data/city_files/Port_St_Lucie/a40915_aug-25-roadway-corridors-mid-term-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-multimodal-map.pdf",
+    "text": "Multimodal Map (PDF, 1MB)",
+    "file": "data/city_files/Port_St_Lucie/db1467_aug-25-multimodal-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-multimodal-network-map.pdf",
+    "text": "Multimodal Network Map (PDF, 1MB)",
+    "file": "data/city_files/Port_St_Lucie/ecd08b_aug-25-multimodal-network-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-roadway-corridors-short-term-map.pdf",
+    "text": "Short Term Corridor Map (PDF, 1016KB)",
+    "file": "data/city_files/Port_St_Lucie/69a90b_aug-25-roadway-corridors-short-term-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-transit-map.pdf",
+    "text": "Transit Map (PDF, 1MB)",
+    "file": "data/city_files/Port_St_Lucie/a0597c_aug-25-transit-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/planning-zoning/documents/mobility/august-25-special-city-council-meeting/aug-25-transit-plan.pdf",
+    "text": "Transit Plan (PDF, 44KB)",
+    "file": "data/city_files/Port_St_Lucie/afae92_aug-25-transit-plan.pdf",
+    "rows": 29,
+    "bike_rows": 24
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/3/departments/planning-zoning/documents/mobility/august-04-city-council-workshop/corridors-developer-roads-map.pdf",
+    "text": "Corridors Developer Roads Map (PDF, 871KB)",
+    "file": "data/city_files/Port_St_Lucie/bd279e_corridors-developer-roads-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/planning-zoning/documents/mobility/august-04-city-council-workshop/transit-plan.pdf",
+    "text": "Transit Plan (PDF, 995KB)",
+    "file": "data/city_files/Port_St_Lucie/7e2bda_transit-plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/parks-amp-recreation/documents/mobility-plan-maps-example.pdf",
+    "text": "See example of Mobility Plan with Intersections (PDF, 4MB)",
+    "file": "data/city_files/Port_St_Lucie/2ecf8d_mobility-plan-maps-example.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/6/departments/public-works/documents/ten-year-resurfacing-plan-map-2026-2036.pdf",
+    "text": "Repaving Master Plan (PDF, 2MB)",
+    "file": "data/city_files/Port_St_Lucie/1a5892_ten-year-resurfacing-plan-map-2026-2036.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/public-works/documents/sidewalks-construction-sch.pdf",
+    "text": "Sidewalk Master Plan Map (PDF, 2MB)",
+    "file": "data/city_files/Port_St_Lucie/40b5fb_sidewalks-construction-sch.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/public-works/documents/city-of-port-st-lucie-ada.pdf",
+    "text": "ADA Transition Plan (PDF, 39KB)",
+    "file": "data/city_files/Port_St_Lucie/4c0ef3_city-of-port-st-lucie-ada.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/parks-amp-recreation/documents/mccarty-ranch-brochure.pdf",
+    "text": "Trail Map & Brochure (PDF, 1MB)",
+    "file": "data/city_files/Port_St_Lucie/91dec9_mccarty-ranch-brochure.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/information-technology/documents/wifi-map-2026.pdf",
+    "text": "View Wi-Fi Coverage Map (PDF, 16MB)",
+    "file": "data/city_files/Port_St_Lucie/47403e_wifi-map-2026.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/parks-amp-recreation/torino-regional-park-desig.pdf",
+    "text": "View larger map (PDF, 169KB)",
+    "file": "data/city_files/Port_St_Lucie/00874b_torino-regional-park-desig.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/public-works/documents/psl-blvd-south-project-map.pdf",
+    "text": "(PDF, 391KB)",
+    "file": "data/city_files/Port_St_Lucie/fd19d8_psl-blvd-south-project-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/public-works/documents/seg-3.pdf",
+    "text": "Segment 3 Map (PDF, 791KB)",
+    "file": "data/city_files/Port_St_Lucie/3fe482_seg-3.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/public-works/documents/seg-21.pdf",
+    "text": "Segment 2.1 Map (PDF, 713KB)",
+    "file": "data/city_files/Port_St_Lucie/f1430d_seg-21.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/public-works/documents/seg-22.pdf",
+    "text": "Segment 2.2 map (PDF, 761KB)",
+    "file": "data/city_files/Port_St_Lucie/c7458c_seg-22.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/public-works/documents/seg-1.pdf",
+    "text": "Segment 1 Map (PDF, 865KB)",
+    "file": "data/city_files/Port_St_Lucie/c2fc65_seg-1.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/2/departments/public-works/documents/swale-liner-proposed-work-areas.pdf",
+    "text": "Download PDF Map (PDF, 1MB)",
+    "file": "data/city_files/Port_St_Lucie/821097_swale-liner-proposed-work-areas.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/solid-waste/documents/recycle-right-sign.pdf",
+    "text": "Recycle plastic, metal, glass and paper (PDF, 733KB)",
+    "file": "data/city_files/Port_St_Lucie/c2b6be_recycle-right-sign.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofpsl.com/files/assets/public/v/1/departments/solid-waste/documents/recycling-in-the-bathroom.pdf",
+    "text": "Bathroom Recycling (PDF, 580KB)",
+    "file": "data/city_files/Port_St_Lucie/828582_recycling-in-the-bathroom.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=d837c1c81e3640c585be748ae7a1ebf6": "Find your pickup day",
+   "https://www.cityofpsl.com/Government/Your-City-Government/Departments/Information-Technology/Geographic-Information-Systems-GIS/Open-Data-GIS-Portal": "Open Data GIS Portal",
+   "https://pslgis.maps.arcgis.com/home/index.html": "View ArcGIS Portal",
+   "https://opendata-pslgis.hub.arcgis.com/": "View Open Data GIS Portal",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=225d3d08d6b54070af5c270862adbebc": "Main City Map",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=46176c2b749344159020d597a4b767e3": "City Demographics",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=5c69fa830869439897208022990e7b2c": "City Mapping Tool",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=397887d028a04aaa91e901feca2e6da1": "Council District Finder",
+   "https://pslgis.maps.arcgis.com/apps/dashboards/e9cc18c9b5ec463fac673f6c6f69fec9": "",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=34fdddb78a17441aaa8b134b74200d9d": "Building Permits",
+   "https://survey123.arcgis.com/share/ee543801d8d143ecb89d70d6250d6a2f?portalUrl=https://pslgis.maps.arcgis.com": "Fence Diagram Tool",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=6f81095d57b04f8f873a11ed1532728f": "Community Residential Homes Mapper",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=ba5cb535853048569ddd0e92ac23dc5b": "Parks & Recreation",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=55f56c6ac628420ea978bc857e1938a4": "Police District Zones",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=c5beea7979f048a4ad08f2b73284a9eb": "Driveway Diagram",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=a7958cc1076a43df9e82455752a6eaa5": "Elevation Benchmarks",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=c37a7fc1d7a14fb783eff84fb47fd710": "Flood Zones",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=c41b950763bd42d0980a0d9ce1a1b839": "Keep Port St. Lucie Beautiful Distance Map",
+   "https://pslgis.maps.arcgis.com/apps/opsdashboard/index.html": "Rainfall Dashboard",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=cf0717b7d0394af8844ca7c69b960f6f": "Refuse/Waste Collection Schedule",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=12975b128fe64279bdd526ebf58bc506": "Road Function Classification",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=3dd2b05999e144e9be64539c97cc8d5c": "Interactive Sidewalk Master Plan Map",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=3fa29aea609f470f9d73c158bd0ff68a": "Street Closures",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=07716b714a0d4976825e51ba79dd9f37": "Streets Map",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=426eb7cf52b14d60b93310b592b59c82": "Vacant Lot Property Map",
+   "https://experience.arcgis.com/experience/b782227d88a94d44a1f5c16a92f6de59": "Draft Mobility Plan Interactive Map (July 2025)",
+   "https://pslgis.maps.arcgis.com/apps/webappviewer/index.html?id=6f62f2ba8029429f97d7912a4a7cf2bc": "Pavement Condition Index Interactive Map",
+   "https://experience.arcgis.com/experience/d67a7ce7fef143718a98e834ae74cf54/page/Road-Improvements": "Explore PSLinProgress.com",
+   "https://pslgis.maps.arcgis.com/apps/dashboards/1af324c8bc434d68bd4ef1478a33b419": "GIS Map with road closure information",
+   "https://experience.arcgis.com/experience/4697fd4c2e674220a3afb4a3cd960b14/page/Parks": "Explore PSLinProgress to learn more"
+  }
+ },
+ "Elk Grove": {
+  "files": [],
+  "portals": {}
+ },
+ "Tandil Partido": {
+  "files": [
+   {
+    "url": "https://mapa.tandil.gov.ar/resources/visor.pdf",
+    "text": "Acceder",
+    "file": "data/city_files/Tandil_Partido/9441fb_visor.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mapa.tandil.gov.ar/resources/geoservicios.pdf",
+    "text": "Acceder",
+    "file": "data/city_files/Tandil_Partido/f5dea1_geoservicios.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mapa.tandil.gov.ar/resources/google_my_maps.pdf",
+    "text": "Acceder",
+    "file": "data/city_files/Tandil_Partido/77c296_google_my_maps.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mapa.tandil.gov.ar/resources/metadatos.pdf",
+    "text": "Acceder",
+    "file": "data/city_files/Tandil_Partido/5a8d81_metadatos.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Topeka": {
+  "files": [],
+  "portals": {}
+ },
+ "High Point": {
+  "files": [
+   {
+    "url": "https://gisweb10.highpointnc.gov/clearinghouse/shapes/hp_busroutes.zip",
+    "text": "hp_busroutes.zip",
+    "file": "data/city_files/High_Point/6328e5_hp_busroutes.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisweb10.highpointnc.gov/clearinghouse/shapes/hp_parking.zip",
+    "text": "hp_parking.zip",
+    "file": "data/city_files/High_Point/e1314d_hp_parking.zip",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://nc.maps.arcgis.com/apps/webappviewer/index.html?id=79ea671ebdcc45639f0860257d5f5ed7": "",
+   "http://highpoint.maps.arcgis.com/apps/webappviewer/index.html?id=3624e0d723be4f629c65c2cf388de597": "Snow Route Web Map",
+   "http://webgis.co.davidson.nc.us/": "Davidson County",
+   "https://gis.randolphcountync.gov/randolphjs/": "Randolph County",
+   "https://gcgis.guilfordcountync.gov/portal/apps/experiencebuilder/experience/?id=307afa0427ff446c87664e1bee85d089": "Interactive Precinct Maps"
+  }
+ },
+ "Suruç": {
+  "files": [],
+  "portals": {
+   "https://suruc.bel.tr/opendata": "Belediye Encümeni",
+   "https://suruc.bel.tr/open-data": "Belediye Encümeni"
+  }
+ },
+ "Livonia": {
+  "files": [],
+  "portals": {
+   "http://livoniacity.maps.arcgis.com/home/index.html": "Map Gallery",
+   "https://livoniacity.maps.arcgis.com/apps/Solutions/s2.html?appid=177c59e446584158a482d62b097f836d": "parks greenspace",
+   "https://storymaps.arcgis.com/stories/5bb41f72c90a4cd0b48da068e95a5382": "We Love Trees StoryMap",
+   "https://experience.arcgis.com/experience/801da6ed22454b2c9bdc20ee1b047664": "Lead Assessment Booking"
+  }
+ },
+ "Newton": {
+  "files": [],
+  "portals": {}
+ },
+ "Cranston": {
+  "files": [
+   {
+    "url": "https://cranstonri.gov/_resources/common/userfiles/file/Public Works/City of Cranston -Budlong Pool E106 v1-1.pdf",
+    "text": "Advisory Council on Historic Preservation Electronic Submittal Form",
+    "file": "data/city_files/Cranston/356c17_City_of_Cranston_-Budlong_Pool_E106_v1-1.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cranstonri.gov/_resources/common/userfiles/file/Public Works/Recycle together R I Sheet.pdf",
+    "text": "Recycle Together RI",
+    "file": "data/city_files/Cranston/b743b5_Recycle_together_R_I_Sheet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cranstonri.gov/_resources/common/userfiles/file/HDC/1363_Narragansett_Historic_District_Application_Rear_Windows.pdf",
+    "text": "1363 Narragansett Blvd.",
+    "file": "data/city_files/Cranston/5c8316_1363_Narragansett_Historic_District_Application_Rear_Windows.pdf",
+    "rows": 50,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://cranstonri.gov/_resources/common/userfiles/file/Public Works/City of Cranston -Budlong Pool E106 v1-1.pdf",
+    "text": "Advisory Council on Historic Preservation Electronic Submittal Form",
+    "file": "data/city_files/Cranston/a6c00c_City_of_Cranston_-Budlong_Pool_E106_v1-1.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cranstonri.gov/_resources/common/userfiles/file/Public Works/City of Cranston -Budlong Pool E106 v1-1.pdf",
+    "text": "Advisory Council on Historic Preservation Electronic Submittal Form",
+    "file": "data/city_files/Cranston/1adf9f_City_of_Cranston_-Budlong_Pool_E106_v1-1.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/232916810b8e4f7f86c777f3a7a4a0a0/": "GIS MAPPING",
+   "https://cranston.maps.arcgis.com/apps/webappviewer/index.html?id=603b95d5ee9c40f48cf45639c134c9e1": "GIS Web Mapping Tool"
+  }
+ },
+ "Southfield": {
+  "files": [
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2025-06/VotingPrecincts_11x17%20-%2008.05.25.pdf",
+    "text": "Voting Precinct Map (PDF)",
+    "file": "data/city_files/Southfield/2d789a_VotingPrecincts_11x17_20-_2008.05.25.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/bikeroutesmap.pdf",
+    "text": "Bike Routes Map",
+    "file": "data/city_files/Southfield/9485d7_bikeroutesmap.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/streetmap_letter_bw.pdf",
+    "text": "City Map - Black & White",
+    "file": "data/city_files/Southfield/198db8_streetmap_letter_bw.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/streetmap_letter_color.pdf",
+    "text": "City Map Color",
+    "file": "data/city_files/Southfield/61cae2_streetmap_letter_color.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/citywidesadmap.pdf",
+    "text": "Citywide S.A.D. Map",
+    "file": "data/city_files/Southfield/c78d24_citywidesadmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/municipalcampus.pdf",
+    "text": "Civic Center Campus Map",
+    "file": "data/city_files/Southfield/3347a5_municipalcampus.pdf",
+    "rows": 29,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/streetmap_letter_primaryroadjurisdictions.pdf",
+    "text": "Primary Road Map Jurisdictions",
+    "file": "data/city_files/Southfield/fadb6b_streetmap_letter_primaryroadjurisdictions.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/sfld_areamap.pdf",
+    "text": "Southfield Location Map",
+    "file": "data/city_files/Southfield/2392ba_sfld_areamap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2022-10/PrimaryRoadJurisdictions.pdf",
+    "text": "City of Southfield Primary Road Jurisdiction Map (PDF)",
+    "file": "data/city_files/Southfield/08f795_PrimaryRoadJurisdictions.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2026-01/CompletedRoadProjects_ArchD_Jan2026.pdf",
+    "text": "Completed Road Construction Projects Map (PDF)",
+    "file": "data/city_files/Southfield/dee5c3_CompletedRoadProjects_ArchD_Jan2026.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2026-03/CurrentAndUpcomingProjects_ArchD_Mar2026.pdf",
+    "text": "Current and Future Road Construction Projects Map (PDF)",
+    "file": "data/city_files/Southfield/afbe1b_CurrentAndUpcomingProjects_ArchD_Mar2026.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2019-07/cc_nature_trails.pdf",
+    "text": "Civic Center Nature Trails (PDF)",
+    "file": "data/city_files/Southfield/2ef462_cc_nature_trails.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2019-07/bikeroutesmap.pdf",
+    "text": "Southfield Bike Route Map (PDF)",
+    "file": "data/city_files/Southfield/344cdb_bikeroutesmap.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/2020-08/map_sign52x26.pdf",
+    "text": "Carpenter Lake Nature Preserve Trail Map (PDF)",
+    "file": "data/city_files/Southfield/70c77f_map_sign52x26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/print-revenue-chart.pdf",
+    "text": "Printed GIS Data/Map Fees (pdf)",
+    "file": "data/city_files/Southfield/8d9805_print-revenue-chart.pdf",
+    "rows": 56,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/digrevenuechart.pdf",
+    "text": "Digital GIS Data/Map Fees (pdf)",
+    "file": "data/city_files/Southfield/d191c8_digrevenuechart.pdf",
+    "rows": 45,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/dte-oakland-county-southfield-2021-tree-trimmimg-maintenance-program-map_0.pdf",
+    "text": "DTE Energy 2021 Tree Trimming Schedule and Map (PDF)",
+    "file": "data/city_files/Southfield/ad0906_dte-oakland-county-southfield-2021-tree-trimmimg-maintenance-program-m",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2019-08/map-7-2-future-land-use_0.pdf",
+    "text": "Future Land Use Map (PDF)",
+    "file": "data/city_files/Southfield/8fdc1e_map-7-2-future-land-use_0.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2026-07/SouthfieldZoning_ArchE_July2026_v01_0.pdf",
+    "text": "Zoning Map (PDF)",
+    "file": "data/city_files/Southfield/81ae5e_SouthfieldZoning_ArchE_July2026_v01_0.pdf",
+    "rows": 51,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rrrasoc.org/wp-content/uploads/2024/02/RRRASOC-2024-Recycling-Guidelines-Compressed.pdf",
+    "text": "RRRASOC Recycling Guidelines",
+    "file": "data/city_files/Southfield/851ec7_RRRASOC-2024-Recycling-Guidelines-Compressed.pdf",
+    "rows": 6,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/2026-07/Southfield%20SWMP%202023%20-%20Update%2011-25.pdf",
+    "text": "Southfield MS4 Stormwater Discharge Application (PDF)",
+    "file": "data/city_files/Southfield/67ae86_Southfield_20SWMP_202023_20-_20Update_2011-25.pdf",
+    "rows": 80,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2019-07/ordinance-no.-1696-overnight-parking.pdf",
+    "text": "Ordinance No. 1696 - Overnight parking (PDF)",
+    "file": "data/city_files/Southfield/8f633e_ordinance-no.-1696-overnight-parking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/inline-files/northwestern-hwy-bike-path-ribbon-cutting-invite-07-26-2017.pdf",
+    "text": "Northwestern Highway Bike Pathway Ribbon Cutting Invite (PDF)",
+    "file": "data/city_files/Southfield/3964e1_northwestern-hwy-bike-path-ribbon-cutting-invite-07-26-2017.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/inline-files/garage-sale-ordinance-2011.pdf",
+    "text": "https://www.cityofsouthfield.com/sites/default/files/inline-files/garage-sale-ordinance-2011.pdf",
+    "file": "data/city_files/Southfield/05a695_garage-sale-ordinance-2011.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/inline-files/national-garage-sale-day-2021.pdf",
+    "text": "City of Southfield Garage Sale Week Sale Listings (PDF)",
+    "file": "data/city_files/Southfield/3f1106_national-garage-sale-day-2021.pdf",
+    "rows": 30,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2022-08/National%20Garage%20Sale%202022.pdf",
+    "text": "2022 Garage Sale Week Listings",
+    "file": "data/city_files/Southfield/798ebc_National_20Garage_20Sale_202022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2023-08/2023%20National%20Garage%20Sale%20Week%20Sales%20List_1.pdf",
+    "text": "2023 National Garage Sale Week Sales List",
+    "file": "data/city_files/Southfield/64634f_2023_20National_20Garage_20Sale_20Week_20Sales_20List_1.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/inline-files/PublicNotice_MapAttachments1-2_2023-8-10_Draft.pdf",
+    "text": "Tamarack Restoration Project FEMA Floodplain Map (PDF)",
+    "file": "data/city_files/Southfield/6010f3_PublicNotice_MapAttachments1-2_2023-8-10_Draft.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/inline-files/garage-sale-ordinance-2011_0.pdf",
+    "text": "https://www.cityofsouthfield.com/sites/default/files/inline-files/garage-sale-ordinance-2011_0.pdf",
+    "file": "data/city_files/Southfield/8f0f14_garage-sale-ordinance-2011_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Waukesha": {
+  "files": [],
+  "portals": {}
+ },
+ "Eagan": {
+  "files": [
+   {
+    "url": "https://ci.eagan.mn.us/images/Streets/ParksTrailsSidewalks_Website.pdf",
+    "text": "",
+    "file": "data/city_files/Eagan/f50f55_ParksTrailsSidewalks_Website.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.eagan.mn.us/images/Streets/Trail%20Plow%20Routes_25_26_18x18.pdf",
+    "text": "2025-2026 Trail Plow Routes.",
+    "file": "data/city_files/Eagan/3e57fe_Trail_20Plow_20Routes_25_26_18x18.pdf",
+    "rows": 22,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://ci.eagan.mn.us/images/Streets/WinterTrailMaint%20Policy4-17-18.pdf",
+    "text": "Winter Maintenance of Sidewalks and Trailways Policy",
+    "file": "data/city_files/Eagan/3f7ee8_WinterTrailMaint_20Policy4-17-18.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.eagan.mn.us/images/PublicWorks/Eng/PetitionNoParkingSigns.pdf",
+    "text": "No Parking Signs",
+    "file": "data/city_files/Eagan/976d0d_PetitionNoParkingSigns.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.eagan.mn.us/images/PublicWorks/Eng/PetitionWinterParkingSchedule.pdf",
+    "text": "Winter Parking",
+    "file": "data/city_files/Eagan/4aa995_PetitionWinterParkingSchedule.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.eagan.mn.us/images/Streets/PetitionForm-TrailSidewalk-SnowRemoval2018.pdf",
+    "text": "Trail / Sidewalk Snow Removal",
+    "file": "data/city_files/Eagan/23b2ef_PetitionForm-TrailSidewalk-SnowRemoval2018.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.eagan.mn.us/images/Parks/ParkFeatures/AED_%20CityMap.pdf",
+    "text": "Parks with AED Units",
+    "file": "data/city_files/Eagan/b90fbc_AED__20CityMap.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://ci.eagan.mn.us/images/PublicWorks/Streets/CountyandStateRoads.pdf",
+    "text": "View a map",
+    "file": "data/city_files/Eagan/37b53a_CountyandStateRoads.pdf",
+    "rows": 22,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.eagan.mn.us/images/PublicWorks/Streets/Sweeping_priority_map.pdf",
+    "text": "Water Quality Sweeping Map",
+    "file": "data/city_files/Eagan/1c3f9d_Sweeping_priority_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cityofeagan.maps.arcgis.com/home/index.html": "Maps",
+   "https://www.gis.lcc.mn.gov/iMaps/districts/": "Who Represents Me?",
+   "https://storymaps.arcgis.com/stories/f1181b9dbf0241639263369bcdcd227b": ""
+  }
+ },
+ "Lorain": {
+  "files": [
+   {
+    "url": "https://static1.squarespace.com/static/59ef5b028c56a84a63338fb7/t/5c111bc1b8a045162a0a17ca/1544625090946/Black+River+Website+Map+Page+05-08-18.pdf",
+    "text": "Metroparks Black River Trail Map",
+    "file": "data/city_files/Lorain/b41d98_Black_River_Website_Map_Page_05-08-18.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.cityoflorain.org/portal/apps/sites/": "City of Lorain Zoning Map",
+   "https://gis.cityoflorain.org/portal/apps/webappviewer/index.html?id=686b670d95844bb5a0e9ff03480f0e92&extent=-9142167.4669%252C5075053.3329%252C-9138441.1617%252C5077152.9626%252C102100": "Fairless Dr, Goble Dr, Palm Ave, Andover Ave, Tacoma Ave, and Camden Ave surrounding Southview Middle School and Helen S",
+   "https://gis.cityoflorain.org/portal/apps/webappviewer/index.html?id=686b670d95844bb5a0e9ff03480f0e92&extent=-9146306.1139%252C5076274.2353%252C-9145384.6895%252C5076771.076%252C102100": "East 39th Street and Clifton Ave."
+  }
+ },
+ "Pontiac": {
+  "files": [],
+  "portals": {}
+ },
+ "Palm Beach Gardens": {
+  "files": [],
+  "portals": {
+   "https://pbgfl.maps.arcgis.com/apps/webappviewer/index.html?id=db037e47c025433e9d588cd5602574f9": "Residency Check",
+   "https://gis.pbgfl.com/portal/apps/webappviewer/index.html?id=a5fea9315c09429d8185fba25814d45b": "Am I a Palm Beach Gardens resident?",
+   "https://pbcgov.maps.arcgis.com/apps/instant/lookup/index.html?appid=0e9444352bef47d8aaff6a2a2b4cf3ae¢er=-80.1116%3B26.926&level=14&hiddenLayers=190db71fabd-layer-11%3B190dfac51e5-layer-10": "FEMA Flood Zone Lookup",
+   "https://gis.pbgfl.com/portal/apps/experiencebuilder/experience/?id=86e99fd7174341cf930f31cddc821ea4": "Project Location Map",
+   "https://gis.pbgfl.com/portal/apps/experiencebuilder/experience/?id=e2ef16d83adb411585aeadc5ab82b966": ""
+  }
+ },
+ "Union": {
+  "files": [],
+  "portals": {}
+ },
+ "Bonita Springs": {
+  "files": [],
+  "portals": {
+   "https://bonitacd.maps.arcgis.com/apps/webappviewer/index.html?id=ffa4f91183d14f3385e773fb743a8663": "City Council District Map (opens in a new tab)",
+   "https://bonita.maps.arcgis.com/apps/webappviewer/index.html?appid=ba176a0f72074d818afc812478f157f0": "Street Light Maintenance Map",
+   "https://bonita.maps.arcgis.com/apps/webappviewer/index.html?appid=f888015f5814440d83f379d5b5fffaa7": "Street Maintenance Map",
+   "https://bonita.maps.arcgis.com/apps/webappviewer/index.html?id=54aecef2badd4b50bbf46432e4865405": "",
+   "https://bonita.maps.arcgis.com/apps/webappviewer/index.html?id=1d8e1a03ad6c44d08e4e28cfb371b9d9": "Maps"
+  }
+ },
+ "Enid": {
+  "files": [
+   {
+    "url": "https://enid.org/files/assets/public/v/1/parks-and-rec/documents/bike-route-2013.pdf",
+    "text": "Bike Route Map (PDF, 629KB)",
+    "file": "data/city_files/Enid/2101ec_bike-route-2013.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://enid.org/files/assets/public/v/1/parks-and-rec/documents/enid-recreational-trail.pdf",
+    "text": "Pedestrian Trail Map (PDF, 954KB)",
+    "file": "data/city_files/Enid/673500_enid-recreational-trail.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://enid.org/files/assets/public/v/2/engineering/documents/quadrant-map.pdf",
+    "text": "Quadrant Map (PDF, 688KB)",
+    "file": "data/city_files/Enid/7f3187_quadrant-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://enid.org/files/content/public/v/12/services/maps/truck-route.pdf",
+    "text": "Truck Routes Map (PDF, 656KB)",
+    "file": "data/city_files/Enid/cab35d_truck-route.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://enid.org/files/assets/public/v/1/engineering/documents/truck-route.pdf",
+    "text": "Truck Routes (PDF, 656KB)",
+    "file": "data/city_files/Enid/e43477_truck-route.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/1/parks-and-rec/documents/enid-trails-master-plan.pdf",
+    "text": "Read the Enid Trails Master Plan (PDF, 3MB) →",
+    "file": "data/city_files/Enid/4a00d5_enid-trails-master-plan.pdf",
+    "rows": 70,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/1/parks-and-rec/documents/enid-recreational-trail.pdf",
+    "text": "Pedestrian Trail Map (PDF)",
+    "file": "data/city_files/Enid/15d576_enid-recreational-trail.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/1/parks-and-rec/documents/bike-route-2013.pdf",
+    "text": "Bike Route Map (PDF)",
+    "file": "data/city_files/Enid/a59aaf_bike-route-2013.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/1/epta/documents/enid-transit-ada-policy.pdf",
+    "text": "Enid Public Transportation Authority Americans with Disabilities Act (ADA) Policy (PDF, 236KB)",
+    "file": "data/city_files/Enid/248838_enid-transit-ada-policy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/2/engineering/documents/quadrant-map.pdf",
+    "text": "Quadrant Map (PDF, 688KB)",
+    "file": "data/city_files/Enid/7a5a7b_quadrant-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.enid.org/files/content/public/v/12/services/maps/truck-route.pdf",
+    "text": "Truck Routes Map (PDF, 656KB)",
+    "file": "data/city_files/Enid/469232_truck-route.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/1/engineering/documents/truck-route.pdf",
+    "text": "Truck Routes (PDF, 656KB)",
+    "file": "data/city_files/Enid/f754bb_truck-route.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chisholmtrailmpo.org/_files/ugd/8bbb3d_4b871c325e6f4b7592bf701b138259cf.pdf",
+    "text": "Boundary Map",
+    "file": "data/city_files/Enid/0c3ce7_8bbb3d_4b871c325e6f4b7592bf701b138259cf.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/1/engineering/documents/residential-sidewalk-repair.pdf",
+    "text": "Sidewalk Partnership Program Application Process Outline (PDF, 34KB)",
+    "file": "data/city_files/Enid/1af1f8_residential-sidewalk-repair.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/1/engineering/documents/residential-sidewalk-repair-application.pdf",
+    "text": "Sidewalk Partnership Program Application (PDF, 153KB)",
+    "file": "data/city_files/Enid/0fc174_residential-sidewalk-repair-application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/1/engineering/documents/commercial-sidewalk-repair.pdf",
+    "text": "Commercial Sidewalk Repair Partnership Program Application (PDF, 280KB)",
+    "file": "data/city_files/Enid/475544_commercial-sidewalk-repair.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/1/project-thunderbird/records/maps/n-protest-final.pdf",
+    "text": "North Campus protest map (PDF, 471KB)",
+    "file": "data/city_files/Enid/4c2b70_n-protest-final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/1/project-thunderbird/records/maps/west-i3-protest-map.pdf",
+    "text": "West Campus, A to I-3, protest map (PDF, 663KB)",
+    "file": "data/city_files/Enid/d3239a_west-i3-protest-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.enid.org/files/assets/public/v/1/project-thunderbird/records/maps/west-i2-protest-map.pdf",
+    "text": "West Campus, A to I-2, protest map (PDF, 614KB)",
+    "file": "data/city_files/Enid/d39f0d_west-i2-protest-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.enid.org/portal/apps/webappviewer/index.html?id=bd54ec3c5b9a49cd82f8233f300d5ab1&extent=-10911270.3352%2C4339268.1258%2C-10868733.1289%2C4367664.4818%2C102100": "Wards & Floodplain Map",
+   "https://plan-ctmpo.hub.arcgis.com/": "Explore the CTMPO Planning Hub",
+   "https://experience.arcgis.com/experience/c4458f694388486aa0209116dd871ea6": "View the Safety Results Map"
+  }
+ },
+ "Everett": {
+  "files": [
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2021/10/METER-STICKERS.pdf",
+    "text": "Learn more",
+    "file": "data/city_files/Everett/395682_METER-STICKERS.pdf",
+    "rows": 20,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2025/10/Parking-Ticket-Appeal-Form-2026-1.pdf",
+    "text": "download the form",
+    "file": "data/city_files/Everett/e3b343_Parking-Ticket-Appeal-Form-2026-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2023/09/24-23-IFB-Auto-Repairs.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/a1904a_24-23-IFB-Auto-Repairs.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2023/10/24-23-Auto-Repairs-Bid-Results.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/aea62c_24-23-Auto-Repairs-Bid-Results.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2023/09/24-24-IFB-Heavy-Duty-Freightliner-Truck-Repairs.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/d15d40_24-24-IFB-Heavy-Duty-Freightliner-Truck-Repairs.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2023/10/24-24-Truck-Freightliner-Repairs-Bid-Results.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/ddef89_24-24-Truck-Freightliner-Repairs-Bid-Results.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2024/08/25-04-DPW-IR-Garage-IFB-Final.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/7ec9e8_25-04-DPW-IR-Garage-IFB-Final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2024/10/25-02-RFP-Parking-Collections-Software-2024.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/83301f_25-02-RFP-Parking-Collections-Software-2024.pdf",
+    "rows": 109,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2024/09/25-02-RFP-Parking-Collections-Software-2024-6.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/7f00b6_25-02-RFP-Parking-Collections-Software-2024-6.pdf",
+    "rows": 109,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2024/09/25-12-IFB-Pierce-Truck-Repairs.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/67f8db_25-12-IFB-Pierce-Truck-Repairs.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2024/05/24-55-On-Call-Overhead-Door-Repairs.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/24bf91_24-55-On-Call-Overhead-Door-Repairs.pdf",
+    "rows": 231,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/05/PLD-26-100-–-Northern-Strand-Trail-Connection-Wellington-Connector-Addendum-No.-1.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/7a93b3_PLD-26-100-_-Northern-Strand-Trail-Connection-Wellington-Connector-Add",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/07/WAT-27-09-On-call-Water-Sewer-Stormwater-Repairs-Final-Front-End-Manual.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/f21a7b_WAT-27-09-On-call-Water-Sewer-Stormwater-Repairs-Final-Front-End-Manua",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/08/WAT-27-09-On-Call-Water-Sewer-Stormwater-Repairs_BID-TAB_7-30-2026.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/01d7bd_WAT-27-09-On-Call-Water-Sewer-Stormwater-Repairs_BID-TAB_7-30-2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/08/WAT-27-09-On-Call-Water-Sewer-Stormwater-Repairs_WEBSITE-AWARD-NOTICE_8-3-2026.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/b9536a_WAT-27-09-On-Call-Water-Sewer-Stormwater-Repairs_WEBSITE-AWARD-NOTICE_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/08/WAT-27-18-On-call-Water-Sewer-Stormwater-Repairs-Final-Front-End-Manual.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/d94f75_WAT-27-18-On-call-Water-Sewer-Stormwater-Repairs-Final-Front-End-Manua",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/09/Contract-Award-Template-On-Call-Water-Sewer-Stormwater-Repairs.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/ad2215_Contract-Award-Template-On-Call-Water-Sewer-Stormwater-Repairs.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/09/Bid-Tabulation-Template-WAT-27-18-On-Call-Water-Sewer-Stormwater-Repairs.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/e450a2_Bid-Tabulation-Template-WAT-27-18-On-Call-Water-Sewer-Stormwater-Repai",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/09/MUN-27-41-548-Broadway-Mechanical-Repairs-Addendum-1.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/431737_MUN-27-41-548-Broadway-Mechanical-Repairs-Addendum-1.pdf",
+    "rows": 2165,
+    "bike_rows": 55
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/10/MUN-27-41-548-Broadway-Mechanical-Repairs_ADDEND-2.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/7bbc4e_MUN-27-41-548-Broadway-Mechanical-Repairs_ADDEND-2.pdf",
+    "rows": 693,
+    "bike_rows": 26
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/10/MUN-27-41-548-Broadway-Mechanical-Repairs_ADDEND-3.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/a7fecc_MUN-27-41-548-Broadway-Mechanical-Repairs_ADDEND-3.pdf",
+    "rows": 356,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/10/Bid-Tab_City-Website_MUN-27-41-548-Broadway-Mechanical-Repairs_10-15-2026.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/853389_Bid-Tab_City-Website_MUN-27-41-548-Broadway-Mechanical-Repairs_10-15-2",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/10/Contract-Award-City-Website_MUN-27-41-548-Broadway-Mechanical-Repairs_10-15-2026.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/392238_Contract-Award-City-Website_MUN-27-41-548-Broadway-Mechanical-Repairs_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2022/03/03-24-2022-Historical-Commission.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/8c6787_03-24-2022-Historical-Commission.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2022/04/04-28-2022-Historical-Commission.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/6da55f_04-28-2022-Historical-Commission.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2022/05/05-19-2022-Historical-Commission.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/50c104_05-19-2022-Historical-Commission.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2022/06/06-16-2022-Historical-Commission.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/fcf44f_06-16-2022-Historical-Commission.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2022/06/09-22-2022-Historical-Commission.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/6959c9_09-22-2022-Historical-Commission.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2023/05/05-11-2023-Historical-Commission.pdf",
+    "text": "Download",
+    "file": "data/city_files/Everett/fce212_05-11-2023-Historical-Commission.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2025/02/03-10-2025-Historical-Commission-Agenda.pdf",
+    "text": "Click here to download Agenda PDF",
+    "file": "data/city_files/Everett/15e732_03-10-2025-Historical-Commission-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2025/03/04-07-2025-Historical-Commission-Agenda.pdf",
+    "text": "Click here to download Agenda PDF",
+    "file": "data/city_files/Everett/1dc105_04-07-2025-Historical-Commission-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2025/04/05-05-2025-Historical-Commission-Agenda.pdf",
+    "text": "Click here to download Agenda PDF",
+    "file": "data/city_files/Everett/b5bdfb_05-05-2025-Historical-Commission-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2025/05/06-02-2025-Historical-Commission-Agenda.pdf",
+    "text": "Click here to download Agenda PDF",
+    "file": "data/city_files/Everett/cd84e1_06-02-2025-Historical-Commission-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2025/09/09-08-2025-Historical-Commission-Agenda.pdf",
+    "text": "Click here to download Agenda PDF",
+    "file": "data/city_files/Everett/385c38_09-08-2025-Historical-Commission-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2025/09/10-22-2025-Historical-Commission-Agenda.pdf",
+    "text": "Click here to download Agenda PDF",
+    "file": "data/city_files/Everett/207607_10-22-2025-Historical-Commission-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/02/03-02-2026-Historical-Commission-Agenda.pdf",
+    "text": "Click here to download Agenda PDF",
+    "file": "data/city_files/Everett/c96130_03-02-2026-Historical-Commission-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/03/04-06-2026-Historical-Commission-Agenda.pdf",
+    "text": "Click here to download Agenda PDF",
+    "file": "data/city_files/Everett/08f6ae_04-06-2026-Historical-Commission-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/05/06-01-2026-Historical-Commission-Agenda.pdf",
+    "text": "Click here to download Agenda PDF",
+    "file": "data/city_files/Everett/b064a1_06-01-2026-Historical-Commission-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofeverett.com/wp-content/uploads/2026/09/10-26-2026-Historical-Commission-Agenda.pdf",
+    "text": "Click here to download Agenda PDF",
+    "file": "data/city_files/Everett/dffa67_10-26-2026-Historical-Commission-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.census.gov/cedsci/all?q=everett,%20ma": "Census Information",
+   "https://lead-service-line-inventory-ewate.hub.arcgis.com/": "Residential Lead Service Line Lookup"
+  }
+ },
+ "Oro Valley": {
+  "files": [
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/parks/naranja-park-map-2026.pdf",
+    "text": "Naranja Park Trails Map (PDF, 5MB)",
+    "file": "data/city_files/Oro_Valley/f2104b_naranja-park-map-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/parks/westlambertlanetrailmap.pdf",
+    "text": "Panorama Trails Trail Map (PDF, 1MB)",
+    "file": "data/city_files/Oro_Valley/aa3c58_westlambertlanetrailmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/parks/pusch-ridge-map012920.pdf",
+    "text": "Pusch Ridge Map (PDF, 598KB)",
+    "file": "data/city_files/Oro_Valley/b3a15e_pusch-ridge-map012920.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/sunshuttle-dial-a-ride-policy-brochure-2020.pdf",
+    "text": "Passenger Policies and Information (PDF, 656KB)",
+    "file": "data/city_files/Oro_Valley/0b6ed4_sunshuttle-dial-a-ride-policy-brochure-2020.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/3/documents/public-works/transit-services/policies-and-ada/benefits-of-using-passegner-portal.pdf",
+    "text": "benefits of using the Passenger Portal. (PDF, 199KB)",
+    "file": "data/city_files/Oro_Valley/5552ac_benefits-of-using-passegner-portal.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/2/documents/public-works/transit-services/policies-and-ada/general-public-service-area-23.pdf",
+    "text": "brochure (PDF, 115KB)",
+    "file": "data/city_files/Oro_Valley/3047b2_general-public-service-area-23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/ada-service-area-23.pdf",
+    "text": "brochure. (PDF, 128KB)",
+    "file": "data/city_files/Oro_Valley/72d60f_ada-service-area-23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/senior-service-area-23_2.pdf",
+    "text": "brochure (PDF, 123KB)",
+    "file": "data/city_files/Oro_Valley/a4db82_senior-service-area-23_2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/general-public-service-area-nov21.pdf",
+    "text": "brochure (PDF, 278KB)",
+    "file": "data/city_files/Oro_Valley/fc965a_general-public-service-area-nov21.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/oro-valley-dar-map-nov-2021.pdf",
+    "text": "brochure (PDF, 843KB)",
+    "file": "data/city_files/Oro_Valley/a73aa9_oro-valley-dar-map-nov-2021.pdf",
+    "rows": 35,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/senior-service-area-with-explination.pdf",
+    "text": "brochure (PDF, 521KB)",
+    "file": "data/city_files/Oro_Valley/0dccfe_senior-service-area-with-explination.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/recreation/oro-valley-bike-map-2022a.pdf",
+    "text": "Oro Valley Bike Map 2022 (PDF, 3MB)",
+    "file": "data/city_files/Oro_Valley/98f6a9_oro-valley-bike-map-2022a.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/content/public/v/37/government/departments/parks-and-recreation/biking-in-oro-valley/ov-bikeways-map-brochure-2023.pdf",
+    "text": "Oro Valley Bikeways Map Brochure 2023 (PDF, 3MB)",
+    "file": "data/city_files/Oro_Valley/765b7e_ov-bikeways-map-brochure-2023.pdf",
+    "rows": 16,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/recreation/bigwashtrailmap.pdf",
+    "text": "Big Wash Trail Map (PDF, 661KB)",
+    "file": "data/city_files/Oro_Valley/72f1f6_bigwashtrailmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/recreation/loop-map-september-2024-pdf.pdf",
+    "text": "Pima County Loop Map 2024 (PDF, 394KB)",
+    "file": "data/city_files/Oro_Valley/8f2864_loop-map-september-2024-pdf.pdf",
+    "rows": 50,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/documents/parks-and-recreation/recreation/oro-valley-pedestrian-bike-plan-1999.pdf",
+    "text": "Oro Valley Bicycle & Pedestrian Plan 1999 (PDF, 13MB)",
+    "file": "data/city_files/Oro_Valley/a87c23_oro-valley-pedestrian-bike-plan-1999.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/recreation/oro-valley-bike-pedestrian-update-2010.pdf",
+    "text": "Oro Valley Bicycle & Pedestrian Update 2010",
+    "file": "data/city_files/Oro_Valley/eb7603_oro-valley-bike-pedestrian-update-2010.pdf",
+    "rows": 26,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/documents/parks-and-recreation/parks/final-vistoso-trails-community-input-report.pdf",
+    "text": "https://www.orovalleyaz.gov/files/assets/public/documents/parks-and-recreation/parks/final-vistoso-trails-community-inpu",
+    "file": "data/city_files/Oro_Valley/f7834c_final-vistoso-trails-community-input-report.pdf",
+    "rows": 159,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/parks/honey-bee-canyon-trails-2026-update.pdf",
+    "text": "Honey Bee Canyon Park Trails (PDF, 5MB)",
+    "file": "data/city_files/Oro_Valley/ad8452_honey-bee-canyon-trails-2026-update.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/title-vi-plan-2025.pdf",
+    "text": "Title VI Plan (PDF, 1MB)",
+    "file": "data/city_files/Oro_Valley/e86c24_title-vi-plan-2025.pdf",
+    "rows": 98,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/title-vi-poster.pdf",
+    "text": "Title VI Poster (PDF, 512KB)",
+    "file": "data/city_files/Oro_Valley/dc3360_title-vi-poster.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/non-discrimination-notice-to-the-public-english.pdf",
+    "text": "Non Discrimination Notice to Public - English (PDF, 673KB)",
+    "file": "data/city_files/Oro_Valley/0b4ed7_non-discrimination-notice-to-the-public-english.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/non-discrimination-notice-to-the-public-spanish.pdf",
+    "text": "Aviso de no discriminación al público - Español (PDF, 571KB)",
+    "file": "data/city_files/Oro_Valley/75f8af_non-discrimination-notice-to-the-public-spanish.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/2/documents/public-works/transit-services/policies-and-ada/non-discrimination-complaint-procedures.pdf",
+    "text": "Non Discrimination Complaint Procedures (PDF, 137KB)",
+    "file": "data/city_files/Oro_Valley/0bc55f_non-discrimination-complaint-procedures.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/2/documents/public-works/transit-services/policies-and-ada/discrimination-complaint-form-english.pdf",
+    "text": "Non Discrimination Complaint Form - English (PDF, 216KB)",
+    "file": "data/city_files/Oro_Valley/874dcf_discrimination-complaint-form-english.pdf",
+    "rows": 33,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/3/documents/public-works/transit-services/policies-and-ada/discrimination-complaint-form-spanish.pdf",
+    "text": "Formulario de queja por no discriminación - español (PDF, 124KB)",
+    "file": "data/city_files/Oro_Valley/fc6bfd_discrimination-complaint-form-spanish.pdf",
+    "rows": 33,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/oro-valley-dial-ride-ada-policies.pdf",
+    "text": "Oro Valley Dial-a-Ride ADA Policies (PDF, 192KB)",
+    "file": "data/city_files/Oro_Valley/fd58a8_oro-valley-dial-ride-ada-policies.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/ov-rider-policies.pdf",
+    "text": "Oro Valley Rider Policies (PDF, 1MB)",
+    "file": "data/city_files/Oro_Valley/4d9e20_ov-rider-policies.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/public-works/transit-services/policies-and-ada/reasonable-modification-policy_1.pdf",
+    "text": "Reasonable Modification Policy (PDF, 360KB)",
+    "file": "data/city_files/Oro_Valley/ac3112_reasonable-modification-policy_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/parks/4890_vistoso-trails-mp-report-5-1-23.pdf",
+    "text": "Vistoso Trails Nature Preserve Master Plan - Parks and Recreation Advisory Board, May 9 2023 Presentation (PDF, 18MB)",
+    "file": "data/city_files/Oro_Valley/1dcc37_4890_vistoso-trails-mp-report-5-1-23.pdf",
+    "rows": 398,
+    "bike_rows": 54
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/parks/vistoso-trails-master-plan-update-presentation-february-20.pdf",
+    "text": "Vistoso Trails Master Plan Update - Parks and Recreation Advisory Board Presentation February 20, 2024 (PDF, 1MB)",
+    "file": "data/city_files/Oro_Valley/2b6ce4_vistoso-trails-master-plan-update-presentation-february-20.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/parks/3.20.2024-consultant-presentation.pdf",
+    "text": "Vistoso Trails Nature Preserve Master Plan – Town Council Presentation, March 20, 2024 (PDF, 8MB)",
+    "file": "data/city_files/Oro_Valley/c7a7ac_3.20.2024-consultant-presentation.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/parks/4.17.2024-consultant-presentation.pdf",
+    "text": "Vistoso Trails Nature Preserve Master Plan – Town Council Presentation, April 17, 2024 (PDF, 4MB)",
+    "file": "data/city_files/Oro_Valley/e2a608_4.17.2024-consultant-presentation.pdf",
+    "rows": 63,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/parks/2024-final-master-plan-vtnp.pdf",
+    "text": "Final Vistoso Trails Nature Preserve Master Plan – April 2024 (PDF, 16MB)",
+    "file": "data/city_files/Oro_Valley/e3f7c4_2024-final-master-plan-vtnp.pdf",
+    "rows": 421,
+    "bike_rows": 72
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/parks/vistoso-trails-nature-preserve-park-rules-1.pdf",
+    "text": "Click here (PDF, 66KB)",
+    "file": "data/city_files/Oro_Valley/d74157_vistoso-trails-nature-preserve-park-rules-1.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/recreation/vistosotrailsnaturepreservewildfireassessment_tovletter_250127_pdf.pdf",
+    "text": "Wildfire Risk Assessment (PDF, 12MB)",
+    "file": "data/city_files/Oro_Valley/025d5e_vistosotrailsnaturepreservewildfireassessment_tovletter_250127_pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/parks/vtnp-public-access-points-map.pdf",
+    "text": "Public Access Points Map (PDF, 5MB)",
+    "file": "data/city_files/Oro_Valley/d920d8_vtnp-public-access-points-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/parks-and-recreation/naranja-park-skate-park-and-pump-track.pdf",
+    "text": "Naranja Park Skate Park and Pump Track information (PDF, 139KB)",
+    "file": "data/city_files/Oro_Valley/b357d0_naranja-park-skate-park-and-pump-track.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/fee38e87229b4d5987e30643d5f82e99/": "OV Projects",
+   "https://townoforovalley.maps.arcgis.com/apps/instant/sidebar/index.html?appid=3b533566736e4015bd83c3eacd1d85b3": "Street Maintenance Responsibilities Map",
+   "https://experience.arcgis.com/experience/66f0ef6b90b54b6395fbb4a9bce2c312": "Loop Interactive Map",
+   "https://experience.arcgis.com/experience/894435556f904a60ac45c5ede84c235e": "Map of Existing and Proposed Trails and Paths",
+   "https://townoforovalley.maps.arcgis.com/apps/instant/basic/index.html?appid=55bdcab02db54abb8266a0ade389454f": "Oro Valley Bicycling Interactive Map",
+   "https://townoforovalley.maps.arcgis.com/apps/instant/media/index.html?appid=0bf2f37efe7a401395758b23283bba3e": "Oro Valley Parks, Trails & Bikeways Interactive Map",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.arcgis.com%2Fexperience%2F894435556f904a60ac45c5ede84c235e&data=05%7C02%7Ckpacker%40orovalleyaz.gov%7C09541817bbee4d8b971408dec8d3c628%7Ce9bbd9468f5a48af87f60a2ac899fa9a%7C0%7C0%7C639169009070361769%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=YIh3CU3gD5BuNB6gvEkM9K3xTD5o%2F%2FCz8xlMA8haOSM%3D&reserved=0": "OVTrailsConnect Web Maps",
+   "https://survey123.arcgis.com/share/dcec0f8964f04f55857ae84ef1f5cd4f": "clicking here",
+   "https://survey123.arcgis.com/share/b2ba375ee6b64ef4addc4f42dbe38b20": "Click here",
+   "https://experience.arcgis.com/experience/cc3106a33886430bbdc54fd812c69f58/page/page_21/": "Adopt-A-Road",
+   "https://experience.arcgis.com/experience/cc3106a33886430bbdc54fd812c69f58/page/page_23/": "Adopt-A-Trail",
+   "https://townoforovalley.maps.arcgis.com/apps/instant/sidebar/index.html?appid=dc112c93a1044b9b87b5d5359ab5fee9": "Surface treatment history",
+   "https://townoforovalley.maps.arcgis.com/apps/MapTools/index.html?appid=c8005945c4cb4d22a02c1856495ba6e2": "Street Maintenance Responsibility Map",
+   "https://experience.arcgis.com/experience/003ddde4f21e4901853e8edd9a14bb24": "Floodplain Inquiry Map",
+   "https://survey123.arcgis.com/share/792aec9f22a04a618b9807e27a4c04f2": "Town of Oro Valley Parking Survey",
+   "https://experience.arcgis.com/experience/894435556f904a60ac45c5ede84c235e/page/Page?views=Multi-Use-Paths": "Multi-Use Path Map",
+   "https://experience.arcgis.com/experience/894435556f904a60ac45c5ede84c235e/page/Page?views=The-Chuck-Huckelberry-Loop": "Loop Map",
+   "https://experience.arcgis.com/experience/894435556f904a60ac45c5ede84c235e/page/Page?views=Vistoso-Trails-Nature-Preserve-%28VTNP%29": "Vistoso Trails Nature Preserve Map",
+   "https://experience.arcgis.com/experience/894435556f904a60ac45c5ede84c235e/page/Page?views=Unpaved-Trails": "Unpaved Trails Map",
+   "https://experience.arcgis.com/experience/cc3106a33886430bbdc54fd812c69f58/": "click here.",
+   "https://survey123.arcgis.com/share/f109f6ab09ab46638e0cc23c9192648f": "https://survey123.arcgis.com/share/f109f6ab09ab46638e0cc23c9192648f",
+   "https://storymaps.arcgis.com/stories/fba6eea4fb9748bcb71a70ec0d0ecd74": "Conditional Use Permit and Development Plan for High Desert Garage Condos, East Corner of Rancho Vistoso Blvd. and Moore",
+   "https://townoforovalley.maps.arcgis.com/apps/instant/sidebar/index.html?appid=28959d5748c24480b7f7b3f16426e822": "Annexation History",
+   "https://townoforovalley.maps.arcgis.com/apps/instant/sidebar/index.html?appid=c3911981d5794a80aada86d81e37fd60": "Economic Expansion Zones",
+   "https://townoforovalley.maps.arcgis.com/apps/instant/sidebar/index.html?appid=273dcd5509c3495db27ea56265b92e85": "Emergency and General Services",
+   "https://townoforovalley.maps.arcgis.com/apps/instant/sidebar/index.html?appid=1f4408182e694eb39fc4bab1779ed14d": "Environmentally Sensitive Lands",
+   "https://townoforovalley.maps.arcgis.com/apps/instant/lookup/index.html?appid=a0fe90270348483d8a362061799af82c": "Find My Zoning",
+   "https://townoforovalley.maps.arcgis.com/apps/instant/sidebar/index.html?appid=f411ebf261b74a82ab6766f3f65bd456": "General Plan Land Use Map",
+   "https://townoforovalley.maps.arcgis.com/apps/instant/sidebar/index.html?appid=2e0cc809687c4911b5fb281a6e4d939a": "Lighting Zones",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftownoforovalley.maps.arcgis.com%2Fapps%2Finstant%2Fsidebar%2Findex.html%3Fappid%3D2fe959e0a7584375875ef325e5ceb52e&data=05%7C02%7Cngoing%40orovalleyaz.gov%7C7a69173e580046c659f708dc978f8949%7Ce9bbd9468f5a48af87f60a2ac899fa9a%7C0%7C0%7C638551889955323432%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=l%2BCKJtTDvxHX6NtaNMiwHVBbHSTWz2cEwk4K3Bo9S8Q%3D&reserved=0": "Oro Valley Street Map"
+  }
+ },
+ "Pehuajó Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Moline": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/0edee68998f4447ba7a2079e066ea205": "Resident Info Map",
+   "https://storymaps.arcgis.com/stories/1b97cfaa67d14208a8d71912e2280bd4": "Downtown Moline Heritage Walking Tour",
+   "https://storymaps.arcgis.com/stories/46fcdf9ae9654fec9c53da593631c342": "Environmental Resiliency Plan",
+   "https://storymaps.arcgis.com/stories/f1b531eb07a04cb3bdc91229c4385edd": "1: Historic Post Office",
+   "https://storymaps.arcgis.com/stories/57dfd9cb284744f7b971b83fa72ee690": "2: Caxton Block",
+   "https://storymaps.arcgis.com/stories/17ce9fb45776470eba53cfb63b2f1fb1": "3: Deere Block",
+   "https://storymaps.arcgis.com/stories/293458825f9e408a934a12945e2b75fa": "4: Washington Square",
+   "https://storymaps.arcgis.com/stories/85af5d1a3b164564bfe740eaa1aa9e9e": "5: Barrymore Theatre",
+   "https://storymaps.arcgis.com/stories/4096cd2954e846f49c88cc6ec0645b56": "7: Manufacturers Hotel",
+   "https://storymaps.arcgis.com/stories/2548700c9bbc4608b4aa231310418c4e": "8: 3rd Ave View From 16th St",
+   "https://storymaps.arcgis.com/stories/224afae15c3d43d78a86e9b5ad90b7b3": "9: Skinner Block",
+   "https://storymaps.arcgis.com/stories/537f589c3b4f41ac9e29668e8e7cbecf": "10: 3rd Ave View East From Skinner Block",
+   "https://storymaps.arcgis.com/stories/cc16fe647082487d9badb3c923281ef7": "12: Moline, City of Mills Mural",
+   "https://storymaps.arcgis.com/stories/4d0b1e2c29294052928ad3adde871855": "13: Daily Dispatch Building",
+   "https://storymaps.arcgis.com/stories/d4c780fb00b44e88af2171720ff333d0": "14: Model Printers",
+   "https://storymaps.arcgis.com/stories/e9a8a2f707d74c9197026077022b3144": "15: Historic Block",
+   "https://storymaps.arcgis.com/stories/4fcda081a3de4bb0a08a096bf58407b6": "16: Heart of America",
+   "https://storymaps.arcgis.com/stories/bf2afb7b3e174e4ab056b4ec9787ebcc": "17: Early Factory District",
+   "https://storymaps.arcgis.com/stories/b443f52292d043c78aac3ef8f5ad9ca9": "17B: Deere & Company Office",
+   "https://storymaps.arcgis.com/stories/03523913f8864b4596a5fbee2b0e2b1c": "18: Aerial Portrait of Riverfront Factories",
+   "https://storymaps.arcgis.com/stories/9688464ba56841ee99fc529db19d5c1e": "19: Spirit of Place Sculpture",
+   "https://storymaps.arcgis.com/stories/199aec45610046df8478d2a8fb536a58": "20: Moline Plow Company / JD Pavilion",
+   "https://storymaps.arcgis.com/stories/45e070e8d03f431d86824b53367050c2": "21: Moline Plow Company Overpass",
+   "https://storymaps.arcgis.com/stories/7c7787fcce4040d8bdddd47bd46ee87e": "22: John Deere Factory Demolition",
+   "https://storymaps.arcgis.com/stories/e527d1ff027445f1a89fb84a953894a5": "23: Moline's Downtown Commercial Historic District",
+   "https://storymaps.arcgis.com/stories/e01eab3e2c234b3d9c6865fe34a3c5e1": "24: 1917 Warehouse Becomes Element By Westin Hotel",
+   "https://storymaps.arcgis.com/stories/9fdec97f1c0b400bb59a1cc6b2229542": "25: Shallberg & Howard Flats",
+   "https://storymaps.arcgis.com/stories/2833b7272cec490ab023573da1749a41": "26: OSTLUNDS BUICK GARAGE",
+   "https://storymaps.arcgis.com/stories/2ffcdc3e0a244118927f4e1160078d2e": "27: Historic 5th Ave (19th Century)",
+   "https://storymaps.arcgis.com/stories/5c05b653395b4e0c8e499c8218b84fc5": "28: Birdsell Buildings"
+  }
+ },
+ "Grove City": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/0fe4adbe17e64a3e8c58b01462b0a8f7/page/Page?views=administrative-review": "Ongoing Development",
+   "https://experience.arcgis.com/experience/0fe4adbe17e64a3e8c58b01462b0a8f7/page/Page?views=City-Council": "Ongoing Development",
+   "https://grovecityoh.maps.arcgis.com/apps/instant/lookup/index.html?appid=493d61205da7463eaa992b2f9ed589b5": "Ward Map",
+   "https://experience.arcgis.com/experience/524a5258fcb54a9bb2b0e73aa980f2ac/": "Grove City Interactive Zoning Map",
+   "https://grovecityoh.maps.arcgis.com/apps/webappviewer/index.html?id=0f4437747fc3448088e551817668e4ab": "",
+   "https://grovecityoh.maps.arcgis.com/apps/webappviewer/index.html?id=1487ad17232f4299b1137b3dccdf893f": "",
+   "https://grovecityoh.maps.arcgis.com/apps/webappviewer/index.html?id=8f00168bc9e54252876cece8296bc3bf": "",
+   "https://grovecityoh.maps.arcgis.com/apps/webappviewer/index.html?id=6089bc24a5224e7287b428270f6dd3a5": "",
+   "https://experience.arcgis.com/experience/5782ce73111e4865b76a6b3e64a6e89a": "",
+   "https://experience.arcgis.com/experience/305e405e44a14f67ac2c919203541b35": "Grove City Web GIS",
+   "https://grovecityoh.maps.arcgis.com/apps/MapSeries/index.html?appid=ce88db56421e492b809377d3f0ed93ac": "Find a Park near me",
+   "https://experience.arcgis.com/experience/f0e72fec55254fc8a14504e356ace324": "Find A Park Near Me"
+  }
+ },
+ "Olive Branch": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/12a113c414634f7491ff5e0842e4e035": "Find my Garbage Route",
+   "https://experience.arcgis.com/experience/46f593119c1c41d7b6404203921647e4": "Blocker Cemetery Map",
+   "https://experience.arcgis.com/experience/de1f32cf90cb432f9a47a9c2baf1ce9a": "",
+   "https://experience.arcgis.com/experience/fc0f3d57f7de4c86bf35a0d5dd3b6e60": "Medical Cannabis",
+   "https://obms.maps.arcgis.com/apps/webappviewer/index.html?id=9baf22eab80e42f6bab85cf65eac534f": "Utility Service Map",
+   "https://obms.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=6acabdf6bfde4f90b5072007a977e695": "Memorial Stones in CIty Park",
+   "https://experience.arcgis.com/experience/57025f377c5c4e3095f8d6cd3edc1b0e": "Rubbish Route",
+   "https://obms.maps.arcgis.com/apps/webappviewer/index.html?id=eb931cc9c9f44f1090e5c30886bddacb": "Road closure map",
+   "https://obms.maps.arcgis.com/apps/dashboards/4564c960127e423f846ada0a29968cb0": "City Parks Map",
+   "https://obms.maps.arcgis.com/apps/webappviewer/index.html?id=18363e19b8d64356a15c52eb7a109256": "Find My Ward Map",
+   "https://obms.maps.arcgis.com/apps/webappviewer/index.html?id=d432eb595432456193482b0338292c45": "Voluntary Annexation",
+   "https://dcms-gis.maps.arcgis.com/apps/webappviewer/index.html?id=ee2757887447432085317c42f7932af9": "Find My Polling Place",
+   "https://obms.maps.arcgis.com/apps/webappviewer/index.html?id=173ebee4f4804cce899fe4297cfd9cec": "Find My Rubbish Day",
+   "https://obms.maps.arcgis.com/apps/webappviewer/index.html?id=9eee1b9b517b4836a0f5edbe3374a05e": "Find My Garbage Route",
+   "https://desotocounty-dcms-gis.hub.arcgis.com/": "GIS Hub",
+   "https://experience.arcgis.com/experience/bb2d799fa36a4f039f5c28b3be9017dd": "Interactive Maps",
+   "http://midsouthgis.org/": "MAGIC",
+   "http://www.gis.ms.gov": "Mississippi Geospatial Clearinghouse",
+   "https://dcms-gis.maps.arcgis.com/apps/webappviewer/index.html?id=7ee7335236fe4c968635e083c143f480": "Voting Information"
+  }
+ },
+ "Rosenberg": {
+  "files": [],
+  "portals": {}
+ },
+ "Gobernador Virasoro": {
+  "files": [],
+  "portals": {}
+ },
+ "West Hollywood": {
+  "files": [],
+  "portals": {}
+ },
+ "Del Rio": {
+  "files": [],
+  "portals": {}
+ },
+ "Carmel": {
+  "files": [],
+  "portals": {}
+ },
+ "Leandro N. Alem": {
+  "files": [],
+  "portals": {}
+ },
+ "Tewksbury": {
+  "files": [
+   {
+    "url": "https://www.mapsonline.net/peopleforms/htdocs/MapsOnline%20Help.pdf",
+    "text": "Help",
+    "file": "data/city_files/Tewksbury/f6521a_MapsOnline_20Help.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://maps.massgis.state.ma.us/PRI_EST_HAB/viewer.htm": "Priority and Estimated Habitat Map",
+   "http://gis.vgsi.com/tewksburyma/": "Assessor's Online Database",
+   "http://www.peoplegis.com": "PeopleGIS"
+  }
+ },
+ "Bella Vista": {
+  "files": [],
+  "portals": {}
+ },
+ "Texarkana": {
+  "files": [],
+  "portals": {}
+ },
+ "Mavelikara Municipality": {
+  "files": [],
+  "portals": {}
+ }
+}
