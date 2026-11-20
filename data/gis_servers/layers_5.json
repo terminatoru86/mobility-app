@@ -1,23 +1,16 @@
 [
 {
-"city": "Asheville",
-"url": "https://gis.ashevillenc.gov/server/rest/services/PublicWorks/PublicWorksBikeRacks/MapServer/1",
-"name": "Bike Racks",
-"count": 75,
-"cat": "racks"
+"city": "Edmond",
+"url": "https://gis.edmondok.gov/arcgis/rest/services/ArcadiaLake/ArcadiaLakeTrails/MapServer/1",
+"name": "Bicycle Repair Station",
+"count": 2,
+"cat": "repair"
 },
 {
-"city": "Asheville",
-"url": "https://gis.ashevillenc.gov/server/rest/services/PublicWorks/PWStreetsAssets/FeatureServer/11",
-"name": "Bike Racks",
-"count": 75,
-"cat": "racks"
-},
-{
-"city": "Asheville",
-"url": "https://gis.ashevillenc.gov/server/rest/services/PublicWorks/PWStreetsAssets/MapServer/11",
-"name": "Bike Racks",
-"count": 75,
-"cat": "racks"
+"city": "Broomfield County",
+"url": "https://gis.drcog.org/server/rest/services/RDC/BICYCLE_SHARE_STATIONS/MapServer/0",
+"name": "BICYCLE_SHARE_STATIONS",
+"count": 67,
+"cat": "share"
 }
 ]

@@ -1,9 +1,8 @@
 # GIS servers, shard 5/20
 
-Sites: 104 · layers: 3 · points: 225
+Sites: 36 · layers: 2 · points: 69
 
 | Place | Layer | Category | Points | URL |
 |---|---|---|---|---|
-| Asheville | Bike Racks | racks | 75 | https://gis.ashevillenc.gov/server/rest/services/PublicWorks/PublicWorksBikeRacks/MapServer/1 |
-| Asheville | Bike Racks | racks | 75 | https://gis.ashevillenc.gov/server/rest/services/PublicWorks/PWStreetsAssets/FeatureServer/11 |
-| Asheville | Bike Racks | racks | 75 | https://gis.ashevillenc.gov/server/rest/services/PublicWorks/PWStreetsAssets/MapServer/11 |
+| Edmond | Bicycle Repair Station | repair | 2 | https://gis.edmondok.gov/arcgis/rest/services/ArcadiaLake/ArcadiaLakeTrails/MapServer/1 |
+| Broomfield County | BICYCLE_SHARE_STATIONS | share | 67 | https://gis.drcog.org/server/rest/services/RDC/BICYCLE_SHARE_STATIONS/MapServer/0 |
