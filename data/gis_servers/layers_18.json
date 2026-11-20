@@ -1,114 +1,16 @@
 [
 {
-"city": "Salt Lake City UT",
-"url": "https://maps.slc.gov/server/rest/services/Hosted/Bike_Racks/FeatureServer/0",
-"name": "Bike Racks",
-"count": 1411,
-"cat": "racks"
-},
-{
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxBikeShare/MapServer/0",
-"name": "Bike Share Locations",
-"count": 59,
+"city": "capital:indy.gov",
+"url": "https://gis.indy.gov/server/rest/services/OpenData/OpenData_Transportation/MapServer/2",
+"name": "Bike Share Stations",
+"count": 57,
 "cat": "share"
 },
 {
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxBikeShare/MapServer/1",
-"name": "Bike Share Current Status",
-"count": 59,
-"cat": "share"
-},
-{
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxMyNeighborhoodWm/MapServer/6",
-"name": "Bike Share Locations",
-"count": 59,
-"cat": "share"
-},
-{
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxMyNeighborhoodWm/MapServer/7",
-"name": "Bike Share Current Status",
-"count": 59,
-"cat": "share"
-},
-{
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxVisionZWm/MapServer/2",
-"name": "Bicyclists Killed",
-"count": 0,
+"city": "Pasadena",
+"url": "https://gis.lja.com/arcgis/rest/services/Hosted/Westpark_Near_Term_Projects/FeatureServer/48",
+"name": "Walk & Bike",
+"count": 24,
 "cat": "racks"
-},
-{
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxVisionZWm/MapServer/4",
-"name": "Bicyclists Other",
-"count": 67,
-"cat": "racks"
-},
-{
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxVisionZWm/MapServer/12",
-"name": "Bicyclists Killed 2018",
-"count": 0,
-"cat": "racks"
-},
-{
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxVisionZWm/MapServer/14",
-"name": "Bicyclists Other 2018",
-"count": 18,
-"cat": "racks"
-},
-{
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxVisionZWm/MapServer/22",
-"name": "Bicyclists Killed 2017",
-"count": 0,
-"cat": "racks"
-},
-{
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxVisionZWm/MapServer/24",
-"name": "Bicyclists Other 2017",
-"count": 12,
-"cat": "racks"
-},
-{
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxVisionZWm/MapServer/32",
-"name": "Bicyclists Killed 2016",
-"count": 0,
-"cat": "racks"
-},
-{
-"city": "Alexandria",
-"url": "https://maps.alexandriava.gov/arcgis/rest/services/alxVisionZWm/MapServer/34",
-"name": "Bicyclists Other 2016",
-"count": 12,
-"cat": "racks"
-},
-{
-"city": "Bloomington",
-"url": "https://gis.bloomingtonmn.gov/arcgis/rest/services/Parks/Bloomington_GCGIS_Inventory_Non_Editing/FeatureServer/4",
-"name": "Bicycle Racks",
-"count": 76,
-"cat": "racks"
-},
-{
-"city": "Bloomington",
-"url": "https://gis.bloomingtonmn.gov/arcgis/rest/services/Parks/Bloomington_GCGIS_Inventory_Non_Editing/MapServer/4",
-"name": "Bicycle Racks",
-"count": 76,
-"cat": "racks"
-},
-{
-"city": "Edmond",
-"url": "https://gis.edmondok.gov/arcgis/rest/services/ArcadiaLake/ArcadiaLakeTrails/MapServer/1",
-"name": "Bicycle Repair Station",
-"count": 2,
-"cat": "repair"
 }
 ]
