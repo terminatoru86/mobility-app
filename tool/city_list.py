@@ -9,7 +9,7 @@ SELECT ?c ?cLabel ?site (MAX(?pop) AS ?p) WHERE {
   ?c wdt:P31 ?type ; wdt:P856 ?site ; wdt:P1082 ?pop .
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 } GROUP BY ?c ?cLabel ?site ORDER BY DESC(?p) LIMIT %d
-""" % (N * 2) % (N * 2)
+""" % (N * 2)
 
 def host(u):
     h = urllib.parse.urlparse(u if '//' in u else '//' + u).netloc.lower()
