@@ -1,0 +1,797 @@
+{
+ "Fresno CA": {
+  "files": [],
+  "portals": {}
+ },
+ "Fontana CA": {
+  "files": [],
+  "portals": {
+   "https://data.fontanaca.gov/": "Online Maps",
+   "https://fontanaca.maps.arcgis.com/apps/webappviewer/index.html?id=ecc67f90c51440eca0d17fd5a6e59c92": "Zoning and General Plan Land Use Designation Interactive Map",
+   "https://experience.arcgis.com/experience/06abe56b074d42b6951f800d08767b21": "Capital Improvement Program (CIP) Projects",
+   "https://fontanaca.maps.arcgis.com/apps/webappviewer/index.html?id=de0bfb8f31a7415ca8ffd2c9ec550f22": "Trash Pickup Map",
+   "http://fontanaca.maps.arcgis.com/apps/webappviewer/index.html?id=5fe8e97ef3ee4c91aa49942467b9acf2": "",
+   "https://fontanaca.maps.arcgis.com/apps/instant/nearby/index.html?appid=869f18b150924ee2b0f397b08d602541": "Water Company Boundary Map"
+  }
+ },
+ "Dublin": {
+  "files": [],
+  "portals": {
+   "https://dublincity.ie/opendata": "Menu",
+   "https://dublincity.ie/open-data": "Menu"
+  }
+ },
+ "José C. Paz Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Columbus": {
+  "files": [
+   {
+    "url": "https://columbusga.org/Portals/communityaffairs/adam/Press%20Releases/PvCoYup1CUCeFE6WZQ-4HA/Document/Free%20Paper%20Shredding%20and%20Shoe%20Recycling%20Kick-%20Off.pdf",
+    "text": "Read full press release »",
+    "file": "data/city_files/Columbus/52e0ef_Free_20Paper_20Shredding_20and_20Shoe_20Recycling_20Kick-_20Off.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/365a344ee8be4685a6fdbf477becceeb": "City Council & School Board Districts"
+  }
+ },
+ "Alappuzha Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Rize": {
+  "files": [],
+  "portals": {}
+ },
+ "Athens": {
+  "files": [],
+  "portals": {
+   "https://data-athensclarke.opendata.arcgis.com/": "Open Data Portal",
+   "https://athensclarke.maps.arcgis.com/apps/webappviewer/index.html?id=7bd0980d67a844eebcc52a634113eeca": "Park Finder",
+   "https://accgov.com/10053/Open-Data-Portal": "Open Data Portal",
+   "https://arpa-funding-and-outcomes-tracker-athensclarke.hub.arcgis.com/": "View the ARPA Dashboard",
+   "https://accgov.com/DocumentCenter/View/105183/Open-Data-Publishing-Protocol": "Open Data Publishing Protocol",
+   "https://athensclarke.maps.arcgis.com/apps/dashboards/0dce2ad9ad89453ca4b44e4ea7c33663": "View the FY24 CDBG Public Services Dashboard",
+   "https://experience.arcgis.com/experience/3d1b29949e6b4d8ba144f58b898083cc/": "View the FY25 CDBG Public Services Dashboard",
+   "https://experience.arcgis.com/experience/21aa8a6602564942aa1d834e92864377": "View the FY26 CDBG Public Services Dashboard",
+   "https://experience.arcgis.com/experience/d05174a1403c41ab94beff29868b0d09/page/Page?views=EADC-YED": "View the FY26 CDBG Economic Development Dashboard",
+   "https://experience.arcgis.com/experience/e99bf5d0921740ba8eee7d8832c60bb6/": "View the FY27 CDBG Public Services Dashboard",
+   "https://experience.arcgis.com/experience/4db277408ea843cc97a72324ea60d5d5": "View the FY27 CDBG Economic Development Dashboard",
+   "https://experience.arcgis.com/experience/805cbc8a1fde49bc85bb88283f1bc1f7": "View the FY25 CPP Dashboard",
+   "https://experience.arcgis.com/experience/4c17d22790e746d1aa5fe13146253712": "View the FY26 CPP Dashboard",
+   "https://experience.arcgis.com/experience/5394ccf8ac63455ab2422609647281c8/": "View the FY27 CPP Dashboard",
+   "https://athensclarke.maps.arcgis.com/apps/dashboards/3f9622cf22e8444bba691d2eff2742dd": "View the FY25 Neighborhood Leaders Dashboard",
+   "https://athensclarke.maps.arcgis.com/apps/dashboards/2397f7a798124621af50d3ffdf32e0ea": "View the FY26 Neighborhood Leaders Dashboard",
+   "https://www.arcgis.com/apps/dashboards/e819a091a8cc495786eb3c1e436a446f": "View the FY27 Neighborhood Leaders Dashboard",
+   "https://storymaps.arcgis.com/stories/71f61e71cf2241debdce81d4bc523970": "2025 Greenway Network Plan Storymap",
+   "https://athensclarke.maps.arcgis.com/apps/webappviewer/index.html?id=30db47d046ce4b34a7f1e277931d3bb4": "Interactive Greenway Network Plan",
+   "https://athensclarke.maps.arcgis.com/apps/MapTour/index.html?appid=2e8d045a34e4486f8c5c20ae816e4955": "Interactive map of local historic districts",
+   "https://experience.arcgis.com/experience/b34453e255674a54ba9da80e25930b5f": "Crash Data Dashboard",
+   "https://experience.arcgis.com/experience/4ff11e146bac4516afe4571d3162ba10": "Interactive Map & GIS",
+   "https://waterdata.usgs.gov/monitoring-location/02217500/": "USGS River Gage - Middle Oconee River",
+   "https://waterdata.usgs.gov/monitoring-location/02217770/": "USGS River Gage - North Oconee River",
+   "https://storymaps.arcgis.com/stories/33f614ff46db45e3a59f3de53deaf19d": "UGA Green Zone",
+   "https://storymaps.arcgis.com/stories/2e9d8079688f47f7b0dfb76ce9bd5abc": "AG Hill",
+   "https://storymaps.arcgis.com/stories/dc04744ead124aaaae811e5a064ecfaf": "Oconee Forest Park"
+  }
+ },
+ "Waterbury": {
+  "files": [],
+  "portals": {
+   "http://gis.waterburyct.org/GIS/index.asp": "GIS Maps"
+  }
+ },
+ "Yozgat": {
+  "files": [],
+  "portals": {}
+ },
+ "Kars": {
+  "files": [],
+  "portals": {}
+ },
+ "Palm Coast": {
+  "files": [],
+  "portals": {
+   "https://www.arcgis.com/apps/dashboards/db9a4ce73f774bdfb5dea84e01b2790c": "Capital Projects",
+   "https://copcgis.maps.arcgis.com/apps/webappviewer/index.html?id=2a2db4ad7a684be091f0369b8cea187a": "Planning Projects",
+   "https://experience.arcgis.com/experience/b5cb5239bec440d3a0791b90205eb7dc": "Planning Projects",
+   "https://palmcoastgov.com/opendata": "Emergency Preparedness",
+   "https://palmcoastgov.com/open-data": "Emergency Preparedness"
+  }
+ },
+ "Ponnani Municipality": {
+  "files": [
+   {
+    "url": "https://wardmap.ksmart.live/FinalN/map/Map_FinalN_Malappuram_Ponnani.pdf",
+    "text": "Localbody Map",
+    "file": "data/city_files/Ponnani_Municipality/10dfab_Map_FinalN_Malappuram_Ponnani.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "South Jordan": {
+  "files": [],
+  "portals": {
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=94035f2d08ff4889841b59dfaf8b9d43": "interactive map of South Jordan Trails"
+  }
+ },
+ "Bowling Green": {
+  "files": [
+   {
+    "url": "https://www.bgky.org/files/WE2QXvoO.pdf",
+    "text": "Greater Downtown Map",
+    "file": "data/city_files/Bowling_Green/33e511_WE2QXvoO.pdf",
+    "rows": 14,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.bgky.org/files/AdyNoekE.pdf",
+    "text": "Fireworks Special Discharge Permit",
+    "file": "data/city_files/Bowling_Green/1f486b_AdyNoekE.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bgky.org/files/JTlIhTSJ.pdf",
+    "text": "Section A (Burial Plots)",
+    "file": "data/city_files/Bowling_Green/1ba00e_JTlIhTSJ.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bgky.org/files/2HUBdgTt.pdf",
+    "text": "Section A (Cremation Plots)",
+    "file": "data/city_files/Bowling_Green/3d52ef_2HUBdgTt.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bgky.org/files/syOoQDz7.pdf",
+    "text": "Snow Removal Routes document",
+    "file": "data/city_files/Bowling_Green/1c8d4c_syOoQDz7.pdf",
+    "rows": 1304,
+    "bike_rows": 51
+   },
+   {
+    "url": "https://www.bgky.org/files/3x4gkYIP.pdf",
+    "text": "On-Street Parking (PDF)",
+    "file": "data/city_files/Bowling_Green/0c6ea2_3x4gkYIP.pdf",
+    "rows": 36,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.bgky.org/files/Ig5FtGGq.pdf",
+    "text": "Maintenance Map (PDF)",
+    "file": "data/city_files/Bowling_Green/9aa756_Ig5FtGGq.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://bgky.maps.arcgis.com/apps/webappviewer/index.html?id=0604a6aa1db8466191e8e47023e8bd35": "View Map",
+   "https://data-bgky.hub.arcgis.com/maps/9da0b68d461f42989748a28ca2036075/explore?location=36.975965%2C-86.418050%2C11": "Map of Snow Routes and Priorities",
+   "https://www.arcgis.com/apps/dashboards/341705eed91344af8b7557501222d950": "Paxton Lot: Parking Map"
+  }
+ },
+ "Vadakara Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Kayamkulam Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Chapel Hill": {
+  "files": [
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee-report.pdf",
+    "text": "View the Final Committee Report (PDF, 632KB)",
+    "file": "data/city_files/Chapel_Hill/e03d60_historic-town-hall-committee-report.pdf",
+    "rows": 201,
+    "bike_rows": 39
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/march-22-2017-meeting-agenda.pdf",
+    "text": "View the meeting agenda (PDF, 157KB)",
+    "file": "data/city_files/Chapel_Hill/a270e2_march-22-2017-meeting-agenda.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/march-22-2017-meeting-action-notes.pdf",
+    "text": "Review the meeting action notes (PDF, 173KB)",
+    "file": "data/city_files/Chapel_Hill/dff00b_march-22-2017-meeting-action-notes.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/march-22-2017-meeting-minutes.pdf",
+    "text": "Read the meeting minutes (PDF, 195KB)",
+    "file": "data/city_files/Chapel_Hill/371e36_march-22-2017-meeting-minutes.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/march-9-2017-meeting-agenda.pdf",
+    "text": "View the meeting agenda (PDF, 89KB)",
+    "file": "data/city_files/Chapel_Hill/c26f76_march-9-2017-meeting-agenda.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/march-9-2017-action-notes.pdf",
+    "text": "Review the meeting action notes (PDF, 171KB)",
+    "file": "data/city_files/Chapel_Hill/b91f17_march-9-2017-action-notes.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/march-9-2017-meeting-minutes.pdf",
+    "text": "Read the meeting minutes (PDF, 193KB)",
+    "file": "data/city_files/Chapel_Hill/3b5be6_march-9-2017-meeting-minutes.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/february-22-materials.pdf",
+    "text": "View the meeting agenda and presentation (PDF, 2MB)",
+    "file": "data/city_files/Chapel_Hill/3724b4_february-22-materials.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/february-22-2017-meeting-action-notes.pdf",
+    "text": "Read the meeting minutes (PDF, 171KB)",
+    "file": "data/city_files/Chapel_Hill/739428_february-22-2017-meeting-action-notes.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/february-9-2017-agenda.pdf",
+    "text": "View the meeting agenda (PDF, 158KB)",
+    "file": "data/city_files/Chapel_Hill/1fcc04_february-9-2017-agenda.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/february-9-2017-action-notes.pdf",
+    "text": "Review the meeting action notes (PDF, 175KB)",
+    "file": "data/city_files/Chapel_Hill/fa040a_february-9-2017-action-notes.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/february-9-2017-0minutes.pdf",
+    "text": "Read the meeting minutes (PDF, 183KB)",
+    "file": "data/city_files/Chapel_Hill/57fae2_february-9-2017-0minutes.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/january-25-2017-materials.pdf",
+    "text": "View the meeting agenda and presentation (PDF, 764KB)",
+    "file": "data/city_files/Chapel_Hill/2f43cd_january-25-2017-materials.pdf",
+    "rows": 14,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/january-25-2017-meeting-action-notes.pdf",
+    "text": "Review the meeting action notes (PDF, 238KB)",
+    "file": "data/city_files/Chapel_Hill/3399cd_january-25-2017-meeting-action-notes.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/january-25-2017-minutes.pdf",
+    "text": "Read the meeting minutes (PDF, 241KB)",
+    "file": "data/city_files/Chapel_Hill/bb7ad7_january-25-2017-minutes.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/january-12-2017-agenda-and-materials.pdf",
+    "text": "View the meeting agenda and materials (PDF, 3MB)",
+    "file": "data/city_files/Chapel_Hill/b14723_january-12-2017-agenda-and-materials.pdf",
+    "rows": 79,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/january-12-2017-meeting-agenda-action-notes.pdf",
+    "text": "Review the meeting action notes (PDF, 231KB)",
+    "file": "data/city_files/Chapel_Hill/397d69_january-12-2017-meeting-agenda-action-notes.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/january-12-2017-meeting-agenda-minutes.pdf",
+    "text": "Read the meeting minutes (PDF, 178KB)",
+    "file": "data/city_files/Chapel_Hill/cbb34b_january-12-2017-meeting-agenda-minutes.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/december-14-2016-meeting-agenda.pdf",
+    "text": "View the meeting agenda (PDF, 89KB)",
+    "file": "data/city_files/Chapel_Hill/29d7f0_december-14-2016-meeting-agenda.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/december-14-2016-minutes.pdf",
+    "text": "Read the meeting minutes (PDF, 446KB)",
+    "file": "data/city_files/Chapel_Hill/d3eeb8_december-14-2016-minutes.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/november-28-2016-agenda.pdf",
+    "text": "View the meeting agenda (PDF, 167KB)",
+    "file": "data/city_files/Chapel_Hill/ff99af_november-28-2016-agenda.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/november-28-2016-historic-town-hall-draft-meeting-minutes.pdf",
+    "text": "Read the meeting minutes (PDF, 452KB)",
+    "file": "data/city_files/Chapel_Hill/c43eb1_november-28-2016-historic-town-hall-draft-meeting-minutes.pdf",
+    "rows": 13,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/communications/documents/historic-town-hall-committee/hthc-handbook-and-materials.pdf",
+    "text": "Review the committee materials (PDF, 6MB)",
+    "file": "data/city_files/Chapel_Hill/c63bfe_hthc-handbook-and-materials.pdf",
+    "rows": 148,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/pampr/images/parks-and-trails/trails/tanyard-branch-battle-branch-and-bolin-creek-trail-maps.pdf",
+    "text": "download (PDF, 651KB)",
+    "file": "data/city_files/Chapel_Hill/24cc87_tanyard-branch-battle-branch-and-bolin-creek-trail-maps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/pampr/images/parks-and-trails/trails/morgan-creek-and-fan-branch-trails-map.pdf",
+    "text": "download (PDF, 433KB)",
+    "file": "data/city_files/Chapel_Hill/13ceff_morgan-creek-and-fan-branch-trails-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/2/transit/documents/bus-routes-and-schedules/weekdays/nsweekdays_july20.pdf",
+    "text": "NS Route (Weekday) (PDF, 2MB)",
+    "file": "data/city_files/Chapel_Hill/e281a5_nsweekdays_july20.pdf",
+    "rows": 86,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/2/transit/documents/bus-routes-and-schedules/weekdays/cm-july14.pdf",
+    "text": "CM Route (PDF, 2MB)",
+    "file": "data/city_files/Chapel_Hill/8b69dd_cm-july14.pdf",
+    "rows": 57,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/4/transit/documents/bus-routes-and-schedules/weekdays/26july_f_wrong-map.pdf",
+    "text": "F Route (PDF, 2MB)",
+    "file": "data/city_files/Chapel_Hill/7d3eb8_26july_f_wrong-map.pdf",
+    "rows": 23,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/2/transit/documents/bus-routes-and-schedules/weekdays/jfx_sept_17.pdf",
+    "text": "JFXRoute (PDF, 2MB)",
+    "file": "data/city_files/Chapel_Hill/ad05f6_jfx_sept_17.pdf",
+    "rows": 48,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/2/transit/documents/bus-routes-and-schedules/weekdays/fcx-july14.pdf",
+    "text": "FCX Route (PDF, 2MB)",
+    "file": "data/city_files/Chapel_Hill/c4a921_fcx-july14.pdf",
+    "rows": 99,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/3/transit/documents/bus-routes-and-schedules/weekdays/july26_g_web.pdf",
+    "text": "G Route (PDF, 642KB)",
+    "file": "data/city_files/Chapel_Hill/f2f0fe_july26_g_web.pdf",
+    "rows": 18,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/3/transit/documents/bus-routes-and-schedules/weekdays/26july_t-route.pdf",
+    "text": "T Route (PDF, 1MB)",
+    "file": "data/city_files/Chapel_Hill/c27a9f_26july_t-route.pdf",
+    "rows": 20,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/2/transit/documents/bus-routes-and-schedules/weekdays/s_july14.pdf",
+    "text": "S Route (PDF, 2MB)",
+    "file": "data/city_files/Chapel_Hill/2dc467_s_july14.pdf",
+    "rows": 46,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/2/transit/documents/bus-routes-and-schedules/weekdays/ccx_sept_17.pdf",
+    "text": "CCX Route (PDF, 2MB)",
+    "file": "data/city_files/Chapel_Hill/872944_ccx_sept_17.pdf",
+    "rows": 45,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/6/transit/documents/bus-routes-and-schedules/weekdays/250811_nu_weekday_scheduleonly.pdf",
+    "text": "NU Route (Weekday) (PDF, 1MB)",
+    "file": "data/city_files/Chapel_Hill/324372_250811_nu_weekday_scheduleonly.pdf",
+    "rows": 49,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/3/transit/documents/bus-routes-and-schedules/weekdays/26july_j_weekday_web.pdf",
+    "text": "J Route (PDF, 687KB)",
+    "file": "data/city_files/Chapel_Hill/03800d_26july_j_weekday_web.pdf",
+    "rows": 67,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/4/transit/documents/bus-routes-and-schedules/weekdays/26july_cw_web.pdf",
+    "text": "CW Route (PDF, 800KB)",
+    "file": "data/city_files/Chapel_Hill/2051da_26july_cw_web.pdf",
+    "rows": 46,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/1/transit/documents/bus-routes-and-schedules/weekdays/hs_jan2025.pdf",
+    "text": "HS Route (PDF, 7MB)",
+    "file": "data/city_files/Chapel_Hill/5b9e63_hs_jan2025.pdf",
+    "rows": 32,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/2/transit/documents/bus-routes-and-schedules/weekdays/n-sept_17.pdf",
+    "text": "N Route (PDF, 2MB)",
+    "file": "data/city_files/Chapel_Hill/c350a6_n-sept_17.pdf",
+    "rows": 36,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.chapelhillnc.gov/files/assets/town/v/3/transit/documents/bus-routes-and-schedules/weekdays/cl_sept_18.pdf",
+    "text": "CL Route (PDF, 2MB)",
+    "file": "data/city_files/Chapel_Hill/bcf300_cl_sept_18.pdf",
+    "rows": 41,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://opendata-townofchapelhill.hub.arcgis.com/": "Open Data & GIS",
+   "https://townofchapelhill.maps.arcgis.com/apps/MapSeries/index.html?appid=76694cc1b037404dbfcbcbd45d7a6b71": "View the Snow Removal Map",
+   "https://survey123.arcgis.com/share/1484b88ba3fa47be9272ba10932e899e?portalUrl=https://gis-portal.townofchapelhill.org/portal": "Report a missed collection",
+   "https://opendata-townofchapelhill.hub.arcgis.com/apps/7c0b17839ad142178172ac4cc82e13b6": "View your Parcel Boundaries",
+   "https://www.chapelhillnc.gov/Home/Tabs/Services/Open-Data-GIS": "Back to top",
+   "https://www.chapelhillnc.gov/Home/Tabs/Services/Open-Data-GIS?oc_lang=en-US": "English (United States) Select this as your preferred language",
+   "https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.chapelhillnc.gov%2fHome%2fTabs%2fServices%2fOpen-Data-GIS": "Facebook",
+   "https://twitter.com/share?url=https%3a%2f%2fwww.chapelhillnc.gov%2fHome%2fTabs%2fServices%2fOpen-Data-GIS": "X",
+   "mailto:?Body=https%3a%2f%2fwww.chapelhillnc.gov%2fHome%2fTabs%2fServices%2fOpen-Data-GIS": "Email",
+   "https://opendata-townofchapelhill.hub.arcgis.com/apps/a75f8c69cb534b39b5ac28b81261edc7/explore": "",
+   "https://townofchapelhill.maps.arcgis.com/apps/instant/minimalist/index.html?appid=a75f8c69cb534b39b5ac28b81261edc7": "View the Map",
+   "https://waterdata.usgs.gov/nwis/uv?site_no=0209734440": "Bolin Creek at Village Drive",
+   "https://waterdata.usgs.gov/nwis/uv?site_no=02097386": "Booker Creek at Piney Mountain Road",
+   "https://waterdata.usgs.gov/nwis/uv?site_no=355631079025645": "rain gage on Booker Creek at Piney Mountain Road",
+   "https://survey123.arcgis.com/share/0899849b862f48d7838de1ca41946731": "feedback form",
+   "https://opendata-townofchapelhill.hub.arcgis.com/documents/townofchapelhill::chapel-hill-greenways-and-bicycle-map/explore": "bike infrastructure"
+  }
+ },
+ "Taunton": {
+  "files": [],
+  "portals": {}
+ },
+ "DeSoto": {
+  "files": [],
+  "portals": {}
+ },
+ "Casa Grande": {
+  "files": [],
+  "portals": {
+   "https://casagrandeaz-transparency.connect.socrata.com/": "View the map Full Screen",
+   "https://casagrandegis.maps.arcgis.com/apps/webappviewer/index.html?id=9a3d756c68b6421eac6cb35d1517d5f1": "Landfill Service Area",
+   "https://experience.arcgis.com/experience/68d4f00f4f7f47248947d1da2955a581/?draft=true": "Public Works Project Tracking"
+  }
+ },
+ "Cathedral City": {
+  "files": [],
+  "portals": {}
+ },
+ "Kunnamkulam Municipality": {
+  "files": [
+   {
+    "url": "https://kunnamkulammunicipality.lsgkerala.gov.in/system/files/2026-09/Map_FinalN_Thrissur_Kunnamkulam.pdf",
+    "text": "Map_FinalN_Thrissur_Kunnamkulam.pdf",
+    "file": "data/city_files/Kunnamkulam_Municipality/e38c3f_Map_FinalN_Thrissur_Kunnamkulam.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Punalur Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Fairfield": {
+  "files": [],
+  "portals": {
+   "https://gis.fairfield-city.org/cofim/index.html": "",
+   "https://gis.dot.state.oh.us/": "Transportation Information Mapping System"
+  }
+ },
+ "Jefferson City": {
+  "files": [],
+  "portals": {
+   "https://midmogis-jeffcitymogis.hub.arcgis.com/": "JC DATA Hub",
+   "https://experience.arcgis.com/experience/22e8a240116e4350a3e73dd545a0392e/": "City Road Conditions",
+   "https://www.midmogis.org/portal/apps/View/index.html?appid=ef9ebfb8960a4ccaa8cdff778e5272ad": "Parking Zone Map"
+  }
+ },
+ "Milton": {
+  "files": [],
+  "portals": {}
+ },
+ "Florence": {
+  "files": [
+   {
+    "url": "https://cityofflorence.com/sites/default/files/uploads/trailwnumbers.pdf",
+    "text": "VIEW MAP OF TRAIL CONNECTORS (Numbers) (PDF, 320.79 KB)",
+    "file": "data/city_files/Florence/0d6700_trailwnumbers.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofflorence.com/sites/default/files/uploads/cityofflorencetrailmap.pdf",
+    "text": "VIEW MAP OF TRAILS CONNECTORS (STREET NAMES) (PDF, 4.26 MB)",
+    "file": "data/city_files/Florence/3fafaf_cityofflorencetrailmap.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofflorence.com/sites/default/files/uploads/sanitationmap_for_online_0.pdf",
+    "text": "(PDF, 5.73 MB)",
+    "file": "data/city_files/Florence/92f19f_sanitationmap_for_online_0.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofflorence.com/sites/default/files/uploads/Departments/Recreation/Athletics/01012018-adopted-bylaws-of-florence-track-club-rev-1.pdf",
+    "text": "Florence Track Club (PDF, 175.31 KB)",
+    "file": "data/city_files/Florence/99ad5e_01012018-adopted-bylaws-of-florence-track-club-rev-1.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofflorence.com/sites/default/files/uploads/complete-downtown-district-map.pdf",
+    "text": "Overlay Districts Map (PDF, 7.43 MB)",
+    "file": "data/city_files/Florence/c04422_complete-downtown-district-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofflorence.com/sites/default/files/uploads/Departments/Public-Works/sanitationmap_for_online_0.pdf",
+    "text": "(PDF, 5.73 MB)",
+    "file": "data/city_files/Florence/59b998_sanitationmap_for_online_0.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofflorencesc.gov/sites/default/files/uploads/sanitationmap_for_online_1.pdf",
+    "text": "(PDF, 5.73 MB)",
+    "file": "data/city_files/Florence/91de44_sanitationmap_for_online_1.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofflorencesc.gov/sites/default/files/uploads/press_release_march_24_2021_upcoming_residential_collection_route_changes.pdf",
+    "text": "Press Release March 24 2021 PDF (PDF, 151.57 KB)",
+    "file": "data/city_files/Florence/d904e0_press_release_march_24_2021_upcoming_residential_collection_route_chan",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflorencesc.gov/sites/default/files/uploads/press_release_april_12_2021_upcoming_residential_collection_route_changes.pdf",
+    "text": "Press Release April 12 2021 PDF (PDF, 159.32 KB)",
+    "file": "data/city_files/Florence/2893e6_press_release_april_12_2021_upcoming_residential_collection_route_chan",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflorencesc.gov/sites/default/files/uploads/water_shut_off_mciver_rd2_9-22-2023.pdf",
+    "text": "WATER shut off MAP PDF (PDF, 3.04 MB) (opens in a new tab)",
+    "file": "data/city_files/Florence/91b933_water_shut_off_mciver_rd2_9-22-2023.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofflorencesc.gov/sites/default/files/uploads/sanitationmap_for_online_0.pdf",
+    "text": "(PDF, 5.73 MB)",
+    "file": "data/city_files/Florence/dc565f_sanitationmap_for_online_0.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofflorencesc.gov/sites/default/files/uploads/trailwnumbers.pdf",
+    "text": "VIEW MAP OF TRAIL CONNECTORS (Numbers) (PDF, 320.79 KB)",
+    "file": "data/city_files/Florence/0c9aae_trailwnumbers.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflorencesc.gov/sites/default/files/uploads/cityofflorencetrailmap.pdf",
+    "text": "VIEW MAP OF TRAILS CONNECTORS (STREET NAMES) (PDF, 4.26 MB)",
+    "file": "data/city_files/Florence/6bdbbf_cityofflorencetrailmap.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflorencesc.gov/sites/default/files/uploads/Departments/Recreation/Athletics/01012018-adopted-bylaws-of-florence-track-club-rev-1.pdf",
+    "text": "Florence Track Club (PDF, 175.31 KB)",
+    "file": "data/city_files/Florence/05c5c7_01012018-adopted-bylaws-of-florence-track-club-rev-1.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofflorencesc.gov/sites/default/files/uploads/complete-downtown-district-map.pdf",
+    "text": "Overlay Districts Map (PDF, 7.43 MB)",
+    "file": "data/city_files/Florence/606a44_complete-downtown-district-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofflorencesc.gov/sites/default/files/uploads/Departments/Public-Works/sanitationmap_for_online_0.pdf",
+    "text": "(PDF, 5.73 MB)",
+    "file": "data/city_files/Florence/bd6c8e_sanitationmap_for_online_0.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofflorence.com/sites/default/files/uploads/Departments/Recreation/Athletics/01012018-adopted-bylaws-of-florence-track-club-rev-1.pdf",
+    "text": "Florence Track Club (PDF, 175.31 KB)",
+    "file": "data/city_files/Florence/08a811_01012018-adopted-bylaws-of-florence-track-club-rev-1.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofflorence.com/sites/default/files/uploads/trailwnumbers.pdf",
+    "text": "VIEW MAP OF TRAIL CONNECTORS (Numbers) (PDF, 320.79 KB)",
+    "file": "data/city_files/Florence/50831d_trailwnumbers.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflorence.com/sites/default/files/uploads/cityofflorencetrailmap.pdf",
+    "text": "VIEW MAP OF TRAILS CONNECTORS (STREET NAMES) (PDF, 4.26 MB)",
+    "file": "data/city_files/Florence/02acd0_cityofflorencetrailmap.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflorence.com/sites/default/files/uploads/complete-downtown-district-map.pdf",
+    "text": "Overlay Districts Map (PDF, 7.43 MB)",
+    "file": "data/city_files/Florence/3a71bb_complete-downtown-district-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofflorence.com/sites/default/files/uploads/Departments/Public-Works/sanitationmap_for_online_0.pdf",
+    "text": "(PDF, 5.73 MB)",
+    "file": "data/city_files/Florence/2082b7_sanitationmap_for_online_0.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofflorence.com/sites/default/files/uploads/sanitationmap_for_online_0.pdf",
+    "text": "(PDF, 5.73 MB)",
+    "file": "data/city_files/Florence/7e78ae_sanitationmap_for_online_0.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/5d9434831c874cfca68bc2e89f88b3d9": "Water Portal (opens in a new tab)",
+   "https://storymaps.arcgis.com/stories/363d6973b8fa43969d474e7688ab47ba": "Stormwater Portal (opens in a new tab)",
+   "https://storymaps.arcgis.com/stories/9ad7d2816ca74db98fb6f4b3772e6fa7": "Sewer Portal (opens in a new tab)",
+   "https://florencesc.maps.arcgis.com/apps/webappviewer/index.html?id=3bcae5708abd4732a893f03440320d3f": "City Council Districts (opens in a new tab)",
+   "https://florencesc.maps.arcgis.com/apps/webappviewer/index.html?id=0c89e91e4ea74358b89636a7e116d1ab": "City Information Viewer (opens in a new tab)",
+   "https://florencesc.maps.arcgis.com/apps/webappviewer/index.html?id=ca545e39e68b4cd5bd82ff1220e8f046": "Sanitation Collection Schedule (opens in a new tab)"
+  }
+ },
+ "Winter Springs": {
+  "files": [
+   {
+    "url": "http://apps.ocfl.net/images/Maps/CadyWayMap_web.pdf",
+    "text": "Cady Way Trail",
+    "file": "data/city_files/Winter_Springs/d8597d_CadyWayMap_web.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/0a4655d723e54ba5b1264c4dbcc9aaf4": "Current Development Projects",
+   "https://experience.arcgis.com/experience/63893ec95683416c827124fd17311da2": "HERE",
+   "http://seminolegis.maps.arcgis.com/apps/webappviewer/index.html?id=61a9ca7972274a2caa09e115bde8a674": "Map of the Cross Seminole Trail"
+  }
+ },
+ "Esquel": {
+  "files": [],
+  "portals": {}
+ },
+ "El Mirage": {
+  "files": [],
+  "portals": {
+   "https://cityofelmirage.org/opendata": "Skip to Main Content",
+   "https://cityofelmirage.org/open-data": "Skip to Main Content"
+  }
+ },
+ "University Place": {
+  "files": [],
+  "portals": {}
+ },
+ "Goldsboro": {
+  "files": [],
+  "portals": {}
+ },
+ "Wheat Ridge": {
+  "files": [],
+  "portals": {}
+ },
+ "Elizabethtown": {
+  "files": [
+   {
+    "url": "https://www.elizabethtownky.org/Documents/Government/Departments/Parks and Recreation/Freeman Lake Park/DiscGolfMap2019-Final.pdf?t=202604240955580",
+    "text": "Course Map",
+    "file": "data/city_files/Elizabethtown/3d08f4_DiscGolfMap2019-Final.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.elizabethtownky.org/Documents/Government/Departments/Parks and Recreation/American Legion Park/Par 3 Course Map Web.pdf?t=202604240956010",
+    "text": "Course Map",
+    "file": "data/city_files/Elizabethtown/2033ea_Par_3_Course_Map_Web.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.elizabethtownky.org/government/departments/gis.php": "GIS",
+   "https://gis.elizabethtownky.org/agoapps/citylimits/": "City Limits",
+   "https://gis.elizabethtownky.org/apps/infomap/index.html?webmap=ee9e629709ad4904a77e003cbf82888f": "Flood Zone Map",
+   "https://gis.elizabethtownky.org/apps/infomap/index.html?webmap=8f15cd3f43c34d1f8d5679c809bb2361": "Greenspace Trails",
+   "https://survey123.arcgis.com/share/c350882fd8b94c21bd9c1a033c5e3188?portalUrl=https://gis.elizabethtownky.org/portal": "Park or Trail Maintenance",
+   "https://survey123.arcgis.com/share/ade7ab7e5f334c4490f9caeebb0a061f?portalUrl=https://gis.elizabethtownky.org/portal": "Pothole & Street Issue",
+   "https://survey123.arcgis.com/share/bc535b3fe7f14caa97abeb0e5121d192?portalUrl=https://gis.elizabethtownky.org/portal": "Stormwater Issue",
+   "https://survey123.arcgis.com/share/0e35864fe8fb41eea6f3a5ff9c0aa22f?portalUrl=https://gis.elizabethtownky.org/portal": "Street Light Outage",
+   "https://gis.elizabethtownky.org/portal/apps/instant/lookup/index.html?appid=093c6ac379e14f7e8fe125aca739e98f&_ga=2.150060662.1313565071.1774878976-1414290453.1772827637&_gl=1*11usadt*_ga*MTQxNDI5MDQ1My4xNzcyODI3NjM3*_ga_3ZVHY4NFEZ*czE3NzUwNjIwOTYkbzI2JGcxJHQxNzc1MDYzMTA3JGo1OSRsMCRoMA..": "Weekly Collection Areas",
+   "https://gis.elizabethtownky.org/agoapps/citylimits/?_ga=2.183678566.1313565071.1774878976-1414290453.1772827637&_gl=1*e8n1pj*_ga*MTQxNDI5MDQ1My4xNzcyODI3NjM3*_ga_3ZVHY4NFEZ*czE3NzUwNjIwOTYkbzI2JGcxJHQxNzc1MDYzMTA3JGo1OSRsMCRoMA..": "Am I In the City Limits?"
+  }
+ },
+ "Liberty": {
+  "files": [],
+  "portals": {}
+ },
+ "Shaker Heights": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/b8f11b40e7934b2994197de1cd11d74d": "Visit our GIS yard waste collection status map",
+   "https://experience.arcgis.com/experience/8cae19373dd94201ac262f3dd61ef421": "View the sidewalk plowing map"
+  }
+ },
+ "Madison Heights": {
+  "files": [],
+  "portals": {}
+ }
+}
