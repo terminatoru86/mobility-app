@@ -1,0 +1,1468 @@
+{
+ "Anchorage AK": {
+  "files": [],
+  "portals": {
+   "https://muniorg.maps.arcgis.com/apps/webappviewer/index.html?id=ae59698bf01349f6a6a2d0ad3b15a03c": "Find a Park or Trail",
+   "https://moa-muniorg.hub.arcgis.com/": "GIS",
+   "https://experience.arcgis.com/experience/76746e478f7942e2ab98c4a0e483b77b": "Snow Plow",
+   "https://moa-open-checkbook-muniorg.hub.arcgis.com/": "Online Checkbook",
+   "https://muni.org/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/opendata": "Apply Now",
+   "https://builder1.revize.com/revize/security/index.jsp?webspace=anchorageak&filename=/departments/records_management/opendata.php": "Staff Login",
+   "https://experience.arcgis.com/experience/a8b66453d24a4439a66bb4fe645c2b46/?views=Trip-Planning-3": "Learn more",
+   "https://muni.org/departments/public_transportation/people_mover/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/public_transportation/anchorrides/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/public_transportation/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/parks_and_recreation/activities/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/parks_and_recreation/pools/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/parks_and_recreation/reservations/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/public_works_infrastructure/development_services/permits_inspections/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/solid_waste_services/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/public_works_infrastructure/development_services/codes_policies_and_handouts/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/municipal_clerk/licensing/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/assembly/legislation/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/public_works_infrastructure/development_services/departments/records_management/opendata.php": "Open Data",
+   "https://mirrorlakemasterplan-huddle.hub.arcgis.com/": "Mirror Lake & Edmonds Lake Park Master Plan",
+   "https://muni.org/departments/eagle_river_chugiak_parks_recreation/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/parks_and_recreation/girdwood_parks_recreation/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/merrill_field/departments/records_management/opendata.php": "Open Data",
+   "https://survey123.arcgis.com/share/d9b89eeb33594c0a9886d9d210a05cdc": "Report a hazard tree",
+   "https://muniorg.maps.arcgis.com/apps/instant/reporter/index.html?appid=90a964d4da93483e83a496fdfdb8b6b4": "Report trash",
+   "https://muni.org/departments/parks_and_recreation/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/parks_and_recreation/park_projects/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/parks_and_recreation/community_gardens/departments/records_management/opendata.php": "Open Data",
+   "https://muni.org/departments/public_works_infrastructure/planning/departments/records_management/opendata.php": "Open Data"
+  }
+ },
+ "Cheyenne WY": {
+  "files": [
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/1/departments/community-recreation-amp-events/large-wall-map-final-2026.pdf",
+    "text": "Greenway Map (PDF, 22MB)",
+    "file": "data/city_files/Cheyenne_WY/6c140b_large-wall-map-final-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/1/departments/public-works/recycle/new-folder/automated-collection-guidelines.pdf",
+    "text": "Automated-Collection-guidelines (PDF, 62KB)",
+    "file": "data/city_files/Cheyenne_WY/4eb1b7_automated-collection-guidelines.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/1/departments/public-works/recycle/new-folder/2026-recycle-calendar.pdf",
+    "text": "2026-Recycle-Calendar (PDF, 191KB)",
+    "file": "data/city_files/Cheyenne_WY/851c92_2026-recycle-calendar.pdf",
+    "rows": 81,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/2/departments/public-works/recycle/new-folder/2026-holiday-schedule.pdf",
+    "text": "2026-Holiday-Schedule (PDF, 72KB)",
+    "file": "data/city_files/Cheyenne_WY/c7f8cd_2026-holiday-schedule.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/2/departments/public-works/recycle/new-folder/trash-brochure.pdf",
+    "text": "Trash-brochure (PDF, 296KB)",
+    "file": "data/city_files/Cheyenne_WY/9503cf_trash-brochure.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/7/departments/public-works/recycle/new-folder/2026-solid-waste-fee-schedule.pdf",
+    "text": "2026-Solid-Waste-Fee-Schedule (PDF, 233KB)",
+    "file": "data/city_files/Cheyenne_WY/362870_2026-solid-waste-fee-schedule.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/2/departments/public-works/recycle/new-folder/yard-waste-brochure.pdf",
+    "text": "Yard-Waste-Brochure (PDF, 379KB)",
+    "file": "data/city_files/Cheyenne_WY/151361_yard-waste-brochure.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/assets/public/v/1/documents/arboretum/proposed-boundary_high-plains-state-historic-site.pdf",
+    "text": "Proposed SHS Map (PDF, 825KB)",
+    "file": "data/city_files/Cheyenne_WY/06de80_proposed-boundary_high-plains-state-historic-site.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.plancheyenne.org/wp-content/uploads/2022/10/2022-Greenway.pdf",
+    "text": ".",
+    "file": "data/city_files/Cheyenne_WY/8876f0_2022-Greenway.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/1/departments/boards-and-commissions/atac/bfc-report-card-cheyenne-wy.pdf",
+    "text": "Bicycle Friendly Community Report Card (2025)",
+    "file": "data/city_files/Cheyenne_WY/02c049_bfc-report-card-cheyenne-wy.pdf",
+    "rows": 64,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/1/departments/planningdevelopment/polk-greenway-graphic_201308161118464682.pdf",
+    "text": "overall site plan (PDF, 4MB)",
+    "file": "data/city_files/Cheyenne_WY/e89201_polk-greenway-graphic_201308161118464682.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/1/departments/planningdevelopment/on-street-bike-plan-2013_201308161615436398.pdf",
+    "text": "preliminary plan of improvements (PDF, 199KB)",
+    "file": "data/city_files/Cheyenne_WY/053686_on-street-bike-plan-2013_201308161615436398.pdf",
+    "rows": 16,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/1/departments/city-engineer/construction-maps/2024/2024-crack-seal-map.pdf",
+    "text": "at this link",
+    "file": "data/city_files/Cheyenne_WY/1f4c99_2024-crack-seal-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/1/departments/city-engineer/construction-maps/2024/2024-surface-seal-all-maps.pdf",
+    "text": "at this link",
+    "file": "data/city_files/Cheyenne_WY/9053d0_2024-surface-seal-all-maps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/5/departments/public-works/recycle/new-folder/recycle-brochure-2026.pdf",
+    "text": "Recycle-brochure (PDF, 203KB)",
+    "file": "data/city_files/Cheyenne_WY/573431_recycle-brochure-2026.pdf",
+    "rows": 7,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/departments/public-works/recycle/valentines-day-activity-packet-3-5-1.pdf",
+    "text": "Activity Packet (3 to 5 years old)",
+    "file": "data/city_files/Cheyenne_WY/c14b20_valentines-day-activity-packet-3-5-1.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/departments/public-works/recycle/valentines-day-activity-packet-6-8-1.pdf",
+    "text": "Activity Packet (6 to 8 years old)",
+    "file": "data/city_files/Cheyenne_WY/763e77_valentines-day-activity-packet-6-8-1.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/departments/public-works/recycle/valentines-day-activity-packet-9-12-1.pdf",
+    "text": "Activity Packet (9 to 12 years old)",
+    "file": "data/city_files/Cheyenne_WY/9cf3b9_valentines-day-activity-packet-9-12-1.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/1/departments/planningdevelopment/historicdistricts_final.pdf",
+    "text": "Click here for a map of Cheyenne Historic Districts.",
+    "file": "data/city_files/Cheyenne_WY/8c3c80_historicdistricts_final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/1/departments/planningdevelopment/website-documents/parks-plan-2025-reduced.pdf",
+    "text": "Parks and Greenway Master Plan",
+    "file": "data/city_files/Cheyenne_WY/3c9abb_parks-plan-2025-reduced.pdf",
+    "rows": 254,
+    "bike_rows": 50
+   },
+   {
+    "url": "https://www.plancheyenne.org/wp-content/uploads/2025/09/01-Cheyenne-SRTS-08152025-REDUCED.pdf",
+    "text": "Safe Routes to School plan",
+    "file": "data/city_files/Cheyenne_WY/0e5325_01-Cheyenne-SRTS-08152025-REDUCED.pdf",
+    "rows": 93,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.cheyennecity.org/files/sharedassets/public/v/1/departments/community-recreation-amp-events/us-30-ribbon-cutting-parking-map.pdf",
+    "text": "Parking Map",
+    "file": "data/city_files/Cheyenne_WY/64c11d_us-30-ribbon-cutting-parking-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/cce7a6b502cd486bbef749cd2b780fb9": "Cone Zone (construction projects)",
+   "https://clcgisc.maps.arcgis.com/apps/Cascade/index.html?appid=8cb46a870afd4b67956357e76f3902f6": "Snow & Ice Control Guide",
+   "https://clcgisc.maps.arcgis.com/home/index.html": "ArcGIS Online Map Gallery",
+   "https://clcgisc.maps.arcgis.com/apps/webappviewer/index.html?id=b41c97adea074923aa194004dbb7c490": "2020 Construction Projects",
+   "https://clcgisc.maps.arcgis.com/apps/Viewer/index.html?appid=d6abbd19c405482e80c53857558a4f9d": "Cone Zone: Current Construction Impacts",
+   "https://clcgisc.maps.arcgis.com/apps/webappviewer/index.html?id=fe82cffbd82e46b2bbb8c99ee78217d0": "Curbside Trash & Recycling Pick-Up",
+   "https://clcgisc.maps.arcgis.com/home/webmap/viewer.html?webmap=8a570232540f44ee8d90d5f7f233da8a": "Greenway Map",
+   "https://clcgisc.maps.arcgis.com/apps/webappviewer/index.html?id=af9315bbe90840dd97487d2e84dda4f4": "General Information Map",
+   "https://experience.arcgis.com/template/2de264850121422997d2c3166d21e1e7": "Data Center Map",
+   "https://experience.arcgis.com/experience/f086f052f28b4185a785f19344a057be/": "visit this page",
+   "https://clcgisc.maps.arcgis.com/apps/instant/basic/index.html?appid=b54cb42f9ac54d83ac1554dc74f2b19c": "Greater Cheyenne Greenway Map",
+   "https://experience.arcgis.com/experience/aa4c98edf83147c4bed7afd457f60d61": "www.cheyennecity.org/StormwaterFeeMap",
+   "https://clcgisc.maps.arcgis.com/apps/MapTour/index.html?appid=517e5ea2f9df4f039a7b0243b39545c3": "Metropolitan Planning Association Maps and Plans"
+  }
+ },
+ "Tigre Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Cluj-Napoca": {
+  "files": [],
+  "portals": {
+   "https://gis.primariaclujnapoca.ro/": "GIS sistem informational geografic",
+   "https://gis.primariaclujnapoca.ro/Public/": "Harta municipiului"
+  }
+ },
+ "Huntington Beach": {
+  "files": [
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/HarborPermit.pdf?t=202404051223550",
+    "text": "Dock Permit",
+    "file": "data/city_files/Huntington_Beach/7bb339_HarborPermit.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/Huntington-Harbour-Map.pdf?t=202404051224040",
+    "text": "MAP OF HUNTINGTON HARBOUR",
+    "file": "data/city_files/Huntington_Beach/997dc1_Huntington-Harbour-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/final-tract-parcel-map-checklist.pdf?t=202404051223470",
+    "text": "Final Tract & Parcel Map Checklist",
+    "file": "data/city_files/Huntington_Beach/8088bf_final-tract-parcel-map-checklist.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/Lot-Line-Adjustment-Form-Handout.pdf?t=202404051224090",
+    "text": "Lot Line Adjustment Information",
+    "file": "data/city_files/Huntington_Beach/b9d9d9_Lot-Line-Adjustment-Form-Handout.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/Lot-Line-Adjustment-Form.pdf?t=202404051224090",
+    "text": "Lot Line Adjustment Form",
+    "file": "data/city_files/Huntington_Beach/00b3b6_Lot-Line-Adjustment-Form.pdf",
+    "rows": 24,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/Haul Route Application.pdf?t=202404051223550",
+    "text": "Haul Route Application",
+    "file": "data/city_files/Huntington_Beach/ce7e78_Haul_Route_Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/Truck Route Map.pdf?t=202404051224490",
+    "text": "Truck Route Map",
+    "file": "data/city_files/Huntington_Beach/990dcd_Truck_Route_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Residential_Permit_Parking_Program_Website_Information.pdf?t=202404051224320",
+    "text": "Residential Parking Permits",
+    "file": "data/city_files/Huntington_Beach/a40351_Residential_Permit_Parking_Program_Website_Information.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/WaterMeterUpsize.pdf?t=202404051224520",
+    "text": "Water Meter Upsize",
+    "file": "data/city_files/Huntington_Beach/76c7fd_WaterMeterUpsize.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Trash and Recycling/EDIBLE FOOD RECOVERY ORGANIZATIONS.pdf?t=202408221433020",
+    "text": "ist of local and County organizations",
+    "file": "data/city_files/Huntington_Beach/600af1_EDIBLE_FOOD_RECOVERY_ORGANIZATIONS.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Trash and Recycling/2025 Transfer Station Rates - Effective 1.1.25.pdf?t=202501161555330",
+    "text": "Republic Services website",
+    "file": "data/city_files/Huntington_Beach/8f3fee_2025_Transfer_Station_Rates_-_Effective_1.1.25.pdf",
+    "rows": 17,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Trash and Recycling/First Amendment - Rainbow Republic 2026 WEBSITE.pdf?t=202608031739410",
+    "text": "First Amendment to the Franchise Agreement",
+    "file": "data/city_files/Huntington_Beach/bf350a_First_Amendment_-_Rainbow_Republic_2026_WEBSITE.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Trash and Recycling/Solid-Waste-Franchise-Agreement.pdf?t=202404051227240",
+    "text": "Franchise Agreement",
+    "file": "data/city_files/Huntington_Beach/beff11_Solid-Waste-Franchise-Agreement.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/departments/parks___recreation/2026_Parking_Map_Accessible.pdf?t=202610151942000",
+    "text": "Parking Map",
+    "file": "data/city_files/Huntington_Beach/d8a29a_2026_Parking_Map_Accessible.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/departments/parks___recreation/2026_Parking_Permit_Rules_and_Regs_Accessible.pdf?t=202610151946100",
+    "text": "Annual Beach Parking Permit Rules and Regulations",
+    "file": "data/city_files/Huntington_Beach/d06cfb_2026_Parking_Permit_Rules_and_Regs_Accessible.pdf",
+    "rows": 4,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Transportation/Parking/Oversized Vehicle Parking Permits/ordinance-4155.pdf?t=202404051224190",
+    "text": "Download the oversized vehicle ordinance 4155",
+    "file": "data/city_files/Huntington_Beach/b45d68_ordinance-4155.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/HarborPermit.pdf?t=202404051223550",
+    "text": "Dock Permit",
+    "file": "data/city_files/Huntington_Beach/000923_HarborPermit.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/Huntington-Harbour-Map.pdf?t=202404051224040",
+    "text": "MAP OF HUNTINGTON HARBOUR",
+    "file": "data/city_files/Huntington_Beach/d2b298_Huntington-Harbour-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/final-tract-parcel-map-checklist.pdf?t=202404051223470",
+    "text": "Final Tract & Parcel Map Checklist",
+    "file": "data/city_files/Huntington_Beach/575e84_final-tract-parcel-map-checklist.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/Lot-Line-Adjustment-Form-Handout.pdf?t=202404051224090",
+    "text": "Lot Line Adjustment Information",
+    "file": "data/city_files/Huntington_Beach/c1df6d_Lot-Line-Adjustment-Form-Handout.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/Lot-Line-Adjustment-Form.pdf?t=202404051224090",
+    "text": "Lot Line Adjustment Form",
+    "file": "data/city_files/Huntington_Beach/899f94_Lot-Line-Adjustment-Form.pdf",
+    "rows": 24,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/Haul Route Application.pdf?t=202404051223550",
+    "text": "Haul Route Application",
+    "file": "data/city_files/Huntington_Beach/98f288_Haul_Route_Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/Truck Route Map.pdf?t=202404051224490",
+    "text": "Truck Route Map",
+    "file": "data/city_files/Huntington_Beach/3474e4_Truck_Route_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Residential_Permit_Parking_Program_Website_Information.pdf?t=202404051224320",
+    "text": "Residential Parking Permits",
+    "file": "data/city_files/Huntington_Beach/ff2bd8_Residential_Permit_Parking_Program_Website_Information.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Public Works/Development Service/WaterMeterUpsize.pdf?t=202404051224520",
+    "text": "Water Meter Upsize",
+    "file": "data/city_files/Huntington_Beach/119d4c_WaterMeterUpsize.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Trash and Recycling/EDIBLE FOOD RECOVERY ORGANIZATIONS.pdf?t=202408221433020",
+    "text": "ist of local and County organizations",
+    "file": "data/city_files/Huntington_Beach/156626_EDIBLE_FOOD_RECOVERY_ORGANIZATIONS.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Trash and Recycling/2025 Transfer Station Rates - Effective 1.1.25.pdf?t=202501161555330",
+    "text": "Republic Services website",
+    "file": "data/city_files/Huntington_Beach/4f3186_2025_Transfer_Station_Rates_-_Effective_1.1.25.pdf",
+    "rows": 17,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Trash and Recycling/First Amendment - Rainbow Republic 2026 WEBSITE.pdf?t=202608031739410",
+    "text": "First Amendment to the Franchise Agreement",
+    "file": "data/city_files/Huntington_Beach/eb3354_First_Amendment_-_Rainbow_Republic_2026_WEBSITE.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Trash and Recycling/Solid-Waste-Franchise-Agreement.pdf?t=202404051227240",
+    "text": "Franchise Agreement",
+    "file": "data/city_files/Huntington_Beach/cf508c_Solid-Waste-Franchise-Agreement.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/2026_Parking_Map_Accessible.pdf?t=202610151942000",
+    "text": "Parking Map",
+    "file": "data/city_files/Huntington_Beach/dfdaf6_2026_Parking_Map_Accessible.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/departments/parks___recreation/2026_Parking_Permit_Rules_and_Regs_Accessible.pdf?t=202610151946100",
+    "text": "Annual Beach Parking Permit Rules and Regulations",
+    "file": "data/city_files/Huntington_Beach/41e482_2026_Parking_Permit_Rules_and_Regs_Accessible.pdf",
+    "rows": 4,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.huntingtonbeachca.gov/Documents/Departments/Transportation/Parking/Oversized Vehicle Parking Permits/ordinance-4155.pdf?t=202404051224190",
+    "text": "Download the oversized vehicle ordinance 4155",
+    "file": "data/city_files/Huntington_Beach/ab9a28_ordinance-4155.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Public Works/Engineering/Major Projects/Maintenenace Zone Map NEW 2023 v2.pdf?t=202404221901210",
+    "text": "Residential Paving Zone Map",
+    "file": "data/city_files/Huntington_Beach/8b5c26_Maintenenace_Zone_Map_NEW_2023_v2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Trash and Recycling/hb_rainbow_collection_schedule_map.pdf?t=202409261707170",
+    "text": "citywide map",
+    "file": "data/city_files/Huntington_Beach/d22282_hb_rainbow_collection_schedule_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Trash and Recycling/Commercial Rate Sheet Effective 2026.07.02.pdf?t=202608031456020",
+    "text": "Commercial Rate Sheet",
+    "file": "data/city_files/Huntington_Beach/97339c_Commercial_Rate_Sheet_Effective_2026.07.02.pdf",
+    "rows": 179,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://huntingtonbeachca.gov/Documents/Departments/Trash and Recycling/2024-Business-Recycling-Laws.pdf?t=202508062037330",
+    "text": "business recycling laws",
+    "file": "data/city_files/Huntington_Beach/07d13a_2024-Business-Recycling-Laws.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/2f70da48166d4d55bc4b656a1287f7b4": "Major Development Projects Interactive Map",
+   "https://huntingtonbeach.maps.arcgis.com/apps/webappviewer/index.html?id=b040870a1b8a4b089269b5316de22958": "Surf City Services Map."
+  }
+ },
+ "San Nicolás Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Waco": {
+  "files": [
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/city-secretarys-office/documents/map-all-council-districts.pdf",
+    "text": "All Council Districts (PDF, 2MB)",
+    "file": "data/city_files/Waco/a5f994_map-all-council-districts.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/city-secretarys-office/documents/map-council-district-1.pdf",
+    "text": "Council District One (PDF, 3MB)",
+    "file": "data/city_files/Waco/2a1a30_map-council-district-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/city-secretarys-office/documents/map-council-district-2.pdf",
+    "text": "Council District Two (PDF, 3MB)",
+    "file": "data/city_files/Waco/152279_map-council-district-2.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/city-secretarys-office/documents/map-council-district-3.pdf",
+    "text": "Council District Three (PDF, 3MB)",
+    "file": "data/city_files/Waco/b9917d_map-council-district-3.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/city-secretarys-office/documents/map-council-district-4.pdf",
+    "text": "Council District Four (PDF, 3MB)",
+    "file": "data/city_files/Waco/a2ed3c_map-council-district-4.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/city-secretarys-office/documents/map-council-district-5.pdf",
+    "text": "Council District Five (PDF, 2MB)",
+    "file": "data/city_files/Waco/1003c3_map-council-district-5.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/mpo/documents/resources/dem-cen-taz-maps.pdf",
+    "text": "2010 Household Income Estimates by Traffic Analysis Zone (PDF, 1MB)",
+    "file": "data/city_files/Waco/e73d52_dem-cen-taz-maps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/mpo/documents/resources/dem-cen-proj-forecast-map.pdf",
+    "text": "Maps (PDF, 4MB)",
+    "file": "data/city_files/Waco/24f7cf_dem-cen-proj-forecast-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/mpo/documents/resources/cav-smart-mobility.pdf",
+    "text": "Report: Smart Mobility Roadmap (PDF, 9MB)",
+    "file": "data/city_files/Waco/d4f55c_cav-smart-mobility.pdf",
+    "rows": 267,
+    "bike_rows": 33
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/trails/focus_group_presentation_05_06_21.pdf",
+    "text": "Focus Group Presentation (5/06/21) (PDF, 3MB)",
+    "file": "data/city_files/Waco/33b47f_focus_group_presentation_05_06_21.pdf",
+    "rows": 16,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/trails/tac_presentation_05_06_21.pdf",
+    "text": "Trails Advisory Committee Presentation (5/06/21) (PDF, 10MB)",
+    "file": "data/city_files/Waco/696986_tac_presentation_05_06_21.pdf",
+    "rows": 106,
+    "bike_rows": 64
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/trails/waco_surveymonkey_survey.pdf",
+    "text": "Online Survey (4/20/21 - 6/07/21) (PDF, 344KB)",
+    "file": "data/city_files/Waco/891536_waco_surveymonkey_survey.pdf",
+    "rows": 62,
+    "bike_rows": 29
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/trails/surveymonkey_interceptsurvey.pdf",
+    "text": "Trail Intercept Survey (5/23/21 - 6/05/21) (PDF, 980KB)",
+    "file": "data/city_files/Waco/f042e8_surveymonkey_interceptsurvey.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/trails/tac_presentation_06_28_21.pdf",
+    "text": "Trails Advisory Committee Presentation (6/28/21) (PDF, 5MB)",
+    "file": "data/city_files/Waco/ae9a4d_tac_presentation_06_28_21.pdf",
+    "rows": 65,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/trails/interactive-web-map.pdf",
+    "text": "Interactive Web-Map: Public Feedback (7/07/21 - 8/08/21) (PDF, 1MB)",
+    "file": "data/city_files/Waco/70fefe_interactive-web-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/trails/presentation-8_26.pdf",
+    "text": "Trails Advisory Committee Presentation (8/26/21) (PDF, 3MB)",
+    "file": "data/city_files/Waco/071015_presentation-8_26.pdf",
+    "rows": 45,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/trails/infobooth-banner-ad.pdf",
+    "text": "Public Engagement Booths (9/22/21) (PDF, 2MB)",
+    "file": "data/city_files/Waco/075cd2_infobooth-banner-ad.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/parks-amp-recreation/documents/historic-cemeteries-maintenance-management-plan.pdf",
+    "text": "City of Waco Historic Cemeteries Maintenance & Management Plan (PDF, 898KB)",
+    "file": "data/city_files/Waco/b12d31_historic-cemeteries-maintenance-management-plan.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/new-mammoth/new-folder/brochure-trifold-hiking-trails-of-waco-mammoth-pard-logo.pdf",
+    "text": "Trails Guide (PDF, 7MB)",
+    "file": "data/city_files/Waco/e572d7_brochure-trifold-hiking-trails-of-waco-mammoth-pard-logo.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/william_cameron_disc_golf_map-23.pdf",
+    "text": "Cameron Park Disc Golf Course Map (PDF, 1MB)",
+    "file": "data/city_files/Waco/de7ee8_william_cameron_disc_golf_map-23.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/parks-amp-recreation/documents/trails/cameron-park-trail-system-map.pdf",
+    "text": "Trail System Map (PDF, 3MB)",
+    "file": "data/city_files/Waco/8371b1_cameron-park-trail-system-map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://wacotexas.finance.socrata.com/": "Transparency Portal View dashboard about financial transparency and check register.",
+   "https://wacogis.maps.arcgis.com/apps/instant/basic/index.html?appid=1ba29d4295b14ae2a73a6fe7e867acad": "Fullscreen View",
+   "https://experience.arcgis.com/experience/6c0166bfc5144afe83926a3a529a8d03": "Statewide Traffic Count Map",
+   "https://gis-txdot.opendata.arcgis.com/datasets/d5f56ecd2b274b4d8dc3c2d6fe067d37_0/explore": "AADT Count Map",
+   "https://experience.arcgis.com/experience/27c3321850fa451291ecd3764ff5bc78": "Fullscreen View",
+   "https://experience.arcgis.com/experience/baf6660daab44fe39b761325e59efd48": "Click Here for Fullscreen View",
+   "https://services2.arcgis.com/oUXiR7ziAPAzGw6X/arcgis/rest/services/WacoRoadClosuresApp-RoadCloseLayer_View/FeatureServer/1": "Feature Service URL",
+   "https://services2.arcgis.com/oUXiR7ziAPAzGw6X/arcgis/rest/services/WacoRoadClosuresApp-RoadCloseLayer_View/FeatureServer/1/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=true&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=4326&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token=": "JSON URL",
+   "https://experience.arcgis.com/experience/74b7f449d9d644b18da6ed831d6ee755": "Fullscreen View",
+   "https://experience.arcgis.com/experience/ce62b826b60842a98d44433d22a45211": "Fullscreen View",
+   "https://wacogis.maps.arcgis.com/apps/mapviewer/index.html?webmap=b5831e610de14000a04b2709861aa6f9": "Fullscreen View"
+  }
+ },
+ "Hartford": {
+  "files": [],
+  "portals": {}
+ },
+ "Everett": {
+  "files": [],
+  "portals": {}
+ },
+ "Zonguldak": {
+  "files": [],
+  "portals": {}
+ },
+ "Fayetteville": {
+  "files": [],
+  "portals": {}
+ },
+ "Auburn": {
+  "files": [
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Parks, Arts, & Recreation/Recreation/MTB/PumpTrackRules_Final.pdf",
+    "text": "park rules",
+    "file": "data/city_files/Auburn/ecbfe3_PumpTrackRules_Final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Parks,%20Arts,%20&%20Recreation/pump%20track%20rules.pdf",
+    "text": "Pump Track Rules",
+    "file": "data/city_files/Auburn/e43498_pump_20track_20rules.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Community%20Services/Housing%20Repair/Home%20Repair%20Program%20Income%20Limits%20-%20FINAL.pdf",
+    "text": "income requirements",
+    "file": "data/city_files/Auburn/1e5a56_Home_20Repair_20Program_20Income_20Limits_20-_20FINAL.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Community Services/Housing Repair/June 2024 - Update/2024 Housing Repair Letter.pdf",
+    "text": "Housing Repair Assistance Cover Letter",
+    "file": "data/city_files/Auburn/153b6c_2024_Housing_Repair_Letter.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Mountain%20View%20Cemetery/Map/Cemetery%20Map%20-%20Updated%20%205-2025.pdf",
+    "text": "Download printable version of the Cemetery Map",
+    "file": "data/city_files/Auburn/e7089a_Cemetery_20Map_20-_20Updated_20_205-2025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Parks,%20Arts,%20&%20Recreation/Community%20Garden%20Program/garden%20plot%20map.pdf",
+    "text": "8th Street Garden Plot Map",
+    "file": "data/city_files/Auburn/e40596_garden_20plot_20map.pdf",
+    "rows": 11,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Parks,%20Arts,%20&%20Recreation/Special%20Events/Petpalooza/27_Public%20Driving%20Directions%20and%20Parking%20Information.pdf",
+    "text": "Public Driving Directions & Parking Information",
+    "file": "data/city_files/Auburn/66e17c_27_Public_20Driving_20Directions_20and_20Parking_20Information.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Parks,%20Arts,%20&%20Recreation/Special%20Events/Kids%20Day/27_public%20driving%20directions%20and%20parking%20info.pdf",
+    "text": "Public Driving Directions & Parking Information",
+    "file": "data/city_files/Auburn/041394_27_public_20driving_20directions_20and_20parking_20info.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Public%20Works/Water/How%20to%20Read%20my%20Meter.pdf",
+    "text": "How to Read My Meter",
+    "file": "data/city_files/Auburn/d5dd6b_How_20to_20Read_20my_20Meter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Utility%20Billing/Garbage/Litter%20Crew%20Routes.pdf",
+    "text": "route maps",
+    "file": "data/city_files/Auburn/4c7a75_Litter_20Crew_20Routes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Community Services/Housing Repair/June 2024 - Update/2024 Housing Repair Letter.pdf",
+    "text": "Housing Repair Assistance Cover Letter",
+    "file": "data/city_files/Auburn/b8cc69_2024_Housing_Repair_Letter.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Community Development/Zoning and Land Use/Public Land Use Notices/CPA23-0003/30 - FINAL_CPM1 Exhibit A - Bridges Annexation Proposed Land Use Map Amendment.pdf",
+    "text": "Proposed Comprehensive Plan Land Use Map Amendment",
+    "file": "data/city_files/Auburn/a2ee4d_30_-_FINAL_CPM1_Exhibit_A_-_Bridges_Annexation_Proposed_Land_Use_Map_A",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Community Development/Zoning and Land Use/Public Land Use Notices/CPA23-0003/31 - FINAL_CPM1 Exhibit B - Bridges Annexation Proposed Zoning Map Amendment.pdf",
+    "text": "Proposed Zoning Map Amendment",
+    "file": "data/city_files/Auburn/7cf4b7_31_-_FINAL_CPM1_Exhibit_B_-_Bridges_Annexation_Proposed_Zoning_Map_Ame",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Community%20Development/Zoning%20and%20Land%20Use/Public%20Land%20Use%20Notices/SEP25-0013/Draft%20Comprehensive%20Map%20Update.pdf",
+    "text": "Comprehensive Plan Map Amendment",
+    "file": "data/city_files/Auburn/ac9f1c_Draft_20Comprehensive_20Map_20Update.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Community%20Development/Zoning%20and%20Land%20Use/Public%20Land%20Use%20Notices/SEP25-0010/CPA25-0004_Amendment%20Map.pdf",
+    "text": "Amendment Map",
+    "file": "data/city_files/Auburn/1dfce2_CPA25-0004_Amendment_20Map.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Community%20Development/Zoning%20and%20Land%20Use/Public%20Land%20Use%20Notices/SEP26-0021/Citywide%20SEPA%20Checklist%20-%20Parking%20Code%20Update.pdf",
+    "text": "SEPA Environmental Checklist",
+    "file": "data/city_files/Auburn/1b1f18_Citywide_20SEPA_20Checklist_20-_20Parking_20Code_20Update.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Community%20Development/Zoning%20and%20Land%20Use/Public%20Land%20Use%20Notices/SEP26-0021/Off-Street%20Parking%20Code%20Update%20Combined%20Sections.pdf",
+    "text": "Text Amendment",
+    "file": "data/city_files/Auburn/21ffe7_Off-Street_20Parking_20Code_20Update_20Combined_20Sections.pdf",
+    "rows": 117,
+    "bike_rows": 24
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Public Works/Capital Projects/G ST SE Open House/Open House  Map.pdf",
+    "text": "View the Map",
+    "file": "data/city_files/Auburn/7490da_Open_House_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Public%20Works/Capital%20Projects/Notice%20of%20Road%20Work/CP2515%20-%20Road%20Work%20Notice%20Flyer.pdf",
+    "text": "CP2515 - 124th Ave SE Transit Improvements",
+    "file": "data/city_files/Auburn/8d3a62_CP2515_20-_20Road_20Work_20Notice_20Flyer.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Public%20Works/Capital%20Projects/Capital%20Project%20Forms/CP2419%20City%20Parking%20Lot%20Replacement.pdf",
+    "text": "CP2419 City Parking Lot Replacement",
+    "file": "data/city_files/Auburn/6f17da_CP2419_20City_20Parking_20Lot_20Replacement.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Public%20Works/Transportation/Traffic%20Advisories/Notification%20Flyers%20Safe%20Route.pdf",
+    "text": "CP2332 Lea Hill Safe Routes to School",
+    "file": "data/city_files/Auburn/db5e2d_Notification_20Flyers_20Safe_20Route.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Public Works/Capital Projects/CP1927 MAP.pdf",
+    "text": "CP1927 MAP",
+    "file": "data/city_files/Auburn/8ef4cc_CP1927_MAP.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Public Works/Capital Projects/MAP.pdf",
+    "text": "Map",
+    "file": "data/city_files/Auburn/9a26be_MAP.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Public Works/Capital Projects/CP2121 - MAP.pdf",
+    "text": "map",
+    "file": "data/city_files/Auburn/744811_CP2121_-_MAP.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/GIS Maps/Snowandiceroutes.pdf",
+    "text": "snow and ice route map",
+    "file": "data/city_files/Auburn/f61dee_Snowandiceroutes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Public Works/Transportation/Street Preservation/2018 Citywide Patch & Overlay Vicinity Map.pdf",
+    "text": "2018 Citywide Patch & Overlay Project",
+    "file": "data/city_files/Auburn/eab0fd_2018_Citywide_Patch_Overlay_Vicinity_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Public Works/Transportation/Street Preservation/2018 Arterial Crack Seal Project.pdf",
+    "text": "2018 Citywide Crackseal Project",
+    "file": "data/city_files/Auburn/5a87df_2018_Arterial_Crack_Seal_Project.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Public Works/Transportation/Street Preservation/B Street NW Vicinity Map.pdf",
+    "text": "2016 – 2017 B Street NW Reconstruction Project",
+    "file": "data/city_files/Auburn/d5575c_B_Street_NW_Vicinity_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Public Works/Transportation/Parking/Ordinance 6633.pdf",
+    "text": "Ordinance 6633",
+    "file": "data/city_files/Auburn/a0cfc0_Ordinance_6633.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Public Works/Transportation/Parking/Downtown Traffic Control Zone.pdf",
+    "text": "View a map",
+    "file": "data/city_files/Auburn/154e59_Downtown_Traffic_Control_Zone.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Public Works/Transportation/Commercial Vehicles - Trucks & Trailers/Map 2.3 Truck Routes.pdf",
+    "text": "truck route",
+    "file": "data/city_files/Auburn/3589ef_Map_2.3_Truck_Routes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Public%20Works/Transportation/Commercial%20Vehicles%20-%20Trucks%20&%20Trailers/D%20St%20NW.pdf",
+    "text": "D Street NW Map",
+    "file": "data/city_files/Auburn/624c0d_D_20St_20NW.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Public%20Works/Transportation/Commercial%20Vehicles%20-%20Trucks%20&%20Trailers/E%20Street%20NE.pdf",
+    "text": "E Street NE Map",
+    "file": "data/city_files/Auburn/f98b5f_E_20Street_20NE.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://auburn.maps.arcgis.com/apps/opsdashboard/index.html": "Real-Time Traffic Conditions",
+   "https://experience.arcgis.com/experience/fd4da57b08a34e5ea4c540a86b76f1ca": "Interactive Capital Projects Mapping Tool",
+   "https://experience.arcgis.com/experience/bc195905fdfc4ca1bd8162792ba76fc6": "interactive map",
+   "https://storymaps.arcgis.com/stories/0e37300203bb47479d5bfaae75a3b0ab": "Interactive Trails Map",
+   "https://auburn.maps.arcgis.com/apps/dashboards/274a6aeebd6843bc95ed32aa3c5be806 ": "Fluoride Map",
+   "https://gis.auburnwa.gov/surveymonumentsviewer/Prod/index.html": "Survey Monuments Public Viewer",
+   "https://auburn.maps.arcgis.com/apps/dashboards/611f240682dd445291dae10660e29563": "Transportation Impact Fee Interactive Map",
+   "https://storymaps.arcgis.com/stories/2d9fe1e0980044fbb4bf78c2056450eb": "Comprehensive Transportation Plan Projects",
+   "https://gis.auburnwa.gov/trafficimpactfeeestimator/prod/index.html": "TIF Estimation Tool",
+   "https://auburn.maps.arcgis.com/apps/instant/sidebar/index.html?appid=79b8c27a365f4f599ac52d85cc810449": "Water Service Line Material Interactive Map",
+   "https://storymaps.arcgis.com/stories/26828de0c81649988510289deb220263": "partner planning website"
+  }
+ },
+ "Bilecik": {
+  "files": [],
+  "portals": {}
+ },
+ "Pawtucket": {
+  "files": [],
+  "portals": {}
+ },
+ "Chivilcoy Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Haverhill": {
+  "files": [],
+  "portals": {}
+ },
+ "Greenwood": {
+  "files": [],
+  "portals": {
+   "https://maps-greenwood.hub.arcgis.com/": "https://maps-greenwood.hub.arcgis.com/",
+   "https://greenwood.maps.arcgis.com/apps/webappviewer/index.html?id=409b4ba529574073b8a1c0e1a62b1184": "City Boundary Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=85950dcb6eb04628ba585e697b640786": "Trash Service Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=00abece25dd241fe80a7bb485f197b2a": "Utility Coverage Map for Johnson County",
+   "https://greenwood.maps.arcgis.com/apps/instant/lookup/index.html?appid=c0cc804bf7dc49b1b6c3897870c6292a": "Zoning Map",
+   "https://greenwood.maps.arcgis.com/apps/webappviewer/index.html?id=4552a7b6cf56449b983e6b1f9f7d09a2": "Adopt-A-Spot Location Map",
+   "https://greenwoodgis.greenwood.in.gov/portal/apps/experiencebuilder/experience/?id=df6596fac88a41c6b9d411ac06a0a5a9": "Comprehensive Plan Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=f0de992eb7584248b57c464dd3fafa9d": "Construction / Traffic Notices Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=72fbf4f8f94d4b2db7cdf744d25acfa6": "Council Districts Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=264e936e2c324d9f9638e135e8e5bf3e": "Johnson County Historical Markers Map",
+   "https://greenwood.maps.arcgis.com/apps/webappviewer/index.html?id=eab71f57bbdb4502841f336a44a86f24": "Leaf Pickup Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=19ea7f5730a24276b22982cd01858afb": "Legal Drains Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=116d04137d314e289317a87269284cf5": "Letters of Map Amendment Map",
+   "https://experience.arcgis.com/experience/7182793585ff4bc69ad28c12017d65a2": "Library Districts Map",
+   "https://greenwood.maps.arcgis.com/apps/webappviewer/index.html?id=08c0617c6d9a47b48fcf984ccd588096": "Limb Pickup Map",
+   "https://greenwood.maps.arcgis.com/apps/webappviewer/index.html?id=c08eab5b36d74bd18307481985ed550d": "Parks and Trails Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=43bf21ba7cd243e5821833f2f51a7472": "Road Ownership Map",
+   "https://greenwood.maps.arcgis.com/apps/webappviewer/index.html?id=065a01db82394ac68d07c63b0b93f73a": "Snow Plow Map",
+   "https://greenwoodgis.greenwood.in.gov/portal/apps/experiencebuilder/experience/?id=fbe8fc4be4b34b96a8e89754cda14761": "Upcoming Planning Cases Map",
+   "https://www.arcgis.com/sharing/rest/content/items/847adaf7852448e89c41f5a57bc86005/data": "2023 Community Crossing Grant",
+   "https://www.arcgis.com/sharing/rest/content/items/f81082bdf1a74d969d99501e107021db/data": "2024 Annual Paving Project",
+   "https://www.arcgis.com/sharing/rest/content/items/3d345aa682834c03bfac60ff11162f0e/data": "2024-2 Community Crossing Grant",
+   "https://www.arcgis.com/sharing/rest/content/items/3bb97c98d1484ca2ae01c9029fa46081/data": "2025 Annual Paving Project",
+   "https://greenwood.maps.arcgis.com/apps/Viewer/index.html?appid=1cf034089b9043f39355ad942bef204b": "View Map"
+  }
+ },
+ "Euless": {
+  "files": [],
+  "portals": {}
+ },
+ "Tirur Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Brookhaven": {
+  "files": [],
+  "portals": {
+   "https://data-brookhavenga.opendata.arcgis.com/search?groupIds=7992fb499a644fc18ae18c8d728d6cfe&layout=grid&sort=Title%7Ctitle%7Casc": "PDF Maps",
+   "https://data-brookhavenga.opendata.arcgis.com/": "",
+   "https://brookhavenga.gov/712/Web-Apps-Open-Data": "Web Apps & Open Data",
+   "https://survey123.arcgis.com/share/02cd244f7239450dbedb8b6e7ef3bbf4": "register their current leadership",
+   "https://storymaps.arcgis.com/stories/e4129976077b4b78b635302c146e32db": "",
+   "https://brookhavenga.maps.arcgis.com/apps/CrowdsourceReporter/index.html?appid=b14784e1b33046c1bbf05b5036ed351d": "Submit an Idea",
+   "https://ashford-dunwoody-windsor-roundabout-0016056-gdot.hub.arcgis.com/": "Ashford Dunwoody Road (ADR) / Windsor Parkway Public Input",
+   "http://transform285400-gdot.hub.arcgis.com/": "I-285 SR 400",
+   "https://i85-sr42-interchange-0016054-gdot.hub.arcgis.com/": "",
+   "https://i285topendexpresslanes-gdot.hub.arcgis.com/": "I-285 Top End Perimeter Express Lanes",
+   "https://transform285400-gdot.hub.arcgis.com/": "",
+   "https://brookhavenga-data.finance.socrata.com": "Brookhaven Open Finance",
+   "http://brookhavenga-data.finance.socrata.com/": "View and Download (opens in a new tab)",
+   "https://de-kalb-county-sanitation-roll-cart-program-dekalbgis.hub.arcgis.com/": "Roll Cart Requests",
+   "https://survey123.arcgis.com/share/d2bbb0b044fd45a291c28a490673f4b1?portalUrl=https://DeKalbGIS.maps.arcgis.com": "Bulky Item Collection",
+   "https://www.brookhavenga.gov/712/Web-Apps-Open-Data": "Web Apps & Open Data"
+  }
+ },
+ "Logan": {
+  "files": [],
+  "portals": {
+   "http://gis.loganutah.org/HistoricDistrict/": "GIS Historic Tour",
+   "http://logan.maps.arcgis.com/home/index.html": "Maps",
+   "https://logan.maps.arcgis.com/apps/MapJournal/index.html?appid=7ebafa0814bd493e937eac8254d88d12": "Course Tour",
+   "https://logan.maps.arcgis.com/apps/Shortlist/index.html?appid=e9165804506f4d95a45b55a096b64aa4": "Park Tours",
+   "https://storymaps.arcgis.com/stories/3353013582594a498af3b55ba4ac0be2": "Trail Counter StoryMaps",
+   "https://loganutah.org/government/departments/public_works/government/departments/public_works/gis.php": ":",
+   "https://loganutah.org/work_here/government/departments/public_works/gis.php": "Maps"
+  }
+ },
+ "Milford": {
+  "files": [
+   {
+    "url": "https://milfordct.myrec.com/forms/7146_beach_parking_faqs_2025_3.21.25.pdf",
+    "text": "Beach Parking-Frequently Asked Questions (Link) Provided by Recreation Department",
+    "file": "data/city_files/Milford/bc14a5_7146_beach_parking_faqs_2025_3.21.25.pdf",
+    "rows": 18,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://portal.ct.gov/-/media/decd/historic-preservation/03_technical_assistance_research/research/ct_digital_resources_for_researchers_final.pdf?rev=ffe32c8565264d66af802aeaca11b428&hash=3CD6268AEA261C35F5FC06E6532CE5C4",
+    "text": "here",
+    "file": "data/city_files/Milford/c98f52_ct_digital_resources_for_researchers_final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclect.org/wp-content/uploads/2023/04/RecycleCT_Flyer_V1_12.19.22.pdf",
+    "text": "GET TO KNOW RECYCLING DOWNLOAD",
+    "file": "data/city_files/Milford/152882_RecycleCT_Flyer_V1_12.19.22.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://milford-ct.maps.arcgis.com/apps/instant/basic/index.html?appid=25757df3f5794ff8b17a93dd40b21a6c": "Downtown Arboretum Tree Inventory",
+   "https://storymaps.arcgis.com/stories/5636f304f5744d33a33118c387e2a062": "Milford Open Space StoryMap",
+   "https://milford-ct.maps.arcgis.com/home/webmap/viewer.html?webmap=2c041ed4c04f4ceaabd8986ab55ce975": "Vertical & Horizontal Control Points",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=4fef0f26a187479a84e70d7f8bbe7121&extent=-73.1373,41.1607,-72.8837,41.2818": "City Flood Zone Map",
+   "http://milford-ct.maps.arcgis.com/apps/webappviewer/index.html?id=8b0a7cb2e32047cf8fe18ca1863249aa": "New! Milford's Flood Zone Information",
+   "https://milford-ct.maps.arcgis.com/apps/Viewer/index.html?appid=d2f2e8a23c424de4a553529f0f57564d": "Vertical and Horizontal Control Points",
+   "https://experience.arcgis.com/experience/9d22cdae8b7542b88e0d555a3eb92949": "Go To NFHL Viewer »"
+  }
+ },
+ "Stillwater": {
+  "files": [],
+  "portals": {}
+ },
+ "Westfield": {
+  "files": [
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/3_000_ft_Buffer/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/acd0c1_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Comprehensive_Plan/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/a819db_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Downtown_RFD/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/dec434_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Grand_Junction_RFD__Ord__18_06_/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/dd056f_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Grand_Park_RFD/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/8979a2_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Residential_220421/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/395a06_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Waterways/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/a3ddb2_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/BuildingPermits/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/07c1c6_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/ConceptPlan/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/42bce5_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/Thoroughfare/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/387450_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/Vacant_Properties/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/20d8a7_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/WhatsHappeningHere/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/685c93_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/Zoning/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/59681e_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Fiber/Fiber/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/aa02e9_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/GrandPark/GrandPark/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/b19642_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Hosted/Westfield_ED_Local_Scene_2_WSL1/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/ec04d5_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Hosted/Westfield_ED_Local_Scene_WSL1/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/a70b90_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Hosted/Westfield_Scene_ED_WSL1/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/466675_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/ImageServices/GIS_DBO_IT_JacksonTownship1866/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/a11955_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/ImageServices/Hamilton_2020_prelim/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/a5783a_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Informatics/Addresses/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/76a7bf_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Informatics/Community_Map_Updates/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/3f678e_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Informatics/Drone_Projects/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/044641_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Informatics/FCC__Towers/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/f88e19_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Informatics/Fiber_Network_Events/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/c0c344_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Informatics/Forest_Canopy/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/297601_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Informatics/Ironstone_Concept/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/ecc5d7_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Informatics/Parcels/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/8bd359_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Informatics/Underground_Railroad/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/804115_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Parks/BikeRoutes/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/3292f6_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Parks/Parks/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/76d7f7_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Parks/TrailAmbassadors/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/29ed95_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Parks/Trails2/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/c45124_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/Parks/TreeInventory/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/115110_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/PublicSafety/Fire/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/187c00_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/PublicSafety/Healthcare/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/06e622_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/PublicSafety/Police/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/02925e_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/PublicSafety/TrainingFacility/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/b9bee0_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/PublicSafety/Warning_Sirens_1_mile_buffer/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/a1ae74_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.westfield.in.gov/arcgis/rest/services/PublicWorks/CapitalImprovement/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/city_files/Westfield/96e3ca_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/a6d796adee1c44acbeed0ef85a872b4a": "What's Building Here?",
+   "https://storymaps.arcgis.com/stories/5890365756964fd38c50e1d6eb207f97": "What's Happening Here?",
+   "https://experience.arcgis.com/experience/dbe603b75aa2455c9e906eca12ceeacd": "Westfield IN GIS Map Experience",
+   "https://storymaps.arcgis.com/stories/f0d8047a9fba49839adb4e736e7c33c0": "Economic Impact of GIS",
+   "https://gisdata.in.gov/server/rest/services": "Westfield REST Data",
+   "https://di-ingov.img.arcgis.com/arcgis/rest/services": "Indiana REST Ortho Imagery",
+   "http://data.indy.gov/": "Indianapolis Data Download Site",
+   "https://data.census.gov/cedsci/profile?g=1600000US1882700": "2020 Decennial Census Data",
+   "https://experience.arcgis.com/experience/619d96a48c8241cbad905b9e640c157f": "Hamilton County General Viewer",
+   "https://indnr.maps.arcgis.com/apps/webappviewer/index.html?id=05026dabc2e8461983e196d56a213c1e": "Indiana Floodplain Information Portal (DNR)",
+   "https://idhs.maps.arcgis.com/apps/dashboards/1066ea0e9bb947d4aa2a698151259bcc": "Cooling Centers",
+   "https://ingov.maps.arcgis.com/apps/dashboards/501bd35e44c64a5394406d2f92392e4c": "Residential Fire Fatalities",
+   "https://experience.arcgis.com/experience/a6981edcd8ee4906a8c501b1126081ce": "View map on full screen",
+   "https://experience.arcgis.com/experience/0b324cabf7b94d9ca34caa9361122d94/": "View Map",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/3_000_ft_Buffer/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/Comprehensive_Plan/FeatureServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/Comprehensive_Plan/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/Downtown_RFD/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/Grand_Junction_RFD__Ord__18_06_/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/Grand_Park_RFD/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/Residential_220421/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/Waterways/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://experience.arcgis.com/experience/adbb6a4a0c30449baa68ee5e9ae1bfe1": "View map on full screen",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/BuildingPermits/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/ConceptPlan/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/Thoroughfare/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/Vacant_Properties/FeatureServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/Vacant_Properties/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/WhatsHappeningHere/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.westfield.in.gov/arcgis/rest/services/CommunityDev/Zoning/MapServer&source=sd": "ArcGIS Online Map Viewer"
+  }
+ },
+ "Lompoc": {
+  "files": [],
+  "portals": {}
+ },
+ "Gainesville": {
+  "files": [],
+  "portals": {}
+ },
+ "Chelsea": {
+  "files": [],
+  "portals": {}
+ },
+ "Amherst": {
+  "files": [],
+  "portals": {}
+ },
+ "Stanton": {
+  "files": [
+   {
+    "url": "https://cms9files.revize.com/stantoncanew/Stanton%20Permit%20Parking%20Guidelines%20-%202019%20Final.pdf?t=202505230902110&t=202505230902110",
+    "text": "Permit Parking Guidelines",
+    "file": "data/city_files/Stanton/2a3a71_Stanton_20Permit_20Parking_20Guidelines_20-_202019_20Final.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://ci.stanton.ca.us/Stanton Permit Parking Guidelines - 2019 Final.pdf?t=202505230902110",
+    "text": "here",
+    "file": "data/city_files/Stanton/acfc4d_Stanton_Permit_Parking_Guidelines_-_2019_Final.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cms9files.revize.com/stantoncanew/E-Bike%20Classification.pdf?t=202512041337130&t=202512041337130",
+    "text": "E-Bike Classifications",
+    "file": "data/city_files/Stanton/895837_E-Bike_20Classification.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.stanton.ca.us/E-Bike Classification.pdf?t=202512041337130",
+    "text": "Class 3",
+    "file": "data/city_files/Stanton/0ff434_E-Bike_Classification.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.census.gov/cedsci/": "Explore additional Census data here."
+  }
+ },
+ "Victoria": {
+  "files": [],
+  "portals": {}
+ },
+ "Veinticinco de Mayo Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Deer Park": {
+  "files": [
+   {
+    "url": "https://gis.deerparktx.gov/City%20Map%20Book.pdf",
+    "text": "City Map Book PDF",
+    "file": "data/city_files/Deer_Park/6f28b9_City_20Map_20Book.pdf",
+    "rows": 118,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://tpwd.texas.gov/landwater/water/conservation/water_resources/water_quantity/sigsegs/media/region_h_map.pdf",
+    "text": "Map of Region H",
+    "file": "data/city_files/Deer_Park/abe5f2_region_h_map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.deerparktx.gov/portal/apps/storymaps/stories/91271947354e46a68c6337324f3d8968": "Projects Around Town View new construction and improvement projects.",
+   "https://gis.deerparktx.gov/portal/apps/experiencebuilder/experience/?id=562e6ce21f6b405e86048dddc44044d3": "City Facilities",
+   "https://gis.deerparktx.gov/portal/apps/experiencebuilder/experience/?id=1948add6cbc241cda4b5907985dc40ff": "Economic Development",
+   "https://gis.deerparktx.gov/portal/apps/experiencebuilder/experience/?id=d1b2a8e4e7584ff7a5a6f2d79c180890": "GIS Web Experience",
+   "https://gis.deerparktx.gov/portal/apps/experiencebuilder/experience/?id=af914814999c4759a4c2049fd5adcc7d": "Historical Imagery",
+   "https://gis.deerparktx.gov/portal/apps/experiencebuilder/experience/?id=c3fd7fc62d054486879bfd91d4013476": "Parks",
+   "https://gis.deerparktx.gov/portal/apps/experiencebuilder/experience/?id=1cafbd102a08428c94e63d9edcc8f452": "Property",
+   "https://gis.deerparktx.gov/portal/apps/experiencebuilder/experience/?id=f69c0b0979094bd58e07e87dfb637143": "Public Safety",
+   "https://gis.deerparktx.gov/portal/apps/experiencebuilder/experience/?id=9f41f10a0faa4b27b5a48e91f5b9fc0c": "Recycling",
+   "https://gis.deerparktx.gov/portal/apps/experiencebuilder/experience/?id=957387fb9a0a47f3a2bf94440a434710": "Subdivisions",
+   "https://gis.deerparktx.gov/portal/apps/experiencebuilder/experience/?id=e4a3b17a41cf4452a136f35828a6037c": "Zoning Map",
+   "https://gis.deerparktx.gov/wab/giswebapp/": "Deer Park City Limits",
+   "https://gis.deerparktx.gov/": "GIS Maps",
+   "http://gis.deerparktx.gov/": "GIS Maps for Deer Park"
+  }
+ },
+ "Mar Chiquita Partido": {
+  "files": [],
+  "portals": {
+   "https://www.marchiquita.gob.ar/2026/01/21/slapp-loss-lyckan-plinko-dar-strategisk-satsning-moter-slumpens-spel-i-ett-fangslande-regn-av-mojl/": "Deslizar arriba"
+  }
+ },
+ "Dolores Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Opelika": {
+  "files": [],
+  "portals": {}
+ },
+ "Fountain": {
+  "files": [],
+  "portals": {}
+ },
+ "Brownsburg": {
+  "files": [],
+  "portals": {}
+ }
+}
