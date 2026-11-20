@@ -1,0 +1,2764 @@
+{
+ "state:alaskadot.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "state:itd.idaho.gov": {
+  "files": [
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2025/06/BikeMap2010.pdf",
+    "text": "Bike Map of Idaho (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/62bb34_BikeMap2010.pdf",
+    "rows": 26,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2025/06/Rails-Trails-Idaho.pdf",
+    "text": "Idaho Rails to Trails",
+    "file": "data/gov_sources/state_itd_idaho_gov/40cf99_Rails-Trails-Idaho.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2025/06/USBR-10-Maps.pdf",
+    "text": "US Bicycle Route 10 Maps",
+    "file": "data/gov_sources/state_itd_idaho_gov/fc3623_USBR-10-Maps.pdf",
+    "rows": 63,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2025/06/USBR-10-Routes.pdf",
+    "text": "US Bicycle Route 10 Descriptions",
+    "file": "data/gov_sources/state_itd_idaho_gov/074ee8_USBR-10-Routes.pdf",
+    "rows": 32,
+    "bike_rows": 19
+   },
+   {
+    "url": "https://apps.itd.idaho.gov/apps/pt/SWPTP/Appendix_E_Toolbox.pdf",
+    "text": "Appendix E- Transit Toolbox",
+    "file": "data/gov_sources/state_itd_idaho_gov/b50db8_Appendix_E_Toolbox.pdf",
+    "rows": 55,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://apps.itd.idaho.gov/apps/pt/Transporter/TransitDay.pdf",
+    "text": "Transit Day at the Capitol",
+    "file": "data/gov_sources/state_itd_idaho_gov/4711fd_TransitDay.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://apps.itd.idaho.gov/apps/pt/Transporter/gift.pdf",
+    "text": "Greater Idaho Falls Transit (GIFT)",
+    "file": "data/gov_sources/state_itd_idaho_gov/9b4982_gift.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://apps.itd.idaho.gov/apps/pt/Transporter/LTS.pdf",
+    "text": "Lewiston Transit",
+    "file": "data/gov_sources/state_itd_idaho_gov/be74b1_LTS.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://apps.itd.idaho.gov/apps/pt/Transporter/TVT.pdf",
+    "text": "Treasure Valley Transit",
+    "file": "data/gov_sources/state_itd_idaho_gov/5d4cc9_TVT.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://apps.itd.idaho.gov/apps/pt/Transporter/TFT.pdf",
+    "text": "Twin Falls Transit",
+    "file": "data/gov_sources/state_itd_idaho_gov/4f8a4b_TFT.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://apps.itd.idaho.gov/apps/pt/Transporter/VRT.pdf",
+    "text": "Valley Regional Transit",
+    "file": "data/gov_sources/state_itd_idaho_gov/40a497_VRT.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2025/05/3036_Permanent_Trailer_Plate_Application.pdf",
+    "text": "Permanent Trailer Plate Application (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/c7e888_3036_Permanent_Trailer_Plate_Application.pdf",
+    "rows": 18,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://apps.itd.idaho.gov/apps/pt/PTAC/20260903PTACAgenda.pdf",
+    "text": "September 03, 2026 Agenda",
+    "file": "data/gov_sources/state_itd_idaho_gov/fae61c_20260903PTACAgenda.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2025/05/NHSMap102816_Approved.pdf",
+    "text": "National Highway System Map (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/5409a5_NHSMap102816_Approved.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2025/05/2025StateHighwayFC_10282016.pdf",
+    "text": "2025 State Highway System Functional Classification Map (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/df066c_2025StateHighwayFC_10282016.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2025/05/MPOBoundaryMap.pdf",
+    "text": "Idaho's Metropolitan Planning Organization's Boundary Map (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/68137f_MPOBoundaryMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2026/04/Motorcycle_manual.pdf",
+    "text": "Motorcycle handbook (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/f82394_Motorcycle_manual.pdf",
+    "rows": 21,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2025/04/3063.pdf",
+    "text": "Paper motorcycle endorsement form (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/14bd05_3063.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2026/04/ClassD_Motorcycle_Examiners_D1.pdf",
+    "text": "North Idaho skills examiners (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/679ee8_ClassD_Motorcycle_Examiners_D1.pdf",
+    "rows": 42,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2026/08/ClassD_Motorcycle_Examiners_D2.pdf",
+    "text": "North central Idaho skills examiners (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/589454_ClassD_Motorcycle_Examiners_D2.pdf",
+    "rows": 24,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2026/08/ClassD_Motorcycle_Examiners_D3.pdf",
+    "text": "Southwest Idaho skills examiners (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/ae5d2e_ClassD_Motorcycle_Examiners_D3.pdf",
+    "rows": 87,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2026/01/ClassD_Motorcycle_Examiners_D4.pdf",
+    "text": "South central Idaho skills examiners (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/eb56e5_ClassD_Motorcycle_Examiners_D4.pdf",
+    "rows": 35,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2026/08/ClassD_Motorcycle_Examiners_D5.pdf",
+    "text": "Southeast Idaho skills test examiners (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/bc7eb4_ClassD_Motorcycle_Examiners_D5.pdf",
+    "rows": 37,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://itd.idaho.gov/wp-content/uploads/2026/04/ClassD_Motorcycle_Examiners_D6.pdf",
+    "text": "East Idaho skills test examiners (PDF)",
+    "file": "data/gov_sources/state_itd_idaho_gov/589485_ClassD_Motorcycle_Examiners_D6.pdf",
+    "rows": 35,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/fbfe634edf704e4bba7f22ac195280ed/": "Airport Facility Directory",
+   "https://iplan.maps.arcgis.com/home/gallery.html?sortField=numviews&sortOrder=desc": "Gallery for ITD Maps & Data",
+   "https://experience.arcgis.com/experience/13bc8f0665da4531a69fdeb49ac42a9c": "Idaho's Highway System",
+   "https://experience.arcgis.com/experience/99fe854c68fa4d3ca6dd50f2354df561": "Milepost Log for Highways",
+   "https://idaho-highway-historical-markers-iplan.hub.arcgis.com/": "Idaho's Historical Markers Map",
+   "https://data-iplan.opendata.arcgis.com/": "GIS Downloadable Data",
+   "https://experience.arcgis.com/experience/72178766fe5241b6b4c21a7a812b3b5e": "Highway Traffic Counts",
+   "https://iplan.maps.arcgis.com/apps/instant/basic/index.html?appid=72043dc2182648e8850b06f717326c5f": "Idaho Urban Area Census",
+   "https://experience.arcgis.com/experience/097c637d727f4b2ea0dd7ea28e4e0868": "Map of the Local Roads Inventory in Idaho",
+   "https://iplan.maps.arcgis.com/home/groups.html": "iPlan App Gallery & District Data",
+   "https://experience.arcgis.com/experience/60e217d60b81425fbe5356f73b6ab738": "Annual Average Daily Traffic Application (AADT App)",
+   "https://experience.arcgis.com/experience/9adadaf53a7a436aa835f45b17fb6927": "Continuous Count Trend Report (Chart and Map)",
+   "https://experience.arcgis.com/experience/04575e35236247db86e5de87a288f810": "Traffic Projection Request Form",
+   "https://iplan.maps.arcgis.com/apps/webappviewer/index.html?id=859bab44a10c4221bed7f7c74e49d554": "IPLAN Idaho's Statewide Systems App",
+   "https://storymaps.arcgis.com/stories/3fa1d99fa2984b108c39eb06ead3bc4c": "View the July 2026 online meeting"
+  }
+ },
+ "state:michigan.gov/mdot": {
+  "files": [],
+  "portals": {}
+ },
+ "state:dot.ny.gov": {
+  "files": [
+   {
+    "url": "http://tompkinscountyny.gov/files/assets/county/v/1/itctc/documents/ithacatompkinsbikemap_2024sm.pdf",
+    "text": "2024 Bike Suitability Map (PDF, 22MB)",
+    "file": "data/gov_sources/state_dot_ny_gov/87aee4_ithacatompkinsbikemap_2024sm.pdf",
+    "rows": 25,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_arabic.pdf",
+    "text": "Traduction en arabe Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/a392da_10.14.26.rel_.improvements_arabic.pdf",
+    "rows": 454,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_bengali.pdf",
+    "text": "Traduction en bengali বাংলা অনুবাদ Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/606186_10.14.26.rel_.improvements_bengali.pdf",
+    "rows": 641,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_chinese.pdf",
+    "text": "Traduction en chinois 中文翻譯 Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/76489b_10.14.26.rel_.improvements_chinese.pdf",
+    "rows": 518,
+    "bike_rows": 29
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_french.pdf",
+    "text": "Traduction en français Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/77b5ed_10.14.26.rel_.improvements_french.pdf",
+    "rows": 745,
+    "bike_rows": 58
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_haitiancreole.pdf",
+    "text": "Traduction en créole haïtien Tradiksyon kreyòl ayisyen Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/0dcfdb_10.14.26.rel_.improvements_haitiancreole.pdf",
+    "rows": 585,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_italian.pdf",
+    "text": "Traduction en italien Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/b0887e_10.14.26.rel_.improvements_italian.pdf",
+    "rows": 667,
+    "bike_rows": 34
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_korean.pdf",
+    "text": "Traduction en coréen Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/537af3_10.14.26.rel_.improvements_korean.pdf",
+    "rows": 574,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_polish.pdf",
+    "text": "Traduction en polonais Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/f2f679_10.14.26.rel_.improvements_polish.pdf",
+    "rows": 667,
+    "bike_rows": 33
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_russian.pdf",
+    "text": "Traduction en russe Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/5facbd_10.14.26.rel_.improvements_russian.pdf",
+    "rows": 750,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_spanish.pdf",
+    "text": "Traduction en espagnol Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/ba183b_10.14.26.rel_.improvements_spanish.pdf",
+    "rows": 662,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_urdu.pdf",
+    "text": "Traduction en ourdou : Texte sur fond blanc Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/ed416c_10.14.26.rel_.improvements_urdu.pdf",
+    "rows": 543,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-10/10.14.26.rel_.improvements_yiddish.pdf",
+    "text": "Traduction en yiddish Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/88d0e8_10.14.26.rel_.improvements_yiddish.pdf",
+    "rows": 599,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_arabic.pdf",
+    "text": "Traduction en arabe Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/72affb_09.2.26.rel_.transportation_arabic.pdf",
+    "rows": 133,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_bengali.pdf",
+    "text": "Traduction en bengali বাংলা অনুবাদ Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/048962_09.2.26.rel_.transportation_bengali.pdf",
+    "rows": 187,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_chinese.pdf",
+    "text": "Traduction en chinois 中文翻譯 Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/09d590_09.2.26.rel_.transportation_chinese.pdf",
+    "rows": 149,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_french.pdf",
+    "text": "Traduction en français Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/d0090d_09.2.26.rel_.transportation_french.pdf",
+    "rows": 207,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_haitiancreole.pdf",
+    "text": "Traduction en créole haïtien Tradiksyon kreyòl ayisyen Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/a5a795_09.2.26.rel_.transportation_haitiancreole.pdf",
+    "rows": 167,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_italian.pdf",
+    "text": "Traduction en italien Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/f57fba_09.2.26.rel_.transportation_italian.pdf",
+    "rows": 198,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_korean.pdf",
+    "text": "Traduction en coréen Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/fbac50_09.2.26.rel_.transportation_korean.pdf",
+    "rows": 155,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_polish.pdf",
+    "text": "Traduction en polonais Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/32420b_09.2.26.rel_.transportation_polish.pdf",
+    "rows": 205,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_russian.pdf",
+    "text": "Traduction en russe Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/e86ad8_09.2.26.rel_.transportation_russian.pdf",
+    "rows": 217,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_spanish.pdf",
+    "text": "Traduction en espagnol Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/4f41c7_09.2.26.rel_.transportation_spanish.pdf",
+    "rows": 209,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_urdu.pdf",
+    "text": "Traduction en ourdou : Texte sur fond blanc Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/408bc1_09.2.26.rel_.transportation_urdu.pdf",
+    "rows": 158,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fr.governor.ny.gov/sites/default/files/2026-09/09.2.26.rel_.transportation_yiddish.pdf",
+    "text": "Traduction en yiddish Télécharger",
+    "file": "data/gov_sources/state_dot_ny_gov/3c16aa_09.2.26.rel_.transportation_yiddish.pdf",
+    "rows": 191,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "state:tn.gov/tdot": {
+  "files": [],
+  "portals": {}
+ },
+ "region:ctps.org": {
+  "files": [
+   {
+    "url": "https://bostonmpo.org/data/pdf/plans/TIP/FFYs-2025-2029-Scorecard-Bicycle-Network-and-Pedestrian.pdf",
+    "text": "Bicycle Network and Pedestrian Scorecard (PDF)",
+    "file": "data/gov_sources/region_ctps_org/49e0d9_FFYs-2025-2029-Scorecard-Bicycle-Network-and-Pedestrian.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/plans/TIP/FFYs-2025-2029-Scorecard-Transit-Transformation.pdf",
+    "text": "Scorecard (PDF)",
+    "file": "data/gov_sources/region_ctps_org/012f58_FFYs-2025-2029-Scorecard-Transit-Transformation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bostonmpo.org/data/pdf/plans/TIP/FFYs-2025-2029-Scorecard-Community-Connections-Bicycle-Racks.pdf",
+    "text": "Scorecard (PDF)",
+    "file": "data/gov_sources/region_ctps_org/4824cf_FFYs-2025-2029-Scorecard-Community-Connections-Bicycle-Racks.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bostonmpo.org/data/pdf/plans/TIP/FFYs-2025-2029-Scorecard-Community-Connections-Bikeshare.pdf",
+    "text": "Scorecard (PDF)",
+    "file": "data/gov_sources/region_ctps_org/0d5198_FFYs-2025-2029-Scorecard-Community-Connections-Bikeshare.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/plans/CHST/2023-CPTHST-with-Appendix.pdf",
+    "text": "Coordinated Public Transit-Human Services Transportation Plan (PDF)",
+    "file": "data/gov_sources/region_ctps_org/e11a2a_2023-CPTHST-with-Appendix.pdf",
+    "rows": 182,
+    "bike_rows": 93
+   },
+   {
+    "url": "https://www.bostonmpo.org/data/pdf/studies/transit/Reverse-Commute-Areas-Analysis.pdf",
+    "text": "Reverse Commute Areas Analysis",
+    "file": "data/gov_sources/region_ctps_org/bdf4e4_Reverse-Commute-Areas-Analysis.pdf",
+    "rows": 30,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://bostonmpo.org/data/pdf/programs/performance/2026-Transit-Asset-Management-Memo.pdf",
+    "text": "https://bostonmpo.org/data/pdf/programs/performance/2026-Transit-Asset-Management-Memo.pdf",
+    "file": "data/gov_sources/region_ctps_org/3942ea_2026-Transit-Asset-Management-Memo.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bostonmpo.org/data/pdf/plans/TIP/FFYs-2025-2029-Scorecard-Bicycle-Network-and-Pedestrian.pdf",
+    "text": "Phiáº¿u Äiá»m Máº¡ng LÆ°á»i Xe Äáº¡p vÃ  Káº¿t Ná»i DÃ nh Cho NgÆ°á»i Äi Bá»",
+    "file": "data/gov_sources/region_ctps_org/d8a2c4_FFYs-2025-2029-Scorecard-Bicycle-Network-and-Pedestrian.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bostonmpo.org/data/pdf/plans/TIP/FFYs-2025-2029-Scorecard-Transit-Transformation.pdf",
+    "text": "Phiáº¿u Äiá»m ChÆ°Æ¡ng TrÃ¬nh Cáº£i CÃ¡ch Há» Thá»ng Giao ThÃ´ng CÃ´ng Cá»ng",
+    "file": "data/gov_sources/region_ctps_org/c504ca_FFYs-2025-2029-Scorecard-Transit-Transformation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mapc.org/wp-content/uploads/2017/09/Massachusetts-Community-Types-Summary-July_2008.pdf",
+    "text": "https://www.mapc.org/wp-content/uploads/2017/09/Massachusetts-Community-Types-Summary-July_2008.pdf",
+    "file": "data/gov_sources/region_ctps_org/1fed6f_Massachusetts-Community-Types-Summary-July_2008.pdf",
+    "rows": 395,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://test.bostonmpo.org/data/pdf/studies/bikeped/Cargo-Ebikes-Report.pdf",
+    "text": "Full report PDF",
+    "file": "data/gov_sources/region_ctps_org/2b0b35_Cargo-Ebikes-Report.pdf",
+    "rows": 60,
+    "bike_rows": 59
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/bikeped/Checklist-2.pdf",
+    "text": "Full report PDF",
+    "file": "data/gov_sources/region_ctps_org/4bbfe1_Checklist-2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.us-east-2.amazonaws.com/downloads.bostonmpo.org/data/pdf/studies/bikeped/SkylineTrailCrossingTechnicalAssistance.pdf",
+    "text": "Skyline Trail Study",
+    "file": "data/gov_sources/region_ctps_org/bd61f0_SkylineTrailCrossingTechnicalAssistance.pdf",
+    "rows": 116,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://s3.us-east-2.amazonaws.com/downloads.bostonmpo.org/data/pdf/studies/bikeped/2024-10-07-SkylineTrailCrossingTechnicalAssistance-Appendices.pdf",
+    "text": "Skyline Trail Crossing of Route 28 Study with all appendices (PDF)",
+    "file": "data/gov_sources/region_ctps_org/35a18e_2024-10-07-SkylineTrailCrossingTechnicalAssistance-Appendices.pdf",
+    "rows": 116,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/bikeped/Bicycle-Pedestrian-Count-Data-Application-Update.pdf",
+    "text": "Memo (PDF)",
+    "file": "data/gov_sources/region_ctps_org/99bd2e_Bicycle-Pedestrian-Count-Data-Application-Update.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/High-Bike-Ped-Crash-Intersection-Analysis-Chelsea.pdf",
+    "text": "Chelsea: Everett Avenue and Chestnut Street (PDF)",
+    "file": "data/gov_sources/region_ctps_org/787807_High-Bike-Ped-Crash-Intersection-Analysis-Chelsea.pdf",
+    "rows": 121,
+    "bike_rows": 30
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/High-Bike-Ped-Crash-Intersection-Analysis-Lynn.pdf",
+    "text": "Lynn: Liberty Street and Washington Street (PDF)",
+    "file": "data/gov_sources/region_ctps_org/d1113e_High-Bike-Ped-Crash-Intersection-Analysis-Lynn.pdf",
+    "rows": 80,
+    "bike_rows": 30
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/High-Bike-Ped-Crash-Intersection-Analysis-Malden.pdf",
+    "text": "Malden: Main Street and Centre Street (PDF)",
+    "file": "data/gov_sources/region_ctps_org/7f6247_High-Bike-Ped-Crash-Intersection-Analysis-Malden.pdf",
+    "rows": 142,
+    "bike_rows": 29
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/PRCA-interactive-database/PRCA-interactive-database.pdf",
+    "text": "Memo (PDF)",
+    "file": "data/gov_sources/region_ctps_org/d408b4_PRCA-interactive-database.pdf",
+    "rows": 185,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/PRCA-interactive-database/Roadway%20Segment%20PRCA.pdf",
+    "text": "Roadway Segment PRCA (PDF)",
+    "file": "data/gov_sources/region_ctps_org/13b018_Roadway_20Segment_20PRCA.pdf",
+    "rows": 38,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/PRCA-interactive-database/Signalized%20Intersection%20PRCA.pdf",
+    "text": "Signalized Intersection PRCA (PDF)",
+    "file": "data/gov_sources/region_ctps_org/784512_Signalized_20Intersection_20PRCA.pdf",
+    "rows": 38,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/PRCA-interactive-database/Non-Signalized%20Intersection%20PRCA.pdf",
+    "text": "Non-Signalized Intersection PRCA (PDF)",
+    "file": "data/gov_sources/region_ctps_org/48c6e4_Non-Signalized_20Intersection_20PRCA.pdf",
+    "rows": 39,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/PRCA-interactive-database/How%20to%20Score%20PRCAs%20%28Roadway%20Segments%29.pdf",
+    "text": "How to Score PRCAs manual: Roadway Segments (PDF)",
+    "file": "data/gov_sources/region_ctps_org/53e456_How_20to_20Score_20PRCAs_20_28Roadway_20Segments_29.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/PRCA-interactive-database/How%20to%20Score%20PRCAs%20%28Signalized%20Intersections%29.pdf",
+    "text": "How to Score PRCAs manual: Signalized Intersections (PDF)",
+    "file": "data/gov_sources/region_ctps_org/48a09e_How_20to_20Score_20PRCAs_20_28Signalized_20Intersections_29.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/PRCA-interactive-database/How%20to%20Score%20PRCAs%20%28Non-Signalized%20Intersections%29.pdf",
+    "text": "How to Score PRCAs manual: Non-Signalized Intersections (PDF)",
+    "file": "data/gov_sources/region_ctps_org/877a6f_How_20to_20Score_20PRCAs_20_28Non-Signalized_20Intersections_29.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/PRCA-interactive-database/Notes%20Page%20-%20Roadway%20Segment%20PRCA.pdf",
+    "text": "Notes Page: Roadway Segment PRCA (PDF)",
+    "file": "data/gov_sources/region_ctps_org/4ad63c_Notes_20Page_20-_20Roadway_20Segment_20PRCA.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/PRCA-interactive-database/Notes%20Page%20-%20Signalized%20Intersection%20PRCA.pdf",
+    "text": "Notes Page: Signalized Intersection PRCA (PDF)",
+    "file": "data/gov_sources/region_ctps_org/202d73_Notes_20Page_20-_20Signalized_20Intersection_20PRCA.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/transit/PRCA-interactive-database/Notes%20Page%20-%20Non-Signalized%20Intersection%20PRCA.pdf",
+    "text": "Notes Page: Non-Signalized Intersection PRCA (PDF)",
+    "file": "data/gov_sources/region_ctps_org/bcb456_Notes_20Page_20-_20Non-Signalized_20Intersection_20PRCA.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/bikeped/bicycle-level-of-service.pdf",
+    "text": "Memo (PDF)",
+    "file": "data/gov_sources/region_ctps_org/afd998_bicycle-level-of-service.pdf",
+    "rows": 65,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/bikeped/BLANK-Bicycle-Report-Cards.pdf",
+    "text": "Bicycle Report Card (PDF)",
+    "file": "data/gov_sources/region_ctps_org/367b77_BLANK-Bicycle-Report-Cards.pdf",
+    "rows": 53,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://ctps.org/data/calendar/pdfs/2018/MPO_0201_Memo_Safe_Routes_to_School.pdf",
+    "text": "Memo (PDF)",
+    "file": "data/gov_sources/region_ctps_org/bc79f0_MPO_0201_Memo_Safe_Routes_to_School.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/bikeped/Bike_Network_Gap_Cambridge.pdf",
+    "text": "Short Gap: Central Square (Cambridge) (PDF)",
+    "file": "data/gov_sources/region_ctps_org/6ddf87_Bike_Network_Gap_Cambridge.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctps.org/data/pdf/studies/bikeped/Bike_Network_Gap_Sudbury.pdf",
+    "text": "Medium Gap: Sudbury Aqueduct Trail (Framingham) (PDF)",
+    "file": "data/gov_sources/region_ctps_org/338328_Bike_Network_Gap_Sudbury.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/collections/a3424af397574cae8c7789f433b89bca": "",
+   "https://storymaps.arcgis.com/stories/c919d2e51ebb4e18bd800f48a9e8db52": "Big Ideas",
+   "https://ctps.maps.arcgis.com/apps/dashboards/8d41d379f2e94c8b8c5e661a8e1cb194": "TIP Project Dashboard",
+   "https://gis.massdot.state.ma.us/mapit/": "Massachusetts Project Intake Tool (MaPIT)",
+   "https://gis.massdot.state.ma.us/dataviewers/projectviewer/": "MassDOT Project Viewer",
+   "https://experience.arcgis.com/experience/3dd69abaf11b4f26906f9f5a2ee3e5fc/": "Take Our Survey",
+   "https://ctps.maps.arcgis.com/apps/webappviewer/index.html?id=f18258b4c0ca43af88e68e692d236e72": "online map",
+   "https://storymaps.arcgis.com/stories/77be5663ee834d37ae73d8f5a98659a4": "StoryMap",
+   "https://experience.arcgis.com/experience/8d53f0481df84014898892306d96c872/?_gl=1*h8soky*_ga*MTI5MDM4MDM5Ny4xNzczMzI0NjA4*_ga_TVRXRVW1YN*czE3ODM0Njg5MzkkbzEzNyRnMSR0MTc4MzQ3MjIxNCRqNjAkbDAkaDA": "Explore the NO-HEAT Data Explorer.",
+   "https://storymaps.arcgis.com/collections/a3424af397574cae8c7789f433b89bca?item=7": "StoryMap",
+   "https://mbta-massdot.opendata.arcgis.com/": "https://mbta-massdot.opendata.arcgis.com/",
+   "https://geo-massdot.opendata.arcgis.com/": "https://geo-massdot.opendata.arcgis.com/",
+   "https://ctps.maps.arcgis.com/apps/webappviewer/index.html?id=d381e818d0ca4869b565b0267946aedc": "All-Hazards Planning Application",
+   "https://mass-eoeea.maps.arcgis.com/apps/MapSeries/index.html?appid=ec4964fe203d41219b2e74170c0dc96c": "designated MVP communities",
+   "https://experience.arcgis.com/experience/19a74f37055b4fb9aad8269153ba82b0/page/Main-Menu?_gl=1*1qq9gxw*_ga*MTM1NDIxOTIzOS4xNzc0MzYyNDI5*_ga_TVRXRVW1YN*czE3NzU0OTkwNTMkbzQxJGcxJHQxNzc1NTAxMTU2JGo1NSRsMCRoMA..": "Vision Zero Dashboard",
+   "https://geo-massdot.opendata.arcgis.com/datasets/MassDOT::bridges/about": "MassDOT Bridges dataset",
+   "https://storymaps.arcgis.com/stories/446e35bc40614e5aaced4a62ff7343b2": "https://storymaps.arcgis.com/stories/446e35bc40614e5aaced4a62ff7343b2",
+   "https://data.census.gov/table/DECENNIALPL2020.P2?q=P2:+HISPANIC+OR+LATINO,+AND+NOT+HISPANIC+OR+LATINO+BY+RACE": "https://data.census.gov/table/DECENNIALPL2020.P2?q=P2:+HISPANIC+OR+LATINO,+AND+NOT+HISPANIC+OR+LATINO+BY+RACE",
+   "https://data.census.gov/table/ACSDT5Y2023.C17002?q=c17002": "https://data.census.gov/table/ACSDT5Y2023.C17002?q=c17002",
+   "https://data.census.gov/table/ACSDT5Y2023.B16004?q=B16004:+Age+by+Language+Spoken+at+Home+by+Ability+to+Speak+English+for+the+Population+5+Years+and+Over": "https://data.census.gov/table/ACSDT5Y2023.B16004?q=B16004:+Age+by+Language+Spoken+at+Home+by+Ability+to+Speak+English+fo",
+   "https://data.census.gov/table/ACSDT5Y2023.B18101?q=B18101:+Sex+by+Age+by+Disability+Status": "https://data.census.gov/table/ACSDT5Y2023.B18101?q=B18101:+Sex+by+Age+by+Disability+Status",
+   "https://data.census.gov/table/DECENNIALCD1182020.P12?q=P12:+SEX+BY+AGE+FOR+SELECTED+AGE+CATEGORIES": "https://data.census.gov/table/DECENNIALCD1182020.P12?q=P12:+SEX+BY+AGE+FOR+SELECTED+AGE+CATEGORIES",
+   "http://www.data.census.gov": "www.data.census.gov",
+   "https://storymaps.arcgis.com/stories/329140a01a594bf594b62f773fe07f3f": "Climate Resilience Guidance for Planners",
+   "https://storymaps.arcgis.com/stories/5cae6946e9914d36a40099aa72eaa5da/": "Bluebikes and MBTA Connections (ArcGIS StoryMaps)",
+   "https://data.transportation.gov/Public-Transit/Major-Safety-Events/9ivb-8ae9": "),",
+   "https://data.transportation.gov/Public-Transit/Monthly-Modal-Time-Series/5ti2-5uiv": "https://data.transportation.gov/Public-Transit/Monthly-Modal-Time-Series/5ti2-5uiv",
+   "https://experience.arcgis.com/experience/57471049d1274bd39c00f0fa00ac6d16/page/Freight-Data-Map/": "Freight Data Dashboard",
+   "https://ctps.maps.arcgis.com/apps/dashboards/5449e97481b44bc9aeb5b05a2c6e53b7": "Public Engagement Dashboard",
+   "https://ctps.maps.arcgis.com/apps/webappviewer/index.html?id=fc1409961b6c4a1eaf4a9342f05ad249": ""
+  }
+ },
+ "region:maricopa.gov/maricopa-association-of-governments": {
+  "files": [
+   {
+    "url": "https://www.maricopacountyparks.net/assets/1/6/2018_Trails_Management_Training_Manual_Update.pdf",
+    "text": "Trail Management Manual",
+    "file": "data/gov_sources/region_maricopa_gov_maricopa_association_of_governments/5cd183_2018_Trails_Management_Training_Manual_Update.pdf",
+    "rows": 169,
+    "bike_rows": 56
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/29505c95011c4dc7bfaea4e9e35c3fe3": "Interactive UOCAVA Map Uniformed & Overseas Citizens",
+   "https://experience.arcgis.com/experience/3a80bdd304d14385b223baf5662f49ff/page/main": "Interactive Elections Map Interactive Election Districts & Data",
+   "https://data-maricopa.opendata.arcgis.com/search?tags=Election": "Download the Data",
+   "http://gis.maricopa.gov/roadinformationpublic/": "Road Information Tool (RIT)",
+   "https://regional-gis-maricopa.hub.arcgis.com/": "Regional Technical Council",
+   "https://performance-dashboard-maricopa.hub.arcgis.com/": "Strategic Goals",
+   "https://gis.maricopa.gov/RoadClosures/": "Road Closures",
+   "https://gis.maricopa.gov/ACC/Stray/index.html": "Report a Lost or Found Pet (Map)",
+   "https://gis.maricopa.gov/FCD/FloodplainViewer/": "Floodplain and Elevation Certificate Viewer",
+   "https://gis.maricopa.gov/Flood-Projects/": "Flood Control Projects Map",
+   "https://gis.maricopa.gov/GIO/HistoricalAerial/index.html": "Current & Historical Aerial Photography",
+   "https://gis.maricopa.gov/flo-2dModels/": "FLO-2D Web Access Tool",
+   "https://gis.maricopa.gov/Flood-Parcels/": "Completed Projects and Property",
+   "https://gis.maricopa.gov/ProposedGilaRiverFloodplainChanges/map.html": "Proposed Gila River Floodplain Changes",
+   "https://maricopacountyoetgis.statuspage.io/": "GIS System Status & Alerts",
+   "https://gis.maricopa.gov/permits/": "Permit Viewer Tool",
+   "http://gis.maricopa.gov/RoadClosures/": "Map of MCDOT Road Closures",
+   "https://gis.maricopa.gov/aqd/recordsviewer/": "Public Records Viewer",
+   "https://aqdata.maricopa.gov/disclaimer.jsf": "Air Quality Data Viewer",
+   "https://storymaps.arcgis.com/stories/e1873668cea742cc967fed4071e8438d": "MCAQD 2023 Community Greenhouse Gas Emissions Inventory",
+   "http://www.arcgis.com/home/webmap/viewer.html?webmap=1d5fe1ed2e4e4bc7ad6e0e87ac9da2fc&extent=-113.4404,32.6917,-110.9122,34.2121": "Interactive Planning Area Map",
+   "https://gis.maricopa.gov/COB/NoFenceDistrict/index.html": "No Fence District/Open Range Maps",
+   "https://maricopa.maps.arcgis.com/apps/instant/basic/index.html?appid=b83b0d9b61c0412f92672ee32341cb1a": "View in Full Screen",
+   "https://gis.maricopa.gov/roadinformationpublic": "Road Information Tool (RIT) Department of Transportation map to explore County-maintained roads, construction projects, ",
+   "https://gis.maricopa.gov/floodplainviewer/": "Current & Pending 100-Year FEMA Effective Floodplain Maps",
+   "https://gis.maricopa.gov/fcd/Flood-Parcels/": "Structures and Property Viewer",
+   "https://experience.arcgis.com/experience/93209e3b4a5e436ba98aa90b910dbfb5/": "Forecast Zones Map Opens a New Window.",
+   "https://maricopa.maps.arcgis.com/apps/dashboards/df23129683f5439688cff24866e71d5c": "MCDOT Flooded Roadway Info. Map",
+   "https://experience.arcgis.com/experience/06aeb6a58ec5495abe4aad91a3a1b627": "Flood Response Plan Locations Map",
+   "https://experience.arcgis.com/experience/bc8d19886f8c4ed9a1fcade27467f214": "Gilbert"
+  }
+ },
+ "region:nymtc.org": {
+  "files": [
+   {
+    "url": "https://www.nymtc.org/sites/default/files/rfp/How%20to%20follow%20the%20MAP%20Forum%20Hub%20Site.pdf",
+    "text": "Instructions",
+    "file": "data/gov_sources/region_nymtc_org/840fba_How_20to_20follow_20the_20MAP_20Forum_20Hub_20Site.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Greenburgh%20Parking%20Management%20Workshop.pdf",
+    "text": "Greenburgh, Westchester County",
+    "file": "data/gov_sources/region_nymtc_org/192a79_Greenburgh_20Parking_20Management_20Workshop.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Bronx%20Parking%20Management%20Workshop.pdf",
+    "text": "Community Board 4, The Bronx",
+    "file": "data/gov_sources/region_nymtc_org/a2ada2_Bronx_20Parking_20Management_20Workshop.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Patchogue%20Parking%20Management%20Workshop.pdf",
+    "text": "Patchogue, Suffolk County",
+    "file": "data/gov_sources/region_nymtc_org/255148_Patchogue_20Parking_20Management_20Workshop.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/Portals/0/Pdf/Transportation%20Safety/09DPS-Transit.pdf",
+    "text": "Transit",
+    "file": "data/gov_sources/region_nymtc_org/2b9a8d_09DPS-Transit.pdf",
+    "rows": 54,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://nymtc.org/Portals/0/Pdf/Transportation%20Safety/ANPRM%20Transit%20Safety.pdf",
+    "text": "ANPRM Transit Safety",
+    "file": "data/gov_sources/region_nymtc_org/769796_ANPRM_20Transit_20Safety.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/250529_Palisades%20SUP%20Final%20Plan.pdf",
+    "text": "Palisades Shared Use Path Final Plan →",
+    "file": "data/gov_sources/region_nymtc_org/c56424_250529_Palisades_20SUP_20Final_20Plan.pdf",
+    "rows": 96,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/appendix_c-bus_routes.pdf",
+    "text": "click to download PDF →",
+    "file": "data/gov_sources/region_nymtc_org/5a9d4d_appendix_c-bus_routes.pdf",
+    "rows": 738,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/appendix_f-bike_and_ped_data.pdf",
+    "text": "click to download PDF →",
+    "file": "data/gov_sources/region_nymtc_org/ee2ad3_appendix_f-bike_and_ped_data.pdf",
+    "rows": 331,
+    "bike_rows": 70
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Route-59-Final-Report.pdf",
+    "text": "Route 59 Area Transportation & Land Use Study →",
+    "file": "data/gov_sources/region_nymtc_org/5dae9c_Route-59-Final-Report.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Route-59-Presentation.pdf",
+    "text": "Route 59 Area Transportation & Land Use Study Powerpoint →",
+    "file": "data/gov_sources/region_nymtc_org/6873d4_Route-59-Presentation.pdf",
+    "rows": 71,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Route-59-Brochure.pdf",
+    "text": "Route 59 Area Transportation & Land Use Study Brochure →",
+    "file": "data/gov_sources/region_nymtc_org/3b9d8b_Route-59-Brochure.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.nymtc.org/sites/default/files/2026-10/NYMTC%20BB_Oct%202026_reduced.pdf",
+    "text": "From Schoolyards to Safer Streets: Building a Culture of Active Transportation Through Youth Cycling",
+    "file": "data/gov_sources/region_nymtc_org/748b3a_NYMTC_20BB_Oct_202026_reduced.pdf",
+    "rows": 71,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/2026-07/NYMTC%20presentation%206.25.26.pdf",
+    "text": "50 Years of stories at the New York Transit Museum",
+    "file": "data/gov_sources/region_nymtc_org/5c561d_NYMTC_20presentation_206.25.26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Route%209%20Complete%20Streets_NYMTC%20modified_11.20.25.pdf",
+    "text": "U.S. Route 9 Complete Streets Preliminary Engineering",
+    "file": "data/gov_sources/region_nymtc_org/ff0273_Route_209_20Complete_20Streets_NYMTC_20modified_11.20.25.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/NYC%20Fleet%20Designing%20Fleet%20for%20Safety%20Presentation.pdf",
+    "text": "Safe Fleet Transition Plan",
+    "file": "data/gov_sources/region_nymtc_org/b985c4_NYC_20Fleet_20Designing_20Fleet_20for_20Safety_20Presentation.pdf",
+    "rows": 26,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Route%2059%20Area%20Transportation%20%26%20Land%20Use%20Study_2021-05-26_BrownBag.pdf",
+    "text": "route 59 area transportation & land use study",
+    "file": "data/gov_sources/region_nymtc_org/2b8d4d_Route_2059_20Area_20Transportation_20_26_20Land_20Use_20Study_2021-05-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Cross%20Bronx%20Draft%20Vision_MAP%20Forum.pdf",
+    "text": "Reimagine the Cross Bronx Study",
+    "file": "data/gov_sources/region_nymtc_org/94bc89_Cross_20Bronx_20Draft_20Vision_MAP_20Forum.pdf",
+    "rows": 17,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/MAPForum-EnergyAndFreight241206.pdf",
+    "text": "Energy Demand and Freight Systems",
+    "file": "data/gov_sources/region_nymtc_org/b29aa8_MAPForum-EnergyAndFreight241206.pdf",
+    "rows": 51,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Suffolk%20County%20Reimagine%20Transit%20PFAC%20111424.pdf",
+    "text": "Suffolk County Reimagine Transit and Moving Forward",
+    "file": "data/gov_sources/region_nymtc_org/170013_Suffolk_20County_20Reimagine_20Transit_20PFAC_20111424.pdf",
+    "rows": 53,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/J%20Markowitz%20NYMTC%202024.pdf",
+    "text": "“EVolve NY: Fast Charging Deployment”",
+    "file": "data/gov_sources/region_nymtc_org/749f61_J_20Markowitz_20NYMTC_202024.pdf",
+    "rows": 40,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/NYMTC%20-%20Presentation%20April%202024-%20%20Jen%20Hensley%20-%20FINAL.pdf",
+    "text": "“Pedal to the Metal on New York’s Energy Transition”",
+    "file": "data/gov_sources/region_nymtc_org/c954d0_NYMTC_20-_20Presentation_20April_202024-_20_20Jen_20Hensley_20-_20FINA",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Putnam%20Coordination%20for%20Micro-Transit%20Pilot.pdf",
+    "text": "“Coordination Efforts for a Small System Micro-Transit Pilot”",
+    "file": "data/gov_sources/region_nymtc_org/45d83a_Putnam_20Coordination_20for_20Micro-Transit_20Pilot.pdf",
+    "rows": 93,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Suffolk%20County%20Reimagine%20Transit%20and%20Other%20Initiatives.pdf",
+    "text": "“Reimagine Transit and Other Initiatives”",
+    "file": "data/gov_sources/region_nymtc_org/0a9969_Suffolk_20County_20Reimagine_20Transit_20and_20Other_20Initiatives.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Westchester%20Mobility%20%26%20Transit%20Plan.pdf",
+    "text": "“Mobility & Transit Plan”",
+    "file": "data/gov_sources/region_nymtc_org/30374f_Westchester_20Mobility_20_26_20Transit_20Plan.pdf",
+    "rows": 22,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://nvcogct.gov/wp-content/uploads/2022/06/MAP-Forum-Spring-2022-Presentations.pdf",
+    "text": "here",
+    "file": "data/gov_sources/region_nymtc_org/9df596_MAP-Forum-Spring-2022-Presentations.pdf",
+    "rows": 73,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/NYMTC%20PFAC%20Presentation%20041422.pdf",
+    "text": "Suffolk County Reimagine Transit Initiative",
+    "file": "data/gov_sources/region_nymtc_org/3ea31b_NYMTC_20PFAC_20Presentation_20041422.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Item%202%20-%20NARC%20MAP%20Forum%20Webinar_Dec%202021.pdf",
+    "text": "CLICK HERE",
+    "file": "data/gov_sources/region_nymtc_org/5ee5ad_Item_202_20-_20NARC_20MAP_20Forum_20Webinar_Dec_202021.pdf",
+    "rows": 68,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Item%203%28a%29%20-%20NYMTC%20Moving%20Forward_MAP%20Forum_12-3-21%20v3.pdf",
+    "text": "CLICK HERE",
+    "file": "data/gov_sources/region_nymtc_org/ff30b8_Item_203_28a_29_20-_20NYMTC_20Moving_20Forward_MAP_20Forum_12-3-21_20v",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/Item%203%28b%29%20-%20NJTPA%20MAP%20Forum%20120321.pdf",
+    "text": "CLICK HERE",
+    "file": "data/gov_sources/region_nymtc_org/887523_Item_203_28b_29_20-_20NJTPA_20MAP_20Forum_20120321.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nymtc.org/sites/default/files/rfp/NYMTC%20Brown%20Bag%202021_SCEDP_AR.pdf",
+    "text": "Reimagining Transit in Suffolk: Mobility Implementation Plan & Microtransit Pilot",
+    "file": "data/gov_sources/region_nymtc_org/dcbe8d_NYMTC_20Brown_20Bag_202021_SCEDP_AR.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://rtsr-nymtc.hub.arcgis.com/": "RTSR Data",
+   "https://map-forum-njtpa.hub.arcgis.com/": "MAP Forum Multi-State Hub Site",
+   "https://nymtc.maps.arcgis.com/apps/mapviewer/index.html?webmap=a2535e4dd33f436b990acff8c91a148f": "TIP Visualization Link",
+   "https://nymtc.maps.arcgis.com/apps/instant/basic/index.html?appid=49ef54bc83d94f7695a56adf58b3ea9d": "NYMTC COMMUNITIES OF CONCERN AREAS (arcgis.com)",
+   "https://www.arcgis.com/apps/dashboards/403af73954924722aa49e1fbacf3a227": "NYMTC SED Dashboard",
+   "https://crashdata-nymtc.hub.arcgis.com/": "",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Frtsr-nymtc.hub.arcgis.com%2F&data=05%7C02%7CJack.Ma%40dot.ny.gov%7C93028bcfeba84f880c2f08df2f7e1d24%7Cf46cb8ea79004d108ceb80e8c1c81ee7%7C0%7C0%7C639281891476022242%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=xCgKOwrijisXEK3C6t7Ml3oaNQf6qm3apCogJfQqEUI%3D&reserved=0": "RTSR Dashboards",
+   "https://www.arcgis.com/apps/Viewer/index.html?appid=b2d14e708edb48598ac95b73e123f208": "map of project locations",
+   "https://gis.mta.info/apps/hq/fmlm-web/": "First Mile/Last Mile (FMLM) Toolkit",
+   "https://map-forum-njtpa.hub.arcgis.com/pages/freight": "https://map-forum-njtpa.hub.arcgis.com/pages/freight.",
+   "https://nymtc.maps.arcgis.com/apps/webappviewer/index.html?id=94f7017baa27425e91d44d97e02551e3": "",
+   "http://www.gis.fhwa.dot.gov/": "http://www.gis.fhwa.dot.gov/",
+   "http://gis.ny.gov/": "http://gis.ny.gov/"
+  }
+ },
+ "region:oki.org": {
+  "files": [
+   {
+    "url": "https://www.oki.org/wp-content/uploads/2023/09/ohiobikeguidefull.pdf",
+    "text": "Ohio Counties Guide",
+    "file": "data/gov_sources/region_oki_org/e6bbbd_ohiobikeguidefull.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oki.org/wp-content/uploads/2023/09/NKYBikeguide.pdf",
+    "text": "Northern Kentucky Bike Route Guide",
+    "file": "data/gov_sources/region_oki_org/31400b_NKYBikeguide.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oki.org/wp-content/uploads/2024/08/OKI-OD-Survey-Final-Report-20240612.pdf",
+    "text": "OKI Transit On-Board Survey Report",
+    "file": "data/gov_sources/region_oki_org/23f2f9_OKI-OD-Survey-Final-Report-20240612.pdf",
+    "rows": 156,
+    "bike_rows": 46
+   },
+   {
+    "url": "https://www.oki.org/wp-content/uploads/2024/08/OKI-Transit-Survey-FactSheet-062724-R5.pdf",
+    "text": "OKI Transit On-Board Survey Fact Sheet",
+    "file": "data/gov_sources/region_oki_org/d11fc0_OKI-Transit-Survey-FactSheet-062724-R5.pdf",
+    "rows": 17,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.oki.org/wp-content/uploads/2025/02/2025-01-WWTP-FPA-Service-Areas.pdf",
+    "text": "Download PDF Map",
+    "file": "data/gov_sources/region_oki_org/1059cc_2025-01-WWTP-FPA-Service-Areas.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oki.org/wp-content/uploads/2023/09/2020-OKI-Coordinated-Plan.pdf",
+    "text": "Coordinated Public Transit-Human Services Transportation Plan",
+    "file": "data/gov_sources/region_oki_org/186e19_2020-OKI-Coordinated-Plan.pdf",
+    "rows": 392,
+    "bike_rows": 41
+   },
+   {
+    "url": "https://www.oki.org/wp-content/uploads/2023/10/Chapter4SignageandWayfinding.pdf",
+    "text": "Chapter 4: Signage and Wayfinding",
+    "file": "data/gov_sources/region_oki_org/2b98cf_Chapter4SignageandWayfinding.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oki.org/wp-content/uploads/2023/10/Chapter5PedestrianBicycleFacilities.pdf",
+    "text": "Chapter 5: Pedestrian and Bicycle Facilities",
+    "file": "data/gov_sources/region_oki_org/b346dd_Chapter5PedestrianBicycleFacilities.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oki.org/wp-content/uploads/2023/10/Chapter7Parking.pdf",
+    "text": "Chapter 7: Parking",
+    "file": "data/gov_sources/region_oki_org/9061af_Chapter7Parking.pdf",
+    "rows": 431,
+    "bike_rows": 130
+   }
+  ],
+  "portals": {
+   "https://gis.oki.org/tip/": "View TIP Projects Map",
+   "http://gis.oki.org/BikeRouteGuide/": "Interactive Bike Route Guide",
+   "https://gis.oki.org/freight/": "View the Runways Dashboard",
+   "https://gis.oki.org/freightplan/trucks/": "View the Roads Map",
+   "https://gis.oki.org/freightplan/rail/": "View the Rail Map",
+   "https://gis.oki.org/freightplan/hubs/": "View the Freight Job Hubs",
+   "https://experience.arcgis.com/experience/fd23c7a819cb45d49a678aefe7558cd2": "View the OKI Bike Route Guide",
+   "https://experience.arcgis.com/experience/a50c72a803284c009bdf110d76a11f5a": "View Map (New Window)",
+   "https://gis.oki.org/er": "View Environmental Resources Viewer Map",
+   "https://experience.arcgis.com/experience/db71bcaf5cd44629b90ec9410b2a73e8/page/Modeler-Page": "View GEMM",
+   "https://northwarrencountytransportationplan-burgessniple.hub.arcgis.com/": "View the North Warren County Transportation Plan",
+   "https://oepa.maps.arcgis.com/apps/webappviewer/index.html?id=f4c83d2f649d4cdf854a1f650a39b1df": "here",
+   "https://www.arcgis.com/home/item.html?id=63d6023447324429a3f474b23bf46dfc": "here"
+  }
+ },
+ "capital:hartford.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "capital:lexingtonky.gov": {
+  "files": [
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2025-03/Wolf%20Run_No%20Aerial_Main%20Rds.pdf",
+    "text": "Wolf Run map",
+    "file": "data/gov_sources/capital_lexingtonky_gov/cdee42_Wolf_20Run_No_20Aerial_Main_20Rds.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-10/Handicap%20Parking%20Space%20Application.pdf",
+    "text": "Handicap Parking Space Application",
+    "file": "data/gov_sources/capital_lexingtonky_gov/b15013_Handicap_20Parking_20Space_20Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-11/Industrial%20User%20Application_rev%205-18-17.pdf",
+    "text": "Wastewater Discharge Permit application",
+    "file": "data/gov_sources/capital_lexingtonky_gov/2576ac_Industrial_20User_20Application_rev_205-18-17.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-11/Hauler%20Discharge%20Application.pdf",
+    "text": "Hauler permit application form",
+    "file": "data/gov_sources/capital_lexingtonky_gov/672f24_Hauler_20Discharge_20Application.pdf",
+    "rows": 170,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-11/ROEchartHistoric.pdf",
+    "text": "Review of Elements in H-1 Districts Chart",
+    "file": "data/gov_sources/capital_lexingtonky_gov/0633da_ROEchartHistoric.pdf",
+    "rows": 39,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2026-04/Overall%20Greenway%20System.pdf",
+    "text": "Overall greenway system and park trails map",
+    "file": "data/gov_sources/capital_lexingtonky_gov/8a0089_Overall_20Greenway_20System.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2026-04/Conservation%20Greenways.pdf",
+    "text": "Conservation greenway and trail maps",
+    "file": "data/gov_sources/capital_lexingtonky_gov/7e9f15_Conservation_20Greenways.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2026-04/Greenway%20Trails.pdf",
+    "text": "Greenway trail maps",
+    "file": "data/gov_sources/capital_lexingtonky_gov/0f66f2_Greenway_20Trails.pdf",
+    "rows": 15,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2026-04/Complete%20Street%20Trails.pdf",
+    "text": "Complete Street trail maps",
+    "file": "data/gov_sources/capital_lexingtonky_gov/87f5d6_Complete_20Street_20Trails.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2026-04/Water-Based%20Trails.pdf",
+    "text": "Water-based trail maps",
+    "file": "data/gov_sources/capital_lexingtonky_gov/909ef3_Water-Based_20Trails.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2026-04/Green%20way%20Master_Plan_Rotated.pdf",
+    "text": "2002 Greenway Master Plan",
+    "file": "data/gov_sources/capital_lexingtonky_gov/c544b7_Green_20way_20Master_Plan_Rotated.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-11/Northside%20Map%201%20of%202%20b.pdf",
+    "text": "Northside (Map 1 of 2)",
+    "file": "data/gov_sources/capital_lexingtonky_gov/3feecc_Northside_20Map_201_20of_202_20b.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-11/Northside%20Map%202%20of%202%20b.pdf",
+    "text": "Northside (Map 2 of 2)",
+    "file": "data/gov_sources/capital_lexingtonky_gov/b51e3f_Northside_20Map_202_20of_202_20b.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-11/18-Emergency%20Housing%20Repair%20Program%20%202025.pdf",
+    "text": "Emergency Housing Repair Program",
+    "file": "data/gov_sources/capital_lexingtonky_gov/69cbe3_18-Emergency_20Housing_20Repair_20Program_20_202025.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2026-03/RavenRun-VisitorCenterSensoryMap.pdf",
+    "text": "Visitor's Center Sensory Map",
+    "file": "data/gov_sources/capital_lexingtonky_gov/dd2de9_RavenRun-VisitorCenterSensoryMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-11/Coldstream%20Park%20Map.pdf",
+    "text": "View Park Map",
+    "file": "data/gov_sources/capital_lexingtonky_gov/133007_Coldstream_20Park_20Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-11/Map%20of%20Parks%20User%20Guide.pdf",
+    "text": "Parks map guide",
+    "file": "data/gov_sources/capital_lexingtonky_gov/1d4279_Map_20of_20Parks_20User_20Guide.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-11/Jacobson%20Park%20map_0.pdf",
+    "text": "View a map of Jacobson Park",
+    "file": "data/gov_sources/capital_lexingtonky_gov/03d87e_Jacobson_20Park_20map_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-11/McConnell%20Springs%20Map_Letter%20Size_2024.pdf",
+    "text": "McConnell Springs trail map",
+    "file": "data/gov_sources/capital_lexingtonky_gov/69d7c4_McConnell_20Springs_20Map_Letter_20Size_2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2026-03/McConnellSprings-EdCenterSensoryMap.pdf",
+    "text": "Education Center Sensory Map",
+    "file": "data/gov_sources/capital_lexingtonky_gov/4ed28b_McConnellSprings-EdCenterSensoryMap.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2026-04/Stream%20Impairments%20Map_0.pdf",
+    "text": "Proximity to an impaired water body",
+    "file": "data/gov_sources/capital_lexingtonky_gov/6310a7_Stream_20Impairments_20Map_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2025-01/masterson-station-park-map.pdf",
+    "text": "Park map",
+    "file": "data/gov_sources/capital_lexingtonky_gov/58c9a3_masterson-station-park-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lexareampo.org/wp-content/uploads/2023/08/101433_BikeMap_LowResProof.pdf",
+    "text": "Printable map of bike trails A downloadable and printable version of the map of the trail system in Lexington",
+    "file": "data/gov_sources/capital_lexingtonky_gov/70a565_101433_BikeMap_LowResProof.pdf",
+    "rows": 20,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-12/WWTP%20boundaries.pdf",
+    "text": "map of treatment plant boundaries",
+    "file": "data/gov_sources/capital_lexingtonky_gov/b7e450_WWTP_20boundaries.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.lexingtonky.gov/": "Open data",
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=c27e5cf9dc2848da9fa5c0d52824bf28": "Map of trails See a map of the trail system in Lexington",
+   "https://lfucg.maps.arcgis.com/apps/webappviewer/index.html?id=357a688c5cf046b29c0756dd7ffb65cf": "map",
+   "https://lfucg.maps.arcgis.com/apps/instant/lookup/index.html?appid=ff3504c5275e4ef5a2d3383b6fe3050d": "Find your watershed",
+   "https://water-health-portal-kygis.hub.arcgis.com/": "Kentucky Water Health Portal",
+   "https://experience.arcgis.com/experience/1e70428d40b742a7a227020160a1aa3b/": "Stormwater incentive grant past project map",
+   "https://lfucg.maps.arcgis.com/apps/instant/basic/index.html?appid=783c7dee17c14498bfb9931fd770a89a": "snow emergency routes",
+   "https://www.arcgis.com/home/webscene/viewer.html?layers=97e23f54636f443f9ce3ef5c2b82ca34 ": "Royal Springs Aquifer",
+   "https://lfucg.maps.arcgis.com/apps/webappviewer/index.html?id=4f3c5cfd3b2c48bebcff0dd98043f385": "To find out what neighborhood association you live in",
+   "https://lfucg.maps.arcgis.com/apps/InformationLookup/index.html?appid=11087c71b27c44498cc22ef3af9bf0e8": "What watershed do I live in?",
+   "https://experience.arcgis.com/experience/ee42443006a748779b03e2aa0929cd4a?org=lfucg": "Downtown Tree Walk",
+   "https://lfucg.maps.arcgis.com/apps/Shortlist/index.html?appid=62f26853a15c4e968ed70ba6679123ab": "Past Go See Trees",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdata.lexingtonky.gov%2Fdatasets%2F4853b4c4911d4dedbf1e2e577778a9a8_0%2Fexplore%3Flocation%3D38.052048%252C-84.487701%252C14&data=05%7C02%7Cagjoshi%40lexingtonky.gov%7Ca7a6ff76e25941028de908dea17165fb%7Cdbc9f5ac2e804290a5b6f86036082a04%7C0%7C0%7C639125705577725518%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=6uPH3C%2FZ0n1UEYeqzkSjV1f9p9xRFycAgXZChSMtwt4%3D&reserved=0": "Map",
+   "https://experience.arcgis.com/experience/cfe10c11d062490e8dc75f6663f3ce04": "View full EQPW project map",
+   "https://lfucg.maps.arcgis.com/apps/instant/basic/index.html?appid=26617d9c6ba445519efacdefe59bac15": "View full utility project map",
+   "https://lfucg.maps.arcgis.com/apps/instant/basic/index.html?appid=9ce7bad4f4eb444fa264a87ec8885618": "View full paving schedule map",
+   "https://lfucg.maps.arcgis.com/apps/instant/nearby/index.html?appid=d06b60edfeb24c0bbcb4deb0cbd4cce2": "Find a storm drain in your neighborhood",
+   "https://storymaps.arcgis.com/stories/fb6fc7c6effd421db4d853fe2594ef52": "Explore Lexington's artistic storm drains",
+   "https://experience.arcgis.com/experience/0a8e528d721140549a9893a3634c02d3/page/Page?views=Maintenance": "Who maintains what roads?",
+   "https://experience.arcgis.com/experience/464125561095451fa83b15319d619cd0?org=lfucg": "Map of Reforest sites",
+   "https://lfucg.maps.arcgis.com/apps/dashboards/7a4c00f02da74c7ebab281b09bd0d4d9": "Interactive Project Map"
+  }
+ },
+ "capital:lincoln.ne.gov": {
+  "files": [
+   {
+    "url": "https://lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/2025-city-of-lincoln-trail-report-web.pdf",
+    "text": "Annual Trail Report (PDF, 8MB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/009281_2025-city-of-lincoln-trail-report-web.pdf",
+    "rows": 51,
+    "bike_rows": 29
+   },
+   {
+    "url": "https://lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/bridlepath_actionplan_20180110.pdf",
+    "text": "Pioneers Park Bridle Paths Action Plan (PDF, 584KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/864fbc_bridlepath_actionplan_20180110.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/lpr-trails-fletcher-tap-55.pdf",
+    "text": "Informational handout (PDF, 252KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/700629_lpr-trails-fletcher-tap-55.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/projects/13554-waterford-trail-fact-sheet-10-6-26.pdf",
+    "text": "Waterford Trail Fact Sheet, 10-6-26 (PDF, 594KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/c6b145_13554-waterford-trail-fact-sheet-10-6-26.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/route-brochures/all-weekday-routes.pdf",
+    "text": "All Weekday Routes & Schedules (PDF, 2MB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/96feaf_all-weekday-routes.pdf",
+    "rows": 436,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/route-brochures/unl-routes.pdf",
+    "text": "All UNL Routes & Schedules (PDF, 754KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/29a283_unl-routes.pdf",
+    "rows": 57,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/route-brochures/all-saturday-routes.pdf",
+    "text": "All Saturday Routes & Schedules (PDF, 3MB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/2280e8_all-saturday-routes.pdf",
+    "rows": 199,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/const-demo-recycling-resources.pdf",
+    "text": "Construction Material Diversion Providers (PDF, 12KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/5b5524_const-demo-recycling-resources.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/2/ltu/transportation/traffic-engineering/truck-routes.pdf",
+    "text": "Truck Routes Map (PDF, 705KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/32cf70_truck-routes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/2025-city-of-lincoln-trail-report-web.pdf",
+    "text": "Annual Trail Report (PDF, 8MB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/43be6f_2025-city-of-lincoln-trail-report-web.pdf",
+    "rows": 51,
+    "bike_rows": 29
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/bridlepath_actionplan_20180110.pdf",
+    "text": "Pioneers Park Bridle Paths Action Plan (PDF, 584KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/fed3ae_bridlepath_actionplan_20180110.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/lpr-trails-fletcher-tap-55.pdf",
+    "text": "Informational handout (PDF, 252KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/555025_lpr-trails-fletcher-tap-55.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/projects/13554-waterford-trail-fact-sheet-10-6-26.pdf",
+    "text": "Waterford Trail Fact Sheet, 10-6-26(PDF, 594KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/63e3ca_13554-waterford-trail-fact-sheet-10-6-26.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bikeleague.org/wp-content/uploads/bfareportcards/bfc/Fall_2023/Lincoln_NE.pdf",
+    "text": "here",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/70ff37_Lincoln_NE.pdf",
+    "rows": 62,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/parks-amp-rec/parks-amp-facilities/parks/pioneers_park_map.pdf",
+    "text": "Pioneers-Park-Map.pdf (PDF, 9MB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/d1fab6_pioneers_park_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/parks-amp-facilities/parks/wilderness-park/wilderness-map.pdf",
+    "text": "Wilderness-Map.pdf (PDF, 2MB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/51d922_wilderness-map.pdf",
+    "rows": 27,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/waterfordtrailpresentation-5.11.2026.pdf",
+    "text": "WaterfordTrailPresentation-5.11.2026.pdf (PDF, 4MB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/090a6b_waterfordtrailpresentation-5.11.2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/2/urban-development/park-and-go/forms/bicycle-storage-agreement.pdf",
+    "text": "Bicycle Storage Agreement (PDF, 50KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/ed9064_bicycle-storage-agreement.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/urban-development/park-and-go/forms/parking-rules-and-regulations.pdf",
+    "text": "Parking Rules and Regulations (PDF, 704KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/c5255a_parking-rules-and-regulations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/urban-development/park-and-go/forms/rosaparklot_foodtruck.pdf",
+    "text": "application (PDF, 50KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/95474b_rosaparklot_foodtruck.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/3/urban-development/park-and-go/forms/food-truck-parking-meter-hood-application.pdf",
+    "text": "Food Truck Parking Meter Hooding Application",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/ca521f_food-truck-parking-meter-hood-application.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/programs/nature-center/ppnc-tracks-sheet.web.2020.pdf",
+    "text": "Animal Tracks Guide (PDF, 390KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/07cba8_ppnc-tracks-sheet.web.2020.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/about/lpr-guidelines-adoptparktrail.pdf",
+    "text": "Adopt-A-Park & Adopt-A-Trail Guidelines (PDF, 675KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/4d9581_lpr-guidelines-adoptparktrail.pdf",
+    "rows": 21,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/volunteer/adopt-a-park-area-application2021.pdf",
+    "text": "Adopt-a-Park and Trail Application (PDF, 63KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/6fbc4a_adopt-a-park-area-application2021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/parks-amp-rec/pedestrianbicycle-committee/boardtraining.doc.pbac05-10-21.pdf",
+    "text": "BoardTraining.Doc.PBAC05-10-21.pdf (PDF, 133KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/e31643_boardtraining.doc.pbac05-10-21.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/mmtc/mmtc-20251021-parking-options.pdf",
+    "text": "Private Parking Options Near City Hall 458 K (, 0B)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/6650e2_mmtc-20251021-parking-options.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/6/ltu/startran/route-brochures/unl-routes.pdf",
+    "text": "PDF Brochure (PDF, 754KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/099fae_unl-routes.pdf",
+    "rows": 57,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/corrugated-cardboard-faq.pdf",
+    "text": "PDF Version (PDF, 655KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/a87430_corrugated-cardboard-faq.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/guidelines-poster-mfh.pdf?2020",
+    "text": "Recycling Guidelines for Shared Multi-family Recycling Containers (PDF, 634KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/1f0d13_guidelines-poster-mfh.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/cardboard-recycle-poster.pdf",
+    "text": "Educational Recycling Poster (PDF, 280KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/6cc76e_cardboard-recycle-poster.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycle-tips.pdf",
+    "text": "Tips for Recycling at Home (PDF, 530KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/95583e_recycle-tips.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycling-handbill.pdf",
+    "text": "Tips for Recycling at Home (8.5\"x11\") (PDF, 426KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/14354e_recycling-handbill.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/guidelines-poster-mfh-es.pdf?2020",
+    "text": "Pautas de reciclaje por material para contenedores de reciclaje compartidos multifamiliares (PDF, 710KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/79c126_guidelines-poster-mfh-es.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/cardboard-recycle-poster-es.pdf",
+    "text": "Descargue el cartel de reciclaje educativo (PDF, 4MB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/60d4f6_cardboard-recycle-poster-es.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycle-tips-es.pdf",
+    "text": "Descargue consejos de reciclaje en casa (PDF, 530KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/6f27c5_recycle-tips-es.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycling-handbill-es.pdf",
+    "text": "Descargue consejos de reciclaje en casa (8.5\"x11\") (PDF, 428KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/fd209d_recycling-handbill-es.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/guidelines-poster-mfh-vi.pdf?2020",
+    "text": "Hướng dẫn bỏ rác theo vật liệu dành cho thùng rác cho nhiều hộ gia đình dùng chung (PDF, 704KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/6b7a14_guidelines-poster-mfh-vi.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/cardboard-recycle-poster-vi.pdf",
+    "text": "Tải về: Biễu ngữ huấn luyện tái tạo (PDF, 4MB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/055cbe_cardboard-recycle-poster-vi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycle-tips-vi.pdf",
+    "text": "Tải về: Cẫm nang tái tạo tại gia (PDF, 535KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/7b2ae0_recycle-tips-vi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycling-handbill-vi.pdf",
+    "text": "Tải về: Cẫm nang tái tạo tại gia (8.5\"x11\") (PDF, 448KB)",
+    "file": "data/gov_sources/capital_lincoln_ne_gov/440c13_recycling-handbill-vi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.lincoln.ne.gov/Payments-Services/Open-Data": "Open Data",
+   "https://experience.arcgis.com/experience/d40f8bcafe804295b94b00c8127aec93/page/Page-1/?views=Street-Closures-Map": "Lancaster County Road Closures",
+   "http://www.arcgis.com/apps/webappviewer/index.html?id=3c325ececec44d46b031385a73d7a5e0": "Street Sweeping Map",
+   "https://lincolnne.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=0ee203d663bc4afb83cb5647f47be122&locale=en-US": "Open map in full screen",
+   "https://lincolnne.maps.arcgis.com/apps/webappviewer/index.html?id=6e98d72fc3bc4386b7d6bda6cf3d9f9b&extent=-10779325.0261%2C4976241.0492%2C-10743686.2616%2C4992846.9936%2C102100": "Click here to view the map in full.",
+   "https://lincolnne.maps.arcgis.com/apps/instant/sidebar/index.html?appid=1e18c7112d1843868e6313499f10ec01": "City of Lincoln Bridge Map"
+  }
+ },
+ "capital:salemoregon.net": {
+  "files": [],
+  "portals": {}
+ },
+ "capital:olympiawa.gov": {
+  "files": [
+   {
+    "url": "https://olympiawa.gov/Document_center/Services/Transportation/Plans, Studies and Data/Speed-Comparison-Maps.pdf?t=202610051506480",
+    "text": "Speed comparison maps",
+    "file": "data/gov_sources/capital_olympiawa_gov/cb8ab2_Speed-Comparison-Maps.pdf",
+    "rows": 9,
+    "bike_rows": 5
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/f0ba81d655434194a78ceacaa07416b8": "Wander Olympia's Waterfront",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=9fc55aa70c3744019649e4e7bc786a20&extent=-123.025,46.9952,-122.7742,47.0908": "Rental Registry inspection zones",
+   "https://storymaps.arcgis.com/collections/41e7d8718db94669ba7f711f46fbf9f2": "Rising sea levels",
+   "https://olympiawa.maps.arcgis.com/apps/webappviewer/index.html?id=4f0c148490844254a8fe08aa9a324947": "OlyPD crime map",
+   "https://olympiawa.maps.arcgis.com/home/webmap/viewer.html?webmap=0cdef5814d924ce898278b534c2e2092": "Safe Olympia locations",
+   "https://storymaps.arcgis.com/stories/d87da043214b4b6787f1d6cd9b765a1b": "Arts Walk Cover Art Map",
+   "https://storymaps.arcgis.com/stories/b6da4521dd394e078f2505f11d799d39": "Olympia Murals",
+   "https://storymaps.arcgis.com/stories/c35ccb0392964ecf90af6c413016a924": "Olympia's Public Art Collection",
+   "https://storymaps.arcgis.com/stories/15228cddb3fb40f487c36a8d80351d3e": "Percival Plinth Project",
+   "https://storymaps.arcgis.com/stories/dc85803f9f1e426c8569e5f1ae3217e2": "Traffic Box Wraps",
+   "https://storymaps.arcgis.com/stories/45e03d53150a4b9783dfb6c4aa5541ba": "Interactive Parks Map",
+   "https://olympiawa.maps.arcgis.com/home/webmap/viewer.html?webmap=e44272f3a5a0487486e20f31be8ef09c": "Drinking water protection areas",
+   "https://experience.arcgis.com/experience/fcfea616f47f49c3abf8901be3f8b260/": "Impervious surface lookup map",
+   "https://storymaps.arcgis.com/stories/dfe37c51297046edad19f3037ec77a4c": "Enhanced Street Sweeping",
+   "https://experience.arcgis.com/experience/360bc3cba95d435589e53fe4d7e2c0b0": "Olympia's Stormwater System",
+   "https://olympiawa.maps.arcgis.com/apps/instant/sidebar/index.html?appid=2e929a81f0504f758c2a174cfe7ebd62": "Sewer lookup map",
+   "https://storymaps.arcgis.com/stories/82680ff20c7c4cffabd88d1e9629fdd4": "What the Storm & Surface Water Utility does",
+   "https://storymaps.arcgis.com/stories/b3487e4c656a464da561bb63319d84f8": "View the story map",
+   "https://www.arcgis.com/apps/mapviewer/index.html?webmap=9fc55aa70c3744019649e4e7bc786a20&extent=-123.025,46.9952,-122.7742,47.0908": "Inspection Zone Map",
+   "https://olympiawa.maps.arcgis.com/home/webmap/viewer.html?webmap=c1a04a88c17e42ac95174bd8a0e61c1e": "View full size map",
+   "https://olympiawa.maps.arcgis.com/home/webmap/viewer.html?webmap=c4309e0d59094000bc9c23a5232c0e40": "View full size map",
+   "https://olympiawa.maps.arcgis.com/home/webmap/viewer.html?webmap=bfaa62166763421aa497c26d20e3c934": "View full size map",
+   "https://olympiawa.maps.arcgis.com/home/webmap/viewer.html?webmap=cd66c13f9c834abe9807f4456a080e74": "View full size map"
+  }
+ },
+ "parks:portal.ct.gov/deep": {
+  "files": [
+   {
+    "url": "http://www.ct.gov/dps/lib/dps/public_information_files/december_2005/2005_120105_motor_vehicle_accident_on_route_8.pdf",
+    "text": "Motor Vehicle Accident on Route 8",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/41e69c_2005_120105_motor_vehicle_accident_on_route_8.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.ct.gov/dps/lib/dps/2005_120105_motor_vehicle_accident_on_route_8.pdf",
+    "text": "",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/529b2a_2005_120105_motor_vehicle_accident_on_route_8.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.ct.gov/dps/lib/dps/public_information_files/march_2006/2006_032806_tractor_trailer_accident_fatality_in_tolland.pdf",
+    "text": "Tractor Trailer Fatality on I-84 in Tolland",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/c76b13_2006_032806_tractor_trailer_accident_fatality_in_tolland.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.ct.gov/dps/lib/dps/public_information_files/february_2006/2006_02122006_fatal_car_vs._pedestrian_accident_in_norwalk.pdf",
+    "text": "Fatal Tractor Trailer vs. Pedestrian Accident On I95 In Norwalk",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/8fb217_2006_02122006_fatal_car_vs._pedestrian_accident_in_norwalk.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/despp/-/media/despp/dsp/csptroops201220120816pdf.pdf",
+    "text": "CSP Districts and Troop Location Map",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/9ff2f1_csptroops201220120816pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2013/hgrfd2013afshospitalparentpdf.pdf?rev=e097230884ab48909655815899135e58&hash=8EFD13B8C45B209EA7354984054117F1",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/787ba2_hgrfd2013afshospitalparentpdf.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2014/hgrfd2014afshospitalparentpdf.pdf?rev=e6dab459349748958749f3c283707e4c&hash=CA8FD16810EA41E18AAE85EBEF791563",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/91adbc_hgrfd2014afshospitalparentpdf.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2016/hgrfd2016afshospitalparentpdf.pdf?rev=5a3232fc82434108b5b58fa45d195f55&hash=BAA81B09035C5AF79CCAD6E84EF1B48A",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/e50914_hgrfd2016afshospitalparentpdf.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2010/hgrfd2010afshospitalparentpdf.pdf?rev=56265ebd8c1347418e8f4212deadb074&hash=FADF7E61119F787D3EBC342C3D7C3AFE",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/72c57c_hgrfd2010afshospitalparentpdf.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2015/hgrfd2015afshospitalparentpdf.pdf?rev=c44da2d1093b4263b6356cce4d6c454c&hash=A1FB1DED1FC498910970233C549FFE87",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/a7c0ee_hgrfd2015afshospitalparentpdf.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2009/hgrfd2009afshospitalparentpdf.pdf?rev=4f44089ad3dd415c933be1f5bdec58de&hash=5F0F25643B086E7872CA974BE8990A7A",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/8a4257_hgrfd2009afshospitalparentpdf.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2011/hgrfd2011afshospitalparentpdf.pdf?rev=f0b88b644bb745198161e758ae051dd2&hash=135C8EB0BB9D3456DADDF5CA25ABD715",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/0effff_hgrfd2011afshospitalparentpdf.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2012/hgrfd2012afshospitalparentpdf.pdf?rev=a8e3bea7d66a4ce8acc7edc759a43643&hash=55FD56F29EDEEA7AABE2BA037AFF0720",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/484a34_hgrfd2012afshospitalparentpdf.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/secretary/rfp/rentparkingopm01292010pdf.pdf?rev=b155d4e0972f46449ddef8a3c1e971a0&hash=F850D882D6FF1982760382F6F2FA7E88",
+    "text": "RentParking_OPM_01292010.pdf",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/2a6f68_rentparkingopm01292010pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/secretary/rfp/rentschlerparkingbidsasreadpdf.pdf?rev=3002f3dedc214fdcb9c8ead6179a02af&hash=DF7A563DE6586BED8DF109D79C70BFB4",
+    "text": "Rentschler_Parking_ Bids_ as_ Read.pdf",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/b2c1b8_rentschlerparkingbidsasreadpdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/secretary/rfp/opmupdaterentparking021610pdf.pdf?rev=0af5dcd6d09d43c2aa424a755861a6c1&hash=E3FD6ABEE97BDD68D44C3E794C3EC56E",
+    "text": "OPM_UpdateRentPark021610.pdf",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/93748e_opmupdaterentparking021610pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/secretary/rfp/opmrentparkingattachments15030110pdf.pdf?rev=3d29c3aa4e594b768a5de14d6306e01b&hash=632AC3983195AC6FCA51FF786EAF0B59",
+    "text": "OPM_RentParking_attachments_1-5_030110.pdf",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/ab9313_opmrentparkingattachments15030110pdf.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/secretary/rfp/addendum3pdf.pdf?rev=2adc8131e9344add9648a536e793d71d&hash=A3505B0A2DBC1AC91ED0B454A1379C3E",
+    "text": "OPM_Rent Parking_addendum3_030310.pdf",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/756ef8_addendum3pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/secretary/rfp/opmrentparkingaddendum4031010pdf.pdf?rev=ab6dfc6e7dab45abb30bc84dfb6c9551&hash=4B9FF42887DCCDA3050F7F0BF05A1E93",
+    "text": "OPM_RentParking_addendum4_031010.pdf",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/86d373_opmrentparkingaddendum4031010pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/secretary/rfp/opmrentparkingaddendum5031010pdf.pdf?rev=4473882ad9854277b52e1b815a0f1900&hash=5281B50DA0B7460819E529B25F0B1F4E",
+    "text": "OPM_RentParking_addendum5_031010.pdf",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/e45825_opmrentparkingaddendum5031010pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2014/irs990/hgrfd990hospital2014pdf.pdf?rev=8d0d530b074b4d2c9c59c07246a2d477&hash=2A904E9B46F740A4AF3C44307FE8487B",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/b9f8e8_hgrfd990hospital2014pdf.pdf",
+    "rows": 927,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2014/irs990/charlottehungerfordhospitalpdf.pdf?rev=631fbae1531e46699567f05e229de5f8&hash=7AA3425C7D89A22FC8A673523F55D9F4",
+    "text": "Charlotte\n            Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/d1ee1f_charlottehungerfordhospitalpdf.pdf",
+    "rows": 106,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2015/irs990/hgrfd990hospital2015pdf.pdf?rev=2df005d349234f0ebad79784d9cf82ff&hash=8018395F5EF529107347BDD0B467588F",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/716871_hgrfd990hospital2015pdf.pdf",
+    "rows": 1109,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2015/irs990/charlottehungerfordhospitalpdf.pdf?rev=3aa8d9f347d840509ae36bb2516a04e1&hash=2CC63D4A9516B11982267864C2D591DB",
+    "text": "Charlotte\n            Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/4859f6_charlottehungerfordhospitalpdf.pdf",
+    "rows": 138,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2016/irs990/hgrfd990_hospital_2016.pdf?rev=6fbdd106655044ff9b2be6819f7fdd8d&hash=B252FEFB8EDD5993880D8B4AA7C15F95",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/f6df7a_hgrfd990_hospital_2016.pdf",
+    "rows": 1141,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2012/irs990/hgrfd990hospital2012pdf.pdf?rev=13dc313745174bed80540a09b9308858&hash=3C88B29822CD646B0EA51373B052A765",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/0085fd_hgrfd990hospital2012pdf.pdf",
+    "rows": 945,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2012/scheduleh/hgrfdschedh2012pdf.pdf?rev=f450b61a23814a7b9dcbc956cf6f0d2a&hash=EA6345203AB00E63D44F5A3998CCC0C4",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/dc298e_hgrfdschedh2012pdf.pdf",
+    "rows": 139,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2012/hgrfd2012dashboardpdf.pdf?rev=5ddb389bf6f14afb83c2b6f0efdb9d2a&hash=1A7C358ACA42B87176EBBE0831520847",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/a6f81d_hgrfd2012dashboardpdf.pdf",
+    "rows": 17,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2009/hgrfd2009dashboardpdf.pdf?rev=059b7ea9821d4abb899b722aba6a9f8c&hash=4189382E8C70258766573CFD07063B23",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/173af8_hgrfd2009dashboardpdf.pdf",
+    "rows": 18,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2010/hgrfd2010dashboardpdf.pdf?rev=557493912827432b96ca2cdf2a34f675&hash=AF02B809B3891C39C2663DD4F0A903AE",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/c8c6a1_hgrfd2010dashboardpdf.pdf",
+    "rows": 20,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://portal.ct.gov/ohs/-/media/ohs/ohca/hospitalfillings/2011/hgrfd2011dashboardpdf.pdf?rev=a2ffd348262945bd89ddf5e7b243d61a&hash=A72C1D8841DCD325D0E784E710C54E56",
+    "text": "Charlotte Hungerford Hospital",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/43decc_hgrfd2011dashboardpdf.pdf",
+    "rows": 18,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/budget/fy2007allotments/fy2007q4allotmentadvicepdf.pdf?rev=cf8fceac7c5b402bbbba1e74cf9c582d&hash=F1FCE6DAD036EBA5260A703E006E5C18",
+    "text": "fy2007_q4_allotment_advice.pdf",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/5698c5_fy2007q4allotmentadvicepdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/budget/fy2007allotments/0733brsaallotmentpdf.pdf?rev=d3021e4a010c4f67993b978420c9ced5&hash=5D2D5E7E4861EC33A4F542991B6FEBDF",
+    "text": "07-33B_RSA_Allotment.pdf",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/365309_0733brsaallotmentpdf.pdf",
+    "rows": 84,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/budget/fy2009allotments/fy2009q1partialallotmentadvicepdf.pdf?rev=ad35337c5ae0430a883d1635e56f9e30&hash=BB8D6C85B33B7EC8017BB272C6240078",
+    "text": "Q1 Partial Allotment",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/442663_fy2009q1partialallotmentadvicepdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/budget/fy2010allotments/adviceofallotmentjulyfy2010pdf.pdf?rev=05a234f6a7fe42f8bada41cbd2542f14&hash=D2275984D0063246E8887B154629F669",
+    "text": "July Allotment",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/20b09e_adviceofallotmentjulyfy2010pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/budget/fy2010allotments/adviceofallotmentaugustfy2010pdf.pdf?rev=82cf48e24f214c118f9769401ac0eb74&hash=7A881CDC0544352C6349F124033BEE9C",
+    "text": "August Allotment",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/b1c291_adviceofallotmentaugustfy2010pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/budget/fy2010allotments/adviceofallotmentseptemberfy2010pdf.pdf?rev=fc6c0fd461df4dbd81aab1513df13a3a&hash=30B330B59F1B724E49D5A62BCD8B7BFC",
+    "text": "September Allotment",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/782752_adviceofallotmentseptemberfy2010pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/budget/fy2010allotments/fy2010q2allotmentadvicepdf.pdf?rev=463de15c5019475fa4900c57262b91dd&hash=6DE5055A6C40058D681E0ED78A591112",
+    "text": "Q2 Allotment",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/6947b3_fy2010q2allotmentadvicepdf.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/budget/fy2010allotments/fy2010q3allotmentadvicepdf.pdf?rev=cf76fd80063d48a18ef5aa82893031d5&hash=CE3533F3E07BF5F5062EF6C402461D69",
+    "text": "Q3 Allotment",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/6f776e_fy2010q3allotmentadvicepdf.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://portal.ct.gov/opm/-/media/opm/budget/fy2010allotments/fy2010q4allotmentadvicepdf.pdf?rev=756e894db3f24bc1b5f32e91d0cb90d3&hash=3DAC4905EAAF2ECE4BC54D9D2FEC20B8",
+    "text": "Q4 Allotment",
+    "file": "data/gov_sources/parks_portal_ct_gov_deep/0d35fa_fy2010q4allotmentadvicepdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.ct.gov/": "Connecticut Open Data Opens in a new window Opens in a new window",
+   "https://portal.ct.gov/opendata": "Top",
+   "https://portal.ct.gov/open-data": "Top",
+   "https://maps-ctdot.hub.arcgis.com/apps/ec4af08e038841fba862db805a9f6c70/explore": "Active Projects",
+   "http://www.depdata.ct.gov/calendar/": "Calendar of Events",
+   "https://ctdeep.maps.arcgis.com/apps/webappviewer/index.html?id=950da678b13b458ba4cbe5687e902c19&deepNav=|": "Find a Park",
+   "https://data.ct.gov/Housing-and-Development/Annual-Housing-Permit-Data-By-Town-1990-2025/stm9-38x4/about_data": "Annual Housing Permit Data 1990-Present",
+   "https://data.ct.gov/Housing-and-Development/DECD-Annual-Construction-Report-1997-2025/wmfh-25km/about_data": "Annual New Construction Permit Report by Town by Unit Type 1997-Present",
+   "https://data.ct.gov/d/aqvk-nwva": "Supplemental Permit Application Data 2024-Present"
+  }
+ },
+ "parks:lastateparks.com": {
+  "files": [],
+  "portals": {}
+ },
+ "parks:parks.ny.gov": {
+  "files": [
+   {
+    "url": "https://extapps.dec.ny.gov/docs/wildlife_pdf/hpaihunters.pdf",
+    "text": "NYSDEC Highly Pathogenic Avian Influenza - What Hunters Need to Know",
+    "file": "data/gov_sources/parks_parks_ny_gov/b5c56d_hpaihunters.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/NewYorkStateHistoricPreservationPlan20212026.pdf",
+    "text": "2021-2026 New York State Historic Preservation Plan",
+    "file": "data/gov_sources/parks_parks_ny_gov/fa1bfd_NewYorkStateHistoricPreservationPlan20212026.pdf",
+    "rows": 109,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2025-10/CentennialNewYorkStateParksRecreationandHistoricPreservationCareerGuide.pdf",
+    "text": "Career Guide",
+    "file": "data/gov_sources/parks_parks_ny_gov/7542ae_CentennialNewYorkStateParksRecreationandHistoricPreservationCareerGuid",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/FinalStateHistoricPreservationPlan20212026ExecutiveSummary.pdf",
+    "text": "Final State Historic Preservation Plan (2021-26) Executive Summary (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/7a9cb1_FinalStateHistoricPreservationPlan20212026ExecutiveSummary.pdf",
+    "rows": 50,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/FinalStateHistoricPreservationPlan20212026.pdf",
+    "text": "Final State Historic Preservation Plan (2021-26) (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/6d5eea_FinalStateHistoricPreservationPlan20212026.pdf",
+    "rows": 109,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/FinalStateHistoricPreservationPlan20212026FinalGenericEIS.pdf",
+    "text": "Final State Historic Preservation Plan (2021-26) Final Generic EIS (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/ffa248_FinalStateHistoricPreservationPlan20212026FinalGenericEIS.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/FinalStateHistoricPreservationPlan20212026Appendices.pdf",
+    "text": "Final State Historic Preservation Plan (2021-26) Appendices (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/48aa99_FinalStateHistoricPreservationPlan20212026Appendices.pdf",
+    "rows": 978,
+    "bike_rows": 96
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/AdoptionandImplementationStatewideGreenwayTrailsPlan.pdf",
+    "text": "Signed Findings and Adoption Statement (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/8bcdb5_AdoptionandImplementationStatewideGreenwayTrailsPlan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/FinalStatewideGreenwayTrailsPlan2020.pdf",
+    "text": "Final Statewide Greenway Trails Plan/Final GEIS (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/da1383_FinalStatewideGreenwayTrailsPlan2020.pdf",
+    "rows": 48,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/FinalStatewideGreenwayTrailsPlanAppendices2020.pdf",
+    "text": "Final Statewide Greenway Trails Plan Appendices (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/fbf8da_FinalStatewideGreenwayTrailsPlanAppendices2020.pdf",
+    "rows": 337,
+    "bike_rows": 65
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlan.pdf",
+    "text": "2010 Statewide Trails Plan",
+    "file": "data/gov_sources/parks_parks_ny_gov/d3461d_StatewideTrailsPlan.pdf",
+    "rows": 21,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanExecutiveSummary.pdf",
+    "text": "Executive Summary (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/e5a645_StatewideTrailsPlanExecutiveSummary.pdf",
+    "rows": 51,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanFigure1.pdf",
+    "text": "Figure 1 - Greenway Trails Network (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/4cfd04_StatewideTrailsPlanFigure1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanFigure2.pdf",
+    "text": "Figure 2 - New York City Greenway Trails Network (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/b5a9e4_StatewideTrailsPlanFigure2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanFigure3.pdf",
+    "text": "Figure 3 - Long Distance Hiking Trails Network (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/a88608_StatewideTrailsPlanFigure3.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanFigure4.pdf",
+    "text": "Figure 4 - Water Trails Network (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/fc950c_StatewideTrailsPlanFigure4.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanFigure5.pdf",
+    "text": "Figure 5 - Statewide Framework (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/e155a0_StatewideTrailsPlanFigure5.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanAppendixA.pdf",
+    "text": "Appendix A - Legal Authorization to Develop a Statewide Trails Plan (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/d2cdf9_StatewideTrailsPlanAppendixA.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanAppendixB.pdf",
+    "text": "Appendix B - Physical Activity Calorie Use Chart (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/f4d83b_StatewideTrailsPlanAppendixB.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanAppendixC.pdf",
+    "text": "Appendix C - Every Mile Counts - An Analysis of the 2008 Trail User Surveys (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/4327fc_StatewideTrailsPlanAppendixC.pdf",
+    "rows": 472,
+    "bike_rows": 93
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanAppendixD.pdf",
+    "text": "Appendix D - 2004 General Public Recreation Survey Report (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/54c061_StatewideTrailsPlanAppendixD.pdf",
+    "rows": 271,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanAppendixE.pdf",
+    "text": "Appendix E - 2008 General Public Trails Workshops - Comment Summary (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/c3b0e1_StatewideTrailsPlanAppendixE.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanAppendixF.pdf",
+    "text": "Appendix F - Results of the 2005 Park Professional Survey (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/93e638_StatewideTrailsPlanAppendixF.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanAppendixG.pdf",
+    "text": "Appendix G - Results from the 2006 Trail Organization Survey (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/03eb87_StatewideTrailsPlanAppendixG.pdf",
+    "rows": 179,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanAppendixH.pdf",
+    "text": "Appendix H - Greenway Trails Network - Trail Listing (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/869e6e_StatewideTrailsPlanAppendixH.pdf",
+    "rows": 97,
+    "bike_rows": 87
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-11/StatewideTrailsPlanAppendixI.pdf",
+    "text": "Appendix I - Rail Trail White Papers (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/d32be2_StatewideTrailsPlanAppendixI.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/FinalClermontMasterPlan.pdf",
+    "text": "Clermont State Historic Site Final Master Plan (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/4f30af_FinalClermontMasterPlan.pdf",
+    "rows": 354,
+    "bike_rows": 108
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/FinalClermontSHSEIS.pdf",
+    "text": "Clermont State Historic Site Final Environmental Impact Statement (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/f6d92c_FinalClermontSHSEIS.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/FinalClermontAppendices.pdf",
+    "text": "Clermont State Historic Site Final Appendices (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/c15b2d_FinalClermontAppendices.pdf",
+    "rows": 311,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/FinalClermontMasterPlanMap.pdf",
+    "text": "Clermont State Historic Site Final Master Plan Map (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/f154e9_FinalClermontMasterPlanMap.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2026-09/FDR_ComprehensivePlan_Map.pdf",
+    "text": "FDR State Park Final Comprehensive Plan Map",
+    "file": "data/gov_sources/parks_parks_ny_gov/314be1_FDR_ComprehensivePlan_Map.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/JBSPFinalMPMap.pdf",
+    "text": "James Baird State Park Final Master Plan Map (Revised January 25, 2023) (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/c91f23_JBSPFinalMPMap.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/LakeTaghkanicSPFinalMasterPlanMap.pdf",
+    "text": "Lake Taghkanic State Park Final Master Plan Map (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/039ad0_LakeTaghkanicSPFinalMasterPlanMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/PalmertownManagementPlanMap.pdf",
+    "text": "Palmertown Management Plan Map (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/cf3fcf_PalmertownManagementPlanMap.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/NRSPMasterPlanDiagramSmall.pdf",
+    "text": "Nissequogue River State Park Final Master Plan Map (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/f07efd_NRSPMasterPlanDiagramSmall.pdf",
+    "rows": 30,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/2025-10/OCAManagementPlanMaps.pdf",
+    "text": "OCA Management Plan Maps (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/757c29_OCAManagementPlanMaps.pdf",
+    "rows": 62,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/SampsonStateParkMasterPlanFinalMap.pdf",
+    "text": "Master Plan Map (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/87f651_SampsonStateParkMasterPlanFinalMap.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/Fig12TSPNaturalHeritageArea.pdf",
+    "text": "Fig 12 TSP Natural Heritage Area (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/be62ee_Fig12TSPNaturalHeritageArea.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://parks.ny.gov/sites/default/files/Fig13ATSPExistingTrailsNorth.pdf",
+    "text": "Fig 13A TSP Existing Trails North (pdf)",
+    "file": "data/gov_sources/parks_parks_ny_gov/457b26_Fig13ATSPExistingTrailsNorth.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://nysdec.maps.arcgis.com/apps/webappviewer/index.html?id=f075ea7a07894951b82d9f91de5a87f7": "Find a boat decontamination station",
+   "https://experience.arcgis.com/experience/eead2c7d4df04fbba89ae0bd2d5fc9b1/": "Revisit the Revolution Traveling Exhibition map",
+   "https://survey123.arcgis.com/share/fa59eb623689413991c0095bddb560c8": "Link to Application",
+   "https://survey123.arcgis.com/share/c096cb410a264af49b6e481fb41bf004": "Link to Application",
+   "https://experience.arcgis.com/experience/6c83696cd5584810bbd7c6dca3f7dc42": "program registration website",
+   "https://storymaps.arcgis.com/collections/6be78bd117b645bfa985580d08e2f7df": "Blazing a Trail",
+   "https://greenway-trails-plan-nysparks.hub.arcgis.com/": "Greenway Trails Inventory & Web Map",
+   "https://experience.arcgis.com/experience/2d17b2b40fc14484a5f4b74f97f0fe6a": "Water Quality",
+   "https://nysparks.maps.arcgis.com/apps/webappviewer/index.html?id=1d35eaffa966403bb60113149056f9a0&fbclid=IwY2xjawJXuyVleHRuA2FlbQIxMAABHfCLUQmVr-IXKA3vv6A8mt-H5i9AliqgEe0CgRmkTYhUnsJrSitd8cYEpQ_aem_D-si6rRe0_4qTsm_xlQY7g": "Daily Swimming updates",
+   "https://survey123.arcgis.com/share/a5a972843ef342a98568c6c9dd0a8fca": "Harriman State Park Hunting Application"
+  }
+ },
+ "parks:tnstateparks.com": {
+  "files": [],
+  "portals": {}
+ },
+ "gis:azgeo-open-data-agic.hub.arcgis.com": {
+  "files": [],
+  "portals": {}
+ },
+ "gis:clearinghouse.isgs.illinois.edu": {
+  "files": [
+   {
+    "url": "https://chf.isgs.illinois.edu/Clearinghouse/projects/isgs/1937-1947-illinois-historical-aerial-photography/data/ilhapmeta.zip",
+    "text": "ilhapmeta.zip (opens in a new tab)",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/c9b034_ilhapmeta.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chf.isgs.illinois.edu/coastal/Chicago_Offshore_Mapping/2022_SeaGrant/CLZ_geo.zip",
+    "text": "here (opens in a new tab)",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/edd0a1_CLZ_geo.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chf.isgs.illinois.edu/coastal/Habitat_data/HabitatMapsSurveyDates.csv",
+    "text": "Download a .csv file of survey dates here. (opens in a new tab)",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/6fa77e_HabitatMapsSurveyDates.csv",
+    "rows": 62,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chf.isgs.illinois.edu/coastal/Habitat_data/Habitat_data.zip",
+    "text": "Download the habitat maps here. (opens in a new tab)",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/0cd88d_Habitat_data.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chf.isgs.illinois.edu/Clearinghouse/data/ISWS/Hydrology/data/center-pivot-irrigation-illinois-2012-2014-201511.pdf",
+    "text": "llinois Center Pivot Irrigation Map (opens in a new tab)",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/802a9e_center-pivot-irrigation-illinois-2012-2014-201511.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chf.isgs.illinois.edu/ics83-33-zone/files/ICS83_33_Zone_Parameters.xlsx",
+    "text": "ICS83_33_Zone_Parameters.xlsx (17 KB) (opens in a new tab)",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/151864_ICS83_33_Zone_Parameters.xlsx",
+    "rows": 34,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chf.isgs.illinois.edu/ics83-9-zone/files/ICS83_9_Zone_Parameters.xlsx",
+    "text": "ICS83_9_Zone_Parameters.xlsx (12 KB) (opens in a new tab)",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/d3c089_ICS83_9_Zone_Parameters.xlsx",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chf.isgs.illinois.edu/Clearinghouse/data/ISWS/Hydrology/data/Hadley_ISWS_MapSeries_2017_01.pdf",
+    "text": "Illinois Municipal Water Use in 2012 Map Series (opens in a new tab)",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/69d12b_Hadley_ISWS_MapSeries_2017_01.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chf.isgs.illinois.edu/Clearinghouse/data/ISGS/Geology/zips/IL_Historical_Waterflood_Areas_Py.zip",
+    "text": "IL_Historical_Waterflood_Areas_Py.zip (opens in a new tab)",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/9e31a1_IL_Historical_Waterflood_Areas_Py.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chf.isgs.illinois.edu/Clearinghouse/data/ISGS/Land/data/Revised2007IllinoisCDLMap.pdf",
+    "text": "Revised2007IllinoisCDLMap.pdf (7.53 MB) (conventional PDF version) (opens in a new tab)",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/589264_Revised2007IllinoisCDLMap.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chf.isgs.illinois.edu/clearinghouse/projects/isgs/usgs-digital-raster-graphic-drg-files/data/topoindex.pdf",
+    "text": "USGS Topographic Map Index (opens in a new tab)",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/b24a91_topoindex.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAPP_1998/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/8ba800_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAIP_2004/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/be1208_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_CUA_2005/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/4f58b1_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAPP_2005/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/562873_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAIP_2005/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/56730b_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAIP_2006/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/f0c63f_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAIP_2007/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/8e1989_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAIP_2010/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/0ff3cd_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IDOT_2011/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/1891f3_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAIP_2011/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/999913_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAIP_2012/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/5dc124_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAIP_2014/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/875550_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAIP_2015/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/bdc806_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAIP_2017/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/bec3d4_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_NAIP_2019/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/87d3dc_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Geology/Bedrock_Geology_500K_2005/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/4cbbb0_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Geology/Bedrock_Topography_1994_Ln/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/1c960b_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Geology/Bedrock_Valleys/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/5d6c6f_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Reference/BLM_Natl_PLSS_CadNSDI/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/bcc8ec_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Geology/Driftless_Areas/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/e7ec2d_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.isgs.illinois.edu/arcgis/rest/services/ILOIL/Structure_Contours/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/8582ba_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Geology/OIINK_BedrockTopography_DEM/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/16fef3_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Geology/OIINK_BedrockTopography_Hill/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/5e0a9d_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Geology/OIINK_BedrockTopography/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/f889cc_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Geology/OIINK_EarthquakeEpicenters/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/b8e5de_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Geology/OIINK_FaultAndFoldTraces/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/a4851b_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.isgs.illinois.edu/arcgis/rest/services/Geology/OIINK_IsostaticGravityAnomaly/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_clearinghouse_isgs_illinois_edu/d6fbf7_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://prairie-research.maps.arcgis.com/apps/webappviewer/index.html?id=a251e0a92bd84f978e46a0b2f3b5a50f": "Open viewer (opens in a new tab)",
+   "https://experience.arcgis.com/experience/6b896690a5504ca1bc182a8e79075baa/": "Open viewer (opens in a new tab)",
+   "https://gis.prairie.illinois.edu/arcgis/rest/services/Land_Cover/ForestCover_1820/MapServer": "ForestCover 1820 (Map service) (opens in a new tab)",
+   "https://gis.prairie.illinois.edu/arcgis/rest/services/Land_Cover/ForestCover_1820/FeatureServer": "ForestCover 1820 (Feature service) (opens in a new tab)",
+   "https://prairie-research.maps.arcgis.com/apps/instant/basic/index.html?appid=c620c19e397d4dbe92df299f0ac679d7": "Open viewer (opens in a new tab)",
+   "https://gis.prairie.illinois.edu/arcgis/rest/services/Land_Cover/Presettlement_LandCover_All/MapServer": "Presettlement Land Cover - All Categories (MapServer) (opens in a new tab)",
+   "https://gis.prairie.illinois.edu/arcgis/rest/services/Land_Cover/Presettlement_LandCover_Map/MapServer": "Presettlement Land Cover - Map Categories (MapServer) (opens in a new tab)",
+   "https://univofillinois.maps.arcgis.com/apps/webappviewer/index.html?id=a63795fd832f4cc2a725290753e02f46": "Open viewer (opens in a new tab)",
+   "https://experience.arcgis.com/experience/1751b64d3ce642a9863bdc73217388eb": "Open viewer (opens in a new tab)",
+   "https://prairie-research.maps.arcgis.com/apps/instant/compare/index.html?appid=231804bdb5c34ffda86bc8d39c2dbca5": "Open viewer (opens in a new tab)",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAPP_1998%2FImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?featurecollection=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAPP_1998%2FImageServer%3Ff%3Djson%26option%3Dfootprints&supportsProjection=true&supportsJSONP=true": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2004%2FImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?featurecollection=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2004%2FImageServer%3Ff%3Djson%26option%3Dfootprints&supportsProjection=true&supportsJSONP=true": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_CUA_2005%2FImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?featurecollection=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_CUA_2005%2FImageServer%3Ff%3Djson%26option%3Dfootprints&supportsProjection=true&supportsJSONP=true": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAPP_2005%2FImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?featurecollection=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAPP_2005%2FImageServer%3Ff%3Djson%26option%3Dfootprints&supportsProjection=true&supportsJSONP=true": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2005%2FImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?featurecollection=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2005%2FImageServer%3Ff%3Djson%26option%3Dfootprints&supportsProjection=true&supportsJSONP=true": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2006%2FImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?featurecollection=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2006%2FImageServer%3Ff%3Djson%26option%3Dfootprints&supportsProjection=true&supportsJSONP=true": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2007%2FImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?featurecollection=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2007%2FImageServer%3Ff%3Djson%26option%3Dfootprints&supportsProjection=true&supportsJSONP=true": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2010%2FImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?featurecollection=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2010%2FImageServer%3Ff%3Djson%26option%3Dfootprints&supportsProjection=true&supportsJSONP=true": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIDOT_2011%2FImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?featurecollection=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIDOT_2011%2FImageServer%3Ff%3Djson%26option%3Dfootprints&supportsProjection=true&supportsJSONP=true": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2011%2FImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?featurecollection=https%3A%2F%2Fdata.isgs.illinois.edu%2Farcgis%2Frest%2Fservices%2FImagery%2FIL_NAIP_2011%2FImageServer%3Ff%3Djson%26option%3Dfootprints&supportsProjection=true&supportsJSONP=true": "ArcGIS Online Map Viewer"
+  }
+ },
+ "gis:msdis.missouri.edu": {
+  "files": [
+   {
+    "url": "https://stateimagery.msdis.missouri.edu/arcgis/rest/services/Missouri_6inch_Statewide_2023_2024_Cached/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/91f6f3_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stateimagery.msdis.missouri.edu/arcgis/rest/services/Missouri_6inch_Statewide_2023_2024_Dynamic/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/72b8b7_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_Boone_County_2023_DEM_UTM/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/c5e235_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_FEMANorth_2017_D18_DEM_UTM/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/cf5ddf_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_FEMANRCS_2020_D20_DEM_UTM/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/80d179_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_FEMANRCS_2020/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/24c405_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_FEMASouth_2017_D18_DEM_UTM/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/2068e5_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_NorthernSEMO_2021_D21_DEM_UTM/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/457840_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_NorthernSEMO_2021/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/08f4de_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_Southeast11Counties_2024_B24_DEM_UTM/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/1ef864_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_Southern_2022_D22_DEM_UTM/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/855ba0_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_Southwest_2021_D21_DEM_UTM/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/ce5380_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_StLouis_2017_B17_DEM_UTM/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/bad5af_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_WestCentral_2018_D19_DEM_UTM/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/3e0689_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_Western7Counties_D23_DEM_UTM/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/d7f5e4_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://msdis-archive.missouri.edu/archive/Missouri_LiDAR_Metadata/StLouis2017_1meter.zip",
+    "text": "StLouis2017_1meter.zip",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/da4c66_StLouis2017_1meter.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/EmergencyImagery/JeffersonCityTornado_2019/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/6d5be5_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/EmergencyImagery/Joplin2011_3inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/7cc435_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/EmergencyImagery/StLouisTornado_2025/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/b63fef_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/Bollinger_6inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/220c7e_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/CapeGirardeau2011_12inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/24f7e7_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/CapeGirardeau2011_6inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/370966_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/CapeGirardeau2021_3inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/14c355_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/EastWestGateway2012_6inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/09a4e3_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/Iron_6inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/e9ad1d_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/Madison_12inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/dd5d4f_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/Madison_6inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/764c9e_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/Perry2011_12inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/be16c1_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/Perry2011_6inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/e888a5_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/Perry2020_4inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/120e93_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/Perry_2026_1inch_4inch_composite/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/a5ae58_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/Perry_4inch_9inch_composite/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/fe0943_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/Scott_4inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/6b0de8_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/SteGenevieve_12inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/98b163_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/SteGenevieve_6inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/744f93_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/StFrancois_12inch/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/8fd296_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/StFrancois_3inch_6inch_composite_2023/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/346221_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/StFrancois_4inch_9inch_composite_2019/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/26baf3_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/StFrancois_4inch_9inch_composite/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/5f8eaf_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/StFrancois_6inch_12inch_composite/ImageServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_msdis_missouri_edu/53dcb3_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data-msdis.opendata.arcgis.com/": "Visit the MSDIS Open Data Portal",
+   "https://data-msdis.opendata.arcgis.com/pages/gis-jobs": "Visit the Missouri GIS Jobs Page",
+   "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/ArcGIS/rest/services": "Visit our map data services",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://stateimagery.msdis.missouri.edu/arcgis/rest/services/Missouri_6inch_Statewide_2023_2024_Cached/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://stateimagery.msdis.missouri.edu/arcgis/rest/services/Missouri_6inch_Statewide_2023_2024_Dynamic/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_Boone_County_2023_DEM_UTM/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_FEMANorth_2017_D18_DEM_UTM/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_FEMANRCS_2020_D20_DEM_UTM/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_FEMANRCS_2020/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_FEMASouth_2017_D18_DEM_UTM/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_NorthernSEMO_2021_D21_DEM_UTM/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_NorthernSEMO_2021/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_Southeast11Counties_2024_B24_DEM_UTM/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_Southern_2022_D22_DEM_UTM/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_Southwest_2021_D21_DEM_UTM/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_StLouis_2017_B17_DEM_UTM/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_WestCentral_2018_D19_DEM_UTM/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://lidar.msdis.missouri.edu/arcgis/rest/services/MO_Western7Counties_D23_DEM_UTM/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/": "ArcGIS Online",
+   "https://pro.arcgis.com/": "ArcGIS Pro",
+   "https://developers.arcgis.com/": "ArcGIS Developer",
+   "https://solutions.arcgis.com/": "ArcGIS Solutions",
+   "https://marketplace.arcgis.com/": "ArcGIS Marketplace",
+   "https://architecture.arcgis.com/": "ArcGIS Architecture Center",
+   "https://developers.arcgis.com/javascript/": "ArcGIS API for JavaScript",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://imagery.msdis.missouri.edu/arcgis/rest/services/EmergencyImagery/JeffersonCityTornado_2019/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://imagery.msdis.missouri.edu/arcgis/rest/services/EmergencyImagery/Joplin2011_3inch/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://imagery.msdis.missouri.edu/arcgis/rest/services/EmergencyImagery/StLouisTornado_2025/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/Bollinger_6inch/ImageServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://imagery.msdis.missouri.edu/arcgis/rest/services/LocalGov/CapeGirardeau2011_12inch/ImageServer&source=sd": "ArcGIS Online Map Viewer"
+  }
+ },
+ "gis:geohio.oit.ohio.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "gis:geodata.vermont.gov": {
+  "files": [],
+  "portals": {}
+ }
+}
