@@ -590,6 +590,24 @@ def fetch_mapillary(boxes=None, budget_min=75):
     """Bike racks Mapillary found in street photos, from its map-feature vector tiles (zoom 14, ~2.4 km),
     about 33 x 33 km around each metro. Tiles come from a cache, so this is fast; 16 at a time, with a time budget."""
     from concurrent.futures import ThreadPoolExecutor
+    # the whole-US harvest (tool/mapillary_all.py, workflow mapillary.yml) if it is there
+    import glob
+    files = sorted(glob.glob(os.path.join(ROOT, 'data', 'mapillary', 'racks_*.json')))
+    if files:
+        out, seen = [], set()
+        for fp in files:
+            for fid, lat, lon, ls in json.load(open(fp)):
+                if fid in seen or (boxes and not any(b[0] <= lat < b[2] and b[1] <= lon < b[3] for b in boxes)):
+                    continue
+                seen.add(fid)
+                tags = {'amenity': 'bicycle_parking', 'bicycle_parking': 'stands', 'source': 'Mapillary · seen in street photos'}
+                if isinstance(ls, (int, float)):
+                    tags['check_date'] = datetime.fromtimestamp(ls / 1000, timezone.utc).strftime('%Y-%m-%d')
+                elif isinstance(ls, str) and len(ls) >= 10:
+                    tags['check_date'] = ls[:10]
+                out.append([f'mly/{fid}', lat, lon, tags])
+        stage(f'Mapillary: {len(out)} racks from the whole-US harvest ({len(files)} files)')
+        return out
     token = mapillary_token()
     if not token:
         stage('Mapillary skipped: no token')

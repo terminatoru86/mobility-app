@@ -1,0 +1,68 @@
+name: Mapillary racks (whole US) + Bikeep
+
+# Every bike rack Mapillary detected in street photos over the whole US, via the Graph API map_features
+# search, 20 shards in parallel, no time limit inside a shard (tool/mapillary_all.py).
+# Result: data/mapillary/racks_N.json, read by tool/build_packs.py (source 'mapillary').
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  racks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /tool/
+            /data/us_states.json
+            /data/mapillary/
+            /lib/data/mapillary.dart
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Harvest
+        timeout-minutes: 340
+        env:
+          SHARD: ${{ matrix.shard }}
+          NSHARDS: '20'
+          THREADS: '6'
+          PER_MIN: '400'
+        run: python3 tool/mapillary_all.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/mapillary
+          git commit -qm "Mapillary racks: shard ${{ matrix.shard }}" || exit 0
+          for i in $(seq 1 40); do git pull -q --rebase -X theirs && git push -q && exit 0; sleep $((RANDOM % 45 + 10)); done
+          exit 1
+
+  bikeep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /tool/
+            /data/bikeep/
+      - run: python3 tool/bikeep.py
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/bikeep
+          git commit -qm "Bikeep probe" || exit 0
+          for i in $(seq 1 40); do git pull -q --rebase -X theirs && git push -q && exit 0; sleep $((RANDOM % 45 + 10)); done
