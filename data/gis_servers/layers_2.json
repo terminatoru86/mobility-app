@@ -1,1 +1,9 @@
-[]
+[
+{
+"city": "Bozeman",
+"url": "https://gisweb.bozeman.net/arcgis/rest/services/Public/Park_Inventory_Simplified/MapServer/15",
+"name": "Bike Racks",
+"count": 28,
+"cat": "racks"
+}
+]
