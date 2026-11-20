@@ -25,6 +25,8 @@ WANT = re.compile(r'bike\s*_?rack|bicycle\s*_?rack|bike\s*_?park|bicycle\s*_?par
                   r'e-?bike|bike\s*_?amenit|bicycle\s*_?amenit|bike\s*_?facilit|bicycle\s*_?facilit|\bbikes?\b|bicycl|'
                   r'\bracks?\b|corral', re.I)
 SKIP = re.compile(r'propos|request|survey|counts?\b|counters?\b|demand|plan(ned|ning)?\b|candidate|suitab|crash|collision|'
+                  r'pass\b|overpass|underpass|hazard|danger|caution|suggest|movement|pit\s*stop|marker|bicyclists|features?\b|'
+                  r'crossing|current\s*status|signal|sign\b|detector|sensor|'
                   r'injur|fatal|theft|stolen|citation|violation|complaint|lane|route|trail|path|network|segment|'
                   r'buffer|heat|density|hex|grid|zone_?poly|area|boundar', re.I)
 CATS = [
@@ -81,7 +83,8 @@ def layers_of(svc, t_end):
         if gt not in (None, 'esriGeometryPoint', 'esriGeometryMultipoint') or ly.get('subLayerIds'):
             continue
         full = svc.rsplit('/', 2)[-2] + ' ' + name
-        if WANT.search(full) and not SKIP.search(name):
+        # the LAYER name has to be about bikes / scooters / motorcycles (a "HikeBike" service also holds schools, parks...)
+        if WANT.search(name) and not SKIP.search(name):
             res.append((f"{svc}/{ly['id']}", name, full))
     return res
 
