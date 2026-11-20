@@ -1,9 +1,37 @@
 [
 {
-"city": "Pasadena",
-"url": "https://gis.lja.com/arcgis/rest/services/Hosted/Westpark_Near_Term_Projects/FeatureServer/48",
-"name": "Walk & Bike",
-"count": 24,
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/FeatureServer/5",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/MapServer/5",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/FeatureServer/32",
+"name": "PR_Bike_Racks",
+"count": 110,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/MapServer/32",
+"name": "PR_Bike_Racks",
+"count": 110,
+"cat": "racks"
+},
+{
+"city": "Humboldt County",
+"url": "https://gis.eurekaca.gov/server/rest/services/MainServiceLayers/Transportation_Services/MapServer/2",
+"name": "Bike Parking",
+"count": 73,
 "cat": "racks"
 }
 ]
