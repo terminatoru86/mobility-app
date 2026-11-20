@@ -1,0 +1,23 @@
+[
+{
+"city": "Asheville",
+"url": "https://gis.ashevillenc.gov/server/rest/services/PublicWorks/PublicWorksBikeRacks/MapServer/1",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+},
+{
+"city": "Asheville",
+"url": "https://gis.ashevillenc.gov/server/rest/services/PublicWorks/PWStreetsAssets/FeatureServer/11",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+},
+{
+"city": "Asheville",
+"url": "https://gis.ashevillenc.gov/server/rest/services/PublicWorks/PWStreetsAssets/MapServer/11",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+}
+]
