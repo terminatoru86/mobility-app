@@ -1363,11 +1363,11 @@ def main():
     n_mail = write_contacts(tiles, save=not args and '--extra-only' not in sys.argv and not refresh)
     stage(f'5/6 emails: {n_mail} · private areas: {n_areas}, racks made private: {n_priv}')
     # The same place from several sources (owner's rule, Nov 2026): not a plain distance rule.
-    # 1. Places of one kind within ~12 m of each other are one spot. When the spot comes from several sources, only
+    # 1. Places of one kind within ~10 m of each other are one spot. When the spot comes from several sources, only
     #    ONE source is kept for it: the newest one (check / survey / seen date) when every source there has a date,
     #    else the one with more racks there (a point with capacity N = N/2 stands), else OpenStreetMap, then our city lists, then the rest.
     #    (a city list with 1 rack from 2023 and Mapillary with 3 racks seen in 2025 -> the 3 racks stay)
-    # 2. Racks of the kept source within ~12 m become ONE pin: rack_count = how many racks, covered if any is
+    # 2. Racks of the kept source within ~10 m become ONE pin (the app adds up their free spaces for the number in the corner and shows the racks as dots around the pin when zoomed in): rack_count = how many racks, covered if any is
     #    covered (metro entrances: covered and open racks side by side), capacity added up. Other kinds stay separate.
     def rank(r):
         k = r[0]
@@ -1386,7 +1386,7 @@ def main():
         return ''
 
     FAMILY = {'kick-scooter_parking': 'small_electric_vehicle_parking', 'mobility_hub': 'small_electric_vehicle_parking'}
-    R_SPOT = 12.0
+    R_SPOT = 10.0  # owner: racks next to each other, up to 8-10 m
     C = 0.00012
     dropped = grouped = 0
     # group pins of an earlier build: put their racks back as they were, then group again
