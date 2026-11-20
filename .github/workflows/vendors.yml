@@ -25,10 +25,16 @@ jobs:
       - run: |
           for i in 1 2 3 4; do python3 tool/city_list.py 20000 && break; sleep 60; done
           ls -la data/foia
+      - name: Transit agencies (Transitland)
+        env:
+          TRANSITLAND_API_KEY: ${{ secrets.TRANSITLAND_API_KEY }}
+        run: python3 tool/transitland.py || true
       - uses: actions/upload-artifact@v4
         with:
           name: cities
-          path: data/foia/cities_big.json
+          path: |
+            data/foia/cities_big.json
+            data/foia/agencies.json
           retention-days: 3
 
   scan:

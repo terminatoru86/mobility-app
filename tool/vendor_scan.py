@@ -149,7 +149,12 @@ def scan_city(c):
 
 
 def scan():
-    cities = json.load(open(os.path.join(ROOT, 'data', 'foia', 'cities_big.json')))[SHARD::NSHARDS]
+    cities = json.load(open(os.path.join(ROOT, 'data', 'foia', 'cities_big.json')))
+    ag = os.path.join(ROOT, 'data', 'foia', 'agencies.json')  # transit agencies (tool/transitland.py)
+    if os.path.exists(ag):
+        have = {c['site'] for c in cities}
+        cities += [a for a in json.load(open(ag)) if a['site'] not in have]
+    cities = cities[SHARD::NSHARDS]
     print(f'shard {SHARD}/{NSHARDS}: {len(cities)} municipalities', flush=True)
     os.makedirs(OUT, exist_ok=True)
     path, out, t0 = os.path.join(OUT, f'scan_{SHARD}.json'), [], time.time()
