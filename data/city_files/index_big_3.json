@@ -1,0 +1,1447 @@
+{
+ "San Antonio TX": {
+  "files": [
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/all_run_dt_routes.pdf",
+    "text": "All Downtown Running Routes (PDF, 3MB)",
+    "file": "data/city_files/San_Antonio_TX/62e064_all_run_dt_routes.pdf",
+    "rows": 129,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/4_brackenridge_alamo_loop.pdf",
+    "text": "Brackenridge Alamo Loop (PDF, 463KB)",
+    "file": "data/city_files/San_Antonio_TX/ba97af_4_brackenridge_alamo_loop.pdf",
+    "rows": 34,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/1_downtown_southtown_route.pdf",
+    "text": "Downtown Southtown (PDF, 451KB)",
+    "file": "data/city_files/San_Antonio_TX/5d724e_1_downtown_southtown_route.pdf",
+    "rows": 26,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/5_san_antonio_highlights_route.pdf",
+    "text": "San Antonio Highlights (PDF, 399KB)",
+    "file": "data/city_files/San_Antonio_TX/37ef30_5_san_antonio_highlights_route.pdf",
+    "rows": 27,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/bikeridesweb2013.pdf",
+    "text": "All Biking Routes (PDF, 3MB)",
+    "file": "data/city_files/San_Antonio_TX/3f8307_bikeridesweb2013.pdf",
+    "rows": 89,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/2012_bikemap_hemisfair.pdf",
+    "text": "Alamo Hemisfair (PDF, 522KB)",
+    "file": "data/city_files/San_Antonio_TX/495843_2012_bikemap_hemisfair.pdf",
+    "rows": 21,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/2012_bikemap_brackenridge.pdf",
+    "text": "Brackenridge (PDF, 717KB)",
+    "file": "data/city_files/San_Antonio_TX/a0eb1b_2012_bikemap_brackenridge.pdf",
+    "rows": 28,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/2012_bikemap_eastside.pdf",
+    "text": "East Side (PDF, 342KB)",
+    "file": "data/city_files/San_Antonio_TX/606f54_2012_bikemap_eastside.pdf",
+    "rows": 28,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/2012_bikemap_kingwilliam.pdf",
+    "text": "King William (PDF, 914KB)",
+    "file": "data/city_files/San_Antonio_TX/2dcbfb_2012_bikemap_kingwilliam.pdf",
+    "rows": 20,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/2012_bikemap_missiontrail.pdf",
+    "text": "Mission Trail (PDF, 1MB)",
+    "file": "data/city_files/San_Antonio_TX/6cd324_2012_bikemap_missiontrail.pdf",
+    "rows": 14,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/2012_bikemap_pearlbrewery.pdf",
+    "text": "Pearl Brewery (PDF, 873KB)",
+    "file": "data/city_files/San_Antonio_TX/773cca_2012_bikemap_pearlbrewery.pdf",
+    "rows": 26,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/parks/documents/hwp-greenway-trail-system-2025.pdf",
+    "text": "Greenway Map & Trailhead Guide (PDF, 3MB)",
+    "file": "data/city_files/San_Antonio_TX/b117d4_hwp-greenway-trail-system-2025.pdf",
+    "rows": 20,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/2/parks/documents/all-centers.pdf",
+    "text": "Community Centers Map (PDF, 923KB)",
+    "file": "data/city_files/San_Antonio_TX/952399_all-centers.pdf",
+    "rows": 22,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sa.gov/files/assets/main/v/1/swmd/documents/mf-recycling-calculator-2021.xlsx",
+    "text": "calculator (XLSX, 12KB)",
+    "file": "data/city_files/San_Antonio_TX/9886ad_mf-recycling-calculator-2021.xlsx",
+    "rows": 28,
+    "bike_rows": 5
+   }
+  ],
+  "portals": {
+   "https://cosagis.maps.arcgis.com/apps/webappviewer/index.html?id=a83c7298ebf7464f8487bec02620292a": "Search",
+   "https://gis.sanantonio.gov/CCDO/DowntownParking/index.html": "",
+   "https://www.sa.gov/Directory/Departments/SAPD/Transparency-Open-Data/Open-Records-Requests": "Police reports & records from SAPD",
+   "https://www.sa.gov/Departments/ITSD/Open-Data": "Open Data SA",
+   "https://gis.sanantonio.gov/swmd/mycollectionday/default.html": "Full screen (new window)",
+   "https://gis.sanantonio.gov/ITSD/ParkSearch/index.html": "Find a Park",
+   "https://gis.sanantonio.gov/SWMD/CommercialRecycle/index.html": "Certified Businesses",
+   "https://gis.sanantonio.gov/swmd/SolutionStationv1/index.html": "Solution Station map"
+  }
+ },
+ "Toledo OH": {
+  "files": [
+   {
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Public-Service/2026-Republic-Services-City-of-Toledo-Trash-and-Recycling-Calendar.pdf",
+    "text": "",
+    "file": "data/city_files/Toledo_OH/5f4605_2026-Republic-Services-City-of-Toledo-Trash-and-Recycling-Calendar.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://biketoledo.org/data/documents/bike-network.pdf",
+    "text": "See Toledo bike map",
+    "file": "data/city_files/Toledo_OH/2e7a8b_bike-network.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://toledo.oh.gov/open-data-portal": "Open Data Portal",
+   "https://data.toledo.gov/": "Open Data",
+   "https://toledo.maps.arcgis.com/apps/dashboards/e480d4a09ba44000a5c6e76df79be4d8": "Road Construction Map",
+   "https://experience.arcgis.com/experience/1d19053d6de84002b9cef22ae32a8737": "Park Finder",
+   "https://toledo.maps.arcgis.com/apps/dashboards/33025e55224b4770862f8c5afb54ca1e": "View fullscreen map",
+   "https://gis.toledo.oh.gov/portal/apps/dashboards/3c44a66edd1d423eb070ec86ba5f784d": "See the data",
+   "https://toledo.maps.arcgis.com/apps/Embed/index.html?webmap=59da251e22d9468cba01fef41c063996&home=true&zoom=true&&search=true&disable_scroll=false&theme=dark&legend=true&legendlayers=false&active_panel=legend&show_panel=true": "View fullscreen map"
+  }
+ },
+ "Portland ME": {
+  "files": [],
+  "portals": {}
+ },
+ "New York County": {
+  "files": [],
+  "portals": {}
+ },
+ "Bergen County": {
+  "files": [
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/McFaul_Map.pdf",
+    "text": "Map",
+    "file": "data/city_files/Bergen_County/eaff13_McFaul_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.njpalisades.org/pdfs/hikeStateline.pdf",
+    "text": "Click to see article on 9W cycling",
+    "file": "data/city_files/Bergen_County/dd91d0_hikeStateline.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/SaddleRiverBikePath-Map_1192016New.pdf",
+    "text": "Click to see Saddle River bike path map",
+    "file": "data/city_files/Bergen_County/07eba5_SaddleRiverBikePath-Map_1192016New.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/Bike_path_map.pdf",
+    "text": "Bike Path Map",
+    "file": "data/city_files/Bergen_County/bb4fb4_Bike_path_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/Rochelle-Area-Map.pdf",
+    "text": "Rochelle Area Map",
+    "file": "data/city_files/Bergen_County/ca0c68_Rochelle-Area-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/Otto-C.-Pelle-Area-Map.pdf",
+    "text": "Otto C. Pehle Area Map",
+    "file": "data/city_files/Bergen_County/0e63d4_Otto-C.-Pelle-Area-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/Dunkerhook-Area-Map.pdf",
+    "text": "Dunkerhook Area Map",
+    "file": "data/city_files/Bergen_County/9459b8_Dunkerhook-Area-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/Glen-Rock-Area-Map.pdf",
+    "text": "Glen Rock Area Map",
+    "file": "data/city_files/Bergen_County/c763dd_Glen-Rock-Area-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/Fair-Lawn-Area-Map.pdf",
+    "text": "Fair Lawn Area Map",
+    "file": "data/city_files/Bergen_County/ef65d3_Fair-Lawn-Area-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/Wild-Duck-Pond-Area-Map.pdf",
+    "text": "Wild Duck Pond Area Map",
+    "file": "data/city_files/Bergen_County/79ae49_Wild-Duck-Pond-Area-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2025/02/2025-Gethsemane-Cemetery-Guide.pdf",
+    "text": "View guide to Gethsemane’s grave markers",
+    "file": "data/city_files/Bergen_County/0cb9f0_2025-Gethsemane-Cemetery-Guide.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/Campgaw-Mountain-Trails.pdf",
+    "text": "(map)",
+    "file": "data/city_files/Bergen_County/7d1e0e_Campgaw-Mountain-Trails.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2024/02/final-carlton-hill-greenway-park-environmental-assessment.pdf",
+    "text": "please click here",
+    "file": "data/city_files/Bergen_County/d8ca03_final-carlton-hill-greenway-park-environmental-assessment.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/Map-of-Overpeck-Bergen-Equestrian-Center.pdf",
+    "text": "Map of Overpeck Palisades-Palisades Park Sportsplex",
+    "file": "data/city_files/Bergen_County/180d6c_Map-of-Overpeck-Bergen-Equestrian-Center.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/Map-of-Overpeck-Leonia-North-Henry-Hoebel.pdf",
+    "text": "Map of Overpeck – Leonia North Henry Hoebel",
+    "file": "data/city_files/Bergen_County/5f29ef_Map-of-Overpeck-Leonia-North-Henry-Hoebel.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2023/07/Map-of-Ridgefield-Park-Area.pdf",
+    "text": "Map of Ridgefield Park Area",
+    "file": "data/city_files/Bergen_County/c5d6b4_Map-of-Ridgefield-Park-Area.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bergencountynj.gov/wp-content/uploads/2025/01/Transit_Connector_Brochure_2022.pdf",
+    "text": "Transit Connector Schedule",
+    "file": "data/city_files/Bergen_County/192ad2_Transit_Connector_Brochure_2022.pdf",
+    "rows": 29,
+    "bike_rows": 7
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/147d84d76043447d8542114a3509ee17": "Here"
+  }
+ },
+ "Polk County": {
+  "files": [],
+  "portals": {}
+ },
+ "Milwaukee": {
+  "files": [],
+  "portals": {}
+ },
+ "Ada County": {
+  "files": [],
+  "portals": {}
+ },
+ "Clackamas County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/c36bd6df5d4548848480797fdd6e7ed8": "Interactive map"
+  }
+ },
+ "Chesterfield County": {
+  "files": [
+   {
+    "url": "https://www.elections.virginia.gov/media/training/Intro-to-Provisional-Ballots.pdf",
+    "text": "Introduction to Provisional Ballots (PDF)",
+    "file": "data/city_files/Chesterfield_County/b0de5a_Intro-to-Provisional-Ballots.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/1de34c92df1a4e06941936dbe339120e": "spur connections",
+   "https://timmons-group.maps.arcgis.com/apps/dashboards/e2588477a1bf4487bf47dbaa0bc54e8d": "Chesterfield County Fall Line Trail Project Dashboard",
+   "https://chesterfieldva.maps.arcgis.com/apps/instant/sidebar/index.html?appid=2a46dab65fb3407cabe8b50fb8361fb0": "Utilities water outage map",
+   "https://experience.arcgis.com/experience/95741800c21d4ec88828075b20bd1042": "Political Districts",
+   "https://opengisdata.chesterfield.gov/search": "Open GIS Data",
+   "https://experience.arcgis.com/experience/60be32ee76154e6f9e59276b9efa57eb": "Public Wi-Fi Locations",
+   "https://experience.arcgis.com/experience/d1c36743cd764cb991b56dfbeaacc833": "Hydrography Viewer",
+   "https://experience.arcgis.com/experience/952fd5f1eaad4cb2a5fab12de95da88e": "Case Information",
+   "https://storymaps.arcgis.com/stories/5d24df534b134e8f9851124381283037": "Conservation Areas StoryMap",
+   "https://experience.arcgis.com/experience/1ca3999f708d47edadfb245fb4829e6b": "Land Use Plan",
+   "https://storymaps.arcgis.com/stories/6e27f454fc0a4288ba27ef99414b041f": "Local Historic Landmarks",
+   "https://experience.arcgis.com/experience/14b6817209f849f2a2e995441f0226f1": ""
+  }
+ },
+ "Rockingham County": {
+  "files": [],
+  "portals": {}
+ },
+ "San Luis Obispo County": {
+  "files": [
+   {
+    "url": "https://slocounty.ca.gov/getmedia/2a5f0c15-5948-495b-a664-8c4e6c152140/Vicinity-Map_2.pdf",
+    "text": "Prefumo Canyon Road",
+    "file": "data/city_files/San_Luis_Obispo_County/683adb_Vicinity-Map_2.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://slocounty.ca.gov/getmedia/ea19c5b2-8caa-4ccc-b4f9-fdd218b5f0b7/Santa-rita-12-2-vicinity-map_1.pdf",
+    "text": "map",
+    "file": "data/city_files/San_Luis_Obispo_County/7059d7_Santa-rita-12-2-vicinity-map_1.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://slocounty.ca.gov/getmedia/2880407d-f717-4a59-888c-c4a59589b1b9/vicinity-map_1.pdf",
+    "text": "on Santa Rita Road",
+    "file": "data/city_files/San_Luis_Obispo_County/d7e28a_vicinity-map_1.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://slocounty.ca.gov/getmedia/72f66156-e3e2-4c8b-8743-2dbc1f0066d9/8-5X11-Landscape-Vicinity-Map.pdf",
+    "text": "the work zone",
+    "file": "data/city_files/San_Luis_Obispo_County/89feea_8-5X11-Landscape-Vicinity-Map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://slocounty.ca.gov/getmedia/5ee1bf04-3890-41c5-ad1f-2eb822a33fcd/Peachy-CYN-Rd-4-4-Exhibit.pdf",
+    "text": "map",
+    "file": "data/city_files/San_Luis_Obispo_County/3cac3d_Peachy-CYN-Rd-4-4-Exhibit.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://slocounty.ca.gov/getmedia/2da1675c-7155-42bb-b3db-b7bed7fd997b/PIER-AVENUE-MULTI-MODAL-BETTERMENTS.pdf",
+    "text": "map",
+    "file": "data/city_files/San_Luis_Obispo_County/7a76df_PIER-AVENUE-MULTI-MODAL-BETTERMENTS.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {}
+ },
+ "Laredo": {
+  "files": [],
+  "portals": {
+   "https://visitlaredo.com/search-result/?q=opendata&sort=title-asc": "A to Z (title)",
+   "https://visitlaredo.com/search-result/?q=opendata&sort=title-desc": "Z to A (title)",
+   "https://visitlaredo.com/search-result/?q=opendata&sort=date-desc": "Latest listings",
+   "https://visitlaredo.com/search-result/?q=opendata&sort=date-asc": "Oldest listings",
+   "https://visitlaredo.com/search-result/?q=opendata&sort=views-desc": "Popular listings",
+   "https://visitlaredo.com/search-result/?q=opendata&sort=rand": "Random listings",
+   "https://visitlaredo.com/search-result/?searchPhrase=opendata&sort=title-asc": "A to Z (title)",
+   "https://visitlaredo.com/search-result/?searchPhrase=opendata&sort=title-desc": "Z to A (title)",
+   "https://visitlaredo.com/search-result/?searchPhrase=opendata&sort=date-desc": "Latest listings",
+   "https://visitlaredo.com/search-result/?searchPhrase=opendata&sort=date-asc": "Oldest listings",
+   "https://visitlaredo.com/search-result/?searchPhrase=opendata&sort=views-desc": "Popular listings",
+   "https://visitlaredo.com/search-result/?searchPhrase=opendata&sort=rand": "Random listings"
+  }
+ },
+ "Gaston County": {
+  "files": [],
+  "portals": {
+   "https://gis.gastoncountync.gov/": "GIS Website",
+   "https://data.census.gov/profile/Gaston_County,_North_Carolina?g=050XX00US37071": "Gaston County 2020 Profile",
+   "https://data.census.gov/table/DECENNIALPL2020.P1?g=050XX00US37071": "Census Data",
+   "https://data.census.gov/": "data.census.gov",
+   "https://www.webgis.net/nc/cleveland/": "Cleveland County",
+   "https://city-of-lowell-gis-lowellnc.hub.arcgis.com/": "City of Lowell",
+   "https://city-of-mount-holly-gis-mapping-comh.hub.arcgis.com/": "City of Mount Holly",
+   "https://experience.arcgis.com/experience/e827d330f20a4508aa6777bf2c0b94e3/": "York County",
+   "https://gis.gastoncountync.gov/portal/apps/experiencebuilder/experience/?id=4b207419c0364125b0d7fc1501a93384": "GIS Data Download",
+   "https://gis.gastoncountync.gov/portal/home/gallery.html?sortField=title&sortOrder=asc": "GIS Gallery",
+   "https://one-gaston-2040-data-hub-gcnc-tax-admin.hub.arcgis.com/": "Gaston Community Explorer",
+   "https://gis.gastoncountync.gov:8443/share/8905fb4777384186a904677d61d6918d": "My Favorite Place Survey"
+  }
+ },
+ "Clermont County": {
+  "files": [
+   {
+    "url": "https://ctc.clermontcountyohio.gov/media/Routes/ctc-service-area-map-03-12-24.pdf",
+    "text": "CTC Service Area Map",
+    "file": "data/city_files/Clermont_County/049be6_ctc-service-area-map-03-12-24.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctc.clermontcountyohio.gov/media/FormsProcedures/ctc-ada-certification-application-attachments-1.pdf",
+    "text": "Complementary ADA Paratransit Application",
+    "file": "data/city_files/Clermont_County/3b1b1a_ctc-ada-certification-application-attachments-1.pdf",
+    "rows": 18,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://ctc.clermontcountyohio.gov/media/Routes/medicaid-brochure-1-2023.pdf",
+    "text": "Non-Emergency Medical Transportation (NET)",
+    "file": "data/city_files/Clermont_County/902289_medicaid-brochure-1-2023.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctc.clermontcountyohio.gov/media/Routes/route-2x-ctc-brochure-1-2023.pdf",
+    "text": "RT 2X New Richmond Express Brochure (PDF)",
+    "file": "data/city_files/Clermont_County/bbae05_route-2x-ctc-brochure-1-2023.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctc.clermontcountyohio.gov/media/Routes/rt4xameliaexpress08-16-10.pdf",
+    "text": "Download Map of Route 4X",
+    "file": "data/city_files/Clermont_County/7314d6_rt4xameliaexpress08-16-10.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://ctc.clermontcountyohio.gov/media/Routes/route4xstopsmediasizev2.pdf",
+    "text": "Route 4X Bus Stops on Locations",
+    "file": "data/city_files/Clermont_County/b7849b_route4xstopsmediasizev2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ctc.clermontcountyohio.gov/media/Routes/route-4x-ctc-brochure-7-1-21.pdf",
+    "text": "Route 4X Amelia Express Brochure",
+    "file": "data/city_files/Clermont_County/40816e_route-4x-ctc-brochure-7-1-21.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://opendata.clermontauditor.org/": "Open Data",
+   "https://gis.clermontcountyohio.gov/": "Geographical Information Services"
+  }
+ },
+ "Sumner County": {
+  "files": [
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/dc78528db32ecdbf62d140b80e89286bbdb299db.pdf",
+    "text": "Full County Commission Map",
+    "file": "data/city_files/Sumner_County/368ce5_dc78528db32ecdbf62d140b80e89286bbdb299db.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/a2214e380bf317dd6cb7d4cce13ff7268caaf0f2.pdf",
+    "text": "Full County Color-Coded Map with Voting Precincts",
+    "file": "data/city_files/Sumner_County/08c07d_a2214e380bf317dd6cb7d4cce13ff7268caaf0f2.pdf",
+    "rows": 9,
+    "bike_rows": 3
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/f927e1130134718a24b895679d4ab2ff22a7aae2.pdf",
+    "text": "Maps of the 24 County Commission Districts",
+    "file": "data/city_files/Sumner_County/f11b9f_f927e1130134718a24b895679d4ab2ff22a7aae2.pdf",
+    "rows": 51,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/0d155d3b77d3f9759ae6e90de9a6c222ba70556e.pdf",
+    "text": "Sumner County Commission Map with Updated Voting Precincts",
+    "file": "data/city_files/Sumner_County/29eab6_0d155d3b77d3f9759ae6e90de9a6c222ba70556e.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/4fa4d1231ab71c7a0abd2f862b5befcdf3c00b3f.pdf",
+    "text": "Maps of the 11 School Board Districts",
+    "file": "data/city_files/Sumner_County/c94ac2_4fa4d1231ab71c7a0abd2f862b5befcdf3c00b3f.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/e82e6b2bc20358c42f62723f0ecdd93a2c0b853e.pdf",
+    "text": "Full School Board Map",
+    "file": "data/city_files/Sumner_County/45d0c4_e82e6b2bc20358c42f62723f0ecdd93a2c0b853e.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/de412ce57d91c677ad2d99ac6164f727ea098fd3.pdf",
+    "text": "Sumner County School Board Map with Updated Voting Precincts",
+    "file": "data/city_files/Sumner_County/051cd3_de412ce57d91c677ad2d99ac6164f727ea098fd3.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/a0c7000fd53d9494d06d97a8d0c0617bb37f7897.pdf",
+    "text": "Maps of the 29 Individual Precincts",
+    "file": "data/city_files/Sumner_County/ccf46a_a0c7000fd53d9494d06d97a8d0c0617bb37f7897.pdf",
+    "rows": 26,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/322b8f95d99605e771ed751fa814e42bc8949762.pdf",
+    "text": "Full County Map of the Voting Precincts",
+    "file": "data/city_files/Sumner_County/89d5f3_322b8f95d99605e771ed751fa814e42bc8949762.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/5f4293130ffb7f0bb8b5b655590b7a8c2a8f3846.pdf",
+    "text": "City of Millersville Map",
+    "file": "data/city_files/Sumner_County/cacde9_5f4293130ffb7f0bb8b5b655590b7a8c2a8f3846.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/6c4d97664cb232d921fe04cd7557087325ef3219.pdf",
+    "text": "City of Mitchellville Map",
+    "file": "data/city_files/Sumner_County/5317c9_6c4d97664cb232d921fe04cd7557087325ef3219.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/581fc3122fbd2cc2f9170fb73ce9ab10a15aca31.pdf",
+    "text": "City of Portland Map",
+    "file": "data/city_files/Sumner_County/ac5835_581fc3122fbd2cc2f9170fb73ce9ab10a15aca31.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/3e6b693ea387bbd5b60f065e294c1f8bfd447c9f.pdf",
+    "text": "City of Westmoreland Map",
+    "file": "data/city_files/Sumner_County/ca0171_3e6b693ea387bbd5b60f065e294c1f8bfd447c9f.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/caudill-charlotte-1st-qtr-2022-report.pdf",
+    "text": "Charlotte Caudill First Quarter 2022 Report",
+    "file": "data/city_files/Sumner_County/3859f6_caudill-charlotte-1st-qtr-2022-report.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/b74fa4db949fbd8b9aa77a23327c9485e1547724.pdf",
+    "text": "Charlotte Caudill Second Quarter 2022 Report",
+    "file": "data/city_files/Sumner_County/03444e_b74fa4db949fbd8b9aa77a23327c9485e1547724.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/6543058e294703a24e885ca8e3f936166985bdfc.pdf",
+    "text": "Charlotte Caudill Pre-Gen 2022 Report",
+    "file": "data/city_files/Sumner_County/2b8f3c_6543058e294703a24e885ca8e3f936166985bdfc.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.votesumnertn.org/uploads/files/3d7109888106d9a45f53f64350a1db3896cb6f5d.pdf",
+    "text": "Charlotte Caudill Third Quarter 2022 Report",
+    "file": "data/city_files/Sumner_County/96fdf8_3d7109888106d9a45f53f64350a1db3896cb6f5d.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://tn-cot.maps.arcgis.com/apps/instant/lookup/index.html?appid=2bd3c9b349634d2ba7153410c0930d27": "Tennessee address lookup tool",
+   "https://gis.hvilletn.org/arcgis/apps/webappviewer/index.html?id=02cb9616b6be402c846dad0fad924dcb": "2022 Hendersonville Ward Map"
+  }
+ },
+ "Boone County": {
+  "files": [
+   {
+    "url": "https://www.boonemo.gov/road-bridge/common/pdf/SnowRoute_MapBook_Route1NS_v3.pdf",
+    "text": "Snow Route 1",
+    "file": "data/city_files/Boone_County/7f9b97_SnowRoute_MapBook_Route1NS_v3.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.boonemo.gov/road-bridge/common/pdf/SnowRoute_MapBook_Route2EW_v2.pdf",
+    "text": "Snow Route 2",
+    "file": "data/city_files/Boone_County/cd373d_SnowRoute_MapBook_Route2EW_v2.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.boonemo.gov/road-bridge/common/pdf/SnowRoute_MapBook_Route3_v2.pdf",
+    "text": "Snow Route 3",
+    "file": "data/city_files/Boone_County/eb1051_SnowRoute_MapBook_Route3_v2.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.boonemo.gov/road-bridge/common/pdf/SnowRoute_MapBook_Route4EW_v3.pdf",
+    "text": "Snow Route 4",
+    "file": "data/city_files/Boone_County/5d4120_SnowRoute_MapBook_Route4EW_v3.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.boonemo.gov/road-bridge/common/pdf/SnowRoute_MapBook_Route5NS_v3.pdf",
+    "text": "Snow Route 5",
+    "file": "data/city_files/Boone_County/833d70_SnowRoute_MapBook_Route5NS_v3.pdf",
+    "rows": 3,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.boonemo.gov/road-bridge/common/pdf/SnowRoute_MapBook_Route6NS_v2.pdf",
+    "text": "Snow Route 6",
+    "file": "data/city_files/Boone_County/bb31cb_SnowRoute_MapBook_Route6NS_v2.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.boonemo.gov/road-bridge/common/pdf/SnowRoute_MapBook_Route7_v2.pdf",
+    "text": "Snow Route 7",
+    "file": "data/city_files/Boone_County/d648de_SnowRoute_MapBook_Route7_v2.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.boonemo.gov/road-bridge/common/pdf/SnowRoute_MapBook_Route8NS_v1.pdf",
+    "text": "Snow Route 8",
+    "file": "data/city_files/Boone_County/adb87b_SnowRoute_MapBook_Route8NS_v1.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/PlatBook_PDF/02_MapSet.pdf",
+    "text": "Township Plat Maps",
+    "file": "data/city_files/Boone_County/0b584d_02_MapSet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/PlatBook_PDF/03_EntityMaps.pdf",
+    "text": "Entity Maps",
+    "file": "data/city_files/Boone_County/81e190_03_EntityMaps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/BooneCounty_Precincts.pdf",
+    "text": "County Map of Precincts",
+    "file": "data/city_files/Boone_County/1eee0e_BooneCounty_Precincts.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/Columbia_Precincts.pdf",
+    "text": "City of Columbia Map of Precincts",
+    "file": "data/city_files/Boone_County/a2e8a6_Columbia_Precincts.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/VR_Comm1_Precinct_Series.pdf",
+    "text": "Commission District 1 Precinct Map",
+    "file": "data/city_files/Boone_County/d042ff_VR_Comm1_Precinct_Series.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/VR_Comm2_Precinct_Series.pdf",
+    "text": "Commission District 2 Precinct Map",
+    "file": "data/city_files/Boone_County/135acf_VR_Comm2_Precinct_Series.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/BooneCounty_CommissionDistricts.pdf",
+    "text": "County Map of Commission Districts",
+    "file": "data/city_files/Boone_County/b40855_BooneCounty_CommissionDistricts.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/Columbia_CommissionDistricts.pdf",
+    "text": "City of Columbia Map of Commission Districts",
+    "file": "data/city_files/Boone_County/9b220c_Columbia_CommissionDistricts.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/VR_USHouseDistrict3.pdf",
+    "text": "U.S. House District 3 Precinct Map",
+    "file": "data/city_files/Boone_County/0b05f2_VR_USHouseDistrict3.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/VR_USHouseDistrict4.pdf",
+    "text": "U.S. House District 4 Precinct Map",
+    "file": "data/city_files/Boone_County/1365ac_VR_USHouseDistrict4.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/BooneCounty_USHouseDistricts.pdf",
+    "text": "County Map of U.S. House Districts",
+    "file": "data/city_files/Boone_County/d79734_BooneCounty_USHouseDistricts.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/Columbia_USHouseDistricts.pdf",
+    "text": "City of Columbia Map of U.S. House Districts",
+    "file": "data/city_files/Boone_County/ca5086_Columbia_USHouseDistricts.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/Leg_44_Series.pdf",
+    "text": "Legislative District 44",
+    "file": "data/city_files/Boone_County/30cdad_Leg_44_Series.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/VR_45Leg.pdf",
+    "text": "Legislative District 45",
+    "file": "data/city_files/Boone_County/93316d_VR_45Leg.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/VR_46Leg.pdf",
+    "text": "Legislative District 46",
+    "file": "data/city_files/Boone_County/346510_VR_46Leg.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/Leg_47_Series.pdf",
+    "text": "Legislative District 47",
+    "file": "data/city_files/Boone_County/8e3997_Leg_47_Series.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.boonemo.gov/gis/ClerkMaps_PDF/VR_50Leg.pdf",
+    "text": "Legislative District 50",
+    "file": "data/city_files/Boone_County/74772b_VR_50Leg.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://data-boonecountymogis.hub.arcgis.com/": "Geographic Information Systems",
+   "https://experience.arcgis.com/experience/c12dbd68166f49b68e357304d5a92bbe/page/Report-Road-Problems": "Road Problems",
+   "https://experience.arcgis.com/experience/c12dbd68166f49b68e357304d5a92bbe/page/Report-Storm-Drainage-Problems": "Storm Drainage Problems",
+   "https://experience.arcgis.com/experience/c12dbd68166f49b68e357304d5a92bbe/page/Average-Daily-Traffic-(ADT)": "Traffic Count Data",
+   "https://experience.arcgis.com/experience/029056b792b6480b8318c777a11fb5e1": "Incident Mapping",
+   "https://experience.arcgis.com/experience/918d784338974eee9eb3be0b5d29a4da": "map viewer",
+   "https://experience.arcgis.com/experience/71ddb9e99c0d4d71aaedd846c3316867": "Enter the PLSS Access System",
+   "https://experience.arcgis.com/experience/1ad6b30a39c94b199707811dc9385dda": "Commission Districts Map",
+   "https://experience.arcgis.com/experience/8d00f70e70464e33b0a176e49cd472e8": "Civil Townships Map",
+   "https://experience.arcgis.com/experience/c12dbd68166f49b68e357304d5a92bbe/page/Road-Ownership%2FMaintenance": "Road Maintenance Map",
+   "https://boonecountymogis.maps.arcgis.com/apps/instant/lookup/index.html?appid=0dd6a94b73a24844b348e21dbbd6b356": "Find My Polling Place",
+   "https://experience.arcgis.com/experience/d1c44110df264f3abd508a9f8855751c": ""
+  }
+ },
+ "Porter County": {
+  "files": [],
+  "portals": {}
+ },
+ "Rock County": {
+  "files": [],
+  "portals": {}
+ },
+ "Springfield": {
+  "files": [],
+  "portals": {}
+ },
+ "Rockford": {
+  "files": [
+   {
+    "url": "https://illinoisattorneygeneral.gov/Page-Attachments/HomeRepairKnowYourConsumerRights.pdf?utm_source=chatgpt.com",
+    "text": "Illinois Attorney General Home Repair Know Your Consumer Rights (PDF)",
+    "file": "data/city_files/Rockford/4ceb13_HomeRepairKnowYourConsumerRights.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://data.illinois.gov/organization/city-of-rockford": "Open Data Portal",
+   "https://rockgis.rockfordil.gov/portal/apps/experiencebuilder/experience/?id=cac27e654c0646a9ac079ee27ac3adc6": "Rockford Wards",
+   "https://experience.arcgis.com/experience/07f1e11a33c64876989a0ed6c6075a81": "Interactive Lead Service Line Identification Map",
+   "http://rockfordil.maps.arcgis.com/apps/webappviewer/index.html?id=13a6e9a4a5ed4f939037556b7295c0bd": "Garbage Boundary",
+   "https://experience.arcgis.com/experience/073c9768cf9f4a5f9666e1b97160295b": "Rockford CIP",
+   "https://rockgis.rockfordil.gov/portal/apps/experiencebuilder/experience?id=61749b9319b44092a03ecf5675ed9ec0": "Rockford Zoning",
+   "http://rockfordil.maps.arcgis.com/apps/webappviewer/index.html?id=2ef312c981f541dbb4506590e60d5192": "Watershed Map",
+   "https://rockfordil.maps.arcgis.com/apps/instant/basic/index.html?appid=36463e4e7a5b43a5bcabaf65a559e678": "Rockford Flood Zones",
+   "http://rockfordil.maps.arcgis.com/apps/MapJournal/index.html?appid=ee19c44c10f34c43b2bab3211da9de71": "Rockford Historic Sites",
+   "http://rockfordil.maps.arcgis.com/apps/webappviewer/index.html?id=25dd9bdb84ed48e98c428ac15666f003": "Neighborhood Groups",
+   "http://rockfordil.maps.arcgis.com/apps/webappviewer/index.html?id=af47e78389d94787ac7e5727f7a5478c": "Hydrant Flushing Schedule",
+   "https://rockgis.rockfordil.gov/portal/apps/webappviewer/index.html?id=3a625a4f25364260bc700b22f0a21102": "Residential Plowing Operation"
+  }
+ },
+ "Spotsylvania County": {
+  "files": [
+   {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/trail-guide-lakeanna.pdf",
+    "text": "Lake Anna State Park",
+    "file": "data/city_files/Spotsylvania_County/f212cf_trail-guide-lakeanna.pdf",
+    "rows": 12,
+    "bike_rows": 6
+   }
+  ],
+  "portals": {
+   "https://gis.spotsylvania.va.us/portal/apps/sites/": "History of GIS at Spotsylvania County",
+   "https://spotsy-util.maps.arcgis.com/apps/webappviewer/index.html?id=299ecaf2207d498b8b6450340884f529": "View Map Here",
+   "https://gis.spotsylvania.va.us/portal/apps/experiencebuilder/experience/?id=db22c0384f61492397f814adf0f83477": "GIS-based map of pending applications",
+   "https://gis.spotsylvania.va.us/spotsylvania/": "GIS Maps",
+   "https://gis.spotsylvania.va.us/portal/apps/webappviewer/index.html?id=4d6183924b224425832ac679441503d3": "Planning Department Public Hearing Web Mapping Application",
+   "https://gis.spotsylvania.va.us/portal/apps/webappviewer/index.html?id=d2c0a7d98240427aae935803ad79d7f4": "Find Your Board of  Supervisor App",
+   "https://gis.spotsylvania.va.us/portal/apps/webappviewer/index.html?id=9f3f21717e1c46f7810e23c94e6ac3ee": "GPS Monuments",
+   "https://gis.spotsylvania.va.us/portal/apps/MinimalGallery/index.html?appid=cf3fc91691814e0bb2153726cec73f01": "Map Gallery",
+   "https://gis.spotsylvania.va.us/portal/apps/webappviewer/index.html?id=7a4259ec4ac24b2980335108828b4b0d": "Tax Parcel Maps",
+   "https://gis.spotsylvania.va.us/portal/apps/storymaps/stories/d236db3ec13848568fc388981f8be9e1": "mobile-friendly interactive map",
+   "https://gis.spotsylvania.va.us/portal/apps/storymaps/stories/e26e4b3139814ce1943f9bd22b893544": "Spotsylvania Historic Courthouse Self-Guided Walking Tour",
+   "https://data.virginia.gov/dataset/community-policing-data": "Virginia Open Data Portal"
+  }
+ },
+ "Cambria County": {
+  "files": [],
+  "portals": {}
+ },
+ "Ascension Parish": {
+  "files": [],
+  "portals": {
+   "https://www.arcgis.com/apps/dashboards/273dacf9367e4622b3a5388bb78535dc": "Government Services",
+   "https://gis.ascensionparishla.gov/portal/apps/sites/": "Learn More"
+  }
+ },
+ "Allegan County": {
+  "files": [],
+  "portals": {}
+ },
+ "Wilmington": {
+  "files": [
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/2/services/documents/trash/2026_recycling_calendar.pdf",
+    "text": "(PDF, 538KB)",
+    "file": "data/city_files/Wilmington/36aabc_2026_recycling_calendar.pdf",
+    "rows": 60,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/services/documents/parking/meter-bagging-application.pdf",
+    "text": "Meter bagging application",
+    "file": "data/city_files/Wilmington/ba6c13_meter-bagging-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/services/documents/parking/oversize-vehicle-parking-map.pdf",
+    "text": "Large vehicle parking",
+    "file": "data/city_files/Wilmington/f31ffe_oversize-vehicle-parking-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/services/documents/parking/residential-parking-program-guidelines.pdf",
+    "text": "Residential Parking Permit Program",
+    "file": "data/city_files/Wilmington/9627bd_residential-parking-program-guidelines.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/services/documents/parking/residential-parking-permit-app.pdf",
+    "text": "Residential Parking District",
+    "file": "data/city_files/Wilmington/d3df81_residential-parking-permit-app.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/services/documents/parking/historic-district-parking-permit-app.pdf",
+    "text": "Historic District Parking",
+    "file": "data/city_files/Wilmington/bc03b0_historic-district-parking-permit-app.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/services/documents/parking/rpp_program-guidelines_v11.pdf",
+    "text": "Parking information",
+    "file": "data/city_files/Wilmington/5606f6_rpp_program-guidelines_v11.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/services/documents/parking/article-v-towing.pdf",
+    "text": "towing ordinance",
+    "file": "data/city_files/Wilmington/bbbe6b_article-v-towing.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/services/documents/parking/meter-removal-policy_form.pdf",
+    "text": "Temporary meter removal policy",
+    "file": "data/city_files/Wilmington/1d5106_meter-removal-policy_form.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/5/services/documents/parking/meter-bagging-application-new-2024-1.pdf",
+    "text": "Large Meter bagging application and policy (PDF, 85KB)",
+    "file": "data/city_files/Wilmington/d5b878_meter-bagging-application-new-2024-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wavetransit.com/wp-content/uploads/2020/01/2020-System-Map.pdf",
+    "text": "Trolley Map",
+    "file": "data/city_files/Wilmington/501ddd_2020-System-Map.pdf",
+    "rows": 20,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/services/documents/parking/dpac-bylaws-final.pdf",
+    "text": "Download a copy of the Committee's bylaws",
+    "file": "data/city_files/Wilmington/7d4f49_dpac-bylaws-final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/4/development-amp-business/documents/historic-preservation/historic-districts-design-standards.pdf",
+    "text": "Historic Districts Design Standards (PDF, 11MB)",
+    "file": "data/city_files/Wilmington/5f8a47_historic-districts-design-standards.pdf",
+    "rows": 1798,
+    "bike_rows": 201
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/3/development-amp-business/documents/historic-preservation/historic-districts-map.pdf",
+    "text": "Historic Districts Map (PDF, 2MB)",
+    "file": "data/city_files/Wilmington/7a9578_historic-districts-map.pdf",
+    "rows": 7,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/3/development-amp-business/documents/historic-preservation/historic-districts-design-standards.pdf",
+    "text": "Wilmington Design Guidelines for Historic Districts and Landmarks",
+    "file": "data/city_files/Wilmington/c92499_historic-districts-design-standards.pdf",
+    "rows": 1798,
+    "bike_rows": 201
+   },
+   {
+    "url": "https://www.wmpo.org/wp-content/uploads/2016/05/2013_wilmingtongreenwayplan_mainchapters_optimized.pdf",
+    "text": "Wilmington/New Hanover County Comprehensive Greenway Plan (2013)",
+    "file": "data/city_files/Wilmington/8f5d5f_2013_wilmingtongreenwayplan_mainchapters_optimized.pdf",
+    "rows": 128,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://www.wmpo.org/wp-content/uploads/2021/05/09a_Wave-Transit-LCP-2021-Final-Draft.pdf",
+    "text": "Wave Locally Coordinated Public transportation Plan (2021)",
+    "file": "data/city_files/Wilmington/783547_09a_Wave-Transit-LCP-2021-Final-Draft.pdf",
+    "rows": 294,
+    "bike_rows": 30
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/corporate-affairs/page-rebuild-photos/downtown-trail/wilm-downtown-trail-meeting-boards_final.pdf",
+    "text": "Wilm-Downtown-Trail-Meeting-Boards_FINAL.pdf (PDF, 21MB)",
+    "file": "data/city_files/Wilmington/9d83a6_wilm-downtown-trail-meeting-boards_final.pdf",
+    "rows": 100,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/parks-amp-rec/documents/parkstrails/city-of-wilmington_park-rules_2025.pdf",
+    "text": "View our park rules (PDF, 98KB)",
+    "file": "data/city_files/Wilmington/2bbbb6_city-of-wilmington_park-rules_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/3/trash-amp-recycling/hhw-brochure-1.pdf",
+    "text": "full list of accepted items (PDF, 816KB)",
+    "file": "data/city_files/Wilmington/b69053_hhw-brochure-1.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/1/services/documents/trash/event-guide-final.pdf",
+    "text": "Event Recycling and Waste Diversion Guide (PDF, 457KB)",
+    "file": "data/city_files/Wilmington/18866d_event-guide-final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/2/development-amp-business/documents/historic-preservation/landmark-study-list.pdf",
+    "text": "Application for Inclusion on Landmark Study List (PDF, 54KB)",
+    "file": "data/city_files/Wilmington/fd3402_landmark-study-list.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wilmingtonnc.gov/files/assets/city/v/2/development-amp-business/documents/applications-amp-fees/historic-preservation/local-landmark-application.pdf",
+    "text": "Application for Local Landmark Designation (PDF, 58KB)",
+    "file": "data/city_files/Wilmington/f2e850_local-landmark-application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.wmpo.org/wp-content/uploads/2016/03/2008-02_WMPO_Bike_Routes.pdf",
+    "text": "bicycle routes",
+    "file": "data/city_files/Wilmington/394825_2008-02_WMPO_Bike_Routes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wavetransit.com/wp-content/uploads/2020/01/2020-System-Schedule.pdf",
+    "text": "bus schedule",
+    "file": "data/city_files/Wilmington/106fa3_2020-System-Schedule.pdf",
+    "rows": 202,
+    "bike_rows": 13
+   }
+  ],
+  "portals": {
+   "https://wilmingtonnc.maps.arcgis.com/apps/instant/minimalist/index.html?appid=0f6a342924c04a1d83e1fc0b39b6c6ac": "Zoning Districts Map",
+   "https://storymaps.arcgis.com/stories/83c422ee43774671984e93cce94ca362": "Cape Fear Moving Forward: 2045 Metropolitan Transportation Plan (2020)",
+   "https://wilmingtonnc.maps.arcgis.com/home/item.html?id=559e06505dc24cb88eaec23af58e5265": "Trail Locator Map",
+   "https://storymaps.arcgis.com/stories/e581830d69f8471ca38a07f2e223355b": "Making of the downtown Riverwalk",
+   "https://wilmingtonnc.maps.arcgis.com/apps/Cascade/index.html?appid=aba2313e38a948a6bd2e6d9bddfe2ef8": "Guided Digital Tour of the Riverwalk"
+  }
+ },
+ "Las Cruces": {
+  "files": [],
+  "portals": {}
+ },
+ "Boulder": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/453953e79ff64148821c1187c8ab3edc/page/Trails": "Interactive trail map",
+   "https://storymaps.arcgis.com/stories/6492c65b52a542f586917393bacc7919": "2025 Annual Progress Report",
+   "https://boulder.maps.arcgis.com/apps/dashboards/0a4e4c58e2824eeca4b0788fe92ce2ef": "Court Location and Layout Interactive Map",
+   "https://experience.arcgis.com/experience/275a68169c7846a3960051d97d383121": "Open Map in a Full-Size Window"
+  }
+ },
+ "Sumter County": {
+  "files": [],
+  "portals": {}
+ },
+ "Davenport": {
+  "files": [
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Finance/Revenue/Bike License Application New.pdf",
+    "text": "To apply by mail, print the bicycle license application",
+    "file": "data/city_files/Davenport/3ca225_Bike_License_Application_New.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Public Works/Downtown Parking Map, Fees, and Details June2022.pdf",
+    "text": "Downtown Parking Map, Rates and Information",
+    "file": "data/city_files/Davenport/23f93d_Downtown_Parking_Map_Fees_and_Details_June2022.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Park & Facility Amenities List & Map.pdf",
+    "text": "Davenport Parks Map and Amenities List",
+    "file": "data/city_files/Davenport/5ea95b_Park_Facility_Amenities_List_Map.pdf",
+    "rows": 58,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Davenport Trails Map.pdf",
+    "text": "Davenport Trails Map",
+    "file": "data/city_files/Davenport/32663d_Davenport_Trails_Map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Quad Cities RiverWay Parks & Trails Map.pdf",
+    "text": "Quad Cities RiverWay Parks & Trails Map",
+    "file": "data/city_files/Davenport/d70ebd_Quad_Cities_RiverWay_Parks_Trails_Map.pdf",
+    "rows": 28,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Quad Cities Metro Area Bicycle Map.pdf",
+    "text": "Quad Cities Metro Area Bicycle Map",
+    "file": "data/city_files/Davenport/6885ac_Quad_Cities_Metro_Area_Bicycle_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://davenportiowa.maps.arcgis.com/apps/webappviewer/index.html?id=1e272378831840dfb3d5a18526a5070e": "City Map",
+   "https://davenportiowa.maps.arcgis.com/apps/dashboards/0032cf57bf3e4a52b4b857f095f90945": "Flood Inundation Maps",
+   "https://davenportiowa.maps.arcgis.com/apps/instant/sidebar/index.html?appid=cb0cacfb2baa4013ad03cd9b4842f285": "Posted Snow Routes",
+   "http://davenportiowa.maps.arcgis.com/apps/webappviewer/index.html?id=6673061ef8a14a90b2fa9983bc2f7c73": "Ward Maps",
+   "https://davenportiowa.maps.arcgis.com/apps/webappviewer/index.html?id=8ee7347728184fa1999dd5d7cf8819b1": "Zoning Map",
+   "https://iowadnr.maps.arcgis.com/apps/webappviewer/index.html?id=49241621e66949c7b02f135bcfb85ee3": "Iowa DNR - Iowa State Parks Trails"
+  }
+ },
+ "Longmont": {
+  "files": [],
+  "portals": {}
+ },
+ "Lehi": {
+  "files": [
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/w5bpnuua/2026-wm-1.pdf",
+    "text": "Garbage and Recycling Calendar",
+    "file": "data/city_files/Lehi/2c569a_2026-wm-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lehi-ut.gov/media/cxkokfwq/garbage_pickup_schedule-may2024.pdf",
+    "text": "Click here for a map",
+    "file": "data/city_files/Lehi/405b34_garbage_pickup_schedule-may2024.pdf",
+    "rows": 83,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/bu2han3f/snow_plow_routes.pdf",
+    "text": "snow plow route",
+    "file": "data/city_files/Lehi/0f3427_snow_plow_routes.pdf",
+    "rows": 48,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/hh5p5b0g/willow-park-welcome-message-map-2026.pdf",
+    "text": "Willow Park Campground Rules and Map",
+    "file": "data/city_files/Lehi/624101_willow-park-welcome-message-map-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lehi-ut.gov/media/cxkokfwq/garbage_pickup_schedule-may2024.pdf",
+    "text": "Click here for a map",
+    "file": "data/city_files/Lehi/67d270_garbage_pickup_schedule-may2024.pdf",
+    "rows": 83,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/j0blupmd/2026-youth-track-and-field.pdf",
+    "text": "2026 Youth Track & Field - OLD Flyer",
+    "file": "data/city_files/Lehi/05f980_2026-youth-track-and-field.pdf",
+    "rows": 15,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/m0lp2dfi/dragonfly-map-kiosk-96x48.pdf",
+    "text": "Dragonfly Disc Golf Map",
+    "file": "data/city_files/Lehi/d253e8_dragonfly-map-kiosk-96x48.pdf",
+    "rows": 239,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/htzf2va4/dry-creek-disc-golf-map.pdf",
+    "text": "Dry Creek Disc Golf Map",
+    "file": "data/city_files/Lehi/49c5a3_dry-creek-disc-golf-map.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lehi-ut.gov/media/hh5p5b0g/willow-park-welcome-message-map-2026.pdf",
+    "text": "Willow Park Campground Rules and Map",
+    "file": "data/city_files/Lehi/ec48b5_willow-park-welcome-message-map-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/4cafrj4i/master_storm_drainage_plan-map.pdf",
+    "text": "Storm Drain Master Plan Map",
+    "file": "data/city_files/Lehi/8a0949_master_storm_drainage_plan-map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/qj5j33ut/master_storm_drainage_basin_delineation_and_modeled_trunklines_map.pdf",
+    "text": "and Modeled Trunk Lines Map",
+    "file": "data/city_files/Lehi/7bd48b_master_storm_drainage_basin_delineation_and_modeled_trunklines_map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/hq4m0nu2/parking-lot-maintenance.pdf",
+    "text": "Parking Lot Maintenance",
+    "file": "data/city_files/Lehi/aabc90_parking-lot-maintenance.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/lehi-ut-us/media/pxkfutur/discharging-swimming-pool-and-hot-tub-water.pdf",
+    "text": "Discharging Swimming Pool and Hot Tub Water",
+    "file": "data/city_files/Lehi/ca46d4_discharging-swimming-pool-and-hot-tub-water.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://lehi-gis-maps-lehi.hub.arcgis.com/": "Maps",
+   "https://lehi.maps.arcgis.com/apps/webappviewer/index.html?id=1b83295a36824db7b6c8bf911b12c5e4": "Cemetery Map Viewer",
+   "https://lehi.maps.arcgis.com/apps/dashboards/bc82626967c7413e8d2b441688927946": "Lehi Roads Dashboard.",
+   "https://experience.arcgis.com/experience/b809d8096f53410cbb4c1c2839fe5022": "Lehi Amenities Map",
+   "https://experience.arcgis.com/experience/696445944162449398674b323fb4d9c9": "Lehi City Trails Map",
+   "https://lehi.maps.arcgis.com/apps/instant/basic/index.html?appid=dbc3bbf46acd49758df0e21ad874d266": "PI Meters Phases"
+  }
+ },
+ "Bowie County": {
+  "files": [],
+  "portals": {}
+ },
+ "New Braunfels": {
+  "files": [
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityLimitsandETJ.pdf",
+    "text": "City Limits and ETJ Map",
+    "file": "data/city_files/New_Braunfels/a6a841_CityLimitsandETJ.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/HistoricDistricts.pdf",
+    "text": "Historic Districts Map",
+    "file": "data/city_files/New_Braunfels/ee8d68_HistoricDistricts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistricts_letter.pdf",
+    "text": "City Council Districts",
+    "file": "data/city_files/New_Braunfels/3fa6ee_CityCouncilDistricts_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict1_letter.pdf",
+    "text": "City Council District 1",
+    "file": "data/city_files/New_Braunfels/8bf4d3_CityCouncilDistrict1_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict2_letter.pdf",
+    "text": "City Council District 2",
+    "file": "data/city_files/New_Braunfels/57c484_CityCouncilDistrict2_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict3_letter.pdf",
+    "text": "City Council District 3",
+    "file": "data/city_files/New_Braunfels/5ec208_CityCouncilDistrict3_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict4_letter.pdf",
+    "text": "City Council District 4",
+    "file": "data/city_files/New_Braunfels/a058fa_CityCouncilDistrict4_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict5_letter.pdf",
+    "text": "City Council District 5",
+    "file": "data/city_files/New_Braunfels/f61399_CityCouncilDistrict5_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict6_letter.pdf",
+    "text": "City Council District 6",
+    "file": "data/city_files/New_Braunfels/56e470_CityCouncilDistrict6_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/RIFServiceArea.pdf",
+    "text": "Roadway Impact Fee Service Area Map",
+    "file": "data/city_files/New_Braunfels/f208cb_RIFServiceArea.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/OutdoorWarningSirens.pdf",
+    "text": "Flood Warning Sirens Map",
+    "file": "data/city_files/New_Braunfels/5a6971_OutdoorWarningSirens.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/Watersheds.pdf",
+    "text": "Watersheds Map",
+    "file": "data/city_files/New_Braunfels/241ecb_Watersheds.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://open-data-newbraunfels.hub.arcgis.com/": "All GIS & Open Data",
+   "https://open-data-newbraunfels.hub.arcgis.com/pages/interactive-maps": "Interactive Maps",
+   "https://open-data-newbraunfels.hub.arcgis.com/pages/pdf-maps": "PDF Maps",
+   "https://newbraunfels.maps.arcgis.com/apps/instant/lookup/index.html?appid=af4d390f34cb4fb0bad7cefe68a28243": "Rio Service Area Map",
+   "https://open-data-newbraunfels.hub.arcgis.com/pages/infographics": "Infographics",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=27281ec8ad7e4ade8e1bc80c10b60714": "General Reference Map",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=4afda830a7384325aede2f1bd8e31186": "Road Closure Map",
+   "https://newbraunfels.maps.arcgis.com/apps/instant/lookup/index.html?appid=b3a2c7dd817049ea8342cf2a09668848": "Find Your Trash & Recycling Day",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=65adb598a5be4171a5bbc1407a9bd30f": "Planning Reference Map",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=04770f2207bd42f8b10ebc4213c63082": "Parking Availability Map",
+   "https://survey123.arcgis.com/share/d0b8ee29ee49444e9304c34049be1774?portalUrl=https://gismaps.newbraunfels.gov/arcportalwa22": "Start New Service",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=16f23a4b3c8a41ec89ef42a58185421a": "Short Term Rentals Map"
+  }
+ },
+ "Greenville": {
+  "files": [],
+  "portals": {}
+ },
+ "Orange County": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Landry Parish": {
+  "files": [],
+  "portals": {}
+ },
+ "Boynton Beach": {
+  "files": [],
+  "portals": {
+   "https://boynton-beach.maps.arcgis.com/apps/instant/basic/index.html?appid=3d0f241dccff44a4b5d2b2cc648cc51f": "https://boynton-beach.maps.arcgis.com/apps/instant/basic/index.html?appid=3d0f241dccff44a4b5d2b2cc648cc51f"
+  }
+ },
+ "James City County": {
+  "files": [],
+  "portals": {}
+ },
+ "Auburn": {
+  "files": [],
+  "portals": {}
+ },
+ "Bismarck": {
+  "files": [],
+  "portals": {
+   "https://bismarck.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=47b2edfbedc340e1a87572f44edb252d": "Interactive mapping for your convenience",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd&extent=-100.79465801330593,46.80352817858064,-100.77388698669405,46.81087158938287": "National Flood Hazard Layer Viewer",
+   "https://www.gis.nd.gov/": "ND GIS Hub",
+   "https://www.legis.nd.gov/legislative-bill-tracking-system": "website",
+   "https://www.legis.nd.gov/": "https://www.legis.nd.gov/",
+   "https://public-bismarck.opendata.arcgis.com/": "Open Data Website",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=8f3ffa1eccc94db9aeb1f9d236fcfa7a&extent=-100.9429,46.7564,-100.6894,46.8536": "Multi-Use Trails Map (Link)",
+   "https://ndlegis.gov/general-information/north-dakota-century-code/index.html": "State Law",
+   "https://storymaps.arcgis.com/stories/eb02e5e71f464bda957ab6aff47da0a4": "Downtown Bismarck Historic District Walking Tour",
+   "https://storymaps.arcgis.com/stories/d8cb8a292f5d4e16be1c2758f4dfa9a9": "Cathedral Area Historic District Walking Tour",
+   "https://storymaps.arcgis.com/stories/99a88381d1c9474ba13666084b5358e5": "Highland Acres Historic District Walking Tour",
+   "https://bismarck.maps.arcgis.com/home/webmap/viewer.html?webmap=8356c359a04e4259958a96f3b7c831a5": "Bismarck Downtown Parking Area."
+  }
+ },
+ "Riley County": {
+  "files": [],
+  "portals": {
+   "http://gis.rileycountyks.gov/publicmaps/": "GIS Public Map Gallery",
+   "http://gis.rileycountyks.gov/": "GIS Website",
+   "https://survey123.arcgis.com/share/c4832c928fcb46d6ad16aa61c4a1fb5c": "Riley County Public Data Request Form",
+   "https://survey123.arcgis.com": ""
+  }
+ },
+ "Walnut Creek": {
+  "files": [],
+  "portals": {}
+ },
+ "Franklin Township": {
+  "files": [],
+  "portals": {}
+ },
+ "Williamson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Starr County": {
+  "files": [],
+  "portals": {}
+ },
+ "North Little Rock": {
+  "files": [],
+  "portals": {}
+ },
+ "La Habra": {
+  "files": [],
+  "portals": {}
+ },
+ "Wellington": {
+  "files": [
+   {
+    "url": "https://www.pbctax.gov/wp-content/uploads/2022/06/83039.pdf",
+    "text": "HSMV 83039 Application for Disabled Person Parking Permit",
+    "file": "data/city_files/Wellington/468604_83039.pdf",
+    "rows": 20,
+    "bike_rows": 4
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/b5154793b4054a8c9ef57a8bffadba26/": "Capital Improvement Project Experience Powered by Esri, this interactive online web application features information abo",
+   "https://wellington.maps.arcgis.com/apps/Embed/index.html?webmap=70e9528f3bd443408a658cd336875da9&extent=-80.315,26.6113,-80.1883,26.6745&home=true&zoom=true&scale=false&search=true&searchextent=true&legendlayers=true&disable_scroll=false&theme=light": "View with an accessibility tool",
+   "https://wellington.maps.arcgis.com/apps/Embed/index.html?webmap=779f29ef48c0430f9e03066b915d4637&extent=-80.3047,26.6262,-80.2035,26.6731&home=true&zoom=true&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=light": "View larger map",
+   "https://wellington.maps.arcgis.com/apps/webappviewer/index.html?id=9d14ff8e0eb74278b804ba8475b19d95": "flood map",
+   "https://wellington.maps.arcgis.com/apps/Embed/index.html?webmap=b9471e5feda64305af450b4dae0c5dc7&extent=-80.3019,26.6237,-80.2008,26.6719&home=true&zoom=true&scale=false&search=true&searchextent=true&legendlayers=true&disable_scroll=false&theme=light": "accessibility tool",
+   "https://fdot.maps.arcgis.com/apps/webappviewer/index.html?id=324053528c0f49beaab365d0ef6796f8": "Facilities Map",
+   "https://data.fdot.gov/road/projects/": "interactive Project Map",
+   "https://performance-data-integration-space-fdot.hub.arcgis.com/": "Performance",
+   "https://experience.arcgis.com/experience/94c32a73837645e8b238d8ea2a1a3ccc": "Click Here to View Map of Equestrian Trails",
+   "https://wellington.maps.arcgis.com/apps/Embed/index.html?webmap=8293002672f74791858ad009ceb242ad&extent=-80.233,26.6333,-80.2278,26.6358&home=true&zoom=true&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=light": "View larger map",
+   "https://experience.arcgis.com/experience/093416b988b04113ace86cc68d3c497e": "View the Map Gallery",
+   "https://storymaps.arcgis.com/stories/4335a7341b7e4ff8825c2bcdd73ffc3b": "Lead Service Line Inventory"
+  }
+ },
+ "Clay": {
+  "files": [
+   {
+    "url": "https://townofclayny.gov/sites/default/files/2026-07/NYS%20E-Bike%20and%20Scooter%20Laws.pdf",
+    "text": "NYS E-Bike and Scooter Laws",
+    "file": "data/city_files/Clay/3f522d_NYS_20E-Bike_20and_20Scooter_20Laws.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofclayny.gov/sites/default/files/2026-07/E-Bike%20Chart.pdf",
+    "text": "E-Bike Chart",
+    "file": "data/city_files/Clay/25289a_E-Bike_20Chart.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ }
+}
