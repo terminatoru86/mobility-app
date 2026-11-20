@@ -1,0 +1,903 @@
+{
+ "North Las Vegas NV": {
+  "files": [],
+  "portals": {}
+ },
+ "Manhattan": {
+  "files": [],
+  "portals": {}
+ },
+ "San Pedro": {
+  "files": [],
+  "portals": {}
+ },
+ "Yenişehir": {
+  "files": [],
+  "portals": {}
+ },
+ "Providence": {
+  "files": [
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/01/5032.pdf",
+    "text": "Bike Providence: Master Plan",
+    "file": "data/city_files/Providence/1a177b_5032.pdf",
+    "rows": 44,
+    "bike_rows": 25
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2024/02/20191219_RIDOT-Utility-Work-Road-Repair-Stds.pdf",
+    "text": "Minimum Standards for State and Municipal Road Repair for Utility Work (RIDOT)",
+    "file": "data/city_files/Providence/c3903c_20191219_RIDOT-Utility-Work-Road-Repair-Stds.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2026/02/Waste-Management-Rhode-Island-Inc.-signed-Waste-Recycling-Agreemet-2025.pdf",
+    "text": "Waste Management Rhode Island, Inc. – signed Waste & Recycling Agreement 2025",
+    "file": "data/city_files/Providence/22ba1f_Waste-Management-Rhode-Island-Inc.-signed-Waste-Recycling-Agreemet-202",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2019/11/Bike-parking-guide-final.pdf",
+    "text": "a guide",
+    "file": "data/city_files/Providence/33a6d1_Bike-parking-guide-final.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://opengov.sos.ri.gov/Common/DownloadMeetingFiles?FilePath=\\Notices\\6057\\2021\\383241.pdf",
+    "text": "Click here for the 2021 meeting schedule of the Bicycle and Pedestrian Advisory Committee.",
+    "file": "data/city_files/Providence/897ba3_DownloadMeetingFiles",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/210217_StaffReport_Woonasquatucket30pct_wplans.pdf",
+    "text": "2/17/21 – Woonasquatucket Greenway Design Review",
+    "file": "data/city_files/Providence/f10e4d_210217_StaffReport_Woonasquatucket30pct_wplans.pdf",
+    "rows": 42,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2020/07/200715_StaffReport_Woonasquatucket_conceptual_wslides.pdf",
+    "text": "7/15/20 – Woonasquatucket Greenway Conceptual Review",
+    "file": "data/city_files/Providence/4ab00b_200715_StaffReport_Woonasquatucket_conceptual_wslides.pdf",
+    "rows": 113,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2020/07/200715_StaffReport_NeighborhoodGreenways_30pct_wplans.pdf",
+    "text": "7/15/20 – Neighborhood Greenways",
+    "file": "data/city_files/Providence/728999_200715_StaffReport_NeighborhoodGreenways_30pct_wplans.pdf",
+    "rows": 667,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/191016_StaffReport_GothamGreens_30pct_wplans.pdf",
+    "text": "10/16/10- Gotham Greens Bike Path Design Review",
+    "file": "data/city_files/Providence/c811d9_191016_StaffReport_GothamGreens_30pct_wplans.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/Providence-draft-urban-trail-vision.pdf",
+    "text": "1/16/19 – Complete Streets Master Plan preliminary input",
+    "file": "data/city_files/Providence/2c04d4_Providence-draft-urban-trail-vision.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/180904_StaffReport_StateBMP_wselectpages.pdf",
+    "text": "9/4/18 – State Bicycle Master Plan Update",
+    "file": "data/city_files/Providence/32dda6_180904_StaffReport_StateBMP_wselectpages.pdf",
+    "rows": 48,
+    "bike_rows": 32
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/180904_StaffReport_BikeshareLaunch.pdf",
+    "text": "9/4/18 – Bike Share Launch Update",
+    "file": "data/city_files/Providence/0cb16e_180904_StaffReport_BikeshareLaunch.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/180516_StaffReport_Bike-share.pdf",
+    "text": "5/16/18 – Bike share draft map",
+    "file": "data/city_files/Providence/36c06c_180516_StaffReport_Bike-share.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/180410_StaffReport_GothamGreens_Conceptual.pdf",
+    "text": "4/10/18 – Gotham Greens Bike Path",
+    "file": "data/city_files/Providence/69db39_180410_StaffReport_GothamGreens_Conceptual.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/180410_StaffReport_CathedralArtsBridge_Conceptual.pdf",
+    "text": "4/10/18 – Bike/Ped Bridge at San Souci Dr",
+    "file": "data/city_files/Providence/5bab78_180410_StaffReport_CathedralArtsBridge_Conceptual.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/180322_StaffReport_Bike-share.pdf",
+    "text": "3/22/18 – Bike Share Stations",
+    "file": "data/city_files/Providence/48aee6_180322_StaffReport_Bike-share.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/171018_StaffReport_DTC.pdf",
+    "text": "10/18/17 – Downtown Transit Connector",
+    "file": "data/city_files/Providence/82ffd1_171018_StaffReport_DTC.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/170517_StaffReport_DTC.pdf",
+    "text": "5/17/17 – Downtown Transit Connector",
+    "file": "data/city_files/Providence/7973bb_170517_StaffReport_DTC.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2016/05/160615_StaffReport_Francis.pdf",
+    "text": "6/15/16 – Francis St sidewalk repairs",
+    "file": "data/city_files/Providence/ae11fb_160615_StaffReport_Francis.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/ConlanPark_v3.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/646213_ConlanPark_v3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/ColumbiaPark_v1.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/9641a1_ColumbiaPark_v1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/DexterPark_v1.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/01e251_DexterPark_v1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/IndiaPointPark_v1.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/4d603e_IndiaPointPark_v1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/Prete_Metcalf_Fields_v1.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/48a854_Prete_Metcalf_Fields_v1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/RWP-Botanical-Garden-Parking-Lot_v1.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/a11dba_RWP-Botanical-Garden-Parking-Lot_v1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/RWP-Casino-Parking-Lot_v1.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/6e3b6d_RWP-Casino-Parking-Lot_v1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/RWP_Tennis-and-Natural-History-Parking-Lots_v1.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/bf8e92_RWP_Tennis-and-Natural-History-Parking-Lots_v1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/RWP-Softball-Field-Parking-Lot_v1.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/6e14ba_RWP-Softball-Field-Parking-Lot_v1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/Blackstone-Boulevard_v1.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/2285d1_Blackstone-Boulevard_v1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/DoyleAve_v1.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/39c168_DoyleAve_v1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2025/12/Corliss-Street_v1.pdf",
+    "text": "View PDF Map",
+    "file": "data/city_files/Providence/6a61f8_Corliss-Street_v1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2023/02/OvernightParkingregulations-_Final_013123.pdf",
+    "text": "Permit Parking Regulations",
+    "file": "data/city_files/Providence/4af2f7_OvernightParkingregulations-_Final_013123.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://opengov.sos.ri.gov/Common/DownloadMeetingFiles?FilePath=\\Notices\\4754\\2025\\543700.pdf",
+    "text": "2026 Meeting Schedule",
+    "file": "data/city_files/Providence/65a49b_DownloadMeetingFiles",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://opengov.sos.ri.gov/Common/DownloadMeetingFiles?FilePath=\\Notices\\4754\\2026\\571543.pdf",
+    "text": "Current meeting agenda",
+    "file": "data/city_files/Providence/7c0dea_DownloadMeetingFiles",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2026/11/CLG_Annual_Report_PVD_2025-2026_RIHPHC.pdf",
+    "text": "Providence Historic District Commission’s 2025-2026 Certified Local Government Annual Report.",
+    "file": "data/city_files/Providence/97afd9_CLG_Annual_Report_PVD_2025-2026_RIHPHC.pdf",
+    "rows": 994,
+    "bike_rows": 185
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2023/11/LHD-MapPackage2023.pdf",
+    "text": "An Acrobat file with all of the district’s maps is located here",
+    "file": "data/city_files/Providence/2941d7_LHD-MapPackage2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.providenceri.gov/wp-content/uploads/2023/01/Harbor-Management-Plan-HMP.pdf",
+    "text": "Harbor Management Plan (HMP)",
+    "file": "data/city_files/Providence/5b32d8_Harbor-Management-Plan-HMP.pdf",
+    "rows": 26,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://maps.providenceri.gov/PVD_Plats_Index.pdf",
+    "text": "Tax Maps – PVD Plat Index noting your plat no. (click here)",
+    "file": "data/city_files/Providence/5bc02a_PVD_Plats_Index.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://maps.providenceri.gov/2025/Providence-final-plots-2025-30x36_001.pdf",
+    "text": "Plat 001",
+    "file": "data/city_files/Providence/6a14df_Providence-final-plots-2025-30x36_001.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.providenceri.gov/2025/Providence-final-plots-2025-30x36_002.pdf",
+    "text": "Plat 002",
+    "file": "data/city_files/Providence/189f6d_Providence-final-plots-2025-30x36_002.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.providenceri.gov/": "Details",
+   "https://www.providenceri.gov/it/open-data/": "https://www.providenceri.gov/it/open-data/",
+   "https://providenceri.gov/open-data": "",
+   "http://data.providenceri.gov/": "http://data.providenceri.gov)",
+   "mailto:?subject=Open Data&body=https://www.providenceri.gov/it/open-data/": "email icon. Click to share on email",
+   "http://twitter.com/share?url=https://www.providenceri.gov/it/open-data/&text=Open Data": "twitter icon. Click to share on twitter",
+   "http://www.facebook.com/sharer.php?u=https://www.providenceri.gov/it/open-data/": "facebook icon. Click to share on facebook",
+   "http://www.linkedin.com/shareArticle?mini=true&url=https://www.providenceri.gov/it/open-data/": "linkedIn Icon. Click to share on LinkedIn",
+   "https://providence-gis-hub-pvdgis.hub.arcgis.com/": "View Web GIS",
+   "https://pvdgis.maps.arcgis.com/apps/webappviewer/index.html?id=ca73fb3d669744c1b930b10787cf88fa": "Sewer and Stormwater Mapping",
+   "https://pvdgis.maps.arcgis.com/apps/webappviewer/index.html?id=1700e1cf7228491d962973edc9924484": "Where's my Parcel / What's my Zone",
+   "https://experience.arcgis.com/experience/7efdb6ec9ea54703928f0a1705a8afb1/": "City GIS Parcel/Zone Mapper",
+   "https://storymaps.arcgis.com/stories/c4a66718c6134efba81f906d1ebc7ddd": "here",
+   "https://storymaps.arcgis.com/stories/65dd800ef1f040c9a6b50dafae074ce6": "Women’s History Tour",
+   "https://experience.arcgis.com/experience/ad248349485646358ff069db8d6b9b46": "Sewer and Stormwater Mapping",
+   "https://providence-gis-hub-pvdgis.hub.arcgis.com/datasets/734f9dd0d17f4ee68d80f5ebbbc8f857/about": "Providence Tree Canopy Assessment, 2024 – GIS Data",
+   "https://data.providenceri.gov/Public-Safety/Providence-Police-Case-Log-Past-180-days/rz3y-pz8v": "Providence Police Case Logs",
+   "https://data.providenceri.gov/Public-Safety/Providence-Police-Department-Arrest-Log-Past-30-Da/vank-fyx9": "Providence Police Arrest Logs",
+   "https://data.providenceri.gov/Public-Safety/PPD-Arrest-and-Case-Logs-FAQ/4t25-ekcs": "here",
+   "https://providence-gis-hub-pvdgis.hub.arcgis.com/apps/2fcee04670bf4508b8449fbde418582f": "Click here for the Providence Development Project Mapper",
+   "https://pvdgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=ac78fa6583cb46ea85d252aa6951d118": "Streetline Reference Web App"
+  }
+ },
+ "Springfield": {
+  "files": [],
+  "portals": {}
+ },
+ "Çanakkale": {
+  "files": [],
+  "portals": {
+   "http://webgis.canakkale.bel.tr/rehber": "360 Kent Rehberi",
+   "https://canakkale.bel.tr/opendata": "Yayınlarımız",
+   "https://canakkale.bel.tr/open-data": "Yayınlarımız"
+  }
+ },
+ "West Palm Beach": {
+  "files": [
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/development-services/documents/development-services-forms/planning-amp-zoning-forms/downtown-wpb-mobility-fee-assessment-area-map.pdf",
+    "text": "Downtown WPB Mobility Fee Assessment Area Map A (PDF, 2MB)",
+    "file": "data/city_files/West_Palm_Beach/39ae46_downtown-wpb-mobility-fee-assessment-area-map.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/housing/documents/your-waterfrontyour-way_ap.pdf",
+    "text": "Your Waterfront. Your Way. Meeting Presentations (PDF, 3MB)",
+    "file": "data/city_files/West_Palm_Beach/f29732_your-waterfrontyour-way_ap.pdf",
+    "rows": 99,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/requestforhearingnew72011.pdf",
+    "text": "Download a copy of the Plea of Not Guilty and Request for Hearing Form (PDF, 157KB)",
+    "file": "data/city_files/West_Palm_Beach/142708_requestforhearingnew72011.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/2/parking-amp-mobility/documents/resolution-191-22-remediated.pdf",
+    "text": "Resolution 191-22 (PDF, 229KB)",
+    "file": "data/city_files/West_Palm_Beach/6b53ee_resolution-191-22-remediated.pdf",
+    "rows": 32,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/2027-budget-workshop.pdf",
+    "text": "Strategic Plan & Budget (PDF, 1MB)",
+    "file": "data/city_files/West_Palm_Beach/2dfa69_2027-budget-workshop.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/2050_west_palm_beach_mobility_plan_07-22-2026.pdf",
+    "text": "Mobility Plan (PDF, 21MB)",
+    "file": "data/city_files/West_Palm_Beach/6d52ef_2050_west_palm_beach_mobility_plan_07-22-2026.pdf",
+    "rows": 640,
+    "bike_rows": 149
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/resolution-13-25-wpb-complete-streets-policy-feb25.pdf",
+    "text": "Complete Streets Policy (PDF, 268KB)",
+    "file": "data/city_files/West_Palm_Beach/8ac7d2_resolution-13-25-wpb-complete-streets-policy-feb25.pdf",
+    "rows": 28,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/parking_mobility_siteplan_checklist_updated.pdf",
+    "text": "Parking Mobility Site Plan Checklist (PDF, 127KB)",
+    "file": "data/city_files/West_Palm_Beach/66736c_parking_mobility_siteplan_checklist_updated.pdf",
+    "rows": 22,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/development-services/documents/development-services-forms/planning-amp-zoning-forms/wpb-historic-preservation-board-project-checklist_fillable.pdf",
+    "text": "Historic Preservation Board Project Checklist. (PDF, 324KB)",
+    "file": "data/city_files/West_Palm_Beach/179d74_wpb-historic-preservation-board-project-checklist_fillable.pdf",
+    "rows": 120,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/community-redevelopment-agency/165970-citwpb-bk-historic-northwest-books-significant-people_proof.pdf",
+    "text": "here (PDF, 3MB)",
+    "file": "data/city_files/West_Palm_Beach/4743f6_165970-citwpb-bk-historic-northwest-books-significant-people_proof.pdf",
+    "rows": 244,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/community-redevelopment-agency/165970-citwpb-bk-historic-northwest-books-preservation-initiatives_proof.pdf",
+    "text": "here (PDF, 1MB)",
+    "file": "data/city_files/West_Palm_Beach/a48ccc_165970-citwpb-bk-historic-northwest-books-preservation-initiatives_pro",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/development-services/documents/comprehensive-plan/2026-maps/future-land-use-map-current-through-ordinance-no.-5175-26-july-20-2026.pdf",
+    "text": "Future Land Use Map (PDF, 10MB)",
+    "file": "data/city_files/West_Palm_Beach/bc3175_future-land-use-map-current-through-ordinance-no.-5175-26-july-20-2026",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/development-services/documents/comprehensive-plan/2026-maps/zoning-map-current-through-ordinance-5176-26-july-20-2026.pdf",
+    "text": "Zoning Map (PDF, 9MB)",
+    "file": "data/city_files/West_Palm_Beach/1628bc_zoning-map-current-through-ordinance-5176-26-july-20-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/engineering/documents/24-11-14-wpb-bike-master-plan-steering-committee-meeting-1-presentation.pdf",
+    "text": "Project Steering Committee #1 Presentation (PDF, 5MB)",
+    "file": "data/city_files/West_Palm_Beach/7f495d_24-11-14-wpb-bike-master-plan-steering-committee-meeting-1-presentatio",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/wpb-bmp-steering-committee-meeting-3-notes-final.pdf",
+    "text": "WPB BMP Steering Committee #3 Meeting Notes (PDF, 117KB)",
+    "file": "data/city_files/West_Palm_Beach/7ec816_wpb-bmp-steering-committee-meeting-3-notes-final.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/2/parking-amp-mobility/documents/northwood-village-merchants-association-meeting-update.pdf",
+    "text": "please click here (PDF, 308KB)",
+    "file": "data/city_files/West_Palm_Beach/64cf32_northwood-village-merchants-association-meeting-update.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/2/parking-amp-mobility/documents/northwood-parking-community-meeting.pdf",
+    "text": "meeting flyer here (PDF, 1005KB)",
+    "file": "data/city_files/West_Palm_Beach/7e00f0_northwood-parking-community-meeting.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/west-palm-beach-sap-safety-assessment-002.pdf",
+    "text": "",
+    "file": "data/city_files/West_Palm_Beach/022966_west-palm-beach-sap-safety-assessment-002.pdf",
+    "rows": 42,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/valet-permit-instruction-guide.pdf",
+    "text": "Valet Permit Instruction Guide (PDF, 154KB)",
+    "file": "data/city_files/West_Palm_Beach/e5aa04_valet-permit-instruction-guide.pdf",
+    "rows": 19,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/rpp-petitions.pdf",
+    "text": "Residential Parking Petitions (PDF, 155KB)",
+    "file": "data/city_files/West_Palm_Beach/c50cba_rpp-petitions.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/rpp-faq1.pdf",
+    "text": "FAQ's (PDF, 443KB)",
+    "file": "data/city_files/West_Palm_Beach/88d5a8_rpp-faq1.pdf",
+    "rows": 10,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/community-events/documents/2025/gm-25_january_roadclosures.pdf",
+    "text": "See road closure map here. (PDF, 2MB)",
+    "file": "data/city_files/West_Palm_Beach/dde7ac_gm-25_january_roadclosures.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wpb.org/files/assets/city/v/1/parking-amp-mobility/documents/monthly-parking-application-new-2026_2.pdf",
+    "text": "Monthly Parking Application (PDF, 376KB)",
+    "file": "data/city_files/West_Palm_Beach/1abf62_monthly-parking-application-new-2026_2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/2ea32cd6d60a44be8e4c41c2ef441e2a": "Search",
+   "https://wpbgis.maps.arcgis.com/apps/webappviewer/index.html?id=62618bc161684c66993ba99067411901": "Parking Locations",
+   "https://wpbgis.maps.arcgis.com/apps/mapviewer/index.html?layers=350f6d5157304e5ebb727679608d8651": "Street Light Viewer",
+   "https://experience.arcgis.com/experience/74f086a20d674202ba06e1b9fc095335": "Regular pickup schedule here",
+   "https://map.viewprogis.com/ecp/wpb-fl?widget=95e563c4-5dec-4eb5-8e83-bed85e3304f6": "Historic Property Search (Interactive Web Map)",
+   "https://experience.arcgis.com/experience/874aaf576de9400499141ec424802dde/page/In-Review": "Citywide Projects Web App",
+   "https://www.wpb.org/?splash=https%3a%2f%2fmaps.viewprogis.com%2fecp%2fwpb-fl&____isexternal=true": "Zoning Map Viewer",
+   "https://wpbgis.maps.arcgis.com/apps/webappviewer/index.html?id=e2adea1d82ce42d38fa5a97217e99374": "Interactive GreenMarket Site Map"
+  }
+ },
+ "Sparks": {
+  "files": [],
+  "portals": {
+   "https://gis.sparksnv.gov/portal/apps/webappviewer/index.html?id=d9e77365c3c34c93a4c4342fb945c4e0": "Ward Map",
+   "https://gis.sparksnv.gov/portal/apps/webappviewer/index.html?id=d9e5a2a4c8f143ad92ea17dc5d4b1e90": "Land Use Interactive Map",
+   "https://gis.sparksnv.gov/portal/apps/webappviewer/index.html?id=006286da6ab24ae79af99f4752e112dd": "Zoning Map",
+   "https://gis.sparksnv.gov/portal/apps/webappviewer/index.html?id=16fb2f00dfa248b4b77b05c505783a60": "Condition of my street"
+  }
+ },
+ "Edinburg": {
+  "files": [
+   {
+    "url": "https://www.cityofedinburg.com/Documents/Departments/Public_Works/Right_Way_Division/row_boundary_map.pdf?t=202604171125540",
+    "text": "City Right of Way Boundary Map",
+    "file": "data/city_files/Edinburg/efa6b4_row_boundary_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofedinburg.com/Documents/Departments/Solid_Waste_Management/2026_01_recycling_curbside_calendar.pdf?t=202604171125460",
+    "text": "calendar",
+    "file": "data/city_files/Edinburg/991f78_2026_01_recycling_curbside_calendar.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofedinburg.com/Documents/Departments/Solid_Waste_Management/Curbside_Recycling/recycle_guide.pdf?t=202604171125530",
+    "text": "approved/unapproved material guide",
+    "file": "data/city_files/Edinburg/15739a_recycle_guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofedinburg.com/Documents/Departments/Public_Works/Stormwater_Division/Stormwater_Compliance_Resources/general_permit_txr040000.pdf?t=202604171125550",
+    "text": "General Permit TXR040000 To Discharge Under The Texas Pollutant Discharge Elimination System (MS4)",
+    "file": "data/city_files/Edinburg/66d8a9_general_permit_txr040000.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cityofedinburg.com/Documents/Departments/Public_Works/Stormwater_Division/Stormwater_Compliance_Resources/general_permit_txr050000.pdf?t=202604171125550",
+    "text": "General Permit TXR050000 to Discharge Under The Texas Pollutant Discharge Elimination System (Industrial Activity)",
+    "file": "data/city_files/Edinburg/1b54b3_general_permit_txr050000.pdf",
+    "rows": 582,
+    "bike_rows": 21
+   }
+  ],
+  "portals": {
+   "https://coe-capital-projects-hub-cityofedinburg.hub.arcgis.com/": "Capital Improvement Projects",
+   "https://gis-division-cityofedinburg.hub.arcgis.com/": "Geographic Information Systems (GIS)",
+   "https://experience.arcgis.com/experience/bcad27c5f3544240a8bd8deccb4c6127/": "GIS Maps"
+  }
+ },
+ "Buckeye": {
+  "files": [],
+  "portals": {}
+ },
+ "Ngawi": {
+  "files": [],
+  "portals": {}
+ },
+ "Warner Robins": {
+  "files": [],
+  "portals": {}
+ },
+ "Broomfield": {
+  "files": [
+   {
+    "url": "https://www.fvap.gov/uploads/FVAP/Forms/fwab2013.pdf",
+    "text": "Federal Write-In Absentee Ballot (FWAB)",
+    "file": "data/city_files/Broomfield/c3b341_fwab2013.pdf",
+    "rows": 72,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://broomfield.org/3786/Assessor-Data-Files-and-Open-Data": "Assessor Data Files and Open Data",
+   "https://broomfield.maps.arcgis.com/apps/webappviewer/index.html?id=c719fb2b705a4a1c86717d8dc8cf06c4": "Find Your Ward on a Map",
+   "https://opendata.broomfield.org": "GIS Data/Shapefiles",
+   "https://experience.gis.broomfield.org/exp/gps-monuments/": "GPS Monuments 2011",
+   "https://broomfield.maps.arcgis.com/apps/webappviewer/index.html?id=9731756c81b7456bb59a848a9cd14037": "Planning Research",
+   "https://experience.arcgis.com/experience/23b0ca0f2d2e40b287b702e650ba3860/?org=broomfield": "Traffic Counts and Streets Map (includes traffic mitigation updates) - NEW posted 04-24-24",
+   "https://experience.gis.broomfield.org/exp/crash-data/": "Crash Data Dashboard",
+   "http://opendata.broomfield.org/": "Raw Data",
+   "https://opendata.broomfield.org/": "https://opendata.broomfield.org/",
+   "https://experience.gis.broomfield.org/exp/socioeconomic-status/": "SES Maps",
+   "https://gis.drcog.org/bikeroutes/": "DRCOG Interactive Bike Map",
+   "https://www.broomfield.org/3786/Assessor-Data-Files-and-Open-Data": "Assessor Data Files and Open Data"
+  }
+ },
+ "Lake Elsinore": {
+  "files": [],
+  "portals": {}
+ },
+ "Lynwood": {
+  "files": [],
+  "portals": {}
+ },
+ "Brookline": {
+  "files": [],
+  "portals": {}
+ },
+ "Clay": {
+  "files": [
+   {
+    "url": "https://townofclayny.gov/sites/default/files/2026-07/NYS%20E-Bike%20and%20Scooter%20Laws.pdf",
+    "text": "NYS E-Bike and Scooter Laws",
+    "file": "data/city_files/Clay/3f522d_NYS_20E-Bike_20and_20Scooter_20Laws.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofclayny.gov/sites/default/files/2026-07/E-Bike%20Chart.pdf",
+    "text": "E-Bike Chart",
+    "file": "data/city_files/Clay/25289a_E-Bike_20Chart.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofclayny.gov/sites/default/files/inline-files/Acceptable%20Electronics%20for%20Recycling_0.pdf",
+    "text": "Acceptable Electronics for Recycling.pdf",
+    "file": "data/city_files/Clay/0b3170_Acceptable_20Electronics_20for_20Recycling_0.pdf",
+    "rows": 10,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {}
+ },
+ "Kettering": {
+  "files": [
+   {
+    "url": "https://bikeleague.org/wp-content/uploads/bfareportcards/bfc/2024/Kettering_OH.pdf",
+    "text": "full report card",
+    "file": "data/city_files/Kettering/b4f28b_Kettering_OH.pdf",
+    "rows": 64,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2018/01/City-Map-with-bike-route-rankings-for-map-w-Legend-SMALLER-1-5-18.pdf",
+    "text": "Ranked Bike Route Map(PDF)",
+    "file": "data/city_files/Kettering/1d18f6_City-Map-with-bike-route-rankings-for-map-w-Legend-SMALLER-1-5-18.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2018/01/Bicycle-Task-Force-Committee-FINAL-document-Recommendations-9-16-13-1.pdf",
+    "text": "Bicycle Task Force Committee, FINAL document, Recommendations, 9-16-13",
+    "file": "data/city_files/Kettering/db5feb_Bicycle-Task-Force-Committee-FINAL-document-Recommendations-9-16-13-1.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2018/10/Part-Four-Chapter-474-Bicycles-Motorcycles-and-Snowmobiles.pdf",
+    "text": "Download",
+    "file": "data/city_files/Kettering/271344_Part-Four-Chapter-474-Bicycles-Motorcycles-and-Snowmobiles.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/2024/03/RTA-Ride-the-Loop-Flyer_2.pdf",
+    "text": "Download",
+    "file": "data/city_files/Kettering/171b07_RTA-Ride-the-Loop-Flyer_2.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/2024/04/Cycle-Kettering-Waiver-Google-Docs.pdf",
+    "text": "Cycle Kettering Waiver Google Docs",
+    "file": "data/city_files/Kettering/695f61_Cycle-Kettering-Waiver-Google-Docs.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2017/01/City-Map-Fire-Grid-w-hydrants-for-Dan-3-1-12.pdf",
+    "text": "Popout",
+    "file": "data/city_files/Kettering/7227f6_City-Map-Fire-Grid-w-hydrants-for-Dan-3-1-12.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2018/12/Gaylord-and-West-Map.pdf",
+    "text": "Gaylord and West Map",
+    "file": "data/city_files/Kettering/817da0_Gaylord-and-West-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2018/12/Waving-Willow-WMR-Map.pdf",
+    "text": "Waving Willow WMR Map",
+    "file": "data/city_files/Kettering/0acd2d_Waving-Willow-WMR-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/a1bb43b9-map-overview-6-23-20.pdf",
+    "text": "MAP overview 6-23-20",
+    "file": "data/city_files/Kettering/4ffbed_a1bb43b9-map-overview-6-23-20.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2022/04/Public-Hearing-P.C.-22-002-Zoning-Map-Amendment-for-2125-E.-Dorothy-Lane.pdf",
+    "text": "Public Hearing -P.C. 22-002- Zoning Map Amendment for 2125 E. Dorothy Lane",
+    "file": "data/city_files/Kettering/17216a_Public-Hearing-P.C.-22-002-Zoning-Map-Amendment-for-2125-E.-Dorothy-La",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2022/04/Public-Hearing-P.C.-22-003-Zoning-Map-Amendment-for-950-Forrer-Blvd.pdf",
+    "text": "Public Hearing -P.C. 22-003- Zoning Map Amendment for 950 Forrer Blvd",
+    "file": "data/city_files/Kettering/154506_Public-Hearing-P.C.-22-003-Zoning-Map-Amendment-for-950-Forrer-Blvd.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2022/04/Public-Hearing-P.C.-22-005-Zoning-Map-Amendment-for-2001-E.-Dorothy-Lane.pdf",
+    "text": "Public Hearing -P.C. 22-005- Zoning Map Amendment for 2001 E. Dorothy Lane",
+    "file": "data/city_files/Kettering/c3ef34_Public-Hearing-P.C.-22-005-Zoning-Map-Amendment-for-2001-E.-Dorothy-La",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2023/02/Public-Hearing-P.C.-22-024-Zoning-Map-Amendment-2025-2062-E.-Dorothy-Lane.pdf",
+    "text": "Public Hearing P.C. 22 024 Zoning Map Amendment 2025 2062 E. Dorothy Lane",
+    "file": "data/city_files/Kettering/d46248_Public-Hearing-P.C.-22-024-Zoning-Map-Amendment-2025-2062-E.-Dorothy-L",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2023/10/P.C.-23-018-Zoning-Map-Amendment-1490-W.-Dorothy-Lane.pdf",
+    "text": "P.C. 23 018 Zoning Map Amendment 1490 W. Dorothy Lane",
+    "file": "data/city_files/Kettering/0eb18b_P.C.-23-018-Zoning-Map-Amendment-1490-W.-Dorothy-Lane.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/2024/11/Public-Hearing-P.C.-23-012-Zoning-Map-Amendment-Clearer-Criteria-on-requests-to-change-Pattern-District-Classifications-new-date.pdf",
+    "text": "Public Hearing P.C. 23 012 Zoning Map Amendment Clearer Criteria On Requests To Change Pattern District Classifications ",
+    "file": "data/city_files/Kettering/e298f0_Public-Hearing-P.C.-23-012-Zoning-Map-Amendment-Clearer-Criteria-on-re",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/2026/05/50dbde64-pc-26-010-zoning-code-map-amendment.pdf",
+    "text": "PC 26 010 ZONING CODE MAP AMENDMENT",
+    "file": "data/city_files/Kettering/f240e1_50dbde64-pc-26-010-zoning-code-map-amendment.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/2026/05/7125dab9-pc-26-013-zoning-text-amendment-historic-markers.pdf",
+    "text": "PC 26 013 ZONING TEXT AMENDMENT (historic Markers)",
+    "file": "data/city_files/Kettering/cb971d_7125dab9-pc-26-013-zoning-text-amendment-historic-markers.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2017/08/Leaf-Pick-up-Vicinity-Map-7-23-15.pdf",
+    "text": "Download",
+    "file": "data/city_files/Kettering/0eb124_Leaf-Pick-up-Vicinity-Map-7-23-15.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/ketteringoh/uploads/2018/10/Part-Four-Chapter-406-Traffic-Control-Map-and-Files.pdf",
+    "text": "Download",
+    "file": "data/city_files/Kettering/e9cc9b_Part-Four-Chapter-406-Traffic-Control-Map-and-Files.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=5852ea902db44e55bfce395799315f9c": "flood map changes viewer"
+  }
+ },
+ "Southaven": {
+  "files": [],
+  "portals": {
+   "https://dcms-gis.maps.arcgis.com/apps/webappviewer/index.html?id=ee2757887447432085317c42f7932af9": "Interactive Desoto County map with Municipal Wards with Polling Place Information"
+  }
+ },
+ "9 de Julio Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Chesterfield": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/e0c1231a2ed4490d87ceacc0e7b6b589": "Interactive Chesterfield Map"
+  }
+ },
+ "Rancho Santa Margarita": {
+  "files": [],
+  "portals": {
+   "https://urldefense.proofpoint.com/v2/url?u=https-3A__rsmgis.maps.arcgis.com_apps_instant_sidebar_index.html-3Fappid-3D74fd664b73a846548057fd1453016ed6&d=DwMF-g&c=euGZstcaTDllvimEN8b7jXrwqOf-v5A_CdpgnVfiiMM&r=wIwRtut8_Jn9VWksbvtMY7oYi-IbFRN4quxx1eSWQwU&m=cLJUG6uEKI0R9yRssoEHJ8vtZGI82zMK5GEEhYD7q6vQMwPDLz20rR4PU-6eTvql&s=wLzElj-i3yEqpO0ybRW7Q_KT_FLv4_cc7jO-kence2o&e=": "Voting District Lookup Tool",
+   "https://ocpw.maps.arcgis.com/apps/instant/lookup/index.html?appid=8d95dff0344242a78725ffcba3d01da3": "County of Orange Road Fee Programs",
+   "https://experience.arcgis.com/experience/e36a570db4d7423f95cf0c4eae3ba4b8": "",
+   "https://experience.arcgis.com/experience/6a9cb66bb1824cd98756812af41292a0": "Interactive Map Viewer"
+  }
+ },
+ "Keller": {
+  "files": [],
+  "portals": {}
+ },
+ "Goya": {
+  "files": [],
+  "portals": {}
+ },
+ "Maplewood": {
+  "files": [],
+  "portals": {}
+ },
+ "Findlay": {
+  "files": [],
+  "portals": {}
+ },
+ "Cottage Grove": {
+  "files": [],
+  "portals": {}
+ },
+ "Pathanamthitta Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Beloit": {
+  "files": [
+   {
+    "url": "https://beloitwi.gov/vertical/sites/%7B662E25CC-A6A0-4B38-B151-A18A081D6A0A%7D/uploads/Downtown_Beloit_Parking_and_Ammenities_Map.pdf",
+    "text": "Downtown Parking and Amenities Map",
+    "file": "data/city_files/Beloit/cd697b_Downtown_Beloit_Parking_and_Ammenities_Map.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://beloitwi.gov/vertical/sites/%7B662E25CC-A6A0-4B38-B151-A18A081D6A0A%7D/uploads/Parking_Map.pdf",
+    "text": "On Street and Off Street Parking Inventory (updated 2017)",
+    "file": "data/city_files/Beloit/afc33d_Parking_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.beloitwi.gov/vertical/sites/%7B662E25CC-A6A0-4B38-B151-A18A081D6A0A%7D/uploads/Downtown_Beloit_Parking_and_Ammenities_Map.pdf",
+    "text": "Downtown Parking and Amenities Map",
+    "file": "data/city_files/Beloit/6b2b26_Downtown_Beloit_Parking_and_Ammenities_Map.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.beloitwi.gov/vertical/sites/%7B662E25CC-A6A0-4B38-B151-A18A081D6A0A%7D/uploads/Parking_Map.pdf",
+    "text": "On Street and Off Street Parking Inventory (updated 2017)",
+    "file": "data/city_files/Beloit/1ef864_Parking_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Springville": {
+  "files": [],
+  "portals": {
+   "https://springville-ut-general-plan-hlplanning.hub.arcgis.com/": "General Plan",
+   "https://springville.org/opendata": "",
+   "https://springville.org/open-data": ""
+  }
+ },
+ "Socorro": {
+  "files": [],
+  "portals": {}
+ },
+ "Des Moines": {
+  "files": [],
+  "portals": {}
+ },
+ "Allen": {
+  "files": [],
+  "portals": {}
+ },
+ "Santa Paula": {
+  "files": [],
+  "portals": {}
+ },
+ "Schererville": {
+  "files": [],
+  "portals": {}
+ },
+ "Casselberry": {
+  "files": [],
+  "portals": {
+   "https://seminolegis.maps.arcgis.com/apps/GeoForm/index.html?appid=4ca1f215dec541e6b3dd8725518fa736": "Mosquito Spraying Request"
+  }
+ }
+}
