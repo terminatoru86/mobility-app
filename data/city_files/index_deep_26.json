@@ -1,0 +1,1874 @@
+{
+ "Corpus Christi TX": {
+  "files": [
+   {
+    "url": "https://www.corpuschristitx.gov/media/bx3amnem/north-beach-development-plan-map.pdf",
+    "text": "North Beach Development Plan Map (2011)",
+    "file": "data/city_files/Corpus_Christi_TX/9fc8d5_north-beach-development-plan-map.pdf",
+    "rows": 28,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/xmqnk22c/northwest-boulevard-fm-624-corridor-plan-2021.pdf",
+    "text": "Northwest Boulevard Corridor Plan (2021)",
+    "file": "data/city_files/Corpus_Christi_TX/3d74b0_northwest-boulevard-fm-624-corridor-plan-2021.pdf",
+    "rows": 160,
+    "bike_rows": 23
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/ugjjhm5n/northwest-boulevard-fm-624-corridor-plan-appendix.pdf",
+    "text": "Northwest Boulevard Corridor Plan Appendix (2021)",
+    "file": "data/city_files/Corpus_Christi_TX/fbf680_northwest-boulevard-fm-624-corridor-plan-appendix.pdf",
+    "rows": 199,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/1qqknkfq/historic-preservation-plan-2021.pdf",
+    "text": "Historic Preservation Plan (2021)",
+    "file": "data/city_files/Corpus_Christi_TX/a14095_historic-preservation-plan-2021.pdf",
+    "rows": 152,
+    "bike_rows": 57
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/mzsprlfn/pard-kris-tv6-story-082226_historic-heritage-park.pdf",
+    "text": "Historic Heritage Park, KRIS report on 8-22-2026",
+    "file": "data/city_files/Corpus_Christi_TX/76dd8a_pard-kris-tv6-story-082226_historic-heritage-park.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/boqe513v/map-of-heritage-park.pdf",
+    "text": "» Heritage Park Map",
+    "file": "data/city_files/Corpus_Christi_TX/729ffa_map-of-heritage-park.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/faaljsma/heritage-park-history.pdf",
+    "text": "» Heritage Park Printable History",
+    "file": "data/city_files/Corpus_Christi_TX/447f6b_heritage-park-history.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/3l1dobwu/bayfront-art-tour-brochure.pdf",
+    "text": "Bayfront Art Brochure and Map Print your own copy of this tour and head to the Bayfront to see Corpus Christi's public a",
+    "file": "data/city_files/Corpus_Christi_TX/e6c346_bayfront-art-tour-brochure.pdf",
+    "rows": 23,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/xt3daf5y/flood-flood-map-update-brochure.pdf",
+    "text": "Flood Map Update Brochure",
+    "file": "data/city_files/Corpus_Christi_TX/ed9584_flood-flood-map-update-brochure.pdf",
+    "rows": 20,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/sjxppur4/historic-preservation-plan.pdf",
+    "text": "Historic Preservation Plan",
+    "file": "data/city_files/Corpus_Christi_TX/f82a89_historic-preservation-plan.pdf",
+    "rows": 152,
+    "bike_rows": 57
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/eldbtrg0/firdep-evacuation-zone-map.pdf",
+    "text": "» Evacuation Zone Map",
+    "file": "data/city_files/Corpus_Christi_TX/2a67e8_firdep-evacuation-zone-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/qptlzgh3/firdep-state-evacuation-route-map.pdf",
+    "text": "» State Evacuation Route Map",
+    "file": "data/city_files/Corpus_Christi_TX/84a0da_firdep-state-evacuation-route-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/1blm3air/permit-map-guide-gulf-beaches.pdf",
+    "text": "Permit Map and Guide",
+    "file": "data/city_files/Corpus_Christi_TX/23ce96_permit-map-guide-gulf-beaches.pdf",
+    "rows": 27,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/v5cjf15m/sunrise-beach-map-of-campground.pdf",
+    "text": "Map of Campground",
+    "file": "data/city_files/Corpus_Christi_TX/421732_sunrise-beach-map-of-campground.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/is4fyxyx/pard-beach-park-vender-maps-fall-2026-winter2027.pdf",
+    "text": "City Beach and Park Vendor Site Maps",
+    "file": "data/city_files/Corpus_Christi_TX/6cee4e_pard-beach-park-vender-maps-fall-2026-winter2027.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/p05h4nte/springbreak-city-map.pdf",
+    "text": "City Map (PDF)",
+    "file": "data/city_files/Corpus_Christi_TX/9bf144_springbreak-city-map.pdf",
+    "rows": 13,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/ax2jfr4h/springbreak-downtown-map.pdf",
+    "text": "Downtown Map (PDF)",
+    "file": "data/city_files/Corpus_Christi_TX/005caa_springbreak-downtown-map.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/b1jd2cx5/springbreak-island-map.pdf",
+    "text": "Island Map (PDF)",
+    "file": "data/city_files/Corpus_Christi_TX/ed88ed_springbreak-island-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/jk0idp5m/oso-creek-bay-greenway-belt-park.pdf",
+    "text": "Oso Creek – Oso Bay Green Belt Parks, & Trail System Master Plan",
+    "file": "data/city_files/Corpus_Christi_TX/b897c8_oso-creek-bay-greenway-belt-park.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/bstb1lbj/oogie-boogie-fest-2026_event-map.pdf",
+    "text": "» Event Map",
+    "file": "data/city_files/Corpus_Christi_TX/92c0fd_oogie-boogie-fest-2026_event-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/uxol5w1o/oogie-boogie-fest-2026_ada-parking.pdf",
+    "text": "» ADA Parking Map",
+    "file": "data/city_files/Corpus_Christi_TX/d30b4e_oogie-boogie-fest-2026_ada-parking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/vwkpaafk/oogie-boogie-fest-2026_park-and-ride.pdf",
+    "text": "» Park & Ride Map",
+    "file": "data/city_files/Corpus_Christi_TX/a26672_oogie-boogie-fest-2026_park-and-ride.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/rhkmdgxp/pard-helpful-tips-to-use-this-interactive-map_r2_061826.pdf",
+    "text": "Helpful Tips to Use this Interactive Map",
+    "file": "data/city_files/Corpus_Christi_TX/4789d0_pard-helpful-tips-to-use-this-interactive-map_r2_061826.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/kxipa51q/bear-creek-hike-n-bike-trail-map-15.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Corpus_Christi_TX/c9e472_bear-creek-hike-n-bike-trail-map-15.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/ts5ah14o/baytrail-brochure.pdf",
+    "text": "Brochure",
+    "file": "data/city_files/Corpus_Christi_TX/331085_baytrail-brochure.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/zjdhignf/schanen-hike-n-bike-trail-map-15.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Corpus_Christi_TX/6a3239_schanen-hike-n-bike-trail-map-15.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/vskjiqgb/oso-bay-wetlands-map.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Corpus_Christi_TX/c96b69_oso-bay-wetlands-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/misdakcn/prr-obwp-map-final-rev012425.pdf",
+    "text": "Preserve Map",
+    "file": "data/city_files/Corpus_Christi_TX/93de0e_prr-obwp-map-final-rev012425.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/gouox541/obwp-pokemon-map.pdf",
+    "text": "Pokémon GO Map",
+    "file": "data/city_files/Corpus_Christi_TX/873872_obwp-pokemon-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/jlnpg53c/safe-fun-fit-at-the-bayfront-map.pdf",
+    "text": "Printable Map From The Water’s Edge to the barge dock entrance",
+    "file": "data/city_files/Corpus_Christi_TX/ab6a1a_safe-fun-fit-at-the-bayfront-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/ysmd1nmq/rpp-2027-2031_residential-map_final-1.pdf",
+    "text": "RPP Projects Map",
+    "file": "data/city_files/Corpus_Christi_TX/b74565_rpp-2027-2031_residential-map_final-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/lcngz3h1/srmwat-the-trash-trail.pdf",
+    "text": "» Poster – The Trash Trail",
+    "file": "data/city_files/Corpus_Christi_TX/c992c3_srmwat-the-trash-trail.pdf",
+    "rows": 13,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.corpuschristitx.gov/media/ebnh4dri/srmwat-authorized-discharge-ms4.pdf",
+    "text": "» Procedures for Authorized Discharge of Groundwater to the City of Corpus Christi MS4",
+    "file": "data/city_files/Corpus_Christi_TX/f93715_srmwat-authorized-discharge-ms4.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://corpus.maps.arcgis.com/apps/dashboards/805a30fa71304195bc45b36529bf40b3": "Stage 1 Watering Schedule & Water Data",
+   "https://storymaps.arcgis.com/stories/23325ece856a4baea0548f892844e90b": "Landmark Commission Web Viewer",
+   "https://corpuschristitx.gov/department-directory/police-department/police-open-data/": "Police Open Data",
+   "https://corpus.maps.arcgis.com/apps/instant/lookup/index.html?appid=2b925f72e494448297d37913f7c5bb11": "Interactive Map",
+   "https://www.corpuschristitx.gov/department-directory/police-department/police-open-data/": "Police Open Data",
+   "https://corpus.maps.arcgis.com/apps/webappviewer/index.html?id=364701d357474326839d4099aa526473": "Corpus Christi Viewer",
+   "https://experience.arcgis.com/experience/74f078c6e8264d12a1d8e5f7b00c74fd/page/Home/": "Strategic Plan for Active Mobility",
+   "https://gis-corpus.opendata.arcgis.com/": "Open Data Website",
+   "https://corpus.maps.arcgis.com/apps/dashboards/dd1ac6b28e3d4140bbbf949d8dfd8cbe": "CCPD Crime Dash Zoom to your area to see recent crimes and crime descriptions.",
+   "https://corpus.maps.arcgis.com/apps/webappviewer/index.html?id=815b4411776d498e9d6d98ed5ae80596": "RPP Interactive Map",
+   "https://corpus.maps.arcgis.com/apps/webappviewer/index.html?id=0bf1783e414d4ba8bba03fb10e8bc225": "» GIS Interactive Storm Water Fee Map"
+  }
+ },
+ "Sioux Falls SD": {
+  "files": [
+   {
+    "url": "https://siouxfalls.gov/files/assets/public/v/1/zactivities-and-recreation/documents/2022-bicycle-route-map.pdf",
+    "text": "2022 Bicycle Route Map",
+    "file": "data/city_files/Sioux_Falls_SD/e749d7_2022-bicycle-route-map.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://siouxfalls.gov/files/assets/public/v/2/resident-services/street-services/parking/pp25_003-downtown-visitor-map.pdf",
+    "text": "Downtown Parking Map (PDF)",
+    "file": "data/city_files/Sioux_Falls_SD/66fb59_pp25_003-downtown-visitor-map.pdf",
+    "rows": 29,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/2/city-government/boards-amp-commissions/public-transit-advisory-board/annual-reports/2024-ptab-annual-report-summary.pdf",
+    "text": "2024 PTAB Annual Report Summary",
+    "file": "data/city_files/Sioux_Falls_SD/dd642d_2024-ptab-annual-report-summary.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/public-transit-advisory-board/annual-reports/2022-annual-report-final.pdf",
+    "text": "2022 PTAB Annual Report",
+    "file": "data/city_files/Sioux_Falls_SD/e5d812_2022-annual-report-final.pdf",
+    "rows": 75,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/public-transit-advisory-board/annual-reports/2021-ptab-annual-rpt.pdf",
+    "text": "2021 PTAB Annual Report",
+    "file": "data/city_files/Sioux_Falls_SD/7410fd_2021-ptab-annual-rpt.pdf",
+    "rows": 78,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/public-transit-advisory-board/annual-reports/2020-ptab-annual-report.pdf",
+    "text": "2020 PTAB Annual Report",
+    "file": "data/city_files/Sioux_Falls_SD/6eca01_2020-ptab-annual-report.pdf",
+    "rows": 82,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/public-transit-advisory-board/res_101_76-pdf.pdf",
+    "text": "Resolution No. 101-76",
+    "file": "data/city_files/Sioux_Falls_SD/6b1799_res_101_76-pdf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/public-transit-advisory-board/2022-tdp-final.pdf",
+    "text": "Transit Development Plan",
+    "file": "data/city_files/Sioux_Falls_SD/41c619_2022-tdp-final.pdf",
+    "rows": 326,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/public-transit-advisory-board/remaking-transit-in-sf-cc-informational.pdf",
+    "text": "Remaking Transit in Sioux Falls - City Council Informational",
+    "file": "data/city_files/Sioux_Falls_SD/b153bb_remaking-transit-in-sf-cc-informational.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/public-transit-advisory-board/163.pdf",
+    "text": "Executive Order 163: Process for Public Comment Prior to Fare Changes or Major Reductions in Service",
+    "file": "data/city_files/Sioux_Falls_SD/5d84c9_163.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/public-transit-advisory-board/on-board-survey-18.pdf",
+    "text": "2018 On Board Survey",
+    "file": "data/city_files/Sioux_Falls_SD/b69268_on-board-survey-18.pdf",
+    "rows": 67,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/public-transit-advisory-board/innovation-team-outcomes-aug-2020.pdf",
+    "text": "Innovation Team Outcomes - Aug 2020",
+    "file": "data/city_files/Sioux_Falls_SD/c7a0c5_innovation-team-outcomes-aug-2020.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/public-transit-advisory-board/sam-building-study-final_122018_reduced.pdf",
+    "text": "Sioux Area Metro Renovation Study (2019)",
+    "file": "data/city_files/Sioux_Falls_SD/f1129f_sam-building-study-final_122018_reduced.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/public-transit-advisory-board/sioux-falls-sam-reimagined-planning-summary-report_v2reduced.pdf",
+    "text": "Sioux Falls - SAM Reimagined Planning Summary Report (2025)",
+    "file": "data/city_files/Sioux_Falls_SD/02f4bf_sioux-falls-sam-reimagined-planning-summary-report_v2reduced.pdf",
+    "rows": 114,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/2/resident-services/street-services/parking/pp25_003-downtown-visitor-map.pdf",
+    "text": "Downtown Parking Map (PDF)",
+    "file": "data/city_files/Sioux_Falls_SD/973f20_pp25_003-downtown-visitor-map.pdf",
+    "rows": 29,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/zresident-services/parking-and-street-services/documents/visitor-map.pdf",
+    "text": "use our map",
+    "file": "data/city_files/Sioux_Falls_SD/963a6a_visitor-map.pdf",
+    "rows": 35,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/planning-and-development/parking-amp-street-services/street-construction/2026-current-street-projects.pdf",
+    "text": "Capital Improvement Projects Map",
+    "file": "data/city_files/Sioux_Falls_SD/7ddc81_2026-current-street-projects.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/planning-and-development/parking-amp-street-services/street-construction/sioux-falls-mpo-2025-2028-tip.pdf",
+    "text": "2025-2028 MPO TIP Improvements",
+    "file": "data/city_files/Sioux_Falls_SD/67e089_sioux-falls-mpo-2025-2028-tip.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/board-of-historic-preservation/standards-for-new-construction-rehab.pdf",
+    "text": "Secretary of Interior Standards for New Construction and Rehabilitation",
+    "file": "data/city_files/Sioux_Falls_SD/ce52e0_standards-for-new-construction-rehab.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/board-of-historic-preservation/1e25118-bohp_app.pdf",
+    "text": "Property Application to the Sioux Falls Board of Historic Preservation",
+    "file": "data/city_files/Sioux_Falls_SD/d6ab45_1e25118-bohp_app.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/board-of-historic-preservation/bohp-scavenger-hunt2016.pdf",
+    "text": "BOHP Scavenger Hunt 2016",
+    "file": "data/city_files/Sioux_Falls_SD/76b81a_bohp-scavenger-hunt2016.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/board-of-historic-preservation/bylaws-2018.pdf",
+    "text": "By-Laws",
+    "file": "data/city_files/Sioux_Falls_SD/b30528_bylaws-2018.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/board-of-historic-preservation/mckennan-park-historic-district-expansion-2025.pdf",
+    "text": "McKennan Park Historic District Expansion",
+    "file": "data/city_files/Sioux_Falls_SD/f6b9fc_mckennan-park-historic-district-expansion-2025.pdf",
+    "rows": 27,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/board-of-historic-preservation/wallace-dow-historic-preserv.pdf",
+    "text": "Wallace Dow Brochure",
+    "file": "data/city_files/Sioux_Falls_SD/471c55_wallace-dow-historic-preserv.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/board-of-historic-preservation/funding_opportunities_brochure.pdf",
+    "text": "Funding Opportunity Brochure",
+    "file": "data/city_files/Sioux_Falls_SD/2dec44_funding_opportunities_brochure.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/board-of-historic-preservation/hud_203k_flyer.pdf",
+    "text": "HUD Section 203(k) Loan Program",
+    "file": "data/city_files/Sioux_Falls_SD/896e32_hud_203k_flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/board-of-historic-preservation/10_ways_to_weatherize_your_historic_home.pdf",
+    "text": "10 Ways to Weatherize Your Historic Home",
+    "file": "data/city_files/Sioux_Falls_SD/5b23a8_10_ways_to_weatherize_your_historic_home.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/board-of-historic-preservation/historic-landscapes.pdf",
+    "text": "Historic Landscapes for Residential Properties",
+    "file": "data/city_files/Sioux_Falls_SD/1abc08_historic-landscapes.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/city-government/boards-amp-commissions/board-of-historic-preservation/grocery-store-survey-sf.pdf",
+    "text": "Grocery Store Survey Sioux Falls 1900-1950",
+    "file": "data/city_files/Sioux_Falls_SD/acf1bb_grocery-store-survey-sf.pdf",
+    "rows": 125,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/resident-services/sam/forms/transit-title-vi-and-ada-complaint-form.pdf",
+    "text": "Transit Title VI and ADA Complaint Form",
+    "file": "data/city_files/Sioux_Falls_SD/74e36e_transit-title-vi-and-ada-complaint-form.pdf",
+    "rows": 28,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/resident-services/sam/forms/transit-title-vi-and-ada-complaint-form-spanish.pdf",
+    "text": "Transit Title VI and ADA Complaint Form Spanish",
+    "file": "data/city_files/Sioux_Falls_SD/0806e2_transit-title-vi-and-ada-complaint-form-spanish.pdf",
+    "rows": 29,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/2/resident-services/sam/2025-paratransit-riders-guide.pdf",
+    "text": "Paratransit Riders Guide",
+    "file": "data/city_files/Sioux_Falls_SD/0ac0e4_2025-paratransit-riders-guide.pdf",
+    "rows": 36,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/planning-and-development/parking-amp-street-services/street-construction/2026/south/sesb_hw106/southeast-basins-phasings-draft.pdf",
+    "text": "Southeast Basins Phasing",
+    "file": "data/city_files/Sioux_Falls_SD/1455b4_southeast-basins-phasings-draft.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/business-and-permits/planning-amp-development/future-planning/bicycle/bicycle-plan-2023.pdf",
+    "text": "Bicycle Plan",
+    "file": "data/city_files/Sioux_Falls_SD/2766ec_bicycle-plan-2023.pdf",
+    "rows": 370,
+    "bike_rows": 86
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/zresident-services/parking-and-street-services/documents/street-tree-brochure.pdf",
+    "text": "Street Tree Guide",
+    "file": "data/city_files/Sioux_Falls_SD/a5a582_street-tree-brochure.pdf",
+    "rows": 29,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/2/business-and-permits/ordinances/homeowner-construction/accessory-structure-2025.pdf",
+    "text": "Download a PDF of the Accessory Structures & Detached Garages Reference Guide",
+    "file": "data/city_files/Sioux_Falls_SD/82920e_accessory-structure-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/business-and-permits/real-estate/parking-structure/parking-structure-spec-sheet.pdf",
+    "text": "View Spec Sheet",
+    "file": "data/city_files/Sioux_Falls_SD/09c4cc_parking-structure-spec-sheet.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.siouxfalls.gov/files/assets/public/v/1/business-and-permits/real-estate/parking-structure/negotiated-sale-process140-e-10th-st.pdf",
+    "text": "Negotiated Sale Process",
+    "file": "data/city_files/Sioux_Falls_SD/00a5f0_negotiated-sale-process140-e-10th-st.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cityofsfgis.maps.arcgis.com/apps/dashboards/5f566b853d5c40b98988275d3c45492d": "park finder map",
+   "https://storymaps.arcgis.com/stories/3895c14e2816420ebfbae64ff0f7cb61": "Storm Drain Art Project",
+   "https://storymaps.arcgis.com/stories/3d782788afd546938c82d2b68eb925c6?dt=1700004552147": "City Owned Art",
+   "https://experience.arcgis.com/experience/ee0fc8820a484ab28a02a6e4b0fdc4b1/page/Find-Your-Snow-Zone": "based on zone",
+   "https://experience.arcgis.com/experience/3de0ec5860274821bd81edf34fd6efd1": "View Map in New Window",
+   "https://www.siouxfalls.gov/resident-services/parking-street-services/traffic-counts/open-data-portal": "Open Data Portal",
+   "https://cityofsfgis.maps.arcgis.com/apps/dashboards/6298f67b54c44feb9f431b9625f27d5f": "Pavement Condition Map",
+   "https://experience.arcgis.com/experience/853d21fbaa8645f1baa1262dd11d5a47": "Utility Mapping",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd": "CHECK YOUR ADDRESS",
+   "https://experience.arcgis.com/experience/15db12ab603a466abf33e87da4648267": "Annexation Viewer",
+   "https://cityofsfgis.maps.arcgis.com/apps/webappviewer/index.html?id=324fff57b0d64e6b84618a14641d0183": "Arrowhead Park Hiking Trails App",
+   "https://experience.arcgis.com/experience/3de0ec5860274821bd81edf34fd6efd1/page/Slurry-Seal-Program/": "PROJECT STATUS MAP",
+   "https://experience.arcgis.com/experience/d65d2578fbe3425cb1d1981568af9728": "View the map in a new window",
+   "https://experience.arcgis.com/experience/3de0ec5860274821bd81edf34fd6efd1/page/Overlay-Program/%20class=": "ASPHALT MILL & OVERLAY STATUS DASHBOARD",
+   "https://experience.arcgis.com/experience/6dc6ababcb8643cdabe19c57a61e1567": "PATH School Safe Routes interactive map",
+   "https://experience.arcgis.com/experience/14c5cafefb634e7e95c55a1244ea15d3": "Track street sweeping progress",
+   "https://experience.arcgis.com/experience/78f4bf7012f54d92b6b33b631b4e854e/": "Address Search",
+   "https://storymaps.arcgis.com/stories/b33eee6564cc41a0a99067c141202b87": "Sidewalk Network Inventory and Assessment",
+   "https://cityofsfgis.maps.arcgis.com/home/webmap/viewer.html?webmap=c9b5a628be2248df8d37829c6d65f483": "Explore Sioux Falls' Bicycle Route Map"
+  }
+ },
+ "Muratpaşa": {
+  "files": [],
+  "portals": {}
+ },
+ "Toroslar": {
+  "files": [],
+  "portals": {}
+ },
+ "Amarillo": {
+  "files": [
+   {
+    "url": "https://amarillo.gov/wp-content/uploads/2026/10/Rezoning-2026-270-Z-I-40-Loop-335-Helium-Road.pdf",
+    "text": "Rezoning 2026-270-Z (I-40 & Loop 335 (Helium Road)",
+    "file": "data/city_files/Amarillo/c3c0d8_Rezoning-2026-270-Z-I-40-Loop-335-Helium-Road.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/01/Departure-Timing-1-2025.pdf",
+    "text": "Amarillo City Transit Transfer Station Departure Times View scheduled bus departure times for all routes from the Amaril",
+    "file": "data/city_files/Amarillo/944212_Departure-Timing-1-2025.pdf",
+    "rows": 47,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/03/Amarillo-Transit-System-24x36-2025.pdf",
+    "text": "City of Amarillo Interactive Planning Map The City of Amarillo’s Planning Department Interactive Map is a public tool of",
+    "file": "data/city_files/Amarillo/d62921_Amarillo-Transit-System-24x36-2025.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2024/09/Transit-Riders-Guide.pdf",
+    "text": "Amarillo City Transit Riders Guide The Amarillo City Transit Riders Guide provides you with information about Amarillo T",
+    "file": "data/city_files/Amarillo/313496_Transit-Riders-Guide.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/03/RT11_updated.pdf",
+    "text": "Route 11",
+    "file": "data/city_files/Amarillo/bdb406_RT11_updated.pdf",
+    "rows": 32,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2026/04/ACT-Route-12-Updated-4-2026.pdf",
+    "text": "Route 12",
+    "file": "data/city_files/Amarillo/a9c7cc_ACT-Route-12-Updated-4-2026.pdf",
+    "rows": 29,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/03/RT13_updated.pdf",
+    "text": "Route 13",
+    "file": "data/city_files/Amarillo/2ea383_RT13_updated.pdf",
+    "rows": 24,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/03/RT21_updated.pdf",
+    "text": "Route 21",
+    "file": "data/city_files/Amarillo/32ded3_RT21_updated.pdf",
+    "rows": 30,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2026/04/Route-22-4-2026.pdf",
+    "text": "Route 22",
+    "file": "data/city_files/Amarillo/e93d84_Route-22-4-2026.pdf",
+    "rows": 29,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2026/02/RT-23-updated-2-26-26.pdf",
+    "text": "Route 23",
+    "file": "data/city_files/Amarillo/0a617a_RT-23-updated-2-26-26.pdf",
+    "rows": 25,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2026/02/RT-2223-updated-2-26-26.pdf",
+    "text": "Routes 22 & 23 Saturday",
+    "file": "data/city_files/Amarillo/06cb7b_RT-2223-updated-2-26-26.pdf",
+    "rows": 30,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/04/RT30-4-2-25.pdf",
+    "text": "Route 30",
+    "file": "data/city_files/Amarillo/540c5c_RT30-4-2-25.pdf",
+    "rows": 25,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/03/RT31_updated.pdf",
+    "text": "Route 31",
+    "file": "data/city_files/Amarillo/2c0084_RT31_updated.pdf",
+    "rows": 29,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/03/RT4142_updated.pdf",
+    "text": "Route 4142",
+    "file": "data/city_files/Amarillo/c272b3_RT4142_updated.pdf",
+    "rows": 35,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/03/RT43_updated.pdf",
+    "text": "Route 43",
+    "file": "data/city_files/Amarillo/b58a8f_RT43_updated.pdf",
+    "rows": 41,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2026/07/Route-44-7-2026.pdf",
+    "text": "Route 44",
+    "file": "data/city_files/Amarillo/24ec55_Route-44-7-2026.pdf",
+    "rows": 29,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.fhwa.dot.gov/planning/national_highway_system/nhs_maps/texas/amarillo_tx.pdf",
+    "text": "Federal Highway Administration (FHWA) The Federal Highway Administration (FHWA) provides stewardship over the constructi",
+    "file": "data/city_files/Amarillo/94dc6e_amarillo_tx.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/07/Metropolitan-Transportation-Plan-Hike-and-Bike-Trail-Map-7-2025.pdf",
+    "text": "Bike Routes Explore Amarillo’s bike routes and access maps for local cycling paths.",
+    "file": "data/city_files/Amarillo/25fa83_Metropolitan-Transportation-Plan-Hike-and-Bike-Trail-Map-7-2025.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2024/10/Repair-Modification-Document-EH.pdf",
+    "text": "recreational water repair/modification document",
+    "file": "data/city_files/Amarillo/6c7178_Repair-Modification-Document-EH.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2024/08/DP-manual-6424.pdf",
+    "text": "driveway & parking requirements",
+    "file": "data/city_files/Amarillo/3d1c51_DP-manual-6424.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2026/09/ACCC-Parking-Map.pdf",
+    "text": "View our parking map",
+    "file": "data/city_files/Amarillo/770a6c_ACCC-Parking-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2026/09/Venue-Map.pdf",
+    "text": "View our venue map",
+    "file": "data/city_files/Amarillo/8ad2be_Venue-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/10/Accessible-Parking-Checklist.pdf",
+    "text": "Accessible Parking Checklist",
+    "file": "data/city_files/Amarillo/730852_Accessible-Parking-Checklist.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2025/10/ADA-Parking-Compliance-Graphic.pdf",
+    "text": "ADA Parking Compliance Guidelines for Spaces",
+    "file": "data/city_files/Amarillo/8d527a_ADA-Parking-Compliance-Graphic.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.amarillo.gov/wp-content/uploads/2025/10/Accessible-Parking-Checklist.pdf",
+    "text": "Accessible Parking Checklist",
+    "file": "data/city_files/Amarillo/bc0bbd_Accessible-Parking-Checklist.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.amarillo.gov/wp-content/uploads/2025/10/ADA-Parking-Compliance-Graphic.pdf",
+    "text": "ADA Parking Compliance Guidelines for Spaces",
+    "file": "data/city_files/Amarillo/959cd9_ADA-Parking-Compliance-Graphic.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://amarillo.maps.arcgis.com/apps/webappviewer/index.html?id=e9f4c89d32f44dd68785a6d60e6ee092": "City of Amarillo Tax Parcel Map PRAD Data (Potter Randall Appraisal District): Offers detailed information on individual",
+   "https://experience.arcgis.com/experience/e07010ade17c4d1fac70fea3e5cd0ce6/": "City of Amarillo Planning Map A general GIS (Geographic Information System) Planning Map is a valuable tool used in urba",
+   "https://amarillo.maps.arcgis.com/apps/webappviewer/index.html?id=6fcaef1b21954310bed7a801b1fedbe2": "City of Amarillo Underground Utilities map The Underground Utilities Map of Amarillo provides detailed information about",
+   "https://experience.arcgis.com/experience/b4d346e16a0d438591be9e33f0ff2004/": "City of Amarillo Neighborhood Planning Area Map This map provides a strategic overview of economic development opportuni",
+   "https://experience.arcgis.com/experience/c439b1ace8a141649b417aaa7b1e8a48/": "City of Amarillo Economic Development Map This map provides a strategic overview of economic development opportunities i",
+   "https://experience.arcgis.com/experience/2c6a99c0d0204271b63be9b2e5d20b74/": "City of Amarillo Onsite Sewage Facilities Map This map offers a detailed and view of onsite sewage facilities in and aro",
+   "https://amarillo.maps.arcgis.com/apps/webappviewer/index.html?id=ae7694abe052439598e74ee2e638bffb": "City of Amarillo Pavement & Right of Way Map This is the City of Amarillo’s Pavement / ROW Mapping Application. The end ",
+   "https://amarillo.maps.arcgis.com/apps/MapJournal/index.html?appid=970267dac0074a298ea416b0a925e955": "Loop 335 Project Map​ TxDOT, in consultation with the Amarillo MPO and regional stakeholders, has initiated action to be",
+   "https://amarillo.maps.arcgis.com/apps/webappviewer/index.html?id=5b07d6fe74354c588554b1ec9f385ee3": "City Construction Projects The Amarillo City Construction Projects Dashboard offers real-time updates on infrastructure ",
+   "https://storymaps.arcgis.com/stories/64c0d26f5dca452593983596411b854c": "Find a Park",
+   "http://www.statutes.legis.state.tx.us/Docs/HS/htm/HS.341.htm": "Health and Safety Code Chapter 341 Minimum Standards of Sanitation and Health",
+   "http://www.statutes.legis.state.tx.us/Docs/HS/htm/HS.757.htm": "Health and Safety Code Chapter 757 Pool Yard Enclosures",
+   "https://survey123.arcgis.com/share/ecdda4d83e7d4ad2b77c5d8bf16788c1": "https://survey123.arcgis.com/share/ecdda4d83e7d4ad2b77c5d8bf16788c1",
+   "https://data.wastewaterscan.org/tracker?charts=CroBCjVTQVJTLUNvVi0yLCBOIEdlbmUgLSBhbGwgdmFyaWFudHMsIE11bHRpcGxlIExvY2F0aW9ucxAAGAAgASgAMAA4AEAASABSBjE5OTJmY1IGNjE5ODMxWgZOIEdlbmViBk4gR2VuZXgtggFCAg9Db2xsZWN0aW9uIERhdGUKL1F1YW50aXR5IG9mIFJOQSwgUE1Nb1YgTm9ybWFsaXplZCAgKHgxIG1pbGxpb24pigEGNGVkYjQzkAEA&selectedChartId=4edb43&compareTitle=": "Wastewater surveillance dashboard WastewaterSCAN is a national effort to spread a leading approach for monitoring diseas"
+  }
+ },
+ "Palmdale": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/6edf67c9fa5d4548815a4a8cc00468cb/": "ArcGIS",
+   "https://city-of-palmdale-geospatial-hub-cityofpalmdale.hub.arcgis.com/": "Mapping Palmdale",
+   "https://egis-lacounty.hub.arcgis.com/datasets/l-a-county-park-needs-assessment-results?geometry=-123.526%2C33.263%2C-113.072%2C34.856": "Park Need Assessment Results",
+   "https://lacounty.maps.arcgis.com/apps/opsdashboard/index.html": "",
+   "https://city-of-palmdale-geospatial-hub-cityofpalmdale.hub.arcgis.com/pages/termsofuse": "ArcGIS Geospatial Hub",
+   "https://storymaps.arcgis.com/stories/988a2a82be524316be713fdd6104d58c": ""
+  }
+ },
+ "West Valley City": {
+  "files": [],
+  "portals": {}
+ },
+ "Independence": {
+  "files": [
+   {
+    "url": "https://www.independencemo.gov/sites/default/files/2023-09/Historical%20Preservation-Certificate%20of%20Appropriateness%20Matrix.pdf",
+    "text": "Certificate of Appropriateness Matrix",
+    "file": "data/city_files/Independence/032b45_Historical_20Preservation-Certificate_20of_20Appropriateness_20Matrix.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.independencemo.gov/sites/default/files/2023-09/Historical%20Preservation-COA%20Process%20Flowchart.pdf",
+    "text": "Certificate of Appropriateness Process Flowchart",
+    "file": "data/city_files/Independence/bac16b_Historical_20Preservation-COA_20Process_20Flowchart.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.independencemo.gov/sites/default/files/2023-09/Historical%20Preservation-COA%20Economic%20Hardship%20Flowchart.pdf",
+    "text": "Certificate of Appropriateness Economic Hardship Flowchart",
+    "file": "data/city_files/Independence/742356_Historical_20Preservation-COA_20Economic_20Hardship_20Flowchart.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.independencemo.gov/sites/default/files/2023-09/Historic%20Preservation-Historic%20Designation%20Flowchart.pdf",
+    "text": "Historic Designation Flowchart",
+    "file": "data/city_files/Independence/4e8844_Historic_20Preservation-Historic_20Designation_20Flowchart.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://ridekc.org/assets/uploads/documents/RideKCFreedomApplication_Spanish.pdf",
+    "text": "Spanish",
+    "file": "data/city_files/Independence/381f13_RideKCFreedomApplication_Spanish.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.independencemo.gov/sites/default/files/2025-10/MS-Sidewalk%20Repair%20Infographics_3.pdf",
+    "text": "sidewalk repair checklist",
+    "file": "data/city_files/Independence/f195c1_MS-Sidewalk_20Repair_20Infographics_3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.independencemo.gov/sites/default/files/2024-04/5.7.24%20Heritage%20Commission%20agenda.pdf",
+    "text": "5/7/2024 - Agenda-meeting cancellation",
+    "file": "data/city_files/Independence/cd913a_5.7.24_20Heritage_20Commission_20agenda.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.independencemo.gov/sites/default/files/2024-03/4.2.24%20Heritage%20Commission%20agenda.pdf",
+    "text": "4/2/2024 - Agenda",
+    "file": "data/city_files/Independence/4e36c2_4.2.24_20Heritage_20Commission_20agenda.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.independencemo.gov/sites/default/files/2024-02/3.5.24%20Heritage%20Commission%20agenda.pdf",
+    "text": "3/5/2024 - Agenda-meeting cancellation",
+    "file": "data/city_files/Independence/b21308_3.5.24_20Heritage_20Commission_20agenda.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.independencemo.gov/sites/default/files/2024-01/2.6.24%20Heritage%20Commission%20agenda.pdf",
+    "text": "2/6/2024 - Agenda",
+    "file": "data/city_files/Independence/798da0_2.6.24_20Heritage_20Commission_20agenda.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.independencemo.gov/sites/default/files/2023-12/1.4.24%20Heritage%20Commission%20agenda_0.pdf",
+    "text": "1/4/2024 - Agenda",
+    "file": "data/city_files/Independence/536c4b_1.4.24_20Heritage_20Commission_20agenda_0.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.independencemo.gov/sites/default/files/2024-03/2.6.24-Heritage%20Commission%20minutes.pdf",
+    "text": "2/6/2024 - Minutes",
+    "file": "data/city_files/Independence/9fcda6_2.6.24-Heritage_20Commission_20minutes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=a85b79b417914a43b46362816834c892": "Annexations",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=72fe29f9a9d240238dacf9523cd6f252": "Census Tracts & Block Groups",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=5d2ed58cb1e048baa710d12eaea23cc6": "Code Compliance Officer Assignment Areas",
+   "https://independence.maps.arcgis.com/apps/OnePane/basicviewer/index.html?appid=c495cc8964534aa199daee24b72085ac": "Comprehensive Plan",
+   "https://independence.maps.arcgis.com/apps/Compare/storytelling_compare/index.html?appid=7f48b3a6483b4e269f1e8c52de84eaeb": "Congressional Districts",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=9e8d7af90327488cab462119727fca64": "Council Districts",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=dbb6b2b8a18e498490e2009a2ad79be9": "Enhanced Enterprise Zone",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=d90a63ba88154bfdacffa42e826d8585": "353 Tax Abatement Areas",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=21ff23097bbd4946a58ec2312e39cbdf": "Fire Stations & Districts",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=ff3d9b0834b04a51928fdf8cf79e3648": "Flood Zones",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=3b9428ba14034763bb73a86aad487e0c": "Generalized Street Map",
+   "https://independence.maps.arcgis.com/apps/OnePane/main/index.html?appid=def91369b8ff404f84b2329fa6cbe1b7": "Historic Districts",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=9f5342e1b54c47a6a35b1902b188aa10": "Neighborhood Councils",
+   "https://independence.maps.arcgis.com/apps/instant/basic/index.html?appid=e1b37693e61b467fa4cf192c374009c5": "Neighborhood Preservation Tax Credit Eligible Areas",
+   "https://mogov.maps.arcgis.com/apps/webappviewer/index.html?id=927f15b15e32461f9f97c2bb543f9ca4": "Opportunity Zones (Missouri)",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=d689f12d95b64fd8ae7cf030b4a183dd": "Park Locations",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=33a1f7f6d40946afb105d8c291c3c4d7": "Sales Tax Areas and Rates",
+   "https://independence.maps.arcgis.com/apps/mapviewer/index.html?webmap=afe43ad4ba9c4a7abb02869f43cd3131": "School Districts",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=215e445ed3f045f19d69893cbc0d635e": "TIF Districts",
+   "https://independence.maps.arcgis.com/apps/mapviewer/index.html?webmap=465aee1517b34768a850f06fd2627e30": "Tourist Sites",
+   "https://independence.maps.arcgis.com/apps/OnePane/basicviewer/index.html?appid=9b2420b628aa4a988b3fb22eccdee4d3": "Truck Routes",
+   "https://independence.maps.arcgis.com/apps/mapviewer/index.html?webmap=79e845c6f8ad4c8c9b302a4f0899e738": "Warning Sirens",
+   "https://independence.maps.arcgis.com/apps/mapviewer/index.html?webmap=cb1df9d777ab4c4c82f38e0334989a9a": "Watersheds",
+   "https://independence.maps.arcgis.com/apps/Panels/index.html?appid=99a55ea144c24082a86df6ad059efb3e": "Zip Codes",
+   "https://independence.maps.arcgis.com/apps/webappviewer/index.html?id=2ca319fa6de043be9a791ba648350760": "Zoning",
+   "https://independence.maps.arcgis.com/apps/MapJournal/index.html?appid=2d12d79040d141dcb88deb266751bbe0": "independencemo.gov/missouri-mormon-walking-trail",
+   "https://jcgis.jacksongov.org/parcelviewer/": "Jackson County property records",
+   "https://apps.indepmo.org/Apps/OpenData/contractorlicense": "list of contractors"
+  }
+ },
+ "Luján Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Wichita Falls": {
+  "files": [],
+  "portals": {}
+ },
+ "Asheville": {
+  "files": [
+   {
+    "url": "https://beta.ashevillenc.gov/wp-content/uploads/2018/12/Asheville-e-scooters-staff-report-and-City-Council-resolution.pdf",
+    "text": "Asheville e-scooters staff report and City Council resolution",
+    "file": "data/city_files/Asheville/2fb0b9_Asheville-e-scooters-staff-report-and-City-Council-resolution.pdf",
+    "rows": 37,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://beta.ashevillenc.gov/wp-content/uploads/2018/10/E-Scooter-Temporary-Restraining-Order.pdf",
+    "text": "E-Scooter Temporary Restraining Order",
+    "file": "data/city_files/Asheville/a877fe_E-Scooter-Temporary-Restraining-Order.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.ashevillenc.gov/department/police/open-data-portal/": "Open Data Portal",
+   "https://www.ashevillenc.gov/news/asheville-police-release-citizen-complaint-and-9-1-1-call-data-on-open-data-portal/": "Break",
+   "https://www.ashevillenc.gov/news/category/open-data-information-technology/": "Open Data",
+   "https://www.ashevillenc.gov/news/asheville-police-traffic-stop-data-available-on-open-data-portal/": "Departments",
+   "https://www.ashevillenc.gov/news/asheville-to-partner-with-code-for-asheville-for-open-data-day/": "City of Asheville to partner with Code for Asheville for Open Data Day",
+   "https://www.ashevillenc.gov/news/asheville-earns-municipal-innovator-award-for-open-data-portal/": "Asheville earns Municipal Innovator award for Open Data portal",
+   "https://www.ashevillenc.gov/news/city-of-asheville-unveils-new-open-data-portal/": "City of Asheville unveils new Open Data Portal",
+   "https://www.ashevillenc.gov/news/municipal-data-evolves-to-next-gen-in-asheville-open-data/": "Municipal data evolves to Next Gen in Asheville: Open data",
+   "https://experience.arcgis.com/experience/8bc6cea3b56741f3a5ae2400d160f681/page/Page/": "city streets",
+   "https://storymaps.arcgis.com/stories/660321958f834674928a07ff4dda823b": "Storymap: What is Close the GAP?",
+   "https://storymaps.arcgis.com/stories/3a4557ac89e84fa792a6c02a01316613": "Storymap: What is Asheville Unpaved?",
+   "https://storymaps.arcgis.com/stories/6fba7fe4b3f9400981ef3848ab81ef1a": "Link to Story Map",
+   "https://avl.maps.arcgis.com/apps/webappviewer/index.html?id=0f6eab030a684367af10d3bc0f31dae9": "",
+   "https://experience.arcgis.com/experience/3b3326edb0b7491b86f0ba7dbc99839a": "street closures map",
+   "https://www.arcgis.com/apps/Cascade/index.html?appid=eae4b75d894e45f192dcd78a3e814c7f": "",
+   "http://avl.maps.arcgis.com/apps/SimpleViewer/index.html?appid=cb97ebcc115a4d0ab83cbb0752e2ea10": "",
+   "https://experience.arcgis.com/experience/8bc6cea3b56741f3a5ae2400d160f681/": "Is my street a City-maintained street?",
+   "https://avl.maps.arcgis.com/apps/View/index.html?appid=a05d61cb72d94549b574ae5573c16013//": "View a map of snow removal priorities.",
+   "http://data.ashevillenc.gov": "data.ashevillenc.gov",
+   "https://experience.arcgis.com/experience/4a50b5dc87844bab9930a5906522a779": "Environmental Quality on sanitary sewer overflow",
+   "https://waterdata.usgs.gov/nc/nwis/rt": "U.S. Geological Survey (USGS) water gauges",
+   "https://data-avl.opendata.arcgis.com/": "Open Data Portal",
+   "https://beta.ashevillenc.gov/2018/11/asheville-police-release-citizen-complaint-and-9-1-1-call-data-on-open-data-portal/": "Asheville Police release citizen complaint and 9-1-1 call data on Open Data Portal",
+   "https://www.ashevillenc.gov/news/tag/asheville-police-open-data/": "Asheville Police Open Data",
+   "https://data-avl.opendata.arcgis.com/datasets/apd-citizen-complaints": "APD Citizen Complaints",
+   "https://data-avl.opendata.arcgis.com/datasets/apd-cad-911-calls": "APD 9-1-1 calls",
+   "https://www.ashevillenc.gov/news/tag/asheville-police-open-data-portal/": "Asheville Police Open Data Portal",
+   "http://data.ashevillenc.gov/": "City of Asheville Open Data Portal",
+   "http://data.ashevillenc.gov/datasets/apd-traffic-stops-after-oct-1-2017": "APD Traffic Stop After October 1, 2017",
+   "http://data.ashevillenc.gov/datasets/apd-traffic-stops-pre-oct-2017": "APD Traffic Stop Pre-October 2017"
+  }
+ },
+ "Perinthalmanna Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Johns Creek": {
+  "files": [
+   {
+    "url": "https://johnscreekga.b-cdn.net/app/uploads/2026/11/multi-modal-connections-map.pdf",
+    "text": "Multimodal Connections Map (PDF)",
+    "file": "data/city_files/Johns_Creek/3971ff_multi-modal-connections-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://johnscreekga.b-cdn.net/app/uploads/2024/02/bike-corridor-map.pdf",
+    "text": "Bike Corridor Map (PDF)",
+    "file": "data/city_files/Johns_Creek/6aed94_bike-corridor-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://johnscreekga.b-cdn.net/app/uploads/2025/07/residential-ev-charger-information-form.pdf",
+    "text": "Residential EV Charger Information Form (PDF)",
+    "file": "data/city_files/Johns_Creek/f4ad2d_residential-ev-charger-information-form.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/cdfb8104d5ee456f9a43aae0e10f6765/": "Resident Resource Guide",
+   "https://storymaps.arcgis.com/stories/6f0218fa36404c3f8aeeca59c5ede3fa": "Cauley Creek Park",
+   "https://storymaps.arcgis.com/stories/20bc707062f542e8881f8c8d3350b6c1": "Explore Rogers Bridge",
+   "https://gis.johnscreekga.gov/lookup/confirmaddr.html": "View larger map",
+   "https://johnscreekga.maps.arcgis.com/apps/instant/nearby/index.html?appid=3de338ff3891406295e86862b17de56b": "View larger map",
+   "https://storymaps.arcgis.com/stories/0990f61fd8bd4eda859bc6c251f0708c": "Explore Autrey Mill",
+   "https://storymaps.arcgis.com/stories/9adabe7afd9e45c5884f92c352ec9047": "Explore Bell-Boles Park",
+   "https://storymaps.arcgis.com/stories/8d9c21cd2df64842a1874b0bfb5007d3": "Explore Morton Road Park",
+   "https://storymaps.arcgis.com/stories/03c2175fe91e4d8e8b4be22651150a5d": "Virtual Tour of Newtown Park",
+   "https://storymaps.arcgis.com/stories/932fc3e946404f7885873db1bfe1f408": "Explore Ocee Park",
+   "https://storymaps.arcgis.com/stories/f734ce3942524f968b45fd339ad9f38b": "Explore Shakerag Park",
+   "https://storymaps.arcgis.com/stories/9f6c32baa95f4a939d8f6759dc524701": "Virtual Tour of State Bridge Park",
+   "https://johnscreekga.maps.arcgis.com/apps/instant/basic/index.html?appid=4711d99e1c60484a84964d25e39a7ba9": "View larger map",
+   "https://johnscreekga.maps.arcgis.com/apps/instant/basic/index.html?appid=0a43815729c74aa79767b66243d7c8af": "View larger map",
+   "https://storymaps.arcgis.com/stories/3c352c52cdca48ed8b1f86e6eabdf908": "Stormwater Utility",
+   "https://www.arcgis.com/apps/dashboards/49c6407aff5e4550a3dfc167256ac816": "View real-time parking lot availability.",
+   "https://johnscreekga.maps.arcgis.com/apps/instant/basic/index.html?appid=07b8bf299bd7462b8bf1585080f14ed8": "View larger map",
+   "https://johnscreekga.maps.arcgis.com/apps/instant/basic/index.html?appid=a8956da538084ceb8a975321c342cede": "View larger map",
+   "https://johnscreekga.maps.arcgis.com/apps/instant/basic/index.html?appid=8e4fafc434a44c77a9b41df0983942ae": "View larger map"
+  }
+ },
+ "Malappuram Municipality": {
+  "files": [
+   {
+    "url": "https://malappurammunicipality.lsgkerala.gov.in/system/files/2026-09/Map_FinalN_Malappuram.pdf",
+    "text": "Map_FinalN_Malappuram.pdf",
+    "file": "data/city_files/Malappuram_Municipality/9fcaa1_Map_FinalN_Malappuram.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Dothan": {
+  "files": [],
+  "portals": {
+   "https://dothan.maps.arcgis.com/apps/webappviewer/index.html?id=aff5fb0a3bcf43ee844c3b0c63630636": "GIS Map"
+  }
+ },
+ "Jackson": {
+  "files": [
+   {
+    "url": "https://www.jacksontn.gov/UserFiles/Servers/Server_16361603/File/Departments/Groundskeeping/LEAF ROUTE DISTRICT 1.pdf",
+    "text": "",
+    "file": "data/city_files/Jackson/249801_LEAF_ROUTE_DISTRICT_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.jacksontn.gov/UserFiles/Servers/Server_16361603/File/Departments/Groundskeeping/LEAF ROUTE DISTRICT 2 NORTH.pdf",
+    "text": "",
+    "file": "data/city_files/Jackson/1bb78a_LEAF_ROUTE_DISTRICT_2_NORTH.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.jacksontn.gov/UserFiles/Servers/Server_16361603/File/Departments/Groundskeeping/LEAF ROUTE DISTRICT 2 SOUTH.pdf",
+    "text": "",
+    "file": "data/city_files/Jackson/6819b0_LEAF_ROUTE_DISTRICT_2_SOUTH.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.jacksontn.gov/UserFiles/Servers/Server_16361603/File/Departments/Groundskeeping/LEAF ROUTE DISTRICT 3.pdf",
+    "text": "",
+    "file": "data/city_files/Jackson/f5fe26_LEAF_ROUTE_DISTRICT_3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.jacksontn.gov/UserFiles/Servers/Server_16361603/File/Departments/Groundskeeping/LEAF ROUTE DISTRICT 4.pdf",
+    "text": "",
+    "file": "data/city_files/Jackson/430a1f_LEAF_ROUTE_DISTRICT_4.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.jacksontn.gov/UserFiles/Servers/Server_16361603/File/Departments/Groundskeeping/LEAF ROUTE DISTRICTS DETAILED.pdf",
+    "text": "",
+    "file": "data/city_files/Jackson/71df67_LEAF_ROUTE_DISTRICTS_DETAILED.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://jacksontn-of.finance.socrata.com/": "Open Finance Portal View city expense data"
+  }
+ },
+ "Conway": {
+  "files": [],
+  "portals": {}
+ },
+ "Monterey Park": {
+  "files": [],
+  "portals": {}
+ },
+ "Blue Springs": {
+  "files": [],
+  "portals": {
+   "https://bluespringsgis.integritygis.com/H5/Index.html?viewer=bluesprings": "Find Zoning & Property Information",
+   "https://city-of-blue-springs-open-data-bluespringsmo.hub.arcgis.com/documents/8df9d6bb59cd4febb3428caa345fa740/explore": "Click here to view a Blue Springs parks map",
+   "https://city-of-blue-springs-open-data-bluespringsmo.hub.arcgis.com/apps/f339e5e9da174318968fc8707b3d6f0d/explore": "."
+  }
+ },
+ "Chicopee": {
+  "files": [
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle-Smart-Infographic-1-1.pdf",
+    "text": "English",
+    "file": "data/city_files/Chicopee/ccb811_Recycle-Smart-Infographic-1-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle_Smart_Infographic-Spanish.pdf",
+    "text": "Español",
+    "file": "data/city_files/Chicopee/b7116d_Recycle_Smart_Infographic-Spanish.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Smart-Recycling-Guide-Portuguese-1.pdf",
+    "text": "Português",
+    "file": "data/city_files/Chicopee/827cea_Smart-Recycling-Guide-Portuguese-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "text": "简化字",
+    "file": "data/city_files/Chicopee/9365a3_Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Arabic-Final.pdf",
+    "text": "عربى",
+    "file": "data/city_files/Chicopee/e971c1_Smart-Recycling-Guide-Arabic-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "text": "Tiếng Việt",
+    "file": "data/city_files/Chicopee/915a27_Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-French-Final.pdf",
+    "text": "Français",
+    "file": "data/city_files/Chicopee/2dac68_Smart-Recycling-Guide-French-Final.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Haitian-Creole-Final.pdf",
+    "text": "Kreyòl Ayisyen",
+    "file": "data/city_files/Chicopee/51668f_Smart-Recycling-Guide-Haitian-Creole-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Khmer.pdf",
+    "text": "ខ្មែរ",
+    "file": "data/city_files/Chicopee/2ff4d7_smart-recycling-guide-Khmer.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Hindi.pdf",
+    "text": "हिंदी",
+    "file": "data/city_files/Chicopee/039bcd_smart-recycling-guide-Hindi.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Russian.pdf",
+    "text": "Русский",
+    "file": "data/city_files/Chicopee/54d4b8_smart-recycling-guide-Russian.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Italian.pdf",
+    "text": "Italiana",
+    "file": "data/city_files/Chicopee/013d72_smart-recycling-guide-Italian.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2026/05/Recycle-Smart-MA-Partners-List-Updated-5.13.26.pdf",
+    "text": "Partner List",
+    "file": "data/city_files/Chicopee/762193_Recycle-Smart-MA-Partners-List-Updated-5.13.26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://chicopeema.hub.arcgis.com/pages/b39052b47f3d4ce6a728a057dad56839?preview=true": "CLICK HERE TO VISIT OUR ARCGIS HUB:"
+  }
+ },
+ "Smyrna": {
+  "files": [
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Parks Recreation/GW Brochure 2019 revised.pdf?t=202509051012370",
+    "text": "Download the Greenway Map",
+    "file": "data/city_files/Smyrna/dfbc7a_GW_Brochure_2019_revised.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Public Works/Mapleview Cemetery/Smyrna Title 20.pdf?t=202404241115290",
+    "text": "Click to read the new Mapleview Cemetery Ordinance",
+    "file": "data/city_files/Smyrna/af0ee2_Smyrna_Title_20.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Public Works/Mapleview Cemetery/Mapleview Ordinances  Span.pdf?t=202404241115180",
+    "text": "Haz click aqui para leer la nueva Ordenanza de Cementerio de Mapleview",
+    "file": "data/city_files/Smyrna/9d6854_Mapleview_Ordinances_Span.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/Major Thoroughfare Plan 20.pdf?t=202404241116240",
+    "text": "Thoroughfare",
+    "file": "data/city_files/Smyrna/80eb2c_Major_Thoroughfare_Plan_20.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/Planned Bicycles and Pedes.pdf?t=202404241116240",
+    "text": "Bike / Pedestrian Plan",
+    "file": "data/city_files/Smyrna/468b23_Planned_Bicycles_and_Pedes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/ZoningMap_Printing_JB_2018.pdf?t=202404241116240",
+    "text": "Zoning",
+    "file": "data/city_files/Smyrna/d69990_ZoningMap_Printing_JB_2018.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/GREENWAYPLAN.pdf?t=202404241116240",
+    "text": "Greenway System",
+    "file": "data/city_files/Smyrna/98acd6_GREENWAYPLAN.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/Town Of Smyrna Street Map .pdf?t=202404241116240",
+    "text": "Street Map",
+    "file": "data/city_files/Smyrna/3a5557_Town_Of_Smyrna_Street_Map_.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/FEMAMAPS.pdf?t=202404241116240",
+    "text": "FEMA Maps",
+    "file": "data/city_files/Smyrna/793452_FEMAMAPS.pdf",
+    "rows": 26,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/Major Thoroughfare Plan 20.pdf?t=202404241116240",
+    "text": "Thoroughfare",
+    "file": "data/city_files/Smyrna/3fe84a_Major_Thoroughfare_Plan_20.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/Planned Bicycles and Pedes.pdf?t=202404241116240",
+    "text": "Bike / Pedestrian Plan",
+    "file": "data/city_files/Smyrna/61c605_Planned_Bicycles_and_Pedes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/ZoningMap_Printing_JB_2018.pdf?t=202404241116240",
+    "text": "Zoning",
+    "file": "data/city_files/Smyrna/44a50f_ZoningMap_Printing_JB_2018.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/GREENWAYPLAN.pdf?t=202404241116240",
+    "text": "Greenway System",
+    "file": "data/city_files/Smyrna/a53ca3_GREENWAYPLAN.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/Town Of Smyrna Street Map .pdf?t=202404241116240",
+    "text": "Street Map",
+    "file": "data/city_files/Smyrna/aea612_Town_Of_Smyrna_Street_Map_.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Planning Zoning/GIS Maps/FEMAMAPS.pdf?t=202404241116240",
+    "text": "FEMA Maps",
+    "file": "data/city_files/Smyrna/ab135f_FEMAMAPS.pdf",
+    "rows": 26,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Public Works/Storm Water/Resources/SWAC Historical Summary 20.pdf?t=202404241116260",
+    "text": "SWAC Historical Summary",
+    "file": "data/city_files/Smyrna/b1da6a_SWAC_Historical_Summary_20.pdf",
+    "rows": 94,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Public Works/Streets/Smyrna Mobility Plan/Roadway Projects List & Map.pdf?t=202503251808180",
+    "text": "Roadway Projects List & Map",
+    "file": "data/city_files/Smyrna/cd7a82_Roadway_Projects_List_Map.pdf",
+    "rows": 104,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Public Works/Streets/Smyrna Mobility Plan/Multimodal Project List & Map.pdf?t=202503251808530",
+    "text": "Multimodal Projects List & Map",
+    "file": "data/city_files/Smyrna/39b28b_Multimodal_Project_List_Map.pdf",
+    "rows": 88,
+    "bike_rows": 40
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Parks Recreation/GW Brochure 2019 revised.pdf?t=202509051012370",
+    "text": "Download the Greenway Map",
+    "file": "data/city_files/Smyrna/3da0b2_GW_Brochure_2019_revised.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Public Works/Mapleview Cemetery/Smyrna Title 20.pdf?t=202404241115290",
+    "text": "Click to read the new Mapleview Cemetery Ordinance",
+    "file": "data/city_files/Smyrna/d60a33_Smyrna_Title_20.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Public Works/Mapleview Cemetery/Mapleview Ordinances  Span.pdf?t=202404241115180",
+    "text": "Haz click aqui para leer la nueva Ordenanza de Cementerio de Mapleview",
+    "file": "data/city_files/Smyrna/aa4fa7_Mapleview_Ordinances_Span.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Public Works/Streets/Smyrna Mobility Plan/Roadway Projects List & Map.pdf?t=202503251808180",
+    "text": "Roadway Projects List & Map",
+    "file": "data/city_files/Smyrna/cff7e3_Roadway_Projects_List_Map.pdf",
+    "rows": 104,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Public Works/Streets/Smyrna Mobility Plan/Multimodal Project List & Map.pdf?t=202503251808530",
+    "text": "Multimodal Projects List & Map",
+    "file": "data/city_files/Smyrna/6b43f6_Multimodal_Project_List_Map.pdf",
+    "rows": 88,
+    "bike_rows": 40
+   },
+   {
+    "url": "https://www.townofsmyrna.org/Documents/Departments/Public Works/Storm Water/Resources/SWAC Historical Summary 20.pdf?t=202404241116260",
+    "text": "SWAC Historical Summary",
+    "file": "data/city_files/Smyrna/a92100_SWAC_Historical_Summary_20.pdf",
+    "rows": 94,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Agenda/2025-0825.pdf?t=202508221025410",
+    "text": "Agenda",
+    "file": "data/city_files/Smyrna/defc4d_2025-0825.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Packet/2025-0825.pdf?t=202508221025570",
+    "text": "Packet",
+    "file": "data/city_files/Smyrna/d04640_2025-0825.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Agenda/2025-0728.pdf?t=202507251203070",
+    "text": "Agenda",
+    "file": "data/city_files/Smyrna/d5993e_2025-0728.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Packet/2025-0728.pdf?t=202507251203550",
+    "text": "Packet",
+    "file": "data/city_files/Smyrna/7eac45_2025-0728.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Minutes/2025-0728 SIGNED.pdf?t=202508261025310",
+    "text": "Minutes",
+    "file": "data/city_files/Smyrna/14b415_2025-0728_SIGNED.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Agenda/2025-0623.pdf?t=202506201451550",
+    "text": "Agenda",
+    "file": "data/city_files/Smyrna/d9798f_2025-0623.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Packet/2025-0623.pdf?t=202506201452250",
+    "text": "Packet",
+    "file": "data/city_files/Smyrna/116da4_2025-0623.pdf",
+    "rows": 19,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Minutes/June 23, 2025 Historic Zoning Minutes - Signed.pdf?t=202507291006310",
+    "text": "Minutes",
+    "file": "data/city_files/Smyrna/4f82fb_June_23_2025_Historic_Zoning_Minutes_-_Signed.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Agenda/2025-0224.pdf?t=202502211239360",
+    "text": "Agenda",
+    "file": "data/city_files/Smyrna/31bb74_2025-0224.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Packet/2025-0224.pdf?t=202502211240150",
+    "text": "Packet",
+    "file": "data/city_files/Smyrna/09fddf_2025-0224.pdf",
+    "rows": 29,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Minutes/2025-0224 SIGNED.pdf?t=202506240847480",
+    "text": "Minutes",
+    "file": "data/city_files/Smyrna/ce78b9_2025-0224_SIGNED.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Agenda/2025-0127.pdf?t=202501270846270",
+    "text": "Agenda",
+    "file": "data/city_files/Smyrna/fb68a4_2025-0127.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Packet/2025-0127.pdf?t=202501270846520",
+    "text": "Packet",
+    "file": "data/city_files/Smyrna/74a3a3_2025-0127.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2025/Minutes/2025-0127 SIGNED.pdf?t=202502251050480",
+    "text": "Minutes",
+    "file": "data/city_files/Smyrna/075bf0_2025-0127_SIGNED.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2024/Agenda/2024-1028.pdf?t=202411011413530",
+    "text": "Agenda",
+    "file": "data/city_files/Smyrna/cac42b_2024-1028.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofsmyrna.org/Documents/Departments/Legal/Agenda Minutes/Historic Zoning/2024/Packet/2024-1028.pdf?t=202411011414250",
+    "text": "Packet",
+    "file": "data/city_files/Smyrna/f7e002_2024-1028.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://smyrnatn.maps.arcgis.com/apps/Embed/index.html?webmap=73b260668a624bec9a4b13c3b248336c&extent=-86.6498,35.9103,-86.3563,36.0548&zoom=true&scale=true&search=true&searchextent=true&legend=true&theme=light": "View larger map",
+   "https://rcgis.maps.arcgis.com/apps/dashboards/09d7baee3522455ea617f2b24dea6dc6": "Check current traffic and closures"
+  }
+ },
+ "Summerville": {
+  "files": [],
+  "portals": {}
+ },
+ "Niagara Falls": {
+  "files": [],
+  "portals": {
+   "https://www.niagarafallsny.gov/business/gis.php": "GIS"
+  }
+ },
+ "Bragado Partido": {
+  "files": [
+   {
+    "url": "https://www.bragado.gov.ar/wp-content/uploads/2023/01/mapa-laguna.pdf",
+    "text": "DESCARGAR MAPA DE UBICACIÓN PARQUE GRAL SAN MARTIN",
+    "file": "data/city_files/Bragado_Partido/6d8eb6_mapa-laguna.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Seferihisar district": {
+  "files": [],
+  "portals": {}
+ },
+ "Cortlandt": {
+  "files": [],
+  "portals": {
+   "https://www.axisgis.com/cortlandtny": "WebGIS",
+   "http://experience.arcgis.com/experience/be75ddd974dd4301946c9a34844b6acb": "click here"
+  }
+ },
+ "Westfield": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/8bed9a51c2d74fbfa378fc0acaa04532": "Westfield's Interactive WebGIS",
+   "http://gis.cityofwestfield.org": "geographic information system"
+  }
+ },
+ "Dover": {
+  "files": [
+   {
+    "url": "https://cityofdover.com/media/Public Works/ADA Transition Plan and Response Form/American with Disabilities Act Transition Plan.03.07.22.pdf",
+    "text": "ADA Transition Plan",
+    "file": "data/city_files/Dover/bd5ce4_American_with_Disabilities_Act_Transition_Plan.03.07.22.pdf",
+    "rows": 3261,
+    "bike_rows": 223
+   },
+   {
+    "url": "https://cityofdover.com/media/27/media/81788.pdf",
+    "text": "ADA Transition Plan Response and Comment Form",
+    "file": "data/city_files/Dover/306eaa_81788.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://doverde.maps.arcgis.com/home/index.html": "Dover Map Portal (Constituent Services)"
+  }
+ },
+ "Güzelbahçe district": {
+  "files": [],
+  "portals": {}
+ },
+ "Cruz del Eje": {
+  "files": [],
+  "portals": {}
+ },
+ "Attingal Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Monroe": {
+  "files": [],
+  "portals": {
+   "https://monroencgis.maps.arcgis.com/apps/webappviewer/index.html?id=ef43c76d605b4f5aa7f18995ed932227": "Downtown Monroe Interactive Parking Map",
+   "https://monroencgis.maps.arcgis.com/apps/instant/reporter/index.html?appid=1165284dbe43474294f127916ba4228f": "Access the interactive map",
+   "https://www.arcgis.com/apps/dashboards/97b9dd2d6ecf4a269edb8d235ce74a98": "Access the map"
+  }
+ },
+ "Franklin": {
+  "files": [],
+  "portals": {}
+ },
+ "Helena": {
+  "files": [
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/community-development/documents/planning/applications/historicdemoapp2024_fillable.pdf",
+    "text": "Historic Property Demolition Process",
+    "file": "data/city_files/Helena/80c28e_historicdemoapp2024_fillable.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/community-development/documents/preservation/historicneighborhood_design_guildelines.pdf",
+    "text": "Historic Neighborhood Design Guidelines (PDF, 7MB)",
+    "file": "data/city_files/Helena/231830_historicneighborhood_design_guildelines.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/community-development/documents/preservation/downtown_design_guildelines.pdf",
+    "text": "Historic Downtown Design Guidelines (PDF, 7MB)",
+    "file": "data/city_files/Helena/0aded0_downtown_design_guildelines.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/parks-recreation/documents/south-hills-disc-golf-course_smallforpdf.pdf",
+    "text": "South Hills Disc Golf Map (PDF, 2MB)",
+    "file": "data/city_files/Helena/267903_south-hills-disc-golf-course_smallforpdf.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/parks-recreation/documents/city-reccomendations-trail-projects-2025.pdf",
+    "text": "2025 Proposed Major Projects (PDF, 11MB)",
+    "file": "data/city_files/Helena/2a712f_city-reccomendations-trail-projects-2025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/parks-recreation/documents/combined_trail_projects_2020-2021_initial_review.pdf",
+    "text": "Combined Trails Projects 2020-20201 Initial Review (PDF, 3MB)",
+    "file": "data/city_files/Helena/9c5933_combined_trail_projects_2020-2021_initial_review.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/parks-recreation/documents/centennialtrail-optionsforwellness.pdf",
+    "text": "Download Centennial Trail Options for Wellness Map (PDF, 14MB)",
+    "file": "data/city_files/Helena/676934_centennialtrail-optionsforwellness.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/public-works/documents/2022_fper_mtr040000_mod_s-sign.pdf",
+    "text": "General Permit for Storm Water Discharge (PDF, 456KB)",
+    "file": "data/city_files/Helena/ca2c46_2022_fper_mtr040000_mod_s-sign.pdf",
+    "rows": 85,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/public-works/documents/helena2022ms4noi.pdf",
+    "text": "Notice of Intent for Storm Water Discharge (PDF, 6MB)",
+    "file": "data/city_files/Helena/3a8909_helena2022ms4noi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/public-works/documents/idde_rule.pdf",
+    "text": "Illicit Discharge Detection and Elimination Rule (PDF, 275KB)",
+    "file": "data/city_files/Helena/006c38_idde_rule.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/public-works/documents/howtosubmitcomplaint_23apr.pdf",
+    "text": "How to Submit a Storm Water Illicit Discharge Complaint or a Storm Water Construction Complaint (PDF, 2MB)",
+    "file": "data/city_files/Helena/7c2e1d_howtosubmitcomplaint_23apr.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/parking_citation_appeal_submission_final.pdf",
+    "text": "Parking Ticket Appeal (PDF, 143KB)",
+    "file": "data/city_files/Helena/7b767e_parking_citation_appeal_submission_final.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/transportation/documents/parking_sales_contract-2016.pdf",
+    "text": "Parking Permit Sales (PDF, 120KB)",
+    "file": "data/city_files/Helena/02f774_parking_sales_contract-2016.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/transit/documents/capital-transit-trifold-web.pdf",
+    "text": "Capital-Transit-Trifold-Web.pdf (PDF, 6MB)",
+    "file": "data/city_files/Helena/1ee510_capital-transit-trifold-web.pdf",
+    "rows": 63,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/transit/documents/20250909-tsd-recurring_ride_policy-tpalmerton.pdf",
+    "text": "Recurring Trips Policy 9/2025 (PDF, 93KB)",
+    "file": "data/city_files/Helena/16a58f_20250909-tsd-recurring_ride_policy-tpalmerton.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/transit/documents/11-20-23-ridership-rules.pdf",
+    "text": "Ridership Rules and Responsibilities (PDF, 627KB)",
+    "file": "data/city_files/Helena/ebbfb1_11-20-23-ridership-rules.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/transit/documents/capital-transit-demand-response-policy-8-2026.pdf",
+    "text": "Demand Response Policy 8/2026 (PDF, 639KB)",
+    "file": "data/city_files/Helena/547559_capital-transit-demand-response-policy-8-2026.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.mdt.mt.gov/publications/docs/brochures/transit/transportation-advisory.pdf",
+    "text": "Click Here to Learn More",
+    "file": "data/city_files/Helena/2732e7_transportation-advisory.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/transit/documents/20251007-tsd-coordp-fy27_coordination_plan-tpalmerton.pdf",
+    "text": "Click Here to View Current Transportation coordination plan (PDF, 277KB)",
+    "file": "data/city_files/Helena/97d40e_20251007-tsd-coordp-fy27_coordination_plan-tpalmerton.pdf",
+    "rows": 57,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/parking/20250310-tsd-parking-permit-policy-final.pdf",
+    "text": "Download Parking Permit Billing Statement and Invoicing Policy (PDF, 55KB)",
+    "file": "data/city_files/Helena/bc4ef7_20250310-tsd-parking-permit-policy-final.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/transportation/parking/20240318-tsd-parklet_app.pdf",
+    "text": "Parklet Application (PDF, 159KB)",
+    "file": "data/city_files/Helena/52e991_20240318-tsd-parklet_app.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/transportation/parking/20240318-tsd-parlet-specs.pdf",
+    "text": "Parklet Specifications (PDF, 400KB)",
+    "file": "data/city_files/Helena/cba15a_20240318-tsd-parlet-specs.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/transportation/parking/20240318-tsd-nep-cond-parklets.pdf",
+    "text": "Non-exclusive Right-of-Way Permit Conditions - Parklets (PDF, 161KB)",
+    "file": "data/city_files/Helena/edfb5b_20240318-tsd-nep-cond-parklets.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/res__20071-_residential_parking_districts.pdf",
+    "text": "here (PDF, 148KB)",
+    "file": "data/city_files/Helena/309525_res__20071-_residential_parking_districts.pdf",
+    "rows": 68,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/rescind_residential_parking_districts_roi_final.pdf",
+    "text": "resolution of intention (PDF, 130KB)",
+    "file": "data/city_files/Helena/cec99f_rescind_residential_parking_districts_roi_final.pdf",
+    "rows": 45,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/procedure_to_remove_residential_parking_district_request.pdf",
+    "text": "this form (PDF, 225KB)",
+    "file": "data/city_files/Helena/373e07_procedure_to_remove_residential_parking_district_request.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/procedure_for_residential_parking_district_request_final.pdf",
+    "text": "this form (PDF, 396KB)",
+    "file": "data/city_files/Helena/77c172_procedure_for_residential_parking_district_request_final.pdf",
+    "rows": 18,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/parking/new-folder/fy27-parking-permit-rate-sheet.pdf",
+    "text": "FY27-Parking-Permit-Rate-Sheet.pdf (PDF, 240KB)",
+    "file": "data/city_files/Helena/21d6b4_fy27-parking-permit-rate-sheet.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/parking/new-folder/visitor-parking-map.pdf",
+    "text": "Visitor-Parking-Map.pdf (PDF, 839KB)",
+    "file": "data/city_files/Helena/0517cb_visitor-parking-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/streetmaps/20260204-tsd-snow_and_ice_plan.pdf",
+    "text": "Snow and Ice Plan (PDF, 1MB)",
+    "file": "data/city_files/Helena/9752ea_20260204-tsd-snow_and_ice_plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/snowroutesareastimes_01.pdf",
+    "text": "snowplow routes and times (PDF, 376KB)",
+    "file": "data/city_files/Helena/62f584_snowroutesareastimes_01.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/streetmaps/springsweepingroutes2026-11x17.pdf",
+    "text": "Click here to view Spring/Summer Sweeping Map (PDF, 1MB)",
+    "file": "data/city_files/Helena/3626f2_springsweepingroutes2026-11x17.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/streetmaps/20261026-tsd-leaf_map-003.pdf",
+    "text": "Click here to view 2026 Fall Leaf Sweeping Routes/Map (PDF, 680KB)",
+    "file": "data/city_files/Helena/f08847_20261026-tsd-leaf_map-003.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/curbside-recycling/curbside-faq.pdf",
+    "text": "Click here (PDF, 25KB)",
+    "file": "data/city_files/Helena/91a940_curbside-faq.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/curbside-recycling/rfp.citycurbsiderecyclingcollection.aug2025.pdf",
+    "text": "View full RFP here. (PDF, 148KB)",
+    "file": "data/city_files/Helena/f0cbe1_rfp.citycurbsiderecyclingcollection.aug2025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/test-rfp-folder/ezgoin-trail-construction-rfp.pdf",
+    "text": "View the full RFP here (PDF, 4MB)",
+    "file": "data/city_files/Helena/56802e_ezgoin-trail-construction-rfp.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/community-facilities/recycle-bin-mural-call-for-artists.pdf",
+    "text": "Call for Artists - Full Copy (PDF, 163KB)",
+    "file": "data/city_files/Helena/049c1a_recycle-bin-mural-call-for-artists.pdf",
+    "rows": 79,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/community-facilities/recycle-bin-mural-submission-form.pdf",
+    "text": "Recycle Bin Mural Submission Form (PDF, 138KB)",
+    "file": "data/city_files/Helena/ddfe8e_recycle-bin-mural-submission-form.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/community-facilities/recycle-bin-template.pdf",
+    "text": "Recycle Bin Mural Template (PDF, 1MB)",
+    "file": "data/city_files/Helena/f2a64c_recycle-bin-template.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/parks-recreation/documents/goingeztrail_map.pdf",
+    "text": "Click Here to View Project Map (PDF, 15MB)",
+    "file": "data/city_files/Helena/523eb4_goingeztrail_map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/b7b66b91a5af473dbaa95990c20c559b": "Residential Development Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=833371179fcc450498e863be6d530aa4": "Helena Open Lands Trails Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=cd5609869c3f4ef4bf83163dbae32519": "Public Arts Map",
+   "https://storymaps.arcgis.com/stories/7d1cd6b2ba7b4ff0a2e27fb8d6a77155": "City Sustainability Projects Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/instant/media/index.html?appid=276ab8b934214afc9061ec04dabbb211": "Future Land Use Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/instant/media/index.html?appid=29759b54ea3543f8b1255105c613e784": "Helena's Historic Districts",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=dd713d35317d4b80a7ab8dd3bc2ac7ae": "View the Crosstown Connector Project Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=d17150ff597b459493a14700e0860cfc": "Click here to view the interactive GIS map",
+   "https://storymaps.arcgis.com/stories/5a2ce3c8ecad4e14bcfe453fa3798c75": "Tax Increment Financing Projects Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=10873f2c801e4fe1bee87de1db7f7e31": "If your recreational vehicle has been towed, click here to locate it via our interactive towing map.",
+   "https://www.arcgis.com/apps/dashboards/e3bc1a41c8d04daaa867459ec125a2c8": "Vacant Land Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=f825dede730243bf8a622f7e2b814d4d": "Zoning Map",
+   "https://storymaps.arcgis.com/stories/28852a394e9e4fbb970d510d2dbb4ab7": "Tax Increment Financing Projects Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/View/index.html?appid=b14285c0a3e14a1d952258ea86401cd8": "via our GIS tracking map",
+   "https://helenamtmaps.maps.arcgis.com/apps/instant/basic/index.html?appid=51823a9aaac249c280c82b40b4e7e286": "Click here to view Towing Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=d17150ff597b459493a14700e0860cfc&find=lawrence%20&%20warren": "Click Here to View Interactive Project Map.",
+   "https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fhelenamtmaps.maps.arcgis.com%2Fapps%2Fwebappviewer%2Findex.html%3Fid%3Ddd713d35317d4b80a7ab8dd3bc2ac7ae&data=05%7C02%7CAOPITZ%40helenamt.gov%7C33d1669583c348bc58c008de8b56251b%7Cf71022133f944d938972b17e2d49aa8f%7C0%7C0%7C639101399259514008%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=DVrJOEw9s1FpSBZ0lfa6WvTn%2Bk5PRi7eT3OUK%2BdSgfA%3D&reserved=0": "Click Here to View Interactive Project Map.",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=d17150ff597b459493a14700e0860cfc&find=benton%20&%20trail": "Click Here to View Interactive Project Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=d17150ff597b459493a14700e0860cfc&find=westside%20&%20": "Click Here to View Interactive Map"
+  }
+ },
+ "Ballwin": {
+  "files": [],
+  "portals": {
+   "https://ballwin.maps.arcgis.com/apps/instant/basic/index.html?appid=02fe4dc24aa74e5e9ea1a8dcc61235a8": "Link to page",
+   "https://ballwin.maps.arcgis.com/apps/instant/exhibit/index.html?appid=6f1878db74854081a1b5feb68cf8ea5a": "Link to page"
+  }
+ },
+ "Raytown": {
+  "files": [],
+  "portals": {
+   "https://raytown.maps.arcgis.com/apps/instant/basic/index.html?appid=115056e8429a40fca07109a05f6e6c5a": "Raytown Past and Present Projects",
+   "https://jcgis.jacksongov.org/parcelviewer/": "Jackson County Parcel Viewer",
+   "https://mogov.maps.arcgis.com/apps/webappviewer/index.html?id=d30159c26183481d8712da7a74d05013": "Missouri Legislative District Map",
+   "https://raytowngis.integritygis.com/H5/Index.html?viewer=raytown": "Raytown GIS Map"
+  }
+ },
+ "McDonough": {
+  "files": [],
+  "portals": {
+   "https://gmc-gis.maps.arcgis.com/apps/webappviewer/index.html?id=b0c9690ae62d426694a7d378f1777522": "Visit the City of McDonough Community View Site",
+   "https://experience.arcgis.com/experience/7a24883e9ad740dcb59c51d012b594dd": "https://experience.arcgis.com/experience/7a24883e9ad740dcb59c51d012b594dd"
+  }
+ }
+}
