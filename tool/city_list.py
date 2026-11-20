@@ -5,10 +5,11 @@ import json, re, sys, requests, urllib.parse
 N = int(sys.argv[1]) if len(sys.argv) > 1 else 1500
 Q = """
 SELECT ?c ?cLabel ?site (MAX(?pop) AS ?p) WHERE {
-  ?c wdt:P31/wdt:P279* wd:Q15284 ; wdt:P17 wd:Q30 ; wdt:P856 ?site ; wdt:P1082 ?pop .
+  VALUES ?type { wd:Q1093829 wd:Q15127012 wd:Q3301053 wd:Q15284 wd:Q47168 wd:Q2154459 }
+  ?c wdt:P31 ?type ; wdt:P856 ?site ; wdt:P1082 ?pop .
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 } GROUP BY ?c ?cLabel ?site ORDER BY DESC(?p) LIMIT %d
-""" % (N * 2)
+""" % (N * 2) % (N * 2)
 
 def host(u):
     h = urllib.parse.urlparse(u if '//' in u else '//' + u).netloc.lower()
