@@ -1,0 +1,161 @@
+<html>
+<head>
+ 
+<link href="/stylesheets/global.css" rel="stylesheet" type="text/css">
+<link href="/stylesheets/newstyles.css" rel="stylesheet" type="text/css">
+<link href="/stylesheets/TJnewstyles.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+
+<script language="javascript" type="text/javascript">
+
+var srcserver = window.location.hostname.toLowerCase()
+var tgtserver = ''
+
+switch(srcserver)
+{
+case "interaspdev":
+  tgtserver = "interDNNdv";
+  break;
+case  "interdotnetdev":
+  tgtserver = "interDNNdv";
+  break; 
+case 'interasptest':
+  tgtserver = 'interDNNtst' ;
+  break;
+ case 'interdotnettest':
+  tgtserver = 'interDNNtst' ;
+  break; 
+case 'interasptrain':
+  tgtserver = 'interDNNtrn' ;
+  break;
+case 'interdotnettrain':
+  tgtserver = 'interDNNtrn' ;
+  break;
+case 'aspauthor':
+  tgtserver = 'DNNauthor';
+  break;  
+case 'dotnetauth':
+  tgtserver = 'DNNauthor' ;
+  break;  
+default:
+  tgtserver = 'www.ocfl.net' ;
+  break;
+}
+
+var servername = window.location.protocol + '//' +  tgtserver;
+var urlpath = window.location.pathname;
+var redirectto = servername + "/PageNotFound.aspx?aspxerrorpath=" + urlpath;
+window.location = redirectto;
+
+</script>
+
+<body text="#000000" leftmargin="0" topmargin="0" style="text-align:center; ">
+ 
+ 
+<table border="0" cellspacing="0px" cellpadding="0px" style="width: 960px; margin: 0 auto; background-image:url('/nav/TJImages/TopBannerBackground.gif'); background-repeat: repeat-x; height: 145px;"  >
+	<tr style="">
+		<td align="center">	
+			<div style="padding-top:10px;padding-left:10px; padding-right:10px">
+				<a href="http://www.ocfl.net"><img style="position:relative; left:10px;" src="/nav/TJImages/oc_logo.png" alt="Orange County official logo" width="207px" title="Orange County official logo"/></a>
+			</div>
+		</td>
+		
+		<td>
+			<div>
+				<div id="topbanner">
+					<a href="http://www.ocfl.net/Home/SiteMap.aspx" 
+					title="Site Map" >
+					Site Map</a>
+					<span style="color:#53718B; font-size: 0.71em; height: 37px;">&nbsp;|&nbsp;</span>
+					<a href="http://www.ocfl.net/Home/AtoZ.aspx" 
+					title="A to Z index"  >
+					A to Z index</a>
+					
+					<a href="http://www.ocfl.net/ServicesOnline.aspx" 
+					 id="member" title="Profile">
+					 Services Online</a>					
+	
+					<span style="color:#53718B; font-size: 0.71em; height: 37px; margin-left: 20px;">Follow us on</span>
+	            	<a href="http://www.ocfl.net/Home/SocialMedia.aspx"><img style="vertical-align:middle;" src="/nav/TJImages/SocialMediaFooter.png" /></a>
+				</div>
+				
+				<div style="*padding-top:5px; height:40px; margin-bottom: 5px; margin-top: 10px; margin-left:142px;">
+				           	<span style="color:#53718B; font-size: 1.125em; font-style: italic; font-family: Times New Roman; vertical-align:middle; line-height: 34px; padding-right:4px;">
+				           	&nbsp;</span>
+				</div>
+				
+				<div id="topTabs" style="padding-left:24px; position:relative; margin-bottom:-9px; *top: 1px;">
+					<a href="http://www.ocfl.net/" id="hTab"></a>
+					<a href="http://www.ocfl.net/Residents.aspx" id="rTab"></a>
+					<a href="http://www.ocfl.net/Visitors.aspx" id="vTab"></a>
+					<a href="http://www.ocfl.net/Business.aspx" id="bTab"></a>
+					<a href="http://www.ocfl.net/EmploymentVolunteerism/EssentialEmployeeInformation.aspx" id="eTab"></a>
+					<a href="http://www.ocfl.net/AboutUs.aspx" id="aTab"></a>
+				</div>				
+			</div>
+		</td>
+	</tr>
+</table>
+
+<table border="0" id="wrapper" align="" cellpadding="0" cellspacing="0" width="960px">
+  <tr>   
+    <td valign="top" height="280px" bgcolor="#FFFFFF" >
+    	<div style="font-size: 11pt; height: 37px; margin: 20px;line-height:20px;">
+    			<b>PAGE NOT FOUND...</b>
+    			<br/><br/>
+    			We're sorry, the page you are looking for is not at this address. You may have followed an outdated link or typed the web address incorrectly.
+				<br/>
+				Please refer to our <a href="http://www.ocfl.net//home/sitemap.aspx">site map</a> for assistance navigating our site.
+		</div>    
+	</td> 
+	</tr>
+			
+	<tr>
+	<td height="280px">    	
+			<div id="footerwrap">
+					<div id="footerbottom">
+					        <div id="footerSocial">Follow Us: <a href='http://www.ocfl.net/Home/SocialMedia.aspx'><img src="/nav/TJimages/SocialMediaFooter.png" alt="Social Media"/></a></div>
+			                <ul class="footerCol">
+			                <li><a href='http://www.ocfl.net/BoardofCommissioners.aspx'>County Commission (BCC)</a></li>
+			                <li><a href='http://www.ocfl.net/OpenGovernment.aspx'>Open Government</a></li>
+			                <li><a href='http://www.ocfl.net/AnimalsPets.aspx'>Animals &amp; Pets</a></li>
+			                <li><a href='http://www.ocfl.net/ConventionCenter.aspx'>Convention Center</a></li>
+			                <li><a href='http://www.ocfl.net/CultureParks.aspx'>Culture &amp; Parks</a></li>
+			                </ul>
+			                
+			                <ul class="footerCol">
+			                <li><a href='http://www.ocfl.net/EconomicDevelopment.aspx'>Economic Development</a></li>
+			                <li><a href='http://www.ocfl.net/EmergencySafety.aspx'>Emergency &amp; Safety</a></li>
+			                <li><a href='http://www.ocfl.net/EmploymentVolunteerism.aspx'>Employment &amp; Volunteerism</a></li>
+			                <li><a href='http://www.ocfl.net/Environment.aspx'>Environment</a></li>
+			                <li><a href='http://www.ocfl.net/FamiliesHealthSocialSvcs.aspx'>Families, Health &amp; Social Svcs</a></li>
+			                </ul>
+			                
+							<ul class="footerCol">
+			                <li><a href='http://www.ocfl.net/JailInmateServices.aspx'>Jail &amp; Inmate Services</a></li>
+			                <li><a href='http://www.ocfl.net/FamiliesHealthSocialSvcs/MedicalExaminer.aspx'>Medical Examiner</a></li>
+			                <li><a href='http://www.ocfl.net/NeighborsHousing.aspx'>Neighborhoods &amp; Housing</a></li>
+			                <li><a href='http://www.ocfl.net/PermitsLicenses.aspx'>Permits &amp; Licenses</a></li>
+			                </ul>
+			                
+			                <ul class="footerCol">
+			                <li><a href='http://www.ocfl.net/PlanningDevelopment.aspx'>Planning &amp; Development</a></li>
+			                <li><a href='http://www.ocfl.net/TrafficTransportation.aspx'>Traffic &amp; Transportation</a></li>
+			                <li><a href='http://www.ocfl.net/VendorServices.aspx'>Vendor Services</a></li>
+			                <li><a href='http://www.ocfl.net/WaterGarbageRecycling.aspx'>Water, Garbage &amp; Recycling</a></li>
+			                </ul>
+			                
+							<div id="footerBot">                   
+								<div id="links"><a href='http://www.ocfl.net/Home/PrivacyPolicyTermsofUse.aspx'>Privacy Policy &amp; Terms of Use</a> | <a href='http://www.ocfl.net/Accessibility.aspx'>Accessibility</a> | <a href='http://www.ocfl.net/BrowseContacts.aspx'>Browse Contacts</a> | <a href='http://www.ocfl.net/Home/CustomerService311.aspx'>Customer Service</a></div>
+			                	<div id="copyright">Copyright &copy; 1996 - 2012 Orange County Government, Florida. All rights reserved.</div>
+			                </div>
+					</div>
+			</div>   
+ 		</td>       
+  </tr>
+</table>
+</body>
+</html>
+
