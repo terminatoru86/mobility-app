@@ -1,10 +1,12 @@
 # GIS servers, shard 7/20
 
-Sites: 104 · layers: 4 · points: 42
+Sites: 36 · layers: 6 · points: 1041
 
 | Place | Layer | Category | Points | URL |
 |---|---|---|---|---|
-| Roanoke | Bike Fix Stations | racks | 14 | https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/ParksRec_Map_Service_Prod/FeatureServer/5 |
-| Roanoke | Bike Fix Stations | racks | 14 | https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/ParksRec_Map_Service_Prod/MapServer/5 |
-| Roanoke | Mobility Corrals | racks | 7 | https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/Transportation_Map_Service_Prod/FeatureServer/28 |
-| Roanoke | Mobility Corrals | racks | 7 | https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/Transportation_Map_Service_Prod/MapServer/28 |
+| Humboldt County | Bike Parking | racks | 73 | https://gis.eurekaca.gov/server/rest/services/MainServiceLayers/Transportation_Services/MapServer/2 |
+| Edmond | Bicycle Repair Station | repair | 2 | https://gis.edmondok.gov/arcgis/rest/services/ArcadiaLake/ArcadiaLakeTrails/MapServer/1 |
+| Cedar Rapids | FixItStations | repair | 21 | https://crgis.cedar-rapids.org/arcgis/rest/services/Maps/Public_Works/MapServer/78 |
+| St. Petersburg FL | Scooter Share Corrals | scooter | 103 | https://egis.stpete.org/arcgis/rest/services/ServicesTPD/TrafficManagementandData/MapServer/45 |
+| Ames | Bike Racks | racks | 421 | https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/FeatureServer/34 |
+| Ames | Bike Racks | racks | 421 | https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/MapServer/34 |

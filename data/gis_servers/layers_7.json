@@ -1,30 +1,44 @@
 [
 {
-"city": "Roanoke",
-"url": "https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/ParksRec_Map_Service_Prod/FeatureServer/5",
-"name": "Bike Fix Stations",
-"count": 14,
+"city": "Humboldt County",
+"url": "https://gis.eurekaca.gov/server/rest/services/MainServiceLayers/Transportation_Services/MapServer/2",
+"name": "Bike Parking",
+"count": 73,
 "cat": "racks"
 },
 {
-"city": "Roanoke",
-"url": "https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/ParksRec_Map_Service_Prod/MapServer/5",
-"name": "Bike Fix Stations",
-"count": 14,
+"city": "Edmond",
+"url": "https://gis.edmondok.gov/arcgis/rest/services/ArcadiaLake/ArcadiaLakeTrails/MapServer/1",
+"name": "Bicycle Repair Station",
+"count": 2,
+"cat": "repair"
+},
+{
+"city": "Cedar Rapids",
+"url": "https://crgis.cedar-rapids.org/arcgis/rest/services/Maps/Public_Works/MapServer/78",
+"name": "FixItStations",
+"count": 21,
+"cat": "repair"
+},
+{
+"city": "St. Petersburg FL",
+"url": "https://egis.stpete.org/arcgis/rest/services/ServicesTPD/TrafficManagementandData/MapServer/45",
+"name": "Scooter Share Corrals",
+"count": 103,
+"cat": "scooter"
+},
+{
+"city": "Ames",
+"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/FeatureServer/34",
+"name": "Bike Racks",
+"count": 421,
 "cat": "racks"
 },
 {
-"city": "Roanoke",
-"url": "https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/Transportation_Map_Service_Prod/FeatureServer/28",
-"name": "Mobility Corrals",
-"count": 7,
-"cat": "racks"
-},
-{
-"city": "Roanoke",
-"url": "https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/Transportation_Map_Service_Prod/MapServer/28",
-"name": "Mobility Corrals",
-"count": 7,
+"city": "Ames",
+"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/MapServer/34",
+"name": "Bike Racks",
+"count": 421,
 "cat": "racks"
 }
 ]
