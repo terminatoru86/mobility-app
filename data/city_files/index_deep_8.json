@@ -1,0 +1,1031 @@
+{
+ "Indianapolis IN": {
+  "files": [],
+  "portals": {}
+ },
+ "Fremont CA": {
+  "files": [],
+  "portals": {}
+ },
+ "Lomas de Zamora Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Pamukkale district": {
+  "files": [],
+  "portals": {}
+ },
+ "Uşak": {
+  "files": [],
+  "portals": {}
+ },
+ "Hurlingham Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Kırşehir": {
+  "files": [],
+  "portals": {}
+ },
+ "Karabük": {
+  "files": [],
+  "portals": {}
+ },
+ "Pergamino Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "El Cajon": {
+  "files": [],
+  "portals": {}
+ },
+ "Vista": {
+  "files": [],
+  "portals": {}
+ },
+ "New Braunfels": {
+  "files": [
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityLimitsandETJ.pdf",
+    "text": "City Limits and ETJ Map",
+    "file": "data/city_files/New_Braunfels/a6a841_CityLimitsandETJ.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/HistoricDistricts.pdf",
+    "text": "Historic Districts Map",
+    "file": "data/city_files/New_Braunfels/ee8d68_HistoricDistricts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://comptroller.texas.gov/forms/50-122.pdf",
+    "text": "Application for Historic or Archeological Site Tax Exemption",
+    "file": "data/city_files/New_Braunfels/ed872b_50-122.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistricts_letter.pdf",
+    "text": "City Council Districts",
+    "file": "data/city_files/New_Braunfels/3fa6ee_CityCouncilDistricts_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict1_letter.pdf",
+    "text": "City Council District 1",
+    "file": "data/city_files/New_Braunfels/8bf4d3_CityCouncilDistrict1_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict2_letter.pdf",
+    "text": "City Council District 2",
+    "file": "data/city_files/New_Braunfels/57c484_CityCouncilDistrict2_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict3_letter.pdf",
+    "text": "City Council District 3",
+    "file": "data/city_files/New_Braunfels/5ec208_CityCouncilDistrict3_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict4_letter.pdf",
+    "text": "City Council District 4",
+    "file": "data/city_files/New_Braunfels/a058fa_CityCouncilDistrict4_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict5_letter.pdf",
+    "text": "City Council District 5",
+    "file": "data/city_files/New_Braunfels/f61399_CityCouncilDistrict5_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/CityCouncilDistrict6_letter.pdf",
+    "text": "City Council District 6",
+    "file": "data/city_files/New_Braunfels/56e470_CityCouncilDistrict6_letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/RIFServiceArea.pdf",
+    "text": "Roadway Impact Fee Service Area Map",
+    "file": "data/city_files/New_Braunfels/f208cb_RIFServiceArea.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/OutdoorWarningSirens.pdf",
+    "text": "Flood Warning Sirens Map",
+    "file": "data/city_files/New_Braunfels/5a6971_OutdoorWarningSirens.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gismaps.newbraunfels.gov/PDFMaps/Watersheds.pdf",
+    "text": "Watersheds Map",
+    "file": "data/city_files/New_Braunfels/241ecb_Watersheds.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://open-data-newbraunfels.hub.arcgis.com/": "Maps/GIS",
+   "https://open-data-newbraunfels.hub.arcgis.com/pages/interactive-maps": "Interactive Maps",
+   "https://open-data-newbraunfels.hub.arcgis.com/pages/pdf-maps": "PDF Maps",
+   "https://newbraunfels.maps.arcgis.com/apps/instant/lookup/index.html?appid=af4d390f34cb4fb0bad7cefe68a28243": "Rio Service Area Map",
+   "https://open-data-newbraunfels.hub.arcgis.com/pages/infographics": "Infographics",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=27281ec8ad7e4ade8e1bc80c10b60714": "City’s General Reference Map",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=4afda830a7384325aede2f1bd8e31186": "Road Closure Map",
+   "https://newbraunfels.maps.arcgis.com/apps/instant/lookup/index.html?appid=b3a2c7dd817049ea8342cf2a09668848": "",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=65adb598a5be4171a5bbc1407a9bd30f": "Planning Reference Map",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=04770f2207bd42f8b10ebc4213c63082": "interactive map",
+   "https://survey123.arcgis.com/share/d0b8ee29ee49444e9304c34049be1774?portalUrl=https://gismaps.newbraunfels.gov/arcportalwa22": "",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=16f23a4b3c8a41ec89ef42a58185421a": "Short Term Rentals Map",
+   "https://experience.arcgis.com/experience/6398a1379feb420bbc5bd9d644c851be/": "NB At Work Dashboard",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=6f6eaa111349495f92528fd73186fb65": "Flood Zone Map",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=30a99ea614ec43779ccd0dc59a3b6d30": "Parks & Recreation Map",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=524a67def67a4ef98455c2de6e2d338e": "Subdivision Search Map",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=f997a5bd823048b48197955a3a3f3f35": "Permit Search Map",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=75c5a1c2fa9b4c8aa0a74b3936a2c395": "New Braunfels Child Safety Zone Map",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=5e5605ec8f20452b92ffb661ebb71565": "Drainage Map",
+   "https://open-data-newbraunfels.hub.arcgis.com/apps/4afda830a7384325aede2f1bd8e31186/explore": "Road Closure Map",
+   "https://survey123.arcgis.com/share/2d750b0ba77b423c98355be86fa7e312?portalUrl=https://gismaps.newbraunfels.gov/arcportalwa22": "Submit a Request",
+   "https://survey123.arcgis.com": "",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=0309a55b92684d589b75750c59c16989": "Regional Transportation Plan",
+   "https://newbraunfels.maps.arcgis.com/apps/webappviewer/index.html?id=cbcea1ada3de4c2d9e304f6ab8e6451a": "NBFD Fire Stations Map",
+   "https://open-data-newbraunfels.hub.arcgis.com/search?tags=hydrology": "Hydrology Maps"
+  }
+ },
+ "Bartın": {
+  "files": [],
+  "portals": {}
+ },
+ "Perris": {
+  "files": [],
+  "portals": {}
+ },
+ "Turlock": {
+  "files": [
+   {
+    "url": "https://cityofturlock.org/_pdf/files/BroadwayPark.pdf",
+    "text": "Map of picnic areas",
+    "file": "data/city_files/Turlock/4b5b4e_BroadwayPark.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofturlock.org/_pdf/files/CranePark.pdf",
+    "text": "Map of picnic areas",
+    "file": "data/city_files/Turlock/60e751_CranePark.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofturlock.org/_pdf/files/DonnellyPark.pdf",
+    "text": "Map of picnic areas",
+    "file": "data/city_files/Turlock/351ed3_DonnellyPark.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofturlock.org/_pdf/files/PedrettiPark.pdf",
+    "text": "Map of picnic areas",
+    "file": "data/city_files/Turlock/a45ac4_PedrettiPark.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofturlock.org/_pdf/files/cranepark.pdf",
+    "text": "View map of Crane Park picnic areas",
+    "file": "data/city_files/Turlock/cac92b_cranepark.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofturlock.org/_pdf/files/donnellypark.pdf",
+    "text": "View map of  Donnelly Park picnic areas",
+    "file": "data/city_files/Turlock/385f45_donnellypark.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cityofturlock.org/opendata": "Top",
+   "https://cityofturlock.org/open-data": "Top",
+   "https://turlock.maps.arcgis.com/apps/webappviewer/index.html?id=43bf0c8792de44cf93f94d5f1ae72f63": "Click Here for Map of City Parks"
+  }
+ },
+ "Neyyattinkara Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Novi": {
+  "files": [
+   {
+    "url": "https://cityofnovi.org/media/2qijldic/e-bike-types-novi.pdf",
+    "text": "",
+    "file": "data/city_files/Novi/e248e8_e-bike-types-novi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/e3neywjo/walkbikedrivesafebrochure2017.pdf",
+    "text": "brochure",
+    "file": "data/city_files/Novi/d5a4c7_walkbikedrivesafebrochure2017.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/j4qhafyk/standarddetails-boardwalkpathway.pdf",
+    "text": "Boardwalk / Pathway",
+    "file": "data/city_files/Novi/c93286_standarddetails-boardwalkpathway.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofnovi.org/media/bmwo3bca/gym-entrance-and-parking-updated-sep-2026.pdf",
+    "text": "Download the Gym Entrance and Parking Location",
+    "file": "data/city_files/Novi/e348d8_gym-entrance-and-parking-updated-sep-2026.pdf",
+    "rows": 23,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/3j3fadtl/2026diwalifest_parking_map.pdf",
+    "text": "2026Diwalifest Parking Map",
+    "file": "data/city_files/Novi/d3ad58_2026diwalifest_parking_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/l1yp0ggg/finalnon-motorizedmasterplan-summarymap.pdf",
+    "text": "Download",
+    "file": "data/city_files/Novi/e7c177_finalnon-motorizedmasterplan-summarymap.pdf",
+    "rows": 7,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofnovi.org/media/roil4orl/itc-trail-map_2023_web.pdf",
+    "text": "Map - ITC Corridor Trail and Facilities",
+    "file": "data/city_files/Novi/fc8be1_itc-trail-map_2023_web.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofnovi.org/media/eqqjoapt/projects-map.pdf",
+    "text": "Projects Map",
+    "file": "data/city_files/Novi/3cc04c_projects-map.pdf",
+    "rows": 13,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://cityofnovi.org/media/20dbxpv1/noviamp_map_4-1-2024.pdf",
+    "text": "Download",
+    "file": "data/city_files/Novi/49910d_noviamp_map_4-1-2024.pdf",
+    "rows": 17,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://cityofnovi.org/media/clvj4mdv/map-watertowerparkfacilities.pdf",
+    "text": "Map Watertowerparkfacilities",
+    "file": "data/city_files/Novi/b38240_map-watertowerparkfacilities.pdf",
+    "rows": 6,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofnovi.org/media/rtrnksvf/street-map-destinations.pdf",
+    "text": "Street Map Destinations",
+    "file": "data/city_files/Novi/31727f_street-map-destinations.pdf",
+    "rows": 98,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://cityofnovi.org/media/10xbxsoj/2026-street-map-destinations.pdf",
+    "text": "Open",
+    "file": "data/city_files/Novi/b183d0_2026-street-map-destinations.pdf",
+    "rows": 99,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://cityofnovi.org/media/trdjbuza/contractors-sidewalk-snow-clearing-map-book.pdf",
+    "text": "Open",
+    "file": "data/city_files/Novi/38de8a_contractors-sidewalk-snow-clearing-map-book.pdf",
+    "rows": 46,
+    "bike_rows": 19
+   },
+   {
+    "url": "https://cityofnovi.org/media/qv2hstam/contractors-sidewalk-snow-clearing-map-book.pdf",
+    "text": "View City of Novi Sidewalk Snow Clearing Areas",
+    "file": "data/city_files/Novi/9c6f3b_contractors-sidewalk-snow-clearing-map-book.pdf",
+    "rows": 46,
+    "bike_rows": 19
+   },
+   {
+    "url": "https://cityofnovi.org/media/t1qpvsql/map-ellamaeparkfacilities.pdf",
+    "text": "Ella Mae Power Park Facility and Activity Areas Map",
+    "file": "data/city_files/Novi/3f4f85_map-ellamaeparkfacilities.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofnovi.org/media/njbagvvf/map-meadowbrookroadclosure.pdf",
+    "text": "Map Meadowbrookroadclosure",
+    "file": "data/city_files/Novi/fcff24_map-meadowbrookroadclosure.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofnovi.org/media/ci3fr2ii/map-wixomroadrehabilitationdetour.pdf",
+    "text": "Map Wixomroadrehabilitationdetour",
+    "file": "data/city_files/Novi/7c3cc5_map-wixomroadrehabilitationdetour.pdf",
+    "rows": 9,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofnovi.org/media/4tbp3cv5/map-currentparcelsonroll.pdf",
+    "text": "Map Currentparcelsonroll",
+    "file": "data/city_files/Novi/ea65ab_map-currentparcelsonroll.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofnovi.org/media/2fcco31k/glwa-meadowbrook-detour-map.pdf",
+    "text": "GLWA Meadowbrook Detour Map",
+    "file": "data/city_files/Novi/35437c_glwa-meadowbrook-detour-map.pdf",
+    "rows": 15,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://cityofnovi.org/media/mqqhjzx0/wildlifewoodst-itc-pathway-map.pdf",
+    "text": "Wildlifewoodst ITC Pathway Map",
+    "file": "data/city_files/Novi/8ba6f0_wildlifewoodst-itc-pathway-map.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofnovi.org/media/rpkbcifp/map-grandriversoccerfields-copy.pdf",
+    "text": "Download the Grand River Soccer Fields Map",
+    "file": "data/city_files/Novi/388072_map-grandriversoccerfields-copy.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/l32o11t0/map-zoningamendment.pdf",
+    "text": "Map - Zoning Amendment",
+    "file": "data/city_files/Novi/5a2b07_map-zoningamendment.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/tc5j0acp/parcel-map-2025.pdf",
+    "text": "Parcel Map 2025",
+    "file": "data/city_files/Novi/2ef1f6_parcel-map-2025.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofnovi.org/media/e43bdbpx/police-district-street-map.pdf",
+    "text": "Police District Street Map",
+    "file": "data/city_files/Novi/661fdf_police-district-street-map.pdf",
+    "rows": 82,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://cityofnovi.org/media/tcrdvizz/map-firedistricts-automaticamutualaidresponseareas.pdf",
+    "text": "Map Firedistricts Automaticamutualaidresponseareas",
+    "file": "data/city_files/Novi/0c3174_map-firedistricts-automaticamutualaidresponseareas.pdf",
+    "rows": 12,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofnovi.org/media/w3dbgogh/wildlifewoodst-itc-pathway-map.pdf",
+    "text": "Click here for the Pathway Connector map",
+    "file": "data/city_files/Novi/eee117_wildlifewoodst-itc-pathway-map.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofnovi.org/media/jaaeluj5/lakeshorepark-south-lake-detour-map.pdf",
+    "text": "Lakeshorepark South Lake Detour Map",
+    "file": "data/city_files/Novi/beee2a_lakeshorepark-south-lake-detour-map.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofnovi.org/media/ppwjwvwf/taft-road-rehabilitation-detour-map.pdf",
+    "text": "Taft Road Rehabilitation Detour Map",
+    "file": "data/city_files/Novi/598c5e_taft-road-rehabilitation-detour-map.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofnovi.org/media/vmjnmpjy/wixom-rd-rehab-detour-map.pdf",
+    "text": "Wixom Rd Rehab Detour Map",
+    "file": "data/city_files/Novi/eeaba0_wixom-rd-rehab-detour-map.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofnovi.org/media/rg5pcvrr/residential-crossconnection-control-district-map.pdf",
+    "text": "Residential Crossconnection Control District Map",
+    "file": "data/city_files/Novi/b932ee_residential-crossconnection-control-district-map.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofnovi.org/media/ynslz040/nv21003-wildlife-woods-expansion-scope-map-003.pdf",
+    "text": "2024 Updates",
+    "file": "data/city_files/Novi/835d7e_nv21003-wildlife-woods-expansion-scope-map-003.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofnovi.org/media/54znms4q/2025-28-sewer-contract-location-map.pdf",
+    "text": "2025 28 Sewer Contract Location Map",
+    "file": "data/city_files/Novi/9895d1_2025-28-sewer-contract-location-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/x01g2p4t/map-proposedcorridorimprovementsboundariesgrandriverave.pdf",
+    "text": "Map Proposed corridor improvements boundaries grand riverave",
+    "file": "data/city_files/Novi/b074cd_map-proposedcorridorimprovementsboundariesgrandriverave.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofnovi.org/media/bu0hgiom/residentialcrossconnectioncontroldistrictmap.pdf",
+    "text": "Residential Cross Connection Control District Map",
+    "file": "data/city_files/Novi/19fefd_residentialcrossconnectioncontroldistrictmap.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofnovi.org/media/i2ep1td4/2024nsrp_map.pdf",
+    "text": "2024NSRP Map",
+    "file": "data/city_files/Novi/77ca07_2024nsrp_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/qsjpyayn/city-west-map.pdf",
+    "text": "City West Map",
+    "file": "data/city_files/Novi/f74725_city-west-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/du0fddf0/expo-booth-numbers-map.pdf",
+    "text": "EXPO Booth Numbers & Map",
+    "file": "data/city_files/Novi/aaf867_expo-booth-numbers-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/0gjhhrtl/phase-2-detour-map.pdf",
+    "text": "Phase 2 Detour Map",
+    "file": "data/city_files/Novi/0a1f30_phase-2-detour-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/sqgoyrpq/food-scrap-tollgate-map.pdf",
+    "text": "Food Scrap Tollgate Map",
+    "file": "data/city_files/Novi/2d4364_food-scrap-tollgate-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/xpijgbuk/roadway-weight-classifications_2026_24x36.pdf",
+    "text": "Road way weight classifications map",
+    "file": "data/city_files/Novi/6359c2_roadway-weight-classifications_2026_24x36.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/apps/dashboards/4b7564e45eb54152a8b63ebbc97cc0ca": "Open",
+   "https://experience.arcgis.com/experience/b00e5794be9241149fcffece3f0ad907": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/nearby/index.html?appid=6051c5546ae744448ed77df867ccf2b0": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/lookup/index.html?appid=2b5b9327742c4fdf982abdecdfe4169c": "Open",
+   "https://experience.arcgis.com/experience/98ab8d2a9fa7409a943a0a13befd4c99/": "Open",
+   "https://storymaps.arcgis.com/stories/140d2e296f9f4fb897f4ae050c3f4aae": "Open",
+   "https://experience.arcgis.com/experience/b2498bce60be464088f413530c6a94d7/": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/lookup/index.html?appid=84ed2edad74d4f9eb10d2f1a55c02114": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/media/index.html?appid=9cd151f7911740fc97c76bab59a534d2": "Open",
+   "https://www.arcgis.com/apps/dashboards/453355bf8a1e4b42a7b86c3d7274ae76": "Open",
+   "https://experience.arcgis.com/experience/6ce426b3d076414294eacc49b6b74dd4/": "Open",
+   "https://experience.arcgis.com/experience/e070694a129f4018bd3c3e912237e806/": "Open",
+   "https://experience.arcgis.com/experience/806034b9971c45e39e3ce9f639e62f5a/": "Open",
+   "https://experience.arcgis.com/experience/85a589439bdf43d28bd119942cf5deeb/": "Open",
+   "https://experience.arcgis.com/experience/0b0fb1586e0e41748e08a529862e9ee0/": "Open",
+   "https://experience.arcgis.com/experience/9db3d439b8ba4cffa3fe1a2497874d80/": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/sidebar/index.html?appid=ee9b5aa17e014457a0391447af13ab25": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/lookup/index.html?appid=8f1423dc80874d3ca6349f28486168a2": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/lookup/index.html?appid=15cbc09119514c39bd6a29b28adc2b1b": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/basic/index.html?appid=60e411c2a6df46c0bb23dde613e0b55a": "Open",
+   "https://storymaps.arcgis.com/stories/cc3f0d3e09a94a528edcba440d28b8ea": "Open",
+   "https://storymaps.arcgis.com/stories/b1742a0f8535473b8ab4c7d3683f5051": "Open",
+   "https://experience.arcgis.com/experience/3e11b892541047a791f68fe2f91cddcf/": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/lookup/index.html?appid=11027b44b3224ec4b54efbaecc357372": "Open",
+   "https://experience.arcgis.com/experience/b1c132a8f46d489fb3187c71cc06d41f/": "Open",
+   "https://experience.arcgis.com/experience/55eb3612cade4e50af8b79166e2a9dcf/": "Open",
+   "https://experience.arcgis.com/experience/1a48783991d1483a8279bec335d836ca/": "Open",
+   "https://experience.arcgis.com/experience/af1bc4c88c224c2db4f28e1aa17674a7/": "Open",
+   "https://experience.arcgis.com/experience/b1a584e8388c4977b4f5365d7240edfa/": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/nearby/index.html?appid=1e35c4b369d6452083356bf54c5b0b95": ""
+  }
+ },
+ "Port Orange": {
+  "files": [],
+  "portals": {}
+ },
+ "Caldwell": {
+  "files": [],
+  "portals": {}
+ },
+ "Highland": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/463da49139744cafa0eaad6c88fcef22/page/Page": "GIS Maps",
+   "https://experience.arcgis.com/experience/463da49139744cafa0eaad6c88fcef22": "City GIS"
+  }
+ },
+ "Elkhart": {
+  "files": [
+   {
+    "url": "https://media-002-us.cdn.govstack.com/elkhartindiana-us/media/yo2cti5v/approved-2026-meeting-dates-lf.pdf",
+    "text": "2026 Historic & Cultural Preservation Commission Calendar",
+    "file": "data/city_files/Elkhart/e0c2c2_approved-2026-meeting-dates-lf.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/elkhartindiana-us/media/zjoia0e2/2026-calendar-elkhartrail175.pdf",
+    "text": "Click to Download Calendar",
+    "file": "data/city_files/Elkhart/b3b6ec_2026-calendar-elkhartrail175.pdf",
+    "rows": 37,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/elkhartindiana-us/media/hgen22zo/batchannouncement-2026-v2_fillable_pdf.pdf",
+    "text": "Batch Discharge Announcement (PDF)",
+    "file": "data/city_files/Elkhart/03086a_batchannouncement-2026-v2_fillable_pdf.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/elkhartindiana-us/media/3yiirwkg/section-80-pretreatment-surcharge-and-surveillance-charges.pdf",
+    "text": "Pretreatment Surcharges and Surveillance Charges (PDF)",
+    "file": "data/city_files/Elkhart/817f48_section-80-pretreatment-surcharge-and-surveillance-charges.pdf",
+    "rows": 22,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/elkhartindiana-us/media/bhhbynlo/elkhart-dental-certification-form.pdf",
+    "text": "One-Time Compliance Report for Dental Dischargers (PDF)",
+    "file": "data/city_files/Elkhart/ec0d4c_elkhart-dental-certification-form.pdf",
+    "rows": 86,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/elkhartindiana-us/media/4ndjra15/right-of-way-ada-transition-plan.pdf",
+    "text": "Right-of-Way Transition Plan (PDF)",
+    "file": "data/city_files/Elkhart/5312bd_right-of-way-ada-transition-plan.pdf",
+    "rows": 135,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/elkhartindiana-us/media/4shmnl0n/transition-plan-2-psf-final-12-12-12.pdf",
+    "text": "Programs, Services, and Facilities Transition Plan (PDF)",
+    "file": "data/city_files/Elkhart/ec3172_transition-plan-2-psf-final-12-12-12.pdf",
+    "rows": 936,
+    "bike_rows": 61
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/elkhartindiana-us/media/t03eaw3d/proposed-policy-for-residential-ada-parking-spaces.pdf",
+    "text": "Proposed Policy for ADA Parking Spaces in Residential Neighborhoods  (PDF)",
+    "file": "data/city_files/Elkhart/e2a2c3_proposed-policy-for-residential-ada-parking-spaces.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/9b10bca60a2b4f7783e3f79a3150ee16": "Road Closure Map",
+   "https://elkhart.maps.arcgis.com/apps/webappviewer/index.html?id=8c07ca074f704e4883183922dba9060c": "View all Parks",
+   "https://elkhart.maps.arcgis.com/apps/webappviewer/index.html?id=3f909360a655468baad7324676f8a930": "https://elkhart.maps.arcgis.com",
+   "https://lead-service-line-inventory-elkhart.hub.arcgis.com/": "Lead page (External URL)",
+   "https://experience.arcgis.com/experience/51e5f4c3798543c2b7123648cf47e184": "https://experience.arcgis.com/experience/51e5f4c3798543c2b7123648cf47e184",
+   "https://experience.arcgis.com/experience/d044498cf9df46c5be120de3481d3cb3": "Hydrant Flushing Map (External URL)",
+   "https://elkhart.maps.arcgis.com/apps/webappviewer/index.html?id=690f4801bafa407d934162a8a9f78204&RecyclingPick-upDays=": "Online Map (External URL)",
+   "https://storymaps.arcgis.com/stories/7e0f95e549ef43d18b2363760c719bbc": "story map (External URL)"
+  }
+ },
+ "Marana": {
+  "files": [
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/03-29-referencemap2022_v4.pdf",
+    "text": "Town of Marana Reference Map (PDF, 17MB)",
+    "file": "data/city_files/Marana/53d27c_03-29-referencemap2022_v4.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/tortolita_trails_2019.pdf",
+    "text": "Tortolita Trails (PDF, 2MB)",
+    "file": "data/city_files/Marana/b50c26_tortolita_trails_2019.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/tortolitapreserve_2019.pdf",
+    "text": "Tortolita Preserve Trails (PDF, 418KB)",
+    "file": "data/city_files/Marana/b74740_tortolitapreserve_2019.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/operations_center_2022.pdf",
+    "text": "Marana Operations Center (PDF, 3MB)",
+    "file": "data/city_files/Marana/270193_operations_center_2022.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/airport_2019_basic.pdf",
+    "text": "Marana Regional Airport (PDF, 1MB)",
+    "file": "data/city_files/Marana/f22730_airport_2019_basic.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/parksandrec_2019.pdf",
+    "text": "Marana Parks and Recreation Administration (PDF, 501KB)",
+    "file": "data/city_files/Marana/044441_parksandrec_2019.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/maranaseniorcenter_2019.pdf",
+    "text": "Marana Senior Center (PDF, 505KB)",
+    "file": "data/city_files/Marana/bbe01d_maranaseniorcenter_2019.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/2/town-manager/documents/maps/chamber_of_commerce_location_2025.pdf",
+    "text": "Marana Chamber of Commerce (PDF, 1MB)",
+    "file": "data/city_files/Marana/4cd8b5_chamber_of_commerce_location_2025.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/maranamunicipalfacilities_2019.pdf",
+    "text": "Marana Municipal Facilities (PDF, 1MB)",
+    "file": "data/city_files/Marana/6acc48_maranamunicipalfacilities_2019.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig2-5_maranagp_bikeways.pdf",
+    "text": "Bikeways (PDF, 544KB)",
+    "file": "data/city_files/Marana/38895d_fig2-5_maranagp_bikeways.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig4-2_maranagp_floodway_and_floodplains.pdf",
+    "text": "Floodway & Floodplains (PDF, 648KB)",
+    "file": "data/city_files/Marana/353dad_fig4-2_maranagp_floodway_and_floodplains.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig2-4_maranagp_2040_future_circulation.pdf",
+    "text": "Future Circulation (PDF, 1MB)",
+    "file": "data/city_files/Marana/614f8a_fig2-4_maranagp_2040_future_circulation.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig2-3_maranagp_2040_future_land_use.pdf",
+    "text": "Future Land Use (PDF, 660KB)",
+    "file": "data/city_files/Marana/7fe885_fig2-3_maranagp_2040_future_land_use.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig2-2_maranagp_growth_area.pdf",
+    "text": "Growth Areas (PDF, 974KB)",
+    "file": "data/city_files/Marana/7f3cc7_fig2-2_maranagp_growth_area.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig2-7_and_2-8_maranagp_airports.pdf",
+    "text": "Marana Airports (PDF, 2MB)",
+    "file": "data/city_files/Marana/5dd103_fig2-7_and_2-8_maranagp_airports.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig2-1_maranagp_military_compatibility_area.pdf",
+    "text": "Military Compatibility (PDF, 554KB)",
+    "file": "data/city_files/Marana/3079f2_fig2-1_maranagp_military_compatibility_area.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig4-1_maranagp_open_space.pdf",
+    "text": "Open Space (PDF, 2MB)",
+    "file": "data/city_files/Marana/751659_fig4-1_maranagp_open_space.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig3-2_maranagp_parks_and_rec.pdf",
+    "text": "Parks & Recreation (PDF, 1MB)",
+    "file": "data/city_files/Marana/25f6f9_fig3-2_maranagp_parks_and_rec.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig1-1_maranagp_planning_area.pdf",
+    "text": "Planning Area (PDF, 1MB)",
+    "file": "data/city_files/Marana/4b5ecf_fig1-1_maranagp_planning_area.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig3-1_maranagp_public_safety.pdf",
+    "text": "Public Safety (PDF, 645KB)",
+    "file": "data/city_files/Marana/79331e_fig3-1_maranagp_public_safety.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig2-9_maranagp_public_services_and_facilities.pdf",
+    "text": "Public Services & Facilities (PDF, 532KB)",
+    "file": "data/city_files/Marana/189ced_fig2-9_maranagp_public_services_and_facilities.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/1/town-manager/documents/maps/fig2-6_maranagp_transit.pdf",
+    "text": "Transit (PDF, 513KB)",
+    "file": "data/city_files/Marana/795326_fig2-6_maranagp_transit.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://marana.com/files/assets/cityofmarana/v/2/parks-amp-rec/documents/tortolita-trails-map-2024-digital.pdf",
+    "text": "View Tortolita Mountains Trail Map (PDF, 4MB)",
+    "file": "data/city_files/Marana/c4c58f_tortolita-trails-map-2024-digital.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maranaaz.gov/files/assets/cityofmarana/v/2/communityneighborhood-srvs/documents/recycle-event-flyer-8.5x11.pdf",
+    "text": "View the event flyer here (PDF, 229KB)",
+    "file": "data/city_files/Marana/be5902_recycle-event-flyer-8.5x11.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maranaaz.gov/files/assets/cityofmarana/v/2/parks-amp-rec/documents/maps/2025-crossroads-at-silverbell-district-park-map.pdf",
+    "text": "Download PDF (PDF, 1MB)",
+    "file": "data/city_files/Marana/fe67ca_2025-crossroads-at-silverbell-district-park-map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maranaaz.gov/files/assets/cityofmarana/v/2/development-services/documents/data-centers/luckett-data-center.pdf",
+    "text": "Project map (PDF, 220KB)",
+    "file": "data/city_files/Marana/133567_luckett-data-center.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maranaaz.gov/files/assets/cityofmarana/v/2/parks-amp-rec/documents/maps/2025-continental-ranch-community-park-map.pdf",
+    "text": "Download PDF (PDF, 474KB)",
+    "file": "data/city_files/Marana/826367_2025-continental-ranch-community-park-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maranaaz.gov/files/assets/cityofmarana/v/1/parks-amp-rec/documents/signature-events/2026-fall-festival-map-public.pdf",
+    "text": "Click here to view and/or download the map as a PDF. (PDF, 885KB)",
+    "file": "data/city_files/Marana/5b1d13_2026-fall-festival-map-public.pdf",
+    "rows": 8,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.maranaaz.gov/files/assets/cityofmarana/v/2/parks-amp-rec/documents/maps/2025-heritage-river-park-map.pdf",
+    "text": "Download PDF (PDF, 19MB)",
+    "file": "data/city_files/Marana/04d020_2025-heritage-river-park-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.maranaaz.gov/files/assets/cityofmarana/v/1/public-works/documents/kiosk-sign-map-2025.07.23.pdf",
+    "text": "on this map (PDF, 2MB)",
+    "file": "data/city_files/Marana/04c5fa_kiosk-sign-map-2025.07.23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://marana-open-data-portal-marana.hub.arcgis.com/": "Access Our Open Data Portal",
+   "https://marana.maps.arcgis.com/apps/instant/3dviewer/index.html?appid=5fa344062b6a4a46a3c88b904236ba5b": "Tortolita Trails",
+   "https://experience.arcgis.com/experience/66f0ef6b90b54b6395fbb4a9bce2c312": "The Loop Interactive Map",
+   "https://experience.arcgis.com/experience/cf97062dd69f462d99b236ce1609f91d/": "View the Transportation Master Plan Dashboard",
+   "https://experience.arcgis.com/experience/9bcda179c412496a8be2a5af29727745/page/Page-4/?views=Community-Improvements": "Current & Proposed Projects Map"
+  }
+ },
+ "Jeffersonville": {
+  "files": [
+   {
+    "url": "http://cityofjeff.net/wp-content/uploads/2020/10/images_pdfs_tifmap.pdf",
+    "text": "TIF",
+    "file": "data/city_files/Jeffersonville/9e5467_images_pdfs_tifmap.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://cityofjeff.net/wp-content/uploads/2020/10/images_pdfs_neighborhoodmap.pdf",
+    "text": "Neighborhoods",
+    "file": "data/city_files/Jeffersonville/2fd451_images_pdfs_neighborhoodmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://cityofjeff.net/wp-content/uploads/2020/10/images_uez-map.pdf",
+    "text": "UEZ",
+    "file": "data/city_files/Jeffersonville/ef98c3_images_uez-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Cleveland": {
+  "files": [],
+  "portals": {}
+ },
+ "Cleveland Heights": {
+  "files": [],
+  "portals": {
+   "https://clevelandheights.maps.arcgis.com/apps/instant/lookup/index.html?appid=00aab83e4c6f4fa280853b6a257d8628": "Leaf Pickup Schedule/Map",
+   "https://clevelandheights.maps.arcgis.com/apps/MapTour/index.html?appid=d436b47ee8c44438b620d51ec1acc302": "Cleveland Heights landmarks",
+   "https://clevelandheights.maps.arcgis.com/apps/InformationLookup/index.html?appid=b9322edbe05f434c981b1886d864c417": "New Resident Information",
+   "https://clevelandheights.maps.arcgis.com/apps/webappviewer/index.html?id=8dbfd6e113954b478fe6aabca78d4d89": "Parks and Recreation Locator",
+   "https://clevelandheights.maps.arcgis.com/apps/webappviewer/index.html?id=e338abf9b78a498e96289c23bc8129cd": "Schools",
+   "https://clevelandheights.maps.arcgis.com/apps/webappviewer/index.html?id=9b4bc8f58f714a09b4b7838da4074564": "Zoning Map"
+  }
+ },
+ "Eagle Mountain": {
+  "files": [],
+  "portals": {}
+ },
+ "Columbia": {
+  "files": [],
+  "portals": {
+   "https://columbiatn.com/opendata": "City Projects",
+   "https://columbiatn.com/open-data": "City Projects"
+  }
+ },
+ "Ossining": {
+  "files": [],
+  "portals": {}
+ },
+ "Clovis": {
+  "files": [],
+  "portals": {
+   "https://clovis.maps.arcgis.com/apps/webappviewer/index.html?id=5ff62ed160354a949f9a1fa74ebeafca": "My Garbage Day"
+  }
+ },
+ "Bolívar Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Texarkana": {
+  "files": [],
+  "portals": {}
+ },
+ "Meridian": {
+  "files": [
+   {
+    "url": "https://meridianms.org/wp-content/uploads/2023/07/Sewer-Mapping-Program.pdf",
+    "text": "Sewer Mapping Program",
+    "file": "data/city_files/Meridian/19bc05_Sewer-Mapping-Program.pdf",
+    "rows": 89,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://meridianms.org/wp-content/uploads/2023/07/SMP-Approval-Letter_Signed-JC-Recd-10-2-20.pdf",
+    "text": "Sewer Mapping Program Approval Letter",
+    "file": "data/city_files/Meridian/60ae1c_SMP-Approval-Letter_Signed-JC-Recd-10-2-20.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://meridianms.org/wp-content/uploads/2023/07/PSFMOM-r1.pdf",
+    "text": "Pump Station and Force Main Operations Preventative Maintenance Program",
+    "file": "data/city_files/Meridian/8a98e5_PSFMOM-r1.pdf",
+    "rows": 69,
+    "bike_rows": 15
+   }
+  ],
+  "portals": {}
+ },
+ "Gadsden": {
+  "files": [],
+  "portals": {
+   "https://gadsden.maps.arcgis.com/apps/webappviewer/index.html?id=5930b57599584528b7d89701398e353a": "Map of City Parks and Facilities"
+  }
+ },
+ "Cañada de Gómez": {
+  "files": [],
+  "portals": {}
+ },
+ "Paso Robles": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/1b2474c456734ba8a5331582c44895dd?portalUrl=https://maps.prcity.com/portal": "Click here to complete the Security Camera Registration and Mapping (SCRAM) Form"
+  }
+ },
+ "Morgantown": {
+  "files": [],
+  "portals": {
+   "https://morgantownwv.maps.arcgis.com/apps/instant/sidebar/index.html?appid=7e73a491ac63495b846f4ada7358f24f": "City of Morgantown Zoning Viewer",
+   "https://geohub-morgantownwv.hub.arcgis.com/": "GeoHub",
+   "https://morgantownwv.maps.arcgis.com/apps/mapviewer/index.html?webmap=0bd5b5618c534a4884ee5c22c8daa446": "Morgantown Ward Map",
+   "https://morgantownwv.maps.arcgis.com/apps/instant/lookup/index.html?appid=d647fae667fb43d1af49040701b682c9": "Morgantown City Council Lookup"
+  }
+ },
+ "Paragould": {
+  "files": [],
+  "portals": {}
+ },
+ "Milton": {
+  "files": [
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle-Smart-Infographic-1-1.pdf",
+    "text": "Recycle Smart Guide- English",
+    "file": "data/city_files/Milton/ccb811_Recycle-Smart-Infographic-1-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle_Smart_Infographic-Spanish.pdf",
+    "text": "Recycle Smart Guide- Spanish",
+    "file": "data/city_files/Milton/b7116d_Recycle_Smart_Infographic-Spanish.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-French-Final.pdf",
+    "text": "Recycle Smart Guide- French",
+    "file": "data/city_files/Milton/2dac68_Smart-Recycling-Guide-French-Final.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "text": "Recycle Smart Guide- Mandarin",
+    "file": "data/city_files/Milton/9365a3_Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Hindi.pdf",
+    "text": "Recycle Smart Guide- Hindi",
+    "file": "data/city_files/Milton/039bcd_smart-recycling-guide-Hindi.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mapsonline.net/peopleforms/htdocs/MapsOnline%20Help.pdf",
+    "text": "Help",
+    "file": "data/city_files/Milton/f6521a_MapsOnline_20Help.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://www.rigis.org/": "Rhode Island GIS",
+   "http://boston.maps.arcgis.com/apps/Solutions/s2.html?appid=9ea0e4d25ded4b1db96149f08c776dce": "City of Boston",
+   "http://maps.massgis.state.ma.us/map_ol/canton.php": "Town of Canton",
+   "http://gis.dedham-ma.gov/propertyviewer/": "Town of Dedham",
+   "http://www.peoplegis.com": "PeopleGIS"
+  }
+ }
+}
