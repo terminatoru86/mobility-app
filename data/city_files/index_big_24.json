@@ -1,0 +1,1472 @@
+{
+ "Lexington KY": {
+  "files": [
+   {
+    "url": "https://content.lexingtonky.gov/sites/default/files/2024-10/Handicap%20Parking%20Space%20Application.pdf",
+    "text": "Handicap Parking Space Application",
+    "file": "data/city_files/Lexington_KY/b15013_Handicap_20Parking_20Space_20Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.lexingtonky.gov/": "Open data"
+  }
+ },
+ "Modesto CA": {
+  "files": [],
+  "portals": {
+   "https://gis.modestogov.com": "How to Find Zoning",
+   "https://gis.modestogov.com/portal/apps/experiencebuilder/experience/?id=08bbb40a99524ecf929ca8cb4a328f1a": "Interactive Map",
+   "https://gis.modestogov.com/portal/apps/experiencebuilder/experience/?id=339fbe54d00b44cd8d20f4ecd0946ff1": "Map of Modesto Parks",
+   "https://gis.modestogov.com/portal/apps/webappviewer/index.html?id=ccf8ac9c897c423da783157dd0656059": "Parks and Facilities Map",
+   "https://experience.arcgis.com/experience/2f93e55fe81a40bcb20efed616e8fe19": "Interactive Map of Projects"
+  }
+ },
+ "Dallas County": {
+  "files": [],
+  "portals": {}
+ },
+ "Collin County": {
+  "files": [],
+  "portals": {}
+ },
+ "Hempstead": {
+  "files": [],
+  "portals": {}
+ },
+ "Johnson County": {
+  "files": [
+   {
+    "url": "https://www.jocogov.org/sites/default/files/files/2021-10/dhe-BTG-MRF-Audit-Report-4-2019.pdf",
+    "text": "2019 Recycling Waste Sort report",
+    "file": "data/city_files/Johnson_County/12e63a_dhe-BTG-MRF-Audit-Report-4-2019.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://aims.jocogov.org/documents/IMSUserGuide.pdf",
+    "text": "Online Mapping Help",
+    "file": "data/city_files/Johnson_County/4d49a9_IMSUserGuide.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://aims.jocogov.org/Documents/hardcopymaps2007.pdf",
+    "text": "Hardcopy Maps (PDF)",
+    "file": "data/city_files/Johnson_County/67b23b_hardcopymaps2007.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://aims.jocogov.org/Documents/internetmapping.pdf",
+    "text": "Online Mapping (PDF)",
+    "file": "data/city_files/Johnson_County/72c0aa_internetmapping.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://jocogov.org/sites/default/files/files/2025-02/2025%20CARS%20Additional%20Eligible%20Routes%20Map-R.pdf",
+    "text": "2025 CARS Additional Eligible Routes Map",
+    "file": "data/city_files/Johnson_County/9a0202_2025_20CARS_20Additional_20Eligible_20Routes_20Map-R.pdf",
+    "rows": 24,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "http://aims.maps.arcgis.com/apps/webappviewer/index.html?id=d8e454c3c45845f5b3c26feaef1a8173 ": "KC Metro Right of Way Utility Coordination Map"
+  }
+ },
+ "Adams County": {
+  "files": [],
+  "portals": {}
+ },
+ "Oakland": {
+  "files": [
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/CWS-Battery-Recycling-Bro-Post.pdf",
+    "text": "Battery Recycling Information (PDF)",
+    "file": "data/city_files/Oakland/3c6be4_CWS-Battery-Recycling-Bro-Post.pdf",
+    "rows": 36,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2025/01/Oakland-FSB-2023-24-English-Handout.pdf",
+    "text": "English",
+    "file": "data/city_files/Oakland/2a6d76_Oakland-FSB-2023-24-English-Handout.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/07/Oakland-FSB-2023-24-Spanish-Handout.pdf",
+    "text": "Español",
+    "file": "data/city_files/Oakland/406b54_Oakland-FSB-2023-24-Spanish-Handout.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/07/Oakland-FSB-2023-24-Chinese-Handout.pdf",
+    "text": "中国人",
+    "file": "data/city_files/Oakland/1593af_Oakland-FSB-2023-24-Chinese-Handout.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/07/Oakland-FSB-2023-24-Vietnamese-Handout.pdf",
+    "text": "Tiếng Việt",
+    "file": "data/city_files/Oakland/5f3314_Oakland-FSB-2023-24-Vietnamese-Handout.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/04/Oakland-SFD-MFD-FSB-2022-MAIL_FARSI.pdf",
+    "text": "فارسی",
+    "file": "data/city_files/Oakland/62adc5_Oakland-SFD-MFD-FSB-2022-MAIL_FARSI.pdf",
+    "rows": 21,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/07/Oakland-SFD-MFD-FSB-Arabic.pdf",
+    "text": "عربي",
+    "file": "data/city_files/Oakland/06b592_Oakland-SFD-MFD-FSB-Arabic.pdf",
+    "rows": 25,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/10/oakland-sfd-oct-24-insert.pdf",
+    "text": "October 2024",
+    "file": "data/city_files/Oakland/63190f_oakland-sfd-oct-24-insert.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/10/sfd-july-2024-bill-insert.pdf",
+    "text": "July 2024",
+    "file": "data/city_files/Oakland/71dd47_sfd-july-2024-bill-insert.pdf",
+    "rows": 11,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/10/oakland-sfd-April-24-insert.pdf",
+    "text": "April 2024",
+    "file": "data/city_files/Oakland/0b7530_oakland-sfd-April-24-insert.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2024/10/oakland-sfd-Jan-24-insert.pdf",
+    "text": "January 2024",
+    "file": "data/city_files/Oakland/d37313_oakland-sfd-Jan-24-insert.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/06/oakland-sorting-guide_dec2025.pdf",
+    "text": "Printable Sorting Guide",
+    "file": "data/city_files/Oakland/b9935a_oakland-sorting-guide_dec2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_SP.pdf",
+    "text": "Descargar Desechos Voluminosos",
+    "file": "data/city_files/Oakland/59be2d_Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_SP.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_VI.pdf",
+    "text": "Hướng dẫn thu gom rác thải cồng kềnh",
+    "file": "data/city_files/Oakland/90163a_Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_VI.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_TC.pdf",
+    "text": "大件垃圾丟送說明",
+    "file": "data/city_files/Oakland/96e339_Oakland-Bulky-Confirmation-Instructions-Drop-Off-Mailer_TC.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/DSTS-Drop-off-map.pdf",
+    "text": "View Drop-off Map",
+    "file": "data/city_files/Oakland/3c92c0_DSTS-Drop-off-map.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Postcard-MFD-SP.pdf",
+    "text": "Recolección de artículos voluminosos",
+    "file": "data/city_files/Oakland/8607e3_Oakland-Bulky-Confirmation-Instructions-Postcard-MFD-SP.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Postcard-MFD-VI.pdf",
+    "text": "Thu gom rác thải cồng kềnh bên lề đường",
+    "file": "data/city_files/Oakland/1631e1_Oakland-Bulky-Confirmation-Instructions-Postcard-MFD-VI.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandrecycles.com/wp-content/uploads/2022/03/Oakland-Bulky-Confirmation-Instructions-Postcard-SFD_TC.pdf",
+    "text": "大件垃圾路邊收集說明",
+    "file": "data/city_files/Oakland/472b2f_Oakland-Bulky-Confirmation-Instructions-Postcard-SFD_TC.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/used-motor-oil-and-filter-recycling-guide.pdf",
+    "text": "Used Motor Oil and Filter Recycling Guide (PDF, 6MB)",
+    "file": "data/city_files/Oakland/9e06b2_used-motor-oil-and-filter-recycling-guide.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/used-motor-oil-and-filter-recycling-guide-spanish.pdf",
+    "text": "Guía De Reciclaje de Aceite de Motor Y Filtro de Aceite Usados (PDF, 5MB)",
+    "file": "data/city_files/Oakland/861b1e_used-motor-oil-and-filter-recycling-guide-spanish.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/used-motor-oil-and-filter-recycling-guide-chinese.pdf",
+    "text": "舊機油和機油濾心回收指南 (PDF, 6MB)",
+    "file": "data/city_files/Oakland/c494d5_used-motor-oil-and-filter-recycling-guide-chinese.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/faq-for-subscription-fees.pdf",
+    "text": "Mandatory Garbage Subscription Fee Frequently Asked Questions (PDF, 174KB)",
+    "file": "data/city_files/Oakland/766fb4_faq-for-subscription-fees.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/administrative-hearing-questionairre-08.13.2024.pdf",
+    "text": "Administrative Hearing Questionnaire - English (PDF, 115KB)",
+    "file": "data/city_files/Oakland/617e70_administrative-hearing-questionairre-08.13.2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-works/documents/waste-recycling/citywide-liens-administrative-hearing-form-en-zh_hant-r-c_tc.pdf",
+    "text": "行政聽證會調查表 - Chinese (PDF, 136KB)",
+    "file": "data/city_files/Oakland/2b72a8_citywide-liens-administrative-hearing-form-en-zh_hant-r-c_tc.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.oaklandca.gov/": "View More Data",
+   "https://oakgis.maps.arcgis.com/apps/instant/lookup/index.html?appid=da589a352c8641459af8a0f890398d44": "Find Your Council District",
+   "https://survey123.arcgis.com/share/91d2ff4e5d204da6875d1e5532b3ede6": "Volunteer Interest Form",
+   "https://www.arcgis.com/apps/dashboards/ab32f79e83e3435fbf7844b7e6f92575": "Park Lawn Mowing Schedule",
+   "https://www.arcgis.com/apps/dashboards/7b4cc00d79274452895de7084f825d8c": "Median Maintenance Schedule Map",
+   "https://oakland-tree-hub-oakgis.hub.arcgis.com/": "Oakland Street & Park Tree Map",
+   "https://oakgis.maps.arcgis.com/apps/instant/exhibit/index.html?appid=f418c905e1714cfc8a433df174be9af6": "View Water Refill Station Map",
+   "https://oakgis.maps.arcgis.com/apps/View/index.html?appid=25e2591b5f2447c9af13685f646e038c": "visit this map",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=9d9d83b414994227a0410c80f47bccb5&extent=-122.3985,37.7001,-122.0195,37.8921": "map viewer",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=8cd63bb6e50042d994d2e29e8308c950&extent=-122.3566,37.6323,-122.0192,37.9202": "Online Interactive Map",
+   "https://experience.arcgis.com/experience/32e8f63fd0bc435f88d73a605c3866cc/page/Page/?org=oakgis&views=Public-Bike-Parking": "View online map of public bicycle parking in Oakland",
+   "https://experience.arcgis.com/experience/32e8f63fd0bc435f88d73a605c3866cc/?org=oakgis": "Bicycle Facilities and Projects Web Map"
+  }
+ },
+ "Forsyth County": {
+  "files": [
+   {
+    "url": "http://forsyth.cc/parks/assets/documents/CG Hill.pdf",
+    "text": "Park Map",
+    "file": "data/city_files/Forsyth_County/ce8ff2_CG_Hill.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://forsyth.cc/parks/assets/documents/HZN hiking_trails_map.pdf",
+    "text": "Park Map",
+    "file": "data/city_files/Forsyth_County/2dce42_HZN_hiking_trails_map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.forsyth.nc.us/parks/Horizons/assets/Documents/map.pdf",
+    "text": "Geo-Referenced Park Map",
+    "file": "data/city_files/Forsyth_County/27cc4c_map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://forsyth.cc/parks/assets/documents/JOANIE MOSER.pdf",
+    "text": "Park Map",
+    "file": "data/city_files/Forsyth_County/ead212_JOANIE_MOSER.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://forsyth.cc/parks/assets/documents/KERNERSVILLE (1).pdf",
+    "text": "Park Map",
+    "file": "data/city_files/Forsyth_County/6fdfad_KERNERSVILLE_1_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://forsyth.cc/parks/assets/documents/421 PARK.pdf",
+    "text": "Park Map",
+    "file": "data/city_files/Forsyth_County/81cd41_421_PARK.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.forsyth.nc.us/parks/Tanglewood/assets/documents/park_map_tw.pdf",
+    "text": "Park Map",
+    "file": "data/city_files/Forsyth_County/9a4f93_park_map_tw.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.forsyth.nc.us/parks/Tanglewood/assets/Documents/Map_Geo.pdf",
+    "text": "Geo-Referenced Park Map",
+    "file": "data/city_files/Forsyth_County/2efdb6_Map_Geo.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://forsyth.cc/parks/assets/documents/triadparkmap.pdf",
+    "text": "Park Map",
+    "file": "data/city_files/Forsyth_County/fc1724_triadparkmap.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.forsyth.nc.us/parks/Triad/assets/Documents/Map.pdf",
+    "text": "Geo-Referenced Park Map",
+    "file": "data/city_files/Forsyth_County/3ff4c5_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://forsyth.cc/parks/assets/documents/UNION CROSS.pdf",
+    "text": "Park Map",
+    "file": "data/city_files/Forsyth_County/b909e3_UNION_CROSS.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://forsyth.cc/parks/assets/documents/WALKERTOWN.pdf",
+    "text": "Park Map",
+    "file": "data/city_files/Forsyth_County/54f73c_WALKERTOWN.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.forsyth.nc.us/parks/JDWJBelewsLake/assets/documents/overall_map.pdf",
+    "text": "Park Map",
+    "file": "data/city_files/Forsyth_County/f450dd_overall_map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.forsyth.nc.us/parks/JDWJBelewsLake/assets/documents/trail_map.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Forsyth_County/19624c_trail_map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.forsyth.nc.us/Tax/assets/documents/2018_map.pdf",
+    "text": "2018 Forsyth County Tax Jurisdictions",
+    "file": "data/city_files/Forsyth_County/12746b_2018_map.pdf",
+    "rows": 26,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://co.forsyth.nc.us/Tax/assets/documents/taxjuris.pdf",
+    "text": "2007 Jurisdiction Map.",
+    "file": "data/city_files/Forsyth_County/942cd0_taxjuris.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://community-info-mapf.hub.arcgis.com/": "",
+   "http://mapf.maps.arcgis.com/apps/MapJournal/index.html?appid=0767e5d3563f4a4b9db4cc5344eb3b01": "",
+   "https://mapf.maps.arcgis.com/apps/webappviewer/index.html?id=034229a5dc3a401a90ff7bd23d04ffc9": "Historical Imagery Viewer",
+   "https://mapf.maps.arcgis.com/apps/webappviewer/index.html?id=53620a0b6458437aa82bd5e91d8cc47b": "Tax Parcel Viewer",
+   "https://mapf.maps.arcgis.com/apps/webappviewer/index.html?id=46be196e07f745beb3cb69ea6a3f3e08": "",
+   "https://mapf.maps.arcgis.com/apps/webappviewer/index.html?id=99703780ece9415e8402e24a23e94aec": "Map of VAD",
+   "https://mapf.maps.arcgis.com/apps/webappviewer/index.html?id=6e153339746f49a184125d89601c704e": "",
+   "https://mapf.maps.arcgis.com/apps/MapJournal/index.html?appid=0767e5d3563f4a4b9db4cc5344eb3b01": "",
+   "http://mapf.maps.arcgis.com/apps/webappviewer/index.html?id=12f4f1ca8f284370a6ead12b3acaa2c9": "January 1, 2016 map with roadway corridor",
+   "https://mapf.maps.arcgis.com/apps/webappviewer/index.html?id=1a96853598c3460191ca465834b3456d": "Tax Parcel Viewer."
+  }
+ },
+ "St. Lucie County": {
+  "files": [],
+  "portals": {}
+ },
+ "Thurston County": {
+  "files": [],
+  "portals": {
+   "https://public-works-projects-thurston.hub.arcgis.com/": "Projects",
+   "https://gisdata-thurston.opendata.arcgis.com/": "Download Data (It's Free)"
+  }
+ },
+ "Weber County": {
+  "files": [],
+  "portals": {
+   "https://weber.maps.arcgis.com/apps/webappviewer/index.html?id=5314f308ddac419eaafa83b23f1923e6": "Weber County Trails",
+   "https://weber.maps.arcgis.com/apps/webappviewer/index.html?id=314a44afb60941ceabc7b0c08125a5ac": "Project Map"
+  }
+ },
+ "Oneida County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/228579a27118422f85af50361048145b": "Tax Parcel Viewer (Website)",
+   "https://hoctc-safety-action-plan-hoccpp.hub.arcgis.com/": "Transportation Safety Plan and Reporter Website"
+  }
+ },
+ "Niagara County": {
+  "files": [
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Government/County Information/Bus Routes/v8Connect Niagara version 2a.pdf_2026_good.pdf?t=202601270931370",
+    "text": "Click here to view full route map and schedule.",
+    "file": "data/city_files/Niagara_County/4bf63d_v8Connect_Niagara_version_2a.pdf_2026_good.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/blue-1.pdf?t=202408220915050",
+    "text": "BLUE ROUTE",
+    "file": "data/city_files/Niagara_County/cb145f_blue-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/gold.pdf?t=202408220915310",
+    "text": "GOLD ROUTE",
+    "file": "data/city_files/Niagara_County/addb18_gold.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/green.pdf?t=202408220916370",
+    "text": "GREEN ROUTE",
+    "file": "data/city_files/Niagara_County/6d43f9_green.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/PURPLE ROUTE_new_2026.pdf?t=202601271126550",
+    "text": "PURPLE ROUTE",
+    "file": "data/city_files/Niagara_County/373a3e_PURPLE_ROUTE_new_2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Government/County Information/Bus Routes/Niagara County Title VI Plan 2026 submitted.pdf?t=202608281455410",
+    "text": "Title VI Plan",
+    "file": "data/city_files/Niagara_County/a7120d_Niagara_County_Title_VI_Plan_2026_submitted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Government/County Information/Bus Routes/riders guide-1.pdf?t=202509161352500",
+    "text": "Connect Niagara Bus Service Rider's Guide",
+    "file": "data/city_files/Niagara_County/6cec3e_riders_guide-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Government/County Information/Bus Routes/DBE Policy Statement 2021.pdf?t=202210251344500",
+    "text": "View DBE Policy Statement",
+    "file": "data/city_files/Niagara_County/dd98ae_DBE_Policy_Statement_2021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Government/County Information/Bus Routes/EEO Policy Statement 2021.pdf?t=202210251345020",
+    "text": "View EEO Policy Statement",
+    "file": "data/city_files/Niagara_County/c99791_EEO_Policy_Statement_2021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Government/County Information/Bus Routes/Title VI and Americans with Disabilities Act Complaint Form July 2021_Fillable (1).pdf?t=202210251345430",
+    "text": "Title VI/ADA Complaint Form",
+    "file": "data/city_files/Niagara_County/588dcb_Title_VI_and_Americans_with_Disabilities_Act_Complaint_Form_July_2021_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 1.pdf?t=202509180935080",
+    "text": "District 1: Irene Myers",
+    "file": "data/city_files/Niagara_County/e20491_District_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 9.pdf?t=202402141016460",
+    "text": "District 9: Randy Bradt",
+    "file": "data/city_files/Niagara_County/986b1c_District_9.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 2.pdf?t=202402141017400",
+    "text": "District 2: Mike Casale",
+    "file": "data/city_files/Niagara_County/0b60d6_District_2.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 10.pdf?t=202402141018200",
+    "text": "District 10: David Godfrey",
+    "file": "data/city_files/Niagara_County/1864dd_District_10.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 3.pdf?t=202402141022280",
+    "text": "District 3: Christopher McKimmie",
+    "file": "data/city_files/Niagara_County/2ba99f_District_3.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 11.pdf?t=202402141018500",
+    "text": "District 11: Anthony Nemi",
+    "file": "data/city_files/Niagara_County/bb9258_District_11.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 4.pdf?t=202402141014180",
+    "text": "District 4: Jeffrey Elder",
+    "file": "data/city_files/Niagara_County/4b9d1e_District_4.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 12.pdf?t=202402141019180",
+    "text": "District 12: Carla Speranza",
+    "file": "data/city_files/Niagara_County/b800b4_District_12.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 5.pdf?t=202402141014490",
+    "text": "District 5: Christopher Robins",
+    "file": "data/city_files/Niagara_County/b9e162_District_5.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 13.pdf?t=202402141019480",
+    "text": "District 13: Richard Abbott",
+    "file": "data/city_files/Niagara_County/379961_District_13.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 6.pdf?t=202402141015260",
+    "text": "District 6: Sam Farruggia",
+    "file": "data/city_files/Niagara_County/d9af17_District_6.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 14.pdf?t=202402141020160",
+    "text": "District 14: Shawn Foti",
+    "file": "data/city_files/Niagara_County/11a17c_District_14.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 7.pdf?t=202402141015530",
+    "text": "District 7: Jesse Gooch",
+    "file": "data/city_files/Niagara_County/0ca225_District_7.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 15.pdf?t=202402141020420",
+    "text": "District 15: Michael Hill",
+    "file": "data/city_files/Niagara_County/eeaf42_District_15.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.niagaracounty.gov/Document_center/Department/G-L/Legislature/District Maps/2024 Maps/District 8.pdf?t=202402141016180",
+    "text": "District 8: Richard Andres",
+    "file": "data/city_files/Niagara_County/e5ef6d_District_8.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "St. Louis County": {
+  "files": [
+   {
+    "url": "https://www.stlouiscountymn.gov/Portals/0/Library/Dept/Public%20Works/2025_OneGov2WaySnowmobileApplicationGuide.pdf",
+    "text": "Two-Way Snowmobile Trail Application Guide",
+    "file": "data/city_files/St_Louis_County/6c40f3_2025_OneGov2WaySnowmobileApplicationGuide.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stlouiscountymn.gov/Portals/0/Library/St-Louis-County-ADA-Transition-Plan.PDF",
+    "text": "ADA Transition Plan",
+    "file": "data/city_files/St_Louis_County/2a95bc_St-Louis-County-ADA-Transition-Plan.PDF",
+    "rows": 2589,
+    "bike_rows": 145
+   },
+   {
+    "url": "https://www.stlouiscountymn.gov/Portals/0/Library/Dept/Public Works/2026-Load-Restrictions.pdf?ver=m5wxWrIT_67uOBqyi9r8Rg%3d%3d",
+    "text": "St. Louis County Spring Load Restriction Maps",
+    "file": "data/city_files/St_Louis_County/a363a2_2026-Load-Restrictions.pdf",
+    "rows": 157,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.stlouiscountymn.gov/Portals/0/Library/Dept/Public Works/Traffic/Permanent-Load-Restrictions.pdf?ver=ZAffdCGtMThpEgne2S_dHw%3d%3d",
+    "text": "St. Louis County Permanent Load Restriction Maps",
+    "file": "data/city_files/St_Louis_County/940748_Permanent-Load-Restrictions.pdf",
+    "rows": 37,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://gis.stlouiscountymn.gov/landexplorer/?webmap=12aa1dd88696431588a07a1af24d565d": "County Land Explorer",
+   "https://gis.stlouiscountymn.gov/gisviewers/surveyexplorer.aspx": "",
+   "https://gis.stlouiscountymn.gov/landexplorer/": "",
+   "https://gis.stlouiscountymn.gov/landexplorer/?webmap=89534485dc0342d99cbffbdbfb6069ab": "Aquatic Invasive Species",
+   "https://gis.stlouiscountymn.gov/landexplorer/?webmap=f54dc9ed1bc84c90960a53fec700f488": "Cadastral",
+   "https://gis.stlouiscountymn.gov/landexplorer/?webmap=48ad17bac7624bb79bfe56823871f74e": "Economic Development",
+   "https://gis.stlouiscountymn.gov/landexplorer/?webmap=6d9b8765ca05448f86185170ab6fa205": "Environmental",
+   "https://gis.stlouiscountymn.gov/landexplorer/?webmap=04ca68b3626046108fe3c7eaccce98af": "Land Explorer (Default)",
+   "https://gis.stlouiscountymn.gov/landexplorer/?webmap=5c694f81d38240899f12bd6166b0a20b": "Land Sales",
+   "https://gis.stlouiscountymn.gov/landexplorer/?webmap=bdca139bb0964cfc8623e51367dd5c19": "Market Sales and Value",
+   "https://gis.stlouiscountymn.gov/landexplorer/?webmap=60d0f48848744fc1bc12d68ad3e253b8": "Onsite Wastewater",
+   "https://gis.stlouiscountymn.gov/landexplorer/?webmap=1796ec16d13d4140a1956e3cc23893e8": "Public Safety"
+  }
+ },
+ "Mobile": {
+  "files": [
+   {
+    "url": "https://www.cityofmobile.gov/uploads/231006044724RedistrictingFinalDraft-October22023.pdf",
+    "text": "Redistricting Maps (PDF)",
+    "file": "data/city_files/Mobile/d3dabb_231006044724RedistrictingFinalDraft-October22023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/39acdcdf058941c79e716148a56d54c8/page/Page?views=Your-Zone": "Find Your Evacuation Zone (external site)",
+   "https://open-government-cityofmobile.hub.arcgis.com/": "GIS Hub",
+   "https://experience.arcgis.com/experience/f630703981794052908db7d62f8ff0d6": "Click here",
+   "https://survey123.arcgis.com/share/3387f132618145e4aa7e8b64b9603984": "Online Complaint Form"
+  }
+ },
+ "Salem": {
+  "files": [],
+  "portals": {}
+ },
+ "Beaver County": {
+  "files": [
+   {
+    "url": "https://beavercountypa.gov/getmedia/3b8051ee-f917-48d7-8302-0fb3c69510df/Garage-Maintenance-Bid.pdf",
+    "text": "Beaver County Parking Garage Maintenance and Repairs",
+    "file": "data/city_files/Beaver_County/11d23c_Garage-Maintenance-Bid.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://beavercountypa.gov/getmedia/d596f7af-242e-4619-a2bd-cc91404177c4/2024_0709-Vicary-Porch-Bid-Manual.pdf",
+    "text": "Captain William Vicary Mansion Porch Repair - Updated 7/9/24",
+    "file": "data/city_files/Beaver_County/6910d0_2024_0709-Vicary-Porch-Bid-Manual.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://beavercountypa.gov/getmedia/dc34672e-7a21-4147-a6ff-88861d0873df/2024_0709-Vicary-Porch-Bid-Set-Drawings.pdf",
+    "text": "Captain William Vicary Mansion Porch Repair Drawings - Updated 7/9/24",
+    "file": "data/city_files/Beaver_County/d0d1a2_2024_0709-Vicary-Porch-Bid-Set-Drawings.pdf",
+    "rows": 988,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://beavercountypa.gov/getmedia/b6fa3157-c974-42af-be2c-bdb72b357a76/DOC022326-02232026114257.pdf",
+    "text": "Guardianship Tracking System Training and Resources",
+    "file": "data/city_files/Beaver_County/4dfc7b_DOC022326-02232026114257.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.mbakerintl.com/beavercountyinfoatlas/": "Beaver County GIS Atlas",
+   "https://gis.beavercountypa.gov/geohub": "Search Now"
+  }
+ },
+ "Schenectady County": {
+  "files": [
+   {
+    "url": "https://schenectadycountyny.gov/sites/default/files/Legislature/County%20LEG%201%20%26%202%20Map.pdf",
+    "text": "District 2",
+    "file": "data/city_files/Schenectady_County/9b9958_County_20LEG_201_20_26_202_20Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://schenectadycountyny.gov/sites/default/files/Legislature/County%20LEG%203%20Map.pdf",
+    "text": "District 3",
+    "file": "data/city_files/Schenectady_County/349922_County_20LEG_203_20Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://schenectadycountyny.gov/sites/default/files/Legislature/County%20LEG%204%20Map.pdf",
+    "text": "District 4",
+    "file": "data/city_files/Schenectady_County/484a9e_County_20LEG_204_20Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://schenectadycountyny.gov/sites/default/files/2023-04/County%20Forest%20Map.pdf",
+    "text": "Download Trail Map",
+    "file": "data/city_files/Schenectady_County/b417b4_County_20Forest_20Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://schenectadycountyny.gov/sites/default/files/2023-04/indian_kill_map.pdf",
+    "text": "Download Trail Map",
+    "file": "data/city_files/Schenectady_County/24e9b9_indian_kill_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://schenectadycountyny.gov/sites/default/files/2023-04/plotter_kill_map.pdf",
+    "text": "Download Trail Map",
+    "file": "data/city_files/Schenectady_County/dae0a1_plotter_kill_map.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://schenectadycountyny.gov/sites/default/files/2023-04/plotter_kill_brochure.pdf",
+    "text": "View Preserve Guide",
+    "file": "data/city_files/Schenectady_County/271c9c_plotter_kill_brochure.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://schenectadycountyny.gov/sites/default/files/2026-03/R%2046-26%20-%20r%20-%20LL%20A%20-26%20--%20deer%20hunting%20pilot%20program.pdf",
+    "text": "Local Law A-26 Deer Hunting Pilot Program",
+    "file": "data/city_files/Schenectady_County/856e5d_R_2046-26_20-_20r_20-_20LL_20A_20-26_20--_20deer_20hunting_20pilot_20p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://schenectadycountyny.gov/sites/default/files/2026-03/R%2046-26%20-%20Public%20hearing%20--%20LL%20--%20Hunting.pdf",
+    "text": "Local Law A-26 Deer Hunting Pilot Program Public Hearing Notice",
+    "file": "data/city_files/Schenectady_County/43218a_R_2046-26_20-_20Public_20hearing_20--_20LL_20--_20Hunting.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://schenectadycountyny.gov/sites/default/files/2023-08/ALCO%20Site%20Installation%20Plan.pdf",
+    "text": "View ALCO Heritage Trail Sign Map",
+    "file": "data/city_files/Schenectady_County/27589f_ALCO_20Site_20Installation_20Plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://schenectadycountyny.gov/sites/default/files/Economic%20Development/Mohawk%20Hudson%20Bike%20Trail%20Feasibility%20Report%20Final%209-14-2018.pdf",
+    "text": "READ FULL REPORT",
+    "file": "data/city_files/Schenectady_County/bd9a29_Mohawk_20Hudson_20Bike_20Trail_20Feasibility_20Report_20Final_209-14-2",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Escondido": {
+  "files": [],
+  "portals": {}
+ },
+ "Livingston Parish": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/dc49b9ed666a41fca7ace5434e157941": "Livingston Parish Drainage Master Plan"
+  }
+ },
+ "Lakewood": {
+  "files": [
+   {
+    "url": "https://www.lakewoodnj.gov/images/map.pdf?v=2",
+    "text": "Download Full Lakewood Township Map (PDF) , opens in new tab",
+    "file": "data/city_files/Lakewood/2bcad2_map.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakewoodnj.gov/images/pdf/recycling_pamphlet.pdf",
+    "text": "Download Public Works Brochure & Map (PDF)",
+    "file": "data/city_files/Lakewood/d87310_recycling_pamphlet.pdf",
+    "rows": 28,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://lakewoodnj.gov/images/db/u-1-3774-Book-Recycling-Drop-Box-at-DPW.pdf",
+    "text": "NEW! Book Recycling Drop Box at Lakewood Public Works",
+    "file": "data/city_files/Lakewood/63d592_u-1-3774-Book-Recycling-Drop-Box-at-DPW.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakewoodnj.gov/images/db/admin-1284-OC-Solid-Waste-Mgmt-Public-Notice---Public-Meeting-Blk-1160.03-Lot-241-601-NH-Ave.pdf",
+    "text": "PUBLIC NOTICE: Ocean County Dept. of Solid Waste Mgmt  - Diesel-Fueled Windrow Turner Composting Machine at  601 New Ham",
+    "file": "data/city_files/Lakewood/c5147c_admin-1284-OC-Solid-Waste-Mgmt-Public-Notice---Public-Meeting-Blk-1160",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lakewoodnj.gov/images/pdf/recycling_pamphlet.pdf",
+    "text": "Download Public Works  Brochure & Map (PDF)",
+    "file": "data/city_files/Lakewood/7f1205_recycling_pamphlet.pdf",
+    "rows": 28,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.lakewoodnj.gov/images/db/u-1-3774-Book-Recycling-Drop-Box-at-DPW.pdf",
+    "text": "NEW! Book Recycling Drop Box at Lakewood Public Works",
+    "file": "data/city_files/Lakewood/561818_u-1-3774-Book-Recycling-Drop-Box-at-DPW.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lakewoodnj.gov/images/db/admin-1284-OC-Solid-Waste-Mgmt-Public-Notice---Public-Meeting-Blk-1160.03-Lot-241-601-NH-Ave.pdf",
+    "text": "PUBLIC NOTICE: Ocean County Dept. of Solid Waste Mgmt  - Diesel-Fueled Windrow Turner Composting Machine at  601 New Ham",
+    "file": "data/city_files/Lakewood/0943a3_admin-1284-OC-Solid-Waste-Mgmt-Public-Notice---Public-Meeting-Blk-1160",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://njdca.maps.arcgis.com/apps/InformationLookup/index.html?appid=0db472ac220a419d938e9060574d2f21": "Read more about Lakewood Development Corporation <span>Urban Enterprise Zone</span>"
+  }
+ },
+ "Linn County": {
+  "files": [],
+  "portals": {}
+ },
+ "Berkeley County": {
+  "files": [],
+  "portals": {}
+ },
+ "West Jordan": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/1e4abcc4b9b84bff8a4f6ebc0c2eaddd": "Report a Problem",
+   "https://west-jordan-city.maps.arcgis.com/home/index.html": "Maps",
+   "https://experience.arcgis.com/experience/7079218c63d949e8a1d0809adf4b5c6b": "View the Parks and Trails Map",
+   "https://survey123.arcgis.com/share/50eea4bea76c4f94871a69e5777c5c4c": "Fill out this form.",
+   "https://experience.arcgis.com/experience/1db186fe2d934e7eb0d3fac6b216f930": "Map of Garbage Pickup Days",
+   "https://west-jordan-city.maps.arcgis.com/apps/webappviewer/index.html?id=aa2233bdeff84ccba2c14bbc94792fee": "interactive map.",
+   "https://west-jordan-city.maps.arcgis.com/apps/instant/media/index.html?appid=1087b43963ad4fa4b80be35fb5a11601": "click here to view the map fullscreen",
+   "https://experience.arcgis.com/experience/498c6a1f45574ecfbd0f51e02ac9ce39/page/Home/?draft=true": "Get started!"
+  }
+ },
+ "Newton County": {
+  "files": [],
+  "portals": {}
+ },
+ "Madison County": {
+  "files": [
+   {
+    "url": "https://madison-co.com/files/12-1-2026-Runoff-Sample-ballot.pdf",
+    "text": "Sample Runoff Ballot",
+    "file": "data/city_files/Madison_County/04b474_12-1-2026-Runoff-Sample-ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.cmpdd.org/arcgis/apps/webappviewer/index.html?id=5228a85a04324e79986d8c8b36237d4b": "Madison County Viewer"
+  }
+ },
+ "Tyler": {
+  "files": [
+   {
+    "url": "https://www.cityoftyler.org/files/assets/city/v/1/airport/documents/parking-map.pdf",
+    "text": "Parking Map (PDF, 970KB)",
+    "file": "data/city_files/Tyler/b4ec2d_parking-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityoftyler.org/files/assets/city/v/1/downtown/documents/tylerdowntownhistoricdistrictmap.pdf",
+    "text": "Map of Contributing Resources in the Tyler Downtown Historic District (PDF, 798KB)",
+    "file": "data/city_files/Tyler/76d545_tylerdowntownhistoricdistrictmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityoftyler.org/files/assets/city/v/1/downtown/documents/tylerdowntownhistoricdistrictfinal_web.pdf",
+    "text": "TylerDowntownHistoricDistrictFINAL_web.pdf (PDF, 10MB)",
+    "file": "data/city_files/Tyler/391a48_tylerdowntownhistoricdistrictfinal_web.pdf",
+    "rows": 276,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.cityoftyler.org/files/assets/city/v/1/downtown/documents/finalrevocableparkingpermitagreementblank_short-termparking_municgarage.pdf",
+    "text": "Download the Fair Plaza Parking Garage reserved parking application(PDF, 139KB)",
+    "file": "data/city_files/Tyler/f5cf60_finalrevocableparkingpermitagreementblank_short-termparking_municgarag",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityoftyler.org/files/assets/city/v/1/development-services/documents/historic-preservation/historical-oakwood-cemetery.pdf",
+    "text": "Historical Oakwood Cemetery (PDF, 1MB)",
+    "file": "data/city_files/Tyler/90a716_historical-oakwood-cemetery.pdf",
+    "rows": 25,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cityoftyler.org/files/assets/city/v/1/development-services/documents/historic-preservation/preserve-america-certification-and-letter.pdf",
+    "text": "Preserve America Community - 2016 (PDF, 459KB)",
+    "file": "data/city_files/Tyler/f89765_preserve-america-certification-and-letter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityoftyler.org/files/assets/city/v/1/development-services/documents/historic-preservation/historic-district-overlay_udc.pdf",
+    "text": "established by the Unified Development Code (PDF, 75KB)",
+    "file": "data/city_files/Tyler/a10495_historic-district-overlay_udc.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cityoftylertexas.maps.arcgis.com/apps/instant/portfolio/index.html?appid=8cc298d226984adb85482e2e587601f0": "City of Tyler Utilities Data",
+   "https://cityoftylertexas.maps.arcgis.com/apps/instant/basic/index.html?appid=37936f0c77fd411991478d5b3df564de": "Child Safety Zones",
+   "https://www.arcgis.com/apps/dashboards/685888e63a484b1b9d10bfd77ee26aa6": "Permits Dashboard",
+   "https://www.arcgis.com/apps/dashboards/c84381eb298c454493f1f4dde1e25c15": "Inspections Dashboard",
+   "https://storymaps.arcgis.com/stories/35f116a035ac49bc9c0b8985e97add65": "Downtown Public Parking Map",
+   "https://storymaps.arcgis.com/stories/2fa1e4f726db45e6aea1dcbcc7b8138e": "Public & Municipal Sites",
+   "https://storymaps.arcgis.com/stories/e1c31c1ecdbc4657b70eb0ee81f7c257": "Residential Sites",
+   "https://storymaps.arcgis.com/stories/04b6c362b85d4c23a3c04806e19ba23d": "Commercial Sites",
+   "https://cityoftylertexas.maps.arcgis.com/apps/MapTour/index.html?appid=d8336fe45b6d4dab98eef447e5f9289a": "tour the Half Mile of History Virtually!"
+  }
+ },
+ "Spokane Valley": {
+  "files": [],
+  "portals": {}
+ },
+ "Walton County": {
+  "files": [],
+  "portals": {}
+ },
+ "Redding": {
+  "files": [],
+  "portals": {
+   "https://redding.maps.arcgis.com/apps/webappviewer/index.html?id=41e60d75083943d683e2a0e7a3d701b5": "Property Look-Up"
+  }
+ },
+ "Wayne County": {
+  "files": [],
+  "portals": {
+   "https://gis.co.wayne.ny.us/pv/": "Parcel Viewer",
+   "https://waynecountyny.gov/815/Open-Data-Portal": "Open Data Portal"
+  }
+ },
+ "Champaign": {
+  "files": [],
+  "portals": {
+   "https://gis-cityofchampaign.opendata.arcgis.com/": "View All Maps",
+   "https://experience.arcgis.com/experience/8133ffc42b9741aea6e9a1f3d49b7a4f": "Yard Waste Zones",
+   "https://gis-cityofchampaign.opendata.arcgis.com": "EXPLORE NOW",
+   "https://experience.arcgis.com/experience/a42f04d4f2b347a6a743e89fe037be22": "Construction Activity",
+   "https://cityofchampaign.maps.arcgis.com/apps/webappviewer/index.html?id=7525441df3664018bebe847837450c6a": "View the parking meter map"
+  }
+ },
+ "Sioux City": {
+  "files": [
+   {
+    "url": "https://apptegy-alerts-attachments-production.s3.amazonaws.com/6c667327-2bae-4340-ad0c-a0250da8cfb0/ABM%20Parking%20Application-SCCSD%20Student%20Pass%20%281%29.pdf",
+    "text": "ABM Parking Application-SCCSD Student Pass (PDF)",
+    "file": "data/city_files/Sioux_City/ec57c6_ABM_20Parking_20Application-SCCSD_20Student_20Pass_20_281_29.pdf",
+    "rows": 25,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://wcicc.maps.arcgis.com/apps/Embed/index.html": "View larger map",
+   "https://experience.arcgis.com/experience/291d4e2c64cf490a95a6660b1349a088/page/Traffic-Volume": "IDOT Traffic Count Information",
+   "https://iowadot.maps.arcgis.com/apps/MapSeries/index.html": "IDOT Traffic Counts"
+  }
+ },
+ "Franklin": {
+  "files": [],
+  "portals": {}
+ },
+ "Somerville": {
+  "files": [
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/residential-parking-permit-application.pdf",
+    "text": "Residential Parking Permit Application",
+    "file": "data/city_files/Somerville/2f639d_residential-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/new-resident-temporary-parking-permit-application.pdf",
+    "text": "New Resident Temporary Parking Permit Application",
+    "file": "data/city_files/Somerville/864557_new-resident-temporary-parking-permit-application.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/visitor-parking-permit-application.pdf",
+    "text": "form",
+    "file": "data/city_files/Somerville/b3ae8e_visitor-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/business-parking-program-permit-application.pdf",
+    "text": "this application",
+    "file": "data/city_files/Somerville/b855b0_business-parking-program-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/business-parking-program-permit-information.pdf",
+    "text": "Click",
+    "file": "data/city_files/Somerville/c9236b_business-parking-program-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/business-parking-program-employer-visitor-permit-application.pdf",
+    "text": "this application",
+    "file": "data/city_files/Somerville/fc360b_business-parking-program-employer-visitor-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/business-parking-program-employer-visitor-permit-information.pdf",
+    "text": "Click here",
+    "file": "data/city_files/Somerville/a070cf_business-parking-program-employer-visitor-permit-information.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/accessible-parking-space-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/97375b_accessible-parking-space-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/accessible-parking-space-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/c4c14e_accessible-parking-space-information.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/contractor-buildings-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/060684_contractor-buildings-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/commercial-vehicle-day-use-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/3ca1ee_commercial-vehicle-day-use-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/commercial-vehicle-day-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/60ea6e_commercial-vehicle-day-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/commercial-vehicle-day-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/fc29d0_commercial-vehicle-day-parking-permit-information.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/parking-consideration-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/f743ba_parking-consideration-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/parking-consideration-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/e916d2_parking-consideration-permit-information.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/extended-visitor-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/49577e_extended-visitor-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/extended-visitor-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/daaa93_extended-visitor-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/health-care-home-professional-parking-permit-application.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/dfb1ce_health-care-home-professional-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/landlord-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/ad200e_landlord-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/landlord-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/c2e3ef_landlord-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/landlord-viewing-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/9c331b_landlord-viewing-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/landlord-viewing-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/0484ea_landlord-viewing-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/medical-caretaker-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/57e543_medical-caretaker-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/medical-caretaker-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/8e3d8d_medical-caretaker-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/military-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/4d51df_military-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.somervillema.gov/": "Somerville Open Data",
+   "https://experience.arcgis.com/experience/fd6ff1d1e00345ba8e7cf4dbe4ee4de5/": ""
+  }
+ },
+ "Wilson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Cheshire County": {
+  "files": [],
+  "portals": {}
+ },
+ "Rock Hill": {
+  "files": [],
+  "portals": {}
+ },
+ "Tonawanda": {
+  "files": [],
+  "portals": {}
+ },
+ "Passaic": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Cloud": {
+  "files": [],
+  "portals": {}
+ },
+ "Sammamish": {
+  "files": [],
+  "portals": {}
+ },
+ "Novi": {
+  "files": [
+   {
+    "url": "https://cityofnovi.org/media/zh5o3vkl/application-for-minor-home-repair.pdf",
+    "text": "Home Repair Program",
+    "file": "data/city_files/Novi/170174_application-for-minor-home-repair.pdf",
+    "rows": 36,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://investnovi.org/media/nx1pkbij/map-knappcemeteryveterans.pdf",
+    "text": "Open",
+    "file": "data/city_files/Novi/b9bcfd_map-knappcemeteryveterans.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://investnovi.org/media/v4layv0u/map-novicemeteryveteransstars.pdf",
+    "text": "Open",
+    "file": "data/city_files/Novi/2dcbec_map-novicemeteryveteransstars.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://walkbike.info/wp-content/uploads/2024/04/NoviAMP_Map_Adopted.pdf",
+    "text": "Open",
+    "file": "data/city_files/Novi/fab1ad_NoviAMP_Map_Adopted.pdf",
+    "rows": 17,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://investnovi.org/media/vydps2hj/map-firedistricts-automaticamutualaidresponseareas.pdf",
+    "text": "Open",
+    "file": "data/city_files/Novi/b16ee1_map-firedistricts-automaticamutualaidresponseareas.pdf",
+    "rows": 22,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://cityofnovi.org/media/10xbxsoj/2026-street-map-destinations.pdf",
+    "text": "Open",
+    "file": "data/city_files/Novi/b183d0_2026-street-map-destinations.pdf",
+    "rows": 99,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://cityofnovi.org/media/trdjbuza/contractors-sidewalk-snow-clearing-map-book.pdf",
+    "text": "Open",
+    "file": "data/city_files/Novi/38de8a_contractors-sidewalk-snow-clearing-map-book.pdf",
+    "rows": 46,
+    "bike_rows": 19
+   },
+   {
+    "url": "https://cityofnovi.org/media/bu0hgiom/residentialcrossconnectioncontroldistrictmap.pdf",
+    "text": "Residential Cross Connection Control District Map",
+    "file": "data/city_files/Novi/19fefd_residentialcrossconnectioncontroldistrictmap.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofnovi.org/media/snyjvstx/pex_mailer_2024_web.pdf",
+    "text": "Transit Service Coming To Novi",
+    "file": "data/city_files/Novi/975beb_pex_mailer_2024_web.pdf",
+    "rows": 29,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofnovi.org/media/5whjyqwp/external-check-list-for-minor-home-repair.pdf",
+    "text": "Download the External Checklist for Minor Home Repair",
+    "file": "data/city_files/Novi/4a35f7_external-check-list-for-minor-home-repair.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofnovi.org/media/x2clfeht/smart-service-expansion-route-305.pdf",
+    "text": "Route 305 - Grand River",
+    "file": "data/city_files/Novi/19ad1d_smart-service-expansion-route-305.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/ts2pfkfc/smart-service-expansion-route-740.pdf",
+    "text": "Route 740 - Twelve Mile",
+    "file": "data/city_files/Novi/d42021_smart-service-expansion-route-740.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/u2bfkeog/smart-service-expansion-route-805.pdf",
+    "text": "Route 805 - Farmington-Novi",
+    "file": "data/city_files/Novi/53bc78_smart-service-expansion-route-805.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/dryji5ta/historic-commission-agenda-july-16-2026.pdf",
+    "text": "Agenda File",
+    "file": "data/city_files/Novi/dfd990_historic-commission-agenda-july-16-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/nxdczgyk/commemorativetreeorderformapril-2026.pdf",
+    "text": "Download the Commemorative Tree Order Form",
+    "file": "data/city_files/Novi/e9a162_commemorativetreeorderformapril-2026.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofnovi.org/media/ipidqmdi/itc-community-sports-park-2026.pdf",
+    "text": "View the ITC Community Sports Park field map",
+    "file": "data/city_files/Novi/1fa869_itc-community-sports-park-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/rpkbcifp/map-grandriversoccerfields-copy.pdf",
+    "text": "Download the Grand River Soccer Fields Map",
+    "file": "data/city_files/Novi/388072_map-grandriversoccerfields-copy.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/bmwo3bca/gym-entrance-and-parking-updated-sep-2026.pdf",
+    "text": "Download the Gym Entrance and Parking Location",
+    "file": "data/city_files/Novi/e348d8_gym-entrance-and-parking-updated-sep-2026.pdf",
+    "rows": 23,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/20dbxpv1/noviamp_map_4-1-2024.pdf",
+    "text": "Download",
+    "file": "data/city_files/Novi/49910d_noviamp_map_4-1-2024.pdf",
+    "rows": 17,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://cityofnovi.org/media/l1yp0ggg/finalnon-motorizedmasterplan-summarymap.pdf",
+    "text": "Download",
+    "file": "data/city_files/Novi/e7c177_finalnon-motorizedmasterplan-summarymap.pdf",
+    "rows": 7,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofnovi.org/media/gj2dxbys/2020pathwaysidewalkinventorymap.pdf",
+    "text": "Sidewalk Inventory Map",
+    "file": "data/city_files/Novi/ad1ee8_2020pathwaysidewalkinventorymap.pdf",
+    "rows": 97,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://cityofnovi.org/media/qcwdnd2i/mapbicycleroutesnovi2020.pdf",
+    "text": "Bicycling Routes",
+    "file": "data/city_files/Novi/513657_mapbicycleroutesnovi2020.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofnovi.org/media/mh5fx3nn/map-walkingroutesfromciviccenter.pdf",
+    "text": "Civic Center Walking Route Maps",
+    "file": "data/city_files/Novi/e769ce_map-walkingroutesfromciviccenter.pdf",
+    "rows": 6,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofnovi.org/media/e3neywjo/walkbikedrivesafebrochure2017.pdf",
+    "text": "brochure",
+    "file": "data/city_files/Novi/d5a4c7_walkbikedrivesafebrochure2017.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnovi.org/media/2qijldic/e-bike-types-novi.pdf",
+    "text": "",
+    "file": "data/city_files/Novi/e248e8_e-bike-types-novi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/apps/dashboards/4b7564e45eb54152a8b63ebbc97cc0ca": "Open",
+   "https://experience.arcgis.com/experience/b00e5794be9241149fcffece3f0ad907": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/nearby/index.html?appid=6051c5546ae744448ed77df867ccf2b0": "Dropbox Information",
+   "https://novi.maps.arcgis.com/apps/instant/lookup/index.html?appid=2b5b9327742c4fdf982abdecdfe4169c": "Open",
+   "https://experience.arcgis.com/experience/98ab8d2a9fa7409a943a0a13befd4c99/": "Open",
+   "https://storymaps.arcgis.com/stories/140d2e296f9f4fb897f4ae050c3f4aae": "Open",
+   "https://experience.arcgis.com/experience/b2498bce60be464088f413530c6a94d7/": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/lookup/index.html?appid=84ed2edad74d4f9eb10d2f1a55c02114": "Open",
+   "https://novi.maps.arcgis.com/apps/instant/media/index.html?appid=9cd151f7911740fc97c76bab59a534d2": "Open",
+   "https://www.arcgis.com/apps/dashboards/453355bf8a1e4b42a7b86c3d7274ae76": "Open",
+   "https://experience.arcgis.com/experience/6ce426b3d076414294eacc49b6b74dd4/": "Open",
+   "https://experience.arcgis.com/experience/e070694a129f4018bd3c3e912237e806/": ""
+  }
+ },
+ "Chaves County": {
+  "files": [],
+  "portals": {}
+ },
+ "Taylor": {
+  "files": [],
+  "portals": {}
+ },
+ "Haywood County": {
+  "files": [],
+  "portals": {}
+ },
+ "Tipton County": {
+  "files": [
+   {
+    "url": "https://tiptonco.com/Site Setup/document_center/Maps/Road Index_36x60.pdf",
+    "text": "Road Index Map",
+    "file": "data/city_files/Tipton_County/a0c336_Road_Index_36x60.pdf",
+    "rows": 52,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://tiptonco.com/Site Setup/document_center/Maps/USNG_25k_Mapbook_FINAL.pdf",
+    "text": "USNG Map Book",
+    "file": "data/city_files/Tipton_County/783aa1_USNG_25k_Mapbook_FINAL.pdf",
+    "rows": 1200,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://tiptonco.com/Site Setup/document_center/2010_Tipton_County_Historical_Survey.pdf",
+    "text": "Architectural & Historical Survey",
+    "file": "data/city_files/Tipton_County/9ff47b_2010_Tipton_County_Historical_Survey.pdf",
+    "rows": 40,
+    "bike_rows": 5
+   }
+  ],
+  "portals": {
+   "https://data-tiptoncountygis.hub.arcgis.com/": "Maps Online",
+   "https://www.midsouthgis.org/": "MAGIC",
+   "https://tiptoncountygis.maps.arcgis.com/apps/dashboards/d46a2ee5b4a14f518dafbaed50346e87": "GIS Litter Dashboard",
+   "https://storymaps.arcgis.com/stories/2733bede2ebe48daa0592d667364bd92": "Parks",
+   "https://storymaps.arcgis.com/stories/a24c2472051149bd8229fb949eabeb81": "National Historic Sites",
+   "https://storymaps.arcgis.com/stories/d6b4beccb97c4de1a5bcd19818a21989": "Historic Markers",
+   "https://storymaps.arcgis.com/stories/c0fcfafd49dd4f59a1943772440cec31": "Where Do I Go for What I Need",
+   "https://data.census.gov/profile/Tipton_County,_Tennessee?g=050XX00US47167": "Demographics",
+   "https://tn-cot.maps.arcgis.com/apps/instant/lookup/index.html?appid=2bd3c9b349634d2ba7153410c0930d27": "TN Voter District Lookup",
+   "https://www.arcgis.com/apps/dashboards/a5b211fc01a7411d95e324da882893ac": "ROAD CLOSINGS DASHBOARD MAP"
+  }
+ },
+ "Union": {
+  "files": [],
+  "portals": {}
+ }
+}
