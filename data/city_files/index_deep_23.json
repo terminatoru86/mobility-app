@@ -1,0 +1,1217 @@
+{
+ "Anaheim CA": {
+  "files": [],
+  "portals": {}
+ },
+ "Portland ME": {
+  "files": [],
+  "portals": {}
+ },
+ "Atlanta": {
+  "files": [],
+  "portals": {}
+ },
+ "Resistencia": {
+  "files": [],
+  "portals": {}
+ },
+ "Torbalı district": {
+  "files": [],
+  "portals": {}
+ },
+ "San Fernando Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Thornton": {
+  "files": [],
+  "portals": {
+   "https://data-cityofthornton.opendata.arcgis.com/": "Maps and Open Data",
+   "https://storymaps.arcgis.com/stories/29a2ef18d54249f7bc68ab1fd7af7278": "City Facilities Map"
+  }
+ },
+ "Giresun": {
+  "files": [],
+  "portals": {}
+ },
+ "Lewisville": {
+  "files": [],
+  "portals": {}
+ },
+ "Norwalk": {
+  "files": [
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Self-Haul Back-Haul Form 2026 - FINAL.pdf?t=202604131218130",
+    "text": "Self-Haul and Back-Haul Permit Application & Guidelines",
+    "file": "data/city_files/Norwalk/a8c5a7_Self-Haul_Back-Haul_Form_2026_-_FINAL.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Recreation And Park Services/Parks/MAP of Facilities.pdf?t=202411181418590",
+    "text": "MAP OF CITY OF NORWALK FACILITIES",
+    "file": "data/city_files/Norwalk/3dd34c_MAP_of_Facilities.pdf",
+    "rows": 15,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Operations/Environmental and Recycling Services/Waste Collection Events/HHW  Flyer SOUTH WHITTIER .pdf?t=202411181418580",
+    "text": "Household Hazardous Waste (HHW) Events",
+    "file": "data/city_files/Norwalk/d50153_HHW_Flyer_SOUTH_WHITTIER_.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Operations/Environmental and Recycling Services/Waste Collection Events/2024 eWaste And Shred A Th.pdf?t=202502121531530",
+    "text": "",
+    "file": "data/city_files/Norwalk/c0f121_2024_eWaste_And_Shred_A_Th.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Operations/Environmental and Recycling Services/Waste Collection Events/Norwalk Compost Flyer inli.pdf?t=202502191412420",
+    "text": "Compost Event November 18, 2023",
+    "file": "data/city_files/Norwalk/91bf92_Norwalk_Compost_Flyer_inli.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Operations/Environmental and Recycling Services/Waste Collection Events/Rain Barrel Distribution F.pdf?t=202411181419010",
+    "text": "Rain Barrel Distribution Event",
+    "file": "data/city_files/Norwalk/39c9c3_Rain_Barrel_Distribution_F.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Operations/Environmental and Recycling Services/Waste Collection Events/11559 Rosecrans Ave  1.pdf?t=202411181418490",
+    "text": "Used Oil Filter Exchange",
+    "file": "data/city_files/Norwalk/29824c_11559_Rosecrans_Ave_1.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Self-Haul Back-Haul Form 2026 - FINAL.pdf?t=202604131218130",
+    "text": "Self-Haul and Back-Haul Permit Application & Guidelines",
+    "file": "data/city_files/Norwalk/9cb524_Self-Haul_Back-Haul_Form_2026_-_FINAL.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.norwalk.org/Documents/Departments & Services/Recreation And Park Services/Parks/MAP of Facilities.pdf?t=202411181418590",
+    "text": "MAP OF CITY OF NORWALK FACILITIES",
+    "file": "data/city_files/Norwalk/63fcfd_MAP_of_Facilities.pdf",
+    "rows": 15,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.norwalk.org/Documents/Departments & Services/Public Services/Operations/Environmental and Recycling Services/Waste Collection Events/HHW  Flyer SOUTH WHITTIER .pdf?t=202411181418580",
+    "text": "Household Hazardous Waste (HHW) Events",
+    "file": "data/city_files/Norwalk/d7fb01_HHW_Flyer_SOUTH_WHITTIER_.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.norwalk.org/Documents/Departments & Services/Public Services/Operations/Environmental and Recycling Services/Waste Collection Events/2024 eWaste And Shred A Th.pdf?t=202502121531530",
+    "text": "",
+    "file": "data/city_files/Norwalk/75f06c_2024_eWaste_And_Shred_A_Th.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.norwalk.org/Documents/Departments & Services/Public Services/Operations/Environmental and Recycling Services/Waste Collection Events/Norwalk Compost Flyer inli.pdf?t=202502191412420",
+    "text": "Compost Event November 18, 2023",
+    "file": "data/city_files/Norwalk/4f7e5a_Norwalk_Compost_Flyer_inli.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.norwalk.org/Documents/Departments & Services/Public Services/Operations/Environmental and Recycling Services/Waste Collection Events/Rain Barrel Distribution F.pdf?t=202411181419010",
+    "text": "Rain Barrel Distribution Event",
+    "file": "data/city_files/Norwalk/1c0d7a_Rain_Barrel_Distribution_F.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.norwalk.org/Documents/Departments & Services/Public Services/Operations/Environmental and Recycling Services/Waste Collection Events/11559 Rosecrans Ave  1.pdf?t=202411181418490",
+    "text": "Used Oil Filter Exchange",
+    "file": "data/city_files/Norwalk/53ddec_11559_Rosecrans_Ave_1.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Safety/parking/payment plans/City of Norwalk low income.pdf?t=202411181418550",
+    "text": "Here",
+    "file": "data/city_files/Norwalk/135d58_City_of_Norwalk_low_income.pdf",
+    "rows": 35,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Safety/parking/payment plans/City of Nowalk Police Depa.pdf?t=202411181418550",
+    "text": "here",
+    "file": "data/city_files/Norwalk/f6ab45_City_of_Nowalk_Police_Depa.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Safety/parking/payment plans/Sidewalk Vending  Admin Ci.pdf?t=202411181419030",
+    "text": "Sidewalk Vending Appeal Hardship Waiver Bilingual",
+    "file": "data/city_files/Norwalk/fc3d33_Sidewalk_Vending_Admin_Ci.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Recreation And Park Services/Park Projects/Syserco/Solar Arrays_NASC_Project Fact Sheet and Parking Map_7.17.2025.pdf?t=202507181537400",
+    "text": "Solar Panel Project: Norwalk Arts & Sports Complex and Norwalk Aquatic Pavilion (Includes Parking Information)",
+    "file": "data/city_files/Norwalk/6d328d_Solar_Arrays_NASC_Project_Fact_Sheet_and_Parking_Map_7.17.2025.pdf",
+    "rows": 14,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Recreation And Park Services/Hermosillo Park Park Project/Hermosillo Final Concept Plan.pdf?t=202608151304100",
+    "text": "Hermosillo Park Site Conceptual Map - April 2026",
+    "file": "data/city_files/Norwalk/237598_Hermosillo_Final_Concept_Plan.pdf",
+    "rows": 32,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Norwalk Residential Recycling Guide 2023 ENG SPA 090324.pdf?t=202502111753470",
+    "text": "Athens Residential & Multifamily Waste Collection Guide (PDF).",
+    "file": "data/city_files/Norwalk/68fc89_Norwalk_Residential_Recycling_Guide_2023_ENG_SPA_090324.pdf",
+    "rows": 40,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/2026 Holiday Street Sweeping and Trash Collection Schedule.pdf.pdf?t=202601131821490",
+    "text": "Click here to view the Trash & Street Sweeping Flyer",
+    "file": "data/city_files/Norwalk/569dc6_2026_Holiday_Street_Sweeping_and_Trash_Collection_Schedule.pdf.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/FINAL - Franchise Agreement - Norwalk - includes City Legal review 5-3-18.pdf?t=202603301133080",
+    "text": "Athens Franchise Agreement",
+    "file": "data/city_files/Norwalk/6720e0_FINAL_-_Franchise_Agreement_-_Norwalk_-_includes_City_Legal_review_5-3",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Athens - Amendment No. 1.pdf?t=202503311610350",
+    "text": "Athens Amendment No. 1",
+    "file": "data/city_files/Norwalk/8ce3c7_Athens_-_Amendment_No._1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Athens - Amendment No. 2.pdf?t=202503311611060",
+    "text": "Athens Amendment No. 2",
+    "file": "data/city_files/Norwalk/0e9565_Athens_-_Amendment_No._2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Norwalk Amend. No. 3_FINAL.pdf?t=202602231908400",
+    "text": "Athens Amendment No. 3",
+    "file": "data/city_files/Norwalk/30c3d8_Norwalk_Amend._No._3_FINAL.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Senior Discount_Updated.pdf?t=202502111757320",
+    "text": "Click here for the Senior Discount Application.",
+    "file": "data/city_files/Norwalk/ff21ec_Senior_Discount_Updated.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/EN Activity book (7).pdf?t=202605221412100",
+    "text": "(EN)",
+    "file": "data/city_files/Norwalk/e01de6_EN_Activity_book_7_.pdf",
+    "rows": 78,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/SP Activity book.pdf?t=202605221413120",
+    "text": "(SP)",
+    "file": "data/city_files/Norwalk/b8cc2c_SP_Activity_book.pdf",
+    "rows": 85,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Cafeteria poster.pdf?t=202605221503560",
+    "text": "(EN)",
+    "file": "data/city_files/Norwalk/437254_Cafeteria_poster.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/SP Poster.pdf?t=202605221751470",
+    "text": "(SP)",
+    "file": "data/city_files/Norwalk/9924a6_SP_Poster.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Food Generator Guide (EN).pdf?t=202606181327360",
+    "text": "(EN)",
+    "file": "data/city_files/Norwalk/bfd47a_Food_Generator_Guide_EN_.pdf",
+    "rows": 13,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Food Generator Guide (SP).pdf?t=202606181447440",
+    "text": "(SP)",
+    "file": "data/city_files/Norwalk/696bb4_Food_Generator_Guide_SP_.pdf",
+    "rows": 16,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Commercial Kitchen Organics Guide (EN).pdf?t=202606181327060",
+    "text": "(EN)",
+    "file": "data/city_files/Norwalk/d45d88_Commercial_Kitchen_Organics_Guide_EN_.pdf",
+    "rows": 18,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Commercial Kitchen Organics Guide (SP).pdf?t=202606181447170",
+    "text": "(SP)",
+    "file": "data/city_files/Norwalk/14acc4_Commercial_Kitchen_Organics_Guide_SP_.pdf",
+    "rows": 18,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Resident Organics Guide (EN).pdf?t=202606181326270",
+    "text": "(EN)",
+    "file": "data/city_files/Norwalk/11a266_Resident_Organics_Guide_EN_.pdf",
+    "rows": 12,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Resident Organics Guide (SP).pdf?t=202606181448300",
+    "text": "(SP)",
+    "file": "data/city_files/Norwalk/aa4ef1_Resident_Organics_Guide_SP_.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://norwalk.org/Documents/Departments & Services/Public Services/Recycling & Trash/Gardener Guide (EN).pdf?t=202606181344140",
+    "text": "(EN)",
+    "file": "data/city_files/Norwalk/4f2d49_Gardener_Guide_EN_.pdf",
+    "rows": 7,
+    "bike_rows": 6
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/4c21a8e06b1f4b519b2177fdec3cf6be": "here.",
+   "https://survey123.arcgis.com/share/76587fab91854cb9a78a0bcd0d4e4c2b": "here.",
+   "https://lacounty.maps.arcgis.com/apps/instant/nearby/index.html?appid=3bb903aa101c4d28b086cfeb0ed547b2": "LA County Food Donation Map"
+  }
+ },
+ "Orem": {
+  "files": [
+   {
+    "url": "https://orem.gov/wp-content/uploads/2025/01/OremsSnowandIceControlPlan2011-PriorityMap.pdf",
+    "text": "Snow Removal Priority",
+    "file": "data/city_files/Orem/97f86a_OremsSnowandIceControlPlan2011-PriorityMap.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://survey123.arcgis.com/share/cade3d85c8514a4295d9404065172d22?portalUrl=https://maps.orem.gov/portal": "Contact Us",
+   "https://orem.maps.arcgis.com/apps/instant/basic/index.html?appid=11f4b788a00d481e98099836da50ed43": "Street Sweeping Progress",
+   "https://experience.arcgis.com/experience/32ce7d4d5cb8424183d588e027e1699a/": "Existing Trails and Bike Lanes",
+   "https://orem.maps.arcgis.com/apps/mapviewer/index.html?webmap=eda7bc1e9790473b84d5de9246055c61": "Centennial Map",
+   "https://orem.maps.arcgis.com/apps/instant/media/index.html?appid=6b85035192bd4f3399ff8543952aed7d": "Taste World Map",
+   "https://orem.maps.arcgis.com/apps/Shortlist/index.html?appid=043bb1f6eebe48b5ac48cabab5b008b6": "OREM PARKS MAP"
+  }
+ },
+ "Greenville": {
+  "files": [],
+  "portals": {}
+ },
+ "Ushuaia": {
+  "files": [],
+  "portals": {}
+ },
+ "Flower Mound": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/c60eb70774b94c2eaae73327c19b7bad": "Town Construction Updates",
+   "https://experience.arcgis.com/experience/1a2e18ec8a874bcd81d3f1ca4b84fcef": "Current Development Projects",
+   "https://storymaps.arcgis.com/stories/f83a7260d77c48bc9898939ba77871cf": "www.flowermound.gov/LHJPMasterPlan",
+   "https://survey123.arcgis.com/share/4d45adf0cca64467944f32452dae6c4b": "Take the survey",
+   "https://flowermound.maps.arcgis.com/apps/webappviewer/index.html?id=8be07ee42fc44370b19989e1827037eb": "Interactive Mapping (Public Map Viewer)",
+   "https://data-flowermound.opendata.arcgis.com/": "GIS Data Downloads (Open Data)",
+   "https://storymaps.arcgis.com/stories/21549d076b50427580f8187762a015a1": "Economic Development Map",
+   "https://storymaps.arcgis.com/stories/03d25701be7b441781b4c80c5b83daa0": "Interactive Flower Mound Parks Map ↗",
+   "http://flowermound.maps.arcgis.com/apps/webappviewer/index.html?id=ae4aa1478fbd4a3dbc8d41de8bdec395": "GIS Intranet Map",
+   "https://flowermound.maps.arcgis.com/apps/Shortlist/index.html?appid=d35d03e761b54d1ba4fad2a92815d268": "Development Map",
+   "https://experience.arcgis.com/experience/5a593be174964f648805ea4ec03018cd?draft=true": "Restaurant Directory and Map",
+   "https://experience.arcgis.com/experience/480e08089d264d88a34365e6a3bf51a5/": "Development Process Overview",
+   "https://experience.arcgis.com/experience/9cc742bf712540c9884b8a7cc324da51": "Development Services Dashboard"
+  }
+ },
+ "Aksu": {
+  "files": [],
+  "portals": {}
+ },
+ "Kumluca": {
+  "files": [],
+  "portals": {}
+ },
+ "Burnsville": {
+  "files": [],
+  "portals": {}
+ },
+ "Plymouth": {
+  "files": [
+   {
+    "url": "https://msc.fema.gov/msccontent/Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "text": "Flood\n\t\t\t\t\t\tHazard Mapping Updates Overview Fact Sheet",
+    "file": "data/city_files/Plymouth/9a4d0e_Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "rows": 52,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle-Smart-Infographic-1-1.pdf",
+    "text": "English",
+    "file": "data/city_files/Plymouth/ccb811_Recycle-Smart-Infographic-1-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle_Smart_Infographic-Spanish.pdf",
+    "text": "Español",
+    "file": "data/city_files/Plymouth/b7116d_Recycle_Smart_Infographic-Spanish.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Smart-Recycling-Guide-Portuguese-1.pdf",
+    "text": "Português",
+    "file": "data/city_files/Plymouth/827cea_Smart-Recycling-Guide-Portuguese-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "text": "简化字",
+    "file": "data/city_files/Plymouth/9365a3_Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Arabic-Final.pdf",
+    "text": "عربى",
+    "file": "data/city_files/Plymouth/e971c1_Smart-Recycling-Guide-Arabic-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "text": "Tiếng Việt",
+    "file": "data/city_files/Plymouth/915a27_Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-French-Final.pdf",
+    "text": "Français",
+    "file": "data/city_files/Plymouth/2dac68_Smart-Recycling-Guide-French-Final.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Haitian-Creole-Final.pdf",
+    "text": "Kreyòl Ayisyen",
+    "file": "data/city_files/Plymouth/51668f_Smart-Recycling-Guide-Haitian-Creole-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Khmer.pdf",
+    "text": "ខ្មែរ",
+    "file": "data/city_files/Plymouth/2ff4d7_smart-recycling-guide-Khmer.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Hindi.pdf",
+    "text": "हिंदी",
+    "file": "data/city_files/Plymouth/039bcd_smart-recycling-guide-Hindi.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Russian.pdf",
+    "text": "Русский",
+    "file": "data/city_files/Plymouth/54d4b8_smart-recycling-guide-Russian.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Italian.pdf",
+    "text": "Italiana",
+    "file": "data/city_files/Plymouth/013d72_smart-recycling-guide-Italian.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2026/05/Recycle-Smart-MA-Partners-List-Updated-5.13.26.pdf",
+    "text": "Partner List",
+    "file": "data/city_files/Plymouth/762193_Recycle-Smart-MA-Partners-List-Updated-5.13.26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://seeplymouth.com/wp-content/uploads/2026/04/DP-002-25-2026-MapPad-FINAL-1.pdf",
+    "text": "Waterfront Visitors Center Map",
+    "file": "data/city_files/Plymouth/39332b_DP-002-25-2026-MapPad-FINAL-1.pdf",
+    "rows": 27,
+    "bike_rows": 4
+   }
+  ],
+  "portals": {
+   "http://gis.townhall.plymouth.ma.us/top.php?layers=femafhz": "Town's Quick Reference",
+   "https://top.maps.arcgis.com/apps/instant/sidebar/index.html?appid=2e0f9ccc193f48b680478ccc7913f432": "Natural Resource Map Viewer",
+   "https://top.maps.arcgis.com/apps/instant/basic/index.html?appid=3b8fbb0812864c44b3824515926a719f": "Parcels, Streets, and Building Lookup",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=e9c8014e42cb4ef4b4d9cfbe239a3068&extent=-71.1617,41.7184,-70.1476,42.1409": "Approved FEMA Special Flood Hazard Area Map",
+   "https://massgis.maps.arcgis.com/apps/OnePane/basicviewer/index.html?appid=47689963e7bb4007961676ad9fc56ae9": "MassGIS Massachusetts Interactive Property Map",
+   "https://maps.massgis.digital.mass.gov/MassMapper/MassMapper.html": "MassGIS Online Data Viewer",
+   "https://gis.massdot.state.ma.us/statehighwaylayouts/": "Mass Highway Layouts (Free Access)"
+  }
+ },
+ "Apex": {
+  "files": [
+   {
+    "url": "https://gotriangle.org/brochures/GoTriangle/Route_305_WEB.pdf",
+    "text": "",
+    "file": "data/city_files/Apex/497d2c_Route_305_WEB.pdf",
+    "rows": 30,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://gotriangle.org/brochures/GoTriangle/Route_311_WEB.pdf",
+    "text": "",
+    "file": "data/city_files/Apex/103008_Route_311_WEB.pdf",
+    "rows": 9,
+    "bike_rows": 4
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/41bf89a7c97d43a2934b0e823c8bfa45": "Interactive Development Map Explore the Opportunities",
+   "https://survey123.arcgis.com/share/88b4aaa5ed894e59b689ce8abd7192d2": "",
+   "https://survey123.arcgis.com/share/bef5381b3e1c49f7a9773f5dca69052c": "Report Missed Yard Waste Collection",
+   "https://experience.arcgis.com/experience/88a0181a67a54aa7844ca1cfb70ab6a8": "",
+   "https://experience.arcgis.com/experience/108e37e8fe9641b38fff2dc1bc687e03": "",
+   "https://storymaps.arcgis.com/stories/a86a998d275b446885caec6c480b995d": "Wake County Landmark Properties",
+   "https://storymaps.arcgis.com/stories/45f42af798db403c934a498d3c502936": "A \"Peak\" at Apex's History",
+   "https://storymaps.arcgis.com/stories/85e4caf093b74086a05abda3b373f7cc": "Fairview Community",
+   "https://storymaps.arcgis.com/stories/60605912a34f46a98b817e13cee1ce93": "Friendship Community",
+   "https://storymaps.arcgis.com/stories/db570bf2747f4bf7b21ef1e9be78f2fb": "Green Level Community",
+   "https://storymaps.arcgis.com/stories/347ac236de3742abb9121f80c8ea1c7c": "Low End Community",
+   "https://storymaps.arcgis.com/stories/c45605a64d2b4425aab654538ceee833": "New Hill Community",
+   "https://storymaps.arcgis.com/stories/6cd7dbb91cd94cb3ac58d4dcff9921fb": "Olive Chapel Community",
+   "https://storymaps.arcgis.com/stories/8531966a08c4444fa87b42e68f33aa01": "Whops Community",
+   "https://apexnc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=4d7bf23d741e493b81780798ba742c84": "",
+   "https://experience.arcgis.com/experience/e58079ce518a4f0c9795e61632f24286": "Street Maintenance Map",
+   "https://apexnc.maps.arcgis.com/apps/Shortlist/index.html?appid=e92b185974fd4f8894019b486eeef78a": "Capital Improvement Projects",
+   "https://experience.arcgis.com/experience/756dd825d50946b180bd4e600e5a2b54/page/Page/": "",
+   "https://experience.arcgis.com/experience/f6ff63852de047fba72982918a196a63": "",
+   "https://apexnc.maps.arcgis.com/apps/GeoForm/index.html?appid=99a11acde768489bad14b30685ee27bc": "Report a Greenway Maintenance Issue",
+   "https://apexnc.maps.arcgis.com/apps/dashboards/2c963326752e470bba30e7d648656474": "Greenway Corridors",
+   "https://storymaps.arcgis.com/stories/93adef7cec734b73abd349ebe2361300": "Parks Project Updates ~ Town Council Annual Retreat (February 2024)",
+   "https://apexnc.maps.arcgis.com/apps/instant/lookup/index.html?appid=c0554f4a34c64968958cf22374a63e7d": "use this map"
+  }
+ },
+ "Smyrna": {
+  "files": [],
+  "portals": {}
+ },
+ "Grand Island": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/56eecd21d3e94750b405278fe22faa00/": "Cone Zone",
+   "https://www.arcgis.com/apps/Embed/index.html?webmap=cdaa9f9cc84f436fbb0b7dc9fdbd66d1&extent=-98.5306,40.8217,-98.1403,41.0005&home=true&zoom=true&scale=true&search=true&searchextent=true&legend=true&disable_scroll=true&theme=dark": "City Council Ward Map",
+   "https://opengis.grand-island.com/": "Geographical Information System Maps"
+  }
+ },
+ "East Hartford": {
+  "files": [],
+  "portals": {}
+ },
+ "Titusville": {
+  "files": [],
+  "portals": {
+   "http://titusville.maps.arcgis.com/home/index.html": "GIS Maps",
+   "http://titusville.maps.arcgis.com/apps/Shortlist/index.html?appid=e97a5b75adcd41908a58f72600b10515": "Titusville Historic Structures Story Map",
+   "http://titusville.maps.arcgis.com/apps/MapSeries/index.html?appid=99769cdcf0b5474e92cb967286529b87": "Opportunity Zones GIS Map",
+   "https://storymaps.arcgis.com/collections/5fd76967310a4fccb7200df5ad597e2f": "Community Redevelopment Agency ( CRA ) District Map",
+   "https://experience.arcgis.com/experience/d4e515fc7f0f4b7498867bd8fe23018c": "Zoning Map",
+   "http://titusville.maps.arcgis.com/apps/MapSeries/index.html?appid=c28dc66e097e4d1d8a92a7efcb49a146": "Story Map: Planned Bicycle and Pedestrian Improvements",
+   "https://titusville.maps.arcgis.com/home/index.html": "Maps/Utility GIS",
+   "https://storymaps.arcgis.com/stories/72d50abd87844cf2a018f79e6c6d967f": "View more parks and trails",
+   "https://titusville.maps.arcgis.com/apps/mapviewer/index.html?webmap=1472900fbcca45b08e9ba593ce66f34f": "this map",
+   "https://storymaps.arcgis.com/stories/b8df577a1b074e56b984c012ec69daf3": "\"When Will My Street Be Repaved\" Story Map"
+  }
+ },
+ "Huntington": {
+  "files": [
+   {
+    "url": "https://cityofhuntington.com/assets/pdf/document-center/Art_Inventory_Map.pdf",
+    "text": "",
+    "file": "data/city_files/Huntington/85a31d_Art_Inventory_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofhuntington.com/assets/pdf/document-center/Future_Land_Use_Map.pdf",
+    "text": "",
+    "file": "data/city_files/Huntington/c3f20f_Future_Land_Use_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofhuntington.com/assets/pdf/document-center/Green_Space_Map.pdf",
+    "text": "",
+    "file": "data/city_files/Huntington/268393_Green_Space_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofhuntington.com/assets/pdf/document-center/Musuems_and_Historic_Resources_Map.pdf",
+    "text": "",
+    "file": "data/city_files/Huntington/351035_Musuems_and_Historic_Resources_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofhuntington.com/assets/pdf/Natl-Bike-Month-Guide_overcoming_commuter_challenges.pdf",
+    "text": "Overcoming Bike Commuting Concerns",
+    "file": "data/city_files/Huntington/142d32_Natl-Bike-Month-Guide_overcoming_commuter_challenges.pdf",
+    "rows": 11,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.cityofhuntington.com/assets/pdf/PATH_Maintenance_9-8-22.pdf",
+    "text": "PATH maintenance project completed with ARPA funding",
+    "file": "data/city_files/Huntington/71153b_PATH_Maintenance_9-8-22.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofhuntington.com/assets/pdf/PATH_Public_Meeting_8-5-22.pdf",
+    "text": "Public meeting for the PATH",
+    "file": "data/city_files/Huntington/7f9e1f_PATH_Public_Meeting_8-5-22.pdf",
+    "rows": 18,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.cityofhuntington.com/assets/pdf/20190830_MU_Bicycle_Plan-_FINAL.pdf",
+    "text": "Marshall University Bicycle Plan (August 2019)",
+    "file": "data/city_files/Huntington/d6df55_20190830_MU_Bicycle_Plan-_FINAL.pdf",
+    "rows": 85,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://www.cityofhuntington.com/assets/pdf/KYOVA_HuntingtonBikePedReport_062817.pdf",
+    "text": "Huntington Strategic Non-motorized Connections Study (July 2017)",
+    "file": "data/city_files/Huntington/515cc0_KYOVA_HuntingtonBikePedReport_062817.pdf",
+    "rows": 36,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.cityofhuntington.com/assets/pdf/West_Virginia_Statewide_Bicycle_System_Plan_-_Final_Report.pdf",
+    "text": "WV Statewide Bicycle System Plan (August 2017)",
+    "file": "data/city_files/Huntington/e1e9e7_West_Virginia_Statewide_Bicycle_System_Plan_-_Final_Report.pdf",
+    "rows": 46,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.cityofhuntington.com/assets/pdf/PATHMasterPlan2016_Layout_080116_FINALREPORT.pdf",
+    "text": "PATH Master Plan (2016)",
+    "file": "data/city_files/Huntington/38982f_PATHMasterPlan2016_Layout_080116_FINALREPORT.pdf",
+    "rows": 100,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://www.cityofhuntington.com/assets/pdf/Huntington_PATH_Public_Workshop_Handouts.pdf",
+    "text": "PATH at Washington Blvd Handouts",
+    "file": "data/city_files/Huntington/dca167_Huntington_PATH_Public_Workshop_Handouts.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofhuntington.com/assets/pdf/Existing_PATH_and_Wash_blvd.pdf",
+    "text": "Existing PATH connections and proposed Washington Blvd. Connection",
+    "file": "data/city_files/Huntington/e99172_Existing_PATH_and_Wash_blvd.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofhuntington.com/assets/pdf/PATH_Public_Meeting_2-21-24_(1).pdf",
+    "text": "our press release",
+    "file": "data/city_files/Huntington/069f7f_PATH_Public_Meeting_2-21-24__1_.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cityofhuntington.com/assets/pdf/document-center/Accessible_Parking_Application.pdf",
+    "text": "Accessible Parking Application",
+    "file": "data/city_files/Huntington/f90cad_Accessible_Parking_Application.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://hsb.maps.arcgis.com/apps/webappviewer/index.html?id=a462a100acab48179d533b1f487305fe": "Interactive PATH map",
+   "https://hsb.maps.arcgis.com/apps/webappviewer/index.html?id=c8ed5bdc0c2a4d33be551e46d9fa868a": "Interactive Commuter Bike Routes Map",
+   "https://www.arcgis.com/apps/dashboards/5fb58bc5f3284595876c13a2d1160dc3": "Fit Fest 2026 Bike Rides Route Map"
+  }
+ },
+ "West Lafayette": {
+  "files": [],
+  "portals": {}
+ },
+ "Spanish Fork": {
+  "files": [
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/5eklax2e/waste_pickup_map.pdf",
+    "text": "Collection Map",
+    "file": "data/city_files/Spanish_Fork/a143d2_waste_pickup_map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.republicservices.com/cms/documents/municipality/Utah/RecyclingSimplifiedTipsUTAH.pdf",
+    "text": "Republic Services recycling page",
+    "file": "data/city_files/Spanish_Fork/fc6cd1_RecyclingSimplifiedTipsUTAH.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/yiom0y5d/rda_eda_map_letter.pdf",
+    "text": "RDAs, EDAs, CDAs",
+    "file": "data/city_files/Spanish_Fork/e5e8fb_rda_eda_map_letter.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://suvgis.spanishfork.org/SFGISDataDownload/Shapefiles/GeneralData/SF_Trails.zip",
+    "text": "Download SHP",
+    "file": "data/city_files/Spanish_Fork/7373d7_SF_Trails.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://suvgis.spanishfork.org/SFGISDataDownload/KMZ/GeneralData/SF_Trails.kmz",
+    "text": "Download KMZ",
+    "file": "data/city_files/Spanish_Fork/207db2_SF_Trails.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/ijkf2l3x/canyon_view_rv_park.pdf",
+    "text": "View Park Map",
+    "file": "data/city_files/Spanish_Fork/6b994a_canyon_view_rv_park.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/4yqfpapr/cemetery_plat_map_printable.pdf",
+    "text": "Printable Plot Map",
+    "file": "data/city_files/Spanish_Fork/ea1b20_cemetery_plat_map_printable.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/krlje2js/cemetery_information.pdf",
+    "text": "General Info & Procedures",
+    "file": "data/city_files/Spanish_Fork/3a5c85_cemetery_information.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/lykb3rbh/centennialmap.pdf",
+    "text": "Centennial Park",
+    "file": "data/city_files/Spanish_Fork/a132dd_centennialmap.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/aqgh5l40/eastparkmap.pdf",
+    "text": "East Park",
+    "file": "data/city_files/Spanish_Fork/001ca6_eastparkmap.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/lizkfutw/ballparkmap.pdf",
+    "text": "Russell Swenson Baseball Complex",
+    "file": "data/city_files/Spanish_Fork/c0f3ed_ballparkmap.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/xfqnes0v/tournament_brackets_final-7.pdf",
+    "text": "",
+    "file": "data/city_files/Spanish_Fork/e80f0a_tournament_brackets_final-7.pdf",
+    "rows": 58,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/yfyhfirx/girls_5-6_tournament_bracket.pdf",
+    "text": "",
+    "file": "data/city_files/Spanish_Fork/285615_girls_5-6_tournament_bracket.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/fn0dhwdd/tournament-bracket-toys-4-kids-2026.pdf",
+    "text": "",
+    "file": "data/city_files/Spanish_Fork/62f4ae_tournament-bracket-toys-4-kids-2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/3lxmnxbz/tournament-bracket-thanksgiving-dodgeball-tournament-2026.pdf",
+    "text": "Tournament Bracket",
+    "file": "data/city_files/Spanish_Fork/6ab6ba_tournament-bracket-thanksgiving-dodgeball-tournament-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/s2wlj0kc/generalplan_letter.pdf",
+    "text": "General Plan Map",
+    "file": "data/city_files/Spanish_Fork/1f21f0_generalplan_letter.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/gy5ffek5/zoning_letter.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Spanish_Fork/de5b85_zoning_letter.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/spanishfork-us/media/er2bc4zi/zoning_detailed_letter.pdf",
+    "text": "Detailed Zoning Map",
+    "file": "data/city_files/Spanish_Fork/87cb1c_zoning_detailed_letter.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://suvgis.spanishfork.org/SFGISDataDownload/LayerPackages/GeneralData/GeneralData_Layers.lpkx": "Download LPKX",
+   "https://suvgis.spanishfork.org/SFGISDataDownload/LayerPackages/Transportation/Transportation_Layers.lpkx": "Download LPKX",
+   "https://suvgis.spanishfork.org/SFGISDataDownload/LayerPackages/Utility/Irrigation_Layers.lpkx": "Download LPKX",
+   "https://suvgis.spanishfork.org/SFGISDataDownload/LayerPackages/Utility/Pressurized_Irrigation_Layers.lpkx": "Download LPKX",
+   "https://suvgis.spanishfork.org/SFGISDataDownload/LayerPackages/Utility/Sewer_Layers.lpkx": "Download LPKX",
+   "https://suvgis.spanishfork.org/SFGISDataDownload/LayerPackages/Utility/Storm_Layers.lpkx": "Download LPKX",
+   "https://suvgis.spanishfork.org/SFGISDataDownload/LayerPackages/Utility/Water_Layers.lpkx": "Download LPKX"
+  }
+ },
+ "American Fork": {
+  "files": [],
+  "portals": {}
+ },
+ "Penfield": {
+  "files": [
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Boards/Historic Preservation Board/HPB-COAA-2025Version.pdf?t=202602161542050",
+    "text": "Certificate of Appropriateness",
+    "file": "data/city_files/Penfield/5024b9_HPB-COAA-2025Version.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/residents/Town Site/Departments/gis/maps/Official Zoning Map 2024.pdf?t=202412190419080",
+    "text": "Zoning Districts (17)",
+    "file": "data/city_files/Penfield/f39d71_Official_Zoning_Map_2024.pdf",
+    "rows": 44,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/residents/Town Site/Departments/gis/maps/Parcels Street Numbers  Zoning Map 2024.pdf?t=202412190419180",
+    "text": "Zoning Districts with Street Numbers",
+    "file": "data/city_files/Penfield/3bd701_Parcels_Street_Numbers_Zoning_Map_2024.pdf",
+    "rows": 12,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/residents/Town Site/Departments/gis/maps/Watersheds.pdf?t=202412190419590",
+    "text": "Watersheds (11)",
+    "file": "data/city_files/Penfield/aac9fe_Watersheds.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/residents/Town Site/Departments/gis/maps/Trails - 2021 - 24x36.pdf?t=202412190419490",
+    "text": "Trails",
+    "file": "data/city_files/Penfield/dc9f6e_Trails_-_2021_-_24x36.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/residents/Town Site/2026.09.30 Town Sidewalk Map 24x36.pdf?t=202610020943560",
+    "text": "Sidewalks",
+    "file": "data/city_files/Penfield/6affd5_2026.09.30_Town_Sidewalk_Map_24x36.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/residents/Town Site/Departments/gis/maps/2024 School Districts Map in Penfield.pdf?t=202412190417540",
+    "text": "School District Boundaries (4)",
+    "file": "data/city_files/Penfield/5bdbd5_2024_School_Districts_Map_in_Penfield.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/residents/Town Site/Departments/gis/maps/Sanitary Sewer Service Area 2024.pdf?t=202412190419390",
+    "text": "Sanitary Sewer Service",
+    "file": "data/city_files/Penfield/079697_Sanitary_Sewer_Service_Area_2024.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/residents/Town Site/Departments/gis/maps/RTS Map_2024.pdf?t=202412190419290",
+    "text": "RTS Bus Routes",
+    "file": "data/city_files/Penfield/788019_RTS_Map_2024.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/residents/Town Site/Departments/gis/maps/Fire Districts 2024.pdf?t=202412190418150",
+    "text": "Fire Districts Supporting the Town (3)",
+    "file": "data/city_files/Penfield/06f371_Fire_Districts_2024.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Departments/gis/maps/2025-03-06 Official Town Firearm Discharge Packet.pdf?t=202503061448480",
+    "text": "Firearm Discharge Map Packet (2 pages)",
+    "file": "data/city_files/Penfield/70124f_2025-03-06_Official_Town_Firearm_Discharge_Packet.pdf",
+    "rows": 38,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/residents/Town Site/Departments/gis/maps/Bicycle Rideability - 2021 - 24x36.pdf?t=202412190418050",
+    "text": "Bicycle Rideability",
+    "file": "data/city_files/Penfield/9af44b_Bicycle_Rideability_-_2021_-_24x36.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/residents/Town Site/Departments/gis/maps/Official Town Map, Signed June 2026.pdf?t=202606171311280",
+    "text": "Official Map of the Town of Penfield",
+    "file": "data/city_files/Penfield/4a229c_Official_Town_Map_Signed_June_2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/HPB Meeting Dates and Submission Deadlines - 2026.pdf?t=202512171147150",
+    "text": "2026 Historic Preservation Board Meeting Schedule",
+    "file": "data/city_files/Penfield/4c7230_HPB_Meeting_Dates_and_Submission_Deadlines_-_2026.pdf",
+    "rows": 23,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/11.05.2026 Meeting Agenda Historic Preservation Board.pdf?t=202610301147470",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/fff09c_11.05.2026_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/08.06.2026 Meeting Agenda Historic Preservation Board.pdf?t=202608051257180",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/e548ad_08.06.2026_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/08.06.2026 Meeting Minutes.pdf?t=202611061206230",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/ab368b_08.06.2026_Meeting_Minutes.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/06.04.2026 Meeting Agenda Historic Preservation Board.pdf?t=202605291210240",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/5b75fb_06.04.2026_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/06.04.2026 Meeting Minutes.pdf?t=202608111259030",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/2b71bc_06.04.2026_Meeting_Minutes.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/05.07.2026 Meeting Agenda Historic Preservation Board..pdf?t=202605010853350",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/2ee1b9_05.07.2026_Meeting_Agenda_Historic_Preservation_Board..pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/05.07.2026 Meeting Minutes.pdf?t=202606081152130",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/22f1ee_05.07.2026_Meeting_Minutes.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/04.02.2026 Meeting Agenda Historic Preservation Board.pdf?t=202603270922100",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/25273a_04.02.2026_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/04.02.2026 Meeting Minutes.pdf?t=202606081150170",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/cb9d9a_04.02.2026_Meeting_Minutes.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/03.05.2026 Meeting Agenda Historic Preservation Board.pdf?t=202602270959330",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/5e20b9_03.05.2026_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/03.05.2026 Meeting Minutes.pdf?t=202606081148060",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/bfdbc9_03.05.2026_Meeting_Minutes.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/11.06.2025 Meeting Agenda Historic Preservation Board.pdf?t=202510311505280",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/e41a65_11.06.2025_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2026/11.06.2025 Meeting Minutes.pdf?t=202603181339250",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/2862f6_11.06.2025_Meeting_Minutes.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/10.02.2025 Meeting Agenda Historic Preservation Board.pdf?t=202509261047240",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/b7582e_10.02.2025_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/10.02.2025 Meeting Minutes.pdf?t=202511071623480",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/40f1a6_10.02.2025_Meeting_Minutes.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/2025.09.04 Meeting Agenda Historic Preservation Board.pdf?t=202508281539010",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/e28e0e_2025.09.04_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/09.04.2025 Meeting Minutes.pdf?t=202510231615180",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/075884_09.04.2025_Meeting_Minutes.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/08.07.2025 Meeting Agenda Historic Preservation Board.pdf?t=202507311136500",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/2a61bf_08.07.2025_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/08.07.2025 Meeting Minutes.pdf?t=202510231614420",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/d48df9_08.07.2025_Meeting_Minutes.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/06.23.2025 Meeting Agenda Historic Preservation Board.pdf?t=202506161445150",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/2fa834_06.23.2025_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/05.01.2025 Meeting Agenda Historic Preservation Board.pdf?t=202504241610130",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/81d978_05.01.2025_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/05.01.2025 Meeting Minutes.pdf?t=202510231613530",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/7f907d_05.01.2025_Meeting_Minutes.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/03.06.2025 Meeting Agenda Historic Preservation Board.pdf?t=202502281103560",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/784c05_03.06.2025_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/03.06.2025 Meeting Minutes.pdf?t=202503071607110",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/3a250e_03.06.2025_Meeting_Minutes.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/02.06.2025 Meeting Agenda Historic Preservation Board.pdf?t=202501311635260",
+    "text": "Agenda",
+    "file": "data/city_files/Penfield/39d4a3_02.06.2025_Meeting_Agenda_Historic_Preservation_Board.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.penfieldny.gov/Town Site/Boards/Historic Preservation Board/2025/02.06.2025 Hist. Pres Board Meeting Minutes.pdf?t=202504141539200",
+    "text": "Minutes",
+    "file": "data/city_files/Penfield/7a58c2_02.06.2025_Hist._Pres_Board_Meeting_Minutes.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/51a6afcf92314023a6f6f664017fa3c7": "Penfield GIS Viewer"
+  }
+ },
+ "Northglenn": {
+  "files": [],
+  "portals": {
+   "https://northglennco.maps.arcgis.com/apps/webappviewer/index.html?id=ac584fe98ec14ac391b1fdfd3da877be": "Interactive Zoning District Map"
+  }
+ },
+ "Georgetown": {
+  "files": [],
+  "portals": {}
+ },
+ "Myrtle Beach": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/9ee0504b35d143a1a24647d973ee8bd2": "Facade Improvement Program",
+   "https://survey123.arcgis.com/share/bb15827be5a6477794db23a6b141bf8b": "Public Artist Registry",
+   "https://survey123.arcgis.com/share/0e6aeae59f534f06805747203bc8e08f": "Vacant Storefront Incentive Program",
+   "https://waterdata.usgs.gov/monitoring-location/02110500/": "Waccamaw River Water Data",
+   "https://comb.maps.arcgis.com/home/index.html": "https://comb.maps.arcgis.com/home/index.html"
+  }
+ },
+ "Plainfield": {
+  "files": [],
+  "portals": {}
+ },
+ "Angamaly Municipality": {
+  "files": [
+   {
+    "url": "https://angamalymunicipality.lsgkerala.gov.in/system/files/2026-09/Map_FinalN_Ernakulam_Angamaly_0.pdf",
+    "text": "Map_FinalN_Ernakulam_Angamaly_0.pdf",
+    "file": "data/city_files/Angamaly_Municipality/c7b691_Map_FinalN_Ernakulam_Angamaly_0.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Massillon": {
+  "files": [],
+  "portals": {}
+ },
+ "Hopkinsville": {
+  "files": [
+   {
+    "url": "http://www.hopkinsvilleky.us/document_center/Public_Works/Street/Snow_Removal_Routes.pdf",
+    "text": "Snow Removal Routes",
+    "file": "data/city_files/Hopkinsville/4db4bc_Snow_Removal_Routes.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.hopkinsvilleky.us/departments/public_works/docs/Cemeteries Rules & Regulations.pdf",
+    "text": "Cemeteries Rules & Regulations",
+    "file": "data/city_files/Hopkinsville/df32a4_Cemeteries_Rules_Regulations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hopkinsvilleky.us/departments/public_works/cemeteries_division/../docs/Cemeteries Rules & Regulations.pdf",
+    "text": "Cemeteries Rules & Regulations",
+    "file": "data/city_files/Hopkinsville/e2aef2_Cemeteries_Rules_Regulations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hopkinsvilleky.us/visitors/historic_hopkinsville/downtown_farmers_market/docs/2024 Calendar of Events.pdf",
+    "text": "Farmers Market Calendar of Events",
+    "file": "data/city_files/Hopkinsville/0ea1a5_2024_Calendar_of_Events.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hopkinsvilleky.us/visitors/historic_hopkinsville/downtown_farmers_market/docs/2024 Local Guidelines & Application.pdf",
+    "text": "Farmers Market Local Guidelines",
+    "file": "data/city_files/Hopkinsville/a7f0bf_2024_Local_Guidelines_Application.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hopkinsvilleky.us/hopkinsvilleky/visitors/historic_hopkinsville/uploads/Walking_Tour_Broch.pdf",
+    "text": "Downtown Walking Tour Brochure",
+    "file": "data/city_files/Hopkinsville/923a89_Walking_Tour_Broch.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Galesburg": {
+  "files": [],
+  "portals": {
+   "http://gis.ci.galesburg.il.us/EconomicDevelopment": "Galesburg Economic Development Districts",
+   "https://galesburg.maps.arcgis.com/home/index.html": "Interactive Maps & Data",
+   "http://gis.ci.galesburg.il.us/Construction": "Explore",
+   "https://gis.ci.galesburg.il.us/SolidWaste": "Galesburg Recycling, Refuse and Yard Waste Map",
+   "https://gis.ci.galesburg.il.us": "Explore",
+   "https://gis.ci.galesburg.il.us/Housing": "Explore",
+   "https://www.arcgis.com/apps/mapviewer/index.html?layers=954b35afc5484686ad9b8c86319ba859": "Disc Golf Map",
+   "https://galesburg.maps.arcgis.com/": "Geographic Information System (GIS)",
+   "https://experience.arcgis.com/experience/2ff7187c0084402ab3e36cb28885834e/": "Brick Street Classification Map (Interactive)",
+   "http://gis.ci.galesburg.il.us/TreeInventory": "City Tree Inventory"
+  }
+ },
+ "Danville": {
+  "files": [],
+  "portals": {
+   "https://report-it-danvilleil.hub.arcgis.com": "Report a Problem Track your request and public records",
+   "https://experience.arcgis.com/experience/808359f6e9c74ece967f20316f84cba6": "Residental Property Lookup.",
+   "https://gis-hub-danvilleil.hub.arcgis.com/pages/applications": "GIS technology",
+   "https://storymaps.arcgis.com/stories/aa2e3a41c3dc40fdb2aee1f3d0c2d058": "Complete Guide"
+  }
+ }
+}
