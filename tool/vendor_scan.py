@@ -528,21 +528,42 @@ def maps():
             n += 1
         log.append(f'kept  {n:6d}  {k[0]:22s}  {title[:100]}')
 
-    with cf.ThreadPoolExecutor(16) as ex:
-        for (city, m), res in zip(city_maps, ex.map(lambda cm: read_map(cm[1], cm[0] + ' · '), city_maps)):
-            for title, pts in res:
-                take(f'{city} map', title, pts)
-        for site, res in zip(sites, ex.map(vendor_maps, sites)):
-            for title, pts in res:
-                take(f'{site} map', title, pts)
-    with cf.ThreadPoolExecutor(16) as ex:
-        for (city, dom), res in zip(sorted(data_portals), ex.map(lambda cd: portal_points(cd[1]), sorted(data_portals))):
-            for title, pts in res:
-                take(f'{city} open data', title, pts)
+    # time budget: what is read by then is kept (the job has a limit); the order puts vendor sites and portals first
+    end = time.time() + 60 * int(os.environ.get('MAPS_MIN', 240))
+    jobs = ([('site', s_, None) for s_ in sites] + [('portal', c_, d_) for c_, d_ in sorted(data_portals)] +
+            [('map', c_, m_) for c_, m_ in city_maps])
+    print(f'{len(jobs)} things to read (vendor sites, portals, maps)', flush=True)
+
+    def run(j):
+        if time.time() > end:
+            return j, None
+        kind, a, b = j
+        try:
+            if kind == 'site':
+                return j, vendor_maps(a)
+            if kind == 'portal':
+                return j, portal_points(b)
+            return j, read_map(b, a + ' · ')
+        except Exception as e:
+            return j, []
+    done_n = skipped = 0
+    with cf.ThreadPoolExecutor(32) as ex:
+        for (kind, a, b), res in ex.map(run, jobs):
+            if res is None:
+                skipped += 1
+                continue
+            done_n += 1
+            src = f'{a} map' if kind == 'site' else f'{a} open data' if kind == 'portal' else f'{a} map'
+            for title, pts_ in res:
+                take(src, title, pts_)
+            if done_n % 500 == 0:
+                json.dump(list(found.values()), open(os.path.join(OUT, 'points.json'), 'w'), separators=(',', ':'))
+                print(f'{done_n}/{len(jobs)} read · {len(found)} points', flush=True)
+    log.insert(0, f'read {done_n} of {len(jobs)} · not read (time): {skipped}')
     pts = list(found.values())
     json.dump(pts, open(os.path.join(OUT, 'points.json'), 'w'), separators=(',', ':'))
     lines = [f'# Vendors and maps of US municipalities', '',
-             f'Municipalities scanned with finds: {len(scans)} · city maps read: {len(city_maps)} · vendor sites read: {len(sites)}',
+             f'Municipalities + transit agencies scanned with finds: {len(scans)} · city maps: {len(city_maps)} · vendor sites: {len(sites)} · open-data portals: {len(data_portals)} · {log[0]}',
              f'**Map points kept (US, our kinds of place): {len(pts)}** · by kind: '
              f'{dict(collections.Counter(p[0].rsplit("_", 1)[1] for p in pts))}', '',
              '## Vendors named on municipal pages (number of municipalities)', *[f'- {v}: {n}' for v, n in vend.most_common(60)], '',
