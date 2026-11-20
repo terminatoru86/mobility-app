@@ -1233,6 +1233,19 @@ def main():
             for r in json.load(open(fpath, encoding='utf-8')):
                 tiles.setdefault((math.floor(r[1]), math.floor(r[2])), {})[r[0]] = r
         print(f'OpenStreetMap from {len(osm_files)} extracts: {sum(len(d) for d in tiles.values())} places', flush=True)
+        # a region whose extract could not be downloaded (Geofabrik down): keep its OpenStreetMap places from the last build
+        covered, kept_old = set(tiles), 0
+        for name in os.listdir(OUT) if os.path.isdir(OUT) else []:
+            m = re.match(r't_(-?\d+)_(-?\d+)\.json\.gz$', name)
+            if not m or (int(m.group(1)), int(m.group(2))) in covered:
+                continue
+            rows = json.loads(gzip.decompress(open(os.path.join(OUT, name), 'rb').read()))
+            for r in rows:
+                if r[0].startswith(('node/', 'way/', 'relation/')):
+                    tiles.setdefault((int(m.group(1)), int(m.group(2))), {})[r[0]] = r
+                    kept_old += 1
+        if kept_old:
+            print(f'OpenStreetMap kept from the last build for tiles without a new extract: {kept_old}', flush=True)
     elif refresh:
         # light run: keep every place already built; read again only the named sources
         for name in os.listdir(OUT) if os.path.isdir(OUT) else []:
