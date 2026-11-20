@@ -1,0 +1,1803 @@
+{
+ "Plano TX": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/40107f6f8f024f8da0115532b48aa363/page/Fountains": "Drinking Fountains and Restrooms"
+  }
+ },
+ "Manchester NH": {
+  "files": [
+   {
+    "url": "https://manchesternh.gov/Portals/2/Departments/water_works/watershed/WW_DepthMap.pdf?ver=2019-07-25-101121-063",
+    "text": "Massabesic Depth Map",
+    "file": "data/city_files/Manchester_NH/77038a_WW_DepthMap.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://manchesternh.gov/Portals/2/Departments/water_works/watershed/LakeMassabesicWatershedIndexMap.pdf?ver=2021-10-26-142930-680",
+    "text": "Lake Massabesic Watershed Index Map",
+    "file": "data/city_files/Manchester_NH/acc80a_LakeMassabesicWatershedIndexMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://manchesternh.gov/Portals/2/Departments/water_works/watershed/Area1_LakeMassabesicWatershedTrailMap.pdf?ver=2021-10-26-143047-360",
+    "text": "Area 1: Lake Massabesic Watershed Trail Map",
+    "file": "data/city_files/Manchester_NH/5f8fdc_Area1_LakeMassabesicWatershedTrailMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://manchesternh.gov/Portals/2/Departments/water_works/watershed/Area2_LakeMassabesicWatershedTrailMap.pdf?ver=2021-10-26-143115-307",
+    "text": "Area 2: Lake Massabesic Watershed Trail Map",
+    "file": "data/city_files/Manchester_NH/c3cc4e_Area2_LakeMassabesicWatershedTrailMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://manchesternh.gov/Portals/2/Departments/water_works/watershed/Area3_LakeMassabesicWatershedTrailMap.pdf?ver=2021-10-26-143147-190",
+    "text": "Area 3: Lake Massabesic Watershed Trail Map",
+    "file": "data/city_files/Manchester_NH/b6e459_Area3_LakeMassabesicWatershedTrailMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://manchesternh.gov/Portals/2/Departments/water_works/watershed/Area4_LakeMassabesicWatershedTrailMap.pdf?ver=2021-10-26-143258-800",
+    "text": "Area 4: Lake Massabesic Watershed Trail Map",
+    "file": "data/city_files/Manchester_NH/c68bf3_Area4_LakeMassabesicWatershedTrailMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://manchesternh.gov/Portals/2/Departments/water_works/watershed/Area5_LakeMassabesicWatershedTrailMap.pdf?ver=2021-10-26-154555-687",
+    "text": "Area 5: Lake Massabesic Watershed Trail Map",
+    "file": "data/city_files/Manchester_NH/c45faf_Area5_LakeMassabesicWatershedTrailMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://manchesternh.gov/Portals/2/Departments/pcd/SIDEWALK_PROGRAM_MAP.PDF",
+    "text": "Sidewalk Program",
+    "file": "data/city_files/Manchester_NH/ccba1b_SIDEWALK_PROGRAM_MAP.PDF",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://manchesternh.gov/Portals/2/Departments/pcd/HIGHEST_PRIORITY_WETLANDS_MAP.PDF",
+    "text": "Highest Priority Wetlands",
+    "file": "data/city_files/Manchester_NH/efdad3_HIGHEST_PRIORITY_WETLANDS_MAP.PDF",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://manchesternh.gov/Portals/2/Departments/pcd/ZONING_MAP.PDF",
+    "text": "Official Zoning Map of Manchester",
+    "file": "data/city_files/Manchester_NH/884e8f_ZONING_MAP.PDF",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/archives/0409_004_CemeteryTrustees.pdf",
+    "text": "Board of Cemetery Trustees Records, 1856-2001 (0409.004)",
+    "file": "data/city_files/Manchester_NH/3fa4bf_0409_004_CemeteryTrustees.pdf",
+    "rows": 16,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/archives/0409_006_CemeteryAdministrativeRecords.pdf",
+    "text": "Cemetery Administrative Records, 1906-1973 (0409.006)",
+    "file": "data/city_files/Manchester_NH/6cf92e_0409_006_CemeteryAdministrativeRecords.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Unofficial%20Floterial%20Rep%20Districts%20Primary%20Races%202014%20%28web%29.pdf",
+    "text": "Unofficial State Primary Election Results (Floterial Representative Races - Ward Summary)",
+    "file": "data/city_files/Manchester_NH/f72cd8_Unofficial_20Floterial_20Rep_20Districts_20Primary_20Races_202014_20_2",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 1 Sample Ballot.pdf?ver=2026-09-28-153540-223",
+    "text": "Ward 1 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/6073da_2026-11-03_Ward_1_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 2 Sample Ballot.pdf?ver=2026-09-28-153540-223",
+    "text": "Ward 2 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/22cfe2_2026-11-03_Ward_2_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 3 Sample Ballot.pdf?ver=2026-09-28-153540-490",
+    "text": "Ward 3 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/0e5a1f_2026-11-03_Ward_3_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 4 Sample Ballot.pdf?ver=2026-09-28-153540-490",
+    "text": "Ward 4 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/5ff3b0_2026-11-03_Ward_4_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 5 Sample Ballot.pdf?ver=2026-09-28-153540-597",
+    "text": "Ward 5 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/514beb_2026-11-03_Ward_5_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 6 Sample Ballot.pdf?ver=2026-09-28-153540-520",
+    "text": "Ward 6 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/680cc0_2026-11-03_Ward_6_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 7 Sample Ballot.pdf?ver=2026-09-28-153540-537",
+    "text": "Ward 7 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/8a9552_2026-11-03_Ward_7_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 8 Sample Ballot.pdf?ver=2026-09-28-153540-520",
+    "text": "Ward 8 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/b116b1_2026-11-03_Ward_8_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 9 Sample Ballot.pdf?ver=2026-09-28-153540-643",
+    "text": "Ward 9 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/796424_2026-11-03_Ward_9_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 10 Sample Ballot.pdf?ver=2026-09-28-153540-630",
+    "text": "Ward 10 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/e55f95_2026-11-03_Ward_10_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 11 Sample Ballot.pdf?ver=2026-09-28-153540-630",
+    "text": "Ward 11 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/2d943a_2026-11-03_Ward_11_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 12 Sample Ballot.pdf?ver=2026-09-28-153540-643",
+    "text": "Ward 12 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/f98d9e_2026-11-03_Ward_12_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/CitywideWardMap.pdf",
+    "text": "All Wards - Map",
+    "file": "data/city_files/Manchester_NH/6939cc_CitywideWardMap.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward1Map.pdf",
+    "text": "Ward 1 - Map",
+    "file": "data/city_files/Manchester_NH/854e9e_Ward1Map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward2Map.pdf",
+    "text": "Ward 2 - Map",
+    "file": "data/city_files/Manchester_NH/849f22_Ward2Map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward3Map.pdf",
+    "text": "Ward 3 - Map",
+    "file": "data/city_files/Manchester_NH/2556f9_Ward3Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward4Map.pdf",
+    "text": "Ward 4 - Map",
+    "file": "data/city_files/Manchester_NH/10faeb_Ward4Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward5Map.pdf",
+    "text": "Ward 5 - Map",
+    "file": "data/city_files/Manchester_NH/08c99a_Ward5Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward6Map.pdf",
+    "text": "Ward 6 - Map",
+    "file": "data/city_files/Manchester_NH/4baf7d_Ward6Map.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward7Map.pdf",
+    "text": "Ward 7 - Map",
+    "file": "data/city_files/Manchester_NH/41d158_Ward7Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward8Map.pdf",
+    "text": "Ward 8 - Map",
+    "file": "data/city_files/Manchester_NH/504776_Ward8Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward9Map.pdf",
+    "text": "Ward 9 - Map",
+    "file": "data/city_files/Manchester_NH/c73309_Ward9Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward10Map.pdf",
+    "text": "Ward 10 - Map",
+    "file": "data/city_files/Manchester_NH/e29e98_Ward10Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward11Map.pdf",
+    "text": "Ward 11 - Map",
+    "file": "data/city_files/Manchester_NH/513bdf_Ward11Map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward12Map.pdf",
+    "text": "Ward 12 - Map",
+    "file": "data/city_files/Manchester_NH/7dd4a1_Ward12Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://survey123.arcgis.com/share/4601ba15d2ee46609f656db18ad8e3e2": "Manchester Tree Request Survey.",
+   "https://manchesternh.maps.arcgis.com/apps/webappviewer/index.html?id=fbe7572fbac34a24a18a0cee5a270e7e": "View Updated Paving Plan"
+  }
+ },
+ "Batman": {
+  "files": [],
+  "portals": {
+   "https://batman.bel.tr/opendata": "KENT REHBERİ",
+   "https://batman.bel.tr/open-data": "KENT REHBERİ"
+  }
+ },
+ "Haifa": {
+  "files": [],
+  "portals": {}
+ },
+ "Overland Park": {
+  "files": [],
+  "portals": {}
+ },
+ "Clarksville": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/d1684b01dcca4d9e9970f58d2ead8c2f": "Capital Projects",
+   "https://storymaps.arcgis.com/stories/778958239b14449885ca814d1953e23c": "Project Map",
+   "https://experience.arcgis.com/experience/737113bdcf2c4e1090bc137662daa9ec/": "HERE Version OptionsClarksville GreenwayHeadline",
+   "https://experience.arcgis.com/experience/4c427cb32757424494543a3d329b6577": "Desktop Version",
+   "https://www.clarksvilletn.gov/399/%22https:/experience.arcgis.com/experience/4c427cb32757424494543a3d329b6577%22": "Version OptionsParks & Facilities MapHeadline",
+   "https://experience.arcgis.com/experience/c334b3806ca94ef7839a4ed8f659ab80": "Mobile  Version",
+   "https://clarksville-csd.maps.arcgis.com/apps/instant/media/index.html?appid=21bb141a2413456c8a6afa0fdd8eb18e": "",
+   "https://clarksville-csd.maps.arcgis.com/apps/instant/media/index.html?appid=8c3ec6d1c21749668524a8789f015bc8": "",
+   "https://storymaps.arcgis.com/stories/456fa05094b8401fb8e70824049fa33c": "",
+   "https://storymaps.arcgis.com/stories/db01dc12794e4e469060c4700a406587": "",
+   "https://storymaps.arcgis.com/stories/365a8a71e4994b65b53d1d1d52781c16": "",
+   "https://clarksville-csd.maps.arcgis.com/apps/instant/media/index.html?appid=b2a4d86e4e8948bebe3480b255de745d": "",
+   "https://cityofclarksville.com/399/%22https:/experience.arcgis.com/experience/4c427cb32757424494543a3d329b6577%22": "Version OptionsParks & Facilities MapHeadline",
+   "https://cityofclarksville.com/655/%22https:/experience.arcgis.com/experience/4c427cb32757424494543a3d329b6577%22": "Version OptionsParks & Facilities MapHeadline",
+   "https://www.cityofclarksville.com/399/%22https:/experience.arcgis.com/experience/4c427cb32757424494543a3d329b6577%22": "Version OptionsParks & Facilities MapHeadline"
+  }
+ },
+ "Cedar Rapids": {
+  "files": [],
+  "portals": {
+   "https://crgis.cedar-rapids.org/wbwsc/webtrac.wsc/splash.html": "Online Registration and Pool Season Pass Renewal",
+   "https://survey123.arcgis.com/share/709743d7252949e68ae788238416d91d": "",
+   "https://experience.arcgis.com/experience/0d62cfa4ec7e4d1e8995dabb93a4268b/page/Road-Closures": "Current Road Closure Map",
+   "https://experience.arcgis.com/experience/0d62cfa4ec7e4d1e8995dabb93a4268b": "Construction Project Map",
+   "https://crgis.cedar-rapids.org/wbwsc/golftrac.wsc/splash.html": "Buy Online",
+   "https://crgis.maps.arcgis.com/apps/dashboards/7f4363f93a404f3291f6a9adfbd27bbf": "Full Screen Dashboard"
+  }
+ },
+ "Muş": {
+  "files": [],
+  "portals": {}
+ },
+ "Campana Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Davenport": {
+  "files": [
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Public Works/Downtown Parking Map, Fees, and Details June2022.pdf",
+    "text": "Downtown Parking Map, Rates and Information",
+    "file": "data/city_files/Davenport/23f93d_Downtown_Parking_Map_Fees_and_Details_June2022.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Finance/Revenue/Bike License Application New.pdf",
+    "text": "To apply by mail, print the bicycle license application",
+    "file": "data/city_files/Davenport/3ca225_Bike_License_Application_New.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Park & Facility Amenities List & Map.pdf",
+    "text": "Davenport Parks Map and Amenities List",
+    "file": "data/city_files/Davenport/675feb_Park_Facility_Amenities_List_Map.pdf",
+    "rows": 58,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks%20and%20Recreation/Tails%20and%20Trails%20Club-%20SM%20Post.pdf",
+    "text": "Tails and Trails Checklist",
+    "file": "data/city_files/Davenport/94bc1d_Tails_20and_20Trails_20Club-_20SM_20Post.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Davenport Trails Map.pdf",
+    "text": "Davenport Trails Map",
+    "file": "data/city_files/Davenport/d52fa6_Davenport_Trails_Map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Quad Cities RiverWay Parks & Trails Map.pdf",
+    "text": "Quad Cities RiverWay Parks & Trails Map",
+    "file": "data/city_files/Davenport/45cf64_Quad_Cities_RiverWay_Parks_Trails_Map.pdf",
+    "rows": 28,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Quad Cities Metro Area Bicycle Map.pdf",
+    "text": "Quad Cities Metro Area Bicycle Map",
+    "file": "data/city_files/Davenport/5f6ab8_Quad_Cities_Metro_Area_Bicycle_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Boards%20and%20Commissions/Davenport%20Register%20of%20Historic%20Properties%20and%20Local%20Landmarks.pdf",
+    "text": "Davenport Register of Historic Properties and Local Landmarks",
+    "file": "data/city_files/Davenport/6f374d_Davenport_20Register_20of_20Historic_20Properties_20and_20Local_20Land",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Public%20Works/historic%20pres%20calendar%202025.pdf",
+    "text": "Calendar and Deadlines",
+    "file": "data/city_files/Davenport/ab8ffd_historic_20pres_20calendar_202025.pdf",
+    "rows": 32,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Finance/Revenue/Bike License Application New.pdf",
+    "text": "To apply by mail, print the bicycle license application",
+    "file": "data/city_files/Davenport/51c9f9_Bike_License_Application_New.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Public Works/Downtown Parking Map, Fees, and Details June2022.pdf",
+    "text": "Downtown Parking Map, Rates and Information",
+    "file": "data/city_files/Davenport/247c2c_Downtown_Parking_Map_Fees_and_Details_June2022.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Public%20Works/Eastern%20Ave%20Detour%20(Final).pdf",
+    "text": "Find a series of maps at this link",
+    "file": "data/city_files/Davenport/ec4500_Eastern_20Ave_20Detour_20_Final_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Public%20Works/Downtown%20Closures%20(Jul%2024%20-%20Aug%207).pdf",
+    "text": "View Map",
+    "file": "data/city_files/Davenport/10cadd_Downtown_20Closures_20_Jul_2024_20-_20Aug_207_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Public%20Works/Downtown%20Closures%20(July%2024-31).pdf",
+    "text": "View Map.",
+    "file": "data/city_files/Davenport/633497_Downtown_20Closures_20_July_2024-31_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Public%20Works/Citibus%20Festival%20Of%20Trees%20parade%202026%20public%20version.pdf",
+    "text": "CitiBus Detour Route",
+    "file": "data/city_files/Davenport/76dd5d_Citibus_20Festival_20Of_20Trees_20parade_202026_20public_20version.pdf",
+    "rows": 16,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Public%20Works/Quad%20City%20Air%20Show%202025.pdf",
+    "text": "Traffic Impact Map",
+    "file": "data/city_files/Davenport/cd61dd_Quad_20City_20Air_20Show_202025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.davenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Public%20Works/ZombieRun_2026.pdf",
+    "text": "Event Map",
+    "file": "data/city_files/Davenport/5f038f_ZombieRun_2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Park & Facility Amenities List & Map.pdf",
+    "text": "Davenport Parks Map and Amenities List",
+    "file": "data/city_files/Davenport/5ea95b_Park_Facility_Amenities_List_Map.pdf",
+    "rows": 58,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Davenport Trails Map.pdf",
+    "text": "Davenport Trails Map",
+    "file": "data/city_files/Davenport/32663d_Davenport_Trails_Map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Quad Cities RiverWay Parks & Trails Map.pdf",
+    "text": "Quad Cities RiverWay Parks & Trails Map",
+    "file": "data/city_files/Davenport/d70ebd_Quad_Cities_RiverWay_Parks_Trails_Map.pdf",
+    "rows": 28,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://cityofdavenportiowa.com/UserFiles/Servers/Server_6481372/File/Departments/Parks and Recreation/Quad Cities Metro Area Bicycle Map.pdf",
+    "text": "Quad Cities Metro Area Bicycle Map",
+    "file": "data/city_files/Davenport/6885ac_Quad_Cities_Metro_Area_Bicycle_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://davenportiowa.maps.arcgis.com/apps/webappviewer/index.html?id=1e272378831840dfb3d5a18526a5070e": "City Map",
+   "https://davenportiowa.maps.arcgis.com/apps/dashboards/0032cf57bf3e4a52b4b857f095f90945": "Flood Inundation Maps",
+   "https://davenportiowa.maps.arcgis.com/apps/instant/sidebar/index.html?appid=cb0cacfb2baa4013ad03cd9b4842f285": "Posted Snow Routes",
+   "http://davenportiowa.maps.arcgis.com/apps/webappviewer/index.html?id=6673061ef8a14a90b2fa9983bc2f7c73": "Ward Maps",
+   "https://davenportiowa.maps.arcgis.com/apps/webappviewer/index.html?id=8ee7347728184fa1999dd5d7cf8819b1": "Zoning Map",
+   "https://iowadnr.maps.arcgis.com/apps/webappviewer/index.html?id=49241621e66949c7b02f135bcfb85ee3": "Iowa DNR - Iowa State Parks Trails",
+   "https://davenportiowa.maps.arcgis.com/apps/webappviewer/index.html?id=e56ff90601c2469cb773618a939f574f": "watershed",
+   "https://gis.davenportiowa.com/portal/apps/webappviewer/index.html?id=14598c1f08f04fb3a0f02f6800d8b58a": "https://gis.davenportiowa.com/portal/apps/webappviewer/index.html?id=14598c1f08f04fb3a0f02f6800d8b58a",
+   "https://survey123.arcgis.com": ""
+  }
+ },
+ "Deltona": {
+  "files": [
+   {
+    "url": "https://msc.fema.gov/msccontent/Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "text": "Flood\n\t\t\t\t\t\tHazard Mapping Updates Overview Fact Sheet",
+    "file": "data/city_files/Deltona/9a4d0e_Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "rows": 52,
+    "bike_rows": 11
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/apps/dashboards/1d8ee8f62a434c72b82e5e7c50634f55": "Find your District",
+   "https://data.census.gov/": "Deltona Demographics",
+   "https://storymaps.arcgis.com/stories/f947fc84313549bc8f42b68aaa8e95b9": "Development Activity Map",
+   "https://www.arcgis.com/apps/dashboards/61045bb3b0d0463fb68014786862175c": "Interactive Zoning & Future Land Use Map"
+  }
+ },
+ "Deerfield Beach": {
+  "files": [],
+  "portals": {
+   "https://www.arcgis.com/apps/dashboards/9aecec5400934abfac6f163132def27f": "Capital City Projects",
+   "https://dfb.maps.arcgis.com/apps/dashboards/42fbba49db7845a6b41b1d191008afc8": "Parks Map",
+   "https://dfb.maps.arcgis.com/apps/dashboards/23b084464434486fba6db697686e2eb0": "Current Development Projects",
+   "https://www.arcgis.com/apps/dashboards/02f2e5d84cfd43be90a0bb568eb68785": "Beach Conditions and Flags",
+   "https://experience.arcgis.com/experience/9482b6dfab74466d9f09232f6cf0e4b4/": "Water Service Lookup",
+   "https://dfb.maps.arcgis.com/apps/instant/media/index.html?appid=270979b52ba24286b34aefb765bda5ca": "Voting Location Find your assigned voting location. ❯",
+   "https://dfb.maps.arcgis.com/apps/opsdashboard/index.html": "Location Map",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=f0f44991e50044a08a6d04f978553b80": "Interactive Vacation Rental map",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=b867bf09c65c4a1a9f226339277a984d": "Zoning Map View zoning districts and classifications throughout the City. ❯",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=17231306f7c64c1d9c6276d51fda0f6b": "Future Land Use Map Review adopted future land use categories and designations. ❯",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=cfb732923aae46169e08f7a53159f858": "Flood Information View flood zone boundaries and elevation certificates. ❯",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=6723ad756bfe4620bad036c5c03aa260": "Commission Districts Find City Commission district boundaries. ❯",
+   "https://dfb.maps.arcgis.com/apps/instant/sidebar/index.html?appid=86add30b8f464805b0ec58b33735e7a9": "Hurricane Tracker Follow active tropical weather systems around the world. ❯",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=27534bf1629f451e974ce05a6477d8b4": "Artificial Reefs Locate offshore artificial reefs and reef sites near Deerfield Beach. ❯",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=92894c4386734930b476b2d3e1f6accc": "Bulk Pick-Up Schedule Find your scheduled bulk waste collection day. ❯",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=83ecb10220944e54bda290ea1efdd30e": "Garbage Collection Find your garbage collection days. ❯"
+  }
+ },
+ "Longview": {
+  "files": [],
+  "portals": {
+   "http://data2017-02-07t150427169z-longviewtexas.opendata.arcgis.com/": "Open Data Portal",
+   "https://longviewtexas.gov/3992/Open-Data-Portal": "Open Data Portal",
+   "https://longviewtexas.gov/4415/Open-Data-Portal": "Open Data Portal",
+   "https://longviewtexas.gov/3718/Open-Data-Portal": "Open Data Portal",
+   "https://storymaps.arcgis.com/stories/a3a71fcfc837471b9c4dea13bd2f75e2": "Sabine River Story Map",
+   "https://longviewtexas.maps.arcgis.com/apps/MapSeries/index.html?appid=e7b2e66a516049a9b263ec8ce9283bfd": "Public Works - At Work for You ( Interactive Map )",
+   "https://www.longviewtexas.gov/3992/Open-Data-Portal": "Open Data Portal",
+   "https://www.longviewtexas.gov/4415/Open-Data-Portal": "Open Data Portal",
+   "https://www.longviewtexas.gov/3718/Open-Data-Portal": "Open Data Portal"
+  }
+ },
+ "Santo Tomé": {
+  "files": [],
+  "portals": {
+   "https://santotome.gov.ar/opendata": "Siguiente"
+  }
+ },
+ "Lafayette": {
+  "files": [],
+  "portals": {
+   "https://tippecanoehub.hub.arcgis.com/pages/59a2d667998a4b8295e2735167481e01": "2026 Residential Land Values",
+   "https://tippecanoehub.maps.arcgis.com/apps/webappviewer/index.html?id=7cac9cf965a4404e89039fc4e5a497aa": "Sales Research",
+   "https://tippecanoehub.maps.arcgis.com/home/index.html": ""
+  }
+ },
+ "General Pico": {
+  "files": [],
+  "portals": {}
+ },
+ "Lakewood": {
+  "files": [
+   {
+    "url": "https://cityoflakewood.us/wp-content/uploads/2018/12/street_sweeping_routes.pdf",
+    "text": "Street sweeping",
+    "file": "data/city_files/Lakewood/9ad6df_street_sweeping_routes.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityoflakewood.us/wp-content/uploads/2022/03/Historic-Streets-locations.pdf",
+    "text": "dito",
+    "file": "data/city_files/Lakewood/3dbec6_Historic-Streets-locations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lakewoodhistorical.org/media/dynamic/docs/fall_2015.pdf",
+    "text": "Bahay ng Bangka-Ainsworth",
+    "file": "data/city_files/Lakewood/cb54e6_fall_2015.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lakewoodhistorical.org/media/dynamic/docs/historic_driving_tour_of_lakewood.pdf",
+    "text": "Paaralang Custer na “Maliit na Pulang Paaralan”",
+    "file": "data/city_files/Lakewood/cb76e5_historic_driving_tour_of_lakewood.pdf",
+    "rows": 18,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityoflakewood.us/wp-content/uploads/2018/11/Lakewood-Map-Brochure-2015-PROOF6.pdf",
+    "text": "Historical Touring Map ng Lakewood",
+    "file": "data/city_files/Lakewood/ae0b1b_Lakewood-Map-Brochure-2015-PROOF6.pdf",
+    "rows": 35,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://cityoflakewood.us/wp-content/uploads/2020/03/New-Lakewood-Resources.pdf",
+    "text": "I-download ang listahang ito ng mga available na mapagkukunan ng komunidad (PDF)",
+    "file": "data/city_files/Lakewood/6158c8_New-Lakewood-Resources.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://city-of-lakewood-gis-cityoflakewood.hub.arcgis.com/": "GIS Maps",
+   "https://data.census.gov/cedsci/profile?g=1600000US5338038": "Overview: Lakewood city, Washington",
+   "https://data.census.gov/cedsci/profile?g=0400000US53": "Overview: Washington State",
+   "https://data.census.gov/cedsci/table?q=acs&g=1600000US5338038&y=2020": "2020 ACS Survey Results: Lakewood city, Washington"
+  }
+ },
+ "Marietta": {
+  "files": [],
+  "portals": {
+   "https://www.arcgis.com/apps/instant/minimalist/index.html?appid=be751076a1e040c0b2dc11ff2fbab624": "Full screen"
+  }
+ },
+ "Tirur Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Herriman": {
+  "files": [
+   {
+    "url": "https://www.herriman.gov/uploads/files/3174/LandUse203036x36.pdf",
+    "text": "General Plan Map",
+    "file": "data/city_files/Herriman/4adeda_LandUse203036x36.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://herriman.gov/uploads/files/5833/HerrimanTrailSystem-1.pdf",
+    "text": "Trails Map",
+    "file": "data/city_files/Herriman/f3dc7b_HerrimanTrailSystem-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://herriman.gov/uploads/files/3980/HerrimanPrimitaveTrailSystem.pdf",
+    "text": "Primitive Trails Map",
+    "file": "data/city_files/Herriman/a33dc5_HerrimanPrimitaveTrailSystem.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.herriman.gov/uploads/files/3173/SnowPlowRoutePublic.pdf",
+    "text": "Snowplowing",
+    "file": "data/city_files/Herriman/b6259c_SnowPlowRoutePublic.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://herriman.gov/uploads/files/5827/SnowRemovalSidewalks11x17.pdf",
+    "text": "Sidewalk and Trail Snow Removal",
+    "file": "data/city_files/Herriman/feb761_SnowRemovalSidewalks11x17.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.herriman.gov/uploads/files/5833/HerrimanTrailSystem-1.pdf",
+    "text": "Trails Map",
+    "file": "data/city_files/Herriman/27a050_HerrimanTrailSystem-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.herriman.gov/uploads/files/3980/HerrimanPrimitaveTrailSystem.pdf",
+    "text": "Primitive Trails Map",
+    "file": "data/city_files/Herriman/6412d2_HerrimanPrimitaveTrailSystem.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.herriman.gov/uploads/files/5827/SnowRemovalSidewalks11x17.pdf",
+    "text": "Sidewalk and Trail Snow Removal",
+    "file": "data/city_files/Herriman/51a73b_SnowRemovalSidewalks11x17.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/collections/9fa3c77f140a4cf08001f2d9b53377d8": "Master Plan Update 2025: Transportation",
+   "https://herriman.maps.arcgis.com/apps/instant/sidebar/index.html?appid=c6bb3b7494994eb8a98951bc0c493ef9": "Construction Projects",
+   "https://arcgis.herriman.org/portal/apps/webappviewer/index.html?id=3c5c07c49be4429ca4112e0a6a323f80": "Parks",
+   "http://herriman.maps.arcgis.com/apps/webappviewer/index.html?id=ee21f28dca0e456e9a5a284f8042081e": "",
+   "https://arcgis.herriman.gov/portal/apps/webappviewer/index.html?id=b6c7879b341649bcb33420c8ed55791b": "Zoning Map",
+   "https://arcgis.herriman.gov/portal/apps/webappviewer/index.html?id=f10383bd093c4b17a246ab08412148b1": "Subdivisions Map",
+   "https://herriman.maps.arcgis.com/apps/webappviewer/index.html?id=86ce977fafbc45a9902a485e3ae14417": "Districts Map",
+   "https://arcgis.herriman.gov/portal/apps/webappviewer/index.html?id=94ba0daec10d4572a028820bffd3d128": "Parks and Open Space",
+   "https://herriman.maps.arcgis.com/apps/webappviewer/index.html?id=e93d6fd915e8454fb57850fef09bde78": "Hunting Map",
+   "https://ufa.maps.arcgis.com/apps/Embed/index.html?webmap=4a034a7ae37b40d48c6569909cdc2125&extent=-112.3856,40.3126,-111.4291,40.8949&home=true&zoom=true&scale=false&search=true&searchextent=true&details=true&legend=true&active_panel=legend&basemap_toggle=true&alt_basemap=hybrid&theme=dark": "Fireworks Restrictions",
+   "http://herriman.maps.arcgis.com/apps/webappviewer/index.html?id=588744a8e1724f66b2c57e59a32a5605": "Cemetery Map",
+   "https://experience.arcgis.com/experience/4b2c11354bd9429e9fe9362ef5e15fa7": "Herriman City Trails Map",
+   "https://arcgis.herriman.gov/portal/apps/webappviewer/index.html?id=482b7438d2ad4e49844c05236312dc89": "City-Maintained Grass Map",
+   "https://herriman.maps.arcgis.com/apps/instant/sidebar/index.html?appid=31f4cec152b340f1a69f93a994bc1638": "transition map"
+  }
+ },
+ "Villa Constitución": {
+  "files": [],
+  "portals": {}
+ },
+ "Columbus": {
+  "files": [
+   {
+    "url": "https://www.columbus.in.gov/wp-content/uploads/2024/05/Parking-Commission-Agenda-050924.pdf",
+    "text": "Download",
+    "file": "data/city_files/Columbus/a8a84f_Parking-Commission-Agenda-050924.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/wp-content/uploads/sites/12/2017/02/Area-Map-Recycle_2_10_151.pdf",
+    "text": "Printable Version (PDF)",
+    "file": "data/city_files/Columbus/5f6b37_Area-Map-Recycle_2_10_151.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/public-works/wp-content/uploads/sites/12/2025/12/2026-recycle.pdf",
+    "text": "2026 Printable PDF Calendar",
+    "file": "data/city_files/Columbus/351711_2026-recycle.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/public-works/wp-content/uploads/sites/12/2024/05/Recycling-Dos-and-Donts.pdf",
+    "text": "Printable Version (PDF)",
+    "file": "data/city_files/Columbus/c0482c_Recycling-Dos-and-Donts.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.columbus.in.gov/public-works/wp-content/uploads/sites/12/2025/04/Help-the-Earth-English.png.pdf",
+    "text": "Help the Earth Coloring Page and Recycling Tips – English",
+    "file": "data/city_files/Columbus/394cb0_Help-the-Earth-English.png.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/public-works/wp-content/uploads/sites/12/2025/04/Help-the-Earth-Spanish.png.pdf",
+    "text": "Help the Earth Coloring Page and Recycling Tips – Spanish",
+    "file": "data/city_files/Columbus/646400_Help-the-Earth-Spanish.png.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dropbox.com/s/toziehqa92xwv0j/Columbus%20by%20Bike_People%20Trail%20Map%202022.pdf?dl=0",
+    "text": "",
+    "file": "data/city_files/Columbus/d12e20_Columbus_20by_20Bike_People_20Trail_20Map_202022.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dropbox.com/s/4612yavwgorfc76/Bike%20Ped%20Plan%20FInal%20%284.5.2022%29.pdf?dl=0",
+    "text": "",
+    "file": "data/city_files/Columbus/bc0942_Bike_20Ped_20Plan_20FInal_20_284.5.2022_29.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dropbox.com/s/c0spyp4z4pfvln6/Final%20HAWK%20v%20RRFB%20Updated%205.9.19.pdf?dl=0",
+    "text": "Click this link for an RRFB and HAWK Signal Guide for motorists and pedestrians/bicyclists.",
+    "file": "data/city_files/Columbus/c1a315_Final_20HAWK_20v_20RRFB_20Updated_205.9.19.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dropbox.com/s/pj5kqc7ufcjfavd/Bicycle%20Lane.pdf?dl=0",
+    "text": "Bicycle Lanes",
+    "file": "data/city_files/Columbus/2c756a_Bicycle_20Lane.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dropbox.com/s/e6q3s8hdom5euh1/Multi-Use%20and%20Side%20Paths.pdf?dl=0",
+    "text": "Multi-Use Paths and Sidepaths",
+    "file": "data/city_files/Columbus/7fc796_Multi-Use_20and_20Side_20Paths.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/wp-content/uploads/2023/07/Map-Print-Outs.pdf",
+    "text": "Download",
+    "file": "data/city_files/Columbus/cba0d7_Map-Print-Outs.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/wp-content/uploads/2023/12/Parking-Commission-Agenda-120723.pdf",
+    "text": "Download",
+    "file": "data/city_files/Columbus/303da0_Parking-Commission-Agenda-120723.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/wp-content/uploads/2023/12/Downtwon-Parking-Strategy-Update-Nelson-Nygaard.pdf",
+    "text": "Download",
+    "file": "data/city_files/Columbus/aed807_Downtwon-Parking-Strategy-Update-Nelson-Nygaard.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/wp-content/uploads/2024/03/120723-Parking-Commission-Minutes.pdf",
+    "text": "Download",
+    "file": "data/city_files/Columbus/b1fcc8_120723-Parking-Commission-Minutes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/wp-content/uploads/2024/03/120723-Parking-Commission-Minutes-Revised.pdf",
+    "text": "Download",
+    "file": "data/city_files/Columbus/841046_120723-Parking-Commission-Minutes-Revised.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/wp-content/uploads/2024/06/Parking-Commission-Agenda-061124.pdf",
+    "text": "Download",
+    "file": "data/city_files/Columbus/4a2a8a_Parking-Commission-Agenda-061124.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/wp-content/uploads/2024/07/061324-Parking-Commission-Minutes.pdf",
+    "text": "Download",
+    "file": "data/city_files/Columbus/59afba_061324-Parking-Commission-Minutes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.in.gov/columbus-transit/wp-content/uploads/sites/11/2026/08/transit-maps-folded-map.pdf",
+    "text": "",
+    "file": "data/city_files/Columbus/e896a4_transit-maps-folded-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Wauwatosa": {
+  "files": [
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/Recycling-Guide.pdf",
+    "text": "print your own guide",
+    "file": "data/city_files/Wauwatosa/eb84da_Recycling-Guide.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/20047_DW_FireflyGrove-Ma.pdf",
+    "text": "Download a .pdf version of this map (PDF)",
+    "file": "data/city_files/Wauwatosa/3c98bb_20047_DW_FireflyGrove-Ma.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/09/Hart-Park-2026.pdf",
+    "text": "Download a .pdf version of this map (PDF)",
+    "file": "data/city_files/Wauwatosa/4a10b1_Hart-Park-2026.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/2026-Aldermanic-District-Ma.pdf",
+    "text": "View File City-wide Alderperson District/Ward Map",
+    "file": "data/city_files/Wauwatosa/8b3234_2026-Aldermanic-District-Ma.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-1-11x17-1.pdf",
+    "text": "View File Aldermanic District 1 Map",
+    "file": "data/city_files/Wauwatosa/425703_12-District-1-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-2-11x17-1.pdf",
+    "text": "View File Aldermanic District 2 Map",
+    "file": "data/city_files/Wauwatosa/239b78_12-District-2-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-3-11x17-1.pdf",
+    "text": "View File Aldermanic District 3 Map",
+    "file": "data/city_files/Wauwatosa/4c7154_12-District-3-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-4-11x17-1.pdf",
+    "text": "View File Aldermanic District 4 Map",
+    "file": "data/city_files/Wauwatosa/25f95b_12-District-4-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-5-11x17-1.pdf",
+    "text": "View File Aldermanic District 5 Map",
+    "file": "data/city_files/Wauwatosa/bc54f1_12-District-5-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-6-11x17-1.pdf",
+    "text": "View File Aldermanic District 6 Map",
+    "file": "data/city_files/Wauwatosa/a6384d_12-District-6-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-7-11x17-1.pdf",
+    "text": "View File Aldermanic District 7 Map",
+    "file": "data/city_files/Wauwatosa/94ca48_12-District-7-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-8-11x17-1.pdf",
+    "text": "View File Aldermanic District 8 Map",
+    "file": "data/city_files/Wauwatosa/ed7d3f_12-District-8-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-9-11x17-1.pdf",
+    "text": "View File Aldermanic District 9 Map",
+    "file": "data/city_files/Wauwatosa/c52aa9_12-District-9-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-10-11x17-1.pdf",
+    "text": "View File Aldermanic District 10 Map",
+    "file": "data/city_files/Wauwatosa/f12642_12-District-10-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-11-11x17-1.pdf",
+    "text": "View File Aldermanic District 11 Map",
+    "file": "data/city_files/Wauwatosa/dacf63_12-District-11-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/07/12-District-12-11x17-1.pdf",
+    "text": "View File Aldermanic District 12 Map",
+    "file": "data/city_files/Wauwatosa/5da9e8_12-District-12-11x17-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/Parking-Lot-Guidelines.pdf",
+    "text": "Parking Lot Guidelines",
+    "file": "data/city_files/Wauwatosa/722d6d_Parking-Lot-Guidelines.pdf",
+    "rows": 186,
+    "bike_rows": 40
+   },
+   {
+    "url": "https://media.wauwatosa.gov/wp-content/uploads/2026/08/Neighborhood-Greenway-Guidance.pdf",
+    "text": "Download the greenway plan (PDF)",
+    "file": "data/city_files/Wauwatosa/70059b_Neighborhood-Greenway-Guidance.pdf",
+    "rows": 271,
+    "bike_rows": 81
+   },
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/Wauwatosa-Bicycle-and-Pedestrian-Plan.pdf",
+    "text": "Bicycle and Pedestrian Facilities Plan (2014)",
+    "file": "data/city_files/Wauwatosa/2e232b_Wauwatosa-Bicycle-and-Pedestrian-Plan.pdf",
+    "rows": 394,
+    "bike_rows": 179
+   },
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/Greenway-Ma.pdf",
+    "text": "download the map",
+    "file": "data/city_files/Wauwatosa/ac03ea_Greenway-Ma.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/Church-Street-Historic-District.pdf",
+    "text": "Church Street Historic District – 1448-1630 Church Street and 7758 Menomonee River Parkway (16 properties)",
+    "file": "data/city_files/Wauwatosa/53a9a1_Church-Street-Historic-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/Wauwatosa-Avenue-Historic-District.pdf",
+    "text": "Wauwatosa Avenue Historic District",
+    "file": "data/city_files/Wauwatosa/d0a877_Wauwatosa-Avenue-Historic-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/Wauwatosa-Avenue-Historic-District-1.pdf",
+    "text": "Rockway/Brookside Places Historic District",
+    "file": "data/city_files/Wauwatosa/225360_Wauwatosa-Avenue-Historic-District-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/Wauwatosa-Cemetery-Chapel.pdf",
+    "text": "Wauwatosa Cemetery Chapel, 2435 Wauwatosa Avenue",
+    "file": "data/city_files/Wauwatosa/b4c94c_Wauwatosa-Cemetery-Chapel.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/Blanchard-Pump-Station.pdf",
+    "text": "Blanchard Street pumping station",
+    "file": "data/city_files/Wauwatosa/bd9bd1_Blanchard-Pump-Station.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/BikeTransportation2.pdf",
+    "text": "User Maps",
+    "file": "data/city_files/Wauwatosa/08a3d1_BikeTransportation2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/Walking-Tour-of-Wauwatosa-Cemetery.pdf",
+    "text": "Walking Tour of Wauwatosa Cemetery",
+    "file": "data/city_files/Wauwatosa/3a0a24_Walking-Tour-of-Wauwatosa-Cemetery.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wauwatosa.gov/wp-content/uploads/2026/08/SIDEWALK-PROGRAM-AREAS_20262035.pdf",
+    "text": "Check out this map",
+    "file": "data/city_files/Wauwatosa/ba3e59_SIDEWALK-PROGRAM-AREAS_20262035.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wauwatosa.net/wp-content/uploads/2026/08/SIDEWALK-PROGRAM-AREAS_20262035.pdf",
+    "text": "Check out this map",
+    "file": "data/city_files/Wauwatosa/b37e2a_SIDEWALK-PROGRAM-AREAS_20262035.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=1e68c8b4cbcf4e8aa74913f7b5a65609&extent=2508500.8064%2C366418.7518%2C2546995.1953%2C424097.6407%2C32054": "Garbage and Recycling Collection Schedule",
+   "http://www.arcgis.com/apps/webappviewer/index.html?id=1e68c8b4cbcf4e8aa74913f7b5a65609&extent=2508500.8064%2C366418.7518%2C2546995.1953%2C424097.6407%2C32054": "your assigned collection day",
+   "https://experience.arcgis.com/experience/6c4895daa2e249898763a7cc2b3e8606": "online",
+   "https://gis.wauwatosa.net/arbor/public.html": "Our Tree Dashboard",
+   "https://storymaps.arcgis.com/stories/f31abd1794d6493b8526fa02971ff1a6": "Virtual Tree tour",
+   "http://docs.legis.wisconsin.gov/2007/statutes/statutes/252/03/1": "Wisconsin State Statute",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=080fc3eb15d94784b4e2312578dd562d": "Eisenhower",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=a0b8c04da44047d1a76368190c27dc5d": "Jefferson",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=b15acd155706446c9df9bc299a34240e": "Lincoln",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=4501b136731e4dc79ba32fdf464bfe72": "Madison",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=12e97c8cb2834c3896fcdbee38654b68": "McKinley",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=d743c5f11c7f472a9c9bc0ef13a23b41": "Roosevelt",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=4ef5733271b74123a98b4c30d469bcb3": "Underwood",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=e1db1e142c004bf8820cb36a1e2aef5b": "Washington",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=41e30b3aba764bd3a4c2b38df2ec2280": "Wauwatosa Montessori",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=9d4b979e50154cb08aa2cb07c76189c1": "Wilson",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=1a3f32e579424cf5b1bb3c7990472b22": "Longfellow",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=1123b11d36754629ab1ba177f244eb7c": "Whitman",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=a6d56bb7f9be472693f8aef5ed857d5c": "East High School",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=5e2b0838aa0f4e20b15391938e22f8b3": "West High School",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=f94dc951cc124d4f99a495ce13c181a5": "Christ King",
+   "http://tosa.maps.arcgis.com/apps/webappviewer/index.html?id=e553c408f88d417c87cdd6e28d8717f6": "St. Jude",
+   "https://www.arcgis.com/apps/dashboards/66b5e3b343d24182981b532d12088d5d": "View the crime map",
+   "https://tosa.maps.arcgis.com/apps/dashboards/647a880ccf434e9788a94ee82c253e7e": "View the mobile-friendly crime map",
+   "https://experience.arcgis.com/experience/6541e133d16442cea7323261be0c5132": "View the Leaf Collection Map",
+   "https://tosa.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=5e40832ed53444839306e15d65a138e1": "Preview construction (5-years)"
+  }
+ },
+ "Arlington": {
+  "files": [],
+  "portals": {}
+ },
+ "Mount Pleasant": {
+  "files": [
+   {
+    "url": "https://nybc.net/images/pdfs/EN%20E-Bike%20Law%20Rack%20Card%204x9%20NYBC%20V3%20low-res.pdf",
+    "text": "E-Bikes & E-Scooters Law Quick Guide (PDF)",
+    "file": "data/city_files/Mount_Pleasant/4dc547_EN_20E-Bike_20Law_20Rack_20Card_204x9_20NYBC_20V3_20low-res.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nybc.net/images/pdfs/EN%20E-Bike%20Safety%20Tips%20Rack%20Card%204x9%20NYBC%20V3%20low-res.pdf",
+    "text": "New Riders E-Bikes & E-Scooters Quick Guide (PDF)",
+    "file": "data/city_files/Mount_Pleasant/e9dee9_EN_20E-Bike_20Safety_20Tips_20Rack_20Card_204x9_20NYBC_20V3_20low-res.",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://upstategis.maps.arcgis.com/apps/instant/portfolio/index.html?appid=b35aaf91b0784db6832e8145b237eeb8": "NRI Map Tool"
+  }
+ },
+ "Rancho Palos Verdes": {
+  "files": [
+   {
+    "url": "https://trails.lacounty.gov/Files/Documents/1139/DPH%20Reopening-Trails.pdf",
+    "text": "health guidelines for trails",
+    "file": "data/city_files/Rancho_Palos_Verdes/d1b26c_DPH_20Reopening-Trails.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/84268637b6654ecea0c563790f5c1007": "",
+   "https://experience.arcgis.com/experience/29e728fd76b647e9b5ceeb0cd78bb1a3": "",
+   "https://experience.arcgis.com/experience/a621aeb5f81a44fa9ca85ca3276a9af6": "",
+   "https://experience.arcgis.com/experience/771e99a0ca114ebc9e60c0e00f545cf6": "",
+   "https://experience.arcgis.com/experience/2960bc3b425e4d10beb9dbb532192356": "",
+   "https://experience.arcgis.com/experience/1351ee6f102a4f8da013ae911d08b983": "",
+   "https://www.arcgis.com/apps/dashboards/b2f63762f32f4adc9b94bf9616b60a1c": "",
+   "https://experience.arcgis.com/experience/2f59fa7404284857bad17bdf79a8a3f7": "Parks Story Map",
+   "https://data.census.gov/cedsci/profile/Rancho_Palos_Verdes_city,_California?g=1600000US0659514": "Rancho Palos Verdes Demographics",
+   "https://experience.arcgis.com/experience/d54c2e096bc64daba637f835d4a34571/page/Portuguese-Bend-Landslide-Complex/": "GIS Map"
+  }
+ },
+ "Cedar Falls": {
+  "files": [],
+  "portals": {}
+ },
+ "Elmalı": {
+  "files": [],
+  "portals": {
+   "https://elmali.bel.tr/opendata": "KURUMSAL",
+   "https://elmali.bel.tr/open-data": "KURUMSAL"
+  }
+ },
+ "Monrovia": {
+  "files": [],
+  "portals": {}
+ },
+ "San Martín de los Andes": {
+  "files": [],
+  "portals": {}
+ },
+ "Salisbury": {
+  "files": [
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Administration/Historic%20Preservation%20Commission/LocalHistoricDesignStandards.pdf",
+    "text": "Local Historic Standards",
+    "file": "data/city_files/Salisbury/a88b1d_LocalHistoricDesignStandards.pdf",
+    "rows": 126,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Community%20Planning%20Services/Historic%20Preservation%20Master%20Plan.pdf",
+    "text": "Historic Preservation Master Plan",
+    "file": "data/city_files/Salisbury/0de300_Historic_20Preservation_20Master_20Plan.pdf",
+    "rows": 26,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Administration/Historic Preservation Commission/Fee Schedule HPC 26-27.pdf?ver=ezJdvnKGtWRD37StpXSZ2g%3d%3d",
+    "text": "FY26/27 Fee Schedule",
+    "file": "data/city_files/Salisbury/c75d9f_Fee_Schedule_HPC_26-27.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Administration/Historic Preservation Commission/HPC%20Rules%20Of%20Procedure.pdf",
+    "text": "HPC Rules Of Procedure",
+    "file": "data/city_files/Salisbury/ca1351_HPC_20Rules_20Of_20Procedure.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Community Planning Services/Grants/Historic Preservation Incentive Grant 1.pdf?ver=t2AfB4MGVPjfD1R6Mm1ojA%3d%3d",
+    "text": "HPI Grant Guidelines (PDF)",
+    "file": "data/city_files/Salisbury/54187b_Historic_Preservation_Incentive_Grant_1.pdf",
+    "rows": 26,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Administration/Historic%20Preservation%20Commission/All%20Historic%20Districts.pdf",
+    "text": "Download Map (PDF)",
+    "file": "data/city_files/Salisbury/195028_All_20Historic_20Districts.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Administration/Historic Preservation Commission/Brooklyn South Square Local District.pdf",
+    "text": "Map of Brooklyn-South Square (PDF)",
+    "file": "data/city_files/Salisbury/88d65c_Brooklyn_South_Square_Local_District.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.nc.gov/ncdcr/nr/RW0212.pdf",
+    "text": "National Register of Historic Places",
+    "file": "data/city_files/Salisbury/1a7af4_RW0212.pdf",
+    "rows": 111,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Administration/Historic Preservation Commission/Ellis Street Graded School Local District.pdf",
+    "text": "Map of Ellis Street Graded School (PDF)",
+    "file": "data/city_files/Salisbury/41a39e_Ellis_Street_Graded_School_Local_District.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.nc.gov/ncdcr/nr/RW0655.pdf",
+    "text": "National Register of Historic Places",
+    "file": "data/city_files/Salisbury/951826_RW0655.pdf",
+    "rows": 134,
+    "bike_rows": 37
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Administration/Historic Preservation Commission/North Main Street Local District.pdf",
+    "text": "Map of North Main Street (PDF)",
+    "file": "data/city_files/Salisbury/4f7c5c_North_Main_Street_Local_District.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.nc.gov/ncdcr/nr/RW0053.pdf",
+    "text": "National Register of Historic Places",
+    "file": "data/city_files/Salisbury/a831b2_RW0053.pdf",
+    "rows": 147,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Administration/Historic Preservation Commission/West Square Local District.pdf",
+    "text": "Map of West Square (PDF)",
+    "file": "data/city_files/Salisbury/4afebc_West_Square_Local_District.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.nc.gov/ncdcr/nr/RW0052.pdf",
+    "text": "National Register of Historic Places",
+    "file": "data/city_files/Salisbury/89d4bf_RW0052.pdf",
+    "rows": 41,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Administration/Historic Preservation Commission/Downtown Local District.pdf",
+    "text": "Map of Downtown (PDF)",
+    "file": "data/city_files/Salisbury/736007_Downtown_Local_District.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Community Planning Services/Landmarks/Procedural Information for Local Historic Landmark Designation.pdf",
+    "text": "PROCEDURAL INFORMATION FOR LOCAL HISTORIC LANDMARK (PDF)",
+    "file": "data/city_files/Salisbury/5a9a08_Procedural_Information_for_Local_Historic_Landmark_Designation.pdf",
+    "rows": 25,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Community Planning Services/History%20and%20Art%20Trail%20Brochure%20Revised.pdf",
+    "text": "Open Brochure",
+    "file": "data/city_files/Salisbury/27f1c6_History_20and_20Art_20Trail_20Brochure_20Revised.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Recycling Calendar 2026 Q3 Q4.pdf",
+    "text": "2026 Recycling Calendar (PDF)",
+    "file": "data/city_files/Salisbury/a9fcd9_Recycling_Calendar_2026_Q3_Q4.pdf",
+    "rows": 42,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Recycling Calendar 2026 Q3 Q4 - Espanol.pdf",
+    "text": "Calendario de Reciclaje de 2026 (PDF)",
+    "file": "data/city_files/Salisbury/5059d9_Recycling_Calendar_2026_Q3_Q4_-_Espanol.pdf",
+    "rows": 42,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Public%20Services/Sweeping%20Map.pdf",
+    "text": "Street Sweeping Routes Map (PDF)",
+    "file": "data/city_files/Salisbury/537a30_Sweeping_20Map.pdf",
+    "rows": 29,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Documents/Public Services/Sweeping Map.pdf",
+    "text": "Open Street Sweeping Map (PDF)",
+    "file": "data/city_files/Salisbury/922f7d_Sweeping_Map.pdf",
+    "rows": 29,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Loose Leaf Collection Map 26-27.pdf",
+    "text": "2026-27 Leaf Map - English (PDF)",
+    "file": "data/city_files/Salisbury/3c0633_Loose_Leaf_Collection_Map_26-27.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://salisburync.gov/Portals/0/Leaf Collection Map Spanish 26-27.pdf",
+    "text": "2026-27 Leaf Map - Spanish (PDF)",
+    "file": "data/city_files/Salisbury/b24303_Leaf_Collection_Map_Spanish_26-27.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://salisburyncgis.maps.arcgis.com/apps/webappviewer/index.html?id=84b1c3f47b404304b38660b07c9c6a99": "Zoning Map",
+   "http://www.arcgis.com/apps/CrowdsourceReporter/index.html?appid=1091592937ae466b927f8c7e34b3613c": "Report An Issue",
+   "https://salisburyncgis.maps.arcgis.com/apps/webappviewer/index.html?id=fca6365424764bc380aea1f4f200bf5f": "My Neighborhood Services",
+   "https://salisburyncgisdata-salisburyncgis.hub.arcgis.com/": "Visit Open Data Hub",
+   "https://gisdata-rowancountync.opendata.arcgis.com/": "Rowan County ConnectGIS",
+   "https://salisburyncgis.maps.arcgis.com/apps/webappviewer/index.html?id=5a2d4f26afaa425fa5bc91cf4bf315c0": "",
+   "http://salisburyncgis.maps.arcgis.com/apps/webappviewer/index.html?id=f0b5faea41e7429495678e7672eebe68": "",
+   "https://salisburyncgis.maps.arcgis.com/apps/Time/index.html?appid=16816b5ae72c4655b321ef72fb5d8603": "",
+   "http://www.arcgis.com/apps/webappviewer/index.html?id=45036cb56c73428db025acd290e7beaa": "",
+   "https://salisburyncgis.maps.arcgis.com/apps/instant/basic/index.html?appid=61853643ddb0442fafbecb6e0cebf88b": "",
+   "http://salisburyncgis.maps.arcgis.com/apps/webappviewer/index.html?appid=51722e4a330049b7a82813ec9abaafc5": "",
+   "http://salisburyncgis.maps.arcgis.com/apps/Minimalist/index.html?appid=b0b9e2b9aa0d45679553904be5cc946d": "",
+   "http://salisburyncgis.maps.arcgis.com/apps/Minimalist/index.html?appid=2cb39d9910f148d88eabba4be180648b": "",
+   "https://salisburyncgis.maps.arcgis.com/apps/webappviewer/index.html?id=2f3bba5341104a5a9abb8129ee874e2e": "",
+   "http://salisburyncgis.maps.arcgis.com/apps/Minimalist/index.html?appid=4ece6aba2ddd4430827262d7f30640fc": "",
+   "https://salisburyncgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=e48f937bb2b0450c891b64a4215ee46a": "",
+   "http://salisburyncgis.maps.arcgis.com/apps/Minimalist/index.html?appid=13dcfbda453f4cafb1e41ea4dba1bfa1": "",
+   "http://salisburyncgis.maps.arcgis.com/apps/CrowdsourceReporter/index.html?appid=1091592937ae466b927f8c7e34b3613c": "Report an Issue",
+   "https://salisburyncgis.maps.arcgis.com/apps/instant/basic/index.html?appid=497c08b425b24558b2120050f2679dbe": "",
+   "https://salisburyncgis.maps.arcgis.com/apps/webappviewer/index.html?id=7f91a43266af4decab2ab70af2effe64": "",
+   "https://storymaps.arcgis.com/stories/d611046abfa04e6ea03725014771b4cd": "LANDMARK STORYMAP",
+   "https://salisburyncgis.maps.arcgis.com/apps/Embed/index.html?webmap=6d0d452df6184179898278435294c2a7&extent=-80.605,35.6144,-80.4027,35.6982&home=true&zoom=true&scale=true&search=true&searchextent=false&legend=true&disable_scroll=true&theme=light": "View larger map",
+   "https://salisburyncgis.maps.arcgis.com/apps/instant/lookup/index.html?appid=0d1b9800459b47e58ff38ac6b9d3408d": ""
+  }
+ },
+ "Butte": {
+  "files": [],
+  "portals": {
+   "https://buttesilverbow.maps.arcgis.com/apps/MapSeries/index.html?appid=dd73453798684839bd08a315b7c86db9": "Community Wildfire Protection Plan",
+   "https://buttesilverbow.maps.arcgis.com/apps/MapSeries/index.html?appid=c21c33306d2c44cf8db8ce66d7c2e222": "Flood Plains Map",
+   "https://survey123.arcgis.com/share/94ba9c329834407585422785662814f7": "Report a Pothole",
+   "https://gis.dnrc.mt.gov/": "Montana Department of Natural Resources - DNRC",
+   "https://gis-mdt.opendata.arcgis.com/": "Montana Department of Transportation - MDT",
+   "https://data.fs.usda.gov/geodata/": "United State Forest Service - USFS",
+   "https://experience.arcgis.com/experience/72bbe5efb90b4b1196986f6216df939f": "",
+   "https://experience.arcgis.com/experience/f37b614784c4450e948885305ecabe68": "",
+   "https://www.arcgis.com/apps/dashboards/b967ac8494774b4d8568bc6ae95a3f60": "Find Your Legislators",
+   "http://arcgis.com/apps/dashboards/b967ac8494774b4d8568bc6ae95a3f60": "Find Your Legislator Find out who is representing your interests during the gathering of the Montana Legislature. Learn "
+  }
+ },
+ "Harker Heights": {
+  "files": [],
+  "portals": {}
+ },
+ "Warwick": {
+  "files": [
+   {
+    "url": "https://www.townofwarwick.org/wp-content/uploads/2023/03/TWarwick_Zoning_335489.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Warwick/8645da_TWarwick_Zoning_335489.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofwarwickny.gov/wp-content/uploads/2025/04/CoolestRecycling2025-brochure-04-FINAL.pdf",
+    "text": "Coolest Recycling 2025",
+    "file": "data/city_files/Warwick/52e181_CoolestRecycling2025-brochure-04-FINAL.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofwarwickny.gov/wp-content/uploads/2025/08/Sept-20-2025-Repair-Cafe-Flyer.pdf",
+    "text": "Download / open Sept 20 2025 Repair Cafe Flyer (PDF)",
+    "file": "data/city_files/Warwick/91805b_Sept-20-2025-Repair-Cafe-Flyer.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofwarwickny.gov/wp-content/uploads/2026/08/Sept-19^J-2026-Repair-Cafe-Flyer.pdf",
+    "text": "Sept 19^J 2026 Repair Cafe Flyer",
+    "file": "data/city_files/Warwick/5bef09_Sept-19_J-2026-Repair-Cafe-Flyer.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofwarwickny.gov/wp-content/uploads/2019/04/2006_cascade_lake_map.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Warwick/f35b85_2006_cascade_lake_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.townofwarwick.org/wp-content/uploads/2019/04/Appendix-A_Maps.pdf",
+    "text": "Appendix A: Maps (5.61MB File)",
+    "file": "data/city_files/Warwick/289981_Appendix-A_Maps.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://survey123.arcgis.com/share/6438bac437254f468a4b4232a1093408": "CLICK HERE FOR SURVEY"
+  }
+ },
+ "North Andover": {
+  "files": [
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle-Smart-Infographic-1-1.pdf",
+    "text": "English",
+    "file": "data/city_files/North_Andover/ccb811_Recycle-Smart-Infographic-1-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle_Smart_Infographic-Spanish.pdf",
+    "text": "Spanish",
+    "file": "data/city_files/North_Andover/b7116d_Recycle_Smart_Infographic-Spanish.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "text": "Chinese",
+    "file": "data/city_files/North_Andover/9365a3_Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Smart-Recycling-Guide-Portuguese-1.pdf",
+    "text": "Portuguese",
+    "file": "data/city_files/North_Andover/827cea_Smart-Recycling-Guide-Portuguese-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Hindi.pdf",
+    "text": "Hindi",
+    "file": "data/city_files/North_Andover/039bcd_smart-recycling-guide-Hindi.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Russian.pdf",
+    "text": "Russian",
+    "file": "data/city_files/North_Andover/54d4b8_smart-recycling-guide-Russian.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Arabic-Final.pdf",
+    "text": "عربى",
+    "file": "data/city_files/North_Andover/e971c1_Smart-Recycling-Guide-Arabic-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "text": "Tiếng Việt",
+    "file": "data/city_files/North_Andover/915a27_Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-French-Final.pdf",
+    "text": "Français",
+    "file": "data/city_files/North_Andover/2dac68_Smart-Recycling-Guide-French-Final.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Haitian-Creole-Final.pdf",
+    "text": "Kreyòl Ayisyen",
+    "file": "data/city_files/North_Andover/51668f_Smart-Recycling-Guide-Haitian-Creole-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Khmer.pdf",
+    "text": "ខ្មែរ",
+    "file": "data/city_files/North_Andover/2ff4d7_smart-recycling-guide-Khmer.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Italian.pdf",
+    "text": "Italiana",
+    "file": "data/city_files/North_Andover/013d72_smart-recycling-guide-Italian.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2026/05/Recycle-Smart-MA-Partners-List-Updated-5.13.26.pdf",
+    "text": "Partner List",
+    "file": "data/city_files/North_Andover/762193_Recycle-Smart-MA-Partners-List-Updated-5.13.26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/48b29af13643408da08fbd05dc9f6438": "Downtown Zoning Story Map",
+   "https://mvpc.maps.arcgis.com/apps/MapJournal/index.html?appid=23bee51907574d3dbf12a7cff4d0308d": "MVP / HMP Planning Story Map"
+  }
+ },
+ "Winter Park": {
+  "files": [
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/public-parking-map.pdf",
+    "text": "Printable Public Parking Map",
+    "file": "data/city_files/Winter_Park/3c95d4_public-parking-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/merchant-employee-parking-guide.pdf",
+    "text": "Merchant Employee Parking Guide",
+    "file": "data/city_files/Winter_Park/b2f0ec_merchant-employee-parking-guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/merchant-employee-parking-program-application.pdf",
+    "text": "Merchant Employee Parking Program Application",
+    "file": "data/city_files/Winter_Park/4eceff_merchant-employee-parking-program-application.pdf",
+    "rows": 19,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/residential-parking-permit-application.pdf",
+    "text": "Residential Parking Permit Application",
+    "file": "data/city_files/Winter_Park/ae7e7c_residential-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/parking-code-modernization-recommendations-2018-07.pdf",
+    "text": "Parking Code Modernization – Recommendations",
+    "file": "data/city_files/Winter_Park/f7d5ef_parking-code-modernization-recommendations-2018-07.pdf",
+    "rows": 64,
+    "bike_rows": 31
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/parking-code-modernization-recommendations-presentation-2018-07.pdf",
+    "text": "Parking Code Modernization – Recommendations Presentation",
+    "file": "data/city_files/Winter_Park/277a73_parking-code-modernization-recommendations-presentation-2018-07.pdf",
+    "rows": 96,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/peer-cities-code-evaluation-2018-03.pdf",
+    "text": "Peer Cities Code Evaluation",
+    "file": "data/city_files/Winter_Park/8db4c4_peer-cities-code-evaluation-2018-03.pdf",
+    "rows": 72,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/peer-cities-code-evaluation-backup-material-2018-03.pdf",
+    "text": "Peer Cities Code Evaluation Backup Material",
+    "file": "data/city_files/Winter_Park/814c4e_peer-cities-code-evaluation-backup-material-2018-03.pdf",
+    "rows": 308,
+    "bike_rows": 19
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/downtown-parking-strategy-report-2017.pdf",
+    "text": "Downtown Parking Strategy Report 2017",
+    "file": "data/city_files/Winter_Park/0c2685_downtown-parking-strategy-report-2017.pdf",
+    "rows": 224,
+    "bike_rows": 64
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/parking-strategies-2017-08-10.pdf",
+    "text": "Parking Strategies",
+    "file": "data/city_files/Winter_Park/59105e_parking-strategies-2017-08-10.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/parking-strategy-summit-presentation-2017-08-10.pdf",
+    "text": "Parking Strategy Summit Presentation",
+    "file": "data/city_files/Winter_Park/088cc6_parking-strategy-summit-presentation-2017-08-10.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/parking-strategy-summit-presentation-2017-06-08.pdf",
+    "text": "Parking Strategy Summit Presentation",
+    "file": "data/city_files/Winter_Park/b5b949_parking-strategy-summit-presentation-2017-06-08.pdf",
+    "rows": 25,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/parking/city-of-winter-park-parking-study-2013-06-07.pdf",
+    "text": "City of Winter Park Parking Study",
+    "file": "data/city_files/Winter_Park/370267_city-of-winter-park-parking-study-2013-06-07.pdf",
+    "rows": 725,
+    "bike_rows": 330
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/things-to-enjoy/cycling-walking/winter-park-recognized-2017-bicycle-friendly-community-year-florida-bicycle-association.pdf",
+    "text": "Winter Park recognized as 2017 Bicycle Friendly Community of the Year by Florida Bicycle Association",
+    "file": "data/city_files/Winter_Park/f1bbf7_winter-park-recognized-2017-bicycle-friendly-community-year-florida-bi",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/authorized-prohibited-public-performance-areas.pdf",
+    "text": "Authorized and Prohibited Public Performance Areas",
+    "file": "data/city_files/Winter_Park/61f2fd_authorized-prohibited-public-performance-areas.pdf",
+    "rows": 27,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/city-parks.pdf",
+    "text": "City Parks",
+    "file": "data/city_files/Winter_Park/ac74ca_city-parks.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/community-redevelopment-agency-boundary-cra-district.pdf",
+    "text": "Community Redevelopment Agency Boundary – CRA District",
+    "file": "data/city_files/Winter_Park/2d68a8_community-redevelopment-agency-boundary-cra-district.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/future-land-use-map.pdf",
+    "text": "Future Land Use Map",
+    "file": "data/city_files/Winter_Park/fcc4fe_future-land-use-map.pdf",
+    "rows": 34,
+    "bike_rows": 19
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/parking-cultural-guide-downtown-winter-park.pdf",
+    "text": "Parking & Cultural Guide to downtown Winter Park",
+    "file": "data/city_files/Winter_Park/37402e_parking-cultural-guide-downtown-winter-park.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/stormwater-management-treatment-types.pdf",
+    "text": "Access Stormwater Management Treatment Types Map",
+    "file": "data/city_files/Winter_Park/6a7d06_stormwater-management-treatment-types.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/street-map-index.pdf",
+    "text": "Street Map and Index",
+    "file": "data/city_files/Winter_Park/45382a_street-map-index.pdf",
+    "rows": 29,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/zoning-map.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Winter_Park/af0f3b_zoning-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/historic-district-college-quarter.pdf",
+    "text": "College Quarter",
+    "file": "data/city_files/Winter_Park/054229_historic-district-college-quarter.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/historic-district-east-virginia-heights.pdf",
+    "text": "East Virginia Heights",
+    "file": "data/city_files/Winter_Park/363ca2_historic-district-east-virginia-heights.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/historic-district-national-register-historic-places-downtown.pdf",
+    "text": "Downtown – National Register of Historic Places",
+    "file": "data/city_files/Winter_Park/503000_historic-district-national-register-historic-places-downtown.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/historic-district-national-register-historic-places-interlachen.pdf",
+    "text": "Interlachen – National Register of Historic Places",
+    "file": "data/city_files/Winter_Park/8191d0_historic-district-national-register-historic-places-interlachen.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/residents-guests/planning-to-visit/helpful-maps/historic-districts-citywide.pdf",
+    "text": "Historic Districts – Citywide",
+    "file": "data/city_files/Winter_Park/3b01f1_historic-districts-citywide.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/departments/parks-recreation/events-center/events-center-parking-map.pdf",
+    "text": "Parking Map",
+    "file": "data/city_files/Winter_Park/c206b2_events-center-parking-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/departments/parks-recreation/cemeteries/cemeteries-fees.pdf",
+    "text": "Printable PDF of cemetery fees",
+    "file": "data/city_files/Winter_Park/c4c13b_cemeteries-fees.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/departments/parks-recreation/cemeteries/cemeteries-rules-standards.pdf",
+    "text": "Printable PDF of Rules & Standards",
+    "file": "data/city_files/Winter_Park/1109e7_cemeteries-rules-standards.pdf",
+    "rows": 10,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/departments/parks-recreation/programs-activities-events/healthy-lifestyles/fitness-trail-guide.pdf",
+    "text": "Outdoor walking paths and fitness trails",
+    "file": "data/city_files/Winter_Park/c83245_fitness-trail-guide.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/departments/public-works-transportation/transportation/ride-smart-winter-park-ebike-escooter-safety-community-meeting-2026-02-17.pdf",
+    "text": "Ride Smart Winter Park",
+    "file": "data/city_files/Winter_Park/bdf99a_ride-smart-winter-park-ebike-escooter-safety-community-meeting-2026-02",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://metroplanorlando.gov/wp-content/uploads/E-Micromobility_WhitePaper_FINAL_2025-11-4-2.pdf",
+    "text": "E-Micromobility White Paper: A Primer for Florida Transportation Professionals and Policymakers",
+    "file": "data/city_files/Winter_Park/277668_E-Micromobility_WhitePaper_FINAL_2025-11-4-2.pdf",
+    "rows": 222,
+    "bike_rows": 34
+   },
+   {
+    "url": "https://metroplanorlando.gov/wp-content/uploads/Path-to-Safety-Activity-Book-2024.pdf",
+    "text": "Path to Safety Central Florida",
+    "file": "data/city_files/Winter_Park/aa0fe5_Path-to-Safety-Activity-Book-2024.pdf",
+    "rows": 45,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/departments/natural-resources-sustainability/sustainability-division/HWWD-cady-way-map-2026.pdf",
+    "text": "Household Hazardous Waste Dropoff event Cady Way Map",
+    "file": "data/city_files/Winter_Park/d0171d_HWWD-cady-way-map-2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/departments/parks-recreation/cemeteries/historic-spaces-project/HSP_Group1.pdf",
+    "text": "Spaces Listing – Group 1",
+    "file": "data/city_files/Winter_Park/d56fd3_HSP_Group1.pdf",
+    "rows": 18,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/departments/parks-recreation/cemeteries/historic-spaces-project/BurialSpaceClaimForm.pdf",
+    "text": "Palm Cemetery Burial Space Claim Form",
+    "file": "data/city_files/Winter_Park/532b0a_BurialSpaceClaimForm.pdf",
+    "rows": 25,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/departments/parks-recreation/cemeteries/historic-spaces-project/FloridaStatutes_497-286.pdf",
+    "text": "Florida State Statute 497.286",
+    "file": "data/city_files/Winter_Park/d1caea_FloridaStatutes_497-286.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/departments/planning-zoning/historic-preservation/local-register-certificate-of-review-application.pdf",
+    "text": "Certificate of Review Application",
+    "file": "data/city_files/Winter_Park/ddcb09_local-register-certificate-of-review-application.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofwinterpark.org/docs/departments/planning-zoning/historic-preservation/local-register-historic-designation-application.pdf",
+    "text": "Historic Designation Application",
+    "file": "data/city_files/Winter_Park/3b0ee9_local-register-historic-designation-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.cityofwinterpark.org/survey123/share/e5590b0292354d3bb4f04173e3dd30f2?hide=navbar,header,footer,theme,description": "Report Electric Outage",
+   "https://gis.cityofwinterpark.org/survey123/share/eb1f92edec02489a96941d057d103638?hide=navbar,header,footer,theme,description": "Report Water/Sewer Issues",
+   "https://gis.cityofwinterpark.org/electricundergroundingstatus/": "Undergrounding Status Map",
+   "https://gis.cityofwinterpark.org/chainoflakes/": "Chain of Lakes Map",
+   "https://gis.cityofwinterpark.org/serviceareasandcollectiondays/": "City Service Areas and Collection Days",
+   "https://gis.cityofwinterpark.org/stormaudit/": "Stormwater Assessment Fee Appeal"
+  }
+ },
+ "Adoor Municipality": {
+  "files": [],
+  "portals": {}
+ }
+}
