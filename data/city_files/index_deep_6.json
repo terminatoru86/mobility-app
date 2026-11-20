@@ -1,0 +1,1456 @@
+{
+ "Columbus OH": {
+  "files": [
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/biweekly-yard-waste-map-01.11.24.pdf",
+    "text": "Biweekly Yard Waste Map (PDF, 2MB)",
+    "file": "data/city_files/Columbus_OH/2347dd_biweekly-yard-waste-map-01.11.24.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/public-service/trash-recycling-amp-bulk-collection/find-my-collection-day/2025-rotating-holiday-calendar.pdf",
+    "text": "2025 Rotating Holiday Calendar (PDF, 98KB)",
+    "file": "data/city_files/Columbus_OH/78bc71_2025-rotating-holiday-calendar.pdf",
+    "rows": 63,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/public-service/trash-recycling-amp-bulk-collection/find-my-collection-day/2025-yard-waste-calendar.pdf",
+    "text": "2025 Yard Waste Calendar (PDF, 109KB)",
+    "file": "data/city_files/Columbus_OH/72877f_2025-yard-waste-calendar.pdf",
+    "rows": 70,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/find-my-collection-day/2026-rotating-holiday-calendar.pdf",
+    "text": "2026 Rotating Holiday Calendar (PDF, 67KB)",
+    "file": "data/city_files/Columbus_OH/1e5c3d_2026-rotating-holiday-calendar.pdf",
+    "rows": 63,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/find-my-collection-day/2026-yard-waste-calendar.pdf",
+    "text": "2026 Yard Waste Calendar (PDF, 51KB)",
+    "file": "data/city_files/Columbus_OH/eeba0d_2026-yard-waste-calendar.pdf",
+    "rows": 68,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/public-service-pdf/weeklyrecyclingfaq_updated-june-2023.docx.pdf",
+    "text": "Fact Sheet (PDF, 332KB)",
+    "file": "data/city_files/Columbus_OH/ffde51_weeklyrecyclingfaq_updated-june-2023.docx.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/weeklyrecyclingqa.pdf",
+    "text": "Q&A Document (PDF, 423KB)",
+    "file": "data/city_files/Columbus_OH/b05b18_weeklyrecyclingqa.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/utilities/zip-code-service-boundary.pdf",
+    "text": "Power Service Area Map(PDF, 445KB)",
+    "file": "data/city_files/Columbus_OH/c1cb7c_zip-code-service-boundary.pdf",
+    "rows": 26,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cota.com/timetables/cota-system-map.pdf",
+    "text": "System Map",
+    "file": "data/city_files/Columbus_OH/6ffbb3_cota-system-map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/services/residential-district-permit-parking-rules-and-regulations-promulgated-1-22-16.pdf",
+    "text": "Residential Permit Parking Rules and Regulations (PDF, 1MB)",
+    "file": "data/city_files/Columbus_OH/4ea797_residential-district-permit-parking-rules-and-regulations-promulgated-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/division-of-refuse-collection-rules-and-regulations.pdf",
+    "text": "Division of Refuse Collection Rules and Regulations (PDF, 934KB)",
+    "file": "data/city_files/Columbus_OH/a9d46b_division-of-refuse-collection-rules-and-regulations.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/resident’s-guide-to-refuse-services-5-26-26.pdf",
+    "text": "Resident's Guide to Collection Services (PDF, 884KB)",
+    "file": "data/city_files/Columbus_OH/af4b27_resident_s-guide-to-refuse-services-5-26-26.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/title-13-revised-9-16-25.pdf",
+    "text": "Refuse Collection City Code Title 13 (PDF, 239KB)",
+    "file": "data/city_files/Columbus_OH/9d2a49_title-13-revised-9-16-25.pdf",
+    "rows": 41,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/residentresponsibilities_refuse-v1.pdf",
+    "text": "Resident Responsibilities (PDF, 479KB)",
+    "file": "data/city_files/Columbus_OH/02a0a7_residentresponsibilities_refuse-v1.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/fact-sheet-illegal-dumping-1yr-anniv-v3.pdf",
+    "text": "Clean Neighborhoods Initiative (PDF, 308KB)",
+    "file": "data/city_files/Columbus_OH/2a7c02_fact-sheet-illegal-dumping-1yr-anniv-v3.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/history-of-the-division-of-refuse-collection-09-30-11.pdf",
+    "text": "Refuse Collection History (PDF, 2MB)",
+    "file": "data/city_files/Columbus_OH/7b1346_history-of-the-division-of-refuse-collection-09-30-11.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/right-of-way-permit/how-to-apply-for-a-903-excavation-permit-not-routed.pdf",
+    "text": "Online Permit Application – How to Guide (w/o Plan Submission) (PDF, 3MB)",
+    "file": "data/city_files/Columbus_OH/02e589_how-to-apply-for-a-903-excavation-permit-not-routed.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/right-of-way-permit/how-to-apply-for-a-903-excavation-permit-routed.pdf",
+    "text": "Online Permit Application – How to Guide (PDF, 3MB)",
+    "file": "data/city_files/Columbus_OH/8b0121_how-to-apply-for-a-903-excavation-permit-routed.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/right-of-way-permit/on-street-parking-out-of-service-policy-and-procedure-final-8.15.2022-signed.pdf",
+    "text": "On-Street Parking Out of Service Policy (PDF, 246KB)",
+    "file": "data/city_files/Columbus_OH/ba8166_on-street-parking-out-of-service-policy-and-procedure-final-8.15.2022-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/mobility/cbus-slow-zones-pilot-study-area-accessible.pdf",
+    "text": "Slow Zones Study Area Map (PDF, 1MB)",
+    "file": "data/city_files/Columbus_OH/3caa6e_cbus-slow-zones-pilot-study-area-accessible.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/mobility/indianola/parking-utilization-memo-accessible.pdf",
+    "text": "Parking Utilization Memo (PDF, 4MB)",
+    "file": "data/city_files/Columbus_OH/ffe733_parking-utilization-memo-accessible.pdf",
+    "rows": 42,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/mobility/rtmc/rtmc-appendix-d-accessible.pdf",
+    "text": "Appendix D – Transit Routing Data (PDF, 912KB)",
+    "file": "data/city_files/Columbus_OH/6e2cef_rtmc-appendix-d-accessible.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/mobility/eastmoor/eastmoor-study-area-map-apr-2022.pdf",
+    "text": "(PDF, 1MB)",
+    "file": "data/city_files/Columbus_OH/790f19_eastmoor-study-area-map-apr-2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/mobility/eastmoor/eastmoor-study-area-map-apr-2022-v-accessible.pdf",
+    "text": "Study Area Map (PDF, 1MB)",
+    "file": "data/city_files/Columbus_OH/2f309f_eastmoor-study-area-map-apr-2022-v-accessible.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/2025-rotating-holiday-calendar.pdf",
+    "text": "2025 Rotating Holiday Calendar (PDF, 98KB)",
+    "file": "data/city_files/Columbus_OH/c34e34_2025-rotating-holiday-calendar.pdf",
+    "rows": 63,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/trash-recycling-amp-bulk-collection/2025-yard-waste-calendar.pdf",
+    "text": "2025 Yard Waste Calendar (PDF, 109KB)",
+    "file": "data/city_files/Columbus_OH/06dbff_2025-yard-waste-calendar.pdf",
+    "rows": 70,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/public-service/parking-service/paymentplan_3.11.2026.pdf",
+    "text": "payment plans (PDF, 160KB)",
+    "file": "data/city_files/Columbus_OH/579b38_paymentplan_3.11.2026.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/public-service/parking-service/rules_chapter2150_3.26.2026.pdf",
+    "text": "2150 (PDF, 4MB)",
+    "file": "data/city_files/Columbus_OH/713337_rules_chapter2150_3.26.2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/4/public-service/parking-service/program_downtown_discountparking-info.pdf",
+    "text": "CLICK HERE FOR INFORMATION (PDF, 135KB)",
+    "file": "data/city_files/Columbus_OH/75593a_program_downtown_discountparking-info.pdf",
+    "rows": 4,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/celebrateone/c1-zip-code-maps.pdf",
+    "text": "Map of CelebrateOne priority ZIP codes (PDF, 51KB)",
+    "file": "data/city_files/Columbus_OH/2368b5_c1-zip-code-maps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/1/bzs/boards-and-commissions/planning-boards-and-commissions/final-historic-staff-approval-list.pdf",
+    "text": "Staff Approval List (PDF, 164KB)",
+    "file": "data/city_files/Columbus_OH/1d91ad_final-historic-staff-approval-list.pdf",
+    "rows": 61,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/utilities/history/watershedmap-with-roads.pdf",
+    "text": "Map of the Central Ohio Watershed (PDF, 2MB)",
+    "file": "data/city_files/Columbus_OH/7fe2c7_watershedmap-with-roads.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_ch_3.10.2026.pdf",
+    "text": "CH Permit Zone (PDF, 56KB)",
+    "file": "data/city_files/Columbus_OH/ea63c8_permit_ch_3.10.2026.pdf",
+    "rows": 17,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_ef_3.10.2026.pdf",
+    "text": "EF Permit Zone (PDF, 22KB)",
+    "file": "data/city_files/Columbus_OH/bfdc83_permit_ef_3.10.2026.pdf",
+    "rows": 17,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_lp_3.10.2026.pdf",
+    "text": "LP Permit Zone (PDF, 19KB)",
+    "file": "data/city_files/Columbus_OH/d38b4f_permit_lp_3.10.2026.pdf",
+    "rows": 13,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_sn_zones_3.10.2026.pdf",
+    "text": "SNA/SNB/SNC/SND/SNE/VG Permit Zones (PDF, 78KB)",
+    "file": "data/city_files/Columbus_OH/5f15c6_permit_sn_zones_3.10.2026.pdf",
+    "rows": 22,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_uda_o_h_3.10.2026.pdf",
+    "text": "UDA/O/H Permit Zones (PDF, 22KB)",
+    "file": "data/city_files/Columbus_OH/15c9a4_permit_uda_o_h_3.10.2026.pdf",
+    "rows": 17,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/4/public-service/parking-service/permit_udb_udc_3.25.2026.pdf",
+    "text": "UDB/UDC Permit Zones (PDF, 77KB)",
+    "file": "data/city_files/Columbus_OH/c9200f_permit_udb_udc_3.25.2026.pdf",
+    "rows": 20,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/3/public-service/parking-service/permit_hw_3.10.2026.pdf",
+    "text": "HW Permit Zone (PDF, 77KB)",
+    "file": "data/city_files/Columbus_OH/c0636d_permit_hw_3.10.2026.pdf",
+    "rows": 21,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.columbus.gov/files/sharedassets/city/v/2/public-service/parking-service/permit_gv_3.10.2026.pdf",
+    "text": "GV Permit Zone (PDF, 77KB)",
+    "file": "data/city_files/Columbus_OH/3e198e_permit_gv_3.10.2026.pdf",
+    "rows": 21,
+    "bike_rows": 4
+   }
+  ],
+  "portals": {
+   "https://opendata.columbus.gov/": "Download GIS Data",
+   "https://columbus.maps.arcgis.com/apps/webappviewer/index.html?id=e9f7276d636f4fe5aeda4742ad8714f4": "Permit Eligibility Map",
+   "https://columbus.maps.arcgis.com/apps/dashboards/2d54927f848e4877b500c5dc21d45094": "Illegal Dumping Collection Dashboard",
+   "https://gis.columbus.gov/PowerOutage/": "Columbus Power Outage Map (gis.columbus.gov/PowerOutage)",
+   "https://columbus.maps.arcgis.com/apps/instant/nearby/index.html?appid=0e1d1f32f1bf44d282be521e13c10984&distance=0": "Power Service Area Searchable Map",
+   "https://zone-in-columbus.hub.arcgis.com/": "Zone In website",
+   "https://columbus.maps.arcgis.com/apps/webappviewer/index.html?id=393274cc411e4dfb89a85edc2f2303d0": "map",
+   "https://columbus.maps.arcgis.com/apps/webappviewer/index.html?id=d00046725fd543e69b81926323f4c18a": "proposed and existing small cell antenna locations",
+   "https://columbus.maps.arcgis.com/apps/webappviewer/index.html?id=6f1e4522780e414d80b8ac63c848b14c": "Columbus corporate boundary",
+   "https://experience.arcgis.com/experience/648adcf8a293489b9ec3f5017e7c9d2b": "On-Street Parking Map",
+   "https://experience.arcgis.com/experience/648adcf8a293489b9ec3f5017e7c9d2b/page/Permit-Eligibility": "Permit Eligibility Map",
+   "https://experience.arcgis.com/experience/648adcf8a293489b9ec3f5017e7c9d2b/page/Page/?views=Parking-and-Mobility": "On-Street Parking Map",
+   "https://healthcare-access-columbus.opendata.arcgis.com/": "",
+   "https://gis.columbus.gov/parkingcalculator/": "Parking Calculator for Lost Meter Revenue",
+   "https://storymaps.arcgis.com/stories/b906b30ad9a34fde99e7571f8a963936": "City of Columbus Art, Monuments and Memorials Collection",
+   "https://urldefense.com/v3/__https://columbus.maps.arcgis.com/apps/mapviewer/index.html?webmap=ae8984e0b9db4a9d88c8bc85b9d37e01__;!!Ibw6q7MDdYV6!W6VW_f_RNdCpqYYIMm-ja-FjA7lK-ENOz2YhmFR2Bq93SJ6M-OY1cxWBkGPhTQwE7jJefWIm0nzKF97jLTXsUQ$": "Amendment Webmap",
+   "https://storymaps.arcgis.com/stories/5a403ce464f049b3a71fa58a28d6934f": "Life Expectancy in Columbus",
+   "https://cfcap-columbus.hub.arcgis.com/pages/community-data-dashboards": "Overdose Surveillance",
+   "https://cfcap-columbus.hub.arcgis.com/pages/1b35bb9bdb914ac8a532c3885340e7c2": "Columbus & Franklin County Addiction Plan",
+   "http://gis.columbus.gov/zoning/": "Online Zoning Map",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Historic1899Plates/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Historic1910Plates/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Historic1920Plates/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery1995/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery1997_Delaware/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2000/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2002_Delaware/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2004/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2007/MapServer&source=sd": "ArcGIS Online Map Viewer",
+   "https://www.arcgis.com/apps/mapviewer/index.html?url=https://maps.columbus.gov/arcgis/rest/services/Imagery/Imagery2009/MapServer&source=sd": "ArcGIS Online Map Viewer"
+  }
+ },
+ "Garland TX": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/bf8c3800790b478a847c6264fda01e7f": "Garland Pet Finder",
+   "https://data-garland.hub.arcgis.com/": "Garland Open Data",
+   "https://storymaps.arcgis.com/stories/d54de31ffa3d42e98865938befe32330": "Find a Park",
+   "https://storymaps.arcgis.com/stories/31fc0d3271d343bf96daa6567529e535": "Trails",
+   "https://storymaps.arcgis.com/stories/0027918ab8504e9f8eae90dd6c53facb": "Park Projects Map",
+   "http://garland.maps.arcgis.com/apps/webappviewer/index.html?id=47284f7262cf421baaf2c8b2f73898b5": "See locations on map.",
+   "http://data-garland.opendata.arcgis.com/": "Garland Open Data",
+   "https://garland.maps.arcgis.com/apps/dashboards/dcad898687604f80a318cdebe792cf95": "Find out about construction and infrastructure projects"
+  }
+ },
+ "Seattle": {
+  "files": [
+   {
+    "url": "https://seattle.gov/documents/Departments/SDOT/BikeProgram/2022_BikeGuide_Booklet.pdf",
+    "text": "Easy Start Guide A guide to bicycling around Seattle",
+    "file": "data/city_files/Seattle/790160_2022_BikeGuide_Booklet.pdf",
+    "rows": 28,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://seattle.gov/documents/Departments/SPU/neighborhood-projects/Projects/ChiefSealthTGSI/Chief-Sealth-Trail-Green-Stormwater-Infrastructure_HISTORICAL-CONTENT/Options%20Analysis%20engagement%20summary.pdf",
+    "text": "Options Analysis engagement summary",
+    "file": "data/city_files/Seattle/ac998e_Options_20Analysis_20engagement_20summary.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://seattle.gov/documents/Departments/SPU/neighborhood-projects/Projects/ChiefSealthTGSI/Chief-Sealth-Trail-Green-Stormwater-Infrastructure_HISTORICAL-CONTENT/Options%20Analysis%20Survey%20Report.pdf",
+    "text": "Options Analysis Survey Report",
+    "file": "data/city_files/Seattle/bae61d_Options_20Analysis_20Survey_20Report.pdf",
+    "rows": 28,
+    "bike_rows": 4
+   },
+   {
+    "url": "http://aqua.kingcounty.gov/gis/web/VMC/recreation/BCT_RattlesnakeMtn_brochure.pdf",
+    "text": "Rattlesnake Mountain Brochure & Map",
+    "file": "data/city_files/Seattle/eaf36e_BCT_RattlesnakeMtn_brochure.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://parks.wa.gov/sites/default/files/2023-07/Palouse%20to%20Cascades%20State%20Park%20Trail%20Brochure%20_2.pdf",
+    "text": "Palouse to Cascades State Park Trail Brochure",
+    "file": "data/city_files/Seattle/1c3043_Palouse_20to_20Cascades_20State_20Park_20Trail_20Brochure_20_2.pdf",
+    "rows": 30,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://nextrex.com/jsfapp/cdocs/20230829093720_9_jsfwd_493_q2_1.pdf",
+    "text": "See a list of plastic film and bag recycling drop-off locations in Washington",
+    "file": "data/city_files/Seattle/241f2f_20230829093720_9_jsfwd_493_q2_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.seattle.gov/": "Open Data Portal",
+   "https://experience.arcgis.com/experience/95749d0993164eefa99300182e99bd43": "DSO Water & Sewer Map",
+   "http://data-seattlecitygis.opendata.arcgis.com/": "Seattle GIS data",
+   "http://seattlecitygis.maps.arcgis.com/apps/webappviewer/index.html?id=a24b25c3142c49e194190d6a888d97e3": "Online Bike Map",
+   "http://seattlecitygis.maps.arcgis.com/apps/MapSeries/index.html?appid=94c31b66facc438b95d95a6cb6a0ff2e": "SPD Data Maps - Calls for Service and Crime Data Maps Calls for Service map shows Police responses to 9-1-1 and the Crim",
+   "http://seattlecitygis.maps.arcgis.com/apps/webappviewer/index.html?id=5e2cdf9d8735428cb6405db64de6ce8e": "Pothole Repair Status Map",
+   "https://seattle.gov/tech/reports-and-data/open-data": "Open Data",
+   "https://seattle.gov/tech/reports-and-data/open-data/about-the-open-data-program": "About the Open Data Program",
+   "https://seattle.gov/tech/reports-and-data/open-data/contact": "Ask an Open Data Question",
+   "https://seattle.gov/tech/data-privacy/tech/reports-and-data/open-data": "Open Data",
+   "https://experience.arcgis.com/experience/452f7d02b96b472a89459257d54f7174": "",
+   "http://data-seattlecitygis.opendata.arcgis.com/datasets?q=DWW": "Sewer and drainage",
+   "https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::spu-dww-cso-basins-/about": "Combined sewer overflow basins",
+   "https://data-seattlecitygis.opendata.arcgis.com/maps/c5ab350a233f4f6ab62912227b08345d/about": "Ditches and culverts",
+   "https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::spu-dww-drainage-basins/about": "Drainage basins",
+   "https://data-seattlecitygis.opendata.arcgis.com/maps/9cd1e993421543c197300dbe45e1ad77/about": "Sewer and drainage mainlines",
+   "https://data-seattlecitygis.opendata.arcgis.com/maps/061f0b30317a4e1587881ad8319e9beb/about": "Sewer and drainage mainline point features",
+   "https://data-seattlecitygis.opendata.arcgis.com/maps/7542b9f543574bc8873789d8234523eb/about": "Sewer and drainage laterals",
+   "https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::spu-dww-storm-outfalls/about": "Sewer and drainage stormwater outfalls",
+   "https://data-seattlecitygis.opendata.arcgis.com/maps/0f24696ca1404f37a0ac6e550cf92851/about": "Sewer and drainage structures",
+   "https://data.seattle.gov/browse?limitTo=blob&q=gis&utf8=%E2%9C%93": "Browse the Seattle GIS data",
+   "https://experience.arcgis.com/experience/1cbc62f894134bff839bb22beac64e94": "map of Sea Level Rise (SLR)",
+   "https://data-seattlecitygis.opendata.arcgis.com/maps/3a6bcc7fa4c14c4daabdb1cd8f329758": "Racial and Social Equity Index",
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=84709c65c08a40bbb47d0723ef1c797a&extent=-13604644.7965%2C6019787.1095%2C-13561266.7829%2C6046616.5065%2C102100": "Heat Watch Map for Seattle and King County",
+   "https://data-seattlecitygis.opendata.arcgis.com/maps/6a9edda48a91483489f5fe6a75e3edb6": "tree canopy map",
+   "https://experience.arcgis.com/experience/6b3ec980a39e40c4a42fb844469798a4": "SDOT Assets Map",
+   "https://experience.arcgis.com/experience/681f5c0acd1e47a5ab3a5934dbb98d85": "Sidewalk Research",
+   "https://experience.arcgis.com/experience/efd537154c2849fc9294cde4d55c71a4": "Maintenance Activities",
+   "https://seattlecitygis.maps.arcgis.com/apps/webappviewer/index.html?id=86cb6824307c4d63b8e180ebcff58ce2": "Seattle Accessibility Route Planner",
+   "https://seattlecitygis.maps.arcgis.com/apps/instant/basic/index.html?appid=5150950f95e64594b36c278ef17d9f3f": "STP Projects and Modal Elements Map Explore projects and vision for modes serving your neighborhood"
+  }
+ },
+ "Honolulu": {
+  "files": [],
+  "portals": {}
+ },
+ "Düzce": {
+  "files": [],
+  "portals": {
+   "https://duzce.bel.tr/opendata": "KURUMSAL",
+   "https://duzce.bel.tr/open-data": "KURUMSAL"
+  }
+ },
+ "Brownsville": {
+  "files": [],
+  "portals": {}
+ },
+ "Pomona": {
+  "files": [],
+  "portals": {}
+ },
+ "Villa Mercedes": {
+  "files": [],
+  "portals": {}
+ },
+ "Lowell": {
+  "files": [
+   {
+    "url": "https://www.asme.org/wwwasmeorg/media/resourcefiles/aboutasme/who%20we%20are/engineering%20history/landmarks/107-lowell-power-canal-system.pdf",
+    "text": "Lowell Canal System Historic Civil Engineering and Mechanical Engineering Landmark Publication",
+    "file": "data/city_files/Lowell/61efce_107-lowell-power-canal-system.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.axisgis.com/LowellMA": "",
+   "https://lowell-gis-web-applications-lowell.hub.arcgis.com/": "Lowell GIS Hub Page",
+   "https://gis.lowellma.gov/": "City of Lowell Public GIS website",
+   "https://gis.vgsi.com/lowellma/": "City of Lowell Vision online assessment databas",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=3bd05fc60f2f44f08ec5074d4eb8dbea": "Election Wards and Precincts",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=5154b33cfc4849abbbcbbc81cfa421af": "City Department Location Web Map",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=a3dfa6cb0a704c9ca0a5e43de6f80d26": "Open Space",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=cb252110bac24a82abc0dfd640082eac": "Parking Facilities Web Map Application",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=25efe8648d224c64a0b30cce1a0b52f5": "Zoning Web Map",
+   "https://lowell.maps.arcgis.com/apps/instant/basic/index.html?appid=85a919537ac940dd9210878b3c778817": "map",
+   "https://lowell-gis-web-applications-lowell.hub.arcgis.com/apps/ec0704ea41dc4d46a982e9af6d4117ec/explore": "areas",
+   "https://www.axisgis.com/lowellma": "Lowell City GIS"
+  }
+ },
+ "Trelew": {
+  "files": [],
+  "portals": {}
+ },
+ "Longmont": {
+  "files": [],
+  "portals": {}
+ },
+ "Mount Pleasant": {
+  "files": [],
+  "portals": {
+   "https://gis-tomp.hub.arcgis.com/": "GIS Hub",
+   "https://tomp.maps.arcgis.com/apps/webappviewer/index.html?id=786bb2a435e54f479b12fb2db31b473d": "GIS Maps",
+   "https://experience.arcgis.com/experience/9599ea2573524a1c9db78e9041c14fcd/": "Parks Finder",
+   "https://tomp.maps.arcgis.com/apps/webappviewer/index.html?id=0a13f7eed4d44a85880a82ede9bcbe13": "Historic District Map",
+   "https://experience.arcgis.com/experience/0ad75fa89d3746ba8b5eab878b6661a4": "Current Board and Commission Applications Map"
+  }
+ },
+ "Lake Charles": {
+  "files": [],
+  "portals": {}
+ },
+ "Bloomington": {
+  "files": [
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/bloomington/1482_001_41986f4e-a1e6-48f6-a80d-23763c3ad8f4.pdf",
+    "text": "Hoosier Country - Adventure Cyclist",
+    "file": "data/city_files/Bloomington/541235_1482_001_41986f4e-a1e6-48f6-a80d-23763c3ad8f4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/bloomington/Downtown_Parking_Map_7cbaaf21-8aaa-442b-9ec1-d1f8ac9227fc.pdf",
+    "text": "",
+    "file": "data/city_files/Bloomington/7068cd_Downtown_Parking_Map_7cbaaf21-8aaa-442b-9ec1-d1f8ac9227fc.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/19d143db5dab42d99fb32a63f24aa85c/page/Map": "here"
+  }
+ },
+ "Castle Rock": {
+  "files": [],
+  "portals": {}
+ },
+ "Lakeville": {
+  "files": [],
+  "portals": {}
+ },
+ "Lodi": {
+  "files": [],
+  "portals": {}
+ },
+ "Montebello": {
+  "files": [
+   {
+    "url": "https://cityofmontebello.hosted2.civiclive.com/UserFiles/Servers/Server_58672/File/Departments/Transportation/Maps%20and%20Schedules/9-20-26%20Schedule%20Montebello%20Bus%20Lines.pdf",
+    "text": "Fall/Winter 2026 bus schedule, English and Spanish (PDF)",
+    "file": "data/city_files/Montebello/f2214f_9-20-26_20Schedule_20Montebello_20Bus_20Lines.pdf",
+    "rows": 501,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofmontebello.hosted2.civiclive.com/UserFiles/Servers/Server_58672/File/Departments/Planning%20&%20Comm.%20Dev/Planning%20Division/Zoning%20Map/Zoning%20Map_2026.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Montebello/e072d4_Zoning_20Map_2026.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmontebello.hosted2.civiclive.com/UserFiles/Servers/Server_58672/File/Departments/Planning%20&%20Comm.%20Dev/Code%20Enforcement%20Division/Adjudication%20Form%20(Parking%20Appeal)%20Blank.pdf",
+    "text": "in writing by mail",
+    "file": "data/city_files/Montebello/11f6bd_Adjudication_20Form_20_Parking_20Appeal_20Blank.pdf",
+    "rows": 32,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.montebelloca.gov/UserFiles/Servers/Server_58672/File/Departments/Planning & Comm. Dev/Code Enforcement Division/Forms and Publications/2024 Oversized Vehicle.Trailer Registration Application.pdf",
+    "text": "",
+    "file": "data/city_files/Montebello/0d1cce_2024_Oversized_Vehicle.Trailer_Registration_Application.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofmontebello.hosted2.civiclive.com/UserFiles/Servers/Server_58672/File/Departments/Planning%20&%20Comm.%20Dev/Code%20Enforcement%20Division/Forms%20and%20Publications/2024%20Oversized%20Vehicle.Trailer%20Registration%20Application.pdf",
+    "text": "Oversized Vehicle/Trailer Registration Application",
+    "file": "data/city_files/Montebello/2e2107_2024_20Oversized_20Vehicle.Trailer_20Registration_20Application.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofmontebello.hosted2.civiclive.com/UserFiles/Servers/Server_58672/File/Departments/Planning%20&%20Comm.%20Dev/Code%20Enforcement%20Division/Preferential%20Parking%20Permit%20Process%20-%20Single%20Household%20or%20Multi-Dwelling%20Unit.pdf",
+    "text": "click here",
+    "file": "data/city_files/Montebello/33b4d7_Preferential_20Parking_20Permit_20Process_20-_20Single_20Household_20o",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmontebello.hosted2.civiclive.com/UserFiles/Servers/Server_58672/File/Departments/Planning%20&%20Comm.%20Dev/Preferential%20Parking%20Permit%20Process%20-%20Single%20Household%20or%20Multi-Dwelling%20Unit.pdf",
+    "text": "click here.",
+    "file": "data/city_files/Montebello/d7bb80_Preferential_20Parking_20Permit_20Process_20-_20Single_20Household_20o",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.montebelloca.gov/UserFiles/Servers/Server_58672/File/Departments/Transportation/Maps and Schedules/Dial a Taxi/DAT Application Updated 2022.pdf",
+    "text": "DAT Application",
+    "file": "data/city_files/Montebello/ac4d46_DAT_Application_Updated_2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.montebelloca.gov/UserFiles/Servers/Server_58672/File/Departments/Transportation/Maps and Schedules/Dial a Taxi/Physician's Form for Dial-A-Taxi.pdf",
+    "text": "Physician's Form",
+    "file": "data/city_files/Montebello/73a7ce_Physician_s_Form_for_Dial-A-Taxi.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.montebelloca.gov/UserFiles/Servers/Server_58672/File/Departments/Transportation/Maps and Schedules/Montebello Shuttle/Montebello Link Reservation.pdf",
+    "text": "Montebello Link Reservation PDF",
+    "file": "data/city_files/Montebello/f57c2e_Montebello_Link_Reservation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmontebello.com/UserFiles/Servers/Server_58672/File/Departments/Planning & Comm. Dev/Code Enforcement Division/Forms and Publications/2024 Oversized Vehicle.Trailer Registration Application.pdf",
+    "text": "",
+    "file": "data/city_files/Montebello/9dd8dd_2024_Oversized_Vehicle.Trailer_Registration_Application.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofmontebello.com/UserFiles/Servers/Server_58672/File/Departments/Transportation/Maps and Schedules/Dial a Taxi/DAT Application Updated 2022.pdf",
+    "text": "DAT Application",
+    "file": "data/city_files/Montebello/949537_DAT_Application_Updated_2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmontebello.com/UserFiles/Servers/Server_58672/File/Departments/Transportation/Maps and Schedules/Dial a Taxi/Physician's Form for Dial-A-Taxi.pdf",
+    "text": "Physician's Form",
+    "file": "data/city_files/Montebello/2c0a80_Physician_s_Form_for_Dial-A-Taxi.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmontebello.com/UserFiles/Servers/Server_58672/File/Departments/Transportation/Maps and Schedules/Montebello Shuttle/Montebello Link Reservation.pdf",
+    "text": "Montebello Link Reservation PDF",
+    "file": "data/city_files/Montebello/6527a5_Montebello_Link_Reservation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Santee": {
+  "files": [],
+  "portals": {}
+ },
+ "Gümüşhane": {
+  "files": [],
+  "portals": {}
+ },
+ "Manhattan": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/79b484c248e249cba703d25129c2959e": "Map of Projects in Manhattan",
+   "https://cityofmhk.maps.arcgis.com/apps/instant/sidebar/index.html?appid=b7bcd97d34934d4da74352d8e04b498e": "Traffic Camera Map",
+   "https://cityofmhk.maps.arcgis.com/apps/instant/basic/index.html?appid=7519481a8c50425f9d97a73395580eb1": "Traffic Cameras Viewer",
+   "http://cityofmhk.maps.arcgis.com/apps/MapTour/index.html?appid=b3240f3d4f524a23be7f19164b8e3db4": "story map application",
+   "http://cityofmhk.maps.arcgis.com/apps/webappviewer/index.html?id=8395a371ed5447fb8e653a862f24bcd4": "Grave Locator map",
+   "http://gis.rileycountyks.gov/": "Riley County GIS",
+   "https://ptcounty.maps.arcgis.com/apps/webappviewer/index.html?id=d40d678dec6f4ed2b66f83b06609b228": "Web Maps",
+   "https://kansasgis.org/": "State GIS Data Access & Support Center",
+   "http://khri.kansasgis.org/": "Kansas Historic Resources Inventory",
+   "https://khri.kansasgis.org/": "Kansas Historic Resources Inventory",
+   "https://www.arcgis.com/apps/mapviewer/index.html?webmap=e42ddfd008f44694b781429480599787&extent=-96.5725,39.1743,-96.5566,39.1815": "Historic Districts and Sites Map",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd&extent=-96.57810525074319,39.17513157866471,-96.55733422413131,39.18344828151004": "FEMA Floodplain Map",
+   "https://gis.rileycountyks.gov/": "Riley County Community GIS Viewer"
+  }
+ },
+ "Changanassery Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Trenque Lauquen Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Perinton": {
+  "files": [
+   {
+    "url": "https://perinton.gov/wp-content/uploads/Hartwell-Heights-Lot-Impervious-Coverage-Building-Heights-Exhibit_03-13-26-2.pdf",
+    "text": "Hartwell Heights (Lot Impervious Coverage & Building Heights Exhibit)",
+    "file": "data/city_files/Perinton/d55622_Hartwell-Heights-Lot-Impervious-Coverage-Building-Heights-Exhibit_03-1",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/7551-Pittsford-Palmyra-Road-DiRisio-1.pdf",
+    "text": "7551 Pittsford Palmyra Road – DiRisio – 3 lot subdivision",
+    "file": "data/city_files/Perinton/e7072a_7551-Pittsford-Palmyra-Road-DiRisio-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/DeSeyn-5-Lot-Subdivision-Wilkinson-Road.pdf",
+    "text": "DeSeyn 5 Lot Subdivision – Wilkinson Road",
+    "file": "data/city_files/Perinton/a61ec2_DeSeyn-5-Lot-Subdivision-Wilkinson-Road.pdf",
+    "rows": 242,
+    "bike_rows": 26
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/Hartwell-heights-Lot-Impervious-Coverage-Building-Heights-Exhibit_03-13-26.pdf",
+    "text": "Lot Impervious Coverage & Building Heights Exhibit – 3/16/26",
+    "file": "data/city_files/Perinton/d95c2e_Hartwell-heights-Lot-Impervious-Coverage-Building-Heights-Exhibit_03-1",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/Powder-Mills-SUP-Planning-Board-Exhibits-5.20.26.pdf",
+    "text": "Supplemental information – grades & distance, and existing parking & building location",
+    "file": "data/city_files/Perinton/21be81_Powder-Mills-SUP-Planning-Board-Exhibits-5.20.26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/Hartwell-Heights-TB-SUP-MUD-property-greater-than-1-acre-Binder1_Redacted.pdf",
+    "text": "Special Use Permit – Hartwell Heights Thornell Road and NYS Route 96 – Application Received on 2/26/25",
+    "file": "data/city_files/Perinton/b487cd_Hartwell-Heights-TB-SUP-MUD-property-greater-than-1-acre-Binder1_Redac",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/Ltr-Perinton-PB-DPW-CB-Comments-11-20-24.pdf",
+    "text": "BME response to DPW comments & transit bus exhibit & WB40 intermediate semi-trailer exhibit",
+    "file": "data/city_files/Perinton/f96f9e_Ltr-Perinton-PB-DPW-CB-Comments-11-20-24.pdf",
+    "rows": 14,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/CTHA_Mapping_South_Section.pdf",
+    "text": "CRESCENT TRAIL SOUTH SECTION MAP",
+    "file": "data/city_files/Perinton/7e9788_CTHA_Mapping_South_Section.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/CTHA_Mapping_East_Section.pdf",
+    "text": "CRESCENT TRAIL EAST SECTION MAP",
+    "file": "data/city_files/Perinton/354de3_CTHA_Mapping_East_Section.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/Sewer-and-Water-Service.pdf",
+    "text": "Sanitary Sewer, Storm Sewer and Water Service Connections or Repairs",
+    "file": "data/city_files/Perinton/c4f948_Sewer-and-Water-Service.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/Official-Zoning-Map-2023-ANSI-E.pdf",
+    "text": "",
+    "file": "data/city_files/Perinton/113b75_Official-Zoning-Map-2023-ANSI-E.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/ResiDropOff_Brochure-UPDATED-2024.pdf",
+    "text": "Residential Drop Off Brochure (Free Recycling Drop Off)",
+    "file": "data/city_files/Perinton/525b2f_ResiDropOff_Brochure-UPDATED-2024.pdf",
+    "rows": 21,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.monroecounty.gov/files/DES/Solid%20Waste%20Reuse%20and%20Recycling%20Law.pdf",
+    "text": "Monroe County Solid Waste Reuse and Recycling Law",
+    "file": "data/city_files/Perinton/c14758_Solid_20Waste_20Reuse_20and_20Recycling_20Law.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.monroecounty.gov/files/DES/recyclopedia.pdf",
+    "text": "Recyclopedia",
+    "file": "data/city_files/Perinton/7c481f_recyclopedia.pdf",
+    "rows": 238,
+    "bike_rows": 82
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/QUAD_TrshRts_LETTER.pdf",
+    "text": "Residential Refuse Collection Map",
+    "file": "data/city_files/Perinton/f42e34_QUAD_TrshRts_LETTER.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/2027-Community-Garden-Map.pdf",
+    "text": "Click for PDF download",
+    "file": "data/city_files/Perinton/efc821_2027-Community-Garden-Map.pdf",
+    "rows": 33,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/rules-rc-racetrack-2.pdf",
+    "text": "T.O.P. RC Raceway Rules",
+    "file": "data/city_files/Perinton/e8d280_rules-rc-racetrack-2.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/Thayer-Hill-and-Dewitt-Property-Map-1.pdf",
+    "text": "Thayer Hill and Dewitt Property Map",
+    "file": "data/city_files/Perinton/57b32c_Thayer-Hill-and-Dewitt-Property-Map-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://perinton.gov/wp-content/uploads/Shared-Use-Trails-Presentation-05.07.pdf",
+    "text": "5/7/2026 Presentation",
+    "file": "data/city_files/Perinton/0cff0e_Shared-Use-Trails-Presentation-05.07.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {}
+ },
+ "Cutler Bay": {
+  "files": [
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/community/page/2971/3town_council_districts_map.pdf",
+    "text": "Town Council Districts Map",
+    "file": "data/city_files/Cutler_Bay/ca931d_3town_council_districts_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/community/page/2971/4cutler_bay_land_use_r3.pdf",
+    "text": "Cutler Bay Land Use Map",
+    "file": "data/city_files/Cutler_Bay/400336_4cutler_bay_land_use_r3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/public_works/page/4791/metroconnect_flyer_-_doublesided.pdf",
+    "text": "Cutler Bay's MetroConnect Flyer and Service Map",
+    "file": "data/city_files/Cutler_Bay/bc6194_metroconnect_flyer_-_doublesided.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/public_works/page/4791/500.pdf",
+    "text": "Cutler Bay Circulator Bus Route 500 Map & Times",
+    "file": "data/city_files/Cutler_Bay/c64052_500.pdf",
+    "rows": 15,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/system/temporary/filefield_paths/revised-flood_mitigation_project_list_fourth_quarterly_meeting_2024_.pdf",
+    "text": "2024 4th Quarter Flood Mitigation Project List Status",
+    "file": "data/city_files/Cutler_Bay/9e8e41_revised-flood_mitigation_project_list_fourth_quarterly_meeting_2024_.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/11469/2026-12-19_holiday_celebration_2-sided_flyer.pdf",
+    "text": "Download Parade Route and 2-sided Flyer [PDF]",
+    "file": "data/city_files/Cutler_Bay/082066_2026-12-19_holiday_celebration_2-sided_flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/community/page/10007/2022-07-04_whispering_pines_4th_of_july_celebration_and_parade-map.pdf",
+    "text": "4th of July Parade Route Map",
+    "file": "data/city_files/Cutler_Bay/93a2f7_2022-07-04_whispering_pines_4th_of_july_celebration_and_parade-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/10057/2022-10-29_halloween_spooktacular_golf_cart_parade_and_movie_night.pdf",
+    "text": "Halloween Golf Cart Parade Route",
+    "file": "data/city_files/Cutler_Bay/21738a_2022-10-29_halloween_spooktacular_golf_cart_parade_and_movie_night.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/10058/2022-10-29_halloween_spooktacular_golf_cart_parade_and_movie_night.pdf",
+    "text": "Halloween Golf Cart Parade Route",
+    "file": "data/city_files/Cutler_Bay/14f619_2022-10-29_halloween_spooktacular_golf_cart_parade_and_movie_night.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/10123/2022-12-10_holiday_golf_cart_parade_winter_celebration_parade_route.pdf",
+    "text": "2022 Holiday Golf Cart Parade Route Map",
+    "file": "data/city_files/Cutler_Bay/6e4e93_2022-12-10_holiday_golf_cart_parade_winter_celebration_parade_route.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/town_clerk/page/10397/vote-by-mail_vbm_ballot_request.pdf",
+    "text": "Vote-by-Mail Ballot Request Form",
+    "file": "data/city_files/Cutler_Bay/24d354_vote-by-mail_vbm_ballot_request.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/10473/2024-07-04_4th_of_july_celebration_flyer.pdf",
+    "text": "Download Map and Flyer [PDF]",
+    "file": "data/city_files/Cutler_Bay/846dfe_2024-07-04_4th_of_july_celebration_flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/10478/2024-10-25_and_26_halloween_spooktacular_flyer.pdf",
+    "text": "Flyer & Map | Halloween Spooktacular 2024 [PDF]",
+    "file": "data/city_files/Cutler_Bay/47af95_2024-10-25_and_26_halloween_spooktacular_flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/10479/2024-10-25_and_26_halloween_spooktacular_flyer.pdf",
+    "text": "Flyer & Map | Halloween Spooktacular 2024 [PDF]",
+    "file": "data/city_files/Cutler_Bay/3848cc_2024-10-25_and_26_halloween_spooktacular_flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/10483/2024-12-14_holiday_golf_cart_parade_flyer.pdf",
+    "text": "Download Flyer & Parade Route",
+    "file": "data/city_files/Cutler_Bay/deb037_2024-12-14_holiday_golf_cart_parade_flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/public_works/page/10485/20311.0.02_topographic_survey_update_05-17-22_2.pdf",
+    "text": "Please click here to download a map of the topographic survey",
+    "file": "data/city_files/Cutler_Bay/448249_20311.0.02_topographic_survey_update_05-17-22_2.pdf",
+    "rows": 51,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/public_works/page/10587/survey_-_22083_coral_ridge_pines_11-28-2022.pdf",
+    "text": "Please click here to download a map of the topographic survey",
+    "file": "data/city_files/Cutler_Bay/0aadff_survey_-_22083_coral_ridge_pines_11-28-2022.pdf",
+    "rows": 158,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/public_works/page/10653/surveys_for_itb.pdf",
+    "text": "Please click here to view a Map of the Topographic Survey",
+    "file": "data/city_files/Cutler_Bay/332ec9_surveys_for_itb.pdf",
+    "rows": 215,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/public_works/page/10661/23025_topo_03-07-2023.pdf",
+    "text": "Please click here to download a copy of the map of topographic survey",
+    "file": "data/city_files/Cutler_Bay/34b094_23025_topo_03-07-2023.pdf",
+    "rows": 18,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/public_works/page/10957/caribbean_boulevard_complete_streets_project_info_session.pdf",
+    "text": "Download Flyer - Caribbean Boulevard Complete Streets Project Info Session",
+    "file": "data/city_files/Cutler_Bay/3f0cda_caribbean_boulevard_complete_streets_project_info_session.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/11143/2025_easter_eggstravagnza_map.pdf",
+    "text": "2025 Easter Eggstravaganza Map",
+    "file": "data/city_files/Cutler_Bay/8b9d5d_2025_easter_eggstravagnza_map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/11205/2025-07-04_4th_of_july_flyer.pdf",
+    "text": "Cutler Bay 4th of July Parade Flyer and Route [PDF]",
+    "file": "data/city_files/Cutler_Bay/bef90a_2025-07-04_4th_of_july_flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/11280/2025-09-27_hispanic_heritage_celebration_flyer.pdf",
+    "text": "Hispanic Heritage Celebration Flyer [PDF]",
+    "file": "data/city_files/Cutler_Bay/f808f3_2025-09-27_hispanic_heritage_celebration_flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/11304/2025_halloween_spooktacular_2-sided_flyer.pdf",
+    "text": "Flyer & Map | 2025 Halloween Spooktacular [PDF]",
+    "file": "data/city_files/Cutler_Bay/2ebd38_2025_halloween_spooktacular_2-sided_flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/11322/2025_halloween_spooktacular_2-sided_flyer.pdf",
+    "text": "Flyer & Map | 2025 Halloween Spooktacular [PDF]",
+    "file": "data/city_files/Cutler_Bay/68085e_2025_halloween_spooktacular_2-sided_flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/11338/2025-12-13_holiday_celebration_and_golf_cart_parade_2-sided_flyer.pdf",
+    "text": "2025 Cutler Bay Holiday Golf Cart Parade Flyer & Route Map [PDF]",
+    "file": "data/city_files/Cutler_Bay/e9d2af_2025-12-13_holiday_celebration_and_golf_cart_parade_2-sided_flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/11378/2_-_final_itb_no._25-08_lakes_by_the_bay_parking_lot_and_walkway_retrofit_project.pdf",
+    "text": "ITB No. 25-08_ Lakes by the Bay Parking lot and Walkway Retrofit Project",
+    "file": "data/city_files/Cutler_Bay/9b5eca_2_-_final_itb_no._25-08_lakes_by_the_bay_parking_lot_and_walkway_retro",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/11378/notice_of_intent_to_reject_all_bids_reissue_-_itb_25-08_lakes_by_the_bay_parking_lot_and_walkway_retrofit_project_021926.pdf",
+    "text": "Notice of Intent to Reject All Bids & Reissue - ITB 25-08 Lakes by the Bay Parking Lot and Walkway Retrofit Project 0219",
+    "file": "data/city_files/Cutler_Bay/904611_notice_of_intent_to_reject_all_bids_reissue_-_itb_25-08_lakes_by_the_b",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/11450/easter_eggstravagnza_map.pdf",
+    "text": "Download the Easter Eggtravaganza Map [PDF]",
+    "file": "data/city_files/Cutler_Bay/b1c39e_easter_eggstravagnza_map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cutlerbay-fl.gov/sites/default/files/fileattachments/parks_and_recreation/page/11453/2026-07-04_golfcartparade-and-picnic-flyer.pdf",
+    "text": "Download Cutler Bay 4th of July Parade Flyer and Route [PDF]",
+    "file": "data/city_files/Cutler_Bay/bffac0_2026-07-04_golfcartparade-and-picnic-flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://tcbgis.cutlerbay-fl.gov/portal/": "Interactive Zoning Map",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=6d59297eafca490ea32690ffda87e3bb": "Elevation Certificate",
+   "https://survey123.arcgis.com/share/5354fece0e5e4ee8b76cced437087612": "Click here to fill out the Cutler Bay Vulnerability Assessment and Adaptation Plan Survey"
+  }
+ },
+ "North Miami Beach": {
+  "files": [],
+  "portals": {}
+ },
+ "Marlborough": {
+  "files": [],
+  "portals": {
+   "https://next.axisgis.com/MarlboroughMA/": "GIS/Mapping",
+   "https://marlboroughma.maps.arcgis.com/apps/Cascade/index.html?appid=b3846445e9b84f5bbb40bbfa25e64c63": "Old Homesteads of Marlborough by Chandra Lothian",
+   "https://www.axisgis.com/marlboroughma/": "GIS Maps / Assessor Database",
+   "https://experience.arcgis.com/experience/e6f74f4ea41746cbac9507664cbe6dcc": "2025 Capital Projects",
+   "https://marlboroughma.maps.arcgis.com/home/index.html": "Interactive Map Gallery",
+   "https://experience.arcgis.com/experience/b4571d6213ad4a74a6b330490242c9c5": "Capital Project Information",
+   "http://marlboroughma.maps.arcgis.com/home/index.html": ""
+  }
+ },
+ "Norwich": {
+  "files": [
+   {
+    "url": "https://portal.ct.gov/-/media/DECD/Historic-Preservation/03_Technical_Assistance_Research/Energy-Efficiency-in-Connecticut_Text-3-2020.pdf",
+    "text": "Learn How to Make Your Historic Home More Energy Efficient While Maintaining Its Historic Character",
+    "file": "data/city_files/Norwich/5cd63c_Energy-Efficiency-in-Connecticut_Text-3-2020.pdf",
+    "rows": 469,
+    "bike_rows": 46
+   }
+  ],
+  "portals": {
+   "https://norwichct.org/844/Open-Data-Portal": "Open Data Portal",
+   "http://gis.vgsi.com/NorwichCT/": "VisionAppraisal",
+   "http://www.norwichct.org/844/Open-Data-Portal": "Open Data Portal"
+  }
+ },
+ "West Fargo": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/18b005f260264720a9cefc606b65dc83/": "Sanitation and Recycling Daily Collection Zones",
+   "https://experience.arcgis.com/experience/c5da309af17b4c48a3b953675a77f654": "ND Fire Declarations/Burn Restrictions",
+   "https://fire-transparency-westfargo.hub.arcgis.com": "Transparency Dashboard",
+   "https://open-data-portal-westfargo.hub.arcgis.com/": "Link to page",
+   "https://experience.arcgis.com/experience/8123acd77b59484e846cc8c4d91627ea/": "Link to page",
+   "https://west-fargo-police-transparency-westfargo.hub.arcgis.com/": "Police Transparency Dashboard",
+   "https://west-fargo-police-transparency-westfargo.hub.arcgis.com": "Transparency Dashboard",
+   "https://experience.arcgis.com/experience/e185580c4f7040788251eebe9f1cce07/?disable_window_focus=true": "Snow Removal Route Map",
+   "https://survey123.arcgis.com": ""
+  }
+ },
+ "Spruce Grove": {
+  "files": [
+   {
+    "url": "https://sprucegrove.org/media/7047/ahs-bike-rodeo-toolkit.pdf",
+    "text": "/media/7047/ahs-bike-rodeo-toolkit.pdf",
+    "file": "data/city_files/Spruce_Grove/d6c745_ahs-bike-rodeo-toolkit.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://sprucegrove.org/media/3126/policy-7-012cm-cash-in-lieu-of-parking-spaces.pdf",
+    "text": "/media/3126/policy-7-012cm-cash-in-lieu-of-parking-spaces.pdf",
+    "file": "data/city_files/Spruce_Grove/b40029_policy-7-012cm-cash-in-lieu-of-parking-spaces.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://sprucegrove.org/media/4576/alternative-parking-map.pdf",
+    "text": "/media/4576/alternative-parking-map.pdf",
+    "file": "data/city_files/Spruce_Grove/a46580_alternative-parking-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/5117/accessible-parking-zone-policy.pdf",
+    "text": "/media/5117/accessible-parking-zone-policy.pdf",
+    "file": "data/city_files/Spruce_Grove/56acee_accessible-parking-zone-policy.pdf",
+    "rows": 12,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://sprucegrove.org/media/4672/alternative-parking-elks-hall-2021.pdf",
+    "text": "/media/4672/alternative-parking-elks-hall-2021.pdf",
+    "file": "data/city_files/Spruce_Grove/6eb4ab_alternative-parking-elks-hall-2021.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sprucegrove.org/media/4289/city-parking-lot-snow-and-ice-control.pdf",
+    "text": "/media/4289/city-parking-lot-snow-and-ice-control.pdf",
+    "file": "data/city_files/Spruce_Grove/2e3341_city-parking-lot-snow-and-ice-control.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/6665/part-8-parking-regulations.pdf",
+    "text": "/media/6665/part-8-parking-regulations.pdf",
+    "file": "data/city_files/Spruce_Grove/92cb21_part-8-parking-regulations.pdf",
+    "rows": 68,
+    "bike_rows": 39
+   },
+   {
+    "url": "https://sprucegrove.org/media/7337/open-space-mobile-vending-locations-map-2024.pdf",
+    "text": "/media/7337/open-space-mobile-vending-locations-map-2024.pdf",
+    "file": "data/city_files/Spruce_Grove/bc2269_open-space-mobile-vending-locations-map-2024.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/9207/ccarp_parking_management_plan_final_report.pdf",
+    "text": "/media/9207/ccarp_parking_management_plan_final_report.pdf",
+    "file": "data/city_files/Spruce_Grove/f278e7_ccarp_parking_management_plan_final_report.pdf",
+    "rows": 108,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://sprucegrove.org/media/9208/ccarp_parking_study_final.pdf",
+    "text": "/media/9208/ccarp_parking_study_final.pdf",
+    "file": "data/city_files/Spruce_Grove/289b70_ccarp_parking_study_final.pdf",
+    "rows": 57,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/7772/2025-parks-and-trails.pdf",
+    "text": "many kilometers of trails",
+    "file": "data/city_files/Spruce_Grove/7fc242_2025-parks-and-trails.pdf",
+    "rows": 37,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://sprucegrove.org/media/1885/neighbourhoodmap_22x17.pdf",
+    "text": "Neighbourhood Map",
+    "file": "data/city_files/Spruce_Grove/638f68_neighbourhoodmap_22x17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/3318/annexation-map.pdf",
+    "text": "/media/3318/annexation-map.pdf",
+    "file": "data/city_files/Spruce_Grove/fc5ecc_annexation-map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/1160/portable-toilet-location-map.pdf",
+    "text": "/media/1160/portable-toilet-location-map.pdf",
+    "file": "data/city_files/Spruce_Grove/a25ce6_portable-toilet-location-map.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sprucegrove.org/media/1801/land_use_district_map.pdf",
+    "text": "/media/1801/land_use_district_map.pdf",
+    "file": "data/city_files/Spruce_Grove/46ffe6_land_use_district_map.pdf",
+    "rows": 116,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://sprucegrove.org/media/3059/city-centre-priority-map.pdf",
+    "text": "/media/3059/city-centre-priority-map.pdf",
+    "file": "data/city_files/Spruce_Grove/3d5c91_city-centre-priority-map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/5036/land-use-wall-map_36x48.pdf",
+    "text": "Land Use (Zoning) Map",
+    "file": "data/city_files/Spruce_Grove/42d81a_land-use-wall-map_36x48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/5037/2025-addressing-mapbook.pdf",
+    "text": "Civic Addressing Map Book",
+    "file": "data/city_files/Spruce_Grove/a73548_2025-addressing-mapbook.pdf",
+    "rows": 47,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://sprucegrove.org/media/7875/recommended-collector-speed-map.pdf",
+    "text": "/media/7875/recommended-collector-speed-map.pdf",
+    "file": "data/city_files/Spruce_Grove/022fba_recommended-collector-speed-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/8190/2025-stormwater-facilities-map.pdf",
+    "text": "/media/8190/2025-stormwater-facilities-map.pdf",
+    "file": "data/city_files/Spruce_Grove/f1f660_2025-stormwater-facilities-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/8316/2025-storm-water-map.pdf",
+    "text": "/media/8316/2025-storm-water-map.pdf",
+    "file": "data/city_files/Spruce_Grove/713e4c_2025-storm-water-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/7595/canadaday_sitemap_2025.pdf",
+    "text": "/media/7595/canadaday_sitemap_2025.pdf",
+    "file": "data/city_files/Spruce_Grove/5a9bb5_canadaday_sitemap_2025.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sprucegrove.org/media/9372/40years_map_web_final.pdf",
+    "text": "/media/9372/40years_map_web_final.pdf",
+    "file": "data/city_files/Spruce_Grove/4e509f_40years_map_web_final.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/1812/land_use_part11_sec114.pdf",
+    "text": "Section 114 – Land Use District Map",
+    "file": "data/city_files/Spruce_Grove/d189f9_land_use_part11_sec114.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/6552/districtsallowingacsales.pdf",
+    "text": "Alcohol and Cannabis Sales - Zoning Districts Map",
+    "file": "data/city_files/Spruce_Grove/fe7cd2_districtsallowingacsales.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/7338/roadway-mobile-vending-locations-map-2024.pdf",
+    "text": "/media/7338/roadway-mobile-vending-locations-map-2024.pdf",
+    "file": "data/city_files/Spruce_Grove/305078_roadway-mobile-vending-locations-map-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/7982/schedule-b-city-scale-flag.pdf",
+    "text": "Annexation Map - Schedule B City Scale Flag",
+    "file": "data/city_files/Spruce_Grove/3cdbf1_schedule-b-city-scale-flag.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://sprucegrove.org/media/1713/roads-snic-full-priority-clearing-sequence.pdf",
+    "text": "Snow and Ice Control (SNIC) - Priority Clearing Sequence Map",
+    "file": "data/city_files/Spruce_Grove/792f76_roads-snic-full-priority-clearing-sequence.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/2061/urban-forest-management-plan-volume-2-map-folio.pdf",
+    "text": "/media/2061/urban-forest-management-plan-volume-2-map-folio.pdf",
+    "file": "data/city_files/Spruce_Grove/252546_urban-forest-management-plan-volume-2-map-folio.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/3407/sgccarp-figure-3-with-labels.pdf",
+    "text": "Spruce Grove City Centre Area Redevelopment Plan - Overview Map",
+    "file": "data/city_files/Spruce_Grove/e747bb_sgccarp-figure-3-with-labels.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/7040/snow-and-ice-control-snic-public-walkway-priority-2-map.pdf",
+    "text": "/media/7040/snow-and-ice-control-snic-public-walkway-priority-2-map.pdf",
+    "file": "data/city_files/Spruce_Grove/f6b292_snow-and-ice-control-snic-public-walkway-priority-2-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/7041/snow-and-ice-control-snic-public-walkway-priority-1-map.pdf",
+    "text": "/media/7041/snow-and-ice-control-snic-public-walkway-priority-1-map.pdf",
+    "file": "data/city_files/Spruce_Grove/6a9ece_snow-and-ice-control-snic-public-walkway-priority-1-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/8151/appendix-e-flood-hazard-risk-assessment-map-book.pdf",
+    "text": "/media/8151/appendix-e-flood-hazard-risk-assessment-map-book.pdf",
+    "file": "data/city_files/Spruce_Grove/77f04f_appendix-e-flood-hazard-risk-assessment-map-book.pdf",
+    "rows": 26,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sprucegrove.org/media/2888/sidewalk-maintenance-and-repair-policy-revised.pdf",
+    "text": "/media/2888/sidewalk-maintenance-and-repair-policy-revised.pdf",
+    "file": "data/city_files/Spruce_Grove/5e55c4_sidewalk-maintenance-and-repair-policy-revised.pdf",
+    "rows": 12,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://sprucegrove.org/media/8702/air-quality-pilot-program-data.xlsx",
+    "text": "/media/8702/air-quality-pilot-program-data.xlsx",
+    "file": "data/city_files/Spruce_Grove/7caab5_air-quality-pilot-program-data.xlsx",
+    "rows": 10033,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sprucegrove.org/media/2046/heritage-estates-asp-consolidation-dec-2024.pdf",
+    "text": "/media/2046/heritage-estates-asp-consolidation-dec-2024.pdf",
+    "file": "data/city_files/Spruce_Grove/d744ac_heritage-estates-asp-consolidation-dec-2024.pdf",
+    "rows": 27,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/9761/sgfs-swept-path-analysis-standard.pdf",
+    "text": "/media/9761/sgfs-swept-path-analysis-standard.pdf",
+    "file": "data/city_files/Spruce_Grove/618151_sgfs-swept-path-analysis-standard.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/10162/route-560-sep26-fall-break.pdf",
+    "text": "/media/10162/route-560-sep26-fall-break.pdf",
+    "file": "data/city_files/Spruce_Grove/464810_route-560-sep26-fall-break.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sprucegrove.org/media/9965/route-560-fall-2026-winter-2027.pdf",
+    "text": "/media/9965/route-560-fall-2026-winter-2027.pdf",
+    "file": "data/city_files/Spruce_Grove/59eeaa_route-560-fall-2026-winter-2027.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://rcmp-k-div.maps.arcgis.com/apps/webappviewer/index.html?id=2702490a678e482084be8374399595a6": "View full screen",
+   "https://experience.arcgis.com/experience/164ec4cb1d78452dad351122defbb023": "fullscreen"
+  }
+ },
+ "Moorpark": {
+  "files": [],
+  "portals": {
+   "https://ndcresearch.maps.arcgis.com/apps/View/index.html?appid=ed3cd14985d046fa90c5d700c3347eb5": "use this interactive map",
+   "https://moorpark-pmp-ktuagis.hub.arcgis.com/": "moorparkparksmasterplan.com"
+  }
+ },
+ "University City": {
+  "files": [],
+  "portals": {
+   "https://u-city.maps.arcgis.com/apps/Embed/index.html?webmap=fa6664893f814ff79e6908ededf45f48&extent=-90.3559,38.6542,-90.3019,38.6786&home=true&zoom=true&scale=true&search=true&searchextent=false&legend=true&disable_scroll=true&theme=light": "View larger map"
+  }
+ },
+ "Walla Walla": {
+  "files": [],
+  "portals": {}
+ },
+ "Dracut": {
+  "files": [],
+  "portals": {}
+ },
+ "Norwood": {
+  "files": [],
+  "portals": {}
+ },
+ "Lafayette": {
+  "files": [],
+  "portals": {}
+ },
+ "Oak Park": {
+  "files": [
+   {
+    "url": "https://www.oakparkmi.gov/media/documents/garage-sale-permit-application.pdf",
+    "text": "Garage Sale Permit Application",
+    "file": "data/city_files/Oak_Park/ea85c1_garage-sale-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oakparkmi.gov/media/documents/garages-and-sheds-building-guidelines.pdf",
+    "text": "Garages and Sheds Building Guidelines",
+    "file": "data/city_files/Oak_Park/5d3b0f_garages-and-sheds-building-guidelines.pdf",
+    "rows": 12,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.oakparkmi.gov/media/documents/municipal-parking-lot-permit-application.pdf",
+    "text": "Municipal Parking Permit Application",
+    "file": "data/city_files/Oak_Park/e7ba55_municipal-parking-lot-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oakparkmi.gov/media/leaves-snow-refuse/Snow%20Emergency%20Parking.pdf",
+    "text": "Snow Emergency Parking.pdf",
+    "file": "data/city_files/Oak_Park/98e231_Snow_20Emergency_20Parking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oakparkmi.gov/media/documents/precinct-map-general.pdf",
+    "text": "precinct-map-general.pdf",
+    "file": "data/city_files/Oak_Park/3634f6_precinct-map-general.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oakparkmi.gov/media/documents/future-land-use-map.pdf",
+    "text": "Future Land Use Map",
+    "file": "data/city_files/Oak_Park/7bf682_future-land-use-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oakparkmi.gov/media/documents/snow-emergency-parking-map.pdf",
+    "text": "Snow Emergency Parking Map",
+    "file": "data/city_files/Oak_Park/0dfe5d_snow-emergency-parking-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oakparkmi.gov/media/documents/Zoning%20Map%208-27-26.pdf",
+    "text": "Zoning Districts Map",
+    "file": "data/city_files/Oak_Park/072d3f_Zoning_20Map_208-27-26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.oakparkmi.gov/media/documents/zoning-districts-map-4-6-26.pdf",
+    "text": "",
+    "file": "data/city_files/Oak_Park/36defb_zoning-districts-map-4-6-26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Allen Park": {
+  "files": [
+   {
+    "url": "https://cityofallenpark.org/Documents/Community/Maps/StreetSystemMap.pdf?t=202403190947560",
+    "text": "Street Map",
+    "file": "data/city_files/Allen_Park/4e5fb5_StreetSystemMap.pdf",
+    "rows": 32,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofallenpark.org/Documents/Departments/Clerk/New Precinctmap 01-02-2026rev1.pdf?t=202607161652320",
+    "text": "Precinct Map",
+    "file": "data/city_files/Allen_Park/0c1749_New_Precinctmap_01-02-2026rev1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofallenpark.org/Documents/Community/Maps/NewZoning2026.pdf?t=202607161656120",
+    "text": "Zoning Map",
+    "file": "data/city_files/Allen_Park/6b4f4a_NewZoning2026.pdf",
+    "rows": 44,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ }
+}
