@@ -1,16 +1,58 @@
 [
 {
-"city": "Carmel",
-"url": "https://carmelgis.carmel.in.gov/server/rest/services/DOCS_Bike_Racks/FeatureServer/0",
-"name": "DOCS_Bike_Racks",
-"count": 472,
+"city": "Owensboro",
+"url": "https://gis.owensboro.org/arcgis/rest/services/City/Bike_Routes_Racks_082023/MapServer/1",
+"name": "Bike Racks (Syms)",
+"count": 25,
 "cat": "racks"
 },
 {
-"city": "Carmel",
-"url": "https://carmelgis.carmel.in.gov/server/rest/services/DOCS_Bike_Racks/MapServer/0",
-"name": "DOCS_Bike_Racks",
-"count": 472,
+"city": "American Fork",
+"url": "https://maps.afcity.org/arcgis/rest/services/Streets/Pavement_Markings/MapServer/0",
+"name": "Bike Legend",
+"count": 79,
+"cat": "racks"
+},
+{
+"city": "Beverly Hills",
+"url": "https://gis.beverlyhills.org/arcgis/rest/services/DeveloperOnly/cbhZIMAS_Starter_Dev202210b/MapServer/22",
+"name": "Bike Racks",
+"count": 97,
+"cat": "racks"
+},
+{
+"city": "Beverly Hills",
+"url": "https://gis.beverlyhills.org/arcgis/rest/services/DeveloperOnly/cbhZIMAS_Starter_Dev202210b/MapServer/24",
+"name": "Bike Share Station",
+"count": 9,
+"cat": "share"
+},
+{
+"city": "Beverly Hills",
+"url": "https://gis.beverlyhills.org/arcgis/rest/services/OD/OpenData_BeverlyHillsGeoHub/FeatureServer/2",
+"name": "Bike Racks",
+"count": 97,
+"cat": "racks"
+},
+{
+"city": "Beverly Hills",
+"url": "https://gis.beverlyhills.org/arcgis/rest/services/OD/OpenData_BeverlyHillsGeoHub/MapServer/2",
+"name": "Bike Racks",
+"count": 97,
+"cat": "racks"
+},
+{
+"city": "Orlando FL",
+"url": "https://gis.orlando.gov/server/rest/services/Epic_Simplify_i3/Transportation/MapServer/10",
+"name": "Bike Racks",
+"count": 228,
+"cat": "racks"
+},
+{
+"city": "Greenwood",
+"url": "https://greenwoodgis.greenwood.in.gov/arcgis/rest/services/Parks_Department/Bike_Racks/MapServer/0",
+"name": "Bike Racks",
+"count": 24,
 "cat": "racks"
 }
 ]
