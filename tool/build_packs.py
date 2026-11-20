@@ -1362,45 +1362,119 @@ def main():
     print(f'private areas: {n_areas}, racks on private property: {n_priv}', flush=True)
     n_mail = write_contacts(tiles, save=not args and '--extra-only' not in sys.argv and not refresh)
     stage(f'5/6 emails: {n_mail} · private areas: {n_areas}, racks made private: {n_priv}')
-    # the same place from several sources (e.g. copies of a city's rack list re-uploaded by students):
-    # keep one per ~5 m. OpenStreetMap first, then our own city list, then everything else.
+    # The same place from several sources (owner's rule, Nov 2026): not a plain distance rule.
+    # 1. Places of one kind within ~12 m of each other are one spot. When the spot comes from several sources, only
+    #    ONE source is kept for it: the newest one (check / survey / seen date) when every source there has a date,
+    #    else the one with more racks there (a point with capacity N = N/2 stands), else OpenStreetMap, then our city lists, then the rest.
+    #    (a city list with 1 rack from 2023 and Mapillary with 3 racks seen in 2025 -> the 3 racks stay)
+    # 2. Racks of the kept source within ~12 m become ONE pin: rack_count = how many racks, covered if any is
+    #    covered (metro entrances: covered and open racks side by side), capacity added up. Other kinds stay separate.
     def rank(r):
         k = r[0]
         return 0 if k.startswith(('node/', 'way/', 'relation/')) else 1 if k.startswith('city/') and not k.split('/')[1].startswith(('ago-', 'soc-', 'ckn-')) else 2
-    # same kind of place from two DIFFERENT sources within 5 m: the higher-ranked one stays. Racks of one source next to each other stay.
-    # at most 5 m (owner's rule): farther apart they are treated as two different places
-    RAD = {}
-    SAME = {'small_electric_vehicle_parking': ('small_electric_vehicle_parking', 'kick-scooter_parking', 'mobility_hub'),
-            'kick-scooter_parking': ('small_electric_vehicle_parking', 'kick-scooter_parking', 'mobility_hub')}
+
     def src_of(k):
         p = k.split('/')[0]
         return 'osm' if p in ('node', 'way', 'relation') else (p + '/' + k.split('/')[1].split('-')[0]) if p == 'city' else p
-    dropped = 0
-    C = 0.0002
+
+    def date_of(r):
+        t = r[3]
+        for f in ('check_date', 'survey:date', 'start_date', 'source:date'):
+            v = str(t.get(f) or '')
+            if re.match(r'(19|20)\d\d', v):
+                return v[:10]
+        return ''
+
+    FAMILY = {'kick-scooter_parking': 'small_electric_vehicle_parking', 'mobility_hub': 'small_electric_vehicle_parking'}
+    R_SPOT = 12.0
+    C = 0.00012
+    dropped = grouped = 0
+    # group pins of an earlier build: put their racks back as they were, then group again
     for key, d in tiles.items():
-        grid = {}
-        for r in sorted(d.values(), key=lambda r: (rank(r), r[0])):
+        for r in [r for r in d.values() if r[3].get('_m')]:
+            d.pop(r[0], None)
+            for m in r[3]['_m']:
+                if m[0] not in d:
+                    d[m[0]] = m
+    for key, d in tiles.items():
+        by_kind = {}
+        for r in d.values():
             a = r[3].get('amenity') or r[3].get('shop')
-            rad = RAD.get(a, 5)
-            gi, gj = int(r[1] / C), int(r[2] / C)
-            me = src_of(r[0])
-            dup = False
-            for kind in SAME.get(a, (a,)):
-                for i in (-1, 0, 1):
-                    for j in (-1, 0, 1):
-                        for la, lo, s2 in grid.get((kind, gi + i, gj + j), ()):
-                            dist = math.hypot((la - r[1]) * 111320, (lo - r[2]) * 111320 * math.cos(math.radians(r[1])))
-                            if (s2 != me and dist <= rad) or dist < 0.5:
-                                dup = True
-                                break
-                        if dup: break
-                    if dup: break
-                if dup: break
-            if dup and rank(r) > 0:
-                d.pop(r[0])
-                dropped += 1
-            else:
-                grid.setdefault((a, gi, gj), []).append((r[1], r[2], me))
+            if a:
+                by_kind.setdefault(FAMILY.get(a, a), []).append(r)
+        for kind, rows in by_kind.items():
+            if len(rows) < 2:
+                continue
+            grid = {}
+            for r in rows:
+                grid.setdefault((int(r[1] / C), int(r[2] / C)), []).append(r)
+            taken = set()
+            # spots: around each place in turn (best source first), every free place of this kind within R_SPOT
+            for r in sorted(rows, key=lambda r: (rank(r), r[0])):
+                if r[0] in taken:
+                    continue
+                gi, gj = int(r[1] / C), int(r[2] / C)
+                coslat = math.cos(math.radians(r[1]))
+                spot = [x for i in (-1, 0, 1) for j in (-1, 0, 1) for x in grid.get((gi + i, gj + j), ())
+                        if x[0] not in taken and math.hypot((x[1] - r[1]) * 111320, (x[2] - r[2]) * 111320 * coslat) <= R_SPOT]
+                for x in spot:
+                    taken.add(x[0])
+                srcs = {}
+                for x in spot:
+                    srcs.setdefault(src_of(x[0]), []).append(x)
+                if len(srcs) > 1:
+                    all_dated = all(any(date_of(x) for x in xs) for xs in srcs.values())
+                    def score(item):
+                        xs = item[1]
+                        # racks there: a point with a capacity counts as capacity / 2 stands (2 bikes per stand)
+                        n = sum(max(1, int(x[3]['capacity']) // 2) if str(x[3].get('capacity', '')).isdigit() else 1 for x in xs)
+                        return (max(date_of(x) for x in xs) if all_dated else '', n, -min(rank(x) for x in xs))
+                    win = max(srcs.items(), key=score)[0]
+                    for s_, xs in srcs.items():
+                        if s_ != win:
+                            for x in xs:
+                                d.pop(x[0], None)
+                                dropped += 1
+                    spot = srcs[win]
+                if kind != 'bicycle_parking':
+                    # the same place twice in one source (exact copies) goes
+                    seen_xy = set()
+                    for x in sorted(spot, key=lambda x: x[0]):
+                        xy = (round(x[1], 5), round(x[2], 5))
+                        if xy in seen_xy:
+                            d.pop(x[0], None)
+                            dropped += 1
+                        seen_xy.add(xy)
+                    continue
+                if len(spot) < 2:
+                    continue
+                # one pin for the racks of this spot
+                best = max(spot, key=lambda x: (len(x[3]), -rank(x), x[0]))
+                t = dict(best[3])
+                caps = [int(x[3]['capacity']) for x in spot if str(x[3].get('capacity', '')).isdigit()]
+                if caps:
+                    t['capacity'] = str(sum(caps))
+                if any(x[3].get('covered') == 'yes' for x in spot):
+                    t['covered'] = 'yes'
+                    if any(x[3].get('bicycle_parking') in ('shed', 'building', 'lockers') for x in spot):
+                        t['bicycle_parking'] = next(x[3]['bicycle_parking'] for x in spot if x[3].get('bicycle_parking') in ('shed', 'building', 'lockers'))
+                for f in ('name', 'operator', 'fee', 'access', 'lit', 'image', 'check_date'):
+                    if not t.get(f):
+                        v = next((x[3].get(f) for x in spot if x[3].get(f)), None)
+                        if v:
+                            t[f] = v
+                t['rack_count'] = str(len(spot))
+                t['group'] = [[round(x[1], 6), round(x[2], 6)] for x in spot]
+                t['_m'] = [list(x) for x in spot]  # the racks as they came, to group again in the next build
+                lat = round(sum(x[1] for x in spot) / len(spot), 6)
+                lon = round(sum(x[2] for x in spot) / len(spot), 6)
+                for x in spot:
+                    d.pop(x[0], None)
+                d[best[0]] = [best[0], lat, lon, t] + list(best[4:])
+                grouped += len(spot) - 1
+    print(f'same spot from several sources, older / smaller source dropped: {dropped} · racks joined into group pins: {grouped}',
+          flush=True)
+    dropped += grouped
     # the same shop / rental from OpenStreetMap, Overture and Foursquare: same name within ~150 m, kept once
     import unicodedata
     def norm(n):
