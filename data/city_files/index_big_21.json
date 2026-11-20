@@ -1,0 +1,1272 @@
+{
+ "Arlington TX": {
+  "files": [
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/3/city-council/documents/city-council-districts-map.pdf",
+    "text": "Detailed District Map (PDF, 887KB)",
+    "file": "data/city_files/Arlington_TX/eee41d_city-council-districts-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/2/city-secretary/documents/city-code-of-ordinances/garage-sales-chapter.pdf",
+    "text": "Read the Garage Sales Ordinance (PDF, 2MB)",
+    "file": "data/city_files/Arlington_TX/7aef68_garage-sales-chapter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/1/city-secretary/documents/city-code-of-ordinances/cemetery-chapter.pdf",
+    "text": "Arlington Cemetery Ordinance (PDF, 3MB)",
+    "file": "data/city_files/Arlington_TX/210079_cemetery-chapter.pdf",
+    "rows": 5,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/1/public-works/documents/pavingdrainagewatersewer-details/pavingdrainage/paving/street-trech-repair/permanent-backfill-and-repair.pdf",
+    "text": "Permanent Backfill and Repair (PDF) (PDF, 119KB)",
+    "file": "data/city_files/Arlington_TX/b89e35_permanent-backfill-and-repair.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/1/public-works/documents/pavingdrainagewatersewer-details/pavingdrainage/paving/street-trech-repair/temporary-pavement-repair.pdf",
+    "text": "Temporary Pavement Repair (PDF) (PDF, 47KB)",
+    "file": "data/city_files/Arlington_TX/44ed98_temporary-pavement-repair.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/1/public-works/documents/pavingdrainagewatersewer-details/pavingdrainage/paving/pavement-marking/transition-from-two-lane-undivided-to-four-lane-divided.pdf",
+    "text": "Transition From Two Lane Undivided to Four Lane Divided (PDF) (PDF, 39KB)",
+    "file": "data/city_files/Arlington_TX/64b6d9_transition-from-two-lane-undivided-to-four-lane-divided.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/8/city-secretary/documents/city-code-of-ordinances/unified-development-code-chapter.pdf",
+    "text": "Table 5.4-2, Off-Street Parking Schedule B (PDF, 20MB)",
+    "file": "data/city_files/Arlington_TX/6db297_unified-development-code-chapter.pdf",
+    "rows": 879,
+    "bike_rows": 103
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/2/code-compliance/documents/accessible-parking.pdf",
+    "text": "National Network Information, Guidance and Training on the American with Disabilities Act (ADA) (PDF, 393KB)",
+    "file": "data/city_files/Arlington_TX/7142bf_accessible-parking.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/3/city-secretary/documents/elections/temporary-election-sign-restrictions-at-city-facility-polling-sites-and-maps.pdf",
+    "text": "Temporary Election Sign Restrictions at City Facility Polling Sites and Maps (PDF, 7MB)",
+    "file": "data/city_files/Arlington_TX/e92347_temporary-election-sign-restrictions-at-city-facility-polling-sites-an",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tarrantcountytx.gov/content/dam/main/elections/2026/1126/locations/1126_EV_Locations_Map.pdf",
+    "text": "Early Voting Map",
+    "file": "data/city_files/Arlington_TX/e3f7e6_1126_EV_Locations_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tarrantcountytx.gov/content/dam/main/elections/2026/1126/locations/1126_Vote_Center_Map.pdf",
+    "text": "Election Day Vote Center Map",
+    "file": "data/city_files/Arlington_TX/431ce1_1126_Vote_Center_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tarrantcountytx.gov/content/dam/main/elections/2026/1126/reports/Provisional_Counts_Report.pdf",
+    "text": "Provisional Ballot Counts by Entity",
+    "file": "data/city_files/Arlington_TX/a19172_Provisional_Counts_Report.pdf",
+    "rows": 41,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/5/public-works/documents/street-condition-map.pdf",
+    "text": "Street Condition Map (PDF, 2MB)",
+    "file": "data/city_files/Arlington_TX/218ba7_street-condition-map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/3/public-works/documents/2025-street-maintenance-projects.pdf",
+    "text": "2025 Street Maintenance Projects Location Map (PDF, 3MB)",
+    "file": "data/city_files/Arlington_TX/6ad686_2025-street-maintenance-projects.pdf",
+    "rows": 115,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/5/public-works/documents/2026-street-maintenance-projects.pdf",
+    "text": "2026 Street Maintenance Projects Location Map (PDF, 7MB)",
+    "file": "data/city_files/Arlington_TX/dc5d2c_2026-street-maintenance-projects.pdf",
+    "rows": 64,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/2/public-works/documents/approved-truck-route.pdf",
+    "text": "Approved Truck Route.pdf (PDF, 2MB)",
+    "file": "data/city_files/Arlington_TX/767b66_approved-truck-route.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.arlingtontx.gov/files/assets/city/v/3/parks-amp-recreation/documents/parks/sheri-capehart-nature-preserve-trail-map.pdf",
+    "text": "Sheri Capehart Nature Preserve Trail Map (2025) (PDF, 459KB)",
+    "file": "data/city_files/Arlington_TX/3d8706_sheri-capehart-nature-preserve-trail-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.arlingtontx.gov/Government/Data-Information/Open-Data": "Open Data",
+   "https://www.arlingtontx.gov/Government/Data-Information/Data-Information-Directory/Open-Data": "Open Data",
+   "https://www.arlingtontx.gov/Government/Data-Information/Data-Information-Directory/Open-Data/Council-Legislative-Documents": "Council & Legislative Documents",
+   "https://www.arlingtontx.gov/Government/Data-Information/Data-Information-Directory/Open-Data/City-Services-Satisfaction-Surveys": "City Services Satisfaction Surveys",
+   "https://www.arlingtontx.gov/Government/Data-Information/Data-Information-Directory/Open-Data/Plat-Search": "Plat Search",
+   "https://opendata.arlingtontx.gov/": "Open Data Center.",
+   "https://arlingtontx.maps.arcgis.com/home/webmap/viewer.html?webmap=12f65dc4422b41a5bed1cbafd5df08d3&": "larger Garage Sale Permit map",
+   "https://experience.arcgis.com/experience/b194e38bd41d41d58acb70b50b327e28": "Project Tracker Map",
+   "https://experience.arcgis.com/experience/dc8b2169f0c346219ee6453e3bfdf256": "Street Condition Map",
+   "https://experience.arcgis.com/experience/076da977b724420388031223258b6105/page/Bond-Program-Overview/": "Bond Tracker Dashboard",
+   "https://experience.arcgis.com/experience/eb182e20b4c64d8da0d7b9a3e138ab29": "view the Arlington Cemetery Map here",
+   "mailto:opendatamanager@arlingtontx.gov": "opendatamanager@arlingtontx.gov"
+  }
+ },
+ "Baton Rouge LA": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/78a5394c4530441785d2c838dded398a": "brla.gov/opendataday/registration",
+   "https://www.brla.gov/DocumentCenter/View/6350/Resolution-53275-Open-Data-Policy": "open data policy",
+   "file:///C%3A/Users/Alyssa%20Panepinto/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/X2TF1W4F/data.brla.gov": "Open Data BR",
+   "https://ebrgis.maps.arcgis.com/home/index.html": "EBRGIS",
+   "https://brla.gov/brla.gov/opendatareport": "here",
+   "https://data-ebrgis.opendata.arcgis.com/pages/open-data-policy-report-2023": "Open Data Policy Report 2023",
+   "https://brla.gov/brla.gov/opendataday": "brla.gov/opendataday",
+   "https://data.brla.gov/": "Open Data BR",
+   "https://brla.gov/opendatareport": "2021 Open Data Policy Report",
+   "https://ebrgis.maps.arcgis.com/apps/dashboards/fcaa7f6750484e6b99155c8b1bb92668": "brla.gov/drainageprojects",
+   "http://www.brla.gov/opendataday": "brla.gov/opendataday",
+   "https://www.brla.gov/DocumentCenter/View/3388/Open-Data-Policy-Resolution?bidId=": "open data policy"
+  }
+ },
+ "Chicago": {
+  "files": [],
+  "portals": {}
+ },
+ "Wake County": {
+  "files": [
+   {
+    "url": "https://maps.wake.gov/imaps/iMAPShelpPDF.pdf",
+    "text": "iMAPS Help",
+    "file": "data/city_files/Wake_County/390123_iMAPShelpPDF.pdf",
+    "rows": 56,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://s3.us-west-1.amazonaws.com/wakegov.com.if-us-west-1/s3fs-public/documents/2022-03/WCSeptember2018_LargeMapUpdate.pdf",
+    "text": "Greenways System Plan Map",
+    "file": "data/city_files/Wake_County/565316_WCSeptember2018_LargeMapUpdate.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.us-west-1.amazonaws.com/wakegov.com.if-us-west-1/s3fs-public/documents/2022-03/Wake_Greenway_Appendix_Sept%202018.pdf",
+    "text": "Greenways Master Plan Appendix",
+    "file": "data/city_files/Wake_County/79d95c_Wake_Greenway_Appendix_Sept_202018.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.us-west-1.amazonaws.com/wakegov.com.if-us-west-1/s3fs-public/documents/2020-10/NCSU STEM 5 Day Curriculum Historic Yates Mill County Park.pdf",
+    "text": "download them here",
+    "file": "data/city_files/Wake_County/9d31da_NCSU_STEM_5_Day_Curriculum_Historic_Yates_Mill_County_Park.pdf",
+    "rows": 37,
+    "bike_rows": 8
+   }
+  ],
+  "portals": {
+   "https://data.raleighnc.gov/": "Link to City of Raleigh Open Data site",
+   "https://data.wake.gov/": "Open Data Site",
+   "https://survey123.arcgis.com/share/433f05ff71ed4db5b8fc2c4aa306b12d": "Feedback Form",
+   "https://data.wake.gov/search/": "Open Data Catalog",
+   "https://wake.maps.arcgis.com/apps/instant/lookup/index.html?appid=a52d5070535f4066b4ea67b17365ce08": "Electoral Districts Locator App",
+   "https://wake.maps.arcgis.com/apps/instant/lookup/index.html?appid=742ce1fd645f4e3d9e3f3b8069d601f6": "Polling Place Locator App",
+   "https://wake.maps.arcgis.com/apps/instant/media/index.html?appid=cc847d0865434fb29caf553237612bb3": "Well Water Testing Area Map",
+   "https://experience.arcgis.com/experience/c0cb4d736e6848fc9e0d5d1c60ce035f": "Fire Protection Rating Lookup App",
+   "https://storymaps.arcgis.com/stories/0a97b8722c88438291e421f28b367b5f": "Green Stormwater Infrastructure StoryMap",
+   "https://experience.arcgis.com/experience/e4acc8f4c25748f88d73157a4847cbbb": "Find Your Inspector App",
+   "https://experience.arcgis.com/experience/23f757955e284485a73fa18db93821e4": "Out-of-School Time (OST) Programs Map",
+   "https://experience.arcgis.com/experience/8a87ca69632e46f2b62b2d1604d4c036": "Panhandling App"
+  }
+ },
+ "Fort Bend County": {
+  "files": [
+   {
+    "url": "https://www.fortbendcountytx.gov/sites/default/files/document-central/document-central/historical-commission-documents/Flyer-for-website-2026.pdf",
+    "text": "Essay Contest [PDF]",
+    "file": "data/city_files/Fort_Bend_County/a5ed04_Flyer-for-website-2026.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fortbendcountytx.gov/sites/default/files/document-central/document-central/elections-documents/maps/VoterStreetGuideCover.pdf",
+    "text": "Voter Street Guide Cover",
+    "file": "data/city_files/Fort_Bend_County/3fc9fd_VoterStreetGuideCover.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fortbendcountytx.gov/sites/default/files/document-central/document-central/elections-documents/maps/VoterStreetGuideMunicipalC.pdf",
+    "text": "Voter Street Guide Municipal Codes",
+    "file": "data/city_files/Fort_Bend_County/eb5949_VoterStreetGuideMunicipalC.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortbendcountytx.gov/sites/default/files/document-central/document-central/elections-documents/voter-registration-information/Fort-Bend-County-2025-Federal-Congressional-District-Map.pdf",
+    "text": "Federal Congressional District Map",
+    "file": "data/city_files/Fort_Bend_County/b05879_Fort-Bend-County-2025-Federal-Congressional-District-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortbendcountytx.gov/sites/default/files/document-central/document-central/elections-documents/voter-registration-information/Fort-Bend-County-2025-State-Board-of-Education-District-Map.pdf",
+    "text": "State Board of Education District Map",
+    "file": "data/city_files/Fort_Bend_County/36db38_Fort-Bend-County-2025-State-Board-of-Education-District-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortbendcountytx.gov/sites/default/files/document-central/document-central/elections-documents/voter-registration-information/Fort-Bend-County-2025-State-Representative-District-Map.pdf",
+    "text": "State Representative District Map",
+    "file": "data/city_files/Fort_Bend_County/097dfd_Fort-Bend-County-2025-State-Representative-District-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fortbendcountytx.gov/sites/default/files/document-central/document-central/elections-documents/voter-registration-information/Fort-Bend-County-2025-State-Senate-District-Map.pdf",
+    "text": "State Senate District Map",
+    "file": "data/city_files/Fort_Bend_County/5ef3a3_Fort-Bend-County-2025-State-Senate-District-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11031002BS1.pdf",
+    "text": "1002BS1",
+    "file": "data/city_files/Fort_Bend_County/7cbd99_11031002BS1.pdf",
+    "rows": 123,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11032002BS12.pdf",
+    "text": "2002BS12",
+    "file": "data/city_files/Fort_Bend_County/a59537_11032002BS12.pdf",
+    "rows": 118,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11033006BS24.pdf",
+    "text": "3006BS24",
+    "file": "data/city_files/Fort_Bend_County/dac1ec_11033006BS24.pdf",
+    "rows": 116,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11034001BS44.pdf",
+    "text": "4001BS44",
+    "file": "data/city_files/Fort_Bend_County/710f0b_11034001BS44.pdf",
+    "rows": 115,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11031003BS2.pdf",
+    "text": "1003BS2",
+    "file": "data/city_files/Fort_Bend_County/ee5911_11031003BS2.pdf",
+    "rows": 123,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11032003BS13.pdf",
+    "text": "2003BS13",
+    "file": "data/city_files/Fort_Bend_County/97a90b_11032003BS13.pdf",
+    "rows": 117,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11033007BS24.pdf",
+    "text": "3007BS24",
+    "file": "data/city_files/Fort_Bend_County/e429b5_11033007BS24.pdf",
+    "rows": 116,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11034026BS45.pdf",
+    "text": "4026BS45",
+    "file": "data/city_files/Fort_Bend_County/34da24_11034026BS45.pdf",
+    "rows": 123,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11031004BS3.pdf",
+    "text": "1004BS3",
+    "file": "data/city_files/Fort_Bend_County/efd109_11031004BS3.pdf",
+    "rows": 123,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11032017BS14.pdf",
+    "text": "2017BS14",
+    "file": "data/city_files/Fort_Bend_County/f64078_11032017BS14.pdf",
+    "rows": 120,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11033008BS24.pdf",
+    "text": "3008BS24",
+    "file": "data/city_files/Fort_Bend_County/b7b7c3_11033008BS24.pdf",
+    "rows": 116,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11034032BS46.pdf",
+    "text": "4032BS46",
+    "file": "data/city_files/Fort_Bend_County/0e3395_11034032BS46.pdf",
+    "rows": 123,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11031004BS4.pdf",
+    "text": "1004BS4",
+    "file": "data/city_files/Fort_Bend_County/9ecb4f_11031004BS4.pdf",
+    "rows": 126,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11032018BS15.pdf",
+    "text": "2018BS15",
+    "file": "data/city_files/Fort_Bend_County/08208c_11032018BS15.pdf",
+    "rows": 123,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11033009BS25.pdf",
+    "text": "3009BS25",
+    "file": "data/city_files/Fort_Bend_County/4e0f5f_11033009BS25.pdf",
+    "rows": 132,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11034032BS47.pdf",
+    "text": "4032BS47",
+    "file": "data/city_files/Fort_Bend_County/502438_11034032BS47.pdf",
+    "rows": 127,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11031004BS5.pdf",
+    "text": "1004BS5",
+    "file": "data/city_files/Fort_Bend_County/7657ed_11031004BS5.pdf",
+    "rows": 126,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sampleballots.fortbendcountytx.gov/Congressional-Election/11032021BS16.pdf",
+    "text": "2021BS16",
+    "file": "data/city_files/Fort_Bend_County/1ad6d0_11032021BS16.pdf",
+    "rows": 123,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/22a9001aeef84acab31a4d15f37c2e2b": "Unincorporated Map",
+   "https://survey123.arcgis.com/share/0262fcca17874d998f185575816ba85b": "Submit an ADA complaint or Accommodation Form",
+   "https://experience.arcgis.com/experience/29fc1d7965574316a9e378ffd9734a8c": "Locate My Representative",
+   "https://experience.arcgis.com/experience/b22f222e677e4a349f5d154f60ced8bd": "FBC Broadband Unserved/Underserved Locations",
+   "http://www.statutes.legis.state.tx.us/Docs/EL/htm/EL.18.htm": "IT IS A CRIMINAL OFFENSE TO USE VOTER REGISTRATION INFORMATION IN CONNECTION WITH ADVERTISING OR PROMOTING COMMERCIAL PR",
+   "https://gis.fbctx.gov/": "GIS",
+   "https://experience.arcgis.com/experience/ca30668087cd407a83ad6da187567b3c/?data_filter=dataSource_7-19cde85cb87-layer-4:COMM_PRECI%3D%271%27,dataSource_7-19cde856c3b-layer-3:NAME%3D%271%27": "Pcnt 1 Map",
+   "https://experience.arcgis.com/experience/ca30668087cd407a83ad6da187567b3c/?data_filter=dataSource_7-19cde85cb87-layer-4:COMM_PRECI%3D%272%27,dataSource_7-19cde856c3b-layer-3:NAME%3D%272%27": "Pcnt 2 Map",
+   "https://experience.arcgis.com/experience/ca30668087cd407a83ad6da187567b3c/?data_filter=dataSource_7-19cde85cb87-layer-4:COMM_PRECI%3D%273%27,dataSource_7-19cde856c3b-layer-3:NAME%3D%273%27": "Pcnt 3 Map",
+   "https://experience.arcgis.com/experience/ca30668087cd407a83ad6da187567b3c/?data_filter=dataSource_7-19cde85cb87-layer-4:COMM_PRECI%3D%274%27,dataSource_7-19cde856c3b-layer-3:NAME%3D%274%27": "Pcnt 4 Map",
+   "https://fbcgis.maps.arcgis.com/apps/dashboards/96f1ef67328f4f6fa12e0ca8c48b51e3": "View the Map",
+   "https://experience.arcgis.com/experience/6065493afe2c480fa213e1f8d4cc1f71": "https://experience.arcgis.com/experience/6065493afe2c480fa213e1f8d4cc1f71"
+  }
+ },
+ "Ocean County": {
+  "files": [
+   {
+    "url": "http://www.co.ocean.nj.us/WebContentFiles/8208fb95-adbd-4c33-9e97-55a1ec64e72f.pdf",
+    "text": "View PDF map of routes",
+    "file": "data/city_files/Ocean_County/314197_8208fb95-adbd-4c33-9e97-55a1ec64e72f.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//2_regional_loc_map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/3b5792_2_regional_loc_map.pdf",
+    "rows": 35,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//3_hwy_system_map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/5561cc_3_hwy_system_map.pdf",
+    "rows": 23,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//4_govt_complex_map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/f0a59f_4_govt_complex_map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//5_one_stop_map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/fda748_5_one_stop_map.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//6_southern_complex_map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/4d4379_6_southern_complex_map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//07_Pop_Density_Map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/4d78af_07_Pop_Density_Map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//27_SPSUB_Approvals_Map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/17fd0d_27_SPSUB_Approvals_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//32_Adult_Comm_Map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/e4409b_32_Adult_Comm_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//73_Floodplain_Map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/d14733_73_Floodplain_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//74_Pinelands_cafra_Map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/a71e93_74_Pinelands_cafra_Map.pdf",
+    "rows": 36,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//78_Open_Space_Map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/c87692_78_Open_Space_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.ocean.nj.us//WebContentFiles//81_OCParks_Map.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Ocean_County/e7a40c_81_OCParks_Map.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "http://www.co.ocean.nj.us/WebContentFiles/4b4a0d63-0449-41bc-a62a-27dad260438f.pdf",
+    "text": "OC 6 (Little Egg Harbor)",
+    "file": "data/city_files/Ocean_County/f54c76_4b4a0d63-0449-41bc-a62a-27dad260438f.pdf",
+    "rows": 14,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.co.ocean.nj.us/WebContentFiles/361fa609-c5ab-4ea1-a972-b5c3194473e2.pdf",
+    "text": "Waretown Shopper's Loop (Upon Request Only)",
+    "file": "data/city_files/Ocean_County/04ad71_361fa609-c5ab-4ea1-a972-b5c3194473e2.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.co.ocean.nj.us/WebContentFiles/2d6c4413-ae40-4dcc-af0f-eb3cf0096c15.pdf",
+    "text": "Barnegat Shoppers Loop",
+    "file": "data/city_files/Ocean_County/533b40_2d6c4413-ae40-4dcc-af0f-eb3cf0096c15.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.co.ocean.nj.us/WebContentFiles/00d0cfce-ca65-4111-9c8e-9a0f7afcf1f0.pdf",
+    "text": "Jackson Shoppers Loop Schedule",
+    "file": "data/city_files/Ocean_County/9d1746_00d0cfce-ca65-4111-9c8e-9a0f7afcf1f0.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.co.ocean.nj.us/WebContentFiles/4340ca8a-5e10-4b6b-88b2-4e108b6fa52e.pdf",
+    "text": "Toms River North Loop Schedule",
+    "file": "data/city_files/Ocean_County/fc7bc3_4340ca8a-5e10-4b6b-88b2-4e108b6fa52e.pdf",
+    "rows": 13,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.co.ocean.nj.us/WebContentFiles/f0e95637-722f-4204-abcd-e794c4730b70.pdf",
+    "text": "Plumsted Shoppers Route Schedule",
+    "file": "data/city_files/Ocean_County/4cf59a_f0e95637-722f-4204-abcd-e794c4730b70.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.co.ocean.nj.us/WebContentFiles/f40cba7c-0800-47e2-b279-6a288fc08623.pdf",
+    "text": "Leisure Village Bus Route Schedule",
+    "file": "data/city_files/Ocean_County/e8bfcc_f40cba7c-0800-47e2-b279-6a288fc08623.pdf",
+    "rows": 20,
+    "bike_rows": 6
+   }
+  ],
+  "portals": {
+   "https://ocgis-oceancountygis.hub.arcgis.com/": "ocgis-oceancountygis.hub.arcgis.com/",
+   "https://planning-department-oceancountygis.hub.arcgis.com/": "Map Gallery",
+   "https://data.census.gov/cedsci": "US Census Data Center"
+  }
+ },
+ "Passaic County": {
+  "files": [],
+  "portals": {}
+ },
+ "Santa Barbara County": {
+  "files": [],
+  "portals": {}
+ },
+ "Allen County": {
+  "files": [],
+  "portals": {}
+ },
+ "Henrico County": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/87cd253f49cf4b80b485a3ab0dd3b6a8": "Henrico's Annual Report"
+  }
+ },
+ "Dutchess County": {
+  "files": [],
+  "portals": {
+   "https://gis.dutchessny.gov/parks-and-trails/": "Parks & Trails",
+   "https://gis.dutchessny.gov/parcelaccess/": "ParcelAccess"
+  }
+ },
+ "Madison County": {
+  "files": [],
+  "portals": {
+   "https://gis.co.madison.il.us/webappspublic/madison%20county%20gis%20viewer/index.html": "Map-GIS Viewer",
+   "https://experience.arcgis.com/experience/5d8b6bc5f82c4a7c97702ebd69366de3": "GIS & Mapping"
+  }
+ },
+ "Brazos County": {
+  "files": [],
+  "portals": {}
+ },
+ "Des Moines": {
+  "files": [
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/Greater-Des-Moines-Trails-Map_e15dd4e7-1429-453d-ae53-589725afe611.pdf",
+    "text": "Greater Des Moines Trails Map",
+    "file": "data/city_files/Des_Moines/ffe595_Greater-Des-Moines-Trails-Map_e15dd4e7-1429-453d-ae53-589725afe611.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/Downtown-Trails-Map_54082d05-b49c-4102-afa8-feeccf89199b.pdf",
+    "text": "Downtown Trails Map",
+    "file": "data/city_files/Des_Moines/7b390c_Downtown-Trails-Map_54082d05-b49c-4102-afa8-feeccf89199b.pdf",
+    "rows": 27,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/Central-Iowa-Trails-Map_17c2bdf3-02f6-49d7-82da-7bb9e576ec06.pdf",
+    "text": "Central Iowa Trails",
+    "file": "data/city_files/Des_Moines/5f83a7_Central-Iowa-Trails-Map_17c2bdf3-02f6-49d7-82da-7bb9e576ec06.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/Greater-Des-Moines_Central-Trails-Map_59057172-ffa1-472b-82a9-9a56560ee582.pdf",
+    "text": "Greater Des Moines (Central) Trails Map",
+    "file": "data/city_files/Des_Moines/f8ffbd_Greater-Des-Moines_Central-Trails-Map_59057172-ffa1-472b-82a9-9a56560e",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/Greater-Des-Moines_Northeast-Trails-Map_831a8e26-3b03-4881-9a04-63ea908bb9f8.pdf",
+    "text": "Greater Des Moines (Northeast) Trails Map",
+    "file": "data/city_files/Des_Moines/494507_Greater-Des-Moines_Northeast-Trails-Map_831a8e26-3b03-4881-9a04-63ea90",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/Greater-Des-Moines_Northwest-Trails-Map_38e2d867-2883-47fd-9522-43126843bfa3.pdf",
+    "text": "Greater Des Moines (Northwest) Trails Map",
+    "file": "data/city_files/Des_Moines/4e6b15_Greater-Des-Moines_Northwest-Trails-Map_38e2d867-2883-47fd-9522-431268",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/Greater-Des-Moines_Southeast-Trails-Map_c0870944-157a-401b-bb60-c0e3427a6e82.pdf",
+    "text": "Greater Des Moines (Southeast) Trails Map",
+    "file": "data/city_files/Des_Moines/8a0220_Greater-Des-Moines_Southeast-Trails-Map_c0870944-157a-401b-bb60-c0e342",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/Greater-Des-Moines_Southwest-Trails-Map_ae5fadcf-4957-432b-a2fa-531cfc3e0886.pdf",
+    "text": "Greater Des Moines (Southwest) Trails Map",
+    "file": "data/city_files/Des_Moines/8f9f14_Greater-Des-Moines_Southwest-Trails-Map_ae5fadcf-4957-432b-a2fa-531cfc",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/PrincipalRiverwalk_ca8566ed-a844-4624-a217-c146a3a61c64.pdf",
+    "text": "Download the PDF of this route",
+    "file": "data/city_files/Des_Moines/c684b4_PrincipalRiverwalk_ca8566ed-a844-4624-a217-c146a3a61c64.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/PublicArtInTheCity_a5f9d1ea-d98c-48f5-9b20-ab2687f09551.pdf",
+    "text": "Download the PDF of this route",
+    "file": "data/city_files/Des_Moines/9f84bb_PublicArtInTheCity_a5f9d1ea-d98c-48f5-9b20-ab2687f09551.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/DowntownArchitecture_597fbfbe-0504-4b81-811d-c67a0a0d6a88.pdf",
+    "text": "Download the PDF of this route",
+    "file": "data/city_files/Des_Moines/3572e2_DowntownArchitecture_597fbfbe-0504-4b81-811d-c67a0a0d6a88.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/ToShopGoEast_1df78dc6-6a17-4b76-aca9-453b61b970e3.pdf",
+    "text": "Download the PDF of this route",
+    "file": "data/city_files/Des_Moines/3171e3_ToShopGoEast_1df78dc6-6a17-4b76-aca9-453b61b970e3.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/DebsGardenGait_d2d6cb84-c3c8-4852-a972-e96740a5280f.pdf",
+    "text": "Download the PDF of this route",
+    "file": "data/city_files/Des_Moines/75db5f_DebsGardenGait_d2d6cb84-c3c8-4852-a972-e96740a5280f.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/MotherIowaandCapitol_07efa3ab-06e6-44e8-9448-4ba15cf70679.pdf",
+    "text": "Download the PDF of this route",
+    "file": "data/city_files/Des_Moines/adca4a_MotherIowaandCapitol_07efa3ab-06e6-44e8-9448-4ba15cf70679.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/PintSizeTour_5fb5c60d-2e78-4f0d-9913-7f168fc79479.pdf",
+    "text": "Download the PDF of this route",
+    "file": "data/city_files/Des_Moines/f2a9e2_PintSizeTour_5fb5c60d-2e78-4f0d-9913-7f168fc79479.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/DesMoinesBehindHandlebars_6a320bff-ba79-4f89-ae5a-3ea12e0e326c.pdf",
+    "text": "Download the PDF of this route",
+    "file": "data/city_files/Des_Moines/31c2ed_DesMoinesBehindHandlebars_6a320bff-ba79-4f89-ae5a-3ea12e0e326c.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/HistorialandHillyNeighborhoods_61d16f02-f66c-4dc7-ad8c-132fd7cfb51e.pdf",
+    "text": "Download the PDF of this route",
+    "file": "data/city_files/Des_Moines/7a2ded_HistorialandHillyNeighborhoods_61d16f02-f66c-4dc7-ad8c-132fd7cfb51e.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/ChucksUrban18-Miler_d2582d63-f8f6-4e0f-9c7d-8c078d7970e1.pdf",
+    "text": "Download the PDF of this route",
+    "file": "data/city_files/Des_Moines/79d97d_ChucksUrban18-Miler_d2582d63-f8f6-4e0f-9c7d-8c078d7970e1.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/2025_Map_Pad_Downtown_Des_Moines_Map_11_05_25_PRINT_b874220d-72a1-4f54-bd59-49709fe3d743.pdf",
+    "text": "Downtown Des Moines",
+    "file": "data/city_files/Des_Moines/86fd70_2025_Map_Pad_Downtown_Des_Moines_Map_11_05_25_PRINT_b874220d-72a1-4f54",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/Downtown_Des_Moines_Skywalk_Navigation_Map_2_4_2026_851d2648-56ea-4d60-9c08-5c9c6e0ff42a.pdf",
+    "text": "Skywalk Navigation",
+    "file": "data/city_files/Des_Moines/5af15b_Downtown_Des_Moines_Skywalk_Navigation_Map_2_4_2026_851d2648-56ea-4d60",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/Downtown_Des_Moines_Skywalk_Navigation_Map_With_Accessibility_Points_4_17_24_4750fcf6-4386-49d4-92d3-5a0b1de0cb0e.pdf",
+    "text": "Click here to print skywalk map",
+    "file": "data/city_files/Des_Moines/77256d_Downtown_Des_Moines_Skywalk_Navigation_Map_With_Accessibility_Points_4",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/2025_Map_Pad_Greater_Des_Moines_ADs_11_05_25_PRINT_ba06bdd0-f421-4231-9433-19cc98a7cd77.pdf",
+    "text": "Greater Des Moines",
+    "file": "data/city_files/Des_Moines/d36058_2025_Map_Pad_Greater_Des_Moines_ADs_11_05_25_PRINT_ba06bdd0-f421-4231-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/clients/desmoines/Map_Restaurants_Amenities_IEC_4_17_26_7c3089ca-e190-4282-86eb-0979cd15bc63.pdf",
+    "text": "Restaurants Near the Iowa Events Center",
+    "file": "data/city_files/Des_Moines/3ec156_Map_Restaurants_Amenities_IEC_4_17_26_7c3089ca-e190-4282-86eb-0979cd15",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/FF_Downtown_Running_Route_2_miles_210ac3c4-75c5-4ad9-a502-ef95c93a2e71.pdf",
+    "text": "2-Mile Running Route",
+    "file": "data/city_files/Des_Moines/6ad2dc_FF_Downtown_Running_Route_2_miles_210ac3c4-75c5-4ad9-a502-ef95c93a2e71",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-desmoines/image/upload/v1/cms_resources/clients/desmoines/FF_Downtown_Running_Route_3_miles_c7e996e9-2d36-4e50-8efc-20e3cbc53a2b.pdf",
+    "text": "3-Mile Running Route",
+    "file": "data/city_files/Des_Moines/2e5fe3_FF_Downtown_Running_Route_3_miles_c7e996e9-2d36-4e50-8efc-20e3cbc53a2b",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://dmampo.maps.arcgis.com/apps/webappviewer/index.html?id=c48776f60395490eb3029f5b29fc7b88": "Greater Des Moines Trail Maps"
+  }
+ },
+ "Montgomery": {
+  "files": [],
+  "portals": {}
+ },
+ "Santa Rosa County": {
+  "files": [],
+  "portals": {
+   "http://santarosagis.maps.arcgis.com/apps/InformationLookup/index.html?appid=2df25688578e4e1087bdc4c00ad6a030": "View Evacuation Zone Information",
+   "https://storymaps.arcgis.com/stories/acd06166a0da47afafcb78ef4f860085": "Dynamic District Story Map (Click Here)",
+   "http://santarosagis.maps.arcgis.com/apps/webappviewer/index.html?id=9043cd20e3f8457c88950742e1751224": "FDOT Active Construction and Future Projects",
+   "https://santarosagis.maps.arcgis.com/apps/instant/lookup/index.html?appid=9334660b81a34b0bbb179e343ff4a2f1": "Fire District",
+   "https://survey123.arcgis.com/share/82e9d5cd0be54adcab829ae98e77550c?portalUrl=https://santarosagis.maps.arcgis.com": "Report/Request Services from Mosquito Control",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=3d5d23dd70d7420295d9b1d8e5f35d21&extent=-87.9602,30.1576,-85.9319,31.1347": "Current Zoning Board Cases",
+   "https://storymaps.arcgis.com/stories/2a83ea967f9e4668972025d3e585c97e": "Flood Zones vs. Surge Zones vs. Evacuation Zones",
+   "https://santarosagis.maps.arcgis.com/apps/webappviewer/index.html?id=a8140cce041a4ef0bc89c138d3c0289f": "Navarre Beach Information",
+   "http://santarosagis.maps.arcgis.com/apps/webappviewer/index.html?id=d133cc1e306b48f584b54389e99b37d8": "Subdivision Information",
+   "https://santa-rosa-county-florida-open-data-santarosagis.hub.arcgis.com/": "GIS Open Data Site",
+   "https://tt-emi.maps.arcgis.com/apps/dashboards/dc8ae34301e243c890d776a17187ded3": "Debris Removal Dashboard - Hurricane Isaias"
+  }
+ },
+ "Eugene": {
+  "files": [],
+  "portals": {}
+ },
+ "Aiken County": {
+  "files": [],
+  "portals": {}
+ },
+ "Stearns County": {
+  "files": [],
+  "portals": {}
+ },
+ "Pasadena": {
+  "files": [],
+  "portals": {
+   "https://gis.lja.com/portal/apps/experiencebuilder/experience/?id=fd4ede38c0bb48ecbfbf79d5f984b733": "GIs map viewer Geographic Map",
+   "https://maps.viewprogis.com/vp/pasadena-tx": "PASADENA GIS Map Viewer"
+  }
+ },
+ "Taylor County": {
+  "files": [],
+  "portals": {}
+ },
+ "Grayson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Fayette County": {
+  "files": [],
+  "portals": {}
+ },
+ "Independence": {
+  "files": [],
+  "portals": {}
+ },
+ "Wayne County": {
+  "files": [],
+  "portals": {
+   "https://wayne-county-gis-waynecountync.hub.arcgis.com": "Geographic Information Systems (GIS)",
+   "https://www.arcgis.com/apps/opsdashboard/index.html": "Click here to access the Wayne County, North Carolina Crime Map"
+  }
+ },
+ "Peoria": {
+  "files": [
+   {
+    "url": "http://www.peoriaparks-planning.org/maps/PPDRockIslandGreenway2014.pdf",
+    "text": "Rock Island Greenway",
+    "file": "data/city_files/Peoria/ec3922_PPDRockIslandGreenway2014.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/collections/6670bd67911549b48b5cf74bd682684e?item=1": "Combined Sewer Overflow",
+   "https://gis.peoriagov.org/portal/apps/webappviewer/index.html?id=89c66bacf6904927a699715c38bd8948": "Trash Collection Schedule",
+   "https://gis.peoriagov.org/portal/apps/webappviewer/index.html?id=3aef84c0f6ce499591ee4ca1cc792264": "Recycling Schedule",
+   "https://storymaps.arcgis.com/stories/68726b0fac5e4b038ead9e9e33368990": "Peoria Police Department-Chaplain Program",
+   "https://police-transparency-1-peoria-il.hub.arcgis.com/": "Transparency Page",
+   "https://peoria-il.maps.arcgis.com/apps/webappviewer/index.html?id=a53d6c77d57d494d83f87776cb031588": "View the impervious surface area on your property by viewing the map",
+   "http://peoria-il.maps.arcgis.com/apps/webappviewer/index.html?id=a53d6c77d57d494d83f87776cb031588": "View the Map",
+   "https://gis.peoriacounty.gov/PeoriaCountyGIS/": "GIS Map - Online",
+   "https://peoria-il.maps.arcgis.com/apps/dashboards/f50cc19d64494296a284df4f4469bc39": "Incentive Zone GIS Map - Online",
+   "https://peoria-il.maps.arcgis.com/apps/dashboards/5203261a3c3b4a9dbd7f36edc6ee9f47": "TIF RDA GIS Map - Online"
+  }
+ },
+ "El Monte": {
+  "files": [],
+  "portals": {
+   "https://ndcresearch.maps.arcgis.com/apps/View/index.html?appid=176b87654862480799c4a4ad638fd032": "Interactive View Map",
+   "https://ktuagis.maps.arcgis.com/apps/Cascade/index.html?appid=3c92ab9cccf24a72ac5e6bfc7a0d1cb0": "Vision Zero"
+  }
+ },
+ "Hillsboro": {
+  "files": [],
+  "portals": {}
+ },
+ "South Bend": {
+  "files": [
+   {
+    "url": "https://southbendin.gov/wp-content/uploads/2018/07/Lawn-Parking-Permit-Conditutional-Use-Lawn-Parking-2023.pdf",
+    "text": "application",
+    "file": "data/city_files/South_Bend/c782c9_Lawn-Parking-Permit-Conditutional-Use-Lawn-Parking-2023.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://data-southbend.opendata.arcgis.com/": "Open Data Portal",
+   "https://southbend.maps.arcgis.com/apps/webappviewer/index.html?id=ff989c7c12fd4eb78a1807b70272066c": "here",
+   "https://gisdata.in.gov/portal/apps/webappviewer/index.html?id=5f2c93ba15a6423b906fec4a2e986b85": "Indiana Buildings, Bridges, and Cemeteries Map"
+  }
+ },
+ "Hesperia": {
+  "files": [],
+  "portals": {}
+ },
+ "Roanoke County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/c2508d02d4f24bcc8caa6cec7eb6d57e/page/Page/?views=How-to-Use": "FEMA Region 3 Flood Map Changes Viewer",
+   "https://gis.roanokecountyva.gov/": "View More Maps and Apps in the Gallery",
+   "https://data.roanokecountyva.gov/search?tags=environmental": "Topgraphic Map Files",
+   "https://www.webgis.net/va/craig/": "Craig County",
+   "https://webgis.bedfordcountyva.gov/Bedford/": "Bedford County",
+   "https://www.webgis.net/va/botetourtco/": "Botetourt County",
+   "https://floydcova.interactivegis.com/map/": "Floyd County",
+   "https://data-franklincova.opendata.arcgis.com/": "Franklin County",
+   "https://urldefense.com/v3/__https://data-salemva.opendata.arcgis.com/__;!!OshuWn9UTc6lYQ!xz-xESo4mni5VhsX_AtOEUL500NYODpyE8S5B0qmbkRC-iFg2TG0sY4yq99gUB5VXKIy2mEVfG_N0Se6yf29kKxUk1DZL2-fM91qv2Y$": "Salem City",
+   "https://roanoke-virginia.maps.arcgis.com/apps/Shortlist/index.html?appid=a8dfa087b285405790be86a9e868716c": "Greenway Project Updates",
+   "https://storymaps.arcgis.com/stories/7a9617a80c584735a88e9fba321e7170": "Check out our Story Map to learn more about sites on the National Register of Historic Places in Roanoke County!"
+  }
+ },
+ "Deltona": {
+  "files": [
+   {
+    "url": "https://msc.fema.gov/msccontent/Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "text": "Flood\n\t\t\t\t\t\tHazard Mapping Updates Overview Fact Sheet",
+    "file": "data/city_files/Deltona/9a4d0e_Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "rows": 52,
+    "bike_rows": 11
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/apps/dashboards/1d8ee8f62a434c72b82e5e7c50634f55": "Find your District",
+   "https://data.census.gov/": "Deltona Demographics",
+   "https://storymaps.arcgis.com/stories/f947fc84313549bc8f42b68aaa8e95b9": "Development Activity Map",
+   "https://www.arcgis.com/apps/dashboards/61045bb3b0d0463fb68014786862175c": "Interactive Zoning & Future Land Use Map"
+  }
+ },
+ "Nashua": {
+  "files": [],
+  "portals": {
+   "https://nashuagis.nashuanh.gov/": "GIS Map (NashuaGIS Viewer)",
+   "https://experience.arcgis.com/experience/5ea073de09434e55b52cfc42e916ca0e": "Pinewood and Edgewood cemeteries (arcgis.com)",
+   "https://newgis.nashuanh.gov/nashuanh": "Sewer & Stormwater",
+   "http://nashuamaps.maps.arcgis.com/apps/webappviewer/index.html?id=3a598afe03644f12ad9991cc0a65be13": "Find your trash and recycling schedule - GIS application (arcgis.com)",
+   "https://experience.arcgis.com/experience/ef06563ced5b454980e1d62dd7218336": "",
+   "https://nashuamaps.maps.arcgis.com/apps/webappviewer/index.html?id=0fb038805f64433f89dbb9b674b833f4": "Overnight Parking Street Map"
+  }
+ },
+ "Christian County": {
+  "files": [
+   {
+    "url": "https://www.christiancountymo.gov/wp-content/uploads/Recycle-Holiday-Hours-3.pdf",
+    "text": "Recycle Holiday Hours",
+    "file": "data/city_files/Christian_County/b11218_Recycle-Holiday-Hours-3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://christiangis.integritygis.com/H5/Index.html?viewer=christian": "Public GIS Viewer"
+  }
+ },
+ "Lawrence County": {
+  "files": [],
+  "portals": {}
+ },
+ "Howard County": {
+  "files": [],
+  "portals": {}
+ },
+ "Flint": {
+  "files": [
+   {
+    "url": "https://www.cityofflint.com/wp-content/uploads/2023/05/Priority-Waste-Acceptable-Recycling-Materials.pdf",
+    "text": "Download",
+    "file": "data/city_files/Flint/b7d20d_Priority-Waste-Acceptable-Recycling-Materials.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.prioritywaste.com/wp-content/uploads/2023/02/Priority-Waste-Acceptable-Recycling-Materials.pdf",
+    "text": "See Full List of Materials",
+    "file": "data/city_files/Flint/7ca166_Priority-Waste-Acceptable-Recycling-Materials.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflint.com/wp-content/uploads/2024/05/COF_Wards_2024_-_FINTGIS.pdf",
+    "text": "City of Flint Ward Map 2024",
+    "file": "data/city_files/Flint/8cf6cf_COF_Wards_2024_-_FINTGIS.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflint.com/wp-content/uploads/2024/09/Recycling-FAQ.pdf",
+    "text": "FAQ: Get answers to frequently asked questions",
+    "file": "data/city_files/Flint/e504bc_Recycling-FAQ.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflint.com/wp-content/uploads/2024/09/Recycling-FAQ-1.pdf",
+    "text": "Download",
+    "file": "data/city_files/Flint/77bc10_Recycling-FAQ-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflint.com/wp-content/uploads/2024/09/Recycling-Info-Card.pdf",
+    "text": "Download",
+    "file": "data/city_files/Flint/044077_Recycling-Info-Card.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://flint.maps.arcgis.com/apps/dashboards/f03e41dd00ee499398929aef22b23090": "View Interactive Ward Map"
+  }
+ },
+ "Chelan County": {
+  "files": [
+   {
+    "url": "http://www.co.chelan.wa.us/files/public-works/documents/development/Road%20Cut%20Repair%20Stnd%20%26%20Detail.pdf",
+    "text": "Road Repair Standards",
+    "file": "data/city_files/Chelan_County/f07ef4_Road_20Cut_20Repair_20Stnd_20_26_20Detail.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.chelan.wa.us/files/public-works/documents/roadwork/maintenance_dist_map.pdf",
+    "text": "Maintenance Districts Map",
+    "file": "data/city_files/Chelan_County/ecb68c_maintenance_dist_map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.co.chelan.wa.us/files/public-works/documents/stormwater/Appendix%20C%20(2015).pdf",
+    "text": "Appendix C- Illicit Discharge Detection & Elimination",
+    "file": "data/city_files/Chelan_County/84a2e6_Appendix_20C_20_2015_.pdf",
+    "rows": 143,
+    "bike_rows": 32
+   },
+   {
+    "url": "https://www.co.chelan.wa.us/files/public-works/documents/construction/CRP741_Vic%20Map.pdf",
+    "text": "2023 Guardrail Repairs",
+    "file": "data/city_files/Chelan_County/fb2b3b_CRP741_Vic_20Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.chelan.wa.us/files/auditor/documents/recording/SearchingtheHistoricalGeneralIndex.pdf",
+    "text": "Searching the Historic Index",
+    "file": "data/city_files/Chelan_County/1782a3_SearchingtheHistoricalGeneralIndex.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.chelan.wa.us/files/auditor/documents/recording/vet1.pdf",
+    "text": "Request for Exemption from Public Disclosure of Discharge Papers",
+    "file": "data/city_files/Chelan_County/b0d8a0_vet1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.chelan.wa.us/files/auditor/documents/recording/vet2.pdf",
+    "text": "Request for Disclosure of Discharge Papers",
+    "file": "data/city_files/Chelan_County/6c3f22_vet2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.chelan.wa.us/files/auditor/documents/recording/vet3.pdf",
+    "text": "Revocation and Re-Designation of Disclosure of Discharge Papers",
+    "file": "data/city_files/Chelan_County/e15c0c_vet3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://co.chelan.wa.us/files/auditor/documents/recording/vet4.pdf",
+    "text": "Request for Access/ Copy of Exempt Discharge Papers",
+    "file": "data/city_files/Chelan_County/3f8b6a_vet4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/apps/mapviewer/index.html?webmap=7e391f873d004a54a2bc24cbb3d558b3&extent=-121.0858,47.2885,-119.6919,47.9163": "Online Map of ATV/ORV Roads"
+  }
+ },
+ "White County": {
+  "files": [],
+  "portals": {}
+ },
+ "Cherry Hill": {
+  "files": [
+   {
+    "url": "https://cherryhill-nj.com/1385/pdf/Route70_Project_Limits_Map.pdf",
+    "text": "",
+    "file": "data/city_files/Cherry_Hill/7bca9f_Route70_Project_Limits_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cherryhill-nj.maps.arcgis.com/apps/webappviewer/index.html?id=345c58100bee458bb1b7c31df4e0b037": ""
+  }
+ },
+ "Jacksonville": {
+  "files": [],
+  "portals": {}
+ },
+ "Camarillo": {
+  "files": [
+   {
+    "url": "https://ci.camarillo.ca.us/2025- CAT Fixed Route Brochure.pdf",
+    "text": "CAT (BUS) SCHEDULE (PDF)",
+    "file": "data/city_files/Camarillo/532091_2025-_CAT_Fixed_Route_Brochure.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://ci.camarillo.ca.us/Residents/Trash & Recycling/odds and ends guide.pdf",
+    "text": "ODDS N ENDS GUIDE (PDF)",
+    "file": "data/city_files/Camarillo/f25382_odds_and_ends_guide.pdf",
+    "rows": 95,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://ci.camarillo.ca.us/Residents/Trash & Recycling/1.14.2026 RECYCLING & DISPOSAL GUIDE for website.pdf",
+    "text": "Recycling & Disposal Guide",
+    "file": "data/city_files/Camarillo/c2694d_1.14.2026_RECYCLING_DISPOSAL_GUIDE_for_website.pdf",
+    "rows": 44,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://ci.camarillo.ca.us/Visitors/Camarillo Visitor Guide Map.pdf",
+    "text": "CAMARILLO VISITOR GUIDE MAP",
+    "file": "data/city_files/Camarillo/c7a6db_Camarillo_Visitor_Guide_Map.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://camarillo.maps.arcgis.com/apps/instant/lookup/index.html?appid=0ec9a95a66c045f491b493fe7564fc22": "MY DISTRICT",
+   "https://camarillo.maps.arcgis.com/apps/instant/lookup/index.html?appid=2bf514d0cf3b4d38837a3315503fa51c&find=93012%252C%2520Camarillo%252C%2520California": "WATER SERVICE AREA MAP",
+   "https://camarillo.maps.arcgis.com/apps/instant/lookup/index.html?appid=2bf514d0cf3b4d38837a3315503fa51c": "area map.",
+   "https://camarillo.maps.arcgis.com/apps/instant/lookup/index.html?appid=da96521fb00f4edab8f4a581dfa75fa1": "Residential Trash & Recycling Schedule (arcgis.com)",
+   "https://experience.arcgis.com/experience/1adb751cf42b4af4b2c3b3b92ff9f1d8/page/Refuse-%26-Street-Sweeping": "",
+   "https://camarillo.maps.arcgis.com/apps/instant/lookup/index.html?appid=11d5162d2b7f49489759da17b8e18b0e&find=601%2520Carmen%2520Dr%252C%2520Camarillo%252C%2520CA%252C%252093010%252C%2520USA": "click here to search your address"
+  }
+ },
+ "Blue Earth County": {
+  "files": [],
+  "portals": {}
+ },
+ "Oldham County": {
+  "files": [
+   {
+    "url": "https://irp.cdn-website.com/fd0fc3bd/files/uploaded/MagistrateMap2025.pdf",
+    "text": "Magistrate District Map pdf",
+    "file": "data/city_files/Oldham_County/623a6b_MagistrateMap2025.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://ocpdsgis.maps.arcgis.com/apps/view/index.html?appid=67f5a3d72f094f1fb04ebbb4bf7c44d0": "MAPPING & GIS",
+   "https://ocpdsgis.maps.arcgis.com/apps/View/index.html?appid=67f5a3d72f094f1fb04ebbb4bf7c44d0": "Button",
+   "https://ocpdsgis.maps.arcgis.com/apps/instant/basic/index.html?appid=896865ac241b447fa8b527fa2e43c701": "OC GIS Mapping",
+   "https://ocpdsgis.maps.arcgis.com/apps/instant/basic/index.html?appid=dd9cef8494864f2db23c2f91291ebf69&fbclid=IwY2xjawGV3nhleHRuA2FlbQIxMQABHbQQOqA4DJFdfB19n9BRqRSKIDXEO_ojuVZjrgGbyh5AFl0LkpvFf-dkew_aem_Bw74aDfA5XjJXNadZajjqg": "Interactive GIS Map by Address"
+  }
+ },
+ "Muskogee County": {
+  "files": [],
+  "portals": {}
+ },
+ "Muncie": {
+  "files": [],
+  "portals": {}
+ },
+ "Coon Rapids": {
+  "files": [],
+  "portals": {
+   "https://coonrapidsmn.maps.arcgis.com/home/index.html": "Map It (zoning, parks and more)",
+   "https://coonrapidsmn.maps.arcgis.com/apps/instant/basic/index.html?appid=12b1e1a5dcca4d778fc48aca4aed130a": ""
+  }
+ },
+ "Commerce City": {
+  "files": [],
+  "portals": {}
+ },
+ "Gardena": {
+  "files": [
+   {
+    "url": "https://cityofgardena.org/wp-content/uploads/2016/04/newsrackapp-eff-july.pdf",
+    "text": "Newsrack Registration Application",
+    "file": "data/city_files/Gardena/59829d_newsrackapp-eff-july.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofgardena.org/wp-content/uploads/2016/09/jurisdictionalMap.pdf",
+    "text": "City Boundaries Map",
+    "file": "data/city_files/Gardena/437786_jurisdictionalMap.pdf",
+    "rows": 21,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofgardena.org/wp-content/uploads/2016/09/trafficsignals.pdf",
+    "text": "Traffic Signals Map",
+    "file": "data/city_files/Gardena/28f5f3_trafficsignals.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofgardena.org/wp-content/uploads/2016/09/truck-routes-map.pdf",
+    "text": "Truck Route Map",
+    "file": "data/city_files/Gardena/0a6a7a_truck-routes-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofgardena.org/wp-content/uploads/2024/01/Gardena-2023-Zoning-Map-20240129.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Gardena/3bb651_Gardena-2023-Zoning-Map-20240129.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofgardena.org/wp-content/uploads/2023/05/Gardena_Public_GPLU_2023_20230428.pdf",
+    "text": "Land Use Map",
+    "file": "data/city_files/Gardena/90db31_Gardena_Public_GPLU_2023_20230428.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofgardena.org/wp-content/uploads/2024/06/Maintenance-Zone-Map.pdf",
+    "text": "Maintenance Zone Map",
+    "file": "data/city_files/Gardena/9e2f0b_Maintenance-Zone-Map.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/8db73b74506445c2887a760df53ce2d7": "Click here",
+   "https://cityofgardena.maps.arcgis.com/apps/webappviewer/index.html?id=d00dce8305304a68829a39dc9d700dac": "Interactive Map"
+  }
+ },
+ "Corvallis": {
+  "files": [
+   {
+    "url": "https://www.republicservices.com/sites/default/files/legacy_documents/Muni/Oregon/Corvallis/Oregon-Recycling-List-2025.pdf",
+    "text": "this guide",
+    "file": "data/city_files/Corvallis/b8f0a5_Oregon-Recycling-List-2025.pdf",
+    "rows": 73,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.republicservices.com/cms/documents/municipality/OREGON/CORVALLIS/CorvallisStreetMapWithGlassRoutes.pdf",
+    "text": "glass map",
+    "file": "data/city_files/Corvallis/8e1791_CorvallisStreetMapWithGlassRoutes.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.republicservices.com/cms/documents/municipality/OREGON/CORVALLIS/corvallis-recycle-depotmaterials.pdf",
+    "text": "Republic Services’ Recycle Depot",
+    "file": "data/city_files/Corvallis/28dddb_corvallis-recycle-depotmaterials.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.oregon.gov/odot/forms/dmv/6619.pdf",
+    "text": "State of Oregon Micromobility, Moped, and Mini Motorcycle Guide",
+    "file": "data/city_files/Corvallis/eb5c05_6619.pdf",
+    "rows": 11,
+    "bike_rows": 7
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/e43a4f0a13e84527a0279fc6d850a114/": "Park Finder",
+   "https://corvallisoregon.maps.arcgis.com/apps/webappviewer/index.html?id=19fdcdd0b593436490a57ae5858c5f73": "Benchmark and Control Data",
+   "https://corvallisoregon.maps.arcgis.com/apps/MapTour/index.html?appid=dfa75b74451e4e75825136cea8bd7aba": "heritage trees",
+   "https://corvallisoregon.maps.arcgis.com/apps/Viewer/index.html?appid=b81c4e5f3cf64dedbd167201e9fb736f": "Park Finder",
+   "https://experience.arcgis.com/experience/34205795410f409ca26759a194813a01/page/Lookup-Map-Homepage/": "Lookup Property Information",
+   "https://storymaps.arcgis.com/stories/a895e23fc8354755acc1241376ea08b4": "Storymap",
+   "https://storymaps.arcgis.com/stories/08d5392c647e4a13bc9f386a9933c9ad": "StoryMap:",
+   "https://corvallisoregon.maps.arcgis.com/apps/webappviewer/index.html?id=94361348c1974dd591254e43932cc5ac": "Follow this link for a map of snow and ice response priorities.",
+   "https://experience.arcgis.com/experience/99fe420804a14d32a27be9e95867b705": "View map in a tab",
+   "https://experience.arcgis.com/experience/16ad3f8300074ba9aff67d0dde3571d4": "View map in a New Tab",
+   "https://experience.arcgis.com/experience/b11f0aa799a14841a17133c5baec816b": "View map in a New Tab",
+   "https://geo.maps.arcgis.com/apps/dashboards/e6ff6b60f63b4c489cdee61315a85535": "inter-agency ash tree survey"
+  }
+ }
+}
