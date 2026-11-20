@@ -1,0 +1,1138 @@
+{
+ "Louisville KY": {
+  "files": [],
+  "portals": {}
+ },
+ "Tacoma WA": {
+  "files": [
+   {
+    "url": "https://cms.tacoma.gov/publicworks/engineering/parking/2025%20parking%20system%20annual%20report%20final%20(1).pdf",
+    "text": "2025 Annual Parking Report",
+    "file": "data/city_files/Tacoma_WA/fd75a9_2025_20parking_20system_20annual_20report_20final_20_1_.pdf",
+    "rows": 58,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://cms.tacoma.gov/publicworks/engineering/parking/tacoma%20annual%20parking%20report_v5%20(3).pdf",
+    "text": "2024 Annual Parking Report",
+    "file": "data/city_files/Tacoma_WA/9701b0_tacoma_20annual_20parking_20report_v5_20_3_.pdf",
+    "rows": 78,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://tacoma.gov/services/tacoma-open-data-maps/": "City Data & Dashboards",
+   "https://data.tacoma.gov": "View Open Data",
+   "https://cityoftacoma.org/opendata": "Skip to main content",
+   "https://cityoftacoma.org/open-data": "Skip to main content"
+  }
+ },
+ "Yıldırım district": {
+  "files": [],
+  "portals": {}
+ },
+ "Bahía Blanca Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Babylon": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/234ae452eb13472da9536be8b9c5daba?portalUrl=https://townofbabylon.maps.arcgis.com": "this online form"
+  }
+ },
+ "Tempe": {
+  "files": [],
+  "portals": {}
+ },
+ "Ağrı": {
+  "files": [],
+  "portals": {
+   "https://agri.bel.tr/opendata": "×",
+   "https://agri.bel.tr/open-data": "×"
+  }
+ },
+ "La Banda": {
+  "files": [],
+  "portals": {}
+ },
+ "Carlsbad": {
+  "files": [],
+  "portals": {}
+ },
+ "Brockton": {
+  "files": [],
+  "portals": {}
+ },
+ "Sunrise": {
+  "files": [],
+  "portals": {}
+ },
+ "Cheektowaga": {
+  "files": [
+   {
+    "url": "https://tocny.org/wp-content/uploads/2019/09/TOWN-PARK-8.5-11-FOR-SHELTERS-1.pdf",
+    "text": "Town Park Map",
+    "file": "data/city_files/Cheektowaga/95c606_TOWN-PARK-8.5-11-FOR-SHELTERS-1.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://tocny.org/wp-content/uploads/2022/12/2026-Acceptable-Recycling-Items.pdf",
+    "text": "2026 Recycling Guide",
+    "file": "data/city_files/Cheektowaga/525f9c_2026-Acceptable-Recycling-Items.pdf",
+    "rows": 19,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://tocny.org/wp-content/uploads/2020/08/Handicapp-Permit-Applications-mv6641.pdf",
+    "text": "Disabled Parking Permit Application (link)",
+    "file": "data/city_files/Cheektowaga/115749_Handicapp-Permit-Applications-mv6641.pdf",
+    "rows": 16,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://tocny.org/wp-content/uploads/2020/03/zoningmap_2018_-amended-thru-5_8_18-drawing-edited_9_17_18.pdf",
+    "text": "Zoning Map 2018",
+    "file": "data/city_files/Cheektowaga/00b2ca_zoningmap_2018_-amended-thru-5_8_18-drawing-edited_9_17_18.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://tocny.org/wp-content/uploads/2019/08/Town-map.pdf",
+    "text": "Town map",
+    "file": "data/city_files/Cheektowaga/82805b_Town-map.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/aa0da4f9b8a8450a9f4e405ee47daace": "Town GIS Mapping",
+   "https://gis.erie.gov/Html5Viewer133/index.html?viewer=ErieCountyNY.HTML5_2_11_0": "County GIS Mapping",
+   "http://gis.ny.gov/gisdata/": "NYS GIS Database (Clearinghouse)",
+   "https://www.wd-gis.com/agsportal/apps/webappviewer/index.html?id=90bb948458404549826543c0f2a3c65a": "GIS Public Mapping"
+  }
+ },
+ "Bryan": {
+  "files": [
+   {
+    "url": "https://media-002-us.cdn.govstack.com/bryantx-004-us/media/3eintb1i/historic-preservation-plan.pdf",
+    "text": "View the Plan",
+    "file": "data/city_files/Bryan/4f397e_historic-preservation-plan.pdf",
+    "rows": 272,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/bryantx-004-us/media/pygmcyyu/cob-cemeteries-improvement-permit-application-print.pdf",
+    "text": "City of Bryan Cemeteries Improvement Permit Application (Print Only)",
+    "file": "data/city_files/Bryan/0dc13d_cob-cemeteries-improvement-permit-application-print.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://docs.bryantx.gov/planning_development/application-updates/Eng_Tracking_Log.xlsx",
+    "text": "Engineering Construction Plan Review Application Status",
+    "file": "data/city_files/Bryan/ffcf13_Eng_Tracking_Log.xlsx",
+    "rows": 4728,
+    "bike_rows": 149
+   },
+   {
+    "url": "https://paracycling.bryantx.gov/images/spectator-guide.pdf",
+    "text": "DOWNLOAD THE GUIDE",
+    "file": "data/city_files/Bryan/c71a3c_spectator-guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.bryantx.gov/government/open-data/": "Open Data",
+   "https://bryantx.gov/government/open-data/": "Open Data",
+   "https://experience.arcgis.com/experience/af0b8577e754498eadb4c9403ba3b488": "Trash Collection Service Day Map",
+   "https://experience.arcgis.com/experience/0588650fca684aa98b47eb02dbe4dfd3/": "Grandview Cemetery & Freedman’s Burying Ground Interactive map of the Grandview Cemetery and Freedman’s Burying Ground",
+   "https://experience.arcgis.com/experience/4c195aa7f29341b2af3b7133c167fcf6": "Weather Station Feed Visual dashboard featuring real-time local weather data",
+   "https://experience.arcgis.com/experience/7d1bb9facd754b338e4bb04c706d8571": "Downtown Bryan Two-Hour Parking",
+   "https://experience.arcgis.com/experience/9b7324b1c35a4eabb44784275e5815df": "GIS map of available parking"
+  }
+ },
+ "Racine": {
+  "files": [
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/09/10143901/RacineBikePedPlan_2019.pdf",
+    "text": "City of Racine Bicycle and Pedestrian Master Plan (2019)",
+    "file": "data/city_files/Racine/f58894_RacineBikePedPlan_2019.pdf",
+    "rows": 368,
+    "bike_rows": 73
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/05/02010336/Bike-Pedestrian-Master-Plan-Meeting-Public-Comments-10.22.2015-Meeting.pdf",
+    "text": "Download PDF",
+    "file": "data/city_files/Racine/7bc75b_Bike-Pedestrian-Master-Plan-Meeting-Public-Comments-10.22.2015-Meeting",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/05/02010509/Bike-Meeting-Public-Comments-03.23.2017-Meeting.pdf",
+    "text": "Download PDF",
+    "file": "data/city_files/Racine/5422ef_Bike-Meeting-Public-Comments-03.23.2017-Meeting.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/05/02010638/City-of-Racine-Bicycle-and-Pedestrian-Master-Plan-Engineering-Recommendations.pdf",
+    "text": "Download PDF",
+    "file": "data/city_files/Racine/b3fd95_City-of-Racine-Bicycle-and-Pedestrian-Master-Plan-Engineering-Recommen",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/05/02010717/Bike-PIM-3-boards-1.pdf",
+    "text": "Download PDF",
+    "file": "data/city_files/Racine/4e5353_Bike-PIM-3-boards-1.pdf",
+    "rows": 80,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/05/02010809/Bike-PIM-3-Boards-Proposed-17.pdf",
+    "text": "Download PDF",
+    "file": "data/city_files/Racine/50ef6e_Bike-PIM-3-Boards-Proposed-17.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/05/02010910/City-of-Racine-Bike-Pedestrian-Plan-Proposed-Recommendations-Map.pdf",
+    "text": "Download PDF",
+    "file": "data/city_files/Racine/75d5b1_City-of-Racine-Bike-Pedestrian-Plan-Proposed-Recommendations-Map.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/05/02014434/Bicycle_Pathway_System.pdf",
+    "text": "City of Racine Bicycle Pathway System 528.7 KB",
+    "file": "data/city_files/Racine/29b657_Bicycle_Pathway_System.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/05/02014604/racine.pdf",
+    "text": "Racine County Bicycle Map (WI DOT) 7.2 MB",
+    "file": "data/city_files/Racine/6a2d3a_racine.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/05/02014647/kenosha.pdf",
+    "text": "Kenosha County Bicycle Map (WI DOT) 7 MB",
+    "file": "data/city_files/Racine/13a8a9_kenosha.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/05/02015246/walworth.pdf",
+    "text": "Walworth County Bicycle Map (WI DOT) 8.1 MB",
+    "file": "data/city_files/Racine/2f06ae_walworth.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/05/02015329/milwaukee.pdf",
+    "text": "Milwaukee County Bicycle Map (WI DOT) 7 MB",
+    "file": "data/city_files/Racine/6d7e11_milwaukee.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/08/01012035/2026-Cemeteries-Fees-Charges_FINAL.pdf",
+    "text": "2026 Cemetery Fees and Charges 138 KB",
+    "file": "data/city_files/Racine/6f5352_2026-Cemeteries-Fees-Charges_FINAL.pdf",
+    "rows": 72,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2026/05/11092148/2025-Cemeteries-Fees-Charges_Final.pdf",
+    "text": "2025 Cemetery Fees and Charges 142.7 KB",
+    "file": "data/city_files/Racine/9e34d5_2025-Cemeteries-Fees-Charges_Final.pdf",
+    "rows": 72,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/03/Rules-and-regulations-booklet-2026-updates.pdf",
+    "text": "2024 Cemetery Fees and Charges 147.7 KB",
+    "file": "data/city_files/Racine/e58701_Rules-and-regulations-booklet-2026-updates.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/03/Cemetery-Fees-and-Charges.pdf",
+    "text": "2023 Cemetery Fees and Charges 266.7 KB",
+    "file": "data/city_files/Racine/75335f_Cemetery-Fees-and-Charges.pdf",
+    "rows": 71,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/03/City-of-Racine-Manree-Park-Neighborhood-Architectural-Historical-Intensive-Survey-Report-2015.pdf",
+    "text": "Download PDF",
+    "file": "data/city_files/Racine/37c45a_City-of-Racine-Manree-Park-Neighborhood-Architectural-Historical-Inten",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/03/Architectural-and-Historical-Survey-of-the-City-of-Racine-Scanned-09.12.2022-1.pdf",
+    "text": "Download PDF",
+    "file": "data/city_files/Racine/33c800_Architectural-and-Historical-Survey-of-the-City-of-Racine-Scanned-09.1",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/03/Local-Landmarks.pdf",
+    "text": "Local Historic Districts and Landmarks 79 KB",
+    "file": "data/city_files/Racine/166201_Local-Landmarks.pdf",
+    "rows": 71,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/03/Zoo-Bike-Path-News-Release.pdf",
+    "text": "Bike Path Release 662.9 KB",
+    "file": "data/city_files/Racine/64a86f_Zoo-Bike-Path-News-Release.pdf",
+    "rows": 15,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Pierce%20Woods%20Site%20Plan%20-%202020.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/ffb8a0_Pierce_20Woods_20Site_20Plan_20-_202020.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/03/Tree-Zones-Wall-Map-w-parks-1.pdf",
+    "text": "Forestry Zone Map 2 MB",
+    "file": "data/city_files/Racine/278231_Tree-Zones-Wall-Map-w-parks-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/03/Racine-Pruning-Cycle-1.pdf",
+    "text": "Pruning Schedule 389.9 KB",
+    "file": "data/city_files/Racine/8bc562_Racine-Pruning-Cycle-1.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2026/01/06085041/2026-Trash-and-Recyling-Calendar-Final.pdf",
+    "text": "Download the Solid Waste, Recycling and Bulky Item Rotating Holiday Collection Calendar.",
+    "file": "data/city_files/Racine/0f744b_2026-Trash-and-Recyling-Calendar-Final.pdf",
+    "rows": 34,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Site%20Plan%20Hantschel%202020.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/0abfe0_Site_20Plan_20Hantschel_202020.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Vidian%20-%20Cheska%20Site%20Plan.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/cdd613_Vidian_20-_20Cheska_20Site_20Plan.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Erskine%20Park%20Site%20Plan%20-%202020.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/e94312_Erskine_20Park_20Site_20Plan_20-_202020.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Case-Harmon%20Site%20Plan.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/584588_Case-Harmon_20Site_20Plan.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Brose%20-%20Master%20Plan%20-2020.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/a133c0_Brose_20-_20Master_20Plan_20-2020.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Myers%20Park%20-%202020.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/b836a5_Myers_20Park_20-_202020.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/_Documents/Harvey%20Park%20Master%20Plan%20-%20Sept%202020.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/7cb75a_Harvey_20Park_20Master_20Plan_20-_20Sept_202020.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Grand%20Master%20Site%20Plan%20-%202020.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/f5a76b_Grand_20Master_20Site_20Plan_20-_202020.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Reservoir%20Site%20Plan.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/c2655e_Reservoir_20Site_20Plan.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Parker%20Park.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/f43bec_Parker_20Park.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Marino%20Master%20Plan%202020.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/1867ce_Marino_20Master_20Plan_202020.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Franklin%20Site%20Plan.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/fa949b_Franklin_20Site_20Plan.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Douglas%20Park%20Site%20Plan%20-%202020.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/60a1f0_Douglas_20Park_20Site_20Plan_20-_202020.pdf",
+    "rows": 38,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Parks_and_Recreation/Parks_Information_and_Reservations/Cedar%20Bend%20Park%20Site%20Plan.pdf",
+    "text": "Open Park on Map",
+    "file": "data/city_files/Racine/f245af_Cedar_20Bend_20Park_20Site_20Plan.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://racine-rents-cori.hub.arcgis.com/": "Rental Property Registration",
+   "https://city-of-racine-gis-hub-cori.hub.arcgis.com/": "Maps",
+   "https://storymaps.arcgis.com/collections/a62e4d254ce94100b560e1a5bd375efb": "Root River Report Card",
+   "http://docs.legis.wisconsin.gov/statutes": "Wisconsin Statutes",
+   "https://docs.legis.wisconsin.gov/statutes": "State Statutes",
+   "https://experience.arcgis.com/experience/82dd8bff9b1942f7833821f8b7c1880b/": "Traffic Alerts",
+   "http://racinecounty.maps.arcgis.com/apps/MapSeries/index.html?appid=81ab61f8429b449dbba8f1dc5f5f6a96": "Racine County Trail Map Racine County GIS",
+   "https://experience.arcgis.com/experience/0f1405bb1939431abc1a9ade5af3a2ea": "Cemetery Viewer",
+   "https://storymaps.arcgis.com/stories/5ed4e3f8e204401e9f522fbe2b8ea7c7": "Samuel Myers Park Restoration",
+   "http://racinecounty.maps.arcgis.com/apps/MapSeries/%20?appid=81ab61f8429b449dbba8f1dc5f5f6a96": "Root River  Pathway",
+   "https://sump-pump-cori.hub.arcgis.com/": "Racine Sump Pump Program Learn more about the program and apply now!",
+   "https://racinecounty.maps.arcgis.com/apps/MapSeries/%20?appid=81ab61f8429b449dbba8f1dc5f5f6a96": "Root River Pathway",
+   "https://data.cms.gov/tools/medicare-enrollment-dashboard": "Centers for Medicare and Medicaid Services",
+   "https://data.census.gov/table/ACSST5Y2022.S2701?t=Health%20Insurance&g=040XX00US55_050XX00US55101": "U.S. Census Bureau",
+   "https://data.census.gov/table/ACSST5Y2022.S1701?q=S1701&g=010XX00US": "U.S Census Bureau",
+   "https://data.bls.gov/cgi-bin/surveymost?bls": "U.S. Bureau of Labor Statistics",
+   "https://data.census.gov/table/ACSDP5Y2022.DP04?q=DP04:%20SELECTED%20HOUSING%20CHARACTERISTICS&g=010XX00US": "U.S. Census Bureau",
+   "https://data.census.gov/table/ACSST5Y2018.S0701?g=160XX00US5566000&y=2018": "U.S. Census Bureau",
+   "https://data.census.gov/table/ACSST5Y2022.S2504?g=010XX00US": "US Census Bureau",
+   "https://data.census.gov/table/ACSDP5Y2022.DP04?q=median%20home%20value%20&=": "US Census Bureau",
+   "https://data.census.gov/table/ACSST5Y2022.S1501?t=Education&g=160XX00US5566000&y=2022": "U.S. Census",
+   "https://data.census.gov/table/ACSST1Y2022.S0101?g=060XX00US5510166000": "U.S. Census Bureau",
+   "https://racinecounty.maps.arcgis.com/apps/MapSeries/?appid=81ab61f8429b449dbba8f1dc5f5f6a96": "Racine County Public Works, Bicycle Trails of Racine County",
+   "https://docs.legis.wisconsin.gov/statutes/statutes/287/II/07/2": "287.07 (2)",
+   "https://experience.arcgis.com/experience/c426187ccbd24654b19a2ff59c4f4a9a/page/Page": "Harm Reduction Map",
+   "https://storymaps.arcgis.com/stories/5a349f3bd5f5478db64e7adf56b621a6": "Digital Inclusion StoryMap"
+  }
+ },
+ "Mansfield": {
+  "files": [],
+  "portals": {}
+ },
+ "Southampton": {
+  "files": [],
+  "portals": {}
+ },
+ "Janesville": {
+  "files": [],
+  "portals": {}
+ },
+ "Revere": {
+  "files": [
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/Multiple-Permit-Form-2025.pdf",
+    "text": "Form",
+    "file": "data/city_files/Revere/397270_Multiple-Permit-Form-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.branchcms.com/GB7r14nbKy-1182/docs/Parking/Multiple-Permit-Form-FY23.pdf",
+    "text": "https://cdn.branchcms.com/GB7r14nbKy-1182/docs/Parking/Multiple-Permit-Form-FY23.pdf",
+    "file": "data/city_files/Revere/8182cf_Multiple-Permit-Form-FY23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/2025-Multiple-Permit-Form.pdf",
+    "text": "- Multi Permit Application (English)",
+    "file": "data/city_files/Revere/e31544_2025-Multiple-Permit-Form.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/Guide-of-Permit-Activation-2025.pdf",
+    "text": "Guide",
+    "file": "data/city_files/Revere/723dd1_Guide-of-Permit-Activation-2025.pdf",
+    "rows": 24,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/2025-Visitor-Pass-Activation.pdf",
+    "text": "ENGLISH",
+    "file": "data/city_files/Revere/7b1dd9_2025-Visitor-Pass-Activation.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/2025-Visitor-Pass-Activation-Spanish.pdf",
+    "text": "ESPAÑOL",
+    "file": "data/city_files/Revere/f85f44_2025-Visitor-Pass-Activation-Spanish.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/2025-Visitor-Pass-Activation-PORTUGUESE.pdf",
+    "text": "PORTUGUESE",
+    "file": "data/city_files/Revere/3eec66_2025-Visitor-Pass-Activation-PORTUGUESE.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/Arabic-Visitor-Pass-Activation.pdf",
+    "text": "ARABIC",
+    "file": "data/city_files/Revere/19ddd4_Arabic-Visitor-Pass-Activation.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/2025-Multiple-Permit-Form-Spanish.pdf",
+    "text": "- Multi Permit Application (Spanish)",
+    "file": "data/city_files/Revere/351fe9_2025-Multiple-Permit-Form-Spanish.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/bcms-files/GB7r14nbKy-1182/Hearing-Form-2026.pdf",
+    "text": "Parking Ticket Appeal Form",
+    "file": "data/city_files/Revere/d9a138_Hearing-Form-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/Hearing-Form-2025.pdf",
+    "text": "- Hearing Form",
+    "file": "data/city_files/Revere/1ed385_Hearing-Form-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/Hearing-Form-Final-FY23.pdf",
+    "text": "",
+    "file": "data/city_files/Revere/37219e_Hearing-Form-Final-FY23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Health-inspections/CouncilOrder19-087.AnOrdinanceRelativetoTrashCollection.pdf",
+    "text": "New City of Revere Trash and Recycling Ordinances",
+    "file": "data/city_files/Revere/9bc562_CouncilOrder19-087.AnOrdinanceRelativetoTrashCollection.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Public-works/Revere-Trash-Calendar-2021-FINAL-1.4.21.pdf",
+    "text": "City's 2021 Trash, Recycling and Yard Waste",
+    "file": "data/city_files/Revere/d23fa9_Revere-Trash-Calendar-2021-FINAL-1.4.21.pdf",
+    "rows": 109,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Calendar/09272023ParkingAdvisoryCommittee.pdf",
+    "text": "AGENDA",
+    "file": "data/city_files/Revere/bce26b_09272023ParkingAdvisoryCommittee.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Calendar/07112023.ParkingAdvisoryCommittee.pdf",
+    "text": "AGENDA",
+    "file": "data/city_files/Revere/fd5997_07112023.ParkingAdvisoryCommittee.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Streets-Subject-to-Emergency-Parking-Ban.pdf",
+    "text": "View list here.",
+    "file": "data/city_files/Revere/ec0c25_Streets-Subject-to-Emergency-Parking-Ban.pdf",
+    "rows": 52,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/RESIDENT-PARKING-barcode.pdf",
+    "text": "link",
+    "file": "data/city_files/Revere/d4d20e_RESIDENT-PARKING-barcode.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/HP-Parking-Sign-Driver-Application.pdf",
+    "text": "HP Parking Sign Driver Application",
+    "file": "data/city_files/Revere/671b51_HP-Parking-Sign-Driver-Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/HP-Parking-Sign-Medical-Documentation-Form.pdf",
+    "text": "HP Parking Sign Medical Documentation Form",
+    "file": "data/city_files/Revere/33cff7_HP-Parking-Sign-Medical-Documentation-Form.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/HP-Parking-Sign-Passenger-Application.pdf",
+    "text": "HP Parking Sign Passenger Application",
+    "file": "data/city_files/Revere/174fdc_HP-Parking-Sign-Passenger-Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://gis.revere.org/": "City's GIS Map",
+   "https://maps.massgis.state.ma.us/map_ol/oliver.php": "Oliver"
+  }
+ },
+ "Dubuque": {
+  "files": [
+   {
+    "url": "https://myride.cityofdubuque.org/GTFS/google_transit.zip",
+    "text": "Access The Jule's latest GTFS feed",
+    "file": "data/city_files/Dubuque/ccbc25_google_transit.zip",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://dubuque.maps.arcgis.com/apps/webappviewer/index.html?id=3e16e4de5eb14572bae6ec6b766e1555": "Interactive Trails and Parks Map",
+   "https://storymaps.arcgis.com/stories/c25dc00cb9e64b35914c85062b1ce9c2": "Completed Projects Map",
+   "https://storymaps.arcgis.com/stories/223a47922c9b4b759b47b93915a70c53": "Drone Technology",
+   "https://dubuque.maps.arcgis.com/apps/webappviewer/index.html?id=acf7c4487aaf4582a861244d49ab20c8": "Historic District Map",
+   "https://dubuque.maps.arcgis.com/apps/instant/basic/index.html?appid=3fa88c20c3534fb4bcd8055ca7163acf": "Zoning Map",
+   "https://experience.arcgis.com/experience/c8d962d2fc7947e2b063b02c51813d1e": "Financial Incentives Map",
+   "https://dubuque.maps.arcgis.com/apps/webappviewer/index.html?id=25dfebe6ef6e47d5a0daf86e13223bda": "Age Of Housing Stock Map"
+  }
+ },
+ "Apple Valley": {
+  "files": [],
+  "portals": {
+   "https://apple-valley-safety-action-plan-tc2.hub.arcgis.com/": "Apple Valley Safety Action Plan Survey",
+   "https://survey123.arcgis.com/share/772f050ce63843cd86e6c33952fa6ea7": "Report Public Works Issue",
+   "https://apple-valley-comprehensive-plan-tc2.hub.arcgis.com/": "2050 Comprehensive Plan Update",
+   "https://experience.arcgis.com/experience/14cab270d57847debc27984e953a36aa": "Interactive Development Map",
+   "https://apple-valley.maps.arcgis.com/apps/dashboards/3ec84829a70e40d3be665e2431f62cec": "Interactive Zoning Map",
+   "https://apple-valley.maps.arcgis.com/apps/instant/basic/index.html?appid=15f5b679c18d4773b4ae7ac5ddfa4c82": "Interactive Pathways and Sidewalks Snow Removal Map",
+   "https://storymaps.arcgis.com/stories/3217f70621fa4d2da822bc5afea1205c": "Apple Valley Additions Webpage",
+   "https://epermits.logis.org/home.aspx?city=av": "ONLINE PERMITS (ePermits)",
+   "https://epermits.logis.org/permits/default.aspx?city=av": "ePermits",
+   "https://survey123.arcgis.com/share/80b5282437f74c46aa89c75548ab0a2f": "SafeCam Registration"
+  }
+ },
+ "Minnetonka": {
+  "files": [],
+  "portals": {}
+ },
+ "Dunwoody": {
+  "files": [],
+  "portals": {}
+ },
+ "Ceres": {
+  "files": [],
+  "portals": {
+   "https://ndcresearch.maps.arcgis.com/apps/View/index.html?appid=a783b778979844eaa6454d278de72b46": "https://ndcresearch.maps.arcgis.com/apps/View/index.html?appid=a783b778979844eaa6454d278de72b46"
+  }
+ },
+ "Rockwall": {
+  "files": [],
+  "portals": {}
+ },
+ "Cherthala Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Sumter": {
+  "files": [
+   {
+    "url": "https://sumter-sc.com/sites/default/files/uploads/Departments/Planning/SUATS/turkey_creek_greenway_feasibility_study-final_report_2022_10_24.pdf",
+    "text": "Read the Final Turkey Creek Greenway Feasibility Report Here (PDF, 6.3 MB)",
+    "file": "data/city_files/Sumter/93f67c_turkey_creek_greenway_feasibility_study-final_report_2022_10_24.pdf",
+    "rows": 250,
+    "bike_rows": 56
+   },
+   {
+    "url": "https://sumter-sc.com/sites/default/files/uploads/Departments/Planning/SUATS/shotpouchplan.pdf",
+    "text": "MASTER PLAN FOR SHOT POUCH CREEK GREENWAY (PDF, 7.73 MB) (opens in a new tab)",
+    "file": "data/city_files/Sumter/d444e0_shotpouchplan.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sumtersc.gov/sites/default/files/uploads/Departments/Planning/SUATS/suats_walkbike_master_plan.pdf",
+    "text": "CLICK HERE TO DOWNLOAD A COPY OF THE SUMTER WALK+BIKE MASTER PLAN (PDF, 22.73 MB)",
+    "file": "data/city_files/Sumter/98d175_suats_walkbike_master_plan.pdf",
+    "rows": 99,
+    "bike_rows": 33
+   },
+   {
+    "url": "https://sumter-sc.com/sites/default/files/uploads/Departments/Planning/SUATS/suats_walkbike_master_plan.pdf",
+    "text": "CLICK HERE TO DOWNLOAD A COPY OF THE SUMTER WALK+BIKE MASTER PLAN (PDF, 22.73 MB)",
+    "file": "data/city_files/Sumter/84a079_suats_walkbike_master_plan.pdf",
+    "rows": 99,
+    "bike_rows": 33
+   },
+   {
+    "url": "https://sumter-sc.com/sites/default/files/uploads/Departments/SwanLake/swan-lake-online-brochure-2015.pdf",
+    "text": "SWAN LAKE MAP & SWAN GUIDE (PDF, 1.19 MB) (opens in a new tab)",
+    "file": "data/city_files/Sumter/2441af_swan-lake-online-brochure-2015.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sumtersc.gov/sites/default/files/uploads/Community/SwanLake/swan-lake-online-brochure-2015.pdf",
+    "text": "Click here to download the latest brochure, with a self-guided map.",
+    "file": "data/city_files/Sumter/d542fb_swan-lake-online-brochure-2015.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sumter-sc.com/sites/default/files/uploads/Departments/Planning/SUATS/Connect378/us-378-appendix-d-pedestrian-and-bicycle-counts.pdf",
+    "text": "Appendix D - Pedestrian and Bicycle Counts (PDF, 777.98 KB)",
+    "file": "data/city_files/Sumter/3330a0_us-378-appendix-d-pedestrian-and-bicycle-counts.pdf",
+    "rows": 686,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sumter-sc.com/sites/default/files/uploads/news/greenwayconnectivity_small.pdf",
+    "text": "To view full draft design document, click here. (PDF, 7.73 MB)",
+    "file": "data/city_files/Sumter/9fbd1c_greenwayconnectivity_small.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sumtersc.gov/sites/default/files/uploads/Departments/SwanLake/swan-lake-online-brochure-2015.pdf",
+    "text": "SWAN LAKE MAP & SWAN GUIDE (PDF, 1.19 MB) (opens in a new tab)",
+    "file": "data/city_files/Sumter/df425d_swan-lake-online-brochure-2015.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sumtersc.gov/sites/default/files/uploads/Departments/Planning/SUATS/turkey_creek_greenway_feasibility_study-final_report_2022_10_24.pdf",
+    "text": "Read the Final Turkey Creek Greenway Feasibility Report Here (PDF, 6.3 MB)",
+    "file": "data/city_files/Sumter/241ca9_turkey_creek_greenway_feasibility_study-final_report_2022_10_24.pdf",
+    "rows": 250,
+    "bike_rows": 56
+   },
+   {
+    "url": "https://www.sumtersc.gov/sites/default/files/uploads/Departments/Planning/SUATS/shotpouchplan.pdf",
+    "text": "MASTER PLAN FOR SHOT POUCH CREEK GREENWAY (PDF, 7.73 MB) (opens in a new tab)",
+    "file": "data/city_files/Sumter/4a9c61_shotpouchplan.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sumtersc.gov/sites/default/files/uploads/Departments/Planning/SUATS/Connect378/us-378-appendix-d-pedestrian-and-bicycle-counts.pdf",
+    "text": "Appendix D - Pedestrian and Bicycle Counts (PDF, 777.98 KB)",
+    "file": "data/city_files/Sumter/149737_us-378-appendix-d-pedestrian-and-bicycle-counts.pdf",
+    "rows": 686,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://sumtercity.maps.arcgis.com/apps/webappviewer/index.html?id=aa383018b7d847deaf23163aedf70704": "Parcel, Road & Address Map",
+   "https://sumtercity.maps.arcgis.com/apps/instant/media/index.html?appid=1f33ad2e99b34341b7dc9d7362b38001": "Zoning Map",
+   "https://sumtercity.maps.arcgis.com/apps/instant/media/index.html?appid=84c5ef5a83924652a0384d3e9753dabb": "Flood Hazard Map",
+   "https://sumtercity.maps.arcgis.com/apps/instant/nearby/index.html?appid=dc85ab555f5149988ce29cef58e8105f": "Elected Representatives Map",
+   "http://sumtercity.maps.arcgis.com/apps/Styler/index.html?appid=9c817dd6f80442408ea74b77cdf90028": "Area Census Information Map",
+   "https://sumtercity.maps.arcgis.com/apps/instant/media/index.html?appid=3044b733260145feb425fff96720947b": "CENSUS 2020 MAP",
+   "https://sumtercity.maps.arcgis.com/apps/webappviewer/index.html?id=6ae7784b1215451ba0e43321ac6aead6": "Cemetery Location Map",
+   "https://sumtercity.maps.arcgis.com/apps/instant/basic/index.html?appid=f2ac8c6e692048bd82bcd4d8a3de859b": "Sumter Weather Map",
+   "https://experience.arcgis.com/experience/fa08b35ce9ed4ca2973d414adf015446": "SCDOT Programmed Projects",
+   "https://north-main-and-manning-scdot.hub.arcgis.com/": "NORTH MAIN STREET REVITALIZATION",
+   "https://broad-street-at-robert-dinkins-road-scdot.hub.arcgis.com/": "Broad Street @ Robert Dinkins Rd. and @ Alice Dr.",
+   "https://us-378-at-s40-scdot.hub.arcgis.com/pages/overview-of-proejct": "Broad St. @ North Saint Paul's Church Rd. and @ Oleander Dr.",
+   "https://us-378-at-s204-scdot.hub.arcgis.com/pages/overview-of-proejct": "Broad St. @ Loring Mill Rd.",
+   "https://scdot-environmental-project-site-scdot.hub.arcgis.com/pages/s-114-br-over-turkey-creek": "Hauser Street Bridge over Turkey Creek",
+   "https://scdot-environmental-project-site-scdot.hub.arcgis.com/pages/s-152-br-over-csx": "Manning Avenue Bridge over CSX Railroad",
+   "https://scdot-environmental-project-site-scdot.hub.arcgis.com/pages/s-55-br-over-shot-pouch": "Miller Road Bridge over Shot Pouch Creek",
+   "https://scdot.maps.arcgis.com/apps/MapSeries/index.html?appid=9a37df1823c444fdb8a98c80d7dde523": "US-76/378 Bridge Replacements over US-15 and US-76 Business",
+   "https://scdot-environmental-project-site-scdot.hub.arcgis.com/pages/S-528%20over%20Cane%20Savannah%20Bridge%20Replacement": "Kolb Road Bridge over Cane Savannah Creek",
+   "https://scdot-environmental-project-site-scdot.hub.arcgis.com/pages/S-40%20Bridge%20Replacement%20over%20Mush%20Branch": "N. Saint Paul's Church Road Bridge over Mush Branch"
+  }
+ },
+ "Bella Vista": {
+  "files": [],
+  "portals": {}
+ },
+ "Baradero Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Lebanon": {
+  "files": [],
+  "portals": {}
+ },
+ "DeLand": {
+  "files": [],
+  "portals": {
+   "https://delandmaps.maps.arcgis.com/apps/webappviewer/index.html?id=ca49004df9f1437aa2e629f817d0eab8": "Service Days & Restrictions Service Days & Restrictions Service Days & Restrictions Service Days & Restrictions Service "
+  }
+ },
+ "Marion": {
+  "files": [],
+  "portals": {}
+ },
+ "Apóstoles": {
+  "files": [],
+  "portals": {}
+ },
+ "Dartmouth": {
+  "files": [],
+  "portals": {
+   "https://gis.vgsi.com/dartmouthma/": "Vision - Property Record Cards",
+   "https://maps.massgis.digital.mass.gov/MassMapper/MassMapper-Dartmouth.html": "MassMapper",
+   "https://maps.massgis.digital.mass.gov/MassMapper/MassMapperUserGuide.htm": "https://maps.massgis.digital.mass.gov/MassMapper/MassMapperUserGuide.htm"
+  }
+ },
+ "Rochester": {
+  "files": [],
+  "portals": {}
+ },
+ "Cornelius": {
+  "files": [
+   {
+    "url": "https://cornelius.org/subdivsionmap2025.pdf?t=202510091553490",
+    "text": "here",
+    "file": "data/city_files/Cornelius/4e11bd_subdivsionmap2025.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cornelius.org/Document Center/Government/Departments/Planning/Maps/2025-2026 Powell Bill Map Final 070925.pdf?t=202508061050340",
+    "text": "",
+    "file": "data/city_files/Cornelius/c94924_2025-2026_Powell_Bill_Map_Final_070925.pdf",
+    "rows": 38,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cornelius.org/2025-2026 Powell Bill Map Final 070925.pdf?t=202602131022080",
+    "text": "Powell Bill Map",
+    "file": "data/city_files/Cornelius/d20fea_2025-2026_Powell_Bill_Map_Final_070925.pdf",
+    "rows": 38,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cornelius.org/Document Center/Government/Departments/Public Works/Trash Collection Schedule.pdf?t=202402051125210",
+    "text": "TRASH ROUTES",
+    "file": "data/city_files/Cornelius/ecce29_Trash_Collection_Schedule.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cornelius.org/Document Center/Government/Departments/Parks & Recreation/Parks, Facilities & Fields/Greenways & Trails/Cornelius Greenway Segments 2025.pdf?t=202504211318080",
+    "text": "here",
+    "file": "data/city_files/Cornelius/cd65ca_Cornelius_Greenway_Segments_2025.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cornelius.org/park/parks_facilities___fields/docs/Cornelius Greenway Antiquity.pdf?t=202403261104090",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/309bb9_Cornelius_Greenway_Antiquity.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cornelius.org/park/parks_facilities___fields/docs/BRP Fitness Trail Map.pdf?t=202403261104330",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/ba4ba2_BRP_Fitness_Trail_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cornelius.org/park/parks_facilities___fields/docs/Cornelius Greenway Caldwell Station.pdf?t=202403261104550",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/44c556_Cornelius_Greenway_Caldwell_Station.pdf",
+    "rows": 15,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cornelius.org/park/parks_facilities___fields/docs/Jetton Road Mini.pdf?t=202403261105250",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/316171_Jetton_Road_Mini.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cornelius.org/park/parks_facilities___fields/docs/Jetton Park Map.pdf?t=202403261105450",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/0199d2_Jetton_Park_Map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cornelius.org/park/parks_facilities___fields/docs/Legion.pdf?t=202403261106030",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/0fcdcc_Legion.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cornelius.org/park/parks_facilities___fields/docs/Cornelius Greenway Plum Creek.pdf?t=202403261106550",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/c873b3_Cornelius_Greenway_Plum_Creek.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cornelius.org/park/parks_facilities___fields/docs/WAC & Robbins Park Map 2025.pdf?t=202505151559080",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/b5c1f6_WAC_Robbins_Park_Map_2025.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cornelius.org/park/parks_facilities___fields/docs/TCP.pdf?t=202403261107400",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/2c3c09_TCP.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cornelius.org/park/parks_facilities___fields/docs/Walter Henderson.pdf?t=202403261107590",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/79ee1a_Walter_Henderson.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/2025-2026 Powell Bill Map Final 070925.pdf?t=202602131022080",
+    "text": "Powell Bill Map",
+    "file": "data/city_files/Cornelius/46c21d_2025-2026_Powell_Bill_Map_Final_070925.pdf",
+    "rows": 38,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cornelius.org/Document Center/Government/Departments/Parks & Recreation/Parks, Facilities & Fields/Greenways & Trails/2018.10.2.SMV-JVW Map-Greenway Fact Sheet_201810040924278194.pdf?t=202407031430320",
+    "text": "View the proposed map.",
+    "file": "data/city_files/Cornelius/065b85_2018.10.2.SMV-JVW_Map-Greenway_Fact_Sheet_201810040924278194.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/Document Center/Government/Departments/Parks & Recreation/Parks, Facilities & Fields/Greenways & Trails/Cornelius Greenway Segments 2025.pdf?t=202504211318080",
+    "text": "Full greenway Map",
+    "file": "data/city_files/Cornelius/c75f7c_Cornelius_Greenway_Segments_2025.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cornelius.org/Document Center/Government/Departments/Parks & Recreation/Parks, Facilities & Fields/Greenways & Trails/Town of Cornelius Greenway Rules (1).pdf?t=202312141151500",
+    "text": "Download the Cornelius Parks & Recreation Department's Greenway Rules.",
+    "file": "data/city_files/Cornelius/1744c6_Town_of_Cornelius_Greenway_Rules_1_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cornelius.org/Document Center/Government/Departments/Parks & Recreation/Parks, Facilities & Fields/Greenways & Trails/MCPRD Greenway Rules (1).pdf?t=202312141151480",
+    "text": "Download the Mecklenburg County Park & Recreation Department Rules.",
+    "file": "data/city_files/Cornelius/e75883_MCPRD_Greenway_Rules_1_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/subdivsionmap2025.pdf?t=202510091553490",
+    "text": "here",
+    "file": "data/city_files/Cornelius/514ced_subdivsionmap2025.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cornelius.org/Document Center/Government/Departments/Planning/Maps/2025-2026 Powell Bill Map Final 070925.pdf?t=202508061050340",
+    "text": "",
+    "file": "data/city_files/Cornelius/836bd1_2025-2026_Powell_Bill_Map_Final_070925.pdf",
+    "rows": 38,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cornelius.org/Document Center/Government/Departments/Public Works/Trash Collection Schedule.pdf?t=202402051125210",
+    "text": "TRASH ROUTES",
+    "file": "data/city_files/Cornelius/d84bd7_Trash_Collection_Schedule.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/park/parks_facilities___fields/docs/Cornelius Greenway Antiquity.pdf?t=202403261104090",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/6fd5ff_Cornelius_Greenway_Antiquity.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cornelius.org/park/parks_facilities___fields/docs/BRP Fitness Trail Map.pdf?t=202403261104330",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/5bd7e6_BRP_Fitness_Trail_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/park/parks_facilities___fields/docs/Cornelius Greenway Caldwell Station.pdf?t=202403261104550",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/b4ff56_Cornelius_Greenway_Caldwell_Station.pdf",
+    "rows": 15,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cornelius.org/park/parks_facilities___fields/docs/Jetton Road Mini.pdf?t=202403261105250",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/36f6e1_Jetton_Road_Mini.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/park/parks_facilities___fields/docs/Jetton Park Map.pdf?t=202403261105450",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/f679da_Jetton_Park_Map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/park/parks_facilities___fields/docs/Legion.pdf?t=202403261106030",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/b7a1fe_Legion.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/park/parks_facilities___fields/docs/Cornelius Greenway Plum Creek.pdf?t=202403261106550",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/799b48_Cornelius_Greenway_Plum_Creek.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cornelius.org/park/parks_facilities___fields/docs/WAC & Robbins Park Map 2025.pdf?t=202505151559080",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/75d468_WAC_Robbins_Park_Map_2025.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/park/parks_facilities___fields/docs/TCP.pdf?t=202403261107400",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/abd2d7_TCP.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/park/parks_facilities___fields/docs/Walter Henderson.pdf?t=202403261107590",
+    "text": "View the map",
+    "file": "data/city_files/Cornelius/9bd0a6_Walter_Henderson.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cornelius.org/Windshield Survey Update 05-02-2013_201501281221506505.pdf?t=202403281401290",
+    "text": "Cornelius Historic Survey",
+    "file": "data/city_files/Cornelius/6fcbdc_Windshield_Survey_Update_05-02-2013_201501281221506505.pdf",
+    "rows": 1008,
+    "bike_rows": 62
+   },
+   {
+    "url": "https://www.cornelius.org/Document Center/Government/Departments/Parks & Recreation/Parks, Facilities & Fields/Greenways & Trails/Town of Cornelius Greenway Rules (1).pdf?t=202312141151500",
+    "text": "Download the Cornelius Parks & Recreation Department's Greenway Rules.",
+    "file": "data/city_files/Cornelius/729bd1_Town_of_Cornelius_Greenway_Rules_1_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/Document Center/Government/Departments/Parks & Recreation/Parks, Facilities & Fields/Greenways & Trails/MCPRD Greenway Rules (1).pdf?t=202312141151480",
+    "text": "Download the Mecklenburg County Park & Recreation Department Rules.",
+    "file": "data/city_files/Cornelius/77b44b_MCPRD_Greenway_Rules_1_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cornelius.org/Document Center/Government/Departments/Parks & Recreation/Parks, Facilities & Fields/Greenways & Trails/2018.10.2.SMV-JVW Map-Greenway Fact Sheet_201810040924278194.pdf?t=202407031430320",
+    "text": "View the proposed map.",
+    "file": "data/city_files/Cornelius/0fb180_2018.10.2.SMV-JVW_Map-Greenway_Fact_Sheet_201810040924278194.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://protect-us.mimecast.com/s/hCsLCBBAPpu7WBoCzPjwV?domain=survey123.arcgis.com": "Report Aquatic Plants",
+   "https://www.arcgis.com/apps/dashboards/b18feebed13c401892083d3d32c744b9": "ZONING",
+   "https://www.arcgis.com/apps/dashboards/dd6b225b8e5f4da39babd280c80218a8": "LAND USE",
+   "https://cornelius.maps.arcgis.com/apps/dashboards/f1d25dc5ee1f4f4289f15e98db37b8be": "SUBDIVISIONS",
+   "https://cornelius.maps.arcgis.com/apps/dashboards/bb6f1c5723bd450198a65f5b0118478b": "TRANSIENT OCCUPANCY",
+   "https://www.arcgis.com/apps/dashboards/b1e9ae88f4784a6aaa1d1064749f1ce9": "WATERSHED",
+   "https://storymaps.arcgis.com/stories/be86d7ddbc8247419e1fc9f8ad63d563": "corneliusparkbonds.com."
+  }
+ },
+ "Vernon": {
+  "files": [],
+  "portals": {
+   "https://www.vernon-ct.gov/page/hockanum-river-linear-park-trail/": "Skip to content",
+   "https://www.vernon-ct.gov/page/hockanum-river-linear-park-trail": "Hockanum River Linear Park Trail",
+   "https://www.vernon-ct.gov/documents/points-of-interest/hockanum-river-linear-park-trail/743583": "Skip to content"
+  }
+ },
+ "Jacksonville": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/6d67d71aad6f4b319ae926568ea61787": "StoryMap"
+  }
+ },
+ "New Iberia": {
+  "files": [
+   {
+    "url": "https://www.cityofnewiberia.com/_files/ugd/d70e98_92cd60a7bd2c4da89d2a9734311c8cde.pdf",
+    "text": "More Historic Downtown New Iberia information here!",
+    "file": "data/city_files/New_Iberia/746bb6_d70e98_92cd60a7bd2c4da89d2a9734311c8cde.pdf",
+    "rows": 23,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofnewiberia.com/_files/ugd/f4f72f_31fc755806c3498f8e75ad1ce2eecd2c.pdf",
+    "text": "Garbage & Recycling",
+    "file": "data/city_files/New_Iberia/a94a1f_f4f72f_31fc755806c3498f8e75ad1ce2eecd2c.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofnewiberia.com/_files/ugd/d70e98_ef21d2d20a7a4dad82e1854115108343.pdf",
+    "text": "Recycle Schedule",
+    "file": "data/city_files/New_Iberia/62f047_d70e98_ef21d2d20a7a4dad82e1854115108343.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ }
+}
