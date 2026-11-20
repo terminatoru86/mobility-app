@@ -1,12 +1,12 @@
-# work: 8794 places
+# work: 7900 places
 
-By kind: {'industrial': 8228, 'business_park': 566}
+By kind: {'industrial': 7511, 'business_park': 389}
 
-Websites: 2510 · read: 1866/2510
+Websites: 2107 · read: 1552/2107
 
-Websites that mention: {'bike': 32, 'moto': 2, 'scooter': 0, 'rent': 0, 'pump': 4, 'repair': 3, 'charge': 0, 'wash': 0, 'mwash': 0}
+Websites that mention: {'bike': 24, 'moto': 0, 'scooter': 0, 'rent': 1, 'pump': 1, 'repair': 3, 'charge': 0, 'wash': 0, 'mwash': 0}
 
-Added (not on the map within 300 m): 27 · {'bicycle_parking': 19, 'compressed_air': 4, 'bicycle_repair_station': 3, 'motorcycle_parking': 1}
+Added (not on the map within 300 m): 23 · {'bicycle_parking': 18, 'bicycle_rental': 1, 'compressed_air': 1, 'bicycle_repair_station': 3}
 
 ## Added around Chicago
 - Pace Bus North Shore Division Garage · bike parking · https://www.pacebus.com/bikesonbuses

@@ -1,14 +1,14 @@
-# Theme parks, marinas and beaches: 62936 places
+# Theme parks, marinas and beaches: 63112 places
 
-By kind: {'marina': 16958, 'theme_park': 13785, 'beach': 28441, 'water_park': 3752}
+By kind: {'marina': 17049, 'theme_park': 13786, 'beach': 28616, 'water_park': 3661}
 
-Websites: 27232 · read: 17655
+Websites: 27262 · read: 17658
 
-Websites that mention parking: {'bike': 216, 'moto': 18, 'scooter': 1, 'rent': 427, 'pump': 23, 'repair': 16, 'charge': 1, 'wash': 2, 'mwash': 0}
+Websites that mention parking: {'bike': 240, 'moto': 20, 'scooter': 1, 'rent': 437, 'pump': 23, 'repair': 16, 'charge': 1, 'wash': 2, 'mwash': 0}
 
-Parking added (not on the map within 300 m): 545 · {'bicycle_parking': 150, 'bicycle_rental': 339, 'bicycle_repair_station': 15, 'motorcycle_parking': 14, 'compressed_air': 23, 'bicycle_wash': 2, 'charging_station': 1, 'small_electric_vehicle_parking': 1}
+Parking added (not on the map within 300 m): 580 · {'bicycle_parking': 175, 'bicycle_rental': 348, 'bicycle_repair_station': 15, 'compressed_air': 23, 'motorcycle_parking': 15, 'bicycle_wash': 2, 'charging_station': 1, 'small_electric_vehicle_parking': 1}
 
-Waterfront bike paths: 743 (4322 km)
+Waterfront bike paths: 593 (3202 km)
 
 ## Added around Chicago
 - Green Lake Family Aquatic Center · bike parking · fee=? · https://fpdcc.com/places/locations/crabtree-nature-center/
