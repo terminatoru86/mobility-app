@@ -1,0 +1,1498 @@
+{
+ "Madison WI": {
+  "files": [
+   {
+    "url": "https://www.cityofmadison.com/parking/documents/RP3%20OnlinePermitProcess.pdf",
+    "text": "Application Process Instructions",
+    "file": "data/city_files/Madison_WI/2e3243_RP3_20OnlinePermitProcess.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofmadison.com/parking/documents/RP3_Application.pdf",
+    "text": "Application Form",
+    "file": "data/city_files/Madison_WI/efe9bb_RP3_Application.pdf",
+    "rows": 19,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofmadison.com/parking/data/ramp-availability.json",
+    "text": "Get JSON format data",
+    "file": "data/city_files/Madison_WI/7551c1_ramp-availability.json",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmadison.com/parking/data/ramp-availability.json",
+    "text": "Get JSON format data",
+    "file": "data/city_files/Madison_WI/46855d_ramp-availability.json",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofmadison.com/parks/documents/maps/ParksMap.pdf",
+    "text": "Download Park Map",
+    "file": "data/city_files/Madison_WI/6a2517_ParksMap.pdf",
+    "rows": 3,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityofmadison.com/mobility/documents/TaxiStndMapCurrent.pdf",
+    "text": "Taxi Stand Locations",
+    "file": "data/city_files/Madison_WI/959687_TaxiStndMapCurrent.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofmadison.com/transportation/documents/complete-green-streets/AppendixE_TreeCanopyMap_TreeGuidance.pdf",
+    "text": "ROW Tree Canopy Map",
+    "file": "data/city_files/Madison_WI/94d21b_AppendixE_TreeCanopyMap_TreeGuidance.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofmadison.com/transportation/documents/complete-green-streets/AppendixE_TreeGuidance.pdf",
+    "text": "Green Infrastructure Map",
+    "file": "data/city_files/Madison_WI/a717c2_AppendixE_TreeGuidance.pdf",
+    "rows": 13,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityofmadison.com/transportation/documents/complete-green-streets/AppendixE_FloodingFrequencyMap_DRAFT09232022%2010.pdf",
+    "text": "Flooding Frequency",
+    "file": "data/city_files/Madison_WI/60b492_AppendixE_FloodingFrequencyMap_DRAFT09232022_2010.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofmadison.com/transportation/documents/complete-green-streets/AppendixE_SaltRouteMap_DRAFT09232022%209.pdf",
+    "text": "Salt Route Map",
+    "file": "data/city_files/Madison_WI/6caca2_AppendixE_SaltRouteMap_DRAFT09232022_209.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofmadison.com/transportation/documents/complete-green-streets/AppendixE_WellheadProtectionZonesMap_DRAFT09232022%204.pdf",
+    "text": "Wellhead Protection Zones",
+    "file": "data/city_files/Madison_WI/6c8d17_AppendixE_WellheadProtectionZonesMap_DRAFT09232022_204.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofmadison.com/transportation/documents/lets-talk-streets/Street%20Stats%20reduced.pdf",
+    "text": "Maps & Data",
+    "file": "data/city_files/Madison_WI/936f1a_Street_20Stats_20reduced.pdf",
+    "rows": 13,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cityofmadison.com/parks/documents/projects/20260924-%20Odana%20PIM%20Boards%20-%20Site.pdf",
+    "text": "Preliminary Outdoor Space Layout Options and Parking Lot",
+    "file": "data/city_files/Madison_WI/077f78_20260924-_20Odana_20PIM_20Boards_20-_20Site.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofmadison.com/parks/documents/projects/Odana%20Path%20Slides_2026.09.24.pdf",
+    "text": "Odana Road Bike Path Design",
+    "file": "data/city_files/Madison_WI/8931cb_Odana_20Path_20Slides_2026.09.24.pdf",
+    "rows": 11,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofmadison.com/parks/documents/blog/FINAL-AmFamChampTPC-Community%20Map.pdf",
+    "text": "AmFam Champ TPC Community Map",
+    "file": "data/city_files/Madison_WI/0e2c9b_FINAL-AmFamChampTPC-Community_20Map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmadison.com/public-works/documents/private-development-plans/14892_LakeStN415.pdf",
+    "text": "Lake St., N., 415., State Street Campus Garage Mixed Use",
+    "file": "data/city_files/Madison_WI/42b46c_14892_LakeStN415.pdf",
+    "rows": 334,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofmadison.com/public-works/documents/private-development-plans/13496_MadisonYards-Phase1.pdf",
+    "text": "Madison Yards at Hill Farms - Phase 1 (Lot 6)",
+    "file": "data/city_files/Madison_WI/62657f_13496_MadisonYards-Phase1.pdf",
+    "rows": 49,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmadison.com/public-works/documents/private-development-plans/12310_MapleGrove3840.pdf",
+    "text": "Maple Grove Dr., 3840 (Fred-Maple Grove Drive)",
+    "file": "data/city_files/Madison_WI/77237b_12310_MapleGrove3840.pdf",
+    "rows": 1414,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://cityofmadison.com/public-works/documents/private-development-plans/12771_MapleGrove3840-Stormwater.pdf",
+    "text": "Maple Grove Dr., 3840 (Fred-Maple Grove Drive) Stormwater Management",
+    "file": "data/city_files/Madison_WI/cc569c_12771_MapleGrove3840-Stormwater.pdf",
+    "rows": 22,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.cityofmadison.com/public-works/documents/private-development-plans/14892_LakeStN415.pdf",
+    "text": "Lake St., N., 415., State Street Campus Garage Mixed Use",
+    "file": "data/city_files/Madison_WI/5c25aa_14892_LakeStN415.pdf",
+    "rows": 334,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityofmadison.com/public-works/documents/private-development-plans/13496_MadisonYards-Phase1.pdf",
+    "text": "Madison Yards at Hill Farms - Phase 1 (Lot 6)",
+    "file": "data/city_files/Madison_WI/d07275_13496_MadisonYards-Phase1.pdf",
+    "rows": 49,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofmadison.com/public-works/documents/private-development-plans/12310_MapleGrove3840.pdf",
+    "text": "Maple Grove Dr., 3840 (Fred-Maple Grove Drive)",
+    "file": "data/city_files/Madison_WI/7ea4bc_12310_MapleGrove3840.pdf",
+    "rows": 1414,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://www.cityofmadison.com/public-works/documents/private-development-plans/12771_MapleGrove3840-Stormwater.pdf",
+    "text": "Maple Grove Dr., 3840 (Fred-Maple Grove Drive) Stormwater Management",
+    "file": "data/city_files/Madison_WI/d672cc_12771_MapleGrove3840-Stormwater.pdf",
+    "rows": 22,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.cityofmadison.com/live-work/winter/documents/SaltRoutes.pdf",
+    "text": "salt routes",
+    "file": "data/city_files/Madison_WI/b13a49_SaltRoutes.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cityofmadison.com/parking/documents/events/PreplanningSpecialEvent_KohlCenter.pdf",
+    "text": "Downloadable Map",
+    "file": "data/city_files/Madison_WI/01f7ff_PreplanningSpecialEvent_KohlCenter.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofmadison.com/parking/documents/2022-09-14%20SSCa%20PIM.pdf",
+    "text": "View the PowerPoint Presentation",
+    "file": "data/city_files/Madison_WI/1c0c18_2022-09-14_20SSCa_20PIM.pdf",
+    "rows": 26,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.cityofmadison.com/parking/documents/DowntownMotorcycle%26Moped.pdf",
+    "text": "Motorcycle Parking Map",
+    "file": "data/city_files/Madison_WI/a1c727_DowntownMotorcycle_26Moped.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofmadison.com/parking/documents/MonroeStMotorcycle%26Moped.pdf",
+    "text": "Motorcycle Parking Map",
+    "file": "data/city_files/Madison_WI/e2e22f_MonroeStMotorcycle_26Moped.pdf",
+    "rows": 7,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.cityofmadison.com/parks/documents/blog/FINAL-AmFamChampTPC-Community%20Map.pdf",
+    "text": "AmFam Champ TPC Community Map",
+    "file": "data/city_files/Madison_WI/bace9b_FINAL-AmFamChampTPC-Community_20Map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://apps.dnr.wi.gov/doclink/waext/WA1427.pdf",
+    "text": "required to be recycled by state",
+    "file": "data/city_files/Madison_WI/68ff50_WA1427.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofmadison.com/streets/documents/Recycling Word Find.pdf",
+    "text": "Recycling Word Find",
+    "file": "data/city_files/Madison_WI/becd6e_Recycling_Word_Find.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofmadison.com/streets/documents/Truck Maze.pdf",
+    "text": "Recycling Truck Maze",
+    "file": "data/city_files/Madison_WI/62e337_Truck_Maze.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofmadison.com/streets/documents/assets/Recyclopedia.pdf",
+    "text": "Recyclopedia 2025",
+    "file": "data/city_files/Madison_WI/4ac0eb_Recyclopedia.pdf",
+    "rows": 170,
+    "bike_rows": 57
+   },
+   {
+    "url": "https://www.cityofmadison.com/streets/documents/assets/Recyclopedia%20-%20Spanish.pdf",
+    "text": "Spanish",
+    "file": "data/city_files/Madison_WI/09b005_Recyclopedia_20-_20Spanish.pdf",
+    "rows": 175,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://www.cityofmadison.com/streets/documents/assets/RecyclopediaMini.pdf",
+    "text": "Mini Recyclopedia 2024",
+    "file": "data/city_files/Madison_WI/ad31b7_RecyclopediaMini.pdf",
+    "rows": 12,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.cityofmadison.com/streets/documents/assets/Recycling Cart Lid Guide.pdf",
+    "text": "Cart Lid Guide - Vinyl Sticker",
+    "file": "data/city_files/Madison_WI/287bf8_Recycling_Cart_Lid_Guide.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityofmadison.com/streets/documents/assets/SimpleRecyclingGuide.pdf",
+    "text": "Simple Recycling Guide",
+    "file": "data/city_files/Madison_WI/57b657_SimpleRecyclingGuide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofmadison.com/streets/documents/assets/RecyclingGuidelinesFlyer.pdf",
+    "text": "Recycling Guidelines Flyer",
+    "file": "data/city_files/Madison_WI/4c6667_RecyclingGuidelinesFlyer.pdf",
+    "rows": 18,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://cityofmadison.com/streets/documents/assets/Recyclopedia%20-%20Spanish.pdf",
+    "text": "Spanish",
+    "file": "data/city_files/Madison_WI/6ad291_Recyclopedia_20-_20Spanish.pdf",
+    "rows": 175,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://cityofmadison.com/streets/documents/assets/Student%20Move%20Out%20MAP%20PDF%20VERSION.pdf",
+    "text": "download a PDF version",
+    "file": "data/city_files/Madison_WI/002f92_Student_20Move_20Out_20MAP_20PDF_20VERSION.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cityofmadison.maps.arcgis.com/apps/webappviewer/index.html?id=9d502523f16743d690f1a0d2e07d71f8": "collection schedule map",
+   "https://cityofmadison.maps.arcgis.com/apps/webappviewer/index.html?id=ec304e3d3b17419cba46069b226fc7fb": "View full map",
+   "http://cityofmadison.maps.arcgis.com/apps/webappviewer/index.html?id=9240a22c6f4348bf99eb56a01193a1a6": "check your eligibility",
+   "https://cityofmadison.maps.arcgis.com/apps/mapviewer/index.html?webmap=b61891e9d1eb41bfb86d0c7d6d85dcd3": "permit to spaces ratio",
+   "https://cityofmadison.maps.arcgis.com/apps/mapviewer/index.html?webmap=e2e5a03027ec412198d6d850273235a2": "Find your Local Crossing Guard Location",
+   "https://docs.legis.wisconsin.gov/statutes/statutes/66/ix/0901": "WI State Statue 66.0901",
+   "https://data-cityofmadison.opendata.arcgis.com": "Open Data Portal",
+   "https://cityofmadison.maps.arcgis.com/apps/webappviewer/index.html?id=1734bfa1086e4037adbd6882e28a6e61": "City of Madison Official Map",
+   "https://docs.legis.wisconsin.gov/2015/related/acts/302": "state law prohibits municipalities from banning plastic bags",
+   "https://cityofmadison.maps.arcgis.com/apps/webappviewer/index.html?id=cb7a2e78477044c19bf6a5eaa1820e38": "",
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=054c8e1fc0754301909c7536b8f84dd9": "Pedestrian Facilities Map",
+   "https://cityofmadison.maps.arcgis.com/apps/mapviewer/index.html?webmap=e2e5a03027ec412198d6d850273235a2 ": "Crossing Guard Map",
+   "https://cityofmadison.maps.arcgis.com/apps/instant/sidebar/index.html?appid=05d56909842b47a0b8f469dd94b52868": "Dane County Bicycle Map",
+   "https://experience.arcgis.com/template/f7c2bd9c2e2547e89ace34d91be02aa8": "Low Stress Bike Route Finder",
+   "https://storymaps.arcgis.com/stories/a7f2c517eff14f9baf71cdf37178e47a": "Featured Shared-Use Trails in Dane County",
+   "https://storymaps.arcgis.com/stories/52bda717b8a544169a62f691746c77b8": "Lake Wingra Loop",
+   "https://experience.arcgis.com/experience/ea2f6bf1d0e34ba486e79253d3829a6d": "Pedestrian Facilities Map",
+   "https://data-cityofmadison.opendata.arcgis.com/datasets/ca2f066d03b6473f821912dd34799e7a_20/explore?location=43.067549%2C-89.398750%2C14.92": "City’s Open Data Portal",
+   "https://data-cityofmadison.opendata.arcgis.com/datasets/1c0a7833541c4154907327d6762845c6_21/explore": "Other Bike Count Data",
+   "http://cityofmadison.maps.arcgis.com/apps/webappviewer/index.html?id=84864ef97aa444b3893cd8a7330eec42": "View full size map",
+   "https://data.census.gov/": "data"
+  }
+ },
+ "New York City": {
+  "files": [
+   {
+    "url": "https://nyc.gov/html/dot/downloads/pdf/bicyclerules-english.pdf",
+    "text": "Download a complete list of New York City\n\t\t\tbicycle rules (pdf)",
+    "file": "data/city_files/New_York_City/79dfe6_bicyclerules-english.pdf",
+    "rows": 11,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/muni_meter_flyer.pdf",
+    "text": "Download a printable version of these instructions (pdf)",
+    "file": "data/city_files/New_York_City/6ee738_muni_meter_flyer.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/pay-by-plate-implementation-schedule.pdf",
+    "text": "Pay-By-Plate Parking Meter Installation Schedule*",
+    "file": "data/city_files/New_York_City/27cb69_pay-by-plate-implementation-schedule.pdf",
+    "rows": 3252,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nyc.gov/html/dot/downloads/pdf/greater-greenways-development-report.pdf",
+    "text": "Greater Greenways 2026\r\n      Development Report (pdf)",
+    "file": "data/city_files/New_York_City/8183a1_greater-greenways-development-report.pdf",
+    "rows": 31,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://nyc.gov/html/dot/downloads/pdf/greater-greenways-spread.pdf",
+    "text": "Greater Greenways: NYC Greenway Plan\r\n      (spread pdf)",
+    "file": "data/city_files/New_York_City/67ca29_greater-greenways-spread.pdf",
+    "rows": 167,
+    "bike_rows": 47
+   },
+   {
+    "url": "https://council.nyc.gov/gale-brewer/wp-content/uploads/sites/90/2025/09/Rotunda-Stage-2-Pedestrian-and-Cyclist-Access-Transfer.pdf",
+    "text": "79th\r\n      Street Rotunda Reconstruction - NYC DOT & NYC Parks",
+    "file": "data/city_files/New_York_City/c84d1a_Rotunda-Stage-2-Pedestrian-and-Cyclist-Access-Transfer.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www1.nyc.gov/html/dot/downloads/pdf/jamaica-bay-plan-mar2017.pdf",
+    "text": "Jamaica Bay Greenway\r\n    Implementation Plan",
+    "file": "data/city_files/New_York_City/77361e_jamaica-bay-plan-mar2017.pdf",
+    "rows": 46,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/greater-greenways-development-report.pdf",
+    "text": "Greater Greenways 2026\r\n      Development Report (pdf)",
+    "file": "data/city_files/New_York_City/0ac350_greater-greenways-development-report.pdf",
+    "rows": 31,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/greater-greenways-spread.pdf",
+    "text": "Greater Greenways: NYC Greenway Plan\r\n      (spread pdf)",
+    "file": "data/city_files/New_York_City/df4adf_greater-greenways-spread.pdf",
+    "rows": 167,
+    "bike_rows": 47
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/bike-safety-plan.pdf",
+    "text": "Green Wave: A Plan for\r\n      Cycling in New York City report",
+    "file": "data/city_files/New_York_City/7ffbdf_bike-safety-plan.pdf",
+    "rows": 79,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/safe-streets-for-cycling.pdf",
+    "text": "Safe Streets for Cycling: How\r\n      Street\r\n      Design Affects Bicycle Safety and Ridership (pdf)",
+    "file": "data/city_files/New_York_City/68fe81_safe-streets-for-cycling.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/bike-safety-study-fullreport2017.pdf",
+    "text": "Safer\r\n      Cycling: Bicycle Ridership and Safety in New York City (2017)",
+    "file": "data/city_files/New_York_City/c0eea4_bike-safety-study-fullreport2017.pdf",
+    "rows": 326,
+    "bike_rows": 49
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/safer-charging-safer-deliveries.pdf",
+    "text": "Safer Charging, Safer Deliveries: Lessons from NYC\r\n      DOT”s Public E-Bike Charging Pilot (pdf)",
+    "file": "data/city_files/New_York_City/308466_safer-charging-safer-deliveries.pdf",
+    "rows": 69,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/cycling-at-a-crossroads-2018.pdf",
+    "text": "Download Cycling at a\r\n      Crossroads\r\n      (pdf)",
+    "file": "data/city_files/New_York_City/4d17aa_cycling-at-a-crossroads-2018.pdf",
+    "rows": 248,
+    "bike_rows": 54
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/cycling-at-a-crossroads-appendix-2018.pdf",
+    "text": "Download Cycling at a\r\n      Crossroads Appendix (pdf)",
+    "file": "data/city_files/New_York_City/e3ca05_cycling-at-a-crossroads-appendix-2018.pdf",
+    "rows": 152,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/bike-lpi-study-memo.pdf",
+    "text": "Download\r\n    the Bicyclists Use of Leading Pedestrian Intervals: Pilot Program Results (pdf)",
+    "file": "data/city_files/New_York_City/b0fb01_bike-lpi-study-memo.pdf",
+    "rows": 37,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/east-bronx-shared-e-scooter-pilot-report.pdf",
+    "text": "East Bronx Shared E-Scooter Pilot Report\r\n    (pdf)",
+    "file": "data/city_files/New_York_City/6b916c_east-bronx-shared-e-scooter-pilot-report.pdf",
+    "rows": 32,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/truck-network-redesign-report.pdf",
+    "text": "Truck Route Network Redesign\r\n      Report",
+    "file": "data/city_files/New_York_City/3c2ef1_truck-network-redesign-report.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/woodhaven-blvd.pdf",
+    "text": "Woodhaven Boulevard Congested\r\n              Corridor Study",
+    "file": "data/city_files/New_York_City/cc7a41_woodhaven-blvd.pdf",
+    "rows": 425,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/dbstc_final_report.pdf",
+    "text": "Downtown Brooklyn\r\n      Surface Transit Circulation Study Final Report",
+    "file": "data/city_files/New_York_City/47573d_dbstc_final_report.pdf",
+    "rows": 304,
+    "bike_rows": 56
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/sirta-report-q3-2026.pdf",
+    "text": "Serious Injury Response, Tracking & Analysis\r\n      (SIRTA) Report – Quarter 3, 2026 (pdf)",
+    "file": "data/city_files/New_York_City/69dce1_sirta-report-q3-2026.pdf",
+    "rows": 983,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/sirta-report-q2-2026.pdf",
+    "text": "Serious Injury Response, Tracking & Analysis\r\n      (SIRTA) Report – Quarter 2, 2026 (pdf)",
+    "file": "data/city_files/New_York_City/7b3cc0_sirta-report-q2-2026.pdf",
+    "rows": 927,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/sirta-report-q1-2026.pdf",
+    "text": "Serious Injury Response, Tracking & Analysis\r\n      (SIRTA) Report – Quarter 1, 2026 (pdf)",
+    "file": "data/city_files/New_York_City/d5739c_sirta-report-q1-2026.pdf",
+    "rows": 662,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/sirta-report-q4-2025.pdf",
+    "text": "Serious Injury Response, Tracking & Analysis\r\n      (SIRTA) Report – Quarter 4, 2025 (pdf)",
+    "file": "data/city_files/New_York_City/2f947c_sirta-report-q4-2025.pdf",
+    "rows": 888,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/nyc-cycling-risk.pdf",
+    "text": "Cycling Risk Indicator\r\n      2000-2018",
+    "file": "data/city_files/New_York_City/0fbc1e_nyc-cycling-risk.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/left-turn-pedestrian-and-bicycle-crash-study.pdf",
+    "text": "Don't Cut\r\n      Corners: Left Turn Pedestrian and Bicycle Crash Study – Final Report – August 2016",
+    "file": "data/city_files/New_York_City/64482e_left-turn-pedestrian-and-bicycle-crash-study.pdf",
+    "rows": 128,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/pavement-marking-specs-mma-cst.pdf",
+    "text": "Color Surface Treatment for Bicycle\r\n        Lanes, Bus Lanes and Walking Facilities",
+    "file": "data/city_files/New_York_City/b6ed00_pavement-marking-specs-mma-cst.pdf",
+    "rows": 15,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/commercial-bicyclist-safety-poster.pdf",
+    "text": "English | Delivery Cyclist Safety\n            Poster (pdf)",
+    "file": "data/city_files/New_York_City/07f4dd_commercial-bicyclist-safety-poster.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/commercial-bicyclist-safety-poster-chinese.pdf",
+    "text": "Chinese (Traditional) | 自行車貨遞員人身安全\n            (pdf)",
+    "file": "data/city_files/New_York_City/3dfacd_commercial-bicyclist-safety-poster-chinese.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nyc.gov/html/dot/downloads/pdf/commercial-bicyclist-safety-poster-greek.pdf",
+    "text": "Greek | Θέματα ασφάλειας για\n            επαγγελματίες ποδηλάτες (pdf)",
+    "file": "data/city_files/New_York_City/270e3c_commercial-bicyclist-safety-poster-greek.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://nyc.gov/opendata": "Open Data",
+   "https://nyc.gov/opendata/browse-data-by-agency": "Browse datasets by agency",
+   "https://data.cityofnewyork.us/browse?q=&sortBy=newest&utf8": "Browse all datasets",
+   "https://nyc.gov/opendata/get-started": "Get started",
+   "https://nyc.gov/opendata/get-started/what-is-open-data-": "What is Open Data?",
+   "https://nyc.gov/opendata/get-started/attend-a-class": "Attend a class",
+   "https://nyc.gov/opendata/get-started/user-guides": "User guides",
+   "https://nyc.gov/opendata/get-started/gallery": "Gallery",
+   "https://nyc.gov/opendata/get-started/FAQs": "FAQs",
+   "https://nyc.gov/opendata/news": "News",
+   "https://nyc.gov/opendata/news/all-news": "See all news",
+   "https://nyc.gov/opendata/news/reports": "Reports",
+   "https://nyc.gov/opendata/news/open-data-mailing-list": "Newsletter",
+   "https://nyc.gov/opendata/contact-us": "Contact us",
+   "https://data.cityofnewyork.us/browse?tags=climate&sortBy=last_modified&pageSize=20": "Climate",
+   "https://data.cityofnewyork.us/browse?tags=housing&sortBy=last_modified&pageSize=20": "Housing",
+   "https://data.cityofnewyork.us/browse?tags=food&sortBy=last_modified&pageSize=20": "Food",
+   "https://data.cityofnewyork.us/browse?tags=pedestrian&sortBy=last_modified&pageSize=20": "Walking",
+   "https://nyc.gov/opendata/news/all-news/Open-Data-Week-2027-Call-for-Proposals": "November 16, 2026 Open Data Week 2027 call for proposals The call for proposals is open. Send us your ideas by December ",
+   "https://nyc.gov/opendata/news/all-news/ZIP-Code-Boundaries-on-NYC-Open-Data": "ZIP code boundaries on NYC Open Data",
+   "https://nyc.gov/opendata/news/all-news/Welcome-to-the-new-NYC-Open-Data-website": "Welcome to the new NYC Open Data website!",
+   "https://nyc.gov/opendata/open-data-dashboard": "Open Data Dashboard",
+   "https://nyc.gov/opendata/open-data-coordinators": "Open Data Coordinator resources",
+   "https://data.cityofnewyork.us/Transportation/Parking-Meters-Citywide-Rate-Zones/da76-p95d": "Parking Meter – Citywide Rate Zones on NYC Open Data",
+   "https://nycdot.maps.arcgis.com/apps/webappviewer/index.html?id=a786e79ea512421baecd3bbd1c5619d6": "Zone 3",
+   "https://data.cityofnewyork.us/City-Government/DSNY-Districts/i6mn-amj2?referrer=embed": "View the data",
+   "https://storymaps.arcgis.com/stories/f266a53c9cda42d5b7f63b57dc08f849": "“City of Yes for Housing Opportunity” proposal",
+   "https://on.nyc.gov/TrackAndField": "on.nyc.gov/TrackAndField",
+   "https://storymaps.arcgis.com/stories/afce9e93d79847608fc846878e17db8e": "Visit the StoryMap",
+   "https://data.cityofnewyork.us/browse?Data-Collection_Data-Collection=Citywide+Mobility+Survey&tags=2024&sortBy=relevance&pageSize=20": "2024 Tables via NYC Open Data"
+  }
+ },
+ "Minneapolis": {
+  "files": [
+   {
+    "url": "https://bikeleague.org/wp-content/uploads/2025/01/BFC-Master-List-2024-Current-and-Past.pdf",
+    "text": "View the League of American ranked list of bicycle-friendly communities",
+    "file": "data/city_files/Minneapolis/639f8f_BFC-Master-List-2024-Current-and-Past.pdf",
+    "rows": 552,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Impound-Lot---Sale-at-Auction-new-address-2-2-22.pdf",
+    "text": "Impound Lot sales claim form",
+    "file": "data/city_files/Minneapolis/bcd2fa_Impound-Lot---Sale-at-Auction-new-address-2-2-22.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Walking-Routes-For-Youth_English.pdf",
+    "text": "Walking routes for youth (English)",
+    "file": "data/city_files/Minneapolis/9cee16_Walking-Routes-For-Youth_English.pdf",
+    "rows": 27,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Walking-Routes-For-Youth-in-Spanish.pdf",
+    "text": "Walking routes for youth (Spanish)",
+    "file": "data/city_files/Minneapolis/d935fe_Walking-Routes-For-Youth-in-Spanish.pdf",
+    "rows": 28,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Walking-Routes-For-Youth-in-Somali.pdf",
+    "text": "Walking routes for youth (Somali)",
+    "file": "data/city_files/Minneapolis/f2a8ed_Walking-Routes-For-Youth-in-Somali.pdf",
+    "rows": 28,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Walking-Routes-For-Youth-in-Hmong.pdf",
+    "text": "Walking routes for youth (Hmong)",
+    "file": "data/city_files/Minneapolis/0695fd_Walking-Routes-For-Youth-in-Hmong.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Tracker-Mayor-Work-Groups-2025.pdf",
+    "text": "Community Safety Work Group Tracker",
+    "file": "data/city_files/Minneapolis/b5daa9_Tracker-Mayor-Work-Groups-2025.pdf",
+    "rows": 1186,
+    "bike_rows": 42
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/2025-Sewer-CIPP-Map-3.11.25---Labels.pdf",
+    "text": "Sewer pipe lining locations",
+    "file": "data/city_files/Minneapolis/5dc518_2025-Sewer-CIPP-Map-3.11.25---Labels.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/snow-emerg-parkway-map-2020.pdf",
+    "text": "Parkways of Minneapolis map",
+    "file": "data/city_files/Minneapolis/2b411b_snow-emerg-parkway-map-2020.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/UB-Authorization---SWR-Services---06.2024-Final_Updated-Properties-06182026.pdf",
+    "text": "Garbage and recycling service change form",
+    "file": "data/city_files/Minneapolis/91887e_UB-Authorization---SWR-Services---06.2024-Final_Updated-Properties-061",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/HPC-Appeal-App.pdf",
+    "text": "Appeal of the decision of the Heritage Preservation Commission application",
+    "file": "data/city_files/Minneapolis/4a0a7f_HPC-Appeal-App.pdf",
+    "rows": 31,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Facade-Grant-Service-Area-Map-Administrator-Contact-Information.pdf",
+    "text": "Map and administrators document",
+    "file": "data/city_files/Minneapolis/c137b0_Facade-Grant-Service-Area-Map-Administrator-Contact-Information.pdf",
+    "rows": 25,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/GrandAveBridge_OnePager_Factsheet.pdf.pdf",
+    "text": "Grand Ave S bridge over Midtown Greenway - OnePager, 5/14/24",
+    "file": "data/city_files/Minneapolis/0ba9dd_GrandAveBridge_OnePager_Factsheet.pdf.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Grand-Ave-Greenway-Bridge_Concept-Layout.pdf",
+    "text": "Grand Ave S bridge concept layout",
+    "file": "data/city_files/Minneapolis/50e5a0_Grand-Ave-Greenway-Bridge_Concept-Layout.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Hennepin-Dunwoody-Bikeway--Two-Stage-Traffic-Control-Plan.pdf",
+    "text": "Hennepin-Dunwoody Bikeway- Two Stage Traffic Control Plan",
+    "file": "data/city_files/Minneapolis/76269c_Hennepin-Dunwoody-Bikeway--Two-Stage-Traffic-Control-Plan.pdf",
+    "rows": 30,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Hennepin---Dunwoody-Bikeway--Northside-work-394-to-12th-St.pdf",
+    "text": "Hennepin - Dunwoody Bikeway- Northside work 394 to 12th St",
+    "file": "data/city_files/Minneapolis/8cb78f_Hennepin---Dunwoody-Bikeway--Northside-work-394-to-12th-St.pdf",
+    "rows": 17,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Hennepin---Dunwoody-Bikeway--Northside-work---Left-Turn-Lane-option-under-94.pdf",
+    "text": "Hennepin - Dunwoody Bikeway- Northside work - Left Turn Lane option under 94",
+    "file": "data/city_files/Minneapolis/f48877_Hennepin---Dunwoody-Bikeway--Northside-work---Left-Turn-Lane-option-un",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Hennepin--Dunwoody-Bikeway--(TH-94-to-12th-Ave---Traffic-control-layout).pdf",
+    "text": "Hennepin-Dunwoody Bikeway, TH-94 to 12th Ave - Traffic control layout",
+    "file": "data/city_files/Minneapolis/61053e_Hennepin--Dunwoody-Bikeway--_TH-94-to-12th-Ave---Traffic-control-layou",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Hennepin--Dunwoody-Bikeway-(TH-394-to-Lyndale--Traffic-control-layout).pdf",
+    "text": "Hennepin-Dunwoody Bikeway, TH-394 to Lyndale - Traffic control layout",
+    "file": "data/city_files/Minneapolis/f7092c_Hennepin--Dunwoody-Bikeway-_TH-394-to-Lyndale--Traffic-control-layout_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/University-of-Minnesota-Greek-Letter-Chapter-House-District-Design-Guidelines.pdf",
+    "text": "University of Minnesota Greek Letter Chapter House Historic District design guidelines",
+    "file": "data/city_files/Minneapolis/b06d4b_University-of-Minnesota-Greek-Letter-Chapter-House-District-Design-Gui",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/University-of-Minnesota-Greek-Letter-Chapter-House-District-Map.pdf",
+    "text": "University of Minnesota Greek Letter Chapter House Historic District map",
+    "file": "data/city_files/Minneapolis/43f91c_University-of-Minnesota-Greek-Letter-Chapter-House-District-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/MMA-based-Transit-Priority-Lane-Treatment-Evaluation.pdf",
+    "text": "MMA-based Transit Priority Lane Treatment Evaluation Report",
+    "file": "data/city_files/Minneapolis/952352_MMA-based-Transit-Priority-Lane-Treatment-Evaluation.pdf",
+    "rows": 97,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Bicycle-and-Street-Design-Evaluation-Report-2017.pdf",
+    "text": "Bicycle and Street Design Evaluation Report 2017",
+    "file": "data/city_files/Minneapolis/937340_Bicycle-and-Street-Design-Evaluation-Report-2017.pdf",
+    "rows": 409,
+    "bike_rows": 96
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/City-Quadrants-for-Data-Collection-Map_7-28-21.pdf",
+    "text": "Pavement condition data collection quadrants map",
+    "file": "data/city_files/Minneapolis/8336c5_City-Quadrants-for-Data-Collection-Map_7-28-21.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Stevens-Square-Historic-District-Design-Guidelines.pdf",
+    "text": "Stevens Square Historic District guidelines",
+    "file": "data/city_files/Minneapolis/8119ff_Stevens-Square-Historic-District-Design-Guidelines.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Stevens-Square-District-Map.pdf",
+    "text": "Stevens Square Historic District map",
+    "file": "data/city_files/Minneapolis/608663_Stevens-Square-District-Map.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/18thAveS-_BridgeOverMidtownGreenway_ProjectLocationMap.pdf",
+    "text": "Project location map 18th Ave S bridge over Midtown Greenway",
+    "file": "data/city_files/Minneapolis/f90033_18thAveS-_BridgeOverMidtownGreenway_ProjectLocationMap.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/18thAveSBrMidtownGreenWay-OnePager_2025-01-03.pdf",
+    "text": "18th Ave S Bridge over Midtown Greenway - 5/9/24",
+    "file": "data/city_files/Minneapolis/d6be09_18thAveSBrMidtownGreenWay-OnePager_2025-01-03.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Humboldt-Ave-Sewer-Improvements-Map_3-26-21.pdf",
+    "text": "Humboldt Ave S map",
+    "file": "data/city_files/Minneapolis/0ab613_Humboldt-Ave-Sewer-Improvements-Map_3-26-21.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Washburn-Historic-District-focus-group-1.pdf",
+    "text": "Notes from focus group #1 - March 6, 2023",
+    "file": "data/city_files/Minneapolis/f48fea_Washburn-Historic-District-focus-group-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Washburn-Historic-District-focus-group-2.pdf",
+    "text": "Notes from focus group #2 - March 13, 2023",
+    "file": "data/city_files/Minneapolis/ddefab_Washburn-Historic-District-focus-group-2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Washburn-Historic-District-community-meeting-1.pdf",
+    "text": "Notes from community meeting #1 - March 25, 2023",
+    "file": "data/city_files/Minneapolis/c93c0f_Washburn-Historic-District-community-meeting-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Washburn-Historic-District-focus-group-3.pdf",
+    "text": "Notes from focus group #3 - March 29, 2023",
+    "file": "data/city_files/Minneapolis/0ed8fb_Washburn-Historic-District-focus-group-3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Washburn-Historic-District-community-meeting-2.pdf",
+    "text": "Notes from community meeting #2 - April 29, 2023",
+    "file": "data/city_files/Minneapolis/0471fb_Washburn-Historic-District-community-meeting-2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Washburn-Fair-Oaks-Historic-District-Period-of-Significance.pdf",
+    "text": "Washburn-Fair Oaks Historic District Period of Significance Findings",
+    "file": "data/city_files/Minneapolis/641230_Washburn-Fair-Oaks-Historic-District-Period-of-Significance.pdf",
+    "rows": 473,
+    "bike_rows": 161
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/Recycling_Guide_English_2023.pdf",
+    "text": "Recycling Guide",
+    "file": "data/city_files/Minneapolis/ddb8c0_Recycling_Guide_English_2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/recycling-guide-flyer-spanish---2022.pdf",
+    "text": "Guía de reciclaje (Español)",
+    "file": "data/city_files/Minneapolis/d6fa7c_recycling-guide-flyer-spanish---2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/recycling-guide-flyer-hmong---2022.pdf",
+    "text": "Cov Lus Qhia Txog Kev Rov Coj Los Tsim Siv Dua Tshiab (Hmoob)",
+    "file": "data/city_files/Minneapolis/b1f16d_recycling-guide-flyer-hmong---2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.minneapolismn.gov/media/-www-content-assets/documents/recycling-guide-flyer-somali---2022.pdf",
+    "text": "Tilmaanta Dib uwarshadaynta (Soomaaliga)",
+    "file": "data/city_files/Minneapolis/85ec0a_recycling-guide-flyer-somali---2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://minneapolismn.gov/opendata": "Contact policy staff",
+   "https://data.minneapolismn.gov/pages/mpls-data-maps-apps": "Explore the maps and apps",
+   "https://opendata.minneapolismn.gov/": "Visit Open Data Minneapolis",
+   "https://gis-hennepin.hub.arcgis.com/": "Hennepin County GIS",
+   "https://gisdata.mn.gov/": "Minnesota Geospatial Commons",
+   "https://data.minneapolismn.gov/pages/crime-dashboard": "Crime dashboard",
+   "https://cityoflakes.maps.arcgis.com/apps/MapJournal/index.html?appid=0483fe8f48d646a8a160f8773eb4a9a9": "Take the E 38th St. walking tour",
+   "https://data.minneapolismn.gov/pages/arrests-dashboard": "Arrests dashboard",
+   "https://data.minneapolismn.gov/pages/police-use-of-force-dashboard": "Use of force dashboard",
+   "https://data.minneapolismn.gov/pages/police-stops-dashboard": "Stops dashboard",
+   "https://data.minneapolismn.gov/pages/police-officer-involved-shooting-dashboard": "Officer-involved shooting dashboard",
+   "https://data.minneapolismn.gov/pages/police-discipline-decision-dashboard": "Police discipline decision dashboard",
+   "https://data.minneapolismn.gov/search?groupIds=610794b0d25f4bb7800faba57b8022d8&q=Community%20safety": "Community safety dashboards",
+   "https://data.minneapolismn.gov/pages/police-department-dashboard-definitions~f0d3bccc71884c228b2d3a0589a57a7f": "Find out more",
+   "https://experience.arcgis.com/experience/880d2a96603f46fc8f76a48178425f35": "View bicycling network map See our current bikeway network.",
+   "https://data.minneapolismn.gov/pages/shared-bike-scooter-dashboard": "See shared bike and scooter data Understand how we use scooter data to track compliance and the results of past years.",
+   "https://cityoflakes.maps.arcgis.com/home/webmap/viewer.html?webmap=2e9beaa6e0864a22a0083d3cd4268331&extent=-93.4999,44.8744,-92.9928,45.0709": "Find a charging station - on a street",
+   "https://cityoflakes.maps.arcgis.com/apps/instant/portfolio/index.html?appid=1efd831ea2544a62ace1c4a10956b302": "City construction projects map",
+   "https://cityoflakes.maps.arcgis.com/apps/instant/portfolio/index.html?appid=edc0ad4b2760490b8df0b249c249d29d": "Minnesota county, state aid, and trunk highway map",
+   "https://cityoflakes.maps.arcgis.com/apps/instant/basic/index.html?appid=02cff0d0bc234005a219499a451a8d40": "Minneapolis truck route map",
+   "https://data.minneapolismn.gov": "Explore MinneapolisData",
+   "https://data.minneapolismn.gov/": "Visit MinneapolisData",
+   "https://cityoflakes.maps.arcgis.com/home/webmap/viewer.html?webmap=fb81edcb195c4e20a5d85a0150819ec8": "View full map",
+   "https://data.minneapolismn.gov/pages/energy-benchmarking-results-dashboard": "Go to the dashboard",
+   "https://cityoflakes.maps.arcgis.com/apps/Embed/index.html?webmap=4b49d0d4fdfa4200b0462c8270788188&extent=-93.4202,44.903,-93.0812,45.0483&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=false&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=light": "See full screen",
+   "https://cityoflakes.maps.arcgis.com/apps/instant/lookup/index.html?appid=7fae0a2341ad4d9ba4076f3c0c6781aa": "View full screen",
+   "https://cityoflakes.maps.arcgis.com/apps/instant/media/index.html?appid=0dc54be73cda497b8187c25d32db3e98": "View map full screen",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=37385b87186e4f6d99af81bb812b8cac&extent=-93.3907,44.9235,-93.1371,45.0278": "View full map",
+   "https://cityoflakes.maps.arcgis.com/apps/Embed/index.html?webmap=073de575a4004a43b48acef1624a8aaf": "View full screen",
+   "https://www.minneapolismn.gov/government/charter-and-code-of-ordinances/city-policies/open-data-policy/": "Skip Navigation"
+  }
+ },
+ "Adıyaman": {
+  "files": [],
+  "portals": {}
+ },
+ "McKinney": {
+  "files": [],
+  "portals": {}
+ },
+ "Erzincan": {
+  "files": [],
+  "portals": {}
+ },
+ "Bariloche": {
+  "files": [],
+  "portals": {}
+ },
+ "Round Rock": {
+  "files": [
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2023/08/Map-Attatchment.pdf",
+    "text": "Map Attatchment",
+    "file": "data/city_files/Round_Rock/b3b5fd_Map-Attatchment.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2014/05/Download-Parks-and-Trails-Map.pdf",
+    "text": "Download Parks and Trails Map.",
+    "file": "data/city_files/Round_Rock/7d27ae_Download-Parks-and-Trails-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2014/12/Parks-Inventory-Map-PDF.pdf",
+    "text": "View Parks Inventory Map (PDF)",
+    "file": "data/city_files/Round_Rock/f32fca_Parks-Inventory-Map-PDF.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2020/09/City-of-Round-Rock-Trails-Map-Sept.-2020.pdf",
+    "text": "CITY OF ROUND ROCK TRAILS MAP 2021",
+    "file": "data/city_files/Round_Rock/301e36_City-of-Round-Rock-Trails-Map-Sept.-2020.pdf",
+    "rows": 23,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2015/02/Brushy-Creek-Trail1.pdf",
+    "text": "Brushy Creek Trail",
+    "file": "data/city_files/Round_Rock/3de484_Brushy-Creek-Trail1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2015/02/Greater-Lake-Creek-Trail.pdf",
+    "text": "Lake Creek Trail",
+    "file": "data/city_files/Round_Rock/4e96e7_Greater-Lake-Creek-Trail.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2015/02/Kensington-Greenbelt-Trail.pdf",
+    "text": "Kensington Greenbelt Trail",
+    "file": "data/city_files/Round_Rock/dcc8d6_Kensington-Greenbelt-Trail.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2015/02/Meadow-Lake-Trail.pdf",
+    "text": "Meadow Lake Trail",
+    "file": "data/city_files/Round_Rock/5595b6_Meadow-Lake-Trail.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2015/02/Old-Settlers-Park-Trail.pdf",
+    "text": "Old Settlers Park Trail",
+    "file": "data/city_files/Round_Rock/7b80fd_Old-Settlers-Park-Trail.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2015/02/Round-Rock-West-Trail.pdf",
+    "text": "Round Rock West Trail",
+    "file": "data/city_files/Round_Rock/3f4f65_Round-Rock-West-Trail.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2014/12/OSP-Batting-Cage-Rules-2015.pdf",
+    "text": "OSP Batting Cage Rules",
+    "file": "data/city_files/Round_Rock/378b8a_OSP-Batting-Cage-Rules-2015.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://play4all.org/wp-content/uploads/2023/06/Play4All-CommBoard-Racetrack.pdf",
+    "text": "Race Track Communication Board",
+    "file": "data/city_files/Round_Rock/7adb92_Play4All-CommBoard-Racetrack.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2017/12/BRC_BROCHURE_OV.pdf",
+    "text": "Brush Recycling Center Services brochure",
+    "file": "data/city_files/Round_Rock/1cd7c3_BRC_BROCHURE_OV.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2023/02/Behrens-Ranch-Trail-Plan-.pdf",
+    "text": "Behrens Ranch Trail",
+    "file": "data/city_files/Round_Rock/95bde7_Behrens-Ranch-Trail-Plan-.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2019/12/ADA-Transition-Plan.pdf",
+    "text": "ADA Transition Plan >",
+    "file": "data/city_files/Round_Rock/6697c1_ADA-Transition-Plan.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2014/12/historicdesignguidelines_print2-sided_.pdf",
+    "text": "HISTORIC DESIGN GUIDELINES",
+    "file": "data/city_files/Round_Rock/30a58c_historicdesignguidelines_print2-sided_.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2026/09/2026-HPC-Schedule-0.pdf",
+    "text": "Historic Preservation Commission (HPC) 2026 meeting schedule",
+    "file": "data/city_files/Round_Rock/946eeb_2026-HPC-Schedule-0.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2020/08/RR2030_historic-preservation-plan_aug2020.pdf",
+    "text": "Historic Preservation Plan",
+    "file": "data/city_files/Round_Rock/3d05ed_RR2030_historic-preservation-plan_aug2020.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2014/11/ACHP-CitizenGuideToSection106.pdf",
+    "text": "Protecting Historic Properties: A Citizen’s Guide to Section 106 Review",
+    "file": "data/city_files/Round_Rock/671a6c_ACHP-CitizenGuideToSection106.pdf",
+    "rows": 49,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2023/08/Mortar-Project_Final.pdf",
+    "text": "Mortar Repair: a Guide for Historic Property Owners",
+    "file": "data/city_files/Round_Rock/9316e7_Mortar-Project_Final.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2014/12/HistoricDesignGuidelines-Residential.pdf",
+    "text": "Historic Design Guidelines for Residential Properties",
+    "file": "data/city_files/Round_Rock/caf08e_HistoricDesignGuidelines-Residential.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2014/12/HistoricDesignGuidelines-Commercial.pdf",
+    "text": "Historic Design Guidelines for Commercial Properties",
+    "file": "data/city_files/Round_Rock/c35817_HistoricDesignGuidelines-Commercial.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2014/12/brochure-historictaxexemption.pdf",
+    "text": "Partial Tax Exemption for Historically Significant Properties",
+    "file": "data/city_files/Round_Rock/605b64_brochure-historictaxexemption.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2023/11/2023-Historic-Downtown-Walking-Guide.pdf",
+    "text": "Historic Downtown Walking Guide (2023 ed.)",
+    "file": "data/city_files/Round_Rock/ab4f51_2023-Historic-Downtown-Walking-Guide.pdf",
+    "rows": 33,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2019/05/CCbriefing_04-09-19_Historic-Preservation-Program-2.1.pdf",
+    "text": "historic preservation program slides",
+    "file": "data/city_files/Round_Rock/c40777_CCbriefing_04-09-19_Historic-Preservation-Program-2.1.pdf",
+    "rows": 65,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2025/01/HistoricLandmarksDistricts-2024update-spread-legal.pdf",
+    "text": "Historic Landmarks and Historic Districts",
+    "file": "data/city_files/Round_Rock/fd289f_HistoricLandmarksDistricts-2024update-spread-legal.pdf",
+    "rows": 29,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2014/12/ACHP-CitizenGuideToSection106.pdf",
+    "text": "Protecting Historic Properties: A Citizen’s Guide to Section 106 Review",
+    "file": "data/city_files/Round_Rock/643fa6_ACHP-CitizenGuideToSection106.pdf",
+    "rows": 49,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2014/12/general_histprop_brochure.pdf",
+    "text": "Historic Preservation Programs",
+    "file": "data/city_files/Round_Rock/c59275_general_histprop_brochure.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2014/12/brochure_histpropownerinfo.pdf",
+    "text": "Information for Owners of Older and Historic Buildings",
+    "file": "data/city_files/Round_Rock/fdcf3b_brochure_histpropownerinfo.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2021/10/1992-Historic-Resources-Survey-Round-Rock-Texas.pdf",
+    "text": "1992 Inventory of Historic Sites Report",
+    "file": "data/city_files/Round_Rock/50ff60_1992-Historic-Resources-Survey-Round-Rock-Texas.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2016/03/RR-Phase-III-Report.pdf",
+    "text": "Moving Historic Resources: Considerations and Implications in the City of Round Rock, Texas",
+    "file": "data/city_files/Round_Rock/4ac3b2_RR-Phase-III-Report.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nps.gov/tps/standards/treatment-guidelines-2017.pdf",
+    "text": "Standards for the Treatment of Historic Properties",
+    "file": "data/city_files/Round_Rock/59fccf_treatment-guidelines-2017.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roundrocktexas.gov/wp-content/uploads/2025/04/2024-Downtown-Walking-Map-Web.pdf",
+    "text": "Historic Downtown Round Rock Walking Guide",
+    "file": "data/city_files/Round_Rock/de9878_2024-Downtown-Walking-Map-Web.pdf",
+    "rows": 38,
+    "bike_rows": 4
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/d896b3745e4c49d2ae7357cd3775d0c2": "LAUNCH DASHBOARD",
+   "https://experience.arcgis.com/experience/8f26e13e96ec445b8ef263a4138bb338?data_id=dataSource_1-180dcd9f984-layer-27%3A1": "HISTORIC LANDMARKS EXPLORER",
+   "https://corr.maps.arcgis.com/apps/dashboards/7f3b74b741484d4797bdc97dc10afe6a": "DOWNTOWN DEVELOPMENTS",
+   "https://corr.maps.arcgis.com/apps/dashboards/bb22b65316994e41a2dbc1ade198a430": "here",
+   "https://experience.arcgis.com/experience/af8a183c7c954898aa93d20be1ff0aa6": "Click here to view full-size interactive Street Maintenance Program map",
+   "https://experience.arcgis.com/experience/86b1d67db9bb441fa74019bc4bf15096/page/Streets_Multi/?views=Maintenance-Authority": "Street Maintenance Authority Map.",
+   "https://experience.arcgis.com/experience/2939e0396e2b4dc7a4ee44fd0498bb4c": "(see all Oil Recycling locations)"
+  }
+ },
+ "Gualeguaychú": {
+  "files": [],
+  "portals": {}
+ },
+ "New Bedford": {
+  "files": [],
+  "portals": {}
+ },
+ "Hoover": {
+  "files": [],
+  "portals": {}
+ },
+ "Danbury": {
+  "files": [
+   {
+    "url": "https://hrra.org/wp-content/uploads/2025/12/Danbury-Recycling-Truck-updated-12.25.pdf",
+    "text": "Danbury Recycling Truck",
+    "file": "data/city_files/Danbury/4f8b32_Danbury-Recycling-Truck-updated-12.25.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.ct.gov/stories/s/q5as-kyim": "State of Connecticut COVID-19 Response",
+   "https://storymaps.arcgis.com/stories/8ca52946233e4b28b0f03f5761840b81": "Click Here for City of Danbury Trail Routing Study - Story Map Link",
+   "https://storymaps.arcgis.com/stories/747e0a9bcde14ad09323d3cb9a181e9d": "https://storymaps.arcgis.com/stories/747e0a9bcde14ad09323d3cb9a181e9d",
+   "https://fema.maps.arcgis.com/apps/webappviewer/index.html?id=e7a7dc3ebd7f4ad39bb8e485bb64ce44": "https://fema.maps.arcgis.com/apps/webappviewer/index.html?id=e7a7dc3ebd7f4ad39bb8e485bb64ce44",
+   "https://experience.arcgis.com/experience/e492db86d9b348399f4bd20330b4b274/page/Page/?views=Sea-Level-Dataset%2CPrelim": "https://experience.arcgis.com/experience/e492db86d9b348399f4bd20330b4b274/page/Page/?views=Sea-Level-Dataset%2CPrelim",
+   "https://maps-danbury.hub.arcgis.com/": "Geographical Information System Portal (GIS)"
+  }
+ },
+ "Plymouth": {
+  "files": [],
+  "portals": {}
+ },
+ "Rapid City": {
+  "files": [
+   {
+    "url": "https://gis.rcgov.org/links/RAPIDMAPviewerinstructions.pdf",
+    "text": "here",
+    "file": "data/city_files/Rapid_City/c69341_RAPIDMAPviewerinstructions.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.rcgov.org/links/truckmap.pdf",
+    "text": "Truck and delivery routes",
+    "file": "data/city_files/Rapid_City/da48d8_truckmap.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.rcgov.org/links/GeneralRC.pdf",
+    "text": "General Rapid City planning map",
+    "file": "data/city_files/Rapid_City/c359f0_GeneralRC.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.rcgov.org/Html5Viewer/Index.html?configBase=http://gis.rcgov.org/Geocortex/Essentials/REST/sites/Pennington_Outdoors/viewers/Pennington_Outdoors/virtualdirectory/Resources/Config/Default": "Pennington County Outdoors",
+   "http://rcpc.maps.arcgis.com/apps/Styler/index.html?appid=8f3e09929c0c450286760552e005407c": "",
+   "https://rcpc.maps.arcgis.com/apps/instant/sidebar/index.html?appid=3efe05d48965498ab3db7c481284c649": "Road Construction Map",
+   "https://experience.arcgis.com/experience/22a37f9e458a431b90c3eeefa29aca96": "Click here to launch Snow Event Map",
+   "https://gis.rcgov.org/Html5Viewer/Index.html?configBase=https://gis.rcgov.org/Geocortex/Essentials/REST/sites/PublicRapidMap/viewers/Rapid_Map/virtualdirectory/Resources/Config/Default": "Click here to launch RapidMap",
+   "https://experience.arcgis.com/experience/72b761bcaa2845cfaf9cfe1d9b03b12c": "Click here to launch RTS RapidRide",
+   "https://experience.arcgis.com/experience/ff1c2bb51db5465a89a2acd8e2f319df": "https://experience.arcgis.com/experience/ff1c2bb51db5465a89a2acd8e2f319df",
+   "https://gis.rcgov.org/Html5Viewer/Index.html?configBase=http://gis.rcgov.org/Geocortex/Essentials/REST/sites/1972_Flood_Commemoration/viewers/The_1972_Flood_-_The_Future_Shaped/virtualdirectory/Resources/Config/Default": "Click here to launch 1972 Rapid City Flood site",
+   "https://rcpc.maps.arcgis.com/apps/instant/basic/index.html?appid=df3c58d14f674acfa26b8950a1cf8705": "Click here to launch Rapid City Collection Days site",
+   "https://gis.rcgov.org/Html5Viewer/Index.html?configBase=http://gis.rcgov.org/Geocortex/Essentials/REST/sites/SurveyPoints/viewers/Control_Points/virtualdirectory/Resources/Config/Default": "Click here to launch the Survey Points site",
+   "https://experience.arcgis.com/experience/b03eeb32869e421fa0e92864794728f5": "Click here to launch the voting site"
+  }
+ },
+ "Cañuelas Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Thalipparamba Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Taylor": {
+  "files": [],
+  "portals": {
+   "https://gis.cityoftaylor.com/portal/apps/webappviewer/index.html?id=8651aef447a24d28af84d0733e316a12": "Zoning Map",
+   "https://experience.arcgis.com/experience/a945468523494efe97f8ab28d689f6dd/page/Map/": "Clemis Public Crime Search"
+  }
+ },
+ "Kottayam Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Royal Oak": {
+  "files": [],
+  "portals": {}
+ },
+ "Huntington Park": {
+  "files": [],
+  "portals": {
+   "https://huntingtonpark.org/opendata": "Skip to Main Content",
+   "https://huntingtonpark.org/open-data": "Skip to Main Content"
+  }
+ },
+ "Kasaragod Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Gazipaşa": {
+  "files": [],
+  "portals": {}
+ },
+ "Gualeguay": {
+  "files": [],
+  "portals": {}
+ },
+ "Kemer": {
+  "files": [],
+  "portals": {}
+ },
+ "Wentzville": {
+  "files": [],
+  "portals": {}
+ },
+ "Lake Worth Beach": {
+  "files": [
+   {
+    "url": "https://lakeworthbeachfl.gov/assets/holiday-bike-giveaway-2026-flyer.pdf",
+    "text": "Event Flyer Download and share this year’s flyer.",
+    "file": "data/city_files/Lake_Worth_Beach/e1378a_holiday-bike-giveaway-2026-flyer.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/ae6d68b608ed4ea7a2df2162cf2dff34": "",
+   "https://lakeworth.maps.arcgis.com/apps/webappviewer/index.html?id=bf0281fe84774e74b00e57d84783374f": "Commission Districts Map Find out which district you live in and who your City Commissioner is. Includes contact details",
+   "https://lakeworth.maps.arcgis.com/apps/webappviewer/index.html?id=b902d2567f6641499a73b4e3ece1f0b2": "Collection Zone Map",
+   "https://lakeworth.maps.arcgis.com/apps/webappviewer/index.html?id=9d00f25dfc754a1ea64c81f841c3ca45": "Check Now"
+  }
+ },
+ "Zapala": {
+  "files": [],
+  "portals": {}
+ },
+ "Vestavia Hills": {
+  "files": [],
+  "portals": {}
+ },
+ "Montclair": {
+  "files": [
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/uploads/2021/09/Case-2021-32-Panera-Exhibit-A-Location-Map.pdf",
+    "text": "Case 2021-32 Panera Exhibit A - Location Map",
+    "file": "data/city_files/Montclair/222e27_Case-2021-32-Panera-Exhibit-A-Location-Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/uploads/2022/06/Alta-Presentation-for-San-Antonio-Creek-Trail-Workshop-6-28-22.pdf",
+    "text": "Alta Presentation For San Antonio Creek Trail Workshop 6 28 22",
+    "file": "data/city_files/Montclair/95c964_Alta-Presentation-for-San-Antonio-Creek-Trail-Workshop-6-28-22.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/uploads/2021/03/ParkingAdminReviewFrm080222.pdf",
+    "text": "ParkingAdminReviewFrm080222",
+    "file": "data/city_files/Montclair/778253_ParkingAdminReviewFrm080222.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/uploads/2023/04/Draft-ORD-RV-Parking-on-Streets.pdf",
+    "text": "Draft ORD RV Parking On Streets",
+    "file": "data/city_files/Montclair/b18409_Draft-ORD-RV-Parking-on-Streets.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/uploads/2023/04/Oversized-Vehicle-Parking-Presentation-Slides-5-1-23.pdf",
+    "text": "Oversized Vehicle Parking Presentation Slides 5 1 23",
+    "file": "data/city_files/Montclair/a00ad3_Oversized-Vehicle-Parking-Presentation-Slides-5-1-23.pdf",
+    "rows": 24,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/uploads/2021/03/TruckRoutes2020.pdf",
+    "text": "TruckRoutes2020",
+    "file": "data/city_files/Montclair/8f0b08_TruckRoutes2020.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2024/10/Trash-and-Sweeping-Map-2016.pdf",
+    "text": "Trash And Sweeping Map 2016",
+    "file": "data/city_files/Montclair/b19b3e_Trash-and-Sweeping-Map-2016.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2025/04/Oversized-Vehicle-Parking-2025-Handout.pdf",
+    "text": "Oversized Vehicle Parking (2025) - Handout",
+    "file": "data/city_files/Montclair/c056da_Oversized-Vehicle-Parking-2025-Handout.pdf",
+    "rows": 20,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2025/04/2025-05-05-CC-Workshop-Draft-RV-Parking-on-Streets-Ordinance.pdf",
+    "text": "2025-05-05 CC Workshop Draft RV Parking on Streets Ordinance",
+    "file": "data/city_files/Montclair/4423a3_2025-05-05-CC-Workshop-Draft-RV-Parking-on-Streets-Ordinance.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2021/03/Zoning-Map_11-x-17_20250930.pdf",
+    "text": "Zoning Map 11 X 17 20250930",
+    "file": "data/city_files/Montclair/702e7c_Zoning-Map_11-x-17_20250930.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2025/10/Zoning-Map_Montclair-Corridors_11x17_20251006.pdf",
+    "text": "Zoning Map Montclair Corridors 11x17 20251006",
+    "file": "data/city_files/Montclair/b29949_Zoning-Map_Montclair-Corridors_11x17_20251006.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2024/12/edf7a88b-oversized-vehicle-parking-11-2025.pdf",
+    "text": "Oversized Vehicle Parking (11-2025)",
+    "file": "data/city_files/Montclair/bccfe1_edf7a88b-oversized-vehicle-parking-11-2025.pdf",
+    "rows": 37,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2025/11/bb31dda2-dashing-thru-montclair-2025-santas-route.pdf",
+    "text": "Dashing Thru Montclair 2025 Santas Route",
+    "file": "data/city_files/Montclair/0b3826_bb31dda2-dashing-thru-montclair-2025-santas-route.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2025/10/ae64acc9-zoning-map_ahmud_.pdf",
+    "text": "Zoning Map_AHMUD_20260407",
+    "file": "data/city_files/Montclair/c80d8b_ae64acc9-zoning-map_ahmud_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2021/03/59fcc2ef-zoning-map.pdf",
+    "text": "Zoning Map_20260407",
+    "file": "data/city_files/Montclair/25b187_59fcc2ef-zoning-map.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2025/10/6d424385-zoning-map_montclair-corridors_.pdf",
+    "text": "Zoning Map_Montclair Corridors_20260407",
+    "file": "data/city_files/Montclair/614bcc_6d424385-zoning-map_montclair-corridors_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2025/10/e0207977-zoning-map_montclair-place-sp_.pdf",
+    "text": "Zoning Map_Montclair Place SP_20260407",
+    "file": "data/city_files/Montclair/304943_e0207977-zoning-map_montclair-place-sp_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2025/10/3e065db2-zoning-map_nmdsp_.pdf",
+    "text": "Zoning Map_NMDSP_20260407",
+    "file": "data/city_files/Montclair/a4dc1d_3e065db2-zoning-map_nmdsp_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://storage.googleapis.com/proudcity/montclairca/2025/10/651ba944-gplu-map_11-x-17_20260218.pdf",
+    "text": "GPLU Map 11 X 17 20260218",
+    "file": "data/city_files/Montclair/dfb7dd_651ba944-gplu-map_11-x-17_20260218.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Trumbull": {
+  "files": [
+   {
+    "url": "https://recyclect.org/wp-content/uploads/2023/04/RecycleCT_Flyer_V1_12.19.22.pdf",
+    "text": "GET TO KNOW RECYCLING DOWNLOAD",
+    "file": "data/city_files/Trumbull/152882_RecycleCT_Flyer_V1_12.19.22.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://ctdeep.maps.arcgis.com/apps/webappviewer/index.html?id=58663e71ca114e439f7f3473836db929&deepNav=|": ""
+  }
+ },
+ "Brunswick": {
+  "files": [],
+  "portals": {}
+ },
+ "Cooper City": {
+  "files": [],
+  "portals": {}
+ },
+ "Canton": {
+  "files": [
+   {
+    "url": "https://a810-dobnow.nyc.gov/Publish/DocumentStage/New%20License/L00033033/FRANCIS92TREASURE@PROTON.ME/Additional%20Supportin/Additional%20Supp_XjvTWZHazDS6LDxs5BXE_5d2ce5667b.pdf?V=92",
+    "text": "Best Penis Pumps",
+    "file": "data/city_files/Canton/aff58b_Additional_20Supp_XjvTWZHazDS6LDxs5BXE_5d2ce5667b.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://www.legis.iowa.gov/committees/meetingPublicComment?attachmentID=6650&action=viewAttachedCommentDocument": "Best Legal Steroids",
+   "https://www.legis.iowa.gov/committees/meetingPublicComment?attachmentID=3054&action=viewAttachedCommentDocument": "Best Testosterone Booster"
+  }
+ },
+ "Florence": {
+  "files": [],
+  "portals": {}
+ },
+ "Bowling Green": {
+  "files": [
+   {
+    "url": "https://www.nps.gov/orgs/1739/upload/treatment-guidelines-2017-part1-preservation-rehabilitation.pdf",
+    "text": "Guidelines for Preserving, Rehabilitating, Restoring, and Reconstructing Historic Buildings (PDF)",
+    "file": "data/city_files/Bowling_Green/e1c1c1_treatment-guidelines-2017-part1-preservation-rehabilitation.pdf",
+    "rows": 108,
+    "bike_rows": 68
+   }
+  ],
+  "portals": {
+   "https://gis.bgohio.org/CommunityDevelopment/cd_reportedconcerns_add.php": "Report A Concern",
+   "https://bgoh.maps.arcgis.com/apps/webappviewer/index.html?id=69c2266d3eda472b85edcacc0cf2c0df": "Parking Map",
+   "https://storymaps.arcgis.com/stories/3c624736c2f841cdaa8f62675012525e": "the story map.",
+   "https://gis.bgohio.gov/planning/HistoricProperty_add.php?menuItemId=1": "Request or Consent to Designate Historic Property Form",
+   "https://storymaps.arcgis.com/stories/78ad707e852f40668f18c0ef6b7a6335": "National Historic Preservation Month- Self-Guided Historic Walking Tour",
+   "https://survey123.arcgis.com/share/dd44597165154dcab02529eb2de8fdfe?portalUrl=https://bgoh.maps.arcgis.com": "Bowling Green History Scavenger Hunt - Online",
+   "https://gis.bgohio.org/CommunityDevelopment/cd_bg_transit_reduced_fare_add.php": "BG Transit ID Card Application",
+   "https://gis.bgohio.org/CommunityDevelopment/cd_housingprogramapplications_add.php": "Application for Home Repair Programs",
+   "https://gis.bgohio.org/portal/apps/instant/interactivelegend/index.html?appid=b049cf1f36d3433f8f838bb9769a3e71": "Interactive Map",
+   "https://gis.bgohio.org/police/citizencontactsurvey_add.php ": "Contact Survey",
+   "https://gis.bgohio.org/rentalportal/": "rental portal"
+  }
+ },
+ "Parkersburg": {
+  "files": [],
+  "portals": {}
+ },
+ "Kuthuparamba Municipality": {
+  "files": [
+   {
+    "url": "https://koothuparambamunicipality.lsgkerala.gov.in/system/files/2026-09/MapKoothuparamba_0.pdf",
+    "text": "MapKoothuparamba_0.pdf",
+    "file": "data/city_files/Kuthuparamba_Municipality/d8c444_MapKoothuparamba_0.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wardmap.ksmart.live/FinalN/map/Map_FinalN_Kannur_Koothuparamba.pdf",
+    "text": "https://wardmap.ksmart.live/FinalN/map/Map_FinalN_Kannur_Koothuparamba.pdf",
+    "file": "data/city_files/Kuthuparamba_Municipality/084990_Map_FinalN_Kannur_Koothuparamba.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ }
+}
