@@ -1,0 +1,30 @@
+[
+{
+"city": "Roanoke",
+"url": "https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/ParksRec_Map_Service_Prod/FeatureServer/5",
+"name": "Bike Fix Stations",
+"count": 14,
+"cat": "racks"
+},
+{
+"city": "Roanoke",
+"url": "https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/ParksRec_Map_Service_Prod/MapServer/5",
+"name": "Bike Fix Stations",
+"count": 14,
+"cat": "racks"
+},
+{
+"city": "Roanoke",
+"url": "https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/Transportation_Map_Service_Prod/FeatureServer/28",
+"name": "Mobility Corrals",
+"count": 7,
+"cat": "racks"
+},
+{
+"city": "Roanoke",
+"url": "https://maps.roanokeva.gov/arcgis/rest/services/VUEWorks/Transportation_Map_Service_Prod/MapServer/28",
+"name": "Mobility Corrals",
+"count": 7,
+"cat": "racks"
+}
+]
