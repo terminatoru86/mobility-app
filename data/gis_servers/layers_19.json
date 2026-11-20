@@ -1,317 +1,65 @@
 [
 {
-"city": "St. Petersburg FL",
-"url": "https://egis.stpete.org/arcgis/rest/services/ServicesTPD/TrafficManagementandData/MapServer/45",
-"name": "Scooter Share Corrals",
-"count": 103,
+"city": "capital:dsm.city",
+"url": "https://maps.dsm.city/p2/rest/services/External/EXTDynamicBicycleParking/MapServer/0",
+"name": "BicycleParking",
+"count": 551,
+"cat": "racks"
+},
+{
+"city": "capital:columbus.gov",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/42",
+"name": "Scooter Corrals",
+"count": 47,
 "cat": "scooter"
 },
 {
-"city": "Prince George's County",
-"url": "https://gis.princegeorgescountymd.gov/arcgis/rest/services/DPWT/CapitalBikeShare/FeatureServer/0",
-"name": "CapitalBikeshare",
-"count": 27,
+"city": "capital:columbus.gov",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/41",
+"name": "Bike Parking",
+"count": 833,
+"cat": "racks"
+},
+{
+"city": "capital:columbus.gov",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/31",
+"name": "COGO Bikeshare Locations",
+"count": 80,
 "cat": "share"
 },
 {
-"city": "Prince George's County",
-"url": "https://gis.princegeorgescountymd.gov/arcgis/rest/services/DPWT/CapitalBikeShare/MapServer/0",
-"name": "CapitalBikeshare",
-"count": 27,
-"cat": "share"
-},
-{
-"city": "Ventura County",
-"url": "https://maps.venturacounty.gov/arcgis/rest/services/SDs/BikePath/MapServer/0",
-"name": "VCTCBikeAmenities",
-"count": 34,
-"cat": "racks"
-},
-{
-"city": "Rochester",
-"url": "https://gis.cityofrochester.gov/arcgis/rest/services/AGOL/Rochester_Interactive_Bicycle_Facilities/MapServer/5",
-"name": "Bicycle Racks and Posts",
-"count": 1095,
-"cat": "racks"
-},
-{
-"city": "Rochester",
-"url": "https://gis.cityofrochester.gov/arcgis/rest/services/AGOL/Rochester_Interactive_Bicycle_Facilities/MapServer/1",
-"name": "Bike Features",
-"count": 50,
-"cat": "racks"
-},
-{
-"city": "Rochester",
-"url": "https://maps.cityofrochester.gov/arcgis/rest/services/AGOL/Rochester_Interactive_Bicycle_Facilities/MapServer/5",
-"name": "Bicycle Racks and Posts",
-"count": 1095,
-"cat": "racks"
-},
-{
-"city": "Rochester",
-"url": "https://maps.cityofrochester.gov/arcgis/rest/services/AGOL/Rochester_Interactive_Bicycle_Facilities/MapServer/1",
-"name": "Bike Features",
-"count": 50,
-"cat": "racks"
-},
-{
-"city": "Rochester",
-"url": "https://maps.cityofrochester.gov/server/rest/services/Bike_Facilities_ODP/MapServer/0",
-"name": "Bike Features",
-"count": 50,
-"cat": "racks"
-},
-{
-"city": "Rochester",
-"url": "https://maps.cityofrochester.gov/server/rest/services/Bike_Facilities_ODP/MapServer/1",
-"name": "Bike Rack Locations",
-"count": 1095,
-"cat": "racks"
-},
-{
-"city": "Rochester",
-"url": "https://maps.cityofrochester.gov/server/rest/services/StreetDesign/Bicycle_Facilities/FeatureServer/0",
-"name": "Bike Features",
-"count": 50,
-"cat": "racks"
-},
-{
-"city": "Rochester",
-"url": "https://maps.cityofrochester.gov/server/rest/services/StreetDesign/Bicycle_Facilities/FeatureServer/1",
-"name": "Bike Rack Locations",
-"count": 1095,
-"cat": "racks"
-},
-{
-"city": "Davie",
-"url": "https://gis.davie-fl.gov/gis/rest/services/ParksAndRec/ParkAsset_Collection/FeatureServer/3",
-"name": "Parks_BikeRacks",
-"count": 17,
-"cat": "racks"
-},
-{
-"city": "Davie",
-"url": "https://gis.davie-fl.gov/gis/rest/services/ParksAndRec/ParkAsset_Collection/MapServer/3",
-"name": "Parks_BikeRacks",
-"count": 17,
-"cat": "racks"
-},
-{
-"city": "Davie",
-"url": "https://gis.davie-fl.gov/gis/rest/services/PublicWorks/EAM_ParksAndIrrigation/MapServer/1",
-"name": "Park Bike Rack",
-"count": 19,
-"cat": "racks"
-},
-{
-"city": "Ames",
-"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/FeatureServer/34",
-"name": "Bike Racks",
-"count": 421,
-"cat": "racks"
-},
-{
-"city": "Ames",
-"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/MapServer/34",
-"name": "Bike Racks",
-"count": 421,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/0",
-"name": "High School",
-"count": 49,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/1",
-"name": "Middle School",
-"count": 59,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/2",
-"name": "Bicycle Shops",
-"count": 24,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/3",
-"name": "Transit Center",
-"count": 4,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/14",
-"name": "Community Center",
-"count": 60,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/4",
-"name": "Hospitals",
-"count": 26,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/8",
-"name": "Library",
-"count": 32,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/9",
-"name": "CSN Campuses",
-"count": 3,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/10",
-"name": "University",
-"count": 1,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/11",
-"name": "Bicycle Work Stations",
-"count": 8,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/12",
-"name": "Bicycle Share Locations",
+"city": "capital:columbus.gov",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/3",
+"name": "Scooter Parking Locations",
 "count": 38,
+"cat": "scooter"
+},
+{
+"city": "Columbus OH",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/42",
+"name": "Scooter Corrals",
+"count": 47,
+"cat": "scooter"
+},
+{
+"city": "Columbus OH",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/41",
+"name": "Bike Parking",
+"count": 833,
+"cat": "racks"
+},
+{
+"city": "Columbus OH",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/31",
+"name": "COGO Bikeshare Locations",
+"count": 80,
 "cat": "share"
 },
 {
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/BIKE/MapServer/16",
-"name": "Public Bike Rack",
-"count": 1608,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/5",
-"name": "Bicycle Shops",
-"count": 24,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/6",
-"name": "Bicycle Work Stations",
-"count": 8,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/7",
-"name": "Bicycle Share Locations",
+"city": "Columbus OH",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/3",
+"name": "Scooter Parking Locations",
 "count": 38,
-"cat": "share"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/16",
-"name": "Public Bike Rack",
-"count": 1608,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/5",
-"name": "Bicycle Shops",
-"count": 24,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/6",
-"name": "Bicycle Work Stations",
-"count": 8,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/7",
-"name": "Bicycle Share Locations",
-"count": 38,
-"cat": "share"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://gis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/16",
-"name": "Public Bike Rack",
-"count": 1608,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/5",
-"name": "Bicycle Shops",
-"count": 24,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/6",
-"name": "Bicycle Work Stations",
-"count": 8,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/7",
-"name": "Bicycle Share Locations",
-"count": 38,
-"cat": "share"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/FeatureServer/16",
-"name": "Public Bike Rack",
-"count": 1608,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/5",
-"name": "Bicycle Shops",
-"count": 24,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/6",
-"name": "Bicycle Work Stations",
-"count": 8,
-"cat": "racks"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/7",
-"name": "Bicycle Share Locations",
-"count": 38,
-"cat": "share"
-},
-{
-"city": "Las Vegas NV",
-"url": "https://webgis.rtcsnv.com/arcgis/rest/services/Web/HUB/MapServer/16",
-"name": "Public Bike Rack",
-"count": 1608,
-"cat": "racks"
+"cat": "scooter"
 }
 ]
