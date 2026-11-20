@@ -1,37 +1,23 @@
 [
 {
-"city": "capital:slc.gov",
-"url": "https://maps.slc.gov/server/rest/services/Hosted/Bike_Racks/FeatureServer/0",
-"name": "Bike Racks",
-"count": 1411,
-"cat": "racks"
-},
-{
-"city": "Columbus OH",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/42",
-"name": "Scooter Corrals",
-"count": 47,
-"cat": "scooter"
-},
-{
-"city": "Columbus OH",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/41",
-"name": "Bike Parking",
-"count": 833,
-"cat": "racks"
-},
-{
-"city": "Columbus OH",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/31",
-"name": "COGO Bikeshare Locations",
-"count": 80,
+"city": "Indianapolis IN",
+"url": "https://gis.indy.gov/server/rest/services/OpenData/OpenData_Transportation/MapServer/2",
+"name": "Bike Share Stations",
+"count": 57,
 "cat": "share"
 },
 {
-"city": "Columbus OH",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/3",
-"name": "Scooter Parking Locations",
-"count": 38,
-"cat": "scooter"
+"city": "Orlando FL",
+"url": "https://gis.orlando.gov/server/rest/services/Epic_Simplify_i3/Transportation/MapServer/10",
+"name": "Bike Racks",
+"count": 228,
+"cat": "racks"
+},
+{
+"city": "Orlando FL",
+"url": "https://gis.orlando.gov/server/rest/services/Epic_Simplify_i3/Transportation/MapServer/10",
+"name": "Bike Racks",
+"count": 228,
+"cat": "racks"
 }
 ]
