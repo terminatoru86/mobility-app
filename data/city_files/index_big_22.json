@@ -1,0 +1,1580 @@
+{
+ "Tampa FL": {
+  "files": [
+   {
+    "url": "https://www.tampa.gov/sites/default/files/document/2026/hyde-park-historic-district_2023-01-05_ada.pdf",
+    "text": "Download: hyde-park-historic-district_2023-01-05_ada.pdf",
+    "file": "data/city_files/Tampa_FL/e002d2_hyde-park-historic-district_2023-01-05_ada.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tampa.gov/sites/default/files/document/2026/tampa-heights-map-9-29-17_ada.pdf",
+    "text": "Download: tampa-heights-map-9-29-17_ada.pdf",
+    "file": "data/city_files/Tampa_FL/a9c04e_tampa-heights-map-9-29-17_ada.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://tampa.maps.arcgis.com/apps/dashboards/024f9ab76a3948c0bf0ac3bc74644aba": "Park Finder",
+   "https://www.arcgis.com/apps/dashboards/fd015af255354cd7b80870557a83443b": "citywide mapping application",
+   "https://experience.arcgis.com/experience/a5e5015340484dd090afb48f36934035?cscRedirectID=634": "Neighborhoods",
+   "https://tampa.maps.arcgis.com/apps/instant/lookup/index.html?appid=025e7dd03b474ccbb0ad9b9296c78b1c": "Comprehensive Services Map",
+   "https://experience.arcgis.com/experience/b2faeee3003c43a0858bbb1e3379a98a": "City Council Member Districts",
+   "https://experience.arcgis.com/experience/479d5d9b193a435385b50f65567daa0f/": "Fix it Fast",
+   "https://tampa.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=33522328b6664ee3b935d5bc00e1fe4e": "Bike Lanes",
+   "https://tampa.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=830a4da3f80e49d2beebdad86aacf51c": "Public Art Tour",
+   "https://experience.arcgis.com/experience/c4cb88b5a2294601933f16bddc486ec0/": "TPD Traffic Advisories Map (last 4 hours)",
+   "https://experience.arcgis.com/experience/fd162eccf50949fa9caa79bca3b27d52/": "Police Grid Map",
+   "https://experience.arcgis.com/experience/2ea59b6415e646f1ba91177b09f53349": "Tampa Natural Hazards Guide (Shelters, storm surge, sinkholes, tornados)",
+   "https://experience.arcgis.com/experience/a5e5015340484dd090afb48f36934035/": "Neighborhood Guide"
+  }
+ },
+ "Tacoma WA": {
+  "files": [],
+  "portals": {
+   "https://tacoma.gov/services/tacoma-open-data-maps/": "City Data & Dashboards",
+   "https://data.tacoma.gov": "View Open Data"
+  }
+ },
+ "Brooklyn": {
+  "files": [],
+  "portals": {}
+ },
+ "Mecklenburg County": {
+  "files": [],
+  "portals": {}
+ },
+ "Multnomah County": {
+  "files": [],
+  "portals": {}
+ },
+ "Memphis": {
+  "files": [
+   {
+    "url": "https://memphistn.gov/wp-content/uploads/2025/01/Memphis-Recycling-Flyer-Digital-3.pdf",
+    "text": "DOWNLOAD GUIDE",
+    "file": "data/city_files/Memphis/7b3d22_Memphis-Recycling-Flyer-Digital-3.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://recycle.memphistn.gov/wp-content/uploads/2023/05/Memphis-Recycling-Flyer-Digital.pdf",
+    "text": "download recycling guide",
+    "file": "data/city_files/Memphis/44e075_Memphis-Recycling-Flyer-Digital.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://recycle.memphistn.gov/wp-content/uploads/2023/06/Memphis-Recycling-Flyer-Spanish.pdf",
+    "text": "Descargar guía de reciclaje ESP",
+    "file": "data/city_files/Memphis/1a989d_Memphis-Recycling-Flyer-Spanish.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://recycle.memphistn.gov/wp-content/uploads/2021/11/Recycle-Right-Memphis_Recycling_Guide.pdf",
+    "text": "ACCEPTABLE MATERIALS GUIDE",
+    "file": "data/city_files/Memphis/773aa3_Recycle-Right-Memphis_Recycling_Guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.memphistn.gov/": "MEMPHIS DATA HUB",
+   "https://memphis-open-data-hub-memegis.hub.arcgis.com/apps/abf5375793124cf4bc769aeac0a9e732/explore": "FINANCE DASHBOARD",
+   "https://memphis-open-data-hub-memegis.hub.arcgis.com/apps/7fe3d1d471984096ad287080e3cd5e60/explore": "SAFER COMMUNITY DASHBOARD",
+   "https://experience.arcgis.com/experience/4b29c5cf9da04081a185cb95c4504a9a": "Street Paving Schedule"
+  }
+ },
+ "Sedgwick County": {
+  "files": [],
+  "portals": {}
+ },
+ "Miami": {
+  "files": [
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/v/1/transportation/2009-city-of-miami-bicycle-master-plan-1.pdf",
+    "text": "View 2009 Original Bike Master Plan (PDF, 19MB)",
+    "file": "data/city_files/Miami/44e4ee_2009-city-of-miami-bicycle-master-plan-1.pdf",
+    "rows": 39,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miamidade.gov/resources/transportation_publicworks/documents/system-map-brochure.pdf",
+    "text": "View Miami-Dade METROBUS Systems Map",
+    "file": "data/city_files/Miami/b4c002_system-map-brochure.pdf",
+    "rows": 53,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/2/document-resources/pdf-docs/planning/palm-grove-historic-district-residential-guidelines_508-1.pdf",
+    "text": "Palm Grove Historic District Residential Guidelines (PDF, 30MB)",
+    "file": "data/city_files/Miami/ed35f1_palm-grove-historic-district-residential-guidelines_508-1.pdf",
+    "rows": 376,
+    "bike_rows": 8
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/68a111e6b8074d2b8ea47e3869075bea": "",
+   "https://experience.arcgis.com/experience/cd8295decbff4141b49a0dd02b453628": "",
+   "https://gis.miami.gov/miamizoning/": "Miami Zoning WebGIS",
+   "https://gis.miamigov.com/miamizoning/": "GIS Tool",
+   "https://gis.miami.gov/miamizoning/main": "View a Map of the City of Miami",
+   "https://storymaps.arcgis.com/stories/2b28b7d74d264c0e8fe20c081d8e6c14": "Compost Drop-Off Sites in Miami-Dade County",
+   "https://www.miami.gov/Maps-Data/Data-Explorer/Featured-Datasets/Building-Permits-Open-Data": "Building Permits Open Data Discover more on building permits issued by the City of Miami Building Department since 2014 ",
+   "https://www.miami.gov/Services/Open-Data-Portal": "Open Data Portal Explore and download open data, discover city resources, and engage to solve important local issues.",
+   "https://datahub-miamigis.opendata.arcgis.com/search?collection=Dataset": "Explore all Open Data",
+   "https://miamigis.maps.arcgis.com/apps/webappviewer/index.html?id=b0971e8c87dd4544b5d6fdc180d0a7dd": "VIEW MAP",
+   "https://gis.miami.gov/miamizoning": "",
+   "https://experience.arcgis.com/experience/b92b4491994f4eeebd66be33fbf9a37f": ""
+  }
+ },
+ "Orleans Parish": {
+  "files": [
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Public%20Works/DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-RENTAL-(fillable-form).pdf",
+    "text": "Meter Rental Application",
+    "file": "data/city_files/Orleans_Parish/720869_DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-RENTAL-_fillable-form_.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Public%20Works/DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-REMOVAL-(fillable-form).pdf",
+    "text": "Meter Removal Application",
+    "file": "data/city_files/Orleans_Parish/3e83da_DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-REMOVAL-_fillable-form_.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nola.gov/nola/media/One-Stop-Shop/Public%20Works/DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-REMOVAL-(fillable-form).pdf",
+    "text": "Download Parking Meter Removal Application",
+    "file": "data/city_files/Orleans_Parish/628e3e_DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-REMOVAL-_fillable-form_.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/DPW/Parking/ADA-Parking-Permit-20250808.pdf",
+    "text": "Download ADA Parking Zone Application",
+    "file": "data/city_files/Orleans_Parish/a0e07f_ADA-Parking-Permit-20250808.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/DPW/Parking/Traffic-Division-ADA-Zone-Removal-Application-v08-12-25-(1).pdf",
+    "text": "Download ADA Parking Zone Removal Application",
+    "file": "data/city_files/Orleans_Parish/bed6e3_Traffic-Division-ADA-Zone-Removal-Application-v08-12-25-_1_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Public%20Works/OSS_PW_RESIDENTIAL_PARKING_PERMIT_APPLICATION.pdf",
+    "text": "Residential Parking Permit Application",
+    "file": "data/city_files/Orleans_Parish/acd128_OSS_PW_RESIDENTIAL_PARKING_PERMIT_APPLICATION.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Safety%20and%20Permits/OSS_SP_ELECTRICAL_VEHICLE_CHARGING_APPLICATION.pdf",
+    "text": "EV Charger Application",
+    "file": "data/city_files/Orleans_Parish/da70e3_OSS_SP_ELECTRICAL_VEHICLE_CHARGING_APPLICATION.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Public%20Works/OSS_PW_ROW_USE_BIKES_SUPPLEMENT_Q.pdf",
+    "text": "PDF Application",
+    "file": "data/city_files/Orleans_Parish/b041f0_OSS_PW_ROW_USE_BIKES_SUPPLEMENT_Q.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Taxi/GTB-Memo-Parking-Traffic-Camera-Fines-for-Renewals-or-Transfers-020421.pdf",
+    "text": "GTB-Memo-Parking-Traffic-Camera-Fines-for-Renewals-or-Transfers-020421",
+    "file": "data/city_files/Orleans_Parish/12647a_GTB-Memo-Parking-Traffic-Camera-Fines-for-Renewals-or-Transfers-020421",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic%20Districts/Algiers-Point.pdf",
+    "text": "Algiers Point",
+    "file": "data/city_files/Orleans_Parish/bc50d4_Algiers-Point.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Bywater.pdf",
+    "text": "Bywater",
+    "file": "data/city_files/Orleans_Parish/aa49c5_Bywater.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Canal-Street.pdf",
+    "text": "Canal Street",
+    "file": "data/city_files/Orleans_Parish/55eb5a_Canal-Street.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic%20Districts/Carrollton-Historic-District.pdf",
+    "text": "Carrollton",
+    "file": "data/city_files/Orleans_Parish/b3666d_Carrollton-Historic-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Esplanade-Ridge.pdf",
+    "text": "Esplanade Ridge",
+    "file": "data/city_files/Orleans_Parish/8a66e8_Esplanade-Ridge.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Faubourg-Marigny.pdf",
+    "text": "Faubourg Marigny",
+    "file": "data/city_files/Orleans_Parish/7c25b6_Faubourg-Marigny.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Garden.pdf",
+    "text": "Garden District",
+    "file": "data/city_files/Orleans_Parish/cd09ca_Garden.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/HolyCross.pdf",
+    "text": "Holy Cross",
+    "file": "data/city_files/Orleans_Parish/870370_HolyCross.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/IrishChannel.pdf",
+    "text": "Irish Channel",
+    "file": "data/city_files/Orleans_Parish/d90537_IrishChannel.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Lafayette.pdf",
+    "text": "Lafayette Square Historic District",
+    "file": "data/city_files/Orleans_Parish/616400_Lafayette.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/LowerGarden.pdf",
+    "text": "Lower Garden District",
+    "file": "data/city_files/Orleans_Parish/87a961_LowerGarden.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic%20Districts/Mid-City-Historic-District.pdf",
+    "text": "Mid City",
+    "file": "data/city_files/Orleans_Parish/3c7f85_Mid-City-Historic-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic%20Districts/Parkview-Historic-District.pdf",
+    "text": "Parkview",
+    "file": "data/city_files/Orleans_Parish/fb10aa_Parkview-Historic-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Picayune-Place.pdf",
+    "text": "Picayune Place",
+    "file": "data/city_files/Orleans_Parish/7a1821_Picayune-Place.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic%20Districts/St-Charles-Historic-District.pdf",
+    "text": "St. Charles Historic District",
+    "file": "data/city_files/Orleans_Parish/392346_St-Charles-Historic-District.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Treme.pdf",
+    "text": "Treme Historic District",
+    "file": "data/city_files/Orleans_Parish/482151_Treme.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.nola.gov/browse": "browse the data.nola.gov catalog",
+   "https://nolagis.maps.arcgis.com/apps/dashboards/466d84a3408f4a03aba3aac3032bc6d0": "Accessibility Dashboard",
+   "https://nolagis.maps.arcgis.com/apps/dashboards/00770504892d455db797b6705d2cd3f9": "DPW ARPA Projects Dashboard",
+   "https://nolagis.maps.arcgis.com/apps/dashboards/f7dfd1e96cab45cfb302dd738cc45e79": "Public Structures, Facilities & Property Dashboard",
+   "https://gis.nola.gov/apps/str_active/": "View the map",
+   "https://gis.nola.gov/apps/vacation_rentals/": "View the map",
+   "https://datadriven.nola.gov/open-data/": "Open Data",
+   "http://data.nola.gov/": "data.nola.gov",
+   "https://data.nola.gov/Housing-Land-Use-and-Blight/Short-Term-Rental-Permit-Applications/en36-xvxg/data": "View the STR registry data",
+   "https://data.nola.gov/City-Finance-and-Budget/Hotels-Motels-BBs/ns2v-hzec/data": "View the map",
+   "https://gis.nola.gov/apps/nstr/": "View the map",
+   "http://www.legis.la.gov/Legis/Law.aspx?d=78745": "RS 14:95.6"
+  }
+ },
+ "Howard County": {
+  "files": [
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2026-11/Howard%20County%20Provider%20Forum%20Final%20Report.pdf",
+    "text": "Howard County Provider Forum’s final report, The Starting Line: A Roadmap to Transform Healthcare in Howard County",
+    "file": "data/city_files/Howard_County/82363b_Howard_20County_20Provider_20Forum_20Final_20Report.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2024-01/Administrative%20Charging%20Committee%20Agenda%20January%2024%2C%202024.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Howard_County/f0d1b3_Administrative_20Charging_20Committee_20Agenda_20January_2024_2C_20202",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2023-12/Administrative%20Charging%20Committee%20Agenda%20December%2020%2C%202023.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Howard_County/eccfe9_Administrative_20Charging_20Committee_20Agenda_20December_2020_2C_2020",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2023-11/Administrative%20Charging%20Committee%20Agenda%20November%2029%2C%202023.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Howard_County/df2937_Administrative_20Charging_20Committee_20Agenda_20November_2029_2C_2020",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2023-12/Administrative%20Charging%20Committee%20Meeting%20Minutes%20November%2029%2C%202023.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Howard_County/0ac9d3_Administrative_20Charging_20Committee_20Meeting_20Minutes_20November_2",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2023-10/Administrative%20Charging%20Committee%20Agenda%20October%2025%2C%202023.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Howard_County/a812e2_Administrative_20Charging_20Committee_20Agenda_20October_2025_2C_20202",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2024-01/Administrative%20Charging%20Committee%20Meeting%20Minutes%20October%2025%2C%202023.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Howard_County/6361e4_Administrative_20Charging_20Committee_20Meeting_20Minutes_20October_20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2023-09/Administrative%20Charging%20Committee%20Agenda%20September%2027%2C%202023.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Howard_County/872202_Administrative_20Charging_20Committee_20Agenda_20September_2027_2C_202",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2023-11/Administrative%20Charging%20Committee%20Meeting%20Minutes%20September%2027%2C%202023.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Howard_County/41b0b9_Administrative_20Charging_20Committee_20Meeting_20Minutes_20September_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2023-08/Administrative%20Charging%20Committee%20Agenda%20August%2030%2C%202023.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Howard_County/8b14e8_Administrative_20Charging_20Committee_20Agenda_20August_2030_2C_202023",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2023-11/Administrative%20Charging%20Committee%20Meeting%20Minutes%20August%2030%2C%202023.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Howard_County/c87ff2_Administrative_20Charging_20Committee_20Meeting_20Minutes_20August_203",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2023-08/Administrative%20Charging%20Committee%20Agenda%20August%2017%2C%202023.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Howard_County/752ecf_Administrative_20Charging_20Committee_20Agenda_20August_2017_2C_202023",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2023-07/Administrative%20Charging%20Committee%20Meeting%20Agenda%20July%2026%2C%202023.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Howard_County/cdd165_Administrative_20Charging_20Committee_20Meeting_20Agenda_20July_2026_2",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2023-08/Administrative%20Charging%20Committee%20July%2026%2C%202023%20Minutes.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Howard_County/b777e8_Administrative_20Charging_20Committee_20July_2026_2C_202023_20Minutes.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.howardcountymd.gov/sites/default/files/2021-06/Wayfinding%20phases%201.pdf",
+    "text": "Proposed wayfinding map",
+    "file": "data/city_files/Howard_County/322191_Wayfinding_20phases_201.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/media/2020-09/BICYCLE%20ADVISORY%20GROUP%20Septv2%20%283%29.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Howard_County/f0fb45_BICYCLE_20ADVISORY_20GROUP_20Septv2_20_283_29.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/media/2020-06/2020_06_16%20MD%2032%20Alt%20Bike%20Route%20Presentation.pdf",
+    "text": "MD 32 Alt Bike  Route Presentation",
+    "file": "data/city_files/Howard_County/9e5a88_2020_06_16_20MD_2032_20Alt_20Bike_20Route_20Presentation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/media/2019-11/Wayfinding%20Maps%20Combined%20for%20Web.pdf",
+    "text": "Wayfinding Route Proposals",
+    "file": "data/city_files/Howard_County/f99122_Wayfinding_20Maps_20Combined_20for_20Web.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/media/2019-11/Hickory%20Ridge%20Bike%20Corridor%20packet%20for%20BAG%209%2017%202019.pdf",
+    "text": "Hickory Ridge Bike Corridor Packet",
+    "file": "data/city_files/Howard_County/45bb59_Hickory_20Ridge_20Bike_20Corridor_20packet_20for_20BAG_209_2017_202019",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2026-11/HPC%20Application%20Submission%20Procedures_2026%20finalupdate.pdf",
+    "text": "View the Historic Preservation Commission Application Submission Procedures",
+    "file": "data/city_files/Howard_County/f59647_HPC_20Application_20Submission_20Procedures_2026_20finalupdate.pdf",
+    "rows": 24,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/media/2016-01/ECGuidelines.pdf",
+    "text": "Ellicott City Historic District",
+    "file": "data/city_files/Howard_County/bcd732_ECGuidelines.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2021-02/LHGuidelines.pdf",
+    "text": "Lawyers Hill Historic District",
+    "file": "data/city_files/Howard_County/666dad_LHGuidelines.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/media/2016-01/Solar%20Panels%20and%20Devices.pdf",
+    "text": "Design Guidelines for Solar Panels and Other Devices in Historic Districts",
+    "file": "data/city_files/Howard_County/458eb7_Solar_20Panels_20and_20Devices.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2026-01/Sept%202025%20Meeting%20Transcript%20Historic%20and%20Historic%20Sites%20Advisory%20Workgroup%20Committee%20Meeting.pdf",
+    "text": "Sept 2025 Meeting Transcript Historic and Historic Sites Advisory Workgroup Committee Meeting.pdf",
+    "file": "data/city_files/Howard_County/d84f8a_Sept_202025_20Meeting_20Transcript_20Historic_20and_20Historic_20Sites",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://howardcountymd.gov/sites/default/files/2026-01/Historic%20Advisory%20Board%20Meeting%20Transcript%20Dec%202025.pdf",
+    "text": "Historic Advisory Board Meeting Transcript Dec 2025.pdf",
+    "file": "data/city_files/Howard_County/fd6688_Historic_20Advisory_20Board_20Meeting_20Transcript_20Dec_202025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.howardcountymd.gov/DataExplorer/Search.aspx?Application=CouncilMember": "Who Represents Me?",
+   "https://data.howardcountymd.gov/HolidayLightsFinder_view/main_Desktop.aspx": "“HoCo Holiday Lights” map",
+   "https://data.howardcountymd.gov/HolidayLightsFinder/main_Mobile.aspx": "online registration",
+   "https://howardcountymd.gov/health/resource/maryland-open-data-portal": "Maryland Open Data Portal",
+   "https://data.howardcountymd.gov/InteractiveMap.html?Workspace=Indicators_of_Risk": "Map of Risk for Overdose",
+   "https://storymaps.arcgis.com/stories/1b9d914cbd3d4518914a8877005f3210": "Route 1 Tax Credit Story Map",
+   "https://data.howardcountymd.gov/InteractiveMap.html?Workspace=HistoricSitesViewer": "Howard County Searchable Map",
+   "https://data.howardcountymd.gov/InteractiveMap.html": "FIND YOUR ZONING DISTRICT",
+   "https://data.howardcountymd.gov/HistoricZoningMap/main_Web.aspx": "SEARCH THE HISTORIC ZONING MAP ARCHIVES",
+   "https://data.howardcountymd.gov/MapGallery.html": "Planning Map Gallery",
+   "https://data.howardcountymd.gov/GGeodetic/Geodetic_Web.aspx": "Howard County Geodetic Control",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmdot-sha-us1-hoco-line-to-gorman-rd-ho5415179-maryland.hub.arcgis.com%2F&data=05%7C02%7Cjataylor%40howardcountymd.gov%7C3731d7a6e53f4018317808dd299ea95e%7C0538130803664bb7a95b95304bd11a58%7C1%7C0%7C638712483774514631%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=QDzUv3UOpq%2FiqT9bbZNG45yqLP0BSeO2ACoHttXopkw%3D&reserved=0": "US 1 Pedestrian Safety Action Plan"
+  }
+ },
+ "Cleveland County": {
+  "files": [
+   {
+    "url": "https://ccok.us/media/CountyCommissionerDistrics.pdf",
+    "text": "- County Commissioner District Map",
+    "file": "data/city_files/Cleveland_County/6fba4e_CountyCommissionerDistrics.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ccok.us/media/StateHouseDistricts.pdf",
+    "text": "- State House District Map",
+    "file": "data/city_files/Cleveland_County/72a1d1_StateHouseDistricts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ccok.us/media/StateSenateDistricts.pdf",
+    "text": "- State Senate District Map",
+    "file": "data/city_files/Cleveland_County/580cd8_StateSenateDistricts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "St. Tammany Parish": {
+  "files": [
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/2026 Documents/April 27 Documents/STAR Transit Riders Guide.pdf?t=202604280947520",
+    "text": "STAR Transit Rider's Guide",
+    "file": "data/city_files/St_Tammany_Parish/8208cc_STAR_Transit_Riders_Guide.pdf",
+    "rows": 50,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/2026 Documents/April 27 Documents/Guía del pasajero de STAR Transit.pdf?t=202604280948180",
+    "text": "Guía del pasajero de STAR Transit",
+    "file": "data/city_files/St_Tammany_Parish/762b88_Gu_a_del_pasajero_de_STAR_Transit.pdf",
+    "rows": 49,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpgov.org/Site Setup/Documents/Department/Grant/STAR TRANSIT/1STARTransitADAComplaint-Procedures.pdf?t=202403181209400",
+    "text": "STAR Transit ADA Complaint Procedures",
+    "file": "data/city_files/St_Tammany_Parish/579dda_1STARTransitADAComplaint-Procedures.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/2026 Documents/Procedimientos de queja de la ADA.pdf?t=202604241610240",
+    "text": "Procedimientos de queja de la ADA",
+    "file": "data/city_files/St_Tammany_Parish/1fdf88_Procedimientos_de_queja_de_la_ADA.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/2026 Documents/STAR Transit ADA Complaint Form.pdf?t=202604241609550",
+    "text": "STAR Transit ADA Complaint Form",
+    "file": "data/city_files/St_Tammany_Parish/4e7bff_STAR_Transit_ADA_Complaint_Form.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/3STARTranistReasonableModificationPolicy.pdf?t=202403181209440",
+    "text": "STAR Transit Reasonable Modification Policy",
+    "file": "data/city_files/St_Tammany_Parish/6d92c3_3STARTranistReasonableModificationPolicy.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/2026 Documents/Procedimientos de modificaciones razonables de la ADA.pdf?t=202604241609230",
+    "text": "Procedimientos de modificaciones razonables de la ADA",
+    "file": "data/city_files/St_Tammany_Parish/8d5369_Procedimientos_de_modificaciones_razonables_de_la_ADA.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/2026 Documents/STPG Title VI Plan 2025.pdf?t=202604241612090",
+    "text": "here",
+    "file": "data/city_files/St_Tammany_Parish/8b6f23_STPG_Title_VI_Plan_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/2026 Documents/Title VI Complaint Form.pdf?t=202604241612540",
+    "text": "STAR Transit Title VI Complaint Form",
+    "file": "data/city_files/St_Tammany_Parish/4e17c0_Title_VI_Complaint_Form.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/2026 Documents/April 27 Documents/TITLE VI NOTICE TO PUBLIC.pdf?t=202604271710170",
+    "text": "TITLE VI NOTICE TO PUBLIC",
+    "file": "data/city_files/St_Tammany_Parish/0677d1_TITLE_VI_NOTICE_TO_PUBLIC.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/2026 Documents/April 27 Documents/NOTIFICACIÓN DEL TÍTULO VI AL PÚBLICO.pdf?t=202604271710470",
+    "text": "NOTIFICACIÓN DEL TÍTULO VI AL PÚBLICO",
+    "file": "data/city_files/St_Tammany_Parish/7e551d_NOTIFICACI_N_DEL_T_TULO_VI_AL_P_BLICO.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/2026 Documents/April 27 Documents/NON-DISCRIMINATION COMPLAINT PROCEDURE.pdf?t=202604271711190",
+    "text": "NON-DISCRIMINATION COMPLAINT PROCEDURE",
+    "file": "data/city_files/St_Tammany_Parish/802da0_NON-DISCRIMINATION_COMPLAINT_PROCEDURE.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/2026 Documents/April 27 Documents/PROCEDIMIENTO DE QUEJA POR NO DISCRIMINACIÓN.pdf?t=202604271711470",
+    "text": "PROCEDIMIENTO DE QUEJA POR NO DISCRIMINACIÓN",
+    "file": "data/city_files/St_Tammany_Parish/97e1fb_PROCEDIMIENTO_DE_QUEJA_POR_NO_DISCRIMINACI_N.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/STPGOVFTADBEPLANFY23-FY25.pdf?t=202403181210190",
+    "text": "FTA DBE Plan FY 23-FY25",
+    "file": "data/city_files/St_Tammany_Parish/9db4bf_STPGOVFTADBEPLANFY23-FY25.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://stpgov.org/Documents/Department/Grant/STAR Transit/STPGOVFY23-FY25FAADBEPLAN.pdf?t=202403181210190",
+    "text": "FAA DBE PLAN FY23-FY25",
+    "file": "data/city_files/St_Tammany_Parish/220b51_STPGOVFY23-FY25FAADBEPLAN.pdf",
+    "rows": 113,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://legis.la.gov/legis/home.aspx": "State Legislators"
+  }
+ },
+ "Smith County": {
+  "files": [],
+  "portals": {
+   "https://www.arcgis.com/apps/dashboards/0b2cf7240be6450887d398054662c1c7": "Elections Interactive Map of Smith County",
+   "https://www.arcgis.com/apps/dashboards/fee1c492c0614d938d160e8829a51593": "County Road & Office Closures",
+   "https://experience.arcgis.com/experience/b4d0f2c8799f4317b4a17b2703599271": "Smith County Historical Atlas"
+  }
+ },
+ "Delaware County": {
+  "files": [],
+  "portals": {
+   "http://www.delco-gis.org/auditor/": "Property Search"
+  }
+ },
+ "Frisco": {
+  "files": [
+   {
+    "url": "https://cdn-de.agrilife.org/extension/departments/agen/agen-pu-218/publications/files/preventing-runoff-with-cycle-and-soak-irrigation.pdf",
+    "text": "Preventing Runoff with Cycle and Soak Irrigation\" (PDF)",
+    "file": "data/city_files/Frisco/895c4a_preventing-runoff-with-cycle-and-soak-irrigation.pdf",
+    "rows": 82,
+    "bike_rows": 12
+   }
+  ],
+  "portals": {
+   "https://frisco.maps.arcgis.com/home/index.html": "Map Portal",
+   "https://experience.arcgis.com/experience/03e7c2a122f64884a089a0a3b5cba6e0": "Capital Improvement Projects",
+   "https://survey123.arcgis.com/share/d33b009c3a4f4e6fb27a4ff68da93f17": "Report Coyote Sightings",
+   "https://experience.arcgis.com/experience/bf261897d5c24441bfb9ec5c3e347b8f/": "Find a Park",
+   "https://experience.arcgis.com/experience/03e7c2a122f64884a089a0a3b5cba6e0/page/Parks-Capital-Improvement-Projects/": "Parks Project Dashboard.",
+   "https://storymaps.arcgis.com/stories/8a3cefdad6c9410c9670f17a8f27a4a2": "interactive Frisco Trails Story Map",
+   "http://www.statutes.legis.state.tx.us/docs/tn/htm/tn.551.htm": "Bike laws",
+   "https://geodata-frisco.hub.arcgis.com/": "GIS Data Download",
+   "https://gis.friscotexas.gov/ESRI_Infographics/": "Infographics",
+   "https://experience.arcgis.com/experience/b49263caa6aa4a73b1447f42d80a4927": "See what we're working on and the latest timeline for these projects here. Trails In Progress Trails In Progress Trails ",
+   "https://experience.arcgis.com/experience/a33aba7c776d45fb95a1d44ab81dcf0f": "",
+   "https://frisco.maps.arcgis.com/apps/dashboards/19da525d6f8e4732ac13d1e464041ce8": ""
+  }
+ },
+ "Shreveport": {
+  "files": [],
+  "portals": {
+   "https://shreveport.maps.arcgis.com/apps/instant/basic/index.html?appid=d679db415105422b8641c8b368e0a561": "Additional Info..."
+  }
+ },
+ "Elk Grove": {
+  "files": [],
+  "portals": {}
+ },
+ "Paulding County": {
+  "files": [],
+  "portals": {
+   "https://paulding.maps.arcgis.com/apps/instant/lookup/index.html?appid=bcdcbc9b87d5456197dd243096841914&fbclid=IwY2xjawF9_NpleHRuA2FlbQIxMAABHQFcP87Oj4NLkM9mniMFkQPDWNYiEetnY1VTFMvmBAB2bF-kzPPRYjNKXg_aem_BvNAn82dw7Qrm9GluoVnvw": "GA Senate",
+   "https://paulding.maps.arcgis.com/apps/instant/lookup/index.html?appid=318462cbe81a47529706c993700a5d35&fbclid=IwY2xjawF9_P5leHRuA2FlbQIxMAABHZQYQMRIEY_j5BbGJ72DiqaGKhRksMb3JOgD7qcWZEGPGQ3jZTr7dfYE6A_aem_ok9kIDuHZThh4AekxQBN_g": "GA House",
+   "https://paulding.maps.arcgis.com/apps/instant/lookup/index.html?appid=67cf7b6b848b4d0a83f740e3992e3b44&fbclid=IwY2xjawF9_R5leHRuA2FlbQIxMAABHRskx0ANXET7lYEerStGXzf6Xb_rys2d-HDtPEM3z_ybXrc-vSCIyArO4w_aem_FN5Mc3kYggAkyW6QwknlGw": "Post Commission",
+   "https://paulding.maps.arcgis.com/apps/instant/lookup/index.html?appid=2364d216d39a4ee88bf7284028586e67&fbclid=IwY2xjawF9_VhleHRuA2FlbQIxMAABHSSwVFb4MVpARKqyll4HjkjQdT_XGww7u6l6ubwivlo5vgLCfEgsOQXmMw_aem_1KkeJewVx8UJ6g4v0-w64w": "Polling Location",
+   "https://www.legis.ga.gov/api/legislation/document/20212022/206139": "House Bill 1105 (HB1105)",
+   "https://paulding.maps.arcgis.com/apps/mapviewer/index.html?webmap=fde8a15e9f094c3fb0213c3b4a121d5d": "Paulding Map:",
+   "https://paulding.maps.arcgis.com/apps/mapviewer/index.html?webmap=8f5fe00b4fc84d1096affca0394478aa": "",
+   "https://paulding.maps.arcgis.com/apps/mapviewer/index.html?webmap=4f952e2a72704cb1ba11b46552e82d10": "Paulding Zoning:",
+   "https://paulding.maps.arcgis.com/apps/mapviewer/index.html?webmap=304d454927614cdc9e6529a2fd08d645": "Paulding Elections",
+   "https://paulding.maps.arcgis.com/apps/mapviewer/index.html?webmap=14d53e2bbbb34137a02e324f6892499e": "Paulding Emergency Services:"
+  }
+ },
+ "Centre County": {
+  "files": [],
+  "portals": {}
+ },
+ "Bellevue": {
+  "files": [
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2019-05/EastBellCommCounc_Packet%20Map.pdf",
+    "text": "Boundary Map",
+    "file": "data/city_files/Bellevue/f32a08_EastBellCommCounc_Packet_20Map.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://bellevuewa.gov/sites/default/files/media/pdf_document/2019-05/EastBellCommCounc_Packet%20Map.pdf",
+    "text": "Boundary Map",
+    "file": "data/city_files/Bellevue/1ddfff_EastBellCommCounc_Packet_20Map.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2016-Park-Plan-Neighborhood-Areas.pdf",
+    "text": "Neighborhood Reference Map",
+    "file": "data/city_files/Bellevue/2cbbe4_2016-Park-Plan-Neighborhood-Areas.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2016-Park-Plan-Neighborhood-BridleTrails.pdf",
+    "text": "Bridle Trails",
+    "file": "data/city_files/Bellevue/2520ae_2016-Park-Plan-Neighborhood-BridleTrails.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2025/all-public-street-speed-limits_2025.pdf",
+    "text": "Map of existing speed limits",
+    "file": "data/city_files/Bellevue/34ffc4_all-public-street-speed-limits_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2024/proposed-future-local-speed-limits.pdf",
+    "text": "Map of proposed speed limits",
+    "file": "data/city_files/Bellevue/892fb6_proposed-future-local-speed-limits.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2024/tracks-hiking-program-comparison.pdf",
+    "text": "hiking comparison chart",
+    "file": "data/city_files/Bellevue/b853d5_tracks-hiking-program-comparison.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2023/Tuesday-Trails-flyer.pdf",
+    "text": "Tuesday Trails Flyer",
+    "file": "data/city_files/Bellevue/23aaeb_Tuesday-Trails-flyer.pdf",
+    "rows": 14,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2024/tracks-cascade-hiking-club.pdf",
+    "text": "Cascade Hike Club Flyer",
+    "file": "data/city_files/Bellevue/80068f_tracks-cascade-hiking-club.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2025/tracks-wednesday-walk-roll.pdf",
+    "text": "Wednesday Walk & Roll Flyer",
+    "file": "data/city_files/Bellevue/d3da5c_tracks-wednesday-walk-roll.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2024/tracks-thursday-walks.pdf",
+    "text": "Thursday Walks Flyer",
+    "file": "data/city_files/Bellevue/dcec80_tracks-thursday-walks.pdf",
+    "rows": 7,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2024/tracks-bike-club.pdf",
+    "text": "Bike Club Flyer",
+    "file": "data/city_files/Bellevue/6949b4_tracks-bike-club.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2024/pop-up-dog-ola-report-2024.pdf",
+    "text": "2024 Pop-Up OLA Pilot Program Report",
+    "file": "data/city_files/Bellevue/232692_pop-up-dog-ola-report-2024.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2020/GuideToParkingLaws.pdf",
+    "text": "A Guide to Bellevue Parking Laws",
+    "file": "data/city_files/Bellevue/d633b3_GuideToParkingLaws.pdf",
+    "rows": 16,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2023/Draft%20Curb%20Typology%20Maps%20-%20Future%20Intent%20-%20March%202023.pdf",
+    "text": "Curb Typology maps",
+    "file": "data/city_files/Bellevue/6c8db2_Draft_20Curb_20Typology_20Maps_20-_20Future_20Intent_20-_20March_20202",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2022/curbside-management-pilot-assessment-report-020722_2.pdf",
+    "text": "Curbside Technology Performance Assessment Report",
+    "file": "data/city_files/Bellevue/bbd167_curbside-management-pilot-assessment-report-020722_2.pdf",
+    "rows": 558,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2026/right-of-way-procedures-manualweb-1%29.pdf",
+    "text": "Chapter 7: On-street Parking Management",
+    "file": "data/city_files/Bellevue/261547_right-of-way-procedures-manualweb-1_29.pdf",
+    "rows": 48,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2026/appendix-n.pdf",
+    "text": "Appendix N: Link Light Rail Track Access Requirements",
+    "file": "data/city_files/Bellevue/11cbfd_appendix-n.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2026/appendix-o.pdf",
+    "text": "Appendix O: Curb Transition Details",
+    "file": "data/city_files/Bellevue/780e29_appendix-o.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2026/bellevuebikemap_final_5-14-26_for-webrev2.pdf",
+    "text": "bike map",
+    "file": "data/city_files/Bellevue/458e54_bellevuebikemap_final_5-14-26_for-webrev2.pdf",
+    "rows": 24,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/2020/BellevueBikeMap.pdf",
+    "text": "2020 Bike Map:",
+    "file": "data/city_files/Bellevue/243bab_BellevueBikeMap.pdf",
+    "rows": 38,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/Bike-Safety-for-children-Brochure.pdf",
+    "text": "Child Bicycle Safety Brochure",
+    "file": "data/city_files/Bellevue/446499_Bike-Safety-for-children-Brochure.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellevuewa.gov/sites/default/files/media/pdf_document/Ped%20Bike%20Count%20Report%202015.pdf",
+    "text": "2015 Pedestrian and Bicycle Count Report",
+    "file": "data/city_files/Bellevue/f3673c_Ped_20Bike_20Count_20Report_202015.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cobgis.bellevuewa.gov/Html5Viewer/index.html?viewer=piyn": "Projects in Your Neighborhood",
+   "http://cobgis.maps.arcgis.com/home/gallery.html?view=grid&sortOrder=asc&sortField=title": "Interactive Web Maps",
+   "http://cobgis.maps.arcgis.com/home/gallery.html": "Map Gallery",
+   "https://cobgis.maps.arcgis.com/apps/webappviewer/index.html?id=e1748172d4f34f1eb3710032a351cd57": "use the Map Viewer",
+   "https://data.bellevuewa.gov/apps/56eb7adc676d4ab5b538c5718c85f021/explore": "Businesses Licensed in Bellevue",
+   "https://data.bellevuewa.gov/": "Bellevue’s Open Data Portal",
+   "https://cobgis.maps.arcgis.com/apps/dashboards/6d5d1e0a714041bd85867c85f06b5c2b": "Capital Projects Dashboard",
+   "https://storymaps.arcgis.com/stories/c38828e85a444928a18f25113545ff41": "visit the interactive map",
+   "http://cobgis.maps.arcgis.com/apps/MapSeries/index.html?appid=9a3fc8b4efbe490d805e7300d5b64258": "interactive map",
+   "http://cobgis.maps.arcgis.com/apps/webappviewer/index.html?id=99595e522118479fae1a462249e8b789": "here",
+   "https://storymaps.arcgis.com/stories/43e07e9fd37b4780a78cabc603313397": "Curb Typology web map",
+   "https://storymaps.arcgis.com/stories/35fed0deb06246058df1710c5e840739": "Story map"
+  }
+ },
+ "Surprise": {
+  "files": [],
+  "portals": {}
+ },
+ "Stamford": {
+  "files": [],
+  "portals": {}
+ },
+ "Bossier Parish": {
+  "files": [
+   {
+    "url": "https://bossierparishla.gov/docs/default-source/fire-district-maps/bossier-parish-fire-district-1.pdf?sfvrsn=e5e6a851_3",
+    "text": "Bossier Parish Fire District #1 Bossier Parish Fire District #1",
+    "file": "data/city_files/Bossier_Parish/b1d8dd_bossier-parish-fire-district-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bossierparishla.gov/docs/default-source/fire-district-maps/bossier-parish-fire-district-2.pdf?sfvrsn=77e9d37e_3",
+    "text": "Bossier Parish Fire District #2 Bossier Parish Fire District #2",
+    "file": "data/city_files/Bossier_Parish/655c60_bossier-parish-fire-district-2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bossierparishla.gov/docs/default-source/fire-district-maps/bossier-parish-fire-district-4.pdf?sfvrsn=fbafae_3",
+    "text": "Bossier Parish Fire District #4 Bossier Parish Fire District #4",
+    "file": "data/city_files/Bossier_Parish/215a49_bossier-parish-fire-district-4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bossierparishla.gov/docs/default-source/fire-district-maps/bossier-parish-fire-district-5.pdf?sfvrsn=28d56d5c_3",
+    "text": "Bossier Parish Fire District #5 Bossier Parish Fire District #5",
+    "file": "data/city_files/Bossier_Parish/37c131_bossier-parish-fire-district-5.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bossierparishla.gov/docs/default-source/fire-district-maps/bossier-parish-fire-district-7.pdf?sfvrsn=274159a4_3",
+    "text": "Bossier Parish Fire District #7 Bossier Parish Fire District #7",
+    "file": "data/city_files/Bossier_Parish/21ebc1_bossier-parish-fire-district-7.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Blair County": {
+  "files": [],
+  "portals": {}
+ },
+ "Evansville": {
+  "files": [],
+  "portals": {}
+ },
+ "Lansing": {
+  "files": [],
+  "portals": {}
+ },
+ "Pennington County": {
+  "files": [],
+  "portals": {}
+ },
+ "El Cajon": {
+  "files": [],
+  "portals": {}
+ },
+ "Etowah County": {
+  "files": [],
+  "portals": {
+   "http://isv.kcsgis.com/al.etowah_revenue/": "Etowah County GIS"
+  }
+ },
+ "Moore County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/372f89e6fdcb4bd5af38256a9744ed14/": "Interactive Map",
+   "https://experience.arcgis.com/experience/ff9f91954c4747b2a2d91d83dfaf8c74": "Property Sales"
+  }
+ },
+ "Greece": {
+  "files": [],
+  "portals": {}
+ },
+ "Pottawattamie County": {
+  "files": [],
+  "portals": {}
+ },
+ "Victoria County": {
+  "files": [],
+  "portals": {}
+ },
+ "Santa Barbara": {
+  "files": [
+   {
+    "url": "https://sbparksandrec.santabarbaraca.gov/sites/default/files/2022-05/Parks%20and%20Rec%20Map.pdf",
+    "text": "View Printable parks Map",
+    "file": "data/city_files/Santa_Barbara/5feaa8_Parks_20and_20Rec_20Map.pdf",
+    "rows": 37,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Harbor%20Main%20Parking%20Lot.pdf",
+    "text": "Harbor Main Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/fb42d2_Harbor_20Main_20Parking_20Lot.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Launch%20Ramp%20Parking%20Area.pdf",
+    "text": "Launch Ramp Parking Area.pdf",
+    "file": "data/city_files/Santa_Barbara/c21e12_Launch_20Ramp_20Parking_20Area.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Cabrillo%20East%20Parking%20Lot.pdf",
+    "text": "Cabrillo East Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/4957e6_Cabrillo_20East_20Parking_20Lot.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Cabrillo%20West%20Parking%20Lot.pdf",
+    "text": "Cabrillo West Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/1be25d_Cabrillo_20West_20Parking_20Lot.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Garden%20Street%20Parking%20Lot.pdf",
+    "text": "Garden Street Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/46f787_Garden_20Street_20Parking_20Lot.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Harbor%20West%20%20Parking%20Lot.pdf",
+    "text": "Harbor West  Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/c307b9_Harbor_20West_20_20Parking_20Lot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Leadbetter%20Parking%20Lot.pdf",
+    "text": "Leadbetter Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/28327b_Leadbetter_20Parking_20Lot.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Palm%20Park%20Parking%20Lot.pdf",
+    "text": "Palm Park Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/c59d8f_Palm_20Park_20Parking_20Lot.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/SBCC%20La%20Playa%20East%20Parking%20Lot.pdf",
+    "text": "SBCC La Playa East Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/94d477_SBCC_20La_20Playa_20East_20Parking_20Lot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/SBCC%20La%20Playa%20West%20Parking%20Lot.pdf",
+    "text": "SBCC La Playa West Parking Lot.pdf",
+    "file": "data/city_files/Santa_Barbara/99897d_SBCC_20La_20Playa_20West_20Parking_20Lot.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Parking%20Lots/Harbor%20Commercial%20Area%20%26%2090-Minute%20Parking.pdf",
+    "text": "Harbor Commercial Area and 90-Minute Parking",
+    "file": "data/city_files/Santa_Barbara/7c7e1e_Harbor_20Commercial_20Area_20_26_2090-Minute_20Parking.pdf",
+    "rows": 8,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2024-03/Automated_License_Plate_Policy_2024.pdf",
+    "text": "Automated License Plate Recognition Policy For City Operated Off-Street Parking Facilities",
+    "file": "data/city_files/Santa_Barbara/a8b481_Automated_License_Plate_Policy_2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2025-08/2025%20Annual%20California%20Harbor%20Survey%20-%20Excel%20File.xlsx",
+    "text": "2025 Annual California Harbor Survey - Excel File",
+    "file": "data/city_files/Santa_Barbara/d5b0bc_2025_20Annual_20California_20Harbor_20Survey_20-_20Excel_20File.xlsx",
+    "rows": 45,
+    "bike_rows": 29
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2024-06/2024%20Annual%20Marina%20Survey%20-%20Excel%20File.xlsx",
+    "text": "2024 Annual California Harbor Survey - Excel File",
+    "file": "data/city_files/Santa_Barbara/7e394c_2024_20Annual_20Marina_20Survey_20-_20Excel_20File.xlsx",
+    "rows": 45,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2025-08/2023%20Annual%20California%20Harbor%20Survey%20-%20Excel%20File.xlsx",
+    "text": "2023 Annual California Harbor Survey - Excel File",
+    "file": "data/city_files/Santa_Barbara/ec95d5_2023_20Annual_20California_20Harbor_20Survey_20-_20Excel_20File.xlsx",
+    "rows": 252,
+    "bike_rows": 110
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2025-08/2022%20Annual%20California%20Harbor%20Survey%20-%20Excel%20File.xlsx",
+    "text": "2022 Annual California Harbor Survey - Excel File",
+    "file": "data/city_files/Santa_Barbara/f67e23_2022_20Annual_20California_20Harbor_20Survey_20-_20Excel_20File.xlsx",
+    "rows": 252,
+    "bike_rows": 111
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2024-01/Boating%20Services%20Map.pdf",
+    "text": "Boating Services Map",
+    "file": "data/city_files/Santa_Barbara/59781e_Boating_20Services_20Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Maps%20%26%20Directories/Directions%20to%20the%20Harbor.pdf",
+    "text": "Directions to the Harbor",
+    "file": "data/city_files/Santa_Barbara/bb33de_Directions_20to_20the_20Harbor.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Maps%20%26%20Directories/Harbor%20Directory%20Map.pdf",
+    "text": "Harbor Directory Map",
+    "file": "data/city_files/Santa_Barbara/9840b3_Harbor_20Directory_20Map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Maps%20%26%20Directories/Waterfront%20Area%20Parking%20Lots%20Map.pdf",
+    "text": "Waterfront Area Parking Lots Map",
+    "file": "data/city_files/Santa_Barbara/fcfe21_Waterfront_20Area_20Parking_20Lots_20Map.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Maps%20%26%20Directories/Wharf%20and%20Harbor%20Map.pdf",
+    "text": "Wharf and Harbor Map",
+    "file": "data/city_files/Santa_Barbara/62842b_Wharf_20and_20Harbor_20Map.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/documents/Waterfront/Maps%20%26%20Directories/Wharf%20Directory%20Map.pdf",
+    "text": "Wharf Directory Map",
+    "file": "data/city_files/Santa_Barbara/cd9c43_Wharf_20Directory_20Map.pdf",
+    "rows": 18,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2026-08/FY27%20Waterfront%20Rate%20and%20Fee%20Summary.pdf",
+    "text": "FY27 Waterfront Rate and Fee Summary",
+    "file": "data/city_files/Santa_Barbara/6e68c5_FY27_20Waterfront_20Rate_20and_20Fee_20Summary.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://santabarbaraca.gov/sites/default/files/2022-07/2016_01_01_2016_Grand_Jury_Report_-_Harbor_Only_Section.pdf",
+    "text": "2016 Grand Jury Report",
+    "file": "data/city_files/Santa_Barbara/9fc01b_2016_01_01_2016_Grand_Jury_Report_-_Harbor_Only_Section.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://santabarbara.maps.arcgis.com/apps/webappviewer/index.html?id=93119f9f307b4b11885ecc5279001984": "Historic Properties",
+   "https://santabarbara.maps.arcgis.com/apps/webappviewer/index.html?id=2ed08292964b448495d6554af68e3c07": "Parks",
+   "https://santabarbara.maps.arcgis.com/apps/webappviewer/index.html?id=76fc10d1dae546ab8f9b1d47049c78e4": "Projects",
+   "https://experience.arcgis.com/experience/17474ee60945433f9172c204315dcc5b": "Major Projects Map",
+   "https://santabarbara.maps.arcgis.com/apps/webappviewer/index.html?id=f259c9e05a554cd6a37435890008f071": "Go to Creeks & Watersheds Map Creeks & Watersheds Map",
+   "https://storymaps.arcgis.com/stories/d7e74b0a04b6467cabbf64454fc6a3d5": "Downtown Parking Lots",
+   "https://experience.arcgis.com/experience/e7a147fef3d64177b03f1fd652f9179c/": "Link to Map in Full Page View",
+   "https://www.arcgis.com/apps/dashboards/4aa0cb2a2613486d89efc98559ac9e25": "View this map in a separate browser tab with dashboard statistics"
+  }
+ },
+ "Lake Forest": {
+  "files": [],
+  "portals": {}
+ },
+ "Barrow County": {
+  "files": [],
+  "portals": {}
+ },
+ "Parma": {
+  "files": [],
+  "portals": {}
+ },
+ "Upland": {
+  "files": [
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Transportation/Truck Route Map.pdf?t=202608191235300",
+    "text": "Truck Route Map",
+    "file": "data/city_files/Upland/a9e580_Truck_Route_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Transportation/Traffic/Speed Limits 2024.pdf?t=202608191236580",
+    "text": "Speed Limits Map",
+    "file": "data/city_files/Upland/e9735b_Speed_Limits_2024.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/A_Fig LU1 - Land Use.pdf?t=202603301829590",
+    "text": "General Plan Land Use Map",
+    "file": "data/city_files/Upland/552932_A_Fig_LU1_-_Land_Use.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/Zoning Map 081616.pdf?t=202603301830480",
+    "text": "Zoning Map",
+    "file": "data/city_files/Upland/e0a517_Zoning_Map_081616.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/General Plan EIR Addendum - Rezoning for Adopted Housing Element.pdf?t=202606011931490",
+    "text": "Addendum to the General Plan EIR",
+    "file": "data/city_files/Upland/a27490_General_Plan_EIR_Addendum_-_Rezoning_for_Adopted_Housing_Element.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/TOC - updated.pdf?t=202604092006350",
+    "text": "Table of Contents",
+    "file": "data/city_files/Upland/06f693_TOC_-_updated.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/00_Introduction.pdf?t=202604092006220",
+    "text": "Introduction",
+    "file": "data/city_files/Upland/18d966_00_Introduction.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/01_Land Use Element - revised LU map.pdf?t=202604092007040",
+    "text": "Land Use Element",
+    "file": "data/city_files/Upland/b1f38e_01_Land_Use_Element_-_revised_LU_map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/04_Economic Sustainability Element.pdf?t=202604092008150",
+    "text": "Economic Sustainability Element",
+    "file": "data/city_files/Upland/abce92_04_Economic_Sustainability_Element.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/07_Public Facilities Element.pdf?t=202604092012230",
+    "text": "Public Facilities Element",
+    "file": "data/city_files/Upland/8a885f_07_Public_Facilities_Element.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/02_Focus Areas Element.pdf?t=202604092007330",
+    "text": "Focus Areas Element",
+    "file": "data/city_files/Upland/ff1139_02_Focus_Areas_Element.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/05_Circulation Element - revised map.pdf?t=202604092008340",
+    "text": "Circulation Element",
+    "file": "data/city_files/Upland/b2c0cc_05_Circulation_Element_-_revised_map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/08_Healthy Community Element.pdf?t=202604092012430",
+    "text": "Healthy Community Element",
+    "file": "data/city_files/Upland/4f81b4_08_Healthy_Community_Element.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/03_Community Character Element.pdf?t=202604092007540",
+    "text": "Community Character Element",
+    "file": "data/city_files/Upland/cfdbd6_03_Community_Character_Element.pdf",
+    "rows": 30,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/06_Open Space-Conservation Element - revised map.pdf?t=202604092008530",
+    "text": "Open Space Conservation Element",
+    "file": "data/city_files/Upland/7c4109_06_Open_Space-Conservation_Element_-_revised_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Development Services/Planning/General Plan Zoning Codes and Maps/09_Safety Element.pdf?t=202604092013130",
+    "text": "Safety Element",
+    "file": "data/city_files/Upland/fdc264_09_Safety_Element.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Services/Public Works/Trash/Residential/New Trash Route.pdf?t=202602101139590",
+    "text": "Residential Trash Collection effective 8/12/24",
+    "file": "data/city_files/Upland/e79175_New_Trash_Route.pdf",
+    "rows": 10,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://ci.upland.ca.us/Documents/Services/Public Works/Trash/Commercial/Upland Organics Flyer (4).pdf?t=202602101140070",
+    "text": "New Food Waste Recycling Program Flyer",
+    "file": "data/city_files/Upland/d3e5d1_Upland_Organics_Flyer_4_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/CIP Engineering/Public Comments Strip Map - Flattened.pdf?t=202606161758570",
+    "text": "6-9-26 Community Meeting Comment Map",
+    "file": "data/city_files/Upland/ad67ae_Public_Comments_Strip_Map_-_Flattened.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/CIP Engineering/Downtown Parking Lot Improvements - Arrow & 3rd/Plans.pdf?t=202607061416580",
+    "text": "Plans",
+    "file": "data/city_files/Upland/4f3a46_Plans.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/CIP Engineering/Downtown Parking Lot Improvements - Arrow & 3rd/Specifications.pdf?t=202607061417400",
+    "text": "Specifications",
+    "file": "data/city_files/Upland/677d7d_Specifications.pdf",
+    "rows": 78,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://ci.upland.ca.us/Ex-20250729-Conceptual_Strip_Map_Grove_14th_Improvements_.pdf?t=202607161254430",
+    "text": "09-23-25 Conceptual Strip Map",
+    "file": "data/city_files/Upland/998e11_Ex-20250729-Conceptual_Strip_Map_Grove_14th_Improvements_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ci.upland.ca.us/2026_03_17 - Revised Conceptual_Strip_Map_14th_Imp..pdf?t=202607161256520",
+    "text": "04-08-26 Revised- Conceptual Strip Map",
+    "file": "data/city_files/Upland/08aff7_2026_03_17_-_Revised_Conceptual_Strip_Map_14th_Imp..pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://upland-atp-mmp-ktuagis.hub.arcgis.com/": "View the final Upland Mobility Plan"
+  }
+ },
+ "Southfield": {
+  "files": [
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2025-06/VotingPrecincts_11x17%20-%2008.05.25.pdf",
+    "text": "Voting Precinct Map (PDF)",
+    "file": "data/city_files/Southfield/2d789a_VotingPrecincts_11x17_20-_2008.05.25.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/bikeroutesmap.pdf",
+    "text": "Bike Routes Map",
+    "file": "data/city_files/Southfield/9485d7_bikeroutesmap.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/streetmap_letter_bw.pdf",
+    "text": "City Map - Black & White",
+    "file": "data/city_files/Southfield/198db8_streetmap_letter_bw.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/streetmap_letter_color.pdf",
+    "text": "City Map Color",
+    "file": "data/city_files/Southfield/61cae2_streetmap_letter_color.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/citywidesadmap.pdf",
+    "text": "Citywide S.A.D. Map",
+    "file": "data/city_files/Southfield/c78d24_citywidesadmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/municipalcampus.pdf",
+    "text": "Civic Center Campus Map",
+    "file": "data/city_files/Southfield/3347a5_municipalcampus.pdf",
+    "rows": 29,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/streetmap_letter_primaryroadjurisdictions.pdf",
+    "text": "Primary Road Map Jurisdictions",
+    "file": "data/city_files/Southfield/fadb6b_streetmap_letter_primaryroadjurisdictions.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/sfld_areamap.pdf",
+    "text": "Southfield Location Map",
+    "file": "data/city_files/Southfield/2392ba_sfld_areamap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2022-10/PrimaryRoadJurisdictions.pdf",
+    "text": "City of Southfield Primary Road Jurisdiction Map (PDF)",
+    "file": "data/city_files/Southfield/08f795_PrimaryRoadJurisdictions.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2026-01/CompletedRoadProjects_ArchD_Jan2026.pdf",
+    "text": "Completed Road Construction Projects Map (PDF)",
+    "file": "data/city_files/Southfield/dee5c3_CompletedRoadProjects_ArchD_Jan2026.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2026-03/CurrentAndUpcomingProjects_ArchD_Mar2026.pdf",
+    "text": "Current and Future Road Construction Projects Map (PDF)",
+    "file": "data/city_files/Southfield/afbe1b_CurrentAndUpcomingProjects_ArchD_Mar2026.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2019-07/cc_nature_trails.pdf",
+    "text": "Civic Center Nature Trails (PDF)",
+    "file": "data/city_files/Southfield/2ef462_cc_nature_trails.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2019-07/bikeroutesmap.pdf",
+    "text": "Southfield Bike Route Map (PDF)",
+    "file": "data/city_files/Southfield/344cdb_bikeroutesmap.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/2020-08/map_sign52x26.pdf",
+    "text": "Carpenter Lake Nature Preserve Trail Map (PDF)",
+    "file": "data/city_files/Southfield/70c77f_map_sign52x26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/print-revenue-chart.pdf",
+    "text": "Printed GIS Data/Map Fees (pdf)",
+    "file": "data/city_files/Southfield/8d9805_print-revenue-chart.pdf",
+    "rows": 56,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/digrevenuechart.pdf",
+    "text": "Digital GIS Data/Map Fees (pdf)",
+    "file": "data/city_files/Southfield/d191c8_digrevenuechart.pdf",
+    "rows": 45,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/dte-oakland-county-southfield-2021-tree-trimmimg-maintenance-program-map_0.pdf",
+    "text": "DTE Energy 2021 Tree Trimming Schedule and Map (PDF)",
+    "file": "data/city_files/Southfield/ad0906_dte-oakland-county-southfield-2021-tree-trimmimg-maintenance-program-m",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/inline-files/trash-map_0.pdf",
+    "text": "Rubbish Collection Map",
+    "file": "data/city_files/Southfield/d39a51_trash-map_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2019-08/map-7-2-future-land-use_0.pdf",
+    "text": "Future Land Use Map (PDF)",
+    "file": "data/city_files/Southfield/8fdc1e_map-7-2-future-land-use_0.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/2026-07/SouthfieldZoning_ArchE_July2026_v01_0.pdf",
+    "text": "Zoning Map (PDF)",
+    "file": "data/city_files/Southfield/81ae5e_SouthfieldZoning_ArchE_July2026_v01_0.pdf",
+    "rows": 51,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofsouthfield.com/sites/default/files/inline-files/trash-map_0.pdf",
+    "text": "Refuse and Recycling Weekly Schedule",
+    "file": "data/city_files/Southfield/735fda_trash-map_0.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofsouthfield.com/sites/default/files/2026-07/Southfield%20SWMP%202023%20-%20Update%2011-25.pdf",
+    "text": "Southfield MS4 Stormwater Discharge Application (PDF)",
+    "file": "data/city_files/Southfield/67ae86_Southfield_20SWMP_202023_20-_20Update_2011-25.pdf",
+    "rows": 126,
+    "bike_rows": 15
+   }
+  ],
+  "portals": {}
+ },
+ "Lauderhill": {
+  "files": [],
+  "portals": {}
+ },
+ "Tooele County": {
+  "files": [
+   {
+    "url": "https://tooeleco.gov/Document Center/Department/Administration/GIS/2019_master_map_request_form.pdf?t=202501061557430",
+    "text": "Custom Map Request Form and Map Fees",
+    "file": "data/city_files/Tooele_County/94e0dc_2019_master_map_request_form.pdf",
+    "rows": 33,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://tooelecountygis.maps.arcgis.com/": "Interactive Web Maps and Apps"
+  }
+ },
+ "Greenville": {
+  "files": [],
+  "portals": {}
+ },
+ "Gary": {
+  "files": [],
+  "portals": {}
+ },
+ "San Marcos": {
+  "files": [],
+  "portals": {}
+ },
+ "Chippewa County": {
+  "files": [],
+  "portals": {}
+ },
+ "Pflugerville": {
+  "files": [],
+  "portals": {}
+ },
+ "Ocala": {
+  "files": [],
+  "portals": {}
+ },
+ "Eddy County": {
+  "files": [],
+  "portals": {}
+ },
+ "Granville County": {
+  "files": [],
+  "portals": {}
+ },
+ "Petaluma": {
+  "files": [],
+  "portals": {}
+ }
+}
