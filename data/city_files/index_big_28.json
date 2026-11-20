@@ -1,0 +1,2001 @@
+{
+ "Orlando FL": {
+  "files": [
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/departments/transportation/sw-orl-bike-ped-study-area.pdf",
+    "text": "Download the study area map (PDF, 681KB)",
+    "file": "data/city_files/Orlando_FL/96d6f8_sw-orl-bike-ped-study-area.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/departments/transportation/sw_orl_bike-and-pedestrian-safety-recommendations-tech-memo_final_20230427.pdf",
+    "text": "Download the Bike and Pedestrian Safety Recommendations Tech Memo (PDF, 5MB)",
+    "file": "data/city_files/Orlando_FL/1e5581_sw_orl_bike-and-pedestrian-safety-recommendations-tech-memo_final_2023",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/departments/transportation/sw_orl_bike-and-pedestrian-study-summary-report-_20230227.pdf",
+    "text": "Download the Bike and Pedestrian Study Summary Report (PDF, 13MB)",
+    "file": "data/city_files/Orlando_FL/e83957_sw_orl_bike-and-pedestrian-study-summary-report-_20230227.pdf",
+    "rows": 42,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/departments/transportation/sw_orl_off-streets-trails-concepts-and-overpass-feasibility-analysis-tech-memo_final_20230427.pdf",
+    "text": "Download the Off Streets Trails Concepts and Overpass Feasibility Analysis Tech Memo (PDF, 18MB)",
+    "file": "data/city_files/Orlando_FL/4a8a7a_sw_orl_off-streets-trails-concepts-and-overpass-feasibility-analysis-t",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/1/departments/transportation/bike-and-micromobility-parking-study-final-report-8.26.pdf",
+    "text": "Download the Bike and Micromobility Parking Study Final Report (PDF, 10MB)",
+    "file": "data/city_files/Orlando_FL/14cf58_bike-and-micromobility-parking-study-final-report-8.26.pdf",
+    "rows": 230,
+    "bike_rows": 70
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/1/departments/transportation/bike-parking-study-final-recommendations-8.26.pdf",
+    "text": "Download the Bike and Parking Study Final Recommendations (PDF, 190KB)",
+    "file": "data/city_files/Orlando_FL/a2b845_bike-parking-study-final-recommendations-8.26.pdf",
+    "rows": 110,
+    "bike_rows": 90
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/3/departments/transportation/23_exo_creativevillage_allparkingoptions-5.pdf",
+    "text": "Printable Creative Village Parking Map (PDF, 1MB)",
+    "file": "data/city_files/Orlando_FL/90dc51_23_exo_creativevillage_allparkingoptions-5.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/3/documents/parking/parkingdivisionmap_feb2026.pdf",
+    "text": "Printable Parking Map (PDF, 826KB)",
+    "file": "data/city_files/Orlando_FL/e38e76_parkingdivisionmap_feb2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/4/documents/parking/parkingdivisionmap_march2022.pdf",
+    "text": "Download the printable parking map",
+    "file": "data/city_files/Orlando_FL/2624ce_parkingdivisionmap_march2022.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/4/departments/transportation/parking/parking-citation-appeal-form.pdf",
+    "text": "notarized form (PDF, 857KB)",
+    "file": "data/city_files/Orlando_FL/9c3fd8_parking-citation-appeal-form.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/1/documents/parking/form_monthly_lease_garage_2021.pdf",
+    "text": "Monthly Lease Form - Garage (PDF, 188KB)",
+    "file": "data/city_files/Orlando_FL/1f308c_form_monthly_lease_garage_2021.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/1/documents/parking/monthly_lotlease.pdf",
+    "text": "Monthly Lease Form - Lot (PDF, 177KB)",
+    "file": "data/city_files/Orlando_FL/e2caea_monthly_lotlease.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/1/documents/parking/form_vehicle-registration.pdf",
+    "text": "Vehicle Registration Form (PDF, 217KB)",
+    "file": "data/city_files/Orlando_FL/37917b_form_vehicle-registration.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/1/documents/parking/2022_miparc-customer-instructions.pdf",
+    "text": "MiParc Customer Instructions (PDF, 229KB)",
+    "file": "data/city_files/Orlando_FL/ed0fce_2022_miparc-customer-instructions.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/content/public/v/4/parking-transportation/parking/apply-for-a-freight-loading-and-unloading-permit/freight-permit-application-2025.pdf",
+    "text": "Download the Form (PDF, 231KB)",
+    "file": "data/city_files/Orlando_FL/e8fc5a_freight-permit-application-2025.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/2/documents/parking/cityhallmediaparkingmap_proof.pdf",
+    "text": "City Hall (PDF, 185KB)",
+    "file": "data/city_files/Orlando_FL/7ff1fd_cityhallmediaparkingmap_proof.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/1/documents/parking/mediacourthouseparking.pdf",
+    "text": "Orange County Courthouse (PDF, 146KB)",
+    "file": "data/city_files/Orlando_FL/dd90d0_mediacourthouseparking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.golynx.com/file/137628/lymmo-map_apr-2026.pdf",
+    "text": "LYMMO Map",
+    "file": "data/city_files/Orlando_FL/2cd255_lymmo-map_apr-2026.pdf",
+    "rows": 40,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/departments/transportation/red-light-enforcement/red-light-camera/red-light-camera-map-2023.pdf",
+    "text": "one of these red light cameras",
+    "file": "data/city_files/Orlando_FL/388524_red-light-camera-map-2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/2/downtownbikemap_q22020.pdf",
+    "text": "Download the downtown Orlando bike map (PDF, 930KB)",
+    "file": "data/city_files/Orlando_FL/75323d_downtownbikemap_q22020.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/2/southeastbikemap_q12020.pdf",
+    "text": "Download the southeast Orlando bike map (PDF, 986KB)",
+    "file": "data/city_files/Orlando_FL/4fc299_southeastbikemap_q12020.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/v/2/southwestbikemap_q12020.pdf",
+    "text": "Download the southwest Orlando bike map (PDF, 7MB)",
+    "file": "data/city_files/Orlando_FL/ed70ef_southwestbikemap_q12020.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/park-images/other-parks/blue-jacket-park-amenity-map.pdf",
+    "text": "Blue Jacket Park Amenity Map (PDF, 192KB)",
+    "file": "data/city_files/Orlando_FL/fb0332_blue-jacket-park-amenity-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/park-images/other-parks/delaney-park-amenity-map.pdf",
+    "text": "Delaney Park Amenity Map (PDF, 279KB)",
+    "file": "data/city_files/Orlando_FL/b76968_delaney-park-amenity-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orlando.gov/files/sharedassets/public/park-images/other-parks/demetree-park-amenity-map-1.pdf",
+    "text": "Demetree Park Amenity Map (PDF, 292KB)",
+    "file": "data/city_files/Orlando_FL/1f1f7a_demetree-park-amenity-map-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.orlando.gov/Public-Safety/OPD/OPD-Records-Open-Data": "OPD Records & Open Data",
+   "https://gis.orlando.gov/orlandoinformationlocator/": "Information Locator",
+   "https://gis.orlando.gov/OrlandoInformationLocator/": "Verify the Location",
+   "https://gis.orlando.gov/portal/apps/webappviewer/index.html?id=107d8edc9c4b407ba48bab4d31db0612": "map of all road closures",
+   "https://bwcf.maps.arcgis.com/apps/webappviewer/index.html?id=8940812a97d344f6a5341f1cb3fc507d": "Bike/Walk Central Florida Regional Walking and Biking Map",
+   "https://www.arcgis.com/apps/MapJournal/index.html?appid=fbaa6ab2b5f645ae99595ee13fbe490d": "See Art Orlando"
+  }
+ },
+ "Salt Lake City UT": {
+  "files": [
+   {
+    "url": "https://www.slcdocs.com/transportation/Parking/pdf/MotorcycleParking.pdf",
+    "text": "designated motorcycle parking spots",
+    "file": "data/city_files/Salt_Lake_City_UT/0f027d_MotorcycleParking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/parks/RAC_Docs/RAC_field_MAP0422.pdf",
+    "text": "Detailed Field Map",
+    "file": "data/city_files/Salt_Lake_City_UT/23a147_RAC_field_MAP0422.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Historic Preservation/New LocalNational map.pdf",
+    "text": "Download – National and Local Historic Districts Map",
+    "file": "data/city_files/Salt_Lake_City_UT/1b006c_New_LocalNational_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Historic%20Preservation/New%20Local%20HD%20map.pdf",
+    "text": "Local Historic Districts Map",
+    "file": "data/city_files/Salt_Lake_City_UT/348d5d_New_20Local_20HD_20map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.slcdocs.com/Planning/Historic%20Preservation/New%20National%20map.pdf",
+    "text": "National Historic Districts Map",
+    "file": "data/city_files/Salt_Lake_City_UT/6a813b_New_20National_20map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Historic%20Preservation/New%20LocalNational%20map.pdf",
+    "text": "Local & National Historic Districts Map",
+    "file": "data/city_files/Salt_Lake_City_UT/8ad6fa_New_20LocalNational_20map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Applications/Designation.pdf",
+    "text": "HP: Local Historic District or Thematic Designation",
+    "file": "data/city_files/Salt_Lake_City_UT/09b6b7_Designation.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/ResidentialGuidelines.pdf",
+    "text": "Preservation Handbook for Historic Residential Properties & Districts",
+    "file": "data/city_files/Salt_Lake_City_UT/045f16_ResidentialGuidelines.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section1.pdf",
+    "text": "Why Preserve Historic Buildings & Neighborhoods?",
+    "file": "data/city_files/Salt_Lake_City_UT/4170aa_Section1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section2.pdf",
+    "text": "The Preservation Program in Salt Lake City",
+    "file": "data/city_files/Salt_Lake_City_UT/9d8c1f_Section2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section3.pdf",
+    "text": "The Design Guidelines",
+    "file": "data/city_files/Salt_Lake_City_UT/f96cbd_Section3.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section4.pdf",
+    "text": "Historic Context & Architectural Styles",
+    "file": "data/city_files/Salt_Lake_City_UT/5c4686_Section4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch1.pdf",
+    "text": "Site Features",
+    "file": "data/city_files/Salt_Lake_City_UT/13b21f_Ch1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch2.pdf",
+    "text": "Building Materials & Finishes",
+    "file": "data/city_files/Salt_Lake_City_UT/b58274_Ch2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch3.pdf",
+    "text": "Windows",
+    "file": "data/city_files/Salt_Lake_City_UT/30dc46_Ch3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch4.pdf",
+    "text": "Doors",
+    "file": "data/city_files/Salt_Lake_City_UT/016ae2_Ch4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch5.pdf",
+    "text": "Porches",
+    "file": "data/city_files/Salt_Lake_City_UT/c2179d_Ch5.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch6.pdf",
+    "text": "Architectural Details",
+    "file": "data/city_files/Salt_Lake_City_UT/87df3a_Ch6.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch7.pdf",
+    "text": "Roofs",
+    "file": "data/city_files/Salt_Lake_City_UT/7e00a8_Ch7.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch8.pdf",
+    "text": "Additions",
+    "file": "data/city_files/Salt_Lake_City_UT/3ed9b9_Ch8.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch9.pdf",
+    "text": "Accessory Structures",
+    "file": "data/city_files/Salt_Lake_City_UT/457447_Ch9.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch10.pdf",
+    "text": "Seismic Retrofitting",
+    "file": "data/city_files/Salt_Lake_City_UT/efae12_Ch10.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch11.pdf",
+    "text": "General Issues",
+    "file": "data/city_files/Salt_Lake_City_UT/b58c96_Ch11.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch12.pdf",
+    "text": "New Construction",
+    "file": "data/city_files/Salt_Lake_City_UT/ab1f1a_Ch12.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Part3Intro.pdf",
+    "text": "Introduction",
+    "file": "data/city_files/Salt_Lake_City_UT/74bc91_Part3Intro.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://slcgov.maps.arcgis.com/apps/instant/lookup/index.html?appid=e51eab2f279849739b952e8bea7d7530": "Interactive District Boundaries Map",
+   "https://slcgov.maps.arcgis.com/apps/instant/basic/index.html?appid=ae4eccbc202145daa6059967fb838aee": "Open the parking map full-screen in a new window.",
+   "https://slcgov.maps.arcgis.com/apps/webappviewer/index.html?id=647267057ace455bbc388d7816abfb16": "Eligible Fire Mitigation Permit Parcels",
+   "https://ball-park-station-area-plan-slcgov.hub.arcgis.com/": "Ballpark Station Area Plan (2022)",
+   "https://safe-routes-uplan.hub.arcgis.com/": "Utah Safe Routes to School map",
+   "https://gis.udot.utah.gov/AT-Counters": "UDOT Active Transportation Counters",
+   "https://data.slc.gov/": "SLC Open Data",
+   "https://data-uplan.opendata.arcgis.com/": "UDOT Open Data",
+   "https://gis.utah.gov/products/sgid/categories/": "Utah Geospatial Resource Center (UGRC)",
+   "https://storymaps.arcgis.com/stories/0eee08e851244d4ba44fdc09cf8934a5": "Walkable Salt Lake City Interactive mapping tool to visualize and explore the walkability of Salt Lake City neighborhood",
+   "https://slcgov.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=0db2fec93d9140bc8c5768abce5f9ab0&theme=light&legend=true&center=-111.88889997775523,40.7601154304239&scale=72223.819286": "Find your zone on the map",
+   "https://experience.arcgis.com/experience/828574c207454f01808e07f0c71da21e/page/Home/?views=view_8": "300 West"
+  }
+ },
+ "San Bernardino County": {
+  "files": [
+   {
+    "url": "https://dpw.sbcounty.gov/wp-content/uploads/sites/87/2023/01/RecyclingGuide-2023-1.pdf",
+    "text": "Construction & Demolition Recycling Guide",
+    "file": "data/city_files/San_Bernardino_County/143e0c_RecyclingGuide-2023-1.pdf",
+    "rows": 263,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://dpw.sbcounty.gov/wp-content/uploads/sites/87/docs/san_bernardino_countys_guide_to_recycling.pdf",
+    "text": "Multi-Family Dwelling Recycling",
+    "file": "data/city_files/San_Bernardino_County/436e76_san_bernardino_countys_guide_to_recycling.pdf",
+    "rows": 58,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://dpw.sbcounty.gov/wp-content/uploads/sites/87/docs/20110103_library_donation_collection_program.pdf",
+    "text": "Cell Phone and Accessories & DVD/CD Recycling",
+    "file": "data/city_files/San_Bernardino_County/490954_20110103_library_donation_collection_program.pdf",
+    "rows": 32,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dpw.sbcounty.gov/wp-content/uploads/sites/87/docs/sbc_business_recycling_guide.pdf",
+    "text": "San Bernardino County Business Recycling Guide",
+    "file": "data/city_files/San_Bernardino_County/8fe11c_sbc_business_recycling_guide.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dpw.sbcounty.gov/wp-content/uploads/sites/87/docs/MandatoryCommercialRecyclingBrochure08012012.pdf",
+    "text": "Businesses Recycling – It’s the Law",
+    "file": "data/city_files/San_Bernardino_County/114a4d_MandatoryCommercialRecyclingBrochure08012012.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dpw.sbcounty.gov/wp-content/uploads/sites/87/docs/Business-Recycling-and-Organics-Recycling-Brochure.pdf",
+    "text": "Business Recycling and Organics Recycling Brochure",
+    "file": "data/city_files/San_Bernardino_County/bb9fab_Business-Recycling-and-Organics-Recycling-Brochure.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dpw.sbcounty.gov/wp-content/uploads/sites/87/docs/AB1826-and-AB1594-CalRecycle-presentation.pdf",
+    "text": "AB 1826 & AB 1594 CalRecycle Presentation",
+    "file": "data/city_files/San_Bernardino_County/113c94_AB1826-and-AB1594-CalRecycle-presentation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dpw.sbcounty.gov/wp-content/uploads/sites/87/docs/School-Recycling-and-Organics.pdf",
+    "text": "School Recycling Programs",
+    "file": "data/city_files/San_Bernardino_County/f8f642_School-Recycling-and-Organics.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dpw.sbcounty.gov/wp-content/uploads/sites/87/docs/TIGER-Bridge-Map.pdf",
+    "text": "Less than 20 feet Bridge Map",
+    "file": "data/city_files/San_Bernardino_County/d824f2_TIGER-Bridge-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.sbcounty.gov/wp-content/uploads/sites/34/2024/07/Prado-Map-Website-071624.pdf",
+    "text": "Download Map PDF",
+    "file": "data/city_files/San_Bernardino_County/a876c5_Prado-Map-Website-071624.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.sbcounty.gov/wp-content/uploads/sites/34/2024/07/Yucaipa-Map.pdf",
+    "text": "DOWNLOAD MAP PDF",
+    "file": "data/city_files/San_Bernardino_County/1583fc_Yucaipa-Map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.sbcounty.gov/wp-content/uploads/sites/34/2025/10/V2-2025-Revised-CalicoTown-Map-101825.pdf",
+    "text": "View Town Map",
+    "file": "data/city_files/San_Bernardino_County/53d22e_V2-2025-Revised-CalicoTown-Map-101825.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://sbcounty.maps.arcgis.com/apps/View/index.html?appid=97eabb32b34c485188edd2009a7d980f": "District Maps",
+   "https://storymaps.arcgis.com/stories/fa02b98f5dbb4a758a38ab955c2cf58a": "Flood History of San Bernardino County",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsbcountydpw.maps.arcgis.com%2Fapps%2Fwebappviewer%2Findex.html%3Fid%3Db2d5e1df6dcf4ba495890420da102581&data=05%7C01%7CAmy.Ledbetter%40dpw.sbcounty.gov%7Cb4f6c736d4c34932b4cb08dbc1102d18%7C31399e536a9349aa8caec929f9d4a91d%7C1%7C0%7C638316047449958407%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=1hUFol6QWMU8NF9imCKepetBHWTizij5f2BSItHrXm0%3D&reserved=0": "View Map of Closures",
+   "https://sbcountydpw.maps.arcgis.com/home/index.html": "Click Here to View Maps"
+  }
+ },
+ "Duval County": {
+  "files": [
+   {
+    "url": "https://coj.net/getContentAsset/8aaeb810-622b-4aa8-beec-37dbde145ebf/135b97c9-84fa-4e82-b956-0fbccec4aa1f/City-of-Jacksonville-Transition-Plan-August-2018_1-(002)_a11y_1.pdf?language=en",
+    "text": "2018 ADA Transition Plan",
+    "file": "data/city_files/Duval_County/0f6bd9_City-of-Jacksonville-Transition-Plan-August-2018_1-_002__a11y_1.pdf",
+    "rows": 202,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://coj.net/getContentAsset/028b9765-c479-4bfd-bc62-0ed5223fd9e6/135b97c9-84fa-4e82-b956-0fbccec4aa1f/J-1-Urban-Transition-Area-North-of-Park-Street-Special-Zone.pdf?language=en",
+    "text": "J-1 Urban Transition Area North of Park Street Special Zone",
+    "file": "data/city_files/Duval_County/372025_J-1-Urban-Transition-Area-North-of-Park-Street-Special-Zone.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://coj.net/getContentAsset/cec78958-bb2f-4bd5-bf28-bb3c9de4b0e6/135b97c9-84fa-4e82-b956-0fbccec4aa1f/2021-681-A-with-Exhibits-and-Maps.pdf?language=en",
+    "text": "J-1 Downtown Northbank (J-1-A) and Kings Avenue Commercial Corridor (J-1-B) Special Zones",
+    "file": "data/city_files/Duval_County/59ca34_2021-681-A-with-Exhibits-and-Maps.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://coj.net/getContentAsset/9163ffea-796d-4d03-8997-25b848972dbe/135b97c9-84fa-4e82-b956-0fbccec4aa1f/OCR-J1-2015.pdf?language=en",
+    "text": "J-1 Alcohol Exemption Avondale Transition District",
+    "file": "data/city_files/Duval_County/5e7807_OCR-J1-2015.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/25c4a756-03ee-4ee6-8644-459781428ef9/135b97c9-84fa-4e82-b956-0fbccec4aa1f/2014-J-1.pdf?language=en",
+    "text": "J-4 Library Special District Straw Ballot",
+    "file": "data/city_files/Duval_County/61f3a1_2014-J-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/8ba2e070-8029-43bf-912f-26de49da042b/135b97c9-84fa-4e82-b956-0fbccec4aa1f/DIA-23015_E-Scooter_Maps_FullBoundary_M_Updated-20230717.pdf?language=en",
+    "text": "E-Scooter Map - PDF",
+    "file": "data/city_files/Duval_County/5a7c67_DIA-23015_E-Scooter_Maps_FullBoundary_M_Updated-20230717.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://heritagepublishinginc.com/wp-content/uploads/pdfs/JSSD26-27.pdf",
+    "text": "Download the 2026-2027 Senior Services Directory",
+    "file": "data/city_files/Duval_County/c03e3b_JSSD26-27.pdf",
+    "rows": 583,
+    "bike_rows": 67
+   },
+   {
+    "url": "https://coj.net/getContentAsset/aa180b15-eea1-44a5-a4a6-ad8d753862d7/135b97c9-84fa-4e82-b956-0fbccec4aa1f/ROW-Surety-Bond-Residential-(10K).pdf?language=en",
+    "text": "Example Residential ROW Surety Bond Form for Residential Driveway Repair/Construction",
+    "file": "data/city_files/Duval_County/1acbf7_ROW-Surety-Bond-Residential-_10K_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/f1f34d27-406c-477b-9b31-c4479cb11874/135b97c9-84fa-4e82-b956-0fbccec4aa1f/01_Poster_JAX_Landcover_DDP_NE.pdf?language=en",
+    "text": "Jacksonville Landcover Map - NE",
+    "file": "data/city_files/Duval_County/753846_01_Poster_JAX_Landcover_DDP_NE.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/3f17e589-e3ec-4e11-83db-3b3a7d4c134f/135b97c9-84fa-4e82-b956-0fbccec4aa1f/01_Poster_JAX_Landcover_DDP_SE.pdf?language=en",
+    "text": "Jacksonville Landcover Map - SE",
+    "file": "data/city_files/Duval_County/8d1016_01_Poster_JAX_Landcover_DDP_SE.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/35d82dd1-acd7-45d6-8a1e-1d5e708c69d9/135b97c9-84fa-4e82-b956-0fbccec4aa1f/01_Poster_JAX_Landcover_DDP_W.pdf?language=en",
+    "text": "Jacksonville Landcover Map - W",
+    "file": "data/city_files/Duval_County/f4a109_01_Poster_JAX_Landcover_DDP_W.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/bf9d0664-01c6-48d2-8f19-42b8894998f8/135b97c9-84fa-4e82-b956-0fbccec4aa1f/02_Poster_JAX_PPA_DDP_NE.pdf?language=en",
+    "text": "Jacksonville Possible Planting Area Map - NE",
+    "file": "data/city_files/Duval_County/c20cca_02_Poster_JAX_PPA_DDP_NE.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/36df74a6-7ec8-4e23-98b8-ada83c564619/135b97c9-84fa-4e82-b956-0fbccec4aa1f/02_Poster_JAX_PPA_DDP_W.pdf?language=en",
+    "text": "Jacksonville Possible Planting Area Map - W",
+    "file": "data/city_files/Duval_County/aed3ad_02_Poster_JAX_PPA_DDP_W.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/723c8e11-5115-4efd-8f14-e927c611c03f/135b97c9-84fa-4e82-b956-0fbccec4aa1f/03_Poster_JAX_StreetTrees.pdf?language=en",
+    "text": "Jacksonville Street Tree Percent Canopy Cover Map",
+    "file": "data/city_files/Duval_County/09834b_03_Poster_JAX_StreetTrees.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/6d5b673c-7aca-4b17-a372-d6c5ee2b9fae/135b97c9-84fa-4e82-b956-0fbccec4aa1f/05_Poster_JAX_TreeLoss.pdf?language=en",
+    "text": "Jacksonville Tree Loss Map",
+    "file": "data/city_files/Duval_County/6249d1_05_Poster_JAX_TreeLoss.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/042347ef-0505-47e4-9228-b321ae05b449/135b97c9-84fa-4e82-b956-0fbccec4aa1f/GC-1649986-v2-Charge_Memo_for_Urban_Tree_Planting.pdf?language=en",
+    "text": "Charge Memo",
+    "file": "data/city_files/Duval_County/23b503_GC-1649986-v2-Charge_Memo_for_Urban_Tree_Planting.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/b231f3fd-6029-4214-bd6e-237e2410308f/135b97c9-84fa-4e82-b956-0fbccec4aa1f/COJ.pdf?language=en",
+    "text": "Amended Charge Memo",
+    "file": "data/city_files/Duval_County/f4931c_COJ.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/bb88604b-5e09-4e8c-b8ae-a38224a9f776/135b97c9-84fa-4e82-b956-0fbccec4aa1f/Amended-(second)_Charge_Memo_for_Urban_Tree_Planting-F.pdf?language=en",
+    "text": "Amended (Second)",
+    "file": "data/city_files/Duval_County/7ec1af_Amended-_second__Charge_Memo_for_Urban_Tree_Planting-F.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/8efc3b90-0505-44ca-8b29-193512aa3a72/135b97c9-84fa-4e82-b956-0fbccec4aa1f/task-force-charge-order-extension.pdf?language=en",
+    "text": "Amended (Third)",
+    "file": "data/city_files/Duval_County/ac9cbb_task-force-charge-order-extension.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coj.net/getContentAsset/1e297ab9-d68a-4728-bf52-e986fbed329e/135b97c9-84fa-4e82-b956-0fbccec4aa1f/Map-to-City-Hall-PARKING-(2).pdf?language=en",
+    "text": "Map to City Hall Parking",
+    "file": "data/city_files/Duval_County/412d7a_Map-to-City-Hall-PARKING-_2_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://jaxgis.coj.net/jaxgis/": "online mapping information system"
+  }
+ },
+ "DeKalb County": {
+  "files": [
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-09/New%20Service%20-%20Garbage%20and%20Recycling%20Roll%20Cart%20Request%20Fillable%20Form_Sept.22.26.pdf",
+    "text": "New Residential Service Request Form",
+    "file": "data/city_files/DeKalb_County/8e9970_New_20Service_20-_20Garbage_20and_20Recycling_20Roll_20Cart_20Request_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-08/new%20logo_Existing%20Customers%20-%2065-gallon%20Recycling%20Roll%20Cart%20Fillable%20Form_updated%208.19.26.pdf",
+    "text": "Residential 65-Gallon Recycling Roll Cart Request Form",
+    "file": "data/city_files/DeKalb_County/9bf4ad_new_20logo_Existing_20Customers_20-_2065-gallon_20Recycling_20Roll_20C",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-08/new%20logo_Existing%20Customers%20-%2035-gallon%20Recycling%20Roll%20Cart%20Request%20Fillable%20Form_updated%208.19.26.pdf",
+    "text": "Residential 35-Gallon Recycling Roll Cart Request Form",
+    "file": "data/city_files/DeKalb_County/d926c1_new_20logo_Existing_20Customers_20-_2035-gallon_20Recycling_20Roll_20C",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-11/Doraville%20December%201%202026%20Runoff%20Sample%20Ballot.pdf",
+    "text": "Click Here!",
+    "file": "data/city_files/DeKalb_County/74a811_Doraville_20December_201_202026_20Runoff_20Sample_20Ballot.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-09/Notice%20of%20Ballot%20Proof%20Availability.pdf",
+    "text": "Notice of Ballot Proof Availability",
+    "file": "data/city_files/DeKalb_County/9cab48_Notice_20of_20Ballot_20Proof_20Availability.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-06/Sample%20Notice%20of%20Ballot%20Proof%20Availability_07.28.26%20Special%20Election_FINAL.pdf",
+    "text": "Notice of Ballot Proof Availability",
+    "file": "data/city_files/DeKalb_County/c60591_Sample_20Notice_20of_20Ballot_20Proof_20Availability_07.28.26_20Specia",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-04/Notice%20of%20Ballot%20Proof%20Availability%2003-30.pdf",
+    "text": "Notice of Ballot Proof Availability",
+    "file": "data/city_files/DeKalb_County/3345e7_Notice_20of_20Ballot_20Proof_20Availability_2003-30.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-04/Notice%20of%20Ballot%20Proof%20Availability%2003-10.pdf",
+    "text": "Notice of Ballot Proof Availability",
+    "file": "data/city_files/DeKalb_County/32cec1_Notice_20of_20Ballot_20Proof_20Availability_2003-10.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-07/New%20Service%20-%20Garbage%20and%20Recycling%20Roll%20Cart%20Request%20Fillable%20Form_July20206.pdf",
+    "text": "Apply for New Service",
+    "file": "data/city_files/DeKalb_County/2041f3_New_20Service_20-_20Garbage_20and_20Recycling_20Roll_20Cart_20Request_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-07/Existing%20Customers%20-%2065-gallon%20Recycling%20Roll%20Cart%20Fillable%20Form_July2026.pdf",
+    "text": "Upgrade to 65-gallon",
+    "file": "data/city_files/DeKalb_County/e50d83_Existing_20Customers_20-_2065-gallon_20Recycling_20Roll_20Cart_20Filla",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-06/Existing%20Customers%20-%2035-gallon%20Recycling%20Roll%20Cart%20Request%20Fillable%20Form_April2025.pdf",
+    "text": "Residential 35-Gallon Recycling Roll Cart Request Form",
+    "file": "data/city_files/DeKalb_County/fad813_Existing_20Customers_20-_2035-gallon_20Recycling_20Roll_20Cart_20Reque",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-01/Glass%20Recycling%20Program%20Locations%20Flyer%20-%20updated%209-19-24.pdf",
+    "text": "Use glass drop-off locations",
+    "file": "data/city_files/DeKalb_County/b71d8c_Glass_20Recycling_20Program_20Locations_20Flyer_20-_20updated_209-19-2",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-01/E-recycling%20Flyer%20-%20Updated%2001.27.20.pdf",
+    "text": "Use e-recycling programs",
+    "file": "data/city_files/DeKalb_County/a0a6f0_E-recycling_20Flyer_20-_20Updated_2001.27.20.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-04/2.22.23%20Clothing%20and%20Shoe%20Recycling%20Program%20Flyer%20-%20Final.pdf",
+    "text": "View Clothing & Shoe Recycling Flyer",
+    "file": "data/city_files/DeKalb_County/5414b9_2.22.23_20Clothing_20and_20Shoe_20Recycling_20Program_20Flyer_20-_20Fi",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-07/Single-stream%20Recycling%20program%20%20%282%29.pdf",
+    "text": "Acceptable Items Guide",
+    "file": "data/city_files/DeKalb_County/dccf0c_Single-stream_20Recycling_20program_20_20_282_29.pdf",
+    "rows": 12,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-01/Recycling%20Centers.pdf",
+    "text": "View drop-off locations",
+    "file": "data/city_files/DeKalb_County/97326b_Recycling_20Centers.pdf",
+    "rows": 71,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-01/Residential%20Recycling%20Welcome%20Letter%20Proof%20updated%20Sept2024%20%281%29_0.pdf",
+    "text": "Welcome letter",
+    "file": "data/city_files/DeKalb_County/8fc635_Residential_20Recycling_20Welcome_20Letter_20Proof_20updated_20Sept202",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-01/UPDATED%20Residential%20Single-Stream%20Recycling%20Program%20-%20Acceptable%20Items%20April2025.pdf",
+    "text": "Acceptable items guide",
+    "file": "data/city_files/DeKalb_County/8bab6c_UPDATED_20Residential_20Single-Stream_20Recycling_20Program_20-_20Acce",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-06/Mountain%20View.pdf",
+    "text": "List of cemetery burials",
+    "file": "data/city_files/DeKalb_County/b0d200_Mountain_20View.pdf",
+    "rows": 876,
+    "bike_rows": 75
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-06/Lakeview_0.pdf",
+    "text": "List of cemetery burials",
+    "file": "data/city_files/DeKalb_County/c038c1_Lakeview_0.pdf",
+    "rows": 573,
+    "bike_rows": 48
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-02/Mason%20Mill%20Trail%20Map.pdf",
+    "text": "View Trails of Mason Mill Website",
+    "file": "data/city_files/DeKalb_County/4177ec_Mason_20Mill_20Trail_20Map.pdf",
+    "rows": 7,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-08/UPDATED_COMMERCIAL%20RECYCLING%20APPLICATION%20AND%20LETTER_updated%208.21.26.pdf",
+    "text": "School Recycling Subscription Form",
+    "file": "data/city_files/DeKalb_County/3e44f2_UPDATED_COMMERCIAL_20RECYCLING_20APPLICATION_20AND_20LETTER_updated_20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-08/Commercial%20hand%20collection%20Recycling%20Application%20and%20letter_updated%208.6.26_0.pdf",
+    "text": "Commercial Hand-Collection Application (roll carts)",
+    "file": "data/city_files/DeKalb_County/de8d5e_Commercial_20hand_20collection_20Recycling_20Application_20and_20lette",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-08/Commercial%20Container%20Repair%20Guidelines%20-%20Updated%208.20.26.pdf",
+    "text": "Submit Container Repair Requests",
+    "file": "data/city_files/DeKalb_County/3974de_Commercial_20Container_20Repair_20Guidelines_20-_20Updated_208.20.26.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyga.gov/sites/default/files/2026-08/Commercial%20Garbage%20%26%20Recycling%20Payment%20Options%20-%20Updated%208.20.26_0.pdf",
+    "text": "Accepted Payment Options",
+    "file": "data/city_files/DeKalb_County/4c4448_Commercial_20Garbage_20_26_20Recycling_20Payment_20Options_20-_20Updat",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.legis.ga.gov/": "General Assembly",
+   "https://dcgis-dekalbgis.hub.arcgis.com/": "View Maps & Apps",
+   "https://experience.arcgis.com/experience/41e7371b51984ff2b1fdacd72b9037ef/": "Parcel Viewer & Address Verification",
+   "https://experience.arcgis.com/experience/383d47460eff4f2eb0b56e076c185351/": "Use the Permit Tracker App",
+   "https://experience.arcgis.com/experience/1c856feb1f964ab8afabb1eecdea128c/": "Park Maps",
+   "https://dekalbgis.maps.arcgis.com/apps/webappviewer/index.html?id=f241af753f414cdfa31c1fdef0924584": "interactive flood map",
+   "https://de-kalb-county-sanitation-roll-cart-program-dekalbgis.hub.arcgis.com/": "Report or request repair/replacement",
+   "https://survey123.arcgis.com/share/d2bbb0b044fd45a291c28a490673f4b1?portalUrl=https://DeKalbGIS.maps.arcgis.com": "Bulky Item Collection",
+   "https://dekalbgis.maps.arcgis.com/apps/dashboards/4c790bbc7bca4d748a71d69429904d6c": "Wait Times",
+   "https://dekalbgis.maps.arcgis.com/apps/instant/lookup/index.html?appid=807b4f3a22e64ba080b3d4bd29ec04df": "District Maps",
+   "https://survey123.arcgis.com/share/9e06cddd1e834e61a3ba3eece5bfd86f": "Checklist Companion",
+   "https://surplusproperties-dekalbgis.hub.arcgis.com/": "Surplus Real Estate Portal"
+  }
+ },
+ "Anne Arundel County": {
+  "files": [
+   {
+    "url": "https://aacounty.org/sites/default/files/2023-10/Downs-Park-Map.pdf",
+    "text": "Downs Park Map",
+    "file": "data/city_files/Anne_Arundel_County/4d5550_Downs-Park-Map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.aacounty.org/sites/default/files/2023-04/ItemsAcceptedRecyclin.pdf",
+    "text": "paper, plastic, metal, and glass",
+    "file": "data/city_files/Anne_Arundel_County/eaaff8_ItemsAcceptedRecyclin.pdf",
+    "rows": 6,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.aacounty.org/sites/default/files/2026-04/recycle-cart-label.pdf",
+    "text": "",
+    "file": "data/city_files/Anne_Arundel_County/573b2f_recycle-cart-label.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://aacounty.org/sites/default/files/2023-04/ItemsAcceptedRecyclin.pdf",
+    "text": "household recyclables",
+    "file": "data/city_files/Anne_Arundel_County/c2dcc6_ItemsAcceptedRecyclin.pdf",
+    "rows": 6,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://gis.aacounty.org/mapping/index.html?viewer=AACo_ParkFinder": "Park Finder App",
+   "https://gis.aacounty.org/gcx/WebViewer/?app=c82c5cff02544a56af888e4ff5c166a2&isEmbedded=true&view=embed&embedMode=stormWater&embedIntro=on": "Open Watershed Protection & Restoration Fee Viewer",
+   "https://gis.aacounty.org/gcx/WebViewer/?app=c82c5cff02544a56af888e4ff5c166a2&isEmbedded=true&view=embed&embedMode=trash": "Find My Collection Day",
+   "https://gis.aacounty.org/gcx/WebViewer/?app=c82c5cff02544a56af888e4ff5c166a2": "General Services Map Viewer Tool",
+   "https://gis.aacounty.org/portal/apps/experiencebuilder/experience/?id=355f46c14b794db293624bed2f14d783": "Learn More",
+   "https://gis.aacounty.org/gcx/WebViewer/?app=c82c5cff02544a56af888e4ff5c166a2&state=cip": "Capital Projects Map Explore Anne Arundel County Capital Improvement Projects on a map.  Enter your address to find proj"
+  }
+ },
+ "Mesa": {
+  "files": [
+   {
+    "url": "https://www.mesahistoricalmuseum.com/_files/ugd/f88e78_052f0533db5d4d1baeaf9cd3bfa26ee2.pdf",
+    "text": "",
+    "file": "data/city_files/Mesa/7bb0f3_f88e78_052f0533db5d4d1baeaf9cd3bfa26ee2.pdf",
+    "rows": 58,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/2/government/advisoryboards/historic-pres-bylaws.pdf",
+    "text": "Bylaws (PDF, 115KB)",
+    "file": "data/city_files/Mesa/907be4_historic-pres-bylaws.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/4/government/quarter-section-map-request.pdf",
+    "text": "Request Form (PDF, 311KB)",
+    "file": "data/city_files/Mesa/cace4f_quarter-section-map-request.pdf",
+    "rows": 40,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/residentresources/streetstransportation/bikeped/bike-safety-brochure.pdf",
+    "text": "Bicycle Safety (PDF, 2MB)",
+    "file": "data/city_files/Mesa/2e677e_bike-safety-brochure.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/2/utilities/trash-recycling/2026-appliance-pickup-map.pdf",
+    "text": "Find the pick-up days for your address (PDF, 943KB)",
+    "file": "data/city_files/Mesa/0acbd3_2026-appliance-pickup-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/2/utilities/trash-recycling/sw-2024-recycle-flyer-1.pdf",
+    "text": "Printable list (PDF, 4MB)",
+    "file": "data/city_files/Mesa/57adb7_sw-2024-recycle-flyer-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/utilities/trash-recycling/private-hauler-application.pdf",
+    "text": "Private Hauler Application & Tonnage Report (PDF, 299KB)",
+    "file": "data/city_files/Mesa/fb9846_private-hauler-application.pdf",
+    "rows": 18,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/altamesaaerialmapnew060722.pdf",
+    "text": "Alta Mesa Park Aerial Map (PDF, 1MB)",
+    "file": "data/city_files/Mesa/00ac7c_altamesaaerialmapnew060722.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/altamesabasemapnew060722.pdf",
+    "text": "Alta Mesa Park Base Map (PDF, 235KB)",
+    "file": "data/city_files/Mesa/372a9e_altamesabasemapnew060722.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/augustaranchparkaerialmapnew060822.pdf",
+    "text": "Augusta Ranch Park Aerial Map (PDF, 1MB)",
+    "file": "data/city_files/Mesa/d7c7b3_augustaranchparkaerialmapnew060822.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/augustaranchparkbasemapnew060822.pdf",
+    "text": "Augusta Ranch Park Base Map (PDF, 258KB)",
+    "file": "data/city_files/Mesa/1493e1_augustaranchparkbasemapnew060822.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/beverlyparkaerialmapnew060822.pdf",
+    "text": "Beverly Park Aerial Map (PDF, 1007KB)",
+    "file": "data/city_files/Mesa/900bc7_beverlyparkaerialmapnew060822.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/beverlyparkbasemapnew060822.pdf",
+    "text": "Beverly Park Base Map (PDF, 179KB)",
+    "file": "data/city_files/Mesa/332844_beverlyparkbasemapnew060822.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/candlelightparkaerialmapnew061322.pdf",
+    "text": "Candlelight Park Aerial Map (PDF, 1MB)",
+    "file": "data/city_files/Mesa/8bd560_candlelightparkaerialmapnew061322.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/candlelightparkbasemapnew070522.pdf",
+    "text": "Candlelight Park Base Map (PDF, 220KB)",
+    "file": "data/city_files/Mesa/9f4e46_candlelightparkbasemapnew070522.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/carriagelaneparkaerialmapnew060922.pdf",
+    "text": "Carriage Lane Park Aerial Map (PDF, 1MB)",
+    "file": "data/city_files/Mesa/60dd06_carriagelaneparkaerialmapnew060922.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/carriagelaneparkbasemapnew060922.pdf",
+    "text": "Carriage Lane Park Base Map (PDF, 259KB)",
+    "file": "data/city_files/Mesa/11ef96_carriagelaneparkbasemapnew060922.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/chaparralparkaerialmapnew070522.pdf",
+    "text": "Chaparral Park Aerial Map (PDF, 1MB)",
+    "file": "data/city_files/Mesa/ed6937_chaparralparkaerialmapnew070522.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/chaparralparkbasemapnew070522.pdf",
+    "text": "Chaparral Park Base Map (PDF, 204KB)",
+    "file": "data/city_files/Mesa/ede95e_chaparralparkbasemapnew070522.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/chelseaparkaerialmapnew061322.pdf",
+    "text": "Chelsea Park Aerial Map (PDF, 1MB)",
+    "file": "data/city_files/Mesa/550f9c_chelseaparkaerialmapnew061322.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/chelseaparkbasemapnew061322.pdf",
+    "text": "Chelsea Park Base Map (PDF, 209KB)",
+    "file": "data/city_files/Mesa/fdf0df_chelseaparkbasemapnew061322.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/klienmanparkaerialmapnew060722.pdf",
+    "text": "Kleinman Park Aerial Map (PDF, 1MB)",
+    "file": "data/city_files/Mesa/eeb780_klienmanparkaerialmapnew060722.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/parks/park-maps/klienmanparkbasemapnew072722.pdf",
+    "text": "Kleinman Park Base Map (PDF, 426KB)",
+    "file": "data/city_files/Mesa/1add3b_klienmanparkbasemapnew072722.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.mesaaz.gov/": "Open Data Portal We believe in transparency in government. Explore critical datasets in our Open Data Portal.",
+   "mailto:opendata.info@mesaaz.gov": "Contact Us",
+   "https://gis.mesaaz.gov/qsviewer/": "Interactive Quarter Section Map lookup",
+   "https://gis.mesaaz.gov/neighborhoodoutreach?_gl=1*mazph2*_ga*MTkyMzczMjQxLjE3MTE1NDgxNjE.*_ga_22L3TR0546*MTcxNjkyODU5Ny4xNjIuMS4xNzE2OTMyNDY0LjQ4LjAuMA..": "Map of registered neighborhoods",
+   "https://mesaaz.maps.arcgis.com/apps/dashboards/38ec33c586f84cdeb2c9d36f6d25704c": "map of registered neighborhoods",
+   "https://gis.mesaaz.gov/exploremesa": "Lane Restrictions & Road Closures Map",
+   "https://gis.mesaaz.gov/trafficcounts": "Traffic Counts Map",
+   "https://gis.mesaaz.gov/ExploreMesa/Lookup": "Find your Collection Day",
+   "https://mesaaz.maps.arcgis.com/apps/mapviewer/index.html?webmap=6cfa6a48589e46c28e897feae6fd4c73": "Historic Properties Map",
+   "https://gis.mesaaz.gov/Html5Viewer/index.html?viewer=Planning_Zoning.Public": "Planning & Zoning Map",
+   "https://gis.mesaaz.gov/active_cip/?_gl=1*c4l5um*_gcl_au*Nzg0OTQ0OTIuMTcyNDc3OTc4MA..*_ga*MTExODU0OTQ0My4xNjg5ODg0Njgz*_ga_22L3TR0546*MTcyNzM2OTE5Ny4zOS4xLjE3MjczNzEyMTIuNDEuMC4w": "Interactive CIP Project Map",
+   "https://experience.arcgis.com/experience/e7c4f8f4201641919a28b28452fa095c/": "Active Developments Map"
+  }
+ },
+ "Lucas County": {
+  "files": [],
+  "portals": {}
+ },
+ "Lehigh County": {
+  "files": [],
+  "portals": {}
+ },
+ "Durham County": {
+  "files": [
+   {
+    "url": "https://dconc.gov/General-Services1/Durham-County---All-Accepted-List24.pdf",
+    "text": "Commingled Recycling:",
+    "file": "data/city_files/Durham_County/0cf578_Durham-County---All-Accepted-List24.pdf",
+    "rows": 40,
+    "bike_rows": 4
+   }
+  ],
+  "portals": {
+   "https://durhamnc.maps.arcgis.com/apps/webappviewer/index.html?id=4e7f1f357e1b4bcb8ab7f12d8c759206": "Polling Locations",
+   "http://data.census.gov/": "data.census.gov",
+   "https://durham-transit-tracking-dashboard-fitp.hub.arcgis.com/": "View the Tracker",
+   "https://live-durhamnc.opendata.arcgis.com/datasets/DurhamNC::sidewalks/explore?location=35.998027%2C-78.877300%2C11.34": "City of Durham - Sidewalks Map",
+   "https://live-durhamnc.opendata.arcgis.com/datasets/existing-and-proposed-trails/explore?location=36.022282%2C-78.846738%2C10.76": "City and County of Durham – Existing and Proposed Trails Map"
+  }
+ },
+ "Lincoln": {
+  "files": [
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/route-brochures/all-weekday-routes.pdf",
+    "text": "All Weekday Routes & Schedules (PDF, 2MB)",
+    "file": "data/city_files/Lincoln/96feaf_all-weekday-routes.pdf",
+    "rows": 436,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/route-brochures/unl-routes.pdf",
+    "text": "All UNL Routes & Schedules (PDF, 754KB)",
+    "file": "data/city_files/Lincoln/29a283_unl-routes.pdf",
+    "rows": 57,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/route-brochures/all-saturday-routes.pdf",
+    "text": "All Saturday Routes & Schedules (PDF, 3MB)",
+    "file": "data/city_files/Lincoln/2280e8_all-saturday-routes.pdf",
+    "rows": 199,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/const-demo-recycling-resources.pdf",
+    "text": "Construction Material Diversion Providers (PDF, 12KB)",
+    "file": "data/city_files/Lincoln/5b5524_const-demo-recycling-resources.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/2025-city-of-lincoln-trail-report-web.pdf",
+    "text": "Annual Trail Report (PDF, 8MB)",
+    "file": "data/city_files/Lincoln/43be6f_2025-city-of-lincoln-trail-report-web.pdf",
+    "rows": 51,
+    "bike_rows": 29
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/bridlepath_actionplan_20180110.pdf",
+    "text": "Pioneers Park Bridle Paths Action Plan (PDF, 584KB)",
+    "file": "data/city_files/Lincoln/fed3ae_bridlepath_actionplan_20180110.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/lpr-trails-fletcher-tap-55.pdf",
+    "text": "Informational handout (PDF, 252KB)",
+    "file": "data/city_files/Lincoln/555025_lpr-trails-fletcher-tap-55.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/projects/13554-waterford-trail-fact-sheet-10-6-26.pdf",
+    "text": "Waterford Trail Fact Sheet, 10-6-26 (PDF, 594KB)",
+    "file": "data/city_files/Lincoln/63e3ca_13554-waterford-trail-fact-sheet-10-6-26.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/programs/nature-center/ppnc-tracks-sheet.web.2020.pdf",
+    "text": "Animal Tracks Guide (PDF, 390KB)",
+    "file": "data/city_files/Lincoln/07cba8_ppnc-tracks-sheet.web.2020.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/about/lpr-guidelines-adoptparktrail.pdf",
+    "text": "Adopt-A-Park & Adopt-A-Trail Guidelines (PDF, 675KB)",
+    "file": "data/city_files/Lincoln/4d9581_lpr-guidelines-adoptparktrail.pdf",
+    "rows": 21,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/volunteer/adopt-a-park-area-application2021.pdf",
+    "text": "Adopt-a-Park and Trail Application (PDF, 63KB)",
+    "file": "data/city_files/Lincoln/6fbc4a_adopt-a-park-area-application2021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/parks-amp-rec/pedestrianbicycle-committee/boardtraining.doc.pbac05-10-21.pdf",
+    "text": "BoardTraining.Doc.PBAC05-10-21.pdf (PDF, 133KB)",
+    "file": "data/city_files/Lincoln/e31643_boardtraining.doc.pbac05-10-21.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/2/ltu/transportation/traffic-engineering/truck-routes.pdf",
+    "text": "Truck Routes Map (PDF, 705KB)",
+    "file": "data/city_files/Lincoln/32cf70_truck-routes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/2/urban-development/park-and-go/forms/bicycle-storage-agreement.pdf",
+    "text": "Bicycle Storage Agreement (PDF, 50KB)",
+    "file": "data/city_files/Lincoln/ed9064_bicycle-storage-agreement.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/urban-development/park-and-go/forms/parking-rules-and-regulations.pdf",
+    "text": "Parking Rules and Regulations (PDF, 704KB)",
+    "file": "data/city_files/Lincoln/c5255a_parking-rules-and-regulations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/urban-development/park-and-go/forms/rosaparklot_foodtruck.pdf",
+    "text": "application (PDF, 50KB)",
+    "file": "data/city_files/Lincoln/95474b_rosaparklot_foodtruck.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/3/urban-development/park-and-go/forms/food-truck-parking-meter-hood-application.pdf",
+    "text": "Food Truck Parking Meter Hooding Application",
+    "file": "data/city_files/Lincoln/ca521f_food-truck-parking-meter-hood-application.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/mmtc/mmtc-20251021-parking-options.pdf",
+    "text": "Private Parking Options Near City Hall 458 K (, 0B)",
+    "file": "data/city_files/Lincoln/6650e2_mmtc-20251021-parking-options.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/6/ltu/startran/route-brochures/unl-routes.pdf",
+    "text": "PDF Brochure (PDF, 754KB)",
+    "file": "data/city_files/Lincoln/099fae_unl-routes.pdf",
+    "rows": 57,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/corrugated-cardboard-faq.pdf",
+    "text": "PDF Version (PDF, 655KB)",
+    "file": "data/city_files/Lincoln/a87430_corrugated-cardboard-faq.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/guidelines-poster-mfh.pdf?2020",
+    "text": "Recycling Guidelines for Shared Multi-family Recycling Containers (PDF, 634KB)",
+    "file": "data/city_files/Lincoln/1f0d13_guidelines-poster-mfh.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/cardboard-recycle-poster.pdf",
+    "text": "Educational Recycling Poster (PDF, 280KB)",
+    "file": "data/city_files/Lincoln/6cc76e_cardboard-recycle-poster.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycle-tips.pdf",
+    "text": "Tips for Recycling at Home (PDF, 530KB)",
+    "file": "data/city_files/Lincoln/95583e_recycle-tips.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycling-handbill.pdf",
+    "text": "Tips for Recycling at Home (8.5\"x11\") (PDF, 426KB)",
+    "file": "data/city_files/Lincoln/14354e_recycling-handbill.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/guidelines-poster-mfh-es.pdf?2020",
+    "text": "Pautas de reciclaje por material para contenedores de reciclaje compartidos multifamiliares (PDF, 710KB)",
+    "file": "data/city_files/Lincoln/79c126_guidelines-poster-mfh-es.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.lincoln.ne.gov/Payments-Services/Open-Data": "Open Data",
+   "https://experience.arcgis.com/experience/d40f8bcafe804295b94b00c8127aec93/page/Page-1/?views=Street-Closures-Map": "Lancaster County Road Closures",
+   "https://lincolnne.maps.arcgis.com/apps/webappviewer/index.html?id=6e98d72fc3bc4386b7d6bda6cf3d9f9b&extent=-10779325.0261%2C4976241.0492%2C-10743686.2616%2C4992846.9936%2C102100": "Click here to view the map in full.",
+   "http://www.arcgis.com/apps/webappviewer/index.html?id=3c325ececec44d46b031385a73d7a5e0": "Street Sweeping Map",
+   "https://lincolnne.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=0ee203d663bc4afb83cb5647f47be122&locale=en-US": "Open map in full screen"
+  }
+ },
+ "Cumberland County": {
+  "files": [],
+  "portals": {}
+ },
+ "Berkeley County": {
+  "files": [],
+  "portals": {}
+ },
+ "Yonkers": {
+  "files": [],
+  "portals": {}
+ },
+ "Racine County": {
+  "files": [],
+  "portals": {}
+ },
+ "Tippecanoe County": {
+  "files": [],
+  "portals": {}
+ },
+ "Scott County": {
+  "files": [],
+  "portals": {}
+ },
+ "Charles County": {
+  "files": [],
+  "portals": {}
+ },
+ "Stafford County": {
+  "files": [
+   {
+    "url": "https://staffordcountyva.gov/Community Engagement/Campus Map.pdf",
+    "text": "Campus Map",
+    "file": "data/city_files/Stafford_County/a41651_Campus_Map.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cdn.staffordcountyva.gov/Voter%20Registration/2022%20Adopted%20Stafford%20County%20Election%20District%20Map.pdf",
+    "text": "Stafford Election District Map",
+    "file": "data/city_files/Stafford_County/7e37b6_2022_20Adopted_20Stafford_20County_20Election_20District_20Map.pdf",
+    "rows": 25,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/187643e6c6dd4c0c93f60dd7278a2a86/": "Stafford County Interactive Polling Place Map",
+   "https://portal-gis.stafford.va.us/arcgis/apps/webappviewer/index.html?id=8a0182a500954330bcdf88a77f134635": "Check Your Voting District Information",
+   "http://data-staffordva-gis.opendata.arcgis.com/": "Applications & Data",
+   "https://portal-gis.staffordcountyva.gov/portal/apps/experiencebuilder/experience?id=e1cfb0f0954d422aa95451084f8c7ecb": "Historic Imagery Viewer",
+   "https://staffordva-gis.maps.arcgis.com/apps/webappviewer/index.html?id=25c7b7bf65204663808bcccd51ae3e77": "click here"
+  }
+ },
+ "Mesquite": {
+  "files": [],
+  "portals": {
+   "https://opendata.cityofmesquite.com": "Transparency Portal",
+   "https://opendata.cityofmesquite.com/": "Government Transparency"
+  }
+ },
+ "Wright County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/faae7cdd199149a490b4d224884b8d4e": "Wright County AccessPoint",
+   "https://experience.arcgis.com/experience/4e2513f8c0e44f3982cd8d26f18964e6/": "2025 Highway Construction Projects",
+   "https://experience.arcgis.com/experience/c4fd98e7368b4fc9b26f70f4b43c2d4b": "Wright County Parks Viewer",
+   "https://experience.arcgis.com/experience/214d4c01dffb4bee97faba0ccd9fdb8b/": "Tobacco Licensing Application",
+   "https://experience.arcgis.com/experience/d731b419c352427b95f9a8204bb5afd1": "Wright County Childcare Providers",
+   "https://experience.arcgis.com/experience/c8539020e5a74d22a06204aea5b42b73": "Wright County Public Land Survey Information",
+   "https://wright-county-gis-wrightgis.hub.arcgis.com/apps/538ffd77730b4b8aac5c7061c7bf4915": "",
+   "https://experience.arcgis.com/experience/0fb2593f7cec4fa9b01e157b02d20102": "Wright County Historical Imagery Viewer",
+   "https://wright-county-gis-wrightgis.hub.arcgis.com/apps/3e3aefeff0214462ac68719b5870a7b4": "Wright County School Districts",
+   "https://experience.arcgis.com/experience/381e4a863faf4ceabf0f20ed614f8d29": "Find Your District",
+   "https://experience.arcgis.com/experience/5f149f6b001c48858de73ab384d449df": "Wright County Municipalities",
+   "https://wright-county-gis-wrightgis.hub.arcgis.com/": "GIS Hub - Data Download"
+  }
+ },
+ "Coral Springs": {
+  "files": [],
+  "portals": {}
+ },
+ "Santa Clara": {
+  "files": [],
+  "portals": {}
+ },
+ "Comanche County": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com": ""
+  }
+ },
+ "Calhoun County": {
+  "files": [
+   {
+    "url": "https://calhouncounty.org/images/Commission_Districts.pdf",
+    "text": "District Map",
+    "file": "data/city_files/Calhoun_County/f50872_Commission_Districts.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://calhouncounty.org/vote/docs/2026_Calhoun_Sample.pdf",
+    "text": "2026 Calhoun County General Election Sample Ballot",
+    "file": "data/city_files/Calhoun_County/8d3bb7_2026_Calhoun_Sample.pdf",
+    "rows": 27,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://calhouncounty.org/forms/Commission_Districts_Voting2026.pdf",
+    "text": "District Maps",
+    "file": "data/city_files/Calhoun_County/051120_Commission_Districts_Voting2026.pdf",
+    "rows": 23,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://calhouncounty.org/vote/docs/2026_General_Statewide_Generic_Back.pdf",
+    "text": "2026 Alabama General Election Sample Ballot Back",
+    "file": "data/city_files/Calhoun_County/66bd17_2026_General_Statewide_Generic_Back.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://calhouncounty.org/vote/vote/docs/Calhoun-2026-Pri-Runoff-Dem.pdf",
+    "text": "2026 Primary Runoff Democratic Sample Ballot",
+    "file": "data/city_files/Calhoun_County/e2a802_Calhoun-2026-Pri-Runoff-Dem.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://calhouncounty.org/vote/vote/docs/Calhoun-2026-Pri-Runoff-Rep.pdf",
+    "text": "2026 Primary Runoff Republican Sample Ballot",
+    "file": "data/city_files/Calhoun_County/b4f82c_Calhoun-2026-Pri-Runoff-Rep.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://calhouncounty.org/vote/docs/CalhounAmend2026Primary.pdf",
+    "text": "Calhoun County Amendment Primary Sample Ballot",
+    "file": "data/city_files/Calhoun_County/3d9247_CalhounAmend2026Primary.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://calhouncounty.org/vote/docs/CalhounDem2026Primary.pdf",
+    "text": "Calhoun County Democratic Primary Sample Ballot",
+    "file": "data/city_files/Calhoun_County/6aa031_CalhounDem2026Primary.pdf",
+    "rows": 54,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://calhouncounty.org/vote/docs/CalhounRep2026Primary.pdf",
+    "text": "Calhoun County Republican Primary Sample Ballot",
+    "file": "data/city_files/Calhoun_County/08201d_CalhounRep2026Primary.pdf",
+    "rows": 64,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://calhouncounty.org/forms/Commission_Districts_Voting.pdf",
+    "text": "Commission District Map with Polling Locations",
+    "file": "data/city_files/Calhoun_County/14a46a_Commission_Districts_Voting.pdf",
+    "rows": 23,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sos.alabama.gov/sites/default/files/absentee-forms/EmergencyAbsenteeAppFillable%20-06-13-2022.pdf",
+    "text": "Emergency Absentee Ballot Application",
+    "file": "data/city_files/Calhoun_County/33eb57_EmergencyAbsenteeAppFillable_20-06-13-2022.pdf",
+    "rows": 19,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://calhouncounty.org/parks/videos/vote/docs/2026_Calhoun_Sample.pdf",
+    "text": "2026 Calhoun County Sample Ballot",
+    "file": "data/city_files/Calhoun_County/8cb108_2026_Calhoun_Sample.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.calhouncounty.org/PersonalProperty/": "Business Personal Property",
+   "https://gis.calhouncounty.org/": "GIS Mapping System",
+   "https://gis.calhouncounty.org/CountyInfo/index.html": "Interactive Commish Map"
+  }
+ },
+ "Pompano Beach": {
+  "files": [
+   {
+    "url": "https://cdn.pompanobeachfl.gov/pba/images/Community-Safety-Resources-Map.pdf",
+    "text": "click here.",
+    "file": "data/city_files/Pompano_Beach/286eea_Community-Safety-Resources-Map.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {}
+ },
+ "St. George": {
+  "files": [],
+  "portals": {}
+ },
+ "Eau Claire County": {
+  "files": [],
+  "portals": {}
+ },
+ "Vacaville": {
+  "files": [],
+  "portals": {}
+ },
+ "Lenawee County": {
+  "files": [],
+  "portals": {
+   "https://lenawee.maps.arcgis.com/": "Online GIS Maps"
+  }
+ },
+ "Yuma": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Croix County": {
+  "files": [
+   {
+    "url": "https://apps.dnr.wi.gov/doclink/waext/WA1621.pdf",
+    "text": "household battery recycling guide",
+    "file": "data/city_files/St_Croix_County/a7e69a_WA1621.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://apps.dnr.wi.gov/doclink/waext/WA1633.pdf",
+    "text": "Renter's Guide to Recycling and Waste Reduction",
+    "file": "data/city_files/St_Croix_County/0f66ff_WA1633.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://scccdd.maps.arcgis.com/apps/webappviewer/index.html?id=893ffed22946484fb78237a6d2c721de": "St Croix County C.O.M.P.A.S Interactive Map"
+  }
+ },
+ "Rockingham County": {
+  "files": [
+   {
+    "url": "https://www.rockinghamcountync.gov/files/documents/document1007102144121916.pdf",
+    "text": "Map - Board of Education",
+    "file": "data/city_files/Rockingham_County/ad5019_document1007102144121916.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.webgis.net/nc/Rockingham/": "GIS",
+   "https://data-hub-rock-co-gis.hub.arcgis.com": "Visit the GIS Data Hub Website for More Information",
+   "https://www.webgis.net/Demo/Help/": "here"
+  }
+ },
+ "Livermore": {
+  "files": [],
+  "portals": {}
+ },
+ "Westland": {
+  "files": [],
+  "portals": {}
+ },
+ "Cranston": {
+  "files": [
+   {
+    "url": "https://cranstonri.gov/_resources/common/userfiles/file/Public Works/City of Cranston -Budlong Pool E106 v1-1.pdf",
+    "text": "Advisory Council on Historic Preservation Electronic Submittal Form",
+    "file": "data/city_files/Cranston/356c17_City_of_Cranston_-Budlong_Pool_E106_v1-1.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cranstonri.gov/_resources/common/userfiles/file/Public Works/Recycle together R I Sheet.pdf",
+    "text": "Recycle Together RI",
+    "file": "data/city_files/Cranston/b743b5_Recycle_together_R_I_Sheet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cranstonri.gov/_resources/common/userfiles/file/HDC/1363_Narragansett_Historic_District_Application_Rear_Windows.pdf",
+    "text": "1363 Narragansett Blvd.",
+    "file": "data/city_files/Cranston/5c8316_1363_Narragansett_Historic_District_Application_Rear_Windows.pdf",
+    "rows": 50,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/232916810b8e4f7f86c777f3a7a4a0a0/": "GIS MAPPING",
+   "https://cranston.maps.arcgis.com/apps/webappviewer/index.html?id=603b95d5ee9c40f48cf45639c134c9e1": "GIS Web Mapping Tool"
+  }
+ },
+ "Caldwell County": {
+  "files": [],
+  "portals": {
+   "http://gis.caldwellcountync.org/maps/default.htm": "Property Maps"
+  }
+ },
+ "Sullivan County": {
+  "files": [],
+  "portals": {}
+ },
+ "Scranton": {
+  "files": [
+   {
+    "url": "https://scrantonpa.gov/wp-content/uploads/2025/12/COS_2026_RECYCLING_CALENDAR_8.5_11.pdf",
+    "text": "Download",
+    "file": "data/city_files/Scranton/14f131_COS_2026_RECYCLING_CALENDAR_8.5_11.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://scrantonpa.gov/wp-content/uploads/2025/12/COS_RECYCLING_CALENDAR_ADA_ESPANOL_FULL_2025.pdf",
+    "text": "2026 Recycling Calendar: ADA and Spanish View the 2026 calendar in ADA-accessible and Spanish versions. View Translation",
+    "file": "data/city_files/Scranton/e583dc_COS_RECYCLING_CALENDAR_ADA_ESPANOL_FULL_2025.pdf",
+    "rows": 48,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://scrantonpa.gov/wp-content/uploads/2025/09/COS_RECYCLING_RESIDENTIAL_2025_english_and_spanish.pdf",
+    "text": "Residential Recycling Information Recycling guidelines for residents, available in English and\n            Spanish. View",
+    "file": "data/city_files/Scranton/e79813_COS_RECYCLING_RESIDENTIAL_2025_english_and_spanish.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://scrantonpa.gov/wp-content/uploads/2025/11/20251105_release__scranton_plans_second_electronics_recycling_event_of_2025.pdf",
+    "text": "City of Scranton Plans Second Electronic Recycling Event of 2025 | Press Release",
+    "file": "data/city_files/Scranton/190fba_20251105_release__scranton_plans_second_electronics_recycling_event_of",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://scrantonpa.gov/wp-content/uploads/2025/02/20250225_release__scranton_on_the_right_route_for_trash_recycling_pickup-1.pdf",
+    "text": "Officials Say DPW Software Has Trash and Recycling Pickup on the Right Route | Press Release",
+    "file": "data/city_files/Scranton/bedff3_20250225_release__scranton_on_the_right_route_for_trash_recycling_pick",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://scrantonpa.gov/wp-content/uploads/2025/06/COS_RECYCLING_CALENDAR_JULY_DEC_2025.pdf",
+    "text": "2025 July to December Refuse and Recycling Calendar",
+    "file": "data/city_files/Scranton/54e2f0_COS_RECYCLING_CALENDAR_JULY_DEC_2025.pdf",
+    "rows": 19,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://scrantonpa.gov/wp-content/uploads/2023/01/Pickup-Schedule.pdf",
+    "text": "Neighborhood Refuse and Recycling Pick-Up Schedule",
+    "file": "data/city_files/Scranton/954bea_Pickup-Schedule.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://scrantonpa.gov/wp-content/uploads/2025/12/COS_WHAT_CAN_RECYCLE_2025_english_spanish.pdf",
+    "text": "View our Recycling Guide !",
+    "file": "data/city_files/Scranton/14871d_COS_WHAT_CAN_RECYCLE_2025_english_spanish.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://scrantonpa.gov/wp-content/uploads/2025/07/COS_WHAT_WE_RECYCLE_2025_1.pdf",
+    "text": "Hard-to-Recycle Items | PDF",
+    "file": "data/city_files/Scranton/ec5a04_COS_WHAT_WE_RECYCLE_2025_1.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://scrantonpa.gov/wp-content/uploads/2024/12/Commercial-Rpt-Form.pdf",
+    "text": "Commercial Institutional Recycling Report",
+    "file": "data/city_files/Scranton/d47136_Commercial-Rpt-Form.pdf",
+    "rows": 68,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://scrantonpa.gov/wp-content/uploads/2025/06/COS_RECYCLING_CALENDAR_JULY_DEC_2025-1.pdf",
+    "text": "Download",
+    "file": "data/city_files/Scranton/2dc132_COS_RECYCLING_CALENDAR_JULY_DEC_2025-1.pdf",
+    "rows": 19,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://scranton311-scrantonplanning.hub.arcgis.com/": "Report a Pothole Online",
+   "https://survey123.arcgis.com/share/49791a7e10164472ada23124b6416de6?portalUrl=https://scrantonplanning.maps.arcgis.com": "Report a Storm Drain or Basin"
+  }
+ },
+ "New Britain": {
+  "files": [
+   {
+    "url": "https://resources.finalsite.net/images/v1657818849/newbritainctgov/u9ogytz65w0ignamimqf/17VotingDistrictMapFinalized7-14-22.pdf",
+    "text": "Voting District Map",
+    "file": "data/city_files/New_Britain/b89d36_17VotingDistrictMapFinalized7-14-22.pdf",
+    "rows": 513,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://resources.finalsite.net/images/v1657818861/newbritainctgov/yw79nadzkpxkpxtqbiyq/AssemblyDistrictMapFinalized7-14-22.pdf",
+    "text": "Assembly Districts",
+    "file": "data/city_files/New_Britain/a68846_AssemblyDistrictMapFinalized7-14-22.pdf",
+    "rows": 472,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://resources.finalsite.net/images/v1658430392/newbritainctgov/yqe6dhh4u7l4oxlmdnvu/WardVotingDistrictMapFinalized7-21-22.pdf",
+    "text": "Ward Map 2022",
+    "file": "data/city_files/New_Britain/318803_WardVotingDistrictMapFinalized7-21-22.pdf",
+    "rows": 524,
+    "bike_rows": 6
+   }
+  ],
+  "portals": {
+   "http://gis.vgsi.com/newbritainct/": "Parcel Information (opens in new window/tab)"
+  }
+ },
+ "Pottawatomie County": {
+  "files": [],
+  "portals": {}
+ },
+ "Lake Elsinore": {
+  "files": [],
+  "portals": {}
+ },
+ "San Patricio County": {
+  "files": [],
+  "portals": {}
+ },
+ "Spalding County": {
+  "files": [
+   {
+    "url": "https://cdn.prod.website-files.com/662160f1d71847200bf01241/6aeb87698e5b135a67426734_DISPO-PATHO-BLANK-ONLINE%20V.%202026%20(1).pdf",
+    "text": "Dispossessory Affidavit",
+    "file": "data/city_files/Spalding_County/38db7b_6aeb87698e5b135a67426734_DISPO-PATHO-BLANK-ONLINE_20V._202026_20_1_.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.prod.website-files.com/662160f1d71847200bf01241/66f6f5feb8025ca52327b483_SC_Parks_Resource_Map_20240923.pdf",
+    "text": "Map of Park Locations",
+    "file": "data/city_files/Spalding_County/d32fe2_66f6f5feb8025ca52327b483_SC_Parks_Resource_Map_20240923.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Gloucester Township": {
+  "files": [
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/10/Council-Meeting-Agenda_102626.pdf",
+    "text": "Council Meeting Agenda 10/26/26 | Published: 10/22/26",
+    "file": "data/city_files/Gloucester_Township/0f914d_Council-Meeting-Agenda_102626.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/11/Council-Meeting-Agenda-110926.pdf",
+    "text": "Council Meeting Agenda 11/09/26 | Published: 11/05/26",
+    "file": "data/city_files/Gloucester_Township/10e8bb_Council-Meeting-Agenda-110926.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/11/Council-Workshop-Agenda-110926.pdf",
+    "text": "Council Workshop Agenda 11/09/26 | Published: 11/05/26",
+    "file": "data/city_files/Gloucester_Township/96cfe6_Council-Workshop-Agenda-110926.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/11/PBA_111026.pdf",
+    "text": "Planning Board Agenda 11/10/26 | Published: 11/04/26",
+    "file": "data/city_files/Gloucester_Township/8511e9_PBA_111026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/11/ZBA_111226.pdf",
+    "text": "Zoning Board Agenda 11/12/26 | Published: 11/11/26",
+    "file": "data/city_files/Gloucester_Township/52ef9b_ZBA_111226.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2023/04/GT-employment-application-2023.pdf",
+    "text": "General Employment Application",
+    "file": "data/city_files/Gloucester_Township/1d81c5_GT-employment-application-2023.pdf",
+    "rows": 35,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2024/07/Fillable-GTPD-Application-0724.pdf",
+    "text": "Police Support Application",
+    "file": "data/city_files/Gloucester_Township/ede849_Fillable-GTPD-Application-0724.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2024/09/Government-Records-Request-Form-OPRA-Updated2024.pdf",
+    "text": "OPRA Form",
+    "file": "data/city_files/Gloucester_Township/96c24c_Government-Records-Request-Form-OPRA-Updated2024.pdf",
+    "rows": 51,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2023/03/GT-Bingo-Application-Complete.pdf",
+    "text": "Township of Gloucester Bingo Application",
+    "file": "data/city_files/Gloucester_Township/163cef_GT-Bingo-Application-Complete.pdf",
+    "rows": 53,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2023/03/GT-Raffle-Application-Complete.pdf",
+    "text": "Township of Gloucester Raffle Application",
+    "file": "data/city_files/Gloucester_Township/5387f2_GT-Raffle-Application-Complete.pdf",
+    "rows": 114,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2018/09/StateTaxPayerBillofRightsANJ-1.pdf",
+    "text": "Taxpayer Bill of Rights",
+    "file": "data/city_files/Gloucester_Township/afd563_StateTaxPayerBillofRightsANJ-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/04/0415_certifiedintrobudget_2026.pdf",
+    "text": "2026 Introduced Budget",
+    "file": "data/city_files/Gloucester_Township/a7459c_0415_certifiedintrobudget_2026.pdf",
+    "rows": 1548,
+    "bike_rows": 59
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/04/2026-Budget-Advertisement-Revised.pdf",
+    "text": "2026 Budget-Advertisement (Revised 4-23-26)",
+    "file": "data/city_files/Gloucester_Township/97fdb6_2026-Budget-Advertisement-Revised.pdf",
+    "rows": 35,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/05/Budget-Amendment-R2505173Revised.pdf",
+    "text": "2026 Budget Amendment-R2505173 Revised",
+    "file": "data/city_files/Gloucester_Township/a642de_Budget-Amendment-R2505173Revised.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/05/2026-User-Friendly-Budget.pdf",
+    "text": "2026 User Friendly Budget",
+    "file": "data/city_files/Gloucester_Township/031ec6_2026-User-Friendly-Budget.pdf",
+    "rows": 588,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/05/2026-Adopted-Budget.pdf",
+    "text": "2026 Adopted Budget",
+    "file": "data/city_files/Gloucester_Township/ac7c5c_2026-Adopted-Budget.pdf",
+    "rows": 1563,
+    "bike_rows": 52
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/09/2025-Audit.pdf",
+    "text": "2025 Gloucester Township Audit Report",
+    "file": "data/city_files/Gloucester_Township/89d615_2025-Audit.pdf",
+    "rows": 183,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2025/04/2025-Intro-Budget.pdf",
+    "text": "2025 Introduced Budget",
+    "file": "data/city_files/Gloucester_Township/ba15eb_2025-Intro-Budget.pdf",
+    "rows": 1637,
+    "bike_rows": 51
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2025/09/Gloucester-Township-2025-Adpoted-Budget.pdf",
+    "text": "Gloucester Township 2025 Adopted Budget",
+    "file": "data/city_files/Gloucester_Township/febfd1_Gloucester-Township-2025-Adpoted-Budget.pdf",
+    "rows": 1617,
+    "bike_rows": 54
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2025/09/Gloucester-Township-2025-User-Friendly-Budget.pdf",
+    "text": "Gloucester Township 2025 User Friendly Budget",
+    "file": "data/city_files/Gloucester_Township/2ed8b8_Gloucester-Township-2025-User-Friendly-Budget.pdf",
+    "rows": 586,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/02/0415-ads-2025.pdf",
+    "text": "2025 Annual Debt Statement",
+    "file": "data/city_files/Gloucester_Township/679cb0_0415-ads-2025.pdf",
+    "rows": 943,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2026/04/0415-afs-2025.pdf",
+    "text": "2025 Annual Financial Statements",
+    "file": "data/city_files/Gloucester_Township/a91a6f_0415-afs-2025.pdf",
+    "rows": 2231,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2025/11/2024-Gloucester-Township-Audit-Report-Approved.pdf",
+    "text": "2024 Gloucester Township Audit Report",
+    "file": "data/city_files/Gloucester_Township/9d6443_2024-Gloucester-Township-Audit-Report-Approved.pdf",
+    "rows": 117,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2024/04/0415_introbudget_2024.pdf",
+    "text": "2024 Introduced Budget",
+    "file": "data/city_files/Gloucester_Township/d5418e_0415_introbudget_2024.pdf",
+    "rows": 1637,
+    "bike_rows": 51
+   },
+   {
+    "url": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2024/05/2024-Adopted-Budget.pdf",
+    "text": "2024 Adopted Budget",
+    "file": "data/city_files/Gloucester_Township/1e4f53_2024-Adopted-Budget.pdf",
+    "rows": 1637,
+    "bike_rows": 51
+   }
+  ],
+  "portals": {
+   "https://survey123.arcgis.com/share/c426bdbe74cd49b6b70137d02b3d39b5": "this link",
+   "https://tt-mmi.maps.arcgis.com/apps/instant/sidebar/index.html?appid=755d78963b5a41aa9df07596bff2417d": "View the Aqua NJ Interactive Map",
+   "https://survey123.arcgis.com/share/4b1a106dba044a9ea8dcbb25fe750eca?_gl=1*wptf7a*_ga*MjEzMDUyOTUyLjE2ODgxNTI2NTY.*_ga_774GTL55SG*MTY4ODI2Mjc2NS4yLjEuMTY4ODI2MjkyOS41OC4wLjA": "here",
+   "https://njaw.maps.arcgis.com/apps/webappviewer/index.html?id=2aa6e04ed2204b86a6bd233600870dc2": "Customer Service Line Material Map here"
+  }
+ },
+ "Idaho Falls": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/fb5e74669c664d9fba1127829ba711d1": "Fiber Service Interactive Map",
+   "https://experience.arcgis.com/experience/ccd62ffa249143098838f8730abf9953": "Snow Removal Interactive Maps",
+   "https://experience.arcgis.com/experience/f3c24b0f478848ee853f7c3a03e7e7f9": "Construction Interactive Map",
+   "https://experience.arcgis.com/experience/67e427936d134b1c8061e39d0b3f3269": "Parks/Greenways/Storm Pond Map",
+   "https://experience.arcgis.com/experience/c86217e1d0d045ee84f6c0e8456391a4": "INTERACTIVE MAP of Ski Trails",
+   "https://experience.arcgis.com/experience/68be0cc4680c41e4befc5038e8b30ff2": "Street Mapping Application",
+   "https://experience.arcgis.com/experience/596eeafca23948c99abc42104b4921e0": "Sanitation Map",
+   "https://experience.arcgis.com/experience/186be53f460c42e7a79db05d58cfc379": "Downtown Parking Map",
+   "https://experience.arcgis.com/experience/aa91ab42a7774107a9fd0abdf7942de5": "Leaf Collection Map",
+   "https://ifgis.maps.arcgis.com/": "City of Idaho Falls ArcGIS Online site",
+   "https://experience.arcgis.com/experience/67629e080ea74cd19de61240b8760d55": "Zoning and Development Mapping Application",
+   "https://experience.arcgis.com/experience/67629e080ea74cd19de61240b8760d55/page/Zoning-%26-Development/": "Zoning and Development"
+  }
+ },
+ "Millcreek": {
+  "files": [],
+  "portals": {}
+ },
+ "Reno County": {
+  "files": [
+   {
+    "url": "https://renogov.org/media/Document%20Center/Departments/Public%20Works/Permits%20&%20Applications/Agricultural%20Lot%20Split%20Application.pdf",
+    "text": "Agricultural Lot Split Application (PDF)",
+    "file": "data/city_files/Reno_County/22c4a7_Agricultural_20Lot_20Split_20Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://renogov.org/media/Document%20Center/Departments/Public%20Works/Permits%20&%20Applications/Homestead%20Lot%20Split%20Application%20-%20Fillable%20PDF_1.pdf",
+    "text": "Homestead Lot Split Application (PDF)",
+    "file": "data/city_files/Reno_County/ce4cd4_Homestead_20Lot_20Split_20Application_20-_20Fillable_20PDF_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://renogov.org/media/Document%20Center/Departments/Public%20Works/Permits%20&%20Applications/Lot%20Split%20Application.pdf",
+    "text": "Lot Split Application (PDF)",
+    "file": "data/city_files/Reno_County/8ccc40_Lot_20Split_20Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://renogov.org/media/Document%20Center/Departments/Public%20Works/Planning%20&%20Zoning%20Division/Reno%20County%20Bicycle%20Transportation%20Study.pdf",
+    "text": "Bicycle Transportation Study - navigate to Bicycle Transportation Study page",
+    "file": "data/city_files/Reno_County/3c3caf_Reno_20County_20Bicycle_20Transportation_20Study.pdf",
+    "rows": 183,
+    "bike_rows": 35
+   },
+   {
+    "url": "https://renogov.org/media/Document%20Center/Departments/Appraiser/2022AppraisalReinspection.pdf",
+    "text": "Appraisal Reinspection Cycle",
+    "file": "data/city_files/Reno_County/814d18_2022AppraisalReinspection.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.renocountyks.gov/media/Document%20Center/Departments/Administration/ZoningMap36X46_Zoned%20and%20Unzoned.pdf",
+    "text": "Zoned and Unzoned (2024)",
+    "file": "data/city_files/Reno_County/3ba0b0_ZoningMap36X46_Zoned_20and_20Unzoned.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://renogov.org/media/Document%20Center/Departments/Clerks%20Office/City%20Council%20Map%20-%20Letter%20SZ_202207121518544877.pdf",
+    "text": "City Council Districts - Hutchinson (PDF)",
+    "file": "data/city_files/Reno_County/36f8e5_City_20Council_20Map_20-_20Letter_20SZ_202207121518544877.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://renogov.org/media/Document%20Center/Departments/Clerks%20Office/Election/HutchinsonAreaPrecincts2022_34X34_2.pdf",
+    "text": "Precinct Map - Hutchinson (PDF)",
+    "file": "data/city_files/Reno_County/04f03e_HutchinsonAreaPrecincts2022_34X34_2.pdf",
+    "rows": 21,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://renogov.org/media/Document%20Center/Departments/Clerks%20Office/Township_CountyMap_201309231254288890.pdf",
+    "text": "Township Map (PDF)",
+    "file": "data/city_files/Reno_County/0e176b_Township_CountyMap_201309231254288890.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://renogov.org/media/Page%20Document/2022AppraisalReinspection.pdf",
+    "text": "Appraisal Reinspection Cycle - navigate to Appraisal Reinspection Cycle page",
+    "file": "data/city_files/Reno_County/a8d629_2022AppraisalReinspection.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.renocountyks.gov/media/Document Center/Departments/RCAT/Route Maps for July 1 2026.pdf",
+    "text": "Fixed Route Maps (PDF)",
+    "file": "data/city_files/Reno_County/65b92f_Route_Maps_for_July_1_2026.pdf",
+    "rows": 13,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.renocountyks.gov/media/Document%20Center/Departments/Public%20Works/Environmental%20Division/Wastewater%20for%20Homeowners/Wastewater%20Pumpers%20Haulers/Building%20Development/Reno%20County%20Sanitation%20Code%20adopted%2002282024.pdf",
+    "text": "Reno County Sanitation Code",
+    "file": "data/city_files/Reno_County/eba919_Reno_20County_20Sanitation_20Code_20adopted_2002282024.pdf",
+    "rows": 57,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://iparametrics.maps.arcgis.com/apps/dashboards/72d7992cc0ee4a2da2407a4004472dde": "ARPA Map"
+  }
+ },
+ "Piscataway": {
+  "files": [],
+  "portals": {
+   "https://piscataway.maps.arcgis.com/apps/webappviewer/index.html?id=a57334290574493881fbf617d1712ca6": "HERE",
+   "https://piscataway.maps.arcgis.com/apps/webappviewer/index.html?id=7169003632244922804fe2f1a0a24adc": "click here"
+  }
+ },
+ "Medford": {
+  "files": [],
+  "portals": {}
+ }
+}
