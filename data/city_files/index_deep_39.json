@@ -1,0 +1,1999 @@
+{
+ "St. Petersburg FL": {
+  "files": [
+   {
+    "url": "https://www.stpete.org/draft_map_Front-Back_015.pdf?t=202308111527450",
+    "text": "Bike Map",
+    "file": "data/city_files/St_Petersburg_FL/8b23a2_draft_map_Front-Back_015.pdf",
+    "rows": 48,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Printable_DTStPete.pdf?t=202212081654140",
+    "text": "Transportation and Parking Map",
+    "file": "data/city_files/St_Petersburg_FL/44c949_Printable_DTStPete.pdf",
+    "rows": 14,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.stpete.org/Zone Map Updated 6-30-23.pdf?t=202504011653170",
+    "text": "MAP OF Zones 1A - 3",
+    "file": "data/city_files/St_Petersburg_FL/37669f_Zone_Map_Updated_6-30-23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Zone 4-06 Map version 6.pdf?t=202412191926200",
+    "text": "RPP Zone 4",
+    "file": "data/city_files/St_Petersburg_FL/2cbff6_Zone_4-06_Map_version_6.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/residential_parking_permit/Zone Map updated 6-13-22.pdf?t=202207151323150",
+    "text": "RPP Zones 1A, 1B, 2, 3",
+    "file": "data/city_files/St_Petersburg_FL/7b29e8_Zone_Map_updated_6-13-22.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/residential_parking_permit/R Parking Permit Application Form Zone 1A_2027 v1.pdf?t=202611181000260",
+    "text": "Zone 1A",
+    "file": "data/city_files/St_Petersburg_FL/b1c45a_R_Parking_Permit_Application_Form_Zone_1A_2027_v1.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/residential_parking_permit/R Parking Permit Application Form Zone 1B_2026_v01 (2).pdf?t=202611181002050",
+    "text": "Zone 1B",
+    "file": "data/city_files/St_Petersburg_FL/773e0d_R_Parking_Permit_Application_Form_Zone_1B_2026_v01_2_.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/residential_parking_permit/R Parking Permit Application Form Zone 2_2027 v1.pdf?t=202611181002250",
+    "text": "Zone 2",
+    "file": "data/city_files/St_Petersburg_FL/27f8bb_R_Parking_Permit_Application_Form_Zone_2_2027_v1.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/residential_parking_permit/R Parking Permit Application Form Zone 3_2026_v01 (2).pdf?t=202611181002440",
+    "text": "Zone 3",
+    "file": "data/city_files/St_Petersburg_FL/dfd1df_R_Parking_Permit_Application_Form_Zone_3_2026_v01_2_.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/residential_parking_permit/R Parking Permit Application Form Zone 4_2027 v1.pdf?t=202611181003040",
+    "text": "Zone 4",
+    "file": "data/city_files/St_Petersburg_FL/700d6a_R_Parking_Permit_Application_Form_Zone_4_2027_v1.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.stpete.org/FinalParkMobileMap.pdf?t=202306281533010",
+    "text": "Rays Parking Lot Map",
+    "file": "data/city_files/St_Petersburg_FL/b0cfa3_FinalParkMobileMap.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Airport/Albert Whitted Fact Sheet 2022 final prt.pdf?t=202306271325390",
+    "text": "View a current profile on the Airport",
+    "file": "data/city_files/St_Petersburg_FL/69d1cb_Albert_Whitted_Fact_Sheet_2022_final_prt.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Airport/MACA Pamphlet - Feb 2018.pdf?t=202106161532020",
+    "text": "MacDill AFB Mid-Air Collision Avoidance",
+    "file": "data/city_files/St_Petersburg_FL/894265_MACA_Pamphlet_-_Feb_2018.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Airport/SPG - FY 2024-2026 DBE Plan & UPC Agreement Combined Final Signed.pdf?t=202507151000480",
+    "text": "DBE Plan and Goal (FY24-FY26)",
+    "file": "data/city_files/St_Petersburg_FL/c46523_SPG_-_FY_2024-2026_DBE_Plan_UPC_Agreement_Combined_Final_Signed.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Airport/Airport Part 77 Zoning Map - June 2023.pdf?t=202309111358080",
+    "text": "Airport Height (Part 77) Zoning Map",
+    "file": "data/city_files/St_Petersburg_FL/0c8df3_Airport_Part_77_Zoning_Map_-_June_2023.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Airport/Revised Airport Zoning Regulations.pdf?t=202106161551220",
+    "text": "Albert Whitted Airport Zoning Ordinance (City Code: Chap 16)",
+    "file": "data/city_files/St_Petersburg_FL/b23cbb_Revised_Airport_Zoning_Regulations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Airport/Airport Vehicle Gate Card Procedures.pdf?t=202106161551480",
+    "text": "Airport Vehicle Gate Card Procedure",
+    "file": "data/city_files/St_Petersburg_FL/3a3a05_Airport_Vehicle_Gate_Card_Procedures.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Airport/Vehicle Gate Card Access Form (Tenant-Employee).pdf?t=202106161552080",
+    "text": "Vehicle Gate Card Access Form (Tenant/Employee)",
+    "file": "data/city_files/St_Petersburg_FL/6a9318_Vehicle_Gate_Card_Access_Form_Tenant-Employee_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Airport/Vehicle Gate Card Access Form (Individual not affiliated with an on-field tenant).pdf?t=202106161552270",
+    "text": "Vehicle Gate Card Access Form (Individual not affiliated with an on-field tenant)",
+    "file": "data/city_files/St_Petersburg_FL/6a9ff3_Vehicle_Gate_Card_Access_Form_Individual_not_affiliated_with_an_on-fie",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Airport/AWA Economic Impact Study - 2022.pdf?t=202308031022460",
+    "text": "2022 FDOT Economic Impact Study of AWA",
+    "file": "data/city_files/St_Petersburg_FL/4e2418_AWA_Economic_Impact_Study_-_2022.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Airport/Albert Whitted SWPPP 2020.pdf?t=202308031023220",
+    "text": "2020 AWA Stormwater Pollution Prevention Plan",
+    "file": "data/city_files/St_Petersburg_FL/01bbb1_Albert_Whitted_SWPPP_2020.pdf",
+    "rows": 177,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Airport/Albert Whitted SPCC 2020.pdf?t=202308031023450",
+    "text": "2020 AWA Spill Prevention Control and Countermeasure Plan",
+    "file": "data/city_files/St_Petersburg_FL/58e183_Albert_Whitted_SPCC_2020.pdf",
+    "rows": 123,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://www.stpete.org/Residents/utility_services/trash_recycling/docs/V2_Composting%20Guide.pdf",
+    "text": "composting guide",
+    "file": "data/city_files/St_Petersburg_FL/2c9944_V2_Composting_20Guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Business/Planning & Zoning/Historic Preservation/National Register of Historic Places.pdf?t=202203300908400",
+    "text": "list of National Register Historic Places",
+    "file": "data/city_files/St_Petersburg_FL/36b57f_National_Register_of_Historic_Places.pdf",
+    "rows": 87,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.stpete.org/Business/Planning & Zoning/Historic Preservation/St-Petersburg-Register-of-Historic-Places.pdf?t=202203300905540",
+    "text": "list of St. Petersburg Historic Places",
+    "file": "data/city_files/St_Petersburg_FL/374d45_St-Petersburg-Register-of-Historic-Places.pdf",
+    "rows": 307,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://www.stpete.org/Business/Planning & Zoning/Historic Preservation/List of Potentially Eligible Properties.pdf?t=202203300909460",
+    "text": "Learn more about Potentially Eligible Properties and their processing procedures",
+    "file": "data/city_files/St_Petersburg_FL/5769e0_List_of_Potentially_Eligible_Properties.pdf",
+    "rows": 138,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.stpete.org/Business/Planning & Zoning/Historic Preservation/Design_Guidelines_for_Historic_Properties.pdf?t=202202101350590",
+    "text": "St. Petersburg Design Guidelines for Historic Properties",
+    "file": "data/city_files/St_Petersburg_FL/54e67c_Design_Guidelines_for_Historic_Properties.pdf",
+    "rows": 519,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.stpete.org/Business/Planning & Zoning/Historic Preservation/Resource and Research Guide.pdf?t=202203300911260",
+    "text": "A Resident's Guide to Researching Historic Property",
+    "file": "data/city_files/St_Petersburg_FL/6d047c_Resource_and_Research_Guide.pdf",
+    "rows": 9,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.stpete.org/Business/Planning & Zoning/Historic Preservation/St_Petersburg_Inventory_Historic_Signs.pdf?t=202106171612100",
+    "text": "St. Petersburg's Historic Signs",
+    "file": "data/city_files/St_Petersburg_FL/c0b9a2_St_Petersburg_Inventory_Historic_Signs.pdf",
+    "rows": 106,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.stpete.org/Business/Planning & Zoning/Historic Preservation/Markers-and-Monuments.pdf?t=202106171613230",
+    "text": "View St. Petersburg’s Markers and Monuments",
+    "file": "data/city_files/St_Petersburg_FL/ee8be4_Markers-and-Monuments.pdf",
+    "rows": 101,
+    "bike_rows": 44
+   },
+   {
+    "url": "https://www.stpete.org/Business/Planning & Zoning/Land Development/16.10.020.1 Matrix December 2023.pdf?t=202312191511550",
+    "text": "16.10.020.1 - MATRIX: USE PERMISSIONS AND PARKING REQUIREMENTS MATRIX AND ZONING MATRIX",
+    "file": "data/city_files/St_Petersburg_FL/b25c36_16.10.020.1_Matrix_December_2023.pdf",
+    "rows": 172,
+    "bike_rows": 52
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Complete Streets/Complete Streets Policy 11-2-15_final_approved.pdf?t=202106212056160",
+    "text": "Complete Streets Policy on November 2, 2015 (#020400)",
+    "file": "data/city_files/St_Petersburg_FL/2d95e8_Complete_Streets_Policy_11-2-15_final_approved.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/parking_transportation/Complete Streets/Council Resolution 2015-540.pdf?t=202106212056340",
+    "text": "Complete Streets City Council Resolution 2015-540",
+    "file": "data/city_files/St_Petersburg_FL/7fc277_Council_Resolution_2015-540.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/240214_St Petersburg Neighborhood Greenways Toolbox_final.pdf?t=202406110917010",
+    "text": "Neighborhood Greenways Toolbox",
+    "file": "data/city_files/St_Petersburg_FL/17a90c_240214_St_Petersburg_Neighborhood_Greenways_Toolbox_final.pdf",
+    "rows": 126,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.stpete.org/Residents/Current Projects/Gas Plant/Questions for Historic Gas Plant Proposers - GPD Restoration Associates.pdf?t=202301091730540",
+    "text": "Response to Clarifying Questions",
+    "file": "data/city_files/St_Petersburg_FL/b15867_Questions_for_Historic_Gas_Plant_Proposers_-_GPD_Restoration_Associate",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.stpete.org/Residents/Current Projects/docs/RFP HGP.pdf?t=202212191556490",
+    "text": "Historic Gas Plant District RFP",
+    "file": "data/city_files/St_Petersburg_FL/3eff90_RFP_HGP.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.stpete.org/Residents/Current Projects/docs/Trop Site Road Map - VHB.pdf?t=202104231439490",
+    "text": "view the Roadmap",
+    "file": "data/city_files/St_Petersburg_FL/5ad3bc_Trop_Site_Road_Map_-_VHB.pdf",
+    "rows": 194,
+    "bike_rows": 11
+   }
+  ],
+  "portals": {
+   "https://geohub-csp.opendata.arcgis.com/": "Visit the GIS Open Data Portal",
+   "https://egis.stpete.org/portal/apps/instant/sidebar/index.html?appid=fb06f8a064984466a0f515a60b765472": "Transportation GIS map",
+   "https://egis.stpete.org/portal/apps/webappviewer/index.html?id=d5db40ab301245b99cdf20eab464e06a": "Pavement Maintenance Map",
+   "https://egis.stpete.org/portal/apps/webappviewer/index.html?id=568fd49870734fc6aa2fd76fac573988": "Historic Preservation Map",
+   "https://egis.stpete.org/portal/apps/webappviewer/index.html?id=f0ff270cad0940a2879b38e955319dfa": "GIS ZONING MAP LOOKUP",
+   "https://egis.stpete.org/portal/apps/instant/sidebar/index.html?appid=9e13395bdba5473b9bee982805cd7b00": "View the Pavement Maintenance Map",
+   "https://egis.stpete.org/portal/apps/experiencebuilder/experience/?id=7c46d0ac1e724aceac1585b488c46b1f": "Trash Collection & Recycling Map",
+   "https://egis.stpete.org/portal/apps/webappviewer/index.html?id=d7275c18fef744518170ebda58cf0920": "here",
+   "https://experience.arcgis.com/experience/7dcd630a20074f83a65ac3ca5b628108": "Stormwater Review and Appeals Portal"
+  }
+ },
+ "The Bronx": {
+  "files": [],
+  "portals": {}
+ },
+ "Aurora": {
+  "files": [
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Business Services/Planning/Transportation Planning/Learn About Biking in Aurora.pdf",
+    "text": "Learn About Biking in Aurora (printable, with map)",
+    "file": "data/city_files/Aurora/b896e0_Learn_About_Biking_in_Aurora.pdf",
+    "rows": 21,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Monthly Parking Agreement p2.pdf",
+    "text": "Terms and conditions",
+    "file": "data/city_files/Aurora/4b8a71_Monthly_Parking_Agreement_p2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/EmployeeParking.pdf",
+    "text": "Terms and Conditions",
+    "file": "data/city_files/Aurora/55e7d6_EmployeeParking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Disabled Pkg Signage App - Fillable.pdf",
+    "text": "Accessible Parking Signage Application/Request Form",
+    "file": "data/city_files/Aurora/6471ad_Disabled_Pkg_Signage_App_-_Fillable.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Off-St Pkg Rules & Regs - MASTER FINAL - 7-30-19.pdf",
+    "text": "AMC Off-Street Parking Management Rules and Regulations",
+    "file": "data/city_files/Aurora/ddc2d2_Off-St_Pkg_Rules_Regs_-_MASTER_FINAL_-_7-30-19.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/AMC Campus Visitor map.pdf",
+    "text": "Visitor Parking Map of the AMC campus",
+    "file": "data/city_files/Aurora/05a2fb_AMC_Campus_Visitor_map.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/AMC Campus Employee map.pdf",
+    "text": "campus map of designated employee parking locations",
+    "file": "data/city_files/Aurora/c6a853_AMC_Campus_Employee_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Tips-to-Avoid-Parking-Tickets_Rev03-2024 - FINAL.pdf",
+    "text": "click here",
+    "file": "data/city_files/Aurora/17c3e6_Tips-to-Avoid-Parking-Tickets_Rev03-2024_-_FINAL.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/2010_Model_Traffic_Code.pdf",
+    "text": "View the Model Traffic Code for Colorado.",
+    "file": "data/city_files/Aurora/e6a7a1_2010_Model_Traffic_Code.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/Off-St%20Pkg%20Rules%20&%20Regs%20-%20MASTER%20FINAL%20-%207-30-19.pdf",
+    "text": "View Rules and Regulations Pertaining to the Administration of Off-Street Parking Management for City Owned, Operated, o",
+    "file": "data/city_files/Aurora/7f4129_Off-St_20Pkg_20Rules_20_20Regs_20-_20MASTER_20FINAL_20-_207-30-19.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/AMC%20Off-St%20Pkg%20Rules%20&%20Regs%20-%20Effective%20Aug%202019.pdf",
+    "text": "View the Aurora Municipal Center Off-Street Parking Management Rules & Regulations.",
+    "file": "data/city_files/Aurora/de4c93_AMC_20Off-St_20Pkg_20Rules_20_20Regs_20-_20Effective_20Aug_202019.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/CO%20Driver%20Handbook.pdf",
+    "text": "View the Colorado Driver Handbook.",
+    "file": "data/city_files/Aurora/5ef326_CO_20Driver_20Handbook.pdf",
+    "rows": 59,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/ParkingViolation.pdf",
+    "text": "View the 2024 Parking Violation Schedule",
+    "file": "data/city_files/Aurora/7f78db_ParkingViolation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Accessible Parking Etiquette - FINAL 6-6-19.pdf",
+    "text": "Do’s, Don’ts, and Reminders",
+    "file": "data/city_files/Aurora/f233e2_Accessible_Parking_Etiquette_-_FINAL_6-6-19.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Application Form DR2219.pdf",
+    "text": "Persons With Disabilities Parking Privileges Application (Form DR 2219)",
+    "file": "data/city_files/Aurora/335be4_Application_Form_DR2219.pdf",
+    "rows": 31,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Compliance Standards.pdf",
+    "text": "Compliance Standards for size of parking stalls and quantity required",
+    "file": "data/city_files/Aurora/2b5aaa_Compliance_Standards.pdf",
+    "rows": 19,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/SharedMobilitySmallVehiclesLicenseRegulations.pdf",
+    "text": "Shared Mobility Small Devices License Program Rules & Regulations",
+    "file": "data/city_files/Aurora/2ef759_SharedMobilitySmallVehiclesLicenseRegulations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/SharedMobilityLicenseApplication .pdf",
+    "text": "Shared Mobility Small Devices License Application",
+    "file": "data/city_files/Aurora/5c06ae_SharedMobilityLicenseApplication_.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Parking & Mobility Program/Ordinance changing vehicle impounds - Amended FINAL 9-28-23.pdf",
+    "text": "link",
+    "file": "data/city_files/Aurora/cb8377_Ordinance_changing_vehicle_impounds_-_Amended_FINAL_9-28-23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Parking%20&%20Mobility%20Program/PM-Safety-Matters-Flyer.pdf",
+    "text": "5 Ways to protect a child from dying in a HOT PARKED CAR",
+    "file": "data/city_files/Aurora/502ee5_PM-Safety-Matters-Flyer.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Things%20to%20Do/Parks%20Open%20Spaces/Sports%20Park/Aurora%20Sports%20Park%20MAP%202026.pdf",
+    "text": "Aurora Sports Park Map",
+    "file": "data/city_files/Aurora/6f5f24_Aurora_20Sports_20Park_20MAP_202026.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_1881137/File/Departments/PROS/Trail%20Maps/PineyCreekTrail8.5x11.pdf",
+    "text": "Piney Creek",
+    "file": "data/city_files/Aurora/6b5b5a_PineyCreekTrail8.5x11.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/Image/City Hall/Map/Main/CAD Data Submittal Standards_2026.pdf",
+    "text": "CAD Submittal Standards",
+    "file": "data/city_files/Aurora/53342f_CAD_Data_Submittal_Standards_2026.pdf",
+    "rows": 158,
+    "bike_rows": 24
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Business Services/Planning/Transportation Planning/Learn About Biking in Aurora.pdf",
+    "text": "Learn About Biking in Aurora (printable, with map)",
+    "file": "data/city_files/Aurora/30638e_Learn_About_Biking_in_Aurora.pdf",
+    "rows": 21,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Piney Creek Culvert Map.pdf",
+    "text": "",
+    "file": "data/city_files/Aurora/660eec_Piney_Creek_Culvert_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Transportation%20Priority%20Projects%20Map%20Completed_Final.pdf",
+    "text": "",
+    "file": "data/city_files/Aurora/cf9f3b_Transportation_20Priority_20Projects_20Map_20Completed_Final.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Proof-2_Jewell Avenue and Genoa Street Widening_Flyer_PWD_11x8.5 (1).pdf",
+    "text": "COMPLETE: Jewell Avenue and Genoa Street Widening (Before and After View)",
+    "file": "data/city_files/Aurora/ca4a15_Proof-2_Jewell_Avenue_and_Genoa_Street_Widening_Flyer_PWD_11x8.5_1_.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Proof-1_Yale and Xanadu Intersection Reconstruction and Signalization_Flyer_PWD_11x8.5.pdf",
+    "text": "COMPLETE: Yale and Xanadu Intersection Reconstruction and Signalization (Before and After View)",
+    "file": "data/city_files/Aurora/19771d_Proof-1_Yale_and_Xanadu_Intersection_Reconstruction_and_Signalization_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/P3_Alameda Parkway and Airport Boulevard_Buckley Road Intersection Improvements_Flyer_PWD_11x8.5.pdf",
+    "text": "COMPLETE: Alameda Parkway and Airport Boulevard/Buckley Road Intersection Improvements (Before and After View)",
+    "file": "data/city_files/Aurora/389985_P3_Alameda_Parkway_and_Airport_Boulevard_Buckley_Road_Intersection_Imp",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Business Services/Economic/Transportation Planning/Parker Quincy Road Study/025122.pdf",
+    "text": "Pedestrian & Bicycle Travel Patterns",
+    "file": "data/city_files/Aurora/489298_025122.pdf",
+    "rows": 51,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Business Services/Economic/Transportation Planning/Parker Quincy Road Study/026540.pdf",
+    "text": "Potential Bicyclist Pedestrian Treatments",
+    "file": "data/city_files/Aurora/9804e4_026540.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Potomac Sidewalk Undergrounding Utility ProjectLimits16320-02.pdf",
+    "text": "View the project area map.",
+    "file": "data/city_files/Aurora/3b43d8_Potomac_Sidewalk_Undergrounding_Utility_ProjectLimits16320-02.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_1881137/File/News%20Items/North%20East%20Aurora%20Road%20Closures.pdf",
+    "text": "View the detour map for guidance on how to travel around the existing hazards.",
+    "file": "data/city_files/Aurora/f88ef1_North_20East_20Aurora_20Road_20Closures.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/17th%20Ave%20Crime%20Stats.pdf",
+    "text": "loitering and crime",
+    "file": "data/city_files/Aurora/a7f24e_17th_20Ave_20Crime_20Stats.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Gartrell%20Detour%20Map_Flattened.pdf",
+    "text": "View the map",
+    "file": "data/city_files/Aurora/600d54_Gartrell_20Detour_20Map_Flattened.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation & Parking Resources/Wilson_GunGlub_CorridorMap_260611.pdf",
+    "text": "Gun Club Road Corridor Improvements Project Map",
+    "file": "data/city_files/Aurora/1545d2_Wilson_GunGlub_CorridorMap_260611.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.auroragov.org/UserFiles/Servers/Server_1881137/File/Residents/Transportation%20&%20Parking%20Resources/Wilson_GunClubRoad_MultimodalImprovements_260611.pdf",
+    "text": "",
+    "file": "data/city_files/Aurora/10a8d4_Wilson_GunClubRoad_MultimodalImprovements_260611.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://auroraco.maps.arcgis.com/home/index.html": "Click for full Aurora Maps ArcGIS Online Site",
+   "https://data-auroraco.opendata.arcgis.com/": "Aurora Open Data",
+   "https://auroraco.maps.arcgis.com/home/group.html?id=177b5c29d60f45e9bd678cab147aa625&start=1&view=list": "Click Here for PDF Maps",
+   "https://experience.arcgis.com/experience/8c9ba519d701482a93d5bbac843e4afc": "Property Information Map",
+   "https://storymaps.arcgis.com/stories/a1c484a8dcc944128d1a6f77e43f016f": "Development Tour Story Map",
+   "https://experience.arcgis.com/experience/9af41ebe87d24cf3bc02f66a1580995d": "Survey Control",
+   "https://experience.arcgis.com/experience/96cd245fc0d842b084bd4d813625d96f": "Aurora Businesses",
+   "https://experience.arcgis.com/experience/63dbc01f15c949d0ab575cc325347fb0/": "City of Aurora Trails Map",
+   "https://experience.arcgis.com/experience/cb1243760c1f4801be5c4209015f6d9c/": "Aurora Trees",
+   "https://experience.arcgis.com/experience/da859163a727404caacf6ddb602d7e98": "Active Development",
+   "https://experience.arcgis.com/experience/f8fc69063c9f415eb25757777caece2f": "Liquor Licenses Map",
+   "https://experience.arcgis.com/experience/486173825cba41079491853ff7e159fa": "Annexations and IGAs",
+   "https://experience.arcgis.com/experience/cf6cc7f425eb43a78780388a5e27bf67": "Developer Map",
+   "https://experience.arcgis.com/experience/70f21fb354534d89a42993a3e6db5e0f": "NFHL Flood Map",
+   "https://experience.arcgis.com/experience/cf21fb8b1ed7495da64e424dc8e1b5c8": "Neighborhoods Map",
+   "https://experience.arcgis.com/experience/25e68ba47119437cb4bf6bdeea6fbea4": "Aurora Building Permits",
+   "https://experience.arcgis.com/experience/3d68ae17a1854bbb8f1fdca03ba2fbad": "Aurora Code Enforcement",
+   "https://experience.arcgis.com/experience/078ba001cd384d63ba20d6e8c3ad1161": "Zoning Map",
+   "https://experience.arcgis.com/experience/5a1f496ec38746bf8e90867c6966e295": "City Council Wards Map",
+   "https://experience.arcgis.com/experience/f6f5ac4a09fd4bb7ac07492dc44a11fc": "Affordable Housing Investment",
+   "https://experience.arcgis.com/experience/2aecc051cb984912a616757c99d3dcab": "Veteran Population Map",
+   "https://experience.arcgis.com/experience/f6b38ad40bb543d88a56a2bc14f1498a": "Online Bike Map",
+   "https://www.arcgis.com/apps/dashboards/3b45da6b9cb541acafa4263010c89fee": "Trail & Park Closures",
+   "https://auroraco.maps.arcgis.com/home/group.html?sortField=numviews&sortOrder=desc&tags=Data+Demographics&id=84b561bb156f427c87d98b8d144c563e": "Data & Demographic Maps",
+   "https://auroraco.maps.arcgis.com/home/gallery.html": "Click for full Aurora Maps Home Page",
+   "https://experience.arcgis.com/experience/900a104a5d424a5bb5c4dfeda18dd370/page/Page": "Wastewater and Stormwater Assets",
+   "https://survey123.arcgis.com/share/6c39e1f0e12a46a7be78c6be422a3c1e?portalUrl=https://AuroraCo.maps.arcgis.com": "Aurora Water GIS Data Request Form",
+   "https://experience.arcgis.com/experience/aa9ae4fa5dbc4b7cb165100b52017f09": "Aurora Transit Oriented Developments",
+   "https://experience.arcgis.com/experience/b30a4450a1aa4ec998584de5c1b44db4": "Home Owners Associations Map",
+   "https://experience.arcgis.com/experience/782b4fc30a3049b4824cfa9bf435fcb6": "Aurora City Limits"
+  }
+ },
+ "Irving": {
+  "files": [
+   {
+    "url": "https://assets.simpleviewinc.com/sv-visit-irving/image/upload/v1/clients/irving/8_5X11_Map_Connector_005b7c57-4add-4448-b683-b7e3fe5a7b47.pdf",
+    "text": "route map",
+    "file": "data/city_files/Irving/30726c_8_5X11_Map_Connector_005b7c57-4add-4448-b683-b7e3fe5a7b47.pdf",
+    "rows": 17,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/sv-visit-irving/image/upload/v1/clients/irving/Parking_Map_1_2026_V7_28c8543a-3eb1-4c25-ac9a-938a09ea32d3.pdf",
+    "text": "here",
+    "file": "data/city_files/Irving/56b0d1_Parking_Map_1_2026_V7_28c8543a-3eb1-4c25-ac9a-938a09ea32d3.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {}
+ },
+ "Vancouver": {
+  "files": [
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2025/03/EssentialsofBikeParking_FINAL.pdf",
+    "text": "The following styles of bicycle racks may be used",
+    "file": "data/city_files/Vancouver/8a3778_EssentialsofBikeParking_FINAL.pdf",
+    "rows": 30,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2025/03/UnacceptableShortTermBPAPBPbooklet.pdf",
+    "text": "The following styles of bicycle racks do not meet City requirements",
+    "file": "data/city_files/Vancouver/3c0c57_UnacceptableShortTermBPAPBPbooklet.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2026/10/Downtown-Access-Mobility-Plan_2025.pdf",
+    "text": "Parking Plan",
+    "file": "data/city_files/Vancouver/f7f05f_Downtown-Access-Mobility-Plan_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2026/04/Parking-Ticket-Appeal-Form-2026.pdf",
+    "text": "appeal form",
+    "file": "data/city_files/Vancouver/f4a4de_Parking-Ticket-Appeal-Form-2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2026/01/Waterfront-Park-Reservation-Packet.pdf",
+    "text": "2026 Vancouver Waterfront Park Rental Rates",
+    "file": "data/city_files/Vancouver/b81abe_Waterfront-Park-Reservation-Packet.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofvancouver.us/wp-content/uploads/2023/08/Culture-Arts-and-Heritage-Plan-2018-FINAL-sm.pdf",
+    "text": "Culture, Arts and Heritage Plan",
+    "file": "data/city_files/Vancouver/4eed87_Culture-Arts-and-Heritage-Plan-2018-FINAL-sm.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T02-01D.pdf",
+    "text": "T02-01D – Sidewalk Replacement Minimum Criteria to Ensure ADA Compliance and Repair Options",
+    "file": "data/city_files/Vancouver/5ec773_T02-01D.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T02-02.pdf",
+    "text": "T02-02 – Heritage Sidewalk",
+    "file": "data/city_files/Vancouver/622aaa_T02-02.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T03-25.pdf",
+    "text": "T03-25 – Electrical Outlet Detail for Tree Well",
+    "file": "data/city_files/Vancouver/8e8102_T03-25.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T06-01.pdf",
+    "text": "T06-01 – Fourth Plain Boulevard “Village” Sidewalk",
+    "file": "data/city_files/Vancouver/b719a2_T06-01.pdf",
+    "rows": 18,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T06-02.pdf",
+    "text": "T06-02 – Fourth Plain Boulevard “Village” Corner without Bus Stop",
+    "file": "data/city_files/Vancouver/7d845c_T06-02.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T06-03.pdf",
+    "text": "T06-03 – Fourth Plain Boulevard “Village” Corner with Bus Stop",
+    "file": "data/city_files/Vancouver/4a0419_T06-03.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T06-04.pdf",
+    "text": "T06-04 – Fourth Plain Boulevard “Green Necklace” Sidewalk North Side",
+    "file": "data/city_files/Vancouver/7e1834_T06-04.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T06-05.pdf",
+    "text": "T06-05 – Fourth Plain Boulevard “Green Necklace” Sidewalk South Side",
+    "file": "data/city_files/Vancouver/ec2161_T06-05.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T06-06.pdf",
+    "text": "T06-06 – Fourth Plain Boulevard “Commercial” Street Sidewalk",
+    "file": "data/city_files/Vancouver/336c95_T06-06.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T06-07.pdf",
+    "text": "T06-07 – Fourth Plain Boulevard Paver at Tree Well and Planter Strip",
+    "file": "data/city_files/Vancouver/fe55e8_T06-07.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T07-03B.pdf",
+    "text": "T07-03B – Typical Connecting Public Street with Pathways and Lighting",
+    "file": "data/city_files/Vancouver/5cf1d4_T07-03B.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-00.pdf",
+    "text": "T08-00 – Heights District Redevelopment – Key Map",
+    "file": "data/city_files/Vancouver/6e7ff8_T08-00.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-01.pdf",
+    "text": "T08-01 – Heights District Redevelopment – Mill Plain Boulevard",
+    "file": "data/city_files/Vancouver/edd3a4_T08-01.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-02.pdf",
+    "text": "T08-02 – Heights District Redevelopment – Mill Plain Boulevard Overview",
+    "file": "data/city_files/Vancouver/ad63d6_T08-02.pdf",
+    "rows": 13,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-03.pdf",
+    "text": "T08-03 – Heights District Redevelopment – MacArthur Boulevard",
+    "file": "data/city_files/Vancouver/bb17dd_T08-03.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-04.pdf",
+    "text": "T08-04 – Heights District Redevelopment – MacArthur Boulevard Overview",
+    "file": "data/city_files/Vancouver/1c7fee_T08-04.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-07.pdf",
+    "text": "T08-07 – Heights District Redevelopment – Loop Retail Street",
+    "file": "data/city_files/Vancouver/2b20cb_T08-07.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-08.pdf",
+    "text": "T08-08 – Heights District Redevelopment – Loop Retail Street Overview",
+    "file": "data/city_files/Vancouver/9ef9a0_T08-08.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-11.pdf",
+    "text": "T08-11 – Heights District Redevelopment – Loop Residential Street",
+    "file": "data/city_files/Vancouver/833337_T08-11.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-12.pdf",
+    "text": "T08-12 – Heights District Redevelopment – Loop Residential Street Overview",
+    "file": "data/city_files/Vancouver/0e5faf_T08-12.pdf",
+    "rows": 14,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-13.pdf",
+    "text": "T08-13 – Heights District Redevelopment – Internal Street Angled Parking",
+    "file": "data/city_files/Vancouver/d758cd_T08-13.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-14.pdf",
+    "text": "T08-14 – Heights District Redevelopment – Internal Street Angled Parking Overview",
+    "file": "data/city_files/Vancouver/1ede4c_T08-14.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-24.pdf",
+    "text": "T08-24 – Heights District Redevelopment – Deep Retail Loop Bioretention",
+    "file": "data/city_files/Vancouver/5551e2_T08-24.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-27.pdf",
+    "text": "T08-27 – Heights District Redevelopment – Bike Lane Buffers",
+    "file": "data/city_files/Vancouver/920e1d_T08-27.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-31.pdf",
+    "text": "T08-31 – Waterfront / Heights District Redevelopment – LED Street Light Standard",
+    "file": "data/city_files/Vancouver/3bbe0d_T08-31.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T08-32.pdf",
+    "text": "T08-32 – Heights District Redevelopment – Cycle Track",
+    "file": "data/city_files/Vancouver/db9fd9_T08-32.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T10-03.pdf",
+    "text": "T10-03 – Local Access and Loop Road Half Street Construction",
+    "file": "data/city_files/Vancouver/d8ff64_T10-03.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T10-04.pdf",
+    "text": "T10-04 – 6-lane Principal Arterial with Center Left-turn and Bike Lanes",
+    "file": "data/city_files/Vancouver/beb1ff_T10-04.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T10-06.pdf",
+    "text": "T10-06 – 4-lane Principal Arterial with Center Left-turn and Bike Lanes",
+    "file": "data/city_files/Vancouver/e4b57b_T10-06.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T10-08.pdf",
+    "text": "T10-08 – 4-lane Minor Arterial with Center Left-turn and Bike Lanes",
+    "file": "data/city_files/Vancouver/b45ae5_T10-08.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T10-10.pdf",
+    "text": "T10-10 – 4-lane Minor Arterial with Bike Lanes",
+    "file": "data/city_files/Vancouver/625ab4_T10-10.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T10-12.pdf",
+    "text": "T10-12 – 3-lane Collector / Minor Arterial with Bike Lanes",
+    "file": "data/city_files/Vancouver/9677b5_T10-12.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T10-16.pdf",
+    "text": "T10-16 – Loop and Cul-de-sac",
+    "file": "data/city_files/Vancouver/d346c3_T10-16.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2024/03/T10-24A.pdf",
+    "text": "T10-24A – Narrow Lot Street Plan Detail",
+    "file": "data/city_files/Vancouver/446bbe_T10-24A.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://city-of-vancouver-wa-geo-hub-cityofvancouver.hub.arcgis.com/apps/fa72863a21ea42c3b114d6e8a2be706a/explore": "Public Art Map",
+   "https://city-of-vancouver-wa-geo-hub-cityofvancouver.hub.arcgis.com/": "Maps",
+   "https://www.cityofvancouver.us/open-data-hub/": "page Open Data Hub Vancouver’s Open Data Hub provides open access to publicly available data published by City departmen",
+   "https://survey123.arcgis.com/share/15cab9e6144a4d5ea4de72ff4af57d96": "Bike racks suggestion form",
+   "https://experience.arcgis.com/experience/ab57ca0d6bb04984b608ad8c8a22d226": "interactive parking map",
+   "https://experience.arcgis.com/experience/ab57ca0d6bb04984b608ad8c8a22d226/page/Pay-to-Park-Spaces": "Public Parking Map",
+   "https://experience.arcgis.com/experience/14d26632fd96447294468896c0ce564d/": "Public Art",
+   "https://experience.arcgis.com/experience/d5d8c3d2271c48e0919435b70ad08b00/page/Explore-Main-Street/https:/": "app with parking and business information",
+   "https://experience.arcgis.com/experience/1619dcb223d14ab7852085bee6394a3c/": "Collision Dashboard",
+   "https://gis.clark.wa.gov/portal/apps/webappviewer/index.html?id=7acb756876004da7a6207748e82b5111": "Vancouver/Clark County Bike Map",
+   "https://gis.oregonmetro.gov/bikethere/": "Bike There!",
+   "https://city-of-vancouver-wa-geo-hub-cityofvancouver.hub.arcgis.com": "Open Data Hub",
+   "http://storymaps.arcgis.com/stories/1544bdc2b5e64e98a918103c5642d497": "Take a look back at the past 10 years of Vancouver’s Traffic Calming Program",
+   "https://experience.arcgis.com/experience/ab57ca0d6bb04984b608ad8c8a22d226/page/Reservable-Parking-Spaces": "Interactive Parking Map",
+   "https://experience.arcgis.com/experience/ab57ca0d6bb04984b608ad8c8a22d226/page/Parking-Main-Page/": "City’s parking map to plan your trip",
+   "http://gis.clark.wa.gov/mapsonline/index.cfm": "MapsOnline"
+  }
+ },
+ "Nevşehir": {
+  "files": [],
+  "portals": {}
+ },
+ "Coral Springs": {
+  "files": [
+   {
+    "url": "https://www.coralsprings.gov/files/assets/public/v/1/documents/parks-amp-recreation/bus-routes-map-remediated-20240321.pdf",
+    "text": "View Routes",
+    "file": "data/city_files/Coral_Springs/7eb8e6_bus-routes-map-remediated-20240321.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.coralsprings.gov/files/assets/public/v/1/documents/building/building-forms/065.0-home-repair-grant-program-submittal-checklist-ada.pdf",
+    "text": "065.0-Home-Repair-Grant-Program-Submittal-Checklist-ADA",
+    "file": "data/city_files/Coral_Springs/50c6e3_065.0-home-repair-grant-program-submittal-checklist-ada.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cosp.maps.arcgis.com/apps/instant/basic/index.html?appid=e6614665a6d0408fab20159c2ed23026": "View",
+   "https://survey123.arcgis.com/share/0750eaf2de2a4f73b3af7c4daa41960d": "Take a Quick Survey",
+   "https://browardmpo.maps.arcgis.com/apps/webappviewer/index.html?id=37e455c3e5554ca6b9ac34f5b59d31c1": "View"
+  }
+ },
+ "Evansville": {
+  "files": [],
+  "portals": {
+   "https://evansvillegov.org/open-data": "",
+   "https://experience.arcgis.com/experience/df05ebcfb17f439c8885ab7affb6d10e": "Zoning Map",
+   "https://experience.arcgis.com/experience/9c0ba2a88eff41b38267aa72a1cc58fa?draft=true": "Site Review - Project Status Map"
+  }
+ },
+ "Centennial": {
+  "files": [
+   {
+    "url": "https://www.centennialco.gov/files/sharedassets/public/v/2/documents/public-safety/e-bike-flyer-final-8.20.26-ada.pdf",
+    "text": "Educational Flyer (PDF, 1MB)",
+    "file": "data/city_files/Centennial/e33cad_e-bike-flyer-final-8.20.26-ada.pdf",
+    "rows": 14,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.centennialco.gov/files/sharedassets/public/v/3/documents/public-works/colorado-euclid-report-508-11.08.24.pdf",
+    "text": "Colorado Boulevard and Euclid Avenue Study (PDF, 18MB)",
+    "file": "data/city_files/Centennial/fd5dcd_colorado-euclid-report-508-11.08.24.pdf",
+    "rows": 303,
+    "bike_rows": 35
+   },
+   {
+    "url": "https://www.centennialco.gov/files/sharedassets/public/v/5/documents/public-works/parking-permit-application-rev-ada.pdf",
+    "text": "parking permit application (PDF, 139KB)",
+    "file": "data/city_files/Centennial/52a529_parking-permit-application-rev-ada.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.centennialco.gov/files/sharedassets/public/v/3/documents/residents/electric-vehicle-charging/ev-vision-support-v2.pdf",
+    "text": "Learn more about Xcel Energy's Electric Vehicle Vision (PDF, 200KB)",
+    "file": "data/city_files/Centennial/713ccf_ev-vision-support-v2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://open-centennial.opendata.arcgis.com/apps/95455f12814d42ecbc972009ad704f43/explore": "Trails and Recreation Tour",
+   "https://centennial.maps.arcgis.com/apps/ZoneLookup/index.html?appid=16384b6aea6046d6826d14e43259ff20": "Property Search",
+   "https://open-centennial.opendata.arcgis.com/": "Maps and Open Data portal",
+   "https://centennial.maps.arcgis.com/apps/Embed/index.html?webmap=b431b5cfe53f4a28a0a14bc3c3fb78ad&extent=-105.1255,39.4991,-104.6184,39.7049&zoom=true&scale=true&search=true&searchextent=false&basemap_toggle=true&alt_basemap=hybrid&disable_scroll=true&theme=light": "View larger map",
+   "https://centennial.maps.arcgis.com/apps/Embed/index.html?webmap=4c59d956e2384bb6898085030d2c347f&extent=-105.0779,39.5002,-104.5708,39.706&zoom=true&scale=true&basemap_toggle=true&alt_basemap=topo&disable_scroll=true&theme=light": "View larger map",
+   "http://centennial.maps.arcgis.com/apps/webappviewer/index.html?id=49c8e700512246498e23ee15e7a06e88": "Centennial Traffic Signals",
+   "http://open-centennial.opendata.arcgis.com/app/9f3417af751447939cab20781b5ddded": "interactive map",
+   "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fcentennial.maps.arcgis.com%2fapps%2finstant%2fbasic%2findex.html%3fappid%3d3ee65ae01a144f5b9e2c1e6c7fae2ab6&c=E,1,gEBFaIooV6g6e-hr_5JhXgDvc2TW2WTPNYkhLfqZL9DOVgR_8CjxEE3KFjYZnxVvndmjiA4fElI-z9Nq9nZsgAIwUzv1DWf_CSi6o10oWy4,&typo=1": "designated truck routes",
+   "https://storymaps.arcgis.com/stories/7f16d9792d10456f8590d3dac8a9840d": "Adopt-a-Street Program Map",
+   "https://centennial.maps.arcgis.com/apps/PublicInformation/index.html?appid=beb50fa866f04f3699b7c642095093d5": "Right-of-Way Maintenance Map",
+   "https://centennial.maps.arcgis.com/apps/instant/basic/index.html?appid=57075ace68434e95b3bb557a679b1832": "Traffic Counts Map",
+   "https://centennial.maps.arcgis.com/apps/PublicInformation/index.html?appid=0687504d932349faa5b97cd84184026a": "Snow Removal Map",
+   "https://open-centennial.opendata.arcgis.com/apps/92826c00f9e44991af371bf0ab11c0a4/explore": "Explore our Interactive Park Map",
+   "https://open-centennial.opendata.arcgis.com/apps/53b47308e18f452482903dce10a31cd3/explore": "street sweeping schedule",
+   "https://sspr.maps.arcgis.com/apps/webappviewer/index.html?id=27fb075d4a6346d598dc29b553c3c288&find=David%20A.%20Lorenz%20Regional%20Park": "David Lorenz Regional Park"
+  }
+ },
+ "Nampa": {
+  "files": [],
+  "portals": {}
+ },
+ "Bellingham": {
+  "files": [
+   {
+    "url": "https://cob.org/wp-content/uploads/02870.04-bike-rack-saddle-type.pdf",
+    "text": "Parks Design Standard 02870.04 Bike Rack Saddle Type [E]",
+    "file": "data/city_files/Bellingham/85625e_02870.04-bike-rack-saddle-type.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2013-padden-mt-bike-duathlon.pdf",
+    "text": "2013 (PDF)",
+    "file": "data/city_files/Bellingham/350858_2013-padden-mt-bike-duathlon.pdf",
+    "rows": 33,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2004-padden-mt-bike-duathlon.pdf",
+    "text": "2004 (PDF)",
+    "file": "data/city_files/Bellingham/ab5143_2004-padden-mt-bike-duathlon.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2003-padden-mt-bike-duathlon.pdf",
+    "text": "2003 (PDF)",
+    "file": "data/city_files/Bellingham/0f3486_2003-padden-mt-bike-duathlon.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2002-padden-mt-bike-duathlon.pdf",
+    "text": "2002 (PDF)",
+    "file": "data/city_files/Bellingham/38d831_2002-padden-mt-bike-duathlon.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2005-padden-road-bike-duathlon.pdf",
+    "text": "2005 (PDF)",
+    "file": "data/city_files/Bellingham/bdf85c_2005-padden-road-bike-duathlon.pdf",
+    "rows": 112,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2004-padden-road-bike-duathlon.pdf",
+    "text": "2004 (PDF)",
+    "file": "data/city_files/Bellingham/2c2514_2004-padden-road-bike-duathlon.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2003-padden-road-bike-duathlon.pdf",
+    "text": "2003 (PDF)",
+    "file": "data/city_files/Bellingham/56859d_2003-padden-road-bike-duathlon.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2012-klicks-mt-bike-duathlon.pdf",
+    "text": "2012 (PDF)",
+    "file": "data/city_files/Bellingham/059c48_2012-klicks-mt-bike-duathlon.pdf",
+    "rows": 51,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2011-mt-bike-duathlon.pdf",
+    "text": "2011 (PDF)",
+    "file": "data/city_files/Bellingham/b129db_2011-mt-bike-duathlon.pdf",
+    "rows": 61,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2010-runningshoes-mt-bike-duathlon.pdf",
+    "text": "2010 (PDF)",
+    "file": "data/city_files/Bellingham/843ca3_2010-runningshoes-mt-bike-duathlon.pdf",
+    "rows": 79,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2009-runningshoes-mt-bike-duathlon.pdf",
+    "text": "2009 (PDF)",
+    "file": "data/city_files/Bellingham/8846a3_2009-runningshoes-mt-bike-duathlon.pdf",
+    "rows": 89,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2008-runningshoes-mt-bike-duathlon.pdf",
+    "text": "2008 (PDF)",
+    "file": "data/city_files/Bellingham/b04bc5_2008-runningshoes-mt-bike-duathlon.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2007-runningshoes-mt-bike-duathlon.pdf.pdf",
+    "text": "2007 (PDF)",
+    "file": "data/city_files/Bellingham/9511c9_2007-runningshoes-mt-bike-duathlon.pdf.pdf",
+    "rows": 83,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2006-runningshoes-mt-bike-duathlon.pdf",
+    "text": "2006 (PDF)",
+    "file": "data/city_files/Bellingham/f2b2f6_2006-runningshoes-mt-bike-duathlon.pdf",
+    "rows": 88,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2002-runningshoes-mnt-bike-duathlon.pdf",
+    "text": "2002 (PDF)",
+    "file": "data/city_files/Bellingham/ef9ed2_2002-runningshoes-mnt-bike-duathlon.pdf",
+    "rows": 49,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/2001-runningshoes-mnt-bike-duathlon.pdf",
+    "text": "2001 (PDF)",
+    "file": "data/city_files/Bellingham/71a712_2001-runningshoes-mnt-bike-duathlon.pdf",
+    "rows": 39,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/COB_BikeMap.pdf",
+    "text": "Bike Routes​ (print version)",
+    "file": "data/city_files/Bellingham/a4deb1_COB_BikeMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Bicycle-Traffic-Laws.pdf",
+    "text": "Bicycle Traffic Laws",
+    "file": "data/city_files/Bellingham/f301e5_Bicycle-Traffic-Laws.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/PaidParkingAreasFairhaven-2026_0831.pdf",
+    "text": "Paid Parking Areas Map – Fairhaven",
+    "file": "data/city_files/Bellingham/66f13b_PaidParkingAreasFairhaven-2026_0831.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/wwu-residential-parking-zones.pdf",
+    "text": "Residential Parking Zones (PDF)",
+    "file": "data/city_files/Bellingham/9f4753_wwu-residential-parking-zones.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Parking-Guidelines-3-21-2025.pdf",
+    "text": "Parking Restrictions Guidelines",
+    "file": "data/city_files/Bellingham/7b558a_Parking-Guidelines-3-21-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Parks_Trails_Natural_Areas_2023-0831.pdf",
+    "text": "Map of Parks a​nd Open Spaces (PDF)",
+    "file": "data/city_files/Bellingham/bef6a8_Parks_Trails_Natural_Areas_2023-0831.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Bike-Route-Map.pdf",
+    "text": "Padden Triathlon Bike Map",
+    "file": "data/city_files/Bellingham/9637f4_Bike-Route-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Bay-to-Baker-Map-Squalicum-Creek-Park.pdf",
+    "text": "Bay to Baker Trail and Squalicum Creek Park – detail (PDF)",
+    "file": "data/city_files/Bellingham/d554dc_Bay-to-Baker-Map-Squalicum-Creek-Park.pdf",
+    "rows": 3,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Park-Map-Birchwood-Park.pdf",
+    "text": "Park Map (PDF)",
+    "file": "data/city_files/Bellingham/7a0285_Park-Map-Birchwood-Park.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/bellingham-trail-guide.pdf",
+    "text": "Trail Guide (PDF)",
+    "file": "data/city_files/Bellingham/5e1786_bellingham-trail-guide.pdf",
+    "rows": 131,
+    "bike_rows": 77
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/ES563_Eldridge-Pilot-Project-Report_20250505.pdf",
+    "text": "full report  is available here",
+    "file": "data/city_files/Bellingham/fbf399_ES563_Eldridge-Pilot-Project-Report_20250505.pdf",
+    "rows": 264,
+    "bike_rows": 48
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Park-Map-Cordata-Park-1.pdf",
+    "text": "Park Map (PDF)​",
+    "file": "data/city_files/Bellingham/717d69_Park-Map-Cordata-Park-1.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/6.0_Cordata-and-Julianna-Park-Map.pdf",
+    "text": "Cordata Park and Julianna Park (PDF)",
+    "file": "data/city_files/Bellingham/acb013_6.0_Cordata-and-Julianna-Park-Map.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Bellingham-Bicycle-Plan-Master-Plan-v7-20240422sm.pdf",
+    "text": "2024 Bicycle Master Plan",
+    "file": "data/city_files/Bellingham/3e1612_Bellingham-Bicycle-Plan-Master-Plan-v7-20240422sm.pdf",
+    "rows": 264,
+    "bike_rows": 95
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Bicycle-Traffic-Laws-1.pdf",
+    "text": "Understanding Bicycle Traffic Laws",
+    "file": "data/city_files/Bellingham/ad3733_Bicycle-Traffic-Laws-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/bellingham-bikeways-illustrated.pdf",
+    "text": "Bellingham Bikeways Illustrated",
+    "file": "data/city_files/Bellingham/3e0a39_bellingham-bikeways-illustrated.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Bellingham-Bicycle-Wayfinding-Plan_July.2016.pdf",
+    "text": "Bellingham Bicycle Wayfinding Plan",
+    "file": "data/city_files/Bellingham/02480a_Bellingham-Bicycle-Wayfinding-Plan_July.2016.pdf",
+    "rows": 79,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Bike-Ped-Count-Totals.pdf",
+    "text": "Annual Bicycle and Pedestrian Counts for 2008-2019​ (PDF)",
+    "file": "data/city_files/Bellingham/5c8710_Bike-Ped-Count-Totals.pdf",
+    "rows": 63,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/BACK-IN-ANGLE-PARKING-Flyer-to-Print-FINAL.pdf",
+    "text": "Back-In angled parking printable flyer",
+    "file": "data/city_files/Bellingham/54f0d4_BACK-IN-ANGLE-PARKING-Flyer-to-Print-FINAL.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Permit-Parking-Locations-and-Rates.pdf",
+    "text": "Printable List of Parking Permit Locations and Rates (PDF)",
+    "file": "data/city_files/Bellingham/10a3ee_Permit-Parking-Locations-and-Rates.pdf",
+    "rows": 28,
+    "bike_rows": 14
+   }
+  ],
+  "portals": {
+   "https://data.cob.org/gis/metadata/cart_Airport.html": "Airport",
+   "https://data.cob.org/gis/metadata/Cart_BayLabels.html": "Bay Labels",
+   "https://data.cob.org/gis/metadata/Cart_SectionCorners.html": "Section Corners",
+   "https://data.cob.org/gis/metadata/Cart_TownshipCorners.html": "Township Corners",
+   "https://data.cob.org/gis/metadata/Cart_TownshipLines.html": "Township Lines",
+   "https://data.cob.org/gis/metadata/cart_TranPolygons.html": "Transportation Polygons",
+   "https://data.cob.org/gis/metadata/cart_Trees.html": "Trees",
+   "https://data.cob.org/gis/metadata/env_Coalmines.html": "Coal Mines",
+   "https://data.cob.org/gis/metadata/env_Forest.html": "Forest",
+   "https://data.cob.org/gis/metadata/env_Landmarks.html": "Landmarks",
+   "https://data.cob.org/gis/metadata/env_Landslides_AlluvialFans.html": "Landslides and Alluvial Fans",
+   "https://data.cob.org/gis/metadata/env_ModelToxicControlAct_Sites.html": "Model Toxic Control Act Areas",
+   "https://data.cob.org/gis/metadata/env_PotentialWaveErosion.html": "Potential Wave Erosion",
+   "https://data.cob.org/gis/metadata/env_RestorationSites.html": "Restoration Sites,",
+   "https://data.cob.org/gis/metadata/env_Seeps_Springs.html": "Seeps and Springs",
+   "https://data.cob.org/gis/metadata/env_Shorelines.html": "Shorelines",
+   "https://data.cob.org/gis/metadata/env_Trees.html": "Trees",
+   "https://data.cob.org/gis/metadata/env_Waterbodies.html": "Water Bodies",
+   "https://data.cob.org/gis/metadata/env_SubWatersheds.html": "SubWatersheds",
+   "https://data.cob.org/gis/metadata/env_Watersheds.html": "Watersheds",
+   "https://data.cob.org/gis/metadata/env_Wetlands_1992_Inventory.html": "Wetlands 1992 Inventory",
+   "https://data.cob.org/gis/metadata/env_Wetlands_2003_Inventory.html": "Wetlands 2003 Inventory",
+   "https://data.cob.org/gis/metadata/env_Wetlands_2015_Inventory.html": "Wetlands 2015 Inventory",
+   "https://data.cob.org/gis/metadata/env_Wetlands_2015_MitigationSiteAsmt.html": "Wetlands 2015 Site Assessment",
+   "https://data.cob.org/gis/metadata/env_Wetlands_SiteSpecificDelin.html": "Wetlands Site Specific Delineation",
+   "https://data.cob.org/gis/metadata/env_CMZ_Boundary.html": "CMZ Boundary",
+   "https://data.cob.org/gis/metadata/env_CMZ_ErosionHazardArea.html": "CMZ Erosion Hazard Area",
+   "https://data.cob.org/gis/metadata/env_CMZ_HistoricMigrationZone.html": "CMZ Historic Migration Zone,",
+   "https://data.cob.org/gis/metadata/env_CMZ_QuadReportDataLinks.html": "CMZ Quad Report Data Links",
+   "https://data.cob.org/gis/metadata/D_Streams.html": "D_Streams"
+  }
+ },
+ "Lake Forest": {
+  "files": [],
+  "portals": {}
+ },
+ "Kırklareli": {
+  "files": [],
+  "portals": {}
+ },
+ "Mount Vernon": {
+  "files": [],
+  "portals": {}
+ },
+ "Maple Grove": {
+  "files": [],
+  "portals": {
+   "https://epermits.logis.org/default.aspx": "ePermits",
+   "https://storymaps.arcgis.com/stories/698f66a3da0c4f94b96ef91963599577": "Stormwater A-Go-Go story map",
+   "https://experience.arcgis.com/experience/5a4e91fdf2d944ceb2401276a465244a": "Neighborhood Information",
+   "https://storymaps.arcgis.com/stories/0ff8cb908885409190354c01cb693cde": "Current roadway maintenance interactive map",
+   "https://eproperty.logis.org/": "online portal",
+   "https://epermits.logis.org/home.aspx?city=mg": "ePermits",
+   "https://storymaps.arcgis.com/stories/89a4b94e5e224653975fbc3755dbcaa8": "View the centralized water softening story map and complete the feedback form",
+   "https://experience.arcgis.com/experience/b4e268509f524081a111395e471ec81f": "public crime dashboard",
+   "https://maplegrovemn.maps.arcgis.com/apps/webappviewer/index.html?id=15d61c3d5e19441aa021bc507546d8fd": "Recycling and waste disposal",
+   "https://gis.maplegrovemn.gov/apps/MapleGrove/City/NeighborhoodInformation/?_gl=1*ek4tba*_ga*OTI0NDY4MjMwLjE2MzcxODU5NDk.*_ga_HMMPS3C4EZ*MTY5MzMxNTQ5Ny4zNjIuMC4xNjkzMzE1NDk3LjAuMC4w": "visit Neighborhood Information",
+   "https://maplegrovemn.maps.arcgis.com/apps/webappviewer/index.html?id=70383d8a6a5e45e3ad00ba0418ea79dd": "Adopt-a-Street",
+   "https://maplegrovemn.maps.arcgis.com/apps/dashboards/3e51e8e4045a455ca024ad3edee02507": "View the interactive development dashboard",
+   "https://storymaps.arcgis.com/stories/8a90d4a93df2426ba2fc57861e817bc7": "Emerald ash borer story map",
+   "https://experience.arcgis.com/experience/274c6b5401f24e90b93057f3b71d35eb": "Floodplain interactive web application",
+   "https://maplegrovemn.maps.arcgis.com/apps/instant/basic/index.html?appid=331647528ce3404aa71ed86d6de2593c": "view the street tonnage map",
+   "https://maplegrovemn.maps.arcgis.com/apps/instant/basic/index.html?appid=2c638cf248d54f358955418de86789cb": "Plowed sidewalks and park trails",
+   "https://maplegrovemn.maps.arcgis.com/apps/webappviewer/index.html?id=4777e7b6b08b405a8342df24e6024fd6": "Traffic volumes",
+   "https://storymaps.arcgis.com/stories/54844d7bb8ac474790a02fd6c6373869": "Utility maintenance projects",
+   "https://epermits2.logis.org/cities/mg": "ePermits (contractor and residential permits)",
+   "https://storymaps.arcgis.com/stories/beb22deee5ee41e0b6b249b79b465e6d": "",
+   "https://minnesota.maps.arcgis.com/apps/webappviewer/index.html?id=95ae13000e0b4d53a793423df1176514/": "view Minnesota's electric utility service area map",
+   "https://epermits.logis.org/permits/default.aspx?city=mg&estimator=true": "use the permit fee estimator",
+   "https://experience.arcgis.com/experience/7fe5011120e440ad8c27558aaa652d44": "view listings",
+   "https://experience.arcgis.com/experience/a863e7c993764db7bf83ffc2247389ba": "Projects and phases interactive map",
+   "https://storymaps.arcgis.com/stories/bd8a6f2dbceb4d82b02b10fd2d6fb89a": "View the detour route",
+   "https://maplegrovemn.maps.arcgis.com/apps/webappviewer/index.html?id=1840617134194231ab431dedfa64c0d9": "view the MGFD response map",
+   "https://maplegrovemn.maps.arcgis.com/apps/webappviewer/index.html?id=76835784c40647b882ecd38cf6d2ee6a": "interactive map",
+   "https://survey123.arcgis.com/share/65c9152a37ed41b7902713963b08ce2a": "registering your cameras",
+   "https://maplegrovemn.maps.arcgis.com/apps/webappviewer/index.html?id=48569dfdbab5499b8f54863d3eee531c": "Ash tree treatment and removal map (2018-22)",
+   "https://mnag.maps.arcgis.com/apps/webappviewer/index.html?id=63ebb977e2924d27b9ef0787ecedf6e9": "view the interactive map"
+  }
+ },
+ "Georgetown": {
+  "files": [],
+  "portals": {}
+ },
+ "Döşemealtı": {
+  "files": [],
+  "portals": {}
+ },
+ "Taylorsville": {
+  "files": [],
+  "portals": {}
+ },
+ "Coconut Creek": {
+  "files": [
+   {
+    "url": "https://coconutcreek.net/docs/default-source/community-relations/ambassador-program/ambassador-program-transit-master-plan-02092023.pdf?sfvrsn=51bddc8a_3",
+    "text": "PDF",
+    "file": "data/city_files/Coconut_Creek/10fe9b_ambassador-program-transit-master-plan-02092023.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://coconutcreek.net/opendata": "News & Events",
+   "https://coconutcreek.net/open-data": "News & Events",
+   "https://gis.coconutcreek.net/freeance/Client/PublicAccess1/index.html?appconfig=coconuts": "",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/58753294aa2d41e28cd5c3bef8660361/data": "Instructions for accessing scanned files via the \"GIS on the Web Application\"",
+   "https://storymaps.arcgis.com/collections/f2fe495e1878499a9e412521cc60571b": "",
+   "https://storymaps.arcgis.com/collections/f2fe495e1878499a9e412521cc60571b?item=1": "City Improvements",
+   "https://storymaps.arcgis.com/collections/f2fe495e1878499a9e412521cc60571b?item=2": "Projects Under Construction",
+   "https://storymaps.arcgis.com/collections/f2fe495e1878499a9e412521cc60571b?item=3": "Parks & Trails",
+   "https://storymaps.arcgis.com/collections/f2fe495e1878499a9e412521cc60571b?item=4": "Public Art",
+   "https://storymaps.arcgis.com/collections/54bc30e14edf489b9eaf00345aaab766": "",
+   "https://storymaps.arcgis.com/collections/54bc30e14edf489b9eaf00345aaab766?item=1": "Utilities",
+   "https://storymaps.arcgis.com/collections/54bc30e14edf489b9eaf00345aaab766?item=2": "Street Addresses",
+   "https://storymaps.arcgis.com/collections/54bc30e14edf489b9eaf00345aaab766?item=3": "FEMA Flood Zones",
+   "https://storymaps.arcgis.com/collections/54bc30e14edf489b9eaf00345aaab766?item=4": "City-approved Street Trees",
+   "https://storymaps.arcgis.com/collections/54bc30e14edf489b9eaf00345aaab766?item=5": "City Boundary Locations",
+   "https://storymaps.arcgis.com/collections/8d4fb6cb34a84ba5945cb1df41e6323a": "",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/595db9e7d0b3485eb80c6f8a6bd54cae/data": "Zoning Map",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/34d2100a64554d679922877c5d90352a/data": "Future Land Use",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/428d4206d48e4a72aaf7727557c598a9/data": "Existing Land Use",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/7008ab7924244ba9b677bd1bc51924c0/data": "City-owned Parcels",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/80ee672261234fd2b9975a606a965a0f/data": "North Parcels Map",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/f21617cbd9174bdbb5bf66156736f1c0/data": "Central Parcels Map",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/10beece3c9764adfa7d5479eb7c3d7a3/data": "South Parcels Map",
+   "https://storymaps.arcgis.com/collections/33a8ab1314664f9588cf6a5865b2bd0c": "",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/c7ca4652703e409f85c9def8e81931ac/data": "District Boundary Map",
+   "https://experience.arcgis.com/experience/6e8ba526812145e7a6322b45862bf459": "Interactive Web Map",
+   "https://storymaps.arcgis.com/collections/90589acc8ff44aaf882bed2817d4d18b": "City-Wide Responsibilities",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/10852339c8a84d5aae2ea110fbf16304/data": "Roadway Maintenance",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/af146dc4c9a04ceeaea7d02c077347aa/data": "Streetlight Maintenance",
+   "https://cck.maps.arcgis.com/sharing/rest/content/items/9eca08c726c34d2cad8a37d0b2158430/data": "Code Compliance Zones"
+  }
+ },
+ "Coeur d'Alene": {
+  "files": [
+   {
+    "url": "https://www.cdaid.org/files/Planning/Historic_Preservation/DEMOLITIONREVIEWPROCESSFORSTRUCTURESORIGINALLYCONSTRUCTEDPRIORTO1960.pdf",
+    "text": "here",
+    "file": "data/city_files/Coeur_d_Alene/89217f_DEMOLITIONREVIEWPROCESSFORSTRUCTURESORIGINALLYCONSTRUCTEDPRIORTO1960.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/b0bp3u32/ped-bike-2016-update-to-council.pdf",
+    "text": "2016 Ped/Bike report to council (PDF 2.32 MB)",
+    "file": "data/city_files/Coeur_d_Alene/8fcaad_ped-bike-2016-update-to-council.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/l54bfz0f/2026-02-february-pedestrian-and-bicycle-advisory-committee-agenda.pdf",
+    "text": "February 2026",
+    "file": "data/city_files/Coeur_d_Alene/8c43aa_2026-02-february-pedestrian-and-bicycle-advisory-committee-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/wy3jgh5z/2026-02-april-pedestrian-and-bicycle-advisory-committee-agenda.pdf",
+    "text": "April 2026",
+    "file": "data/city_files/Coeur_d_Alene/13dc65_2026-02-april-pedestrian-and-bicycle-advisory-committee-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/yzlpmq0z/2026-august-ped-bike-agenda.pdf",
+    "text": "August 2026",
+    "file": "data/city_files/Coeur_d_Alene/2b543d_2026-august-ped-bike-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/5gwn1rqq/october-2026-ped-bike-agenda.pdf",
+    "text": "October 2026",
+    "file": "data/city_files/Coeur_d_Alene/4d3afb_october-2026-ped-bike-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/otibkckc/parking-study.pdf",
+    "text": "Parking Study (PDF 1.93 MB)",
+    "file": "data/city_files/Coeur_d_Alene/dc5381_parking-study.pdf",
+    "rows": 146,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://cdaid.org/media/wb2bf1xy/trails-and-bikeways-map.pdf",
+    "text": "Pedestrian / Bike Trails",
+    "file": "data/city_files/Coeur_d_Alene/585735_trails-and-bikeways-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/wcxfhfny/all-proposed-trails-and-bikeways.pdf",
+    "text": "Proposed Pedestrian / Bike Trails",
+    "file": "data/city_files/Coeur_d_Alene/563f5d_all-proposed-trails-and-bikeways.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/sb3jbrpr/parks-map.pdf",
+    "text": "Coeur d'Alene Parks Map",
+    "file": "data/city_files/Coeur_d_Alene/d99c71_parks-map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/pupdw1u1/bicycle-brochure.pdf",
+    "text": "Bicycle Brochure",
+    "file": "data/city_files/Coeur_d_Alene/7c6fb1_bicycle-brochure.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/22rd3lwu/cemetery-brochure.pdf",
+    "text": "Cemetery Brochure (PDF)",
+    "file": "data/city_files/Coeur_d_Alene/569bc9_cemetery-brochure.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cdaid.org/media/n3jjlyft/forest-cemetery-walking-tour.pdf",
+    "text": "Forest Cemetery Walking Tour (PDF)",
+    "file": "data/city_files/Coeur_d_Alene/07fb17_forest-cemetery-walking-tour.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/4evlbdpg/centennial-trail-permit-rules-and-regulations.pdf",
+    "text": "Special Activities Permit (PDF)",
+    "file": "data/city_files/Coeur_d_Alene/a0b74d_centennial-trail-permit-rules-and-regulations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/hmnjqrhf/municipal-fee-schedule.pdf",
+    "text": "launch and boat trailer parking fees",
+    "file": "data/city_files/Coeur_d_Alene/0a05b4_municipal-fee-schedule.pdf",
+    "rows": 542,
+    "bike_rows": 26
+   },
+   {
+    "url": "https://cdaid.org/media/ormpugoh/hpc-meeting-dates-2026.pdf",
+    "text": "2026 Historic Preservation Committee Meeting Schedule",
+    "file": "data/city_files/Coeur_d_Alene/21284f_hpc-meeting-dates-2026.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/files/Planning/HPCagenda2-12-25_revised.pdf",
+    "text": "February 12, 2025",
+    "file": "data/city_files/Coeur_d_Alene/caada6_HPCagenda2-12-25_revised.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/ssgfmiz4/levelloopa.pdf",
+    "text": "Level Loop A",
+    "file": "data/city_files/Coeur_d_Alene/d6f322_levelloopa.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/hhoe14eh/levelloopb.pdf",
+    "text": "Level Loop B",
+    "file": "data/city_files/Coeur_d_Alene/8bb49a_levelloopb.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/dzbmfnrk/levelloopc.pdf",
+    "text": "Level Loop C",
+    "file": "data/city_files/Coeur_d_Alene/414a17_levelloopc.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/vu2hxfy3/levelloopd.pdf",
+    "text": "Level Loop D",
+    "file": "data/city_files/Coeur_d_Alene/dfbc43_levelloopd.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/qyifkfu0/levelloope.pdf",
+    "text": "Level Loop E",
+    "file": "data/city_files/Coeur_d_Alene/30de3b_levelloope.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/hc1pocyx/levelloopf.pdf",
+    "text": "Level Loop F",
+    "file": "data/city_files/Coeur_d_Alene/055cb6_levelloopf.pdf",
+    "rows": 27,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/sjmn4g3r/levelloopg.pdf",
+    "text": "Level Loop G",
+    "file": "data/city_files/Coeur_d_Alene/ed8e0a_levelloopg.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/xb3d3pqf/levellooph.pdf",
+    "text": "Level Loop H",
+    "file": "data/city_files/Coeur_d_Alene/96b1c4_levellooph.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/xgzp5hse/levelloopi.pdf",
+    "text": "Level Loop I",
+    "file": "data/city_files/Coeur_d_Alene/6312d7_levelloopi.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/lnzdpo2a/levelloopj.pdf",
+    "text": "Level Loop J",
+    "file": "data/city_files/Coeur_d_Alene/5453b6_levelloopj.pdf",
+    "rows": 67,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cdaid.org/media/kgclgcia/levelloopk.pdf",
+    "text": "Level Loop K",
+    "file": "data/city_files/Coeur_d_Alene/597015_levelloopk.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/unsjzzwt/levelloopl.pdf",
+    "text": "Level Loop L",
+    "file": "data/city_files/Coeur_d_Alene/897807_levelloopl.pdf",
+    "rows": 33,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdaid.org/media/es0hdm2a/levelloopr.pdf",
+    "text": "Level Loop R",
+    "file": "data/city_files/Coeur_d_Alene/b1a636_levelloopr.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.cdaid.org/portal/home/": "Online Mapping",
+   "https://gis.cdaid.org/parking/": "Public Parking Map Includes City-owned lots and privately owned, but publicly available lots",
+   "https://gis.cdaid.org/portal/apps/experiencebuilder/experience/?id=57e817cec0b94f6984e41186cf6889f0": "Click here",
+   "https://gis.cdaid.org/parks/": "City GIS Map",
+   "https://gis.cdaid.org/burialsearch/": "Cemetery Burial Search website",
+   "https://gis.cdaid.org/Tubbs/": "City GIS Map"
+  }
+ },
+ "Glendora": {
+  "files": [],
+  "portals": {
+   "https://ci.glendora.ca.us/opendata": "Privacy Statement",
+   "https://ci.glendora.ca.us/open-data": "Privacy Statement"
+  }
+ },
+ "Newark": {
+  "files": [],
+  "portals": {}
+ },
+ "East Lansing": {
+  "files": [
+   {
+    "url": "https://recyclingpartnership.org/wp-content/uploads/dlm_uploads/2024/04/EastLansingMI_FullReport.pdf",
+    "text": "Read the final report on the project here (PDF).",
+    "file": "data/city_files/East_Lansing/1e05a9_EastLansingMI_FullReport.pdf",
+    "rows": 6,
+    "bike_rows": 5
+   }
+  ],
+  "portals": {
+   "http://coel.maps.arcgis.com/apps/webappviewer/index.html?id=076f31109b974149ac3e1c2379aac8d6": "",
+   "https://experience.arcgis.com/experience/0ea3d3e22ef34fb18cff54c4fc637ec8": "",
+   "https://waterdata.usgs.gov/monitoring-location/04112500/": "Red Cedar Water Level",
+   "https://coel.maps.arcgis.com/apps/webappviewer/index.html?id=7a38076dea604c5dacfc7ba4083ab1b6": "Property Asset Map",
+   "http://coel.maps.arcgis.com/apps/webappviewer/index.html?id=7a38076dea604c5dacfc7ba4083ab1b6": "",
+   "https://survey123.arcgis.com/share/0541aa5178ef4315aa754b8db48efb64": "Electric Vehicle (EV) Charging Survey",
+   "https://lansing.maps.arcgis.com/apps/instant/basic/index.html?appid=3de6b0d3d89348a58505a1328f4ea7ca": "map"
+  }
+ },
+ "Bountiful": {
+  "files": [],
+  "portals": {
+   "https://bountifulutah.gov/opendata": "Skip to Main Content",
+   "https://bountifulutah.gov/open-data": "Skip to Main Content"
+  }
+ },
+ "Oakland Park": {
+  "files": [],
+  "portals": {}
+ },
+ "Ottapalam Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "DeKalb": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/f0d292291dc7439fbc85275a36544d01": "",
+   "https://experience.arcgis.com/experience/da6334a344124bbb8d132f3eecb71bfc": "Here",
+   "https://experience.arcgis.com/experience/9cf07e14721c49ff98e70f87d3554af1": "",
+   "https://illinois-epa.maps.arcgis.com/apps/webappviewer/index.html?id=1e86d9a5913a4ca49fb0cfd64f1c2872": "here"
+  }
+ },
+ "Phenix City": {
+  "files": [],
+  "portals": {}
+ },
+ "Prattville": {
+  "files": [],
+  "portals": {}
+ },
+ "Jesús María": {
+  "files": [],
+  "portals": {}
+ },
+ "San Luis": {
+  "files": [],
+  "portals": {}
+ },
+ "Westlake": {
+  "files": [],
+  "portals": {
+   "https://gis.cityofwestlake.org/portal/apps/webappviewer/index.html?id=de87ad6351ff40d4a30917997365d24e": "Zoning Map"
+  }
+ },
+ "Dover": {
+  "files": [],
+  "portals": {}
+ },
+ "Lawndale": {
+  "files": [
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Recycling/CD Recycling Plan Forms_.pdf",
+    "text": "Construction & Demolition Recycling Plan",
+    "file": "data/city_files/Lawndale/824c8e_CD_Recycling_Plan_Forms_.pdf",
+    "rows": 38,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Recycling/AB341 - Apartment_English.pdf",
+    "text": "Mandatory recycling requirements for apartments",
+    "file": "data/city_files/Lawndale/860190_AB341_-_Apartment_English.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Public%20Works/Recycling/Lawndale_Rec-Waste-News_Spring-2026.pdf",
+    "text": "Recycling & Waste Spring Newsletter 2026",
+    "file": "data/city_files/Lawndale/907163_Lawndale_Rec-Waste-News_Spring-2026.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Recycling/LawndaleAnnualBrochure.pdf",
+    "text": "Residential Guide to Reducing, Reusing, and Recycling",
+    "file": "data/city_files/Lawndale/a86442_LawndaleAnnualBrochure.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Recycling/Multi-Family Guidance Commercial Brochure.pdf",
+    "text": "Business & Multifamily Guide to Reducing, Reusing, and Recycling",
+    "file": "data/city_files/Lawndale/c8451f_Multi-Family_Guidance_Commercial_Brochure.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Services/Lawndale Beat Bus/Lawndale Beat Express Route Schedule - Monday through Sunday 12_12_23.pdf",
+    "text": "Monday through Sunday and City-observed Holidays",
+    "file": "data/city_files/Lawndale/a5000c_Lawndale_Beat_Express_Route_Schedule_-_Monday_through_Sunday_12_12_23.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Services/Lawndale Beat Bus/Route Schedules/Lawndale Beat Residential Route Schedule - Monday through Friday.pdf",
+    "text": "Monday through Friday",
+    "file": "data/city_files/Lawndale/0a27fa_Lawndale_Beat_Residential_Route_Schedule_-_Monday_through_Friday.pdf",
+    "rows": 31,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Services/Lawndale Beat Bus/Route Schedules/Lawndale Beat Residential Route Schedule - Saturday.pdf",
+    "text": "Saturdays",
+    "file": "data/city_files/Lawndale/9268fe_Lawndale_Beat_Residential_Route_Schedule_-_Saturday.pdf",
+    "rows": 25,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Services/Lawndale Beat Bus/Route Schedules/Lawndale Beat Residential Route Schedule - Sunday and Holidays.pdf",
+    "text": "Sundays and City-observed Holidays",
+    "file": "data/city_files/Lawndale/50dad8_Lawndale_Beat_Residential_Route_Schedule_-_Sunday_and_Holidays.pdf",
+    "rows": 21,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_16676053/File/Government/Departments/Community%20Development/Historic%20Plaque%20Program/Historic%20Plaque%20Prog%20Appl.pdf",
+    "text": "Download Historic Plaque Program Application (PDF) (81.6 KB)",
+    "file": "data/city_files/Lawndale/2d8d9b_Historic_20Plaque_20Prog_20Appl.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Municipal%20Services/Parking%20Enforcement/CitationContesting1.pdf",
+    "text": "Step I - Parking Citation Contesting Form",
+    "file": "data/city_files/Lawndale/5ae820_CitationContesting1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Municipal%20Services/Parking%20Enforcement/CitationContesting2.pdf",
+    "text": "Step II - Parking Citation Contesting Form",
+    "file": "data/city_files/Lawndale/da21b9_CitationContesting2.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Municipal Services/Parking Enforcement/PAYMENT PLANS.pdf",
+    "text": "",
+    "file": "data/city_files/Lawndale/b14035_PAYMENT_PLANS.pdf",
+    "rows": 25,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Municipal Services/Parking Enforcement/CitationContesting1.pdf",
+    "text": "Step I - Parking Citation Contesting Form",
+    "file": "data/city_files/Lawndale/92b491_CitationContesting1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Municipal Services/Parking Enforcement/CitationContesting2.pdf",
+    "text": "Step II - Parking Citation Contesting Form",
+    "file": "data/city_files/Lawndale/2ea67a_CitationContesting2.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Trash/LawndaleAnnualBrochure.pdf",
+    "text": "Refuse and Recycling Guide",
+    "file": "data/city_files/Lawndale/08f881_LawndaleAnnualBrochure.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Development/Zoning/City Zoning Map/zoning_wall_map.pdf",
+    "text": "City Zoning Map",
+    "file": "data/city_files/Lawndale/2fc19f_zoning_wall_map.pdf",
+    "rows": 329,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Community%20Development/Planning/HBSP/HBSP.pdf",
+    "text": "Download Hawthorne Boulevard Specific Plan (PDF)",
+    "file": "data/city_files/Lawndale/f6b469_HBSP.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Community%20Development/Planning/Commercial%20Parking%20Standards.pdf",
+    "text": "Download Commercial Parking Standards (PDF)",
+    "file": "data/city_files/Lawndale/993d94_Commercial_20Parking_20Standards.pdf",
+    "rows": 16,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Trash/LawndaleAnnualBrochure.pdf",
+    "text": "Refuse and Recycling Guide",
+    "file": "data/city_files/Lawndale/a1ae31_LawndaleAnnualBrochure.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/News/2026/School%20parking%20letter%201.pdf",
+    "text": "School parking letter 1.pdf",
+    "file": "data/city_files/Lawndale/f17090_School_20parking_20letter_201.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Recycling/CD Recycling Plan Forms_.pdf",
+    "text": "Construction & Demolition Recycling Plan",
+    "file": "data/city_files/Lawndale/575463_CD_Recycling_Plan_Forms_.pdf",
+    "rows": 38,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Recycling/AB341 - Apartment_English.pdf",
+    "text": "Mandatory recycling requirements for apartments",
+    "file": "data/city_files/Lawndale/2c904a_AB341_-_Apartment_English.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Recycling/LawndaleAnnualBrochure.pdf",
+    "text": "Residential Guide to Reducing, Reusing, and Recycling",
+    "file": "data/city_files/Lawndale/7b922f_LawndaleAnnualBrochure.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Recycling/Multi-Family Guidance Commercial Brochure.pdf",
+    "text": "Business & Multifamily Guide to Reducing, Reusing, and Recycling",
+    "file": "data/city_files/Lawndale/2ec5cc_Multi-Family_Guidance_Commercial_Brochure.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Community%20Services/Senior%20Services/2026%20Complete%20Plot%20Packet.pdf",
+    "text": "here",
+    "file": "data/city_files/Lawndale/e76c37_2026_20Complete_20Plot_20Packet.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Services/Lawndale Beat Bus/Route Schedules/Lawndale Beat Residential Route Schedule - Monday through Friday.pdf",
+    "text": "Monday through Friday",
+    "file": "data/city_files/Lawndale/af717b_Lawndale_Beat_Residential_Route_Schedule_-_Monday_through_Friday.pdf",
+    "rows": 31,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Services/Lawndale Beat Bus/Route Schedules/Lawndale%20Beat%20Residential%20Route%20Schedule%20-%20Saturday.pdf",
+    "text": "Saturday",
+    "file": "data/city_files/Lawndale/3d5631_Lawndale_20Beat_20Residential_20Route_20Schedule_20-_20Saturday.pdf",
+    "rows": 25,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Services/Lawndale Beat Bus/Route Schedules/Lawndale%20Beat%20Residential%20Route%20Schedule%20-%20Sunday%20and%20Holidays.pdf",
+    "text": "Sunday and Holidays",
+    "file": "data/city_files/Lawndale/02744d_Lawndale_20Beat_20Residential_20Route_20Schedule_20-_20Sunday_20and_20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Municipal Services/Parking Enforcement/PAYMENT PLANS.pdf",
+    "text": "",
+    "file": "data/city_files/Lawndale/508fe1_PAYMENT_PLANS.pdf",
+    "rows": 25,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Municipal Services/Parking Enforcement/CitationContesting1.pdf",
+    "text": "Step I - Parking Citation Contesting Form",
+    "file": "data/city_files/Lawndale/6e67bf_CitationContesting1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Municipal Services/Parking Enforcement/CitationContesting2.pdf",
+    "text": "Step II - Parking Citation Contesting Form",
+    "file": "data/city_files/Lawndale/81c4fc_CitationContesting2.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Public%20Works/City%20Projects/Construction%20Notice%20Letter_RBB%20FINAL.pdf",
+    "text": "Redondo Beach Boulevard Street Improvement Project (Artesia Boulevard to Prairie Avenue)",
+    "file": "data/city_files/Lawndale/056ec4_Construction_20Notice_20Letter_RBB_20FINAL.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Public%20Works/Parking%20Permit%20District%20Application%20.pdf",
+    "text": "Create a Parking District",
+    "file": "data/city_files/Lawndale/b4ddea_Parking_20Permit_20District_20Application_20.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Services/Lawndale Beat Bus/Lawndale Beat Express Route Schedule - Monday through Sunday 12_12_23.pdf",
+    "text": "Monday through Sunday and City-observed Holidays",
+    "file": "data/city_files/Lawndale/17d9e5_Lawndale_Beat_Express_Route_Schedule_-_Monday_through_Sunday_12_12_23.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Services/Lawndale Beat Bus/Route Schedules/Lawndale Beat Residential Route Schedule - Saturday.pdf",
+    "text": "Saturdays",
+    "file": "data/city_files/Lawndale/5647f5_Lawndale_Beat_Residential_Route_Schedule_-_Saturday.pdf",
+    "rows": 25,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Services/Lawndale Beat Bus/Route Schedules/Lawndale Beat Residential Route Schedule - Sunday and Holidays.pdf",
+    "text": "Sundays and City-observed Holidays",
+    "file": "data/city_files/Lawndale/f5ba9e_Lawndale_Beat_Residential_Route_Schedule_-_Sunday_and_Holidays.pdf",
+    "rows": 21,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Trash/LawndaleAnnualBrochure.pdf",
+    "text": "Refuse and Recycling Guide",
+    "file": "data/city_files/Lawndale/c62488_LawndaleAnnualBrochure.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndale.ca.gov/UserFiles/Servers/Server_16676053/File/Government/Departments/Community Development/Zoning/City Zoning Map/zoning_wall_map.pdf",
+    "text": "City Zoning Map",
+    "file": "data/city_files/Lawndale/f36531_zoning_wall_map.pdf",
+    "rows": 329,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lawndalecity.org/UserFiles/Servers/Server_16676053/File/Government/Departments/Public Works/Recycling/CD Recycling Plan Forms_.pdf",
+    "text": "Construction & Demolition Recycling Plan",
+    "file": "data/city_files/Lawndale/68cf76_CD_Recycling_Plan_Forms_.pdf",
+    "rows": 38,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {}
+ },
+ "Lawrenceville": {
+  "files": [],
+  "portals": {}
+ },
+ "Morrisville": {
+  "files": [],
+  "portals": {}
+ },
+ "Slidell": {
+  "files": [
+   {
+    "url": "http://myslidell.com/wp-content/uploads/2026/09/app_ZoningMap.pdf",
+    "text": "Zoning Map Amendment (PDF)",
+    "file": "data/city_files/Slidell/5dfb19_app_ZoningMap.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://myslidell.com/wp-content/uploads/2021/03/Bicycle-Master-Plan_20201208.pdf",
+    "text": "Bicycle Master Plan",
+    "file": "data/city_files/Slidell/f6f2d7_Bicycle-Master-Plan_20201208.pdf",
+    "rows": 104,
+    "bike_rows": 45
+   }
+  ],
+  "portals": {
+   "https://myslidell.com/departments/engineering/maps-and-open-data/": "Maps and Open Data",
+   "https://stpcos.maps.arcgis.com/apps/webappviewer/index.html?id=2b31bdb357f642e2891da2c7fcc0dabb": "Open Map in New Window"
+  }
+ }
+}
