@@ -1,9 +1,44 @@
 [
 {
-"city": "Orlando FL",
-"url": "https://gis.orlando.gov/server/rest/services/Epic_Simplify_i3/Transportation/MapServer/10",
-"name": "Bike Racks",
-"count": 228,
+"city": "Davie",
+"url": "https://gis.davie-fl.gov/gis/rest/services/ParksAndRec/ParkAsset_Collection/FeatureServer/3",
+"name": "Parks_BikeRacks",
+"count": 17,
+"cat": "racks"
+},
+{
+"city": "Davie",
+"url": "https://gis.davie-fl.gov/gis/rest/services/ParksAndRec/ParkAsset_Collection/MapServer/3",
+"name": "Parks_BikeRacks",
+"count": 17,
+"cat": "racks"
+},
+{
+"city": "Davie",
+"url": "https://gis.davie-fl.gov/gis/rest/services/PublicWorks/EAM_ParksAndIrrigation/MapServer/1",
+"name": "Park Bike Rack",
+"count": 19,
+"cat": "racks"
+},
+{
+"city": "Bloomington",
+"url": "https://gis.bloomingtonmn.gov/arcgis/rest/services/Parks/Bloomington_GCGIS_Inventory_Non_Editing/FeatureServer/4",
+"name": "Bicycle Racks",
+"count": 76,
+"cat": "racks"
+},
+{
+"city": "Bloomington",
+"url": "https://gis.bloomingtonmn.gov/arcgis/rest/services/Parks/Bloomington_GCGIS_Inventory_Non_Editing/MapServer/4",
+"name": "Bicycle Racks",
+"count": 76,
+"cat": "racks"
+},
+{
+"city": "Windsor",
+"url": "https://gis.townofwindsorct.com/server/rest/services/Hosted/Bike_Parking/FeatureServer/0",
+"name": "Bike Parking",
+"count": 28,
 "cat": "racks"
 }
 ]
