@@ -1,0 +1,1335 @@
+{
+ "Toledo OH": {
+  "files": [
+   {
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Public-Service/2026-Republic-Services-City-of-Toledo-Trash-and-Recycling-Calendar.pdf",
+    "text": "",
+    "file": "data/city_files/Toledo_OH/5f4605_2026-Republic-Services-City-of-Toledo-Trash-and-Recycling-Calendar.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Public-Service/Transportation/Parking-Restriction-Petition_2023-01-18-161125_dxfj.pdf",
+    "text": "",
+    "file": "data/city_files/Toledo_OH/4acea3_Parking-Restriction-Petition_2023-01-18-161125_dxfj.pdf",
+    "rows": 47,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Transportation/Disabled-Parking-Request-Application10.pdf",
+    "text": "Download the Application",
+    "file": "data/city_files/Toledo_OH/28b5c2_Disabled-Parking-Request-Application10.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://biketoledo.org/data/documents/bike-network.pdf",
+    "text": "See Toledo bike map",
+    "file": "data/city_files/Toledo_OH/2e7a8b_bike-network.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Recycling-Events-Schedule-Print-4-22-24.pdf",
+    "text": "Download the 2024 schedule",
+    "file": "data/city_files/Toledo_OH/0055b9_Recycling-Events-Schedule-Print-4-22-24.pdf",
+    "rows": 17,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Public-Service/Parks/Lets-Get-Moving-Program-Tracker.pdf",
+    "text": "Download your walk tracker",
+    "file": "data/city_files/Toledo_OH/71f457_Lets-Get-Moving-Program-Tracker.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Transportation/Secor-crash-diagrams.pdf",
+    "text": "Download crash data map",
+    "file": "data/city_files/Toledo_OH/d1a871_Secor-crash-diagrams.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Public-Utilities/Engineering-Services/Broadway-Corridor-Project-Maps.pdf",
+    "text": "Project Maps",
+    "file": "data/city_files/Toledo_OH/496364_Broadway-Corridor-Project-Maps.pdf",
+    "rows": 62,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Neighborhoods/Summit-Street-Riverfront-Corridor-handout-FINAL6.pdf",
+    "text": "Embankment Stabilization and Multi-Use Trail",
+    "file": "data/city_files/Toledo_OH/647459_Summit-Street-Riverfront-Corridor-handout-FINAL6.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Plan-Commission/Zoning-Maps/County-Index_3.pdf",
+    "text": "",
+    "file": "data/city_files/Toledo_OH/e6d715_County-Index_3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Finance/Taxation-and-Treasury/Parking-Garage-or-Lot-License-Application.pdf",
+    "text": "license",
+    "file": "data/city_files/Toledo_OH/5b1fa6_Parking-Garage-or-Lot-License-Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://toledo.oh.gov/open-data-portal": "Open Data Portal",
+   "https://data.toledo.gov/": "Open Data",
+   "https://toledo.maps.arcgis.com/apps/dashboards/e480d4a09ba44000a5c6e76df79be4d8": "Road Construction Map",
+   "https://experience.arcgis.com/experience/1d19053d6de84002b9cef22ae32a8737": "Park Finder",
+   "https://toledo.maps.arcgis.com/apps/dashboards/33025e55224b4770862f8c5afb54ca1e": "View fullscreen map",
+   "https://gis.toledo.oh.gov/portal/apps/dashboards/3c44a66edd1d423eb070ec86ba5f784d": "See the data",
+   "https://toledo.maps.arcgis.com/apps/Embed/index.html?webmap=59da251e22d9468cba01fef41c063996&home=true&zoom=true&&search=true&disable_scroll=false&theme=dark&legend=true&legendlayers=false&active_panel=legend&show_panel=true": "View fullscreen map",
+   "https://www.protegis.com/?srsltid=ARcRdnr2vS_xRgLj1l9zmxLEVJlidcoXLSH_GJElGqT47xy4g_8gpx1C": "learn more",
+   "https://survey123.arcgis.com/share/00698509b4c94ae4a78fc095328e62d9?portalUrl=https://LCEMA.maps.arcgis.com": "Become a warming center",
+   "https://storymaps.arcgis.com/stories/43e7dcb79c1b4536ba7f159a723d6d62": "Learn about urban heat in Toledo",
+   "https://toledo.maps.arcgis.com/apps/webappviewer/index.html?id=996e10b75df84369ae6d7743bb2b41a4": "View fullscreen map",
+   "https://data.ohio.gov/wps/portal/gov/data/view/lead-licensed-service-providers": "Search the list",
+   "https://toledo.maps.arcgis.com/apps/dashboards/e0479477fb784c8ca6b62c0044b93c54": "View fullscreen"
+  }
+ },
+ "Delhi": {
+  "files": [],
+  "portals": {}
+ },
+ "Corrientes": {
+  "files": [],
+  "portals": {
+   "http://gis.ciudaddecorrientes.gov.ar/": "DATOS GEORREFERENCIADOS",
+   "http://gis.ciudaddecorrientes.gov.ar/gis/plan_hidrico/": "Plan Hídrico"
+  }
+ },
+ "Çorum": {
+  "files": [],
+  "portals": {}
+ },
+ "Grand Prairie": {
+  "files": [
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/1/government/mayor-and-city-council/documents/september-2026-city-council-map-with-photos.pdf",
+    "text": "Printer Friendly Council District Map (PDF, 855KB)",
+    "file": "data/city_files/Grand_Prairie/5b92bc_september-2026-city-council-map-with-photos.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/2/departments/recycling/documents/what-goes-in-the-bin-how-to-be-a-better-recycler.pdf",
+    "text": "How to be a Better Recycler - What Goes in the Bin? (PDF, 5MB)",
+    "file": "data/city_files/Grand_Prairie/c474d3_what-goes-in-the-bin-how-to-be-a-better-recycler.pdf",
+    "rows": 15,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/2/departments/recycling/documents/recycling-providers-2018.pdf",
+    "text": "General commercial recycling permitted providers/haulers (PDF, 440KB)",
+    "file": "data/city_files/Grand_Prairie/42ca12_recycling-providers-2018.pdf",
+    "rows": 29,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/2/departments/recycling/documents/commercial-bag-cart-recycling-customer-registration.pdf",
+    "text": "PDF registration form (PDF, 2MB)",
+    "file": "data/city_files/Grand_Prairie/eee805_commercial-bag-cart-recycling-customer-registration.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/2/departments/solid-waste/documents/garbagerecycling_calendar_25_26_120325-1.pdf",
+    "text": "download the PDF file. (PDF, 371KB)",
+    "file": "data/city_files/Grand_Prairie/190eab_garbagerecycling_calendar_25_26_120325-1.pdf",
+    "rows": 53,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/2/departments/transportation/documents/grand-connection-transit-title-vi-complaint-form.pdf",
+    "text": "Title VI Complaint Form (English) (PDF, 675KB)",
+    "file": "data/city_files/Grand_Prairie/d7536a_grand-connection-transit-title-vi-complaint-form.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/government/boards-and-commissions/documents/lake-parks-public-improvement-district-map.pdf",
+    "text": "Lake Parks PID Map",
+    "file": "data/city_files/Grand_Prairie/8723eb_lake-parks-public-improvement-district-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/2/departments/code-compliance/documents/str-site-plan-with-parking-example-1.pdf",
+    "text": "Site Plan of Parking Spaces Example 1 (PDF, 161KB)",
+    "file": "data/city_files/Grand_Prairie/2ae706_str-site-plan-with-parking-example-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/3/departments/code-compliance/documents/str-site-plan-with-parking-example-2.pdf",
+    "text": "Site Plan of Parking Spaces Example 2 (PDF, 145KB)",
+    "file": "data/city_files/Grand_Prairie/e34ee3_str-site-plan-with-parking-example-2.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/2/departments/recycling/documents/kirby-creek-garden-photo-collage.pdf",
+    "text": "View more photos (PDF, 7MB)",
+    "file": "data/city_files/Grand_Prairie/349e80_kirby-creek-garden-photo-collage.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/2/departments/engineering/documents/interactive-map-instructions-for-gps-monuments.pdf",
+    "text": "View Interactive Map Instructions (PDF, 158KB)",
+    "file": "data/city_files/Grand_Prairie/43cd5e_interactive-map-instructions-for-gps-monuments.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/2/about-grand-prairie/documents/downtown-walking-tour-map.pdf",
+    "text": "1950 Historic Downtown Walking Tour Map (PDF, 2MB)",
+    "file": "data/city_files/Grand_Prairie/feb1fa_downtown-walking-tour-map.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/3/departments/solid-waste/documents/garbagerecycling_calendra_24_25.pdf",
+    "text": "2023-2024 Garbage and Recycling Calendar (PDF, 161KB)",
+    "file": "data/city_files/Grand_Prairie/64ac42_garbagerecycling_calendra_24_25.pdf",
+    "rows": 59,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/2/departments/planning/documents/future-land-use-map.pdf",
+    "text": "2021 Future Land Use Map (PDF, 2MB)",
+    "file": "data/city_files/Grand_Prairie/af6600_future-land-use-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/1/departments/engineering/documents/lidar-data-topographic-maps/gis-shapefiles/2016-dtm-ind-poly.zip",
+    "text": "2016-DTM-IND-POLY.zip (ZIP, 76KB)",
+    "file": "data/city_files/Grand_Prairie/8008d1_2016-dtm-ind-poly.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/1/departments/engineering/documents/lidar-data-topographic-maps/gis-shapefiles/2016-chunks-poly.zip",
+    "text": "2016-CHUNKS-POLY.zip (ZIP, 4KB)",
+    "file": "data/city_files/Grand_Prairie/8c0f8f_2016-chunks-poly.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/1/departments/finance/documents/exhibit-a-1-greenway-trails-budget-fy26.pdf",
+    "text": "Exhibit A-1 Greenway Trails Budget FY26 (PDF, 120KB)",
+    "file": "data/city_files/Grand_Prairie/98dae6_exhibit-a-1-greenway-trails-budget-fy26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/1/departments/finance/documents/exhibit-a-1-greenway-trails-budget-fy27.pdf",
+    "text": "Exhibit A-1 Greenway Trails - Budget FY27 (PDF, 112KB)",
+    "file": "data/city_files/Grand_Prairie/24958a_exhibit-a-1-greenway-trails-budget-fy27.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/1/government/boards-and-commissions/documents/pid-documents/greenway-trails-pid-notice-of-obligation-to-pay-improvement-district-assessment.pdf",
+    "text": "Greenway-Trails-PID-Notice-of-Obligation-to-Pay-Improvement-District-Assessment.pdf (PDF, 271KB)",
+    "file": "data/city_files/Grand_Prairie/4f7174_greenway-trails-pid-notice-of-obligation-to-pay-improvement-district-a",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/v/1/government/boards-and-commissions/documents/greenway-trails-notice-to-purchaser-pid.pdf",
+    "text": "Greenway Trails PID Notice to Purchaser (PDF, 102KB)",
+    "file": "data/city_files/Grand_Prairie/3bedb1_greenway-trails-notice-to-purchaser-pid.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/government/boards-and-commissions/documents/greenway-trails-public-improvement-district-map.pdf",
+    "text": "Greenway Trails PID Map",
+    "file": "data/city_files/Grand_Prairie/93dbb6_greenway-trails-public-improvement-district-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.gptx.org/files/sharedassets/public/departments/recycling/documents/mowingwateringfertilizingp.pdf",
+    "text": "View Tips on Mowing, Watering and Fertilizing (PDF, 5MB)",
+    "file": "data/city_files/Grand_Prairie/58388c_mowingwateringfertilizingp.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://nwis.waterdata.usgs.gov/nwis/uv?08050100": "USGS 08050100 Mountain Creek at Grand Prairie, TX",
+   "http://nwis.waterdata.usgs.gov/nwis/uv?08049500": "USGS 08049500 West Fork Trinity River at Grand Prairie, TX",
+   "https://storymaps.arcgis.com/stories/6d0c933143f44f878eec88fcdaf95bb5": "Read more about the Grand Prairie Safety Action Plan and Take the Survey",
+   "https://gis.gptx.org/maps/?extent=2281124.9565%2C6821449.3921%2C2549249.9565%2C7021511.8921%2C102738&showLayers=Information_2279%3BInformation_2279_4%3BInformation_2279_33": "Grand Prairie Interactive Map",
+   "http://gis.gptx.org/maps/": "View future land use information",
+   "https://gis.gptx.org/maps/?extent=2280468.7065%2C6820418.1421%2C2549906.2065%2C7022543.1421%2C102738&showLayers=Information_2279%3BInformation_2279_55%3BInformation_2279_29": "Zoning Maps"
+  }
+ },
+ "Bingöl": {
+  "files": [],
+  "portals": {}
+ },
+ "Kent": {
+  "files": [],
+  "portals": {}
+ },
+ "Richardson": {
+  "files": [],
+  "portals": {}
+ },
+ "West Covina": {
+  "files": [],
+  "portals": {
+   "https://city-of-west-covina-gis-hub-westcovina.hub.arcgis.com/": "West Covina Resource Maps Visit our GIS Data Hub For Maps and More",
+   "https://city-of-west-covina-gis-hub-westcovina.hub.arcgis.com/apps/cc0693a8ee5443e8bdc058b361db1514/explore": "Council Districts",
+   "https://experience.arcgis.com/experience/55b7e43863d349d1b2e79109c4b26401/page/Page": "Tree Trimming Interactive Map"
+  }
+ },
+ "Lee's Summit": {
+  "files": [],
+  "portals": {
+   "https://lees-summit.mo.us/opendata": "Back to Top of Page",
+   "https://lees-summit.mo.us/open-data": "Back to Top of Page"
+  }
+ },
+ "Roswell": {
+  "files": [
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Roswell-Bicycle-and-Pedestrian-Master-Plan-Final-Report.pdf",
+    "text": "Roswell Bicycle and Pedestrian Master Plan: Final Report (July 28, 2026) pdf 11.2 MB",
+    "file": "data/city_files/Roswell/ad4bb2_Roswell-Bicycle-and-Pedestrian-Master-Plan-Final-Report.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Roswell-Bicycle-and-Pedestrian-Master-Plan-Hub-and-Spoke-Map.pdf",
+    "text": "Roswell Bicycle and Pedestrian Master Plan Hub and Spoke Map (July 28, 2026) pdf 605.3 KB",
+    "file": "data/city_files/Roswell/2ce5c0_Roswell-Bicycle-and-Pedestrian-Master-Plan-Hub-and-Spoke-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Esther-Jackson-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "text": "Esther Jackson Elementary School (PDF)",
+    "file": "data/city_files/Roswell/34b34e_Esther-Jackson-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Hembree-Springs-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "text": "Hembree Springs Elementary School (PDF)",
+    "file": "data/city_files/Roswell/e5c565_Hembree-Springs-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Hillside-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "text": "Hillside Elementary School (PDF)",
+    "file": "data/city_files/Roswell/9eb8e1_Hillside-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Mimosa-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "text": "Mimosa Elementary School (PDF)",
+    "file": "data/city_files/Roswell/fb69d7_Mimosa-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Mountain-Park-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "text": "Mountain Park Elementary School (PDF)",
+    "file": "data/city_files/Roswell/dcb291_Mountain-Park-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Northwood-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "text": "Northwood Elementary School (PDF)",
+    "file": "data/city_files/Roswell/2c96b2_Northwood-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/River-Eves-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "text": "River Eves Elementary School (PDF)",
+    "file": "data/city_files/Roswell/44c10b_River-Eves-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Roswell-North-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "text": "Roswell North Elementary School(PDF)",
+    "file": "data/city_files/Roswell/1985c7_Roswell-North-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Sweet-Apple-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "text": "Sweet Apple Elementary School (PDF)",
+    "file": "data/city_files/Roswell/aced01_Sweet-Apple-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Vickery-Mill-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "text": "Vickery Mill Elementary School (PDF)",
+    "file": "data/city_files/Roswell/5ef4d7_Vickery-Mill-Elementary-School-Walk-to-School-Map-2023.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Roswell-FEMA-Floodzones-1.pdf",
+    "text": "Flood Map (PDF) pdf 1.5 MB",
+    "file": "data/city_files/Roswell/793f49_Roswell-FEMA-Floodzones-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Roswell-Historic-Properties-Ma.pdf",
+    "text": "Historic Properties (PDF) pdf 1.5 MB",
+    "file": "data/city_files/Roswell/49c509_Roswell-Historic-Properties-Ma.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Roswell-Opportunity-Zone-Ma.pdf",
+    "text": "Opportunity Zone Map (PDF) pdf 2.3 MB",
+    "file": "data/city_files/Roswell/49dce8_Roswell-Opportunity-Zone-Ma.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Roswell-Parking-Near-Canton-Street.pdf",
+    "text": "Parking (near Canton Street) (PDF) pdf 636.9 KB",
+    "file": "data/city_files/Roswell/6a7510_Roswell-Parking-Near-Canton-Street.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Roswell-Water-Resources-Ma.pdf",
+    "text": "Roswell Water Resources Map (PDF) pdf 2.4 MB",
+    "file": "data/city_files/Roswell/46389a_Roswell-Water-Resources-Ma.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Roswell-Approved-Small-Cell-Sites-Map-November-2022.pdf",
+    "text": "Small Cell Technology: Approved Small Cell Sites (PDF) pdf 718.9 KB",
+    "file": "data/city_files/Roswell/a48303_Roswell-Approved-Small-Cell-Sites-Map-November-2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Unified-Development-Code-Zoning-Map-April-2019-1.pdf",
+    "text": "UDC Zoning Map (PDF) pdf 7.5 MB",
+    "file": "data/city_files/Roswell/79e2f1_Unified-Development-Code-Zoning-Map-April-2019-1.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Golf-Cart-PTV-Path-Connection-Request.pdf",
+    "text": "Request for PTV Path and/or Road Connection (PDF)",
+    "file": "data/city_files/Roswell/97d87f_Golf-Cart-PTV-Path-Connection-Request.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Recreation-Parks-Historic-Cultural-Affairs-5-Year-Strategic-Plan-20222026.pdf",
+    "text": "Recreation, Parks, Historic & Cultural Affairs Five-Year Strategic Plan (2022-2026) (PDF)",
+    "file": "data/city_files/Roswell/6487a2_Recreation-Parks-Historic-Cultural-Affairs-5-Year-Strategic-Plan-20222",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/East-Roswell-Park-Arts-Center-East-Revised-Landscape-and-Trail-Alignment-Plan-January-2020.pdf",
+    "text": "East Roswell Park/Arts Center East: Revised Landscape and Trail Alignment Plan (January 2020) (PDF)",
+    "file": "data/city_files/Roswell/d85326_East-Roswell-Park-Arts-Center-East-Revised-Landscape-and-Trail-Alignme",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Roswell-Recreation-Parks-2026-Capital-Projects-List.pdf",
+    "text": "City of Roswell Recreation, Parks, Historic & Cultural Affairs Capital Projects List (PDF)",
+    "file": "data/city_files/Roswell/82bec3_Roswell-Recreation-Parks-2026-Capital-Projects-List.pdf",
+    "rows": 55,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Environmental-Education-Community-Outreach-Flyer-Forefront-of-Your-Waterfront-Community.pdf",
+    "text": "“Forefront of Your Waterfront” Community Service Opportunities Flyer (PDF)",
+    "file": "data/city_files/Roswell/d4ae2f_Environmental-Education-Community-Outreach-Flyer-Forefront-of-Your-Wat",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Stormwater-Utility-Residential-Rate-Map-July-1-2022.pdf",
+    "text": "chart (PDF)",
+    "file": "data/city_files/Roswell/d33816_Stormwater-Utility-Residential-Rate-Map-July-1-2022.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Water-System-Service-Area.pdf",
+    "text": "Map of Roswell’s Water Utility Service Area (PDF)",
+    "file": "data/city_files/Roswell/d205a8_Water-System-Service-Area.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Toon-in-Roswell-Roswell-Recycling-Center-Roger-Recycles-Maze.pdf",
+    "text": "",
+    "file": "data/city_files/Roswell/4e7c10_Toon-in-Roswell-Roswell-Recycling-Center-Roger-Recycles-Maze.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Toon-in-Roswell-Roswell-Recycling-Center-Roger-Recycles-Worksheet.pdf",
+    "text": "",
+    "file": "data/city_files/Roswell/54a6ea_Toon-in-Roswell-Roswell-Recycling-Center-Roger-Recycles-Worksheet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Toon-in-Roswell-Roswell-Recycling-Center-Roswell-Recycling-Worksheet.pdf",
+    "text": "",
+    "file": "data/city_files/Roswell/e3918a_Toon-in-Roswell-Roswell-Recycling-Center-Roswell-Recycling-Worksheet.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Recycling-Center-Brochure.pdf",
+    "text": "",
+    "file": "data/city_files/Roswell/ab8860_Recycling-Center-Brochure.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Roswell-Recycling-Center-Christmas-Recycling-Guide.pdf",
+    "text": "",
+    "file": "data/city_files/Roswell/7026f7_Roswell-Recycling-Center-Christmas-Recycling-Guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.roswellgov.com/wp-content/uploads/Stormwater-Credit-Application-NPDES-Industrial-Stormwater-General-Permit-Compliance-Credit-Applicati.pdf",
+    "text": "National Pollutant Discharge Elimination System (NPDES) Industrial Stormwater General Permit Compliance Credit Applicati",
+    "file": "data/city_files/Roswell/7f4f55_Stormwater-Credit-Application-NPDES-Industrial-Stormwater-General-Perm",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/d0ff1ba5adfb4a589415ca5c7bd87529/page/Projects-List?views=All-Projects%2CDevelopment-Project-Details": "Current Projects Track updates & ongoing initiatives",
+   "https://data-roswellga.opendata.arcgis.com/pages/roswell-infographics": "Demographics & Population",
+   "https://experience.arcgis.com/experience/7a3c301040244cde85fb7eb359c75b0f/": "City of Roswell’s GIS mapping tool",
+   "https://experience.arcgis.com/experience/d0ff1ba5adfb4a589415ca5c7bd87529/page/Projects-List?views=Private-Development-Project-Details%2CTransportation-Projects": "View the Transportation Projects Dashboard",
+   "https://data-roswellga.opendata.arcgis.com/": "GIS Data Hub",
+   "https://experience.arcgis.com/experience/514d043e87944ac2be971a796239a3cd/page/Page-2/": "Look Up Your Curbside Recycling Collection Schedule",
+   "https://experience.arcgis.com/experience/7c809a0bce1445a6afb77d9812eaa7f8": "Adopt-A-Road Map",
+   "https://roswellga.maps.arcgis.com/apps/webappviewer/index.html?id=8142ccae41774615afbcb7533cd86c7c": "GIS Portal",
+   "https://survey123.arcgis.com/share/7fc1c41a825749b4bd5c26e4055e77ee": "water service line material survey form",
+   "https://0001757-gdot.hub.arcgis.com/": "GDOT’s website",
+   "https://roswellga.maps.arcgis.com/apps/MapJournal/index.html?appid=21b7546d2a3a4da3907a7581607a7ced": "interactive map of our parks"
+  }
+ },
+ "Duluth": {
+  "files": [
+   {
+    "url": "https://duluthmn.gov/media/qvmj22ns/accessible-parking-signage-request.pdf",
+    "text": "Accessible Parking Signage Request Form.",
+    "file": "data/city_files/Duluth/a6bec0_accessible-parking-signage-request.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://duluthmn.gov/media/8047/11-golf-citizen-advisory-committee-charge.pdf",
+    "text": "Golf Citizen Advisory Committee Charge (Archived)",
+    "file": "data/city_files/Duluth/34d7db_11-golf-citizen-advisory-committee-charge.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://duluthmn.gov/media/14188/10-10-22-essential-spaces-plan-for-council.pdf",
+    "text": "Essential Spaces: Duluth Parks, Recreation, Open Space & Trails Plan, 2022 (Archived)",
+    "file": "data/city_files/Duluth/5ecbcf_10-10-22-essential-spaces-plan-for-council.pdf",
+    "rows": 42,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://duluthmn.gov/media/6839/duluth-traverse-eaw.pdf",
+    "text": "Duluth Traverse Mountain Bike Trail System EAW, 2013 (Archived)",
+    "file": "data/city_files/Duluth/49739b_duluth-traverse-eaw.pdf",
+    "rows": 135,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://duluthmn.gov/media/6832/slrc-trail-plan-final-for-council-approval-3-13-17.pdf",
+    "text": "St. Louis River Corridor Trails Plan, 2017 (Archived)",
+    "file": "data/city_files/Duluth/4d57cc_slrc-trail-plan-final-for-council-approval-3-13-17.pdf",
+    "rows": 62,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://duluthmn.gov/media/8693/campus-connector-trail-mmp-final-10-28-19.pdf",
+    "text": "Campus Connector Trail, 2019 (Archived)",
+    "file": "data/city_files/Duluth/e15b34_campus-connector-trail-mmp-final-10-28-19.pdf",
+    "rows": 7,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://duluthmn.gov/media/6781/final-report-15-06-09.pdf",
+    "text": "Cross Country Ski Trail Plan, 2015 (Archived)",
+    "file": "data/city_files/Duluth/72b848_final-report-15-06-09.pdf",
+    "rows": 92,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://duluthmn.gov/media/rt4oj1hw/exhibit-a_master-plan.pdf",
+    "text": "Waabizheshikana: The Marten Trail, 2019 (Archived)",
+    "file": "data/city_files/Duluth/780de7_exhibit-a_master-plan.pdf",
+    "rows": 41,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://geohub-duluthmn.hub.arcgis.com/": "City Maps",
+   "https://police-transparency-duluthmn.hub.arcgis.com/": "View Transparency Hub",
+   "https://geohub-duluthmn.hub.arcgis.com/search?groupIds=4d0f52d99378434f9701c0fd54a12dbc": "View Map",
+   "https://experience.arcgis.com/experience/b7d114c111f04134910025fa1160999c": "View Current Outages",
+   "https://storymaps.arcgis.com/collections/a82dd3aa0ded405b8172cc03db15e7f1": "Duluth's Natural Resources Management Program Plan",
+   "https://linkcheck.duluthmn.gov/?url=https://gei.maps.arcgis.com/apps/instant/basic/index.html?appid=592c0e9fdadb48659cf7dc1479ede3c1&id=41e5&rcpt=kkubiak@duluthmn.gov&tss=1782322734&msgid=903f13f9-6ff3-11f1-bbfa-85a998dd9cd0&html=1&h=dcb0fe9d": "https://gei.maps.arcgis.com/apps/instant/basic/index.html?appid=592c0e9fdadb48659cf7dc1479ede3c1",
+   "https://duluthmn.maps.arcgis.com/apps/instant/basic/index.html?appid=bd82e78872144f22b4938582d6901360": "Public Strategic Lands Map",
+   "https://nrmp-implementation-projects-duluthmn.hub.arcgis.com/": "https://nrmp-implementation-projects-duluthmn.hub.arcgis.com/",
+   "https://duluthmn.maps.arcgis.com/apps/instant/basic/index.html?appid=a6d51179d43742448c7d148cf42d5ef3": "Online Map",
+   "https://duluthmn.maps.arcgis.com/apps/View/index.html?appid=858a94c6007f4bafbe45afa08e47e054": "https://duluthmn.maps.arcgis.com/apps/View/index.html?appid=858a94c6007f4bafbe45afa08e47e054"
+  }
+ },
+ "Somerville": {
+  "files": [
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/residential-parking-permit-application.pdf",
+    "text": "Residential Parking Permit Application",
+    "file": "data/city_files/Somerville/2f639d_residential-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/new-resident-temporary-parking-permit-application.pdf",
+    "text": "New Resident Temporary Parking Permit Application",
+    "file": "data/city_files/Somerville/864557_new-resident-temporary-parking-permit-application.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/visitor-parking-permit-application.pdf",
+    "text": "form",
+    "file": "data/city_files/Somerville/b3ae8e_visitor-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/business-parking-program-permit-application.pdf",
+    "text": "this application",
+    "file": "data/city_files/Somerville/b855b0_business-parking-program-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/business-parking-program-permit-information.pdf",
+    "text": "Click",
+    "file": "data/city_files/Somerville/c9236b_business-parking-program-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/business-parking-program-employer-visitor-permit-application.pdf",
+    "text": "this application",
+    "file": "data/city_files/Somerville/fc360b_business-parking-program-employer-visitor-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/business-parking-program-employer-visitor-permit-information.pdf",
+    "text": "Click here",
+    "file": "data/city_files/Somerville/a070cf_business-parking-program-employer-visitor-permit-information.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/accessible-parking-space-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/97375b_accessible-parking-space-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/accessible-parking-space-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/c4c14e_accessible-parking-space-information.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/contractor-buildings-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/060684_contractor-buildings-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/commercial-vehicle-day-use-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/3ca1ee_commercial-vehicle-day-use-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/commercial-vehicle-day-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/60ea6e_commercial-vehicle-day-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/commercial-vehicle-day-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/fc29d0_commercial-vehicle-day-parking-permit-information.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/parking-consideration-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/f743ba_parking-consideration-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/parking-consideration-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/e916d2_parking-consideration-permit-information.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/extended-visitor-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/49577e_extended-visitor-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/extended-visitor-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/daaa93_extended-visitor-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/health-care-home-professional-parking-permit-application.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/dfb1ce_health-care-home-professional-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/landlord-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/ad200e_landlord-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/landlord-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/c2e3ef_landlord-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/landlord-viewing-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/9c331b_landlord-viewing-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/landlord-viewing-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/0484ea_landlord-viewing-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/medical-caretaker-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/57e543_medical-caretaker-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/medical-caretaker-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/8e3d8d_medical-caretaker-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/military-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/4d51df_military-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/military-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/7e3641_military-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/moving-van-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/264c3e_moving-van-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/moving-van-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/0c9a13_moving-van-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/temporary-no-parking-signage-posting-procedures.pdf",
+    "text": "Temporary Parking Restrictions Permit Sign Posting Policies",
+    "file": "data/city_files/Somerville/162b8a_temporary-no-parking-signage-posting-procedures.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/private-way-parking-petition.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/3febed_private-way-parking-petition.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/private-way-parking-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/4ce9ba_private-way-parking-information.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/application-artist-parking-permit.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/a0b011_application-artist-parking-permit.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/realtor-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/2a921b_realtor-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/realtor-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/5d27c3_realtor-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/religious-organization-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/2fe513_religious-organization-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/religious-organization-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/48e5b7_religious-organization-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/rental-car-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/fb92f6_rental-car-parking-permit-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/rental-car-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/0bbcf2_rental-car-parking-permit-information.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/residential-commercial-vehicle-overnight-parking-permit-application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Somerville/4b1065_residential-commercial-vehicle-overnight-parking-permit-application.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/somervillema-live/s3fs-public/residential-commercial-vehicle-overnight-parking-permit-information.pdf",
+    "text": "More Info",
+    "file": "data/city_files/Somerville/ebe0d7_residential-commercial-vehicle-overnight-parking-permit-information.pd",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.somervillema.gov/": "Somerville Open Data",
+   "https://experience.arcgis.com/experience/fd6ff1d1e00345ba8e7cf4dbe4ee4de5/": ""
+  }
+ },
+ "La Paz": {
+  "files": [],
+  "portals": {}
+ },
+ "Marysville": {
+  "files": [
+   {
+    "url": "https://www.communitytransit.org/docs/default-source/rider-info/bikes-buses/bicyclingandtrailmap.pdf?sfvrsn=41f0488e_15",
+    "text": "Snohomish County Biking and Trail Map",
+    "file": "data/city_files/Marysville/ec9cba_bicyclingandtrailmap.pdf",
+    "rows": 29,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://www.communitytransit.org/docs/default-source/rider-info/bikes-buses/centennialtrailmap_2020.pdf?sfvrsn=b9715b48_9",
+    "text": "Centennial Trail Map",
+    "file": "data/city_files/Marysville/32b143_centennialtrailmap_2020.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://marysvillewa.maps.arcgis.com/apps/instant/atlas/index.html?appid=e182cd538f4942229fb912701218a326": "Open Map in Separate Window",
+   "https://experience.arcgis.com/experience/a536a49349014af799b840245e99366a": "GIS interactive park map",
+   "https://marysville-open-data-marysvillewa.hub.arcgis.com/": "Data",
+   "https://marysvillewa.maps.arcgis.com/apps/instant/sidebar/index.html?appid=793d6ef711da45f494416222ac5f65ad": "Map of Cascade Industrial Center",
+   "https://experience.arcgis.com/experience/fc2e4f80f9b34176be59f435f0e7374c/": "Click here to view full-size map application."
+  }
+ },
+ "Sammamish": {
+  "files": [],
+  "portals": {}
+ },
+ "Greenwich": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/7e81aab4dda142f9ab5c20bec45cafdf": "www.accessgreenwich.org",
+   "https://greenwichgis.maps.arcgis.com/apps/instant/lookup/index.html?appid=dd08394df7544ef7862d946a2ad5d7a5": "Interactive Zoning Map",
+   "https://storymaps.arcgis.com/stories/7c84ef726711418f8ba55209e2c630f0": "Greenwich-Stamford Multi-Use Path StoryMap"
+  }
+ },
+ "Bristol": {
+  "files": [],
+  "portals": {}
+ },
+ "Bowie": {
+  "files": [],
+  "portals": {
+   "https://pgc-transit-transformation-princegeorges.hub.arcgis.com/pages/Initiatives": "the County's Transit Vision Plan page",
+   "https://experience.arcgis.com/experience/26883e02748342fbb8bfc8b3175bd191/": "Bowie Crime Map",
+   "https://gis-cityofbowie.hub.arcgis.com/apps/3253b08f5af24639aafd6f6d5e42fe41/explore": "residency checker"
+  }
+ },
+ "Acıpayam": {
+  "files": [],
+  "portals": {}
+ },
+ "Battle Creek": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/2ee87d4a05f1422a80cf2bf11df33110/": "Interactive Maps",
+   "https://experience.arcgis.com/experience/655b27c0bf0b4712b1c9391ab2940faf": "Garbage/Recycling Map",
+   "https://experience.arcgis.com/experience/71a2a222c8a54625ba7d0d5e7b7caffd/": "view the interactive map",
+   "https://battlecreekmi.maps.arcgis.com/apps/webappviewer/index.html?id=1e2066d26fdf4dd3a64bc7cd0af6d87f": "this interactive map",
+   "https://experience.arcgis.com/experience/655b27c0bf0b4712b1c9391ab2940faf/page/Page-1": "View collection map"
+  }
+ },
+ "Spring Hill": {
+  "files": [],
+  "portals": {}
+ },
+ "Kodungallur Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Thodupuzha Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Granadero Baigorria": {
+  "files": [],
+  "portals": {}
+ },
+ "Peachtree Corners": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/fe919784bef54750ab33ffc4650226f0": "Go to full-page view",
+   "https://peachtree-corners-open-data-peachtreecorners.hub.arcgis.com/": "Open Data Portal",
+   "https://peachtreecorners.maps.arcgis.com/apps/webappviewer/index.html?id=3c624dd3d4ec4cb88aac02cb37bbe79d": "Interactive Map of Pickup Day"
+  }
+ },
+ "Hobbs": {
+  "files": [
+   {
+    "url": "https://hobbsnm.org/files/maps/district map 2021.pdf",
+    "text": "[View Districts] ›",
+    "file": "data/city_files/Hobbs/98e77a_district_map_2021.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://hobbsnm.org/files/hobbs_express/Rider Guide - ADA Complementary Paratransit Service 2022.pdf",
+    "text": "English ›",
+    "file": "data/city_files/Hobbs/9bc9b2_Rider_Guide_-_ADA_Complementary_Paratransit_Service_2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://hobbsnm.org/files/hobbs_express/Spanish Rider Guide - ADA Complementary Paratransit Service FY22.pdf",
+    "text": "Spanish ›",
+    "file": "data/city_files/Hobbs/93ceaf_Spanish_Rider_Guide_-_ADA_Complementary_Paratransit_Service_FY22.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://hobbsnm.org/files/hobbs_express/NEW MAP FY 25.pdf",
+    "text": "[View as (.pdf) file ›]",
+    "file": "data/city_files/Hobbs/cbea04_NEW_MAP_FY_25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://hobbsnm.org/files/hobbs_express/NEW MAP FY 25a.pdf",
+    "text": "Route Map",
+    "file": "data/city_files/Hobbs/8fe7b7_NEW_MAP_FY_25a.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://hobbsnm.org/files/hobbs_express/2025 Bus Rt flyer.pdf",
+    "text": "Route Flyer (English)",
+    "file": "data/city_files/Hobbs/c2fbf4_2025_Bus_Rt_flyer.pdf",
+    "rows": 45,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://hobbsnm.org/files/hobbs_express/New flyer revised  FY25 spanish, revised.pdf",
+    "text": "Route Flyer (EspaÃ±ol)",
+    "file": "data/city_files/Hobbs/724dd1_New_flyer_revised_FY25_spanish_revised.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://hobbsnm.org/files/maps/quick_map.pdf",
+    "text": "Map of Hobbs, New Mexico",
+    "file": "data/city_files/Hobbs/fb09e7_quick_map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://hobbsnm.org/files/maps/street_map.pdf",
+    "text": "Street Index Map",
+    "file": "data/city_files/Hobbs/a1290e_street_map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://hobbsnm.org/files/hobbs_express/route map for website.pdf",
+    "text": "System Map ›",
+    "file": "data/city_files/Hobbs/6cd6fd_route_map_for_website.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://hobbsnm.org/gis.html": "G.I.S.",
+   "https://coh.maps.arcgis.com/apps/dashboards/5ceb2a32dcf0428eab2da7e4f576009a ": ""
+  }
+ },
+ "Maintal": {
+  "files": [],
+  "portals": {
+   "https://iwebgis.com/AEMMaintal/aem/?lon=8.834449357502232&lat=50.15049758677611&zoom=13&select=false&loadingcolor=rgb(120,173,92)": "Anregungs- und Ereignismanagement"
+  }
+ },
+ "Tupelo": {
+  "files": [
+   {
+    "url": "https://tupeloms.gov/wp-content/uploads/2025/01/TUPELO_PRECINCT_MAPS_2025.pdf",
+    "text": "",
+    "file": "data/city_files/Tupelo/f097da_TUPELO_PRECINCT_MAPS_2025.pdf",
+    "rows": 26,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://tupeloms.gov/wp-content/uploads/2025/05/City-of-Tupelo-2025-General-Election-25-5-1-1-26-45-ED.pdf",
+    "text": "General Election Sample Ballots For All Wards",
+    "file": "data/city_files/Tupelo/9b7f4e_City-of-Tupelo-2025-General-Election-25-5-1-1-26-45-ED.pdf",
+    "rows": 121,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://tupeloms.gov/wp-content/uploads/2023/10/2023_TupeloWards_36x36.pdf",
+    "text": "Current Ward Map",
+    "file": "data/city_files/Tupelo/902126_2023_TupeloWards_36x36.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://tupeloms.maps.arcgis.com/apps/webappviewer/index.html?id=c2fe796ea7e44496851f266a432ace03": "CITY OF TUPELO ZONING MAP",
+   "https://tupeloms.maps.arcgis.com/apps/webappviewer/index.html?id=96e02bdac1ab4b1b8c8f05904309eb0e": "CITY OF TUPELO WARD MAP",
+   "https://tupeloms.maps.arcgis.com/apps/webappviewer/index.html?id=3409934d31334e258cfa058354c851a1": "FEMA DESIGNATED FLOOD ZONE AND FLOODWAY MAP",
+   "https://tupeloms.maps.arcgis.com/apps/webappviewer/index.html?id=a1a4d54ef95648f388b7131eb112ec1f": "DESIGNATED SUSPECT SOIL AREAS",
+   "https://tupeloms.maps.arcgis.com/apps/webappviewer/index.html?id=a0a9b4b6a7e946a1b7fbbb29a745ae2d": "OVERLAY AND HISTORIC DISTRICT MAP",
+   "https://tupeloms.maps.arcgis.com/apps/webappviewer/index.html?id=1e5e736877b546d0ad3e155ca8870f69": "TUPELO GIS MAP",
+   "https://tupeloms.maps.arcgis.com/apps/webappviewer/index.html?id=6f5c92305b544299ad75e3167fdc8c35": "TUPELO ANNEXATION MAP"
+  }
+ },
+ "Guilderland": {
+  "files": [
+   {
+    "url": "https://townofguilderland.org/993/GuildHistoricMarkers96-r.pdf",
+    "text": "booklet listing all the\n      roadside highway historic markers in the Town of Guilderland",
+    "file": "data/city_files/Guilderland/7bd9cd_GuildHistoricMarkers96-r.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofguilderland.org/994/2NRHPregisterdocs/AltamontRailroadStation71000524.pdf",
+    "text": "Delaware\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n              and Hudson Railroad Station",
+    "file": "data/city_files/Guilderland/7dda94_AltamontRailroadStation71000524.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofguilderland.org/994/2NRHPregisterdocs/AltamontHDistrict82001054.pdf",
+    "text": "Altamont\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n              Historic District",
+    "file": "data/city_files/Guilderland/458a6b_AltamontHDistrict82001054.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofguilderland.org/994/1NRHPnomdocs/AltamontHD82001054.pdf",
+    "text": "Altamont\n              Historic District",
+    "file": "data/city_files/Guilderland/3ac621_AltamontHD82001054.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofguilderland.org/994/2NRHPregisterdocs/GuilderlandCemeteryVault82001067.pdf",
+    "text": "Guilderland\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n              Cemetery Vault",
+    "file": "data/city_files/Guilderland/0bca32_GuilderlandCemeteryVault82001067.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofguilderland.org/994/1NRHPnomdocs/GuilderlandCemeteryVault90NR01687_312.pdf",
+    "text": "Guilderland\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n              Cemetery Vault",
+    "file": "data/city_files/Guilderland/907655_GuilderlandCemeteryVault90NR01687_312.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofguilderland.org/994/2NRHPregisterdocs/ProspectHillVault82001078.pdf",
+    "text": "Prospect\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n              Hill Cemetery Building",
+    "file": "data/city_files/Guilderland/a3e7f2_ProspectHillVault82001078.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofguilderland.org/994/1NRHPnomdocs/ProspectHillVaultPagesfromGuilderlandMRA64000557-r.pdf",
+    "text": "Prospect\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n              Hill Cemetery Vault",
+    "file": "data/city_files/Guilderland/417445_ProspectHillVaultPagesfromGuilderlandMRA64000557-r.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://townofguilderland.org/994/1NRHPnomdocs/McKownville-Country_Club_Highlands_Historic_District-rv.pdf",
+    "text": "McKownville-CCH\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n              Historic District",
+    "file": "data/city_files/Guilderland/e3105c_McKownville-Country_Club_Highlands_Historic_District-rv.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/d40e342ca82e4cf7ba7d398766c6469b": "Acknowledge",
+   "https://fema.maps.arcgis.com/sharing/oauth2/authorize?client_id=arcgisonline&response_type=code&state=%7B%22portalUrl%22%3A%22https%3A%2F%2Ffema.maps.arcgis.com%22%2C%22uid%22%3A%22qfN-J_m41BQTlnbmUNKkfT5AiCgrFWgwmSX0f9wo1gk%22%7D&expiration=20160&locale=en-us&redirect_uri=https%3A%2F%2Ffema.maps.arcgis.com%2Fhome%2Fwebmap%2Fviewer.html%3Fwebmap%3Dcbe088e7c8704464aa0fc34eb99e7f30&redirectToUserOrgUrl=true&code_challenge=VUOI_z4fFmJd_gxN0ESYWvaGzvIpWfD4eXZ8c8U0FK0&code_challenge_method=S256": "Federal Emergency Management Agency's National Flood Hazard Layer Map",
+   "https://togny.maps.arcgis.com/apps/webappviewer/index.html?id=5b5f54835b4c4ba38586191d70197ce9": "Town of Guilderland Interactive Parks and Trails Interactive Map Viewer",
+   "https://togny.maps.arcgis.com/apps/webappviewer/index.html?id=6739c78affb547b7b83f73314266022c": "online app",
+   "https://togny.maps.arcgis.com/sharing/oauth2/authorize?client_id=arcgisonline&response_type=code&state=%7B%22portalUrl %22%3A%22https %3A%2F%2Ftogny.maps.arcgis.com %22%2C%22uid %22%3A%22btpPCy0hXm71gnJg8vj8BKMmuJXYGl-Ns40OWokxl4k %22%7D&expiration=20160&redirect_uri=https %3A%2F%2Ftogny.maps.arcgis.com %2Fapps %2FMapSeries %2Findex.html %3Fappid %3De08eeb68f4d9433f9b38d76204031e4e&redirectToUserOrgUrl=true&code_challenge=2_t_xZ-L6465FAE47hWjLZlkfYBPc65vJZ6ZBNHrHIE&code_challenge_method=S256": "Existing Conditions Interactive Map",
+   "https://togny.maps.arcgis.com/apps/webappviewer/index.html?id=4766571ed2bf45909ef4bfa2805c9ea3": "Town\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      of Guilderland Interactive Mapping",
+   "https://storymaps.arcgis.com/stories/6eb96e39a4fe4d94bf9589fde0cea385": "Hiking Trails"
+  }
+ },
+ "Manhattan Beach": {
+  "files": [],
+  "portals": {}
+ },
+ "Dalton": {
+  "files": [],
+  "portals": {}
+ },
+ "Kennesaw": {
+  "files": [],
+  "portals": {},
+  "error": "Invalid IPv6 URL"
+ },
+ "Holladay": {
+  "files": [
+   {
+    "url": "https://cityofholladay.com/Document Center/Departments/Public Works/Holladay Pavement 2026_2.0.pdf?t=202605131146140",
+    "text": "Pavement Preservation Map",
+    "file": "data/city_files/Holladay/593093_Holladay_Pavement_2026_2.0.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofholladay.com/Document Center/Building Permit Process/HISTORIC_Required Submittals.pdf?t=202601071637290",
+    "text": "Historic Preservation Designation",
+    "file": "data/city_files/Holladay/d24b76_HISTORIC_Required_Submittals.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofholladay.com/Document Center/How Do I/Applications and Forms/Building & Safety Division/AMENDMENT_Zone map_Required Submittals_PACKET.pdf?t=202403051127000",
+    "text": "Rezone Application Packet",
+    "file": "data/city_files/Holladay/2e4387_AMENDMENT_Zone_map_Required_Submittals_PACKET.pdf",
+    "rows": 33,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofholladay.com/Images/E-Bike  E-Scooter Safety.pdf?t=202610281216100",
+    "text": "E-Bike and E-Scooter Safety Flyer",
+    "file": "data/city_files/Holladay/b3007c_E-Bike_E-Scooter_Safety.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://holladay-general-plan-holladay.hub.arcgis.com/": "General Plan",
+   "https://city-of-holladay-holladay.hub.arcgis.com/": "View Maps/GIS",
+   "https://holladay.maps.arcgis.com/apps/mapviewer/index.html?webmap=5afb053f20044d89afd0962e8d786072": "2700 E Sidewalk Phase 2 (arcgis.com)",
+   "https://holladay.maps.arcgis.com/apps/mapviewer/index.html?webmap=f5d28898d8c04363bfdd3d343f28535a": "Olympus Hills Sidewalk Phase 2 (arcgis.com)"
+  }
+ },
+ "Weatherford": {
+  "files": [
+   {
+    "url": "https://www.tceq.texas.gov/downloads/p2/recycling/electronics/099-25.pdf",
+    "text": "2025 Report to the Legislature",
+    "file": "data/city_files/Weatherford/4f8653_099-25.pdf",
+    "rows": 240,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.tceq.texas.gov/downloads/p2/recycling/electronics/099-24.pdf",
+    "text": "2024 Report to the Legislature",
+    "file": "data/city_files/Weatherford/56122c_099-24.pdf",
+    "rows": 278,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.tceq.texas.gov/downloads/p2/recycling/electronics/09-23.pdf",
+    "text": "2023 Report to the Legislature",
+    "file": "data/city_files/Weatherford/162d51_09-23.pdf",
+    "rows": 306,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://wayback.archive-it.org/414/20250909182953/https://www.tceq.texas.gov/downloads/p2/recycling/electronics/099-22.pdf",
+    "text": "2022 Report to the Legislature",
+    "file": "data/city_files/Weatherford/50000e_099-22.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wayback.archive-it.org/414/20250909183000/https://www.tceq.texas.gov/downloads/p2/recycling/electronics/099-21-1.pdf",
+    "text": "2021 Report to the Legislature",
+    "file": "data/city_files/Weatherford/62f78a_099-21-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wayback.archive-it.org/414/20260310053653/https://www.tceq.texas.gov/downloads/p2/recycling/electronics/099-20.pdf",
+    "text": "2020 Report to the Legislature",
+    "file": "data/city_files/Weatherford/015fab_099-20.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wayback.archive-it.org/414/20260310053645/https://www.tceq.texas.gov/downloads/p2/recycling/electronics/099-19.pdf",
+    "text": "2019 Report to the Legislature",
+    "file": "data/city_files/Weatherford/2a2160_099-19.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wayback.archive-it.org/414/20260310053634/https://www.tceq.texas.gov/downloads/p2/recycling/electronics/099-18.pdf",
+    "text": "2018 Report to the Legislature",
+    "file": "data/city_files/Weatherford/3e4bc7_099-18.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wayback.archive-it.org/414/20250909184119/https://www.tceq.texas.gov/downloads/p2/recycling/electronics/099-17.pdf",
+    "text": "2017 Report to the Legislature",
+    "file": "data/city_files/Weatherford/cee735_099-17.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wayback.archive-it.org/414/20250909184123/https://www.tceq.texas.gov/downloads/p2/recycling/electronics/099-16.pdf",
+    "text": "2016 Report to the Legislature",
+    "file": "data/city_files/Weatherford/b093f3_099-16.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wayback.archive-it.org/414/20250909184127/https://www.tceq.texas.gov/downloads/p2/recycling/electronics/099-15.pdf",
+    "text": "2015 Report to the Legislature",
+    "file": "data/city_files/Weatherford/f2e29b_099-15.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.weatherfordtx.gov/map/": "Trash & Recycling Collection Map"
+  }
+ },
+ "Hobart": {
+  "files": [],
+  "portals": {}
+ },
+ "Kuthuparamba Municipality": {
+  "files": [],
+  "portals": {}
+ }
+}
