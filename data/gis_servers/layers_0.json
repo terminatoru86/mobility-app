@@ -1,0 +1,37 @@
+[
+{
+"city": "Hartford",
+"url": "https://gis.hartford.gov/arcgis/rest/services/PublicWorks/DPW_Bike_Lane/MapServer/1",
+"name": "Bike Rack Locations",
+"count": 74,
+"cat": "racks"
+},
+{
+"city": "Hartford",
+"url": "https://gis.hartford.gov/arcgis/rest/services/PublicWorks/DPW_Bike_Lane/MapServer/2",
+"name": "Bike Rack Location Suggestions",
+"count": 87,
+"cat": "racks"
+},
+{
+"city": "region:drcog.org",
+"url": "https://gis.drcog.org/server/rest/services/RDC/BICYCLE_SHARE_STATIONS/MapServer/0",
+"name": "BICYCLE_SHARE_STATIONS",
+"count": 67,
+"cat": "share"
+},
+{
+"city": "Ames",
+"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/FeatureServer/34",
+"name": "Bike Racks",
+"count": 421,
+"cat": "racks"
+},
+{
+"city": "Ames",
+"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/MapServer/34",
+"name": "Bike Racks",
+"count": 421,
+"cat": "racks"
+}
+]
