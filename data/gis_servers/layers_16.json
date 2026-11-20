@@ -1,0 +1,121 @@
+[
+{
+"city": "Des Moines IA",
+"url": "https://maps.dsm.city/p2/rest/services/External/EXTDynamicBicycleParking/MapServer/0",
+"name": "BicycleParking",
+"count": 551,
+"cat": "racks"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/21",
+"name": "Pool",
+"count": 13,
+"cat": "racks"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/22",
+"name": "Municipal Recreation",
+"count": 18,
+"cat": "racks"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/24",
+"name": "School",
+"count": 206,
+"cat": "racks"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/25",
+"name": "Municipal Building",
+"count": 45,
+"cat": "racks"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/26",
+"name": "Library",
+"count": 57,
+"cat": "racks"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/28",
+"name": "Museum",
+"count": 36,
+"cat": "racks"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/29",
+"name": "Historic Site",
+"count": 93,
+"cat": "racks"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/30",
+"name": "Performance Venue",
+"count": 38,
+"cat": "racks"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/33",
+"name": "LIRR Train Station",
+"count": 41,
+"cat": "racks"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/36",
+"name": "SCT Bus Stop",
+"count": 2626,
+"cat": "racks"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/38",
+"name": "Bethpage Ride Bike Share Station",
+"count": 47,
+"cat": "share"
+},
+{
+"city": "Suffolk County",
+"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/39",
+"name": "Bike Repair Station",
+"count": 6,
+"cat": "repair"
+},
+{
+"city": "region:sandag.org",
+"url": "https://geo.sandag.org/server/rest/services/Bike_Lockers/FeatureServer/0",
+"name": "Bike_Lockers",
+"count": 71,
+"cat": "locker"
+},
+{
+"city": "region:sandag.org",
+"url": "https://geo.sandag.org/server/rest/services/Bike_Lockers/MapServer/0",
+"name": "Bike_Lockers",
+"count": 71,
+"cat": "locker"
+},
+{
+"city": "region:sandag.org",
+"url": "https://geo.sandag.org/server/rest/services/Hosted/Bike_Anywhere_Day_Pit_Stops/FeatureServer/4",
+"name": "Bike Anywhere Pit Stops 2026",
+"count": 115,
+"cat": "racks"
+},
+{
+"city": "Broomfield County",
+"url": "https://gis.drcog.org/server/rest/services/RDC/BICYCLE_SHARE_STATIONS/MapServer/0",
+"name": "BICYCLE_SHARE_STATIONS",
+"count": 67,
+"cat": "share"
+}
+]
