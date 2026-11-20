@@ -1,0 +1,1100 @@
+{
+ "Durham NC": {
+  "files": [],
+  "portals": {}
+ },
+ "Wilmington DE": {
+  "files": [],
+  "portals": {}
+ },
+ "Miami": {
+  "files": [
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/v/1/transportation/2009-city-of-miami-bicycle-master-plan-1.pdf",
+    "text": "View 2009 Original Bike Master Plan (PDF, 19MB)",
+    "file": "data/city_files/Miami/44e4ee_2009-city-of-miami-bicycle-master-plan-1.pdf",
+    "rows": 31,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miamidade.gov/resources/transportation_publicworks/documents/system-map-brochure.pdf",
+    "text": "View Miami-Dade METROBUS Systems Map",
+    "file": "data/city_files/Miami/b4c002_system-map-brochure.pdf",
+    "rows": 53,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/v/5/solid-waste/recycling-calendars/calendars/friday-2-4.pdf",
+    "text": "Recycling Calendar 2026 Friday 2 & 4 as PDF (PDF, 293KB)",
+    "file": "data/city_files/Miami/8d3aec_friday-2-4.pdf",
+    "rows": 73,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/v/1/trolley/mlk-parade-route-detour-1.pdf",
+    "text": "MLK-Parade-Route-Detour-1.pdf (PDF, 261KB)",
+    "file": "data/city_files/Miami/5d5d80_mlk-parade-route-detour-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/planning/sample_base_map_1-508.pdf",
+    "text": "Sample_Map (PDF, 1MB)",
+    "file": "data/city_files/Miami/b9aba3_sample_base_map_1-508.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/capital-improvements/marine-stadium-boat-ramp-parking-plans.pdf",
+    "text": "Click here (PDF, 9MB)",
+    "file": "data/city_files/Miami/62e0b2_marine-stadium-boat-ramp-parking-plans.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/v/5/solid-waste/recycling-calendars/calendars/monday-2-4.pdf",
+    "text": "Recycling Calendar 2026 Monday 2 & 4 (PDF, 136KB)",
+    "file": "data/city_files/Miami/6def9f_monday-2-4.pdf",
+    "rows": 73,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/capital-improvements/new-auburndale-mot.pdf",
+    "text": "Click here to download the above map (PDF, 759KB)",
+    "file": "data/city_files/Miami/135602_new-auburndale-mot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/v/2/trolley/brickell-route-detour-feb7-13.pdf",
+    "text": "View Map and Details (PDF, 2MB)",
+    "file": "data/city_files/Miami/0e97a4_brickell-route-detour-feb7-13.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/trolley/brickell-route-detour-feb7-13.pdf",
+    "text": "Brickell-Route-Detour-Feb7-13.pdf (PDF, 2MB)",
+    "file": "data/city_files/Miami/794c14_brickell-route-detour-feb7-13.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/trolley-maps/detours/biscayne-detour-miami-marathon-2023-1.pdf",
+    "text": "Biscayne-Detour-Miami-Marathon-2023-1.pdf (PDF, 321KB)",
+    "file": "data/city_files/Miami/fd07b8_biscayne-detour-miami-marathon-2023-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/trolley-maps/detours/brickell-key-detour-miami-marathon-2023-1.pdf",
+    "text": "Brickell-Key-Detour-Miami-Marathon-2023-1.pdf (PDF, 395KB)",
+    "file": "data/city_files/Miami/37373e_brickell-key-detour-miami-marathon-2023-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/trolley-maps/detours/coconut-grove-miami-marathon-2023-1.pdf",
+    "text": "Coconut-Grove-Miami-Marathon-2023-1.pdf (PDF, 152KB)",
+    "file": "data/city_files/Miami/5c64c6_coconut-grove-miami-marathon-2023-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/trolley-maps/detours/coral-way-miami-marathon-2023-1.pdf",
+    "text": "coral-way-miami-marathon-2023-1.pdf (PDF, 166KB)",
+    "file": "data/city_files/Miami/44c7da_coral-way-miami-marathon-2023-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/v/5/solid-waste/recycling-calendars/calendars/tuesday-1-3.pdf",
+    "text": "Recycling Calendar 2026 Tuesday 1 & 3 PDF (PDF, 137KB)",
+    "file": "data/city_files/Miami/e343b8_tuesday-1-3.pdf",
+    "rows": 73,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/capital-improvements/pedestrian-baywalk-and-bikeway-under-i-395-presentation-6.16.22.pdf",
+    "text": "Click here (PDF, 11MB)",
+    "file": "data/city_files/Miami/984a9c_pedestrian-baywalk-and-bikeway-under-i-395-presentation-6.16.22.pdf",
+    "rows": 48,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/capital-improvements/miami-river-greenway-4-22-22-community-meeting-presentation.pdf",
+    "text": "Click here to download the April 22nd, 2022 Community Meeting Presentation (PDF, 2MB)",
+    "file": "data/city_files/Miami/4a24c7_miami-river-greenway-4-22-22-community-meeting-presentation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/v/5/solid-waste/recycling-calendars/calendars/tuesday-2-4.pdf",
+    "text": "Recycling Calendar 2026 Tuesday 2 & 4 as PDF (PDF, 296KB)",
+    "file": "data/city_files/Miami/fb7df3_tuesday-2-4.pdf",
+    "rows": 73,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/v/1/trolley/health-district-route-detour-mar_jul-1.pdf",
+    "text": "View Detour Map (PDF, 2MB)",
+    "file": "data/city_files/Miami/0bd869_health-district-route-detour-mar_jul-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/v/5/solid-waste/recycling-calendars/calendars/friday-1-3.pdf",
+    "text": "Recycling Calendar 2026 Friday 1 & 3 as PDF (PDF, 408KB)",
+    "file": "data/city_files/Miami/e08907_friday-1-3.pdf",
+    "rows": 73,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/trolley-maps/detours/ultra-fest-2023.pdf",
+    "text": "Ultra Fest 2023.pdf (PDF, 559KB)",
+    "file": "data/city_files/Miami/6ce3d2_ultra-fest-2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/trolley-maps/brickell-bridge-closure-biscayne-detour-1.pdf",
+    "text": "Brickell-Bridge-Closure-Biscayne-Detour-1.pdf (PDF, 318KB)",
+    "file": "data/city_files/Miami/ec628e_brickell-bridge-closure-biscayne-detour-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.miami.gov/files/sharedassets/public/v/5/solid-waste/recycling-calendars/calendars/monday-1-3.pdf",
+    "text": "Recycling Calendar 2026 Monday 1 & 3 PDF (PDF, 133KB)",
+    "file": "data/city_files/Miami/4fda2c_monday-1-3.pdf",
+    "rows": 73,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/68a111e6b8074d2b8ea47e3869075bea": "Lookup your elected officials and view a map of the commissioner districts.",
+   "https://experience.arcgis.com/experience/cd8295decbff4141b49a0dd02b453628": "This website allows users to search government services by address.",
+   "https://gis.miami.gov/miamizoning/": "Zoning Interactive Tool",
+   "https://gis.miamigov.com/miamizoning/": "View the Interactive Zoning Tool",
+   "https://gis.miami.gov/miamizoning/main": "View a Map of the City of Miami",
+   "https://storymaps.arcgis.com/stories/2b28b7d74d264c0e8fe20c081d8e6c14": "Compost Drop-Off Sites in Miami-Dade County",
+   "https://www.miami.gov/Maps-Data/Data-Explorer/Featured-Datasets/Building-Permits-Open-Data": "Building Permits Open Data Discover more on building permits issued by the City of Miami Building Department since 2014 ",
+   "https://www.miami.gov/Services/Open-Data-Portal": "Open Data Portal Explore and download open data, discover city resources, and engage to solve important local issues.",
+   "https://datahub-miamigis.opendata.arcgis.com/search?collection=Dataset": "Explore all Open Data",
+   "https://miamigis.maps.arcgis.com/apps/webappviewer/index.html?id=b0971e8c87dd4544b5d6fdc180d0a7dd": "VIEW MAP",
+   "https://gis.miami.gov/miamizoning": "This website allows users to search property owners, zoning, land use, and more.",
+   "https://experience.arcgis.com/experience/b92b4491994f4eeebd66be33fbf9a37f": "This website allows users to view Streets by Jurisdiction",
+   "https://datahub-miamigis.opendata.arcgis.com/": "This is the City of Miami's public platform for exploring and downloading open GIS data, discovering city resources, and",
+   "https://miamigis.maps.arcgis.com/apps/instant/nearby/index.html?appid=34416f9eadc6458ebabdd004710c909f": "View Assisted Housing in City of Miami",
+   "https://experience.arcgis.com/experience/de632e60029b49f187c11dea042f87c6": "Allows our citizens to find information on facilities and locations within the City of Miami, including neighborhoods, c",
+   "https://experience.arcgis.com/experience/bd195aae93ec476d81883821a52f9c9f": "Allows our citizens to find information on parks and directions within the City of Miami.",
+   "https://gis.miami.gov/emap/": "This Site is presented as a public service that provides access to information held by the City of Miami, Departments of",
+   "https://miamigis.maps.arcgis.com/apps/webappviewer/index.html?id=bc7bfc2a52584802b4cdf59117700cfc": "Explore the City of Miami Owned Properties (Department of Real Estate and Asset Management)",
+   "http://mdc.maps.arcgis.com/apps/webappviewer/index.html?id=460e90afb4ce464581231031cc80c590": "See tree canopy coverage in Miami-Dade",
+   "https://www.miami.gov/planning/gis.html": "Zoning Interactive Tool"
+  }
+ },
+ "Posadas": {
+  "files": [],
+  "portals": {}
+ },
+ "San Lorenzo": {
+  "files": [
+   {
+    "url": "https://municipalidad-municipalidad.chn0vc.easypanel.host/wp-content/uploads/2023/11/No-4160-Escuela-Pino-Historico-terrenos-II-140823.pdf",
+    "text": "Descargar [184.48 KB]",
+    "file": "data/city_files/San_Lorenzo/5597ff_No-4160-Escuela-Pino-Historico-terrenos-II-140823.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://municipalidad-municipalidad.chn0vc.easypanel.host/wp-content/uploads/2020/06/3892.-Modif.-Art.-4o-y-5o-Ord.-No-2928-y-otras-Estadia-corralon.pdf",
+    "text": "Descargar [478.49 KB]",
+    "file": "data/city_files/San_Lorenzo/de828a_3892.-Modif.-Art.-4o-y-5o-Ord.-No-2928-y-otras-Estadia-corralon.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://municipalidad-municipalidad.chn0vc.easypanel.host/wp-content/uploads/2020/06/3890.-Modif.-Art.-1o-Ord.-No-2905-Estadia-corralon.pdf",
+    "text": "Descargar [476.59 KB]",
+    "file": "data/city_files/San_Lorenzo/c6b5ae_3890.-Modif.-Art.-1o-Ord.-No-2905-Estadia-corralon.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://municipalidad-municipalidad.chn0vc.easypanel.host/wp-content/uploads/2020/06/3888.-Modif.-Art.-2o-Ord.-No-3103-Traslado-al-corralon.pdf",
+    "text": "Descargar [472.03 KB]",
+    "file": "data/city_files/San_Lorenzo/225423_3888.-Modif.-Art.-2o-Ord.-No-3103-Traslado-al-corralon.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://municipalidad-municipalidad.chn0vc.easypanel.host/wp-content/uploads/2020/06/3880.-Comodato-Esc-Pino-Historico.pdf",
+    "text": "Descargar [499.30 KB]",
+    "file": "data/city_files/San_Lorenzo/310bab_3880.-Comodato-Esc-Pino-Historico.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://municipalidad-municipalidad.chn0vc.easypanel.host/wp-content/uploads/2019/07/No-3849-Cartel-Historico-Colegio-Nacional-1-040619.pdf",
+    "text": "Descargar [314.13 KB]",
+    "file": "data/city_files/San_Lorenzo/354740_No-3849-Cartel-Historico-Colegio-Nacional-1-040619.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://municipalidad-municipalidad.chn0vc.easypanel.host/wp-content/uploads/2018/10/Ord-No-3793-Valores-traslado-al-Corralon-Municipal-250918.pdf",
+    "text": "Descargar [298.43 KB]",
+    "file": "data/city_files/San_Lorenzo/29997f_Ord-No-3793-Valores-traslado-al-Corralon-Municipal-250918.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://municipalidad-municipalidad.chn0vc.easypanel.host/wp-content/uploads/2018/10/Ord-No-3792-Valores-estadia-en-Corralon-Municipal-250918.pdf",
+    "text": "Descargar [480.74 KB]",
+    "file": "data/city_files/San_Lorenzo/e28336_Ord-No-3792-Valores-estadia-en-Corralon-Municipal-250918.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://municipalidad-municipalidad.chn0vc.easypanel.host/wp-content/uploads/2018/10/Ord-No-3787-Alquiler-inmueble-Corralon-Municipal-110918.pdf",
+    "text": "Descargar [301.81 KB]",
+    "file": "data/city_files/San_Lorenzo/928934_Ord-No-3787-Alquiler-inmueble-Corralon-Municipal-110918.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Siirt": {
+  "files": [],
+  "portals": {}
+ },
+ "Dayton": {
+  "files": [],
+  "portals": {
+   "https://daytonohio.maps.arcgis.com/apps/instant/lookup/index.html?appid=61aa2be0295e4462afaaeb7cdec75016": "MAP: Recycling, Waste Collection Schedules",
+   "https://dayton-housing-condition-survey-daytonohio.hub.arcgis.com/": "Dayton Housing Condition Survey",
+   "https://dayton-mediation-response-unit-daytonohio.hub.arcgis.com/": "Dayton Mediation Response Unit",
+   "https://daytonohio.gov/350/Dayton-Open-Data": "Translate Page",
+   "https://dayton-recovery-plan-daytonohio.hub.arcgis.com/": "Dayton Recovery Plan",
+   "https://department-of-water-capital-improvement-projects3-daytonohio.hub.arcgis.com/": "Dayton Water Capital Improvement Projects",
+   "https://dayton-transparency-portal-1-daytonohio.hub.arcgis.com/": "Police Transparency Portal",
+   "https://daytonohio.gov/588/Dayton-Open-Data": "Dayton Open Data",
+   "https://dayton-forward-2040-daytonohio.hub.arcgis.com/": "Dayton Forward: Comprehensive Plan",
+   "https://daytonohio.maps.arcgis.com/apps/webappviewer/index.html?id=c6f014b91f8c45c6a25bfbdd789e855a": "Interactive Zoning Map",
+   "https://daytonohio.maps.arcgis.com/apps/webappviewer/index.html?id=a66b46db990c41c780104fd95c65a710": "Collection Schedule Map",
+   "http://www.daytonohio.gov/350/Dayton-Open-Data": "Dayton Open Data",
+   "http://www.daytonohio.gov/588/Dayton-Open-Data": "Dayton Open Data",
+   "https://www.daytonohio.gov/350/Dayton-Open-Data": "Dayton Open Data",
+   "https://www.daytonohio.gov/588/Dayton-Open-Data": "Dayton Open Data"
+  }
+ },
+ "College Station": {
+  "files": [
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/uxweyrhi/map-45-proposed-bicycle-plan.pdf",
+    "text": "PDF Map Bicycle Master Plan The Active Transportation Master Plan is an important component of the City’s Comprehensive ",
+    "file": "data/city_files/College_Station/1e205b_map-45-proposed-bicycle-plan.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/dkvcipw3/waste-collection-map-user-guide.pdf",
+    "text": "Waste Collection Map User Guide",
+    "file": "data/city_files/College_Station/5ca2d7_waste-collection-map-user-guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/ktiekfui/interactive-map-user-guide.pdf",
+    "text": "City of College Station's Interactive Map",
+    "file": "data/city_files/College_Station/717fac_interactive-map-user-guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cstx.gov/media/apqlff4w/ng_district.pdf",
+    "text": "Northgate District Map",
+    "file": "data/city_files/College_Station/333939_ng_district.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cstx.gov/media/cdtagahd/northgate_parking.pdf",
+    "text": "Northgate Parking Asset Locations",
+    "file": "data/city_files/College_Station/6c3a00_northgate_parking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/pebfrfvv/ng_surfacelot.pdf",
+    "text": "View Map",
+    "file": "data/city_files/College_Station/4acfdb_ng_surfacelot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/eo5l50b5/parkmobilezonemap.pdf",
+    "text": "PARKING MAP",
+    "file": "data/city_files/College_Station/ace599_parkmobilezonemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/abzbxobd/ng_loadingzones.pdf",
+    "text": "see map for location",
+    "file": "data/city_files/College_Station/56b0c2_ng_loadingzones.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/jv1faeji/parking-removal-policy-11-24-25.pdf",
+    "text": "found here",
+    "file": "data/city_files/College_Station/cf7b3e_parking-removal-policy-11-24-25.pdf",
+    "rows": 16,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/gtppp0xt/adoptagreenwaycleanuptips.pdf",
+    "text": "Cleanup Tips",
+    "file": "data/city_files/College_Station/cffb16_adoptagreenwaycleanuptips.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/qwhakb1v/adoptagreenwaystatement.pdf",
+    "text": "Statement of Understanding",
+    "file": "data/city_files/College_Station/9b40a4_adoptagreenwaystatement.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/cgcnv5a2/adoptagreenwayvolunteerreleaseform.pdf",
+    "text": "Release and Indemnification Form",
+    "file": "data/city_files/College_Station/8ad568_adoptagreenwayvolunteerreleaseform.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/aclhkaal/college-station-cemetery-ordinances-1.pdf?key=4zeVGnG7%2fVnTlqhwNr6tKOAbbzV0l1iWRAa7kgswvDvaaVPU21WoDxSR9XXvYPf9fpFHqwPesdyRdoTZ0Gi%2bCnt%2bBVLX07LhYlBCE7hm33vwY3169YbEd%2bEgz0IH1JIQ%2bGATVSKZD6N%2bFPjBn4jJKQq5YJA89D%2bbnD1PNYPUqjLl%2b3mEB7ZFdnbjliAjtBrkUr7K%2bg%3d%3d",
+    "text": "General Ordinances",
+    "file": "data/city_files/College_Station/f786c8_college-station-cemetery-ordinances-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/g4zohhxs/college-station-cemetery-ordinances.pdf",
+    "text": "College Station Cemetery Ordinances",
+    "file": "data/city_files/College_Station/39d448_college-station-cemetery-ordinances.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/liinjxpz/cemetery-bench-installation-permit-form.pdf",
+    "text": "Cemetery Bench Installation Permit - Form",
+    "file": "data/city_files/College_Station/da5943_cemetery-bench-installation-permit-form.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/xmudg4xp/cs_home_of_tamu-anneboykin.pdf",
+    "text": "A City on the Right Track",
+    "file": "data/city_files/College_Station/c521d9_cs_home_of_tamu-anneboykin.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/qzecqekl/bikeablechecklist.pdf",
+    "text": "Bikeable Checklist",
+    "file": "data/city_files/College_Station/3481e4_bikeablechecklist.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/ztalsnpi/bikemap2024.pdf",
+    "text": "2024 Bike Map",
+    "file": "data/city_files/College_Station/00ed70_bikemap2024.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/5nxfs1on/game-day-traffic-map_final.pdf",
+    "text": "",
+    "file": "data/city_files/College_Station/a77ff4_game-day-traffic-map_final.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/cvbgfoye/lcp-map_85x11.pdf",
+    "text": "Trails Map",
+    "file": "data/city_files/College_Station/b1fa21_lcp-map_85x11.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/lxkdzbt1/lickcreekparkgreenway.pdf",
+    "text": "Click here to view the map",
+    "file": "data/city_files/College_Station/3414f7_lickcreekparkgreenway.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/ruldxlku/cityhallmap.pdf",
+    "text": "Interior Map of City Hall",
+    "file": "data/city_files/College_Station/318338_cityhallmap.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/vrtlpvac/historical-marker-application.pdf",
+    "text": "Historical Marker Program Application Packet",
+    "file": "data/city_files/College_Station/08d524_historical-marker-application.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/aseh5ni1/historiccampushomesbrochure.pdf",
+    "text": "View the Historic Campus Homes brochure",
+    "file": "data/city_files/College_Station/979dc3_historiccampushomesbrochure.pdf",
+    "rows": 127,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cstx.gov/media/apqlff4w/ng_district.pdf",
+    "text": "Northgate District Map",
+    "file": "data/city_files/College_Station/2e7a0e_ng_district.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cstx.gov/media/cdtagahd/northgate_parking.pdf",
+    "text": "Northgate Parking Asset Locations",
+    "file": "data/city_files/College_Station/81d47e_northgate_parking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/apgngyyh/bikeandpedmasterplanupdate.pdf",
+    "text": "Bikeway and Pedestrian Master Plan",
+    "file": "data/city_files/College_Station/0ed5c6_bikeandpedmasterplanupdate.pdf",
+    "rows": 41,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/22jlouoz/greenwaysmasterplan.pdf",
+    "text": "Greenways Master Plan",
+    "file": "data/city_files/College_Station/40b396_greenwaysmasterplan.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/uzghn125/bikemapbookpart1.pdf",
+    "text": "Map Book Part 1 (Overview, Table of Changes, Citywide Maps and Grid Pages 1-6)",
+    "file": "data/city_files/College_Station/c2065a_bikemapbookpart1.pdf",
+    "rows": 39,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/w0igwnaw/bikemapbookpart2.pdf",
+    "text": "Map Book Part 2 (Grid Pages 7-15)",
+    "file": "data/city_files/College_Station/c93e99_bikemapbookpart2.pdf",
+    "rows": 48,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/ufdd2zn3/bikemapbookpart3.pdf",
+    "text": "Map Book Part 3 (Grid Pages 16-28)",
+    "file": "data/city_files/College_Station/9d90b5_bikemapbookpart3.pdf",
+    "rows": 74,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/xxebhrvg/pedmapbookpart1.pdf",
+    "text": "Map Book - Part 1 (Overview, Table of Changes, Citywide Maps and Grid Pages 1-7)",
+    "file": "data/city_files/College_Station/a9f7d5_pedmapbookpart1.pdf",
+    "rows": 42,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/ce2ecimf/pedmapbookpart2.pdf",
+    "text": "Map Book - Part 2 (Grid Pages 8-15)",
+    "file": "data/city_files/College_Station/3bd942_pedmapbookpart2.pdf",
+    "rows": 39,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/qoxdr1ug/pedmapbookpart3.pdf",
+    "text": "Map Book - Part 3 (Grid Pages 16-26)",
+    "file": "data/city_files/College_Station/6ca4fa_pedmapbookpart3.pdf",
+    "rows": 61,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/2t3ljdbk/wikimapresults.pdf",
+    "text": "WikiMAP",
+    "file": "data/city_files/College_Station/a940eb_wikimapresults.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/tq4kicm4/minorrepair_checklist.pdf",
+    "text": "Minor Repair Checklist",
+    "file": "data/city_files/College_Station/36c585_minorrepair_checklist.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/i2aj1zgo/minorrepair_application.pdf",
+    "text": "Minor Repair Application",
+    "file": "data/city_files/College_Station/b222b8_minorrepair_application.pdf",
+    "rows": 28,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/cstx-us/media/q5gnwtqh/minorrepairprogramsummary.pdf",
+    "text": "",
+    "file": "data/city_files/College_Station/910372_minorrepairprogramsummary.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/0e8f97be3d544d1ab0045144a9aa968c/": "Parks, Trails and Playgrounds",
+   "https://data.cstx.gov/": "Open Data",
+   "https://data-cstx.opendata.arcgis.com/": "Download GIS Data",
+   "https://experience.arcgis.com/experience/187d1b84bc6d431fb554894c2e57bf26": "Application 1940 Historical Imagery Slider A web experience that allows the user to compare historical College Station i",
+   "https://experience.arcgis.com/experience/c673b79b85fd4e32ab263419bcfd5fd4": "Application Bike Parking Map The Bike Parking Map highlights bike parking locations across College Station, with details",
+   "https://experience.arcgis.com/experience/9468b19d6be24052a055728d7d8d9d63": "Application City of College Station Interactive Map This map contains various features and provides relevant information",
+   "https://experience.arcgis.com/experience/7dbacf53445540cea1274661963d1c94/": "Application Community Services Dashboard This dashboard provides the end user with two interactive maps, one of which di",
+   "https://experience.arcgis.com/experience/55b46648610e44c8bf11fb469d649dfe/page/Main": "Application Economic Development Map The interactive Economic Development Map shows business parks, retail districts, la",
+   "https://experience.arcgis.com/experience/0e8f97be3d544d1ab0045144a9aa968c": "Application Parks Take a look at the parks and amenities College Station has to offer. Tags: parks, recreation, amenitie",
+   "https://cstx.maps.arcgis.com/apps/webappviewer/index.html?id=1b2d3c188cd5479e9dbc61b6448f714b": "Application Planning and Development This map shows the most recent plat, subdivision, zoning, and property information.",
+   "https://experience.arcgis.com/experience/af2324705a1f4ece8645587d3d49f017": "Application Solid Waste Collection Days This app displays an interactive map of the City's collection days for bulk and ",
+   "https://experience.arcgis.com/experience/eec356bd8ec043b3a66b13706eb30e29/": "Application Transportation Infrastructure Maps This web experience displays three interactive maps that allow the end us",
+   "https://cstx.maps.arcgis.com/apps/instant/basic/index.html?appid=bab6512ee20340149e1a2070430cba2d": "Short-Term Rentals Map"
+  }
+ },
+ "Temecula": {
+  "files": [],
+  "portals": {}
+ },
+ "Chico": {
+  "files": [
+   {
+    "url": "https://d16k74nzx9emoe.cloudfront.net/eca90a0b-2b01-4710-8f68-c7fbe0fa9626.pdf",
+    "text": "FREE 2-HOUR PARKING IN DOWNTOWN FOR THE HOLIDAYS",
+    "file": "data/city_files/Chico/fc728c_eca90a0b-2b01-4710-8f68-c7fbe0fa9626.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chico.ca.us/__catapult_pages/0180feec-5f06-40e8-9f5d-0e2ab17374c9/documents/I-Want-To/Pay/Parking-Violations/request_for_administrative_review_-_parking_violations_0.pdf",
+    "text": "Administrative Review",
+    "file": "data/city_files/Chico/94dd2a_request_for_administrative_review_-_parking_violations_0.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chicoca.gov/documents/City-Services/Solid-Waste--Recycling/wmsinglefamilywastefranchise.pdf",
+    "text": "Residential Franchise Agreement",
+    "file": "data/city_files/Chico/0e4038_wmsinglefamilywastefranchise.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://d16k74nzx9emoe.cloudfront.net/f7ce9ebe-730f-4db3-b2c3-98547677cc22/2025-26%20Residential%20Waste%20-%20Recyclilng%20Rates.pdf",
+    "text": "2025-2026 Rates",
+    "file": "data/city_files/Chico/0236ac_2025-26_20Residential_20Waste_20-_20Recyclilng_20Rates.pdf",
+    "rows": 62,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://chicoca.gov/documents/City-Services/Solid-Waste--Recycling/commercialareamap.pdf",
+    "text": "Commercial Franchise Zone Map",
+    "file": "data/city_files/Chico/010897_commercialareamap.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://d16k74nzx9emoe.cloudfront.net/1a2c5e37-35c5-4f06-b4a4-e01d8c89d0bd/2025-26%20Commercial%20Waste%20-%20Recycling%20Rates.pdf",
+    "text": "2025-2026 Rates",
+    "file": "data/city_files/Chico/499692_2025-26_20Commercial_20Waste_20-_20Recycling_20Rates.pdf",
+    "rows": 79,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://d16k74nzx9emoe.cloudfront.net/51ca88bd-8850-4d2c-a2c4-4ac2baeb4af4/City%20of%20Chico%20SB%201383%20Mandatory%20Organics%20and%20Recycling%20Program.pdf",
+    "text": "SB 1383: Mandatory Organics & Recycling Program",
+    "file": "data/city_files/Chico/7312cd_City_20of_20Chico_20SB_201383_20Mandatory_20Organics_20and_20Recycling",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chicoca.gov/documents/City-Services/Solid-Waste--Recycling/Edible-food-generator-donation-guide_Chico.pdf",
+    "text": "Edible Food Recovery Options",
+    "file": "data/city_files/Chico/c357f8_Edible-food-generator-donation-guide_Chico.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chico.ca.us/__catapult_pages/0026be96-7032-4988-b358-08ee54a9c3d3/documents/City-Services/Solid-Waste--Recycling/Edible-food-generator-donation-guide_Chico.pdf",
+    "text": "Edible Food Generator Donation Guide",
+    "file": "data/city_files/Chico/98d495_Edible-food-generator-donation-guide_Chico.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://d16k74nzx9emoe.cloudfront.net/98334a55-be1f-4857-9882-1ff421145e04/Electric%20Scooter%20-1.pdf",
+    "text": "Electric Machine Fact Sheet for Students & Parents",
+    "file": "data/city_files/Chico/866e9c_Electric_20Scooter_20-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://chico.maps.arcgis.com/apps/webappviewer/index.html?id=65c4f6c832e644da866c81c299a12a38": "City Council District Map",
+   "https://chico.maps.arcgis.com/apps/webappviewer/index.html?id=e1f65977a5944dcd8e857d7b24008c19": "Beat Map",
+   "https://experience.arcgis.com/experience/933f5d9bdb9f4f06b609f40a00601ae1": "",
+   "https://chico.ca.us/__catapult_pages/c4c57b46-4efa-4bca-9581-800136b4e242/__catapult_pages/7307e7ac-c2d3-4734-aeea-2872c78b2469/Contact-GIS.html": "Contact GIS",
+   "https://experience.arcgis.com/experience/30067026f5d6408bb617d0f1da548feb": "City Web Map",
+   "https://gis.chicoca.gov/portal/apps/experiencebuilder/experience/?id=21eccf50ea88444489597cf613496a8a": "City Web Map",
+   "https://chico.maps.arcgis.com/apps/instant/basic/index.html?appid=9eff098233ea481997ecbc6174cce544": "Chico Bike Map",
+   "https://experience.arcgis.com/experience/ebe6ce2037c645dfb9862c72610e5807": "Street Sweeping Map & Schedule",
+   "https://experience.arcgis.com/experience/c86aba63fac34bee8fe90843184217cd": "",
+   "https://chico.ca.us/How-Can-We-Help/Bicycle-License/__catapult_pages/d19ec72b-5f5d-406f-879a-c7613cc3a969/__catapult_pages/7307e7ac-c2d3-4734-aeea-2872c78b2469/Contact-GIS.html": "GIS Staff Directory",
+   "https://buttecountygis.maps.arcgis.com/apps/webappviewer/index.html?id=9c92e0a2d2e0415fa5248d70cd644a82": "",
+   "https://storymaps.arcgis.com/stories/8fb4b14f44b1474285ee4734fb0bd4f6": "StoryMap is an interactive graphic tool",
+   "https://experience.arcgis.com/experience/6a9cb66bb1824cd98756812af41292a0": "LRA Fire Hazard Severity Zone Viewer",
+   "https://chico.ca.us/How-Can-We-Help/Bicycle-License/__catapult_pages/c4c57b46-4efa-4bca-9581-800136b4e242/__catapult_pages/7307e7ac-c2d3-4734-aeea-2872c78b2469/Contact-GIS.html": "Contact GIS",
+   "https://chico.ca.us/Departments/Public-Works/Traffic-Engineering/__catapult_pages/d19ec72b-5f5d-406f-879a-c7613cc3a969/__catapult_pages/7307e7ac-c2d3-4734-aeea-2872c78b2469/Contact-GIS.html": "GIS Staff Directory",
+   "https://chico.ca.us/Departments/Public-Works/Traffic-Engineering/__catapult_pages/c4c57b46-4efa-4bca-9581-800136b4e242/__catapult_pages/7307e7ac-c2d3-4734-aeea-2872c78b2469/Contact-GIS.html": "Contact GIS"
+  }
+ },
+ "Şırnak": {
+  "files": [],
+  "portals": {}
+ },
+ "Clarkstown": {
+  "files": [
+   {
+    "url": "https://www.clarkstown.gov/wp-content/uploads/2021/10/Clarkstown-Official-Map.pdf",
+    "text": "Official Town Map",
+    "file": "data/city_files/Clarkstown/b235cc_Clarkstown-Official-Map.pdf",
+    "rows": 16,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.clarkstown.gov/wp-content/uploads/2022/11/Zoning-Map11102020.pdf",
+    "text": "Town Zoning Map",
+    "file": "data/city_files/Clarkstown/67bee7_Zoning-Map11102020.pdf",
+    "rows": 60,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://www.clarkstown.gov/wp-content/uploads/2021/09/2012-12-14-Congers-Lake-Trail-Map.pdf",
+    "text": "Map of Congers Lake",
+    "file": "data/city_files/Clarkstown/83efcb_2012-12-14-Congers-Lake-Trail-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Flint": {
+  "files": [
+   {
+    "url": "https://www.cityofflint.com/wp-content/uploads/2023/05/Priority-Waste-Acceptable-Recycling-Materials.pdf",
+    "text": "Download",
+    "file": "data/city_files/Flint/b7d20d_Priority-Waste-Acceptable-Recycling-Materials.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.prioritywaste.com/wp-content/uploads/2023/02/Priority-Waste-Acceptable-Recycling-Materials.pdf",
+    "text": "See Full List of Materials",
+    "file": "data/city_files/Flint/7ca166_Priority-Waste-Acceptable-Recycling-Materials.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflint.com/wp-content/uploads/2024/05/COF_Wards_2024_-_FINTGIS.pdf",
+    "text": "City of Flint Ward Map 2024",
+    "file": "data/city_files/Flint/8cf6cf_COF_Wards_2024_-_FINTGIS.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflint.com/wp-content/uploads/2024/09/Recycling-FAQ.pdf",
+    "text": "FAQ: Get answers to frequently asked questions",
+    "file": "data/city_files/Flint/e504bc_Recycling-FAQ.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflint.com/wp-content/uploads/2024/09/Recycling-FAQ-1.pdf",
+    "text": "Download",
+    "file": "data/city_files/Flint/77bc10_Recycling-FAQ-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofflint.com/wp-content/uploads/2024/09/Recycling-Info-Card.pdf",
+    "text": "Download",
+    "file": "data/city_files/Flint/044077_Recycling-Info-Card.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://flint.maps.arcgis.com/apps/dashboards/f03e41dd00ee499398929aef22b23090": "View Interactive Ward Map"
+  }
+ },
+ "Woodbury": {
+  "files": [],
+  "portals": {}
+ },
+ "Camarillo": {
+  "files": [
+   {
+    "url": "https://ci.camarillo.ca.us/2025- CAT Fixed Route Brochure.pdf",
+    "text": "CAT (BUS) SCHEDULE (PDF)",
+    "file": "data/city_files/Camarillo/532091_2025-_CAT_Fixed_Route_Brochure.pdf",
+    "rows": 15,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://ci.camarillo.ca.us/Residents/Trash & Recycling/odds and ends guide.pdf",
+    "text": "ODDS N ENDS GUIDE (PDF)",
+    "file": "data/city_files/Camarillo/f25382_odds_and_ends_guide.pdf",
+    "rows": 95,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://ci.camarillo.ca.us/Residents/Trash & Recycling/1.14.2026 RECYCLING & DISPOSAL GUIDE for website.pdf",
+    "text": "Recycling & Disposal Guide",
+    "file": "data/city_files/Camarillo/c2694d_1.14.2026_RECYCLING_DISPOSAL_GUIDE_for_website.pdf",
+    "rows": 44,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://ci.camarillo.ca.us/Visitors/Camarillo Visitor Guide Map.pdf",
+    "text": "CAMARILLO VISITOR GUIDE MAP",
+    "file": "data/city_files/Camarillo/c7a6db_Camarillo_Visitor_Guide_Map.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://ci.camarillo.ca.us/GENERAL REFERENCE MAP-24x49_NAD83.pdf?t=202407301304190",
+    "text": "",
+    "file": "data/city_files/Camarillo/70876f_GENERAL_REFERENCE_MAP-24x49_NAD83.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://ci.camarillo.ca.us/Departments/Administrative Services/GIS/BIKEWAY NETWORK PATH MAP.pdf?t=202111041521260",
+    "text": "",
+    "file": "data/city_files/Camarillo/66ea50_BIKEWAY_NETWORK_PATH_MAP.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://camarillo.maps.arcgis.com/apps/instant/lookup/index.html?appid=0ec9a95a66c045f491b493fe7564fc22": "MY DISTRICT",
+   "https://experience.arcgis.com/experience/1adb751cf42b4af4b2c3b3b92ff9f1d8": "Click Here",
+   "https://experience.arcgis.com/experience/021fb06fe70a48e2b6da4c623a2a435a": "",
+   "https://camarillo.maps.arcgis.com/apps/instant/basic/index.html?appid=ea8fdbb4619b4363b89eb2696eea0759": "",
+   "https://camarillo.maps.arcgis.com/home/index.html": "City of Camarillo GIS Maps (arcgis.com)",
+   "https://camarillo.maps.arcgis.com/apps/instant/lookup/index.html?appid=2bf514d0cf3b4d38837a3315503fa51c&find=93012%252C%2520Camarillo%252C%2520California": "WATER SERVICE AREA MAP",
+   "https://camarillo.maps.arcgis.com/apps/instant/lookup/index.html?appid=2bf514d0cf3b4d38837a3315503fa51c": "area map.",
+   "https://camarillo.maps.arcgis.com/apps/instant/lookup/index.html?appid=da96521fb00f4edab8f4a581dfa75fa1": "Residential Trash & Recycling Schedule (arcgis.com)",
+   "https://experience.arcgis.com/experience/1adb751cf42b4af4b2c3b3b92ff9f1d8/page/Refuse-%26-Street-Sweeping": "",
+   "https://camarillo.maps.arcgis.com/apps/instant/lookup/index.html?appid=11d5162d2b7f49489759da17b8e18b0e&find=601%2520Carmen%2520Dr%252C%2520Camarillo%252C%2520CA%252C%252093010%252C%2520USA": "click here to search your address"
+  }
+ },
+ "San Marcos": {
+  "files": [
+   {
+    "url": "https://bikeleague.org/wp-content/uploads/bfareportcards/bfc/2024/San_Marcos_TX.pdf",
+    "text": "https://bikeleague.org/wp-content/uploads/bfareportcards/bfc/2024/San_Marcos_TX.pdf",
+    "file": "data/city_files/San_Marcos/f89d91_San_Marcos_TX.pdf",
+    "rows": 64,
+    "bike_rows": 16
+   }
+  ],
+  "portals": {
+   "https://opendata.sanmarcostx.gov": "All GIS & Open Data",
+   "https://opendata.sanmarcostx.gov/": "GIS Data Downloads",
+   "https://data-cosm.hub.arcgis.com/": "Open Data Portal",
+   "https://survey123.arcgis.com/share/6150ec9c49f24764be52a578b10dec5c?hide=footer": "SMTX Connect Form",
+   "https://cosm.maps.arcgis.com/apps/webappviewer/index.html?id=4432ba66272f4dd0b7d2ae1c3be6f63e": "",
+   "https://experience.arcgis.com/experience/90c19707db94427099c5e55f67f3279d?org=CoSM": "San Marcos Parks Explorer",
+   "https://www.arcgis.com/apps/dashboards/50ab9570384144efb5a304c10e07c222": "Marijuana Enforcement Dashboard",
+   "https://experience.arcgis.com/experience/f9792ee7f09842d4b7f83093f08bb6c0": "Cite and Release Dashboard",
+   "https://sanmarcostx.gov/3354/Open-Data-Portal": "Open Data Portal",
+   "https://experience.arcgis.com/experience/688aec65de67474cb3aa89d334893284": "Interactive City of San Marcos Map",
+   "https://experience.arcgis.com/experience/dc64878cbe4f4764b0255d964bde5ad1": "City of San Marcos address look up",
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd": "View the National Flood Hazard Layer",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=5852ea902db44e55bfce395799315f9c": "FEMA Flood Map Changes Viewer",
+   "https://experience.arcgis.com/experience/b904d7b5ef2f4563ab6fabe4c47179ae/": "Floodplain Map",
+   "https://data-cosm.hub.arcgis.com/datasets/204b672a478d4f82af6f017090a976e8_3/explore?location=29.848877%2C-97.928065%2C11": "Transportation Master Plan",
+   "https://data-cosm.hub.arcgis.com/datasets/a84e8fbadaa647ee96118c2aae4e8e04_5/explore?location=29.847857%2C-97.911841%2C11": "Transportation Master Plan: Greenway Facilities",
+   "https://experience.arcgis.com/experience/4207f14bafea411a9c067b041591fc55/": "10-Year Capital Improvement Plan Planned infrastructure improvements through 2035",
+   "https://experience.arcgis.com/experience/3ceff76520aa4c81a8d6723cf7d3c98b/page/Projects": "Projects In Design and Under Construction Active projects with monthly updates",
+   "https://cosm.maps.arcgis.com/apps/webappviewer/index.html?id=a5903f2569f9431eb18d2f404ef1c9fb": "5-Year Sidewalk Maintenance & Gap Infill Program Planned sidewalk projects and maintenance",
+   "https://cosm.maps.arcgis.com/apps/webappviewer/index.html?id=7a09e66341fc41729c2121ce38f9aeb0": "5-Year Street Maintenance Plan Planned street maintenance including repaving and resurfacing",
+   "https://experience.arcgis.com/experience/f649a4a66e8a41cf902180fd016f6b74": "Projects in Construction and Design",
+   "https://cosm.maps.arcgis.com/apps/instant/lookup/index.html?appid=c4e8db7613264d33beba4f92fead1f04": "here",
+   "https://storymaps.arcgis.com/stories/03f8daafcdf146668e7d5aa086064ef8": "",
+   "https://experience.arcgis.com/experience/0f694062f20e4e098ef700a5743bd863": "Look Up Your Service Route Here",
+   "https://storymaps.arcgis.com/stories/fb339137e8fe42d780a23ac4adc401db": "Monarch Fest & Fall Native Plant Sale",
+   "https://storymaps.arcgis.com/collections/c7b40bfe12164b89a39a6e22721baa31": "Native Plant Sales",
+   "https://storymaps.arcgis.com/stories/3ed38971b51a4e3282f9cbb3e00d3ce6": "Snakefessst!",
+   "https://storymaps.arcgis.com/stories/5dcf05b40ca043019571618efcd0e78f": "Sustainability Fair & Spring Native Plant Sale",
+   "https://storymaps.arcgis.com/collections/daf7fa3a8d1547b5a0ae14628f1441c6": "Explore San Marcos Parks",
+   "https://experience.arcgis.com/experience/1cea554233874732b8c6fa78ab3d515b": ""
+  }
+ },
+ "Coon Rapids": {
+  "files": [],
+  "portals": {
+   "https://coonrapidsmn.maps.arcgis.com/home/index.html": "Map It (zoning, parks and more)",
+   "https://coonrapidsmn.maps.arcgis.com/apps/instant/basic/index.html?appid=12b1e1a5dcca4d778fc48aca4aed130a": ""
+  }
+ },
+ "Viedma": {
+  "files": [],
+  "portals": {}
+ },
+ "Midwest City": {
+  "files": [
+   {
+    "url": "https://www.odot.org/maps/aadt/2014/UrbanMap.pdf",
+    "text": "Oklahoma Department of Transportation Information",
+    "file": "data/city_files/Midwest_City/f89de2_UrbanMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://hub-mwcok.opendata.arcgis.com/": "https://hub-mwcok.opendata.arcgis.com/",
+   "https://survey123.arcgis.com/share/c553bafdfeff4da4a06529a8a40302b4": "Click here"
+  }
+ },
+ "Diamond Bar": {
+  "files": [],
+  "portals": {}
+ },
+ "Normal": {
+  "files": [],
+  "portals": {
+   "https://tongis.maps.arcgis.com/apps/instant/lookup/index.html?appid=a3c876fcef6c4957a2083bd7fe4b3a1b": "Leaf Collection Zone",
+   "https://town-of-normal-open-data-tongis.hub.arcgis.com/": "Open Data Portal",
+   "https://town-of-normal-open-data-tongis.hub.arcgis.com/pages/finance": "Financial Dashboard",
+   "https://www.mcgis.org/": "McLean County GIS Resources",
+   "https://experience.arcgis.com/experience/8ee41fdb613b42879a4b861dcf60f5c4": "Zoning Map",
+   "https://tongis.maps.arcgis.com/apps/instant/nearby/index.html?appid=5b095d6177164b45880185b59793bc3b": "Parking Map",
+   "https://mcleancounty-mcggis.hub.arcgis.com/apps/678203259fae40b6ad9475a9304806ae": "Warming & Cooling Shelters",
+   "https://mcleangis.maps.arcgis.com/apps/webappviewer/index.html?id=541971ad75f248c38c9bc6ffcd3a7516": "Assessed Property Value",
+   "https://experience.arcgis.com/experience/09937d80e7b8421e94fff9af03237b32": "Road Closures",
+   "https://www.arcgis.com/apps/dashboards/a369351085bd43009eb6aff2c20e4371": "Data Dashboard",
+   "https://town-of-normal-open-data-tongis.hub.arcgis.com/apps/53975d3836ba44b5b0b99355bf8a5ce7/explore": "Zoning",
+   "https://www.arcgis.com/apps/dashboards/3bbece5de97041fe87acfde81958c49b": "Crime Data",
+   "https://tongis.maps.arcgis.com/apps/instant/nearby/index.html?appid=5b095d6177164b45880185b59793bc3b&sliderDistance=250": ""
+  }
+ },
+ "Mooresville": {
+  "files": [],
+  "portals": {}
+ },
+ "Minot": {
+  "files": [],
+  "portals": {
+   "https://geohub-minotnd.hub.arcgis.com/": "Maps",
+   "https://geohub-minotnd.hub.arcgis.com/apps/dd3ba20ecbcb46519f6ab7e4df12688c/explore": "City of Minot GIS Map",
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=e7a7dc3ebd7f4ad39bb8e485bb64ce44": "Is my property impacted?",
+   "https://geohub-minotnd.hub.arcgis.com/apps/cfc829f6a4e44194876161ff889a975d/explore": "Burial Locations"
+  }
+ },
+ "Altamonte Springs": {
+  "files": [],
+  "portals": {
+   "https://altamonte.org/opendata": "Skip to Main Content",
+   "https://altamonte.org/open-data": "Skip to Main Content"
+  }
+ },
+ "Gallatin": {
+  "files": [],
+  "portals": {}
+ },
+ "Varkala Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Duncanville": {
+  "files": [],
+  "portals": {
+   "https://duncanville.com/opendata": "Weekly Updates",
+   "https://duncanville.com/open-data": "Weekly Updates"
+  }
+ },
+ "Warren": {
+  "files": [
+   {
+    "url": "https://warren.org/Documents/Community/WRTA_Route-Maps_3-1-2020.pdf",
+    "text": "WRTA Route",
+    "file": "data/city_files/Warren/7cae9f_WRTA_Route-Maps_3-1-2020.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://warren.org/Documents/Community/City Ward Map/Ward_and_Precincts_Map.pdf?t=202404190933450",
+    "text": "VIEW THE WARD MAP FOR THE CITY OF WARREN",
+    "file": "data/city_files/Warren/856473_Ward_and_Precincts_Map.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://warren.org/Documents/Community/Parks and Recreation/Warren_Greenway_Bike_Trail_Map.pdf?t=202404190933460",
+    "text": "View a map of the Warren Greenway Bike Trail",
+    "file": "data/city_files/Warren/c366bf_Warren_Greenway_Bike_Trail_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://warren.org/Documents/Community/Parks and Recreation/Greenway_4-2020 (1).pdf?t=202404190933340",
+    "text": "View Map of Trumbull County Sections of the Western Reserve Greenway",
+    "file": "data/city_files/Warren/346f6a_Greenway_4-2020_1_.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {}
+ },
+ "Hot Springs": {
+  "files": [],
+  "portals": {
+   "http://chs-opendata-chsmaps.opendata.arcgis.com/": "Data Download",
+   "https://chsmaps.maps.arcgis.com/apps/mapviewer/index.html?webmap=116caaa76e4c486987c597830c899a42": "Road Closures Map",
+   "https://experience.arcgis.com/experience/47d6195e292049088f14d38f4f856996": "Spa City StreetSmart Dashboard"
+  }
+ },
+ "Muskogee": {
+  "files": [
+   {
+    "url": "https://muskogeeonline.org/document_center/Planning/Ward Map 10.2.25.pdf",
+    "text": "Ward Map",
+    "file": "data/city_files/Muskogee/7aca51_Ward_Map_10.2.25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Torrington": {
+  "files": [
+   {
+    "url": "https://portal.ct.gov/-/media/DMV/20/29/k35pdf.pdf",
+    "text": "complaint against CT-licensed dealer or repairer",
+    "file": "data/city_files/Torrington/954ac5_k35pdf.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://portal.ct.gov/dmv/-/media/dmv/dmv-pdfs/k36pdf.pdf?rev=1f7adb8c59094665b2353c662dbaf484&hash=E0FF8D36DEDC0F42E9FADB497FE98BAA",
+    "text": "procedure of obtaining a Connecticut automotive dealer’s or repairer’s license (Form K-36)",
+    "file": "data/city_files/Torrington/ae268b_k36pdf.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://portal.ct.gov/dmv/-/media/dmv/dmv-pdfs/k70pdf.pdf?rev=db9c6cff08a44db9a92bc22584b1430b&hash=171A77FEFA304B5EA4B7F32073090277",
+    "text": "procedures for obtaining a Connecticut motor vehicle recycler license (Form K-70)",
+    "file": "data/city_files/Torrington/0679e6_k70pdf.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclect.org/wp-content/uploads/2023/04/RecycleCT_Flyer_V1_12.19.22.pdf",
+    "text": "GET TO KNOW RECYCLING DOWNLOAD",
+    "file": "data/city_files/Torrington/152882_RecycleCT_Flyer_V1_12.19.22.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/43a512c1b1174e96ae78df2c80b0b392": "Active Construction Map -- Road Paving and Utility Work 2026",
+   "https://torringtongis.maps.arcgis.com/apps/dashboards/b10860e1dc6f4ea280347c2321c59825": "Active Construction Dashboard View -- Webapp May 2026",
+   "https://torringtongis.maps.arcgis.com/apps/webappviewer/index.html?id=4f4bc535d56148858a602ba2b8ef5602": "Torrington Sanitary Sewer System Web Map -- Dec 2025",
+   "https://torringtongis.maps.arcgis.com/apps/instant/atlas/index.html?appid=d5b631dd41e54dd4a463e351dffc5662": "Torrington Sanitary Sewer System Web Map for WPCA -- October 2026",
+   "https://torringtongis.maps.arcgis.com/apps/webappviewer/index.html?id=8954ead8e6b74bf799d97b4a9e7d4066": "Torrington Sanitary Sewer System Web Map for WPCA -- May 2026",
+   "https://experience.arcgis.com/experience/ec6ff1974e76425c8cefe7000907e08c": "Torrington Streetlight Web Map -- Dec 2025",
+   "https://experience.arcgis.com/experience/1e3d05804b8a43e6b626511dbdf479af": "Torrington Signalized Intersections Web App -- Oct 2026",
+   "https://torringtongis.maps.arcgis.com/apps/instant/atlas/index.html?appid=3dbad91d0f3b45838c4fd632ec6d94bb&webmap=330fd20d9aa44d12967dbbe292377ebf": "Draft Fiber Optic Signal Network (City Login Required) -- Dec 2025",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=da4d76f393f5490bbdeb0220f4992aae": "Sanitary Sewer Siphon Locations -- Web App -- Dec 2025",
+   "https://torringtongis.maps.arcgis.com/apps/instant/atlas/index.html?appid=68cb49f5a18c49d7bf18b2da0fb61ec5": "Torrington Stormwater System Web Map -- Dec 2025",
+   "https://torringtongis.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=e8eb292052b04bb6b5e23a9df390d2c5": "",
+   "https://experience.arcgis.com/experience/90bbe6a612bf4e83ba7850b64fb242ca": "Alvord Park Disc Golf Course - Web App May 2026",
+   "https://torringtongis.maps.arcgis.com/apps/View/index.html?appid=f5d33224b71f4931b3cd40c46dc1e04f": "",
+   "https://experience.arcgis.com/experience/7ca3e581a82b4321b6bd868834653ec4": "Torrington Open Space Web Map -- 2026 Draft",
+   "https://storymaps.arcgis.com/stories/53d0089388464c3fb9cfabbffbf601bf": "Food Desert Story Map",
+   "https://storymaps.arcgis.com/stories/cbe157e7df714c36931109e641cbe5e6": "Torrington Natural Resources Inventory",
+   "https://torringtongis.maps.arcgis.com/apps/MapJournal/index.html?appid=456dcacd4ffd4d3e9258459f2a8ef805": "Torrington's Economic Opportunity Zone",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=8ab4227551164064bbaac969ca686079": "Route 1",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=76075543d8934865ac0c60f51734213e": "Route 2",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=c0a6c9592c9f46f580d45c0fd45b0164": "Route 3",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=e066b1e8976d47d79d17d248a3344442": "Route 4",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=4982db8fcf214d8db49f1ad946a01298": "Route 5",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=813566e0ddbe49f9bc5ea3052117f335": "Route 6",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=be54cf618f5e467abf5060852113e25f": "Route 7",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=58d860dbf70849c5ab28c0fd0e4af5d5": "Route 8",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=fb25d350136448ee9b9667bf381ce31b": "Route 9",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=6d291421d9d94672a55e8216976cef63": "Route 10",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=31750be543064405b89d1ffb85d37bb2": "Route 11",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=af9de4485bf844eea417cb465120552e": "Route 12",
+   "https://torringtongis.maps.arcgis.com/apps/instant/basic/index.html?appid=111be2e41736419e8538f23c1c16ab93": "Route 13"
+  }
+ },
+ "Stow": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Charles": {
+  "files": [],
+  "portals": {}
+ },
+ "Aiken": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/7184e1a8bc4945908fbd578900d08878/": "Hopelands Gardens Interactive Map",
+   "https://open-data-aiken-sc.hub.arcgis.com/apps/public-app-general-information/explore": "Zoning Map",
+   "https://storymaps.arcgis.com/stories/99d895790b7f4df1afd7ba05d98728e7": "Safe Streets for All",
+   "https://aiken-sc-zoning-ordinance-hlplanning.hub.arcgis.com": "Unified Development Ordinance (UDO)",
+   "https://open-data-aiken-sc.hub.arcgis.com/": "Garbage & Recycling map link",
+   "https://aiken-sc-zoning-ordinance-hlplanning.hub.arcgis.com/": "Unified Development Ordinance (UDO)"
+  }
+ },
+ "Alamogordo": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/5ad9e956dfae40c6b281a8e16411d865": "Open General Map",
+   "https://experience.arcgis.com/experience/109012fb91254267812412048fbff813": "",
+   "https://experience.arcgis.com/experience/ee2857df40b446af958847a0e9431865": "",
+   "https://experience.arcgis.com/experience/8377434b176f4905b15d978e76323744": "",
+   "https://experience.arcgis.com/experience/5ad9e956dfae40c6b281a8e16411d865/": "Open the Interactive General Map in a new window.",
+   "https://alamogordo-coa-nm.hub.arcgis.com/": "Visit the GIS Data Hub"
+  }
+ },
+ "Garfield Heights": {
+  "files": [],
+  "portals": {
+   "https://garfieldhts.maps.arcgis.com/apps/webappviewer/index.html?id=892cc32a38694d319253c2199f5f5691": "",
+   "https://garfieldhts.maps.arcgis.com/apps/webappviewer/index.html?id=1d1215d6db9b447aaa560206e1feddd4": "",
+   "https://experience.arcgis.com/experience/717da7db231540b786966a341fe01eae": ""
+  }
+ },
+ "Adoor Municipality": {
+  "files": [],
+  "portals": {}
+ }
+}
