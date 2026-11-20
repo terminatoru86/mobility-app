@@ -1,1 +1,86 @@
-[]
+[
+{
+"city": "Huntsville",
+"url": "https://maps.huntsvilleal.gov/server/rest/services/Locations/BikeRacks/MapServer/0",
+"name": "Bike Racks",
+"count": 252,
+"cat": "racks"
+},
+{
+"city": "Huntsville",
+"url": "https://maps.huntsvilleal.gov/server/rest/services/Planning/BikeDestinations/MapServer/0",
+"name": "Bike Destinations",
+"count": 28,
+"cat": "racks"
+},
+{
+"city": "Bowie",
+"url": "https://gis.cityofbowie.org/arcgis/rest/services/Parks_Recreation/BikeRacks/MapServer/0",
+"name": "Bike Racks",
+"count": 69,
+"cat": "racks"
+},
+{
+"city": "Groton",
+"url": "https://gis.groton-ct.gov/arcgis/rest/services/County_Parks/MapServer/1",
+"name": "Mountain Bike",
+"count": 10,
+"cat": "racks"
+},
+{
+"city": "Groton",
+"url": "https://maps.groton-ct.gov/arcgis/rest/services/County_Parks/MapServer/1",
+"name": "Mountain Bike",
+"count": 10,
+"cat": "racks"
+},
+{
+"city": "Manhattan Beach",
+"url": "https://maps.manhattanbeach.gov/server/rest/services/VertiGIS/MAP/FeatureServer/18",
+"name": "Bike Racks",
+"count": 87,
+"cat": "racks"
+},
+{
+"city": "Manhattan Beach",
+"url": "https://maps.manhattanbeach.gov/server/rest/services/VertiGIS/MAP/MapServer/18",
+"name": "Bike Racks",
+"count": 87,
+"cat": "racks"
+},
+{
+"city": "Carmel",
+"url": "https://carmelgis.carmel.in.gov/server/rest/services/DOCS_Bike_Racks/FeatureServer/0",
+"name": "DOCS_Bike_Racks",
+"count": 472,
+"cat": "racks"
+},
+{
+"city": "Carmel",
+"url": "https://carmelgis.carmel.in.gov/server/rest/services/DOCS_Bike_Racks/MapServer/0",
+"name": "DOCS_Bike_Racks",
+"count": 472,
+"cat": "racks"
+},
+{
+"city": "Humboldt County",
+"url": "https://gis.eurekaca.gov/server/rest/services/MainServiceLayers/Transportation_Services/MapServer/2",
+"name": "Bike Parking",
+"count": 73,
+"cat": "racks"
+},
+{
+"city": "Ames",
+"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/FeatureServer/34",
+"name": "Bike Racks",
+"count": 421,
+"cat": "racks"
+},
+{
+"city": "Ames",
+"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/MapServer/34",
+"name": "Bike Racks",
+"count": 421,
+"cat": "racks"
+}
+]
