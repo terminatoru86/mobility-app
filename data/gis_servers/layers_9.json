@@ -1,1 +1,72 @@
-[]
+[
+{
+"city": "Hartford",
+"url": "https://gis.hartford.gov/arcgis/rest/services/PublicWorks/DPW_Bike_Lane/MapServer/1",
+"name": "Bike Rack Locations",
+"count": 74,
+"cat": "racks"
+},
+{
+"city": "Brookhaven",
+"url": "https://gis.brookhavenga.gov/arcgis/rest/services/PublicWorks/Street_Infrastructure/FeatureServer/13",
+"name": "Bicycle Signs",
+"count": 85,
+"cat": "racks"
+},
+{
+"city": "Brookhaven",
+"url": "https://gis.brookhavenga.gov/arcgis/rest/services/PublicWorks/Street_Infrastructure/MapServer/13",
+"name": "Bicycle Signs",
+"count": 85,
+"cat": "racks"
+},
+{
+"city": "Brookhaven",
+"url": "https://gis.brookhavenga.gov/arcgis/rest/services/PublicWorks/Transportation/MapServer/14",
+"name": "Bicycle Signs",
+"count": 85,
+"cat": "racks"
+},
+{
+"city": "Brookhaven",
+"url": "https://gis.brookhavenga.gov/arcgis/rest/services/Transportation/TransportationNetwork/MapServer/13",
+"name": "Bicycle Signs",
+"count": 85,
+"cat": "racks"
+},
+{
+"city": "Brookhaven",
+"url": "https://maps.brookhavenga.gov/arcgis/rest/services/PublicWorks/Street_Infrastructure/FeatureServer/13",
+"name": "Bicycle Signs",
+"count": 85,
+"cat": "racks"
+},
+{
+"city": "Brookhaven",
+"url": "https://maps.brookhavenga.gov/arcgis/rest/services/PublicWorks/Street_Infrastructure/MapServer/13",
+"name": "Bicycle Signs",
+"count": 85,
+"cat": "racks"
+},
+{
+"city": "Brookhaven",
+"url": "https://maps.brookhavenga.gov/arcgis/rest/services/PublicWorks/Transportation/MapServer/14",
+"name": "Bicycle Signs",
+"count": 85,
+"cat": "racks"
+},
+{
+"city": "Brookhaven",
+"url": "https://maps.brookhavenga.gov/arcgis/rest/services/Transportation/TransportationNetwork/MapServer/13",
+"name": "Bicycle Signs",
+"count": 85,
+"cat": "racks"
+},
+{
+"city": "Broomfield County",
+"url": "https://gis.drcog.org/server/rest/services/RDC/BICYCLE_SHARE_STATIONS/MapServer/0",
+"name": "BICYCLE_SHARE_STATIONS",
+"count": 67,
+"cat": "share"
+}
+]
