@@ -1,96 +1,5 @@
 [
 {
-"city": "Des Moines IA",
-"url": "https://maps.dsm.city/p2/rest/services/External/EXTDynamicBicycleParking/MapServer/0",
-"name": "BicycleParking",
-"count": 551,
-"cat": "racks"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/21",
-"name": "Pool",
-"count": 13,
-"cat": "racks"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/22",
-"name": "Municipal Recreation",
-"count": 18,
-"cat": "racks"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/24",
-"name": "School",
-"count": 206,
-"cat": "racks"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/25",
-"name": "Municipal Building",
-"count": 45,
-"cat": "racks"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/26",
-"name": "Library",
-"count": 57,
-"cat": "racks"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/28",
-"name": "Museum",
-"count": 36,
-"cat": "racks"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/29",
-"name": "Historic Site",
-"count": 93,
-"cat": "racks"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/30",
-"name": "Performance Venue",
-"count": 38,
-"cat": "racks"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/33",
-"name": "LIRR Train Station",
-"count": 41,
-"cat": "racks"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/36",
-"name": "SCT Bus Stop",
-"count": 2626,
-"cat": "racks"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/38",
-"name": "Bethpage Ride Bike Share Station",
-"count": 47,
-"cat": "share"
-},
-{
-"city": "Suffolk County",
-"url": "https://gis.suffolkcountyny.gov/server/rest/services/Applications/HikeBikePublicMap/MapServer/39",
-"name": "Bike Repair Station",
-"count": 6,
-"cat": "repair"
-},
-{
 "city": "region:sandag.org",
 "url": "https://geo.sandag.org/server/rest/services/Bike_Lockers/FeatureServer/0",
 "name": "Bike_Lockers",
@@ -105,17 +14,115 @@
 "cat": "locker"
 },
 {
-"city": "region:sandag.org",
-"url": "https://geo.sandag.org/server/rest/services/Hosted/Bike_Anywhere_Day_Pit_Stops/FeatureServer/4",
-"name": "Bike Anywhere Pit Stops 2026",
-"count": 115,
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/1",
+"name": "Bike Share",
+"count": 109,
+"cat": "share"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/3",
+"name": "Bike Box",
+"count": 23,
 "cat": "racks"
 },
 {
-"city": "Broomfield County",
-"url": "https://gis.drcog.org/server/rest/services/RDC/BICYCLE_SHARE_STATIONS/MapServer/0",
-"name": "BICYCLE_SHARE_STATIONS",
-"count": 67,
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/5",
+"name": "Bike Elevator at Monona Terrace ",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/6",
+"name": "Bike Repair Station",
+"count": 75,
+"cat": "repair"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/1",
+"name": "Bike Share",
+"count": 109,
 "cat": "share"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/3",
+"name": "Bike Box",
+"count": 23,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/5",
+"name": "Bike Elevator at Monona Terrace ",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/6",
+"name": "Bike Repair Station",
+"count": 75,
+"cat": "repair"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Bike_LTS_Network_Map/MapServer/1",
+"name": "Bike Elevator",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Ped_Facilities/MapServer/8",
+"name": "Bike Elevator at Monona Terrace ",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Story_Bike_Trails/MapServer/21",
+"name": "Bicycle Roundabout",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/2",
+"name": "Bike Share",
+"count": 109,
+"cat": "share"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/3",
+"name": "Bike Box",
+"count": 23,
+"cat": "racks"
+},
+{
+"city": "Dutchess County",
+"url": "https://gis.dutchessny.gov/server/rest/services/BikeDutchess/MapServer/3",
+"name": "BikeParking",
+"count": 204,
+"cat": "racks"
+},
+{
+"city": "Greenwood",
+"url": "https://greenwoodgis.greenwood.in.gov/arcgis/rest/services/Parks_Department/Bike_Racks/MapServer/0",
+"name": "Bike Racks",
+"count": 24,
+"cat": "racks"
+},
+{
+"city": "St. Petersburg FL",
+"url": "https://egis.stpete.org/arcgis/rest/services/ServicesTPD/TrafficManagementandData/MapServer/45",
+"name": "Scooter Share Corrals",
+"count": 103,
+"cat": "scooter"
 }
 ]
