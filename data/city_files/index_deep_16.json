@@ -1,0 +1,957 @@
+{
+ "Kansas City MO": {
+  "files": [],
+  "portals": {}
+ },
+ "Des Moines IA": {
+  "files": [
+   {
+    "url": "https://maps.dsm.city/docs/maps/citystreetsbig.pdf?pdf=Streets%20(Large)",
+    "text": "34x44",
+    "file": "data/city_files/Des_Moines_IA/3c8c9f_citystreetsbig.pdf",
+    "rows": 81,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/citystreetsbiglowBW.pdf?pdf=Streets%20(Large%20-%20Black%2FWhite)&t=1650479971623",
+    "text": "34x44 -B/W",
+    "file": "data/city_files/Des_Moines_IA/7ae6d4_citystreetsbiglowBW.pdf",
+    "rows": 73,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/citystreetssmall.pdf?pdf=Streets%20(Letter%20Size)&t=1650479971623",
+    "text": "8.5x11-City",
+    "file": "data/city_files/Des_Moines_IA/129aa7_citystreetssmall.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/DesMoinesDowntown.pdf?pdf=Downtown%20(Large)&t=1650545482810",
+    "text": "8.5x11-Downtown",
+    "file": "data/city_files/Des_Moines_IA/8c994f_DesMoinesDowntown.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/CityStreetMapBook.pdf?pdf=Mapbook&t=1650479971623",
+    "text": "8.5x11-Map Book",
+    "file": "data/city_files/Des_Moines_IA/227b99_CityStreetMapBook.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/PublicOffices.pdf?pdf=Public%20Offices&t=1655229354411",
+    "text": "8.5x11",
+    "file": "data/city_files/Des_Moines_IA/f78cde_PublicOffices.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/DesMoinesMetroMap.pdf?pdf=56x42&t=1735190706578",
+    "text": "56x42",
+    "file": "data/city_files/Des_Moines_IA/3ee86c_DesMoinesMetroMap.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/SnowRoutes.pdf?pdf=Snow%20Routes&t=1655229354411",
+    "text": "34x44",
+    "file": "data/city_files/Des_Moines_IA/8210b8_SnowRoutes.pdf",
+    "rows": 76,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/DSMTruckRoutes.pdf?pdf=Truck%20Routes&t=1655229354411",
+    "text": "8.5x11-City",
+    "file": "data/city_files/Des_Moines_IA/138b87_DSMTruckRoutes.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/DSMTruckRoutesDowntown.pdf?pdf=Truck%20Routes&t=1655229354411",
+    "text": "8.5x11-Downtown",
+    "file": "data/city_files/Des_Moines_IA/1434e4_DSMTruckRoutesDowntown.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/WardsSmall.pdf?pdf=City%20Council%20Wards&t=1655229354412",
+    "text": "8.5x11",
+    "file": "data/city_files/Des_Moines_IA/c8e697_WardsSmall.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/WardsLarge.pdf?pdf=City%20Council%20Wards%20-%20Large&t=1655229354412",
+    "text": "34x44",
+    "file": "data/city_files/Des_Moines_IA/589a44_WardsLarge.pdf",
+    "rows": 79,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/PrecinctsSmall.pdf?pdf=Voting%20Precincts&t=1655229354412",
+    "text": "8.5x11",
+    "file": "data/city_files/Des_Moines_IA/96b17d_PrecinctsSmall.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/ZipCodes.pdf?pdf=Zip%20Codes&t=1650545482810",
+    "text": "8.5x11",
+    "file": "data/city_files/Des_Moines_IA/ac1262_ZipCodes.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/mobilevendorzones.pdf?pdf=Mobile%20Vendor%20Parking%20Zones&t=1655229354411",
+    "text": "8.5x11",
+    "file": "data/city_files/Des_Moines_IA/eb242c_mobilevendorzones.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/NBSDOfficersMap.pdf?pdf=34x44&t=1735190706578",
+    "text": "34x44",
+    "file": "data/city_files/Des_Moines_IA/df366a_NBSDOfficersMap.pdf",
+    "rows": 78,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Neighborhoods.pdf?pdf=Neighborhoods%20-%20Large&t=1655229354412",
+    "text": "34x44",
+    "file": "data/city_files/Des_Moines_IA/ae5016_Neighborhoods.pdf",
+    "rows": 79,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/NeighborhoodsSmall.pdf?pdf=Neighborhoods&t=1655229354412",
+    "text": "8.5x11",
+    "file": "data/city_files/Des_Moines_IA/9f8edb_NeighborhoodsSmall.pdf",
+    "rows": 38,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/NIDInspectorsMap.pdf?pdf=Neighborhood%20Inspectors&t=1655229354411",
+    "text": "34x44",
+    "file": "data/city_files/Des_Moines_IA/7667cd_NIDInspectorsMap.pdf",
+    "rows": 82,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/NID_Inspectors_mapbook.pdf?pdf=Neighborhood%20Inspectors%20-%20Mapbook&t=1650545482810",
+    "text": "8.5x11 Map Book",
+    "file": "data/city_files/Des_Moines_IA/a39b9a_NID_Inspectors_mapbook.pdf",
+    "rows": 31,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/citystreetssmall_CountySupervisor.pdf?pdf=County%20Supervisor%20Districts&t=1655229354412",
+    "text": "8.5x11",
+    "file": "data/city_files/Des_Moines_IA/5e4c0c_citystreetssmall_CountySupervisor.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/CDLandUseMap.pdf?pdf=Land%20Use&t=1655229354411",
+    "text": "34x44",
+    "file": "data/city_files/Des_Moines_IA/303c15_CDLandUseMap.pdf",
+    "rows": 72,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/PlanDSMFutureLandUseLegend.pdf?pdf=Legend&t=1655229354411",
+    "text": "8.5x11 Legend",
+    "file": "data/city_files/Des_Moines_IA/503b87_PlanDSMFutureLandUseLegend.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/ZoningInspectorsMap.pdf",
+    "text": "34x44",
+    "file": "data/city_files/Des_Moines_IA/1392c0_ZoningInspectorsMap.pdf",
+    "rows": 72,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/ZoningMap.pdf?pdf=Zoning&t=1655229354411",
+    "text": "34x44",
+    "file": "data/city_files/Des_Moines_IA/ae77aa_ZoningMap.pdf",
+    "rows": 85,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Glendale_Cemetery.pdf?pdf=Glendale%20Cemetery&t=1650545482810",
+    "text": "Glendale",
+    "file": "data/city_files/Des_Moines_IA/b9832b_Glendale_Cemetery.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Laurel%20Hill%20Cemetery.pdf?pdf=Laurel%20Hill%20Cemetery&t=1650545482810",
+    "text": "Laurel Hill",
+    "file": "data/city_files/Des_Moines_IA/892e20_Laurel_20Hill_20Cemetery.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Woodland-St%20Ambrose%20Cemetery.pdf?pdf=Woodland-St%20Ambrose%20Cemetery&t=1650545482810",
+    "text": "Woodland-St Ambrose",
+    "file": "data/city_files/Des_Moines_IA/3f446b_Woodland-St_20Ambrose_20Cemetery.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/AH%20Blank%20GC.pdf?pdf=Blank%20Golf%20Course&t=1650545482810",
+    "text": "Blank",
+    "file": "data/city_files/Des_Moines_IA/46cab2_AH_20Blank_20GC.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Grandview%20Golf%20Course.pdf?pdf=Grandview%20Golf%20Course&t=1650545482810",
+    "text": "Grandview",
+    "file": "data/city_files/Des_Moines_IA/046259_Grandview_20Golf_20Course.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.dsm.city/docs/maps/Waveland%20Golf%20Course.pdf?pdf=Waveland%20Golf%20Course&t=1655229354412",
+    "text": "Waveland",
+    "file": "data/city_files/Des_Moines_IA/82214a_Waveland_20Golf_20Course.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Parks Recreation/Parks/Trails/CDM Bicycle Maintenance Stations_20241031 Update - Hyperlinked.pdf?t=202508221048430",
+    "text": "October 2024 City of Des Moines Bicycle Maintenance Station Map",
+    "file": "data/city_files/Des_Moines_IA/ddf91d_CDM_Bicycle_Maintenance_Stations_20241031_Update_-_Hyperlinked.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Parks Recreation/Parks/Trails/July 2026 CDM Trail and Sidepath Impact Permit Application.pdf?t=202608071616020",
+    "text": "Trail and Sidepath Closure Permit Application",
+    "file": "data/city_files/Des_Moines_IA/99d835_July_2026_CDM_Trail_and_Sidepath_Impact_Permit_Application.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Parks Recreation/Parks/Trails/Link 3 bike ped.pdf?t=202508221049010",
+    "text": "Bike Ped Survey Responses",
+    "file": "data/city_files/Des_Moines_IA/a52227_Link_3_bike_ped.pdf",
+    "rows": 405,
+    "bike_rows": 35
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Development Services/Planning Urban Design/Resources/Architectural Guidelines for Building Rehabiliation.pdf?t=202604061648120",
+    "text": "Architectural Guidelines for Local Historic Districts - Building Rehab",
+    "file": "data/city_files/Des_Moines_IA/60a9b8_Architectural_Guidelines_for_Building_Rehabiliation.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Development Services/Planning Urban Design/Resources/Architectural Guidelines for New Construction.pdf?t=202604061648430",
+    "text": "Architectural Guidelines for Local Historic Districts - New Construction",
+    "file": "data/city_files/Des_Moines_IA/96dfae_Architectural_Guidelines_for_New_Construction.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Development Services/Planning Urban Design/Resources/Fence Guidelines.pdf?t=202604061649160",
+    "text": "Fence Guidelines for Local Historic Districts",
+    "file": "data/city_files/Des_Moines_IA/63ba02_Fence_Guidelines.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/City Clerk/Parking Tickets/Notice-ClassActionLawsuit-CVCV053512.pdf?t=202508221049070",
+    "text": "VIEW THE FULL NOTICE",
+    "file": "data/city_files/Des_Moines_IA/36bc01_Notice-ClassActionLawsuit-CVCV053512.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dsm.city/Documents/Departments/Parks Recreation/Cemeteries/Cemetery Rules - Updated 2020.pdf?t=202604221034230",
+    "text": "Cemetery Rules",
+    "file": "data/city_files/Des_Moines_IA/bf41c0_Cemetery_Rules_-_Updated_2020.pdf",
+    "rows": 36,
+    "bike_rows": 9
+   }
+  ],
+  "portals": {
+   "https://www.dsm.city/departments/information_technology/gis.php": "GIS",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=b659da7518264f88bacff015c9cc1750&extent=-93.739,41.4907,-93.4855,41.6177": "ESRI Community Maps",
+   "https://geodata.iowa.gov/": "State of Iowa Open Geospatial Data",
+   "https://dmampo.maps.arcgis.com/apps/webappviewer/index.html?id=c48776f60395490eb3029f5b29fc7b88": "Central Iowa Trail Map",
+   "https://experience.arcgis.com/experience/4941b89f4e7a4a82a93bf273e051465a/page/Crime-Map": "Explore the Map",
+   "https://desmoines.maps.arcgis.com/apps/webappviewer/index.html?id=993a292606d94a44b165e1a46319f7f5": "MAP: Street Improvements Plan and Forecast",
+   "https://www.linkedin.com/sharing/share-offsite/?url=http://www.dsm.city/departments/information_technology/gis.php": "share on linkedin",
+   "https://www.facebook.com/sharer/sharer.php?u=http://www.dsm.city/departments/information_technology/gis.php": "share on facebook",
+   "https://www.twitter.com/intent/tweet?url=http://www.dsm.city/departments/information_technology/gis.php": "share on twitter",
+   "https://www.reddit.com/submit?url=http://www.dsm.city/departments/information_technology/gis.php": "share on reddit",
+   "https://cms2.revize.com/revize/security/index.jsp?webspace=cityofdesmoines&filename=/departments/information_technology/gis.php": "Login",
+   "https://dmmdatahub-letrms.connect.socrata.com/?&redirectToSessionStoreKey=1789656035618": "Law Enforcement Response Map",
+   "https://dmmdatahub-letrms.connect.socrata.com/": "Explore the Map",
+   "https://www.arcgis.com/home/webmap/viewer.html?url=https://maps.dsm.city/host/rest/services/Hosted/Climate_and_Economic_Justice_Screening_Tool_View/FeatureServer": "disadvantaged and underserved communities in Des Moines",
+   "http://desmoines.maps.arcgis.com/apps/webappviewer/index.html?id=993a292606d94a44b165e1a46319f7f5": "20-year Street Maintenance Forecast",
+   "https://experience.arcgis.com/experience/5f4d92c0cdc7440289c040991a220006": "neighborhood streets"
+  }
+ },
+ "Almirante Brown Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Corpus Christi": {
+  "files": [],
+  "portals": {
+   "https://corpus.maps.arcgis.com/apps/dashboards/805a30fa71304195bc45b36529bf40b3": "Stage 1 Watering Schedule & Water Data",
+   "https://cctexas.com/opendata": "Language Translator: Press Tab Again to Access Dropdown Menu.",
+   "https://cctexas.com/open-data": "Language Translator: Press Tab Again to Access Dropdown Menu."
+  }
+ },
+ "San Luis": {
+  "files": [],
+  "portals": {}
+ },
+ "Alappuzha Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Savannah": {
+  "files": [],
+  "portals": {}
+ },
+ "Mendoza": {
+  "files": [],
+  "portals": {}
+ },
+ "Springfield": {
+  "files": [
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/ApplicationPermits/OnlinePermits/2024/COSTypicalParkingLayout.pdf",
+    "text": "Typical Parking Layout",
+    "file": "data/city_files/Springfield/bab02d_COSTypicalParkingLayout.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/ApplicationPermits/2025/TypicalPavement2025.pdf",
+    "text": "Typical Pavement Repair Detail",
+    "file": "data/city_files/Springfield/da01e7_TypicalPavement2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Forms/Garages.pdf",
+    "text": "Notice Regarding Detached Garages",
+    "file": "data/city_files/Springfield/f57a6b_Garages.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Forms/solidFuelExamapp.pdf",
+    "text": "Solid Fuel/Vented Device Examination Application",
+    "file": "data/city_files/Springfield/ad9464_solidFuelExamapp.pdf",
+    "rows": 22,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Forms/mobileHomeGasPipingExamApp.pdf",
+    "text": "Mobile Home & Gas Piping Examination Application",
+    "file": "data/city_files/Springfield/4a98fc_mobileHomeGasPipingExamApp.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/BAC/SMTDBikeRack.pdf",
+    "text": "Bike Rack Policy",
+    "file": "data/city_files/Springfield/b327a8_SMTDBikeRack.pdf",
+    "rows": 14,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/BAC/SpringfieldMap.pdf",
+    "text": "City of Springfield Bike Map",
+    "file": "data/city_files/Springfield/53e8af_SpringfieldMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/BAC/BikingSafety.pdf",
+    "text": "City of Springfield Bike This Way",
+    "file": "data/city_files/Springfield/a3c4c8_BikingSafety.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/IlesAve/ProjectSiteStripMap.pdf",
+    "text": "Project Site Strip Map",
+    "file": "data/city_files/Springfield/ffdf82_ProjectSiteStripMap.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/KokeMillRoad/2024/MultiUsePathExtension1.pdf",
+    "text": "Path Extension 1",
+    "file": "data/city_files/Springfield/9b2c17_MultiUsePathExtension1.pdf",
+    "rows": 57,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/KokeMillRoad/2024/MultiUsePathExtension2.pdf",
+    "text": "Path Extension 2",
+    "file": "data/city_files/Springfield/552242_MultiUsePathExtension2.pdf",
+    "rows": 34,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/KokeMillRoad/PublicMeetingTypicalSection1.pdf",
+    "text": "Public Meeting Location Map",
+    "file": "data/city_files/Springfield/fe1357_PublicMeetingTypicalSection1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/KokeMillRoad/TrafficMapreduced.pdf",
+    "text": "Traffic Map",
+    "file": "data/city_files/Springfield/f5cdfc_TrafficMapreduced.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/HedleyRoad/1_ProjectAreaMap.pdf",
+    "text": "Project Area Map",
+    "file": "data/city_files/Springfield/392bac_1_ProjectAreaMap.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/HedleyRoad/3_TrafficMap.pdf",
+    "text": "Traffic Map",
+    "file": "data/city_files/Springfield/ec04ae_3_TrafficMap.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/HedleyRoad/4_CrashDataMap.pdf",
+    "text": "Crash Data Map",
+    "file": "data/city_files/Springfield/8fb552_4_CrashDataMap.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/MacArthurBlvd/MacArthurPMboards.pdf",
+    "text": "Project Area Map",
+    "file": "data/city_files/Springfield/13232c_MacArthurPMboards.pdf",
+    "rows": 27,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/MLK/LocationMap.pdf",
+    "text": "Location Map",
+    "file": "data/city_files/Springfield/1e894a_LocationMap.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/Carpenter/2022YWInfoMapCalendar.pdf",
+    "text": "Improvements Handout",
+    "file": "data/city_files/Springfield/b889dc_2022YWInfoMapCalendar.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/Carpenter/CarpenterStProjectCrashMap.pdf",
+    "text": "Carpenter Street Crash Data Map",
+    "file": "data/city_files/Springfield/e0f943_CarpenterStProjectCrashMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/StreetSidewalks/2023/FY2024BrickStreetRepairListStreets.pdf",
+    "text": "FY2024 Brick Street Repair List of Streets",
+    "file": "data/city_files/Springfield/c2e23b_FY2024BrickStreetRepairListStreets.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/StreetSidewalks/2023/FY2024CrackfillAsphaltStreets.pdf",
+    "text": "FY2024 Crackfill Asphalt Streets",
+    "file": "data/city_files/Springfield/0f24cd_FY2024CrackfillAsphaltStreets.pdf",
+    "rows": 34,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/StreetSidewalks/2023/FY2024CrackfillConcrete.pdf",
+    "text": "FY2024 Crackfill Concrete",
+    "file": "data/city_files/Springfield/635b45_FY2024CrackfillConcrete.pdf",
+    "rows": 13,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/StreetSidewalks/2023/FY2024CrackfillMastic.pdf",
+    "text": "FY2024 Crackfill Mastic",
+    "file": "data/city_files/Springfield/0b8988_FY2024CrackfillMastic.pdf",
+    "rows": 22,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://springfield.il.us/Departments/PublicWorks/Documents/WhyRecycleHD.pdf",
+    "text": "Why Recycle?",
+    "file": "data/city_files/Springfield/31ba8e_WhyRecycleHD.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/ApplicationPermits/OnlinePermits/2024/COSTypicalParkingLayout.pdf",
+    "text": "Typical Parking Layout",
+    "file": "data/city_files/Springfield/c6acee_COSTypicalParkingLayout.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/ApplicationPermits/2025/TypicalPavement2025.pdf",
+    "text": "Typical Pavement Repair Detail",
+    "file": "data/city_files/Springfield/d8d999_TypicalPavement2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/Forms/Garages.pdf",
+    "text": "Notice Regarding Detached Garages",
+    "file": "data/city_files/Springfield/2b0824_Garages.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/Forms/solidFuelExamapp.pdf",
+    "text": "Solid Fuel/Vented Device Examination Application",
+    "file": "data/city_files/Springfield/f3801d_solidFuelExamapp.pdf",
+    "rows": 22,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/Forms/mobileHomeGasPipingExamApp.pdf",
+    "text": "Mobile Home & Gas Piping Examination Application",
+    "file": "data/city_files/Springfield/04f239_mobileHomeGasPipingExamApp.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/Documents/BAC/SMTDBikeRack.pdf",
+    "text": "Bike Rack Policy",
+    "file": "data/city_files/Springfield/a34709_SMTDBikeRack.pdf",
+    "rows": 14,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/Documents/BAC/SpringfieldMap.pdf",
+    "text": "City of Springfield Bike Map",
+    "file": "data/city_files/Springfield/561413_SpringfieldMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/Documents/BAC/BikingSafety.pdf",
+    "text": "City of Springfield Bike This Way",
+    "file": "data/city_files/Springfield/00fac6_BikingSafety.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/Documents/IlesAve/ProjectSiteStripMap.pdf",
+    "text": "Project Site Strip Map",
+    "file": "data/city_files/Springfield/75e936_ProjectSiteStripMap.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/Documents/KokeMillRoad/2024/MultiUsePathExtension1.pdf",
+    "text": "Path Extension 1",
+    "file": "data/city_files/Springfield/1f18ed_MultiUsePathExtension1.pdf",
+    "rows": 57,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/Documents/KokeMillRoad/2024/MultiUsePathExtension2.pdf",
+    "text": "Path Extension 2",
+    "file": "data/city_files/Springfield/b2838a_MultiUsePathExtension2.pdf",
+    "rows": 34,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/Documents/KokeMillRoad/PublicMeetingTypicalSection1.pdf",
+    "text": "Public Meeting Location Map",
+    "file": "data/city_files/Springfield/82a2c6_PublicMeetingTypicalSection1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.springfield.il.us/Departments/PublicWorks/Documents/KokeMillRoad/TrafficMapreduced.pdf",
+    "text": "Traffic Map",
+    "file": "data/city_files/Springfield/7028df_TrafficMapreduced.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://llcc.maps.arcgis.com/apps/MapSeries/index.html?appid=0eafa9a541d045e9b55fa82837007774": "Sustain Springfield Green Map"
+  }
+ },
+ "Fishers": {
+  "files": [],
+  "portals": {}
+ },
+ "Compton": {
+  "files": [],
+  "portals": {}
+ },
+ "Lawrence": {
+  "files": [
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle-Smart-Infographic-1-1.pdf",
+    "text": "English",
+    "file": "data/city_files/Lawrence/ccb811_Recycle-Smart-Infographic-1-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle_Smart_Infographic-Spanish.pdf",
+    "text": "Español",
+    "file": "data/city_files/Lawrence/b7116d_Recycle_Smart_Infographic-Spanish.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Smart-Recycling-Guide-Portuguese-1.pdf",
+    "text": "Português",
+    "file": "data/city_files/Lawrence/827cea_Smart-Recycling-Guide-Portuguese-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "text": "简化字",
+    "file": "data/city_files/Lawrence/9365a3_Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Arabic-Final.pdf",
+    "text": "عربى",
+    "file": "data/city_files/Lawrence/e971c1_Smart-Recycling-Guide-Arabic-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "text": "Tiếng Việt",
+    "file": "data/city_files/Lawrence/915a27_Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-French-Final.pdf",
+    "text": "Français",
+    "file": "data/city_files/Lawrence/2dac68_Smart-Recycling-Guide-French-Final.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Haitian-Creole-Final.pdf",
+    "text": "Kreyòl Ayisyen",
+    "file": "data/city_files/Lawrence/51668f_Smart-Recycling-Guide-Haitian-Creole-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Khmer.pdf",
+    "text": "ខ្មែរ",
+    "file": "data/city_files/Lawrence/2ff4d7_smart-recycling-guide-Khmer.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Hindi.pdf",
+    "text": "हिंदी",
+    "file": "data/city_files/Lawrence/039bcd_smart-recycling-guide-Hindi.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Russian.pdf",
+    "text": "Русский",
+    "file": "data/city_files/Lawrence/54d4b8_smart-recycling-guide-Russian.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Italian.pdf",
+    "text": "Italiana",
+    "file": "data/city_files/Lawrence/013d72_smart-recycling-guide-Italian.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2026/05/Recycle-Smart-MA-Partners-List-Updated-5.13.26.pdf",
+    "text": "Partner List",
+    "file": "data/city_files/Lawrence/762193_Recycle-Smart-MA-Partners-List-Updated-5.13.26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Baytown": {
+  "files": [],
+  "portals": {
+   "https://baytown-tx.maps.arcgis.com/apps/webappviewer/index.html?id=20bdb00a00db4faa94a0d3ac5109f963": "City Map",
+   "https://experience.arcgis.com/experience/61115128380044a69beaa45409e92461": "interactive GIS map",
+   "https://baytown-tx.maps.arcgis.com/apps/instant/lookup/index.html?appid=40f9aaacb6a6405e9ea3be61576c5f87": "Flood Control Map",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd": "FEMA Map Viewer"
+  }
+ },
+ "Pasco": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/febe831281cc4428aaf6be9da21e0976": "Road Closures and Detours",
+   "https://pasco-wa.gov/opendata": "Economic Development",
+   "https://pasco-wa.gov/open-data": "Economic Development"
+  }
+ },
+ "Baldwin Park": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Cloud": {
+  "files": [],
+  "portals": {
+   "https://www.gis.leg.mn/iMaps/districts/": "Who Represents Me?",
+   "https://www.leg.mn.gov/leg/legis.aspx": "Bill Search & Status",
+   "http://www.gis.leg.mn/OpenLayers/districts/": "Who Represents Me?"
+  }
+ },
+ "Kayamkulam Municipality": {
+  "files": [
+   {
+    "url": "https://wardmap.ksmart.live/FinalN/map/Map_FinalN_Alappuzha_Kayamkulam.pdf",
+    "text": "തദ്ദേശ സ്ഥാപന ഭുപടം",
+    "file": "data/city_files/Kayamkulam_Municipality/f16a51_Map_FinalN_Alappuzha_Kayamkulam.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Hendersonville": {
+  "files": [],
+  "portals": {
+   "https://gis.hvilletn.org/arcgis/apps/webappviewer/index.html?id=f58d56849efb4c90b3d167cb7840ab16": "",
+   "https://gis.hvilletn.org/arcgis/apps/webappviewer/index.html?id=30f1befec5bd4916bd5ce7cdec19244a": "Interactive Zoning Map",
+   "https://gis.hvilletn.org/arcgis/apps/webappviewer/index.html?id=02cb9616b6be402c846dad0fad924dcb": "Ward Map"
+  }
+ },
+ "Leander": {
+  "files": [],
+  "portals": {}
+ },
+ "Nedumangad Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Manjeri Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Delano": {
+  "files": [],
+  "portals": {
+   "https://delanoengdept.maps.arcgis.com/apps/instant/reporter/index.html?appid=5b35ed375ffc4896a76a1694eb7bc9c8": "Delano Citizen Problem Reporter",
+   "http://www.gis.com/whatisgis/": "More..."
+  }
+ },
+ "Winter Haven": {
+  "files": [],
+  "portals": {
+   "https://mywinterhaven.maps.arcgis.com/apps/instant/lookup/index.html?appid=71868909f500489298d1c14394ba9ee3": "Check whether your address is within the city limits and on which days your scheduled collection is",
+   "https://mywinterhaven.maps.arcgis.com/apps/InformationLookup/index.html?appid=a692b2a333e34243ae98624482f1080c": "",
+   "https://mywinterhaven.maps.arcgis.com/apps/Embed/index.html?webmap=b28292a45cd54febbc8ba0c0d6454170&extent=-81.9476,27.8789,-81.4405,28.1241&zoom=true&scale=true&legend=true&disable_scroll=true&theme=light": "View larger map",
+   "https://storymaps.arcgis.com/stories/b4405a5e7dd34b119eacc11b0a6a4950": "Winter Haven History",
+   "https://mywinterhaven.maps.arcgis.com/apps/MinimalGallery/index.html?appid=ab912fecf39541e2b7d6e19e85593ee2": "Geographic Information System website"
+  }
+ },
+ "East Providence": {
+  "files": [],
+  "portals": {}
+ },
+ "Blacksburg": {
+  "files": [],
+  "portals": {}
+ },
+ "Ormond Beach": {
+  "files": [
+   {
+    "url": "https://www.volusia.org/core/fileparse.php/5952/urlt/Endangered-Historic-Properties2018.pdf",
+    "text": "Endangered Historic Properties in Volusia County",
+    "file": "data/city_files/Ormond_Beach/ec1ec1_Endangered-Historic-Properties2018.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/4f0bf9d0d7834d57b12c1e8581a64b2e": "Ormond Beach Zoning Maps",
+   "https://data.census.gov/advanced": "Advanced Data Search"
+  }
+ },
+ "Lancaster": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/972771077ce54e298c8a97f7d4706bb5": "",
+   "https://storymaps.arcgis.com/stories/6f36a9afbbcc469cbe16ae4ea9d56189": ""
+  }
+ },
+ "Plant City": {
+  "files": [
+   {
+    "url": "https://plantcitygov.com/Documents/Departments/Utilities Public Works/Water Utilities/Utilities Operations/Utilities Development Standards/above_ground_meter_and_backflow_installation_standards.pdf?t=202502240948110",
+    "text": "Above Ground Meter and Backflow Installation Standards",
+    "file": "data/city_files/Plant_City/ae5a5e_above_ground_meter_and_backflow_installation_standards.pdf",
+    "rows": 18,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://plantcitygov.com/Documents/Departments/Utilities Public Works/Water Utilities/Utilities Operations/Utilities Development Standards/reclaimed_water_meter_installation_standards_1.5_inch_-_2_inch.pdf?t=202502240948180",
+    "text": "Reclaimed Water Meter Installation Standards 1.5 inch - 2inch",
+    "file": "data/city_files/Plant_City/ee8b56_reclaimed_water_meter_installation_standards_1.5_inch_-_2_inch.pdf",
+    "rows": 16,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://plantcitygov.com/Documents/Departments/Utilities Public Works/Water Utilities/Utilities Operations/Utilities Development Standards/reclaimed_water_meter_installation_standards.pdf?t=202502240948180",
+    "text": "Reclaimed Water Meter Installation Standards",
+    "file": "data/city_files/Plant_City/6954c9_reclaimed_water_meter_installation_standards.pdf",
+    "rows": 18,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {}
+ },
+ "Shrewsbury": {
+  "files": [],
+  "portals": {}
+ },
+ "Kaman": {
+  "files": [],
+  "portals": {}
+ },
+ "Inver Grove Heights": {
+  "files": [
+   {
+    "url": "https://www.co.dakota.mn.us/Environment/Residential/Recycling/Documents/RecyclingAtHome.pdf",
+    "text": "Recycling at Home cheat sheet",
+    "file": "data/city_files/Inver_Grove_Heights/000d19_RecyclingAtHome.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.dakota.mn.us/Environment/Residential/Recycling/Documents/WhatGoesWhereGuide.pdf",
+    "text": "What Goes Where Guide",
+    "file": "data/city_files/Inver_Grove_Heights/cf5eb5_WhatGoesWhereGuide.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://igh.maps.arcgis.com/apps/webappviewer/index.html?id=e7de7f8aff3949c6a0c3e6ccf4cc2584": "Weight Restrictions",
+   "https://igh.maps.arcgis.com/apps/instant/portfolio/index.html?appid=6b2d6e812b0f48b0b3943bb21596670bhttps://igh.maps.arcgis.com/apps/instant/portfolio/index.html?appid=6b2d6e812b0f48b0b3943bb21596670b": "Current Construction & Pavement Rehabilitation",
+   "https://igh.maps.arcgis.com/apps/webappviewer/index.html?id=f3e2b1dc2b384c98a2e7a236e5769689": "Park Finder",
+   "https://igh.maps.arcgis.com/apps/instant/portfolio/index.html?appid=b00e00431bc248a8bb06d04be78f03b1": "City Zoning",
+   "https://igh.maps.arcgis.com/apps/webappviewer/index.html?id=96129907a03f4d1c974641a86494e1c4": "Find Your Polling Place",
+   "https://storymaps.arcgis.com/stories/1446179002f64b51908d8ada53a5063e": "IGH Tour",
+   "https://storymaps.arcgis.com/stories/97998339b42345da831813a24ea73587": "Inver Wood Golf Course Story Map",
+   "https://storymaps.arcgis.com/collections/8e78b03f9db34e43869dbced4f3471f6?item=1": "Current Development Map",
+   "https://storymaps.arcgis.com/stories/91c90ae7512248df9e3935aaad6e257a ": "Commercial Districts Map",
+   "https://igh.maps.arcgis.com/apps/MapSeries/index.html?appid=77838417cdd54c218f119820a67db6ef": "Zoning and Land Use Map"
+  }
+ },
+ "Cookeville": {
+  "files": [],
+  "portals": {}
+ },
+ "Cottonwood Heights": {
+  "files": [],
+  "portals": {}
+ },
+ "Seaside": {
+  "files": [],
+  "portals": {
+   "https://cseaside.maps.arcgis.com/apps/MapTour/index.html?appid=2c818101ec96401d9afa5a89aae0654c": "StoryMap Tour"
+  }
+ },
+ "Shawnee": {
+  "files": [],
+  "portals": {
+   "https://city-of-shawnee-public-cityofshawneeok.hub.arcgis.com/": "Mapping",
+   "https://citizen-request-cityofshawneeok.hub.arcgis.com/": "Citizen Request Portal",
+   "https://citizen-request-cityofshawneeok.hub.arcgis.com/pages/city-infrastructure": "Reporting Issues",
+   "https://cityofshawneeok.maps.arcgis.com/apps/instant/lookup/index.html?appid=9613f68bc0bd4c8a84acce63a5b2f456": "Sanitation Service Interactive Map",
+   "https://www.arcgis.com/apps/dashboards/b72236dd93ab4bf0a6226a33b794768c": "Register Storm Shelter",
+   "https://survey123.arcgis.com/share/aab7c02786f04c529518e36539ce0a3b": "Click this link to open the City of Shawnee Storm Shelter Registration."
+  }
+ },
+ "Chamblee": {
+  "files": [
+   {
+    "url": "https://www.chambleega.com/department/Communications/Trash%20and%20Recycle%20Schedule%20by%20Street%20Update.pdf",
+    "text": "Sanitation Schedule",
+    "file": "data/city_files/Chamblee/9238c1_Trash_20and_20Recycle_20Schedule_20by_20Street_20Update.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chambleega.com/department/Parks and Recreation/Master Plan/ChambleeTrailMasterPlan_Adopted_Web.pdf",
+    "text": "Chamblee Trail Master Plan",
+    "file": "data/city_files/Chamblee/be14c8_ChambleeTrailMasterPlan_Adopted_Web.pdf",
+    "rows": 154,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://www.chambleega.com/department/Communications/Trash and Recycle Schedule by Street Update.pdf?t=202312061142310",
+    "text": ".",
+    "file": "data/city_files/Chamblee/ca3326_Trash_and_Recycle_Schedule_by_Street_Update.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.chambleega.com/department/Parks%20and%20Recreation/Master%20Plan/ChambleeTrailMasterPlan_Adopted_Web.pdf",
+    "text": "Chamblee Trail Master Plan",
+    "file": "data/city_files/Chamblee/9e3261_ChambleeTrailMasterPlan_Adopted_Web.pdf",
+    "rows": 154,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://www.chambleega.com/department/Parks and Recreation/Master Plan/ChambleeTrailMasterPlan_Adopted_Web.pdf?t=202308241244510",
+    "text": "Chamblee Trail Master Plan",
+    "file": "data/city_files/Chamblee/a59706_ChambleeTrailMasterPlan_Adopted_Web.pdf",
+    "rows": 154,
+    "bike_rows": 20
+   }
+  ],
+  "portals": {
+   "https://data-chamblee.opendata.arcgis.com/": "Chamblee Data Hub",
+   "https://experience.arcgis.com/experience/095c4f24710744d88288175bb23286fb/": "Find your collection day.",
+   "https://storymaps.arcgis.com/stories/d0e7585a7abf4d2eb2728f8d48a2dd09": "Parks StoryMap",
+   "https://experience.arcgis.com/experience/f76e7c9370fa40baace373f46dad9d4d/page/Page": "Visit Road Closure Notification App",
+   "https://storymaps.arcgis.com/stories/717215f29dbf4497add8b3c7cb6cfdda": "Find active and recent stormwater capital improvement projects"
+  }
+ },
+ "Matthews": {
+  "files": [],
+  "portals": {}
+ },
+ "Inaruwa": {
+  "files": [],
+  "portals": {}
+ }
+}
