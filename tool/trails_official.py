@@ -48,6 +48,9 @@ FIXED = [
      'Bikeways and Trails', 'Bikeways and Trails · City of Virginia Beach', 'City of Virginia Beach'),
     ('https://services2.arcgis.com/CyVvlIiUfRBmMQuu/arcgis/rest/services/Bikeways_and_Trail_Facilities/FeatureServer/0', '1=1',
      'Bikeways and Trail Facilities', 'Bikeways and Trail Facilities · City of Virginia Beach', 'City of Virginia Beach'),
+    # Arlington TX: sent by the city in answer to our records request (Hike and Bike off-street + on-street)
+    ('https://gis2.arlingtontx.gov/agsext2/rest/services/External/NeighborhoodAmenity/MapServer/6', '1=1',
+     'Hike and Bike trails', 'Hike and Bike · City of Arlington TX', 'City of Arlington TX'),
 ]
 
 
