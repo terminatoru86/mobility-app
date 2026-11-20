@@ -1,0 +1,247 @@
+[
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/25",
+"name": "Mountain Biking",
+"count": 15,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/28",
+"name": "Pump Track",
+"count": 4,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/1",
+"name": "Bike Share",
+"count": 109,
+"cat": "share"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/29",
+"name": "Pay Stations",
+"count": 11,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/2",
+"name": "Park and Ride",
+"count": 15,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/3",
+"name": "Bike Box",
+"count": 23,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/4",
+"name": "Bicycle Over/Underpass",
+"count": 87,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/5",
+"name": "Bike Elevator at Monona Terrace ",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/6",
+"name": "Bike Repair Station",
+"count": 75,
+"cat": "repair"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/25",
+"name": "Mountain Biking",
+"count": 15,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/28",
+"name": "Pump Track",
+"count": 4,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/1",
+"name": "Bike Share",
+"count": 109,
+"cat": "share"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/29",
+"name": "Pay Stations",
+"count": 11,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/2",
+"name": "Park and Ride",
+"count": 15,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/3",
+"name": "Bike Box",
+"count": 23,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/4",
+"name": "Bicycle Over/Underpass",
+"count": 87,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/5",
+"name": "Bike Elevator at Monona Terrace ",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/6",
+"name": "Bike Repair Station",
+"count": 75,
+"cat": "repair"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Bike_LTS_Network_Map/MapServer/1",
+"name": "Bike Elevator",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Bike_LTS_Network_Map/MapServer/2",
+"name": "Ped/Bike Over/Underpass",
+"count": 91,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Ped_Facilities/MapServer/8",
+"name": "Bike Elevator at Monona Terrace ",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Story_Bike_Trails/MapServer/21",
+"name": "Bicycle Roundabout",
+"count": 1,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/2",
+"name": "Bike Share",
+"count": 109,
+"cat": "share"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/3",
+"name": "Bike Box",
+"count": 23,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/5",
+"name": "Bike Overpass and/or Underpass",
+"count": 356,
+"cat": "racks"
+},
+{
+"city": "Madison WI",
+"url": "https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/6",
+"name": "Bike Hazards",
+"count": 219,
+"cat": "racks"
+},
+{
+"city": "Tamarac",
+"url": "https://gis.tamarac.org/server/rest/services/Parks/Green_City_GIS/FeatureServer/7",
+"name": "Bicycle Racks",
+"count": 20,
+"cat": "racks"
+},
+{
+"city": "Tamarac",
+"url": "https://gis.tamarac.org/server/rest/services/Parks/Green_City_GIS/FeatureServer/29",
+"name": "Spin Bike",
+"count": 29,
+"cat": "racks"
+},
+{
+"city": "Tamarac",
+"url": "https://gis.tamarac.org/server/rest/services/Parks/Green_City_GIS/MapServer/7",
+"name": "Bicycle Racks",
+"count": 20,
+"cat": "racks"
+},
+{
+"city": "Tamarac",
+"url": "https://gis.tamarac.org/server/rest/services/Parks/Green_City_GIS/MapServer/29",
+"name": "Spin Bike",
+"count": 29,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/FeatureServer/5",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/MapServer/5",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/FeatureServer/32",
+"name": "PR_Bike_Racks",
+"count": 110,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/MapServer/32",
+"name": "PR_Bike_Racks",
+"count": 110,
+"cat": "racks"
+},
+{
+"city": "St. Petersburg FL",
+"url": "https://egis.stpete.org/arcgis/rest/services/ServicesTPD/TrafficManagementandData/MapServer/45",
+"name": "Scooter Share Corrals",
+"count": 103,
+"cat": "scooter"
+}
+]
