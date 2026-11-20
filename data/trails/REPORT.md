@@ -1,36 +1,36 @@
-# Bike routes found (94989 routes, 553,598 km, file 23.8 MB)
+# Bike routes found (99162 routes, 585,550 km, file 24.7 MB)
 
-By source: {'Official layers': 89315, 'OpenStreetMap': 5674}
-By kind: {'motorcycle': 34643, 'bicycle': 59258, 'mtb': 1088}
-OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 90258, 'lcn': 3748, 'rcn': 796, 'ncn': 28, 'US:CA:Scenic': 17, 'US:IA:Scenic': 15, 'US:AZ:Scenic': 12, 'US:BLM:BCB': 11}
-Longer than 10 km: 14270 · longer than 50 km: 3
+By source: {'Official layers': 89315, 'OpenStreetMap': 9847}
+By kind: {'motorcycle': 34810, 'bicycle': 62543, 'mtb': 1809}
+OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 90703, 'lcn': 6808, 'rcn': 1263, 'ncn': 78, 'US:CA:Scenic': 17, 'US:US:Historic': 16, 'US:IA:Scenic': 15, 'lwn': 14}
+Longer than 10 km: 15226 · longer than 50 km: 3
 
 ## Operators with the most routes
 - NFGMobile_Publisher: 48860
 - vwgeiser: 40131
-- -: 5008
+- -: 8755
 - mart6306@esri.com_EPN: 214
-- United States Forest Service: 90
+- United States Forest Service: 95
 - City of Iowa City: 69
 - OSMP_Boulder: 62
+- City of Plano: 41
 - en:natfoot: 34
+- City of Winston Salem: 28
+- City of Norman: 28
 - City of Fitchburg: 23
+- Baltimore City Department of Public Works: 20
 - Okanogan-Wenatchee National Forest: 19
+- City of Stillwater: 17
 - Boise_GIS: 16
+- Ohio Department of Transportation: 16
 - MORC: 15
+- US Forest Service: 15
 - Forest Preserve District of Cook County: 15
 - Johnson County: 15
 - City of Coralville: 14
 - Los Alamos County: 14
 - City of North Liberty: 14
 - cor_nps: 13
-- Bernalillo County: 11
-- United States Bureau of Land Management: 11
-- Ohio Department of Transportation: 10
-- Los Alamos National Laboratory: 10
-- yell_gis: 9
-- Madison County Transit: 9
-- Albuquerque Parks and Recreation, Open Space Division: 9
 
 ## Longest routes
 - Honker Divide Canoe Route · 50.0 km · NFGMobile_Publisher · a/56c6b0cbfd35
@@ -50,11 +50,11 @@ Longer than 10 km: 14270 · longer than 50 km: 3
 - Loon Creek · 49.7 km · NFGMobile_Publisher · a/1ccb975c06ef
 - Two-heart Trail · 49.7 km · vwgeiser · a/75072b0b89fa
 - Loon Creek · 49.7 km · NFGMobile_Publisher · a/cc0e154fd0b8
+- Patapsco Traverse (south mtb) · 49.7 km · Friends of Patapsco Valley State Park · r/12478386
 - Huron Orv, Smt/Huron Orv Trail · 49.6 km · NFGMobile_Publisher · a/225668f8208c
 - Black Lake Trail · 49.6 km · vwgeiser · a/2d9d43e2ab9e
 - Sisquoc · 49.6 km · NFGMobile_Publisher · a/9404f0918546
 - Sisquoc · 49.6 km · NFGMobile_Publisher · a/e4f342394a33
 - San Francisco Peaks Scenic Road · 49.6 km · OpenStreetMap · r/16251491
+- Reelfoot B · 49.6 km · OpenStreetMap · r/1785483
 - Homestead Trail · 49.6 km · OpenStreetMap · r/5440838
-- Mcct - Cad/Man · 49.5 km · NFGMobile_Publisher · a/48bb12a96941
-- Brookside-Mccurdy · 49.5 km · NFGMobile_Publisher · a/87c3e11111b0
