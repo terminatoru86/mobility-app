@@ -78,9 +78,9 @@ jobs:
           SHARD: ${{ matrix.shard }}
           NSHARDS: '10'
           SUFFIX: _sites_${{ matrix.shard }}
-          SECS: ${{{{ inputs.secs }}}}
-          PAGES: ${{{{ inputs.pages }}}}
-          DEPTH: ${{{{ inputs.depth }}}}
+          SECS: ${{ inputs.secs }}
+          PAGES: ${{ inputs.pages }}
+          DEPTH: ${{ inputs.depth }}
           MAXFILES: '40'
           MAXPORTALS: '30'
           THREADS: '16'

@@ -63,9 +63,9 @@ jobs:
           SHARD: ${{ matrix.shard }}
           NSHARDS: '40'
           SUFFIX: _deep_${{ matrix.shard }}
-          SECS: ${{{{ inputs.secs }}}}
-          PAGES: ${{{{ inputs.pages }}}}
-          DEPTH: ${{{{ inputs.depth }}}}
+          SECS: ${{ inputs.secs }}
+          PAGES: ${{ inputs.pages }}
+          DEPTH: ${{ inputs.depth }}
           MAXFILES: '40'
           MAXPORTALS: '30'
           THREADS: '16'
