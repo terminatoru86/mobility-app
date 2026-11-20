@@ -118,24 +118,37 @@ def cell(b):
 
 
 def main():
+    """Resumable: data/mapillary/done_N.json keeps how many of this shard's cells are finished, so a run stopped by
+    the 6-hour limit of a GitHub job goes on where it stopped (the workflow starts itself again until all are done)."""
     global TOKEN, PACE
     TOKEN, PACE = token(), Pace(PER_MIN)
     allc = cells()
     mine = allc[SHARD::NSHARDS]
-    print(f'{len(allc)} US cells, shard {SHARD}/{NSHARDS}: {len(mine)}', flush=True)
     os.makedirs(OUT, exist_ok=True)
     path = os.path.join(OUT, f'racks_{SHARD}.json')
-    racks, done, t0 = {}, 0, time.time()
+    dpath = os.path.join(OUT, f'done_{SHARD}.json')
+    racks = {r[0]: r for r in json.load(open(path))} if os.path.exists(path) else {}
+    done = json.load(open(dpath)).get('done', 0) if os.path.exists(dpath) else 0
+    print(f'{len(allc)} US cells, shard {SHARD}/{NSHARDS}: {len(mine)} · already done {done} · racks {len(racks)}', flush=True)
+    stop = time.time() + 60 * int(os.environ.get('STOP_AFTER_MIN', 320))
+    t0 = time.time()
+
+    def save():
+        json.dump(list(racks.values()), open(path, 'w'), separators=(',', ':'))
+        json.dump({'done': done, 'of': len(mine), 'complete': done >= len(mine)}, open(dpath, 'w'))
+
     with ThreadPoolExecutor(THREADS) as ex:
-        for got in ex.map(cell, mine):
-            done += 1
-            for r in got:
-                racks[r[0]] = r
-            if done % 500 == 0 or done == len(mine):
-                json.dump(list(racks.values()), open(path, 'w'), separators=(',', ':'))
-                print(f'{done}/{len(mine)} cells · {len(racks)} racks · {stats} · {int(time.time() - t0)}s', flush=True)
-    json.dump(list(racks.values()), open(path, 'w'), separators=(',', ':'))
-    print(f'DONE shard {SHARD}: {len(racks)} racks from {len(mine)} cells · {stats}', flush=True)
+        while done < len(mine) and time.time() < stop:
+            chunk = mine[done:done + 120]
+            for got in ex.map(cell, chunk):
+                for r in got:
+                    racks[r[0]] = r
+            done += len(chunk)
+            save()
+            print(f'{done}/{len(mine)} cells · {len(racks)} racks · {stats} · {int(time.time() - t0)}s', flush=True)
+    save()
+    print(f'{"DONE" if done >= len(mine) else "STOPPED (time), will go on"} shard {SHARD}: {len(racks)} racks · '
+          f'{done}/{len(mine)} cells · {stats}', flush=True)
 
 
 if __name__ == '__main__':

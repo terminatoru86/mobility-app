@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   racks:
@@ -38,6 +39,7 @@ jobs:
           NSHARDS: '20'
           THREADS: '6'
           PER_MIN: '400'
+          STOP_AFTER_MIN: '320'
         run: python3 tool/mapillary_all.py
       - name: Save
         if: always()
@@ -66,3 +68,37 @@ jobs:
           git add data/bikeep
           git commit -qm "Bikeep probe" || exit 0
           for i in $(seq 1 40); do git pull -q --rebase -X theirs && git push -q && exit 0; sleep $((RANDOM % 45 + 10)); done
+
+  next:
+    needs: racks
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: data/mapillary
+      - name: Start again if a shard is not finished
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull -q
+          python3 - <<'PY'
+          import json, glob, os
+          fs = glob.glob('data/mapillary/done_*.json')
+          d = [json.load(open(f)) for f in fs]
+          left = 20 - sum(1 for x in d if x.get('complete'))
+          total = sum(x.get('done', 0) for x in d)
+          prev = json.load(open('data/mapillary/progress.json')).get('total', -1) if os.path.exists('data/mapillary/progress.json') else -1
+          print(f'shards not finished: {left} · cells done: {total} (before: {prev})')
+          open(os.environ['GITHUB_ENV'], 'a').write(f'LEFT={left}\nGREW={int(total > prev)}\nTOTAL={total}\n')
+          PY
+      - name: Save progress and start again
+        if: env.LEFT != '0' && env.GREW == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "{\"total\": $TOTAL}" > data/mapillary/progress.json
+          git add data/mapillary/progress.json && git commit -qm "Mapillary progress $TOTAL" && (git pull -q --rebase && git push -q || true)
+          gh workflow run mapillary.yml --ref master
