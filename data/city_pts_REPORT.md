@@ -1,8 +1,8 @@
 # Points from city / state files
 
-Row files: 1923 · rows read: 61689 · addresses sent to the geocoder: 150 · map points kept: 17
+Row files: 2274 · rows read: 67174 · addresses sent to the geocoder: 161 · map points kept: 18
 
-By category: racks 13, moto_parking 2, locker 2
+By category: racks 14, moto_parking 2, locker 2
 
 | Place | Rows read | Points | Categories |
 |---|---|---|---|
@@ -15,3 +15,4 @@ By category: racks 13, moto_parking 2, locker 2
 | Burlington County | 454 | 1 | racks 1 |
 | Cincinnati | 9 | 1 | locker 1 |
 | Bellevue | 47 | 1 | locker 1 |
+| capital talgov com | 51 | 1 | racks 1 |
