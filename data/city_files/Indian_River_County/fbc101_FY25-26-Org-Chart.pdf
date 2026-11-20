@@ -1,0 +1,1936 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base href="https://www.indianriver.gov/" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+
+	
+ 
+
+
+
+
+
+	<!-- Metadata Area Starts -->
+	<title>Indian River County Board of County Commissioners</title>
+	<meta property="og:title" content="Indian River County Board of County Commissioners" />
+	<meta name="description" content="Official website of the Indian River County Board of County Commissioners. Access government services, meeting information, County news, and community resources."/>
+	<meta property="og:description" content="Official website of the Indian River County Board of County Commissioners. Access government services, meeting information, County news, and community resources." />
+	<meta property="og:image" content="//cms.indianriver.gov/revize//indianrivercounty/_assets_/images/logo.png" />
+	<meta name="robots" content="index, follow">
+
+
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+	<link rel="stylesheet" href="_assets_/fonts/font-awesome/css/font-awesome.min.css">
+	<link href="_assets_/plugins/featherlight/featherlight.min.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="_assets_/css/bigbtn.css">
+	<link rel="stylesheet" href="_assets_/plugins/lity/lity.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+
+
+	<link rel="shortcut icon" href="_assets_/images/favicon.ico">
+	<link rel="apple-touch-icon" href="_assets_/images/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="_assets_/images/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="_assets_/images/touch-icon-iphone4.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="_assets_/images/touch-icon-ipad2.png">
+			
+<link href="/revize/plugins/revize_calendar/core/main.css" rel="stylesheet" />
+<link href="/revize/plugins/revize_calendar/daygrid/main.min.css" rel="stylesheet" />
+<link href="/revize/plugins/revize_calendar/timegrid/main.min.css" rel="stylesheet" />
+<link href="/revize/plugins/revize_calendar/list/main.min.css" rel="stylesheet" />
+<link href="_assets_/plugins/revizeCalendar/css/mini.css" rel="stylesheet" />
+<link href="/revize/plugins/revize_calendar/core/nav-panels.css" rel="stylesheet" /><script>
+	var defaultCalendarColor = "#3788d8";
+	var ImportCals = ["1","4","20",];
+	var calendarProps = {'1' : { 'color' : '#3787d8' , 'name' : 'Public Meetings' },
+'3' : { 'color' : '#3787d8' , 'name' : 'Library' },
+'4' : { 'color' : '#3787d8' , 'name' : 'Events' },
+'6' : { 'color' : '' , 'name' : 'calendar-list-options' },
+'9' : { 'color' : '#3787d8' , 'name' : 'Parks & Recreation' },
+'13' : { 'color' : '#3787d8' , 'name' : 'BCC Meetings' },
+'14' : { 'color' : '#3787d8' , 'name' : 'Library Main Branch' },
+'15' : { 'color' : '#3787d8' , 'name' : 'North County Library' },
+'16' : { 'color' : '#3787d8' , 'name' : 'Brackett Library' },
+'17' : { 'color' : '#3787d8' , 'name' : 'Veterans Events' },
+'19' : { 'color' : '#3787d8' , 'name' : 'Fairgrounds' },
+'20' : { 'color' : '#3787d8' , 'name' : 'Natural Resources' },
+};
+	var RZCalendarTimezone = "US/Eastern";
+</script>
+
+
+
+<link rel="stylesheet" href="_assets_/css/layout.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+
+
+
+	<meta name="robots" content="index, follow">
+
+	
+
+
+<link href="/revize/plugins/setup/css/revize.css" rel="stylesheet" type="text/css" />
+
+
+
+<script type="text/javascript">
+
+
+
+</script>
+
+
+
+
+
+</head>
+<body id="homepage">	
+	
+
+
+
+<script type="text/javascript">
+if (typeof(RZ) == 'undefined') RZ = {};
+if (!RZ.link) RZ.link = new Object();
+RZ.pagetype = 'template'
+RZ.baseurlprefix = ''
+RZ.baseurlpath = ''
+RZ.protocolRelativeRevizeBaseUrl='//cms.indianriver.gov'
+
+RZ.pagetemplatename = 'index'
+RZ.pagetemplateid = '6'
+RZ.pagemodule = ''
+RZ.pagemoduleid = ''
+RZ.pagerecordid = '';
+
+RZ.pageid = 'index';
+RZ.pageparentid = '';
+RZ.pagesectionid = '0';
+RZ.pagesectionname = 'Home Page';
+RZ.pagesectionlevel = '0';
+RZ.pagesectionfolder = '';
+RZ.pagesectionfilter = 'sectionid=0';
+RZ.pagelinkfilter = 'linklevel=0 and linksectionid=0';
+RZ.pagelinklevel = '0';
+RZ.pagelinkid = '-1';
+RZ.pageidfield = '';
+
+RZ.isnewrecord = false;
+RZ.editmodule = '';
+RZ.editrecordid = '';
+RZ.editrecordversion = '';
+RZ.editversion = '';
+RZ.editaction = '';
+
+RZ.page_roles = ''
+RZ.page_users = '022e1ef54a2ba2efebb8efd1ed993c6f056abd08954f7a78e9a98b62be48a80a|d807eb392b213fe6982cea9f1e8633974f0ea077d8ec28065102a0eeea5aa561'
+RZ.page_key = 'index[]'
+RZ.parent_key = ''
+RZ.inherit_key = 'index[]'
+RZ.workflowname = ''
+RZ.permissions_options = 'warningsOFF'
+RZ.permissions_module = 'webspace_page_permissions'
+RZ.webspace = 'indianrivercounty'
+RZ.webspacedesc = "";
+
+RZ.featurespattern = '(EZ)';
+null
+
+RZ.webspacelinksurl = ''
+RZ.webspacelinksurl = './webspace/links.html'
+RZ.workflowlist = 'Admin Only Workflow,Default Workflow,Emergency Services Workflow,Human Resources Workflow,Natural Resources Workflow,New Workflow 9,Planning and Development Workflow,Recreation Services Workflow,Utilities Workflow'
+RZ.revizeserverurl = 'https://cms.indianriver.gov/revize/indianrivercounty';
+
+if (!RZ.nextseq) RZ.nextseq = {linknames:{},modules:{}};
+
+RZ.webspace_config = new Object();
+RZ.webspace_config.admin_email = "noreply@revize.com";
+RZ.webspace_config.calendar_options = "max_events=6";
+RZ.webspace_config.form_captcha = "yes";
+RZ.webspace_config.form_server = "revizeserver";
+RZ.webspace_config.form_technology = "jsp";
+RZ.webspace_config.formwizard_ftp_password = "";
+RZ.webspace_config.formwizard_ftp_port = "";
+RZ.webspace_config.formwizard_ftp_server = "";
+RZ.webspace_config.formwizard_ftp_user = "";
+RZ.webspace_config.formwizard_setup = "yes";
+RZ.webspace_config.formwizard_smtp_password = "xxx";
+RZ.webspace_config.formwizard_smtp_server = "xxx";
+RZ.webspace_config.formwizard_smtp_user = "xxx";
+RZ.webspace_config.google_analytics = "";
+RZ.webspace_config.home_pageid = "0";
+RZ.webspace_config.home_sectionid = "0";
+RZ.webspace_config.home_template = "home,index,sitemap";
+RZ.webspace_config.icon_email = "<img src=\"/revize/images/email_icon_yellow.gif\" width=\"16\" border=\"0\" height=\"17\" title=\"Request email notification when page changes\" alt=\"Request email notification when page changes\" style=\"\" />";
+RZ.webspace_config.image_maxheight = "3000";
+RZ.webspace_config.image_maxwidth = "3000";
+RZ.webspace_config.image_setup = "yes";
+RZ.webspace_config.livesite_url = "";
+RZ.webspace_config.menu_links_module = "links";
+RZ.webspace_config.menu_newsection = "";
+RZ.webspace_config.menu_nexturl = "webspace_menu-editform.jsp";
+RZ.webspace_config.menu_sections_module = "sections";
+RZ.webspace_config.menu_system = "custom";
+RZ.webspace_config.menu_version = "1.00";
+RZ.webspace_config.new_menu_manager_enabled = "yes";
+RZ.webspace_config.notify_options = "";
+RZ.webspace_config.notify_return_url = "enotify/index.php";
+RZ.webspace_config.rte_setup = "yes";
+RZ.webspace_config.to_email = "webpageupdate_subscribers@revize.com";
+RZ.webspace_config.use_folders = "1";
+
+RZ.isauthenticationactive = true
+RZ.warning = ""
+RZ.adminwinmsg = null
+
+RZ.channels = 'production';
+RZ.jsversion = 1.2</script>
+<script type="text/javascript" src="/revize/util/snippet_helper.js"></script>
+
+<script>
+        function hideToggle() {
+          let iframe = document.getElementById("botIframe");
+          let hidden = iframe.getAttribute("hidden");
+          const show_text = "Ask IRC Chat";
+          const hide_text = "Hide IRC Chat";
+
+          if (hidden) {
+            iframe.removeAttribute("hidden");
+            document.getElementById("button1").innerText = hide_text.length > 25 ? hide_text.substring(0, 25) + "..." : hide_text;
+          } else {
+            iframe.setAttribute("hidden", "hidden");
+            document.getElementById("button1").innerText = show_text.length > 25 ? show_text.substring(0, 25) + "..." : show_text;
+          }
+        }
+      </script>
+
+
+
+	
+	
+
+
+<style>
+#alert-banner.alert-dismissible{background-color:#ca0707;padding:10px 15px; margin: 0; border-radius: 0; color: #fff;}
+#alert-banner .alert-link{position:absolute;right:50px;color:#000;}
+#alert-banner.alert-dismissible>.container{position:relative;text-align:center;}
+#alert-banner a.alert-content{display:block;padding:5px;border-radius:2px;margin:0 auto 0 18%;max-width:710px;text-decoration:none;color:#fff}
+#alert-banner .alert-title{display:block;font-weight:700;line-height:1;margin-right:12px;border-radius:3px}
+#alert-banner .alert-brief{font-size:14px;color:#000;font-weight:700;}
+#alert-banner button.alert-dismiss {position:absolute;right:0;top:50%;background:transparent;transform: translateY(-50%);padding: 0px;margin: 0px;border: none;}
+
+</style>
+
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+<header>
+	<a href="#main" id="skip" tabindex="0" class="button">Skip to main content</a>
+	
+	<div id="alert-banner" class="alert alert-dismissible slide in os-animation" data-os-animation="fadeInUpBig" data-os-animation-delay="2s" role="alert">
+  <div class="alert-editbtn" style="position: absolute;top:0;right:0;">
+    
+    
+    
+    <script language="JavaScript" type="text/JavaScript">
+      RZ.module = 'alert';
+      RZ.nexturl = "editforms/alert_banner-editform.jsp";
+      RZ.popupwidth = ''; RZ.popupheight = ''; RZ.popupscroll = '';
+      RZ.img = '<span class="rzBtn">Edit Page Specifc Banner Alert</span>';
+      RZ.set = 'alert.pageid=alert-banner-<?php echo index; ?>';
+      RZ.options = '';
+      if (typeof RZaction != 'undefined') RZaction('editform');
+    </script>
+  </div><!-- alert-editbtn -->
+  <div class="container">
+        <span class="alert-brief"><span style="font-size: 18px;"><a href= "services/emergency_services/emergency_management/index.php">EOC Level 2: Flood Risk</a> | Info line: <a href="tel:7722264000">772-226-4000</a> | <a href="https://fl511.com/" target="_blank">FL511 Traffic</a> | <a href="https://crisistrack.juvare.com/public/indianriverFL/request.html" target="_blank">Report Residential Structure Damage</a> | <a href="https://experience.arcgis.com/experience/7d021b20f1e5422d9eeeabafba4360a5" target="_blank">Road Closures</a></span></span>
+
+
+    <button type="button" class="alert-dismiss" data-dismiss="alert" aria-label="Close"><i class="fa fa-close"></i></button>
+  </div><!-- /.container -->
+</div>	
+
+<div class="alert-editbtn" style="position: absolute; right: 0; top: 0;z-index: 201;">
+  
+  
+  
+    <script language="JavaScript" type="text/JavaScript">
+    RZ.module = 'alert';
+    RZ.nexturl = "editforms/alert_banner-editform.jsp";
+    RZ.popupwidth = ''; RZ.popupheight = ''; RZ.popupscroll = '';
+    RZ.img = '<span class="rzBtn">Edit Page Banner Alert</span>';
+    RZ.set = 'alert.pageid=alert-banner-index';
+    RZ.options = '';
+    if (typeof RZaction != 'undefined') RZaction('editform');
+  </script>
+  <script language="JavaScript" type="text/JavaScript">
+    RZ.module = 'alert';
+    RZ.nexturl = "editforms/alert_banner-editform.jsp";
+    RZ.popupwidth = ''; RZ.popupheight = ''; RZ.popupscroll = '';
+    RZ.img = '<span class="rzBtn">Edit Global Banner Alert</span>';
+    RZ.set = 'alert.pageid=alert-banner';
+    RZ.options = '';
+    if (typeof RZaction != 'undefined') RZaction('editform');
+  </script>
+</div><!-- alert-editbtn -->
+<style>
+#alert-banner.alert-dismissible{background-color:#ffffcc;padding:10px 15px; margin: 0; border-radius: 0; color: #000000;}
+#alert-banner .alert-link{position:absolute;right:50px;color:#000;}
+#alert-banner.alert-dismissible>.container{position:relative;text-align:center;}
+#alert-banner a.alert-content{display:block;padding:5px;border-radius:2px;margin:0 auto 0 18%;max-width:710px;text-decoration:none;color:#000000}
+#alert-banner .alert-title{display:block;font-weight:700;line-height:1;margin-right:12px;border-radius:3px}
+#alert-banner .alert-brief{font-size:14px;color:#000;font-weight:700;}
+#alert-banner button.alert-dismiss {position:absolute;right:0;top:50%;background:transparent;transform: translateY(-50%);padding: 0px;margin: 0px;border: none;}
+@media only screen and (max-width: 992px) {#alert-banner .alert-link {position: relative;right:0px;}#alert-banner .alert-brief {display: inline-block;width: 75vw; overflow: visable;}}@media only screen and (max-width: 700px) {#alert-banner .alert-brief {width: 55vw;}}
+</style>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-2">
+				<a href="./" id="logo"><img src="_assets_/images/logo.png" alt="Indian River County Florida Logo Homepage"></a>
+			</div><!--/.col-lg-2-->
+			<div id="toggles" class="d-lg-none">
+				<button aria-label="Toggle Search" id="search-toggle" class="fa fa-search"></button>
+				<button aria-label="Toggle Navigation" id="nav-toggle" class="fa fa-bars"></button>
+			</div><!--/#toggles-->
+			<nav class="col-lg-8">
+               
+
+
+
+
+ 
+<ul id="nav" class="v2_05-23-2012">
+	<li class="menuLI level0 menuDisplay li-1"><a class="menuA level0 menuDisplay" href="index.php" target="_self">Home</a></li>
+	<li class="menuLI level0 menuDisplay li-37 children"><a class="menuA level0 menuDisplay" href="government/index.php" target="_self">Government</a>
+		<ul class="menuUL level1 menuHidden ul-6846">
+			<li class="menuLI level1 menuHidden li-6846"><a class="menuA level1 menuHidden" href="https://indianrivercofl.portal.civicclerk.com/" target="_new">Meeting Agendas, Minutes, and Video</a></li>
+			<li class="menuLI level1 menuHidden li-39 children"><a class="menuA level1 menuHidden" href="government/board_of_county_commissioners/index.php" target="_self">Board Of County Commissioners</a>
+				<ul class="menuUL level2 menuHidden ul-1354">
+					<li class="menuLI level2 menuHidden li-1354"><a class="menuA level2 menuHidden" href="https://indianrivercofl.portal.civicclerk.com/?category_id=26" target="_new">BCC Agendas, Minutes, & Video</a></li>
+					<li class="menuLI level2 menuHidden li-7185"><a class="menuA level2 menuHidden" href="https://ircdocs.indian-river.org/WebLink/Search.aspx?dbid=0&repo=CBCC" target="_new">BCC Agendas Archive Search</a></li>
+					<li class="menuLI level2 menuHidden li-7186"><a class="menuA level2 menuHidden" href="https://ircdocs.indian-river.org/WebLink/Browse.aspx?id=3&dbid=0&repo=CBCC" target="_new">BCC Agendas Archive Browse</a></li>
+					<li class="menuLI level2 menuHidden li-5438"><a class="menuA level2 menuHidden" href="Document Center/Government/Board of County Commissioners/2026-BCC-Meeting-Schedule.pdf" target="_new">2026 BCC Meeting Schedule</a></li>
+					<li class="menuLI level2 menuHidden li-1355"><a class="menuA level2 menuHidden" href="Document Center/Government/Board of County Commissioners/2025-Commissioner-Committees.pdf" target="_new">Commissioner Committee Assignments</a></li>
+					<li class="menuLI level2 menuHidden li-1356"><a class="menuA level2 menuHidden" href="https://ircgis.maps.arcgis.com/apps/webappviewer/index.html?id=a36483726f1a49da91491113a753ab60" target="_new">Commissioner District Map</a></li>
+					<li class="menuLI level2 menuHidden li-1359"><a class="menuA level2 menuHidden" href="https://indianrivercounty.rja.revize.com/forms/5607" target="_new">Contact Commission Office</a></li>
+					<li class="menuLI level2 menuHidden li-7561"><a class="menuA level2 menuHidden" href="Document Center/Government/Board of County Commissioners/2027_Meeting_Dates.pdf" target="_new">2027 BCC Meeting Schedule</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-40 children"><a class="menuA level1 menuHidden" href="government/boards_and_committees/index.php" target="_self">Boards and Committees</a>
+				<ul class="menuUL level2 menuHidden ul-41">
+					<li class="menuLI level2 menuHidden li-41"><a class="menuA level2 menuHidden" href="government/boards_and_committees/agriculture_advisory_committee/index.php" target="_self">Agriculture Advisory Committee</a></li>
+					<li class="menuLI level2 menuHidden li-42"><a class="menuA level2 menuHidden" href="government/boards_and_committees/affordable_housing_advisory_committee/index.php" target="_self">Affordable Housing Advisory Committee</a></li>
+					<li class="menuLI level2 menuHidden li-43"><a class="menuA level2 menuHidden" href="government/board_of_county_commissioners/index.php" target="_self">Board Of County Commissioners</a></li>
+					<li class="menuLI level2 menuHidden li-44"><a class="menuA level2 menuHidden" href="government/boards_and_committees/beach_and_shore_preservation_advisory_committee/index.php" target="_self">Beach and Shore Preservation Advisory Committee</a></li>
+					<li class="menuLI level2 menuHidden li-45"><a class="menuA level2 menuHidden" href="government/boards_and_committees/childrens_services_advisory_committee/index.php" target="_self">Children's Services Advisory Committee</a></li>
+					<li class="menuLI level2 menuHidden li-46"><a class="menuA level2 menuHidden" href="government/boards_and_committees/citizen_oversight_committee/index.php" target="_self">Citizen Oversight Committee</a></li>
+					<li class="menuLI level2 menuHidden li-47"><a class="menuA level2 menuHidden" href="government/boards_and_committees/code_enforcement_board/index.php" target="_self">Code Enforcement Board</a></li>
+					<li class="menuLI level2 menuHidden li-48"><a class="menuA level2 menuHidden" href="government/boards_and_committees/community_development_block_grant_citizen_advisory_task_force/index.php" target="_self">Community Development Block Grant Citizen Advisory Task Force</a></li>
+					<li class="menuLI level2 menuHidden li-49"><a class="menuA level2 menuHidden" href="government/boards_and_committees/construction_board_of_adjustments_and_appeals/index.php" target="_self">Construction Board of Adjustments and Appeals</a></li>
+					<li class="menuLI level2 menuHidden li-50"><a class="menuA level2 menuHidden" href="government/boards_and_committees/economic_development_council/index.php" target="_self">Economic Development Council</a></li>
+					<li class="menuLI level2 menuHidden li-51"><a class="menuA level2 menuHidden" href="government/boards_and_committees/elected_officials_oversight_committee/index.php" target="_self">Elected Officials Oversight Committee</a></li>
+					<li class="menuLI level2 menuHidden li-52"><a class="menuA level2 menuHidden" href="government/boards_and_committees/emergency_services_district/index.php" target="_self">Emergency Services District</a></li>
+					<li class="menuLI level2 menuHidden li-53"><a class="menuA level2 menuHidden" href="government/boards_and_committees/environmental_control_board/index.php" target="_self">Environmental Control Board</a></li>
+					<li class="menuLI level2 menuHidden li-54"><a class="menuA level2 menuHidden" href="government/boards_and_committees/environmental_control_hearing_board/index.php" target="_self">Environmental Control Hearing Board</a></li>
+					<li class="menuLI level2 menuHidden li-3604"><a class="menuA level2 menuHidden" href="government/boards_and_committees/environmental_lands_acquisition_panel/index.php" target="_self">Environmental Lands Acquisition Panel</a></li>
+					<li class="menuLI level2 menuHidden li-55"><a class="menuA level2 menuHidden" href="government/boards_and_committees/indian_river_county_census_2020_community_action_committee/index.php" target="_self">Indian River County Census 2020 Community Action Committee</a></li>
+					<li class="menuLI level2 menuHidden li-56"><a class="menuA level2 menuHidden" href="government/boards_and_committees/local_mitigation_strategy_work_group/index.php" target="_self">Local Mitigation Strategy Work Group</a></li>
+					<li class="menuLI level2 menuHidden li-3690"><a class="menuA level2 menuHidden" href="services/planning_development_services/metropolitan_planning_organization/index.php" target="_self">Metropolitan Planning Organization (MPO)</a></li>
+					<li class="menuLI level2 menuHidden li-58"><a class="menuA level2 menuHidden" href="government/boards_and_committees/mpo_bicycle_advisory_committee/index.php" target="_self">MPO Bicycle Advisory Committee</a></li>
+					<li class="menuLI level2 menuHidden li-59"><a class="menuA level2 menuHidden" href="government/boards_and_committees/mpo_citizen_advisory_committee/index.php" target="_self">MPO Citizen Advisory Committee</a></li>
+					<li class="menuLI level2 menuHidden li-60"><a class="menuA level2 menuHidden" href="government/boards_and_committees/mpo_technical_advisory_committee/index.php" target="_self">MPO Technical Advisory Committee</a></li>
+					<li class="menuLI level2 menuHidden li-61"><a class="menuA level2 menuHidden" href="government/boards_and_committees/mpo_treasure_coast_transportation_council/index.php" target="_self">MPO Treasure Coast Transportation Council</a></li>
+					<li class="menuLI level2 menuHidden li-62"><a class="menuA level2 menuHidden" href="government/boards_and_committees/planning_and_zoning_commission/index.php" target="_self">Planning and Zoning Commission</a></li>
+					<li class="menuLI level2 menuHidden li-63"><a class="menuA level2 menuHidden" href="services/emergency_services/emergency_management/post_disaster_redevelopment_plan_(pdrp).php" target="_self">Post Disaster Redevelopment Committee</a></li>
+					<li class="menuLI level2 menuHidden li-65"><a class="menuA level2 menuHidden" href="government/boards_and_committees/public_safety_council_for_criminal_justice_mental_health_and_substance_abuse/index.php" target="_self">Public Safety Council for Criminal Justice, Mental Health and Substance Abuse</a></li>
+					<li class="menuLI level2 menuHidden li-66"><a class="menuA level2 menuHidden" href="government/boards_and_committees/public_school_planning_staff_working_group/index.php" target="_self">Public School Planning Staff Working Group</a></li>
+					<li class="menuLI level2 menuHidden li-67"><a class="menuA level2 menuHidden" href="government/boards_and_committees/school_planning_technical_advisory_committee/index.php" target="_self">School Planning Technical Advisory Committee</a></li>
+					<li class="menuLI level2 menuHidden li-68"><a class="menuA level2 menuHidden" href="government/boards_and_committees/solid_waste_disposal_district/index.php" target="_self">Solid Waste Disposal District</a></li>
+					<li class="menuLI level2 menuHidden li-70"><a class="menuA level2 menuHidden" href="government/boards_and_committees/technical_review_committee/index.php" target="_self">Technical Review Committee</a></li>
+					<li class="menuLI level2 menuHidden li-71"><a class="menuA level2 menuHidden" href="government/boards_and_committees/tourist_development_council/index.php" target="_self">Tourist Development Council</a></li>
+					<li class="menuLI level2 menuHidden li-72"><a class="menuA level2 menuHidden" href="government/boards_and_committees/transportation_disadvantaged_local_coordinating_board/index.php" target="_self">Transportation Disadvantaged Local Coordinating Board</a></li>
+					<li class="menuLI level2 menuHidden li-73"><a class="menuA level2 menuHidden" href="https://vab.indian-river.org" target="_new">Value Adjustment Board</a></li>
+					<li class="menuLI level2 menuHidden li-74"><a class="menuA level2 menuHidden" href="government/boards_and_committees/vero_lake_estates_municipal_service_taxing_unit_advisory_committee/index.php" target="_self">Vero Lake Estates Municipal Service Taxing Unit Advisory Committee</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-75 children"><a class="menuA level1 menuHidden" href="government/constitutional_officers/index.php" target="_self">Constitutional Officers</a>
+				<ul class="menuUL level2 menuHidden ul-76">
+					<li class="menuLI level2 menuHidden li-76"><a class="menuA level2 menuHidden" href="http://www.indianriverclerk.com/" target="_new">Clerk of Court</a></li>
+					<li class="menuLI level2 menuHidden li-77"><a class="menuA level2 menuHidden" href="http://www.ircpa.org/" target="_new">Property Appraiser</a></li>
+					<li class="menuLI level2 menuHidden li-78"><a class="menuA level2 menuHidden" href="http://www.ircsheriff.org/" target="_new">Sheriff</a></li>
+					<li class="menuLI level2 menuHidden li-79"><a class="menuA level2 menuHidden" href="https://voteindianriver.gov/" target="_new">Supervisor of Elections</a></li>
+					<li class="menuLI level2 menuHidden li-80"><a class="menuA level2 menuHidden" href="http://www.irctax.com/" target="_new">Tax Collector</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-3871 children"><a class="menuA level1 menuHidden" href="government/other_governmental_entities.php" target="_self">Other Governmental Entities</a>
+				<ul class="menuUL level2 menuHidden ul-3872">
+					<li class="menuLI level2 menuHidden li-3872"><a class="menuA level2 menuHidden" href="https://irmosquito.com/" target="_new">Mosquito Control District</a></li>
+					<li class="menuLI level2 menuHidden li-69"><a class="menuA level2 menuHidden" href="http://indianriverswcd.org" target="_new">Soil and Water Conservation District</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-81"><a class="menuA level1 menuHidden" href="http://www.municode.com/resources/gateway.aspx?productid=12232" target="_new">Indian River County Code</a></li>
+			<li class="menuLI level1 menuHidden li-3724"><a class="menuA level1 menuHidden" href="Document Center/Government/FY25-26-Org-Chart.pdf" target="_new">Organizational Chart</a></li>
+			<li class="menuLI level1 menuHidden li-3609"><a class="menuA level1 menuHidden" href="public_notices.php" target="_self">Public Notices</a></li>
+			<li class="menuLI level1 menuHidden li-5383"><a class="menuA level1 menuHidden" href="services/emergency_services/emergency_management/emergency_ordinances_declarations_and_orders.php" target="_self">Emergency Ordinances, Declarations and Orders</a></li>
+		</ul>
+	</li>
+	<li class="menuLI level0 menuDisplay li-83 children"><a class="menuA level0 menuDisplay" href="services/index.php" target="_self">Services</a>
+		<ul class="menuUL level1 menuHidden ul-104">
+			<li class="menuLI level1 menuHidden li-104 children"><a class="menuA level1 menuHidden" href="services/administration/index.php" target="_self">Administration</a>
+				<ul class="menuUL level2 menuHidden ul-3038">
+					<li class="menuLI level2 menuHidden li-3038"><a class="menuA level2 menuHidden" href="services/county_attorney/public_records_request/index.php" target="_self">Public Records Requests</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-5349 children"><a class="menuA level1 menuHidden" href="services/building_and_facilities_services/index.php" target="_self">Building & Facilities Services</a>
+				<ul class="menuUL level2 menuHidden ul-115">
+					<li class="menuLI level2 menuHidden li-115"><a class="menuA level2 menuHidden" href="services/building_and_facilities_services/building_division/index.php" target="_self">Building Division</a></li>
+					<li class="menuLI level2 menuHidden li-5416"><a class="menuA level2 menuHidden" href="services/building_and_facilities_services/facilities_management.php" target="_self">Facilities Management</a></li>
+					<li class="menuLI level2 menuHidden li-5700"><a class="menuA level2 menuHidden" href="services/building_and_facilities_services/life_safety/index.php" target="_self">Life Safety</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-3789 children"><a class="menuA level1 menuHidden" href="services/community_services/index.php" target="_self">Community Services</a>
+				<ul class="menuUL level2 menuHidden ul-3841">
+					<li class="menuLI level2 menuHidden li-3841"><a class="menuA level2 menuHidden" href="government/boards_and_committees/childrens_services_advisory_committee/index.php" target="_self">Children's Services</a></li>
+					<li class="menuLI level2 menuHidden li-4419"><a class="menuA level2 menuHidden" href="services/community_services/human-services/index.php" target="_self">Human Services</a></li>
+					<li class="menuLI level2 menuHidden li-136"><a class="menuA level2 menuHidden" href="services/community_services/housing_services/index.php" target="_self">Housing Services</a></li>
+					<li class="menuLI level2 menuHidden li-3791"><a class="menuA level2 menuHidden" href="services/library/index.php" target="_self">Libraries</a></li>
+					<li class="menuLI level2 menuHidden li-7399"><a class="menuA level2 menuHidden" href="services/community_services/human-services/mental_health_court.php" target="_self">Mental Health Court</a></li>
+					<li class="menuLI level2 menuHidden li-5353"><a class="menuA level2 menuHidden" href="services/community_services/state_housing_initiative_partnership_program/index.php" target="_self">State Housing Initiative Partnership Program (SHIP)</a></li>
+					<li class="menuLI level2 menuHidden li-168"><a class="menuA level2 menuHidden" href="services/community_services/veterans_services.php" target="_self">Veterans Services</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-141 children"><a class="menuA level1 menuHidden" href="services/county_attorney/index.php" target="_self">County Attorney</a>
+				<ul class="menuUL level2 menuHidden ul-3039">
+					<li class="menuLI level2 menuHidden li-3039"><a class="menuA level2 menuHidden" href="services/county_attorney/public_records_request/index.php" target="_self">Public Records Requests</a></li>
+					<li class="menuLI level2 menuHidden li-3755"><a class="menuA level2 menuHidden" href="https://library.municode.com/fl/indian_river_county/codes/code_of_ordinances" target="_new">County Code</a></li>
+					<li class="menuLI level2 menuHidden li-6663"><a class="menuA level2 menuHidden" href="services/county_attorney/real_estate_acquisition_.php" target="_self">Real Estate Acquisition</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-147 children"><a class="menuA level1 menuHidden" href="services/emergency_services/index.php" target="_self">Emergency Services</a>
+				<ul class="menuUL level2 menuHidden ul-148">
+					<li class="menuLI level2 menuHidden li-148"><a class="menuA level2 menuHidden" href="services/emergency_services/911_administration/index.php" target="_self">911 Administration</a></li>
+					<li class="menuLI level2 menuHidden li-149"><a class="menuA level2 menuHidden" href="services/emergency_services/animal_control/index.php" target="_self">Animal Control</a></li>
+					<li class="menuLI level2 menuHidden li-7364"><a class="menuA level2 menuHidden" href="services/emergency_services/as-coming-soon.php" target="_self">Animal Services - Coming Soon</a></li>
+					<li class="menuLI level2 menuHidden li-150"><a class="menuA level2 menuHidden" href="services/emergency_services/emergency_management/index.php" target="_self">Emergency Management</a></li>
+					<li class="menuLI level2 menuHidden li-151"><a class="menuA level2 menuHidden" href="services/emergency_services/fire_prevention_bureau/index.php" target="_self">Fire Prevention Bureau</a></li>
+					<li class="menuLI level2 menuHidden li-152"><a class="menuA level2 menuHidden" href="services/emergency_services/fire_rescue/index.php" target="_self">Fire Rescue</a></li>
+					<li class="menuLI level2 menuHidden li-153"><a class="menuA level2 menuHidden" href="services/emergency_services/radiological_emergency_preparedness/index.php" target="_self">Radiological Emergency Preparedness</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-171 children"><a class="menuA level1 menuHidden" href="services/human_resources/index.php" target="_self">Human Resources</a>
+				<ul class="menuUL level2 menuHidden ul-3753">
+					<li class="menuLI level2 menuHidden li-3753"><a class="menuA level2 menuHidden" href="https://www.governmentjobs.com/careers/indianriver" target="_new">County Jobs</a></li>
+					<li class="menuLI level2 menuHidden li-3754"><a class="menuA level2 menuHidden" href="services/human_resources/staff_portal/index.php" target="_self">Staff Portal</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-177 children"><a class="menuA level1 menuHidden" href="services/it/index.php" target="_self">Information Technology</a>
+				<ul class="menuUL level2 menuHidden ul-178">
+					<li class="menuLI level2 menuHidden li-178"><a class="menuA level2 menuHidden" href="services/it/gis/index.php" target="_self">Geographic Information Systems (GIS)</a></li>
+					<li class="menuLI level2 menuHidden li-179"><a class="menuA level2 menuHidden" href="services/it/information_systems_and_telecommunications.php" target="_self">Information Systems and Telecommunications</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-181 children"><a class="menuA level1 menuHidden" href="services/library/index.php" target="_self">Library Services</a>
+				<ul class="menuUL level2 menuHidden ul-182">
+					<li class="menuLI level2 menuHidden li-182"><a class="menuA level2 menuHidden" href="services/library/catalog/index.php" target="_self">Catalog</a></li>
+					<li class="menuLI level2 menuHidden li-3491"><a class="menuA level2 menuHidden" href="https://indianriver.gov/calendar.php?calendar=3" target="_new">Events and Programs</a></li>
+					<li class="menuLI level2 menuHidden li-184"><a class="menuA level2 menuHidden" href="services/library/youth/index.php" target="_self">Youth</a></li>
+					<li class="menuLI level2 menuHidden li-186"><a class="menuA level2 menuHidden" href="services/library/genealogy/index.php" target="_self">Genealogy</a></li>
+					<li class="menuLI level2 menuHidden li-188"><a class="menuA level2 menuHidden" href="services/library/ebooks/index.php" target="_self">eBooks</a></li>
+					<li class="menuLI level2 menuHidden li-5005"><a class="menuA level2 menuHidden" href="services/library/books_and_more/index.php" target="_self">Books and More</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-189 children"><a class="menuA level1 menuHidden" href="services/management___budget/index.php" target="_self">Management & Budget</a>
+				<ul class="menuUL level2 menuHidden ul-190">
+					<li class="menuLI level2 menuHidden li-190"><a class="menuA level2 menuHidden" href="services/management___budget/procurement/index.php" target="_self">Procurement</a></li>
+					<li class="menuLI level2 menuHidden li-191"><a class="menuA level2 menuHidden" href="services/management___budget/risk_management/index.php" target="_self">Risk Management</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-3804 children"><a class="menuA level1 menuHidden" href="services/natural_resources/index.php" target="_self">Natural Resources</a>
+				<ul class="menuUL level2 menuHidden ul-213">
+					<li class="menuLI level2 menuHidden li-213"><a class="menuA level2 menuHidden" href="services/natural_resources/coastal_engineering/index.php" target="_self">Coastal Engineering</a></li>
+					<li class="menuLI level2 menuHidden li-3805"><a class="menuA level2 menuHidden" href="services/natural_resources/indian_river_lagoon/index.php" target="_self">Indian River Lagoon</a></li>
+					<li class="menuLI level2 menuHidden li-138"><a class="menuA level2 menuHidden" href="http://indian.ifas.ufl.edu/" target="_new">UF/IFAS Extension Service</a></li>
+					<li class="menuLI level2 menuHidden li-137"><a class="menuA level2 menuHidden" href="https://indianriverswcd.org" target="_new">Soil and Water Conservation</a></li>
+					<li class="menuLI level2 menuHidden li-221"><a class="menuA level2 menuHidden" href="services/natural_resources/stormwater/index.php" target="_self">Stormwater</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-197 children"><a class="menuA level1 menuHidden" href="services/parks_and_recreation/index.php" target="_self">Parks, Recreation, & Conservation</a>
+				<ul class="menuUL level2 menuHidden ul-198">
+					<li class="menuLI level2 menuHidden li-198"><a class="menuA level2 menuHidden" href="https://secure.rec1.com/FL/indian-river-county-fl/catalog" target="_new">Registration and Reservations</a></li>
+					<li class="menuLI level2 menuHidden li-4471"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/aquatics.php" target="_self">Aquatics</a></li>
+					<li class="menuLI level2 menuHidden li-3580"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/conservation_lands_program/index.php" target="_self">Conservation Lands Division</a></li>
+					<li class="menuLI level2 menuHidden li-201"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/fairgrounds_and_expo_center.php" target="_self">Fairgrounds and Expo Center</a></li>
+					<li class="menuLI level2 menuHidden li-204"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/intergenerational_recreation_center/index.php" target="_self">Intergenerational Recreation Center</a></li>
+					<li class="menuLI level2 menuHidden li-199"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/parks_and_beaches.php" target="_self">Parks and Campground</a></li>
+					<li class="menuLI level2 menuHidden li-207"><a class="menuA level2 menuHidden" href="http://www.sandridgegc.com/" target="_new">Sandridge Golf Club/Courses</a></li>
+					<li class="menuLI level2 menuHidden li-208"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/shooting_range/index.php" target="_self">Shooting Range</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-114 children"><a class="menuA level1 menuHidden" href="services/planning_development_services/index.php" target="_self">Planning & Development Services</a>
+				<ul class="menuUL level2 menuHidden ul-116">
+					<li class="menuLI level2 menuHidden li-116"><a class="menuA level2 menuHidden" href="services/planning_development_services/code_enforcement/index.php" target="_self">Code Enforcement</a></li>
+					<li class="menuLI level2 menuHidden li-7095"><a class="menuA level2 menuHidden" href="services/planning_development_services/economic_development_division/index.php" target="_self">Economic Development</a></li>
+					<li class="menuLI level2 menuHidden li-192"><a class="menuA level2 menuHidden" href="services/planning_development_services/metropolitan_planning_organization/index.php" target="_self">Metropolitan Planning Organization (MPO)</a></li>
+					<li class="menuLI level2 menuHidden li-117"><a class="menuA level2 menuHidden" href="services/planning_development_services/planning_division/index.php" target="_self">Planning Division</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-211"><a class="menuA level1 menuHidden" href="http://www.golineirt.com/" target="_new">Public Transportation System (GoLine)</a></li>
+			<li class="menuLI level1 menuHidden li-212 children"><a class="menuA level1 menuHidden" href="services/public_works/index.php" target="_self">Public Works</a>
+				<ul class="menuUL level2 menuHidden ul-215">
+					<li class="menuLI level2 menuHidden li-215"><a class="menuA level2 menuHidden" href="services/public_works/engineering_division/index.php" target="_self">Engineering Division</a></li>
+					<li class="menuLI level2 menuHidden li-220"><a class="menuA level2 menuHidden" href="services/public_works/road_and_bridge_division.php" target="_self">Road and Bridge Division</a></li>
+					<li class="menuLI level2 menuHidden li-222"><a class="menuA level2 menuHidden" href="services/public_works/traffic_engineering/index.php" target="_self">Traffic Engineering</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-231 children"><a class="menuA level1 menuHidden" href="services/solid_waste_disposal_district/index.php" target="_self">Recycling and Garbage</a>
+				<ul class="menuUL level2 menuHidden ul-232">
+					<li class="menuLI level2 menuHidden li-232"><a class="menuA level2 menuHidden" href="https://gisportal.ircgov.com/irc-swdd/garbage-recycle.html" target="_new">Find My Pickup Day</a></li>
+					<li class="menuLI level2 menuHidden li-4702"><a class="menuA level2 menuHidden" href="services/solid_waste_disposal_district/roe.php" target="_self">Vegetative Storm Debris Collection Right-of-Entry Form</a></li>
+					<li class="menuLI level2 menuHidden li-6130"><a class="menuA level2 menuHidden" href="services/solid_waste_disposal_district/frequently_asked_questions.php" target="_self">Frequently Asked Questions</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-241 children"><a class="menuA level1 menuHidden" href="services/utilities/index.php" target="_self">Utilities</a>
+				<ul class="menuUL level2 menuHidden ul-243">
+					<li class="menuLI level2 menuHidden li-243"><a class="menuA level2 menuHidden" href="services/utilities/application_for_service.php" target="_self">Application for Service</a></li>
+					<li class="menuLI level2 menuHidden li-250"><a class="menuA level2 menuHidden" href="services/utilities/customer_service.php" target="_self">Customer Service</a></li>
+					<li class="menuLI level2 menuHidden li-5929"><a class="menuA level2 menuHidden" href="services/utilities/one_water/index.php" target="_self">Integrated Water Master Plan</a></li>
+					<li class="menuLI level2 menuHidden li-7595"><a class="menuA level2 menuHidden" href="services/utilities/boil_water_notices.php" target="_self">Boil Water Notices</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li class="menuLI level0 menuDisplay li-94 children"><a class="menuA level0 menuDisplay" href="community/index.php" target="_self">Community</a>
+		<ul class="menuUL level1 menuHidden ul-84">
+			<li class="menuLI level1 menuHidden li-84 children"><a class="menuA level1 menuHidden" href="http://visitindianrivercounty.com/" target="_new">Explore</a>
+				<ul class="menuUL level2 menuHidden ul-85">
+					<li class="menuLI level2 menuHidden li-85"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/conservation_lands_program.php" target="_self">Conservation Lands</a></li>
+					<li class="menuLI level2 menuHidden li-86"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/fairgrounds_and_expo_center.php" target="_self">Fairgrounds and Expo Center</a></li>
+					<li class="menuLI level2 menuHidden li-87"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/gifford_aquatic_center/index.php" target="_self">Gifford Aquatic Center</a></li>
+					<li class="menuLI level2 menuHidden li-88"><a class="menuA level2 menuHidden" href="https://ircgis.maps.arcgis.com/apps/webappviewer/index.html?id=54e401baeb554c86927e20718a659e49" target="_new">Hiking Trails Map</a></li>
+					<li class="menuLI level2 menuHidden li-89"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/intergenerational_recreation_center/index.php" target="_self">Intergenerational Recreation Center</a></li>
+					<li class="menuLI level2 menuHidden li-90"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/north_county_aquatic_center/index.php" target="_self">North County Aquatic Center</a></li>
+					<li class="menuLI level2 menuHidden li-91"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/parks_and_beaches.php" target="_self">Parks and Beaches</a></li>
+					<li class="menuLI level2 menuHidden li-92"><a class="menuA level2 menuHidden" href="http://www.sandridgegc.com/" target="_new">Sandridge Golf Club/Courses</a></li>
+					<li class="menuLI level2 menuHidden li-3637"><a class="menuA level2 menuHidden" href="https://ircgis.maps.arcgis.com/" target="_new">Interactive Map Gallery</a></li>
+					<li class="menuLI level2 menuHidden li-93"><a class="menuA level2 menuHidden" href="services/parks_and_recreation/shooting_range/index.php" target="_self">Shooting Range</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-3506 children"><a class="menuA level1 menuHidden" href="community/get_connected.php" target="_self">Get Connected</a>
+				<ul class="menuUL level2 menuHidden ul-96">
+					<li class="menuLI level2 menuHidden li-96"><a class="menuA level2 menuHidden" href="calendar.php" target="_self">Events Calendar</a></li>
+					<li class="menuLI level2 menuHidden li-3502"><a class="menuA level2 menuHidden" href="community/newsletters/index.php" target="_self">Newsletters</a></li>
+					<li class="menuLI level2 menuHidden li-3533"><a class="menuA level2 menuHidden" href="community/social_media.php" target="_self">Social Media</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-97"><a class="menuA level1 menuHidden" href="http://www.golineirt.com/" target="_new">GoLine Bus System</a></li>
+			<li class="menuLI level1 menuHidden li-98"><a class="menuA level1 menuHidden" href="https://www.indianriverchamber.com/" target="_new">Indian River Chamber of Commerce</a></li>
+			<li class="menuLI level1 menuHidden li-100"><a class="menuA level1 menuHidden" href="community/resources.php" target="_self">Links and Resources</a></li>
+			<li class="menuLI level1 menuHidden li-3322"><a class="menuA level1 menuHidden" href="services/community_development/gifford_neighborhood_plan_update.php" target="_self">Gifford Neighborhood Plan</a></li>
+			<li class="menuLI level1 menuHidden li-3323"><a class="menuA level1 menuHidden" href="services/community_development/wabasso_corridor_plan.php" target="_self">Wabasso Corridor Plan</a></li>
+			<li class="menuLI level1 menuHidden li-3822"><a class="menuA level1 menuHidden" href="services/natural_resources/indian_river_lagoon/lagoon_management_plan.php" target="_self">Lagoon Management Plan</a></li>
+			<li class="menuLI level1 menuHidden li-5387"><a class="menuA level1 menuHidden" href="community/oslo/index.php" target="_self">oslo</a></li>
+		</ul>
+	</li>
+	<li class="menuLI level0 menuDisplay li-101 children"><a class="menuA level0 menuDisplay" href="i_want_to/index.php" target="_self">I Want To</a>
+		<ul class="menuUL level1 menuHidden ul-102">
+			<li class="menuLI level1 menuHidden li-102"><a class="menuA level1 menuHidden" href="contact_us/index.php" target="_self">Contact Us</a></li>
+			<li class="menuLI level1 menuHidden li-3058 children"><a class="menuA level1 menuHidden" href="i_want_to/apply_for___obtain/index.php" target="_self">Apply For | Obtain</a>
+				<ul class="menuUL level2 menuHidden ul-3304">
+					<li class="menuLI level2 menuHidden li-3304"><a class="menuA level2 menuHidden" href="https://www.mgoconnect.org/cp/portal" target="_new">Apply for Building / Fire Permit</a></li>
+					<li class="menuLI level2 menuHidden li-3066"><a class="menuA level2 menuHidden" href="services/community_development/building_division/permits_and_forms.php" target="_self">Obtain building division Permit Applications and Forms</a></li>
+					<li class="menuLI level2 menuHidden li-3303"><a class="menuA level2 menuHidden" href="services/planning_development_services/code_enforcement/permits_and_forms.php#outer-292 " target="_self">obtain code enforcement permit applications and forms</a></li>
+					<li class="menuLI level2 menuHidden li-3067"><a class="menuA level2 menuHidden" href="services/planning_development_services/planning_division/permits_and_forms.php" target="_self">obtain planning division permit applications and forms</a></li>
+					<li class="menuLI level2 menuHidden li-3068"><a class="menuA level2 menuHidden" href="services/community_services/state_housing_initiative_partnership_program/index.php" target="_self">Apply for State Housing Initiative Partnership Program (SHIP)</a></li>
+					<li class="menuLI level2 menuHidden li-3069"><a class="menuA level2 menuHidden" href="services/community_services/housing_services/index.php" target="_self">Apply for rental assistance</a></li>
+					<li class="menuLI level2 menuHidden li-3070"><a class="menuA level2 menuHidden" href="services/emergency_services/emergency_management/special_needs_shelter.php" target="_self">Apply for Special Needs Shelter</a></li>
+					<li class="menuLI level2 menuHidden li-3105"><a class="menuA level2 menuHidden" href="services/emergency_services/fire_prevention_bureau/permits_and_fees.php" target="_self">Apply for special events/fireworks or other Fire Prevention permits</a></li>
+					<li class="menuLI level2 menuHidden li-3107"><a class="menuA level2 menuHidden" href="https://indianrivercounty.rja.revize.com/forms/14128" target="_new">Apply for a board or committee</a></li>
+					<li class="menuLI level2 menuHidden li-3108"><a class="menuA level2 menuHidden" href="https://www.governmentjobs.com/careers/indianriver" target="_new">Apply for a County job</a></li>
+					<li class="menuLI level2 menuHidden li-3109"><a class="menuA level2 menuHidden" href="services/public_works/engineering_division/permits_and_applications.php" target="_self">Apply for right-of-way permit or other public works permits</a></li>
+					<li class="menuLI level2 menuHidden li-3111"><a class="menuA level2 menuHidden" href="https://www.wm.com/" target="_new">Apply for garbage collection</a></li>
+					<li class="menuLI level2 menuHidden li-3112"><a class="menuA level2 menuHidden" href="services/utilities/application_for_service.php" target="_self">Apply for Water/Sewer service</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-3059 children"><a class="menuA level1 menuHidden" href="i_want_to/find/index.php" target="_self">Find | Locate</a>
+				<ul class="menuUL level2 menuHidden ul-3072">
+					<li class="menuLI level2 menuHidden li-3072"><a class="menuA level2 menuHidden" href="services/emergency_services/emergency_management/pet_evacuation_shelter.php" target="_self">Find a pet evacuation shelter</a></li>
+					<li class="menuLI level2 menuHidden li-3073"><a class="menuA level2 menuHidden" href="https://ircgis.maps.arcgis.com/apps/webappviewer/index.html?id=a36483726f1a49da91491113a753ab60" target="_new">Find my Commissioner's District</a></li>
+					<li class="menuLI level2 menuHidden li-3074"><a class="menuA level2 menuHidden" href="https://ircgis.maps.arcgis.com/apps/webappviewer/index.html?id=54e401baeb554c86927e20718a659e49" target="_new">Find hiking trails</a></li>
+					<li class="menuLI level2 menuHidden li-3075"><a class="menuA level2 menuHidden" href="services/solid_waste_disposal_district/index.php" target="_self">Find out what items go in my recycling cart</a></li>
+					<li class="menuLI level2 menuHidden li-3076"><a class="menuA level2 menuHidden" href="https://gisportal.ircgov.com/irc-swdd/garbage-recycle.html" target="_new">Find my Garbage/Recycling pickup day</a></li>
+					<li class="menuLI level2 menuHidden li-3077"><a class="menuA level2 menuHidden" href="https://indianrivertransit.ridesystems.net/routes" target="_new">Locate my bus</a></li>
+					<li class="menuLI level2 menuHidden li-3078"><a class="menuA level2 menuHidden" href="services/solid_waste_disposal_district/landfill_convenience_centers.php" target="_self">Locate a garbage convenience center</a></li>
+					<li class="menuLI level2 menuHidden li-3302"><a class="menuA level2 menuHidden" href="https://mgoconnect.org/cp/search-permits" target="_new">Search Open and Expired Permits</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-3060 children"><a class="menuA level1 menuHidden" href="i_want_to/pay/index.php" target="_self">Pay</a>
+				<ul class="menuUL level2 menuHidden ul-3071">
+					<li class="menuLI level2 menuHidden li-3071"><a class="menuA level2 menuHidden" href="https://secure.rec1.com/FL/indian-river-county-fl/catalog/index?filter=c2VhcmNoPXBvb2wlMjBwYXNzJnJlbnRhbCU1QmZyb20lNUQ9JnJlbnRhbCU1QnRvJTVEPSYzNjk3ZjJhMTEyODUwYTQ0Mjk4ZWRkOWFmODJmZGI4Yz0yMTRhMDc1MjFhOGQxZjZmNDA4OWZlNjBlMmYzYzc1Mw==" target="_new">Purchase a pool pass</a></li>
+					<li class="menuLI level2 menuHidden li-3386"><a class="menuA level2 menuHidden" href="https://utilweb.ircgov.com/" target="_new">Pay Utility Bill</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-3061 children"><a class="menuA level1 menuHidden" href="i_want_to/register/index.php" target="_self">Register</a>
+				<ul class="menuUL level2 menuHidden ul-3080">
+					<li class="menuLI level2 menuHidden li-3080"><a class="menuA level2 menuHidden" href="https://secure.rec1.com/FL/indian-river-county-fl/catalog/index?filter=Y2F0ZWdvcnklNUIxNTMwNiU1RD0xJmNhdGVnb3J5JTVCMTcwNjIlNUQ9MSZzZWFyY2g9JnJlbnRhbCU1QmZyb20lNUQ9JnJlbnRhbCU1QnRvJTVEPSYzNjk3ZjJhMTEyODUwYTQ0Mjk4ZWRkOWFmODJmZGI4Yz0yMTRhMDc1MjFhOGQxZjZmNDA4OWZlNjBlMmYzYzc1Mw==" target="_new">Register for athletics programs</a></li>
+					<li class="menuLI level2 menuHidden li-3081"><a class="menuA level2 menuHidden" href="https://secure.rec1.com/FL/indian-river-county-fl/catalog/index?filter=Y2F0ZWdvcnklNUIxNTYwOSU1RD0xJnNlYXJjaD0mcmVudGFsJTVCZnJvbSU1RD0mcmVudGFsJTVCdG8lNUQ9JjM2OTdmMmExMTI4NTBhNDQyOThlZGQ5YWY4MmZkYjhjPTIxNGEwNzUyMWE4ZDFmNmY0MDg5ZmU2MGUyZjNjNzUz" target="_new">Register to use the shooting range</a></li>
+					<li class="menuLI level2 menuHidden li-3082"><a class="menuA level2 menuHidden" href="https://member.everbridge.net/index/892807736723332#/signup" target="_new">Sign up for emergency alerts</a></li>
+					<li class="menuLI level2 menuHidden li-3305"><a class="menuA level2 menuHidden" href="https://www.mgoconnect.org/cp/info-account" target="_new">Register for MGO Permitting Connect Customer Portal Account</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-3062 children"><a class="menuA level1 menuHidden" href="i_want_to/report/index.php" target="_self">Report</a>
+				<ul class="menuUL level2 menuHidden ul-3083">
+					<li class="menuLI level2 menuHidden li-3083"><a class="menuA level2 menuHidden" href="services/emergency_services/animal_control/index.php" target="_self">Make an Animal Control Complaint</a></li>
+					<li class="menuLI level2 menuHidden li-3300"><a class="menuA level2 menuHidden" href="http://comdevweb.ircgov.com/CodeSearch/CodeSearch.dll" target="_new">Report Code Violations</a></li>
+					<li class="menuLI level2 menuHidden li-3301"><a class="menuA level2 menuHidden" href="https://www.mgoconnect.org/cp/portal" target="_new">Report Unlicensed/Unpermitted Construction</a></li>
+					<li class="menuLI level2 menuHidden li-3288"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Public Service Requests</a></li>
+					<li class="menuLI level2 menuHidden li-3084"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Sidewalk Damage</a></li>
+					<li class="menuLI level2 menuHidden li-3086"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Road Pothole</a></li>
+					<li class="menuLI level2 menuHidden li-3088"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Road Drainage Issue</a></li>
+					<li class="menuLI level2 menuHidden li-3090"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Debris in Roadway</a></li>
+					<li class="menuLI level2 menuHidden li-3091"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Mowing Issue within County Right of Way</a></li>
+					<li class="menuLI level2 menuHidden li-3289"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Tree Trimming Issue Within County Right of Wa</a></li>
+					<li class="menuLI level2 menuHidden li-3092"><a class="menuA level2 menuHidden" href="services/planning_development_services/planning_division/planner_of_the_day.php" target="_self">Submit a question or issue to the Planner of the Day</a></li>
+					<li class="menuLI level2 menuHidden li-3290"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Damaged/Missing/Blocked Traffic/Road Sign</a></li>
+					<li class="menuLI level2 menuHidden li-3291"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Traffic Signal Out or Damaged</a></li>
+					<li class="menuLI level2 menuHidden li-3292"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Storm Drain Dumping</a></li>
+					<li class="menuLI level2 menuHidden li-3293"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Large Beach Obstruction/Vessel</a></li>
+					<li class="menuLI level2 menuHidden li-3294"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Deceased or Injured Marine Animal on Beach</a></li>
+					<li class="menuLI level2 menuHidden li-3295"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Non-Hurricane Storm Damage</a></li>
+					<li class="menuLI level2 menuHidden li-3296"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Overgrown Wooded Locations (Wild fire Hazard)</a></li>
+					<li class="menuLI level2 menuHidden li-3297"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Utilities System Non-Emergency Issue</a></li>
+					<li class="menuLI level2 menuHidden li-3298"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Obvious Contamination in Recycling Cart</a></li>
+					<li class="menuLI level2 menuHidden li-3299"><a class="menuA level2 menuHidden" href="i_want_to/report/service_requests/index.php" target="_self">Report Illegal Garbage Dumping</a></li>
+				</ul>
+			</li>
+			<li class="menuLI level1 menuHidden li-3063 children"><a class="menuA level1 menuHidden" href="i_want_to/request___reserve/index.php" target="_self">Request | Reserve</a>
+				<ul class="menuUL level2 menuHidden ul-3094">
+					<li class="menuLI level2 menuHidden li-3094"><a class="menuA level2 menuHidden" href="services/county_attorney/public_records_request/index.php" target="_self">Make a public records request</a></li>
+					<li class="menuLI level2 menuHidden li-3095"><a class="menuA level2 menuHidden" href="Document Center/I Want To/Transport-Request.pdf" target="_new">Make a shelter transportation request</a></li>
+					<li class="menuLI level2 menuHidden li-3097"><a class="menuA level2 menuHidden" href="https://secure.rec1.com/FL/indian-river-county-fl/catalog/index?filter=c2VhcmNoPXBvb2wlMjBwYXNzJnJlbnRhbCU1QmZyb20lNUQ9JnJlbnRhbCU1QnRvJTVEPSYzNjk3ZjJhMTEyODUwYTQ0Mjk4ZWRkOWFmODJmZGI4Yz0yMTRhMDc1MjFhOGQxZjZmNDA4OWZlNjBlMmYzYzc1Mw==" target="_new">Rent a park pavilion or a facility conference/event room</a></li>
+					<li class="menuLI level2 menuHidden li-3099"><a class="menuA level2 menuHidden" href="services/solid_waste_disposal_district/residential_waste.php" target="_self">Request a different size recycling/garbage cart</a></li>
+					<li class="menuLI level2 menuHidden li-3100"><a class="menuA level2 menuHidden" href="https://indianrivercounty.rja.revize.com/forms/5440" target="_new">Request a payoff or lien release</a></li>
+					<li class="menuLI level2 menuHidden li-3102"><a class="menuA level2 menuHidden" href="https://secure.rec1.com/FL/indian-river-county-fl/catalog?filter=bG9jYXRpb25bMTk2ODBdPTE=" target="_new">Reserve a campsite</a></li>
+					<li class="menuLI level2 menuHidden li-3103"><a class="menuA level2 menuHidden" href="https://secure.rec1.com/FL/indian-river-county-fl/catalog/index?filter=Y2F0ZWdvcnklNUIxNzIzNSU1RD0xJnNlYXJjaD0mcmVudGFsJTVCZnJvbSU1RD0mcmVudGFsJTVCdG8lNUQ9JjM2OTdmMmExMTI4NTBhNDQyOThlZGQ5YWY4MmZkYjhjPTIxNGEwNzUyMWE4ZDFmNmY0MDg5ZmU2MGUyZjNjNzUz" target="_new">Sponsor an event</a></li>
+					<li class="menuLI level2 menuHidden li-3104"><a class="menuA level2 menuHidden" href="http://indianriver.clearvillageinc.com/citizenportal/defaultutilities.aspx" target="_new">Submit a Service availability Request</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li class="menuLI level0 menuDisplay li-103"><a class="menuA level0 menuDisplay" href="contact_us/index.php" target="_self">Contact</a></li>
+	<li class="menuLI level0 menuDisplay li-3771"><a class="menuA level0 menuDisplay" href="https://www.governmentjobs.com/careers/indianriver" target="_new">Jobs</a></li>
+	<li class="menuLI level0 menuDisplay li-5753 children"><a class="menuA level0 menuDisplay" href="https://irctv.cablecast.tv/watch-now?site=1" target="_new">IRCTV</a>
+		<ul class="menuUL level1 menuHidden ul-5766">
+			<li class="menuLI level1 menuHidden li-5766"><a class="menuA level1 menuHidden" href="download_app/index.php" target="_self">Download App</a></li>
+			<li class="menuLI level1 menuHidden li-5776"><a class="menuA level1 menuHidden" href="https://irctv.cablecast.tv/watch-now?site=1" target="_new">Watch IRCTV Now</a></li>
+		</ul>
+	</li>
+</ul>
+
+			</nav><!--/.col-lg-8-->
+			<div class="col-lg-2">
+			<div class="top-right-icon-wrap">
+								<script language="JavaScript" type="text/JavaScript">
+					RZ.module = 'global';
+					RZ.nexturl = 'editforms/socials-editlist.jsp?pageid=socials&height=32&width=36';
+					RZ.img = '<span class="rzBtn">Edit Socials</span>';
+					RZ.set = '';
+					RZ.options = '';
+					if (typeof RZaction != 'undefined') RZaction('editlist');
+				</script>
+                				<ul id="social-media-links" style="padding-left:0;margin:0;list-style:none;">
+                               
+        <li><a href="https://www.facebook.com/indianrivercounty/" class="tw" target="_blank"><img src="uploadfiles/fb-icon.png?t=202308311429550" alt="Facebook"></a></li>
+
+           
+        <li><a href="https://twitter.com/ircgov" class="tw" target="_blank"><img src="uploadfiles/tw-icon.png?t=202308311429550" alt="twitter"></a></li>
+
+           
+        <li><a href="https://www.instagram.com/ircgov/" class="tw" target="_blank"><img src="uploadfiles/ig-icon.png?t=202308311429550" alt="instagram"></a></li>
+
+           
+        <li><a href="https://www.youtube.com/c/IndianRiverCountyFL" class="tw" target="_blank"><img src="uploadfiles/yt-icon.png?t=202308311429550" alt="youtube"></a></li>
+
+     
+				</ul><!--/#social-media-links-->
+				<button id="button-search"><img src="_assets_/images/search-icon.png" alt="Search"></button>
+			</div><!--/.top-right-icon-wrap-->
+			</div><!--/.col-lg-2-->
+		</div><!--/.row-->
+	</div><!--/.container-fluid-->
+</header><!--/header-->
+	
+	<script language="JavaScript" type="text/JavaScript">
+if (typeof RZlistbegin != 'undefined') RZlistbegin(1)
+</script>
+
+	<script language="JavaScript" type="text/JavaScript">
+if (typeof RZlinktemplate != 'undefined') RZlinktemplate('slider','','')
+if (typeof RZ.nextseq != 'undefined') RZ.nextseq.modules['slider_1']={field:'seq_no',seq:'6.00'};
+</script>
+
+
+
+	
+
+<section id="slider" class="tiny-slider-wrap" aria-label="Page Banner">
+
+
+	
+
+
+	<div class="rzBtnContainer rzHeader text-center sliderbtn" >
+		
+			<script language="JavaScript" type="text/JavaScript">
+				RZ.module = 'slider';
+				
+				RZ.nexturl = 'editforms/slider_images-editlist.jsp?width=1700&height=865&pageid=index';
+				RZ.img = '<span class="rzBtn">Edit Slides</span>';
+				RZ.set = '';
+				RZ.options = '';
+				if (typeof RZaction != 'undefined') RZaction('editform');
+			</script>
+			<!--
+			<script language="JavaScript" type="text/JavaScript">
+				RZ.module = 'global';
+				RZ.nexturl = 'editforms/hide-video-editform.jsp';
+				RZ.img = '<span class="rzBtn">Hide video</span>';
+				RZ.set = 'pageid=hide-video';
+				RZ.options = '';
+				if (typeof RZaction != 'undefined') RZaction('editform');
+			</script>			
+			
+			-->
+			<script language="JavaScript" type="text/JavaScript">
+				RZ.module = 'global';
+				RZ.nexturl = 'editforms/slider-caption-editform.jsp?pageid=index-slider-caption';
+				RZ.img = '<span class="rzBtn">Edit Slides Caption</span>';
+				RZ.set = 'pageid=index-slider-caption';
+				RZ.options = '';
+				if (typeof RZaction != 'undefined') RZaction('editform');
+			</script>
+			<script language="JavaScript" type="text/JavaScript">
+				RZ.module = 'global';
+				RZ.nexturl = 'editforms/client_scripts-editform.jsp?';
+				RZ.img = '<span class="rzBtn">Edit CSS/Scripts</span>';
+				RZ.set = 'pageid=raw-index';
+				RZ.options = '';
+				if (typeof RZaction != 'undefined') { if (RZ.roles.indexOf("superuser") > -1 || RZ.roles.indexOf("administrator") > -1) { RZaction('editform'); } else { RZaction(""); } };
+			</script>
+			
+			<script language="JavaScript" type="text/JavaScript">
+				RZ.nexturl = '';
+				RZ.img = '<span class="rzAdmin" style=""><img src="images/edit/permissions.jpg" alt="Permissions" border="0" class="rzBtn" /></span>';
+				RZ.options = '';
+				if (typeof RZaction != 'undefined') RZaction('permissions');
+			</script>
+				<script language="JavaScript" type="text/JavaScript">
+				RZ.module = 'revize_topnav';
+				RZ.nexturl = "/revize/plugins/menus/webspace_menu-editlist.jsp?pageid=index&"
+					+ "linksfilter=linkplacement=topnav and linkparentid=0&"
+					+ "numberoflevels=3&"
+					+ "linkoptions=url,template,file&"
+					+ "linknewsection=*all*";
+				RZ.img = '<span class="rzBtn">Edit Top Nav</span>';
+				RZ.caption = '';
+				RZ.set="links.linkplacement=topnav";
+				RZ.options = '';
+				if (typeof RZaction != 'undefined') RZaction('editlist');
+			</script>
+			<!--
+			<script language="JavaScript" type="text/JavaScript">
+				RZ.module = 'global';
+				RZ.nexturl = 'editforms/nav_desc_editlist.jsp?pageid=nav-images&height=158&width=276';
+				RZ.img = '<span class="rzBtn">Edit Top Nav Images</span>';
+				RZ.set = 'pageid=nav-images';
+				RZ.options = '';
+				if (typeof RZaction != 'undefined') RZaction('editlist');
+			</script>  						
+			-->
+			<script language="JavaScript" type="text/JavaScript">
+				RZ.module = 'freeform';
+				RZ.nexturl = 'editforms/metadata-editform.jsp?';
+				RZ.img = '<span class="rzBtn">Edit Metadata</span>';
+				RZ.set = 'pageid=index';
+				RZ.options = '';
+				if (typeof RZaction != 'undefined') RZaction('editform');
+			</script>
+			
+			<!--
+			<script language="JavaScript" type="text/JavaScript">
+				RZ.module = 'global';
+				RZ.nexturl = 'editforms/slider-caption-editform.jsp?pageid=freeform-slider-caption-index';
+				RZ.img = '<span class="rzBtn">Edit Slides Caption</span>';
+				RZ.set = 'pageid=freeform-slider-caption-index';
+				RZ.options = '';
+				if (typeof RZaction != 'undefined') RZaction('editform');
+			</script>		
+			-->
+		
+	</div><!--/.rzBtnContainer-->
+	
+		
+			<ul class="tiny-slider">
+				<li class='tiny-item'><div class='tns-lazy-img tns-bg-slide' data-style="background:url('uploadfiles/slide-1.jpg?t=202506091505540') center/cover no-repeat"></div></li><li class='tiny-item'><div class='tns-lazy-img tns-bg-slide' data-style="background:url('revize_photo_gallery/Headers/lily.jpg?t=202610051006510') center/cover no-repeat"></div></li><li class='tiny-item'><div class='tns-lazy-img tns-bg-slide' data-style="background:url('revize_photo_gallery/Headers/HomeSliderBridge.jpg?t=202610051007260') center/cover no-repeat"></div></li><li class='tiny-item'><div class='tns-lazy-img tns-bg-slide' data-style="background:url('revize_photo_gallery/Headers/HomeSlider5.jpg?t=202610051008130') center/cover no-repeat"></div></li><li class='tiny-item'><div class='tns-lazy-img tns-bg-slide' data-style="background:url('revize_photo_gallery/Headers/HomeSliderButterfly.jpg?t=202610191325550') center/cover no-repeat"></div></li>
+			</ul><!--/.tiny-slider-->
+	
+			
+		<h1 class="container text-center" id="slider-caption">Indian River County<span>Florida</span></h1>
+
+		<div id="search">
+			<form class="search-form" method="GET" action="search.php" role="search" aria-label="sitewide">
+				<label class="sr-only" for="search-input">Search Indian River County Florida</label>
+				<input name="q" class="form-control search-input" placeholder="How can we help you today?" type="search" id="search-input">
+				<button aria-label="Submit Search"><img src="_assets_/images/search-icon.png" alt=""></button>
+			</form>
+		</div> <!--//#search -->
+	
+</section>
+
+<main id="main">
+	<section id="quick-links">
+<div class="container">
+<!--
+            
+
+    <div class="section-banner"
+        style="background:url('_assets_/images/section-banner.jpg') center/cover no-repeat"></div>
+    <div class="container">
+        <div id="ql-in">
+    
+    <script language="JavaScript" type="text/JavaScript">
+        RZ.module = 'global';
+        RZ.nexturl = 'editforms/background-img-editform.jsp?width=1700&height=900';
+        RZ.img = '<span class="rzBtn">Edit Background Image </span>';
+        RZ.set = 'pageid=ql-bg';
+        RZ.options = '';
+        if (typeof RZaction != 'undefined') RZaction('editform');
+    </script>
+    -->
+    
+    
+        <script language="JavaScript" type="text/JavaScript">
+            RZ.module = 'global';
+            RZ.nexturl = 'editforms/quick_links-editlist.jsp?pageid=qlinks-index&height=48&width=48';
+            RZ.img = '<span class="rzBtn">Edit Quick Links</span>';
+            RZ.set = 'pageid=qlinks-index';
+            RZ.options = '';
+            if (typeof RZaction != 'undefined') RZaction('editlist');
+        </script>       
+                  
+<div class="qlink-wrapper" data-tiny-items="4">
+    <!-- You should style carousels so that they load without stacking and disrupting the page as much as possible -->
+    <ul class="tiny-carousel" data-tiny-items="4">
+        
+                    		              
+                    <li class="tiny-item">
+                        
+                            <a href="public_notices.php" class="qlink-box">
+                                            
+                        
+                            <img src="uploadfiles/qlink-1.png?t=202308311430480" alt="">
+                            <div class="qlink-content-box">
+                                <span>Public Notices<img src="_assets_/images/caret-right.png" alt=""></span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+                
+            
+                    		              
+                    <li class="tiny-item">
+                        
+                            <a href="services/building_and_facilities_services/building_division/index.php" class="qlink-box">
+                                            
+                        
+                            <img src="uploadfiles/technical-drawing-(5).png?t=202308311430480" alt="">
+                            <div class="qlink-content-box">
+                                <span>Building Permits & Services<img src="_assets_/images/caret-right.png" alt=""></span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+                
+            
+                    		              
+                    <li class="tiny-item">
+                        
+                            <a href="services/county_attorney/public_records_request/index.php" class="qlink-box">
+                                            
+                        
+                            <img src="uploadfiles/public-records3.png?t=202308311430480" alt="">
+                            <div class="qlink-content-box">
+                                <span>Public Records Request<img src="_assets_/images/caret-right.png" alt=""></span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+                
+            
+                    		              
+                    <li class="tiny-item">
+                        
+                            <a href="https://utilweb.ircgov.com/" class="qlink-box">
+                                            
+                        
+                            <img src="uploadfiles/qlink-2.png?t=202308311430480" alt="">
+                            <div class="qlink-content-box">
+                                <span>Pay Utility Bill<img src="_assets_/images/caret-right.png" alt=""></span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+                
+            
+                    		              
+                    <li class="tiny-item">
+                        
+                            <a href="https://experience.arcgis.com/experience/7d021b20f1e5422d9eeeabafba4360a5" class="qlink-box">
+                                            
+                        
+                            <img src="uploadfiles/qlink-4.png?t=202308311430480" alt="">
+                            <div class="qlink-content-box">
+                                <span>Road Closures<img src="_assets_/images/caret-right.png" alt=""></span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+                
+            
+                    		              
+                    <li class="tiny-item">
+                        
+                            <a href="https://indianrivercofl.portal.civicclerk.com" class="qlink-box">
+                                            
+                        
+                            <img src="uploadfiles/agendas.png?t=202308311430480" alt="">
+                            <div class="qlink-content-box">
+                                <span>Agendas & Minutes<img src="_assets_/images/caret-right.png" alt=""></span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+                
+            
+                    		              
+                    <li class="tiny-item">
+                        
+                            <a href="i_want_to/report/index.php" class="qlink-box">
+                                            
+                        
+                            <img src="./_assets_/images/qlink-1.png" alt="">
+                            <div class="qlink-content-box">
+                                <span>Report an Issue<img src="_assets_/images/caret-right.png" alt=""></span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+                
+            
+                    		              
+                    <li class="tiny-item">
+                        
+                            <a href="https://ircgis.maps.arcgis.com/" class="qlink-box">
+                                            
+                        
+                            <img src="uploadfiles/map-67.png?t=202309182034170" alt="">
+                            <div class="qlink-content-box">
+                                <span>GIS Map Gallery<img src="_assets_/images/caret-right.png" alt=""></span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+                
+            
+            
+    </ul><!--/.tiny-carousel-->
+</div><!--/.qlink-wrapper-->
+</div><!--/.container-->
+</section><!--/#quick-links-->
+
+
+
+
+	 
+<section id="notice" style="background:url('uploadfiles/notice-bg.jpg?t=202308311429540') center no-repeat;background-size:cover">
+	<div class="container">
+       <script language="JavaScript" type="text/JavaScript">
+            RZ.module = 'global';
+            RZ.nexturl = 'editforms/image-editform.jsp?width=1700&height=1015';
+            RZ.img = '<span class="rzBtn">Edit Background Image </span>';
+            RZ.set = 'pageid=news-bg';
+            RZ.options = '';
+            if (typeof RZaction != 'undefined') RZaction('editform');
+        </script>
+        <script language="JavaScript" type="text/JavaScript">
+            RZ.module = 'global';
+            RZ.nexturl = 'editforms/newsheader-editform.jsp?pageid=news-headers';
+            RZ.img = '<span class="rzBtn">Edit News Header</span>';
+            RZ.set = 'pageid=news-headers';
+            RZ.options = '';
+            if (typeof RZaction != 'undefined') RZaction('editform');
+        </script>	    
+        <script language="JavaScript" type="text/JavaScript">
+            RZ.module = 'global';
+            RZ.nexturl = 'editforms/news-editlist.jsp?pageid=index&height=245&width=313';
+            RZ.img = '<span class="rzBtn">Edit News Items</span>';
+            RZ.set = '';
+            RZ.options = '';
+            if (typeof RZaction != 'undefined') RZaction('editlist');
+        </script>	           
+		<div class="head-wrap d-md-flex align-items-center justify-content-between">
+			<h2 class="sec-head">County News</h2>
+			<a href="./newslist.php" class="button">View All</a>
+		</div><!--/.head-wrap .d-md-flex.align-items-center.justify-content-between-->
+
+		<div class="notice-wrapper" data-tiny-items="4">
+			<ul class="tiny-carousel" data-tiny-items="4">
+				
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R691.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/Site%20Photos/NewsItems/WasteManagementTruck.jpg?t=202611170849350') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>Solid Waste Service Weather Update 11/19</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R641.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/News/interview.png?t=202611101019440') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>HOT TOPIC: Septic Systems & Sewer Services</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R618.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/News/StateOfCounty2.png?t=202610151010530') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>2026 State of the County Luncheon Highlights</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R615.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/Site%20Photos/NewsItems/overlay.png?t=202610021027160') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>Public Feedback for West Oslo Overlay District</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R608.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/News/Hobart%20Meeting%20JF_Ashley%20Relick%20small.jpg?t=202609291652440') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>Community Input Helps Shape Sewer Conversion Outreach</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R610.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/News/Vero-Lake-Estates-313x245.jpg?t=202609301005090') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>Residents Help Shape the Future of Vero Lake Estates</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R611.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/News/Loar%20small%201.jpg?t=202609301027490') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>&#65279;District 4 &#65279;Comes Together at South County Community Meeting</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R612.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/News/seagrass%20small.jpg?t=202609301034140') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>Restoring Seagrass to Strengthen the Indian River Lagoon</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R614.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/News/John_FIRE_PHOTO%20small.jpg?t=202609301215230') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>Building a Stronger Future for Indian River County</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R607.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/News/AUSL.jpg?t=202609291609360') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>AUSL Brings Professional Softball to Historic Vero Beach</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R597.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/News/PdcastNewsThumb.jpg?t=202609241442030') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>Septic-to-Sewer Program Podcast Episode</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+						
+						
+					  
+					<li class="tiny-item">
+						
+							<a href="news_detail_T23_R486.php" class="notice-box">
+						
+							<div class="notice-image" style="background:url('revize_photo_gallery/News/UnderstandingPropertyTaxesThumb.png?t=202512091411140') center no-repeat;background-size:cover"></div>
+							<div class="notice-content-box">
+								<h3>Understanding the Florida Property Tax System</h3>
+								<div class="d-flex align-items-center justify-content-between">
+									
+									<span class="more-label">Read more </span>
+									<span class="more-arrow"><img src="_assets_/images/right-arrow.png" alt="Arrow"></span><!--/.more-arrow-->
+									
+								</div><!--/.d-flex.align-irems-center.justify-content-between-->
+							</div><!--/.notice-content-box-->
+						</a><!--/.notice-box-->
+					</li><!--/.tiny-item-->
+					
+				                      
+			</ul><!--/.tiny-carousel-->
+	</div><!--/.notice-wrapper-->
+		
+	</div><!--/.container-->
+</section><!--/#notice-->
+
+
+	 
+<section id="events" style="background:url('_assets_/images/events-bg.png') center no-repeat;background-size:cover">
+    <div class="container pr-20">
+        <script language="JavaScript" type="text/JavaScript">
+            RZ.module = 'global';
+            RZ.nexturl = 'editforms/image-editform.jsp?width=3400&height=1882';
+            RZ.img = '<span class="rzBtn">Edit Background Image </span>';
+            RZ.set = 'pageid=events-bg';
+            RZ.options = '';
+            if (typeof RZaction != 'undefined') RZaction('editform');
+        </script>    
+        <div id="tabs-wrapper" role="tablist" aria-label="Calendar Categories">
+            <button aria-selected="true" tabindex="0" aria-controls="panel-1" role="tab" class="tab  meetings-tab active" id="tab1">Meetings</button>
+            <button aria-selected="false" tabindex="-1" aria-controls="panel-2" role="tab" class="tab library-tab" id="tab2">Library</button>
+            <button aria-selected="false" tabindex="-1" aria-controls="panel-3" role="tab" class="tab recreation-tab" id="tab3">Events</button>
+        </div><!--/#tabs-wrapper-->
+
+
+        <div class="tab-body" id="tab1-body">
+            <div id="mini-events" data-template-file="template.html"></div>
+        </div>
+
+        <div class="tab-body" id="tab2-body">
+            <div id="mini-events" data-template-file="Library_template.html"></div>
+        </div>
+
+        <div class="tab-body" id="tab3-body">
+            <div id="mini-events" data-template-file="Recreation_template.html"></div>
+        </div>
+
+
+    </div><!--/.container-->
+</section><!--/#events-->
+
+
+	 
+<section id="activities" style="background:url('uploadfiles/activity-bg.jpg?t=202308311429550') center no-repeat;background-size:cover">
+	<div class="container">
+      <script language="JavaScript" type="text/JavaScript">
+            RZ.module = 'global';
+            RZ.nexturl = 'editforms/image-editform.jsp?width=1699&height=1579';
+            RZ.img = '<span class="rzBtn">Edit Background Image </span>';
+            RZ.set = 'pageid=explor-activities-bg';
+            RZ.options = '';
+            if (typeof RZaction != 'undefined') RZaction('editform');
+        </script>
+        <script language="JavaScript" type="text/JavaScript">
+            RZ.module = 'global';
+            RZ.nexturl = 'editforms/newsheader-editform.jsp?pageid=activities-headers';
+            RZ.img = '<span class="rzBtn">Edit Header</span>';
+            RZ.set = 'pageid=activities-headers';
+            RZ.options = '';
+            if (typeof RZaction != 'undefined') RZaction('editform');
+        </script>	    	
+		<div class="head-wrap d-md-flex align-items-center justify-content-between">
+			<h2 class="sec-head">Get Social</h2>
+			</a>
+		</div><!--/.head-wrap.d-md-flex.align-items-center.justify-content-between-->
+
+		
+		<div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+			
+			<div class="act-bottom-cta text-center">    	
+
+				<div class="act-bottom-head">Stay Informed</div><!--/.act-bottom-head-->
+				<div class="rzBtnContainer">
+					<script language="JavaScript" type="text/JavaScript">
+						RZ.module = 'global';
+						RZ.nexturl = 'editforms/newsheader-editform.jsp?pageid=com-headers';
+						RZ.img = '<span class="rzBtn">Edit Header</span>';
+						RZ.set = 'pageid=com-headers';
+						RZ.options = '';
+						if (typeof RZaction != 'undefined') RZaction('editform');
+					</script>	
+					<script language="JavaScript" type="text/JavaScript">
+						RZ.module = 'global';
+						RZ.nexturl = 'editforms/btnlink-editform.jsp?pageid=com-first-link';
+						RZ.img = '<span class="rzBtn">Edit First Button</span>';
+						RZ.set = 'pageid=com-first-link';
+						RZ.options = '';
+						if (typeof RZaction != 'undefined') RZaction('editform');
+					</script>	    				
+					<script language="JavaScript" type="text/JavaScript">
+						RZ.module = 'global';
+						RZ.nexturl = 'editforms/btnlink-editform.jsp?pageid=com-second-link';
+						RZ.img = '<span class="rzBtn">Edit Second Button</span>';
+						RZ.set = 'pageid=com-second-link';
+						RZ.options = '';
+						if (typeof RZaction != 'undefined') RZaction('editform');
+					</script>	    
+				</div>
+				<div class="button-wrapper">
+									
+					<a href="community/get_connected.php" target="_self" class="button">Get Connected</a>
+					
+				</div>
+			</div><!--/.act-bottom-cta.text-center-->
+
+	</div><!--/.container-->
+</section><!--/#activities-->
+
+	
+	<!-- ENABLERS: update include statement with revize code -->
+	<section id="modal-section">
+        <button type="button" class="share-btn floating-share-btn" data-toggle="modal" data-target="#shareModal">
+        <i class="fa fa-share-alt"></i>
+        <span>Share <span class="sr-only">this page</span></span>
+    </button>
+	
+	<div id="floating_translate">
+		<div id="google_translate_element"></div> 
+		<script type="text/javascript"> 
+			function googleTranslateElementInit() { 
+				new google.translate.TranslateElement({ 
+					pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+				}, 'google_translate_element');
+			}
+		</script>
+		<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	</div>
+
+    <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="myModalLabel">Share this page</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="copylink">
+                        <p>Copy and paste this code into your website.</p>
+                        <pre
+                            tabindex="0" role="textbox" aria-label="Copy and paste this code into your website with Control C on Windows and Command C on Mac" onfocus="selectText(this);" class="py-3 px-4">&lt;a href="http://www.indianriver.gov/">Your Link Name&lt;/a&gt;</pre>
+                    </div><!-- /.copylink -->
+                    <div class="share-btns">
+                        <p>Share this page on your favorite Social network</p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a aria-label="Visit our Facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://www.indianriver.gov/"
+                                    class="btn-facebook"
+                                    onclick="return !window.open(this.href, 'facebook ', 'width=500,height=500')"
+                                    target="_blank">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a aria-label="Visit our Twitter/X" href="https://www.twitter.com/intent/tweet?url=http://www.indianriver.gov/"
+                                    class="btn-twitter"
+                                    onclick="return !window.open(this.href, 'twitter ', 'width=500,height=500')"
+                                    target="_blank">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a aria-label="Visit our Reddit" href="https://www.reddit.com/submit?url=http://www.indianriver.gov/"
+                                    class="btn-reddit"
+                                    onclick="return !window.open(this.href, 'redit ', 'width=500,height=500')"
+                                    target="_blank">
+                                    <i class="fa fa-reddit" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div><!-- /.row -->
+                    </div><!-- /.share-btns -->
+                    <button type="button" class="btn btn-success btn-lg" data-dismiss="modal">Close</button>
+                </div><!-- /.modal-body -->
+            </div>
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</section><!-- /#modal-section -->
+
+<script>
+function selectText(element) {
+    const range = document.createRange();
+    range.selectNodeContents(element);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+}
+
+const modal = document.getElementById('shareModal');
+
+// Find all focusable elements inside the modal
+const focusableSelectors = `
+  a[href], area[href],
+  input:not([disabled]),
+  select:not([disabled]),
+  textarea:not([disabled]),
+  button:not([disabled]),
+  [tabindex="0"]
+`;
+const focusableElements = Array.from(modal.querySelectorAll(focusableSelectors));
+
+const firstEl = focusableElements[0];
+const lastEl = focusableElements[focusableElements.length - 1];
+
+// Trap focus inside the modal
+function trapFocus(e) {
+	
+  if (e.key !== 'Tab') return;
+
+  if (e.shiftKey) {
+    // Shift + Tab: cycle backwards
+    if (document.activeElement === firstEl) {
+      e.preventDefault();
+      lastEl.focus();
+    }
+  } else {
+    // Tab: cycle forwards
+    if (document.activeElement === lastEl) {
+      e.preventDefault();
+      firstEl.focus();
+    }
+  }
+}
+
+modal.addEventListener('keydown', trapFocus);
+
+// Automatically focus the first element when the modal opens
+modal.addEventListener('shown.bs.modal', () => {
+  firstEl?.focus();
+});
+
+
+(function(d) {
+    var s = d.createElement("script");
+    s.setAttribute("data-position", 5);
+    s.setAttribute("data-color", '#19aecb');
+    s.setAttribute("data-account", "sudb1U5E4V");
+    s.setAttribute("src", "https://cdn.userway.org/widget.js");
+    (d.body || d.head).appendChild(s);
+})(document)
+$("select[required] option[disabled]").val('');
+</script>
+<noscript>
+    Please ensure Javascript is enabled for purposes of
+    <a href="https://userway.org">website accessibility</a>
+</noscript>	<!-- 
+
+
+
+
+  <div class="alertbtn">
+    
+  <script language="JavaScript" type="text/JavaScript">
+    RZ.module = 'alert';
+    RZ.nexturl = "editforms/alert-editform.jsp";
+    RZ.img = '<span class="rzBtn">Edit Alert</span>';
+    RZ.set = 'alert.pageid=alert';
+    RZ.options = '';
+    if (typeof RZaction != 'undefined') RZaction('editform');
+  </script>
+  </div><!-- alertbtn -->
+
+ -->
+<div style="position: fixed; z-index: 100010;">
+<iframe id="botIframe" align="right" scrolling="no" hidden="hidden" 
+          src="https://chatbot.revize.com/?websiteRef=e2ec1bcf9e554abfa7f29164b14c3d74" style="position:fixed; right:10px; bottom:65px; width:400px; height:620px; 
+            box-shadow:0 20px 80px rgba(0,0,0,.6); border-radius:5px; overflow:hidden; border:none;">
+      </iframe> 
+      <button id="button1" onclick="hideToggle();" 
+          style="position:fixed; right:10px; bottom:10px; width:130px; padding:10px; 
+          background-color:#19aecb; color:black; font-weight:600; 
+          border-radius:10px; overflow: hidden; text-overflow: ellipsis;">Ask IRC Chat
+      </button>
+</div>
+
+</main>
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+<footer style="background:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 70%), url('_assets_/images/footer-bg.png') top no-repeat;background-size:cover">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="f-box">
+                                            <script language="JavaScript" type="text/JavaScript">
+                            RZ.module = 'global';
+                            RZ.nexturl = 'editforms/image-editform.jsp?width=3400&height=1426';
+                            RZ.img = '<span class="rzBtn rzSmall">Edit Background</span>';
+                            RZ.set = 'pageid=footer-bg';
+                            RZ.options = '';
+                            if (typeof RZaction != 'undefined') RZaction('editform');
+                        </script>                        
+						<script language="JavaScript" type="text/JavaScript">
+							RZ.module = 'global';
+							RZ.nexturl = 'editforms/header-editform.jsp?pageid=contacts-header';
+							RZ.img = '<span class="rzBtn rzSmall">Edit Header</span>';
+							RZ.set = 'pageid=contacts-header';
+							RZ.options = '';
+							if (typeof RZaction != 'undefined') RZaction('editform');
+						</script>	
+                                       
+                    <p>Contact Us</p>
+					                        
+						<script language="JavaScript" type="text/JavaScript">
+							RZ.module = 'global';
+							RZ.nexturl = 'editforms/footer-contact-editform.jsp?width=56&height=38';
+							RZ.img = '<span class="rzBtn rzSmall">Edit Phone</span>';
+							RZ.set = 'pageid=footer-phone';
+							RZ.options = '';
+							if (typeof RZaction != 'undefined') RZaction('editform');
+						</script>
+						<script language="JavaScript" type="text/JavaScript">
+							RZ.module = 'global';
+							RZ.nexturl = 'editforms/address-editform.jsp?width=56&height=38';
+							RZ.img = '<span class="rzBtn rzSmall">Edit Address</span>';
+							RZ.set = 'pageid=address';
+							RZ.options = '';
+							if (typeof RZaction != 'undefined') RZaction('editform');
+						</script> 
+					                                   					           
+                    <div class="phone">
+                        
+                        <img src="_assets_/images/phone-icon.png" alt="Phone">
+                        <a href="tel:772&#149;567&#149;8000">772 &#149; 567 &#149; 8000</a>
+                        
+						
+                    </div>
+                    <!--/.phone-->
+                    <div class="location">
+                        
+
+                        <img src="uploadfiles/location-icon.png?t=202309031917520" alt="Phone">
+                        <a href="https://goo.gl/maps/RWY6GTC43m2pKfu77" target="_blank">1801 27th Street <span>Vero Beach FL. 32960</span></a>
+                    </div>
+                    <!--/.location-->
+                    <ul class="social-media-links" style="display:flex;align-items:center;">
+                                    
+        <li><a href="https://www.facebook.com/indianrivercounty/" class="tw" target="_blank"><img src="uploadfiles/fb-icon.png?t=202308311429550" alt="Facebook"></a></li>
+
+           
+        <li><a href="https://twitter.com/ircgov" class="tw" target="_blank"><img src="uploadfiles/tw-icon.png?t=202308311429550" alt="twitter"></a></li>
+
+           
+        <li><a href="https://www.instagram.com/ircgov/" class="tw" target="_blank"><img src="uploadfiles/ig-icon.png?t=202308311429550" alt="instagram"></a></li>
+
+           
+        <li><a href="https://www.youtube.com/c/IndianRiverCountyFL" class="tw" target="_blank"><img src="uploadfiles/yt-icon.png?t=202308311429550" alt="youtube"></a></li>
+
+     
+                    </ul>
+                    <!--/.social-media-links-->
+                                                   <div>
+							<script language="JavaScript" type="text/JavaScript">
+                                RZ.module = 'global';
+                                RZ.nexturl = 'editforms/btnlink-editform.jsp?pageid=staff-footer-link';
+                                RZ.img = '<span class="rzBtn rzSmall">Edit Button</span>';
+                                RZ.set = 'pageid=staff-footer-link';
+                                RZ.options = '';
+                                if (typeof RZaction != 'undefined') RZaction('editform');
+                            </script>	
+						</div>
+                            
+                        
+                    <a href="contact_us/index.php" class="f-button-Satff">Staff Contact</a>
+                    <!--/.f-button-Satff-->
+
+                </div>
+                <!--/.f-box-->
+            </div>
+            <!--/.col-lg-3.col-md-6-->
+            <div class="col-lg-3 col-md-6">
+                <div class="f-box">
+                                            <script language="JavaScript" type="text/JavaScript">
+                            RZ.module = 'global';
+                            RZ.nexturl = 'editforms/header-editform.jsp?pageid=first-col-footer-headers';
+                            RZ.img = '<span class="rzBtn rzSmall">Edit Header</span>';
+                            RZ.set = 'pageid=first-col-footer-headers';
+                            RZ.options = '';
+                            if (typeof RZaction != 'undefined') RZaction('editform');
+                        </script>	                       
+                        <script language="JavaScript" type="text/JavaScript">
+                            RZ.module = 'global';
+                            RZ.nexturl = 'editforms/link_footer_editlist.jsp?pageid=first-col-footer-links';
+                            RZ.img = '<span class="rzBtn rzSmall">Edit Links</span>';
+                            RZ.set = 'pageid=first-col-footer-links';
+                            RZ.options = '';
+                            if (typeof RZaction != 'undefined') RZaction('editlist');
+                        </script>		
+                    			            
+
+                    <p>Popular Services</p>
+                    <ul>
+                        
+                            
+                                
+                                
+                                <li><a href="services/county_attorney/public_records_request/index.php">Public Records Request</a></li>
+                                
+                            
+                                
+                                
+                                <li><a href="services/community_services/human-services/index.php">Human Services Assistance</a></li>
+                                
+                            
+                                
+                                
+                                <li><a href="services/utilities/customer_service.php">Utility Customer Service</a></li>
+                                
+                            
+                                
+                                
+                                <li><a href="https://gisportal.ircgov.com/irc-swdd/garbage-recycle.html">Trash & Recycling Pick Up Schedule</a></li>
+                                
+                            
+                                
+                                
+                                <li><a href="https://indianriver.gov/public_notices.php">Public Notices</a></li>
+                                
+                            
+                                
+                                
+                                <li><a href="notice_detail_T47_R96.php">Title VI Public Notice</a></li>
+                                
+                            
+                              						
+                    </ul>
+                </div>
+                <!--/.f-box-->
+            </div>
+            <!--/.col-lg-3.col-md-6-->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="f-box">
+                                            <script language="JavaScript" type="text/JavaScript">
+                            RZ.module = 'global';
+                            RZ.nexturl = 'editforms/header-editform.jsp?pageid=second-col-footer-headers';
+                            RZ.img = '<span class="rzBtn rzSmall">Edit Header</span>';
+                            RZ.set = 'pageid=second-col-footer-headers';
+                            RZ.options = '';
+                            if (typeof RZaction != 'undefined') RZaction('editform');
+                        </script>	                       
+                        <script language="JavaScript" type="text/JavaScript">
+                            RZ.module = 'global';
+                            RZ.nexturl = 'editforms/link_footer_editlist.jsp?pageid=second1-col-footer-links';
+                            RZ.img = '<span class="rzBtn rzSmall">Edit Links</span>';
+                            RZ.set = 'pageid=second1-col-footer-links';
+                            RZ.options = '';
+                            if (typeof RZaction != 'undefined') RZaction('editlist');
+                        </script>		
+                    			
+
+                    <p>Popular Attractions</p>
+                    <ul>
+                        
+                            
+                                
+                                
+                                <li><a href="services/parks_and_recreation/parks_and_beaches.php">Parks & Beaches</a></li>
+                                
+                            
+                                
+                                
+                                <li><a href="https://www.sandridgegc.com/">Golf Club</a></li>
+                                
+                            
+                                
+                                
+                                <li><a href="services/parks_and_recreation/fairgrounds_and_expo_center.php">Fairgrounds & Expo Center</a></li>
+                                
+                            
+                                
+                                
+                                <li><a href="https://visitindianrivercounty.com/">Visit Indian River</a></li>
+                                
+                            
+                                
+                                
+                                <li><a href="https://secure.rec1.com/FL/indian-river-county-fl/catalog">Recreational Programs</a></li>
+                                
+                            
+                        
+                    </ul>
+                </div>
+                <!--/.f-box-->
+            </div>
+            <!--/.col-lg-3.col-md-6-->
+            <div class="col-lg-3 col-md-6">
+                <div class="f-box Schedule-box">
+                                            <script language="JavaScript" type="text/JavaScript">
+                            RZ.module = 'global';
+                            RZ.nexturl = 'editforms/header-editform.jsp?pageid=workhours-col-footer-headers';
+                            RZ.img = '<span class="rzBtn rzSmall">Edit Header</span>';
+                            RZ.set = 'pageid=workhours-col-footer-headers';
+                            RZ.options = '';
+                            if (typeof RZaction != 'undefined') RZaction('editform');
+                        </script>	                       
+                        <script language="JavaScript" type="text/JavaScript">
+                            RZ.module = 'global';
+                            RZ.nexturl = 'editforms/workhours_footer_editlist.jsp?pageid=workhours-col-footer-links';
+                            RZ.img = '<span class="rzBtn rzSmall">Edit Schedule</span>';
+                            RZ.set = 'pageid=workhours-col-footer-links';
+                            RZ.options = '';
+                            if (typeof RZaction != 'undefined') RZaction('editlist');
+                        </script>		
+                    			
+
+                    <p>General Office Hours</p>
+                    <ul>
+                        
+                            
+                                
+                                
+                                <li><strong>8:30 am-5:00 pm</strong><span>Moday</span></li>                                
+                                
+                            
+                                
+                                
+                                <li><strong>8:30 am-5:00 pm</strong><span>Tuesday</span></li>                                
+                                
+                            
+                                
+                                
+                                <li><strong>8:30 am-5:00 pm</strong><span>Wednesday</span></li>                                
+                                
+                            
+                                
+                                
+                                <li><strong>8:30 am-5:00 pm</strong><span>Thursday</span></li>                                
+                                
+                            
+                                
+                                
+                                <li><strong>8:30 am-5:00 pm</strong><span>Friday</span></li>                                
+                                
+                            
+                                
+                                
+                                <li><strong>Closed</strong><span>Sat & Sun</span></li>                                
+                                
+                            
+                                            
+                    </ul>
+                </div>
+                <!--/.f-box-->
+            </div>
+            <!--/.col-lg-3.col-md-6-->
+        </div>
+    </div>
+    <!--/.container-->
+
+    <div id="copy-right">
+        <div class="row">
+            <div class="col-md-6">
+                &copy; Indian River County Board of County Commissioners. All rights reserved.
+            </div>
+            <!--/.col-md-6-->
+            <div class="col-md-6 text-lg-right" id="revize">
+                
+            </div>
+            <!--/.col-md-6.text-lg-right#revize-->
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/#copy-right-->
+
+</footer>
+
+	
+	<script src="_assets_/plugins/modernizr/modernizr.custom.js"></script>
+<script src="_assets_/plugins/tiny-slider/dist/min/tiny-slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="_assets_/plugins/matchHeight/dist/jquery.matchHeight-min.js"></script>
+<script src="_assets_/plugins/featherlight/featherlight.min.js"></script>
+<script src="_assets_/plugins/lity/lity.min.js"></script>
+<script src="_assets_/plugins/YTPlayer/jquery.mb.YTPlayer.min.js"></script>
+<script src="_assets_/js/jquery.dataTables2.js"></script>
+<script src="_assets_/js/DT_bootstrap2.js"></script>
+<script src="_assets_/js/customtable.js"></script>
+
+
+<script type="text/javascript">
+/* curator-feed-default-feed-layout */
+(function(){
+var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+i.src="https://cdn.curator.io/published/ef2fa629-6ed9-457e-991b-1fb66e359a9c.js";
+e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
+</script>
+<script>
+        function hideToggle() {
+          let iframe = document.getElementById("botIframe");
+          let hidden = iframe.getAttribute("hidden");
+          const show_text = "Show Ask IRC Chat";
+          const hide_text = "Hide Ask IRC Chat";
+
+          if (hidden) {
+            iframe.removeAttribute("hidden");
+            document.getElementById("button1").innerText = hide_text.length > 25 ? hide_text.substring(0, 25) + "..." : hide_text;
+          } else {
+            iframe.setAttribute("hidden", "hidden");
+            document.getElementById("button1").innerText = show_text.length > 25 ? show_text.substring(0, 25) + "..." : show_text;
+          }
+        }
+      </script>
+
+<style>
+#alert-banner.alert-dismissible {padding-top:30px; padding-bottom:30px; }
+</style>
+
+
+<script src="_assets_/js/scripts.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D62PQGCMH9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'G-D62PQGCMH9');
+</script>
+
+	<div class="modal fade" id="event-modal" tabindex="-1" role="dialog" aria-labelledby="event-modal" aria-hidden="true">
+  <div id="event-modal-dialog" class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+	  <div class="event-modal-header">
+		  <div class="modal-event-date-wrap">
+			<span class="modal-event-date-number"></span>
+			<span class="modal-event-date-month"></span>
+		  </div>
+      </div>
+	  <div class="modal-body" id="modal-event-body">
+		 <h2 class="modal-title" id="modal-event-title"></h2>
+		 <h3 class="modal-subtitle" id="modal-event-subtitle"></h3>
+		 <div class="modal-description clearfix" id="modal-event-description"></div>
+		 <div class="modal-location" id="modal-event-location"></div>
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="#" id="modal-event-readmore" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/revize/plugins/revize_calendar/moment.min.js"></script>
+<script src="/revize/plugins/revize_calendar/moment-timezone.min.js"></script>
+<script src="/revize/plugins/revize_calendar/rrule.js"></script>
+<script src="/revize/plugins/revize_calendar/ical.min.js"></script>
+<script src="/revize/plugins/revize_calendar/core/main.min.js"></script>
+<script src="/revize/plugins/revize_calendar/google-calendar/main.min.js"></script>
+<script src="/revize/plugins/revize_calendar/rrule/main.min.js"></script>
+<script src="/revize/plugins/revize_calendar/list/main.min.js"></script>
+<script src="/revize/plugins/revize_calendar/daygrid/main.min.js"></script>
+<script src="/revize/plugins/revize_calendar/timegrid/main.min.js"></script>
+<script src="/revize/plugins/revize_calendar/doT.min.js"></script>
+<script src="/revize/plugins/revize_calendar/ics/ics.deps.min.js"></script>
+<script src="/revize/plugins/revize_calendar/mini.js"></script>
+
+
+	
+
+
+
+
+
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5d3c9642f90800f',t:'MTc5NTEzOTI0Ng=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5d3c9642f90800f',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

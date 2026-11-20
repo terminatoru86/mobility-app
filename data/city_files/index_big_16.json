@@ -1,0 +1,1647 @@
+{
+ "Kansas City MO": {
+  "files": [],
+  "portals": {}
+ },
+ "Garland TX": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/d54de31ffa3d42e98865938befe32330": "Park Maps",
+   "https://storymaps.arcgis.com/stories/31fc0d3271d343bf96daa6567529e535": "Trails",
+   "https://storymaps.arcgis.com/stories/0027918ab8504e9f8eae90dd6c53facb": "Park Projects Map",
+   "https://experience.arcgis.com/experience/bf8c3800790b478a847c6264fda01e7f": "Garland Pet Finder",
+   "https://data-garland.hub.arcgis.com/": "Garland Open Data",
+   "http://garland.maps.arcgis.com/apps/webappviewer/index.html?id=47284f7262cf421baaf2c8b2f73898b5": "See locations on map."
+  }
+ },
+ "Harris County": {
+  "files": [
+   {
+    "url": "https://historicalcommission.harriscountytx.gov/Portals/historicalcommission/Documents/Approved-HCHC-Bylaws-2021-with-signatures.pdf?ver=4rcdhOCRVDmVzYkaFBvnhw%3d%3d",
+    "text": "Bylaws",
+    "file": "data/city_files/Harris_County/84d52b_Approved-HCHC-Bylaws-2021-with-signatures.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://historicalcommission.harriscountytx.gov/Portals/historicalcommission/Documents/Cotswold Harris.pdf?ver=LsyBKCU3mBGqbfdaeGkUWw%3d%3d",
+    "text": "Virtual Cotswold Border Harris County Courthouse District A Virtual Tour. Photos by Will Howard. Harris County Historica",
+    "file": "data/city_files/Harris_County/3d73a4_Cotswold_Harris.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://historicalcommission.harriscountytx.gov/Portals/historicalcommission/Documents/East End Historical Markers Driving Tour.pdf?ver=8ijmZTAvrTyLMOiI-PwRXg%3d%3d",
+    "text": "Driving East End Historical Markers Driving Tour Compiled by Will Howard Harris County Historical Commission, Heritage T",
+    "file": "data/city_files/Harris_County/386599_East_End_Historical_Markers_Driving_Tour.pdf",
+    "rows": 16,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://historicalcommission.harriscountytx.gov/Portals/historicalcommission/Documents/Founders Cemetery Walking Tour.pdf?ver=ABU6xk57LlQMuwZLDHpk3w%3d%3d",
+    "text": "Walking Founders Cemetery Walking Tour A self-guided walking tour of Texas Historical Markers and grave stone inscriptio",
+    "file": "data/city_files/Harris_County/c913df_Founders_Cemetery_Walking_Tour.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://historicalcommission.harriscountytx.gov/Portals/historicalcommission/Documents/Tomball Marker Driving Tour.pdf?ver=zTmLBCxpf0Vt4rs4CjXzyQ%3d%3d",
+    "text": "Driving Tomball, Hockley, and Klein Texas Historical Marker Tour Compiled by Will Howard, Heritage Tourism Chair Harris ",
+    "file": "data/city_files/Harris_County/12ed50_Tomball_Marker_Driving_Tour.pdf",
+    "rows": 13,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/BearCreek.pdf?ver=xlsN35oXjratw9D80wQzLw%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/7a60ad_BearCreek.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Kleb%20Woods%20Nature%20Preserve%202023.pdf?ver=78DpaUbWn6bwWWGI3h4PWA%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/a16a8c_Kleb_20Woods_20Nature_20Preserve_202023.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Terry%20Hershey.pdf?ver=JuozM21mw_unsys1H0qYZA%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/f058f5_Terry_20Hershey.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Infrastructure/West%20Harris%20County%20Transit%20Demand%20Study%20(1)_compressed.pdf?ver=W173Zxs0nGPpNhwRiSZM4A%3d%3d",
+    "text": "West Harris County Transit Demand Study",
+    "file": "data/city_files/Harris_County/faf93c_West_20Harris_20County_20Transit_20Demand_20Study_20_1__compressed.pdf",
+    "rows": 396,
+    "bike_rows": 43
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Arthur%20Storey.pdf?ver=lYTeGI7WY414TVIXYJ_agg%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/bd7031_Arthur_20Storey.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/George%20Bush%20Park%20Map.pdf?ver=8DqvHV1Z_q7Nunrzhw1hTQ%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/534d36_George_20Bush_20Park_20Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/John%20Paul%20Landing.pdf?ver=mF9pYL_vyF03VfEEan6A9A%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/2e32f0_John_20Paul_20Landing.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Mary%20Jo%20Peckham.pdf?ver=6Bg6n7p7jigM8AQQdWo8Sw%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/1ba56c_Mary_20Jo_20Peckham.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Zube.pdf?ver=yCfVlNpm475MirBWs-1Mvw%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/f1fec2_Zube.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/AliefAmity.pdf?ver=hVY-f_z0910YgjKG1tVKYw%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/8b16af_AliefAmity.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Archbishop%20Fiorenza%20East.pdf?ver=EvH5bih1838t7qlnNgWbAQ%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/47df6e_Archbishop_20Fiorenza_20East.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Archbishop%20Fiorenza%20North.pdf?ver=YueSia7wQNe_8XIScBt3Zg%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/9f6f8a_Archbishop_20Fiorenza_20North.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Baker%20Road.pdf?ver=06_t0HcjXUw7s2nbfTTS5A%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/e09233_Baker_20Road.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Bayland.pdf?ver=a1hlyzDU8TxV0OclMaD9Bg%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/d6f506_Bayland.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Beeler.pdf?ver=_y1_Gy4QMEAloBJcialMDQ%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/eeb941_Beeler.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/ConBillArcher.pdf?ver=vE46CxGTA-xV_b8NrCBT4A%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/7c613a_ConBillArcher.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Bonham.pdf?ver=LjNHQoxy8FuUhpOj5Z5fcQ%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/31f2ce_Bonham.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Burnett%20Bayland%20Park.pdf?ver=Xefk6-uCPjMaUsgv1V6cvw%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/fa468c_Burnett_20Bayland_20Park.pdf",
+    "rows": 19,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/DonGreene.pdf?ver=1aHdViU6rdAQhqizxtVsJA%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/959c84_DonGreene.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cp4.harriscountytx.gov/Portals/cp4/hcp4/Explore/Maps/Eagle%20Ranch.pdf?ver=b9-x_GeuoEpXGlRU1EuwWg%3d%3d",
+    "text": "Map",
+    "file": "data/city_files/Harris_County/a12410_Eagle_20Ranch.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Oakland County": {
+  "files": [
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/facilities-management/facilities-management/2024-oc-campus-brochure.pdf?sfvrsn=379af003_0&Status=Master",
+    "text": "Campus Map",
+    "file": "data/city_files/Oakland_County/3390c5_2024-oc-campus-brochure.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/get-involved/resources/maps/ocp-park-system-map-mission-26.pdf",
+    "text": "Parks and Partnerships Map",
+    "file": "data/city_files/Oakland_County/ccd89e_ocp-park-system-map-mission-26.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/economic-development/economic-development/planning/pl-trails-planning-checklist.pdf",
+    "text": "Trail Planning Checklist",
+    "file": "data/city_files/Oakland_County/f0b7cd_pl-trails-planning-checklist.pdf",
+    "rows": 15,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/economic-development/economic-development/planning/pl-trails-tracking.pdf",
+    "text": "Trail Tracking",
+    "file": "data/city_files/Oakland_County/10e3fa_pl-trails-tracking.pdf",
+    "rows": 18,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/economic-development/economic-development/mapping-services/oak-routes-oakland-county-trail-network.pdf",
+    "text": "Oakland County Trails - Oak Routes",
+    "file": "data/city_files/Oakland_County/e3ee47_oak-routes-oakland-county-trail-network.pdf",
+    "rows": 122,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.semcog.org/wp-content/uploads/2025/08/BicycleAndPedestrianTravelPlanForSoutheastMichiganNovember2014.pdf",
+    "text": "Bicycle and Pedestrian Travel for Southeast Michigan",
+    "file": "data/city_files/Oakland_County/f36fa3_BicycleAndPedestrianTravelPlanForSoutheastMichiganNovember2014.pdf",
+    "rows": 206,
+    "bike_rows": 57
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/economic-development/economic-development/planning/solid-waste-plan/hazardous-waste-programs-1-21-26.pdf?sfvrsn=f56dc00c_0&Status=Master",
+    "text": "Print-Ready Map of Oakland County Hazardous Waste Programs",
+    "file": "data/city_files/Oakland_County/bb504a_hazardous-waste-programs-1-21-26.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/get-involved/resources/maps/addison-oaks-fat-tire-bike-map.pdf?sfvrsn=6c9c2388_0",
+    "text": "fat tire bike trail map",
+    "file": "data/city_files/Oakland_County/df04fb_addison-oaks-fat-tire-bike-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/get-involved/resources/maps/addison-oaks-full-park-map.pdf?sfvrsn=e0d2bb3f_0",
+    "text": "Addison Oaks Park Map",
+    "file": "data/city_files/Oakland_County/8b6112_addison-oaks-full-park-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/addison-oaks/addison-park-map-for-web-2025.pdf?sfvrsn=7ece7385_0&Status=Master",
+    "text": "Printable Map",
+    "file": "data/city_files/Oakland_County/6335ea_addison-park-map-for-web-2025.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/get-involved/resources/maps/addison-oaks-east-trail-map.pdf",
+    "text": "Addison Oaks-East Nature Park trail map",
+    "file": "data/city_files/Oakland_County/421ce8_addison-oaks-east-trail-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/get-involved/resources/maps/addison-oaks-full-park-map.pdf",
+    "text": "Full park map",
+    "file": "data/city_files/Oakland_County/045737_addison-oaks-full-park-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/learn-how-to-protect-yourself.pdf",
+    "text": "Learn How to Protect Yourself",
+    "file": "data/city_files/Oakland_County/d48868_learn-how-to-protect-yourself.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/children-and-lyme-disease.pdf",
+    "text": "Children and Lyme Disease",
+    "file": "data/city_files/Oakland_County/64d7e5_children-and-lyme-disease.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/get-involved/resources/maps/catalpa-oaks-map-2026.pdf?sfvrsn=db6d038_1",
+    "text": "Printable Map",
+    "file": "data/city_files/Oakland_County/314dcf_catalpa-oaks-map-2026.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/learn-how-to-protect-yourself.pdf?sfvrsn=8ed51d8d_0",
+    "text": "Learn How to Protect Yourself",
+    "file": "data/city_files/Oakland_County/2446cf_learn-how-to-protect-yourself.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/children-and-lyme-disease.pdf?sfvrsn=632ad8a5_0",
+    "text": "Children and Lyme Disease",
+    "file": "data/city_files/Oakland_County/19f576_children-and-lyme-disease.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/farmers-market/gleaners-food-distribution-ocfm-2026-aug-update-final.pdf?sfvrsn=65551c01_1",
+    "text": "Gleaners Food Distribution Flyer",
+    "file": "data/city_files/Oakland_County/7962e9_gleaners-food-distribution-ocfm-2026-aug-update-final.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/farmers-market/ocfm-stall-map-2025.pdf?sfvrsn=9fb7903c_0&Status=Master",
+    "text": "layout of the Oakland County Farmers Market",
+    "file": "data/city_files/Oakland_County/6f71d4_ocfm-stall-map-2025.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/farmers-market/ocfm-vendor-application-2026.pdf?sfvrsn=8341ec0d_0&Status=Master",
+    "text": "Farmers Market 2026 Vendor Application",
+    "file": "data/city_files/Oakland_County/2a1191_ocfm-vendor-application-2026.pdf",
+    "rows": 88,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/farmers-market/ocfm-vendor-regulations-2026.pdf?sfvrsn=6544dc51_0&Status=Master",
+    "text": "Farmers Market 2026 Vendor Regulations",
+    "file": "data/city_files/Oakland_County/dd5ecd_ocfm-vendor-regulations-2026.pdf",
+    "rows": 26,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/farmers-market/ocfm-license-agreement-2026.pdf?sfvrsn=3502b4c0_0&Status=Master",
+    "text": "Farmers Market 2026 Vendor License Agreement",
+    "file": "data/city_files/Oakland_County/7efdf7_ocfm-license-agreement-2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/golf/glen-oaks-golf-map-for-web-2025.pdf?sfvrsn=438badbc_0&Status=Master",
+    "text": "Printable Map",
+    "file": "data/city_files/Oakland_County/0a0161_glen-oaks-golf-map-for-web-2025.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/groveland-oaks/groveland-oaks-things-to-do-map-2024.pdf?sfvrsn=f8163d17_0&Status=Master",
+    "text": "Printable Map",
+    "file": "data/city_files/Oakland_County/8f2f43_groveland-oaks-things-to-do-map-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.oaklandcountymi.gov/oakland-sitefinity-prod/docs/default-source/parks-recreation-docs/parks-trails/highland-oaks-park-map-for-web-2025.pdf?sfvrsn=1e5c4131_0&Status=Master",
+    "text": "Printable Map",
+    "file": "data/city_files/Oakland_County/b79b0a_highland-oaks-park-map-for-web-2025.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://oakgov.maps.arcgis.com/apps/instant/lookup/index.html?appid=de4f89ebc42f4941b7e4725765c5ae91": "Interactive Map of Oakland County household Hazardous Waste Programs",
+   "https://experience.arcgis.com/experience/102edcc826be45f0970af52b624a28da": "Park Finder – Interactive Map",
+   "https://experience.arcgis.com/experience/6d39b89707554e08ae3f1746da3d231e": "Trail Viewer – Interactive Map",
+   "https://experience.arcgis.com/experience/b5e9ff05a0c2439b8b5b1a4baf7591ba": "Equestrian Finder – Interactive Map",
+   "https://oakgov.maps.arcgis.com/apps/webappviewer/index.html?id=db4052d9ca5c4e1798a7dfd2a54e3c25": "Operation Medicine Cabinet",
+   "https://storymaps.arcgis.com/stories/b4a34afb87714feda4ce2bafabad2a47": "Moving Sustainability Forward Story Map",
+   "https://gis.oakgov.com/PropertyGateway/Home.mvc": "OakGov.info/PropertyGateway",
+   "https://gis.oakgov.com/ocnr": "Launch OCNR Map Viewer - Oakland County’s online Natural Resources Mapping Service",
+   "https://oakgov.maps.arcgis.com/apps/MapTour/index.html?appid=6d50c278aa914af3af7268549f5139a0&webmap=378696342df24ea0869ceedadf7a42e0": "Civil War Map",
+   "https://gis.oakgov.com/propertygateway": "Property Gateway",
+   "https://experience.arcgis.com/experience/4fbac375fdc1450e9965f8c9dcd77f2a": "Southeast Michigan Materials Management Dashboard",
+   "https://experience.arcgis.com/experience/57a34c9598034c90871fc0a923b4727f": ""
+  }
+ },
+ "Middlesex County": {
+  "files": [],
+  "portals": {}
+ },
+ "Arapahoe County": {
+  "files": [],
+  "portals": {
+   "https://arapahoe-open-data-arapahoegov.hub.arcgis.com/": "Data"
+  }
+ },
+ "Montgomery County": {
+  "files": [],
+  "portals": {}
+ },
+ "Burlington County": {
+  "files": [
+   {
+    "url": "https://www.nj.gov/dep/dshw/recycling/recycling_coordinators.pdf",
+    "text": "NJDEP's County and Municipal Recycling Coordinator List",
+    "file": "data/city_files/Burlington_County/cde572_recycling_coordinators.pdf",
+    "rows": 504,
+    "bike_rows": 454
+   }
+  ],
+  "portals": {
+   "http://burlconj.maps.arcgis.com/home/webmap/viewer.html?webmap=a2cdeb2382374e9bb1bd39b42bad357b": "Healthy Eating",
+   "http://burlconj.maps.arcgis.com/home/webmap/viewer.html?webmap=a619abc505db42978f2e936065afd6b7": "Active Living",
+   "http://burlconj.maps.arcgis.com/home/webmap/viewer.html?webmap=2817f3dcdcfc41c1ac46f56cd9376f22": "Medication disposal and sharps (needle) disposal locations",
+   "http://burlconj.maps.arcgis.com/home/webmap/viewer.html?webmap=fc02bfc4ea264c7298caba9bd2cad56d": "Property Viewer Web Map (currently offline)",
+   "http://burlconj.maps.arcgis.com/apps/View/index.html?appid=2bfbea3785fe48e19ce5b1bf5e0c8402": "Property Viewer Mapping Application (recommended version) (currently offline)",
+   "http://burlconj.maps.arcgis.com/apps/Viewer/index.html?appid=7039296318c14c57b0d2ad8db34d3428": "Biking in Burlington County (currently offline)",
+   "http://burlconj.maps.arcgis.com/apps/View/index.html?appid=d711e2596cd84c55a47af0fdc1104892": "2016 FEMA Preliminary Floodplain (FIRM) Mapping App (currently offline)",
+   "http://burlconj.maps.arcgis.com/home/webmap/viewer.html?webmap=28b9d0b359204f7d9bd1e1ad47414f12": "(Map viewer version for mobile devices) (currently offline)",
+   "http://burlconj.maps.arcgis.com/apps/CompareAnalysis/index.html?appid=f790ea0ff3304541b4cdf89381d1a7e0": "2016 FEMA Preliminary Floodplain (FIRM) Side by Side Comparison App (currently offline)",
+   "http://burlconj.maps.arcgis.com/apps/webappviewer/index.html?id=b11336683acd4fbabfc7ef78107e3ea4&extent=-8406113.3665%2C4775935.4284%2C-8173744.8005%2C4908630.1095%2C102100": "Fishing Spots in Burlington County (Free fishing days on June 8th and October 19th!) (currently offline)",
+   "https://experience.arcgis.com/experience/565960ac09a84c50af0cc700e56e5eb8/": "Emergency Management Dashboard",
+   "https://burlconj.maps.arcgis.com/home/webmap/viewer.html?webmap=bafec7a2c87e42d3b38c58d7c05e6e0f&extent=-74.769,39.973,-74.725,39.998": "View Interactive Map"
+  }
+ },
+ "Pulaski County": {
+  "files": [],
+  "portals": {}
+ },
+ "San Juan": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Louis": {
+  "files": [],
+  "portals": {}
+ },
+ "Buncombe County": {
+  "files": [],
+  "portals": {}
+ },
+ "Caddo Parish": {
+  "files": [],
+  "portals": {}
+ },
+ "Calcasieu Parish": {
+  "files": [],
+  "portals": {}
+ },
+ "Anderson County": {
+  "files": [
+   {
+    "url": "https://www.andersoncountysc.org/wp-content/uploads/2026/01/Atlas_Map_Book_Online-2025-compressed.cleaned.pdf",
+    "text": "Atlas Map Book Online 2025",
+    "file": "data/city_files/Anderson_County/246b29_Atlas_Map_Book_Online-2025-compressed.cleaned.pdf",
+    "rows": 1513,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://www.andersoncountysc.org/wp-content/uploads/2025/04/Official-Zoning-Map.pdf",
+    "text": "Official Zoning Map",
+    "file": "data/city_files/Anderson_County/742c6c_Official-Zoning-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.andersoncountysc.org/wp-content/uploads/2023/10/10.12.2023-School-District-One-Remapping-Option-Meeting.pdf",
+    "text": "10.12.2023 School District One Remapping Option Meeting",
+    "file": "data/city_files/Anderson_County/1d2b0f_10.12.2023-School-District-One-Remapping-Option-Meeting.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.andersoncountysc.org/wp-content/uploads/2021/02/Ballot-Challenge-Notice-1.pdf",
+    "text": "Ballot Challenge Notice",
+    "file": "data/city_files/Anderson_County/c5f670_Ballot-Challenge-Notice-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.andersoncounty.maps.arcgis.com/apps/MapTour/index.html?appid=20ac4e8acdf64e0999c7483b3fcb9450": "Anderson County Facilities",
+   "https://www.andersoncounty.maps.arcgis.com/apps/MapTour/index.html?appid=76f6f67b97564209bc152d92e6ea3c75": "Anderson County Convenience Centers"
+  }
+ },
+ "Knoxville": {
+  "files": [],
+  "portals": {}
+ },
+ "Johnson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Wyandotte County": {
+  "files": [
+   {
+    "url": "https://www.bpu.com/portals/0/pdf/District-BPU-Map.pdf",
+    "text": "Download BPU Districts Map",
+    "file": "data/city_files/Wyandotte_County/ebd4ba_District-BPU-Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wycokck.org/files/assets/public/v/1/election-office/kshouseofrep24x36clip.pdf",
+    "text": "Download Kansas Representative Districts Map (PDF, 4MB)",
+    "file": "data/city_files/Wyandotte_County/bdc0be_kshouseofrep24x36clip.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wycokck.org/files/assets/public/v/1/election-office/kssenate24x36clip.pdf",
+    "text": "Download Kansas Senate Districts Map (PDF, 4MB)",
+    "file": "data/city_files/Wyandotte_County/d271a6_kssenate24x36clip.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wycokck.org/files/assets/public/v/1/election-office/ksboardofed24x36clip.pdf",
+    "text": "Download State Board of Education Map (PDF, 4MB)",
+    "file": "data/city_files/Wyandotte_County/424633_ksboardofed24x36clip.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M027Comm_Dist_8_5x11clip.pdf?_gl=1*5lrinc*_ga*NzcxNzM3Mzk4LjE3NTEyOTk5OTU.*_ga_2226B2ELLF*czE3NjIyOTY4MzgkbzMyMyRnMSR0MTc2MjI5ODQ5NiRqNjAkbDAkaDA.",
+    "text": "Download UG Commissioner Districts Map",
+    "file": "data/city_files/Wyandotte_County/7571f6_M027Comm_Dist_8_5x11clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wycokck.org/files/assets/public/v/1/election-office/uscongress24x36clip.pdf",
+    "text": "Download United States Congress Map (PDF, 4MB)",
+    "file": "data/city_files/Wyandotte_County/7955e8_uscongress24x36clip.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wycokck.org/files/assets/public/v/2/election-office/documents/ward-precinct-24x36.pdf",
+    "text": "Download Wards & Precincts Map (PDF, 4MB)",
+    "file": "data/city_files/Wyandotte_County/7c47f1_ward-precinct-24x36.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wycokck.org/files/assets/public/v/2/human-services/documents/handicap-street-parking-signage-application.pdf",
+    "text": "Disabled Residential Street Parking Sign Application (PDF, 145KB)",
+    "file": "data/city_files/Wyandotte_County/b59179_handicap-street-parking-signage-application.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.wycokck.org/files/assets/public/v/1/maps-amp-gis/documents/surveyors-contact-information.pdf",
+    "text": "here (PDF, 66KB)",
+    "file": "data/city_files/Wyandotte_County/8ce47f_surveyors-contact-information.pdf",
+    "rows": 19,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M007Streets8_5x11clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/97789a_M007Streets8_5x11clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M011Ward_precinct_8_5x11clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/69139f_M011Ward_precinct_8_5x11clip.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M027Comm_Dist_8_5x11clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/1b7bdf_M027Comm_Dist_8_5x11clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M031Ed_Facil_8_5x11clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/6af58e_M031Ed_Facil_8_5x11clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M023KS_Rep_Dist_8_5x11clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/9fa100_M023KS_Rep_Dist_8_5x11clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M035KS_Senate_Dist_8_5x11clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/78b13c_M035KS_Senate_Dist_8_5x11clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M015Q_Sec_Index8_5x11clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/ddef28_M015Q_Sec_Index8_5x11clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M019BPU8_5x11clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/7590ba_M019BPU8_5x11clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M041Tax_Unit8_5x11clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/144197_M041Tax_Unit8_5x11clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M046_BonnerSprings_Streets_11x8_5clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/3f1137_M046_BonnerSprings_Streets_11x8_5clip.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M051_Edwardsville_Streets_11x8_5clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/0e0370_M051_Edwardsville_Streets_11x8_5clip.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M044wyco_lake_park_85x11_1300.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/b3d48c_M044wyco_lake_park_85x11_1300.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M008Streets11x17clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/c689ac_M008Streets11x17clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M012Ward_precinct_11x17clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/0e5250_M012Ward_precinct_11x17clip.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M028Comm_Dist_11x17clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/6abbc2_M028Comm_Dist_11x17clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisapp.wycokck.org/gisdata/maps/PDF_Maps/M032Ed_Facil_11x17clip.pdf",
+    "text": "No-Cost Download",
+    "file": "data/city_files/Wyandotte_County/078dff_M032Ed_Facil_11x17clip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.wycokck.org/Departments/Neighborhood-Resource-Center/Open-Data-Portal": "Open Data Portal",
+   "https://khri.kansasgis.org/": "Kansas Building Surveys",
+   "https://experience.arcgis.com/experience/105af0c4e9da4273bcacc86cb44880ad": "Visit the interactive Right-of-Way Permitting Map",
+   "https://experience.arcgis.com/experience/74ba914c06494ffe9a7ea9c82bc74edf": "In the Works | A Map of Public Works Construction Projects",
+   "https://https://experience.arcgis.com/experience/02acf2f26eb4472c9e2419c278d416e3": "visit the trash day map website",
+   "https://experience.arcgis.com/experience/02acf2f26eb4472c9e2419c278d416e3": "Visit the Trash Day Map",
+   "https://experience.arcgis.com/experience/74ba914c06494ffe9a7ea9c82bc74edf/page/Project-Map": "Visit the Interactive Projects Map Website",
+   "https://data.census.gov/profile/Wyandotte_County,_Kansas?g=050XX00US20209": "Wyandotte County, Kansas",
+   "https://data.census.gov/profile/Kansas_City_city,_Kansas?g=160XX00US2036000": "Kansas City, Kansas",
+   "https://data.census.gov/profile/Bonner_Springs_city,_Wyandotte_County,_Kansas?g=060XX00US2020907975": "Bonner Springs, Kansas (Wyandotte Co. portion)",
+   "https://data.census.gov/profile/Edwardsville_city,_Wyandotte_County,_Kansas?g=060XX00US2020920000": "Edwardsville, Kansas",
+   "https://data.census.gov/": "U.S. Census Bureau"
+  }
+ },
+ "Indian River County": {
+  "files": [
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/Document Center/Government/Board of County Commissioners/2026-BCC-Meeting-Schedule.pdf",
+    "text": "2026 BCC Meeting Schedule",
+    "file": "data/city_files/Indian_River_County/dc6212_2026-BCC-Meeting-Schedule.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/Document Center/Government/Board of County Commissioners/2025-Commissioner-Committees.pdf",
+    "text": "Commissioner Committee Assignments",
+    "file": "data/city_files/Indian_River_County/b9a6b8_2025-Commissioner-Committees.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/Document Center/Government/Board of County Commissioners/2027_Meeting_Dates.pdf",
+    "text": "2027 BCC Meeting Schedule",
+    "file": "data/city_files/Indian_River_County/af8fc8_2027_Meeting_Dates.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/Document Center/Government/FY25-26-Org-Chart.pdf",
+    "text": "Organizational Chart",
+    "file": "data/city_files/Indian_River_County/233e4d_FY25-26-Org-Chart.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/Document Center/I Want To/Transport-Request.pdf",
+    "text": "Make a shelter transportation request",
+    "file": "data/city_files/Indian_River_County/34f0f1_Transport-Request.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://indianriver.gov/Document%20Center/Services/Solid%20Waste%20Disposal%20District/Universal/Universal-Curbside-Map.pdf",
+    "text": "Universal Curbside Collection Schedule Map PDF",
+    "file": "data/city_files/Indian_River_County/656bdb_Universal-Curbside-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/services/emergency_services/emergency_management/Document Center/Government/Board of County Commissioners/2026-BCC-Meeting-Schedule.pdf",
+    "text": "2026 BCC Meeting Schedule",
+    "file": "data/city_files/Indian_River_County/ac47da_2026-BCC-Meeting-Schedule.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/services/emergency_services/emergency_management/Document Center/Government/Board of County Commissioners/2025-Commissioner-Committees.pdf",
+    "text": "Commissioner Committee Assignments",
+    "file": "data/city_files/Indian_River_County/08839a_2025-Commissioner-Committees.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/services/emergency_services/emergency_management/Document Center/Government/Board of County Commissioners/2027_Meeting_Dates.pdf",
+    "text": "2027 BCC Meeting Schedule",
+    "file": "data/city_files/Indian_River_County/275d3c_2027_Meeting_Dates.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/services/emergency_services/emergency_management/Document Center/Government/FY25-26-Org-Chart.pdf",
+    "text": "Organizational Chart",
+    "file": "data/city_files/Indian_River_County/b4f9a9_FY25-26-Org-Chart.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/services/emergency_services/emergency_management/Document Center/I Want To/Transport-Request.pdf",
+    "text": "Make a shelter transportation request",
+    "file": "data/city_files/Indian_River_County/975201_Transport-Request.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/Document Center/Government/Board of County Commissioners/2026-BCC-Meeting-Schedule.pdf",
+    "text": "2026 BCC Meeting Schedule",
+    "file": "data/city_files/Indian_River_County/e7ecdf_2026-BCC-Meeting-Schedule.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/Document Center/Government/Board of County Commissioners/2025-Commissioner-Committees.pdf",
+    "text": "Commissioner Committee Assignments",
+    "file": "data/city_files/Indian_River_County/b722cc_2025-Commissioner-Committees.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/Document Center/Government/Board of County Commissioners/2027_Meeting_Dates.pdf",
+    "text": "2027 BCC Meeting Schedule",
+    "file": "data/city_files/Indian_River_County/1d0f04_2027_Meeting_Dates.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/Document Center/Government/FY25-26-Org-Chart.pdf",
+    "text": "Organizational Chart",
+    "file": "data/city_files/Indian_River_County/fbc101_FY25-26-Org-Chart.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/Document Center/I Want To/Transport-Request.pdf",
+    "text": "Make a shelter transportation request",
+    "file": "data/city_files/Indian_River_County/047402_Transport-Request.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/board_of_county_commissioners/Document Center/Government/Board of County Commissioners/2026-BCC-Meeting-Schedule.pdf",
+    "text": "2026 BCC Meeting Schedule",
+    "file": "data/city_files/Indian_River_County/cc5b6a_2026-BCC-Meeting-Schedule.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/board_of_county_commissioners/Document Center/Government/Board of County Commissioners/2025-Commissioner-Committees.pdf",
+    "text": "Commissioner Committee Assignments",
+    "file": "data/city_files/Indian_River_County/3551be_2025-Commissioner-Committees.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/board_of_county_commissioners/Document Center/Government/Board of County Commissioners/2027_Meeting_Dates.pdf",
+    "text": "2027 BCC Meeting Schedule",
+    "file": "data/city_files/Indian_River_County/e7488e_2027_Meeting_Dates.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/board_of_county_commissioners/Document Center/Government/FY25-26-Org-Chart.pdf",
+    "text": "Organizational Chart",
+    "file": "data/city_files/Indian_River_County/5bdb21_FY25-26-Org-Chart.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/board_of_county_commissioners/Document Center/I Want To/Transport-Request.pdf",
+    "text": "Make a shelter transportation request",
+    "file": "data/city_files/Indian_River_County/4bdd63_Transport-Request.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/boards_and_committees/Document Center/Government/Board of County Commissioners/2026-BCC-Meeting-Schedule.pdf",
+    "text": "2026 BCC Meeting Schedule",
+    "file": "data/city_files/Indian_River_County/234d01_2026-BCC-Meeting-Schedule.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/boards_and_committees/Document Center/Government/Board of County Commissioners/2025-Commissioner-Committees.pdf",
+    "text": "Commissioner Committee Assignments",
+    "file": "data/city_files/Indian_River_County/f66863_2025-Commissioner-Committees.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/boards_and_committees/Document Center/Government/Board of County Commissioners/2027_Meeting_Dates.pdf",
+    "text": "2027 BCC Meeting Schedule",
+    "file": "data/city_files/Indian_River_County/22dc99_2027_Meeting_Dates.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ircgov.com/government/boards_and_committees/mpo_bicycle_advisory_committee/government/boards_and_committees/Document Center/Government/FY25-26-Org-Chart.pdf",
+    "text": "Organizational Chart",
+    "file": "data/city_files/Indian_River_County/388e3f_FY25-26-Org-Chart.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/7d021b20f1e5422d9eeeabafba4360a5": "Road Closures",
+   "https://ircgis.maps.arcgis.com/apps/webappviewer/index.html?id=a36483726f1a49da91491113a753ab60": "Find my Commissioner's District",
+   "https://ircgis.maps.arcgis.com/apps/webappviewer/index.html?id=54e401baeb554c86927e20718a659e49": "Find hiking trails",
+   "https://ircgis.maps.arcgis.com/": "GIS Map Gallery"
+  }
+ },
+ "Hollywood": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/e0322242fd9d4f89aadfdf4d85d1aaca/page/Near-Me/": "Project Dashboard"
+  }
+ },
+ "Douglas County": {
+  "files": [],
+  "portals": {}
+ },
+ "Brunswick County": {
+  "files": [],
+  "portals": {}
+ },
+ "Sumter County": {
+  "files": [
+   {
+    "url": "https://msc.fema.gov/msccontent/Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "text": "Flood\n\t\t\t\t\t\tHazard Mapping Updates Overview Fact Sheet",
+    "file": "data/city_files/Sumter_County/9a4d0e_Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "rows": 52,
+    "bike_rows": 11
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/4dc9c4b7e376419e9ae7513d49220a60/": ""
+  }
+ },
+ "Bonneville County": {
+  "files": [
+   {
+    "url": "https://www.dropbox.com/scl/fi/g7kcowkt0073eb58g77e5/Vacation.LotRoadEsmt.Form_2026.pdf?rlkey=gbbiwlbnxyvguy7jzhfzrmugf&st=ieozbc5b&dl=0",
+    "text": "Vacation of A Portion of a Recorded Subdivision Plat (Lot, Road, or Easement)",
+    "file": "data/city_files/Bonneville_County/893021_Vacation.LotRoadEsmt.Form_2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/efd8fee8e1424e9b9703b44fdc64239f": "Maps",
+   "https://cooperative-gis--group-bonneville.hub.arcgis.com/": "Geographic Information System",
+   "https://bonnevillecompplan-j-u-b.hub.arcgis.com/": "New Bonneville County Comprehensive Plan Learn More",
+   "https://urldefense.com/v3/__https:/bonnevillecountyid-sheriff-transparency.connect.socrata.com/__;!!A69Ausm6DtA!dFHN-tnmLO92n-hPS36UQBIXeW6vH5JAnn1eUqXJMmuinMkKdhYoNSwnRhdEK4pN3-C9-XUxmc_zpYIu7vEHpTXJRZFbWXA$": "Incident Map",
+   "https://bonnevillecountyid-sheriff-transparency.connect.socrata.com/": "Public Safety Incident Map",
+   "https://gis.bonnevillecountyidaho.gov/portal/apps/experiencebuilder/experience/?id=0c9cab9aaf904ae282e6a11a17ce094e": "Road Construction Map",
+   "https://experience.arcgis.com/experience/5a03c0c70ec94f15aa0becba4030717c": "Parcel Viewer"
+  }
+ },
+ "Sheboygan County": {
+  "files": [],
+  "portals": {}
+ },
+ "Gresham": {
+  "files": [
+   {
+    "url": "https://greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/maps/bike-map-and-guide.pdf?id=8640",
+    "text": "Gresham bicycling map and guide",
+    "file": "data/city_files/Gresham/97529d_bike-map-and-guide.pdf",
+    "rows": 193,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/maps/design-districts-map.pdf?id=940",
+    "text": "Design district map",
+    "file": "data/city_files/Gresham/aefebf_design-districts-map.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/maps/gresham-community-plan-map.pdf?id=827",
+    "text": "Gresham community plan map",
+    "file": "data/city_files/Gresham/29e56c_gresham-community-plan-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/maps/pleasant-valley-plan-map.pdf?id=828",
+    "text": "Pleasant Valley plan map",
+    "file": "data/city_files/Gresham/bc7402_pleasant-valley-plan-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/maps/rockwood-urban-renewal-district-map.pdf?id=829",
+    "text": "Rockwood Urban Renewal District map",
+    "file": "data/city_files/Gresham/cefbe0_rockwood-urban-renewal-district-map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/maps/springwater-plan-map.pdf?id=830",
+    "text": "Springwater plan map",
+    "file": "data/city_files/Gresham/dc90f4_springwater-plan-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/maps/bike-map-and-guide.pdf",
+    "text": "View Gresham bike map",
+    "file": "data/city_files/Gresham/76e4fa_bike-map-and-guide.pdf",
+    "rows": 193,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://greshamoregon.gov/globalassets/city-departments/budget-and-finance/budget-documents/gresham-financial-road-map.pdf",
+    "text": "Financial Road Map.",
+    "file": "data/city_files/Gresham/26492b_gresham-financial-road-map.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://greshamoregon.gov/globalassets/services/parks-and-recreation/gresham-parks-map.pdf?id=1822",
+    "text": "Parks map",
+    "file": "data/city_files/Gresham/dbe3c4_gresham-parks-map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/transportation-planning/safe-routes-to-school-flyer.pdf",
+    "text": "Gresham Safe Routes to School flyer",
+    "file": "data/city_files/Gresham/ce122e_safe-routes-to-school-flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/maps/bike-map-and-guide.pdf",
+    "text": "View Gresham bike map",
+    "file": "data/city_files/Gresham/8ab1bd_bike-map-and-guide.pdf",
+    "rows": 193,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/projects/bicycle-map-and-wayfinding-signs/bike-routes-for-everyone.pdf",
+    "text": "Gresham Greenways",
+    "file": "data/city_files/Gresham/5acf93_bike-routes-for-everyone.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/maps/trails-and-greenways-map.pdf",
+    "text": "2026 Bike Projects Map",
+    "file": "data/city_files/Gresham/353288_trails-and-greenways-map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/projects/bicycle-map-and-wayfinding-signs/west-gresham-connector.pdf",
+    "text": "West Gresham Connector map.",
+    "file": "data/city_files/Gresham/13c960_west-gresham-connector.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/projects/bicycle-map-and-wayfinding-signs/gresham-fairview-trail-connector.pdf",
+    "text": "Gresham-Fairview Trail connector map.",
+    "file": "data/city_files/Gresham/af89b1_gresham-fairview-trail-connector.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/projects/bicycle-map-and-wayfinding-signs/gresham-greenway-expansion.pdf",
+    "text": "Gresham Greenway bike route.",
+    "file": "data/city_files/Gresham/6a22f0_gresham-greenway-expansion.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/projects/rockwood-bike-route-project-information-and-map.pdf",
+    "text": "Rockwood bike route information and map.",
+    "file": "data/city_files/Gresham/a937c3_rockwood-bike-route-project-information-and-map.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/services/parks-and-recreation/gresham-trails/gresham-fairview-trail-map.pdf",
+    "text": "View the map.",
+    "file": "data/city_files/Gresham/db1247_gresham-fairview-trail-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/transportation-planning/columbia-view-path.pdf",
+    "text": "Columbia View path",
+    "file": "data/city_files/Gresham/4f9133_columbia-view-path.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/city-departments/urban-design-and-planning/transportation-planning/north-gresham-park-path.pdf",
+    "text": "North Gresham Park path",
+    "file": "data/city_files/Gresham/6747a8_north-gresham-park-path.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/projects/transportation-system-plan/project-prioritization-outcomes/bicycle_projects_prioritization_outcome.pdf",
+    "text": "Bicycle Projects Prioritization Outcome",
+    "file": "data/city_files/Gresham/8de9fc_bicycle_projects_prioritization_outcome.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/projects/transportation-system-plan/project-maps-and-lists/tsp_bicycle_map_and_list.pdf",
+    "text": "TSP Bicycle Map and List",
+    "file": "data/city_files/Gresham/98889a_tsp_bicycle_map_and_list.pdf",
+    "rows": 30,
+    "bike_rows": 26
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/projects/transportation-system-plan/project-maps-and-lists/tsp_corridors_map_and_list.pdf",
+    "text": "TSP Corridors Map and List",
+    "file": "data/city_files/Gresham/8d26aa_tsp_corridors_map_and_list.pdf",
+    "rows": 231,
+    "bike_rows": 45
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/projects/transportation-system-plan/project-maps-and-lists/tsp_intersections_map_and_list.pdf",
+    "text": "TSP Intersections Map and List",
+    "file": "data/city_files/Gresham/e31d0c_tsp_intersections_map_and_list.pdf",
+    "rows": 133,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://www.greshamoregon.gov/globalassets/projects/transportation-system-plan/project-maps-and-lists/tsp_pedestrian_map_and_list.pdf",
+    "text": "TSP Pedestrian Map and List",
+    "file": "data/city_files/Gresham/2be836_tsp_pedestrian_map_and_list.pdf",
+    "rows": 56,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://gis.greshamoregon.gov/GreshamMap/": "Incentive boundary map",
+   "https://gis.greshamoregon.gov/Apps/devprojects.html": "Development projects map",
+   "https://gresham.maps.arcgis.com/apps/webappviewer/index.html?id=647d68e8cfc2488c811105e57554d7b0": "Eligible marijuana dispensary and grow sites",
+   "https://gis.greshamoregon.gov/apps/greshamcpts.html": "Gresham control points map",
+   "https://gis.greshamoregon.gov/apps/haulersweeperfinder.html": "Street sweeping map",
+   "https://gis.greshamoregon.gov/Apps/NeighborhoodFinder.html": "Find your neighborhood",
+   "http://gresham.maps.arcgis.com/apps/webappviewer/index.html?id=7d5536347a154fcda7c256556781b92a": "Snow and ice routes map",
+   "https://gresham.maps.arcgis.com/apps/webappviewer/index.html?id=7d5536347a154fcda7c256556781b92a": "Plow and de-icing routes",
+   "https://experience.arcgis.com/experience/6b8214ad8c094284b6d20c38cc222c32": "online map",
+   "https://gis.oregonmetro.gov/boundary-lookup-tools/find-your-hauler": "Find your hauler."
+  }
+ },
+ "Santa Maria": {
+  "files": [],
+  "portals": {}
+ },
+ "Carver County": {
+  "files": [],
+  "portals": {}
+ },
+ "Adams County": {
+  "files": [],
+  "portals": {}
+ },
+ "Garland County": {
+  "files": [],
+  "portals": {}
+ },
+ "Boca Raton": {
+  "files": [],
+  "portals": {
+   "https://bocagis.maps.arcgis.com/apps/instant/gallery/index.html?appid=1a3190751caf4a9898cb2ff7612cfddd": "GIS (maps)"
+  }
+ },
+ "Edmond": {
+  "files": [],
+  "portals": {
+   "https://gis.edmondok.gov/addresslocator/": "Do I Live in Edmond?",
+   "http://gis.edmondok.gov/addresslocator": "Do I Live in Edmond?",
+   "http://gis.edmondok.gov/addresslocator/": "Click here to determine your solid waste/recycling collection day",
+   "https://gis.edmondok.gov/plzoning/": "Online Zoning Map"
+  }
+ },
+ "Ozaukee County": {
+  "files": [],
+  "portals": {}
+ },
+ "Palm Coast": {
+  "files": [],
+  "portals": {
+   "https://www.arcgis.com/apps/dashboards/db9a4ce73f774bdfb5dea84e01b2790c": "Capital Projects",
+   "https://copcgis.maps.arcgis.com/apps/webappviewer/index.html?id=2a2db4ad7a684be091f0369b8cea187a": "Planning Projects",
+   "https://experience.arcgis.com/experience/b5cb5239bec440d3a0791b90205eb7dc": "Planning Projects"
+  }
+ },
+ "Brooklyn Park": {
+  "files": [
+   {
+    "url": "https://www.brooklynpark.org/wp-content/uploads/2022/06/2026RecycleCalendarBP.pdf",
+    "text": "View Recycling Week calendar (PDF).",
+    "file": "data/city_files/Brooklyn_Park/ad5208_2026RecycleCalendarBP.pdf",
+    "rows": 35,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.brooklynpark.org/wp-content/uploads/2020/04/2020-Parks-and-Trails-Map.pdf",
+    "text": "Parks and Trails Map (PDF)",
+    "file": "data/city_files/Brooklyn_Park/ac33ed_2020-Parks-and-Trails-Map.pdf",
+    "rows": 36,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.hennepin.us/-/media/hennepinus/residents/recycling/documents/residential-organics-recycling-guide.pdf",
+    "text": "Organics Recycling Guide",
+    "file": "data/city_files/Brooklyn_Park/969437_residential-organics-recycling-guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://brooklynpark.maps.arcgis.com/apps/instant/sidebar/index.html?appid=a7cdab5da3444387b5c3a70534c70665": "Launch the interactive map to find your recycling day",
+   "https://survey123.arcgis.com/share/0e448cb86cdc4940b91c6228b25a0a57": "Report a park maintenance issue",
+   "https://experience.arcgis.com/experience/67a94cf0139940fe84a3bbdfe0bbe975": "Park Finder",
+   "https://brooklynpark.maps.arcgis.com/apps/instant/sidebar/index.html?appid=66158d7e22074535bcc37e2a96845d19": "Zoning Information",
+   "https://brooklynpark.maps.arcgis.com/apps/instant/sidebar/index.html?appid=7429d04f855340d39add9e941f82640f": "",
+   "https://brooklynpark.maps.arcgis.com/apps/instant/sidebar/index.html?appid=44f06b6ce8974df1a8040d923cef1b27": "Road Construction Projects",
+   "https://experience.arcgis.com/experience/7c01a4c646244a3a9c57e2c48faa0123": "Development Projects",
+   "https://experience.arcgis.com/experience/e0859f8cb39f4d0a904933df9a32401e/": "City Restaurants",
+   "https://experience.arcgis.com/experience/658c003fd4264eb88e04fef5fb1bf6dd/": "Elections and Polling",
+   "https://brooklynpark.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=3a6b6539ed3c4a1081dc235f21193c31": "View all city maps",
+   "https://brooklynpark.maps.arcgis.com/apps/instant/sidebar/index.html?appid=6c4c1c44e15c426ab6b31fa56b88ceb7": "Look up your Organics pickup day",
+   "https://experience.arcgis.com/experience/7e1a28f3ae4b434fa82e1e3017417a57": "Find a park facility >"
+  }
+ },
+ "Bryan": {
+  "files": [
+   {
+    "url": "https://media-002-us.cdn.govstack.com/bryantx-004-us/media/3eintb1i/historic-preservation-plan.pdf",
+    "text": "View the Plan",
+    "file": "data/city_files/Bryan/4f397e_historic-preservation-plan.pdf",
+    "rows": 272,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/bryantx-004-us/media/pygmcyyu/cob-cemeteries-improvement-permit-application-print.pdf",
+    "text": "City of Bryan Cemeteries Improvement Permit Application (Print Only)",
+    "file": "data/city_files/Bryan/0dc13d_cob-cemeteries-improvement-permit-application-print.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.bryantx.gov/government/open-data/": "Open Data",
+   "https://bryantx.gov/government/open-data/": "Open Data",
+   "https://experience.arcgis.com/experience/af0b8577e754498eadb4c9403ba3b488": "Trash Collection Service Day Map",
+   "https://experience.arcgis.com/experience/0588650fca684aa98b47eb02dbe4dfd3/": "Grandview Cemetery & Freedman’s Burying Ground Interactive map of the Grandview Cemetery and Freedman’s Burying Ground",
+   "https://experience.arcgis.com/experience/4c195aa7f29341b2af3b7133c167fcf6": "Weather Station Feed Visual dashboard featuring real-time local weather data",
+   "https://experience.arcgis.com/experience/9b7324b1c35a4eabb44784275e5815df": "GIS map of available parking",
+   "https://experience.arcgis.com/experience/7d1bb9facd754b338e4bb04c706d8571": "Downtown Bryan Two-Hour Parking"
+  }
+ },
+ "Cape Girardeau County": {
+  "files": [],
+  "portals": {}
+ },
+ "Napa": {
+  "files": [
+   {
+    "url": "https://naparecycling.com/wp-content/uploads/2024/12/Napa-Residential-Recycling-Guide-English_compressed.pdf",
+    "text": "Download Recycling Guide",
+    "file": "data/city_files/Napa/2cec91_Napa-Residential-Recycling-Guide-English_compressed.pdf",
+    "rows": 42,
+    "bike_rows": 13
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/def6e2b6bdcc4d66b87109ecfd3a2ac1": "https://storymaps.arcgis.com/stories/def6e2b6bdcc4d66b87109ecfd3a2ac1",
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=5bad6e1014354543a02b432b0f827af8&extent=-13636582.8214%2C4609504.7068%2C-13587663.1233%2C4631862.5375%2C102100": "Find Your District",
+   "https://cityofnapa.maps.arcgis.com/apps/instant/lookup/index.html?appid=98dac3e206fa4977b9f2d3cb236766da": "Find Your District",
+   "https://gis.countyofnapa.org/portal/apps/webappviewer/index.html?id=0bbafe490c58430da719ff851c78b7fa": "GIS map",
+   "https://gisdata-cityofnapa.hub.arcgis.com/": "Home",
+   "https://experience.arcgis.com/experience/9ab0add6b6244a549a527203b8164f89": "Napa Street Pavement Maintenance Schedule",
+   "https://cityofnapa.maps.arcgis.com/apps/webappviewer/index.html?id=7934d58ffb4045b5871bde69cf9f2bcf&extent=-13639448.3394%2C4604265.4901%2C-13572757.0323%2C4635298.9236%2C102100": "Sweeper Route Map",
+   "https://experience.arcgis.com/experience/4df2a624acd14808835b5f383bea9547": "Capital Improvement Program (CIP) Projects",
+   "https://www.arcgis.com/sharing/rest/oauth2/authorize?client_id=arcgisonline&response_type=token&redirect_uri=https%3A%2F%2Fgisdata-cityofnapa.hub.arcgis.com%2F": "Sign In",
+   "https://gisdata.napacounty.gov/": "Napa County GIS Hub",
+   "https://gisdata-cityofnapa.hub.arcgis.com/frequently-asked-questions": "Support",
+   "https://gisdata.napacounty.gov/pages/search": "Napa County GIS Data Downloads"
+  }
+ },
+ "Pasco": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/febe831281cc4428aaf6be9da21e0976": "Road Closures and Detours"
+  }
+ },
+ "Woodbury": {
+  "files": [],
+  "portals": {}
+ },
+ "Gulfport": {
+  "files": [
+   {
+    "url": "https://www.epa.gov/sites/default/files/2015-12/documents/cgp_small_lot_swppp_brochure-final_0.pdf",
+    "text": "Environmental Protection Agency - Construction Site Flyer (PDF)",
+    "file": "data/city_files/Gulfport/a5317e_cgp_small_lot_swppp_brochure-final_0.pdf",
+    "rows": 13,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://gulfport-ms.gov/Documents/Departments/Public Works/Waste & Recycling/Guidelines_Trash_Pickup.pdf?t=202606191523130",
+    "text": "Trash Pickup Guidelines (PDF)",
+    "file": "data/city_files/Gulfport/a1f513_Guidelines_Trash_Pickup.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gulfport-ms.gov/Documents/Departments/Public Works/Waste & Recycling/Ordinance2920.pdf?t=202606191619440",
+    "text": "Ordinance 2920 (PDF)",
+    "file": "data/city_files/Gulfport/e74a4e_Ordinance2920.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gulfport-ms.gov/RecyclingFlyer (1).pdf?t=202609141446360",
+    "text": "Solid Waste and Recycle Contract Flyer (PDF) (What is considered recyclable and non-recyclable items.)",
+    "file": "data/city_files/Gulfport/d9cf98_RecyclingFlyer_1_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gulfport-ms.gov/GarbagePickup8x11_20260623 (002).pdf?t=202607091023390",
+    "text": "Garbage and Recycling Schedule Map (PDF)",
+    "file": "data/city_files/Gulfport/3b28d2_GarbagePickup8x11_20260623_002_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gulfport-ms.gov/H20 Debris pick up map.pdf?t=202606291144060",
+    "text": "H2O Debris Pickup Schedule Map (PDF)",
+    "file": "data/city_files/Gulfport/63c152_H20_Debris_pick_up_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gulfport.maps.arcgis.com/apps/instant/basic/index.html?appid=06cbdd8099a14d25b8b0a18fc22d3c44": "Online Atlas",
+   "https://gulfport.maps.arcgis.com/apps/webappviewer/index.html?id=8ffee9741259459abf98c875bfbd63f7": "Maps"
+  }
+ },
+ "Franklin County": {
+  "files": [
+   {
+    "url": "https://frcog.org/wp-content/uploads/2023/03/MA-Senate-District-Map-FC.pdf",
+    "text": "Franklin County Senate District Map",
+    "file": "data/city_files/Franklin_County/ec72ca_MA-Senate-District-Map-FC.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2023/03/MA-House-District-Map-FC.pdf",
+    "text": "Franklin County House District Map",
+    "file": "data/city_files/Franklin_County/e50d4b_MA-House-District-Map-FC.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2023/11/Western-MA-Mountain-Biking-Trails-Study_1-10-23-final.pdf",
+    "text": "",
+    "file": "data/city_files/Franklin_County/37f3cf_Western-MA-Mountain-Biking-Trails-Study_1-10-23-final.pdf",
+    "rows": 165,
+    "bike_rows": 57
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2023/11/Bachelor-Street-Trails-Brochure.pdf",
+    "text": "Mount Holyoke Range State Park – Hampshire County",
+    "file": "data/city_files/Franklin_County/2e7163_Bachelor-Street-Trails-Brochure.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2022/09/FINAL_Leverett-OSRP-body_maps.pdf",
+    "text": "Leverett Open Space and Recreation Plan (2019)",
+    "file": "data/city_files/Franklin_County/ce0701_FINAL_Leverett-OSRP-body_maps.pdf",
+    "rows": 232,
+    "bike_rows": 36
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2022/09/Sunderland-OSRP_Final_JUNE2022_maps.pdf",
+    "text": "Sunderland Open Space and Recreation plan (2022)",
+    "file": "data/city_files/Franklin_County/cb1c34_Sunderland-OSRP_Final_JUNE2022_maps.pdf",
+    "rows": 64,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2014/02/Connecticut-River-Byway-Bike-Map.pdf",
+    "text": "View the Connecticut River Byway Bike Map (PDF, 3.5 MB)",
+    "file": "data/city_files/Franklin_County/e457ce_Connecticut-River-Byway-Bike-Map.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2018/01/Electric-Vehicle-Charging-Station-Demand-Report-2017.pdf",
+    "text": "for Electric Vehicle Charging Stations in Franklin County (PDF, 1.4 MB)",
+    "file": "data/city_files/Franklin_County/89bcee_Electric-Vehicle-Charging-Station-Demand-Report-2017.pdf",
+    "rows": 12,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2015/02/2009-Franklin-County-Regional-Bike-Plan.pdf",
+    "text": "Franklin County Regional Bike Plan Update (2009)",
+    "file": "data/city_files/Franklin_County/254428_2009-Franklin-County-Regional-Bike-Plan.pdf",
+    "rows": 23,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2023/08/Chapter-9-Transit-Services.pdf",
+    "text": "Chapter 9: Transit",
+    "file": "data/city_files/Franklin_County/e1ae01_Chapter-9-Transit-Services.pdf",
+    "rows": 79,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2023/08/Chapter-10-Bicycle-and-Pedestrian-Facilities.pdf",
+    "text": "Chapter 10: Bike and Pedestrian",
+    "file": "data/city_files/Franklin_County/9eb943_Chapter-10-Bicycle-and-Pedestrian-Facilities.pdf",
+    "rows": 37,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2020/09/2020-RTP-Chapter-9-Transit.pdf",
+    "text": "2020 Chapter 9 Transit",
+    "file": "data/city_files/Franklin_County/4517bb_2020-RTP-Chapter-9-Transit.pdf",
+    "rows": 49,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2020/09/2020-RTP-Chapter-10-Bike-and-Pedestrian.pdf",
+    "text": "2020 Chapter 10 Bike and Pedestrian",
+    "file": "data/city_files/Franklin_County/14c0a0_2020-RTP-Chapter-10-Bike-and-Pedestrian.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2014/02/RTP_Chapter9_Transit.pdf",
+    "text": "Chapter 9 -Transit & Paratransit Services",
+    "file": "data/city_files/Franklin_County/1dfba0_RTP_Chapter9_Transit.pdf",
+    "rows": 56,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2014/02/RTP_Chapter10_-BikePed.pdf",
+    "text": "Chapter 10 – Livability: Bicycle & Pedestrian Facilities",
+    "file": "data/city_files/Franklin_County/c75a1a_RTP_Chapter10_-BikePed.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2014/02/RTP_Chapter11_Scenic-Byways.pdf",
+    "text": "Chapter 11 – Scenic Byways & Regional Tourism",
+    "file": "data/city_files/Franklin_County/c6bc2d_RTP_Chapter11_Scenic-Byways.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2014/05/Chapter_9_Transit.pdf",
+    "text": "Chapter 9 Transit and Paratransit",
+    "file": "data/city_files/Franklin_County/1d7b98_Chapter_9_Transit.pdf",
+    "rows": 83,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2014/05/Chapter_10_BikePed.pdf",
+    "text": "Chapter 10 Livability: Bicycle and Pedestrian Facilities",
+    "file": "data/city_files/Franklin_County/918cb7_Chapter_10_BikePed.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2014/05/Chapter_15_ScenicByways.pdf",
+    "text": "Chapter 15 Scenic Byways and Tourism",
+    "file": "data/city_files/Franklin_County/146940_Chapter_15_ScenicByways.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2022/11/FFY27-31-Transit-Project-List.pdf",
+    "text": "FFY27-31 Transit Project List",
+    "file": "data/city_files/Franklin_County/762815_FFY27-31-Transit-Project-List.pdf",
+    "rows": 34,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2022/11/Franklin-2025-2029-TIP-Transit-Project-List-Adjustment-2-FINAL.pdf",
+    "text": "Franklin 2025-2029 TIP Transit Project List Adjustment 2 FINAL",
+    "file": "data/city_files/Franklin_County/5b7238_Franklin-2025-2029-TIP-Transit-Project-List-Adjustment-2-FINAL.pdf",
+    "rows": 49,
+    "bike_rows": 21
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2022/11/Franklin-2024-2028-TIP-Transit-Project-List-FINAL-May-2023.pdf",
+    "text": "Franklin 2024-2028 TIP Transit Project List FINAL May 2023",
+    "file": "data/city_files/Franklin_County/07e71d_Franklin-2024-2028-TIP-Transit-Project-List-FINAL-May-2023.pdf",
+    "rows": 39,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://frcog.org/wp-content/uploads/2022/11/Franklin-2024-2028-TIP-Transit-Project-List-Adjustment-1-FINAL.pdf",
+    "text": "Franklin 2024-2028 TIP Transit Project List Adjustment 1 FINAL",
+    "file": "data/city_files/Franklin_County/47c9e6_Franklin-2024-2028-TIP-Transit-Project-List-Adjustment-1-FINAL.pdf",
+    "rows": 19,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://biomap-mass-eoeea.hub.arcgis.com/": "BioMap: The Future of Conservation in Massachusetts",
+   "https://data.census.gov/cedsci/": "U.S. Census Bureau",
+   "https://data.mass.gov/": "Massachusetts Data Hub"
+  }
+ },
+ "Lakeville": {
+  "files": [],
+  "portals": {}
+ },
+ "Skokie": {
+  "files": [],
+  "portals": {}
+ },
+ "Wayne County": {
+  "files": [
+   {
+    "url": "https://co.wayne.in.us/clerk/precinctmap.pdf",
+    "text": "Precinct Map",
+    "file": "data/city_files/Wayne_County/1905fc_precinctmap.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/675aa5bb229641baa1bf80181e59bbe1": "Wayne County Maps",
+   "https://wayeo.egis.39dn.com/": "Who Are Your Elected Officials"
+  }
+ },
+ "Utica": {
+  "files": [
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Parking-Authority/Forms/Off-Street%20Parking%20Application%201-23.pdf",
+    "text": "Off-Street Parking Permit Application",
+    "file": "data/city_files/Utica/fe1e9f_Off-Street_20Parking_20Application_201-23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dmv.ny.gov/forms/mv6641.pdf",
+    "text": "Application for a Parking Permit or License Plates, for persons with Severe Disabilities",
+    "file": "data/city_files/Utica/7588eb_mv6641.pdf",
+    "rows": 15,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Parking-Authority/Forms/Report%20of%20Lost-Stolen%20Handicap%20Parking%20Permit.pdf",
+    "text": "Report of Lost/Stolen Handicap Parking Permits",
+    "file": "data/city_files/Utica/78aa4a_Report_20of_20Lost-Stolen_20Handicap_20Parking_20Permit.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Parking-Tickets/PDF-Documents/Parking%20Fines.pdf",
+    "text": "City of Utica Department of Legislation - Ordinance 78 Increasing Parking Fees",
+    "file": "data/city_files/Utica/54feaf_Parking_20Fines.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://cityofutica.com/Assets/Departments/Urban-and-Economic-Development/PDF-Documents/Utica%20LWAP%20Final%20Report%20December%202011%20with%20maps.pdf",
+    "text": "Local Waterfront Access Plan 2011",
+    "file": "data/city_files/Utica/d7a85a_Utica_20LWAP_20Final_20Report_20December_202011_20with_20maps.pdf",
+    "rows": 124,
+    "bike_rows": 33
+   },
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Urban-and-Economic-Development/PDF-Documents/S&H%20Brochure_2014.pdf",
+    "text": "Scenic & Historic Brochure",
+    "file": "data/city_files/Utica/cd0fc1_S_H_20Brochure_2014.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Urban-and-Economic-Development/PDF-Documents/Scenic_and_Historic.pdf",
+    "text": "Utica's Scenic & Historic Districts",
+    "file": "data/city_files/Utica/20d278_Scenic_and_Historic.pdf",
+    "rows": 5,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Urban-and-Economic-Development/Agendas/Scenic&Historic/2026/S-H%202-23-26.pdf",
+    "text": "VIEW",
+    "file": "data/city_files/Utica/22d174_S-H_202-23-26.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Urban-and-Economic-Development/Agendas/Scenic&Historic/2026/S-H%205-18-26.pdf",
+    "text": "VIEW",
+    "file": "data/city_files/Utica/818be7_S-H_205-18-26.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Urban-and-Economic-Development/Agendas/Scenic&Historic/2026/S-H%207-27-26.pdf",
+    "text": "VIEW",
+    "file": "data/city_files/Utica/00e2d7_S-H_207-27-26.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Urban-and-Economic-Development/Agendas/Scenic&Historic/2026/S-H%208-24-26.pdf",
+    "text": "VIEW",
+    "file": "data/city_files/Utica/d4bea8_S-H_208-24-26.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Urban-and-Economic-Development/Agendas/Scenic&Historic/2026/S-H%209-28-26.pdf",
+    "text": "VIEW",
+    "file": "data/city_files/Utica/4f99c8_S-H_209-28-26.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Urban-and-Economic-Development/Agendas/Scenic&Historic/2026/S-H%2010-26-26.pdf",
+    "text": "VIEW",
+    "file": "data/city_files/Utica/11e983_S-H_2010-26-26.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofutica.com/Assets/Departments/Urban-and-Economic-Development/Agendas/Scenic&Historic/2026/S-H%2011-23-26.pdf",
+    "text": "VIEW",
+    "file": "data/city_files/Utica/720ed8_S-H_2011-23-26.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://upd-crisis-response-dcjs.hub.arcgis.com/": "",
+   "https://experience.arcgis.com/experience/00397527adc04a3b9a90036768eb6435": "Click Here",
+   "https://utica.maps.arcgis.com/apps/dashboards/bd87d5586a024944bb8d394f85d96c12": "https://utica.maps.arcgis.com"
+  }
+ },
+ "West Hartford": {
+  "files": [],
+  "portals": {}
+ },
+ "Walla Walla County": {
+  "files": [
+   {
+    "url": "https://www.co.walla-walla.wa.us/document_center/Public%20Works/Misc/Public_Works_Map_County_SnowRoutes.pdf",
+    "text": "Snow Routes",
+    "file": "data/city_files/Walla_Walla_County/942050_Public_Works_Map_County_SnowRoutes.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://co.walla-walla.wa.us/government/gis/government/gis/about_gis.php": "About GIS",
+   "https://wallawallacountygis-wwcgis.hub.arcgis.com/": "Interactive Map Hub",
+   "https://wwcgis.maps.arcgis.com/apps/webappviewer/index.html?id=9fcca18a297c40cda18e28b018aa98d2": "Public Works Employee Login",
+   "https://gis.co.walla-walla.wa.us/portal/apps/webappviewer/index.html?id=f5035eec343245c2b82f2988f79ed7f0": "County Employee Map Login",
+   "https://gis.co.walla-walla.wa.us/portal/apps/webappviewer/index.html?id=8b4ee1fd66d744258b9faa922222ff4e": "Assessor Employee Map Login",
+   "https://www.co.walla-walla.wa.us/government/gis/government/gis/about_gis.php": "About GIS"
+  }
+ },
+ "Monterey Park": {
+  "files": [],
+  "portals": {}
+ },
+ "Otter Tail County": {
+  "files": [],
+  "portals": {}
+ }
+}
