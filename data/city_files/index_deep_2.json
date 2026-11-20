@@ -1,0 +1,1062 @@
+{
+ "Philadelphia PA": {
+  "files": [],
+  "portals": {
+   "https://www.phila.gov/programs/open-data-program/": "Open data",
+   "https://phila.gov/opendata": "Close",
+   "https://phila.gov/programs/open-data-program/": "English",
+   "https://phila.gov/es/programs/open-data-program/": "Español",
+   "https://phila.gov/zh/programs/open-data-program/": "中文",
+   "https://phila.gov/ar/programs/open-data-program/": "عربي",
+   "https://phila.gov/ht/programs/open-data-program/": "Ayisyen",
+   "https://phila.gov/fr/programs/open-data-program/": "Français",
+   "https://phila.gov/sw/programs/open-data-program/": "Kiswahili",
+   "https://phila.gov/pt/programs/open-data-program/": "Português",
+   "https://phila.gov/ru/programs/open-data-program/": "Pyccкий",
+   "https://phila.gov/vi/programs/open-data-program/": "Tiếng Việt",
+   "https://opendataphilly.org/organizations/city-of-philadelphia": "OpenDataPhilly",
+   "https://data.phila.gov/visualizations/311-requests/": "311 service requests",
+   "https://data.phila.gov/visualizations/property-assessments": "property assessments",
+   "https://opendataphilly.org/datasets/language-services-usage/": "language access services",
+   "https://www.opendataphilly.org/": "Explore Visit OpenDataPhilly to see datasets from the City and other organizations.",
+   "https://groups.google.com/g/opendataphilly": "Discuss Join the public open data google forum to talk about City datasets.",
+   "https://phl.maps.arcgis.com/home/index.html": "PHLMaps Explore maps of the City’s open geospatial data.",
+   "https://metadata.phila.gov/": "Metadata catalog Find explanations of datasets on the City’s metadata catalog.",
+   "https://survey123.arcgis.com/share/2b01f90422104304a03621307ba3d21d": "2026 Philadelphia Trails Survey Help us incorporate your feedback by completing the 2026 Trails Survey.",
+   "https://experience.arcgis.com/experience/7e77e2ece09c4bbbb3a7c7954a3071ce": "Philadelphia Register of Historic Places: Map Explore an interactive map of properties and districts that appear on the ",
+   "https://www.opendataphilly.org/dataset/professional-services-contract-data": "Download data",
+   "https://www.opendataphilly.org/dataset/commodity-contract-data": "Download data",
+   "https://www.phila.gov/departments/office-of-innovation-and-technology/resources/open-data-applications/": "Open data applications",
+   "https://opendataphilly.org/": "Open Data Philly",
+   "https://data.census.gov/": "U.S. Census Bureau",
+   "https://opendataphilly.org/datasets/philadelphia-properties-and-assessment-history/": "OpenDataPhilly",
+   "https://phl.maps.arcgis.com/apps/dashboards/580d9948b2e34f378921caf56cf1c925": "Explore the Philly Free Wi-Fi Dashboard",
+   "https://phl.maps.arcgis.com/apps/dashboards/69ccf9aefddc4c198ec470c05ae3685a": "Open Data Dashboard"
+  }
+ },
+ "Laredo TX": {
+  "files": [],
+  "portals": {}
+ },
+ "San Francisco": {
+  "files": [
+   {
+    "url": "https://www.sf.gov/sites/default/files/2023-05/3.1_YBCBD%20MTA%20Bike%20Hangar%20Murals_0.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2023-05/3.1_YBCBD%20MTA%20Bike%20Hangar%20Murals_0.pdf",
+    "file": "data/city_files/San_Francisco/7cb30b_3.1_YBCBD_20MTA_20Bike_20Hangar_20Murals_0.pdf",
+    "rows": 21,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2022-11/SMC_Bicycle%20Assessment%20Presentation_10.19.2022.cleaned.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2022-11/SMC_Bicycle%20Assessment%20Presentation_10.19.2022.cleaned.pdf",
+    "file": "data/city_files/San_Francisco/cd42c8_SMC_Bicycle_20Assessment_20Presentation_10.19.2022.cleaned.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2022-11/Final%20Powered%20Scooter%20Share%20MDC%2011.18.22.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2022-11/Final%20Powered%20Scooter%20Share%20MDC%2011.18.22.pdf",
+    "file": "data/city_files/San_Francisco/b3dc6e_Final_20Powered_20Scooter_20Share_20MDC_2011.18.22.pdf",
+    "rows": 67,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-02/SFMTA%20Sutter%20Stockton%20Garage%20Audit%20Report%2002.08.24.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2024-02/SFMTA%20Sutter%20Stockton%20Garage%20Audit%20Report%2002.08.24.pdf",
+    "file": "data/city_files/San_Francisco/c14edc_SFMTA_20Sutter_20Stockton_20Garage_20Audit_20Report_2002.08.24.pdf",
+    "rows": 92,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2023-05/Modernizing%20Parking%20Meter%20Hours%20-%20Template%20FINAL%20TG%205.22.23.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2023-05/Modernizing%20Parking%20Meter%20Hours%20-%20Template%20FINAL%20TG%205.22.",
+    "file": "data/city_files/San_Francisco/900cd4_Modernizing_20Parking_20Meter_20Hours_20-_20Template_20FINAL_20TG_205.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-10/item_4d._lbr-2018-19-050_ocean_cyclery.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2024-10/item_4d._lbr-2018-19-050_ocean_cyclery.pdf",
+    "file": "data/city_files/San_Francisco/eee7c5_item_4d._lbr-2018-19-050_ocean_cyclery.pdf",
+    "rows": 40,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-02/39_SFMTA_2023_SFBikeNetworkMap.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2024-02/39_SFMTA_2023_SFBikeNetworkMap.pdf",
+    "file": "data/city_files/San_Francisco/2e417a_39_SFMTA_2023_SFBikeNetworkMap.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-03/1610%20Geary%20Blvd%20-%20Ntl%20Wild%20and%20Scenic%20Rivers.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2024-03/1610%20Geary%20Blvd%20-%20Ntl%20Wild%20and%20Scenic%20Rivers.pdf",
+    "file": "data/city_files/San_Francisco/e75f7f_1610_20Geary_20Blvd_20-_20Ntl_20Wild_20and_20Scenic_20Rivers.pdf",
+    "rows": 10,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-03/ZSFG-Campus-Map-Directory-2017-08-EN.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2024-03/ZSFG-Campus-Map-Directory-2017-08-EN.pdf",
+    "file": "data/city_files/San_Francisco/1694b3_ZSFG-Campus-Map-Directory-2017-08-EN.pdf",
+    "rows": 70,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2023-04/Refuse-Route-Application-Notice.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2023-04/Refuse-Route-Application-Notice.pdf",
+    "file": "data/city_files/San_Francisco/95671c_Refuse-Route-Application-Notice.pdf",
+    "rows": 144,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-02/3_Historic%20and%20Cultural%20Resources%20Documentation_rx.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2024-02/3_Historic%20and%20Cultural%20Resources%20Documentation_rx.pdf",
+    "file": "data/city_files/San_Francisco/ec4fde_3_Historic_20and_20Cultural_20Resources_20Documentation_rx.pdf",
+    "rows": 343,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-03/CA_National%20Wild%20and%20Scenic%20River%20System%20_%20Rivers.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2024-03/CA_National%20Wild%20and%20Scenic%20River%20System%20_%20Rivers.pdf",
+    "file": "data/city_files/San_Francisco/d31afd_CA_National_20Wild_20and_20Scenic_20River_20System_20__20Rivers.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-03/San%20Francisco_Wild_and_Scenic%20Rivers.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2024-03/San%20Francisco_Wild_and_Scenic%20Rivers.pdf",
+    "file": "data/city_files/San_Francisco/4b5b18_San_20Francisco_Wild_and_Scenic_20Rivers.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-11/item_3l._lbr-2015-16-065_sf_heritage.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2024-11/item_3l._lbr-2015-16-065_sf_heritage.pdf",
+    "file": "data/city_files/San_Francisco/ab8f66_item_3l._lbr-2015-16-065_sf_heritage.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2023-09/23.0000063BartParkingPricingPolicy.pdf",
+    "text": "https://www.sf.gov/sites/default/files/2023-09/23.0000063BartParkingPricingPolicy.pdf",
+    "file": "data/city_files/San_Francisco/aabfa8_23.0000063BartParkingPricingPolicy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://api.sf.gov/documents/40727/Citywide_Precinct_Map_2025.pdf",
+    "text": "Precincts and Legislative Districts Map (PDF)",
+    "file": "data/city_files/San_Francisco/e23993_Citywide_Precinct_Map_2025.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-06/Citywide_Neighborhood_Map_July_2022%5B1%5D.pdf",
+    "text": "Neighborhood Map (PDF)",
+    "file": "data/city_files/San_Francisco/07f28b_Citywide_Neighborhood_Map_July_2022_5B1_5D.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-06/District_1_July_2022_Map%5B1%5D.pdf",
+    "text": "Supervisorial District 1 Map (PDF)",
+    "file": "data/city_files/San_Francisco/cfdeeb_District_1_July_2022_Map_5B1_5D.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-06/District_2_July_2022_Map%5B1%5D.pdf",
+    "text": "Supervisorial District 2 Map (PDF)",
+    "file": "data/city_files/San_Francisco/e094e4_District_2_July_2022_Map_5B1_5D.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sf.gov/sites/default/files/2024-06/District_3_July_2022_Map%5B1%5D.pdf",
+    "text": "Supervisorial District 3 Map (PDF)",
+    "file": "data/city_files/San_Francisco/873702_District_3_July_2022_Map_5B1_5D.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.sf.gov/resource--2023--open-data": "https://www.sf.gov/resource--2023--open-data",
+   "https://www.sf.gov/leveraging-the-city-s-open-data": "https://www.sf.gov/leveraging-the-city-s-open-data",
+   "https://www.sf.gov/open-data-program-performance-metrics": "https://www.sf.gov/open-data-program-performance-metrics",
+   "https://www.sf.gov/resource--2023--open-data-developer-resources": "https://www.sf.gov/resource--2023--open-data-developer-resources",
+   "https://www.sf.gov/resource--2023--open-data-case-studies": "https://www.sf.gov/resource--2023--open-data-case-studies",
+   "https://sfgov.maps.arcgis.com/apps/webappviewer/index.html?id=57159538a9a3422a9d22ef75d66565b6": "Interactive Supervisorial District Map",
+   "http://sfgov.maps.arcgis.com/apps/webappviewer/index.html?id=b2ab90f2a52543b3b081abd791d90e41": ""
+  }
+ },
+ "Tres de Febrero Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Manavgat": {
+  "files": [],
+  "portals": {}
+ },
+ "Shreveport": {
+  "files": [],
+  "portals": {
+   "https://shreveport.maps.arcgis.com/apps/instant/basic/index.html?appid=d679db415105422b8641c8b368e0a561": "Additional Info...",
+   "https://experience.arcgis.com/experience/21955fbfac334d109f4f042726b6b6ef": "View Full Map"
+  }
+ },
+ "Murfreesboro": {
+  "files": [],
+  "portals": {}
+ },
+ "Carrollton": {
+  "files": [],
+  "portals": {}
+ },
+ "West Jordan": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/1e4abcc4b9b84bff8a4f6ebc0c2eaddd": "Report a Problem",
+   "https://west-jordan-city.maps.arcgis.com/home/index.html": "Maps",
+   "https://experience.arcgis.com/experience/1db186fe2d934e7eb0d3fac6b216f930": "Map of Garbage Pickup Days",
+   "https://west-jordan-city.maps.arcgis.com/apps/webappviewer/index.html?id=2f501d3a059c413b95048bfd048fcf37": "Compare old West Jordan to new",
+   "https://west-jordan-city.maps.arcgis.com/apps/webappviewer/index.html?id=11783939378a410581fd8307a0e2e5e3": "you can see if there are plots available",
+   "https://experience.arcgis.com/experience/7079218c63d949e8a1d0809adf4b5c6b": "This map will tell you if your property is at risk.",
+   "https://experience.arcgis.com/experience/e2697ab1064b48bf90c455d12977337e": "See a business âheat map.â",
+   "https://experience.arcgis.com/experience/c71919e1b0a346099e81a3e0d6746ac5": "see our maps of bikes lanes and trails.",
+   "https://storymaps.arcgis.com/collections/cf8b6867ad954a6e9ed400ca9e9206ea?item=1": "Living in the Age of Humans",
+   "https://survey123.arcgis.com/share/50eea4bea76c4f94871a69e5777c5c4c": "Fill out this form.",
+   "https://west-jordan-city.maps.arcgis.com/apps/webappviewer/index.html?id=aa2233bdeff84ccba2c14bbc94792fee": "interactive map.",
+   "https://west-jordan-city.maps.arcgis.com/apps/instant/media/index.html?appid=1087b43963ad4fa4b80be35fb5a11601": "click here to view the map fullscreen",
+   "https://experience.arcgis.com/experience/498c6a1f45574ecfbd0f51e02ac9ce39/page/Home/?draft=true": "Get started!",
+   "https://west-jordan-city.maps.arcgis.com/apps/instant/basic/index.html?appid=f889485cb77d4d37a6220eb982eb3a05": "Start exploring.",
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=a5a25c404fb648bcb89aeb30435594bf&extent=-12529123.3131%2C4926394.6125%2C-12382364.2188%2C4994958.6269%2C102100": "Take a look at an interactive map"
+  }
+ },
+ "Inglewood": {
+  "files": [],
+  "portals": {}
+ },
+ "Hesperia": {
+  "files": [],
+  "portals": {}
+ },
+ "O'Fallon": {
+  "files": [
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/Ward_Map_Small.pdf",
+    "text": "O'Fallon Ward Map",
+    "file": "data/city_files/O_Fallon/5333bc_Ward_Map_Small.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/City_Limit_Map_8x11.pdf",
+    "text": "City Limits map (PDF)",
+    "file": "data/city_files/O_Fallon/fd65e5_City_Limit_Map_8x11.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/School_District_Map_Small.pdf",
+    "text": "Educational Facilities map (PDF)",
+    "file": "data/city_files/O_Fallon/c96ba7_School_District_Map_Small.pdf",
+    "rows": 31,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/Emergency_Services_Map_Small.pdf",
+    "text": "Emergency Services map (PDF)",
+    "file": "data/city_files/O_Fallon/f42beb_Emergency_Services_Map_Small.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/Sewer_District_Map_Small.pdf",
+    "text": "Sewer District map (PDF)",
+    "file": "data/city_files/O_Fallon/b3ca97_Sewer_District_Map_Small.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/Water_District_Map_Small.pdf",
+    "text": "Water District map (PDF)",
+    "file": "data/city_files/O_Fallon/f69b40_Water_District_Map_Small.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/Zoning_Map_8x11.pdf",
+    "text": "Zoning map (PDF)",
+    "file": "data/city_files/O_Fallon/c0e83d_Zoning_Map_8x11.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/TDD_CID_Map_Small.pdf",
+    "text": "Local Finance Initiative Districts (TDDs, CIDs and TIFs) map (PDF)",
+    "file": "data/city_files/O_Fallon/b91a2a_TDD_CID_Map_Small.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/fc1fb4b531594651b286966ea13ea771": "Zoning & District Map",
+   "https://storymaps.arcgis.com/stories/379a854bc19d4245847107fe54be354e": "City Projects",
+   "https://ofallonmogis.maps.arcgis.com/apps/webappviewer/index.html?id=8d31b917f4d94b33be3c973522a725b9": "Zoning & District Map",
+   "https://experience.arcgis.com/experience/7265e8a18aaa43d38643d0ceba127400/": "See The Active Developments Map and Upcoming Public Hearings",
+   "https://www.arcgis.com/apps/instant/basic/index.html?appid=17921a002f2d4364bfdf52b4179d71ee": "Right-of-Way Boundary and Publicly Maintained Property Map",
+   "http://ofallonmogis.maps.arcgis.com/apps/webappviewer/index.html?id=52d9150699534444ac0926333c966b43": "Interactive map of O'Fallon's bikeable/walkable opportunities"
+  }
+ },
+ "Colonie": {
+  "files": [
+   {
+    "url": "https://colonie.org/documents/pressrelease/2026/Albany-Airport-Trail-Connector-Extension-Flyer.pdf",
+    "text": "See the Trail Connector flyer here",
+    "file": "data/city_files/Colonie/1a2712_Albany-Airport-Trail-Connector-Extension-Flyer.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/ourtown/maps/ZoningMap_withindex.pdf",
+    "text": "Town of Colonie Zoning Map with index",
+    "file": "data/city_files/Colonie/26731e_ZoningMap_withindex.pdf",
+    "rows": 6,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://colonie.org/ourtown/maps/StreetMap_withindex.pdf",
+    "text": "Official Highway Map",
+    "file": "data/city_files/Colonie/5c0a8c_StreetMap_withindex.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/TheCrossings_trailmap.pdf",
+    "text": "Download",
+    "file": "data/city_files/Colonie/0a9d5c_TheCrossings_trailmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/ColonieMohawkRiverPark.pdf",
+    "text": "Map",
+    "file": "data/city_files/Colonie/826e34_ColonieMohawkRiverPark.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/SchuylerFlattsPark.pdf",
+    "text": "Download",
+    "file": "data/city_files/Colonie/19e9aa_SchuylerFlattsPark.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/mohawkhudsonBikePath2016.pdf",
+    "text": "Download",
+    "file": "data/city_files/Colonie/b22c81_mohawkhudsonBikePath2016.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/WestAlbanyPark.pdf",
+    "text": "Map",
+    "file": "data/city_files/Colonie/61fcc3_WestAlbanyPark.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/NorthColonieSportsComplex.pdf",
+    "text": "Map",
+    "file": "data/city_files/Colonie/646c2d_NorthColonieSportsComplex.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/SouthColonieSportsComplex.pdf",
+    "text": "Map",
+    "file": "data/city_files/Colonie/76e71c_SouthColonieSportsComplex.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/MohawkRiverParkTrails.pdf",
+    "text": "Download",
+    "file": "data/city_files/Colonie/33239a_MohawkRiverParkTrails.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/events/Colonie-Historical-Society-2026-Major-General-Philip-Schuyler.pdf",
+    "text": "Major General Philip Schuyler and the American Invasion of Canada in 1775-1776 (DOWNLOAD FOR DETAILS)",
+    "file": "data/city_files/Colonie/f4185b_Colonie-Historical-Society-2026-Major-General-Philip-Schuyler.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/HistoricalSocietyMembershipform_fillable.pdf",
+    "text": "Colonie Historical Society Membership form",
+    "file": "data/city_files/Colonie/12cc94_HistoricalSocietyMembershipform_fillable.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2026-Vol-21-2-Abraham-Witbeck.pdf",
+    "text": "Abraham L. Witbeck Soldier in the Milita 1775 - 1779",
+    "file": "data/city_files/Colonie/6d1263_2026-Vol-21-2-Abraham-Witbeck.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2026-Vol-21-1-Brewster-Wagon-and-Carriage-Co.pdf",
+    "text": "Brewster Wagon and Carriage Co.",
+    "file": "data/city_files/Colonie/8b2121_2026-Vol-21-1-Brewster-Wagon-and-Carriage-Co.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2025-Vol-20-4-Veeder-Farm-and-Family.pdf",
+    "text": "Veeder Family and Farm",
+    "file": "data/city_files/Colonie/fac9f8_2025-Vol-20-4-Veeder-Farm-and-Family.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2025-Vol-20-3-Elizabeth-Ann-Lee.pdf",
+    "text": "Elizabeth Ann Lee Autobiography With Her Artwork",
+    "file": "data/city_files/Colonie/b307cf_2025-Vol-20-3-Elizabeth-Ann-Lee.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2025-Vol-20-2-Stepping-Back-to-Review-Our-Past.pdf",
+    "text": "Stepping Back to Review Our Past",
+    "file": "data/city_files/Colonie/30fcb9_2025-Vol-20-2-Stepping-Back-to-Review-Our-Past.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2025-Vol-20-1-Newtonville-Post-Office-History.pdf",
+    "text": "Newtonville Post Office History",
+    "file": "data/city_files/Colonie/1d7303_2025-Vol-20-1-Newtonville-Post-Office-History.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2024-Vol-19-3-Albany-County-Grant-Influenza.pdf",
+    "text": "Albany County Grant Influenza",
+    "file": "data/city_files/Colonie/a3a1a7_2024-Vol-19-3-Albany-County-Grant-Influenza.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2024-Vol-19-2-Vision!-Saving-the-Old-Turner-Farm-House.pdf",
+    "text": "Vision! Saving the Old Turner Farm House",
+    "file": "data/city_files/Colonie/fb87fd_2024-Vol-19-2-Vision_-Saving-the-Old-Turner-Farm-House.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2024-Vol-19-1-The-Future-of-Older-Farmhouses.pdf",
+    "text": "The Future of Older Farmhouses",
+    "file": "data/city_files/Colonie/90888f_2024-Vol-19-1-The-Future-of-Older-Farmhouses.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2023-Vol-18-4-Here-Today-Gone-Tomorrow.pdf",
+    "text": "Here Today....Gone Tomorrow - Historic Marker Signs and Sites",
+    "file": "data/city_files/Colonie/fc96ca_2023-Vol-18-4-Here-Today-Gone-Tomorrow.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2023-Vol-18-3-Middle-Class-Gilded-Age.pdf",
+    "text": "Middle Class âGuilded Age Homes\"",
+    "file": "data/city_files/Colonie/ba2e3e_2023-Vol-18-3-Middle-Class-Gilded-Age.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2023-Vol-18-2-The-Gilded-Colonie-Style.pdf",
+    "text": "The Guilded Age - Colonie Style",
+    "file": "data/city_files/Colonie/51fec4_2023-Vol-18-2-The-Gilded-Colonie-Style.pdf",
+    "rows": 17,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2023-Vol-18-1-Jefferson-Mayell-Who-Was-He.pdf",
+    "text": "Jefferson Mayell - Who Was He?",
+    "file": "data/city_files/Colonie/f8192e_2023-Vol-18-1-Jefferson-Mayell-Who-Was-He.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2021-Vol-17-1-A Trans-Atlantic-Mystery.pdf",
+    "text": "A Trans-Atlantic Mystery",
+    "file": "data/city_files/Colonie/9b8e84_2021-Vol-17-1-A_Trans-Atlantic-Mystery.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2021-Vol-16-4-Mr-R-Arthur-Johnson.pdf",
+    "text": "Mr. R. Arthur Johnson",
+    "file": "data/city_files/Colonie/e5c92c_2021-Vol-16-4-Mr-R-Arthur-Johnson.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2021-Vol-16-3-The-Homestead-Farm.pdf",
+    "text": "The Homestead Farm: The 2,500 Acre Farm of Stephen Van Rensselaer III",
+    "file": "data/city_files/Colonie/c07f35_2021-Vol-16-3-The-Homestead-Farm.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2021-Vol-16-2-Tobin's-First-Prize.pdf",
+    "text": "Tobin's \"First Prize\"",
+    "file": "data/city_files/Colonie/b7eb8f_2021-Vol-16-2-Tobin_s-First-Prize.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2021-Vol-16-1-Toxicity-of-Sacred-Ground.pdf",
+    "text": "Toxicity of Sacred Ground",
+    "file": "data/city_files/Colonie/c08307_2021-Vol-16-1-Toxicity-of-Sacred-Ground.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2020-Vol-15-4-McNutt-House.pdf",
+    "text": "The Nutshell",
+    "file": "data/city_files/Colonie/4b99e2_2020-Vol-15-4-McNutt-House.pdf",
+    "rows": 9,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2020-Vol-15-3-Littles-Lake.pdf",
+    "text": "Elizabeth W. C. Little and Little's Lake",
+    "file": "data/city_files/Colonie/ea4ba9_2020-Vol-15-3-Littles-Lake.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2020-Vol-15-2-The-Other-Schuyler-Mansion.pdf",
+    "text": "The Other Schuyler Mansion of Colonie",
+    "file": "data/city_files/Colonie/097c95_2020-Vol-15-2-The-Other-Schuyler-Mansion.pdf",
+    "rows": 15,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2020-Vol-15-1-Carlyle-Smith.pdf",
+    "text": "Full Circle! A Second Tribute to Colonie's Carlyle Smith",
+    "file": "data/city_files/Colonie/ab3da6_2020-Vol-15-1-Carlyle-Smith.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2018-Vol-14-4-Poor-John-Dennick.pdf",
+    "text": "The Cellar Hole of Poor John Dennick",
+    "file": "data/city_files/Colonie/055432_2018-Vol-14-4-Poor-John-Dennick.pdf",
+    "rows": 18,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2018-Vol-14-2-Louis-Menand.pdf",
+    "text": "\"The Grand Old Man\": Louis Menand (1807-1900)",
+    "file": "data/city_files/Colonie/9aba2c_2018-Vol-14-2-Louis-Menand.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2018-Vol-14-1-Man-Who-Wore-Many-Hats-Nordin-J-Shambrook.pdf",
+    "text": "The Man Who Wore Many Hats",
+    "file": "data/city_files/Colonie/bfdcd3_2018-Vol-14-1-Man-Who-Wore-Many-Hats-Nordin-J-Shambrook.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2017-Vol-13-3-Frederick-Cramer-House.pdf",
+    "text": "The Frederick Cramer House",
+    "file": "data/city_files/Colonie/c50322_2017-Vol-13-3-Frederick-Cramer-House.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/publications/2017,%20Vol%2013,%20No.%202,%20Apr-June%202017,%20Dutch%20Door%20at%20Schuyler%20Home.pdf",
+    "text": "The Dutch Door of the Schuyler Home at The Flatts",
+    "file": "data/city_files/Colonie/6eaf50_2017_20Vol_2013_20No._202_20Apr-June_202017_20Dutch_20Door_20at_20Schu",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/e295d53010fe48ec85ab5961c3831d2e": "See the Trail Connector Study website here",
+   "https://experience.arcgis.com/experience/b7bfb6c27c7744eeb105791fc2fd972d": "Report a Street Light out"
+  }
+ },
+ "Tartagal": {
+  "files": [],
+  "portals": {}
+ },
+ "Kalamazoo": {
+  "files": [
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/7/public-services/waste-amp-recycling/2026-recycling-schedule.pdf",
+    "text": "Recycling Map & Schedule (PDF) (PDF, 9MB)",
+    "file": "data/city_files/Kalamazoo/7bcad9_2026-recycling-schedule.pdf",
+    "rows": 83,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/public-services/waste-amp-recycling/2026-recycling-schedule_sp.pdf",
+    "text": "Recycling Map & Schedule in Spanish (PDF) (PDF, 9MB)",
+    "file": "data/city_files/Kalamazoo/d17fe2_2026-recycling-schedule_sp.pdf",
+    "rows": 83,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/public-services/waste-amp-recycling/recycling-info-card.pdf",
+    "text": "Click here to view Kalamazoo's Recycling Info Card",
+    "file": "data/city_files/Kalamazoo/a202e1_recycling-info-card.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/public-services/waste-amp-recycling/compostingguide.pdf",
+    "text": "Composting Guide (PDF, 621KB)",
+    "file": "data/city_files/Kalamazoo/dc9262_compostingguide.pdf",
+    "rows": 46,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/bylaws/hpc-bylaws.pdf",
+    "text": "Historic Preservation Commission Bylaws (PDF, 27KB)",
+    "file": "data/city_files/Kalamazoo/72cf11_hpc-bylaws.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/bylaws/kalamazoo-historic-district-commission.pdf",
+    "text": "Historic District Commission Bylaws (PDF, 152KB)",
+    "file": "data/city_files/Kalamazoo/81a3be_kalamazoo-historic-district-commission.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/4/applications-amp-forms/historic-district/historic-district-application-administrative-review2026fillable.pdf",
+    "text": "Historic District Application for Administrative Review (PDF, 302KB)",
+    "file": "data/city_files/Kalamazoo/41d656_historic-district-application-administrative-review2026fillable.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/3/applications-amp-forms/historic-district/historic-district-application-hearing2026fillable.pdf",
+    "text": "Historic District Application for Hearing (PDF, 314KB)",
+    "file": "data/city_files/Kalamazoo/7a27ec_historic-district-application-hearing2026fillable.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2026/2026-commercial-industrial-sales-listing.pdf",
+    "text": "2026 Commercial Industrial Sales Listing (PDF, 856KB)",
+    "file": "data/city_files/Kalamazoo/34af54_2026-commercial-industrial-sales-listing.pdf",
+    "rows": 227,
+    "bike_rows": 25
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2026/2026-land-tables-and-summaries.pdf",
+    "text": "2026 Land Tables and Summaries (PDF, 7MB)",
+    "file": "data/city_files/Kalamazoo/9033ad_2026-land-tables-and-summaries.pdf",
+    "rows": 33,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2026/2026-residential-sales-listing.pdf",
+    "text": "2026 Residential Sales Listing (PDF, 2MB)",
+    "file": "data/city_files/Kalamazoo/2f4ca9_2026-residential-sales-listing.pdf",
+    "rows": 1441,
+    "bike_rows": 90
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2026/2026-vacant-sale-listing.pdf",
+    "text": "2026 Vacant Sale Listing (PDF, 797KB)",
+    "file": "data/city_files/Kalamazoo/8a2b99_2026-vacant-sale-listing.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2025/2025-assessment-neighborhood-map.pdf",
+    "text": "2025 Assessment Neighborhood Map (PDF, 4MB)",
+    "file": "data/city_files/Kalamazoo/2a7b49_2025-assessment-neighborhood-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2025/2025-com-ind-ecf-analysis-summary.pdf",
+    "text": "2025 Commercial Industrial ECF Analysis Summary (PDF, 2MB)",
+    "file": "data/city_files/Kalamazoo/102205_2025-com-ind-ecf-analysis-summary.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2025/2025-commercial-industrial-sale-listing.pdf",
+    "text": "2025 Commercial Industrial Sale Listing (PDF, 249KB)",
+    "file": "data/city_files/Kalamazoo/c388a3_2025-commercial-industrial-sale-listing.pdf",
+    "rows": 279,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2025/2025-land-table-summary.pdf",
+    "text": "2025 Land Table Summary (PDF, 69KB)",
+    "file": "data/city_files/Kalamazoo/fd8ef9_2025-land-table-summary.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2025/2025-land-value-detail.pdf",
+    "text": "2025 Land Value Detail (PDF, 18MB)",
+    "file": "data/city_files/Kalamazoo/30536f_2025-land-value-detail.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2025/2025-residential-sale-listing.pdf",
+    "text": "2025 Residential Sale Listing (PDF, 905KB)",
+    "file": "data/city_files/Kalamazoo/54af9d_2025-residential-sale-listing.pdf",
+    "rows": 1440,
+    "bike_rows": 89
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2025/2025-vacant-sale-listing.pdf",
+    "text": "2025 Vacant Sale Listing (PDF, 199KB)",
+    "file": "data/city_files/Kalamazoo/4be5af_2025-vacant-sale-listing.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2024/2024-final-land-values.pdf",
+    "text": "2024 Final Land Values (PDF, 73KB)",
+    "file": "data/city_files/Kalamazoo/96d3e7_2024-final-land-values.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2024/ecf-analysis-combined.pdf",
+    "text": "2024 Economic Condition Factor Analysis (PDF, 13MB)",
+    "file": "data/city_files/Kalamazoo/d93905_ecf-analysis-combined.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2024/land-table-sales.pdf",
+    "text": "2024 Land Table Sales (PDF, 4MB)",
+    "file": "data/city_files/Kalamazoo/b03c9d_land-table-sales.pdf",
+    "rows": 766,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2024/2024-commercial-industrial-sales.pdf",
+    "text": "2024 Commercial Industrial Sales (PDF, 168KB)",
+    "file": "data/city_files/Kalamazoo/3734e6_2024-commercial-industrial-sales.pdf",
+    "rows": 447,
+    "bike_rows": 40
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2024/2024-residential-sales.pdf",
+    "text": "2024 Residential Sales (PDF, 1MB)",
+    "file": "data/city_files/Kalamazoo/f8e557_2024-residential-sales.pdf",
+    "rows": 1347,
+    "bike_rows": 94
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2024/2024-vacant-sales.pdf",
+    "text": "2024 Vacant Sales (PDF, 90KB)",
+    "file": "data/city_files/Kalamazoo/97aece_2024-vacant-sales.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2023/2023-kalamazoo-ecf.pdf",
+    "text": "2023 Economic Condition Factor (PDF, 2MB)",
+    "file": "data/city_files/Kalamazoo/60c34f_2023-kalamazoo-ecf.pdf",
+    "rows": 197,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2023/2023-kalamazoo-land-value.pdf",
+    "text": "2023 Land Value (PDF, 2MB)",
+    "file": "data/city_files/Kalamazoo/4b41d9_2023-kalamazoo-land-value.pdf",
+    "rows": 2145,
+    "bike_rows": 39
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2023/2023-sales-book-final-com-ind.pdf",
+    "text": "2023 Sales Book for Commercial and Industrial Properties (PDF, 1MB)",
+    "file": "data/city_files/Kalamazoo/be338b_2023-sales-book-final-com-ind.pdf",
+    "rows": 354,
+    "bike_rows": 29
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2023/2023-sales-book-final-res.pdf",
+    "text": "2023 Sales Book for Residential Properties (PDF, 3MB)",
+    "file": "data/city_files/Kalamazoo/3d77be_2023-sales-book-final-res.pdf",
+    "rows": 1324,
+    "bike_rows": 85
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2023/2023-sales-book-final-vacant.pdf",
+    "text": "2023 Sales Book for Vacant Properties (PDF, 952KB)",
+    "file": "data/city_files/Kalamazoo/aca3b1_2023-sales-book-final-vacant.pdf",
+    "rows": 34,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2022/residential-sales-listing-for-2022-assessments.pdf",
+    "text": "Residential Sales Listing for Assessments for 2022 Assessments (PDF, 1MB)",
+    "file": "data/city_files/Kalamazoo/427c60_residential-sales-listing-for-2022-assessments.pdf",
+    "rows": 1361,
+    "bike_rows": 89
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2022/commercial-and-industrial-sales-listing-for-2022-assessments.pdf",
+    "text": "Commercial and Industrial Sales Listing for 2022 Assessments (PDF, 87KB)",
+    "file": "data/city_files/Kalamazoo/fd05fc_commercial-and-industrial-sales-listing-for-2022-assessments.pdf",
+    "rows": 137,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2022/vacant-land-sales-listing-for-2022-assessments.pdf",
+    "text": "Vacant Land Sales Listing for 2022 Assessments (PDF, 77KB)",
+    "file": "data/city_files/Kalamazoo/8abfee_vacant-land-sales-listing-for-2022-assessments.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/plans-amp-reports/assessment-maps-and-sales-listings/2022/2022-assessment-neighborhood-map.pdf",
+    "text": "2022 Assessment Neighborhood Map (PDF, 2MB)",
+    "file": "data/city_files/Kalamazoo/c01525_2022-assessment-neighborhood-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kalamazoocity.org/files/assets/public/v/1/projects/srts-maple-middle-report-out-august-2026.pdf",
+    "text": "August 20 Neighborhood Meeting Presentation Slides (PDF, 2MB)",
+    "file": "data/city_files/Kalamazoo/f9fbcf_srts-maple-middle-report-out-august-2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.kalamazoocity.org/portal/apps/webappviewer/index.html?id=ea78f25c473548779cd26b837e7fd16f": "View Historic Districts and Places on GIS",
+   "https://gis.kalamazoocity.org/portal/apps/experiencebuilder/experience/?id=818e6c3e49994656a7517e7829c99ea0": "View Progress Map",
+   "https://gis.kalamazoocity.org/portal/apps/webappviewer/index.html?id=1b67f067294349dfb17dc0709a47b1b9": "View Marihuana Businesses and Protect Land Uses"
+  }
+ },
+ "Rogers": {
+  "files": [],
+  "portals": {}
+ },
+ "Delray Beach": {
+  "files": [],
+  "portals": {}
+ },
+ "La Habra": {
+  "files": [],
+  "portals": {}
+ },
+ "North Miami": {
+  "files": [
+   {
+    "url": "https://www.miamidade.gov/transit/library/pdfs/misc/STS_Application.pdf",
+    "text": "Print and complete the application",
+    "file": "data/city_files/North_Miami/075fd0_STS_Application.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://survey123.arcgis.com/share/2d90fb34930a49308b8546e62723d806?portalUrl=https://king.maps.arcgis.com": "Take the Survey",
+   "https://experience.arcgis.com/experience/5a1da09e19f2496f89d1593acdc48df3/": "Water Service Line Inventory Interactive Map"
+  }
+ },
+ "Wylie": {
+  "files": [
+   {
+    "url": "https://www.wylietexas.gov/Departments/ParksRecreation/Parks/Wylie Wayfinding Graphic (ADA Ready).pdf?t=20260320111523472",
+    "text": "Municipal Trail Complex Wayfinding Graphic",
+    "file": "data/city_files/Wylie/6e4be6_Wylie_Wayfinding_Graphic_ADA_Ready_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.wylietexas.gov/Wylie%20Wayfinding%20Graphic.pdf",
+    "text": "",
+    "file": "data/city_files/Wylie/a460e1_Wylie_20Wayfinding_20Graphic.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wylietexas.gov/Departments/ParksRecreation/Parks/Kreymer Estates Layout (Vector) (ADA Ready).pdf?t=20260320111559969",
+    "text": "Trail Map",
+    "file": "data/city_files/Wylie/0d357c_Kreymer_Estates_Layout_Vector_ADA_Ready_.pdf",
+    "rows": 20,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.wylietexas.gov/Departments/PublicWorks/Stormwater/General Permit To Discharge Under The Texas Pollutant Discharge Elimination System.pdf?t=20240418100759126",
+    "text": "General Permit TXR040000",
+    "file": "data/city_files/Wylie/5742f3_General_Permit_To_Discharge_Under_The_Texas_Pollutant_Discharge_Elimin",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wylietexas.gov/Kreymer Estates Layout (Vector).pdf?t=202005181455580",
+    "text": "Click here for the trail map",
+    "file": "data/city_files/Wylie/6ee49f_Kreymer_Estates_Layout_Vector_.pdf",
+    "rows": 19,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.wylietexas.gov/Wylie Wayfinding Graphic.pdf?t=201709071409180",
+    "text": "Municipal Complex Trail",
+    "file": "data/city_files/Wylie/fb8550_Wylie_Wayfinding_Graphic.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://wylietx.maps.arcgis.com/home/index.html": "",
+   "https://wylietx.maps.arcgis.com/apps/MinimalGallery/index.html?appid=05c7374490c841e5ba696ab3e6761a25": "",
+   "https://wylietx.maps.arcgis.com": "City of Wylie Online Mapping Portal",
+   "https://gisdata-wylietx.opendata.arcgis.com/": "here",
+   "https://gis.bisclient.com/collincad/": "Collin Central Appraisal District Interactive Map"
+  }
+ },
+ "Rocky Mount": {
+  "files": [],
+  "portals": {}
+ },
+ "Alushta city council": {
+  "files": [],
+  "portals": {}
+ },
+ "Lincoln": {
+  "files": [],
+  "portals": {}
+ },
+ "Monroe": {
+  "files": [],
+  "portals": {}
+ },
+ "Urbandale": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/3505e3771ebb41f999b1d1d6417f0640": "Sidewalk Repair Response Online Form",
+   "https://experience.arcgis.com/experience/a48d8cbc88cb4e469ddd881c0f4cff94": "Sidewalk Deficiency Viewer"
+  }
+ },
+ "Concord": {
+  "files": [],
+  "portals": {
+   "https://gis.concordnh.gov/arcgis/publicwebgis/": "interactive viewer",
+   "http://gis.concordnh.gov/ARCGIS/PUBLICWEBGIS/": "Create your own PDF map with Web GIS"
+  }
+ },
+ "Shoranur Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Aventura": {
+  "files": [],
+  "portals": {}
+ },
+ "Rawson": {
+  "files": [
+   {
+    "url": "https://apiadmin.rawson.gov.ar/circuito_historico/Folleto_Circuito_Historico.pdf",
+    "text": "Descargar Folleto (PDF)",
+    "file": "data/city_files/Rawson/c37d37_Folleto_Circuito_Historico.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://apiadmin.rawson.gov.ar/circuito_historico/plano_turistico.pdf",
+    "text": "Descargar Plano (PDF)",
+    "file": "data/city_files/Rawson/562f92_plano_turistico.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Rome": {
+  "files": [],
+  "portals": {}
+ },
+ "Oak Creek": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/7a487c5a80a4406fa5bb607b1d0d1402/": "Report an Issue",
+   "https://experience.arcgis.com/experience/0e4ac8a8022b4622930be8e2f70d697c": "Property Information Portal"
+  }
+ },
+ "Tunceli": {
+  "files": [],
+  "portals": {}
+ },
+ "Valparaiso": {
+  "files": [],
+  "portals": {
+   "https://gisvalpo.maps.arcgis.com/apps/dashboards/8fdadef9750c4f71a4efaa42941ef134": "Paving & Infrastructure Improvements",
+   "https://experience.arcgis.com/experience/89db2e2e9bd84d0c88de0cff5ba47bfa": "Valparaiso Geographic Information System (GIS)",
+   "https://portercogov.maps.arcgis.com/home/index.html": "Porter County Geographic Information System (GIS) map",
+   "https://gisvalpo.maps.arcgis.com/apps/instant/lookup/index.html?appid=1247845632fe40db83b0623369eb77d6": "INTERACTIVE ADDRESS LOOKUP MAP",
+   "https://survey123.arcgis.com/share/448bedf724484e67bdbdcc4baae806e9": "Report a Concern"
+  }
+ },
+ "Windsor": {
+  "files": [],
+  "portals": {}
+ },
+ "West Bend": {
+  "files": [
+   {
+    "url": "https://westbendwi.gov/Downtown-BID/Downtown Parking Ordinance Handout.pdf?t=202301121039290",
+    "text": "Click here to download the Downtown Parking Ordinance.",
+    "file": "data/city_files/West_Bend/31e580_Downtown_Parking_Ordinance_Handout.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://gis.westbendwi.gov/portal/apps/instant/basic/index.html?appid=db19663cb1954799a8c9159d2cc0052f": "Current Residential Development"
+  }
+ },
+ "Newington": {
+  "files": [],
+  "portals": {
+   "https://maps-newington.hub.arcgis.com/": "Town of Newington GIS Hub",
+   "https://experience.arcgis.com/experience/b7779b992f0948a7b3ff0e72fc8e3c13": "Park Finder",
+   "https://experience.arcgis.com/experience/f9919d5a5d2e4947931e8160a475222a": "Find Your Polling Place",
+   "https://experience.arcgis.com/experience/a5e13019cc8e4601b716f9466329b7d3": "CBYD Stormwater Viewer",
+   "https://experience.arcgis.com/experience/e616b62f3d9c4db488f9bd8484b6529e": "2025 Revaluation Data Platform",
+   "https://experience.arcgis.com/experience/0967a704840046188f89a5d8480bef4d": "Crime and Safety Portal",
+   "https://crcog.maps.arcgis.com/apps/webappviewer/index.html?id=ed798533e6fd4304b2bef1f28e95c06f": "Capitol Region COG Web GIS",
+   "https://connecticut-ctdot.opendata.arcgis.com/": "CT DOT Transportation Mapping",
+   "https://data.ct.gov/": "CT Open Data",
+   "http://ctgis.uconn.edu/": "CT GIS User to User Network"
+  }
+ },
+ "Kalpetta Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Enterprise": {
+  "files": [],
+  "portals": {}
+ }
+}
