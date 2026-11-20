@@ -58,7 +58,9 @@ def mymaps(s):
             data = z.read([n for n in z.namelist() if n.endswith('.kml')][0])
         if data.lstrip()[:5] in (b'<?xml', b'<kml ') or b'<kml' in data[:300]:
             break
-        print('mymaps', url, r.status_code, r.headers.get('content-type'), data[:120])
+        print('mymaps', url, r.status_code, r.headers.get('content-type'), data[:80])
+    else:
+        return mymaps_embed(s)
     root = ET.fromstring(data)
     ns = {'k': 'http://www.opengis.net/kml/2.2'}
     out = []
@@ -79,6 +81,28 @@ def mymaps(s):
             t['name'] = name[:80]
         t['source'] = f"City map: {s['city']}"
         out.append([f"pm/{s['id']}-{i}", round(lat, 6), round(lon, 6), t])
+    return out
+
+
+def mymaps_embed(s):
+    """KML download switched off by the map owner: read the points from the embed page (_pageData)."""
+    r = requests.get('https://www.google.com/maps/d/embed', params={'mid': s['mid']}, headers=UA, timeout=120,
+                     cookies={'CONSENT': 'YES+cb'})
+    m = re.search(r'var _pageData = "(.*?)";', r.text, re.S)
+    if not m:
+        print('embed: no _pageData', r.status_code)
+        return []
+    raw = json.loads('"' + m.group(1) + '"')
+    out, seen = [], set()
+    # placemarks look like  [[[lat,lng]]] ... ["name"] near them
+    for i, mm in enumerate(re.finditer(r'\[\[\[(-?\d{1,2}\.\d+),(-?\d{2,3}\.\d+)\]\]', raw)):
+        lat, lon = float(mm.group(1)), float(mm.group(2))
+        if not (17 <= lat <= 72 and -180 <= lon <= -64) or (round(lat, 6), round(lon, 6)) in seen:
+            continue
+        seen.add((round(lat, 6), round(lon, 6)))
+        out.append([f"pm/{s['id']}-{i}", round(lat, 6), round(lon, 6),
+                    {'amenity': 'bicycle_parking', 'source': f"City map: {s['city']}"}])
+    print('embed points', len(out))
     return out
 
 
