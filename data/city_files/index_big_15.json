@@ -1,0 +1,1487 @@
+{
+ "Fresno CA": {
+  "files": [],
+  "portals": {}
+ },
+ "Glendale AZ": {
+  "files": [],
+  "portals": {
+   "https://www.glendaleaz.gov/Government/Open-Government/Open-Data": "Open Data"
+  }
+ },
+ "Cook County": {
+  "files": [
+   {
+    "url": "https://cookcountyil.gov/sites/g/files/ywwepo161/files/documents/2023-04/Cook%20County%20Bike%20Plan%202023%20Final.pdf",
+    "text": "Cook County Bike Plan 2023 (23.12 MB)",
+    "file": "data/city_files/Cook_County/a60bdb_Cook_20County_20Bike_20Plan_202023_20Final.pdf",
+    "rows": 156,
+    "bike_rows": 69
+   },
+   {
+    "url": "https://www.cookcountyil.gov/sites/g/files/ywwepo161/files/documents/2026-08/Cook%20County%20Bike%20Share%20Feasibility%20Study%20Report.pdf",
+    "text": "Cook County Bike Share Feasibility Study Report (13.55 MB)",
+    "file": "data/city_files/Cook_County/f5ac83_Cook_20County_20Bike_20Share_20Feasibility_20Study_20Report.pdf",
+    "rows": 206,
+    "bike_rows": 38
+   },
+   {
+    "url": "https://cookcountyil.gov/sites/g/files/ywwepo161/files/documents/2026-08/Cook%20County%20Bike%20Share%20Feasibility%20Study%20Report.pdf",
+    "text": "Cook County Bike Share Feasibility Study Report (13.55 MB)",
+    "file": "data/city_files/Cook_County/9e0347_Cook_20County_20Bike_20Share_20Feasibility_20Study_20Report.pdf",
+    "rows": 206,
+    "bike_rows": 38
+   },
+   {
+    "url": "https://www.cookcountyil.gov/sites/g/files/ywwepo161/files/documents/2023-04/Cook%20County%20Bike%20Plan%202023%20Final.pdf",
+    "text": "Cook County Bike Plan 2023 (23.12 MB)",
+    "file": "data/city_files/Cook_County/a9c80b_Cook_20County_20Bike_20Plan_202023_20Final.pdf",
+    "rows": 156,
+    "bike_rows": 69
+   },
+   {
+    "url": "https://cookcountyil.gov/sites/g/files/ywwepo161/files/2019_cook_county_highway_system.pdf",
+    "text": "Cook County System Map",
+    "file": "data/city_files/Cook_County/3f8a61_2019_cook_county_highway_system.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cookcountyil.gov/sites/g/files/ywwepo161/files/2019_cook_county_highway_system.pdf",
+    "text": "Cook County System Map",
+    "file": "data/city_files/Cook_County/cfcdf1_2019_cook_county_highway_system.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cookcountyil.gov/sites/g/files/ywwepo161/files/cook_county_highway_1919small.pdf",
+    "text": "Map of Cook County from 1919 (8.12 MB)",
+    "file": "data/city_files/Cook_County/31389c_cook_county_highway_1919small.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://hub-cookcountyil.opendata.arcgis.com/": "Cook Central",
+   "mailto:opendata@cookcountyil.gov": "Contact",
+   "https://hub-cookcountyil.opendata.arcgis.com/datasets/66efc287cea74ac3abc45327de184736_13/explore": "Bicycle Level of Traffic Stress",
+   "https://hub-cookcountyil.opendata.arcgis.com/datasets/58249cdf17f24799a11a99fcfbffb18a_11/explore": "On-Street Bicycle Facilities",
+   "https://hub-cookcountyil.opendata.arcgis.com/datasets/900b69139e874c8f823744d8fd5b71eb_10/explore": "Off-Street Bicycle Facilities",
+   "https://hub-cookcountyil.opendata.arcgis.com/datasets?dataset&q=road": "Cook Central",
+   "https://cookcounty.data.socrata.com/stories/s/Department-of-Transportation-and-Highways/v5fa-t2tk": "Performance Management Dashboard"
+  }
+ },
+ "Hennepin County": {
+  "files": [
+   {
+    "url": "https://hennepin.us/-/media/Hennepin-Headless/Hennepin-Gov/services/environment/at-home-organics-recycling-guide.pdf?rev=be0118a0032d4043b265992f3854914c&hash=C438A999AC42C382D177817C43B7051C",
+    "text": "Organics recycling guide (PDF, 1MB)",
+    "file": "data/city_files/Hennepin_County/6cb70b_at-home-organics-recycling-guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Essex County": {
+  "files": [],
+  "portals": {}
+ },
+ "Kent County": {
+  "files": [],
+  "portals": {}
+ },
+ "Spokane County": {
+  "files": [],
+  "portals": {}
+ },
+ "Hampden County": {
+  "files": [
+   {
+    "url": "https://pvpc.org/wp-content/uploads/2026/08/FFY2027to2031Transit-TIP-Tables-Endorsed-May-2026.pdf",
+    "text": "",
+    "file": "data/city_files/Hampden_County/d06314_FFY2027to2031Transit-TIP-Tables-Endorsed-May-2026.pdf",
+    "rows": 292,
+    "bike_rows": 203
+   },
+   {
+    "url": "https://pvpc.org/wp-content/uploads/2025/01/FFY26-30TransitTIP-Endorsed-May272025.pdf",
+    "text": "",
+    "file": "data/city_files/Hampden_County/50d0df_FFY26-30TransitTIP-Endorsed-May272025.pdf",
+    "rows": 420,
+    "bike_rows": 309
+   },
+   {
+    "url": "https://pvpc.org/wp-content/uploads/2025/05/FFY2026-2030-Transit-Preffered-List-of-Projects-3312025.pdf",
+    "text": "",
+    "file": "data/city_files/Hampden_County/c4e79f_FFY2026-2030-Transit-Preffered-List-of-Projects-3312025.pdf",
+    "rows": 34,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://pvpc.org/wp-content/uploads/2025/05/FFY-2025-Transit-Adjustment-3-25-2025.pdf",
+    "text": "",
+    "file": "data/city_files/Hampden_County/f691ca_FFY-2025-Transit-Adjustment-3-25-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://pvpc.org/wp-content/uploads/2025/05/FFY-2025-2029-Transit-Tables-February-2025.pdf",
+    "text": "",
+    "file": "data/city_files/Hampden_County/79446e_FFY-2025-2029-Transit-Tables-February-2025.pdf",
+    "rows": 360,
+    "bike_rows": 243
+   },
+   {
+    "url": "https://pvpc.org/wp-content/uploads/2025/05/Draft-Transit-TIP-2025-2029-April-23-2024.pdf",
+    "text": "",
+    "file": "data/city_files/Hampden_County/e53757_Draft-Transit-TIP-2025-2029-April-23-2024.pdf",
+    "rows": 394,
+    "bike_rows": 292
+   }
+  ],
+  "portals": {
+   "https://pvpc.maps.arcgis.com/home/index.html": "Open Website",
+   "https://storymaps.arcgis.com/stories/68b2565aaf2842c6b1b02210666e367d": "Story Map",
+   "https://pvpc.maps.arcgis.com/apps/dashboards/8da09ed612874979b2ee4fe30e123134": "Open Website"
+  }
+ },
+ "Manatee County": {
+  "files": [
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/route-75-beach-connexion-brochure.pdf",
+    "text": "MCAT Route 75 Beach ConneXion Brochure",
+    "file": "data/city_files/Manatee_County/320865_route-75-beach-connexion-brochure.pdf",
+    "rows": 40,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-304-brochure-9-18-2024.pdf",
+    "text": "MCAT Route 304 Brochure",
+    "file": "data/city_files/Manatee_County/4c195c_mcat-route-304-brochure-9-18-2024.pdf",
+    "rows": 46,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-201-brochure_9-18-2024.pdf",
+    "text": "MCAT Route 201 Brochure",
+    "file": "data/city_files/Manatee_County/200ca9_mcat-route-201-brochure_9-18-2024.pdf",
+    "rows": 21,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-99-brochure-12-2-2023.pdf",
+    "text": "MCAT Route 99 Brochure",
+    "file": "data/city_files/Manatee_County/5c1ce4_mcat-route-99-brochure-12-2-2023.pdf",
+    "rows": 69,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-203-brochure_10-26-2022.pdf",
+    "text": "MCAT Route 203 Brochure",
+    "file": "data/city_files/Manatee_County/c5d288_mcat-route-203-brochure_10-26-2022.pdf",
+    "rows": 17,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-1-brochure-10-25-2022-revised.pdf",
+    "text": "MCAT Route 1 Brochure",
+    "file": "data/city_files/Manatee_County/1d8cb9_mcat-route-1-brochure-10-25-2022-revised.pdf",
+    "rows": 29,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-8-brochure-9-18-2024a1c98051-3b5d-41b1-8871-ceb530e3cf49.pdf",
+    "text": "MCAT Route 8 Brochure",
+    "file": "data/city_files/Manatee_County/9cabaa_mcat-route-8-brochure-9-18-2024a1c98051-3b5d-41b1-8871-ceb530e3cf49.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-4-brochure_9-17-2024.pdf",
+    "text": "MCAT Route 4 Brochure",
+    "file": "data/city_files/Manatee_County/d0fd1a_mcat-route-4-brochure_9-17-2024.pdf",
+    "rows": 45,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-5_ami-trolley-brochure_10-2-2024.pdf",
+    "text": "MCAT Route 5: AMI Trolley Brochure",
+    "file": "data/city_files/Manatee_County/7b2fd1_mcat-route-5_ami-trolley-brochure_10-2-2024.pdf",
+    "rows": 48,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-3-brochure-9-18-2024.pdf",
+    "text": "MCAT Route 3 Brochure",
+    "file": "data/city_files/Manatee_County/94fd91_mcat-route-3-brochure-9-18-2024.pdf",
+    "rows": 43,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-6-brochure-9-18-2024.pdf",
+    "text": "MCAT Route 6 Brochure",
+    "file": "data/city_files/Manatee_County/06bb65_mcat-route-6-brochure-9-18-2024.pdf",
+    "rows": 42,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-2-brochure-10-3-2024-revised.pdf",
+    "text": "MCAT Route 2 Brochure",
+    "file": "data/city_files/Manatee_County/d286d9_mcat-route-2-brochure-10-3-2024-revised.pdf",
+    "rows": 47,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-13-brochure-9-18-2024.pdf",
+    "text": "MCAT Route 13 Brochure",
+    "file": "data/city_files/Manatee_County/76acc2_mcat-route-13-brochure-9-18-2024.pdf",
+    "rows": 24,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-12-brochure-10-26-2022.pdf",
+    "text": "MCAT Route 12 Brochure",
+    "file": "data/city_files/Manatee_County/505f6e_mcat-route-12-brochure-10-26-2022.pdf",
+    "rows": 27,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-16-brochure-12-2-2023.pdf",
+    "text": "MCAT Route 16 Brochure",
+    "file": "data/city_files/Manatee_County/fff6d3_mcat-route-16-brochure-12-2-2023.pdf",
+    "rows": 30,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/mcat-documents/mcat-route-documents/mcat-route-9-brochure-10-26-2022.pdf",
+    "text": "MCAT Route 9 Brochure",
+    "file": "data/city_files/Manatee_County/3066ed_mcat-route-9-brochure-10-26-2022.pdf",
+    "rows": 27,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/utilities-documents/commercial-waste-and-recycling/recycle_collection_days-map.pdf",
+    "text": "Recycling Collection Days Map",
+    "file": "data/city_files/Manatee_County/305a59_recycle_collection_days-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/development-services-department-documents/development-services-department-documents/planning/tcea---14th-st---map-i.pdf",
+    "text": "TCEA - 14th St - Map I",
+    "file": "data/city_files/Manatee_County/0aba69_tcea---14th-st---map-i.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/development-services-department-documents/development-services-department-documents/planning/tcea---south-county---map-j.pdf",
+    "text": "TCEA - South County - Map J",
+    "file": "data/city_files/Manatee_County/ddb0ff_tcea---south-county---map-j.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/development-services-department-documents/development-services-department-documents/planning/map_5a__existingroads_2022.pdf",
+    "text": "Map_5A__ExistingRoads_2022",
+    "file": "data/city_files/Manatee_County/f395b2_map_5a__existingroads_2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/development-services-department-documents/development-services-department-documents/planning/map_5f__sis_intermodal_2022.pdf",
+    "text": "Map_5F__SIS_Intermodal_2022",
+    "file": "data/city_files/Manatee_County/25159f_map_5f__sis_intermodal_2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/development-services-department-documents/development-services-department-documents/planning/map_5e_controlledaccess_2022.pdf",
+    "text": "Map_5E_ControlledAccess_2022",
+    "file": "data/city_files/Manatee_County/a02c14_map_5e_controlledaccess_2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/development-services-department-documents/development-services-department-documents/planning/map_5d__numoflanes2022.pdf",
+    "text": "Map_5D__NumOfLanes2022",
+    "file": "data/city_files/Manatee_County/fac132_map_5d__numoflanes2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/development-services-department-documents/development-services-department-documents/planning/map_5c__rightofway_2022.pdf",
+    "text": "Map_5C__RightOfWay_2022",
+    "file": "data/city_files/Manatee_County/faca85_map_5c__rightofway_2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mymanatee.org/media/docs/default-source/development-services-department-documents/development-services-department-documents/planning/map_5b_func_class_2022.pdf",
+    "text": "Map_5B_Func_Class_2022",
+    "file": "data/city_files/Manatee_County/1520a4_map_5b_func_class_2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://capital-improvement-program-manateegis.hub.arcgis.com/": "Capital Improvement Dashboard",
+   "https://mymanatee.org/services-and-amenities/service-listing/service-details/esri-open-data-portal": "Download Data: ESRI Open Data Portal",
+   "https://public-works-standards-public-manateegis.hub.arcgis.com/": "",
+   "https://experience.arcgis.com/experience/11694ff3152049f2bc9ac69e4ef45aa3": "Veteran Resource Locator Map",
+   "https://public-manateegis.opendata.arcgis.com/pages/popular-downloads": "Download GIS Data",
+   "https://public-manateegis.opendata.arcgis.com/pages/interactive-maps": "Interactive Maps",
+   "https://public-manateegis.opendata.arcgis.com/pages/storymaps": "Manatee County Story Maps",
+   "https://pavement-management-manateegis.hub.arcgis.com/": "Pavement Management Program Hub Site",
+   "https://manateegis.maps.arcgis.com/sharing/rest/content/items/49587d0bbd36442795b8d7e9e495bb92/data": "Public Works Strategic Plan",
+   "https://trailer-estates-manateegis.hub.arcgis.com/": "Information about the Trailer Estates Sewer Improvements Project.",
+   "https://manatee-county-trailways-manateegis.hub.arcgis.com/": "Information about Manatee County Trailways.",
+   "https://myakka-road-clay-gully-road-repairs-manateegis.hub.arcgis.com/": "Information about the Myakka / Clay Gully Road Repairs Project"
+  }
+ },
+ "Somerset County": {
+  "files": [],
+  "portals": {}
+ },
+ "Gloucester County": {
+  "files": [],
+  "portals": {}
+ },
+ "Madison": {
+  "files": [
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/madison/MadisonMap_FINAL_2020_e8538224-2cc8-42f4-b435-e6447bec9529.pdf",
+    "text": "Visitor Map (PDF)",
+    "file": "data/city_files/Madison/ed6ebd_MadisonMap_FINAL_2020_e8538224-2cc8-42f4-b435-e6447bec9529.pdf",
+    "rows": 58,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/madison/DCRA_Terminal_Map_127ea95a-db22-4119-b37c-80ec0c7040e4.pdf",
+    "text": "View Terminal Map",
+    "file": "data/city_files/Madison/da95b2_DCRA_Terminal_Map_127ea95a-db22-4119-b37c-80ec0c7040e4.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/madison/DCRA_Parking_Map_72e19b76-6d1b-44ab-982e-2245bcad430e.pdf",
+    "text": "View Parking Map",
+    "file": "data/city_files/Madison/699489_DCRA_Parking_Map_72e19b76-6d1b-44ab-982e-2245bcad430e.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://arboretum.wisc.edu/content/uploads/2020/03/NPG-map-2019_web.pdf",
+    "text": "Wisconsin Native Plant Garden",
+    "file": "data/city_files/Madison/68f267_NPG-map-2019_web.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cityofmadison.maps.arcgis.com/apps/webappviewer/index.html?id=cb7a2e78477044c19bf6a5eaa1820e38": "Low-Stress Bike Route Finder"
+  }
+ },
+ "Norfolk": {
+  "files": [
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/AICUZ.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/47c824_AICUZ.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/annexation map.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/da9012_annexation_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/CellTowers.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/44f3be_CellTowers.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/censustracts.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/9da5b4_censustracts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/CivicLeaguesNEW.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/1eb4ca_CivicLeaguesNEW.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/EnterpriseZones.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/7042a9_EnterpriseZones.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/FireStationMap.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/10c3b9_FireStationMap.pdf",
+    "rows": 24,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/Flood Insurance Rate Map.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/13f319_Flood_Insurance_Rate_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/ReportedFloodedStreets.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/8cb09c_ReportedFloodedStreets.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/Landmarks.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/7ca704_Landmarks.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/Planning Districts.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/bac029_Planning_Districts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/Precincts and Polling Locations.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/d99852_Precincts_and_Polling_Locations.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/Recreation Centers.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/5bbe83_Recreation_Centers.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/Schools.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/69257d_Schools.pdf",
+    "rows": 48,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/AttendanceZonesElementarySchool.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/6edc20_AttendanceZonesElementarySchool.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/AttendanceZonesMiddleSchool.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/609f32_AttendanceZonesMiddleSchool.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/AttendanceZonesHighSchool.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/7a1272_AttendanceZonesHighSchool.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/StreetMap.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/d9c901_StreetMap.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/Superward_New_Esize.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/7ce6cb_Superward_New_Esize.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/US_Congressional_NEW.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/12260f_US_Congressional_NEW.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/Virginia House of Delegates New.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/d16bd3_Virginia_House_of_Delegates_New.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/Senate_Districts_New_Esize.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/821964_Senate_Districts_New_Esize.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/Ward_NEW_Esize.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/cf37ae_Ward_NEW_Esize.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gisshare.norfolk.gov/mapgallery/pdf/ZipCode_New -large.pdf",
+    "text": "",
+    "file": "data/city_files/Norfolk/02244c_ZipCode_New_-large.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dhr.virginia.gov/wp-content/uploads/2023/03/122-0060_West_Freemason_Street_Area_HD_2024_Update_NRHP_FINAL.pdf",
+    "text": "Resurvey of West Freemason Historic District",
+    "file": "data/city_files/Norfolk/4d4b7a_122-0060_West_Freemason_Street_Area_HD_2024_Update_NRHP_FINAL.pdf",
+    "rows": 218,
+    "bike_rows": 9
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/1d1317f807d048b5a853e271441b93d9/as": "Map of Parking Garages & Lots",
+   "https://data.norfolk.gov/Government/Parking-Citations/ei2q-6g8n": "Open Data - Parking Citations",
+   "https://data.norfolk.gov/Permits/Parking-Permits/v6nf-f84b": "Open Data - Parking Permits",
+   "https://data.norfolk.gov/": "Norfolk Open Data",
+   "https://norfolkgisdata-orf.opendata.arcgis.com/": "Norfolk Open GIS Data",
+   "https://data.norfolk.gov/stories/s/gy6a-bfpk": "Discover",
+   "https://data.norfolk.gov/stories/s/pjhy-b7vz": "here",
+   "https://data.norfolk.gov/browse?federation_filter=1370&limitTo=datasets": "Click here",
+   "mailto:opendata@norfolk.gov": "OpenData@norfolk.gov",
+   "https://norfolk.gov/3885/Open-Data-Norfolk": "Open Data Norfolk",
+   "http://data.norfolk.gov/": "Open Data Portal",
+   "https://data.norfolk.gov/Real-Estate/Norfolk-Master-Street-List/yfza-ryvv/about_data": "Street Index Documents"
+  }
+ },
+ "Babylon": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/234ae452eb13472da9536be8b9c5daba?portalUrl=https://townofbabylon.maps.arcgis.com": "this online form"
+  }
+ },
+ "Yuma County": {
+  "files": [],
+  "portals": {}
+ },
+ "Vancouver": {
+  "files": [
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2026/10/Downtown-Access-Mobility-Plan_2025.pdf",
+    "text": "Parking Plan",
+    "file": "data/city_files/Vancouver/f7f05f_Downtown-Access-Mobility-Plan_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2026/04/Parking-Ticket-Appeal-Form-2026.pdf",
+    "text": "appeal form",
+    "file": "data/city_files/Vancouver/f4a4de_Parking-Ticket-Appeal-Form-2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2026/01/Waterfront-Park-Reservation-Packet.pdf",
+    "text": "2026 Vancouver Waterfront Park Rental Rates",
+    "file": "data/city_files/Vancouver/b81abe_Waterfront-Park-Reservation-Packet.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofvancouver.us/wp-content/uploads/2023/08/Culture-Arts-and-Heritage-Plan-2018-FINAL-sm.pdf",
+    "text": "Culture, Arts and Heritage Plan",
+    "file": "data/city_files/Vancouver/4eed87_Culture-Arts-and-Heritage-Plan-2018-FINAL-sm.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2026/04/Carpool-Parking-Application-2026.pdf",
+    "text": "Carpool Parking Application",
+    "file": "data/city_files/Vancouver/464657_Carpool-Parking-Application-2026.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2026/03/Off-Street-Terms-and-Conditions.pdf",
+    "text": "Off-street Parking Terms and Conditions",
+    "file": "data/city_files/Vancouver/caf074_Off-Street-Terms-and-Conditions.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2026/04/Parking-Permit-Application-2026.pdf",
+    "text": "Parking Permit Application",
+    "file": "data/city_files/Vancouver/6b3029_Parking-Permit-Application-2026.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityofvancouver.us/wp-content/uploads/2026/04/ACH-Debit-Authorization-Form-Parking-2026.pdf",
+    "text": "ACH Debit Authorization Form",
+    "file": "data/city_files/Vancouver/47dda6_ACH-Debit-Authorization-Form-Parking-2026.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofvancouver.us/wp-content/uploads/2023/05/lincoln_tree_walk.pdf",
+    "text": "Lincoln Neighborhood tree map",
+    "file": "data/city_files/Vancouver/d4a0e1_lincoln_tree_walk.pdf",
+    "rows": 38,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://cityofvancouver.us/wp-content/uploads/2023/05/parkside_parkway_east_tree_tour_map.pdf",
+    "text": "Parkside and Parkway East Neighborhoods tree tour map",
+    "file": "data/city_files/Vancouver/2f6b50_parkside_parkway_east_tree_tour_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofvancouver.us/wp-content/uploads/2023/05/harney_heights_tree_tour_map.pdf",
+    "text": "Harney Heights Neighborhood tree tour map",
+    "file": "data/city_files/Vancouver/dce430_harney_heights_tree_tour_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://city-of-vancouver-wa-geo-hub-cityofvancouver.hub.arcgis.com/apps/fa72863a21ea42c3b114d6e8a2be706a/explore": "Public Art Map",
+   "https://city-of-vancouver-wa-geo-hub-cityofvancouver.hub.arcgis.com/": "Maps",
+   "https://experience.arcgis.com/experience/ab57ca0d6bb04984b608ad8c8a22d226": "interactive parking map",
+   "https://experience.arcgis.com/experience/ab57ca0d6bb04984b608ad8c8a22d226/page/Pay-to-Park-Spaces": "Interactive Map",
+   "https://experience.arcgis.com/experience/14d26632fd96447294468896c0ce564d/": "Public Art",
+   "https://experience.arcgis.com/experience/ab57ca0d6bb04984b608ad8c8a22d226/page/Reservable-Parking-Spaces": "Interactive Parking Map",
+   "https://experience.arcgis.com/experience/ab57ca0d6bb04984b608ad8c8a22d226/page/Parking-Main-Page/": "City’s parking map to plan your trip",
+   "http://gis.clark.wa.gov/mapsonline/index.cfm": "MapsOnline",
+   "https://gis.clark.wa.gov/portal/apps/webappviewer/index.html?id=7acb756876004da7a6207748e82b5111": "Vancouver/Clark County Bike Map",
+   "https://gis.oregonmetro.gov/bikethere/": "Bike There!"
+  }
+ },
+ "Vanderburgh County": {
+  "files": [],
+  "portals": {}
+ },
+ "Palmdale": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/6edf67c9fa5d4548815a4a8cc00468cb/": "ArcGIS",
+   "https://city-of-palmdale-geospatial-hub-cityofpalmdale.hub.arcgis.com/": "Mapping Palmdale",
+   "https://egis-lacounty.hub.arcgis.com/datasets/l-a-county-park-needs-assessment-results?geometry=-123.526%2C33.263%2C-113.072%2C34.856": "Park Need Assessment Results",
+   "https://lacounty.maps.arcgis.com/apps/opsdashboard/index.html": "",
+   "https://city-of-palmdale-geospatial-hub-cityofpalmdale.hub.arcgis.com/pages/termsofuse": "ArcGIS Geospatial Hub",
+   "https://storymaps.arcgis.com/stories/988a2a82be524316be713fdd6104d58c": ""
+  }
+ },
+ "Jackson County": {
+  "files": [],
+  "portals": {
+   "https://gis.mijackson.org/": "GIS INTERACTIVE MAPS Tax (parcel) viewer, zoning viewer, voting maps, historic maps"
+  }
+ },
+ "Killeen": {
+  "files": [],
+  "portals": {}
+ },
+ "Rock Island County": {
+  "files": [],
+  "portals": {}
+ },
+ "Washington County": {
+  "files": [],
+  "portals": {}
+ },
+ "Rapides Parish": {
+  "files": [
+   {
+    "url": "https://rppj.com/wp-content/uploads/2022/06/Cotile-Lake.pdf",
+    "text": "Cotile Lake Map",
+    "file": "data/city_files/Rapides_Parish/f459c2_Cotile-Lake.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Gregg County": {
+  "files": [
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/markers2a.pdf",
+    "text": "Gregg County Historical Markers",
+    "file": "data/city_files/Gregg_County/3eb3ae_markers2a.pdf",
+    "rows": 48,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/gchc-may-12-2026-meeting-agenda.pdf",
+    "text": "May 12, 2026 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/f317c3_gchc-may-12-2026-meeting-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/gchc-february-11-2025.pdf",
+    "text": "February 11, 2025 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/01d0d4_gchc-february-11-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/cghc-meeting-agenda-01302025.pdf",
+    "text": "January 20 2025 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/4904c7_cghc-meeting-agenda-01302025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/gchc-agenda-5-14-24.pdf",
+    "text": "May 14, 2024 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/570eb3_gchc-agenda-5-14-24.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/gchc-agenda-2-13-24.pdf",
+    "text": "February 13, 2024 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/08c5d0_gchc-agenda-2-13-24.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-agenda-8-8-23.pdf",
+    "text": "August 8, 2023 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/75e594_GCHC-agenda-8-8-23.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-agenda-5-9-23.pdf",
+    "text": "May 9, 2023 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/6152e0_GCHC-agenda-5-9-23.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/Marker-Committee-Agenda-4-25-23.pdf",
+    "text": "April 25, 2023 - Special Committee Meeting Agenda",
+    "file": "data/city_files/Gregg_County/0009a9_Marker-Committee-Agenda-4-25-23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-agenda-8-9-22.pdf",
+    "text": "August 9, 2022 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/9c2766_GCHC-agenda-8-9-22.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-agenda-5-10-22.pdf",
+    "text": "May 10, 2022 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/206103_GCHC-agenda-5-10-22.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/Marker-Committee-Agenda-5-5-22.pdf",
+    "text": "May 5, 2022 - Special Committee Meeting Agenda",
+    "file": "data/city_files/Gregg_County/a18cd3_Marker-Committee-Agenda-5-5-22.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/Survey-Committee-agenda-4-15-22.pdf",
+    "text": "April 15, 2022 - Executive Committee and Historical Survey Resource Committee",
+    "file": "data/city_files/Gregg_County/4b7632_Survey-Committee-agenda-4-15-22.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/Marker-Committee-Agenda-3-29-22.pdf",
+    "text": "March 29, 2022 - Special Committee Meeting Agenda",
+    "file": "data/city_files/Gregg_County/60f7e6_Marker-Committee-Agenda-3-29-22.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-Agenda-Nov_-9-2021.pdf",
+    "text": "November 9, 2021 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/4ab34d_GCHC-Agenda-Nov_-9-2021.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-Agenda-Aug-10-2021.pdf",
+    "text": "August 10, 2021 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/b53d34_GCHC-Agenda-Aug-10-2021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-Agenda-Nov_-10-2020.pdf",
+    "text": "November 10, 2020 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/437e75_GCHC-Agenda-Nov_-10-2020.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-Agenda-10052020.pdf",
+    "text": "October 5, 2020 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/e3e7db_GCHC-Agenda-10052020.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-Agenda-Sept_-22-2020.pdf",
+    "text": "September 22, 2020 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/50e53c_GCHC-Agenda-Sept_-22-2020.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-Agenda-Aug-11-2020-agenda.pdf",
+    "text": "August 11, 2020 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/c54f6b_GCHC-Agenda-Aug-11-2020-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-Agenda-Feb--25-2020.pdf",
+    "text": "February 25, 2020 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/93fd6f_GCHC-Agenda-Feb--25-2020.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-Agenda-Nov--12-2019.pdf",
+    "text": "November 12, 2019 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/b43c80_GCHC-Agenda-Nov--12-2019.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/GCHC-Agenda-Aug-13-2019.pdf",
+    "text": "August 13, 2019 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/6e646d_GCHC-Agenda-Aug-13-2019.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/05142019-GCHC-Agenda.pdf",
+    "text": "May 14, 2019 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/d65cfd_05142019-GCHC-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://greggcounty.texas.gov/assets/main/departments/historical-commission/agendas/02262019-Hist-Com-Agenda.pdf",
+    "text": "February 26, 2019 - Meeting Agenda",
+    "file": "data/city_files/Gregg_County/d3a32f_02262019-Hist-Com-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Lowndes County": {
+  "files": [],
+  "portals": {}
+ },
+ "Downey": {
+  "files": [],
+  "portals": {}
+ },
+ "Dearborn": {
+  "files": [
+   {
+    "url": "https://dearborn.gov/sites/default/files/2025-09/Recycling_Trash_with_glass_EandA.pdf",
+    "text": "Trash, Recycling & Yard Waste Instructions (English & Arabic)",
+    "file": "data/city_files/Dearborn/58d88b_Recycling_Trash_with_glass_EandA.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2024-06/Collection%20Days%20-%20English.pdf",
+    "text": "Public Service Days Schedule & Map",
+    "file": "data/city_files/Dearborn/d82498_Collection_20Days_20-_20English.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2025-01/New%20Trash%20Order%20Form%202025.pdf",
+    "text": "Application for Extra Trash and/or Recycling Cart",
+    "file": "data/city_files/Dearborn/d15bab_New_20Trash_20Order_20Form_202025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2025-11/ALTERNATIVE%20PARKING%20DURING%20SNOW%20EMERGENCIES_2025.pdf",
+    "text": "Alternative Parking List",
+    "file": "data/city_files/Dearborn/00155b_ALTERNATIVE_20PARKING_20DURING_20SNOW_20EMERGENCIES_2025.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2025-10/Sewer%20Repair%20Permit%20Form_1.pdf",
+    "text": "Sewer Repair Permit Form Learn More",
+    "file": "data/city_files/Dearborn/aa6e6b_Sewer_20Repair_20Permit_20Form_1.pdf",
+    "rows": 26,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-04/BS%26A%20How%20To%20Guide_%20Garage_Estate%20Sales_04162026_Redacted.pdf",
+    "text": "How-to Guide",
+    "file": "data/city_files/Dearborn/f9d800_BS_26A_20How_20To_20Guide__20Garage_Estate_20Sales_04162026_Redacted.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-10/Sample%20Ballot%20English%20-%20House%20District%203%20-%20Pcts%201-32_LENGTH.pdf",
+    "text": "General Election 2026 Sample Ballot House District 3 (Pcts 1-32) - English",
+    "file": "data/city_files/Dearborn/5dbd3f_Sample_20Ballot_20English_20-_20House_20District_203_20-_20Pcts_201-32",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-10/Sample%20Ballot%20Arabic%20-%20House%20District%203%20-%20Pcts%201-32_LENGTH.pdf",
+    "text": "General Election 2026 Sample Ballot House District 3 (Pcts 1-32) - Arabic",
+    "file": "data/city_files/Dearborn/c990b0_Sample_20Ballot_20Arabic_20-_20House_20District_203_20-_20Pcts_201-32_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-10/Sample%20Ballot%20English%20-%20House%20District%2015%20-%20Pcts%2033-50_LENGTH.pdf",
+    "text": "General Election 2026 Sample Ballot House District 15 (Pcts 33-50) - English",
+    "file": "data/city_files/Dearborn/801f3e_Sample_20Ballot_20English_20-_20House_20District_2015_20-_20Pcts_2033-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-10/Sample%20Ballot%20Arabic%20-%20House%20District%2015%20-%20Pcts%2033-50_Length_2_2026.pdf",
+    "text": "General Election 2026 Sample Ballot House District 15 (Pcts 33-50) - Arabic",
+    "file": "data/city_files/Dearborn/d4592b_Sample_20Ballot_20Arabic_20-_20House_20District_2015_20-_20Pcts_2033-5",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-07/Sample%20Ballot%20English%20-%20House%20District%203%20-%20Pcts%201-32_CORRECT.pdf",
+    "text": "2026 Sample Ballot House District 3 (Pcts 1-32) - English",
+    "file": "data/city_files/Dearborn/c08394_Sample_20Ballot_20English_20-_20House_20District_203_20-_20Pcts_201-32",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-07/Sample%20Ballot%20Arabic%20-%20House%20District%203%20-%20Pcts%201-32_HORIZONTAL%202.pdf",
+    "text": "2026 Sample Ballot House District 3 (Pcts 1-32) - Arabic",
+    "file": "data/city_files/Dearborn/b9a53e_Sample_20Ballot_20Arabic_20-_20House_20District_203_20-_20Pcts_201-32_",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-07/Sample%20Ballot%20English%20-%20House%20District%2015%20-%20%20Pcts%2033-50_Correct.pdf",
+    "text": "2026 Sample Ballot House District 15 (Pcts 33-50) - English",
+    "file": "data/city_files/Dearborn/c6481b_Sample_20Ballot_20English_20-_20House_20District_2015_20-_20_20Pcts_20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-07/Sample%20Ballot%20Arabic%20-%20House%20District%2015%20-%20Pcts%2033-50_HORIZONTAL.pdf",
+    "text": "2026 Sample Ballot House District 15 (Pcts 33-50) - Arabic",
+    "file": "data/city_files/Dearborn/b4d0cf_Sample_20Ballot_20Arabic_20-_20House_20District_2015_20-_20Pcts_2033-5",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-02/Absent%20Voter%20Ballot%20Application%20Fillable%202026.pdf",
+    "text": "Absentee ballot applications",
+    "file": "data/city_files/Dearborn/1f3bfc_Absent_20Voter_20Ballot_20Application_20Fillable_202026.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2025-08/Absent%20Voter%20Ballot%20Application%20Arabic%20Fillable%20%281%29%20%281%29.pdf",
+    "text": "Absentee ballot applications are also available in Arabic.",
+    "file": "data/city_files/Dearborn/c45cd1_Absent_20Voter_20Ballot_20Application_20Arabic_20Fillable_20_281_29_20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-11/Early_AV_Ballot_Processing_Information_Posting%20Nov%202026%20%282%29.pdf",
+    "text": "Early Absent Voter Ballot Information for the Nov. 3, 2026 General Election",
+    "file": "data/city_files/Dearborn/5e10f1_Early_AV_Ballot_Processing_Information_Posting_20Nov_202026_20_282_29.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-05/2026%20Dearborn%20Precinct%20Map.pdf",
+    "text": "Dearborn Precinct & Polling Place Map",
+    "file": "data/city_files/Dearborn/92c458_2026_20Dearborn_20Precinct_20Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-10/Early_AV_Ballot_Processing_Information_Posting%20Nov%202026.pdf",
+    "text": "Nov. 3, 2026 General Election: Early Absent Voter Ballot Information",
+    "file": "data/city_files/Dearborn/5d2f76_Early_AV_Ballot_Processing_Information_Posting_20Nov_202026.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://dearborn.gov/sites/default/files/2026-08/2026%20Early_AV_Ballot_Processing_Information_Posting%20%281%29.pdf",
+    "text": "2026 Primary Election: Early Absentee Voter Ballot Information",
+    "file": "data/city_files/Dearborn/9e8954_2026_20Early_AV_Ballot_Processing_Information_Posting_20_281_29.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/f40b94e58e4a47fcbb89b3e69c64ec6d": "Lead Service Line Information",
+   "https://experience.arcgis.com/experience/bc8f2fbc19a5496582571a3d818a7035": "Map of Snow Plow Routes",
+   "https://experience.arcgis.com/experience/030c5f93e0194aeeab9149e35485731d/page/Page/": "Map of Current Projects",
+   "https://dbnmi.maps.arcgis.com/apps/instant/reporter/index.html?appid=ed6460b2893e4fd3a4a97a7176771209": "Submit A Request"
+  }
+ },
+ "Matanuska-Susitna Borough": {
+  "files": [
+   {
+    "url": "https://matsugov.us/docs/general/17846/msb_online_mapping_program_documents.zip",
+    "text": "Download",
+    "file": "data/city_files/Matanuska_Susitna_Borough/a9bffc_msb_online_mapping_program_documents.zip",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://survey123.arcgis.com/share/b36071e746fc4dd490331a207d1678c9?field:url=https://matsu.gov/?": "Give Website Feedback",
+   "https://matsugov.us/30-documents/outreach/17385-open-data-download-directions?highlight=WyJvcGVuIiwiZGF0YSIsIidkYXRhIiwib3BlbiBkYXRhIl0=&template=msb_bolide": "Open Data Download Directions",
+   "https://data1-msb.opendata.arcgis.com/": "Open Data",
+   "https://problem-reporter-msb.hub.arcgis.com/pages/road-maintenance": "Maintenance",
+   "https://storymaps.arcgis.com/stories/d443417779364db0bb99a246147fd2ac": "Why are some roads not maintained?",
+   "https://msb.maps.arcgis.com/apps/Cascade/index.html?appid=f8b50b233b6141ee8e0cc708e16b43eb": "Planning LRTP Map",
+   "https://msb.maps.arcgis.com/apps/webappviewer/index.html?id=e172dad43e5046cca8443b0796c83211": "O & M Projects Map",
+   "https://msb.maps.arcgis.com/apps/webappviewer/index.html?id=dbd46f12631c4fb7bf3513bb8b29fb92": "Capital Projects Map",
+   "https://msb.maps.arcgis.com/apps/webappviewer/index.html?id=4cd76b7861f348e68afd5cc934524a5f": "Planning & Land Use Viewer",
+   "https://sprucebeetles-msb.opendata.arcgis.com/": "Beetle Kill Trees & Fire Reduction",
+   "https://experience.arcgis.com/experience/731a6eb55d0b4a6791340ca3342788ba": "Find My School",
+   "https://msb.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=e951b27520b845afbd145793f664c2a5": "All Interactive Maps & Apps"
+  }
+ },
+ "Bay County": {
+  "files": [],
+  "portals": {}
+ },
+ "Nampa": {
+  "files": [],
+  "portals": {}
+ },
+ "Beaverton": {
+  "files": [],
+  "portals": {}
+ },
+ "Asheville": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/8bc6cea3b56741f3a5ae2400d160f681/page/Page/": "city streets",
+   "https://experience.arcgis.com/experience/3b3326edb0b7491b86f0ba7dbc99839a": "street closures map",
+   "https://www.arcgis.com/apps/Cascade/index.html?appid=eae4b75d894e45f192dcd78a3e814c7f": "",
+   "http://avl.maps.arcgis.com/apps/SimpleViewer/index.html?appid=cb97ebcc115a4d0ab83cbb0752e2ea10": "",
+   "https://experience.arcgis.com/experience/8bc6cea3b56741f3a5ae2400d160f681/": "Is my street a City-maintained street?",
+   "https://avl.maps.arcgis.com/apps/View/index.html?appid=a05d61cb72d94549b574ae5573c16013//": "View a map of snow removal priorities.",
+   "https://storymaps.arcgis.com/stories/660321958f834674928a07ff4dda823b": "Storymap: What is Close the GAP?",
+   "https://storymaps.arcgis.com/stories/3a4557ac89e84fa792a6c02a01316613": "Storymap: What is Asheville Unpaved?",
+   "https://storymaps.arcgis.com/stories/6fba7fe4b3f9400981ef3848ab81ef1a": "Link to Story Map",
+   "https://avl.maps.arcgis.com/apps/webappviewer/index.html?id=0f6eab030a684367af10d3bc0f31dae9": ""
+  }
+ },
+ "Mendocino County": {
+  "files": [],
+  "portals": {}
+ },
+ "Waukegan": {
+  "files": [],
+  "portals": {}
+ },
+ "Danbury": {
+  "files": [
+   {
+    "url": "https://hrra.org/wp-content/uploads/2025/12/Danbury-Recycling-Truck-updated-12.25.pdf",
+    "text": "Danbury Recycling Truck",
+    "file": "data/city_files/Danbury/4f8b32_Danbury-Recycling-Truck-updated-12.25.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.ct.gov/stories/s/q5as-kyim": "State of Connecticut COVID-19 Response",
+   "https://maps-danbury.hub.arcgis.com/": "Geographical Information System Portal (GIS)",
+   "https://storymaps.arcgis.com/stories/8ca52946233e4b28b0f03f5761840b81": "Click Here for City of Danbury Trail Routing Study - Story Map Link",
+   "https://storymaps.arcgis.com/stories/747e0a9bcde14ad09323d3cb9a181e9d": "https://storymaps.arcgis.com/stories/747e0a9bcde14ad09323d3cb9a181e9d",
+   "https://fema.maps.arcgis.com/apps/webappviewer/index.html?id=e7a7dc3ebd7f4ad39bb8e485bb64ce44": "https://fema.maps.arcgis.com/apps/webappviewer/index.html?id=e7a7dc3ebd7f4ad39bb8e485bb64ce44",
+   "https://experience.arcgis.com/experience/e492db86d9b348399f4bd20330b4b274/page/Page/?views=Sea-Level-Dataset%2CPrelim": "https://experience.arcgis.com/experience/e492db86d9b348399f4bd20330b4b274/page/Page/?views=Sea-Level-Dataset%2CPrelim"
+  }
+ },
+ "Farmington Hills": {
+  "files": [
+   {
+    "url": "https://fhgov.com/media/ulmptddf/map-zipcodesinfarmingtonhills.pdf",
+    "text": "Zip Codes (PDF)",
+    "file": "data/city_files/Farmington_Hills/cf8efd_map-zipcodesinfarmingtonhills.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/o1rhbpgg/citymap2026-ada.pdf",
+    "text": "City Map (PDF)",
+    "file": "data/city_files/Farmington_Hills/ab6d17_citymap2026-ada.pdf",
+    "rows": 244,
+    "bike_rows": 35
+   },
+   {
+    "url": "https://fhgov.com/media/wq1pin5g/speedlimitmap.pdf",
+    "text": "Speed Limits (PDF)",
+    "file": "data/city_files/Farmington_Hills/f99e18_speedlimitmap.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/5arg0jdb/fhgolfcourselayout2024-ada.pdf",
+    "text": "Course Map",
+    "file": "data/city_files/Farmington_Hills/debf15_fhgolfcourselayout2024-ada.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/t5nkcsnr/heritage-park-map.pdf",
+    "text": "Heritage Park Map",
+    "file": "data/city_files/Farmington_Hills/93829b_heritage-park-map.pdf",
+    "rows": 9,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://fhgov.com/media/qhjlyfkf/shelter-rental-brochure_final_ada.pdf",
+    "text": "Download the Heritage Park shelter rental brochure",
+    "file": "data/city_files/Farmington_Hills/40b511_shelter-rental-brochure_final_ada.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://fhgov.com/media/palexbvi/heritage-park-rental-agreement-7-26-fillable.pdf",
+    "text": "Download the Heritage Park shelter rental form",
+    "file": "data/city_files/Farmington_Hills/be01d0_heritage-park-rental-agreement-7-26-fillable.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/zw5d2qtg/4102024_240410-historic-district-commission-meeting-april-10-2024.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Farmington_Hills/d8135c_4102024_240410-historic-district-commission-meeting-april-10-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/vxllw2wg/3132024_240313-historic-district-commission-meeting-march-13-2024.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Farmington_Hills/2077ff_3132024_240313-historic-district-commission-meeting-march-13-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/zcyjj43m/3132024_240313-historic-district-commission-meeting-march-13-2024.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Farmington_Hills/76aa7e_3132024_240313-historic-district-commission-meeting-march-13-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/cwwmaozo/2142024_240214-historic-district-commission-february-14-2024.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Farmington_Hills/04202a_2142024_240214-historic-district-commission-february-14-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/i42jcpdb/2142024_240214-historic-district-commission-february-14-2024.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Farmington_Hills/f3248c_2142024_240214-historic-district-commission-february-14-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/jkohbfj5/1102024_240110-historic-district-commission-meeting-january-10-2024.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Farmington_Hills/b26915_1102024_240110-historic-district-commission-meeting-january-10-2024.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/0akmuxnt/1102024_240110-historic-district-commission-meeting-january-10-2024.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Farmington_Hills/9af688_1102024_240110-historic-district-commission-meeting-january-10-2024.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/y5npa11v/12132023_231213-historic-district-commission-meeting-december-13-2023.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Farmington_Hills/afe4c0_12132023_231213-historic-district-commission-meeting-december-13-2023.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/xoxlqesa/12132023_231213-historic-district-commission-meeting-december-13-2023.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Farmington_Hills/7cb65c_12132023_231213-historic-district-commission-meeting-december-13-2023.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/pufoci2r/1182023_231108-historic-district-commission-meeting-november-8-2023.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Farmington_Hills/fb1b28_1182023_231108-historic-district-commission-meeting-november-8-2023.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/21vj2uoi/1182023_231108-historic-district-commission-meeting-november-8-2023.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Farmington_Hills/e8b8ac_1182023_231108-historic-district-commission-meeting-november-8-2023.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/adhnfvan/10112023_231011-historic-district-commission-meeting-october-11-2023.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Farmington_Hills/9d4728_10112023_231011-historic-district-commission-meeting-october-11-2023.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/ohrhj1xy/10112023_231011-historic-district-commission-meeting-october-11-2023.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Farmington_Hills/c7ce5a_10112023_231011-historic-district-commission-meeting-october-11-2023.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/npdfvrd3/1042023_231004-historic-district-commission-meeting-october-4-2023-special-no-quroum.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Farmington_Hills/d7383c_1042023_231004-historic-district-commission-meeting-october-4-2023-spe",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/xzxeev1n/9132023_230913-historic-district-commission-meeting-september-13-2023.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Farmington_Hills/3626e7_9132023_230913-historic-district-commission-meeting-september-13-2023.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/i3snwz1x/9132023_230913-historic-district-commission-meeting-september-13-2023.pdf",
+    "text": "Minutes",
+    "file": "data/city_files/Farmington_Hills/1d2e3f_9132023_230913-historic-district-commission-meeting-september-13-2023.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/0tgo22bh/892023_230809-historic-district-commission-meeting-august-9-2023-canceled.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Farmington_Hills/13599c_892023_230809-historic-district-commission-meeting-august-9-2023-cance",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fhgov.com/media/mmwdtcz5/7122023_230712-historic-district-commission-meeting-july-12-2023-canceled.pdf",
+    "text": "Agenda",
+    "file": "data/city_files/Farmington_Hills/fc3deb_7122023_230712-historic-district-commission-meeting-july-12-2023-cance",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/db9eaf4a4c584e128d36c2ac8607e367": "Development Projects",
+   "https://fhgov.maps.arcgis.com/apps/instant/reporter/index.html?appid=8ecd6c5e368d4dc1af046eec94701609": "Citizen Problem Reporter",
+   "https://experience.arcgis.com/experience/f383e9c1a7ec4f01aa92220a2fe4af1c?id=eaab7777f82441f3b5aa50d9e16fe5b5": "Family and Home Daycares",
+   "https://fhgov.maps.arcgis.com/apps/instant/basic/index.html?appid=7b29d55bfd0148e2bfc889614931dd4a": "Planning Commission Public Hearings",
+   "https://experience.arcgis.com/experience/2f69f526edfe4e489719332019dfa2ad/": "Zoning Districts",
+   "https://fhgov.maps.arcgis.com/apps/instant/lookup/index.html?appid=396c5c283fd24873a5a25a3a5e4f5c8e&openRelatedRecords=true?id=2474fec17549492f8a84a6a0c62075e4": "Voting Precinct Finder",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd": "Floodplains",
+   "https://fhgov.maps.arcgis.com/apps/instant/lookup/index.html?appid=e093628778284d0bbb6626798fe1adc5": "Trash Day Lookup",
+   "https://fhgov.maps.arcgis.com/apps/instant/lookup/index.html?appid=0d48844eeed64a9fa4c7f87fedb5780a&center=-83.3776%3B42.486&level=12": "Public School Lookup",
+   "https://fhgov.maps.arcgis.com/apps/instant/media/index.html?appid=7a8ef4e125ee42608bb1f41abbb74f54": "Historical Aerial Photo Viewer",
+   "https://storymaps.arcgis.com/stories/38f2fa96ea714971bedbeff5baa24e27": "Historical Structures",
+   "https://experience.arcgis.com/experience/3fdcf25262cc4adba3404c2bcaaa1fbd": ""
+  }
+ },
+ "Layton": {
+  "files": [
+   {
+    "url": "https://laytoncity.org/pdf/finance/utility/document/Recycling_Calendar.pdf?id=2026",
+    "text": "Recycle Schedule",
+    "file": "data/city_files/Layton/f6c814_Recycling_Calendar.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://laytoncity.org/downloads/pubworks/DrinkingWaterSourceProtection.pdf",
+    "text": "Drinking Water Protection Zone Map 2020",
+    "file": "data/city_files/Layton/0d5089_DrinkingWaterSourceProtection.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://laytoncity.maps.arcgis.com/apps/webappviewer/index.html?id=d50457e89a544d40b1daacd2acd0ffbb": "Utopia Fiber Availability Map",
+   "https://secondarymeterproject-laytoncity.hub.arcgis.com": "Secondary Water Meter Installation Project",
+   "https://laytoncity.maps.arcgis.com/apps/MapJournal/index.html?appid=7a6225099a2649eca91d1836b8fd3bc8": "Prop 1",
+   "https://storymaps.arcgis.com/stories/6af68ec33fe8437a87789235f91d1260": "Transportation Master Plan Info"
+  }
+ },
+ "Rancho Cordova": {
+  "files": [],
+  "portals": {}
+ },
+ "Anderson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Toa Baja": {
+  "files": [
+   {
+    "url": "https://toabaja.com/wp-content/uploads/2026/10/Mapa-Calificacion-Toa-Baja-Vigencia-27-12-2024_web.pdf",
+    "text": "Descargar ↓",
+    "file": "data/city_files/Toa_Baja/f41366_Mapa-Calificacion-Toa-Baja-Vigencia-27-12-2024_web.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toabaja.com/wp-content/uploads/2026/10/Mapa-Clasificacion-Toa-Baja-Vigencia-27-12-2024_web.pdf",
+    "text": "Descargar ↓",
+    "file": "data/city_files/Toa_Baja/2dd1fb_Mapa-Clasificacion-Toa-Baja-Vigencia-27-12-2024_web.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toabaja.com/wp-content/uploads/2026/10/Mapa-Delimitacion-Centro-Urbano-Tradicional-Toa-Baja-Vigencia-27-12-2024_web.pdf",
+    "text": "Descargar ↓",
+    "file": "data/city_files/Toa_Baja/9c0d61_Mapa-Delimitacion-Centro-Urbano-Tradicional-Toa-Baja-Vigencia-27-12-20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toabaja.com/wp-content/uploads/2026/10/Mapa-Dotaciones-Toa-Baja-Vigencia-27-12-2024_web.pdf",
+    "text": "Descargar ↓",
+    "file": "data/city_files/Toa_Baja/e0a666_Mapa-Dotaciones-Toa-Baja-Vigencia-27-12-2024_web.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toabaja.com/wp-content/uploads/2026/10/Mapa-Plan-Vial-Toa-Baja-Vigencia-27-12-2024_web.pdf",
+    "text": "Descargar ↓",
+    "file": "data/city_files/Toa_Baja/45bf3d_Mapa-Plan-Vial-Toa-Baja-Vigencia-27-12-2024_web.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toabaja.com/wp-content/uploads/2026/10/paratransito-guia-basica-del-usuario-online-22-06.pdf",
+    "text": "Descargar ↓",
+    "file": "data/city_files/Toa_Baja/45c608_paratransito-guia-basica-del-usuario-online-22-06.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toabaja.com/wp-content/uploads/2026/10/paratransito-informacion-brochure-22-06.pdf",
+    "text": "Descargar ↓",
+    "file": "data/city_files/Toa_Baja/d01fec_paratransito-informacion-brochure-22-06.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toabaja.com/wp-content/uploads/2026/10/paratransito-politica-publica-brochure-22-06.pdf",
+    "text": "Descargar ↓",
+    "file": "data/city_files/Toa_Baja/c45374_paratransito-politica-publica-brochure-22-06.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toabaja.com/wp-content/uploads/2026/10/paratransito-solicitud-new.pdf",
+    "text": "Descargar ↓",
+    "file": "data/city_files/Toa_Baja/c27a55_paratransito-solicitud-new.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Fauquier County": {
+  "files": [],
+  "portals": {}
+ },
+ "Johnson City": {
+  "files": [],
+  "portals": {
+   "https://jctngis.maps.arcgis.com/apps/instant/portfolio/index.html?appid=e94afd592b5a487592ab8b2f529e5f61": "City Limits",
+   "https://jctngis.maps.arcgis.com/apps/instant/media/index.html?appid=1ada1cf00d8b4786a76f8aac39cb1f68": "Public Parking",
+   "https://jctngis.maps.arcgis.com/sharing/rest/content/items/d2d2c54aa94649b5b09795157e171446/data": "Street Maps",
+   "https://jctngis.maps.arcgis.com/apps/instant/lookup/index.html?appid=52ff8a931cb64377a5f9688a8111decf": "Trash Pickup",
+   "https://jctngis.maps.arcgis.com/apps/dashboards/a7e00c0cc4184f82b0335c40f6dd01cc": "SEASONAL LEAF COLLECTION",
+   "https://mapgallery-jctngis.opendata.arcgis.com/": "MAP GALLERY",
+   "https://datahub-jctngis.opendata.arcgis.com/": "OPEN DATA PORTAL"
+  }
+ },
+ "Noblesville": {
+  "files": [],
+  "portals": {}
+ },
+ "Otero County": {
+  "files": [],
+  "portals": {}
+ },
+ "Montcalm County": {
+  "files": [],
+  "portals": {}
+ },
+ "Clay County": {
+  "files": [],
+  "portals": {}
+ },
+ "Conway": {
+  "files": [],
+  "portals": {}
+ },
+ "Port Orange": {
+  "files": [],
+  "portals": {}
+ },
+ "La Mesa": {
+  "files": [],
+  "portals": {}
+ },
+ "Hamburg": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/cdb1b7dfe86c4ca393603debfcb4cfd4": "Eighteenmile Creek Greenway Project.",
+   "https://www.wd-gis.com/Hamburg_Public/UserForms/Hamburg_Shared/Home.aspx": "Geographic Information System (GIS) / Zoning Map"
+  }
+ }
+}
