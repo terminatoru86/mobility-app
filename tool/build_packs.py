@@ -983,7 +983,7 @@ def fetch_cityfiles():
     publish on their own websites (data/city_pts.json, made by tool/city_rows.py from tool/city_files.py)."""
     out = []
     import glob as _glob
-    files = [os.path.join(ROOT, 'data', n) for n in ('city_pts.json', 'public_maps.json')]
+    files = [os.path.join(ROOT, 'data', n) for n in ('city_pts.json', 'public_maps.json', 'user_official.json')]
     files += sorted(_glob.glob(os.path.join(ROOT, 'data', 'gis_servers', 'pts_*.json')))
     seen = set()
     for f in files:
@@ -1246,7 +1246,7 @@ def main():
             got = fn()
             # read again and answered: the old rows of this source go, so a place the source
             # (or our filter) no longer has does not stay on the map
-            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'cityfiles': ('cty/', 'pm/', 'gs/'), 'afdc': 'afdc/', 'bikelink': 'blk/'}.get(name)
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'cityfiles': ('cty/', 'pm/', 'gs/', 'usr/'), 'afdc': 'afdc/', 'bikelink': 'blk/'}.get(name)
             if old and got:
                 for d in tiles.values():
                     for k in [k for k in d if str(k).startswith(old)]:
@@ -1315,16 +1315,42 @@ def main():
     def rank(r):
         k = r[0]
         return 0 if k.startswith(('node/', 'way/', 'relation/')) else 1 if k.startswith('city/') and not k.split('/')[1].startswith(('ago-', 'soc-', 'ckn-')) else 2
+    # same kind of place from two DIFFERENT sources within a few metres (official lists and OpenStreetMap often
+    # differ by 5-15 m for the same rack): the higher-ranked one stays. Racks of one source next to each other stay.
+    RAD = {'bicycle_parking': 12, 'small_electric_vehicle_parking': 15, 'kick-scooter_parking': 15, 'mobility_hub': 15,
+           'motorcycle_parking': 15, 'bicycle_repair_station': 15, 'compressed_air': 15, 'charging_station': 15,
+           'bicycle_rental': 30}
+    SAME = {'small_electric_vehicle_parking': ('small_electric_vehicle_parking', 'kick-scooter_parking', 'mobility_hub'),
+            'kick-scooter_parking': ('small_electric_vehicle_parking', 'kick-scooter_parking', 'mobility_hub')}
+    def src_of(k):
+        p = k.split('/')[0]
+        return 'osm' if p in ('node', 'way', 'relation') else (p + '/' + k.split('/')[1].split('-')[0]) if p == 'city' else p
     dropped = 0
+    C = 0.0002
     for key, d in tiles.items():
-        seen = set()
+        grid = {}
         for r in sorted(d.values(), key=lambda r: (rank(r), r[0])):
-            g = (round(r[1] / 0.00005), round(r[2] / 0.00005), r[3].get('amenity') or r[3].get('shop'))
-            if g in seen and rank(r) > 0:
+            a = r[3].get('amenity') or r[3].get('shop')
+            rad = RAD.get(a, 5)
+            gi, gj = int(r[1] / C), int(r[2] / C)
+            me = src_of(r[0])
+            dup = False
+            for kind in SAME.get(a, (a,)):
+                for i in (-1, 0, 1):
+                    for j in (-1, 0, 1):
+                        for la, lo, s2 in grid.get((kind, gi + i, gj + j), ()):
+                            dist = math.hypot((la - r[1]) * 111320, (lo - r[2]) * 111320 * math.cos(math.radians(r[1])))
+                            if (s2 != me and dist <= rad) or dist < 0.5:
+                                dup = True
+                                break
+                        if dup: break
+                    if dup: break
+                if dup: break
+            if dup and rank(r) > 0:
                 d.pop(r[0])
                 dropped += 1
             else:
-                seen.add(g)
+                grid.setdefault((a, gi, gj), []).append((r[1], r[2], me))
     # the same shop / rental from OpenStreetMap, Overture and Foursquare: same name within ~150 m, kept once
     import unicodedata
     def norm(n):
