@@ -1099,6 +1099,40 @@ def fetch_afdc():
     return out
 
 
+def fetch_ocm():
+    """Open Charge Map (community registry, key OCM_API_KEY): public stations with an ordinary household socket
+    (NEMA 5-15 / 5-20, "domestic"), where an e-bike or scooter charges with its own charger."""
+    key = os.environ.get('OCM_API_KEY')
+    if not key:
+        print('Open Charge Map skipped: no OCM_API_KEY', flush=True)
+        return []
+    ref = json.loads(http(f'https://api.openchargemap.io/v3/referencedata/?key={key}', timeout=120))
+    plug = {c['ID']: c.get('Title') or '' for c in ref.get('ConnectionTypes') or []}
+    usage = {u['ID']: u.get('Title') or '' for u in ref.get('UsageTypes') or []}
+    home = {i for i, t in plug.items() if re.search(r'NEMA\s*5-(15|20)|domestic|type\s*b\b|household|standard outlet|120\s*v', t, re.I)}
+    out = []
+    q = urllib.parse.urlencode({'key': key, 'countrycode': 'US', 'maxresults': 200000, 'compact': 'true', 'verbose': 'false'})
+    for p_ in json.loads(http(f'https://api.openchargemap.io/v3/poi/?{q}', timeout=600)):
+        a = p_.get('AddressInfo') or {}
+        lat, lon = a.get('Latitude'), a.get('Longitude')
+        conns = p_.get('Connections') or []
+        if lat is None or lon is None or not any(c.get('ConnectionTypeID') in home for c in conns):
+            continue
+        ut = usage.get(p_.get('UsageTypeID'), '')
+        if re.search(r'private', ut, re.I) and not re.search(r'public', ut, re.I):
+            continue
+        tags = {'amenity': 'charging_station', 'bicycle': 'yes', 'scooter': 'yes', 'socket:nema_5_15': 'yes',
+                'mobility:outlet': 'standard', 'name': a.get('Title'), 'addr:street': a.get('AddressLine1'),
+                'phone': a.get('ContactTelephone1'), 'website': a.get('RelatedURL'),
+                'description': 'Wall outlet: bring your own e-bike / scooter charger.',
+                'source': 'Open Charge Map', 'check_date': (p_.get('DateLastVerified') or p_.get('DateLastStatusUpdate') or '')[:10] or None}
+        if re.search(r'pay|membership', ut, re.I):
+            tags['fee'] = 'yes'
+        out.append([f"ocm/{p_.get('ID')}", round(float(lat), 6), round(float(lon), 6), {k: v for k, v in tags.items() if v}])
+    print(f'Open Charge Map household-socket charging: {len(out)}', flush=True)
+    return out
+
+
 def fetch_own():
     """Places added by hand by the owner of the app (data/own_places.json)."""
     out = []
@@ -1324,7 +1358,7 @@ def main():
                     pass
     counts_src = {}
     for name, fn in (('mbta', fetch_mbta), ('bikelink', fetch_bikelink), ('overture', fetch_overture), ('foursquare', fetch_foursquare),
-                     ('alltheplaces', fetch_alltheplaces), ('own', fetch_own), ('paid', fetch_paid), ('waterfront', fetch_waterfront), ('cityfiles', fetch_cityfiles), ('afdc', fetch_afdc),
+                     ('alltheplaces', fetch_alltheplaces), ('own', fetch_own), ('paid', fetch_paid), ('waterfront', fetch_waterfront), ('cityfiles', fetch_cityfiles), ('afdc', fetch_afdc), ('ocm', fetch_ocm),
                      ('mapillary', lambda: fetch_mapillary(boxes if args else None))):
         if refresh and name not in refresh:
             continue
@@ -1332,7 +1366,7 @@ def main():
             got = fn()
             # read again and answered: the old rows of this source go, so a place the source
             # (or our filter) no longer has does not stay on the map
-            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'cityfiles': ('cty/', 'pm/', 'gs/', 'usr/', 'vnd/'), 'afdc': 'afdc/', 'bikelink': 'blk/'}.get(name)
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'cityfiles': ('cty/', 'pm/', 'gs/', 'usr/', 'vnd/'), 'afdc': 'afdc/', 'ocm': 'ocm/', 'bikelink': 'blk/'}.get(name)
             if old and got:
                 for d in tiles.values():
                     for k in [k for k in d if str(k).startswith(old)]:
