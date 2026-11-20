@@ -1,9 +1,65 @@
 [
 {
+"city": "Greensboro",
+"url": "https://gis.greensboro-nc.gov/arcgis/rest/services/Transportation/BIPed_Inventory_MS/MapServer/0",
+"name": "GDOT Bike FixIt Station",
+"count": 12,
+"cat": "repair"
+},
+{
+"city": "Greensboro",
+"url": "https://gis.greensboro-nc.gov/arcgis/rest/services/Transportation/BIPed_Inventory_MS/MapServer/1",
+"name": "GDOT Bike Rack",
+"count": 201,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/FeatureServer/5",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/MapServer/5",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/FeatureServer/32",
+"name": "PR_Bike_Racks",
+"count": 110,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/MapServer/32",
+"name": "PR_Bike_Racks",
+"count": 110,
+"cat": "racks"
+},
+{
+"city": "Boulder",
+"url": "https://gis.bouldercolorado.gov/ags_svr3/rest/services/Bike_Furniture/MapServer/0",
+"name": "Bike Furniture",
+"count": 773,
+"cat": "racks"
+},
+{
+"city": "Boulder",
+"url": "https://gis.bouldercolorado.gov/ags_svr3/rest/services/trans/LimeScooterLocations/MapServer/0",
+"name": "Lime Scooter Groves",
+"count": 63,
+"cat": "scooter"
+},
+{
 "city": "region:drcog.org",
 "url": "https://gis.drcog.org/server/rest/services/RDC/BICYCLE_SHARE_STATIONS/MapServer/0",
 "name": "BICYCLE_SHARE_STATIONS",
-"count": 0,
+"count": 67,
 "cat": "share"
 }
 ]
