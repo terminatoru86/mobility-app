@@ -1,0 +1,1572 @@
+{
+ "Albuquerque NM": {
+  "files": [
+   {
+    "url": "https://data.cabq.gov/government/solidwaste/trashroutes/MetaData.pdf",
+    "text": "MetaData.pdf",
+    "file": "data/city_files/Albuquerque_NM/1cf0a3_MetaData.pdf",
+    "rows": 27,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/recreation/documents/foothillsmap.pdf",
+    "text": "View Sandia Foothill Trails Maps",
+    "file": "data/city_files/Albuquerque_NM/740429_foothillsmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/52-wkday.pdf",
+    "text": "52-wkday.pdf",
+    "file": "data/city_files/Albuquerque_NM/c96555_52-wkday.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/52-wkend.pdf",
+    "text": "52-wkend.pdf",
+    "file": "data/city_files/Albuquerque_NM/010c80_52-wkend.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/97-wkday.pdf",
+    "text": "97-wkday.pdf",
+    "file": "data/city_files/Albuquerque_NM/19d476_97-wkday.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/790-wkday.pdf",
+    "text": "790-wkday.pdf",
+    "file": "data/city_files/Albuquerque_NM/9afd72_790-wkday.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/FEMA/5608-GreerLoop-SW.pdf",
+    "text": "5608-GreerLoop-SW.pdf",
+    "file": "data/city_files/Albuquerque_NM/fcea50_5608-GreerLoop-SW.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/FEMA/Stronghurst%20Addn%20Lot%209B%20Blk%202.pdf",
+    "text": "Stronghurst Addn Lot 9B Blk 2.pdf",
+    "file": "data/city_files/Albuquerque_NM/293fba_Stronghurst_20Addn_20Lot_209B_20Blk_202.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/FEMA/TR%2012%20MRGCD%20MAP%2054.pdf",
+    "text": "TR 12 MRGCD MAP 54.pdf",
+    "file": "data/city_files/Albuquerque_NM/4041c0_TR_2012_20MRGCD_20MAP_2054.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/government/solidwaste/trashroutes/do_dont_recycling.csv",
+    "text": "do_dont_recycling.csv",
+    "file": "data/city_files/Albuquerque_NM/70dd3d_do_dont_recycling.csv",
+    "rows": 34,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://data.cabq.gov/community/recyclingdrop/MetaData.pdf",
+    "text": "MetaData.pdf",
+    "file": "data/city_files/Albuquerque_NM/55fcf4_MetaData.pdf",
+    "rows": 35,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://data.cabq.gov/community/bikepaths/MetaData.pdf",
+    "text": "MetaData.pdf",
+    "file": "data/city_files/Albuquerque_NM/945115_MetaData.pdf",
+    "rows": 53,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://data.cabq.gov/community/opentrails/MetaData.pdf",
+    "text": "MetaData.pdf",
+    "file": "data/city_files/Albuquerque_NM/a65eee_MetaData.pdf",
+    "rows": 47,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://data.cabq.gov/community/opentrails/named_trails.csv",
+    "text": "named_trails.csv",
+    "file": "data/city_files/Albuquerque_NM/767132_named_trails.csv",
+    "rows": 225,
+    "bike_rows": 196
+   },
+   {
+    "url": "https://data.cabq.gov/community/opentrails/stewards.csv",
+    "text": "stewards.csv",
+    "file": "data/city_files/Albuquerque_NM/da8653_stewards.csv",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/community/opentrails/trail_segments.geojson",
+    "text": "trail_segments.geojson",
+    "file": "data/city_files/Albuquerque_NM/d04186_trail_segments.geojson",
+    "rows": 303,
+    "bike_rows": 303
+   },
+   {
+    "url": "https://data.cabq.gov/community/prescripttrails/MetaData.pdf",
+    "text": "MetaData.pdf",
+    "file": "data/city_files/Albuquerque_NM/bee9e2_MetaData.pdf",
+    "rows": 31,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://data.cabq.gov/publicsafety/parkingcitations/MetaData.pdf",
+    "text": "MetaData.pdf",
+    "file": "data/city_files/Albuquerque_NM/97f5c6_MetaData.pdf",
+    "rows": 21,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://data.cabq.gov/transit/gtfs/Fixed%20Route%20Logic%20Flow.pdf",
+    "text": "Fixed Route Logic Flow.pdf",
+    "file": "data/city_files/Albuquerque_NM/32d916_Fixed_20Route_20Logic_20Flow.pdf",
+    "rows": 61,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://data.cabq.gov/transit/gtfs/google_transit.zip",
+    "text": "google_transit.zip",
+    "file": "data/city_files/Albuquerque_NM/bf12f3_google_transit.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/gtfs/MetaData.pdf",
+    "text": "MetaData.pdf",
+    "file": "data/city_files/Albuquerque_NM/32fab5_MetaData.pdf",
+    "rows": 114,
+    "bike_rows": 26
+   },
+   {
+    "url": "https://data.cabq.gov/transit/realtime/Art%20Station%20-%20Routes%20Traces%20Signs.kmz",
+    "text": "Art Station - Routes Traces Signs.kmz",
+    "file": "data/city_files/Albuquerque_NM/efbd7b_Art_20Station_20-_20Routes_20Traces_20Signs.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/realtime/ArtStation-RoutesTracesSigns.kmz",
+    "text": "ArtStation-RoutesTracesSigns.kmz",
+    "file": "data/city_files/Albuquerque_NM/55a9e4_ArtStation-RoutesTracesSigns.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/realtime/Transit%20Scheduled%20Route%20Data.pdf",
+    "text": "Transit Scheduled Route Data.pdf",
+    "file": "data/city_files/Albuquerque_NM/80cac8_Transit_20Scheduled_20Route_20Data.pdf",
+    "rows": 105,
+    "bike_rows": 26
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/1-wkday%20and%20wkend.pdf",
+    "text": "1-wkday and wkend.pdf",
+    "file": "data/city_files/Albuquerque_NM/98df1f_1-wkday_20and_20wkend.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/10-wkday.pdf",
+    "text": "10-wkday.pdf",
+    "file": "data/city_files/Albuquerque_NM/035d54_10-wkday.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/10-wkend.pdf",
+    "text": "10-wkend.pdf",
+    "file": "data/city_files/Albuquerque_NM/613775_10-wkend.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/11-wkday.pdf",
+    "text": "11-wkday.pdf",
+    "file": "data/city_files/Albuquerque_NM/1a9394_11-wkday.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/11-wkend.pdf",
+    "text": "11-wkend.pdf",
+    "file": "data/city_files/Albuquerque_NM/7c5f55_11-wkend.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/140-wkday.pdf",
+    "text": "140-wkday.pdf",
+    "file": "data/city_files/Albuquerque_NM/53378c_140-wkday.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/140-wkend.pdf",
+    "text": "140-wkend.pdf",
+    "file": "data/city_files/Albuquerque_NM/f3fa37_140-wkend.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/155-wkday.pdf",
+    "text": "155-wkday.pdf",
+    "file": "data/city_files/Albuquerque_NM/dce30d_155-wkday.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/155-wkend.pdf",
+    "text": "155-wkend.pdf",
+    "file": "data/city_files/Albuquerque_NM/4799bb_155-wkend.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/157-Saturday.pdf",
+    "text": "157-Saturday.pdf",
+    "file": "data/city_files/Albuquerque_NM/16e001_157-Saturday.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/157-Sunday.pdf",
+    "text": "157-Sunday.pdf",
+    "file": "data/city_files/Albuquerque_NM/470d6f_157-Sunday.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/157-wkday.pdf",
+    "text": "157-wkday.pdf",
+    "file": "data/city_files/Albuquerque_NM/fbfa0f_157-wkday.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/16-wkday%20and%20wkend.pdf",
+    "text": "16-wkday and wkend.pdf",
+    "file": "data/city_files/Albuquerque_NM/6773b8_16-wkday_20and_20wkend.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/198-wkday.pdf",
+    "text": "198-wkday.pdf",
+    "file": "data/city_files/Albuquerque_NM/d3badd_198-wkday.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/198-wkend.pdf",
+    "text": "198-wkend.pdf",
+    "file": "data/city_files/Albuquerque_NM/d4f21b_198-wkend.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://data.cabq.gov/transit/Maps/2-wkday.pdf",
+    "text": "2-wkday.pdf",
+    "file": "data/city_files/Albuquerque_NM/d0c1b4_2-wkday.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cabq.gov/open-data": "Translate",
+   "https://data.cabq.gov/business/addressatlas/": "Address Atlas",
+   "https://data.cabq.gov/business/addressatlas/MetaData.pdf/view": "Address Atlas Metadata",
+   "https://data.cabq.gov/business/buildingpermits/": "Building Permits",
+   "https://data.cabq.gov/business/busregistration/": "Business Registration",
+   "https://data.cabq.gov/business/busregistration/MetaData.pdf/view": "Business Registration Metadata",
+   "https://data.cabq.gov/business/filmlocations/": "Film Locations",
+   "https://data.cabq.gov/business/filmlocations/MetaData.pdf/view": "Film Locations Metadata",
+   "https://data.cabq.gov/business/foodinspections/": "Food Inspections",
+   "https://data.cabq.gov/business/foodinspections/MetaData.pdf/view": "Food Inspections Metadata",
+   "https://data.cabq.gov/business/poolinspections/": "Pool Inspections",
+   "https://data.cabq.gov/business/poolinspections/MetaData.pdf/view": "Pool Inspections Metadata",
+   "https://data.cabq.gov/business/LIVES/": "Restaurant Inspections in LIVES format",
+   "https://data.cabq.gov/business/LIVES/Yelp%20LIVES%20-%20CoreMetaData.pdf/view": "Restaurant Inspections in LIVES format Metadata",
+   "https://data.cabq.gov/business/zoneatlas/": "Zone Atlas",
+   "https://data.cabq.gov/business/zoneatlas/MetaData.pdf/view": "Zone Atlas Metadata",
+   "https://data.cabq.gov/government/addresspoints": "Address Points",
+   "https://data.cabq.gov/government/addresspoints/MetaData.pdf/view": "Address Points Metadata",
+   "https://data.cabq.gov/government/campaignfinalized/": "Campaign Finalized",
+   "https://data.cabq.gov/government/campaignfinalized/MetaData.pdf/view": "Campaign Finalized Metadata",
+   "https://data.cabq.gov/government/campaignvendor/": "Campaign Vendor",
+   "https://data.cabq.gov/government/campaignvendor/MetaData.pdf/view": "Campaign Vendor Metadata",
+   "https://data.cabq.gov/government/citycouncildistricts": "City Council Districts",
+   "https://data.cabq.gov/government/citycouncildistricts/MetaData.pdf/view": "City Council Districts Metadata",
+   "https://data.cabq.gov/government/citylimits/": "City Limits",
+   "https://data.cabq.gov/government/citylimits/MetaData.pdf/view": "City Limits Metadata",
+   "https://data.cabq.gov/government/dmdprojects": "DMD Projects",
+   "https://data.cabq.gov/government/dmdprojects/MetaData.pdf/view": "DMD Projects Metadata",
+   "https://data.cabq.gov/government/eebenefitsrates": "Employee Benefits & Rates",
+   "https://data.cabq.gov/government/eebenefitsrates/MetaData.pdf/view": "Employee Benefits & Rates Metadata"
+  }
+ },
+ "San Bernardino CA": {
+  "files": [],
+  "portals": {
+   "https://sbcity.org/1427/Opengov---Open-Data-Tool": "Opengov - Open Data Tool",
+   "https://experience.arcgis.com/experience/0c36a9ecaea24882b225053f7c491da2/page/Demographics": "Demographics",
+   "https://sbcta.maps.arcgis.com/apps/MapSeries/index.html?appid=eedae67087af404ab9506c309b3f2321": "open data portal",
+   "https://experience.arcgis.com/experience/0c36a9ecaea24882b225053f7c491da2": "Maps",
+   "https://www.arcgis.com/apps/instant/basic/index.html?appid=7c4e37b918274de4a51166924221d042": "Interactive Ward Map",
+   "https://sbcta.maps.arcgis.com/apps/opsdashboard/index.html": "Contracts Dashboard",
+   "http://sbcity.org/1427/Opengov---Open-Data-Tool": "Opengov - Open Data Tool"
+  }
+ },
+ "Detroit": {
+  "files": [],
+  "portals": {}
+ },
+ "Morón Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Huntsville": {
+  "files": [
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/01/DowntownParking_2025.pdf",
+    "text": "Downtown Public Parking Map – PD F",
+    "file": "data/city_files/Huntsville/736d04_DowntownParking_2025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/01/CityHallParking_2025.pdf",
+    "text": "Downtown Public Parking around City Hall",
+    "file": "data/city_files/Huntsville/a62e4b_CityHallParking_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2026/11/Meek-Greenway-Map.pdf",
+    "text": "View the map.",
+    "file": "data/city_files/Huntsville/4d0d9b_Meek-Greenway-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2023/03/Go-Huntsville-Transit-Final-Report.pdf",
+    "text": "Huntsville Transit Improvement Plan",
+    "file": "data/city_files/Huntsville/6e3208_Go-Huntsville-Transit-Final-Report.pdf",
+    "rows": 325,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/03/CityofHSV_PublicTransit_Rebrand_Orbit_RiderGuide_R2-v1.pdf",
+    "text": "CLICK TO SEE THE ORBIT BROCHURE",
+    "file": "data/city_files/Huntsville/0a88d7_CityofHSV_PublicTransit_Rebrand_Orbit_RiderGuide_R2-v1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/11/Huntsville-Map.pdf",
+    "text": "8 stations",
+    "file": "data/city_files/Huntsville/857425_Huntsville-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/04/PANOPLY-INFOMAP-2025WEB-1.pdf",
+    "text": "Free Parking and Orbit Shuttle Route 1",
+    "file": "data/city_files/Huntsville/624a93_PANOPLY-INFOMAP-2025WEB-1.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/04/Panoply-Parking-2025-Final_web.pdf",
+    "text": "Free Parking and Orbit Shuttle Route 2",
+    "file": "data/city_files/Huntsville/0a081b_Panoply-Parking-2025-Final_web.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/04/COH_PanoplyVBC_Parking.pdf",
+    "text": "Downtown Special Event Parking Map",
+    "file": "data/city_files/Huntsville/597343_COH_PanoplyVBC_Parking.pdf",
+    "rows": 13,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/04/Panoply-Parking-2025_Orbit-Route-2-Web-5.pdf",
+    "text": "Free Parking and Orbit Shuttle Route 2",
+    "file": "data/city_files/Huntsville/87b4d0_Panoply-Parking-2025_Orbit-Route-2-Web-5.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2015/06/bikeplan2006.pdf",
+    "text": "Bikeway Plan 2006",
+    "file": "data/city_files/Huntsville/899e65_bikeplan2006.pdf",
+    "rows": 177,
+    "bike_rows": 62
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2020/07/BikePlan2020_Existing.pdf",
+    "text": "2020 Bike Routes Printable PDF",
+    "file": "data/city_files/Huntsville/93b51e_BikePlan2020_Existing.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/05/Huntsville-Transit-Title-VI-Program-Plan-Update_December-2024.pdf",
+    "text": "Public Transit Title VI Program",
+    "file": "data/city_files/Huntsville/a6f892_Huntsville-Transit-Title-VI-Program-Plan-Update_December-2024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2015/06/PUBLIC-TRANSIT-CIVIL-RIGHTS-STRATEGIC-PLAN.pdf",
+    "text": "Public Transit Civil Rights Strategic Plan",
+    "file": "data/city_files/Huntsville/58c694_PUBLIC-TRANSIT-CIVIL-RIGHTS-STRATEGIC-PLAN.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/05/DBE-PROGRAM-Plan-Update-Signed_May-2025.pdf",
+    "text": "Public Transit DBE Program",
+    "file": "data/city_files/Huntsville/4cd785_DBE-PROGRAM-Plan-Update-Signed_May-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2024/12/DBELO-Update_Emma-Walker.pdf",
+    "text": "Public Transit DBE Program Update- DBELO December 2024",
+    "file": "data/city_files/Huntsville/7b47ba_DBELO-Update_Emma-Walker.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2024/12/FY25-FY27-DBE-Goal-Update.pdf",
+    "text": "Public Transit DBE Goal Calculation FY 2025 – FY 2027",
+    "file": "data/city_files/Huntsville/df374e_FY25-FY27-DBE-Goal-Update.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/08/Maple-Hill-Tree-Trail-Booklet.pdf",
+    "text": "Maple Hill Tree Trail Booklet",
+    "file": "data/city_files/Huntsville/5b3708_Maple-Hill-Tree-Trail-Booklet.pdf",
+    "rows": 211,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2026/07/S_Loop_Greenway_July2026-1.pdf",
+    "text": "View a map of the South Huntsville Greenway Loop",
+    "file": "data/city_files/Huntsville/f4266c_S_Loop_Greenway_July2026-1.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2025/08/Tollgate-Greenway_11x17-r.pdf",
+    "text": "View the Tollgate Greenway Project Design.",
+    "file": "data/city_files/Huntsville/fd2461_Tollgate-Greenway_11x17-r.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2015/06/Old-Town-Final-NR.pdf",
+    "text": "Old Town’s National Register of Historic Places Registration Form",
+    "file": "data/city_files/Huntsville/e617c2_Old-Town-Final-NR.pdf",
+    "rows": 269,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2023/08/Route-changes-public-hearing-notice.pdf",
+    "text": "here",
+    "file": "data/city_files/Huntsville/4e5a89_Route-changes-public-hearing-notice.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2024/01/Transit-Changes-January-2024-1.pdf",
+    "text": "modifications",
+    "file": "data/city_files/Huntsville/495ee3_Transit-Changes-January-2024-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2018/06/SanitationRouteChangeMap.pdf",
+    "text": "SanitationRouteChangeMap",
+    "file": "data/city_files/Huntsville/67fba1_SanitationRouteChangeMap.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2018/06/SanitationRouteChangeStreets.pdf",
+    "text": "Sanitation Route Change Streets",
+    "file": "data/city_files/Huntsville/5e11d5_SanitationRouteChangeStreets.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2024/04/GreenwayMasterPlan_2024.pdf",
+    "text": "2024 Greenway Plan",
+    "file": "data/city_files/Huntsville/ba607e_GreenwayMasterPlan_2024.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/AldridgeCreekGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/c68b7a_AldridgeCreekGnwy.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/AtwoodGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/ced634_AtwoodGnwy.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/BigCoveCreekGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/1621ee_BigCoveCreekGnwy.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/FlintRiverGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/b2a2a9_FlintRiverGnwy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/GatewayGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/0f0914_GatewayGnwy.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/IndianCreekGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/e69272_IndianCreekGnwy.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/LittleCoveGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/d62213_LittleCoveGnwy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/TennesseRiverGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/1e5441_TennesseRiverGnwy.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/WadeMtnGnwy.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/ec295b_WadeMtnGnwy.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://maps.huntsvilleal.gov/greenways/images/pdfs/Zierdt.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/Huntsville/91a2a1_Zierdt.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.huntsvilleal.gov/wp-content/uploads/2016/08/HaysTrailMap08012016.pdf",
+    "text": "Hays Nature Preserve Map",
+    "file": "data/city_files/Huntsville/f8c2aa_HaysTrailMap08012016.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Edirne": {
+  "files": [],
+  "portals": {
+   "https://webgis.edirne.bel.tr/keos/?p=MEBISREHBERMAP": "Mezarlık Bilgi Sistemi",
+   "https://webgis.edirne.bel.tr/BELNET": "E-Ruhsat/Çap",
+   "https://webgis.edirne.bel.tr/imardurumu/index.aspx": "İmar Durum",
+   "https://webgis.edirne.bel.tr/keos/": "Kent Rehberi"
+  }
+ },
+ "Ramapo": {
+  "files": [
+   {
+    "url": "https://www.ramapo.gov/uploads/BZP/1762459405_1687794768_BUILDING%20PERMIT%20APP..pdf",
+    "text": "Building Permit Application",
+    "file": "data/city_files/Ramapo/515498_1762459405_1687794768_BUILDING_20PERMIT_20APP..pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.ramapo.gov/uploads/clerk/1731087087_Town%20of%20Ramapo%20Parking%20Regulations.pdf",
+    "text": "Parking Regulations",
+    "file": "data/city_files/Ramapo/1a4347_1731087087_Town_20of_20Ramapo_20Parking_20Regulations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.ramapocompplan.com/_files/ugd/bbff33_e8d445fbdb0b44d08495bceac773472c.pdf",
+    "text": "Proposed Final Scope",
+    "file": "data/city_files/Ramapo/8bbf8e_bbff33_e8d445fbdb0b44d08495bceac773472c.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {}
+ },
+ "Norman": {
+  "files": [
+   {
+    "url": "https://normanok.gov/archival-document?document=https%3A//www.normanok.gov/sites/default/files/documents/2026-07/ward_citywide_webmap-2022_-_updated_7-8-26.pdf&title=ward_citywide_webmap-2022_-_updated_7-8-26.pdf",
+    "text": "City Wide Map",
+    "file": "data/city_files/Norman/4769d2_archival-document",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://normanok.gov/archival-document?document=https%3A//www.normanok.gov/sites/default/files/documents/2025-07/ward_1_webmap_large-2022-updated_7-2-25.pdf&title=ward_1_webmap_large-2022-updated_7-2-25.pdf",
+    "text": "Ward 1",
+    "file": "data/city_files/Norman/d2f4b7_archival-document",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.normanok.gov/archival-document?document=https%3A//www.normanok.gov/sites/default/files/documents/2026-07/ward_2_webmap_large-2022_updated_7-8-26.pdf&title=ward_2_webmap_large-2022_updated_7-8-26.pdf",
+    "text": "Ward 2",
+    "file": "data/city_files/Norman/9f0c54_archival-document",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.normanok.gov/sites/default/files/documents/2025-10/ward_3_webmap_large-2022_updated_10-29-25.pdf",
+    "text": ",",
+    "file": "data/city_files/Norman/00c9e0_ward_3_webmap_large-2022_updated_10-29-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://normanok.gov/archival-document?document=https%3A//www.normanok.gov/sites/default/files/documents/2025-10/ward_3_webmap_large-2022_updated_10-29-25_0.pdf&title=ward_3_webmap_large-2022_updated_10-29-25.pdf",
+    "text": "Ward 3,",
+    "file": "data/city_files/Norman/ab5c1d_archival-document",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://normanok.gov/archival-document?document=https%3A//www.normanok.gov/sites/default/files/documents/2026-04/ward_5_webmap_large-2022_-_updated_4-16-26.pdf&title=ward_5_webmap_large-2022_-_updated_4-16-26.pdf",
+    "text": "Ward 5",
+    "file": "data/city_files/Norman/923167_archival-document",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.normanok.gov/archival-document?document=https%3A//www.normanok.gov/sites/default/files/documents/2026-07/ward_6_webmap_large-2022_updated_7-8-26.pdf&title=ward_6_webmap_large-2022_updated_7-8-26.pdf",
+    "text": "Ward 6",
+    "file": "data/city_files/Norman/9fe038_archival-document",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://normanok.gov/archival-document?document=https%3A//www.normanok.gov/sites/default/files/documents/2025-07/ward_7_webmap_large-2022-23_-_updated_7-2-25.pdf&title=ward_7_webmap_large-2022-23_-_updated_7-2-25.pdf",
+    "text": "Ward 7",
+    "file": "data/city_files/Norman/0fc555_archival-document",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://normanok.gov/archival-document?document=https%3A//www.normanok.gov/sites/default/files/documents/2024-09/ward_8_webmap_large-2022_updated_9-4-24.pdf&title=ward_8_webmap_large-2022_updated_9-4-24.pdf",
+    "text": "Ward 8",
+    "file": "data/city_files/Norman/336c8e_archival-document",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.normanok.gov/sites/default/files/documents/2020-10/Bike%20Map.pdf",
+    "text": "Bike Routes",
+    "file": "data/city_files/Norman/32d752_Bike_20Map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://normanok.gov/sites/default/files/documents/2023-03/Norman_Microtransit_CostProposalForm_3-17-23_Final.xlsx",
+    "text": "Norman_Microtransit_CostProposalForm_3-17-23_Final.xlsx",
+    "file": "data/city_files/Norman/e00c4b_Norman_Microtransit_CostProposalForm_3-17-23_Final.xlsx",
+    "rows": 25,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://normanok.gov/sites/default/files/documents/2023-09/pditrafficparkingq-2016.xlsx",
+    "text": "pditrafficparkingq-2016.xlsx",
+    "file": "data/city_files/Norman/9eeaef_pditrafficparkingq-2016.xlsx",
+    "rows": 5001,
+    "bike_rows": 5001
+   },
+   {
+    "url": "https://normanok.gov/sites/default/files/documents/2023-09/pditrafficparkingq-2017.xlsx",
+    "text": "pditrafficparkingq-2017.xlsx",
+    "file": "data/city_files/Norman/cda0d8_pditrafficparkingq-2017.xlsx",
+    "rows": 5001,
+    "bike_rows": 5001
+   },
+   {
+    "url": "https://normanok.gov/sites/default/files/documents/2023-09/pditrafficparkingq-2018.xlsx",
+    "text": "pditrafficparkingq-2018.xlsx",
+    "file": "data/city_files/Norman/724a78_pditrafficparkingq-2018.xlsx",
+    "rows": 5001,
+    "bike_rows": 5001
+   },
+   {
+    "url": "https://normanok.gov/sites/default/files/documents/2023-09/pditrafficparkingq-2019.xlsx",
+    "text": "pditrafficparkingq-2019.xlsx",
+    "file": "data/city_files/Norman/b92c4d_pditrafficparkingq-2019.xlsx",
+    "rows": 5001,
+    "bike_rows": 5001
+   },
+   {
+    "url": "https://normanok.gov/sites/default/files/documents/2023-09/pditrafficparkingq-2020.xlsx",
+    "text": "pditrafficparkingq-2020.xlsx",
+    "file": "data/city_files/Norman/07de8e_pditrafficparkingq-2020.xlsx",
+    "rows": 5001,
+    "bike_rows": 5001
+   },
+   {
+    "url": "https://normanok.gov/sites/default/files/documents/2023-09/pditrafficparkingq-2021.xlsx",
+    "text": "pditrafficparkingq-2021.xlsx",
+    "file": "data/city_files/Norman/aa209a_pditrafficparkingq-2021.xlsx",
+    "rows": 5001,
+    "bike_rows": 5001
+   },
+   {
+    "url": "https://normanok.gov/sites/default/files/documents/2023-09/pditrafficparkingq-2022.xlsx",
+    "text": "pditrafficparkingq-2022.xlsx",
+    "file": "data/city_files/Norman/6a88a9_pditrafficparkingq-2022.xlsx",
+    "rows": 5001,
+    "bike_rows": 5001
+   },
+   {
+    "url": "https://normanok.gov/sites/default/files/documents/2023-09/pditrafficparkingq-2023_q1q2.xlsx",
+    "text": "pditrafficparkingq-2023_q1q2.xlsx",
+    "file": "data/city_files/Norman/d94f49_pditrafficparkingq-2023_q1q2.xlsx",
+    "rows": 5001,
+    "bike_rows": 5001
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/123a997164fb4e3bbcdd4120d8e7560c/": "Find My Ward",
+   "https://experience.arcgis.com/experience/6762fde1f2fc4912aa6968fc5364289d": "Open Map",
+   "https://experience.arcgis.com/experience/16b9ba3adfad4f2289eac3d5980638c2": "Explore Construction Map",
+   "https://norman-gis-open-data-normanok.hub.arcgis.com/          ": "Explore Open Data & Mapping Site",
+   "https://experience.arcgis.com/experience/73cbf5d44d95472ebf05fde73816434c/": "LINK",
+   "https://normanok.maps.arcgis.com/apps/webappviewer/index.html?id=f69b169befde4e6080f9b33cbd03f54f": "Flood Maps",
+   "https://waterdata.usgs.gov/ok/nwis/nwis": "National Water Information System, Real-Time Data for Oklahoma",
+   "https://waterdata.usgs.gov/nwis/uv?site_no=07229050": "Canadian River at Norman, Oklahoma",
+   "https://waterdata.usgs.gov/monitoring-location/07229900/": "Lake Thunderbird near Norman, Oklahoma",
+   "https://waterdata.usgs.gov/ok/nwis/uv/?site_no=07230000&PARAmeter_cd=00065,00060": "Little River Below Lake Thunderbird near Norman, Oklahoma",
+   "https://normanok.gov/public-safety/police-department/open-data-portal/complaints-inquiries-and-use-force": "Complaints, Inquiries, and Use of Force"
+  }
+ },
+ "Provo": {
+  "files": [],
+  "portals": {}
+ },
+ "Carmel": {
+  "files": [
+   {
+    "url": "https://www.carmelclayparks.com/wp-content/uploads/2019/01/8.5X11-Monon-Greenway-Map-2017.pdf",
+    "text": "View Monon Greenway Map",
+    "file": "data/city_files/Carmel/0430ed_8.5X11-Monon-Greenway-Map-2017.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://carmelutilities.com/wp-content/uploads/2021/11/2018_Route_Map.pdf",
+    "text": "Click here",
+    "file": "data/city_files/Carmel/859ff0_2018_Route_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://carmel-gis-cityofcarmel.hub.arcgis.com/": "GIS Mapping",
+   "https://experience.arcgis.com/experience/a26080ed41b8465e84545c62265ade8c/page/General-Viewer/": "Engineering GIS Viewer",
+   "https://experience.arcgis.com/experience/ff9f738d9c3a46c7be420e1323231d6f/": "Access the completed survey here.",
+   "https://experience.arcgis.com/experience/a26080ed41b8465e84545c62265ade8c/page/Public-Hearings/": "Active Public Hearings",
+   "https://carmelgis.carmel.in.gov/maps/apps/experiencebuilder/experience/?id=c63fe8773d854f539b1d3d63ebbfa865": "Residential Street Parking Map",
+   "https://carmelgis.carmel.in.gov/maps/apps/dashboards/7c2fceb6140f4185bb028d1b2d3a47f0": "Carmel Trails"
+  }
+ },
+ "Yakima": {
+  "files": [],
+  "portals": {}
+ },
+ "Hemet": {
+  "files": [],
+  "portals": {}
+ },
+ "Kennewick": {
+  "files": [
+   {
+    "url": "https://maps.ci.kennewick.wa.us/PDFMaps/CityStreetMap.pdf",
+    "text": "Open PDF",
+    "file": "data/city_files/Kennewick/36038c_CityStreetMap.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://maps.ci.kennewick.wa.us/PDFMaps/CityStreetMapwGrid&MapReference.pdf",
+    "text": "Open PDF",
+    "file": "data/city_files/Kennewick/466628_CityStreetMapwGrid_MapReference.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.sos.wa.gov/sites/default/files/2023-11/PathToBecomingAdministrator.pdf",
+    "text": "How to Become Certified",
+    "file": "data/city_files/Kennewick/5ae6c6_PathToBecomingAdministrator.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sos.wa.gov/sites/default/files/2022-06/ada-doj_ballot_box_access.pdf",
+    "text": "ADA Ballot Drop Box Accessibility",
+    "file": "data/city_files/Kennewick/def0b0_ada-doj_ballot_box_access.pdf",
+    "rows": 30,
+    "bike_rows": 16
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/04d4e475b93d43e5a37b94cccd540c87": "Current Development",
+   "http://kennewick.maps.arcgis.com/home/index.html": "Locate Water / Sewer Line",
+   "https://storymaps.arcgis.com/stories/8ca4b15ea3d54d4393d41d04e975a57e": "Click here",
+   "https://kennewick.maps.arcgis.com": "Mapping Portal",
+   "https://gisdata-kennewick.hub.arcgis.com/": "Download GIS Data",
+   "https://experience.arcgis.com/experience/d955547fc9a34ab694508bc5e68b6a32": "Parcel Map",
+   "https://experience.arcgis.com/experience/deba9fa3b8004aef9b542b6c2440179c": "Utilities Map",
+   "https://experience.arcgis.com/experience/9e0d26c2b96b43468fee5a56e00a6543": "Wards & Precincts Map",
+   "https://experience.arcgis.com/experience/4a0920703c22494688959fae0934b6f8": "Zoning Map",
+   "https://experience.arcgis.com/experience/a1537cc0d85b442aab15c105100c05e2": "Fire Hydrant Map",
+   "https://go2kennewick.com/library/resources-libraries/projects/open-data-library": "Open Data - Library",
+   "http://kennewick.maps.arcgis.com/apps/webappviewer/index.html?id=18b7252ef16f40b48d3ae0eae6949362": "Locate Water/Sewer Lines"
+  }
+ },
+ "Oberá": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Joseph": {
+  "files": [],
+  "portals": {
+   "http://sjbike.integritygis.com/": "Urban Trails in St. Joseph Mobile GIS Site",
+   "https://experience.arcgis.com/experience/0e72fecc76b8424381c865f8cad3c2b0": "Interactive Historic Map",
+   "https://stjoemo.maps.arcgis.com/apps/mapviewer/index.html?webmap=eb9485538a8e44e6ae10539a4cf1ddcf": "St. Joseph Trail Map",
+   "https://sjbikegis.integritygis.com/H5/Index.html?viewer=sjbike": "Site",
+   "https://stjoemo.maps.arcgis.com/apps/MapJournal/index.html?appid=77db5c6eb06a49cd974d2950bcd45c71": "Trail System Story Map",
+   "https://stjoemo.maps.arcgis.com/apps/Embed/index.html?webmap=ad6d4bb122b441d5b344ff884793cb79&extent=-94.9514,39.7,-94.6979,39.8092&home=true&zoom=true&scale=true&basemap_gallery=true&disable_scroll=false&theme=light": "View larger map",
+   "https://stjoemo.maps.arcgis.com/apps/dashboards/a8333b4b2aa640cc8421284110c40c1e": "City of St. Joseph Fatal Crash Dashboard",
+   "https://stjoemo.maps.arcgis.com/apps/mapviewer/index.html?webmap=d11b0025f9ad426294039acb0503a708": "2025-2028 TIP Map",
+   "https://stjoemo.maps.arcgis.com/apps/webappviewer/index.html?id=a6d6b10bc3db4fe9b76f8af335608c17": "",
+   "https://stjosephgis.integritygis.com/H5/Index.html?viewer=stjoseph": "City of St. Joseph/Buchanan County GIS"
+  }
+ },
+ "Koyilandy Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Kanhangad Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Pico Rivera": {
+  "files": [],
+  "portals": {}
+ },
+ "Medford": {
+  "files": [],
+  "portals": {}
+ },
+ "Pocatello": {
+  "files": [
+   {
+    "url": "https://www.portneufgreenway.org/wp-content/uploads/2022/01/Portneuf-Greenway-2008-Master-Plan.pdf",
+    "text": "Master Plan",
+    "file": "data/city_files/Pocatello/1302a3_Portneuf-Greenway-2008-Master-Plan.pdf",
+    "rows": 81,
+    "bike_rows": 14
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/ddb95be54cb64c6289aff2f7a96615b2": "",
+   "https://experience.arcgis.com/experience/3db953c36bed4b4886422b58e207669e": "",
+   "http://bannock.maps.arcgis.com/apps/webappviewer/index.html?id=dfe86cb077844d8f8b68ba01ac6f7087": "",
+   "https://experience.arcgis.com/experience/3dfca0a2d870477ca827d662aa8b259b": "",
+   "https://comprehensive-plan-2040-pocatello.hub.arcgis.com/": "comprehensive-plan-2040-pocatello.hub.arcgis.com/",
+   "https://citycreektrailsplan-pocatello.hub.arcgis.com/": "citycreektrailsplan-pocatello.hub.arcgis.com/",
+   "https://pocatello.maps.arcgis.com/apps/webappviewer/index.html?id=5505060740c74d3a941154767ff2fddd": "Trail System Map"
+  }
+ },
+ "Paramount": {
+  "files": [],
+  "portals": {}
+ },
+ "Irinjalakuda Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Coral Gables": {
+  "files": [
+   {
+    "url": "https://coralgables.com/sites/default/files/2026-07/Trolley%20Brochure%20Map%202026.pdf",
+    "text": "Trolley Route and Points of Interest Map [PDF]",
+    "file": "data/city_files/Coral_Gables/d4f467_Trolley_20Brochure_20Map_202026.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coralgables.com/sites/default/files/2025-12/Southern-Loop-Trolley-Stops-CH.pdf",
+    "text": "Southern Loop Trolley Stops [PDF]",
+    "file": "data/city_files/Coral_Gables/2c862b_Southern-Loop-Trolley-Stops-CH.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamidadeclerk.gov/resources-clerk/library/Parking/548-Web.pdf",
+    "text": "Affidavit to Transfer Liability",
+    "file": "data/city_files/Coral_Gables/eaae3e_548-Web.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamidadeclerk.gov/resources-clerk/library/Parking/264-Web.pdf",
+    "text": "Affidavit Disabled Parking Space",
+    "file": "data/city_files/Coral_Gables/b18480_264-Web.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamidadeclerk.gov/resources-clerk/library/Parking/265-Web.pdf",
+    "text": "Affidavit for Disabled Parking at Meter",
+    "file": "data/city_files/Coral_Gables/1b4ef7_265-Web.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamidadeclerk.gov/resources-clerk/library/Parking/288-Web.pdf",
+    "text": "Motion",
+    "file": "data/city_files/Coral_Gables/cdb2ed_288-Web.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.miamidadeclerk.gov/resources-clerk/library/Parking/332-Web.pdf",
+    "text": "Request for Court Hearing",
+    "file": "data/city_files/Coral_Gables/7e980d_332-Web.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://coralgables.com/sites/default/files/2025-05/COCG-Resident-Parking-Discount-Application-CH.pdf",
+    "text": "Resident Parking Discount Application [PDF]",
+    "file": "data/city_files/Coral_Gables/879203_COCG-Resident-Parking-Discount-Application-CH.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.coralgables.com/sites/default/files/2025-12/Southern-Loop-Trolley-Stops-CH.pdf",
+    "text": "Southern Loop Trolley Stops [PDF]",
+    "file": "data/city_files/Coral_Gables/8169be_Southern-Loop-Trolley-Stops-CH.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cggis.maps.arcgis.com/apps/webappviewer/index.html?id=4a449f46c77f40439430ec3569e75d6d": "Find Your Recycling Day"
+  }
+ },
+ "Esperanza": {
+  "files": [],
+  "portals": {}
+ },
+ "Cherthala Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Huber Heights": {
+  "files": [],
+  "portals": {
+   "https://hubergis.hhoh.org/portal/apps/webappviewer/index.html?id=03876bb2efd1441f8ab7d3bd50d517c5": "Conduct a property/parcel search"
+  }
+ },
+ "Bullhead City": {
+  "files": [],
+  "portals": {}
+ },
+ "Indian Trail": {
+  "files": [
+   {
+    "url": "https://s3-us-west-2.amazonaws.com/municipalcodeonline.com-new/indiantrail/ADC/files/ordinance/1714673119_Table%20of%20Permitted%20Uses%20-%2003-26-2024%20ver2.pdf",
+    "text": "Table of Permitted Uses",
+    "file": "data/city_files/Indian_Trail/f91d5c_1714673119_Table_20of_20Permitted_20Uses_20-_2003-26-2024_20ver2.pdf",
+    "rows": 173,
+    "bike_rows": 20
+   }
+  ],
+  "portals": {
+   "https://indiantrail.maps.arcgis.com/apps/instant/lookup/index.html?appid=e64c4e53fd214e919ff510c2695d5727": "",
+   "https://experience.arcgis.com/experience/8f02ba38bf10403a8109717487a63c8d": "",
+   "https://indiantrail.maps.arcgis.com/apps/dashboards/baa04cb9333643e7b4b2cf140a5ce91b": "Pavement Condition Rating Interactive Map",
+   "https://experience.arcgis.com/experience/fe516ce4f9bf4d93bb7335a4a2fdb7f5": "",
+   "https://experience.arcgis.com/experience/947126091429467da3750ed26ad94087": "",
+   "https://data-indiantrail.hub.arcgis.com/": ""
+  }
+ },
+ "Groton": {
+  "files": [
+   {
+    "url": "https://maps.groton-ct.gov/StockMaps/GISApplicationTroubleshooting.pdf",
+    "text": "GIS Application Troubleshooting.",
+    "file": "data/city_files/Groton/81ba30_GISApplicationTroubleshooting.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://groton-ct.gov/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/government/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/departments/gis/departments/gis/about_gis.php": "About GIS",
+   "https://experience.arcgis.com/experience/d06d9f14108945d097d879d724d4cf56": "Community Tree Map",
+   "https://groton-ct.gov/departments/humanservices/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/departments/parksrec/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/departments/parksrec/parks/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/departments/parksrec/rec/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/departments/parksrec/seniors/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/departments/plandev/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/departments/pubwks/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/departments/twnclk/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/visitors/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/residents/parksrec/parks/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/how_do_i/register_reserve/departments/gis/about_gis.php": "About GIS",
+   "https://www.groton-ct.gov/departments/pubwks/departments/gis/about_gis.php": "About GIS",
+   "https://groton-ct.gov/residents/parksrec/shennecossett_golf_course/departments/gis/about_gis.php": "About GIS",
+   "https://www.groton-ct.gov/departments/parksrec/departments/gis/about_gis.php": "About GIS"
+  }
+ },
+ "Bartlesville": {
+  "files": [
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2020/12/CityMaps_basicInstructions.pdf",
+    "text": "Picture based instructions (pdf)",
+    "file": "data/city_files/Bartlesville/815b23_CityMaps_basicInstructions.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2015/12/Bville_StreetMap_withAerial.pdf",
+    "text": "Bartlesville Street Map with Aerial Photo",
+    "file": "data/city_files/Bartlesville/a710cb_Bville_StreetMap_withAerial.pdf",
+    "rows": 10,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2015/12/Bville_StreetMap_wall.pdf",
+    "text": "Bartlesville Street Map Wall Size",
+    "file": "data/city_files/Bartlesville/5276d9_Bville_StreetMap_wall.pdf",
+    "rows": 10,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2015/12/Bville_StreetIndex.pdf",
+    "text": "Bartlesville Street Map Index Wall Size",
+    "file": "data/city_files/Bartlesville/e28ce3_Bville_StreetIndex.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2015/12/Bville_basicStreet_largerfont11x8.pdf",
+    "text": "Bartlesville Basic Street Map Large Font",
+    "file": "data/city_files/Bartlesville/be6762_Bville_basicStreet_largerfont11x8.pdf",
+    "rows": 13,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2015/06/Streets_36x28wallmap_7MB.pdf",
+    "text": "Streets - 36x28wallmap (7mb)",
+    "file": "data/city_files/Bartlesville/c92e40_Streets_36x28wallmap_7MB.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2015/06/HudsonLake_MapBville_4KB.pdf",
+    "text": "Hudson Lake Map (4kb)",
+    "file": "data/city_files/Bartlesville/29f90a_HudsonLake_MapBville_4KB.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2015/06/Dewey_mapindex.pdf",
+    "text": "Dewey_map&index",
+    "file": "data/city_files/Bartlesville/825685_Dewey_mapindex.pdf",
+    "rows": 178,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2015/06/FireZones_36x28wallmap_7MB.pdf",
+    "text": "FireZones-36x28wallmap (7mb)",
+    "file": "data/city_files/Bartlesville/1a4a7a_FireZones_36x28wallmap_7MB.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2015/06/Automated-Trash-Pickup3.pdf",
+    "text": "Trash Routes Map",
+    "file": "data/city_files/Bartlesville/c2e2df_Automated-Trash-Pickup3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2026/09/Trash-Pickup-Routes.pdf",
+    "text": "map",
+    "file": "data/city_files/Bartlesville/b19e95_Trash-Pickup-Routes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2024/12/Ward-Boundaries-2025-Update.pdf",
+    "text": "Ward Boundaries Map",
+    "file": "data/city_files/Bartlesville/e88c3c_Ward-Boundaries-2025-Update.pdf",
+    "rows": 14,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2026/02/City-of-Bartlesville-Recycling-RFP.pdf",
+    "text": "City of Bartlesville Recycling RFP",
+    "file": "data/city_files/Bartlesville/c4c743_City-of-Bartlesville-Recycling-RFP.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2024/04/Ord3587-Amending-Chapter-17-Article-IV-Sidewalks-of-the-Mun.-Code-4-1-24.pdf",
+    "text": "Sidewalk Cost Repair Partnership Program",
+    "file": "data/city_files/Bartlesville/7b38b1_Ord3587-Amending-Chapter-17-Article-IV-Sidewalks-of-the-Mun.-Code-4-1-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2017/09/Public-Hearing-Notice-Amendment-to-Bison-Trails.pdf",
+    "text": "Public Hearing Notice -Amendment to Bison Trails",
+    "file": "data/city_files/Bartlesville/79861d_Public-Hearing-Notice-Amendment-to-Bison-Trails.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2019/08/Downtown-Parking-Survey_Response-Data_190805.pdf",
+    "text": "Downtown Parking Survey Results",
+    "file": "data/city_files/Bartlesville/54c486_Downtown-Parking-Survey_Response-Data_190805.pdf",
+    "rows": 200,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityofbartlesville.org/wp-content/uploads/2019/11/Bicycle-Safety-Action-Plan.pdf",
+    "text": "Bicycle Safety Action Plan",
+    "file": "data/city_files/Bartlesville/3109ce_Bicycle-Safety-Action-Plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.cityofbartlesville.org/wp-content/uploads/2020/05/Trash_16routes.pdf",
+    "text": "routes",
+    "file": "data/city_files/Bartlesville/05fd36_Trash_16routes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.constantcontact.com/76b64922601/82c295e4-327c-455f-98ec-ebcdd6313099.pdf",
+    "text": "Downtown Parking Map",
+    "file": "data/city_files/Bartlesville/822eeb_82c295e4-327c-455f-98ec-ebcdd6313099.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/f3b4c66d995c4a52a559545fc51c8213": "Bartlesville Endeavor 2045"
+  }
+ },
+ "Farmers Branch": {
+  "files": [],
+  "portals": {}
+ },
+ "San Dimas": {
+  "files": [],
+  "portals": {}
+ },
+ "Brooklyn Center": {
+  "files": [],
+  "portals": {}
+ },
+ "Savage": {
+  "files": [],
+  "portals": {}
+ },
+ "Laramie": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/95f1600ddb05445d8cbd06921d90cea5": "Pavement Condition - Map",
+   "https://open-data-cityoflaramie.hub.arcgis.com/pages/applications": "Explore the City of Laramie Mapping Hub",
+   "https://experience.arcgis.com/experience/8bcba0756fd441b69b7a9d5ac4b798fc": "Current Projects Map"
+  }
+ },
+ "Highland Park": {
+  "files": [
+   {
+    "url": "https://cityhpil.com/Documents/Development/Zoning_Map_2017_Color_28x35.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Highland_Park/5199de_Zoning_Map_2017_Color_28x35.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityhpil.com/Documents/Development/Zoning_Map_2017_Color_28x35.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Highland_Park/cef9b3_Zoning_Map_2017_Color_28x35.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityhpil.com/08-12-2014rev_Bike and  Walk_final_201408261525067395.pdf?t=202602101735110",
+    "text": "Bike-Walk HP 2030",
+    "file": "data/city_files/Highland_Park/199e1b_08-12-2014rev_Bike_and_Walk_final_201408261525067395.pdf",
+    "rows": 32,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.cityhpil.com/Documents/Environment/Transportation/Biking and Walking/Highland Park Bike-Ped Map.pdf?t=202509261200480",
+    "text": "here",
+    "file": "data/city_files/Highland_Park/0059a3_Highland_Park_Bike-Ped_Map.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityhpil.com/Documents/Environment/Transportation/Biking and Walking/FFB Tour Map.pdf?t=202509261200470",
+    "text": "Download the map here.",
+    "file": "data/city_files/Highland_Park/bf3e65_FFB_Tour_Map.pdf",
+    "rows": 24,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityhpil.com/Documents/Environment/Transportation/Biking and Walking/Bike to Metra Guide 2010.pdf?t=202509261200450",
+    "text": "Bike to Metra Guide",
+    "file": "data/city_files/Highland_Park/6c2597_Bike_to_Metra_Guide_2010.pdf",
+    "rows": 12,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.cityhpil.com/Documents/Resident/Parking/City Parking Map 11 x 17 May 2024 FINAL 5-6-2024.pdf?t=202509261200460",
+    "text": "Parking map of Central, Ravinia and Braeside Business Districts",
+    "file": "data/city_files/Highland_Park/8eea00_City_Parking_Map_11_x_17_May_2024_FINAL_5-6-2024.pdf",
+    "rows": 48,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.cityhpil.com/Documents/Resident/Parking/2-Hour Free Parking Lots.pdf?t=202509261200420",
+    "text": "Free Two-Hour Parking Locations",
+    "file": "data/city_files/Highland_Park/abe53e_2-Hour_Free_Parking_Lots.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.cityhpil.com/Documents/Resident/Parking/3-Hour Free Parking Lots.pdf?t=202509261200430",
+    "text": "Free Three-Hour Parking Locations",
+    "file": "data/city_files/Highland_Park/6f4445_3-Hour_Free_Parking_Lots.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.cityhpil.com/Student Permit Parking Lots revised for 2026-27.pdf?t=202608111053590",
+    "text": "Student Parking Maps",
+    "file": "data/city_files/Highland_Park/b74448_Student_Permit_Parking_Lots_revised_for_2026-27.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Resident/Parking/City Parking Map 11 x 17 May 2024 FINAL 5-6-2024.pdf?t=202509261200460",
+    "text": "Parking map of Central, Ravinia and Braeside Business Districts",
+    "file": "data/city_files/Highland_Park/7be909_City_Parking_Map_11_x_17_May_2024_FINAL_5-6-2024.pdf",
+    "rows": 48,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Resident/Parking/2-Hour Free Parking Lots.pdf?t=202509261200420",
+    "text": "Free Two-Hour Parking Locations",
+    "file": "data/city_files/Highland_Park/5940c2_2-Hour_Free_Parking_Lots.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Resident/Parking/3-Hour Free Parking Lots.pdf?t=202509261200430",
+    "text": "Free Three-Hour Parking Locations",
+    "file": "data/city_files/Highland_Park/a37bcf_3-Hour_Free_Parking_Lots.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityhpil.com/Student Permit Parking Lots revised for 2026-27.pdf?t=202608111053590",
+    "text": "Student Parking Maps",
+    "file": "data/city_files/Highland_Park/56ff32_Student_Permit_Parking_Lots_revised_for_2026-27.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityhpil.com/Documents/Environment/Refuse, Recycling and Composting/Residential Refuse and Recycling/HighlandPark Flyer.pdf?t=202509261200490",
+    "text": "acceptable materials",
+    "file": "data/city_files/Highland_Park/0cedc7_HighlandPark_Flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityhpil.com/Environment/LRS - Branded Brochure.pdf?t=202512041637190",
+    "text": "Residential Guide for Waste and Recycling Collection in Highland Park",
+    "file": "data/city_files/Highland_Park/3a68d2_LRS_-_Branded_Brochure.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Government/Advisory Groups Boards Commissions/Historic Preservation Commission/Historic Preservation Awards/2024 Preservation Award Winners.pdf",
+    "text": "2024 Historic Preservation Award Winners",
+    "file": "data/city_files/Highland_Park/9dca49_2024_Preservation_Award_Winners.pdf",
+    "rows": 24,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Government/Advisory Groups Boards Commissions/Historic Preservation Commission/Historic Preservation Awards/2023 Historic Preservation Awards v3.pdf",
+    "text": "2023 Historic Preservation Award Winners",
+    "file": "data/city_files/Highland_Park/6e0759_2023_Historic_Preservation_Awards_v3.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Government/Advisory Groups Boards Commissions/Historic Preservation Commission/Historic Preservation Awards/Highland Park Historic Preservation Awards 2020.pdf",
+    "text": "2020 Historic Preservation Award Winners",
+    "file": "data/city_files/Highland_Park/680e20_Highland_Park_Historic_Preservation_Awards_2020.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityhpil.com/Local Districts Map - addresses.pdf?t=202605271502230",
+    "text": "Map of Local Historic Districts",
+    "file": "data/city_files/Highland_Park/8a6909_Local_Districts_Map_-_addresses.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityhpil.com/App - Historic Preservation Review.pdf?t=202605271506290",
+    "text": "Certificate of Appropriateness and Landmark Designation Application",
+    "file": "data/city_files/Highland_Park/57e0ee_App_-_Historic_Preservation_Review.pdf",
+    "rows": 40,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityhpil.com/FY2026 HPC Workplan Final.pdf?t=202605271507240",
+    "text": "2026 Historic Preservation Commission Workplan",
+    "file": "data/city_files/Highland_Park/13b852_FY2026_HPC_Workplan_Final.pdf",
+    "rows": 25,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://www.cityhpil.com/Documents/Government/Advisory Groups Boards Commissions/Historic Preservation Commission/Historic Preservation Awards/2024 Preservation Award Winners.pdf",
+    "text": "2024 Historic Preservation Award Winners",
+    "file": "data/city_files/Highland_Park/6e9140_2024_Preservation_Award_Winners.pdf",
+    "rows": 24,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.cityhpil.com/Documents/Government/Advisory Groups Boards Commissions/Historic Preservation Commission/Historic Preservation Awards/2023 Historic Preservation Awards v3.pdf",
+    "text": "2023 Historic Preservation Award Winners",
+    "file": "data/city_files/Highland_Park/4262fc_2023_Historic_Preservation_Awards_v3.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cityhpil.com/Documents/Government/Advisory Groups Boards Commissions/Historic Preservation Commission/Historic Preservation Awards/Highland Park Historic Preservation Awards 2020.pdf",
+    "text": "2020 Historic Preservation Award Winners",
+    "file": "data/city_files/Highland_Park/100faf_Highland_Park_Historic_Preservation_Awards_2020.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Environment/Refuse, Recycling and Composting/Residential Refuse and Recycling/HighlandPark Flyer.pdf?t=202509261200490",
+    "text": "acceptable materials",
+    "file": "data/city_files/Highland_Park/ea4196_HighlandPark_Flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityhpil.com/Environment/LRS - Branded Brochure.pdf?t=202512041637190",
+    "text": "Residential Guide for Waste and Recycling Collection in Highland Park",
+    "file": "data/city_files/Highland_Park/c851a3_LRS_-_Branded_Brochure.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dceo.illinois.gov/content/dam/soi/en/web/dceo/aboutdceo/reportsrequiredbystatute/approved-final-report-recycling-advancement-task-force.pdf",
+    "text": "data source",
+    "file": "data/city_files/Highland_Park/8e6ed7_approved-final-report-recycling-advancement-task-force.pdf",
+    "rows": 105,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Environment/Refuse, Recycling and Composting/Compost/swalco_foodscrap_pros.pdf?t=202509261200550",
+    "text": "Food Scrap Composting: Tips from the Pros",
+    "file": "data/city_files/Highland_Park/bb1def_swalco_foodscrap_pros.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Environment/Refuse, Recycling and Composting/Compost/June Jim Lederer Bluegrass_v3.pdf?t=202509261200500",
+    "text": "Committed to Cutting Out Waste: Bluegrass Restaurant",
+    "file": "data/city_files/Highland_Park/cbf025_June_Jim_Lederer_Bluegrass_v3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Environment/Refuse, Recycling and Composting/Compost/SWALCO_BTS_commercial composting_v4.pdf?t=202509261200550",
+    "text": "From Curbside to Compost: Behind the Scenes at a Local Compost Facility",
+    "file": "data/city_files/Highland_Park/177655_SWALCO_BTS_commercial_composting_v4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Environment/Refuse, Recycling and Composting/Compost/Can_cant_compost_SWALCO_v7.pdf?t=202509261200450",
+    "text": "Dismiss the Myths! Don't Compost These 8 Things",
+    "file": "data/city_files/Highland_Park/2b469c_Can_cant_compost_SWALCO_v7.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Environment/Refuse, Recycling and Composting/Highland Park Recycling Center/City of Highland Park Recycling Center Safety and Guidance 2025.pdf?t=202509261200460",
+    "text": "Safety Precautions and Guidance",
+    "file": "data/city_files/Highland_Park/b41bbf_City_of_Highland_Park_Recycling_Center_Safety_and_Guidance_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityhpil.com/Documents/Environment/Refuse, Recycling and Composting/Highland Park Recycling Center/E006_HighlandPark_FoamDropOff_091718.pdf?t=202509261200460",
+    "text": "Foam #6 Recycling",
+    "file": "data/city_files/Highland_Park/d50bef_E006_HighlandPark_FoamDropOff_091718.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/c349db60ca514c7a9ab846e51922f226": "Event/ Meeting Space",
+   "https://highlandparkil.maps.arcgis.com/apps/dashboards/6725bef719c3452db5e11d485e5d5cfe": "Available Commercial Properties Dashboard",
+   "https://storymaps.arcgis.com/stories/282cf5f8382b4ee6b7c52bfe886f7f47": "Development Projects",
+   "https://highlandparkil.maps.arcgis.com/apps/instant/basic/index.html?appid=fe793010c6664a1d9eb4b5c56df00919": "Aerial map of all City parking lots",
+   "https://experience.arcgis.com/experience/b07d3ea79b5c42e8af88c94864fec008": "Onsite Payment Kiosks Map",
+   "https://storymaps.arcgis.com/stories/8fb11ef4715541d89bd05726426db999": "Capital Improvement Program",
+   "https://storymaps.arcgis.com/stories/d570f2865a274281b2fbbd3184087cc8": "Explore Sustainable Highland Park!",
+   "https://www.arcgis.com/sharing/rest/oauth2/authorize?client_id=arcgisstorymaps&response_type=token&expiration=20160&redirect_uri=https%3A%2F%2Fstorymaps.arcgis.com%2Foauth-callback%3FreturnURL%3D%252Fstories%252Fdf42a4d7d2a641eea992c2cac1b990a9&hideCancel=true&showSignupOption=true&force_login=true": "active projects",
+   "https://rel.maps.arcgis.com/apps/dashboards/b383bb4f9eac4989a652991237abaedf": "GetTheLeadOutIL.com/highlandpark",
+   "https://highlandparkil.maps.arcgis.com/apps/instant/basic/index.html?appid=b4f4ffb2a56848a287c9ef51681fdb31": "website thru this link"
+  }
+ },
+ "Kirkwood": {
+  "files": [],
+  "portals": {}
+ },
+ "Aberdeen": {
+  "files": [
+   {
+    "url": "https://img1.wsimg.com/blobby/go/8a79793e-629b-435c-bf65-33065444da44/downloads/eeaa46f7-3ea0-4358-b3b9-a989f1105120/City%20of%20Aberdeen%20Zoning_1-12-2026.pdf?ver=1789506153037",
+    "text": "City of Aberdeen Zoning Map (pdf) Download",
+    "file": "data/city_files/Aberdeen/675da7_City_20of_20Aberdeen_20Zoning_1-12-2026.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://img1.wsimg.com/blobby/go/8a79793e-629b-435c-bf65-33065444da44/downloads/9828e96c-efac-493f-a95d-caf4beaa6890/City%20of%20Aberdeen%20Garbage%20Routes%202026.pdf?ver=1789506153037",
+    "text": "City of Aberdeen Garbage Route (pdf) Download",
+    "file": "data/city_files/Aberdeen/03c0c9_City_20of_20Aberdeen_20Garbage_20Routes_202026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://img1.wsimg.com/blobby/go/8a79793e-629b-435c-bf65-33065444da44/downloads/3d2debd3-db36-42f2-bd16-4fb9478f4fe4/2026%20STREET%20SWEEPING%20MAP.pdf?ver=1789506153037",
+    "text": "City of Aberdeen Street Sweeping (pdf) Download",
+    "file": "data/city_files/Aberdeen/c29e87_2026_20STREET_20SWEEPING_20MAP.pdf",
+    "rows": 13,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://img1.wsimg.com/blobby/go/8a79793e-629b-435c-bf65-33065444da44/downloads/abf2307e-347d-44ff-898d-254afddbae5d/Medical%20Marijuana%20Zone%20Map.pdf?ver=1789506153037",
+    "text": "City of Aberdeen Medical Marijuana (pdf) Download",
+    "file": "data/city_files/Aberdeen/8eaa72_Medical_20Marijuana_20Zone_20Map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.brown.sd.us/sites/default/files/2023-12/ShelterMap.pdf",
+    "text": "Emergency Shelters",
+    "file": "data/city_files/Aberdeen/2b0866_ShelterMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.brown.sd.us/sites/default/files/2024-02/2015BrownSDOfficialZoningMapwithDates.pdf",
+    "text": "Official Zoning Map",
+    "file": "data/city_files/Aberdeen/58b8c5_2015BrownSDOfficialZoningMapwithDates.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.brown.sd.us/sites/default/files/2026-05/CountyRoadClosure_3.pdf",
+    "text": "Closure & Posted Roads Map - Countywide",
+    "file": "data/city_files/Aberdeen/bec3df_CountyRoadClosure_3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.brown.sd.us/sites/default/files/2026-05/RichmondLakeDetour.pdf",
+    "text": "Closure & Posted Roads Map - Richmond Lake Detour",
+    "file": "data/city_files/Aberdeen/3733d0_RichmondLakeDetour.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.brown.sd.us/sites/default/files/2025-11/2025-FairgroundsMap.pdf",
+    "text": "Map of the Fairgrounds",
+    "file": "data/city_files/Aberdeen/f302b7_2025-FairgroundsMap.pdf",
+    "rows": 30,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://brown.sd.us/sites/default/files/2024-05/authorizeforreleaseofcertificateofmilitarydischarge.pdf",
+    "text": "Authorization for Release of Certificate of Military Discharge",
+    "file": "data/city_files/Aberdeen/5ec940_authorizeforreleaseofcertificateofmilitarydischarge.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://aberdeengis.com/": "City Maps",
+   "https://experience.arcgis.com/experience/0e166ed44a684f51ae9f7d2fe6d54aed/": "Launch Map"
+  }
+ }
+}
