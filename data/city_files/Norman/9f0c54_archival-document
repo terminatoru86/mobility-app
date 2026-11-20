@@ -1,0 +1,843 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RQGN3YXF2G "></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "G-RQGN3YXF2G ", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location","allow_ad_personalization_signals":false});</script>
+<link rel="canonical" href="https://www.normanok.gov/archival-document" />
+<meta property="og:site_name" content="City of Norman, OK" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.normanok.gov/archival-document" />
+<meta property="og:title" content="Archival Document" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@cityofnormanok" />
+<meta name="twitter:title" content="Archival Document" />
+<meta name="Generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/paladin/images/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>Archival Document | City of Norman, OK</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_o9ucrvvdCtEwr7fKO7eNIQun5YO6FgsPfF2m02vtGxg.css?delta=0&amp;language=en&amp;theme=paladin&amp;include=eJxljksOwyAMRC-EwpGQA5PEqvkIO1V6-9Kqooss35PHMyvM0AOuVhUpbCwD1e8o6CQOlwmXh0_9bCTLDx1vgXo8-EkSUo1nRjH1N-VGhhIXT1azTtrquJ70reI4-YC0MWFyroJ4Cv6m9p0K6_jYu-rqubA5rZFHdUZiCp-R6u9qsQMZTl9qyH4lxRu0EGR2" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_4iJNw4Zh3HBrkrUgzccNusvpEjD4pMDaIjXWxB8An1s.css?delta=1&amp;language=en&amp;theme=paladin&amp;include=eJxljksOwyAMRC-EwpGQA5PEqvkIO1V6-9Kqooss35PHMyvM0AOuVhUpbCwD1e8o6CQOlwmXh0_9bCTLDx1vgXo8-EkSUo1nRjH1N-VGhhIXT1azTtrquJ70reI4-YC0MWFyroJ4Cv6m9p0K6_jYu-rqubA5rZFHdUZiCp-R6u9qsQMZTl9qyH4lxRu0EGR2" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:400,600" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_ZflJe08IIce6e4lYxowlLA_5ZbCp16sH-2mr6NoFvf8.css?delta=3&amp;language=en&amp;theme=paladin&amp;include=eJxljksOwyAMRC-EwpGQA5PEqvkIO1V6-9Kqooss35PHMyvM0AOuVhUpbCwD1e8o6CQOlwmXh0_9bCTLDx1vgXo8-EkSUo1nRjH1N-VGhhIXT1azTtrquJ70reI4-YC0MWFyroJ4Cv6m9p0K6_jYu-rqubA5rZFHdUZiCp-R6u9qsQMZTl9qyH4lxRu0EGR2" />
+
+    <script src="https://kit.fontawesome.com/a49ab5fc5c.js" defer crossorigin="anonymous"></script>
+<script src="https://cdn.userway.org/widget.js" data-account="FROOwq4rcn"></script>
+<!-- generic favicons -->
+    <link rel="icon" href="/themes/custom/paladin/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="/themes/custom/paladin/images/favicon-57.png" sizes="57x57">
+    <link rel="icon" href="/themes/custom/paladin/images/favicon-76.png" sizes="76x76">
+    <link rel="icon" href="/themes/custom/paladin/images/favicon-96.png" sizes="96x96">
+    <link rel="icon" href="/themes/custom/paladin/images/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="/themes/custom/paladin/images/favicon-192.png" sizes="192x192">
+    <link rel="icon" href="/themes/custom/paladin/images/favicon-228.png" sizes="228x228">
+
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="196x196" href="/themes/custom/paladin/images/favicon-196.png">
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="/themes/custom/paladin/images/favicon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="/themes/custom/paladin/images/favicon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/themes/custom/paladin/images/favicon-180.png" sizes="180x180">
+
+    <!-- Windows 8 IE 10-->
+    <meta name="msapplication-TileColor" content="#017bc4">
+    <meta name="msapplication-TileImage" content="/themes/custom/paladin/images/favicon-144.png">
+  </head>
+  <body class="path-archival-document">
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="preheader">
+    <div id="block-paladin-sitewide-alert">
+  
+    
+      <div data-sitewide-alert aria-live="polite"></div>
+
+  </div>
+
+
+</div>
+
+<header role="banner" class="header">
+  <div>
+      <div id="block-paladin-branding">
+  
+    
+  <h1 class="visually-hidden">City of Norman, OK</h1>
+<a href="/" rel="home">
+  <img src="/themes/custom/paladin/logo.png" alt="Home" />
+</a>
+
+</div>
+
+<div class="header-right">
+  <div class="utilities">
+    <div class="utilities-name"><div id="block-sitebrandingname">
+  
+    
+  <h1 class="visually-hidden">City of Norman, OK</h1>
+<a href="/" title="Home"
+  rel="home">City of Norman, OK</a>
+Building an Inclusive Community
+</div>
+</div>
+  </div>
+  <div class="pay-button"><div id="block-payabillheader--2">
+  
+    
+      
+  <a class="button primary green" href="/online-payments"><i class="fas fa-file-invoice-dollar"></i> Pay Online</a>
+
+  </div>
+</div>
+  
+
+
+<nav role="navigation" aria-labelledby="block-main-menu" id="block-main-menu">
+                  
+<ul class="menu menu-level-0">
+          <li class="menu-item menu-item--expanded">
+              <a href="#n">For Residents &amp; Visitors</a>
+                          
+
+  <ul class="menu menu-level-1">
+                  
+        <li class="menu-item">
+          <a href="/residents-visitors" data-drupal-link-system-path="node/1">Residents &amp; Visitors Overview</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="https://devnorman.normanok.gov/Portal/">Self-Service Portal</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/residents-visitors/about-norman" data-drupal-link-system-path="node/33">About Norman</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/residents-visitors/animal-welfare" data-drupal-link-system-path="node/628">Animal Welfare</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/residents-visitors/city-maps" data-drupal-link-system-path="node/25">City Maps</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/residents-visitors/clean-neighborhood-project-keep-norman-neat-effort" data-drupal-link-system-path="node/3234">Clean Neighborhood Project - A Keep Norman Neat Effort</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/residents-visitors/environment-conservation" data-drupal-link-system-path="node/26">Environment and Conservation</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/residents-visitors/file-tort-claim" data-drupal-link-system-path="node/667">File a Tort Claim</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/your-government/departments/planning-and-community-development/planning-and-zoning/boards-and-3" data-drupal-link-system-path="node/526">Historic Preservation</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/residents-visitors/host-special-event" data-drupal-link-system-path="node/2300">Host a Special Event</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/residents-visitors/permits-business-licenses" data-drupal-link-system-path="node/28">Garage Sale and Other Permits</a>
+                            </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/residents-visitors/parks-recreation" data-drupal-link-system-path="node/251">Parks &amp; Recreation</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/residents-visitors/traffic-controls-what-you-should-know" data-drupal-link-system-path="node/30">Traffic Controls - What you should know</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/residents-visitors/transit-parking" title="Information about Parking and Public Transportation in Norman, including Bus Transit  and E-Scooters." data-drupal-link-system-path="node/2831">Transit &amp; Parking</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/Sanitation" data-drupal-link-system-path="node/22">Trash &amp; Recycling</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/your-government/departments/finance/utility-rates-and-information" data-drupal-link-system-path="node/626">Utility Customer Service</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/residents-visitors/visiting-norman" data-drupal-link-system-path="node/31">Visiting Norman</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/residents-visitors/volunteer" data-drupal-link-system-path="node/949">Volunteer</a>
+                                
+
+
+                  </li>
+          </ul>
+
+
+
+
+          </li>
+            <li class="menu-item menu-item--expanded">
+              <a href="#n">For Businesses</a>
+                          
+
+  <ul class="menu menu-level-1">
+                  
+        <li class="menu-item">
+          <a href="/businesses" data-drupal-link-system-path="node/2">For Businesses Overview</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="https://devnorman.normanok.gov/Portal/">Self-Service Portal</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/businesses/community-and-business-relations" data-drupal-link-system-path="node/813">Community and Business Relations</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/businesses/data-demographics" data-drupal-link-system-path="node/4334">Data  &amp; Demographics</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/businesses/bids-rfps-rfqs" data-drupal-link-system-path="node/13">Bids / RFPs / RFQ&#039;s</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/businesses/builders-contractors" data-drupal-link-system-path="node/14">Builders &amp; Contractors</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/residents-visitors/permits-business-licenses" data-drupal-link-system-path="node/28">Permits and Licenses</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/businesses/sales-tax" data-drupal-link-system-path="node/598">Sales Tax Information</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/businesses/starting-business" data-drupal-link-system-path="node/16">Starting a Business</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/businesses/trash-recycling" data-drupal-link-system-path="node/17">Trash &amp; Recycling</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/businesses/utilities" data-drupal-link-system-path="node/18">Utilities</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/businesses/city-maps" data-drupal-link-system-path="node/20">City Maps</a>
+                                
+
+
+                  </li>
+          </ul>
+
+
+
+
+          </li>
+            <li class="menu-item menu-item--expanded">
+              <a href="#n">Public Safety</a>
+                          
+
+  <ul class="menu menu-level-1">
+                  
+        <li class="menu-item">
+          <a href="/public-safety" data-drupal-link-system-path="node/3">Public Safety Overview</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/public-safety/fire-department" data-drupal-link-system-path="node/6">Fire Department</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/public-safety/police-department" data-drupal-link-system-path="node/5">Police Department</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/public-safety/public-safety-sales-tax-psst" data-drupal-link-system-path="node/820">Public Safety Sales Tax (PSST)</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/public-safety/police-department/divisions/investigations/registered-offenders" data-drupal-link-system-path="node/653">Registered Offenders</a>
+                                
+
+
+                  </li>
+          </ul>
+
+
+
+
+          </li>
+            <li class="menu-item menu-item--expanded">
+              <a href="#n">Your Government</a>
+                          
+
+  <ul class="menu menu-level-1">
+                  
+        <li class="menu-item">
+          <a href="/your-government" data-drupal-link-system-path="node/4">Your Government Overview</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="https://norman-ok.municodemeetings.com/bc">Boards &amp; Commissions</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/your-government/city-council" data-drupal-link-system-path="node/793">City Council</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/your-government/city-ordinances-municipal-code-charter" data-drupal-link-system-path="node/638">City Ordinances / Code</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/your-government/departments" data-drupal-link-system-path="node/9">Departments</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/your-government/mayor" data-drupal-link-system-path="node/798">Mayor</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/your-government/projects-initiatives" data-drupal-link-system-path="node/11">Projects &amp; Initiatives</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/PublicInformation" data-drupal-link-system-path="node/637">Public Information</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/your-government/contact-city" data-drupal-link-system-path="node/597">Contact the City</a>
+                                
+
+
+                  </li>
+          </ul>
+
+
+
+
+          </li>
+            <li class="menu-item menu-item--expanded">
+              <a href="#n">News &amp; Events</a>
+                          
+
+  <ul class="menu menu-level-1">
+                  
+        <li class="menu-item">
+          <a href="https://norman-ok.municodemeetings.com/">Agendas / Minutes</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/news" data-drupal-link-system-path="news">City News</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="https://www.normancalendar.com/">Community Calendar</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/events" data-drupal-link-system-path="events">Events</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="https://norman-ok.municodemeetings.com/calendar">Meeting Calendar</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/your-government/public-information/meeting-video-streams" data-drupal-link-system-path="node/689">Meeting Video Streams</a>
+                                
+
+
+                  </li>
+          </ul>
+
+
+
+
+          </li>
+            <li class="menu-item menu-item--expanded">
+              <a href="#n">Short-Term Rentals</a>
+                          
+
+  <ul class="menu menu-level-1">
+                  
+        <li class="menu-item">
+          <a href="/your-government/departments/city-attorney/short-term-rentals" data-drupal-link-system-path="node/892">Short-Term Rental Information</a>
+                                
+
+
+                  </li>
+          </ul>
+
+
+
+
+          </li>
+    <li class="search-trigger blue">
+    <button type="button" class="search-trigger__button" aria-expanded="false" aria-controls="primary-search">Search <i class="fas fa-search" aria-hidden="true"></i></button>
+  </li>
+</ul>
+
+  </nav>
+<button class="mobile-menu-trigger">
+  <span class="open"><i class="far fa-bars burger"></i><span class="txt">Menu</span></span>
+  <span class="close"><i class="far fa-times close-x"></i><span class="txt">Close</span></span>
+</button>
+
+  <div class="utilities-links">
+    <div class="languages dropdown">
+      <button><i class="fa fa-language" aria-hidden="true"></i> Translate</button>
+      <div class="languages-container dropdown-box"></div>
+    </div>
+
+    <div id="block-ridiculouslyresponsivesocialsharebuttons-2">
+  
+    
+      
+  <div  class="rrssb rrssb-bs-header">
+    <div class="dropdown">
+      <button aria-expanded="false" class="dropdown-button">
+        <i class="fas fa-share-alt"></i> 
+                  Connect With Us
+              </button>
+      <div class="dropdown-box" aria-hidden="true" style="display: none;">
+        <ul class="rrssb-buttons">
+                      <li class="rrssb-facebook">
+              <a href="https://www.facebook.com/cityofnormanok" class="popup" title="Share this with facebook" target="_blank">
+                <span class="rrssb-icon"></span>
+                <span class="rrssb-text">facebook</span>
+              </a>
+            </li>
+                      <li class="rrssb-instagram">
+              <a href="https://instagram.com/thecityofnorman" class="popup" title="Share this with instagram" target="_blank">
+                <span class="rrssb-icon"></span>
+                <span class="rrssb-text">instagram</span>
+              </a>
+            </li>
+                      <li class="rrssb-X">
+              <a href="https://x.com/cityofnormanok" class="popup" title="Share this with X" target="_blank">
+                <span class="rrssb-icon"></span>
+                <span class="rrssb-text">X</span>
+              </a>
+            </li>
+                      <li class="rrssb-youtube">
+              <a href="https://www.youtube.com/user/cityofnormanok" class="popup" title="Share this with youtube" target="_blank">
+                <span class="rrssb-icon"></span>
+                <span class="rrssb-text">youtube</span>
+              </a>
+            </li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+    <a class="utilities" href="/city-contact-information"><i class="fas fa-comments"></i> Contact</a>
+  </div>
+</div>
+
+  </div>
+  <div id="primary-search" class="search-box primary-search">
+  <h2>What can we help you find?</h2>
+  <div id="block-search-form">
+  
+    
+      <form class="views-exposed-form bef-exposed-form" data-drupal-selector="views-exposed-form-search-page-1" action="/search" method="get" id="views-exposed-form-search-page-1" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-textfield form-item-search-api-fulltext js-form-item-search-api-fulltext">
+      <label for="edit-search-api-fulltext">Search</label>
+        <input data-drupal-selector="edit-search-api-fulltext" type="text" id="edit-search-api-fulltext" name="search_api_fulltext" value="" size="30" maxlength="128" placeholder="Search for parks, permits, events and more" class="form-text" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit-search" type="submit" id="edit-submit-search" value="Search" class="button js-form-submit form-submit" />
+</div>
+
+
+</form>
+
+  </div>
+
+  <button class="close white"><i class="far fa-times-circle"></i>Close</button>
+</div>
+</header>
+
+
+
+<div class="layout-container">
+
+  
+
+  <main role="main" class="row">
+    <a id="main-content" tabindex="-1" aria-label="Main Page Content"></a>
+    
+    <div class="layout-content clearfix col">
+        <div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-paladin-content">
+  
+    
+      <div class="archival-document">
+  <div class="archival-document__notice" role="note">
+    <h2 class="archival-document__notice-title">Accessibility Notice</h2>
+    <p>This PDF document does <strong>not meet current accessibility standards</strong> (WCAG 2.2 AA) and may not be fully usable with assistive technologies. It is provided <strong>for historical reference or research purposes only</strong>.</p><p>If you require this information in a more accessible format, please complete our <a href="/form/accessibility-request">Accessibility Request Form</a> and we will provide an alternative version as soon as possible.</p><p>We apologize for any inconvenience and appreciate your understanding as we work toward full accessibility compliance.</p>
+    <a class="archival-document__download" href="https://www.normanok.gov/sites/default/files/documents/2026-07/ward_2_webmap_large-2022_updated_7-8-26.pdf" download>
+      Download document
+    </a>
+  </div>
+  <div class="archival-document__viewer">
+    <iframe
+      class="archival-document__iframe"
+      src="https://www.normanok.gov/sites/default/files/documents/2026-07/ward_2_webmap_large-2022_updated_7-8-26.pdf"
+      title="Archival document: ward_2_webmap_large-2022_updated_7-8-26.pdf"
+      width="100%"
+      height="100%">
+      <p>Your browser does not support iframes. Please use the download link above.</p>
+    </iframe>
+  </div>
+</div>
+
+  </div>
+
+
+    </div>
+    
+  </main>
+
+</div>
+<footer role="contentinfo">
+  <div class="footer-top">
+  <div>
+    <img src="/themes/custom/paladin/images/norman-logo.png" alt="City of Norman, OK" class="footer-logo" />
+    City of Norman, OK
+    <div id="block-contactusfooter--2">
+  
+    
+      
+  <p>Action Center<br>
+<A href="tel:4053665396">405-366-5396</a></p>
+
+<p>Non-Emergency Police Line<br>
+<a href="tel:4053211444">405-321-1444</a></p>
+
+
+<p><a href="/node/597">Send us a Message</a></p>
+
+<p>City of Norman, 201 W Gray St,<br>Norman, OK 73069</p>
+
+  </div>
+
+  </div>
+  <div>
+    <nav role="navigation" aria-labelledby="block-paladin-footer-menu" id="block-paladin-footer">
+            
+  <h2 class="visually-hidden" id="block-paladin-footer-menu">Footer menu</h2>
+  
+
+        
+              <ul>
+                      <li>
+          <a href="/online-payments" data-drupal-link-system-path="node/243">Pay Online</a>
+                  </li>
+                    <li>
+          <a href="/residents-visitors" data-drupal-link-system-path="node/1">For Residents &amp; Visitors</a>
+                  </li>
+                    <li>
+          <a href="/businesses" data-drupal-link-system-path="node/2">For Businesses</a>
+                  </li>
+                    <li>
+          <a href="/public-safety" data-drupal-link-system-path="node/3">Public Safety</a>
+                  </li>
+                    <li>
+          <a href="/your-government" data-drupal-link-system-path="node/4">Your Government</a>
+                  </li>
+                    <li>
+          <a href="/news" data-drupal-link-system-path="news">News</a>
+                  </li>
+                    <li>
+          <a href="/events" data-drupal-link-system-path="events">Events</a>
+                  </li>
+                    <li>
+          <a href="/about-norman/accessibility" data-drupal-link-system-path="node/34">Accessibility</a>
+                  </li>
+          </ul>
+      
+
+
+  </nav>
+
+  </div>
+  <div>
+
+    <nav role="navigation" aria-labelledby="block-footersecondcolumn-menu" id="block-footersecondcolumn">
+            
+  <h2 class="visually-hidden" id="block-footersecondcolumn-menu">Footer Second Column</h2>
+  
+
+        
+
+  <ul data-region="footer" class="menu menu-level-0">
+                  
+        <li class="menu-item">
+          <a href="/your-government/departments" data-drupal-link-system-path="node/9">Find a Department</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item menu-item--collapsed">
+          <a href="/residents-visitors/about-norman" data-drupal-link-system-path="node/33">About Norman</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/your-government/departments/public-works/stormwater-division/flood-hazard-protection" title="Information about flood hazard protection" data-drupal-link-system-path="node/604">Flood Hazard Protection</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/your-government/departments/human-resources/employees" data-drupal-link-system-path="node/248">For Employees</a>
+                                
+
+
+                  </li>
+                      
+        <li class="menu-item">
+          <a href="/Careers" data-drupal-link-system-path="node/35">Job Opportunities</a>
+                                
+
+
+                  </li>
+          </ul>
+
+
+  </nav>
+
+    <div id="block-signupforournewsletterfooter--2">
+  
+    
+      
+  <form action="/norman-news">
+<button type="submit"><i class="far fa-envelope-open-text"></i> Sign up for Norman News</button>
+</form>
+
+  </div>
+
+    <div id="block-socialmedialinks" class="block-social-media-links">
+  
+      <h2>Connect with Us</h2>
+    
+      
+
+<ul class="social-media-links--platforms platforms inline horizontal">
+      <li>
+      <a class="social-media-link-icon--facebook" href="https://www.facebook.com/cityofnormanok"  aria-label="Find / Follow us on Facebook" title="Find / Follow us on Facebook" >
+        <span class='fab fa-facebook fa-2x'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--twitter" href="https://x.com/cityofnormanok"  aria-label="Find / Follow us on Twitter" title="Find / Follow us on Twitter" >
+        <span class='fab fa-x-twitter fa-2x'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--youtube" href="https://www.youtube.com/user/cityofnormanok"  aria-label="Find / Follow us on Youtube" title="Find / Follow us on Youtube" >
+        <span class='fab fa-youtube fa-2x'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--instagram" href="https://www.instagram.com/thecityofnorman"  >
+        <span class='fab fa-instagram fa-2x'></span>
+      </a>
+
+          </li>
+  </ul>
+
+  </div>
+
+  </div>
+</div>
+<div class="footer-copyright">
+  <div>
+    <div id="block-footer-terms--2">
+  
+    
+      
+  Copyright © 2026. All Rights Reserved | <a href="/your-government/departments/information-technology/conditions-and-use-policy">Terms &amp; Disclaimers</a>
+
+  </div>
+
+    <div><a href="https://ifsight.com" target="_blank" class="if">Powered by Interpersonal Frequency <img src="/themes/custom/paladin/images/if-logo.svg" alt="I.F. Logo"></a></div>
+  </div>
+</div>
+
+</footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"archival-document","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","currentQuery":{"document":"https:\/\/www.normanok.gov\/sites\/default\/files\/documents\/2026-07\/ward_2_webmap_large-2022_updated_7-8-26.pdf","title":"ward_2_webmap_large-2022_updated_7-8-26.pdf"}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"account":"G-RQGN3YXF2G ","trackOutbound":true,"trackMailto":true,"trackTel":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"data":{"extlink":{"extTarget":true,"extTargetAppendNewWindowDisplay":true,"extTargetAppendNewWindowLabel":"(opens in a new window)","extTargetNoOverride":false,"extNofollow":false,"extTitleNoOverride":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"0","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"","extInclude":"(^.+\\.(([pP][dD][fF]))$)|(^.+\\.(([mM][pP][3]))$)|(^.+\\.(([wW][aA][vV]))$)","extCssExclude":".rrssb-buttons","extCssInclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","extHideIcons":false,"mailtoClass":"0","telClass":"","mailtoLabel":"(link sends email)","telLabel":"(link is a phone number)","extUseFontAwesome":false,"extIconPlacement":"append","extPreventOrphan":false,"extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","extAdditionalLinkClasses":"","extAdditionalMailtoClasses":"","extAdditionalTelClasses":"","extFaTelClasses":"fa fa-phone","allowedDomains":[],"extExcludeNoreferrer":""}},"search_api_tracking":{"search_form_selectors":"#views-exposed-form-search-page-1, .overview--search .views-exposed-form, #police-search-form-popup","autocomplete_selector":"#edit-search-api-fulltext","search_empty_selector":".overview--search .view-empty","did_you_mean_selector":".sapi-did-you-mean a","sort_by_selector":"edit-sort-by","sort_order_selector":"edit-sort-order"},"rrssb":{"header":{"size":null,"shrink":null,"regrow":null,"minRows":null,"maxRows":null,"prefixReserve":null,"prefixHide":null,"alignRight":false}},"sitewideAlert":{"refreshInterval":0,"automaticRefresh":false,"showCount":false,"serverSideRender":false},"ajaxTrustedUrl":{"\/search":true},"user":{"uid":0,"permissionsHash":"82c0462d5604ee06b84062cd492cc69bc4ed80b9be49b15a5f1ba1d114b1ebf6"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0"></script>
+<script src="/sites/default/files/js/js_PlPeE5Rh7_a5y1q7XojuzXx3AhLGzaPnFo6oqyieUUw.js?scope=footer&amp;delta=1&amp;language=en&amp;theme=paladin&amp;include=eJxdjtEOgzAIRX-orp_UoGWVrIIBtO7v18zFLXu755B7w4juqAmPVQxzulPtaLEgo0INeHglfsSs2wr19sFwF3ZoaLJg_Mk320soIqViAob6dJr61p8IfQkycR-VNUvjSyzI2wWGoNM8jKBfNUsbFlG8jCuwVfCv2Qy1wfPiXY6gajZGYvJwriZYKfXu9CAu8R2G8xKMHBvl_m9F9XfpBd0LclM"></script>
+<script src="//cdn.weglot.com/weglot.min.js"></script>
+<script src="/sites/default/files/js/js_Hz2HZgnwAw2Ph1CxE5i-Jj0Zso9bMDbBsFo8b-2a5L8.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=paladin&amp;include=eJxdjtEOgzAIRX-orp_UoGWVrIIBtO7v18zFLXu755B7w4juqAmPVQxzulPtaLEgo0INeHglfsSs2wr19sFwF3ZoaLJg_Mk320soIqViAob6dJr61p8IfQkycR-VNUvjSyzI2wWGoNM8jKBfNUsbFlG8jCuwVfCv2Qy1wfPiXY6gajZGYvJwriZYKfXu9CAu8R2G8xKMHBvl_m9F9XfpBd0LclM"></script>
+
+  </body>
+</html>
