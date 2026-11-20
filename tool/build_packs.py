@@ -981,8 +981,11 @@ def fetch_waterfront():
 def fetch_cityfiles():
     """Racks, lockers, repair stations, scooter / motorcycle parking found in the files that cities and states
     publish on their own websites (data/city_pts.json, made by tool/city_rows.py from tool/city_files.py)."""
-    f = os.path.join(ROOT, 'data', 'city_pts.json')
-    out = json.load(open(f, encoding='utf-8')) if os.path.exists(f) else []
+    out = []
+    for name in ('city_pts.json', 'public_maps.json'):
+        f = os.path.join(ROOT, 'data', name)
+        if os.path.exists(f):
+            out += json.load(open(f, encoding='utf-8'))
     print(f'From city and state files: {len(out)}', flush=True)
     return out
 
@@ -1236,7 +1239,7 @@ def main():
             got = fn()
             # read again and answered: the old rows of this source go, so a place the source
             # (or our filter) no longer has does not stay on the map
-            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'cityfiles': 'cty/', 'afdc': 'afdc/', 'bikelink': 'blk/'}.get(name)
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'cityfiles': ('cty/', 'pm/'), 'afdc': 'afdc/', 'bikelink': 'blk/'}.get(name)
             if old and got:
                 for d in tiles.values():
                     for k in [k for k in d if str(k).startswith(old)]:
