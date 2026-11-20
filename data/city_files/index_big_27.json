@@ -1,0 +1,1074 @@
+{
+ "Henderson NV": {
+  "files": [],
+  "portals": {}
+ },
+ "Birmingham AL": {
+  "files": [],
+  "portals": {
+   "https://data.birminghamal.gov/": "Open Data"
+  }
+ },
+ "Clark County": {
+  "files": [
+   {
+    "url": "https://www.clarkcountynv.gov/adobe/assets/urn:aaid:aem:243b20b8-ff86-4024-883f-f9f5cbcd8946/original/as/ghost-town-2024.pdf",
+    "text": "Ghost Town and Mining Trail",
+    "file": "data/city_files/Clark_County/622f16_ghost-town-2024.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.clarkcountynv.gov/adobe/assets/urn:aaid:aem:77619ad8-52ce-463c-9124-3a81a92b86c2/original/as/clark-county-museum-map.pdf",
+    "text": "Click here to view a map",
+    "file": "data/city_files/Clark_County/6cbfb1_clark-county-museum-map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://ccgismo.maps.arcgis.com/apps/opsdashboard/index.html": "No Obstructions Zones White Lines Map",
+   "https://ccgismo.maps.arcgis.com/apps/webappviewer/index.html?id=cd12cd14a14f44f8b7d6edd0eb3c9d6f": "Clark County Small Cell Interactive Map"
+  }
+ },
+ "Fresno County": {
+  "files": [
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/assessor-recorder/mapping/index-map-with-streets.pdf",
+    "text": "Countywide Index with Streets (PDF, 867KB)",
+    "file": "data/city_files/Fresno_County/ece8e6_index-map-with-streets.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/assessor-recorder/mapping/index-map.pdf",
+    "text": "Countywide Index without Streets (PDF, 290KB)",
+    "file": "data/city_files/Fresno_County/176065_index-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/assessor-recorder/mapping/index-map-fresno.pdf",
+    "text": "Fresno/Clovis Metropolitan Area Index (PDF, 1MB)",
+    "file": "data/city_files/Fresno_County/61269a_index-map-fresno.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/assessor-recorder/mapping/map-symbols.pdf",
+    "text": "Symbols for Assessor's Detail Maps (PDF, 491KB)",
+    "file": "data/city_files/Fresno_County/11c2b5_map-symbols.pdf",
+    "rows": 22,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/clerk-of-the-board/map-flowchart.pdf",
+    "text": "flowchart",
+    "file": "data/city_files/Fresno_County/6e3a07_map-flowchart.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/2/clerk-of-the-board/dept-contact-info.pdf",
+    "text": "Department Contacts for Map Recordation Process",
+    "file": "data/city_files/Fresno_County/1f4dfd_dept-contact-info.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/public-works-and-planning/landfill-operations/construction-and-demolition-debris-recycling-locations.pdf",
+    "text": "View Construction and Demolition Debris Recycling Locations (PDF) (PDF, 2MB)",
+    "file": "data/city_files/Fresno_County/7b3274_construction-and-demolition-debris-recycling-locations.pdf",
+    "rows": 17,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/public-works-and-planning/resources-and-parks/all-parks-countywide-1.pdf",
+    "text": "Map to all parks countywide (PDF, 757KB)",
+    "file": "data/city_files/Fresno_County/66e602_all-parks-countywide-1.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/vision-files/files/14331-f034-plot-plan-example.pdf",
+    "text": "Plot Plan Example (PDF, 111KB)",
+    "file": "data/city_files/Fresno_County/29d17b_14331-f034-plot-plan-example.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/2/public-works-and-planning/development-services/surveyors-office/vm-submission.pdf",
+    "text": "Voluntary Lot Merger Submittal Information - View PDF (PDF, 837KB)",
+    "file": "data/city_files/Fresno_County/b46eea_vm-submission.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/2/public-works-and-planning/development-services/surveyors-office/dev-pmt-submittals-updated.pdf",
+    "text": "Tentative Parcel Map Submittal Information - View PDF (PDF, 1MB)",
+    "file": "data/city_files/Fresno_County/888e13_dev-pmt-submittals-updated.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/3/public-works-and-planning/development-services/surveyors-office/dev-pmf-submittals.pdf",
+    "text": "Final Parcel Map Submittal Information - View PDF (PDF, 204KB)",
+    "file": "data/city_files/Fresno_County/71723e_dev-pmf-submittals.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/3/public-works-and-planning/development-services/surveyors-office/dev-pmwt-submittals-updated.pdf",
+    "text": "Tentative Parcel Map Waiver Submittal Information - View PDF (PDF, 1MB)",
+    "file": "data/city_files/Fresno_County/c5660f_dev-pmwt-submittals-updated.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/3/public-works-and-planning/development-services/surveyors-office/dev-pmwf-submittals.pdf",
+    "text": "Final Parcel Map Waiver Submittal Information - View PDF (PDF, 205KB)",
+    "file": "data/city_files/Fresno_County/984667_dev-pmwf-submittals.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/public-works-and-planning/community-development-division/ceqanepa/cd2561p03-location-map.pdf",
+    "text": "Location Map (PDF, 957KB)",
+    "file": "data/city_files/Fresno_County/9a6968_cd2561p03-location-map.pdf",
+    "rows": 18,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www2.fresnocountyca.gov/4510/4360/updates/InspectionSchedule/DailyRoute.pdf",
+    "text": "View Daily Inspection Schedule",
+    "file": "data/city_files/Fresno_County/a4174a_DailyRoute.pdf",
+    "rows": 90,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/public-works-and-planning/building-amp-safety/d-compliance-pathways.pdf",
+    "text": "Compliance Pathways Flowchart (PDF, 354KB)",
+    "file": "data/city_files/Fresno_County/0e4732_d-compliance-pathways.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/public-works-and-planning/building-amp-safety/f-mwelo-performance-path-submittal-checklist.pdf",
+    "text": "MWELO Performance Path Submittal Checklist (PDF, 261KB)",
+    "file": "data/city_files/Fresno_County/341787_f-mwelo-performance-path-submittal-checklist.pdf",
+    "rows": 123,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/public-works-and-planning/building-amp-safety/2023-24-master-schedule-of-fees.pdf",
+    "text": "Schedule of Building, Land Use and Mapping Fees (PDF, 514KB)",
+    "file": "data/city_files/Fresno_County/5fda5c_2023-24-master-schedule-of-fees.pdf",
+    "rows": 62,
+    "bike_rows": 23
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/public-works-and-planning/development-services/grading/femaprotectingpropertyflooding–raiseelectricalsystemcomponents.pdf",
+    "text": "FEMA Protecting your property from flooding - Raise electrical system components (PDF, 259KB)",
+    "file": "data/city_files/Fresno_County/25a052_femaprotectingpropertyflooding_raiseelectricalsystemcomponents.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/public-works-and-planning/development-services/grading/femaprotectingpropertyflooding-installsewerbackflowvalves.pdf",
+    "text": "FEMA Protecting your property from flooding - Install sewer backflow valves (PDF, 306KB)",
+    "file": "data/city_files/Fresno_County/ee7f56_femaprotectingpropertyflooding-installsewerbackflowvalves.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/public-works-and-planning/development-services/grading/femaprotectingpropertyflooding–anchorfueltanks.pdf",
+    "text": "FEMA Protecting your property from flooding - Anchor fuel tanks (PDF, 550KB)",
+    "file": "data/city_files/Fresno_County/17ae93_femaprotectingpropertyflooding_anchorfueltanks.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/public-works-and-planning/development-services/grading/femaprotectwellscontaminationflooding.pdf",
+    "text": "FEMA Protect Wells from Contamination by Flooding (PDF, 881KB)",
+    "file": "data/city_files/Fresno_County/448dd1_femaprotectwellscontaminationflooding.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/1/vision-files/files/5311-countytransportationpermitreferenceapril2012.pdf",
+    "text": "Transportation Permit Reference Map (PDF, 15MB)",
+    "file": "data/city_files/Fresno_County/0ad827_5311-countytransportationpermitreferenceapril2012.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fresnocountyca.gov/files/sharedassets/county/v/3/public-works-and-planning/flood-protection-and-planning/sandbag-location-map.pdf",
+    "text": "View Map of County Sandbag Resources (PDF, 2MB)",
+    "file": "data/city_files/Fresno_County/b9c7df_sandbag-location-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cofgisonline.maps.arcgis.com/apps/webappviewer/index.html?id=efe2a0df2a614b299ece3d9b9f350953": "Vote Centers and Drop Boxes Lookup",
+   "https://datasharing-cofgisonline.hub.arcgis.com/pages/our-data": "Download Shapefiles",
+   "https://city-of-fresno-gis-hub-cityoffresno.hub.arcgis.com/": "City of Fresno Interactive Maps",
+   "https://www.clovisca.gov/services/technology/gis.php": "City of Clovis Maps",
+   "https://fmfcd.maps.arcgis.com/apps/webappviewer/index.html?id=5ac65186b1794949a1fda62ca7734986": "Click here",
+   "https://waterdata.usgs.gov/nwis/inventory/?site_id=11254000": "San Joaquin River near Mendota",
+   "https://waterdata.usgs.gov/nwis/inventory/?site_id=11251000": "San Joaquin River near Friant",
+   "https://waterdata.usgs.gov/nwis/inventory/?site_id=11237000": "Big Creek near Huntington Lake",
+   "https://waterdata.usgs.gov/nwis/inventory/?site_id=11230215": "South Fork of San Joaquin River near Florence Lake",
+   "https://waterdata.usgs.gov/nwis/inventory/?site_id=11215000": "North Fork of Kings River near Cliff Camp",
+   "https://www.fresnocountyca.gov/?splash=https%3a%2f%2fwaterdata.usgs.gov%2fnwis%2finventory%2f%3fsite_id%3d11224500&____isexternal=true": "Los Gatos Creek near Coalinga",
+   "https://experience.arcgis.com/experience/af501fb0f90948428b3a7c4dd70cff65?draft=true&org=waterboards": "Central Valley Water Board E. coli monitoring webpage"
+  }
+ },
+ "San Mateo County": {
+  "files": [
+   {
+    "url": "https://www.smcgov.org/sites/default/files/2025-03/UPDATED%20BPAC%20Meeting%20Map%20500%20County%20Center.pdf",
+    "text": "500 County Center",
+    "file": "data/city_files/San_Mateo_County/323ad2_UPDATED_20BPAC_20Meeting_20Map_20500_20County_20Center.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cdpr.ca.gov/docs/license/pubs/pcap_cert_study_guide.pdf",
+    "text": "DPR Pest Control Aircraft Pilot Study Guide",
+    "file": "data/city_files/San_Mateo_County/478ec7_pcap_cert_study_guide.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=c7075a28b298498c93a311b7af9a3ae7": "Road Closures",
+   "https://gis.smcgov.org/Html5Viewer/?viewer=raster": "Recorded Property Maps",
+   "https://data.smcgov.org/": "Open Data",
+   "https://gis.smcgov.org/apps/publicviewer/": "View Planning GIS",
+   "https://data.smcgov.org/w/25ew-btyb/dsrg-gg5p?cur=URiJpGL674e&from=root": "PDU Vendor Payment Status",
+   "https://gis.smcgov.org/apps/raster": "Property Records",
+   "https://gis.smcgov.org/apps/beach": "Beach Monitoring",
+   "http://smcmaps.maps.arcgis.com/home/index.html": "Apps Gallery",
+   "http://data-smcmaps.opendata.arcgis.com/": "ESRI Open Data Portal",
+   "https://dpwmaps.maps.arcgis.com/apps/instant/lookup/index.html?appid=648aea273e3b46d1b0cdf13eba0cd5b8": "Open map in new tab",
+   "https://gis.smcgov.org/apps/publicviewer": "View Planning GIS",
+   "https://dpwmaps.maps.arcgis.com/apps/instant/lookup/index.html?appid=1f30a0898b0c44e699dfc4c5df208be0": "unincorporated areas"
+  }
+ },
+ "Washington County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/6eb6811a540c43c08b52a39c764fcf46": "Who Patrols My Neighborhood?",
+   "https://washco.maps.arcgis.com/apps/webappviewer/index.html?id=abfa5a160ff64c5d99ef72ca45dc0776": "Burn Ban Boundary",
+   "https://washco.maps.arcgis.com/apps/PublicInformation/index.html?appid=6c58563514de434a805a2d7561546e1f": "Ice Control and Snow Plow Routes"
+  }
+ },
+ "Raleigh": {
+  "files": [],
+  "portals": {}
+ },
+ "Sarasota County": {
+  "files": [],
+  "portals": {}
+ },
+ "Stark County": {
+  "files": [],
+  "portals": {}
+ },
+ "Luzerne County": {
+  "files": [],
+  "portals": {}
+ },
+ "Leon County": {
+  "files": [
+   {
+    "url": "https://cms.leoncountyfl.gov/Portals/0/DeptFiles/Parks/Docs/Bike Skills Course Consent Form - ORS.pdf",
+    "text": "Bike Skills Course Consent Form",
+    "file": "data/city_files/Leon_County/042173_Bike_Skills_Course_Consent_Form_-_ORS.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cms.leoncountyfl.gov/Portals/0/DeptFiles/Parks/Docs/JRAG_Plan_Final.pdf",
+    "text": "JR Alford Greenway Land Management Plan",
+    "file": "data/city_files/Leon_County/c84b85_JRAG_Plan_Final.pdf",
+    "rows": 365,
+    "bike_rows": 40
+   },
+   {
+    "url": "https://cms.leoncountyfl.gov/Portals/0/DeptFiles/Parks/Docs/Miccosukee Greenway 2 (2)-AH.pdf all signed.pdf",
+    "text": "MCRG Forest Stewardship Management Plan",
+    "file": "data/city_files/Leon_County/d67b8a_Miccosukee_Greenway_2_2_-AH.pdf_all_signed.pdf",
+    "rows": 121,
+    "bike_rows": 7
+   }
+  ],
+  "portals": {
+   "https://tlcgis.maps.arcgis.com/apps/instant/lookup/index.html?appid=acad87183577444ebd33bb992400802c": "District Map",
+   "https://www.tlcgis.org/": "County Maps / GIS",
+   "https://experience.arcgis.com/experience/577c017d08bf43789bb7330d41af28bd": "Use the Tallahassee-Leon County Park Finder for a map view!",
+   "https://storymaps.arcgis.com/stories/e8ce3e9de8d741a590664f944a05de35": "Interactive map of cross country trials, coach loop, and parking areas"
+  }
+ },
+ "McLennan County": {
+  "files": [],
+  "portals": {}
+ },
+ "Fremont": {
+  "files": [],
+  "portals": {}
+ },
+ "Butte County": {
+  "files": [],
+  "portals": {}
+ },
+ "Deschutes County": {
+  "files": [],
+  "portals": {}
+ },
+ "Iredell County": {
+  "files": [],
+  "portals": {}
+ },
+ "Cary": {
+  "files": [],
+  "portals": {}
+ },
+ "Clarksville": {
+  "files": [],
+  "portals": {}
+ },
+ "Rankin County": {
+  "files": [],
+  "portals": {
+   "https://gis.cmpdd.org/arcgis/apps/experiencebuilder/experience/?id=9ef85c28ce834214940c4acc88283f66": "County Maps",
+   "https://gis.cmpdd.org/arcgis/apps/webappviewer/index.html?id=2a84c1decebc4733b91fb86c928b402a": "View Maps"
+  }
+ },
+ "Charleston": {
+  "files": [],
+  "portals": {}
+ },
+ "Visalia": {
+  "files": [],
+  "portals": {}
+ },
+ "Warren County": {
+  "files": [
+   {
+    "url": "https://www.warrencountyky.gov/wp-content/uploads/2026/11/Recycling_Parks_Information.pdf",
+    "text": "Recycling",
+    "file": "data/city_files/Warren_County/5f80fb_Recycling_Parks_Information.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.warrencountyky.gov/wp-content/uploads/2026/02/Ad-Bid-Parking-Lot-1029-State-St.pdf",
+    "text": "Parking Lot Grading",
+    "file": "data/city_files/Warren_County/b0db9f_Ad-Bid-Parking-Lot-1029-State-St.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.warrencountyky.gov/wp-content/uploads/2025/04/Invitation-for-Bids_Sheriff-Office-and-Training-Center.pdf",
+    "text": "Sheriff’s Office and Training Center Remodel at Sugar Maple Square",
+    "file": "data/city_files/Warren_County/27422d_Invitation-for-Bids_Sheriff-Office-and-Training-Center.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.warrencountyky.gov/wp-content/uploads/2025/12/Surveillance-Trailer-Bid-Packet-2025.pdf",
+    "text": "Video Surveillance Trailer",
+    "file": "data/city_files/Warren_County/6c8d36_Surveillance-Trailer-Bid-Packet-2025.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.warrencountyky.gov/wp-content/uploads/2023/06/pw-ordinance-WC-06-21A-Illicit-Discharge.pdf",
+    "text": "06-21A-WC Illicit Discharge",
+    "file": "data/city_files/Warren_County/6cee93_pw-ordinance-WC-06-21A-Illicit-Discharge.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.warrencountyky.gov/wp-content/uploads/2023/06/pw-ordinance-WC-83-17-Plot-Plans.pdf",
+    "text": "83-17-WC Plot Plans",
+    "file": "data/city_files/Warren_County/360ce3_pw-ordinance-WC-83-17-Plot-Plans.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://bgky.maps.arcgis.com/apps/instant/sidebar/index.html?appid=1fba8d21efff42efb36b4fff8f7dbc8d": "Find My Magistrate",
+   "https://waterdata.usgs.gov/ky/nwis/uv/?tsid=60374&format=img_default&site_no=03314000&period=7": "visit the National Water Information System",
+   "https://waterdata.usgs.gov/ky/nwis/uv/?ts%20id=60374&f%20ormat=img%20default&site%20no=03314000&period=7": "USGS National Water Info System"
+  }
+ },
+ "Chautauqua County": {
+  "files": [
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/NCCWD%20Map%20%26%20Plan_0.pdf",
+    "text": "Map & Plan Amendment 3",
+    "file": "data/city_files/Chautauqua_County/9a7f1f_NCCWD_20Map_20_26_20Plan_0.pdf",
+    "rows": 16,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/12567737-RPT-Map%20and%20Plan%20Report_1.pdf",
+    "text": "SCLSD MAP & PLAN - Westside Sewer Extension Phase 2",
+    "file": "data/city_files/Chautauqua_County/7bf4c3_12567737-RPT-Map_20and_20Plan_20Report_1.pdf",
+    "rows": 949,
+    "bike_rows": 178
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/Phase%202%20Map_1.pdf",
+    "text": "Phase 2 Map",
+    "file": "data/city_files/Chautauqua_County/2aee4f_Phase_202_20Map_1.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/000%20NCLSD%20Map%20and%20Plan%20Web%20Copy_0.pdf",
+    "text": "NCLSD Map & Plan",
+    "file": "data/city_files/Chautauqua_County/07d7ee_000_20NCLSD_20Map_20and_20Plan_20Web_20Copy_0.pdf",
+    "rows": 63,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/Charlotte_0.pdf",
+    "text": "Town of Charlotte",
+    "file": "data/city_files/Chautauqua_County/120e1b_Charlotte_0.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/document-files/2024-02/CHQ%20-%20Schedule%20Book%20REV%208-30-23%20-%20digital%20version_0.pdf",
+    "text": "CHQ Transit Schedule Book (PDF)",
+    "file": "data/city_files/Chautauqua_County/d40eb7_CHQ_20-_20Schedule_20Book_20REV_208-30-23_20-_20digital_20version_0.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/How%20to%20Read%20Bus%20Schedule_1.pdf",
+    "text": "CHQ Transit Schedule Book - How to Read the Bus Schedule Page (PDF)",
+    "file": "data/city_files/Chautauqua_County/2cc06e_How_20to_20Read_20Bus_20Schedule_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/All%20Dunkirk%20Routes.pdf",
+    "text": "Dunkirk City-Fixed Routes",
+    "file": "data/city_files/Chautauqua_County/c58a09_All_20Dunkirk_20Routes.pdf",
+    "rows": 33,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/Dunkirk%20City%20-%20Green.pdf",
+    "text": "Dunkirk Green Route (PDF)",
+    "file": "data/city_files/Chautauqua_County/e46004_Dunkirk_20City_20-_20Green.pdf",
+    "rows": 16,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/Dunkirk%20City%20-%20Red.pdf",
+    "text": "Dunkirk Red Route (PDF)",
+    "file": "data/city_files/Chautauqua_County/898c8b_Dunkirk_20City_20-_20Red.pdf",
+    "rows": 17,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/All%20Jamestown%20Routes.pdf",
+    "text": "Jamestown City-Fixed Routes",
+    "file": "data/city_files/Chautauqua_County/9cb29e_All_20Jamestown_20Routes.pdf",
+    "rows": 104,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/Jamestown%20-%20North%20Main%20%28Lilac%29.pdf",
+    "text": "Jamestown North Main Route (Lilac) (PDF)",
+    "file": "data/city_files/Chautauqua_County/ab0410_Jamestown_20-_20North_20Main_20_28Lilac_29.pdf",
+    "rows": 13,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/Jamestown%20-%20Baker%20%28Red%29.pdf",
+    "text": "Jamestown Baker Route (Red) (PDF)",
+    "file": "data/city_files/Chautauqua_County/8ed979_Jamestown_20-_20Baker_20_28Red_29.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/Jamestown%20-%20Willard%20%28Green%29.pdf",
+    "text": "Jamestown Willard Route (Green) (PDF)",
+    "file": "data/city_files/Chautauqua_County/38ed63_Jamestown_20-_20Willard_20_28Green_29.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/Saturday%20Routes.pdf",
+    "text": "Saturday City Routes",
+    "file": "data/city_files/Chautauqua_County/afd779_Saturday_20Routes.pdf",
+    "rows": 109,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/All%20Rural%20Routes.pdf",
+    "text": "Rural Routes",
+    "file": "data/city_files/Chautauqua_County/0a24e9_All_20Rural_20Routes.pdf",
+    "rows": 120,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/South%20via%20Routes%20394%20and%20430_0.pdf",
+    "text": "Bemus Point/Dewittville/Greenhurst (PDF)",
+    "file": "data/city_files/Chautauqua_County/d25662_South_20via_20Routes_20394_20and_20430_0.pdf",
+    "rows": 22,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/inline-files/WINTER%20TRAIL%20ETIQUETTE.pdf",
+    "text": "WINTER TRAIL ETIQUETTE",
+    "file": "data/city_files/Chautauqua_County/55231a_WINTER_20TRAIL_20ETIQUETTE.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/document-files/2022-07/July%202022%20NCIWD%20MAP%20%26%20PLAN.pdf",
+    "text": "July 2022 NCIWD MAP & PLAN.pdf",
+    "file": "data/city_files/Chautauqua_County/980e90_July_202022_20NCIWD_20MAP_20_26_20PLAN.pdf",
+    "rows": 77,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/document-files/2022-07/000-PPD%20Map%20and%20Plan%20with%20attachments%20%28ID%202664013%29%20Final%20Revision.pdf",
+    "text": "000-PPD Map and Plan with attachments (ID 2664013) Final Revision.pdf",
+    "file": "data/city_files/Chautauqua_County/984b62_000-PPD_20Map_20and_20Plan_20with_20attachments_20_28ID_202664013_29_2",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/document-files/2024-09/2024%20All%20Maps.pdf",
+    "text": "2024 Legislative District Maps",
+    "file": "data/city_files/Chautauqua_County/fddd31_2024_20All_20Maps.pdf",
+    "rows": 30,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/document-files/2024-09/District%201%20Map.pdf",
+    "text": "District 1 Map.pdf",
+    "file": "data/city_files/Chautauqua_County/d6e741_District_201_20Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/document-files/2024-09/District%202%20Map.pdf",
+    "text": "District 2 Map.pdf",
+    "file": "data/city_files/Chautauqua_County/d57e6f_District_202_20Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chqgov.com/sites/default/files/document-files/2024-09/District%203%20Map.pdf",
+    "text": "District 3 Map.pdf",
+    "file": "data/city_files/Chautauqua_County/8e2e8c_District_203_20Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.ny.gov/Energy-Environment/Composting-Solid-Waste-Management-Facilities-Map/y4ic-kfv6": "https://data.ny.gov/Energy-Environment/Composting-Solid-Waste-Management-Facilities-Map/y4ic-kfv6",
+   "https://chautauquacounty.maps.arcgis.com/apps/webappviewer/index.html?id=82233170274a4e3a8f79f94ea90f278f": ""
+  }
+ },
+ "Lafayette": {
+  "files": [
+   {
+    "url": "http://docs.wixstatic.com/ugd/4615f5_9d9a9fb9563f43f198c4881f7f55f943.pdf",
+    "text": "For a map of the trail system, trailheads and primitive campsites, click here",
+    "file": "data/city_files/Lafayette/ffe408_4615f5_9d9a9fb9563f43f198c4881f7f55f943.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://docs.wixstatic.com/ugd/4615f5_c597fe40f78a4b198cd97122794560bc.pdf",
+    "text": "trail system",
+    "file": "data/city_files/Lafayette/67c5e4_4615f5_c597fe40f78a4b198cd97122794560bc.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/lafayette/2025_LafayetteTravel_Lafayette_Area_Tear_Map_793cf865-ffab-43af-aae2-f6de03c6a018.pdf",
+    "text": "Read More",
+    "file": "data/city_files/Lafayette/e4e826_2025_LafayetteTravel_Lafayette_Area_Tear_Map_793cf865-ffab-43af-aae2-f",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/ce4b693ee9304ffbbd61f9e6047e36a1": "African American Heritage Trail"
+  }
+ },
+ "Robeson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Albemarle County": {
+  "files": [],
+  "portals": {}
+ },
+ "Miami County": {
+  "files": [],
+  "portals": {}
+ },
+ "Tompkins County": {
+  "files": [
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/caroline-26.pdf",
+    "text": "Caroline 2026 (PDF, 1MB)",
+    "file": "data/city_files/Tompkins_County/8f4341_caroline-26.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/danby-26.pdf",
+    "text": "Danby 2026 (PDF, 1MB)",
+    "file": "data/city_files/Tompkins_County/86bb7c_danby-26.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/boe_dryden26.pdf",
+    "text": "Dryden 2026 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/fb0d8b_boe_dryden26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/enfield-26.pdf",
+    "text": "Enfield 2026 (PDF, 1MB)",
+    "file": "data/city_files/Tompkins_County/8cacb5_enfield-26.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/groton-26.pdf",
+    "text": "Groton 2026 (PDF, 1MB)",
+    "file": "data/city_files/Tompkins_County/fe2772_groton-26.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/boe-ithaca-city-26-09.pdf",
+    "text": "Ithaca City 2026 (PDF, 6MB)",
+    "file": "data/city_files/Tompkins_County/3512c6_boe-ithaca-city-26-09.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/boe_ithaca_town26.pdf",
+    "text": "Ithaca Town 2026 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/312b06_boe_ithaca_town26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/boe_lansing26.pdf",
+    "text": "Lansing 2026 (PDF, 2MB)",
+    "file": "data/city_files/Tompkins_County/56130f_boe_lansing26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/newfield-26.pdf",
+    "text": "Newfield 2026 (PDF, 1MB)",
+    "file": "data/city_files/Tompkins_County/634fa5_newfield-26.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/ulysses-26.pdf",
+    "text": "Ulysses 2026 (PDF, 1MB)",
+    "file": "data/city_files/Tompkins_County/d24d3c_ulysses-26.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/tcredistricting-16new.pdf",
+    "text": "Legislative Districts (PDF, 2MB)",
+    "file": "data/city_files/Tompkins_County/a7b34d_tcredistricting-16new.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist1_26.pdf",
+    "text": "District 1 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/c1fe2a_legdist1_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist2_26.pdf",
+    "text": "District 2 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/5fb066_legdist2_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist3_26.pdf",
+    "text": "District 3 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/caea5a_legdist3_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist4_26.pdf",
+    "text": "District 4 (PDF, 2MB)",
+    "file": "data/city_files/Tompkins_County/5a9664_legdist4_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist5_26.pdf",
+    "text": "District 5 (PDF, 2MB)",
+    "file": "data/city_files/Tompkins_County/798302_legdist5_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist6_26.pdf",
+    "text": "District 6 (PDF, 2MB)",
+    "file": "data/city_files/Tompkins_County/1f6fce_legdist6_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist7_26.pdf",
+    "text": "District 7 (PDF, 4MB)",
+    "file": "data/city_files/Tompkins_County/5bc191_legdist7_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist8_26.pdf",
+    "text": "District 8 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/c76001_legdist8_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist9_26.pdf",
+    "text": "District 9 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/01d2e4_legdist9_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist10_26.pdf",
+    "text": "District 10 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/36bf76_legdist10_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist11_26.pdf",
+    "text": "District 11 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/daf777_legdist11_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist12_26.pdf",
+    "text": "District 12 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/20bf0c_legdist12_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist13_26.pdf",
+    "text": "District 13 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/9adbb5_legdist13_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/board-of-elections/26-ld-redistricting-maps/legdist14_26.pdf",
+    "text": "District 14 (PDF, 3MB)",
+    "file": "data/city_files/Tompkins_County/62213a_legdist14_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::legislativedistrictboundaries/explore?location=42.444608%2C-76.466307%2C10.47": "Legislative Districts",
+   "https://tcdata-tompkinscounty.opendata.arcgis.com/search?tags=elections": "Tompkins County Open Data Portal",
+   "https://tompkinscounty.maps.arcgis.com/apps/instant/lookup/index.html?appid=b03e35652674418cb697505d374e0f55&hiddenLayers=18313f88eaf-layer-10%3B18313e1d4c6-layer-10%3B18332cd876c-layer-8": "Board of Elections Interactive Map",
+   "https://tcdata-tompkinscounty.opendata.arcgis.com/": "Open Data Portal",
+   "https://tompkins-county-sheriffs-office-tompkinscounty.hub.arcgis.com/": "Transparency Hub",
+   "https://mapping-tompkins-tompkinscounty.hub.arcgis.com/": "Mapping Tompkins",
+   "https://tompkinscounty.maps.arcgis.com/apps/instant/sidebar/index.html?appid=053ac0cca5e74c54b4d90c9b647035be": "https://tompkinscounty.maps.arcgis.com/apps/instant/sidebar/index.html?appid=053ac0cca5e74c54b4d90c9b647035be",
+   "https://experience.arcgis.com/experience/54020d8707ea4046a18d268a05838b41": "https://experience.arcgis.com/experience/54020d8707ea4046a18d268a05838b41",
+   "https://tompkinscounty.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=932d93d791394e8eab8aa5fd309f6af3": "Ithaca-Tompkins County Transportation Project Map 2026",
+   "https://storymaps.arcgis.com/stories/4165a021ffb04095abe74aa28bea010d": "Safety",
+   "https://storymaps.arcgis.com/stories/09df74bd49eb44659e62a8b725401562": "Infrastructure Condition",
+   "https://storymaps.arcgis.com/stories/b9edcd73ec6a4e22a2cda49b89706586": "Mobility Part 1"
+  }
+ },
+ "Menifee": {
+  "files": [
+   {
+    "url": "https://cityofmenifee.us/DocumentCenter/View/17022/City-Parks-Map.pdf",
+    "text": "Talavera Park Map and Pictures",
+    "file": "data/city_files/Menifee/0aa939_City-Parks-Map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cityofmenifee.maps.arcgis.com/apps/webappviewer/index.html?id=6e9cdf0657954c90a3621772e6182f41": ""
+  }
+ },
+ "Cleveland County": {
+  "files": [],
+  "portals": {
+   "https://explorer-clevecogis.hub.arcgis.com/": "Performance Dashboard"
+  }
+ },
+ "Carson": {
+  "files": [
+   {
+    "url": "https://cms3.revize.com/revize/repository/carsonca/City%20Repairs%20Street%20Project%202026%20%20(2).pdf?1203",
+    "text": "",
+    "file": "data/city_files/Carson/3cafd5_City_20Repairs_20Street_20Project_202026_20_20_2_.pdf",
+    "rows": 63,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://carsonca-of.finance.socrata.com/": "Budget & Financial Data",
+   "https://www.arcgis.com/apps/dashboards/8130e890cbf242158dbf0cfce792fc20": "Capital Improvement Project Data"
+  }
+ },
+ "Lauderdale County": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Clair County": {
+  "files": [],
+  "portals": {
+   "https://stclair.maps.arcgis.com/home/index.html": "St. Clair Mapping"
+  }
+ },
+ "Elmore County": {
+  "files": [
+   {
+    "url": "https://irp-cdn.multiscreensite.com/0f30efcd/files/uploaded/Elmore%20County%20ADA%20Transition%20Plan%202019.pdf",
+    "text": "ADA Transition Plan",
+    "file": "data/city_files/Elmore_County/ae4bc8_Elmore_20County_20ADA_20Transition_20Plan_202019.pdf",
+    "rows": 20,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://irp.cdn-website.com/6209cf0a/files/uploaded/Complete_Map_04-13_PW_Webpg.pdf",
+    "text": "Elmore County Road Projects 2003-2013",
+    "file": "data/city_files/Elmore_County/e48dd6_Complete_Map_04-13_PW_Webpg.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://irp.cdn-website.com/6209cf0a/files/uploaded/Projects_Map_2014-2023_-_PW.pdf",
+    "text": "Elmore County Road Projects 2014-2023",
+    "file": "data/city_files/Elmore_County/9cd813_Projects_Map_2014-2023_-_PW.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://isv.kcsgis.com/al.elmore_revenue/": "Online Property Tax Maps",
+   "https://elmorecounty.maps.arcgis.com/apps/webappviewer/index.html?id=3bae3df6f3864cafbf28a01cf01cee70": "",
+   "https://aldotgis.dot.state.al.us/posted_bridges/default.htm": "Posted County Bridges Map"
+  }
+ },
+ "Colonie": {
+  "files": [
+   {
+    "url": "https://colonie.org/documents/pressrelease/2026/Albany-Airport-Trail-Connector-Extension-Flyer.pdf",
+    "text": "See the Trail Connector flyer here",
+    "file": "data/city_files/Colonie/1a2712_Albany-Airport-Trail-Connector-Extension-Flyer.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/ourtown/maps/ZoningMap_withindex.pdf",
+    "text": "Town of Colonie Zoning Map with index",
+    "file": "data/city_files/Colonie/26731e_ZoningMap_withindex.pdf",
+    "rows": 6,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://colonie.org/ourtown/maps/StreetMap_withindex.pdf",
+    "text": "Official Highway Map",
+    "file": "data/city_files/Colonie/5c0a8c_StreetMap_withindex.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/TheCrossings_trailmap.pdf",
+    "text": "Download",
+    "file": "data/city_files/Colonie/0a9d5c_TheCrossings_trailmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/ColonieMohawkRiverPark.pdf",
+    "text": "Map",
+    "file": "data/city_files/Colonie/826e34_ColonieMohawkRiverPark.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/SchuylerFlattsPark.pdf",
+    "text": "Download",
+    "file": "data/city_files/Colonie/19e9aa_SchuylerFlattsPark.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/mohawkhudsonBikePath2016.pdf",
+    "text": "Download",
+    "file": "data/city_files/Colonie/b22c81_mohawkhudsonBikePath2016.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/WestAlbanyPark.pdf",
+    "text": "Map",
+    "file": "data/city_files/Colonie/61fcc3_WestAlbanyPark.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/NorthColonieSportsComplex.pdf",
+    "text": "Map",
+    "file": "data/city_files/Colonie/646c2d_NorthColonieSportsComplex.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/SouthColonieSportsComplex.pdf",
+    "text": "Map",
+    "file": "data/city_files/Colonie/76e71c_SouthColonieSportsComplex.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/parksandrec/documents/parkmaps/MohawkRiverParkTrails.pdf",
+    "text": "Download",
+    "file": "data/city_files/Colonie/33239a_MohawkRiverParkTrails.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://colonie.org/departments/historian/historicalsociety/documents/events/Colonie-Historical-Society-2026-Major-General-Philip-Schuyler.pdf",
+    "text": "Major General Philip Schuyler and the American Invasion of Canada in 1775-1776 (DOWNLOAD FOR DETAILS)",
+    "file": "data/city_files/Colonie/f4185b_Colonie-Historical-Society-2026-Major-General-Philip-Schuyler.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/e295d53010fe48ec85ab5961c3831d2e": "See the Trail Connector Study website here",
+   "https://experience.arcgis.com/experience/b7bfb6c27c7744eeb105791fc2fd972d": "Report a Street Light out"
+  }
+ },
+ "Coryell County": {
+  "files": [
+   {
+    "url": "https://coryellcountytx.gov/wp-content/uploads/2026/07/Coryell-Voting-map-2022-final.pdf",
+    "text": "Commissioners Voting Map",
+    "file": "data/city_files/Coryell_County/ef202c_Coryell-Voting-map-2022-final.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/f805de68d7204410850dff32dded56a5/": "Interactive Coryell County Map"
+  }
+ },
+ "Homestead": {
+  "files": [],
+  "portals": {}
+ },
+ "Bloomington": {
+  "files": [],
+  "portals": {}
+ },
+ "Loveland": {
+  "files": [],
+  "portals": {}
+ },
+ "Vermilion County": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Joseph": {
+  "files": [],
+  "portals": {}
+ },
+ "Portage County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/e382ac1aac694729a0c67b6fa6f0e7a4/": "Section Corner Finder",
+   "https://portagecowi.maps.arcgis.com/home/index.html": "Online Mapping",
+   "https://experience.arcgis.com/experience/3ec5250e106b45b980d963372944d72c": "Find My Zoning",
+   "https://experience.arcgis.com/experience/d7977bfedbbd468f80ed9cba60f4535b": "Parcel Finder",
+   "https://experience.arcgis.com/experience/e382ac1aac694729a0c67b6fa6f0e7a4": "Surveyor's Records",
+   "https://co.portage.wi.us/Pages/doing-bus/MapsGIS.aspx": "Maps",
+   "https://experience.arcgis.com/experience/b999858b9d324732b260581d8d2eb3ff": "DMV locations"
+  }
+ },
+ "Harrison County": {
+  "files": [],
+  "portals": {
+   "https://data.census.gov/profile/Harrison_County,_Texas?g=050XX00US48203": "County Demographics"
+  }
+ },
+ "Shawnee": {
+  "files": [],
+  "portals": {
+   "https://cityofshawnee.org/174/Maps-Open-Data-Portal": "Maps & Open Data Portal",
+   "https://cityofshawnee.org/383/Search-Maps-Open-Data-Portal": "Search Maps & Open Data Portal",
+   "https://cityofshawneeks.maps.arcgis.com/apps/instant/sidebar/index.html?appid=683e756ab520482f859a4a02b48e10f0": "Bicycle Routes and Shared Use Paths (Map)",
+   "https://data-cityofshawneeks.opendata.arcgis.com/": "Pipe Repair",
+   "https://experience.arcgis.com/experience/93538742407549deb215f46ddd49a29e/page/SW-Pipe-Status/": "Stormwater Map"
+  }
+ },
+ "South San Francisco": {
+  "files": [],
+  "portals": {
+   "https://www.ssfca.gov/Departments/Information-Technology/GIS-Open-Data-Portal": "GIS & Open Data Portal"
+  }
+ },
+ "Salem County": {
+  "files": [],
+  "portals": {}
+ },
+ "Pope County": {
+  "files": [],
+  "portals": {}
+ },
+ "Chapel Hill": {
+  "files": [],
+  "portals": {
+   "https://opendata-townofchapelhill.hub.arcgis.com/": "Open Data & GIS"
+  }
+ },
+ "Bristol": {
+  "files": [],
+  "portals": {}
+ },
+ "Mercer County": {
+  "files": [],
+  "portals": {}
+ }
+}
