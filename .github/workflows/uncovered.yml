@@ -1,0 +1,38 @@
+name: Uncovered cities (for FOIA)
+
+# US cities 75,000+ without official data on our map that we have not written to, with where to send a request.
+on:
+  workflow_dispatch:
+    inputs:
+      min_pop:
+        default: '75000'
+
+permissions:
+  contents: write
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /tool/
+            /data/foia/
+            /data/us_states.json
+            /assets/osm/tiles/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - env:
+          MIN_POP: ${{ inputs.min_pop }}
+        run: python3 tool/uncovered.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/foia/uncovered.json data/foia/UNCOVERED.md
+          git commit -qm "Uncovered cities for FOIA" || exit 0
+          for i in $(seq 1 40); do git pull -q --rebase -X theirs && git push -q && exit 0; sleep $((RANDOM % 45 + 10)); done
