@@ -1,0 +1,1988 @@
+{
+ "Henderson NV": {
+  "files": [],
+  "portals": {}
+ },
+ "Fargo ND": {
+  "files": [
+   {
+    "url": "https://download.fargond.gov/1/garbage_collection_schedule_map.pdf",
+    "text": "Garbage Collection Schedule Map",
+    "file": "data/city_files/Fargo_ND/320777_garbage_collection_schedule_map.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://download.cityoffargo.com/0/parkingstatuspetitionprocedures.pdf",
+    "text": "Parking Status Petition (PDF)",
+    "file": "data/city_files/Fargo_ND/2c0002_parkingstatuspetitionprocedures.pdf",
+    "rows": 19,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/fargo_downtown_parking_study_commissionbrownbag_1.pdf",
+    "text": "9/26/2025 Presentation",
+    "file": "data/city_files/Fargo_ND/b66707_fargo_downtown_parking_study_commissionbrownbag_1.pdf",
+    "rows": 145,
+    "bike_rows": 36
+   },
+   {
+    "url": "https://download.fargond.gov/0/2015_parking_ramp_site_evaluation_study_carl_walker-helenske.pdf",
+    "text": "2015 Final Report",
+    "file": "data/city_files/Fargo_ND/8b0da8_2015_parking_ramp_site_evaluation_study_carl_walker-helenske.pdf",
+    "rows": 134,
+    "bike_rows": 35
+   },
+   {
+    "url": "https://download.fargond.gov/2/cip_2026_11x17_2026-02-04.pdf",
+    "text": "2026 Capital Improvement Districts Map",
+    "file": "data/city_files/Fargo_ND/05dbbd_cip_2026_11x17_2026-02-04.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://download.fargond.gov/1/cip_2025_11x17_2025-12-29.pdf",
+    "text": "2025 Capital Improvement Districts Map",
+    "file": "data/city_files/Fargo_ND/fc122d_cip_2025_11x17_2025-12-29.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://download.fargond.gov/0/cip_2024_11x17_2024-01-09.pdf",
+    "text": "2024 Capital Improvement Districts Map",
+    "file": "data/city_files/Fargo_ND/3fa65c_cip_2024_11x17_2024-01-09.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/cip_2023_11x17_2023-05-23.pdf",
+    "text": "2023 Capital Improvement Districts Map",
+    "file": "data/city_files/Fargo_ND/c52845_cip_2023_11x17_2023-05-23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/1/cip_2022_approved_11x17_2021-12-21.pdf",
+    "text": "2022 Capital Improvement Districts Map (Approved Dec. 21, 2021)",
+    "file": "data/city_files/Fargo_ND/edb3b4_cip_2022_approved_11x17_2021-12-21.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/cip_2021_approved_11x17_2021-01-08.pdf",
+    "text": "2021 Capital Improvement Districts Map (Rev. Jan. 8, 2021)",
+    "file": "data/city_files/Fargo_ND/042eef_cip_2021_approved_11x17_2021-01-08.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://download.fargond.gov/0/cip_2020_approved_11x17_2020-05-18.pdf",
+    "text": "2020 Capital Improvement Districts Map (Rev. May 18, 2020)",
+    "file": "data/city_files/Fargo_ND/e3f61a_cip_2020_approved_11x17_2020-05-18.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/1/cip_2019_11x17_2019-05-29.pdf",
+    "text": "2019 Capital Improvement Districts Map (Rev. May 29, 2019)",
+    "file": "data/city_files/Fargo_ND/5b80e5_cip_2019_11x17_2019-05-29.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/cip_2018_11x17_final_2019-05-21.pdf",
+    "text": "2018 Capital Improvement Districts Map (Final Rev. May 21, 2019)",
+    "file": "data/city_files/Fargo_ND/2ab7b2_cip_2018_11x17_final_2019-05-21.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/cip_2017_11x17_6-15-2017.pdf",
+    "text": "2017 Capital Improvement Districts Map",
+    "file": "data/city_files/Fargo_ND/0db96a_cip_2017_11x17_6-15-2017.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/roberts_street_h-o_boundary_map.pdf",
+    "text": "Roberts Street Historic Overlay Map",
+    "file": "data/city_files/Fargo_ND/8fc69c_roberts_street_h-o_boundary_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/8th_street_south_h-o_boundary_map.pdf",
+    "text": "8th Street South Historic Overlay Map",
+    "file": "data/city_files/Fargo_ND/bf5120_8th_street_south_h-o_boundary_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/4507_island_park_addition_-_historic_overlay_district.pdf",
+    "text": "Ord #4507",
+    "file": "data/city_files/Fargo_ND/367990_4507_island_park_addition_-_historic_overlay_district.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/island_park_h-o_boundary_map.pdf",
+    "text": "Island Park Historic Overlay Map",
+    "file": "data/city_files/Fargo_ND/fa3b7a_island_park_h-o_boundary_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/4655_woodruffs_addition_ruperts_subdivision_-_historic_overlay_district.pdf",
+    "text": "Ord #4655",
+    "file": "data/city_files/Fargo_ND/5a3fee_4655_woodruffs_addition_ruperts_subdivision_-_historic_overlay_distric",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/woodruffs_h-o_boundary_map.pdf",
+    "text": "Woodruffs Historic Overlay Map",
+    "file": "data/city_files/Fargo_ND/b01ee7_woodruffs_h-o_boundary_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/erskines_h-o_boundary_map.pdf",
+    "text": "Erskines Historic Overlay Map",
+    "file": "data/city_files/Fargo_ND/a3682d_erskines_h-o_boundary_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/chas_a_roberts_h-o_boundary_map.pdf",
+    "text": "Chas A Roberts Historic Overlay Map",
+    "file": "data/city_files/Fargo_ND/ebba0d_chas_a_roberts_h-o_boundary_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/1/5184_12-17-18_jefferson_historic_overlay.pdf",
+    "text": "Ord #5184",
+    "file": "data/city_files/Fargo_ND/05c794_5184_12-17-18_jefferson_historic_overlay.pdf",
+    "rows": 243,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/jefferson_neighborhood_h-o_boundary_map.pdf",
+    "text": "Jefferson Neighborhood Historic Overlay Map",
+    "file": "data/city_files/Fargo_ND/8e4761_jefferson_neighborhood_h-o_boundary_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/5286_01-11-2021_oak_grove_historic_overlay_district.pdf",
+    "text": "Ord #5286",
+    "file": "data/city_files/Fargo_ND/898529_5286_01-11-2021_oak_grove_historic_overlay_district.pdf",
+    "rows": 18,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/oak_grove_h-o_boundary_map.pdf",
+    "text": "Oak Grove Historic Overlay Map",
+    "file": "data/city_files/Fargo_ND/32dcd5_oak_grove_h-o_boundary_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/1/10-23-19_info_sheet_-_owning_property_in_ho_district.pdf",
+    "text": "What does historic zoning mean to me? (pdf)",
+    "file": "data/city_files/Fargo_ND/b46f52_10-23-19_info_sheet_-_owning_property_in_ho_district.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://download.fargond.gov/0/fargo_rz_map.pdf",
+    "text": "RZ Boundary Map",
+    "file": "data/city_files/Fargo_ND/f43a1d_fargo_rz_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://download.cityoffargo.com/0/instructions_fema_historical_maps.pdf",
+    "text": "Researching Historic FEMA Products (PDF)",
+    "file": "data/city_files/Fargo_ND/44891b_instructions_fema_historical_maps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://download.cityoffargo.com/1/smartphonemapinstructions.pdf",
+    "text": "Smartphone Floodplain Map User Guide (PDF)",
+    "file": "data/city_files/Fargo_ND/17b66c_smartphonemapinstructions.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.legis.nd.gov/cencode/t23c10.pdf",
+    "text": "Chapter 23-10: Mobile Home Parks, Trailer Parks, and Campgrounds",
+    "file": "data/city_files/Fargo_ND/2d7990_t23c10.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.cityoffargo.com/0/2017_fm_bikeways_map.pdf",
+    "text": "2017 FM Metro Bikeway Map",
+    "file": "data/city_files/Fargo_ND/3f08c0_2017_fm_bikeways_map.pdf",
+    "rows": 50,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://download.fargond.gov/1/snow_emergency_route.pdf",
+    "text": "Snow Emergency Route",
+    "file": "data/city_files/Fargo_ND/4687d2_snow_emergency_route.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/1/priority_2_snow_plowing.pdf",
+    "text": "Priority 2 Snow Plowing Routes",
+    "file": "data/city_files/Fargo_ND/6a5a53_priority_2_snow_plowing.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/1/priority_3_plowing_zones.pdf",
+    "text": "Priority 3 Snow Plowing Routes",
+    "file": "data/city_files/Fargo_ND/034c26_priority_3_plowing_zones.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/1/collection_schedule_map.pdf",
+    "text": "Week A and Week B route map (PDF)",
+    "file": "data/city_files/Fargo_ND/f2c927_collection_schedule_map.pdf",
+    "rows": 6,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://download.fargond.gov/0/2025-11-19_-_2026_recycling_card_-_approved.pdf",
+    "text": "2026 Residential Recycling Curbside Collection Calendar (PDF)",
+    "file": "data/city_files/Fargo_ND/e5e33c_2025-11-19_-_2026_recycling_card_-_approved.pdf",
+    "rows": 71,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://download.fargond.gov/0/et_2023_sectgrid_b.pdf",
+    "text": "Fargo Section Map",
+    "file": "data/city_files/Fargo_ND/8b5b7f_et_2023_sectgrid_b.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fargoparks.com/sites/default/files/2023-05/Parkmap_11x17.pdf",
+    "text": "Fargo Park District Map",
+    "file": "data/city_files/Fargo_ND/f31143_Parkmap_11x17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://cityoffargond.maps.arcgis.com/apps/webappviewer/index.html?id=e99e5fd9fbf14f2dbd26c31a59739329": "Interactive Map",
+   "https://experience.arcgis.com/experience/c597edd797184549a0641fa0ccb257bc/page/Home?org=cityoffargond": "Interactive GIS Map",
+   "http://gis.cityoffargo.com/FloodStages/": "Interactive Flood Stage Map",
+   "http://cityoffargond.maps.arcgis.com/apps/webappviewer/index.html?id=33ac01060a3042e5b16ff14eb0a296e8": "Smartphone Floodplain Map",
+   "https://experience.arcgis.com/experience/e1ffb7a32b5f406582f9886824f6d3af": "map",
+   "https://experience.arcgis.com/experience/6c82da7c698b4fbe8368af79b2b8a474/": "View Interactive GIS Map (Search by Address)",
+   "http://www.legis.nd.gov/information/acdata/html/33-33.html": "Article 33-33: Rules Initiated by Inspection Division",
+   "https://experience.arcgis.com/experience/35cf592a5d654aabb8f2346e110087ff/": "View The Interactive Service Line Material Map"
+  }
+ },
+ "Omaha": {
+  "files": [],
+  "portals": {}
+ },
+ "Lincoln": {
+  "files": [
+   {
+    "url": "https://lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/2025-city-of-lincoln-trail-report-web.pdf",
+    "text": "Annual Trail Report (PDF, 8MB)",
+    "file": "data/city_files/Lincoln/009281_2025-city-of-lincoln-trail-report-web.pdf",
+    "rows": 51,
+    "bike_rows": 29
+   },
+   {
+    "url": "https://lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/bridlepath_actionplan_20180110.pdf",
+    "text": "Pioneers Park Bridle Paths Action Plan (PDF, 584KB)",
+    "file": "data/city_files/Lincoln/864fbc_bridlepath_actionplan_20180110.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/lpr-trails-fletcher-tap-55.pdf",
+    "text": "Informational handout (PDF, 252KB)",
+    "file": "data/city_files/Lincoln/700629_lpr-trails-fletcher-tap-55.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/projects/13554-waterford-trail-fact-sheet-10-6-26.pdf",
+    "text": "Waterford Trail Fact Sheet, 10-6-26 (PDF, 594KB)",
+    "file": "data/city_files/Lincoln/c6b145_13554-waterford-trail-fact-sheet-10-6-26.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/route-brochures/all-weekday-routes.pdf",
+    "text": "All Weekday Routes & Schedules (PDF, 2MB)",
+    "file": "data/city_files/Lincoln/96feaf_all-weekday-routes.pdf",
+    "rows": 436,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/route-brochures/unl-routes.pdf",
+    "text": "All UNL Routes & Schedules (PDF, 754KB)",
+    "file": "data/city_files/Lincoln/29a283_unl-routes.pdf",
+    "rows": 57,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/route-brochures/all-saturday-routes.pdf",
+    "text": "All Saturday Routes & Schedules (PDF, 3MB)",
+    "file": "data/city_files/Lincoln/2280e8_all-saturday-routes.pdf",
+    "rows": 199,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/const-demo-recycling-resources.pdf",
+    "text": "Construction Material Diversion Providers (PDF, 12KB)",
+    "file": "data/city_files/Lincoln/5b5524_const-demo-recycling-resources.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/2/ltu/transportation/traffic-engineering/truck-routes.pdf",
+    "text": "Truck Routes Map (PDF, 705KB)",
+    "file": "data/city_files/Lincoln/32cf70_truck-routes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/2025-city-of-lincoln-trail-report-web.pdf",
+    "text": "Annual Trail Report (PDF, 8MB)",
+    "file": "data/city_files/Lincoln/43be6f_2025-city-of-lincoln-trail-report-web.pdf",
+    "rows": 51,
+    "bike_rows": 29
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/bridlepath_actionplan_20180110.pdf",
+    "text": "Pioneers Park Bridle Paths Action Plan (PDF, 584KB)",
+    "file": "data/city_files/Lincoln/fed3ae_bridlepath_actionplan_20180110.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/lpr-trails-fletcher-tap-55.pdf",
+    "text": "Informational handout (PDF, 252KB)",
+    "file": "data/city_files/Lincoln/555025_lpr-trails-fletcher-tap-55.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/projects/13554-waterford-trail-fact-sheet-10-6-26.pdf",
+    "text": "Waterford Trail Fact Sheet, 10-6-26(PDF, 594KB)",
+    "file": "data/city_files/Lincoln/63e3ca_13554-waterford-trail-fact-sheet-10-6-26.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bikeleague.org/wp-content/uploads/bfareportcards/bfc/Fall_2023/Lincoln_NE.pdf",
+    "text": "here",
+    "file": "data/city_files/Lincoln/70ff37_Lincoln_NE.pdf",
+    "rows": 62,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/parks-amp-rec/parks-amp-facilities/parks/pioneers_park_map.pdf",
+    "text": "Pioneers-Park-Map.pdf (PDF, 9MB)",
+    "file": "data/city_files/Lincoln/d1fab6_pioneers_park_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/parks-amp-facilities/parks/wilderness-park/wilderness-map.pdf",
+    "text": "Wilderness-Map.pdf (PDF, 2MB)",
+    "file": "data/city_files/Lincoln/51d922_wilderness-map.pdf",
+    "rows": 27,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/trails/waterfordtrailpresentation-5.11.2026.pdf",
+    "text": "WaterfordTrailPresentation-5.11.2026.pdf (PDF, 4MB)",
+    "file": "data/city_files/Lincoln/090a6b_waterfordtrailpresentation-5.11.2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/2/urban-development/park-and-go/forms/bicycle-storage-agreement.pdf",
+    "text": "Bicycle Storage Agreement (PDF, 50KB)",
+    "file": "data/city_files/Lincoln/ed9064_bicycle-storage-agreement.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/urban-development/park-and-go/forms/parking-rules-and-regulations.pdf",
+    "text": "Parking Rules and Regulations (PDF, 704KB)",
+    "file": "data/city_files/Lincoln/c5255a_parking-rules-and-regulations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/urban-development/park-and-go/forms/rosaparklot_foodtruck.pdf",
+    "text": "application (PDF, 50KB)",
+    "file": "data/city_files/Lincoln/95474b_rosaparklot_foodtruck.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/3/urban-development/park-and-go/forms/food-truck-parking-meter-hood-application.pdf",
+    "text": "Food Truck Parking Meter Hooding Application",
+    "file": "data/city_files/Lincoln/ca521f_food-truck-parking-meter-hood-application.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/programs/nature-center/ppnc-tracks-sheet.web.2020.pdf",
+    "text": "Animal Tracks Guide (PDF, 390KB)",
+    "file": "data/city_files/Lincoln/07cba8_ppnc-tracks-sheet.web.2020.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/about/lpr-guidelines-adoptparktrail.pdf",
+    "text": "Adopt-A-Park & Adopt-A-Trail Guidelines (PDF, 675KB)",
+    "file": "data/city_files/Lincoln/4d9581_lpr-guidelines-adoptparktrail.pdf",
+    "rows": 21,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/volunteer/adopt-a-park-area-application2021.pdf",
+    "text": "Adopt-a-Park and Trail Application (PDF, 63KB)",
+    "file": "data/city_files/Lincoln/6fbc4a_adopt-a-park-area-application2021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/parks-amp-rec/pedestrianbicycle-committee/boardtraining.doc.pbac05-10-21.pdf",
+    "text": "BoardTraining.Doc.PBAC05-10-21.pdf (PDF, 133KB)",
+    "file": "data/city_files/Lincoln/e31643_boardtraining.doc.pbac05-10-21.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/ltu/startran/mmtc/mmtc-20251021-parking-options.pdf",
+    "text": "Private Parking Options Near City Hall 458 K (, 0B)",
+    "file": "data/city_files/Lincoln/6650e2_mmtc-20251021-parking-options.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/6/ltu/startran/route-brochures/unl-routes.pdf",
+    "text": "PDF Brochure (PDF, 754KB)",
+    "file": "data/city_files/Lincoln/099fae_unl-routes.pdf",
+    "rows": 57,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/corrugated-cardboard-faq.pdf",
+    "text": "PDF Version (PDF, 655KB)",
+    "file": "data/city_files/Lincoln/a87430_corrugated-cardboard-faq.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/guidelines-poster-mfh.pdf?2020",
+    "text": "Recycling Guidelines for Shared Multi-family Recycling Containers (PDF, 634KB)",
+    "file": "data/city_files/Lincoln/1f0d13_guidelines-poster-mfh.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/cardboard-recycle-poster.pdf",
+    "text": "Educational Recycling Poster (PDF, 280KB)",
+    "file": "data/city_files/Lincoln/6cc76e_cardboard-recycle-poster.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycle-tips.pdf",
+    "text": "Tips for Recycling at Home (PDF, 530KB)",
+    "file": "data/city_files/Lincoln/95583e_recycle-tips.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycling-handbill.pdf",
+    "text": "Tips for Recycling at Home (8.5\"x11\") (PDF, 426KB)",
+    "file": "data/city_files/Lincoln/14354e_recycling-handbill.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/guidelines-poster-mfh-es.pdf?2020",
+    "text": "Pautas de reciclaje por material para contenedores de reciclaje compartidos multifamiliares (PDF, 710KB)",
+    "file": "data/city_files/Lincoln/79c126_guidelines-poster-mfh-es.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/cardboard-recycle-poster-es.pdf",
+    "text": "Descargue el cartel de reciclaje educativo (PDF, 4MB)",
+    "file": "data/city_files/Lincoln/60d4f6_cardboard-recycle-poster-es.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycle-tips-es.pdf",
+    "text": "Descargue consejos de reciclaje en casa (PDF, 530KB)",
+    "file": "data/city_files/Lincoln/6f27c5_recycle-tips-es.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycling-handbill-es.pdf",
+    "text": "Descargue consejos de reciclaje en casa (8.5\"x11\") (PDF, 428KB)",
+    "file": "data/city_files/Lincoln/fd209d_recycling-handbill-es.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/guidelines-poster-mfh-vi.pdf?2020",
+    "text": "Hướng dẫn bỏ rác theo vật liệu dành cho thùng rác cho nhiều hộ gia đình dùng chung (PDF, 704KB)",
+    "file": "data/city_files/Lincoln/6b7a14_guidelines-poster-mfh-vi.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/cardboard-recycle-poster-vi.pdf",
+    "text": "Tải về: Biễu ngữ huấn luyện tái tạo (PDF, 4MB)",
+    "file": "data/city_files/Lincoln/055cbe_cardboard-recycle-poster-vi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycle-tips-vi.pdf",
+    "text": "Tải về: Cẫm nang tái tạo tại gia (PDF, 535KB)",
+    "file": "data/city_files/Lincoln/7b2ae0_recycle-tips-vi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/ltu/utilities/solid-waste-management/recycling/multilingual-resources/recycling-handbill-vi.pdf",
+    "text": "Tải về: Cẫm nang tái tạo tại gia (8.5\"x11\") (PDF, 448KB)",
+    "file": "data/city_files/Lincoln/440c13_recycling-handbill-vi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.lincoln.ne.gov/Payments-Services/Open-Data": "Open Data",
+   "https://experience.arcgis.com/experience/d40f8bcafe804295b94b00c8127aec93/page/Page-1/?views=Street-Closures-Map": "Lancaster County Road Closures",
+   "http://www.arcgis.com/apps/webappviewer/index.html?id=3c325ececec44d46b031385a73d7a5e0": "Street Sweeping Map",
+   "https://lincolnne.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=0ee203d663bc4afb83cb5647f47be122&locale=en-US": "Open map in full screen",
+   "https://lincolnne.maps.arcgis.com/apps/webappviewer/index.html?id=6e98d72fc3bc4386b7d6bda6cf3d9f9b&extent=-10779325.0261%2C4976241.0492%2C-10743686.2616%2C4992846.9936%2C102100": "Click here to view the map in full.",
+   "https://lincolnne.maps.arcgis.com/apps/instant/sidebar/index.html?appid=1e18c7112d1843868e6313499f10ec01": "City of Lincoln Bridge Map"
+  }
+ },
+ "Río Cuarto": {
+  "files": [],
+  "portals": {}
+ },
+ "Springfield": {
+  "files": [
+   {
+    "url": "https://ozarkgreenways.org/wp-content/uploads/2026/08/OG-Regional-Connections-24x36-1.pdf",
+    "text": "Download",
+    "file": "data/city_files/Springfield/872e41_OG-Regional-Connections-24x36-1.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://springfieldmo.gov/opendata": "",
+   "http://cosmo.maps.arcgis.com/apps/webappviewer/index.html?id=663310ae2e4848178bd633d998f107d8": "Medical Marijuana Facility Locator",
+   "http://www.arcgis.com/home/webmap/viewer.html?webmap=6d1e6f3eb9ae41299ab40bb29d29c349": "Elevation Benchmarks",
+   "https://cosmo.maps.arcgis.com/apps/webappviewer/index.html?id=9170525b348b44f59b659b9754830daa": "Zoning & Subdivisions Map",
+   "https://cosmo.maps.arcgis.com/apps/webappviewer/index.html?id=039745f0fc374555906223e4c1e13bc5": "Interactive Map of Springfield",
+   "https://cosmo.maps.arcgis.com/apps/View/index.html?appid=99c460bf0e474766965a142f19add5d2": "TIF Map",
+   "https://epa.maps.arcgis.com/apps/View/index.html?appid=5d53ea694b7e4711a253cca53efef852": "EPA Opportunity Zone Mapper",
+   "https://springfieldmo.gov/4916/Police-Department-Open-Data": "Police Department Open Data",
+   "https://springfieldmo.gov/5222/Open-Data": "Open Data",
+   "https://springfieldmo.gov/2505/Open-Data": "Open Data",
+   "https://springfieldmo.gov/3061/Open-Data": "Open Data",
+   "https://springfieldmo.gov/2842/Open-Data": "Open Data",
+   "https://springfieldmo.gov/3244/Open-Data": "Open  Data",
+   "https://cosmo.maps.arcgis.com/apps/instant/basic/index.html?appid=2ce534d3ffdd4a51a91c3fb0ae5a9baa": "interactive map",
+   "https://www.springfieldmo.gov/4916/Police-Department-Open-Data": "Police Department Open Data",
+   "https://www.springfieldmo.gov/5222/Open-Data": "Open Data",
+   "https://www.springfieldmo.gov/2505/Open-Data": "Open Data",
+   "https://www.springfieldmo.gov/3061/Open-Data": "Open Data",
+   "https://www.springfieldmo.gov/2842/Open-Data": "Open Data",
+   "https://www.springfieldmo.gov/3244/Open-Data": "Open  Data",
+   "https://oto.maps.arcgis.com/apps/instant/basic/index.html?appid=c04d76ac1b894be7856fd5f54663513c": "Map of Critical Sidewalk Gaps"
+  }
+ },
+ "Denton": {
+  "files": [],
+  "portals": {}
+ },
+ "Rochester": {
+  "files": [
+   {
+    "url": "https://bikeleague.org/wp-content/uploads/2023/05/BFB_Overview.pdf",
+    "text": "Bicycle Friendly America Program",
+    "file": "data/city_files/Rochester/19d26c_BFB_Overview.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/n4slbg1v/full-rpt-map-july-2026.pdf",
+    "text": "View the Full System Map",
+    "file": "data/city_files/Rochester/5639ae_full-rpt-map-july-2026.pdf",
+    "rows": 20,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/objnpndn/rpt-schedule-spring-2026_21.pdf",
+    "text": "Route 21 Map",
+    "file": "data/city_files/Rochester/53db7e_rpt-schedule-spring-2026_21.pdf",
+    "rows": 26,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/xubean44/rpt-schedule-spring-2026_22.pdf",
+    "text": "Route 22 Map",
+    "file": "data/city_files/Rochester/6f351a_rpt-schedule-spring-2026_22.pdf",
+    "rows": 26,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/f1nlydsb/rpt-schedule-spring-2026_23.pdf",
+    "text": "Route 23 Map",
+    "file": "data/city_files/Rochester/3a309e_rpt-schedule-spring-2026_23.pdf",
+    "rows": 26,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/euyj2b5q/rpt-schedule-spring-2026_24.pdf",
+    "text": "Route 24 Map",
+    "file": "data/city_files/Rochester/bf3708_rpt-schedule-spring-2026_24.pdf",
+    "rows": 26,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/mcbhyzo5/rpt-schedule-spring-2026_25.pdf",
+    "text": "Route 25 Map",
+    "file": "data/city_files/Rochester/035e1d_rpt-schedule-spring-2026_25.pdf",
+    "rows": 45,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/hwjdnntp/rpt-schedule-spring-2026_26.pdf",
+    "text": "Route 26 Map",
+    "file": "data/city_files/Rochester/a7f069_rpt-schedule-spring-2026_26.pdf",
+    "rows": 46,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/jx5fzffq/rpt-schedule-spring-2026_102.pdf",
+    "text": "Route 102 Map",
+    "file": "data/city_files/Rochester/e9d0d1_rpt-schedule-spring-2026_102.pdf",
+    "rows": 15,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/udwhkpmo/rpt-schedule-spring-2026_116.pdf",
+    "text": "Route 116 Map",
+    "file": "data/city_files/Rochester/3b700a_rpt-schedule-spring-2026_116.pdf",
+    "rows": 28,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/uwtpmhzu/rpt-schedule-spring-2026_150.pdf",
+    "text": "Route 150 Map",
+    "file": "data/city_files/Rochester/22b206_rpt-schedule-spring-2026_150.pdf",
+    "rows": 19,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/oeyjqmc1/rpt-schedule-spring-2026_203.pdf",
+    "text": "Route 203 Map",
+    "file": "data/city_files/Rochester/4324b1_rpt-schedule-spring-2026_203.pdf",
+    "rows": 48,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/dtjdvkzj/rpt-schedule-spring-2026_204.pdf",
+    "text": "Route 204 Map",
+    "file": "data/city_files/Rochester/1479fe_rpt-schedule-spring-2026_204.pdf",
+    "rows": 33,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/f53fsg1x/rpt-schedule-spring-2026_205.pdf",
+    "text": "Route 205 Map",
+    "file": "data/city_files/Rochester/9caeb5_rpt-schedule-spring-2026_205.pdf",
+    "rows": 28,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/rmfn3nfi/rpt-schedule-spring-2026_306.pdf",
+    "text": "Route 306 Map",
+    "file": "data/city_files/Rochester/209f0a_rpt-schedule-spring-2026_306.pdf",
+    "rows": 54,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/1uumonpd/rpt-schedule-spring-2026_307.pdf",
+    "text": "Route 307 Map",
+    "file": "data/city_files/Rochester/6aeb4d_rpt-schedule-spring-2026_307.pdf",
+    "rows": 41,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/vihpwl4b/rpt-schedule-spring-2026_314.pdf",
+    "text": "Route 314 Map",
+    "file": "data/city_files/Rochester/562739_rpt-schedule-spring-2026_314.pdf",
+    "rows": 20,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/oc0kskaf/rpt-schedule-spring-2026_408.pdf",
+    "text": "Route 408 Map",
+    "file": "data/city_files/Rochester/1c6412_rpt-schedule-spring-2026_408.pdf",
+    "rows": 30,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/fgfbwycp/410.pdf",
+    "text": "Route 410 Map",
+    "file": "data/city_files/Rochester/cc4e05_410.pdf",
+    "rows": 70,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/uilnetqu/411.pdf",
+    "text": "Route 411 Map",
+    "file": "data/city_files/Rochester/d6b753_411.pdf",
+    "rows": 32,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/dcybo5q0/413.pdf",
+    "text": "Route 413 Map",
+    "file": "data/city_files/Rochester/099a3b_413.pdf",
+    "rows": 51,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/x1yptpv5/rpt-schedule-spring-2026_419.pdf",
+    "text": "Route 419 Map",
+    "file": "data/city_files/Rochester/bff412_rpt-schedule-spring-2026_419.pdf",
+    "rows": 26,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/wjtlf3yv/rpt-schedule-spring-2026_550.pdf",
+    "text": "Route 550 Map",
+    "file": "data/city_files/Rochester/a2ff67_rpt-schedule-spring-2026_550.pdf",
+    "rows": 50,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/uy0nrnqg/21.pdf",
+    "text": "Route 21 Map",
+    "file": "data/city_files/Rochester/64d96e_21.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/zuxd0a5m/22.pdf",
+    "text": "Route 22 Map",
+    "file": "data/city_files/Rochester/acb245_22.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/yqdhwlb2/23.pdf",
+    "text": "Route 23 Map",
+    "file": "data/city_files/Rochester/25a6fe_23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/myzfdmlo/24.pdf",
+    "text": "Route 24 Map",
+    "file": "data/city_files/Rochester/54a0f0_24.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/ep2lr4kt/25.pdf",
+    "text": "Route 25 Map",
+    "file": "data/city_files/Rochester/353339_25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/tyojsvga/26.pdf",
+    "text": "Route 26 Map",
+    "file": "data/city_files/Rochester/9d83bc_26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/pq2aeeh2/102.pdf",
+    "text": "Route 102 Map",
+    "file": "data/city_files/Rochester/f71c19_102.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/w2kadyqp/116.pdf",
+    "text": "Route 116 Map",
+    "file": "data/city_files/Rochester/2e48cc_116.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/ckli0b2q/120.pdf",
+    "text": "Route 120 Map",
+    "file": "data/city_files/Rochester/afe7a8_120.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/p1idzkd0/150.pdf",
+    "text": "Route 150 Map",
+    "file": "data/city_files/Rochester/19a23b_150.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/xgfgyek5/203.pdf",
+    "text": "Route 203 Map",
+    "file": "data/city_files/Rochester/1ffff2_203.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/2mnf0f2k/204.pdf",
+    "text": "Route 204 Map",
+    "file": "data/city_files/Rochester/4c58e2_204.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/3wal4uxv/205.pdf",
+    "text": "Route 205 Map",
+    "file": "data/city_files/Rochester/428b1a_205.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/wtsb4x34/306.pdf",
+    "text": "Route 306 Map",
+    "file": "data/city_files/Rochester/0a504e_306.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/5lkb4mf1/307.pdf",
+    "text": "Route 307 Map",
+    "file": "data/city_files/Rochester/eb1e63_307.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/rochestermn-us/media/ypnp40sk/314.pdf",
+    "text": "Route 314 Map",
+    "file": "data/city_files/Rochester/768603_314.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/0e48caa5965344e8bd5f24c3c1fcf963": "View the Construction Impacts Map",
+   "https://experience.arcgis.com/experience/96fae49769234c409a32bb2058852b61": "Find City-Owned EV Chargers",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.arcgis.com%2Fexperience%2Fd3932bae32cb4b6490758418b2bf45e4&data=05%7C02%7Clgass%40rochestermn.gov%7C36b41aff67b1419583a608de9a614d38%7Ccb27df3977b04068b56620ba44fa9279%7C0%7C0%7C639117939857478049%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=XPi3vs3He3w5QPFFGcIisUsW0dg3rLCDoKDsOjRnTw0%3D&reserved=0": "View the Sidewalk Improvement Districts Map",
+   "https://experience.arcgis.com/experience/1fb516a28e04445bb8cd0fc6368206dd/page/Pedestrian": "live Downtown Construction Navigation map",
+   "https://experience.arcgis.com/experience/a8e178d92ae5465ea0c361f9d813aa99": "nearby ramps",
+   "https://experience.arcgis.com/experience/1fb516a28e04445bb8cd0fc6368206dd": "Downtown Construction Map",
+   "https://experience.arcgis.com/experience/14a4c8ba8e994557b640b9798f81e709": "View the Active Transportation Network Map",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.arcgis.com%2Fexperience%2F528117f163304bcca3fd49b076146245&data=05%7C02%7Cmmoeller%40rochestermn.gov%7Cf1d305e20b4041a14b2208defc8dc9c9%7Ccb27df3977b04068b56620ba44fa9279%7C0%7C0%7C639225883103833419%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=h2Km6j3lCXdUUI5BNqlHpTpgYSWCCMWJuZMZ8xtYR4I%3D&reserved=0": "View a map of the business district",
+   "https://storymaps.arcgis.com/stories/1c57ba8de7c24fcb9c44eef3a96a278e": "View the Silver Lake Park Improvements Project Page",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.arcgis.com%2Fexperience%2Fa8e178d92ae5465ea0c361f9d813aa99&data=05%7C02%7Clgass%40rochestermn.gov%7C646bb599ee094c16e7a508de94d7ba20%7Ccb27df3977b04068b56620ba44fa9279%7C0%7C0%7C639111851417359686%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2BpXhy0MMwH7lFqI54pOgehDY406ZgkWre8oqR%2B4yvE0%3D&reserved=0": "View the Public Parking in Rochester Map",
+   "https://experience.arcgis.com/experience/ae570179fddc45cba4b03ad5555a238d/?draft=true&org=RPU": "Residential Permit Parking Map Application",
+   "https://experience.arcgis.com/experience/a4a7ac6330134b39b91507dda5a57738": "View the Parking Meter Map",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.arcgis.com%2Fexperience%2Fa4a7ac6330134b39b91507dda5a57738&data=05%7C02%7Clgass%40rochestermn.gov%7Cb70cab6758c541b6893b08deaba1bc25%7Ccb27df3977b04068b56620ba44fa9279%7C0%7C0%7C639136908665610169%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=vbqnJeivj%2BiKISOpVuGIks25RwFwpWov6ffC%2FJZ8hfM%3D&reserved=0": "Downtown Parking Public Web Map Application",
+   "https://experience.arcgis.com/experience/afb934c3458243a49b2631aaddd7eb26": "View the ZIPS Service Area Map",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.arcgis.com%2Fexperience%2F2c14de066f014e9fa7182d83ef2a2c82&data=05%7C02%7Clgass%40rochestermn.gov%7C646bb599ee094c16e7a508de94d7ba20%7Ccb27df3977b04068b56620ba44fa9279%7C0%7C0%7C639111851417321362%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=ZTSQNJmII2uepJ%2Bi4PbHaL9OS8fbFuSIqx%2FVMuLpIjI%3D&reserved=0?url=https%3A%2F%2Fexperience.arcgis.com%2Fexperience%2F2c14de066f014e9fa7182d83ef2a2c82&data=05%7C02%7Cegass%40rochestermn.gov%7C44a028e1bd46489c1c1608ddcebc8ee1%7Ccb27df3977b04068b56620ba44fa9279%7C0%7C0%7C638894031433633128%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=DfdDCXrTKlbjDRPT3vmhJIoM5HPexmNvs7CQBvdOBWI%3D&reserved=0": "View the RPT Park & Ride System Map",
+   "https://city-projects-rpu.hub.arcgis.com/": "City Projects dashboard",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.arcgis.com%2Fexperience%2F0dd16429bb5745e39d6690a4b8b1332b&data=05%7C02%7Clgass%40rochestermn.gov%7C36b41aff67b1419583a608de9a614d38%7Ccb27df3977b04068b56620ba44fa9279%7C0%7C0%7C639117939857518009%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=1N%2FQ9w3fmsaz34Gkc1XpNO0xMw6qpHJbcfz1rbH8P%2FU%3D&reserved=0": "View the Interactive Ward & Precinct Map",
+   "https://storymaps.arcgis.com/stories/e5a433c1aca64c22a432a42794a1f041": "project webpage",
+   "https://experience.arcgis.com/experience/8405100215b64ed9b6fe686df3753939/?draft=true&org=RPU": "",
+   "http://www.gis.leg.mn/OpenLayers/districts/": "MN District Finder"
+  }
+ },
+ "Sugar Land": {
+  "files": [],
+  "portals": {
+   "https://data.sugarlandtx.gov/showcase/permits-and-inspections-hub": "Permits and Inspections Hub",
+   "https://cosl.maps.arcgis.com/apps/dashboards/212e5f6009e84973bc2bf7872d8445cf": "CIP Story Map",
+   "https://data.sugarlandtx.gov/showcase/city-of-sugar-land-gis-hub-site": "GIS Hub Site",
+   "https://data.sugarlandtx.gov/showcase/community-crime-map": "Community Crime Map",
+   "https://data.sugarlandtx.gov/": "Open Data",
+   "https://sugarlandtx.gov/opendata": "Open Data Portal",
+   "https://sugarlandtx.gov/2528/Open-Data-Portal": "Open Data Portal",
+   "https://sugarlandtx.gov/2580/Open-Data-Portal": "Open Data Portal",
+   "http://www.sugarlandtx.gov/2528/Open-Data-Portal": "Open Data Portal",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd": "floodplain map",
+   "https://experience.arcgis.com/experience/24b33dff4acc48f7a817d4c29f1564c6/": "Major Thoroughfare Network & Pedestrian and Bicycle Network",
+   "https://mobility-master-plan-cosl.hub.arcgis.com/": "Mobility Master Plan",
+   "http://www.legis.state.tx.us/tlodocs/84R/billtext/html/HB01295F.htm": "House Bill 1295",
+   "https://cosl.maps.arcgis.com/apps/instant/basic/index.html?appid=a3141e043e4e405f9b00951cf5c99e70": "our interactive map",
+   "https://experience.arcgis.com/experience/5bf73177db6a4ae28b5986c808c46a90/page/Page?views=About": "Current Development Map",
+   "https://survey123.arcgis.com/share/a9755767526546b5a9509d1648399862": "Request a Utility Map",
+   "https://permits-office-cosl.hub.arcgis.com/pages/permit-office": "Performance Data Hub",
+   "https://experience.arcgis.com/experience/ee1fe6e385574848a427515139756c70/": "Interactive Zoning Map",
+   "https://experience.arcgis.com/experience/5bf73177db6a4ae28b5986c808c46a90/": "",
+   "https://city-of-sugar-land-hub-cosl.hub.arcgis.com/": "Sugar Land GIS Hub",
+   "https://data.sugarlandtx.gov/pages/suggestions-and-feedback": "Suggestion and Feedback form",
+   "https://city-of-sugar-land-hub-cosl.hub.arcgis.com/apps/67329df157de485fb5a201f59d2fd0e6/explore": "Fire Coverage Map",
+   "https://www.sugarlandtx.gov/2580/Open-Data-Portal": "Open Data Portal",
+   "https://www.sugarlandtx.gov/2528/Open-Data-Portal": "Open Data Portal",
+   "https://survey123.arcgis.com": "",
+   "http://www.sugarlandtx.gov/2580/Open-Data-Portal": "Open Data Portal"
+  }
+ },
+ "Presidente Perón Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Edmond": {
+  "files": [
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/visitedmondok/Edmond_Trails_Map_26_Website_39fcaac0-f092-4272-bc4c-32eade4cff42.pdf",
+    "text": "",
+    "file": "data/city_files/Edmond/cbf84c_Edmond_Trails_Map_26_Website_39fcaac0-f092-4272-bc4c-32eade4cff42.pdf",
+    "rows": 35,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/visitedmondok/Edmond_City_Wide_Map_e176c4d7-7b0b-41a1-998a-58e6a61d47a4.pdf",
+    "text": "",
+    "file": "data/city_files/Edmond/9cb4b3_Edmond_City_Wide_Map_e176c4d7-7b0b-41a1-998a-58e6a61d47a4.pdf",
+    "rows": 70,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/visitedmondok/Edmond_Downtown_Map_7990099e-9ab2-4700-8767-c6afff092d9b.pdf",
+    "text": "",
+    "file": "data/city_files/Edmond/810211_Edmond_Downtown_Map_7990099e-9ab2-4700-8767-c6afff092d9b.pdf",
+    "rows": 32,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/visitedmondok/Illustrated_City_Map_faddb395-075b-410b-b236-653df0c8fc56.pdf",
+    "text": "",
+    "file": "data/city_files/Edmond/9ccc00_Illustrated_City_Map_faddb395-075b-410b-b236-653df0c8fc56.pdf",
+    "rows": 21,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/visitedmondok/Edmond_Downtown_Parking_Map_9_10_2e0c1c23-bb20-4615-a51e-97dc64c10f01.pdf",
+    "text": "",
+    "file": "data/city_files/Edmond/19f4da_Edmond_Downtown_Parking_Map_9_10_2e0c1c23-bb20-4615-a51e-97dc64c10f01.",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.edmondok.gov/addresslocator/": "Do I Live in Edmond?",
+   "http://gis.edmondok.gov/addresslocator": "Do I Live in Edmond?",
+   "http://gis.edmondok.gov/addresslocator/": "Trash & Recycling Schedule",
+   "https://gis.edmondok.gov/plzoning/": "Online Zoning Map",
+   "https://gis.edmondok.gov/neighborhoods/": "Edmond Neighborhoods Map",
+   "https://storymaps.arcgis.com/stories/7d9d0a7285f5458eb9f3ea955e5ec42d": "here",
+   "https://gis.edmondok.gov/stormshelters/": "Shelter Registration Form",
+   "https://storymaps.arcgis.com/stories/3c08e5edad654d588fb7df082281aa34": "",
+   "https://gis.edmondok.gov/altrails/": ""
+  }
+ },
+ "Whittier": {
+  "files": [],
+  "portals": {}
+ },
+ "Temple": {
+  "files": [],
+  "portals": {}
+ },
+ "Eldorado": {
+  "files": [],
+  "portals": {}
+ },
+ "Johnson City": {
+  "files": [],
+  "portals": {
+   "https://jctngis.maps.arcgis.com/apps/instant/portfolio/index.html?appid=e94afd592b5a487592ab8b2f529e5f61": "City Limits",
+   "https://jctngis.maps.arcgis.com/apps/instant/media/index.html?appid=1ada1cf00d8b4786a76f8aac39cb1f68": "Public Parking",
+   "https://jctngis.maps.arcgis.com/sharing/rest/content/items/d2d2c54aa94649b5b09795157e171446/data": "Street Maps",
+   "https://jctngis.maps.arcgis.com/apps/instant/lookup/index.html?appid=52ff8a931cb64377a5f9688a8111decf": "Find Your Pickup Day",
+   "https://jctngis.maps.arcgis.com/apps/dashboards/a7e00c0cc4184f82b0335c40f6dd01cc": "SEASONAL LEAF COLLECTION",
+   "https://mapgallery-jctngis.opendata.arcgis.com/": "MAP GALLERY",
+   "https://datahub-jctngis.opendata.arcgis.com/": "OPEN DATA PORTAL"
+  }
+ },
+ "Weston": {
+  "files": [],
+  "portals": {}
+ },
+ "West Hartford": {
+  "files": [],
+  "portals": {}
+ },
+ "Sanford": {
+  "files": [
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2023/06/Historic-Districts_2023_Antique.pdf",
+    "text": "Download",
+    "file": "data/city_files/Sanford/2fe05e_Historic-Districts_2023_Antique.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2021/09/Recycle-Notice_no-bleeds.pdf",
+    "text": "",
+    "file": "data/city_files/Sanford/09b3ca_Recycle-Notice_no-bleeds.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2021/09/Recycle-Notice-Spanish_REVISED_no-bleeds.pdf",
+    "text": "",
+    "file": "data/city_files/Sanford/8e7589_Recycle-Notice-Spanish_REVISED_no-bleeds.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2023/01/Mobile-Food-Vendor-Prohibited-Areas-Entertainment-District.pdf",
+    "text": "helpful map.",
+    "file": "data/city_files/Sanford/45564f_Mobile-Food-Vendor-Prohibited-Areas-Entertainment-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2023/09/Schedule-S-Historic-Preservation-District.pdf",
+    "text": "Schedule S - Historic Preservation",
+    "file": "data/city_files/Sanford/2c0d39_Schedule-S-Historic-Preservation-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2023/01/Vacuum-Sewer-Service-Area.pdf",
+    "text": "refer to this map for the specific boundaries.",
+    "file": "data/city_files/Sanford/82ab46_Vacuum-Sewer-Service-Area.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2023/03/Vacuum-System-Repairs.pdf",
+    "text": "",
+    "file": "data/city_files/Sanford/7aee17_Vacuum-System-Repairs.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2021/11/UtilityManualSection22.pdf",
+    "text": "PUMP STATIONS",
+    "file": "data/city_files/Sanford/63fc42_UtilityManualSection22.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2021/11/UtilityManualSection46.pdf",
+    "text": "WASTEWATER PUMP STATIONS",
+    "file": "data/city_files/Sanford/b66b94_UtilityManualSection46.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2021/11/UtilityManualSection47.pdf",
+    "text": "WASTEWATER PUMPS AND MOTORS",
+    "file": "data/city_files/Sanford/141842_UtilityManualSection47.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2021/11/UtilityManualSection48.pdf",
+    "text": "PUMP STATION ELECTRICAL POWER AND CONTROLS",
+    "file": "data/city_files/Sanford/8a3b1a_UtilityManualSection48.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2021/10/AutoRelatedApplication1111.pdf",
+    "text": "Discharge Application - Auto Related Services",
+    "file": "data/city_files/Sanford/c2fe52_AutoRelatedApplication1111.pdf",
+    "rows": 43,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2026/11/Food-Related-Application.pdf",
+    "text": "Discharge Application - Food Related Services",
+    "file": "data/city_files/Sanford/fa3975_Food-Related-Application.pdf",
+    "rows": 61,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://sanfordfl.gov/wp-content/uploads/2026/11/Wastewater-Discharge-App-1.pdf",
+    "text": "General Wastewater Application",
+    "file": "data/city_files/Sanford/af93a1_Wastewater-Discharge-App-1.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://sanfordfl.maps.arcgis.com/apps/instant/lookup/index.html?appid=3086e6731a0d4b78ab490eb30bcd1b6d": "My City Commission District",
+   "https://sanfordfl.maps.arcgis.com/apps/instant/lookup/index.html?appid=db5c784850344ad09a2084260958c502": "Open Map",
+   "https://sanfordfl.maps.arcgis.com/apps/instant/lookup/index.html?appid=9968f51e38614e6a949477a2e1a87774": "Open Map",
+   "https://storymaps.arcgis.com/stories/269be3ded99641179037ab0a87ad4c8f": "Open Map",
+   "https://storymaps.arcgis.com/stories/37f1ce3fd0bb49f3a85fd7ac7bcfda74": "Open Map",
+   "https://storymaps.arcgis.com/stories/bb5d3b04d833470c8186ff54a815a4bc": "Open Map",
+   "https://storymaps.arcgis.com/stories/6b82eb9365b54c7aa6a1048797a09919": "Open Map",
+   "https://storymaps.arcgis.com/stories/0ef7c5cea2d74c049b6911fffbe25867": "50 Years of Historic Preservation",
+   "https://storymaps.arcgis.com/stories/0bcc9b4b4d304a23aa36eb0f1fae35f6": "Open Map",
+   "https://sanfordfl.maps.arcgis.com/apps/instant/lookup/index.html?appid=4768f8c28615445398b7cd2f48e55c92": "Open Map",
+   "https://sanfordfl.maps.arcgis.com/apps/instant/lookup/index.html?appid=8b43f92165b24206ac805250e4749985": "Open Map",
+   "https://sanfordfl.maps.arcgis.com/apps/instant/lookup/index.html?appid=38e4f3e2351c45b394786f1dd6eb3565": "Open Map",
+   "https://sanfordfl.maps.arcgis.com/apps/instant/basic/index.html?appid=e19e220f5dbe4f0dbbfb3a49b405ca5b": "Open Map",
+   "https://sanfordfl.maps.arcgis.com/apps/MapTour/index.html?appid=a1545f3a87fb43ceae3914d2a7f7b6fa": "Interactive map of Paw Park",
+   "https://sanfordfl.maps.arcgis.com/apps/MapTour/index.html?appid=35b82afe9b5440549a6fa0e6afe3b102": "Commercial Historic District"
+  }
+ },
+ "Kaş": {
+  "files": [],
+  "portals": {}
+ },
+ "Kingsport": {
+  "files": [
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2024/04/MAP_2020AdjustedUAwith2010MPA.pdf",
+    "text": "Map of Kingsport MTPO Urban & Planning Area",
+    "file": "data/city_files/Kingsport/563dff_MAP_2020AdjustedUAwith2010MPA.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/18718wo11027-1.pdf",
+    "text": "Annexation Map By Decade",
+    "file": "data/city_files/Kingsport/3479b5_18718wo11027-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/18417wo10679photo.pdf",
+    "text": "Parking Maps Around Kingsport Higher Education Center",
+    "file": "data/city_files/Kingsport/85c58d_18417wo10679photo.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2026/03/Kingsport_Standard_Index-Ver_2_3-1.pdf",
+    "text": "Kingsport City Limits Map",
+    "file": "data/city_files/Kingsport/8365d5_Kingsport_Standard_Index-Ver_2_3-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2026/03/Kingsport_Zoning_Map_Index-ver-2_21.pdf",
+    "text": "Kingsport Zoning Map",
+    "file": "data/city_files/Kingsport/445a3e_Kingsport_Zoning_Map_Index-ver-2_21.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2026/03/Kingsport_Tax_Map_Index-ver-2_2.pdf",
+    "text": "Kingsport Tax Map Index",
+    "file": "data/city_files/Kingsport/265003_Kingsport_Tax_Map_Index-ver-2_2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2026/03/2000Census_Tract_Block_Group.pdf",
+    "text": "2000 Census Tract and Block Group Map",
+    "file": "data/city_files/Kingsport/58d135_2000Census_Tract_Block_Group.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/kingsportgreenbeltmilemarker.pdf",
+    "text": "Greenbelt Distance Markers Map",
+    "file": "data/city_files/Kingsport/db6fbd_kingsportgreenbeltmilemarker.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2026/03/Kingsport_Elementary_Schools_Zone_MapVer2_4.pdf",
+    "text": "Kingsport Elementary Schools Map",
+    "file": "data/city_files/Kingsport/f7552d_Kingsport_Elementary_Schools_Zone_MapVer2_4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2026/03/Kingsport_Middle_Schools_Zone_MapVer2_4.pdf",
+    "text": "Kingsport Middle Schools Map",
+    "file": "data/city_files/Kingsport/3d29e8_Kingsport_Middle_Schools_Zone_MapVer2_4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2026/03/Kingsport_Standard_Index_Police_Zones_Ver_2.pdf",
+    "text": "Kingsport Police Zones Map",
+    "file": "data/city_files/Kingsport/7cb20d_Kingsport_Standard_Index_Police_Zones_Ver_2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2025/07/KPT-Amd-6-MC-2025-023-Full-Packet-with-FHWA-Concurrence.pdf",
+    "text": "Amendment #6 – MC Ped/Bike Trail",
+    "file": "data/city_files/Kingsport/b3dd04_KPT-Amd-6-MC-2025-023-Full-Packet-with-FHWA-Concurrence.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2022/02/KingsportMTPO-BikePed_FINAL-with-SIGNED-Resolution-02.03.22.pdf",
+    "text": "2022 Kingsport MTPO Regional Bicycle and Pedestrian Plan",
+    "file": "data/city_files/Kingsport/53dac2_KingsportMTPO-BikePed_FINAL-with-SIGNED-Resolution-02.03.22.pdf",
+    "rows": 257,
+    "bike_rows": 24
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2022/02/2012-KingsportMtpoBikePedPlan_Final.pdf",
+    "text": "2012 Kingsport Regional Bicycle and Pedestrian Plan",
+    "file": "data/city_files/Kingsport/cc2e0b_2012-KingsportMtpoBikePedPlan_Final.pdf",
+    "rows": 117,
+    "bike_rows": 24
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2026/04/Historic-Application.pdf",
+    "text": "Application",
+    "file": "data/city_files/Kingsport/c0e1bb_Historic-Application.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2024/08/AllHistoricalDistricts.pdf",
+    "text": "Map",
+    "file": "data/city_files/Kingsport/07e095_AllHistoricalDistricts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/2026/11/2027-Historic-Zoning-Commission-Meeting-Dates.pdf",
+    "text": "Meeting Dates",
+    "file": "data/city_files/Kingsport/abec30_2027-Historic-Zoning-Commission-Meeting-Dates.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/Amerian-Dental-Association-Directory-of-Dental-Waste-Recyclers.pdf",
+    "text": "American Dental Association Directory of Waste Recyclers",
+    "file": "data/city_files/Kingsport/a179d5_Amerian-Dental-Association-Directory-of-Dental-Waste-Recyclers.pdf",
+    "rows": 67,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/urbanwater.pdf",
+    "text": "urban water cycle",
+    "file": "data/city_files/Kingsport/7d9285_urbanwater.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kingsporttn.gov/wp-content/uploads/IDDE-Complaint-Response-Tracking.pdf",
+    "text": "Documentation",
+    "file": "data/city_files/Kingsport/022cf2_IDDE-Complaint-Response-Tracking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kingsporttn.gov/wp-content/uploads/18718wo11027-1.pdf",
+    "text": "Annexation Map By Decade",
+    "file": "data/city_files/Kingsport/c57299_18718wo11027-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kingsporttn.gov/wp-content/uploads/18417wo10679photo.pdf",
+    "text": "Parking Maps Around Kingsport Higher Education Center",
+    "file": "data/city_files/Kingsport/a731dc_18417wo10679photo.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kingsporttn.gov/wp-content/uploads/kingsportgreenbeltmilemarker.pdf",
+    "text": "Greenbelt Distance Markers Map",
+    "file": "data/city_files/Kingsport/f85a5c_kingsportgreenbeltmilemarker.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://kingsporttn.maps.arcgis.com/apps/dashboards/b6629c8285e94cba8eebe23f5197e369": "Learn about current and active city projects with the Projects Map.",
+   "https://kingsporttn.maps.arcgis.com/home/index.html": "Maps & Apps",
+   "https://kingsporttn.maps.arcgis.com/apps/mapviewer/index.html?webmap=61050075657b432ba04cb168567c5631": "Leaf Removal Areas Public Web Map",
+   "https://experience.arcgis.com/experience/dfd33a221e4b4854a5b0fa2723544e26": "Kingsport Zoning Web App",
+   "https://kingsporttn.maps.arcgis.com/apps/webappviewer/index.html?id=07e5f6659a0f47149090b73b425c2c3c": "here",
+   "https://lead-service-line-inventory-1-kingsporttn.hub.arcgis.com/": "Lead Safe Community"
+  }
+ },
+ "Methuen": {
+  "files": [],
+  "portals": {}
+ },
+ "Murray": {
+  "files": [
+   {
+    "url": "https://ushpo.utah.gov/wp-content/uploads/2018/08/PRES_NatReg_HistoricDistrict.pdf",
+    "text": "Learn more about historic districts (PDF)",
+    "file": "data/city_files/Murray/9ae69c_PRES_NatReg_HistoricDistrict.pdf",
+    "rows": 74,
+    "bike_rows": 21
+   }
+  ],
+  "portals": {
+   "http://murraycity.maps.arcgis.com/home/index.html": "City Maps",
+   "https://murraycity.maps.arcgis.com/apps/instant/sidebar/index.html?appid=0a325fe8cdfd413d985fe5fc3b136d5b": "Salt Lake County Voting District Map",
+   "https://murraycity.maps.arcgis.com/apps/instant/sidebar/index.html?appid=205857560c114e24abdce078a04c3cff": "Utah Congressional Districts Map",
+   "https://murraycity.maps.arcgis.com/apps/instant/sidebar/index.html?appid=19538ce2154a44699355942d75d73567": "Utah House Districts Map",
+   "https://murraycity.maps.arcgis.com/apps/instant/sidebar/index.html?appid=54d937a7384d469882a0a6f3707b5d96": "Utah Senate Districts Map",
+   "https://utahshpo.maps.arcgis.com/apps/webappviewer/index.html?id=e51da778246f4720ad4266e30095be45": "Interactive Map of Utah Cemeteries (opens in a new tab)",
+   "https://trashman.maps.arcgis.com/apps/webappviewer/index.html?id=83bd5dc2ccd74331a61d2d8ea6fb3fec": "Ace Recycling and Disposal Maps",
+   "http://murraycity.maps.arcgis.com/sharing/rest/content/items/81c86bf3aebf4dc3805f613675aa3788/data": "Detailed Map"
+  }
+ },
+ "Orangetown": {
+  "files": [
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/2024/07/2024-Illicit-Stormwater-Discharge-Flyer-1.pdf",
+    "text": "here",
+    "file": "data/city_files/Orangetown/ea9522_2024-Illicit-Stormwater-Discharge-Flyer-1.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Trail_Count_Form_Orangetown.pdf",
+    "text": "Trail Count Form",
+    "file": "data/city_files/Orangetown/479b3d_Trail_Count_Form_Orangetown.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/2025/06/2025-06-04-Orangetown-Land-Cover-Map.pdf",
+    "text": "2025-06-04 Orangetown Land Cover Map",
+    "file": "data/city_files/Orangetown/dc185f_2025-06-04-Orangetown-Land-Cover-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/2025/06/2025-06-04-Orangetown-Water-Quality-Map.pdf",
+    "text": "2025-06-04 Orangetown Water Quality Map",
+    "file": "data/city_files/Orangetown/fb8749_2025-06-04-Orangetown-Water-Quality-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/2025/06/2025-06-04-Orangetown-PCS-Map.pdf",
+    "text": "2025-06-04 Orangetown PCS Map",
+    "file": "data/city_files/Orangetown/4f318c_2025-06-04-Orangetown-PCS-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.orangetown.com/wp-content/uploads/2026/07/HABR_Application_Fillable_Updated_REVISED-0726.pdf",
+    "text": "Historical Areas Board of Review Application",
+    "file": "data/city_files/Orangetown/72cc31_HABR_Application_Fillable_Updated_REVISED-0726.pdf",
+    "rows": 35,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/TREATMENT_MAP_8.5x14-1.pdf",
+    "text": "View the Recommended Bikeway Treatments map here",
+    "file": "data/city_files/Orangetown/c46de0_TREATMENT_MAP_8.5x14-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Orangetown-Bike-Study-2.8.18-public-meeting-1.pdf",
+    "text": "View the Presentation from the Public Meeting",
+    "file": "data/city_files/Orangetown/e90272_Orangetown-Bike-Study-2.8.18-public-meeting-1.pdf",
+    "rows": 64,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Orangetown-Bike-Study-Final-Report-6.22.18.pdf",
+    "text": "",
+    "file": "data/city_files/Orangetown/257197_Orangetown-Bike-Study-Final-Report-6.22.18.pdf",
+    "rows": 43,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Orangetown-Bike-Study-RFP-may-15-2017-Final.pdf",
+    "text": "",
+    "file": "data/city_files/Orangetown/597916_Orangetown-Bike-Study-RFP-may-15-2017-Final.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Responses-to-Waterfront-RFP-Questions-May-31-2017.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Responses-to-Waterfront-RFP-Questions-May-31-2017.pdf",
+    "file": "data/city_files/Orangetown/d5107e_Responses-to-Waterfront-RFP-Questions-May-31-2017.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/RFP-for-Waterfront-Park-Design-FINAL-1.pdf",
+    "text": "",
+    "file": "data/city_files/Orangetown/da8d5a_RFP-for-Waterfront-Park-Design-FINAL-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/RPC-overview-map.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/RPC-overview-map.pdf",
+    "file": "data/city_files/Orangetown/ff2641_RPC-overview-map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Map3_RPCwetlands-delineationLawlerMatuskySkelly.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Map3_RPCwetlands-delineationLawlerMatuskySkelly.pdf",
+    "file": "data/city_files/Orangetown/ba834c_Map3_RPCwetlands-delineationLawlerMatuskySkelly.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/2026/02/77.11-3-67-Historic-Realty-Corp-online-HABR-package.pdf",
+    "text": "",
+    "file": "data/city_files/Orangetown/6bbac2_77.11-3-67-Historic-Realty-Corp-online-HABR-package.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/2026/10/Local-Law-7-2026-Zone-Change-631-Route-303.pdf",
+    "text": "",
+    "file": "data/city_files/Orangetown/9f651b_Local-Law-7-2026-Zone-Change-631-Route-303.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Orangetown-Bike-Study-5-minute-Community-Survey-NR.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Orangetown-Bike-Study-5-minute-Community-Survey-NR.pdf",
+    "file": "data/city_files/Orangetown/2bb55d_Orangetown-Bike-Study-5-minute-Community-Survey-NR.pdf",
+    "rows": 10,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/DISTRIBUTION-FIFTH-Version-NOT-Showing-Changes-of-HABORs-05-14-2019-11-05-2019-11-18-2019-Proposed-Amendments-to-Orangetown-Code-Chapter-12-Historical-Are-1.pdf",
+    "text": "DISTRIBUTION (FIFTH) Version NOT Showing Changes – of HABOR’s 05-14-2019 11-05-2019 11-18-2019 Proposed Amendments to Or",
+    "file": "data/city_files/Orangetown/41d767_DISTRIBUTION-FIFTH-Version-NOT-Showing-Changes-of-HABORs-05-14-2019-11",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/2022/02/Terracycle-for-Town-Hall.pdf",
+    "text": "",
+    "file": "data/city_files/Orangetown/043800_Terracycle-for-Town-Hall.pdf",
+    "rows": 6,
+    "bike_rows": 3
+   },
+   {
+    "url": "http://www.orangetown.com/wp-content/uploads/2026/06/Proposed-Local-Law.Electronic-Bikes-and-Scooters.4.-7.6.2026.pdf",
+    "text": "DRAFT LAW",
+    "file": "data/city_files/Orangetown/98d2ff_Proposed-Local-Law.Electronic-Bikes-and-Scooters.4.-7.6.2026.pdf",
+    "rows": 32,
+    "bike_rows": 9
+   },
+   {
+    "url": "http://www.orangetown.com/wp-content/uploads/2016/04/Parking_Meter.pdf",
+    "text": "http://www.orangetown.com/wp-content/uploads/2016/04/Parking_Meter.pdf",
+    "file": "data/city_files/Orangetown/d4e9df_Parking_Meter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/2023/12/DISABLED-PARKING-PERMIT-APPLICATION-2022.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/2023/12/DISABLED-PARKING-PERMIT-APPLICATION-2022.pdf",
+    "file": "data/city_files/Orangetown/919cec_DISABLED-PARKING-PERMIT-APPLICATION-2022.pdf",
+    "rows": 16,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/2017-Historic-Board-Application-1.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/2017-Historic-Board-Application-1.pdf",
+    "file": "data/city_files/Orangetown/17c51d_2017-Historic-Board-Application-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.orangetown.com/wp-content/uploads/ACABOR_Parking_Details.pdf",
+    "text": "http://www.orangetown.com/wp-content/uploads/ACABOR_Parking_Details.pdf",
+    "file": "data/city_files/Orangetown/bae61c_ACABOR_Parking_Details.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.orangetown.com/wp-content/uploads/RPC_Map.pdf",
+    "text": "http://www.orangetown.com/wp-content/uploads/RPC_Map.pdf",
+    "file": "data/city_files/Orangetown/b893ef_RPC_Map.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.orangetown.com/wp-content/uploads/STREET_MAP_WEBSITE_-1.pdf",
+    "text": "http://www.orangetown.com/wp-content/uploads/STREET_MAP_WEBSITE_-1.pdf",
+    "file": "data/city_files/Orangetown/c7406f_STREET_MAP_WEBSITE_-1.pdf",
+    "rows": 47,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Orangetown-Bike-Study-RFP-April-26-2017-Final-1.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Orangetown-Bike-Study-RFP-April-26-2017-Final-1.pdf",
+    "file": "data/city_files/Orangetown/9aa84e_Orangetown-Bike-Study-RFP-April-26-2017-Final-1.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Map4_RPC_216acres_setaside_sketchmap.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Map4_RPC_216acres_setaside_sketchmap.pdf",
+    "file": "data/city_files/Orangetown/1ad1e8_Map4_RPC_216acres_setaside_sketchmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Proposed-Zone-Change-576-Route-303-Gerald-Beiber.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Proposed-Zone-Change-576-Route-303-Gerald-Beiber.pdf",
+    "file": "data/city_files/Orangetown/56ee0f_Proposed-Zone-Change-576-Route-303-Gerald-Beiber.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Sector-Map-as-of-12-6-17.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Sector-Map-as-of-12-6-17.pdf",
+    "file": "data/city_files/Orangetown/6ba0cd_Sector-Map-as-of-12-6-17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Historic-Board-April-10-2018.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Historic-Board-April-10-2018.pdf",
+    "file": "data/city_files/Orangetown/9d520f_Historic-Board-April-10-2018.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Historic-Board-Agenda-June-12-2018.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Historic-Board-Agenda-June-12-2018.pdf",
+    "file": "data/city_files/Orangetown/308394_Historic-Board-Agenda-June-12-2018.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rocklandgreen.com/assets/Recycling/2026-English-Spanish-Creole-Yidish-Recycling-Guide-Final.pdf",
+    "text": "Recycling Guide",
+    "file": "data/city_files/Orangetown/da6cfe_2026-English-Spanish-Creole-Yidish-Recycling-Guide-Final.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Historic-Board-Minutes-May-12-2020.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Historic-Board-Minutes-May-12-2020.pdf",
+    "file": "data/city_files/Orangetown/a23c39_Historic-Board-Minutes-May-12-2020.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Cecujanin-Updated-Map-and-pictures.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Cecujanin-Updated-Map-and-pictures.pdf",
+    "file": "data/city_files/Orangetown/53811c_Cecujanin-Updated-Map-and-pictures.pdf",
+    "rows": 21,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/77.06-3-13-89-Western-Hwy-vicinity-map-V-1.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/77.06-3-13-89-Western-Hwy-vicinity-map-V-1.pdf",
+    "file": "data/city_files/Orangetown/fa379f_77.06-3-13-89-Western-Hwy-vicinity-map-V-1.pdf",
+    "rows": 26,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Organic-recycling-package.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Organic-recycling-package.pdf",
+    "file": "data/city_files/Orangetown/0321eb_Organic-recycling-package.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/Garage-Plans-FINAL-17-Nov-19.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/Garage-Plans-FINAL-17-Nov-19.pdf",
+    "file": "data/city_files/Orangetown/0a871d_Garage-Plans-FINAL-17-Nov-19.pdf",
+    "rows": 30,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/HKC-92Y-12-Trails-Plans-1-of-4.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/HKC-92Y-12-Trails-Plans-1-of-4.pdf",
+    "file": "data/city_files/Orangetown/10cfcd_HKC-92Y-12-Trails-Plans-1-of-4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangetown.com/wp-content/uploads/HKC-92Y-12-Trails-Plans-2-of-4.pdf",
+    "text": "https://www.orangetown.com/wp-content/uploads/HKC-92Y-12-Trails-Plans-2-of-4.pdf",
+    "file": "data/city_files/Orangetown/238579_HKC-92Y-12-Trails-Plans-2-of-4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://ptny.maps.arcgis.com/apps/CrowdsourceReporter/index.html?appid=4b1ff3051e5b425796e4aad306be3ec0": "Orangetown Bike Study Feedback Map"
+  }
+ },
+ "Attleboro": {
+  "files": [
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle-Smart-Infographic-1-1.pdf",
+    "text": "English",
+    "file": "data/city_files/Attleboro/ccb811_Recycle-Smart-Infographic-1-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Recycle_Smart_Infographic-Spanish.pdf",
+    "text": "Español",
+    "file": "data/city_files/Attleboro/b7116d_Recycle_Smart_Infographic-Spanish.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/09/Smart-Recycling-Guide-Portuguese-1.pdf",
+    "text": "Português",
+    "file": "data/city_files/Attleboro/827cea_Smart-Recycling-Guide-Portuguese-1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "text": "简化字",
+    "file": "data/city_files/Attleboro/9365a3_Smart-Recycling-Guide-Simplified-Chinese.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Arabic-Final.pdf",
+    "text": "عربى",
+    "file": "data/city_files/Attleboro/e971c1_Smart-Recycling-Guide-Arabic-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "text": "Tiếng Việt",
+    "file": "data/city_files/Attleboro/915a27_Smart-Recycling-Guide-Vietnamese-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-French-Final.pdf",
+    "text": "Français",
+    "file": "data/city_files/Attleboro/2dac68_Smart-Recycling-Guide-French-Final.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2020/10/Smart-Recycling-Guide-Haitian-Creole-Final.pdf",
+    "text": "Kreyòl Ayisyen",
+    "file": "data/city_files/Attleboro/51668f_Smart-Recycling-Guide-Haitian-Creole-Final.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Khmer.pdf",
+    "text": "ខ្មែរ",
+    "file": "data/city_files/Attleboro/2ff4d7_smart-recycling-guide-Khmer.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Hindi.pdf",
+    "text": "हिंदी",
+    "file": "data/city_files/Attleboro/039bcd_smart-recycling-guide-Hindi.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Russian.pdf",
+    "text": "Русский",
+    "file": "data/city_files/Attleboro/54d4b8_smart-recycling-guide-Russian.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2024/01/smart-recycling-guide-Italian.pdf",
+    "text": "Italiana",
+    "file": "data/city_files/Attleboro/013d72_smart-recycling-guide-Italian.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://recyclesmartma.org/wp-content/uploads/2026/05/Recycle-Smart-MA-Partners-List-Updated-5.13.26.pdf",
+    "text": "Partner List",
+    "file": "data/city_files/Attleboro/762193_Recycle-Smart-MA-Partners-List-Updated-5.13.26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Mankato": {
+  "files": [],
+  "portals": {}
+ },
+ "Chascomús Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Mableton": {
+  "files": [],
+  "portals": {}
+ },
+ "Roy": {
+  "files": [],
+  "portals": {}
+ },
+ "Aristóbulo del Valle": {
+  "files": [],
+  "portals": {}
+ },
+ "Richfield": {
+  "files": [],
+  "portals": {}
+ },
+ "Lake Stevens": {
+  "files": [],
+  "portals": {
+   "https://lakestevens-service-request-lakestevens.hub.arcgis.com/": "Citizen Request Portal",
+   "https://lakestevens-service-request-lakestevens.hub.arcgis.com/  ": "Citizen Request Portal",
+   "https://lakestevensgis-lakestevens.hub.arcgis.com/": "LAUNCH GIS PORTAL",
+   "https://experience.arcgis.com/experience/55f462cb6ebd4ba692dc4fd7042eff69/": "Lake Map & Metrics",
+   "https://lakestevens.maps.arcgis.com/apps/webappviewer/index.html?id=7e9ff02c4a524740877c126977bbf0c2": "Snow Plow Routes & Zones",
+   "https://storymaps.arcgis.com/stories/36f5de9b668a4811b0d09901c4d247b0": "Snow & Ice Control Plan Story Map",
+   "https://www.arcgis.com/apps/dashboards/e631df04f7b34b329df268489bb77cde": "Potential Sidewalk Capital Projects Dashboard",
+   "https://experience.arcgis.com/experience/3a890fba34f14522a075a3c9d99e107f/": "Stormwater Map",
+   "https://lakestevens.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=296319743324454e966fc0b1ee0d2259": "Speed Studies Attachment Viewer",
+   "https://experience.arcgis.com/experience/57f5c45b7af6496c8f510f8d9e79776a/": "Schools & Elementary Boundary Map",
+   "https://experience.arcgis.com/experience/d84e143808bd468db546e25817af751e/": "Comprehensive GIS App",
+   "https://experience.arcgis.com/experience/ab6dfcacea244686b9005d1c2523002f/": "Property Ownership",
+   "https://storymaps.arcgis.com/stories/0e4186d06a2c4a19a028e9e071612eed": "2024 Comprehensive Plan Map Amendments",
+   "https://experience.arcgis.com/experience/ad99e57e47eb4355a87e9bdf882e8dec": "Park Locations",
+   "https://experience.arcgis.com/experience/785960a37b26436591a8e7f01be2c574": "https://experience.arcgis.com/experience/785960a37b26436591a8e7f01be2c574",
+   "https://survey123.arcgis.com/share/e933990f1be640bab20f5eae501eb3b4": "Public Works Service Request."
+  }
+ },
+ "Goshen": {
+  "files": [
+   {
+    "url": "https://goshenindiana.org/wp-content/uploads/2024/12/14727_2023.11.27_Final-CURRENT-CITY-MAP-4.pdf",
+    "text": "",
+    "file": "data/city_files/Goshen/07ee39_14727_2023.11.27_Final-CURRENT-CITY-MAP-4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://goshenindiana.org/wp-content/uploads/2024/12/9695_2020-2021-Projects-Map-Revised-5.5.2021-1.pdf",
+    "text": "",
+    "file": "data/city_files/Goshen/407b6a_9695_2020-2021-Projects-Map-Revised-5.5.2021-1.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://goshenindiana.org/wp-content/uploads/2024/12/10145_City-Parking-Lots-Updated-July-2021.pdf",
+    "text": "Downtown Public Parking Lots",
+    "file": "data/city_files/Goshen/0d5e7e_10145_City-Parking-Lots-Updated-July-2021.pdf",
+    "rows": 18,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://goshenindiana.org/wp-content/uploads/2024/12/945_Bicycle-Ride-Map.pdf",
+    "text": "",
+    "file": "data/city_files/Goshen/21a491_945_Bicycle-Ride-Map.pdf",
+    "rows": 15,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://goshenindiana.org/wp-content/uploads/2024/12/14009_SirenMap_2023.pdf",
+    "text": "",
+    "file": "data/city_files/Goshen/3f8c6d_14009_SirenMap_2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://goshen.in.gov/wp-content/uploads/2024/12/14727_2023.11.27_Final-CURRENT-CITY-MAP-4.pdf",
+    "text": "",
+    "file": "data/city_files/Goshen/2b3838_14727_2023.11.27_Final-CURRENT-CITY-MAP-4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://goshen.in.gov/wp-content/uploads/2024/12/9695_2020-2021-Projects-Map-Revised-5.5.2021-1.pdf",
+    "text": "",
+    "file": "data/city_files/Goshen/211144_9695_2020-2021-Projects-Map-Revised-5.5.2021-1.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://goshen.in.gov/wp-content/uploads/2024/12/10145_City-Parking-Lots-Updated-July-2021.pdf",
+    "text": "Downtown Public Parking Lots",
+    "file": "data/city_files/Goshen/373eaa_10145_City-Parking-Lots-Updated-July-2021.pdf",
+    "rows": 18,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://goshen.in.gov/wp-content/uploads/2024/12/945_Bicycle-Ride-Map.pdf",
+    "text": "",
+    "file": "data/city_files/Goshen/aa9a33_945_Bicycle-Ride-Map.pdf",
+    "rows": 15,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://goshen.in.gov/wp-content/uploads/2024/12/14009_SirenMap_2023.pdf",
+    "text": "",
+    "file": "data/city_files/Goshen/df866f_14009_SirenMap_2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://goshen.in.gov/wp-content/uploads/2024/12/515_City-of-Goshen-Water-Repair-Procedure.pdf",
+    "text": "More info",
+    "file": "data/city_files/Goshen/d1de0d_515_City-of-Goshen-Water-Repair-Procedure.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://goshen.in.gov/wp-content/uploads/2024/12/517_City-of-Goshen-Sewer-Repair-Procedure.pdf",
+    "text": "More info",
+    "file": "data/city_files/Goshen/898e70_517_City-of-Goshen-Sewer-Repair-Procedure.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://goshenindiana.maps.arcgis.com/apps/webappviewer/index.html?id=636258c7717a46059089f19a5ae2102e": "Open Map in a New Window",
+   "https://goshenindiana.maps.arcgis.com/apps/instant/basic/index.html?appid=1e684e4da9d643f2ada95a4e680e6ded&locale=en&center=-85.849;41.5871&level=15": "Interactive Map HERE",
+   "https://goshenindiana.maps.arcgis.com/apps/instant/basic/index.html?appid=1e684e4da9d643f2ada95a4e680e6ded&locale=en&center=-85.849;41.5871": "Open Map in a New Window"
+  }
+ },
+ "Salina": {
+  "files": [
+   {
+    "url": "https://www.salinany.gov/Document_Center/Government/Salina Ward Map.pdf",
+    "text": "Ward/Election Districts Map",
+    "file": "data/city_files/Salina/3886c0_Salina_Ward_Map.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.salinany.gov/Document_Center/Department/Planning/Road Ownership Map.pdf",
+    "text": "Onondaga County Road Ownership Map",
+    "file": "data/city_files/Salina/e4e9e7_Road_Ownership_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cms2.revize.com/revize/salinany/Zoning%20map%2001-2021.pdf",
+    "text": "Town of Salina Zoning Map",
+    "file": "data/city_files/Salina/768ee1_Zoning_20map_2001-2021.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.salinany.gov/Zoning%20map%2001-2021.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Salina/a863db_Zoning_20map_2001-2021.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Needham": {
+  "files": [
+   {
+    "url": "https://www.mapsonline.net/peopleforms/htdocs/MapsOnline%20Help.pdf",
+    "text": "Help",
+    "file": "data/city_files/Needham/f6521a_MapsOnline_20Help.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://needham.maps.arcgis.com/home/index.html": "WebGIS",
+   "http://www.peoplegis.com": "PeopleGIS",
+   "https://storymaps.arcgis.com/stories/5852d58f2f67455ca81c732180de616b": "Needham HEARTSafe",
+   "https://needham.maps.arcgis.com/sharing/rest/content/items/04890dcea60646499a8bd3bd05b3183c/data": "Quick Reference Card",
+   "https://experience.arcgis.com/experience/6fb5e6ea56024778a1ea96da74270a5a/": "webGIS"
+  }
+ },
+ "Nicholasville": {
+  "files": [
+   {
+    "url": "https://nicholasville.org/wp-content/uploads/2026/08/Cemetery-General-Information.pdf",
+    "text": "General Information",
+    "file": "data/city_files/Nicholasville/7161ee_Cemetery-General-Information.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nicholasville.org/wp-content/uploads/2026/08/Cemetery-Rules-and-Regulations.pdf",
+    "text": "Rules and Regulations",
+    "file": "data/city_files/Nicholasville/ed483b_Cemetery-Rules-and-Regulations.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nicholasville.org/wp-content/uploads/2026/08/Cemetery-Section-Map.pdf",
+    "text": "Section Map",
+    "file": "data/city_files/Nicholasville/30f263_Cemetery-Section-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nicholasville.org/wp-content/uploads/2023/03/MapleGroveInto2008.xls",
+    "text": "Maple Grove Directory",
+    "file": "data/city_files/Nicholasville/2fbebb_MapleGroveInto2008.xls",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nicholasville.org/wp-content/uploads/2023/03/MapleGroveCemeteryGraveSales1993-2013.xls",
+    "text": "It is available here",
+    "file": "data/city_files/Nicholasville/308e45_MapleGroveCemeteryGraveSales1993-2013.xls",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Be'er Ya'akov": {
+  "files": [],
+  "portals": {}
+ },
+ "Port Huron": {
+  "files": [],
+  "portals": {}
+ }
+}
