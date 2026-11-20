@@ -1,0 +1,910 @@
+[
+{
+"city": "state:dot.alabama.gov",
+"site": "dot.alabama.gov"
+},
+{
+"city": "state:alaskadot.gov",
+"site": "alaskadot.gov"
+},
+{
+"city": "state:azdot.gov",
+"site": "azdot.gov"
+},
+{
+"city": "state:ardot.gov",
+"site": "ardot.gov"
+},
+{
+"city": "state:dot.ca.gov",
+"site": "dot.ca.gov"
+},
+{
+"city": "state:codot.gov",
+"site": "codot.gov"
+},
+{
+"city": "state:ct.gov/dot",
+"site": "ct.gov"
+},
+{
+"city": "state:deldot.gov",
+"site": "deldot.gov"
+},
+{
+"city": "state:fdot.gov",
+"site": "fdot.gov"
+},
+{
+"city": "state:dot.ga.gov",
+"site": "dot.ga.gov"
+},
+{
+"city": "state:hidot.hawaii.gov",
+"site": "hidot.hawaii.gov"
+},
+{
+"city": "state:itd.idaho.gov",
+"site": "itd.idaho.gov"
+},
+{
+"city": "state:idot.illinois.gov",
+"site": "idot.illinois.gov"
+},
+{
+"city": "state:in.gov/indot",
+"site": "in.gov"
+},
+{
+"city": "state:iowadot.gov",
+"site": "iowadot.gov"
+},
+{
+"city": "state:ksdot.gov",
+"site": "ksdot.gov"
+},
+{
+"city": "state:transportation.ky.gov",
+"site": "transportation.ky.gov"
+},
+{
+"city": "state:dotd.la.gov",
+"site": "dotd.la.gov"
+},
+{
+"city": "state:maine.gov/mdot",
+"site": "maine.gov"
+},
+{
+"city": "state:mdot.maryland.gov",
+"site": "mdot.maryland.gov"
+},
+{
+"city": "state:mass.gov/orgs/massachusetts-department-of-transportation",
+"site": "mass.gov"
+},
+{
+"city": "state:michigan.gov/mdot",
+"site": "michigan.gov"
+},
+{
+"city": "state:dot.state.mn.us",
+"site": "dot.state.mn.us"
+},
+{
+"city": "state:mdot.ms.gov",
+"site": "mdot.ms.gov"
+},
+{
+"city": "state:modot.org",
+"site": "modot.org"
+},
+{
+"city": "state:mdt.mt.gov",
+"site": "mdt.mt.gov"
+},
+{
+"city": "state:dot.nebraska.gov",
+"site": "dot.nebraska.gov"
+},
+{
+"city": "state:dot.nv.gov",
+"site": "dot.nv.gov"
+},
+{
+"city": "state:dot.nh.gov",
+"site": "dot.nh.gov"
+},
+{
+"city": "state:nj.gov/transportation",
+"site": "nj.gov"
+},
+{
+"city": "state:dot.nm.gov",
+"site": "dot.nm.gov"
+},
+{
+"city": "state:dot.ny.gov",
+"site": "dot.ny.gov"
+},
+{
+"city": "state:ncdot.gov",
+"site": "ncdot.gov"
+},
+{
+"city": "state:dot.nd.gov",
+"site": "dot.nd.gov"
+},
+{
+"city": "state:transportation.ohio.gov",
+"site": "transportation.ohio.gov"
+},
+{
+"city": "state:odot.org",
+"site": "odot.org"
+},
+{
+"city": "state:oregon.gov/odot",
+"site": "oregon.gov"
+},
+{
+"city": "state:penndot.pa.gov",
+"site": "penndot.pa.gov"
+},
+{
+"city": "state:dot.ri.gov",
+"site": "dot.ri.gov"
+},
+{
+"city": "state:scdot.org",
+"site": "scdot.org"
+},
+{
+"city": "state:dot.sd.gov",
+"site": "dot.sd.gov"
+},
+{
+"city": "state:tn.gov/tdot",
+"site": "tn.gov"
+},
+{
+"city": "state:txdot.gov",
+"site": "txdot.gov"
+},
+{
+"city": "state:udot.utah.gov",
+"site": "udot.utah.gov"
+},
+{
+"city": "state:vtrans.vermont.gov",
+"site": "vtrans.vermont.gov"
+},
+{
+"city": "state:virginiadot.org",
+"site": "virginiadot.org"
+},
+{
+"city": "state:wsdot.wa.gov",
+"site": "wsdot.wa.gov"
+},
+{
+"city": "state:transportation.wv.gov",
+"site": "transportation.wv.gov"
+},
+{
+"city": "state:wisconsindot.gov",
+"site": "wisconsindot.gov"
+},
+{
+"city": "state:dot.state.wy.us",
+"site": "dot.state.wy.us"
+},
+{
+"city": "region:cmap.illinois.gov",
+"site": "cmap.illinois.gov"
+},
+{
+"city": "region:ctps.org",
+"site": "ctps.org"
+},
+{
+"city": "region:dvrpc.org",
+"site": "dvrpc.org"
+},
+{
+"city": "region:mwcog.org",
+"site": "mwcog.org"
+},
+{
+"city": "region:oregonmetro.gov",
+"site": "oregonmetro.gov"
+},
+{
+"city": "region:nctcog.org",
+"site": "nctcog.org"
+},
+{
+"city": "region:sandag.org",
+"site": "sandag.org"
+},
+{
+"city": "region:scag.ca.gov",
+"site": "scag.ca.gov"
+},
+{
+"city": "region:mtc.ca.gov",
+"site": "mtc.ca.gov"
+},
+{
+"city": "region:psrc.org",
+"site": "psrc.org"
+},
+{
+"city": "region:drcog.org",
+"site": "drcog.org"
+},
+{
+"city": "region:maricopa.gov/maricopa-association-of-governments",
+"site": "maricopa.gov"
+},
+{
+"city": "region:azmag.gov",
+"site": "azmag.gov"
+},
+{
+"city": "region:houstontx.gov/planning",
+"site": "houstontx.gov"
+},
+{
+"city": "region:h-gac.org",
+"site": "h-gac.org"
+},
+{
+"city": "region:capcog.org",
+"site": "capcog.org"
+},
+{
+"city": "region:campotexas.org",
+"site": "campotexas.org"
+},
+{
+"city": "region:atlantaregional.com",
+"site": "atlantaregional.com"
+},
+{
+"city": "region:nvtc.gov",
+"site": "nvtc.gov"
+},
+{
+"city": "region:hrtpo.org",
+"site": "hrtpo.org"
+},
+{
+"city": "region:crcog.org",
+"site": "crcog.org"
+},
+{
+"city": "region:nymtc.org",
+"site": "nymtc.org"
+},
+{
+"city": "region:mapc.org",
+"site": "mapc.org"
+},
+{
+"city": "region:regionalplanning.org",
+"site": "regionalplanning.org"
+},
+{
+"city": "region:miamidade.gov/mpo",
+"site": "miamidade.gov"
+},
+{
+"city": "region:sfcta.org",
+"site": "sfcta.org"
+},
+{
+"city": "region:octa.net",
+"site": "octa.net"
+},
+{
+"city": "region:metro.net",
+"site": "metro.net"
+},
+{
+"city": "region:mnmpo.org",
+"site": "mnmpo.org"
+},
+{
+"city": "region:metrocouncil.org",
+"site": "metrocouncil.org"
+},
+{
+"city": "region:mpo.nashville.gov",
+"site": "mpo.nashville.gov"
+},
+{
+"city": "region:oki.org",
+"site": "oki.org"
+},
+{
+"city": "region:macog.com",
+"site": "macog.com"
+},
+{
+"city": "region:semcog.org",
+"site": "semcog.org"
+},
+{
+"city": "region:nirpc.org",
+"site": "nirpc.org"
+},
+{
+"city": "capital:montgomeryal.gov",
+"site": "montgomeryal.gov"
+},
+{
+"city": "capital:juneau.org",
+"site": "juneau.org"
+},
+{
+"city": "capital:phoenix.gov",
+"site": "phoenix.gov"
+},
+{
+"city": "capital:littlerock.gov",
+"site": "littlerock.gov"
+},
+{
+"city": "capital:sacramento.gov",
+"site": "sacramento.gov"
+},
+{
+"city": "capital:denvergov.org",
+"site": "denvergov.org"
+},
+{
+"city": "capital:hartford.gov",
+"site": "hartford.gov"
+},
+{
+"city": "capital:dover.de.us",
+"site": "dover.de.us"
+},
+{
+"city": "capital:talgov.com",
+"site": "talgov.com"
+},
+{
+"city": "capital:atlantaga.gov",
+"site": "atlantaga.gov"
+},
+{
+"city": "capital:honolulu.gov",
+"site": "honolulu.gov"
+},
+{
+"city": "capital:cityofboise.org",
+"site": "cityofboise.org"
+},
+{
+"city": "capital:springfield-il.gov",
+"site": "springfield-il.gov"
+},
+{
+"city": "capital:indy.gov",
+"site": "indy.gov"
+},
+{
+"city": "capital:dsm.city",
+"site": "dsm.city"
+},
+{
+"city": "capital:topeka.org",
+"site": "topeka.org"
+},
+{
+"city": "capital:lexingtonky.gov",
+"site": "lexingtonky.gov"
+},
+{
+"city": "capital:brgov.com",
+"site": "brgov.com"
+},
+{
+"city": "capital:augustamaine.gov",
+"site": "augustamaine.gov"
+},
+{
+"city": "capital:annapolis.gov",
+"site": "annapolis.gov"
+},
+{
+"city": "capital:boston.gov",
+"site": "boston.gov"
+},
+{
+"city": "capital:lansing.org",
+"site": "lansing.org"
+},
+{
+"city": "capital:stpaul.gov",
+"site": "stpaul.gov"
+},
+{
+"city": "capital:jacksonms.gov",
+"site": "jacksonms.gov"
+},
+{
+"city": "capital:jeffersoncitymo.gov",
+"site": "jeffersoncitymo.gov"
+},
+{
+"city": "capital:helenamt.gov",
+"site": "helenamt.gov"
+},
+{
+"city": "capital:lincoln.ne.gov",
+"site": "lincoln.ne.gov"
+},
+{
+"city": "capital:carson.org",
+"site": "carson.org"
+},
+{
+"city": "capital:concordnh.gov",
+"site": "concordnh.gov"
+},
+{
+"city": "capital:trentonnj.org",
+"site": "trentonnj.org"
+},
+{
+"city": "capital:santafenm.gov",
+"site": "santafenm.gov"
+},
+{
+"city": "capital:albanyny.gov",
+"site": "albanyny.gov"
+},
+{
+"city": "capital:raleighnc.gov",
+"site": "raleighnc.gov"
+},
+{
+"city": "capital:bismarck.nd.us",
+"site": "bismarck.nd.us"
+},
+{
+"city": "capital:columbus.gov",
+"site": "columbus.gov"
+},
+{
+"city": "capital:oklahomacity.gov",
+"site": "oklahomacity.gov"
+},
+{
+"city": "capital:salemoregon.net",
+"site": "salemoregon.net"
+},
+{
+"city": "capital:harrisburgpa.gov",
+"site": "harrisburgpa.gov"
+},
+{
+"city": "capital:providenceri.gov",
+"site": "providenceri.gov"
+},
+{
+"city": "capital:columbiasc.gov",
+"site": "columbiasc.gov"
+},
+{
+"city": "capital:pierre.org",
+"site": "pierre.org"
+},
+{
+"city": "capital:nashville.gov",
+"site": "nashville.gov"
+},
+{
+"city": "capital:austintexas.gov",
+"site": "austintexas.gov"
+},
+{
+"city": "capital:slc.gov",
+"site": "slc.gov"
+},
+{
+"city": "capital:montpelier-vt.org",
+"site": "montpelier-vt.org"
+},
+{
+"city": "capital:richmondgov.com",
+"site": "richmondgov.com"
+},
+{
+"city": "capital:olympiawa.gov",
+"site": "olympiawa.gov"
+},
+{
+"city": "capital:charlestonwv.gov",
+"site": "charlestonwv.gov"
+},
+{
+"city": "capital:madison.com",
+"site": "madison.com"
+},
+{
+"city": "capital:cheyennecity.org",
+"site": "cheyennecity.org"
+},
+{
+"city": "parks:alapark.com",
+"site": "alapark.com"
+},
+{
+"city": "parks:dnr.alaska.gov",
+"site": "dnr.alaska.gov"
+},
+{
+"city": "parks:azstateparks.com",
+"site": "azstateparks.com"
+},
+{
+"city": "parks:arkansasstateparks.com",
+"site": "arkansasstateparks.com"
+},
+{
+"city": "parks:parks.ca.gov",
+"site": "parks.ca.gov"
+},
+{
+"city": "parks:cpw.state.co.us",
+"site": "cpw.state.co.us"
+},
+{
+"city": "parks:portal.ct.gov/deep",
+"site": "portal.ct.gov"
+},
+{
+"city": "parks:destateparks.com",
+"site": "destateparks.com"
+},
+{
+"city": "parks:floridastateparks.org",
+"site": "floridastateparks.org"
+},
+{
+"city": "parks:gastateparks.org",
+"site": "gastateparks.org"
+},
+{
+"city": "parks:dlnr.hawaii.gov",
+"site": "dlnr.hawaii.gov"
+},
+{
+"city": "parks:parksandrecreation.idaho.gov",
+"site": "parksandrecreation.idaho.gov"
+},
+{
+"city": "parks:dnr.illinois.gov",
+"site": "dnr.illinois.gov"
+},
+{
+"city": "parks:iowadnr.gov",
+"site": "iowadnr.gov"
+},
+{
+"city": "parks:ksoutdoors.gov",
+"site": "ksoutdoors.gov"
+},
+{
+"city": "parks:parks.ky.gov",
+"site": "parks.ky.gov"
+},
+{
+"city": "parks:lastateparks.com",
+"site": "lastateparks.com"
+},
+{
+"city": "parks:dnr.maryland.gov",
+"site": "dnr.maryland.gov"
+},
+{
+"city": "parks:dnr.state.mn.us",
+"site": "dnr.state.mn.us"
+},
+{
+"city": "parks:mdwfp.com",
+"site": "mdwfp.com"
+},
+{
+"city": "parks:mostateparks.com",
+"site": "mostateparks.com"
+},
+{
+"city": "parks:stateparks.mt.gov",
+"site": "stateparks.mt.gov"
+},
+{
+"city": "parks:outdoornebraska.gov",
+"site": "outdoornebraska.gov"
+},
+{
+"city": "parks:parks.nv.gov",
+"site": "parks.nv.gov"
+},
+{
+"city": "parks:nhstateparks.org",
+"site": "nhstateparks.org"
+},
+{
+"city": "parks:emnrd.nm.gov/spd",
+"site": "emnrd.nm.gov"
+},
+{
+"city": "parks:parks.ny.gov",
+"site": "parks.ny.gov"
+},
+{
+"city": "parks:ncparks.gov",
+"site": "ncparks.gov"
+},
+{
+"city": "parks:parkrec.nd.gov",
+"site": "parkrec.nd.gov"
+},
+{
+"city": "parks:ohiodnr.gov",
+"site": "ohiodnr.gov"
+},
+{
+"city": "parks:travelok.com",
+"site": "travelok.com"
+},
+{
+"city": "parks:stateparks.oregon.gov",
+"site": "stateparks.oregon.gov"
+},
+{
+"city": "parks:dcnr.pa.gov",
+"site": "dcnr.pa.gov"
+},
+{
+"city": "parks:riparks.ri.gov",
+"site": "riparks.ri.gov"
+},
+{
+"city": "parks:southcarolinaparks.com",
+"site": "southcarolinaparks.com"
+},
+{
+"city": "parks:gfp.sd.gov",
+"site": "gfp.sd.gov"
+},
+{
+"city": "parks:tnstateparks.com",
+"site": "tnstateparks.com"
+},
+{
+"city": "parks:tpwd.texas.gov",
+"site": "tpwd.texas.gov"
+},
+{
+"city": "parks:stateparks.utah.gov",
+"site": "stateparks.utah.gov"
+},
+{
+"city": "parks:vtstateparks.com",
+"site": "vtstateparks.com"
+},
+{
+"city": "parks:dcr.virginia.gov",
+"site": "dcr.virginia.gov"
+},
+{
+"city": "parks:parks.wa.gov",
+"site": "parks.wa.gov"
+},
+{
+"city": "parks:wvstateparks.com",
+"site": "wvstateparks.com"
+},
+{
+"city": "parks:dnr.wisconsin.gov",
+"site": "dnr.wisconsin.gov"
+},
+{
+"city": "parks:wyoparks.wyo.gov",
+"site": "wyoparks.wyo.gov"
+},
+{
+"city": "gis:gis.data.alaska.gov",
+"site": "gis.data.alaska.gov"
+},
+{
+"city": "gis:azgeo-open-data-agic.hub.arcgis.com",
+"site": "azgeo-open-data-agic.hub.arcgis.com"
+},
+{
+"city": "gis:gis.arkansas.gov",
+"site": "gis.arkansas.gov"
+},
+{
+"city": "gis:gis.data.ca.gov",
+"site": "gis.data.ca.gov"
+},
+{
+"city": "gis:data.colorado.gov",
+"site": "data.colorado.gov"
+},
+{
+"city": "gis:geodata.ct.gov",
+"site": "geodata.ct.gov"
+},
+{
+"city": "gis:firstmap.delaware.gov",
+"site": "firstmap.delaware.gov"
+},
+{
+"city": "gis:geodata.floridagio.gov",
+"site": "geodata.floridagio.gov"
+},
+{
+"city": "gis:data.georgiaspatial.org",
+"site": "data.georgiaspatial.org"
+},
+{
+"city": "gis:geoportal.hawaii.gov",
+"site": "geoportal.hawaii.gov"
+},
+{
+"city": "gis:gis.idaho.gov",
+"site": "gis.idaho.gov"
+},
+{
+"city": "gis:clearinghouse.isgs.illinois.edu",
+"site": "clearinghouse.isgs.illinois.edu"
+},
+{
+"city": "gis:indianamap.org",
+"site": "indianamap.org"
+},
+{
+"city": "gis:geodata.iowa.gov",
+"site": "geodata.iowa.gov"
+},
+{
+"city": "gis:kansasgis.org",
+"site": "kansasgis.org"
+},
+{
+"city": "gis:kygeoportal.ky.gov",
+"site": "kygeoportal.ky.gov"
+},
+{
+"city": "gis:atlas.ga.lsu.edu",
+"site": "atlas.ga.lsu.edu"
+},
+{
+"city": "gis:data.imap.maryland.gov",
+"site": "data.imap.maryland.gov"
+},
+{
+"city": "gis:gis-michigan.opendata.arcgis.com",
+"site": "gis-michigan.opendata.arcgis.com"
+},
+{
+"city": "gis:gisdata.mn.gov",
+"site": "gisdata.mn.gov"
+},
+{
+"city": "gis:maris.state.ms.us",
+"site": "maris.state.ms.us"
+},
+{
+"city": "gis:msdis.missouri.edu",
+"site": "msdis.missouri.edu"
+},
+{
+"city": "gis:geoinfo.msl.mt.gov",
+"site": "geoinfo.msl.mt.gov"
+},
+{
+"city": "gis:nebraskamap.gov",
+"site": "nebraskamap.gov"
+},
+{
+"city": "gis:nevadaseh.org",
+"site": "nevadaseh.org"
+},
+{
+"city": "gis:granit.unh.edu",
+"site": "granit.unh.edu"
+},
+{
+"city": "gis:njgin.nj.gov",
+"site": "njgin.nj.gov"
+},
+{
+"city": "gis:rgis.unm.edu",
+"site": "rgis.unm.edu"
+},
+{
+"city": "gis:gis.ny.gov",
+"site": "gis.ny.gov"
+},
+{
+"city": "gis:nconemap.gov",
+"site": "nconemap.gov"
+},
+{
+"city": "gis:gishubdata.nd.gov",
+"site": "gishubdata.nd.gov"
+},
+{
+"city": "gis:geohio.oit.ohio.gov",
+"site": "geohio.oit.ohio.gov"
+},
+{
+"city": "gis:data.ok.gov",
+"site": "data.ok.gov"
+},
+{
+"city": "gis:geohub.oregon.gov",
+"site": "geohub.oregon.gov"
+},
+{
+"city": "gis:pasda.psu.edu",
+"site": "pasda.psu.edu"
+},
+{
+"city": "gis:rigis.org",
+"site": "rigis.org"
+},
+{
+"city": "gis:gis.sc.gov",
+"site": "gis.sc.gov"
+},
+{
+"city": "gis:opendata2017-09-18t192802468z-sdbit.opendata.arcgis.com",
+"site": "opendata2017-09-18t192802468z-sdbit.opendata.arcgis.com"
+},
+{
+"city": "gis:tnmap.tn.gov",
+"site": "tnmap.tn.gov"
+},
+{
+"city": "gis:data.tnris.org",
+"site": "data.tnris.org"
+},
+{
+"city": "gis:gis.utah.gov",
+"site": "gis.utah.gov"
+},
+{
+"city": "gis:geodata.vermont.gov",
+"site": "geodata.vermont.gov"
+},
+{
+"city": "gis:vgin.vdem.virginia.gov",
+"site": "vgin.vdem.virginia.gov"
+},
+{
+"city": "gis:geo.wa.gov",
+"site": "geo.wa.gov"
+},
+{
+"city": "gis:wvgis.wvu.edu",
+"site": "wvgis.wvu.edu"
+},
+{
+"city": "gis:geodata.wisc.edu",
+"site": "geodata.wisc.edu"
+},
+{
+"city": "gis:wyomingspatialhub.com",
+"site": "wyomingspatialhub.com"
+}
+]

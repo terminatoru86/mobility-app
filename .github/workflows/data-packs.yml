@@ -21,7 +21,7 @@ jobs:
   osm:
     if: github.event.inputs.mode != 'extra' && github.event.inputs.mode != 'places'
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 300
     strategy:
       fail-fast: false
       matrix:

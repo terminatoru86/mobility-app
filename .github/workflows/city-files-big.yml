@@ -1,6 +1,7 @@
 name: City files (1500 cities)
 
-# Crawl the websites of the 1500 biggest US cities in 30 parallel shards for bike-parking / bikeway files.
+# Crawl the websites of the biggest US cities in 40 parallel shards for bike-parking / bikeway files
+# (PDF, Excel, CSV, GIS, SQL). Rows + reports go to the repo, the raw files to a 30-day artifact.
 on:
   workflow_dispatch:
     inputs:
@@ -8,11 +9,14 @@ on:
         description: number of cities
         default: '1500'
       secs:
-        description: seconds per city
-        default: '300'
+        description: seconds per site
+        default: '900'
       pages:
-        description: max pages per city
-        default: '250'
+        description: max pages per site
+        default: '600'
+      depth:
+        description: link depth from the home page
+        default: '3'
 
 permissions:
   contents: write
@@ -36,41 +40,55 @@ jobs:
   crawl:
     needs: list
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 355
     strategy:
       fail-fast: false
       max-parallel: 20
       matrix:
-        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: pip install requests beautifulsoup4 lxml pdfplumber openpyxl
       - uses: actions/download-artifact@v4
         with:
           name: cities
           path: data/foia
-      - run: pip install requests beautifulsoup4 lxml pdfplumber openpyxl
       - name: Crawl
+        timeout-minutes: 325
         env:
           CITIES_FILE: data/foia/cities_big.json
           SHARD: ${{ matrix.shard }}
-          NSHARDS: '30'
-          SECS: ${{ inputs.secs }}
-          PAGES: ${{ inputs.pages }}
-          SUFFIX: _big_${{ matrix.shard }}
-        timeout-minutes: 330
+          NSHARDS: '40'
+          SUFFIX: _deep_${{ matrix.shard }}
+          SECS: ${{{{ inputs.secs }}}}
+          PAGES: ${{{{ inputs.pages }}}}
+          DEPTH: ${{{{ inputs.depth }}}}
+          MAXFILES: '40'
+          MAXPORTALS: '30'
+          THREADS: '16'
+          HEAVY: '3'
+          DEADLINE: '18600'
         run: python3 tool/city_files.py
-      - name: Save
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: raw-cities-${{ matrix.shard }}
+          path: data/city_files
+          if-no-files-found: ignore
+          retention-days: 30
+      - name: Save (rows and reports only; raw files stay in the artifact)
         if: always()
         run: |
+          find data/city_files -type f ! -name '*.rows.json' ! -name 'index*.json' ! -name 'REPORT*.md' ! -name 'datagov.json' -delete || true
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/city_files
-          git commit -m "City files (big): shard ${{ matrix.shard }}" || exit 0
-          for i in 1 2 3 4 5 6; do
-            git pull -q --rebase && git push && exit 0
-            sleep $((RANDOM % 20 + 5))
+          git commit -qm "City files (deep): shard ${{ matrix.shard }}" || exit 0
+          for i in $(seq 1 40); do
+            git pull -q --rebase -X theirs && git push -q && exit 0
+            sleep $((RANDOM % 45 + 10))
           done
           exit 1

@@ -1,29 +1,109 @@
 name: Other administrations
 
-# data.gov catalog + state DOT + state capitals + regional planning bodies.
+# State DOTs, regional planning agencies (MPO/COG), state capitals, state parks and state GIS portals,
+# crawled in 10 parallel shards like the city websites, plus the data.gov catalog search.
 on:
   workflow_dispatch:
+    inputs:
+      secs:
+        description: seconds per site
+        default: '900'
+      pages:
+        description: max pages per site
+        default: '600'
+      depth:
+        description: link depth from the home page
+        default: '3'
 
 permissions:
   contents: write
 
 jobs:
-  crawl:
+  datagov:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    strategy:
+      matrix:
+        shard: [datagov]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install requests beautifulsoup4 lxml pdfplumber openpyxl
-      - name: Crawl
-        run: python3 tool/gov_sources.py
-      - name: Save
+      - name: data.gov
+        timeout-minutes: 100
+        run: python3 tool/gov_sources.py harvest && ls data/gov_sources
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: raw-gov-${{ matrix.shard }}
+          path: data/gov_sources
+          if-no-files-found: ignore
+          retention-days: 30
+      - name: Save (rows and reports only; raw files stay in the artifact)
+        if: always()
         run: |
+          find data/gov_sources -type f ! -name '*.rows.json' ! -name 'index*.json' ! -name 'REPORT*.md' ! -name 'datagov.json' -delete || true
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull -q --rebase || true
           git add data/gov_sources
-          git commit -m "Other administrations: published bike data found on city websites" || exit 0
-          git push
+          git commit -qm "Other administrations (data.gov): shard ${{ matrix.shard }}" || exit 0
+          for i in $(seq 1 40); do
+            git pull -q --rebase -X theirs && git push -q && exit 0
+            sleep $((RANDOM % 45 + 10))
+          done
+          exit 1
+
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4 lxml pdfplumber openpyxl
+      - name: Site list
+        run: python3 tool/gov_sources.py sites
+      - name: Crawl
+        timeout-minutes: 325
+        env:
+          CITIES_FILE: data/foia/gov_sites.json
+          OUT: data/gov_sources
+          SHARD: ${{ matrix.shard }}
+          NSHARDS: '10'
+          SUFFIX: _sites_${{ matrix.shard }}
+          SECS: ${{{{ inputs.secs }}}}
+          PAGES: ${{{{ inputs.pages }}}}
+          DEPTH: ${{{{ inputs.depth }}}}
+          MAXFILES: '40'
+          MAXPORTALS: '30'
+          THREADS: '16'
+          HEAVY: '3'
+          DEADLINE: '18600'
+        run: python3 tool/city_files.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: raw-gov-${{ matrix.shard }}
+          path: data/gov_sources
+          if-no-files-found: ignore
+          retention-days: 30
+      - name: Save (rows and reports only; raw files stay in the artifact)
+        if: always()
+        run: |
+          find data/gov_sources -type f ! -name '*.rows.json' ! -name 'index*.json' ! -name 'REPORT*.md' ! -name 'datagov.json' -delete || true
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/gov_sources
+          git commit -qm "Other administrations (sites): shard ${{ matrix.shard }}" || exit 0
+          for i in $(seq 1 40); do
+            git pull -q --rebase -X theirs && git push -q && exit 0
+            sleep $((RANDOM % 45 + 10))
+          done
+          exit 1

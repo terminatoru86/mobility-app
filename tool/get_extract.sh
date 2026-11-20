@@ -6,7 +6,7 @@ region="$1"; out="$2"
 url="https://download.geofabrik.de/north-america/${region}-latest.osm.pbf"
 for try in 1 2 3 4 5 6 7 8; do
   rm -f "$out"
-  if curl -fsSL --retry 20 --retry-delay 60 --retry-all-errors "$url" -o "$out" && osmium fileinfo -e "$out" > /dev/null 2>&1; then
+  if curl -fsSL --speed-limit 20000 --speed-time 120 --max-time 3600 --retry 20 --retry-delay 60 --retry-all-errors "$url" -o "$out" && osmium fileinfo -e "$out" > /dev/null 2>&1; then
     echo "got $region ($(du -h "$out" | cut -f1)) on try $try"
     exit 0
   fi

@@ -6,7 +6,7 @@ import json, os, re, sys, time, hashlib, urllib.parse, concurrent.futures as cf
 import requests
 from bs4 import BeautifulSoup
 
-OUT = 'data/city_files'
+OUT = os.environ.get('OUT', 'data/city_files')
 UA = {'User-Agent': 'MOBIlity-data-bot/1.0 (public bike-parking data; contact albis_iulian@yahoo.com)'}
 KEY = re.compile(r'bike|bicycl|cycl|rack|corral|locker|scooter|moped|motorcycle|trail|greenway|bikeway|gis|open.?data|'
                  r'transportation|mobility|parking|garage|public.?works|map|route|historic|waterfront|charging|repair|'
@@ -17,13 +17,29 @@ STRONG = re.compile(r'bike|bicycl|cycl|rack|corral|locker|cage|scooter|e-?scoot|
                     r'wayfinding|sharrow|boulevard|park-?and-?ride|transit|map', re.I)
 FILE = re.compile(r'\.(pdf|xlsx?|csv|geojson|json|kml|kmz|zip|shp|gpx|sql|gdb)(\?|$)', re.I)
 PORTAL = re.compile(r'arcgis\.com|hub\.arcgis|opendata|open-data|data\.[a-z\-]+\.(gov|org|us)|socrata|ckan|gis\.', re.I)
-MAXMB = 40
+MAXMB = int(os.environ.get('MAXMB', 25))
+DEPTH = int(os.environ.get('DEPTH', 2))
+MAXFILES = int(os.environ.get('MAXFILES', 25))
+MAXPORTALS = int(os.environ.get('MAXPORTALS', 12))
+import threading
+THREADS = int(os.environ.get('THREADS', 8))
+DEADLINE = time.time() + int(os.environ.get('DEADLINE', 10**9))  # after this: only list files, no crawl/download
+HEAVY = threading.Semaphore(int(os.environ.get('HEAVY', 2)))  # at most 2 PDF/Excel extractions at once (memory)
 PAGES = int(os.environ.get('PAGES', 110))
 SECS = int(os.environ.get('SECS', 150))
 SHARD = int(os.environ.get('SHARD', 0))
 NSHARDS = int(os.environ.get('NSHARDS', 1))
 CITIES_FILE = os.environ.get('CITIES_FILE', 'data/foia/contacts.json')
 SUF = os.environ.get('SUFFIX', '')
+
+QUERIES = ('bike rack', 'bicycle parking', 'bike corral', 'bike locker', 'bike parking map', 'scooter parking', 'scooter corral',
+           'micromobility', 'motorcycle parking', 'moped parking', 'bike repair station', 'fix-it station', 'air pump bike',
+           'e-bike charging', 'bike map', 'bikeway map', 'bike lanes', 'bicycle master plan', 'active transportation plan',
+           'trail map', 'greenway', 'multi-use path', 'historic route', 'scenic route', 'heritage trail', 'waterfront',
+           'riverwalk', 'bike share stations', 'parking garage rates', 'parking lots map', 'bikeway gis data', 'gis data download',
+           'open data', 'shapefile', 'bicycle facilities inventory', 'complete streets')
+SEARCH_URLS = ('/search?q={}', '/Search?searchPhrase={}', '/?s={}', '/search/?q={}', '/Search/Results?searchPhrase={}',
+               '/search?query={}', '/site-search?keys={}')
 
 def get(url, **kw):
     try:
@@ -44,10 +60,12 @@ def crawl_city(c):
     seen, queue, files, portals = set(), [(base, 0)], {}, {}
     t0 = time.time()
     # search the site itself too
-    for q in ('bike rack', 'bicycle parking', 'bike locker', 'scooter parking', 'motorcycle parking', 'bike repair station', 'e-bike charging', 'bike map', 'trail map', 'historic route', 'waterfront', 'parking garage rates', 'bikeway gis data', 'open data'):
-        queue.append((f'{base}/search?q={urllib.parse.quote(q)}', 1))
-        queue.append((f'{base}/Search?searchPhrase={urllib.parse.quote(q)}', 1))
-    while queue and len(seen) < PAGES and time.time() - t0 < SECS:
+    for q in QUERIES:
+        for pat in SEARCH_URLS:
+            queue.append((base + pat.format(urllib.parse.quote(q)), 1))
+    for pat in ('/sitemap.xml', '/opendata', '/open-data', '/gis', '/maps', '/transportation', '/bike', '/bicycle', '/biking', '/cycling', '/trails', '/parking'):
+        queue.append((base + pat, 1))
+    while queue and len(seen) < PAGES and time.time() - t0 < SECS and time.time() < DEADLINE:
         url, d = queue.pop(0)
         if url in seen:
             continue
@@ -58,7 +76,18 @@ def crawl_city(c):
                 files[url] = ''
             continue
         r = get(url)
-        if not r or 'html' not in r.headers.get('content-type', ''):
+        if not r:
+            continue
+        ct = r.headers.get('content-type', '')
+        if 'xml' in ct and '<loc>' in r.text[:5000]:
+            # sitemap: keep the pages / files whose address looks like ours
+            for u in re.findall(r'<loc>\s*([^<\s]+)\s*</loc>', r.text)[:5000]:
+                if FILE.search(u) and STRONG.search(u):
+                    files[u] = ''
+                elif u.endswith('.xml') or KEY.search(u):
+                    queue.append((u, max(d, 1)))
+            continue
+        if 'html' not in ct:
             continue
         for u, txt in links(url, r.text):
             lt = u + ' ' + txt
@@ -66,9 +95,9 @@ def crawl_city(c):
                 if STRONG.search(lt) or d == 0:
                     if STRONG.search(lt):
                         files[u] = txt
-            elif PORTAL.search(u) and KEY.search(lt) and len(portals) < 12:
+            elif PORTAL.search(u) and KEY.search(lt) and len(portals) < MAXPORTALS:
                 portals[u] = txt
-            elif d < 2 and urllib.parse.urlparse(u).netloc.endswith(site.split('.', 1)[-1] if site.count('.') > 1 else site) and KEY.search(lt):
+            elif d < DEPTH and urllib.parse.urlparse(u).netloc.endswith(site.split('.', 1)[-1] if site.count('.') > 1 else site) and KEY.search(lt):
                 queue.append((u, d + 1))
     return files, portals
 
@@ -102,13 +131,14 @@ def extract(path):
         if ext == 'pdf':
             import pdfplumber
             with pdfplumber.open(path) as pdf:
-                for pg in pdf.pages[:80]:
+                for pg in pdf.pages[:60]:
                     for tb in pg.extract_tables() or []:
                         for r in tb:
                             rows.append({'row': [str(x or '').strip() for x in r]})
                     for ln in (pg.extract_text() or '').splitlines():
                         if ADDR.search(ln):
                             rows.append({'line': ln.strip()})
+                    pg.close()
         elif ext in ('xlsx', 'xls'):
             import openpyxl
             wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
@@ -141,18 +171,24 @@ def extract(path):
 
 def process(c):
     """crawl one city, then download + extract its files; returns (city, entry)."""
+    if time.time() > DEADLINE:
+        return c['city'], {'files': [], 'portals': {}, 'error': 'skipped (time)'}
     try:
         files, portals = crawl_city(c)
     except Exception as e:
         return c['city'], {'files': [], 'portals': {}, 'error': str(e)[:100]}
     city = c['city']
     got = []
-    for u, txt in list(files.items())[:25]:
+    for u, txt in list(files.items())[:MAXFILES]:
+        if time.time() > DEADLINE:
+            got.append({'url': u, 'text': txt, 'file': None, 'rows': 0, 'bike_rows': 0})
+            continue
         try:
             p = download(city, u)
             if not p:
                 continue
-            rows = extract(p)
+            with HEAVY:
+                rows = extract(p)
             useful = [r for r in rows if STRONG.search(json.dumps(r, ensure_ascii=False))]
             got.append({'url': u, 'text': txt, 'file': p, 'rows': len(rows), 'bike_rows': len(useful)})
             if useful:
@@ -170,7 +206,7 @@ def main():
     def flush():
         json.dump(index, open(f'{OUT}/index{SUF}.json', 'w'), indent=1, ensure_ascii=False)
         open(f'{OUT}/REPORT{SUF}.md', 'w').write('\n'.join(rep) + '\n')
-    with cf.ThreadPoolExecutor(8) as ex:
+    with cf.ThreadPoolExecutor(THREADS) as ex:
         for n, (city, e) in enumerate(ex.map(process, cities), 1):
             index[city] = e
             rep.append(f"| {city} | {len(e['files'])} ({sum(g['bike_rows'] for g in e['files'])} bike rows) | {len(e['portals'])} |")
