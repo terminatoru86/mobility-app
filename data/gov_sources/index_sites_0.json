@@ -1,0 +1,1861 @@
+{
+ "state:dot.alabama.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "state:hidot.hawaii.gov": {
+  "files": [],
+  "portals": {
+   "https://histategis.maps.arcgis.com/apps/MapSeries/index.html?appid=39e4d804242740a89d3fd0bc76d8d7de": "HDOT Highways Project Status Map"
+  }
+ },
+ "state:mass.gov/orgs/massachusetts-department-of-transportation": {
+  "files": [],
+  "portals": {}
+ },
+ "state:dot.nm.gov": {
+  "files": [
+   {
+    "url": "https://www.dot.nm.gov/wp-content/uploads/2024/09/Las-Cruces-Safe-Routes-to-Schools_Curry-A.pdf",
+    "text": "Las Cruces Safe Routes to Schools",
+    "file": "data/gov_sources/state_dot_nm_gov/bf6a26_Las-Cruces-Safe-Routes-to-Schools_Curry-A.pdf",
+    "rows": 28,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/204c87d2-77e3-444c-a67b-480aaf9c69ea/NM-Motorcycle-Training-Program.pdf",
+    "text": "NM Motorcycle Training Program Rules",
+    "file": "data/gov_sources/state_dot_nm_gov/e19c21_NM-Motorcycle-Training-Program.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.nm.gov/wp-content/uploads/2024/03/NMDOT-Annual-Report-to-NHTSA.12.29.22.pdf",
+    "text": "NMDOT Motorcycle Annual Report",
+    "file": "data/gov_sources/state_dot_nm_gov/a5c4d4_NMDOT-Annual-Report-to-NHTSA.12.29.22.pdf",
+    "rows": 116,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.fhwa.dot.gov/environment/bicycle_pedestrian/funding/funding_opportunities.pdf",
+    "text": "FHWA’s Pedestrian and Bicycle Funding Opportunities",
+    "file": "data/gov_sources/state_dot_nm_gov/944e69_funding_opportunities.pdf",
+    "rows": 67,
+    "bike_rows": 43
+   },
+   {
+    "url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/a3ac5aea-a57f-419b-8388-d1b44a81d20a/6%20-%20Interstate%20Truck%20Parking%20Assessment.pdf",
+    "text": "6-Interstate Truck Parking Assessment",
+    "file": "data/gov_sources/state_dot_nm_gov/e746b8_6_20-_20Interstate_20Truck_20Parking_20Assessment.pdf",
+    "rows": 245,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/1905a2c3-52b8-4113-b094-81a3e0c9fb49/National_Bike_to_School_Day.pdf",
+    "text": "Read more…",
+    "file": "data/gov_sources/state_dot_nm_gov/f00a50_National_Bike_to_School_Day.pdf",
+    "rows": 22,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/c258147f-6062-40fe-b067-5c8552a9a505/May_is_National_Bicycle_Safety_Month.pdf",
+    "text": "Read more…",
+    "file": "data/gov_sources/state_dot_nm_gov/81a54d_May_is_National_Bicycle_Safety_Month.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/27c132bd-8f24-4071-a42d-8bdc86478eb7/levelThreeDirectCurrentElectricVehicleChargingStation%5B59%5D.pdf",
+    "text": "Program Policy",
+    "file": "data/gov_sources/state_dot_nm_gov/670d54_levelThreeDirectCurrentElectricVehicleChargingStation_5B59_5D.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/03fb541b-c64f-493f-986a-9db78a92d8fc/FAQs%20DC%20Fast%20Charging%20Grant%20Program%208-19-2022%20Final%20JV%201033am.pdf",
+    "text": "FAQs",
+    "file": "data/gov_sources/state_dot_nm_gov/ec0f11_FAQs_20DC_20Fast_20Charging_20Grant_20Program_208-19-2022_20Final_20JV",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://nmdot.maps.arcgis.com/home/index.html": "Map Gallery",
+   "http://nmdot.maps.arcgis.com/home/index.html": "NMDOT Public Map Gallery",
+   "https://gis.dot.nm.gov/PDF_Gallery/NMDOT_Milepost.pdf ": "Milepost Map – Downloadable PDF",
+   "https://nmdot.maps.arcgis.com/apps/webappviewer/index.html?id=c4c5fcf8be0f473c873896af264653c0": "Milepost Map – online digital format",
+   "https://experience.arcgis.com/experience/a5918cf455ae4fe7835cf9b5fe0c78cb/": "Pedestrian Safety Action Plan",
+   "https://nmdot.maps.arcgis.com/apps/webappviewer/index.html?id=f2fc877d107b4e338deb789f70a8779e": "Functional Class Data",
+   "https://planningdivisiongis-nmdot.hub.arcgis.com/": "State Bicycle Guideline Map",
+   "https://experience.arcgis.com/experience/66694d1804924256b564dfa747f497b2/page/Page/": "NMDOT Traffic Counter Permanent Sites",
+   "https://experience.arcgis.com/experience/7bd81fbadbb04a8c8d4e5bef767fcb77/": "NMDOT Traffic  Sections",
+   "https://active-transportation-plan-nmdot.hub.arcgis.com/": "Click here to learn more about the NMDOT Active Transportation Plan development process, timeline, and ways to get invol",
+   "https://storymaps.arcgis.com/stories/05d03cff46b14768979410bb069a5116": "Statewide Pedestrian Safety Action Plan StoryMap",
+   "https://planningdivisiongis-nmdot.hub.arcgis.com/apps/081101e0ec454cc5b75ab98381522937/explore": "Freight Network Web Map",
+   "https://planningdivisiongis-nmdot.hub.arcgis.com/apps/a58e9bda1045488498d5b23f500b06d3": "State Functional System Web Map",
+   "https://planningdivisiongis-nmdot.hub.arcgis.com/apps/18bb43c9641143dbacbdb64a04b32427": "Federal Aid Eligible Road Network Web Map",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.nmlegis.gov%2FSessions%2F25%2520Regular%2Ffinal%2FSB0073.pdf&data=05%7C02%7Cmarco.otero%40dot.nm.gov%7C173878e8b30a42316f1e08ddb9a80f0b%7C04aa6bf4d436426fbfa404b7a70e60ff%7C0%7C0%7C638870853781197859%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=1e%2Fldw8leKfiEiZTcnJOPh4i8hQqk%2BFKiP4EAydq8s8%3D&reserved=0": "Senate Bill 73",
+   "https://www.nmlegis.gov/": "found here",
+   "https://www.nmlegis.gov/Legislation/Legislation?Chamber=H&LegType=B&LegNo=145&year=25": "House Bill 145",
+   "https://survey123.arcgis.com/share/73740a12e54e4e398eec407e38aea8e6": "ITS Project Checklist – Systems Engineering Compliance Form for NMDOT Project Only"
+  }
+ },
+ "state:dot.sd.gov": {
+  "files": [
+   {
+    "url": "https://dot.sd.gov/media/jdpehrrm/aberdeen-abr-2024-pci-map.pdf",
+    "text": "Aberdeen",
+    "file": "data/gov_sources/state_dot_sd_gov/7539ff_aberdeen-abr-2024-pci-map.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/5ltbhvgf/belle-fourche-efc-2024-pci-map.pdf",
+    "text": "Belle Fourche",
+    "file": "data/gov_sources/state_dot_sd_gov/333d1c_belle-fourche-efc-2024-pci-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/1pnd33zw/bison-6v5-2024-pci-map.pdf",
+    "text": "Bison",
+    "file": "data/gov_sources/state_dot_sd_gov/4b802d_bison-6v5-2024-pci-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/5yyhpfsz/britton-btn-2024-pci-map.pdf",
+    "text": "Britton",
+    "file": "data/gov_sources/state_dot_sd_gov/0b9cc6_britton-btn-2024-pci-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/t5wgblms/brookings-bkx-2024-pci-map.pdf",
+    "text": "Brookings",
+    "file": "data/gov_sources/state_dot_sd_gov/361a35_brookings-bkx-2024-pci-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/e0ifn0nh/harding-county-buffalo-9d2-2024-pci-map.pdf",
+    "text": "Buffalo",
+    "file": "data/gov_sources/state_dot_sd_gov/727556_harding-county-buffalo-9d2-2024-pci-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/2tdma3dj/canton-7g9-2024-pci-map.pdf",
+    "text": "Canton",
+    "file": "data/gov_sources/state_dot_sd_gov/5b5a00_canton-7g9-2024-pci-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/a1vnhe33/chamberlain-9v9-2024-pci-map.pdf",
+    "text": "Chamberlain",
+    "file": "data/gov_sources/state_dot_sd_gov/3628d0_chamberlain-9v9-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/dlmh3qcg/clark-8d7-2024-pci-map.pdf",
+    "text": "Clark County",
+    "file": "data/gov_sources/state_dot_sd_gov/c4b23b_clark-8d7-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/tyyhgsg4/custer-cut-2024-pci-map.pdf",
+    "text": "Custer County",
+    "file": "data/gov_sources/state_dot_sd_gov/b9e7d1_custer-cut-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/evelc2qt/desmet-6e5-2024-pci-map.pdf",
+    "text": "DeSmet",
+    "file": "data/gov_sources/state_dot_sd_gov/15677f_desmet-6e5-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/1zrodikm/eagle-butte-84d-2024-pci-map.pdf",
+    "text": "Eagle Butte",
+    "file": "data/gov_sources/state_dot_sd_gov/b92c65_eagle-butte-84d-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/bqchk2oq/edgemont-6v0-2024-pci-map.pdf",
+    "text": "Edgemont",
+    "file": "data/gov_sources/state_dot_sd_gov/7de5b1_edgemont-6v0-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/thniwe1q/eureka-3w8-2024-pci-map.pdf",
+    "text": "Eureka",
+    "file": "data/gov_sources/state_dot_sd_gov/7f1dc3_eureka-3w8-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/cdzd2aal/faith-d07-2024-pci-map.pdf",
+    "text": "Faith",
+    "file": "data/gov_sources/state_dot_sd_gov/dd3b83_faith-d07-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/kuunndj4/faulkton-3fu-2024-pci-map.pdf",
+    "text": "Faulkton",
+    "file": "data/gov_sources/state_dot_sd_gov/25d140_faulkton-3fu-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/hmzlfwen/flandreau-4p3-2024-pci-map.pdf",
+    "text": "Flandreau",
+    "file": "data/gov_sources/state_dot_sd_gov/d0ddde_flandreau-4p3-2024-pci-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/vkandiyh/gettysburg-0d8-2024-pci-map.pdf",
+    "text": "Gettysburg",
+    "file": "data/gov_sources/state_dot_sd_gov/6fc5f2_gettysburg-0d8-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/ev5p5qw2/gregory-9d1-2024-pci-map.pdf",
+    "text": "Gregory",
+    "file": "data/gov_sources/state_dot_sd_gov/7ac983_gregory-9d1-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/mhkjpesr/hot-springs-hsr-2024-pci-map.pdf",
+    "text": "Hot Springs",
+    "file": "data/gov_sources/state_dot_sd_gov/802a4b_hot-springs-hsr-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/gy0g4i3k/hoven-9f8-2024-pci-map.pdf",
+    "text": "Hoven",
+    "file": "data/gov_sources/state_dot_sd_gov/765341_hoven-9f8-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/awpldw55/huron-hon-2024-pci-map.pdf",
+    "text": "Huron",
+    "file": "data/gov_sources/state_dot_sd_gov/e2b951_huron-hon-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/jrnluvlo/lemmon-lem-2024-pci-map.pdf",
+    "text": "Lemmon",
+    "file": "data/gov_sources/state_dot_sd_gov/c47aeb_lemmon-lem-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/hq4fwknz/madison-mds-2024-pci-map.pdf",
+    "text": "Madison",
+    "file": "data/gov_sources/state_dot_sd_gov/4bf0b5_madison-mds-2024-pci-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/5k0huep3/martin-9v6-2024-pci-map.pdf",
+    "text": "Martin",
+    "file": "data/gov_sources/state_dot_sd_gov/783c90_martin-9v6-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/puodbjjp/mclaughlin-5p2-2024-pci-map.pdf",
+    "text": "McLaughlin",
+    "file": "data/gov_sources/state_dot_sd_gov/518403_mclaughlin-5p2-2024-pci-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/3wyjnxgn/milbank-1d1-2024-pci-map.pdf",
+    "text": "Milbank",
+    "file": "data/gov_sources/state_dot_sd_gov/f7c4c3_milbank-1d1-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/ko1jbni5/miller-mka-2024-pci-map.pdf",
+    "text": "Miller",
+    "file": "data/gov_sources/state_dot_sd_gov/13088b_miller-mka-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/wjnkcbk4/mitchell-mhe-2024-pci-map.pdf",
+    "text": "Mitchell",
+    "file": "data/gov_sources/state_dot_sd_gov/2d51a9_mitchell-mhe-2024-pci-map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/ynoesdwf/mobridge-mbg-2024-pci-map.pdf",
+    "text": "Mobridge",
+    "file": "data/gov_sources/state_dot_sd_gov/14b611_mobridge-mbg-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/0gydu1n5/murdo-8f6-2024-pci-map.pdf",
+    "text": "Murdo",
+    "file": "data/gov_sources/state_dot_sd_gov/76c8a4_murdo-8f6-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/ptebvaor/onida-98d-2024-pci-map.pdf",
+    "text": "Onida",
+    "file": "data/gov_sources/state_dot_sd_gov/ac1cb6_onida-98d-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/c23h3hn1/parkston-8v3-2024-pci-map.pdf",
+    "text": "Parkston",
+    "file": "data/gov_sources/state_dot_sd_gov/f3913c_parkston-8v3-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/gv3fp24q/philip-php-2024-pci-map.pdf",
+    "text": "Philip",
+    "file": "data/gov_sources/state_dot_sd_gov/6b97d7_philip-php-2024-pci-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/0lebgdqc/pierre-pir-2024-pci-map.pdf",
+    "text": "Pierre",
+    "file": "data/gov_sources/state_dot_sd_gov/ee46cb_pierre-pir-2024-pci-map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/dqehe5sl/pine-ridge-ien-2024-pci-map.pdf",
+    "text": "Pine Ridge",
+    "file": "data/gov_sources/state_dot_sd_gov/029dbe_pine-ridge-ien-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/1znjoo20/platte-1d3-2024-pci-map.pdf",
+    "text": "Platte",
+    "file": "data/gov_sources/state_dot_sd_gov/d27bc1_platte-1d3-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://dot.sd.gov/media/s5wlmd1c/rapid-city-rap-2024-pci-map.pdf",
+    "text": "Rapid City",
+    "file": "data/gov_sources/state_dot_sd_gov/c84a96_rapid-city-rap-2024-pci-map.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/3prj2fhx/redfield-1d8-2024-pci-map.pdf",
+    "text": "Redfield",
+    "file": "data/gov_sources/state_dot_sd_gov/438b44_redfield-1d8-2024-pci-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.sd.gov/media/hmsfbkoe/rosebud-suo-2024-pci-map.pdf",
+    "text": "Rosebud",
+    "file": "data/gov_sources/state_dot_sd_gov/dca8c8_rosebud-suo-2024-pci-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://dotgis.sd.gov/portal/apps/experiencebuilder/experience/?id=0b0d80da93364356a643c08c61516f6d": "2026 Planned Construction Map",
+   "http://sdbit.maps.arcgis.com/apps/webappviewer/index.html?id=93bd565a70a94f138f90ceed29ce1b12": "Interactive Road System Maps",
+   "https://gis-south-dakota-open-data-hub-sdbit.hub.arcgis.com/datasets/076d9cf8ceb64315b2dcd055313c22bf_0/explore?location=44.216550%2C-100.244200%2C8": "Non-State Trunk Count Location Data – Open Data Portal",
+   "https://experience.arcgis.com/experience/6b7a85552f9e45b886fbb82c03ed18ca": "Public Transit Provider Map of the Service Areas →",
+   "https://experience.arcgis.com/experience/ca04ce64c6204c4cbe88f9f9cb59341f/": "",
+   "https://dotgis.sd.gov/portal/apps/experiencebuilder/experience/?id=4632411edc9a4d7fbe6d067b8bbed936": "",
+   "https://experience.arcgis.com/experience/88ce18aa11684f8d9002787a097fdb2e/": "Roadway Characteristics Map",
+   "https://experience.arcgis.com/experience/cb089bc673df486a8708f2d22b1e740b": "Traffic Flow Map",
+   "https://experience.arcgis.com/experience/8c325901e11341b0b9f112a308d12d4b/": "View Here",
+   "https://sdgis.sd.gov/portal/apps/storymaps/stories/09e4ae166dc44aa99fe39593198838aa": "Historic Platte-Winner Bridge Story Map",
+   "https://dotfiles.sd.gov/cadd/city/DGN/STURGIS.DGN": "DGN",
+   "https://dotfiles.sd.gov/cadd/city/DWG/STURGIS.dwg": "DWG",
+   "https://gis-south-dakota-open-data-hub-sdbit.hub.arcgis.com/search?groupIds=9df577dd367b4f2db36e9b3842b5b268": "Open Data Portal →",
+   "https://experience.arcgis.com/experience/381c89fee7744feeb2cfce60fb1a715e": "Public Hunting Atlas",
+   "https://experience.arcgis.com/experience/fa1e6cd335d8425183944b9f1a03e01e": "Public Water Access",
+   "https://sdgfp.maps.arcgis.com/apps/instant/nearby/index.html?appid=344abb2780ec4198aa30e6992111e4a1&distance=5": "Urban and Community Fisheries",
+   "https://sdgfp.maps.arcgis.com/apps/instant/nearby/index.html?appid=a4634748440d472da36a6d2e3015366e": "Fish Management Agreement Access Areas",
+   "https://sdgfp.maps.arcgis.com/apps/dashboards/42f68f5086c74415ac2e4434518baa1a": "Printable Hunting Atlas by County",
+   "https://experience.arcgis.com/experience/a584653120d64ca2a2612d56d1c8c1d6": "Paper Hunting Atlas Updates",
+   "https://sdgfp.maps.arcgis.com/apps/dashboards/adb1aa88fa894c4fbf2bb077843bfc7f": "Controlled Hunting Access Program (CHAP)",
+   "https://experience.arcgis.com/experience/b55a26baa2684964b63c3257ecd16a2a": "Aquatic Access Public Comment Recorder",
+   "https://experience.arcgis.com/experience/9aeceb65965d42a4b56230348103ecc3/page/Home": "Public Hunting Land Comment Recorder",
+   "https://experience.arcgis.com/experience/fa1e6cd335d8425183944b9f1a03e01e/page/Waterfowl": "Waterfowl Hunting Access",
+   "https://sdgfp.maps.arcgis.com/apps/dashboards/3943fd289e81465b9fd216c93f8f22bc": "Lower Oahe Waterfowl Access",
+   "https://sdgfp.maps.arcgis.com/apps/dashboards/5edfffcc5df442e78e82f046942abc63": "Nonmeandered Water Closures",
+   "https://experience.arcgis.com/experience/9a0da2bfeac74672b57fc3c9d3215166": "Antelope Hunting Units",
+   "https://experience.arcgis.com/experience/675f973e1065450699b024286fe9fd02": "Bighorn Sheep Hunting Units",
+   "https://experience.arcgis.com/experience/eab1f1f8a7c34cd89b9777c6e786f08b": "Deer Hunting Units",
+   "https://experience.arcgis.com/experience/bfdaf6908845480a88781302af47505b": "Elk Hunting Units",
+   "https://experience.arcgis.com/experience/7119397d77fb4efd990c615131a9fee4": "Mountain Goat Hunting Units"
+  }
+ },
+ "region:cmap.illinois.gov": {
+  "files": [
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/northeastern-illinois-regional-map.pdf",
+    "text": "detailed map of northeastern Illinois",
+    "file": "data/gov_sources/region_cmap_illinois_gov/34f29e_northeastern-illinois-regional-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/CMAP_BWP_FY27.pdf",
+    "text": "FY27 budget and work plan",
+    "file": "data/gov_sources/region_cmap_illinois_gov/f6f6ee_CMAP_BWP_FY27.pdf",
+    "rows": 615,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/CMAP-FY26-Budget-and-Work-Plan.pdf",
+    "text": "FY26 budget and work plan",
+    "file": "data/gov_sources/region_cmap_illinois_gov/079da2_CMAP-FY26-Budget-and-Work-Plan.pdf",
+    "rows": 622,
+    "bike_rows": 20
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/FY2025_BudgetandWorkPlan.pdf",
+    "text": "FY25 budget and work plan",
+    "file": "data/gov_sources/region_cmap_illinois_gov/b9d9f9_FY2025_BudgetandWorkPlan.pdf",
+    "rows": 526,
+    "bike_rows": 25
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/FY24_budget_regional_work_plan.pdf",
+    "text": "FY24 budget and work plan",
+    "file": "data/gov_sources/region_cmap_illinois_gov/5a2fae_FY24_budget_regional_work_plan.pdf",
+    "rows": 224,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/uwp_budget_work_plan_FY24.pdf",
+    "text": "FY 24 UWP budget and work plan",
+    "file": "data/gov_sources/region_cmap_illinois_gov/ee1b8b_uwp_budget_work_plan_FY24.pdf",
+    "rows": 395,
+    "bike_rows": 66
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/uwp_budget_work_plan_FY23.pdf",
+    "text": "FY 23 UWP budget and work plan",
+    "file": "data/gov_sources/region_cmap_illinois_gov/a929b5_uwp_budget_work_plan_FY23.pdf",
+    "rows": 464,
+    "bike_rows": 96
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/uwp_budget_work_plan_FY22.pdf",
+    "text": "FY 22 UWP budget and work plan",
+    "file": "data/gov_sources/region_cmap_illinois_gov/668856_uwp_budget_work_plan_FY22.pdf",
+    "rows": 357,
+    "bike_rows": 38
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/uwp_budget_work_plan_FY21.pdf",
+    "text": "FY 21 UWP budget and work plan",
+    "file": "data/gov_sources/region_cmap_illinois_gov/d9963a_uwp_budget_work_plan_FY21.pdf",
+    "rows": 451,
+    "bike_rows": 87
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/uwp_budget_work_plan_FY20.pdf",
+    "text": "FY 20 UWP budget and work plan",
+    "file": "data/gov_sources/region_cmap_illinois_gov/83d8a2_uwp_budget_work_plan_FY20.pdf",
+    "rows": 535,
+    "bike_rows": 80
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/CMAP-public-participation-policy.pdf",
+    "text": "CMAP’s public participation policy",
+    "file": "data/gov_sources/region_cmap_illinois_gov/6f422f_CMAP-public-participation-policy.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/MPO_Board_MOU.pdf",
+    "text": "memorandum of understanding",
+    "file": "data/gov_sources/region_cmap_illinois_gov/796c6c_MPO_Board_MOU.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/CMAP_bylaws.pdf",
+    "text": "Board and Executive Committee bylaws",
+    "file": "data/gov_sources/region_cmap_illinois_gov/920053_CMAP_bylaws.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/1981MPODesignationLetter.pdf",
+    "text": "designated",
+    "file": "data/gov_sources/region_cmap_illinois_gov/98ead6_1981MPODesignationLetter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/MPO_bylaws.pdf",
+    "text": "MPO Policy Committee bylaws",
+    "file": "data/gov_sources/region_cmap_illinois_gov/9930e9_MPO_bylaws.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/2026-USDOT-Certification-Review-Finding-Letter.pdf",
+    "text": "Transportation management area certification review (2026)",
+    "file": "data/gov_sources/region_cmap_illinois_gov/73aa4a_2026-USDOT-Certification-Review-Finding-Letter.pdf",
+    "rows": 56,
+    "bike_rows": 34
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/MPO_self-certification.pdf",
+    "text": "Planning process certification (2025)",
+    "file": "data/gov_sources/region_cmap_illinois_gov/da1310_MPO_self-certification.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/Community-Advisory-Committee-bylaws.pdf",
+    "text": "Community Advisory Committee bylaws",
+    "file": "data/gov_sources/region_cmap_illinois_gov/385977_Community-Advisory-Committee-bylaws.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/CMAP_ResourceGuide_Final.pdf",
+    "text": "Council of Mayors Executive Committee resource guide",
+    "file": "data/gov_sources/region_cmap_illinois_gov/cbced8_CMAP_ResourceGuide_Final.pdf",
+    "rows": 604,
+    "bike_rows": 61
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/Municipalities-by-Council.pdf",
+    "text": "planning liaison",
+    "file": "data/gov_sources/region_cmap_illinois_gov/826cf3_Municipalities-by-Council.pdf",
+    "rows": 72,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Climate-Committee-bylaws.pdf",
+    "text": "Climate Committee bylaws",
+    "file": "data/gov_sources/region_cmap_illinois_gov/cc8854_Climate-Committee-bylaws.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/Regional-Economy-Committee-bylaws.pdf",
+    "text": "Regional Economy Committee bylaws",
+    "file": "data/gov_sources/region_cmap_illinois_gov/41b940_Regional-Economy-Committee-bylaws.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/STP_agreement.pdf",
+    "text": "agreement",
+    "file": "data/gov_sources/region_cmap_illinois_gov/4f1a91_STP_agreement.pdf",
+    "rows": 13,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/2027-UWP-Methodology-Approved-07092025.pdf",
+    "text": "UWP development methodology",
+    "file": "data/gov_sources/region_cmap_illinois_gov/8b4863_2027-UWP-Methodology-Approved-07092025.pdf",
+    "rows": 135,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/FY25-UWP-budget.pdf",
+    "text": "FY 25 UWP budget and work plan",
+    "file": "data/gov_sources/region_cmap_illinois_gov/089fc2_FY25-UWP-budget.pdf",
+    "rows": 464,
+    "bike_rows": 91
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/UWP_development_methodology_FY25pdf.pdf",
+    "text": "UWP development methodology",
+    "file": "data/gov_sources/region_cmap_illinois_gov/00edf9_UWP_development_methodology_FY25pdf.pdf",
+    "rows": 213,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/FY22_Q3_UWP-Expenditures-4.1.2022-FINAL.pdf",
+    "text": "FY22 Q3 UWP Expenditure Report (2017-2022)",
+    "file": "data/gov_sources/region_cmap_illinois_gov/f2d27e_FY22_Q3_UWP-Expenditures-4.1.2022-FINAL.pdf",
+    "rows": 63,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/FY22-Q2-UWP-Expenditure-Report-3.18.2022.pdf",
+    "text": "FY22 Q2 UWP Expenditure Report (2017-2022)",
+    "file": "data/gov_sources/region_cmap_illinois_gov/5ac31c_FY22-Q2-UWP-Expenditure-Report-3.18.2022.pdf",
+    "rows": 63,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/UWP-FY22-Q2-Narrative-Report.pdf",
+    "text": "FY22 Q2 UWP Progress Report",
+    "file": "data/gov_sources/region_cmap_illinois_gov/012f13_UWP-FY22-Q2-Narrative-Report.pdf",
+    "rows": 344,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/Q1-FY2022-FINAL-Expenditure.pdf",
+    "text": "FY22 Q1 UWP Expenditure Report (2017-2022)",
+    "file": "data/gov_sources/region_cmap_illinois_gov/f1dde6_Q1-FY2022-FINAL-Expenditure.pdf",
+    "rows": 45,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/UWP-FY22-Q1-Narrative-Report.pdf",
+    "text": "FY22 Q1 UWP Progress Report",
+    "file": "data/gov_sources/region_cmap_illinois_gov/1af0d2_UWP-FY22-Q1-Narrative-Report.pdf",
+    "rows": 335,
+    "bike_rows": 19
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/FY21_Q4_UWP-Expenditures-8.16.2021-FINAL.pdf",
+    "text": "FY21 Q4 UWP Expenditure Report (2016-2021)",
+    "file": "data/gov_sources/region_cmap_illinois_gov/174606_FY21_Q4_UWP-Expenditures-8.16.2021-FINAL.pdf",
+    "rows": 40,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/FY21Q4-UWPRecipients9.1.2021-FINAL.pdf",
+    "text": "FY21 Q4 UWP Progress Report",
+    "file": "data/gov_sources/region_cmap_illinois_gov/a2b38c_FY21Q4-UWPRecipients9.1.2021-FINAL.pdf",
+    "rows": 386,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/FY21_Q3_Expenditures-6.15.2021-FINAL.pdf",
+    "text": "FY21 Q3 UWP Expenditure Report (2016-2021)",
+    "file": "data/gov_sources/region_cmap_illinois_gov/ddfc10_FY21_Q3_Expenditures-6.15.2021-FINAL.pdf",
+    "rows": 46,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/FY21Q3-ALLTable05-09-2021.pdf",
+    "text": "FY21 Q3 UWP Progress Report",
+    "file": "data/gov_sources/region_cmap_illinois_gov/33815b_FY21Q3-ALLTable05-09-2021.pdf",
+    "rows": 346,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/Q2FY21-ALL-Final-03-06-2021.pdf",
+    "text": "FY21 Q2 UWP Progress Report",
+    "file": "data/gov_sources/region_cmap_illinois_gov/80c9ed_Q2FY21-ALL-Final-03-06-2021.pdf",
+    "rows": 374,
+    "bike_rows": 36
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/UWP-Q1-FY2021-Expenditure-Report.pdf",
+    "text": "FY21 Q1 UWP Expenditure Report (2016-2021)",
+    "file": "data/gov_sources/region_cmap_illinois_gov/fc34e1_UWP-Q1-FY2021-Expenditure-Report.pdf",
+    "rows": 67,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/FY21Q1-ALL-Table.pdf",
+    "text": "FY21 Q1 UWP Progress Report",
+    "file": "data/gov_sources/region_cmap_illinois_gov/22499e_FY21Q1-ALL-Table.pdf",
+    "rows": 344,
+    "bike_rows": 26
+   },
+   {
+    "url": "https://cmap.illinois.gov/wp-content/uploads/FY20-UWP-Q4-Expenditures.pdf",
+    "text": "FY20 Q4 UWP Expenditure Report (2015-2020)",
+    "file": "data/gov_sources/region_cmap_illinois_gov/13da3b_FY20-UWP-Q4-Expenditures.pdf",
+    "rows": 47,
+    "bike_rows": 15
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/5f0f4baf5d80417d989cf1edd862ab51/page/Page": "Explore the Regional Capital Projects ext-link Opens in a new tab",
+   "https://cmapgis.maps.arcgis.com/apps/mapviewer/index.html?webmap=08a4d59480b14660ad9f375306677ee9": "web map",
+   "https://storymaps.arcgis.com/stories/6b196397fbe34cd681648749b4137175": "the role of housing rehabilitation StoryMap",
+   "https://storymaps.arcgis.com/stories/88db4e4032674cdd893908446329f229": "mobility recovery report",
+   "https://experience.arcgis.com/experience/5538ecbdef3a45ad9e8ed2f5a18fb225": "Open dashboard in new window ext-link Opens in a new tab",
+   "https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6": "Chicago community areas",
+   "https://survey123.arcgis.com/share/083b403b60a74df8895ca7ade9bc69e0": "Share your feedback",
+   "https://cmap-cmapgis.opendata.arcgis.com/search?categories=%252Fcategories%252Feconomy": "economic data",
+   "https://experience.arcgis.com/experience/d5454628fdb748308693c18ecc12f1b9?org=CMAPGIS": "View tool in new window ext-link Opens in a new tab",
+   "https://web.tplgis.org/chicago_nst/": "Natural Solutions Tool",
+   "https://cmapgis.maps.arcgis.com/apps/mapviewer/index.html?webmap=9406f2f8e3204bbb9a23b4b6df196414": "interactive web map",
+   "https://experience.arcgis.com/experience/f2515ce87d39455d8c6608a4b11b6520/page/CMAP-Data-Explorer/": "Open in new window ext-link Opens in a new tab",
+   "https://cmapgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=7707b4eb13ab4a609645c958d8721876": "Open map in new window ext-link Opens in a new tab",
+   "https://experience.arcgis.com/experience/4fc0cc8c60c641beb306f24dc1ed4d40/": "Open map in new window ext-link Opens in a new tab",
+   "https://gis-idot.opendata.arcgis.com/": "Illinois Department of Transportation Open Data Portal",
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=8a50078365084194a038913a01b67483": "safety tiers,",
+   "https://experience.arcgis.com/experience/4415ff2ee63a4d1ebc5baa0f13ea0f23/": "Open dashboard in new window ext-link Opens in a new tab",
+   "https://experience.arcgis.com/experience/10d11f05cb454eb4a64b2df8a11a5a2e": "View map in separate window ext-link Opens in a new tab"
+  }
+ },
+ "region:drcog.org": {
+  "files": [],
+  "portals": {}
+ },
+ "region:crcog.org": {
+  "files": [],
+  "portals": {
+   "https://gis.crcog.org/portal/apps/sites/": "Mapping & Data"
+  }
+ },
+ "region:mpo.nashville.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "capital:denvergov.org": {
+  "files": [],
+  "portals": {}
+ },
+ "capital:topeka.org": {
+  "files": [],
+  "portals": {}
+ },
+ "capital:helenamt.gov": {
+  "files": [
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/community-development/documents/planning/applications/historicdemoapp2024_fillable.pdf",
+    "text": "Historic Property Demolition Process",
+    "file": "data/gov_sources/capital_helenamt_gov/80c28e_historicdemoapp2024_fillable.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/community-development/documents/preservation/historicneighborhood_design_guildelines.pdf",
+    "text": "Historic Neighborhood Design Guidelines (PDF, 7MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/231830_historicneighborhood_design_guildelines.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/community-development/documents/preservation/downtown_design_guildelines.pdf",
+    "text": "Historic Downtown Design Guidelines (PDF, 7MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/0aded0_downtown_design_guildelines.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/parks-recreation/documents/south-hills-disc-golf-course_smallforpdf.pdf",
+    "text": "South Hills Disc Golf Map (PDF, 2MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/267903_south-hills-disc-golf-course_smallforpdf.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/parks-recreation/documents/city-reccomendations-trail-projects-2025.pdf",
+    "text": "2025 Proposed Major Projects (PDF, 11MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/2a712f_city-reccomendations-trail-projects-2025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/parks-recreation/documents/combined_trail_projects_2020-2021_initial_review.pdf",
+    "text": "Combined Trails Projects 2020-20201 Initial Review (PDF, 3MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/9c5933_combined_trail_projects_2020-2021_initial_review.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/parks-recreation/documents/centennialtrail-optionsforwellness.pdf",
+    "text": "Download Centennial Trail Options for Wellness Map (PDF, 14MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/676934_centennialtrail-optionsforwellness.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/public-works/documents/2022_fper_mtr040000_mod_s-sign.pdf",
+    "text": "General Permit for Storm Water Discharge (PDF, 456KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/ca2c46_2022_fper_mtr040000_mod_s-sign.pdf",
+    "rows": 85,
+    "bike_rows": 27
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/public-works/documents/helena2022ms4noi.pdf",
+    "text": "Notice of Intent for Storm Water Discharge (PDF, 6MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/3a8909_helena2022ms4noi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/public-works/documents/idde_rule.pdf",
+    "text": "Illicit Discharge Detection and Elimination Rule (PDF, 275KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/006c38_idde_rule.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/public-works/documents/howtosubmitcomplaint_23apr.pdf",
+    "text": "How to Submit a Storm Water Illicit Discharge Complaint or a Storm Water Construction Complaint (PDF, 2MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/7c2e1d_howtosubmitcomplaint_23apr.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/parking_citation_appeal_submission_final.pdf",
+    "text": "Parking Ticket Appeal (PDF, 143KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/7b767e_parking_citation_appeal_submission_final.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/transportation/documents/parking_sales_contract-2016.pdf",
+    "text": "Parking Permit Sales (PDF, 120KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/02f774_parking_sales_contract-2016.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/transit/documents/capital-transit-trifold-web.pdf",
+    "text": "Capital-Transit-Trifold-Web.pdf (PDF, 6MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/1ee510_capital-transit-trifold-web.pdf",
+    "rows": 63,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/transit/documents/20250909-tsd-recurring_ride_policy-tpalmerton.pdf",
+    "text": "Recurring Trips Policy 9/2025 (PDF, 93KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/16a58f_20250909-tsd-recurring_ride_policy-tpalmerton.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/transit/documents/11-20-23-ridership-rules.pdf",
+    "text": "Ridership Rules and Responsibilities (PDF, 627KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/ebbfb1_11-20-23-ridership-rules.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/transit/documents/capital-transit-demand-response-policy-8-2026.pdf",
+    "text": "Demand Response Policy 8/2026 (PDF, 639KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/547559_capital-transit-demand-response-policy-8-2026.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.mdt.mt.gov/publications/docs/brochures/transit/transportation-advisory.pdf",
+    "text": "Click Here to Learn More",
+    "file": "data/gov_sources/capital_helenamt_gov/2732e7_transportation-advisory.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/transit/documents/20251007-tsd-coordp-fy27_coordination_plan-tpalmerton.pdf",
+    "text": "Click Here to View Current Transportation coordination plan (PDF, 277KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/97d40e_20251007-tsd-coordp-fy27_coordination_plan-tpalmerton.pdf",
+    "rows": 57,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/parking/20250310-tsd-parking-permit-policy-final.pdf",
+    "text": "Download Parking Permit Billing Statement and Invoicing Policy (PDF, 55KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/bc4ef7_20250310-tsd-parking-permit-policy-final.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/transportation/parking/20240318-tsd-parklet_app.pdf",
+    "text": "Parklet Application (PDF, 159KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/52e991_20240318-tsd-parklet_app.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/transportation/parking/20240318-tsd-parlet-specs.pdf",
+    "text": "Parklet Specifications (PDF, 400KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/cba15a_20240318-tsd-parlet-specs.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/2/government/departments/transportation/parking/20240318-tsd-nep-cond-parklets.pdf",
+    "text": "Non-exclusive Right-of-Way Permit Conditions - Parklets (PDF, 161KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/edfb5b_20240318-tsd-nep-cond-parklets.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/res__20071-_residential_parking_districts.pdf",
+    "text": "here (PDF, 148KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/309525_res__20071-_residential_parking_districts.pdf",
+    "rows": 68,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/rescind_residential_parking_districts_roi_final.pdf",
+    "text": "resolution of intention (PDF, 130KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/cec99f_rescind_residential_parking_districts_roi_final.pdf",
+    "rows": 45,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/procedure_to_remove_residential_parking_district_request.pdf",
+    "text": "this form (PDF, 225KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/373e07_procedure_to_remove_residential_parking_district_request.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/procedure_for_residential_parking_district_request_final.pdf",
+    "text": "this form (PDF, 396KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/77c172_procedure_for_residential_parking_district_request_final.pdf",
+    "rows": 18,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/parking/new-folder/fy27-parking-permit-rate-sheet.pdf",
+    "text": "FY27-Parking-Permit-Rate-Sheet.pdf (PDF, 240KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/21d6b4_fy27-parking-permit-rate-sheet.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/parking/new-folder/visitor-parking-map.pdf",
+    "text": "Visitor-Parking-Map.pdf (PDF, 839KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/0517cb_visitor-parking-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/streetmaps/20260204-tsd-snow_and_ice_plan.pdf",
+    "text": "Snow and Ice Plan (PDF, 1MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/9752ea_20260204-tsd-snow_and_ice_plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/snowroutesareastimes_01.pdf",
+    "text": "snowplow routes and times (PDF, 376KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/62f584_snowroutesareastimes_01.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/streetmaps/springsweepingroutes2026-11x17.pdf",
+    "text": "Click here to view Spring/Summer Sweeping Map (PDF, 1MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/3626f2_springsweepingroutes2026-11x17.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/transportation/documents/streetmaps/20261026-tsd-leaf_map-003.pdf",
+    "text": "Click here to view 2026 Fall Leaf Sweeping Routes/Map (PDF, 680KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/f08847_20261026-tsd-leaf_map-003.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/curbside-recycling/curbside-faq.pdf",
+    "text": "Click here (PDF, 25KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/91a940_curbside-faq.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/curbside-recycling/rfp.citycurbsiderecyclingcollection.aug2025.pdf",
+    "text": "View full RFP here. (PDF, 148KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/f0cbe1_rfp.citycurbsiderecyclingcollection.aug2025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/test-rfp-folder/ezgoin-trail-construction-rfp.pdf",
+    "text": "View the full RFP here (PDF, 4MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/56802e_ezgoin-trail-construction-rfp.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/community-facilities/recycle-bin-mural-call-for-artists.pdf",
+    "text": "Call for Artists - Full Copy (PDF, 163KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/049c1a_recycle-bin-mural-call-for-artists.pdf",
+    "rows": 79,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/community-facilities/recycle-bin-mural-submission-form.pdf",
+    "text": "Recycle Bin Mural Submission Form (PDF, 138KB)",
+    "file": "data/gov_sources/capital_helenamt_gov/ddfe8e_recycle-bin-mural-submission-form.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/business/bids-rfps-rfqs/community-facilities/recycle-bin-template.pdf",
+    "text": "Recycle Bin Mural Template (PDF, 1MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/f2a64c_recycle-bin-template.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.helenamt.gov/files/assets/helena/v/1/government/departments/parks-recreation/documents/goingeztrail_map.pdf",
+    "text": "Click Here to View Project Map (PDF, 15MB)",
+    "file": "data/gov_sources/capital_helenamt_gov/523eb4_goingeztrail_map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/b7b66b91a5af473dbaa95990c20c559b": "Residential Development Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=833371179fcc450498e863be6d530aa4": "Helena Open Lands Trails Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=cd5609869c3f4ef4bf83163dbae32519": "Public Arts Map",
+   "https://storymaps.arcgis.com/stories/7d1cd6b2ba7b4ff0a2e27fb8d6a77155": "City Sustainability Projects Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/instant/media/index.html?appid=276ab8b934214afc9061ec04dabbb211": "Future Land Use Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/instant/media/index.html?appid=29759b54ea3543f8b1255105c613e784": "Helena's Historic Districts",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=dd713d35317d4b80a7ab8dd3bc2ac7ae": "View the Crosstown Connector Project Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=d17150ff597b459493a14700e0860cfc": "Click here to view the interactive GIS map",
+   "https://storymaps.arcgis.com/stories/5a2ce3c8ecad4e14bcfe453fa3798c75": "Tax Increment Financing Projects Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=10873f2c801e4fe1bee87de1db7f7e31": "If your recreational vehicle has been towed, click here to locate it via our interactive towing map.",
+   "https://www.arcgis.com/apps/dashboards/e3bc1a41c8d04daaa867459ec125a2c8": "Vacant Land Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=f825dede730243bf8a622f7e2b814d4d": "Zoning Map",
+   "https://storymaps.arcgis.com/stories/28852a394e9e4fbb970d510d2dbb4ab7": "Tax Increment Financing Projects Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/View/index.html?appid=b14285c0a3e14a1d952258ea86401cd8": "via our GIS tracking map",
+   "https://helenamtmaps.maps.arcgis.com/apps/instant/basic/index.html?appid=51823a9aaac249c280c82b40b4e7e286": "Click here to view Towing Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=d17150ff597b459493a14700e0860cfc&find=lawrence%20&%20warren": "Click Here to View Interactive Project Map.",
+   "https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fhelenamtmaps.maps.arcgis.com%2Fapps%2Fwebappviewer%2Findex.html%3Fid%3Ddd713d35317d4b80a7ab8dd3bc2ac7ae&data=05%7C02%7CAOPITZ%40helenamt.gov%7C33d1669583c348bc58c008de8b56251b%7Cf71022133f944d938972b17e2d49aa8f%7C0%7C0%7C639101399259514008%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=DVrJOEw9s1FpSBZ0lfa6WvTn%2Bk5PRi7eT3OUK%2BdSgfA%3D&reserved=0": "Click Here to View Interactive Project Map.",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=d17150ff597b459493a14700e0860cfc&find=benton%20&%20trail": "Click Here to View Interactive Project Map",
+   "https://helenamtmaps.maps.arcgis.com/apps/webappviewer/index.html?id=d17150ff597b459493a14700e0860cfc&find=westside%20&%20": "Click Here to View Interactive Map"
+  }
+ },
+ "capital:oklahomacity.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "capital:richmondgov.com": {
+  "files": [],
+  "portals": {}
+ },
+ "parks:cpw.state.co.us": {
+  "files": [],
+  "portals": {
+   "https://data.colorado.gov/stories/s/fjyf-bdat": "Transparency Online Project (TOPS)"
+  }
+ },
+ "parks:parks.ky.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "parks:emnrd.nm.gov/spd": {
+  "files": [
+   {
+    "url": "https://api.realfile.rtsclients.com/PublicFiles/4e99eeeeb5b54c41ad6d52e2e78086f6/05cd1eb9-dc54-49f1-973d-8e59dd167d94/11.13.2026%20EMNRD%20unveils%20state's%20first%20Comprehensive%20Energy%20Transition%20Strategy.pdf",
+    "text": "Click Here",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/504d2c_11.13.2026_20EMNRD_20unveils_20state_s_20first_20Comprehensive_20Energ",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/sfd/wp-content/uploads/sites/4/Final_Industry_map_April_2023.pdf",
+    "text": "",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/ea0173_Final_Industry_map_April_2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/Map-Runnels-Building-Location.pdf",
+    "text": "Runnels Building Map",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/bd45fa_Map-Runnels-Building-Location.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/Bottomless-Lakes_SkidmarksTrail-Map_Trifold_with-Logo.pdf",
+    "text": "Brochure with map (PDF)",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/8315e9_Bottomless-Lakes_SkidmarksTrail-Map_Trifold_with-Logo.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/Bluff-Trail_Bottomless-Lakes-SP_05.15.25.pdf",
+    "text": "Bluff Trail",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/b02b75_Bluff-Trail_Bottomless-Lakes-SP_05.15.25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/EBWestLakeshoreTrailGuidereduced.pdf",
+    "text": "West Lakeshore Trail Guide",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/9d87cd_EBWestLakeshoreTrailGuidereduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/EastMeadowTrailGuidereduced.pdf",
+    "text": "East Meadow Trail Guide",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/f8a00f_EastMeadowTrailGuidereduced.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/SalmonRunTrailWebGuide.pdf",
+    "text": "Salmon Run Trail Guide",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/0a3c3d_SalmonRunTrailWebGuide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/HydeTrailsGuide2pg.pdf",
+    "text": "Hyde Memorial State Park Trails Guide",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/3fe396_HydeTrailsGuide2pg.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/SugariteCanyonStateParkTrailGuide.pdf",
+    "text": "Sugarite Canyon Trail Guide",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/799f43_SugariteCanyonStateParkTrailGuide.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/Governance-Report.pdf",
+    "text": "Río Grande Trail Association",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/8dd093_Governance-Report.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/Strategic-Plan-RGTA.pdf",
+    "text": "Río Grande Trail Association",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/25f847_Strategic-Plan-RGTA.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/24th-Rio-Grande-Trail-Commission-Meeting-Minutes.pdf",
+    "text": "Minutes",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/f446bb_24th-Rio-Grande-Trail-Commission-Meeting-Minutes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/2025-09-05-23rd-Rio-Grande-Trail-Commission-Meeting-Packet-reduced.pdf",
+    "text": "Meeting Packet",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/4f5abc_2025-09-05-23rd-Rio-Grande-Trail-Commission-Meeting-Packet-reduced.pdf",
+    "rows": 41,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/Revised-Packet-22nd-Rio_Grande_Trail_Commission-Meeting-2025-06-11-reduced.pdf",
+    "text": "Meeting Packet",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/bcffc8_Revised-Packet-22nd-Rio_Grande_Trail_Commission-Meeting-2025-06-11-red",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/2025-4-11-Rio-Grande-Trail-Commission-Meeting-Agenda.pdf",
+    "text": "Agenda",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/2caee4_2025-4-11-Rio-Grande-Trail-Commission-Meeting-Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/2025-21st-Rio-Grande-Trail-Commission-Meeting-Package-V2.pdf",
+    "text": "Meeting Packet",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/812b8c_2025-21st-Rio-Grande-Trail-Commission-Meeting-Package-V2.pdf",
+    "rows": 249,
+    "bike_rows": 68
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/Agenda_Rio-Grande-Trail-Commission_5-17-2022.pdf",
+    "text": "Agenda",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/5fb830_Agenda_Rio-Grande-Trail-Commission_5-17-2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/Feb15_Rio-Grande-Trail-Commission.pdf",
+    "text": "Agenda",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/3704b7_Feb15_Rio-Grande-Trail-Commission.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/December202018RGTCAgenda.pdf",
+    "text": "Agenda",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/d43b69_December202018RGTCAgenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/RioGrandeTrailPlanningMapdelNorte.pdf",
+    "text": "Map",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/389c06_RioGrandeTrailPlanningMapdelNorte.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/LasCrucestrailmap2016.pdf",
+    "text": "Map",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/e93bb2_LasCrucestrailmap2016.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/Rio-Grande-Trail-Commission-Public-Notice.pdf",
+    "text": "Public Notice",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/272fec_Rio-Grande-Trail-Commission-Public-Notice.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Clayton-Lake_Map_Park_2023.pdf",
+    "text": "Park Map",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/94efa2_Clayton-Lake_Map_Park_2023.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "http://www.emnrd.nm.gov/wp-content/uploads/December202018RGTCAgenda.pdf",
+    "text": "Agenda",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/f4d11c_December202018RGTCAgenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.emnrd.nm.gov/wp-content/uploads/RioGrandeTrailPlanningMapdelNorte.pdf",
+    "text": "Map",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/59b703_RioGrandeTrailPlanningMapdelNorte.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.emnrd.nm.gov/wp-content/uploads/LasCrucestrailmap2016.pdf",
+    "text": "Map",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/350a74_LasCrucestrailmap2016.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.emnrd.nm.gov/wp-content/uploads/Rio-Grande-Trail-Commission-Public-Notice.pdf",
+    "text": "Public Notice",
+    "file": "data/gov_sources/parks_emnrd_nm_gov_spd/c57225_Rio-Grande-Trail-Commission-Public-Notice.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://ocd-hub-nm-emnrd.hub.arcgis.com/": "OCD Geospatial Hub",
+   "https://nm-emnrd.maps.arcgis.com/apps/dashboards/62bcdd702733495e9ea7bf082b856e5f": "Forest Health Dashboard",
+   "https://nm-emnrd.maps.arcgis.com/apps/dashboards/e882d2ccd57e4a99bc6d2a4314fcd3bb": "Click Here",
+   "https://emnrd.nm.gov/opendata": "Close",
+   "https://emnrd.nm.gov/open-data": "Close",
+   "https://nm-emnrd.maps.arcgis.com/apps/webappviewer/index.html?id=5f80f3b0faa545e58fe747cc7b037a93": "",
+   "https://nm-emnrd.maps.arcgis.com/apps/webappviewer/index.html?id=6d4b64a5752f4b4bb53000e999ff6a24": "",
+   "https://nm-emnrd.maps.arcgis.com/apps/MapJournal/index.html?appid=1b5f929bad424bf7870e2148e3ff64de": "",
+   "https://storymaps.arcgis.com/stories/6933db14ba334d76bef27745888b7998": "",
+   "https://storymaps.arcgis.com/stories/a3d423ce020c400db124f0a0b6fae76f": "",
+   "https://nmenv.maps.arcgis.com/apps/dashboards/690621694d4e4906b2ae2886f528eec1": "",
+   "https://experience.arcgis.com/experience/d55ac019c4b34cadb437fd6ddab62861?org=NMHU": "",
+   "https://experience.arcgis.com/experience/0735420ce5d04bf3ab89b49d1597adbb": "",
+   "https://experience.arcgis.com/experience/6339d8faf734479382810367893a4d48": "",
+   "https://experience.arcgis.com/experience/728f65f1c7fa43478ebabb7358c676ea": "",
+   "https://experience.arcgis.com/experience/eb59b1fa5d864124983fae28a128819c": "Direct link to map",
+   "https://www.nmlegis.gov/Members/Legislator?SponCode=SSTEI": "Santa Fe, New Mexico 87503",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.nmlegis.gov%2FMembers%2FLegislator%3FSponCode%3DSSTEI&data=05%7C02%7CHarold.Caba%40emnrd.nm.gov%7C82826abf8f1043aa5fee08df2e007576%7C04aa6bf4d436426fbfa404b7a70e60ff%7C0%7C0%7C639280251666314580%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=9cNMq2qX6EhMU6IfKOMmTzOS%2F6IUKcojWPumDV%2FF2ns%3D&reserved=0": "Senator Jeff Steinborn, Chair",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.nmlegis.gov%2Fmembers%2FLegislator%3FSponCode%3DHFERJ&data=05%7C02%7CHarold.Caba%40emnrd.nm.gov%7C82826abf8f1043aa5fee08df2e007576%7C04aa6bf4d436426fbfa404b7a70e60ff%7C0%7C0%7C639280251666338734%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=zZ7WFjR3Sp6m9axut3kLTwpWzlwNSYqjoocSBLXanHQ%3D&reserved=0": "Representative Vacant, Vice Chair",
+   "https://nm-emnrd.maps.arcgis.com/apps/instant/basic/index.html?appid=d88dd679863d45c0a68e3aa9f96719b9": "Online IA Map (2023) Click here",
+   "https://experience.arcgis.com/experience/db263522859849a29be0dfd71f183f4f": "Direct link to map"
+  }
+ },
+ "parks:gfp.sd.gov": {
+  "files": [
+   {
+    "url": "https://gfp.sd.gov/userdocs/blackhillsmap2026.pdf",
+    "text": "Black Hills Snowmobile Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/b35264_blackhillsmap2026.pdf",
+    "rows": 18,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/eastrivertrails2026.pdf",
+    "text": "East River Snowmobile trail map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/914ba9_eastrivertrails2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/csp_trail_mix.pdf",
+    "text": "Custer State Park Trail Guide",
+    "file": "data/gov_sources/parks_gfp_sd_gov/7c7f21_csp_trail_mix.pdf",
+    "rows": 76,
+    "bike_rows": 37
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/black-elk-peak2018.pdf",
+    "text": "Black Elk Peak Area Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/6a5c8e_black-elk-peak2018.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/centennial-trail-brochure.pdf",
+    "text": "Centennial Trail Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/1744ac_centennial-trail-brochure.pdf",
+    "rows": 45,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/docs/CSP_equestrian_trails.pdf",
+    "text": "Custer State Park Horse Trails Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/2adc7c_CSP_equestrian_trails.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/great-lakes-birding-trail.pdf",
+    "text": "Great Lakes Birding Trail",
+    "file": "data/gov_sources/parks_gfp_sd_gov/32b347_great-lakes-birding-trail.pdf",
+    "rows": 174,
+    "bike_rows": 48
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/BHBadlands-birding-trail.pdf",
+    "text": "Black Hills and Badlands Birding Trails",
+    "file": "data/gov_sources/parks_gfp_sd_gov/f81bbe_BHBadlands-birding-trail.pdf",
+    "rows": 29,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/glacial-lakes-birding.pdf",
+    "text": "Glacial Lakes Birding Trail",
+    "file": "data/gov_sources/parks_gfp_sd_gov/e7ea3e_glacial-lakes-birding.pdf",
+    "rows": 21,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/southeast-birding-trail.pdf",
+    "text": "Southeast Birding Trail",
+    "file": "data/gov_sources/parks_gfp_sd_gov/36f3bc_southeast-birding-trail.pdf",
+    "rows": 19,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/images/Reference_Maps/StaffMaps/PLBStaff.pdf",
+    "text": "Private Lands Biologists PDF",
+    "file": "data/gov_sources/parks_gfp_sd_gov/2913b2_PLBStaff.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/images/Reference_Maps/StaffMaps/AHABStaff.pdf",
+    "text": "Aquatic Habitat and Access Biologists PDF",
+    "file": "data/gov_sources/parks_gfp_sd_gov/0faa4f_AHABStaff.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/images/Reference_Maps/StaffMaps/WDMStaff.pdf",
+    "text": "Wildlife Damage Specialists PDF",
+    "file": "data/gov_sources/parks_gfp_sd_gov/81f36d_WDMStaff.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/images/Reference_Maps/StaffMaps/LEStaff_Public.pdf",
+    "text": "Law Enforcement PDF",
+    "file": "data/gov_sources/parks_gfp_sd_gov/96d3d1_LEStaff_Public.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/images/Reference_Maps/StaffMaps/HabitatAdvisorStaff.pdf",
+    "text": "Habitat Advisors PDF",
+    "file": "data/gov_sources/parks_gfp_sd_gov/a38dca_HabitatAdvisorStaff.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/images/Guides/Public_ArcGISFieldMaps/HowTo_ArcGISFieldMaps.pdf",
+    "text": "Download How-To",
+    "file": "data/gov_sources/parks_gfp_sd_gov/9ed140_HowTo_ArcGISFieldMaps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/gsmt_brochure.pdf",
+    "text": "Trail Guide",
+    "file": "data/gov_sources/parks_gfp_sd_gov/11a610_gsmt_brochure.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/lc_cg_with_trails.pdf",
+    "text": "Campground Overview Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/0a5137_lc_cg_with_trails.pdf",
+    "rows": 10,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/lc_trails.pdf",
+    "text": "Trail Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/d5d58b_lc_trails.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/lc_disc_golf.pdf",
+    "text": "Disc Golf Course Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/4c1698_lc_disc_golf.pdf",
+    "rows": 9,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/lc_hunting_range.pdf",
+    "text": "Hunting Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/f842ee_lc_hunting_range.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/lewis-and-clark.pdf",
+    "text": "Location Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/60bc76_lewis-and-clark.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/clay_cg.pdf",
+    "text": "Clay County Campground Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/70e211_clay_cg.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/clay_trails.pdf",
+    "text": "Clay County Trail Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/48fdcf_clay_trails.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/midway_cg.pdf",
+    "text": "Midway Section Campground Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/ef6952_midway_cg.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/yankton_cg.pdf",
+    "text": "Yankton Section Campground Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/a0eff7_yankton_cg.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/gavins_cg.pdf",
+    "text": "Gavins Point Section Campground Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/dbeefc_gavins_cg.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/newton_hills_overview.pdf",
+    "text": "Overview Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/633a16_newton_hills_overview.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/newton_cg.pdf",
+    "text": "Campground Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/24d857_newton_cg.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/newton-hills-cc-ski-map.pdf",
+    "text": "Cross country ski map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/f9c3c6_newton-hills-cc-ski-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/newton_trails.pdf",
+    "text": "Trail Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/d094ae_newton_trails.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/ow_cg1_handout.pdf",
+    "text": "Campground #1 Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/bcf517_ow_cg1_handout.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/ow_overview_handout.pdf",
+    "text": "Overview Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/2a7e10_ow_overview_handout.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/ow_cg2_handout.pdf",
+    "text": "Campground #2 Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/54b57d_ow_cg2_handout.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/oakwood-disc_2020.pdf",
+    "text": "Disc Golf Course Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/bae1f3_oakwood-disc_2020.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/ow_trail_handout.pdf",
+    "text": "Trails Map and Guide",
+    "file": "data/gov_sources/parks_gfp_sd_gov/dbce3a_ow_trail_handout.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/pease_cg.pdf",
+    "text": "Campground Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/e0a515_pease_cg.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/lower_francis_case_area_parks.pdf",
+    "text": "Lower Lake Francis Case Parks Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/e3fa4c_lower_francis_case_area_parks.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/pease_creek_hunting.pdf",
+    "text": "Hunting Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/80bd59_pease_creek_hunting.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gfp.sd.gov/userdocs/pelican_cg.pdf",
+    "text": "Campground Map",
+    "file": "data/gov_sources/parks_gfp_sd_gov/63bed5_pelican_cg.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/381c89fee7744feeb2cfce60fb1a715e": "Public Hunting Atlas",
+   "https://experience.arcgis.com/experience/fa1e6cd335d8425183944b9f1a03e01e": "Public Water Access",
+   "https://sdgfp.maps.arcgis.com/apps/instant/nearby/index.html?appid=344abb2780ec4198aa30e6992111e4a1&distance=5": "Urban and Community Fisheries",
+   "https://sdgfp.maps.arcgis.com/apps/instant/nearby/index.html?appid=a4634748440d472da36a6d2e3015366e": "Fish Management Agreement Access Areas",
+   "https://sdgfp.maps.arcgis.com/apps/dashboards/42f68f5086c74415ac2e4434518baa1a": "Printable Hunting Atlas by County",
+   "https://experience.arcgis.com/experience/a584653120d64ca2a2612d56d1c8c1d6": "Paper Hunting Atlas Updates",
+   "https://sdgfp.maps.arcgis.com/apps/dashboards/adb1aa88fa894c4fbf2bb077843bfc7f": "Controlled Hunting Access Program (CHAP)",
+   "https://experience.arcgis.com/experience/b55a26baa2684964b63c3257ecd16a2a": "Aquatic Access Public Comment Recorder",
+   "https://experience.arcgis.com/experience/9aeceb65965d42a4b56230348103ecc3/page/Home": "Public Hunting Land Comment Recorder",
+   "https://experience.arcgis.com/experience/fa1e6cd335d8425183944b9f1a03e01e/page/Waterfowl": "Waterfowl Hunting Access",
+   "https://sdgfp.maps.arcgis.com/apps/dashboards/3943fd289e81465b9fd216c93f8f22bc": "Lower Oahe Waterfowl Access",
+   "https://sdgfp.maps.arcgis.com/apps/dashboards/5edfffcc5df442e78e82f046942abc63": "Nonmeandered Water Closures",
+   "https://experience.arcgis.com/experience/9a0da2bfeac74672b57fc3c9d3215166": "Antelope Hunting Units",
+   "https://experience.arcgis.com/experience/675f973e1065450699b024286fe9fd02": "Bighorn Sheep Hunting Units",
+   "https://experience.arcgis.com/experience/eab1f1f8a7c34cd89b9777c6e786f08b": "Deer Hunting Units",
+   "https://experience.arcgis.com/experience/bfdaf6908845480a88781302af47505b": "Elk Hunting Units",
+   "https://experience.arcgis.com/experience/7119397d77fb4efd990c615131a9fee4": "Mountain Goat Hunting Units",
+   "https://experience.arcgis.com/experience/8a5fb15e84444889bb337bf257d35dbc": "Mountain Lion Hunting Units",
+   "https://experience.arcgis.com/experience/ecf60ddc6b274dc1b3ef2d8192bc43e5": "Turkey Hunting Units",
+   "https://experience.arcgis.com/experience/34ffc6b72c81468ea18780bf6180c38b": "Waterfowl Hunting Zones & Units",
+   "https://sdgfp.maps.arcgis.com/apps/instant/portfolio/index.html?appid=04f2130d4d5c44edbd93d9ee5c83c294": "Antelope Harvest",
+   "https://sdgfp.maps.arcgis.com/apps/instant/portfolio/index.html?appid=c74a89ee784645a08cf5fe0de38172eb": "Deer Harvest",
+   "https://sdgfp.maps.arcgis.com/apps/instant/portfolio/index.html?appid=e9f6c02b052b4802a031d8b53ea64c0e": "Elk Harvest",
+   "https://sdgfp.maps.arcgis.com/apps/dashboards/621961eb0c934475824d325e0c201721": "Pheasant Harvest",
+   "https://sdgfp.maps.arcgis.com/apps/dashboards/54bd95c19c514870882b86b085f92495": "Prairie Grouse Harvest",
+   "https://sdgfp.maps.arcgis.com/apps/instant/portfolio/index.html?appid=d1ff521f8d8f4f169dd61f34e66b151e": "Turkey Harvest",
+   "https://sdgfp.maps.arcgis.com/apps/instant/minimalist/index.html?appid=b74d23a2dd244b1992b9023741ba07af ": "State Parks and Trails",
+   "https://sdgfp.maps.arcgis.com/apps/instant/basic/index.html?appid=15ad00a3e819447aa680baccc73327b5": "Statewide Snowmobile Trails",
+   "https://sdgfp.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=69fbb5bb3dda4a43b78207b56130b135": "Jay Heath Canoe and Kayak Trail",
+   "https://sdgfp.maps.arcgis.com/apps/dashboards/8a334bc48b16451fa71c53539704da6e": "Birding Trails"
+  }
+ },
+ "gis:gis.data.alaska.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "gis:gis.idaho.gov": {
+  "files": [
+   {
+    "url": "https://trails.idaho.gov/wp-content/uploads/activities/biking/2018-05_IDStateParks-ACARoute-Map.pdf",
+    "text": "Bicycle Tourism Map",
+    "file": "data/gov_sources/gis_gis_idaho_gov/cbbbb8_2018-05_IDStateParks-ACARoute-Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://trails.idaho.gov/wp-content/uploads/r-and-r/Vendors-Renew-a-Boat-Registration.pdf",
+    "text": "Renew Boat Registration",
+    "file": "data/gov_sources/gis_gis_idaho_gov/22b965_Vendors-Renew-a-Boat-Registration.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.idaho.gov/wp-content/uploads/2021/04/20210225-Getting-Started-with-Story-Maps-Handout.pdf",
+    "text": "workbook",
+    "file": "data/gov_sources/gis_gis_idaho_gov/2d265f_20210225-Getting-Started-with-Story-Maps-Handout.pdf",
+    "rows": 14,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://gis.idaho.gov/wp-content/uploads/2021/07/Maps-for-Office-Workbook.pdf",
+    "text": "workbook",
+    "file": "data/gov_sources/gis_gis_idaho_gov/4d009f_Maps-for-Office-Workbook.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.idaho.gov/wp-content/uploads/DataStandards/GeologicMap-Data-Standard.pdf",
+    "text": "Standard",
+    "file": "data/gov_sources/gis_gis_idaho_gov/1d6114_GeologicMap-Data-Standard.pdf",
+    "rows": 307,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://gis.idaho.gov/wp-content/uploads/DataNominations/GeologicMap-Layer-Nomination.pdf",
+    "text": "Nomination",
+    "file": "data/gov_sources/gis_gis_idaho_gov/b4d9d8_GeologicMap-Layer-Nomination.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.idaho.gov/wp-content/uploads/DataStandards/Idaho-Trails-Data-Standard-V2.pdf",
+    "text": "Trails Standard",
+    "file": "data/gov_sources/gis_gis_idaho_gov/f29f61_Idaho-Trails-Data-Standard-V2.pdf",
+    "rows": 54,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://gis.idaho.gov/wp-content/uploads/DataNominations/Idaho-Trails-Nomination.pdf",
+    "text": "Trail Nomination",
+    "file": "data/gov_sources/gis_gis_idaho_gov/1115fb_Idaho-Trails-Nomination.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.idl.idaho.gov/wp-content/uploads/sites/2/news-media/2018-releases/land-transaction-review-report.pdf",
+    "text": "Historic Land Transaction Review Final Report, December 4, 2018",
+    "file": "data/gov_sources/gis_gis_idaho_gov/6ec59b_land-transaction-review-report.pdf",
+    "rows": 44,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.idl.idaho.gov/wp-content/uploads/sites/2/news-media/2018-releases/12-4-2018-report-confirms-no-widespread-violation-of-constitution-past-land-sales.pdf",
+    "text": "News Release: Report confirms no widespread violation of constitutional limitations on historic state land sales, Decemb",
+    "file": "data/gov_sources/gis_gis_idaho_gov/f63853_12-4-2018-report-confirms-no-widespread-violation-of-constitution-past",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.idl.idaho.gov/wp-content/uploads/sites/2/2022/07/Forest-Protective-District-Maps-Flyer.pdf",
+    "text": "DOWNLOAD A FLYER FOR SHARING THIS WEBPAGE",
+    "file": "data/gov_sources/gis_gis_idaho_gov/aa07ba_Forest-Protective-District-Maps-Flyer.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.idl.idaho.gov/wp-content/uploads/sites/2/2023/09/MaggieCreekFPD.pdf",
+    "text": "Download the Maggie Creek Map - 9.1 MB",
+    "file": "data/gov_sources/gis_gis_idaho_gov/9cc56f_MaggieCreekFPD.pdf",
+    "rows": 30,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/activities/biking/2018-05_IDStateParks-ACARoute-Map.pdf",
+    "text": "Bicycle Tourism Map",
+    "file": "data/gov_sources/gis_gis_idaho_gov/54f5c1_2018-05_IDStateParks-ACARoute-Map.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/Board-District-Map-10.2.24.pdf",
+    "text": "Click here to see a map of the board districts and their associated counties.",
+    "file": "data/gov_sources/gis_gis_idaho_gov/c58c4d_Board-District-Map-10.2.24.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/Location-Map-Coeur-dAlene-Lake-Parkway-State-Park-2-2009-2.pdf",
+    "text": "Park Map",
+    "file": "data/gov_sources/gis_gis_idaho_gov/7467a8_Location-Map-Coeur-dAlene-Lake-Parkway-State-Park-2-2009-2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/parks/coeurd-alenes-old-mission/Old-Mission-State-Park-Year-Around-Trail-2-2009.pdf",
+    "text": "View PDF",
+    "file": "data/gov_sources/gis_gis_idaho_gov/1d190d_Old-Mission-State-Park-Year-Around-Trail-2-2009.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/parks/dworshak/Location-Map-Dworshak-State-Park-2-2009.pdf",
+    "text": "Location Map",
+    "file": "data/gov_sources/gis_gis_idaho_gov/e645c0_Location-Map-Dworshak-State-Park-2-2009.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/parks/dworshak/Dworkshak-STate-Park-2020-V4.pdf",
+    "text": "Park Facility Map",
+    "file": "data/gov_sources/gis_gis_idaho_gov/2a2f6e_Dworkshak-STate-Park-2020-V4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/Dworshak-Reservoir-map-USACE.pdf",
+    "text": "USACE Reservoir Map",
+    "file": "data/gov_sources/gis_gis_idaho_gov/817d37_Dworshak-Reservoir-map-USACE.pdf",
+    "rows": 18,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/Disc-Golf-Map.pdf",
+    "text": "Disc Golf Course Maps",
+    "file": "data/gov_sources/gis_gis_idaho_gov/76af48_Disc-Golf-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/Winter-Trails-Map.pdf",
+    "text": "View PDF",
+    "file": "data/gov_sources/gis_gis_idaho_gov/ed30f0_Winter-Trails-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/Farragut-Summer-Trail-Map.pdf",
+    "text": "View PDF",
+    "file": "data/gov_sources/gis_gis_idaho_gov/692647_Farragut-Summer-Trail-Map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/Farragut_State_Park_Archery_Season_Map-2025.pdf",
+    "text": "2025 Farragut State Park Archery Season Map",
+    "file": "data/gov_sources/gis_gis_idaho_gov/4d40dd_Farragut_State_Park_Archery_Season_Map-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/2024-Farragut-Facility-Map.pdf",
+    "text": "2024 Farragut Facility Map",
+    "file": "data/gov_sources/gis_gis_idaho_gov/a8f793_2024-Farragut-Facility-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/parks/hells-gate/Location-Map-Hells-Gate-State-Park-2-2009.pdf",
+    "text": "Location Map",
+    "file": "data/gov_sources/gis_gis_idaho_gov/a9554f_Location-Map-Hells-Gate-State-Park-2-2009.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/parks/hells-gate/hells_gate_state_park_lewiston_id.pdf",
+    "text": "Park Overview / Campground Map",
+    "file": "data/gov_sources/gis_gis_idaho_gov/a224e0_hells_gate_state_park_lewiston_id.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parksandrecreation.idaho.gov/wp-content/uploads/parks/hells-gate/Hells-Gate-Trails-map-and-brochure-18-May-2018.pdf",
+    "text": "View PDF",
+    "file": "data/gov_sources/gis_gis_idaho_gov/f7b4d0_Hells-Gate-Trails-map-and-brochure-18-May-2018.pdf",
+    "rows": 27,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://gis.idaho.gov": "Skip to main content",
+   "https://gis.idaho.gov/contact-us": "Contact Us",
+   "https://gis.idaho.gov/": "Idaho Geospatial Office Home",
+   "https://gis.idaho.gov/gis-coordination-in-idaho": "coordinate GIS activities",
+   "https://gis.idaho.gov/meet-the-igcec": "Meet the IGC-EC",
+   "https://gis.idaho.gov/idaho-gis-strategic-plan": "Office of the GIO Strategic Overview",
+   "https://gis.idaho.gov/gis-services-for-state-agencies": "GIS services",
+   "https://gis.idaho.gov/idaho-framework": "IGC Working Groups",
+   "https://gis.idaho.gov/administrative-boundaries-technical-working-group": "Administrative Boundaries",
+   "https://gis.idaho.gov/bioscience-technical-working-group": "Bioscience",
+   "https://gis.idaho.gov/cadastral-technical-working-group": "Cadastral",
+   "https://gis.idaho.gov/climate-technical-working-group": "Climate",
+   "https://gis.idaho.gov/elevation-technical-working-group": "Elevation",
+   "https://gis.idaho.gov/https-gis-idaho-gov-energy-utilities-twg": "Energy & Utilities",
+   "https://gis.idaho.gov/geodetic-control-technical-work-group": "Geodetic Control",
+   "https://gis.idaho.gov/geoscience-technical-working-group": "Geoscience",
+   "https://gis.idaho.gov/hazards-technical-working-group": "Hazards",
+   "https://gis.idaho.gov/people-technical-working-group": "Human Interest",
+   "https://gis.idaho.gov/hydrography-technical-working-group": "Hydrography",
+   "https://gis.idaho.gov/imagery-technical-working-group": "Imagery",
+   "https://gis.idaho.gov/land-use-land-cover-technical-working-group": "Land Use & Land Cover",
+   "https://gis.idaho.gov/parcel-technical-working-group-standard": "Parcel",
+   "https://gis.idaho.gov/public-safety-technical-working-group": "Public Safety",
+   "https://gis.idaho.gov/reference-technical-working-group": "Reference",
+   "https://gis.idaho.gov/https-gis-idaho-gov-transportation-twg": "Transportation",
+   "https://gis.idaho.gov/events": "Events Calendar",
+   "https://gis.idaho.gov/gis-links": "GIS Links",
+   "https://gis-idaho.hub.arcgis.com/": "",
+   "https://experience.arcgis.com/experience/91e37b54c61745f5a51bb12f2d4d1e20": "",
+   "https://experience.arcgis.com/experience/74f4f1fa66b741658828985666c862f9": "The Idaho Map"
+  }
+ },
+ "gis:maris.state.ms.us": {
+  "files": [],
+  "portals": {}
+ },
+ "gis:gishubdata.nd.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "gis:gis.utah.gov": {
+  "files": [],
+  "portals": {
+   "https://gis.utah.gov/blog/2026-10-06-turn-gps-and-nevadagps-scheduled-maintenance/": "View status",
+   "https://gis.utah.gov/products/": "See more  \n→",
+   "https://gis.utah.gov/solutions/": "What can we help you solve We build solutions for state government and beyond. Let us help you. →",
+   "https://gis.utah.gov/collaboration/": "See more  \n→",
+   "https://gis.utah.gov/blog/2026-11-16-utah-sgid-statewide-roads-data-layer-updates/": "Nov 16 Utah SGID Statewide Roads Data Layer Updates (1 min) UGRC recently completed updates to the SGID Roads data layer",
+   "https://gis.utah.gov/blog/2026-10-06-navigating-the-nsrs-modernization/": "Oct 20 Navigating the NSRS Modernization: Preparing Utah for NATRF2022 and SPCS2022 (5 min) The National Geodetic Survey",
+   "https://gis.utah.gov/blog/2026-10-13-utah-sgid-statewide-roads-data-layer-updates/": "Oct 13 Utah SGID Statewide Roads Updates and More! (3 min) UGRC recently upgraded several of the tools that we use to pr",
+   "https://gis.utah.gov/blog/": "Read more news  \n→",
+   "https://opendata.gis.utah.gov/": "Explore Utah data on ArcGIS Download and use web services in your maps, apps, and projects.",
+   "https://gis.utah.gov/rss.xml": "UGRC RSS, opens in a new tab",
+   "https://github.com/agrc/gis.utah.gov/blob/main/.github/contributing.md": "Content contributing guide",
+   "https://gis.utah.gov/about/media/": "Logos and media resources",
+   "https://gis.utah.gov/documentation/policy/": "UGRC Policies",
+   "https://gis.utah.gov/about/code/": "GIS-related Utah statute",
+   "https://github.com/agrc/gis.utah.gov/commit/786a4ea0": "786a4ea0",
+   "https://github.com/agrc/gis.utah.gov/tree/main/src/pages/index.astro": "Edit this page",
+   "https://gis.utah.gov/collaboration/community/contributors/": "Contributors",
+   "https://github.com/agrc/gis.utah.gov/issues/new": "Report an issue , opens in a new tab",
+   "https://gis.utah.gov/ThirdPartyNotices.txt": "Third-party Notices"
+  }
+ }
+}
