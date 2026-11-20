@@ -1,0 +1,2315 @@
+{
+ "state:fdot.gov": {
+  "files": [
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/statistics/multimodaldata/multimodal/nationalpipelinemappingsystemnpms.pdf?sfvrsn=5fadc092_2",
+    "text": "Pipeline Data Profile (1)",
+    "file": "data/gov_sources/state_fdot_gov/220b7a_nationalpipelinemappingsystemnpms.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/statistics/docs/polk-county-freight-facility-pilot-report-may-2018.pdf?sfvrsn=a5d3c67e_0",
+    "text": "Polk County Freight Facility Pilot Project",
+    "file": "data/gov_sources/state_fdot_gov/9169e8_polk-county-freight-facility-pilot-report-may-2018.pdf",
+    "rows": 806,
+    "bike_rows": 26
+   },
+   {
+    "url": "https://ftp.fdot.gov/public/file/rke1raggv0odfjbdh-dcfg/Basemap_arcs.zip",
+    "text": "Basemap Arcs - 12.3 MB Zip File",
+    "file": "data/gov_sources/state_fdot_gov/a5d556_Basemap_arcs.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ftp.fdot.gov/public/file/8nycyalacecvnxtikqzyza/Basemap_routes.zip",
+    "text": "Basemap Routes - 10.0 MB Zip File",
+    "file": "data/gov_sources/state_fdot_gov/0e9067_Basemap_routes.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ftp.fdot.gov/public/file/tre5abfprus5tzut5sg2kg/basemap_route_road.zip",
+    "text": "Basemap Routes with Measures - 10.1 MB Zip File",
+    "file": "data/gov_sources/state_fdot_gov/24821a_basemap_route_road.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ftp.fdot.gov/public/file/ypci7m9l9ukibvkvpzkeug/scenic_highways.zip",
+    "text": "Scenic Highways - 268 KB Zip File",
+    "file": "data/gov_sources/state_fdot_gov/cd143b_scenic_highways.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ftp.fdot.gov/public/file/b2gij91jfu-qmbsryjczva/ttms.zip",
+    "text": "Telemetered Traffic Monitoring Sites - 82.6 KB Zip File",
+    "file": "data/gov_sources/state_fdot_gov/f1b269_ttms.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ftp.fdot.gov/public/file/a7rmpj1qjuiqgpf2cczp2q/bike_lane.zip",
+    "text": "Bicycle Lanes - 1.20 MB Zip File",
+    "file": "data/gov_sources/state_fdot_gov/05e3eb_bike_lane.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ftp.fdot.gov/public/file/yfqoegtyvuwvstehgpmxzq/bike_slot.zip",
+    "text": "Bicycle Slots - 1.20 MB Zip File",
+    "file": "data/gov_sources/state_fdot_gov/859a20_bike_slot.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://ftp.fdot.gov/public/file/rsp1z3wjykcth_ip3bzmbw/shared_path.zip",
+    "text": "Shared Path Width and Separation - 308 KB Zip File",
+    "file": "data/gov_sources/state_fdot_gov/58a75e_shared_path.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/current-state-map/current-state-map.pdf?sfvrsn=90517147_17",
+    "text": "Florida Official Transportation Map",
+    "file": "data/gov_sources/state_fdot_gov/92445e_current-state-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/geospatial/documentsandpubs/flcountiesindex.pdf?sfvrsn=a40c6f0a_2",
+    "text": "County Index Map (2 MB)",
+    "file": "data/gov_sources/state_fdot_gov/19696f_flcountiesindex.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/fdot-district-boundaries.pdf?sfvrsn=dd564845_6",
+    "text": "District Index Map (1 MB)",
+    "file": "data/gov_sources/state_fdot_gov/848b59_fdot-district-boundaries.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/alachua_2022.pdf?sfvrsn=ef04f355_1",
+    "text": "Alachua_2022.pdf",
+    "file": "data/gov_sources/state_fdot_gov/e46f47_alachua_2022.pdf",
+    "rows": 18,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/baker_2026.pdf?sfvrsn=8a3ea0ba_1",
+    "text": "Baker_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/7e275f_baker_2026.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/bay_2026.pdf?sfvrsn=aac94ca6_6",
+    "text": "Bay_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/bb4f91_bay_2026.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/bradford_2026.pdf?sfvrsn=c1a345d9_1",
+    "text": "Bradford_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/598aa7_bradford_2026.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/brevard_2026.pdf?sfvrsn=f254ccc5_1",
+    "text": "Brevard_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/ab304d_brevard_2026.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/broward_2022.pdf?sfvrsn=b48ee80b_1",
+    "text": "Broward_2022.pdf",
+    "file": "data/gov_sources/state_fdot_gov/922676_broward_2022.pdf",
+    "rows": 27,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/calhoun_2018.pdf?sfvrsn=32f0c9c6_1",
+    "text": "Calhoun_2018.pdf",
+    "file": "data/gov_sources/state_fdot_gov/6a3ac8_calhoun_2018.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/charlotte_2026.pdf?sfvrsn=de3ba936_1",
+    "text": "Charlotte_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/1f5576_charlotte_2026.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/citrus_2026.pdf?sfvrsn=ec8e6039_1",
+    "text": "Citrus_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/d8f671_citrus_2026.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/clay_2017.pdf?sfvrsn=2cf1eab8_1",
+    "text": "Clay_2017.pdf",
+    "file": "data/gov_sources/state_fdot_gov/4f63f6_clay_2017.pdf",
+    "rows": 26,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/columbia_2026.pdf?sfvrsn=837fff68_2",
+    "text": "Columbia_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/2575d8_columbia_2026.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/desoto_2026.pdf?sfvrsn=c2aadf35_1",
+    "text": "DeSoto_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/6bccc2_desoto_2026.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/dixie_2026.pdf?sfvrsn=5c3e4163_3",
+    "text": "Dixie_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/ad0d45_dixie_2026.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/duval_2022.pdf?sfvrsn=a7f783b2_1",
+    "text": "Duval_2022.pdf",
+    "file": "data/gov_sources/state_fdot_gov/623bce_duval_2022.pdf",
+    "rows": 18,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/escambia_2026.pdf?sfvrsn=6c773ce5_1",
+    "text": "Escambia_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/0f76b8_escambia_2026.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/flagler_2026.pdf?sfvrsn=921ad4f2_1",
+    "text": "Flagler_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/bcd475_flagler_2026.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/franklin_2026.pdf?sfvrsn=a0b974bc_1",
+    "text": "Franklin_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/b768e3_franklin_2026.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/gadsden_2026.pdf?sfvrsn=1b28fabe_1",
+    "text": "Gadsden_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/468df0_gadsden_2026.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/glades_2019.pdf?sfvrsn=8fa821b4_1",
+    "text": "Glades_2019.pdf",
+    "file": "data/gov_sources/state_fdot_gov/31c13d_glades_2019.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/gulf_2026.pdf?sfvrsn=b6a816cf_1",
+    "text": "Gulf_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/79840b_gulf_2026.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/hamilton_2019.pdf?sfvrsn=a2a8493c_1",
+    "text": "Hamilton_2019.pdf",
+    "file": "data/gov_sources/state_fdot_gov/ddcf85_hamilton_2019.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/hardee_2026.pdf?sfvrsn=922b1c8f_1",
+    "text": "Hardee_2026.pdf",
+    "file": "data/gov_sources/state_fdot_gov/d87ec3_hardee_2026.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/co-gis/countymaps/hendry_2019.pdf?sfvrsn=fb078465_1",
+    "text": "Hendry_2019.pdf",
+    "file": "data/gov_sources/state_fdot_gov/ba6203_hendry_2019.pdf",
+    "rows": 39,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://fdot.maps.arcgis.com/apps/webappviewer/index.html?id=324053528c0f49beaab365d0ef6796f8": "MyFlorida Transportation Map",
+   "https://data.fdot.gov/road/projects/": "Construction Map",
+   "https://performance-data-integration-space-fdot.hub.arcgis.com/": "Performance",
+   "https://fdot.maps.arcgis.com/home/index.html": "GIS@FDOT",
+   "https://gis-fdot.opendata.arcgis.com/": "Hub",
+   "http://fdot.maps.arcgis.com/": "GIS@FDOT",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fperformance-data-integration-space-fdot.hub.arcgis.com%2F&data=05%7C02%7CAusten.Mayfield%40dot.state.fl.us%7C7ab1c426a34149c6479908dcc1ef5b67%7Cdb21de5dbc9c420c8f3f8f08f85b5ada%7C0%7C0%7C638598480992076434%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=Jec4obnVj2MEPg0C5NxGuz5tFEYDIUY4o%2BTX1uqvyz0%3D&reserved=0": "Mobility Measures",
+   "https://gcc02.safelinks.protection.outlook.com/?url=http%3A%2F%2Ffdot.maps.arcgis.com%2Fapps%2Fwebappviewer%2Findex.html%3Fid%3D324053528c0f49beaab365d0ef6796f8&data=05%7C02%7CAusten.Mayfield%40dot.state.fl.us%7C7ab1c426a34149c6479908dcc1ef5b67%7Cdb21de5dbc9c420c8f3f8f08f85b5ada%7C0%7C0%7C638598480992069805%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=eyAvWHQ4nhJIDTVzqaBfZDglz6rEc1VNt2BRMlhmIY4%3D&reserved=0": "Facilities Map",
+   "https://geodata-floridadisaster.hub.arcgis.com/": "Florida Division of Emergency Management Open Data",
+   "https://geodata.floridagio.gov/": "State of Florida Geographic Data Portal",
+   "https://floridadisaster.maps.arcgis.com/apps/webappviewer/index.html?id=f5628cfc02ca42b4a3853c69d8ff804b": "Florida Disaster Geospatial Assessment Tool",
+   "https://www.arcgis.com/sharing/rest/content/items/4309e1b55bcd4cc39c4bad8a9bd5a9a3/info/metadata/metadata.xml?format=default&output=html": "Basemap Routes with Measures",
+   "http://fdot.maps.arcgis.com/home/index.html ": "FDOT ArcGIS Online",
+   "http://fdot.maps.arcgis.com/home/search.html?q=TDA&t=content&focus=layers&start=1&sortOrder=desc&sortField=modified ": "FDOT ArcGIS Online Feature Layers (TDA)",
+   "https://gis-fdot.opendata.arcgis.com/ ": "FDOT Open Data Hub",
+   "https://fdot.maps.arcgis.com/apps/webappviewer/index.html?id=fcb8b493d1c84f909f94a8ebfafbb317": "Official Highway Mileage Viewer",
+   "https://fdot.maps.arcgis.com/apps/instant/sidebar/index.html?appid=c8e36217aabb4d68bcd57731455535ba": "Federal Aid Highway Web Map",
+   "https://survey123.arcgis.com/share/6e79269cdbfd49cabbabdc0726be148e ": "Customer Satisfaction Survey",
+   "https://gis.fdot.gov/arcgisportal/apps/sites/": "Safety Data Integration Space",
+   "https://slogis.fdot.gov/": "Straight-Line Diagrams",
+   "https://fdot.maps.arcgis.com/apps/webappviewer/index.html?id=072cce2bbd4d4b1b9fa18f68df387058": "Volusia",
+   "https://fdot.maps.arcgis.com/apps/webappviewer/index.html?id=a2930d50e6d9416981d30b02ed9e3ca6": "St. Lucie - Online",
+   "https://experience.arcgis.com/experience/766006e6126047a0b535d2580a071492": "Sarasota - Online",
+   "https://fdot.maps.arcgis.com/apps/dashboards/7925850271974b11b345dabe63dcd7be": "FDOT Fuel Sites Web Map",
+   "https://fdot.maps.arcgis.com/apps/dashboards/fd4c80d81db74942be5e8a9b5e23b925": "National Highway System (NHS) Map with Dashboard",
+   "https://fdot.maps.arcgis.com/apps/dashboards/abba9901995d4de091a7f551ee5cac5e": "Florida's State Highway System (SHS) Map with Dashboard",
+   "https://fdot.maps.arcgis.com/apps/webappviewer/index.html?id=16582358fedf4b3d8991013bf893d7f5": "Florida's Strategic Intermodal System (SIS) Map",
+   "https://gis.fdot.gov/ssogis/": "https://gis.fdot.gov/ssogis/"
+  }
+ },
+ "state:maine.gov/mdot": {
+  "files": [],
+  "portals": {}
+ },
+ "state:dot.nh.gov": {
+  "files": [
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/nh-nevi-charging-deployment-plan-2022-08-01.pdf",
+    "text": "NEVI Charging Deployment Plan for NH",
+    "file": "data/gov_sources/state_dot_nh_gov/01fe67_nh-nevi-charging-deployment-plan-2022-08-01.pdf",
+    "rows": 535,
+    "bike_rows": 70
+   },
+   {
+    "url": "https://mm.nh.gov/files/uploads/dot/remote-docs/2023-red-list-bridges-t12.pdf",
+    "text": "State Red List Bridges on Tiers 1 and 2 Map",
+    "file": "data/gov_sources/state_dot_nh_gov/f9061d_2023-red-list-bridges-t12.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://mm.nh.gov/files/uploads/dot/remote-docs/2023-red-list-bridges-t34-gis.pdf",
+    "text": "State Red List Bridges on Tiers 3 and 4 Map",
+    "file": "data/gov_sources/state_dot_nh_gov/3ad23d_2023-red-list-bridges-t34-gis.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/2026-state-redlist-bridges_0.pdf",
+    "text": "State Red List Bridge Map",
+    "file": "data/gov_sources/state_dot_nh_gov/d04df1_2026-state-redlist-bridges_0.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/2026-muni-redlist-bridges_0.pdf",
+    "text": "Municipal Red List Bridge Map",
+    "file": "data/gov_sources/state_dot_nh_gov/d7d148_2026-muni-redlist-bridges_0.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/route-system2026.pdf",
+    "text": "Route System Map",
+    "file": "data/gov_sources/state_dot_nh_gov/700225_route-system2026.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/route-system-legis-miles2026.pdf",
+    "text": "Route System by Legislative Class Map",
+    "file": "data/gov_sources/state_dot_nh_gov/108c70_route-system-legis-miles2026.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/federal-aid-eligible-roads-blu-2026.pdf",
+    "text": "Federal Aid Eligible Map",
+    "file": "data/gov_sources/state_dot_nh_gov/d2814d_federal-aid-eligible-roads-blu-2026.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/functionalsystem-2026.pdf",
+    "text": "Functional System Map",
+    "file": "data/gov_sources/state_dot_nh_gov/324a2d_functionalsystem-2026.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/nhs-classifications-2026.pdf",
+    "text": "NHS Classifications Map",
+    "file": "data/gov_sources/state_dot_nh_gov/055acd_nhs-classifications-2026.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/nhs-miles-by-type-2026.pdf",
+    "text": "NHS Miles by Route Type Map",
+    "file": "data/gov_sources/state_dot_nh_gov/ccd669_nhs-miles-by-type-2026.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/2025-tier-1-2.pdf",
+    "text": "Tiers 1 and 2 Map",
+    "file": "data/gov_sources/state_dot_nh_gov/511fa1_2025-tier-1-2.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/2026-tier-3-4.pdf",
+    "text": "Tiers 3 and 4 Map",
+    "file": "data/gov_sources/state_dot_nh_gov/2da674_2026-tier-3-4.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/scenic-byways-2026.pdf",
+    "text": "Scenic Byways Map",
+    "file": "data/gov_sources/state_dot_nh_gov/abdae8_scenic-byways-2026.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/statetransitregions-2026.pdf",
+    "text": "Transit Services",
+    "file": "data/gov_sources/state_dot_nh_gov/4b2eca_statetransitregions-2026.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/town-county-bw-2026.pdf",
+    "text": "Town and County (Black & White) Map",
+    "file": "data/gov_sources/state_dot_nh_gov/de2566_town-county-bw-2026.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/town-county-color-2026.pdf",
+    "text": "Town and County (Color) Map",
+    "file": "data/gov_sources/state_dot_nh_gov/cc3cb7_town-county-color-2026.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/congressional-districts2025.pdf",
+    "text": "Congressional Districts Map",
+    "file": "data/gov_sources/state_dot_nh_gov/9d1d62_congressional-districts2025.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/senate-districts2025.pdf",
+    "text": "Senate Districts Map",
+    "file": "data/gov_sources/state_dot_nh_gov/877d8c_senate-districts2025.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/ecd-all-2026.pdf",
+    "text": "Executive Council Districts Map",
+    "file": "data/gov_sources/state_dot_nh_gov/7784f2_ecd-all-2026.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/regionalplanningcommissions-2026.pdf",
+    "text": "Regional Planning Commissions Map",
+    "file": "data/gov_sources/state_dot_nh_gov/082bae_regionalplanningcommissions-2026.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/state-trooper-coverage-2025.pdf",
+    "text": "State Trooper Coverage Map",
+    "file": "data/gov_sources/state_dot_nh_gov/b445b5_state-trooper-coverage-2025.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/urban-population-2010.pdf",
+    "text": "Urban Population Map 2010",
+    "file": "data/gov_sources/state_dot_nh_gov/b74c8d_urban-population-2010.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/new-hampshire-urban-population-2020-2026.pdf",
+    "text": "Urban Population Map 2020",
+    "file": "data/gov_sources/state_dot_nh_gov/f19859_new-hampshire-urban-population-2020-2026.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/bridge-maint-crews2026.pdf",
+    "text": "Bridge Maintenance Crews Map",
+    "file": "data/gov_sources/state_dot_nh_gov/67ea5a_bridge-maint-crews2026.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.dot.nh.gov/sites/g/files/ehbemt811/files/media/media_document/highwaymaintdistrictsoffices-2026.pdf",
+    "text": "Highway Maintenance Office Map",
+    "file": "data/gov_sources/state_dot_nh_gov/86b56e_highwaymaintdistrictsoffices-2026.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/highwaymaintdistrict1-2025.pdf",
+    "text": "District 1 Road Map",
+    "file": "data/gov_sources/state_dot_nh_gov/74ccdd_highwaymaintdistrict1-2025.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/highwaymaintdistrict2-2025.pdf",
+    "text": "District 2 Road Map",
+    "file": "data/gov_sources/state_dot_nh_gov/211d9c_highwaymaintdistrict2-2025.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/highwaymaintdistrict3-2025.pdf",
+    "text": "District 3 Road Map",
+    "file": "data/gov_sources/state_dot_nh_gov/1501a5_highwaymaintdistrict3-2025.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/highwaymaintdistrict4-2025.pdf",
+    "text": "District 4 Road Map",
+    "file": "data/gov_sources/state_dot_nh_gov/bdb73c_highwaymaintdistrict4-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/highwaymaintdistrict5-2025.pdf",
+    "text": "District 5 Road Map",
+    "file": "data/gov_sources/state_dot_nh_gov/8072a3_highwaymaintdistrict5-2025.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/highwaymaintdistrict6-2025.pdf",
+    "text": "District 6 Road Map",
+    "file": "data/gov_sources/state_dot_nh_gov/ea4cad_highwaymaintdistrict6-2025.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/turnpikes-map-2025.pdf",
+    "text": "Turnpike Road Map",
+    "file": "data/gov_sources/state_dot_nh_gov/5b66ff_turnpikes-map-2025.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://dot.nh.gov/sites/g/files/ehbemt811/files/inline-documents/map-metadata-guide.pdf",
+    "text": "GIS Metadata for Printable Maps- GIS Map Metadata Guide",
+    "file": "data/gov_sources/state_dot_nh_gov/299bbb_map-metadata-guide.pdf",
+    "rows": 95,
+    "bike_rows": 47
+   },
+   {
+    "url": "https://mm.nh.gov/files/uploads/dot/remote-docs/1937-highway-map.pdf",
+    "text": "1937 Highway Map",
+    "file": "data/gov_sources/state_dot_nh_gov/f78d61_1937-highway-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://new-hampshire-geodata-portal-1-nhgranit.hub.arcgis.com/pages/nhdot": "NHDOT- Map Applications NH GRANIT Geodata Portal",
+   "https://new-hampshire-geodata-portal-1-nhgranit.hub.arcgis.com/pages/nhsades": "NH SADES",
+   "https://nhsades.maps.arcgis.com/apps/dashboards/22aa9c96a2664ac1b14b46b8875f7d58": "NH Paving Projects (SADES)",
+   "https://experience.arcgis.com/experience/28eebc56361e4e40937900c40034ec77/page/Roads?views=Main-Menu%2CMain-Menu-": "NHDOT Roads and Projects Viewer"
+  }
+ },
+ "state:dot.ri.gov": {
+  "files": [
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/BellevilleSweeping.pdf",
+    "text": "Belleville Sweeping",
+    "file": "data/gov_sources/state_dot_ri_gov/c45716_BellevilleSweeping.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/EastProvidenceSweeping.pdf",
+    "text": "East Providence Sweeping",
+    "file": "data/gov_sources/state_dot_ri_gov/2b9f00_EastProvidenceSweeping.pdf",
+    "rows": 13,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/GlocesterSweeping.pdf",
+    "text": "Glocester Sweeping",
+    "file": "data/gov_sources/state_dot_ri_gov/321e66_GlocesterSweeping.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/HopeValleySweeping.pdf",
+    "text": "Hope Valley Sweeping",
+    "file": "data/gov_sources/state_dot_ri_gov/d49067_HopeValleySweeping.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/MidStateSweeping.pdf",
+    "text": "Mid State Sweeping",
+    "file": "data/gov_sources/state_dot_ri_gov/5ea816_MidStateSweeping.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/PortsmouthSweeping.pdf",
+    "text": "Portsmouth Sweeping",
+    "file": "data/gov_sources/state_dot_ri_gov/a39d27_PortsmouthSweeping.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/SmithfieldSweeping.pdf",
+    "text": "Smithfield Sweeping",
+    "file": "data/gov_sources/state_dot_ri_gov/c21768_SmithfieldSweeping.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/BellevilleMowing.pdf",
+    "text": "Belleville Mowing",
+    "file": "data/gov_sources/state_dot_ri_gov/a322fa_BellevilleMowing.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/EastProvidenceMowing.pdf",
+    "text": "East Providence Mowing",
+    "file": "data/gov_sources/state_dot_ri_gov/fb9ee6_EastProvidenceMowing.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/GlocesterMowing.pdf",
+    "text": "Glocester Mowing",
+    "file": "data/gov_sources/state_dot_ri_gov/1abfe0_GlocesterMowing.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/HopeValleyMowing.pdf",
+    "text": "Hope Valley Mowing",
+    "file": "data/gov_sources/state_dot_ri_gov/575d1f_HopeValleyMowing.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/MidStateMowing.pdf",
+    "text": "Mid State Mowing",
+    "file": "data/gov_sources/state_dot_ri_gov/c256af_MidStateMowing.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/PortsmouthMowing.pdf",
+    "text": "Portsmouth Mowing",
+    "file": "data/gov_sources/state_dot_ri_gov/81d20a_PortsmouthMowing.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.dot.ri.gov/about/maproom/docs/SmithfieldMowing.pdf",
+    "text": "Smithfield Mowing",
+    "file": "data/gov_sources/state_dot_ri_gov/0f862b_SmithfieldMowing.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Barrington_Evacuation_081213.pdf",
+    "text": "Barrington",
+    "file": "data/gov_sources/state_dot_ri_gov/2c4fad_Barrington_Evacuation_081213.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/LittleCompton_Evacuation_081213.pdf",
+    "text": "Little Compton",
+    "file": "data/gov_sources/state_dot_ri_gov/378568_LittleCompton_Evacuation_081213.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Portsmouth_Evacuation_081213.pdf",
+    "text": "Portsmouth",
+    "file": "data/gov_sources/state_dot_ri_gov/75673d_Portsmouth_Evacuation_081213.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Bristol_Evacuation_081213.pdf",
+    "text": "Bristol",
+    "file": "data/gov_sources/state_dot_ri_gov/f198e9_Bristol_Evacuation_081213.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Middletown_Evacuation_081213.pdf",
+    "text": "Middletown",
+    "file": "data/gov_sources/state_dot_ri_gov/ee036e_Middletown_Evacuation_081213.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Providence_Evacuation_081213.pdf",
+    "text": "Providence",
+    "file": "data/gov_sources/state_dot_ri_gov/35ebb9_Providence_Evacuation_081213.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Charlestown_Evacuation_081213.pdf",
+    "text": "Charlestown",
+    "file": "data/gov_sources/state_dot_ri_gov/1dcf37_Charlestown_Evacuation_081213.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Narragansett_Evacuation_081213.pdf",
+    "text": "Narragansett",
+    "file": "data/gov_sources/state_dot_ri_gov/d144ab_Narragansett_Evacuation_081213.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Cranston_Evacuation_081213.pdf",
+    "text": "Cranston",
+    "file": "data/gov_sources/state_dot_ri_gov/12cd30_Cranston_Evacuation_081213.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Newport_Evacuation_081213.pdf",
+    "text": "Newport",
+    "file": "data/gov_sources/state_dot_ri_gov/ce34d6_Newport_Evacuation_081213.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Tiverton_Evacuation_081213.pdf",
+    "text": "Tiverton",
+    "file": "data/gov_sources/state_dot_ri_gov/3d904d_Tiverton_Evacuation_081213.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/EastGreenwich_Evacuation_081213.pdf",
+    "text": "East Greenwich",
+    "file": "data/gov_sources/state_dot_ri_gov/145a9d_EastGreenwich_Evacuation_081213.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/NewShoreham_Evacuation_081213.pdf",
+    "text": "New Shoreham",
+    "file": "data/gov_sources/state_dot_ri_gov/f419cd_NewShoreham_Evacuation_081213.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Warren_Evacuation_081213.pdf",
+    "text": "Warren",
+    "file": "data/gov_sources/state_dot_ri_gov/ffd804_Warren_Evacuation_081213.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/EastProvidence_Evacuation_081213.pdf",
+    "text": "East Providence",
+    "file": "data/gov_sources/state_dot_ri_gov/69ba5c_EastProvidence_Evacuation_081213.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/NorthKingstown_Evacuation_081213.pdf",
+    "text": "North Kingstown",
+    "file": "data/gov_sources/state_dot_ri_gov/2a39db_NorthKingstown_Evacuation_081213.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Warwick_Evacuation_081213.pdf",
+    "text": "Warwick",
+    "file": "data/gov_sources/state_dot_ri_gov/109f67_Warwick_Evacuation_081213.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Jamestown_Evacuation_081213.pdf",
+    "text": "Jamestown",
+    "file": "data/gov_sources/state_dot_ri_gov/23f0f9_Jamestown_Evacuation_081213.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Pawtucket_Evacuation_081213.pdf",
+    "text": "Pawtucket",
+    "file": "data/gov_sources/state_dot_ri_gov/2b2652_Pawtucket_Evacuation_081213.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "http://www.riema.ri.gov/planning/evacuation/Updated_Evac_Maps/Westerly_Evacuation_081213.pdf",
+    "text": "Westerly",
+    "file": "data/gov_sources/state_dot_ri_gov/d9ce35_Westerly_Evacuation_081213.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.dot.ri.gov/travel/bikeri/docs/RIBike_Commuter_Guide.pdf",
+    "text": "New! Bicycle Commuter Guide",
+    "file": "data/gov_sources/state_dot_ri_gov/335d02_RIBike_Commuter_Guide.pdf",
+    "rows": 39,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://planning.ri.gov/documents/LRTP/Bicycle-Mobility-Pla-%20Appendix-2.pdf",
+    "text": "Appendix 2",
+    "file": "data/gov_sources/state_dot_ri_gov/6d4eff_Bicycle-Mobility-Pla-_20Appendix-2.pdf",
+    "rows": 499,
+    "bike_rows": 66
+   },
+   {
+    "url": "https://planning.ri.gov/documents/LRTP/Bicycle-Mobility-Pla-%20Appendix-3.pdf",
+    "text": "Appendix 3",
+    "file": "data/gov_sources/state_dot_ri_gov/7e9872_Bicycle-Mobility-Pla-_20Appendix-3.pdf",
+    "rows": 696,
+    "bike_rows": 117
+   }
+  ],
+  "portals": {
+   "https://ridot.maps.arcgis.com/home/index.html": "",
+   "http://ridot.maps.arcgis.com/apps/MapTour/index.html?appid=4e339b228e5b45e8b7d164c7a267d5d9&webmap=3f4076fb69fd4b4eb52747064a30b161": "",
+   "https://ridot.maps.arcgis.com/apps/instant/basic/index.html?appid=906897328b534b58adc50f58951185de": "View the Story Map »",
+   "https://storymaps.arcgis.com/stories/201255218b2745d2812c2aa45172b79e": "Ready Set Rhody",
+   "https://data.census.gov/profile/Rhode_Island?g=040XX00US44": "RI ACS Profile",
+   "https://ridoa.maps.arcgis.com/home/index.html": "Statewide Planning Map Gallery",
+   "https://riema.maps.arcgis.com/apps/instant/basic/index.html?appid=564db145800f42cdaa7f0407ec26b2aa": "Floodplain Map Viewer",
+   "https://storymaps.arcgis.com/collections/5ff17eaac4414f06927c1bcd822b659a": "Flood Ready RI",
+   "https://ridot.maps.arcgis.com/apps/instant/portfolio/index.html?appid=84c39daf0f504c99b575663eb2ddde3d": "DIVISIBLE LOAD MAPS »",
+   "https://ridot.maps.arcgis.com/apps/instant/portfolio/index.html?appid=04ffeae1f9df4ef5a2f188fe146cf4cd": "NON-DIVISIBLE LOAD MAPS »",
+   "https://ridot.maps.arcgis.com/apps/instant/basic/index.html?appid=bd64a34de608424e80db3fdd7ee1a8af": "RIDOT Posted Bridges Map",
+   "https://ridot.maps.arcgis.com/apps/instant/portfolio/index.html?appid=8e9646947287426cadd4ba3c476b2f05": "Rhode Island Vehicle Height Clearance Maps",
+   "https://ridot.maps.arcgis.com/apps/instant/portfolio/index.html?appid=7235be919461476ea586c15b02c59116": "RUSH HOUR & 53 FT SEMI-TRAILER ROUTES",
+   "https://ridot.maps.arcgis.com/apps/instant/basic/index.html?appid=e73b3e51208f469d875ce9a3b1e1320f": "Launch Full View",
+   "https://storymaps.arcgis.com/stories/59c515d9b23147258b07bc30bfa650dd": "Complete Streets Storymap",
+   "https://www.axisgis.com/barringtonri/": "Town GIS Maps (easements, flood maps, zoning, and more)",
+   "https://www.rigis.org/": "Rhode Island Geographic Information System (RIGIS)",
+   "https://doc.arcgis.com/en/esri-demographics/latest/regional-data/acs.htm": "including the ACS",
+   "https://www.arcgis.com/home/search.html?restrict=false&sortField=relevance&sortOrder=desc&searchTerm=tags%3Ademographics+and+tags%3Aacs+and+owner%3Aesri_demographics": "ArcGIS Online Platform;",
+   "https://www.arcgis.com/home/search.html?restrict=false&sortField=relevance&sortOrder=desc&searchTerm=owner%3A%22Esri_US_Federal_Data%22": "ESRI Federal Data",
+   "https://www.arcgis.com/home/search.html?restrict=false&sortField=relevance&sortOrder=desc&searchTerm=owner%3A%22Federal_User_Community%22": "Federal User Communities",
+   "https://ristate.maps.arcgis.com/apps/dashboards/7c9e74d483ae45d8abb561e163f49f2c": "Interactive Online STIP Map Viewer",
+   "https://movingforwardri2050-ridoa.hub.arcgis.com/": "here",
+   "https://vhb.maps.arcgis.com/apps/webappviewer/index.html?id=9f102148f9a9484e95560042c79d3f71": "Scalable Bicycle Mobility Map",
+   "https://ridoa.maps.arcgis.com/apps/Cascade/index.html?appid=6655ed1750e94ac781629d72ece32d9d": "City of Providence GIS Story Map",
+   "https://ridoa.maps.arcgis.com/apps/Cascade/index.html?appid=050ee6f3518442d9bf8d81dfa8885846": "Town of North Kingstown GIS Story Map",
+   "https://ridoa.maps.arcgis.com/apps/Cascade/index.html?appid=6f695b2453384fea818c97e91a382dfe": "RI Congestion Management Story Map",
+   "https://storymaps.arcgis.com/stories/0ad06c8c76d04a3ca849c04d6c67d842": "2021 Market to Metacom Economic Study",
+   "http://ridoa.maps.arcgis.com/home/item.html?id=351003fadfdf4f809acb55e548f2aeff": "Rhode Island Sea Level Rise: Impacts on Transportation Asset",
+   "https://ridos-neighborhoodblock-ristate.hub.arcgis.com/": "Explore Census 2020 Neighborhood Census Blocks"
+  }
+ },
+ "state:wisconsindot.gov": {
+  "files": [
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/rail/railmap.pdf",
+    "text": "Railroads and Harbors",
+    "file": "data/gov_sources/state_wisconsindot_gov/4a7d4c_railmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/SHM-2025-Front.pdf",
+    "text": "Map front (26\" x 37.5\")",
+    "file": "data/gov_sources/state_wisconsindot_gov/b3bdeb_SHM-2025-Front.pdf",
+    "rows": 35,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/SHM-2025-Back.pdf",
+    "text": "Map back (26\" x 37.5\")",
+    "file": "data/gov_sources/state_wisconsindot_gov/d76d4b_SHM-2025-Back.pdf",
+    "rows": 129,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/SHM-2025-Oversized.pdf",
+    "text": "Large wall map (36\" x 52\")",
+    "file": "data/gov_sources/state_wisconsindot_gov/fd0aa1_SHM-2025-Oversized.pdf",
+    "rows": 48,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/statehwymaparchive.pdf",
+    "text": "Review of Wisconsin's Official State Highway Map - A Century-old Time Capsule Beyond Highway History (2023)",
+    "file": "data/gov_sources/state_wisconsindot_gov/a0a470_statehwymaparchive.pdf",
+    "rows": 189,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1916StateHighwayMapWI.pdf",
+    "text": "1916",
+    "file": "data/gov_sources/state_wisconsindot_gov/332be7_1916StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1918StateHighwayMapWI.pdf",
+    "text": "1918",
+    "file": "data/gov_sources/state_wisconsindot_gov/061962_1918StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1919StateHighwayMapWI.pdf",
+    "text": "1919",
+    "file": "data/gov_sources/state_wisconsindot_gov/e3504a_1919StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1920StateHighwayMapWI.pdf",
+    "text": "1920",
+    "file": "data/gov_sources/state_wisconsindot_gov/0f82f6_1920StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1921StateHighwayMapWI.pdf",
+    "text": "1921",
+    "file": "data/gov_sources/state_wisconsindot_gov/b62c9c_1921StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1922StateHighwayMapWI.pdf",
+    "text": "1922",
+    "file": "data/gov_sources/state_wisconsindot_gov/83bf33_1922StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1923StateHighwayMapWI.pdf",
+    "text": "1923",
+    "file": "data/gov_sources/state_wisconsindot_gov/afdd99_1923StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1924StateHighwayMapWI.pdf",
+    "text": "1924",
+    "file": "data/gov_sources/state_wisconsindot_gov/897bfd_1924StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1925StateHighwayMapWI.pdf",
+    "text": "1925",
+    "file": "data/gov_sources/state_wisconsindot_gov/5ab44f_1925StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1926StateHighwayMapWI.pdf",
+    "text": "1926",
+    "file": "data/gov_sources/state_wisconsindot_gov/ad4615_1926StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1927StateHighwayMapWI.pdf",
+    "text": "1927",
+    "file": "data/gov_sources/state_wisconsindot_gov/da352f_1927StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1928StateHighwayMapWI.pdf",
+    "text": "1928",
+    "file": "data/gov_sources/state_wisconsindot_gov/845f0a_1928StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1930StateHighwayMapWI.pdf",
+    "text": "1930",
+    "file": "data/gov_sources/state_wisconsindot_gov/3accfc_1930StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1931StateHighwayMapWI.pdf",
+    "text": "1931",
+    "file": "data/gov_sources/state_wisconsindot_gov/8453c8_1931StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1932StateHighwayMapWI.pdf",
+    "text": "1932",
+    "file": "data/gov_sources/state_wisconsindot_gov/90f7ca_1932StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1933StateHighwayMapWI.pdf",
+    "text": "1933",
+    "file": "data/gov_sources/state_wisconsindot_gov/6de934_1933StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1934StateHighwayMapWI.pdf",
+    "text": "1934",
+    "file": "data/gov_sources/state_wisconsindot_gov/697f77_1934StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1936StateHighwayMapWI.pdf",
+    "text": "1936",
+    "file": "data/gov_sources/state_wisconsindot_gov/84cea0_1936StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1938StateHighwayMapWI.pdf",
+    "text": "1938",
+    "file": "data/gov_sources/state_wisconsindot_gov/451a37_1938StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1945StateHighwayMapWI.pdf",
+    "text": "1945",
+    "file": "data/gov_sources/state_wisconsindot_gov/235c5a_1945StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1946StateHighwayMapWI.pdf",
+    "text": "1946",
+    "file": "data/gov_sources/state_wisconsindot_gov/a60c87_1946StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://wisconsindot.gov/Documents/travel/road/hwy-maps/state-maps/hwy-map-archive/1949StateHighwayMapWI.pdf",
+    "text": "1949",
+    "file": "data/gov_sources/state_wisconsindot_gov/9efb25_1949StateHighwayMapWI.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://wisconsindot.gov/Pages/doing-bus/MapsGIS.aspx": "Maps and GIS",
+   "https://experience.arcgis.com/experience/b999858b9d324732b260581d8d2eb3ff": "DMV locations",
+   "https://wisdot.maps.arcgis.com/apps/instant/nearby/index.html?appid=6c17e00bdf8d4be8bd9c7615d913af05": "Wisconsin Roadside Facilities",
+   "https://wisdot.maps.arcgis.com/home/index.html": "",
+   "https://wisdot.maps.arcgis.com/apps/instant/media/index.html?appid=d88636bad1be4e0c94b32601c61711f3": "Adopt-a-Highway",
+   "https://wisdot.maps.arcgis.com/apps/instant/media/index.html?appid=faad51af38034cc692ee6bad69dba086": "Commemorative Highways and Bridges",
+   "https://wisdot.maps.arcgis.com/home/item.html?id=86c34aab21c642718df81775b0543afd": "Culvert Inventory",
+   "https://wisdot.maps.arcgis.com/apps/dashboards/f01799c6fb034902bed48510d8b19a22": "Federal funding awards to Wisconsin",
+   "https://wisdot.maps.arcgis.com/apps/instant/nearby/index.html?appid=c448c1e44c52463ea2eabc7518e8d6e1": "Highway Construction Skills Training (HCST) providers",
+   "https://experience.arcgis.com/experience/24cea0ef2e83405ab3f6623135bb19b2": "roundabouts, RCUTS, DDIs",
+   "https://experience.arcgis.com/experience/cd2bf0b1a3c148399e0f1ae86728bcf1": "Rustic Roads",
+   "https://experience.arcgis.com/experience/6d06e54fceec4ac08aa843f827c4d944": "Improvement Program",
+   "https://experience.arcgis.com/experience/6d06e54fceec4ac08aa843f827c4d944/page/-Two-Year-Construction-Projects": "Upcoming construction projects (next 2 years)",
+   "https://experience.arcgis.com/experience/6d06e54fceec4ac08aa843f827c4d944/page/-Four-Year-Statewide-Transportation-Improvement-Program-%28STIP%29": "Four-year Statewide Transportation Improvement Program (STIP)",
+   "https://experience.arcgis.com/experience/6d06e54fceec4ac08aa843f827c4d944/page/-Six-Year-Improvement-Program": "Transportation Improvement Program (next six years)",
+   "https://wisdot.maps.arcgis.com/apps/webappviewer/index.html?id=2e12a4f051de4ea9bc865ec6393731f8": "TCMap​",
+   "https://wisdot.maps.arcgis.com/apps/MapSeries/index.html?appid=2e56b5b256124198b0be2c4815c42a18": "Weight Restrictions",
+   "https://experience.arcgis.com/experience/afd5879501f344039f2c2482e959cdf5": "Non-Driver Interactive Mapping Tool",
+   "https://wisdot.maps.arcgis.com/apps/webappviewer/index.html?id=98f74e8262e348b28ab8622e10532d90": "WI State Highway Curb Ramps and Sidewalks",
+   "https://data-wisdot.opendata.arcgis.com/": "",
+   "https://experience.arcgis.com/experience/4d7a8633b9ea4b9fb365d66bb3b857dc": "Planning-Level Traffic Forecast Application",
+   "https://experience.arcgis.com/experience/6d78148b4bb84ba2b50c67752e6a4c9b": "",
+   "https://experience.arcgis.com/experience/4afc92019aad4a3cbb36fc8b8fc87f04/": "Evaluation Zones and Priority Locations Interactive Map",
+   "https://experience.arcgis.com/experience/8405604ccc034f7c8c4e95e6776951a7": "interactive map",
+   "https://experience.arcgis.com/experience/3df78d6bd55b4305bc2dc99f44497097": "",
+   "https://doc.arcgis.com/en/web-appbuilder/create-apps/accessibility-support.htm": "Esri Accessibility Support",
+   "https://experience.arcgis.com/experience/eaa4d0e8cbc94a738cd961050dfb1de0": "View larger map",
+   "http://docs.legis.wisconsin.gov/statutes/statutes/443/08": "Wis. Stat. 443.08",
+   "https://docs.legis.wisconsin.gov/statutes/statutes/343/ii/05/3/b": "Wisconsin law",
+   "https://docs.legis.wisconsin.gov/statutes/statutes/340/01/32": "state statute"
+  }
+ },
+ "region:mtc.ca.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "region:nvtc.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "region:mnmpo.org": {
+  "files": [],
+  "portals": {}
+ },
+ "capital:littlerock.gov": {
+  "files": [
+   {
+    "url": "https://www.littlerock.gov/media/1753/master-trail-plan-document-final.pdf",
+    "text": "Master Trail Plan",
+    "file": "data/gov_sources/capital_littlerock_gov/cbc615_master-trail-plan-document-final.pdf",
+    "rows": 45,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://littlerock.gov/wp-content/uploads/SustainabilityOffice/RECYCLING/2026-Recycling-Calendar-Flyer-Eng.pdf",
+    "text": "2026 Recycling Calendar",
+    "file": "data/gov_sources/capital_littlerock_gov/5881a7_2026-Recycling-Calendar-Flyer-Eng.pdf",
+    "rows": 80,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://littlerock.gov/wp-content/uploads/SustainabilityOffice/RECYCLING/2026-Recycling-Calendar-Flyer-Span.pdf",
+    "text": "2026 Calendario de Reciclaje",
+    "file": "data/gov_sources/capital_littlerock_gov/645136_2026-Recycling-Calendar-Flyer-Span.pdf",
+    "rows": 77,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://littlerock.gov/wp-content/uploads/SustainabilityOffice/RECYCLING/Recycling-Posters.pdf",
+    "text": "",
+    "file": "data/gov_sources/capital_littlerock_gov/c2f056_Recycling-Posters.pdf",
+    "rows": 104,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.littlerock.gov/media/22958/2025-recycling-calendar.pdf",
+    "text": "",
+    "file": "data/gov_sources/capital_littlerock_gov/4c25ef_2025-recycling-calendar.pdf",
+    "rows": 58,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://littlerock.gov/wp-content/uploads/2020-clm-2020-oversize-yardwaste-routes.pdf",
+    "text": "Yard Waste Collection Map",
+    "file": "data/gov_sources/capital_littlerock_gov/3863b0_2020-clm-2020-oversize-yardwaste-routes.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://littlerock.gov/wp-content/uploads/2020-clm-2020-oversize-garbage-routes.pdf",
+    "text": "Garbage Collection Days Map",
+    "file": "data/gov_sources/capital_littlerock_gov/aaf0c3_2020-clm-2020-oversize-garbage-routes.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littlerock.gov/media/2329/nacto_equitable-bike-share.pdf",
+    "text": "NACTO Equitable Bike Share",
+    "file": "data/gov_sources/capital_littlerock_gov/306c8a_nacto_equitable-bike-share.pdf",
+    "rows": 36,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.littlerock.gov/!userfiles/editor/docs/planning/parking_ordinance.pdf",
+    "text": "https://www.littlerock.gov/!userfiles/editor/docs/planning/parking_ordinance.pdf",
+    "file": "data/gov_sources/capital_littlerock_gov/4d2e06_parking_ordinance.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littlerock.gov/media/3375/essentialsofbikeparking_fina.pdf",
+    "text": "Association of Pedestrian and Bicycle Professionals best practices",
+    "file": "data/gov_sources/capital_littlerock_gov/3944b9_essentialsofbikeparking_fina.pdf",
+    "rows": 30,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.littlerock.gov/media/6425/18163-bikeshare-program-attachment-a.pdf",
+    "text": "pg. 6, 6.2",
+    "file": "data/gov_sources/capital_littlerock_gov/5a00df_18163-bikeshare-program-attachment-a.pdf",
+    "rows": 226,
+    "bike_rows": 93
+   },
+   {
+    "url": "https://www.littlerock.gov/media/6456/2020-clr-lab-bfc-application-final.pdf",
+    "text": "2020 City of Little Rock Bike Friendly Community application",
+    "file": "data/gov_sources/capital_littlerock_gov/6865b4_2020-clr-lab-bfc-application-final.pdf",
+    "rows": 544,
+    "bike_rows": 193
+   },
+   {
+    "url": "https://www.littlerock.gov/media/6339/fhwa_bikewayselectionguide_2019.pdf",
+    "text": "Bikeway Selection Guide",
+    "file": "data/gov_sources/capital_littlerock_gov/6f9ae9_fhwa_bikewayselectionguide_2019.pdf",
+    "rows": 100,
+    "bike_rows": 36
+   },
+   {
+    "url": "https://www.littlerock.gov/media/5612/washington-elementary-bike-education-proposal-14.pdf",
+    "text": "after school bicycle education program",
+    "file": "data/gov_sources/capital_littlerock_gov/ba1b05_washington-elementary-bike-education-proposal-14.pdf",
+    "rows": 45,
+    "bike_rows": 25
+   },
+   {
+    "url": "https://www.littlerock.gov/media/1376/metroplan_2015ped-bikecrashanalysis.pdf",
+    "text": "Crash Analysis",
+    "file": "data/gov_sources/capital_littlerock_gov/794dd8_metroplan_2015ped-bikecrashanalysis.pdf",
+    "rows": 183,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.littlerock.gov/media/3935/2020-sustainability-roadmap-32918.pdf",
+    "text": "Road to 2020",
+    "file": "data/gov_sources/capital_littlerock_gov/07bcd8_2020-sustainability-roadmap-32918.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littlerock.gov/media/6427/brief-history-of-bikeshare-in-the-city-of-little-rock.pdf",
+    "text": "the City of Little Rock’s history with bikeshare",
+    "file": "data/gov_sources/capital_littlerock_gov/952f29_brief-history-of-bikeshare-in-the-city-of-little-rock.pdf",
+    "rows": 17,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.littlerock.gov/media/6447/arch-street-neighborhood-greenway.pdf",
+    "text": "see also",
+    "file": "data/gov_sources/capital_littlerock_gov/ca2f0f_arch-street-neighborhood-greenway.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.littlerock.gov/media/4029/attributes_of_bfc.pdf",
+    "text": "LAB’s Attributes of a Bicycle Friendly Community",
+    "file": "data/gov_sources/capital_littlerock_gov/3dff39_attributes_of_bfc.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littlerock.gov/!userfiles/editor/docs/parks/Trail%20Maps%2011%2013%2012_Two%20Rivers%20Park.pdf",
+    "text": "Two Rivers Park",
+    "file": "data/gov_sources/capital_littlerock_gov/6fc05a_Trail_20Maps_2011_2013_2012_Two_20Rivers_20Park.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.littlerock.gov/!userfiles/editor/docs/parks/Trail%20Maps%20Allsopp%20Park%20South.pdf",
+    "text": "Allsopp Park (south)",
+    "file": "data/gov_sources/capital_littlerock_gov/791561_Trail_20Maps_20Allsopp_20Park_20South.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://littlerock.gov/media/2329/nacto_equitable-bike-share.pdf",
+    "text": "NACTO report, pg. 6",
+    "file": "data/gov_sources/capital_littlerock_gov/979d61_nacto_equitable-bike-share.pdf",
+    "rows": 36,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://littlerock.gov/media/6652/2020-sustainability-roadmap-32819.pdf",
+    "text": "goals",
+    "file": "data/gov_sources/capital_littlerock_gov/837eb7_2020-sustainability-roadmap-32819.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.littlerock.gov": "",
+   "https://storymaps.arcgis.com/stories/b17e294913c54d99b1c560f157c6772f": "",
+   "https://www.arcgis.com/apps/dashboards/cf9098fa443c413a934e3e50a6db1efc": "Capital Improvement Dashboard",
+   "https://littlerock.gov/little-rock-to-host-third-annual-open-data-day-events/": "Read More Little Rock to host Third Annual Open Data Day Events",
+   "https://littlerock.gov/calling-all-data-junkies-little-rock-to-host-second-annual-open-data-day-event/": "Read More Calling All Data Junkies – Little Rock to host Second Annual Open Data Day Event",
+   "https://littlerock.gov/city-to-hold-first-open-data-day-event/": "Read More City to hold first Open Data Day event",
+   "https://littlerock.gov/open-data-meets-citizen-engagement-in-citys-new-citizen-connect-website/": "Read More Open data meets citizen engagement in City’s new Citizen Connect website",
+   "https://littlerock.gov/open-data": "Procurement/Bid Opportunities",
+   "https://littlerock.maps.arcgis.com/apps/webappviewer/index.html?id=4ce13e84298e486ebca803acc4021a5e": "Garbage Collection Days Map",
+   "https://littlerock.maps.arcgis.com/apps/webappviewer/index.html?id=96639136a9b8491e81cd52269103f20f": "Interactive Recycling Map",
+   "https://gis.ardot.gov/portal/apps/dashboards/3ae35f942fa340888abd27f26d405558": "Arkansas Crash Analytics",
+   "http://ahtd.maps.arcgis.com/apps/webappviewer/index.html?id=8deb09579210490bafb97bd03c3c0792": "ADT is 7,900"
+  }
+ },
+ "capital:indy.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "capital:jacksonms.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "capital:bismarck.nd.us": {
+  "files": [],
+  "portals": {}
+ },
+ "capital:slc.gov": {
+  "files": [
+   {
+    "url": "https://www.slcdocs.com/transportation/Parking/pdf/MotorcycleParking.pdf",
+    "text": "designated motorcycle parking spots",
+    "file": "data/gov_sources/capital_slc_gov/0f027d_MotorcycleParking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/parks/RAC_Docs/RAC_field_MAP0422.pdf",
+    "text": "Detailed Field Map",
+    "file": "data/gov_sources/capital_slc_gov/23a147_RAC_field_MAP0422.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.rideuta.com/-/media/Files/Rider-Tools/Current-System-Maps/FreeFareZone_Map_4x5_1.pdf",
+    "text": "When traveling downtown, everyone can continue using transit for free in the free fare zone",
+    "file": "data/gov_sources/capital_slc_gov/4b35a8_FreeFareZone_Map_4x5_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.slc.gov/transportation/wp-content/uploads/sites/11/2025/06/300-West-Bikeway-Plan-Set.pdf",
+    "text": "View the 300 West Bikeway design.",
+    "file": "data/gov_sources/capital_slc_gov/0fcc8d_300-West-Bikeway-Plan-Set.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.slc.gov/transportation/wp-content/uploads/sites/11/2024/10/400-S-Viaduct-Trail-Design-Boards_Open-House.pdf",
+    "text": "View the open house design boards",
+    "file": "data/gov_sources/capital_slc_gov/ad025a_400-S-Viaduct-Trail-Design-Boards_Open-House.pdf",
+    "rows": 99,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.slc.gov/transportation/wp-content/uploads/sites/11/2025/08/400-South-Viaduct-Trail_Signing-Striping_Rev3.pdf",
+    "text": "View the design",
+    "file": "data/gov_sources/capital_slc_gov/fe31c0_400-South-Viaduct-Trail_Signing-Striping_Rev3.pdf",
+    "rows": 20,
+    "bike_rows": 9
+   },
+   {
+    "url": "http://www.slcdocs.com/bc/bike.pdf",
+    "text": "Bylaws and Governing Documents",
+    "file": "data/gov_sources/capital_slc_gov/d300c9_bike.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Historic Preservation/New LocalNational map.pdf",
+    "text": "Download – National and Local Historic Districts Map",
+    "file": "data/gov_sources/capital_slc_gov/1b006c_New_LocalNational_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Historic%20Preservation/New%20Local%20HD%20map.pdf",
+    "text": "View Map of Local Historic Districts",
+    "file": "data/gov_sources/capital_slc_gov/348d5d_New_20Local_20HD_20map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.slcdocs.com/Planning/Historic%20Preservation/New%20National%20map.pdf",
+    "text": "View Map of National Historic Districts",
+    "file": "data/gov_sources/capital_slc_gov/6a813b_New_20National_20map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Historic%20Preservation/New%20LocalNational%20map.pdf",
+    "text": "Local & National Historic Districts Map",
+    "file": "data/gov_sources/capital_slc_gov/8ad6fa_New_20LocalNational_20map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/Planning/Applications/Designation.pdf",
+    "text": "HP: Local Historic District or Thematic Designation",
+    "file": "data/gov_sources/capital_slc_gov/09b6b7_Designation.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/ResidentialGuidelines.pdf",
+    "text": "Preservation Handbook for Historic Residential Properties & Districts",
+    "file": "data/gov_sources/capital_slc_gov/045f16_ResidentialGuidelines.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section1.pdf",
+    "text": "Why Preserve Historic Buildings & Neighborhoods?",
+    "file": "data/gov_sources/capital_slc_gov/4170aa_Section1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section2.pdf",
+    "text": "The Preservation Program in Salt Lake City",
+    "file": "data/gov_sources/capital_slc_gov/9d8c1f_Section2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section3.pdf",
+    "text": "The Design Guidelines",
+    "file": "data/gov_sources/capital_slc_gov/f96cbd_Section3.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Section4.pdf",
+    "text": "Historic Context & Architectural Styles",
+    "file": "data/gov_sources/capital_slc_gov/5c4686_Section4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch1.pdf",
+    "text": "Site Features",
+    "file": "data/gov_sources/capital_slc_gov/13b21f_Ch1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch2.pdf",
+    "text": "Building Materials & Finishes",
+    "file": "data/gov_sources/capital_slc_gov/b58274_Ch2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch3.pdf",
+    "text": "Windows",
+    "file": "data/gov_sources/capital_slc_gov/30dc46_Ch3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch4.pdf",
+    "text": "Doors",
+    "file": "data/gov_sources/capital_slc_gov/016ae2_Ch4.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch5.pdf",
+    "text": "Porches",
+    "file": "data/gov_sources/capital_slc_gov/c2179d_Ch5.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch6.pdf",
+    "text": "Architectural Details",
+    "file": "data/gov_sources/capital_slc_gov/87df3a_Ch6.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch7.pdf",
+    "text": "Roofs",
+    "file": "data/gov_sources/capital_slc_gov/7e00a8_Ch7.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch8.pdf",
+    "text": "Additions",
+    "file": "data/gov_sources/capital_slc_gov/3ed9b9_Ch8.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch9.pdf",
+    "text": "Accessory Structures",
+    "file": "data/gov_sources/capital_slc_gov/457447_Ch9.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch10.pdf",
+    "text": "Seismic Retrofitting",
+    "file": "data/gov_sources/capital_slc_gov/efae12_Ch10.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch11.pdf",
+    "text": "General Issues",
+    "file": "data/gov_sources/capital_slc_gov/b58c96_Ch11.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch12.pdf",
+    "text": "New Construction",
+    "file": "data/gov_sources/capital_slc_gov/ab1f1a_Ch12.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Part3Intro.pdf",
+    "text": "Introduction",
+    "file": "data/gov_sources/capital_slc_gov/74bc91_Part3Intro.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch13.pdf",
+    "text": "The Avenues",
+    "file": "data/gov_sources/capital_slc_gov/00a226_Ch13.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch14.pdf",
+    "text": "Capitol Hill",
+    "file": "data/gov_sources/capital_slc_gov/0d03c2_Ch14.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch15.pdf",
+    "text": "Central City",
+    "file": "data/gov_sources/capital_slc_gov/b9e0e9_Ch15.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch16.pdf",
+    "text": "South Temple",
+    "file": "data/gov_sources/capital_slc_gov/01b4de_Ch16.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch17.pdf",
+    "text": "University",
+    "file": "data/gov_sources/capital_slc_gov/6b0d03_Ch17.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/Ch18.pdf",
+    "text": "Westmoreland Place",
+    "file": "data/gov_sources/capital_slc_gov/e06f57_Ch18.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/AppA.pdf",
+    "text": "Salt Lake City Historic Design Standards & Secretary of the Interior’s Standards",
+    "file": "data/gov_sources/capital_slc_gov/9e9f96_AppA.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.slcdocs.com/historicpreservation/GuideRes/AppB.pdf",
+    "text": "Appendix B",
+    "file": "data/gov_sources/capital_slc_gov/a70e6a_AppB.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://slcgov.maps.arcgis.com/apps/instant/lookup/index.html?appid=e51eab2f279849739b952e8bea7d7530": "Interactive District Boundaries Map",
+   "https://ball-park-station-area-plan-slcgov.hub.arcgis.com/": "Ballpark Station Area Plan (2022)",
+   "https://safe-routes-uplan.hub.arcgis.com/": "Utah Safe Routes to School map",
+   "https://gis.udot.utah.gov/AT-Counters": "UDOT Active Transportation Counters",
+   "https://data.slc.gov/": "SLC Open Data",
+   "https://data-uplan.opendata.arcgis.com/": "UDOT Open Data",
+   "https://gis.utah.gov/products/sgid/categories/": "Utah Geospatial Resource Center (UGRC)",
+   "https://storymaps.arcgis.com/stories/0eee08e851244d4ba44fdc09cf8934a5": "Walkable Salt Lake City Interactive mapping tool to visualize and explore the walkability of Salt Lake City neighborhood",
+   "https://slcgov.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=0db2fec93d9140bc8c5768abce5f9ab0&theme=light&legend=true&center=-111.88889997775523,40.7601154304239&scale=72223.819286": "Find your zone on the map",
+   "https://experience.arcgis.com/experience/828574c207454f01808e07f0c71da21e/page/Home/?views=view_8": "300 West (900 South to 2100 South)",
+   "https://slcgov.maps.arcgis.com/apps/instant/basic/index.html?appid=ae4eccbc202145daa6059967fb838aee": "Open the parking map full-screen in a new window.",
+   "https://slcgov.maps.arcgis.com/apps/webappviewer/index.html?id=647267057ace455bbc388d7816abfb16": "Eligible Fire Mitigation Permit Parcels",
+   "https://storymaps.arcgis.com/stories/7a6c29ee38a64400ab66ce917fbec2c6": "steps to address the divide",
+   "https://slcgov.maps.arcgis.com/apps/MapSeries/index.html?appid=eabff919d80341019218f1b63a2d8c6c": "Learn more about the three concepts.",
+   "https://storymaps.arcgis.com/stories/cec96abc0ab042229c1b0f0c66d99e11": "Click here to open the map in a new tab.",
+   "https://experience.arcgis.com/experience/e92a5bf425004e60a839ea1058649860/": "2100 South (700 E to 1300 E)",
+   "https://experience.arcgis.com/experience/387101187e0045e7b1c8fac91c9f3f43/": "Highland Drive/1100 East (Logan Ave to Warnock Ave)",
+   "https://slcgov.maps.arcgis.com/apps/instant/basic/index.html?appid=2d0f4cd1bd854f1381ed697ecd91621e": "Launch map full-screen in a new window.",
+   "https://slcgov.maps.arcgis.com/apps/instant/basic/index.html?appid=29a48d8f993a4fd2846eb083dbefff55": "Launch map full-screen in a new window.",
+   "https://slcgov.maps.arcgis.com/apps/instant/sidebar/index.html?appid=fa801b661ce14222a6c1f7d42ce21636": "Open Map in Larger View",
+   "https://slcparksbond-deagis.hub.arcgis.com/pages/4daed75ac69645018ecc4a02a7473363": "GO Bond Information",
+   "https://slcparksbond-deagis.hub.arcgis.com/pages/499d28a7b5ee42208dbd206352566987": "GO Bond",
+   "https://slcparksbond-deagis.hub.arcgis.com/pages/1d2507df2cf8400aa2ec8b377196688f": "GO Bond Information",
+   "https://storymaps.arcgis.com/stories/42f180e6bd3a465abce675556772aa6b": "Vision online here",
+   "https://slcparksbond-deagis.hub.arcgis.com/pages/reimagining": "GO Bond",
+   "https://slcparksbond-deagis.hub.arcgis.com/pages/libertypark": "GO Bond Information",
+   "https://storymaps.arcgis.com/stories/e73a13bafab34936be9169c7baa5eec3": "Artesian Well Park Improvement Project"
+  }
+ },
+ "parks:arkansasstateparks.com": {
+  "files": [],
+  "portals": {}
+ },
+ "parks:iowadnr.gov": {
+  "files": [],
+  "portals": {
+   "https://geodata.iowa.gov/": "https://geodata.iowa.gov/",
+   "https://experience.arcgis.com/experience/82a4335d38b04389a46dea4856d67c7d/": "Iowa Elevation Tools:",
+   "https://iowadnr.maps.arcgis.com/apps/webappviewer/index.html?id=f9161b90cddb4fcfb35a96901882a4b7": "Hunting Atlas:",
+   "https://iowadnr.maps.arcgis.com/apps/instant/sidebar/index.html?appid=2e6b82a4292f4f5b928ded2b8e2dfe57": "Recreation Atlas",
+   "https://iowadnr.maps.arcgis.com/apps/webappviewer/index.html?id=49241621e66949c7b02f135bcfb85ee3": "View Iowa state park trails",
+   "http://waterdata.usgs.gov/ia/nwis/current/?type=flow&group_key=basin_cd": "Real-time Streamflow and Levels (USGS)",
+   "https://iowadnr.maps.arcgis.com/apps/webappviewer/index.html?id=767d75008b0f40ce922138d3c5d7f4f0": "View larger interactive paddling map.(ArcGis)",
+   "https://storymaps.arcgis.com/stories/ba98113395d34a03a1b8bd348418bf2c": "https://storymaps.arcgis.com/stories/ba98113395d34a03a1b8bd348418bf2c"
+  }
+ },
+ "parks:parks.nv.gov": {
+  "files": [
+   {
+    "url": "https://parks.nv.gov/uploads/documents/RTP_2026_Final_Awards_2.12.2026.pdf",
+    "text": "2026 Recreational Trails Program Awards",
+    "file": "data/gov_sources/parks_parks_nv_gov/722807_RTP_2026_Final_Awards_2.12.2026.pdf",
+    "rows": 20,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://parks.nv.gov/forms/Beaver_Dam_State_Park_NET_1_wtn_otln_reduced_2014-02-09.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/6ad05d_Beaver_Dam_State_Park_NET_1_wtn_otln_reduced_2014-02-09.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://parks.nv.gov/uploads/documents/BeaverDam_rev_2021_Website.pdf",
+    "text": "with Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/0acfe8_BeaverDam_rev_2021_Website.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://parks.nv.gov/forms/Berliln_Map_Color_1.pdf",
+    "text": "town site",
+    "file": "data/gov_sources/parks_parks_nv_gov/4d8878_Berliln_Map_Color_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/forms/Berlin-Ichthyosaur_State_Park_Reduced_Pedestal_(002).pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/406f0e_Berlin-Ichthyosaur_State_Park_Reduced_Pedestal__002_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/forms/Berliln_Map_Color_1.pdf",
+    "text": "View map",
+    "file": "data/gov_sources/parks_parks_nv_gov/e711c3_Berliln_Map_Color_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/forms/Cathedral_Gorge_Map_3_Nature_Loop_NET_otln_reduced_2014-02-09.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/123295_Cathedral_Gorge_Map_3_Nature_Loop_NET_otln_reduced_2014-02-09.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/documents/CathedralGorge_2019_Website.pdf",
+    "text": "Cathedral Gorge Brochure with Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/076b38_CathedralGorge_2019_Website.pdf",
+    "rows": 26,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/forms/Cave_Lake_1_Cave_Overlook_NET_otln_reduced_2014-02-09.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/0a0551_Cave_Lake_1_Cave_Overlook_NET_otln_reduced_2014-02-09.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/documents/Fort_Churchill_Hunting_Zone_Jan_2022.pdf",
+    "text": "Hunting Boundary Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/b1df7e_Fort_Churchill_Hunting_Zone_Jan_2022.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/forms/KershawRyan_4.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/e933ff_KershawRyan_4.pdf",
+    "rows": 17,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/documents/Lahontan_Overall_Hunting_Map_2.pdf",
+    "text": "Lahontan Overall Hunting Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/60f9dc_Lahontan_Overall_Hunting_Map_2.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/forms/Rye_Patch_State_Recreation_Area_1_Westside_Campground_NET_otln_reduced_2012-02-09.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/448e24_Rye_Patch_State_Recreation_Area_1_Westside_Campground_NET_otln_reduced",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/forms/South_Fork_State_Recreation_Area_1_Hastings_NET_otln_reduced_2014-02-09.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/e795cf_South_Fork_State_Recreation_Area_1_Hastings_NET_otln_reduced_2014-02-0",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/documents/Spooner_Trail_Closers_Hobart_Dam_Repair.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/2f72c4_Spooner_Trail_Closers_Hobart_Dam_Repair.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://parks.nv.gov/forms/No_Hunting_Map_Revised_11_2011.pdf",
+    "text": "here",
+    "file": "data/gov_sources/parks_parks_nv_gov/8b28e3_No_Hunting_Map_Revised_11_2011.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/forms/Spring_Mountain_Ranch_Trail_Map_1_canyon_NET_otln_reduced_2014-02-10.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/38814a_Spring_Mountain_Ranch_Trail_Map_1_canyon_NET_otln_reduced_2014-02-10.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/documents/Valley_of_Fire_Brochure_Map.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/a2056e_Valley_of_Fire_Brochure_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/documents/Valley_of_Fire_Brochure_2025.pdf",
+    "text": "Valley of Fire Brochure with Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/31129c_Valley_of_Fire_Brochure_2025.pdf",
+    "rows": 17,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/documents/Van_Sickle_Bi-State_Park_Construction_Area_Map.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/cacdc6_Van_Sickle_Bi-State_Park_Construction_Area_Map.pdf",
+    "rows": 7,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/documents/PITCHFORK_water_trail_map.pdf",
+    "text": "Water Trail Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/5551a3_PITCHFORK_water_trail_map.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "http://parks.nv.gov/uploads/documents/WRSRA_Hunting_Maps_(1).pdf",
+    "text": "WRSRA Hunting Zone Maps",
+    "file": "data/gov_sources/parks_parks_nv_gov/534185_WRSRA_Hunting_Maps__1_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/forms/Ward_Charcoal_Ovens_1_Ridgeline_Loop_NET_otln_reduced_2014-02-10.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/e5a5b0_Ward_Charcoal_Ovens_1_Ridgeline_Loop_NET_otln_reduced_2014-02-10.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/forms/washoe_trail_map.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/cea3d1_washoe_trail_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/documents/wASHOE_hunting_map.pdf",
+    "text": "Hunting Zone Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/04f0d5_wASHOE_hunting_map.pdf",
+    "rows": 9,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://parks.nv.gov/forms/Wild_Horse_SRA_1_Beach_Trail_NET_otln_reduced_2014-02-10.pdf",
+    "text": "Trails / Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/b690f6_Wild_Horse_SRA_1_Beach_Trail_NET_otln_reduced_2014-02-10.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/documents/Appendix_M._Part_2_Survey_Regional_Maps_.pdf",
+    "text": "Appendix M - Part 2 Survey Regional Maps",
+    "file": "data/gov_sources/parks_parks_nv_gov/bc9bce_Appendix_M._Part_2_Survey_Regional_Maps_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/Spooner_Trail_Closers_Hobart_Dam_Repair.pdf",
+    "text": "Closure Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/ccc978_Spooner_Trail_Closers_Hobart_Dam_Repair.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://parks.nv.gov/uploads/Van_Sickle_Bi-State_Park_Construction_Area_Map.pdf",
+    "text": "Construction Map",
+    "file": "data/gov_sources/parks_parks_nv_gov/d05837_Van_Sickle_Bi-State_Park_Construction_Area_Map.pdf",
+    "rows": 7,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/5e8b444a75b5427fbcce178459dafb4e": "interactive map and guide",
+   "https://arcgis.water.nv.gov/enterprise/apps/storymaps/stories/7fc91b6bdafc4a4194ed3439d9d89d37": "https://arcgis.water.nv.gov/enterprise/apps/storymaps/stories/7fc91b6bdafc4a4194ed3439d9d89d37"
+  }
+ },
+ "parks:riparks.ri.gov": {
+  "files": [],
+  "portals": {}
+ },
+ "parks:dnr.wisconsin.gov": {
+  "files": [
+   {
+    "url": "https://widnr.widen.net/view/pdf/cd52ftt0gh/StateTrailPass_VendorsAndSubvendors.pdf?t.download=true&u=cgj4gi",
+    "text": "state trail pass vendor or its authorized sub-vendors",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/5a8d03_StateTrailPass_VendorsAndSubvendors.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dnr.wisconsin.gov/sites/default/files/topic/Parks/NetworkPlanPR0313.pdf",
+    "text": "Wisconsin State Trails Network Plan (2003)",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/3aace0_NetworkPlanPR0313.pdf",
+    "rows": 235,
+    "bike_rows": 141
+   },
+   {
+    "url": "https://dnr.wisconsin.gov/sites/default/files/topic/Parks/NetworkPlanPR0313Map_Statewide.pdf",
+    "text": "Statewide map",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/0bfbfd_NetworkPlanPR0313Map_Statewide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dnr.wisconsin.gov/sites/default/files/topic/Parks/NetworkPlanPR0313Map_NOR.pdf",
+    "text": "Northern Region map",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/53af13_NetworkPlanPR0313Map_NOR.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dnr.wisconsin.gov/sites/default/files/topic/Parks/NetworkPlanPR0313Map_NER.pdf",
+    "text": "Northeast Region map",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/ab8c8b_NetworkPlanPR0313Map_NER.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dnr.wisconsin.gov/sites/default/files/topic/Parks/NetworkPlanPR0313Map_SER.pdf",
+    "text": "Southeast Region map",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/cd363c_NetworkPlanPR0313Map_SER.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dnr.wisconsin.gov/sites/default/files/topic/Parks/NetworkPlanPR0313Map_SCR.pdf",
+    "text": "South Central Region map",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/5683c4_NetworkPlanPR0313Map_SCR.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dnr.wisconsin.gov/sites/default/files/topic/Parks/NetworkPlanPR0313Map_WCR.pdf",
+    "text": "West Central Region map",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/bcc30b_NetworkPlanPR0313Map_WCR.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dnr.wisconsin.gov/sites/default/files/topic/Parks/StateTrailsEasement.pdf",
+    "text": "Cooperative State Trail easement",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/781eae_StateTrailsEasement.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://widnr.widen.net/view/pdf/ox7lz08o3r/StateTrailsMOU.pdf",
+    "text": "Cooperative State Trail Memorandum of Understanding",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/f21bef_StateTrailsMOU.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dnr.wisconsin.gov/sites/default/files/topic/Parks/StateTrailsFederalLaw.pdf",
+    "text": "Rail-to-Trail process",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/9ed11f_StateTrailsFederalLaw.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://widnr.widen.net/view/pdf/mdiljjapty/FundingForWisconsinsTrails_PR-464.pdf",
+    "text": "Funding for Wisconsin's Trails",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/fa6919_FundingForWisconsinsTrails_PR-464.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://apps.dnr.wi.gov/doclink/forms/2500-131.pdf",
+    "text": "State Trails Council application",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/fac60f_2500-131.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/klvgxjxvj8/Map_A.pdf?u=pzjkuc",
+    "text": "Map A: Regional locator [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/1937a6_Map_A.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/xl5mtykahp/Map_B1.pdf?u=pzjkuc",
+    "text": "Map B1: DNR and other lands [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/07c0fb_Map_B1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/h7hmhfjlfd/Map_B2.pdf?u=pzjkuc",
+    "text": "Map B2: Land cover, by county [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/cdd5ca_Map_B2.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/qg1sfmnovb/Map_B3.pdf?u=pzjkuc",
+    "text": "Map B3: DNR property types [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/db1a13_Map_B3.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/xtv4uewdvx/Maps_C.pdf?u=pzjkuc",
+    "text": "Map C: Selected recreation infrastructure, by county [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/070f5e_Maps_C.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/mpi6zn3i9q/ULMC_Map_A.pdf?u=pzjkuc",
+    "text": "Map A: Regional locator [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/3bc10d_ULMC_Map_A.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/oz5nxownrp/ULMC_Map_B1.pdf?u=pzjkuc",
+    "text": "Map B1: DNR and other lands [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/a80005_ULMC_Map_B1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/pvm883znf8/ULMC_Map_B2.pdf?u=pzjkuc",
+    "text": "Map B2: Land Cover [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/1b7266_ULMC_Map_B2.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/muqvtbfncg/ULMC_Map_B3.pdf?u=pzjkuc",
+    "text": "Map B3: Land Designation [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/7a350b_ULMC_Map_B3.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/xjuzw8bllm/ULMC_Map_B4.pdf?u=pzjkuc",
+    "text": "Map B4: Civil Townships [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/493299_ULMC_Map_B4.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/t4bsgrk5if/ULMC_Maps_C.pdf?u=pzjkuc",
+    "text": "Map C: Winter Recreation and Infrastructure [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/10736c_ULMC_Maps_C.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/9qiynoz2vw/ULMC_Maps_D.pdf?u=pzjkuc",
+    "text": "Map D: Summer Recreation and Infrastructure [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/a3ac76_ULMC_Maps_D.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/2attazd8cg/ULMC_Maps_E.pdf?u=pzjkuc",
+    "text": "Map E: Trail Suitability [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/cd45a7_ULMC_Maps_E.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/vdb4rnxjl8/gnw_map_a.pdf?u=pzjkuc",
+    "text": "Map A: Regional locator [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/98d63d_gnw_map_a.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/6wpspxlsca/gnw_map_b1.pdf?u=pzjkuc",
+    "text": "Map B1: DNR and other lands [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/4185af_gnw_map_b1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/i2ngjvht0i/gnw_map_b2.pdf?u=pzjkuc",
+    "text": "Map B2: Land Cover [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/8f4b1d_gnw_map_b2.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/9wu8rifbxq/gnw_map_b3.pdf?u=pzjkuc",
+    "text": "Map B3: Land Designation [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/fde331_gnw_map_b3.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/coocxknl7i/gnw_map_b4.pdf?u=pzjkuc",
+    "text": "Map B4: Civil Townships [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/99c508_gnw_map_b4.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/uo0mwushyh/gnw_map_c.pdf?u=pzjkuc",
+    "text": "Map C: Winter Recreation Infrastructure [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/43e3bb_gnw_map_c.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/sdxnd3hyz7/gnw_map_d.pdf?u=pzjkuc",
+    "text": "Map D: Summer Recreation Infrastructure [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/acd355_gnw_map_d.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/cx7puwqklr/gnw_map_e.pdf?u=pzjkuc",
+    "text": "Map E: Soil Suitability for Trails [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/2e7863_gnw_map_e.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/b0a1atmitg/mrc_map_a.pdf?u=pzjkuc",
+    "text": "Map A: Regional locator [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/51dda1_mrc_map_a.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/cptmpphmyq/mrc_map_b1.pdf?u=pzjkuc",
+    "text": "Map B1: DNR and Other Lands [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/915117_mrc_map_b1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/afswdxtdpx/mrc_map_b2.pdf?u=pzjkuc",
+    "text": "Map B2: Land Cover [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/9e6323_mrc_map_b2.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/z0ap4htyt0/mrc_map_b3.pdf?u=pzjkuc",
+    "text": "Map B3: Land Designation [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/96adc7_mrc_map_b3.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/xm4tg9kc9n/mrc_map_b4.pdf?u=pzjkuc",
+    "text": "Map B4: Civil Townships [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/f87b7e_mrc_map_b4.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://embed.widencdn.net/pdf/plus/widnr/mblxh1z8lv/mrc_map_c.pdf?u=pzjkuc",
+    "text": "Map C: Winter Recreation Infrastructure [PDF]",
+    "file": "data/gov_sources/parks_dnr_wisconsin_gov/0d9e6f_mrc_map_c.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://wi-dnr.maps.arcgis.com/home/item.html?id=dabc4671b80f4837a7511ca5fcfb7fef": "License Sales Agent",
+   "https://data-wi-dnr.opendata.arcgis.com/": "DNR Open Data Portal",
+   "http://docs.legis.wisconsin.gov/statutes/statutes/27/01/8": "27.01(8)",
+   "http://docs.legis.wisconsin.gov/statutes/statutes/27/01/8/c/": "27.01(8)(c)",
+   "http://docs.legis.wisconsin.gov/code/admin_code/nr/001/45": "Chapter NR 45",
+   "https://storymaps.arcgis.com/stories/755a6673229f40069a9e666efe7c7fd4": "Eau Claire County",
+   "https://experience.arcgis.com/experience/b288ad9756f2404db2e35f6e28763baf/page/Trails-Map/": "View the Interactive Trails Network Plan Map (2023 Update)",
+   "https://storymaps.arcgis.com/stories/8cdf6c4573b7494a8695880b1cc1c585": "History and Timeline of the Wisconsin State Park System",
+   "http://docs.legis.wisconsin.gov/statutes/statutes/15/II/347": "statute 15.347(16)",
+   "https://storymaps.arcgis.com/stories/114cbdd2fc9945349b8c272e1ec6ec89": "Trail History and Story Map",
+   "https://experience.arcgis.com/experience/115281ef97864071a111f2db897ff3b0": "Launch Dog Training and Trialing Online Mapping Application",
+   "https://survey123.arcgis.com/share/f57cba58511a4c99b1d1292776b05125": "Report an Observation",
+   "https://wi-dnr.maps.arcgis.com/apps/opsdashboard/index.html": "Full page view of the CWD sample and disposal locations"
+  }
+ },
+ "gis:data.georgiaspatial.org": {
+  "files": [],
+  "portals": {
+   "https://data.georgiaspatial.org/CreateNewAccount.asp": "here",
+   "https://data.georgiaspatial.org/login_trouble.asp": "Trouble logging in?  Click here..."
+  }
+ },
+ "gis:gis-michigan.opendata.arcgis.com": {
+  "files": [],
+  "portals": {}
+ },
+ "gis:gis.ny.gov": {
+  "files": [
+   {
+    "url": "https://gisdata.ny.gov/elevation/DEM/support/indexes/1-meter-DEM-NYS-index.zip",
+    "text": "NYS 1 Meter DEM",
+    "file": "data/gov_sources/gis_gis_ny_gov/07665c_1-meter-DEM-NYS-index.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisdata.ny.gov/elevation/DEM/support/indexes/2-meter-DEM-nys-index.zip",
+    "text": "NYS 2 Meter DEM",
+    "file": "data/gov_sources/gis_gis_ny_gov/fb8c9e_2-meter-DEM-nys-index.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisdata.ny.gov/elevation/DEM/support/indexes/2-meter-DEM-County.zip",
+    "text": "County 2 Meter DEM",
+    "file": "data/gov_sources/gis_gis_ny_gov/755b7d_2-meter-DEM-County.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisdata.ny.gov/elevation/DEM/support/indexes/07-Meter-DEM-USGS.zip",
+    "text": "USGS 0.7 Meter DEM",
+    "file": "data/gov_sources/gis_gis_ny_gov/cc1ffb_07-Meter-DEM-USGS.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisdata.ny.gov/elevation/DEM/support/indexes/1-Meter-DEM-USGS.zip",
+    "text": "USGS 1 Meter DEM",
+    "file": "data/gov_sources/gis_gis_ny_gov/4db9b9_1-Meter-DEM-USGS.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisdata.ny.gov/elevation/DEM/support/indexes/Northeast-lidar-2-Meter-DEM-Index.zip",
+    "text": "USGS 2 Meter DEM",
+    "file": "data/gov_sources/gis_gis_ny_gov/0fbf48_Northeast-lidar-2-Meter-DEM-Index.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisdata.ny.gov/elevation/DEM/support/indexes/1-Meter-DEM-FEMA.zip",
+    "text": "FEMA 1 Meter DEM",
+    "file": "data/gov_sources/gis_gis_ny_gov/991410_1-Meter-DEM-FEMA.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisdata.ny.gov/elevation/DEM/support/indexes/FEMA-2-Meter-Index.zip",
+    "text": "FEMA 2 Meter DEM",
+    "file": "data/gov_sources/gis_gis_ny_gov/189a20_FEMA-2-Meter-Index.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisdata.ny.gov/elevation/DEM/support/indexes/1-meter-DEM-USDA.zip",
+    "text": "USDA 1 Meter DEM",
+    "file": "data/gov_sources/gis_gis_ny_gov/7853ac_1-meter-DEM-USDA.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisdata.ny.gov/elevation/DEM/support/indexes/NOAA-1-Meter-Index-TidalWater.zip",
+    "text": "Coastal 1 Meter Tidal Water Raster DEM",
+    "file": "data/gov_sources/gis_gis_ny_gov/431276_NOAA-1-Meter-Index-TidalWater.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gisdata.ny.gov/elevation/DEM/support/indexes/NOAA-1-Meter-Index-HydroFlattened.zip",
+    "text": "Coastal 1 Meter Hydro Flattened DEM",
+    "file": "data/gov_sources/gis_gis_ny_gov/c8d80a_NOAA-1-Meter-Index-HydroFlattened.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nysgeohub.ny.gov/arcgis/rest/services/Boundaries/NYS_Civil_Boundaries/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_gis_ny_gov/99efed_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nysgeohub.ny.gov/arcgis/rest/services/Basemap/NYS_Building_Footprints/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_gis_ny_gov/94f20b_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nysgeohub.ny.gov/arcgis/rest/services/Boundaries/NYS_Assembly_Districts/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_gis_ny_gov/a1e427_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nysgeohub.ny.gov/arcgis/rest/services/Boundaries/NYS_Congressional_Districts/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_gis_ny_gov/77bc23_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nysgeohub.ny.gov/arcgis/rest/services/Boundaries/NYS_Senate_Districts/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_gis_ny_gov/f00653_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nysgeohub.ny.gov/arcgis/rest/services/Boundaries/US_Senate_Districts/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_gis_ny_gov/22121c_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nysgeohub.ny.gov/arcgis/rest/services/Education/NYS_Schools/MapServer/kml/mapImage.kmz",
+    "text": "ArcGIS Earth",
+    "file": "data/gov_sources/gis_gis_ny_gov/9d79f1_mapImage.kmz",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.ny.gov": "Scroll back to the top of the page",
+   "https://gis.ny.gov/": "NYS GIS Clearinghouse",
+   "https://data.gis.ny.gov/": "GIS Data",
+   "https://gis.ny.gov/coordination-program": "Overview",
+   "https://gis.ny.gov/geospatial-advisory-council": "Geospatial Advisory Council",
+   "https://gis.ny.gov/state-agency-advisory-group": "State Agency Advisory Group",
+   "https://gis.ny.gov/data-sharing-cooperative": "Data  Sharing Cooperative",
+   "https://gis.ny.gov/gis-organizations": "GIS Organizations",
+   "https://whoswho.gis.ny.gov/whoswho/": "GIS Who's Who",
+   "https://gis.ny.gov/migration-web-services": "New web service urls",
+   "https://gis.ny.gov/parcels": "Parcels",
+   "https://gis.ny.gov/streets-addresses": "Streets & Addresses",
+   "https://gis.ny.gov/orthoimagery": "Orthoimagery",
+   "https://gis.ny.gov/elevation-0": "Elevation",
+   "https://gis.ny.gov/civil-boundaries": "Civil Boundaries",
+   "https://gis.ny.gov/hydrography": "Hydrography",
+   "https://gis.ny.gov/coming-soon-geohub": "GeoHub",
+   "https://sac-sharegisny.hub.arcgis.com/": "GIS Resources for NYS Agencies",
+   "https://gis.ny.gov/gis-nys-agencies": "GIS at NYS Agencies",
+   "https://gis.ny.gov/frequently-asked-questions": "FAQs",
+   "https://gis.ny.gov/about-us": "Contact Us",
+   "https://data.gis.ny.gov": "Data, Maps, & Apps",
+   "https://gis.ny.gov/migration-services": "here",
+   "https://gis.ny.gov/nys-geocoding-service": "New geocoding service",
+   "https://gis.ny.gov/data-discovery-site": "Data Discovery",
+   "https://gis.ny.gov/coordination": "Coordination",
+   "https://gis.ny.gov/programs": "Programs",
+   "https://gis.ny.gov/accessibility": "Accessibility",
+   "https://gis.ny.gov/disclaimer": "Disclaimer",
+   "https://gis.ny.gov/privacy-policy": "Privacy Policy"
+  }
+ },
+ "gis:tnmap.tn.gov": {
+  "files": [
+   {
+    "url": "https://tnmap.tn.gov/NG911/NAD_Documentation.pdf",
+    "text": "TN NAD Document",
+    "file": "data/gov_sources/gis_tnmap_tn_gov/99ee2b_NAD_Documentation.pdf",
+    "rows": 25,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://msc.fema.gov/msccontent/Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "text": "Flood\n\t\t\t\t\t\tHazard Mapping Updates Overview Fact Sheet",
+    "file": "data/gov_sources/gis_tnmap_tn_gov/9a4d0e_Flood_Hazard_Mapping_Updates_Overview_Fact_Sheet.pdf",
+    "rows": 52,
+    "bike_rows": 11
+   }
+  ],
+  "portals": {
+   "https://tnmap.maps.arcgis.com/apps/Viewer/index.html?appid=77e5ec4e859445879f5254007cdba00d": "USGS 3DEP LiDAR Status Map",
+   "https://tnmap.maps.arcgis.com/apps/MapTour/index.html?appid=c5a9584b8d4f4c96b508833a60699fb0&webmap=6287db6404ae42b197c8b6c491b3c792": "TN State Capitol Monuments",
+   "https://tnmap.tn.gov/opendata": "Live Chat: Offline",
+   "https://tnmap.tn.gov/open-data": "Live Chat: Offline",
+   "https://www.tn.gov/content/tn/finance/sts-gis.html": "GIS-related",
+   "https://www.tngis.org/": "Tngis.org",
+   "https://www.midsouthgis.org/": "MAGIC",
+   "https://www.tn.gov/finance/sts-gis/gis.html": "STS GIS",
+   "https://tnmap.maps.arcgis.com/apps/View/index.html?appid=a1c38d759dc14971bc0037cf94cebc3e": "link to example",
+   "https://gis-twra.hub.arcgis.com/": "TWRA — GIS Data Hub",
+   "https://tnema.maps.arcgis.com/home/index.html": "TEMA - GIS",
+   "http://tnmap.maps.arcgis.com/apps/Viewer/index.html?appid=77e5ec4e859445879f5254007cdba00d": "USGS 3DEP LiDAR Status Map",
+   "http://tnmap.maps.arcgis.com/apps/MapTour/index.html?appid=c5a9584b8d4f4c96b508833a60699fb0&webmap=6287db6404ae42b197c8b6c491b3c792": "TN State Capitol Monuments",
+   "https://www.tn.gov/finance/sts-gis/gis/gis-resources-news-events/gis-instructional-videos/using-tn-lidar-derivatives-in-qgis.html": "Using TN LiDAR derivatives in QGIS",
+   "https://tngis.org": "TN GIS Data Clearinghouse",
+   "https://geodata.tn.gov/pages/ng911-data": "NG 9-1-1 GIS Data",
+   "http://www.tn.gov/content/tn/finance/sts-gis.html": "STS GIS",
+   "http://www.tn.gov/finance/sts-gis/gis.html": "STS GIS",
+   "mailto:gis.data@cot.tn.gov": "GIS.Data@cot.tn.gov",
+   "mailto:GIS.Data@cot.tn.gov": "GIS.Data@cot.tn.gov",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd": "NFHL on FEMA GeoPlatform",
+   "https://resources.arcgis.com/en/help/main/10.1/index.html": "the topic on the ESRI help site"
+  }
+ }
+}
