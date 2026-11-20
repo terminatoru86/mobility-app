@@ -1,37 +1,65 @@
 [
 {
-"city": "Clearwater",
-"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/FeatureServer/5",
+"city": "Ames",
+"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/FeatureServer/34",
 "name": "Bike Racks",
-"count": 75,
+"count": 421,
 "cat": "racks"
 },
 {
-"city": "Clearwater",
-"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/MapServer/5",
+"city": "Ames",
+"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/MapServer/34",
 "name": "Bike Racks",
-"count": 75,
+"count": 421,
 "cat": "racks"
 },
 {
-"city": "Clearwater",
-"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/FeatureServer/32",
-"name": "PR_Bike_Racks",
-"count": 110,
-"cat": "racks"
+"city": "Hilton Head Island",
+"url": "https://maps.hiltonheadislandsc.gov/server/rest/services/Bike_Repair/FeatureServer/0",
+"name": "Bike Repair Station Edits",
+"count": 6,
+"cat": "repair"
 },
 {
-"city": "Clearwater",
-"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/MapServer/32",
-"name": "PR_Bike_Racks",
-"count": 110,
-"cat": "racks"
+"city": "Hilton Head Island",
+"url": "https://maps.hiltonheadislandsc.gov/server/rest/services/Bike_Repair/MapServer/0",
+"name": "Bike Repair Station Edits",
+"count": 6,
+"cat": "repair"
 },
 {
-"city": "Humboldt County",
-"url": "https://gis.eurekaca.gov/server/rest/services/MainServiceLayers/Transportation_Services/MapServer/2",
-"name": "Bike Parking",
-"count": 73,
+"city": "Hilton Head Island",
+"url": "https://maps.hiltonheadislandsc.gov/server/rest/services/FieldEdits/Bike_Repair_Station_Field_Edits/FeatureServer/0",
+"name": "Bike Repair Station Edits",
+"count": 6,
+"cat": "repair"
+},
+{
+"city": "Hilton Head Island",
+"url": "https://maps.hiltonheadislandsc.gov/server/rest/services/FieldEdits/Bike_Repair_Station_Field_Edits/MapServer/0",
+"name": "Bike Repair Station Edits",
+"count": 6,
+"cat": "repair"
+},
+{
+"city": "Hilton Head Island",
+"url": "https://maps.hiltonheadislandsc.gov/server/rest/services/Transportation/Bike_Repair_Stations/FeatureServer/20",
+"name": "Bike Repair Stations",
+"count": 0,
+"cat": "repair"
+},
+{
+"city": "Hilton Head Island",
+"url": "https://maps.hiltonheadislandsc.gov/server/rest/services/Transportation/Bike_Repair_Stations/MapServer/20",
+"name": "Bike Repair Stations",
+"count": 3,
+"cat": "repair"
+},
+{
+"city": "Greenwood",
+"url": "https://greenwoodgis.greenwood.in.gov/arcgis/rest/services/Parks_Department/Bike_Racks/MapServer/0",
+"name": "Bike Racks",
+"count": 24,
 "cat": "racks"
 }
 ]

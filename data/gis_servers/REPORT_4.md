@@ -1,11 +1,15 @@
 # GIS servers, shard 4/20
 
-Sites: 36 · layers: 5 · points: 443
+Sites: 106 · layers: 9 · points: 893
 
 | Place | Layer | Category | Points | URL |
 |---|---|---|---|---|
-| Clearwater | Bike Racks | racks | 75 | https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/FeatureServer/5 |
-| Clearwater | Bike Racks | racks | 75 | https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/MapServer/5 |
-| Clearwater | PR_Bike_Racks | racks | 110 | https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/FeatureServer/32 |
-| Clearwater | PR_Bike_Racks | racks | 110 | https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/MapServer/32 |
-| Humboldt County | Bike Parking | racks | 73 | https://gis.eurekaca.gov/server/rest/services/MainServiceLayers/Transportation_Services/MapServer/2 |
+| Ames | Bike Racks | racks | 421 | https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/FeatureServer/34 |
+| Ames | Bike Racks | racks | 421 | https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/MapServer/34 |
+| Hilton Head Island | Bike Repair Station Edits | repair | 6 | https://maps.hiltonheadislandsc.gov/server/rest/services/Bike_Repair/FeatureServer/0 |
+| Hilton Head Island | Bike Repair Station Edits | repair | 6 | https://maps.hiltonheadislandsc.gov/server/rest/services/Bike_Repair/MapServer/0 |
+| Hilton Head Island | Bike Repair Station Edits | repair | 6 | https://maps.hiltonheadislandsc.gov/server/rest/services/FieldEdits/Bike_Repair_Station_Field_Edits/FeatureServer/0 |
+| Hilton Head Island | Bike Repair Station Edits | repair | 6 | https://maps.hiltonheadislandsc.gov/server/rest/services/FieldEdits/Bike_Repair_Station_Field_Edits/MapServer/0 |
+| Hilton Head Island | Bike Repair Stations | repair | 0 | https://maps.hiltonheadislandsc.gov/server/rest/services/Transportation/Bike_Repair_Stations/FeatureServer/20 |
+| Hilton Head Island | Bike Repair Stations | repair | 3 | https://maps.hiltonheadislandsc.gov/server/rest/services/Transportation/Bike_Repair_Stations/MapServer/20 |
+| Greenwood | Bike Racks | racks | 24 | https://greenwoodgis.greenwood.in.gov/arcgis/rest/services/Parks_Department/Bike_Racks/MapServer/0 |
