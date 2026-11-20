@@ -18,7 +18,7 @@ jobs:
       fail-fast: false
       max-parallel: 2
       matrix:
-        region: [us-midwest, us-northeast, us-pacific, us-south, us-west, us/puerto-rico]
+        region: [us-midwest, us-northeast, us-pacific, us-south, us-west]
     steps:
       - uses: actions/checkout@v4
       - name: Tools

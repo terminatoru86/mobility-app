@@ -10,11 +10,19 @@ import os
 import sys
 
 
+BANNED = [(17.4, -68.2, 18.9, -65.0)]  # Puerto Rico: not covered by the app (owner's decision)
+
+
+def banned(r):
+    ln = (r.get('lines') or [[]])[0]
+    return len(ln) >= 2 and any(a <= ln[0] < c and b <= ln[1] < d for a, b, c, d in BANNED)
+
+
 def main(out, files):
     recs, seen = [], set()
     for f in files:
         for r in json.load(open(f, encoding='utf-8')):
-            if r['id'] in seen:
+            if r['id'] in seen or banned(r):
                 continue
             seen.add(r['id'])
             r.setdefault('source', 'OpenStreetMap')

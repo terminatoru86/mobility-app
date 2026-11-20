@@ -31,8 +31,14 @@ OVERPASS = [
     'https://overpass.private.coffee/api/interpreter',
     'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
 ]
-# lower 48, Alaska, Hawaii, Puerto Rico
-REGIONS = [(24, -125, 50, -66), (51, -170, 72, -129), (18, -161, 23, -154), (17, -68, 19, -65)]
+# lower 48, Alaska, Hawaii (Puerto Rico is left out on purpose: owner's decision, see BANNED)
+REGIONS = [(24, -125, 50, -66), (51, -170, 72, -129), (18, -161, 23, -154)]
+# areas the app does not cover, whatever a source sends: (lat0, lon0, lat1, lon1)
+BANNED = [(17.4, -68.2, 18.9, -65.0)]  # Puerto Rico
+
+
+def banned(lat, lon):
+    return any(a <= lat < c and b <= lon < d for a, b, c, d in BANNED)
 KEEP = {
     'amenity', 'bicycle_parking', 'capacity', 'covered', 'fee', 'access', 'lit', 'surveillance', 'name', 'brand', 'manufacturer',
     'network', 'operator', 'shop', 'bicycle', 'bicycle_rental', 'motorcycle', 'scooter', 'small_electric_vehicle',
@@ -945,7 +951,7 @@ def fetch_alltheplaces():
                     seen_all[(spider, country)] = seen_all.get((spider, country), 0) + 1
                     # the US by the country written, or, when none is written, by where the point is
                     inside = any(a <= lat < c and b <= lon < d for a, b, c, d in REGIONS)
-                    if not (country in ('US', 'USA', 'PR', 'UNITED STATES') or (not country and inside)) or not inside:
+                    if not (country in ('US', 'USA', 'UNITED STATES') or (not country and inside)) or not inside:
                         continue
                     tags = {'shop': p['shop']} if p.get('shop') in ATP_SHOPS else {'amenity': 'bicycle_rental'}
                     street = p.get('addr:street_address') or ' '.join(x for x in (p.get('addr:housenumber'), p.get('addr:street')) if x) or p.get('addr:full')
@@ -1483,6 +1489,19 @@ def main():
     # only the US (some sources have places abroad or broken coordinates)
     for k in [k for k in tiles if not (17 <= k[0] < 72 and -180 <= k[1] < -64)]:
         tiles.pop(k)
+    n_ban = 0
+    for k in list(tiles):
+        for key in [key for key, r in tiles[k].items() if banned(r[1], r[2])]:
+            tiles[k].pop(key)
+            n_ban += 1
+        if not tiles[k]:
+            tiles.pop(k)
+            for ext in ('.json.gz', '.json'):
+                fp = os.path.join(OUT, f't_{k[0]}_{k[1]}{ext}')
+                if os.path.exists(fp):
+                    os.remove(fp)
+    if n_ban:
+        print(f'left out (areas not covered, e.g. Puerto Rico): {n_ban}', flush=True)
     os.makedirs(OUT, exist_ok=True)
     if not args and '--extra-only' not in sys.argv and not refresh:
         # full build: pieces that no longer have places are removed

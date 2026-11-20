@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Every bike rack Mapillary has detected in street photos, over the whole US (lower 48, Alaska, Hawaii,
-Puerto Rico), through the Graph API map_features search (10,000 requests / minute per app), not the
+"""Every bike rack Mapillary has detected in street photos, over the whole US (lower 48, Alaska, Hawaii;
+Puerto Rico left out), through the Graph API map_features search (10,000 requests / minute per app), not the
 vector tiles (50,000 / day). The country is cut into cells of 0.099 x 0.099 degrees (the API wants
 less than 0.01 square degrees); cells outside the US are skipped; a cell with 2,000 answers (the most
 one call returns) is cut in four and asked again. No time limit: a shard runs until its cells are done.
@@ -25,8 +25,7 @@ THREADS = int(os.environ.get('THREADS', 6))
 PER_MIN = int(os.environ.get('PER_MIN', 400))       # this shard's share of the 10,000 / minute
 OUT = os.path.join(ROOT, 'data', 'mapillary')
 STEP = 0.099
-AREAS = [(-125.0, 24.3, -66.8, 49.5), (-170.0, 51.0, -129.9, 71.5), (-160.4, 18.8, -154.7, 22.4),
-         (-67.4, 17.8, -65.1, 18.6)]
+AREAS = [(-125.0, 24.3, -66.8, 49.5), (-170.0, 51.0, -129.9, 71.5), (-160.4, 18.8, -154.7, 22.4)]  # no Puerto Rico
 VALUES = 'object--bike-rack'
 
 

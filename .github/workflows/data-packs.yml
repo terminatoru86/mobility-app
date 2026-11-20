@@ -1,6 +1,6 @@
 name: Data packs (whole US, fast)
 
-# OpenStreetMap from the Geofabrik extracts (5 US regions + Puerto Rico, in parallel, ~20-40 min),
+# OpenStreetMap from the Geofabrik extracts (5 US regions (no Puerto Rico), in parallel, ~20-40 min),
 # then the city halls, the automatic discovery (ArcGIS Online + Socrata), MBTA and Overture.
 # Packs are gzip-compressed 1° pieces in assets/osm/tiles.
 on:
@@ -25,7 +25,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        region: [us-midwest, us-northeast, us-pacific, us-south, us-west, us/puerto-rico]
+        region: [us-midwest, us-northeast, us-pacific, us-south, us-west]
     steps:
       - uses: actions/checkout@v4
       - name: Tools
