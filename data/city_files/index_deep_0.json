@@ -1,0 +1,1862 @@
+{
+ "Houston TX": {
+  "files": [
+   {
+    "url": "https://www.houstontx.gov/parking/images/smart-loading-zone-sign.pdf",
+    "text": "",
+    "file": "data/city_files/Houston_TX/a2056c_smart-loading-zone-sign.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/resolveacitation-spanish.pdf",
+    "text": "Resolve A Citation - Espanol (.pdf)",
+    "file": "data/city_files/Houston_TX/10f16d_resolveacitation-spanish.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/bikelanes/bike-lane-info-card-english.pdf",
+    "text": "English (.pdf)",
+    "file": "data/city_files/Houston_TX/f9d45c_bike-lane-info-card-english.pdf",
+    "rows": 14,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/bikelanes/bike-lane-info-card-spanish.pdf",
+    "text": "Spanish (.pdf)",
+    "file": "data/city_files/Houston_TX/bbbb33_bike-lane-info-card-spanish.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/Bicycle-Driver-Training-Request-Form.pdf",
+    "text": "submit  an application (.pdf)",
+    "file": "data/city_files/Houston_TX/1855ef_Bicycle-Driver-Training-Request-Form.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/permitapplications/almeda-corridor-permit-application.pdf",
+    "text": "Almeda Corridor Community Parking Program Permit Application",
+    "file": "data/city_files/Houston_TX/afe6b0_almeda-corridor-permit-application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/permitapplications/ccp-business.pdf",
+    "text": "Community Parking Program Permit - Business",
+    "file": "data/city_files/Houston_TX/e67d1e_ccp-business.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/permitapplications/cpp-resident.pdf",
+    "text": "Community Parking Program Permit - Resident",
+    "file": "data/city_files/Houston_TX/ef423c_cpp-resident.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/permitapplications/declaration.pdf",
+    "text": "Declaration  of Non Ownership Form",
+    "file": "data/city_files/Houston_TX/eabbd0_declaration.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/permitapplications/valetspecialevents.pdf",
+    "text": "Special Events Valet Parking",
+    "file": "data/city_files/Houston_TX/4c1058_valetspecialevents.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/permitapplications/txmotorvehicletransfer.pdf",
+    "text": "Texas  Motor Vehicle Transfer Notification form",
+    "file": "data/city_files/Houston_TX/f05a2a_txmotorvehicletransfer.pdf",
+    "rows": 21,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/pbd_permit_application.pdf",
+    "text": "PBD Permit Application",
+    "file": "data/city_files/Houston_TX/ef6681_pbd_permit_application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/Large-Vehicle-Enforcement.pdf",
+    "text": "Large Vehicles in Neighborhoods Presentation (.pdf)",
+    "file": "data/city_files/Houston_TX/a343e0_Large-Vehicle-Enforcement.pdf",
+    "rows": 15,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/Park-Houston-Resident-Discount.pdf",
+    "text": "ParkHouston Resident Discount Program",
+    "file": "data/city_files/Houston_TX/e0757a_Park-Houston-Resident-Discount.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/pdf/pay_by_plate.pdf",
+    "text": "Learn how to use the  new pay stations (.pdf)",
+    "file": "data/city_files/Houston_TX/a91a01_pay_by_plate.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/solving-the-parking-puzzle.pdf",
+    "text": "Click to check your answers",
+    "file": "data/city_files/Houston_TX/bad2d2_solving-the-parking-puzzle.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/Residential-Permit-Parking-Prices.xlsx",
+    "text": "Residential Permit Parking Prices",
+    "file": "data/city_files/Houston_TX/7926f5_Residential-Permit-Parking-Prices.xlsx",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/rpp-overview-2025march.pdf",
+    "text": "Residential Permit Parking Overview Presentation",
+    "file": "data/city_files/Houston_TX/a8ce60_rpp-overview-2025march.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/permitapplications/pending-rpp-application.pdf",
+    "text": "Pending Residential Permit Parking Applications (.pdf, updated September 2023)",
+    "file": "data/city_files/Houston_TX/e26d7e_pending-rpp-application.pdf",
+    "rows": 6,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/Parking-Regulations-and-Violations.pdf",
+    "text": "Parking Regs / Violations Table (.pdf)",
+    "file": "data/city_files/Houston_TX/888d21_Parking-Regulations-and-Violations.pdf",
+    "rows": 43,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-washington-ave-pbd-20260609.pdf",
+    "text": "PBD Meeting Agenda (06.09.2026)",
+    "file": "data/city_files/Houston_TX/ea06f0_agenda-washington-ave-pbd-20260609.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-washington-ave-pbd-20260310.pdf",
+    "text": "PBD Meeting Agenda (03.10.2026)",
+    "file": "data/city_files/Houston_TX/11f89f_agenda-washington-ave-pbd-20260310.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-washington-ave-pbd-20250527.pdf",
+    "text": "PBD Meeting Agenda (05.27.2025)",
+    "file": "data/city_files/Houston_TX/a56522_agenda-washington-ave-pbd-20250527.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-washington-ave-pbd-20250305.pdf",
+    "text": "PBD Meeting Agenda (03.05.2025)",
+    "file": "data/city_files/Houston_TX/5520ee_agenda-washington-ave-pbd-20250305.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-washington-ave-pbd-20250225.pdf",
+    "text": "PBD Meeting Agenda (02.25.2025)",
+    "file": "data/city_files/Houston_TX/1f3225_agenda-washington-ave-pbd-20250225.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-washington-ave-pbd-20241008.pdf",
+    "text": "PBD Meeting Agenda (10.08.2024)",
+    "file": "data/city_files/Houston_TX/2c6609_agenda-washington-ave-pbd-20241008.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-washington-avenue-pbd-20240213.pdf",
+    "text": "PBD Meeting Agenda (02.13.2024)",
+    "file": "data/city_files/Houston_TX/91ba2f_agenda-washington-avenue-pbd-20240213.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-washington-avenue-pbd-20240109.pdf",
+    "text": "PBD Meeting Agenda (01.09.2024)",
+    "file": "data/city_files/Houston_TX/487563_agenda-washington-avenue-pbd-20240109.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-20231114.pdf",
+    "text": "PBD Meeting Agenda (11.14.2023)",
+    "file": "data/city_files/Houston_TX/52016b_agenda-20231114.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-20230925.pdf",
+    "text": "PBD Meeting Agenda (09.25.2023)",
+    "file": "data/city_files/Houston_TX/2833bc_agenda-20230925.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-20230822.pdf",
+    "text": "PBD Meeting Agenda (08.22.2023)",
+    "file": "data/city_files/Houston_TX/b4cdd4_agenda-20230822.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-20230620.pdf",
+    "text": "PBD Meeting Agenda (06.20.2023)",
+    "file": "data/city_files/Houston_TX/4c785c_agenda-20230620.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-20230517.pdf",
+    "text": "PBD Meeting Agenda (05.17.2023)",
+    "file": "data/city_files/Houston_TX/85039e_agenda-20230517.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda_03212023.pdf",
+    "text": "PBD Meeting Agenda (03.21.2023)",
+    "file": "data/city_files/Houston_TX/ff7b4a_agenda_03212023.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-20230228.pdf",
+    "text": "PBD Meeting Agenda (02.28.2023)",
+    "file": "data/city_files/Houston_TX/8dacda_agenda-20230228.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-20230117.pdf",
+    "text": "PBD Meeting Agenda (01.17.2023)",
+    "file": "data/city_files/Houston_TX/3fe566_agenda-20230117.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-20221115.pdf",
+    "text": "PBD Meeting Agenda (11.15.2022)",
+    "file": "data/city_files/Houston_TX/794cb7_agenda-20221115.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda-20221018.pdf",
+    "text": "PBD Meeting Agenda (10.18.2022)",
+    "file": "data/city_files/Houston_TX/269ea6_agenda-20221018.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda20220920.pdf",
+    "text": "PBD Meeting Agenda (09.20.2022)",
+    "file": "data/city_files/Houston_TX/bbf64a_agenda20220920.pdf",
+    "rows": 10,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.houstontx.gov/parking/washingtonavenue/agenda20220816.pdf",
+    "text": "PBD Meeting Agenda (08.16.2022)",
+    "file": "data/city_files/Houston_TX/0ffb52_agenda20220816.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://data.houstontx.gov/": "Open Data",
+   "https://data.houstontx.gov/pages/openfinance": "Open\n\t\t\t\t\t\t\t\tFinance",
+   "https://data.houstontx.gov": "Open Data",
+   "http://data.houstontx.gov/": "Open Data",
+   "https://mycity.maps.arcgis.com/apps/webappviewer/index.html?id=7073a31bffaa44e49c49ecd45792ea7a": "Larger Map of Residential Permit Parking Areas"
+  }
+ },
+ "Lubbock TX": {
+  "files": [],
+  "portals": {}
+ },
+ "San Diego": {
+  "files": [
+   {
+    "url": "https://sandiego.gov/sites/default/files/2026-11/2026-11-19-city-proposes-parking-policy-changes-to-deliver-more-neighborhood-improvements-strengthen-transparency.pdf",
+    "text": "City Proposes Parking Policy Changes to Deliver More Neighborhood Improvements, Strengthen Transparency",
+    "file": "data/city_files/San_Diego/0ac36b_2026-11-19-city-proposes-parking-policy-changes-to-deliver-more-neighb",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2026-10/2026-10-23-mayor-gloria-highlights-in-house-major-road-repairs-on-rancho-bernardo-street-after-nearly-40-years.pdf",
+    "text": "Mayor Gloria Highlights In-House Major Road Repairs on Rancho Bernardo Street After Nearly 40 Years",
+    "file": "data/city_files/San_Diego/4e4648_2026-10-23-mayor-gloria-highlights-in-house-major-road-repairs-on-ranc",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://docs.sandiego.gov/municode/MuniCodeChapter08/Ch08Art06Division01.pdf",
+    "text": "San Diego Muni Code 86.01-86.30 - General Parking Regulations",
+    "file": "data/city_files/San_Diego/2deac6_Ch08Art06Division01.pdf",
+    "rows": 28,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2024-03/prluxurypicnicsitesmissionbay.pdf",
+    "text": "Map",
+    "file": "data/city_files/San_Diego/20ed2e_prluxurypicnicsitesmissionbay.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2024-03/prluxurypicnicsitesshoreline.pdf",
+    "text": "Maps",
+    "file": "data/city_files/San_Diego/13631e_prluxurypicnicsitesshoreline.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2024-03/prluxurypicnicsitesbalboa.pdf",
+    "text": "Maps",
+    "file": "data/city_files/San_Diego/6c69fc_prluxurypicnicsitesbalboa.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2024-04/nonprofit-surf-camp-sites-overview-map.pdf",
+    "text": "View a map of locations designated for nonprofit surf camps",
+    "file": "data/city_files/San_Diego/125e69_nonprofit-surf-camp-sites-overview-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2025-07/route6coffeeandsmoothies.pdf",
+    "text": "Route 6 Coffee and Smoothies Sublicense Agreement",
+    "file": "data/city_files/San_Diego/fac960_route6coffeeandsmoothies.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/legacy/park-and-recreation/pdf/parkdesign/bpparkingmanagementplan.pdf",
+    "text": "Parking Management Action Plan",
+    "file": "data/city_files/San_Diego/916ce3_bpparkingmanagementplan.pdf",
+    "rows": 220,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/legacy/park-and-recreation/pdf/trammap.pdf",
+    "text": "Balboa Park Tram Route Map",
+    "file": "data/city_files/San_Diego/396732_trammap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/legacy/park-and-recreation/pdf/bpmap.pdf",
+    "text": "Balboa Park Facilities Map",
+    "file": "data/city_files/San_Diego/3a7b41_bpmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/parking_pdf_payment_plan_factsheet.pdf",
+    "text": "factsheet.",
+    "file": "data/city_files/San_Diego/76b322_parking_pdf_payment_plan_factsheet.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/dsdds4100.pdf",
+    "text": "Grading/Right-of Way/Mapping Application Extension",
+    "file": "data/city_files/San_Diego/2cc9b5_dsdds4100.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2026-11/2026-11-17-city-of-san-diego-expands-sidewalk-repair-program-helping-many-property-owners-save-thousands.pdf",
+    "text": "City of San Diego Expands Sidewalk Repair Program, Helping Many Property Owners Save Thousands",
+    "file": "data/city_files/San_Diego/a240b0_2026-11-17-city-of-san-diego-expands-sidewalk-repair-program-helping-m",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2026-11/dsd_sidewalk_repair.pdf",
+    "text": "Sidewalk Panel Replacement Expedite Program Now Available for Eligible Property Owners",
+    "file": "data/city_files/San_Diego/9c8992_dsd_sidewalk_repair.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/legacy/parking/pdf/parkingrulesfactsheet.pdf",
+    "text": "New Neighborhood Parking Rules Fact Sheet (PDF)",
+    "file": "data/city_files/San_Diego/990372_parkingrulesfactsheet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.sandiego.gov/sites/default/files/recycled_water_policy_fact_sheet.pdf",
+    "text": "Fact Sheet",
+    "file": "data/city_files/San_Diego/f7826f_recycled_water_policy_fact_sheet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sandiego.gov/sites/default/files/recycled_water_policy_faq.pdf",
+    "text": "FAQ",
+    "file": "data/city_files/San_Diego/7fb44d_recycled_water_policy_faq.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/steps_to_getting_connected_to_recycled_water.pdf",
+    "text": "Steps to Getting Connected to Recycled Water",
+    "file": "data/city_files/San_Diego/391a37_steps_to_getting_connected_to_recycled_water.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/faq_recycled_water.pdf",
+    "text": "Frequently Asked Questions",
+    "file": "data/city_files/San_Diego/143b4d_faq_recycled_water.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sandiego.gov/sites/default/files/leash-free-county-dog-park-map.pdf",
+    "text": "Map of Leash Free Locations in San Diego County",
+    "file": "data/city_files/San_Diego/91a28b_leash-free-county-dog-park-map.pdf",
+    "rows": 43,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2023-7-31_downtown_streetlights_complete.pdf",
+    "text": "Hundreds of streetlight repairs in downtown",
+    "file": "data/city_files/San_Diego/e8499c_2023-7-31_downtown_streetlights_complete.pdf",
+    "rows": 45,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.sandiego.gov/sites/default/files/convoy_corridor_parking_study_final.pdf",
+    "text": "parking study,",
+    "file": "data/city_files/San_Diego/38ecf6_convoy_corridor_parking_study_final.pdf",
+    "rows": 779,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://www.sandiego.gov/sites/default/files/san_ysidro_parking_study_final_0.pdf",
+    "text": "parking study",
+    "file": "data/city_files/San_Diego/68ebca_san_ysidro_parking_study_final_0.pdf",
+    "rows": 300,
+    "bike_rows": 180
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2024-01/Community%20Parking%20Districts%202024%20Updated%20map_0.pdf",
+    "text": "CPD Boundaries Overview",
+    "file": "data/city_files/San_Diego/1bece0_Community_20Parking_20Districts_202024_20Updated_20map_0.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2024-01/pavement-management-plan-report.pdf",
+    "text": "Appendix A - Council District Maps",
+    "file": "data/city_files/San_Diego/d34973_pavement-management-plan-report.pdf",
+    "rows": 975,
+    "bike_rows": 87
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2024-12/pothole-final-infograph.pdf",
+    "text": "Pothole Repair",
+    "file": "data/city_files/San_Diego/88f8e5_pothole-final-infograph.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/2024-12/roadway-repair-final-infographic.pdf",
+    "text": "Roadway Repair",
+    "file": "data/city_files/San_Diego/93ae56_roadway-repair-final-infographic.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/sip.pdf",
+    "text": "Strategic Implementation Plan for the Bicycle Master Plan",
+    "file": "data/city_files/San_Diego/04c091_sip.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.sandiego.gov/sites/default/files/legacy/tsw/pdf/sharrows.pdf",
+    "text": "Sharrows",
+    "file": "data/city_files/San_Diego/95291f_sharrows.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.sandiego.gov/sites/default/files/protected_bikeways_fact_sheet.pdf",
+    "text": "protected bikeways",
+    "file": "data/city_files/San_Diego/609bf8_protected_bikeways_fact_sheet.pdf",
+    "rows": 9,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/san_diego_protected_bikeways_graphic.pdf",
+    "text": "separated bikeways",
+    "file": "data/city_files/San_Diego/91048e_san_diego_protected_bikeways_graphic.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/bicycle-detection-at-signals-informational.pdf",
+    "text": "Read more here",
+    "file": "data/city_files/San_Diego/b51c20_bicycle-detection-at-signals-informational.pdf",
+    "rows": 16,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.sandiego.gov/sites/default/files/bicycle_safety.pdf",
+    "text": "Bicycle Safety Tips brochure",
+    "file": "data/city_files/San_Diego/5f2569_bicycle_safety.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/bike-safety-activity-book.pdf",
+    "text": "Bicycle Safety Activity Book",
+    "file": "data/city_files/San_Diego/2faa9f_bike-safety-activity-book.pdf",
+    "rows": 37,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/bike-safety-activity-book-spa.pdf",
+    "text": "Bicycle Safety Activity Book (Spanish)",
+    "file": "data/city_files/San_Diego/805c88_bike-safety-activity-book-spa.pdf",
+    "rows": 35,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.sandiego.gov/sites/default/files/scooters_and_alternative_vehicles3.pdf",
+    "text": "Alternative Vehicles brochure",
+    "file": "data/city_files/San_Diego/d4e219_scooters_and_alternative_vehicles3.pdf",
+    "rows": 20,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/convoy_corridor_parking_study_final.pdf",
+    "text": "Convoy Corridor Parking Study 2023",
+    "file": "data/city_files/San_Diego/62a528_convoy_corridor_parking_study_final.pdf",
+    "rows": 779,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://sandiego.gov/sites/default/files/kearny_mesa_mobility_and_parking_ppt_may_3_2023.pdf",
+    "text": "Parking Study Presentation",
+    "file": "data/city_files/San_Diego/bfb7ea_kearny_mesa_mobility_and_parking_ppt_may_3_2023.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://sandiego.maps.arcgis.com/home/group.html?sortField=title&sortOrder=asc&id=085e8d24276a4b2a827146cff5fdbf80": "View Now",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=41a1562ea3f14382b639ecc059011f8f&extent=-117.8743,32.482,-116.1495,33.3868": "Check your address -- (businesses do not qualify)",
+   "https://sandiego.maps.arcgis.com/apps/webappviewer/index.html?id=a1c45c92fb6d46efa4b1209941f58c8a": "Find Now",
+   "http://sandiego.maps.arcgis.com/apps/PublicGallery/index.html?appid=99ca3e0f7a9a42e3a0667c4682bd78dc": "View Now",
+   "https://sandiego.maps.arcgis.com/apps/instant/sidebar/index.html?appid=75f6a5d68aee481f8ff48240bcaa1239": "View Zoning Information",
+   "http://sandiego.maps.arcgis.com/apps/webappviewer/index.html?id=77a1fde4a3cc42229ea7db4c0d00ea05": "View Interactive Map",
+   "https://data.sandiego.gov/": "Data Portal",
+   "https://sandiego.maps.arcgis.com/apps/instant/sidebar/index.html?appid=95c57169391d4f1c92aa57448807e2a9": "Active STRO License Map",
+   "http://sandiego.maps.arcgis.com/apps/webappviewer/index.html?id=c342a8e0c9354323b8210dab0e930bc9": "Speed and parking are restricted for dockless bikes and scooters in areas of the City. View Map of Restricted Areas",
+   "https://sandiego.maps.arcgis.com/apps/webappviewer/index.html?id=77b407f421f14c13aa124b586cd27f54": "City of San Diego’s Bicycle Parking Map",
+   "https://usandiego.maps.arcgis.com/apps/webappviewer/index.html?id=6438f83d648a4126bae695f2b06871bc": "Climate Equity Index Map",
+   "https://data.sandiego.gov/tags/ocean-water/": "Open Data Portal",
+   "https://data.sandiego.gov/datasets/monitoring-ocean-water-quality/": "Water Quality",
+   "https://data.sandiego.gov/datasets/monitoring-ocean-benthic-invertebrates/": "Benthic Invertebrates",
+   "https://data.sandiego.gov/datasets/monitoring-ocean-trawl-fish/": "Demersal Fishes",
+   "https://data.sandiego.gov/datasets/monitoring-ocean-trawl-invertebrates/": "Megabenthic Invertebrates",
+   "https://data.sandiego.gov/datasets/monitoring-ocean-sediment-quality/": "Sediment Quality",
+   "https://data.sandiego.gov/datasets/monitoring-ocean-fish-tissue/": "Contaminants in Fish Tissue",
+   "https://data.sandiego.gov/datasets/monitoring-ocean-rtoms-water-quality/": "RTOMS: Water Quality",
+   "https://data.sandiego.gov/datasets/monitoring-ocean-rtoms-water-temperature/": "RTOMS: Water Temperature",
+   "https://data.sandiego.gov/datasets/monitoring-ocean-rtoms-salinity/": "RTOMS: Salinity",
+   "https://data.sandiego.gov/datasets/monitoring-ocean-rtoms-ocean-chemistry/": "RTOMS: Ocean Chemistry",
+   "https://data.sandiego.gov/datasets/monitoring-ocean-rotv/": "ROTV: Water Parameters",
+   "https://www.sandiego.gov/blog/browse-open-data-portal": "Site Menu",
+   "http://data.sandiego.gov/": "http://data.sandiego.gov/",
+   "https://data.sandiego.gov/datasets/crb-cases/": "https://data.sandiego.gov/datasets/crb-cases/",
+   "https://fema.maps.arcgis.com/apps/webappviewer/index.html?id=e7a7dc3ebd7f4ad39bb8e485bb64ce44": "Special Flood Hazard Areas",
+   "https://www.sandiego.gov/blog/open-data-portal": "Site Menu",
+   "https://data.sandiego.gov/datasets/?department=police": "https://data.sandiego.gov/datasets/?department=police"
+  }
+ },
+ "New Orleans": {
+  "files": [
+   {
+    "url": "https://nola.gov/nola/media/transportation/Exist-Rec_11x17_20200910.pdf",
+    "text": "View Bikeway Blueprint map (PDF)",
+    "file": "data/city_files/New_Orleans/3a8053_Exist-Rec_11x17_20200910.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/transportation/New-Orleans-Bikeway-Blueprint-091020.pdf",
+    "text": "View the Executive Summary",
+    "file": "data/city_files/New_Orleans/921c7a_New-Orleans-Bikeway-Blueprint-091020.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://nola.gov/nola/media/Resilience/CNO-Electric-Transportation-Roadmap_Summary_Final.pdf",
+    "text": "Electric Transportation Roadmap – Executive Summary (PDF, 1.1 mb)",
+    "file": "data/city_files/New_Orleans/9b56b4_CNO-Electric-Transportation-Roadmap_Summary_Final.pdf",
+    "rows": 110,
+    "bike_rows": 32
+   },
+   {
+    "url": "https://nola.gov/nola/media/Resilience/CNO-Electric-Transportation-Roadmap_Final.pdf",
+    "text": "Electric Transportation Roadmap – Full Report (PDF, 4.6 mb)",
+    "file": "data/city_files/New_Orleans/cb495a_CNO-Electric-Transportation-Roadmap_Final.pdf",
+    "rows": 117,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://nola.gov/nola/media/Resilience/City-of-New-Orlenas-Fleet-Electric-Vehicle-Transition-Plan.pdf",
+    "text": "Fleet Transition Plan",
+    "file": "data/city_files/New_Orleans/2ba8ff_City-of-New-Orlenas-Fleet-Electric-Vehicle-Transition-Plan.pdf",
+    "rows": 114,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://council.nola.gov/council/media/Assets/Committees/Climate/New-Orleans-City-Council-Electric-Vehicle-Charging-Infrastructure-FAQs.pdf",
+    "text": "City Council Electric Vehicle Charging Infrastructure - FAQ",
+    "file": "data/city_files/New_Orleans/8090aa_New-Orleans-City-Council-Electric-Vehicle-Charging-Infrastructure-FAQs",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/transportation/2023-0418truckroutes_1.pdf",
+    "text": "PDF",
+    "file": "data/city_files/New_Orleans/c052dd_2023-0418truckroutes_1.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/transportation/MacArthur-Blvd-Fact-Sheet.pdf",
+    "text": "MacArthur Boulevard",
+    "file": "data/city_files/New_Orleans/953c3e_MacArthur-Blvd-Fact-Sheet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/transportation/Mardi-Gras-Blvd-Florence-St-Fact-Sheet.pdf",
+    "text": "Mardi Gras Boulevard & Florence Drive",
+    "file": "data/city_files/New_Orleans/03d805_Mardi-Gras-Blvd-Florence-St-Fact-Sheet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/transportation/Wall-Blvd-Fact-Sheet.pdf",
+    "text": "Wall Boulevard",
+    "file": "data/city_files/New_Orleans/d1b1b7_Wall-Blvd-Fact-Sheet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/transportation/Martin-Luther-King-Blvd-Fact-Sheet.pdf",
+    "text": "Martin Luther King Jr. Boulevard",
+    "file": "data/city_files/New_Orleans/2a4244_Martin-Luther-King-Blvd-Fact-Sheet.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/transportation/Exist-Rec_24x36_20191013.pdf",
+    "text": "draft bikeway network map",
+    "file": "data/city_files/New_Orleans/93a3e1_Exist-Rec_24x36_20191013.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/transportation/MacArthur-Boulevard-2021-08-06.pdf",
+    "text": "MacArthur Blvd Next Steps",
+    "file": "data/city_files/New_Orleans/450c7c_MacArthur-Boulevard-2021-08-06.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://nola.gov/nola/media/transportation/Bienville_DLS-EDITS_2-2-23_1.pdf",
+    "text": "Bienville Avenue Bikeway Update",
+    "file": "data/city_files/New_Orleans/5e873b_Bienville_DLS-EDITS_2-2-23_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Public%20Works/DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-RENTAL-(fillable-form).pdf",
+    "text": "Meter Rental Application",
+    "file": "data/city_files/New_Orleans/720869_DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-RENTAL-_fillable-form_.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Public%20Works/DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-REMOVAL-(fillable-form).pdf",
+    "text": "Meter Removal Application",
+    "file": "data/city_files/New_Orleans/3e83da_DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-REMOVAL-_fillable-form_.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.nola.gov/nola/media/One-Stop-Shop/Public%20Works/DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-REMOVAL-(fillable-form).pdf",
+    "text": "Download Parking Meter Removal Application",
+    "file": "data/city_files/New_Orleans/628e3e_DEPARTMENT-OF-PUBLIC-WORKS-METER-PERMIT-METER-REMOVAL-_fillable-form_.",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/DPW/Parking/ADA-Parking-Permit-20250808.pdf",
+    "text": "Download ADA Parking Zone Application",
+    "file": "data/city_files/New_Orleans/a0e07f_ADA-Parking-Permit-20250808.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/DPW/Parking/Traffic-Division-ADA-Zone-Removal-Application-v08-12-25-(1).pdf",
+    "text": "Download ADA Parking Zone Removal Application",
+    "file": "data/city_files/New_Orleans/bed6e3_Traffic-Division-ADA-Zone-Removal-Application-v08-12-25-_1_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Public%20Works/OSS_PW_RESIDENTIAL_PARKING_PERMIT_APPLICATION.pdf",
+    "text": "Residential Parking Permit Application",
+    "file": "data/city_files/New_Orleans/acd128_OSS_PW_RESIDENTIAL_PARKING_PERMIT_APPLICATION.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Safety%20and%20Permits/OSS_SP_ELECTRICAL_VEHICLE_CHARGING_APPLICATION.pdf",
+    "text": "EV Charger Application",
+    "file": "data/city_files/New_Orleans/da70e3_OSS_SP_ELECTRICAL_VEHICLE_CHARGING_APPLICATION.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Public%20Works/OSS_PW_ROW_USE_BIKES_SUPPLEMENT_Q.pdf",
+    "text": "PDF Application",
+    "file": "data/city_files/New_Orleans/b041f0_OSS_PW_ROW_USE_BIKES_SUPPLEMENT_Q.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/One-Stop-Shop/Taxi/GTB-Memo-Parking-Traffic-Camera-Fines-for-Renewals-or-Transfers-020421.pdf",
+    "text": "GTB-Memo-Parking-Traffic-Camera-Fines-for-Renewals-or-Transfers-020421",
+    "file": "data/city_files/New_Orleans/12647a_GTB-Memo-Parking-Traffic-Camera-Fines-for-Renewals-or-Transfers-020421",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic%20Districts/Algiers-Point.pdf",
+    "text": "Algiers Point",
+    "file": "data/city_files/New_Orleans/bc50d4_Algiers-Point.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Bywater.pdf",
+    "text": "Bywater",
+    "file": "data/city_files/New_Orleans/aa49c5_Bywater.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Canal-Street.pdf",
+    "text": "Canal Street",
+    "file": "data/city_files/New_Orleans/55eb5a_Canal-Street.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic%20Districts/Carrollton-Historic-District.pdf",
+    "text": "Carrollton",
+    "file": "data/city_files/New_Orleans/b3666d_Carrollton-Historic-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Esplanade-Ridge.pdf",
+    "text": "Esplanade Ridge",
+    "file": "data/city_files/New_Orleans/8a66e8_Esplanade-Ridge.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Faubourg-Marigny.pdf",
+    "text": "Faubourg Marigny",
+    "file": "data/city_files/New_Orleans/7c25b6_Faubourg-Marigny.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Garden.pdf",
+    "text": "Garden District",
+    "file": "data/city_files/New_Orleans/cd09ca_Garden.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/HolyCross.pdf",
+    "text": "Holy Cross",
+    "file": "data/city_files/New_Orleans/870370_HolyCross.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/IrishChannel.pdf",
+    "text": "Irish Channel",
+    "file": "data/city_files/New_Orleans/d90537_IrishChannel.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Lafayette.pdf",
+    "text": "Lafayette Square Historic District",
+    "file": "data/city_files/New_Orleans/616400_Lafayette.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/LowerGarden.pdf",
+    "text": "Lower Garden District",
+    "file": "data/city_files/New_Orleans/87a961_LowerGarden.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic%20Districts/Mid-City-Historic-District.pdf",
+    "text": "Mid City",
+    "file": "data/city_files/New_Orleans/3c7f85_Mid-City-Historic-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic%20Districts/Parkview-Historic-District.pdf",
+    "text": "Parkview",
+    "file": "data/city_files/New_Orleans/fb10aa_Parkview-Historic-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Picayune-Place.pdf",
+    "text": "Picayune Place",
+    "file": "data/city_files/New_Orleans/7a1821_Picayune-Place.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic%20Districts/St-Charles-Historic-District.pdf",
+    "text": "St. Charles Historic District",
+    "file": "data/city_files/New_Orleans/392346_St-Charles-Historic-District.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic Districts/Treme.pdf",
+    "text": "Treme Historic District",
+    "file": "data/city_files/New_Orleans/482151_Treme.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://nola.gov/nola/media/HDLC/Historic%20Districts/Uptown-Historic-District.pdf",
+    "text": "Uptown",
+    "file": "data/city_files/New_Orleans/2f6d95_Uptown-Historic-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.nola.gov/browse": "browse the data.nola.gov catalog",
+   "https://nolagis.maps.arcgis.com/apps/dashboards/466d84a3408f4a03aba3aac3032bc6d0": "Accessibility Dashboard",
+   "https://nolagis.maps.arcgis.com/apps/dashboards/00770504892d455db797b6705d2cd3f9": "DPW ARPA Projects Dashboard",
+   "https://nolagis.maps.arcgis.com/apps/dashboards/f7dfd1e96cab45cfb302dd738cc45e79": "Public Structures, Facilities & Property Dashboard",
+   "https://gis.nola.gov/apps/str_active/": "View the map",
+   "https://gis.nola.gov/apps/vacation_rentals/": "View the map",
+   "https://datadriven.nola.gov/open-data/": "Open Data",
+   "http://data.nola.gov/": "data.nola.gov",
+   "https://data.nola.gov/Housing-Land-Use-and-Blight/Short-Term-Rental-Permit-Applications/en36-xvxg/data": "View the STR registry data",
+   "https://data.nola.gov/City-Finance-and-Budget/Hotels-Motels-BBs/ns2v-hzec/data": "View the map",
+   "https://gis.nola.gov/apps/nstr/": "View the map",
+   "http://www.legis.la.gov/Legis/Law.aspx?d=78745": "RS 14:95.6",
+   "http://www.legis.la.gov/Legis/Law.aspx?d=80996": "RS 17:405",
+   "https://survey123.arcgis.com/share/3bcfc91d296644d691a4674ddacbe9ef": "Request Alarm & Installation",
+   "https://nolagis.maps.arcgis.com/home/item.html?id=466d84a3408f4a03aba3aac3032bc6d0": "View the Street & Sidewalk Accessibility Dashboard",
+   "https://nolagis.maps.arcgis.com/apps/dashboards/abf44d7493fb40bdb447d526e4c136e8": "ADA Dashboard",
+   "https://experience.arcgis.com/experience/caa192f6ad6d454daef87725d29a0dc2": "",
+   "https://nolagis.maps.arcgis.com/apps/webappviewer/index.html?id=9ad8e08676d548b9b37f8e6c7ef35f38": "",
+   "http://www.legis.la.gov/legis/Law.aspx?d=81430": "La. R.S. 18:1461.2"
+  }
+ },
+ "Escobar Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Knoxville": {
+  "files": [],
+  "portals": {}
+ },
+ "Killeen": {
+  "files": [],
+  "portals": {}
+ },
+ "Sterling Heights": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/ce6e9b9288594eb1b0fe4dd3d49d3ca7/": "Search City Development Projects",
+   "https://cosh.maps.arcgis.com/apps/instant/lookup/index.html?appid=8fcf6d41c13d46d0ac437f4e4013b40e": "Find my Polling Place",
+   "https://storymaps.arcgis.com/stories/81d7cbdda72445dcb37588cf02fde600": "Explore Public Art in Sterling Heights",
+   "https://cosh.maps.arcgis.com/apps/instant/minimalist/index.html?appid=75f6fe39ee5841a4aa3e730c8815159c": "Find my CORE Officer",
+   "https://www.arcgis.com/apps/dashboards/705fb06ee0ec46b7b92dbb133ecb5709": "Sterling Heights Police Department Crime Map",
+   "https://www.arcgis.com/apps/dashboards/eb79b69296924d68a3b1a03094903693": "Search Traffic Calming Progress Report",
+   "https://survey123.arcgis.com/share/84fdd3c001f84536b3dd5594ec8813f4": "Traffic Complaint Form",
+   "https://cosh.maps.arcgis.com/apps/webappviewer/index.html?id=13c833eb87384e529349c700b5279683": "Digital Crime Map"
+  }
+ },
+ "Clearwater": {
+  "files": [
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/1/clearwater-beach/documents/ada_beach_parking_map_2026-2.pdf",
+    "text": "Download a PDF version of the Beach Parking Map (PDF, 468KB)",
+    "file": "data/city_files/Clearwater/1ea944_ada_beach_parking_map_2026-2.pdf",
+    "rows": 23,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/1/public-communications/documents/historic_designation_appli.pdf",
+    "text": "Application for Historic Designation Form",
+    "file": "data/city_files/Clearwater/361b5d_historic_designation_appli.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/2/trash-amp-recycling/documents/sw-fee-schedule-fy-26.27-ada.pdf",
+    "text": "FY27 Solid Waste & Recycling Fee Schedule (PDF, 170KB)",
+    "file": "data/city_files/Clearwater/56ceba_sw-fee-schedule-fy-26.27-ada.pdf",
+    "rows": 58,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/2/trash-amp-recycling/documents/private-haulers/quarterly-recovered-materials-dealer-report-template_city-of-clearwater.xlsx",
+    "text": "Quarterly Recovered Materials Dealer Report Template (XLSX, 16KB)",
+    "file": "data/city_files/Clearwater/beb59a_quarterly-recovered-materials-dealer-report-template_city-of-clearwate",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/7/trash-amp-recycling/documents/private-haulers/recovered-materials-permit-application.pdf",
+    "text": "Recovered Materials Permit Application (PDF, 189KB)",
+    "file": "data/city_files/Clearwater/1a1fbf_recovered-materials-permit-application.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/3/engineering/documents/parking/pleaofnotguiltycontesttick-1.pdf",
+    "text": "form (PDF, 159KB)",
+    "file": "data/city_files/Clearwater/6595f4_pleaofnotguiltycontesttick-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/content/public/v/45/parking-transportation/pay-my-parking-ticket/transfer_of_liabilityparking_ada.pdf",
+    "text": "form (PDF, 81KB)",
+    "file": "data/city_files/Clearwater/00151b_transfer_of_liabilityparking_ada.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/1/public-communications/documents/ada_downtown_clearwater_parking_map_2026.pdf",
+    "text": "Download a PDF version of the Downtown Parking Map (PDF, 1MB)",
+    "file": "data/city_files/Clearwater/3b39a2_ada_downtown_clearwater_parking_map_2026.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/1/economic-development/documents/ada_osceola_garage_handout_-_4pger-4.pdf",
+    "text": "Osceola Parking Garage Retail Opportunity (PDF, 4MB)",
+    "file": "data/city_files/Clearwater/ee2d82_ada_osceola_garage_handout_-_4pger-4.pdf",
+    "rows": 18,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/1/economic-development/documents/peace-memorial-access-and-parking-easement-and-restrictive-covenant-agreement-executed.pdf",
+    "text": "Access and Parking Easement and Restrictive Covenant Agreement (PDF, 9MB)",
+    "file": "data/city_files/Clearwater/0d27c4_peace-memorial-access-and-parking-easement-and-restrictive-covenant-ag",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/100242bc-5b02-4bd2-898b-92fdd4c7fb13/FEMA-Preliminary-Summary-of-Map-Actions.pdf",
+    "text": "Learn More",
+    "file": "data/city_files/Clearwater/e5b99b_FEMA-Preliminary-Summary-of-Map-Actions.pdf",
+    "rows": 332,
+    "bike_rows": 132
+   }
+  ],
+  "portals": {
+   "https://new-pinellas-egis.opendata.arcgis.com/": "View Maps (GIS)",
+   "https://experience.arcgis.com/experience/eca0e234e9c24b239bee3026d2f529b7": "Elevation Certificate",
+   "https://storymaps.arcgis.com/stories/26e30ac42ad0483fb1dc22f39ddf4a42": "Trail History",
+   "https://gis.myclearwater.com/SearchByStreetForAtlas.htm": "Z",
+   "https://gis.myclearwater.com/SearchBySubdivisionForAtlas.htm": "Z",
+   "https://gis.myclearwater.com/Eng_Atlas_App.htm": "View Streets",
+   "https://waterdata.usgs.gov/monitoring-location/02307674/": "Water Level Gage in Alligator Creek at Kapok Park"
+  }
+ },
+ "Boulder": {
+  "files": [],
+  "portals": {
+   "https://bouldercolorado.gov/services/open-data": "Open Data Resources",
+   "https://experience.arcgis.com/experience/255ea659f7bd442e8cd97e8237c44229": "Transportation Master Plan Map",
+   "https://experience.arcgis.com/experience/453953e79ff64148821c1187c8ab3edc/page/Trails": "OSMPTrails.org",
+   "https://experience.arcgis.com/experience/275a68169c7846a3960051d97d383121": "full size map",
+   "https://experience.arcgis.com/experience/45ea51935a18499281af2980bfa3b7e5": "View Fullscreen Map",
+   "https://experience.arcgis.com/experience/1f1f0d5add524e21befc543ae1dc5a8c/page/Page/?views=Information": "street sweeping map",
+   "https://boulder.maps.arcgis.com/apps/dashboards/095b1408ece3466fa2e15a4b3a8f36c1": "Crash Data Dashboard",
+   "https://storymaps.arcgis.com/stories/e541837c21c949259f75518f8c454287": "how people move in Boulder today",
+   "https://a-boulder-future-boulder.hub.arcgis.com/": "provide feedback on related planning efforts",
+   "https://experience.arcgis.com/experience/39452f9fadb04c54a4adecb6d79a55b9": "Neighborhood GreenStreets Map",
+   "https://experience.arcgis.com/experience/a9689655747b48ceb6897cab20893b8d": "Snow and Ice Response Map",
+   "https://experience.arcgis.com/experience/353bbc1d6a5c45e78c887898bdf8e536": "Speed Limits and Street Class Map",
+   "https://experience.arcgis.com/experience/e3aad8ee6b6144e599692fcd5e4f1307": "Speed Limit Setting and Signing Project Map",
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=b48560cd05e1452ea5cca9b15d9559f2&center=-11716800.0%2C4869800.0%2C102100&level=12": "Boulder Bike Routes",
+   "https://experience.arcgis.com/experience/cc2e794f75434976992628667980e62c/": "Boulder Walk Map",
+   "https://experience.arcgis.com/experience/7654aa43144b4406bd803c7c332ca13a/page/Page/?views=Recreational-Bike-Routes": "Recreational Biking Routes",
+   "https://experience.arcgis.com/experience/cc2e794f75434976992628667980e62c/page/Page?views=Boulder-Walks-Routes": "Recreational Walking Routes",
+   "https://open-data.bouldercolorado.gov/search?categories=transportation%20department&collection=Dataset": "Bike and Pedestrian Counts Open Data",
+   "https://experience.arcgis.com/experience/dad61e286e6f4cd084b62e9e15c8d51c": "All Boulder Bus Stops and Routes",
+   "https://experience.arcgis.com/experience/dfd764dab6b142d0b2b0f92e6a9bee63/page/home/?views=view_1": "Regional Traffic Count Data from DRCOG",
+   "https://storymaps.arcgis.com/stories/6492c65b52a542f586917393bacc7919": "2025 Annual Progress Report",
+   "https://boulder.maps.arcgis.com/apps/dashboards/0a4e4c58e2824eeca4b0788fe92ce2ef": "Court Location and Layout Interactive Map",
+   "https://experience.arcgis.com/experience/f30dae35de944acea683014807592a7e/page/Page": "Accessibility Trail Rankings webmap",
+   "https://storymaps.arcgis.com/stories/fd9f4dd0067a454c8463accd6502a4e4": "View City of Boulder Facilities StoryMap",
+   "https://experience.arcgis.com/experience/62f9e22a0be44861a420c43f65ec4f7f": "Search your property address using this map tool to view your anticipated tax impact (opens in a new window).",
+   "https://experience.arcgis.com/experience/7654aa43144b4406bd803c7c332ca13a/page/Page/?views=Complete-Bike-Network%22%20%5Cl%20%22data_s%3Did%3AdataSource_5-19018b8d62c-layer-42%3A45": "Your Boulder Bike Map",
+   "https://storymaps.arcgis.com/stories/a37426811d664de69e81e3b882e82cd1": "Boulder Urban Heat Mapping",
+   "https://storymaps.arcgis.com/stories/297d401cdb3247aea65cffb0d8d2c09e": "Visit the Climate Action StoryMap",
+   "https://storymaps.arcgis.com/stories/685d4a1d8d9a49519bc081fda0db5b07": "interactive StoryMap",
+   "https://experience.arcgis.com/experience/453953e79ff64148821c1187c8ab3edc/page/Wildlife-Closures": "an interactive webmap"
+  }
+ },
+ "Kenosha": {
+  "files": [],
+  "portals": {}
+ },
+ "Chino": {
+  "files": [],
+  "portals": {
+   "https://chino.maps.arcgis.com/apps/instant/basic/index.html?appid=7fa73bdb5ca2401bab1aac6c0e4f19a1": "Zoning Map",
+   "https://chino.maps.arcgis.com/apps/instant/lookup/index.html?appid=1be5057cbe9e4844b4da7238cb6cf12a": "Voting Districts Map"
+  }
+ },
+ "Sioux City": {
+  "files": [
+   {
+    "url": "https://apptegy-alerts-attachments-production.s3.amazonaws.com/6c667327-2bae-4340-ad0c-a0250da8cfb0/ABM%20Parking%20Application-SCCSD%20Student%20Pass%20%281%29.pdf",
+    "text": "ABM Parking Application-SCCSD Student Pass (PDF)",
+    "file": "data/city_files/Sioux_City/ec57c6_ABM_20Parking_20Application-SCCSD_20Student_20Pass_20_281_29.pdf",
+    "rows": 25,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://wcicc.maps.arcgis.com/apps/Embed/index.html": "View larger map",
+   "https://experience.arcgis.com/experience/291d4e2c64cf490a95a6660b1349a088/page/Traffic-Volume": "IDOT Traffic Count Information",
+   "https://iowadot.maps.arcgis.com/apps/MapSeries/index.html": "IDOT Traffic Counts"
+  }
+ },
+ "New Rochelle": {
+  "files": [
+   {
+    "url": "https://dmv.ny.gov/forms/mv6641.pdf",
+    "text": "Handicap Parking Permit Application",
+    "file": "data/city_files/New_Rochelle/7588eb_mv6641.pdf",
+    "rows": 15,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://newrochelleny.com/research/stats/statistics/open-data.htm": "Open data"
+  }
+ },
+ "Türkoğlu district": {
+  "files": [],
+  "portals": {}
+ },
+ "Blaine": {
+  "files": [],
+  "portals": {}
+ },
+ "Rockville": {
+  "files": [
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/09/Rockville-Bicycle-Parking-Guide.pdf",
+    "text": "Bicycle Parking Guidelines",
+    "file": "data/city_files/Rockville/537788_Rockville-Bicycle-Parking-Guide.pdf",
+    "rows": 18,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/09/Bike-Rack-Grant-Program-Application-Form.pdf",
+    "text": "Download Application",
+    "file": "data/city_files/Rockville/c93805_Bike-Rack-Grant-Program-Application-Form.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/11/Technical-Guides-for-Exterior-Alterations-Off-Street-Parking.pdf",
+    "text": "Off-Street Parking",
+    "file": "data/city_files/Rockville/e2e053_Technical-Guides-for-Exterior-Alterations-Off-Street-Parking.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2026/07/Standard-and-Procedures-for-Res_Right-of-Way_CURBSIDE_final.docx.pdf",
+    "text": "Residential Curbside EV Charging Equipment in City Rights-of-Way Standards and Procedures",
+    "file": "data/city_files/Rockville/50e4bc_Standard-and-Procedures-for-Res_Right-of-Way_CURBSIDE_final.docx.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/09/West-Montgomery-Avenue-Historic-District.pdf",
+    "text": "West Montgomery Avenue Historic District",
+    "file": "data/city_files/Rockville/77d628_West-Montgomery-Avenue-Historic-District.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/09/Allnutt-House-Historic-District.pdf",
+    "text": "Allnutt House Historic District",
+    "file": "data/city_files/Rockville/8ad3b5_Allnutt-House-Historic-District.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/09/Inventory-of-Designated-Historic-Districts-2-11-22.pdf",
+    "text": "Inventory of Designated Historic Districts",
+    "file": "data/city_files/Rockville/030acd_Inventory-of-Designated-Historic-Districts-2-11-22.pdf",
+    "rows": 552,
+    "bike_rows": 58
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/09/Historic-Buildings-Catalog.pdf",
+    "text": "Historic Buildings Catalog",
+    "file": "data/city_files/Rockville/38cfbe_Historic-Buildings-Catalog.pdf",
+    "rows": 135,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/09/Bicycle-Friendly-Report-Card.pdf",
+    "text": "Bicycle Friendly Community at the Bronze level by the League of American Bicyclists in 2022",
+    "file": "data/city_files/Rockville/46b15e_Bicycle-Friendly-Report-Card.pdf",
+    "rows": 60,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/09/Rockville-Bike-Map.pdf",
+    "text": "Rockville Bike Map",
+    "file": "data/city_files/Rockville/a8c702_Rockville-Bike-Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/09/Bicycle-Theft-Prevention.pdf",
+    "text": "Bicycle Theft Prevention Tips",
+    "file": "data/city_files/Rockville/6ca504_Bicycle-Theft-Prevention.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/08/Guidelines-for-Residential-Permit-Parking-Area-Approval.pdf",
+    "text": "complete guidelines",
+    "file": "data/city_files/Rockville/c6b136_Guidelines-for-Residential-Permit-Parking-Area-Approval.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/08/Petition-Procedure-for-Residential-Permit-Parking-Area.pdf",
+    "text": "permitted parking district petition procedures",
+    "file": "data/city_files/Rockville/389d64_Petition-Procedure-for-Residential-Permit-Parking-Area.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/08/Petition-for-Permitted-Parking-District.pdf",
+    "text": "Permitted Parking District Petition",
+    "file": "data/city_files/Rockville/fc464d_Petition-for-Permitted-Parking-District.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2026/01/Residential-Parking-Permit-Application.pdf",
+    "text": "application",
+    "file": "data/city_files/Rockville/de8a14_Residential-Parking-Permit-Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/07/Historic-District-Commission-FY2022-Annual-Report.pdf",
+    "text": "FY 2022 Annual Report",
+    "file": "data/city_files/Rockville/e85c15_Historic-District-Commission-FY2022-Annual-Report.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/07/Historic-District-Commission-FY2023-Annual-Report.pdf",
+    "text": "FY 2023 Annual Report",
+    "file": "data/city_files/Rockville/d5cc24_Historic-District-Commission-FY2023-Annual-Report.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/07/Historic-District-Commission-FY2024-Annual-Report.pdf",
+    "text": "FY 2024 Annual Report",
+    "file": "data/city_files/Rockville/0c60a8_Historic-District-Commission-FY2024-Annual-Report.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/10/Historic-District-Commission-FY-2025-Annual-Report.pdf",
+    "text": "FY 2025 Annual Report",
+    "file": "data/city_files/Rockville/8b7bb2_Historic-District-Commission-FY-2025-Annual-Report.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2026/07/HDC-Letter-on-Historic-Preservation-Month-2026.pdf",
+    "text": "Historic District Commission Letter on Historic Preservation Month 2026",
+    "file": "data/city_files/Rockville/7ba837_HDC-Letter-on-Historic-Preservation-Month-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/07/Rockville-Bicycle-Advisory-Committee-Resolution-04-99.pdf",
+    "text": "Resolution 04-99",
+    "file": "data/city_files/Rockville/03ba19_Rockville-Bicycle-Advisory-Committee-Resolution-04-99.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/07/Rockville-Bicycle-Advisory-Committee-2024-Annual-Report.pdf",
+    "text": "2024 annual report",
+    "file": "data/city_files/Rockville/8cd7c7_Rockville-Bicycle-Advisory-Committee-2024-Annual-Report.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/08/Bullards-Park-Stream-Restoration-Spot-Repair-30-Percent-Design-Exhibit.pdf",
+    "text": "View presentation exhibits",
+    "file": "data/city_files/Rockville/da25f6_Bullards-Park-Stream-Restoration-Spot-Repair-30-Percent-Design-Exhibit",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/08/Bullards-Park-Stream-Restoration-Spot-Repair-Final-Design-Exhibit.pdf",
+    "text": "View presentation exhibits",
+    "file": "data/city_files/Rockville/ee38a0_Bullards-Park-Stream-Restoration-Spot-Repair-Final-Design-Exhibit.pdf",
+    "rows": 5,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/08/Bikeway-Master-Plan.pdf",
+    "text": "View the Bikeway Master Plan",
+    "file": "data/city_files/Rockville/e1f339_Bikeway-Master-Plan.pdf",
+    "rows": 608,
+    "bike_rows": 23
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/09/2023-Historic-Preservation-Work-Plan.pdf",
+    "text": "View the Historic Preservation Work Plan",
+    "file": "data/city_files/Rockville/920d36_2023-Historic-Preservation-Work-Plan.pdf",
+    "rows": 271,
+    "bike_rows": 84
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/06/1981-Historic-Preservation-Action-Program.pdf",
+    "text": "1981 Historic Preservation Action Program",
+    "file": "data/city_files/Rockville/245cb3_1981-Historic-Preservation-Action-Program.pdf",
+    "rows": 52,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/06/1983-Historic-Preservation-Action-Program.pdf",
+    "text": "1983 Historic Preservation Action Program",
+    "file": "data/city_files/Rockville/37a530_1983-Historic-Preservation-Action-Program.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/06/2014-Analysis-of-Documents-for-Historic-Designation-and-Certificates-of-Approval.pdf",
+    "text": "2014 Analysis of Documents for Historic Designation and Certificates of Approval",
+    "file": "data/city_files/Rockville/dcc496_2014-Analysis-of-Documents-for-Historic-Designation-and-Certificates-o",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/06/2016-Historic-Preservation-Report-for-Comprehensive-Plan.pdf",
+    "text": "2016 Historic Preservation Report for Comprehensive Plan",
+    "file": "data/city_files/Rockville/1baca1_2016-Historic-Preservation-Report-for-Comprehensive-Plan.pdf",
+    "rows": 28,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/06/2020-Proposed-Revision-of-the-Historic-Resources-Management-Plan.pdf",
+    "text": "2020 Proposed Revision of the Historic Resources Management Plan",
+    "file": "data/city_files/Rockville/10a232_2020-Proposed-Revision-of-the-Historic-Resources-Management-Plan.pdf",
+    "rows": 173,
+    "bike_rows": 48
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/06/2040-Comprehensive-Plan-Historic-Preservation-Element.pdf",
+    "text": "2040 Comprehensive Plan, Historic Preservation Element",
+    "file": "data/city_files/Rockville/ee83fa_2040-Comprehensive-Plan-Historic-Preservation-Element.pdf",
+    "rows": 33,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/09/Bicycling-Safety-Tips.pdf",
+    "text": "bicycle",
+    "file": "data/city_files/Rockville/964c17_Bicycling-Safety-Tips.pdf",
+    "rows": 35,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2026/03/March-3-2026-Vision-Zero-Projects-Map.pdf",
+    "text": "March 2026 Vision Zero Projects Map",
+    "file": "data/city_files/Rockville/44e089_March-3-2026-Vision-Zero-Projects-Map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/10/Post-Crash-Inspection-Memo-6-18-2025-Frederick-Road-and-Watkins-Pond-BoulevardIndianola-Drive.pdf",
+    "text": "June 18, 2025: Frederick Road (MD 355) and Watkins Pond Boulevard/Indianola Drive",
+    "file": "data/city_files/Rockville/cd0e16_Post-Crash-Inspection-Memo-6-18-2025-Frederick-Road-and-Watkins-Pond-B",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2025/10/Martins-Lane-Bicycle-Access-Feasibility-Study-Design-Analysis-Report-with-Appendix.pdf",
+    "text": "Martins Lane Bicycle Access Feasibility Study – Design Analysis Report",
+    "file": "data/city_files/Rockville/241ada_Martins-Lane-Bicycle-Access-Feasibility-Study-Design-Analysis-Report-w",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2026/06/Martins-Lane-Bicycle-Access-Feasibility-Study-Final-Plans.pdf",
+    "text": "Martins Lane Bicycle Access Feasibility Study – Final Plans",
+    "file": "data/city_files/Rockville/5546cb_Martins-Lane-Bicycle-Access-Feasibility-Study-Final-Plans.pdf",
+    "rows": 41,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.rockvillemd.gov/wp-content/uploads/2026/07/Rockville-Lewis-Ave-Bike-and-Ped-Existing-Conditions-Report-06.15.26.pdf",
+    "text": "existing conditions report",
+    "file": "data/city_files/Rockville/c817d5_Rockville-Lewis-Ave-Bike-and-Ped-Existing-Conditions-Report-06.15.26.p",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data-rockvillemd.opendata.arcgis.com/": "View GIS Open Data",
+   "https://rockvillemd.maps.arcgis.com/apps/webappviewer/index.html?id=d3b26ae3648646debb9353e22e5c1b19": "Find Your Recycle and Refuse Pickup Day map",
+   "https://survey123.arcgis.com/share/36fe16d02fb54deda5218906fc7d57f2": "Join the Recycling and Trash Cart Waitlist",
+   "https://rockvillemd.maps.arcgis.com/apps/webappviewer/index.html?id=9fc488468363472e8c51139cb6febf47": "Zoning Map",
+   "https://experience.arcgis.com/experience/02e5ec4937bc4e558f44a4d7276a8b85": "public art pieces",
+   "https://www.rockvillemd.gov/services/maps-and-open-data/": "Access and Use Constraints",
+   "https://rockvillemd.maps.arcgis.com/apps/webappviewer/index.html?id=f43d7ef7ea1245458c1c77c5562bb127": "Historic Districts and National Register Sites Map",
+   "https://rockvillemd.maps.arcgis.com/apps/webappviewer/index.html?id=b5620c3923004e8cb68964d00226a2c6": "Map of Bike Routes Plan safe and efficient routes around Rockville on a bicycle. Please use this online map for the most",
+   "https://rockvillemd.maps.arcgis.com/apps/webappviewer/index.html?id=cb83549de57c4ee992cbc11b7f14f0bb": "Residential Parking Permit District Map",
+   "https://rockvillemd.maps.arcgis.com/apps/webappviewer/index.html?id=ec15e5094c194cebb70875ee38dcf43b¢er=-77.183853,39.076539&level=18": "Project Location",
+   "https://survey123.arcgis.com/share/76e278c504d34d829ee07fc20bf1f67a": "Vision Zero Near Miss Survey",
+   "https://data.montgomerycountymd.gov/Public-Safety/Crash-Reporting-Incidents-Data/bhju-22kf": "Crash Reporting – Incidents Data",
+   "https://data.montgomerycountymd.gov/Public-Safety/Crash-Reporting-Drivers-Data/mmzv-x632": "Crash Reporting – Drivers Data",
+   "https://data.montgomerycountymd.gov/Public-Safety/Crash-Reporting-Non-Motorists-Data/n7fk-dce5": "Crash Reporting – Non-Motorists Data"
+  }
+ },
+ "Kalamassery Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Great Falls": {
+  "files": [],
+  "portals": {
+   "https://gis-mdt.hub.arcgis.com/": "Montana Department of Transportation Data Portal",
+   "https://gis-mtfwp.hub.arcgis.com/": "Montana Fish, Wildlife and Parks GIS Data",
+   "https://city-of-great-falls-cogf.hub.arcgis.com/": "GIS Layer Download",
+   "https://cogf.maps.arcgis.com/apps/Embed/index.html?webmap=ec6cccf4bb96490c9c240774f065ffd7&extent=-111.4156,47.4618,-111.1621,47.5547&zoom=true&scale=true&search=true&searchextent=true&legendlayers=true&disable_scroll=true&theme=light": "View larger map",
+   "https://experience.arcgis.com/experience/469b4b1a75314b40a8b81345fca7008f": "Public Utilities Viewer App"
+  }
+ },
+ "Bartlett": {
+  "files": [
+   {
+    "url": "https://www.matatransit.com/assets/2/6/MATA-TourismBrochure-421_draft.pdf",
+    "text": "opens external site Explore Memphis: Ride MATA To Memphis Attractions",
+    "file": "data/city_files/Bartlett/753fa3_MATA-TourismBrochure-421_draft.pdf",
+    "rows": 21,
+    "bike_rows": 18
+   }
+  ],
+  "portals": {
+   "https://bartlett-tn-gis.maps.arcgis.com/apps/mapviewer/index.html?webmap=71dfddd6d7904137803bb83e04f9bf83": "",
+   "https://www.arcgis.com/apps/dashboards/13c250b1911140f69aef195e8d07ce14": "Bartlett Project Map",
+   "http://www.arcgis.com/apps/MapTour/index.html?appid=3c07c3ed9bf64cfcab2b732b7f71368a&webmap=8f7463a241764ec485ed399ca3094fd7": "Bartlett Station Map",
+   "https://storymaps.arcgis.com/stories/c07b793355ec4081a77e1797de9f46ec": "Online Maps",
+   "https://bartlett-tn-gis.maps.arcgis.com/apps/dashboards/3bf95b5b2d154585b0edbed66c345797": "Click here to view the GPS map on your browser.",
+   "https://www.arcgis.com/apps/mapviewer/index.html?webmap=f75ff6572d924713af4658695a90fcc3\\": "Nesbit Park Trail Map"
+  }
+ },
+ "Yucaipa": {
+  "files": [],
+  "portals": {
+   "https://yucaipa.maps.arcgis.com/apps/instant/lookup/index.html?appid=e9ee0957ad4c4a39aed74fafd35051d5": "Find Your Voting District",
+   "https://yucaipa.maps.arcgis.com/apps/MapTour/index.html?appid=dbdfb0f12a63468d87a9418baa4fdf4c": "Parks (GIS)",
+   "https://yucaipa.maps.arcgis.com/apps/webappviewer/index.html?id=0cfd63ebaf1f425297d0bad015b92b86": "Trails (GIS)",
+   "https://yucaipa.maps.arcgis.com/apps/MapSeries/index.html?appid=3963ee133e564088b94ca2c4c59867e0": "City Project Updates"
+  }
+ },
+ "Florissant": {
+  "files": [],
+  "portals": {
+   "https://flori.maps.arcgis.com/apps/webappviewer/index.html?id=503c4580c43a488c81bf36d2d7e20cfb": "Community Flood Map",
+   "https://flori.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=a157181cdb2b4a31ac8752bc9fe1ca59": "Historic Walk through Florissant GIS Map",
+   "https://survey123.arcgis.com/share/dc5972e524314199bd03624557a66714?portalUrl=https://Flori.maps.arcgis.com": "Small Project Excavation",
+   "https://survey123.arcgis.com/share/611d248678964ae1bdcd1415df19e7d9?portalUrl=https://Flori.maps.arcgis.com": "Large Project Excavation"
+  }
+ },
+ "Bedford": {
+  "files": [
+   {
+    "url": "http://access.tarrantcounty.com/content/dam/main/elections/EV/mail_ballot_application.pdf",
+    "text": "Application for Ballot by Mail (PDF)",
+    "file": "data/city_files/Bedford/9903df_mail_ballot_application.pdf",
+    "rows": 35,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://bedfordtx.maps.arcgis.com/apps/instant/sidebar/index.html?appid=432b13a234af4de4b94ce157bfe33e1e": "View an interactive map",
+   "https://city-of-bedford-gis-bedfordtx.hub.arcgis.com/": "City of Bedford GIS Open Data HUB",
+   "https://bedfordtx.maps.arcgis.com/apps/dashboards/dc4fc281274040248faf1dcce351d01e": "View the City's Infrastructure Statistics Dashboard",
+   "https://experience.arcgis.com/experience/31f93c32cb54477eb8ab0a39d9228d87": "Construction Projects",
+   "https://storymaps.arcgis.com/stories/02dda9a8a44e428f9f5a86ee5cb0adac": "Mosquito Control"
+  }
+ },
+ "Middletown": {
+  "files": [],
+  "portals": {}
+ },
+ "La Calera": {
+  "files": [],
+  "portals": {}
+ },
+ "Greenacres": {
+  "files": [],
+  "portals": {
+   "https://greenacres.maps.arcgis.com/home/index.html": "ArcGIS Online Homepage",
+   "https://storymaps.arcgis.com/stories/b20ad28022204827a46a841f2212de47": "",
+   "https://experience.arcgis.com/experience/1aa1532317fb47a89ff651c7b9b8205a": "",
+   "https://experience.arcgis.com/experience/67627194baad4421a89594e73d2f5f71": "",
+   "https://greenacres.maps.arcgis.com/apps/dashboards/b66d02b057e2449e924f838d8508a827": "",
+   "https://storymaps.arcgis.com/stories/9a11f8b8221a456aa4fbe98aaede0194": "",
+   "https://greenacres.maps.arcgis.com/apps/instant/atlas/index.html?appid=d6de32af16bf4b8ea5b9861711adeaca&webmap=3167cad4b6c548da81f9607e2863c1be": "",
+   "https://greenacres.maps.arcgis.com/apps/instant/lookup/index.html?appid=758029c6e6a54c60ae559ea8a2d9cb86": ""
+  }
+ },
+ "Ottapalam Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Crystal Lake": {
+  "files": [],
+  "portals": {}
+ },
+ "Spartanburg": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/fd37c9c1b8cd4aba94250145de20db9b": "Downtown Street Closure Map",
+   "https://cityspartanburg.maps.arcgis.com/apps/webappviewer/index.html?id=af99e18b8dcc4561980ba37002d6c6b0": "",
+   "https://cityofspartanburg.org/512/Police-Open-Data": "Police Open Data",
+   "https://experience.arcgis.com/experience/42b81a2040fe4bc49ff01a27972b0381/": "Interactive Trail Map",
+   "https://www.cityofspartanburg.org/512/Police-Open-Data": "Police Open Data"
+  }
+ },
+ "Prince Albert": {
+  "files": [
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/s01b2c4k/neighbourhood-map-w-zoning-districts.pdf",
+    "text": "Neighbourhood Map",
+    "file": "data/city_files/Prince_Albert/a1dadc_neighbourhood-map-w-zoning-districts.pdf",
+    "rows": 35,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/tefpadt2/community-services-facilities-map-sept-20-17.pdf",
+    "text": "Community Services Map",
+    "file": "data/city_files/Prince_Albert/4681d4_community-services-facilities-map-sept-20-17.pdf",
+    "rows": 27,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/q0hdk1sc/arterial-collector-map.pdf",
+    "text": "Arterial & Collector Map",
+    "file": "data/city_files/Prince_Albert/9ce9db_arterial-collector-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/555hgz00/2023-06-12-transit-map.pdf",
+    "text": "Bus Route Map",
+    "file": "data/city_files/Prince_Albert/ce2311_2023-06-12-transit-map.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/ee4bfi1a/city-street-map.pdf",
+    "text": "City Street Map",
+    "file": "data/city_files/Prince_Albert/b0d906_city-street-map.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/dyaoa4iu/dangerous-goods-route-map.pdf",
+    "text": "Dangerous Goods Route Map",
+    "file": "data/city_files/Prince_Albert/af4533_dangerous-goods-route-map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/ueupcjon/heavy-vehicle.pdf",
+    "text": "Heavy Vehicle Route Map",
+    "file": "data/city_files/Prince_Albert/a0dc99_heavy-vehicle.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/vpmj4j3c/2018-22-paving-and-utility-projects.pdf",
+    "text": "5 Year Paving and Utility Program Map",
+    "file": "data/city_files/Prince_Albert/e39ace_2018-22-paving-and-utility-projects.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/4ufkzlc1/school-zones-map.pdf",
+    "text": "School Zones Map",
+    "file": "data/city_files/Prince_Albert/4704ac_school-zones-map.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/3gjjbdt4/2022-speed-map.pdf",
+    "text": "85th Percentile Speed Map",
+    "file": "data/city_files/Prince_Albert/8901f0_2022-speed-map.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/siban1of/speed-limit-map.pdf",
+    "text": "Speed Limit Map",
+    "file": "data/city_files/Prince_Albert/79176a_speed-limit-map.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/vv4dnm3v/traffic-light-and-crosswalk-map.pdf",
+    "text": "Traffic Light and Crosswalk Map",
+    "file": "data/city_files/Prince_Albert/76253b_traffic-light-and-crosswalk-map.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/uimpn50l/2022-traffic-volume.pdf",
+    "text": "Traffic Volume Map",
+    "file": "data/city_files/Prince_Albert/b561cf_2022-traffic-volume.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/0bsplyww/line-painting-map.pdf",
+    "text": "Line Painting Map",
+    "file": "data/city_files/Prince_Albert/74cd8d_line-painting-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/vqwbp5wa/tourism-map-prince-albert_2026.pdf",
+    "text": "Tourism Map",
+    "file": "data/city_files/Prince_Albert/6ec08d_tourism-map-prince-albert_2026.pdf",
+    "rows": 36,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/5valtoqw/parking-in-prince-albert-2026-fin.pdf",
+    "text": "Parking in Prince Albert Brochure",
+    "file": "data/city_files/Prince_Albert/917ad2_parking-in-prince-albert-2026-fin.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/jzuphu3f/road-construction-5-year-map-2021-2025.pdf",
+    "text": "5 Year Past Paving and Utlility Replacement Project Map",
+    "file": "data/city_files/Prince_Albert/57ee71_road-construction-5-year-map-2021-2025.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/hiofxj4q/2022-11more-than-18-million-raw-water-pump-house-project-complete-city-of-prince-albert.pdf",
+    "text": "Grand opening is Nov 4th, 2022. Media Release to follow.",
+    "file": "data/city_files/Prince_Albert/e8a231_2022-11more-than-18-million-raw-water-pump-house-project-complete-city",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/k1bg4aht/garbage-and-recycling-bins.pdf",
+    "text": "Garbage and recycling bins",
+    "file": "data/city_files/Prince_Albert/3550b4_garbage-and-recycling-bins.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/d2qjkz3a/2023-garbage-and-recycling-collection-areas-map.pdf",
+    "text": "All Areas – Map",
+    "file": "data/city_files/Prince_Albert/a10a2f_2023-garbage-and-recycling-collection-areas-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/t45fnuko/prince-albert-mcap-comprehensive-implementation-tracker-2025-final.pdf",
+    "text": "2025 Culture Plan Year in Review",
+    "file": "data/city_files/Prince_Albert/7e03d4_prince-albert-mcap-comprehensive-implementation-tracker-2025-final.pdf",
+    "rows": 1348,
+    "bike_rows": 115
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/uz3jpldb/2022_schedule-a-plowing-priority-map.pdf",
+    "text": "priority system",
+    "file": "data/city_files/Prince_Albert/3a953a_2022_schedule-a-plowing-priority-map.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/mo3eirp1/snow-clearing-parking-bans.pdf",
+    "text": "Snow Clearing Parking Ban Brochure",
+    "file": "data/city_files/Prince_Albert/a7ec76_snow-clearing-parking-bans.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://citypa.ca/en/parking-streets-and-transportation/resources/Documents/Snow-Route-Map.pdf",
+    "text": "",
+    "file": "data/city_files/Prince_Albert/f27d34_Snow-Route-Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/0aedw13y/2020-speed-counts.pdf",
+    "text": "Traffic Speed Count Map",
+    "file": "data/city_files/Prince_Albert/b6a169_2020-speed-counts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/qqxhfh4p/00-04-15.pdf",
+    "text": "00-04-15:  Shallow Buried Utility Repair Less Than 300mm Asphalt Cut",
+    "file": "data/city_files/Prince_Albert/37b171_00-04-15.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/1vdg5gir/00-04-16.pdf",
+    "text": "00-04-16:  Shallow Buried Utility Repair 300 - 1000m Asphalt-Method1",
+    "file": "data/city_files/Prince_Albert/33e765_00-04-16.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/2drc1nc4/00-04-17.pdf",
+    "text": "00-04-17:  Shallow Buried Utility Repair 300 - 1000m Asphalt-Method2",
+    "file": "data/city_files/Prince_Albert/adceb2_00-04-17.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/ioojhfmj/00-04-18.pdf",
+    "text": "00-04-18:  Shallow Buried Utility Repair Typical Gravel Lane & Street Cut",
+    "file": "data/city_files/Prince_Albert/820b17_00-04-18.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/vkpc0cla/00-04-19.pdf",
+    "text": "00-04-19:  Shallow Buried Utility Repair Typical Concrete Cut",
+    "file": "data/city_files/Prince_Albert/efbd6e_00-04-19.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/fewpgnbi/00-04-21.pdf",
+    "text": "00-04-21:  Shallow Buried Utility Repair Typical Boulevard Park Cut",
+    "file": "data/city_files/Prince_Albert/34e3a0_00-04-21.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/oznngkvd/rotary-trail.pdf",
+    "text": "Rotary Trail",
+    "file": "data/city_files/Prince_Albert/f783f1_rotary-trail.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/wrylvw53/2025-rotary-trail-title-sheet.pdf",
+    "text": "map",
+    "file": "data/city_files/Prince_Albert/dca5ee_2025-rotary-trail-title-sheet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/kuapeafl/rotary-trail-km-markers.pdf",
+    "text": "kilometre markers",
+    "file": "data/city_files/Prince_Albert/434fe7_rotary-trail-km-markers.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/yhionv3f/landfill-map.pdf",
+    "text": "located just north of the city limits",
+    "file": "data/city_files/Prince_Albert/9ecf29_landfill-map.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/v00fsz0b/2015-2028-prince-albert-easy-guide-to-recycling_hr.pdf",
+    "text": "Easy Guide to Recycling",
+    "file": "data/city_files/Prince_Albert/f1cdff_2015-2028-prince-albert-easy-guide-to-recycling_hr.pdf",
+    "rows": 10,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/mkcpgpqv/2015-2028-prince-albert-easy-guide-to-recycling_hr.pdf",
+    "text": "Easy Guide to Recycling",
+    "file": "data/city_files/Prince_Albert/4b6d4d_2015-2028-prince-albert-easy-guide-to-recycling_hr.pdf",
+    "rows": 10,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/zqchedwl/garage-sales-aug_24.pdf",
+    "text": "Garage and Yard Sales brochure",
+    "file": "data/city_files/Prince_Albert/d7e9b7_garage-sales-aug_24.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-ca.cdn.govstack.com/citypa-015-ca/media/drudnkza/kp-map-full-2017.pdf",
+    "text": "Kinsmen Park",
+    "file": "data/city_files/Prince_Albert/e3d3f0_kp-map-full-2017.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://citypa.maps.arcgis.com/apps/dashboards/97fe563335984696815c4d987e99c953": "City Facility Hours",
+   "https://experience.arcgis.com/experience/948628f2c15146dd9338834aa502aade/": "Civic Address Map",
+   "https://experience.arcgis.com/experience/e572007ec3494040ab7d7741b8b8c908/page/Page/": "See the map for a visual of what priority streets are labelled.",
+   "https://experience.arcgis.com/experience/a0a3210237cc40dcb613bf2f4a2072b2/page/Page/": "Zoning Map",
+   "https://experience.arcgis.com/experience/c654b74a00ee49bb8bbfd9c0447d8f30/": "Capital Project Map",
+   "https://storymaps.arcgis.com/stories/3f97f06b67884c30981dfe36d250250d": "Explore the City's Public Art Map",
+   "https://experience.arcgis.com/experience/e572007ec3494040ab7d7741b8b8c908/page/Priority-Clearing-Map": "Priority Map",
+   "https://experience.arcgis.com/experience/f7d2f34767b343c28dac94c4712f1877/": "Report a Needle Form",
+   "https://experience.arcgis.com/experience/a1521f60920849c29ebc50b468030e23/": "Encampments",
+   "https://survey123.arcgis.com/share/c82ec496772f47f59e47cc335db0b2e0": "Needle Pick-Up Form",
+   "https://survey123.arcgis.com/share/92cf6ced5b9b4b3baf83622b43b6c456?%20hide=header,footer,theme&wmode=transparent&allow=geolocation": "Report a Concern",
+   "https://experience.arcgis.com/experience/17ca6388cbbe4c03a949265fb98a89ec": "Little Red River Park Trail and Amenities Map",
+   "https://experience.arcgis.com/experience/a6e01dabcb544eac9a1344a40f3881d0/": "Visit the Interactive Playground Program Map",
+   "https://survey123.arcgis.com/share/59597bf400e54da4868520ad8eb263fd": ""
+  }
+ },
+ "Andover": {
+  "files": [],
+  "portals": {
+   "https://andoverma.maps.arcgis.com/apps/dashboards/29095f60898944ca806ac09df015fe57": "Projects Around Town of Andover",
+   "https://open-data-andoverma.hub.arcgis.com/": "Andover Maps and Data",
+   "https://experience.arcgis.com/experience/20b4a43a750f46698f6a7767cdf859aa": "Andover GIS Viewer",
+   "https://experience.arcgis.com/experience/20b4a43a750f46698f6a7767cdf859aa/": "",
+   "https://andoverma.maps.arcgis.com/apps/instant/sidebar/index.html?appid=9f00c377d8634d9da5587cd9bf252da0": "MBTA Community Public Zoning Visioning",
+   "https://andoverma.maps.arcgis.com/apps/webappviewer/index.html?id=e09aa89cf7a2437b8812542343816dfb": "Andover Trails GIS Viewer",
+   "https://andoverma.maps.arcgis.com/apps/webappviewer/index.html?id=e09aa89cf7a2437b8812542343816dfb&extent=-7938758.2762%2C5250593.0565%2C-7906616.5058%2C5267657.6231%2C102100": "",
+   "https://storymaps.arcgis.com/stories/db1dd5b7fcb0499192a92e88e9df7b62": "Survey Data Story Map, September 28, 2020",
+   "https://experience.arcgis.com/experience/44f72d786a4c4ad5a1d7e6605a67ce10/": "Climate Action & Sustainability Plan",
+   "https://andoverma.maps.arcgis.com/apps/instant/sidebar/index.html?appid=474c076932ba46fabae37b5b974c539d": "MS4 Outfalls Map",
+   "https://andoverma.maps.arcgis.com/apps/dashboards/46afdd9ceb464582ada8427029f36a7b": ""
+  }
+ },
+ "Cedar City": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/8bea50fbfc8040b0956bd8219572ea52/": "",
+   "https://cedarcitygis.maps.arcgis.com/apps/instant/basic/index.html?appid=eae6d0811ba241ffa5470e8c4d492338": "",
+   "https://experience.arcgis.com/experience/b845649c41df4b16a0f1751716665aee/": "",
+   "https://cedarcitygis.maps.arcgis.com/apps/View/index.html?appid=915987b2909c429ebe4d3e749648c535": "",
+   "https://experience.arcgis.com/experience/a945d1f5e98e4e21bde48828e66356a0/": "",
+   "https://cedarcitygis.maps.arcgis.com/apps/instant/basic/index.html?appid=32c600ff8e12409b8fdaea588a41d75f": "",
+   "https://experience.arcgis.com/experience/344118595df04bdea4af7bca2e09b1b1": "",
+   "https://cedarcitygis.maps.arcgis.com/apps/webappviewer/index.html?id=14e0ef9cef0041a0ba7f00f7fb196d12": "FEMA Flood Zones",
+   "https://www.arcgis.com/apps/mapviewer/index.html?layers=88293a87e2954112979e420222ffe3d9": "Utah DDW Groundwater Source Protection Zones",
+   "http://www.arcgis.com/apps/View/index.html?appid=b411295df17940b38c8ead357fad55af": "ADA Ramp Map",
+   "https://cedarcitygis.maps.arcgis.com/apps/instant/basic/index.html?appid=ba0e170778e344aebc0d0f60ccfc89fd": ""
+  }
+ },
+ "Lewiston": {
+  "files": [
+   {
+    "url": "https://ridethevalley.org/wp-content/uploads/2026/01/Lewiston-Transit-PTBA-Map-November-2025.pdf",
+    "text": "Route Schedule Map",
+    "file": "data/city_files/Lewiston/c72c98_Lewiston-Transit-PTBA-Map-November-2025.pdf",
+    "rows": 53,
+    "bike_rows": 6
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/1d32fff2513545199c9442a6f0d51e27/": "City of Lewiston Zoning Map"
+  }
+ },
+ "Sherwood": {
+  "files": [],
+  "portals": {}
+ },
+ "Mamaroneck": {
+  "files": [],
+  "portals": {}
+ },
+ "Pittsford": {
+  "files": [],
+  "portals": {}
+ },
+ "Fitchburg": {
+  "files": [],
+  "portals": {}
+ },
+ "Cheshire": {
+  "files": [],
+  "portals": {}
+ }
+}
