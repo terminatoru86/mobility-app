@@ -1,0 +1,1350 @@
+{
+ "Phoenix AZ": {
+  "files": [
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/policesite/documents/crime-stats-and-maps/2024PersonOffenses.pdf",
+    "text": "Crime Stats & Map: Personal Offensives (PDF)",
+    "file": "data/city_files/Phoenix_AZ/f6cb9b_2024PersonOffenses.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/policesite/documents/crime-stats-and-maps/2024PropertyOffenses.pdf",
+    "text": "Crime Stats & Map: Property Offenses (PDF)",
+    "file": "data/city_files/Phoenix_AZ/5a1e9b_2024PropertyOffenses.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/parkssite/documents/pks_nrd/papagodetailed.pdf",
+    "text": "Papago Park Detailed Map (PDF)",
+    "file": "data/city_files/Phoenix_AZ/da6c58_papagodetailed.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/parkssite/documents/pks_nrd/062879.pdf",
+    "text": "South Mountain Park Detailed Map (PDF)",
+    "file": "data/city_files/Phoenix_AZ/aaeb1b_062879.pdf",
+    "rows": 14,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/publicworkssite/documents/Zero%20Waste%20Recycling%20List.pdf",
+    "text": "Recycle Master List",
+    "file": "data/city_files/Phoenix_AZ/a4790a_Zero_20Waste_20Recycling_20List.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/publicworkssite/documents/Zero%20Waste%20Recycling%20List%20(printable).pdf",
+    "text": "Printer-friendly Recycle Master List",
+    "file": "data/city_files/Phoenix_AZ/c6e18e_Zero_20Waste_20Recycling_20List_20_printable_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/publicworkssite/documents/Spanish_Zero%20Waste%20Recycling%20List%20(printer-friendly).pdf",
+    "text": "Españ​ol (imprimir",
+    "file": "data/city_files/Phoenix_AZ/9b63b8_Spanish_Zero_20Waste_20Recycling_20List_20_printer-friendly_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/publicworkssite/documents/Curbside_Recycling_Education.pdf",
+    "text": "Oops/Shine On Tag Program Oops/Shine-On educates residents about recycling and preventing recycle bin contamination.",
+    "file": "data/city_files/Phoenix_AZ/e8128a_Curbside_Recycling_Education.pdf",
+    "rows": 9,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/publicworkssite/documents/Master_Recycler_Brochure.pdf",
+    "text": "Master Recycler Program Become a Master Recycler and help Phoenix achieve zero waste by 2050",
+    "file": "data/city_files/Phoenix_AZ/403764_Master_Recycler_Brochure.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/publicworkssite/documents/Recycling%20Myths.pdf",
+    "text": "Recycling myths",
+    "file": "data/city_files/Phoenix_AZ/9cde6e_Recycling_20Myths.pdf",
+    "rows": 20,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/publicworkssite/documents/Tips_to_Request_Recycling_at_Your_Apartment.pdf",
+    "text": "Download the flyer",
+    "file": "data/city_files/Phoenix_AZ/f8103d_Tips_to_Request_Recycling_at_Your_Apartment.pdf",
+    "rows": 11,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/publicworkssite/documents/Alley_Relocation_Program.pdf",
+    "text": "Alley Relocation Learn how to request trash, recycling, and bulk trash services be permanently relocated from alley to c",
+    "file": "data/city_files/Phoenix_AZ/d1e60c_Alley_Relocation_Program.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/publicworkssite/documents/ALLEY%20RELOCATION%20PROGRAM%20PROCESS%20(9).pdf",
+    "text": "Alley Relocation Check out the process for alley relocation for trash and recycling services.",
+    "file": "data/city_files/Phoenix_AZ/372627_ALLEY_20RELOCATION_20PROGRAM_20PROCESS_20_9_.pdf",
+    "rows": 36,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/parkssite/documents/pks_nrd/trail%20rating%20guide.pdf",
+    "text": "Trails Rating Guide",
+    "file": "data/city_files/Phoenix_AZ/2d779f_trail_20rating_20guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/pddsite/documents/hp/Final%20Preservation%20Phoenix%20Style%20Report%20(1)-compressed.pdf",
+    "text": "Preservation Phoenix Style Study ​Key findings from an impact study on Phoenix's historic preservation efforts.",
+    "file": "data/city_files/Phoenix_AZ/77324c_Final_20Preservation_20Phoenix_20Style_20Report_20_1_-compressed.pdf",
+    "rows": 101,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/pddsite/documents/hp/pdd_hp_pdf_00052.pdf",
+    "text": "Historic Preservation Neighborhood Asssociations and Organizations For registered groups with an interest in historic pr",
+    "file": "data/city_files/Phoenix_AZ/166d14_pdd_hp_pdf_00052.pdf",
+    "rows": 47,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/pddsite/documents/trt/external/dsd_trt_pdf_00025hp.pdf",
+    "text": "Historic Preservation Enforcement Philosophy",
+    "file": "data/city_files/Phoenix_AZ/a669a9_dsd_trt_pdf_00025hp.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/pddsite/documents/trt/external/dsd_trt_pdf_00071hp.pdf",
+    "text": "Historic Preservation Philosophy",
+    "file": "data/city_files/Phoenix_AZ/3ae029_dsd_trt_pdf_00071hp.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/pddsite/documents/trt/external/dsd_trt_pdf_00035hp.pdf",
+    "text": "General Design Guidelines for Historic Properties",
+    "file": "data/city_files/Phoenix_AZ/3c3141_dsd_trt_pdf_00035hp.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/pddsite/documents/trt/external/dsd_trt_pdf_00110hp.pdf",
+    "text": "Historic Preservation Demolition Approval Policy",
+    "file": "data/city_files/Phoenix_AZ/d5c810_dsd_trt_pdf_00110hp.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/pddsite/documents/trt/external/dsd_trt_pdf_00053hp.pdf",
+    "text": "Historic Property Demolition Approval Submittal Requirements",
+    "file": "data/city_files/Phoenix_AZ/547411_dsd_trt_pdf_00053hp.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/pddsite/documents/trt/external/dsd_trt_pdf_00031hp.pdf",
+    "text": "Historic Property Demolition Application",
+    "file": "data/city_files/Phoenix_AZ/8af7eb_dsd_trt_pdf_00031hp.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/pddsite/documents/hp/denied_listed_phoenix_register_request.pdf",
+    "text": "View Current Historic Demolition Permits DENIED​",
+    "file": "data/city_files/Phoenix_AZ/39cab0_denied_listed_phoenix_register_request.pdf",
+    "rows": 7,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://phoenix.gov/content/dam/phoenix/pddsite/documents/hp/approved_phoenix_register_demolition_requests.pdf",
+    "text": "View Current Historic Demolition Permits APPROVED​​​",
+    "file": "data/city_files/Phoenix_AZ/d3ba13_approved_phoenix_register_demolition_requests.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://phoenix.maps.arcgis.com/apps/webappviewer/index.html?id=13428321a9f84e95a634be1beab5fe96": "My Community Map: Zoning and Permit Activities",
+   "https://phoenixopendata.com/": "Open Data Portal Phoenix believes that transparency in government encourages efficiency. Explore critical datasets in ou",
+   "https://esg-phoenix.hub.arcgis.com/": "Environmental, Social & Governance (ESG) Dashboard Explore Phoenix's sustainability trends, financial wellbeing, and lon",
+   "https://experience.arcgis.com/experience/954a8cc4126641cba2617dcc03b84887": "Find a park",
+   "https://egishub-phoenix.hub.arcgis.com/": "ArcGIS Hub",
+   "https://cmpr-dashboard-phoenix.hub.arcgis.com/": "Explore the Dashboard",
+   "https://experience.arcgis.com/experience/e775247af9044c628ad7fc735fe64bc7/?draft=true&org=Phoenix": "map",
+   "https://experience.arcgis.com/experience/d18de82ee45448f69676344678c7661d": "Explore our filterable community center map",
+   "https://storymaps.arcgis.com/stories/21c1aad2b570463796bc3acba6772fd3": "View the Asian American Heritage Story Map",
+   "https://storymaps.arcgis.com/stories/a612b9f72b7e452cb1932a39b052008b": "View the African American Heritage Story Map",
+   "https://storymaps.arcgis.com/stories/b372dd975f624a85a6d2d97c8da28cf0": "View the Hispanic Heritage Story Map",
+   "https://experience.arcgis.com/experience/b1d07e93acab4f75aec63bebef4dd62e": "Find a Pool"
+  }
+ },
+ "Durham NC": {
+  "files": [],
+  "portals": {}
+ },
+ "Savannah GA": {
+  "files": [
+   {
+    "url": "http://catchacat.org/wp-content/uploads/2019/05/CAT-Paratransit-Application_Spanish.pdf",
+    "text": "Click here",
+    "file": "data/city_files/Savannah_GA/bc9d8a_CAT-Paratransit-Application_Spanish.pdf",
+    "rows": 24,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://catchacat.org/wp-content/uploads/CAT-Mobility-Paratransit-Ride-Guide-Updated-September-3-2026_.pdf",
+    "text": "Click here",
+    "file": "data/city_files/Savannah_GA/39ae5a_CAT-Mobility-Paratransit-Ride-Guide-Updated-September-3-2026_.pdf",
+    "rows": 41,
+    "bike_rows": 7
+   }
+  ],
+  "portals": {
+   "http://www.sagis.org": "www.sagis.org",
+   "https://experience.arcgis.com/experience/8475fddf7d5b4647b5e0cd99415d1799?draft=true": "",
+   "http://www.sagis.org/map": "zoning map",
+   "https://www.sagis.org/": "SAGIS",
+   "https://www.sagis.org/?dlg=Temp-Splash-Page": "zoning map",
+   "https://storymaps.arcgis.com/stories/56861c1f1d404abb996f03dcea754d18": "SAGIS training videos",
+   "https://storymaps.arcgis.com/stories/426bf653a2ea4fefa2b1be5b1701baf2": "\"Benevolent Burials: Charitable Organizations Represented in Savannah’s Laurel Grove Cemeteries,\""
+  }
+ },
+ "Santa Clara County": {
+  "files": [],
+  "portals": {}
+ },
+ "Pinellas County": {
+  "files": [
+   {
+    "url": "https://pinellas.gov/wp-content/uploads/2021/12/statement-of-repair.pdf",
+    "text": "Download PDF",
+    "file": "data/city_files/Pinellas_County/5e9b70_statement-of-repair.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://pinellas.gov/wp-content/uploads/2026/01/2025-Recycle-Guide-English.pdf",
+    "text": "Open PDF Full Screen",
+    "file": "data/city_files/Pinellas_County/cd32a4_2025-Recycle-Guide-English.pdf",
+    "rows": 100,
+    "bike_rows": 30
+   },
+   {
+    "url": "https://pinellas.gov/wp-content/uploads/2026/10/Visitor-Map-for-website_10-2026.pdf",
+    "text": "Open PDF Full Screen",
+    "file": "data/city_files/Pinellas_County/28af7f_Visitor-Map-for-website_10-2026.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://pinellas.gov/wp-content/uploads/2026/05/2026-Neri-map.pdf",
+    "text": "Open PDF Full Screen",
+    "file": "data/city_files/Pinellas_County/8055a5_2026-Neri-map.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://pinellas.gov/wp-content/uploads/2026/07/Pinellas_County_Trails_Map.pdf",
+    "text": "Open PDF Full Screen",
+    "file": "data/city_files/Pinellas_County/560436_Pinellas_County_Trails_Map.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://pinellas.gov/wp-content/uploads/2026/07/PInellas_County_Bicycle_Guide.pdf",
+    "text": "Open PDF Full Screen",
+    "file": "data/city_files/Pinellas_County/274db5_PInellas_County_Bicycle_Guide.pdf",
+    "rows": 47,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://pinellas.gov/wp-content/uploads/2021/11/Pinellas_Trail_Loop-construction_projects.pdf",
+    "text": "Open PDF Full Screen",
+    "file": "data/city_files/Pinellas_County/e85a0a_Pinellas_Trail_Loop-construction_projects.pdf",
+    "rows": 7,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://pinellas.gov/wp-content/uploads/2024/04/Fort-deo-Soto-Map-2024-FINAL.pdf",
+    "text": "Open PDF Full Screen",
+    "file": "data/city_files/Pinellas_County/6b2938_Fort-deo-Soto-Map-2024-FINAL.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://pinellas.gov/wp-content/uploads/2021/11/Fort_DeSoto_historic_guide.pdf",
+    "text": "Open PDF Full Screen",
+    "file": "data/city_files/Pinellas_County/f5d27a_Fort_DeSoto_historic_guide.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://new-pinellas-egis.opendata.arcgis.com/": "View Maps (GIS)",
+   "https://experience.arcgis.com/experience/eca0e234e9c24b239bee3026d2f529b7": "Elevation Certificate",
+   "https://experience.arcgis.com/experience/0d793d85b8814d33a12ea8896e8cd551": "GIS Map of the Trail",
+   "https://storymaps.arcgis.com/stories/909d14dfd433465d8a5a9179df545514": "Pinellas Trail Loop Photo Map",
+   "https://experience.arcgis.com/experience/0d793d85b8814d33a12ea8896e8cd551/page/Page/": "Forward Pinellas Bicycle Lane, Sidewalks, and Trailways app",
+   "https://survey123.arcgis.com/share/08382baadd904d929e35c1c7a859ad94": "view page",
+   "https://experience.arcgis.com/experience/cad2b31586ac441c95d639f5e7983e78": "Mosquito Truck and Aerial Treatments map",
+   "https://storymaps.arcgis.com/stories/ee24c3dc3c2a47638480bee6d4f1b384": "Pinellas County Infrastructure Report Card",
+   "https://pinellas-egis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=4b7b935f744741a989220ec4e8a0fb92": "Road Jurisdiction Viewer",
+   "https://pinellas-egis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=6bd0b3cc1c9a42ee808c3e1c0d790390": "Roadway Paving (Pavement Preservation)",
+   "https://experience.arcgis.com/experience/d9dc7b30203f4ee2ae2adaf65ffae1dd": "",
+   "https://pinellas-egis.maps.arcgis.com/apps/dashboards/25b0c89d31a645f9b42ba23aa0d0cad1": "See projects on a map."
+  }
+ },
+ "El Paso County": {
+  "files": [
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/21/VIP-Trail.pdf",
+    "text": "Visually Impaired Persons (VIP) Trail",
+    "file": "data/city_files/El_Paso_County/ab6eda_VIP-Trail.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/20/Recycle-Flyer-2026.pdf",
+    "text": "[CLICK HERE TO DOWNLOAD THE RECYCLE FLYER]",
+    "file": "data/city_files/El_Paso_County/fd8aac_Recycle-Flyer-2026.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/20/Recycling-Directory-2027.pdf",
+    "text": "Recycling Directory 2027",
+    "file": "data/city_files/El_Paso_County/aa8273_Recycling-Directory-2027.pdf",
+    "rows": 247,
+    "bike_rows": 19
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/21/Parks/PaintMines/Paint-Mines-brochure-and-map.pdf",
+    "text": "Paint Mines Informational Brochure and Map (PDF)",
+    "file": "data/city_files/El_Paso_County/0d54c5_Paint-Mines-brochure-and-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/21/PaintMinesInterpretiveParkMap.pdf",
+    "text": "Paint Mines Interpretive Park Map (PDF)",
+    "file": "data/city_files/El_Paso_County/01168c_PaintMinesInterpretiveParkMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/21/BearCreekRegionalParkMap-Master-2025.pdf",
+    "text": "click map to enlarge",
+    "file": "data/city_files/El_Paso_County/472f73_BearCreekRegionalParkMap-Master-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/21/FountainCreekRegionalParkMap-Master.pdf",
+    "text": "Fountain Creek Regional Park Map",
+    "file": "data/city_files/El_Paso_County/46a3c2_FountainCreekRegionalParkMap-Master.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/21/Trailability-Registration-How-To.pdf",
+    "text": "Click Here for Account Setup & Registration Help",
+    "file": "data/city_files/El_Paso_County/977179_Trailability-Registration-How-To.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/BARNESandPOWERSNORTHBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/845654_BARNESandPOWERSNORTHBID_Tax_Map_20260825.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/BARNESandPOWERSSOUTHBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/34e2eb_BARNESandPOWERSSOUTHBID_Tax_Map_20260825.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/BRIARGATECENTERBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/1cf463_BRIARGATECENTERBID_Tax_Map_20260825.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/CATALYSTCAMPUSBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/11bd98_CATALYSTCAMPUSBID_Tax_Map_20260825.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/CENTRALMANITOUSPRINGSBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/0ac5fb_CENTRALMANITOUSPRINGSBID_Tax_Map_20260825.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/CREEKWALKMARKETPLACEBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/26cb75_CREEKWALKMARKETPLACEBID_Tax_Map_20260825.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/FIRSTandMAINBID2_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/b277a7_FIRSTandMAINBID2_Tax_Map_20260825.pdf",
+    "rows": 69,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/FIRSTandMAINBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/aeb9b1_FIRSTandMAINBID_Tax_Map_20260825.pdf",
+    "rows": 20,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/FIRSTandMAINNORTHBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/156647_FIRSTandMAINNORTHBID_Tax_Map_20260825.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/GOLDHILLNORTHBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/e73e10_GOLDHILLNORTHBID_Tax_Map_20260825.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/GREATERDOWNTOWNCSBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/fc89df_GREATERDOWNTOWNCSBID_Tax_Map_20260825.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/GSFBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/4e2a0b_GSFBID_Tax_Map_20260825.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/INTERQUESTNORTHBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/2dc854_INTERQUESTNORTHBID_Tax_Map_20260825.pdf",
+    "rows": 20,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/INTERQUESTSOUTHBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/e3e44b_INTERQUESTSOUTHBID_Tax_Map_20260825.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/INTERQUESTTOWNCENTERBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/762a3d_INTERQUESTTOWNCENTERBID_Tax_Map_20260825.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/MWRETAILBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/d31a43_MWRETAILBID_Tax_Map_20260825.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://epc-assets.elpasoco.com/wp-content/uploads/sites/4/Tax-Maps/BID/NORRISAPPLETREEBID_Tax_Map_20260825.pdf",
+    "text": "Map",
+    "file": "data/city_files/El_Paso_County/f5e755_NORRISAPPLETREEBID_Tax_Map_20260825.pdf",
+    "rows": 2,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=c4640a6e53a542648762a301e93fbcb0%20": "Facilities Map",
+   "https://experience.arcgis.com/experience/a474d5f7ba354655a6d628c47ab4162c/": "Visit Affordable Housing Directory",
+   "https://experience.arcgis.com/experience/796ef090e5354b62a37f223073aae247": "Facilities & Locations",
+   "https://epcdpw.maps.arcgis.com/apps/dashboards/972b351cd72f4343892e0f3944556117": "https://epcdpw.maps.arcgis.com/apps/dashboards/972b351cd72f4343892e0f3944556117",
+   "https://experience.arcgis.com/experience/f9fab422b9d244629b241f928049c8c8": "Zoning Map Book",
+   "https://opendata-elpasoco.hub.arcgis.com": "Free GIS Data",
+   "https://cdphe.maps.arcgis.com/apps/Viewer/index.html?appid=f1541d2f21834642ba1551c674fd4a79": "CDPHE Colorado State Waters Map",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd": "FEMA National Flood Hazard Layer Map",
+   "https://fws.maps.arcgis.com/home/webmap/viewer.html?webmap=9d8de5e265ad4fe09893cf75b8dbfb77": "USFWS Critical Habitat for Threatened & Endangered Species Map",
+   "https://experience.arcgis.com/experience/9fde110dfcfb472aba46a2cae6f44078": "EPC LMI Maps",
+   "https://experience.arcgis.com/experience/279eca0222754f8a954bbf8cf995a1a3/": "Nationwide LMI Maps",
+   "https://opendata-elpasoco.hub.arcgis.com/datasets/04c79e4d55fd47d1905a6dd6e20fb26c_0/explore?location=38.844219%2C-104.554138%2C10.25": "Aerial Tiles View"
+  }
+ },
+ "Jefferson County": {
+  "files": [
+   {
+    "url": "https://apps.dnr.wi.gov/doclink/waext/WA1621.pdf",
+    "text": "Wisconsin DNR Household Battery Recycling Guide",
+    "file": "data/city_files/Jefferson_County/a7e69a_WA1621.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://docs.legis.wisconsin.gov/statutes/statutes/705/ii/10/1": "Wisconsin Statute 705.10(1)",
+   "https://docs.legis.wisconsin.gov/statutes/statutes/705/ii/18/2": "705.18(2)",
+   "https://docs.legis.wisconsin.gov/statutes/statutes/51": "Chapter 51 of the Wisconsin Statutes",
+   "https://docs.legis.wisconsin.gov/statutes/statutes/48/xix/977": "Wisconsin Statute 48.977(2)",
+   "https://docs.legis.wisconsin.gov/statutes/statutes/48/xx/9795": "§48.9795",
+   "https://docs.legis.wisconsin.gov/statutes/statutes/48/i/028": "48.028 (3)",
+   "https://experience.arcgis.com/experience/552958950be34ff085845a526b66d78b/": "Read more"
+  }
+ },
+ "Lake County": {
+  "files": [],
+  "portals": {
+   "https://lakecountyhub-lakeingispro.hub.arcgis.com/": "Request GIS Map or Data",
+   "https://wayeo.egis.39dn.com/": "Who Are Your Elected Officials?"
+  }
+ },
+ "Pinal County": {
+  "files": [],
+  "portals": {}
+ },
+ "Bell County": {
+  "files": [
+   {
+    "url": "https://bellcountytx.com/about_us/county_maps/docs/Road_Map.pdf?t=201810100847500",
+    "text": "Bell County Road Map",
+    "file": "data/city_files/Bell_County/948651_Road_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_maps/docs/1-2019 Fire Map.pdf?t=201901021423250",
+    "text": "Bell County Fire District Map",
+    "file": "data/city_files/Bell_County/213ab2_1-2019_Fire_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/departments/engineer_2/docs/Traffic_Count_Map.pdf?t=201810100848100",
+    "text": "Traffic Map",
+    "file": "data/city_files/Bell_County/c52152_Traffic_Count_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/departments/engineer_2/docs/Telephone_Companys.pdf?t=201810100848050",
+    "text": "Telephone Company Map",
+    "file": "data/city_files/Bell_County/1544b1_Telephone_Companys.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/Whole Map.pdf?t=202002100913230",
+    "text": "Road Map",
+    "file": "data/city_files/Bell_County/d7f16f_Whole_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/departments/engineer_2/docs/ETJ_Map.pdf?t=201810100845110",
+    "text": "ETJ Map",
+    "file": "data/city_files/Bell_County/1eef87_ETJ_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/261026_BCHC_Agenda.pdf?t=202610261144070",
+    "text": "October 26, 2026 - Meeting Agenda",
+    "file": "data/city_files/Bell_County/073da5_261026_BCHC_Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/260928_BCHC_Agenda.pdf?t=202610261143130",
+    "text": "September 28, 2026 - Meeting Agenda",
+    "file": "data/city_files/Bell_County/addb44_260928_BCHC_Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/260824_BCHC_Agenda.pdf?t=202609221525180",
+    "text": "August 24, 2026 - Meeting Agenda",
+    "file": "data/city_files/Bell_County/9c9513_260824_BCHC_Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/260727_BCHC_Agenda.pdf?t=202608172243560",
+    "text": "July 27, 2026 - Meeting Agenda",
+    "file": "data/city_files/Bell_County/2eb9ee_260727_BCHC_Agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/county_government/commissioners_court/docs/2022-BCTP-Map-Final-Draft.pdf?t=202305041015480",
+    "text": "Conceptual Map",
+    "file": "data/city_files/Bell_County/e95cb0_2022-BCTP-Map-Final-Draft.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/Bell_County_Fire_Response_Areas.pdf",
+    "text": "Fire District Map",
+    "file": "data/city_files/Bell_County/d12591_Bell_County_Fire_Response_Areas.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/BCHC 2026 Meeting Schedule.pdf?t=202605271902530",
+    "text": "Click Here",
+    "file": "data/city_files/Bell_County/f0e4a0_BCHC_2026_Meeting_Schedule.pdf",
+    "rows": 28,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/Program-Historic_Landmarks_in_Temple-TX.pdf?t=202605061743230",
+    "text": "Click Here",
+    "file": "data/city_files/Bell_County/4c4540_Program-Historic_Landmarks_in_Temple-TX.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/2025_Bell_CHC_Report_03_02_2026.pdf?t=202606161814360",
+    "text": "2025 Annual Report",
+    "file": "data/city_files/Bell_County/3345e3_2025_Bell_CHC_Report_03_02_2026.pdf",
+    "rows": 66,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/2024_Bell_CHC_Report_02_24_2025.pdf?t=202606161814030",
+    "text": "2024 Annual Report",
+    "file": "data/city_files/Bell_County/990620_2024_Bell_CHC_Report_02_24_2025.pdf",
+    "rows": 84,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/2023_BCHC_Annual_Report.pdf?t=202501271601470",
+    "text": "2023 Annual Report",
+    "file": "data/city_files/Bell_County/cb6b4b_2023_BCHC_Annual_Report.pdf",
+    "rows": 96,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/2022_BCHC_Annual_Report.pdf?t=202306131731010",
+    "text": "2022 Annual Report",
+    "file": "data/city_files/Bell_County/edc0b0_2022_BCHC_Annual_Report.pdf",
+    "rows": 106,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/2021_BCHC_ Commissioner Court Report.pdf?t=202210181302500",
+    "text": "2021 Annual Report",
+    "file": "data/city_files/Bell_County/7196a3_2021_BCHC__Commissioner_Court_Report.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/2019_BCHC_Commissioners Court Report.pdf?t=202101251709500",
+    "text": "2019 Annual Report",
+    "file": "data/city_files/Bell_County/d21c65_2019_BCHC_Commissioners_Court_Report.pdf",
+    "rows": 36,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/BCHC Bylaws as of 2020.pdf?t=202101251720280",
+    "text": "BCHC By-laws",
+    "file": "data/city_files/Bell_County/ba241a_BCHC_Bylaws_as_of_2020.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/History of the Bell County Historical Commission.pdf?t=202102031617550",
+    "text": "Click Here",
+    "file": "data/city_files/Bell_County/ed82b6_History_of_the_Bell_County_Historical_Commission.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/BCHC_Newsletter_Winter_2020.pdf?t=202101051812470",
+    "text": "Winter Issue",
+    "file": "data/city_files/Bell_County/12c04b_BCHC_Newsletter_Winter_2020.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bellcountytx.com/about_us/county_historical_commission/docs/BCHC_Newsletter_Winter_2019.pdf?t=201904241753210",
+    "text": "Winter Issue",
+    "file": "data/city_files/Bell_County/c08100_BCHC_Newsletter_Winter_2019.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://bellcounty.maps.arcgis.com/home/webmap/viewer.html?webmap=d6d621015b3540c0a0a31f693d700f64": "Bell County Election Precinct Map",
+   "https://bellcounty.maps.arcgis.com/sharing/rest/content/items/f6b55198906945feb16bcdf5232470b6/data": "Bell County Voting and Commissioner Precincts",
+   "https://bellcounty.maps.arcgis.com/sharing/rest/content/items/e3f4bd7c6ad447f0ba77b080e0db4a75/data": "Bell County Voting and Justice of the Peace Precincts",
+   "https://bellcounty.maps.arcgis.com/home/webmap/viewer.html?webmap=1a659258846d44d9a0d537f865008011": "Bell County School Districts Map",
+   "https://bellcounty.maps.arcgis.com/home/webmap/viewer.html?webmap=7d82af9b48e1452d96068f54f5f8bde5": "Bell County WCID (Water Control & Improvement Districts) Map",
+   "http://www.statutes.legis.state.tx.us/GetStatute.aspx?Code=BC&Value=71.101": "71.101",
+   "http://www.legis.state.tx.us/tlodocs/86R/billtext/html/HB03609F.HTM": "3609",
+   "https://bellcounty.maps.arcgis.com/sharing/rest/content/items/0b7b3a7627ca4fc4ab7128a3888c85bc/data": "Bell County Voting Precincts"
+  }
+ },
+ "Corpus Christi": {
+  "files": [],
+  "portals": {
+   "https://corpus.maps.arcgis.com/apps/dashboards/805a30fa71304195bc45b36529bf40b3": "Stage 1 Watering Schedule & Water Data"
+  }
+ },
+ "Ingham County": {
+  "files": [
+   {
+    "url": "https://parks.ingham.org/Burchfield dog print.pdf?t=202604231014310",
+    "text": "MAP",
+    "file": "data/city_files/Ingham_County/bf3d3b_Burchfield_dog_print.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ingham.org/Documents/Resolutions/Burchfield Park Brochure (1).pdf?t=202604171233280",
+    "text": "Burchfield Park Summer Trail Map",
+    "file": "data/city_files/Ingham_County/53cc3e_Burchfield_Park_Brochure_1_.pdf",
+    "rows": 9,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://parks.ingham.org/Documents/Maps/HawkIslandRunningDistances.pdf?t=201912101358590",
+    "text": "Hawk Island Trail Distances",
+    "file": "data/city_files/Ingham_County/a12328_HawkIslandRunningDistances.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ingham.org/Documents/LakeLansingDepthMap.pdf?t=201912101359000",
+    "text": "Lake Lansing Depth Map",
+    "file": "data/city_files/Ingham_County/f526a5_LakeLansingDepthMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ingham.org/Documents/Maps/HawkIsland_RunningDistances.pdf?t=201912101400290",
+    "text": "Hawk Island Trail Distances",
+    "file": "data/city_files/Ingham_County/3041e9_HawkIsland_RunningDistances.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://michigantrails.org/wp-content/uploads/2025/08/e-bike-toolkit.pdf",
+    "text": "Michigan Trails E-Bike Toolkit",
+    "file": "data/city_files/Ingham_County/d34005_e-bike-toolkit.pdf",
+    "rows": 7,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://parks.ingham.org/RESOLUTION OPPOSING THE PROPOSED INTERNATIONAL TRANSMISSION COMPANY POWER LINE ROUTE THROUGH BURCHFIELD COUNTY PARK AND RIVERBEND NATURAL AREA.pdf?t=202607101136120",
+    "text": "County Resolution",
+    "file": "data/city_files/Ingham_County/7e23c2_RESOLUTION_OPPOSING_THE_PROPOSED_INTERNATIONAL_TRANSMISSION_COMPANY_PO",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ingham.org/ITC-Line_BUR.pdf?t=202607101123070",
+    "text": "Map of Proposed IC Line",
+    "file": "data/city_files/Ingham_County/602b92_ITC-Line_BUR.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.ingham.org/Key points opposing any ITC route through Burchfield Park & Riverbend Natural Area.pdf?t=202607230843280",
+    "text": "Key Points",
+    "file": "data/city_files/Ingham_County/0539ae_Key_points_opposing_any_ITC_route_through_Burchfield_Park_Riverbend_Na",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Irving": {
+  "files": [],
+  "portals": {}
+ },
+ "Santa Clarita": {
+  "files": [],
+  "portals": {}
+ },
+ "Moreno Valley": {
+  "files": [
+   {
+    "url": "https://moval.org/departments/public_works/transportation/pdfs/BicycleMasterPlan.pdf",
+    "text": "View\n\t\t\t\t\t\t\t\t\t\t/ Download Plan (PDF)",
+    "file": "data/city_files/Moreno_Valley/694c49_BicycleMasterPlan.pdf",
+    "rows": 513,
+    "bike_rows": 42
+   },
+   {
+    "url": "https://moval.org/departments/public_works/transportation/img/Masterplan-Trailsmap.pdf",
+    "text": "PDF\n\t\t\t\t\t\t\t\t\t\tMasterplan Trails Map",
+    "file": "data/city_files/Moreno_Valley/be8005_Masterplan-Trailsmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/departments/public_works/transportation/pdfs/ExistingandPlannedBicycleandPedestrianNetwork.pdf",
+    "text": "PDF\n\t\t\t\t\t\t\t\t\t\tExisting and Planned Bicycle and Pedestrian Network",
+    "file": "data/city_files/Moreno_Valley/370772_ExistingandPlannedBicycleandPedestrianNetwork.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://moval.org/departments/public_works/pdfs/2026_CDD_AB-98-Truck-Routes-FAQ.pdf",
+    "text": "Public Outreach Meetings: Q & A Flyer (PDF, opens in new tab)",
+    "file": "data/city_files/Moreno_Valley/11c360_2026_CDD_AB-98-Truck-Routes-FAQ.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/edd/pdfs/NewDevelopmentMap.pdf",
+    "text": "New Development Activity Map",
+    "file": "data/city_files/Moreno_Valley/f4cbbd_NewDevelopmentMap.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://moval.org/edd/pdfs/RedistrictAdoptPlanMap14.pdf",
+    "text": "2014 Redistricting Adopted Plan Map",
+    "file": "data/city_files/Moreno_Valley/403dec_RedistrictAdoptPlanMap14.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/cdd/documents/general-plan2040/Zoning/NewZoning_05142026B.pdf",
+    "text": "Zoning Map",
+    "file": "data/city_files/Moreno_Valley/f0571c_NewZoning_05142026B.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/city_hall/pdfs/MapViewerHTML5Instructions.pdf",
+    "text": "Instructions for using the Map Viewer",
+    "file": "data/city_files/Moreno_Valley/95e892_MapViewerHTML5Instructions.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/resident_services/waste/pdf/events/2027_FMS-Recycle-Dump-Day-Flyer-Feb.pdf",
+    "text": "February 2027 Free Dump Day Event\n                        PDF",
+    "file": "data/city_files/Moreno_Valley/9964b8_2027_FMS-Recycle-Dump-Day-Flyer-Feb.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/parks-comm-svc/pdfs/PCST-MasterPlan.pdf",
+    "text": "Parks, Community Services & Trails Master Plan",
+    "file": "data/city_files/Moreno_Valley/6b6d17_PCST-MasterPlan.pdf",
+    "rows": 393,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://moval.org/departments/public_works/transportation/pdfs/CommercialVehicleParking.pdf",
+    "text": "",
+    "file": "data/city_files/Moreno_Valley/ebac55_CommercialVehicleParking.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://moval.org/departments/public_works/transportation/pdfs/speedzone-map.pdf",
+    "text": "Speed Zones",
+    "file": "data/city_files/Moreno_Valley/cadc23_speedzone-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/departments/public_works/transportation/pdfs/truck-routes.pdf",
+    "text": "Truck Routes",
+    "file": "data/city_files/Moreno_Valley/654dc6_truck-routes.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/resident_services/waste/pdf/2022-RecycleOrganicsProgram-Residential.pdf",
+    "text": "Residential Recycling\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tProgram",
+    "file": "data/city_files/Moreno_Valley/b67bca_2022-RecycleOrganicsProgram-Residential.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/resident_services/waste/pdf/recycling/DeMinimis-Application_fillable.pdf",
+    "text": "De Minimus,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSpace Constraint, Third-Party\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRecycle Waiver Application",
+    "file": "data/city_files/Moreno_Valley/ad081d_DeMinimis-Application_fillable.pdf",
+    "rows": 19,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://moval.org/resident_services/waste/pdf/recycling/Selfhaul-and-Backhaul-Permit_fillable.pdf",
+    "text": "Commercial\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSelf-Haul/Back-Haul Permit\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication",
+    "file": "data/city_files/Moreno_Valley/917102_Selfhaul-and-Backhaul-Permit_fillable.pdf",
+    "rows": 42,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://moval.org/departments/public_works/pdf/specdist/EdgemontCSD-BoundaryMap.pdf",
+    "text": "Edgemont CSD Boundary\n                            Map",
+    "file": "data/city_files/Moreno_Valley/7dd4bc_EdgemontCSD-BoundaryMap.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/resident_services/waste/pdf/RecycleUsedOilPostcard.pdf",
+    "text": "Printable Used Oil Recycling List (English and Spanish)",
+    "file": "data/city_files/Moreno_Valley/1ca530_RecycleUsedOilPostcard.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/parks-comm-svc/pdfs/TrailsBrochure.pdf",
+    "text": "Moreno Valley Multi-Use Trails Flyer",
+    "file": "data/city_files/Moreno_Valley/5a722a_TrailsBrochure.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/parks-comm-svc/pdfs/trails/masterplan-trailsmap.pdf",
+    "text": "Map of Master Plan Trail system",
+    "file": "data/city_files/Moreno_Valley/ae5eae_masterplan-trailsmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://moval.org/parks-comm-svc/pdfs/trails/equestrian-staging1010.pdf",
+    "text": "Equestrian Staging Areas Map",
+    "file": "data/city_files/Moreno_Valley/44e73b_equestrian-staging1010.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/13bc449c75504c4cb297b12d15c8b987": "Open Map in Full Screen",
+   "http://moval.maps.arcgis.com/apps/MapJournal/index.html?appid=f9963333368c4cc8ac74d320847fd6ca": "Destination MoVal Retail iMap",
+   "http://moval.maps.arcgis.com/apps/MapSeries/index.html?appid=41004835d28c4546800c4288b7dbf6b6": "Destination MoVal Industrial iMap",
+   "http://moval.maps.arcgis.com/apps/Shortlist/index.html?appid=da913fd72d024db09f9c37423371572b": "City Parks",
+   "https://storymaps.arcgis.com/stories/5cadaebac7fd41a19bc69bbb0fcbceda": "Used Oil Collection Center Locator",
+   "https://storymaps.arcgis.com/stories/0e41a4698d74472db773af50a3f30ab8": "Find a Recycling Center"
+  }
+ },
+ "Glendale": {
+  "files": [],
+  "portals": {}
+ },
+ "Bayamón": {
+  "files": [
+   {
+    "url": "https://www.municipiodebayamon.com/wp-content/uploads/2022/09/ordenanza2-2022-2023.pdf",
+    "text": "Para aprobar y adoptar el Reglamento sobre las Normas y Procedimientos del Proyecto de Vivienda Transitoria para Mujeres",
+    "file": "data/city_files/Bayam_n/31ef5c_ordenanza2-2022-2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.municipiodebayamon.com/wp-content/uploads/2021/08/Mapa-Turistico-2021.pdf",
+    "text": "Click aquí",
+    "file": "data/city_files/Bayam_n/a06b3f_Mapa-Turistico-2021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Oceanside": {
+  "files": [],
+  "portals": {}
+ },
+ "Maui County": {
+  "files": [],
+  "portals": {}
+ },
+ "Lakewood": {
+  "files": [],
+  "portals": {}
+ },
+ "Sandoval County": {
+  "files": [],
+  "portals": {}
+ },
+ "Randall County": {
+  "files": [],
+  "portals": {}
+ },
+ "New Haven": {
+  "files": [],
+  "portals": {}
+ },
+ "Thousand Oaks": {
+  "files": [
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/Handicap Affidavit Fillable_2025_1758326415.pdf",
+    "text": "City of Thousand Oaks' Handicapped Parking Violation Affidavit .",
+    "file": "data/city_files/Thousand_Oaks/cd8532_Handicap_Affidavit_Fillable_2025_1758326415.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/TOAKS_SystemMap_DIGITAL_1765068959.pdf",
+    "text": "click here to download",
+    "file": "data/city_files/Thousand_Oaks/dd2eae_TOAKS_SystemMap_DIGITAL_1765068959.pdf",
+    "rows": 162,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2040_DIGITAL_936.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/fa4d38_TOAKS_Route_2040_DIGITAL_936.pdf",
+    "rows": 34,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2041_DIGITAL_937.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/e12b14_TOAKS_Route_2041_DIGITAL_937.pdf",
+    "rows": 29,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2042_DIGITAL_938.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/577ade_TOAKS_Route_2042_DIGITAL_938.pdf",
+    "rows": 42,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2043_DIGITAL_939.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/869567_TOAKS_Route_2043_DIGITAL_939.pdf",
+    "rows": 35,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2044_DIGITAL_940.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/997770_TOAKS_Route_2044_DIGITAL_940.pdf",
+    "rows": 32,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://toaks.gov/corecode/storage/uber_resource/uploaded_pdfs/corecode/TOAKS_Route%2045_DIGITAL_941.pdf",
+    "text": "LEARN MORE",
+    "file": "data/city_files/Thousand_Oaks/422ea5_TOAKS_Route_2045_DIGITAL_941.pdf",
+    "rows": 33,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://gis.toaks.gov/portal/apps/sites/": "City GIS Mapping"
+  }
+ },
+ "La Crosse County": {
+  "files": [],
+  "portals": {}
+ },
+ "Henderson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Lewisville": {
+  "files": [],
+  "portals": {}
+ },
+ "Sparks": {
+  "files": [],
+  "portals": {
+   "https://gis.sparksnv.gov/portal/apps/webappviewer/index.html?id=d9e77365c3c34c93a4c4342fb945c4e0": "Ward Map",
+   "https://gis.sparksnv.gov/portal/apps/webappviewer/index.html?id=d9e5a2a4c8f143ad92ea17dc5d4b1e90": "Land Use Interactive Map",
+   "https://gis.sparksnv.gov/portal/apps/webappviewer/index.html?id=006286da6ab24ae79af99f4752e112dd": "Zoning Map",
+   "https://gis.sparksnv.gov/portal/apps/webappviewer/index.html?id=16fb2f00dfa248b4b77b05c505783a60": "Condition of my street"
+  }
+ },
+ "Brockton": {
+  "files": [],
+  "portals": {}
+ },
+ "Allen County": {
+  "files": [],
+  "portals": {}
+ },
+ "Bend": {
+  "files": [],
+  "portals": {}
+ },
+ "Geauga County": {
+  "files": [],
+  "portals": {}
+ },
+ "Campbell County": {
+  "files": [],
+  "portals": {}
+ },
+ "Trenton": {
+  "files": [],
+  "portals": {}
+ },
+ "Citrus Heights": {
+  "files": [
+   {
+    "url": "https://saccreeks.org/wp-content/uploads/2016/11/Feasibility-Report-PDF_201406301205451694-Citrus-Heights.pdf",
+    "text": "Creek Corridor Trail Project Feasibility Report",
+    "file": "data/city_files/Citrus_Heights/ef20aa_Feasibility-Report-PDF_201406301205451694-Citrus-Heights.pdf",
+    "rows": 362,
+    "bike_rows": 68
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=e6f999a6872e410389af1c559b96552b": "ranking map",
+   "https://citrusheights.maps.arcgis.com/apps/CrowdsourceReporter/index.html?appid=40ae2bb8a3b248fd9c71768d9d502ff2": "",
+   "https://citrusheights.net/1449/Open-Data-Portal": "Open Data Portal",
+   "http://www.citrusheights.net/1449/Open-Data-Portal": "Open Data Portal",
+   "https://citrusheights.maps.arcgis.com/apps/webappviewer/index.html?id=45be616caf674385a7382079708e99c1": "",
+   "https://www.citrusheights.net/1449/Open-Data-Portal": "Open Data Portal"
+  }
+ },
+ "Alhambra": {
+  "files": [],
+  "portals": {}
+ },
+ "Folsom": {
+  "files": [],
+  "portals": {}
+ },
+ "Chino Hills": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/6a9cb66bb1824cd98756812af41292a0": "Fire Hazard Severity Zone Map Viewer"
+  }
+ },
+ "Cayuga County": {
+  "files": [],
+  "portals": {}
+ },
+ "Bolingbrook": {
+  "files": [],
+  "portals": {}
+ },
+ "Baldwin Park": {
+  "files": [],
+  "portals": {}
+ },
+ "Greene County": {
+  "files": [
+   {
+    "url": "https://www.greenecountytngov.com/wp-content/uploads/2019/12/ADA-Transition-Plan-Greene-County-converted.pdf",
+    "text": "ADA Transition Plan",
+    "file": "data/city_files/Greene_County/beee27_ADA-Transition-Plan-Greene-County-converted.pdf",
+    "rows": 194,
+    "bike_rows": 13
+   }
+  ],
+  "portals": {
+   "http://www.gis.com/": "http://www.gis.com/"
+  }
+ },
+ "Union City": {
+  "files": [],
+  "portals": {}
+ },
+ "Jones County": {
+  "files": [],
+  "portals": {}
+ },
+ "Wilkes County": {
+  "files": [],
+  "portals": {
+   "https://gis.wilkescounty.net/maps/": "GIS"
+  }
+ },
+ "Columbia County": {
+  "files": [
+   {
+    "url": "https://columbiapa.org/news/Briar Creek Lake Stabalization 2026 Map.pdf",
+    "text": "Briar Creek Lake, Columbia County Shoreline Project",
+    "file": "data/city_files/Columbia_County/01ffee_Briar_Creek_Lake_Stabalization_2026_Map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://columbiapa.org/news/COLUMBIACOUNTYRECYCLING.pdf",
+    "text": "Columbia County Recycling",
+    "file": "data/city_files/Columbia_County/a7f87f_COLUMBIACOUNTYRECYCLING.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://columbiapa.org/voter/2026/2026GenAbsenteeMailInBallotSummary.pdf",
+    "text": "2026 General Election Absentee/Mail-In Ballots Summary",
+    "file": "data/city_files/Columbia_County/ade80c_2026GenAbsenteeMailInBallotSummary.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://columbiapa.org/voter/2026/2026AbsenteeMailInBallotSummary.pdf",
+    "text": "2026 General Primary Election Absentee/Mail-In Ballots Summary",
+    "file": "data/city_files/Columbia_County/65848b_2026AbsenteeMailInBallotSummary.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://columbiapa.org/voter/2025/fwab.pdf",
+    "text": "Federal Write-In Absentee Ballot",
+    "file": "data/city_files/Columbia_County/504538_fwab.pdf",
+    "rows": 68,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://columbiapa.org/voter/2026/1132026GeneralSample.pdf",
+    "text": "Sample Ballot - 2026 General Election (November 3, 2026)",
+    "file": "data/city_files/Columbia_County/45b506_1132026GeneralSample.pdf",
+    "rows": 504,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://gis.columbiapa.org": "GIS",
+   "http://gis.columbiapa.org/mapsonline": "Maps Online"
+  }
+ },
+ "Lee County": {
+  "files": [
+   {
+    "url": "https://leecountync.gov/Document Center/community/Colt Public Transportation/The County Of Lee Transit system/department-of-transportation-assurances.pdf?t=202207051002240",
+    "text": "United States Department of Transportation Assurances",
+    "file": "data/city_files/Lee_County/0513d2_department-of-transportation-assurances.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://leecountync.gov/news/23-8-16 Courthouse Parking Lot Security Gate Activation.pdf",
+    "text": "here",
+    "file": "data/city_files/Lee_County/a835d2_23-8-16_Courthouse_Parking_Lot_Security_Gate_Activation.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://leecountync.gov/Document Center/Department/Gis Strategic Services/Gis layer/historic_districts.pdf?t=202207051002270",
+    "text": "Metadata",
+    "file": "data/city_files/Lee_County/42cf35_historic_districts.pdf",
+    "rows": 14,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://leecountync.gov/Document Center/Department/Gis Strategic Services/Metadata/Sanford Snow Removal Routes.pdf?t=202512011713310",
+    "text": "Metadata",
+    "file": "data/city_files/Lee_County/ee0d75_Sanford_Snow_Removal_Routes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://leecountync.gov/Document Center/Department/Gis Strategic Services/Map Gallery/EndorGreenway_OnlineMapGallery.pdf?t=202409101151420",
+    "text": "",
+    "file": "data/city_files/Lee_County/2dc7cc_EndorGreenway_OnlineMapGallery.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://leecountync.gov/Document Center/Department/Gis Strategic Services/Map Gallery/Ward Map 20250326.pdf?t=202503261547300",
+    "text": "",
+    "file": "data/city_files/Lee_County/cc753a_Ward_Map_20250326.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://leecountync.gov/Document Center/Department/Gis Strategic Services/Map Gallery/CountyCommisioner_9_10_2026 1.pdf?t=202609101115140",
+    "text": "Lee Co Commissioner Districts",
+    "file": "data/city_files/Lee_County/580b65_CountyCommisioner_9_10_2026_1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://leecountync.gov/revize_photo_gallery/Departments/Gis Strategic Services/Map Gallery/CountyCommisioner_9_10_2026 1.pdf?t=202609101118130",
+    "text": "",
+    "file": "data/city_files/Lee_County/2ed015_CountyCommisioner_9_10_2026_1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://leecountync.gov/Document Center/Department/Gis Strategic Services/Map Gallery/townships_1.pdf?t=202207051002320",
+    "text": "Townships",
+    "file": "data/city_files/Lee_County/c29ed6_townships_1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://leecountync.gov/Document Center/Department/Gis Strategic Services/Map Gallery/voter_precincts.pdf?t=202409111548350",
+    "text": "",
+    "file": "data/city_files/Lee_County/9a8aeb_voter_precincts.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://leecountync.gov/Document Center/Department/Gis Strategic Services/Map Gallery/fire_districts.pdf?t=202409111549410",
+    "text": "",
+    "file": "data/city_files/Lee_County/ff0404_fire_districts.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://leecountync.gov/revize_photo_gallery/Departments/Gis Strategic Services/Map Gallery/Buzzline_Map.pdf?t=202611091324510",
+    "text": "",
+    "file": "data/city_files/Lee_County/63d29d_Buzzline_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://leecountync.gov/Food Truck Parking.pdf?t=202507231054210",
+    "text": "Maps for Food Truck Location within our Parks",
+    "file": "data/city_files/Lee_County/02470c_Food_Truck_Parking.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://leecountync.maps.arcgis.com/apps/webappviewer/index.html?id=3b2640ef38a74355abf9b90e459ee463": "COLTS Web Map Application",
+   "https://experience.arcgis.com/experience/9c68d39849c54209acfb8f670c8971b6": "NEW! Web Experience Interactive Mapping Site",
+   "https://lee-arcgis.leecountync.gov/parcelmap/": "https://lee-arcgis.leecountync.gov/parcelmap/",
+   "https://experience.arcgis.com/experience/6c6fd3657b5c47e1aa48fb2b55f5f816": "https://experience.arcgis.com/experience/6c6fd3657b5c47e1aa48fb2b55f5f816",
+   "http://leecountync.maps.arcgis.com/apps/webappviewer/index.html?id=3a3e4c28b44543478c4a594dd45392d9": "QUALIFIED SALES",
+   "http://leecountync.maps.arcgis.com/home/index.html": "Web Maps",
+   "http://lee-arcgis.leecountync.gov/arcgis/rest/services/BaseLayers/BaseLayers/MapServer": "Main Information Layers REST Services",
+   "http://lee-arcgis.leecountync.gov/ARCGIS/rest/services/Infrastructure/INFRASTRUCTURE/MapServer": "Infrastructure REST Services",
+   "http://lee-arcgis.leecountync.gov/ARCGIS/rest/services/Jurisdictions/JURISDICTIONS/MapServer": "Jurisdiction REST Services",
+   "http://lee-arcgis.leecountync.gov/ARCGIS/rest/services/Schools/SCHOOLS/MapServer": "Schools REST Services",
+   "http://lee-arcgis.leecountync.gov/arcgis/rest/services/Census/CENSUS/MapServer": "Census REST Services",
+   "http://lee-arcgis.leecountync.gov/arcgis/rest/services/Political/POLITICAL/MapServer": "Political REST Services"
+  }
+ },
+ "Hendersonville": {
+  "files": [],
+  "portals": {
+   "https://gis.hvilletn.org/arcgis/apps/webappviewer/index.html?id=f58d56849efb4c90b3d167cb7840ab16": "",
+   "https://gis.hvilletn.org/arcgis/apps/webappviewer/index.html?id=30f1befec5bd4916bd5ce7cdec19244a": "Interactive Zoning Map",
+   "https://gis.hvilletn.org/arcgis/apps/webappviewer/index.html?id=02cb9616b6be402c846dad0fad924dcb": "Ward Map"
+  }
+ },
+ "Rutland County": {
+  "files": [],
+  "portals": {}
+ }
+}
