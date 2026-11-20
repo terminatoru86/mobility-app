@@ -1,0 +1,2014 @@
+{
+ "Anaheim CA": {
+  "files": [],
+  "portals": {}
+ },
+ "San Bernardino CA": {
+  "files": [],
+  "portals": {
+   "https://sbcity.org/1427/Opengov---Open-Data-Tool": "Opengov - Open Data Tool",
+   "https://experience.arcgis.com/experience/0c36a9ecaea24882b225053f7c491da2/page/Demographics": "Demographics",
+   "https://www.arcgis.com/apps/instant/basic/index.html?appid=7c4e37b918274de4a51166924221d042": "Interactive Ward Map",
+   "https://sbcta.maps.arcgis.com/apps/MapSeries/index.html?appid=eedae67087af404ab9506c309b3f2321": "open data portal",
+   "https://experience.arcgis.com/experience/0c36a9ecaea24882b225053f7c491da2": "Maps",
+   "https://sbcta.maps.arcgis.com/apps/opsdashboard/index.html": "Contracts Dashboard"
+  }
+ },
+ "Miami-Dade County": {
+  "files": [],
+  "portals": {}
+ },
+ "Fulton County": {
+  "files": [
+   {
+    "url": "https://fultoncountyga.gov/-/media/November-3-Election-Reports/Drop-box-report/UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-Nov-03-2026-10302026.pdf",
+    "text": "Click here to view the Unofficial Absentee Drop Box Report (updated October 31, 2026 at 7:51 a.m.)",
+    "file": "data/city_files/Fulton_County/ec6a83_UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-Nov-03-2026-10302026.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/2026-Election/November-3-Election/Sample-Ballot--Consolidated--Nov-32026-General--Special-Election--1082026.pdf",
+    "text": "Click here for the November 3, 2026 General / Special Election Consolidated Sample Ballot.",
+    "file": "data/city_files/Fulton_County/63559a_Sample-Ballot--Consolidated--Nov-32026-General--Special-Election--1082",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/Election-Facts/Where-Does-My-Ballot-Go--Revised--8192026.pdf",
+    "text": "Where does your ballot go?",
+    "file": "data/city_files/Fulton_County/36852a_Where-Does-My-Ballot-Go--Revised--8192026.pdf",
+    "rows": 12,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/2026-Election-Reports/June-16-2026-runoff-election-reports/Drop-Box-Report/61226-UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-June-16-2026--06122026.pdf",
+    "text": "June 16, 2026 General Primary Runoff Election Unofficial Absentee Drop Box Report",
+    "file": "data/city_files/Fulton_County/6959bb_61226-UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-June-16-2026--061",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/2026-Election-Reports/May-19---General-Primary-Nonpartisan-Election/Dropbox-Reports/UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-May-19-2026-5152026.pdf",
+    "text": "May 19, 2026 General Primary / Nonpartisan Election Unofficial Absentee Drop Box Report",
+    "file": "data/city_files/Fulton_County/408e12_UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-May-19-2026-5152026.pdf",
+    "rows": 24,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/2025-Election/Dec-16-2025-runoff/absentee-ballot-drop-box/121225-UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-Dec-16-2025-12122025.pdf",
+    "text": "December 16, 2025  Senate District 35 Special Election Unofficial Absentee Ballot Drop Box Report",
+    "file": "data/city_files/Fulton_County/6ad097_121225-UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-Dec-16-2025-1212",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/2025-Election/December-2-PSC-runoff/absentee-ballot-drop-box-reports/UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-December-2-202511262025rev.pdf",
+    "text": "December 2, 2025 General Municipal Runoff Unofficial Absentee Ballot Drop Box Report",
+    "file": "data/city_files/Fulton_County/dc93ec_UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-December-2-202511262025",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/2025-Election/November-18-2025-Senate-District-35-election-Absentee-Reports/absentee-ballot-drop-box/111425-UnofficialAbsentee-Ballot-Drop-Box--Daily-Count-Nov-18-2025-11142025p.pdf",
+    "text": "November 18 2025 Senate District 35 Special Election Unofficial Absentee Ballot Drop Box Report",
+    "file": "data/city_files/Fulton_County/f56f9b_111425-UnofficialAbsentee-Ballot-Drop-Box--Daily-Count-Nov-18-2025-111",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/2025-Election/November-4-2025-election-reports/absentee-ballot-drop-box/103125-UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-November-4-2025-10312025p.pdf",
+    "text": "November 4, 2025 General Municipal and Special Election Unofficial Absentee Ballot Drop Box Report",
+    "file": "data/city_files/Fulton_County/8676c2_103125-UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-November-4-2025-",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/2025-Election/September-23-2025-runoff-election/Absentee-ballot-drop-box/91925-Unofficial-Absentee-Ballot-Drop-Box-Daily-Count-Sept-23-2025-091925.pdf",
+    "text": "September 23 Special Runoff Election Unofficial Absentee Ballot Drop Box Daily Count",
+    "file": "data/city_files/Fulton_County/974cd3_91925-Unofficial-Absentee-Ballot-Drop-Box-Daily-Count-Sept-23-2025-091",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/July-15-2025-PSC-Runoff-reports/Absentee-Ballot-Drop-Box/71125-UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--July-15-2025-071125.pdf",
+    "text": "July 15 Special Primary Runoff Election for Public Service Commissioner (PSC) Absentee Ballot Drop Box Daily Count",
+    "file": "data/city_files/Fulton_County/f9ea72_71125-UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--July-15-2025-07",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/2025-Election/June-17-2025-Reports/Absentee-Ballot-Drop-Box-Daily-Count/UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--June-17-2025-061325.pdf",
+    "text": "June 17 Special Primary Public Service Commissioner (PSC) /Special Election- Absentee Ballot Drop Box Daily Count",
+    "file": "data/city_files/Fulton_County/27760c_UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--June-17-2025-061325.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/2024-Election-Documents/December-3-General-Runoff/Unofficial-Absentee-Drop-Box-Result/UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--Dec-3-2024-for-11272024.pdf",
+    "text": "December 3 General Municipal Runoff - Unofficial Absentee Ballot Dropbox Report",
+    "file": "data/city_files/Fulton_County/da9e4b_UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--Dec-3-2024-for-112720",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/2024-Election-Documents/November-5-2024-General-Election-Early-Voting-Reports/Drop-Box-Results-Report/UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--Nov-5-2024-11012024.pdf",
+    "text": "November 5 General Special and Nonpartisan Election - Unofficial Absentee Ballot Dropbox Report",
+    "file": "data/city_files/Fulton_County/49a5a4_UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--Nov-5-2024-11012024.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/June-18-2024-Runoff-Election-Early-Voting-Reports/UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-JUNE-18-2024-GPRunoff-61424.pdf",
+    "text": "June 18 General Primary Runoff Election - Absentee Drop Box Report",
+    "file": "data/city_files/Fulton_County/101cb8_UnofficialAbsentee-Ballot-Drop-Box-Daily-Count-JUNE-18-2024-GPRunoff-6",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/2024-Election-Documents/May-21-2024-Election-Early-Voting-Reports/UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--MAY-21-2024-GP-5172024.pdf",
+    "text": "May 21 General Primary Election - Absentee Drop Box Report",
+    "file": "data/city_files/Fulton_County/63d1b2_UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--MAY-21-2024-GP-517202",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/2024-Election-Documents/March-12-2024-Election-Early-Voting-Reports/UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--MARCH-12-2024-PPP-03082024pd.pdf",
+    "text": "March 12 Presidential Primary Preference (PPP) Election - Absentee Drop Box Report",
+    "file": "data/city_files/Fulton_County/6e64e4_UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--MARCH-12-2024-PPP-030",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/2023-December-5-General-Municipal-Runoff-Election/UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--December-5-2023--12012023p.pdf",
+    "text": "December 5 Municipal General Runoff - Absentee Drop Box Report",
+    "file": "data/city_files/Fulton_County/2833e8_UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--December-5-2023--1201",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/Early-Voting-Turnout-Reports/2023-Special-Election-House-District-68-Runoff/UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--May-16-20230609.pdf",
+    "text": "Special Election House District 68 Runoff - Absentee Drop Box Report",
+    "file": "data/city_files/Fulton_County/2176d1_UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--May-16-20230609.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/Unofficial-Absentee-Ballot-Drop-Box-Daily-Count/UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--May-16-2023512.pdf",
+    "text": "Special Election Election House 68 - Drop Box Report",
+    "file": "data/city_files/Fulton_County/e98740_UnofficialAbsentee-Ballot-Drop-Box--Daily-Count--May-16-2023512.pdf",
+    "rows": 24,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/Early-Voting-Turnout-Reports/2022-Special-Election-for-House-District-45/Absentee-Ballot-Drop-Box--Daily-Count--april-5-2022401.pdf",
+    "text": "State House District 45 Special Election - Absentee Drop Box",
+    "file": "data/city_files/Fulton_County/40cf1f_Absentee-Ballot-Drop-Box--Daily-Count--april-5-2022401.pdf",
+    "rows": 21,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/Early-Voting-Turnout-Reports/2021-EV-reports/Absentee-Ballot-Drop-Box--Daily-Count--NOV-2-20211029.pdf",
+    "text": "November 2, 2021 - Municipal Election - Absentee Drop Box",
+    "file": "data/city_files/Fulton_County/2507fa_Absentee-Ballot-Drop-Box--Daily-Count--NOV-2-20211029.pdf",
+    "rows": 21,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/Registration-and-Elections/Early-Voting-Turnout-Reports/2021-EV-reports/Absentee-Ballot-Drop-Box--Daily-Count--NOV-30-20211124.pdf",
+    "text": "November 30 - General Municipal Runoff Special - Absentee Drop Box",
+    "file": "data/city_files/Fulton_County/6df31d_Absentee-Ballot-Drop-Box--Daily-Count--NOV-30-20211124.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fultoncountyga.gov/-/media/Departments/IT_GIS/CongressionalDistricts_ep_v2024.pdf",
+    "text": "U.S. Congressional Map",
+    "file": "data/city_files/Fulton_County/879bb9_CongressionalDistricts_ep_v2024.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://fulcogis.maps.arcgis.com/apps/dashboards/13b9b5c3b10a48f49859e6efe558c92a": "View Times about PRECINCT TIME TRACKER - Election Day",
+   "https://gis.fultoncountyga.gov/Apps/propertymapviewer_EB/": "View Map about  Property Map Viewer",
+   "https://gis.fultoncountyga.gov/Dev/voterdistrictfinder_EB/": "View Maps about Voting Districts Map Viewer",
+   "https://gis.fultoncountyga.gov/apps/AerialDownloadMapViewer/": "Click to view about Aerial Imagery Download Tool",
+   "https://gis.fultoncountyga.gov/apps/topodownloadmapviewer/": "Click to View about Topographical Contour Download Tool",
+   "https://commdist-fulcogis.opendata.arcgis.com/": "Click to View about Key District Facts & Maps",
+   "https://gisdata.fultoncountyga.gov/": "Click to View about Geospatial Data Download",
+   "https://fulcogis.maps.arcgis.com/apps/webappviewer/index.html?id=ff288479ae5642428b84c3cefe4f0416": "Click to View about Find services near you",
+   "https://experience.arcgis.com/experience/c044dbda9b0048358836ba90630bec0b/": "View Map about Seniors Centers",
+   "https://experience.arcgis.com/experience/b4c8499b6f154b55b311a834a96f9b8e/": "View Map about Library Locator",
+   "https://experience.arcgis.com/experience/9716ed69dd0b43cc9e15114407226a33": "Click to View about water & sewer public map viewer",
+   "https://experience.arcgis.com/experience/847ca4f4304945b2872eeb3bb30891ba": "please visit the Advance Voting Location Map"
+  }
+ },
+ "Oklahoma County": {
+  "files": [
+   {
+    "url": "https://oklahomacounty.org/Portals/0/DNNGalleryPro/uploads/2022/7/1/PARKINGFORJURYDUTY.pdf",
+    "text": "Jury Parking (PDF)",
+    "file": "data/city_files/Oklahoma_County/fa81d1_PARKINGFORJURYDUTY.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://oklahomacounty.org/Portals/0/2023-2024-Regional-Snow-Routes_MAP.pdf",
+    "text": "Snow Route Map (PDF)",
+    "file": "data/city_files/Oklahoma_County/b402e1_2023-2024-Regional-Snow-Routes_MAP.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://oklahomacounty.org/Portals/0/countyMap_2.pdf",
+    "text": "here",
+    "file": "data/city_files/Oklahoma_County/427bfa_countyMap_2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://ok-county-gis-hub-ok-co.hub.arcgis.com/": "Oklahoma County GIS Hub",
+   "http://www.arcgis.com/home/webmap/viewer.html?webmap=ebfe9701775245ceb94f274e02c50404&extent=-97.7297,35.3711,-97.1022,35.7365": "here"
+  }
+ },
+ "Montgomery County": {
+  "files": [
+   {
+    "url": "https://montva.com/docs/default-source/planning-gis/map-gallery/future-land-use-policy.pdf?sfvrsn=82637e45_4",
+    "text": "Future Land Use Policy",
+    "file": "data/city_files/Montgomery_County/9ed163_future-land-use-policy.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://montva.com/docs/default-source/planning-gis/map-gallery/comprehensive-plan-policy-map.pdf?sfvrsn=bcf253d4_4",
+    "text": "Comprehensive Plan Policy Map",
+    "file": "data/city_files/Montgomery_County/2e804a_comprehensive-plan-policy-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://montva.com/docs/default-source/planning-gis/map-gallery/zoning-map.pdf?sfvrsn=55d2203c_4",
+    "text": "Zoning Map",
+    "file": "data/city_files/Montgomery_County/189b4f_zoning-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://montva.com/docs/default-source/voter-registration/voting-districts/board-of-supervisors-district-maps/supervisor-districts-map-2026.pdf?sfvrsn=da306d79_14",
+    "text": "Supervisor Districts Map (2026)",
+    "file": "data/city_files/Montgomery_County/5629bf_supervisor-districts-map-2026.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data-montva-gis.opendata.arcgis.com/": "Open Data Hub",
+   "https://www.pulaskicounty.org/GIS.html": "Pulaski County",
+   "https://gilescova.interactivegis.com/map/": "Giles County",
+   "https://floydcova.interactivegis.com/login/": "Floyd County",
+   "https://vgin.maps.arcgis.com/home/index.html": "VGIN GIS Clearinghouse",
+   "https://data.census.gov/": "US Census American Fact Finder"
+  }
+ },
+ "Camden County": {
+  "files": [
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2017/07/2017-06-21CrossCamdenCountyTrail.pdf",
+    "text": "Cross Camden County Trail Final Report",
+    "file": "data/city_files/Camden_County/78a32f_2017-06-21CrossCamdenCountyTrail.pdf",
+    "rows": 336,
+    "bike_rows": 105
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2017/07/2017-06-28CCReportAppendix.pdf",
+    "text": "Cross Camden County Trail Final Report Appendix",
+    "file": "data/city_files/Camden_County/f4639b_2017-06-28CCReportAppendix.pdf",
+    "rows": 943,
+    "bike_rows": 208
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/maps_downloadable_file_Whole_Trail.pdf",
+    "text": "Click here to download the Cooper River Water Trail Map below:",
+    "file": "data/city_files/Camden_County/840ac6_maps_downloadable_file_Whole_Trail.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2025/02/maps_downloadable_file_from_Pyne_Poynt.pdf",
+    "text": "From Pyne Poynt Park",
+    "file": "data/city_files/Camden_County/c746fb_maps_downloadable_file_from_Pyne_Poynt.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/maps_downloadable_file_from_CHWP.pdf",
+    "text": "From Cramer Hill Waterfront Park",
+    "file": "data/city_files/Camden_County/0263bb_maps_downloadable_file_from_CHWP.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/maps_downloadable_file_from_Gateway_Park.pdf",
+    "text": "From Gateway Park",
+    "file": "data/city_files/Camden_County/39c6f6_maps_downloadable_file_from_Gateway_Park.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/maps_downloadable_file_from_Kaighn_Ave_Below_Dam.pdf",
+    "text": "From Kaighn Ave Below Dam",
+    "file": "data/city_files/Camden_County/155373_maps_downloadable_file_from_Kaighn_Ave_Below_Dam.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/maps_downloadable_file_from_Kaighn_Ave_Above_Dam.pdf",
+    "text": "From Kaighn Ave Above Dam",
+    "file": "data/city_files/Camden_County/2945d5_maps_downloadable_file_from_Kaighn_Ave_Above_Dam.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/maps_downloadable_file_from_Cooper_Lake_Boat_Launch.pdf",
+    "text": "From Cooper Lake Boat Launch",
+    "file": "data/city_files/Camden_County/6960d6_maps_downloadable_file_from_Cooper_Lake_Boat_Launch.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/maps_downloadable_file_from_Cooper_River_Park.pdf",
+    "text": "From Cooper River Park",
+    "file": "data/city_files/Camden_County/5433bd_maps_downloadable_file_from_Cooper_River_Park.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/maps_downloadable_file_from_CCPD.pdf",
+    "text": "From Camden County Parks Department",
+    "file": "data/city_files/Camden_County/a85387_maps_downloadable_file_from_CCPD.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/maps_downloadable_file_from_Evans_Pond.pdf",
+    "text": "From Evans Pond",
+    "file": "data/city_files/Camden_County/072df3_maps_downloadable_file_from_Evans_Pond.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/maps_downloadable_file_all_maps_set.pdf",
+    "text": "Set of all maps",
+    "file": "data/city_files/Camden_County/6ac23d_maps_downloadable_file_all_maps_set.pdf",
+    "rows": 61,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/trip_planning_pyne_poynt_loop.pdf",
+    "text": "Download map",
+    "file": "data/city_files/Camden_County/08a407_trip_planning_pyne_poynt_loop.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/trip_planning_cooper_lake_loop.pdf",
+    "text": "Download map",
+    "file": "data/city_files/Camden_County/ea14ac_trip_planning_cooper_lake_loop.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2025/02/trip_planning_pyne_poynt_to_kaighn_ave-2.pdf",
+    "text": "Download map",
+    "file": "data/city_files/Camden_County/432d79_trip_planning_pyne_poynt_to_kaighn_ave-2.pdf",
+    "rows": 12,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.camdencounty.com/wp-content/uploads/2021/02/trip_planning_cramer_hill_fishing_basin.pdf",
+    "text": "Download map",
+    "file": "data/city_files/Camden_County/0e9b2f_trip_planning_cramer_hill_fishing_basin.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "http://www.camdencounty.com/sites/default/files/files/Public%20Meeting%201%20Map.pdf",
+    "text": "View map displayed at the meeting (PDF)",
+    "file": "data/city_files/Camden_County/750e1a_Public_20Meeting_201_20Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.camdencounty.com/sites/default/files/files/bikeplan.pdf",
+    "text": "Bicycling & Multi-Use Trails Plan",
+    "file": "data/city_files/Camden_County/96c2d5_bikeplan.pdf",
+    "rows": 205,
+    "bike_rows": 46
+   }
+  ],
+  "portals": {
+   "https://waterdata.usgs.gov/monitoring-location/01467150/": "Check water temp here."
+  }
+ },
+ "Jefferson Parish": {
+  "files": [],
+  "portals": {}
+ },
+ "Lane County": {
+  "files": [
+   {
+    "url": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_3585797/File/Government/County%20Departments/Public%20Works/Waste%20Management/Garbage%20&%20Recycling/Reports%20&%20Publications/WWGuide.9.2025.W2.WEB.pdf",
+    "text": "Waste Wise Lane County: A Guide to Sustainability (English)",
+    "file": "data/city_files/Lane_County/643bd4_WWGuide.9.2025.W2.WEB.pdf",
+    "rows": 128,
+    "bike_rows": 23
+   },
+   {
+    "url": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_3585797/File/Government/County%20Departments/Public%20Works/Waste%20Management/Garbage%20&%20Recycling/Reports%20&%20Publications/Waste_Wise_Guide-SPANISH.08.24.pdf",
+    "text": "Waste Wise Condado de Lane: Guía de sostenibilidad",
+    "file": "data/city_files/Lane_County/bec3ae_Waste_Wise_Guide-SPANISH.08.24.pdf",
+    "rows": 136,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://lanecounty.org/UserFiles/Servers/Server_3585797/File/Government/County Departments/Public Works/Waste Management/Garbage & Recycling/Reports & Publications/TRANSFER.NEWS.GW.08.20.26.DIGiDIST.pdf",
+    "text": "Glenwood Transfer News",
+    "file": "data/city_files/Lane_County/56788b_TRANSFER.NEWS.GW.08.20.26.DIGiDIST.pdf",
+    "rows": 25,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://lanecounty.org/UserFiles/Servers/Server_3585797/File/Government/County Departments/Public Works/Waste Management/Garbage & Recycling/Reports & Publications/TRANSFER.NEWS.RU.08.20.26.DIGiDIST.pdf",
+    "text": "Rural Transfer News",
+    "file": "data/city_files/Lane_County/336938_TRANSFER.NEWS.RU.08.20.26.DIGiDIST.pdf",
+    "rows": 37,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://lanecounty.org/UserFiles/Servers/Server_3585797/File/Government/County Departments/Public Works/Waste Management/Recycling/Master Recycler Program/2024 Winter WelcomeLetter.pdf",
+    "text": "Want to learn more",
+    "file": "data/city_files/Lane_County/4c9fab_2024_Winter_WelcomeLetter.pdf",
+    "rows": 24,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.lanecounty.org/UserFiles/Servers/Server_3585797/File/Government/County%20Departments/Public%20Works/Waste%20Management/Waste%20Prevention%20and%20Education/Master%20Recycler%20Program/Nov.%202026%20Master%20Recyclers%20Favorite%20Things.pdf",
+    "text": "Favorite Waste Free Things to Give and Receive",
+    "file": "data/city_files/Lane_County/c1499f_Nov._202026_20Master_20Recyclers_20Favorite_20Things.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lanecounty.org/UserFiles/Servers/Server_3585797/File/Government/County%20Departments/Public%20Works/Waste%20Management/Waste%20Prevention%20and%20Education/Master%20Recycler%20Program/MasterRecyclerProgramBrochure2012.pdf",
+    "text": "Brochure",
+    "file": "data/city_files/Lane_County/59e2f4_MasterRecyclerProgramBrochure2012.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lanecounty.hosted.civiclive.com/UserFiles/Servers/Server_3585797/File/Government/County%20Departments/Information%20Services/Maps%20&%20GIS/GIS%20Products/DigitalProductDisclaimer.pdf",
+    "text": "Data Disclaimer",
+    "file": "data/city_files/Lane_County/3e03fc_DigitalProductDisclaimer.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lanecounty.org/UserFiles/Servers/Server_3585797/File/Government/County%20Departments/Public%20Works/Waste%20Management/Garbage%20&%20Recycling/RMA.Recycle.Guide.English.11X17.10.16.2025.pdf",
+    "text": "Download the English-Language Guide",
+    "file": "data/city_files/Lane_County/4cbbc1_RMA.Recycle.Guide.English.11X17.10.16.2025.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lanecounty.org/UserFiles/Servers/Server_3585797/File/Government/County%20Departments/Public%20Works/Waste%20Management/Garbage%20&%20Recycling/RMA.LC.8.5x11.Recycle.Poster.Spanish.10.14.25.pdf",
+    "text": "Descargue la guía en español",
+    "file": "data/city_files/Lane_County/74b4b7_RMA.LC.8.5x11.Recycle.Poster.Spanish.10.14.25.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lanecounty.org/UserFiles/Servers/Server_3585797/File/Government/County%20Departments/Public%20Works/Waste%20Management/Garbage%20&%20Recycling/RMA.new.items.Nos.wishcycling.Eng.Span.8.5x11.10.14.2025A.pdf",
+    "text": "Descargue la guía en español",
+    "file": "data/city_files/Lane_County/6b653c_RMA.new.items.Nos.wishcycling.Eng.Span.8.5x11.10.14.2025A.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_3585797/File/Government/County%20Departments/Public%20Works/Waste%20Management/Garbage%20&%20Recycling/Reports%20&%20Publications/TRANSFER.NEWS.GW.08.20.26.DIGiDIST.pdf",
+    "text": "Glenwood Transfer News",
+    "file": "data/city_files/Lane_County/4fd76b_TRANSFER.NEWS.GW.08.20.26.DIGiDIST.pdf",
+    "rows": 25,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_3585797/File/Government/County%20Departments/Public%20Works/Waste%20Management/Garbage%20&%20Recycling/Reports%20&%20Publications/TRANSFER.NEWS.RU.08.20.26.DIGiDIST.pdf",
+    "text": "Rural Transfer News",
+    "file": "data/city_files/Lane_County/f8f60e_TRANSFER.NEWS.RU.08.20.26.DIGiDIST.pdf",
+    "rows": 37,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://lanecounty.org/UserFiles/Servers/Server_3585797/File/Government/County Departments/Public Works/Historic Covered Bridges In Lane County/Cov_Br_Bro_03.pdf",
+    "text": "Covered Bridge Brochure",
+    "file": "data/city_files/Lane_County/1b5512_Cov_Br_Bro_03.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lanecounty.org/UserFiles/Servers/Server_3585797/File/Parks/Campground%20Maps/Richardson%20Park%20Corrected%20(2).pdf",
+    "text": "Richardson Map",
+    "file": "data/city_files/Lane_County/9f749e_Richardson_20Park_20Corrected_20_2_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lanecounty.org/UserFiles/Servers/Server_3585797/File/Parks/Park%20Maps/McKenzie%20River%20Corridor%20Map%20-%202026%20update%20(48x17).pdf",
+    "text": "",
+    "file": "data/city_files/Lane_County/184911_McKenzie_20River_20Corridor_20Map_20-_202026_20update_20_48x17_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lanecounty.org/UserFiles/Servers/Server_3585797/File/Government/County Departments/Public Works/Waste Management/Garbage & Recycling/Reports & Publications/TRANSFER.NEWS.GW.08.20.26.DIGiDIST.pdf",
+    "text": "Glenwood Transfer News",
+    "file": "data/city_files/Lane_County/21ddf0_TRANSFER.NEWS.GW.08.20.26.DIGiDIST.pdf",
+    "rows": 25,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.lanecounty.org/UserFiles/Servers/Server_3585797/File/Government/County Departments/Public Works/Waste Management/Garbage & Recycling/Reports & Publications/TRANSFER.NEWS.RU.08.20.26.DIGiDIST.pdf",
+    "text": "Rural Transfer News",
+    "file": "data/city_files/Lane_County/214d79_TRANSFER.NEWS.RU.08.20.26.DIGiDIST.pdf",
+    "rows": 37,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://data-sporgis.hub.arcgis.com/": "City of Springfield",
+   "https://www.nwgis.org/": "Northwest GIS User Group",
+   "https://storymaps.arcgis.com/stories/2a09d2373ecc4fa7baa2055ca1ebf212": "County Services Map",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstorymaps.arcgis.com%2Fstories%2F589f492448164606a2c56b96970b0943&data=05%7C02%7Cpublicinformation%40lanecountyor.gov%7Cea5b685250df4633025a08df458d04d1%7C74df5a22826e49429a741d199974dedf%7C0%7C0%7C639306144309962299%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=mTwfKPoZFhj916SFTb7Kp4p6RlM7rv557PjdXlrlxDQ%3D&reserved=0": "here",
+   "https://storymaps.arcgis.com/stories/4e97999562c34ec5b9e288f6766de658": "Covered Bridge Story Map",
+   "https://storymaps.arcgis.com/stories/589f492448164606a2c56b96970b0943": "",
+   "https://experience.arcgis.com/experience/2d87be161c4e4429b5380c354d110f6e": "Parks Map - Interactive",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Flcgisorg.maps.arcgis.com%2Fapps%2Fwebappviewer%2Findex.html%3Fid%3D921c8af7514f4ab880788df6b8bc10c5&data=05%7C02%7CDelaney.HECKER%40lanecountyor.gov%7C0e10c7987d154d8b2f8d08dd50681795%7C74df5a22826e49429a741d199974dedf%7C0%7C0%7C638755130197388958%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=GYV0bVOS97UAFyeyTOu2I8cD2%2B6pv6lgLItv6rgoTYM%3D&reserved=0": "Road Jurisdiction Map",
+   "https://storymaps.arcgis.com/stories/1a369d8b22a84f139a498f03e8ca8f02": "Road Maintenance Zones",
+   "https://lcgisorg.maps.arcgis.com/apps/MapJournal/index.html?appid=09a13afa948b4c1f894cfcb4a32085db": "",
+   "http://experience.arcgis.com/experience/e3080cc32bb44878b71ef62309bac3fd/page/Map": "Interactive Route Priority Map"
+  }
+ },
+ "Boulder County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/725b354871634df99664956ae3e8fc6a/": "Roadway Impacts Map"
+  }
+ },
+ "Chatham County": {
+  "files": [],
+  "portals": {
+   "https://chathamelections.sagis.org/": "Find Your District",
+   "https://storymaps.arcgis.com/stories/9de99f81d6ba4adb9a979485ebf391e7": "Learn more about our diverse network of parks, recreational properties, greenspaces, and conservation lands."
+  }
+ },
+ "Marin County": {
+  "files": [],
+  "portals": {}
+ },
+ "Lake County": {
+  "files": [
+   {
+    "url": "https://gis.lakecountyohio.gov/datadownload/lakenavigator3/HOWTO_LakeNavigator3_BasemapTool.pdf",
+    "text": "PDF",
+    "file": "data/city_files/Lake_County/67d02b_HOWTO_LakeNavigator3_BasemapTool.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis.lakecountyohio.gov/datadownload/ORIGINAL_LOTS_LAKE_OH_JAN_2024.zip",
+    "text": "Original Lots",
+    "file": "data/city_files/Lake_County/a73c7e_ORIGINAL_LOTS_LAKE_OH_JAN_2024.zip",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.lakecountyohio.gov/lakenavigator3/": "Lake Navigator 3.0",
+   "https://experience.arcgis.com/experience/1035fff0a7534de0813faf21c5d8638d": "NEW LAKE NAV 4.0 BETA",
+   "https://gis.lakecountyohio.gov/lakepublicaccess/lcpas.htm": "Lake Public Access",
+   "https://gis-lakeohgis.opendata.arcgis.com/pages/data-download": "Explore our Open Data Download",
+   "https://storymaps.arcgis.com/stories/08ebc0ecd24745f2b5a06d63f0b3c9b8": "",
+   "http://www.gis.com/content/what-gis": "here",
+   "https://gis.lakecountyohio.gov/datadownload/lakenavigator3/LakeNavigator3Overview15.mp4": "Interface Overview Video",
+   "https://gis.lakecountyohio.gov/datadownload/lakenavigator3/vHOWTO_LakeNavigator3_SearchTool.mp4": "Video",
+   "https://gis.lakecountyohio.gov/datadownload/lakenavigator3/vHOWTO_LakeNavigator3_AddDataTool.mp4": "Video",
+   "https://gis.lakecountyohio.gov/datadownload/lakenavigator3/vHOWTO_LakeNavigator3_BasemapTool.mp4": "Video",
+   "https://gis.lakecountyohio.gov/DataDownload/LakeNavigator3/vHOWTO_LakeNavigator3_BufferTool.mp4": "Video",
+   "https://gis.lakecountyohio.gov/DataDownload/LakeNavigator3/vHOWTO_LakeNavigator3_DrawTool.mp4": "Video"
+  }
+ },
+ "Mohave County": {
+  "files": [
+   {
+    "url": "https://mcgis.mohave.gov/docs/ExportResults.pdf",
+    "text": "(Document Tutorial) How to Export Parcel Selections to a CSV file, Shapefile, or XLSX file on the Map Viewer",
+    "file": "data/city_files/Mohave_County/0bbced_ExportResults.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mohave.gov/media/5jjphetb/localofficesmapv3.pdf",
+    "text": "",
+    "file": "data/city_files/Mohave_County/ea2afc_localofficesmapv3.pdf",
+    "rows": 14,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.mohave.gov/media/sbinfmbq/mohave-general-election-ballot-mass-sample.pdf",
+    "text": "Sample Ballots",
+    "file": "data/city_files/Mohave_County/16e63c_mohave-general-election-ballot-mass-sample.pdf",
+    "rows": 3365,
+    "bike_rows": 233
+   },
+   {
+    "url": "https://www.mohave.gov/media/rv0bhavd/no-labels-sample-ballots.pdf",
+    "text": "",
+    "file": "data/city_files/Mohave_County/312a32_no-labels-sample-ballots.pdf",
+    "rows": 918,
+    "bike_rows": 126
+   },
+   {
+    "url": "https://www.mohave.gov/media/2vhkrtio/request-for-single-ballot-2023.pdf",
+    "text": "Active Early Voting List",
+    "file": "data/city_files/Mohave_County/7f5f3b_request-for-single-ballot-2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mohave.gov/media/bsphvjne/early-ballot-request-95dfe2fb-cfe6-4dc0-abb9-4cac4fefbdeb.pdf",
+    "text": "Single Early Ballot Request Form",
+    "file": "data/city_files/Mohave_County/a0acc2_early-ballot-request-95dfe2fb-cfe6-4dc0-abb9-4cac4fefbdeb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.mohave.gov/media/geuap3c1/early-ballot-request.pdf",
+    "text": "View Form",
+    "file": "data/city_files/Mohave_County/5d00c9_early-ballot-request.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.mohave.gov/media/hliegnuj/dolan_springs_trail_map.pdf",
+    "text": "View Map",
+    "file": "data/city_files/Mohave_County/e2d66c_dolan_springs_trail_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://parks.mohave.gov/media/tiih52ef/hualapai_mountain_park_trail_brochure_1.pdf",
+    "text": "View Map",
+    "file": "data/city_files/Mohave_County/88bc42_hualapai_mountain_park_trail_brochure_1.pdf",
+    "rows": 43,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://parks.mohave.gov/media/5abefjaj/parks-recycling-zero-waste-plan.pdf",
+    "text": "Parks Recycling & Zero Waste Plan",
+    "file": "data/city_files/Mohave_County/3093bb_parks-recycling-zero-waste-plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mohave.gov/media/5jjphetb/localofficesmapv3.pdf",
+    "text": "",
+    "file": "data/city_files/Mohave_County/915329_localofficesmapv3.pdf",
+    "rows": 14,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://mohave.gov/media/sbinfmbq/mohave-general-election-ballot-mass-sample.pdf",
+    "text": "Sample Ballots",
+    "file": "data/city_files/Mohave_County/e4a59c_mohave-general-election-ballot-mass-sample.pdf",
+    "rows": 3365,
+    "bike_rows": 233
+   },
+   {
+    "url": "https://mohave.gov/media/rv0bhavd/no-labels-sample-ballots.pdf",
+    "text": "",
+    "file": "data/city_files/Mohave_County/d55594_no-labels-sample-ballots.pdf",
+    "rows": 918,
+    "bike_rows": 126
+   },
+   {
+    "url": "https://mohave.gov/media/2vhkrtio/request-for-single-ballot-2023.pdf",
+    "text": "Active Early Voting List",
+    "file": "data/city_files/Mohave_County/d60878_request-for-single-ballot-2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mohave.gov/media/bsphvjne/early-ballot-request-95dfe2fb-cfe6-4dc0-abb9-4cac4fefbdeb.pdf",
+    "text": "Single Early Ballot Request Form",
+    "file": "data/city_files/Mohave_County/f0fd84_early-ballot-request-95dfe2fb-cfe6-4dc0-abb9-4cac4fefbdeb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://mohave.gov/media/geuap3c1/early-ballot-request.pdf",
+    "text": "View Form",
+    "file": "data/city_files/Mohave_County/6e0b38_early-ballot-request.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://az-mohave.opendata.arcgis.com/": "Visit",
+   "https://mcgis.mohave.gov/html5/?viewer=moh&layerTheme=null&scale=4622324.434309&basemap=&center=-12616990.854376532%2C4257968.420080369&layers=3a5iMy": "Interactive Map of County Maintained Roads and Road Surface Type",
+   "https://storymaps.arcgis.com/stories/ab1e033aa74148aa80b0a517fa9d5fec": "Road Maintenance Schedule Map",
+   "https://experience.arcgis.com/experience/8207126dd6664472a0852e3f23f04038": "Road Maintenance History Map",
+   "https://mcgis.mohave.gov/html5/?viewer=cs": "Housing Study Interactive Map Viewer",
+   "https://mcgis.mohave.gov/html5/?viewer=tr": "Mapas GIS del Tesorero",
+   "https://mohave.maps.arcgis.com/apps/webappviewer/index.html?id=27a1ed9562d94194a5967ae0b86728e6": "Road Petition Map Viewer",
+   "https://mocopw.maps.arcgis.com/apps/MapSeries/index.html?appid=e380d8dfa714425bb8f2d6c26f2f1001": "Capital Road Projects",
+   "https://mcgis.mohave.gov/html5/?viewer=moh": "HTML5 Interactive Map Viewer",
+   "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9": "aerial imagery",
+   "https://www.arcgis.com/home/item.html?id=99cd5fbd98934028802b4f797c4b1732": "topography",
+   "https://www.arcgis.com/sharing/rest/oauth2/signup?client_id=arcgisonline&redirect_uri=http://www.arcgis.com&response_type=token": "ArcGIS Online Public Account"
+  }
+ },
+ "Amarillo": {
+  "files": [
+   {
+    "url": "https://amarillo.gov/wp-content/uploads/2026/10/Rezoning-2026-270-Z-I-40-Loop-335-Helium-Road.pdf",
+    "text": "Rezoning 2026-270-Z (I-40 & Loop 335 (Helium Road)",
+    "file": "data/city_files/Amarillo/c3c0d8_Rezoning-2026-270-Z-I-40-Loop-335-Helium-Road.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.amarillo.gov/wp-content/uploads/2024/08/DP-manual-6424.pdf",
+    "text": "driveway & parking requirements",
+    "file": "data/city_files/Amarillo/3d1c51_DP-manual-6424.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://amarillo.maps.arcgis.com/apps/webappviewer/index.html?id=e9f4c89d32f44dd68785a6d60e6ee092": "City of Amarillo Tax Parcel Map PRAD Data (Potter Randall Appraisal District): Offers detailed information on individual",
+   "https://experience.arcgis.com/experience/e07010ade17c4d1fac70fea3e5cd0ce6/": "City of Amarillo Planning Map A general GIS (Geographic Information System) Planning Map is a valuable tool used in urba",
+   "https://amarillo.maps.arcgis.com/apps/webappviewer/index.html?id=6fcaef1b21954310bed7a801b1fedbe2": "City of Amarillo Underground Utilities map The Underground Utilities Map of Amarillo provides detailed information about",
+   "https://experience.arcgis.com/experience/b4d346e16a0d438591be9e33f0ff2004/": "City of Amarillo Neighborhood Planning Area Map This map provides a strategic overview of economic development opportuni",
+   "https://experience.arcgis.com/experience/c439b1ace8a141649b417aaa7b1e8a48/": "City of Amarillo Economic Development Map This map provides a strategic overview of economic development opportunities i",
+   "https://experience.arcgis.com/experience/2c6a99c0d0204271b63be9b2e5d20b74/": "City of Amarillo Onsite Sewage Facilities Map This map offers a detailed and view of onsite sewage facilities in and aro",
+   "https://amarillo.maps.arcgis.com/apps/webappviewer/index.html?id=ae7694abe052439598e74ee2e638bffb": "City of Amarillo Pavement & Right of Way Map This is the City of Amarillo’s Pavement / ROW Mapping Application. The end "
+  }
+ },
+ "Beaufort County": {
+  "files": [
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/recycle-and-compost/pilot%20eWaste%20recycling%20drop%20off.pdf",
+    "text": "View Flyer",
+    "file": "data/city_files/Beaufort_County/721beb_pilot_20eWaste_20recycling_20drop_20off.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/recycle-and-compost/OR-2840-Flyer-Compost-overview.pdf",
+    "text": "COMPOST PROGRAM FLYER",
+    "file": "data/city_files/Beaufort_County/9b7dca_OR-2840-Flyer-Compost-overview.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/recycle-and-compost/OR-2839-Accepted-items-flyer.pdf",
+    "text": "accepted items",
+    "file": "data/city_files/Beaufort_County/6d6178_OR-2839-Accepted-items-flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/recycle-and-compost/OR-2839-Accepted-items-flyer3.pdf",
+    "text": "ACCEPTED MATERIALS",
+    "file": "data/city_files/Beaufort_County/e2a4c3_OR-2839-Accepted-items-flyer3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/recycle-and-compost/Fruit-Fly-tip-sheet.pdf",
+    "text": "FRUIT FLY TIP SHEET",
+    "file": "data/city_files/Beaufort_County/92e9e6_Fruit-Fly-tip-sheet.pdf",
+    "rows": 26,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://des.sc.gov/sites/des/files/Documents/BLWM/Recycling/OR-1705.pdf",
+    "text": "Composting: Simple Steps for Starting at Home (sc.gov)",
+    "file": "data/city_files/Beaufort_County/abccf6_OR-1705.pdf",
+    "rows": 72,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/documents/growsoil.pdf",
+    "text": "Growing Healthy Soil",
+    "file": "data/city_files/Beaufort_County/e80721_growsoil.pdf",
+    "rows": 18,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/documents/grow_cmp.pdf",
+    "text": "Composting at Home",
+    "file": "data/city_files/Beaufort_County/d02983_grow_cmp.pdf",
+    "rows": 20,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/documents/grow_ins.pdf",
+    "text": "Natural Pest Weed and Disease Control",
+    "file": "data/city_files/Beaufort_County/7533e0_grow_ins.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/documents/grow_wtr.pdf",
+    "text": "Smart Watering",
+    "file": "data/city_files/Beaufort_County/739f9f_grow_wtr.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/documents/grow_lwn.pdf",
+    "text": "Natural Lawn Care",
+    "file": "data/city_files/Beaufort_County/edf159_grow_lwn.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/documents/grow_plt.pdf",
+    "text": "The Right Plants",
+    "file": "data/city_files/Beaufort_County/082810_grow_plt.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.beaufortcountysc.gov/solid-waste-and-recycle/documents/grasscycling.pdf",
+    "text": "Grasscycling",
+    "file": "data/city_files/Beaufort_County/3e5ad6_grasscycling.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://beaufortcountysc.gov/solid-waste-and-recycle/adopt-a-highway/2023 end of Year AAH Newsletter.pdf",
+    "text": "",
+    "file": "data/city_files/Beaufort_County/e9c281_2023_end_of_Year_AAH_Newsletter.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://beaufortcountysc.gov/solid-waste-and-recycle/education-outreach/Lesson-Plans-for-Schools.pdf",
+    "text": "Compost Lesson Plan",
+    "file": "data/city_files/Beaufort_County/112a61_Lesson-Plans-for-Schools.pdf",
+    "rows": 77,
+    "bike_rows": 17
+   },
+   {
+    "url": "https://des.sc.gov/sites/des/files/Documents/BLWM/Recycling/OR-1522.pdf",
+    "text": "Reducing Food Waste: A Guide for SC Schools",
+    "file": "data/city_files/Beaufort_County/c3ed41_OR-1522.pdf",
+    "rows": 18,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://des.sc.gov/sites/des/files/Documents/BLWM/Recycling/OR-2225.pdf",
+    "text": "Recycle Right SC Guide",
+    "file": "data/city_files/Beaufort_County/196bd4_OR-2225.pdf",
+    "rows": 44,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://des.sc.gov/sites/des/files/Documents/BLWM/Recycling/OR-1973.pdf",
+    "text": "Recycling's Dirty Dozen Flyer (sc.gov)",
+    "file": "data/city_files/Beaufort_County/d7e874_OR-1973.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://des.sc.gov/sites/des/files/Documents/BLWM/Recycling/OR-1972.pdf",
+    "text": "What Can Recycled Items Become Flyer (sc.gov)",
+    "file": "data/city_files/Beaufort_County/f12426_OR-1972.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://beaufortcountysc.gov/solid-waste-and-recycle/2025-04015_2009_V0_Award-Face-Sheet.pdf",
+    "text": "Award Face Sheet",
+    "file": "data/city_files/Beaufort_County/987bea_2025-04015_2009_V0_Award-Face-Sheet.pdf",
+    "rows": 11,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://beaufortcountysc.gov/solid-waste-and-recycle/260401-BC-Compost-Mailer.pdf",
+    "text": "Compost Mailer",
+    "file": "data/city_files/Beaufort_County/046819_260401-BC-Compost-Mailer.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://beaufortcountysc.gov/solid-waste-and-recycle/compost_pilot_fund_tracker.xlsx",
+    "text": "Compost Pilot Fund Tracker",
+    "file": "data/city_files/Beaufort_County/a7f5c0_compost_pilot_fund_tracker.xlsx",
+    "rows": 80,
+    "bike_rows": 80
+   },
+   {
+    "url": "https://beaufortcountysc.gov/solid-waste-and-recycle/OR-2739-11x11-Mossy-Compost-sign.pdf",
+    "text": "Compost Sign",
+    "file": "data/city_files/Beaufort_County/4c2203_OR-2739-11x11-Mossy-Compost-sign.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://beaufortcountysc.gov/solid-waste-and-recycle/OR-2739-flyer.pdf",
+    "text": "Compost Flyer",
+    "file": "data/city_files/Beaufort_County/8b0ef3_OR-2739-flyer.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis-department-mapping-site-collage-bcscgis.hub.arcgis.com/": "Beaufort County mapping site",
+   "https://experience.arcgis.com/experience/9e534a7884744a2680a0f472e2aabdc3": "GIS Mapping",
+   "https://bcscgis.maps.arcgis.com/apps/dashboards/a507956c0d6d490aa91b681a66eed185": "Development Projects Dashboard",
+   "https://gis-department-mapping-site-collage-bcscgis.hub.arcgis.com/pages/legislative-delegation": "District Maps",
+   "https://gis.beaufortcountysc.gov/publicmapping/": "GIS Mapping",
+   "https://mono-recycling-scdnr.hub.arcgis.com/": "Monofilament Recycling Program",
+   "http://bcscgis.maps.arcgis.com/home/webmap/viewer.html?webmap=fa96f7ce2c8349cbaa3c2feca7edb2ee&extent=-81.1496,32.1174,-80.43,32.6699": "View larger map",
+   "https://experience.arcgis.com/experience/7d7cf924c2b44c28bfeb2fd0ba586a07": "Click here",
+   "https://gis-department-mapping-site-collage-bcscgis.hub.arcgis.com/pages/1760edf02a19475780c533d5e8e3a74c": "District Maps",
+   "http://webgis.bcgov.net/gissite/index.html": "here",
+   "https://urldefense.com/v3/__https:/links-2.govdelivery.com/CL0/https:*2F*2Fgis.beaufortcountysc.gov*2Fadoptahighway*2F*3Futm_medium=email*26utm_source=govdelivery/1/01010197408f3f42-07ce4626-b83f-413f-88df-9e4094e56c8d-000000/3TO1VLqveQ_B1wXNA-nf8OijyzQMQ3rRrFup5usJLJM=408__;JSUlJSUl!!H5U1HoZiDaw1SX31!FUNghzKoz64oddRr1j-rwTmYNkleWR51mAiSvC6xNShUofK0CPAi63-q51cm-rO7PcKgG5jStMg-Qp7Vj9__-iqv-dtznYo$": "here",
+   "https://experience.arcgis.com/experience/497599b311b548efbaeff21f8e335222": "Map of Adopt-A-Highway Groups"
+  }
+ },
+ "Muskegon County": {
+  "files": [
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/21_precincts.pdf",
+    "text": "City of Montague",
+    "file": "data/city_files/Muskegon_County/0ceeac_21_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/24_precincts.pdf",
+    "text": "City of Muskegon",
+    "file": "data/city_files/Muskegon_County/8c01aa_24_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/26_precincts.pdf",
+    "text": "City of Muskegon Heights",
+    "file": "data/city_files/Muskegon_County/4ce4d5_26_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/23_precincts.pdf",
+    "text": "City of North Muskegon",
+    "file": "data/city_files/Muskegon_County/4bb678_23_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/27_precincts.pdf",
+    "text": "City of Norton Shores",
+    "file": "data/city_files/Muskegon_County/76941f_27_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/25_precincts.pdf",
+    "text": "City of Roosevelt Park",
+    "file": "data/city_files/Muskegon_County/0afd78_25_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/22_precincts.pdf",
+    "text": "City of Whitehall",
+    "file": "data/city_files/Muskegon_County/8a473f_22_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/04_precincts.pdf",
+    "text": "Blue Lake Township",
+    "file": "data/city_files/Muskegon_County/e7bbfe_04_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/13_precincts.pdf",
+    "text": "Casnovia Township",
+    "file": "data/city_files/Muskegon_County/a9e883_13_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/08_precincts.pdf",
+    "text": "Cedar Creek Township",
+    "file": "data/city_files/Muskegon_County/09519d_08_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/07_precincts.pdf",
+    "text": "Dalton Township",
+    "file": "data/city_files/Muskegon_County/603439_07_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/11_precincts.pdf",
+    "text": "Egelston Township",
+    "file": "data/city_files/Muskegon_County/ab69a1_11_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/06_precincts.pdf",
+    "text": "Fruitland Township",
+    "file": "data/city_files/Muskegon_County/fa7c1d_06_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/15_precincts.pdf",
+    "text": "Fruitport Charter Township",
+    "file": "data/city_files/Muskegon_County/52c51e_15_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/05_precincts.pdf",
+    "text": "Holton Township",
+    "file": "data/city_files/Muskegon_County/18b307_05_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/09_precincts.pdf",
+    "text": "Laketon Township",
+    "file": "data/city_files/Muskegon_County/2d146f_09_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/02_precincts.pdf",
+    "text": "Montague Township",
+    "file": "data/city_files/Muskegon_County/08f0aa_02_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/12_precincts.pdf",
+    "text": "Moorland Township",
+    "file": "data/city_files/Muskegon_County/a6c1b5_12_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/10_precincts.pdf",
+    "text": "Muskegon Charter Township",
+    "file": "data/city_files/Muskegon_County/e5abb6_10_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/17_precincts.pdf",
+    "text": "Ravenna Township",
+    "file": "data/city_files/Muskegon_County/9d7a5b_17_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/16_precincts.pdf",
+    "text": "Sullivan Township",
+    "file": "data/city_files/Muskegon_County/0552e9_16_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/01_precincts.pdf",
+    "text": "White River Township",
+    "file": "data/city_files/Muskegon_County/4994cf_01_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/elections/Precincts/current_for_web/03_precincts.pdf",
+    "text": "Whitehall Township",
+    "file": "data/city_files/Muskegon_County/ad3ef8_03_precincts.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.muskegoncountygis.com/printable_maps/general_county_maps/Municipality_Map_LetterSize.pdf",
+    "text": "",
+    "file": "data/city_files/Muskegon_County/8ffa87_Municipality_Map_LetterSize.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://maps.muskegoncountygis.com/portal/apps/sites/": "GIS"
+  }
+ },
+ "Monroe County": {
+  "files": [],
+  "portals": {}
+ },
+ "Sullivan County": {
+  "files": [],
+  "portals": {
+   "https://sullcotngis.maps.arcgis.com/apps/mapviewer/index.html?webmap=2004721405af4dd0952a592b42e6f5b6": "Click Here"
+  }
+ },
+ "Pomona": {
+  "files": [],
+  "portals": {}
+ },
+ "Schuylkill County": {
+  "files": [],
+  "portals": {}
+ },
+ "Blount County": {
+  "files": [],
+  "portals": {
+   "https://blountgis.maps.arcgis.com/apps/webappviewer/index.html?id=47aa62b29af74cc0b2a1d63ac5ec8e4d": "My Government Services",
+   "https://experience.arcgis.com/experience/35c2ae08d1644d91abef7d281ddac36a/": "Find my County Commissioners and Voting Districts",
+   "https://blounttn.maps.arcgis.com/apps/InformationLookup/index.html?appid=3d965b1671fb4e238b26b22bed5015f6": "County Commission Districts - Interactive Map",
+   "https://blounttn.maps.arcgis.com/apps/InformationLookup/index.html?appid=f7a5a564190c450f92fd4c8a705d8898": "School Board Districts - Interactive Map",
+   "https://experience.arcgis.com/experience/b51652945b854046904e5dd02b6cd27d/": "School Board Districts - Interactive Map",
+   "https://experience.arcgis.com/experience/93e3713eceee4a0290f7f7587629356a": "Precincts - Interactive Map"
+  }
+ },
+ "Clarke County": {
+  "files": [],
+  "portals": {}
+ },
+ "Jasper County": {
+  "files": [],
+  "portals": {}
+ },
+ "Clearwater": {
+  "files": [
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/1/clearwater-beach/documents/ada_beach_parking_map_2026-2.pdf",
+    "text": "Download a PDF version of the Beach Parking Map (PDF, 468KB)",
+    "file": "data/city_files/Clearwater/1ea944_ada_beach_parking_map_2026-2.pdf",
+    "rows": 23,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/1/public-communications/documents/historic_designation_appli.pdf",
+    "text": "Application for Historic Designation Form",
+    "file": "data/city_files/Clearwater/361b5d_historic_designation_appli.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/2/trash-amp-recycling/documents/sw-fee-schedule-fy-26.27-ada.pdf",
+    "text": "FY27 Solid Waste & Recycling Fee Schedule (PDF, 170KB)",
+    "file": "data/city_files/Clearwater/56ceba_sw-fee-schedule-fy-26.27-ada.pdf",
+    "rows": 58,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/2/trash-amp-recycling/documents/private-haulers/quarterly-recovered-materials-dealer-report-template_city-of-clearwater.xlsx",
+    "text": "Quarterly Recovered Materials Dealer Report Template (XLSX, 16KB)",
+    "file": "data/city_files/Clearwater/beb59a_quarterly-recovered-materials-dealer-report-template_city-of-clearwate",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/7/trash-amp-recycling/documents/private-haulers/recovered-materials-permit-application.pdf",
+    "text": "Recovered Materials Permit Application (PDF, 189KB)",
+    "file": "data/city_files/Clearwater/1a1fbf_recovered-materials-permit-application.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/3/engineering/documents/parking/pleaofnotguiltycontesttick-1.pdf",
+    "text": "form (PDF, 159KB)",
+    "file": "data/city_files/Clearwater/6595f4_pleaofnotguiltycontesttick-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/content/public/v/45/parking-transportation/pay-my-parking-ticket/transfer_of_liabilityparking_ada.pdf",
+    "text": "form (PDF, 81KB)",
+    "file": "data/city_files/Clearwater/00151b_transfer_of_liabilityparking_ada.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/1/public-communications/documents/ada_downtown_clearwater_parking_map_2026.pdf",
+    "text": "Download a PDF version of the Downtown Parking Map (PDF, 1MB)",
+    "file": "data/city_files/Clearwater/3b39a2_ada_downtown_clearwater_parking_map_2026.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.myclearwater.com/files/100242bc-5b02-4bd2-898b-92fdd4c7fb13/FEMA-Preliminary-Summary-of-Map-Actions.pdf",
+    "text": "Learn More",
+    "file": "data/city_files/Clearwater/e5b99b_FEMA-Preliminary-Summary-of-Map-Actions.pdf",
+    "rows": 332,
+    "bike_rows": 132
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/2/public-works/documents/800-pumpstation.zip",
+    "text": "Download Pump Station Details (ZIP) (ZIP, 20MB)",
+    "file": "data/city_files/Clearwater/a53dd3_800-pumpstation.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.myclearwater.com/files/sharedassets/public/v/3/public-works/documents/800-pumpstation.pdf",
+    "text": "Download Pump Station Details (PDF) (PDF, 8MB)",
+    "file": "data/city_files/Clearwater/e44beb_800-pumpstation.pdf",
+    "rows": 1641,
+    "bike_rows": 107
+   }
+  ],
+  "portals": {
+   "https://new-pinellas-egis.opendata.arcgis.com/": "View Maps (GIS)",
+   "https://experience.arcgis.com/experience/eca0e234e9c24b239bee3026d2f529b7": "Elevation Certificate",
+   "https://gis.myclearwater.com/SearchByStreetForAtlas.htm": "Z",
+   "https://gis.myclearwater.com/SearchBySubdivisionForAtlas.htm": "Z",
+   "https://waterdata.usgs.gov/monitoring-location/02307674/": "Water Level Gage in Alligator Creek at Kapok Park",
+   "https://fdep.maps.arcgis.com/home/webmap/viewer.html?webmap=1b4f1bf4c9c3481fb2864a415fbeca77": "WNAS Map",
+   "https://survey123.arcgis.com/share/2485ecbeded748689725da57b1bc319a": "Report Fish Kill",
+   "https://storymaps.arcgis.com/stories/26e30ac42ad0483fb1dc22f39ddf4a42": "Trail History"
+  }
+ },
+ "Lakeland": {
+  "files": [
+   {
+    "url": "https://lakelandgov.net/media/19370/24faq__recycling.pdf",
+    "text": "Downloadable FAQ PDF",
+    "file": "data/city_files/Lakeland/71c307_24faq__recycling.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://lakelandgov.net/media/17972/trn_08_proposedpathwayscorridors_funded.pdf",
+    "text": "Lakeland Bike Map",
+    "file": "data/city_files/Lakeland/2a5bd0_trn_08_proposedpathwayscorridors_funded.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/23112/transitionplan20232024-final-pdf.pdf",
+    "text": "Read the City of Lakeland's 2024 Annual Report (PDF)",
+    "file": "data/city_files/Lakeland/91ee80_transitionplan20232024-final-pdf.pdf",
+    "rows": 222,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://lakelandgov.net/media/3736/pathways-plan-summary-bicycling.pdf",
+    "text": "View a summary of the City's Pathways Vision Plan",
+    "file": "data/city_files/Lakeland/17f8f5_pathways-plan-summary-bicycling.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/3732/bicycling-new-pro-bike-pathways-road-diets-program.pdf",
+    "text": "View a presentation on Lakeland’s Pathways Implementation Program",
+    "file": "data/city_files/Lakeland/6811e9_bicycling-new-pro-bike-pathways-road-diets-program.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/3750/3-parks-trail-master-plan.pdf",
+    "text": "Three Parks Trail (3PT) Master Plan",
+    "file": "data/city_files/Lakeland/519a3b_3-parks-trail-master-plan.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/3730/bicycling-final-teneroc-trail-master-plan.pdf",
+    "text": "Future Tenoroc Trail Master Plan",
+    "file": "data/city_files/Lakeland/5b0614_bicycling-final-teneroc-trail-master-plan.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/17971/trn_08_proposedpathwayscorridors_funded.pdf",
+    "text": "",
+    "file": "data/city_files/Lakeland/b1704b_trn_08_proposedpathwayscorridors_funded.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.lakelandgov.net/media/23580/city-of-lakeland-cemetery-division-26-27-pricing.pdf",
+    "text": "price list",
+    "file": "data/city_files/Lakeland/ffadf8_city-of-lakeland-cemetery-division-26-27-pricing.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/19803/cemeteries-rules-regulations-flyer.pdf",
+    "text": "rules & regulations",
+    "file": "data/city_files/Lakeland/4a7807_cemeteries-rules-regulations-flyer.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://lakelandgov.net/media/2141/neighborhood-boundary-map.pdf",
+    "text": "Master Neighborhood Boundaries Map",
+    "file": "data/city_files/Lakeland/cd066e_neighborhood-boundary-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/23295/lakeland-historic-district-design-guidelines_-1626-kelsey.pdf",
+    "text": "Design Guidelines for Historic Properties",
+    "file": "data/city_files/Lakeland/f28058_lakeland-historic-district-design-guidelines_-1626-kelsey.pdf",
+    "rows": 172,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://lakelandgov.net/media/22706/district-narratives.pdf",
+    "text": "Historic District Summaries",
+    "file": "data/city_files/Lakeland/979677_district-narratives.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/22707/lakeland-historic-districts-current.pdf",
+    "text": "Printable Map of Lakeland's Historic Districts",
+    "file": "data/city_files/Lakeland/7082f4_lakeland-historic-districts-current.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://lakelandgov.net/media/22708/walking-tour-brochure-2016.pdf",
+    "text": "A Walking Tour of Historic Downtown Lakeland",
+    "file": "data/city_files/Lakeland/fcb67c_walking-tour-brochure-2016.pdf",
+    "rows": 56,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://lakelandgov.net/media/6696/lakeland-historic-districts-2017.pdf",
+    "text": "map",
+    "file": "data/city_files/Lakeland/7520bc_lakeland-historic-districts-2017.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/22705/lakeland_design_guidelines_for_historic_properties_2024.pdf",
+    "text": ",",
+    "file": "data/city_files/Lakeland/7d1fde_lakeland_design_guidelines_for_historic_properties_2024.pdf",
+    "rows": 163,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://lakelandgov.net/media/23338/pump-station-details-rev-r7-9-30-2025.pdf",
+    "text": "Lift Station Details",
+    "file": "data/city_files/Lakeland/9eca2f_pump-station-details-rev-r7-9-30-2025.pdf",
+    "rows": 271,
+    "bike_rows": 23
+   },
+   {
+    "url": "https://lakelandgov.net/media/19271/mt047-qpr-2-2023-report-tracking-spreadsheet.xlsx",
+    "text": "TRACKING SPREADSHEET",
+    "file": "data/city_files/Lakeland/e5dc1a_mt047-qpr-2-2023-report-tracking-spreadsheet.xlsx",
+    "rows": 116,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/19272/mt047-qpr-3-2023-report-tracking-spreadsheet.xlsx",
+    "text": "TRACKING SPREADSHEET",
+    "file": "data/city_files/Lakeland/e78218_mt047-qpr-3-2023-report-tracking-spreadsheet.xlsx",
+    "rows": 116,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/19273/mt047-qpr-4-2023-report-tracking-spreadsheet.xlsx",
+    "text": "TRACKING SPREADSHEET",
+    "file": "data/city_files/Lakeland/2da16b_mt047-qpr-4-2023-report-tracking-spreadsheet.xlsx",
+    "rows": 116,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/19275/mt047-qpr-1-2024-report-tracking-spreadsheet.xlsx",
+    "text": "TRACKING SPREADSHEET",
+    "file": "data/city_files/Lakeland/635071_mt047-qpr-1-2024-report-tracking-spreadsheet.xlsx",
+    "rows": 99,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/22320/mt047-qpr-2-2024-report-tracking-spreadsheet.xlsx",
+    "text": "TRACKING SPREADSHEET",
+    "file": "data/city_files/Lakeland/c42ff5_mt047-qpr-2-2024-report-tracking-spreadsheet.xlsx",
+    "rows": 99,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://lakelandgov.net/media/20934/monthly-parking-regulations-revised.pdf",
+    "text": "Monthly Parking Regulations & Fees",
+    "file": "data/city_files/Lakeland/a26749_monthly-parking-regulations-revised.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://lakelandgov.net/media/20933/city-of-lakeland-individual-parking-agreement.pdf",
+    "text": "Parking Agreement",
+    "file": "data/city_files/Lakeland/1f0dbc_city-of-lakeland-individual-parking-agreement.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://lakelandflorida.maps.arcgis.com/apps/instant/nearby/index.html?appid=d23e96d9628f47c59dd5b6df83bcfc93&sliderDistance=50": "utility service lookup",
+   "https://lakelandflorida.maps.arcgis.com/apps/dashboards/295c97f219a04d139009e794870f0695": "",
+   "https://geohub-lakelandflorida.opendata.arcgis.com/": "maps | geo DATA",
+   "https://lakelandflorida.maps.arcgis.com/apps/View/index.html?appid=c7f8d132300248289e08cdaf33c7ae9b": "collection day map",
+   "https://lakelandflorida.maps.arcgis.com/apps/webappviewer/index.html?id=8c46c0a195f848f5906b5ea4e53f53dc": "Interactive Bicycle & Pedestrian Pathways Map",
+   "https://experience.arcgis.com/experience/b31e731385ad4460af1d8154f815e0c8/page/Page": "Walking & Running Trails Paths",
+   "https://lakelandflorida.maps.arcgis.com/apps/instant/nearby/index.html?appid=26fd89dd4a224618b3d31faa94c4408d": "parks finder",
+   "https://lakelandflorida.maps.arcgis.com/apps/instant/nearby/index.html?appid=d23e96d9628f47c59dd5b6df83bcfc93&sliderDistance=100": "You may also check if your address is inside city limits here.",
+   "https://lakelandflorida.maps.arcgis.com/apps/instant/nearby/index.html?appid=d23e96d9628f47c59dd5b6df83bcfc93&distance=50": "Click here to lookup your address!",
+   "https://storymaps.arcgis.com/stories/629e66c9ed6e4beda8410d2dfe4e7f5e": "",
+   "https://lakelandflorida.maps.arcgis.com/apps/View/index.html?appid=d30dd7fa2db34965b04488227a858bbe": "Downtown Parking Map",
+   "https://survey123.arcgis.com/share/71c7a2d110a84193976d50489ccc1eab": "https://survey123.arcgis.com/share/71c7a2d110a84193976d50489ccc1eab"
+  }
+ },
+ "Eaton County": {
+  "files": [],
+  "portals": {}
+ },
+ "Vigo County": {
+  "files": [
+   {
+    "url": "https://www.in.gov/indot/files/2021_Roadway_Map-NEW-SIZEuseHQextendededit.pdf",
+    "text": "State of Indiana",
+    "file": "data/city_files/Vigo_County/9dacf1_2021_Roadway_Map-NEW-SIZEuseHQextendededit.pdf",
+    "rows": 30,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://hub-vigocountygis.opendata.arcgis.com/": "GIS Portal",
+   "https://hub-vigocountygis.opendata.arcgis.com/pages/district-finder": "District Finder"
+  }
+ },
+ "Daviess County": {
+  "files": [],
+  "portals": {}
+ },
+ "Franklin County": {
+  "files": [],
+  "portals": {}
+ },
+ "Mission Viejo": {
+  "files": [
+   {
+    "url": "https://www.missionviejo.gov/sites/default/files/pmp-residential-resurfacing-map.pdf",
+    "text": "Download document",
+    "file": "data/city_files/Mission_Viejo/ea939d_pmp-residential-resurfacing-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofmissionviejo.org/archival-document?document=https%3A%2F%2Fwww.missionviejo.gov%2Fsites%2Fdefault%2Ffiles%2F2025-12%2FOso-Creek-Trail-Brochure.pdf&title=Oso-Creek-Trail-Brochure.pdf",
+    "text": "Oso Creek Trail Brochure",
+    "file": "data/city_files/Mission_Viejo/4b0e9a_archival-document",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/6a9cb66bb1824cd98756812af41292a0": "Fire Hazard Severity Zone Viewer"
+  }
+ },
+ "O'Fallon": {
+  "files": [
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/Ward_Map_Small.pdf",
+    "text": "Wards map (PDF)",
+    "file": "data/city_files/O_Fallon/5333bc_Ward_Map_Small.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/City_Limit_Map_8x11.pdf",
+    "text": "City Limits map (PDF)",
+    "file": "data/city_files/O_Fallon/fd65e5_City_Limit_Map_8x11.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/School_District_Map_Small.pdf",
+    "text": "Educational Facilities map (PDF)",
+    "file": "data/city_files/O_Fallon/c96ba7_School_District_Map_Small.pdf",
+    "rows": 31,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/Emergency_Services_Map_Small.pdf",
+    "text": "Emergency Services map (PDF)",
+    "file": "data/city_files/O_Fallon/f42beb_Emergency_Services_Map_Small.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/Sewer_District_Map_Small.pdf",
+    "text": "Sewer District map (PDF)",
+    "file": "data/city_files/O_Fallon/b3ca97_Sewer_District_Map_Small.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/Water_District_Map_Small.pdf",
+    "text": "Water District map (PDF)",
+    "file": "data/city_files/O_Fallon/f69b40_Water_District_Map_Small.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/Zoning_Map_8x11.pdf",
+    "text": "Zoning map (PDF)",
+    "file": "data/city_files/O_Fallon/c0e83d_Zoning_Map_8x11.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://gis5.ofallon.mo.us/pdfmaps/TDD_CID_Map_Small.pdf",
+    "text": "Local Finance Initiative Districts (TDDs, CIDs and TIFs) map (PDF)",
+    "file": "data/city_files/O_Fallon/b91a2a_TDD_CID_Map_Small.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/fc1fb4b531594651b286966ea13ea771": "Zoning & District Map",
+   "https://storymaps.arcgis.com/stories/379a854bc19d4245847107fe54be354e": "City Projects",
+   "https://ofallonmogis.maps.arcgis.com/apps/webappviewer/index.html?id=8d31b917f4d94b33be3c973522a725b9": "Zoning & District Map",
+   "https://experience.arcgis.com/experience/7265e8a18aaa43d38643d0ceba127400/": "See The Active Developments Map and Upcoming Public Hearings",
+   "https://www.arcgis.com/apps/instant/basic/index.html?appid=17921a002f2d4364bfdf52b4179d71ee": "Right-of-Way Boundary and Publicly Maintained Property Map",
+   "http://ofallonmogis.maps.arcgis.com/apps/webappviewer/index.html?id=52d9150699534444ac0926333c966b43": "Interactive map of O'Fallon's bikeable/walkable opportunities"
+  }
+ },
+ "Lapeer County": {
+  "files": [],
+  "portals": {}
+ },
+ "Medford": {
+  "files": [],
+  "portals": {}
+ },
+ "Midland County": {
+  "files": [
+   {
+    "url": "https://midlandcountymi.gov/corecode/uploads/document6/uploaded_pdfs/corecode/Solar System Sign_284.pdf",
+    "text": "Location Map of the Solar System Sculptures",
+    "file": "data/city_files/Midland_County/05159d_Solar_System_Sign_284.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://app.fetchgis.com/?currentMap=midland&switchingMaps=false¢erLng=-84.38395996093625¢er": "Learn more",
+   "https://app.fetchgis.com/?currentMap=midland&switchingMaps=false¢erLng=-84.38395996093625¢erLat=43.64757853755987&mapZoom=10&pageSize=letter&pageOrientation=landscape&pageTitle=Midland%20County&subTitle=&northArrow=1&rptPIN=0&rptLayer=&rptMap=1&rptPic=1&rptTax=1&activeControl=layerControls&activeLayers=undefined&partialLayerGroups=undefined&opacity64=&printLegendLayers=": "INTERACTIVE MAP",
+   "http://link.fetchgis.com/d08a374c": "43° 36' 56.461\"",
+   "https://app.fetchgis.com/?currentMap=midland&switchingMaps=false¢erLng=-84.38395996093625¢erLat=43.64757853755987&mapZoom=10&pageSize=letter&p": "",
+   "https://geohub-midlandcounty.hub.arcgis.com/": ""
+  }
+ },
+ "Bulloch County": {
+  "files": [
+   {
+    "url": "https://bullochcounty.net/wp-content/uploads/2022/01/Bulloch-County-Transit-Development-Plan-2008.pdf",
+    "text": "Transit Development Study",
+    "file": "data/city_files/Bulloch_County/b79c10_Bulloch-County-Transit-Development-Plan-2008.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bullochcounty.net/wp-content/uploads/2026/11/Solid-Waste-Collection-Centers-11-2026.pdf",
+    "text": "Open Bulloch County Solid Waste Collection Centers Map (PDF)",
+    "file": "data/city_files/Bulloch_County/8fed0d_Solid-Waste-Collection-Centers-11-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bullochcounty.net/wp-content/uploads/2026/04/2026-May-19th-Gen-Primary-Sample-Ballot-Final.pdf",
+    "text": "https://bullochcounty.net/wp-content/uploads/2026/04/2026-May-19th-Gen-Primary-Sample-Ballot-Final.pdf",
+    "file": "data/city_files/Bulloch_County/ee5749_2026-May-19th-Gen-Primary-Sample-Ballot-Final.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://bullochcounty.net/wp-content/uploads/2026/09/2026-Nov-3-General-Special-Election_Sample_Ballot-FINAL-SLJ.pdf",
+    "text": "https://bullochcounty.net/wp-content/uploads/2026/09/2026-Nov-3-General-Special-Election_Sample_Ballot-FINAL-SLJ.pdf",
+    "file": "data/city_files/Bulloch_County/31fcb4_2026-Nov-3-General-Special-Election_Sample_Ballot-FINAL-SLJ.pdf",
+    "rows": 153,
+    "bike_rows": 5
+   }
+  ],
+  "portals": {
+   "https://bulloch-gis.maps.arcgis.com/apps/instant/lookup/index.html?appid=ce25c22611744714ad36e9d7c8794915&center=-81.7233;32.3882&level=9": "Representatives How do I find out who my local/state representatives are? Click Here",
+   "https://experience.arcgis.com/experience/b71ea5046e464d08b1b5f35aae90a273/page/Page?views=Road-status-view": "Report Road/Sign Damage",
+   "https://bulloch-gis.maps.arcgis.com/apps/webappviewer/index.html?id=c2a50a83e9454e9ba1af6a301a0b9d23": "Road Statuses",
+   "https://bulloch-gis.maps.arcgis.com/apps/instant/lookup/index.html?appid=ce25c22611744714ad36e9d7c8794915": "Find out who your representatives are"
+  }
+ },
+ "Lynchburg": {
+  "files": [],
+  "portals": {}
+ },
+ "Wyoming": {
+  "files": [
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Historical%20C%20BYLAWS.pdf",
+    "text": "Historical Commission Bylaws",
+    "file": "data/city_files/Wyoming/ce94d4_Historical_20C_20BYLAWS.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Monday%20Mens%20Gold%20Tournament_1.pdf",
+    "text": "Monday Men's Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/4a1fde_Fall_20Monday_20Mens_20Gold_20Tournament_1.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Monday%20Mens%20Silver%20Tournament_1.pdf",
+    "text": "Monday Men's Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/c7d300_Fall_20Monday_20Mens_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Tuesday%20Coed%20Gold%20Tournament_1.pdf",
+    "text": "Tuesday Coed Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/429167_Fall_20Tuesday_20Coed_20Gold_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Tuesday%20Coed%20Silver%20Tournament_1.pdf",
+    "text": "Tuesday Coed Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/c7cc43_Fall_20Tuesday_20Coed_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Tuesday%20Mens%20Tournament_1.pdf",
+    "text": "Tuesday Men's Tournament Bracket",
+    "file": "data/city_files/Wyoming/37f849_Fall_20Tuesday_20Mens_20Tournament_1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Wednesday%20Coed%20Tournament_1.pdf",
+    "text": "Wednesday Coed Tournament Bracket",
+    "file": "data/city_files/Wyoming/b2a327_Fall_20Wednesday_20Coed_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Thursday%20Coed%20Gold%20Tournament_1.pdf",
+    "text": "Thursday Coed Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/9536c9_Fall_20Thursday_20Coed_20Gold_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Thursday%20Coed%20Silver%20Tournament_1.pdf",
+    "text": "Thursday Coed Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/93cb97_Fall_20Thursday_20Coed_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Thursday%20Mens%20Gold%20Tournament_1.pdf",
+    "text": "Thursday Men's Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/f263ad_Fall_20Thursday_20Mens_20Gold_20Tournament_1.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Fall%20Thursday%20Mens%20Silver%20Tournament_1.pdf",
+    "text": "Thursday Men's Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/2de1a8_Fall_20Thursday_20Mens_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Monday%20Mens%20Gold%20Tournament_1.pdf",
+    "text": "Monday Men's Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/ec902b_Monday_20Mens_20Gold_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Monday%20Mens%20Silver%20Tournament_1.pdf",
+    "text": "Monday Men's Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/d0104a_Monday_20Mens_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Tuesday%20COED%20Gold%20Tournament_1.pdf",
+    "text": "Tuesday Coed Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/af3603_Tuesday_20COED_20Gold_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Tuesday%20COED%20Silver%20Tournament_1.pdf",
+    "text": "Tuesday Coed Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/957a50_Tuesday_20COED_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Tuesday%20Mens%20Gold%20Tournament_1.pdf",
+    "text": "Tuesday Men's Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/853a1d_Tuesday_20Mens_20Gold_20Tournament_1.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Tuesday%20Mens%20Silver%20Tournament_1.pdf",
+    "text": "Tuesday Men's Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/04ff29_Tuesday_20Mens_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Wednesday%20Coed%20Tournament_1.pdf",
+    "text": "Wednesday Coed Tournament Bracket",
+    "file": "data/city_files/Wyoming/66cde8_Wednesday_20Coed_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Thursday%20Coed%20Gold%20Tournament_1.pdf",
+    "text": "Thursday Coed Gold Tournament Bracket",
+    "file": "data/city_files/Wyoming/da5a0d_Thursday_20Coed_20Gold_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Thursday%20Coed%20Silver%20Tournament_1.pdf",
+    "text": "Thursday Coed Silver Tournament Bracket",
+    "file": "data/city_files/Wyoming/c18fdf_Thursday_20Coed_20Silver_20Tournament_1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Documents/Departments/Parks%20and%20Recreation/PARKS%20MAP%202020%28COLOR%29%20%283%29.pdf",
+    "text": "Park Location Map",
+    "file": "data/city_files/Wyoming/6547b3_PARKS_20MAP_202020_28COLOR_29_20_283_29.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/2023%20Ideal%20Map.pdf",
+    "text": "Map of Entire Park",
+    "file": "data/city_files/Wyoming/377ba7_2023_20Ideal_20Map.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/Documents/Departments/Parks%20and%20Recreation/LAMAR_PARK_PICNIC_AREAS.pdf",
+    "text": "Map of",
+    "file": "data/city_files/Wyoming/a5f5b9_LAMAR_PARK_PICNIC_AREAS.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/2023%20Lamar%20Map.pdf",
+    "text": "Entire Park",
+    "file": "data/city_files/Wyoming/f99f43_2023_20Lamar_20Map.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.wyomingmi.gov/Portals/0/2023%20Pinery%20Map.pdf",
+    "text": "Map of Entire Park",
+    "file": "data/city_files/Wyoming/236d4c_2023_20Pinery_20Map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Lea County": {
+  "files": [],
+  "portals": {}
+ },
+ "Daytona Beach": {
+  "files": [],
+  "portals": {}
+ },
+ "Marysville": {
+  "files": [],
+  "portals": {}
+ },
+ "Southampton": {
+  "files": [],
+  "portals": {}
+ },
+ "Laurens County": {
+  "files": [],
+  "portals": {}
+ },
+ "Malden": {
+  "files": [],
+  "portals": {}
+ },
+ "Lincoln County": {
+  "files": [],
+  "portals": {}
+ },
+ "Greenwich": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/7e81aab4dda142f9ab5c20bec45cafdf": "www.accessgreenwich.org",
+   "https://greenwichgis.maps.arcgis.com/apps/instant/lookup/index.html?appid=dd08394df7544ef7862d946a2ad5d7a5": "Interactive Zoning Map",
+   "https://storymaps.arcgis.com/stories/7c84ef726711418f8ba55209e2c630f0": "Greenwich-Stamford Multi-Use Path StoryMap"
+  }
+ },
+ "Revere": {
+  "files": [
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Health-inspections/CouncilOrder19-087.AnOrdinanceRelativetoTrashCollection.pdf",
+    "text": "New City of Revere Trash and Recycling Ordinances",
+    "file": "data/city_files/Revere/9bc562_CouncilOrder19-087.AnOrdinanceRelativetoTrashCollection.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Public-works/Revere-Trash-Calendar-2021-FINAL-1.4.21.pdf",
+    "text": "City's 2021 Trash, Recycling and Yard Waste",
+    "file": "data/city_files/Revere/d23fa9_Revere-Trash-Calendar-2021-FINAL-1.4.21.pdf",
+    "rows": 109,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/Multiple-Permit-Form-2025.pdf",
+    "text": "Form",
+    "file": "data/city_files/Revere/397270_Multiple-Permit-Form-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cdn.branchcms.com/GB7r14nbKy-1182/docs/Parking/Multiple-Permit-Form-FY23.pdf",
+    "text": "https://cdn.branchcms.com/GB7r14nbKy-1182/docs/Parking/Multiple-Permit-Form-FY23.pdf",
+    "file": "data/city_files/Revere/8182cf_Multiple-Permit-Form-FY23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/2025-Multiple-Permit-Form.pdf",
+    "text": "- Multi Permit Application (English)",
+    "file": "data/city_files/Revere/e31544_2025-Multiple-Permit-Form.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/Guide-of-Permit-Activation-2025.pdf",
+    "text": "Guide",
+    "file": "data/city_files/Revere/723dd1_Guide-of-Permit-Activation-2025.pdf",
+    "rows": 24,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/2025-Visitor-Pass-Activation.pdf",
+    "text": "ENGLISH",
+    "file": "data/city_files/Revere/7b1dd9_2025-Visitor-Pass-Activation.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/2025-Visitor-Pass-Activation-Spanish.pdf",
+    "text": "ESPAÑOL",
+    "file": "data/city_files/Revere/f85f44_2025-Visitor-Pass-Activation-Spanish.pdf",
+    "rows": 20,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/2025-Visitor-Pass-Activation-PORTUGUESE.pdf",
+    "text": "PORTUGUESE",
+    "file": "data/city_files/Revere/3eec66_2025-Visitor-Pass-Activation-PORTUGUESE.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/Arabic-Visitor-Pass-Activation.pdf",
+    "text": "ARABIC",
+    "file": "data/city_files/Revere/19ddd4_Arabic-Visitor-Pass-Activation.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/2025-Multiple-Permit-Form-Spanish.pdf",
+    "text": "- Multi Permit Application (Spanish)",
+    "file": "data/city_files/Revere/351fe9_2025-Multiple-Permit-Form-Spanish.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://s3.amazonaws.com/bcms-files/GB7r14nbKy-1182/Hearing-Form-2026.pdf",
+    "text": "Parking Ticket Appeal Form",
+    "file": "data/city_files/Revere/d9a138_Hearing-Form-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/Hearing-Form-2025.pdf",
+    "text": "- Hearing Form",
+    "file": "data/city_files/Revere/1ed385_Hearing-Form-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Parking/Hearing-Form-Final-FY23.pdf",
+    "text": "",
+    "file": "data/city_files/Revere/37219e_Hearing-Form-Final-FY23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Calendar/09272023ParkingAdvisoryCommittee.pdf",
+    "text": "AGENDA",
+    "file": "data/city_files/Revere/bce26b_09272023ParkingAdvisoryCommittee.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Calendar/07112023.ParkingAdvisoryCommittee.pdf",
+    "text": "AGENDA",
+    "file": "data/city_files/Revere/fd5997_07112023.ParkingAdvisoryCommittee.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/Streets-Subject-to-Emergency-Parking-Ban.pdf",
+    "text": "View list here.",
+    "file": "data/city_files/Revere/ec0c25_Streets-Subject-to-Emergency-Parking-Ban.pdf",
+    "rows": 52,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/RESIDENT-PARKING-barcode.pdf",
+    "text": "link",
+    "file": "data/city_files/Revere/d4d20e_RESIDENT-PARKING-barcode.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/HP-Parking-Sign-Driver-Application.pdf",
+    "text": "HP Parking Sign Driver Application",
+    "file": "data/city_files/Revere/671b51_HP-Parking-Sign-Driver-Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/HP-Parking-Sign-Medical-Documentation-Form.pdf",
+    "text": "HP Parking Sign Medical Documentation Form",
+    "file": "data/city_files/Revere/33cff7_HP-Parking-Sign-Medical-Documentation-Form.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://files.aptuitivcdn.com/GB7r14nbKy-1182/docs/HP-Parking-Sign-Passenger-Application.pdf",
+    "text": "HP Parking Sign Passenger Application",
+    "file": "data/city_files/Revere/174fdc_HP-Parking-Sign-Passenger-Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "http://gis.revere.org/": "City's GIS Map",
+   "https://maps.massgis.state.ma.us/map_ol/oliver.php": "Oliver"
+  }
+ },
+ "Marietta": {
+  "files": [],
+  "portals": {}
+ },
+ "Washington County": {
+  "files": [],
+  "portals": {}
+ }
+}

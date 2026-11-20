@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="google-site-verification" content="u7NUtPu4ruKrL6LBSTOkJp4cVaDOWCUS0Q7KosLgCD8" />
+    <meta name="description" content=''>
+	<meta name="keywords" content=''>
+    
+    <link rel="canonical" href="https://lakelandgov.net/error/"/>
+    <title>error | City of Lakeland</title>
+    <meta name="description" content="">
+	<meta property="og:type" content="website">
+    <meta property="og:title" content="error | City of Lakeland" />
+    <meta property="og:image" content="https://lakelandgov.net/media/4236/city-of-lakeland-website-01.png" />
+    <meta property="og:url" content="https://lakelandgov.net/error/" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="City of Lakeland" />	
+
+ <!-- WEB FONT -->
+	 
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"> 
+	
+     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- STYLESHEETS -->
+     <link rel="stylesheet" href="/css/foundation/normalize.css">
+    <link rel="stylesheet" href="/css/foundation/foundation.css?v=1.3">
+    <link rel="stylesheet" href="/css/foundation/site.css?v=2.2">
+	  <link rel="stylesheet" href="/css/foundation/print.css">
+	<link href="/scripts/cloudflare/motion-ui.css" rel="stylesheet">
+    <!-- INTERNAL STYLES -->
+        <style>
+        #site,
+        header {
+	        right:auto; left:auto;
+	        max-width:100%; 
+			margin:0 auto;
+			
+	    }
+
+        header #logo {
+	        width: 320px; 
+            height: 96px;
+	    }
+
+        header #logo a {
+            width: 320px;
+            height: 96px;
+            background-image: url('/media/4004/colbrand_alt_color.png?width=320&amp;height=96');
+            background-repeat:no-repeat; background-position:center;
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5), only screen and (-webkit-min-device-pixel-ratio : 2), only screen and (min-device-pixel-ratio : 2) {
+            header #logo a {
+                background-image: url('/media/4004/colbrand_alt_color.png');
+                background-size: 320px 96px;
+            }
+        }
+	
+    </style>
+  
+    <!-- SCRIPTS  -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/scripts/cloudflare/modernizr.js"></script>
+    <script src="/scripts/bootstrap.js"></script>
+    <script src="/scripts/plugins.js"></script>
+    <script src="/scripts/Foundation/application.js"></script>
+    <script src="/scripts/cloudflare/jquery.validate.min.js"></script>
+    <script src="/scripts/cloudflare/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+  <!-- GOOGLE SEARCH-->
+    
+    <script async src="https://cse.google.com/cse.js?cx=797598dce1482fd9f"></script>
+
+    <script type="text/javascript" language="JavaScript">
+function ReverseDisplay(d,e) {
+    if (document.getElementById(d).classList.contains("hide-for-small-only")) { document.getElementById(e).classList.add("headernavsearch"); document.getElementById(d).classList.remove("hide-for-small-only") }
+    else { document.getElementById(e).classList.remove("headernavsearch"); document.getElementById(d).classList.add("hide-for-small-only"); }
+}
+</script>
+
+	<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '393803211034399'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=393803211034399&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+<!--[if IE]>
+	<link rel="stylesheet" href="/css/ie.css">
+	<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- ICONS -->
+            <link rel="shortcut icon" href="/media/1024/favicon.ico?width=32&height=32" type="image/ico" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/media/1024/favicon.ico?width=57&height=57">
+        <link rel="apple-touch-icon" sizes="60x60" href="/media/1024/favicon.ico?width=60&height=60">
+        <link rel="apple-touch-icon" sizes="72x72" href="/media/1024/favicon.ico?width=72&height=72">
+        <link rel="apple-touch-icon" sizes="76x76" href="/media/1024/favicon.ico?width=76&height=76">
+        <link rel="apple-touch-icon" sizes="114x114" href="/media/1024/favicon.ico?width=114&height=114">
+        <link rel="apple-touch-icon" sizes="120x120" href="/media/1024/favicon.ico?width=120&height=120">
+        <link rel="apple-touch-icon" sizes="144x144" href="/media/1024/favicon.ico?width=144&height=144">
+        <link rel="apple-touch-icon" sizes="152x152" href="/media/1024/favicon.ico?width=152&height=152">
+        <link rel="apple-touch-icon" sizes="180x180" href="/media/1024/favicon.ico?width=180&height=180">
+        <link rel="icon" type="image/png" href="/media/1024/favicon.ico?width=16&height=16" sizes="16x16">
+        <link rel="icon" type="image/png" href="/media/1024/favicon.ico?width=32&height=32" sizes="32x32">
+        <link rel="icon" type="image/png" href="/media/1024/favicon.ico?width=96&height=96" sizes="96x96">
+        <link rel="icon" type="image/png" href="/media/1024/favicon.ico?width=192&height=192" sizes="192x192">
+        <meta name="msapplication-square70x70logo" content="/media/1024/favicon.ico?width=70&height=70" />
+        <meta name="msapplication-square150x150logo" content="/media/1024/favicon.ico?width=150&height=150" />
+        <meta name="msapplication-wide310x150logo" content="/media/1024/favicon.ico?width=310&height=150" />
+        <meta name="msapplication-square310x310logo" content="/media/1024/favicon.ico?width=310&height=310" />
+
+
+    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HKRS3P3FNR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HKRS3P3FNR');
+</script>
+    <script async src="https://docaccess.com/docbox.js"></script>
+
+</head>
+<body 
+     class="advanced-page"
+>
+ <!-- <span id="skipMain" class="c1-bg c5-text">
+     <a href="#maincontent" title="skip to main content" class="skip-to-main-content-link c1-bg c5-text">Skip to main content</a>
+ </span> -->
+	  <script type="text/javascript">
+    var _monsido = _monsido || [];
+    _monsido.push(['_setDomainToken', 'uJ5zPdCoJtmwp3pgeoGu_w']);
+    _monsido.push(['_withStatistics', 'true']);
+  </script>
+  <script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '192931800808738',
+      xfbml      : true,
+      version    : 'v6.0'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+ <div class="off-canvas-wrap" data-offcanvas="">	
+ <div class="inner-wrap">
+     <div id="mobilenav" >
+         
+
+
+         <nav class="tab-bar show-for-small">
+             
+
+             <section class="middle tab-bar-section">
+                 <a href="/"><span class="title">City of Lakeland</span></a>
+             </section>
+             <section class="right-small">
+                 <a class="right-off-canvas-toggle menu-icon" href="#" aria-label="responsive mobile menu toggle"><span></span></a>
+             </section>
+         </nav>
+         <aside class="right-off-canvas-menu">
+             	
+        <ul class="off-canvas-list">
+			 <li><label class="first">City of Lakeland</label></li>
+			   
+
+          <li>
+              <a href="/government/">Government</a>
+          </li>
+          <li>
+              <a href="/departments/">Departments</a>
+          </li>
+          <li>
+              <a href="/community/">Community</a>
+          </li>
+          <li>
+              <a href="/businesses/">Businesses</a>
+          </li>
+          <li>
+              <a href="/explore-lakeland/">Explore</a>
+          </li>
+        </ul>   
+
+
+
+         </aside>
+         <a class="exit-off-canvas" href="#" aria-label="close responsive mobile menus toggle"></a>
+     </div>
+    <!-- SITE -->
+    <div id="site">
+        <!-- HEADER -->
+<header>			
+            <div class="container">
+                <div id="HeaderNav" class="row headernav" data-equalizer="head">
+                    <!-- LOGO -->
+					<div class="wrapper">
+						<div id="logoleft" class="small-12 medium-5 columns padleft hide-for-small-only" data-equalizer-watch="head">
+                    		<a href="/" title="back to lakelandgov.net home page"><img class="swanlogo" src="/media/4004/colbrand_alt_color.png" alt="City of Lakeland Logo" /></a>
+
+						</div>
+						<div id="topsocial" class="medium-7 columns" data-equalizer-watch="head">
+							 <div id="socialIcons" class="small-12 columns small-text-center medium-text-right hide-for-small-only">								
+												    <ul>
+			    <li class="facebook"><a href="http://www.facebook.com/lakelandgov" class="symbol icoSocialHover" target="_blank" title="Facebook Link will open in a new window/tab"><img class="icoSocialHover" src="/Content/images/icoFacebook.png" alt="Facebook Icon" /></a></li>
+	            			    <li class="twitter"><a href="https://twitter.com/@lakelandgov" class="symbol icoSocialHover" target="_blank" title="Twitter Link will open in a new window/tab"><img class="icoSocialHover" src="/Content/images/icoTwitter.png" alt="Twitter Icon" /></a></li>
+	            	            		                                        <li class="instagram"><a href="https://www.instagram.com/lakelandgov/" class="symbol icoSocialHover" target="_blank" title="Instagram Link will open in a new window/tab"><img class="icoSocialHover" src="/Content/images/icoInstagram.png" alt="Instagram Icon" /></a></li>
+	            	            	            	            <li class="vimeo"><a href="https://vimeo.com/lakelandgov" class="symbol icoSocialHover" target="_blank" title="Vimeo Link will open in a new window/tab"><img class="icoSocialHover" src="/Content/images/icoVimeo.png" alt="Vimeo Icon" /></a></li>
+	            	            <li class="youtube"><a href="https://www.youtube.com/cityoflakelandfl" class="symbol icoSocialHover" target="_blank" title="YouTube Link will open in a new window/tab"><img class="icoSocialHover" src="/Content/images/icoYouTube.png" alt="YouTube Icon" /></a></li>
+                                				 		                      <li class="nextdoor"><a href="https://nextdoor.com" class="symbol icoSocialHover" target="_blank" title="Nextdoor Link will open in a new window/tab"><img class="icoSocialHover" src="/Content/images/icoNextdoor.png" alt="Nextdoor Icon" /></a></li>
+		                                 <li class="show-for-small-only"><a class="symbol icoSocialHover"  href="javascript:ReverseDisplay('siteSearch','HeaderNav')"><img class="icoSocialHover" src="/Content/images/icoSearch.png" alt="Search Icon" /></a></li>
+		</ul>
+
+ 									
+								</div>
+							 <div id="siteSearch" class="small-12 columns small-text-center medium-text-right hide-for-small-only">								
+														 <label for="header-search-form" class="hide">Search Lakelandgov.net</label>
+			<form  id="header-search-form" role="search" action="/search-results/" method="get" name="header-search-form">
+				<div class="form-group">
+			       <label class="hide" for="sitesearch_field">Search the site</label>
+                	<input type="text" class="form-control" id="sitesearch_field" name="gcs_q" placeholder='Search the site' aria-label='Search the site'>
+                    <button id="btnsitesearch" type="submit" aria-label="Submit Search"><span class="fa fa-search" aria-hidden="true" aria-label="submit search" role="img"></span></button>
+				</div>   			
+			</form>
+ 									
+								</div>							 
+						</div>	
+								  <nav class="small-12 columns hide-for-small-only text-right">
+											
+    <ul class="medium-block-grid-5 text-center inline-list topnavlist">
+        
+
+                <li class="Government">
+                    <a class="txtupper" href="/government/" False Government>Government</a>
+                </li>
+                <li class="Departments">
+                    <a class="txtupper" href="/departments/" False Departments>Departments</a>
+                </li>
+                <li class="Community">
+                    <a class="txtupper" href="/community/" False Community>Community</a>
+                </li>
+                <li class="Businesses">
+                    <a class="txtupper" href="/businesses/" False Businesses>Businesses</a>
+                </li>
+                <li class="Explore">
+                    <a class="txtupper" href="/explore-lakeland/" False Explore>Explore</a>
+                </li>
+            <!--	<li class="icon">
+                <a href="javascript:void(0);" onclick="topNavMenuControl()">&#9776;</a>
+            </li> -->
+    </ul>                                                            
+
+
+ 									
+							</nav>
+					</div>		
+                </div>
+            </div>
+              
+        <!-- PAGE COMPONENT ALERT -->
+        <div data-alert class="spc alert-box info radius" role="alert" style="margin-bottom:0;">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            <div><p style="text-align: center;"><strong>ATTENTION, PHASE 3 WATER SHORTAGE</strong> declared by Southwest Florida Water Management District. <a rel="noopener" href="/Irrigation" target="_blank" title="https://lakelandgov.net/Irrigation">Learn more.</a></p></div>   
+            
+        </div>
+        <!--// PAGE COMPONENT ALERT -->
+
+
+
+ 
+      </header>
+        <!--// HEADER -->
+		
+		 <!-- BREADCRUMB -->
+       
+        <!--// BREADCRUMB -->
+        
+
+                    <section class="content apc standard-components navtopmarginpad mainslider" id="pos_7103">
+                        <div class="container">
+                            <div class="row fullwidth">	
+								
+		<div class="medium-12 columns slideshow-wrapper">
+
+			<div class="preloader"></div>
+				
+				
+            <ul class="example-orbit" data-orbit data-options="slide_number: false;pause_on_hover: true;resume_on_mouseout: true;bullets:false;">
+
+
+                    <li>
+                        
+                        <img src="/media/4715/downtown-lakeland-panorama-rut-patel.jpg?mode=crop&width=2000&height=450" alt="caption" />
+                    </li>
+                    <li>
+                        
+                        <img src="/media/4523/swans.jpg?mode=crop&width=2000&height=450" alt="caption" />
+                    </li>
+                    <li>
+                        
+                        <img src="/media/4520/lake-mirror-promenade.jpg?mode=crop&width=2000&height=450" alt="caption" />
+                    </li>
+                    <li>
+                        
+                        <img src="/media/4525/munn-park.jpg?mode=crop&width=2000&height=450" alt="caption" />
+                    </li>
+                    <li>
+                        
+                        <img src="/media/4264/19650073_1979152468777718_2108209697_o.jpg?mode=crop&width=2000&height=450" alt="caption" />
+                    </li>
+                    <li>
+                        
+                        <img src="/media/4519/farmers-market.jpg?mode=crop&width=2000&height=450" alt="caption" />
+                    </li>
+
+            </ul>
+
+    </div>
+	 <div class="medium-12 columns">
+     <!--   SEARCH FORM-->
+         <div class="searchBox">
+             <label for="large-search-form" class="hide">Search Lakelandgov.net</label>
+             <form id="large-search-form" role="search" action="/search-results/" method="get" name="large-search-form" class="searchForm">
+                 <div class="small-1 columns nopadright">
+                     <button id="btnsearch" type="submit" class="c1-bg c5-text btnSearch" aria-label="Submit Search"><span class="fa fa-search fa-2x" aria-hidden="true" aria-label="submit search" role="img"></span></button>
+                 </div>
+                 <div class="small-11 columns nopadleft">
+                     <div class="form-group">
+                         <label class="hide" for="search_field">Search the site</label>
+                         <input type="text" class="form-control searchTxt" id="search_field" name="gcs_q" placeholder='Search the site' >
+                     </div>
+                 </div>
+             </form>
+         </div>
+     <!-- SEARCH FORM End-->
+ </div>
+								
+                            </div>
+                        </div>
+                    </section>
+	 <!-- BREADCRUMB -->
+
+        <section class="breadcrumb-trail c5-bg hide-for-small-only" id="breadcrumbs">
+            <div class="container">
+
+                <!-- ROW -->
+                <div class="large-10 large-offset-1">	
+                    <nav class="small-12 columns">
+                        <ol class="breadcrumbs">
+                                    <li id="br_1" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"  itemref="br_2"><a href="/" itemprop="url"><span itemprop="title">Home</span></a></li>
+
+
+                        </ol>
+                    </nav>
+               </div>
+                <!--// ROW -->
+            </div>
+        </section>
+        <!--// BREADCRUMB -->     <section class="content apc umb-grid c5-bg" id="pos_7104">
+        <div class="" data-os-animation="fadeIn" data-os-animation-delay="0">
+            <div class="large-11 large-offset-1 clearfix" data-equalizer="">
+				<div id="cus1" class="medium-12 columns show-for-small-only">
+			<div>   
+        <a href="/contact/" class="button fullwidth bgBlue contactinfo"><span class="fa fa-info-circle" role="img"></span> Contact Us</a>
+
+</div>
+				</div>
+                <div class="medium-9 columns medium-push-3" data-equalizer-watch="" >
+                    
+
+
+
+
+    <div class="umb-grid">
+             <a name="maincontent" title="main content" class="hide">main content</a>
+        
+                <div class="medium-12">
+   <div >
+        <div class="row clearfix fullwidthrow">
+                <div class="medium-12 columns" >
+                    <div >
+                                
+    
+<h1 style="text-align: center;">Oops!!</h1>
+<hr />
+<p> </p>
+
+
+                    </div>
+                </div>
+        </div>
+    </div>
+   <div >
+        <div class="row clearfix fullwidthrow">
+                <div class="medium-7 columns" >
+                    <div >
+                                
+    
+<div class="section-heading text-center">
+<h4 class="small" style="text-align: left;">Oops! That was unexpected.  </h4>
+<h4 class="small" style="text-align: left;">We're sorry, but the page you're looking for has been moved or is no longer available.</h4>
+<p style="text-align: left;">Here are some helpful links instead:</p>
+<p style="text-align: left;"><a data-id="1143" href="/" title="Home">Home</a><br /><a data-id="1168" href="/search-resultss/" title="Search Results">Search</a><br /><a data-id="1149" href="/news/" title="News">News</a><br /><a data-id="1245" href="#" title="Events">Events</a></p>
+</div>
+
+
+                    </div>
+                </div>
+                <div class="medium-5 columns" >
+                    <div >
+                    </div>
+                </div>
+        </div>
+    </div>
+                </div>
+        
+    </div>
+
+
+
+                </div>
+                <div id="cus2" class="medium-3 columns medium-pull-9 hide-for-small-only" data-equalizer-watch="">
+                     <div>   
+        <a href="/contact/" class="button fullwidth bgBlue contactinfo"><span class="fa fa-info-circle" role="img"></span> Contact Us</a>
+
+</div>
+                    <div class="medium-12 columns subnavleft">						
+                        
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	
+	
+
+
+        <!-- OUTRO STRIP -->
+       
+        <!--// OUTRO STRIP --> 
+								 			  
+								  
+	
+			
+				<section class="tiles clearfix" id="mastertiles">
+				 
+			<div class="large-12">
+			<div class="small-12">
+                                    <div class="medium-3 columns bgBlue text-center hvr-curl-bottom-left"><a class="tile" href="/communications" title="Link to City of Lakeland Communications Department">communications</a></div>
+            <div class="medium-3 columns bgRed text-center hvr-curl-bottom-left"><a class="tile" href="/citizens-action-center" title="Link to City of Lakeland Citizens Action Center" target="_blank">take<span class="tileupper">ACTION</span></a></div>
+            <div class="medium-3 columns bgPurple text-center hvr-curl-bottom-left"><a class="tile" href="/government/public-records-requests/" title="Link to Public Records Requests">record<span class="tileupper">REQUESTS</span></a></div>
+            <div class="medium-3 columns bgYellow text-center hvr-curl-bottom-left"><a class="tile" href="/departments/finance/annual-budget/" title="Link to the City of Lakeland Annual Budget page">annual<span class="tileupper">BUDGET</span></a></div>
+			</div>
+        </div>
+       
+			<div class="large-12" data-equalizer>
+			<div class="small-12">
+            	<div class="medium-3 columns bgGreen text-center hvr-curl-bottom-left" data-equalizer-watch> 
+                  
+					<div><a class="tile" href="/lgn" title="Link to LGN Page">watch<span class="tileupper">LIVE</span> | on<span class="tileupper">DEMAND</span></a>                   
+						</div>
+            </div>
+				<div class="medium-3 columns bgOrange text-center hvr-curl-bottom-left" data-equalizer-watch><a class="tile" href="https://ims.lakelandgov.net/" title="Link to iMS System" target="_blank">iMS</a></div>	
+            <div class="medium-3 columns bgBlue text-center hvr-curl-bottom-left" data-equalizer-watch>
+				
+                <div><a class="tile" href="/get-connected" title="Link to City of Lakeland Get Connected Page">get<span class="tileupper">CONNECTED</span></a></div>                
+            </div>
+             <div class="medium-3 columns bgGreen text-center hvr-curl-bottom-left" data-equalizer-watch><a class="tile" href="https://geohub-lakelandflorida.opendata.arcgis.com/" title="Link to openGOV Budget Transparency Tool Page" target="_blank">maps | geo<span class="tileupper">DATA</span></a></div>
+			</div>
+        </div>
+    </section>
+
+				
+          <div class="fb-messengermessageus"
+                     messenger_app_id="192931800808738"
+                     page_id="89403728824"
+                     color="blue"
+                     size="xlarge" style="position: fixed;z-index: 1;bottom: -5px;right:100px;text-align:right;">
+                </div>
+        <!-- FOOTER -->
+        <footer class="colFooter clearfix">
+			<div class="large-10 large-offset-1">
+				<div class="medium-8 columns">
+					<div class="small-12 small-text-center medium-text-left">
+						<div id="footersocialIcons">
+								        <nav class="social">
+	  
+		
+		    <ul>
+			    <li class="facebook"><a href="http://www.facebook.com/lakelandgov" class="symbol icoSocialHover" target="_blank" title="Facebook Link will open in a new window/tab"><img src="/Content/images/icoFacebookFoot.png" alt="Facebook Icon" /></a></li>
+	            			    <li class="twitter"><a href="https://twitter.com/@lakelandgov" class="symbol icoSocialHover" target="_blank" title="Twitter Link will open in a new window/tab"><img src="/Content/images/icoTwitterFoot.png" alt="Twitter Icon" /></a></li>
+	            	            		                                        <li class="instagram"><a href="https://www.instagram.com/lakelandgov/" class="symbol icoSocialHover" target="_blank" title="Instagram Link will open in a new window/tab"><img src="/Content/images/icoInstagramFoot.png" alt="Instagram Icon" /></a></li>
+	            	            	            	            <li class="vimeo"><a href="https://vimeo.com/lakelandgov" class="symbol icoSocialHover" target="_blank" title="Vimeo Link will open in a new window/tab"><img src="/Content/images/icoVimeoFoot.png" alt="Vimeo Icon" /></a></li>
+	            	            <li class="youtube"><a href="https://www.youtube.com/cityoflakelandfl" class="symbol icoSocialHover" target="_blank" title="YouTube Link will open in a new window/tab"><img src="/Content/images/icoYouTubeFoot.png" alt="YouTube Icon" /></a></li>
+                                				 		                       <li class="nextdoor"><a href="https://nextdoor.com" class="symbol icoSocialHover" target="_blank" title="Nextdoor Link will open in a new window/tab"><img class="icoSocialHover" src="/Content/images/icoNextdoorFoot.png" alt="Nextdoor Icon" /></a></li>
+		                 		</ul>
+    </nav>   
+
+						</div>
+					</div>	
+					<div class="small-12">
+								<!-- COMPANY DETAILS -->
+								    <div class="company-details text-center medium-text-left">
+			<address>
+		<a rel="noopener noreferrer" href="https://goo.gl/maps/fpD1b2oBq992" target="_blank" title="Directions to City of Lakeland City Hall">228 S. Massachusetts Ave. | Lakeland, Florida 33801</a> | <a href="tel:8638346000" title="City of Lakeland Main Number">863.834.6000</a> | <a data-id="7122" href="/departments/city-clerk/hours-closings/" title="Hours &amp; Closings">Hours &amp; Closing</a> | <a data-id="1565" href="/departments/public-works/ada-accessibility/" title="ADA Accessibility">Accessibility</a> | <a data-id="11151" href="/important-numbers/" title="Important Numbers">Important Numbers</a> | <a data-udi="umb://document/86ad2dda70d14b4ab44b20aa67a5c912" href="/sitemap/" title="Sitemap">Site Map</a>
+		
+		</address>
+			<!--<p>tel:8638346000</p>-->
+	</div> 
+
+								<!--// COMPANY DETAILS -->
+					</div>	
+                  
+				</div>					
+				<div class="medium-4 columns small-text-center medium-text-right bottomLogo">
+                       
+					   <!-- // COMPANY FOOTER LOGO -->
+					   <a href="/" title="back to lakelandgov.net home page"><img class="swanlogo" src="/media/1023/colbrand_main_white.png" alt="City of Lakeland Logo" /></a><br/>
+	   <span class="copyright">&copy; 2026 City of Lakeland</span>
+
+
+					
+                </div>	
+                    <div class="medium-12 columns bottomLogo">
+                            <p>The City of Lakeland is committed to facilitating the accessibility and usability of its Website, lakelandgov.net, for all people with disabilities. If you use assistive technology (such as a Braille reader, a screen reader, or TTY) and the format of any material on this website interferes with your ability to access information, please contact us. If you do encounter an accessibility issue, please be sure to specify the Web page in your email, and we will make all reasonable efforts to make the page accessible for you. Users who need accessibility assistance can also contact our ADA Specialist at <a href="tel:8638348444" title="Contact number for City of Lakelands ADA Specialist">863.834.8444</a>  or <a href="mailto:ADASpecialist@lakelandgov.net" title="City of Lakelands ADA Specialist Email">ADASpecialist@lakelandgov.net</a>. Our Website will be reviewed and tested on an ongoing basis, utilizing assistive technologies by users who have knowledge of and depend on the performance of these technologies.</p>
+                </div>
+			</div>
+        </footer>
+        <!--// FOOTER -->
+    
+        <!-- BACK TO TOP -->
+        <span id="top-link-block" class="c1-bg c5-text">
+            <a href="#top" class="c1-bg c5-text" onclick="$('html,body').animate({scrollTop:0},'slow');return false;" aria-label="scroll to top">
+                <span class="fa fa-chevron-up" aria-hidden="true" aria-label="scroll to top" role="img"></span>
+            </a>
+        </span>
+        <!--// BACK TO TOP -->
+    </div>			
+</div>					
+</div>				
+					
+    <!--// SITE --> 	
+   <script src="/Scripts/foundation/foundation.js"></script>
+    <script src="/Scripts/foundation/foundation.offcanvas.js"></script>
+    <script src="/Scripts/foundation/foundation.equalizer.js"></script>
+    <script src="/Scripts/foundation/foundation.orbit.js"></script>
+   <script src="/Scripts/foundation/foundation.reveal.js"></script>
+<script src="/Scripts/foundation/foundation.abide.js"></script>
+<script src="/Scripts/foundation/foundation.accordion.js"></script>
+ <script src="/Scripts/foundation/foundation.clearing.js"></script>
+  <script src="/Scripts/foundation/foundation.alert.js"></script>   
+   <script src="/Scripts/foundation/foundation.tooltip.js"></script>
+  
+  
+    <script src="https://cdn.userway.org/widget.js" data-account="LZYA0OV9Ga"></script>
+					 <script>
+         $(document).ready(function(){
+     $(document).foundation({
+                 accordion: {                
+                     multi_expand: true,                  
+                 }
+             });
+			 $('.accordion').on('toggled', function (event, accordion) {
+                $(document).foundation('equalizer', 'reflow');
+            });
+			 
+			 	 $('.scorecardload').click(function (e) {
+			     e.preventDefault();
+			     var url = $(this).attr('href');
+			     $('#iframecontainer').each(function () {
+			         $(this).attr('src', url);
+			     });
+			 });
+    });				
+    </script>
+				
+</body>
+</html>
