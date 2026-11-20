@@ -1,44 +1,135 @@
 [
 {
-"city": "Humboldt County",
-"url": "https://gis.eurekaca.gov/server/rest/services/MainServiceLayers/Transportation_Services/MapServer/2",
-"name": "Bike Parking",
-"count": 73,
+"city": "Denton",
+"url": "https://maps.cityofdenton.com/server/rest/services/CityManagersOffice/BicycleRoutes/MapServer/0",
+"name": "Bicycle Racks",
+"count": 355,
 "cat": "racks"
 },
 {
-"city": "Edmond",
-"url": "https://gis.edmondok.gov/arcgis/rest/services/ArcadiaLake/ArcadiaLakeTrails/MapServer/1",
-"name": "Bicycle Repair Station",
-"count": 2,
-"cat": "repair"
-},
-{
-"city": "Cedar Rapids",
-"url": "https://crgis.cedar-rapids.org/arcgis/rest/services/Maps/Public_Works/MapServer/78",
-"name": "FixItStations",
-"count": 21,
-"cat": "repair"
-},
-{
-"city": "St. Petersburg FL",
-"url": "https://egis.stpete.org/arcgis/rest/services/ServicesTPD/TrafficManagementandData/MapServer/45",
-"name": "Scooter Share Corrals",
-"count": 103,
-"cat": "scooter"
-},
-{
-"city": "Ames",
-"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/FeatureServer/34",
+"city": "Denton",
+"url": "https://maps.cityofdenton.com/server/rest/services/Parks/geotg/FeatureServer/3",
 "name": "Bike Racks",
-"count": 421,
+"count": 22,
 "cat": "racks"
 },
 {
-"city": "Ames",
-"url": "https://gis.cityofames.org/arcgis/rest/services/Ames_Edits/coa_landbase_All_Edits/MapServer/34",
+"city": "Denton",
+"url": "https://maps.cityofdenton.com/server/rest/services/Parks/geotg/MapServer/3",
 "name": "Bike Racks",
-"count": 421,
+"count": 22,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Capital_Bikeshare_Stations_Points/FeatureServer/0",
+"name": "Bike Capital Bikeshare Stations",
+"count": 115,
+"cat": "share"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Capital_Bikeshare_Stations_Points/MapServer/0",
+"name": "Bike Capital Bikeshare Stations",
+"count": 115,
+"cat": "share"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Facilities_Points/FeatureServer/0",
+"name": "Bike Facilities",
+"count": 28,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Facilities_Points/MapServer/0",
+"name": "Bike Facilities",
+"count": 28,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Steep_Hill_Points/FeatureServer/0",
+"name": "Bike Steep Hills",
+"count": 46,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Steep_Hill_Points/MapServer/0",
+"name": "Bike Steep Hills",
+"count": 46,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Transportation_Layers/FeatureServer/2",
+"name": "Bike Racks - Corrals ",
+"count": 151,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Transportation_Layers/MapServer/2",
+"name": "Bike Racks - Corrals ",
+"count": 151,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/104",
+"name": "Corrals",
+"count": 151,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/15",
+"name": "Capital Bikeshare Locations",
+"count": 115,
+"cat": "share"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/16",
+"name": "Bike Facilities",
+"count": 28,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/18",
+"name": "Bike Steep Hills",
+"count": 46,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/104",
+"name": "Corrals",
+"count": 151,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/17",
+"name": "Capital Bikeshare Locations",
+"count": 115,
+"cat": "share"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/18",
+"name": "Bike Facilities",
+"count": 28,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/20",
+"name": "Bike Steep Hills",
+"count": 46,
 "cat": "racks"
 }
 ]
