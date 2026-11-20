@@ -1,0 +1,1214 @@
+{
+ "Phoenix AZ": {
+  "files": [
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/policesite/documents/crime-stats-and-maps/2024PersonOffenses.pdf",
+    "text": "Crime Stats & Map: Personal Offensives (PDF)",
+    "file": "data/city_files/Phoenix_AZ/f6cb9b_2024PersonOffenses.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/policesite/documents/crime-stats-and-maps/2024PropertyOffenses.pdf",
+    "text": "Crime Stats & Map: Property Offenses (PDF)",
+    "file": "data/city_files/Phoenix_AZ/5a1e9b_2024PropertyOffenses.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/parkssite/documents/pks_nrd/papagodetailed.pdf",
+    "text": "Papago Park Detailed Map (PDF)",
+    "file": "data/city_files/Phoenix_AZ/da6c58_papagodetailed.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/parkssite/documents/pks_nrd/062879.pdf",
+    "text": "South Mountain Park Detailed Map (PDF)",
+    "file": "data/city_files/Phoenix_AZ/aaeb1b_062879.pdf",
+    "rows": 14,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/documents/citylimitsmapbook20230216.pdf",
+    "text": "Open the Key Map (PDF)",
+    "file": "data/city_files/Phoenix_AZ/787fdd_citylimitsmapbook20230216.pdf",
+    "rows": 165,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/courtsite/documents/juror_map.pdf",
+    "text": "PRINTABLE Jury Parking Garage Map & Directions",
+    "file": "data/city_files/Phoenix_AZ/b5e07e_juror_map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/nsdsite/documents/043821.pdf",
+    "text": "NSP Map 2",
+    "file": "data/city_files/Phoenix_AZ/5e1bdd_043821.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/nsdsite/documents/nsp_map_1.pdf",
+    "text": "NSP Map 1",
+    "file": "data/city_files/Phoenix_AZ/4a9aa9_nsp_map_1.pdf",
+    "rows": 18,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/nsdsite/documents/nsp_map_3.pdf",
+    "text": "NSP Map 3",
+    "file": "data/city_files/Phoenix_AZ/8387ae_nsp_map_3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://phoenix.maps.arcgis.com/apps/webappviewer/index.html?id=13428321a9f84e95a634be1beab5fe96": "My Community Map: Zoning and Permit Activities",
+   "https://phoenixopendata.com/": "Open Data Portal Phoenix believes that transparency in government encourages efficiency. Explore critical datasets in ou",
+   "https://esg-phoenix.hub.arcgis.com/": "Explore ESG Dashboard",
+   "https://phoenix.gov/opendata": "Skip to content",
+   "https://phoenix.gov/contact?ref=https%3A%2F%2Fwww.phoenixopendata.com%2F": "Contact",
+   "https://egishub-phoenix.hub.arcgis.com": "Mapping Portal",
+   "https://phoenix.gov/pages/open-data-policy": "Open Data Policy",
+   "https://opengov.com/?utm_campaign=Footer-Product-OpenData&utm_source=OpenGov&utm_medium=product&utm_term=PO-OGOV-1274&utm_content=logo": "",
+   "https://experience.arcgis.com/experience/954a8cc4126641cba2617dcc03b84887": "Find a park",
+   "https://egishub-phoenix.hub.arcgis.com/": "ArcGIS Hub",
+   "https://cmpr-dashboard-phoenix.hub.arcgis.com/": "Explore the Dashboard",
+   "https://cmpr-dashboard-phoenix.hub.arcgis.com/pages/oac": "Learn more about arts and culture data",
+   "https://www.phoenixopendata.com/": "Find open data",
+   "https://experience.arcgis.com/experience/79966be9800e47cea9df160d4b6e0388": "Find a golf course",
+   "https://experience.arcgis.com/experience/b1d07e93acab4f75aec63bebef4dd62e": "Find a Pool"
+  }
+ },
+ "Irving TX": {
+  "files": [],
+  "portals": {}
+ },
+ "Dallas": {
+  "files": [
+   {
+    "url": "https://dallascityhall.com/departments/codecompliance/DCH%20documents/%28English%29%20Instructions%20Garage%20Sale-3.18.24.pdf",
+    "text": "Instructions on how to apply for permit-En​glish",
+    "file": "data/city_files/Dallas/6037ac__28English_29_20Instructions_20Garage_20Sale-3.18.24.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dallascityhall.com:443/departments/housing-neighborhood-revitalization/dallasmap/DCH%20Documents/DHAP%20Brochure%20English%20-%206.1.2024.pdf",
+    "text": "Flyer- English",
+    "file": "data/city_files/Dallas/7cd2da_DHAP_20Brochure_20English_20-_206.1.2024.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dallascityhall.com:443/departments/housing-neighborhood-revitalization/dallasmap/DCH%20Documents/DHAP%20Brochure%20Spanish%20-%206.1.2024.pdf",
+    "text": "Flyer- Spanish",
+    "file": "data/city_files/Dallas/b3c9a8_DHAP_20Brochure_20Spanish_20-_206.1.2024.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dallascityhall.com/departments/transportation/DCH%20Documents/Standards/PavementCut-Repair_StandardsManual.pdf",
+    "text": "Pavement Cut and Repair Standards Manual",
+    "file": "data/city_files/Dallas/a0fbb3_PavementCut-Repair_StandardsManual.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dallascityhall.com/departments/public-works/DCH%20Documents/Street%20Services/pdf/Route_2009_Sweeping.pdf",
+    "text": "List of Major Thoroughfares that are swept",
+    "file": "data/city_files/Dallas/b2f74b_Route_2009_Sweeping.pdf",
+    "rows": 576,
+    "bike_rows": 11
+   }
+  ],
+  "portals": {
+   "https://dallasgis.maps.arcgis.com/apps/webappviewer/index.html?id=5ffbfd4a873a47c59a371fed3d0a9caa": "ROW Permit Map",
+   "https://dallasgis.maps.arcgis.com/apps/dashboards/b7af869d7f644456b2569fb49aa0d5ed": "https://dallasgis.maps.arcgis.com/apps/dashboards/b7af869d7f644456b2569fb49aa0d5ed",
+   "https://dallasgis.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=02a4fce7bfbd45b3934c435e0a9dbff4": "TPW Gallery Application",
+   "https://dallasgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=5f6f134f2eb746c794ab55a45a7fdeaf": "Active Capital Projects",
+   "https://dallasgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=2e3647230d024ec1994256334bf8b399": "Project Coordin​ation",
+   "https://experience.arcgis.com/experience/ac0c906906a549f9badb37970943872c": "Needs Inventory",
+   "https://dallasgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=e6af17b72b964d88adeff3ce07e1aba4": "",
+   "https://dallasgis.maps.arcgis.com/apps/webappviewer/index.html?id=62425c5d3cbe42d884e2bfe0137d424e": "PBW Maintenance Projects",
+   "https://dallasgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=5c813408d0d8447f98cc26d6d7c1363f": "https://dallasgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=5c813408d​0d8447f98cc26d6d7c1363f",
+   "https://dallasgis.maps.arcgis.com/apps/webappviewer/index.html?id=61c4bfdad6ec4c85bc794dad5044288e/": "Thoroughfare Plan",
+   "https://dallasgis.maps.arcgis.com/apps/webappviewer/index.html?id=1125837a40f94e18b8057482ea395a84": "Completed Projects",
+   "https://dallasgis.maps.arcgis.com/apps/dashboards/1fd7a762dbfe434dae465f547f9ca6e7": "Barrier Free Ramp Projects Map",
+   "https://dallasgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=d5d325dbd307446fbb9fa144717fa86e": "Dallas Sidewalk Master Plan Map",
+   "https://experience.arcgis.com/experience/8ca17a69995145248f1d5a280747ecd9": "Sidewalk Replacement Program Map​",
+   "https://dallasgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=8461ad633e0e448b99cf35e42d55d8f6": "Real Estate Licenses",
+   "https://dallasgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=800b90f8911448e0a7582902aec2df15": "Bridge Inventory",
+   "https://experience.arcgis.com/experience/ddf0449548f04512bae122b3228812f2": "Land and Building Management System",
+   "https://dallasgis.maps.arcgis.com/apps/webappviewer/index.html?id=091a5d66ed0045c9966ddb2de4f714c3": "",
+   "https://dallasgis.maps.arcgis.com/apps/webappviewer/index.html?id=7420defba9314eba94ab55641b895196": "Dallas Sidewalk Master Plan Map"
+  }
+ },
+ "Sivas": {
+  "files": [],
+  "portals": {}
+ },
+ "Aksaray": {
+  "files": [],
+  "portals": {}
+ },
+ "Akron": {
+  "files": [
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/akron/JSK_Parking_Map_3_5_25_74905f99-9bf3-4c11-82b5-037f919b526a.pdf",
+    "text": "Download Parking Information",
+    "file": "data/city_files/Akron/b490d1_JSK_Parking_Map_3_5_25_74905f99-9bf3-4c11-82b5-037f919b526a.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/akron/Greystone_Parking_Map_1_31_25_88d68d27-89bf-4b7e-86d4-5d8681768309.pdf",
+    "text": "GREYSTONE PARKING MAP",
+    "file": "data/city_files/Akron/fb02b0_Greystone_Parking_Map_1_31_25_88d68d27-89bf-4b7e-86d4-5d8681768309.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Hollywood": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/e0322242fd9d4f89aadfdf4d85d1aaca/page/Near-Me/": "Project Dashboard"
+  }
+ },
+ "New Haven": {
+  "files": [],
+  "portals": {}
+ },
+ "Santa Rosa": {
+  "files": [],
+  "portals": {}
+ },
+ "Sandy Springs": {
+  "files": [],
+  "portals": {
+   "https://coss.maps.arcgis.com/apps/instant/reporter/index.html?appid=f65de32fcf1c4e89ba219a1198002cc7": "Report an Issue"
+  }
+ },
+ "San Angelo": {
+  "files": [],
+  "portals": {
+   "https://cosa1.maps.arcgis.com/apps/webappviewer/index.html?id=1d4fca5a9f4c419da8d5374880a86b30": "City Council District Map",
+   "https://experience.arcgis.com/experience/f90c578af35f479c9f9e10ff644edc07": "Development map",
+   "https://experience.arcgis.com/experience/b3c8f0b2d62b411ca1fddf8313b95c8e": "Elections map"
+  }
+ },
+ "Nashua": {
+  "files": [],
+  "portals": {
+   "https://nashuagis.nashuanh.gov/": "GIS Map (NashuaGIS Viewer)",
+   "https://experience.arcgis.com/experience/5ea073de09434e55b52cfc42e916ca0e": "Pinewood and Edgewood cemeteries (arcgis.com)",
+   "https://newgis.nashuanh.gov/nashuanh": "Sewer & Stormwater",
+   "http://nashuamaps.maps.arcgis.com/apps/webappviewer/index.html?id=3a598afe03644f12ad9991cc0a65be13": "Find your trash and recycling schedule - GIS application (arcgis.com)",
+   "https://experience.arcgis.com/experience/ef06563ced5b454980e1d62dd7218336": "",
+   "https://nashuamaps.maps.arcgis.com/apps/webappviewer/index.html?id=0fb038805f64433f89dbb9b674b833f4": "Overnight Parking Map (ArcGIS.com)"
+  }
+ },
+ "Mission": {
+  "files": [],
+  "portals": {
+   "https://citymission.maps.arcgis.com/apps/webappviewer/index.html?id=af30e0bfae71462eacb6b99e3dc1a17f": "Sewer and Water Infrastructure",
+   "https://citymission.maps.arcgis.com/apps/webappviewer/index.html?id=30a7a804ba1247018c728082242d1594": "Zoning Map",
+   "https://citymission.maps.arcgis.com/apps/webappviewer/index.html?id=5d929dc2104142a59f450ba994b3cf94": "Storm Water Infrastructure"
+  }
+ },
+ "Pharr": {
+  "files": [],
+  "portals": {}
+ },
+ "Bismarck": {
+  "files": [],
+  "portals": {
+   "https://bismarck.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=47b2edfbedc340e1a87572f44edb252d": "Interactive mapping for your convenience",
+   "https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0adb51996444d4879338b5529aa9cd&extent=-100.79465801330593,46.80352817858064,-100.77388698669405,46.81087158938287": "National Flood Hazard Layer Viewer",
+   "https://www.gis.nd.gov/": "ND GIS Hub",
+   "https://www.legis.nd.gov/legislative-bill-tracking-system": "website",
+   "https://www.legis.nd.gov/": "https://www.legis.nd.gov/",
+   "https://public-bismarck.opendata.arcgis.com/": "Open Data Website",
+   "https://www.arcgis.com/home/webmap/viewer.html?webmap=8f3ffa1eccc94db9aeb1f9d236fcfa7a&extent=-100.9429,46.7564,-100.6894,46.8536": "Multi-Use Trails Map (Link)",
+   "https://ndlegis.gov/general-information/north-dakota-century-code/index.html": "State Law",
+   "https://storymaps.arcgis.com/stories/eb02e5e71f464bda957ab6aff47da0a4": "Downtown Bismarck Historic District Walking Tour",
+   "https://storymaps.arcgis.com/stories/d8cb8a292f5d4e16be1c2758f4dfa9a9": "Cathedral Area Historic District Walking Tour",
+   "https://storymaps.arcgis.com/stories/99a88381d1c9474ba13666084b5358e5": "Highland Acres Historic District Walking Tour",
+   "https://bismarck.maps.arcgis.com/home/webmap/viewer.html?webmap=8356c359a04e4259958a96f3b7c831a5": "Bismarck Downtown Parking Area.",
+   "https://bismarck.maps.arcgis.com/apps/dashboards/b2e6a2b4ff9f4e9bb0ce4049f0fee806": "ArcGIS Crime Map",
+   "https://storymaps.arcgis.com/stories/cb8a610899914fba957c09354a9d5a27": "View October 28 meeting presentation slides",
+   "http://mortongisonline.maps.arcgis.com/apps/PublicGallery/index.html?appid=d50d684526524b5db1f2aa502eab66c4&group=db304eadeb3141b1851e2497c95cb1f2": "Morton County Map Gallery",
+   "https://experience.arcgis.com/experience/c5da309af17b4c48a3b953675a77f654": "North Dakota Fire Declarations and Burn Restrictions",
+   "http://bismarck.maps.arcgis.com/apps/View/index.html?appid=d8453853ea884edc9b277dc9e5b7568e": "Snow Removal Progress Map"
+  }
+ },
+ "Yuba City": {
+  "files": [
+   {
+    "url": "https://yubacity.net/revize_photo_gallery/Departments/Parks & Recreation/ Parks Directory/FINAL Parks map.pdf?t=202407011313080",
+    "text": "Download Parks map",
+    "file": "data/city_files/Yuba_City/f46606_FINAL_Parks_map.pdf",
+    "rows": 74,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://yubacity.net/1266-CON-25 - Sutter Bike Path Gap Closure Project.pdf?t=202605071840540",
+    "text": "View Results",
+    "file": "data/city_files/Yuba_City/a804b7_1266-CON-25_-_Sutter_Bike_Path_Gap_Closure_Project.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Public Works/Engineering/BIDS & RFPs/22-15 - RAS & WAS Pumps Replacement Project.pdf?t=202407011312480",
+    "text": "View Results",
+    "file": "data/city_files/Yuba_City/972950_22-15_-_RAS_WAS_Pumps_Replacement_Project.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Public Works/Engineering/BIDS & RFPs/22-13 Bid Results - WTP West Flow Meter Project.pdf?t=202407011312480",
+    "text": "View Results",
+    "file": "data/city_files/Yuba_City/db613c_22-13_Bid_Results_-_WTP_West_Flow_Meter_Project.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Public Works/Utilities/Water/CYC_Doorhanger_WaterMeter_v2.pdf?t=202407011313040",
+    "text": "Cellular Meter Water Use Tracking",
+    "file": "data/city_files/Yuba_City/3cce71_CYC_Doorhanger_WaterMeter_v2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Sec._6_5.507.___Summary_of_charges.pdf?t=202407011316480",
+    "text": "Industrial User Discharge Permit Fees",
+    "file": "data/city_files/Yuba_City/63ceef_Sec._6_5.507.___Summary_of_charges.pdf",
+    "rows": 25,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Industrial Pretreatment/Who-needs-a-discharge-permit (1).pdf?t=202407011314010",
+    "text": "Who needs a discharge permit",
+    "file": "data/city_files/Yuba_City/62d5fc_Who-needs-a-discharge-permit_1_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Industrial Pretreatment/groundwater-discharge-permit-application.pdf?t=202407011313130",
+    "text": "Treated Groundwater Discharge Permit Application",
+    "file": "data/city_files/Yuba_City/de2ac0_groundwater-discharge-permit-application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Industrial Pretreatment/SIU application 2025.pdf?t=202509291813250",
+    "text": "Industrial/Commercial Wastewater Discharge Permit Application",
+    "file": "data/city_files/Yuba_City/0c45c7_SIU_application_2025.pdf",
+    "rows": 432,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Departments/Public Works/Utilities/Water/CYC_Doorhanger_WaterMeter_v2.pdf?t=202407011313040",
+    "text": "Cellular Meter Water Use Tracking",
+    "file": "data/city_files/Yuba_City/811719_CYC_Doorhanger_WaterMeter_v2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yubacity.net/revize_photo_gallery/Departments/Parks & Recreation/ Parks Directory/FINAL Parks map.pdf?t=202407011313080",
+    "text": "Download Parks map",
+    "file": "data/city_files/Yuba_City/c876aa_FINAL_Parks_map.pdf",
+    "rows": 74,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Departments/Police Department/YC Truck Routes 2015-overall view.pdf",
+    "text": "Truck Routes",
+    "file": "data/city_files/Yuba_City/78401a_YC_Truck_Routes_2015-overall_view.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yubacity.net/1266-CON-25 - Sutter Bike Path Gap Closure Project.pdf?t=202605071840540",
+    "text": "View Results",
+    "file": "data/city_files/Yuba_City/0d5e27_1266-CON-25_-_Sutter_Bike_Path_Gap_Closure_Project.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Departments/Public Works/Engineering/BIDS & RFPs/22-15 - RAS & WAS Pumps Replacement Project.pdf?t=202407011312480",
+    "text": "View Results",
+    "file": "data/city_files/Yuba_City/03065f_22-15_-_RAS_WAS_Pumps_Replacement_Project.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Departments/Public Works/Engineering/BIDS & RFPs/22-13 Bid Results - WTP West Flow Meter Project.pdf?t=202407011312480",
+    "text": "View Results",
+    "file": "data/city_files/Yuba_City/1e80e5_22-13_Bid_Results_-_WTP_West_Flow_Meter_Project.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Departments/Public Works/Engineering/Technical Documents/Development/Sutter Heritage Master Plan - 2006.pdf?t=202407011316460",
+    "text": "Sutter Heritage Master Plan - 2006",
+    "file": "data/city_files/Yuba_City/8c2136_Sutter_Heritage_Master_Plan_-_2006.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Departments/Public Works/Engineering/Technical Documents/Transportation/ADA Transition Plan - 2012.pdf?t=202407011316460",
+    "text": "ADA Transition Plan - 2012",
+    "file": "data/city_files/Yuba_City/86e936_ADA_Transition_Plan_-_2012.pdf",
+    "rows": 1936,
+    "bike_rows": 406
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Departments/Public Works/Engineering/Technical Documents/Transportation/Bicycle Master Plan - 2011.pdf?t=202407011316460",
+    "text": "Bicycle Master Plan - 2011",
+    "file": "data/city_files/Yuba_City/15ae21_Bicycle_Master_Plan_-_2011.pdf",
+    "rows": 262,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Departments/Public Works/Engineering/Technical Documents/Transportation/Safe Routes to School - 2020.pdf?t=202407011316460",
+    "text": "Safe Routes to School Plan - 2020",
+    "file": "data/city_files/Yuba_City/5fc2fb_Safe_Routes_to_School_-_2020.pdf",
+    "rows": 273,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Public Works/Engineering/Technical Documents/YC Truck Routes 2015-overall view.pdf?t=202407011315150",
+    "text": "Truck Routes Map - 2015",
+    "file": "data/city_files/Yuba_City/bc62b7_YC_Truck_Routes_2015-overall_view.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yubacity.net/Sec._6_5.507.___Summary_of_charges.pdf?t=202407011316480",
+    "text": "Industrial User Discharge Permit Fees",
+    "file": "data/city_files/Yuba_City/a29592_Sec._6_5.507.___Summary_of_charges.pdf",
+    "rows": 25,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Industrial Pretreatment/Who-needs-a-discharge-permit (1).pdf?t=202407011314010",
+    "text": "Who needs a discharge permit",
+    "file": "data/city_files/Yuba_City/8fcc32_Who-needs-a-discharge-permit_1_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Industrial Pretreatment/groundwater-discharge-permit-application.pdf?t=202407011313130",
+    "text": "Treated Groundwater Discharge Permit Application",
+    "file": "data/city_files/Yuba_City/b930bd_groundwater-discharge-permit-application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Industrial Pretreatment/SIU application 2025.pdf?t=202509291813250",
+    "text": "Industrial/Commercial Wastewater Discharge Permit Application",
+    "file": "data/city_files/Yuba_City/938510_SIU_application_2025.pdf",
+    "rows": 432,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Development Services/Information Bulletins/EV Charging Checklist_3.14.23.pdf?t=202407011315310",
+    "text": "Electric Vehicle Charger Permitting Checklist",
+    "file": "data/city_files/Yuba_City/7d15ba_EV_Charging_Checklist_3.14.23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Development Services/Information Bulletins/Garage-Conversion-Requirements.pdf?t=202407011315320",
+    "text": "Garage Conversion Requirements",
+    "file": "data/city_files/Yuba_City/fa15f2_Garage-Conversion-Requirements.pdf",
+    "rows": 15,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Development Services/Information Bulletins/Plot Plan Example.pdf?t=202407011315320",
+    "text": "Plot Plan Example",
+    "file": "data/city_files/Yuba_City/f7c4e9_Plot_Plan_Example.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Development Services/Planning/Planning Applications & Instructions/Lot Line Adjustment Application fillable Final 6.11.26.pdf?t=202606111725340",
+    "text": "Lot Line Adjustment Application Form",
+    "file": "data/city_files/Yuba_City/6dc336_Lot_Line_Adjustment_Application_fillable_Final_6.11.26.pdf",
+    "rows": 28,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Development Services/Planning/Planning Applications & Instructions/2026 PM SB - Filing Instructions.pdf?t=202609021455010",
+    "text": "Parcel and Subdivision Tentative Map Filing Instructions",
+    "file": "data/city_files/Yuba_City/4e120b_2026_PM_SB_-_Filing_Instructions.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Development Services/Planning/Planning Applications & Instructions/LLA - Filing Instructions 2026.pdf?t=202606111822350",
+    "text": "Lot Line Adjustment Filing Instructions",
+    "file": "data/city_files/Yuba_City/d96a44_LLA_-_Filing_Instructions_2026.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Public Works/Engineering/Technical Documents/Development/Sutter Heritage Master Plan - 2006.pdf?t=202407011316460",
+    "text": "Sutter Heritage Master Plan - 2006",
+    "file": "data/city_files/Yuba_City/0c1ac1_Sutter_Heritage_Master_Plan_-_2006.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Public Works/Engineering/Technical Documents/Transportation/ADA Transition Plan - 2012.pdf?t=202407011316460",
+    "text": "ADA Transition Plan - 2012",
+    "file": "data/city_files/Yuba_City/f3fdc1_ADA_Transition_Plan_-_2012.pdf",
+    "rows": 1936,
+    "bike_rows": 406
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Public Works/Engineering/Technical Documents/Transportation/Bicycle Master Plan - 2011.pdf?t=202407011316460",
+    "text": "Bicycle Master Plan - 2011",
+    "file": "data/city_files/Yuba_City/74c96c_Bicycle_Master_Plan_-_2011.pdf",
+    "rows": 262,
+    "bike_rows": 22
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Public Works/Engineering/Technical Documents/Transportation/Safe Routes to School - 2020.pdf?t=202407011316460",
+    "text": "Safe Routes to School Plan - 2020",
+    "file": "data/city_files/Yuba_City/b7e9c7_Safe_Routes_to_School_-_2020.pdf",
+    "rows": 273,
+    "bike_rows": 28
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Public Works/Engineering/Technical Documents/YC Truck Routes 2015-overall view.pdf?t=202407011315150",
+    "text": "Truck Routes Map - 2015",
+    "file": "data/city_files/Yuba_City/fcdcc7_YC_Truck_Routes_2015-overall_view.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Public Works/Engineering/Flood Evacuation/Evacuation Map.pdf?t=202407011313070",
+    "text": "Evacuation Zone Map",
+    "file": "data/city_files/Yuba_City/7442b5_Evacuation_Map.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Public Works/Engineering/Flood Evacuation/Developing in the Floodplain/TB-6-93.pdf?t=202407011313560",
+    "text": "Below Grade Parking Requirements",
+    "file": "data/city_files/Yuba_City/ce0769_TB-6-93.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://yubacity.net/Document Center/Departments/Public Works/Utilities/CYC_Doorhanger_WaterMeter_v2.pdf?t=202407011313040",
+    "text": "Cellular Meter Water Use Tracking",
+    "file": "data/city_files/Yuba_City/4eb308_CYC_Doorhanger_WaterMeter_v2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yubacity.net/Document Center/Departments/Public Works/Utilities/CYC_Doorhanger_WaterMeter_v2.pdf?t=202407011313040",
+    "text": "Cellular Meter Water Use Tracking",
+    "file": "data/city_files/Yuba_City/012ad7_CYC_Doorhanger_WaterMeter_v2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://fire-hazard-severity-zones-rollout-calfire-forestry.hub.arcgis.com/": "Fire Hazard Severity Zones",
+   "https://coyc.maps.arcgis.com/apps/instant/basic/index.html?appid=d0c01deac3814f4ea0c1eb5e0b3326f0": "",
+   "https://coyc.maps.arcgis.com/apps/instant/basic/index.html?appid=eb3a197dd7374ec79a5b5bdb1eede729": "",
+   "https://coyc.maps.arcgis.com/apps/instant/basic/index.html?appid=f68b9a95647c45399c814f7b66470077": "",
+   "https://coyc.maps.arcgis.com/apps/instant/basic/index.html?appid=874de71e9d8242238dbecda5c9410a60": "",
+   "https://coyc.maps.arcgis.com/apps/webappviewer/index.html?id=ca2595a4dffa471997151de4f4048db5": "Street Sweeping Map",
+   "https://coyc.maps.arcgis.com/apps/InformationLookup/index.html?appid=73e638ce1871443e92f73a85b086ac64": "Geographic Information System (GIS)"
+  }
+ },
+ "Marcos Paz Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Kalamassery Municipality": {
+  "files": [
+   {
+    "url": "https://kalamasserymunicipality.lsgkerala.gov.in/system/files/2026-09/Kalamassery%20Map.pdf",
+    "text": "Kalamassery Map.pdf",
+    "file": "data/city_files/Kalamassery_Municipality/3a9703_Kalamassery_20Map.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "West Allis": {
+  "files": [],
+  "portals": {}
+ },
+ "St. Peters": {
+  "files": [],
+  "portals": {}
+ },
+ "Peabody": {
+  "files": [
+   {
+    "url": "https://peabody-ma.gov/dpw/Peabody Recycling Center Flyer.pdf",
+    "text": "Peabody Recycling Center (PDF file, opens in PDF reader)",
+    "file": "data/city_files/Peabody/ef1cea_Peabody_Recycling_Center_Flyer.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://peabody-ma.gov/dpw/MattressBoxSpringBan.pdf",
+    "text": "Matresses & Box Spring Recycling (PDF file, opens in PDF reader)",
+    "file": "data/city_files/Peabody/376970_MattressBoxSpringBan.pdf",
+    "rows": 11,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://peabody-ma.gov/dpw/IMPORTANT TRASH INFORMATION.pdf",
+    "text": "Important Trash & Recycling News (PDF file, opens in PDF reader)",
+    "file": "data/city_files/Peabody/92d676_IMPORTANT_TRASH_INFORMATION.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://peabody-ma.gov/city clerk/Ward-Precinct Map.pdf",
+    "text": "Ward/Precinct Map (PDF file, opens in PDF reader)",
+    "file": "data/city_files/Peabody/fb6d14_Ward-Precinct_Map.pdf",
+    "rows": 8,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://peabody-ma.gov/city clerk/Peabody_Zoning_Map_Final.pdf",
+    "text": "Zoning Map (PDF file, opens in PDF reader)",
+    "file": "data/city_files/Peabody/06bfae_Peabody_Zoning_Map_Final.pdf",
+    "rows": 138,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.peabodypd.org/wp-content/uploads/2024/11/Downtown-Public-Parking-Map.pdf",
+    "text": "Parking Map (This will open a new window)",
+    "file": "data/city_files/Peabody/7c7b17_Downtown-Public-Parking-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://peabody-ma.gov/comm_dev/PeabodyMapGuide.pdf",
+    "text": "Tourism Map (PDF file, opens in PDF reader)",
+    "file": "data/city_files/Peabody/d41f9d_PeabodyMapGuide.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Stratford": {
+  "files": [],
+  "portals": {}
+ },
+ "Whitchurch–Stouffville": {
+  "files": [],
+  "portals": {}
+ },
+ "Roseville": {
+  "files": [],
+  "portals": {}
+ },
+ "Littleton": {
+  "files": [
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/3/building-amp-development/documents-building/building-amp-inspections/neighborhood-parking-permit-application-1.22.25.pdf",
+    "text": "Neighborhood Parking Permit Application (PDF, 870KB)",
+    "file": "data/city_files/Littleton/2fcbcb_neighborhood-parking-permit-application-1.22.25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/building-amp-development/documents-building/other-pw/streetnoparking.pdf",
+    "text": "Street - No Parking (PDF, 120KB)",
+    "file": "data/city_files/Littleton/2fd8f3_streetnoparking.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/2/maps/docs-safe-routes-school/2024/centennial-safe-routes-to-school-map.pdf",
+    "text": "Centennial Safe Routes to School map (PDF, 4MB)",
+    "file": "data/city_files/Littleton/914a88_centennial-safe-routes-to-school-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/2/maps/docs-safe-routes-school/2024/little-raven-safe-routes-to-school-map.pdf",
+    "text": "Little Raven Safe Routes to School Map (PDF, 6MB)",
+    "file": "data/city_files/Littleton/dd0881_little-raven-safe-routes-to-school-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/2/maps/docs-safe-routes-school/2024/runyon-safe-routes-to-school-map.pdf",
+    "text": "Runyon Safe Routes to School Map (PDF, 5MB)",
+    "file": "data/city_files/Littleton/5bdc4d_runyon-safe-routes-to-school-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/2/maps/docs-safe-routes-school/2024/euclid-safe-routes-to-school-map.pdf",
+    "text": "Euclid Safe Routes to School map (PDF, 6MB)",
+    "file": "data/city_files/Littleton/4e214a_euclid-safe-routes-to-school-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/2/maps/docs-safe-routes-school/2024/goddard-safe-routes-to-school-map.pdf",
+    "text": "Goddard Safe Routes to School map (PDF, 4MB)",
+    "file": "data/city_files/Littleton/158ed5_goddard-safe-routes-to-school-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/2/maps/docs-safe-routes-school/2024/powell-safe-routes-to-school-map.pdf",
+    "text": "Powell Safe Routes to School map (PDF, 3MB)",
+    "file": "data/city_files/Littleton/093975_powell-safe-routes-to-school-map.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/2/maps/docs-safe-routes-school/2024/heritage-safe-routes-to-school-map.pdf",
+    "text": "Heritage Safe Routes to School map (PDF, 6MB)",
+    "file": "data/city_files/Littleton/f9e610_heritage-safe-routes-to-school-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/2/maps/docs-safe-routes-school/2024/littleton-safe-routes-to-school-map.pdf",
+    "text": "Littleton Safe Routes to Schools map (PDF, 5MB)",
+    "file": "data/city_files/Littleton/98a71d_littleton-safe-routes-to-school-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/maps/docs-safe-routes-school/2024/bike-bus-flyer_oct9.pdf",
+    "text": "Bike Bus Basics flyer (PDF, 540KB)",
+    "file": "data/city_files/Littleton/a1d373_bike-bus-flyer_oct9.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/public-works/projects-docs-and-images/stormwater-docs/2022stormwatertransformati.pdf",
+    "text": "Stormwater Transformation and Enhancement Program Pathway Guide (PDF, 10MB)",
+    "file": "data/city_files/Littleton/b1e491_2022stormwatertransformati.pdf",
+    "rows": 28,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/public-works/projects-docs-and-images/ada-transition-plan/finaladatransitionplanlitt.pdf",
+    "text": "Final ADA Transition Plan - Littleton - May 2022 (PDF, 5MB)",
+    "file": "data/city_files/Littleton/89c335_finaladatransitionplanlitt.pdf",
+    "rows": 136,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/public-works/projects-docs-and-images/ada-transition-plan/adapresentationslides.pdf",
+    "text": "The presentation slides can also be downloaded (PDF, 2MB)",
+    "file": "data/city_files/Littleton/4a1e3f_adapresentationslides.pdf",
+    "rows": 30,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/public-works/projects-docs-and-images/ada-transition-plan/adahighresolutionmaps.pdf",
+    "text": "View high-resolution maps of City-owned buildings and public right-of-way here (PDF, 4MB)",
+    "file": "data/city_files/Littleton/968209_adahighresolutionmaps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/public-works/projects-docs-and-images/flood-docs/2021floodinsuranceratemaps.pdf",
+    "text": "Flood Insurance Rate Maps (PDF, 4MB)",
+    "file": "data/city_files/Littleton/7372cd_2021floodinsuranceratemaps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/public-works/projects-docs-and-images/big-things/2023-slurry.pdf",
+    "text": "View the map of the planned streets(PDF, 4MB)",
+    "file": "data/city_files/Littleton/e5db63_2023-slurry.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/public-works/projects-docs-and-images/big-things/broadway-fiber-map-phase-1.pdf",
+    "text": "phase 1(PDF, 342KB)",
+    "file": "data/city_files/Littleton/c72c8a_broadway-fiber-map-phase-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/public-works/projects-docs-and-images/big-things/broadway-fiber-map-phase-2.pdf",
+    "text": "phase 2(PDF, 289KB)",
+    "file": "data/city_files/Littleton/b1326f_broadway-fiber-map-phase-2.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/public-works/projects-docs-and-images/main-alamo-prince-bridge-repairs/main-st-bridge-repair.pdf",
+    "text": "Main-St-Bridge-Repair.pdf (PDF, 1MB)",
+    "file": "data/city_files/Littleton/2c3479_main-st-bridge-repair.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/building-amp-development/documents-building/historical-preservation/historic-resources/contextsurveyofpostwwiilit.pdf",
+    "text": "Context Survey of Post WWII Littleton 1949-1967 (PDF, 15MB)",
+    "file": "data/city_files/Littleton/418a8c_contextsurveyofpostwwiilit.pdf",
+    "rows": 68,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/building-amp-development/documents-building/historical-preservation/historic-resources/commercialmodernisminthegr_1.pdf",
+    "text": "Commercial Modernism in the Greater West Littleton Blvd Corridor 1950-1980 (PDF, 22MB)",
+    "file": "data/city_files/Littleton/634e7e_commercialmodernisminthegr_1.pdf",
+    "rows": 77,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/building-amp-development/documents-building/historical-preservation/historic-resources/contextsurveyreportcitywid.pdf",
+    "text": "Context Survey Report Citywide Historic Building 2000-2001 (PDF, 4MB)",
+    "file": "data/city_files/Littleton/dabe65_contextsurveyreportcitywid.pdf",
+    "rows": 26,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/building-amp-development/documents-building/historical-preservation/historic-resources/arapahohillsreconnaissance.pdf",
+    "text": "Arapaho Hills Reconaissance Survey 2009 (PDF, 8MB)",
+    "file": "data/city_files/Littleton/e8b916_arapahohillsreconnaissance.pdf",
+    "rows": 18,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/building-amp-development/documents-building/historical-preservation/historic-resources/arapahohillsnationalregist.pdf",
+    "text": "Arapaho Hills National Register Historic District Voluntary Design Guidelines (2013 (PDF, 19MB)",
+    "file": "data/city_files/Littleton/6f3bc1_arapahohillsnationalregist.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/building-amp-development/documents-building/historical-preservation/historic-resources/downtownlittletonhistoricp.pdf",
+    "text": "Downtown Littleton Historic Preservation Design Guidelines",
+    "file": "data/city_files/Littleton/d7731f_downtownlittletonhistoricp.pdf",
+    "rows": 59,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/building-amp-development/documents-building/historical-preservation/historic-resources/louthanheightshistoricdist.pdf",
+    "text": "Louthan Heights Historic District Design Guidelines (PDF, 6MB)",
+    "file": "data/city_files/Littleton/cfb68b_louthanheightshistoricdist.pdf",
+    "rows": 58,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/building-amp-development/documents-building/historical-preservation/historic-resources/window-submittal-requirements-for-web.pdf",
+    "text": "(PDF, 83KB)",
+    "file": "data/city_files/Littleton/e0e86b_window-submittal-requirements-for-web.pdf",
+    "rows": 28,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/building-amp-development/documents-building/historical-preservation/historic-resources/guidelines-for-replacement-of-historic-windows-for-web.pdf",
+    "text": "Window Design Guidelines (PDF, 234KB)",
+    "file": "data/city_files/Littleton/d3f6d8_guidelines-for-replacement-of-historic-windows-for-web.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/v/1/building-amp-development/documents-building/historical-preservation/historic-resources/window-replacement-schematic.pdf",
+    "text": "Window Replacement Schematic (PDF, 139KB)",
+    "file": "data/city_files/Littleton/4a0bcb_window-replacement-schematic.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/building-amp-development/documents-building/historical-preservation/historic-resources/littleton-blvd-hist-bldg-surveys-2018/s-bannock-st/5666-s-bannock-st.pdf",
+    "text": "5666-S-Bannock-St (2018) (PDF, 15MB)",
+    "file": "data/city_files/Littleton/833786_5666-s-bannock-st.pdf",
+    "rows": 22,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/building-amp-development/documents-building/historical-preservation/historic-resources/downtown-hist-bldg-surveys-1997/berry-ave/2100-w-berry-ave.pdf",
+    "text": "2100 W BERRY AVE (PDF, 1MB)",
+    "file": "data/city_files/Littleton/8c55f5_2100-w-berry-ave.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/building-amp-development/documents-building/historical-preservation/historic-resources/downtown-hist-bldg-surveys-1997/berry-ave/2200-w-berry-ave.pdf",
+    "text": "2200 W BERRY AVE (PDF, 1MB)",
+    "file": "data/city_files/Littleton/19a463_2200-w-berry-ave.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/building-amp-development/documents-building/historical-preservation/historic-resources/downtown-hist-bldg-surveys-1997/berry-ave/2255-w-berry-ave.pdf",
+    "text": "2255 W BERRY AVE (PDF, 2MB)",
+    "file": "data/city_files/Littleton/0c1c86_2255-w-berry-ave.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/building-amp-development/documents-building/historical-preservation/historic-resources/downtown-hist-bldg-surveys-1997/berry-ave/2305-w-berry-ave.pdf",
+    "text": "2305 W BERRY AVE (PDF, 2MB)",
+    "file": "data/city_files/Littleton/565b75_2305-w-berry-ave.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/building-amp-development/documents-building/historical-preservation/historic-resources/downtown-hist-bldg-surveys-1997/berry-ave/2306-16-w-berry-ave.pdf",
+    "text": "2306-16 W BERRY AVE (PDF, 1MB)",
+    "file": "data/city_files/Littleton/a6a4f1_2306-16-w-berry-ave.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/building-amp-development/documents-building/historical-preservation/historic-resources/downtown-hist-bldg-surveys-1997/berry-ave/2356-w-berry-ave.pdf",
+    "text": "2356 W BERRY AVE (PDF, 1MB)",
+    "file": "data/city_files/Littleton/980c7e_2356-w-berry-ave.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/building-amp-development/documents-building/historical-preservation/historic-resources/downtown-hist-bldg-surveys-1997/bowles-ave/2700-w-bowles-ave.pdf",
+    "text": "2700 W BOWLES AVE. (PDF, 1MB)",
+    "file": "data/city_files/Littleton/139810_2700-w-bowles-ave.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/building-amp-development/documents-building/historical-preservation/historic-resources/littleton-blvd-hist-bldg-surveys-2018/s-broadway/5601-s-broadway.pdf",
+    "text": "5601-S-Broadway (2018) (PDF, 6MB)",
+    "file": "data/city_files/Littleton/13f0b3_5601-s-broadway.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.littletonco.gov/files/sharedassets/public/building-amp-development/documents-building/historical-preservation/historic-resources/5622-s-cedar-st-historic-survey-2000-01.pdf",
+    "text": "5622-S-Cedar-St-Historic-Survey (2000-2001) (PDF, 1MB)",
+    "file": "data/city_files/Littleton/63aad4_5622-s-cedar-st-historic-survey-2000-01.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://littleton.maps.arcgis.com/apps/opsdashboard/index.html": "Capital Projects Dashboard",
+   "https://experience.arcgis.com/experience/08a8dba905464d2a96889e6d4895cc0d": "Special District Look Up Map",
+   "https://littleton.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=d37ced8fed234a3bb99fb499d9f92032": "Historic Districts",
+   "https://storymaps.arcgis.com/stories/88f9c096e8ef49d49a3e75ea04416310": "Historic Walking Tour",
+   "https://littleton.maps.arcgis.com/apps/instant/lookup/index.html?appid=6b4ade949ee44f6bb4d4fa807edec48f": "City of Littleton Neighborhoods",
+   "https://littleton.maps.arcgis.com/apps/dashboards/a374ad7fd58443e0ab7dac7bb516729b": "Capital Projects Dashboard",
+   "https://experience.arcgis.com/experience/975f955d763d49b8ac52ee56d5c5b11e": "Development Activity (DAL) Map",
+   "https://littleton.maps.arcgis.com/apps/MapSeries/index.html?appid=d18fc25cdc2e4b5c884daf51768aa568&entry=5": "Transportation - Omnibus (appointment only)",
+   "https://data-littleton.opendata.arcgis.com/": "GIS Open Data Portal",
+   "https://littleton.maps.arcgis.com/apps/instant/lookup/index.html?appid=0d5e2f1a5db3461985f66f66c6e95b7c": "Parking Permit Look Up and Map",
+   "https://projectparking-consorllc.hub.arcgis.com": "Learn more about Project PARKing",
+   "https://survey123.arcgis.com/share/f6b811bd5e1446e59612c2683fcef7be": "Submit a concern",
+   "https://littleton.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=627bda1a1075496ab48e955ad3bb03b5": "Open this map in a new window.",
+   "https://storymaps.arcgis.com/stories/b17ec681f26e4d60b98e4e6ed0f55b44": "Explore the Ketring-Gallup Park Story Map",
+   "https://littleton.maps.arcgis.com/apps/dashboards/b7061ad65b5f4fbc946b240ebd6d5247": "available here",
+   "https://littleton.maps.arcgis.com/apps/instant/lookup/index.html?appid=2c13e6ec1f4e4388ad51ad5fb14ce48e": "(View the address wizard in a new window)",
+   "https://littleton.maps.arcgis.com/apps/instant/lookup/index.html?appid=e838a33d4acf4dbabd125590f62b760c": "City of Littleton Floodplain Map",
+   "https://littleton.maps.arcgis.com/apps/dashboards/74218774b85f434e90ab40bfc452494a": "Open map in new tab",
+   "https://experience.arcgis.com/experience/2f5d52830cf648e0aaf420f26eaaab57/page/About/?views=Safety": "View an interactive presentation of the project",
+   "https://littleton.maps.arcgis.com/apps/instant/lookup/index.html?appid=b92c52acd4ab4ef8b5099e6e154d96e9": "Open the map in a new page",
+   "https://storymaps.arcgis.com/stories/9fc6e43dd592455bbd3ffba496465e9c": "",
+   "https://littleton.maps.arcgis.com/apps/dashboards/8c07952fbe944b0f9cbe89a22cada880": "View the map in a new window",
+   "https://storymaps.arcgis.com/collections/76330f0e905445caaa4cedfdcecad5a6": "Visit the interactive Root & Renew page",
+   "https://waterdata.usgs.gov/co/nwis/uv?site_no=06709740": "Lee Gulch at S Prince Street",
+   "https://littleton.maps.arcgis.com/apps/instant/lookup/index.html?appid=7f9edbc784ea4f988431585b67823d42": "Sewer, Water, and Storm District Map",
+   "https://littleton.maps.arcgis.com/apps/instant/lookup/index.html?appid=656d2f6728c545aa8da20aa68a9c21ae": "View the Littleton ZIP Code map",
+   "https://survey123.arcgis.com/share/e590ef19660245ff8e3fe501626a00a6": "linked here",
+   "https://survey123.arcgis.com/share/e590ef19660245ff8e3fe501626a00a6?locale=es-mx": "Versión en español",
+   "https://littleton.maps.arcgis.com/apps/instant/slider/index.html?appid=cde94b2187d149fd952795780abf283c": "View the past street projects map",
+   "https://littleton.maps.arcgis.com/apps/instant/nearby/index.html?appid=2592f5c5af0c40cc9ecec050d8dc2cdf": "View the Downtown Littleton parking map in a new window"
+  }
+ },
+ "Kiraz district": {
+  "files": [],
+  "portals": {}
+ },
+ "Shoranur Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Lincoln Park": {
+  "files": [],
+  "portals": {}
+ },
+ "La Vergne": {
+  "files": [],
+  "portals": {}
+ },
+ "Pleasant Grove": {
+  "files": [
+   {
+    "url": "https://www.pgcityutah.gov/Documents/Community/neighborhood-map.pdf",
+    "text": "Neighborhood Map",
+    "file": "data/city_files/Pleasant_Grove/5643d4_neighborhood-map.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/b4536f0b901a41d3bedba1b694918618": "Downtown Master Plan Story-Map"
+  }
+ },
+ "Yorktown": {
+  "files": [
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/fbrksmz0/nynjtc_yorktownsylvanglenmap-2024.pdf",
+    "text": "NYNJTC Sylvan Glen Trails Map",
+    "file": "data/city_files/Yorktown/72bb3c_nynjtc_yorktownsylvanglenmap-2024.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/j3tl1sz0/northsouth_1352ab8d-8129-49d3-b82b-09c86b2ccc21.pdf",
+    "text": "North & South County Trailways Map",
+    "file": "data/city_files/Yorktown/b42db4_northsouth_1352ab8d-8129-49d3-b82b-09c86b2ccc21.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/4irha3wf/putnam-trailway-brochure.pdf",
+    "text": "Putnam Trailway Brochure",
+    "file": "data/city_files/Yorktown/59d940_putnam-trailway-brochure.pdf",
+    "rows": 8,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/0tlot345/4813.pdf",
+    "text": "View Section 48.13",
+    "file": "data/city_files/Yorktown/92ac54_4813.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/sbmj35ee/officialzoningmap-revnov2018.pdf",
+    "text": "Official Yorktown Zoning Map",
+    "file": "data/city_files/Yorktown/e03c6f_officialzoningmap-revnov2018.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/ew0a31vn/recycle-a-to-z-guide.pdf",
+    "text": "Download Full PDF A To Z Guide for Recycling",
+    "file": "data/city_files/Yorktown/2b8c5a_recycle-a-to-z-guide.pdf",
+    "rows": 103,
+    "bike_rows": 37
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/mzsjkmuh/mv6641.pdf",
+    "text": "Instructions & Parking Permit Application",
+    "file": "data/city_files/Yorktown/d005f6_mv6641.pdf",
+    "rows": 12,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/czobwn1t/13-08-granite-knolls-parking-lot-final_for-ms4-permit-parking-lot-plan.pdf",
+    "text": "PARKING LOT PLAN",
+    "file": "data/city_files/Yorktown/c0f9a1_13-08-granite-knolls-parking-lot-final_for-ms4-permit-parking-lot-plan",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/vjfjh2nn/granite-knolls-parking-eaf_signed_rev-by-jr.pdf",
+    "text": "EAF",
+    "file": "data/city_files/Yorktown/1c158e_granite-knolls-parking-eaf_signed_rev-by-jr.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yorktownny.gov/media/0tlot345/4813.pdf",
+    "text": "Download Section 48.13",
+    "file": "data/city_files/Yorktown/d9c554_4813.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.yorktownny.gov/media/czjfn2ky/march_20_2018_shpo_clg_grant_application.pdf",
+    "text": "Download 2018 - Approval CLG Grant Application for Historic Preservation Symposium",
+    "file": "data/city_files/Yorktown/12b3e8_march_20_2018_shpo_clg_grant_application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/czjfn2ky/march_20_2018_shpo_clg_grant_application.pdf",
+    "text": "View 2018 - Approval CLG Grant Application for Historic Preservation Symposium",
+    "file": "data/city_files/Yorktown/cdfde0_march_20_2018_shpo_clg_grant_application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yorktownny.gov/media/axodrm5i/approval-for-new-construction-of-a-carriage-house-style-garage-08102016.pdf",
+    "text": "Download 2016 - Approval for New Construction of a Carriage House Style Garage",
+    "file": "data/city_files/Yorktown/620312_approval-for-new-construction-of-a-carriage-house-style-garage-0810201",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/axodrm5i/approval-for-new-construction-of-a-carriage-house-style-garage-08102016.pdf",
+    "text": "View 2016 - Approval for New Construction of a Carriage House Style Garage",
+    "file": "data/city_files/Yorktown/ea192d_approval-for-new-construction-of-a-carriage-house-style-garage-0810201",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yorktownny.gov/media/sojo3f0m/town_of_yorktown_-_clg_grant_9-24-18.pdf",
+    "text": "Download FFY18 Historic Preservation Fund (HPF) Sub-Grant/Certified Local Government (CLG) Award",
+    "file": "data/city_files/Yorktown/95519e_town_of_yorktown_-_clg_grant_9-24-18.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/sojo3f0m/town_of_yorktown_-_clg_grant_9-24-18.pdf",
+    "text": "View FFY18 Historic Preservation Fund (HPF) Sub-Grant/Certified Local Government (CLG) Award",
+    "file": "data/city_files/Yorktown/884bb9_town_of_yorktown_-_clg_grant_9-24-18.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yorktownny.gov/media/2hfjqeqh/shipman_house_coa_08_10_2016.pdf",
+    "text": "Download Approval for New Construction of a Carriage House Style Garage",
+    "file": "data/city_files/Yorktown/9c1a9f_shipman_house_coa_08_10_2016.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/yorktownny-us/media/2hfjqeqh/shipman_house_coa_08_10_2016.pdf",
+    "text": "View Approval for New Construction of a Carriage House Style Garage",
+    "file": "data/city_files/Yorktown/063561_shipman_house_coa_08_10_2016.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://yorktown.maps.arcgis.com/apps/mapviewer/index.html?webmap=5d72917026af491e9c6b26141623d6f6": "Utilities Map",
+   "https://survey123.arcgis.com/share/aa26e9e08511403dbcf083166b71ca46": "Applications are available using this link",
+   "https://experience.arcgis.com/experience/853e5d44e912451aa56c1a896b1e0d3b": "Yorktown Tax Parcel Viewer",
+   "https://experience.arcgis.com/experience/5bcdbbef6c264770b88015872954f22f/": "Westchester Waterways Municipal Mapper"
+  }
+ },
+ "Mount Vernon": {
+  "files": [
+   {
+    "url": "https://static1.squarespace.com/static/56d683620442629982c6e59d/t/621ff3a4433a612cb1dd23d2/1646261159570/little-mountain-trails-map-220301.pdf",
+    "text": "Little Mountain Park Trails",
+    "file": "data/city_files/Mount_Vernon/8b6140_little-mountain-trails-map-220301.pdf",
+    "rows": 40,
+    "bike_rows": 35
+   },
+   {
+    "url": "https://www.scog.net/ActiveTransportationMaps/SkagitCountyWalkingTrailGuide-2021.pdf",
+    "text": "Skagit County Walking Trail Guide (Courtesy of Skagit Council of Governments)",
+    "file": "data/city_files/Mount_Vernon/457cb8_SkagitCountyWalkingTrailGuide-2021.pdf",
+    "rows": 11,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.scog.net/ActiveTransportationMaps/SkagitCountyBikeMap-2018-09-07.pdf",
+    "text": "Skagit County Bike Map (Courtesy of Skagit Council of Governments)",
+    "file": "data/city_files/Mount_Vernon/eee494_SkagitCountyBikeMap-2018-09-07.pdf",
+    "rows": 12,
+    "bike_rows": 6
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/1c29ea9cfad6483faa21545363c9efa1": "Click here to view our NEW Mount Vernon Trails Interactive Map!",
+   "http://data-wadnr.opendata.arcgis.com/": "Visit",
+   "https://data.census.gov/profile/Mount_Vernon_city,_Washington?g=160XX00US5347560": "Visit",
+   "https://data-wdfw.opendata.arcgis.com/search?collection=App%2CMap": "Visit",
+   "http://wa-geoservices.maps.arcgis.com/home/index.html": "Visit",
+   "https://gis-fema.hub.arcgis.com/apps/062a16826e1a450882322fffcf618e85/explore": "Open Full USGS Dashboard",
+   "https://gis.ecology.wa.gov/portal/apps/webappviewer/index.html?id=7779e901b22340f8892c8dcb1181a677": "Open Full Flood Hazard Areas Map"
+  }
+ },
+ "Fuquay-Varina": {
+  "files": [],
+  "portals": {
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ead47b770049477b949fc3efdf1f43f9": "FVGIS Web Map",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=a2cc53fd66944f7594d561c14b95b051": "",
+   "https://data-tofv.opendata.arcgis.com/": "",
+   "http://data-wake.opendata.arcgis.com/": "Wake County's Open Data site",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555": "",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2056620.8195%2C673075.8175%2C2061147.8944%2C675190.8103%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2064365.6826%2C670331.2784%2C2070199.9062%2C673056.9547%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2059069.5656%2C669995.6181%2C2064551.8037%2C672687.4827%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2048346.7475%2C681785.2874%2C2065306.7071%2C686952.7751%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2075971.4307%2C664755.2425%2C2081091.2783%2C666315.1961%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2072585.9273%2C683802.2051%2C2079292.4705%2C685963.4934%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2060946.9035%2C682114.8873%2C2070174.4949%2C685088.6228%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2065990.8834%2C665203.2154%2C2078806.544%2C669333.2622%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2076185.0886%2C678377.0377%2C2087411.7319%2C683621.9852%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2059126.8789%2C666073.1789%2C2081580.1655%2C677071.0661%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2065875.5888%2C670907.3362%2C2071624.0379%2C672759.8637%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2054074.6095%2C660859.7561%2C2062852.5821%2C663688.5949%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2055685.3486%2C668995.6002%2C2061655.6646%2C670919.6278%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2070465.8957%2C669266.4212%2C2076568.9721%2C671233.2329%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2063849.3616%2C662195.2883%2C2109053.4168%2C676763.0014%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2053459.3823%2C664595.6407%2C2069528.3705%2C672102.8711%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2064122.3226%2C666272.7322%2C2069604.5608%2C668964.5968%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2053403.4282%2C678246.3455%2C2058472.7229%2C679790.8962%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2053430.1739%2C665414.656%2C2065708.1708%2C669155.6082%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2026016.5658%2C670645.7965%2C2126142.0317%2C701152.7744%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2062211.9882%2C664358.3142%2C2081472.8119%2C670226.8465%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2054946.2826%2C681283.6103%2C2060136.5504%2C682865.02%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2030873.5089%2C669078.1723%2C2127543.1245%2C698532.1958%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2053774.6741%2C657437.0025%2C2096098.8567%2C670332.6519%2C102719": "Map Link",
+   "https://gis.fuquay-varina.org/portal/apps/webappviewer/index.html?id=ed9c8e2efb944a91baff68ef974f7555&extent=2061557.4809%2C668939.0135%2C2092650.1115%2C678412.5494%2C102719": "Map Link"
+  }
+ },
+ "Villarino Partido": {
+  "files": [],
+  "portals": {}
+ },
+ "Bangor": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/174c9cb9d4644d67883101b8743b94a9": "Parcel Viewer",
+   "https://bangor.maps.arcgis.com/apps/webappviewer/index.html?id=976ad260881f4c7eb3a46ebd17ccb028": "Bangor School System Map",
+   "https://bangor.maps.arcgis.com/home/webmap/viewer.html?webmap=bebcb0631684448c9c60255660ead07d": "Sharps Collection Boxes - Public Map",
+   "https://bangor.maps.arcgis.com/apps/webappviewer/index.html?id=ccde84e2d89243bb95b8576ae25b124b": "Park Locator",
+   "https://experience.arcgis.com/experience/4818b56f524f45d3bf6e5d0dce810610": "Stormwater Billing App",
+   "https://bangor.maps.arcgis.com/apps/webappviewer/index.html?id=448fbe053229446a8a3950fb083c3e57": "Bangor, ME Trash and Recycling Services Map",
+   "https://bangor.maps.arcgis.com/apps/dashboards/05bb8c0586ef45ed810ab55cf1b96d85": "311 Dashboard",
+   "https://storymaps.arcgis.com/stories/8d25fbd1888d43af937b1a15171e83af": "Tree Inventory"
+  }
+ },
+ "Zionsville": {
+  "files": [],
+  "portals": {}
+ },
+ "Kalpetta Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Jamestown": {
+  "files": [
+   {
+    "url": "http://www.jamestownny.net/wp-content/uploads/2019/07/river_walk_map.pdf",
+    "text": "",
+    "file": "data/city_files/Jamestown/577332_river_walk_map.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {}
+ }
+}
