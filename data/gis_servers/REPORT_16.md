@@ -1,24 +1,29 @@
 # GIS servers, shard 16/20
 
-Sites: 35 · layers: 18 · points: 1024
+Sites: 105 · layers: 23 · points: 2423
 
 | Place | Layer | Category | Points | URL |
 |---|---|---|---|---|
+| Des Moines IA | BicycleParking | racks | 551 | https://maps.dsm.city/p2/rest/services/External/EXTDynamicBicycleParking/MapServer/0 |
 | region:sandag.org | Bike_Lockers | locker | 71 | https://geo.sandag.org/server/rest/services/Bike_Lockers/FeatureServer/0 |
 | region:sandag.org | Bike_Lockers | locker | 71 | https://geo.sandag.org/server/rest/services/Bike_Lockers/MapServer/0 |
-| Madison WI | Bike Share | share | 109 | https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/1 |
-| Madison WI | Bike Box | racks | 23 | https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/3 |
-| Madison WI | Bike Elevator at Monona Terrace  | racks | 1 | https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/5 |
-| Madison WI | Bike Repair Station | repair | 75 | https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/6 |
-| Madison WI | Bike Share | share | 109 | https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/1 |
-| Madison WI | Bike Box | racks | 23 | https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/3 |
-| Madison WI | Bike Elevator at Monona Terrace  | racks | 1 | https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/5 |
-| Madison WI | Bike Repair Station | repair | 75 | https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/6 |
-| Madison WI | Bike Elevator | racks | 1 | https://maps.cityofmadison.com/arcgis/rest/services/MPO/Bike_LTS_Network_Map/MapServer/1 |
-| Madison WI | Bike Elevator at Monona Terrace  | racks | 1 | https://maps.cityofmadison.com/arcgis/rest/services/MPO/Ped_Facilities/MapServer/8 |
-| Madison WI | Bicycle Roundabout | racks | 1 | https://maps.cityofmadison.com/arcgis/rest/services/MPO/Story_Bike_Trails/MapServer/21 |
-| Madison WI | Bike Share | share | 109 | https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/2 |
-| Madison WI | Bike Box | racks | 23 | https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/3 |
-| Dutchess County | BikeParking | racks | 204 | https://gis.dutchessny.gov/server/rest/services/BikeDutchess/MapServer/3 |
-| Greenwood | Bike Racks | racks | 24 | https://greenwoodgis.greenwood.in.gov/arcgis/rest/services/Parks_Department/Bike_Racks/MapServer/0 |
-| St. Petersburg FL | Scooter Share Corrals | scooter | 103 | https://egis.stpete.org/arcgis/rest/services/ServicesTPD/TrafficManagementandData/MapServer/45 |
+| Arlington County | Bike Capital Bikeshare Stations | share | 115 | https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Capital_Bikeshare_Stations_Points/FeatureServer/0 |
+| Arlington County | Bike Capital Bikeshare Stations | share | 115 | https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Capital_Bikeshare_Stations_Points/MapServer/0 |
+| Arlington County | Bike Facilities | racks | 28 | https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Facilities_Points/FeatureServer/0 |
+| Arlington County | Bike Facilities | racks | 28 | https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Facilities_Points/MapServer/0 |
+| Arlington County | Bike Steep Hills | racks | 46 | https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Steep_Hill_Points/FeatureServer/0 |
+| Arlington County | Bike Steep Hills | racks | 46 | https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Steep_Hill_Points/MapServer/0 |
+| Arlington County | Bike Racks - Corrals  | racks | 151 | https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Transportation_Layers/FeatureServer/2 |
+| Arlington County | Bike Racks - Corrals  | racks | 151 | https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Transportation_Layers/MapServer/2 |
+| Arlington County | Corrals | racks | 151 | https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/104 |
+| Arlington County | Capital Bikeshare Locations | share | 115 | https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/15 |
+| Arlington County | Bike Facilities | racks | 28 | https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/16 |
+| Arlington County | Bike Steep Hills | racks | 46 | https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/18 |
+| Arlington County | Corrals | racks | 151 | https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/104 |
+| Arlington County | Capital Bikeshare Locations | share | 115 | https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/17 |
+| Arlington County | Bike Facilities | racks | 28 | https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/18 |
+| Arlington County | Bike Steep Hills | racks | 46 | https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/20 |
+| Clearwater | Bike Racks | racks | 75 | https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/FeatureServer/5 |
+| Clearwater | Bike Racks | racks | 75 | https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/MapServer/5 |
+| Clearwater | PR_Bike_Racks | racks | 110 | https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/FeatureServer/32 |
+| Clearwater | PR_Bike_Racks | racks | 110 | https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/MapServer/32 |

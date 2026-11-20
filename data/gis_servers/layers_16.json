@@ -1,5 +1,12 @@
 [
 {
+"city": "Des Moines IA",
+"url": "https://maps.dsm.city/p2/rest/services/External/EXTDynamicBicycleParking/MapServer/0",
+"name": "BicycleParking",
+"count": 551,
+"cat": "racks"
+},
+{
 "city": "region:sandag.org",
 "url": "https://geo.sandag.org/server/rest/services/Bike_Lockers/FeatureServer/0",
 "name": "Bike_Lockers",
@@ -14,115 +21,143 @@
 "cat": "locker"
 },
 {
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/1",
-"name": "Bike Share",
-"count": 109,
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Capital_Bikeshare_Stations_Points/FeatureServer/0",
+"name": "Bike Capital Bikeshare Stations",
+"count": 115,
 "cat": "share"
 },
 {
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/3",
-"name": "Bike Box",
-"count": 23,
-"cat": "racks"
-},
-{
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/5",
-"name": "Bike Elevator at Monona Terrace ",
-"count": 1,
-"cat": "racks"
-},
-{
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/6",
-"name": "Bike Repair Station",
-"count": 75,
-"cat": "repair"
-},
-{
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/1",
-"name": "Bike Share",
-"count": 109,
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Capital_Bikeshare_Stations_Points/MapServer/0",
+"name": "Bike Capital Bikeshare Stations",
+"count": 115,
 "cat": "share"
 },
 {
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/3",
-"name": "Bike Box",
-"count": 23,
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Facilities_Points/FeatureServer/0",
+"name": "Bike Facilities",
+"count": 28,
 "cat": "racks"
 },
 {
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/5",
-"name": "Bike Elevator at Monona Terrace ",
-"count": 1,
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Facilities_Points/MapServer/0",
+"name": "Bike Facilities",
+"count": 28,
 "cat": "racks"
 },
 {
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap/MapServer/6",
-"name": "Bike Repair Station",
-"count": 75,
-"cat": "repair"
-},
-{
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Bike_LTS_Network_Map/MapServer/1",
-"name": "Bike Elevator",
-"count": 1,
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Steep_Hill_Points/FeatureServer/0",
+"name": "Bike Steep Hills",
+"count": 46,
 "cat": "racks"
 },
 {
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Ped_Facilities/MapServer/8",
-"name": "Bike Elevator at Monona Terrace ",
-"count": 1,
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Bike_Steep_Hill_Points/MapServer/0",
+"name": "Bike Steep Hills",
+"count": 46,
 "cat": "racks"
 },
 {
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/MPO/Story_Bike_Trails/MapServer/21",
-"name": "Bicycle Roundabout",
-"count": 1,
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Transportation_Layers/FeatureServer/2",
+"name": "Bike Racks - Corrals ",
+"count": 151,
 "cat": "racks"
 },
 {
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/2",
-"name": "Bike Share",
-"count": 109,
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_Transportation_Layers/MapServer/2",
+"name": "Bike Racks - Corrals ",
+"count": 151,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/104",
+"name": "Corrals",
+"count": 151,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/15",
+"name": "Capital Bikeshare Locations",
+"count": 115,
 "cat": "share"
 },
 {
-"city": "Madison WI",
-"url": "https://maps.cityofmadison.com/arcgis/rest/services/Web/WEB_BIKING_LAYERS/MapServer/3",
-"name": "Bike Box",
-"count": 23,
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/16",
+"name": "Bike Facilities",
+"count": 28,
 "cat": "racks"
 },
 {
-"city": "Dutchess County",
-"url": "https://gis.dutchessny.gov/server/rest/services/BikeDutchess/MapServer/3",
-"name": "BikeParking",
-"count": 204,
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/Public_Maps/gctx_transportation/MapServer/18",
+"name": "Bike Steep Hills",
+"count": 46,
 "cat": "racks"
 },
 {
-"city": "Greenwood",
-"url": "https://greenwoodgis.greenwood.in.gov/arcgis/rest/services/Parks_Department/Bike_Racks/MapServer/0",
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/104",
+"name": "Corrals",
+"count": 151,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/17",
+"name": "Capital Bikeshare Locations",
+"count": 115,
+"cat": "share"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/18",
+"name": "Bike Facilities",
+"count": 28,
+"cat": "racks"
+},
+{
+"city": "Arlington County",
+"url": "https://arlgis.arlingtonva.us/arcgis/rest/services/StaffMap/Transportation_Map/MapServer/20",
+"name": "Bike Steep Hills",
+"count": 46,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/FeatureServer/5",
 "name": "Bike Racks",
-"count": 24,
+"count": 75,
 "cat": "racks"
 },
 {
-"city": "St. Petersburg FL",
-"url": "https://egis.stpete.org/arcgis/rest/services/ServicesTPD/TrafficManagementandData/MapServer/45",
-"name": "Scooter Share Corrals",
-"count": 103,
-"cat": "scooter"
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PR_Amenities_Inventory/MapServer/5",
+"name": "Bike Racks",
+"count": 75,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/FeatureServer/32",
+"name": "PR_Bike_Racks",
+"count": 110,
+"cat": "racks"
+},
+{
+"city": "Clearwater",
+"url": "https://gis.myclearwater.com/arcgis/rest/services/Parks_Recreation/PRFeaturesInventory/MapServer/32",
+"name": "PR_Bike_Racks",
+"count": 110,
+"cat": "racks"
 }
 ]
