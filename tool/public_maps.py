@@ -47,8 +47,19 @@ def arcgis(s):
 
 
 def mymaps(s):
-    r = requests.get('https://www.google.com/maps/d/kml', params={'mid': s['mid'], 'forcekml': 1}, headers=UA, timeout=120)
-    root = ET.fromstring(r.content)
+    import io, zipfile
+    data = b''
+    for url in ('https://www.google.com/maps/d/kml', 'https://www.google.com/maps/d/u/0/kml'):
+        r = requests.get(url, params={'mid': s['mid'], 'forcekml': 1}, headers=UA, timeout=120,
+                         cookies={'CONSENT': 'YES+cb'})
+        data = r.content
+        if data[:2] == b'PK':
+            z = zipfile.ZipFile(io.BytesIO(data))
+            data = z.read([n for n in z.namelist() if n.endswith('.kml')][0])
+        if data.lstrip()[:5] in (b'<?xml', b'<kml ') or b'<kml' in data[:300]:
+            break
+        print('mymaps', url, r.status_code, r.headers.get('content-type'), data[:120])
+    root = ET.fromstring(data)
     ns = {'k': 'http://www.opengis.net/kml/2.2'}
     out = []
     for i, pm in enumerate(root.iter('{http://www.opengis.net/kml/2.2}Placemark')):
