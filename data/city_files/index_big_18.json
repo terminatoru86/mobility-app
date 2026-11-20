@@ -1,0 +1,1254 @@
+{
+ "Virginia Beach VA": {
+  "files": [],
+  "portals": {}
+ },
+ "Fremont CA": {
+  "files": [],
+  "portals": {}
+ },
+ "Los Angeles": {
+  "files": [],
+  "portals": {}
+ },
+ "Allegheny County": {
+  "files": [
+   {
+    "url": "https://www.alleghenycounty.us/files/assets/county/v/1/parks/round-hill-park/round-hill-farm-map.pdf",
+    "text": "Farm Map (PDF, 12MB)",
+    "file": "data/city_files/Allegheny_County/aac49e_round-hill-farm-map.pdf",
+    "rows": 24,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.alleghenycounty.us/files/assets/county/v/1/parks/score-map.pdf",
+    "text": "Map and Scorecard (PDF, 119KB)",
+    "file": "data/city_files/Allegheny_County/40d86a_score-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alleghenycounty.us/files/assets/county/v/1/parks/activities/hartwood-orienteering-beginner-course-map.pdf",
+    "text": "Beginner Map (PDF, 382KB)",
+    "file": "data/city_files/Allegheny_County/576cd8_hartwood-orienteering-beginner-course-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alleghenycounty.us/files/assets/county/v/1/parks/activities/hartwood-orienteering-intermediate-course-map.pdf",
+    "text": "Intermediate Map (PDF, 383KB)",
+    "file": "data/city_files/Allegheny_County/36cebc_hartwood-orienteering-intermediate-course-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alleghenycounty.us/files/assets/county/v/1/parks/boyce-park-ski-map1.pdf",
+    "text": "Boyce Park Slopes Map (PDF, 2MB)",
+    "file": "data/city_files/Allegheny_County/7a67d7_boyce-park-ski-map1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alleghenycounty.us/files/assets/county/v/1/government/health/documents/housing-and-community/lead/priority-lead-risk-factor-and-elevated-bll-areas-by-ct-map.pdf",
+    "text": "Allegheny County Priority Lead Risk Factor and Elevated Blood Lead Level Areas by Census Tract (Map) (PDF, 972KB)",
+    "file": "data/city_files/Allegheny_County/a2a226_priority-lead-risk-factor-and-elevated-bll-areas-by-ct-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alleghenycounty.us/files/assets/county/v/1/parks/documents/policies/bbbrules.pdf",
+    "text": "Bikes, Blades, and Boards (PDF, 17KB)",
+    "file": "data/city_files/Allegheny_County/57a6de_bbbrules.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alleghenycounty.us/files/assets/county/v/2/parks/hartwood-acres-park/sculptures/sculpture-garden-flyer.pdf",
+    "text": "Sculpture Garden Map (PDF, 7MB)",
+    "file": "data/city_files/Allegheny_County/bca25d_sculpture-garden-flyer.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alleghenycounty.us/files/assets/county/v/1/parks/north-park/north-park-map.pdf",
+    "text": "Current North Park Map (PDF, 2MB)",
+    "file": "data/city_files/Allegheny_County/fed9cc_north-park-map.pdf",
+    "rows": 18,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.alleghenycounty.us/files/assets/county/v/1/parks/north-park/latodami/5-historic-structures-to-visit-in-north-park.pdf",
+    "text": "Historic Structures to Visit in North Park (PDF, 215KB)",
+    "file": "data/city_files/Allegheny_County/1f5e00_5-historic-structures-to-visit-in-north-park.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://otbbicyclecafe.com/northpark/wp-content/uploads/sites/2/2019/11/OTB-Application.pdf",
+    "text": "apply now",
+    "file": "data/city_files/Allegheny_County/84798e_OTB-Application.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://olivermillerhomestead.org/wp-content/uploads/2015/08/MAP-WITH-WORDS.pdf",
+    "text": "View map of the homestead",
+    "file": "data/city_files/Allegheny_County/df08b4_MAP-WITH-WORDS.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alleghenycounty.us/files/assets/county/v/1/parks/documents/master-plan/appendix-c.pdf",
+    "text": "Appendix C – Trail Development Standards (PDF, 73KB)",
+    "file": "data/city_files/Allegheny_County/60f1f8_appendix-c.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://data.wprdc.org/dataset/?organization=allegheny-county&groups=health&tags=health": "Western Pennsylvania Regional Data Center.",
+   "https://experience.arcgis.com/experience/905cd98d8cbf477d99c191fb88ce0411/page/ROADS/": "Who Owns My Road",
+   "https://experience.arcgis.com/experience/905cd98d8cbf477d99c191fb88ce0411/page/SNOW-REMOVAL/": "Who Plows My Road? Find out which entity is responsible for removing snow and ice from a specific road or highway. Learn",
+   "https://gis.penndot.pa.gov/paprojects/bridge-conditions-map": "interactive statewide map",
+   "https://experience.arcgis.com/experience/685285b63f42477f90fc1a92e7f01dc8": "Use Parks Trails Web Tool",
+   "https://alcogis.maps.arcgis.com/apps/webappviewer/index.html?id=3e9cdac38a89433d93dfa8e8f893d342": "Use Park Shelters Web Tool",
+   "https://experience.arcgis.com/experience/8611b2067a5d45548244b052466a4e3d": "view the full-size dog park map",
+   "https://experience.arcgis.com/experience/ff9d4143ea2c44a89f97726bc93a96b0/page/Home/?views=Breast%2CBreast-by-Sex%2CLung-Cancer%2CSex-and-Race": "Cancer",
+   "https://experience.arcgis.com/experience/433a26b5842a4f5186e980aa416ce4f3/page/Home": "Climate Resilience",
+   "https://storymaps.arcgis.com/stories/e288d24de20c4dfd9e96188825491309": "View the above Story Map on the ARCGIS website",
+   "https://experience.arcgis.com/experience/8212d78633144225bb716d001b5be4e2/": "Apply for Roadway Adoption",
+   "https://survey123.arcgis.com/share/d877dcf0cff647deb4358617f4e07417": "Register Cleanup Event"
+  }
+ },
+ "Baltimore County": {
+  "files": [],
+  "portals": {}
+ },
+ "Bucks County": {
+  "files": [
+   {
+    "url": "https://www.habitatbucks.org/wp-content/uploads/2026/09/2026HomeRepair.pdf",
+    "text": "DOWNLOAD THE BROCHURE",
+    "file": "data/city_files/Bucks_County/fd56b4_2026HomeRepair.pdf",
+    "rows": 8,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://www.legis.state.pa.us/cfdocs/Legis/LI/uconsCheck.cfm?txtType=HTM&yr=2019&sessInd=0&smthLwInd=0&act=0077.": "Act 77 of 2019",
+   "https://wwww.septa.org/open-data/": "Open Data",
+   "https://experience.arcgis.com/experience/3903ec40f23a455e81594ef96692cec1": "Bucks County Trails Map",
+   "https://experience.arcgis.com/experience/b0a39233726e4df2bccba91bf163099c": "Parcels Meeting Warehouse Model Ordinance Requirements",
+   "https://experience.arcgis.com/experience/d282bc8353834df5a009d98cc6577e2b/": "Bridge Dashboard",
+   "https://storymaps.arcgis.com/stories/31b37e62b5cb496fb2c2c1d89a536afd": "Bucks County's History of Transportation",
+   "https://experience.arcgis.com/experience/7e3bcd4d40d0482991aee275ca9f098b": "Public Transportation Map",
+   "https://experience.arcgis.com/experience/a0d4806a1815469281d81c2f10003046/": "Signalized Intersections Map",
+   "https://bucksgis.maps.arcgis.com/apps/webappviewer/index.html?id=0183163e389144f4b2ed735f1eba9b1b": "Transportation Corridor Studies Map",
+   "https://gis.penndot.gov/paprojects/bridge-conditions-map": "Bridge Conditions Map",
+   "https://gis.penndot.gov/paprojects/construction-map": "PennDOT Construction Map",
+   "https://gis.penndot.gov/paprojects/tip-vis-map": "State Transportation Improvement Program Map"
+  }
+ },
+ "Plymouth County": {
+  "files": [],
+  "portals": {}
+ },
+ "East Baton Rouge Parish": {
+  "files": [],
+  "portals": {}
+ },
+ "Madison County": {
+  "files": [],
+  "portals": {}
+ },
+ "Islip": {
+  "files": [],
+  "portals": {}
+ },
+ "Greene County": {
+  "files": [],
+  "portals": {}
+ },
+ "Washington County": {
+  "files": [
+   {
+    "url": "https://gowashingtonmn.com/wp-content/uploads/2026/04/Newport-Saint-Paul-Park-Informational-Sheet.pdf",
+    "text": "New Circulator Loop in Newport and Saint Paul Park",
+    "file": "data/city_files/Washington_County/7f57fb_Newport-Saint-Paul-Park-Informational-Sheet.pdf",
+    "rows": 16,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://gowashingtonmn.com/wp-content/uploads/2026/07/Forest-Lake-Area-Bus-Loop-Circulator-Map-Schedule-07-22-26.pdf",
+    "text": "Expanded Loop in Forest Lake",
+    "file": "data/city_files/Washington_County/b4fdab_Forest-Lake-Area-Bus-Loop-Circulator-Map-Schedule-07-22-26.pdf",
+    "rows": 26,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/885bbd5269914af9bd044ab0f042350e": "Outdoor Virtual Tour",
+   "https://survey123.arcgis.com/share/?open=web&embed=fullScreen&id=dd113fa8c9cd451aaaab3dc67c27df0a&hide=navbar,footer,theme": "See inquiry form",
+   "https://storymaps.arcgis.com/stories/840423c044814fc9808efee9ab2d3781": "View where donated benches are located in Washington County Parks",
+   "https://storymaps.arcgis.com/stories/97925ef12e7e4481971e7105236cb587": "Online Engagement #3 (External)",
+   "https://storymaps.arcgis.com/stories/df7f9cc9c80a46ce9a0deb72e594c042": "Online Engagement #2 (External)",
+   "https://experience.arcgis.com/experience/002dd328534c4594a5af0de618741a7d/": "Find Transportation Near Me",
+   "https://storymaps.arcgis.com/stories/ebc898aba20e441b8c432a0a0fd69cda": "View Jail Population Data Report",
+   "https://storymaps.arcgis.com/stories/a1fc0382a98a429f8f62d22cb77eaf39": "People and Places",
+   "https://storymaps.arcgis.com/stories/f188632611fd49b6b49482b0fbacdaac": "Environmental Conditions",
+   "https://storymaps.arcgis.com/stories/4ac8598a3a1342128e86d8a636c318be": "Healthcare Capacity and Access",
+   "https://storymaps.arcgis.com/stories/b1f44645918b4ed984e72346d5eb5643": "Infectious Disease",
+   "https://storymaps.arcgis.com/stories/827c278ea3a049a7838dc66a1d81f213": ""
+  }
+ },
+ "Sussex County": {
+  "files": [
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/PDFs/Tax%20Index%20Map.pdf",
+    "text": "Tax Map Index",
+    "file": "data/city_files/Sussex_County/799f6e_Tax_20Index_20Map.pdf",
+    "rows": 68,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/PDFs/2021CountyCouncilDistricts.pdf",
+    "text": "County Council District Map",
+    "file": "data/city_files/Sussex_County/096b59_2021CountyCouncilDistricts.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://deldot.gov/Programs/adopt/aabp/pdfs/aabp_packet.pdf",
+    "text": "Adopt-A-Bike Path application package",
+    "file": "data/city_files/Sussex_County/1a4084_aabp_packet.pdf",
+    "rows": 20,
+    "bike_rows": 11
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-1.00.pdf",
+    "text": "130-1.00.pdf",
+    "file": "data/city_files/Sussex_County/b9f30d_130-1.00.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-1.18.pdf",
+    "text": "130-1.18.pdf",
+    "file": "data/city_files/Sussex_County/7c278e_130-1.18.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-1.19.pdf",
+    "text": "130-1.19.pdf",
+    "file": "data/city_files/Sussex_County/97d341_130-1.19.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-1.20.pdf",
+    "text": "130-1.20.pdf",
+    "file": "data/city_files/Sussex_County/02aae6_130-1.20.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-2.00.pdf",
+    "text": "130-2.00.pdf",
+    "file": "data/city_files/Sussex_County/418255_130-2.00.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-3.00.pdf",
+    "text": "130-3.00.pdf",
+    "file": "data/city_files/Sussex_County/999fbc_130-3.00.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-3.06.pdf",
+    "text": "130-3.06.pdf",
+    "file": "data/city_files/Sussex_County/424ca3_130-3.06.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-3.07.pdf",
+    "text": "130-3.07.pdf",
+    "file": "data/city_files/Sussex_County/7f34bf_130-3.07.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-3.08.pdf",
+    "text": "130-3.08.pdf",
+    "file": "data/city_files/Sussex_County/2586ed_130-3.08.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-3.11.pdf",
+    "text": "130-3.11.pdf",
+    "file": "data/city_files/Sussex_County/f3e1a8_130-3.11.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-3.12.pdf",
+    "text": "130-3.12.pdf",
+    "file": "data/city_files/Sussex_County/f7a1fa_130-3.12.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-3.15.pdf",
+    "text": "130-3.15.pdf",
+    "file": "data/city_files/Sussex_County/7fbff3_130-3.15.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-3.16.pdf",
+    "text": "130-3.16.pdf",
+    "file": "data/city_files/Sussex_County/a1250f_130-3.16.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-3.19.pdf",
+    "text": "130-3.19.pdf",
+    "file": "data/city_files/Sussex_County/ad5089_130-3.19.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-3.20.pdf",
+    "text": "130-3.20.pdf",
+    "file": "data/city_files/Sussex_County/487264_130-3.20.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-4.00.pdf",
+    "text": "130-4.00.pdf",
+    "file": "data/city_files/Sussex_County/298ad0_130-4.00.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-5.00.pdf",
+    "text": "130-5.00.pdf",
+    "file": "data/city_files/Sussex_County/0aa844_130-5.00.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-6.00.pdf",
+    "text": "130-6.00.pdf",
+    "file": "data/city_files/Sussex_County/f5c92e_130-6.00.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-6.07.pdf",
+    "text": "130-6.07.pdf",
+    "file": "data/city_files/Sussex_County/34a017_130-6.07.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-7.00.pdf",
+    "text": "130-7.00.pdf",
+    "file": "data/city_files/Sussex_County/5c0afa_130-7.00.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-8.00.pdf",
+    "text": "130-8.00.pdf",
+    "file": "data/city_files/Sussex_County/9aa0cc_130-8.00.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sussexcountyde.gov/sites/default/files/maps/130-9.00.pdf",
+    "text": "130-9.00.pdf",
+    "file": "data/city_files/Sussex_County/1b8c12_130-9.00.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://deldot.maps.arcgis.com/apps/dashboards/3c1b27de30c64f7e8a2950f4f3f3cc2c": ""
+  }
+ },
+ "Johnston County": {
+  "files": [],
+  "portals": {
+   "https://jocogis.maps.arcgis.com/apps/dashboards/248fb104b0834bcb845e1d74a72c8593": ""
+  }
+ },
+ "Oxnard": {
+  "files": [],
+  "portals": {}
+ },
+ "Sarpy County": {
+  "files": [
+   {
+    "url": "https://sarpy.com/551/How_to_Grantee_Grantor_Search_Historical_Records.pdf",
+    "text": "How to Search Grantee\\Grantor Index",
+    "file": "data/city_files/Sarpy_County/c6a089_How_to_Grantee_Grantor_Search_Historical_Records.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://sarpy.com/551/PLSS Map.pdf",
+    "text": "Click Here For the Sarpy County Public Land Survey System (PLSS) Map in PDF Format",
+    "file": "data/city_files/Sarpy_County/c08c2a_PLSS_Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://gis.sarpy.gov/": "GIS Portal",
+   "https://gis.sarpy.gov/pages/election-maps": "Link to page",
+   "https://gis.sarpy.com/": "Sarpy County Maps"
+  }
+ },
+ "Shawnee County": {
+  "files": [],
+  "portals": {}
+ },
+ "Kenosha County": {
+  "files": [],
+  "portals": {}
+ },
+ "Alexandria": {
+  "files": [
+   {
+    "url": "https://alexandriava.gov/sites/default/files/2022-08/OldTownParkingMap2022Update.pdf",
+    "text": "/media/7179",
+    "file": "data/city_files/Alexandria/f5df49_OldTownParkingMap2022Update.pdf",
+    "rows": 18,
+    "bike_rows": 12
+   },
+   {
+    "url": "https://media.alexandriava.gov/docs-archives/historic/info/archaeology/trailsignedmonsonsisters.pdf",
+    "text": "Alexandria Heritage Trail Sign",
+    "file": "data/city_files/Alexandria/e72ad7_trailsignedmonsonsisters.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.alexandriava.gov/sites/default/files/2023-05/Recycling%20Yes-No-List%20May%202023.pdf",
+    "text": "\"Yes/No List\"",
+    "file": "data/city_files/Alexandria/69ef27_Recycling_20Yes-No-List_20May_202023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alexandriava.gov/sites/default/files/2023-06/Recycling%20Yes-No-List%20May%202023_esES.pdf",
+    "text": "Yes/No List - Spanish",
+    "file": "data/city_files/Alexandria/951fd5_Recycling_20Yes-No-List_20May_202023_esES.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alexandriava.gov/sites/default/files/2023-06/Recycling%20Yes-No-List%20May%202023_amharic.pdf",
+    "text": "Yes/No List - Amharic",
+    "file": "data/city_files/Alexandria/48d562_Recycling_20Yes-No-List_20May_202023_amharic.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://alexandriava.gov/sites/default/files/2026-06/Recycling%20yes%20no_revised%202026.pdf",
+    "text": "\"Yes/No List\"",
+    "file": "data/city_files/Alexandria/1e75b7_Recycling_20yes_20no_revised_202026.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alexandriava.gov/sites/default/files/2026-07/Recycling%20yes%20no_revisedcompression.pdf",
+    "text": "Recycling Yes/No Flyer for Multi-family and Non-Residential Properties",
+    "file": "data/city_files/Alexandria/fc0c66_Recycling_20yes_20no_revisedcompression.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.alexandriava.gov/docs-archives/tes/solidwaste/info/composting-and-grass-cycling-guide.pdf",
+    "text": "Guide to Backyard Composting & Grass-Cycling",
+    "file": "data/city_files/Alexandria/106fdc_composting-and-grass-cycling-guide.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.alexandriava.gov/sites/default/files/2025-09/parking_curbside_management_fy26_work_plan_compress.pdf",
+    "text": "Parking & Curbside Management Annual Work Plan An overview of projects and programs planned for the fiscal year. FY26 Wo",
+    "file": "data/city_files/Alexandria/e3538a_parking_curbside_management_fy26_work_plan_compress.pdf",
+    "rows": 19,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://alexandriava.gov/sites/default/files/2022-06/MotorcoachLoadingParkingMapJune2022.pdf",
+    "text": "Motorcoach Parking and Loading Map",
+    "file": "data/city_files/Alexandria/12a197_MotorcoachLoadingParkingMapJune2022.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://alexandriava.gov/sites/default/files/2025-06/samplepetition_daytimeparkingrestrictions.pdf",
+    "text": "Petition for daytime parking restrictions",
+    "file": "data/city_files/Alexandria/57becf_samplepetition_daytimeparkingrestrictions.pdf",
+    "rows": 31,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://alexandriava.gov/sites/default/files/2025-06/samplepetition_overnightparkingdistrict.pdf",
+    "text": "Petition to Create or Expand an Overnight Parking District",
+    "file": "data/city_files/Alexandria/b7f371_samplepetition_overnightparkingdistrict.pdf",
+    "rows": 37,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://alexandriava.gov/sites/default/files/2023-06/Alexandria_On-Street_Parking_Modification_Request.pdf",
+    "text": "this On-Street Parking Modification Request form",
+    "file": "data/city_files/Alexandria/9064ee_Alexandria_On-Street_Parking_Modification_Request.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/b09cfadc75034b93bbee531a4b3ee18b": "StoryMap",
+   "https://experience.arcgis.com/experience/896cc8e4e4d04558a3ad77b697923105/": "Map An interactive map that highlights current park and amenity area details, recreation center amenities and informatio",
+   "https://storymaps.arcgis.com/stories/7b060d33c39c48dbac4941af787e1d79": "Civil War Hospitals (StoryMap) The Union Army occupied Alexandria throughout the Civil War. View a StoryMap, and visit t"
+  }
+ },
+ "Murfreesboro": {
+  "files": [],
+  "portals": {}
+ },
+ "Randolph County": {
+  "files": [],
+  "portals": {}
+ },
+ "Humboldt County": {
+  "files": [
+   {
+    "url": "https://thegreatredwoodtrail.org/wp-content/uploads/2021/11/Resolution-2025-13-Board-Meeting-Calendar-for-2026.pdf",
+    "text": "Resolution 2026-15",
+    "file": "data/city_files/Humboldt_County/f32cc3_Resolution-2025-13-Board-Meeting-Calendar-for-2026.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://farwestern.maps.arcgis.com/apps/webappviewer/index.html?id=72d8824d78194518aafa3a438f630ae2": "Online Map",
+   "https://storymaps.arcgis.com/stories/1cae810b1c5343a3be14f7649cbac429": "Master Plan",
+   "https://experience.arcgis.com/experience/fc0d507756964ffcaec506c0cd59074f": "",
+   "https://gis.eurekaca.gov/portal/apps/webappviewer/index.html?id=2e6fcd03b57744eab9aa8b334faf0ecb": "City of Eureka GIS",
+   "https://humboldt-cwpp-hcdpwnr.hub.arcgis.com/": "Humboldt County Community Wildfire Protection Plan",
+   "https://caltrans-gis.dot.ca.gov/portal/home/item.html?id=3cea75214f434b01acdc19518c79c15f": "Airports Web Link",
+   "https://caltrans-gis.dot.ca.gov/portal/home/item.html?id=59d0aa68bfef4d6fa97f9e01966cd1dd": "Alternate Bike Routes Web Link",
+   "https://caltrans-gis.dot.ca.gov/portal/home/gallery.html?view=grid&sortOrder=desc&sortField=relevance&searchTerm=Bridge": "Bridges - State and Local Web Link",
+   "https://caltrans-gis.dot.ca.gov/portal/home/item.html?id=003a6d6079e44b4fa918e066ab35b5a5": "Railroad Lines Web Link",
+   "https://caltrans-gis.dot.ca.gov/portal/home/item.html?id=1bd1aee272a14fe496193e7cc43fa3db": "Rest Stops Web Link",
+   "https://gis.data.ca.gov/": "State of California Geoportal, interactive maps",
+   "https://webgis.co.humboldt.ca.us/Supervisor_District_Map/": "Humboldt Supervisorial District Maps (Current on Web GIS interactive map)"
+  }
+ },
+ "Skagit County": {
+  "files": [
+   {
+    "url": "https://media-002-us.cdn.govstack.com/skagitcountywa-002-us/media/nwij5sxl/2026-wm-curbside-guidelines.pdf",
+    "text": "Waste Management - 2026 recycling guidelines for Skagit County (PDF)",
+    "file": "data/city_files/Skagit_County/1a22b1_2026-wm-curbside-guidelines.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/skagitcountywa-002-us/media/3m0lsqg1/recycling-markets-ppt_board-presentation-102924-1.pdf",
+    "text": "Understanding Recycling Markets – Callie’s presentation (PDF)",
+    "file": "data/city_files/Skagit_County/ef79d3_recycling-markets-ppt_board-presentation-102924-1.pdf",
+    "rows": 33,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/skagitcountywa-002-us/media/p4vf5bfm/recycling-presentation-mcr-training-2026.pdf",
+    "text": "Recycling Programs in Skagit County – Callie Martin’s presentation (PDF)",
+    "file": "data/city_files/Skagit_County/8e1d05_recycling-presentation-mcr-training-2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media-002-us.cdn.govstack.com/skagitcountywa-002-us/media/mvcf1llp/e-cycle-flyers-updated-11723-1.pdf",
+    "text": "Household Hazardous Waste handout 2 (PDF)",
+    "file": "data/city_files/Skagit_County/690e6f_e-cycle-flyers-updated-11723-1.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.arcgis.com/home/search.html?q=owner%3Askagitcountygis&restrict=false&start=1&sortOrder=desc&sortField=relevance": "ArcGIS Online Publicly available Skagit County GIS data hosted in ESRI's ArcGIS Online platform",
+   "https://storymaps.arcgis.com/stories/81f7dfd33e204263b2a8cd3014b14ed4": "Washington State Department of Ecology - Waste in Washington StoryMaps report",
+   "https://skagitcog.maps.arcgis.com/apps/webappviewer/index.html?id=c27c3004dd904c9793a4b98fce99b08f&extent=-13699641.5568,6120663.0088,-13498612.1724,6248924.3423,102100": "Map: Skagit Region Traffic Counts",
+   "https://gis.ecology.wa.gov/portal/apps/webappviewer/index.html?id=e32edf4767184fd88e4ce2aa367ffd5c": "Department of Ecology's BEACH map"
+  }
+ },
+ "Faulkner County": {
+  "files": [],
+  "portals": {
+   "https://agio.maps.arcgis.com/apps/webappviewer/index.html?id=8bd86088bb7b4068a69db5f6567a8d0b": "Current District Information by Address"
+  }
+ },
+ "Meridian": {
+  "files": [],
+  "portals": {}
+ },
+ "High Point": {
+  "files": [],
+  "portals": {}
+ },
+ "Warren County": {
+  "files": [],
+  "portals": {}
+ },
+ "Platte County": {
+  "files": [
+   {
+    "url": "https://co.platte.mo.us/media/Department%20Documents/Commission/PRESS%20RELEASE%2003-03-2025.pdf",
+    "text": "Platte County Secures $6.8 Million Federal Grant to Enhance MO Route AA/Waukomis Drive",
+    "file": "data/city_files/Platte_County/e500f0_PRESS_20RELEASE_2003-03-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Woodbridge Township": {
+  "files": [],
+  "portals": {
+   "https://wb-arcgis.twp.woodbridge.nj.us/portal/apps/instant/basic/index.html?appid=1eb8a7d6691d432bba14b27a8d446389": "Township GIS Viewer"
+  }
+ },
+ "Kenosha": {
+  "files": [],
+  "portals": {}
+ },
+ "Bastrop County": {
+  "files": [
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/CityLimit.gdb.zip",
+    "text": "FGDB",
+    "file": "data/city_files/Bastrop_County/e6bad9_CityLimit.gdb.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/CityLimit.zip",
+    "text": "SHP",
+    "file": "data/city_files/Bastrop_County/14a901_CityLimit.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/CityWard.gdb.zip",
+    "text": "FGDB",
+    "file": "data/city_files/Bastrop_County/bc586a_CityWard.gdb.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/CityWard.zip",
+    "text": "SHP",
+    "file": "data/city_files/Bastrop_County/cd07d3_CityWard.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/Precinct.gdb.zip",
+    "text": "FGDB",
+    "file": "data/city_files/Bastrop_County/cc9972_Precinct.gdb.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/Precinct.zip",
+    "text": "SHP",
+    "file": "data/city_files/Bastrop_County/f50a6b_Precinct.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/ElectionPrecinct.gdb.zip",
+    "text": "FGDB",
+    "file": "data/city_files/Bastrop_County/e60a71_ElectionPrecinct.gdb.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/ElectionPrecinct.zip",
+    "text": "SHP",
+    "file": "data/city_files/Bastrop_County/6da5d3_ElectionPrecinct.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/EmergencyServiceDistrict.gdb.zip",
+    "text": "FGDB",
+    "file": "data/city_files/Bastrop_County/99073a_EmergencyServiceDistrict.gdb.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/EmergencyServiceDistrict.zip",
+    "text": "SHP",
+    "file": "data/city_files/Bastrop_County/ac6d28_EmergencyServiceDistrict.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/EmergencyServiceZone.gdb.zip",
+    "text": "FGDB",
+    "file": "data/city_files/Bastrop_County/583123_EmergencyServiceZone.gdb.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/EmergencyServiceZone.zip",
+    "text": "SHP",
+    "file": "data/city_files/Bastrop_County/f32938_EmergencyServiceZone.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/HigherEducationDistrict.gdb.zip",
+    "text": "FGDB",
+    "file": "data/city_files/Bastrop_County/5fc64f_HigherEducationDistrict.gdb.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/HigherEducationDistrict.zip",
+    "text": "SHP",
+    "file": "data/city_files/Bastrop_County/1adca9_HigherEducationDistrict.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/HabitatPlanArea.gdb.zip",
+    "text": "FGDB",
+    "file": "data/city_files/Bastrop_County/49a514_HabitatPlanArea.gdb.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/HabitatPlanArea.zip",
+    "text": "SHP",
+    "file": "data/city_files/Bastrop_County/4feecb_HabitatPlanArea.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/MunicipalUtilityDistrict.gdb.zip",
+    "text": "FGDB",
+    "file": "data/city_files/Bastrop_County/1dc1d0_MunicipalUtilityDistrict.gdb.zip",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maps.co.bastrop.tx.us/upload/GIS_Data/MunicipalUtilityDistrict.zip",
+    "text": "SHP",
+    "file": "data/city_files/Bastrop_County/68def7_MunicipalUtilityDistrict.zip",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://open-data-bastrop.hub.arcgis.com/": "City of Bastrop Maps and Downloadable Data",
+   "https://data.tnris.org/collection?c=a15f67db-9535-464e-9058-f447325b6251": "TxGIO StratMap Imagery 2022",
+   "https://bascogis.maps.arcgis.com/apps/webappviewer/index.html?id=567e6c4bdb7a45d983a409225906c695": "Address Lookup",
+   "https://bascogis.maps.arcgis.com/apps/webappviewer/index.html?id=7611ba0805344034bc16ca0087572fed": "Bastrop County Parks Interactive Map",
+   "https://bascogis.maps.arcgis.com/apps/webappviewer/index.html?id=94f8457fca7048e8b28196ac6aad8c4d": "Commissioners, JPs & Constables",
+   "https://experience.arcgis.com/experience/62572e361b48450c8917f702b716c7dc": "Election Precincts",
+   "https://experience.arcgis.com/experience/f0cf75435fc644e083ff3eea7018ad57": "Infrastructure Planning",
+   "https://bascogis.maps.arcgis.com/apps/webappviewer/index.html?id=ebd779270c1942b0bcb66bc55830d9cf": "Lost Pines Habitat Conservation Plan (LPHCP)",
+   "https://bascogis.maps.arcgis.com/apps/webappviewer/index.html?id=f46d0eabfb3341389945a8870fe146a1": "Subdivision Review & LPHCP Boundaries",
+   "https://regional-open-data-capcog.opendata.arcgis.com/": "Capital Area Council of Governments",
+   "https://data.tnris.org/": "Texas Geographic Information Office (TxGIO)"
+  }
+ },
+ "Suffolk": {
+  "files": [],
+  "portals": {}
+ },
+ "Bellingham": {
+  "files": [
+   {
+    "url": "https://cob.org/wp-content/uploads/Parks_Trails_Natural_Areas_2023-0831.pdf",
+    "text": "Map of Parks a​nd Open Spaces (PDF)",
+    "file": "data/city_files/Bellingham/bef6a8_Parks_Trails_Natural_Areas_2023-0831.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/COB_BikeMap.pdf",
+    "text": "Bike Routes​ (print version)",
+    "file": "data/city_files/Bellingham/a4deb1_COB_BikeMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Bicycle-Traffic-Laws.pdf",
+    "text": "Bicycle Traffic Laws",
+    "file": "data/city_files/Bellingham/f301e5_Bicycle-Traffic-Laws.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/PaidParkingAreasFairhaven-2026_0831.pdf",
+    "text": "Paid Parking Areas Map – Fairhaven",
+    "file": "data/city_files/Bellingham/66f13b_PaidParkingAreasFairhaven-2026_0831.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/wwu-residential-parking-zones.pdf",
+    "text": "Residential Parking Zones (330K PDF)",
+    "file": "data/city_files/Bellingham/9f4753_wwu-residential-parking-zones.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Parking-Guidelines-3-21-2025.pdf",
+    "text": "Parking Restrictions Guidelines",
+    "file": "data/city_files/Bellingham/7b558a_Parking-Guidelines-3-21-2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://data.cob.org/OBOpen/ABHistoryItem/Document/2025-01-001_2362021.pdf",
+    "text": "interim ordinance eliminating Bellingham’s minimum parking requirements",
+    "file": "data/city_files/Bellingham/940179_2025-01-001_2362021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/parks-open-space-planning-map.pdf",
+    "text": "3,649 acres of park land Enhance the natural environment and provide a variety of recreational experiences.",
+    "file": "data/city_files/Bellingham/aa1c97_parks-open-space-planning-map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/COB_Nhoodmap.pdf",
+    "text": "Map of neighborhood boundaries (PDF)",
+    "file": "data/city_files/Bellingham/872e91_COB_Nhoodmap.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/nhoodmap85x11.pdf",
+    "text": "Map of neighborhood boundaries – black and white (350K PDF)",
+    "file": "data/city_files/Bellingham/3ee14b_nhoodmap85x11.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/AlabamaHill-basemap.pdf",
+    "text": "Basemap (3,638K PDF)",
+    "file": "data/city_files/Bellingham/d48c9a_AlabamaHill-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Barkley-basemap.pdf",
+    "text": "Basemap (780K PDF)",
+    "file": "data/city_files/Bellingham/feb1ee_Barkley-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Birchwood-basemap.pdf",
+    "text": "Basemap (3,645K PDF)",
+    "file": "data/city_files/Bellingham/7104ee_Birchwood-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/CBD-basemap.pdf",
+    "text": "Basemap (4,275K PDF)",
+    "file": "data/city_files/Bellingham/2d936b_CBD-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Columbia-basemap.pdf",
+    "text": "Basemap (3,363K PDF)",
+    "file": "data/city_files/Bellingham/b55c99_Columbia-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Cordata-basemap.pdf",
+    "text": "Basemap (576K PDF)",
+    "file": "data/city_files/Bellingham/8c5173_Cordata-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/CornwallPark-basemap.pdf",
+    "text": "Basemap (3,397K PDF)",
+    "file": "data/city_files/Bellingham/d9fd59_CornwallPark-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Edgemoor-basemap.pdf",
+    "text": "Basemap (4,230K PDF)",
+    "file": "data/city_files/Bellingham/770bc7_Edgemoor-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Fairhaven-basemap.pdf",
+    "text": "Basemap (3,733K PDF)",
+    "file": "data/city_files/Bellingham/fa853e_Fairhaven-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/HappyValley-basemap.pdf",
+    "text": "Basemap (3,446K PDF)",
+    "file": "data/city_files/Bellingham/fe7391_HappyValley-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Irongate-basemap.pdf",
+    "text": "Basemap (553K PDF)",
+    "file": "data/city_files/Bellingham/85e4f2_Irongate-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/KingMtn-basemap.pdf",
+    "text": "Basemap (526K PDF)",
+    "file": "data/city_files/Bellingham/e6e5c1_KingMtn-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/LetteredStreets-basemap.pdf",
+    "text": "Basemap (3,306K PDF)",
+    "file": "data/city_files/Bellingham/9ce4c1_LetteredStreets-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cob.org/wp-content/uploads/Meridian-basemap.pdf",
+    "text": "Basemap (584K PDF)",
+    "file": "data/city_files/Bellingham/443d45_Meridian-basemap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.cob.org/gis/metadata/cart_Airport.html": "Airport",
+   "https://data.cob.org/gis/metadata/Cart_BayLabels.html": "Bay Labels",
+   "https://data.cob.org/gis/metadata/Cart_SectionCorners.html": "Section Corners",
+   "https://data.cob.org/gis/metadata/Cart_TownshipCorners.html": "Township Corners",
+   "https://data.cob.org/gis/metadata/Cart_TownshipLines.html": "Township Lines",
+   "https://data.cob.org/gis/metadata/cart_TranPolygons.html": "Transportation Polygons",
+   "https://data.cob.org/gis/metadata/cart_Trees.html": "Trees",
+   "https://data.cob.org/gis/metadata/env_Coalmines.html": "Coal Mines",
+   "https://data.cob.org/gis/metadata/env_Forest.html": "Forest",
+   "https://data.cob.org/gis/metadata/env_Landmarks.html": "Landmarks",
+   "https://data.cob.org/gis/metadata/env_Landslides_AlluvialFans.html": "Landslides and Alluvial Fans",
+   "https://data.cob.org/gis/metadata/env_ModelToxicControlAct_Sites.html": "Model Toxic Control Act Areas"
+  }
+ },
+ "Fort Smith": {
+  "files": [],
+  "portals": {}
+ },
+ "Angelina County": {
+  "files": [
+   {
+    "url": "https://angelinacounty.net/files/historical/pdf/lufkincb.pdf",
+    "text": "Lufkin",
+    "file": "data/city_files/Angelina_County/2db260_lufkincb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://angelinacounty.net/files/historical/pdf/dibollcb2.pdf",
+    "text": "Diboll",
+    "file": "data/city_files/Angelina_County/4b7d1e_dibollcb2.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://angelinacounty.net/files/historical/pdf/hudsoncb.pdf",
+    "text": "Hudson",
+    "file": "data/city_files/Angelina_County/d4b835_hudsoncb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://angelinacounty.net/files/historical/pdf/huntingtoncb.pdf",
+    "text": "Huntington",
+    "file": "data/city_files/Angelina_County/65f080_huntingtoncb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://angelinacounty.net/files/historical/pdf/centralcb.pdf",
+    "text": "Central",
+    "file": "data/city_files/Angelina_County/903b7c_centralcb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://angelinacounty.net/files/historical/pdf/zavallacb.pdf",
+    "text": "Zavalla",
+    "file": "data/city_files/Angelina_County/7ae3b5_zavallacb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://angelinacounty.net/files/pdf/map.pdf",
+    "text": "Map",
+    "file": "data/city_files/Angelina_County/6f2034_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.angelinacounty.net/files/historical/pdf/lufkincb.pdf",
+    "text": "Lufkin",
+    "file": "data/city_files/Angelina_County/d7e6c8_lufkincb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.angelinacounty.net/files/historical/pdf/dibollcb2.pdf",
+    "text": "Diboll",
+    "file": "data/city_files/Angelina_County/e4d5f6_dibollcb2.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.angelinacounty.net/files/historical/pdf/hudsoncb.pdf",
+    "text": "Hudson",
+    "file": "data/city_files/Angelina_County/313149_hudsoncb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.angelinacounty.net/files/historical/pdf/huntingtoncb.pdf",
+    "text": "Huntington",
+    "file": "data/city_files/Angelina_County/54c255_huntingtoncb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.angelinacounty.net/files/historical/pdf/centralcb.pdf",
+    "text": "Central",
+    "file": "data/city_files/Angelina_County/593dc8_centralcb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.angelinacounty.net/files/historical/pdf/zavallacb.pdf",
+    "text": "Zavalla",
+    "file": "data/city_files/Angelina_County/af9b9c_zavallacb.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Kennewick": {
+  "files": [
+   {
+    "url": "https://www.sos.wa.gov/sites/default/files/2023-11/PathToBecomingAdministrator.pdf",
+    "text": "How to Become Certified",
+    "file": "data/city_files/Kennewick/5ae6c6_PathToBecomingAdministrator.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.sos.wa.gov/sites/default/files/2022-06/ada-doj_ballot_box_access.pdf",
+    "text": "ADA Ballot Drop Box Accessibility",
+    "file": "data/city_files/Kennewick/def0b0_ada-doj_ballot_box_access.pdf",
+    "rows": 30,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://maps.ci.kennewick.wa.us/PDFMaps/CityStreetMap.pdf",
+    "text": "Open PDF",
+    "file": "data/city_files/Kennewick/36038c_CityStreetMap.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://maps.ci.kennewick.wa.us/PDFMaps/CityStreetMapwGrid&MapReference.pdf",
+    "text": "Open PDF",
+    "file": "data/city_files/Kennewick/466628_CityStreetMapwGrid_MapReference.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://kennewick.maps.arcgis.com": "Mapping Portal",
+   "https://gisdata-kennewick.hub.arcgis.com/": "Download GIS Data",
+   "https://experience.arcgis.com/experience/d955547fc9a34ab694508bc5e68b6a32": "Parcel Map",
+   "https://experience.arcgis.com/experience/deba9fa3b8004aef9b542b6c2440179c": "Utilities Map",
+   "https://experience.arcgis.com/experience/9e0d26c2b96b43468fee5a56e00a6543": "Wards & Precincts Map",
+   "https://experience.arcgis.com/experience/4a0920703c22494688959fae0934b6f8": "Zoning Map",
+   "https://storymaps.arcgis.com/stories/04d4e475b93d43e5a37b94cccd540c87": "Current Development",
+   "https://experience.arcgis.com/experience/a1537cc0d85b442aab15c105100c05e2": "Fire Hydrant Map",
+   "http://kennewick.maps.arcgis.com/home/index.html": "Locate Water / Sewer Line",
+   "https://storymaps.arcgis.com/stories/8ca4b15ea3d54d4393d41d04e975a57e": "Click here",
+   "https://go2kennewick.com/library/resources-libraries/projects/open-data-library": "Open Data - Library"
+  }
+ },
+ "Longview": {
+  "files": [],
+  "portals": {
+   "https://longviewtexas.gov/3992/Open-Data-Portal": "Open Data Portal",
+   "https://longviewtexas.gov/4415/Open-Data-Portal": "Open Data Portal",
+   "https://longviewtexas.gov/3718/Open-Data-Portal": "Open Data Portal",
+   "https://longviewtexas.maps.arcgis.com/apps/MapSeries/index.html?appid=e7b2e66a516049a9b263ec8ce9283bfd": "Public Works - At Work for You ( Interactive Map )",
+   "https://storymaps.arcgis.com/stories/a3a71fcfc837471b9c4dea13bd2f75e2": "Sabine River Story Map"
+  }
+ },
+ "Bellflower": {
+  "files": [
+   {
+    "url": "https://bellflower.ca.gov/Document Center/Department/Public Safety/Downtown Parking Lot Changes 03_2025.pdf",
+    "text": "Downtown Parking Map",
+    "file": "data/city_files/Bellflower/01d94b_Downtown_Parking_Lot_Changes_03_2025.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/6a6a058a177440fdac6be881d41d4c2c/": "Air Quality Map (AQMD)"
+  }
+ },
+ "Cattaraugus County": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/4e6814ab5c66427f8ef2ea8d7e643e4d": "New 911 Address Request",
+   "http://gis.ny.gov/": "NYSGIS",
+   "https://doc.arcgis.com/en/explorer/android-phone/help/get-started.htm": "please click here",
+   "http://broomegis.co.broome.ny.us/website/gisweb/portal.htm": "Broome County",
+   "http://www.communitygis.com/": "Community GIS"
+  }
+ },
+ "North Port": {
+  "files": [],
+  "portals": {}
+ },
+ "Robertson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Canton": {
+  "files": [],
+  "portals": {
+   "https://survey123.arcgis.com/share/93435316069b48299d8da44d723fd4e0": "Water Service Line Material Survey",
+   "https://survey123.arcgis.com/share/83fb7189e1a04fddb388fdae292acd0e": "Camera Registration Program",
+   "https://starkcountyohio.maps.arcgis.com/apps/GeoForm/index.html?appid=4a74e2a358bc431dbf055e5788d47276": ""
+  }
+ },
+ "Eau Claire": {
+  "files": [
+   {
+    "url": "https://yellowstonetrail.org/wp-content/uploads/2026/07/1909racev3.pdf",
+    "text": "1909 Ocean to Ocean Race",
+    "file": "data/city_files/Eau_Claire/344118_1909racev3.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yellowstonetrail.org/wp-content/uploads/2026/07/JJJohnston.pdf",
+    "text": "Time Traveling on the YT",
+    "file": "data/city_files/Eau_Claire/bc70e0_JJJohnston.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://yellowstonetrail.org/wp-content/uploads/2026/07/Yellowstone-Trail-in-Carver-County.pdf",
+    "text": "The YT in Carver County MN",
+    "file": "data/city_files/Eau_Claire/a07e0c_Yellowstone-Trail-in-Carver-County.pdf",
+    "rows": 9,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://yellowstonetrail.org/wp-content/uploads/2026/07/YGarage.pdf",
+    "text": "History of the YT Garage",
+    "file": "data/city_files/Eau_Claire/b7e743_YGarage.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://docs.legis.wisconsin.gov/statutes/statutes/340/01/10": "WI State Statute 340.01(10)",
+   "https://docs.legis.wisconsin.gov/statutes/statutes/66/IX/0907": "Wisconsin Statutes 66.0907"
+  }
+ },
+ "Trujillo Alto": {
+  "files": [],
+  "portals": {}
+ },
+ "Kenner": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/27e1384f885f4259b5e558237592b99f": "",
+   "https://legis.la.gov/legis/Law.aspx?d=962468": "RS 32:299.4",
+   "https://experience.arcgis.com/experience/72a9d1d73932449b9192eb12aebbc3cf": "Geographic Information System (GIS)"
+  }
+ },
+ "Jefferson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Greenwood": {
+  "files": [],
+  "portals": {
+   "https://maps-greenwood.hub.arcgis.com/": "https://maps-greenwood.hub.arcgis.com/",
+   "https://greenwood.maps.arcgis.com/apps/webappviewer/index.html?id=409b4ba529574073b8a1c0e1a62b1184": "City Boundary Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=85950dcb6eb04628ba585e697b640786": "Trash Service Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=00abece25dd241fe80a7bb485f197b2a": "Utility Coverage Map for Johnson County",
+   "https://greenwood.maps.arcgis.com/apps/instant/lookup/index.html?appid=c0cc804bf7dc49b1b6c3897870c6292a": "Zoning Map",
+   "https://greenwood.maps.arcgis.com/apps/webappviewer/index.html?id=4552a7b6cf56449b983e6b1f9f7d09a2": "Adopt-A-Spot Location Map",
+   "https://greenwoodgis.greenwood.in.gov/portal/apps/experiencebuilder/experience/?id=df6596fac88a41c6b9d411ac06a0a5a9": "Comprehensive Plan Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=f0de992eb7584248b57c464dd3fafa9d": "Construction / Traffic Notices Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=72fbf4f8f94d4b2db7cdf744d25acfa6": "Council Districts Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=264e936e2c324d9f9638e135e8e5bf3e": "Johnson County Historical Markers Map",
+   "https://greenwood.maps.arcgis.com/apps/webappviewer/index.html?id=eab71f57bbdb4502841f336a44a86f24": "Leaf Pickup Map",
+   "https://greenwood.maps.arcgis.com/apps/instant/basic/index.html?appid=19ea7f5730a24276b22982cd01858afb": "Legal Drains Map"
+  }
+ },
+ "Stanly County": {
+  "files": [],
+  "portals": {}
+ },
+ "Jupiter": {
+  "files": [],
+  "portals": {
+   "https://pbcgov.maps.arcgis.com/apps/dashboards/3781c91e8b564c8a99017ec8d7fb0e59": "Park Construction Dashboard​",
+   "https://town-of-jupiter-geospatial-hub-site-toj.hub.arcgis.com/": "GIS Data Layers",
+   "https://toj.maps.arcgis.com/apps/webappviewer/index.html?id=d83a500554ff42a8b53a2bf7b57e1f58": "GJupiter",
+   "https://toj.maps.arcgis.com/apps/3DInsetMap/index.html?appid=4deeb7d4d52d4684ba9807810f8a5c93": "Coastal Ridge - The Bluffs area",
+   "https://toj.maps.arcgis.com/apps/webappviewer/index.html?id=2a98c92088294d2aa5df93bd15fcfaf5": "Planning Mapping App",
+   "https://arcgis.palmbeachschools.org/arcgisportal/apps/webappviewer/index.html?id=4ba2309b027c4606999d9a5a4d84778f": "School Boundaries"
+  }
+ },
+ "Santee": {
+  "files": [],
+  "portals": {}
+ }
+}
