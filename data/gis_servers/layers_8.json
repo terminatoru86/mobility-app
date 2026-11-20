@@ -1,16 +1,9 @@
 [
 {
-"city": "Indianapolis IN",
-"url": "https://gis.indy.gov/server/rest/services/OpenData/OpenData_Transportation/MapServer/2",
-"name": "Bike Share Stations",
-"count": 57,
-"cat": "share"
-},
-{
-"city": "Orlando FL",
-"url": "https://gis.orlando.gov/server/rest/services/Epic_Simplify_i3/Transportation/MapServer/10",
+"city": "capital:slc.gov",
+"url": "https://maps.slc.gov/server/rest/services/Hosted/Bike_Racks/FeatureServer/0",
 "name": "Bike Racks",
-"count": 228,
+"count": 1411,
 "cat": "racks"
 },
 {
@@ -40,12 +33,5 @@
 "name": "Scooter Parking Locations",
 "count": 38,
 "cat": "scooter"
-},
-{
-"city": "Cedar Rapids",
-"url": "https://crgis.cedar-rapids.org/arcgis/rest/services/Maps/Public_Works/MapServer/78",
-"name": "FixItStations",
-"count": 21,
-"cat": "repair"
 }
 ]
