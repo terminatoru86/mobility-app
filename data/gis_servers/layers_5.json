@@ -1,16 +1,51 @@
 [
 {
-"city": "Edmond",
-"url": "https://gis.edmondok.gov/arcgis/rest/services/ArcadiaLake/ArcadiaLakeTrails/MapServer/1",
-"name": "Bicycle Repair Station",
-"count": 2,
+"city": "Scottsdale",
+"url": "https://maps.scottsdaleaz.gov/arcgis/rest/services/Public_Amenities/MapServer/12",
+"name": "Bike Racks",
+"count": 239,
+"cat": "racks"
+},
+{
+"city": "The Colony",
+"url": "https://gis.thecolonytx.gov/arcgis/rest/services/Cityworks/CW_Parks/MapServer/5",
+"name": "Bike Racks",
+"count": 25,
+"cat": "racks"
+},
+{
+"city": "The Colony",
+"url": "https://gis.thecolonytx.gov/arcgis/rest/services/Cityworks/CW_Parks/MapServer/6",
+"name": "Bike Repair Stations",
+"count": 3,
 "cat": "repair"
 },
 {
-"city": "Broomfield County",
-"url": "https://gis.drcog.org/server/rest/services/RDC/BICYCLE_SHARE_STATIONS/MapServer/0",
-"name": "BICYCLE_SHARE_STATIONS",
-"count": 67,
+"city": "Columbus OH",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/42",
+"name": "Scooter Corrals",
+"count": 47,
+"cat": "scooter"
+},
+{
+"city": "Columbus OH",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/41",
+"name": "Bike Parking",
+"count": 833,
+"cat": "racks"
+},
+{
+"city": "Columbus OH",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/31",
+"name": "COGO Bikeshare Locations",
+"count": 80,
 "cat": "share"
+},
+{
+"city": "Columbus OH",
+"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/3",
+"name": "Scooter Parking Locations",
+"count": 38,
+"cat": "scooter"
 }
 ]
