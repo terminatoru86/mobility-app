@@ -1,0 +1,1235 @@
+{
+ "Gilbert AZ": {
+  "files": [],
+  "portals": {}
+ },
+ "Alexandria": {
+  "files": [],
+  "portals": {}
+ },
+ "Eyüpsultan": {
+  "files": [],
+  "portals": {
+   "https://eyupsultan.bel.tr/opendata": "444 30 00",
+   "https://eyupsultan.bel.tr/open-data": "444 30 00"
+  }
+ },
+ "Kütahya": {
+  "files": [],
+  "portals": {}
+ },
+ "Mezitli": {
+  "files": [],
+  "portals": {}
+ },
+ "Macon": {
+  "files": [
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2026/09/27-015-LH-Rose-Hill-Cemetery-Walking-Trails-IFB.pdf",
+    "text": "27-015-LH Rose Hill Cemetery Walking Trails-IFB",
+    "file": "data/city_files/Macon/936f7d_27-015-LH-Rose-Hill-Cemetery-Walking-Trails-IFB.pdf",
+    "rows": 9,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2026/09/27-015-LH-Attachment-C-Rose-Hill-Trail-Additional-Bid-Sheet-1.pdf",
+    "text": "27-015-LH Attachment C Rose Hill Trail Additional Bid Sheet (1)",
+    "file": "data/city_files/Macon/cdc001_27-015-LH-Attachment-C-Rose-Hill-Trail-Additional-Bid-Sheet-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2026/09/27-015-LH-Pre-Bid-Sign-in-log-Rosehill-Cemetery-Walking-Trail-Reflection-pond.pdf",
+    "text": "27-015-LH Pre-Bid Sign-in log Rosehill Cemetery Walking Trail & Reflection pond",
+    "file": "data/city_files/Macon/ce0552_27-015-LH-Pre-Bid-Sign-in-log-Rosehill-Cemetery-Walking-Trail-Reflecti",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2026/09/27-015-LH-Pre-Bid-10-6-26-RoseHill-Cemetery-Walikng-Trail-1.pdf",
+    "text": "27-015-LH Pre-Bid (10-6-26) RoseHill Cemetery Walikng Trail",
+    "file": "data/city_files/Macon/c72166_27-015-LH-Pre-Bid-10-6-26-RoseHill-Cemetery-Walikng-Trail-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://maconbibb.us/wp-content/uploads/2013/10/CMApplicationSubpoena.pdf",
+    "text": "Civil & Magistrate Court Application For Subpoena",
+    "file": "data/city_files/Macon/28b39a_CMApplicationSubpoena.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2014/10/15-021-DB-Repave-Driver-Training-Tracks.pdf",
+    "text": "15-021-DB Repave Driver Training Tracks",
+    "file": "data/city_files/Macon/b0db9e_15-021-DB-Repave-Driver-Training-Tracks.pdf",
+    "rows": 40,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2014/10/Attachment-A-Driving-Track-Repaving.pdf",
+    "text": "Attachment A – Driving Track Repaving",
+    "file": "data/city_files/Macon/29b21c_Attachment-A-Driving-Track-Repaving.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2026/07/27-008-LH-Residential-Roof-Repair-for-Eleven-11-Houses.pdf",
+    "text": "27-008-LH Residential Roof Repair for Eleven (11) Houses",
+    "file": "data/city_files/Macon/a7bf80_27-008-LH-Residential-Roof-Repair-for-Eleven-11-Houses.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2014/08/15-017-ND-Residential-Roof-RepairsII.pdf",
+    "text": "15-017-ND Residential Roof RepairsII",
+    "file": "data/city_files/Macon/37a9a8_15-017-ND-Residential-Roof-RepairsII.pdf",
+    "rows": 33,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2014/08/14-035-ND_BID_Patchwork-Repair-Resurfacing-Various-Streets.pdf",
+    "text": "14-035-ND_BID_Patchwork, Repair, & Resurfacing (Various Streets)",
+    "file": "data/city_files/Macon/7e4b36_14-035-ND_BID_Patchwork-Repair-Resurfacing-Various-Streets.pdf",
+    "rows": 35,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2014/07/15-006-ND-Residential-Roof-Repair-10-Houses.pdf",
+    "text": "15-006-ND Residential Roof Repair (10 Houses)",
+    "file": "data/city_files/Macon/51392f_15-006-ND-Residential-Roof-Repair-10-Houses.pdf",
+    "rows": 41,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2026/01/26-027-LH-Automated-Parking-System-and-Installation-RFP-Rev1.pdf",
+    "text": "26-027-LH Automated Parking System and Installation-RFP-Rev1",
+    "file": "data/city_files/Macon/3e1c8c_26-027-LH-Automated-Parking-System-and-Installation-RFP-Rev1.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2026/01/Attachment-B-Parking-Scope-of-Work.pdf",
+    "text": "Attachment B Parking Scope of Work",
+    "file": "data/city_files/Macon/fa731a_Attachment-B-Parking-Scope-of-Work.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2026/01/26-027-LH-Attachment-C-Legend-Map.pdf",
+    "text": "26-027-LH Attachment C Legend Map",
+    "file": "data/city_files/Macon/6db498_26-027-LH-Attachment-C-Legend-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2014/07/15-004-DB_BID_HISTORICAL-LIGHTING-SUPPLIES.pdf",
+    "text": "15-004-DB_BID_HISTORICAL LIGHTING SUPPLIES",
+    "file": "data/city_files/Macon/90a380_15-004-DB_BID_HISTORICAL-LIGHTING-SUPPLIES.pdf",
+    "rows": 73,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2025/07/26-003-LH-Residential-Roof-Repair-for-Twenty-20-Houses.pdf",
+    "text": "26-003-LH Residential Roof Repair for Twenty (20) Houses",
+    "file": "data/city_files/Macon/2fc746_26-003-LH-Residential-Roof-Repair-for-Twenty-20-Houses.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2025/04/25-043-LH-Attachment-B-Concrete-Repair-Scope-of-Work.pdf",
+    "text": "25-043-LH, Attachment B, Concrete Repair Scope of Work",
+    "file": "data/city_files/Macon/208b27_25-043-LH-Attachment-B-Concrete-Repair-Scope-of-Work.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2025/03/25-039-NT-Residential-Roof-Repair-for-Twenty20-Houses.pdf",
+    "text": "25-039-NT Residential Roof Repair for Twenty(20) Houses",
+    "file": "data/city_files/Macon/b3b5c7_25-039-NT-Residential-Roof-Repair-for-Twenty20-Houses.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2025/01/25-027-LH-Task-Work-Order-for-Guardrail-Repair-Services-IFB.pdf",
+    "text": "25-027-LH Task Work Order for Guardrail Repair Services-IFB",
+    "file": "data/city_files/Macon/02283d_25-027-LH-Task-Work-Order-for-Guardrail-Repair-Services-IFB.pdf",
+    "rows": 26,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2024/10/25-018-LH-Residential-Roof-Repair-for-Ten-10-Houses.pdf",
+    "text": "25-018-LH Residential Roof Repair for Ten (10) Houses",
+    "file": "data/city_files/Macon/1d91a8_25-018-LH-Residential-Roof-Repair-for-Ten-10-Houses.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2024/04/24-022-LH-Traffic-Signals-Repair-and-Maintenance-Services-RFP.pdf",
+    "text": "24-022-LH, Traffic Signals Repair and Maintenance Services- (RFP)",
+    "file": "data/city_files/Macon/52b0dc_24-022-LH-Traffic-Signals-Repair-and-Maintenance-Services-RFP.pdf",
+    "rows": 18,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2024/03/24-017-LH-Mead-Road-Repairs-IFB-2.pdf",
+    "text": "24-017-LH, Mead Road Repairs-IFB",
+    "file": "data/city_files/Macon/64c2d6_24-017-LH-Mead-Road-Repairs-IFB-2.pdf",
+    "rows": 19,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2024/03/24-017-LH-Attachment-C-Mead-Rd-Repairs-Diagram.pdf",
+    "text": "24-017-LH, Attachment C- Mead Rd Repairs Diagram",
+    "file": "data/city_files/Macon/4f09ec_24-017-LH-Attachment-C-Mead-Rd-Repairs-Diagram.pdf",
+    "rows": 317,
+    "bike_rows": 47
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2023/07/23-002-LH-On-Call-Paving-and-Repair-Services-IFB.pdf",
+    "text": "23-002-LH On-Call Paving and Repair Services-IFB",
+    "file": "data/city_files/Macon/298a9c_23-002-LH-On-Call-Paving-and-Repair-Services-IFB.pdf",
+    "rows": 41,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2023/06/23-051-LH-On-Call-Paving-and-Repair-Services-IFB-1.pdf",
+    "text": "23-051-LH On-Call Paving and Repair Services-IFB",
+    "file": "data/city_files/Macon/ff6732_23-051-LH-On-Call-Paving-and-Repair-Services-IFB-1.pdf",
+    "rows": 31,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2023/05/23-039-LH-On-Call-Paving-and-Repair-Services-RFQ-3.pdf",
+    "text": "23-039-LH On-Call Paving and Repair Services-RFQ",
+    "file": "data/city_files/Macon/d3c6bd_23-039-LH-On-Call-Paving-and-Repair-Services-RFQ-3.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2023/05/23-045-NT-Residential-Roof-Repair-for-Twenty20-Houses.pdf",
+    "text": "23-045-NT Residential Roof Repair for Twenty(20) Houses",
+    "file": "data/city_files/Macon/cb42cb_23-045-NT-Residential-Roof-Repair-for-Twenty20-Houses.pdf",
+    "rows": 55,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2022/10/23-014-NT-Residential-Roof-Repair-for-Twenty20-Houses.pdf",
+    "text": "23-014-NT Residential Roof Repair for Twenty(20) Houses",
+    "file": "data/city_files/Macon/fa7453_23-014-NT-Residential-Roof-Repair-for-Twenty20-Houses.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2022/07/23-004-LH-Guardrail-Replacement-and-Repair-Projects-IFB.pdf",
+    "text": "23-004-LH Guardrail Replacement and Repair Projects (IFB)",
+    "file": "data/city_files/Macon/3db207_23-004-LH-Guardrail-Replacement-and-Repair-Projects-IFB.pdf",
+    "rows": 13,
+    "bike_rows": 7
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2022/04/22-054-NT-Residential-Roof-Repair-for-Twnety20-Houses_-IFB_Final.pdf",
+    "text": "22-054-NT Residential Roof Repair for Twnety(20) Houses_ IFB_Final",
+    "file": "data/city_files/Macon/f30033_22-054-NT-Residential-Roof-Repair-for-Twnety20-Houses_-IFB_Final.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2021/10/22-023-NT-Residential-Roof-Repair-for-Twnety20-Houses.pdf",
+    "text": "22-023-NT Residential Roof Repair for Twnety(20) Houses",
+    "file": "data/city_files/Macon/2dbb0d_22-023-NT-Residential-Roof-Repair-for-Twnety20-Houses.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2021/08/22-012-NT-Drainage-Repairs.pdf",
+    "text": "22-012-NT Drainage Repairs",
+    "file": "data/city_files/Macon/3b6cad_22-012-NT-Drainage-Repairs.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2021/08/22-014-FL-City-Hall-Parking-Lot-Mixed-Use-Development_RFP-1.pdf",
+    "text": "22-014-FL City Hall Parking Lot Mixed Use Development_RFP",
+    "file": "data/city_files/Macon/8e0e0b_22-014-FL-City-Hall-Parking-Lot-Mixed-Use-Development_RFP-1.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2021/08/22-014-FL-City-Hall-Parking-Lot-Mixed-Use-Development_Attachment-A.pdf",
+    "text": "22-014-FL, City Hall Parking Lot Mixed Use Development_Attachment A",
+    "file": "data/city_files/Macon/d7f4ce_22-014-FL-City-Hall-Parking-Lot-Mixed-Use-Development_Attachment-A.pdf",
+    "rows": 40,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2021/08/22-014-FL-City-Hall-Parking-Lot-Mixed-Use-Development_PHase-1-DT-Walton-_-Attachment-B.pdf",
+    "text": "22-014-FL, City Hall Parking Lot Mixed Use Development_PHase 1 DT Walton _ Attachment B",
+    "file": "data/city_files/Macon/f034eb_22-014-FL-City-Hall-Parking-Lot-Mixed-Use-Development_PHase-1-DT-Walto",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2021/08/22-014-FL-City-Hall-Parking-Lot-Mixed-Use-Development_DTWalton-Multi-Eleva_Attachment-C-1.pdf",
+    "text": "22-014-FL, City Hall Parking Lot Mixed Use Development_DTWalton Multi Eleva_Attachment C",
+    "file": "data/city_files/Macon/02d866_22-014-FL-City-Hall-Parking-Lot-Mixed-Use-Development_DTWalton-Multi-E",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.maconbibb.us/wp-content/uploads/2021/08/22-14-FL-City-Hall-Parking-Lot-Mixed-Use-Development_Sign-In-Sheet.pdf",
+    "text": "22-14-FL, City Hall Parking Lot Mixed Use Development_Sign In Sheet",
+    "file": "data/city_files/Macon/a0c62e_22-14-FL-City-Hall-Parking-Lot-Mixed-Use-Development_Sign-In-Sheet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://maconbibb.maps.arcgis.com/apps/webappviewer/index.html?id=55b89f6ead174b2893ce4fa6b180db3d": "Find Trash Pickup Day"
+  }
+ },
+ "Stamford": {
+  "files": [],
+  "portals": {}
+ },
+ "Silifke": {
+  "files": [],
+  "portals": {}
+ },
+ "El Monte": {
+  "files": [],
+  "portals": {
+   "https://ndcresearch.maps.arcgis.com/apps/View/index.html?appid=176b87654862480799c4a4ad638fd032": "Interactive View Map",
+   "https://ktuagis.maps.arcgis.com/apps/Cascade/index.html?appid=3c92ab9cccf24a72ac5e6bfc7a0d1cb0": "Vision Zero"
+  }
+ },
+ "Federal Way": {
+  "files": [],
+  "portals": {}
+ },
+ "Sandy": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/1024883520a54b0bb1529fcee3647379": "Bulk Waste Pickup Area Dates",
+   "https://sandycity.maps.arcgis.com/apps/SimpleMapViewer/index.html?appid=2224e452d48449f3992a947b7738fc96": "Construction Projects",
+   "https://sandycity.maps.arcgis.com/apps/webappviewer/index.html?id=b1cc4e908432439e96e85d07b28a0ace": "Historic Sandy",
+   "https://sandycity.maps.arcgis.com/apps/Shortlist/index.html?appid=e8dd05e8cdb14776a0a9fc654d0a46c8": "Historic Walking Tour",
+   "https://sandycity.maps.arcgis.com/apps/webappviewer/index.html?id=f5928b653fe1490fbcf4acab4c3927bd": "Neighborhood Watch Groups",
+   "https://sandycity.maps.arcgis.com/apps/webappviewer/index.html?id=582b580730d74e4c8ecf6bf056afb9b9": "No Firework Zone",
+   "https://sandycity.maps.arcgis.com/apps/webappviewer/index.html?id=e165eacc7ebc493281eb0db9feea1286": "Private Schools",
+   "https://sandycity.maps.arcgis.com/apps/webappviewer/index.html?id=9581d8cd4e804c7696ea448ad878b3e1": "Restaurants",
+   "http://sandycity.maps.arcgis.com/apps/webappviewer/index.html?id=41dd53d618804b7b898f56fea1f6d565": "Shopping",
+   "http://sandycity.maps.arcgis.com/apps/webappviewer/index.html?id=3e756bb8299c4b8ab64f9a2a08e09ad9": "Zip Codes",
+   "https://experience.arcgis.com/experience/e62bd5b2b7924a7dacc811c2612c327c": "Construction Projects",
+   "https://gis.utah.gov/": "UGRC"
+  }
+ },
+ "Brooklyn Park": {
+  "files": [],
+  "portals": {
+   "https://www.brooklynpark.org/police/open-data/": "Read more"
+  }
+ },
+ "Homestead": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/ac9aee5935ef4a48a9392c439f8c79ba": "Strategic Plan",
+   "https://experience.arcgis.com/experience/7d7ae9bbb7394f7db8f604fdc5e24f47": "Lead & Copper Rule Revisions",
+   "https://homesteadfl.maps.arcgis.com/apps/webappviewer/index.html?id=f52a7b534adb4969a7630238511e1f29": "Solid Waste Schedule",
+   "https://homesteadfl.maps.arcgis.com/apps/instant/lookup/index.html?appid=4e2ebc864e804feb9a3bb961fbf7a2dc": "City Council District Map",
+   "https://homesteadfl.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=d7bfec85e74f48c4a532962996b632f4": "City of Homestead Street Lights",
+   "https://homesteadfl.maps.arcgis.com/apps/instant/lookup/index.html?appid=a562506198e745488b769201b24bacd4": "Code Compliance Zones & Assigned Officers",
+   "https://experience.arcgis.com/experience/72940b85b4cf46249e11c462967d1d67": "My City Map",
+   "https://experience.arcgis.com/experience/ffbe97f738af4b90aec643f3df9e87a9/": "Parks System Map Viewer"
+  }
+ },
+ "Lauderhill": {
+  "files": [],
+  "portals": {}
+ },
+ "Decatur": {
+  "files": [],
+  "portals": {}
+ },
+ "Thalipparamba Municipality": {
+  "files": [],
+  "portals": {}
+ },
+ "Hamilton": {
+  "files": [
+   {
+    "url": "https://gis.hamilton-oh.gov/webdocs/Dept%20Resident%20Services/Garbage%20Collection%20Map%20(PDF)_201504020918315213.pdf",
+    "text": "here",
+    "file": "data/city_files/Hamilton/0e62f9_Garbage_20Collection_20Map_20_PDF__201504020918315213.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://hamilton-oh.gov/s/MainHigh-Parking-Map.pdf",
+    "text": "Download Printable Parking Map",
+    "file": "data/city_files/Hamilton/c2fe83_MainHigh-Parking-Map.pdf",
+    "rows": 10,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.hamilton-oh.gov/s/Fence-District-Highland-Park-Overlay-Map-12082021.pdf",
+    "text": "Map of Proposed District",
+    "file": "data/city_files/Hamilton/7fe297_Fence-District-Highland-Park-Overlay-Map-12082021.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.hamilton-oh.gov/s/MainHigh-Parking-Map.pdf",
+    "text": "Download Printable Parking Map",
+    "file": "data/city_files/Hamilton/694a54_MainHigh-Parking-Map.pdf",
+    "rows": 10,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.hamilton-oh.gov/s/ProhibitedStreets-LowSpeedVehicles_Aerial3.pdf",
+    "text": "Download the Route Map",
+    "file": "data/city_files/Hamilton/1c6ac1_ProhibitedStreets-LowSpeedVehicles_Aerial3.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://cohohio.maps.arcgis.com/apps/webappviewer/index.html?id=154769a179db4f77bee9536f8b518b67%2F": "Road Closures Map",
+   "https://storymaps.arcgis.com/stories/724b944845bf45c7858543ce0bf4ff1c?fbclid=IwY2xjawLQw2lleHRuA2FlbQIxMABicmlkETFSZlVxaTVrTUpFODVyVHJHAR5SLBvCfaLqHka2KemkkNNa5nY_nc3X7M9IdvaEPZoedp-uhRMI5M3A8ekTkA_aem_hliO4fd1-IoWoyu_6jb1Sg": "Street Paving Tour",
+   "http://cohohio.maps.arcgis.com/apps/webappviewer/index.html?id=60af093547554369bef2078e0cfd67b4": "searchable online map",
+   "https://storymaps.arcgis.com/stories/3cfcbb670c4949f681d01f47916aae87": "Snow Informer",
+   "https://gis.hamilton-oh.gov/apps/mh/": "Look up your next recycling day",
+   "https://cohohio.maps.arcgis.com/apps/webappviewer/index.html?id=4eb7d6b863a64f968602aeda33d850d2": "Check out this map",
+   "https://gis.hamilton-oh.gov/portal/apps/webappviewer/index.html?id=ec5b09d31a274a2d91e41c0af62e6893": "Interactive GIS Parking Map",
+   "https://cohohio.maps.arcgis.com/apps/webappviewer/index.html?id=8d4bba16d1174a63885b8ef5d327aabb": "https://cohohio.maps.arcgis.com/apps/webappviewer/index.html?id=8d4bba16d1174a63885b8ef5d327aabb"
+  }
+ },
+ "Alta Gracia": {
+  "files": [],
+  "portals": {}
+ },
+ "Concepción": {
+  "files": [],
+  "portals": {}
+ },
+ "Apopka": {
+  "files": [],
+  "portals": {
+   "https://apopka.maps.arcgis.com/home/index.html": "Maps"
+  }
+ },
+ "Kasaragod Municipality": {
+  "files": [
+   {
+    "url": "https://kasaragodmunicipality.lsgkerala.gov.in/system/files/2026-09/Map_FinalN_Kasaragod_Kasargod%20%281%29.pdf",
+    "text": "Map_FinalN_Kasaragod_Kasargod (1).pdf",
+    "file": "data/city_files/Kasaragod_Municipality/78b1b8_Map_FinalN_Kasaragod_Kasargod_20_281_29.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Bandar Seri Begawan": {
+  "files": [],
+  "portals": {}
+ },
+ "Bothell": {
+  "files": [],
+  "portals": {}
+ },
+ "Goose Creek": {
+  "files": [],
+  "portals": {}
+ },
+ "El Centro": {
+  "files": [],
+  "portals": {
+   "https://cityofelcentro.maps.arcgis.com/apps/instant/lookup/index.html?appid=ac1105ebb9854c099c94477fa0cc3f53": "Interactive Zoning Map (GIS)",
+   "https://cityofelcentro.maps.arcgis.com/apps/instant/sidebar/index.html?appid=5ab1b37945f24d869eee9f5084b414ad": "Interactive Development Map (GIS)",
+   "https://cityofelcentro.maps.arcgis.com/apps/instant/sidebar/index.html?appid=9e70aa34056e4b1d923bc9c81a05bf33": "Housing Element Sites Inventory  Interactive Map (GIS)",
+   "https://cityofelcentro.maps.arcgis.com/apps/instant/basic/index.html?appid=916cc44723c64edebf91e5cedde609d2": "Mobile Vending on Streets Map (GIS)",
+   "https://experience.arcgis.com/experience/a628fb7e32174102bb5dd0c216851fdf/": "El Centro GIS VMT Tool",
+   "https://cityof-elcentro.maps.arcgis.com/apps/webappviewer/index.html?id=ab9af5f35f4a4377bbc2a5e5e1983491": "Refuse/Recycle Collection Schedule"
+  }
+ },
+ "Enfield": {
+  "files": [],
+  "portals": {}
+ },
+ "New Berlin": {
+  "files": [],
+  "portals": {
+   "https://newberlin.maps.arcgis.com/apps/instant/gallery/index.html?appid=9a142b4c520f4084b79452b150c4a64f&sortField=title&sortOrder=asc&view=grid": "Property Search",
+   "https://survey123.arcgis.com/share/12e59693e4284f1e826baacfd0949b48": "Report a Concern",
+   "https://newberlin.maps.arcgis.com/apps/instant/lookup/index.html?appid=dddcc9e2c9a8479187e09423f9fe4e10": "Voter Information Search",
+   "https://survey123.arcgis.com/share/9044d816549341f2a5af0c5360ee32c2": "Community Camera Program Registration",
+   "https://newberlin.maps.arcgis.com/apps/instant/basic/index.html?appid=ebd52de66ebb4ac7b827ae0aaef34e91": "CHILD SAFETY ZONE MAP",
+   "https://survey123.arcgis.com": ""
+  }
+ },
+ "Bettendorf": {
+  "files": [
+   {
+    "url": "https://www.bettendorf.org/Tot Lot Nature Bingo Card.pdf?t=202608031057110",
+    "text": "Nature Hunt Bingo Card",
+    "file": "data/city_files/Bettendorf/8af7c0_Tot_Lot_Nature_Bingo_Card.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/departments/parks___recreation/parks___trails/docs/Junior High Course (2.0 Mile).pdf?t=202512051256070",
+    "text": "Junior High Course (2.0 mile)",
+    "file": "data/city_files/Bettendorf/bc55e8_Junior_High_Course_2.0_Mile_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/departments/parks___recreation/parks___trails/docs/High School Course (3.1 Mile).pdf?t=202512051256210",
+    "text": "High School Course (3.1 mile)",
+    "file": "data/city_files/Bettendorf/64a7e6_High_School_Course_3.1_Mile_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/departments/parks___recreation/parks___trails/docs/Men's College Course (8k).pdf?t=202512051256540",
+    "text": "Men's College Course (8k)",
+    "file": "data/city_files/Bettendorf/c66074_Men_s_College_Course_8k_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/departments/parks___recreation/parks___trails/docs/Women's College Course (5k).pdf?t=202512051256370",
+    "text": "Women's College Course (5k)",
+    "file": "data/city_files/Bettendorf/266313_Women_s_College_Course_5k_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Parks & Recreation/Parks Documents/2024 Trails Etiquette and Tips.pdf?t=202409181448010",
+    "text": "Bettendorf Trails User Etiquette and Tips",
+    "file": "data/city_files/Bettendorf/17e0dd_2024_Trails_Etiquette_and_Tips.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Parks & Recreation/Parks Documents/Quad Cities RiverWay Parks & Trails Map.pdf?t=202205111258330",
+    "text": "Quad Cities RiverWay Parks & Trails Map",
+    "file": "data/city_files/Bettendorf/140455_Quad_Cities_RiverWay_Parks_Trails_Map.pdf",
+    "rows": 28,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://www.bettendorf.org/Parks & Recreation/Parks Documents/Quad Cities Metro Area Bicycle Map.pdf?t=202205111257160",
+    "text": "Quad Cities Metro Area Bicycle Map",
+    "file": "data/city_files/Bettendorf/4ea644_Quad_Cities_Metro_Area_Bicycle_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Parks & Recreation/A-Parks Map 01-28-2026.pdf?t=202601281530560",
+    "text": "To view the park map, click here.",
+    "file": "data/city_files/Bettendorf/462d97_A-Parks_Map_01-28-2026.pdf",
+    "rows": 11,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.bettendorf.org/departments/parks___recreation/parks___trails/docs/All Trail Maps for Website.pdf?t=202512051329350",
+    "text": "XC Courses",
+    "file": "data/city_files/Bettendorf/55b63e_All_Trail_Maps_for_Website.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/departments/parks___recreation/parks___trails/docs/2504 Veterans Memorial - rack card.pdf?t=202505271551140",
+    "text": "Veterans Memorial",
+    "file": "data/city_files/Bettendorf/6b2e4e_2504_Veterans_Memorial_-_rack_card.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Works/Engineering/Misc/Documents/Bettendorf ADA Transitition Plan Rev 7-1-25.pdf?t=202509021253010",
+    "text": "Bettendorf ADA Transition Plan",
+    "file": "data/city_files/Bettendorf/4db98a_Bettendorf_ADA_Transitition_Plan_Rev_7-1-25.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Works/Engineering/Water Resources/Documents/Bettendorf Watershed Map.pdf",
+    "text": "",
+    "file": "data/city_files/Bettendorf/3338ad_Bettendorf_Watershed_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Route Changes New Map.pdf",
+    "text": "here",
+    "file": "data/city_files/Bettendorf/a60d21_Route_Changes_New_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Works/Public Works Operations/Transit/03-As a result of a court order regarding masks.pdf?t=202204191249180",
+    "text": "Lifting of Mask Mandate on Public Transit Effective Immediately",
+    "file": "data/city_files/Bettendorf/72fd5d_03-As_a_result_of_a_court_order_regarding_masks.pdf",
+    "rows": 22,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Works/Public Works Operations/Transit/COB DBE PowerPoint 2022 - Revised 5-2-22.pdf?t=202205171633320",
+    "text": "click here",
+    "file": "data/city_files/Bettendorf/88a0b8_COB_DBE_PowerPoint_2022_-_Revised_5-2-22.pdf",
+    "rows": 222,
+    "bike_rows": 39
+   },
+   {
+    "url": "https://www.bettendorf.org/Bettendorf Transit Civil Rights Complaint Form.pdf?t=202605201926060",
+    "text": "Click to Download Civil Rights Complaint Form",
+    "file": "data/city_files/Bettendorf/a96397_Bettendorf_Transit_Civil_Rights_Complaint_Form.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Bettendorf Transit Civil Rights Complaint Form - Spanish.pdf?t=202605201927470",
+    "text": "Haga clic para descargar el formulario de queja sobre derechos civiles.",
+    "file": "data/city_files/Bettendorf/dc15d0_Bettendorf_Transit_Civil_Rights_Complaint_Form_-_Spanish.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Works/Public Works Operations/Transit/Route 1 map- New 12.2023 (Revised 4.19.24).pdf?t=202404191528110",
+    "text": "Route 1 (Red)",
+    "file": "data/city_files/Bettendorf/ba351a_Route_1_map-_New_12.2023_Revised_4.19.24_.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Works/Public Works Operations/Transit/Route 2 map- New 12.2023.pdf?t=202312011040560",
+    "text": "Route 2 (Blue)",
+    "file": "data/city_files/Bettendorf/f51c83_Route_2_map-_New_12.2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Works/Public Works Operations/Transit/Route 3 map- New 12.2023.pdf?t=202312011041090",
+    "text": "Route 3 (Purple)",
+    "file": "data/city_files/Bettendorf/57f296_Route_3_map-_New_12.2023.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Works/Public Works Operations/Transit/Three System Transit Map_05212024.pdf?t=202608211057500",
+    "text": "Overall Quad City Transit Map",
+    "file": "data/city_files/Bettendorf/1c9274_Three_System_Transit_Map_05212024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/New Bettendorf Transit Paratransit Application (Final 7.1.25).pdf?t=202507020902270",
+    "text": "Bettendorf ADA Paratransit Application",
+    "file": "data/city_files/Bettendorf/effd76_New_Bettendorf_Transit_Paratransit_Application_Final_7.1.25_.pdf",
+    "rows": 180,
+    "bike_rows": 57
+   },
+   {
+    "url": "https://www.bettendorf.org/ADA Complementary Paratransit Service Policy and Procedure Manual w Appendix (Final 7.1.25).pdf?t=202507021101360",
+    "text": "ADA Complementary Paratransit Service Policy and Procedure Manual",
+    "file": "data/city_files/Bettendorf/988c63_ADA_Complementary_Paratransit_Service_Policy_and_Procedure_Manual_w_Ap",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/FY 2027 Saturday Fixed Route Transit Services RFP Packet.pdf?t=202603091536190",
+    "text": "Saturday Fixed Route Transit Services",
+    "file": "data/city_files/Bettendorf/209de3_FY_2027_Saturday_Fixed_Route_Transit_Services_RFP_Packet.pdf",
+    "rows": 22,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.bettendorf.org/00-2024 Transit Bus Advertising Full Contract (1).pdf?t=202407231000200",
+    "text": "Transit Bus Advertising Program",
+    "file": "data/city_files/Bettendorf/dcdd17_00-2024_Transit_Bus_Advertising_Full_Contract_1_.pdf",
+    "rows": 26,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Hearing Resolution.pdf?t=202505221133470",
+    "text": "Notice of Public Hearing on Proposed Changes to ADA Complementary Paratransit Service Policy on July 1, 2025",
+    "file": "data/city_files/Bettendorf/6fa93d_Public_Hearing_Resolution.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Hearing Resolution FY26.pdf?t=202503191125420",
+    "text": "Notice of Public Hearing for FY2026 Application for State Transit Assistance Funds on April 15, 2025",
+    "file": "data/city_files/Bettendorf/465a65_Public_Hearing_Resolution_FY26.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Hearing Resolution 5307 FY25.pdf?t=202503191124140",
+    "text": "Notice of Public Hearing for FY2025 Application for Federal Transit Administration Section 5307 Financial Assistance on ",
+    "file": "data/city_files/Bettendorf/eaeeba_Public_Hearing_Resolution_5307_FY25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Public Hearing Resolution FY25 5310.pdf?t=202408091523040",
+    "text": "Notice of Public Hearing for FY2025 Application for Federal Transit Administration Section 5310 Financial Assistance on ",
+    "file": "data/city_files/Bettendorf/16ba56_Public_Hearing_Resolution_FY25_5310.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Publlic Hearing Resolution FY2025 STA Funds.pdf?t=202404041209320",
+    "text": "Notice of Public Hearing for FY2025 Application for State Transit Assistance Funds on May 7, 2024",
+    "file": "data/city_files/Bettendorf/583b36_Publlic_Hearing_Resolution_FY2025_STA_Funds.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Publlic Hearing Resolution 5307 Financial Assistance.pdf?t=202404031300490",
+    "text": "Notice of Public Hearing for FY2024 Application for Federal Transit Administration Section 5307 Financial Assistance on ",
+    "file": "data/city_files/Bettendorf/ebb9b9_Publlic_Hearing_Resolution_5307_Financial_Assistance.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Publlic Hearing Resolution 5307 Capital Project Funds.pdf?t=202404041202250",
+    "text": "Notice of Public Hearing for FY2024 Application for Federal Transit Administration Section 5307 Capital Project Funds on",
+    "file": "data/city_files/Bettendorf/ab25f2_Publlic_Hearing_Resolution_5307_Capital_Project_Funds.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bettendorf.org/Publlic Hearing Resolution 5339 Capital Project Funds.pdf?t=202404041205540",
+    "text": "Notice of Public Hearing for FY2024 Application for Federal Transit Administration Section 5339 Capital Project Funds on",
+    "file": "data/city_files/Bettendorf/7bf19f_Publlic_Hearing_Resolution_5339_Capital_Project_Funds.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://www.legis.iowa.gov/law/iowaCode": "Iowa State Code",
+   "https://bettendorfgis-bettendorf.hub.arcgis.com/": "Interactive Maps",
+   "https://bettendorf.maps.arcgis.com/apps/dashboards/87e962d35f434726b537fcb246313c0d": "road construction website",
+   "https://bettendorf.maps.arcgis.com/apps/webappviewer/index.html?id=d45e33feba42484289aef180f43af628": "Downtown Bettendorf Parking Map"
+  }
+ },
+ "New Albany": {
+  "files": [
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/UEZ-Map-with-Street-Names.pdf",
+    "text": "Urban Enterprise Zone",
+    "file": "data/city_files/New_Albany/ce4e53_UEZ-Map-with-Street-Names.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/nsp_area_map-1.pdf",
+    "text": "Neighborhood Stabilization Target Area",
+    "file": "data/city_files/New_Albany/2352c3_nsp_area_map-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/grantline-road-map.pdf",
+    "text": "Grantline Road",
+    "file": "data/city_files/New_Albany/48bd3a_grantline-road-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/grantline_and_state_tif_maps.pdf",
+    "text": "Grantline and Sate",
+    "file": "data/city_files/New_Albany/686f36_grantline_and_state_tif_maps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/loop-island-tannery.pdf",
+    "text": "Loop Island Tannery",
+    "file": "data/city_files/New_Albany/b603f9_loop-island-tannery.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/state-street-garage-exp.pdf",
+    "text": "State St Garage",
+    "file": "data/city_files/New_Albany/358421_state-street-garage-exp.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/state-street-tif-map.pdf",
+    "text": "State St",
+    "file": "data/city_files/New_Albany/d1f47f_state-street-tif-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/oor_area_map.pdf",
+    "text": "Owner Occupied Rehab Target Area",
+    "file": "data/city_files/New_Albany/1aa8dc_oor_area_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/residential_energy_audit_area_map.pdf",
+    "text": "Midtown",
+    "file": "data/city_files/New_Albany/a41351_residential_energy_audit_area_map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/residential_energy_audit_area_map-1.pdf",
+    "text": "Residential Energy Audit Target Area",
+    "file": "data/city_files/New_Albany/bdaced_residential_energy_audit_area_map-1.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/downtown-business-district-map.pdf",
+    "text": "Downtown Business Area",
+    "file": "data/city_files/New_Albany/f98c4b_downtown-business-district-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/midtown-map.pdf",
+    "text": "Midtown Neighborhood",
+    "file": "data/city_files/New_Albany/29756c_midtown-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/08/City-Clerks_20230815_105345.pdf",
+    "text": "Handicapped Parking Application",
+    "file": "data/city_files/New_Albany/9d4150_City-Clerks_20230815_105345.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2023/07/DISPUTE-FORM.pdf",
+    "text": "Parking Ticket Dispute Form",
+    "file": "data/city_files/New_Albany/4b95b3_DISPUTE-FORM.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2022/04/All-Three-Trails.pdf",
+    "text": "Greg Mills Memorial Tree Trails",
+    "file": "data/city_files/New_Albany/4c81a6_All-Three-Trails.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2022/04/Midtown-Loop-1.75mi.pdf",
+    "text": "Greg Mills Memorial Tree Trails – Midtown Loop 1.8 Miles",
+    "file": "data/city_files/New_Albany/f04e4e_Midtown-Loop-1.75mi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2022/04/Downtown-Loop-1.3mi.pdf",
+    "text": "Greg Mills Memorial Tree Trails – Downtown Loop 1.3 Miles",
+    "file": "data/city_files/New_Albany/a09ff6_Downtown-Loop-1.3mi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2022/04/Mansion-Row-Loop-1.85mi.pdf",
+    "text": "Greg Mills Memorial Tree Trails – Mansion Row 1.8 Miles",
+    "file": "data/city_files/New_Albany/fdc915_Mansion-Row-Loop-1.85mi.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2022/10/Japanese-Maple-Acer-palmatum.pdf",
+    "text": "Japanese Maple",
+    "file": "data/city_files/New_Albany/acc35b_Japanese-Maple-Acer-palmatum.pdf",
+    "rows": 17,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2022/10/Silver-Maple-Acer-saccharinum.pdf",
+    "text": "Silver Maple",
+    "file": "data/city_files/New_Albany/38d827_Silver-Maple-Acer-saccharinum.pdf",
+    "rows": 20,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2022/10/Sugar-Maple-Acer-saccharum.pdf",
+    "text": "Sugar Maple",
+    "file": "data/city_files/New_Albany/bf7476_Sugar-Maple-Acer-saccharum.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2022/10/Hedge-Maple.pdf",
+    "text": "Hedge Maple",
+    "file": "data/city_files/New_Albany/2dc015_Hedge-Maple.pdf",
+    "rows": 17,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2022/10/Paperbark-Maple-Acer-griseum.pdf",
+    "text": "Paperbark Maple",
+    "file": "data/city_files/New_Albany/4e3396_Paperbark-Maple-Acer-griseum.pdf",
+    "rows": 21,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2022/10/Red-Maple-Acer-rubrum.pdf",
+    "text": "Red Maple",
+    "file": "data/city_files/New_Albany/a92139_Red-Maple-Acer-rubrum.pdf",
+    "rows": 24,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://cityofnewalbany.com/wp-content/uploads/2022/10/Tamarack-Larix-laricinia.pdf",
+    "text": "Tamarack",
+    "file": "data/city_files/New_Albany/7405bc_Tamarack-Larix-laricinia.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Franklin": {
+  "files": [
+   {
+    "url": "https://franklinwi.gov/Files/Parks/Park--Trail-Map-Edited-8-2025.pdf",
+    "text": "Franklin Parks & Trails Map",
+    "file": "data/city_files/Franklin/ff6dae_Park--Trail-Map-Edited-8-2025.pdf",
+    "rows": 19,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://franklinwi.gov/Files/SolidWasteCollection/FranklinWI-Automated-Garbage-Recycling-Program.pdf",
+    "text": "Automated Garbage and Recycling Program",
+    "file": "data/city_files/Franklin/d28de9_FranklinWI-Automated-Garbage-Recycling-Program.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/SolidWasteCollection/2025-Trash-and-Recycling-Information-Card-FINAL.pdf",
+    "text": "",
+    "file": "data/city_files/Franklin/5d9a1d_2025-Trash-and-Recycling-Information-Card-FINAL.pdf",
+    "rows": 9,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://franklinwi.gov/Files/SolidWasteCollection/2026-Trash-and-Recycling-Information-Card-FINAL.pdf",
+    "text": "Trash/Recycling Information Card",
+    "file": "data/city_files/Franklin/d4af4b_2026-Trash-and-Recycling-Information-Card-FINAL.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Elections/Absentee-Ballots-Issued-Returned-and-Provisional-Outstanding-List-11-3-2026.pdf",
+    "text": "List of Absentee Ballots Issued, Returned as of 11/3/2026, and Outstanding Provisional Ballots",
+    "file": "data/city_files/Franklin/13a90c_Absentee-Ballots-Issued-Returned-and-Provisional-Outstanding-List-11-3",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Elections/absenteeballotapplication2020.pdf",
+    "text": "Application for an Absentee Ballot",
+    "file": "data/city_files/Franklin/8a83ac_absenteeballotapplication2020.pdf",
+    "rows": 47,
+    "bike_rows": 14
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Maps/AldermanicDistrictMaps/Aldermanic-District-and-Ward-Map-2024.pdf",
+    "text": "Aldermanic District/Ward Map",
+    "file": "data/city_files/Franklin/e88a1b_Aldermanic-District-and-Ward-Map-2024.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Maps/AldermanicDistrictMaps/Aldermanic-District-1-Map-with-Polling-Location-2024.pdf",
+    "text": "Map",
+    "file": "data/city_files/Franklin/ffb6ab_Aldermanic-District-1-Map-with-Polling-Location-2024.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Maps/AldermanicDistrictMaps/Aldermanic-District-2-Map-with-Polling-Location-2024.pdf",
+    "text": "Map",
+    "file": "data/city_files/Franklin/25433d_Aldermanic-District-2-Map-with-Polling-Location-2024.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Maps/AldermanicDistrictMaps/Aldermanic-District-3-Map-with-Polling-Location-2024.pdf",
+    "text": "Map",
+    "file": "data/city_files/Franklin/09a88d_Aldermanic-District-3-Map-with-Polling-Location-2024.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Maps/AldermanicDistrictMaps/Aldermanic-District-4-Map-with-Polling-Location-2024.pdf",
+    "text": "Map",
+    "file": "data/city_files/Franklin/e4a23e_Aldermanic-District-4-Map-with-Polling-Location-2024.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Maps/AldermanicDistrictMaps/Aldermanic-District-5-Map-with-Polling-Location-2024.pdf",
+    "text": "Map",
+    "file": "data/city_files/Franklin/245668_Aldermanic-District-5-Map-with-Polling-Location-2024.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Maps/AldermanicDistrictMaps/Aldermanic-District-6-Map-with-Polling-Location-2024.pdf",
+    "text": "Map",
+    "file": "data/city_files/Franklin/4791cd_Aldermanic-District-6-Map-with-Polling-Location-2024.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Business/Business-Images-2024/Loomis-Business-Park-Outline-Map.pdf",
+    "text": "Loomis Business Park Outline",
+    "file": "data/city_files/Franklin/9a2199_Loomis-Business-Park-Outline-Map.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Business/Business-Images-2024/Franklin-Business--Industrial-Park-Map.pdf",
+    "text": "Franklin Industrial & Business Park Map",
+    "file": "data/city_files/Franklin/7c0b8b_Franklin-Business--Industrial-Park-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Business/Business-Images-2024/North-Cape-Industrial-Park-Map.pdf",
+    "text": "North Cape Industrial Park Map",
+    "file": "data/city_files/Franklin/93e8f4_North-Cape-Industrial-Park-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/SolidWasteCollection/WE_Energies_Appliance_Recycle_Flyer.pdf",
+    "text": "View Flyer",
+    "file": "data/city_files/Franklin/1f0900_WE_Energies_Appliance_Recycle_Flyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map4_1.pdf",
+    "text": "Map 4.1 - Existing Public Outdoor Recreation Sites: 2010",
+    "file": "data/city_files/Franklin/8fc018_CORP2025_Final_map4_1.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map4_2.pdf",
+    "text": "Map 4.2 - Existing Parks Serving as Community Parks and Minimum Service Radii",
+    "file": "data/city_files/Franklin/1bbda7_CORP2025_Final_map4_2.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map4_3.pdf",
+    "text": "Map 4.3 - Existing Parks Serving as Neighborhood Parks & Minimum Service Radii",
+    "file": "data/city_files/Franklin/1db614_CORP2025_Final_map4_3.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map4_4.pdf",
+    "text": "Map 4.4 - Existing Parks Serving as Mini Parks and Minimum Service Radii",
+    "file": "data/city_files/Franklin/03dade_CORP2025_Final_map4_4.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map4_5.pdf",
+    "text": "Map 4.5 - Known Natural Areas in the City of Franklin: 2010",
+    "file": "data/city_files/Franklin/df8d56_CORP2025_Final_map4_5.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map5_1.pdf",
+    "text": "Map 5.1 - Areas Served/Not Served by Community, Neighborhood, or Mini Parks",
+    "file": "data/city_files/Franklin/03421c_CORP2025_Final_map5_1.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/07-Map-7.1-CORP-2030-FINAL-2015-0106-TN-12_22_14.pdf",
+    "text": "Map 7.1 - Existing and Planned Public Outdoor Recreation Sites: 2010",
+    "file": "data/city_files/Franklin/2fd6be_07-Map-7.1-CORP-2030-FINAL-2015-0106-TN-12_22_14.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map9_1.pdf",
+    "text": "Map 9.1 - City of Franklin Community Park Facilities Zones",
+    "file": "data/city_files/Franklin/2e4ed3_CORP2025_Final_map9_1.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map9_2.pdf",
+    "text": "Map 9.2 - City of Franklin Neighborhood Park Facilities Zones",
+    "file": "data/city_files/Franklin/fe32f7_CORP2025_Final_map9_2.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map9_3.pdf",
+    "text": "Map 9.3 - City of Franklin Mini Park Facilities Zones",
+    "file": "data/city_files/Franklin/151006_CORP2025_Final_map9_3.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.franklinwi.gov/Files/SolidWasteCollection/FranklinWI-Automated-Garbage-Recycling-Program.pdf",
+    "text": "Automated Garbage and Recycling Program",
+    "file": "data/city_files/Franklin/8b0cf8_FranklinWI-Automated-Garbage-Recycling-Program.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.franklinwi.gov/Files/SolidWasteCollection/2025-Trash-and-Recycling-Information-Card-FINAL.pdf",
+    "text": "",
+    "file": "data/city_files/Franklin/cc5b86_2025-Trash-and-Recycling-Information-Card-FINAL.pdf",
+    "rows": 9,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.franklinwi.gov/Files/SolidWasteCollection/2026-Trash-and-Recycling-Information-Card-FINAL.pdf",
+    "text": "Trash & Recycling Instructions",
+    "file": "data/city_files/Franklin/bc8f83_2026-Trash-and-Recycling-Information-Card-FINAL.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map4_1.pdf",
+    "text": "Map 4.1 - Existing Public Outdoor Recreation Sites: 2010",
+    "file": "data/city_files/Franklin/6bb1d0_CORP2025_Final_map4_1.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map4_2.pdf",
+    "text": "Map 4.2 - Existing Parks Serving as Community Parks and Minimum Service Radii",
+    "file": "data/city_files/Franklin/489462_CORP2025_Final_map4_2.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map4_3.pdf",
+    "text": "Map 4.3 - Existing Parks Serving as Neighborhood Parks & Minimum Service Radii",
+    "file": "data/city_files/Franklin/3cd69b_CORP2025_Final_map4_3.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map4_4.pdf",
+    "text": "Map 4.4 - Existing Parks Serving as Mini Parks and Minimum Service Radii",
+    "file": "data/city_files/Franklin/194064_CORP2025_Final_map4_4.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map4_5.pdf",
+    "text": "Map 4.5 - Known Natural Areas in the City of Franklin: 2010",
+    "file": "data/city_files/Franklin/32bd19_CORP2025_Final_map4_5.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map5_1.pdf",
+    "text": "Map 5.1 - Areas Served/Not Served by Community, Neighborhood, or Mini Parks",
+    "file": "data/city_files/Franklin/04af47_CORP2025_Final_map5_1.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/07-Map-7.1-CORP-2030-FINAL-2015-0106-TN-12_22_14.pdf",
+    "text": "Map 7.1 - Existing and Planned Public Outdoor Recreation Sites: 2010",
+    "file": "data/city_files/Franklin/5c2d4f_07-Map-7.1-CORP-2030-FINAL-2015-0106-TN-12_22_14.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.franklinwi.gov/Files/Planning/CompOutdoorRecPlanUpdate/CORP2025_Final_map9_1.pdf",
+    "text": "Map 9.1 - City of Franklin Community Park Facilities Zones",
+    "file": "data/city_files/Franklin/b35fa0_CORP2025_Final_map9_1.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://doc.arcgis.com/en/experience-builder/latest/get-started/requirements.htm": "full system requirements",
+   "https://franklinwi.maps.arcgis.com/apps/instant/gallery/index.html?appid=100ae3519aaf4a909df6eb12232f160b&sortField=title&sortOrder=asc&view=grid": "Accept Disclaimer and Launch GIS Map Gallery",
+   "https://experience.arcgis.com/experience/bcd2b5e709e04af0880e171c4aeb25a7": "LCRR Service Line Inventory"
+  }
+ },
+ "Wildwood": {
+  "files": [
+   {
+    "url": "http://www.onestl.org/media/site/documents/committee/materials/Recycle Responsibly Toolkit.pdf",
+    "text": "",
+    "file": "data/city_files/Wildwood/4f007b_Recycle_Responsibly_Toolkit.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://coww.maps.arcgis.com/apps/instant/basic/index.html?appid=5a800d68d0ed4ba8a67ea3c95e0c0be6": "interactive waste hauler map",
+   "https://coww.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=0842ff670b9e47709401d4816fdbe419&locale=en": "click here to view Online Ward Map Online Ward Map",
+   "https://storymaps.arcgis.com/stories/964a16a8eb584805ba7b4e791a70da54": "Click here to see all Wildwood's Route 66 Centennial Events and Business Specials!",
+   "https://storymaps.arcgis.com/stories/ab0f66f774824a7d8ec7380e46319a14": "",
+   "https://storymaps.arcgis.com/stories/94187a949db44cf5b2f7fa06ca2d4c4c": "",
+   "https://coww.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=a99d53a1ac2b4d82ab9cb0db0d9481c2": "a Municipal Zoning Map",
+   "https://www.arcgis.com/apps/Embed/index.html?webmap=089ec4c52d504fb282184de2b5067666&extent=-90.7683,38.5234,-90.5466,38.6346&home=true&zoom=true&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=false&theme=dark": "View larger map",
+   "https://stlcogis.maps.arcgis.com/apps/webappviewer/index.html?id=e70f8f1814a34cd7bf8f6766bd950c68/": "online Property Viewer",
+   "https://coww.maps.arcgis.com/apps/mapviewer/index.html?webmap=0d42c1a4a8e04155a31867c0e930fb19": "explore the City's interactive map",
+   "https://amecei.maps.arcgis.com/apps/webappviewer/index.html?id=2ac0864241b747b4b11302f2c4cc7bc9": "proposed changes to the FIRMs",
+   "https://data.census.gov/cedsci/profile?g=1600000US2979820": "Census Bureau Website"
+  }
+ },
+ "Holland": {
+  "files": [],
+  "portals": {
+   "https://tree-management-1-bpw.hub.arcgis.com/": "Urban Forest",
+   "https://experience.arcgis.com/experience/09ef04df25b645b5b2937c795f35ea1e": "",
+   "https://experience.arcgis.com/experience/5fadd36f7fbb4f0c8c92a250c94ae6d8": "",
+   "https://gis-ottawacountymi.hub.arcgis.com/apps/aaf96515c0894e20aa68855b875c5ed3/explore": "Ottawa County Criminal Incident Mapping",
+   "https://gis-ottawacountymi.hub.arcgis.com/": "Ottawa County GIS",
+   "https://storymaps.arcgis.com/stories/d3566f886bac4314b2ea4367a25ba983": "",
+   "https://experience.arcgis.com/experience/7aa90b961bd4443885b005bb61b6d40c": "",
+   "https://gis.cityofholland.com/portal/apps/experiencebuilder/experience/?id=c893d243efcd4bab891b66d2f5fd27e3": "",
+   "https://experience.arcgis.com/experience/f9270964ce3144c8ac4e1f723ef16c30": "",
+   "https://experience.arcgis.com/experience/21c7f2ca60a147f4bae6e98b1a652fcc": ""
+  }
+ },
+ "Kaysville": {
+  "files": [],
+  "portals": {}
+ },
+ "Clearfield": {
+  "files": [],
+  "portals": {}
+ },
+ "Roldán": {
+  "files": [],
+  "portals": {}
+ },
+ "Gloucester": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/c69f80232af14e428f438f8c583b5cf8/page/Home/": "Comprehensive Plan"
+  }
+ },
+ "Chalakudy Municipality": {
+  "files": [],
+  "portals": {}
+ }
+}
