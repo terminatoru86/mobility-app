@@ -1,0 +1,1708 @@
+{
+ "El Paso TX": {
+  "files": [
+   {
+    "url": "https://elpasotexas.gov/assets/Documents/CoEP/Municipal-Courts/PARKING-BOND-SCHEDULE-2022.pdf",
+    "text": "Parking Schedule",
+    "file": "data/city_files/El_Paso_TX/87a942_PARKING-BOND-SCHEDULE-2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://transit.sunmetro.net/_documents/pdf/routes/current/route208.pdf",
+    "text": "Montana Corridor BRIO",
+    "file": "data/city_files/El_Paso_TX/cc39be_route208.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://transit.sunmetro.net/_documents/pdf/routes/current/route207.pdf",
+    "text": "Dyer Brio",
+    "file": "data/city_files/El_Paso_TX/eb601f_route207.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://elpasotexas.gov/assets/Documents/CoEP/Parks/Park-Planning/Standard-Details/PDF/119-WALKING-TRAIL-ALONG-EASEMENTS-OR-PEDESTRIAN-RIGHT-OF-WAYS.pdf",
+    "text": "PDF",
+    "file": "data/city_files/El_Paso_TX/c386a3_119-WALKING-TRAIL-ALONG-EASEMENTS-OR-PEDESTRIAN-RIGHT-OF-WAYS.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://elpasotexas.gov/assets/Documents/CoEP/Parks/Park-Planning/Standard-Details/PDF/120-WALKING-TRAIL-ALONG-PARK-RIGHT-OF-WAY.pdf",
+    "text": "PDF",
+    "file": "data/city_files/El_Paso_TX/540f1e_120-WALKING-TRAIL-ALONG-PARK-RIGHT-OF-WAY.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://elpasotexas.gov/assets/Documents/CoEP/Parks/Park-Planning/Standard-Details/PDF/121-WALKING-TRAIL-ALONG-PARK-ROCKWALLS.pdf",
+    "text": "PDF",
+    "file": "data/city_files/El_Paso_TX/ec86fa_121-WALKING-TRAIL-ALONG-PARK-ROCKWALLS.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://elpasotexas.gov/assets/Documents/CoEP/Parks/Park-Planning/Standard-Details/PDF/309-MULTI-8-OUTLET-EMITTER.pdf",
+    "text": "PDF",
+    "file": "data/city_files/El_Paso_TX/abb258_309-MULTI-8-OUTLET-EMITTER.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://elpasotexas.gov/assets/Documents/CoEP/Parks/Park-Planning/Standard-Details/PDF/310-MULTI-8-OUTLET-EMITTER-FOR-TREE.pdf",
+    "text": "PDF",
+    "file": "data/city_files/El_Paso_TX/665dea_310-MULTI-8-OUTLET-EMITTER-FOR-TREE.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://elpasotexas.gov/assets/Documents/CoEP/Parks/Park-Planning/Standard-Details/PDF/313-PUMPS-PLAN-VIEW-DETAIL.pdf",
+    "text": "PDF",
+    "file": "data/city_files/El_Paso_TX/a14d6c_313-PUMPS-PLAN-VIEW-DETAIL.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://elpasotexas.gov/assets/Documents/CoEP/Parks/Park-Planning/Standard-Details/PDF/401-CONTROLLER-WALL-MOUNT-DETAIL-INSIDE-PUMP-HOUSE.pdf",
+    "text": "PDF",
+    "file": "data/city_files/El_Paso_TX/7c6c5b_401-CONTROLLER-WALL-MOUNT-DETAIL-INSIDE-PUMP-HOUSE.pdf",
+    "rows": 13,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://elpasotexas.gov/assets/Documents/CoEP/Parks/Park-Planning/Standard-Details/PDF/500-HC-PARKING-SIGN-1.pdf",
+    "text": "PDF",
+    "file": "data/city_files/El_Paso_TX/2fef82_500-HC-PARKING-SIGN-1.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://elpasotexas.gov/assets/Documents/CoEP/Parks/Park-Planning/Standard-Details/PDF/501-HC-PARKING-SIGN-2.pdf",
+    "text": "PDF",
+    "file": "data/city_files/El_Paso_TX/4fa623_501-HC-PARKING-SIGN-2.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://gis.elpasotexas.gov/neighborhoodassociations": "Find Your Neighborhood Association",
+   "https://gis.elpasotexas.gov/districting/": "Find Your Representative",
+   "https://city-of-el-paso-open-data-coepgis.hub.arcgis.com/apps/45f5393dd75c4ea6a0646eae2b4d1a9b/explore": "Free Wifi Hot Spots",
+   "https://gis.elpasotexas.gov/economicdevelopment/": "Economic Development Map",
+   "https://city-of-el-paso-open-data-coepgis.hub.arcgis.com": "Open Data",
+   "https://gis.elpasotexas.gov/parksfinder/": "Find a Park",
+   "https://gis.elpasotexas.gov/cmviewer/": "Recreation & Senior Center Map"
+  }
+ },
+ "Lubbock TX": {
+  "files": [],
+  "portals": {}
+ },
+ "Manchester NH": {
+  "files": [
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/archives/0409_004_CemeteryTrustees.pdf",
+    "text": "Board of Cemetery Trustees Records, 1856-2001 (0409.004)",
+    "file": "data/city_files/Manchester_NH/3fa4bf_0409_004_CemeteryTrustees.pdf",
+    "rows": 16,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/archives/0409_006_CemeteryAdministrativeRecords.pdf",
+    "text": "Cemetery Administrative Records, 1906-1973 (0409.006)",
+    "file": "data/city_files/Manchester_NH/6cf92e_0409_006_CemeteryAdministrativeRecords.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Unofficial%20Floterial%20Rep%20Districts%20Primary%20Races%202014%20%28web%29.pdf",
+    "text": "Unofficial State Primary Election Results (Floterial Representative Races - Ward Summary)",
+    "file": "data/city_files/Manchester_NH/f72cd8_Unofficial_20Floterial_20Rep_20Districts_20Primary_20Races_202014_20_2",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 1 Sample Ballot.pdf?ver=2026-09-28-153540-223",
+    "text": "Ward 1 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/6073da_2026-11-03_Ward_1_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 2 Sample Ballot.pdf?ver=2026-09-28-153540-223",
+    "text": "Ward 2 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/22cfe2_2026-11-03_Ward_2_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 3 Sample Ballot.pdf?ver=2026-09-28-153540-490",
+    "text": "Ward 3 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/0e5a1f_2026-11-03_Ward_3_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 4 Sample Ballot.pdf?ver=2026-09-28-153540-490",
+    "text": "Ward 4 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/5ff3b0_2026-11-03_Ward_4_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 5 Sample Ballot.pdf?ver=2026-09-28-153540-597",
+    "text": "Ward 5 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/514beb_2026-11-03_Ward_5_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 6 Sample Ballot.pdf?ver=2026-09-28-153540-520",
+    "text": "Ward 6 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/680cc0_2026-11-03_Ward_6_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 7 Sample Ballot.pdf?ver=2026-09-28-153540-537",
+    "text": "Ward 7 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/8a9552_2026-11-03_Ward_7_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 8 Sample Ballot.pdf?ver=2026-09-28-153540-520",
+    "text": "Ward 8 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/b116b1_2026-11-03_Ward_8_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 9 Sample Ballot.pdf?ver=2026-09-28-153540-643",
+    "text": "Ward 9 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/796424_2026-11-03_Ward_9_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 10 Sample Ballot.pdf?ver=2026-09-28-153540-630",
+    "text": "Ward 10 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/e55f95_2026-11-03_Ward_10_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 11 Sample Ballot.pdf?ver=2026-09-28-153540-630",
+    "text": "Ward 11 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/2d943a_2026-11-03_Ward_11_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/elections/Sample Ballots/2026-11-03_Ward 12 Sample Ballot.pdf?ver=2026-09-28-153540-643",
+    "text": "Ward 12 - Sample State General Election Ballot",
+    "file": "data/city_files/Manchester_NH/f98d9e_2026-11-03_Ward_12_Sample_Ballot.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/CitywideWardMap.pdf",
+    "text": "All Wards - Map",
+    "file": "data/city_files/Manchester_NH/6939cc_CitywideWardMap.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward1Map.pdf",
+    "text": "Ward 1 - Map",
+    "file": "data/city_files/Manchester_NH/854e9e_Ward1Map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward2Map.pdf",
+    "text": "Ward 2 - Map",
+    "file": "data/city_files/Manchester_NH/849f22_Ward2Map.pdf",
+    "rows": 3,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward3Map.pdf",
+    "text": "Ward 3 - Map",
+    "file": "data/city_files/Manchester_NH/2556f9_Ward3Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward4Map.pdf",
+    "text": "Ward 4 - Map",
+    "file": "data/city_files/Manchester_NH/10faeb_Ward4Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward5Map.pdf",
+    "text": "Ward 5 - Map",
+    "file": "data/city_files/Manchester_NH/08c99a_Ward5Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward6Map.pdf",
+    "text": "Ward 6 - Map",
+    "file": "data/city_files/Manchester_NH/4baf7d_Ward6Map.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward7Map.pdf",
+    "text": "Ward 7 - Map",
+    "file": "data/city_files/Manchester_NH/41d158_Ward7Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.manchesternh.gov/Portals/2/Departments/city_clerk/wards/Ward8Map.pdf",
+    "text": "Ward 8 - Map",
+    "file": "data/city_files/Manchester_NH/504776_Ward8Map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://survey123.arcgis.com/share/4601ba15d2ee46609f656db18ad8e3e2": "Manchester Tree Request Survey.",
+   "https://manchesternh.maps.arcgis.com/apps/webappviewer/index.html?id=fbe7572fbac34a24a18a0cee5a270e7e": "View Updated Paving Plan"
+  }
+ },
+ "Nassau County": {
+  "files": [],
+  "portals": {
+   "https://nassau-county.maps.arcgis.com/apps/MapJournal/index.html?appid=76473c9be39146929e95c6f6d9833508": "Public Open Spaces",
+   "http://nassau-county.maps.arcgis.com/apps/webappviewer/index.html?id=0bb83341f55f4df6842c957214890699": "Flood Zone Map",
+   "https://storymaps.arcgis.com/stories/2733131df1b14c5084d36ed7a451bb81": "Travel insights provides travel and global disease information that may help you with your planning."
+  }
+ },
+ "Denton County": {
+  "files": [],
+  "portals": {
+   "https://data-dentoncounty.hub.arcgis.com/": "",
+   "https://gis.dentoncounty.gov/": "Landmark Interactive Map",
+   "https://storymaps.arcgis.com/stories/9dc68a0614944d4e9ba66426eded7bf9": "Landmark Help",
+   "https://data-dentoncounty.hub.arcgis.com/pages/printedmapproducts": "map products page",
+   "https://experience.arcgis.com/experience/8fcaf8e6c7fb480985c7f37c8b76748a": "Historical Markers",
+   "https://dentoncounty.maps.arcgis.com/apps/MapTour/index.html?appid=822337f155e34183b6497bc53b53696a": "Historic Iron Bridge Tour page",
+   "https://experience.arcgis.com/experience/2e59e5efe8f5480083390339451bf468": "Road Closure Notifications",
+   "https://dentoncounty.maps.arcgis.com/apps/Embed/index.html?webmap=81f90490ab8241c39b5400647f22b342&extent=-97.4459,32.8539,-96.7819,33.5302&home=true&zoom=true&scale=true&disable_scroll=false&theme=light": "Commissioner Precinct 1 Map",
+   "https://dentoncounty.maps.arcgis.com/apps/Embed/index.html?webmap=78b4048285fb47b08636b8d50394fa17&extent=-97.0748,32.9261,-96.7428,33.2646&home=true&zoom=true&scale=true&disable_scroll=false&theme=light": "Commissioner Precinct 2 Map",
+   "https://www.arcgis.com/apps/dashboards/d9c47c35cdd949df91baa1dca2c4054d": ""
+  }
+ },
+ "Bernalillo County": {
+  "files": [],
+  "portals": {}
+ },
+ "Lancaster County": {
+  "files": [
+   {
+    "url": "https://susqnha.org/wp-content/uploads/2026/10/NWRTBrochure2026_Digital-compressed-compressed-1-compressed.pdf",
+    "text": "here Version OptionsNorthwest Lancaster County River TrailHeadline",
+    "file": "data/city_files/Lancaster_County/bda27b_NWRTBrochure2026_Digital-compressed-compressed-1-compressed.pdf",
+    "rows": 14,
+    "bike_rows": 11
+   }
+  ],
+  "portals": {
+   "https://lancastercountypa.maps.arcgis.com/apps/webappviewer/index.html?id=f98250cd1f7d4f72b115d0b1a9b1ad24": "Voting",
+   "https://lancastercountypa.maps.arcgis.com/apps/webappviewer/index.html?id=97a16dc9b3ae4648b0419a94a607f375": "LanCo View",
+   "https://lancastercountypa.maps.arcgis.com/apps/Viewer/index.html?appid=d14206901f664de992b498919905e693": "Encuesta de monumentos",
+   "https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.arcgis.com%2Fexperience%2Fc534b47d7d904583a315ea1d88c250cd&data=05%7C02%7CEMirth%40lancastercountypa.gov%7C1a00af1d019f453b639208de89c9fb3f%7C1b7b599652dc45fab6a1af44d53ea7c8%7C0%7C0%7C639099697764782594%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=NJHuVpaNZHT0iLu6sq9Wb9TOgagaLgdFe9QPHUDjSyA%3D&reserved=0": "Preserved Farms",
+   "https://storymaps.arcgis.com/stories/45d5ab4f": "",
+   "https://lancastercountypa.maps.arcgis.com/apps/webappviewer/index.html?id=c006bb300ea9493db84dfab123caab24": "Parks and Trails",
+   "https://lancastercountypa.maps.arcgis.com/apps/instant/sidebar/index.html?appid=02cf298c08154799bcc6f7c72a3b2b7c": "Memorial Tree Locations",
+   "http://fema.maps.arcgis.com/home/webmap/viewer.html?webmap=cbe088e7c8704464aa0fc34eb99e7f30": "ArcGIS Online layer",
+   "https://lancastercountypa.maps.arcgis.com/home/index.html": "ArcGIS Online",
+   "http://lancastercountypa.maps.arcgis.com/home/index.html": "ArcGIS Online Mapping Platform",
+   "https://lancastercountypa.maps.arcgis.com/apps/webappviewer/index.html?id=714d2f3543f74519ad5d64b21b4e2a51": "Grandjas preservadas",
+   "https://lancastercountypa.maps.arcgis.com/apps/MapTour/index.html?appid=e0a5cb0ad5544a25a8d8f0550a5c671a&webmap=cabb5711ddcd4315987350416321000a": ""
+  }
+ },
+ "Knox County": {
+  "files": [],
+  "portals": {}
+ },
+ "Genesee County": {
+  "files": [],
+  "portals": {}
+ },
+ "Horry County": {
+  "files": [],
+  "portals": {
+   "https://scdot.maps.arcgis.com/apps/MapSeries/index.html?appid=ca1cd69fc88945f4bb465e16765d761c": "SCDOT Road Updates"
+  }
+ },
+ "Santa Ana": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/fe964ed135524aa4b4103e2cfa43d806": "Street Lighting Master Plan"
+  }
+ },
+ "St. Johns County": {
+  "files": [
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2023/08/SJCTakeFiveFlyer.pdf",
+    "text": "Take 5 Recycling Postcard",
+    "file": "data/city_files/St_Johns_County/4e645d_SJCTakeFiveFlyer.pdf",
+    "rows": 8,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/Alpine-Groves-Park-Trail.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Johns_County/b54025_Alpine-Groves-Park-Trail.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/Beluthahatchee-Park-Trail.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Johns_County/ba06a7_Beluthahatchee-Park-Trail.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/Canopy-Shores-Park-Trail.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Johns_County/3d010d_Canopy-Shores-Park-Trail.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/Cora-C.-Harrison-Trailhead.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Johns_County/69f57d_Cora-C.-Harrison-Trailhead.pdf",
+    "rows": 4,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/Flagler-Estates-Park-Trail.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Johns_County/8bbc3f_Flagler-Estates-Park-Trail.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/mcCullough-creek-trail-map.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Johns_County/25c036_mcCullough-creek-trail-map.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/Nease-Beachfront-Park-Trail.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Johns_County/0513f1_Nease-Beachfront-Park-Trail.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/11x17-Portrait-Paddling_Nocatee-Landing-to-Capo-Creek.pdf",
+    "text": "Paddling Map (Nocatee Landing to Capo Creek)",
+    "file": "data/city_files/St_Johns_County/5ff9a1_11x17-Portrait-Paddling_Nocatee-Landing-to-Capo-Creek.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/11x17-Portrait-Paddling_Nocatee-Landing-to-GTMNERR-Dam.pdf",
+    "text": "Paddling Map (Nocatee Landing to GTMNERR Dam)",
+    "file": "data/city_files/St_Johns_County/0e11c4_11x17-Portrait-Paddling_Nocatee-Landing-to-GTMNERR-Dam.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/Nocatee-Trail-Map.pdf",
+    "text": "Paddling Map (Trout Creek)",
+    "file": "data/city_files/St_Johns_County/d87023_Nocatee-Trail-Map.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/Southeast-Intracoastal-Waterway-Park-Trail.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Johns_County/88b76d_Southeast-Intracoastal-Waterway-Park-Trail.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/11x17-Portrait-Paddling_Moultrie-to-Moses-Creek.pdf",
+    "text": "Paddling Map (Moultrie to Moses Creek)",
+    "file": "data/city_files/St_Johns_County/73b380_11x17-Portrait-Paddling_Moultrie-to-Moses-Creek.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/Treaty-Park-Trail.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Johns_County/523942_Treaty-Park-Trail.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/Trout-Creek-Park-Trail.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Johns_County/d4e296_Trout-Creek-Park-Trail.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/11x17-Portrait-Paddling_Trout-Creek-to-Hallowes-Cove.pdf",
+    "text": "Paddling Map (Trout Creek to Hallowes Cove)",
+    "file": "data/city_files/St_Johns_County/dd7fa8_11x17-Portrait-Paddling_Trout-Creek-to-Hallowes-Cove.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/11x17-Portrait-Paddling_Trout-Creek-to-Six-Mile-Creek.pdf",
+    "text": "Paddling Map (Trout Creek to Six-Mile Creek)",
+    "file": "data/city_files/St_Johns_County/6f0326_11x17-Portrait-Paddling_Trout-Creek-to-Six-Mile-Creek.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.sjcfl.us/wp-content/uploads/2025/07/Vaill-Point-Park-Trail.pdf",
+    "text": "Trail Map",
+    "file": "data/city_files/St_Johns_County/3c4832_Vaill-Point-Park-Trail.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://www.gis.sjcfl.us/Html5Viewer/index.html?viewer=iMap": "iMap",
+   "https://data-sjcfl.hub.arcgis.com/": "GIS Open Data",
+   "https://sjcfl.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=a58a28b0e181470bbf9fa30c05fb3875": "Map Mart",
+   "https://sjcfl.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=e566c35a7bb840ae8dcf6a38a63814af": "",
+   "https://survey123.arcgis.com/share/52bd91321bc64c079dbef4fcb3318a8f": "Utility Address Request",
+   "https://www.gis.sjcfl.us/floodviewer/": "Flood Zone Viewer",
+   "https://sjcfl.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=a58a28b0e181470bbf9fa30c05fb3875&q=recreation": "",
+   "https://sjcfl.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=a58a28b0e181470bbf9fa30c05fb3875&q=hurricane%20tracking": "",
+   "https://sjcfl.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=22e2d179ad3c45e29cd66e78357ab899": "",
+   "http://www.gis.com/": "www.gis.com",
+   "https://sjcfl.maps.arcgis.com/apps/MinimalGallery/index.html?appid=b3a3949584524e61b6f920786e8bcd99": "Traffic Circulation Plan",
+   "https://sjcpwd.maps.arcgis.com/apps/dashboards/899b4250a51b481f99f01a5e32f52588": "Capital Improvement Projects Dashboard"
+  }
+ },
+ "Scottsdale": {
+  "files": [
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---overview-map.pdf?sfvrsn=3e51ed21_1",
+    "text": "Desert Foothills - Overview Map",
+    "file": "data/city_files/Scottsdale/d46525_desert-foothills---overview-map.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-1-map.pdf?sfvrsn=dfae837b_1",
+    "text": "Desert Foothills - Area 1 Map",
+    "file": "data/city_files/Scottsdale/93dca5_desert-foothills---area-1-map.pdf",
+    "rows": 9,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-2-map.pdf?sfvrsn=15919cb4_1",
+    "text": "Desert Foothills - Area 2 Map",
+    "file": "data/city_files/Scottsdale/c4d4e7_desert-foothills---area-2-map.pdf",
+    "rows": 19,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-3-map.pdf?sfvrsn=9be1550d_1",
+    "text": "Desert Foothills - Area 3 Map",
+    "file": "data/city_files/Scottsdale/2ba2e5_desert-foothills---area-3-map.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-4a-map.pdf?sfvrsn=91d92f6c_1",
+    "text": "Desert Foothills - Area 4a Map",
+    "file": "data/city_files/Scottsdale/f485bd_desert-foothills---area-4a-map.pdf",
+    "rows": 16,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-4b-map.pdf?sfvrsn=e9917620_1",
+    "text": "Desert Foothills - Area 4b Map",
+    "file": "data/city_files/Scottsdale/d6b6de_desert-foothills---area-4b-map.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-5a-map.pdf?sfvrsn=55303135_2",
+    "text": "Desert Foothills - Area 5a Map",
+    "file": "data/city_files/Scottsdale/9d6f74_desert-foothills---area-5a-map.pdf",
+    "rows": 22,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-5b-map.pdf?sfvrsn=d02ca4f4_1",
+    "text": "Desert Foothills - Area 5b Map",
+    "file": "data/city_files/Scottsdale/7d46ff_desert-foothills---area-5b-map.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-5c-map.pdf?sfvrsn=3183e05a_1",
+    "text": "Desert Foothills - Area 5c Map",
+    "file": "data/city_files/Scottsdale/7b161f_desert-foothills---area-5c-map.pdf",
+    "rows": 20,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-5d-map.pdf?sfvrsn=8f965ad2_1",
+    "text": "Desert Foothills - Area 5d Map",
+    "file": "data/city_files/Scottsdale/fcfb94_desert-foothills---area-5d-map.pdf",
+    "rows": 19,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-6-map.pdf?sfvrsn=f383e9c1_1",
+    "text": "Desert Foothills - Area 6 Map",
+    "file": "data/city_files/Scottsdale/51616d_desert-foothills---area-6-map.pdf",
+    "rows": 23,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-7-map.pdf?sfvrsn=d61890d2_1",
+    "text": "Desert Foothills - Area 7 Map",
+    "file": "data/city_files/Scottsdale/a2d17d_desert-foothills---area-7-map.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-8a-map.pdf?sfvrsn=433b39d1_1",
+    "text": "Desert Foothills - Area 8a Map",
+    "file": "data/city_files/Scottsdale/ce79e9_desert-foothills---area-8a-map.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-8b-map.pdf?sfvrsn=dbb12174_1",
+    "text": "Desert Foothills - Area 8b Map",
+    "file": "data/city_files/Scottsdale/c982f0_desert-foothills---area-8b-map.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-9a-map.pdf?sfvrsn=a46af1a8_1",
+    "text": "Desert Foothills - Area 9a Map",
+    "file": "data/city_files/Scottsdale/9fcd73_desert-foothills---area-9a-map.pdf",
+    "rows": 17,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-9b-map.pdf?sfvrsn=be36d68c_1",
+    "text": "Desert Foothills - Area 9b Map",
+    "file": "data/city_files/Scottsdale/a3077a_desert-foothills---area-9b-map.pdf",
+    "rows": 18,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-10-map.pdf?sfvrsn=1efbf6d9_1",
+    "text": "Desert Foothills - Area 10 Map",
+    "file": "data/city_files/Scottsdale/8043db_desert-foothills---area-10-map.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-foothills---area-11-map.pdf?sfvrsn=25fad1fd_1",
+    "text": "Desert Foothills - Area 11 Map",
+    "file": "data/city_files/Scottsdale/e299a9_desert-foothills---area-11-map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-highlands---overview-map.pdf?sfvrsn=2482b6f3_1",
+    "text": "Desert Highlands - Overview Map",
+    "file": "data/city_files/Scottsdale/af1cc7_desert-highlands---overview-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-highlands---area-1a-map.pdf?sfvrsn=5bf0ec28_1",
+    "text": "Desert Highlands - Area 1a Map",
+    "file": "data/city_files/Scottsdale/85c752_desert-highlands---area-1a-map.pdf",
+    "rows": 14,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-highlands---area-1b-map.pdf?sfvrsn=54e4385a_1",
+    "text": "Desert Highlands - Area 1b Map",
+    "file": "data/city_files/Scottsdale/7e946a_desert-highlands---area-1b-map.pdf",
+    "rows": 8,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-highlands---area-2-map.pdf?sfvrsn=6337f49f_1",
+    "text": "Desert Highlands - Area 2 Map",
+    "file": "data/city_files/Scottsdale/8a48b9_desert-highlands---area-2-map.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/desert-highlands---area-3-map.pdf?sfvrsn=70f0e98b_1",
+    "text": "Desert Highlands - Area 3 Map",
+    "file": "data/city_files/Scottsdale/fa9b2d_desert-highlands---area-3-map.pdf",
+    "rows": 16,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/dynamite-foothills---overview-map.pdf?sfvrsn=f8d0705a_1",
+    "text": "Dynamite Foothills - Overview Map",
+    "file": "data/city_files/Scottsdale/9f7aee_dynamite-foothills---overview-map.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/transportation/laips/dynamite-foothills---area-1-map.pdf?sfvrsn=36dadba6_1",
+    "text": "Dynamite Foothills - Area 1 Map",
+    "file": "data/city_files/Scottsdale/f77678_dynamite-foothills---area-1-map.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.scottsdaleaz.gov": "Open Data Portal",
+   "https://www.arcgis.com/apps/dashboards/7b6ae4231dba45aea680c8f350fe2048": "View Pavement Preservation Map",
+   "https://experience.arcgis.com/experience/a67a42f72c5c46b4878a0f7f2553c76a/?draft=true&amp;org=COS-GIS&amp;org=COS-GIS": "Paths & Trails",
+   "https://storymaps.arcgis.com/stories/b79e70862ca34607a8cd13beee1ba900": "Early Town-Building",
+   "https://experience.arcgis.com/experience/a67a42f72c5c46b4878a0f7f2553c76a/?draft=true&amp;org=COS-GIS%2CCOS-GIS": "View the online map",
+   "https://data-cos-gis.opendata.arcgis.com/": "Datasets Available for Download"
+  }
+ },
+ "Jackson County": {
+  "files": [
+   {
+    "url": "https://jacksoncountyor.gov/Document Center/Departments/Clerk/Elections/Election Forms/Party Affiliation & Ballot Content.pdf?t=202509091837100",
+    "text": "Party Affiliation & Ballot Content",
+    "file": "data/city_files/Jackson_County/6c87c7_Party_Affiliation_Ballot_Content.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.fvap.gov/uploads/FVAP/Forms/fpca.pdf",
+    "text": "Military and Overseas Voter Registration and Absentee Ballot Request Form",
+    "file": "data/city_files/Jackson_County/8c72e1_fpca.pdf",
+    "rows": 36,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.fvap.gov/uploads/FVAP/Forms/fwab.pdf",
+    "text": "Federal Write‑In Absentee Ballot",
+    "file": "data/city_files/Jackson_County/bdd420_fwab.pdf",
+    "rows": 72,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://jacksoncountyor.gov/Document Center/Departments/Surveyor/Surveyor Index Map/Survey Index Map Metadata.pdf",
+    "text": "Survey Index Map Metadata",
+    "file": "data/city_files/Jackson_County/31ad1e_Survey_Index_Map_Metadata.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://jacksoncountyor.gov/Document Center/Departments/Surveyor/Surveyor Index Map/Survey Index Map User Instructions.pdf",
+    "text": "Survey Index Map User Instructions",
+    "file": "data/city_files/Jackson_County/76d1fd_Survey_Index_Map_User_Instructions.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://jacksoncountyor.gov/Document Center/Departments/Roads/Contact Us/JC SITE MAP.pdf?t=202510071539570",
+    "text": "Area Map – PDF",
+    "file": "data/city_files/Jackson_County/c3c2c6_JC_SITE_MAP.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://jacksoncountyor.gov/Document Center/Departments/Parks/Camping/Howard Prairie Resort/Howard Prairie Marina.pdf",
+    "text": "Howard Prairie Marina Map",
+    "file": "data/city_files/Jackson_County/c0eba5_Howard_Prairie_Marina.pdf",
+    "rows": 92,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://jim-jcgis.hub.arcgis.com/": "Jackson Interactive Mapping",
+   "https://jcgis.maps.arcgis.com/apps/webappviewer/index.html?id=c337b851fdd94785925c0964ac94840c": "Latest Residential Sales",
+   "https://gis.jacksoncountyor.gov/": "Jackson County Geographic Information Systems",
+   "https://experience.arcgis.com/experience/e3f5012b4489496bbd9fc07cae1eb4d6": "",
+   "https://jcgis.maps.arcgis.com/apps/webappviewer/index.html?id=7b0e688c3623477db9fab13acf7154e7": "Survey Index Map 2.0"
+  }
+ },
+ "Worcester": {
+  "files": [
+   {
+    "url": "https://worcesterma.gov/finance/document-center/ticket-appeal.pdf",
+    "text": "Parking Ticket Appeal Form",
+    "file": "data/city_files/Worcester/218013_ticket-appeal.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/streets/document-center/trash-recycling-guide.pdf",
+    "text": "Trash & Recycling Guide",
+    "file": "data/city_files/Worcester/8d8028_trash-recycling-guide.pdf",
+    "rows": 29,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://worcesterma.gov/streets/document-center/trash-recycling-guide-sp.pdf",
+    "text": "Spanish",
+    "file": "data/city_files/Worcester/6f5ea7_trash-recycling-guide-sp.pdf",
+    "rows": 29,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/streets/document-center/trash-recycling-guide-pt.pdf",
+    "text": "Portuguese",
+    "file": "data/city_files/Worcester/8acc0d_trash-recycling-guide-pt.pdf",
+    "rows": 28,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/streets/document-center/trash-recycling-guide-viet.pdf",
+    "text": "Vietnamese",
+    "file": "data/city_files/Worcester/c93f12_trash-recycling-guide-viet.pdf",
+    "rows": 30,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/trash-recycling/green-worcester-corps.pdf",
+    "text": "About Worcester Green Corps",
+    "file": "data/city_files/Worcester/5fddc9_green-worcester-corps.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/zoning-map-set.pdf",
+    "text": "Entire Zoning Map Set (Underlying & Overlays) - as Amended Through August 7, 2024",
+    "file": "data/city_files/Worcester/382238_zoning-map-set.pdf",
+    "rows": 8,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/zoning-map.pdf",
+    "text": "Zoning Map (Underlying) - as Amended Through August 7, 2024",
+    "file": "data/city_files/Worcester/1a786a_zoning-map.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/zoning-map-overlays.pdf",
+    "text": "Zoning Map (Overlays) - as Amended Through August 7, 2024",
+    "file": "data/city_files/Worcester/2265c5_zoning-map-overlays.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20260203d.pdf",
+    "text": "Zoning Map Amendment - February 3, 2026 (D)",
+    "file": "data/city_files/Worcester/163394_map-amend-20260203d.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20260203c.pdf",
+    "text": "Zoning Map Amendment - February 3, 2026 (C)",
+    "file": "data/city_files/Worcester/64f515_map-amend-20260203c.pdf",
+    "rows": 9,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20260203b.pdf",
+    "text": "Zoning Map Amendment - February 3, 2026 (B)",
+    "file": "data/city_files/Worcester/3eaf14_map-amend-20260203b.pdf",
+    "rows": 16,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20260203a.pdf",
+    "text": "Zoning Map Amendment - February 3, 2026 (A)",
+    "file": "data/city_files/Worcester/4eb3ae_map-amend-20260203a.pdf",
+    "rows": 11,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20251209d.pdf",
+    "text": "Zoning Map Amendment - December 9, 2025 (D)",
+    "file": "data/city_files/Worcester/391130_map-amend-20251209d.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20251209c.pdf",
+    "text": "Zoning Map Amendment - December 9, 2025 (C)",
+    "file": "data/city_files/Worcester/a10d42_map-amend-20251209c.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20251209b.pdf",
+    "text": "Zoning Map Amendment - December 9, 2025 (B)",
+    "file": "data/city_files/Worcester/85802c_map-amend-20251209b.pdf",
+    "rows": 8,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20251209a.pdf",
+    "text": "Zoning Map Amendment - December 9, 2025 (A)",
+    "file": "data/city_files/Worcester/1b37f8_map-amend-20251209a.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20250909b.pdf",
+    "text": "Zoning Map Amendment - September 9, 2025 (B)",
+    "file": "data/city_files/Worcester/9fedaf_map-amend-20250909b.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20250909a.pdf",
+    "text": "Zoning Map Amendment - September 9, 2025 (A)",
+    "file": "data/city_files/Worcester/e1fc8c_map-amend-20250909a.pdf",
+    "rows": 5,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20250715.pdf",
+    "text": "Zoning Map Amendment - July 15, 2025",
+    "file": "data/city_files/Worcester/86fd83_map-amend-20250715.pdf",
+    "rows": 8,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20250429.pdf",
+    "text": "Zoning Map Amendment - April 29, 2025",
+    "file": "data/city_files/Worcester/4eceb9_map-amend-20250429.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240716d.pdf",
+    "text": "Zoning Map Amendment - July 16, 2024 (D)",
+    "file": "data/city_files/Worcester/514e4e_map-amend-20240716d.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240716c.pdf",
+    "text": "Zoning Map Amendment - July 16, 2024 (C)",
+    "file": "data/city_files/Worcester/548407_map-amend-20240716c.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240716b.pdf",
+    "text": "Zoning Map Amendment - July 16, 2024 (B)",
+    "file": "data/city_files/Worcester/b8782f_map-amend-20240716b.pdf",
+    "rows": 7,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://worcesterma.gov/planning-regulatory/document-center/map-amend-20240716a.pdf",
+    "text": "Zoning Map Amendment - July 16, 2024 (A)",
+    "file": "data/city_files/Worcester/7eff04_map-amend-20240716a.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://opendata.worcesterma.gov/": "Informing Worcester",
+   "https://worcesterma.maps.arcgis.com/apps/mapviewer/index.html?webmap=10b04f20978b41b7858b299b0d262a78": "View larger map",
+   "https://experience.arcgis.com/experience/6ccb45f0c063458fbb5db5e6fceb7146": "View Larger Map",
+   "https://experience.arcgis.com/experience/c3236a1cc0dc460f96eda69a4331326b": "View Larger Map",
+   "https://experience.arcgis.com/experience/651de32003d64e81a56f7aee40be0609": "View Larger Map",
+   "https://opendata.worcesterma.gov/documents/0b1ea670ddb242ac805b875df2fcb63b/about": "Executive Order",
+   "https://storymaps.arcgis.com/stories/ba46a3d293de43c5b615725a2dacd0d3": "Learn More About Vision Zero - StoryMap",
+   "https://opendata.worcesterma.gov": "Explore Now",
+   "https://storymaps.arcgis.com/stories/0e1e558f46b94c1fbd024faaf84a7140": "Introducing Worcester Atlas Storymap",
+   "https://experience.arcgis.com/experience/503920c4ab1b4404bee9dce73114538d": "Map Viewer",
+   "https://storymaps.arcgis.com/stories/e5e1107aab06429796e60663e0ca34ad": "Climate Resilience in Worcester",
+   "https://storymaps.arcgis.com/stories/fc83183192db40139f50b2ef76193294": "A History of Worcester in 10 Maps"
+  }
+ },
+ "Butler County": {
+  "files": [],
+  "portals": {}
+ },
+ "Chattanooga": {
+  "files": [
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2025-12/Waste-Tonnage.pdf",
+    "text": "Solid Waste and Recycling Total Tonnage Cy 2024",
+    "file": "data/city_files/Chattanooga/7b920d_Waste-Tonnage.pdf",
+    "rows": 73,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-06/Solid_Waste_and_Recycling_Total_Tonnage_CY_2014.pdf",
+    "text": "Tonelaje Total de Residuos Sólidos y Reciclaje Año 2014",
+    "file": "data/city_files/Chattanooga/501539_Solid_Waste_and_Recycling_Total_Tonnage_CY_2014.pdf",
+    "rows": 87,
+    "bike_rows": 23
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-06/Solid_Waste_and_Recycling_Total_Tonnage_CY_2013.pdf",
+    "text": "Tonelaje Total de Residuos Sólidos y Reciclaje Año 2013",
+    "file": "data/city_files/Chattanooga/d903b4_Solid_Waste_and_Recycling_Total_Tonnage_CY_2013.pdf",
+    "rows": 79,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-06/Solid_Waste_and_Recycling_Total_Tonnage_CY_2012.pdf",
+    "text": "Tonelaje Total de Residuos Sólidos y Reciclaje Año 2012",
+    "file": "data/city_files/Chattanooga/158ffa_Solid_Waste_and_Recycling_Total_Tonnage_CY_2012.pdf",
+    "rows": 72,
+    "bike_rows": 19
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-06/Solid_Waste_and_Recycling_Total_Tonnage_CY_2011.pdf",
+    "text": "Tonelaje Total de Residuos Sólidos y Reciclaje Año 2011",
+    "file": "data/city_files/Chattanooga/43b52e_Solid_Waste_and_Recycling_Total_Tonnage_CY_2011.pdf",
+    "rows": 62,
+    "bike_rows": 18
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-06/HandicapParking.pdf",
+    "text": "Dibujo Estándar de Estacionamiento para Personas con Discapacidad de la Ciudad de Chattanooga",
+    "file": "data/city_files/Chattanooga/f98e80_HandicapParking.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-06/ParkingDimensions.pdf",
+    "text": "Dimensiones de Estacionamiento de la Ciudad de Chattanooga",
+    "file": "data/city_files/Chattanooga/d99b6a_ParkingDimensions.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-06/Parking_Lot_Standards_Rev.pdf",
+    "text": "page",
+    "file": "data/city_files/Chattanooga/206e97_Parking_Lot_Standards_Rev.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-06/Report_ThinkBike_Chattanooga_finals.pdf",
+    "text": "Final Report",
+    "file": "data/city_files/Chattanooga/c47fb9_Report_ThinkBike_Chattanooga_finals.pdf",
+    "rows": 6,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-06/Chattanooga_Bike_Fac.pdf",
+    "text": "Bike Facilities Map",
+    "file": "data/city_files/Chattanooga/b98e3e_Chattanooga_Bike_Fac.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-06/BikeCityCenter.pdf",
+    "text": "Low volume route options, bike repair stations and bike shops map",
+    "file": "data/city_files/Chattanooga/4dbde4_BikeCityCenter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-05/Parking---Final.pdf",
+    "text": "City of Chattanooga Parking Dimensions",
+    "file": "data/city_files/Chattanooga/5b613f_Parking---Final.pdf",
+    "rows": 25,
+    "bike_rows": 8
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-05/HandicapParking.pdf",
+    "text": "City of Chattanooga Handicapped Parking Standard Drawing",
+    "file": "data/city_files/Chattanooga/f9536a_HandicapParking.pdf",
+    "rows": 7,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-05/Parking_Lot_Standards_Rev.pdf",
+    "text": "General Guidelines for Marking Parking Lots",
+    "file": "data/city_files/Chattanooga/8e7d51_Parking_Lot_Standards_Rev.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-03/renaissanceparkmap.pdf",
+    "text": "Download Park Map",
+    "file": "data/city_files/Chattanooga/8d5b02_renaissanceparkmap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-09/St_Elmo_Updated.pdf",
+    "text": "Map",
+    "file": "data/city_files/Chattanooga/0776a4_St_Elmo_Updated.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-09/Chattanooga_Historic_Guidelines_St_Elmo_9-11-2014_Final.pdf",
+    "text": "Guidelines",
+    "file": "data/city_files/Chattanooga/3363ab_Chattanooga_Historic_Guidelines_St_Elmo_9-11-2014_Final.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-09/Fort_Wood_Updated.pdf",
+    "text": "Map",
+    "file": "data/city_files/Chattanooga/980afb_Fort_Wood_Updated.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-09/Ferger_Place_Updated.pdf",
+    "text": "Map",
+    "file": "data/city_files/Chattanooga/cd9000_Ferger_Place_Updated.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-09/Chattanooga_Historic_Guidelines_Ferger_Place_9-11-2014_Final.small_.pdf",
+    "text": "Guidelines",
+    "file": "data/city_files/Chattanooga/495a29_Chattanooga_Historic_Guidelines_Ferger_Place_9-11-2014_Final.small_.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-09/Battery_Place_Updated.pdf",
+    "text": "Map",
+    "file": "data/city_files/Chattanooga/488a3f_Battery_Place_Updated.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-09/Chattanooga_Historic_Guidelines_Battery_Place_9-11-2014_Final.small_.pdf",
+    "text": "Guidelines",
+    "file": "data/city_files/Chattanooga/d220fa_Chattanooga_Historic_Guidelines_Battery_Place_9-11-2014_Final.small_.p",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://chattanooga.gov/sites/default/files/2024-09/CHZC_BYLAWS_August_2019_-_FINAL.pdf",
+    "text": "Rules of Procedure Chattanooga Historic Zoning Commission's (CHZC) BYLAWS",
+    "file": "data/city_files/Chattanooga/2824b2_CHZC_BYLAWS_August_2019_-_FINAL.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://chattanooga.gov/stay-informed/maps-open-data": "Maps & Open Data",
+   "https://pwgis.chattanooga.gov/portal/apps/webappviewer/index.html?id=6fe50a4276874f76b89a78d5fd573ce9&_gl=1*10vxup2*_ga*MTU0OTE4OTk4OC4xNzA4NTM5NjM5*_ga_5SBPHRK8VH*MTcxMjA3NzEzNC4xMjguMS4xNzEyMDc4MDU2LjAuMC4w": "Buscar Localizador de Parques",
+   "https://experience.arcgis.com/experience/d309750277664719bf120e48934fd5be": "Learn More",
+   "https://chattanooga.gov/es/stay-informed/maps-open-data": "Mapas y Datos Abiertos",
+   "https://experience.arcgis.com/experience/718641611f204c3b8e5d34463a6a7af7": "View Map",
+   "https://chattgis.maps.arcgis.com/apps/dashboards/26f80b57a6004486bdf586d046fa0014": "View Map",
+   "https://experience.arcgis.com/experience/8cb7e890782c46a28ab37a8f0294ec28": "View Map",
+   "https://experience.arcgis.com/experience/8d45f344afc24e8cbd21671afe7c22a1": "View Map",
+   "https://www.arcgis.com/apps/dashboards/20dd538acb2949f1a2d54b0d69313347": "View Map",
+   "https://experience.arcgis.com/experience/ba4635cc3209431e8037235aafc67acd": "View map",
+   "https://pwgis.chattanooga.gov/portal/apps/webappviewer/index.html?id=9d5f789262d44d91b23d22420c40cb9c&_gl=1*226co7*_ga*MTU0OTE4OTk4OC4xNzA4NTM5NjM5*_ga_5SBPHRK8VH*MTcxNjU3MTY5MS4zMjAuMS4xNzE2NTcxNzAxLjAuMC4w": "Public GIS Map"
+  }
+ },
+ "Pembroke Pines": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/be8f78f810b049728d9dbd6fb5118934/": "Parks & Facilities",
+   "https://pembroke-pines-gis-hub-3-pembrokepines.hub.arcgis.com/": "",
+   "https://experience.arcgis.com/experience/8c32bfb3bac244fb85a80306b9fdc880": "Community Bus Service",
+   "https://geohub-bcgis.opendata.arcgis.com/": "Broward County GeoHub",
+   "https://experience.arcgis.com/experience/dcba62c19ad74698851a95793115616a": "Posted Notice",
+   "https://data.fdot.gov/road/projects/": "FDOT Interactive Project Map",
+   "https://pembrokepines.maps.arcgis.com/apps/webappviewer/index.html?id=ccda8286991f41e68e14a2bc1c2aae11": "Sex Offenders & Predators Permissible Living Area Map",
+   "https://experience.arcgis.com/experience/378c88d6a1cc4c2cb0b0e60cde4e67c4": "Find My Trash/Bulk Pick-up Day"
+  }
+ },
+ "Comal County": {
+  "files": [
+   {
+    "url": "https://www.txdmv.gov/sites/default/files/form_files/VTR-141.pdf",
+    "text": "Trailer Verification Statement of Fact Form (VTR-141) (PDF)",
+    "file": "data/city_files/Comal_County/c4ecc0_VTR-141.pdf",
+    "rows": 20,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://www.txdmv.gov/sites/default/files/form_files/VTR-52-A.pdf",
+    "text": "Application for Farm Trailer/Semitrailer, Farm Truck, or Farm Truck Tractor Lic. (PDF)",
+    "file": "data/city_files/Comal_County/ddb51c_VTR-52-A.pdf",
+    "rows": 25,
+    "bike_rows": 5
+   }
+  ],
+  "portals": {}
+ },
+ "Canadian County": {
+  "files": [],
+  "portals": {
+   "https://canadian-county-geographic-information-center-canadiancounty.hub.arcgis.com/": "Mapping & GIS Data Find various maps and data for the County.",
+   "https://survey123.arcgis.com/share/7c146acc40db4fcb94e15ae7cb8e437c": "Report It survey",
+   "https://experience.arcgis.com/experience/8a21bdd7dbb74fbc998bf7638a691fd7": "Property Tax Estimator",
+   "https://canadiancounty.maps.arcgis.com/apps/instant/lookup/index.html?appid=c25b01b3eed34e7fb4337696a44c81f0": "District Finder App"
+  }
+ },
+ "Torrance": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/b6c12fd0a4774f38a303e3d034775854": "https://fragis.fra.dot.gov/GISFRASafety/."
+  }
+ },
+ "Cedar Rapids": {
+  "files": [],
+  "portals": {
+   "https://crgis.cedar-rapids.org/wbwsc/webtrac.wsc/splash.html": "Online Registration and Pool Season Pass Renewal",
+   "https://survey123.arcgis.com/share/709743d7252949e68ae788238416d91d": "",
+   "https://experience.arcgis.com/experience/0d62cfa4ec7e4d1e8995dabb93a4268b/page/Road-Closures": "Current Road Closure Map",
+   "https://experience.arcgis.com/experience/0d62cfa4ec7e4d1e8995dabb93a4268b": "Construction Project Map",
+   "https://crgis.cedar-rapids.org/wbwsc/golftrac.wsc/splash.html": "Buy Online",
+   "https://crgis.maps.arcgis.com/apps/dashboards/7f4363f93a404f3291f6a9adfbd27bbf": "Full Screen Dashboard"
+  }
+ },
+ "Pickens County": {
+  "files": [
+   {
+    "url": "https://www.co.pickens.sc.us/document_center/About Us/Maps/council_topo_c_size.pdf",
+    "text": "County Council Map",
+    "file": "data/city_files/Pickens_County/82d196_council_topo_c_size.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.co.pickens.sc.us/document_center/News/Historic Easley Cotton Mill Tax Incentive Information.pdf?t=202011152031150",
+    "text": "Historic Easley Cotton Mill - Tax Incentive Information",
+    "file": "data/city_files/Pickens_County/7d700b_Historic_Easley_Cotton_Mill_Tax_Incentive_Information.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://pickenscosc.maps.arcgis.com/home/index.html": "GIS Open Data Portal",
+   "https://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/gis.php": "GIS",
+   "http://pickenscosc.maps.arcgis.com/home/index.html": "Pickens County GIS Open Data Portal",
+   "https://pickenscosc.maps.arcgis.com/apps/CrowdsourceReporter/index.html?appid=8f05257b113c44dd8c19758bcf291b5c": "Code & Litter Enforcement Reporting Tool"
+  }
+ },
+ "Cochise County": {
+  "files": [],
+  "portals": {
+   "https://gis-cochise.opendata.arcgis.com/": "GIS / Maps Learn More",
+   "https://cochise.maps.arcgis.com/apps/webappviewer/index.html?id=892c0ecaa5564c1991b6a0abeec1a37f": "Road Status Interactive Map",
+   "https://cochise.maps.arcgis.com/apps/webappviewer/index.html?id=f349f194fa4d4c7aaea6fa5296758316": "Precinct Map"
+  }
+ },
+ "Fayette County": {
+  "files": [
+   {
+    "url": "https://fayettecountyga.gov/Documents/Departments/Environmental Management/2017-EPD-MS4-Phase-II-final-permit.pdf",
+    "text": "NPDES General Permit for Phase II - Stormwater Discharges-Small MS4s-Dec 2017",
+    "file": "data/city_files/Fayette_County/a8138e_2017-EPD-MS4-Phase-II-final-permit.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fayettecountyga.gov/Documents/Departments/Planning And Zoning/ZoningDistrictMatrix.pdf",
+    "text": "Zoning & Lot Requirements",
+    "file": "data/city_files/Fayette_County/90660d_ZoningDistrictMatrix.pdf",
+    "rows": 46,
+    "bike_rows": 9
+   },
+   {
+    "url": "https://fayettecountyga.gov/Documents/Departments/Elections/Election Maps and Voter Precincts/Congress Map 2023.pdf?t=202605041730420",
+    "text": "Federal Congressional Districts in Fayette County Click to Download",
+    "file": "data/city_files/Fayette_County/dd7716_Congress_Map_2023.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://fayettecountyga.gov/Documents/Departments/Elections/Election Maps and Voter Precincts/Georgia-State-Senate-Districts-Map 2026.pdf?t=202605041732180",
+    "text": "Georgia State Senate District Map Click to Download",
+    "file": "data/city_files/Fayette_County/47f343_Georgia-State-Senate-Districts-Map_2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fayettecountyga.gov/Documents/Departments/Elections/Election Maps and Voter Precincts/Georgia-State-House-of-Representatives-Districts-Map 2026.pdf?t=202605041734000",
+    "text": "Georgia State House of Representatives District Map Click to Download",
+    "file": "data/city_files/Fayette_County/dc3492_Georgia-State-House-of-Representatives-Districts-Map_2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fayettecountyga.gov/Documents/Departments/Elections/Election Maps and Voter Precincts/Fayette-County-Commission-Districts-Map-2022.pdf?t=202603181538540",
+    "text": "Fayette County Commission & School Board District Map Click to Download",
+    "file": "data/city_files/Fayette_County/aae5d5_Fayette-County-Commission-Districts-Map-2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fayettecountyga.gov/Documents/Departments/Planning And Zoning/Comprehensive Plan/Full-Fayette-County-Comp-Plan-Land-Use-Map.pdf?t=202511250956020",
+    "text": "Fayette County Comprehensive Plan 2017-2040 - Future Land Use Plan",
+    "file": "data/city_files/Fayette_County/cd65b4_Full-Fayette-County-Comp-Plan-Land-Use-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fayettecountyga.gov/Documents/Departments/Public Works/PUBLIC WORKS/Transportation Planning/Plans/2019 CTP/Fayette Design Guidelines Final11.15.2019.pdf?t=202608181256460",
+    "text": "Fayette County Master Path Plan Path System  Design Guidelines",
+    "file": "data/city_files/Fayette_County/2818dd_Fayette_Design_Guidelines_Final11.15.2019.pdf",
+    "rows": 46,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://fayettecountyga.gov/Documents/Departments/Public Works/PUBLIC WORKS/Transportation Planning/Studies/State-Route-74-Comprehensive-Corridor-Study.pdf?t=202608181417450",
+    "text": "SR74 - FINAL REPORT",
+    "file": "data/city_files/Fayette_County/e15e98_State-Route-74-Comprehensive-Corridor-Study.pdf",
+    "rows": 496,
+    "bike_rows": 58
+   }
+  ],
+  "portals": {
+   "https://fayettecounty.maps.arcgis.com/apps/webappviewer/index.html?id=e737a1b64f8f4a029fc7f8d9bd1148b5": "County Commission District Map"
+  }
+ },
+ "Provo": {
+  "files": [],
+  "portals": {}
+ },
+ "Hardin County": {
+  "files": [
+   {
+    "url": "https://transportation.ky.gov/Organizational-Resources/Forms/TC%2096-347.pdf",
+    "text": "Choose this link to download a Parking Placard Application Form",
+    "file": "data/city_files/Hardin_County/49dc7a_TC_2096-347.pdf",
+    "rows": 22,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://hcgo.maps.arcgis.com/apps/Solutions/s2.html?appid=6fe3f56b2c974686b14d86edaf536d26": "Property Search",
+   "https://hcgo.maps.arcgis.com/home/index.html": "Hardin County Online GIS Website",
+   "https://hcgo.maps.arcgis.com/apps/instant/nearby/index.html?appid=fd9a3e8f9ab94f83a8f67f7a8d33c040": "",
+   "https://hcgo.maps.arcgis.com/apps/instant/nearby/index.html?appid=841a9d2efeea45acb5c9da5f264e7e69": "Recycle Trailers Near Me Page",
+   "https://experience.arcgis.com/experience/68721242014a493e8f8bc2d02d112d9c": "HCGO Map Page",
+   "https://hcgo.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=cca17dab6a3447b3aedafdfaec3858a9": ""
+  }
+ },
+ "Kankakee County": {
+  "files": [],
+  "portals": {}
+ },
+ "Flathead County": {
+  "files": [],
+  "portals": {}
+ },
+ "Maury County": {
+  "files": [],
+  "portals": {
+   "https://data.shelteranimalscount.org/": ""
+  }
+ },
+ "Portsmouth": {
+  "files": [],
+  "portals": {}
+ },
+ "Reading": {
+  "files": [
+   {
+    "url": "https://www.readingpa.gov/images/zoneplan/Updated2026.pdf",
+    "text": "DOWNLOAD ZONING MAP HERE",
+    "file": "data/city_files/Reading/fe8884_Updated2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://www.readingpa.gov/images/zoneplan/Updated2026.pdf",
+    "text": "DOWNLOAD ZONING MAP HERE",
+    "file": "data/city_files/Reading/39c728_Updated2026.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://data.readingpa.gov/": "Open Data",
+   "https://gis.readingpa.gov/gisenterprise/apps/experiencebuilder/experience/?id=34f49df5e4bd43249d31a72a49f349eb": "Historic Districts Web Map Viewer"
+  }
+ },
+ "Hamilton Township": {
+  "files": [],
+  "portals": {}
+ },
+ "Cheektowaga": {
+  "files": [
+   {
+    "url": "https://tocny.org/wp-content/uploads/2019/09/TOWN-PARK-8.5-11-FOR-SHELTERS-1.pdf",
+    "text": "Town Park Map",
+    "file": "data/city_files/Cheektowaga/95c606_TOWN-PARK-8.5-11-FOR-SHELTERS-1.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://tocny.org/wp-content/uploads/2022/12/2026-Acceptable-Recycling-Items.pdf",
+    "text": "2026 Recycling Guide",
+    "file": "data/city_files/Cheektowaga/525f9c_2026-Acceptable-Recycling-Items.pdf",
+    "rows": 19,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/aa0da4f9b8a8450a9f4e405ee47daace": "Town Zoning Map (GIS)"
+  }
+ },
+ "Deerfield Beach": {
+  "files": [],
+  "portals": {
+   "https://www.arcgis.com/apps/dashboards/9aecec5400934abfac6f163132def27f": "Capital City Projects",
+   "https://dfb.maps.arcgis.com/apps/dashboards/42fbba49db7845a6b41b1d191008afc8": "Parks Map",
+   "https://dfb.maps.arcgis.com/apps/dashboards/23b084464434486fba6db697686e2eb0": "Current Development Projects",
+   "https://www.arcgis.com/apps/dashboards/02f2e5d84cfd43be90a0bb568eb68785": "Beach Conditions & Flags",
+   "https://experience.arcgis.com/experience/9482b6dfab74466d9f09232f6cf0e4b4/": "Water Service Lookup",
+   "https://dfb.maps.arcgis.com/apps/instant/media/index.html?appid=270979b52ba24286b34aefb765bda5ca": "District/Precinct Map",
+   "https://dfb.maps.arcgis.com/apps/opsdashboard/index.html": "Location Map",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=f0f44991e50044a08a6d04f978553b80": "Interactive Vacation Rental map",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=b867bf09c65c4a1a9f226339277a984d": "Zoning Map View zoning districts and classifications throughout the City. ❯",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=17231306f7c64c1d9c6276d51fda0f6b": "Future Land Use Map Review adopted future land use categories and designations. ❯",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=cfb732923aae46169e08f7a53159f858": "Flood Information View flood zone boundaries and elevation certificates. ❯",
+   "https://dfb.maps.arcgis.com/apps/instant/basic/index.html?appid=6723ad756bfe4620bad036c5c03aa260": "Commission Districts Find City Commission district boundaries. ❯"
+  }
+ },
+ "Redwood City": {
+  "files": [],
+  "portals": {}
+ },
+ "Henderson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Clinton County": {
+  "files": [
+   {
+    "url": "https://www.clintoncountyny.gov/sites/default/files/landfill/pdf/BROCHURE-LANDFILL-NY-ClintonCounty.pdf",
+    "text": "Charges for brush/yard waste can be found in the brochure.",
+    "file": "data/city_files/Clinton_County/569356_BROCHURE-LANDFILL-NY-ClintonCounty.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://clintoncountygov.com/sites/default/files/landfill/pdf/BROCHURE-LANDFILL-NY-ClintonCounty.pdf",
+    "text": "Waste Disposal & Recycling Brochure",
+    "file": "data/city_files/Clinton_County/126e5f_BROCHURE-LANDFILL-NY-ClintonCounty.pdf",
+    "rows": 12,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://clintoncountygov.com/sites/default/files/landfill/pdf/PaintRecyclingFlyer.pdf?x=2026",
+    "text": "Paint Recycling",
+    "file": "data/city_files/Clinton_County/f44682_PaintRecyclingFlyer.pdf",
+    "rows": 6,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://clintoncountygov.com/sites/default/files/landfill/pdf/ClothingDropBoxLocationsFlyer.pdf?x=2026",
+    "text": "Clothing Drop Box Locations",
+    "file": "data/city_files/Clinton_County/6d0a58_ClothingDropBoxLocationsFlyer.pdf",
+    "rows": 81,
+    "bike_rows": 15
+   }
+  ],
+  "portals": {}
+ },
+ "Cedar Park": {
+  "files": [],
+  "portals": {}
+ },
+ "Grays Harbor County": {
+  "files": [
+   {
+    "url": "https://co.grays-harbor.wa.us/docs/ContactUs.pdf",
+    "text": "contact information",
+    "file": "data/city_files/Grays_Harbor_County/6b07cb_ContactUs.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.graysharbor.us/docs/ContactUs.pdf",
+    "text": "contact information",
+    "file": "data/city_files/Grays_Harbor_County/8290c2_ContactUs.pdf",
+    "rows": 7,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.graysharbor.us/Sheriff/Documents/GHSO_2026_Budget_Public_October2026.pdf",
+    "text": "Budget",
+    "file": "data/city_files/Grays_Harbor_County/12c76b_GHSO_2026_Budget_Public_October2026.pdf",
+    "rows": 12,
+    "bike_rows": 10
+   },
+   {
+    "url": "https://www.graysharbor.us/Assessor/2.seniorexempt.pdf",
+    "text": "Senior/Disabled Property Tax Deferral",
+    "file": "data/city_files/Grays_Harbor_County/56029d_2.seniorexempt.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.graysharbor.us/Assessor/GHC PERSONAL PROPERTY BLANK LISTING FORM_26.pdf",
+    "text": "Personal Property Listing form",
+    "file": "data/city_files/Grays_Harbor_County/97be01_GHC_PERSONAL_PROPERTY_BLANK_LISTING_FORM_26.pdf",
+    "rows": 58,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.graysharbor.us/Assessor/Documents/2020 Personal Property Brochure.pdf",
+    "text": "Personal Property Brochure & DOR Tax Info",
+    "file": "data/city_files/Grays_Harbor_County/2fdcde_2020_Personal_Property_Brochure.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.graysharbor.us/Assessor/PlatListCity.pdf?t=201607180631130",
+    "text": "City Plat List",
+    "file": "data/city_files/Grays_Harbor_County/414736_PlatListCity.pdf",
+    "rows": 441,
+    "bike_rows": 15
+   },
+   {
+    "url": "https://www.graysharbor.us/Original Plat Map List (All) 2025.xls?t=202502191739540",
+    "text": "Alphabetical Plat List",
+    "file": "data/city_files/Grays_Harbor_County/f033b1_Original_Plat_Map_List_All_2025.xls",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Maps/GHC_Rainfall.pdf",
+    "text": "Annual Precipitation",
+    "file": "data/city_files/Grays_Harbor_County/69d250_GHC_Rainfall.pdf",
+    "rows": 19,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Maps/Commissioner_Districts.pdf",
+    "text": "Commissioner Districts",
+    "file": "data/city_files/Grays_Harbor_County/9b5205_Commissioner_Districts.pdf",
+    "rows": 11,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Maps/GHC_Fire.pdf",
+    "text": "Fire Districts",
+    "file": "data/city_files/Grays_Harbor_County/39e1a6_GHC_Fire.pdf",
+    "rows": 23,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Maps/General_Features.pdf",
+    "text": "General Features",
+    "file": "data/city_files/Grays_Harbor_County/77b916_General_Features.pdf",
+    "rows": 15,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Maps/GHC_Landcover.pdf",
+    "text": "Land Cover",
+    "file": "data/city_files/Grays_Harbor_County/25b9b2_GHC_Landcover.pdf",
+    "rows": 20,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Maps/Major_Timberland_Ownership.pdf",
+    "text": "Major Timberland Ownership",
+    "file": "data/city_files/Grays_Harbor_County/9a00b5_Major_Timberland_Ownership.pdf",
+    "rows": 14,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Maps/GHC_Mineral_lq.pdf",
+    "text": "Mineral Lease Lands",
+    "file": "data/city_files/Grays_Harbor_County/a2fd09_GHC_Mineral_lq.pdf",
+    "rows": 16,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/School_Districts/GHC_School.pdf",
+    "text": "School Districts",
+    "file": "data/city_files/Grays_Harbor_County/4e7e6b_GHC_School.pdf",
+    "rows": 14,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Maps/GHC_Relief_lq.pdf",
+    "text": "Shaded Relief",
+    "file": "data/city_files/Grays_Harbor_County/9022eb_GHC_Relief_lq.pdf",
+    "rows": 20,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Maps/GHC_Soils_lq.pdf",
+    "text": "Soil Drainage",
+    "file": "data/city_files/Grays_Harbor_County/f1de93_GHC_Soils_lq.pdf",
+    "rows": 20,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Maps/City_County_Zoning.pdf",
+    "text": "City & County Zoning",
+    "file": "data/city_files/Grays_Harbor_County/b84282_City_County_Zoning.pdf",
+    "rows": 30,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Plat_Maps/Aberdeen_Plat.pdf",
+    "text": "Aberdeen",
+    "file": "data/city_files/Grays_Harbor_County/0b73b7_Aberdeen_Plat.pdf",
+    "rows": 4,
+    "bike_rows": 4
+   },
+   {
+    "url": "https://www.graysharbor.us/GIS/Plat_Maps/Central_Park_Plat.pdf",
+    "text": "Central Park",
+    "file": "data/city_files/Grays_Harbor_County/42dd7a_Central_Park_Plat.pdf",
+    "rows": 15,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://co.grays-harbor.wa.us/departments/central_services/gis.php": "GIS Maps & Products",
+   "https://www.graysharbor.us/departments/central_services/gis.php": "GIS Maps & Products",
+   "https://www.co.grays-harbor.wa.us/departments/central_services/gis.php": "GIS",
+   "http://www.ghc-gis.org/info/GIS/graphics/relief.jpg": "",
+   "http://www.ghc-gis.org/info/GIS/graphics/cosmopolis.jpg": "",
+   "http://www.ghc-gis.org/info/GIS/graphics/ci_cosmopolis.jpg": "",
+   "http://www.ghc-gis.org/info/GIS/graphics/map_types.jpg": ""
+  }
+ },
+ "Grand Forks County": {
+  "files": [],
+  "portals": {}
+ },
+ "DeKalb County": {
+  "files": [
+   {
+    "url": "https://dekalbcountyal.us/wp-content/uploads/2026/08/DeKalb-County-FY2027-CTP-Map_ORIGINAL.pdf",
+    "text": "2027 County Transportation Plan Map",
+    "file": "data/city_files/DeKalb_County/12150b_DeKalb-County-FY2027-CTP-Map_ORIGINAL.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyal.us/wp-content/uploads/2025/11/DeKalb-County-FY2026-CTP-Map_AMENDED-11-12-25.pdf",
+    "text": "2026 County Transportation Plan Map",
+    "file": "data/city_files/DeKalb_County/5c0f17_DeKalb-County-FY2026-CTP-Map_AMENDED-11-12-25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyal.us/wp-content/uploads/2024/12/DeKalb-County-FY2025-CTP-Map_AMENDED-12-10-24.pdf",
+    "text": "2025 County Transportation Plan Map",
+    "file": "data/city_files/DeKalb_County/bc113a_DeKalb-County-FY2025-CTP-Map_AMENDED-12-10-24.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyal.us/wp-content/uploads/2023/11/DeKalb-County-FY2024-CTP-Map_AMENDED-11-14-23.pdf",
+    "text": "2024 County Transportation Plan Map",
+    "file": "data/city_files/DeKalb_County/8bca19_DeKalb-County-FY2024-CTP-Map_AMENDED-11-14-23.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyal.us/wp-content/uploads/2022/12/DeKalb-County-FY2023-CTP-Map-AMENDED-12-13-2022.pdf",
+    "text": "2023 County Transportation Plan Map",
+    "file": "data/city_files/DeKalb_County/cce29e_DeKalb-County-FY2023-CTP-Map-AMENDED-12-13-2022.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyal.us/wp-content/uploads/2021/12/DeKalb-County-FY2022-CTP-Map-AMENDED-12-14-2021.pdf",
+    "text": "2022 County Transportation Plan Map",
+    "file": "data/city_files/DeKalb_County/67d481_DeKalb-County-FY2022-CTP-Map-AMENDED-12-14-2021.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyal.us/wp-content/uploads/2024/01/State-House-Map.pdf",
+    "text": "State house",
+    "file": "data/city_files/DeKalb_County/0181b3_State-House-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyal.us/wp-content/uploads/2024/01/State-School-Board-Map.pdf",
+    "text": "State school board",
+    "file": "data/city_files/DeKalb_County/91e87e_State-School-Board-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyal.us/wp-content/uploads/2024/01/State-Senate-Map.pdf",
+    "text": "State senate",
+    "file": "data/city_files/DeKalb_County/45ad23_State-Senate-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://dekalbcountyal.us/wp-content/uploads/2024/01/Congressional-Map.pdf",
+    "text": "Congressional",
+    "file": "data/city_files/DeKalb_County/5996cb_Congressional-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://dema.maps.arcgis.com/apps/webappviewer/index.html?id=7327475b95414e549618948b647662da": "DeKalb Voter Information Map"
+  }
+ },
+ "Eastvale": {
+  "files": [],
+  "portals": {}
+ },
+ "Madison County": {
+  "files": [],
+  "portals": {}
+ },
+ "Old Bridge Township": {
+  "files": [],
+  "portals": {}
+ },
+ "Janesville": {
+  "files": [],
+  "portals": {}
+ },
+ "Brentwood": {
+  "files": [],
+  "portals": {}
+ },
+ "San Rafael": {
+  "files": [],
+  "portals": {}
+ },
+ "Pender County": {
+  "files": [],
+  "portals": {
+   "https://gis.pendercountync.gov": "Maps",
+   "https://cfcog.maps.arcgis.com/apps/Embed/index.html?webmap=fbfcd9a086304ce180d1bf3dc213adb4&extent=-79.2094,33.7893,-77.1811,34.764&home=true&zoom=true&scale=true&search=true&searchextent=true&basemap_gallery=true&disable_scroll=true&theme=light": "View larger map",
+   "https://gis.pendercountync.gov/maps": "General Parcel Search",
+   "https://pendercountync.maps.arcgis.com/apps/instant/attachmentviewer/index.html?appid=19794294f149422bb5554cc9c0a826da": "Commissioner Districts",
+   "https://pendercountync.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=4edc611f4c064d3ea65c3ba02311d84d": "Capital Projects",
+   "https://pendercountync.maps.arcgis.com/apps/instant/basic/index.html?appid=a09636e9fb9641749424a665e6d34b70": "Where Do I Vote?",
+   "https://pendercountync.maps.arcgis.com/apps/MapSeries/index.html?appid=43dc8f31242f44068a3698d9e181eed9": "Pender County Commerce Park",
+   "https://pendercountync.maps.arcgis.com/apps/webappviewer/index.html?id=c6ca8c88f1644d2ca0a0bba5434354a7": "Know Your Zone",
+   "https://experience.arcgis.com/experience/bbb5b020648f4a4b97d89bdd6bc529ac": "Development Activity",
+   "https://pendercountync.maps.arcgis.com/apps/Shortlist/index.html?appid=7199362d8f0a45dab030dcf0b821cf0f": "Government Offices",
+   "https://pendercountync.maps.arcgis.com/apps/Shortlist/index.html?appid=67d9430cee834f3d80bd2e1319026bd0": "Parks & Public Places"
+  }
+ }
+}
