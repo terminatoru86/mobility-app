@@ -1,38 +1,38 @@
 [
 {
-"city": "capital:dsm.city",
-"url": "https://maps.dsm.city/p2/rest/services/External/EXTDynamicBicycleParking/MapServer/0",
-"name": "BicycleParking",
-"count": 551,
-"cat": "racks"
-},
-{
-"city": "capital:columbus.gov",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/42",
-"name": "Scooter Corrals",
-"count": 47,
+"city": "St. Petersburg FL",
+"url": "https://egis.stpete.org/arcgis/rest/services/ServicesTPD/TrafficManagementandData/MapServer/45",
+"name": "Scooter Share Corrals",
+"count": 103,
 "cat": "scooter"
 },
 {
-"city": "capital:columbus.gov",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/41",
-"name": "Bike Parking",
-"count": 833,
+"city": "Tamarac",
+"url": "https://gis.tamarac.org/server/rest/services/Parks/Green_City_GIS/FeatureServer/7",
+"name": "Bicycle Racks",
+"count": 20,
 "cat": "racks"
 },
 {
-"city": "capital:columbus.gov",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/31",
-"name": "COGO Bikeshare Locations",
-"count": 80,
-"cat": "share"
+"city": "Tamarac",
+"url": "https://gis.tamarac.org/server/rest/services/Parks/Green_City_GIS/FeatureServer/29",
+"name": "Spin Bike",
+"count": 29,
+"cat": "racks"
 },
 {
-"city": "capital:columbus.gov",
-"url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/PublicService/MapServer/3",
-"name": "Scooter Parking Locations",
-"count": 38,
-"cat": "scooter"
+"city": "Tamarac",
+"url": "https://gis.tamarac.org/server/rest/services/Parks/Green_City_GIS/MapServer/7",
+"name": "Bicycle Racks",
+"count": 20,
+"cat": "racks"
+},
+{
+"city": "Tamarac",
+"url": "https://gis.tamarac.org/server/rest/services/Parks/Green_City_GIS/MapServer/29",
+"name": "Spin Bike",
+"count": 29,
+"cat": "racks"
 },
 {
 "city": "Columbus OH",
