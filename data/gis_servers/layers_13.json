@@ -1,0 +1,16 @@
+[
+{
+"city": "Boulder",
+"url": "https://gis.bouldercolorado.gov/ags_svr3/rest/services/Bike_Furniture/MapServer/0",
+"name": "Bike Furniture",
+"count": 773,
+"cat": "racks"
+},
+{
+"city": "Boulder",
+"url": "https://gis.bouldercolorado.gov/ags_svr3/rest/services/trans/LimeScooterLocations/MapServer/0",
+"name": "Lime Scooter Groves",
+"count": 63,
+"cat": "scooter"
+}
+]
