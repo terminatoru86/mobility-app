@@ -1,0 +1,1457 @@
+{
+ "Indianapolis IN": {
+  "files": [],
+  "portals": {}
+ },
+ "North Las Vegas NV": {
+  "files": [],
+  "portals": {}
+ },
+ "Billings MT": {
+  "files": [
+   {
+    "url": "https://www.yellowstonecountymt.gov/elections/forms/AbsentApp.pdf",
+    "text": "Absentee Ballot Request/Request for Absentee List Removal",
+    "file": "data/city_files/Billings_MT/73bd75_AbsentApp.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.yellowstonecountymt.gov/elections/forms/AbsentAppDisability.pdf",
+    "text": "Absentee Application for Electronic Ballot for Individual with Disability",
+    "file": "data/city_files/Billings_MT/9e17b8_AbsentAppDisability.pdf",
+    "rows": 68,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.apbp.org/assets/docs/EssentialsofBikeParking_FINA.pdf",
+    "text": "Essentials of Bike Parking",
+    "file": "data/city_files/Billings_MT/e68c32_EssentialsofBikeParking_FINA.pdf",
+    "rows": 30,
+    "bike_rows": 6
+   }
+  ],
+  "portals": {
+   "https://billings.maps.arcgis.com/apps/instant/reporter/index.html?appid=507ccc70f23b42bfa16d5007102206fd": "Report Issues",
+   "https://city-of-billings-map-library-billings.hub.arcgis.com/": "Maps (Public Map Gallery)",
+   "https://city-of-billings-map-library-billings.hub.arcgis.com/ ": "Online Interactive Maps",
+   "https://city-of-billings-public-mapping-library-billings.hub.arcgis.com/": "Online Interactive Maps",
+   "http://billings.maps.arcgis.com/apps/webappviewer/index.html?id=f0f22e3284ed43ee89b79b289d19d835": "",
+   "http://billings.maps.arcgis.com/apps/webappviewer/index.html?id=dde5963d1b494f8f8b7a0a2bb871a0a1": "Building Permit Interactive Map",
+   "http://billings.maps.arcgis.com/apps/PublicGallery/index.html?appid=5314cd7da7474b7f8aea1c08fe8b4c5f": "GIS-Department Interactive-Maps",
+   "https://billings.maps.arcgis.com/apps/webappviewer/index.html?id=dde5963d1b494f8f8b7a0a2bb871a0a1": "Building Permit Interactive Map",
+   "https://storymaps.arcgis.com/stories/6daab93b38dc4067ba70b82fc821e1ae": "21st St. Underpass Study Public Input",
+   "https://experience.arcgis.com/experience/708c40f64ad24cb3a89b7961340f1d08": "Interactive Mapping Application",
+   "http://billings.maps.arcgis.com/apps/webappviewer/index.html?id=499fdeb0c7fa4f5c940de27badb1f034": "Interactive Mapping Application",
+   "http://billings.maps.arcgis.com/apps/webappviewer/index.html?id=8f17ae42e79649f496398e5e42e978eb": "ISO Fire Suppression Rating Map"
+  }
+ },
+ "Orange County": {
+  "files": [
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Culture-Recreation/ParksModule/docs/HorizonWestTrailsStudy-CERT.pdf",
+    "text": "Estudio de Horizon West Trail",
+    "file": "data/city_files/Orange_County/0a1533_HorizonWestTrailsStudy-CERT.pdf",
+    "rows": 231,
+    "bike_rows": 197
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Culture-Recreation/docs/Moss Park Orienteering Maps Beginner and Intermediate 12_14_23-CERT.pdf",
+    "text": "Mapas de Orientación de Moss Park: Principiante e Intermedio",
+    "file": "data/city_files/Orange_County/1d83dd_Moss_Park_Orienteering_Maps_Beginner_and_Intermediate_12_14_23-CERT.pd",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Culture-Recreation/docs/OCPR-MAP02_2025_07.pdf",
+    "text": "Mapa de los Parques",
+    "file": "data/city_files/Orange_County/6e4a6c_OCPR-MAP02_2025_07.pdf",
+    "rows": 109,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Water-Garbage-Recycle/docs/Recycler October 2026 Spanish.pdf",
+    "text": "Versión en español",
+    "file": "data/city_files/Orange_County/78dcb1_Recycler_October_2026_Spanish.pdf",
+    "rows": 36,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Water-Garbage-Recycle/docs/Recycler October 2026_WEB.pdf",
+    "text": "Versión en inglés",
+    "file": "data/city_files/Orange_County/01b93b_Recycler_October_2026_WEB.pdf",
+    "rows": 36,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Water-Garbage-Recycle/docs/Curbside-Collection-Guidelines-CERT.pdf",
+    "text": "Pautas de Recolección Residencial",
+    "file": "data/city_files/Orange_County/7787dc_Curbside-Collection-Guidelines-CERT.pdf",
+    "rows": 8,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Water-Garbage-Recycle/docs/FAQs_12.3.25.pdf",
+    "text": "Preguntas Más Frecuentes",
+    "file": "data/city_files/Orange_County/8963d9_FAQs_12.3.25.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Water-Garbage-Recycle/docs/Recycle-Right.pdf",
+    "text": "Think 5",
+    "file": "data/city_files/Orange_County/f14bf4_Recycle-Right.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Culture-Recreation/docs/OrienteeringBrochureMossPark-CERT.pdf",
+    "text": "Mapa de Orientación de Moss Park",
+    "file": "data/city_files/Orange_County/ab7007_OrienteeringBrochureMossPark-CERT.pdf",
+    "rows": 252,
+    "bike_rows": 5
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Neighbors-Housing/docs/Neighborhood Services - Nonprofit Housing Repair Grant - Guidelines 2026.pdf",
+    "text": "Pautas para la Reparación de Viviendas sin Fines de Lucro",
+    "file": "data/city_files/Orange_County/8d09fd_Neighborhood_Services_-_Nonprofit_Housing_Repair_Grant_-_Guidelines_20",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Neighbors-Housing/docs/Neighborhood Services - Nonprofit Housing Repair Grant - Application 2026.pdf",
+    "text": "Solicitud de Reparación de Viviendas sin Fines de Lucro",
+    "file": "data/city_files/Orange_County/a3955a_Neighborhood_Services_-_Nonprofit_Housing_Repair_Grant_-_Application_2",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "http://apps.ocfl.net/reference/forms-files/faxPDFs/108ResidentialLotGradingprocedure11-14-08.pdf",
+    "text": "Plano del Desagüe/Nivelación del Lote",
+    "file": "data/city_files/Orange_County/317561_108ResidentialLotGradingprocedure11-14-08.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://fasttrack.ocfl.net/OnlineServices/helpdocs/_ElectronicPlanSubmittalUploadGuide.pdf",
+    "text": "Guía de Usuario de Fast Track.",
+    "file": "data/city_files/Orange_County/c27170__ElectronicPlanSubmittalUploadGuide.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Permitting-Licensing/docs/Application-Garage-Sales-CERT.pdf",
+    "text": "solicitud",
+    "file": "data/city_files/Orange_County/e8124e_Application-Garage-Sales-CERT.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Resource%20Library/planning%20-%20development/Substandard Lot of Record Application 202611.pdf",
+    "text": "La solicitud",
+    "file": "data/city_files/Orange_County/939fcd_Substandard_Lot_of_Record_Application_202611.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.ocfl.net/Portals/0/Library/Permitting-Licensing/forms/Fast-Track-Registration-CERT.pdf",
+    "text": "Regístrese para obtener una cuenta de Servicios para Miembros en Fast Track",
+    "file": "data/city_files/Orange_County/48d9fc_Fast-Track-Registration-CERT.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Development-Planning/docs/InfoMap Public User Guide.pdf",
+    "text": "Guía para usuarios de InfoMap",
+    "file": "data/city_files/Orange_County/1a9a12_InfoMap_Public_User_Guide.pdf",
+    "rows": 5,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Traffic-Transportation/docs/Long Range Transportation Plan Map-CERT.pdf",
+    "text": "Mapa del Plan de Transporte de Largo Alcance",
+    "file": "data/city_files/Orange_County/922c8d_Long_Range_Transportation_Plan_Map-CERT.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Traffic-Transportation/docs/LWRLakeLotusRegionalSWTFacilityNewsletter120201217-CERT.pdf",
+    "text": "Boletín Informativo del Proyecto",
+    "file": "data/city_files/Orange_County/50ddcc_LWRLakeLotusRegionalSWTFacilityNewsletter120201217-CERT.pdf",
+    "rows": 18,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Traffic-Transportation/docs/Traffic_Signals_36X52_1inch1mile-CERT.pdf",
+    "text": "Mapa de Señales de Tránsito",
+    "file": "data/city_files/Orange_County/382f29_Traffic_Signals_36X52_1inch1mile-CERT.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Traffic-Transportation/docs/Red-Light-Running-Camera-Location-Map.pdf",
+    "text": "Ubicaciones de cámaras en la Zona Municipal del Condado de Orange.",
+    "file": "data/city_files/Orange_County/a5e5e1_Red-Light-Running-Camera-Location-Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Traffic-Transportation/docs/Wetherbee Taft Base Map 2021-CERT.pdf",
+    "text": "Mapa de Ubicación del Proyecto",
+    "file": "data/city_files/Orange_County/220dbb_Wetherbee_Taft_Base_Map_2021-CERT.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.orangecountyfl.net/Portals/0/Library/Traffic-Transportation/docs/CRD_20.09_parking Enforcement_rack_card_ADA.pdf",
+    "text": "Nuevas Normas de Estacionamiento (PDF)",
+    "file": "data/city_files/Orange_County/307fa0_CRD_20.09_parking_Enforcement_rack_card_ADA.pdf",
+    "rows": 8,
+    "bike_rows": 3
+   }
+  ],
+  "portals": {
+   "https://ocgis-datahub-ocfl.hub.arcgis.com/": "Descargas de Datos GIS",
+   "https://experience.arcgis.com/experience/ca88ac4f25c74786b0756104b11a8b5c": "Panel de Control del Programa Acelerado de Seguridad en el Transporte (ATSP)",
+   "https://experience.arcgis.com/experience/db8f38e091e74145a21e3204fbff6854": "Visualizador de Distritos de la Comisión del Ciclo Electoral 2026",
+   "https://experience.arcgis.com/experience/71b04ae4e3504a78962df567caf63835": "OCFL Atlas",
+   "https://ocgis-datahub-ocfl.hub.arcgis.com/pages/standard-maps": "Mapas Estándar del Condado de Orange",
+   "https://experience.arcgis.com/experience/3a2c350a8f984bc987ab6d0fd63cb151": "Panel de Control del CIP (Mapa del Programa de Mejoramiento de Capital)",
+   "https://metroplan.maps.arcgis.com/apps/dashboards/317fc0bc21944ef6be30f8e4923bd1c1": "",
+   "https://experience.arcgis.com/experience/2eb6306993b844feb0e839db48da4d02/page/Page/?views=First": "",
+   "https://fdep.maps.arcgis.com/apps/MapJournal/index.html?appid=bcf6f3c2bb494500bc559eac97f3394c": "BMAP de Wekiva Spring y Rock Springs",
+   "https://experience.arcgis.com/experience/41d4741d087844b1a6b0ad77211d9df8/page/Webmap-%2F-Search-Tool/?views=View": "Mapa Interactivo de Políticas de Zonas Vulnerables",
+   "https://experience.arcgis.com/experience/ce841e621eec4ccba43eeeabb5c94115/page/Page": "mapa interactivo"
+  }
+ },
+ "Pierce County": {
+  "files": [
+   {
+    "url": "http://cms.cityoftacoma.org/fire/Website%202013/prevention%20division/emergency%20management/PEWS%20PDFs/Port%20Lahar%20Inundation%20Map.pdf",
+    "text": "Map",
+    "file": "data/city_files/Pierce_County/3d6ecf_Port_20Lahar_20Inundation_20Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://cms.cityoftacoma.org/enviro/Sustain/Recycle_Center_Guide_FINAL_January2021.pdf",
+    "text": "Tacoma Recycle Center",
+    "file": "data/city_files/Pierce_County/551e58_Recycle_Center_Guide_FINAL_January2021.pdf",
+    "rows": 3,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://gisdata-piercecowa.opendata.arcgis.com/": "Geospatial Data Portal",
+   "https://survey123.arcgis.com/share/c6c43fda58cf4f449a1d8b616c832a55": "Prepare to Survive a Disaster",
+   "http://gisdata-piercecowa.opendata.arcgis.com/": "",
+   "https://piercecowa.maps.arcgis.com/apps/instant/nearby/index.html?appid=0cdc8ec3db2b4869afd414d13fcc5d01": "Pierce County Park Finder",
+   "https://experience.arcgis.com/experience/9a381af84a214b53a1a51edf31df8245": "Find Transportation Near You →",
+   "https://piercecowa.maps.arcgis.com/apps/instant/nearby/index.html?appid=0cdc8ec3db2b4869afd414d13fcc5d01%3Ffilter%3DBeach&sliderDistance=5&filter=%7B%22layerId%22%3A%22featureserver_7156%22%2C%22expressionId%22%3A1677862138550%7D": "Beach",
+   "https://piercecowa.maps.arcgis.com/apps/instant/nearby/index.html?appid=0cdc8ec3db2b4869afd414d13fcc5d01%3Ffilter%3DBeach&sliderDistance=5&filter=%7B%22layerId%22%3A%22featureserver_7156%22%2C%22expressionId%22%3A1677862177226%7D": "Boat Launch",
+   "https://piercecowa.maps.arcgis.com/apps/instant/nearby/index.html?appid=0cdc8ec3db2b4869afd414d13fcc5d01%3Ffilter%3DBeach&sliderDistance=5&filter=%7B%22layerId%22%3A%22featureserver_7156%22%2C%22expressionId%22%3A1677861771271%7D": "Community Center",
+   "https://piercecowa.maps.arcgis.com/apps/instant/nearby/index.html?appid=0cdc8ec3db2b4869afd414d13fcc5d01%3Ffilter%3DBeach&sliderDistance=5&filter=%7B%22layerId%22%3A%22featureserver_7156%22%2C%22expressionId%22%3A1677862054071%7D": "Equestrian Facilities",
+   "https://piercecowa.maps.arcgis.com/apps/instant/nearby/index.html?appid=0cdc8ec3db2b4869afd414d13fcc5d01%3Ffilter%3DBeach&sliderDistance=5&filter=%7B%22layerId%22%3A%22featureserver_7156%22%2C%22expressionId%22%3A1677861863228%7D%3B%7B%22layerId%22%3A%22featureserver_7156%22%2C%22expressionId%22%3A1677861998634%7D": "Sports Fields",
+   "https://piercecowa.maps.arcgis.com/apps/instant/nearby/index.html?appid=0cdc8ec3db2b4869afd414d13fcc5d01%3Ffilter%3DBeach&sliderDistance=5&filter=%7B%22layerId%22%3A%22featureserver_7156%22%2C%22expressionId%22%3A1677861953235%7D": "Fishing",
+   "https://piercecowa.maps.arcgis.com/apps/instant/nearby/index.html?appid=0cdc8ec3db2b4869afd414d13fcc5d01%3Ffilter%3DBeach&sliderDistance=5&filter=%7B%22layerId%22%3A%22featureserver_7156%22%2C%22expressionId%22%3A1677862339275%7D": "Ice Rink"
+  }
+ },
+ "Will County": {
+  "files": [],
+  "portals": {}
+ },
+ "Dane County": {
+  "files": [],
+  "portals": {}
+ },
+ "Brookhaven": {
+  "files": [],
+  "portals": {}
+ },
+ "Charleston County": {
+  "files": [
+   {
+    "url": "https://www.charlestoncounty.gov/files/forms/tax/MultipleLot.pdf",
+    "text": "Multi-Lot Ownership Discount",
+    "file": "data/city_files/Charleston_County/e824ae_MultipleLot.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.charlestoncounty.gov/files/forms/tax/MultipleLot.pdf?v=901",
+    "text": "Multi-Lot Ownership Discount",
+    "file": "data/city_files/Charleston_County/630b1c_MultipleLot.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://charleston-county-gis-chascogis.hub.arcgis.com/": "Maps / GIS",
+   "https://chascogis.maps.arcgis.com/apps/InformationLookup/index.html?appid=f3ae072a3b794c7c9ad5f9b9d7619e0f": "Curbside Pickup, Bi-Weekly Schedule",
+   "https://chascogis.maps.arcgis.com/apps/webappviewer/index.html?id=a3d886f866454cdba087ca2a459a06a7": "Voting Locations",
+   "https://chascogis.maps.arcgis.com/apps/Directions/index.html?appid=73e5a4f5875d42dca4010b4d548f9130": "Dropsite and Convenience Centers Locations",
+   "https://chascogis.maps.arcgis.com/apps/webappviewer/index.html?id=7c10eb6de226444e9a914b9c679e2591": "FEMA Flood Maps",
+   "https://chascogis.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=04005236ece64407a31167d8bb38c01d": "Project Map (External link, opens in new tab)"
+  }
+ },
+ "Westmoreland County": {
+  "files": [],
+  "portals": {}
+ },
+ "Lubbock County": {
+  "files": [],
+  "portals": {}
+ },
+ "Kitsap County": {
+  "files": [
+   {
+    "url": "https://kitsap.gov/Shared Documents/Campus Parking.pdf",
+    "text": "Campus Map",
+    "file": "data/city_files/Kitsap_County/688ce0_Campus_Parking.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kitsap.gov/Shared Documents/Campus%20Parking.pdf",
+    "text": "Campus Map",
+    "file": "data/city_files/Kitsap_County/2a863d_Campus_20Parking.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/Port%20Gamble_map%202024.pdf",
+    "text": "Click here to view the full park map",
+    "file": "data/city_files/Kitsap_County/9d1ee0_Port_20Gamble_map_202024.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.kitsap.gov/Shared Documents/Campus%20Parking.pdf",
+    "text": "Campus Map",
+    "file": "data/city_files/Kitsap_County/373875_Campus_20Parking.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/LifeJacketFlyer.pdf",
+    "text": "life jacket kiosks",
+    "file": "data/city_files/Kitsap_County/0226ed_LifeJacketFlyer.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/ParksMap_8x11.pdf",
+    "text": "",
+    "file": "data/city_files/Kitsap_County/20d4b3_ParksMap_8x11.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://docs.wixstatic.com/ugd/1219f6_5a039ffee3d746c8be66e80876b42724.pdf",
+    "text": "Clear Creek Trail Map",
+    "file": "data/city_files/Kitsap_County/69506c_1219f6_5a039ffee3d746c8be66e80876b42724.pdf",
+    "rows": 6,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/AndersonLdng_TrailMap.pdf",
+    "text": "Anderson Landing Trail Map",
+    "file": "data/city_files/Kitsap_County/c14000_AndersonLdng_TrailMap.pdf",
+    "rows": 10,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/Banner_Map_Update_2020.pdf",
+    "text": "Banner Forest Trail Map",
+    "file": "data/city_files/Kitsap_County/44c459_Banner_Map_Update_2020.pdf",
+    "rows": 4,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/GuillemotCove_TrailMap.pdf",
+    "text": "Guillemot Cove Trail Map",
+    "file": "data/city_files/Kitsap_County/20088e_GuillemotCove_TrailMap.pdf",
+    "rows": 3,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/HansvilleGrnwy_TrailMap.pdf",
+    "text": "",
+    "file": "data/city_files/Kitsap_County/978a5a_HansvilleGrnwy_TrailMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/HansvilleGreenway_map%202024.pdf",
+    "text": "Hansville Greenway Trail Map",
+    "file": "data/city_files/Kitsap_County/778f4d_HansvilleGreenway_map_202024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/IllaheePreservePark_map%202024.pdf",
+    "text": "",
+    "file": "data/city_files/Kitsap_County/f8c613_IllaheePreservePark_map_202024.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/NKHP_map%202024.pdf",
+    "text": "",
+    "file": "data/city_files/Kitsap_County/b13448_NKHP_map_202024.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/SKRP_ForestExporerTrailMap.pdf",
+    "text": "Find your way through with the Forest Explorer Map",
+    "file": "data/city_files/Kitsap_County/637c31_SKRP_ForestExporerTrailMap.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/AndersonHillAthleticFieldMap2019.pdf",
+    "text": "Anderson Hill Athletic Fields Map",
+    "file": "data/city_files/Kitsap_County/2326be_AndersonHillAthleticFieldMap2019.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/AndersonLandingMap2019.pdf",
+    "text": "Anderson Landing Preserve Map",
+    "file": "data/city_files/Kitsap_County/3dd9aa_AndersonLandingMap2019.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/AndersonPointParkMap2019.pdf",
+    "text": "Anderson Point Park Map",
+    "file": "data/city_files/Kitsap_County/0913c3_AndersonPointParkMap2019.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/AQuietPlaceParkMap2019.pdf",
+    "text": "A Quiet Place Park Map",
+    "file": "data/city_files/Kitsap_County/1812b0_AQuietPlaceParkMap2019.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/ArnessRoadsideParkMap2019.pdf",
+    "text": "Arness Roadside Park Map",
+    "file": "data/city_files/Kitsap_County/1f401a_ArnessRoadsideParkMap2019.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/BandixDogParkMap2019.pdf",
+    "text": "Bandix Dog Park Map",
+    "file": "data/city_files/Kitsap_County/b08805_BandixDogParkMap2019.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/BannerForestHeritageParkMap2019.pdf",
+    "text": "Banner Forest Heritage Park Map",
+    "file": "data/city_files/Kitsap_County/821f6b_BannerForestHeritageParkMap2019.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://kitsap.gov/parks/Documents/BillBloomquistRotaryParkMap2019.pdf",
+    "text": "Bill Bloomquist Rotary Park Map",
+    "file": "data/city_files/Kitsap_County/410ee7_BillBloomquistRotaryParkMap2019.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://adopt-a-spot-kitcowa.hub.arcgis.com/": "Adopt a Road Sponsorship",
+   "https://kitsap.gov/dis/Pages/GIS.aspx": "County Information & Maps",
+   "https://kitsap-county-projects-pages-kitcowa.hub.arcgis.com": "Capital projects",
+   "https://kitsap-county-projects-pages-kitcowa.hub.arcgis.com/": "Find a project in your neighborhood",
+   "https://storymaps.arcgis.com/stories/625d2bd2ec0742bca3d421e95a3b9b33": "Open for Bid",
+   "https://storymaps.arcgis.com/stories/0cb5d9239c7849a683d644d120ef55c2": "Adopt a Spot volunteer program",
+   "https://storymaps.arcgis.com/stories/517d6068e9d24399a8a3b2846c2bcc63": "clicking here",
+   "https://storymaps.arcgis.com/stories/d0a86250cf7c45c0857d9dd7868ff4a5": "Silverdale Recycling and Garbage Facility Improvement Project"
+  }
+ },
+ "Warren County": {
+  "files": [
+   {
+    "url": "https://commissioners.warrencountyohio.gov/doc/Departments/CampusLocation.pdf",
+    "text": "Warren County Campus Map",
+    "file": "data/city_files/Warren_County/b8499c_CampusLocation.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Cabarrus County": {
+  "files": [
+   {
+    "url": "https://www.cabarruscounty.us/files/assets/public/v/1/solid-waste-management/documents/accepted-recycling-items.pdf",
+    "text": "Recycle Right Cabarrus - Know the Right Items to Put in Your Recycling Cart (PDF, 3MB)",
+    "file": "data/city_files/Cabarrus_County/6d7809_accepted-recycling-items.pdf",
+    "rows": 38,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://www.cabarruscounty.us/files/assets/public/v/1/active-living-and-parks/documents/carolina-thread-trail-master-plan.pdf",
+    "text": "Master Plan (PDF, 30MB)",
+    "file": "data/city_files/Cabarrus_County/7febf2_carolina-thread-trail-master-plan.pdf",
+    "rows": 283,
+    "bike_rows": 23
+   }
+  ],
+  "portals": {
+   "https://www.cabarruscounty.us/Services/GIS-Maps-and-Data/Open-Data": "Open Data",
+   "https://www.cabarruscounty.us/Services/Records-and-Licenses/Open-Data": "Open Data",
+   "https://data.cabarruscounty.us": "data.cabarruscounty.us",
+   "https://cabarrus.maps.arcgis.com/apps/webappviewer/index.html?id=a1dc763a35634466b3804f08359c320d": "Election Polling Helps citizens find their voting location",
+   "https://cabarrus.maps.arcgis.com/apps/webappviewer/index.html?id=0f1569783c7240d793418bd9e5a768f1": "Find Your Fit",
+   "https://cabarrus.maps.arcgis.com/apps/webappviewer/index.html?id=9a5460e4fa7a45b4b2d6bd224111ad60": "Fire Insurance Rating Fire Department ISO information for insurance companies.",
+   "https://data.cabarruscounty.us/": "Open Data Search, filter and download Cabarrus County datasets",
+   "https://cabarrus.maps.arcgis.com/apps/webappviewer/index.html?id=2b175807055a4e998602d3d0ec0ffa5a": "Public Notification Generate a mailing list based on locations on a map",
+   "https://cabarrus.maps.arcgis.com/apps/opsdashboard/index.html": "Cabarrus Tree Inventory Dashboard showing trees that the county maintains.",
+   "https://cabarrus.maps.arcgis.com/apps/webappviewer/index.html?id=1452dfa23316489795221fbb1f5a5555": "Opioid Dashboard",
+   "https://cabarrus-county-america-thrives-here-cabarrus.opendata.arcgis.com/pages/mental-health": "Cabarrus County's Mental Health Initiative"
+  }
+ },
+ "Benton County": {
+  "files": [],
+  "portals": {
+   "https://benton-county-gis-bentonco.hub.arcgis.com/": "GIS Web Maps",
+   "https://storymaps.arcgis.com/stories/ed4f97daa1c545f29d4017245c37ed36": "Trails of Benton County",
+   "https://experience.arcgis.com/experience/71767e4027714ecfb325308f39361e0d": "Household Hazardous Waste Collection Sites"
+  }
+ },
+ "Cape Coral": {
+  "files": [
+   {
+    "url": "https://www.capecoral.gov/Documents/Government/CRA/CRA-Boundary.pdf",
+    "text": "CRA District Map",
+    "file": "data/city_files/Cape_Coral/987843_CRA-Boundary.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {}
+ },
+ "Ulster County": {
+  "files": [],
+  "portals": {}
+ },
+ "Alamance County": {
+  "files": [],
+  "portals": {
+   "https://alamancecountync.gov/property_records/geographic_information_systems_gis.php": "GIS",
+   "https://alamancecountync.gov/public_safety/fire_marshal/property_records/geographic_information_systems_gis.php": "GIS",
+   "https://alamancecountync.gov/community/county_information/property_records/geographic_information_systems_gis.php": "GIS",
+   "https://ncdenr.maps.arcgis.com/apps/webappviewer/index.html?id=4c8f474c03cd4064a730caaa42ef4240": "NC Recycling Map",
+   "https://alamancecountync.gov/community/landfill/recycling/property_records/geographic_information_systems_gis.php": "GIS",
+   "https://alamancecountync.gov/community/parks_recreation/property_records/geographic_information_systems_gis.php": "GIS",
+   "https://alamancecountync.gov/community/parks_recreation/athletics/property_records/geographic_information_systems_gis.php": "GIS",
+   "https://alamancecountync.gov/community/parks_recreation/community_programs/property_records/geographic_information_systems_gis.php": "GIS",
+   "https://alamancecountync.gov/community/parks_recreation/reservations/property_records/geographic_information_systems_gis.php": "GIS",
+   "http://alamancecounty-alamancectygis.opendata.arcgis.com/": "Alamance County Open Data",
+   "https://alamancecountync.gov/property_records/geographic_information_systems_(gis)/property_records/geographic_information_systems_gis.php": "GIS",
+   "https://alamancecountync.gov/property_records/register_of_deeds/property_records/geographic_information_systems_gis.php": "GIS"
+  }
+ },
+ "Johnson County": {
+  "files": [],
+  "portals": {}
+ },
+ "Monroe County": {
+  "files": [],
+  "portals": {
+   "https://monroe-county-solid-waste-management-recycling-monroemi.hub.arcgis.com/": "Find a paper retriever bin",
+   "https://monroemi.maps.arcgis.com/apps/dashboards/bf78012068d549ba89e6b38cd2b8abf6": "Monroe County Senior Services Map",
+   "https://www.arcgis.com/apps/dashboards/6960c4e0b65f4c66b3a1ae8b0c883879": "Monroe County Veterans Resources Map",
+   "https://experience.arcgis.com/experience/7edfcbe1f90c4581bd61ea307f3d1bf1/": "Monroe County Property Data Exchange",
+   "https://monroe-county-michigan-gis-monroemi.hub.arcgis.com/": "Monroe County Mapping Hub",
+   "https://monroemi.maps.arcgis.com/apps/webappviewer/index.html?id=e471dcc3351b443e89c4add4bea143bf": "Paper Recycling Locations"
+  }
+ },
+ "Roseville": {
+  "files": [],
+  "portals": {
+   "https://data-roseville.opendata.arcgis.com/": "Open GIS Data",
+   "https://experience.arcgis.com/experience/4dc29c82a638424e95076e4fea21b79b": "View a larger interactive map.",
+   "https://storymaps.arcgis.com/stories/786a00ca245a4aa99d3ae6048233380e": "10 Minute Walk",
+   "https://experience.arcgis.com/experience/b81233008ebf4427a3b127607d25a65f/page/Interactive-Hazards-Map/": "Interactive Hazard Map",
+   "https://experience.arcgis.com/experience/76e379c77db749f1a3d4354142a476eb": "Simulated Flood Events"
+  }
+ },
+ "Waco": {
+  "files": [
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/2/departments/parks-amp-recreation/documents/historic-cemeteries-maintenance-management-plan.pdf",
+    "text": "City of Waco Historic Cemeteries Maintenance & Management Plan (PDF, 898KB)",
+    "file": "data/city_files/Waco/b12d31_historic-cemeteries-maintenance-management-plan.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/new-mammoth/new-folder/brochure-trifold-hiking-trails-of-waco-mammoth-pard-logo.pdf",
+    "text": "Trails Guide (PDF, 7MB)",
+    "file": "data/city_files/Waco/e572d7_brochure-trifold-hiking-trails-of-waco-mammoth-pard-logo.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.waco-texas.com/files/sharedassets/public/v/1/departments/parks-amp-recreation/documents/william_cameron_disc_golf_map-23.pdf",
+    "text": "Cameron Park Disc Golf Course Map (PDF, 1MB)",
+    "file": "data/city_files/Waco/de7ee8_william_cameron_disc_golf_map-23.pdf",
+    "rows": 4,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://wacotexas.finance.socrata.com/": "Transparency Portal View dashboard about financial transparency and check register.",
+   "https://experience.arcgis.com/experience/74b7f449d9d644b18da6ed831d6ee755": "Fullscreen View",
+   "https://experience.arcgis.com/experience/baf6660daab44fe39b761325e59efd48": "Click Here for Fullscreen View",
+   "https://services2.arcgis.com/oUXiR7ziAPAzGw6X/arcgis/rest/services/WacoRoadClosuresApp-RoadCloseLayer_View/FeatureServer/1": "Feature Service URL",
+   "https://services2.arcgis.com/oUXiR7ziAPAzGw6X/arcgis/rest/services/WacoRoadClosuresApp-RoadCloseLayer_View/FeatureServer/1/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=true&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=4326&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token=": "JSON URL"
+  }
+ },
+ "Midland": {
+  "files": [],
+  "portals": {
+   "https://storymaps.arcgis.com/stories/68340303732f4da4ae5259b2f4be0516": "Vision Midland Story Map",
+   "https://experience.arcgis.com/experience/4cc2fed9276343f39056238d9936e4c6/": "Construction Alerts",
+   "https://comgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=28145786e4bb42318d47211ee6def782": "Traffic Alerts",
+   "https://geostation-comgis.hub.arcgis.com/": "GeoStation Open Data Hub",
+   "https://experience.arcgis.com/experience/51f9828625bf4824860ac33fc1186665": "City Limits & Council Districts",
+   "https://experience.arcgis.com/experience/3b4732fcad6247bdb7a3411bd71618c0/": "Developer and Public Information",
+   "https://comgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=570e51eec43844baa60753898837a11f": "Floodplain & Drainage",
+   "https://comgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=caf073558542486c945dc3fa5b3a7879": "Traffic Count",
+   "https://storymaps.arcgis.com/stories/68340303732f4da4ae5259b2f4be0516?play=true&speed=medium": "Vision Midland"
+  }
+ },
+ "Allentown": {
+  "files": [],
+  "portals": {}
+ },
+ "Richardson": {
+  "files": [],
+  "portals": {}
+ },
+ "Elgin": {
+  "files": [],
+  "portals": {
+   "https://311-contact-center-cityofelgin.hub.arcgis.com/": "311 Get connected to city services by phone or online."
+  }
+ },
+ "Ventura": {
+  "files": [],
+  "portals": {}
+ },
+ "Yamhill County": {
+  "files": [],
+  "portals": {}
+ },
+ "Franklin County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/f5a41946e42c4f6a9a8ea2f3568b6678": "County GIS Maps"
+  }
+ },
+ "New Bedford": {
+  "files": [],
+  "portals": {}
+ },
+ "Vista": {
+  "files": [],
+  "portals": {}
+ },
+ "Orem": {
+  "files": [],
+  "portals": {
+   "https://orem.maps.arcgis.com/apps/Shortlist/index.html?appid=043bb1f6eebe48b5ac48cabab5b008b6": "OREM PARKS MAP"
+  }
+ },
+ "Hoover": {
+  "files": [],
+  "portals": {}
+ },
+ "Bloomington": {
+  "files": [
+   {
+    "url": "https://bloomingtonmn.gov/sites/default/files/2024-01/2023%20Hennepin%20County%20Mailer%20Recycling%20Guide%20ENGLISH.pdf",
+    "text": "Recycling guide",
+    "file": "data/city_files/Bloomington/1504c1_2023_20Hennepin_20County_20Mailer_20Recycling_20Guide_20ENGLISH.pdf",
+    "rows": 4,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://bloomingtonmn.gov/sites/default/files/2024-01/2023%20Hennepin%20County%20Mailer%20Recycling%20Guide%20SPANISH.pdf",
+    "text": "Guía de reciclaje",
+    "file": "data/city_files/Bloomington/eaaef0_2023_20Hennepin_20County_20Mailer_20Recycling_20Guide_20SPANISH.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bloomingtonmn.gov/sites/default/files/2024-01/2023%20Hennepin%20County%20Mailer%20Recycling%20Guide%20SOMALI.pdf",
+    "text": "Hagaha dib-u-warshadaynta",
+    "file": "data/city_files/Bloomington/8c0f30_2023_20Hennepin_20County_20Mailer_20Recycling_20Guide_20SOMALI.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bloomingtonmn.gov/sites/default/files/2024-01/2023%20Hennepin%20County%20Mailer%20Recycling%20Guide%20VIETNAMESE.pdf",
+    "text": "Hướng dẫn tái chế",
+    "file": "data/city_files/Bloomington/a04ccd_2023_20Hennepin_20County_20Mailer_20Recycling_20Guide_20VIETNAMESE.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/1feba9d9e5e1422ababcc22ed4a1f332": "",
+   "http://gis.vgsi.com/bloomingtonmn": "property data search website",
+   "https://experience.arcgis.com/experience/51d1c149678a4c3c8b8c52768f94edbc": "Benchmarks",
+   "https://experience.arcgis.com/experience/66d5f8b4f75845e98084f0285c753671": "Bluff District Standard",
+   "https://experience.arcgis.com/experience/be554b2d8cd148e590618af6ea79fd88": "Construction projects",
+   "https://experience.arcgis.com/experience/b53a7484196f42bdbe98061c99ae698c": "Development map",
+   "https://blmgtn-mn.maps.arcgis.com/apps/instant/atlas/index.html?appid=2f1f48bdc60d4aaf96cdeb3725c109c3": "Fire hydrant map",
+   "https://experience.arcgis.com/experience/4e036371162946769bca962e2e889113": "Parking restrictions map",
+   "https://experience.arcgis.com/experience/1321e6db0ff04c758e397e6c4be83773": "Planning interactive map",
+   "https://gis.hennepin.us/property/": "Property information",
+   "https://experience.arcgis.com/experience/db86db24d062465d8285d40be359d223": "Road closures",
+   "https://experience.arcgis.com/experience/50f9801a4147429d87154856077b27ea": "Road weight restrictions"
+  }
+ },
+ "Auburn": {
+  "files": [
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Community%20Services/Housing%20Repair/Home%20Repair%20Program%20Income%20Limits%20-%20FINAL.pdf",
+    "text": "income requirements",
+    "file": "data/city_files/Auburn/1e5a56_Home_20Repair_20Program_20Income_20Limits_20-_20FINAL.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Community Services/Housing Repair/June 2024 - Update/2024 Housing Repair Letter.pdf",
+    "text": "Housing Repair Assistance Cover Letter",
+    "file": "data/city_files/Auburn/153b6c_2024_Housing_Repair_Letter.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Mountain%20View%20Cemetery/Map/Cemetery%20Map%20-%20Updated%20%205-2025.pdf",
+    "text": "Download printable version of the Cemetery Map",
+    "file": "data/city_files/Auburn/e7089a_Cemetery_20Map_20-_20Updated_20_205-2025.pdf",
+    "rows": 1,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Parks, Arts, & Recreation/City Parks and Trails/Pros Plan final.pdf",
+    "text": "Parks & Recreation Open Space Plan",
+    "file": "data/city_files/Auburn/358251_Pros_Plan_final.pdf",
+    "rows": 377,
+    "bike_rows": 63
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Parks,%20Arts,%20&%20Recreation/Community%20Garden%20Program/garden%20plot%20map.pdf",
+    "text": "8th Street Garden Plot Map",
+    "file": "data/city_files/Auburn/e40596_garden_20plot_20map.pdf",
+    "rows": 11,
+    "bike_rows": 3
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Parks,%20Arts,%20&%20Recreation/Special%20Events/Petpalooza/27_Public%20Driving%20Directions%20and%20Parking%20Information.pdf",
+    "text": "Public Driving Directions & Parking Information",
+    "file": "data/city_files/Auburn/66e17c_27_Public_20Driving_20Directions_20and_20Parking_20Information.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Parks,%20Arts,%20&%20Recreation/Special%20Events/Kids%20Day/27_public%20driving%20directions%20and%20parking%20info.pdf",
+    "text": "Public Driving Directions & Parking Information",
+    "file": "data/city_files/Auburn/041394_27_public_20driving_20directions_20and_20parking_20info.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Public%20Works/Water/How%20to%20Read%20my%20Meter.pdf",
+    "text": "How to Read My Meter",
+    "file": "data/city_files/Auburn/d5dd6b_How_20to_20Read_20my_20Meter.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Utility%20Billing/Garbage/Litter%20Crew%20Routes.pdf",
+    "text": "route maps",
+    "file": "data/city_files/Auburn/4c7a75_Litter_20Crew_20Routes.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Parks, Arts, & Recreation/City Parks and Trails/Pros Plan final.pdf",
+    "text": "Parks & Recreation Open Space Plan",
+    "file": "data/city_files/Auburn/f39aff_Pros_Plan_final.pdf",
+    "rows": 377,
+    "bike_rows": 63
+   },
+   {
+    "url": "https://www.dahp.wa.gov/sites/default/files/MasonicLodge-NR%20nom_FINAL.pdf",
+    "text": "National Register of Historic Places Registration Form",
+    "file": "data/city_files/Auburn/c2cab9_MasonicLodge-NR_20nom_FINAL.pdf",
+    "rows": 24,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Parks,%20Arts,%20&%20Recreation/Arts%20and%20Entertainment/Historic%20Properties/Auburn%20to%20dedicate,%20celebrate%20historic%20Pioneer%20Cemetery%20on%20Aug.%2022%20_%20Auburn%20Reporter.pdf",
+    "text": "Cemetery Earns Landmark Status",
+    "file": "data/city_files/Auburn/0e445c_Auburn_20to_20dedicate_20celebrate_20historic_20Pioneer_20Cemetery_20o",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Parks, Arts, & Recreation/City Parks and Trails/AEP Overview.pdf",
+    "text": "Future Auburn Environmental Park as proposed in    2007",
+    "file": "data/city_files/Auburn/db0763_AEP_Overview.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Parks, Arts, & Recreation/City Parks and Trails/AEP History.pdf",
+    "text": "AEP History",
+    "file": "data/city_files/Auburn/6fa9ee_AEP_History.pdf",
+    "rows": 5,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Parks, Arts, & Recreation/City Parks and Trails/AEP Map.pdf",
+    "text": "AEP Area Map",
+    "file": "data/city_files/Auburn/32cd98_AEP_Map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Parks, Arts, & Recreation/City Parks and Trails/AEP Master Plan.pdf",
+    "text": "Auburn Environmental    Park Master Plan",
+    "file": "data/city_files/Auburn/04c51a_AEP_Master_Plan.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Parks, Arts, & Recreation/City Parks and Trails/Auburn Rotary Water Playground Sign_croppedforweb.pdf",
+    "text": "spray playground funders",
+    "file": "data/city_files/Auburn/be16ae_Auburn_Rotary_Water_Playground_Sign_croppedforweb.pdf",
+    "rows": 4,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Parks, Arts, & Recreation/City Parks and Trails/Pioneer Cemetery Nomination.pdf",
+    "text": "landmark nomination report",
+    "file": "data/city_files/Auburn/ecf046_Pioneer_Cemetery_Nomination.pdf",
+    "rows": 16,
+    "bike_rows": 2
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Parks, Arts, & Recreation/City Parks and Trails/Pioneer Cemetery Images.pdf",
+    "text": "historic documents and photos",
+    "file": "data/city_files/Auburn/7331f8_Pioneer_Cemetery_Images.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Parks, Arts, & Recreation/City Parks and Trails/Vets Park Brick Inscriptions_withoutpayee.pdf",
+    "text": "names on the bricks",
+    "file": "data/city_files/Auburn/af8ac1_Vets_Park_Brick_Inscriptions_withoutpayee.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Public%20Works/Capital%20Projects/Notice%20of%20Road%20Work/CP2515%20-%20Road%20Work%20Notice%20Flyer.pdf",
+    "text": "CP2515 - 124th Ave SE Transit Improvements",
+    "file": "data/city_files/Auburn/8d3a62_CP2515_20-_20Road_20Work_20Notice_20Flyer.pdf",
+    "rows": 1,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Public%20Works/Capital%20Projects/Capital%20Project%20Forms/CP2419%20City%20Parking%20Lot%20Replacement.pdf",
+    "text": "CP2419 City Parking Lot Replacement",
+    "file": "data/city_files/Auburn/6f17da_CP2419_20City_20Parking_20Lot_20Replacement.pdf",
+    "rows": 2,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://www.auburnwa.gov/UserFiles/Servers/Server_11470554/File/City%20Hall/Public%20Works/Transportation/Traffic%20Advisories/Notification%20Flyers%20Safe%20Route.pdf",
+    "text": "CP2332 Lea Hill Safe Routes to School",
+    "file": "data/city_files/Auburn/db5e2d_Notification_20Flyers_20Safe_20Route.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://auburnwa.gov/UserFiles/Servers/Server_11470554/File/City Hall/Public Works/Transportation/ADA Transition/2022 Final ADA Transition Plan.pdf",
+    "text": "2022 Final ADA Transition Plan",
+    "file": "data/city_files/Auburn/216699_2022_Final_ADA_Transition_Plan.pdf",
+    "rows": 12,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://experience.arcgis.com/experience/bc195905fdfc4ca1bd8162792ba76fc6": "interactive map",
+   "https://storymaps.arcgis.com/stories/0e37300203bb47479d5bfaae75a3b0ab": "Interactive Trails Map",
+   "https://experience.arcgis.com/experience/fd4da57b08a34e5ea4c540a86b76f1ca": "Interactive Capital Projects Mapping Tool",
+   "https://auburn.maps.arcgis.com/apps/opsdashboard/index.html": "Get up-to-the-minute traffic conditions",
+   "https://auburn.maps.arcgis.com/apps/dashboards/274a6aeebd6843bc95ed32aa3c5be806 ": "Fluoride Map",
+   "https://gis.auburnwa.gov/surveymonumentsviewer/Prod/index.html": "Survey Monuments Public Viewer"
+  }
+ },
+ "Cascade County": {
+  "files": [],
+  "portals": {}
+ },
+ "Bullitt County": {
+  "files": [],
+  "portals": {}
+ },
+ "Pleasanton": {
+  "files": [],
+  "portals": {}
+ },
+ "Racine": {
+  "files": [
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/08/01012035/2026-Cemeteries-Fees-Charges_FINAL.pdf",
+    "text": "2026 Cemetery Fees and Charges 138 KB",
+    "file": "data/city_files/Racine/6f5352_2026-Cemeteries-Fees-Charges_FINAL.pdf",
+    "rows": 72,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2026/05/11092148/2025-Cemeteries-Fees-Charges_Final.pdf",
+    "text": "2025 Cemetery Fees and Charges 142.7 KB",
+    "file": "data/city_files/Racine/9e34d5_2025-Cemeteries-Fees-Charges_Final.pdf",
+    "rows": 72,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/03/Rules-and-regulations-booklet-2026-updates.pdf",
+    "text": "2024 Cemetery Fees and Charges 147.7 KB",
+    "file": "data/city_files/Racine/e58701_Rules-and-regulations-booklet-2026-updates.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://media.cityofracinewi.gov/media/wp-content/uploads/2025/03/Cemetery-Fees-and-Charges.pdf",
+    "text": "2023 Cemetery Fees and Charges 266.7 KB",
+    "file": "data/city_files/Racine/75335f_Cemetery-Fees-and-Charges.pdf",
+    "rows": 71,
+    "bike_rows": 1
+   }
+  ],
+  "portals": {
+   "https://racine-rents-cori.hub.arcgis.com/": "Rental Property Registration",
+   "https://city-of-racine-gis-hub-cori.hub.arcgis.com/": "Maps",
+   "https://storymaps.arcgis.com/collections/a62e4d254ce94100b560e1a5bd375efb": "Root River Report Card",
+   "http://docs.legis.wisconsin.gov/statutes": "Wisconsin Statutes",
+   "https://docs.legis.wisconsin.gov/statutes": "State Statutes",
+   "https://experience.arcgis.com/experience/82dd8bff9b1942f7833821f8b7c1880b/": "Traffic Alerts",
+   "https://experience.arcgis.com/experience/0f1405bb1939431abc1a9ade5af3a2ea": "Cemetery Viewer"
+  }
+ },
+ "Bethlehem": {
+  "files": [
+   {
+    "url": "https://bethlehem-pa.gov/CityOfBethlehem/media/PWMedia/Seasonal%20Schedules/SNOW-EMERGENCY-ROUTES.pdf",
+    "text": "Snow Emergency Route Explanation",
+    "file": "data/city_files/Bethlehem/aef142_SNOW-EMERGENCY-ROUTES.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bethlehem-pa.gov/CityOfBethlehem/media/DCED-Media-Library/Recycling/What-is-included-in-single.pdf",
+    "text": "FREQUENTLY ASKED QUESTIONS",
+    "file": "data/city_files/Bethlehem/f96cf9_What-is-included-in-single.pdf",
+    "rows": 43,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://bethlehem-pa.gov/CityOfBethlehem/media/DCED-Media-Library/Recycling/SS-Flyer-with-pix.pdf",
+    "text": "ACCEPTABLE/UNACCEPTABLE ITEMS",
+    "file": "data/city_files/Bethlehem/5cfdb3_SS-Flyer-with-pix.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.bethlehem-pa.gov/CityOfBethlehem/media/PWMedia/Seasonal%20Schedules/SNOW-EMERGENCY-ROUTES.pdf",
+    "text": "Snow Emergency Route Explanation",
+    "file": "data/city_files/Bethlehem/133578_SNOW-EMERGENCY-ROUTES.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://bethlehem-pa.gov/CityOfBethlehem/media/DCED-Media-Library/Recycling/2026-Holiday-Pick-Up-Schedule_2.pdf",
+    "text": "View the 2026 collection schedule",
+    "file": "data/city_files/Bethlehem/091bbb_2026-Holiday-Pick-Up-Schedule_2.pdf",
+    "rows": 58,
+    "bike_rows": 1
+   },
+   {
+    "url": "https://bethlehem-pa.gov/CityOfBethlehem/media/DCED-Media-Library/PlanningZoning/CommunityPlans/BethConnects_A_Trail_Study_2016.pdf",
+    "text": "BethConnects A Trail Study",
+    "file": "data/city_files/Bethlehem/f03e33_BethConnects_A_Trail_Study_2016.pdf",
+    "rows": 444,
+    "bike_rows": 42
+   },
+   {
+    "url": "https://www.bethlehem-pa.gov/CityOfBethlehem/media/DCED-Media-Library/Recycling/What-is-included-in-single.pdf",
+    "text": "FREQUENTLY ASKED QUESTIONS",
+    "file": "data/city_files/Bethlehem/d94fdf_What-is-included-in-single.pdf",
+    "rows": 43,
+    "bike_rows": 16
+   },
+   {
+    "url": "https://www.bethlehem-pa.gov/CityOfBethlehem/media/DCED-Media-Library/Recycling/SS-Flyer-with-pix.pdf",
+    "text": "ACCEPTABLE/UNACCEPTABLE ITEMS",
+    "file": "data/city_files/Bethlehem/df5282_SS-Flyer-with-pix.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://bethlehem-pa.maps.arcgis.com/apps/webappviewer/index.html?id=7b8c959ccb6849619272de76dd0248c9": "Leaf Collection Map",
+   "https://bethlehem-pa.maps.arcgis.com/apps/webappviewer/index.html?id=3f625a59161649db9d75276346a22772": "Snow Emergency Routes",
+   "https://bethlehem-pa.maps.arcgis.com/apps/webappviewer/index.html?id=e8b0efe40a47466b9f8b32c152830280": "Street Sweeping Zones Map",
+   "https://experience.arcgis.com/experience/b72709ecbda042e1a5350c0d37dd52f6": "Map of Recreation Locations",
+   "https://maps-bethlehem-pa.opendata.arcgis.com/": "Maps/GIS",
+   "https://experience.arcgis.com/experience/a4609bd0a83144f5944ae7a0c4e9afba": "Leaf Collection Map",
+   "https://health-bureau-about-us-Bethlehem-PA.hub.arcgis.com": "About Us",
+   "https://immunizations-Bethlehem-PA.hub.arcgis.com ": "Immunizations",
+   "https://sexual-reproductive-health-bethlehem-pa.hub.arcgis.com/": "Sexual & Reproductive Health",
+   "https://clinical-services-bethlehem-pa.hub.arcgis.com/": "Clinic Services",
+   "https://public-health-vending-machines-bethlehem-pa.hub.arcgis.com/": "PUBLIC HEALTH VENDING MACHINES",
+   "https://partners-for-a-healthy-baby-bethlehem-pa.hub.arcgis.com/": "Partners for a Healthy Baby"
+  }
+ },
+ "Kauai County": {
+  "files": [
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2026-7-16-khprc-agenda-posted.pdf",
+    "text": "Agenda (PDF, 2MB)",
+    "file": "data/city_files/Kauai_County/c137a6_2026-7-16-khprc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2026-7-16-khprc-agenda-packet.pdf",
+    "text": "Packet (PDF, 18MB)",
+    "file": "data/city_files/Kauai_County/51983b_2026-7-16-khprc-agenda-packet.pdf",
+    "rows": 308,
+    "bike_rows": 38
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2026-5-21-khprc-agenda-posted.pdf",
+    "text": "2026-5-21 KHPRC Agenda (PDF, 936KB)",
+    "file": "data/city_files/Kauai_County/df0fb4_2026-5-21-khprc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2026-4-16-khprc-agenda-posted.pdf",
+    "text": "2026-4-16 KHPRC Agenda (PDF, 141KB)",
+    "file": "data/city_files/Kauai_County/2c5299_2026-4-16-khprc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2026-4-16-khprc-agenda-packet.pdf",
+    "text": "Packet (PDF, 3MB)",
+    "file": "data/city_files/Kauai_County/d9e674_2026-4-16-khprc-agenda-packet.pdf",
+    "rows": 47,
+    "bike_rows": 13
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2026-3-19-khrpc-agenda-posted.pdf",
+    "text": "2026-3-19 KHPRC Agenda (PDF, 120KB)",
+    "file": "data/city_files/Kauai_County/9a240a_2026-3-19-khrpc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2026-3-19-agenda-packet.pdf",
+    "text": "Packet (PDF, 3MB)",
+    "file": "data/city_files/Kauai_County/843706_2026-3-19-agenda-packet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2026-02-19-khprc-agenda-posted.pdf",
+    "text": "2026-2-19 KHPRC Agenda (PDF, 141KB)",
+    "file": "data/city_files/Kauai_County/97f309_2026-02-19-khprc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2026-2-19-khprc-agenda-packet.pdf",
+    "text": "Packet (PDF, 10MB)",
+    "file": "data/city_files/Kauai_County/a0bc59_2026-2-19-khprc-agenda-packet.pdf",
+    "rows": 354,
+    "bike_rows": 31
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/2025-12-15-khprc-agenda-posted.pdf",
+    "text": "2025-12-15 KHPRC Agenda (PDF, 168KB)",
+    "file": "data/city_files/Kauai_County/05aa1d_2025-12-15-khprc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/2025-12-15-khprc-agenda-packet.pdf",
+    "text": "Packet (PDF, 16MB)",
+    "file": "data/city_files/Kauai_County/017a12_2025-12-15-khprc-agenda-packet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/2025-11-18-khprc-agenda-posted.pdf",
+    "text": "2025-11-18 KHPRC Agenda (PDF, 150KB)",
+    "file": "data/city_files/Kauai_County/ae0ad4_2025-11-18-khprc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/2025-11-18-khprc-meeting-packet.pdf",
+    "text": "Packet (PDF, 14MB)",
+    "file": "data/city_files/Kauai_County/cc3440_2025-11-18-khprc-meeting-packet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/2/boards-and-commissions/historic-preservation-review-commission/2025/2025-06-19-khprc-agenda-posted.pdf",
+    "text": "2025-6-19 KHPRC Agenda (PDF, 149KB)",
+    "file": "data/city_files/Kauai_County/b787d5_2025-06-19-khprc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/3/boards-and-commissions/historic-preservation-review-commission/2025/2025-06-19-khcrp-packet.pdf",
+    "text": "Packet (PDF, 5MB)",
+    "file": "data/city_files/Kauai_County/0da0a0_2025-06-19-khcrp-packet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/2025-4-17-khprc-agenda-posted.pdf",
+    "text": "2025-4-17 KHPRC Agenda (PDF, 132KB)",
+    "file": "data/city_files/Kauai_County/85cc76_2025-4-17-khprc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/2025-4-17-khprc-agenda-packet.pdf",
+    "text": "Packet (PDF, 22MB)",
+    "file": "data/city_files/Kauai_County/ea4b7e_2025-4-17-khprc-agenda-packet.pdf",
+    "rows": 6,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/2025-3-20-khprc-posted-agenda.pdf",
+    "text": "2025-3-20 KHPRC Agenda (PDF, 134KB)",
+    "file": "data/city_files/Kauai_County/d0c6b9_2025-3-20-khprc-posted-agenda.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/2025-3-20-khprc-agenda-packet.pdf",
+    "text": "Packet (PDF, 22MB)",
+    "file": "data/city_files/Kauai_County/37cf2e_2025-3-20-khprc-agenda-packet.pdf",
+    "rows": 15,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/02-20-2025-khprc-agenda-posted.pdf",
+    "text": "2025-2-20 KHPRC Agenda (PDF, 138KB)",
+    "file": "data/city_files/Kauai_County/722927_02-20-2025-khprc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/2025-02-20-khprc-agenda-packet.pdf",
+    "text": "Packet (PDF, 17MB)",
+    "file": "data/city_files/Kauai_County/b8dcdf_2025-02-20-khprc-agenda-packet.pdf",
+    "rows": 2,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/2025-1-16-khprc-agenda-posted.pdf",
+    "text": "2025-1-16 KHPRC Agenda (PDF, 122KB)",
+    "file": "data/city_files/Kauai_County/1cefa8_2025-1-16-khprc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2025/2025-1-16-khprc-agenda-packet.pdf",
+    "text": "Packet (PDF, 1MB)",
+    "file": "data/city_files/Kauai_County/7905c8_2025-1-16-khprc-agenda-packet.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.kauai.gov/files/assets/public/v/1/boards-and-commissions/historic-preservation-review-commission/2024/2024-12-05-khprc-agenda-posted.pdf",
+    "text": "2024-12-05 KHPRC Agenda (PDF, 153KB)",
+    "file": "data/city_files/Kauai_County/b804c9_2024-12-05-khprc-agenda-posted.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   }
+  ],
+  "portals": {
+   "https://kauai-open-data-kauaigis.hub.arcgis.com": "County of Kauai Open Data Hub",
+   "http://kauaigis.maps.arcgis.com/apps/webappviewer/index.html?id=255a2a3051a64b83804d4300c08ff849": "",
+   "https://kauaigis.maps.arcgis.com/apps/webappviewer/index.html?id=255a2a3051a64b83804d4300c08ff849": ""
+  }
+ },
+ "Creek County": {
+  "files": [
+   {
+    "url": "https://www.metrecycle.com/s/2026-Directory-page-by-page-pdf-for-Website.pdf",
+    "text": "The M.E.T. (Recycling Guide)",
+    "file": "data/city_files/Creek_County/5b63f7_2026-Directory-page-by-page-pdf-for-Website.pdf",
+    "rows": 462,
+    "bike_rows": 34
+   }
+  ],
+  "portals": {}
+ },
+ "North Richland Hills": {
+  "files": [],
+  "portals": {}
+ },
+ "Allegany County": {
+  "files": [],
+  "portals": {
+   "https://experience.arcgis.com/experience/6d8cd827d18046d78301badfd3f10b0b/page/Page": "Permits Dashboard 3.0",
+   "http://alleganygis.allconet.org/ACPS/schoolmap.html": "School Attendance Areas Map",
+   "http://alleganygis.allconet.org/recycle/index.html": "Take to recycling site",
+   "https://alleganygis.maps.arcgis.com/apps/webappviewer/index.html?id=8242a5b4c1ca44b1980490c61f20b743": "",
+   "https://experience.arcgis.com/experience/6d8cd827d18046d78301badfd3f10b0b/ ": "Interactive Digital Mapping",
+   "https://experience.arcgis.com/experience/6d8cd827d18046d78301badfd3f10b0b/": "Online Map Collection"
+  }
+ },
+ "Schenectady": {
+  "files": [],
+  "portals": {
+   "https://cityofschenectady.gov/605/Open-Data-Portal": "Open Data Portal",
+   "https://gis.schenectadyny.gov/arcgisportal/home/webmap/viewer.html?webmap=98bf5b4d73fc47ce8c6926581e99de1c": "Historic Districts Map",
+   "https://gis.schenectadyny.gov/arcgisportal/apps/experiencebuilder/experience/?id=74cafd9c8c9e4941af7f513cc6a841f1": "",
+   "https://gis.schenectadyny.gov/arcgisportal/apps/dashboards/a5e7f5bf62164367903f4a2a19c0baa4": "",
+   "https://schenectadyny.maps.arcgis.com/apps/webappviewer/index.html?id=816b8ab5260a4c2dacd8962cf072b1c0": ""
+  }
+ },
+ "Adams County": {
+  "files": [],
+  "portals": {}
+ },
+ "Burnsville": {
+  "files": [],
+  "portals": {}
+ },
+ "Moore": {
+  "files": [],
+  "portals": {}
+ },
+ "Huntersville": {
+  "files": [],
+  "portals": {}
+ },
+ "Cupertino": {
+  "files": [
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/1/departments/documents/public-works/safe-routes/survey-results.pdf",
+    "text": "survey results (PDF, 38KB)",
+    "file": "data/city_files/Cupertino/652f02_survey-results.pdf",
+    "rows": 12,
+    "bike_rows": 6
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/1/departments/documents/public-works/safe-routes/pedestrian_scramble_flyer-final.pdf",
+    "text": "Flyer (PDF, 764KB)",
+    "file": "data/city_files/Cupertino/ab17b1_pedestrian_scramble_flyer-final.pdf",
+    "rows": 46,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/1/our-community/documents/cupertino-bicycle-transpor.pdf",
+    "text": "2016 Bicycle Transportation Plan (PDF, 8MB)",
+    "file": "data/city_files/Cupertino/669088_cupertino-bicycle-transpor.pdf",
+    "rows": 522,
+    "bike_rows": 130
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/1/departments/documents/public-works/transportation/transportation-amp-mobility/atp/cupertino-atp_bikeped-count-white-paper_final.pdf",
+    "text": "Bicycle Count White Paper (PDF, 1MB)",
+    "file": "data/city_files/Cupertino/b6e576_cupertino-atp_bikeped-count-white-paper_final.pdf",
+    "rows": 140,
+    "bike_rows": 47
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/1/parks-and-recreation/documents/parks-and-facilities/picnic-area-rentals/mappicnic_creekside.pdf",
+    "text": "Park and Picnic Area Map (PDF, 198KB)",
+    "file": "data/city_files/Cupertino/47da99_mappicnic_creekside.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/1/parks-and-recreation/documents/parks-and-facilities/picnic-area-rentals/mappicnic_lindavista.pdf",
+    "text": "Park and Picnic Area Map (PDF, 9MB)",
+    "file": "data/city_files/Cupertino/d2ff32_mappicnic_lindavista.pdf",
+    "rows": 17,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/1/parks-and-recreation/documents/parks-and-facilities/picnic-area-rentals/mappicnic_memorial_small.pdf",
+    "text": "Park and Picnic Area Map (PDF, 2MB)",
+    "file": "data/city_files/Cupertino/e41d06_mappicnic_memorial_small.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/1/parks-and-recreation/documents/parks-and-facilities/picnic-area-rentals/mappicnic_portalpark.pdf",
+    "text": "Park and Picnic Area Map (PDF, 10MB)",
+    "file": "data/city_files/Cupertino/ae30f7_mappicnic_portalpark.pdf",
+    "rows": 10,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/1/parks-and-recreation/documents/parks-and-facilities/park-maps/parksite_blackberry.pdf",
+    "text": "Site Map (PDF, 540KB)",
+    "file": "data/city_files/Cupertino/a5d3ca_parksite_blackberry.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/creekside-park-map.pdf",
+    "text": "Creekside Field Map (PDF, 894KB)",
+    "file": "data/city_files/Cupertino/08387e_creekside-park-map.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/1/parks-and-recreation/documents/parks-and-facilities/athletic-fields/jollyman-park-ma.pdf",
+    "text": "Jollyman Field Map (PDF, 744KB)",
+    "file": "data/city_files/Cupertino/1333b9_jollyman-park-ma.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/hoover-park-map.pdf",
+    "text": "Hoover Field Map (PDF, 661KB)",
+    "file": "data/city_files/Cupertino/fd2590_hoover-park-map.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/library-field-map.pdf",
+    "text": "Library Field Map (PDF, 484KB)",
+    "file": "data/city_files/Cupertino/7d4264_library-field-map.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/monta-vista-park-map.pdf",
+    "text": "Monta Vista Field Map (PDF, 496KB)",
+    "file": "data/city_files/Cupertino/92e940_monta-vista-park-map.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/wilson-park-map.pdf",
+    "text": "Wilson Park Field Map (PDF, 717KB)",
+    "file": "data/city_files/Cupertino/778621_wilson-park-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/collins-elementary-map.pdf",
+    "text": "Collins Field Map (PDF, 533KB)",
+    "file": "data/city_files/Cupertino/b978e7_collins-elementary-map.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/eaton-elementary-map.pdf",
+    "text": "Eaton Field Map (PDF, 449KB)",
+    "file": "data/city_files/Cupertino/a220c8_eaton-elementary-map.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/faria-elementary-map.pdf",
+    "text": "Faria Field Map (PDF, 578KB)",
+    "file": "data/city_files/Cupertino/0e7819_faria-elementary-map.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/garden-gate-elementary-map.pdf",
+    "text": "Garden Gate Field Map (PDF, 539KB)",
+    "file": "data/city_files/Cupertino/050cb1_garden-gate-elementary-map.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/hyde-middle-school-map.pdf",
+    "text": "Hyde Middle School Field Map (PDF, 707KB)",
+    "file": "data/city_files/Cupertino/620840_hyde-middle-school-map.pdf",
+    "rows": 13,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/kennedy-middle-school-map.pdf",
+    "text": "Kennedy Fields Map (PDF, 582KB)",
+    "file": "data/city_files/Cupertino/4e8fdf_kennedy-middle-school-map.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/lincoln-elementary-map.pdf",
+    "text": "Lincoln Field Map (PDF, 568KB)",
+    "file": "data/city_files/Cupertino/669195_lincoln-elementary-map.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/regnart-elementary-map.pdf",
+    "text": "Regnart Elementary Field Map (PDF, 609KB)",
+    "file": "data/city_files/Cupertino/d9ee5f_regnart-elementary-map.pdf",
+    "rows": 11,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/parks-and-facilities/athletic-fields/stevens-creek-school-map.pdf",
+    "text": "Stevens Creek Field Map (PDF, 6MB)",
+    "file": "data/city_files/Cupertino/068351_stevens-creek-school-map.pdf",
+    "rows": 0,
+    "bike_rows": 0
+   },
+   {
+    "url": "https://www.cupertino.gov/files/assets/city/v/2/parks-and-recreation/documents/mcclellan/mcclellan-ranch-preserve-map.pdf",
+    "text": "McClellan Ranch Preserve Map (PDF, 132KB)",
+    "file": "data/city_files/Cupertino/161b97_mcclellan-ranch-preserve-map.pdf",
+    "rows": 13,
+    "bike_rows": 2
+   }
+  ],
+  "portals": {
+   "https://gis.cupertino.org/servicefinder": "Maps",
+   "https://gis.cupertino.org/webmap/streetlight/": "Streetlight App Explore what our Street Light Division is doing for the city",
+   "https://gis.cupertino.org/webmap/eoc_dashboard_public/": "Hazard Awareness App Monitoring hazards and potential hazards impacting the City of Cupertino",
+   "https://gis.cupertino.org/webmap/treeapp/": "Tree Finder App Discover information about the trees. Our city features a diverse array of trees, and learning about the",
+   "https://www.cupertino.gov/Your-City/Departments/Innovation-Technology/Citywide-Open-Data-Portal": "Citywide Open Data Portal",
+   "https://data-valleywater.opendata.arcgis.com/": "Valley Water Open Data",
+   "https://gis.data.ca.gov/": "California State Geo Portal",
+   "https://data.vta.org/": "VTA Open Data Portal",
+   "https://gis.santaclaracounty.gov/home": "Santa Clara County GIS",
+   "https://gis.cupertino.org/webmap/gallery/": "https://gis.cupertino.org/webmap/gallery/",
+   "https://experience.arcgis.com/experience/0572ce71764141478d02aff65e9c17c9": "",
+   "https://storymaps.arcgis.com/stories/f67167a2e64d473d8c51fc98d6af0c55": "Completed Projects"
+  }
+ }
+}
