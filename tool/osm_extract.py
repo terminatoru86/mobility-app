@@ -51,6 +51,15 @@ def slim(tags):
     return out
 
 
+def dated(tags, obj):
+    """last edit of the element in OpenStreetMap, for the newest-source rule of the duplicates"""
+    try:
+        tags['source:date'] = obj.timestamp.strftime('%Y-%m-%d')
+    except Exception:
+        pass
+    return tags
+
+
 class H(osmium.SimpleHandler):
     def __init__(self):
         super().__init__()
@@ -59,7 +68,7 @@ class H(osmium.SimpleHandler):
     def node(self, n):
         t = dict(n.tags)
         if t and wanted(t) and n.location.valid():
-            self.out.append([f'node/{n.id}', round(n.location.lat, 6), round(n.location.lon, 6), slim(t)])
+            self.out.append([f'node/{n.id}', round(n.location.lat, 6), round(n.location.lon, 6), dated(slim(t), n)])
 
     def way(self, w):
         t = dict(w.tags)
@@ -68,7 +77,7 @@ class H(osmium.SimpleHandler):
         pts = [(nd.lat, nd.lon) for nd in w.nodes if nd.location.valid()]
         if pts:  # the middle of the outline
             self.out.append([f'way/{w.id}', round(sum(p[0] for p in pts) / len(pts), 6),
-                             round(sum(p[1] for p in pts) / len(pts), 6), slim(t)])
+                             round(sum(p[1] for p in pts) / len(pts), 6), dated(slim(t), w)])
 
 
 if __name__ == '__main__':

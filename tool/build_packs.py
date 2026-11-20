@@ -207,6 +207,26 @@ def element(src, props, lat, lon, i):
         tags.update({'service:bicycle:pump': 'yes', 'service:bicycle:tools': 'yes'})
     if address:
         tags['addr:street'] = address.title() if address.isupper() else address
+    # when this place was installed / checked / last changed (for the newest-source rule of the duplicates)
+    best = ''
+    for k, v in low.items():
+        if v in (None, '') or not re.search(r'date|install|inspect|edit|updat|modif|verif|survey|year', k):
+            continue
+        d_ = ''
+        if isinstance(v, (int, float)) and v > 3e11:  # ArcGIS: milliseconds since 1970
+            try:
+                d_ = datetime.fromtimestamp(v / 1000, timezone.utc).strftime('%Y-%m-%d')
+            except (OverflowError, OSError, ValueError):
+                d_ = ''
+        else:
+            m = re.search(r'((?:19|20)\d\d)(?:[-/](\d\d?)[-/](\d\d?))?', str(v))
+            if m:
+                d_ = m.group(1) + (f'-{int(m.group(2)):02d}-{int(m.group(3)):02d}' if m.group(2) else '')
+        if d_ and '1990' <= d_[:4] <= '2030' and d_ > best:
+            best = d_
+    best = best or src.get('date') or ''
+    if best:
+        tags['source:date'] = best
     return [f"city/{src['key']}/{rid}", round(lat, 6), round(lon, 6), tags]
 
 
@@ -214,6 +234,13 @@ def fetch_city(src):
     out = []
     if src['socrata']:
         dom, ds = src['socrata'].split('/', 1)
+        try:
+            meta = json.loads(http(f'https://{dom}/api/views/{ds}.json', timeout=60))
+            ts = meta.get('rowsUpdatedAt') or meta.get('viewLastModified')
+            if ts:
+                src = dict(src, date=datetime.fromtimestamp(ts, timezone.utc).strftime('%Y-%m-%d'))
+        except Exception:
+            pass
         j = json.loads(http(f'https://{dom}/resource/{ds}.geojson?$limit=200000', timeout=300))
         for i, f in enumerate(j.get('features', [])):
             c = (f.get('geometry') or {}).get('coordinates')
@@ -245,6 +272,13 @@ def fetch_city(src):
             return out
         if re.search(r'(FeatureServer|MapServer)$', url):
             url += f"/{src['layer']}"
+    try:
+        info = json.loads(http(f'{url}?f=json', timeout=60))
+        ts = (info.get('editingInfo') or {}).get('lastEditDate') or (info.get('editingInfo') or {}).get('dataLastEditDate')
+        if ts:
+            src = dict(src, date=datetime.fromtimestamp(ts / 1000, timezone.utc).strftime('%Y-%m-%d'))
+    except Exception:
+        pass
     offset, i = 0, 0
     for _ in range(200):
         q = urllib.parse.urlencode({'where': '1=1', 'outFields': '*', 'outSR': '4326', 'returnGeometry': 'true',
