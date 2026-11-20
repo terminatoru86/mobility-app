@@ -1004,7 +1004,21 @@ def fetch_afdc():
     key = os.environ.get('NREL_API_KEY') or 'DEMO_KEY'
     q = urllib.parse.urlencode({'api_key': key, 'fuel_type': 'ELEC', 'ev_connector_type': 'NEMA515,NEMA520',
                                 'status': 'E', 'access': 'public', 'limit': 'all', 'country': 'US'})
-    j = json.loads(http(f'https://developer.nrel.gov/api/alt-fuel-stations/v1.json?{q}', timeout=180))
+    # NREL became the National Laboratory of the Rockies (nlr.gov); try the new host first, then the old one
+    j, last = None, None
+    for host in ('developer.nlr.gov', 'developer.nrel.gov'):
+        for attempt in range(3):
+            try:
+                j = json.loads(http(f'https://{host}/api/alt-fuel-stations/v1.json?{q}', timeout=300))
+                break
+            except Exception as err:
+                last = err
+                print(f'AFDC {host} try {attempt + 1}: {str(err)[:120]}', flush=True)
+                time.sleep(20)
+        if j is not None:
+            break
+    if j is None:
+        raise last
     out = []
     for st in j.get('fuel_stations') or []:
         lat, lon = st.get('latitude'), st.get('longitude')
@@ -1315,11 +1329,9 @@ def main():
     def rank(r):
         k = r[0]
         return 0 if k.startswith(('node/', 'way/', 'relation/')) else 1 if k.startswith('city/') and not k.split('/')[1].startswith(('ago-', 'soc-', 'ckn-')) else 2
-    # same kind of place from two DIFFERENT sources within a few metres (official lists and OpenStreetMap often
-    # differ by 5-15 m for the same rack): the higher-ranked one stays. Racks of one source next to each other stay.
-    RAD = {'bicycle_parking': 12, 'small_electric_vehicle_parking': 15, 'kick-scooter_parking': 15, 'mobility_hub': 15,
-           'motorcycle_parking': 15, 'bicycle_repair_station': 15, 'compressed_air': 15, 'charging_station': 15,
-           'bicycle_rental': 30}
+    # same kind of place from two DIFFERENT sources within 5 m: the higher-ranked one stays. Racks of one source next to each other stay.
+    # at most 5 m (owner's rule): farther apart they are treated as two different places
+    RAD = {}
     SAME = {'small_electric_vehicle_parking': ('small_electric_vehicle_parking', 'kick-scooter_parking', 'mobility_hub'),
             'kick-scooter_parking': ('small_electric_vehicle_parking', 'kick-scooter_parking', 'mobility_hub')}
     def src_of(k):
