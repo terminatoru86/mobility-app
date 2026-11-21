@@ -1136,9 +1136,15 @@ def fetch_ocm():
 
 
 def fetch_own():
-    """Places added by hand by the owner of the app (data/own_places.json)."""
+    """Places added by hand by the owner of the app (data/own_places.json), plus the shops of the owner's
+    consolidated business list that no source has (data/owner_list_extra.json, ids xl/)."""
     out = []
-    for i, p in enumerate(json.load(open(os.path.join(ROOT, 'data', 'own_places.json'), encoding='utf-8'))['places']):
+    lists = [('own', json.load(open(os.path.join(ROOT, 'data', 'own_places.json'), encoding='utf-8'))['places'])]
+    try:
+        lists.append(('xl', json.load(open(os.path.join(ROOT, 'data', 'owner_list_extra.json'), encoding='utf-8'))['places']))
+    except FileNotFoundError:
+        pass
+    for pre, p in ((pre, p) for pre, ps in lists for p in ps):
         veh = {'Bicycle': 'bicycle', 'Scooter': 'scooter'}.get(p.get('vehicle'), 'motorcycle')
         if p['type'] == 'Rent':
             tags = {'amenity': 'bicycle_rental'}
@@ -1151,9 +1157,11 @@ def fetch_own():
                                        'opening_hours': p.get('hours')}.items() if v})
         if p.get('sells'):
             tags['mobility:sells'] = ';'.join(p['sells'])  # what the shop sells, chosen by hand
-        tags['source'] = 'MOBIlity'
+        tags['source'] = 'MOBIlity' if pre == 'own' else (p.get('source') or 'MOBIlity')
         slug = re.sub(r'[^a-z0-9]+', '-', p['name'].lower())[:40].strip('-')
-        out.append([f'own/{slug}', round(p['lat'], 6), round(p['lon'], 6), tags])
+        if pre == 'xl':
+            slug += f"-{abs(round(p['lat'] * 1e4)) % 10000:04d}{abs(round(p['lon'] * 1e4)) % 10000:04d}"
+        out.append([f'{pre}/{slug}', round(p['lat'], 6), round(p['lon'], 6), tags])
     print(f'Own places: {len(out)}', flush=True)
     return out
 
@@ -1368,7 +1376,7 @@ def main():
             got = fn()
             # read again and answered: the old rows of this source go, so a place the source
             # (or our filter) no longer has does not stay on the map
-            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': 'own/', 'paid': 'pay/', 'waterfront': 'wtr/', 'cityfiles': ('cty/', 'pm/', 'gs/', 'usr/', 'vnd/'), 'afdc': 'afdc/', 'ocm': 'ocm/', 'bikelink': 'blk/'}.get(name)
+            old = {'overture': 'ovt/', 'foursquare': 'fsq/', 'alltheplaces': 'atp/', 'own': ('own/', 'xl/'), 'paid': 'pay/', 'waterfront': 'wtr/', 'cityfiles': ('cty/', 'pm/', 'gs/', 'usr/', 'vnd/'), 'afdc': 'afdc/', 'ocm': 'ocm/', 'bikelink': 'blk/'}.get(name)
             if old and got:
                 for d in tiles.values():
                     for k in [k for k in d if str(k).startswith(old)]:
