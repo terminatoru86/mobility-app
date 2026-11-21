@@ -87,6 +87,56 @@ def wikidata():
     return out
 
 
+ABBR = {'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California', 'CO': 'Colorado',
+        'CT': 'Connecticut', 'DE': 'Delaware', 'DC': 'District of Columbia', 'FL': 'Florida', 'GA': 'Georgia',
+        'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa', 'KS': 'Kansas',
+        'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland', 'MA': 'Massachusetts', 'MI': 'Michigan',
+        'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri', 'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada',
+        'NH': 'New Hampshire', 'NJ': 'New Jersey', 'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina',
+        'ND': 'North Dakota', 'OH': 'Ohio', 'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania',
+        'RI': 'Rhode Island', 'SC': 'South Carolina', 'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas',
+        'UT': 'Utah', 'VT': 'Vermont', 'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia',
+        'WI': 'Wisconsin', 'WY': 'Wyoming'}
+
+
+def dotgov():
+    """Every city / county .gov domain (CISA dotgov-data, public domain): name, state, domain."""
+    import csv
+    import io
+    cache = os.path.join(ROOT, 'data', 'foia', 'dotgov_local.json')
+    if os.path.exists(cache) and os.environ.get('USE_CACHE', '1') == '1':
+        return json.load(open(cache))
+    raw = urllib.request.urlopen(urllib.request.Request(
+        'https://raw.githubusercontent.com/cisagov/dotgov-data/main/current-full.csv',
+        headers={'User-Agent': 'MOBIlityBot/1.0'}), timeout=120).read().decode('utf-8', 'replace')
+    out = []
+    for r in csv.DictReader(io.StringIO(raw)):
+        typ = (r.get('Domain type') or r.get('Domain Type') or '').strip()
+        if typ not in ('City', 'County'):
+            continue
+        st = ABBR.get((r.get('State') or '').strip().upper())
+        if not st:
+            continue
+        org = (r.get('Organization name') or r.get('Organization') or '').strip()
+        out.append({'domain': (r.get('Domain name') or r.get('Domain Name') or '').strip().lower(), 'type': typ,
+                    'org': org, 'state': st})
+    json.dump(out, open(cache, 'w'))
+    print('dotgov', len(out), flush=True)
+    return out
+
+
+def org_name(org, typ):
+    o = re.sub(r'\s+', ' ', org).strip()
+    m = re.match(r'^(city|town|village|borough|township|county|municipality|parish)\s+of\s+(the\s+)?(.+)$', o, re.I)
+    if m:
+        kind = m.group(1).title()
+        return m.group(3), ('Town' if kind in ('Town', 'Village', 'Borough', 'Township') else kind if kind in ('County', 'Parish') else 'City')
+    m = re.match(r'^(.+?)\s+(county|parish)$', o, re.I)
+    if m:
+        return o, 'Org'
+    return o, 'Org' if typ == 'County' else 'City'
+
+
 def targets():
     done_host, done_name = set(), set()
     for c in json.load(open(os.path.join(ROOT, 'data', 'foia', 'contacts.json'))):
@@ -109,6 +159,19 @@ def targets():
         kind = 'County' if t in COUNTY else 'Town' if t in TOWN else 'City'
         rows.append({'name': name, 'site': h, 'lat': lat, 'lon': lon, 'kind': kind,
                      'pop': int(float(b['p']['value'])) if b.get('p') else 0})
+    if os.environ.get('SOURCE', 'wikidata') == 'dotgov':
+        wd = rows
+        rows = []
+        wd_hosts = {r['site'] for r in wd}
+        for d in dotgov():
+            h = d['domain']
+            if not h or h in seen and h not in wd_hosts or h in done_host:
+                continue
+            if h in wd_hosts:           # already read by the Wikidata run
+                continue
+            seen.add(h)
+            name, kind = org_name(d['org'], d['type'])
+            rows.append({'name': name, 'site': h, 'lat': None, 'lon': None, 'kind': kind, 'pop': 0, 'state': d['state']})
     rows.sort(key=lambda r: (-r['pop'], r['site']))
     return rows, done_name
 
@@ -125,7 +188,7 @@ def find():
     def one(r):
         if time.time() > stop:
             return None
-        st = state_of(r['lat'], r['lon'])
+        st = r.get('state') or state_of(r['lat'], r['lon'])
         if not st or f"{r['name']} {st}".lower() in done_name:
             return None
         try:
@@ -139,8 +202,8 @@ def find():
                 res.append(x)
             if i % 200 == 0:
                 print(f'{i}/{len(mine)} · with e-mail {sum(1 for y in res if y["email"])}', flush=True)
-                json.dump(res, open(os.path.join(OUT, f'part_{shard}.json'), 'w'), separators=(',', ':'))
-    json.dump(res, open(os.path.join(OUT, f'part_{shard}.json'), 'w'), separators=(',', ':'))
+                json.dump(res, open(os.path.join(OUT, f"{os.environ.get('PART', 'part')}_{shard}.json"), 'w'), separators=(',', ':'))
+    json.dump(res, open(os.path.join(OUT, f"{os.environ.get('PART', 'part')}_{shard}.json"), 'w'), separators=(',', ':'))
     print(f'shard {shard}: {len(res)} read · e-mail {sum(1 for y in res if y["email"])} · portal only '
           f'{sum(1 for y in res if y["portal"] and not y["email"])}', flush=True)
     os._exit(0)
@@ -149,7 +212,7 @@ def find():
 def merge():
     import glob
     rows = []
-    for f in sorted(glob.glob(os.path.join(OUT, 'part_*.json'))):
+    for f in sorted(glob.glob(os.path.join(OUT, '*_*.json'))):
         rows += json.load(open(f))
     rows.sort(key=lambda r: (-r['pop'], r['site']))
     json.dump(rows, open(os.path.join(ROOT, 'data', 'foia', 'all.json'), 'w'), indent=0, ensure_ascii=False)
