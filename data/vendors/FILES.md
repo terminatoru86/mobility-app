@@ -90,7 +90,7 @@ Read: 1324 · with rows: 251 · rows: 12159
      -  Calais  https://calaisvt.sharepoint.com/:b:/s/Website/IQCGnKrl95j-S6wGxJ4vDsF9AQ7_E4WurYrWkHXAvzNOM5I?e=WUtcM3
      -  Calais  https://calaisvt.sharepoint.com/:b:/s/Website/IQB5WFhwmDPjRYnWvV8-OgYkAR8fG96aD7y9SxQO3oYYxSo?e=dpssSP
      -  Calais  https://calaisvt.sharepoint.com/:b:/s/Website/IQByV0bI42BwQr0upk_JQ9yXAYEZjLA0gXlBCxezwaecFEQ?e=pVCVem
-     -  Summerdale  https://www.summerdaleal.com/wp-content/uploads/2026/10/Notice_of_Request_for_Proposals_Emerg._water_services_2026.docx
+     0  Summerdale  https://www.summerdaleal.com/wp-content/uploads/2026/10/Notice_of_Request_for_Proposals_Emerg._water_services_2026.docx
      -  George  docs.google.com/spreadsheets/d/e
      0  Henderson  https://drive.google.com/file/d/1uzw2QG0PSxkfNGGOry2E3OASE3Tx9aqG/view?usp=sharing
      0  Henderson  drive.google.com/file/d/1uzw2QG0PSxkfNGGOry2E3OASE3Tx9aqG
