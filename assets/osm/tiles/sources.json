@@ -1278,12 +1278,6 @@
   "places": 206
  },
  {
-  "key": "ago-220da7e7e1",
-  "label": "ScooterCorrals · Multimodal_01",
-  "url": "https://services1.arcgis.com/5ly0cVV70qsN8Soc/arcgis/rest/services/ScooterCorrals1/FeatureServer/0",
-  "places": 205
- },
- {
   "key": "ago-072ad14f57",
   "label": "ActiveTransportation (Review) · mdtaylor_CHCRPA",
   "url": "https://services2.arcgis.com/cclAu9OKhOfjeUdr/arcgis/rest/services/ActiveTransportation_(Review)/FeatureServer/2",
@@ -1539,6 +1533,12 @@
   "key": "ago-cfd6d2f3dd",
   "label": "UB Layers for Web DEV · asmbari_ub_admin",
   "url": "https://services.arcgis.com/8M4ouO6B2QmFQC5a/arcgis/rest/services/UB_Layers_for_Web_DEV/FeatureServer/311",
+  "places": 149
+ },
+ {
+  "key": "ago-1880419551",
+  "label": "Facilities Map · asmbari_ub_admin",
+  "url": "https://services.arcgis.com/8M4ouO6B2QmFQC5a/arcgis/rest/services/Facilities_Map/FeatureServer/311",
   "places": 149
  },
  {
@@ -2094,12 +2094,6 @@
   "places": 71
  },
  {
-  "key": "ago-cb05c52774",
-  "label": "Scooter Corrals · philip.johnson_baltimoredot",
-  "url": "https://services3.arcgis.com/ZTvQ9NuONePFYofE/arcgis/rest/services/Scooter_Corrals/FeatureServer/0",
-  "places": 71
- },
- {
   "key": "ago-873ed28632",
   "label": "Bike Racks · kheard",
   "url": "https://services.arcgis.com/EEOLw7FvbUFCdg7T/arcgis/rest/services/Bike_Racks/FeatureServer/0",
@@ -2172,15 +2166,15 @@
   "places": 69
  },
  {
-  "key": "ago-dc5de75a52",
-  "label": "Bike Repair Station Madison 2 · asnow4@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Madison_2/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-efdda51168",
   "label": "Bike Repair Station222 · xchen2268@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station222/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-dc5de75a52",
+  "label": "Bike Repair Station Madison 2 · asnow4@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Madison_2/FeatureServer/0",
   "places": 69
  },
  {
@@ -2286,15 +2280,15 @@
   "places": 69
  },
  {
-  "key": "ago-4679ec41da",
-  "label": "bike repair station layer · jjimenez23@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/bike_repair_station_layer/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-75232939c4",
   "label": "Bike Repair Data · srwisniewski@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Data/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-4679ec41da",
+  "label": "bike repair station layer · jjimenez23@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/bike_repair_station_layer/FeatureServer/0",
   "places": 69
  },
  {
@@ -2310,15 +2304,15 @@
   "places": 69
  },
  {
-  "key": "ago-201747ae5d",
-  "label": "Bike Repair · rimoss@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-0a6a9b5d96",
   "label": "Bike Repair Madison · eilundin@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Madison/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-201747ae5d",
+  "label": "Bike Repair · rimoss@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair/FeatureServer/0",
   "places": 69
  },
  {
@@ -2520,12 +2514,6 @@
   "places": 64
  },
  {
-  "key": "ago-c93925b764",
-  "label": "ISRC Map _ Bloomington_WFL1 · tongyoon_IU",
-  "url": "https://services.arcgis.com/tKsJAIiLjd90D5q2/arcgis/rest/services/ISRC_Map___Bloomington_WFL1/FeatureServer/6",
-  "places": 64
- },
- {
   "key": "soc-j9kp-gbih",
   "label": "E-Scooter Corral · data.bloomington.in.gov",
   "url": "data.bloomington.in.gov/j9kp-gbih",
@@ -2610,12 +2598,6 @@
   "places": 59
  },
  {
-  "key": "ago-28c3756344",
-  "label": "2025 New Scooter Corrals · zarode@milwaukee.gov_mapMKEonline",
-  "url": "https://services1.arcgis.com/5ly0cVV70qsN8Soc/arcgis/rest/services/2025_New_Scooter_Corrals/FeatureServer/0",
-  "places": 59
- },
- {
   "key": "ago-1851dc18c2",
   "label": "BPS Heights Interactive Base Layers · bryano1",
   "url": "https://services2.arcgis.com/jCPZmQjF0kIPAohC/arcgis/rest/services/61612_BPS_Heights_Interactive_Base_Layers/FeatureServer/40",
@@ -2649,12 +2631,6 @@
   "key": "ago-6f9d509a87",
   "label": "Bike_Racks_Central_Campus · bengstj2_wwu",
   "url": "https://services.arcgis.com/qboYD3ru0louQq4F/arcgis/rest/services/Bike_Racks_Central_Campus/FeatureServer/0",
-  "places": 58
- },
- {
-  "key": "ago-a6f0d8a554",
-  "label": "OSU Stillwater Scooter Parking (OSU) · okdot_gis_statewide",
-  "url": "https://fm-gis-server.okstate.edu/server/rest/services/LandscapeServices/OsuStwScooterParking/MapServer/0",
   "places": 58
  },
  {
@@ -2931,12 +2907,6 @@
   "key": "ago-ea557d9689",
   "label": "Bicycle Racks · russell.stone@columbiaassociation.org",
   "url": "https://services8.arcgis.com/Qah4YRlnA96tI4X9/arcgis/rest/services/Bicycle_Racks/FeatureServer/0",
-  "places": 41
- },
- {
-  "key": "ago-9bd90deca6",
-  "label": "WWU Fairhaven Bike Racks · whittir_wwu",
-  "url": "https://services.arcgis.com/qboYD3ru0louQq4F/arcgis/rest/services/WWU_Fairhaven_Bike_Racks/FeatureServer/0",
   "places": 41
  },
  {
@@ -3264,6 +3234,12 @@
   "places": 29
  },
  {
+  "key": "ago-9d6ba5a250",
+  "label": "Bike Racks · DES_GIS_Support",
+  "url": "https://services9.arcgis.com/VatvCKAYJJVi8sva/arcgis/rest/services/Bike_racks/FeatureServer/0",
+  "places": 28
+ },
+ {
   "key": "ago-e0e0cd0665",
   "label": "Bike Racks · billecj_wwu",
   "url": "https://services.arcgis.com/qboYD3ru0louQq4F/arcgis/rest/services/Bike_Racks_Draft/FeatureServer/0",
@@ -3291,12 +3267,6 @@
   "key": "ago-66ee2dd7e6",
   "label": "UVIC BIKE PARKING · rubyforde_UVGeog",
   "url": "https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/UVIC_BIKE_PARKING/FeatureServer/0",
-  "places": 28
- },
- {
-  "key": "ago-f5a5aa267d",
-  "label": "CRD Bike Repair Stations · SouthVancouverIslandProsperityProject",
-  "url": "https://mapservices.crd.bc.ca/arcgis/rest/services/BikeRepairStations/MapServer/0",
   "places": 28
  },
  {
@@ -3342,12 +3312,6 @@
   "places": 26
  },
  {
-  "key": "ago-9d6ba5a250",
-  "label": "Bike Racks · DES_GIS_Support",
-  "url": "https://services9.arcgis.com/VatvCKAYJJVi8sva/arcgis/rest/services/Bike_racks/FeatureServer/0",
-  "places": 26
- },
- {
   "key": "ago-93f6bea3c3",
   "label": "KSU Navigate_ Walk_ Bike_ Bus_WFL1 · trhodeha",
   "url": "https://services.arcgis.com/BYDjud66SsX2pmAB/arcgis/rest/services/KSU_Navigate__Walk__Bike__Bus_WFL1/FeatureServer/1",
@@ -3357,12 +3321,6 @@
   "key": "ago-174a975b13",
   "label": "Street Furniture Inventory · AScottDSDP",
   "url": "https://services2.arcgis.com/IJ19H4d4R88g1FZ8/arcgis/rest/services/Street_Furniture_Inventory/FeatureServer/3",
-  "places": 26
- },
- {
-  "key": "ago-1f642d3f44",
-  "label": "BikeRacks · lyonss8_wwu",
-  "url": "https://services.arcgis.com/qboYD3ru0louQq4F/arcgis/rest/services/BikeRacks/FeatureServer/0",
   "places": 26
  },
  {
@@ -3540,12 +3498,6 @@
   "places": 23
  },
  {
-  "key": "ago-40355bc00f",
-  "label": "Scooter Parking · MASWAIM_uncg",
-  "url": "https://services1.arcgis.com/LHR3xygGZdtJuI79/arcgis/rest/services/Scooter_Parking/FeatureServer/0",
-  "places": 23
- },
- {
   "key": "ago-94ee24c52a",
   "label": "Transportation · szachary_wustladm",
   "url": "https://services5.arcgis.com/ye41g2AjcwMwCt9y/arcgis/rest/services/Transportation/FeatureServer/43",
@@ -3639,12 +3591,6 @@
   "key": "ago-2daacb6254",
   "label": "Spearfish Collection Layers City Update · ethorkelson@srfconsulting.com_SRFConsulting",
   "url": "https://services.arcgis.com/sLe4VrKqV1JxToKz/arcgis/rest/services/Spearfish_Collection_Layers_City_Update/FeatureServer/5",
-  "places": 20
- },
- {
-  "key": "ago-4b7f3de13c",
-  "label": "Central WWU Bike Racks · macintm_wwu",
-  "url": "https://services.arcgis.com/qboYD3ru0louQq4F/arcgis/rest/services/Central_WWU_Bike_Racks/FeatureServer/0",
   "places": 20
  },
  {
@@ -4029,12 +3975,6 @@
   "key": "ago-ecd6a7a41b",
   "label": "Fix_it Stations view · jreyling_csu",
   "url": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/arcgis/rest/services/Fix_it_Stations_view/FeatureServer/0",
-  "places": 13
- },
- {
-  "key": "ago-6734de4046",
-  "label": "Motorcycle and Scooter Parking Spots at UVIC · Geog104_202609_38",
-  "url": "https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/Motorcycle_and_Scooter_Parking_Spots_at_UVIC/FeatureServer/0",
   "places": 13
  },
  {
@@ -4524,12 +4464,6 @@
   "places": 8
  },
  {
-  "key": "ago-b808ac0297",
-  "label": "Sidewalk Scooter Parking Corrals · erin.curry@dallascityhall.com_DallasGIS",
-  "url": "https://services2.arcgis.com/rwnOSbfKSwyTBcwN/arcgis/rest/services/Sidewalk_Scooter_Parking_Corrals/FeatureServer/9",
-  "places": 8
- },
- {
   "key": "ago-016c7cc7eb",
   "label": "Green Earth Nature Preserves · Green_Earth_Director",
   "url": "https://services6.arcgis.com/uLLic6qa9moCfPLX/arcgis/rest/services/Nature_Preserves/FeatureServer/1",
@@ -4677,6 +4611,12 @@
   "key": "ago-c52a690d31",
   "label": "Bike Racks · KCC_FS",
   "url": "https://services5.arcgis.com/GiVLls1khopQzkoU/arcgis/rest/services/Bike_Racks/FeatureServer/0",
+  "places": 6
+ },
+ {
+  "key": "ago-9d29886d99",
+  "label": "Facilities Map · asmbari_ub_admin",
+  "url": "https://services.arcgis.com/8M4ouO6B2QmFQC5a/arcgis/rest/services/Facilities_Map/FeatureServer/504",
   "places": 6
  },
  {
@@ -5409,6 +5349,12 @@
   "key": "ago-b1b9e2894f",
   "label": "Bike Parking_mercedesm · mam2448_uagis",
   "url": "https://services1.arcgis.com/Ezk9fcjSUkeadg6u/arcgis/rest/services/Bike_Parking_mercedesm/FeatureServer/0",
+  "places": 2
+ },
+ {
+  "key": "ago-b6092c12cc",
+  "label": "BikeParking_manaskabadwal · manas_10",
+  "url": "https://services5.arcgis.com/fLBXNVm2cIIBCc4G/arcgis/rest/services/BikeParking_manaskabadwal/FeatureServer/0",
   "places": 2
  },
  {
