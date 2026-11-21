@@ -90,7 +90,7 @@ Read: 1324 · with rows: 251 · rows: 12159
      -  Calais  https://calaisvt.sharepoint.com/:b:/s/Website/IQCGnKrl95j-S6wGxJ4vDsF9AQ7_E4WurYrWkHXAvzNOM5I?e=WUtcM3
      -  Calais  https://calaisvt.sharepoint.com/:b:/s/Website/IQB5WFhwmDPjRYnWvV8-OgYkAR8fG96aD7y9SxQO3oYYxSo?e=dpssSP
      -  Calais  https://calaisvt.sharepoint.com/:b:/s/Website/IQByV0bI42BwQr0upk_JQ9yXAYEZjLA0gXlBCxezwaecFEQ?e=pVCVem
-     0  Summerdale  https://www.summerdaleal.com/wp-content/uploads/2026/10/Notice_of_Request_for_Proposals_Emerg._water_services_2026.docx
+     -  Summerdale  https://www.summerdaleal.com/wp-content/uploads/2026/10/Notice_of_Request_for_Proposals_Emerg._water_services_2026.docx
      -  George  docs.google.com/spreadsheets/d/e
      0  Henderson  https://drive.google.com/file/d/1uzw2QG0PSxkfNGGOry2E3OASE3Tx9aqG/view?usp=sharing
      0  Henderson  drive.google.com/file/d/1uzw2QG0PSxkfNGGOry2E3OASE3Tx9aqG
@@ -1104,7 +1104,7 @@ Read: 1324 · with rows: 251 · rows: 12159
      0  Orwell  https://drive.google.com/file/d/1Mxzt5bR0czF5Rjhuc2gerz0cqeBoMDVm/view?usp=sharing
      0  Orwell  https://drive.google.com/file/d/1lciqtVMDpng9fv89I_Q84S4UutJWqEV0/view?usp=sharing
      0  Orwell  https://drive.google.com/file/d/1pYjE1UENfVZ4uId1FypQ88cheW_KTAqE/view?usp=sharing
-     -  Orwell  https://drive.google.com/file/d/11fN3S2M8iLCRvH66uKxdwkf-34xmgPgg/view?usp=sharing
+     0  Orwell  https://drive.google.com/file/d/11fN3S2M8iLCRvH66uKxdwkf-34xmgPgg/view?usp=sharing
      0  Orwell  drive.google.com/file/d/1X42n-DuBhjrDVFD_jvhDDR4HyIfxr65W
      0  Orwell  drive.google.com/file/d/149eX-W8rd36Vr1pOTN8aKoLBIyJNSWoy
      0  Orwell  drive.google.com/file/d/15uTkID62-vd_sYLlwrOEI6kKwsMQ01Sb
