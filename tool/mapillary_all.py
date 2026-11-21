@@ -159,7 +159,7 @@ def main():
 
     with ThreadPoolExecutor(THREADS) as ex:
         while done < len(mine) and time.time() < stop:
-            chunk = mine[done:done + 120]
+            chunk = mine[done:done + 40]
             for got in ex.map(cell, chunk):
                 for r in got:
                     racks[r[0]] = r
