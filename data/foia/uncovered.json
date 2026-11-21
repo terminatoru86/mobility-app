@@ -1,62 +1,134 @@
 [
  {
-  "city": "Q16568",
-  "state": "Florida",
-  "pop": 949611,
-  "lat": 30.316666666,
-  "lon": -81.65,
+  "city": "Iowa City",
+  "state": "Iowa",
+  "pop": 74828,
+  "lat": 41.655833333,
+  "lon": -91.525,
   "site": "",
   "official": 0,
-  "osm_racks": 1183
+  "osm_racks": 55
  },
  {
-  "city": "Hempstead",
-  "state": "New York",
-  "pop": 793409,
-  "lat": 40.704722222,
-  "lon": -73.617222222,
-  "site": "hempsteadny.gov",
-  "official": 2,
-  "osm_racks": 148,
+  "city": "North Port",
+  "state": "Florida",
+  "pop": 74793,
+  "lat": 27.066111111,
+  "lon": -82.171944444,
+  "site": "cityofnorthport.com",
+  "official": 0,
+  "osm_racks": 2,
   "portal": [],
   "email": [],
   "pages": []
  },
  {
-  "city": "Islip",
-  "state": "New York",
-  "pop": 339938,
-  "lat": 40.72982,
-  "lon": -73.21039,
-  "site": "townofislip-ny.gov",
+  "city": "Rapid City",
+  "state": "South Dakota",
+  "pop": 74703,
+  "lat": 44.081055555,
+  "lon": -103.228666666,
+  "site": "rcgov.org",
   "official": 0,
-  "osm_racks": 17,
+  "osm_racks": 2,
   "portal": [],
   "email": [],
   "pages": []
  },
  {
-  "city": "Oyster Bay",
-  "state": "New York",
-  "pop": 301332,
-  "lat": 40.7594,
-  "lon": -73.5028,
-  "site": "oysterbaytown.com",
+  "city": "Rock Hill",
+  "state": "South Carolina",
+  "pop": 74372,
+  "lat": 34.938055555,
+  "lon": -81.026111111,
+  "site": "cityofrockhill.com",
   "official": 0,
-  "osm_racks": 41,
+  "osm_racks": 1,
   "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "New Britain",
+  "state": "Connecticut",
+  "pop": 74135,
+  "lat": 41.675,
+  "lon": -72.787222222,
+  "site": "newbritainct.gov",
+  "official": 0,
+  "osm_racks": 82,
+  "portal": [
+   "https://www.newbritainct.gov/foia"
+  ],
   "email": [],
   "pages": [
-   "https://oysterbaytown.com/departments/town-clerk/freedom-of-information-law-foil/"
+   "https://prodapp.conb.ai/public/resident/foia/submit"
   ]
  },
  {
-  "city": "Hialeah",
-  "state": "Florida",
-  "pop": 223109,
-  "lat": 25.860555555,
-  "lon": -80.293888888,
-  "site": "hialeahfl.gov",
+  "city": "Broomfield",
+  "state": "Colorado",
+  "pop": 74112,
+  "lat": 39.933333333,
+  "lon": -105.05,
+  "site": "broomfield.org",
+  "official": 0,
+  "osm_racks": 175,
+  "portal": [
+   "https://broomfield.justfoia.com/publicportal/home/track",
+   "https://broomfield.justfoia.com/publicportal"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.broomfield.org/2729/Public-Records-Request",
+   "https://broomfield.justfoia.com/publicportal/home/track",
+   "https://broomfield.org/4187/Public-Records-Request-Policy-Process-an"
+  ]
+ },
+ {
+  "city": "Kalamazoo",
+  "state": "Michigan",
+  "pop": 73598,
+  "lat": 42.29,
+  "lon": -85.59,
+  "site": "kalamazoocity.org",
+  "official": 0,
+  "osm_racks": 71,
+  "portal": [
+   "https://www.kalamazoocity.org/Government/Request-Public-Documents-FOIA",
+   "https://www.kalamazoocity.org/Government/Request-Public-Documents-FOIA/FOIA-Procedures-Summary",
+   "https://www.kalamazoocity.org/Government/Request-Public-Documents-FOIA?oc_lang=en-US"
+  ],
+  "email": [
+   "foia@kalamazoocity.org",
+   "cokcityclerk@kalamazoocity.org"
+  ],
+  "pages": [
+   "https://www.kalamazoocity.org/Government/Request-Public-Documents-FOIA",
+   "https://www.kalamazoocity.org/Government/Request-Public-Documents-FOIA/FOIA-Procedures-Summary",
+   "https://www.kalamazoocity.org/Government/Request-Public-Documents-FOIA?lang_update=639308552368880949"
+  ]
+ },
+ {
+  "city": "Missoula",
+  "state": "Montana",
+  "pop": 73489,
+  "lat": 46.8625,
+  "lon": -114.011666666,
+  "site": "ci.missoula.mt.us",
+  "official": 0,
+  "osm_racks": 50,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Castle Rock",
+  "state": "Colorado",
+  "pop": 73158,
+  "lat": 39.3722,
+  "lon": -104.856,
+  "site": "townofcastlerock.org",
   "official": 0,
   "osm_racks": 42,
   "portal": [],
@@ -64,569 +136,43 @@
   "pages": []
  },
  {
-  "city": "Babylon",
-  "state": "New York",
-  "pop": 218223,
-  "lat": 40.694444444,
-  "lon": -73.329444444,
-  "site": "townofbabylon.com",
+  "city": "Gulfport",
+  "state": "Mississippi",
+  "pop": 72926,
+  "lat": 30.367416666,
+  "lon": -89.092805555,
+  "site": "gulfport-ms.gov",
   "official": 0,
-  "osm_racks": 29,
+  "osm_racks": 3,
   "portal": [],
   "email": [],
   "pages": []
  },
  {
-  "city": "Port St. Lucie",
+  "city": "Daytona Beach",
   "state": "Florida",
-  "pop": 204851,
-  "lat": 27.275833333,
-  "lon": -80.355,
-  "site": "cityofpsl.com",
+  "pop": 72647,
+  "lat": 29.210833333,
+  "lon": -81.022777777,
+  "site": "codb.us",
   "official": 0,
-  "osm_racks": 6,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Huntington",
-  "state": "New York",
-  "pop": 204127,
-  "lat": 40.868055555,
-  "lon": -73.426111111,
-  "site": "huntingtonny.gov",
-  "official": 0,
-  "osm_racks": 17,
-  "portal": [],
-  "email": [],
-  "pages": [
-   "https://www.huntingtonny.gov/public-records",
-   "https://www.huntingtonny.gov/publicrecords",
-   "https://www.huntingtonny.gov/open-records"
-  ]
- },
- {
-  "city": "Augusta",
-  "state": "Georgia",
-  "pop": 202081,
-  "lat": 33.47,
-  "lon": -81.975,
-  "site": "augustaga.gov",
-  "official": 0,
-  "osm_racks": 12,
+  "osm_racks": 30,
   "portal": [
-   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
-   "https://assets.nextrequest.com/manifest.json",
-   "https://www.nextrequest.com/privacypolicy"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.augustaga.gov/2982/Open-Records-Requests",
-   "https://cityofaugustaga.nextrequest.com/"
-  ]
- },
- {
-  "city": "Oxnard",
-  "state": "California",
-  "pop": 202063,
-  "lat": 34.191388888,
-  "lon": -119.1825,
-  "site": "oxnard.gov",
-  "official": 0,
-  "osm_racks": 14,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Montgomery",
-  "state": "Alabama",
-  "pop": 200603,
-  "lat": 32.3675,
-  "lon": -86.3,
-  "site": "montgomeryal.gov",
-  "official": 0,
-  "osm_racks": 11,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Amarillo",
-  "state": "Texas",
-  "pop": 200393,
-  "lat": 35.199166666,
-  "lon": -101.845277777,
-  "site": "amarillo.gov",
-  "official": 0,
-  "osm_racks": 5,
-  "portal": [
-   "https://amarillo.mycusthelp.com/WEBAPP/_rs/(S(houacjdr5jdlqczkkpazumym))/supporthome.aspx",
-   "https://amarillo.mycusthelp.com/WEBAPP/_rs/(S(ieyzrcfvu2pudgxsqleluh2g))/OpenRecordsSummary.aspx",
-   "https://amarillo.granicus.com/boards/forms/515/apply/"
-  ],
-  "email": [],
-  "pages": [
-   "https://amarillo.mycusthelp.com/WEBAPP/_rs/(S(ieyzrcfvu2pudgxsqleluh2g))/supporthome.aspx",
-   "https://amarillo.mycusthelp.com/WEBAPP/_rs/(S(ieyzrcfvu2pudgxsqleluh2g))/OpenRecordsSummary.aspx",
-   "https://amarillo.mycusthelp.com/WEBAPP/_rs/(S(ieyzrcfvu2pudgxsqleluh2g))/error.aspx?sSessionID=&err_msg=Issue+Not+Found."
-  ]
- },
- {
-  "city": "Huntington Beach",
-  "state": "California",
-  "pop": 198711,
-  "lat": 33.692777777,
-  "lon": -117.999722222,
-  "site": "huntingtonbeachca.gov",
-  "official": 3,
-  "osm_racks": 95,
-  "portal": [
-   "https://huntingtonbeachca.mycusthelp.com/WEBAPP/_rs/(S(duuq1qupeeqq5ihzpc5sdawq))/OpenRecordsSummary.aspx",
-   "https://huntingtonbeachca.mycusthelp.com/WEBAPP/_rs/(S(hrjwo0fobcadvl20mcz0zb1a))/AnswerDetail.aspx?sSessionID=47180232157[MGXKRZBGFBNZKQJQPBBUVRKDRAMP&amp;aid=186",
-   "https://huntingtonbeachca.mycusthelp.com/WEBAPP/_rs/(S(vke05d4g3ctqikcs43njgzbm))/AnswerDetail.aspx?sSessionID=47180232157[MGXKRZBGFBNZKQJQPBBUVRKDRAMP&amp;aid=186"
+   "https://daytonabeachfl.justfoia.com/publicportal/home/track",
+   "https://daytonabeachfl.justfoia.com/publicportal/home/newrequest"
   ],
   "email": [
-   "records@sunlightaccess.com"
+   "clerk@codb.us"
   ],
-  "pages": [
-   "https://www.huntingtonbeachca.gov/departments/police/crime_information/index.php",
-   "https://huntingtonbeachca.mycusthelp.com/webapp/_rs/(S(duuq1qupeeqq5ihzpc5sdawq))/OpenRecordsSummary.aspx",
-   "https://huntingtonbeachca.mycusthelp.com/webapp/_rs/(S(duuq1qupeeqq5ihzpc5sdawq))/supporthome.aspx?sSessionID="
-  ]
- },
- {
-  "city": "Overland Park",
-  "state": "Kansas",
-  "pop": 197238,
-  "lat": 38.940072222,
-  "lon": -94.680697222,
-  "site": "opkansas.org",
-  "official": 0,
-  "osm_racks": 82,
-  "portal": [],
-  "email": [],
   "pages": []
  },
  {
-  "city": "McKinney",
-  "state": "Texas",
-  "pop": 195308,
-  "lat": 33.2,
-  "lon": -96.633333333,
-  "site": "mckinneytexas.org",
-  "official": 0,
-  "osm_racks": 5,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Cape Coral",
-  "state": "Florida",
-  "pop": 194016,
-  "lat": 26.633333,
-  "lon": -81.983333,
-  "site": "capecoral.net",
-  "official": 0,
-  "osm_racks": 21,
-  "portal": [],
-  "email": [],
-  "pages": [
-   "https://www.capecoral.gov/government/open_government.php"
-  ]
- },
- {
-  "city": "Peoria",
-  "state": "Arizona",
-  "pop": 190985,
-  "lat": 33.5825,
-  "lon": -112.238611111,
-  "site": "peoriaaz.gov",
-  "official": 1,
-  "osm_racks": 74,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Shreveport",
-  "state": "Louisiana",
-  "pop": 187593,
-  "lat": 32.508055555,
-  "lon": -93.762777777,
-  "site": "shreveportla.gov",
-  "official": 0,
-  "osm_racks": 6,
-  "portal": [
-   "https://cityofshreveportla.nextrequest.com/",
-   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
-   "https://assets.nextrequest.com/manifest.json"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.shreveportla.gov/2538/Public-Records-Request",
-   "https://cityofshreveportla.nextrequest.com/"
-  ]
- },
- {
-  "city": "Mobile",
-  "state": "Alabama",
-  "pop": 187041,
-  "lat": 30.727669444,
-  "lon": -88.052672222,
-  "site": "cityofmobile.org",
-  "official": 0,
-  "osm_racks": 6,
-  "portal": [
-   "https://mobileal.justfoia.com/publicportal/home/newrequest",
-   "https://www.cityofmobile.org/uploads/requestforpublicrecordsclerk.pdf"
-  ],
-  "email": [
-   "cityclerk@cityofmobile.org",
-   "cityclerk@cityofmobile.gov"
-  ],
-  "pages": [
-   "https://open-government-cityofmobile.hub.arcgis.com/",
-   "https://www.cityofmobile.gov/public-records-request",
-   "https://www.cityofmobile.gov/public-records-request/"
-  ]
- },
- {
-  "city": "Fort Lauderdale",
-  "state": "Florida",
-  "pop": 182760,
-  "lat": 26.135833333,
-  "lon": -80.141944444,
-  "site": "fortlauderdale.gov",
-  "official": 3,
-  "osm_racks": 47,
-  "portal": [
-   "https://granicus.com/product/opencities",
-   "https://granicus.com/solution/govaccess/opencities/",
-   "https://fortlauderdalefl.justfoia.com/publicportal"
-  ],
-  "email": [],
-  "pages": [
-   "https://fortlauderdalefl.justfoia.com/publicportal/home/newrequest"
-  ]
- },
- {
-  "city": "Rancho Cucamonga",
-  "state": "California",
-  "pop": 174453,
-  "lat": 34.123333333,
-  "lon": -117.579444444,
-  "site": "cityofrc.us",
-  "official": 0,
-  "osm_racks": 25,
-  "portal": [
-   "https://ranchocucamongaca.mycusthelp.com/WEBAPP/_rs/(S(famwwrbq1kuyhtdihkefgbcx))/SupportHome.aspx"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.cityofrc.us/your-government/transparency/public-records-requests"
-  ]
- },
- {
-  "city": "Palmdale",
-  "state": "California",
-  "pop": 169450,
-  "lat": 34.579444444,
-  "lon": -118.116666666,
-  "site": "cityofpalmdale.org",
-  "official": 0,
-  "osm_racks": 4,
-  "portal": [
-   "https://palmdaleca.justfoia.com/publicportal/home/newrequest",
-   "https://assessor.lacounty.gov/contact/publicrecord",
-   "https://palmdaleca.justfoia.com/publicportal/home/track"
-  ],
-  "email": [
-   "cityclerk@cityofpalmdaleca.gov"
-  ],
-  "pages": [
-   "https://www.cityofpalmdaleca.gov/1661/Public-Records-Request"
-  ]
- },
- {
-  "city": "Springfield",
+  "city": "St. Joseph",
   "state": "Missouri",
-  "pop": 169176,
-  "lat": 37.195,
-  "lon": -93.286111111,
-  "site": "springfieldmo.gov",
-  "official": 0,
-  "osm_racks": 84,
-  "portal": [
-   "https://springfieldmo.govqa.us/WEBAPP/_rs/SupportHome.aspx",
-   "https://springfieldmo.govqa.us/WEBAPP/_rs/SupportHome.aspx?sSessionID=",
-   "https://agency-springfieldmo.govqa.us/WEBAPP/_rs/supporthome.aspx?sSessionID=&lp=4"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.springfieldmo.gov/241/Sunshine-Law"
-  ]
- },
- {
-  "city": "Clarksville",
-  "state": "Tennessee",
-  "pop": 166722,
-  "lat": 36.5297222,
-  "lon": -87.3594444,
-  "site": "cityofclarksville.com",
-  "official": 0,
-  "osm_racks": 1,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Macon",
-  "state": "Georgia",
-  "pop": 157346,
-  "lat": 32.84069,
-  "lon": -83.6324,
-  "site": "maconbibb.us",
-  "official": 0,
-  "osm_racks": 1,
-  "portal": [
-   "https://maconbibbcountyga.justfoia.com/publicportal/home/newrequest",
-   "https://maconbibbcountysheriffga.justfoia.com/publicportal/home/newrequest",
-   "https://maconbibbcountysheriffga.justfoia.com/publicportal"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.maconbibb.us/open-records/",
-   "https://maconbibbcountysheriffga.justfoia.com/publicportal/home/newrequest",
-   "https://maconbibbcountyga.justfoia.com/publicportal/home/newrequest"
-  ]
- },
- {
-  "city": "Killeen",
-  "state": "Texas",
-  "pop": 153095,
-  "lat": 31.105555555,
-  "lon": -97.726666666,
-  "site": "ci.killeen.tx.us",
-  "official": 0,
-  "osm_racks": 9,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Murfreesboro",
-  "state": "Tennessee",
-  "pop": 152769,
-  "lat": 35.846111111,
-  "lon": -86.391944444,
-  "site": "murfreesborotn.gov",
-  "official": 0,
-  "osm_racks": 18,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Pasadena",
-  "state": "Texas",
-  "pop": 151950,
-  "lat": 29.676111111,
-  "lon": -95.173888888,
-  "site": "pasadenatx.gov",
-  "official": 0,
-  "osm_racks": 16,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Joliet",
-  "state": "Illinois",
-  "pop": 150362,
-  "lat": 41.52519,
-  "lon": -88.0834,
-  "site": "joliet.gov",
-  "official": 3,
-  "osm_racks": 8,
-  "portal": [
-   "https://joliet.mycusthelp.com/WEBAPP/_rs/(S(o1xbi1prlungfmct4wcbzrtf))/supporthome.aspx",
-   "https://uploads.mycusthelp.com/FLFWC/drop-shadow.png);*/",
-   "https://joliet.mycusthelp.com/WEBAPP/_rs/(S(x2wivjrlrqhljysn5kyopruo))/OpenRecordsSummary.aspx"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.joliet.gov/Government/Open-Government-Transparency",
-   "https://joliet.mycusthelp.com/WEBAPP/_rs/(S(w1eknlwrc1mxaybpae0idjgo))/supporthome.aspx",
-   "https://www.joliet.gov/Government/Open-Government-Transparency?lang_update=639307785599014736"
-  ]
- },
- {
-  "city": "Ramapo",
-  "state": "New York",
-  "pop": 148919,
-  "lat": 41.141111111,
-  "lon": -74.168611111,
-  "site": "ramapo.org",
-  "official": 0,
-  "osm_racks": 11,
-  "portal": [
-   "https://townoframapony.nextrequest.com/"
-  ],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Bridgeport",
-  "state": "Connecticut",
-  "pop": 148654,
-  "lat": 41.183333333,
-  "lon": -73.2,
-  "site": "bridgeportct.gov",
-  "official": 1,
-  "osm_racks": 27,
-  "portal": [
-   "https://bridgeportct.mycusthelp.com/WEBAPP/_rs/(S(1mhjexyxlc5rhdj5thmbgvgo))/supporthome.aspx"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.bridgeportct.gov/government/departments/city-attorney/records-request"
-  ]
- },
- {
-  "city": "Surprise",
-  "state": "Arizona",
-  "pop": 143148,
-  "lat": 33.629194444,
-  "lon": -112.367797222,
-  "site": "surpriseaz.gov",
-  "official": 0,
-  "osm_racks": 6,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "McAllen",
-  "state": "Texas",
-  "pop": 142210,
-  "lat": 26.216388888,
-  "lon": -98.236388888,
-  "site": "mcallen.net",
-  "official": 1,
-  "osm_racks": 5,
-  "portal": [
-   "https://mcallentx.mycusthelp.com/WEBAPP/_rs/supporthome.aspx",
-   "https://mcallen.justfoia.com/publicportal/"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.mcallen.net/open/home",
-   "https://www.mcallen.net/open",
-   "https://www.mcallen.net/public-records"
-  ]
- },
- {
-  "city": "Thornton",
-  "state": "Colorado",
-  "pop": 141867,
-  "lat": 39.9031,
-  "lon": -104.954,
-  "site": "cityofthornton.net",
-  "official": 0,
-  "osm_racks": 49,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Olathe",
-  "state": "Kansas",
-  "pop": 141290,
-  "lat": 38.8808,
-  "lon": -94.8031,
-  "site": "olatheks.org",
-  "official": 0,
-  "osm_racks": 52,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "West Valley City",
-  "state": "Utah",
-  "pop": 140230,
-  "lat": 40.689166666,
-  "lon": -111.993888888,
-  "site": "wvc-ut.gov",
-  "official": 3,
-  "osm_racks": 83,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Warren",
-  "state": "Michigan",
-  "pop": 139387,
-  "lat": 42.5125,
-  "lon": -83.025,
-  "site": "cityofwarren.org",
-  "official": 1,
-  "osm_racks": 65,
-  "portal": [
-   "https://www.cityofwarren.org/wp-content/uploads/2019/07/FOIA_Procedures_Guidlines.pdf",
-   "https://www.cityofwarren.org/wp-content/uploads/2019/07/FOIA_Summary.pdf",
-   "https://www.cityofwarren.org/foia-appeals-committee-meeting-august-11-2022/"
-  ],
-  "email": [
-   "clerk@cityofwarren.org"
-  ],
-  "pages": [
-   "https://www.cityofwarren.org/departments/communications-department/freedom-of-information-act-request/",
-   "https://www.cityofwarren.org/foia-appeals-committee-meeting-august-11-2022/",
-   "https://www.cityofwarren.org/departments/communications-department/freedom-of-information-act-request/"
-  ]
- },
- {
-  "city": "Waco",
-  "state": "Texas",
-  "pop": 138486,
-  "lat": 31.549166666,
-  "lon": -97.147222222,
-  "site": "waco-texas.com",
-  "official": 0,
-  "osm_racks": 9,
-  "portal": [
-   "https://wacotx.mycusthelp.com/WEBAPP/_rs/(S(tceec3km1n0z1uxyo1i4oqp0))/supporthome.aspx",
-   "https://granicus.com/product/opencities",
-   "https://granicus.com/solution/govaccess/opencities/"
-  ],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Stamford",
-  "state": "Connecticut",
-  "pop": 135470,
-  "lat": 41.096666666,
-  "lon": -73.552222222,
-  "site": "stamfordct.gov",
-  "official": 0,
-  "osm_racks": 15,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Victorville",
-  "state": "California",
-  "pop": 134810,
-  "lat": 34.536111111,
-  "lon": -117.288333333,
-  "site": "ci.victorville.ca.us",
+  "pop": 72473,
+  "lat": 39.768611111,
+  "lon": -94.846638888,
+  "site": "stjosephmo.gov",
   "official": 0,
   "osm_racks": 2,
   "portal": [],
@@ -634,113 +180,12 @@
   "pages": []
  },
  {
-  "city": "Miramar",
-  "state": "Florida",
-  "pop": 134721,
-  "lat": 25.978888888,
-  "lon": -80.2825,
-  "site": "miramarfl.gov",
-  "official": 2,
-  "osm_racks": 21,
-  "portal": [
-   "https://miramarfl.justfoia.com/Forms/Launch/d705cbd6-1396-49b7-939e-8d86c5a87deb",
-   "https://www.miramarfl.gov/City-Government/Granicus-Streaming",
-   "https://miramarfl.justfoia.com/Forms/Launch/b1b1502c-5b93-4fa7-85c3-400bb354b566"
-  ],
-  "email": [
-   "clerksoffice@miramarfl.gov"
-  ],
-  "pages": [
-   "https://www.miramarfl.gov/Departments/City-Clerk/Public-Records",
-   "https://www.miramarfl.gov/Departments/City-Clerk/Public-Records?lang_update=639307821571297953",
-   "https://www.miramarfl.gov/Departments/City-Clerk/Public-Notices-Sunshine-Board"
-  ]
- },
- {
-  "city": "Sterling Heights",
-  "state": "Michigan",
-  "pop": 134346,
-  "lat": 42.580277777,
-  "lon": -83.030277777,
-  "site": "sterlingheights.gov",
-  "official": 0,
-  "osm_racks": 27,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Midland",
-  "state": "Texas",
-  "pop": 132524,
-  "lat": 32.005,
-  "lon": -102.09917,
-  "site": "midlandtexas.gov",
-  "official": 0,
-  "osm_racks": 5,
-  "portal": [
-   "https://midlandtx.mycusthelp.com/WEBAPP/_rs/SupportHome.aspx",
-   "https://midlandtx.mycusthelp.com/WEBAPP/_rs/(S(i3obxocgvxt1legqndjweirc))/SupportHome.aspx?lp=2",
-   "https://midlandtx.mycusthelp.com/WEBAPP/_rs/(S(i3obxocgvxt1legqndjweirc))/FindAnswers.aspx?sSessionID="
-  ],
-  "email": [
-   "publicinfo@midlandtexas.gov"
-  ],
-  "pages": [
-   "https://www.midlandtexas.gov/m/newsflash/home/detail/1798",
-   "https://www.midlandtexas.gov/460/Open-Public-Records-Request"
-  ]
- },
- {
-  "city": "Thousand Oaks",
-  "state": "California",
-  "pop": 126966,
-  "lat": 34.189444444,
-  "lon": -118.875,
-  "site": "toaks.org",
-  "official": 0,
-  "osm_racks": 70,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Topeka",
-  "state": "Kansas",
-  "pop": 126587,
-  "lat": 39.04833,
-  "lon": -95.67804,
-  "site": "topeka.org",
-  "official": 0,
-  "osm_racks": 3,
-  "portal": [],
-  "email": [
-   "cclerk@topeka.org"
-  ],
-  "pages": [
-   "https://topeka.gov/how_do_i/public_records/index.php"
-  ]
- },
- {
-  "city": "Simi Valley",
-  "state": "California",
-  "pop": 126356,
-  "lat": 34.270833333,
-  "lon": -118.739166666,
-  "site": "simivalley.org",
-  "official": 0,
-  "osm_racks": 4,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Pearland",
-  "state": "Texas",
-  "pop": 125828,
-  "lat": 29.5544,
-  "lon": -95.2958,
-  "site": "pearlandtx.gov",
+  "city": "Bowling Green",
+  "state": "Kentucky",
+  "pop": 72294,
+  "lat": 36.981666666,
+  "lon": -86.444444444,
+  "site": "bgky.org",
   "official": 0,
   "osm_racks": 5,
   "portal": [],
@@ -748,247 +193,125 @@
   "pages": []
  },
  {
-  "city": "Abilene",
+  "city": "Waukesha",
+  "state": "Wisconsin",
+  "pop": 71991,
+  "lat": 43.011666666,
+  "lon": -88.231666666,
+  "site": "ci.waukesha.wi.us",
+  "official": 0,
+  "osm_racks": 30,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Harlingen",
   "state": "Texas",
-  "pop": 125182,
-  "lat": 32.446388888,
-  "lon": -99.745555555,
-  "site": "abilenetx.com",
-  "official": 0,
-  "osm_racks": 3,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Independence",
-  "state": "Missouri",
-  "pop": 123011,
-  "lat": 39.0925,
-  "lon": -94.413888888,
-  "site": "independencemo.gov",
-  "official": 0,
-  "osm_racks": 41,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Rochester",
-  "state": "Minnesota",
-  "pop": 121395,
-  "lat": 44.0234,
-  "lon": -92.46295,
-  "site": "rochestermn.gov",
-  "official": 0,
-  "osm_racks": 41,
-  "portal": [
-   "https://rochestermn.govqa.us/WEBAPP/_rs/supporthome.aspx",
-   "https://rochestermn.govqa.us/WEBAPP/_rs/(S(to2uiecuzru1c4orwow3c1bn))/OpenRecordsSummary.aspx"
-  ],
-  "email": [],
-  "pages": [
-   "https://rochestermn.govqa.us/WEBAPP/_rs/(S(to2uiecuzru1c4orwow3c1bn))/OpenRecordsSummary.aspx"
-  ]
- },
- {
-  "city": "Lafayette",
-  "state": "Louisiana",
-  "pop": 121374,
-  "lat": 30.243062,
-  "lon": -92.012649,
-  "site": "lafayettetravel.com",
-  "official": 0,
-  "osm_racks": 58,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Palm Bay",
-  "state": "Florida",
-  "pop": 119760,
-  "lat": 27.997922222,
-  "lon": -80.670008333,
-  "site": "palmbayflorida.org",
-  "official": 0,
-  "osm_racks": 7,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Round Rock",
-  "state": "Texas",
-  "pop": 119468,
-  "lat": 30.515,
-  "lon": -97.6725,
-  "site": "roundrocktexas.gov",
-  "official": 1,
-  "osm_racks": 23,
-  "portal": [
-   "https://roundrocktx.mycusthelp.com/webapp/_rs/supporthome.aspx",
-   "https://roundrocktx.mycusthelp.com/webapp/_rs/(S(3wuscc5o4dgh1t3dneldtdzd))/supporthome.aspx",
-   "https://roundrocktx.mycusthelp.com/webapp/_rs/(S(omk2evpkbmxdn3mk05qjpn1o))/supporthome.aspx"
-  ],
-  "email": [
-   "openrecords@roundrocktexas.gov"
-  ],
-  "pages": [
-   "https://www.roundrocktexas.gov/city-departments/administration/city-clerk/public-information-request/",
-   "https://www.roundrocktexas.gov/city-departments/finance/transparency/transparency-open-government-and-compliance/"
-  ]
- },
- {
-  "city": "Meridian",
-  "state": "Idaho",
-  "pop": 117635,
-  "lat": 43.614166666,
-  "lon": -116.398888888,
-  "site": "meridiancity.org",
-  "official": 2,
-  "osm_racks": 106,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "West Palm Beach",
-  "state": "Florida",
-  "pop": 117415,
-  "lat": 26.709722222,
-  "lon": -80.064166666,
-  "site": "wpb.org",
-  "official": 0,
-  "osm_racks": 22,
-  "portal": [
-   "https://westpalmbeachfl.govqa.us/WEBAPP/_rs/SupportHome.aspx?LP=2",
-   "https://westpalmbeachfl.govqa.us/WEBAPP/_rs/(S(jdvdx2dn1argwadfgddysm1s))/OpenRecordsSummary.aspx",
-   "https://westpalmbeachfl.govqa.us/WEBAPP/_rs/(S(g3ig4kf1xnsu1nx5nmaads1f))/OpenRecordsSummary.aspx"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.wpb.org/Departments/Fire-Department/Records-Requests",
-   "https://sslr.org/",
-   "https://westpalmbeachfl.govqa.us/WEBAPP/_rs/(S(jdvdx2dn1argwadfgddysm1s))/supporthome.aspx"
-  ]
- },
- {
-  "city": "Evansville",
-  "state": "Indiana",
-  "pop": 117298,
-  "lat": 37.974722222,
-  "lon": -87.555833333,
-  "site": "evansvillegov.org",
-  "official": 0,
-  "osm_racks": 49,
-  "portal": [],
-  "email": [
-   "cityclerk@evansvillegov.org"
-  ],
-  "pages": []
- },
- {
-  "city": "West Jordan",
-  "state": "Utah",
-  "pop": 116961,
-  "lat": 40.606388888,
-  "lon": -111.976111111,
-  "site": "westjordan.utah.gov",
-  "official": 0,
-  "osm_racks": 210,
-  "portal": [
-   "https://cityofwestjordanut.nextrequest.com/",
-   "https://cityofwestjordanutpd.nextrequest.com/"
-  ],
-  "email": [
-   "police.records@westjordan.utah.gov"
-  ],
-  "pages": [
-   "https://www.westjordan.utah.gov/city-recorder/records-request/"
-  ]
- },
- {
-  "city": "Smithtown",
-  "state": "New York",
-  "pop": 116296,
-  "lat": 40.85593,
-  "lon": -73.20067,
-  "site": "smithtowninfo.com",
-  "official": 0,
-  "osm_racks": 15,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Lowell",
-  "state": "Massachusetts",
-  "pop": 115554,
-  "lat": 42.639444444,
-  "lon": -71.314722222,
-  "site": "lowellma.gov",
-  "official": 4,
-  "osm_racks": 51,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Beaumont",
-  "state": "Texas",
-  "pop": 115282,
-  "lat": 30.08,
-  "lon": -94.126666666,
-  "site": "beaumonttexas.gov",
-  "official": 0,
-  "osm_racks": 15,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "North Charleston",
-  "state": "South Carolina",
-  "pop": 114852,
-  "lat": 32.885277777,
-  "lon": -80.016944444,
-  "site": "northcharleston.org",
-  "official": 0,
-  "osm_racks": 5,
-  "portal": [
-   "https://www.northcharleston.org/government/city_council/foia_freedom_of_information_act.php",
-   "https://northcharleston.justfoia.com/publicportal/home/track",
-   "https://www.facebook.com/sharer/sharer.php?u=http://www.northcharleston.org/government/city_council/foia_freedom_of_information_act.php"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.northcharleston.org/government/city_council/foia_freedom_of_information_act.php",
-   "https://northcharleston.justfoia.com/publicportal/home/track"
-  ]
- },
- {
-  "city": "Odessa",
-  "state": "Texas",
-  "pop": 114428,
-  "lat": 31.863333333,
-  "lon": -102.365555555,
-  "site": "odessa-tx.gov",
+  "pop": 71829,
+  "lat": 26.2,
+  "lon": -97.7,
+  "site": "myharlingen.us",
   "official": 0,
   "osm_racks": 1,
-  "portal": [
-   "https://odessatx.mycusthelp.com/WEBAPP/_rs/(S(oq2yarxg5aqwcsc11olntstd))/supporthome.aspx"
-  ],
+  "portal": [],
   "email": [],
   "pages": []
  },
  {
-  "city": "Waterbury",
-  "state": "Connecticut",
-  "pop": 114403,
-  "lat": 41.558333333,
-  "lon": -73.036944444,
-  "site": "waterburyct.org",
+  "city": "Dothan",
+  "state": "Alabama",
+  "pop": 71072,
+  "lat": 31.227222222,
+  "lon": -85.407222222,
+  "site": "dothan.org",
+  "official": 0,
+  "osm_racks": 5,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Canton",
+  "state": "Ohio",
+  "pop": 70872,
+  "lat": 40.798611111,
+  "lon": -81.375,
+  "site": "cantonohio.gov",
+  "official": 0,
+  "osm_racks": 9,
+  "portal": [],
+  "email": [
+   "police.records@cantonohio.gov"
+  ],
+  "pages": [
+   "https://www.cantonohio.gov/605/Records-Requests",
+   "https://www.cantonohio.gov/2405/Public-Records-Policy",
+   "https://www.cantonohio.gov/644/Public-Records"
+  ]
+ },
+ {
+  "city": "Camarillo",
+  "state": "California",
+  "pop": 70741,
+  "lat": 34.225555555,
+  "lon": -119.032222222,
+  "site": "ci.camarillo.ca.us",
+  "official": 0,
+  "osm_racks": 30,
+  "portal": [
+   "https://camarilloca.govqa.us/WEBAPP/_rs/(S(1fg2ivrni5vsl3cgo5ka11qt))/OpenRecordsSummary.aspx",
+   "https://camarilloca.govqa.us/WEBAPP/_rs/(S(0ksj2y13fq4tilomhuwccbkp))/SupportHome.aspx",
+   "https://camarilloca.govqa.us/WEBAPP/_rs/SupportHome.aspx"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.ci.camarillo.ca.us/departments/city_clerk/public_records.php",
+   "https://camarilloca.govqa.us/WEBAPP/_rs/(S(kocwhcdrtlyskbubetapc2j4))/SupportHome.aspx",
+   "https://camarilloca.govqa.us/WEBAPP/_rs/(S(1fg2ivrni5vsl3cgo5ka11qt))/SupportHome.aspx"
+  ]
+ },
+ {
+  "city": "Greenville",
+  "state": "South Carolina",
+  "pop": 70720,
+  "lat": 34.844444444,
+  "lon": -82.385555555,
+  "site": "greenvillesc.gov",
+  "official": 0,
+  "osm_racks": 198,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Marysville",
+  "state": "Washington",
+  "pop": 70714,
+  "lat": 48.062777777,
+  "lon": -122.163333333,
+  "site": "marysvillewa.gov",
+  "official": 2,
+  "osm_racks": 11,
+  "portal": [
+   "https://marysvillewa.govqa.us/WEBAPP/_rs/(S(b1irkng4md1i5iftsudsgsax))/supporthome.aspx",
+   "https://marysvillewa.govqa.us/WEBAPP/_rs/(S(yby0cplma0mabpmm21dumy5i))/AnswerDetail.aspx?sSessionID=&amp;aid=16701",
+   "https://marysvillewa.govqa.us/WEBAPP/_rs/(S(yby0cplma0mabpmm21dumy5i))/AnswerDetail.aspx?sSessionID=&amp;aid=120"
+  ],
+  "email": [],
+  "pages": [
+   "https://marysvillewa.govqa.us/WEBAPP/_rs/(S(yby0cplma0mabpmm21dumy5i))/supporthome.aspx",
+   "https://marysvillewa.govqa.us/WEBAPP/_rs/(S(yby0cplma0mabpmm21dumy5i))/error.aspx?sSessionID=&err_msg=Issue+Not+Found.",
+   "https://marysvillewa.govqa.us/WEBAPP/_rs/(S(yby0cplma0mabpmm21dumy5i))/error.aspx?sSessionID=&err_msg=Issue+Not+Found."
+  ]
+ },
+ {
+  "city": "Decatur",
+  "state": "Illinois",
+  "pop": 70522,
+  "lat": 39.851666666,
+  "lon": -88.944166666,
+  "site": "ci.decatur.il.us",
   "official": 0,
   "osm_racks": 15,
   "portal": [],
@@ -996,58 +319,134 @@
   "pages": []
  },
  {
-  "city": "League City",
-  "state": "Texas",
-  "pop": 114392,
-  "lat": 29.499722222,
-  "lon": -95.089722222,
-  "site": "leaguecity.com",
+  "city": "St. Charles",
+  "state": "Missouri",
+  "pop": 70493,
+  "lat": 38.788611111,
+  "lon": -90.511666666,
+  "site": "stcharlescity.com",
   "official": 0,
-  "osm_racks": 32,
+  "osm_racks": 21,
   "portal": [],
   "email": [],
-  "pages": []
- },
- {
-  "city": "High Point",
-  "state": "North Carolina",
-  "pop": 114059,
-  "lat": 35.970555555,
-  "lon": -79.9975,
-  "site": "highpointnc.gov",
-  "official": 0,
-  "osm_racks": 11,
-  "portal": [
-   "https://highpointnc.justfoia.com/Forms/Launch/d705cbd6-1396-49b7-939e-8d86c5a87deb",
-   "https://highpointnc.justfoia.com/PublicPortal",
-   "https://highpointnc.justfoia.com/publicportal"
-  ],
-  "email": [],
   "pages": [
-   "https://www.highpointnc.gov/1813/Public-Records-Request",
-   "https://highpointnc.justfoia.com/PublicPortal"
+   "https://www.stcharlescity.com/public-records",
+   "https://www.stcharlescity.com/publicrecords",
+   "https://www.stcharlescity.com/open-records"
   ]
  },
  {
-  "city": "Pompano Beach",
-  "state": "Florida",
-  "pop": 112046,
-  "lat": 26.234722222,
-  "lon": -80.125555555,
-  "site": "pompanobeachfl.gov",
+  "city": "Lake Elsinore",
+  "state": "California",
+  "pop": 70265,
+  "lat": 33.681388888,
+  "lon": -117.345277777,
+  "site": "lake-elsinore.org",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.lake-elsinore.org/255/Public-Records",
+   "https://www.lake-elsinore.org/256/Public-Records-Request",
+   "https://lookout.lake-elsinore.org/Forms/Public-Records-Request"
+  ]
+ },
+ {
+  "city": "Maple Grove",
+  "state": "Minnesota",
+  "pop": 70253,
+  "lat": 45.0725,
+  "lon": -93.455555555,
+  "site": "maplegrovemn.gov",
   "official": 3,
-  "osm_racks": 34,
+  "osm_racks": 23,
+  "portal": [
+   "https://maplegrovemn.justfoia.com/publicportal/home/track",
+   "https://maplegrovemn.justfoia.com/publicportal"
+  ],
+  "email": [],
+  "pages": [
+   "https://maplegrovemn.justfoia.com/publicportal/home/track"
+  ]
+ },
+ {
+  "city": "Blaine",
+  "state": "Minnesota",
+  "pop": 70222,
+  "lat": 45.1608,
+  "lon": -93.23495,
+  "site": "ci.blaine.mn.us",
+  "official": 0,
+  "osm_racks": 40,
   "portal": [],
   "email": [],
   "pages": []
  },
  {
-  "city": "Lewisville",
-  "state": "Texas",
-  "pop": 111822,
-  "lat": 33.0383,
-  "lon": -97.0061,
-  "site": "cityoflewisville.com",
+  "city": "Yuba City",
+  "state": "California",
+  "pop": 70117,
+  "lat": 39.134722222,
+  "lon": -121.626111111,
+  "site": "yubacity.net",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [
+   "http://www.publicrecordcenter.com/",
+   "http://yubacity.nextrequest.com",
+   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico"
+  ],
+  "email": [],
+  "pages": [
+   "https://yubacity.nextrequest.com:443/"
+  ]
+ },
+ {
+  "city": "Rogers",
+  "state": "Arkansas",
+  "pop": 69908,
+  "lat": 36.329444444,
+  "lon": -94.141388888,
+  "site": "rogersarkansas.com",
+  "official": 0,
+  "osm_racks": 245,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.rogersarkansas.com/public-records",
+   "https://www.rogersarkansas.com/publicrecords",
+   "https://www.rogersarkansas.com/open-records"
+  ]
+ },
+ {
+  "city": "Albany",
+  "state": "Georgia",
+  "pop": 69647,
+  "lat": 31.582222222,
+  "lon": -84.165555555,
+  "site": "albanyga.gov",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [
+   "https://albanyga.justfoia.com/publicportal/home/newrequest",
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [],
+  "pages": [
+   "https://albanyga.justfoia.com/publicportal/home/newrequest",
+   "https://www.albanyga.gov/City-Departments/Public-Information-Office/City-News",
+   "https://www.albanyga.gov/City-Departments/Public-Information-Office/City-News/City-to-Activate-Traffic-Signals"
+  ]
+ },
+ {
+  "city": "Lakeville",
+  "state": "Minnesota",
+  "pop": 69490,
+  "lat": 44.649722222,
+  "lon": -93.2425,
+  "site": "ci.lakeville.mn.us",
   "official": 0,
   "osm_racks": 14,
   "portal": [],
@@ -1055,682 +454,146 @@
   "pages": []
  },
  {
-  "city": "Miami Gardens",
-  "state": "Florida",
-  "pop": 111640,
-  "lat": 25.941944444,
-  "lon": -80.245555555,
-  "site": "miamigardens-fl.gov",
+  "city": "Eau Claire",
+  "state": "Wisconsin",
+  "pop": 69421,
+  "lat": 44.814722222,
+  "lon": -91.492777777,
+  "site": "eauclairewi.gov",
+  "official": 0,
+  "osm_racks": 25,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Gary",
+  "state": "Indiana",
+  "pop": 69093,
+  "lat": 41.580833333,
+  "lon": -87.345555555,
+  "site": "gary.gov",
+  "official": 0,
+  "osm_racks": 9,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Southampton",
+  "state": "New York",
+  "pop": 69036,
+  "lat": 40.885277777,
+  "lon": -72.395277777,
+  "site": "town.southampton.ny.us",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "St. Cloud",
+  "state": "Minnesota",
+  "pop": 68881,
+  "lat": 45.553888888,
+  "lon": -94.170277777,
+  "site": "ci.stcloud.mn.us",
   "official": 1,
+  "osm_racks": 33,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Tulare",
+  "state": "California",
+  "pop": 68875,
+  "lat": 36.206666666,
+  "lon": -119.3425,
+  "site": "tulare.ca.gov",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Yorba Linda",
+  "state": "California",
+  "pop": 68336,
+  "lat": 33.888551,
+  "lon": -117.813231,
+  "site": "yorbalindaca.gov",
+  "official": 1,
+  "osm_racks": 34,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.yorbalindaca.gov/332/Documents-Public-Records",
+   "https://www.yorbalindaca.gov/332/Documents-Public-Records",
+   "https://www.yorbalindaca.gov/FormCenter/City-Clerk-9/Public-Records-Act-Request-Form-116"
+  ]
+ },
+ {
+  "city": "Weston",
+  "state": "Florida",
+  "pop": 68107,
+  "lat": 26.1075,
+  "lon": -80.388055555,
+  "site": "westonfl.org",
+  "official": 4,
+  "osm_racks": 31,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Ankeny",
+  "state": "Iowa",
+  "pop": 67887,
+  "lat": 41.726666666,
+  "lon": -93.604166666,
+  "site": "ankenyiowa.gov",
+  "official": 0,
+  "osm_racks": 17,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Haverhill",
+  "state": "Massachusetts",
+  "pop": 67787,
+  "lat": 42.783333333,
+  "lon": -71.083333333,
+  "site": "ci.haverhill.ma.us",
+  "official": 0,
+  "osm_racks": 9,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Shawnee",
+  "state": "Kansas",
+  "pop": 67311,
+  "lat": 39.0128,
+  "lon": -94.7658,
+  "site": "cityofshawnee.org",
+  "official": 0,
   "osm_racks": 43,
   "portal": [],
   "email": [],
   "pages": []
  },
  {
-  "city": "Las Cruces",
-  "state": "New Mexico",
-  "pop": 111385,
-  "lat": 32.314027777,
-  "lon": -106.779805555,
-  "site": "lascruces.gov",
-  "official": 0,
-  "osm_racks": 48,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Sugar Land",
+  "city": "Georgetown",
   "state": "Texas",
-  "pop": 111026,
-  "lat": 29.599444444,
-  "lon": -95.614166666,
-  "site": "sugarlandtx.gov",
-  "official": 0,
-  "osm_racks": 58,
-  "portal": [
-   "https://sugarlandtx.nextrequest.com/requests/new",
-   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico"
-  ],
-  "email": [
-   "cityclerkorr@sugarlandtx.gov"
-  ],
-  "pages": [
-   "https://www.sugarlandtx.gov/1406/Open-Records-Request",
-   "https://sugarlandtx.nextrequest.com/requests/new",
-   "https://www.sugarlandtx.gov/1406/Open-Records-Request"
-  ]
- },
- {
-  "city": "Murrieta",
-  "state": "California",
-  "pop": 110949,
-  "lat": 33.569444444,
-  "lon": -117.2025,
-  "site": "murrietaca.gov",
-  "official": 0,
-  "osm_racks": 79,
-  "portal": [
-   "https://murrietaca.govqa.us/WEBAPP/_rs/SupportHome.aspx"
-  ],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Everett",
-  "state": "Washington",
-  "pop": 110629,
-  "lat": 47.963333333,
-  "lon": -122.200555555,
-  "site": "everettwa.gov",
-  "official": 1,
-  "osm_racks": 56,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Temecula",
-  "state": "California",
-  "pop": 110003,
-  "lat": 33.503333333,
-  "lon": -117.123611111,
-  "site": "cityoftemecula.org",
-  "official": 0,
-  "osm_racks": 87,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "West Covina",
-  "state": "California",
-  "pop": 109501,
-  "lat": 34.056666666,
-  "lon": -117.918611111,
-  "site": "westcovina.org",
-  "official": 0,
-  "osm_racks": 20,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Greeley",
-  "state": "Colorado",
-  "pop": 108795,
-  "lat": 40.416666666,
-  "lon": -104.7,
-  "site": "greeleygov.com",
-  "official": 0,
-  "osm_racks": 52,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Centennial",
-  "state": "Colorado",
-  "pop": 108418,
-  "lat": 39.596388888,
-  "lon": -104.843888888,
-  "site": "centennialco.gov",
-  "official": 0,
-  "osm_racks": 338,
-  "portal": [
-   "https://granicus.com/product/opencities",
-   "https://granicus.com/solution/govaccess/opencities/"
-  ],
-  "email": [
-   "cityclerksoffice@centennialco.gov"
-  ],
-  "pages": [
-   "https://www.centennialco.gov/Online-Services/Request-Public-Records",
-   "https://www.centennialco.gov/Online-Services/Request-Public-Records?lang_update=639307749755757705",
-   "https://www.centennialco.gov/Online-Services/Request-Public-Records"
-  ]
- },
- {
-  "city": "South Fulton",
-  "state": "Georgia",
-  "pop": 107436,
-  "lat": 33.601479,
-  "lon": -84.550525,
-  "site": "cityofsouthfultonga.gov",
-  "official": 0,
-  "osm_racks": 2,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Tyler",
-  "state": "Texas",
-  "pop": 105995,
-  "lat": 32.350833333,
-  "lon": -95.300555555,
-  "site": "cityoftyler.org",
-  "official": 0,
-  "osm_racks": 2,
-  "portal": [
-   "https://cityoftyler.govqa.us/WEBAPP/_rs/(S(43ruhwncnnnrbmdyz4frej0o))/AnswerDetail.aspx?sSessionID=&amp;aid=118",
-   "https://granicus.com/product/opencities",
-   "https://granicus.com/solution/govaccess/opencities/"
-  ],
-  "email": [],
-  "pages": [
-   "https://cityoftyler.govqa.us/WEBAPP/_rs/(S(43ruhwncnnnrbmdyz4frej0o))/supporthome.aspx",
-   "https://cityoftyler.govqa.us/WEBAPP/_rs/(S(43ruhwncnnnrbmdyz4frej0o))/error.aspx?sSessionID=&err_msg=Issue+Not+Found."
-  ]
- },
- {
-  "city": "Brockton",
-  "state": "Massachusetts",
-  "pop": 105643,
-  "lat": 42.083333333,
-  "lon": -71.018888888,
-  "site": "ci.brockton.ma.us",
-  "official": 0,
-  "osm_racks": 4,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Concord",
-  "state": "North Carolina",
-  "pop": 105240,
-  "lat": 35.4044,
-  "lon": -80.6006,
-  "site": "concordnc.gov",
-  "official": 0,
-  "osm_racks": 3,
-  "portal": [],
-  "email": [],
-  "pages": [
-   "https://concordnc.gov/government/public-records",
-   "https://concordnc.gov/Site-Login?returnurl=%2fgovernment%2fpublic-records",
-   "https://concordnc.gov/government/public-records"
-  ]
- },
- {
-  "city": "Allen",
-  "state": "Texas",
-  "pop": 104627,
-  "lat": 33.099722222,
-  "lon": -96.663055555,
-  "site": "cityofallen.org",
-  "official": 0,
-  "osm_racks": 25,
-  "portal": [
-   "https://allentx.justfoia.com/publicportal/home/newrequest",
-   "https://allentx.justfoia.com/Forms/Launch/19ef590b-eb71-420a-a4ab-612c72e9a460",
-   "https://allentx.justfoia.com/Forms/Launch/849cb644-86ec-40f9-9728-e585da567d9f"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.cityofallen.org/government/city_secretary/open_records.php",
-   "https://publicrecords.cityofallen.org:443/WebLink/Welcome.aspx?cr=1"
-  ]
- },
- {
-  "city": "Rio Rancho",
-  "state": "New Mexico",
-  "pop": 104046,
-  "lat": 35.23338,
-  "lon": -106.66447,
-  "site": "rrnm.gov",
-  "official": 0,
-  "osm_racks": 24,
-  "portal": [
-   "https://cityofrioranchonm.nextrequest.com/requests/new",
-   "https://cityofrioranchonm.nextrequest.com/documents"
-  ],
-  "email": [
-   "clerk@rrnm.gov"
-  ],
-  "pages": [
-   "https://rrnm.gov/1634/Public-Records-Requests"
-  ]
- },
- {
-  "city": "Rialto",
-  "state": "California",
-  "pop": 104026,
-  "lat": 34.111388888,
-  "lon": -117.3825,
-  "site": "rialtoca.gov",
-  "official": 0,
-  "osm_racks": 16,
-  "portal": [
-   "https://rialtoca.mycusthelp.com/WEBAPP/_rs/(S(qydztjgdwxyy3zo3e4rkrplz))/SupportHome.aspx",
-   "https://rialtoca.mycusthelp.com/WEBAPP/_rs/(S(2lcl3qhwx4qxsl3pvv3biovo))/AnswerDetail.aspx?sSessionID=&amp;aid=265",
-   "https://rialtoca.mycusthelp.com/WEBAPP/_rs/(S(2lcl3qhwx4qxsl3pvv3biovo))/AnswerDetail.aspx?sSessionID=&amp;aid=280"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.rialtoca.gov/181/Public-Records-Requests",
-   "https://www.rialtoca.gov/181/Public-Records-Requests"
-  ]
- },
- {
-  "city": "South Bend",
-  "state": "Indiana",
-  "pop": 103453,
-  "lat": 41.676388888,
-  "lon": -86.250277777,
-  "site": "southbendin.gov",
-  "official": 0,
-  "osm_racks": 30,
-  "portal": [],
-  "email": [
-   "sbcityclerk@southbendin.gov"
-  ],
-  "pages": []
- },
- {
-  "city": "Spokane Valley",
-  "state": "Washington",
-  "pop": 102976,
-  "lat": 47.6733,
-  "lon": -117.239,
-  "site": "spokanevalley.org",
-  "official": 0,
-  "osm_racks": 103,
-  "portal": [
-   "https://spokanevalleywa.govqa.us/WEBAPP/_rs/(S(uorugpkhuvonfs04vcr0hghe))/AnswerDetail.aspx?sSessionID=&amp;aid=122",
-   "https://spokanevalleywa.govqa.us/WEBAPP/_rs/(S(uorugpkhuvonfs04vcr0hghe))/AnswerDetail.aspx?sSessionID=&amp;aid=121",
-   "https://spokanevalleywa.govqa.us/WEBAPP/_rs/(S(uorugpkhuvonfs04vcr0hghe))/AnswerDetail.aspx?sSessionID=&amp;aid=138"
-  ],
-  "email": [],
-  "pages": [
-   "https://spokanevalleywa.gov/691/Public-Records",
-   "https://spokanevalleywa.govqa.us/WEBAPP/_rs/(S(totrrw053o2oztodflwci3on))/SupportHome.aspx?sSessionID=",
-   "https://spokanevalleywa.govqa.us/WEBAPP/_rs/(S(enwm4nhx0i4yixtlasuhocpy))/SupportHome.aspx?sSessionID="
-  ]
- },
- {
-  "city": "Menifee",
-  "state": "California",
-  "pop": 102527,
-  "lat": 33.678333333,
-  "lon": -117.166944444,
-  "site": "cityofmenifee.us",
-  "official": 0,
-  "osm_racks": 8,
-  "portal": [
-   "https://cityofmenifeeca.nextrequest.com/"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.menifee.ca.gov/124/Public-Records"
-  ]
- },
- {
-  "city": "Wichita Falls",
-  "state": "Texas",
-  "pop": 102316,
-  "lat": 33.896944444,
-  "lon": -98.515,
-  "site": "wichitafallstx.gov",
-  "official": 0,
-  "osm_racks": 11,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Davenport",
-  "state": "Iowa",
-  "pop": 101724,
-  "lat": 41.543055555,
-  "lon": -90.590833333,
-  "site": "cityofdavenportiowa.com",
-  "official": 0,
-  "osm_racks": 24,
-  "portal": [
-   "https://www.davenportiowa.com/government/request_public_records_FOIA",
-   "https://davenportia.justfoia.com/publicportal"
-  ],
-  "email": [],
-  "pages": [
-   "https://davenportia.justfoia.com/publicportal/home/newrequest"
-  ]
- },
- {
-  "city": "Chico",
-  "state": "California",
-  "pop": 101475,
-  "lat": 39.74,
-  "lon": -121.835555555,
-  "site": "chico.ca.us",
-  "official": 0,
-  "osm_racks": 202,
-  "portal": [
-   "https://cityofchicoca.nextrequest.com/",
-   "http://chico-ca.granicus.com/ViewPublisher.php?view_id=2",
-   "https://chico-ca.granicus.com/ViewPublisher.php?view_id=2"
-  ],
-  "email": [],
-  "pages": [
-   "https://cityofchicoca.nextrequest.com/"
-  ]
- },
- {
-  "city": "Lee's Summit",
-  "state": "Missouri",
-  "pop": 101108,
-  "lat": 38.9225,
-  "lon": -94.374166666,
-  "site": "lees-summit.mo.us",
-  "official": 0,
-  "osm_racks": 10,
-  "portal": [
-   "https://lsmo.granicus.com/ViewPublisher.php?view_id=44"
-  ],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Edinburg",
-  "state": "Texas",
-  "pop": 100243,
-  "lat": 26.3042,
-  "lon": -98.1639,
-  "site": "cityofedinburg.com",
-  "official": 0,
-  "osm_racks": 3,
-  "portal": [
-   "https://edinburgtx.govqa.us/WEBAPP/_rs/(S(0xpmxgxziqeodt0oriaxrdnm))/SupportHome.aspx?sSessionID=",
-   "https://edinburgtx.govqa.us/WEBAPP/_rs/login.aspx"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.cityofedinburg.com/government/city_secretary/public_information_requests.php"
-  ]
- },
- {
-  "city": "Nampa",
-  "state": "Idaho",
-  "pop": 100200,
-  "lat": 43.574722222,
-  "lon": -116.563611111,
-  "site": "cityofnampa.us",
-  "official": 0,
-  "osm_racks": 17,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "San Angelo",
-  "state": "Texas",
-  "pop": 99893,
-  "lat": 31.45,
-  "lon": -100.45,
-  "site": "cosatx.us",
-  "official": 0,
-  "osm_racks": 3,
-  "portal": [
-   "https://sanangelotx.mycusthelp.com/WEBAPP/_rs/(S(xcz4wnq0m5voww5oygeq0k4i))/supporthome.aspx",
-   "https://sanangelotx.mycusthelp.com/WEBAPP/_rs/(S(oq1unvbuduotpvixe40nykje))/openrecordssummary.aspx?sSessionID="
-  ],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Hesperia",
-  "state": "California",
-  "pop": 99818,
-  "lat": 34.412777777,
-  "lon": -117.306111111,
-  "site": "cityofhesperia.us",
-  "official": 0,
-  "osm_racks": 1,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Tuscaloosa",
-  "state": "Alabama",
-  "pop": 99600,
-  "lat": 33.206666666,
-  "lon": -87.534722222,
-  "site": "tuscaloosa.com",
-  "official": 0,
-  "osm_racks": 85,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Boca Raton",
-  "state": "Florida",
-  "pop": 97422,
-  "lat": 26.368611111,
-  "lon": -80.1,
-  "site": "myboca.us",
-  "official": 0,
-  "osm_racks": 36,
-  "portal": [
-   "https://bocaratonfl.justfoia.com/publicportal/home/newrequest",
-   "https://bocaratonfl.justfoia.com/publicportal/home/track",
-   "https://bocaraton.granicus.com/boards/forms/451/apply"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.myboca.us/647/Public-Records-Request",
-   "https://www.myboca.us/647/Public-Records-Request"
-  ]
- },
- {
-  "city": "Yakima",
-  "state": "Washington",
-  "pop": 96968,
-  "lat": 46.601944444,
-  "lon": -120.507777777,
-  "site": "ci.yakima.wa.us",
-  "official": 0,
-  "osm_racks": 5,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Yuma",
-  "state": "Arizona",
-  "pop": 95548,
-  "lat": 32.692222222,
-  "lon": -114.615277777,
-  "site": "yumaaz.gov",
-  "official": 0,
-  "osm_racks": 1,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Livonia",
-  "state": "Michigan",
-  "pop": 95535,
-  "lat": 42.401111111,
-  "lon": -83.371111111,
-  "site": "livonia.gov",
-  "official": 1,
-  "osm_racks": 24,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Goodyear",
-  "state": "Arizona",
-  "pop": 95294,
-  "lat": 33.43532,
-  "lon": -112.35821,
-  "site": "ci.goodyear.az.us",
-  "official": 0,
-  "osm_racks": 18,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Edmond",
-  "state": "Oklahoma",
-  "pop": 94428,
-  "lat": 35.657138888,
-  "lon": -97.464916666,
-  "site": "edmondok.com",
-  "official": 1,
-  "osm_racks": 10,
-  "portal": [
-   "https://edmondok.justfoia.com/publicportal/home/newrequest",
-   "https://edmondok.justfoia.com/publicportal"
-  ],
-  "email": [
-   "cityclerk@edmondok.gov"
-  ],
-  "pages": [
-   "https://edmondok.justfoia.com/publicportal/home/newrequest",
-   "https://www.edmondok.gov/159/Open-Records-Fee-Schedule",
-   "https://www.edmondok.gov/159/Open-Records-Fee-Schedule"
-  ]
- },
- {
-  "city": "Deltona",
-  "state": "Florida",
-  "pop": 93692,
-  "lat": 28.905,
-  "lon": -81.211111111,
-  "site": "deltonafl.gov",
-  "official": 0,
-  "osm_racks": 2,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Roswell",
-  "state": "Georgia",
-  "pop": 92833,
-  "lat": 34.0339,
-  "lon": -84.3442,
-  "site": "roswellgov.com",
-  "official": 1,
-  "osm_racks": 5,
-  "portal": [
-   "https://roswellga.justfoia.com/Forms/Launch/d705cbd6-1396-49b7-939e-8d86c5a87deb",
-   "https://roswellga.justfoia.com/Forms/Launch/02b6cc8e-5783-45b0-9fbb-3779b3387e72",
-   "https://roswellga.justfoia.com/publicportal/home/track"
-  ],
-  "email": [
-   "policerecords@roswellgov.com",
-   "cityclerkoffice@roswellgov.com",
-   "firerecords@roswellgov.com"
-  ],
-  "pages": [
-   "https://www.roswellgov.com/services/open-public-records-request/",
-   "https://roswellga.justfoia.com/publicportal/"
-  ]
- },
- {
-  "city": "Hoover",
-  "state": "Alabama",
-  "pop": 92606,
-  "lat": 33.386111111,
-  "lon": -86.805555555,
-  "site": "hooveral.org",
-  "official": 0,
-  "osm_racks": 3,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Buckeye",
-  "state": "Arizona",
-  "pop": 91502,
-  "lat": 33.370555555,
-  "lon": -112.590833333,
-  "site": "buckeyeaz.gov",
-  "official": 0,
-  "osm_racks": 3,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Chino",
-  "state": "California",
-  "pop": 91403,
-  "lat": 34.017777777,
-  "lon": -117.69,
-  "site": "cityofchino.org",
-  "official": 2,
-  "osm_racks": 14,
-  "portal": [
-   "https://cityofchinoca.nextrequest.com/",
-   "https://chinopd.nextrequest.com/",
-   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico"
-  ],
-  "email": [
-   "cityclerk@cityofchino.org"
-  ],
-  "pages": [
-   "https://cityofchinoca.nextrequest.com/",
-   "https://www.cityofchino.org/368/Public-Records-Request"
-  ]
- },
- {
-  "city": "Nashua",
-  "state": "New Hampshire",
-  "pop": 91322,
-  "lat": 42.7575,
-  "lon": -71.464444444,
-  "site": "nashuanh.gov",
-  "official": 0,
-  "osm_racks": 10,
-  "portal": [
-   "https://cityofnashuanh.nextrequest.com/"
-  ],
-  "email": [
-   "cityclerk@nashuanh.gov"
-  ],
-  "pages": [
-   "https://www.nashuanh.gov/1657/Public-Record-Request",
-   "https://www.nashuanh.gov/1657/Public-Record-Request",
-   "https://www.nashuanh.gov/238/Records---Right-to-Know"
-  ]
- },
- {
-  "city": "O'Fallon",
-  "state": "Missouri",
-  "pop": 91316,
-  "lat": 38.784444444,
-  "lon": -90.708055555,
-  "site": "ofallon.mo.us",
-  "official": 0,
-  "osm_racks": 4,
-  "portal": [
-   "https://crm-ofallonmo.mycusthelp.com/WEBAPP/_rs/supporthome.aspx",
-   "https://crm-ofallonmo.mycusthelp.com/WEBAPP/_rs/(S(v1tds2eyt5sgyvvmsqoh5dqr))/supporthome.aspx?sSessionID=1732412322OWTDHHBGIMFNOVMJMWVBHTZQSLAZZW"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.ofallon.mo.us/requests-for-public-information",
-   "https://www.ofallon.mo.us/requests-for-public-information/print"
-  ]
- },
- {
-  "city": "Norwalk",
-  "state": "Connecticut",
-  "pop": 91184,
-  "lat": 41.093888888,
-  "lon": -73.419722222,
-  "site": "norwalkct.org",
+  "pop": 67176,
+  "lat": 30.6511,
+  "lon": -97.6814,
+  "site": "georgetown.org",
   "official": 0,
   "osm_racks": 8,
   "portal": [],
@@ -1738,72 +601,12 @@
   "pages": []
  },
  {
-  "city": "New Braunfels",
-  "state": "Texas",
-  "pop": 90403,
-  "lat": 29.7,
-  "lon": -98.116666666,
-  "site": "newbraunfels.gov",
-  "official": 0,
-  "osm_racks": 4,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Lawton",
-  "state": "Oklahoma",
-  "pop": 90381,
-  "lat": 34.608694444,
-  "lon": -98.390333333,
-  "site": "lawtonok.gov",
-  "official": 0,
-  "osm_racks": 0,
-  "portal": [
-   "https://cityoflawtonok.nextrequest.com/",
-   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
-   "https://assets.nextrequest.com/manifest.json"
-  ],
-  "email": [],
-  "pages": [
-   "https://cityoflawtonok.nextrequest.com/"
-  ]
- },
- {
-  "city": "Conroe",
-  "state": "Texas",
-  "pop": 89956,
-  "lat": 30.3161,
-  "lon": -95.4589,
-  "site": "cityofconroe.org",
-  "official": 0,
-  "osm_racks": 3,
-  "portal": [],
-  "email": [],
-  "pages": [
-   "https://www.cityofconroe.org/services/administration/public_records_request.php"
-  ]
- },
- {
-  "city": "Hemet",
-  "state": "California",
-  "pop": 89833,
-  "lat": 33.741944444,
-  "lon": -116.983055555,
-  "site": "cityofhemet.org",
-  "official": 0,
-  "osm_racks": 3,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Avondale",
-  "state": "Arizona",
-  "pop": 89334,
-  "lat": 33.433611111,
-  "lon": -112.349722222,
-  "site": "avondale.org",
+  "city": "Delray Beach",
+  "state": "Florida",
+  "pop": 66846,
+  "lat": 26.459166666,
+  "lon": -80.083055555,
+  "site": "delraybeachfl.gov",
   "official": 0,
   "osm_racks": 19,
   "portal": [],
@@ -1811,703 +614,198 @@
   "pages": []
  },
  {
-  "city": "Palm Coast",
-  "state": "Florida",
-  "pop": 89258,
-  "lat": 29.538055555,
-  "lon": -81.223333333,
-  "site": "palmcoastgov.com",
-  "official": 0,
-  "osm_racks": 12,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Fort Smith",
-  "state": "Arkansas",
-  "pop": 89142,
-  "lat": 35.35,
-  "lon": -94.366666666,
-  "site": "fortsmithar.gov",
-  "official": 0,
-  "osm_racks": 13,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Santa Barbara",
-  "state": "California",
-  "pop": 88665,
-  "lat": 34.425833333,
-  "lon": -119.714166666,
-  "site": "santabarbaraca.gov",
-  "official": 0,
-  "osm_racks": 222,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Santa Fe",
-  "state": "New Mexico",
-  "pop": 87505,
-  "lat": 35.666666666,
-  "lon": -105.966666666,
-  "site": "santafenm.gov",
-  "official": 0,
-  "osm_racks": 68,
-  "portal": [
-   "https://santafenm.govqa.us/WEBAPP/_rs/supporthome.aspx",
-   "https://santafenm.govqa.us/WEBAPP/_rs/(S(5upjga4gjmqd1k3lvpoqcblw))/supporthome.aspx",
-   "https://uploads.govqa.us/SANTAFENM/2023"
-  ],
-  "email": [],
-  "pages": [
-   "https://santafenm.gov/city-clerk-1/sunshine-portal/contracts-1",
-   "https://santafenm.gov/city-clerk-1/sunshine-portal/contracts-1?params=start_date%2Fdesc%2FP25",
-   "https://santafenm.gov/city-clerk-1/sunshine-portal/contracts-1?params=vendor%2Fdesc"
-  ]
- },
- {
-  "city": "Whittier",
-  "state": "California",
-  "pop": 87306,
-  "lat": 33.965555555,
-  "lon": -118.024444444,
-  "site": "cityofwhittier.org",
-  "official": 0,
-  "osm_racks": 20,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Troy",
-  "state": "Michigan",
-  "pop": 87294,
-  "lat": 42.580277777,
-  "lon": -83.143055555,
-  "site": "troymi.gov",
-  "official": 1,
-  "osm_racks": 88,
-  "portal": [
-   "https://cityoftroymi.nextrequest.com/",
-   "https://cms6.revize.com/revize/citytroymi/Departments/City%20Clerk/20181228%20City%20of%20Troy%20FOIA%20Public%20Summary.pdf",
-   "https://cityoftroymipd.nextrequest.com/"
-  ],
-  "email": [],
-  "pages": [
-   "https://cityoftroymi.nextrequest.com/"
-  ]
- },
- {
-  "city": "Deerfield Beach",
-  "state": "Florida",
-  "pop": 86859,
-  "lat": 26.318055555,
-  "lon": -80.099722222,
-  "site": "deerfield-beach.com",
-  "official": 0,
-  "osm_racks": 31,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Clarkstown",
-  "state": "New York",
-  "pop": 86855,
-  "lat": 41.126111111,
-  "lon": -73.980277777,
-  "site": "town.clarkstown.ny.us",
-  "official": 2,
-  "osm_racks": 49,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Danbury",
-  "state": "Connecticut",
-  "pop": 86518,
-  "lat": 41.402222222,
-  "lon": -73.471111111,
-  "site": "danbury-ct.gov",
-  "official": 0,
-  "osm_racks": 4,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Fort Myers",
-  "state": "Florida",
-  "pop": 86395,
-  "lat": 26.616666666,
-  "lon": -81.833333333,
-  "site": "cityftmyers.com",
-  "official": 0,
-  "osm_racks": 8,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "St. George",
-  "state": "Louisiana",
-  "pop": 86000,
-  "lat": 30.365475,
-  "lon": -91.027999,
+  "city": "Oshkosh",
+  "state": "Wisconsin",
+  "pop": 66816,
+  "lat": 44.024166666,
+  "lon": -88.561111111,
   "site": "",
   "official": 0,
-  "osm_racks": 15
+  "osm_racks": 23
  },
  {
-  "city": "Sioux City",
-  "state": "Iowa",
-  "pop": 85797,
-  "lat": 42.496388888,
-  "lon": -96.405,
-  "site": "sioux-city.org",
-  "official": 0,
-  "osm_racks": 6,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Mission",
-  "state": "Texas",
-  "pop": 85778,
-  "lat": 26.21139,
-  "lon": -98.32111,
-  "site": "missiontexas.us",
-  "official": 1,
-  "osm_racks": 2,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Westland",
-  "state": "Michigan",
-  "pop": 85420,
-  "lat": 42.324166666,
-  "lon": -83.400277777,
-  "site": "cityofwestland.com",
-  "official": 0,
-  "osm_racks": 15,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Lake Charles",
+  "city": "Kenner",
   "state": "Louisiana",
-  "pop": 84872,
-  "lat": 30.214722222,
-  "lon": -93.208611111,
-  "site": "cityoflakecharles.com",
-  "official": 0,
-  "osm_racks": 11,
+  "pop": 66448,
+  "lat": 29.994222222,
+  "lon": -90.241777777,
+  "site": "kenner.la.us",
+  "official": 1,
+  "osm_racks": 50,
   "portal": [],
   "email": [],
   "pages": [
-   "https://www.cityoflakecharles.com/269/Public-Records-Information"
+   "https://www.kenner.la.us/369/Public-Information-Videos"
   ]
  },
  {
-  "city": "Melbourne",
-  "state": "Florida",
-  "pop": 84678,
-  "lat": 28.08363,
-  "lon": -80.60811,
-  "site": "melbourneflorida.org",
+  "city": "Lodi",
+  "state": "California",
+  "pop": 66348,
+  "lat": 38.128888888,
+  "lon": -121.280833333,
+  "site": "lodi.gov",
   "official": 0,
-  "osm_racks": 20,
-  "portal": [
-   "https://granicus.com/product/opencities",
-   "https://granicus.com/solution/govaccess/opencities/"
-  ],
+  "osm_racks": 1,
+  "portal": [],
   "email": [
-   "city.clerk@mlbfl.org"
+   "cityclerk@lodi.gov",
+   "lpdrecords@lodi.gov"
   ],
-  "pages": []
+  "pages": [
+   "https://www.lodi.gov/813/Public-Records",
+   "https://www.lodi.gov/813/Public-Records"
+  ]
  },
  {
-  "city": "Farmington Hills",
+  "city": "Novi",
   "state": "Michigan",
-  "pop": 83986,
-  "lat": 42.485277777,
-  "lon": -83.376944444,
-  "site": "fhgov.com",
-  "official": 1,
+  "pop": 66243,
+  "lat": 42.480555555,
+  "lon": -83.475555555,
+  "site": "cityofnovi.org",
+  "official": 3,
   "osm_racks": 27,
   "portal": [
-   "https://www.fhgov.com/department-and-services/city-clerk/requests-for-public-records-foia/",
-   "https://www.fhgov.com/media/f00fp0ee/farmington-hills-foia-procedures-and-guidelines-final-2026-updated-9-2026.pdf",
-   "https://www.fhgov.com/media/digf2z2l/farmington-hills-foia-summary-final-2026-updated-9-2026.pdf"
+   "https://novimi.mycusthelp.com/WEBAPP/_rs/supporthome.aspx",
+   "http://www.publicrecordcenter.com",
+   "https://www.cityofnovi.org/media/3ysf2slz/foiafeeitemizationform.pdf"
   ],
-  "email": [
-   "foia-clerk@fhgov.com",
-   "foia-pd@fhgov.com",
-   "foia-fd@fhgov.com"
-  ],
+  "email": [],
   "pages": [
-   "https://www.fhgov.com/department-and-services/city-clerk/requests-for-public-records-foia/"
+   "https://www.cityofnovi.org/services/city-clerk/freedom-of-information-records-request/"
   ]
  },
  {
-  "city": "Kennewick",
-  "state": "Washington",
-  "pop": 83921,
-  "lat": 46.203475,
-  "lon": -119.15927,
-  "site": "go2kennewick.com",
+  "city": "Madera",
+  "state": "California",
+  "pop": 66224,
+  "lat": 36.961388888,
+  "lon": -120.060833333,
+  "site": "madera.gov",
   "official": 0,
-  "osm_racks": 23,
-  "portal": [
-   "https://kennewick.justfoia.com/publicportal/home/newrequest",
-   "https://kennewick.justfoia.com/publicportal/home/search",
-   "https://kennewick.justfoia.com/publicportal/home/track"
-  ],
-  "email": [
-   "clerkinfo@ci.kennewick.wa.us"
-  ],
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
   "pages": [
-   "https://go2kennewick.com/790/Public-Records-Online-Search",
-   "https://go2kennewick.com/1573/Public-Records-Requests",
-   "https://go2kennewick.com/1641/Matter-of-Right-Records-Requests"
+   "https://www.madera.gov/city-government/public-records-request/",
+   "https://www.madera.gov/city-government/public-records-request/city-council-meeting-archive/",
+   "https://forms.madera.gov/Public-Records-Request"
   ]
  },
  {
-  "city": "Baytown",
-  "state": "Texas",
-  "pop": 83701,
-  "lat": 29.743888888,
-  "lon": -94.965833333,
-  "site": "baytown.org",
-  "official": 0,
-  "osm_racks": 3,
+  "city": "Alpharetta",
+  "state": "Georgia",
+  "pop": 65818,
+  "lat": 34.073333333,
+  "lon": -84.281111111,
+  "site": "alpharetta.ga.us",
+  "official": 1,
+  "osm_racks": 7,
   "portal": [],
   "email": [],
   "pages": []
  },
  {
-  "city": "Manteca",
-  "state": "California",
-  "pop": 83498,
-  "lat": 37.802777777,
-  "lon": -121.220833333,
+  "city": "Janesville",
+  "state": "Wisconsin",
+  "pop": 65615,
+  "lat": 42.6854687,
+  "lon": -89.0136316,
+  "site": "ci.janesville.wi.us",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Grand Junction",
+  "state": "Colorado",
+  "pop": 65560,
+  "lat": 39.0667,
+  "lon": -108.567,
   "site": "",
   "official": 0,
-  "osm_racks": 5
+  "osm_racks": 266
  },
  {
-  "city": "Franklin",
-  "state": "Tennessee",
-  "pop": 83454,
-  "lat": 35.929166666,
-  "lon": -86.8575,
-  "site": "franklintn.gov",
+  "city": "Victoria",
+  "state": "Texas",
+  "pop": 65534,
+  "lat": 28.816944444,
+  "lon": -96.993333333,
+  "site": "cob.us",
   "official": 0,
-  "osm_racks": 6,
+  "osm_racks": 1,
   "portal": [],
   "email": [],
   "pages": []
  },
  {
-  "city": "Warwick",
-  "state": "Rhode Island",
-  "pop": 82823,
-  "lat": 41.716666666,
-  "lon": -71.416666666,
-  "site": "warwickri.gov",
-  "official": 4,
-  "osm_racks": 11,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Johns Creek",
-  "state": "Georgia",
-  "pop": 82453,
-  "lat": 34.0289,
-  "lon": -84.1986,
-  "site": "johnscreekga.gov",
-  "official": 0,
-  "osm_racks": 10,
-  "portal": [
-   "https://johnscreekga.govqa.us/WEBAPP/_rs/(S(dykuzku2yel2do400qdkpmsf))/supporthome.aspx",
-   "https://johnscreekga.govqa.us/WEBAPP/_rs/(S(nt2gjueepuk4bestoms10q3h))/supporthome.aspx"
-  ],
-  "email": [],
-  "pages": [
-   "https://johnscreekga.gov/departments/city-clerk/request-public-records/",
-   "https://johnscreekga.govqa.us/WEBAPP/_rs/(S(ko5ygbj50ubacnl5r4cd5qzs))/supporthome.aspx",
-   "https://johnscreekga.govqa.us/WEBAPP/_rs/(S(qbfr3tn3a4r4ntduu0j3ije4))/supporthome.aspx"
-  ]
- },
- {
-  "city": "Temple",
-  "state": "Texas",
-  "pop": 82073,
-  "lat": 31.0982344,
-  "lon": -97.342782,
-  "site": "templetx.gov",
-  "official": 0,
-  "osm_racks": 6,
-  "portal": [
-   "https://cityoftempletx.nextrequest.com/",
-   "https://cityoftempletx.nextrequest.com",
-   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico"
-  ],
-  "email": [],
-  "pages": [
-   "https://cityoftempletx.nextrequest.com/",
-   "https://cityoftempletx.nextrequest.com"
-  ]
- },
- {
-  "city": "Longview",
-  "state": "Texas",
-  "pop": 81638,
-  "lat": 32.5092,
-  "lon": -94.7539,
-  "site": "longviewtexas.gov",
-  "official": 0,
-  "osm_racks": 5,
-  "portal": [
-   "https://longviewtx.justfoia.com/publicportal/home/newrequest"
-  ],
-  "email": [
-   "records@emergicon.com"
-  ],
-  "pages": [
-   "https://www.longviewtexas.gov/4156/Open-Records-Requests",
-   "https://www.longviewtexas.gov/4156/Open-Records-Requests",
-   "https://www.longviewtexas.gov/4156/Open-Records-Requests"
-  ]
- },
- {
-  "city": "Flint",
-  "state": "Michigan",
-  "pop": 81252,
-  "lat": 43.018888888,
-  "lon": -83.693333333,
-  "site": "cityofflint.com",
-  "official": 0,
-  "osm_racks": 13,
-  "portal": [
-   "https://www.cityofflint.com/wp-content/uploads/2026/11/FOIA-Request-for-Public-Records-2026.pdf",
-   "https://www.cityofflint.com/wp-content/uploads/2022/04/FOIA-Procedures-and-Guidelines.pdf",
-   "https://www.cityofflint.com/foia/"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.cityofflint.com/foia/"
-  ]
- },
- {
-  "city": "Parma",
+  "city": "Lorain",
   "state": "Ohio",
-  "pop": 81146,
-  "lat": 41.391666666,
-  "lon": -81.727777777,
-  "site": "cityofparma-oh.gov",
-  "official": 1,
-  "osm_racks": 55,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Homestead",
-  "state": "Florida",
-  "pop": 80737,
-  "lat": 25.4687224,
-  "lon": -80.4775569,
-  "site": "cityofhomestead.com",
+  "pop": 65211,
+  "lat": 41.448333333,
+  "lon": -82.168888888,
+  "site": "cityoflorain.org",
   "official": 0,
   "osm_racks": 7,
-  "portal": [
-   "https://homesteadfl.justfoia.com/publicportal/home/track"
-  ],
-  "email": [
-   "cityrecords@homesteadfl.gov",
-   "recordsrequest@homesteadpolice.com"
-  ],
-  "pages": [
-   "https://www.cityofhomestead.com/publicrecords",
-   "https://www.homesteadfl.gov/622/Request-a-Public-Record"
-  ]
- },
- {
-  "city": "Gastonia",
-  "state": "North Carolina",
-  "pop": 80411,
-  "lat": 35.255277777,
-  "lon": -81.180277777,
-  "site": "gastonianc.gov",
-  "official": 0,
-  "osm_racks": 1,
-  "portal": [
-   "https://cityofgastonianc.nextrequest.com/",
-   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
-   "https://assets.nextrequest.com/manifest.json"
-  ],
-  "email": [],
-  "pages": [
-   "https://www.gastonianc.gov/government/public-records-requests.html",
-   "https://cityofgastonianc.nextrequest.com/"
-  ]
- },
- {
-  "city": "Boynton Beach",
-  "state": "Florida",
-  "pop": 80380,
-  "lat": 26.528055555,
-  "lon": -80.076388888,
-  "site": "boynton-beach.org",
-  "official": 0,
-  "osm_racks": 76,
-  "portal": [
-   "https://boyntonbeachfl.mycusthelp.com/WEBAPP/_rs/(S(rnufnm2dktl4i2rgkhsddfru))/SupportHome.aspx"
-  ],
-  "email": [
-   "cityclerk@bbfl.us"
-  ],
-  "pages": [
-   "https://www.boynton-beach.org/212/Public-Records",
-   "https://www.boynton-beach.org/212/Public-Records"
-  ]
- },
- {
-  "city": "Warner Robins",
-  "state": "Georgia",
-  "pop": 80308,
-  "lat": 32.6086,
-  "lon": -83.6381,
-  "site": "wrga.gov",
-  "official": 0,
-  "osm_racks": 1,
   "portal": [],
   "email": [],
   "pages": []
  },
  {
-  "city": "Pharr",
-  "state": "Texas",
-  "pop": 79715,
-  "lat": 26.206388888,
-  "lon": -98.185277777,
-  "site": "cityofpharr.com",
-  "official": 1,
-  "osm_racks": 3,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Rancho Cordova",
-  "state": "California",
-  "pop": 79332,
-  "lat": 38.589166666,
-  "lon": -121.302777777,
-  "site": "cityofranchocordova.org",
-  "official": 0,
-  "osm_racks": 35,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Kissimmee",
-  "state": "Florida",
-  "pop": 79226,
-  "lat": 28.303888888,
-  "lon": -81.412777777,
-  "site": "kissimmee.org",
-  "official": 0,
-  "osm_racks": 8,
-  "portal": [
-   "https://granicus.com/product/opencities",
-   "https://granicus.com/solution/govaccess/opencities/",
-   "https://kissimmeefl.justfoia.com/publicportal/home/track"
-  ],
-  "email": [
-   "8bkpdrecords@kissimmee.gov",
-   "kpdrecords@kissimmee.gov"
-  ],
-  "pages": [
-   "https://kissimmeefl.justfoia.com/publicportal/home/track",
-   "https://www.kissimmee.gov/My-Government/Public-Records/Make-a-Public-Records-Request",
-   "https://www.kissimmee.gov/My-Government/Public-Records/Make-a-Public-Records-Request/General-Records"
-  ]
- },
- {
-  "city": "Perris",
-  "state": "California",
-  "pop": 78700,
-  "lat": 33.7825,
-  "lon": -117.228611111,
-  "site": "cityofperris.org",
-  "official": 0,
-  "osm_racks": 4,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Jonesboro",
-  "state": "Arkansas",
-  "pop": 78576,
-  "lat": 35.833333333,
-  "lon": -90.7,
-  "site": "jonesboro.org",
-  "official": 0,
-  "osm_racks": 71,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Frederick",
-  "state": "Maryland",
-  "pop": 78171,
-  "lat": 39.426388888,
-  "lon": -77.420277777,
-  "site": "cityoffrederick.com",
-  "official": 0,
-  "osm_racks": 35,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Racine",
-  "state": "Wisconsin",
-  "pop": 77816,
-  "lat": 42.726111111,
-  "lon": -87.805833333,
-  "site": "cityofracine.org",
-  "official": 0,
-  "osm_racks": 6,
-  "portal": [],
-  "email": [
-   "rfdrecords@cityofracine.org",
-   "clerks@cityofracine.org",
-   "rpdrecords.request@cityofracine.org"
-  ],
-  "pages": [
-   "https://cityofracinewi.gov/fire/record-requests/"
-  ]
- },
- {
-  "city": "Cedar Park",
-  "state": "Texas",
-  "pop": 77595,
-  "lat": 30.5067,
-  "lon": -97.8303,
-  "site": "cedarparktx.us",
+  "city": "Idaho Falls",
+  "state": "Idaho",
+  "pop": 64818,
+  "lat": 43.491666666,
+  "lon": -112.0325,
+  "site": "idahofallsidaho.gov",
   "official": 2,
-  "osm_racks": 173,
+  "osm_racks": 72,
   "portal": [],
   "email": [],
   "pages": []
  },
  {
-  "city": "Pasco",
-  "state": "Washington",
-  "pop": 77108,
-  "lat": 46.238611111,
-  "lon": -119.108611111,
-  "site": "pasco-wa.gov",
-  "official": 0,
-  "osm_racks": 21,
+  "city": "North Little Rock",
+  "state": "Arkansas",
+  "pop": 64591,
+  "lat": 34.771388888,
+  "lon": -92.266388888,
+  "site": "northlittlerock.ar.gov",
+  "official": 1,
+  "osm_racks": 22,
   "portal": [
-   "https://pascowa.govqa.us/WEBAPP/_rs/(S(e310jajpfwgtyjyk25qa3yii))/supporthome.aspx",
-   "https://pascowa.govqa.us/WEBAPP/_rs/(S(s2p1a1mvkalqosqphfukc4cn))/supporthome.aspx"
+   "https://nlr-ar.justfoia.com/publicportal/home/newrequest",
+   "https://nlr-ar.justfoia.com/publicportal"
   ],
   "email": [],
   "pages": [
-   "https://www.pasco-wa.gov/publicrecords",
-   "https://www.pasco-wa.gov/202/Public-Records-Search",
-   "https://www.pasco-wa.gov/193/Public-Records-Requests"
+   "https://nlr-ar.justfoia.com/publicportal/home/newrequest"
   ]
  },
  {
-  "city": "Flagstaff",
-  "state": "Arizona",
-  "pop": 76831,
-  "lat": 35.199166666,
-  "lon": -111.631111111,
-  "site": "flagstaff.az.gov",
+  "city": "Conway",
+  "state": "Arkansas",
+  "pop": 64134,
+  "lat": 35.087222222,
+  "lon": -92.453333333,
+  "site": "conwayarkansas.org",
   "official": 0,
-  "osm_racks": 117,
+  "osm_racks": 41,
   "portal": [],
   "email": [],
   "pages": []
  },
  {
-  "city": "Loveland",
-  "state": "Colorado",
-  "pop": 76378,
-  "lat": 40.4047,
-  "lon": -105.086,
-  "site": "ci.loveland.co.us",
-  "official": 0,
-  "osm_racks": 10,
-  "portal": [],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Rochester Hills",
-  "state": "Michigan",
-  "pop": 76300,
-  "lat": 42.658055555,
-  "lon": -83.149722222,
-  "site": "rochesterhills.org",
-  "official": 0,
-  "osm_racks": 18,
-  "portal": [
-   "https://www.rochesterhills.org/departments/clerk/foia_request.php",
-   "https://www.facebook.com/sharer/sharer.php?u=http://www.rochesterhills.org/departments/clerk/foia_request.php",
-   "https://www.twitter.com/intent/tweet?url=http://www.rochesterhills.org/departments/clerk/foia_request.php"
-  ],
-  "email": [
-   "clerksoffice@rochesterhills.org"
-  ],
-  "pages": [
-   "https://www.rochesterhills.org/departments/clerk/foia_request.php"
-  ]
- },
- {
-  "city": "Flower Mound",
-  "state": "Texas",
-  "pop": 75956,
-  "lat": 33.031666666,
-  "lon": -97.078888888,
-  "site": "flower-mound.com",
-  "official": 0,
-  "osm_racks": 13,
-  "portal": [
-   "https://flowermoundtx.justfoia.com/publicportal/home/newrequest"
-  ],
-  "email": [],
-  "pages": []
- },
- {
-  "city": "Appleton",
-  "state": "Wisconsin",
-  "pop": 75644,
-  "lat": 44.282222222,
-  "lon": -88.418333333,
-  "site": "appleton.org",
+  "city": "Ocala",
+  "state": "Florida",
+  "pop": 63591,
+  "lat": 29.1875,
+  "lon": -82.141388888,
+  "site": "ocalafl.org",
   "official": 0,
   "osm_racks": 24,
   "portal": [],
@@ -2515,14 +813,3128 @@
   "pages": []
  },
  {
-  "city": "Woodbury",
-  "state": "Minnesota",
-  "pop": 75102,
-  "lat": 44.919888888,
-  "lon": -92.933944444,
-  "site": "woodburymn.gov",
+  "city": "Greenwich",
+  "state": "Connecticut",
+  "pop": 63518,
+  "lat": 41.02649,
+  "lon": -73.62846,
+  "site": "greenwichct.org",
+  "official": 0,
+  "osm_racks": 21,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Taylor",
+  "state": "Michigan",
+  "pop": 63409,
+  "lat": 42.240833333,
+  "lon": -83.269722222,
+  "site": "cityoftaylor.com",
+  "official": 0,
+  "osm_racks": 40,
+  "portal": [
+   "https://www.cityoftaylor.com/781/Freedom-of-Information-Act-FOIA"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.cityoftaylor.com/35/Open-Government",
+   "https://www.cityoftaylor.com/FormCenter/City-Clerk-Forms-12/Freedom-of-Information-Act-Request-Form-63",
+   "https://www.cityoftaylor.com/781/Freedom-of-Information-Act-FOIA"
+  ]
+ },
+ {
+  "city": "Dearborn Heights",
+  "state": "Michigan",
+  "pop": 63292,
+  "lat": 42.335555555,
+  "lon": -83.288888888,
+  "site": "ci.dearborn-heights.mi.us",
+  "official": 1,
+  "osm_racks": 102,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "La Habra",
+  "state": "California",
+  "pop": 63097,
+  "lat": 33.931944444,
+  "lon": -117.946111111,
+  "site": "ci.la-habra.ca.us",
+  "official": 1,
+  "osm_racks": 49,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Moore",
+  "state": "Oklahoma",
+  "pop": 62793,
+  "lat": 35.338333333,
+  "lon": -97.486666666,
+  "site": "cityofmoore.com",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.cityofmoore.com/departments/finance/city-clerk/request-for-record-inspection-or-copy"
+  ]
+ },
+ {
+  "city": "Bossier City",
+  "state": "Louisiana",
+  "pop": 62701,
+  "lat": 32.5178,
+  "lon": -93.6914,
+  "site": "bossiercity.org",
+  "official": 0,
+  "osm_racks": 5,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Porterville",
+  "state": "California",
+  "pop": 62623,
+  "lat": 36.068611111,
+  "lon": -119.0275,
+  "site": "ci.porterville.ca.us",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [
+   "https://portervilleca.nextrequest.com/",
+   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+   "https://assets.nextrequest.com/manifest.json"
+  ],
+  "email": [
+   "cityclerk@ci.porterville.ca.us"
+  ],
+  "pages": [
+   "https://portervilleca.nextrequest.com/"
+  ]
+ },
+ {
+  "city": "Port Orange",
+  "state": "Florida",
+  "pop": 62596,
+  "lat": 29.118888888,
+  "lon": -81.002777777,
+  "site": "port-orange.org",
+  "official": 0,
+  "osm_racks": 5,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Rowlett",
+  "state": "Texas",
+  "pop": 62535,
+  "lat": 32.9069,
+  "lon": -96.5475,
+  "site": "ci.rowlett.tx.us",
+  "official": 0,
+  "osm_racks": 15,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Commerce City",
+  "state": "Colorado",
+  "pop": 62418,
+  "lat": 39.840833333,
+  "lon": -104.901111111,
+  "site": "ci.commerce-city.co.us",
+  "official": 2,
+  "osm_racks": 55,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Pico Rivera",
+  "state": "California",
+  "pop": 62088,
+  "lat": 33.988888888,
+  "lon": -118.089166666,
+  "site": "ci.pico-rivera.ca.us",
   "official": 3,
-  "osm_racks": 41,
+  "osm_racks": 16,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Pontiac",
+  "state": "Michigan",
+  "pop": 61606,
+  "lat": 42.646111111,
+  "lon": -83.2925,
+  "site": "pontiac.mi.us",
+  "official": 0,
+  "osm_racks": 14,
+  "portal": [
+   "https://www.pontiacmi.gov/departments/clerk/foia.php",
+   "https://www.facebook.com/sharer/sharer.php?u=http://www.pontiacmi.gov/departments/clerk/foia.php",
+   "https://www.twitter.com/intent/tweet?url=http://www.pontiacmi.gov/departments/clerk/foia.php"
+  ],
+  "email": [
+   "foia@pontiac.mi.us",
+   "cityclerk@battlecreekmi.gov"
+  ],
+  "pages": [
+   "https://www.pontiacmi.gov/news_detail_T12_R161.php",
+   "https://www.pontiacmi.gov/departments/clerk/foia.php"
+  ]
+ },
+ {
+  "city": "Fairfield",
+  "state": "Connecticut",
+  "pop": 61512,
+  "lat": 41.175833333,
+  "lon": -73.271944444,
+  "site": "fairfieldct.org",
+  "official": 1,
+  "osm_racks": 23,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Huntersville",
+  "state": "North Carolina",
+  "pop": 61376,
+  "lat": 35.409444444,
+  "lon": -80.863611111,
+  "site": "huntersville.org",
+  "official": 0,
+  "osm_racks": 61,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Plymouth",
+  "state": "Massachusetts",
+  "pop": 61217,
+  "lat": 41.958611111,
+  "lon": -70.667777777,
+  "site": "plymouth-ma.gov",
+  "official": 0,
+  "osm_racks": 6,
+  "portal": [
+   "https://www.townforms.com/FOIADirect-PlymouthMACitizens/Public/Request/PublicRequest.aspx?ch=ad5d793c30cdd55b16be7581ba049622",
+   "https://townforms.com/FOIADirect-PlymouthMACitizens/Public/Request/PublicRequest.aspx?ch=ad5d793c30cdd55b16be7581ba049622"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.plymouth-ma.gov/894/Public-Records-Requests"
+  ]
+ },
+ {
+  "city": "Sanford",
+  "state": "Florida",
+  "pop": 61051,
+  "lat": 28.789444444,
+  "lon": -81.275555555,
+  "site": "sanfordfl.gov",
+  "official": 0,
+  "osm_racks": 7,
+  "portal": [
+   "https://publicrecords.sanfordfl.gov/WebLink/Browse.aspx",
+   "https://sanfordfl.gov/wp-content/uploads/2026/04/2026PublicRecordsNoticeCOV.pdf"
+  ],
+  "email": [
+   "policerecords@sanfordfl.gov"
+  ],
+  "pages": [
+   "https://sanfordfl.gov/government/city-clerk/public-records-request/",
+   "https://sanfordfl.mycusthelpadmin.com/WEBAPP/_rs/(S(5fryragx4dpnoi2hkwbh0fk3))/supporthome.aspx",
+   "https://publicrecords.sanfordfl.gov:443/WebLink/Browse.aspx?cr=1"
+  ]
+ },
+ {
+  "city": "Jupiter",
+  "state": "Florida",
+  "pop": 61047,
+  "lat": 26.926111111,
+  "lon": -80.105,
+  "site": "jupiter.fl.us",
+  "official": 0,
+  "osm_racks": 7,
+  "portal": [
+   "https://jupiterfl.justfoia.com/publicportal/home/newrequest",
+   "https://jupiterfl.justfoia.com/publicportal"
+  ],
+  "email": [
+   "townclerk@jupiter.fl.us"
+  ],
+  "pages": [
+   "https://www.jupiter.fl.us/1198/Public-Records-Information",
+   "https://www.jupiter.fl.us/1198/Public-Records-Information",
+   "https://www.jupiter.fl.us/1675/Public-Records"
+  ]
+ },
+ {
+  "city": "Euless",
+  "state": "Texas",
+  "pop": 61032,
+  "lat": 32.848333333,
+  "lon": -97.091666666,
+  "site": "eulesstx.gov",
+  "official": 0,
+  "osm_racks": 32,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Marietta",
+  "state": "Georgia",
+  "pop": 60972,
+  "lat": 33.953333333,
+  "lon": -84.540555555,
+  "site": "mariettaga.gov",
+  "official": 0,
+  "osm_racks": 38,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Meriden",
+  "state": "Connecticut",
+  "pop": 60850,
+  "lat": 41.536666666,
+  "lon": -72.794722222,
+  "site": "cityofmeriden.org",
+  "official": 0,
+  "osm_racks": 4,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Bristol",
+  "state": "Connecticut",
+  "pop": 60833,
+  "lat": 41.681111111,
+  "lon": -72.940555555,
+  "site": "ci.bristol.ct.us",
+  "official": 0,
+  "osm_racks": 19,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Richland",
+  "state": "Washington",
+  "pop": 60560,
+  "lat": 46.280277777,
+  "lon": -119.275277777,
+  "site": "ci.richland.wa.us",
+  "official": 0,
+  "osm_racks": 20,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Clay",
+  "state": "New York",
+  "pop": 60527,
+  "lat": 43.150555555,
+  "lon": -76.194166666,
+  "site": "townofclay.org",
+  "official": 0,
+  "osm_racks": 9,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Great Falls",
+  "state": "Montana",
+  "pop": 60442,
+  "lat": 47.503611111,
+  "lon": -111.286388888,
+  "site": "greatfallsmt.net",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "North Miami",
+  "state": "Florida",
+  "pop": 60191,
+  "lat": 25.895022222,
+  "lon": -80.185747222,
+  "site": "northmiamifl.gov",
+  "official": 0,
+  "osm_racks": 45,
+  "portal": [
+   "https://northmiamifl.justfoia.com/Forms/Launch/ad7531dc-11a3-4ec9-b579-b6ba88a811bd"
+  ],
+  "email": [
+   "cityclerk@northmiamifl.gov"
+  ],
+  "pages": [
+   "https://www.northmiamifl.gov/161/Public-Records",
+   "https://www.northmiamifl.gov/QuickLinks.aspx?CID=54",
+   "https://www.northmiamifl.gov/161/Public-Records"
+  ]
+ },
+ {
+  "city": "Hamburg",
+  "state": "New York",
+  "pop": 60085,
+  "lat": 42.741111111,
+  "lon": -78.856944444,
+  "site": "townofhamburgny.gov",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Santee",
+  "state": "California",
+  "pop": 60037,
+  "lat": 32.869722222,
+  "lon": -116.971111111,
+  "site": "ci.santee.ca.us",
+  "official": 4,
+  "osm_racks": 8,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Caldwell",
+  "state": "Idaho",
+  "pop": 59996,
+  "lat": 43.658333333,
+  "lon": -116.680277777,
+  "site": "cityofcaldwell.com",
+  "official": 0,
+  "osm_racks": 21,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Dubuque",
+  "state": "Iowa",
+  "pop": 59667,
+  "lat": 42.504321,
+  "lon": -90.686865,
+  "site": "cityofdubuque.org",
+  "official": 0,
+  "osm_racks": 34,
+  "portal": [
+   "http://cityofdubuque.granicus.com/player/clip/3002"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Kokomo",
+  "state": "Indiana",
+  "pop": 59604,
+  "lat": 40.482222222,
+  "lon": -86.131666666,
+  "site": "cityofkokomo.org",
+  "official": 1,
+  "osm_racks": 5,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Queen Creek",
+  "state": "Arizona",
+  "pop": 59519,
+  "lat": 33.263055555,
+  "lon": -111.634722222,
+  "site": "queencreek.org",
+  "official": 1,
+  "osm_racks": 33,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Taunton",
+  "state": "Massachusetts",
+  "pop": 59408,
+  "lat": 41.9,
+  "lon": -71.090277777,
+  "site": "taunton-ma.gov",
+  "official": 1,
+  "osm_racks": 3,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Leander",
+  "state": "Texas",
+  "pop": 59202,
+  "lat": 30.561111111,
+  "lon": -97.860277777,
+  "site": "ci.leander.tx.us",
+  "official": 2,
+  "osm_racks": 191,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Stonecrest",
+  "state": "Georgia",
+  "pop": 59194,
+  "lat": 33.70111111,
+  "lon": -84.17194444,
+  "site": "(www.stonecrestga.gov)",
+  "official": 0,
+  "osm_racks": 5,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Palm Beach Gardens",
+  "state": "Florida",
+  "pop": 59182,
+  "lat": 26.848788888,
+  "lon": -80.167122222,
+  "site": "pbgfl.com",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [
+   "https://palmbeachgardensfl.justfoia.com/Forms/Launch/5a612c46-6e65-42fe-933b-74ccdb61bb5d",
+   "https://palmbeachgardensfl.justfoia.com/Forms/Launch/76e23194-15ff-48a2-9027-e38ef02f3aa3",
+   "https://palmbeachgardensfl.justfoia.com/Forms/Launch/c253f939-3c2e-41d4-a2ec-cbdd68deb023"
+  ],
+  "email": [
+   "firerecords@pbgfl.gov",
+   "firerecords@pbgfl.com",
+   "policerecords@pbgfl.gov"
+  ],
+  "pages": [
+   "https://www.pbgfl.gov/152/Public-Records-Requests"
+  ]
+ },
+ {
+  "city": "Casper",
+  "state": "Wyoming",
+  "pop": 59038,
+  "lat": 42.834722222,
+  "lon": -106.325,
+  "site": "casperwy.gov",
+  "official": 0,
+  "osm_racks": 5,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "St. Cloud",
+  "state": "Florida",
+  "pop": 58964,
+  "lat": 28.246666666,
+  "lon": -81.2875,
+  "site": "stcloud.org",
+  "official": 0,
+  "osm_racks": 5,
+  "portal": [
+   "https://stcloudfl.justfoia.com/publicportal/home/newrequest",
+   "https://stcloudfl.justfoia.com/publicportal"
+  ],
+  "email": [
+   "city.clerk@stcloudfl.gov"
+  ],
+  "pages": [
+   "https://www.stcloudfl.gov/2254/Public-Records-Requests",
+   "https://stcloudfl.justfoia.com/publicportal/home/newrequest"
+  ]
+ },
+ {
+  "city": "St. Clair Shores",
+  "state": "Michigan",
+  "pop": 58874,
+  "lat": 42.495555555,
+  "lon": -82.900277777,
+  "site": "scsmi.net",
+  "official": 0,
+  "osm_racks": 24,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Apex",
+  "state": "North Carolina",
+  "pop": 58780,
+  "lat": 35.73194,
+  "lon": -78.85278,
+  "site": "apexnc.org",
+  "official": 0,
+  "osm_racks": 95,
+  "portal": [
+   "https://www.cognitoforms.com/TownOfApex1/publicrecordsrequest"
+  ],
+  "email": [
+   "townclerk@apexnc.org"
+  ],
+  "pages": []
+ },
+ {
+  "city": "Blue Springs",
+  "state": "Missouri",
+  "pop": 58603,
+  "lat": 39.017777777,
+  "lon": -94.274444444,
+  "site": "bluespringsgov.com",
+  "official": 0,
+  "osm_racks": 33,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Parker",
+  "state": "Colorado",
+  "pop": 58512,
+  "lat": 39.5194,
+  "lon": -104.766,
+  "site": "parkeronline.org",
+  "official": 0,
+  "osm_racks": 226,
+  "portal": [],
+  "email": [
+   "clerk@parkerco.gov",
+   "clerk@parkeronline.org"
+  ],
+  "pages": [
+   "https://www.parkerco.gov/138/Open-Records-Request"
+  ]
+ },
+ {
+  "city": "Midwest City",
+  "state": "Oklahoma",
+  "pop": 58409,
+  "lat": 35.4495,
+  "lon": -97.396694444,
+  "site": "midwestcityok.org",
+  "official": 0,
+  "osm_racks": 13,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Terre Haute",
+  "state": "Indiana",
+  "pop": 58389,
+  "lat": 39.469586,
+  "lon": -87.389762,
+  "site": "terrehaute.in.gov",
+  "official": 0,
+  "osm_racks": 22,
+  "portal": [
+   "https://www.terrehaute.in.gov/departments/legal/foia_request_form.php#",
+   "https://www.terrehaute.in.gov/departments/legal/foia_request_form.php",
+   "https://cms2.revize.com/revize/security/index.jsp?webspace=terrehautein&filename=/departments/legal/foia_request_form.php"
+  ],
+  "email": [
+   "clerk@terrehaute.in.gov"
+  ],
+  "pages": [
+   "https://www.terrehaute.in.gov/departments/police/public_information_requests.php",
+   "https://www.terrehaute.in.gov/departments/police/community_engagement.php",
+   "https://www.terrehaute.in.gov/departments/legal/foia_request_form.php"
+  ]
+ },
+ {
+  "city": "Hanford",
+  "state": "California",
+  "pop": 57990,
+  "lat": 36.3275,
+  "lon": -119.645555555,
+  "site": "cityofhanfordca.com",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Decatur",
+  "state": "Alabama",
+  "pop": 57938,
+  "lat": 34.580992,
+  "lon": -86.983392,
+  "site": "cityofdecatural.com",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [
+   "https://cityofdecatural.nextrequest.com",
+   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+   "https://assets.nextrequest.com/manifest.json"
+  ],
+  "email": [],
+  "pages": [
+   "https://cityofdecatural.nextrequest.com"
+  ]
+ },
+ {
+  "city": "Coconut Creek",
+  "state": "Florida",
+  "pop": 57833,
+  "lat": 26.275,
+  "lon": -80.184722222,
+  "site": "coconutcreek.net",
+  "official": 0,
+  "osm_racks": 47,
+  "portal": [
+   "https://coconutcreekfl.justfoia.com/publicportal/home/newrequest",
+   "https://coconutcreek.granicus.com/player/camera/3?publish_id=6&amp;redirect=true",
+   "https://coconutcreekfl.justfoia.com/publicportal"
+  ],
+  "email": [
+   "publicrecords@coconutcreek.gov",
+   "pdrecordsrequest@coconutcreek.gov",
+   "cityclerk@coconutcreek.gov"
+  ],
+  "pages": [
+   "https://www.coconutcreek.gov/public-records",
+   "https://www.coconutcreek.gov/government/city-directory/city-clerk/public-records",
+   "https://www.coconutcreek.gov/government/city-directory/city-clerk/open-government/public-records-faq"
+  ]
+ },
+ {
+  "city": "St. Peters",
+  "state": "Missouri",
+  "pop": 57732,
+  "lat": 38.778888888,
+  "lon": -90.603055555,
+  "site": "stpetersmo.net",
+  "official": 0,
+  "osm_racks": 10,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Wylie",
+  "state": "Texas",
+  "pop": 57526,
+  "lat": 33.018611111,
+  "lon": -96.528888888,
+  "site": "ci.wylie.tx.us",
+  "official": 0,
+  "osm_racks": 5,
+  "portal": [],
+  "email": [
+   "publicinfo@wylietexas.gov",
+   "policerecords@wylietexas.gov"
+  ],
+  "pages": []
+ },
+ {
+  "city": "Lenexa",
+  "state": "Kansas",
+  "pop": 57434,
+  "lat": 38.964722222,
+  "lon": -94.759444444,
+  "site": "lenexa.com",
+  "official": 0,
+  "osm_racks": 74,
+  "portal": [
+   "https://lenexaks.justfoia.com/publicportal/home/track",
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.lenexa.com/Government/Codes-Records-Policies/Request-a-Public-Record",
+   "https://lenexaks.justfoia.com/publicportal/home/track",
+   "https://www.lenexa.com/Government/Codes-Records-Policies/Request-a-Public-Record?lang_update=639308516799704116"
+  ]
+ },
+ {
+  "city": "Burlington",
+  "state": "North Carolina",
+  "pop": 57303,
+  "lat": 36.089722222,
+  "lon": -79.445555555,
+  "site": "burlingtonnc.gov",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [
+   "http://burlingtonnc.justfoia.com/publicportal",
+   "https://burlingtonnc.justfoia.com/publicportal/home/track",
+   "https://burlingtonnc.justfoia.com/publicportal"
+  ],
+  "email": [
+   "publicrecords@burlingtonnc.gov"
+  ],
+  "pages": [
+   "https://www.burlingtonnc.gov/1653/Public-Record-Requests/publicrecords",
+   "https://www.burlingtonnc.gov/1653/Public-Record-Requests",
+   "https://burlingtonnc.justfoia.com/publicportal/home/track"
+  ]
+ },
+ {
+  "city": "Apple Valley",
+  "state": "Minnesota",
+  "pop": 56374,
+  "lat": 44.731944444,
+  "lon": -93.2175,
+  "site": "ci.apple-valley.mn.us",
+  "official": 0,
+  "osm_racks": 16,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Port Arthur",
+  "state": "Texas",
+  "pop": 56039,
+  "lat": 29.885,
+  "lon": -93.94,
+  "site": "portarthurtx.gov",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [
+   "https://portarthurtx.nextrequest.com/"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Bradenton",
+  "state": "Florida",
+  "pop": 55698,
+  "lat": 27.483333333,
+  "lon": -82.583333333,
+  "site": "cityofbradenton.com",
+  "official": 0,
+  "osm_racks": 7,
+  "portal": [
+   "https://cityofbradenton.com/publicrecords",
+   "https://cityofbradenton.govqa.us/WEBAPP/_rs/(S(ai1x55y5alfqbw020w3oynsa))/supporthome.aspx"
+  ],
+  "email": [],
+  "pages": [
+   "https://cityofbradenton.com/publicrecords",
+   "https://cityofbradenton.com/publicrecords"
+  ]
+ },
+ {
+  "city": "Smyrna",
+  "state": "Georgia",
+  "pop": 55663,
+  "lat": 33.8719,
+  "lon": -84.5183,
+  "site": "smyrnacity.com",
+  "official": 2,
+  "osm_racks": 50,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Kingsport",
+  "state": "Tennessee",
+  "pop": 55442,
+  "lat": 36.55025,
+  "lon": -82.559444444,
+  "site": "kingsporttn.gov",
+  "official": 0,
+  "osm_racks": 43,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.kingsporttn.gov/city-services/police-department/administrative_bureau/public_information_officer/"
+  ]
+ },
+ {
+  "city": "Valdosta",
+  "state": "Georgia",
+  "pop": 55378,
+  "lat": 30.846666666,
+  "lon": -83.283055555,
+  "site": "valdostacity.com",
+  "official": 0,
+  "osm_racks": 7,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.valdostacity.com/public-information/employee-links",
+   "https://www.valdostacity.com/public-information/splost-ix",
+   "https://www.valdostacity.com/public-information/splost-viii"
+  ]
+ },
+ {
+  "city": "Herriman",
+  "state": "Utah",
+  "pop": 55144,
+  "lat": 40.506666666,
+  "lon": -112.030833333,
+  "site": "herriman.gov",
+  "official": 0,
+  "osm_racks": 129,
+  "portal": [],
+  "email": [
+   "recorder@herriman.gov"
+  ],
+  "pages": [
+   "https://www.herriman.gov/government/public-records"
+  ]
+ },
+ {
+  "city": "Diamond Bar",
+  "state": "California",
+  "pop": 55072,
+  "lat": 34.001666666,
+  "lon": -117.820833333,
+  "site": "ci.diamond-bar.ca.us",
+  "official": 0,
+  "osm_racks": 39,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Apopka",
+  "state": "Florida",
+  "pop": 54873,
+  "lat": 28.676111111,
+  "lon": -81.510555555,
+  "site": "apopka.net",
+  "official": 0,
+  "osm_racks": 10,
+  "portal": [
+   "https://cityofapopkafl.nextrequest.com/",
+   "https://cityofapopkafl.nextrequest.com/requests/new",
+   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico"
+  ],
+  "email": [
+   "cityclerk@apopka.net"
+  ],
+  "pages": [
+   "https://apopka.gov/191/Public-Records",
+   "https://cityofapopkafl.nextrequest.com/",
+   "https://apopka.gov/191/Public-Records"
+  ]
+ },
+ {
+  "city": "Sarasota",
+  "state": "Florida",
+  "pop": 54842,
+  "lat": 27.337222222,
+  "lon": -82.535277777,
+  "site": "sarasotagov.org",
+  "official": 0,
+  "osm_racks": 30,
+  "portal": [
+   "https://granicus.com/product/opencities",
+   "https://gxa.granicus.com/chatbot/app/36caa3ec-69a3-3560-8ff0-a3dc8d2ba398",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Anderson",
+  "state": "Indiana",
+  "pop": 54788,
+  "lat": 40.1,
+  "lon": -85.68139,
+  "site": "cityofanderson.com",
+  "official": 1,
+  "osm_racks": 8,
+  "portal": [],
+  "email": [
+   "publicinformationrequest@cityofanderson.com"
+  ],
+  "pages": []
+ },
+ {
+  "city": "Southaven",
+  "state": "Mississippi",
+  "pop": 54648,
+  "lat": 34.987388888,
+  "lon": -90.0035,
+  "site": "southaven.org",
+  "official": 3,
+  "osm_racks": 2,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Coeur d'Alene",
+  "state": "Idaho",
+  "pop": 54628,
+  "lat": 47.692777777,
+  "lon": -116.78,
+  "site": "cdaid.org",
+  "official": 0,
+  "osm_racks": 17,
+  "portal": [
+   "https://cdaid.justfoia.com/publicportal/home/newrequest",
+   "https://cdaid.justfoia.com/publicportal"
+  ],
+  "email": [],
+  "pages": [
+   "https://cdaid.justfoia.com/publicportal/home/newrequest"
+  ]
+ },
+ {
+  "city": "Yucaipa",
+  "state": "California",
+  "pop": 54542,
+  "lat": 34.030277777,
+  "lon": -117.048611111,
+  "site": "yucaipa.org",
+  "official": 0,
+  "osm_racks": 0,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Rocky Mount",
+  "state": "North Carolina",
+  "pop": 54341,
+  "lat": 35.954112,
+  "lon": -77.805572,
+  "site": "rockymountnc.gov",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Pensacola",
+  "state": "Florida",
+  "pop": 54312,
+  "lat": 30.421388888,
+  "lon": -87.217222222,
+  "site": "cityofpensacola.com",
+  "official": 0,
+  "osm_racks": 13,
+  "portal": [
+   "https://cityofpensacola.justfoia.com/publicportal/home/newrequest",
+   "https://cityofpensacola.justfoia.com/publicportal"
+  ],
+  "email": [
+   "publicrecords@cityofpensacola.com"
+  ],
+  "pages": [
+   "https://www.cityofpensacola.com/339/Public-Records-Request",
+   "https://cityofpensacola.justfoia.com/publicportal/home/newrequest"
+  ]
+ },
+ {
+  "city": "Kentwood",
+  "state": "Michigan",
+  "pop": 54304,
+  "lat": 42.8667,
+  "lon": -85.6333,
+  "site": "ci.kentwood.mi.us",
+  "official": 2,
+  "osm_racks": 29,
+  "portal": [
+   "https://www.kentwood.us/city_services/city_departments/police/general_information/freedom_of_information_act_(foia).php",
+   "https://cms6.revize.com/revize/security/index.jsp?webspace=kentwoodmi&filename=/city_services/city_departments/police/general_information/freedom_of_information_act_(foia).php",
+   "https://www.facebook.com/sharer/sharer.php?u=http://www.kentwood.us/city_services/city_departments/police/general_information/freedom_of_information_act_(foia).php"
+  ],
+  "email": [
+   "eclerk@kentwood.us"
+  ],
+  "pages": [
+   "https://www.kentwood.us/city_services/city_departments/police/general_information/freedom_of_information_act_(foia).php"
+  ]
+ },
+ {
+  "city": "Hacienda Heights",
+  "state": "California",
+  "pop": 54191,
+  "lat": 34.000555555,
+  "lon": -117.969444444,
+  "site": "",
+  "official": 0,
+  "osm_racks": 9
+ },
+ {
+  "city": "Bentonville",
+  "state": "Arkansas",
+  "pop": 54164,
+  "lat": 36.366666666,
+  "lon": -94.213333333,
+  "site": "bentonvillear.com",
+  "official": 0,
+  "osm_racks": 187,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Manhattan",
+  "state": "Kansas",
+  "pop": 54100,
+  "lat": 39.19,
+  "lon": -96.58667,
+  "site": "cityofmhk.com",
+  "official": 0,
+  "osm_racks": 374,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Elkhart",
+  "state": "Indiana",
+  "pop": 53923,
+  "lat": 41.6831,
+  "lon": -85.9689,
+  "site": "elkhartindiana.org",
+  "official": 0,
+  "osm_racks": 10,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Colton",
+  "state": "California",
+  "pop": 53909,
+  "lat": 34.073888888,
+  "lon": -117.313611111,
+  "site": "ci.colton.ca.us",
+  "official": 0,
+  "osm_racks": 28,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "San Jacinto",
+  "state": "California",
+  "pop": 53898,
+  "lat": 33.787222222,
+  "lon": -116.966666666,
+  "site": "sanjacintoca.gov",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://sanjacintoca.hosted.civiclive.com/city_departments/city-clerk/public-records-request",
+   "https://sanjacintoca.hosted.civiclive.com/city_departments/city-clerk/open-government",
+   "https://www.sanjacintoca.gov/city_departments/city-clerk/public-records-request"
+  ]
+ },
+ {
+  "city": "Minnetonka",
+  "state": "Minnesota",
+  "pop": 53781,
+  "lat": 44.913333333,
+  "lon": -93.503333333,
+  "site": "eminnetonka.com",
+  "official": 3,
+  "osm_racks": 45,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Casa Grande",
+  "state": "Arizona",
+  "pop": 53658,
+  "lat": 32.885833333,
+  "lon": -111.743888888,
+  "site": "casagrandeaz.gov",
+  "official": 0,
+  "osm_racks": 4,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Bonita Springs",
+  "state": "Florida",
+  "pop": 53644,
+  "lat": 26.349722222,
+  "lon": -81.790833333,
+  "site": "cityofbonitasprings.org",
+  "official": 0,
+  "osm_racks": 6,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.cityofbonitasprings.org/cms/one.aspx?pageId=13788450",
+   "https://www.cityofbonitasprings.org/services___departments/city_clerk/sunshine_amendment_and_code_of_ethics",
+   "https://www.cityofbonitasprings.org/services___departments/city_clerk/public_record_request"
+  ]
+ },
+ {
+  "city": "Grand Island",
+  "state": "Nebraska",
+  "pop": 53131,
+  "lat": 40.924277777,
+  "lon": -98.338694444,
+  "site": "grand-island.com",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [
+   "https://grand-island.granicus.com/ViewPublisher.php?view_id=2\\",
+   "https://grand-island.granicus.com/ViewPublisher.php?view_id=2",
+   "https://grand-island.granicus.com/ViewPublisher.php?view_id=6\\"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.grand-island.com/page/public-records-request",
+   "https://www.grand-island.com/forms/public-records-request-information",
+   "https://www.grand-island.com/o/cgi/page/public-records-request"
+  ]
+ },
+ {
+  "city": "Kannapolis",
+  "state": "North Carolina",
+  "pop": 53114,
+  "lat": 35.490589,
+  "lon": -80.618353,
+  "site": "ci.kannapolis.nc.us",
+  "official": 0,
+  "osm_racks": 6,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Pinellas Park",
+  "state": "Florida",
+  "pop": 53093,
+  "lat": 27.852222222,
+  "lon": -82.707222222,
+  "site": "pinellas-park.com",
+  "official": 0,
+  "osm_racks": 29,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Smyrna",
+  "state": "Tennessee",
+  "pop": 53070,
+  "lat": 35.982472222,
+  "lon": -86.519944444,
+  "site": "townofsmyrna.org",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [
+   "https://townofsmyrnatn.nextrequest.com",
+   "https://townofsmyrnatn.nextrequest.com/",
+   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico"
+  ],
+  "email": [],
+  "pages": [
+   "https://townofsmyrnatn.nextrequest.com/",
+   "https://townofsmyrnatn.nextrequest.com"
+  ]
+ },
+ {
+  "city": "Battle Creek",
+  "state": "Michigan",
+  "pop": 52721,
+  "lat": 42.312222222,
+  "lon": -85.204166666,
+  "site": "battlecreekmi.gov",
+  "official": 1,
+  "osm_racks": 31,
+  "portal": [
+   "https://www.battlecreekmi.gov/953/FOIA-Request",
+   "https://cityofbattlecreekmi.nextrequest.com/",
+   "https://cityofbattlecreekmi.nextrequest.com/faqs"
+  ],
+  "email": [],
+  "pages": [
+   "https://cityofbattlecreekmi.nextrequest.com/",
+   "https://www.battlecreekmi.gov/953/Public-Record-Request-FOIA",
+   "https://cityofbattlecreekmi.nextrequest.com/faqs"
+  ]
+ },
+ {
+  "city": "Florissant",
+  "state": "Missouri",
+  "pop": 52533,
+  "lat": 38.797777777,
+  "lon": -90.325555555,
+  "site": "florissantmo.com",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [
+   "https://cityofflorissant-mo.nextrequest.com/"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Stratford",
+  "state": "Connecticut",
+  "pop": 52355,
+  "lat": 41.18454,
+  "lon": -73.13317,
+  "site": "stratfordct.gov",
+  "official": 1,
+  "osm_racks": 9,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.stratfordct.gov/page/freedom-of-information-request-form"
+  ]
+ },
+ {
+  "city": "Marana",
+  "state": "Arizona",
+  "pop": 51908,
+  "lat": 32.436666666,
+  "lon": -111.225277777,
+  "site": "marana.com",
+  "official": 0,
+  "osm_racks": 0,
+  "portal": [
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [
+   "mpdrecords@maranaaz.gov"
+  ],
+  "pages": [
+   "https://www.maranaaz.gov/Departments/Town-Clerk/Public-Records",
+   "https://marana.seamlessdocs.com/ng/fa/recordsrequest",
+   "https://www.maranaaz.gov/Departments/Town-Clerk/Public-Records?lang_update=639308481121833270"
+  ]
+ },
+ {
+  "city": "Placentia",
+  "state": "California",
+  "pop": 51824,
+  "lat": 33.8825,
+  "lon": -117.855,
+  "site": "placentia.org",
+  "official": 1,
+  "osm_racks": 65,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Twin Falls",
+  "state": "Idaho",
+  "pop": 51807,
+  "lat": 42.578055555,
+  "lon": -114.475,
+  "site": "tfid.org",
+  "official": 2,
+  "osm_racks": 3,
+  "portal": [
+   "https://forms.tfid.org/Forms/PublicRecords"
+  ],
+  "email": [],
+  "pages": [
+   "https://forms.tfid.org/Forms/PublicRecords"
+  ]
+ },
+ {
+  "city": "Joplin",
+  "state": "Missouri",
+  "pop": 51762,
+  "lat": 37.0842,
+  "lon": -94.5131,
+  "site": "joplinmo.org",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.joplinmo.gov/government/departments/city-clerks-office/submit-open-records-request",
+   "https://www.joplinmo.gov/roads-transportation/public-transit/sunshine-lamp-trolley",
+   "https://www.joplinmo.gov/media/file/archive/202501-para-transit-guide-sunshine-trolley"
+  ]
+ },
+ {
+  "city": "Delano",
+  "state": "California",
+  "pop": 51428,
+  "lat": 35.768888888,
+  "lon": -119.246944444,
+  "site": "cityofdelano.org",
+  "official": 0,
+  "osm_racks": 0,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Collierville",
+  "state": "Tennessee",
+  "pop": 51324,
+  "lat": 35.054366666,
+  "lon": -89.682305555,
+  "site": "collierville.com",
+  "official": 2,
+  "osm_racks": 4,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Enid",
+  "state": "Oklahoma",
+  "pop": 51308,
+  "lat": 36.39675,
+  "lon": -97.879138888,
+  "site": "enid.org",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [
+   "cityclerk@enid.org"
+  ],
+  "pages": [
+   "https://www.enid.org/I-Want-To/Request-a-an/Request-Open-Record",
+   "https://www.enid.org/I-Want-To/Request-a-an/Request-Open-Record?lang_update=639308517126515279"
+  ]
+ },
+ {
+  "city": "Palm Desert",
+  "state": "California",
+  "pop": 51163,
+  "lat": 33.725555555,
+  "lon": -116.369444444,
+  "site": "palmdesert.gov",
+  "official": 0,
+  "osm_racks": 6,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Mishawaka",
+  "state": "Indiana",
+  "pop": 51063,
+  "lat": 41.6675,
+  "lon": -86.171388888,
+  "site": "mishawaka.in.gov",
+  "official": 0,
+  "osm_racks": 24,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Summerville",
+  "state": "South Carolina",
+  "pop": 50915,
+  "lat": 33.0185,
+  "lon": -80.17565,
+  "site": "summerville.sc.us",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Grapevine",
+  "state": "Texas",
+  "pop": 50631,
+  "lat": 32.935,
+  "lon": -97.0858,
+  "site": "grapevinetexas.gov",
+  "official": 0,
+  "osm_racks": 27,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Milford",
+  "state": "Connecticut",
+  "pop": 50558,
+  "lat": 41.224166666,
+  "lon": -73.059722222,
+  "site": "milfordct.us",
+  "official": 4,
+  "osm_racks": 16,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Mooresville",
+  "state": "North Carolina",
+  "pop": 50193,
+  "lat": 35.584444444,
+  "lon": -80.820277777,
+  "site": "ci.mooresville.nc.us",
+  "official": 0,
+  "osm_racks": 8,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Spring Hill",
+  "state": "Tennessee",
+  "pop": 50005,
+  "lat": 35.7525,
+  "lon": -86.913888888,
+  "site": "springhilltn.org",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Chesterfield",
+  "state": "Missouri",
+  "pop": 49999,
+  "lat": 38.653333333,
+  "lon": -90.554166666,
+  "site": "chesterfield.mo.us",
+  "official": 0,
+  "osm_racks": 29,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.chesterfield.mo.us/request-for-public-records"
+  ]
+ },
+ {
+  "city": "Newark",
+  "state": "Ohio",
+  "pop": 49934,
+  "lat": 40.063014,
+  "lon": -82.416779,
+  "site": "ci.newark.oh.us",
+  "official": 0,
+  "osm_racks": 46,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Bedford",
+  "state": "Texas",
+  "pop": 49928,
+  "lat": 32.8467,
+  "lon": -97.1397,
+  "site": "bedfordtx.gov",
+  "official": 0,
+  "osm_racks": 40,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Lincoln",
+  "state": "California",
+  "pop": 49757,
+  "lat": 38.887222222,
+  "lon": -121.296111111,
+  "site": "ci.lincoln.ca.us",
+  "official": 0,
+  "osm_racks": 42,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Euclid",
+  "state": "Ohio",
+  "pop": 49692,
+  "lat": 41.595555555,
+  "lon": -81.519166666,
+  "site": "ci.euclid.oh.us",
+  "official": 4,
+  "osm_racks": 32,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Rye",
+  "state": "New York",
+  "pop": 49613,
+  "lat": 41.0178,
+  "lon": -73.675,
+  "site": "",
+  "official": 0,
+  "osm_racks": 16
+ },
+ {
+  "city": "Ceres",
+  "state": "California",
+  "pop": 49302,
+  "lat": 37.601388888,
+  "lon": -120.957222222,
+  "site": "ci.ceres.ca.us",
+  "official": 0,
+  "osm_racks": 11,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Winter Haven",
+  "state": "Florida",
+  "pop": 49219,
+  "lat": 28.033333333,
+  "lon": -81.716666666,
+  "site": "mywinterhaven.com",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [
+   "https://winterhavenfl.justfoia.com/publicportal/home/newrequest",
+   "https://winterhaven-fl.granicus.com/ViewPublisher.php?view_id=1"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.mywinterhaven.com/190/Public-Records"
+  ]
+ },
+ {
+  "city": "Portage",
+  "state": "Michigan",
+  "pop": 48891,
+  "lat": 42.201111111,
+  "lon": -85.58,
+  "site": "portagemi.com",
+  "official": 0,
+  "osm_racks": 11,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.portagemi.com/public-records",
+   "https://www.portagemi.com/publicrecords",
+   "https://www.portagemi.com/open-records"
+  ]
+ },
+ {
+  "city": "Poway",
+  "state": "California",
+  "pop": 48841,
+  "lat": 32.962777777,
+  "lon": -117.035833333,
+  "site": "poway.org",
+  "official": 4,
+  "osm_racks": 42,
+  "portal": [
+   "https://cityofpowayca.nextrequest.com/",
+   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+   "https://assets.nextrequest.com/manifest.json"
+  ],
+  "email": [],
+  "pages": [
+   "https://poway.org/QuickLinks.aspx?CID=90",
+   "https://poway.org/145/Public-Records-Request",
+   "https://cityofpowayca.nextrequest.com/"
+  ]
+ },
+ {
+  "city": "Titusville",
+  "state": "Florida",
+  "pop": 48789,
+  "lat": 28.591111111,
+  "lon": -80.82,
+  "site": "titusville.com",
+  "official": 0,
+  "osm_racks": 7,
+  "portal": [
+   "https://titusville.justfoia.com/publicportal/home/newrequest",
+   "https://titusville.justfoia.com/publicportal"
+  ],
+  "email": [
+   "cityrecords@titusville.com"
+  ],
+  "pages": [
+   "https://titusville.justfoia.com/publicportal/home/newrequest",
+   "https://www.titusville.com/164/Public-Records-Requests"
+  ]
+ },
+ {
+  "city": "Hattiesburg",
+  "state": "Mississippi",
+  "pop": 48730,
+  "lat": 31.3158,
+  "lon": -89.3086,
+  "site": "hattiesburgms.com",
+  "official": 0,
+  "osm_racks": 5,
+  "portal": [
+   "https://www.hattiesburgms.com/wp-content/uploads/PublicRecordsRequest.pdf"
+  ],
+  "email": [
+   "publicrecords@hattiesburgms.com",
+   "records1@hattiesburgms.com",
+   "fdpublicrecords@hattiesburgms.com"
+  ],
+  "pages": [
+   "https://www.hattiesburgms.com/public-records-request/",
+   "https://www.hattiesburgms.com/hfd/hfd-records/",
+   "https://www.hattiesburgms.com/hpd/hpd-records/"
+  ]
+ },
+ {
+  "city": "Orangetown",
+  "state": "New York",
+  "pop": 48655,
+  "lat": 41.058611111,
+  "lon": -73.961666666,
+  "site": "orangetown.com",
+  "official": 2,
+  "osm_racks": 36,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.orangetown.com/foil/"
+  ]
+ },
+ {
+  "city": "Minot",
+  "state": "North Dakota",
+  "pop": 48377,
+  "lat": 48.2325,
+  "lon": -101.296277777,
+  "site": "minotnd.gov",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "La Mirada",
+  "state": "California",
+  "pop": 48008,
+  "lat": 33.902222222,
+  "lon": -118.009722222,
+  "site": "cityoflamirada.org",
+  "official": 1,
+  "osm_racks": 48,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Rancho Santa Margarita",
+  "state": "California",
+  "pop": 47949,
+  "lat": 33.641388888,
+  "lon": -117.594444444,
+  "site": "cityofrsm.org",
+  "official": 0,
+  "osm_racks": 16,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Middletown",
+  "state": "Connecticut",
+  "pop": 47717,
+  "lat": 41.562222222,
+  "lon": -72.651111111,
+  "site": "cityofmiddletown.com",
+  "official": 0,
+  "osm_racks": 16,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Roseville",
+  "state": "Michigan",
+  "pop": 47710,
+  "lat": 42.497222222,
+  "lon": -82.937222222,
+  "site": "roseville-mi.gov",
+  "official": 1,
+  "osm_racks": 50,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Monroe",
+  "state": "Louisiana",
+  "pop": 47702,
+  "lat": 32.5094,
+  "lon": -92.1183,
+  "site": "monroela.us",
+  "official": 0,
+  "osm_racks": 13,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Burleson",
+  "state": "Texas",
+  "pop": 47641,
+  "lat": 32.5358,
+  "lon": -97.3272,
+  "site": "burlesontx.com",
+  "official": 0,
+  "osm_racks": 9,
+  "portal": [
+   "https://burlesontx.govqa.us/WEBAPP/_rs/supporthome.aspx"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.burlesontx.com/83/Open-Government-Transparency",
+   "https://www.burlesontx.com/1550/Public-InformationOpen-Records"
+  ]
+ },
+ {
+  "city": "Perinton",
+  "state": "New York",
+  "pop": 47479,
+  "lat": 43.083333333,
+  "lon": -77.433333333,
+  "site": "perinton.gov",
+  "official": 0,
+  "osm_racks": 26,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Mentor",
+  "state": "Ohio",
+  "pop": 47450,
+  "lat": 41.691111111,
+  "lon": -81.341944444,
+  "site": "cityofmentor.com",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Cleveland",
+  "state": "Tennessee",
+  "pop": 47356,
+  "lat": 35.1714,
+  "lon": -84.8711,
+  "site": "cityofclevelandtn.com",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Brea",
+  "state": "California",
+  "pop": 47325,
+  "lat": 33.923333333,
+  "lon": -117.888888888,
+  "site": "ci.brea.ca.us",
+  "official": 1,
+  "osm_racks": 54,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Fort Pierce",
+  "state": "Florida",
+  "pop": 47297,
+  "lat": 27.438888888,
+  "lon": -80.335555555,
+  "site": "cityoffortpierce.com",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Ocoee",
+  "state": "Florida",
+  "pop": 47295,
+  "lat": 28.574166666,
+  "lon": -81.530555555,
+  "site": "ocoee.org",
+  "official": 3,
+  "osm_racks": 14,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Rockwall",
+  "state": "Texas",
+  "pop": 47251,
+  "lat": 32.92,
+  "lon": -96.459722222,
+  "site": "rockwall.com",
+  "official": 0,
+  "osm_racks": 8,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Oro Valley",
+  "state": "Arizona",
+  "pop": 47070,
+  "lat": 32.39091,
+  "lon": -110.96649,
+  "site": "orovalleyaz.gov",
+  "official": 0,
+  "osm_racks": 13,
+  "portal": [
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Winter Garden",
+  "state": "Florida",
+  "pop": 46964,
+  "lat": 28.560277777,
+  "lon": -81.584166666,
+  "site": "cwgdn.com",
+  "official": 3,
+  "osm_racks": 11,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Salina",
+  "state": "Kansas",
+  "pop": 46889,
+  "lat": 38.8242,
+  "lon": -97.6072,
+  "site": "salina-ks.gov",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [
+   "https://cityofsalinaks.nextrequest.com/"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Huntington",
+  "state": "West Virginia",
+  "pop": 46842,
+  "lat": 38.420833333,
+  "lon": -82.423611111,
+  "site": "cityofhuntington.com",
+  "official": 0,
+  "osm_racks": 52,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Prescott Valley",
+  "state": "Arizona",
+  "pop": 46785,
+  "lat": 34.602222222,
+  "lon": -112.321944444,
+  "site": "pvaz.net",
+  "official": 0,
+  "osm_racks": 21,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Farmington",
+  "state": "New Mexico",
+  "pop": 46624,
+  "lat": 36.729111111,
+  "lon": -108.205444444,
+  "site": "fmtn.org",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Little Elm",
+  "state": "Texas",
+  "pop": 46453,
+  "lat": 33.1639,
+  "lon": -96.9303,
+  "site": "littleelm.org",
+  "official": 3,
+  "osm_racks": 3,
+  "portal": [
+   "https://littleelm.justfoia.com/publicportal/home/track",
+   "https://littleelm.justfoia.com/publicportal"
+  ],
+  "email": [],
+  "pages": [
+   "https://littleelm.justfoia.com/publicportal/home/track"
+  ]
+ },
+ {
+  "city": "Altamonte Springs",
+  "state": "Florida",
+  "pop": 46231,
+  "lat": 28.661388888,
+  "lon": -81.391944444,
+  "site": "altamonte.org",
+  "official": 2,
+  "osm_racks": 26,
+  "portal": [],
+  "email": [
+   "cityclerk@altamonte.org"
+  ],
+  "pages": [
+   "https://www.altamonte.org/401/Public-Records-Requests",
+   "https://www.altamonte.org/401/Public-Records-Requests"
+  ]
+ },
+ {
+  "city": "Goose Creek",
+  "state": "South Carolina",
+  "pop": 45946,
+  "lat": 32.995555555,
+  "lon": -80.028888888,
+  "site": "cityofgoosecreek.com",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Huntsville",
+  "state": "Texas",
+  "pop": 45941,
+  "lat": 30.723327777,
+  "lon": -95.550955555,
+  "site": "huntsvilletx.gov",
+  "official": 0,
+  "osm_racks": 7,
+  "portal": [
+   "https://huntsvilletx.justfoia.com/publicportal",
+   "https://huntsvilletx.justfoia.com/publicportal/home/newrequest"
+  ],
+  "email": [
+   "publicinformationrequest@huntsvilletx.gov",
+   "pdpublicinformationrequest@huntsvilletx.gov"
+  ],
+  "pages": [
+   "https://www.huntsvilletx.gov/403/Public-Information-Requests",
+   "https://huntsvilletx.justfoia.com/publicportal"
+  ]
+ },
+ {
+  "city": "Prescott",
+  "state": "Arizona",
+  "pop": 45827,
+  "lat": 34.5400242,
+  "lon": -112.4685025,
+  "site": "prescott-az.gov",
+  "official": 0,
+  "osm_racks": 9,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Keller",
+  "state": "Texas",
+  "pop": 45776,
+  "lat": 32.9275,
+  "lon": -97.2361,
+  "site": "cityofkeller.com",
+  "official": 0,
+  "osm_racks": 27,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Bountiful",
+  "state": "Utah",
+  "pop": 45762,
+  "lat": 40.879722222,
+  "lon": -111.871666666,
+  "site": "bountifulutah.gov",
+  "official": 1,
+  "osm_racks": 13,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Kyle",
+  "state": "Texas",
+  "pop": 45697,
+  "lat": 29.9892,
+  "lon": -97.8758,
+  "site": "",
+  "official": 2,
+  "osm_racks": 6
+ },
+ {
+  "city": "Littleton",
+  "state": "Colorado",
+  "pop": 45652,
+  "lat": 39.613321,
+  "lon": -105.0166498,
+  "site": "littletonco.gov",
+  "official": 4,
+  "osm_racks": 233,
+  "portal": [
+   "https://granicus.com/product/opencities",
+   "https://granicus.com/solution/govaccess/opencities/"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Cutler Bay",
+  "state": "Florida",
+  "pop": 45425,
+  "lat": 25.5783,
+  "lon": -80.3377,
+  "site": "cutlerbay-fl.gov",
+  "official": 0,
+  "osm_racks": 19,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Brentwood",
+  "state": "Tennessee",
+  "pop": 45373,
+  "lat": 35.998194,
+  "lon": -86.792619,
+  "site": "brentwood-tn.org",
+  "official": 2,
+  "osm_racks": 18,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Riverton",
+  "state": "Utah",
+  "pop": 45285,
+  "lat": 40.520555555,
+  "lon": -111.955277777,
+  "site": "rivertoncity.com",
+  "official": 1,
+  "osm_racks": 171,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Alexandria",
+  "state": "Louisiana",
+  "pop": 45275,
+  "lat": 31.31125,
+  "lon": -92.445194444,
+  "site": "cityofalexandriala.com",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.cityofalexandriala.com/government/public-records-requests/",
+   "https://www.cityofalexandriala.com/government/public-records-requests/",
+   "https://www.cityofalexandriala.com/government/public-records-requests/"
+  ]
+ },
+ {
+  "city": "Lancaster",
+  "state": "New York",
+  "pop": 45106,
+  "lat": 42.906111111,
+  "lon": -78.633888888,
+  "site": "lancasterny.gov",
+  "official": 0,
+  "osm_racks": 6,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.lancasterny.gov/residents/alerts-notices/68-notice-school-tax-payment-deadline.html"
+  ]
+ },
+ {
+  "city": "Blacksburg",
+  "state": "Virginia",
+  "pop": 44826,
+  "lat": 37.23,
+  "lon": -80.4178,
+  "site": "blacksburg.gov",
+  "official": 1,
+  "osm_racks": 236,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Fond du Lac",
+  "state": "Wisconsin",
+  "pop": 44678,
+  "lat": 43.775138888,
+  "lon": -88.444905555,
+  "site": "fdl.wi.gov",
+  "official": 0,
+  "osm_racks": 6,
+  "portal": [
+   "https://fonddulacwi.justfoia.com/publicportal/home/newrequest",
+   "https://fonddulac.granicus.com/ViewPublisher.php?view_id=1",
+   "https://fonddulacwi.justfoia.com/publicportal"
+  ],
+  "email": [],
+  "pages": [
+   "https://fonddulacwi.justfoia.com/publicportal/home/newrequest"
+  ]
+ },
+ {
+  "city": "Mankato",
+  "state": "Minnesota",
+  "pop": 44488,
+  "lat": 44.167666666,
+  "lon": -94.0034,
+  "site": "ci.mankato.mn.us",
+  "official": 0,
+  "osm_racks": 2,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Lompoc",
+  "state": "California",
+  "pop": 44444,
+  "lat": 34.646111111,
+  "lon": -120.460277777,
+  "site": "cityoflompoc.com",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Mount Pleasant",
+  "state": "New York",
+  "pop": 44436,
+  "lat": 41.1,
+  "lon": -73.8,
+  "site": "mtpleasantny.com",
+  "official": 1,
+  "osm_racks": 39,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Gallatin",
+  "state": "Tennessee",
+  "pop": 44431,
+  "lat": 36.381388888,
+  "lon": -86.451388888,
+  "site": "gallatin-tn.gov",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Wallingford",
+  "state": "Connecticut",
+  "pop": 44396,
+  "lat": 41.45704,
+  "lon": -72.82316,
+  "site": "town.wallingford.ct.us",
+  "official": 0,
+  "osm_racks": 6,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Wentzville",
+  "state": "Missouri",
+  "pop": 44372,
+  "lat": 38.816111111,
+  "lon": -90.857222222,
+  "site": "wentzvillemo.org",
+  "official": 0,
+  "osm_racks": 0,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "El Centro",
+  "state": "California",
+  "pop": 44322,
+  "lat": 32.792,
+  "lon": -115.5630514,
+  "site": "cityofelcentro.org",
+  "official": 0,
+  "osm_racks": 4,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Oakland Park",
+  "state": "Florida",
+  "pop": 44229,
+  "lat": 26.176388888,
+  "lon": -80.144444444,
+  "site": "oaklandparkfl.org",
+  "official": 3,
+  "osm_racks": 70,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Concord",
+  "state": "New Hampshire",
+  "pop": 43976,
+  "lat": 43.206666666,
+  "lon": -71.538055555,
+  "site": "concordnh.gov",
+  "official": 0,
+  "osm_racks": 40,
+  "portal": [],
+  "email": [
+   "records@concordpolice.com",
+   "cityclerk@concordnh.gov"
+  ],
+  "pages": []
+ },
+ {
+  "city": "Pittsfield",
+  "state": "Massachusetts",
+  "pop": 43927,
+  "lat": 42.45,
+  "lon": -73.25,
+  "site": "pittsfield-ma.org",
+  "official": 0,
+  "osm_racks": 4,
+  "portal": [
+   "https://pittsfield-ma.org/publicrecords",
+   "https://pittsfield-ma.org/foia",
+   "https://l.cdn-fileserver.com/bping.php?vgd_cage=1&vgd_oreqf=one&vgd_oresf=one&cid=8CUHL418T&vi=1795276566937579670&hvsid=00001795276566062001663321602147&lf=6&lper=100&wsip=170763013&wshp=0&vgd_wlstp=0&crid=126431565&vgd_bid=461742&vgd_rpth=%2Fola&gdpr=0&r=1795276566063&vgd_tsce=L1420&vgd_l2type=dmola&cc=US&sc=IA&ssld=%7B%22QQNN%22%3A%22Pb%22%2C%22QQN75%22%3A%22OJQnYm8zJQ%22%2C%22QQ8E%22%3A%22%22%2C%22QQQN%22%3A%22VK%22%2C%22QQl8E%22%3A%22%22%7D&vgd_cdv=O4028&vgd_setup=c21&prid=8PR11258V&ugd=6&requrl=https%3A%2F%2Fpittsfield-ma.org%2Fpublicrecords&vgd_asn=8075&mspa=1&vgd_len=593&vgd_end=1"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.pittsfield-ma.org/public-records",
+   "https://www.pittsfield-ma.org/publicrecords",
+   "https://www.pittsfield-ma.org/open-records"
+  ]
+ },
+ {
+  "city": "Leominster",
+  "state": "Massachusetts",
+  "pop": 43782,
+  "lat": 42.525,
+  "lon": -71.760277777,
+  "site": "leominster-ma.gov",
+  "official": 0,
+  "osm_racks": 9,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Shakopee",
+  "state": "Minnesota",
+  "pop": 43698,
+  "lat": 44.798055555,
+  "lon": -93.526944444,
+  "site": "ci.shakopee.mn.us",
+  "official": 1,
+  "osm_racks": 17,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "North Miami Beach",
+  "state": "Florida",
+  "pop": 43676,
+  "lat": 25.930277777,
+  "lon": -80.169722222,
+  "site": "citynmb.com",
+  "official": 0,
+  "osm_racks": 45,
+  "portal": [
+   "https://northmiamibeachfl.justfoia.com/publicportal"
+  ],
+  "email": [],
+  "pages": [
+   "https://northmiamibeachfl.justfoia.com/publicportal/publicrecords"
+  ]
+ },
+ {
+  "city": "Sherman",
+  "state": "Texas",
+  "pop": 43645,
+  "lat": 33.6411,
+  "lon": -96.61,
+  "site": "ci.sherman.tx.us",
+  "official": 0,
+  "osm_racks": 9,
+  "portal": [
+   "https://shermantx.govqa.us/WEBAPP/_rs/(S(4r2vryf2jxrec2eptzokllrq))/OpenRecordsSummary.aspx",
+   "https://shermantx.govqa.us/WEBAPP/_rs/(S(pykpqlg2kr4n04t1ijryhtsu))/supporthome.aspx",
+   "https://shermantx.govqa.us/WEBAPP/_rs/(S(4r2vryf2jxrec2eptzokllrq))/AnswerDetail.aspx?sSessionID=&amp;aid=148"
+  ],
+  "email": [
+   "cityclerk@cityofsherman.com"
+  ],
+  "pages": [
+   "https://shermantx.govqa.us/WEBAPP/_rs/(S(4r2vryf2jxrec2eptzokllrq))/supporthome.aspx",
+   "https://shermantx.govqa.us/WEBAPP/_rs/(S(4r2vryf2jxrec2eptzokllrq))/OpenRecordsSummary.aspx",
+   "https://shermantx.govqa.us/WEBAPP/_rs/(S(4r2vryf2jxrec2eptzokllrq))/error.aspx?sSessionID=&err_msg=Issue+Not+Found."
+  ]
+ },
+ {
+  "city": "Eagle Mountain",
+  "state": "Utah",
+  "pop": 43623,
+  "lat": 40.306111111,
+  "lon": -112.009722222,
+  "site": "eaglemountaincity.com",
+  "official": 0,
+  "osm_racks": 5,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Hagerstown",
+  "state": "Maryland",
+  "pop": 43527,
+  "lat": 39.642777777,
+  "lon": -77.72,
+  "site": "hagerstownmd.org",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Bremerton",
+  "state": "Washington",
+  "pop": 43505,
+  "lat": 47.565361111,
+  "lon": -122.624694444,
+  "site": "bremertonwa.gov",
+  "official": 0,
+  "osm_racks": 54,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Southington",
+  "state": "Connecticut",
+  "pop": 43501,
+  "lat": 41.605,
+  "lon": -72.879166666,
+  "site": "southington.org",
+  "official": 0,
+  "osm_racks": 16,
+  "portal": [
+   "https://www.southingtonct.gov/government/foia_requests.php",
+   "https://cms9.revize.com/revize/security/index.jsp?webspace=southingtonct25&filename=/government/foia_requests.php",
+   "https://www.linkedin.com/sharing/share-offsite/?url=http://www.southingtonct.gov/government/foia_requests.php"
+  ],
+  "email": [
+   "foiarequests@southingtonct.gov",
+   "recordsrequests@southingtonpolice.org"
+  ],
+  "pages": [
+   "https://www.southingtonct.gov/government/foia_requests.php"
+  ]
+ },
+ {
+  "city": "Sumter",
+  "state": "South Carolina",
+  "pop": 43463,
+  "lat": 33.920555555,
+  "lon": -80.344722222,
+  "site": "sumter-sc.com",
+  "official": 0,
+  "osm_racks": 0,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Huber Heights",
+  "state": "Ohio",
+  "pop": 43439,
+  "lat": 39.850833333,
+  "lon": -84.1275,
+  "site": "hhoh.org",
+  "official": 2,
+  "osm_racks": 9,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Woonsocket",
+  "state": "Rhode Island",
+  "pop": 43240,
+  "lat": 42.008333333,
+  "lon": -71.516111111,
+  "site": "woonsocketri.org",
+  "official": 1,
+  "osm_racks": 0,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Jefferson City",
+  "state": "Missouri",
+  "pop": 43228,
+  "lat": 38.576666666,
+  "lon": -92.173611111,
+  "site": "jeffersoncitymo.gov",
+  "official": 0,
+  "osm_racks": 38,
+  "portal": [
+   "https://cityofjeffersoncitymo.nextrequest.com/",
+   "https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+   "https://assets.nextrequest.com/manifest.json"
+  ],
+  "email": [],
+  "pages": [
+   "https://cityofjeffersoncitymo.nextrequest.com/",
+   "https://www.jeffersoncitymo.gov/government/public_records/index.php",
+   "https://www.jeffersoncitymo.gov/government/public_information/index.php"
+  ]
+ },
+ {
+  "city": "Ormond Beach",
+  "state": "Florida",
+  "pop": 43080,
+  "lat": 29.286388888,
+  "lon": -81.075,
+  "site": "ormondbeach.org",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [
+   "https://ormondbeachfl.justfoia.com/publicportal/home/newrequest",
+   "https://ormondbeachfl.justfoia.com/publicportal/home/track",
+   "https://ormondbeachfl.justfoia.com/publicportal"
+  ],
+  "email": [
+   "city.clerk@ormondbeach.org"
+  ],
+  "pages": [
+   "https://ormondbeachfl.justfoia.com/publicportal/home/newrequest",
+   "https://www.ormondbeach.org/1186/Public-Records-Requests-Lien-Searches",
+   "https://ormondbeachfl.justfoia.com/publicportal/home/track"
+  ]
+ },
+ {
+  "city": "Clermont",
+  "state": "Florida",
+  "pop": 43021,
+  "lat": 28.5475,
+  "lon": -81.749444444,
+  "site": "cityofclermontfl.com",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [
+   "https://clermontfl.justfoia.com/publicportal/home/newrequest"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Moline",
+  "state": "Illinois",
+  "pop": 42985,
+  "lat": 41.485833333,
+  "lon": -90.499722222,
+  "site": "moline.il.us",
+  "official": 0,
+  "osm_racks": 24,
+  "portal": [],
+  "email": [
+   "policefoia@moline.il.us",
+   "foia@moline.il.us"
+  ],
+  "pages": [
+   "https://www.moline.il.us/106/Public-Records",
+   "https://www.moline.il.us/106/Public-Records",
+   "https://www.moline.il.us/408/Freedom-of-Information-Request"
+  ]
+ },
+ {
+  "city": "Puyallup",
+  "state": "Washington",
+  "pop": 42973,
+  "lat": 47.175833333,
+  "lon": -122.293611111,
+  "site": "cityofpuyallup.org",
+  "official": 2,
+  "osm_racks": 52,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Newnan",
+  "state": "Georgia",
+  "pop": 42549,
+  "lat": 33.376388888,
+  "lon": -84.788611111,
+  "site": "newnanga.gov",
+  "official": 0,
+  "osm_racks": 4,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Cortlandt",
+  "state": "New York",
+  "pop": 42545,
+  "lat": 41.261388888,
+  "lon": -73.9025,
+  "site": "townofcortlandtny.gov",
+  "official": 0,
+  "osm_racks": 4,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Belleville",
+  "state": "Illinois",
+  "pop": 42404,
+  "lat": 38.521666666,
+  "lon": -89.995277777,
+  "site": "belleville.net",
+  "official": 1,
+  "osm_racks": 7,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Gainesville",
+  "state": "Georgia",
+  "pop": 42296,
+  "lat": 34.3044,
+  "lon": -83.8339,
+  "site": "gainesville.org",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Peachtree Corners",
+  "state": "Georgia",
+  "pop": 42243,
+  "lat": 33.975583333,
+  "lon": -84.217777777,
+  "site": "peachtreecornersga.gov",
+  "official": 0,
+  "osm_racks": 9,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Lake Worth Beach",
+  "state": "Florida",
+  "pop": 42219,
+  "lat": 26.619722222,
+  "lon": -80.058611111,
+  "site": "lakeworthbeachfl.gov",
+  "official": 0,
+  "osm_racks": 23,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Enfield",
+  "state": "Connecticut",
+  "pop": 42141,
+  "lat": 41.97621,
+  "lon": -72.59176,
+  "site": "enfield.org",
+  "official": 0,
+  "osm_racks": 4,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Billerica",
+  "state": "Massachusetts",
+  "pop": 42119,
+  "lat": 42.558333333,
+  "lon": -71.269444444,
+  "site": "town.billerica.ma.us",
+  "official": 0,
+  "osm_racks": 53,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Schertz",
+  "state": "Texas",
+  "pop": 42002,
+  "lat": 29.5667,
+  "lon": -98.2644,
+  "site": "schertz.com",
+  "official": 0,
+  "osm_racks": 14,
+  "portal": [
+   "https://schertz.justfoia.com/publicportal/home/newrequest",
+   "https://schertztx.mycusthelp.com/webapp/_rs/(S(102shpaypdp1lwxek2fa30ab))/RequestOpen.aspx?sSessionID=&rqst=41",
+   "https://schertztx.mycusthelp.com/WEBAPP/_rs/(S(3yky3j3krql10wnyu1tqtuwb))/RequestOpen.aspx?sSessionID=&rqst=136"
+  ],
+  "email": [],
+  "pages": [
+   "https://schertz.justfoia.com/publicportal/home/newrequest"
+  ]
+ },
+ {
+  "city": "Fitchburg",
+  "state": "Massachusetts",
+  "pop": 41946,
+  "lat": 42.583333333,
+  "lon": -71.802777777,
+  "site": "fitchburgma.gov",
+  "official": 0,
+  "osm_racks": 7,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Coachella",
+  "state": "California",
+  "pop": 41941,
+  "lat": 33.68,
+  "lon": -116.15,
+  "site": "coachella.org",
+  "official": 0,
+  "osm_racks": 4,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Marlborough",
+  "state": "Massachusetts",
+  "pop": 41793,
+  "lat": 42.345833333,
+  "lon": -71.552777777,
+  "site": "marlborough-ma.gov",
+  "official": 1,
+  "osm_racks": 10,
+  "portal": [],
+  "email": [
+   "cityclerk@marlborough-ma.gov",
+   "policerecords@marlborough-ma.gov"
+  ],
+  "pages": [
+   "https://www.marlborough-ma.gov/207/Public-Records",
+   "https://www.marlborough-ma.gov/507/Public-Records-Requests"
+  ]
+ },
+ {
+  "city": "Bullhead City",
+  "state": "Nevada",
+  "pop": 41348,
+  "lat": 35.115555555,
+  "lon": -114.588611111,
+  "site": "bullheadcity.com",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Milton",
+  "state": "Georgia",
+  "pop": 41296,
+  "lat": 34.1322,
+  "lon": -84.3007,
+  "site": "cityofmiltonga.us",
+  "official": 0,
+  "osm_racks": 3,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Pine Bluff",
+  "state": "Arkansas",
+  "pop": 41253,
+  "lat": 34.228444444,
+  "lon": -92.003194444,
+  "site": "cityofpinebluff.com",
+  "official": 0,
+  "osm_racks": 0,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Holly Springs",
+  "state": "North Carolina",
+  "pop": 41239,
+  "lat": 35.6544,
+  "lon": -78.8247,
+  "site": "hollyspringsnc.us",
+  "official": 0,
+  "osm_racks": 29,
+  "portal": [],
+  "email": [],
+  "pages": [
+   "https://www.hollyspringsnc.gov/1709/Public-Records-Request",
+   "https://www.hollyspringsnc.gov/1709/Public-Records-Request"
+  ]
+ },
+ {
+  "city": "Hallandale Beach",
+  "state": "Florida",
+  "pop": 41217,
+  "lat": 25.986666666,
+  "lon": -80.146111111,
+  "site": "hallandalebeachfl.gov",
+  "official": 0,
+  "osm_racks": 51,
+  "portal": [
+   "https://hallandalebeachfl.justfoia.com/publicportal/home/newrequest",
+   "https://hallandalebeach.granicus.com/player/camera/3?publish_id=3&redirect=true",
+   "https://hallandalebeachfl.justfoia.com/publicportal"
+  ],
+  "email": [],
+  "pages": [
+   "https://www.cohb.org/1023/Public-Records-Requests",
+   "https://hallandalebeachfl.justfoia.com/publicportal/home/newrequest",
+   "https://hallandalebeachfl.gov/1023/Public-Records-Requests"
+  ]
+ },
+ {
+  "city": "Friendswood",
+  "state": "Texas",
+  "pop": 41213,
+  "lat": 29.5125,
+  "lon": -95.198055555,
+  "site": "ci.friendswood.tx.us",
+  "official": 0,
+  "osm_racks": 4,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Waxahachie",
+  "state": "Texas",
+  "pop": 41140,
+  "lat": 32.399722222,
+  "lon": -96.847222222,
+  "site": "waxahachie.com",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [
+   "https://waxahachietx.justfoia.com/publicportal/home/newrequest",
+   "https://waxahachietx.justfoia.com/publicportal"
+  ],
+  "email": [],
+  "pages": [
+   "https://waxahachietx.justfoia.com/publicportal/home/newrequest"
+  ]
+ },
+ {
+  "city": "Shelton",
+  "state": "Connecticut",
+  "pop": 40869,
+  "lat": 41.304166666,
+  "lon": -73.138055555,
+  "site": "cityofshelton.org",
+  "official": 0,
+  "osm_racks": 7,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Westfield",
+  "state": "Massachusetts",
+  "pop": 40834,
+  "lat": 42.1250929,
+  "lon": -72.749538,
+  "site": "cityofwestfield.org",
+  "official": 0,
+  "osm_racks": 22,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Mableton",
+  "state": "Georgia",
+  "pop": 40834,
+  "lat": 33.818333333,
+  "lon": -84.576111111,
+  "site": "mableton.gov",
+  "official": 0,
+  "osm_racks": 11,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Annapolis",
+  "state": "Maryland",
+  "pop": 40812,
+  "lat": 38.978611111,
+  "lon": -76.491944444,
+  "site": "annapolis.gov",
+  "official": 0,
+  "osm_racks": 21,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Hobbs",
+  "state": "New Mexico",
+  "pop": 40508,
+  "lat": 32.712222222,
+  "lon": -103.140555555,
+  "site": "hobbsnm.org",
+  "official": 0,
+  "osm_racks": 1,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "New Berlin",
+  "state": "Wisconsin",
+  "pop": 40451,
+  "lat": 42.979166666,
+  "lon": -88.109166666,
+  "site": "newberlin.org",
+  "official": 0,
+  "osm_racks": 22,
+  "portal": [
+   "https://new-berlin-wi.nextrequest.com/"
+  ],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Hurst",
+  "state": "Texas",
+  "pop": 40413,
+  "lat": 32.8356,
+  "lon": -97.1803,
+  "site": "ci.hurst.tx.us",
+  "official": 0,
+  "osm_racks": 36,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Findlay",
+  "state": "Ohio",
+  "pop": 40313,
+  "lat": 41.042777777,
+  "lon": -83.642222222,
+  "site": "ci.findlay.oh.us",
+  "official": 0,
+  "osm_racks": 45,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "DeKalb",
+  "state": "Illinois",
+  "pop": 40290,
+  "lat": 41.931388888,
+  "lon": -88.750277777,
+  "site": "cityofdekalb.com",
+  "official": 0,
+  "osm_racks": 6,
+  "portal": [
+   "https://dekalbil.mycusthelp.com/WEBAPP/_rs/(S(rtqvywbqrjekakanofviiqhw))/OpenRecordsSummary.aspx?view=1&sSessionID=",
+   "https://dekalbil.mycusthelp.com/WEBAPP/_rs/(S(51qotg44tzn4z13wvkquu254))/supporthome.aspx",
+   "https://www.cityofdekalb.com/DocumentCenter/View/13185/FOIA-Packet"
+  ],
+  "email": [
+   "pdrecords@cityofdekalb.com"
+  ],
+  "pages": [
+   "https://www.cityofdekalb.com/810/Freedom-of-Information-Act-Records"
+  ]
+ },
+ {
+  "city": "Lincoln Park",
+  "state": "Michigan",
+  "pop": 40245,
+  "lat": 42.243611111,
+  "lon": -83.180833333,
+  "site": "lincolnpark.govoffice.com",
+  "official": 1,
+  "osm_racks": 57,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Aventura",
+  "state": "Florida",
+  "pop": 40242,
+  "lat": 25.964444444,
+  "lon": -80.135833333,
+  "site": "cityofaventura.com",
+  "official": 0,
+  "osm_racks": 38,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Florence",
+  "state": "Alabama",
+  "pop": 40184,
+  "lat": 34.820277777,
+  "lon": -87.662777777,
+  "site": "florenceal.org",
+  "official": 0,
+  "osm_racks": 19,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Weslaco",
+  "state": "Texas",
+  "pop": 40160,
+  "lat": 26.159166666,
+  "lon": -97.9875,
+  "site": "weslacotx.gov",
+  "official": 0,
+  "osm_racks": 0,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Norwich",
+  "state": "Connecticut",
+  "pop": 40125,
+  "lat": 41.550277777,
+  "lon": -72.0875,
+  "site": "norwichct.org",
+  "official": 0,
+  "osm_racks": 5,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Brighton",
+  "state": "Colorado",
+  "pop": 40083,
+  "lat": 39.9742,
+  "lon": -104.81,
+  "site": "brightonco.gov",
+  "official": 0,
+  "osm_racks": 4,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Ossining",
+  "state": "New York",
+  "pop": 40061,
+  "lat": 41.1626,
+  "lon": -73.8616,
+  "site": "townofossining.com",
+  "official": 0,
+  "osm_racks": 13,
+  "portal": [],
+  "email": [],
+  "pages": []
+ },
+ {
+  "city": "Hutchinson",
+  "state": "Kansas",
+  "pop": 40006,
+  "lat": 38.0656,
+  "lon": -97.9236,
+  "site": "hutchgov.com",
+  "official": 0,
+  "osm_racks": 0,
   "portal": [],
   "email": [],
   "pages": []
