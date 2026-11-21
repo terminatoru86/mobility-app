@@ -83,9 +83,23 @@ SKIP_HOST = re.compile(r'facebook|twitter|x\.com|instagram|youtube|linkedin|goog
 
 
 def get(url, timeout=25, **kw):
+    """GET with a hard limit on the WHOLE download (timeout x 3) and on size (60 MB): requests' own
+    timeout is per read, so a server that trickles bytes would otherwise hold a thread forever."""
     try:
-        r = requests.get(url, headers=UA, timeout=timeout, **kw)
-        return r if r.status_code == 200 else None
+        r = requests.get(url, headers=UA, timeout=timeout, stream=True, **kw)
+        if r.status_code != 200:
+            r.close()
+            return None
+        stop, buf, size = time.time() + timeout * 3, [], 0
+        for chunk in r.iter_content(65536):
+            buf.append(chunk)
+            size += len(chunk)
+            if time.time() > stop or size > 60_000_000:
+                r.close()
+                return None
+        r._content = b''.join(buf)
+        r._content_consumed = True
+        return r
     except Exception:
         return None
 
@@ -271,8 +285,13 @@ def arcgis_item(item_id):
     r = get(f'https://www.arcgis.com/sharing/rest/content/items/{item_id}?f=json', timeout=40)
     if r is None:
         return out
-    it = r.json()
-    if it.get('url') and re.search(r'(Feature|Map)Server', it['url']):
+    try:
+        it = r.json()
+    except Exception:
+        return out
+    if not isinstance(it, dict):
+        return out
+    if isinstance(it.get('url'), str) and re.search(r'(Feature|Map)Server', it['url']):
         return arcgis_service(re.sub(r'/\d+$', '', it['url']))
     d = get(f'https://www.arcgis.com/sharing/rest/content/items/{item_id}/data?f=json', timeout=40)
     if d is None:
@@ -281,13 +300,20 @@ def arcgis_item(item_id):
         data = d.json()
     except Exception:
         return out
-    if data.get('map', {}).get('itemId'):
-        return arcgis_item(data['map']['itemId'])
+    if not isinstance(data, dict):
+        return out
+    m_ = data.get('map')
+    if isinstance(m_, dict) and isinstance(m_.get('itemId'), str):
+        return arcgis_item(m_['itemId'])
     for wid in re.findall(r'"(?:webmap|itemId)"\s*:\s*"(\w{32})"', json.dumps(data))[:3]:
         if wid != item_id:
             out += arcgis_item(wid)
     for ly in (data.get('operationalLayers') or [])[:20]:
+        if not isinstance(ly, dict):
+            continue
         u = ly.get('url') or ''
+        if not isinstance(u, str):
+            continue
         if u and GOOD_MAP.search((ly.get('title') or '') + u) and kind_of((ly.get('title') or '') + ' ' + u):
             name, pts = arcgis_layer(u) if re.search(r'Server/\d+$', u) else ('', [])
             out.append((ly.get('title') or name, pts))
@@ -529,7 +555,7 @@ def maps():
         log.append(f'kept  {n:6d}  {k[0]:22s}  {title[:100]}')
 
     # time budget: what is read by then is kept (the job has a limit); the order puts vendor sites and portals first
-    end = time.time() + 60 * int(os.environ.get('MAPS_MIN', 240))
+    end = time.time() + 60 * int(os.environ.get('MAPS_MIN', 200))
     jobs = ([('site', s_, None) for s_ in sites] + [('portal', c_, d_) for c_, d_ in sorted(data_portals)] +
             [('map', c_, m_) for c_, m_ in city_maps])
     print(f'{len(jobs)} things to read (vendor sites, portals, maps)', flush=True)
@@ -547,8 +573,13 @@ def maps():
         except Exception as e:
             return j, []
     done_n = skipped = 0
-    with cf.ThreadPoolExecutor(32) as ex:
-        for (kind, a, b), res in ex.map(run, jobs):
+    # results as they come (one slow site must not hold the rest), and a hard stop at the time budget:
+    # requests' timeout is per read, so a server that trickles bytes could otherwise hang the job for hours
+    ex = cf.ThreadPoolExecutor(32)
+    futs = [ex.submit(run, j) for j in jobs]
+    try:
+        for f in cf.as_completed(futs, timeout=max(60, end - time.time() + 120)):
+            (kind, a, b), res = f.result()
             if res is None:
                 skipped += 1
                 continue
@@ -559,6 +590,10 @@ def maps():
             if done_n % 500 == 0:
                 json.dump(list(found.values()), open(os.path.join(OUT, 'points.json'), 'w'), separators=(',', ':'))
                 print(f'{done_n}/{len(jobs)} read · {len(found)} points', flush=True)
+    except cf.TimeoutError:
+        print('time budget reached: stopping the reads still hanging', flush=True)
+    skipped = len(jobs) - done_n
+    ex.shutdown(wait=False, cancel_futures=True)
     log.insert(0, f'read {done_n} of {len(jobs)} · not read (time): {skipped}')
     pts = list(found.values())
     json.dump(pts, open(os.path.join(OUT, 'points.json'), 'w'), separators=(',', ':'))
@@ -571,6 +606,7 @@ def maps():
              '## Maps read', '```', *log[:3000], '```']
     open(os.path.join(OUT, 'REPORT.md'), 'w').write('\n'.join(lines) + '\n')
     print('\n'.join(lines[:6]), flush=True)
+    os._exit(0)  # threads still stuck on a slow server must not keep the process alive
 
 
 if __name__ == '__main__':
