@@ -1,9 +1,9 @@
-# Bike routes found (99325 routes, 586,169 km, file 24.8 MB)
+# Bike routes found (99331 routes, 586,275 km, file 24.8 MB)
 
-By source: {'Official layers': 89477, 'OpenStreetMap': 9848}
-By kind: {'motorcycle': 34805, 'bicycle': 62711, 'mtb': 1809}
-OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 90865, 'lcn': 6809, 'rcn': 1263, 'ncn': 78, 'US:CA:Scenic': 17, 'US:US:Historic': 16, 'US:IA:Scenic': 15, 'lwn': 14}
-Longer than 10 km: 15238 · longer than 50 km: 3
+By source: {'Official layers': 89483, 'OpenStreetMap': 9848}
+By kind: {'motorcycle': 34805, 'bicycle': 62717, 'mtb': 1809}
+OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 90871, 'lcn': 6809, 'rcn': 1263, 'ncn': 78, 'US:CA:Scenic': 17, 'US:US:Historic': 16, 'US:IA:Scenic': 15, 'lwn': 14}
+Longer than 10 km: 15241 · longer than 50 km: 3
 
 ## Operators with the most routes
 - NFGMobile_Publisher: 48846
