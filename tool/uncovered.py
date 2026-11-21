@@ -106,6 +106,8 @@ def host(u):
 def main():
     done = {host(c['site']) for c in json.load(open(os.path.join(ROOT, 'data', 'foia', 'contacts.json')))}
     done_names = {c['city'].rsplit(' ', 1)[0].lower() for c in json.load(open(os.path.join(ROOT, 'data', 'foia', 'contacts.json')))}
+    done_full = {c['city'].lower() for c in json.load(open(os.path.join(ROOT, 'data', 'foia', 'contacts.json')))}
+    done.discard('')
     rows, seen = [], set()
     for b in wikidata():
         name = b['cLabel']['value']
@@ -115,7 +117,7 @@ def main():
             continue
         seen.add((name, st))
         site = host(b['site']['value']) if b.get('site') else ''
-        if site in done or name.lower() in done_names:
+        if (site and site in done) or name.lower() in done_names or f'{name} {st}'.lower() in done_full:
             continue
         off, osm = counts(lat, lon)
         rows.append({'city': name, 'state': st, 'pop': int(float(b['p']['value'])), 'lat': lat, 'lon': lon,
