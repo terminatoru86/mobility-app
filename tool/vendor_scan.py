@@ -195,19 +195,22 @@ def scan():
 
 
 # ───────── maps ─────────
-KIND = [('bicycle_repair_station', re.compile(r'repair|fix-?it|tool\s*stand|pump', re.I), {'amenity': 'bicycle_repair_station'}),
-        ('charging', re.compile(r'charg|outlet|swiftmile|kuhmute', re.I), {'amenity': 'charging_station', 'bicycle': 'yes', 'scooter': 'yes'}),
-        ('locker', re.compile(r'locker|bikelink|elock|oonee|bikeep|cage|secure', re.I), {'amenity': 'bicycle_parking', 'bicycle_parking': 'lockers'}),
-        ('scooter', re.compile(r'scooter|micromobil|corral|e-?scoot|mobility\s*hub', re.I), {'amenity': 'small_electric_vehicle_parking'}),
-        ('moto', re.compile(r'motorcycle|moped', re.I), {'amenity': 'motorcycle_parking'}),
-        ('racks', re.compile(r'rack|bike\s*parking|bicycle\s*parking|bike\s*valet', re.I), {'amenity': 'bicycle_parking'})]
+KIND = [('bicycle_repair_station', re.compile(r'(bike|bicycle|cycle)\W*(repair|fix)|repair\s*stations?\b(?!.*(sewer|water|pump))|fix-?it|tool\s*stand|\bbike\s*pump|air\s*pump', re.I), {'amenity': 'bicycle_repair_station'}),
+        ('charging', re.compile(r'(e-?bike|bike|bicycle|scooter|micromobil)\W*(\w+\W+){0,2}charg|charg\w*\W+(\w+\W+){0,2}(e-?bikes?|bikes?|scooters?)\b|swiftmile|kuhmute', re.I), {'amenity': 'charging_station', 'bicycle': 'yes', 'scooter': 'yes'}),
+        ('locker', re.compile(r'(?<![a-z])lockers?(?![a-z])|bikelink|(?<![a-z])elock|oonee|bikeep|bike\s*cage|secure\s*(bike|bicycle)', re.I), {'amenity': 'bicycle_parking', 'bicycle_parking': 'lockers'}),
+        ('scooter', re.compile(r'(?<![a-z])(scooters?|corrals?)(?![a-z])|micromobil|e-?scoot|mobility\s*hub', re.I), {'amenity': 'small_electric_vehicle_parking'}),
+        ('moto', re.compile(r'(?<![a-z])(motorcycles?|mopeds?)(?![a-z])', re.I), {'amenity': 'motorcycle_parking'}),
+        ('racks', re.compile(r'(?<![a-z])racks?\b|bike_?racks?|bike\s*parking|bicycle\s*parking|bike\s*valet', re.I), {'amenity': 'bicycle_parking'})]
+# utility layers whose names share words with ours (pump station, outlet, discharge, rail tracks, work-order repairs)
+UTILITY = re.compile(r'sewer|storm|sanitary|water|discharge|outfall|inlet|outlet|endwall|culvert|hydrant|valve|manhole|'
+                     r'work\s*order|road\s*repair|\btracks?\b|track\s*view|kayak|canoe|boat|ski\b|gun', re.I)
 
 
 SELLERS = re.compile(r'dealer|retailer|distributor|store-?locator|where-?to-?buy|sales\s*rep|showroom|reseller', re.I)
 
 
 def kind_of(text):
-    if SELLERS.search(text):
+    if SELLERS.search(text) or UTILITY.search(text):
         return None
     if BAD_MAP.search(text) and not re.search(r'rack|parking|locker|repair|charg', text, re.I):
         return None
