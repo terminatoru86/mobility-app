@@ -51,6 +51,9 @@ FIXED = [
     # Arlington TX: sent by the city in answer to our records request (Hike and Bike off-street + on-street)
     ('https://gis2.arlingtontx.gov/agsext2/rest/services/External/NeighborhoodAmenity/MapServer/6', '1=1',
      'Hike and Bike trails', 'Hike and Bike · City of Arlington TX', 'City of Arlington TX'),
+    # Madison WI: sent by the Greater Madison MPO (bike map service; planned facilities are filtered by LAYER_BAD names)
+    ('https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer', '1=1',
+     'Madison bike map', 'Bike map · City of Madison WI', 'City of Madison WI'),
 ]
 
 
@@ -132,7 +135,20 @@ def layer_features(url, where='1=1'):
 def discover(minutes=60):
     out, seen, log = [], set(), []
     end = time.time() + 60 * minutes
+    expanded = []
     for lurl, where, text, source, owner in FIXED:
+        if lurl.rstrip('/').endswith(('MapServer', 'FeatureServer')):  # a whole service: its line layers about bikes
+            try:
+                info = json.loads(http(f'{lurl}?f=json', timeout=40))
+                for ly in info.get('layers') or []:
+                    nm = ly.get('name') or ''
+                    if LAYER_OK.search(nm) and not LAYER_BAD.search(nm):
+                        expanded.append((f"{lurl.rstrip('/')}/{ly['id']}", where, f'{nm} {text}', source, owner))
+            except Exception as err:
+                log.append(f'FAILED {lurl}: {str(err)[:80]}')
+        else:
+            expanded.append((lurl, where, text, source, owner))
+    for lurl, where, text, source, owner in expanded:
         seen.add(lurl.rsplit('/', 1)[0])
         try:
             recs = routes_from(layer_features(lurl, where), text, source, lurl, owner)

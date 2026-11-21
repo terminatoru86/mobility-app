@@ -14,7 +14,51 @@ SOURCES = [
     {'id': 'durham', 'city': 'Durham NC', 'kind': 'mymaps', 'mid': '1DHI3dY9fgIBKUqkieifCrc-pUlU'},
     # Dero (maker of the Fixit public repair stand): its world map of installed Fixits (~2,600, ~2,400 in the US)
     {'id': 'dero', 'city': 'Dero Fixit map', 'kind': 'dero', 'url': 'https://www.dero.com/fixitmap/fixitmap.html'},
+    # Madison WI (Greater Madison MPO, answer to our request): the city bike map service; point layers about
+    # repair stations / racks / parking are read, planned ones left out
+    {'id': 'madison', 'city': 'Madison WI', 'kind': 'service', 'url': 'https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer'},
 ]
+
+import re as _re
+_KINDS = [(_re.compile(r'repair|fix-?it|tool', _re.I), {'amenity': 'bicycle_repair_station'}),
+          (_re.compile(r'locker', _re.I), {'amenity': 'bicycle_parking', 'bicycle_parking': 'lockers'}),
+          (_re.compile(r'rack|bike\s*parking|bicycle\s*parking|corral', _re.I), {'amenity': 'bicycle_parking'}),
+          (_re.compile(r'pump|air', _re.I), {'amenity': 'compressed_air'})]
+_PLANNED = _re.compile(r'\b(planned|proposed|future|propos)', _re.I)
+
+
+def service(s):
+    """Every point layer of an ArcGIS service whose name is about our places."""
+    out = []
+    info = requests.get(s['url'] + '?f=json', headers=UA, timeout=60).json()
+    for ly in info.get('layers') or []:
+        tags = next((t for rx, t in _KINDS if rx.search(ly.get('name') or '')), None)
+        if not tags:
+            continue
+        lurl = f"{s['url']}/{ly['id']}"
+        li = requests.get(lurl + '?f=json', headers=UA, timeout=60).json()
+        if li.get('geometryType') != 'esriGeometryPoint':
+            continue
+        off = 0
+        while True:
+            d = requests.get(lurl + '/query', headers=UA, timeout=120, params={
+                'where': '1=1', 'outFields': '*', 'outSR': 4326, 'f': 'json', 'resultOffset': off, 'resultRecordCount': 2000}).json()
+            feats = d.get('features') or []
+            for f in feats:
+                g, a = f.get('geometry') or {}, f.get('attributes') or {}
+                if 'x' not in g or any(_PLANNED.search(str(v)) for v in a.values() if isinstance(v, str)):
+                    continue
+                t = dict(tags)
+                nm = next((str(a[k]) for k in a if _re.search(r'name|location|site', k, _re.I) and a[k]), '')
+                if nm:
+                    t['name'] = nm[:80]
+                t['source'] = f"City map: {s['city']}"
+                out.append([f"pm/{s['id']}-{ly['id']}-{a.get('OBJECTID', a.get('objectid', len(out)))}",
+                            round(g['y'], 6), round(g['x'], 6), t])
+            if not d.get('exceededTransferLimit'):
+                break
+            off += len(feats)
+    return out
 
 
 _STATES = None
@@ -161,7 +205,7 @@ def main():
     allp, rep = [], []
     for s in SOURCES:
         try:
-            got = arcgis(s) if s['kind'] == 'arcgis' else dero(s) if s['kind'] == 'dero' else mymaps(s)
+            got = arcgis(s) if s['kind'] == 'arcgis' else dero(s) if s['kind'] == 'dero' else service(s) if s['kind'] == 'service' else mymaps(s)
         except Exception as e:
             got = []
             print(s['id'], 'ERROR', e)
