@@ -1,13 +1,14 @@
 # Points from city / state files
 
-Row files: 5025 · rows read: 107230 · addresses sent to the geocoder: 284 · map points kept: 38
+Row files: 5053 · rows read: 112617 · addresses sent to the geocoder: 284 · map points kept: 41
 
-By category: racks 31, locker 3, repair 2, moto_parking 2
+By category: racks 34, locker 3, repair 2, moto_parking 2
 
 | Place | Rows read | Points | Categories |
 |---|---|---|---|
 | Orlando FL | 238 | 6 | racks 6 |
 | Lawrence | 1113 | 5 | repair 1, racks 4 |
+| Norwalk | 226 | 3 | racks 3 |
 | region octa net | 255 | 3 | racks 2, repair 1 |
 | Bellevue | 260 | 2 | racks 1, locker 1 |
 | Owensboro | 44 | 2 | racks 2 |
@@ -17,7 +18,7 @@ By category: racks 31, locker 3, repair 2, moto_parking 2
 | Peabody | 12 | 1 | racks 1 |
 | Macon | 60 | 1 | racks 1 |
 | Boston | 362 | 1 | locker 1 |
-| Duluth | 303 | 1 | racks 1 |
+| Duluth | 5303 | 1 | racks 1 |
 | Penfield | 60 | 1 | racks 1 |
 | Cincinnati | 9 | 1 | locker 1 |
 | Birmingham AL | 72 | 1 | racks 1 |
