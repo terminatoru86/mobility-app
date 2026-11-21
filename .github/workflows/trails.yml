@@ -87,7 +87,7 @@ jobs:
           path: parts
       - name: Join and report
         run: |
-          python3 tool/trails_merge.py data/trails $(ls parts/*/routes.json parts/*/official.json 2>/dev/null)
+          python3 tool/trails_merge.py data/trails $(ls parts/*/routes.json parts/*/official.json data/trails_user/*.json 2>/dev/null)
           cp parts/trails-official/official_layers.txt data/trails/official_layers.txt 2>/dev/null || true
           python3 - <<'PY'
           import glob, gzip, json
