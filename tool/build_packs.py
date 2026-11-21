@@ -1065,10 +1065,12 @@ def fetch_afdc():
                                 'status': 'E', 'access': 'public', 'limit': 'all', 'country': 'US'})
     # NREL became the National Laboratory of the Rockies (nlr.gov); try the new host first, then the old one
     j, last = None, None
-    for host in ('developer.nlr.gov', 'developer.nrel.gov'):
+    # api.data.gov is the gateway in front of the NREL/NLR APIs (the same key works there)
+    for host in ('api.data.gov/nrel', 'developer.nlr.gov', 'developer.nrel.gov'):
         for attempt in range(3):
             try:
-                j = json.loads(http(f'https://{host}/api/alt-fuel-stations/v1.json?{q}', timeout=300))
+                path = 'alt-fuel-stations/v1.json' if host.startswith('api.data.gov') else 'api/alt-fuel-stations/v1.json'
+                j = json.loads(http(f'https://{host}/{path}?{q}', timeout=300))
                 break
             except Exception as err:
                 last = err
