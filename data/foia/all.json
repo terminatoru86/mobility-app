@@ -100036,6 +100036,18 @@
 },
 {
 "name": "Aberdeen",
+"site": "aberdeenidaho.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Idaho",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Aberdeen",
 "site": "aberdeenmd.gov",
 "lat": null,
 "lon": null,
@@ -100290,6 +100302,18 @@
 "pages": []
 },
 {
+"name": "Adair",
+"site": "adairia.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Iowa",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Adair County 911 Regional Trust Authority",
 "site": "adairok911.gov",
 "lat": null,
@@ -100521,6 +100545,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Iowa",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Adrian",
+"site": "adrianmi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
 "email": [],
 "portal": [],
 "pages": []
@@ -100761,6 +100797,21 @@
 "state": "Florida",
 "email": [],
 "portal": [],
+"pages": []
+},
+{
+"name": "Alamance County Government",
+"site": "alamancecountync.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "North Carolina",
+"email": [],
+"portal": [
+"https://alamancecountync.nextrequest.com/",
+"https://alamancecountync.nextrequest.com/faqs"
+],
 "pages": []
 },
 {
@@ -101012,6 +101063,24 @@
 "pages": []
 },
 {
+"name": "Albert",
+"site": "alberttwpmi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [
+"https://alberttwpmi.gov/index.php/foia/",
+"https://alberttwpmi.gov/wp-content/uploads/2025/08/Albert_Township_Public_Summary_of_FOIA_Policy.pdf",
+"https://alberttwpmi.gov/wp-content/uploads/2025/08/FOIA_Request_Forms.pdf"
+],
+"pages": [
+"https://alberttwpmi.gov/index.php/foia/"
+]
+},
+{
 "name": "Albertville",
 "site": "albertvillemn.gov",
 "lat": null,
@@ -101246,6 +101315,18 @@
 "pages": [
 "https://alexandriaky.gov/10209-2/"
 ]
+},
+{
+"name": "Alexandria",
+"site": "alexandrianh.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Hampshire",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Alexandria Township",
@@ -101500,6 +101581,26 @@
 "pages": []
 },
 {
+"name": "Allegany County Sheriff's Office",
+"site": "alleganycountysheriff-ny.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [
+"https://www.alleganycountysheriff-ny.gov/publicrecords",
+"https://www.alleganycountysheriff-ny.gov/publicrecords\\",
+"https://www.alleganycountysheriff-ny.gov/foia"
+],
+"pages": [
+"https://www.alleganycountysheriff-ny.gov/public-records",
+"https://www.alleganycountysheriff-ny.gov/publicrecords",
+"https://www.alleganycountysheriff-ny.gov/open-records"
+]
+},
+{
 "name": "Alleghany County",
 "site": "alleghanycounty-nc.gov",
 "lat": null,
@@ -101723,6 +101824,18 @@
 "https://almiratownshipmi.gov/wp-content/uploads/2025/04/FOIA-Section-10.pdf",
 "https://almiratownshipmi.gov/wp-content/uploads/2025/12/FOIA-Request-Form.pdf"
 ],
+"pages": []
+},
+{
+"name": "Almira",
+"site": "almirawa.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Washington",
+"email": [],
+"portal": [],
 "pages": []
 },
 {
@@ -101964,6 +102077,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Nebraska",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Alvord",
+"site": "alvordtx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
 "email": [],
 "portal": [],
 "pages": []
@@ -102224,6 +102349,21 @@
 "pages": []
 },
 {
+"name": "Anacortes",
+"site": "anacorteswa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Washington",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.anacorteswa.gov/890/Public-Records",
+"https://www.anacorteswa.gov/FormCenter/Legal-Department-7/Public-Records-Request-Form-50"
+]
+},
+{
 "name": "Anaheim",
 "site": "anaheim.gov",
 "lat": null,
@@ -102447,6 +102587,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Annapolis",
+"site": "annapolismo.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Missouri",
 "email": [],
 "portal": [],
 "pages": []
@@ -102718,6 +102870,18 @@
 "pages": []
 },
 {
+"name": "Antrim Police Department",
+"site": "antrimnhpd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Hampshire",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Antrim Township",
 "site": "antrimtownshipmi.gov",
 "lat": null,
@@ -102935,6 +103099,18 @@
 {
 "name": "Arapahoe County Clerk Recorder",
 "site": "arapahoedrives.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Colorado",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Arapahoe County Clerk Recorder",
+"site": "arapahoerecords.gov",
 "lat": null,
 "lon": null,
 "kind": "Org",
@@ -103197,6 +103373,20 @@
 "pages": [
 "https://www.arenaccountymi.gov/Clerk/FOIA/",
 "https://www.arenaccountymi.gov/Clerk/FOIA.aspx"
+]
+},
+{
+"name": "Argentine Township",
+"site": "argentinetownship.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.argentinetownship.gov/clerk/freedom_of_information.php"
 ]
 },
 {
@@ -103465,6 +103655,24 @@
 "pages": []
 },
 {
+"name": "Arrowsmith",
+"site": "arrowsmithil.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [
+"https://www.arrowsmithil.gov/freedom-of-information-act-foia",
+"https://arrowsmithil.gov/freedom-of-information-act-foia",
+"https://www.arrowsmithil.gov/documents/532/FOIA_Request_Document.pdf"
+],
+"pages": [
+"https://www.arrowsmithil.gov/freedom-of-information-act-foia"
+]
+},
+{
 "name": "Artesia",
 "site": "artesiaca.gov",
 "lat": null,
@@ -103692,6 +103900,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "The City of Ashland, KY",
+"site": "ashlandky.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Kentucky",
 "email": [],
 "portal": [],
 "pages": []
@@ -103949,6 +104169,26 @@
 "pages": []
 },
 {
+"name": "Athens County 911",
+"site": "athensco911.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [
+"https://accounts.google.com/signin/usernamerecovery?continue=https://sites.google.com/athensco911.gov/athens911/publicrecords&amp;dsh=S589780734:1795301095905182&amp;flowEntry=ServiceLogin&amp;flowName=WebLiteSignIn&amp;followup=https://sites.google.com/athensco911.gov/athens911/publicrecords&amp;osid=1&amp;service=wise",
+"https://accounts.google.com/lifecycle/flows/signup?continue=https://sites.google.com/athensco911.gov/athens911/publicrecords&amp;dsh=S589780734:1795301095905182&amp;flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;followup=https://sites.google.com/athensco911.gov/athens911/publicrecords&amp;osid=1&amp;service=wise",
+"https://accounts.google.com/signin/usernamerecovery?continue=https://sites.google.com/athensco911.gov/athens911/foia&amp;dsh=S708631229:1795301263374178&amp;flowEntry=ServiceLogin&amp;flowName=WebLiteSignIn&amp;followup=https://sites.google.com/athensco911.gov/athens911/foia&amp;osid=1&amp;service=wise"
+],
+"pages": [
+"https://accounts.google.com/v3/signin/identifier?continue=https://sites.google.com/athensco911.gov/athens911/public-records&followup=https://sites.google.com/athensco911.gov/athens911/public-records&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S2083048263:1795301010929327",
+"https://accounts.google.com/v3/signin/identifier?continue=https://sites.google.com/athensco911.gov/athens911/publicrecords&followup=https://sites.google.com/athensco911.gov/athens911/publicrecords&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S589780734:1795301095905182",
+"https://accounts.google.com/v3/signin/identifier?continue=https://sites.google.com/athensco911.gov/athens911/foia&followup=https://sites.google.com/athensco911.gov/athens911/foia&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S708631229:1795301263374178"
+]
+},
+{
 "name": "Athens",
 "site": "athensil.gov",
 "lat": null,
@@ -104178,6 +104418,20 @@
 "state": "Minnesota",
 "email": [],
 "portal": [],
+"pages": []
+},
+{
+"name": "Aubrey",
+"site": "aubreytx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [
+"https://aubreytx.govqa.us/WEBAPP/_rs/(S(o30nnsphoaj3nr4b2cng2gvl))/supporthome.aspx"
+],
 "pages": []
 },
 {
@@ -104427,6 +104681,18 @@
 },
 {
 "name": "Aurora",
+"site": "aurora-mn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Aurora",
 "site": "auroraco.gov",
 "lat": null,
 "lon": null,
@@ -104642,6 +104908,18 @@
 {
 "name": "Avenal Fire Department",
 "site": "avenalfd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Avenal Police Department",
+"site": "avenalpd.gov",
 "lat": null,
 "lon": null,
 "kind": "City",
@@ -104868,6 +105146,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Baden",
+"site": "badenpa.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Pennsylvania",
 "email": [],
 "portal": [],
 "pages": []
@@ -105138,6 +105428,18 @@
 ]
 },
 {
+"name": "Balkan Township",
+"site": "balkantownshipmn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Ballard City",
 "site": "ballardcityut.gov",
 "lat": null,
@@ -105368,6 +105670,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Barbour County Commission",
+"site": "barbourcountyal.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Alabama",
 "email": [],
 "portal": [],
 "pages": []
@@ -105632,6 +105946,18 @@
 "pages": []
 },
 {
+"name": "Barry County Missouri",
+"site": "barrycountymo.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Barry Township",
 "site": "barrytownshipmi.gov",
 "lat": null,
@@ -105871,6 +106197,27 @@
 ],
 "portal": [],
 "pages": []
+},
+{
+"name": "Batesville",
+"site": "batesvillepolicear.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Arkansas",
+"email": [
+"foia@batesvillepolicear.gov"
+],
+"portal": [
+"https://www.batesvillepolicear.gov/foia-requests",
+"https://www.batesvillepolicear.gov/forms/foia-request"
+],
+"pages": [
+"https://www.batesvillepolicear.gov/foia-requests",
+"https://www.batesvillepolicear.gov/forms/foia-request",
+"https://www.batesvillepolicear.gov/public-information"
+]
 },
 {
 "name": "Bath County Clerk",
@@ -106122,6 +106469,22 @@
 ]
 },
 {
+"name": "Bay County Tax Collector",
+"site": "baycountyfltax.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [],
+"pages": [
+"https://baycountyfltax.gov/help/public-records-request/",
+"https://baycountyfltax.gov/help/public-records-request/",
+"https://baycountyfltax.gov/help/public-records-request/"
+]
+},
+{
 "name": "Bay County",
 "site": "baycountymi.gov",
 "lat": null,
@@ -106366,6 +106729,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Beach Haven",
+"site": "beachhaven-nj.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Jersey",
 "email": [],
 "portal": [],
 "pages": []
@@ -106632,6 +107007,18 @@
 "pages": []
 },
 {
+"name": "Beaverton",
+"site": "beavertonoregon.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oregon",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Beaverton Township",
 "site": "beavertontownshipmi.gov",
 "lat": null,
@@ -106864,6 +107251,18 @@
 {
 "name": "Bedford Park",
 "site": "bedfordpark.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Bedford Park Fire",
+"site": "bedfordparkfd.gov",
 "lat": null,
 "lon": null,
 "kind": "Town",
@@ -107116,6 +107515,18 @@
 "pages": []
 },
 {
+"name": "Belknap County",
+"site": "belknapcounty.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "New Hampshire",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Bellbrook",
 "site": "bellbrook.gov",
 "lat": null,
@@ -107341,6 +107752,24 @@
 "https://www.bellevueohio.gov/public-records",
 "https://www.bellevueohio.gov/publicrecords",
 "https://www.bellevueohio.gov/open-records"
+]
+},
+{
+"name": "Bellingham",
+"site": "bellinghamwa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Washington",
+"email": [
+"publicrecords@cob.org"
+],
+"portal": [
+"https://bellinghamwa.govqa.us/WEBAPP/_rs/supporthome.aspx"
+],
+"pages": [
+"http://bellinghamwa.gov/gov/public-records"
 ]
 },
 {
@@ -107577,6 +108006,18 @@
 "pages": []
 },
 {
+"name": "Bend",
+"site": "bendoregon.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oregon",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Benewah County",
 "site": "benewahcountyid.gov",
 "lat": null,
@@ -107797,6 +108238,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Arkansas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Benton County Iowa",
+"site": "bentoncountyia.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Iowa",
 "email": [],
 "portal": [],
 "pages": []
@@ -108034,6 +108487,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Bergen",
+"site": "bergenvernoncowi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
 "email": [],
 "portal": [],
 "pages": []
@@ -108321,6 +108786,18 @@
 "pages": []
 },
 {
+"name": "Bernie",
+"site": "berniemo.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Berrien County Government",
 "site": "berriencountyga.gov",
 "lat": null,
@@ -108558,6 +109035,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Bethel",
+"site": "bethelmo.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Missouri",
 "email": [],
 "portal": [],
 "pages": []
@@ -108805,6 +109294,18 @@
 "pages": []
 },
 {
+"name": "Macon-Bibb County Sheriff's Office",
+"site": "bibbcosheriffga.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Georgia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Bicknell Town",
 "site": "bicknellutah.gov",
 "lat": null,
@@ -109009,6 +109510,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Mississippi",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Binger",
+"site": "binger.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Oklahoma",
 "email": [],
 "portal": [],
 "pages": []
@@ -109260,6 +109773,18 @@
 "pages": []
 },
 {
+"name": "Blackstone",
+"site": "blackstonema.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Massachusetts",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Blackstone Fire Department",
 "site": "blackstonemafire.gov",
 "lat": null,
@@ -109485,6 +110010,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Alabama",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Blendon Township",
+"site": "blendontownship-mi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
 "email": [],
 "portal": [],
 "pages": []
@@ -109734,6 +110271,18 @@
 "https://www.blossomtexas.gov/public-information-request",
 "https://www.blossomtexas.gov/open-records"
 ]
+},
+{
+"name": "Blount County Commission",
+"site": "blountcountyal.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Alabama",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Blount County Sheriff's Office",
@@ -110229,6 +110778,18 @@
 ]
 },
 {
+"name": "Bonne Terre Police Department",
+"site": "bonneterrepd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Bonneville County Emergency Communications Center",
 "site": "bonnevillecountyid.gov",
 "lat": null,
@@ -110498,6 +111059,18 @@
 ]
 },
 {
+"name": "Boone County Emergency Management Agency",
+"site": "boonewvema.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "West Virginia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Boon Township",
 "site": "boontownshipmichigan.gov",
 "lat": null,
@@ -110739,6 +111312,18 @@
 "recording@bouldercounty.gov",
 "clerkandrecorder@bouldercounty.gov"
 ],
+"portal": [],
+"pages": []
+},
+{
+"name": "Boulder County",
+"site": "boulderodm.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Colorado",
+"email": [],
 "portal": [],
 "pages": []
 },
@@ -111018,6 +111603,18 @@
 "pages": []
 },
 {
+"name": "Boy Lake Township",
+"site": "boylaketownship.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Boyle County Fiscal Court",
 "site": "boylecountyky.gov",
 "lat": null,
@@ -111246,6 +111843,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Braidwood",
+"site": "braidwood.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Illinois",
 "email": [],
 "portal": [],
 "pages": []
@@ -111707,6 +112316,18 @@
 },
 {
 "name": "Bridgeport",
+"site": "bridgeportohiopd.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Bridgeport",
 "site": "bridgeportwv.gov",
 "lat": null,
 "lon": null,
@@ -111935,6 +112556,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Brinkley",
+"site": "brinkleyar.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Arkansas",
 "email": [],
 "portal": [],
 "pages": []
@@ -112400,6 +113033,18 @@
 ]
 },
 {
+"name": "Brooklyn Park",
+"site": "brooklynparkmn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Brooklyn",
 "site": "brooklyntownwashburnwi.gov",
 "lat": null,
@@ -112630,6 +113275,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Brown County Information Services",
+"site": "browncountywi.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Wisconsin",
 "email": [],
 "portal": [],
 "pages": []
@@ -112880,6 +113537,18 @@
 "pages": []
 },
 {
+"name": "Brundidge",
+"site": "brundidgeal.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Alabama",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Brunswick County",
 "site": "brunswickcountync.gov",
 "lat": null,
@@ -113110,6 +113779,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Buckhannon",
+"site": "buckhannonwv.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "West Virginia",
 "email": [],
 "portal": [],
 "pages": []
@@ -113379,6 +114060,18 @@
 "pages": []
 },
 {
+"name": "Bullock County Commission",
+"site": "bullockcountyal.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Alabama",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Bull Valley",
 "site": "bullvalleyil.gov",
 "lat": null,
@@ -113607,6 +114300,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Wyoming",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Burnett",
+"site": "burnettcountywi.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "Wisconsin",
 "email": [],
 "portal": [],
 "pages": []
@@ -113873,6 +114578,18 @@
 "pages": []
 },
 {
+"name": "Butte County Sheriff's Office",
+"site": "buttesheriffca.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Buxton Police Department",
 "site": "buxtonmepd.gov",
 "lat": null,
@@ -114125,6 +114842,18 @@
 "pages": [
 "https://www.caldwellcosdmo.gov/record-requests"
 ]
+},
+{
+"name": "Caldwell County",
+"site": "caldwellcountymo.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Caldwell County",
@@ -114389,6 +115118,18 @@
 "pages": []
 },
 {
+"name": "Calhoun County Sheriff's Office",
+"site": "calhounsoga.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Georgia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "California City",
 "site": "californiacity-ca.gov",
 "lat": null,
@@ -114628,6 +115369,20 @@
 "https://www.cambridgeia.gov/publicrecords",
 "https://www.cambridgeia.gov/open-records"
 ]
+},
+{
+"name": "The Village of Cambridge",
+"site": "cambridgeny.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New York",
+"email": [
+"clerk@cambridgeny.gov"
+],
+"portal": [],
+"pages": []
 },
 {
 "name": "Cambridge Township",
@@ -114898,6 +115653,24 @@
 ]
 },
 {
+"name": "Campbell County",
+"site": "campbellcountywy.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Wyoming",
+"email": [],
+"portal": [
+"https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+"https://assets.nextrequest.com/manifest.json",
+"https://www.nextrequest.com/privacypolicy"
+],
+"pages": [
+"https://campbellcountywy.nextrequest.com/"
+]
+},
+{
 "name": "Campbell MO",
 "site": "campbellmo.gov",
 "lat": null,
@@ -115131,6 +115904,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Canajoharie",
+"site": "canjo.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -115402,6 +116187,20 @@
 "pages": []
 },
 {
+"name": "Cape Canaveral: CAPE Center",
+"site": "capecanaveral.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Florida",
+"email": [
+"cityclerk@capecanaveral.gov"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Barnstable County",
 "site": "capecod.gov",
 "lat": null,
@@ -115627,6 +116426,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Arkansas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Carlisle County",
+"site": "carlislecounty.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Kentucky",
 "email": [],
 "portal": [],
 "pages": []
@@ -115883,6 +116694,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Carroll County",
+"site": "carrollcountyin.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Indiana",
 "email": [],
 "portal": [],
 "pages": []
@@ -116149,6 +116972,20 @@
 "https://www.cartercountymt.gov/publicrecords",
 "https://www.cartercountymt.gov/open-records"
 ]
+},
+{
+"name": "Carter",
+"site": "cartercountytn.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "Tennessee",
+"email": [
+"clerk@cartercountytn.gov"
+],
+"portal": [],
+"pages": []
 },
 {
 "name": "Carteret",
@@ -116420,6 +117257,18 @@
 "pages": []
 },
 {
+"name": "Cass County",
+"site": "casscountynd.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "North Dakota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Cass County Nebraska",
 "site": "casscountyne.gov",
 "lat": null,
@@ -116660,6 +117509,20 @@
 "pages": []
 },
 {
+"name": "CATO TOWNSHIP",
+"site": "catotownshipmi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [
+"catotwp.clerk@gmail.com"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Catron County",
 "site": "catroncountynm.gov",
 "lat": null,
@@ -116885,6 +117748,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Maryland",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Cecil Township PA",
+"site": "ceciltownship-pa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
 "email": [],
 "portal": [],
 "pages": []
@@ -117119,6 +117994,18 @@
 "pages": []
 },
 {
+"name": "Center Harbor",
+"site": "centerharbornh.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Hampshire",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Center Township Police Department",
 "site": "centerpolicebcpa.gov",
 "lat": null,
@@ -117345,6 +118232,18 @@
 },
 {
 "name": "Centre",
+"site": "centreal.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Alabama",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Centre",
 "site": "centrecountypa.gov",
 "lat": null,
 "lon": null,
@@ -117558,6 +118457,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Chamblee",
+"site": "chambleega.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Georgia",
 "email": [],
 "portal": [],
 "pages": []
@@ -117814,6 +118725,18 @@
 "pages": []
 },
 {
+"name": "Charlestown Police Department",
+"site": "charlestownpoliceri.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Rhode Island",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Charlestown",
 "site": "charlestownri.gov",
 "lat": null,
@@ -118032,6 +118955,22 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Chatham",
+"site": "chathamil.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.chathamil.gov/public-records",
+"https://www.chathamil.gov/publicrecords",
+"https://www.chathamil.gov/open-records"
+]
 },
 {
 "name": "CHATHAM, LA",
@@ -118282,6 +119221,18 @@
 "portal": [
 "https://www.townforms.com/FOIADirect-ChelmsfordMACitizens"
 ],
+"pages": []
+},
+{
+"name": "Chelmsford Police Department",
+"site": "chelmsfordpd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Massachusetts",
+"email": [],
+"portal": [],
 "pages": []
 },
 {
@@ -118540,6 +119491,18 @@
 "pages": []
 },
 {
+"name": "Chesapeake Beach",
+"site": "chesapeakebeachmd.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Maryland",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Chesapeake",
 "site": "chesapeakeva.gov",
 "lat": null,
@@ -118777,6 +119740,28 @@
 "pages": []
 },
 {
+"name": "Cheyenne",
+"site": "cheyenne.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Wyoming",
+"email": [
+"cityclerk@cheyennecity.org"
+],
+"portal": [
+"https://cheyennewy.govqa.us/WEBAPP/_rs/(S(bj1r5v3x55ljylcgqrocrln1))/OpenRecordsSummary.aspx",
+"https://cheyennewy.govqa.us/WEBAPP/_rs/(S(bj1r5v3x55ljylcgqrocrln1))/AnswerDetail.aspx?sSessionID=&amp;aid=131",
+"https://cheyennewy.govqa.us/WEBAPP/_rs/(S(bj1r5v3x55ljylcgqrocrln1))/AnswerDetail.aspx?sSessionID=&amp;aid=123"
+],
+"pages": [
+"https://cheyennewy.govqa.us/WEBAPP/_rs/(S(bj1r5v3x55ljylcgqrocrln1))/supporthome.aspx",
+"https://cheyennewy.govqa.us/WEBAPP/_rs/(S(bj1r5v3x55ljylcgqrocrln1))/OpenRecordsSummary.aspx",
+"https://cheyennewy.govqa.us/WEBAPP/_rs/(S(bj1r5v3x55ljylcgqrocrln1))/error.aspx?sSessionID=&err_msg=Issue+Not+Found."
+]
+},
+{
 "name": "Cheyenne County Courthouse",
 "site": "cheyennecountyne.gov",
 "lat": null,
@@ -118996,6 +119981,18 @@
 "kind": "City",
 "pop": 0,
 "state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Chinook",
+"site": "chinookmt.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Montana",
 "email": [],
 "portal": [],
 "pages": []
@@ -119256,6 +120253,18 @@
 ]
 },
 {
+"name": "Christian County Government",
+"site": "christiancountymo.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Christian County Health Department",
 "site": "christiancountymohealth.gov",
 "lat": null,
@@ -119503,6 +120512,26 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Citrus County Board of County Commissioners",
+"site": "citrusbocc.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [
+"https://www.linkedin.com/sharing/share-offsite/?url=http://www.citruscounty.gov/publicrecords",
+"https://www.facebook.com/sharer/sharer.php?u=http://www.citruscounty.gov/publicrecords",
+"https://www.twitter.com/intent/tweet?url=http://www.citruscounty.gov/publicrecords"
+],
+"pages": [
+"https://www.citruscounty.gov/public-records",
+"https://www.citruscounty.gov/publicrecords",
+"https://www.citruscounty.gov/open-records"
+]
 },
 {
 "name": "Citrus County Board of County Commissioners",
@@ -119766,6 +120795,18 @@
 ]
 },
 {
+"name": "Anthony",
+"site": "cityofanthonynm.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Mexico",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Antigo",
 "site": "cityofantigo.gov",
 "lat": null,
@@ -119996,6 +121037,18 @@
 "https://granicus.com/product/opencities",
 "https://granicus.com/solution/govaccess/opencities/"
 ],
+"pages": []
+},
+{
+"name": "Bay",
+"site": "cityofbayar.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Arkansas",
+"email": [],
+"portal": [],
 "pages": []
 },
 {
@@ -120239,6 +121292,18 @@
 ]
 },
 {
+"name": "Blevins",
+"site": "cityofblevinsar.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Arkansas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Blue Mountain",
 "site": "cityofbluemtnar.gov",
 "lat": null,
@@ -120444,6 +121509,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Brookport",
+"site": "cityofbrookportil.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Illinois",
 "email": [],
 "portal": [],
 "pages": []
@@ -120688,6 +121765,18 @@
 "pages": []
 },
 {
+"name": "Capitola",
+"site": "cityofcapitola.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Carson, California",
 "site": "cityofcarsonca.gov",
 "lat": null,
@@ -120910,6 +121999,25 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Clare",
+"site": "cityofclare.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [
+"https://cityofclare.gov/forms-permits/#foia",
+"https://cityofclare.gov/foia-request/",
+"https://cityofclare.gov/wp-content/uploads/2022/11/FOIA-Policy-Procedures-Guidelines.pdf"
+],
+"pages": [
+"https://cityofclare.gov/clerk-elections/",
+"https://cityofclare.gov/foia-request/"
+]
 },
 {
 "name": "Claremont",
@@ -121148,6 +122256,18 @@
 },
 {
 "name": "Cottonwood",
+"site": "cityofcottonwoodmn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Cottonwood",
 "site": "cityofcottonwoodtexas.gov",
 "lat": null,
 "lon": null,
@@ -121372,6 +122492,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Delaware",
+"site": "cityofdelawareoh.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Ohio",
 "email": [],
 "portal": [],
 "pages": []
@@ -121835,6 +122967,18 @@
 "pages": []
 },
 {
+"name": "Fairfield",
+"site": "cityoffairfieldidaho.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Idaho",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Fairview",
 "site": "cityoffairviewmo.gov",
 "lat": null,
@@ -122064,6 +123208,18 @@
 "kind": "City",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Fort Walton Beach",
+"site": "cityoffwb.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Florida",
 "email": [],
 "portal": [],
 "pages": []
@@ -122322,6 +123478,18 @@
 ]
 },
 {
+"name": "Goleta",
+"site": "cityofgoleta.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Goodhue, Minnesota",
 "site": "cityofgoodhue.gov",
 "lat": null,
@@ -122543,6 +123711,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Harrison",
+"site": "cityofharrison-mi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
 "email": [],
 "portal": [],
 "pages": []
@@ -122790,6 +123970,18 @@
 "pages": []
 },
 {
+"name": "Hondo",
+"site": "cityofhondo-tx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "HONEY GROVE",
 "site": "cityofhoneygrove.gov",
 "lat": null,
@@ -122994,6 +124186,18 @@
 "kind": "City",
 "pop": 0,
 "state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Inman",
+"site": "cityofinmanks.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Kansas",
 "email": [],
 "portal": [],
 "pages": []
@@ -123241,6 +124445,18 @@
 "pages": []
 },
 {
+"name": "Kewaunee",
+"site": "cityofkewauneewi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Keyser",
 "site": "cityofkeyser.gov",
 "lat": null,
@@ -123466,6 +124682,18 @@
 "pages": []
 },
 {
+"name": "Lapwai",
+"site": "cityoflapwai.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Idaho",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Las Animas",
 "site": "cityoflasanimasco.gov",
 "lat": null,
@@ -123655,6 +124883,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Tennessee",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "louisville police department",
+"site": "cityoflouisvillems.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Mississippi",
 "email": [],
 "portal": [],
 "pages": []
@@ -123886,6 +125126,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Washington",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Maywood Park",
+"site": "cityofmaywoodparkor.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oregon",
 "email": [],
 "portal": [],
 "pages": []
@@ -124125,6 +125377,18 @@
 "pages": []
 },
 {
+"name": "Mineral Point",
+"site": "cityofmineralpointwi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Minnetrista",
 "site": "cityofminnetrista.gov",
 "lat": null,
@@ -124353,6 +125617,18 @@
 "pages": [
 "https://www.cityofmtnviewarkansas.gov/upages.php?id=142"
 ]
+},
+{
+"name": "Nanticoke",
+"site": "cityofnanticoke-pa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Nelsonville",
@@ -124595,6 +125871,22 @@
 ]
 },
 {
+"name": "Norphlet",
+"site": "cityofnorphlet.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Arkansas",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.cityofnorphlet.gov/public-records",
+"https://www.cityofnorphlet.gov/publicrecords",
+"https://www.cityofnorphlet.gov/open-records"
+]
+},
+{
 "name": "Northern",
 "site": "cityofnorthern.gov",
 "lat": null,
@@ -124801,6 +126093,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Orinda",
+"site": "cityoforinda.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
 "email": [],
 "portal": [],
 "pages": []
@@ -125037,6 +126341,18 @@
 "pages": []
 },
 {
+"name": "Patterson",
+"site": "cityofpattersonla.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Louisiana",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Paynesville",
 "site": "cityofpaynesville.gov",
 "lat": null,
@@ -125240,6 +126556,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Plainville Kansas",
+"site": "cityofplainville-ks.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Kansas",
 "email": [],
 "portal": [],
 "pages": []
@@ -125454,6 +126782,18 @@
 "https://cityofredding.justfoia.com/publicportal/home/newrequest",
 "https://cityofredding.gov/government/transparency/public_records.php"
 ]
+},
+{
+"name": "Redmond",
+"site": "cityofredmond.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Washington",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Rich Hill",
@@ -125931,6 +127271,22 @@
 "pages": []
 },
 {
+"name": "Soledad",
+"site": "cityofsoledad.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.cityofsoledad.gov/public-records",
+"https://www.cityofsoledad.gov/open-records",
+"https://www.cityofsoledad.gov/foia"
+]
+},
+{
 "name": "SOUR LAKE",
 "site": "cityofsourlake.gov",
 "lat": null,
@@ -126183,6 +127539,18 @@
 "pages": []
 },
 {
+"name": "Sylvester",
+"site": "cityofsylvester.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Georgia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Tehachapi",
 "site": "cityoftehachapi.gov",
 "lat": null,
@@ -126406,6 +127774,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Mississippi",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Union",
+"site": "cityofunionor.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oregon",
 "email": [],
 "portal": [],
 "pages": []
@@ -126641,6 +128021,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Warren",
+"site": "cityofwarrenpa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
 "email": [],
 "portal": [],
 "pages": []
@@ -126887,6 +128279,18 @@
 "pages": []
 },
 {
+"name": "Whitney",
+"site": "cityofwhitneytx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Wiggins",
 "site": "cityofwiggins.gov",
 "lat": null,
@@ -127117,6 +128521,18 @@
 "pages": [
 "https://www.cityofwynne.gov/government/public-records"
 ]
+},
+{
+"name": "Wyoming",
+"site": "cityofwyomingil.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "York",
@@ -127389,6 +128805,18 @@
 "pages": []
 },
 {
+"name": "Clark County Kentucky",
+"site": "clarkcoky.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Kentucky",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Clark County Arkansas",
 "site": "clarkcountyar.gov",
 "lat": null,
@@ -127620,6 +129048,20 @@
 },
 {
 "name": "Clarksville",
+"site": "clarksville-mo.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Missouri",
+"email": [
+"cityclerk@clarksvillemo.us"
+],
+"portal": [],
+"pages": []
+},
+{
+"name": "Clarksville",
 "site": "clarksvillear.gov",
 "lat": null,
 "lon": null,
@@ -127836,6 +129278,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "North Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Clayton",
+"site": "claytonal.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Alabama",
 "email": [],
 "portal": [],
 "pages": []
@@ -128062,6 +129516,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Idaho",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Clearwater County",
+"site": "clearwatercountymn.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Minnesota",
 "email": [],
 "portal": [],
 "pages": []
@@ -128322,6 +129788,18 @@
 ]
 },
 {
+"name": "Cleves",
+"site": "clevesoh.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Clewiston Police Department",
 "site": "clewistonpd.gov",
 "lat": null,
@@ -128574,6 +130052,18 @@
 "pages": []
 },
 {
+"name": "Clinton Town",
+"site": "clintonnj.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Clinton",
 "site": "clintonoh.gov",
 "lat": null,
@@ -128801,6 +130291,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Mount Vernon",
+"site": "cmvny.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -129038,6 +130540,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Wyoming",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Coeburn",
+"site": "coeburnva.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Virginia",
 "email": [],
 "portal": [],
 "pages": []
@@ -129288,6 +130802,18 @@
 "pages": []
 },
 {
+"name": "Coldwater",
+"site": "coldwaterohio.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Coldwater Ohio Police Department",
 "site": "coldwaterohiopd.gov",
 "lat": null,
@@ -129521,6 +131047,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Florida",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Collin County Government",
+"site": "collincountytexas.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Texas",
 "email": [],
 "portal": [],
 "pages": []
@@ -129771,6 +131309,18 @@
 "pages": []
 },
 {
+"name": "Columbiana",
+"site": "columbianaohio.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Columbia",
 "site": "columbiatn.gov",
 "lat": null,
@@ -130012,6 +131562,18 @@
 "lat": null,
 "lon": null,
 "kind": "Org",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Comanche",
+"site": "comanchetexas.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
 "pop": 0,
 "state": "Texas",
 "email": [],
@@ -130279,6 +131841,18 @@
 "email": [
 "clerk@constantiany.gov"
 ],
+"portal": [],
+"pages": []
+},
+{
+"name": "Contra Costa County Health Services",
+"site": "contracostahealth.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "California",
+"email": [],
 "portal": [],
 "pages": []
 },
@@ -130552,6 +132126,18 @@
 ]
 },
 {
+"name": "Cook County Minnesota",
+"site": "cookcountymn.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Cook County Sheriff's Office",
 "site": "cookcountysheriffil.gov",
 "lat": null,
@@ -130775,6 +132361,29 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Coral Springs",
+"site": "coralsprings.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Florida",
+"email": [
+"clerks@coralsprings.gov",
+"pdrecords@coralsprings.gov"
+],
+"portal": [
+"https://coralspringsfl.justfoia.com/publicportal/home/search",
+"https://coralspringsfl.justfoia.com/publicportal/home/newrequest",
+"https://coralspringsfl.justfoia.com/publicportal/home/track"
+],
+"pages": [
+"https://www.coralsprings.gov/Government/City-Clerks-Office/Public-Records-Request",
+"https://coralspringsfl.justfoia.com/publicportal/home/track",
+"https://coralspringsfl.justfoia.com/publicportal/home/newrequest"
+]
 },
 {
 "name": "Coral Springs Police Department",
@@ -131018,6 +132627,18 @@
 "pages": []
 },
 {
+"name": "Fort Bend County",
+"site": "coronavirusfortbend.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Corrales",
 "site": "corrales-nm.gov",
 "lat": null,
@@ -131236,6 +132857,18 @@
 {
 "name": "Costilla County",
 "site": "costillacounty-co.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Colorado",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "COSTILLA, COUNTY OF",
+"site": "costillacounty.gov",
 "lat": null,
 "lon": null,
 "kind": "Org",
@@ -131468,6 +133101,18 @@
 "kind": "City",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Coventry",
+"site": "coventry-ct.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Connecticut",
 "email": [],
 "portal": [],
 "pages": []
@@ -131735,6 +133380,18 @@
 "pages": []
 },
 {
+"name": "Craighead County",
+"site": "craigheadcountyar.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Arkansas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Crane, Missouri",
 "site": "cranemo.gov",
 "lat": null,
@@ -131963,6 +133620,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Creston Iowa",
+"site": "crestoniowa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Iowa",
 "email": [],
 "portal": [],
 "pages": []
@@ -132203,6 +133872,18 @@
 "email": [
 "croswellclerk@croswell.us"
 ],
+"portal": [],
+"pages": []
+},
+{
+"name": "Croton-on-Hudson",
+"site": "crotononhudson-ny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
 "portal": [],
 "pages": []
 },
@@ -132452,6 +134133,21 @@
 {
 "name": "Culver City Fire Department",
 "site": "culvercityfd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [
+"https://granicus.com/product/opencities",
+"https://granicus.com/solution/govaccess/opencities/"
+],
+"pages": []
+},
+{
+"name": "Culver City",
+"site": "culvercitypd.gov",
 "lat": null,
 "lon": null,
 "kind": "City",
@@ -132733,6 +134429,18 @@
 "pages": []
 },
 {
+"name": "Custer County Montana",
+"site": "custercountymt.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Montana",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Custer County Montana Transit",
 "site": "custercountymttransit.gov",
 "lat": null,
@@ -132975,6 +134683,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Georgia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Daggett County",
+"site": "daggettcounty.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Utah",
 "email": [],
 "portal": [],
 "pages": []
@@ -133481,6 +135201,20 @@
 "pages": []
 },
 {
+"name": "Dardanelle",
+"site": "dardanelle.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Arkansas",
+"email": [
+"cityclerk@dardanelle.gov"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Dardanelle Police Department",
 "site": "dardanellepd.gov",
 "lat": null,
@@ -133731,6 +135465,18 @@
 ]
 },
 {
+"name": "Davidson",
+"site": "davidsoncountync.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "North Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Davie",
 "site": "daviecountync.gov",
 "lat": null,
@@ -133962,6 +135708,18 @@
 "pages": []
 },
 {
+"name": "Dayton",
+"site": "daytonva.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Virginia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Durham County",
 "site": "dconc.gov",
 "lat": null,
@@ -134180,6 +135938,18 @@
 "pages": []
 },
 {
+"name": "Deephaven",
+"site": "deephaven.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Deephaven Police Department",
 "site": "deephavenpolice.gov",
 "lat": null,
@@ -134391,6 +136161,18 @@
 "lat": null,
 "lon": null,
 "kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Delafield Police",
+"site": "delafieldpolice.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
 "pop": 0,
 "state": "Wisconsin",
 "email": [],
@@ -134629,6 +136411,21 @@
 "state": "California",
 "email": [],
 "portal": [],
+"pages": []
+},
+{
+"name": "Delta County, Colorado",
+"site": "deltacountyco.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Colorado",
+"email": [],
+"portal": [
+"https://www.courts.state.co.us/publicrecords.cfm",
+"https://deltacountyco.nextrequest.com/"
+],
 "pages": []
 },
 {
@@ -134888,6 +136685,23 @@
 "pages": []
 },
 {
+"name": "De Pere",
+"site": "deperewi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Wisconsin",
+"email": [
+"dppdrecords@deperewi.gov"
+],
+"portal": [],
+"pages": [
+"https://www.deperewi.gov/topic/index.php?topicid=185&structureid=97",
+"https://www.deperewi.gov/egov/apps/services/index.egov?view=detail;id=36"
+]
+},
+{
 "name": "Depew",
 "site": "depewny.gov",
 "lat": null,
@@ -135138,6 +136952,18 @@
 "pages": []
 },
 {
+"name": "Deweyville",
+"site": "deweyvilleut.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Utah",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "DeWitt",
 "site": "dewittar.gov",
 "lat": null,
@@ -135380,6 +137206,18 @@
 "pages": []
 },
 {
+"name": "Dickson City Borough",
+"site": "dicksoncity-pa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Dickson County Sheriff's Office",
 "site": "dicksoncosheriff.gov",
 "lat": null,
@@ -135592,6 +137430,18 @@
 {
 "name": "DOBBS FERRY",
 "site": "dobbsferry.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Dobbs Ferry",
+"site": "dobbsferrypolice.gov",
 "lat": null,
 "lon": null,
 "kind": "Town",
@@ -135839,6 +137689,18 @@
 },
 {
 "name": "Douglas",
+"site": "douglas-ma.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Massachusetts",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Douglas",
 "site": "douglasaz.gov",
 "lat": null,
 "lon": null,
@@ -136074,6 +137936,18 @@
 "pages": []
 },
 {
+"name": "Dover",
+"site": "doverny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Dover Township",
 "site": "dovertownshipunionoh.gov",
 "lat": null,
@@ -136292,6 +138166,22 @@
 "pages": [
 "https://www.duboisidaho.gov/public-information-request",
 "https://www.duboisidaho.gov/open-records"
+]
+},
+{
+"name": "DuBois PA",
+"site": "duboispa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": [
+"https://duboispa.gov/government/right-to-know/",
+"https://duboispa.gov/government/right-to-know/",
+"https://duboispa.gov/information/public-information/"
 ]
 },
 {
@@ -136528,6 +138418,18 @@
 "clerk@dundeevillageny.com",
 "dclerk@dundeevillageny.com"
 ],
+"portal": [],
+"pages": []
+},
+{
+"name": "Dundy County Courthouse",
+"site": "dundycountyne.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Nebraska",
+"email": [],
 "portal": [],
 "pages": []
 },
@@ -136785,6 +138687,20 @@
 "pages": []
 },
 {
+"name": "Durand",
+"site": "durandwi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.durandwipolice.com/records-request"
+]
+},
+{
 "name": "Durango",
 "site": "durangoco.gov",
 "lat": null,
@@ -137034,6 +138950,20 @@
 },
 {
 "name": "Eagle Lake",
+"site": "eaglelakefl.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.eaglelakefl.gov/clerk/page/public-records-request"
+]
+},
+{
+"name": "Eagle Lake",
 "site": "eaglelakemn.gov",
 "lat": null,
 "lon": null,
@@ -137258,6 +139188,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "East Carbon Police Department",
+"site": "eastcarboncity-pd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Utah",
 "email": [],
 "portal": [],
 "pages": []
@@ -137490,6 +139432,18 @@
 "kind": "City",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "East Haven Police Department",
+"site": "easthavenpolice-ct.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Connecticut",
 "email": [],
 "portal": [],
 "pages": []
@@ -137731,6 +139685,28 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Eastpointe",
+"site": "eastpointemi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [
+"eastpointefoia@eastpointecity.org",
+"records@eastpointecity.org"
+],
+"portal": [
+"https://cms9.revize.com/revize/security/index.jsp?webspace=eastpointemi&filename=/government/freedom_of_information_act_(foia).php",
+"https://www.facebook.com/sharer/sharer.php?u=http://www.eastpointemi.gov/government/freedom_of_information_act_(foia).php",
+"https://www.twitter.com/home?status=http://www.eastpointemi.gov/government/freedom_of_information_act_(foia).php"
+],
+"pages": [
+"https://www.eastpointemi.gov/government/freedom_of_information_act_(foia).php",
+"https://www.eastpointemi.gov/government/freedom_of_information_act_(foia).php"
+]
 },
 {
 "name": "East Point",
@@ -137983,6 +139959,18 @@
 "pages": []
 },
 {
+"name": "Eau Claire",
+"site": "eauclairevillage-mi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Eau Pleine in Portage County",
 "site": "eaupleineportagewi.gov",
 "lat": null,
@@ -138222,6 +140210,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "North Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Edgerton",
+"site": "edgerton-ohio.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Ohio",
 "email": [],
 "portal": [],
 "pages": []
@@ -138479,6 +140479,18 @@
 "pages": []
 },
 {
+"name": "Elbert County Government",
+"site": "elbertcounty-co.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Colorado",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Elburn",
 "site": "elburn.gov",
 "lat": null,
@@ -138727,6 +140739,18 @@
 "pages": []
 },
 {
+"name": "Elkhart County",
+"site": "elkhartcounty.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Indiana",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Elkhart Lake",
 "site": "elkhartlakewi.gov",
 "lat": null,
@@ -138958,6 +140982,18 @@
 "pages": []
 },
 {
+"name": "Elma",
+"site": "elmanewyork.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Elmendorf",
 "site": "elmendorftx.gov",
 "lat": null,
@@ -139170,6 +141206,18 @@
 {
 "name": "El Segundo",
 "site": "elsegundofire.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "El Segundo",
+"site": "elsegundolibrary.gov",
 "lat": null,
 "lon": null,
 "kind": "City",
@@ -139417,6 +141465,18 @@
 "pages": []
 },
 {
+"name": "Enfield",
+"site": "enfieldnc.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "North Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Enfield NH",
 "site": "enfieldnh.gov",
 "lat": null,
@@ -139642,6 +141702,18 @@
 "kind": "City",
 "pop": 0,
 "state": "New Hampshire",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Erath County Emergency Management",
+"site": "erathudctx.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Texas",
 "email": [],
 "portal": [],
 "pages": []
@@ -139908,6 +141980,18 @@
 "pages": []
 },
 {
+"name": "Esopus",
+"site": "esopus.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Espanola",
 "site": "espanolanm.gov",
 "lat": null,
@@ -140153,6 +142237,20 @@
 "pages": []
 },
 {
+"name": "Eureka Township",
+"site": "eurekamn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [
+"clerk@eurekamn.gov"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Eureka Springs",
 "site": "eurekaspringsar.gov",
 "lat": null,
@@ -140388,6 +142486,18 @@
 "pages": []
 },
 {
+"name": "Exeter",
+"site": "exeterri.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Rhode Island",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Explore Southport (Community Relations Department)",
 "site": "exploresouthportnc.gov",
 "lat": null,
@@ -140613,6 +142723,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Fairfield Connecticut",
+"site": "fairfieldct.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Connecticut",
 "email": [],
 "portal": [],
 "pages": []
@@ -140859,6 +142981,18 @@
 "pages": [
 "https://www.fairmountga.gov/1206/Open-Records-Request"
 ]
+},
+{
+"name": "Fair Oaks Ranch",
+"site": "fairoaksranch.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Fairport",
@@ -141113,6 +143247,20 @@
 "pages": []
 },
 {
+"name": "Falls Township",
+"site": "fallspa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.fallspa.gov/right-to-know/"
+]
+},
+{
 "name": "Falmouth",
 "site": "falmouthfirema.gov",
 "lat": null,
@@ -141349,6 +143497,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Farmington Police Department",
+"site": "farmingtonpdnh.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Hampshire",
 "email": [],
 "portal": [],
 "pages": []
@@ -141594,6 +143754,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Fayette Town of",
+"site": "fayetteutah.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Utah",
 "email": [],
 "portal": [],
 "pages": []
@@ -141852,6 +144024,18 @@
 "pages": []
 },
 {
+"name": "Finney County Attorney's Office",
+"site": "ficountyattorneyks.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Kansas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Fife",
 "site": "fifewa.gov",
 "lat": null,
@@ -142095,6 +144279,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Fish Lake Township",
+"site": "fishlaketownshipmn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
 "email": [],
 "portal": [],
 "pages": []
@@ -142357,6 +144553,26 @@
 },
 {
 "name": "Florence County",
+"site": "florencecountysc.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "South Carolina",
+"email": [
+"foiarequest@florenceco.org"
+],
+"portal": [
+"https://www.florencecountysc.gov/foia.php",
+"https://s3.amazonaws.com/files.florenceco.org/public/Administration/FOIA/Resolution%20No%2009-2012%20FOIA%20Policy%20and%20Res%2001-2018%20amend.pdf",
+"https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/Administration/FOIA/2023/FOIA%20New%20Form%2004182023.pdf"
+],
+"pages": [
+"https://www.florencecountysc.gov/foia.php"
+]
+},
+{
+"name": "Florence County",
 "site": "florencecountywi.gov",
 "lat": null,
 "lon": null,
@@ -142601,6 +144817,20 @@
 "pages": []
 },
 {
+"name": "Floyd County Sheriff's Office",
+"site": "floydsheriffga.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Georgia",
+"email": [],
+"portal": [
+"https://floydcountyga.nextrequest.com/"
+],
+"pages": []
+},
+{
 "name": "Public Defender Thirteenth Judicial Circuit Florida",
 "site": "flpd13.gov",
 "lat": null,
@@ -142812,6 +145042,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Forest Grove",
+"site": "forestgrove-or.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oregon",
 "email": [],
 "portal": [],
 "pages": []
@@ -143067,6 +145309,18 @@
 "pages": []
 },
 {
+"name": "Fort Bend County Libraries",
+"site": "fortbendlibraries.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Fort Bragg",
 "site": "fortbraggca.gov",
 "lat": null,
@@ -143295,6 +145549,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Fort Wright",
+"site": "fortwrightky.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Kentucky",
 "email": [],
 "portal": [],
 "pages": []
@@ -143536,6 +145802,24 @@
 "pages": []
 },
 {
+"name": "Frankenmuth",
+"site": "frankenmuthcity.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [
+"https://frankenmuthcity.com/new_page/foia.php",
+"https://www.facebook.com/sharer/sharer.php?u=http://frankenmuthcity.com/new_page/foia.php",
+"https://www.twitter.com/intent/tweet?url=http://frankenmuthcity.com/new_page/foia.php"
+],
+"pages": [
+"https://frankenmuthcity.com/new_page/foia.php"
+]
+},
+{
 "name": "Franklin",
 "site": "franklin-nj.gov",
 "lat": null,
@@ -143766,6 +146050,18 @@
 "https://franklincountyne.gov/wp-login.php?redirect_to=https%3A%2F%2Ffranklincountyne.gov%2Fpublic-records%2F",
 "https://franklincountyne.gov/public-records/"
 ]
+},
+{
+"name": "Franklin",
+"site": "franklincountyny.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Franklin County Data Center",
@@ -144047,6 +146343,18 @@
 "pages": []
 },
 {
+"name": "Franklinton Police Department",
+"site": "franklintonpdla.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Louisiana",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Franklin Township",
 "site": "franklintownshipcarbonpa.gov",
 "lat": null,
@@ -144279,6 +146587,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Fredon",
+"site": "fredonnj.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Jersey",
 "email": [],
 "portal": [],
 "pages": []
@@ -144519,6 +146839,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Fremont Police Department",
+"site": "fremontpolice.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
 "email": [],
 "portal": [],
 "pages": []
@@ -144771,6 +147103,18 @@
 "pages": [
 "https://www.friendsvilletn.gov/public-records"
 ]
+},
+{
+"name": "Frisco",
+"site": "friscotx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Frohn Township",
@@ -145040,6 +147384,18 @@
 "pages": []
 },
 {
+"name": "Fulton",
+"site": "fultoncountyny.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Fultondale",
 "site": "fultondaleal.gov",
 "lat": null,
@@ -145277,6 +147633,24 @@
 "pages": []
 },
 {
+"name": "Galesburg, IL",
+"site": "galesburgil.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [
+"https://galesburgil.justfoia.com/publicportal/home/newrequest",
+"https://galesburgil.justfoia.com/Forms/Launch/871c0449-ea75-46b0-adb4-3419acf15b98",
+"https://galesburgil.justfoia.com/publicportal"
+],
+"pages": [
+"https://galesburgil.justfoia.com/publicportal/home/newrequest"
+]
+},
+{
 "name": "Gallatin County",
 "site": "gallatinky.gov",
 "lat": null,
@@ -145511,6 +147885,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Alabama",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Garden Grove",
+"site": "gardengroveca.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
 "email": [],
 "portal": [],
 "pages": []
@@ -145755,6 +148141,18 @@
 {
 "name": "Garvin County",
 "site": "garvincountyok.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Oklahoma",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Garvin County",
+"site": "garvincountysheriff.gov",
 "lat": null,
 "lon": null,
 "kind": "Org",
@@ -146017,6 +148415,18 @@
 "pages": []
 },
 {
+"name": "Geneva",
+"site": "genevaohio.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Geneva-On-The-Lake",
 "site": "genevaonthelakeoh.gov",
 "lat": null,
@@ -146256,6 +148666,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "German Flatts",
+"site": "germanflatts.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -146507,6 +148929,18 @@
 "pages": []
 },
 {
+"name": "Gila County",
+"site": "gilacountyaz.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Arizona",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Gilbert",
 "site": "gilbertmn.gov",
 "lat": null,
@@ -146741,6 +149175,24 @@
 "pages": []
 },
 {
+"name": "Gladstone",
+"site": "gladstonemi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [
+"https://www.gladstonemi.gov/506/Freedom-of-Information-FOIA-Request",
+"https://www.gladstonemi.gov/DocumentCenter/View/787/FOIA-Appeal-of-Excessive-Fee",
+"https://www.gladstonemi.gov/DocumentCenter/View/786/FOIA-Appeal-for-Denial-of-Record"
+],
+"pages": [
+"https://www.gladstonemi.gov/506/Freedom-of-Information-FOIA-Request"
+]
+},
+{
 "name": "Gladwin County",
 "site": "gladwincounty-mi.gov",
 "lat": null,
@@ -146953,6 +149405,20 @@
 "pop": 0,
 "state": "New Jersey",
 "email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Glenmore",
+"site": "glenmorewisconsin.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [
+"clerk@glenmorewisconsin.gov"
+],
 "portal": [],
 "pages": []
 },
@@ -147214,6 +149680,26 @@
 ]
 },
 {
+"name": "Gogebic County",
+"site": "gogebiccountymi.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [
+"https://www.gogebic.gov/i_want_to/apply_for/foia.php",
+"https://www.facebook.com/sharer/sharer.php?u=http://www.gogebic.gov/publicrecords",
+"https://www.twitter.com/home?status=http://www.gogebic.gov/publicrecords"
+],
+"pages": [
+"https://www.gogebic.gov/public-records",
+"https://www.gogebic.gov/publicrecords",
+"https://www.gogebic.gov/open-records"
+]
+},
+{
 "name": "Gold Beach",
 "site": "goldbeachoregon.gov",
 "lat": null,
@@ -147433,6 +149919,18 @@
 "https://www.goodthundermn.gov/public-information-request",
 "https://www.goodthundermn.gov/open-records"
 ]
+},
+{
+"name": "Gordon",
+"site": "gordoncountyga.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "Georgia",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Gordonsville",
@@ -147676,6 +150174,18 @@
 "pages": []
 },
 {
+"name": "Graford",
+"site": "grafordtx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Grafton Illinois",
 "site": "grafton-il.gov",
 "lat": null,
@@ -147905,6 +150415,22 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "GRAND RIVER VILLAGE",
+"site": "grandriverohio.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.grandriverohio.gov/public-records",
+"https://www.grandriverohio.gov/publicrecords",
+"https://www.grandriverohio.gov/open-records"
+]
 },
 {
 "name": "Grand Saline",
@@ -148145,6 +150671,24 @@
 "pages": []
 },
 {
+"name": "Grants",
+"site": "grantsnm.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Mexico",
+"email": [],
+"portal": [
+"https://grantsnm.nextrequest.com/requests/new",
+"https://granicus.com/product/opencities",
+"https://granicus.com/solution/govaccess/opencities/"
+],
+"pages": [
+"https://grantsnm.nextrequest.com/requests/new"
+]
+},
+{
 "name": "Grants Pass",
 "site": "grantspassoregon.gov",
 "lat": null,
@@ -148376,6 +150920,20 @@
 ]
 },
 {
+"name": "Great Falls, SC",
+"site": "greatfallssc.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "South Carolina",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.greatfallssc.gov/government/public-records"
+]
+},
+{
 "name": "Great Neck Estates",
 "site": "greatneckestates-ny.gov",
 "lat": null,
@@ -148592,6 +151150,18 @@
 {
 "name": "Greene County, MO",
 "site": "greenecountymo.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Greene County Prosecuting Attorney's Office",
+"site": "greenecountymoprosecutor.gov",
 "lat": null,
 "lon": null,
 "kind": "Org",
@@ -148833,6 +151403,21 @@
 "pages": [
 "https://www.greenfieldtownshippa.gov/document-category/right-to-know/",
 "https://www.greenfieldtownshippa.gov/1314-2/"
+]
+},
+{
+"name": "Greenhills",
+"site": "greenhillsohio.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": [
+"https://greenhillsohio.gov/public-records-policy/",
+"https://greenhillsohio.gov/public-records-policy/"
 ]
 },
 {
@@ -149084,6 +151669,18 @@
 "pages": []
 },
 {
+"name": "Greenup",
+"site": "greenupcountyky.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "Kentucky",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Greenville, AL",
 "site": "greenvilleal.gov",
 "lat": null,
@@ -149303,6 +151900,18 @@
 "pages": [
 "https://greenwoodtwpcrawfordpa.gov/right-to-know/"
 ]
+},
+{
+"name": "Greers Ferry",
+"site": "greersferry.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Arkansas",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Gregg County Elections",
@@ -149547,6 +152156,18 @@
 {
 "name": "Groveland",
 "site": "grovelandfl.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Groveland",
+"site": "grovelandflpd.gov",
 "lat": null,
 "lon": null,
 "kind": "City",
@@ -149842,6 +152463,18 @@
 "pages": []
 },
 {
+"name": "Gulf County Tax Collector",
+"site": "gulfcountytax.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Gun Barrel City",
 "site": "gunbarrelcity.gov",
 "lat": null,
@@ -150084,6 +152717,18 @@
 "pages": []
 },
 {
+"name": "Haddonfield",
+"site": "haddonfield-nj.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Hadley",
 "site": "hadleyma.gov",
 "lat": null,
@@ -150313,6 +152958,18 @@
 "https://www.halifaxma.gov/2142/Public-Records",
 "https://www.halifaxma.gov/2142/Public-Records"
 ]
+},
+{
+"name": "Hall County Board of Commissioners",
+"site": "hallcountyga.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Georgia",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Hall County",
@@ -150557,6 +153214,18 @@
 "pages": [
 "https://www.hamiltoncountyil.gov/foia"
 ]
+},
+{
+"name": "Hamilton County Law Library",
+"site": "hamiltoncountylawliboh.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Hamilton County",
@@ -150806,6 +153475,18 @@
 "pages": []
 },
 {
+"name": "Hampden",
+"site": "hampdenma.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Massachusetts",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Hampstead Police Department",
 "site": "hampsteadnhpolice.gov",
 "lat": null,
@@ -151046,6 +153727,18 @@
 "pages": []
 },
 {
+"name": "Hancock County Commission",
+"site": "hancockcountywv.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "West Virginia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Hancock County Sheriff's Office",
 "site": "hancockctnso.gov",
 "lat": null,
@@ -151275,6 +153968,22 @@
 "https://hanson-ma.nextrequest.com/"
 ],
 "pages": []
+},
+{
+"name": "Happy Valley",
+"site": "happyvalleyor.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oregon",
+"email": [],
+"portal": [
+"https://docs.happyvalleyor.gov/Forms/PublicRecordsRequest"
+],
+"pages": [
+"https://docs.happyvalleyor.gov/Forms/PublicRecordsRequest"
+]
 },
 {
 "name": "Harahan",
@@ -151759,6 +154468,18 @@
 },
 {
 "name": "Harrisburg",
+"site": "harrisburgohio.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Harrisburg",
 "site": "harrisburgpa.gov",
 "lat": null,
 "lon": null,
@@ -152003,6 +154724,18 @@
 "pages": []
 },
 {
+"name": "Harrison County Texas",
+"site": "harrisontx.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Harris Township",
 "site": "harristownshipmi.gov",
 "lat": null,
@@ -152238,6 +154971,18 @@
 "pages": []
 },
 {
+"name": "Harveysburg",
+"site": "harveysburg.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Harwich, MA.",
 "site": "harwich-ma.gov",
 "lat": null,
@@ -152444,6 +155189,18 @@
 "lat": null,
 "lon": null,
 "kind": "County",
+"pop": 0,
+"state": "Hawaii",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Hawaii County Police Department",
+"site": "hawaiipolice.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
 "pop": 0,
 "state": "Hawaii",
 "email": [],
@@ -152697,6 +155454,18 @@
 ]
 },
 {
+"name": "Hays KS",
+"site": "haysks.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Kansas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Haysville Borough",
 "site": "haysvilleborough.gov",
 "lat": null,
@@ -152926,6 +155695,18 @@
 "pages": []
 },
 {
+"name": "Healdsburg",
+"site": "healdsburg.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Ashland County Health Department",
 "site": "health-ashlandcounty-oh.gov",
 "lat": null,
@@ -153142,6 +155923,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Tennessee",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Henderson County",
+"site": "hendersoncountyil.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Illinois",
 "email": [],
 "portal": [],
 "pages": []
@@ -153379,6 +156172,26 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Henrico County",
+"site": "henrico.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Virginia",
+"email": [],
+"portal": [
+"https://henrico.gov/government/freedom-information-act-foia/",
+"https://henrico.gov/services/foia-environmental-site-assessment/",
+"https://henrico.gov/government/freedom-information-act-foia/services/"
+],
+"pages": [
+"https://henrico.gov/government/freedom-information-act-foia/",
+"https://henrico.gov/government/freedom-information-act-foia/services/",
+"https://henrico.gov/government/freedom-information-act-foia/general-guidelines/"
+]
 },
 {
 "name": "Henrietta",
@@ -153626,6 +156439,18 @@
 "pages": []
 },
 {
+"name": "Heritage Creek Kentucky",
+"site": "heritagecreekky.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Kentucky",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Herkimer County",
 "site": "herkimercountyny.gov",
 "lat": null,
@@ -153857,6 +156682,18 @@
 "kind": "City",
 "pop": 0,
 "state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Hialeah Police",
+"site": "hialeahflpd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Florida",
 "email": [],
 "portal": [],
 "pages": []
@@ -154113,6 +156950,18 @@
 "pages": []
 },
 {
+"name": "Highland County Health Department",
+"site": "highlandohiohealth.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Highlands",
 "site": "highlands-ny.gov",
 "lat": null,
@@ -154362,6 +157211,18 @@
 "kind": "City",
 "pop": 0,
 "state": "North Dakota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Hillsboro",
+"site": "hillsboro-oregon.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oregon",
 "email": [],
 "portal": [],
 "pages": []
@@ -154625,6 +157486,21 @@
 "pages": []
 },
 {
+"name": "Hinsdale",
+"site": "hinsdalenh.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Hampshire",
+"email": [
+"hinsdaleclerk@hinsdalenh.org",
+"propertyrecords@hinsdalenh.org"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Hinton Township",
 "site": "hintontownship.gov",
 "lat": null,
@@ -154868,6 +157744,22 @@
 ],
 "portal": [],
 "pages": []
+},
+{
+"name": "Holden Maine",
+"site": "holdenmaine.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Maine",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.holdenmaine.gov/404.htm?aspxerrorpath=/public-records",
+"https://www.holdenmaine.gov/404.htm?aspxerrorpath=/publicrecords",
+"https://www.holdenmaine.gov/404.htm?aspxerrorpath=/open-records"
+]
 },
 {
 "name": "Holden",
@@ -155117,6 +158009,18 @@
 "pages": []
 },
 {
+"name": "Holly Hill",
+"site": "hollyhillfl.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Holly Ridge",
 "site": "hollyridgenc.gov",
 "lat": null,
@@ -155337,6 +158241,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Hondo",
+"site": "hondo-tx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
 "email": [],
 "portal": [],
 "pages": []
@@ -155564,6 +158480,18 @@
 "pages": []
 },
 {
+"name": "Hopkins",
+"site": "hopkinsmn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Hopkinton, MA",
 "site": "hopkintonma.gov",
 "lat": null,
@@ -155783,6 +158711,18 @@
 "kind": "City",
 "pop": 0,
 "state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Houston, Alaska",
+"site": "houston-ak.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Alaska",
 "email": [],
 "portal": [],
 "pages": []
@@ -156026,6 +158966,20 @@
 "pop": 0,
 "state": "Missouri",
 "email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Howell County Sheriff's Office",
+"site": "howellcountysheriff.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Missouri",
+"email": [
+"records@howellcountysheriff.gov"
+],
 "portal": [],
 "pages": []
 },
@@ -156277,6 +159231,18 @@
 "pages": []
 },
 {
+"name": "Hulmeville Borough",
+"site": "hulmeville-pa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Humboldt",
 "site": "humalertca.gov",
 "lat": null,
@@ -156503,6 +159469,18 @@
 "pages": []
 },
 {
+"name": "Huron County Commissioners",
+"site": "huroncounty-oh.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Huron",
 "site": "huronny.gov",
 "lat": null,
@@ -156716,6 +159694,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Utah",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Iberville Parish Office of Emergency Preparedness",
+"site": "ibervilleoep.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Louisiana",
 "email": [],
 "portal": [],
 "pages": []
@@ -156947,6 +159937,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Florida",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Indian Head Park",
+"site": "indianheadpark-il.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Illinois",
 "email": [],
 "portal": [],
 "pages": []
@@ -157186,6 +160188,25 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Ingram",
+"site": "ingramtx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [
+"https://ingramtx.gov/publicrecords",
+"https://l.cdn-fileserver.com/bping.php?gdpr=0&vgd_tsce=L1420&vgd_oresf=one&cc=US&lper=100&wsip=170763013&vgd_bid=461740&r=1795301941577&vgd_cdv=O4028&vgd_l2type=dmola&vgd_wlstp=0&prid=8PR11258V&hvsid=00001795301941576003433653765028&lf=6&requrl=https%3A%2F%2Fingramtx.gov%2Fpublicrecords&mspa=1&vgd_cage=1&vgd_setup=c21&vi=1795301941375751528&ssld=%7B%22QQNN%22%3A%22Pb%22%2C%22QQN75%22%3A%22Gm5O7mz%22%2C%22QQ8E%22%3A%22%22%2C%22QQQN%22%3A%22%2FK%22%2C%22QQl8E%22%3A%22%22%7D&vgd_rpth=%2Fola&wshp=0&vgd_oreqf=one&cid=8CUHL418T&crid=126431565&ugd=6&sc=VA&vgd_asn=8075&vgd_len=587&vgd_end=1"
+],
+"pages": [
+"https://www.ingramtx.gov/public-records",
+"https://www.ingramtx.gov/publicrecords",
+"https://www.ingramtx.gov/open-records"
+]
 },
 {
 "name": "Inland Township",
@@ -157441,6 +160462,18 @@
 ]
 },
 {
+"name": "Irmo",
+"site": "irmosc.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "South Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Iron County Ambulance District",
 "site": "ironcountyambulancedistrict.gov",
 "lat": null,
@@ -157694,6 +160727,18 @@
 ]
 },
 {
+"name": "Irwin County Georgia",
+"site": "irwincounty-ga.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Georgia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Irwindale",
 "site": "irwindaleca.gov",
 "lat": null,
@@ -157899,6 +160944,18 @@
 "portal": [
 "https://ivins.granicus.com/ViewPublisher.php?view_id=2"
 ],
+"pages": []
+},
+{
+"name": "Jackman",
+"site": "jackmanme.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Maine",
+"email": [],
+"portal": [],
 "pages": []
 },
 {
@@ -158151,6 +161208,18 @@
 "pages": []
 },
 {
+"name": "Jackson Fire Department",
+"site": "jacksonfdwi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Jackson",
 "site": "jacksonla.gov",
 "lat": null,
@@ -158394,6 +161463,25 @@
 "pages": []
 },
 {
+"name": "Jacksonville",
+"site": "jacksonvillenc.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "North Carolina",
+"email": [],
+"portal": [
+"https://cityofjacksonvillenc.nextrequest.com/",
+"https://cityofjacksonvillenc.nextrequest.com",
+"https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico"
+],
+"pages": [
+"https://www.jacksonvillenc.gov/m/newsflash/home/detail/1673",
+"https://cityofjacksonvillenc.nextrequest.com/"
+]
+},
+{
 "name": "Jamaica Beach",
 "site": "jamaicabeachtx.gov",
 "lat": null,
@@ -158632,6 +161720,18 @@
 "https://jaspercountyillinois.gov/foia/",
 "https://jaspercountyillinois.gov/foia/"
 ]
+},
+{
+"name": "Jasper County Government",
+"site": "jaspercountyin.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Indiana",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Jasper County Missouri",
@@ -158873,6 +161973,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "West Virginia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Jeff Davis County Board Of Commissioners",
+"site": "jeffdaviscountyga.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Georgia",
 "email": [],
 "portal": [],
 "pages": []
@@ -159124,6 +162236,18 @@
 },
 {
 "name": "Jefferson County",
+"site": "jeffersoncountytx.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Jefferson County",
 "site": "jeffersoncountywi.gov",
 "lat": null,
 "lon": null,
@@ -159344,6 +162468,20 @@
 "pop": 0,
 "state": "Ohio",
 "email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Jeffersonville Police Department",
+"site": "jeffersonvillepdin.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Indiana",
+"email": [
+"records@jeffersonvillepdin.gov"
+],
 "portal": [],
 "pages": []
 },
@@ -159598,6 +162736,18 @@
 ]
 },
 {
+"name": "Jessamine County Sheriff's Office",
+"site": "jessaminesheriff.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Kentucky",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Jesup Police Department",
 "site": "jesuppd-ga.gov",
 "lat": null,
@@ -159838,6 +162988,22 @@
 "pages": []
 },
 {
+"name": "Johnson County Government",
+"site": "johnsoncountytn.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Tennessee",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.johnsoncountytn.gov/current-public-records",
+"https://www.johnsoncountytn.gov/current-public-records",
+"https://www.johnsoncountytn.gov/copy-of-public-records-2023-archive"
+]
+},
+{
 "name": "Johnson County Wyoming",
 "site": "johnsoncowy.gov",
 "lat": null,
@@ -160076,6 +163242,18 @@
 "pages": []
 },
 {
+"name": "Jones",
+"site": "jonesok.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Oklahoma",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Jonesville City",
 "site": "jonesvillemi.gov",
 "lat": null,
@@ -160293,6 +163471,18 @@
 "https://jurupavalleyca.govqa.us/WEBAPP/_rs/(S(fr3xbrd1tq3nkydu2nehuyyj))/OpenRecordsSummary.aspx",
 "https://jurupavalleyca.govqa.us/WEBAPP/_rs/(S(fr3xbrd1tq3nkydu2nehuyyj))/OpenRecordsSummary.aspx?sSessionID="
 ]
+},
+{
+"name": "Kalamo Township",
+"site": "kalamotownship-mi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Kalamazoo County",
@@ -160518,6 +163708,25 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Kauai",
+"site": "kauai.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "Hawaii",
+"email": [],
+"portal": [
+"https://granicus.com/product/opencities",
+"https://granicus.com/solution/govaccess/opencities/"
+],
+"pages": [
+"https://www.kauai.gov/Government/Office-of-the-Mayor/Public-Information-Office",
+"https://www.kauai.gov/Government/Office-of-the-Mayor/Public-Information-Office?lang_update=639308627427812150",
+"https://www.kauai.gov/Government/Departments-Agencies/OED/Kauai-Sunshine-Markets"
+]
 },
 {
 "name": "Kaukauna",
@@ -160771,6 +163980,24 @@
 "pages": []
 },
 {
+"name": "Kemah",
+"site": "kemahtx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [
+"https://kemahtx.nextrequest.com/",
+"https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+"https://assets.nextrequest.com/manifest.json"
+],
+"pages": [
+"https://kemahtx.nextrequest.com/"
+]
+},
+{
 "name": "Kemper County Board of Supervisors",
 "site": "kempercountyms.gov",
 "lat": null,
@@ -161012,6 +164239,26 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Kent County Levy Court",
+"site": "kentcountyde.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Delaware",
+"email": [],
+"portal": [
+"https://www.kentcountyde.gov/Contact-Us/FOIA",
+"https://www.kentcountyde.gov/Contact-Us/FOIA?oc_lang=en-US",
+"https://www.kentcountyde.gov/Contact-Us/FOIA/Kent-County-Levy-Court-FOIA-Policy"
+],
+"pages": [
+"https://www.kentcountyde.gov/Contact-Us/FOIA",
+"https://kentcountyde.govqa.us/WEBAPP/_rs/(S(m4modq50bkeqgtyijsa0luh3))/supporthome.aspx",
+"https://www.kentcountyde.gov/Contact-Us/FOIA/Kent-County-Levy-Court-FOIA-Policy"
+]
 },
 {
 "name": "Kent County",
@@ -161272,6 +164519,18 @@
 "pages": [
 "https://www.keysvilleva.gov/government/foia.php"
 ]
+},
+{
+"name": "Kiantone NY",
+"site": "kiantoneny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "The Town of Kiawah Island",
@@ -161542,6 +164801,26 @@
 },
 {
 "name": "Kingston",
+"site": "kingstonma.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Massachusetts",
+"email": [],
+"portal": [
+"https://townofkingstonma.nextrequest.com/",
+"https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+"https://assets.nextrequest.com/manifest.json"
+],
+"pages": [
+"https://townofkingstonma.nextrequest.com/",
+"https://www.kingstonma.gov/m/newsflash/home/detail/714",
+"https://www.kingstonma.gov/726/Public-Records-Request-Online-Portal"
+]
+},
+{
+"name": "Kingston",
 "site": "kingstonnh.gov",
 "lat": null,
 "lon": null,
@@ -161797,6 +165076,18 @@
 ]
 },
 {
+"name": "Kittery Maine",
+"site": "kitteryme.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Maine",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Kittitas County",
 "site": "kittitascounty.gov",
 "lat": null,
@@ -162041,6 +165332,26 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "KNOXVILLE POLICE DEPARTMENT",
+"site": "knoxvillepdil.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [
+"https://knoxvillepdil.gov/publicrecords",
+"https://knoxvillepdil.gov/foia",
+"https://l.cdn-fileserver.com/bping.php?sc=VA&vgd_asn=8075&vgd_rpth=%2Fola&vgd_cage=1&vgd_cdv=O4028&vgd_oresf=one&vgd_setup=c21&hvsid=00001795301944261003433653766409&lper=100&requrl=https%3A%2F%2Fknoxvillepdil.gov%2Fpublicrecords&ssld=%7B%22QQNN%22%3A%22Pb%22%2C%22QQN75%22%3A%22Gm5O7mz%22%2C%22QQ8E%22%3A%22%22%2C%22QQQN%22%3A%22%2FK%22%2C%22QQl8E%22%3A%22%22%7D&vgd_bid=461744&mspa=1&vgd_l2type=dmola&vgd_oreqf=one&cc=US&gdpr=0&vgd_tsce=L1420&vgd_wlstp=0&prid=8PR11258V&cid=8CUHL418T&crid=126431565&ugd=6&lf=6&wsip=170763013&wshp=0&r=1795301944262&vi=1795301944307410552&vgd_len=592&vgd_end=1"
+],
+"pages": [
+"https://www.knoxvillepdil.gov/public-records",
+"https://www.knoxvillepdil.gov/publicrecords",
+"https://www.knoxvillepdil.gov/open-records"
+]
 },
 {
 "name": "Knoxville, TN Police Department",
@@ -162314,6 +165625,30 @@
 "pages": []
 },
 {
+"name": "Los Angeles / Internal Services Department",
+"site": "lacounty.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "California",
+"email": [
+"publicinformationrequest@hr.lacounty.gov",
+"recordrequest@dcfs.lacounty.gov",
+"pra@me.lacounty.gov"
+],
+"portal": [
+"https://lacounty.granicus.com/player/camera/17?publish_id=737&#038;redirect=true",
+"https://bhlacountyca.nextrequest.com/",
+"https://lacountyisd.nextrequest.com/"
+],
+"pages": [
+"https://lacounty.gov/newsroom/public-information/public-records-request-contacts/",
+"https://lacountyisd.nextrequest.com/",
+"https://bhlacountyca.nextrequest.com/"
+]
+},
+{
 "name": "Los Angeles County Chief Executive Office, Chief Information Office",
 "site": "lacountyhelps.gov",
 "lat": null,
@@ -162558,6 +165893,22 @@
 ]
 },
 {
+"name": "La Grange",
+"site": "lagrangeil.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Illinois",
+"email": [
+"foia@lagrangeil.gov"
+],
+"portal": [],
+"pages": [
+"https://www.lagrangeil.gov/73/Freedom-of-Information"
+]
+},
+{
 "name": "La Grange Kentucky",
 "site": "lagrangeky.gov",
 "lat": null,
@@ -162773,6 +166124,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Colorado",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Lake County Board of County Commissioners",
+"site": "lakecountyfl.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
 "email": [],
 "portal": [],
 "pages": []
@@ -163017,6 +166380,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Lake Mills",
+"site": "lakemillsiowa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Iowa",
 "email": [],
 "portal": [],
 "pages": []
@@ -163523,6 +166898,18 @@
 "pages": []
 },
 {
+"name": "La Mirada Theatre for the Performing Arts",
+"site": "lamiradatheatre.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Lamoine",
 "site": "lamoine-me.gov",
 "lat": null,
@@ -163744,6 +167131,21 @@
 "pop": 0,
 "state": "Oklahoma",
 "email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Langley",
+"site": "langleywa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Washington",
+"email": [
+"clerk@langleywa.gov",
+"records@langleywa.gov"
+],
 "portal": [],
 "pages": []
 },
@@ -164242,6 +167644,18 @@
 ]
 },
 {
+"name": "Laurel County Corrections",
+"site": "laurelcountycorrectionsky.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Kentucky",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Laurel County Sheriff's Office",
 "site": "laurelcountysheriff.gov",
 "lat": null,
@@ -164500,6 +167914,22 @@
 "pages": []
 },
 {
+"name": "Lawrence County Government",
+"site": "lawrencecountytn.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Tennessee",
+"email": [],
+"portal": [],
+"pages": [
+"https://lawrencecountytn.gov/government/open-records/meeting-minutes/",
+"https://lawrencecountytn.gov/government/open-records/audit-reports/",
+"https://lawrencecountytn.gov/government/open-records/"
+]
+},
+{
 "name": "Lawrence, KS",
 "site": "lawrenceks.gov",
 "lat": null,
@@ -164739,6 +168169,24 @@
 "pages": []
 },
 {
+"name": "Lea, New Mexico",
+"site": "leacounty.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "New Mexico",
+"email": [
+"recordsrequest@leacounty.net"
+],
+"portal": [],
+"pages": [
+"https://www.leacounty.gov/247/Open-Government",
+"https://www.leacounty.gov/QuickLinks.aspx?CID=25",
+"https://www.leacounty.gov/QuickLinks.aspx?CID=37"
+]
+},
+{
 "name": "Lea County Communications Authority",
 "site": "leacounty911.gov",
 "lat": null,
@@ -164927,6 +168375,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Tennessee",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Lebanon",
+"site": "lebanontownshipnj.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Jersey",
 "email": [],
 "portal": [],
 "pages": []
@@ -165185,6 +168645,26 @@
 "pages": []
 },
 {
+"name": "Leelanau Township",
+"site": "leelanautownshipmi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [
+"clerk@leelanautownshipmi.gov"
+],
+"portal": [
+"https://leelanautownshipmi.gov/how-do-i/apply-for-an-foia-request/",
+"https://leelanautownshipmi.gov/wp-content/uploads/2021/10/leelanau_township_foia_resolution_2015.pdf",
+"https://leelanautownshipmi.gov/wp-content/uploads/2021/10/leelanau_twp_foia_procedures_documents.pdf"
+],
+"pages": [
+"https://leelanautownshipmi.gov/how-do-i/apply-for-an-foia-request/"
+]
+},
+{
 "name": "Leelanau Township Fire Department",
 "site": "leelanautwpfire.gov",
 "lat": null,
@@ -165409,6 +168889,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Kansas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Lennox, South Dakota",
+"site": "lennoxsd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "South Dakota",
 "email": [],
 "portal": [],
 "pages": []
@@ -165660,6 +169152,18 @@
 "https://www.lesliear.gov/public-information-request",
 "https://www.lesliear.gov/open-records"
 ]
+},
+{
+"name": "Leslie County Clerks Office",
+"site": "lesliecoclerkky.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Kentucky",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Le Sueur County",
@@ -165919,6 +169423,18 @@
 "pages": []
 },
 {
+"name": "Lexington, Va",
+"site": "lexingtonva.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Virginia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Lexington",
 "site": "lexsc.gov",
 "lat": null,
@@ -166160,6 +169676,18 @@
 "pages": []
 },
 {
+"name": "Liberty Township in Hancock County",
+"site": "libertytwphancockoh.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Liberty Township",
 "site": "libertytwplickingoh.gov",
 "lat": null,
@@ -166395,6 +169923,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Oregon",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Lincoln County Clerk",
+"site": "lincolncoclerkky.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Kentucky",
 "email": [],
 "portal": [],
 "pages": []
@@ -166640,6 +170180,25 @@
 "pages": []
 },
 {
+"name": "Lincoln County Elections",
+"site": "lincolncountywaelections.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Washington",
+"email": [
+"publicrecordsrequest@co.lincoln.wa.us",
+"eclerk@co.lincoln.wa.us"
+],
+"portal": [],
+"pages": [
+"https://www.lincolncountywaelections.gov/164/Public-Records",
+"https://www.lincolncountywaelections.gov/411/Public-Records",
+"https://www.lincolncountywaelections.gov/164/Public-Records"
+]
+},
+{
 "name": "Lincoln County",
 "site": "lincolncountywy.gov",
 "lat": null,
@@ -166874,6 +170433,18 @@
 "kind": "City",
 "pop": 0,
 "state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Linden",
+"site": "lindentx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
 "email": [],
 "portal": [],
 "pages": []
@@ -167115,6 +170686,18 @@
 "pages": []
 },
 {
+"name": "Litchfield Fire Department",
+"site": "litchfieldnhfd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Hampshire",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Litchfield Police Department",
 "site": "litchfieldnhpd.gov",
 "lat": null,
@@ -167348,6 +170931,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Livermore",
+"site": "livermoreca.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
 "email": [],
 "portal": [],
 "pages": []
@@ -167606,6 +171201,22 @@
 "pages": []
 },
 {
+"name": "Lock Haven City",
+"site": "lockhavenpa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [
+"openrecords@lockhavenpa.gov"
+],
+"portal": [],
+"pages": [
+"https://www.lockhavenpa.gov/government/right-to-know"
+]
+},
+{
 "name": "Lockport Township",
 "site": "lockportmi.gov",
 "lat": null,
@@ -167834,6 +171445,18 @@
 "pages": [
 "https://www.londonderrynhfire.gov/369/Record-Requests"
 ]
+},
+{
+"name": "Londonderry Police Dept",
+"site": "londonderrynhpd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Hampshire",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Londonderry",
@@ -168117,6 +171740,20 @@
 ]
 },
 {
+"name": "Longport",
+"site": "longportnj.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.longportnj.gov/Errors/e500?aspxerrorpath=/government/public-records"
+]
+},
+{
 "name": "Long View",
 "site": "longviewnc.gov",
 "lat": null,
@@ -168354,6 +171991,22 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Los Banos",
+"site": "losbanos.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.losbanos.gov/public-records",
+"https://www.losbanos.gov/publicrecords",
+"https://www.losbanos.gov/open-records"
+]
 },
 {
 "name": "Los Fresnos",
@@ -168629,6 +172282,18 @@
 ]
 },
 {
+"name": "Louisville",
+"site": "louisvillega.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Georgia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Louisville, NE",
 "site": "louisvillene.gov",
 "lat": null,
@@ -168890,6 +172555,18 @@
 "pages": []
 },
 {
+"name": "Lowndes County Commission",
+"site": "lowndes-al.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Alabama",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Lowndes County Board of Commissioners",
 "site": "lowndescountyga.gov",
 "lat": null,
@@ -169138,6 +172815,22 @@
 "https://www.lumbertonms.gov/public-records",
 "https://www.lumbertonms.gov/publicrecords",
 "https://www.lumbertonms.gov/open-records"
+]
+},
+{
+"name": "LUMBERTON POLICE DEPARTMENT",
+"site": "lumbertonmspd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Mississippi",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.lumbertonmspd.gov/public-records",
+"https://www.lumbertonmspd.gov/publicrecords",
+"https://www.lumbertonmspd.gov/open-records"
 ]
 },
 {
@@ -169395,6 +173088,26 @@
 "pages": []
 },
 {
+"name": "Lyndon Township",
+"site": "lyndontownshipmi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [
+"https://lyndontownshipmi.gov/download/foia-appeal-form-to-appeal-a-denial-of-records/",
+"https://lyndontownshipmi.gov/download/foia-appeal-form-to-appeal-a-denial-of-records/?ind=1627512093314&filename=FOIA-Appeal-Form-To-Appeal-a-Denial-of-Records.pdf&wpdmdl=7960&refresh=6b0215d121ae01795298769",
+"https://lyndontownshipmi.gov/download/foia-appeal-form-to-appeal-an-excess-fee/"
+],
+"pages": [
+"https://lyndontownshipmi.gov/about-lyndon-township-old__trashed/freedom-of-information-act/",
+"https://lyndontownshipmi.gov/download/public-summary-of-foia-procedures-guidelines/",
+"https://lyndontownshipmi.gov/download/notice-to-extend-response-time-for-foia-request/"
+]
+},
+{
 "name": "Lynnfield",
 "site": "lynnfieldma.gov",
 "lat": null,
@@ -169636,6 +173349,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Maine",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Machias, NY",
+"site": "machiasny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -170130,6 +173855,18 @@
 "pages": []
 },
 {
+"name": "Madison Township",
+"site": "madisontwpbutleroh.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Madison Township in Columbiana County",
 "site": "madisontwpcolco.gov",
 "lat": null,
@@ -170372,6 +174109,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "MAHTOMEDI",
+"site": "mahtomedimn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
 "email": [],
 "portal": [],
 "pages": []
@@ -170631,6 +174380,20 @@
 "pages": []
 },
 {
+"name": "Manchester Borough",
+"site": "manchesterborough.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": [
+"https://manchesterborough.gov/right-to-know/"
+]
+},
+{
 "name": "Manchester",
 "site": "manchesterct.gov",
 "lat": null,
@@ -170839,6 +174602,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Mansfield",
+"site": "mansfieldct.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Connecticut",
 "email": [],
 "portal": [],
 "pages": []
@@ -171061,6 +174836,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Mapleton City",
+"site": "mapleton-ut.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Utah",
 "email": [],
 "portal": [],
 "pages": []
@@ -171314,6 +175101,21 @@
 },
 {
 "name": "Maricopa",
+"site": "maricopa-az.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Arizona",
+"email": [],
+"portal": [
+"https://granicus.com/product/opencities",
+"https://granicus.com/solution/govaccess/opencities/"
+],
+"pages": []
+},
+{
+"name": "Maricopa",
 "site": "maricopa-ca.gov",
 "lat": null,
 "lon": null,
@@ -171549,6 +175351,18 @@
 "pages": []
 },
 {
+"name": "Marion County ETSB",
+"site": "marioncounty911illinois.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Marion County Commission",
 "site": "marioncountyal.gov",
 "lat": null,
@@ -171778,6 +175592,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Marion Township, Charlevoix County, Michigan",
+"site": "mariontwpcvxmi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
 "email": [],
 "portal": [],
 "pages": []
@@ -172046,6 +175872,18 @@
 "https://www.maroaillinois.gov/foia-information",
 "https://www.maroaillinois.gov/open-records"
 ]
+},
+{
+"name": "Marquette County",
+"site": "marquettecountywi.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Marriott-Slaterville City",
@@ -172523,6 +176361,18 @@
 },
 {
 "name": "Maryville",
+"site": "maryville-tn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Tennessee",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Maryville",
 "site": "maryvillemo.gov",
 "lat": null,
 "lon": null,
@@ -172770,6 +176620,23 @@
 ]
 },
 {
+"name": "Matagorda County",
+"site": "matagordatx.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [
+"https://www.matagordatx.gov/page/PublicRecordSearch"
+],
+"pages": [
+"https://www.matagordatx.gov/page/PublicRecordSearch",
+"https://www.matagordatx.gov/page/PIA"
+]
+},
+{
 "name": "Matewan",
 "site": "matewanwv.gov",
 "lat": null,
@@ -173004,6 +176871,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "South Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Mayfield Borough",
+"site": "mayfieldboroughpa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
 "email": [],
 "portal": [],
 "pages": []
@@ -173273,6 +177152,18 @@
 "pages": []
 },
 {
+"name": "McCurtain County",
+"site": "mccurtaincountyok.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Oklahoma",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "McCurtain County Sheriff's Office",
 "site": "mccurtaincountyso.gov",
 "lat": null,
@@ -173489,6 +177380,26 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "McLean County",
+"site": "mcleancountyil.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [
+"https://mcleancountyil.mycusthelp.com/WEBAPP/_rs/(S(ikuczqcgwcy1udsv0brgrkup))/AnswerDetail.aspx?sSessionID=&amp;aid=7752",
+"https://mcleancountyil.mycusthelp.com/WEBAPP/_rs/(S(ikuczqcgwcy1udsv0brgrkup))/AnswerDetail.aspx?sSessionID=&amp;aid=9362",
+"https://mcleancountyil.mycusthelp.com/WEBAPP/_rs/(S(ikuczqcgwcy1udsv0brgrkup))/AnswerDetail.aspx?sSessionID=&amp;aid=8232"
+],
+"pages": [
+"https://www.mcleancountyil.gov/960/TransparencyFOIA",
+"https://www.mcleancountyil.gov/960/TransparencyFOIA",
+"https://www.mcleancountyil.gov/905/Public-Record-Check"
+]
 },
 {
 "name": "McLean County Fiscal Court",
@@ -173714,6 +177625,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Meadville",
+"site": "meadvillems.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Mississippi",
 "email": [],
 "portal": [],
 "pages": []
@@ -173979,6 +177902,18 @@
 ]
 },
 {
+"name": "Menands",
+"site": "menandsny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Menard County, Illinois",
 "site": "menardcountyil.gov",
 "lat": null,
@@ -174232,6 +178167,22 @@
 "pages": []
 },
 {
+"name": "Mercer County Commissioners",
+"site": "mercercountyoh.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.mercercountyoh.gov/public-records-policy/",
+"https://www.mercercountyoh.gov/public-records-policy/",
+"https://www.mercercountyoh.gov/public-records-policy/"
+]
+},
+{
 "name": "Board of Mercer County Commissioners",
 "site": "mercercountyohio.gov",
 "lat": null,
@@ -174465,6 +178416,18 @@
 "https://granicus.com/product/opencities",
 "https://granicus.com/solution/govaccess/opencities/"
 ],
+"pages": []
+},
+{
+"name": "Mesa County Sheriffs Office",
+"site": "mesacountysheriff.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Colorado",
+"email": [],
+"portal": [],
 "pages": []
 },
 {
@@ -174735,6 +178698,22 @@
 "pages": []
 },
 {
+"name": "Property Appraiser of Miami-Dade County",
+"site": "miamidadepa.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
+"email": [
+"recordsrequest@miamidadepa.gov"
+],
+"portal": [],
+"pages": [
+"https://www.miamidadepa.gov/pa/contact/public-records-requests.page"
+]
+},
+{
 "name": "Miami-Dade Sheriff's Office",
 "site": "miamidadesheriff.gov",
 "lat": null,
@@ -174957,6 +178936,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Middlesex Borough",
+"site": "middlesexboro-nj.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Jersey",
 "email": [],
 "portal": [],
 "pages": []
@@ -175196,6 +179187,18 @@
 "pages": []
 },
 {
+"name": "Midway City",
+"site": "midwaycityut.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Utah",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Mifflin Township",
 "site": "mifflin-oh.gov",
 "lat": null,
@@ -175419,6 +179422,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Utah",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Millbrook Police Department",
+"site": "millbrookpoliceny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -175678,6 +179693,20 @@
 "pages": []
 },
 {
+"name": "Mills County Iowa",
+"site": "millscountyiowa.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Iowa",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.millscountyiowa.gov/352/Public-Information"
+]
+},
+{
 "name": "Mills County, TX",
 "site": "millscountytx.gov",
 "lat": null,
@@ -175914,6 +179943,22 @@
 "state": "Ohio",
 "email": [],
 "portal": [],
+"pages": []
+},
+{
+"name": "Milton Police Department",
+"site": "miltonmapolice.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Massachusetts",
+"email": [],
+"portal": [
+"https://miltonma.mycusthelp.com/WEBAPP/_rs/(S(duo5ekb2ir5rnvwix2xlemtb))/SupportHome.aspx?sSessionID=107112898LQIXQNCEXEQIJAXJCGSPHELJJPEJVNW",
+"https://miltonma.mycusthelp.com/WEBAPP/_rs/(S(3kpegdlzkwfxyeobhkz4wfee))/OpenRecordsSummary.aspx",
+"https://miltonma.mycusthelp.com/WEBAPP/_rs/(S(mwmc2eixpuqz1gw0egy53org))/SupportHome.aspx?sSessionID=107112898LQIXQNCEXEQIJAXJCGSPHELJJPEJVNW"
+],
 "pages": []
 },
 {
@@ -176161,6 +180206,18 @@
 "pages": []
 },
 {
+"name": "Minnesota City",
+"site": "minnesotacitymn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Minnesota Lake",
 "site": "minnesotalakemn.gov",
 "lat": null,
@@ -176343,6 +180400,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Missouri City, Texas",
+"site": "missouricitytexas.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
 "email": [],
 "portal": [],
 "pages": []
@@ -176594,6 +180663,20 @@
 ]
 },
 {
+"name": "Mokane",
+"site": "mokanemo.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Missouri",
+"email": [
+"mokanemoclerk@gmail.com"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Mokena",
 "site": "mokena.gov",
 "lat": null,
@@ -176842,6 +180925,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Monroe City",
+"site": "monroecitymo.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Missouri",
 "email": [],
 "portal": [],
 "pages": []
@@ -177109,6 +181204,18 @@
 },
 {
 "name": "Monroe Township",
+"site": "monroetwp-oh.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Monroe Township",
 "site": "monroetwplc-oh.gov",
 "lat": null,
 "lon": null,
@@ -177359,6 +181466,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Georgia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Monteagle Police Department",
+"site": "monteaglepolice.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Tennessee",
 "email": [],
 "portal": [],
 "pages": []
@@ -177622,6 +181741,18 @@
 "pages": []
 },
 {
+"name": "Montgomery County PA",
+"site": "montgomerycountypa.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Montgomery County, Virginia",
 "site": "montgomerycountyva.gov",
 "lat": null,
@@ -177866,6 +181997,18 @@
 "pages": []
 },
 {
+"name": "The City of Montreal",
+"site": "montrealwi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Montvale",
 "site": "montvalenj.gov",
 "lat": null,
@@ -178087,6 +182230,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "New Mexico",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Moraga",
+"site": "moragaca.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "California",
 "email": [],
 "portal": [],
 "pages": []
@@ -178320,6 +182475,21 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Morgan",
+"site": "morgantx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.morgantx.gov/public-information-request",
+"https://www.morgantx.gov/open-records"
+]
 },
 {
 "name": "Morgan",
@@ -178577,6 +182747,18 @@
 "pages": []
 },
 {
+"name": "Morse",
+"site": "morsemnslc.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Morton, IL",
 "site": "morton-il.gov",
 "lat": null,
@@ -178823,6 +183005,18 @@
 "pages": []
 },
 {
+"name": "Mountain Iron",
+"site": "mountainiron.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Mountain Lakes",
 "site": "mountainlakes.gov",
 "lat": null,
@@ -179055,6 +183249,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Mount Washington",
+"site": "mountwashington-ma.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Massachusetts",
 "email": [],
 "portal": [],
 "pages": []
@@ -179302,6 +183508,18 @@
 "pages": []
 },
 {
+"name": "Mount Vernon",
+"site": "mtvernonoh.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Mt. Vernon",
 "site": "mtvernontx.gov",
 "lat": null,
@@ -179543,6 +183761,18 @@
 "portal": [
 "http://multnomah.granicus.com/ViewPublisher.php?view_id=3"
 ],
+"pages": []
+},
+{
+"name": "Mulvane",
+"site": "mulvaneks.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Kansas",
+"email": [],
+"portal": [],
 "pages": []
 },
 {
@@ -180012,6 +184242,18 @@
 "pages": []
 },
 {
+"name": "Pinellas County Clerk of the Circuit Court and Comptroller",
+"site": "mypinellasclerk.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Myrtle Point",
 "site": "myrtlepointor.gov",
 "lat": null,
@@ -180204,6 +184446,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Naperville",
+"site": "naperville.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Illinois",
 "email": [],
 "portal": [],
 "pages": []
@@ -180447,6 +184701,18 @@
 "pages": []
 },
 {
+"name": "Nassau County BOCC",
+"site": "nassaucountyfl.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Nassau County",
 "site": "nassaucountyny.gov",
 "lat": null,
@@ -180682,6 +184948,26 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Nelson County",
+"site": "nelsoncounty-va.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Virginia",
+"email": [],
+"portal": [
+"https://www.nelsoncounty-va.gov/foia/",
+"https://www.nelsoncounty-va.gov/government/nelson-sheriff/foia-request/",
+"https://www.nelsoncounty-va.gov/wp-content/uploads/2026/08/FOIA-Rights-Responsibilities-Policy-Nelson-County.pdf"
+],
+"pages": [
+"https://www.nelsoncounty-va.gov/foia/",
+"https://www.nelsoncounty-va.gov/government/nelson-sheriff/foia-request/",
+"https://www.nelsoncounty-va.gov/foia/"
+]
 },
 {
 "name": "Nelson/Nelson County Fiscal Court",
@@ -180943,6 +185229,18 @@
 },
 {
 "name": "Newark",
+"site": "newarktexas.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Newark",
 "site": "newarkwi.gov",
 "lat": null,
 "lon": null,
@@ -181183,6 +185481,18 @@
 "pages": []
 },
 {
+"name": "Newburyport",
+"site": "newburyportma.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Massachusetts",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "New Canaan Office of Emergency Management",
 "site": "newcanaanalerts.gov",
 "lat": null,
@@ -181410,6 +185720,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "New Hampton",
+"site": "newhamptonnh.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Hampshire",
 "email": [],
 "portal": [],
 "pages": []
@@ -181648,6 +185970,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "New Madrid County",
+"site": "newmadridcountymo.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Missouri",
 "email": [],
 "portal": [],
 "pages": []
@@ -181892,6 +186226,18 @@
 "pages": []
 },
 {
+"name": "New Prague",
+"site": "newpraguemn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "New Richland",
 "site": "newrichlandmn.gov",
 "lat": null,
@@ -182129,6 +186475,21 @@
 "pages": []
 },
 {
+"name": "Windsor",
+"site": "newwindsoril.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.newwindsoril.gov/public-information-request",
+"https://www.newwindsoril.gov/open-records"
+]
+},
+{
 "name": "New Windsor",
 "site": "newwindsormd.gov",
 "lat": null,
@@ -182353,6 +186714,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "South Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Nininger Township",
+"site": "niningermn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
 "email": [],
 "portal": [],
 "pages": []
@@ -182608,6 +186981,22 @@
 ]
 },
 {
+"name": "New Orleans",
+"site": "nolartcc.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Louisiana",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.nolartcc.gov/public-records",
+"https://www.nolartcc.gov/publicrecords",
+"https://www.nolartcc.gov/open-records"
+]
+},
+{
 "name": "Northampton County",
 "site": "norcopa.gov",
 "lat": null,
@@ -182848,6 +187237,18 @@
 },
 {
 "name": "North Bend",
+"site": "northbendoregon.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oregon",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "North Bend",
 "site": "northbendwi.gov",
 "lat": null,
 "lon": null,
@@ -183072,6 +187473,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Northfield",
+"site": "northfieldnh.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Hampshire",
 "email": [],
 "portal": [],
 "pages": []
@@ -183321,6 +187734,18 @@
 "pages": []
 },
 {
+"name": "North Mankato",
+"site": "northmankato.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Northmoor, Missouri.",
 "site": "northmoormo.gov",
 "lat": null,
@@ -183507,6 +187932,18 @@
 "portal": [
 "https://northsalem.granicus.com/ViewPublisher.php?view_id=3"
 ],
+"pages": []
+},
+{
+"name": "North Sewickley Township",
+"site": "northsewickleytownship.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
 "pages": []
 },
 {
@@ -183752,6 +188189,26 @@
 "pages": []
 },
 {
+"name": "Norway",
+"site": "norwaymi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [
+"https://www.facebook.com/sharer/sharer.php?u=http://www.norwaymi.gov/publicrecords",
+"https://www.twitter.com/home?status=http://www.norwaymi.gov/publicrecords",
+"https://www.plus.google.com/share?url=http://www.norwaymi.gov/publicrecords"
+],
+"pages": [
+"https://www.norwaymi.gov/public-records",
+"https://www.norwaymi.gov/publicrecords",
+"https://www.norwaymi.gov/open-records"
+]
+},
+{
 "name": "Norwell",
 "site": "norwell.gov",
 "lat": null,
@@ -183975,6 +188432,18 @@
 "https://www.nsmithfieldpdri.gov/publicrecords",
 "https://www.nsmithfieldpdri.gov/open-records"
 ]
+},
+{
+"name": "North Smithfield",
+"site": "nsmithfieldri.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Rhode Island",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Nuckolls County",
@@ -184214,6 +188683,20 @@
 "https://www.oakgrovear.gov/publicrecords/",
 "https://www.oakgrovear.gov/open-records/"
 ]
+},
+{
+"name": "Oak Grove",
+"site": "oakgrovemn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [
+"http://oakgrove.granicus.com/ViewPublisher.php?view_id=2"
+],
+"pages": []
 },
 {
 "name": "Oak Grove Police Department",
@@ -184467,6 +188950,18 @@
 "pages": []
 },
 {
+"name": "Oak Ridge",
+"site": "oakridgetn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Tennessee",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Oakwood Ohio",
 "site": "oakwoodohio.gov",
 "lat": null,
@@ -184685,6 +189180,24 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Ocean Ridge",
+"site": "oceanridge.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [
+"https://oceanridgeflorida.nextrequest.com/",
+"https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+"https://assets.nextrequest.com/manifest.json"
+],
+"pages": [
+"https://oceanridgeflorida.nextrequest.com/"
+]
 },
 {
 "name": "Ocean View",
@@ -184920,6 +189433,21 @@
 "state": "Illinois",
 "email": [],
 "portal": [],
+"pages": []
+},
+{
+"name": "O'Fallon, Missouri",
+"site": "ofallonmo.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Missouri",
+"email": [],
+"portal": [
+"https://crm-ofallonmo.mycusthelp.com/WEBAPP/_rs/(S(v1tds2eyt5sgyvvmsqoh5dqr))/supporthome.aspx?sSessionID=1732412322OWTDHHBGIMFNOVMJMWVBHTZQSLAZZW",
+"https://crm-ofallonmo.mycusthelp.com/WEBAPP/_rs/supporthome.aspx"
+],
 "pages": []
 },
 {
@@ -185176,6 +189704,18 @@
 "pages": []
 },
 {
+"name": "Okemah",
+"site": "okemahok.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oklahoma",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Okmulgee County",
 "site": "okmulgeecounty.gov",
 "lat": null,
@@ -185418,6 +189958,18 @@
 "pages": [
 "https://onalaskawi.justfoia.com/publicportal/home/newrequest"
 ]
+},
+{
+"name": "Onamia",
+"site": "onamiamn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Oneida",
@@ -186135,6 +190687,18 @@
 "pages": []
 },
 {
+"name": "Orleans",
+"site": "orleanspdma.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Massachusetts",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Oronoco Township",
 "site": "oronocotownship-mn.gov",
 "lat": null,
@@ -186371,6 +190935,18 @@
 "pages": []
 },
 {
+"name": "Osceola County",
+"site": "osceolacountymi.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Osceola Fire Department",
 "site": "osceolafdar.gov",
 "lat": null,
@@ -186598,6 +191174,18 @@
 "pages": []
 },
 {
+"name": "Otis",
+"site": "otisma.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Massachusetts",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Otoe County",
 "site": "otoecountyne.gov",
 "lat": null,
@@ -186812,6 +191400,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Tennessee",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Ovid Township",
+"site": "ovidtownshipccmi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
 "email": [],
 "portal": [],
 "pages": []
@@ -187478,6 +192078,20 @@
 "pages": []
 },
 {
+"name": "Pamlico",
+"site": "pamlicocountync.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "North Carolina",
+"email": [
+"public.records@pamlicocountync.gov"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Pampa Police Dept.",
 "site": "pampapd.gov",
 "lat": null,
@@ -187707,6 +192321,18 @@
 ]
 },
 {
+"name": "Paramus",
+"site": "paramusborough.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Paramus Emergency Services",
 "site": "paramuses.gov",
 "lat": null,
@@ -187926,6 +192552,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Park Forest",
+"site": "parkforest-il.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Illinois",
 "email": [],
 "portal": [],
 "pages": []
@@ -188173,6 +192811,18 @@
 "portal": [
 "https://www.pascovotes.gov/Documents/Supervisor%20Of%20Elections/PublicRecordsRequests.pdf"
 ],
+"pages": []
+},
+{
+"name": "Saint Lucie County Property Appraiser",
+"site": "paslc.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [],
 "pages": []
 },
 {
@@ -188430,6 +193080,18 @@
 ]
 },
 {
+"name": "Payson City",
+"site": "paysonutah.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Utah",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Payson Library",
 "site": "paysonutahlibrary.gov",
 "lat": null,
@@ -188655,6 +193317,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Pekin Police Department",
+"site": "pekinpd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Illinois",
 "email": [],
 "portal": [],
 "pages": []
@@ -188899,6 +193573,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Kentucky",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Pendleton County Office of Emergency Management",
+"site": "pendletoncountywv.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "West Virginia",
 "email": [],
 "portal": [],
 "pages": []
@@ -189154,6 +193840,18 @@
 "pages": []
 },
 {
+"name": "Perquimans County",
+"site": "perquimanscountync.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "North Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "PERRY",
 "site": "perry-mo.gov",
 "lat": null,
@@ -189369,6 +194067,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Perry Township",
+"site": "perrytownship-in.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Indiana",
 "email": [],
 "portal": [],
 "pages": []
@@ -189609,6 +194319,18 @@
 },
 {
 "name": "Petersburg",
+"site": "petersburgmi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Petersburg",
 "site": "petersburgtn.gov",
 "lat": null,
 "lon": null,
@@ -189838,6 +194560,24 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Phillipsburg",
+"site": "phillipsburgoh.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [
+"https://phillipsburgoh.gov/foia-requests/",
+"https://phillipsburgoh.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphillipsburgoh.gov%2Ffoia-requests%2F",
+"https://phillipsburgoh.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphillipsburgoh.gov%2Ffoia-requests%2F&#038;format=xml"
+],
+"pages": [
+"https://phillipsburgoh.gov/foia-requests/"
+]
 },
 {
 "name": "Phillips, Arkansas",
@@ -190077,6 +194817,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Piedmont",
+"site": "piedmontsd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "South Dakota",
 "email": [],
 "portal": [],
 "pages": []
@@ -190324,6 +195076,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Kentucky",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Pike County Commissioners",
+"site": "pikepa.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Pennsylvania",
 "email": [],
 "portal": [],
 "pages": []
@@ -190581,6 +195345,21 @@
 "pages": []
 },
 {
+"name": "Pine Island",
+"site": "pineislandtx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.pineislandtx.gov/public-information-request",
+"https://www.pineislandtx.gov/open-records"
+]
+},
+{
 "name": "Pine Lake Township",
 "site": "pinelaketownshipotcmn.gov",
 "lat": null,
@@ -190827,6 +195606,18 @@
 "pages": [
 "https://www.pittcountync.gov/429/Public-Information-Office"
 ]
+},
+{
+"name": "Pittman Center",
+"site": "pittmancentertn.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Tennessee",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Pittsburg",
@@ -191079,6 +195870,18 @@
 ]
 },
 {
+"name": "Plainfield",
+"site": "plainfieldnj.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Plainfield Police Department",
 "site": "plainfieldpolicenj.gov",
 "lat": null,
@@ -191307,6 +196110,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Plattekill Police Department",
+"site": "plattekillpd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -191565,6 +196380,22 @@
 "pages": []
 },
 {
+"name": "Plymouth Borough",
+"site": "plymouthboroughpa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": [
+"https://plymouthboroughpa.gov/resident-services/right-to-know-request/",
+"https://plymouthboroughpa.gov/link/pa-office-open-records/",
+"https://plymouthboroughpa.gov/link/pa-office-open-records/"
+]
+},
+{
 "name": "Plymouth County Iowa",
 "site": "plymouthcountyiowa.gov",
 "lat": null,
@@ -191810,6 +196641,25 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Pocatello",
+"site": "pocatello.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Idaho",
+"email": [],
+"portal": [
+"https://cityofpocatelloid.nextrequest.com/",
+"https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+"https://assets.nextrequest.com/manifest.json"
+],
+"pages": [
+"https://pocatello.gov/251/Records-Requests",
+"https://cityofpocatelloid.nextrequest.com/"
+]
 },
 {
 "name": "Pocomoke",
@@ -192059,6 +196909,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Oregon",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Polk County Government",
+"site": "polkcountytn.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Tennessee",
 "email": [],
 "portal": [],
 "pages": []
@@ -192521,6 +197383,18 @@
 "pages": []
 },
 {
+"name": "Portage Township-Porter County",
+"site": "portagetwppcin.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Indiana",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Portage",
 "site": "portagewi.gov",
 "lat": null,
@@ -192764,6 +197638,18 @@
 "kind": "City",
 "pop": 0,
 "state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Nenana",
+"site": "portofnenana.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Alaska",
 "email": [],
 "portal": [],
 "pages": []
@@ -193235,6 +198121,18 @@
 "pages": []
 },
 {
+"name": "Pottsville",
+"site": "pottsvillepa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Poulsbo",
 "site": "poulsbo.gov",
 "lat": null,
@@ -193476,6 +198374,18 @@
 "pages": []
 },
 {
+"name": "Prairie View",
+"site": "prairieviewtexas.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Prairie Village, KANSAS",
 "site": "prairievillageks.gov",
 "lat": null,
@@ -193674,6 +198584,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Prestonsburg",
+"site": "prestonsburgky.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Kentucky",
 "email": [],
 "portal": [],
 "pages": []
@@ -193913,6 +198835,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Kentucky",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Prospect Maine",
+"site": "prospectmaine.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Maine",
 "email": [],
 "portal": [],
 "pages": []
@@ -194167,6 +199101,28 @@
 "pages": []
 },
 {
+"name": "Purcellville",
+"site": "purcellvilleva.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Virginia",
+"email": [
+"foiacouncil@dls.virginia.gov"
+],
+"portal": [
+"https://purcellvilleva.gov/FormCenter/Customer-Forms-5/FOIA-Request-Form-42",
+"https://www.purcellvilleva.gov/78/Submit-FOIA-Request",
+"https://purcellvilleva.gov/917/FOIA-Request-Log"
+],
+"pages": [
+"https://www.purcellvilleva.gov/78/Request-Public-Records",
+"https://www.purcellvilleva.gov/917/FOIA-Request-Log",
+"https://www.purcellvilleva.gov/FormCenter/Customer-Forms-5/FOIA-Request-Form-42"
+]
+},
+{
 "name": "Purvis",
 "site": "purvis-ms.gov",
 "lat": null,
@@ -194408,6 +199364,18 @@
 ]
 },
 {
+"name": "Pymatuning Township Police",
+"site": "pymatuningpolice.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Queen Anne's County Government",
 "site": "qac.gov",
 "lat": null,
@@ -194607,6 +199575,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "West Virginia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Raleigh",
+"site": "raleighms.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Mississippi",
 "email": [],
 "portal": [],
 "pages": []
@@ -194842,6 +199822,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "North Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Randolph County Commission",
+"site": "randolphctywv.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "West Virginia",
 "email": [],
 "portal": [],
 "pages": []
@@ -195100,6 +200092,22 @@
 "pages": []
 },
 {
+"name": "Ravenna",
+"site": "ravennaoh.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.ravennaoh.gov/departments/public-records/",
+"https://www.ravennaoh.gov/departments/public-records/retention-policies/",
+"https://www.ravennaoh.gov/departments/public-records/retention-policies/"
+]
+},
+{
 "name": "Ravenna Township",
 "site": "ravennatownshipohio.gov",
 "lat": null,
@@ -195328,6 +200336,18 @@
 "pages": []
 },
 {
+"name": "Houston",
+"site": "readyhoustontx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "McHenry County Government Center",
 "site": "readymchenrycountyil.gov",
 "lat": null,
@@ -195548,6 +200568,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Iowa",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Redford Township Fire Department",
+"site": "redfordfd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
 "email": [],
 "portal": [],
 "pages": []
@@ -195806,6 +200838,18 @@
 },
 {
 "name": "Reedsville",
+"site": "reedsvillewi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Reedsville",
 "site": "reedsvillewv.gov",
 "lat": null,
 "lon": null,
@@ -196051,6 +201095,18 @@
 "pages": []
 },
 {
+"name": "Republic, Missouri",
+"site": "republicmo.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "City and County of Honolulu Office of Climate Change, Sustainability and Resiliency",
 "site": "resilientoahu.gov",
 "lat": null,
@@ -196276,6 +201332,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Nebraska",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Richardson",
+"site": "richardsontx.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Texas",
 "email": [],
 "portal": [],
 "pages": []
@@ -196525,6 +201593,27 @@
 "pages": []
 },
 {
+"name": "Richmond",
+"site": "richmondca.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [
+"cityclerkdept@ci.richmond.ca.us"
+],
+"portal": [
+"https://cityofrichmondca.nextrequest.com/",
+"https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico",
+"https://assets.nextrequest.com/manifest.json"
+],
+"pages": [
+"https://www.richmondca.gov/4331/Public-Records-Request",
+"https://cityofrichmondca.nextrequest.com/"
+]
+},
+{
 "name": "Richmond County Government",
 "site": "richmondcountync.gov",
 "lat": null,
@@ -196745,6 +201834,18 @@
 {
 "name": "Ridge Spring",
 "site": "ridgespringsc.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "South Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Ridgeville",
+"site": "ridgevillesc.gov",
 "lat": null,
 "lon": null,
 "kind": "Town",
@@ -196987,6 +202088,18 @@
 ]
 },
 {
+"name": "Ripon",
+"site": "riponca.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Ripon - Fire Department",
 "site": "riponfirewi.gov",
 "lat": null,
@@ -197222,6 +202335,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Riverside County Sheriff's Dept.",
+"site": "riversidesheriff.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "California",
 "email": [],
 "portal": [],
 "pages": []
@@ -197481,6 +202606,18 @@
 "pages": []
 },
 {
+"name": "Regional Old Colony Communications Center",
+"site": "roccc911.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Massachusetts",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Rochelle Park",
 "site": "rochelleparknj.gov",
 "lat": null,
@@ -197726,6 +202863,18 @@
 "pages": []
 },
 {
+"name": "Rockford TN",
+"site": "rockfordtn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Tennessee",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Rockford Township",
 "site": "rockfordtownshipil.gov",
 "lat": null,
@@ -197957,6 +203106,18 @@
 "pages": []
 },
 {
+"name": "Rock Springs",
+"site": "rockspringswi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Rockton",
 "site": "rocktonil.gov",
 "lat": null,
@@ -198177,6 +203338,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Arkansas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Rohnert Park",
+"site": "rohnertpark.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
 "email": [],
 "portal": [],
 "pages": []
@@ -198416,6 +203589,18 @@
 "pages": []
 },
 {
+"name": "Roosevelt City Corporation",
+"site": "rooseveltcity.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Utah",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Roosevelt County",
 "site": "rooseveltcountymt.gov",
 "lat": null,
@@ -198624,6 +203809,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "The Village of Roslyn",
+"site": "roslynny.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -199125,6 +204322,18 @@
 "pages": []
 },
 {
+"name": "Rusk",
+"site": "ruskcosherifftx.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Rusk County",
 "site": "ruskcountytx.gov",
 "lat": null,
@@ -199363,6 +204572,20 @@
 },
 {
 "name": "Rutland",
+"site": "rutland-ny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [
+"townclerk@townofrutland-ny.org"
+],
+"portal": [],
+"pages": []
+},
+{
+"name": "Rutland",
 "site": "rutlandma.gov",
 "lat": null,
 "lon": null,
@@ -199590,6 +204813,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Sadieville",
+"site": "sadievilleky.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Kentucky",
 "email": [],
 "portal": [],
 "pages": []
@@ -199843,6 +205078,18 @@
 {
 "name": "Salem City",
 "site": "salemutah.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Utah",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Salem City",
+"site": "salemutahlibrary.gov",
 "lat": null,
 "lon": null,
 "kind": "City",
@@ -200108,6 +205355,18 @@
 "lat": null,
 "lon": null,
 "kind": "Town",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "San Benito County Clerk-Recorder-Elections",
+"site": "sanbenitocounty-ca-cre.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
 "pop": 0,
 "state": "California",
 "email": [],
@@ -200388,6 +205647,18 @@
 ]
 },
 {
+"name": "Sandown Police Department",
+"site": "sandownpolicenh.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Hampshire",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Sandpoint",
 "site": "sandpointidaho.gov",
 "lat": null,
@@ -200656,6 +205927,18 @@
 "pages": [
 "https://sanilactownshipmi.gov/freedom-of-information-act/"
 ]
+},
+{
+"name": "San Joaquin",
+"site": "sanjoaquin.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "San Joaquin County District Attorney's Office",
@@ -200927,6 +206210,27 @@
 "pages": []
 },
 {
+"name": "Santa Ana",
+"site": "santa-ana.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [
+"cityclerk@santa-ana.org"
+],
+"portal": [
+"https://cityofsantaanaca.nextrequest.com/requests?page_number=1",
+"https://cityofsantaanaca.nextrequest.com/requests/new"
+],
+"pages": [
+"https://santa-ana.gov/public-records/",
+"https://santa-ana.gov/public-records",
+"https://santa-ana.gov/public-records-requests-faq/"
+]
+},
+{
 "name": "Clerk-Recorder, Assessor, and Registrar of Voters",
 "site": "santabarbaracountyassessor.gov",
 "lat": null,
@@ -201163,6 +206467,18 @@
 "pages": []
 },
 {
+"name": "San Ysidro",
+"site": "sanysidronm.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Mexico",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Sapulpa",
 "site": "sapulpaok.gov",
 "lat": null,
@@ -201390,6 +206706,24 @@
 ],
 "pages": [
 "https://satellitebeach.justfoia.com/publicportal/home/newrequest"
+]
+},
+{
+"name": "Saugatuck Township",
+"site": "saugatucktownshipmi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [
+"https://saugatucktownshipmi.gov/wp-content/uploads/2023/06/2022_SAUGATUCK_TOWNSHIP_FOIA_COMPLETE_1521.pdf",
+"https://saugatucktownshipmi.gov/wp-content/uploads/2023/05/2022_SAUGATUCK_TOWNSHIP_FOIA_COMPLETE_1521.pdf",
+"https://saugatucktownshipmi.gov/wp-content/uploads/2023/05/FOIA__Open_Meetings_Act_Info_16.pdf"
+],
+"pages": [
+"https://saugatucktownshipmi.gov/departments/clerk/fioa-guidelines/"
 ]
 },
 {
@@ -201646,6 +206980,18 @@
 "pages": []
 },
 {
+"name": "Scappoose",
+"site": "scappoose.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oregon",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Village/Town of Scarsdale",
 "site": "scarsdale.gov",
 "lat": null,
@@ -201856,6 +207202,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Nebraska",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Schuylkill",
+"site": "schuylkillcountypa.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "Pennsylvania",
 "email": [],
 "portal": [],
 "pages": []
@@ -202114,6 +207472,21 @@
 "pages": []
 },
 {
+"name": "Scotts Valley",
+"site": "scottsvalley.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.scottsvalley.gov/504/Public-Records-Act-Requests",
+"https://www.scottsvalley.gov/forms.aspx?FID=64"
+]
+},
+{
 "name": "Scottsville",
 "site": "scottsvilleny.gov",
 "lat": null,
@@ -202349,6 +207722,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Sebastian County",
+"site": "sebastiancountyar.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Arkansas",
 "email": [],
 "portal": [],
 "pages": []
@@ -202629,6 +208014,18 @@
 "pages": []
 },
 {
+"name": "Seminole County Clerk of the Court",
+"site": "seminoleclerkfl.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Seminole County Government",
 "site": "seminolecountyfl.gov",
 "lat": null,
@@ -202859,6 +208256,18 @@
 "https://www.sevenfields.gov/publicrecords",
 "https://www.sevenfields.gov/open-records"
 ]
+},
+{
+"name": "Seven Springs Borough",
+"site": "sevenspringsborough-pa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Sevier County Arkansas",
@@ -203344,6 +208753,18 @@
 "pages": []
 },
 {
+"name": "Shawano County",
+"site": "shawanocountywi.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Shawnee Hills",
 "site": "shawneehillsoh.gov",
 "lat": null,
@@ -203576,6 +208997,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Massachusetts",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Sherburne",
+"site": "sherburnemn.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "Minnesota",
 "email": [],
 "portal": [],
 "pages": []
@@ -203818,6 +209251,18 @@
 },
 {
 "name": "Sherman",
+"site": "shermanny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Sherman",
 "site": "shermanshebcowi.gov",
 "lat": null,
 "lon": null,
@@ -204047,6 +209492,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Washington",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Shorewood Hills",
+"site": "shorewoodhillswi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
 "email": [],
 "portal": [],
 "pages": []
@@ -204312,6 +209769,20 @@
 "pages": []
 },
 {
+"name": "Sigurd Town",
+"site": "sigurdtown.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Utah",
+"email": [
+"clerk@sigurdtown.gov"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Siler City",
 "site": "silercity.gov",
 "lat": null,
@@ -204530,6 +210001,22 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Sioux County Nebraska",
+"site": "siouxcountyne.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Nebraska",
+"email": [],
+"portal": [],
+"pages": [
+"https://siouxcountyne.gov/public-records/",
+"https://siouxcountyne.gov/wp-login.php?redirect_to=https%3A%2F%2Fsiouxcountyne.gov%2Fpublic-records%2F",
+"https://siouxcountyne.gov/public-records/"
+]
 },
 {
 "name": "Siskiyou County Office of Emergency Services",
@@ -204794,6 +210281,20 @@
 "pages": []
 },
 {
+"name": "Slippery Rock",
+"site": "slipperyrockboroughpa.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [
+"openrecords@pa.gov"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Sloan",
 "site": "sloanny.gov",
 "lat": null,
@@ -205023,6 +210524,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Utah",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Smithfield",
+"site": "smithfieldva.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Virginia",
 "email": [],
 "portal": [],
 "pages": []
@@ -205259,6 +210772,20 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Soap Lake",
+"site": "soaplakewa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Washington",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.soaplakewa.gov/public-records-request"
+]
 },
 {
 "name": "Social Circle, Georgia",
@@ -205502,6 +211029,18 @@
 },
 {
 "name": "Somers",
+"site": "somersny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Somers",
 "site": "somerswi.gov",
 "lat": null,
 "lon": null,
@@ -205706,6 +211245,18 @@
 "pages": [
 "https://www.southamboynj.gov/Errors/e500?aspxerrorpath=/government/public-records"
 ]
+},
+{
+"name": "Southampton Village Police Department",
+"site": "southamptonvillagepolice.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "South Barry County Ambulance District",
@@ -205937,6 +211488,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "North Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "South Euclid",
+"site": "southeuclid.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Ohio",
 "email": [],
 "portal": [],
 "pages": []
@@ -206179,6 +211742,20 @@
 "pages": []
 },
 {
+"name": "South Ogden City",
+"site": "southogdencity.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Utah",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.southogdencity.gov/government/city_administration/grama_(records_request).php"
+]
+},
+{
 "name": "South Park Township Police",
 "site": "southparktwppd.gov",
 "lat": null,
@@ -206384,6 +211961,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Spartanburg County",
+"site": "spartanburgcounty.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "South Carolina",
 "email": [],
 "portal": [],
 "pages": []
@@ -206621,6 +212210,22 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Sprague",
+"site": "spraguect.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Connecticut",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.spraguect.gov/public-records",
+"https://www.spraguect.gov/publicrecords",
+"https://www.spraguect.gov/open-records"
+]
 },
 {
 "name": "Spring City Borough",
@@ -206876,6 +212481,18 @@
 "pages": []
 },
 {
+"name": "Spring Grove Borough",
+"site": "springgrovepa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Spring Hill",
 "site": "springhillks.gov",
 "lat": null,
@@ -207124,6 +212741,28 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Stafford, Virginia",
+"site": "staffordcountyva.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "Virginia",
+"email": [
+"foiacouncil@leg.state.va.us"
+],
+"portal": [
+"https://staffordcountyva.gov/services/request/public_records_(foia).php",
+"http://foiacouncil.dls.virginia.gov/sample%20letters/Requester%20public%20comment%20form%202021.docx",
+"https://cms9.revize.com/revize/security/index.jsp?webspace=stafford&filename=/services/request/public_records_(foia).php"
+],
+"pages": [
+"https://staffordcountyva.gov/services/request/public_records_(foia).php",
+"https://www.staffordcountyva.gov/services/request/public_records_(foia).php",
+"https://staffordcountyva.gov/services/request/public_records_(foia).php"
+]
 },
 {
 "name": "Stafford",
@@ -207378,6 +213017,18 @@
 "pages": []
 },
 {
+"name": "Stanislaus County District Attorney's Office",
+"site": "stanislaus-da.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Stanley County",
 "site": "stanleycountysd.gov",
 "lat": null,
@@ -207616,6 +213267,18 @@
 "https://starlaketownshipmn.gov/publicrecords",
 "https://starlaketownshipmn.gov/open-records"
 ]
+},
+{
+"name": "State College",
+"site": "statecollegepa.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "St. Augusta",
@@ -207862,6 +213525,18 @@
 "pages": []
 },
 {
+"name": "Steele County Courthouse",
+"site": "steelecountynd.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "North Dakota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Ste. Genevieve County",
 "site": "stegencounty.gov",
 "lat": null,
@@ -208102,6 +213777,18 @@
 "pages": []
 },
 {
+"name": "Stevenson",
+"site": "stevensonwa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Washington",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Stewart County Commission",
 "site": "stewartcountyga.gov",
 "lat": null,
@@ -208326,6 +214013,18 @@
 "email": [
 "clerk@stillwatertownshipmn.gov"
 ],
+"portal": [],
+"pages": []
+},
+{
+"name": "Stinesville (Police Department)",
+"site": "stinesvillein.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Indiana",
+"email": [],
 "portal": [],
 "pages": []
 },
@@ -208583,6 +214282,24 @@
 "pages": []
 },
 {
+"name": "St. Lucie County Clerk & Comptroller",
+"site": "stlucieclerk.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
+"email": [
+"records_request@stlucieclerk.gov"
+],
+"portal": [],
+"pages": [
+"https://www.stlucieclerk.gov/services/public-records-request",
+"https://stlucieclerk.gov/services/public-records-request",
+"https://stlucieclerk.gov/services/public-records-request"
+]
+},
+{
 "name": "St. Lucie County",
 "site": "stlucieco.gov",
 "lat": null,
@@ -208832,6 +214549,18 @@
 },
 {
 "name": "Stoddard County",
+"site": "stoddardcountyclerk.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Stoddard County",
 "site": "stoddardcountymo.gov",
 "lat": null,
 "lon": null,
@@ -209051,6 +214780,18 @@
 {
 "name": "Stow Municipal Court",
 "site": "stowmunicourtoh.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Stow",
+"site": "stowohio.gov",
 "lat": null,
 "lon": null,
 "kind": "City",
@@ -209292,6 +215033,18 @@
 {
 "name": "Stuart",
 "site": "stuartia.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Iowa",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Stuart Rescue Department",
+"site": "stuartrescueia.gov",
 "lat": null,
 "lon": null,
 "kind": "City",
@@ -209546,6 +215299,18 @@
 "pages": []
 },
 {
+"name": "Sullivan, NH",
+"site": "sullivancountynh.gov",
+"lat": null,
+"lon": null,
+"kind": "County",
+"pop": 0,
+"state": "New Hampshire",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Sullivan County Commissioners",
 "site": "sullivancountypa.gov",
 "lat": null,
@@ -209788,6 +215553,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Colorado",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Summit County Department of Job and Family Services",
+"site": "summitcountyjfsohio.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Ohio",
 "email": [],
 "portal": [],
 "pages": []
@@ -210040,6 +215817,18 @@
 "kind": "City",
 "pop": 0,
 "state": "New Hampshire",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Sunflower Circuit Clerk",
+"site": "sunflowercircuitclerk.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Mississippi",
 "email": [],
 "portal": [],
 "pages": []
@@ -210301,6 +216090,18 @@
 "pages": [
 "https://susqco.com/departments/county-commissioners/right-to-know"
 ]
+},
+{
+"name": "Sussex County Clerk's Office",
+"site": "sussexcountyclerknj.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Sussex County Council",
@@ -210568,6 +216369,18 @@
 "pages": []
 },
 {
+"name": "Swatara Township Authority",
+"site": "swataratwpauthority-pa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Sweden, Maine",
 "site": "swedenmaine.gov",
 "lat": null,
@@ -210810,6 +216623,18 @@
 "https://www.syracuseks.gov/public-information-request",
 "https://www.syracuseks.gov/open-records"
 ]
+},
+{
+"name": "Syracuse City",
+"site": "syracuseut.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Utah",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Syracuse Regional Airport Authority Police Department",
@@ -211061,6 +216886,28 @@
 "pages": []
 },
 {
+"name": "Tamarac",
+"site": "tamarac.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Florida",
+"email": [
+"cityclerk@tamarac.gov"
+],
+"portal": [
+"https://tamaracfl.justfoia.com/Forms/Launch/08fc24fe-3caa-4cfb-b150-5ef44a5b61a3",
+"https://tamaracfl.justfoia.com/Forms/Launch/d705cbd6-1396-49b7-939e-8d86c5a87deb",
+"https://tamaracfl.justfoia.com/publicportal/home/track"
+],
+"pages": [
+"https://www.tamarac.gov/1682/Public-Records-and-Information-Center",
+"https://tamaracfl.justfoia.com/publicportal/home/track",
+"https://www.tamarac.gov/publicrecords"
+]
+},
+{
 "name": "Tampa",
 "site": "tampafl.gov",
 "lat": null,
@@ -211301,6 +217148,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Tate County Board of Supervisors",
+"site": "tatecountyms.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Mississippi",
 "email": [],
 "portal": [],
 "pages": []
@@ -211563,6 +217422,18 @@
 "pages": []
 },
 {
+"name": "Tega Cay",
+"site": "tegacaysc.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "South Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "TEHAMA",
 "site": "tehama.gov",
 "lat": null,
@@ -211792,6 +217663,22 @@
 ]
 },
 {
+"name": "Tewksbury Township",
+"site": "tewksburynj.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.tewksburynj.gov/public-records",
+"https://www.tewksburynj.gov/publicrecords",
+"https://www.tewksburynj.gov/open-records"
+]
+},
+{
 "name": "Texarkana, Texas",
 "site": "texarkanatexas.gov",
 "lat": null,
@@ -212012,6 +217899,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Village",
+"site": "thevillageok.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oklahoma",
 "email": [],
 "portal": [],
 "pages": []
@@ -212252,6 +218151,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Alaska",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Thornton Administration",
+"site": "thorntonnh.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Hampshire",
 "email": [],
 "portal": [],
 "pages": []
@@ -212511,6 +218422,18 @@
 "pages": []
 },
 {
+"name": "Tillamook",
+"site": "tillamookor.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oregon",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Tillman County",
 "site": "tillmancountyok.gov",
 "lat": null,
@@ -212731,6 +218654,20 @@
 "pop": 0,
 "state": "Texas",
 "email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Tofte Township",
+"site": "toftemn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [
+"clerk@toftemn.gov"
+],
 "portal": [],
 "pages": []
 },
@@ -212978,6 +218915,18 @@
 "pages": []
 },
 {
+"name": "Tooele County",
+"site": "tooelecountyvotes.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Utah",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Toole County",
 "site": "toolecountymt.gov",
 "lat": null,
@@ -213187,6 +219136,18 @@
 {
 "name": "Arpin",
 "site": "townarpin.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Berlin - Marathon County",
+"site": "townberlinmcwi.gov",
 "lat": null,
 "lon": null,
 "kind": "Town",
@@ -213433,6 +219394,18 @@
 "pages": []
 },
 {
+"name": "Alfred",
+"site": "townofalfredny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Algoma",
 "site": "townofalgomawi.gov",
 "lat": null,
@@ -213653,6 +219626,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Alabama",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Bainbridge",
+"site": "townofbainbridgeny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -213896,6 +219881,18 @@
 "pages": []
 },
 {
+"name": "Beekmantown",
+"site": "townofbeekmantownny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Belgium",
 "site": "townofbelgiumwi.gov",
 "lat": null,
@@ -214117,6 +220114,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Blowing Rock",
+"site": "townofblowingrocknc.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "North Carolina",
 "email": [],
 "portal": [],
 "pages": []
@@ -214385,6 +220394,20 @@
 "pages": []
 },
 {
+"name": "Bruceton",
+"site": "townofbrucetontn.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Tennessee",
+"email": [
+"cityclerk@townofbrucetontn.org"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Brunswick",
 "site": "townofbrunswicknc.gov",
 "lat": null,
@@ -214627,6 +220650,18 @@
 "pages": []
 },
 {
+"name": "Camillus",
+"site": "townofcamillus.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Campbell",
 "site": "townofcampbellwi.gov",
 "lat": null,
@@ -214837,6 +220872,18 @@
 {
 "name": "Cassel",
 "site": "townofcasselwi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Cassian",
+"site": "townofcassianwi.gov",
 "lat": null,
 "lon": null,
 "kind": "Town",
@@ -215079,6 +221126,22 @@
 "pages": []
 },
 {
+"name": "Chilton",
+"site": "townofchiltonwi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [
+"clerk@townofchiltonwi.gov"
+],
+"portal": [],
+"pages": [
+"https://townofchiltonwi.gov/open-records-request/"
+]
+},
+{
 "name": "Clarendon",
 "site": "townofclarendonny.gov",
 "lat": null,
@@ -215309,6 +221372,22 @@
 ],
 "portal": [],
 "pages": []
+},
+{
+"name": "Concord New York",
+"site": "townofconcordny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.townofconcordny.gov/public-records",
+"https://www.townofconcordny.gov/publicrecords",
+"https://www.townofconcordny.gov/open-records"
+]
 },
 {
 "name": "Conklin",
@@ -215557,6 +221636,18 @@
 "pages": []
 },
 {
+"name": "Cumberland",
+"site": "townofcumberlandmaine.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Maine",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "DALTON",
 "site": "townofdaltonnh.gov",
 "lat": null,
@@ -215793,6 +221884,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Denmark",
+"site": "townofdenmarkny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -216046,6 +222149,18 @@
 "pages": []
 },
 {
+"name": "Eagle",
+"site": "townofeaglewi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "East Bloomfield",
 "site": "townofeastbloomfieldny.gov",
 "lat": null,
@@ -216283,6 +222398,22 @@
 "pages": []
 },
 {
+"name": "Erin",
+"site": "townoferinwi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.townoferinwi.gov/public-records",
+"https://www.townoferinwi.gov/publicrecords",
+"https://www.townoferinwi.gov/open-records"
+]
+},
+{
 "name": "Essex",
 "site": "townofessexny.gov",
 "lat": null,
@@ -216514,6 +222645,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Arkansas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Frankfort",
+"site": "townoffrankfortny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -216762,6 +222905,18 @@
 "pages": []
 },
 {
+"name": "Geneva",
+"site": "townofgenevany.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "GERMANTOWN",
 "site": "townofgermantownwi.gov",
 "lat": null,
@@ -216981,6 +223136,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Granville",
+"site": "townofgranvillewv.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "West Virginia",
 "email": [],
 "portal": [],
 "pages": []
@@ -217210,6 +223377,18 @@
 "pages": []
 },
 {
+"name": "Hansen",
+"site": "townofhansen.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Harmony",
 "site": "townofharmonyrc.gov",
 "lat": null,
@@ -217428,6 +223607,20 @@
 "pop": 0,
 "state": "New York",
 "email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Holland",
+"site": "townofhollandwi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [
+"clerk@townofhollandwi.gov"
+],
 "portal": [],
 "pages": []
 },
@@ -217913,6 +224106,18 @@
 "pages": []
 },
 {
+"name": "Kirkland",
+"site": "townofkirkland.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Kirkwood",
 "site": "townofkirkwood.gov",
 "lat": null,
@@ -218154,6 +224359,20 @@
 "pages": []
 },
 {
+"name": "Lemonweir",
+"site": "townoflemonweirwi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [
+"clerk@townoflemonweir.com"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Lenroot",
 "site": "townoflenrootwi.gov",
 "lat": null,
@@ -218386,6 +224605,18 @@
 "pages": []
 },
 {
+"name": "Litchfield",
+"site": "townoflitchfieldct.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Connecticut",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Little Wolf",
 "site": "townoflittlewolfwi.gov",
 "lat": null,
@@ -218608,6 +224839,18 @@
 ]
 },
 {
+"name": "Mamaroneck Police Department",
+"site": "townofmamaroneckpd.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Manchester NY",
 "site": "townofmanchesterny.gov",
 "lat": null,
@@ -218827,6 +225070,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Mendon",
+"site": "townofmendonny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -219072,6 +225327,20 @@
 "pages": []
 },
 {
+"name": "Moffat",
+"site": "townofmoffatco.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Colorado",
+"email": [
+"clerk@moffatcolorado.com"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Moira",
 "site": "townofmoirany.gov",
 "lat": null,
@@ -219302,6 +225571,18 @@
 "pages": []
 },
 {
+"name": "Necedah",
+"site": "townofnecedahwi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Nectar",
 "site": "townofnectar.gov",
 "lat": null,
@@ -219525,6 +225806,18 @@
 {
 "name": "Newport",
 "site": "townofnewportny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "New Scotland",
+"site": "townofnewscotland.gov",
 "lat": null,
 "lon": null,
 "kind": "Town",
@@ -219779,6 +226072,18 @@
 "pages": []
 },
 {
+"name": "ONALASKA",
+"site": "townofonalaskawi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Onondaga",
 "site": "townofonondaga.gov",
 "lat": null,
@@ -219999,6 +226304,18 @@
 "email": [
 "paristownclerk@frontiernet.net"
 ],
+"portal": [],
+"pages": []
+},
+{
+"name": "Parrish",
+"site": "townofparrishal.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Alabama",
+"email": [],
 "portal": [],
 "pages": []
 },
@@ -220228,6 +226545,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Pomfret",
+"site": "townofpomfretny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -220470,6 +226799,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Oklahoma",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Pulaski",
+"site": "townofpulaskiwi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
 "email": [],
 "portal": [],
 "pages": []
@@ -220722,6 +227063,18 @@
 "pages": []
 },
 {
+"name": "Rockland Manitowoc County",
+"site": "townofrocklandmanitowoccountywi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Rockland",
 "site": "townofrocklandny.gov",
 "lat": null,
@@ -220932,6 +227285,18 @@
 {
 "name": "Sandy Creek",
 "site": "townofsandycreekny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Sanford",
+"site": "townofsanfordny.gov",
 "lat": null,
 "lon": null,
 "kind": "Town",
@@ -221181,6 +227546,18 @@
 },
 {
 "name": "Shelby",
+"site": "townofshelbyny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Shelby",
 "site": "townofshelbywi.gov",
 "lat": null,
 "lon": null,
@@ -221399,6 +227776,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New Mexico",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Spring Prairie",
+"site": "townofspringprairiewi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
 "email": [],
 "portal": [],
 "pages": []
@@ -221641,6 +228030,18 @@
 "pages": []
 },
 {
+"name": "Sylvester",
+"site": "townofsylvesterwi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "TAYCHEEDAH",
 "site": "townoftaycheedahwi.gov",
 "lat": null,
@@ -221877,6 +228278,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Utah",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Troupsburg",
+"site": "townoftroupsburgny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -222130,6 +228543,22 @@
 "pages": []
 },
 {
+"name": "Viroqua",
+"site": "townofviroquawi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
+"email": [
+"countyclerk@vernoncountywi.gov",
+"clerkofcourt@vernoncountywi.gov",
+"clerk@townofviroquawi.gov"
+],
+"portal": [],
+"pages": []
+},
+{
 "name": "Volney",
 "site": "townofvolney.gov",
 "lat": null,
@@ -222345,6 +228774,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Wayland",
+"site": "townofwaylandny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -222588,6 +229029,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Wheaton",
+"site": "townofwheatonwi.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
 "email": [],
 "portal": [],
 "pages": []
@@ -222837,6 +229290,18 @@
 "pages": []
 },
 {
+"name": "Woodbury",
+"site": "townofwoodburyny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Woodruff",
 "site": "townofwoodruffwi.gov",
 "lat": null,
@@ -223076,6 +229541,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Travis County",
+"site": "traviscountyemergency.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Texas",
 "email": [],
 "portal": [],
 "pages": []
@@ -223329,6 +229806,24 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Troup County Board of Commissioners",
+"site": "troupcountyga.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Georgia",
+"email": [],
+"portal": [
+"https://troupcountyga.justfoia.com/publicportal/home/newrequest",
+"https://troup.granicus.com/boards/w/8d9bd1c4539b0726/boards",
+"https://troupcountyga.justfoia.com/publicportal"
+],
+"pages": [
+"https://troupcountyga.justfoia.com/publicportal/home/newrequest"
+]
 },
 {
 "name": "Hartsville/Trousdale County Government",
@@ -223809,6 +230304,18 @@
 },
 {
 "name": "Tusayan",
+"site": "tusayan-az.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Arizona",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Tusayan",
 "site": "tusayanaz.gov",
 "lat": null,
 "lon": null,
@@ -224034,6 +230541,24 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Union County Sheriff's Office",
+"site": "ucsooregon.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Oregon",
+"email": [
+"ucsorecords@union-county.org"
+],
+"portal": [],
+"pages": [
+"https://ucsooregon.gov/public-records/",
+"https://ucsooregon.gov/public-records/",
+"https://ucsooregon.gov/public-records/"
+]
 },
 {
 "name": "Universal City",
@@ -224268,6 +230793,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Oklahoma",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Union County Board of Commissioners",
+"site": "unioncounty-fl.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
 "email": [],
 "portal": [],
 "pages": []
@@ -224533,6 +231070,18 @@
 ]
 },
 {
+"name": "Union Springs",
+"site": "unionspringsny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Uniontown Police Department",
 "site": "uniontownpdal.gov",
 "lat": null,
@@ -224776,6 +231325,18 @@
 "https://urbannava.gov/PDFs/misc/2026/10284-foia.pdf",
 "https://urbannava.gov/PDFs/forms/9747-FOIA-request.pdf"
 ],
+"pages": []
+},
+{
+"name": "Utah County Government",
+"site": "utahcounty.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Utah",
+"email": [],
+"portal": [],
 "pages": []
 },
 {
@@ -225300,6 +231861,18 @@
 ]
 },
 {
+"name": "Van Buren Township Downtown Development Authority",
+"site": "vbtmidda.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Venango",
 "site": "venangocountypa.gov",
 "lat": null,
@@ -225541,6 +232114,18 @@
 "pages": []
 },
 {
+"name": "Vernon",
+"site": "vernonpdca.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "California",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Vernon Township",
 "site": "vernontwp-mi.gov",
 "lat": null,
@@ -225765,6 +232350,20 @@
 "pop": 0,
 "state": "Missouri",
 "email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Vienna",
+"site": "viennany.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [
+"townclerk@viennany.gov"
+],
 "portal": [],
 "pages": []
 },
@@ -226013,6 +232612,18 @@
 "pages": []
 },
 {
+"name": "Angelica",
+"site": "villageofangelica.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Angola",
 "site": "villageofangolany.gov",
 "lat": null,
@@ -226237,6 +232848,18 @@
 {
 "name": "Bloomfield",
 "site": "villageofbloomfieldny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Bolivar",
+"site": "villageofbolivarny.gov",
 "lat": null,
 "lon": null,
 "kind": "Town",
@@ -226479,6 +233102,18 @@
 "pages": []
 },
 {
+"name": "Castile",
+"site": "villageofcastile.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Castleton on Hudson",
 "site": "villageofcastleton.gov",
 "lat": null,
@@ -226705,6 +233340,20 @@
 "pop": 0,
 "state": "Wisconsin",
 "email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Copemish",
+"site": "villageofcopemish.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Michigan",
+"email": [
+"clerk@villageofcopemish.com"
+],
 "portal": [],
 "pages": []
 },
@@ -226951,6 +233600,18 @@
 "pages": []
 },
 {
+"name": "Dunlap",
+"site": "villageofdunlap-il.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Durand",
 "site": "villageofdurandil.gov",
 "lat": null,
@@ -227186,6 +233847,18 @@
 "pages": []
 },
 {
+"name": "Franklin",
+"site": "villageoffranklinny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Fredonia",
 "site": "villageoffredoniany.gov",
 "lat": null,
@@ -227387,6 +234060,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Nebraska",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Hixton",
+"site": "villageofhixton.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Wisconsin",
 "email": [],
 "portal": [],
 "pages": []
@@ -227622,6 +234307,20 @@
 "pages": []
 },
 {
+"name": "Lena",
+"site": "villageoflenail.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [],
+"pages": [
+"https://villageoflenail.gov/government/freedom-of-info-request/"
+]
+},
+{
 "name": "Lewiston",
 "site": "villageoflewistonny.gov",
 "lat": null,
@@ -227848,6 +234547,20 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Manchester",
+"site": "villageofmanchesterny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.villageofmanchesterny.gov/foil"
+]
 },
 {
 "name": "Marcellus",
@@ -228088,6 +234801,18 @@
 "pages": []
 },
 {
+"name": "Monee",
+"site": "villageofmonee.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Monroe",
 "site": "villageofmonroeny.gov",
 "lat": null,
@@ -228318,6 +235043,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "NEW HEMPSTEAD",
+"site": "villageofnewhempstead.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -228562,6 +235299,18 @@
 ]
 },
 {
+"name": "palmyra",
+"site": "villageofpalmyrailmacoupin.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Park Forest",
 "site": "villageofparkforest-il.gov",
 "lat": null,
@@ -228792,6 +235541,20 @@
 "state": "Michigan",
 "email": [
 "clerk@villageofromeomi.gov"
+],
+"portal": [],
+"pages": []
+},
+{
+"name": "Roslyn Estates",
+"site": "villageofroslynestates.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [
+"villageclerk@villageofroslynestates.com"
 ],
 "portal": [],
 "pages": []
@@ -229028,6 +235791,18 @@
 "https://www.villageofstetsonvillewi.gov/public-information-request",
 "https://www.villageofstetsonvillewi.gov/open-records"
 ]
+},
+{
+"name": "Stillwater",
+"site": "villageofstillwaterny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Stockbridge",
@@ -229271,6 +236046,22 @@
 ]
 },
 {
+"name": "Victor",
+"site": "villageofvictorny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [
+"villageclerk@villageofvictorny.gov"
+],
+"portal": [],
+"pages": [
+"https://www.villageofvictorny.gov/foil"
+]
+},
+{
 "name": "Virgil, Illinois",
 "site": "villageofvirgil.gov",
 "lat": null,
@@ -229490,6 +236281,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "West Manchester",
+"site": "villageofwestmanchesteroh.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Ohio",
 "email": [],
 "portal": [],
 "pages": []
@@ -229737,6 +236540,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Vinton IA",
+"site": "vintonia.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Iowa",
 "email": [],
 "portal": [],
 "pages": []
@@ -229996,6 +236811,20 @@
 ]
 },
 {
+"name": "Volusia County Tax Collector",
+"site": "volusiatax.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.volusiatax.gov/PRR/App/"
+]
+},
+{
 "name": "Von Ormy, Texas",
 "site": "vonormytx.gov",
 "lat": null,
@@ -230227,6 +237056,18 @@
 "kind": "County",
 "pop": 0,
 "state": "Virginia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Franklin County Supervisor of Elections",
+"site": "votefranklinfl.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
 "email": [],
 "portal": [],
 "pages": []
@@ -230486,6 +237327,20 @@
 ]
 },
 {
+"name": "Okeechobee County Supervisor of Elections",
+"site": "voteokeechobee.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Florida",
+"email": [],
+"portal": [],
+"pages": [
+"https://voteokeechobee.gov/election-information/public-record-request-info/"
+]
+},
+{
 "name": "Orange County Supervisor of Elections",
 "site": "voteorangefl.gov",
 "lat": null,
@@ -230732,6 +237587,18 @@
 "pages": []
 },
 {
+"name": "Waconia Township",
+"site": "waconiatwsp.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "WACOUTA TOWNSHIP",
 "site": "wacoutatownship.gov",
 "lat": null,
@@ -230965,6 +237832,18 @@
 ]
 },
 {
+"name": "Walworth County",
+"site": "walcowi.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Wisconsin",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Walden",
 "site": "waldenvt.gov",
 "lat": null,
@@ -231171,6 +238050,23 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Wall",
+"site": "wallnj.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Jersey",
+"email": [
+"opra@wallpolice.org",
+"clerk@wallnj.gov"
+],
+"portal": [],
+"pages": [
+"https://www.wallnj.gov/734/Open-Public-Records-Act-OPRA"
+]
 },
 {
 "name": "Wallowa County Government",
@@ -231412,6 +238308,18 @@
 "pages": []
 },
 {
+"name": "Ward County",
+"site": "wardnd.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "North Dakota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Ware County Government",
 "site": "warecountyga.gov",
 "lat": null,
@@ -231635,6 +238543,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Mississippi",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Warren County",
+"site": "warrencountync.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "North Carolina",
 "email": [],
 "portal": [],
 "pages": []
@@ -231878,6 +238798,18 @@
 "kind": "Org",
 "pop": 0,
 "state": "Indiana",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Warrior",
+"site": "warrioral.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Alabama",
 "email": [],
 "portal": [],
 "pages": []
@@ -232130,6 +239062,18 @@
 "pages": []
 },
 {
+"name": "Washington",
+"site": "washingtonboro-nj.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Washington County Emergency Management Agency",
 "site": "washingtoncomaineema.gov",
 "lat": null,
@@ -232372,6 +239316,18 @@
 ]
 },
 {
+"name": "Washington",
+"site": "washingtonga.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Georgia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Washington Grove",
 "site": "washingtongrovemd.gov",
 "lat": null,
@@ -232610,6 +239566,18 @@
 "pages": []
 },
 {
+"name": "Washtenaw County, Michigan",
+"site": "washtenaw.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Washtenaw County Government",
 "site": "washtenawcounty-mi.gov",
 "lat": null,
@@ -232839,6 +239807,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Watertown, SD",
+"site": "watertownsd.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "South Dakota",
 "email": [],
 "portal": [],
 "pages": []
@@ -233090,6 +240070,18 @@
 ]
 },
 {
+"name": "Waukegan",
+"site": "waukeganil.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Waukesha County Government",
 "site": "waukeshacounty-wi.gov",
 "lat": null,
@@ -233294,6 +240286,18 @@
 {
 "name": "Wawarsing",
 "site": "wawarsingny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Wawayanda",
+"site": "wawayanda.gov",
 "lat": null,
 "lon": null,
 "kind": "Town",
@@ -233545,6 +240549,18 @@
 "pages": []
 },
 {
+"name": "Waynesfield",
+"site": "waynesfield.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Waynesville",
 "site": "waynesvillenc.gov",
 "lat": null,
@@ -233784,6 +240800,20 @@
 "state": "Utah",
 "email": [],
 "portal": [],
+"pages": []
+},
+{
+"name": "Weber County",
+"site": "webercountyutah.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Utah",
+"email": [],
+"portal": [
+"https://webercountyut.nextrequest.com/"
+],
 "pages": []
 },
 {
@@ -234039,6 +241069,18 @@
 "pages": []
 },
 {
+"name": "Weldon Spring",
+"site": "weldonspring.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Missouri",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Weld County Govenrment",
 "site": "weldvotes.gov",
 "lat": null,
@@ -234268,6 +241310,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "West Bath",
+"site": "westbathmaine.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "Maine",
 "email": [],
 "portal": [],
 "pages": []
@@ -234509,6 +241563,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Indiana",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Westfield",
+"site": "westfieldnj.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Jersey",
 "email": [],
 "portal": [],
 "pages": []
@@ -234775,6 +241841,18 @@
 "pages": []
 },
 {
+"name": "West Marlborough Township",
+"site": "westmarlboroughpa.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Pennsylvania",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "West Miami",
 "site": "westmiamipolice.gov",
 "lat": null,
@@ -234999,6 +242077,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Alabama",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Westover Police Department",
+"site": "westoverwv.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "West Virginia",
 "email": [],
 "portal": [],
 "pages": []
@@ -235240,6 +242330,18 @@
 "kind": "City",
 "pop": 0,
 "state": "New Jersey",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "West Winfield",
+"site": "westwinfieldny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
 "email": [],
 "portal": [],
 "pages": []
@@ -235505,6 +242607,18 @@
 ]
 },
 {
+"name": "Wheatland County",
+"site": "wheatlandcomt.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Montana",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Wheatland",
 "site": "wheatlandkenoshaco.gov",
 "lat": null,
@@ -235749,6 +242863,18 @@
 "pages": [
 "https://whitefishtownshipmi.gov/foia-form/"
 ]
+},
+{
+"name": "Whiteford Township",
+"site": "whitefordtownshipmi.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Michigan",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "White Hall",
@@ -236009,6 +243135,18 @@
 "pages": []
 },
 {
+"name": "Whitestown",
+"site": "whitestownny.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Whiteville",
 "site": "whitevillenc.gov",
 "lat": null,
@@ -236260,6 +243398,22 @@
 "pages": []
 },
 {
+"name": "Wilburton",
+"site": "wilburton.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Oklahoma",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.wilburton.gov/Government/Government-Home/public-records",
+"https://www.wilburton.gov/Admin-Login?returnurl=%2fGovernment%2fGovernment-Home%2fpublic-records",
+"https://www.wilburton.gov/Government/Government-Home/public-records"
+]
+},
+{
 "name": "Wilbur",
 "site": "wilburwa.gov",
 "lat": null,
@@ -236506,6 +243660,18 @@
 "https://willcounty.gov/County-Offices/Economic-Development/Division-of-Transportation/Freedom-of-Information-Act-FOIA",
 "https://willcounty.gov/Login?returnurl=%2fCounty-Offices%2fEconomic-Development%2fDivision-of-Transportation%2fFreedom-of-Information-Act-FOIA"
 ]
+},
+{
+"name": "Will County 911 Emergency Telephone System Board",
+"site": "willcounty911.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Illinois",
+"email": [],
+"portal": [],
+"pages": []
 },
 {
 "name": "Will County Illinois",
@@ -236759,6 +243925,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Willingboro Township",
+"site": "willingboronj.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "New Jersey",
 "email": [],
 "portal": [],
 "pages": []
@@ -237022,6 +244200,26 @@
 "pages": []
 },
 {
+"name": "Wilson County Election Commission",
+"site": "wilsontnvotes.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Tennessee",
+"email": [],
+"portal": [
+"https://www.wilsontnvotes.gov/publicrecords/post.html",
+"https://www.wilsontnvotes.gov/foia/post.html",
+"https://www.wilsontnvotes.gov/publicrecords/about.html"
+],
+"pages": [
+"https://www.wilsontnvotes.gov/public-records/",
+"https://www.wilsontnvotes.gov/public-records/courses-list.html",
+"https://www.wilsontnvotes.gov/public-records/faq.html"
+]
+},
+{
 "name": "Wilson Township in Winona County",
 "site": "wilsontownshipwcmn.gov",
 "lat": null,
@@ -237268,6 +244466,18 @@
 "pages": []
 },
 {
+"name": "Windham Police Dept",
+"site": "windhamnypolice.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New York",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "The Village of Windham Ohio",
 "site": "windhamvillageoh.gov",
 "lat": null,
@@ -237491,6 +244701,22 @@
 "pages": []
 },
 {
+"name": "Winn Parish Sheriff's Office",
+"site": "winnsheriff.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Louisiana",
+"email": [],
+"portal": [],
+"pages": [
+"https://www.winnsheriff.gov/public-records",
+"https://www.winnsheriff.gov/publicrecords",
+"https://www.winnsheriff.gov/open-records"
+]
+},
+{
 "name": "Winona County",
 "site": "winonacounty.gov",
 "lat": null,
@@ -237684,6 +244910,18 @@
 {
 "name": "Wirt County Commission",
 "site": "wirtcountywv.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "West Virginia",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Wirt County Sheriff Department",
+"site": "wirtcountywvsheriff.gov",
 "lat": null,
 "lon": null,
 "kind": "Org",
@@ -237924,6 +245162,18 @@
 "kind": "Town",
 "pop": 0,
 "state": "Vermont",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Woodcliff Lake New Jersey",
+"site": "woodclifflakenj.gov",
+"lat": null,
+"lon": null,
+"kind": "Town",
+"pop": 0,
+"state": "New Jersey",
 "email": [],
 "portal": [],
 "pages": []
@@ -238174,6 +245424,18 @@
 ]
 },
 {
+"name": "Woodrow Township",
+"site": "woodrowtwpcasscomn.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Minnesota",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Woodruff County Circuit Clerk",
 "site": "woodruffcircuitclerkar.gov",
 "lat": null,
@@ -238400,6 +245662,22 @@
 "email": [],
 "portal": [],
 "pages": []
+},
+{
+"name": "Worcester County Government",
+"site": "worcestermd.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Maryland",
+"email": [
+"worcesterpia@co.worcester.md.us"
+],
+"portal": [],
+"pages": [
+"https://www.worcestermd.gov/commissioners/requests"
+]
 },
 {
 "name": "Workman Township",
@@ -238871,6 +246149,18 @@
 "pages": []
 },
 {
+"name": "Yancey County Courthouse",
+"site": "yanceycountync.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "North Carolina",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Yates Center",
 "site": "yatescenter.gov",
 "lat": null,
@@ -239130,6 +246420,18 @@
 ]
 },
 {
+"name": "Yoakum County",
+"site": "yoakumcounty.gov",
+"lat": null,
+"lon": null,
+"kind": "Org",
+"pop": 0,
+"state": "Texas",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
 "name": "Yoakum",
 "site": "yoakumtx.gov",
 "lat": null,
@@ -239342,6 +246644,18 @@
 "kind": "City",
 "pop": 0,
 "state": "Ohio",
+"email": [],
+"portal": [],
+"pages": []
+},
+{
+"name": "Young Harris",
+"site": "youngharrisga.gov",
+"lat": null,
+"lon": null,
+"kind": "City",
+"pop": 0,
+"state": "Georgia",
 "email": [],
 "portal": [],
 "pages": []

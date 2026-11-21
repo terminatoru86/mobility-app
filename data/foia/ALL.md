@@ -1,6 +1,6 @@
-# All municipalities and counties not yet written to: 18396
+# All municipalities and counties not yet written to: 18954
 
-With e-mail: 1587 · portal only: 1255 · nothing found: 15554
+With e-mail: 1638 · portal only: 1297 · nothing found: 16019
 
 ## Portal only
 | Place | State | Pop. | Portal |
@@ -508,9 +508,12 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | Org of Ada County Information Technology | Idaho | 0 | https://adacountyid.justfoia.com/publicportal/home/newrequest |
 | City of Addison Townhsip | Michigan | 0 | https://addisontownshipmi.gov//wp-content/uploads/2022/03/FOIA-Procedures-Guidelines-Forms-rev.-2019.pdf |
 | Town of AFTON | Wyoming | 0 | https://www.facebook.com/sharer/sharer.php?u=http://www.aftonwyoming.gov/publicrecords |
+| Org of Alamance County Government | North Carolina | 0 | https://alamancecountync.nextrequest.com/ |
 | Org of Alameda County | California | 0 | https://alamedacountyca.nextrequest.com/ |
 | Org of Albany County | New York | 0 | https://Albanycounty.nextrequest.com |
+| Town of Albert | Michigan | 0 | https://alberttwpmi.gov/index.php/foia/ |
 | County of ALGER | Michigan | 0 | https://algercounty.gov/government/board-of-commissioners/foia/ |
+| Org of Allegany County Sheriff's Office | New York | 0 | https://www.alleganycountysheriff-ny.gov/publicrecords |
 | City of Almira Township | Michigan | 0 | https://almiratownshipmi.gov/wp-content/uploads/2025/12/FOIA-Written-Public-Summary-2025.pdf |
 | Town of Almont | Michigan | 0 | https://www.almontmichigan.gov/government/foia-and-transparency/ |
 | City of Alton Township Supervisor's Office | Illinois | 0 | https://www.altontownshipil.gov/foia-request-assr |
@@ -524,10 +527,13 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | Town of Archer Lodge | North Carolina | 0 | https://www.archerlodgenc.gov/publicrecordsrequest |
 | City of Arlington, Texas | Texas | 0 | https://arlingtontx.govqa.us/WEBAPP/_rs/(S(412yz3mcenbudxwrp003wqb3))/SupportHome.aspx |
 | City of Armada Township | Michigan | 0 | https://armadatwp.gov/foia/ |
+| Town of Arrowsmith | Illinois | 0 | https://www.arrowsmithil.gov/freedom-of-information-act-foia |
 | Town of Arthur, IL | Illinois | 0 | https://arthur-il.gov/government/freedom-of-information-policy-foia |
 | Org of Ascension Parish Government | Louisiana | 0 | https://ascensionparish.govqa.us/WEBAPP/_rs/(S(10coaoovowduvy4eowqyycrf))/SupportHome.aspx |
 | City of Ashland, Oregon | Oregon | 0 | https://ashlandoregon.justfoia.com/publicportal/home/newrequest |
 | Town of Ashmore | Illinois | 0 | https://www.ashmore.gov/foia-denials-and-appeals |
+| Org of Athens County 911 | Ohio | 0 | https://accounts.google.com/signin/usernamerecovery?continue=https://sites.google.com/athensco911.gov/athens911/publicrecords&amp;dsh=S589780734:1795301095905182&amp;flowEntry=ServiceLogin&amp;flowName=WebLiteSignIn&amp;followup=https://sites.google.com/athensco911.gov/athens911/publicrecords&amp;osid=1&amp;service=wise |
+| City of Aubrey | Texas | 0 | https://aubreytx.govqa.us/WEBAPP/_rs/(S(o30nnsphoaj3nr4b2cng2gvl))/supporthome.aspx |
 | City of AuSable Township | Michigan | 0 | https://ausabletwp-mi.gov/foia/ |
 | City of Austin | Texas | 0 | https://cty-austintx.govqa.us/WEBAPP/_rs/(S(m11xiemrqzlczvgpkrj5wads))/supporthome.aspx?sSessionID=13662150237:58271TOGKPGQLKHRROILVZDZVBKH |
 | City of Au Train Township | Michigan | 0 | https://www.autraintownship.gov/foia/ |
@@ -595,6 +601,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Cambridge Township | Michigan | 0 | https://www.cambridgetownshipmi.gov/minutes/minutes/freedom_of_information_act_(foia).php |
 | Org of Cameron County | Texas | 0 | https://cameroncountytx.nextrequest.com/ |
 | County of Campbell | Virginia | 0 | https://www.co.campbell.va.us/FormCenter/Public-and-Employee-Relations-12/FOIA-General-Request-for-Management-Serv-303 |
+| Org of Campbell County | Wyoming | 0 | https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico |
 | City of Canon City | Colorado | 0 | https://canoncityco.nextrequest.com |
 | City of Canyon Lake | California | 0 | https://canyonlakeca.nextrequest.com/ |
 | City of Canyon | Texas | 0 | https://canyontx.nextrequest.com/requests/new |
@@ -630,11 +637,13 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Charter Township of Chocolay | Michigan | 0 | https://chocolay.gov/foia-request/ |
 | City of Cincinnati | Ohio | 0 | https://city-cincinnatioh.govqa.us/WEBAPP/_rs/(S(03kr0yj4jizjwcvapbilh2ca))/supporthome.aspx?sSessionID=10422516942ENLWCGJOUHYVFACKVCP[KPECFYHUB |
 | City of Cincinnati | Ohio | 0 | https://city-cincinnatioh.govqa.us/WEBAPP/_rs/(S(03kr0yj4jizjwcvapbilh2ca))/supporthome.aspx?sSessionID=10422516942ENLWCGJOUHYVFACKVCP[KPECFYHUB |
+| Org of Citrus County Board of County Commissioners | Florida | 0 | https://www.linkedin.com/sharing/share-offsite/?url=http://www.citruscounty.gov/publicrecords |
 | City of Albertville | Alabama | 0 | https://cityofalbertvilleal.gov/publicrecords |
 | City of Auburn | Washington | 0 | https://auburnwa.govqa.us/WEBAPP/_rs/SupportHome.aspx |
 | City of Bath Maine | Maine | 0 | https://granicus.com/product/opencities |
 | City of Bell | California | 0 | https://granicus.com/product/opencities |
 | City of Casa | Arkansas | 0 | https://cityofcasa.gov/arkansas-freedom-of-information-act-foia-requests/ |
+| City of Clare | Michigan | 0 | https://cityofclare.gov/forms-permits/#foia |
 | City of Clay, Alabama | Alabama | 0 | https://www.cognitoforms.com/CityOfClay/CityOfClayPublicRecordsRequest |
 | City of Elkins | West Virginia | 0 | https://cityofelkinswv.gov/city-government/administration/city-clerk/foia-requests/ |
 | City of Elmira | New York | 0 | https://cityofelmira.granicus.com/ViewPublisher.php?view_id=1 |
@@ -695,6 +704,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | Org of Cowley County | Kansas | 0 | https://cowleycountyks.nextrequest.com/ |
 | City of Crosby Township | Ohio | 0 | https://crosbytownshipohio.gov/foia-instructions/ |
 | City of Culver City Fire Department | California | 0 | https://granicus.com/product/opencities |
+| City of Culver City | California | 0 | https://granicus.com/product/opencities |
 | Org of CUMBERLAND COUNTY CLERKS OFFICE | New Jersey | 0 | https://cumberlandcountynj.nextrequest.com/ |
 | Org of Cumberland County | North Carolina | 0 | https://assets.nextrequest.com/assets/favicon-7e83b1c8791f5f32b500edc9a0e13f16b100b99bb27021827bb86055930da8ff.ico |
 | Org of Curry County | Oregon | 0 | https://www.currycountyor.gov/publicrecordsrequests.php |
@@ -713,6 +723,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Delaware Municipal Court | Ohio | 0 | https://granicus.com/product/opencities |
 | Org of Delaware County Sheriff’s Office | New York | 0 | https://www.delawarecountysheriffny.gov/publicrecords |
 | City of Delhi Charter Township | Michigan | 0 | https://www.delhitownshipmi.gov/DocumentCenter/View/1217/FOIA-Procedures-and-Guidelines---Including-Public-Summary-and-Sample-Forms-PDF |
+| Org of Delta County, Colorado | Colorado | 0 | https://www.courts.state.co.us/publicrecords.cfm |
 | Org of Delta County | Michigan | 0 | https://deltacountymi.gov/freedom-of-information-act-foia/ |
 | City of Delta Charter Township | Michigan | 0 | https://www.deltami.gov/FOIA |
 | City of Denison | Texas | 0 | https://denisontx.justfoia.com/publicportal/home/newrequest |
@@ -762,18 +773,21 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | Town of Florence | Wisconsin | 0 | https://florencewi.gov/publicrecords |
 | Org of Floyd County Government | Georgia | 0 | https://floydcountyga.nextrequest.com/ |
 | Org of Floyd County Government | Virginia | 0 | https://www.floydcova.gov/foia |
+| Org of Floyd County Sheriff's Office | Georgia | 0 | https://floydcountyga.nextrequest.com/ |
 | City of Forest Park | Georgia | 0 | https://forestparkga.justfoia.com/publicportal/home/track |
 | City of Forney | Texas | 0 | https://forneytx.justfoia.com/publicportal/home/newrequest |
 | Town of Forsyth | Illinois | 0 | https://www.forsyth-il.gov/page/freedom-of-information-foia |
 | City of Fort Collins | Colorado | 0 | https://fortcollinsco.justfoia.com/publicportal/ |
 | City of Foster Township | Pennsylvania | 0 | https://www.fostertwpmcpa.gov/publicrecords |
 | Town of Fountain Hills | Arizona | 0 | https://townoffountainhillsaz.nextrequest.com/ |
+| City of Frankenmuth | Michigan | 0 | https://frankenmuthcity.com/new_page/foia.php |
 | Org of Franklin County Government Illinois | Illinois | 0 | https://media.jamesarthur.host/sites/franklincountyil.gov/wp-content/uploads/2021/09/franklin.county.foia_.bg_.webp |
 | Org of Frederick County Government | Maryland | 0 | https://frederickcountymd.govqa.us/WEBAPP/_rs/(S(uefilw0g5h0v4gigvsihjej2))/OpenRecordsSummary.aspx |
 | County of Fresno | California | 0 | https://granicus.com/product/opencities |
 | Org of Fresno County | California | 0 | https://granicus.com/product/opencities |
 | City of Fridley, MN | Minnesota | 0 | https://granicus.com/product/opencities |
 | City of Fruitland Township | Michigan | 0 | https://fruitlandmi.gov/foia/ |
+| City of Galesburg, IL | Illinois | 0 | https://galesburgil.justfoia.com/publicportal/home/newrequest |
 | City of Gardena | California | 0 | https://cityofgardenaca.nextrequest.com/ |
 | City of Garden City | Georgia | 0 | https://cityofgardencityga.nextrequest.com/ |
 | City of Gardiner | Maine | 0 | https://granicus.com/product/opencities |
@@ -784,10 +798,13 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | Town of German Valley | Illinois | 0 | https://www.germanvalleyil.gov/open-records-foia |
 | City of Gilford Township | Michigan | 0 | https://gilfordtownshipmi.gov/forms-documents-ordinances/#foia |
 | Org of Gilliam County Courthouse | Oregon | 0 | https://www.linkedin.com/sharing/share-offsite/?url=http://www.gilliamcountyor.gov/publicrecords |
+| City of Gladstone | Michigan | 0 | https://www.gladstonemi.gov/506/Freedom-of-Information-FOIA-Request |
 | Town of Glocester | Rhode Island | 0 | https://www.glocesterri.gov/PublicRecordsRequest.pdf |
+| Org of Gogebic County | Michigan | 0 | https://www.gogebic.gov/i_want_to/apply_for/foia.php |
 | Org of Gogebic County | Michigan | 0 | https://www.gogebic.gov/i_want_to/apply_for/foia.php |
 | City of Gonzales | California | 0 | https://cityofgonzales.granicus.com/MediaPlayer.php?clip_id=696 |
 | Org of Grant County | New Mexico | 0 | https://grantcountynm.nextrequest.com/ |
+| City of Grants | New Mexico | 0 | https://grantsnm.nextrequest.com/requests/new |
 | City of GRASS LAKE CHARTER TOWNSHIP | Michigan | 0 | https://www.grasslaketownship.gov/foia/ |
 | City of Grattan Township | Michigan | 0 | https://cms9files.revize.com/grattan/FOIA%20REQUEST%20FORM.pdf |
 | Org of Greene County Sheriff's Office | New York | 0 | https://www.greenesheriffny.gov/publicrecords |
@@ -807,6 +824,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Hamlin Township | Michigan | 0 | https://hamlineatonmi.gov/clerk/foia/ |
 | Org of Hancock County Board | Illinois | 0 | https://hancockcounty-il.gov/foia/ |
 | City of Hanson Fire Department | Massachusetts | 0 | https://hanson-ma.nextrequest.com/ |
+| City of Happy Valley | Oregon | 0 | https://docs.happyvalleyor.gov/Forms/PublicRecordsRequest |
 | City of Hardeeville Police Department | South Carolina | 0 | https://hardeevillesc.nextrequest.com/ |
 | Org of Harford County Government | Maryland | 0 | https://harfordcountymd.justfoia.com/publicportal/home/newrequest |
 | City of Haring Township | Michigan | 0 | https://haringtwpmi.gov/foia/ |
@@ -816,6 +834,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Hayes Township | Michigan | 0 | https://www.hayestownshipmi.gov/foia-cost-work-sheet/ |
 | City of Hayes Township | Michigan | 0 | https://hayestwpclaremi.gov/documents/#foia |
 | Org of Hillsborough County Board of County Commissioners | Florida | 0 | https://hillsboroughsheriff.govqa.us/WEBAPP/_rs/(S(tgi35bm2hqlomebk4plrq1s0))/SupportHome.aspx?lp=3&amp;sSessionID= |
+| Org of Henrico County | Virginia | 0 | https://henrico.gov/government/freedom-information-act-foia/ |
 | City of Hernando Police Department | Mississippi | 0 | https://cityofhernandopd-ms.nextrequest.com/ |
 | Town of Heyworth | Illinois | 0 | https://www.heyworth-il.gov/local_government/departments/village_office/freedom_of_information_act_(foia)_requests/index.php |
 | Town of Highland Beach | Florida | 0 | https://highlandbeachfl.justfoia.com/publicportal/home/newrequest |
@@ -834,6 +853,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Ida Township | Michigan | 0 | https://idatownshipmi.gov/foia/ |
 | Town of Indian Lake | Texas | 0 | https://www.indianlaketx.gov/publicrecords |
 | Org of Indian River County Board of County Commissioners | Florida | 0 | https://urldefense.proofpoint.com/v2/url?u=https-3A__indianriver.justfoia.com_publicportal_&amp;d=DwMFAg&amp;c=1jJTNVi2PpmC33K3swoRR3Bhiny4gbEmMqlSxu72JJQ&amp;r=chclYeZkWfTtERh89ByX3vlVU1iQrd5cRaP5IK7l0sA&amp;m=BC3bmqXpKj1s8HuhK8hDAZ7I-hlfGBOP7A4-xBnqUllXd2oczulWbjF2yvsOv3LS&amp;s=mdchocQfFb6c-HM7jL3YkSictrF72nnBweX3fO_bjH4&amp;e= |
+| City of Ingram | Texas | 0 | https://ingramtx.gov/publicrecords |
 | Town of Inverness | Illinois | 0 | https://www.inverness-il.gov/FormCenter/General-Forms-4/Freedom-of-Information-Act-FOIA-Request--51 |
 | County of Inyo, CA | California | 0 | https://inyocountyca.nextrequest.com/requests |
 | City of Ionia Township | Michigan | 0 | https://ioniatownshipmi.gov/foia/ |
@@ -843,6 +863,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | Org of Itasca County MN | Minnesota | 0 | https://itascacountymn.govqa.us/WEBAPP/_rs/ |
 | City of Ivins City | Utah | 0 | https://ivins.granicus.com/ViewPublisher.php?view_id=2 |
 | Org of Jackson County Board of County Commissioners | Florida | 0 | https://jacksoncountyfl.nextrequest.com |
+| City of Jacksonville | North Carolina | 0 | https://cityofjacksonvillenc.nextrequest.com/ |
 | Town of Jamestown | Rhode Island | 0 | https://www.jamestownri.gov/accesspublicrecords |
 | City of Jefferson City Mo | Missouri | 0 | https://cityofjeffersoncitymo.nextrequest.com/ |
 | City of Jersey City | New Jersey | 0 | http://jerseycity.mycusthelp.com/WEBAPP/_rs/(S(5ujmj5g1tz30zqs05vrbuiqe))/SupportHome.aspx |
@@ -851,17 +872,22 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Jonesboro | Georgia | 0 | https://cityofjonesboroga.nextrequest.com/ |
 | City of Jonesville City | Michigan | 0 | https://jonesvillemi.gov/foia/ |
 | Org of Kane County Illinois | Illinois | 0 | https://www.kanecountyil.gov/pages/foia.aspx |
+| County of Kauai | Hawaii | 0 | https://granicus.com/product/opencities |
 | City of Keene | New Hampshire | 0 | https://keenenh.justfoia.com/publicportal/home/track |
+| City of Kemah | Texas | 0 | https://kemahtx.nextrequest.com/ |
 | Org of Kemper County Board of Supervisors | Mississippi | 0 | https://kempercountyms.gov/wp-content/uploads/2026/01/KemperCoPublicRecordsPolicy.pdf |
 | City of Kenockee Township | Michigan | 0 | https://kenockeetownshipmi.gov/foia/ |
+| Org of Kent County Levy Court | Delaware | 0 | https://www.kentcountyde.gov/Contact-Us/FOIA |
 | City of Kent | Ohio | 0 | https://kentoh.mycusthelp.com/webapp/_rs/(S(sxjez0usptrcyxp11q5jaeac))/supporthome.aspx |
 | City of Kermit | Texas | 0 | https://cityofkermittx.nextrequest.com/ |
 | City of Killeen, Texas | Texas | 0 | https://killeen.granicus.com/boards/forms/784/apply |
+| Town of Kingston | Massachusetts | 0 | https://townofkingstonma.nextrequest.com/ |
 | Town of Kirkland | Illinois | 0 | https://www.kirklandil.gov/foia |
 | City of Kirksville | Missouri | 0 | https://kirksville.qscendcms.com/UploadFiles/Docs/PublicRecordsRequestForm_sLO28I.pdf |
 | Org of Kitsap County | Washington | 0 | https://www.kitsap.gov:443/auditor/Pages/elections.aspx/publicrecords |
 | Org of Klamath County | Oregon | 0 | https://klamathcountyor.nextrequest.com/ |
 | County of Knox | Illinois | 0 | https://knoxcounty.justfoia.com/publicportal/home/newrequest |
+| City of KNOXVILLE POLICE DEPARTMENT | Illinois | 0 | https://knoxvillepdil.gov/publicrecords |
 | City of Kochville Township | Michigan | 0 | https://www.kochville.gov/information/foia_thank_you.php |
 | Org of King William County | Virginia | 0 | https://kwcgov.justfoia.com/publicportal/home/track |
 | Org of King William County Sheriff's Office | Virginia | 0 | https://kwcgov.justfoia.com/Forms/Launch/757d9b71-8131-4baf-a3c6-398e5e6ae03f |
@@ -911,6 +937,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Louisville | Ohio | 0 | https://cityoflouisvilleoh.nextrequest.com/ |
 | Org of Lowndes County | Mississippi | 0 | https://lowndescountyms.gov/publicrecords |
 | City of Lumberton | Mississippi | 0 | https://lumbertonms.gov/publicrecords |
+| City of Lyndon Township | Michigan | 0 | https://lyndontownshipmi.gov/download/foia-appeal-form-to-appeal-a-denial-of-records/ |
 | Town of Lynnfield | Massachusetts | 0 | https://www.townforms.com/FOIADirect-LynnfieldMACitizens |
 | City of Lynn Ma. | Massachusetts | 0 | https://cityoflynnma.nextrequest.com/ |
 | City of Lyons | Georgia | 0 | https://lyonsga.granicus.com/ViewPublisher.php?view_id=1 |
@@ -924,6 +951,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | Org of Manitowoc County | Wisconsin | 0 | https://www.archives.gov/personnel-records-center/foia-info |
 | Town of Manlius Police Department | New York | 0 | https://manliuspoliceny.gov/publicrecords |
 | City of Marengo Township | Michigan | 0 | https://marengomi.gov/foia-guidelines/ |
+| City of Maricopa | Arizona | 0 | https://granicus.com/product/opencities |
 | Org of Maricopa County | Arizona | 0 | http://publicrecordsrequest.maricopa.gov/nonCommercial?d=133 |
 | Org of Mariposa County | California | 0 | https://mariposacounty.nextrequest.com/ |
 | Town of Marlborough | Connecticut | 0 | https://www.marlboroughct.gov/services/freedom_of_information_act/foia_requests.php |
@@ -933,6 +961,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | Org of Mason County Elections | Washington | 0 | https://masoncountywa.govqa.us/WEBAPP/_rs/supporthome.aspx |
 | Org of Massac County | Illinois | 0 | https://massaccountyil.gov/wp-content/uploads/2026/06/FOIA-Notice-PDF.pdf |
 | City of Matador | Texas | 0 | https://matadortx.gov/foia-request/ |
+| Org of Matagorda County | Texas | 0 | https://www.matagordatx.gov/page/PublicRecordSearch |
 | Org of Matanuska-Susitna Borough | Alaska | 0 | https://matsugov.us/feed2json/ratesfees_PublicRecords.html\ |
 | City of Maumelle Police Department | Arkansas | 0 | https://www.maumellepolice.gov/FormCenter/Police-15/FOIA-Request-111 |
 | City of Mayfield | Kentucky | 0 | https://www.mayfieldky.gov/Documents/Departments/City%20Clerk/PublicRecordsInspectionApplication_updated_new%20logo_April%202025.pdf |
@@ -941,6 +970,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Mayflower | Arkansas | 0 | https://mayflowerar.gov/foia/ |
 | City of Mayflower Waterworks | Arkansas | 0 | https://mayflowerar.gov/foia/ |
 | County of McDonald, Missouri | Missouri | 0 | https://mcdonaldcountymo.gov/wp-content/uploads/2026/08/PublicRecordsRequestFillableForm_12-2024.pdf |
+| Org of McLean County | Illinois | 0 | https://mcleancountyil.mycusthelp.com/WEBAPP/_rs/(S(ikuczqcgwcy1udsv0brgrkup))/AnswerDetail.aspx?sSessionID=&amp;aid=7752 |
 | Org of Mecklenburg County | North Carolina | 0 | https://charlottenc.gov/PublicRecords/Pages/default.aspx |
 | City of Medina, Minnesota | Minnesota | 0 | https://granicus.com/product/opencities |
 | City of Medina Township | Michigan | 0 | https://medinatownshipmi.gov/wp-content/uploads/2025/11/public_written_foia_summary_2025.pdf |
@@ -960,6 +990,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Mill Creek | Washington | 0 | https://millcreekwa.govqa.us/WEBAPP/_rs/(S(uwmdr545lhjorgnqgezaulgi))/supporthome.aspx |
 | City of Mills Township | Michigan | 0 | https://millstwpogemawmi.gov//documents/#foia |
 | City of Milton Town Hall | Massachusetts | 0 | https://miltonma.mycusthelp.com/WEBAPP/_rs/(S(x0uadr0flie4jf231srkx4gn))/OpenRecordsSummary.aspx |
+| City of Milton Police Department | Massachusetts | 0 | https://miltonma.mycusthelp.com/WEBAPP/_rs/(S(duo5ekb2ir5rnvwix2xlemtb))/SupportHome.aspx?sSessionID=107112898LQIXQNCEXEQIJAXJCGSPHELJJPEJVNW |
 | City of Milton Township | Michigan | 0 | https://miltontownshipmi.gov/wp-content/uploads/2025/11/FOIA-form.pdf |
 | City of Milton Township | Michigan | 0 | https://miltontwpmi.gov/publicrecords/milton@miltontwpmi.gov |
 | Org of Missoula County | Montana | 0 | https://missoulacountymt.nextrequest.com/ |
@@ -990,6 +1021,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Napoleon Township Police Department | Michigan | 0 | https://napoleontownship.us/public_officials/clerk/foia.php |
 | City of Narberth Borough | Pennsylvania | 0 | https://www.linkedin.com/sharing/share-offsite/?url=http://www.narberthpa.gov/publicrecords |
 | City of Naugatuck Police Department | Connecticut | 0 | https://naugatuckpd.nextrequest.com/ |
+| Org of Nelson County | Virginia | 0 | https://www.nelsoncounty-va.gov/foia/ |
 | County of Nevada California | California | 0 | https://nevadacountyca.govqa.us/WEBAPP/_rs/(S(5fq5g5jkavmdm4fewnsaotpb))/supporthome.aspx |
 | County of Newaygo | Michigan | 0 | https://www.newaygocountymi.gov/county_administrator/foia-requests/ |
 | City of New Haven Township | Michigan | 0 | https://newhavenshiami.gov/forms-ordinances/#foia |
@@ -1007,13 +1039,17 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | Town of North Salem | New York | 0 | https://northsalem.granicus.com/ViewPublisher.php?view_id=3 |
 | County of Northumberland | Pennsylvania | 0 | http://www.publicrecordcenter.com/pennsylvaniapublicrecord.htm |
 | City of Norvell Township | Michigan | 0 | https://norvelltwp-mi.gov/foia/ |
+| City of Norway | Michigan | 0 | https://www.facebook.com/sharer/sharer.php?u=http://www.norwaymi.gov/publicrecords |
 | City of Nottawa Township | Michigan | 0 | https://nottawatwpisabellami.gov/government/foia/ |
 | City of North Ridgeville | Ohio | 0 | https://www.nridgeville.gov/PublicRecords.aspx |
 | Org of Northwest Clean Air Agency | Washington | 0 | https://forms.nwcleanairwa.gov/Forms/PublicRecordRequest/ |
+| City of Oak Grove | Minnesota | 0 | http://oakgrove.granicus.com/ViewPublisher.php?view_id=2 |
 | Town of Oak Island | North Carolina | 0 | https://granicus.com/product/opencities |
 | Town of Oak Lawn | Illinois | 0 | https://www.oaklawn-il.gov/government/village_clerk/foia_requests.php |
 | Town of Ocean City | Maryland | 0 | https://oceancitymd.gov/pdf/FOIA.pdf |
+| Town of Ocean Ridge | Florida | 0 | https://oceanridgeflorida.nextrequest.com/ |
 | City of Ocqueoc Township | Michigan | 0 | https://presqueislecounty.org/freedom-of-information-act-foia/ |
+| City of O'Fallon, Missouri | Missouri | 0 | https://crm-ofallonmo.mycusthelp.com/WEBAPP/_rs/(S(v1tds2eyt5sgyvvmsqoh5dqr))/supporthome.aspx?sSessionID=1732412322OWTDHHBGIMFNOVMJMWVBHTZQSLAZZW |
 | City of Ogden City | Utah | 0 | https://ogdenut.govqa.us/WEBAPP/_rs/(S(x4h4manyzbzms2ompfjfiko5))/supporthome.aspx |
 | City of Oglesby | Illinois | 0 | https://oglesbyil.gov/freedom-of-information-act-foia/ |
 | City of Olive Township | Michigan | 0 | https://olivetownshipccmi.gov/wp-content/uploads/2025/08/FOIA.pdf |
@@ -1041,6 +1077,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Pentwater Township | Michigan | 0 | https://www.pentwatertownshipmi.gov/documents/2026_FOIA_Procedures_and_Guidelines__2__h7aCk.pdf |
 | Org of Peoria County | Illinois | 0 | https://peoriacounty.justfoia.com/publicportal/home/newrequest |
 | City of Petersburg | Virginia | 0 | https://www.petersburgva.gov/DocumentCenter/View/4709/NewFOIARules |
+| Town of Phillipsburg | Ohio | 0 | https://phillipsburgoh.gov/foia-requests/ |
 | City of Port Huron Charter Township | Michigan | 0 | https://www.porthurontownship.org/reference-desk/forms-documents/city-clerk/foia-request-for-public-records-7-29-15.aspx |
 | Org of Pierce County | Washington | 0 | https://piercecountywa.govqa.us/WEBAPP/_rs/supporthome.aspx |
 | City of Pine Grove Township | Michigan | 0 | https://pinegrovetownshipmi.gov/wp-content/uploads/2023/09/Public-Summary-of-FOIA-Procedures-and-guidelines.pdf |
@@ -1055,6 +1092,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Pleasantview Township | Michigan | 0 | https://pleasantviewmi.gov/wp-content/uploads/foia-coordinator-sample-resolution.doc |
 | City of Plymouth | Michigan | 0 | https://www.plymouthmi.gov/how_do_i/request/freedom_of_information_act_foia |
 | City of Plymouth Charter Township | Michigan | 0 | https://www.plymouthtownshipmi.gov/government/departments/clerk/foia.php |
+| City of Pocatello | Idaho | 0 | https://cityofpocatelloid.nextrequest.com/ |
 | Org of Poinsett County | Arkansas | 0 | https://www.facebook.com/sharer/sharer.php?u=http://www.poinsettar.gov/publicrecords |
 | City of Pokagon Township | Michigan | 0 | https://pokagontownshipmi.gov/wp-content/uploads/2023/05/foia.pdf |
 | Org of Polk County | Iowa | 0 | https://polkcountyiowa.govqa.us/WEBAPP/_rs/(S(04pk0uzyet0442czjwuubicw))/supporthome.aspx |
@@ -1115,6 +1153,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | County of Santa Cruz | California | 0 | https://www.santacruzcountyca.gov/Government/PublicRecordsRequest.aspx |
 | Town of San Tan Valley | Arizona | 0 | https://www.santanvalley.gov/publicrecords |
 | County of Saratoga | New York | 0 | https://saratogacountyny.justfoia.com/publicportal |
+| City of Saugatuck Township | Michigan | 0 | https://saugatucktownshipmi.gov/wp-content/uploads/2023/06/2022_SAUGATUCK_TOWNSHIP_FOIA_COMPLETE_1521.pdf |
 | City of Sausalito, California | California | 0 | https://sausalito.granicus.com/boards/forms/197/apply/5168523?code=be0a9605-10d9-4d25-a34b-f44e4b08f818#Profile |
 | City of Schoolcraft Township | Michigan | 0 | https://schoolcrafttownshipmi.gov/wp-content/uploads/2024/11/foia.pdf |
 | City of Scranton | Pennsylvania | 0 | https://scrantonpa.granicus.com/ViewPublisher.php?view_id=2 |
@@ -1189,6 +1228,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | Town of Orange Virginia | Virginia | 0 | https://www.townoforangeva.gov/DocumentCenter/View/921/FOIA-Rights-of-Requesters-and-FOIA-Request-Form?bidId= |
 | Town of Riverhead - IT Dept. | New York | 0 | https://townofriverheadny.nextrequest.com/ |
 | Town of SPAFFORD | New York | 0 | https://www.townofspaffordny.gov/accesstopublicrecords |
+| Org of Troup County Board of Commissioners | Georgia | 0 | https://troupcountyga.justfoia.com/publicportal/home/newrequest |
 | Town of Tyrone | Georgia | 0 | https://tyronega.justfoia.com/publicportal/home/newrequest |
 | County of Ulster | New York | 0 | https://granicus.com/product/opencities |
 | Org of Ulster County Sheriff's Office | New York | 0 | https://www.ulstersheriffny.gov/publicrecords |
@@ -1229,6 +1269,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Wayzata | Minnesota | 0 | https://wayzatamn.gov/publicrecords |
 | Org of Weakley County Government Department of Finance | Tennessee | 0 | https://www.weakleycountytn.gov/publicrecordscommission.html |
 | Org of Webb County | Texas | 0 | https://webbcountytx.govqa.us/WEBAPP/_rs/SupportHome.aspx?lp=3 |
+| Org of Weber County | Utah | 0 | https://webercountyut.nextrequest.com/ |
 | Org of Weld County Colorado | Colorado | 0 | https://weld.justfoia.com/publicportal/home/newrequest |
 | Org of Weld County Government | Colorado | 0 | https://weld.justfoia.com/publicportal/home/newrequest |
 | Org of Weld County Govenrment | Colorado | 0 | https://weld.justfoia.com/publicportal/home/newrequest |
@@ -1248,6 +1289,7 @@ With e-mail: 1587 · portal only: 1255 · nothing found: 15554
 | City of Wilcox Township | Michigan | 0 | https://wilcoxtownshipmi.gov/foia-requests/ |
 | County of Will | Illinois | 0 | https://willcounty.gov/County-Offices/Economic-Development/Division-of-Transportation/Freedom-of-Information-Act-FOIA |
 | City of Willow Park | Texas | 0 | https://willowparktx.govqa.us/WEBAPP/_rs/(S(zoxy3phr1r4o0rqr2kdr2q2o))/supporthome.aspx |
+| Org of Wilson County Election Commission | Tennessee | 0 | https://www.wilsontnvotes.gov/publicrecords/post.html |
 | City of Wilton Manors | Florida | 0 | https://cityofwiltonmanorsfl.nextrequest.com/ |
 | City of Winchester | Virginia | 0 | https://winchesterva.govqa.us/WEBAPP/_rs/(S(3lu10gigukuxltcpjlpld0um))/SupportHome.aspx?sSessionID=&amp;lp=2 |
 | Town of Winthrop | Massachusetts | 0 | https://townofwinthropma.nextrequest.com/ |
