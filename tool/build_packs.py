@@ -1586,17 +1586,24 @@ def main():
     for key, d in tiles.items():
         seen = {}
         # All The Places first among the others: it is the stores' own list, with hours
-        for r in sorted(d.values(), key=lambda r: (rank(r), 0 if r[0].startswith('atp/') else 1 if r[0].startswith('ovt/') else 2, r[0])):
+        # the owner's own places (own/, xl/: checked by hand, with phone, site and hours) come first and stay
+        def own_first(r):
+            return 0 if r[0].startswith(('own/', 'xl/')) else 1
+        def family(t):
+            # a bike shop and a motorcycle dealer with a similar name are two places ("Howell Bicycle" / "Howell Cycle")
+            k = (t.get('shop') or t.get('amenity') or '')
+            return 'moto' if k.startswith('motorcycle') or k in ('atv', 'motorsport') else 'bike'
+        for r in sorted(d.values(), key=lambda r: (own_first(r), rank(r), 0 if r[0].startswith('atp/') else 1 if r[0].startswith('ovt/') else 2, r[0])):
             t = r[3]
             if not (t.get('shop') or t.get('amenity') == 'bicycle_rental') or not t.get('name'):
                 continue
             # by name, and by brand too ("Trek Bicycle Lincoln Park" and "Trek Bicycle Store" are one shop)
-            ns = [x for x in dict.fromkeys([norm(t['name']), norm(t.get('brand', ''))]) if x]
+            ns = [family(t) + x for x in dict.fromkeys([norm(t['name']), norm(t.get('brand', ''))]) if x]
             if not ns:
                 continue
             cells = [(n, round(r[1] / 0.0015) + i, round(r[2] / 0.002) + j) for n in ns for i in (-1, 0, 1) for j in (-1, 0, 1)]
             first = next((seen[c] for c in cells if c in seen), None)
-            if first is not None and rank(r) > 0:
+            if first is not None and (rank(r) > 0 or own_first(first) == 0) and own_first(r) > 0:
                 # the copy goes, but what it knows and the kept one lacks stays: website, phone, hours, email
                 kt = first[3]
                 for k in ('website', 'phone', 'opening_hours', 'email', 'brand', 'mobility:sells'):
