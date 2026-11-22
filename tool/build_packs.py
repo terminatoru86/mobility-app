@@ -1453,7 +1453,8 @@ def main():
 
     def src_of(k):
         p = k.split('/')[0]
-        return 'osm' if p in ('node', 'way', 'relation') else (p + '/' + k.split('/')[1].split('-')[0]) if p == 'city' else p
+        # each city / ArcGIS list on its own (copies of one list uploaded by different people compete; only one is kept)
+        return 'osm' if p in ('node', 'way', 'relation') else (p + '/' + k.split('/')[1]) if p == 'city' else p
 
     def date_of(r):
         t = r[3]
@@ -1514,15 +1515,19 @@ def main():
                                 d.pop(x[0], None)
                                 dropped += 1
                     spot = srcs[win]
+                # the same place twice (exact copies, ~1 m: e.g. the same city list uploaded several times) goes
+                seen_xy = set()
+                keep = []
+                for x in sorted(spot, key=lambda x: (rank(x), x[0])):
+                    xy = (round(x[1], 5), round(x[2], 5))
+                    if xy in seen_xy:
+                        d.pop(x[0], None)
+                        dropped += 1
+                        continue
+                    seen_xy.add(xy)
+                    keep.append(x)
+                spot = keep
                 if kind != 'bicycle_parking':
-                    # the same place twice in one source (exact copies) goes
-                    seen_xy = set()
-                    for x in sorted(spot, key=lambda x: x[0]):
-                        xy = (round(x[1], 5), round(x[2], 5))
-                        if xy in seen_xy:
-                            d.pop(x[0], None)
-                            dropped += 1
-                        seen_xy.add(xy)
                     continue
                 if len(spot) < 2:
                     continue
