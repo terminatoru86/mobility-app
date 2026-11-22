@@ -1440,6 +1440,25 @@ def main():
     print(f'private areas: {n_areas}, racks on private property: {n_priv}', flush=True)
     n_mail = write_contacts(tiles, save=not args and '--extra-only' not in sys.argv and not refresh)
     stage(f'5/6 emails: {n_mail} · private areas: {n_areas}, racks made private: {n_priv}')
+    # phone / website / hours / what it sells, from the owner's own consolidated list (Excel): data/excel_fill.json.
+    # Done BEFORE the copies are merged, so what a copy got from the list moves to the place that stays.
+    try:
+        fill = json.load(open(os.path.join(ROOT, 'data', 'excel_fill.json'), encoding='utf-8'))
+        byid = {r[0]: r for d in tiles.values() for r in d.values()}
+        n_fill = 0
+        for pid, add in fill.items():
+            row = byid.get(pid)
+            if not row:
+                continue
+            t = row[3]
+            for k, v in add.items():
+                alt = {'website': 'contact:website', 'phone': 'contact:phone'}.get(k)
+                if not t.get(k) and not (alt and t.get(alt)):
+                    t[k] = v
+                    n_fill += 1
+        print(f'filled from the owner list: {n_fill} values', flush=True)
+    except Exception as err:
+        print(f'owner list fill failed: {err}', flush=True)
     # The same place from several sources (owner's rule, Nov 2026): not a plain distance rule.
     # 1. Places of one kind within ~10 m of each other are one spot. When the spot comes from several sources, only
     #    ONE source is kept for it: the newest one (check / survey / seen date) when every source there has a date,
@@ -1580,7 +1599,7 @@ def main():
             if first is not None and rank(r) > 0:
                 # the copy goes, but what it knows and the kept one lacks stays: website, phone, hours, email
                 kt = first[3]
-                for k in ('website', 'phone', 'opening_hours', 'email', 'brand'):
+                for k in ('website', 'phone', 'opening_hours', 'email', 'brand', 'mobility:sells'):
                     alt = {'website': 'contact:website', 'phone': 'contact:phone', 'email': 'contact:email'}.get(k)
                     if t.get(k) and not kt.get(k) and not (alt and kt.get(alt)):
                         kt[k] = t[k]
@@ -1618,24 +1637,6 @@ def main():
     print(f'paid parking already on the map (merged): {n_pay}', flush=True)
 
     print(f'open shop / road service from names: {service_flags(r for d in tiles.values() for r in d.values())}', flush=True)
-    # phone / website / hours the owner's own consolidated list (Excel) has and the sources lack: data/excel_fill.json
-    try:
-        fill = json.load(open(os.path.join(ROOT, 'data', 'excel_fill.json'), encoding='utf-8'))
-        byid = {r[0]: r for d in tiles.values() for r in d.values()}
-        n_fill = 0
-        for pid, add in fill.items():
-            row = byid.get(pid)
-            if not row:
-                continue
-            t = row[3]
-            for k, v in add.items():
-                alt = {'website': 'contact:website', 'phone': 'contact:phone'}.get(k)
-                if not t.get(k) and not (alt and t.get(alt)):
-                    t[k] = v
-                    n_fill += 1
-        print(f'filled from the owner list: {n_fill} values', flush=True)
-    except Exception as err:
-        print(f'owner list fill failed: {err}', flush=True)
     # hours and phone read from the shops' own websites (our list, data/site_hours.json; tool/site_hours.py)
     try:
         import site_hours
