@@ -1,8 +1,8 @@
-# Bike routes found (99318 routes, 586,159 km, file 24.8 MB)
+# Bike routes found (99367 routes, 586,223 km, file 24.9 MB)
 
-By source: {'Official layers': 89470, 'OpenStreetMap': 9848}
-By kind: {'motorcycle': 34803, 'bicycle': 62706, 'mtb': 1809}
-OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 90858, 'lcn': 6809, 'rcn': 1263, 'ncn': 78, 'US:CA:Scenic': 17, 'US:US:Historic': 16, 'US:IA:Scenic': 15, 'lwn': 14}
+By source: {'Official layers': 89519, 'OpenStreetMap': 9848}
+By kind: {'motorcycle': 34803, 'bicycle': 62755, 'mtb': 1809}
+OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 90907, 'lcn': 6809, 'rcn': 1263, 'ncn': 78, 'US:CA:Scenic': 17, 'US:US:Historic': 16, 'US:IA:Scenic': 15, 'lwn': 14}
 Longer than 10 km: 15237 · longer than 50 km: 3
 
 ## Operators with the most routes
@@ -14,6 +14,7 @@ Longer than 10 km: 15237 · longer than 50 km: 3
 - United States Forest Service: 95
 - City of Iowa City: 69
 - OSMP_Boulder: 62
+- City of Billings: 49
 - City of Plano: 41
 - en:natfoot: 34
 - City of Winston Salem: 28
@@ -30,7 +31,6 @@ Longer than 10 km: 15237 · longer than 50 km: 3
 - Forest Preserve District of Cook County: 15
 - Johnson County: 15
 - City of Coralville: 14
-- Los Alamos County: 14
 
 ## Longest routes
 - Honker Divide Canoe Route · 50.0 km · NFGMobile_Publisher · a/56c6b0cbfd35
