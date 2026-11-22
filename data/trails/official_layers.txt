@@ -1,6 +1,6 @@
    98 routes  https://services2.arcgis.com/CyVvlIiUfRBmMQuu/arcgis/rest/services/Bikeways_and_Trails/FeatureServer/0  [Bikeways and Trails · City of Virginia Beach] (fixed)
    46 routes  https://services2.arcgis.com/CyVvlIiUfRBmMQuu/arcgis/rest/services/Bikeways_and_Trail_Facilities/FeatureServer/0  [Bikeways and Trail Facilities · City of Virginia Beach] (fixed)
-    6 routes  https://gis2.arlingtontx.gov/agsext2/rest/services/External/NeighborhoodAmenity/MapServer/6  [Hike and Bike · City of Arlington TX] (fixed)
+    0 routes  https://gis2.arlingtontx.gov/agsext2/rest/services/External/NeighborhoodAmenity/MapServer/6  [Hike and Bike · City of Arlington TX] (fixed)
     0 routes  https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/4  [Bike map · City of Madison WI] (fixed)
     0 routes  https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/7  [Bike map · City of Madison WI] (fixed)
     0 routes  https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer/27  [Bike map · City of Madison WI] (fixed)
@@ -36,8 +36,8 @@
     0 routes  https://services7.arcgis.com/uFAr0LUPy14bDaLg/arcgis/rest/services/BLRI_NPS_2/FeatureServer/5  [BLRI NPS 2]
     0 routes  https://services.arcgis.com/EeCmkqXss9GYEKIZ/arcgis/rest/services/IAT_Spur_and_Loop_Trails/FeatureServer/8  [IAT Spur and Loop Trails]
     0 routes  https://services1.arcgis.com/LgDVQaAg05xQLgo7/arcgis/rest/services/RanchoMirage_GeneralPlan_2017_PublicData/FeatureServer/11  [RanchoMirage_GeneralPlan_2017_PublicData]
-    0 routes  https://services.arcgis.com/HYLRafMc4Ux6DA8c/arcgis/rest/services/KEMO_Trails_Update_20150727/FeatureServer/0  [Kennesaw Mountain Trails July 2015 FS]
     0 routes  https://services7.arcgis.com/uFAr0LUPy14bDaLg/arcgis/rest/services/SHEN_DISPATCH2/FeatureServer/2  [SHEN_DISPATCH2]
+    0 routes  https://services.arcgis.com/HYLRafMc4Ux6DA8c/arcgis/rest/services/KEMO_Trails_Update_20150727/FeatureServer/0  [Kennesaw Mountain Trails July 2015 FS]
     0 routes  https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/DOFAWManagedLandsV2/FeatureServer/0  [DOFAWManagedLandsV2]
     0 routes  https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANST_Centerline/FeatureServer/0  [APPA Official Centerline]
    16 routes  https://services1.arcgis.com/WHM6qC35aMtyAAlN/arcgis/rest/services/Boise_Parks_Trails_Open_Data/FeatureServer/0  [Urban and Foothill Ridge to River Trails]
@@ -237,18 +237,18 @@
     0 routes  https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/GNP_InteractiveMap_WFL1/FeatureServer/21  [GNP_InteractiveMap_WFL1]
     0 routes  https://services.arcgis.com/o6oETlrWetREI1A2/arcgis/rest/services/3Human_Impact_on_Critical_Habitat_in_3_National_Parks_WFL1/FeatureServer/1  [3Human_Impact_on_Critical_Habitat_in_3_National_Pa]
     0 routes  https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ASIS_Walking_Trails/FeatureServer/0  [ASIS_Walking_Trails]
-    0 routes  https://services5.arcgis.com/A49gj7AiDe668Yw0/arcgis/rest/services/Hike_With_Care_WFL1/FeatureServer/0  [Hike With Care_WFL1]
     0 routes  https://services2.arcgis.com/DRQySz3VhPgOv7Bo/arcgis/rest/services/Glacier_National_Park_Trails/FeatureServer/0  [Glacier National Park Trails]
+    0 routes  https://services5.arcgis.com/A49gj7AiDe668Yw0/arcgis/rest/services/Hike_With_Care_WFL1/FeatureServer/0  [Hike With Care_WFL1]
     0 routes  https://services1.arcgis.com/PwLrOgCfU0cYShcG/arcgis/rest/services/Yellowstone_National_Park_Trails/FeatureServer/0  [Yellowstone National Park Trails]
     0 routes  https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/MapServer/0  [NPS - Trails - Web Mercator]
-    0 routes  https://services2.arcgis.com/Atlhpf089cGUuFTD/arcgis/rest/services/Employment_Lands_WFL1/FeatureServer/7  [Employment Lands Inventory Layers]
     0 routes  https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ALKA_Story_Maps/FeatureServer/2  [ALKA_Story_Maps]
     0 routes  https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ALKA_Story_Maps/FeatureServer/3  [ALKA_Story_Maps]
+    0 routes  https://services2.arcgis.com/Atlhpf089cGUuFTD/arcgis/rest/services/Employment_Lands_WFL1/FeatureServer/7  [Employment Lands Inventory Layers]
     0 routes  https://services2.arcgis.com/Atlhpf089cGUuFTD/arcgis/rest/services/Map_WFL1/FeatureServer/29  [Map_WFL1]
     0 routes  https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/Zion_National_Park_WFL1_CA/FeatureServer/36  [Zion National Park_WFL1_CA]
     0 routes  https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GRTE_TRANS_TrailsWinter_1/FeatureServer/0  [Grand Teton National Park - Winter Trails]
-    0 routes  https://services7.arcgis.com/zT81dv4wL0hECyTd/arcgis/rest/services/Appalachian_National_Scenic_Trail_Centerline/FeatureServer/0  [Appalachian National Scenic Trail Centerline]
     0 routes  https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/JOTR_WildernessPublic_Web_201805/FeatureServer/1  [JOTR Wilderness Public Web]
+    0 routes  https://services7.arcgis.com/zT81dv4wL0hECyTd/arcgis/rest/services/Appalachian_National_Scenic_Trail_Centerline/FeatureServer/0  [Appalachian National Scenic Trail Centerline]
     0 routes  https://services.arcgis.com/04HiymDgLlsbhaV4/arcgis/rest/services/LCCResourceData/FeatureServer/11  [LCCResourceData]
     0 routes  https://services.arcgis.com/04HiymDgLlsbhaV4/arcgis/rest/services/LCCResourceData/FeatureServer/12  [LCCResourceData]
     0 routes  https://services.arcgis.com/04HiymDgLlsbhaV4/arcgis/rest/services/LCCResourceData/FeatureServer/13  [LCCResourceData]
@@ -256,3 +256,19 @@
     0 routes  https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/Zion_National_Park_Map_2_WFL1/FeatureServer/81  [Zion National Park Map 2_WFL1]
     0 routes  https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Grand_Canyon_National_Park__Features_and_Trails_WFL1/FeatureServer/1  [Grand Canyon National Park_ Features and Trails_WF]
    19 routes  https://services4.arcgis.com/5WjsI4LEVjrHz5YH/arcgis/rest/services/Colorized_Environmental_Categories/FeatureServer/33  [Colorized Environmental Categories]
+    0 routes  https://services.arcgis.com/oEazpvC7G00gPDRM/arcgis/rest/services/Boardwalk_Trails/FeatureServer/0  [Boardwalk Trails]
+    0 routes  https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/Oregon_National_Historic_Trail1/FeatureServer/0  [BLM OR/WA Oregon National Historic Trail]
+    0 routes  https://services.arcgis.com/xYjDUN35YwdCEcMm/arcgis/rest/services/Dinosaur_Provincial_Park_Reference/FeatureServer/1  [Dinosaur_Provincial_Park_Reference]
+    0 routes  https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/Yosemite_National_Park_NPS_Map_Replica_by_Kathleen_Wang/FeatureServer/5  [Yosemite National Park NPS Map Replica by Kathleen]
+    0 routes  https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/Yosemite_National_Park_NPS_Map_Replica_by_Kathleen_Wang/FeatureServer/6  [Yosemite National Park NPS Map Replica by Kathleen]
+    0 routes  https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/Yosemite_National_Park_NPS_Map_Replica_by_Kathleen_Wang/FeatureServer/7  [Yosemite National Park NPS Map Replica by Kathleen]
+    0 routes  https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/Yosemite_National_Park_NPS_Map_Replica_by_Kathleen_Wang/FeatureServer/8  [Yosemite National Park NPS Map Replica by Kathleen]
+    0 routes  https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/Yosemite_National_Park_NPS_Map_Replica_by_Kathleen_Wang/FeatureServer/14  [Yosemite National Park NPS Map Replica by Kathleen]
+    0 routes  https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/JOTR_CMP_SocialTrails_0220110/FeatureServer/0  [JOTR_CMP_SocialTrails_0220110]
+    0 routes  https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/Nez_Perce_National_Historic_Trail_2/FeatureServer/0  [BLM OR/WA Nez Perce National Historic Trail]
+    0 routes  https://services.arcgis.com/czCXlxn6hYtK4vdg/arcgis/rest/services/North_Fork_WRAP_Decision_Support_Layers/FeatureServer/32  [North Fork WRAP Decision Support Layers]
+    2 routes  https://services.arcgis.com/czCXlxn6hYtK4vdg/arcgis/rest/services/North_Fork_WRAP_Decision_Support_Layers/FeatureServer/69  [North Fork WRAP Decision Support Layers]
+    0 routes  https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/California_National_Historic_Trail/FeatureServer/0  [BLM OR/WA California National Historic Trail]
+    0 routes  https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/Great_Smoky_Mountains_Interactive_Map_by_KlaribellTamayo_WFL1/FeatureServer/0  [Great Smoky Mountains Interactive Map by Klaribell]
+    0 routes  https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/Great_Smoky_Mountains_Interactive_Map_by_KlaribellTamayo_WFL1/FeatureServer/19  [Great Smoky Mountains Interactive Map by Klaribell]
+FAILED https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/National_Scenic_and_Historic_Trails_NSHT/FeatureServer/0: IncompleteRead(58720256 bytes read, 11311339 more expected)
