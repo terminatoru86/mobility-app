@@ -41,7 +41,7 @@ MOTO_LAYER = re.compile(r'motorcycle|motorbike|dirt\s*bike|scenic\s*byway|off-?h
                         r'historic\s*(route|byway|highway)|heritage\s*(route|byway|highway)|national\s*historic\s*trail', re.I)
 MOTO_FIELD = re.compile(r'motorcycle|motorbike|dirt\s*bike', re.I)
 YES = {'y', 'yes', 'true', '1', 'open', 'allowed', 'managed', 'permitted', 'designated', 'accepted'}
-NAME_FIELDS = ('trail_name', 'trailname', 'trlname', 'trail_nm', 'name', 'trail', 'label', 'route_name', 'pathname', 'segment_name', 'full_name', 'on_street', 'strname', 'routename')
+NAME_FIELDS = ('trail_name', 'trailname', 'trlname', 'trail_nm', 'name', 'trail', 'label', 'route_name', 'pathname', 'segment_name', 'full_name', 'on_street', 'strname', 'routename', 'path_name')
 # layers the search does not find, added by hand (url, where, layer text, source, owner)
 FIXED = [
     ('https://services2.arcgis.com/CyVvlIiUfRBmMQuu/arcgis/rest/services/Bikeways_and_Trails/FeatureServer/0', "STATUS='Active'",
@@ -64,6 +64,9 @@ FIXED = [
     # Florida existing public trails (Office of Greenways and Trails / FDOT): paved and unpaved, open to the public
     ('https://services1.arcgis.com/O1JpcwDW8sjYuddV/ArcGIS/rest/services/EXISTING_TRAILS/FeatureServer', '1=1',
      'Existing trails', 'Existing trails · Florida DOT / Office of Greenways and Trails', 'Florida DOT'),
+    # Lakeland FL: the city's records reply pointed to its Pathways map (existing paths only; proposed ones are red)
+    ('https://arcgis.lakelandgov.net/maps/rest/services/Public/Pathways/FeatureServer/1', "STATUS LIKE 'Exist%'",
+     'Bicycle and pedestrian pathways', 'Bike and pedestrian pathways · City of Lakeland FL', 'City of Lakeland FL'),
     ('https://services1.arcgis.com/O1JpcwDW8sjYuddV/ArcGIS/rest/services/USBikeRoutesFlorida/FeatureServer/0', '1=1',
      'US Bike Routes Florida', 'US Bike Routes · Florida DOT', 'Florida DOT'),
     # Topeka KS: the city answered our KORA request with the bikeways plan; the city map server has the bikeways layer
