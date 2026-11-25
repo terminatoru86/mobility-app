@@ -62,6 +62,15 @@ FIXED = [
      'Bike Lanes', 'Bike lanes on state roads · Florida DOT', 'Florida DOT'),
     ('https://services1.arcgis.com/O1JpcwDW8sjYuddV/ArcGIS/rest/services/USBikeRoutesFlorida/FeatureServer/0', '1=1',
      'US Bike Routes Florida', 'US Bike Routes · Florida DOT', 'Florida DOT'),
+    # Topeka KS: the city answered our KORA request with the bikeways plan; the city map server has the bikeways layer
+    ('https://maps.topeka.gov/arcgis/rest/services/LandUsePlanning/Bikeways/MapServer', '1=1',
+     'Topeka bikeways', 'Bikeways · City of Topeka KS', 'City of Topeka KS'),
+    # Kansas DOT statewide bike map (routes, lanes, paths; future layers are dropped by LAYER_BAD)
+    ('https://kanplan.ksdot.gov/arcgis_web_adaptor/rest/services/Bike/Kansas_Bikeways/MapServer', '1=1',
+     'Kansas bikeways', 'Kansas bikeways · Kansas DOT', 'Kansas DOT'),
+    # Iowa DOT pathway asset layer (bike lanes); Ames and other Iowa cities pointed us to plans only
+    ('https://gis.iowadot.gov/agshost/rest/services/RAMS/PathwayBikeLanes/MapServer', '1=1',
+     'Iowa bike lanes', 'Bike lanes · Iowa DOT', 'Iowa DOT'),
 ]
 
 
