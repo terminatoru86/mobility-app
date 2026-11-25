@@ -1,0 +1,52 @@
+name: Inbox convert
+
+# Turns GIS files that cities sent by email (data/inbox/<city>/: .mpkx/.mpk/.zip/.kmz/.gdb/.shp/.kml)
+# into plain GeoJSON in WGS84 (data/inbox_out/<city>/<layer>.geojson) so tool scripts can read them.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['data/inbox/**']
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq gdal-bin p7zip-full >/dev/null
+      - name: Convert
+        run: |
+          set -x
+          for d in data/inbox/*/; do
+            c=$(basename "$d"); w=/tmp/x/$c; o=data/inbox_out/$c
+            mkdir -p "$w" "$o"
+            for f in "$d"*; do
+              case "$f" in
+                *.mpkx|*.mpk|*.ppkx|*.7z) 7z x -y -o"$w" "$f" >/dev/null ;;
+                *.zip|*.kmz) 7z x -y -o"$w" "$f" >/dev/null ;;
+                *) cp -r "$f" "$w"/ ;;
+              esac
+            done
+            # nested zips
+            find "$w" -name '*.zip' -exec 7z x -y -o"$w" {} \; >/dev/null || true
+            find "$w" | head -100 > "$o/_files.txt"
+            find "$w" \( -name '*.gdb' -type d \) -o -name '*.shp' -o -name '*.kml' -o -name '*.geojson' -o -name '*.gpkg' | while read src; do
+              for L in $(ogrinfo -ro -q "$src" 2>/dev/null | sed -n 's/^[0-9]*: \([^ ]*\).*/\1/p'); do
+                ogr2ogr -f GeoJSON -t_srs EPSG:4326 -lco RFC7946=YES "$o/$(basename "$src" | tr ' ' _)__$L.geojson" "$src" "$L" || true
+              done
+              ogrinfo -ro -so -al "$src" > "$o/$(basename "$src" | tr ' ' _).info.txt" 2>&1 || true
+            done
+          done
+          ls -la data/inbox_out/*
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull -q --rebase || true
+          git add data/inbox_out
+          git commit -m "Inbox: GIS files converted to GeoJSON" || exit 0
+          git push
