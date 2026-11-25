@@ -58,8 +58,12 @@ FIXED = [
     ('https://maps.phoenix.gov/pub/rest/services/Public/STR_Bikeways/MapServer/0', '1=1',
      'Bikeways', 'Existing bikeways · City of Phoenix AZ', 'City of Phoenix AZ'),
     # Florida: cities (e.g. Rockledge) answered that FDOT keeps the bike lanes on state roads; FDOT publishes them
-    ('https://gis.fdot.gov/arcgis/rest/services/RCI_Layers/FeatureServer/28', '1=1',
-     'Bike Lanes', 'Bike lanes on state roads · Florida DOT', 'Florida DOT'),
+    # (gis.fdot.gov blocks cloud runners; the same RCI bike data is on FDOT's ArcGIS Online)
+    ('https://services1.arcgis.com/O1JpcwDW8sjYuddV/ArcGIS/rest/services/OMD_BIKE/FeatureServer', '1=1',
+     'state road bike lane', 'Bike lanes on state roads · Florida DOT', 'Florida DOT'),
+    # Florida existing public trails (Office of Greenways and Trails / FDOT): paved and unpaved, open to the public
+    ('https://services1.arcgis.com/O1JpcwDW8sjYuddV/ArcGIS/rest/services/EXISTING_TRAILS/FeatureServer', '1=1',
+     'Existing trails', 'Existing trails · Florida DOT / Office of Greenways and Trails', 'Florida DOT'),
     ('https://services1.arcgis.com/O1JpcwDW8sjYuddV/ArcGIS/rest/services/USBikeRoutesFlorida/FeatureServer/0', '1=1',
      'US Bike Routes Florida', 'US Bike Routes · Florida DOT', 'Florida DOT'),
     # Topeka KS: the city answered our KORA request with the bikeways plan; the city map server has the bikeways layer
@@ -112,6 +116,9 @@ def routes_from(features, layer_text, source, url, owner=''):
     by = {}
     for props, paths in features:
         n = name_of(props)
+        if not n and owner == 'Florida DOT':  # state-road layers carry only the roadway id
+            rid = next((str(v).strip() for k, v in props.items() if k.lower() == 'roadway' and v), '')
+            n = f"State road {rid} bike lane" if rid else None
         if n:
             for kd in kinds_of(props, layer_text):
                 by.setdefault((n.title() if n.isupper() else n, kd), []).extend(paths)
