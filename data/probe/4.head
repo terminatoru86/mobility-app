@@ -1,17 +1,12 @@
 HTTP/2 200 
-content-type: application/json; charset=utf-8
-server: gunicorn/asgi
-x-nominatim-server: poldi.openstreetmap.org
-accept-ranges: bytes
-age: 0
-date: Wed, 25 Nov 2026 17:05:20 GMT
-via: 1.1 varnish
-x-served-by: cache-dfw-kdal2120122-DFW
-x-cache: MISS
-x-cache-hits: 0
-x-timer: S1795626320.934488,VS0,VE324
-vary: accept-language, Accept-Encoding
-strict-transport-security: max-age=300
-alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
-content-length: 2
+date: Wed, 25 Nov 2026 18:29:17 GMT
+content-type: application/json; charset=UTF-8
+vary: Origin
+vary: accept-encoding
+server: cloudflare
+set-cookie: __cf_bm=XOc10MIUEs2XKFFIeF4EewtfjmVpwJ2zkJUUbLoaoxk-1795631356.9061017-1.0.1.1-gGJNkNMEpzcYZ6.u1lQgfmAbSVG9y5yCLptSOcHr8kDE3Xa56wSFzRfSW8dS0wR8UectGOx2IEeakFyrLocRFD9JEso_uXk1bdljYpLUtjk3b92yAHN2ACgoLTQ2ZSKO; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=gis.iowadot.gov; Expires=Wed, 25 Nov 2026 18:59:17 GMT
+referrer-policy: STRICT-ORIGIN
+referrer-policy: STRICT-ORIGIN-WHEN-CROSS-ORIGIN
+cf-cache-status: DYNAMIC
+cf-ray: a602b7cca965fae5-DFW
 

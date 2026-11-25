@@ -1,17 +1,18 @@
 HTTP/2 200 
-content-type: application/json; charset=utf-8
-server: gunicorn/asgi
-x-nominatim-server: longma.openstreetmap.org
-accept-ranges: bytes
-age: 0
-date: Wed, 25 Nov 2026 17:05:19 GMT
-via: 1.1 varnish
-x-served-by: cache-dfw-kdal2120113-DFW
-x-cache: MISS
-x-cache-hits: 0
-x-timer: S1795626319.372434,VS0,VE491
-vary: accept-language, Accept-Encoding
-strict-transport-security: max-age=300
-alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
-content-length: 2
+cache-control: must-revalidate,max-age=0,public
+content-length: 2585
+content-type: application/json; charset=UTF-8
+etag: "46f18aba"
+vary: Origin
+server: Microsoft-IIS/10.0
+x-content-type-options: nosniff
+set-cookie: AGS_ROLES=sym-gcm|1|SQK9JIMiSB88Vrw5juyscA==|YHfuyJadA73vyR8Gn6AxmYjSXiz1vJ8odOSPlRqw; Max-Age=60; Expires=Wed, 25 Nov 2026 18:30:16 GMT; Path=/arcgis/rest; HttpOnly; SameSite=Lax
+x-powered-by: ASP.NET
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubdomains
+referrer-policy: strict-origin
+access-control-allow-credentials: true
+date: Wed, 25 Nov 2026 18:29:16 GMT
 
