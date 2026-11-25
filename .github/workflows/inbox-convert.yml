@@ -43,6 +43,8 @@ jobs:
             done
           done
           ls -la data/inbox_out/*
+      - name: Geocode address lists
+        run: python3 tool/geocode_inbox.py || true
       - name: Save
         run: |
           git config user.name "github-actions[bot]"
