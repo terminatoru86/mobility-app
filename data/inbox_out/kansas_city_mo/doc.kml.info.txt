@@ -1,10 +1,10 @@
-INFO: Open of `/tmp/x/kansas_city_mo/doc.kml'
+INFO: Open of `/tmp/x/kansas_city_mo/Existing_Bikeways_Trails_2026.kmz/doc.kml'
       using driver `LIBKML' successful.
 
-Layer name: Parking-Only Hubs KCMO/NKC
+Layer name: KCMO_TrailsAndBikeway_MARC
 Geometry: Unknown (any)
-Feature Count: 10
-Extent: (-94.595253, 39.037826) - (-94.538534, 39.151524)
+Feature Count: 933
+Extent: (-94.752521, 38.851624) - (-94.385464, 39.311071)
 Layer SRS WKT:
 GEOGCRS["WGS 84",
     DATUM["World Geodetic System 1984",
@@ -33,3 +33,4 @@ extrude: Integer (0.0)
 visibility: Integer (0.0)
 drawOrder: Integer (0.0)
 icon: String (0.0)
+snippet: String (0.0)

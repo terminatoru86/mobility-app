@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ESRI_ItemInformation Culture='en-US'>
+<name>GIS Map Package</name>
+<guid>156777AA-A182-4C05-9F21-93C81D8E2F9A</guid>
+<version>1.0</version>
+<created></created>
+<modified></modified>
+<catalogpath></catalogpath>
+<snippet></snippet>
+<description></description>
+<summary></summary>
+<title>GIS Map Package</title>
+<tags></tags>
+<type>Map Package</type>
+<typekeywords>
+<typekeyword>Map Package</typekeyword>
+<typekeyword>Map</typekeyword>
+<typekeyword>2D</typekeyword>
+<typekeyword>ArcGIS Pro</typekeyword>
+<typekeyword>mpkx</typekeyword>
+</typekeywords>
+<thumbnail>thumbnail/thumbnail.png</thumbnail>
+<documentation></documentation>
+<url></url>
+<spatialreference>None</spatialreference>
+<minScale>0</minScale>
+<maxScale>7.9050503334599447e-323</maxScale>
+<datalastModifiedTime></datalastModifiedTime>
+<accessinformation></accessinformation>
+<licenseinfo></licenseinfo>
+</ESRI_ItemInformation>
