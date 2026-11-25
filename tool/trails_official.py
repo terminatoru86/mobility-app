@@ -57,6 +57,11 @@ FIXED = [
     # Phoenix AZ: the city pointed us to its records portal; its existing bikeways are public on the city map server
     ('https://maps.phoenix.gov/pub/rest/services/Public/STR_Bikeways/MapServer/0', '1=1',
      'Bikeways', 'Existing bikeways · City of Phoenix AZ', 'City of Phoenix AZ'),
+    # Florida: cities (e.g. Rockledge) answered that FDOT keeps the bike lanes on state roads; FDOT publishes them
+    ('https://gis.fdot.gov/arcgis/rest/services/RCI_Layers/FeatureServer/28', '1=1',
+     'Bike Lanes', 'Bike lanes on state roads · Florida DOT', 'Florida DOT'),
+    ('https://services1.arcgis.com/O1JpcwDW8sjYuddV/ArcGIS/rest/services/USBikeRoutesFlorida/FeatureServer/0', '1=1',
+     'US Bike Routes Florida', 'US Bike Routes · Florida DOT', 'Florida DOT'),
 ]
 
 
