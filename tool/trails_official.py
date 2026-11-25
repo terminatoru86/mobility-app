@@ -54,6 +54,9 @@ FIXED = [
     # Madison WI: sent by the Greater Madison MPO (bike map service; planned facilities are filtered by LAYER_BAD names)
     ('https://maps.cityofmadison.com/arcgis/rest/services/MPO/BicycleMap_Pro/MapServer', '1=1',
      'Madison bike map', 'Bike map · City of Madison WI', 'City of Madison WI'),
+    # Phoenix AZ: the city pointed us to its records portal; its existing bikeways are public on the city map server
+    ('https://maps.phoenix.gov/pub/rest/services/Public/STR_Bikeways/MapServer/0', '1=1',
+     'Bikeways', 'Existing bikeways · City of Phoenix AZ', 'City of Phoenix AZ'),
 ]
 
 
