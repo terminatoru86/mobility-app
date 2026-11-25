@@ -1,17 +1,17 @@
 HTTP/2 200 
 content-type: application/json; charset=utf-8
 server: gunicorn/asgi
-x-nominatim-server: vhagar.openstreetmap.org
+x-nominatim-server: dulcy.openstreetmap.org
 accept-ranges: bytes
 age: 0
-date: Wed, 25 Nov 2026 16:59:21 GMT
+date: Wed, 25 Nov 2026 17:05:18 GMT
 via: 1.1 varnish
-x-served-by: cache-dfw-kdfw8210157-DFW
+x-served-by: cache-dfw-kdal2120034-DFW
 x-cache: MISS
 x-cache-hits: 0
-x-timer: S1795625960.322513,VS0,VE1283
+x-timer: S1795626318.388387,VS0,VE564
 vary: accept-language, Accept-Encoding
 strict-transport-security: max-age=300
 alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
-content-length: 2
+content-length: 503
 
