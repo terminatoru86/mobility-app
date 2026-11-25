@@ -14,9 +14,11 @@ jobs:
           curl -sL -o data/geo/counties.json https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json
           curl -sL -o /tmp/pl.zip https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_place_national.zip
           curl -sL -o /tmp/co.zip https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-          cd /tmp && unzip -o pl.zip && unzip -o co.zip
+          curl -sL -o /tmp/cs.zip https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_cousubs_national.zip
+          cd /tmp && unzip -o pl.zip && unzip -o co.zip && unzip -o cs.zip
           cp /tmp/2023_Gaz_place_national.txt $GITHUB_WORKSPACE/data/geo/places.txt
           cp /tmp/2023_Gaz_counties_national.txt $GITHUB_WORKSPACE/data/geo/counties_gaz.txt
+          cp /tmp/2023_Gaz_cousubs_national.txt $GITHUB_WORKSPACE/data/geo/cousubs.txt
           gzip -f $GITHUB_WORKSPACE/data/geo/counties.json
           ls -la $GITHUB_WORKSPACE/data/geo
       - name: Commit
