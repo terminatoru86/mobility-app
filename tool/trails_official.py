@@ -75,6 +75,10 @@ FIXED = [
     # Kansas DOT statewide bike map (routes, lanes, paths; future layers are dropped by LAYER_BAD)
     ('https://kanplan.ksdot.gov/arcgis_web_adaptor/rest/services/Bike/Kansas_Bikeways/MapServer', '1=1',
      'Kansas bikeways', 'Kansas bikeways · Kansas DOT', 'Kansas DOT'),
+    # Des Moines IA: the city's open-records reply pointed to its open GIS portal (Trails layer; proposed/planned dropped)
+    ('https://services.arcgis.com/HT7H9QGiZQoRJDpJ/arcgis/rest/services/Trails_view/FeatureServer/0',
+     "Status IS NULL OR (Status NOT LIKE '%ropos%' AND Status NOT LIKE '%lann%' AND Status NOT LIKE '%uture%')",
+     'Des Moines trails', 'Trails · City of Des Moines IA', 'City of Des Moines IA'),
 ]
 
 
