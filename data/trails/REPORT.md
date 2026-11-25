@@ -1,18 +1,20 @@
-# Bike routes found (99593 routes, 586,649 km, file 24.9 MB)
+# Bike routes found (99932 routes, 588,446 km, file 25.0 MB)
 
-By source: {'Official layers': 89734, 'OpenStreetMap': 9859}
-By kind: {'motorcycle': 34805, 'bicycle': 62969, 'hiking': 7, 'mtb': 1812}
-OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 91127, 'lcn': 6813, 'rcn': 1263, 'ncn': 78, 'US:CA:Scenic': 17, 'US:US:Historic': 16, 'US:IA:Scenic': 15, 'lwn': 14}
-Longer than 10 km: 15244 · longer than 50 km: 3
+By source: {'Official layers': 90073, 'OpenStreetMap': 9859}
+By kind: {'motorcycle': 34807, 'bicycle': 63306, 'hiking': 7, 'mtb': 1812}
+OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 91466, 'lcn': 6813, 'rcn': 1263, 'ncn': 78, 'US:CA:Scenic': 17, 'US:US:Historic': 16, 'US:IA:Scenic': 15, 'lwn': 14}
+Longer than 10 km: 15294 · longer than 50 km: 3
 
 ## Operators with the most routes
 - NFGMobile_Publisher: 48846
 - vwgeiser: 40131
 - -: 8764
+- Kansas DOT: 234
 - City of Lawrence: 224
 - mart6306@esri.com_EPN: 214
 - City of Virginia Beach: 144
 - United States Forest Service: 95
+- City of Topeka KS: 80
 - City of Iowa City: 69
 - OSMP_Boulder: 62
 - City of Billings: 49
@@ -22,15 +24,13 @@ Longer than 10 km: 15244 · longer than 50 km: 3
 - City of Norman: 28
 - City of Fitchburg: 24
 - Baltimore City Department of Public Works: 20
+- ebdn0_ahsgis: 19
 - Okanogan-Wenatchee National Forest: 19
 - City of Stillwater: 17
 - Boise_GIS: 16
 - Ohio Department of Transportation: 16
 - MORC: 15
 - US Forest Service: 15
-- Forest Preserve District of Cook County: 15
-- Johnson County: 15
-- City of Coralville: 14
 
 ## Longest routes
 - Honker Divide Canoe Route · 50.0 km · NFGMobile_Publisher · a/56c6b0cbfd35
