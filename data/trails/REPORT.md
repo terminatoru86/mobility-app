@@ -1,20 +1,23 @@
-# Bike routes found (99932 routes, 588,446 km, file 25.0 MB)
+# Bike routes found (101612 routes, 595,869 km, file 25.7 MB)
 
-By source: {'Official layers': 90073, 'OpenStreetMap': 9859}
-By kind: {'motorcycle': 34807, 'bicycle': 63306, 'hiking': 7, 'mtb': 1812}
-OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 91466, 'lcn': 6813, 'rcn': 1263, 'ncn': 78, 'US:CA:Scenic': 17, 'US:US:Historic': 16, 'US:IA:Scenic': 15, 'lwn': 14}
-Longer than 10 km: 15294 · longer than 50 km: 3
+By source: {'Official layers': 91753, 'OpenStreetMap': 9859}
+By kind: {'motorcycle': 34807, 'bicycle': 64840, 'hiking': 92, 'mtb': 1873}
+OpenStreetMap network (ncn national, rcn regional, lcn local): {'-': 93146, 'lcn': 6813, 'rcn': 1263, 'ncn': 78, 'US:CA:Scenic': 17, 'US:US:Historic': 16, 'US:IA:Scenic': 15, 'lwn': 14}
+Longer than 10 km: 15473 · longer than 50 km: 3
 
 ## Operators with the most routes
 - NFGMobile_Publisher: 48846
 - vwgeiser: 40131
 - -: 8764
-- Kansas DOT: 234
+- Florida DOT: 646
+- City of Kansas City MO: 564
+- Kansas DOT: 526
 - City of Lawrence: 224
 - mart6306@esri.com_EPN: 214
 - City of Virginia Beach: 144
+- CoRR Public Works: 117
 - United States Forest Service: 95
-- City of Topeka KS: 80
+- City of Topeka KS: 81
 - City of Iowa City: 69
 - OSMP_Boulder: 62
 - City of Billings: 49
@@ -22,15 +25,12 @@ Longer than 10 km: 15294 · longer than 50 km: 3
 - en:natfoot: 34
 - City of Winston Salem: 28
 - City of Norman: 28
+- CoRR Parks and Rec: 24
 - City of Fitchburg: 24
+- City of Lakeland FL: 21
 - Baltimore City Department of Public Works: 20
 - ebdn0_ahsgis: 19
 - Okanogan-Wenatchee National Forest: 19
-- City of Stillwater: 17
-- Boise_GIS: 16
-- Ohio Department of Transportation: 16
-- MORC: 15
-- US Forest Service: 15
 
 ## Longest routes
 - Honker Divide Canoe Route · 50.0 km · NFGMobile_Publisher · a/56c6b0cbfd35
