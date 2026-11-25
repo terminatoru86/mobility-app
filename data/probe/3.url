@@ -1,1 +1,1 @@
-https://gis.fdot.gov/arcgis/rest/services/RCI_Layers/FeatureServer?f=json
+https://data.dsm.city/api/search/v1/collections/all/items?q=trail&limit=50

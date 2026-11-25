@@ -1,7 +1,24 @@
-HTTP/1.1 403 Forbidden
-Server: Microsoft-Azure-Application-Gateway/v2
-Date: Wed, 25 Nov 2026 18:49:25 GMT
-Content-Type: text/html
-Content-Length: 9411
-Connection: close
+HTTP/1.1 200 OK
+Date: Wed, 25 Nov 2026 23:04:24 GMT
+Content-Type: application/geo+json; charset=utf-8
+Content-Length: 26361
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Content-Security-Policy: img-src 'self' data: https:;default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+X-RateLimit-Limit-PORTAL_SEARCH_THROTTLER: 10
+X-RateLimit-Remaining-PORTAL_SEARCH_THROTTLER: 9
+X-RateLimit-Reset-PORTAL_SEARCH_THROTTLER: 1
+ETag: W/"66f9-xp98abVrpzvu0uur/oSyQLXOWb4"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+Content-Security-Policy: upgrade-insecure-requests
 

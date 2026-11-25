@@ -1,15 +1,24 @@
 HTTP/1.1 200 OK
-Cache-Control: max-age=00:00:00
-Content-Length: 2627
-Content-Type: application/json; charset=UTF-8
-ETag: "6f7293dd"
-Vary: Origin
-Server: Microsoft-IIS/10.0
+Date: Wed, 25 Nov 2026 23:04:24 GMT
+Content-Type: application/geo+json; charset=utf-8
+Content-Length: 397
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Content-Security-Policy: img-src 'self' data: https:;default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
 X-Content-Type-Options: nosniff
-X-XSS-Protection: 1; mode=block
-Set-Cookie: AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Wed, 25 Nov 2026 19:14:57 GMT; Path=/maps/rest; Secure; HttpOnly
-X-Powered-By: ASP.NET
-Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-Date: Wed, 25 Nov 2026 19:13:56 GMT
-Set-Cookie: BIGipServerArcGIS_443_Pool=815048896.47873.0000; path=/; Httponly; Secure
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+X-RateLimit-Limit-PORTAL_SEARCH_THROTTLER: 10
+X-RateLimit-Remaining-PORTAL_SEARCH_THROTTLER: 9
+X-RateLimit-Reset-PORTAL_SEARCH_THROTTLER: 1
+ETag: W/"18d-sFUDs+wHJ9zzzuZEITXcbTCuoRc"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+Content-Security-Policy: upgrade-insecure-requests
 

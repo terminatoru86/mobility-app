@@ -1,1 +1,1 @@
-https://arcgis.lakelandgov.net/maps/rest/services/Public/Pathways/FeatureServer/1/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=3&f=json
+https://data.dsm.city/api/search/v1/collections/all/items?q=bike&limit=50
