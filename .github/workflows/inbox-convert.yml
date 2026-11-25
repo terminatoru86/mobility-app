@@ -34,6 +34,7 @@ jobs:
             # nested zips
             find "$w" -name '*.zip' -exec 7z x -y -o"$w" {} \; >/dev/null || true
             find "$w" | head -100 > "$o/_files.txt"
+            find "$w" \( -name '*.mapx' -o -name '*.lyrx' -o -name 'iteminfo.xml' \) | while read m; do cp "$m" "$o/$(echo ${m#$w/} | tr '/ ' '__')"; done
             find "$w" \( -name '*.gdb' -type d \) -o -name '*.shp' -o -name '*.kml' -o -name '*.geojson' -o -name '*.gpkg' | while read src; do
               for L in $(ogrinfo -ro -q "$src" 2>/dev/null | sed -n 's/^[0-9]*: \([^ ]*\).*/\1/p'); do
                 ogr2ogr -f GeoJSON -t_srs EPSG:4326 -lco RFC7946=YES "$o/$(basename "$src" | tr ' ' _)__$L.geojson" "$src" "$L" || true
