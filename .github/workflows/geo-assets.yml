@@ -1,0 +1,25 @@
+name: Geo assets (counties + places)
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  get:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - name: Download county shapes and the Census places list
+        run: |
+          mkdir -p data/geo
+          curl -sL -o data/geo/counties.json https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json
+          curl -sL -o /tmp/pl.zip https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_place_national.zip
+          curl -sL -o /tmp/co.zip https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+          cd /tmp && unzip -o pl.zip && unzip -o co.zip
+          cp /tmp/2023_Gaz_place_national.txt $GITHUB_WORKSPACE/data/geo/places.txt
+          cp /tmp/2023_Gaz_counties_national.txt $GITHUB_WORKSPACE/data/geo/counties_gaz.txt
+          gzip -f $GITHUB_WORKSPACE/data/geo/counties.json
+          ls -la $GITHUB_WORKSPACE/data/geo
+      - name: Commit
+        run: |
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add data/geo && git commit -m "Geo assets: county shapes, Census places and counties" && git pull --rebase && git push || true
