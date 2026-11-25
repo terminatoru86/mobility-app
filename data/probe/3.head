@@ -1,13 +1,7 @@
-HTTP/1.1 200 OK
-Cache-Control: must-revalidate,max-age=0,public
-Content-Length: 3877
-Content-Type: application/json; charset=UTF-8
-ETag: "70d4615e"
-Vary: Origin
-Server: Microsoft-IIS/10.0
-X-Content-Type-Options: nosniff
-Set-Cookie: AGS_ROLES=sym-gcm|1|MXSUID0FEmEKAMxn54sFxA==|Om3vkI7ybsk4bEl8Sw1tZOohWawRCr3wms1gHCfc; Max-Age=60; Expires=Wed, 25 Nov 2026 18:31:51 GMT; Path=/arcgis_web_adaptor/rest; HttpOnly; SameSite=Lax
-X-Powered-By: ASP.NET
-Date: Wed, 25 Nov 2026 18:30:51 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
+HTTP/1.1 403 Forbidden
+Server: Microsoft-Azure-Application-Gateway/v2
+Date: Wed, 25 Nov 2026 18:49:25 GMT
+Content-Type: text/html
+Content-Length: 9411
+Connection: close
 

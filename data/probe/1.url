@@ -1,1 +1,1 @@
-https://maps.phoenix.gov/pub/rest/services/Public/STR_Bikeways/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=2&f=json
+https://gis.fdot.gov/arcgis/rest/services/RCI_Layers/FeatureServer/28/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=2&f=json

@@ -1,12 +1,22 @@
 HTTP/2 200 
-date: Wed, 25 Nov 2026 18:29:17 GMT
-content-type: application/json; charset=UTF-8
-vary: Origin
-vary: accept-encoding
-server: cloudflare
-set-cookie: __cf_bm=XOc10MIUEs2XKFFIeF4EewtfjmVpwJ2zkJUUbLoaoxk-1795631356.9061017-1.0.1.1-gGJNkNMEpzcYZ6.u1lQgfmAbSVG9y5yCLptSOcHr8kDE3Xa56wSFzRfSW8dS0wR8UectGOx2IEeakFyrLocRFD9JEso_uXk1bdljYpLUtjk3b92yAHN2ACgoLTQ2ZSKO; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=gis.iowadot.gov; Expires=Wed, 25 Nov 2026 18:59:17 GMT
-referrer-policy: STRICT-ORIGIN
-referrer-policy: STRICT-ORIGIN-WHEN-CROSS-ORIGIN
-cf-cache-status: DYNAMIC
-cf-ray: a602b7cca965fae5-DFW
+date: Wed, 25 Nov 2026 18:49:27 GMT
+content-type: application/json; charset=utf-8
+content-length: 284997
+cache-control: private, max-age=0, s-maxage=0
+etag: 81262947
+vary: X-Esri-Authorization
+x-arcgis-upstream: us1h01c00-services
+strict-transport-security: max-age=63072000
+x-arcgis-trace-id: 20261125T184925Z-1654964bb5fwl5f2hC1CO1xzd40000000yq000000000kvux
+x-arcgis-correlation-id: f08107b478fed98c
+x-arcgis-instance: i7tdixsfq00000D
+request-context: appId=cid-v1:3e4b9f12-ca59-424b-b320-0c429e32d54c
+access-control-expose-headers: Request-Context
+access-control-allow-origin: *
+access-control-allow-headers: Content-Type, Authorization, X-Esri-Authorization
+access-control-allow-credentials: true
+x-azure-ref: 20261125T184925Z-1654964bb5fwl5f2hC1CO1xzd40000000yq000000000kvux
+x-fd-int-roxy-purgeid: 0
+x-cache: PRIVATE_NOSTORE
+accept-ranges: bytes
 
