@@ -1,13 +1,17 @@
-HTTP/1.1 200 
-Date: Wed, 25 Nov 2026 16:57:16 GMT
-Content-Type: application/json
-Content-Length: 237
-Connection: keep-alive
-X-Frame-Options: DENY
-Cache-Control: private, no-store
-Strict-Transport-Security: max-age=31536000
-X-Content-Type-Options: nosniff
-X-XSS-Protection: 1;mode=block
-Vary: Origin
-Set-Cookie: TS0193e6a1=01283c52a4e7ed1ea23732a54527fb674622d3341a3ca94923ad3ffa5ee7eea451bedfde02b44f76dd7617d75ad5a6afaa56dc5cdc; Path=/; Domain=.geocoding.geo.census.gov; Secure; HttpOnly
+HTTP/2 200 
+content-type: application/json; charset=utf-8
+server: gunicorn/asgi
+x-nominatim-server: vhagar.openstreetmap.org
+accept-ranges: bytes
+age: 0
+date: Wed, 25 Nov 2026 16:59:23 GMT
+via: 1.1 varnish
+x-served-by: cache-dfw-kdfw8210105-DFW
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1795625962.219672,VS0,VE941
+vary: accept-language, Accept-Encoding
+strict-transport-security: max-age=300
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+content-length: 497
 
