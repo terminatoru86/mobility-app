@@ -1,14 +1,15 @@
-HTTP/2 200 
-content-type: application/json;charset=utf-8
-date: Wed, 25 Nov 2026 19:12:10 GMT
-cache-control: max-age=0, must-revalidate
-server: ArcGIS Online
-x-content-type-options: nosniff
-strict-transport-security: max-age=31536000
-etag: "1a091873b50"
-vary: Origin,Authorization,X-Esri-Authorization
-x-cache: Miss from cloudfront
-via: 1.1 a53ebc5c4d12bc9682b9c11ea18dccbe.cloudfront.net (CloudFront)
-x-amz-cf-pop: IAD12-P1
-x-amz-cf-id: Fy24mEsSDQUn4VjYGvZfNSxWQ1hN4pHExonO1y6Mk90YBiQ11W9BoA==
+HTTP/1.1 200 OK
+Cache-Control: max-age=00:00:00
+Content-Length: 2627
+Content-Type: application/json; charset=UTF-8
+ETag: "6f7293dd"
+Vary: Origin
+Server: Microsoft-IIS/10.0
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Set-Cookie: AGS_ROLES="419jqfa+uOZgYod4xPOQ8Q=="; Version=1; Max-Age=60; Expires=Wed, 25 Nov 2026 19:14:57 GMT; Path=/maps/rest; Secure; HttpOnly
+X-Powered-By: ASP.NET
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Date: Wed, 25 Nov 2026 19:13:56 GMT
+Set-Cookie: BIGipServerArcGIS_443_Pool=815048896.47873.0000; path=/; Httponly; Secure
 
