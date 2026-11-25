@@ -1,18 +1,13 @@
-HTTP/2 200 
-cache-control: must-revalidate,max-age=0,public
-content-length: 2585
-content-type: application/json; charset=UTF-8
-etag: "46f18aba"
-vary: Origin
-server: Microsoft-IIS/10.0
-x-content-type-options: nosniff
-set-cookie: AGS_ROLES=sym-gcm|1|SQK9JIMiSB88Vrw5juyscA==|YHfuyJadA73vyR8Gn6AxmYjSXiz1vJ8odOSPlRqw; Max-Age=60; Expires=Wed, 25 Nov 2026 18:30:16 GMT; Path=/arcgis/rest; HttpOnly; SameSite=Lax
-x-powered-by: ASP.NET
-x-content-type-options: nosniff
-x-frame-options: SAMEORIGIN
-x-xss-protection: 1; mode=block
-strict-transport-security: max-age=31536000; includeSubdomains
-referrer-policy: strict-origin
-access-control-allow-credentials: true
-date: Wed, 25 Nov 2026 18:29:16 GMT
+HTTP/1.1 200 OK
+Cache-Control: must-revalidate,max-age=0,public
+Content-Length: 3877
+Content-Type: application/json; charset=UTF-8
+ETag: "70d4615e"
+Vary: Origin
+Server: Microsoft-IIS/10.0
+X-Content-Type-Options: nosniff
+Set-Cookie: AGS_ROLES=sym-gcm|1|MXSUID0FEmEKAMxn54sFxA==|Om3vkI7ybsk4bEl8Sw1tZOohWawRCr3wms1gHCfc; Max-Age=60; Expires=Wed, 25 Nov 2026 18:31:51 GMT; Path=/arcgis_web_adaptor/rest; HttpOnly; SameSite=Lax
+X-Powered-By: ASP.NET
+Date: Wed, 25 Nov 2026 18:30:51 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
 

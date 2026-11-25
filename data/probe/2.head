@@ -1,13 +1,18 @@
-HTTP/1.1 200 OK
-Cache-Control: must-revalidate,max-age=0,public
-Content-Length: 14
-Content-Type: application/json; charset=UTF-8
-ETag: "ef05caf5"
-Vary: Origin
-Server: Microsoft-IIS/10.0
-X-Content-Type-Options: nosniff
-X-Powered-By: ASP.NET
-X-UA-Compatible: IE=Edge
-Date: Wed, 25 Nov 2026 18:29:14 GMT
-Set-Cookie: BIGipServermaps.phoenix.gov-pool-ext-ent=771810570.47873.0000; path=/; Httponly; Secure
+HTTP/2 200 
+cache-control: must-revalidate,max-age=0,public
+content-length: 2487
+content-type: application/json; charset=UTF-8
+etag: "11cc1cc3"
+vary: Origin
+server: Microsoft-IIS/10.0
+x-content-type-options: nosniff
+set-cookie: AGS_ROLES=sym-gcm|1|U61spMYXLAjRIn7OixGi3Q==|idRt_znYppRqLdQUCTrfNUuGhH9v4GhYDdE0uZWk; Max-Age=60; Expires=Wed, 25 Nov 2026 18:31:51 GMT; Path=/arcgis/rest; HttpOnly; SameSite=Lax
+x-powered-by: ASP.NET
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubdomains
+referrer-policy: strict-origin
+access-control-allow-credentials: true
+date: Wed, 25 Nov 2026 18:30:51 GMT
 
