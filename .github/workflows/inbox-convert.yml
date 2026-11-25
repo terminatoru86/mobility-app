@@ -26,8 +26,8 @@ jobs:
             mkdir -p "$w" "$o"
             for f in "$d"*; do
               case "$f" in
-                *.mpkx|*.mpk|*.ppkx|*.7z) 7z x -y -o"$w" "$f" >/dev/null ;;
-                *.zip|*.kmz) 7z x -y -o"$w" "$f" >/dev/null ;;
+                *.mpkx|*.mpk|*.ppkx|*.7z) 7z x -y -o"$w/$(basename "$f" | tr ' ' _)" "$f" >/dev/null ;;
+                *.zip|*.kmz) 7z x -y -o"$w/$(basename "$f" | tr ' ' _)" "$f" >/dev/null ;;
                 *) cp -r "$f" "$w"/ ;;
               esac
             done
@@ -37,7 +37,7 @@ jobs:
             find "$w" \( -name '*.mapx' -o -name '*.lyrx' -o -name 'iteminfo.xml' \) | while read m; do cp "$m" "$o/$(echo ${m#$w/} | tr '/ ' '__')"; done
             find "$w" \( -name '*.gdb' -type d \) -o -name '*.shp' -o -name '*.kml' -o -name '*.geojson' -o -name '*.gpkg' | while read src; do
               for L in $(ogrinfo -ro -q "$src" 2>/dev/null | sed -n 's/^[0-9]*: \([^ ]*\).*/\1/p'); do
-                ogr2ogr -f GeoJSON -t_srs EPSG:4326 -lco RFC7946=YES "$o/$(basename "$src" | tr ' ' _)__$L.geojson" "$src" "$L" || true
+                ogr2ogr -f GeoJSON -t_srs EPSG:4326 -lco RFC7946=YES "$o/$(echo "${src#$w/}" | tr '/ ' '__')__$L.geojson" "$src" "$L" || true
               done
               ogrinfo -ro -so -al "$src" > "$o/$(basename "$src" | tr ' ' _).info.txt" 2>&1 || true
             done
