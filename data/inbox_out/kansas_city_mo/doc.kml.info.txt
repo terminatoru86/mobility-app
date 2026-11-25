@@ -1,0 +1,35 @@
+INFO: Open of `/tmp/x/kansas_city_mo/doc.kml'
+      using driver `LIBKML' successful.
+
+Layer name: Parking-Only Hubs KCMO/NKC
+Geometry: Unknown (any)
+Feature Count: 10
+Extent: (-94.595253, 39.037826) - (-94.538534, 39.151524)
+Layer SRS WKT:
+GEOGCRS["WGS 84",
+    DATUM["World Geodetic System 1984",
+        ELLIPSOID["WGS 84",6378137,298.257223563,
+            LENGTHUNIT["metre",1]]],
+    PRIMEM["Greenwich",0,
+        ANGLEUNIT["degree",0.0174532925199433]],
+    CS[ellipsoidal,2],
+        AXIS["geodetic latitude (Lat)",north,
+            ORDER[1],
+            ANGLEUNIT["degree",0.0174532925199433]],
+        AXIS["geodetic longitude (Lon)",east,
+            ORDER[2],
+            ANGLEUNIT["degree",0.0174532925199433]],
+    ID["EPSG",4326]]
+Data axis to CRS axis mapping: 2,1
+id: String (0.0)
+Name: String (0.0)
+description: String (0.0)
+timestamp: DateTime
+begin: DateTime
+end: DateTime
+altitudeMode: String (0.0)
+tessellate: Integer (0.0)
+extrude: Integer (0.0)
+visibility: Integer (0.0)
+drawOrder: Integer (0.0)
+icon: String (0.0)

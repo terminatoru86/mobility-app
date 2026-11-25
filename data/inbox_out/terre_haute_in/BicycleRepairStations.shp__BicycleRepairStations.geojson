@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "BicycleRepairStations",
+"features": [
+{ "type": "Feature", "properties": { "Location": "Jones Trail Head" }, "geometry": { "type": "Point", "coordinates": [ -87.296318, 39.485439, 0.0 ] } }
+]
+}
