@@ -1,7 +1,14 @@
-HTTP/1.1 403 Forbidden
-Server: Microsoft-Azure-Application-Gateway/v2
-Date: Wed, 25 Nov 2026 18:49:25 GMT
-Content-Type: text/html
-Content-Length: 9359
-Connection: close
+HTTP/2 200 
+content-type: application/json;charset=utf-8
+date: Wed, 25 Nov 2026 19:12:10 GMT
+cache-control: max-age=0, must-revalidate
+server: ArcGIS Online
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000
+etag: "1a091873b50"
+vary: Origin,Authorization,X-Esri-Authorization
+x-cache: Miss from cloudfront
+via: 1.1 a53ebc5c4d12bc9682b9c11ea18dccbe.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD12-P1
+x-amz-cf-id: Fy24mEsSDQUn4VjYGvZfNSxWQ1hN4pHExonO1y6Mk90YBiQ11W9BoA==
 
