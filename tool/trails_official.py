@@ -41,7 +41,7 @@ MOTO_LAYER = re.compile(r'motorcycle|motorbike|dirt\s*bike|scenic\s*byway|off-?h
                         r'historic\s*(route|byway|highway)|heritage\s*(route|byway|highway)|national\s*historic\s*trail', re.I)
 MOTO_FIELD = re.compile(r'motorcycle|motorbike|dirt\s*bike', re.I)
 YES = {'y', 'yes', 'true', '1', 'open', 'allowed', 'managed', 'permitted', 'designated', 'accepted'}
-NAME_FIELDS = ('trail_name', 'trailname', 'trlname', 'trail_nm', 'name', 'trail', 'label', 'route_name', 'pathname', 'segment_name', 'full_name')
+NAME_FIELDS = ('trail_name', 'trailname', 'trlname', 'trail_nm', 'name', 'trail', 'label', 'route_name', 'pathname', 'segment_name', 'full_name', 'on_street', 'strname', 'roadway')
 # layers the search does not find, added by hand (url, where, layer text, source, owner)
 FIXED = [
     ('https://services2.arcgis.com/CyVvlIiUfRBmMQuu/arcgis/rest/services/Bikeways_and_Trails/FeatureServer/0', "STATUS='Active'",
@@ -68,9 +68,6 @@ FIXED = [
     # Kansas DOT statewide bike map (routes, lanes, paths; future layers are dropped by LAYER_BAD)
     ('https://kanplan.ksdot.gov/arcgis_web_adaptor/rest/services/Bike/Kansas_Bikeways/MapServer', '1=1',
      'Kansas bikeways', 'Kansas bikeways · Kansas DOT', 'Kansas DOT'),
-    # Iowa DOT pathway asset layer (bike lanes); Ames and other Iowa cities pointed us to plans only
-    ('https://gis.iowadot.gov/agshost/rest/services/RAMS/PathwayBikeLanes/MapServer', '1=1',
-     'Iowa bike lanes', 'Bike lanes · Iowa DOT', 'Iowa DOT'),
 ]
 
 
