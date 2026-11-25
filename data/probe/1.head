@@ -1,13 +1,15 @@
 HTTP/2 200 
-date: Wed, 25 Nov 2026 23:04:23 GMT
-content-type: text/html; charset=UTF-8
-content-length: 116418
-cache-control: max-age=0, must-revalidate, no-cache, no-store, private
-x-revize-base: https://www.dsm.city/
-content-security-policy: frame-ancestors 'self'
-referrer-policy: no-referrer-when-downgrade
+content-type: application/json;charset=utf-8
+date: Wed, 25 Nov 2026 23:06:12 GMT
+strict-transport-security: max-age=31536000
+server: ArcGIS Online
 x-content-type-options: nosniff
-x-frame-options: SAMEORIGIN
-x-permitted-cross-domain-policies: none
-x-xss-protection: 1; mode=block
+cache-control: no-cache
+pragma: no-cache
+expires: -1
+vary: Origin,Authorization,X-Esri-Authorization
+x-cache: Miss from cloudfront
+via: 1.1 e268ddb03ed9480c5c602c27323a81ea.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD12-P1
+x-amz-cf-id: ahiNQ8YJEhKUUApKBfHzs5D0h5ARoBJr2V0qOCiirvmKtmcH8bKPxA==
 

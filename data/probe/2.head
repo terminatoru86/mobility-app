@@ -1,24 +1,23 @@
-HTTP/1.1 200 OK
-Date: Wed, 25 Nov 2026 23:04:24 GMT
-Content-Type: application/geo+json; charset=utf-8
-Content-Length: 397
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Content-Security-Policy: img-src 'self' data: https:;default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
-X-DNS-Prefetch-Control: off
-Expect-CT: max-age=0
-X-Frame-Options: SAMEORIGIN
-Strict-Transport-Security: max-age=15552000; includeSubDomains
-X-Download-Options: noopen
-X-Content-Type-Options: nosniff
-X-Permitted-Cross-Domain-Policies: none
-Referrer-Policy: no-referrer
-X-XSS-Protection: 0
-X-RateLimit-Limit-PORTAL_SEARCH_THROTTLER: 10
-X-RateLimit-Remaining-PORTAL_SEARCH_THROTTLER: 9
-X-RateLimit-Reset-PORTAL_SEARCH_THROTTLER: 1
-ETag: W/"18d-sFUDs+wHJ9zzzuZEITXcbTCuoRc"
-Strict-Transport-Security: max-age=31536000
-X-Content-Type-Options: nosniff
-Content-Security-Policy: upgrade-insecure-requests
+HTTP/2 200 
+date: Wed, 25 Nov 2026 23:06:12 GMT
+content-type: application/json; charset=utf-8
+content-length: 36675
+cache-control: public, max-age=30, s-maxage=30
+last-modified: Mon, 02 Nov 2026 17:39:18 GMT
+etag: 778530009
+vary: X-Esri-Authorization
+x-arcgis-upstream: us1h00c00-services
+strict-transport-security: max-age=63072000
+x-arcgis-trace-id: 20261125T230612Z-16d74f45c9bzj2snhC1IAD4hws00000009wg00000000mz0h
+x-arcgis-correlation-id: a0437775c99fe057
+x-arcgis-instance: 5yk64u4ec00000D
+request-context: appId=cid-v1:6959d3e4-1b50-49aa-a614-ab11f59afd47
+access-control-expose-headers: Request-Context
+access-control-allow-origin: *
+access-control-allow-headers: Content-Type, Authorization, X-Esri-Authorization
+access-control-allow-credentials: true
+x-azure-ref: 20261125T230612Z-16d74f45c9bzj2snhC1IAD4hws00000009wg00000000mz0h
+x-fd-int-roxy-purgeid: 0
+x-cache: TCP_MISS
+accept-ranges: bytes
 
