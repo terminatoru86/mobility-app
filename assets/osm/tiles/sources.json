@@ -1056,6 +1056,12 @@
   "places": 257
  },
  {
+  "key": "ago-9f8aca1e90",
+  "label": "City of Santa Rosa Bike Racks · MStull@srcity.org",
+  "url": "https://services2.arcgis.com/BhTdzxiJkq4oXsPh/arcgis/rest/services/City_of_Santa_Rosa_Bike_Racks/FeatureServer/0",
+  "places": 255
+ },
+ {
   "key": "ago-2677e454be",
   "label": "Transportation_Bike Racks · sustainability_uok",
   "url": "https://services.arcgis.com/3xOwF6p0r7IHIjfn/arcgis/rest/services/Transportation_Bike_Racks/FeatureServer/0",
@@ -1162,6 +1168,12 @@
   "label": "BIKE PARKING _SHOWER LOCATIONS · mrichard@uvm.edu_UVM",
   "url": "https://services1.arcgis.com/YiULsZbgRKmBtdZN/arcgis/rest/services/BIKE_PARKING__SHOWER_LOCATIONS/FeatureServer/6",
   "places": 233
+ },
+ {
+  "key": "ago-49cd6bf4e6",
+  "label": "Columbia Regional Bike Map _4_6v2__WFL1 · weaverwe_USCGeography",
+  "url": "https://services.arcgis.com/oEazpvC7G00gPDRM/arcgis/rest/services/Columbia_Regional_Bike_Map__4_6v2__WFL1/FeatureServer/6",
+  "places": 230
  },
  {
   "key": "ago-24445ef43b",
@@ -2184,15 +2196,15 @@
   "places": 69
  },
  {
-  "key": "ago-efdda51168",
-  "label": "Bike Repair Station222 · xchen2268@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station222/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-dc5de75a52",
   "label": "Bike Repair Station Madison 2 · asnow4@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Madison_2/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-efdda51168",
+  "label": "Bike Repair Station222 · xchen2268@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station222/FeatureServer/0",
   "places": 69
  },
  {
@@ -2298,15 +2310,15 @@
   "places": 69
  },
  {
-  "key": "ago-75232939c4",
-  "label": "Bike Repair Data · srwisniewski@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Data/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-4679ec41da",
   "label": "bike repair station layer · jjimenez23@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/bike_repair_station_layer/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-75232939c4",
+  "label": "Bike Repair Data · srwisniewski@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Data/FeatureServer/0",
   "places": 69
  },
  {
@@ -2322,15 +2334,15 @@
   "places": 69
  },
  {
-  "key": "ago-0a6a9b5d96",
-  "label": "Bike Repair Madison · eilundin@wisc.edu_UW_Mad",
-  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Madison/FeatureServer/0",
-  "places": 69
- },
- {
   "key": "ago-201747ae5d",
   "label": "Bike Repair · rimoss@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair/FeatureServer/0",
+  "places": 69
+ },
+ {
+  "key": "ago-0a6a9b5d96",
+  "label": "Bike Repair Madison · eilundin@wisc.edu_UW_Mad",
+  "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Madison/FeatureServer/0",
   "places": 69
  },
  {
@@ -2476,6 +2488,18 @@
   "label": "Bike Repair Station Madison File · rawat8@wisc.edu_UW_Mad",
   "url": "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Bike_Repair_Station_Madison_File/FeatureServer/0",
   "places": 69
+ },
+ {
+  "key": "ago-7eac361acc",
+  "label": "CR_Bikeways - Bike Facilities · cwr5389_pennstate",
+  "url": "https://services7.arcgis.com/Kr1baS89p5maegub/ArcGIS/rest/services/CR_Bikeways/FeatureServer/3",
+  "places": 69
+ },
+ {
+  "key": "ago-9f561fbb72",
+  "label": "Site_Selection_GDB · sjalmeha_asu",
+  "url": "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Site_Selection_GDB/FeatureServer/0",
+  "places": 68
  },
  {
   "key": "ago-609c162853",
@@ -2817,6 +2841,12 @@
   "key": "ago-827b89ebea",
   "label": "Pocatello Campus Bike racks · GIS4ISU",
   "url": "https://services1.arcgis.com/z5tlnpYHokW9isdE/arcgis/rest/services/Pocatello_Campus_Bike_racks/FeatureServer/0",
+  "places": 49
+ },
+ {
+  "key": "ago-cac7ff73cd",
+  "label": "Connectivity · GIS_Admin_TI",
+  "url": "https://services7.arcgis.com/HZJeRdkWfUYMPJ0A/arcgis/rest/services/Connectivity/FeatureServer/0",
   "places": 49
  },
  {
@@ -3771,6 +3801,12 @@
   "key": "ago-dc36012b74",
   "label": "GR Bikeablity_WFL1 · csm28_CalvinGIS",
   "url": "https://services2.arcgis.com/DBcRJmfPI2l07jMS/arcgis/rest/services/GR_Bikeablity_WFL1/FeatureServer/1",
+  "places": 18
+ },
+ {
+  "key": "ago-50a52f9d0f",
+  "label": "CR_Bikeways - Bike Facilities · cwr5389_pennstate",
+  "url": "https://services7.arcgis.com/Kr1baS89p5maegub/ArcGIS/rest/services/CR_Bikeways/FeatureServer/1",
   "places": 18
  },
  {
@@ -5061,6 +5097,12 @@
   "key": "ago-57b4c0b383",
   "label": "bike_fixit_stations · ecurrier_LCOG",
   "url": "https://services5.arcgis.com/9s1YtFmLS0YTl10F/arcgis/rest/services/bike_fixit_stations/FeatureServer/0",
+  "places": 5
+ },
+ {
+  "key": "ago-583a26cd29",
+  "label": "MPO_BIKE_MAP_WFL1 · alexandra.peacock_mcwalis",
+  "url": "https://services6.arcgis.com/PNbDaOzMYanwjPQC/arcgis/rest/services/MPO_BIKE_MAP_WFL1/FeatureServer/12",
   "places": 5
  },
  {
