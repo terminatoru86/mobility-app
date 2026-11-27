@@ -1,7 +1,7 @@
 """Geocode address lists cities sent (data/inbox/<city>/*addresses.csv, columns name,address,...) with Nominatim
 (1 request/s). Writes <same name>.geocoded.csv into data/inbox_out/<city>/."""
 import csv, glob, json, os, time, urllib.parse, urllib.request
-CITY = {'kansas_city_mo': 'Kansas City, Missouri', 'elko_nv': 'Elko, Nevada', 'clemmons_nc': 'Clemmons, North Carolina'}
+CITY = {'carbonado_wa': 'Carbonado, Washington', 'akron_in': 'Akron, Indiana', 'marshfield_vt': 'Marshfield, Vermont', 'kansas_city_mo': 'Kansas City, Missouri', 'elko_nv': 'Elko, Nevada', 'clemmons_nc': 'Clemmons, North Carolina'}
 UA = {'User-Agent': 'MOBIlity-app inbox geocoder (github.com/terminatoru86/mobility-app)'}
 
 
