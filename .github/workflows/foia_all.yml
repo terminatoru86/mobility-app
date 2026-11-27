@@ -7,6 +7,8 @@ on:
         default: 'wikidata'
       part:
         default: 'part'
+      wide:
+        default: '0'
 
 permissions:
   contents: write
@@ -51,6 +53,7 @@ jobs:
           STOP_AFTER_MIN: 300
           SOURCE: ${{ inputs.source }}
           PART: ${{ inputs.part }}
+          WIDE: ${{ inputs.wide }}
         run: python3 tool/foia_all.py find
       - run: |
           git config user.name "github-actions[bot]"

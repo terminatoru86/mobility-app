@@ -179,6 +179,16 @@ def targets():
 def find():
     shard, n = int(os.environ.get('SHARD', 0)), int(os.environ.get('NSHARDS', 1))
     rows, done_name = targets()
+    if os.environ.get('WIDE') == '1':
+        import glob
+        had = set()
+        for f in glob.glob(os.path.join(OUT, '*_*.json')):
+            if os.path.basename(f).startswith(os.environ.get('PART', 'part') + '_'):
+                continue
+            for x in json.load(open(f)):
+                if x.get('email'):
+                    had.add(host(x['site']))
+        rows = [r for r in rows if host(r['site']) not in had]
     mine = rows[shard::n]
     print(f'{len(rows)} sites not written to yet; shard {shard}: {len(mine)}', flush=True)
     os.makedirs(OUT, exist_ok=True)

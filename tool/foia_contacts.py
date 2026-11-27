@@ -38,7 +38,13 @@ PORTAL = re.compile(r'https?://[^\s"\'<>]*(govqa\.us|mycusthelp\.(com|net)|nextr
                     r'granicus|foia\.?[^\s"\'<>/]*|publicrecords?[^\s"\'<>/]*|records?center)[^\s"\'<>]*', re.I)
 MAIL = re.compile(r'[\w.+-]+@[\w-]+(\.[\w-]+)+')
 GOOD_MAIL = re.compile(r'record|foia|pia|clerk|openrec|publicinfo|righttoknow|rtk|cpra|pra\b|sunshine|transparen', re.I)
-PATHS = ['/public-records', '/publicrecords', '/open-records', '/foia', '/records', '/public-records-request',
+import os as _os
+WIDE = _os.environ.get('WIDE') == '1'
+OFFICE_MAIL = re.compile(r'^(info|admin|office|cityhall|townhall|townoffice|villagehall|villageoffice|boroughhall|'
+                         r'village|town|city|borough|township|twp|contact|contactus|general|manager|citymanager|'
+                         r'townmanager|administrator|secretary|treasurer|clerktreas|clerk-treas)[\w.-]*$', re.I)
+PATHS = ['/contact', '/contact-us', '/contactus', '/government', '/town-office', '/administration'] if WIDE else []
+PATHS += ['/public-records', '/publicrecords', '/open-records', '/foia', '/records', '/public-records-request',
          '/departments/city-clerk', '/clerk', '/government/public-records', '/cityclerk']
 
 
@@ -83,8 +89,12 @@ def city(name, domain):
             portals[u] = portals.get(u, 0) + 1
         for m in MAIL.finditer(html):
             e = m.group(0).lower().rstrip('.')
-            if GOOD_MAIL.search(e.split('@')[0]) and not re.search(r'\.(png|jpg|gif)$', e):
-                mails[e] = mails.get(e, 0) + (2 if depth[url] else 1)
+            if re.search(r'\.(png|jpg|gif)$', e):
+                continue
+            if GOOD_MAIL.search(e.split('@')[0]):
+                mails[e] = mails.get(e, 0) + (2 if depth[url] else 1) + (10 if WIDE else 0)
+            elif WIDE and OFFICE_MAIL.match(e.split('@')[0]) and domain.split('.')[-2] in e.split('@')[1]:
+                mails[e] = mails.get(e, 0) + 1
         if depth[url] >= 2:
             continue
         for u, text in links(html, final):
