@@ -1038,10 +1038,11 @@ def fetch_waterfront():
 
 def fetch_cityfiles():
     """Racks, lockers, repair stations, scooter / motorcycle parking found in the files that cities and states
-    publish on their own websites (data/city_pts.json, made by tool/city_rows.py from tool/city_files.py)."""
+    publish on their own websites (data/city_pts.json, made by tool/city_rows.py from tool/city_files.py),
+    plus bikerackmap.com racks not already in our data (data/bikerackmap.json, crowdsourced, linked to each entry)."""
     out = []
     import glob as _glob
-    files = [os.path.join(ROOT, 'data', n) for n in ('city_pts.json', 'public_maps.json', 'user_official.json',
+    files = [os.path.join(ROOT, 'data', n) for n in ('city_pts.json', 'public_maps.json', 'user_official.json', 'bikerackmap.json',
                                                      os.path.join('vendors', 'points.json'))]
     files += sorted(_glob.glob(os.path.join(ROOT, 'data', 'gis_servers', 'pts_*.json')))
     seen = set()
